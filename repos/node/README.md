@@ -20,3 +20,4 @@ This directory contains additional information about the published artifacts of 
 	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/remote/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/remote/)
 -	[Automated `scan-local.sh` (`node`):  
 	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/local/job/node/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/local/job/node)
+  
