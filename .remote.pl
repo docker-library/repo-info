@@ -91,7 +91,7 @@ sub parse_manifest_v2_data_p ($ref, $manifest) {
 	my $configDigest = $manifest->{config}{digest};
 
 	return $ua->get_blob_p($ref->clone->digest($configDigest))->then(sub ($config) {
-		return {
+		my $manifestData = {
 			manifestVersion => Bashbrew::RegistryUserAgent::MEDIA_MANIFEST_V2,
 			manifest => $manifest,
 			imageId => $configDigest,
@@ -107,6 +107,10 @@ sub parse_manifest_v2_data_p ($ref, $manifest) {
 			layers => $manifest->{layers} // [],
 			commands => $config->{history} // [],
 		};
+		if ($config->{rootfs} && $config->{rootfs}{type} && $config->{rootfs}{type} eq 'layers' && $config->{rootfs}{diff_ids}) {
+			$manifestData->{diffIds} = $config->{rootfs}{diff_ids};
+		}
+		return $manifestData;
 	});
 }
 
@@ -371,10 +375,14 @@ sub image_to_markdown_p ($image) {
 
 			$ret .= "\n";
 			$ret .= "-\t" . 'Layers:' . "\n";
-			for my $layer (@{ $imageData->{layers} }) {
+			for my $i (0 .. $#{ $imageData->{layers} }) {
+				my $layer = $imageData->{layers}[$i];
 				$ret .= "\t-\t" . '`' . $layer->{digest} . '`  ' . "\n";
 				$ret .= "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' . "\n" if defined $layer->{lastModified};
 				$ret .= "\t\t" . 'Size: ' . size($layer->{size}) . '  ' . "\n" if defined $layer->{size};
+				if ($imageData->{diffIds} && $#{ $imageData->{layers} } == $#{ $imageData->{diffIds} }) {
+					$ret .= "\t\t" . 'DiffID: `' . $imageData->{diffIds}[$i] . '`  ' . "\n";
+				}
 				$ret .= "\t\t" . 'MIME: ' . $layer->{mediaType} . "\n";
 			}
 		}
