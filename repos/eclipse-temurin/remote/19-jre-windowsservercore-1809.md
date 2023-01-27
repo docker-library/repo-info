@@ -1,0 +1,58 @@
+## `eclipse-temurin:19-jre-windowsservercore-1809`
+
+```console
+$ docker pull eclipse-temurin@sha256:4f2d6d6d1455b611a15d847501e293a9bb407f15e540d1767382311f4dc2529a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	windows version 10.0.17763.3887; amd64
+
+### `eclipse-temurin:19-jre-windowsservercore-1809` - windows version 10.0.17763.3887; amd64
+
+```console
+$ docker pull eclipse-temurin@sha256:120dd771825130ae6aff04d73d716480d1d0b6cbb70c4aa6de2090bf32e5d474
+```
+
+-	Docker Version: 20.10.21
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.8 GB (1788842385 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0a74c427428540242357d3a1ebcd9502f4b44508f64a112b85edfc8770b2a69a`
+-	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Sat, 07 Jan 2023 05:37:58 GMT
+RUN Apply image 10.0.17763.3887
+# Thu, 12 Jan 2023 01:43:02 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Wed, 25 Jan 2023 19:28:57 GMT
+ENV JAVA_VERSION=jdk-19.0.2+7
+# Wed, 25 Jan 2023 19:35:01 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jre_x64_windows_hotspot_19.0.2_7.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jre_x64_windows_hotspot_19.0.2_7.msi ;     Write-Host ('Verifying sha256 (4ad4aae081243e6962eddd59c4fdfa33d1a3d79acb16d2700a40dc5d8e4861be) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '4ad4aae081243e6962eddd59c4fdfa33d1a3d79acb16d2700a40dc5d8e4861be') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-19' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Wed, 25 Jan 2023 19:35:39 GMT
+RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
+```
+
+-	Layers:
+	-	`sha256:6e222c5ada69382aa2b4fe30b23ae56c7e3ada92712109d20f3edd457a6120b6`  
+		Last Modified: Thu, 12 Jan 2023 02:40:02 GMT  
+		Size: 1.7 GB (1707943932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:691d210e0841eeceff800f3b441be6db4bc689728f1bb771ce88f839d06f57d0`  
+		Last Modified: Thu, 12 Jan 2023 02:34:04 GMT  
+		Size: 1.4 KB (1433 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed5b8a5d02ce3687200a7a2aee5a1435fb6fd9344931167a4eb95a51222db46e`  
+		Last Modified: Wed, 25 Jan 2023 19:46:56 GMT  
+		Size: 1.4 KB (1387 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9b4e4496dab8eafa33ab9fade5b8393b0f2c58a37122fc7281b1830fd441d66c`  
+		Last Modified: Wed, 25 Jan 2023 19:48:50 GMT  
+		Size: 77.5 MB (77543132 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:75c7a02c6adcb8cb96c9b6a61c9bfe75c9ee4ae7b1ab602204a9ac15a266256d`  
+		Last Modified: Wed, 25 Jan 2023 19:48:38 GMT  
+		Size: 3.4 MB (3352501 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,0 +1,13 @@
+FROM debian:bullseye-slim
+
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		ca-certificates \
+		wget \
+	; \
+	rm -rf /var/lib/apt/lists/*
+
+COPY .local-scripts/gather-dpkg.sh /usr/local/bin/
+
+CMD ["gather-dpkg.sh"]

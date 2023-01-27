@@ -13,7 +13,7 @@ if [ "${#packages[@]}" -eq 0 ]; then
 	exit 1
 fi
 
-# if "/etc/yum.conf" doesn't exist, "yumdownloader" will error with "CRITICAL:yum.verbose.cli.yumdownloader:Config Error: Error accessing file for config file:///etc/yum.conf"
+# if "/etc/yum.conf" doesn't exist, let's create it (just in case); yumdownloader had issues with this, but "dnf download" probably does not?
 [ -f /etc/yum.conf ] || touch /etc/yum.conf
 # (Fedora 29, for example, keeps all YUM config over in /etc/yum.repos.d)
 
@@ -25,7 +25,7 @@ if [ "${#arches[@]}" -eq 1 ]; then
 	basearch="${arches[0]}"
 	find /etc/yum.conf /etc/yum.repos.d -type f -exec sed -i 's!\$basearch!'"$basearch"'!g' '{}' +
 fi
-# (this makes things like ClefOS actually able to give back source URLs from yumdownloader!)
+# (this makes things like ClefOS actually able to give back source URLs from dnf download!)
 
 echo
 echo '## `rpm` (`.rpm`-based packages)'
@@ -37,10 +37,10 @@ join() {
 	echo "${out#$sep}"
 }
 
-yumDownloaderExtraArgs=()
-# ClefOS has a "source" repo, but for some reason "yumdownloader" isn't smart enough to auto-enable it like it does other source repos?
-if yum repolist disabled 2>/dev/null | grep -qE '^source[[:space:]]+'; then
-	yumDownloaderExtraArgs+=( --enablerepo=source )
+dnfDownloadExtraArgs=()
+# ClefOS has a "source" repo, but for some reason "dnf download" isn't smart enough to auto-enable it like it does other source repos?
+if dnf repolist disabled 2>/dev/null | grep -qE '^source[[:space:]]+'; then
+	dnfDownloadExtraArgs+=( --enablerepo=source )
 fi
 
 for pkg in "${packages[@]}"; do
@@ -57,23 +57,23 @@ for pkg in "${packages[@]}"; do
 		echo '**WARNING:** unable to detect licenses (`rpm --query` failed or returned no results)!'
 	fi
 
-	# the default queryformat includes ARCH which then doesn't work because yum has a huge affinity for using uname for platform detection....... (https://www.redhat.com/archives/rpm-list/2002-June/msg00082.html !!!!!)
+	# the default queryformat includes ARCH which then doesn't work because dnf has a huge affinity for using uname for platform detection....... (https://www.redhat.com/archives/rpm-list/2002-June/msg00082.html !!!!!)
 	case "$pkg" in
-		*.noarch) yumPkg="$pkg" ;;
-		*) yumPkg="$(rpm --query --queryformat '%{NAME}-%{VERSION}-%{RELEASE}\n' "$pkg" 2>/dev/null)" ;;
+		*.noarch) dnfPkg="$pkg" ;;
+		*) dnfPkg="$(rpm --query --queryformat '%{NAME}-%{VERSION}-%{RELEASE}\n' "$pkg" 2>/dev/null)" ;;
 	esac
 
-	yumDownloaderArgs=( yumdownloader --quiet --source --urls "${yumDownloaderExtraArgs[@]}" "$yumPkg" )
-	if yumDownloader="$("${yumDownloaderArgs[@]}" 2>/dev/null)" && [ -n "$yumDownloader" ]; then
+	dnfDownloadArgs=( dnf --quiet download --source --url "${dnfDownloadExtraArgs[@]}" "$dnfPkg" )
+	if dnfDownload="$("${dnfDownloadArgs[@]}" 2>/dev/null)" && [ -n "$dnfDownload" ]; then
 		echo
 		echo 'Source:'
 		echo
 		echo '```console'
-		echo '$' "${yumDownloaderArgs[@]}"
-		echo "$yumDownloader"
+		echo '$' "${dnfDownloadArgs[@]}"
+		echo "$dnfDownload"
 		echo '```'
 	else
 		echo
-		echo '**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!'
+		echo '**WARNING:** unable to find source (`dnf download` failed or returned no results)!'
 	fi
 done

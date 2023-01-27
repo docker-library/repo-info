@@ -1,7 +1,7 @@
 ## `mongo:4-focal`
 
 ```console
-$ docker pull mongo@sha256:ae79dc7ee353b03c1209d83898142802ad26c38af752b5e6a78e04a25d75c121
+$ docker pull mongo@sha256:77f4f60b2f370add332003984600f314fbe1df6e8ce03f2ffc8dd4493e3e6818
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,205 +12,197 @@ $ docker pull mongo@sha256:ae79dc7ee353b03c1209d83898142802ad26c38af752b5e6a78e0
 ### `mongo:4-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:2de897b243bd10a08fd9c99db7067b544a9bf763c42ceb7c7f00934cb820f38c
+$ docker pull mongo@sha256:00342ee3143be7a3b1bfc144b2887e59ce71564400cf7395b01e8275c5cb461c
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.3 MB (171346015 bytes)**  
+-	Total Size: **173.1 MB (173129852 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:275f79a10a884575f8ffcfb240e1f0d26aecdf6b16df6bcc52f3db8d9d0db19d`
+-	Image ID: `sha256:d5d112d99ad3605c6b60529cfee035708acec8d77eec38e86990d611ff94f4fb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Oct 2021 00:37:47 GMT
-ADD file:5d68d27cc15a80653c93d3a0b262a28112d47a46326ff5fc2dfbf7fa3b9a0ce8 in / 
-# Sat, 16 Oct 2021 00:37:47 GMT
+# Fri, 09 Dec 2022 01:20:21 GMT
+ADD file:9d282119af0c42bc823c95b4192a3350cf2cad670622017356dd2e637762e425 in / 
+# Fri, 09 Dec 2022 01:20:21 GMT
 CMD ["bash"]
-# Sat, 16 Oct 2021 03:04:13 GMT
-RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Sat, 16 Oct 2021 03:04:21 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 03:04:21 GMT
+# Fri, 09 Dec 2022 02:36:46 GMT
+RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb
+# Fri, 09 Dec 2022 02:36:57 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		dirmngr 		gnupg 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 09 Dec 2022 02:36:57 GMT
 ENV GOSU_VERSION=1.12
-# Sat, 16 Oct 2021 03:04:21 GMT
+# Fri, 09 Dec 2022 02:36:57 GMT
 ENV JSYAML_VERSION=3.13.1
-# Sat, 16 Oct 2021 03:04:33 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Sat, 16 Oct 2021 03:04:34 GMT
+# Fri, 09 Dec 2022 02:37:06 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Fri, 09 Dec 2022 02:37:07 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Sat, 16 Oct 2021 03:05:26 GMT
-RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$@" > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Sat, 16 Oct 2021 03:05:26 GMT
+# Fri, 09 Dec 2022 02:38:24 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"
+# Fri, 09 Dec 2022 02:38:24 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Sat, 16 Oct 2021 03:05:26 GMT
+# Fri, 09 Dec 2022 02:38:25 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Sat, 16 Oct 2021 03:05:26 GMT
+# Fri, 09 Dec 2022 02:38:25 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Sat, 16 Oct 2021 03:05:26 GMT
+# Fri, 09 Dec 2022 02:38:25 GMT
 ENV MONGO_MAJOR=4.4
-# Sat, 16 Oct 2021 03:05:27 GMT
-RUN echo "deb http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Sat, 16 Oct 2021 03:05:27 GMT
-ENV MONGO_VERSION=4.4.10
-# Sat, 16 Oct 2021 03:05:46 GMT
-RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Sat, 16 Oct 2021 03:05:47 GMT
-RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Sat, 16 Oct 2021 03:05:47 GMT
+# Fri, 09 Dec 2022 02:38:25 GMT
+RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
+# Fri, 09 Dec 2022 02:38:25 GMT
+ENV MONGO_VERSION=4.4.18
+# Fri, 09 Dec 2022 02:38:47 GMT
+RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+# Fri, 09 Dec 2022 02:38:48 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 17 Nov 2021 02:31:25 GMT
-COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Wed, 17 Nov 2021 02:31:25 GMT
+# Fri, 09 Dec 2022 02:38:48 GMT
+ENV HOME=/data/db
+# Fri, 09 Dec 2022 02:38:48 GMT
+COPY file:82adc06ee9084caf92c64e3fbb536f06b2a724aa0c1f122d17c10c70a5a1b90e in /usr/local/bin/ 
+# Fri, 09 Dec 2022 02:38:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Nov 2021 02:31:25 GMT
+# Fri, 09 Dec 2022 02:38:49 GMT
 EXPOSE 27017
-# Wed, 17 Nov 2021 02:31:25 GMT
+# Fri, 09 Dec 2022 02:38:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:7b1a6ab2e44dbac178598dabe7cff59bd67233dba0b27e4fbd1f9d4b3c877a54`  
-		Last Modified: Thu, 07 Oct 2021 23:44:23 GMT  
-		Size: 28.6 MB (28567101 bytes)  
+	-	`sha256:846c0b181fff0c667d9444f8378e8fcfa13116da8d308bf21673f7e4bea8d580`  
+		Last Modified: Thu, 08 Dec 2022 13:18:11 GMT  
+		Size: 28.6 MB (28576882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90eb44ebc60bb16588c109f5262f2e1ddf21b139ded13daaa291f02dd3f2289e`  
-		Last Modified: Sat, 16 Oct 2021 03:06:23 GMT  
-		Size: 1.8 KB (1758 bytes)  
+	-	`sha256:ef773e84b43a9957d1af78717d365575c45617e5309f34a2aa8e495069798539`  
+		Last Modified: Fri, 09 Dec 2022 02:40:25 GMT  
+		Size: 1.8 KB (1833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5085b59f2efb7e626508e23c85e6ef162ba3fa1e69c4c3bf1a69ffc10dee0586`  
-		Last Modified: Sat, 16 Oct 2021 03:06:23 GMT  
-		Size: 3.1 MB (3064302 bytes)  
+	-	`sha256:2bfad1efb66451e1de01270bfb34ed66ec187ecc32cdb67bdec2fedca0cb7b78`  
+		Last Modified: Fri, 09 Dec 2022 02:40:27 GMT  
+		Size: 8.3 MB (8347737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7499923d022b687faac3ecd024ab159a472120a06d0df1583b035f6adf2dbd8`  
-		Last Modified: Sat, 16 Oct 2021 03:06:24 GMT  
-		Size: 6.5 MB (6506381 bytes)  
+	-	`sha256:84e59a6d63c9b4462dbd6841a103e52acfc8ad333bf6058f5c5ed5c529e26104`  
+		Last Modified: Fri, 09 Dec 2022 02:40:26 GMT  
+		Size: 1.2 MB (1235335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:019496b6c44a3bff7c252b5ea300acbb686bedaf7834036cfaa66c4b56097394`  
-		Last Modified: Sat, 16 Oct 2021 03:06:22 GMT  
+	-	`sha256:d2f00ac700e0cec4e1e43e12f9c179f244d0bcd5f384c2c9c5c40b8ae4eab0c8`  
+		Last Modified: Fri, 09 Dec 2022 02:40:23 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b52e5b3baa6110ce5540f6592a1876850371d301d2e16b147be2e51cec8770ee`  
-		Last Modified: Sat, 16 Oct 2021 03:07:04 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:19acbee5313d8d7efd49fb731b4a469f48e0ff216a46d2e3430b80430c9ad14a`  
+		Last Modified: Fri, 09 Dec 2022 02:41:43 GMT  
+		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4737ba38aa64080b5c72d219fa3ab14ad4096e9dfe272200137364de8c176471`  
-		Last Modified: Sat, 16 Oct 2021 03:07:05 GMT  
-		Size: 237.0 B  
+	-	`sha256:0c1fec70349ed99b5f58180a7d704cf3cbc9ba9710ed4b80655627cd40220407`  
+		Last Modified: Fri, 09 Dec 2022 02:41:43 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94c515c55d41652c20e90035c563ce73e4bcb1afb104e8bc9b544804161ca9e3`  
-		Last Modified: Sat, 16 Oct 2021 03:07:22 GMT  
-		Size: 133.2 MB (133199544 bytes)  
+	-	`sha256:0e2e0a09be10841c146edc147482c8b5d824cb40c52ee13e8524b4946e8c9d29`  
+		Last Modified: Fri, 09 Dec 2022 02:42:00 GMT  
+		Size: 135.0 MB (134961249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8afc96649890e42fb59d9ab1c95e4740a6607d285d02559be31edd69616de1f0`  
-		Last Modified: Sat, 16 Oct 2021 03:07:05 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cdf677513471ce1d6eee2506d1cbf17ca0025566f331abccdd65b11794d05fe`  
-		Last Modified: Wed, 17 Nov 2021 02:32:11 GMT  
-		Size: 4.9 KB (4942 bytes)  
+	-	`sha256:f6d2edc3edd9835c9c2332317b7a50f657819c540bfda49b0b75852a392f9b9f`  
+		Last Modified: Fri, 09 Dec 2022 02:41:43 GMT  
+		Size: 5.0 KB (4963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:9ee8248dba7325b7ae5909486e36b879f97aca1397f375948d7e39cf049aa6f3
+$ docker pull mongo@sha256:2972b7f5d95776e026d8706a5dc013fb6f9de2345a41a298746bd0a1a145d39a
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.4 MB (166435629 bytes)**  
+-	Total Size: **168.1 MB (168091168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29915542a1eff00dd91e2cdd54bff4ab6c84d29fdb4626d5fdf56a1c2f3fb1a1`
+-	Image ID: `sha256:3b49ec1345deadc81f06b76147f8c41ba6265bf6ce8ef12bfe8075af8fa2db6d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Sat, 16 Oct 2021 01:47:45 GMT
-ADD file:ff4909f2124325dac58d43c617132325934ed48a5ab4c534d05f931fcf700a2f in / 
-# Sat, 16 Oct 2021 01:47:45 GMT
+# Fri, 09 Dec 2022 01:46:50 GMT
+ADD file:8cba976cb6ea226de769a768ee274e7679d34f923c93392f340680dc6696232e in / 
+# Fri, 09 Dec 2022 01:46:50 GMT
 CMD ["bash"]
-# Sat, 16 Oct 2021 02:06:06 GMT
-RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Sat, 16 Oct 2021 02:06:14 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 02:06:15 GMT
+# Fri, 09 Dec 2022 03:32:26 GMT
+RUN set -eux; 	groupadd --gid 999 --system mongodb; 	useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; 	mkdir -p /data/db /data/configdb; 	chown -R mongodb:mongodb /data/db /data/configdb
+# Fri, 09 Dec 2022 03:33:02 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		dirmngr 		gnupg 		jq 		numactl 		procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 09 Dec 2022 03:33:02 GMT
 ENV GOSU_VERSION=1.12
-# Sat, 16 Oct 2021 02:06:16 GMT
+# Fri, 09 Dec 2022 03:33:02 GMT
 ENV JSYAML_VERSION=3.13.1
-# Sat, 16 Oct 2021 02:06:30 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Sat, 16 Oct 2021 02:06:30 GMT
+# Fri, 09 Dec 2022 03:33:10 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Fri, 09 Dec 2022 03:33:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Sat, 16 Oct 2021 02:07:40 GMT
-RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$@" > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Sat, 16 Oct 2021 02:07:41 GMT
+# Fri, 09 Dec 2022 03:34:17 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"
+# Fri, 09 Dec 2022 03:34:17 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Sat, 16 Oct 2021 02:07:42 GMT
+# Fri, 09 Dec 2022 03:34:17 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Sat, 16 Oct 2021 02:07:43 GMT
+# Fri, 09 Dec 2022 03:34:18 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Sat, 16 Oct 2021 02:07:44 GMT
+# Fri, 09 Dec 2022 03:34:18 GMT
 ENV MONGO_MAJOR=4.4
-# Sat, 16 Oct 2021 02:07:45 GMT
-RUN echo "deb http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Sat, 16 Oct 2021 02:07:46 GMT
-ENV MONGO_VERSION=4.4.10
-# Sat, 16 Oct 2021 02:08:02 GMT
-RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Sat, 16 Oct 2021 02:08:03 GMT
-RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Sat, 16 Oct 2021 02:08:04 GMT
+# Fri, 09 Dec 2022 03:34:18 GMT
+RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
+# Fri, 09 Dec 2022 03:34:18 GMT
+ENV MONGO_VERSION=4.4.18
+# Fri, 09 Dec 2022 03:34:37 GMT
+RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+# Fri, 09 Dec 2022 03:34:39 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 17 Nov 2021 01:15:28 GMT
-COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Wed, 17 Nov 2021 01:15:28 GMT
+# Fri, 09 Dec 2022 03:34:39 GMT
+ENV HOME=/data/db
+# Fri, 09 Dec 2022 03:34:39 GMT
+COPY file:82adc06ee9084caf92c64e3fbb536f06b2a724aa0c1f122d17c10c70a5a1b90e in /usr/local/bin/ 
+# Fri, 09 Dec 2022 03:34:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Nov 2021 01:15:29 GMT
+# Fri, 09 Dec 2022 03:34:39 GMT
 EXPOSE 27017
-# Wed, 17 Nov 2021 01:15:30 GMT
+# Fri, 09 Dec 2022 03:34:39 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:a39c84e173f038958d338f55a9e8ee64bb6643e8ac6ae98e08ca65146e668d86`  
-		Last Modified: Sat, 09 Oct 2021 15:32:18 GMT  
-		Size: 27.2 MB (27170900 bytes)  
+	-	`sha256:f04b4bbe15805316c8fda79beedd3b77e6b1ffcd0acf81226c3089e63f6bffeb`  
+		Last Modified: Thu, 08 Dec 2022 15:28:02 GMT  
+		Size: 27.2 MB (27193168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b19666caec16fe4ae329c791ac93b397bbc78b9f84cb6e735d21b83b2eb9c0e`  
-		Last Modified: Sat, 16 Oct 2021 02:11:19 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:83fa6fcd8473e6fa6433f55142d9c974f4567154eb0a71e8d1e87798291f30b3`  
+		Last Modified: Fri, 09 Dec 2022 03:36:34 GMT  
+		Size: 1.8 KB (1837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc7b1addf2da74eccff510de6aa5ab3d3d000656817b97884d02f892fb93248a`  
-		Last Modified: Sat, 16 Oct 2021 02:11:19 GMT  
-		Size: 2.9 MB (2911827 bytes)  
+	-	`sha256:446df0a3bab48e1d13c800934f85a49fd3699cbcfa499e48832a0ce9952ebe88`  
+		Last Modified: Fri, 09 Dec 2022 03:36:35 GMT  
+		Size: 8.2 MB (8176933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ef180f0d597c6eed96a83a2f6d97d4345b9909ebbee8ac80b5ecc71a368d23b`  
-		Last Modified: Sat, 16 Oct 2021 02:11:20 GMT  
-		Size: 6.2 MB (6248421 bytes)  
+	-	`sha256:103570790f4fc06adbaceee688035e7165ead154becbe7a6dc15ec6c1c33f590`  
+		Last Modified: Fri, 09 Dec 2022 03:36:34 GMT  
+		Size: 1.2 MB (1170741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a6d24c0ec70825ca68ce4d4304ca3d41b4d65622f2c1758be2423bc43e5b3d`  
-		Last Modified: Sat, 16 Oct 2021 02:11:19 GMT  
-		Size: 115.0 B  
+	-	`sha256:eecf974f5e71402b0c615f04b25c9e20e6d86259d2e95df9000a30c8061c12de`  
+		Last Modified: Fri, 09 Dec 2022 03:36:32 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31a01ba1bdd20820994d75e4290a22a02d60cfea0bc7fca566b7f3f375a336f`  
-		Last Modified: Sat, 16 Oct 2021 02:12:00 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:051206854a578496750bdefa3bea348f9c5528d6890d76e62c215051c670562d`  
+		Last Modified: Fri, 09 Dec 2022 03:37:36 GMT  
+		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85fe19a4ba645432bdf652f891168c0bb64a28265c523f1ba53b7fbec0fb26e8`  
-		Last Modified: Sat, 16 Oct 2021 02:12:01 GMT  
-		Size: 234.0 B  
+	-	`sha256:437fffd5e93de74c78629f4958d709b9f670cbf26f70079156ef401512357e02`  
+		Last Modified: Fri, 09 Dec 2022 03:37:37 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8e6183f6c01ad8d53a038f77985a3db314ab2621aaab80317c23756d79239fe`  
-		Last Modified: Sat, 16 Oct 2021 02:12:18 GMT  
-		Size: 130.1 MB (130095911 bytes)  
+	-	`sha256:3eccaab0ab89b640de688285ba1411a8c1f0977dc9f681adf498f4f6948721e5`  
+		Last Modified: Fri, 09 Dec 2022 03:37:49 GMT  
+		Size: 131.5 MB (131541675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25bc089ec85be67d449bffca9ed8b2941ca7fbfc804bcf094ad241ee830af7a0`  
-		Last Modified: Sat, 16 Oct 2021 02:12:00 GMT  
-		Size: 138.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77d956b41b7aaa8fe14cd35717a600f6e15591b2f6752d95a6008642a0922fc8`  
-		Last Modified: Wed, 17 Nov 2021 01:16:49 GMT  
-		Size: 4.9 KB (4941 bytes)  
+	-	`sha256:a64e4319121d00525d96285c7a481eb894b38aeae3476034065d42787413fe3b`  
+		Last Modified: Fri, 09 Dec 2022 03:37:36 GMT  
+		Size: 5.0 KB (4963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

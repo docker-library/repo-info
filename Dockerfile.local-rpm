@@ -1,0 +1,5 @@
+FROM oraclelinux:8
+
+COPY .local-scripts/gather-rpm.sh /usr/local/bin/
+
+CMD ["gather-rpm.sh"]

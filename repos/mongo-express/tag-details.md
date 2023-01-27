@@ -11,7 +11,7 @@
 ## `mongo-express:0.54`
 
 ```console
-$ docker pull mongo-express@sha256:6bc39d97568da612e43a677983fa570eb3e7f9babd00e41d904308ba4bd13fc5
+$ docker pull mongo-express@sha256:effdf4c7665bbcbdd72adcb0b074c7f29583affb6eb37e2deea284c1a4400bda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -111,14 +111,14 @@ CMD ["mongo-express"]
 ### `mongo-express:0.54` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:5bf035faae450d68247fb4364dda361bde60f89de185c179a6eda14e2aa731dc
+$ docker pull mongo-express@sha256:e9c6b92528f75b5b96616e2ffb1e971f527b96d48a60496641dc19944227f683
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.9 MB (46949203 bytes)**  
+-	Total Size: **48.9 MB (48860265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafad2e5c9548089bf13ccc7fde1af79af169e0e4b7ecc88e113dc12aecd4294`
+-	Image ID: `sha256:86a52c0b2efb0528f6984d55a866e010b4d7ee66040fd5d13920a6e52c3d1ef6`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -141,25 +141,25 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 22 Oct 2021 17:48:30 GMT
 CMD ["node"]
-# Fri, 22 Oct 2021 19:43:50 GMT
+# Wed, 30 Nov 2022 02:06:02 GMT
 RUN apk add --no-cache bash tini
-# Fri, 22 Oct 2021 19:43:51 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 EXPOSE 8081
-# Fri, 22 Oct 2021 19:44:21 GMT
+# Wed, 30 Nov 2022 02:06:24 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 22 Oct 2021 19:44:22 GMT
+# Wed, 30 Nov 2022 02:06:24 GMT
 ENV MONGO_EXPRESS=0.54.0
-# Fri, 22 Oct 2021 19:44:38 GMT
+# Wed, 30 Nov 2022 02:19:47 GMT
 RUN set -eux; 	apk add --no-cache --virtual .me-install-deps git; 	npm install mongo-express@$MONGO_EXPRESS; 	apk del --no-network .me-install-deps
-# Fri, 22 Oct 2021 19:44:39 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 COPY file:ad71ad0a2a1967b86be9140686f9a9aa6f78dc470d2ec9de89cbf1a25e85b550 in / 
-# Fri, 22 Oct 2021 19:44:39 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 22 Oct 2021 19:44:41 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 RUN cp config.default.js config.js
-# Fri, 22 Oct 2021 19:44:41 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 22 Oct 2021 19:44:42 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 CMD ["mongo-express"]
 ```
 
@@ -180,27 +180,27 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 22 Oct 2021 18:06:47 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbf010fd053cf713df6acde05c58dc86bae2a94465cdbcf4e1b5d7d01f6a935c`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 799.9 KB (799898 bytes)  
+	-	`sha256:260c05cca102f72d2ac29e7e5db7f1ec1925259e39b40067848e51dada31521b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 800.1 KB (800086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27da46c3d32725647447223d310af317dc428ade25d30b77d8fe47ffab3a2f44`  
-		Last Modified: Fri, 22 Oct 2021 19:45:19 GMT  
-		Size: 16.4 MB (16353672 bytes)  
+	-	`sha256:c11a9bd3b498362cbd6f6ec4fdce741d4c4b2e6f65be40d3b6dfcb93712b8d68`  
+		Last Modified: Wed, 30 Nov 2022 02:20:26 GMT  
+		Size: 18.3 MB (18264549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:159e3cddb5c8a76bd187db43946146dbe2037c9a202cc546ddcee658972a087f`  
-		Last Modified: Fri, 22 Oct 2021 19:45:17 GMT  
+	-	`sha256:4f044960204baf30bdf5d19c8e57b39a964c5c34d968ae585a02a57bdf02b97a`  
+		Last Modified: Wed, 30 Nov 2022 02:20:24 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29e05bfec3ffafc03cd15c8ef8cbd385f2e008762fa8bc1a91f8d19d8f997db4`  
-		Last Modified: Fri, 22 Oct 2021 19:45:16 GMT  
-		Size: 3.1 KB (3150 bytes)  
+	-	`sha256:15c04fd71db90343e6f0383ac32f92c3161d802fc41e3f6e7599ccdd44a77b5f`  
+		Last Modified: Wed, 30 Nov 2022 02:20:24 GMT  
+		Size: 3.1 KB (3147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo-express:0.54.0`
 
 ```console
-$ docker pull mongo-express@sha256:6bc39d97568da612e43a677983fa570eb3e7f9babd00e41d904308ba4bd13fc5
+$ docker pull mongo-express@sha256:effdf4c7665bbcbdd72adcb0b074c7f29583affb6eb37e2deea284c1a4400bda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -300,14 +300,14 @@ CMD ["mongo-express"]
 ### `mongo-express:0.54.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:5bf035faae450d68247fb4364dda361bde60f89de185c179a6eda14e2aa731dc
+$ docker pull mongo-express@sha256:e9c6b92528f75b5b96616e2ffb1e971f527b96d48a60496641dc19944227f683
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.9 MB (46949203 bytes)**  
+-	Total Size: **48.9 MB (48860265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafad2e5c9548089bf13ccc7fde1af79af169e0e4b7ecc88e113dc12aecd4294`
+-	Image ID: `sha256:86a52c0b2efb0528f6984d55a866e010b4d7ee66040fd5d13920a6e52c3d1ef6`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -330,25 +330,25 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 22 Oct 2021 17:48:30 GMT
 CMD ["node"]
-# Fri, 22 Oct 2021 19:43:50 GMT
+# Wed, 30 Nov 2022 02:06:02 GMT
 RUN apk add --no-cache bash tini
-# Fri, 22 Oct 2021 19:43:51 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 EXPOSE 8081
-# Fri, 22 Oct 2021 19:44:21 GMT
+# Wed, 30 Nov 2022 02:06:24 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 22 Oct 2021 19:44:22 GMT
+# Wed, 30 Nov 2022 02:06:24 GMT
 ENV MONGO_EXPRESS=0.54.0
-# Fri, 22 Oct 2021 19:44:38 GMT
+# Wed, 30 Nov 2022 02:19:47 GMT
 RUN set -eux; 	apk add --no-cache --virtual .me-install-deps git; 	npm install mongo-express@$MONGO_EXPRESS; 	apk del --no-network .me-install-deps
-# Fri, 22 Oct 2021 19:44:39 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 COPY file:ad71ad0a2a1967b86be9140686f9a9aa6f78dc470d2ec9de89cbf1a25e85b550 in / 
-# Fri, 22 Oct 2021 19:44:39 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 22 Oct 2021 19:44:41 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 RUN cp config.default.js config.js
-# Fri, 22 Oct 2021 19:44:41 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 22 Oct 2021 19:44:42 GMT
+# Wed, 30 Nov 2022 02:19:48 GMT
 CMD ["mongo-express"]
 ```
 
@@ -369,27 +369,27 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 22 Oct 2021 18:06:47 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbf010fd053cf713df6acde05c58dc86bae2a94465cdbcf4e1b5d7d01f6a935c`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 799.9 KB (799898 bytes)  
+	-	`sha256:260c05cca102f72d2ac29e7e5db7f1ec1925259e39b40067848e51dada31521b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 800.1 KB (800086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27da46c3d32725647447223d310af317dc428ade25d30b77d8fe47ffab3a2f44`  
-		Last Modified: Fri, 22 Oct 2021 19:45:19 GMT  
-		Size: 16.4 MB (16353672 bytes)  
+	-	`sha256:c11a9bd3b498362cbd6f6ec4fdce741d4c4b2e6f65be40d3b6dfcb93712b8d68`  
+		Last Modified: Wed, 30 Nov 2022 02:20:26 GMT  
+		Size: 18.3 MB (18264549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:159e3cddb5c8a76bd187db43946146dbe2037c9a202cc546ddcee658972a087f`  
-		Last Modified: Fri, 22 Oct 2021 19:45:17 GMT  
+	-	`sha256:4f044960204baf30bdf5d19c8e57b39a964c5c34d968ae585a02a57bdf02b97a`  
+		Last Modified: Wed, 30 Nov 2022 02:20:24 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29e05bfec3ffafc03cd15c8ef8cbd385f2e008762fa8bc1a91f8d19d8f997db4`  
-		Last Modified: Fri, 22 Oct 2021 19:45:16 GMT  
-		Size: 3.1 KB (3150 bytes)  
+	-	`sha256:15c04fd71db90343e6f0383ac32f92c3161d802fc41e3f6e7599ccdd44a77b5f`  
+		Last Modified: Wed, 30 Nov 2022 02:20:24 GMT  
+		Size: 3.1 KB (3147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo-express:1.0.0-alpha`
 
 ```console
-$ docker pull mongo-express@sha256:2a25aafdf23296823b06bc9a0a2af2656971262041b8dbf11b40444804fdc104
+$ docker pull mongo-express@sha256:dcfcf89bf91238ff129469a5a94523b3025913dcc41597d72d4d5f4a0339cc7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -489,14 +489,14 @@ CMD ["mongo-express"]
 ### `mongo-express:1.0.0-alpha` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:9d9120f8308b6d5b47b6b400497a48313d06e15660ced6f87665b50b2fc2ba42
+$ docker pull mongo-express@sha256:a673b9be961398681405711a5fe564fdc40f746b0c1c3c43364d5306566e543c
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348435 bytes)**  
+-	Total Size: **51.0 MB (51034170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce615669da5e083c892bcf62fab55dcb6484b42c54ce11de2a3f301e7dc232e4`
+-	Image ID: `sha256:4475769c9d8b8604fa24d2a59a5ae1388b6302ab96c7398c4d3a18b644b56b0e`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -519,25 +519,25 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 22 Oct 2021 17:48:30 GMT
 CMD ["node"]
-# Fri, 22 Oct 2021 19:43:50 GMT
+# Wed, 30 Nov 2022 02:06:02 GMT
 RUN apk add --no-cache bash tini
-# Fri, 22 Oct 2021 19:43:51 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 EXPOSE 8081
-# Fri, 22 Oct 2021 19:43:52 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 22 Oct 2021 19:43:53 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV MONGO_EXPRESS=1.0.0-alpha.4
-# Fri, 22 Oct 2021 19:44:11 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 RUN set -eux; 	apk add --no-cache --virtual .me-install-deps git; 	npm install mongo-express@$MONGO_EXPRESS; 	apk del --no-network .me-install-deps
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 COPY file:4835df10525ec6f18e6339ce0c331b087391dd3279d964040c96a41ba7bf90b7 in / 
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 RUN cp config.default.js config.js
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 22 Oct 2021 19:44:15 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 CMD ["mongo-express"]
 ```
 
@@ -558,27 +558,27 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 22 Oct 2021 18:06:47 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbf010fd053cf713df6acde05c58dc86bae2a94465cdbcf4e1b5d7d01f6a935c`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 799.9 KB (799898 bytes)  
+	-	`sha256:260c05cca102f72d2ac29e7e5db7f1ec1925259e39b40067848e51dada31521b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 800.1 KB (800086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a545528b1fec43de49f88b7a27e615796d2a3b9e0a599cedd2af70d35a13bc94`  
-		Last Modified: Fri, 22 Oct 2021 19:45:03 GMT  
-		Size: 18.8 MB (18752679 bytes)  
+	-	`sha256:11493b18f8be2a2aee4ccc56d4f00ca80c7e9d5281e3dfd866c9fb0a79d7684c`  
+		Last Modified: Wed, 30 Nov 2022 02:20:13 GMT  
+		Size: 20.4 MB (20438227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fa5610e3594ffa65054f586e287584ac84f3183a31cce7fc47fe95c448f25d`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
+	-	`sha256:aebb6833f9759d27b6d61c63a6d2749a9d82ad877939b477217c8e12cea3453b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:12 GMT  
 		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56780d66f8c3e1060dff7b92ac29efc0b2546d1fc562ca0ac61b568f3f536718`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 3.3 KB (3300 bytes)  
+	-	`sha256:bc659759548562a5a3451f539a3d5ccf73e71d26cee1afde8c8f50a419ac96f6`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 3.3 KB (3299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo-express:1.0.0-alpha.4`
 
 ```console
-$ docker pull mongo-express@sha256:2a25aafdf23296823b06bc9a0a2af2656971262041b8dbf11b40444804fdc104
+$ docker pull mongo-express@sha256:dcfcf89bf91238ff129469a5a94523b3025913dcc41597d72d4d5f4a0339cc7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -678,14 +678,14 @@ CMD ["mongo-express"]
 ### `mongo-express:1.0.0-alpha.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:9d9120f8308b6d5b47b6b400497a48313d06e15660ced6f87665b50b2fc2ba42
+$ docker pull mongo-express@sha256:a673b9be961398681405711a5fe564fdc40f746b0c1c3c43364d5306566e543c
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348435 bytes)**  
+-	Total Size: **51.0 MB (51034170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce615669da5e083c892bcf62fab55dcb6484b42c54ce11de2a3f301e7dc232e4`
+-	Image ID: `sha256:4475769c9d8b8604fa24d2a59a5ae1388b6302ab96c7398c4d3a18b644b56b0e`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -708,25 +708,25 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 22 Oct 2021 17:48:30 GMT
 CMD ["node"]
-# Fri, 22 Oct 2021 19:43:50 GMT
+# Wed, 30 Nov 2022 02:06:02 GMT
 RUN apk add --no-cache bash tini
-# Fri, 22 Oct 2021 19:43:51 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 EXPOSE 8081
-# Fri, 22 Oct 2021 19:43:52 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 22 Oct 2021 19:43:53 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV MONGO_EXPRESS=1.0.0-alpha.4
-# Fri, 22 Oct 2021 19:44:11 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 RUN set -eux; 	apk add --no-cache --virtual .me-install-deps git; 	npm install mongo-express@$MONGO_EXPRESS; 	apk del --no-network .me-install-deps
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 COPY file:4835df10525ec6f18e6339ce0c331b087391dd3279d964040c96a41ba7bf90b7 in / 
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 RUN cp config.default.js config.js
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 22 Oct 2021 19:44:15 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 CMD ["mongo-express"]
 ```
 
@@ -747,27 +747,27 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 22 Oct 2021 18:06:47 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbf010fd053cf713df6acde05c58dc86bae2a94465cdbcf4e1b5d7d01f6a935c`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 799.9 KB (799898 bytes)  
+	-	`sha256:260c05cca102f72d2ac29e7e5db7f1ec1925259e39b40067848e51dada31521b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 800.1 KB (800086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a545528b1fec43de49f88b7a27e615796d2a3b9e0a599cedd2af70d35a13bc94`  
-		Last Modified: Fri, 22 Oct 2021 19:45:03 GMT  
-		Size: 18.8 MB (18752679 bytes)  
+	-	`sha256:11493b18f8be2a2aee4ccc56d4f00ca80c7e9d5281e3dfd866c9fb0a79d7684c`  
+		Last Modified: Wed, 30 Nov 2022 02:20:13 GMT  
+		Size: 20.4 MB (20438227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fa5610e3594ffa65054f586e287584ac84f3183a31cce7fc47fe95c448f25d`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
+	-	`sha256:aebb6833f9759d27b6d61c63a6d2749a9d82ad877939b477217c8e12cea3453b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:12 GMT  
 		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56780d66f8c3e1060dff7b92ac29efc0b2546d1fc562ca0ac61b568f3f536718`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 3.3 KB (3300 bytes)  
+	-	`sha256:bc659759548562a5a3451f539a3d5ccf73e71d26cee1afde8c8f50a419ac96f6`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 3.3 KB (3299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo-express:latest`
 
 ```console
-$ docker pull mongo-express@sha256:2a25aafdf23296823b06bc9a0a2af2656971262041b8dbf11b40444804fdc104
+$ docker pull mongo-express@sha256:dcfcf89bf91238ff129469a5a94523b3025913dcc41597d72d4d5f4a0339cc7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -867,14 +867,14 @@ CMD ["mongo-express"]
 ### `mongo-express:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo-express@sha256:9d9120f8308b6d5b47b6b400497a48313d06e15660ced6f87665b50b2fc2ba42
+$ docker pull mongo-express@sha256:a673b9be961398681405711a5fe564fdc40f746b0c1c3c43364d5306566e543c
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49348435 bytes)**  
+-	Total Size: **51.0 MB (51034170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce615669da5e083c892bcf62fab55dcb6484b42c54ce11de2a3f301e7dc232e4`
+-	Image ID: `sha256:4475769c9d8b8604fa24d2a59a5ae1388b6302ab96c7398c4d3a18b644b56b0e`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["mongo-express"]`
 
@@ -897,25 +897,25 @@ COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 22 Oct 2021 17:48:30 GMT
 CMD ["node"]
-# Fri, 22 Oct 2021 19:43:50 GMT
+# Wed, 30 Nov 2022 02:06:02 GMT
 RUN apk add --no-cache bash tini
-# Fri, 22 Oct 2021 19:43:51 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 EXPOSE 8081
-# Fri, 22 Oct 2021 19:43:52 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_URL=mongodb://mongo:27017 ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Fri, 22 Oct 2021 19:43:53 GMT
+# Wed, 30 Nov 2022 02:06:03 GMT
 ENV MONGO_EXPRESS=1.0.0-alpha.4
-# Fri, 22 Oct 2021 19:44:11 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 RUN set -eux; 	apk add --no-cache --virtual .me-install-deps git; 	npm install mongo-express@$MONGO_EXPRESS; 	apk del --no-network .me-install-deps
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 COPY file:4835df10525ec6f18e6339ce0c331b087391dd3279d964040c96a41ba7bf90b7 in / 
-# Fri, 22 Oct 2021 19:44:12 GMT
+# Wed, 30 Nov 2022 02:06:19 GMT
 WORKDIR /node_modules/mongo-express
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 RUN cp config.default.js config.js
-# Fri, 22 Oct 2021 19:44:14 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Fri, 22 Oct 2021 19:44:15 GMT
+# Wed, 30 Nov 2022 02:06:20 GMT
 CMD ["mongo-express"]
 ```
 
@@ -936,19 +936,19 @@ CMD ["mongo-express"]
 		Last Modified: Fri, 22 Oct 2021 18:06:47 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbf010fd053cf713df6acde05c58dc86bae2a94465cdbcf4e1b5d7d01f6a935c`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 799.9 KB (799898 bytes)  
+	-	`sha256:260c05cca102f72d2ac29e7e5db7f1ec1925259e39b40067848e51dada31521b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 800.1 KB (800086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a545528b1fec43de49f88b7a27e615796d2a3b9e0a599cedd2af70d35a13bc94`  
-		Last Modified: Fri, 22 Oct 2021 19:45:03 GMT  
-		Size: 18.8 MB (18752679 bytes)  
+	-	`sha256:11493b18f8be2a2aee4ccc56d4f00ca80c7e9d5281e3dfd866c9fb0a79d7684c`  
+		Last Modified: Wed, 30 Nov 2022 02:20:13 GMT  
+		Size: 20.4 MB (20438227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fa5610e3594ffa65054f586e287584ac84f3183a31cce7fc47fe95c448f25d`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
+	-	`sha256:aebb6833f9759d27b6d61c63a6d2749a9d82ad877939b477217c8e12cea3453b`  
+		Last Modified: Wed, 30 Nov 2022 02:20:12 GMT  
 		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56780d66f8c3e1060dff7b92ac29efc0b2546d1fc562ca0ac61b568f3f536718`  
-		Last Modified: Fri, 22 Oct 2021 19:45:00 GMT  
-		Size: 3.3 KB (3300 bytes)  
+	-	`sha256:bc659759548562a5a3451f539a3d5ccf73e71d26cee1afde8c8f50a419ac96f6`  
+		Last Modified: Wed, 30 Nov 2022 02:20:11 GMT  
+		Size: 3.3 KB (3299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

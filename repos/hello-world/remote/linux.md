@@ -1,7 +1,7 @@
 ## `hello-world:linux`
 
 ```console
-$ docker pull hello-world@sha256:19c35675aac535e0f5803f12000ed7ffae510a43f1e3a839e7f4a9942a03dace
+$ docker pull hello-world@sha256:1b4338ade6d6d9eff53264cdc0f9caf1d717cf89dbfcb1cb13c57bc0a3c199a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -71,105 +71,105 @@ CMD ["/hello"]
 ### `hello-world:linux` - linux; arm variant v7
 
 ```console
-$ docker pull hello-world@sha256:f130bd2d67e6e9280ac6d0a6c83857bfaf70234e8ef4236876eccfbd30973b1c
+$ docker pull hello-world@sha256:40d0cfd0861719208ff9f7747ab3f97844eeca509df705db44a736df863b76af
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.0 KB (2993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ec996c686eb87d8f091080ec29dd1862b39b5822ddfd8f9a1e2c9288fad89fe`
+-	Image ID: `sha256:7066d68bd2f224dbb7c3332da105b1dac81a75b47a869602096c27b6a75a525c`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Thu, 30 Sep 2021 19:27:27 GMT
+# Tue, 03 Jan 2023 00:57:59 GMT
 COPY file:064e3842b2c067a42e34f354951e44e733d8077cfb791d6847f4e653677d2f7e in / 
-# Thu, 30 Sep 2021 19:27:27 GMT
+# Tue, 03 Jan 2023 00:58:00 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:9b157615502ddff86482f7fe2fa7a074db74a62fce12b4e8507827ac8f08d0ce`  
-		Last Modified: Thu, 30 Sep 2021 19:27:48 GMT  
+	-	`sha256:04341b189be695acecd201a36cdf9dd99b8b0c338075000f555d5adf8e9c0547`  
+		Last Modified: Tue, 03 Jan 2023 00:58:13 GMT  
 		Size: 3.0 KB (2993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:linux` - linux; arm64 variant v8
 
 ```console
-$ docker pull hello-world@sha256:01433e86a06b752f228e3c17394169a5e21a0995f153268a9b36a16d4f2b2184
+$ docker pull hello-world@sha256:432f982638b3aefab73cc58ab28f5c16e96fdb504e8c134fc58dff4bae8bf338
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 KB (3208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18e5af7904737ba5ef7fbbd7d59de5ebe6c4437907bd7fc436bf9b3ef3149ea9`
+-	Image ID: `sha256:46331d942d6350436f64e614d75725f6de3bb5c63e266e236e04389820a234c4`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Fri, 24 Sep 2021 01:21:00 GMT
+# Sat, 19 Mar 2022 16:12:58 GMT
 COPY file:a79dd5bda1e77203401956a93401d3aef45221fc750295a4291896f3386f4f54 in / 
-# Fri, 24 Sep 2021 01:21:00 GMT
+# Sat, 19 Mar 2022 16:12:58 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:93288797bd35d114f2d788e5abf4fae518a5bd299647daf4ede47acc029d66c5`  
-		Last Modified: Fri, 24 Sep 2021 01:21:15 GMT  
+	-	`sha256:7050e35b49f5e348c4809f5eff915842962cb813f32062d3bbdd35c750dd7d01`  
+		Last Modified: Sat, 19 Mar 2022 16:13:11 GMT  
 		Size: 3.2 KB (3208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:linux` - linux; 386
 
 ```console
-$ docker pull hello-world@sha256:251bb7a536c7cce3437758971aab3a31c6da52fb43ff0654cff5b167c4486409
+$ docker pull hello-world@sha256:995efde2e81b21d1ea7066aa77a59298a62a9e9fbb4b77f36c189774ec9b1089
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 KB (2735 bytes)**  
+-	Total Size: **2.7 KB (2736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c2f8335a1a3faa411d45fc31419e2fbb519dd9c41ece8ebc350e6fe7af6b017`
+-	Image ID: `sha256:36d89aa75357c8f99e359f8cabc0aae667d47d8f25ed51cbe66e148e3a77e19c`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Thu, 23 Sep 2021 22:55:43 GMT
+# Tue, 22 Mar 2022 23:18:38 GMT
 COPY file:1babbe3b37eb1154a832c225a92090691ababcfb0ed16f027eb3fe3c2e4ed27b in / 
-# Thu, 23 Sep 2021 22:55:43 GMT
+# Tue, 22 Mar 2022 23:18:38 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:cdfa10f2a818a2f4fcb49da487dc42795690a7fb04524bdc3decfa9fe16b2c2a`  
-		Last Modified: Thu, 23 Sep 2021 22:55:56 GMT  
-		Size: 2.7 KB (2735 bytes)  
+	-	`sha256:7f0d4fad461d1ac69488092b5914b5ec642133c0fb884539045de33fbcd2eadb`  
+		Last Modified: Tue, 22 Mar 2022 23:18:54 GMT  
+		Size: 2.7 KB (2736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:linux` - linux; mips64le
 
 ```console
-$ docker pull hello-world@sha256:c2f204d26b4ea353651385001bb6bc371d8c4edcd9daf61d00ad365d927e00c0
+$ docker pull hello-world@sha256:eb11b1a194ff8e236a01eff392c4e1296a53b0fb4780d8b0382f7996a15d5392
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 KB (4091 bytes)**  
+-	Total Size: **4.1 KB (4092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d278d00d38a32c6096213745a79ff5c1f6ec12b575ed0f5e5a780a3478c1b21`
+-	Image ID: `sha256:5004e9d559e7a75f42249ddeca4d5764fa4db05592a7a9a641e4ac37cc619ba1`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Thu, 23 Sep 2021 22:48:30 GMT
+# Sat, 19 Mar 2022 06:38:09 GMT
 COPY file:9acd5b5706455a6fe3d36fc638bf68bead9cf9f0ac938fc68ec9e669f0d2f8c7 in / 
-# Thu, 23 Sep 2021 22:48:30 GMT
+# Sat, 19 Mar 2022 06:38:10 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:3e4037a0f36c739a8a3f2184b76b57f6a1d56a36fe3c3f966657ad1db828e1aa`  
-		Last Modified: Thu, 23 Sep 2021 22:48:41 GMT  
-		Size: 4.1 KB (4091 bytes)  
+	-	`sha256:bbc6052697e5fdcd1b311e0b3f65189ffbe354cf8ae97e7a55d588e855097174`  
+		Last Modified: Sat, 19 Mar 2022 06:38:26 GMT  
+		Size: 4.1 KB (4092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hello-world:linux` - linux; ppc64le

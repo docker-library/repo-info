@@ -1,7 +1,7 @@
 ## `sl:latest`
 
 ```console
-$ docker pull sl@sha256:ec1a422bbe07b5de95ce84f01cdd425fbe96a56cf28025d87611b1ba716d9d8d
+$ docker pull sl@sha256:19df35cf21aa3850b18179a46a5bed4c478d06b236401017a54a2efc35481898
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,27 +11,27 @@ $ docker pull sl@sha256:ec1a422bbe07b5de95ce84f01cdd425fbe96a56cf28025d87611b1ba
 ### `sl:latest` - linux; amd64
 
 ```console
-$ docker pull sl@sha256:d126700a45b6ec063767b29724446249183fd33314f390770c7d47b8bfae81e5
+$ docker pull sl@sha256:68b519258ed44f7fc801372b6c52bf9ac75ab0799670d3d49161abe52af31384
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70413744 bytes)**  
+-	Total Size: **71.4 MB (71448918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01e86928dc7dc6cee76df7f7e8949ab300aee24b7a803890b77d480ed934f1b3`
+-	Image ID: `sha256:ea7c4a25c916d0bf33d2547370fa87840720f6953b4666b04f87df8320dd26f3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 03 Nov 2021 19:43:26 GMT
-ADD file:9e989684e6936cae1d477e917812617cd48fd0c7a58cf6d8d1c2d58a7ad93b10 in / 
-# Wed, 03 Nov 2021 19:43:26 GMT
-LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20211103
-# Wed, 03 Nov 2021 19:43:26 GMT
+# Tue, 03 Jan 2023 20:20:40 GMT
+ADD file:25a5d0279d0e7536e817c57682a90dafd9706a541b6844c6123e78399f315e2b in / 
+# Tue, 03 Jan 2023 20:20:40 GMT
+LABEL name=SL7 Base Image vendor=Scientific Linux build-date=20230103
+# Tue, 03 Jan 2023 20:20:40 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:0a331b6fa8322fe6fd7280931539552260e7422d8320aa5d96600084bd9734d7`  
-		Last Modified: Wed, 03 Nov 2021 19:43:46 GMT  
-		Size: 70.4 MB (70413744 bytes)  
+	-	`sha256:7f85a68916b0f02346053f79579581d724f1bee9dbefce18bff81913330e3987`  
+		Last Modified: Tue, 03 Jan 2023 20:20:59 GMT  
+		Size: 71.4 MB (71448918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

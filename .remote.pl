@@ -247,6 +247,7 @@ sub cmd_to_dockerfile ($cmd, $shell) {
 		my $nopRegex = "\Q#(nop)\E +";
 
 		my $str = $cmd->[0];
+		$str =~ s!^RUN !!; # strip off "RUN" prefix from buildkit (added back later)
 		my @prefix = ();
 		if ($str =~ s!^[|]\d+ (.*?) ($shellRegex)!$2!) {
 			push @prefix, '# ARGS: ' . $1;
@@ -258,8 +259,8 @@ sub cmd_to_dockerfile ($cmd, $shell) {
 			return '# unable to parse image command string further:' . "\n" . $str;
 		}
 		$str =~ s!^$shellRegex!!;
-		unless ($str =~ s!^$nopRegex!!) {
-			# if we don't have "#(nop)", RUN is implied
+		unless ($str =~ s!^$nopRegex!! || $str =~ m!^[A-Z]+ !) {
+			# if we don't have "#(nop)" or something that looks like an all-caps Dockerfile instruction, RUN is implied
 			$str = 'RUN ' . $str;
 		}
 		return join "\n", @prefix, $str;

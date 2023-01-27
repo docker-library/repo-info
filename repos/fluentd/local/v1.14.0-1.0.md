@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b1c11fc4d5d2d98146f392efff53ded472fea834ad159104bd57d957aa2ea7f`
-- Created: `2021-11-12T22:15:55.267023939Z`
-- Virtual Size: ~ 47.74 Mb  
+- Image ID: `sha256:b9bb541bfc9908f21cb0dd96aaaacb54d846895aecd4b03c4a16707d4f4f13e4`
+- Created: `2022-10-06T21:16:01.702168208Z`
+- Virtual Size: ~ 50.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -76,16 +76,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r7 description:
+busybox-1.32.1-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r7 webpage:
+busybox-1.32.1-r9 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r7 installed size:
+busybox-1.32.1-r9 installed size:
 924 KiB
 
-busybox-1.32.1-r7 license:
+busybox-1.32.1-r9 license:
 GPL-2.0-only
 
 ```
@@ -93,16 +93,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r5 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r5 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r5 installed size:
-672 KiB
+ca-certificates-20220614-r0 installed size:
+684 KiB
 
-ca-certificates-20191127-r5 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -110,16 +110,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r5 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r5 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r5 installed size:
+ca-certificates-bundle-20220614-r0 installed size:
 228 KiB
 
-ca-certificates-bundle-20191127-r5 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -144,16 +144,16 @@ GPL-3.0-or-later
 ### `apk` package: `gmp`
 
 ```console
-gmp-6.2.1-r0 description:
+gmp-6.2.1-r1 description:
 free library for arbitrary precision arithmetic
 
-gmp-6.2.1-r0 webpage:
+gmp-6.2.1-r1 webpage:
 https://gmplib.org/
 
-gmp-6.2.1-r0 installed size:
+gmp-6.2.1-r1 installed size:
 416 KiB
 
-gmp-6.2.1-r0 license:
+gmp-6.2.1-r1 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -178,16 +178,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1l-r0 description:
+libcrypto1.1-1.1.1q-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1l-r0 webpage:
+libcrypto1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1l-r0 installed size:
+libcrypto1.1-1.1.1q-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1l-r0 license:
+libcrypto1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -195,16 +195,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1l-r0 description:
+libssl1.1-1.1.1q-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1l-r0 webpage:
+libssl1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1l-r0 installed size:
+libssl1.1-1.1.1q-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1l-r0 license:
+libssl1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -263,16 +263,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.2_p20210109-r0 description:
+ncurses-libs-6.2_p20210109-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.2_p20210109-r0 webpage:
+ncurses-libs-6.2_p20210109-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.2_p20210109-r0 installed size:
+ncurses-libs-6.2_p20210109-r1 installed size:
 496 KiB
 
-ncurses-libs-6.2_p20210109-r0 license:
+ncurses-libs-6.2_p20210109-r1 license:
 MIT
 
 ```
@@ -280,16 +280,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.2_p20210109-r0 description:
+ncurses-terminfo-base-6.2_p20210109-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.2_p20210109-r0 webpage:
+ncurses-terminfo-base-6.2_p20210109-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.2_p20210109-r0 installed size:
+ncurses-terminfo-base-6.2_p20210109-r1 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.2_p20210109-r0 license:
+ncurses-terminfo-base-6.2_p20210109-r1 license:
 MIT
 
 ```
@@ -314,16 +314,16 @@ GPL-2.0-or-later
 ### `apk` package: `ruby`
 
 ```console
-ruby-2.7.4-r0 description:
+ruby-2.7.6-r0 description:
 An object-oriented language for quick and easy programming
 
-ruby-2.7.4-r0 webpage:
+ruby-2.7.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-2.7.4-r0 installed size:
+ruby-2.7.6-r0 installed size:
 52 KiB
 
-ruby-2.7.4-r0 license:
+ruby-2.7.6-r0 license:
 Ruby AND BSD-2-Clause AND MIT
 
 ```
@@ -331,16 +331,16 @@ Ruby AND BSD-2-Clause AND MIT
 ### `apk` package: `ruby-etc`
 
 ```console
-ruby-etc-2.7.4-r0 description:
+ruby-etc-2.7.6-r0 description:
 Provides access to information typically stored in UNIX /etc directory
 
-ruby-etc-2.7.4-r0 webpage:
+ruby-etc-2.7.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-etc-2.7.4-r0 installed size:
+ruby-etc-2.7.6-r0 installed size:
 84 KiB
 
-ruby-etc-2.7.4-r0 license:
+ruby-etc-2.7.6-r0 license:
 BSD-2-Clause
 
 ```
@@ -348,16 +348,16 @@ BSD-2-Clause
 ### `apk` package: `ruby-irb`
 
 ```console
-ruby-irb-2.7.4-r0 description:
+ruby-irb-2.7.6-r0 description:
 The Interactive Ruby
 
-ruby-irb-2.7.4-r0 webpage:
+ruby-irb-2.7.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-irb-2.7.4-r0 installed size:
+ruby-irb-2.7.6-r0 installed size:
 364 KiB
 
-ruby-irb-2.7.4-r0 license:
+ruby-irb-2.7.6-r0 license:
 Ruby AND BSD-2-Clause AND MIT
 
 ```
@@ -365,16 +365,16 @@ Ruby AND BSD-2-Clause AND MIT
 ### `apk` package: `ruby-libs`
 
 ```console
-ruby-libs-2.7.4-r0 description:
+ruby-libs-2.7.6-r0 description:
 Libraries necessary to run Ruby
 
-ruby-libs-2.7.4-r0 webpage:
+ruby-libs-2.7.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-libs-2.7.4-r0 installed size:
+ruby-libs-2.7.6-r0 installed size:
 13 MiB
 
-ruby-libs-2.7.4-r0 license:
+ruby-libs-2.7.6-r0 license:
 Ruby AND BSD-2-Clause AND MIT
 
 ```
@@ -382,16 +382,16 @@ Ruby AND BSD-2-Clause AND MIT
 ### `apk` package: `ruby-webrick`
 
 ```console
-ruby-webrick-2.7.4-r0 description:
+ruby-webrick-2.7.6-r0 description:
 HTTP server toolkit for Ruby
 
-ruby-webrick-2.7.4-r0 webpage:
+ruby-webrick-2.7.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-webrick-2.7.4-r0 installed size:
+ruby-webrick-2.7.6-r0 installed size:
 328 KiB
 
-ruby-webrick-2.7.4-r0 license:
+ruby-webrick-2.7.6-r0 license:
 BSD-2-Clause
 
 ```
@@ -416,16 +416,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r7 description:
+ssl_client-1.32.1-r9 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r7 webpage:
+ssl_client-1.32.1-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r7 installed size:
+ssl_client-1.32.1-r9 installed size:
 28 KiB
 
-ssl_client-1.32.1-r7 license:
+ssl_client-1.32.1-r9 license:
 GPL-2.0-only
 
 ```
@@ -467,16 +467,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```

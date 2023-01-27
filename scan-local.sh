@@ -5,10 +5,12 @@ trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 
 image="$1"; shift
 
-docker build --pull -t repo-info:local -q -f Dockerfile.local . > /dev/null
+docker build --pull -t repo-info:local-apk -q -f Dockerfile.local-apk . > /dev/null
+docker build --pull -t repo-info:local-dpkg -q -f Dockerfile.local-dpkg . > /dev/null
+docker build --pull -t repo-info:local-rpm -q -f Dockerfile.local-rpm . > /dev/null
 
 name="repo-info-local-$$-$RANDOM"
-trap "docker rm -vf '$name-data' '$name' > /dev/null || :" EXIT
+trap "docker rm -vf '$name-data' > /dev/null || :" EXIT
 
 docker create \
 	--name "$name-data" \
@@ -20,8 +22,6 @@ docker create \
 	-v /var/lib \
 	"$image" \
 	bogus > /dev/null
-
-docker run -d --name "$name" --volumes-from "$name-data" -v /etc/ssl repo-info:local > /dev/null
 
 echo '# `'"$image"'`'
 
@@ -55,4 +55,6 @@ docker inspect -f '
 {{ end }}- Environment:{{ range .Config.Env }}{{ "\n" }}  - `{{ . }}`{{ end }}{{ if .Config.Labels }}
 - Labels:{{ range $k, $v := .Config.Labels }}{{ "\n" }}  - `{{ $k }}={{ $v }}`{{ end }}{{ end }}' "$image"
 
-docker logs -f "$name"
+docker run --rm --volumes-from "$name-data" -v /etc/ssl repo-info:local-apk || :
+docker run --rm --volumes-from "$name-data" -v /etc/ssl repo-info:local-dpkg || :
+docker run --rm --volumes-from "$name-data" -v /etc/ssl repo-info:local-rpm || :
