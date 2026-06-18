@@ -29,6 +29,7 @@ echo '# `'"$image"'`'
 docker inspect -f 'json' "$image" | jq --raw-output '
 	.[] # docker inspect returns a list of inspections
 	| [
+		"",
 		"## Docker Metadata",
 		"",
 		"- Image ID: `\( .Id // .ID )`",
@@ -51,7 +52,7 @@ docker inspect -f 'json' "$image" | jq --raw-output '
 			else
 				"\(.) bytes"
 			end
-		)",
+		)  ",
 		"  (total size of all layers on-disk)",
 		"- Arch: `\( .Os )`/`\( .Architecture )`",
 		if .Config.Entrypoint then
