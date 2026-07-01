@@ -2151,15 +2151,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA256:79b60798195a024d447e661e5bbc1eb40af50387ebf840e6f581190cc02064b6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA256:e32e817f7b4166a301f60b14a711871bfab7d35c1d7e29b585dfc479ae150aa4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA256:b8f41cb7843f513934307d07047b185c316c3a72c650eaece0926e02d1dfc377
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.dsc' sqlite3_3.45.1-1ubuntu2.5.dsc 2601 SHA256:6816e069bf0306f294001e1ed0ee578a272baced39c7afe4151053ab069a70b4
-```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.15`
 

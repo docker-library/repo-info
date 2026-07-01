@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd3fe32f80ea5055d43c5ceed000453cc9f4fa3c593069b0a64fed6f3ea16232`
-- Created: `2026-06-24T23:05:38.892631853Z`
-- Virtual Size: ~ 527.19 Mb  
+- Image ID: `sha256:906bd2a157e714b43c09993d4de2733b8365a72090311875b4e9be576131e44b`
+- Created: `2026-07-01T00:22:51.155790469Z`
+- Virtual Size: ~ 527.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=12.3.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-24T06:39:51Z`
+  - `build-date=2026-06-30T05:58:02Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-06-24T06:39:51Z`
+  - `org.opencontainers.image.created=2026-06-30T05:58:02Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=fcffc2222455e28601e0105a0a1e9a211f7127c7`
+  - `org.opencontainers.image.revision=44f0ddba4a090cf20869fe52250e95ba0eca806d`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=fcffc2222455e28601e0105a0a1e9a211f7127c7`
+  - `vcs-ref=44f0ddba4a090cf20869fe52250e95ba0eca806d`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.3.2`

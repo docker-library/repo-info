@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef65be3418f3eef4d742d97bd66ad8970227b1ff736162a5cc8ee8281acc0a8c`
-- Created: `2026-06-25T23:27:58.509831237Z`
-- Virtual Size: ~ 516.92 Mb  
+- Image ID: `sha256:5c651df88b83c8a9024bba03a461964e1de333b38b90649fd2292084f438a48f`
+- Created: `2026-07-01T00:22:56.700964254Z`
+- Virtual Size: ~ 515.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-25T05:47:36Z`
+  - `build-date=2026-06-30T05:29:15Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-06-25T05:47:36Z`
+  - `org.opencontainers.image.created=2026-06-30T05:29:15Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=b76cbbe03678b6bed00cb452eb031ce6d202c981`
+  - `org.opencontainers.image.revision=9d52f7ccf5e43749249b95c398cdcb9020bc399d`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b76cbbe03678b6bed00cb452eb031ce6d202c981`
+  - `vcs-ref=9d52f7ccf5e43749249b95c398cdcb9020bc399d`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.8`
@@ -313,11 +313,16 @@ $ dnf --quiet download --source --url elfutils-libelf-0.194-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.194-1.el9.src.rpm
 ```
 
-### `rpm` package: `epel-release-9-10.el9.noarch`
+### `rpm` package: `epel-release-9-11.el9.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url epel-release-9-11.el9.noarch
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
 
@@ -413,37 +418,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-270.el9_8.x86_64`
+### `rpm` package: `glibc-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-270.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-270.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-272.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-270.el9_8.x86_64`
+### `rpm` package: `glibc-common-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-270.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-270.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-272.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-270.el9_8.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-270.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-270.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-272.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -498,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -588,7 +593,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1171,7 +1176,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2238,7 +2243,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2249,7 +2254,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirrors.sonic.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
