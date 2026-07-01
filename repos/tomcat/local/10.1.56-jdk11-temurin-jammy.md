@@ -320,15 +320,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.24
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.debian.tar.xz' curl_7.81.0-1ubuntu1.24.debian.tar.xz 94252 SHA512:d5fd71580f1a2a4b56cf992df3d5e47b0a15b32c0e4f4961f2e79c83e18e338cea68d3d8567d273a3a31e4fa5e39089334f59af90194182c20fec101fef16b8b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.dsc' curl_7.81.0-1ubuntu1.24.dsc 3143 SHA512:74fc1db520f8e9c89d7cefbfa3675775f0ea2976c7d80e4501c9a073a3fa5194af07120e231d47e540fb5952feedb77404bca14de91c661dbada00ef0871e80c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1905,15 +1899,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA256:63dbd1c7abab37ec5beed22dae75bac048efead0f19aa5cad49b4bd690335ebd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA256:3157723da779963f7887f29de12289a4890f0c18eb17b570aa2c8d2c96d31d6f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz 33900 SHA256:6ab1d798854f14fc298ac3cfc11ceb95081511721238d73ea60d075427717dc9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.dsc' sqlite3_3.37.2-2ubuntu0.5.dsc 2602 SHA256:c3fdde2feb1d2e12d0dd88674d854542878e612ad68a264ce0a9dcba45f31fe8
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.20`
 
