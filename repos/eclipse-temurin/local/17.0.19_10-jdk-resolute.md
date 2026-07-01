@@ -375,15 +375,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.1.debian.tar.xz' curl_8.18.0-1ubuntu2.1.debian.tar.xz 70832 SHA512:ea89b14816fc9f501b321e78660831dc085245db68d1d91272c0b4cb139144f8e624cb0e7d3459b3ae60552aa9e4479adafa5578683a84c824097f44e2660e7e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.1.dsc' curl_8.18.0-1ubuntu2.1.dsc 3267 SHA512:ced476debc3048bcbe8902461e41e8f49ddf6a21ff4dbed7d4e5936338305e956b5d21dffcac0be5ddc7587b496fa2ce65eb513d6084cd9b0930f025ffcf2929
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -1223,10 +1217,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.12.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2' libgcrypt20_1.12.0.orig.tar.bz2 4438947 SHA512:9421461297bd79b14f94d1ab275c3ed93b5d433531915c5cc7a718a94d32978a46feccb7a33fe63a60780ff00d465fbe1fe9ada5c250cf6d10a525c246c63d1c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2.asc' libgcrypt20_1.12.0.orig.tar.bz2.asc 265 SHA512:9861910a5a955e37b5c90dbb01e1fcf35cd573801004d3cf762fc33180b9bfed1db229827395b54fdb1c499004daece4b6201ec83e9ca214fff79855b691e9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz' libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz 44572 SHA512:fb99d9db1a3bf027c8d8e8d4d6564b76ff1fae8bb11bc6dbe617ef59507fcda2cc68572d83eeb5e588f490b48fd3544337b4c248f3f71e0dbbc86e81c75ffe81
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.dsc' libgcrypt20_1.12.0-2ubuntu0.1.dsc 3077 SHA512:c69c80f6d39038032d1b8f540efcabef5465ae29672e7db176182b34426c2ab9fe6b3a8f57c4235d287cb7de731eb66fee559d7f56d6c96f0ab36275c7bba623
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2' libgcrypt20_1.12.0.orig.tar.bz2 4438947 SHA512:9421461297bd79b14f94d1ab275c3ed93b5d433531915c5cc7a718a94d32978a46feccb7a33fe63a60780ff00d465fbe1fe9ada5c250cf6d10a525c246c63d1c
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2.asc' libgcrypt20_1.12.0.orig.tar.bz2.asc 265 SHA512:9861910a5a955e37b5c90dbb01e1fcf35cd573801004d3cf762fc33180b9bfed1db229827395b54fdb1c499004daece4b6201ec83e9ca214fff79855b691e9a9
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz' libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz 44572 SHA512:fb99d9db1a3bf027c8d8e8d4d6564b76ff1fae8bb11bc6dbe617ef59507fcda2cc68572d83eeb5e588f490b48fd3544337b4c248f3f71e0dbbc86e81c75ffe81
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.dsc' libgcrypt20_1.12.0-2ubuntu0.1.dsc 3077 SHA512:c69c80f6d39038032d1b8f540efcabef5465ae29672e7db176182b34426c2ab9fe6b3a8f57c4235d287cb7de731eb66fee559d7f56d6c96f0ab36275c7bba623
 ```
 
 ### `dpkg` source package: `libgpg-error=1.58-2`
@@ -1480,15 +1474,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA512:8703636fc28f0b12c8171712f3d605e0466a5bb9ba06e136c3203548fc3408ab07defd71dc801d7009a337e1e02fd60e8933a2a526d5ef0ce53153058d201233
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA512:83e600ddd676013932297c4f3d2cf2e65b5308f7700d818b34f30d760c7495180e6d8dae70579c8bea95ea2d7ccb12fc42641e545e11ec4b6630a0e6b350b282
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.1.debian.tar.xz' libssh2_1.11.1-1ubuntu0.26.04.1.debian.tar.xz 18000 SHA512:d0424931adf80089f274459397580bf3ee8ebe47af6a213c2e1d7e9d1c7feb8fa2d3798cb91e9091c967808b42ac82138422b7f26edac65de441a897d0710f6f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.1.dsc' libssh2_1.11.1-1ubuntu0.26.04.1.dsc 2458 SHA512:3595da921cc0a21aee9ce8c235662a899ed056f21e4263f177dca2d34f6ae9e750d932e3e80ce100154a19ed19d2bc920d14e29d535e28799c591d2833cf83c9
-```
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
