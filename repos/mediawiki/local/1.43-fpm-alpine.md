@@ -1,10 +1,10 @@
-# `mediawiki:1.43.8-fpm-alpine`
+# `mediawiki:1.43.9-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fa2ff094bc7c14fd32e258db4c697869df017a2c8f2466b875e476457d4f0bc`
-- Created: `2026-06-16T01:19:56.536405888Z`
-- Virtual Size: ~ 534.7 Mb  
+- Image ID: `sha256:a231ac1e10fad16177b1f2a9a205b796b1a1311f08d50c3c268ca16f4fc62a6b`
+- Created: `2026-07-01T20:05:24.86084806Z`
+- Virtual Size: ~ 536.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
   - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
   - `MEDIAWIKI_MAJOR_VERSION=1.43`
-  - `MEDIAWIKI_VERSION=1.43.8`
+  - `MEDIAWIKI_VERSION=1.43.9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -556,16 +556,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42-r0 description:
+libblkid-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.42-r0 webpage:
+libblkid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42-r0 installed size:
+libblkid-2.42.1-r0 installed size:
 198 KiB
 
-libblkid-2.42-r0 license:
+libblkid-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -658,16 +658,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -794,16 +794,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42-r0 description:
+libmount-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libmount-2.42-r0 webpage:
+libmount-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42-r0 installed size:
+libmount-2.42.1-r0 installed size:
 282 KiB
 
-libmount-2.42-r0 license:
+libmount-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
