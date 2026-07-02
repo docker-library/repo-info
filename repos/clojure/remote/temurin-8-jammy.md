@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-jammy`
 
 ```console
-$ docker pull clojure@sha256:cf6e80a92d8e62cb2a80eef524f16e2de132eeedf1d9decf5706ed76fa30436e
+$ docker pull clojure@sha256:f06bbbf8ad0eaa4d0836de71f27f6635d6127a0fc893abc8e1cf22c05fd934f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,335 +16,335 @@ $ docker pull clojure@sha256:cf6e80a92d8e62cb2a80eef524f16e2de132eeedf1d9decf570
 ### `clojure:temurin-8-jammy` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:4939916f40c516228e13d5b66445062f9bdf744004a9b6a8a1f9c8fc662f4a2a
+$ docker pull clojure@sha256:86f7ff3bdf14c732b580cb3ab50415749ed6547d1e639790d8de04edcba01af4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.0 MB (148953546 bytes)**  
+-	Total Size: **148.9 MB (148913386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3673ae8c151a40c8079838a6a8b63b4066fd31eb0ca9815be7f4d5b13b3b9268`
+-	Image ID: `sha256:c55c67c69e29a56765e4a1ebcdcd448eca4d633f729476404552854b63f6d839`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:49:23 GMT
-ADD file:14c8897ef5107db11b35f5a0c05bdcb883c0a6daa83d07d4439865541f08514c in / 
-# Sat, 09 May 2026 04:49:23 GMT
+# Mon, 29 Jun 2026 11:07:32 GMT
+ADD file:c5143b228eb55f19ed4d3b653ad68ec7afe54ded0247e090ce3afb9e5484adfb in / 
+# Mon, 29 Jun 2026 11:07:32 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:15:16 GMT
+# Thu, 02 Jul 2026 02:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 15 May 2026 21:15:16 GMT
+# Thu, 02 Jul 2026 02:20:00 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2026 21:15:16 GMT
+# Thu, 02 Jul 2026 02:20:00 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 15 May 2026 21:15:16 GMT
+# Thu, 02 Jul 2026 02:20:00 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:15:16 GMT
+# Thu, 02 Jul 2026 02:20:00 GMT
 ENV JAVA_VERSION=jdk8u492-b09
-# Fri, 15 May 2026 21:15:19 GMT
+# Thu, 02 Jul 2026 02:20:04 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='da257f161d7f8c6ca5b0e5d9e4090f65ac28c5e398072e68b8ae87988b1d1a2e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u492b09.tar.gz';          ;;        arm64)          ESUM='3c2253b986909c20f79d6de7a0cb957f89c243df57615897836046e24d2e5257';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u492b09.tar.gz';          ;;        armhf)          ESUM='ac93b4b75d6c0592c83030dbbeeaed46f5fbfccb276cf26c86aab3e49bba090e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u492b09.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='867e477e0a54159c7b774c55cfb046767120b1de43f705fa775ece74ea39e341';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u492b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Fri, 15 May 2026 21:15:20 GMT
+# Thu, 02 Jul 2026 02:20:05 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Fri, 15 May 2026 21:15:20 GMT
+# Thu, 02 Jul 2026 02:20:05 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 15 May 2026 21:15:20 GMT
+# Thu, 02 Jul 2026 02:20:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 04 Jun 2026 17:41:49 GMT
+# Thu, 02 Jul 2026 05:47:15 GMT
 ENV CLOJURE_VERSION=1.12.5.1654
-# Thu, 04 Jun 2026 17:41:49 GMT
+# Thu, 02 Jul 2026 05:47:15 GMT
 WORKDIR /tmp
-# Thu, 04 Jun 2026 17:42:00 GMT
+# Thu, 02 Jul 2026 05:47:27 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "28f81b0833c0a072f4370ae0eb1e4c5a4f9f4a34035cd7607ea9f253a8b06da1 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Thu, 04 Jun 2026 17:42:00 GMT
+# Thu, 02 Jul 2026 05:47:27 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Thu, 04 Jun 2026 17:42:00 GMT
+# Thu, 02 Jul 2026 05:47:27 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:40d16f30db405106ef8074779bdf41f012465c2a785bbeaa2eab9f2081099b47`  
-		Last Modified: Sat, 09 May 2026 05:24:51 GMT  
-		Size: 29.7 MB (29736684 bytes)  
+	-	`sha256:d6834b4a794c03efa2c998853e64969fa8851b11b2ade63292268872a37759d0`  
+		Last Modified: Mon, 29 Jun 2026 11:25:17 GMT  
+		Size: 29.7 MB (29738881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d6b32b3ef7070cfe8ecc1e079c88c3046a1d8c9a31b57eaa1a6b04a60b0acab`  
-		Last Modified: Fri, 15 May 2026 21:15:32 GMT  
-		Size: 16.2 MB (16152866 bytes)  
+	-	`sha256:c83caec24db30544ad023e308841e2497566aaa819910d279af3dab84337293d`  
+		Last Modified: Thu, 02 Jul 2026 02:20:17 GMT  
+		Size: 16.1 MB (16110094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67c46befd9cc5413628d1ef689b7d5fecc6cc135b1df4e65b0c4e7d9e85a15fd`  
-		Last Modified: Fri, 15 May 2026 21:15:33 GMT  
-		Size: 55.2 MB (55200427 bytes)  
+	-	`sha256:a5f019651bdb399e03596ae0470e52d90bf3cd782c277704d30e45680ea76cc0`  
+		Last Modified: Thu, 02 Jul 2026 02:20:18 GMT  
+		Size: 55.2 MB (55200417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5c0f29abf0065ccd296005cccd08668f746cef7190f51de1d5044976165f6da`  
-		Last Modified: Fri, 15 May 2026 21:15:31 GMT  
-		Size: 127.0 B  
+	-	`sha256:f1573a07acd71b8059e8ea4bff2b6dc84ba528e98e62f6452ce5459659636a49`  
+		Last Modified: Thu, 02 Jul 2026 02:20:16 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca4b57cd0587f0fa9040af915d7a743f897d8295cc9d217557d4e1e5e8e7c50d`  
-		Last Modified: Fri, 15 May 2026 21:15:31 GMT  
-		Size: 2.5 KB (2485 bytes)  
+	-	`sha256:4d692438693d701173c536207d0a199e8fcc81627cbdc648190b05342f804408`  
+		Last Modified: Thu, 02 Jul 2026 02:20:16 GMT  
+		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31ba825b7a13910a5257eda8e93830f25aa508d7a2f9b9637b7e7858e86e9c19`  
-		Last Modified: Thu, 04 Jun 2026 17:42:16 GMT  
-		Size: 47.9 MB (47860310 bytes)  
+	-	`sha256:7bdb9aca4768ea6bca189a1f201cc84f8b455725017f09f36441979ede6fd04c`  
+		Last Modified: Thu, 02 Jul 2026 05:47:43 GMT  
+		Size: 47.9 MB (47860736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7d7b7daffc53ecc2de6196704f209a8b1def66da97ede15c2f11520a11897ae`  
-		Last Modified: Thu, 04 Jun 2026 17:42:15 GMT  
-		Size: 615.0 B  
+	-	`sha256:ef2d8c9703b3f2b656d0530f76e6fa3fbc2e16036f257c7c9cee695c715c7012`  
+		Last Modified: Thu, 02 Jul 2026 05:47:41 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:adec6a62c949995d6902b0adcc175e84da0d9afd9f187e5b1f3574a18874c1fb
+$ docker pull clojure@sha256:a83c64b39cc0f41f0f45ab5b16132b3b90fc205a5c460683a5e107a99be65a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6435123 bytes)**  
+-	Total Size: **6.4 MB (6418859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c91b0b9c5da606ee3ecadc39793aaa0393afa760f5b5c6d55ab6475c0bbac57`
+-	Image ID: `sha256:448094e636274e11e7059b1df041244621e1c20187f94d607a3fe3837d13fd81`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb4cc18675e505cd9458597e0e49b394c29e2acbd5061cf28f3f1ee7df1aa7cf`  
-		Last Modified: Thu, 04 Jun 2026 17:42:15 GMT  
-		Size: 6.4 MB (6421632 bytes)  
+	-	`sha256:52bd8451dacfb2b8d3d7eaf55624ef779d7ebe2ecace13a7f6efeadb9d3daee2`  
+		Last Modified: Thu, 02 Jul 2026 05:47:42 GMT  
+		Size: 6.4 MB (6405368 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59839b0b9c760411bfb51843d8d157874e270507b05cb5bc014600aa00f62207`  
-		Last Modified: Thu, 04 Jun 2026 17:42:14 GMT  
+	-	`sha256:c41e69fb14019974b77552bae96222eda347d31c0f4e68cf4eb296d358670699`  
+		Last Modified: Thu, 02 Jul 2026 05:47:41 GMT  
 		Size: 13.5 KB (13491 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:e72e2b87b89db3a719bc96beef505216ee6cf54dbbc32b3ff40316b9f42dacfd
+$ docker pull clojure@sha256:dcd09bd83a3d31b91c8c32e0ce18c2f157aa49e05f9eed3c3bb055a2474cdff1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145801331 bytes)**  
+-	Total Size: **145.8 MB (145778922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24bf4eee1c6a5ac4cc7e6df215d09fcc6c6e2c91f49e08590dac002fefcb0c67`
+-	Image ID: `sha256:3f2d08ef2079d9be42686096d143ad7bb0dc25867706e9ece42082ec15dbdff6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:50:57 GMT
-ADD file:a8d1411696ccaba92b4557162d508331f7cb7973e559947ad40c3f25d9402b10 in / 
-# Sat, 09 May 2026 04:50:57 GMT
+# Mon, 29 Jun 2026 10:38:42 GMT
+ADD file:a517741c956f6a7e4b7cb0efd9bc418ce3cc54eb49b5314080ff606a7430ac2a in / 
+# Mon, 29 Jun 2026 10:38:42 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:15:32 GMT
+# Thu, 02 Jul 2026 02:18:52 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 15 May 2026 21:15:32 GMT
+# Thu, 02 Jul 2026 02:18:52 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2026 21:15:32 GMT
+# Thu, 02 Jul 2026 02:18:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 15 May 2026 21:15:32 GMT
+# Thu, 02 Jul 2026 02:18:52 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:15:32 GMT
+# Thu, 02 Jul 2026 02:18:52 GMT
 ENV JAVA_VERSION=jdk8u492-b09
-# Fri, 15 May 2026 21:15:37 GMT
+# Thu, 02 Jul 2026 02:18:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='da257f161d7f8c6ca5b0e5d9e4090f65ac28c5e398072e68b8ae87988b1d1a2e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u492b09.tar.gz';          ;;        arm64)          ESUM='3c2253b986909c20f79d6de7a0cb957f89c243df57615897836046e24d2e5257';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u492b09.tar.gz';          ;;        armhf)          ESUM='ac93b4b75d6c0592c83030dbbeeaed46f5fbfccb276cf26c86aab3e49bba090e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u492b09.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='867e477e0a54159c7b774c55cfb046767120b1de43f705fa775ece74ea39e341';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u492b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Fri, 15 May 2026 21:15:37 GMT
+# Thu, 02 Jul 2026 02:18:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Fri, 15 May 2026 21:15:37 GMT
+# Thu, 02 Jul 2026 02:18:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 15 May 2026 21:15:37 GMT
+# Thu, 02 Jul 2026 02:18:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 04 Jun 2026 17:41:43 GMT
+# Thu, 02 Jul 2026 05:47:31 GMT
 ENV CLOJURE_VERSION=1.12.5.1654
-# Thu, 04 Jun 2026 17:41:43 GMT
+# Thu, 02 Jul 2026 05:47:31 GMT
 WORKDIR /tmp
-# Thu, 04 Jun 2026 17:41:56 GMT
+# Thu, 02 Jul 2026 05:47:46 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "28f81b0833c0a072f4370ae0eb1e4c5a4f9f4a34035cd7607ea9f253a8b06da1 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Thu, 04 Jun 2026 17:41:56 GMT
+# Thu, 02 Jul 2026 05:47:46 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Thu, 04 Jun 2026 17:41:56 GMT
+# Thu, 02 Jul 2026 05:47:46 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:99267111abcc4caf5e9b6f06fd8b9ca7ae7bff04ce06b24ca352c6007daaa73e`  
-		Last Modified: Sat, 09 May 2026 05:24:57 GMT  
-		Size: 27.6 MB (27606623 bytes)  
+	-	`sha256:119d19e001bafa21919289095e1dbfac64f1e16d2469dd14c2d2a520039d26d9`  
+		Last Modified: Mon, 29 Jun 2026 11:25:25 GMT  
+		Size: 27.6 MB (27613184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebfd41293b9256645232b858c5f8e289e51b6135738d6855642a8880bec37ae5`  
-		Last Modified: Fri, 15 May 2026 21:15:50 GMT  
-		Size: 16.1 MB (16076178 bytes)  
+	-	`sha256:df52751c4073dc3bbd2ee2b5060cf3c37357f694fda2e6e833676845ef0756b4`  
+		Last Modified: Thu, 02 Jul 2026 02:19:10 GMT  
+		Size: 16.0 MB (16039925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46ec385fd511fd24588598dd9cf77133e0a023b4e2c526f386b674cea1acedda`  
-		Last Modified: Fri, 15 May 2026 21:15:53 GMT  
-		Size: 54.3 MB (54277476 bytes)  
+	-	`sha256:0aed612b0f382987020b2235b113468346324322c2a351b904f4e79e7540868b`  
+		Last Modified: Thu, 02 Jul 2026 02:19:11 GMT  
+		Size: 54.3 MB (54277483 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16fa891b6042cd47e2487956e5740f1c3808f4e9ace5767be9382dc38173d6ea`  
-		Last Modified: Fri, 15 May 2026 21:15:49 GMT  
+	-	`sha256:29b575b0ed38b1e57d947e34b5f2ebf6569ade63f90d5046d343e0957015ecd4`  
+		Last Modified: Thu, 02 Jul 2026 02:19:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79b71ee931aafacaa829e94ada20e78d1f5a52d60b4501b498dd963054f07c46`  
-		Last Modified: Fri, 15 May 2026 21:15:49 GMT  
-		Size: 2.5 KB (2484 bytes)  
+	-	`sha256:d0ebd7b811a1dc09545576f3af57b3aacc2f00df8771415c17b30d28b696979d`  
+		Last Modified: Thu, 02 Jul 2026 02:19:09 GMT  
+		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab1ff9d2422a1089317e30b8900992ffb836a6c015a7125f15080c16d5831f98`  
-		Last Modified: Thu, 04 Jun 2026 17:42:10 GMT  
-		Size: 47.8 MB (47837795 bytes)  
+	-	`sha256:89e3a64d79da0e8b9dafd41cb96cd7f6228893e023d05227466a570afcc6a824`  
+		Last Modified: Thu, 02 Jul 2026 05:48:09 GMT  
+		Size: 47.8 MB (47845068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d843b000863e3d0046635783a3317f8855219f922f69bf6dcc6f644736b8a3e`  
-		Last Modified: Thu, 04 Jun 2026 17:42:09 GMT  
-		Size: 617.0 B  
+	-	`sha256:8d2e15eda55a3fe25fbc9a7a566e33c4f20c1594f94596d24667e1e7f9a337ce`  
+		Last Modified: Thu, 02 Jul 2026 05:48:07 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:a38d3e398ec919b45ce5b2f92fe0c3d00fccbdff89be0fe64fa49fb46c5a0c24
+$ docker pull clojure@sha256:4c00c666660dc5110cb872af8f7dbe5f5ee379f667e0d01ea07c12a6163f6c5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6441682 bytes)**  
+-	Total Size: **6.4 MB (6425418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fc9937687acc1c01042b428230b41f6dc5a176f1364a0717580a347789b522a`
+-	Image ID: `sha256:657b461658ba478eca21b2c41403a7a40b18bc15cd5a266033d2988b147bf1f0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ccfbbd3e5dbe27267b4d57c1a817a1d0e28b7ec3a531a4ef1aa4233a117df1b`  
-		Last Modified: Thu, 04 Jun 2026 17:42:10 GMT  
-		Size: 6.4 MB (6428098 bytes)  
+	-	`sha256:9dc4a8f4c3eb54bb6ce9cedb3d21ea9f77b64e393b83bce5a947d36a0641109b`  
+		Last Modified: Thu, 02 Jul 2026 05:48:07 GMT  
+		Size: 6.4 MB (6411834 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9a8679dd560d1928cab54dccbabca7c17f41f6634526fb25ea6c02865df13fe`  
-		Last Modified: Thu, 04 Jun 2026 17:42:09 GMT  
+	-	`sha256:a12b7a59863aa90956998fae70a69cdb80b0b3d18c1043cbc7be4bc2655072bb`  
+		Last Modified: Thu, 02 Jul 2026 05:48:07 GMT  
 		Size: 13.6 KB (13584 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:2bbdacfcda26d427331f9cb7f693874c2e4ef7a775e98123f79a3da30ef53b75
+$ docker pull clojure@sha256:323edd79125f410261200f2f7d1d5c3a7c3c6e3991a22ac4811ff7863632f541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156754135 bytes)**  
+-	Total Size: **156.7 MB (156710350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8cbf1be0ada0af819ea1f0703bdbb212b65e8f4082525c428c50a2838bb2bc`
+-	Image ID: `sha256:7f5d848c1f12765588da547d9f2a0ae16e07d0db6922b61ab4ebf9114ed76917`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:51:11 GMT
-ADD file:bd6823713e9d7c2f4ea7ca1d6d549e2bed56e8ce1fc6f98e14f6eb3a3371ebfa in / 
-# Sat, 09 May 2026 04:51:12 GMT
+# Mon, 29 Jun 2026 10:35:06 GMT
+ADD file:fe88ac7d2b59101d91924b906576ed0bd1506245791beb01e66dafe898d768bb in / 
+# Mon, 29 Jun 2026 10:35:07 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:10:20 GMT
+# Thu, 02 Jul 2026 02:13:16 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 15 May 2026 21:10:20 GMT
+# Thu, 02 Jul 2026 02:13:16 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2026 21:10:20 GMT
+# Thu, 02 Jul 2026 02:13:16 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 15 May 2026 21:10:20 GMT
+# Thu, 02 Jul 2026 02:13:16 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:10:20 GMT
+# Thu, 02 Jul 2026 02:13:16 GMT
 ENV JAVA_VERSION=jdk8u492-b09
-# Fri, 15 May 2026 21:10:28 GMT
+# Thu, 02 Jul 2026 02:13:22 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='da257f161d7f8c6ca5b0e5d9e4090f65ac28c5e398072e68b8ae87988b1d1a2e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u492b09.tar.gz';          ;;        arm64)          ESUM='3c2253b986909c20f79d6de7a0cb957f89c243df57615897836046e24d2e5257';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u492b09.tar.gz';          ;;        armhf)          ESUM='ac93b4b75d6c0592c83030dbbeeaed46f5fbfccb276cf26c86aab3e49bba090e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u492b09.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='867e477e0a54159c7b774c55cfb046767120b1de43f705fa775ece74ea39e341';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u492b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Fri, 15 May 2026 21:10:28 GMT
+# Thu, 02 Jul 2026 02:13:23 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Fri, 15 May 2026 21:10:29 GMT
+# Thu, 02 Jul 2026 02:13:23 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 15 May 2026 21:10:29 GMT
+# Thu, 02 Jul 2026 02:13:23 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 04 Jun 2026 17:43:04 GMT
+# Thu, 02 Jul 2026 06:47:33 GMT
 ENV CLOJURE_VERSION=1.12.5.1654
-# Thu, 04 Jun 2026 17:43:04 GMT
+# Thu, 02 Jul 2026 06:47:33 GMT
 WORKDIR /tmp
-# Thu, 04 Jun 2026 17:43:43 GMT
+# Thu, 02 Jul 2026 06:48:14 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "28f81b0833c0a072f4370ae0eb1e4c5a4f9f4a34035cd7607ea9f253a8b06da1 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Thu, 04 Jun 2026 17:43:44 GMT
+# Thu, 02 Jul 2026 06:48:14 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Thu, 04 Jun 2026 17:43:44 GMT
+# Thu, 02 Jul 2026 06:48:14 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:6970bf2b5ef1698cb51975b1a652f6511f8fd9f88ae7b247e3ee32591d975e63`  
-		Last Modified: Sat, 09 May 2026 05:25:11 GMT  
-		Size: 34.6 MB (34646720 bytes)  
+	-	`sha256:cf87e8e9427654cae1c380a7eb2a10971210431259802390d53728f83afd8afa`  
+		Last Modified: Mon, 29 Jun 2026 11:25:41 GMT  
+		Size: 34.6 MB (34641868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74563760a17437dfb610242b605ae18edc6feef6143f0f512cfd8f6e66afb898`  
-		Last Modified: Fri, 15 May 2026 21:10:51 GMT  
-		Size: 17.6 MB (17625928 bytes)  
+	-	`sha256:33f4b14b2b02d4baef1d2438e749f36a329449d9fbbc7eb0c0ec2dba87c8bd0b`  
+		Last Modified: Thu, 02 Jul 2026 02:13:47 GMT  
+		Size: 17.6 MB (17582601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:307b099cbb61ab90287644036db962b05613ca3515addcf9da7e4e22bfabf367`  
-		Last Modified: Fri, 15 May 2026 21:10:52 GMT  
-		Size: 52.7 MB (52670287 bytes)  
+	-	`sha256:ae917ca1fd6f2697783a14c39ec3815d11657f6df14474ba4c6475e35deee411`  
+		Last Modified: Thu, 02 Jul 2026 02:13:49 GMT  
+		Size: 52.7 MB (52670243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f26fd7ec72aedd9a967989e0dd74c97961ec899940d645114b9d373741a8131`  
-		Last Modified: Fri, 15 May 2026 21:10:50 GMT  
-		Size: 127.0 B  
+	-	`sha256:2967a79405fec792c79780c1a3091792dc0c67521218ecd52e7734b0bba5494c`  
+		Last Modified: Thu, 02 Jul 2026 02:13:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c59312781502ed640cf5c4ed11aafae62c4bb1f87d9b37d79c4c1f7654b876cd`  
-		Last Modified: Fri, 15 May 2026 21:10:50 GMT  
+	-	`sha256:6a1ec167a5920585deb88364155b6fb00a28b8ae0258c07e624b23a03341e393`  
+		Last Modified: Thu, 02 Jul 2026 02:13:47 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9ff3d883890835097778e33f5408ce0389924089c7225d32b41f1bfca2882ec`  
-		Last Modified: Thu, 04 Jun 2026 17:44:19 GMT  
-		Size: 51.8 MB (51807942 bytes)  
+	-	`sha256:ce9015bb2f158ac7301fc6dae9429372377aa37376de0e00e89e232c8d8c7a8c`  
+		Last Modified: Thu, 02 Jul 2026 06:48:50 GMT  
+		Size: 51.8 MB (51812378 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:715289f6817575c3adcc2d0622520efb6d3e29117b13828fcb0311e76e5e1614`  
-		Last Modified: Thu, 04 Jun 2026 17:44:18 GMT  
-		Size: 615.0 B  
+	-	`sha256:334c52718e2847c86ebc882324f13afad6624c66cdd3f91ca66a6ef747804790`  
+		Last Modified: Thu, 02 Jul 2026 06:48:48 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:99e78dfebfc8c68665a1d955358851e4243fbe02715f10b73b7eaf86ee0960e9
+$ docker pull clojure@sha256:4ddf438539a9443a007b572268fd26e768b5bdcf5c73fa8522f1c0b560fb5869
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6440980 bytes)**  
+-	Total Size: **6.4 MB (6424716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c44d06f10dd547dfb5f9eb667fec67dc0fd842c655e8149dfcff3f2ed5f39d3e`
+-	Image ID: `sha256:9171c831a01657553dbfff7478cf8f7c7bf7957247c75664fa5d84dcbc8377a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2d1066251c5f559350218b917d0ef1d4b819a917fd46110d2dd2c313f12e9369`  
-		Last Modified: Thu, 04 Jun 2026 17:44:18 GMT  
-		Size: 6.4 MB (6427450 bytes)  
+	-	`sha256:cfdc3024bc6d3bfc51c066ff7fde6b494b59db07b72097c635d43ac4e2940b43`  
+		Last Modified: Thu, 02 Jul 2026 06:48:48 GMT  
+		Size: 6.4 MB (6411186 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a717621d3de223abf37b37cbfe2354d30ed076d0f87a9af1f2847b0a7533291`  
-		Last Modified: Thu, 04 Jun 2026 17:44:17 GMT  
+	-	`sha256:9d9f79d86c45f2e410019473c505f32f29038db0ddf3e2fc76a9209e2093b4ea`  
+		Last Modified: Thu, 02 Jul 2026 06:48:48 GMT  
 		Size: 13.5 KB (13530 bytes)  
 		MIME: application/vnd.in-toto+json
