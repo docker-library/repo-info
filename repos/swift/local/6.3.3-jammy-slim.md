@@ -1,10 +1,10 @@
-# `swift:6.3.2-jammy-slim`
+# `swift:6.3.3-jammy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9979b9fc87d2f068a87cf0498e20b37eabab4abbdcab33b83f8327851251bec9`
-- Created: `2026-05-15T21:23:03.367883535Z`
-- Virtual Size: ~ 284.37 Mb  
+- Image ID: `sha256:b1c1f89e6ab3982ca47275b1b89a1cb06abdc186d9694c474adb5a87cdb881df`
+- Created: `2026-06-30T18:56:29.484798212Z`
+- Virtual Size: ~ 284.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.3.2-release`
-  - `SWIFT_VERSION=swift-6.3.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.3.3-release`
+  - `SWIFT_VERSION=swift-6.3.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -223,11 +223,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
 ```
 
-### `dpkg` source package: `ca-certificates=20240203~22.04.1`
+### `dpkg` source package: `ca-certificates=20260601~22.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20240203~22.04.1`
+- `ca-certificates=20260601~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -235,9 +235,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260601~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.tar.xz' ca-certificates_20260601~22.04.1.tar.xz 266492 SHA512:a06f67c74305ad876aa84bf41d594ac902f58143d7d5998fb494630453573e6606ddae5c462ebeeb255c9c94b89fe44af79f59ddcf8b0bd369a9353bfce709d6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.dsc' ca-certificates_20260601~22.04.1.dsc 1850 SHA512:af78747c137e3d0fb7ba55c278792d4c028f177b3c4af49b92c835301371477eb54c2a73120e75611f9f4b8ced331d5d6bcea37f7bba41f0b3f27fcd9871ca29
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -291,15 +295,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.24
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.debian.tar.xz' curl_7.81.0-1ubuntu1.24.debian.tar.xz 94252 SHA512:d5fd71580f1a2a4b56cf992df3d5e47b0a15b32c0e4f4961f2e79c83e18e338cea68d3d8567d273a3a31e4fa5e39089334f59af90194182c20fec101fef16b8b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.dsc' curl_7.81.0-1ubuntu1.24.dsc 3143 SHA512:74fc1db520f8e9c89d7cefbfa3675775f0ea2976c7d80e4501c9a073a3fa5194af07120e231d47e540fb5952feedb77404bca14de91c661dbada00ef0871e80c
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1173,20 +1171,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.27-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz' libxcrypt_4.4.27-1.debian.tar.xz 7764 SHA512:02e38ba06f3555dd930fc7ed44602dc816ce48f4c29fdc085249948596d5e7e96600cb81c8c9fb2e1dc33574d5136d08feeff3eb1dd3522aa8e5cdc9037c1ae0
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.11`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.12`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.11`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.12`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.12
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.12.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.12.debian.tar.xz 60032 SHA512:e76f9d18ab57f26d73d71b47d783dd1eaee168485ccb1aeca19454c053d1389cae018851215ae1e3df42fe823cd2d0c3754ad3460e18e4e579f4d30e8c78f422
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.12.dsc' libxml2_2.9.13+dfsg-1ubuntu0.12.dsc 3075 SHA512:b28b052bec8c1e09ed65c2f27aaadbe31d8350c08a96284b535ef65756111edc9f9915ce8ae6d8d96bb65dc40cdf92ee27bf7dc77e4a89b2486c2e582fa7349f
+```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 
@@ -1376,9 +1379,8 @@ $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.23`
-- `openssl=3.0.2-0ubuntu1.23`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1388,6 +1390,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.25`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.25`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.25
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.debian.tar.xz' openssl_3.0.2-0ubuntu1.25.debian.tar.xz 292264 SHA512:68d7cb2233d1cb266fc9bd4d11e435d64237033624a22c2ec7f75917314238bc7dbcc38bcc7a761a844ce0c68b426b4b572f87f83bd458162ebe705cc4dd84c3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.dsc' openssl_3.0.2-0ubuntu1.25.dsc 2730 SHA512:6e4d4e77f6a68dd44a5a042e55a70c7ed414ed93d05ee3d1bb7b7c9699accbfab2c297c453b06d5f6b5c537d1c480e685b3df344206bf9671eb9d8a362930581
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
