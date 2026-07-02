@@ -1,7 +1,7 @@
 ## `backdrop:latest`
 
 ```console
-$ docker pull backdrop@sha256:da5313e4e518e49aefb98995a2f61ce21b81fb3ead85ccebf6218037511e71dd
+$ docker pull backdrop@sha256:320a25dc5e0d7672ff8b0b302c4d981066da7ffefd1e105f48198a5eff76eb7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull backdrop@sha256:da5313e4e518e49aefb98995a2f61ce21b81fb3ead85ccebf6
 ### `backdrop:latest` - linux; amd64
 
 ```console
-$ docker pull backdrop@sha256:0bba49fd3c24925d9db05479fb04e3712d5c3c1bd78ec1ab8a9cafdacfc6413c
+$ docker pull backdrop@sha256:7560119abeba7c39ba90bcf187ca37eab56280de1d9b535a4753792a155236a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.2 MB (192167409 bytes)**  
+-	Total Size: **192.2 MB (192228633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:688a5311acb82339aae467ae76d9ea4e39a72635fdffecf498726832b0ff8948`
+-	Image ID: `sha256:01c4b60956f9e38132426de26f24ea5eb2ea510e579f695ff06f5f1600632cfe`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -85,23 +85,23 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Wed, 24 Jun 2026 01:29:51 GMT
 CMD ["apache2-foreground"]
-# Wed, 24 Jun 2026 02:28:13 GMT
+# Thu, 02 Jul 2026 00:31:17 GMT
 RUN a2enmod rewrite # buildkit
-# Wed, 24 Jun 2026 02:28:58 GMT
+# Thu, 02 Jul 2026 00:32:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends libzip-dev libonig-dev libpng-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-jpeg=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip # buildkit
-# Wed, 24 Jun 2026 02:28:58 GMT
+# Thu, 02 Jul 2026 00:32:05 GMT
 WORKDIR /var/www/html
-# Wed, 24 Jun 2026 02:28:59 GMT
-ENV BACKDROP_VERSION=1.33.0
-# Wed, 24 Jun 2026 02:28:59 GMT
-ENV BACKDROP_MD5=9b5e3fb6ac833e2adc2857f050d3f143
-# Wed, 24 Jun 2026 02:28:59 GMT
+# Thu, 02 Jul 2026 00:32:07 GMT
+ENV BACKDROP_VERSION=1.34.2
+# Thu, 02 Jul 2026 00:32:07 GMT
+ENV BACKDROP_MD5=7eee1abd33dd63c38f3cc6a4288a575b
+# Thu, 02 Jul 2026 00:32:07 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/refs/tags/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites files # buildkit
-# Wed, 24 Jun 2026 02:29:00 GMT
+# Thu, 02 Jul 2026 00:32:07 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 24 Jun 2026 02:29:00 GMT
+# Thu, 02 Jul 2026 00:32:07 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 24 Jun 2026 02:29:00 GMT
+# Thu, 02 Jul 2026 00:32:07 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -166,61 +166,61 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a915c6dfd2f34114987722cea54a6c1e098ee7bfb6ea1db2e2d681220cdf74da`  
-		Last Modified: Wed, 24 Jun 2026 02:29:12 GMT  
-		Size: 308.0 B  
+	-	`sha256:40a0b3dc4640d4db7d120d51911413c3928399f7ab88661b789bb4a42212806a`  
+		Last Modified: Thu, 02 Jul 2026 00:32:21 GMT  
+		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c200628b5aeac8f67f31ac42537843f77961f507fb64cd382b6cf01e0950428d`  
-		Last Modified: Wed, 24 Jun 2026 02:29:13 GMT  
-		Size: 6.5 MB (6534707 bytes)  
+	-	`sha256:51e6f93dc191d1bbac3a5b0d015dc22404251b2e3967aa8de1cca1bd6409faa3`  
+		Last Modified: Thu, 02 Jul 2026 00:32:21 GMT  
+		Size: 6.5 MB (6534859 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b26dcadd25f5f1306c8d632570869d68138ae69cc342f74d2b220672110abad`  
-		Last Modified: Wed, 24 Jun 2026 02:29:13 GMT  
-		Size: 9.3 MB (9286801 bytes)  
+	-	`sha256:d1b248292d4b411deefceb247b3868f5921fdf07baf93525e3255bb67f71de32`  
+		Last Modified: Thu, 02 Jul 2026 00:32:21 GMT  
+		Size: 9.3 MB (9347870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:737b71b2621cc014a6fdd7aed018549e3ece5683b3b801646e1a37a5b9835fd6`  
-		Last Modified: Wed, 24 Jun 2026 02:29:11 GMT  
-		Size: 950.0 B  
+	-	`sha256:fdf564bd319ce727cb35a854c734b088d3a8910e5df3c36bd9ad7675e7abb69b`  
+		Last Modified: Thu, 02 Jul 2026 00:32:21 GMT  
+		Size: 949.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `backdrop:latest` - unknown; unknown
 
 ```console
-$ docker pull backdrop@sha256:81e65ee332a4539c6c623ed8ca0909ee124d06ce054cbd027b6c307d8044b90d
+$ docker pull backdrop@sha256:119777cb3c8580729c179e35e9f47ef1d44d4f4c2735f7f38f5ec157b697b185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.5 MB (7492426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:105b6e352143e09f3936061a93700e05d2df06552050a9b935bb5509c1a20850`
+-	Image ID: `sha256:40db05acf6cf1ac81c1017841c21a6f7b0cbd49ff31991364925a6c3a356df21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6ffcabeb8bbda9fde6cb1c9af9b28a9867f65a3909fe6c9529d07583721ef8b4`  
-		Last Modified: Wed, 24 Jun 2026 02:29:12 GMT  
+	-	`sha256:ceec25461cc2c86b729969602193a0b6452457e2cee5ae9eb98e26122cb92704`  
+		Last Modified: Thu, 02 Jul 2026 00:32:21 GMT  
 		Size: 7.5 MB (7461868 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdba05b0b7a0106e2c826b9f9904c31fdab424d7fabe1e67d1012e7d0c9346b5`  
-		Last Modified: Wed, 24 Jun 2026 02:29:12 GMT  
+	-	`sha256:f5234258cdab2ce2e134361ccb2cab53609efcdd8bb09d56bc117682ff4f8eb3`  
+		Last Modified: Thu, 02 Jul 2026 00:32:20 GMT  
 		Size: 30.6 KB (30558 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `backdrop:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull backdrop@sha256:9c04ce9a4174dd5f5575c748e828e7d43f550918d9dfedfe2464be44b0f2ec32
+$ docker pull backdrop@sha256:b74886a225843cd1364384c693fed0e3794bfd2c348312a699634b5e4a170a15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.6 MB (185578514 bytes)**  
+-	Total Size: **185.6 MB (185639596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf6cc1f0d9dedac24b054530479d1e90efcd711238a339310f39ef9a3ef310b6`
+-	Image ID: `sha256:91d65d0950f695636694e47a991be31bc36d62e5197f7a8069849c2d8ffb0e99`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -285,23 +285,23 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Wed, 24 Jun 2026 01:31:09 GMT
 CMD ["apache2-foreground"]
-# Wed, 24 Jun 2026 02:34:57 GMT
+# Thu, 02 Jul 2026 00:30:44 GMT
 RUN a2enmod rewrite # buildkit
-# Wed, 24 Jun 2026 02:36:05 GMT
+# Thu, 02 Jul 2026 00:31:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends libzip-dev libonig-dev libpng-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-jpeg=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip # buildkit
-# Wed, 24 Jun 2026 02:36:05 GMT
+# Thu, 02 Jul 2026 00:31:51 GMT
 WORKDIR /var/www/html
-# Wed, 24 Jun 2026 02:36:06 GMT
-ENV BACKDROP_VERSION=1.33.0
-# Wed, 24 Jun 2026 02:36:06 GMT
-ENV BACKDROP_MD5=9b5e3fb6ac833e2adc2857f050d3f143
-# Wed, 24 Jun 2026 02:36:06 GMT
+# Thu, 02 Jul 2026 00:31:53 GMT
+ENV BACKDROP_VERSION=1.34.2
+# Thu, 02 Jul 2026 00:31:53 GMT
+ENV BACKDROP_MD5=7eee1abd33dd63c38f3cc6a4288a575b
+# Thu, 02 Jul 2026 00:31:53 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/refs/tags/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz   && echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c -   && tar -xz --strip-components=1 -f backdrop.tar.gz   && rm backdrop.tar.gz   && chown -R www-data:www-data sites files # buildkit
-# Wed, 24 Jun 2026 02:36:07 GMT
+# Thu, 02 Jul 2026 00:31:53 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 24 Jun 2026 02:36:07 GMT
+# Thu, 02 Jul 2026 00:31:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 24 Jun 2026 02:36:07 GMT
+# Thu, 02 Jul 2026 00:31:53 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -366,47 +366,47 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ad859dfd081e9414686e0b90b3497a0bc610e207be092e5adfa270153819821`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
-		Size: 308.0 B  
+	-	`sha256:0838ba94d9595da1a7991efa1772a84178624160a783451d610f7a2742b8182e`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
+		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dad57a5f9ed7bae5e2e51c65dda355c84ec79f65cdc992e2bf7563acb59e2dae`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
-		Size: 7.2 MB (7154171 bytes)  
+	-	`sha256:de4d120ada70538cc71ad7e7d3cc7a57625ad533b36674f1c15550ff6edbc8ed`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
+		Size: 7.2 MB (7154194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ca18b71dbd9fcaec9b868d37310c63575001fab37a0caf83703387bccf25107`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
-		Size: 9.3 MB (9286814 bytes)  
+	-	`sha256:3ebdcba3667cd9471a99183daf832d4a49634fce44b39d06181a98f67f95ee78`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
+		Size: 9.3 MB (9347868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:464fccdac9afef0b862db23df524fab068510c30c8bc77106a8b9d414ff85dc3`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
-		Size: 949.0 B  
+	-	`sha256:32759f28d412d75f6236e89635edf6c490e6b4aff3c352660106e8c54d31fc65`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `backdrop:latest` - unknown; unknown
 
 ```console
-$ docker pull backdrop@sha256:f47e16e98843d3c4cdc460895b6f5b25aa4fb4aa8cbe6fe156fa7a23fd632084
+$ docker pull backdrop@sha256:1091d3f4d03b6605b9cb2ffc9a29ad52f59ecd0dbd2e40cab1a7f45be07c82ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.6 MB (7589980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:228483e9fd8e7540d64de2e37ea0a9382745e15cdd8d11d46fc43a4bb2a60a06`
+-	Image ID: `sha256:debeaf7c50ec85836e48b6c278a1d116871c3e4774dde874e0d557db470412e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d7d927e7cb2ec0b8585948234d1cf26a3c86820001a0ae35d5e0bd1c617de5b1`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
+	-	`sha256:0561a61464676dc59cef08418453c338d63b688323651c74a5ccc38d0f998cac`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
 		Size: 7.6 MB (7559240 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04edddba9969d9f276e683ab9c535213e323933e544134c627c17df05ade3692`  
-		Last Modified: Wed, 24 Jun 2026 02:36:20 GMT  
+	-	`sha256:09b0678653894bc4ca1568371ef4622ed68cf20c204dbb9b5d59e2368048ab17`  
+		Last Modified: Thu, 02 Jul 2026 00:32:06 GMT  
 		Size: 30.7 KB (30740 bytes)  
 		MIME: application/vnd.in-toto+json
