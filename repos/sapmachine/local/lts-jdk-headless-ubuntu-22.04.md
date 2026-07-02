@@ -1336,14 +1336,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.98-0ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98.orig.tar.gz' nss_3.98.orig.tar.gz 76685475 SHA256:f549cc33d35c0601674bfacf7c6ad683c187595eb4125b423238d3e9aa4209ce
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.3.debian.tar.xz' nss_3.98-0ubuntu0.22.04.3.debian.tar.xz 26520 SHA256:3a08b3145795ae428b50d7ef4a9b3f09abc706ba939ab783bcc0cc3a7a787265
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.3.dsc' nss_3.98-0ubuntu0.22.04.3.dsc 2294 SHA256:25f3d4691d9d013fe99a53669df9b091fdac692975756c7fdf454348db39ed01
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.23`
 
@@ -1602,15 +1597,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA256:63dbd1c7abab37ec5beed22dae75bac048efead0f19aa5cad49b4bd690335ebd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA256:3157723da779963f7887f29de12289a4890f0c18eb17b570aa2c8d2c96d31d6f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.5.debian.tar.xz 33900 SHA256:6ab1d798854f14fc298ac3cfc11ceb95081511721238d73ea60d075427717dc9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.5.dsc' sqlite3_3.37.2-2ubuntu0.5.dsc 2602 SHA256:c3fdde2feb1d2e12d0dd88674d854542878e612ad68a264ce0a9dcba45f31fe8
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.20`
 
