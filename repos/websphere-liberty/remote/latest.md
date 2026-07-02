@@ -1,7 +1,7 @@
 ## `websphere-liberty:latest`
 
 ```console
-$ docker pull websphere-liberty@sha256:e305cf7afe9ad836db5d6b5568a7c43a6734c7682d432ddf9be2fe53e5f8e09f
+$ docker pull websphere-liberty@sha256:17e926cc11b782a9e320e41e9184d3e25ff5bcbe90cc1ff5cb839e296ddb06ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,554 +16,554 @@ $ docker pull websphere-liberty@sha256:e305cf7afe9ad836db5d6b5568a7c43a6734c7682
 ### `websphere-liberty:latest` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:e8630a8c900be98463f11cf415194b29e0fd61b1fdd8ff3ce215e61120955a64
+$ docker pull websphere-liberty@sha256:ff618116672e111ee122c8ac5b41596c5008cea9286587fb148c0cdc3163c08f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **594.1 MB (594105952 bytes)**  
+-	Total Size: **593.9 MB (593859159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f2cf7fd43b3dd4fb77c9b6639275b2693e497385d682dbdaa2437c6ba14320a`
+-	Image ID: `sha256:75157906fcef82d9e668ea191a55c7e5ca78dbb60acdd832e8269022b42e3083`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:49:23 GMT
-ADD file:14c8897ef5107db11b35f5a0c05bdcb883c0a6daa83d07d4439865541f08514c in / 
-# Sat, 09 May 2026 04:49:23 GMT
+# Mon, 29 Jun 2026 11:07:32 GMT
+ADD file:c5143b228eb55f19ed4d3b653ad68ec7afe54ded0247e090ce3afb9e5484adfb in / 
+# Mon, 29 Jun 2026 11:07:32 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:18:50 GMT
+# Thu, 02 Jul 2026 02:28:58 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 15 May 2026 21:18:50 GMT
+# Thu, 02 Jul 2026 02:28:58 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:18:50 GMT
+# Thu, 02 Jul 2026 02:28:58 GMT
 ENV JAVA_VERSION=8.0.8.65
-# Fri, 15 May 2026 21:19:33 GMT
+# Thu, 02 Jul 2026 02:29:05 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Fri, 15 May 2026 21:19:33 GMT
+# Thu, 02 Jul 2026 02:29:05 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 USER root
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG LIBERTY_VERSION=26.0.0.6
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG LIBERTY_BUILD_LABEL=cl260620260531-0302
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz org.opencontainers.image.vendor=IBM org.opencontainers.image.url=https://github.com/WASdev/ci.docker org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html org.opencontainers.image.version=26.0.0.6 org.opencontainers.image.revision=cl260620260531-0302 org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template org.opencontainers.image.title=IBM WebSphere Liberty liberty.version=26.0.0.6 com.ibm.websphere.liberty.version=26.0.0.6
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ENV PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/helpers/runtime
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 LABEL ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd ProductName=WebSphere Application Server Liberty ProductVersion=26.0.0.6 BuildLabel=cl260620260531-0302
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
 RUN set -eux;     apt-get update;     apt-get install -y curl;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;     apt-get purge --auto-remove -y curl;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG LIBERTY_URL
-# Wed, 17 Jun 2026 22:06:03 GMT
+# Thu, 02 Jul 2026 05:46:25 GMT
 ARG DOWNLOAD_OPTIONS=
-# Wed, 17 Jun 2026 22:06:15 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip wget openssl     && rm -rf /var/lib/apt/lists/*     && mkdir -p /licenses/     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && LIBERTY_URL=${LIBERTY_URL:-$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml | grep -E "^\s*kernel:.*${LIBERTY_VERSION}\.zip" | sed -n 's/\s*kernel:\s//p' | tr -d '\r' )}      && wget $DOWNLOAD_OPTIONS $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && cp -a /opt/ibm/wlp/lafiles/. /licenses/     && apt-get purge --auto-remove -y unzip     && apt-get purge --auto-remove -y wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Jun 2026 22:06:15 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 ENV LOG_DIR=/liberty/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:06:15 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ibm/wlp/usr/servers/defaultServer/server.env # buildkit
-# Wed, 17 Jun 2026 22:06:15 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 COPY NOTICES /opt/ibm/NOTICES # buildkit
-# Wed, 17 Jun 2026 22:06:15 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 COPY helpers/ /opt/ibm/helpers/ # buildkit
-# Wed, 17 Jun 2026 22:06:16 GMT
+# Thu, 02 Jul 2026 05:46:33 GMT
 COPY fixes/ /opt/ibm/fixes/ # buildkit
-# Wed, 17 Jun 2026 22:06:16 GMT
+# Thu, 02 Jul 2026 05:46:34 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && mkdir /etc/wlp     && mkdir -p /opt/ibm/wlp/usr/shared/resources/lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm/wlp /liberty     && ln -s /opt/ibm/fixes /fixes     && ln -s /opt/ibm/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/helpers     && chmod -R ug+rwx /opt/ibm/helpers     && chown -R 1001:0 /opt/ibm/fixes     && chmod -R g+rwx /opt/ibm/fixes     && chown -R 1001:0 /opt/ibm/wlp/usr     && chmod -R g+rw /opt/ibm/wlp/usr     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rw /opt/ibm/wlp/output     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default     && ln -s /logs /liberty/logs     && mkdir /serviceability     && chown -R 1001:0 /serviceability     && chmod -R g+rw /serviceability # buildkit
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rwx /opt/ibm/wlp/output # buildkit
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 ENV RANDFILE=/tmp/.rnd IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 USER 1001
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 EXPOSE map[9080/tcp:{} 9443/tcp:{}]
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
-# Wed, 17 Jun 2026 22:06:21 GMT
+# Thu, 02 Jul 2026 05:46:39 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Wed, 17 Jun 2026 22:42:23 GMT
+# Thu, 02 Jul 2026 06:41:24 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 22:42:23 GMT
+# Thu, 02 Jul 2026 06:41:24 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Wed, 17 Jun 2026 22:42:23 GMT
+# Thu, 02 Jul 2026 06:41:24 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN set -eux;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     mkdir /opt/ibm/wlp/etc/;     echo "$REPOSITORIES_PROPERTIES" > /opt/ibm/wlp/etc/repositories.properties;   fi;   installUtility install --acceptLicense baseBundle;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     rm /opt/ibm/wlp/etc/repositories.properties;   fi;   rm -rf /output/workarea /output/logs;   find /opt/ibm/wlp ! -perm -g=rw -print0 | xargs -r -0 chmod g+rw; # buildkit
-# Wed, 17 Jun 2026 22:42:23 GMT
+# Thu, 02 Jul 2026 06:41:25 GMT
 COPY --chown=1001:0 server.xml /config/ # buildkit
-# Wed, 17 Jun 2026 22:42:43 GMT
+# Thu, 02 Jul 2026 06:41:45 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && find /opt/ibm/wlp/output ! -path "*.classCache*" ! -perm -g=rwx -print0 | xargs -0 -r chmod g+rwx # buildkit
 ```
 
 -	Layers:
-	-	`sha256:40d16f30db405106ef8074779bdf41f012465c2a785bbeaa2eab9f2081099b47`  
-		Last Modified: Sat, 09 May 2026 05:24:51 GMT  
-		Size: 29.7 MB (29736684 bytes)  
+	-	`sha256:d6834b4a794c03efa2c998853e64969fa8851b11b2ade63292268872a37759d0`  
+		Last Modified: Mon, 29 Jun 2026 11:25:17 GMT  
+		Size: 29.7 MB (29738881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa2745aaec1f27f3ce64535cccd00ad568bf55bbe89df5b402c9d4e75e445ab0`  
-		Last Modified: Fri, 15 May 2026 21:19:47 GMT  
-		Size: 1.5 MB (1450194 bytes)  
+	-	`sha256:fdade8b567c4d961c9ef6ddfaddfab0aa97cb39f305ee356cb704863177f8424`  
+		Last Modified: Thu, 02 Jul 2026 02:29:20 GMT  
+		Size: 1.4 MB (1408641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3014eee4fc2ffbbc50d2bff5a7c48962701a29f1d1d64ab5d45495f3ddb8a16c`  
-		Last Modified: Fri, 15 May 2026 21:19:51 GMT  
-		Size: 136.2 MB (136233781 bytes)  
+	-	`sha256:c79f1fff560d2e8b6be2d637b3416211aa84d0e7d91772c7aa27f21917580ca1`  
+		Last Modified: Thu, 02 Jul 2026 02:29:24 GMT  
+		Size: 136.2 MB (136233696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6cf29e24caeaa7aa4608c5367c6cd671e560d123a63f19fcfcbe488e6b527f6`  
-		Last Modified: Wed, 17 Jun 2026 22:06:31 GMT  
-		Size: 113.8 KB (113813 bytes)  
+	-	`sha256:02fbba75aa4534c71acb160d16004e2ca3a132fa1fd3956f9d6ff6b79af54b1d`  
+		Last Modified: Thu, 02 Jul 2026 05:46:49 GMT  
+		Size: 113.9 KB (113943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8284cfef123d25523b8a3888abaa8b7c5af8b25d56753e0111ec3fd8cb54eeeb`  
-		Last Modified: Wed, 17 Jun 2026 22:06:31 GMT  
-		Size: 18.5 MB (18521474 bytes)  
+	-	`sha256:459672e9ce516c4020acd5be8829c0ffdfd5115f5a7e6cdf964c47ff21b4b46c`  
+		Last Modified: Thu, 02 Jul 2026 05:46:50 GMT  
+		Size: 18.1 MB (18118775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bee542cef92b85192b65b8f163f1a8e0584cbf04b33f936670510b28f5b7586c`  
-		Last Modified: Wed, 17 Jun 2026 22:06:31 GMT  
-		Size: 576.0 B  
+	-	`sha256:599eadc298988e45676bbdfc1587b0f7432fd749761cf2df873cf202ffc4eea8`  
+		Last Modified: Thu, 02 Jul 2026 05:46:49 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90bea7f71e4d716da073d84ce3ae3368cc5dd14e83b9afe2247d544d028f2e95`  
-		Last Modified: Wed, 17 Jun 2026 22:06:31 GMT  
-		Size: 1.5 KB (1523 bytes)  
+	-	`sha256:c1f08173c55dd9c92376b4d246ddecd0d92d0fc4f157dbca24677b638b306964`  
+		Last Modified: Thu, 02 Jul 2026 05:46:49 GMT  
+		Size: 1.5 KB (1524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31a2cb30c79913b41a8b721df55bf8d79aecd3ac146f563f197a71a1239daa9d`  
-		Last Modified: Wed, 17 Jun 2026 22:06:32 GMT  
-		Size: 14.2 KB (14190 bytes)  
+	-	`sha256:a6880a1dea63cdf812b0af1c6f4063c725a45d68afe8c376aac0843b63c9d068`  
+		Last Modified: Thu, 02 Jul 2026 05:46:50 GMT  
+		Size: 14.2 KB (14189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3dcac5f6d9ccec31c77197b166676542dfacb5f1e1037304c588d8aeed7dc26`  
-		Last Modified: Wed, 17 Jun 2026 22:06:32 GMT  
+	-	`sha256:31a0e335056e00168e03b0b441779e67b2184c77a0df9ee62f2d655acb88c5b9`  
+		Last Modified: Thu, 02 Jul 2026 05:46:51 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45efa32fba93cdc8e13af7f29137b0bea4706b1545c17624fcc2a0ebd7dad6c3`  
-		Last Modified: Wed, 17 Jun 2026 22:06:33 GMT  
-		Size: 15.1 KB (15066 bytes)  
+	-	`sha256:53153515a5da65a408aeb7d38c5a17b07570c4a2c033f9a835b032be3329ff0f`  
+		Last Modified: Thu, 02 Jul 2026 05:46:51 GMT  
+		Size: 15.1 KB (15058 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f1b74f14b6e18ae7cca28ac2edb497e0b8358831682a849de4e26f382da1ce4`  
-		Last Modified: Wed, 17 Jun 2026 22:06:33 GMT  
-		Size: 5.8 MB (5806264 bytes)  
+	-	`sha256:66bbcd243afabf7b71a07f8ad3e905ce3ab37bf14ace06ad24f57e0dd4bd1860`  
+		Last Modified: Thu, 02 Jul 2026 05:46:52 GMT  
+		Size: 5.9 MB (5859670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dacbca49985572cb4f70a3beacc6de6201b98e1c1cd43603acb9ad4dd43e7fb`  
-		Last Modified: Wed, 17 Jun 2026 22:43:18 GMT  
-		Size: 387.4 MB (387383133 bytes)  
+	-	`sha256:b14c1e112615abdeda34d7d5926f5eadbedbae3ead29ef2b1dfcf45c138b5826`  
+		Last Modified: Thu, 02 Jul 2026 06:42:21 GMT  
+		Size: 387.4 MB (387383735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6a0af4e29264b58b04b238ad250fde310198d14da480dad07f123e7acf2471`  
-		Last Modified: Wed, 17 Jun 2026 22:43:11 GMT  
-		Size: 951.0 B  
+	-	`sha256:28f3424704aa271e6cc4d92f61b6f46c7541d7f62cc8ff6aceb39a4a5262e8c6`  
+		Last Modified: Thu, 02 Jul 2026 06:42:12 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e296155cef4f7478cf9fbb14dbb3e82e74031571afbb973f9d03e1bc650e9caf`  
-		Last Modified: Wed, 17 Jun 2026 22:43:12 GMT  
-		Size: 14.8 MB (14828056 bytes)  
+	-	`sha256:19b5a41f1a1434429b6e053dc0f115a5a5569f2c0fd274536a4222e89ce3bca6`  
+		Last Modified: Thu, 02 Jul 2026 06:42:13 GMT  
+		Size: 15.0 MB (14969273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `websphere-liberty:latest` - unknown; unknown
 
 ```console
-$ docker pull websphere-liberty@sha256:a48f0fd65d4da592f1093e4b115d519d5f7dacb2c97c57b7e6922a0405069139
+$ docker pull websphere-liberty@sha256:2dd20c463db1ed010a8075553d1d49d955ec7736b50ad99597a19c97365a8c77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4436592 bytes)**  
+-	Total Size: **4.4 MB (4418425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c749885f3fdd0fad69cd25436599283b4b05eaafc94afcc666e66588a463f2e`
+-	Image ID: `sha256:5ccda30b7b658fcf2dc53f8268c9501da53e25c288798889595efcc75ce06ed2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:101879ff32daedbd80cd43a874d3a8755ab8def889f0d74a5602194855264081`  
-		Last Modified: Wed, 17 Jun 2026 22:43:11 GMT  
-		Size: 4.4 MB (4417497 bytes)  
+	-	`sha256:13d67949cc38f98e8000bf87556bd42c4db7187193b9f8be65815ea6d1710ca2`  
+		Last Modified: Thu, 02 Jul 2026 06:42:12 GMT  
+		Size: 4.4 MB (4399330 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e8c0d35f7d8a6671d6517c1d6e7899d4941e381fbfa41b0c529608d1b36ca9e4`  
-		Last Modified: Wed, 17 Jun 2026 22:43:11 GMT  
+	-	`sha256:eeeb1e74201c875f426dada5da3a60d919ef5f078aa0e035093eb0555d4e3166`  
+		Last Modified: Thu, 02 Jul 2026 06:42:12 GMT  
 		Size: 19.1 KB (19095 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `websphere-liberty:latest` - linux; ppc64le
 
 ```console
-$ docker pull websphere-liberty@sha256:257a73590cd45d1f7b4d073ea1af6144af4eeaaff944325082a11c12aaa50b49
+$ docker pull websphere-liberty@sha256:81d6b3364a748f83b07946d96c44391e8f532378a321e7147ddfae3dc5ebc220
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **597.8 MB (597798103 bytes)**  
+-	Total Size: **597.3 MB (597331163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:065143740b091b0f90c2c33ef8cdb51ebc1b99e5835cc540641f5ddf3f4981b2`
+-	Image ID: `sha256:61ad9a274d212a35273c92391d621205fee3fa4bb03b08d0f4ab8bc876cb8b13`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:51:05 GMT
+# Mon, 29 Jun 2026 10:35:02 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:51:11 GMT
-ADD file:bd6823713e9d7c2f4ea7ca1d6d549e2bed56e8ce1fc6f98e14f6eb3a3371ebfa in / 
-# Sat, 09 May 2026 04:51:12 GMT
+# Mon, 29 Jun 2026 10:35:06 GMT
+ADD file:fe88ac7d2b59101d91924b906576ed0bd1506245791beb01e66dafe898d768bb in / 
+# Mon, 29 Jun 2026 10:35:07 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:28:40 GMT
+# Thu, 02 Jul 2026 02:50:25 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 15 May 2026 21:28:40 GMT
+# Thu, 02 Jul 2026 02:50:25 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:28:40 GMT
+# Thu, 02 Jul 2026 02:50:25 GMT
 ENV JAVA_VERSION=8.0.8.65
-# Fri, 15 May 2026 21:29:20 GMT
+# Thu, 02 Jul 2026 02:50:33 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Fri, 15 May 2026 21:29:20 GMT
+# Thu, 02 Jul 2026 02:50:33 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 USER root
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG LIBERTY_VERSION=26.0.0.6
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG LIBERTY_BUILD_LABEL=cl260620260531-0302
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz org.opencontainers.image.vendor=IBM org.opencontainers.image.url=https://github.com/WASdev/ci.docker org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html org.opencontainers.image.version=26.0.0.6 org.opencontainers.image.revision=cl260620260531-0302 org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template org.opencontainers.image.title=IBM WebSphere Liberty liberty.version=26.0.0.6 com.ibm.websphere.liberty.version=26.0.0.6
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ENV PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/helpers/runtime
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 LABEL ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd ProductName=WebSphere Application Server Liberty ProductVersion=26.0.0.6 BuildLabel=cl260620260531-0302
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
 RUN set -eux;     apt-get update;     apt-get install -y curl;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;     apt-get purge --auto-remove -y curl;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG LIBERTY_URL
-# Wed, 17 Jun 2026 22:14:22 GMT
+# Thu, 02 Jul 2026 06:35:32 GMT
 ARG DOWNLOAD_OPTIONS=
-# Wed, 17 Jun 2026 22:14:39 GMT
+# Thu, 02 Jul 2026 06:35:43 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip wget openssl     && rm -rf /var/lib/apt/lists/*     && mkdir -p /licenses/     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && LIBERTY_URL=${LIBERTY_URL:-$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml | grep -E "^\s*kernel:.*${LIBERTY_VERSION}\.zip" | sed -n 's/\s*kernel:\s//p' | tr -d '\r' )}      && wget $DOWNLOAD_OPTIONS $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && cp -a /opt/ibm/wlp/lafiles/. /licenses/     && apt-get purge --auto-remove -y unzip     && apt-get purge --auto-remove -y wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Jun 2026 22:14:39 GMT
+# Thu, 02 Jul 2026 06:35:43 GMT
 ENV LOG_DIR=/liberty/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:14:40 GMT
+# Thu, 02 Jul 2026 06:35:44 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ibm/wlp/usr/servers/defaultServer/server.env # buildkit
-# Wed, 17 Jun 2026 22:14:41 GMT
+# Thu, 02 Jul 2026 06:35:45 GMT
 COPY NOTICES /opt/ibm/NOTICES # buildkit
-# Wed, 17 Jun 2026 22:14:41 GMT
+# Thu, 02 Jul 2026 06:35:45 GMT
 COPY helpers/ /opt/ibm/helpers/ # buildkit
-# Wed, 17 Jun 2026 22:14:41 GMT
+# Thu, 02 Jul 2026 06:35:45 GMT
 COPY fixes/ /opt/ibm/fixes/ # buildkit
-# Wed, 17 Jun 2026 22:14:41 GMT
+# Thu, 02 Jul 2026 06:35:46 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && mkdir /etc/wlp     && mkdir -p /opt/ibm/wlp/usr/shared/resources/lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm/wlp /liberty     && ln -s /opt/ibm/fixes /fixes     && ln -s /opt/ibm/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/helpers     && chmod -R ug+rwx /opt/ibm/helpers     && chown -R 1001:0 /opt/ibm/fixes     && chmod -R g+rwx /opt/ibm/fixes     && chown -R 1001:0 /opt/ibm/wlp/usr     && chmod -R g+rw /opt/ibm/wlp/usr     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rw /opt/ibm/wlp/output     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default     && ln -s /logs /liberty/logs     && mkdir /serviceability     && chown -R 1001:0 /serviceability     && chmod -R g+rw /serviceability # buildkit
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rwx /opt/ibm/wlp/output # buildkit
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 ENV RANDFILE=/tmp/.rnd IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 USER 1001
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 EXPOSE map[9080/tcp:{} 9443/tcp:{}]
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
-# Wed, 17 Jun 2026 22:14:54 GMT
+# Thu, 02 Jul 2026 06:35:57 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Wed, 17 Jun 2026 23:20:23 GMT
+# Thu, 02 Jul 2026 08:36:01 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 23:20:23 GMT
+# Thu, 02 Jul 2026 08:36:01 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Wed, 17 Jun 2026 23:20:23 GMT
+# Thu, 02 Jul 2026 08:36:01 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN set -eux;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     mkdir /opt/ibm/wlp/etc/;     echo "$REPOSITORIES_PROPERTIES" > /opt/ibm/wlp/etc/repositories.properties;   fi;   installUtility install --acceptLicense baseBundle;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     rm /opt/ibm/wlp/etc/repositories.properties;   fi;   rm -rf /output/workarea /output/logs;   find /opt/ibm/wlp ! -perm -g=rw -print0 | xargs -r -0 chmod g+rw; # buildkit
-# Wed, 17 Jun 2026 23:20:24 GMT
+# Thu, 02 Jul 2026 08:36:02 GMT
 COPY --chown=1001:0 server.xml /config/ # buildkit
-# Wed, 17 Jun 2026 23:21:04 GMT
+# Thu, 02 Jul 2026 08:36:47 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && find /opt/ibm/wlp/output ! -path "*.classCache*" ! -perm -g=rwx -print0 | xargs -0 -r chmod g+rwx # buildkit
 ```
 
 -	Layers:
-	-	`sha256:6970bf2b5ef1698cb51975b1a652f6511f8fd9f88ae7b247e3ee32591d975e63`  
-		Last Modified: Sat, 09 May 2026 05:25:11 GMT  
-		Size: 34.6 MB (34646720 bytes)  
+	-	`sha256:cf87e8e9427654cae1c380a7eb2a10971210431259802390d53728f83afd8afa`  
+		Last Modified: Mon, 29 Jun 2026 11:25:41 GMT  
+		Size: 34.6 MB (34641868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d1d9502a29e5927b7c6acfcd4d85b9058b023b826aa21b29033ebc1aa0f839a`  
-		Last Modified: Fri, 15 May 2026 21:29:48 GMT  
-		Size: 1.5 MB (1536350 bytes)  
+	-	`sha256:e1256969b7c1e96f54787e7b97dd1cb6658d9e379228928e5cd9506c8eebd2af`  
+		Last Modified: Thu, 02 Jul 2026 02:51:01 GMT  
+		Size: 1.5 MB (1494121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39ea9fcf12bfe40ab2713b4d79b8765e828a093bdce0e8e57c4039e0ba7d83f7`  
-		Last Modified: Fri, 15 May 2026 21:29:52 GMT  
-		Size: 137.1 MB (137149789 bytes)  
+	-	`sha256:108ad4bafdd56ab263c60902bdf6526343ba3ca771e070563159d89d20ddb2fc`  
+		Last Modified: Thu, 02 Jul 2026 02:51:05 GMT  
+		Size: 137.1 MB (137149814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5787c9e657b344d1d4273001272e6f046243667bf5ddf2d1975d99bc3b4b76c0`  
-		Last Modified: Wed, 17 Jun 2026 22:15:13 GMT  
-		Size: 118.3 KB (118271 bytes)  
+	-	`sha256:afcce7866034520b0a7486cdee243ebf77dfaedf4ade48bc7795baf9d4361d7b`  
+		Last Modified: Thu, 02 Jul 2026 06:36:17 GMT  
+		Size: 118.5 KB (118467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:953fadc06227c537769925cf8bd1364393ae6be2f7467547ad3c1901f8941f53`  
-		Last Modified: Wed, 17 Jun 2026 22:15:14 GMT  
-		Size: 18.5 MB (18548613 bytes)  
+	-	`sha256:1fda9896af439611e0df1c5072ed59963607a9ab642afc5bb67b6812d2ed725c`  
+		Last Modified: Thu, 02 Jul 2026 06:36:18 GMT  
+		Size: 18.1 MB (18119289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:418986d72fb21ba5c0791901467b7e0a211d24cd103a4cf847fe104e528001b5`  
-		Last Modified: Wed, 17 Jun 2026 22:15:13 GMT  
-		Size: 589.0 B  
+	-	`sha256:214c97f619828e37e095acfd3a051e2c0aeb561edb02eb532b3612f65c6f1f06`  
+		Last Modified: Thu, 02 Jul 2026 06:36:17 GMT  
+		Size: 592.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab94a5f80f56295e2d79d039ab14bcfb050a5deea9c90b1d799da3d0c06a5f1e`  
-		Last Modified: Wed, 17 Jun 2026 22:15:13 GMT  
-		Size: 1.5 KB (1522 bytes)  
+	-	`sha256:33e4b520d594f51d43c7e72ede65de0b27abe96e52b8ad99b0d4e312dce37ff1`  
+		Last Modified: Thu, 02 Jul 2026 06:36:17 GMT  
+		Size: 1.5 KB (1523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae4d813bd124a102233dc5011f11ca75010143339c32f6d1a535a475e874a8f9`  
-		Last Modified: Wed, 17 Jun 2026 22:15:14 GMT  
-		Size: 14.2 KB (14190 bytes)  
+	-	`sha256:6c97d0adfd1d6d81e9f3c7327e77470c0f83af960b8f18c1d98d49e5d09d56af`  
+		Last Modified: Thu, 02 Jul 2026 06:36:18 GMT  
+		Size: 14.2 KB (14189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa9711038afc1bd2fb3d563b6045e95acc158a3bf8b21f2e74de9d3fe9311734`  
-		Last Modified: Wed, 17 Jun 2026 22:15:15 GMT  
+	-	`sha256:33d31efac50f1239372beda33c2d3c8165bfad46d3c8453484d057f9524fa6cf`  
+		Last Modified: Thu, 02 Jul 2026 06:36:19 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62c5268d61418714dd2d96547e9ad36576958abc0c2b80399f9ca70bfdcd0906`  
-		Last Modified: Wed, 17 Jun 2026 22:15:15 GMT  
-		Size: 15.1 KB (15071 bytes)  
+	-	`sha256:3971c4660e8e9c2595c9fbee4e7ebf57fee399db3fe336315213c5a79f712c20`  
+		Last Modified: Thu, 02 Jul 2026 06:36:18 GMT  
+		Size: 15.1 KB (15072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c566b3ccf3555f3518e8907f9297143c3050ca5961385eb509546402dfc166`  
-		Last Modified: Wed, 17 Jun 2026 22:15:16 GMT  
-		Size: 5.5 MB (5471113 bytes)  
+	-	`sha256:9cad9efb07f1861212e2834a7a88d7583e193868f62f031a1d03d99bc6e69ab9`  
+		Last Modified: Thu, 02 Jul 2026 06:36:19 GMT  
+		Size: 5.4 MB (5427586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3501132bfa3fd001c1bceaf6b5b6b3cb2afd76bd5b652e90ca8d4f523bbd71a8`  
-		Last Modified: Wed, 17 Jun 2026 23:22:12 GMT  
-		Size: 387.4 MB (387382511 bytes)  
+	-	`sha256:af9ae360222d01ef0b64245868d587041d304be5eabbb8b454bc62fe623d765b`  
+		Last Modified: Thu, 02 Jul 2026 08:38:01 GMT  
+		Size: 387.4 MB (387382482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7490e1c7abd9917a23dbef006bd51ff891a06b7efe8350a97d6e05302822d643`  
-		Last Modified: Wed, 17 Jun 2026 23:22:03 GMT  
-		Size: 946.0 B  
+	-	`sha256:8557627b9a535bf5469ffe0205791deaccbe1146993b2d9b5aef23f0180041f6`  
+		Last Modified: Thu, 02 Jul 2026 08:37:50 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:622d0d1383b6ae1909d5fd29d34989d95032bc1b2e41c7d95e07c2b47054ca98`  
-		Last Modified: Wed, 17 Jun 2026 23:22:04 GMT  
-		Size: 12.9 MB (12912170 bytes)  
+	-	`sha256:34fc1578c5bb2e4a876027cad7ce0a4039a29e6bf727eb2c0a9a91f35005714a`  
+		Last Modified: Thu, 02 Jul 2026 08:37:51 GMT  
+		Size: 13.0 MB (12964964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `websphere-liberty:latest` - unknown; unknown
 
 ```console
-$ docker pull websphere-liberty@sha256:a9bd496ea6d7ba8982282eb46584c98db2d3582394ef15f730686ae0b3ce171f
+$ docker pull websphere-liberty@sha256:2524b0b21cd8f4f462b0e0c05ae146082c1fb9945ba668096751516ff215ad76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4435640 bytes)**  
+-	Total Size: **4.4 MB (4421739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3ea6da19709285a8492287931ee0460a1201120b78e4a8312cfd1f5d2f7ca89`
+-	Image ID: `sha256:0a3fc34a85b771c4bbd3ce08d7a367a41472ae33d7079307b8a3ba3d954a7c0c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2232d44766c2a8931efbdc25fb4780b7c15c6eeb937013463a56271f1fd09442`  
-		Last Modified: Wed, 17 Jun 2026 23:22:03 GMT  
-		Size: 4.4 MB (4420772 bytes)  
+	-	`sha256:dd4f9d721af08dfe13f19d8c671596d50c9fd1947549f1f8f1e92b9c63143d9b`  
+		Last Modified: Thu, 02 Jul 2026 08:37:50 GMT  
+		Size: 4.4 MB (4402605 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b8352fccc069f1f005484206782d71335c532c8cc26051b5a3bbc5deb6216124`  
-		Last Modified: Wed, 17 Jun 2026 23:22:03 GMT  
-		Size: 14.9 KB (14868 bytes)  
+	-	`sha256:3ac59b511a19d31897850fe9eac46b21d74e9b1f6bee54682588a81b5f2e12b1`  
+		Last Modified: Thu, 02 Jul 2026 08:37:50 GMT  
+		Size: 19.1 KB (19134 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `websphere-liberty:latest` - linux; s390x
 
 ```console
-$ docker pull websphere-liberty@sha256:d978fe364876aec22e8f8e4310d80132ab2d8a57184d344651ddf448ec3854af
+$ docker pull websphere-liberty@sha256:79c7782468cea0795937aa922ae9dc02aee9baedac55af071d8cc94c2bb516a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **591.6 MB (591606788 bytes)**  
+-	Total Size: **591.0 MB (591034396 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10df2b3b44963936220bc348bc8adadcc72e0376ad63be1b7cb25ae25c816ca1`
+-	Image ID: `sha256:37e31b7c6d6c8aab34641abd1baf3514b7c8c64b49eb7bce44cb21935646e74a`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:50:49 GMT
+# Mon, 29 Jun 2026 10:41:48 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:50:49 GMT
+# Mon, 29 Jun 2026 10:41:48 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:50:49 GMT
+# Mon, 29 Jun 2026 10:41:48 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:50:51 GMT
-ADD file:17ca3274b34edf79b2d4401a24984fb8dc339a8298f0e3703af025f51b67336b in / 
-# Sat, 09 May 2026 04:50:51 GMT
+# Mon, 29 Jun 2026 10:41:49 GMT
+ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
+# Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:25:40 GMT
+# Thu, 02 Jul 2026 02:24:01 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 15 May 2026 21:25:40 GMT
+# Thu, 02 Jul 2026 02:24:01 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:25:40 GMT
+# Thu, 02 Jul 2026 02:24:01 GMT
 ENV JAVA_VERSION=8.0.8.65
-# Fri, 15 May 2026 21:26:26 GMT
+# Thu, 02 Jul 2026 02:24:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Fri, 15 May 2026 21:26:26 GMT
+# Thu, 02 Jul 2026 02:24:27 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 USER root
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG LIBERTY_VERSION=26.0.0.6
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG LIBERTY_BUILD_LABEL=cl260620260531-0302
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 LABEL org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz org.opencontainers.image.vendor=IBM org.opencontainers.image.url=https://github.com/WASdev/ci.docker org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html org.opencontainers.image.version=26.0.0.6 org.opencontainers.image.revision=cl260620260531-0302 org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template org.opencontainers.image.title=IBM WebSphere Liberty liberty.version=26.0.0.6 com.ibm.websphere.liberty.version=26.0.0.6
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ENV PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/helpers/runtime
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 LABEL ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd ProductName=WebSphere Application Server Liberty ProductVersion=26.0.0.6 BuildLabel=cl260620260531-0302
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d
 RUN set -eux;     apt-get update;     apt-get install -y curl;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_aarch64';          DUMB_INIT_SHA256=b7d648f97154a99c539b63c55979cd29f005f88430fb383007fe3458340b795e;          ;;        amd64|x86_64)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64';          DUMB_INIT_SHA256=e874b55f3279ca41415d290c512a7ba9d08f98041b28ae7c2acb19a545f1c4df;          ;;        ppc64el|ppc64le)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_ppc64le';          DUMB_INIT_SHA256=3d15e80e29f0f4fa1fc686b00613a2220bc37e83a35283d4b4cca1fbd0a5609f;          ;;        s390x)          DUMB_INIT_URL='https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_s390x';          DUMB_INIT_SHA256=47e4601b152fc6dcb1891e66c30ecc62a2939fd7ffd1515a7c30f281cfec53b7;          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /usr/bin/dumb-init ${DUMB_INIT_URL};     echo "${DUMB_INIT_SHA256} */usr/bin/dumb-init" | sha256sum -c -;     chmod +x /usr/bin/dumb-init;     apt-get purge --auto-remove -y curl;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG LIBERTY_URL
-# Wed, 17 Jun 2026 22:07:29 GMT
+# Thu, 02 Jul 2026 05:40:32 GMT
 ARG DOWNLOAD_OPTIONS=
-# Wed, 17 Jun 2026 22:07:38 GMT
+# Thu, 02 Jul 2026 05:40:37 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip wget openssl     && rm -rf /var/lib/apt/lists/*     && mkdir -p /licenses/     && useradd -u 1001 -r -g 0 -s /usr/sbin/nologin default     && LIBERTY_URL=${LIBERTY_URL:-$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml | grep -E "^\s*kernel:.*${LIBERTY_VERSION}\.zip" | sed -n 's/\s*kernel:\s//p' | tr -d '\r' )}      && wget $DOWNLOAD_OPTIONS $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && echo "$LIBERTY_SHA  /tmp/wlp.zip" > /tmp/wlp.zip.sha1     && sha1sum -c /tmp/wlp.zip.sha1     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip     && chown -R 1001:0 /opt/ibm/wlp     && chmod -R g+rw /opt/ibm/wlp     && cp -a /opt/ibm/wlp/lafiles/. /licenses/     && apt-get purge --auto-remove -y unzip     && apt-get purge --auto-remove -y wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 17 Jun 2026 22:07:38 GMT
+# Thu, 02 Jul 2026 05:40:37 GMT
 ENV LOG_DIR=/liberty/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output OPENJ9_SCC=true
-# Wed, 17 Jun 2026 22:07:39 GMT
+# Thu, 02 Jul 2026 05:40:38 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea     && rm -rf /opt/ibm/wlp/usr/servers/defaultServer/server.env # buildkit
-# Wed, 17 Jun 2026 22:07:39 GMT
+# Thu, 02 Jul 2026 05:40:38 GMT
 COPY NOTICES /opt/ibm/NOTICES # buildkit
-# Wed, 17 Jun 2026 22:07:39 GMT
+# Thu, 02 Jul 2026 05:40:38 GMT
 COPY helpers/ /opt/ibm/helpers/ # buildkit
-# Wed, 17 Jun 2026 22:07:39 GMT
+# Thu, 02 Jul 2026 05:40:38 GMT
 COPY fixes/ /opt/ibm/fixes/ # buildkit
-# Wed, 17 Jun 2026 22:07:39 GMT
+# Thu, 02 Jul 2026 05:40:38 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN mkdir /logs     && chown -R 1001:0 /logs     && chmod -R g+rw /logs     && mkdir /etc/wlp     && mkdir -p /opt/ibm/wlp/usr/shared/resources/lib.index.cache     && mkdir -p /home/default     && mkdir /output     && chmod -t /output     && rm -rf /output     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config     && ln -s /opt/ibm/wlp /liberty     && ln -s /opt/ibm/fixes /fixes     && ln -s /opt/ibm/wlp/usr/shared/resources/lib.index.cache /lib.index.cache     && mkdir -p /config/configDropins/defaults     && mkdir -p /config/configDropins/overrides     && chown -R 1001:0 /config     && chmod -R g+rw /config     && chown -R 1001:0 /opt/ibm/helpers     && chmod -R ug+rwx /opt/ibm/helpers     && chown -R 1001:0 /opt/ibm/fixes     && chmod -R g+rwx /opt/ibm/fixes     && chown -R 1001:0 /opt/ibm/wlp/usr     && chmod -R g+rw /opt/ibm/wlp/usr     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rw /opt/ibm/wlp/output     && chown -R 1001:0 /etc/wlp     && chmod -R g+rw /etc/wlp     && chown -R 1001:0 /home/default     && chmod -R g+rw /home/default     && ln -s /logs /liberty/logs     && mkdir /serviceability     && chown -R 1001:0 /serviceability     && chmod -R g+rw /serviceability # buildkit
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 # ARGS: VERBOSE=false OPENJ9_SCC=true LIBERTY_VERSION=26.0.0.6 LIBERTY_BUILD_LABEL=cl260620260531-0302 LIBERTY_SHA=7a614ebeb2fc9c6c542cc973b0575c0a8515173d LIBERTY_URL= DOWNLOAD_OPTIONS=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && chown -R 1001:0 /opt/ibm/wlp/output     && chmod -R g+rwx /opt/ibm/wlp/output # buildkit
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 ENV RANDFILE=/tmp/.rnd IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 USER 1001
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 EXPOSE map[9080/tcp:{} 9443/tcp:{}]
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 ENTRYPOINT ["/opt/ibm/helpers/runtime/docker-server.sh"]
-# Wed, 17 Jun 2026 22:07:46 GMT
+# Thu, 02 Jul 2026 05:40:45 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Wed, 17 Jun 2026 22:44:45 GMT
+# Thu, 02 Jul 2026 06:31:35 GMT
 ARG VERBOSE=false
-# Wed, 17 Jun 2026 22:44:45 GMT
+# Thu, 02 Jul 2026 06:31:35 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Wed, 17 Jun 2026 22:44:45 GMT
+# Thu, 02 Jul 2026 06:31:35 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN set -eux;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     mkdir /opt/ibm/wlp/etc/;     echo "$REPOSITORIES_PROPERTIES" > /opt/ibm/wlp/etc/repositories.properties;   fi;   installUtility install --acceptLicense baseBundle;   if [ ! -z "$REPOSITORIES_PROPERTIES" ]; then     rm /opt/ibm/wlp/etc/repositories.properties;   fi;   rm -rf /output/workarea /output/logs;   find /opt/ibm/wlp ! -perm -g=rw -print0 | xargs -r -0 chmod g+rw; # buildkit
-# Wed, 17 Jun 2026 22:44:45 GMT
+# Thu, 02 Jul 2026 06:31:36 GMT
 COPY --chown=1001:0 server.xml /config/ # buildkit
-# Wed, 17 Jun 2026 22:45:08 GMT
+# Thu, 02 Jul 2026 06:31:59 GMT
 # ARGS: VERBOSE=false REPOSITORIES_PROPERTIES=
 RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /output/messaging /output/resources/security /logs/* $WLP_OUTPUT_DIR/.classCache     && find /opt/ibm/wlp/output ! -path "*.classCache*" ! -perm -g=rwx -print0 | xargs -0 -r chmod g+rwx # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c8acb84faa73cc102915433858f425bdd6749804de64fd2e27d5f491f005a91b`  
-		Last Modified: Sat, 09 May 2026 05:25:25 GMT  
-		Size: 28.2 MB (28202305 bytes)  
+	-	`sha256:34e440c1d617a14c5bd409164ca055ea7353290a30638fa560b151e88ea9e046`  
+		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
+		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe1931cfb90bc60ae24d6e589e0cba39f54353e12baecae083fef9e1dab4874f`  
-		Last Modified: Fri, 15 May 2026 21:27:00 GMT  
-		Size: 1.5 MB (1455939 bytes)  
+	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
+		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
+		Size: 1.4 MB (1411768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d580608bb6b95870f23bd08c8ab108f7f19dd838c173a89887d6c80bba5b67a`  
-		Last Modified: Fri, 15 May 2026 21:27:03 GMT  
-		Size: 134.6 MB (134620694 bytes)  
+	-	`sha256:3e47ee2edf7b912bd2221415636ea5d2cc378c3290511104e9c5f89db73c8cb9`  
+		Last Modified: Thu, 02 Jul 2026 02:24:51 GMT  
+		Size: 134.6 MB (134620686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35604d085cbcbe7e1420e0bd019d9b4f675e216521253555b4679dafbbe434c`  
-		Last Modified: Wed, 17 Jun 2026 22:08:00 GMT  
-		Size: 114.8 KB (114817 bytes)  
+	-	`sha256:c0425127f6f54cfa260dea65a3d89e414dae5fd74a6e9ff5e7657723bd3f39ee`  
+		Last Modified: Thu, 02 Jul 2026 05:41:00 GMT  
+		Size: 114.9 KB (114857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:231b4dff5227f239dc122d8256c5c6494a3bcf4b63567d1b470552e950863ff5`  
-		Last Modified: Wed, 17 Jun 2026 22:08:00 GMT  
-		Size: 18.5 MB (18521916 bytes)  
+	-	`sha256:053835cbd144a435a9be17b1618bd3e68509c5013d347f5c4ed949f71c55fddf`  
+		Last Modified: Thu, 02 Jul 2026 05:41:01 GMT  
+		Size: 18.1 MB (18118502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:182b16819807898b96c8567b7dc1e0e6bc7c1b0f542d3dcd080b582e4b097832`  
-		Last Modified: Wed, 17 Jun 2026 22:08:00 GMT  
-		Size: 585.0 B  
+	-	`sha256:fd4af34d78b3981a1ab03b493ddd74729454ce0ef7ccf9dad22a044724d3fc93`  
+		Last Modified: Thu, 02 Jul 2026 05:41:00 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6db1120774611986efb4e117fd354c57e1383e9dad820c29b95dc97398c931d1`  
-		Last Modified: Wed, 17 Jun 2026 22:08:00 GMT  
-		Size: 1.5 KB (1520 bytes)  
+	-	`sha256:64ad47b22efbf3a72489cc2b9dcf1f5819c8c26f243c081cb35385eebca2b00b`  
+		Last Modified: Thu, 02 Jul 2026 05:41:00 GMT  
+		Size: 1.5 KB (1522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd014d90d8b3efdc020223c7b573ddf9d93a0577be0e7b6d2d4e0388c8bdd40`  
-		Last Modified: Wed, 17 Jun 2026 22:08:01 GMT  
-		Size: 14.2 KB (14184 bytes)  
+	-	`sha256:c612b52115e13caeb22f11763c4c1e89f4f23d663c8ffbad71afc9fc632e5e39`  
+		Last Modified: Thu, 02 Jul 2026 05:41:01 GMT  
+		Size: 14.2 KB (14188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf5aba972db799f50698b67c7eed4d24bfef992fdce61206180bbe43d19d41b7`  
-		Last Modified: Wed, 17 Jun 2026 22:08:01 GMT  
-		Size: 248.0 B  
+	-	`sha256:41f945c726b01258dc5bc47709b699fce3392e2c72ec5a8070933e4b14da7c0d`  
+		Last Modified: Thu, 02 Jul 2026 05:41:01 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f7d460599535585bb16d12d8412bc29525a98756a2a0672715be4a72b616538`  
-		Last Modified: Wed, 17 Jun 2026 22:08:01 GMT  
-		Size: 15.1 KB (15066 bytes)  
+	-	`sha256:d42e20dd844849cbe130ea314892433e861177a81d0abd820e0df49e553c24c9`  
+		Last Modified: Thu, 02 Jul 2026 05:41:01 GMT  
+		Size: 15.1 KB (15057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b446a32f6e015c4ac6bf29c74df235f6fc37e73c27dec86047874ba6352323a6`  
-		Last Modified: Wed, 17 Jun 2026 22:08:02 GMT  
-		Size: 6.1 MB (6120281 bytes)  
+	-	`sha256:62be134fd5552880c698d33ef27222f6e0b23b334b0882b53928fc09798445b6`  
+		Last Modified: Thu, 02 Jul 2026 05:41:02 GMT  
+		Size: 6.1 MB (6082377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74bf48cf9d26be872ebff0977a4972caa123b63e12e539353ce91b671d18ab86`  
-		Last Modified: Wed, 17 Jun 2026 22:45:58 GMT  
-		Size: 387.4 MB (387382695 bytes)  
+	-	`sha256:03cd8d27b9c2c294198fb9adbaf59a724b958bdda32a6434ff7d0a450a3a0f5b`  
+		Last Modified: Thu, 02 Jul 2026 06:32:42 GMT  
+		Size: 387.4 MB (387380912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4e3c7ff0a1e1b55ce0856e88819a7d132eb18eeca46b1d6e6ffc03cd3c53e2e`  
-		Last Modified: Wed, 17 Jun 2026 22:45:51 GMT  
-		Size: 948.0 B  
+	-	`sha256:35f33bdda50973c75bdd29e8ff7d854593657f6ae4bdc643efc04ecd00dfd711`  
+		Last Modified: Thu, 02 Jul 2026 06:32:36 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53770bbe941f08e2478e62c812654520e2c5e3f0671f894c8acf1a80cf208421`  
-		Last Modified: Wed, 17 Jun 2026 22:45:52 GMT  
-		Size: 15.2 MB (15155590 bytes)  
+	-	`sha256:8382f5f229244480a3f2f5fde311f0023b5d51cf791c3f3ca52499b16605cd83`  
+		Last Modified: Thu, 02 Jul 2026 06:32:36 GMT  
+		Size: 15.1 MB (15068624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `websphere-liberty:latest` - unknown; unknown
 
 ```console
-$ docker pull websphere-liberty@sha256:7ddc5226c9b5aa7f5d3136e8faa08226e30861cdaa8418557ffc814de7f61ede
+$ docker pull websphere-liberty@sha256:154abf93196a2869f5f5f3b5ae1b32659e7a5d045028f7e19b9ae6f5a0f24e35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4435339 bytes)**  
+-	Total Size: **4.4 MB (4417172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c55875688541a61eb1f16d12d5ceeb1f0b298d076699987bfa173bd9cdb65ad`
+-	Image ID: `sha256:b9bdb714ffa5a6a6e498bbc69ac247959780312ad4e516b0780fb112f20d328a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d616e76c451c2a7358958e89de9abdb8f63d24b8eef8c2d877d82d4903b6c922`  
-		Last Modified: Wed, 17 Jun 2026 22:45:51 GMT  
-		Size: 4.4 MB (4416244 bytes)  
+	-	`sha256:c6283792d4a24c8a569c8522541848f309510e0845d333472b6fd77191518a91`  
+		Last Modified: Thu, 02 Jul 2026 06:32:36 GMT  
+		Size: 4.4 MB (4398077 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:774ec1e05c7b4bd78bd7a79e102fe8705a8faa1b12b2e1b5ba4fee22b8e26950`  
-		Last Modified: Wed, 17 Jun 2026 22:45:51 GMT  
+	-	`sha256:7909de162499e1e6b7b8a3fd969161728cadf30ccf550ed928f35be03ffde1be`  
+		Last Modified: Thu, 02 Jul 2026 06:32:36 GMT  
 		Size: 19.1 KB (19095 bytes)  
 		MIME: application/vnd.in-toto+json
