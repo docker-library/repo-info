@@ -1,10 +1,10 @@
-# `neo4j:5.26.27-community-ubi10`
+# `neo4j:5.26.28-community-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a67e22c283dee7f56d14bd172fad7a72bdc38d61e0e0d9ee7534e54df256c43a`
-- Created: `2026-06-24T23:06:29.369434558Z`
-- Virtual Size: ~ 515.82 Mb  
+- Image ID: `sha256:844e49f95dd66056416932a06ca1afc944b5f541e5357e5262de1e0a86ba0395`
+- Created: `2026-07-01T22:41:51.957887101Z`
+- Virtual Size: ~ 515.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,14 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=5e752081e2863febf3d2f11fab31e1a3185e1ea7bb5e0bcf7d8e516ddbec5349`
-  - `NEO4J_TARBALL=neo4j-community-5.26.27-unix.tar.gz`
+  - `NEO4J_SHA256=9d4064cdd87627cae376a741c893848c4faa3c4fb980362b6dae541c203e8072`
+  - `NEO4J_TARBALL=neo4j-community-5.26.28-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-24T06:39:51Z`
+  - `build-date=2026-06-30T05:58:02Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-06-24T06:39:51Z`
-  - `org.opencontainers.image.revision=fcffc2222455e28601e0105a0a1e9a211f7127c7`
-  - `release=1782283038`
+  - `org.opencontainers.image.created=2026-06-30T05:58:02Z`
+  - `org.opencontainers.image.revision=44f0ddba4a090cf20869fe52250e95ba0eca806d`
+  - `release=1782798957`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=fcffc2222455e28601e0105a0a1e9a211f7127c7`
+  - `vcs-ref=44f0ddba4a090cf20869fe52250e95ba0eca806d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
