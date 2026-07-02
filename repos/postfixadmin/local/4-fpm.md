@@ -1,10 +1,10 @@
-# `postfixadmin:4.0.3-fpm`
+# `postfixadmin:4.0.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:98b11d9e2123e4a756568e9719d1e6f96dc401523bdee5c21888a187ec9b4eb3`
-- Created: `2026-06-16T02:22:06.681357871Z`
-- Virtual Size: ~ 580.54 Mb  
+- Image ID: `sha256:9c9349750c56125544d253730800d87642571b2e5a36e0d687cda520aaa4e9c2`
+- Created: `2026-06-30T19:08:04.270487185Z`
+- Virtual Size: ~ 578.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
   - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
-  - `POSTFIXADMIN_VERSION=4.0.3`
-  - `POSTFIXADMIN_SHA512=b1f0261bf9cab0529ea43fb502bdef595c81350671c0e4b3fc6609335448552a3d7b649d8f4612473cc07bfe4bd1c6ba7800dc080a0fdf4247f5d81718ff2360`
+  - `POSTFIXADMIN_VERSION=4.0.4`
+  - `POSTFIXADMIN_SHA512=cce293e92e03f06a20ddbe09a9faec251af3f166f38565429d791feaf832096344a62656bab2a60bbd360545c1a0bd3ed05e11f4a4e46f04858e84639c5391dd`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
@@ -1963,11 +1963,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.90-2`
+### `dpkg` source package: `linux=6.12.94-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.90-2`
+- `linux-libc-dev=6.12.94-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1981,17 +1981,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.90-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.dsc' linux_6.12.90-2.dsc 292516 SHA256:3be36d36d9bede532201be1f4e97b2cc0409318baed4789112134ab515ba98ef
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90.orig.tar.xz' linux_6.12.90.orig.tar.xz 151267988 SHA256:6e7fc837feac9d07b96e60c4a97f616d33ef694f67703228f027f816117fb82b
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.debian.tar.xz' linux_6.12.90-2.debian.tar.xz 1819476 SHA256:11de140c51000a176e573371675088713cbaf3f74b5a1435ca5599545aee6501
+$ apt-get source -qq --print-uris linux=6.12.94-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.dsc' linux_6.12.94-1.dsc 288306 SHA256:985a33d437c11f73f672b808b62589a0db3e97c6c286f315dbe14d1fc43f1191
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94.orig.tar.xz' linux_6.12.94.orig.tar.xz 151297764 SHA256:3eea3dd18f67a103f6f8312e314075f695a27eaddd839e7b6c4641e6616dabba
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.debian.tar.xz' linux_6.12.94-1.debian.tar.xz 1838436 SHA256:8c5130fd9dee8d6efcc594dc3357809ad8e0d0234357139f85f5ed39b37922b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.90-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.90-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.90-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.94-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.94-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.94-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
