@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1096ff67ac3a6742126316ea03c11fd64c422c8fc3a889499e1fa7ea62220bb4`
-- Created: `2026-06-24T00:06:12.241832795Z`
-- Virtual Size: ~ 440.06 Mb  
+- Image ID: `sha256:4d2fd7e64a730411d255acd78802d161f8dd85c50ad0b8e4a213747ec6847cf8`
+- Created: `2026-07-01T00:15:39.739343256Z`
+- Virtual Size: ~ 447.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
+  - `RUBY_VERSION=3.4.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -864,16 +864,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
@@ -915,16 +915,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -1748,16 +1748,16 @@ SSH-OpenSSH
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:23a5cac9b7a09f7eb40daee09f8ede0228ddd1deb203fe19b31bcf2f3eec8f7c`
-- Created: `2026-06-24T02:48:00.296369011Z`
-- Virtual Size: ~ 649.67 Mb  
+- Image ID: `sha256:a62c1c5f10a4935506ba1fc32569b8c74c3ab570d7a3061fecd1293db917a2ca`
+- Created: `2026-07-01T00:14:10.272448874Z`
+- Virtual Size: ~ 656.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
+  - `RUBY_VERSION=3.4.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -4055,11 +4055,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-merge3/0.0.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-merge3/0.0.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-urllib3=1.26.12-1+deb12u3`
+### `dpkg` source package: `python-urllib3=1.26.12-1+deb12u4`
 
 Binary Packages:
 
-- `python3-urllib3=1.26.12-1+deb12u3`
+- `python3-urllib3=1.26.12-1+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
@@ -4069,17 +4069,17 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.12-1+deb12u3
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12-1%2bdeb12u3.dsc' python-urllib3_1.26.12-1+deb12u3.dsc 2499 SHA256:90903b9264067790fa58239bc10cc84d0cdc9e889a51d39663bf104f6de530f0
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12.orig.tar.gz' python-urllib3_1.26.12.orig.tar.gz 299806 SHA256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12-1%2bdeb12u3.debian.tar.xz' python-urllib3_1.26.12-1+deb12u3.debian.tar.xz 20140 SHA256:d0673891401721305fec795b7df8c0fc1ea1bb5f349766a61f4f7e2a454df09f
+$ apt-get source -qq --print-uris python-urllib3=1.26.12-1+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_1.26.12-1%2bdeb12u4.dsc' python-urllib3_1.26.12-1+deb12u4.dsc 2344 SHA256:a5d6af5b8142af435741492f2d559d78c9f5f2949a71876609ae5d506a34b69b
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_1.26.12.orig.tar.gz' python-urllib3_1.26.12.orig.tar.gz 299806 SHA256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_1.26.12-1%2bdeb12u4.debian.tar.xz' python-urllib3_1.26.12-1+deb12u4.debian.tar.xz 21004 SHA256:573bde9b4476edf6e1059915625be136937987c8df192e6d18dc51efd19e3509
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python-urllib3/1.26.12-1+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/python-urllib3/1.26.12-1+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-urllib3/1.26.12-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python-urllib3/1.26.12-1+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/python-urllib3/1.26.12-1+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-urllib3/1.26.12-1+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.2-1`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d31d1363839cc7e2456af27e8922afb6cb4b7ad8622300fbb5d9fd346b9c829d`
-- Created: `2026-06-24T00:05:58.444293448Z`
-- Virtual Size: ~ 440.42 Mb  
+- Image ID: `sha256:2df3493aa7790bfe907b723d3c3c6cabfc400d66ac5d1b7f21f1b0427c0ba9e9`
+- Created: `2026-07-01T00:16:31.961753834Z`
+- Virtual Size: ~ 447.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
+  - `RUBY_VERSION=3.4.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -915,16 +915,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -1748,16 +1748,16 @@ SSH-OpenSSH
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```

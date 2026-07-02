@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cf642de8dd8f5518f564a1d3d81b28f9b65e42a079ca944b2362bed6f283de2`
-- Created: `2026-06-24T02:48:06.551167299Z`
-- Virtual Size: ~ 605.78 Mb  
+- Image ID: `sha256:f8bd481f116660da9f7a7ad19ea1eaf5cbc8835060b8360ddb436f216ebdb06a`
+- Created: `2026-07-01T00:12:13.552355054Z`
+- Virtual Size: ~ 613.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=4231c54072601a171faed1699f105985e9971c94cd382b78feb4eb44eec2dd1a`
+  - `RUBY_VERSION=3.4.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -2754,11 +2754,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsm/2:1.2.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsm/2:1.2.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.11.1-1`
+### `dpkg` source package: `libssh2=1.11.1-1+deb13u1`
 
 Binary Packages:
 
-- `libssh2-1t64:amd64=1.11.1-1`
+- `libssh2-1t64:amd64=1.11.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
@@ -2768,18 +2768,18 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.dsc' libssh2_1.11.1-1.dsc 2319 SHA256:f97f7ac25300908b255a29c63055e78684e68c12c308edb016747da1de592377
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.debian.tar.xz' libssh2_1.11.1-1.debian.tar.xz 17136 SHA256:f3b9e55f706c89e9408478a1eecb0067b8e18902e0cab168f44194fcc53641cf
+$ apt-get source -qq --print-uris libssh2=1.11.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.dsc' libssh2_1.11.1-1+deb13u1.dsc 2351 SHA256:b49dae094697248bd4d3665dd73d13b27739237701b939bc7c1ebedf17dc81e4
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.debian.tar.xz' libssh2_1.11.1-1+deb13u1.debian.tar.xz 19312 SHA256:095817cecf4b527b68208d72987439622877dde62cd88afe8822efc3d775e013
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.11.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.11.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.20.0-2`
 
