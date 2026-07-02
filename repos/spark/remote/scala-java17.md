@@ -1,7 +1,7 @@
 ## `spark:scala-java17`
 
 ```console
-$ docker pull spark@sha256:7fdccdd28548b3754319cbcac88f43475b900fc4af0264a2676af461c238baec
+$ docker pull spark@sha256:57bee990dc5ada3676432ba6531bffa39eec19f59de1d5712f908a8bc1f03d0f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,106 +14,106 @@ $ docker pull spark@sha256:7fdccdd28548b3754319cbcac88f43475b900fc4af0264a2676af
 ### `spark:scala-java17` - linux; amd64
 
 ```console
-$ docker pull spark@sha256:cbd82a91b1e79bd0e1f0072e89c2177a1233dbdc858b8debf6b5f13d9051110b
+$ docker pull spark@sha256:fb0af61dd1a61c245d56db1399fa6a93da190712e8bdde88741be802766a8fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **681.2 MB (681204749 bytes)**  
+-	Total Size: **681.2 MB (681170301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dfcd88d01f07f33560ddf290f3469494bcac0dc9db5ca0f90366d29baff5c84`
+-	Image ID: `sha256:b45c1e42beab0edfa566d03d3668d03ead6602a804a05959e82eb63fc0c698d1`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:49:21 GMT
+# Mon, 29 Jun 2026 11:07:30 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:49:23 GMT
-ADD file:14c8897ef5107db11b35f5a0c05bdcb883c0a6daa83d07d4439865541f08514c in / 
-# Sat, 09 May 2026 04:49:23 GMT
+# Mon, 29 Jun 2026 11:07:32 GMT
+ADD file:c5143b228eb55f19ed4d3b653ad68ec7afe54ded0247e090ce3afb9e5484adfb in / 
+# Mon, 29 Jun 2026 11:07:32 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:15:47 GMT
+# Thu, 02 Jul 2026 02:21:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 15 May 2026 21:15:47 GMT
+# Thu, 02 Jul 2026 02:21:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2026 21:15:47 GMT
+# Thu, 02 Jul 2026 02:21:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 15 May 2026 21:15:47 GMT
+# Thu, 02 Jul 2026 02:21:04 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:15:47 GMT
+# Thu, 02 Jul 2026 02:21:04 GMT
 ENV JAVA_VERSION=jdk-17.0.19+10
-# Fri, 15 May 2026 21:15:54 GMT
+# Thu, 02 Jul 2026 02:21:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d8afc263758141a66e0e3aafc321e783f7016696f4eaea067d340a269037d331';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.19_10.tar.gz';          ;;        arm64)          ESUM='83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz';          ;;        armhf)          ESUM='2de430307390123858ea70b3ba399155b88bb05d65e5d3633b3a4d7b19acddb1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_arm_linux_hotspot_17.0.19_10.tar.gz';          ;;        ppc64el)          ESUM='c9d8dc52960ff00aa8c321e211cc5284a2151cffdedeac998f5297066cbad245';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.19_10.tar.gz';          ;;        s390x)          ESUM='00363a5ceda57aa0dee89d20b3f6b2966e3c1f3fb6dcf57e66d2264573d3c63e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.19_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 15 May 2026 21:15:54 GMT
+# Thu, 02 Jul 2026 02:21:12 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 15 May 2026 21:15:55 GMT
+# Thu, 02 Jul 2026 02:21:12 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 15 May 2026 21:15:55 GMT
+# Thu, 02 Jul 2026 02:21:12 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 15 May 2026 21:15:55 GMT
+# Thu, 02 Jul 2026 02:21:12 GMT
 CMD ["jshell"]
-# Fri, 22 May 2026 18:26:37 GMT
+# Thu, 02 Jul 2026 05:39:24 GMT
 ARG spark_uid=185
-# Fri, 22 May 2026 18:26:37 GMT
+# Thu, 02 Jul 2026 05:39:24 GMT
 # ARGS: spark_uid=185
 RUN groupadd --system --gid=${spark_uid} spark &&     useradd --system --uid=${spark_uid} --gid=spark -d /nonexistent spark # buildkit
-# Fri, 22 May 2026 18:26:43 GMT
+# Thu, 02 Jul 2026 05:39:30 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     apt-get update;     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper;     mkdir -p /opt/spark;     mkdir /opt/spark/python;     mkdir -p /opt/spark/examples;     mkdir -p /opt/spark/work-dir;     chmod g+w /opt/spark/work-dir;     touch /opt/spark/RELEASE;     chown -R spark:spark /opt/spark;     echo "auth required pam_wheel.so use_uid" >> /etc/pam.d/su;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 22 May 2026 18:26:43 GMT
+# Thu, 02 Jul 2026 05:39:30 GMT
 ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz.asc?action=download GPG_KEY=564CA14951C29266889F9C5B90E2BA86F7A9B307
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     export SPARK_TMP="$(mktemp -d)";     cd $SPARK_TMP;     wget -nv -O spark.tgz "$SPARK_TGZ_URL";     wget -nv -O spark.tgz.asc "$SPARK_TGZ_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-key "$GPG_KEY" ||     gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY";     gpg --batch --verify spark.tgz.asc spark.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" spark.tgz.asc;         tar -xf spark.tgz --strip-components=1;     chown -R spark:spark .;     mv jars /opt/spark/;     mv RELEASE /opt/spark/;     mv bin /opt/spark/;     mv sbin /opt/spark/;     mv kubernetes/dockerfiles/spark/decom.sh /opt/;     mv examples /opt/spark/;     ln -s "$(basename /opt/spark/examples/jars/spark-examples_*.jar)" /opt/spark/examples/jars/spark-examples.jar;     mv kubernetes/tests /opt/spark/;     mv data /opt/spark/;     mv python/pyspark /opt/spark/python/pyspark/;     mv python/lib /opt/spark/python/lib/;     mv R /opt/spark/;     chmod a+x /opt/decom.sh;     cd ..;     rm -rf "$SPARK_TMP"; # buildkit
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 COPY entrypoint.sh /opt/ # buildkit
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 ENV SPARK_HOME=/opt/spark
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 WORKDIR /opt/spark/work-dir
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 USER spark
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:39:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:40d16f30db405106ef8074779bdf41f012465c2a785bbeaa2eab9f2081099b47`  
-		Last Modified: Sat, 09 May 2026 05:24:51 GMT  
-		Size: 29.7 MB (29736684 bytes)  
+	-	`sha256:d6834b4a794c03efa2c998853e64969fa8851b11b2ade63292268872a37759d0`  
+		Last Modified: Mon, 29 Jun 2026 11:25:17 GMT  
+		Size: 29.7 MB (29738881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:909fe7dc1afc2b7c2ce46b1d0166713560a7d2f913022d4e991dd6d98701a2b3`  
-		Last Modified: Fri, 15 May 2026 21:16:11 GMT  
-		Size: 20.7 MB (20696952 bytes)  
+	-	`sha256:f52ce071e38ba5c4d8c35a34c11cc1d3123a4c918b829aa8abbf2e077fea1336`  
+		Last Modified: Thu, 02 Jul 2026 02:21:30 GMT  
+		Size: 20.7 MB (20661038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:937c31685fefe899abb3e773bf9e4fea73fcbd2cc6f2e126fe41ac4a69b28397`  
-		Last Modified: Fri, 15 May 2026 21:16:14 GMT  
-		Size: 145.9 MB (145912351 bytes)  
+	-	`sha256:94bebe0b6e8deb8676fbd24e226e855153250abd0942c48002017d6dc5fa60a9`  
+		Last Modified: Thu, 02 Jul 2026 02:21:34 GMT  
+		Size: 145.9 MB (145912321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ba0d2efe79548df209692310f9d4cc47306c76336e362f4f125b29470ab56f`  
-		Last Modified: Fri, 15 May 2026 21:16:09 GMT  
-		Size: 158.0 B  
+	-	`sha256:e98ef54ce62352e0ba5df8dcf4e8d7ad304595e33b485442220eccfeb2598b60`  
+		Last Modified: Thu, 02 Jul 2026 02:21:29 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bcb50d9aa1fdda8a54b2787672840c41a0cc1165e14d3f515c888e3cde82ffb`  
-		Last Modified: Fri, 15 May 2026 21:16:09 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:c7b65c760a06744e5f9c0029581a2b4d007bc335fe44a191ffc7094dd0935567`  
+		Last Modified: Thu, 02 Jul 2026 02:21:29 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aeee73b8e75022f09e5f4962ea0564301b44d8b849f95d9879a7c1422b69357b`  
-		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:04e7873198fe27afe8a08556d85eec33755257ee652bfc09925fe433ff2cf10e`  
+		Last Modified: Thu, 02 Jul 2026 05:40:06 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb11a41828fbb096907dfd45723d033e12f2dec0e41d2735260bbf17d6574f2`  
-		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
-		Size: 21.9 MB (21853700 bytes)  
+	-	`sha256:ad7ae2dd8d3afa01e5f928fae942e322cf656e16c5b41478e04d3e03c8bc8bac`  
+		Last Modified: Thu, 02 Jul 2026 05:40:08 GMT  
+		Size: 21.9 MB (21852997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdc45223fdd682925d98e4ea715714ac08b8594e39093bd45495d58c02e1d9e5`  
-		Last Modified: Fri, 22 May 2026 18:27:46 GMT  
-		Size: 463.0 MB (462999031 bytes)  
+	-	`sha256:e3333bf745f089e83327ab1a3de6b35f8a65ad63295a109a4256a5be5cc27d7d`  
+		Last Modified: Thu, 02 Jul 2026 05:40:19 GMT  
+		Size: 463.0 MB (462999035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d8f45d4142b5165bc693648e6a752f94a6526f180bb942735b95065e4a0ffcc`  
-		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+	-	`sha256:b861e7233be59fb468a8c0c73d6d354b35576477ecce7900a3e22dd2899c7746`  
+		Last Modified: Thu, 02 Jul 2026 05:40:06 GMT  
 		Size: 2.1 KB (2134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -124,131 +124,131 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ### `spark:scala-java17` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:5e0e476c108e73c8e52f92e33fb914027c688b1ec7c93dcbc008c2876ce58066
+$ docker pull spark@sha256:71c8a2bda8fff17bc73c848b07c70af61cf026ccf902b1015f3d9a934f601b52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4998475 bytes)**  
+-	Total Size: **5.0 MB (4982211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da7dee14978f479f49961c19e40d09add3ee4834022d7b2052f79ceb44ddc15d`
+-	Image ID: `sha256:bf796cb2a9f380cb535cc0806edb1cd7b6cfb3b36d298c085a87172406edf347`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c09ad0ff56915e4bfba996faa883f3c1cff509c37050be7f7507fdb41986f07a`  
-		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
-		Size: 5.0 MB (4974602 bytes)  
+	-	`sha256:c21ca1bc0a2ef62e3bfb65d926d6b841de812fa7f3ddad4a65d45083a2455f47`  
+		Last Modified: Thu, 02 Jul 2026 05:40:06 GMT  
+		Size: 5.0 MB (4958338 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5402a5810a2dcf3b8b6e2782af3693f926fded723476ff15de997292ef346765`  
-		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+	-	`sha256:5847b1695ff46f4f5967ead46d7024f14752e8825d2ebf0fbf30bc606141475f`  
+		Last Modified: Thu, 02 Jul 2026 05:40:06 GMT  
 		Size: 23.9 KB (23873 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `spark:scala-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull spark@sha256:1cf6c3207016d3361fc3627e9f479c35c3b90cb9851500d55b830b8f95953947
+$ docker pull spark@sha256:4e7a5050703bb026fdfc9314ce6ca7b05cee53fc09c2cd94b5fc61a07c600d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **679.0 MB (678999558 bytes)**  
+-	Total Size: **679.0 MB (678963601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f3ac36fe61803f7ed168b6085132198ec7c15d0a4a0d2c9d9afb878f5bda3d6`
+-	Image ID: `sha256:cbc82b4646a8787b31d14b63139c6373ea627d500cda99688c822b852e4b755d`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 ARG RELEASE
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 09 May 2026 04:50:55 GMT
+# Mon, 29 Jun 2026 10:38:39 GMT
 LABEL org.opencontainers.image.version=22.04
-# Sat, 09 May 2026 04:50:57 GMT
-ADD file:a8d1411696ccaba92b4557162d508331f7cb7973e559947ad40c3f25d9402b10 in / 
-# Sat, 09 May 2026 04:50:57 GMT
+# Mon, 29 Jun 2026 10:38:42 GMT
+ADD file:a517741c956f6a7e4b7cb0efd9bc418ce3cc54eb49b5314080ff606a7430ac2a in / 
+# Mon, 29 Jun 2026 10:38:42 GMT
 CMD ["/bin/bash"]
-# Fri, 15 May 2026 21:16:20 GMT
+# Thu, 02 Jul 2026 02:20:07 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 15 May 2026 21:16:20 GMT
+# Thu, 02 Jul 2026 02:20:07 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2026 21:16:20 GMT
+# Thu, 02 Jul 2026 02:20:07 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 15 May 2026 21:16:20 GMT
+# Thu, 02 Jul 2026 02:20:07 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:16:20 GMT
+# Thu, 02 Jul 2026 02:20:07 GMT
 ENV JAVA_VERSION=jdk-17.0.19+10
-# Fri, 15 May 2026 21:16:28 GMT
+# Thu, 02 Jul 2026 02:20:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d8afc263758141a66e0e3aafc321e783f7016696f4eaea067d340a269037d331';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_linux_hotspot_17.0.19_10.tar.gz';          ;;        arm64)          ESUM='83a52172678ec8975164648654869cb2e71d7c748b47aca94b29bbfa10c18e81';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.19_10.tar.gz';          ;;        armhf)          ESUM='2de430307390123858ea70b3ba399155b88bb05d65e5d3633b3a4d7b19acddb1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_arm_linux_hotspot_17.0.19_10.tar.gz';          ;;        ppc64el)          ESUM='c9d8dc52960ff00aa8c321e211cc5284a2151cffdedeac998f5297066cbad245';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.19_10.tar.gz';          ;;        s390x)          ESUM='00363a5ceda57aa0dee89d20b3f6b2966e3c1f3fb6dcf57e66d2264573d3c63e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.19_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 15 May 2026 21:16:29 GMT
+# Thu, 02 Jul 2026 02:20:16 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 15 May 2026 21:16:29 GMT
+# Thu, 02 Jul 2026 02:20:16 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 15 May 2026 21:16:29 GMT
+# Thu, 02 Jul 2026 02:20:16 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 15 May 2026 21:16:29 GMT
+# Thu, 02 Jul 2026 02:20:16 GMT
 CMD ["jshell"]
-# Fri, 22 May 2026 18:26:40 GMT
+# Thu, 02 Jul 2026 05:39:43 GMT
 ARG spark_uid=185
-# Fri, 22 May 2026 18:26:40 GMT
+# Thu, 02 Jul 2026 05:39:43 GMT
 # ARGS: spark_uid=185
 RUN groupadd --system --gid=${spark_uid} spark &&     useradd --system --uid=${spark_uid} --gid=spark -d /nonexistent spark # buildkit
-# Fri, 22 May 2026 18:26:46 GMT
+# Thu, 02 Jul 2026 05:39:51 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     apt-get update;     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper;     mkdir -p /opt/spark;     mkdir /opt/spark/python;     mkdir -p /opt/spark/examples;     mkdir -p /opt/spark/work-dir;     chmod g+w /opt/spark/work-dir;     touch /opt/spark/RELEASE;     chown -R spark:spark /opt/spark;     echo "auth required pam_wheel.so use_uid" >> /etc/pam.d/su;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 22 May 2026 18:26:46 GMT
+# Thu, 02 Jul 2026 05:39:51 GMT
 ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz.asc?action=download GPG_KEY=564CA14951C29266889F9C5B90E2BA86F7A9B307
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     export SPARK_TMP="$(mktemp -d)";     cd $SPARK_TMP;     wget -nv -O spark.tgz "$SPARK_TGZ_URL";     wget -nv -O spark.tgz.asc "$SPARK_TGZ_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-key "$GPG_KEY" ||     gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY";     gpg --batch --verify spark.tgz.asc spark.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" spark.tgz.asc;         tar -xf spark.tgz --strip-components=1;     chown -R spark:spark .;     mv jars /opt/spark/;     mv RELEASE /opt/spark/;     mv bin /opt/spark/;     mv sbin /opt/spark/;     mv kubernetes/dockerfiles/spark/decom.sh /opt/;     mv examples /opt/spark/;     ln -s "$(basename /opt/spark/examples/jars/spark-examples_*.jar)" /opt/spark/examples/jars/spark-examples.jar;     mv kubernetes/tests /opt/spark/;     mv data /opt/spark/;     mv python/pyspark /opt/spark/python/pyspark/;     mv python/lib /opt/spark/python/lib/;     mv R /opt/spark/;     chmod a+x /opt/decom.sh;     cd ..;     rm -rf "$SPARK_TMP"; # buildkit
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 COPY entrypoint.sh /opt/ # buildkit
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 ENV SPARK_HOME=/opt/spark
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 WORKDIR /opt/spark/work-dir
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 USER spark
-# Fri, 22 May 2026 18:27:07 GMT
+# Thu, 02 Jul 2026 05:40:03 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:99267111abcc4caf5e9b6f06fd8b9ca7ae7bff04ce06b24ca352c6007daaa73e`  
-		Last Modified: Sat, 09 May 2026 05:24:57 GMT  
-		Size: 27.6 MB (27606623 bytes)  
+	-	`sha256:119d19e001bafa21919289095e1dbfac64f1e16d2469dd14c2d2a520039d26d9`  
+		Last Modified: Mon, 29 Jun 2026 11:25:25 GMT  
+		Size: 27.6 MB (27613184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1bc8906a7610c5b0a4df49ed0c81a0753ae645c3b3d827930f9e97113bd2c00`  
-		Last Modified: Fri, 15 May 2026 21:16:47 GMT  
-		Size: 22.1 MB (22110130 bytes)  
+	-	`sha256:769c9cd69ed030f695aa25baaa64f4d2565335646733c4a370639725ba3f086a`  
+		Last Modified: Thu, 02 Jul 2026 02:20:34 GMT  
+		Size: 22.1 MB (22069200 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e44773ebf0b26708d3c1a138319ca2dfc1dea75e131eb674bbea177043ac0460`  
-		Last Modified: Fri, 15 May 2026 21:16:50 GMT  
-		Size: 144.7 MB (144741869 bytes)  
+	-	`sha256:b8768cc534a14a814d56760bb2cc76b6f829eecd32d727a67751cbb89504fa98`  
+		Last Modified: Thu, 02 Jul 2026 02:20:37 GMT  
+		Size: 144.7 MB (144741028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1af9943ce0bcdad9ab8323df7c126e54f6dbd8374052a398c962c880573588b3`  
-		Last Modified: Fri, 15 May 2026 21:16:46 GMT  
-		Size: 158.0 B  
+	-	`sha256:e348bb7b0b4e7eb996fb8114129cb8b2d580c2d160bedb31b4fdbd8b4349ae76`  
+		Last Modified: Thu, 02 Jul 2026 02:20:33 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06ae8d3db94381716ad314cd2a45c3486c7c18b7eb32c026331be40f76fb6e8f`  
-		Last Modified: Fri, 15 May 2026 21:16:46 GMT  
+	-	`sha256:533eab5dedaaf6429183fe45e2e8a1bb7f5db57a43d29f4334582c07b99ae6b3`  
+		Last Modified: Thu, 02 Jul 2026 02:20:33 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d50d6b1fd8610a6315142ce0a35c5a44548e784798e1aab86ed198f653d8f30a`  
-		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:962e1ff91a786b344895ae6907f2aa1e9e67caadf79009acb9fcd37ba7ae6b43`  
+		Last Modified: Thu, 02 Jul 2026 05:40:33 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75c81224802e098991a7dcec1c8c0c054be121f9b1a9398e537d1802300f3601`  
-		Last Modified: Fri, 22 May 2026 18:27:38 GMT  
-		Size: 21.5 MB (21535876 bytes)  
+	-	`sha256:d1c92a2a9c090b83b5ba215537ee7fe1dee0e60979c3e41b13ce1b6fd4f62908`  
+		Last Modified: Thu, 02 Jul 2026 05:40:34 GMT  
+		Size: 21.5 MB (21535133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4dc23adb23a0050d97620f6a35b552048cf7f7e1eeebccb0b22af274572fa68`  
-		Last Modified: Fri, 22 May 2026 18:27:49 GMT  
-		Size: 463.0 MB (462999030 bytes)  
+	-	`sha256:2a1a50d07254b15636e517232fe564166402b9f7c5adddd216de0934b3b3af0b`  
+		Last Modified: Thu, 02 Jul 2026 05:40:43 GMT  
+		Size: 463.0 MB (462999027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b86075219455487308580ba5795052f369a6dc1404bfa34907dc1644ba02bfee`  
-		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
-		Size: 2.1 KB (2132 bytes)  
+	-	`sha256:8cb590f90a6b396bb3bd03e3e4d8a99cb3dd85a614817c9bd5108a16d0b03d5c`  
+		Last Modified: Thu, 02 Jul 2026 05:40:33 GMT  
+		Size: 2.1 KB (2135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -258,23 +258,23 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ### `spark:scala-java17` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:a7632496e7206366d24f84eb4983d8b9960c9f9612cf6612249edf79ed5855cc
+$ docker pull spark@sha256:64e30e85e922d405cdcc5a281366e4dc5c15c03963801356a651218b13090937
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5094161 bytes)**  
+-	Total Size: **5.1 MB (5077897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:babcc7b663d5dda2b84b0acf8d4d4169acc1972fbcff06d301d930652b9e9fde`
+-	Image ID: `sha256:f29532044d04f798882aa0bf8ebaa4299a85cc7d367d116f8cfbffc51c5d6785`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:702ed262d04f6d2b3b74660eaec0e1890a8b23fb1137042b7c2cc9aa29387e73`  
-		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
-		Size: 5.1 MB (5070141 bytes)  
+	-	`sha256:7133b7f20de14623d2dd71199f2fc3e52069dbceda434a5fc932508df25db270`  
+		Last Modified: Thu, 02 Jul 2026 05:40:33 GMT  
+		Size: 5.1 MB (5053877 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5dfec03fcaadfa27eec799063d50e28732f63dee4d2934e5a0db0d145c2d3ba6`  
-		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+	-	`sha256:06246d42fc561b03d0f5eaa874e41b85d2ef8d35bd8f2e32c03fb65b5028d8df`  
+		Last Modified: Thu, 02 Jul 2026 05:40:33 GMT  
 		Size: 24.0 KB (24020 bytes)  
 		MIME: application/vnd.in-toto+json
