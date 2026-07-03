@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c388485ed7cf4de50fa0d1cc9b82c997caf1a23566f6a5c22e8f48ecefdbac20`
-- Created: `2026-06-24T02:38:21.040897838Z`
-- Virtual Size: ~ 774.96 Mb  
+- Image ID: `sha256:25611c669a46006326ad97aa7bf4def1bab992b4251548012157b8fb5b2796e3`
+- Created: `2026-07-02T21:24:47.576369178Z`
+- Virtual Size: ~ 774.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.31`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.31.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc`
-  - `PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a`
+  - `PHP_VERSION=8.2.32`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.32.tar.xz.asc`
+  - `PHP_SHA256=e02aa173c236c12791696254d607da680e6d5516f8f5c2339642de7c4f944bd2`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.4.6`
   - `JOOMLA_SHA512=d4198b32a37cea890b24ab219b7d267e6a6df3373530d5e76eb7f4563868ef6caebefa7a2b9290065146ef733db2b0becc18d69f291730c767a25aa158cb9c16`
@@ -2808,11 +2808,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsodium/1.0.18-1+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsodium/1.0.18-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.11.1-1`
+### `dpkg` source package: `libssh2=1.11.1-1+deb13u1`
 
 Binary Packages:
 
-- `libssh2-1t64:amd64=1.11.1-1`
+- `libssh2-1t64:amd64=1.11.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
@@ -2822,18 +2822,18 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.dsc' libssh2_1.11.1-1.dsc 2319 SHA256:f97f7ac25300908b255a29c63055e78684e68c12c308edb016747da1de592377
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1.debian.tar.xz' libssh2_1.11.1-1.debian.tar.xz 17136 SHA256:f3b9e55f706c89e9408478a1eecb0067b8e18902e0cab168f44194fcc53641cf
+$ apt-get source -qq --print-uris libssh2=1.11.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.dsc' libssh2_1.11.1-1+deb13u1.dsc 2351 SHA256:b49dae094697248bd4d3665dd73d13b27739237701b939bc7c1ebedf17dc81e4
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.debian.tar.xz' libssh2_1.11.1-1+deb13u1.debian.tar.xz 19312 SHA256:095817cecf4b527b68208d72987439622877dde62cd88afe8822efc3d775e013
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.11.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.11.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.20.0-2`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3462bbde10137017dd7bd9e4deb5b3cb204da06039647d2bb4f777d83e0bd271`
-- Created: `2026-06-16T01:19:20.522636129Z`
-- Virtual Size: ~ 292.14 Mb  
+- Image ID: `sha256:9c07fd64821815ac9f46e31100e939ab0d85477659003fcebdb81ded0bf21a48`
+- Created: `2026-07-02T21:24:22.711859458Z`
+- Virtual Size: ~ 292.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.31`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.31.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc`
-  - `PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a`
+  - `PHP_VERSION=8.2.32`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.32.tar.xz.asc`
+  - `PHP_SHA256=e02aa173c236c12791696254d607da680e6d5516f8f5c2339642de7c4f944bd2`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.4.6`
   - `JOOMLA_SHA512=d4198b32a37cea890b24ab219b7d267e6a6df3373530d5e76eb7f4563868ef6caebefa7a2b9290065146ef733db2b0becc18d69f291730c767a25aa158cb9c16`
@@ -304,16 +304,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.20.0-r1 description:
+curl-8.21.0-r0 description:
 URL retrieval utility and library
 
-curl-8.20.0-r1 webpage:
+curl-8.21.0-r0 webpage:
 https://curl.se/
 
-curl-8.20.0-r1 installed size:
+curl-8.21.0-r0 installed size:
 273 KiB
 
-curl-8.20.0-r1 license:
+curl-8.21.0-r0 license:
 curl
 
 ```
@@ -746,16 +746,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42-r0 description:
+libblkid-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.42-r0 webpage:
+libblkid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42-r0 installed size:
+libblkid-2.42.1-r0 installed size:
 198 KiB
 
-libblkid-2.42-r0 license:
+libblkid-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -814,16 +814,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
@@ -848,16 +848,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -1052,16 +1052,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42-r0 description:
+libmount-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libmount-2.42-r0 webpage:
+libmount-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42-r0 installed size:
+libmount-2.42.1-r0 installed size:
 282 KiB
 
-libmount-2.42-r0 license:
+libmount-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1290,16 +1290,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -1630,16 +1630,16 @@ Apache-2.0
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
