@@ -1,10 +1,10 @@
-# `bonita:2026.1-u0`
+# `bonita:2026.2-u0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05778afa787814322865276a3954e772794c36d3d5f4ec79621e8ba49d9f3640`
-- Created: `2026-06-22T20:24:19.578597377Z`
-- Virtual Size: ~ 338.46 Mb  
+- Image ID: `sha256:460f44519483b4a98fd64bf1692a186ad4f434cb48726659260771f1629487a8`
+- Created: `2026-06-30T19:16:35.619674236Z`
+- Virtual Size: ~ 338.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh","/opt/files/startup.sh"]`
@@ -16,12 +16,12 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
-  - `BONITA_VERSION=11.0.0`
-  - `BRANDING_VERSION=2026.1-u0`
-  - `BONITA_SHA256=a3a0c80b975b51e247c630a204170beb675f4a83139ff2d1c533c1b7db17a25b`
-  - `ZIP_FILE=BonitaCommunity-2026.1-u0.zip`
+  - `BONITA_VERSION=11.1.0`
+  - `BRANDING_VERSION=2026.2-u0`
+  - `BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f`
+  - `ZIP_FILE=BonitaCommunity-2026.2-u0.zip`
   - `BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat`
-  - `BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.0.0/bundle-tomcat-11.0.0.zip`
+  - `BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.1.0/bundle-tomcat-11.1.0.zip`
   - `HTTP_API=false`
   - `HTTP_API_USERNAME=http-api`
   - `HTTP_API_PASSWORD=`
