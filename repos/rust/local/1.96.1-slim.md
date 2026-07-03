@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:071fe4ea7ecf00d2d0138316f1b5f840086ad36b18071203799beab418bb0bb8`
-- Created: `2026-06-24T02:12:21.740566016Z`
-- Virtual Size: ~ 912.96 Mb  
+- Image ID: `sha256:ef7774afa8fa5ea5aedfbfdfd3684d130a9c824508cfc0d373e7c3eaa8b546af`
+- Created: `2026-06-30T23:43:04.861963491Z`
+- Virtual Size: ~ 913.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.96.0`
+  - `RUST_VERSION=1.96.1`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
