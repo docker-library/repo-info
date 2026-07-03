@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:965187d5e100ea02f362fa67c18f521e2701ef83a618c9471b0d3f455a4c2fad`
-- Created: `2026-06-29T17:12:55.937344336Z`
-- Virtual Size: ~ 820.13 Mb  
+- Image ID: `sha256:29028223aa0fe597db9c580b828b5901aee8e01574bb48a90a2d9e1849e9e9fa`
+- Created: `2026-07-02T05:20:54.925154771Z`
+- Virtual Size: ~ 811.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.6.1`
 - Labels:
-  - `org.opencontainers.image.created=2026-06-10T03:30:57.931695+00:00`
+  - `org.opencontainers.image.created=2026-06-27T04:19:04.617438+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -436,13 +436,13 @@ Licenses: (parsed from: `/usr/share/doc/gnu-coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.1`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.2`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.1`
-- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.1`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.1`
+- `curl=8.18.0-1ubuntu2.2`
+- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.2`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -461,11 +461,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.1
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.1.debian.tar.xz' curl_8.18.0-1ubuntu2.1.debian.tar.xz 70832 SHA512:ea89b14816fc9f501b321e78660831dc085245db68d1d91272c0b4cb139144f8e624cb0e7d3459b3ae60552aa9e4479adafa5578683a84c824097f44e2660e7e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.1.dsc' curl_8.18.0-1ubuntu2.1.dsc 3267 SHA512:ced476debc3048bcbe8902461e41e8f49ddf6a21ff4dbed7d4e5936338305e956b5d21dffcac0be5ddc7587b496fa2ce65eb513d6084cd9b0930f025ffcf2929
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.2.debian.tar.xz' curl_8.18.0-1ubuntu2.2.debian.tar.xz 78044 SHA512:4d84d146a22c476daa6a77670da177226531e38a662d8bb217abd6e82cad5e8879f03f2ac7c1161b7ee95714df9a50665182213eddfab09d0714e529dbbf900b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.2.dsc' curl_8.18.0-1ubuntu2.2.dsc 3304 SHA512:60e1ae0dfafb152651ea425508fd6ab483cd4d405ba8063e843f32a3601b285c0665f54bcbf7f7b4b1fd00d9e8111c6470a494468e090ff9386ff87e780d1863
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
@@ -1489,10 +1489,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.12.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2' libgcrypt20_1.12.0.orig.tar.bz2 4438947 SHA512:9421461297bd79b14f94d1ab275c3ed93b5d433531915c5cc7a718a94d32978a46feccb7a33fe63a60780ff00d465fbe1fe9ada5c250cf6d10a525c246c63d1c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2.asc' libgcrypt20_1.12.0.orig.tar.bz2.asc 265 SHA512:9861910a5a955e37b5c90dbb01e1fcf35cd573801004d3cf762fc33180b9bfed1db229827395b54fdb1c499004daece4b6201ec83e9ca214fff79855b691e9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz' libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz 44572 SHA512:fb99d9db1a3bf027c8d8e8d4d6564b76ff1fae8bb11bc6dbe617ef59507fcda2cc68572d83eeb5e588f490b48fd3544337b4c248f3f71e0dbbc86e81c75ffe81
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.dsc' libgcrypt20_1.12.0-2ubuntu0.1.dsc 3077 SHA512:c69c80f6d39038032d1b8f540efcabef5465ae29672e7db176182b34426c2ab9fe6b3a8f57c4235d287cb7de731eb66fee559d7f56d6c96f0ab36275c7bba623
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2' libgcrypt20_1.12.0.orig.tar.bz2 4438947 SHA512:9421461297bd79b14f94d1ab275c3ed93b5d433531915c5cc7a718a94d32978a46feccb7a33fe63a60780ff00d465fbe1fe9ada5c250cf6d10a525c246c63d1c
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2.asc' libgcrypt20_1.12.0.orig.tar.bz2.asc 265 SHA512:9861910a5a955e37b5c90dbb01e1fcf35cd573801004d3cf762fc33180b9bfed1db229827395b54fdb1c499004daece4b6201ec83e9ca214fff79855b691e9a9
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz' libgcrypt20_1.12.0-2ubuntu0.1.debian.tar.xz 44572 SHA512:fb99d9db1a3bf027c8d8e8d4d6564b76ff1fae8bb11bc6dbe617ef59507fcda2cc68572d83eeb5e588f490b48fd3544337b4c248f3f71e0dbbc86e81c75ffe81
+'http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu0.1.dsc' libgcrypt20_1.12.0-2ubuntu0.1.dsc 3077 SHA512:c69c80f6d39038032d1b8f540efcabef5465ae29672e7db176182b34426c2ab9fe6b3a8f57c4235d287cb7de731eb66fee559d7f56d6c96f0ab36275c7bba623
 ```
 
 ### `dpkg` source package: `libgpg-error=1.58-2`
@@ -1735,11 +1735,11 @@ $ apt-get source -qq --print-uris libsepol=3.9-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.9-2.debian.tar.xz' libsepol_3.9-2.debian.tar.xz 21416 SHA256:f4f7f317fccf7dac9c72f1448a335edcf10ea7894f3492c475e76d404fcfb268
 ```
 
-### `dpkg` source package: `libssh2=1.11.1-1ubuntu0.26.04.1`
+### `dpkg` source package: `libssh2=1.11.1-1ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `libssh2-1t64:amd64=1.11.1-1ubuntu0.26.04.1`
+- `libssh2-1t64:amd64=1.11.1-1ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
@@ -1749,11 +1749,11 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1ubuntu0.26.04.1
+$ apt-get source -qq --print-uris libssh2=1.11.1-1ubuntu0.26.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA512:8703636fc28f0b12c8171712f3d605e0466a5bb9ba06e136c3203548fc3408ab07defd71dc801d7009a337e1e02fd60e8933a2a526d5ef0ce53153058d201233
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA512:83e600ddd676013932297c4f3d2cf2e65b5308f7700d818b34f30d760c7495180e6d8dae70579c8bea95ea2d7ccb12fc42641e545e11ec4b6630a0e6b350b282
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.1.debian.tar.xz' libssh2_1.11.1-1ubuntu0.26.04.1.debian.tar.xz 18000 SHA512:d0424931adf80089f274459397580bf3ee8ebe47af6a213c2e1d7e9d1c7feb8fa2d3798cb91e9091c967808b42ac82138422b7f26edac65de441a897d0710f6f
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.1.dsc' libssh2_1.11.1-1ubuntu0.26.04.1.dsc 2458 SHA512:3595da921cc0a21aee9ce8c235662a899ed056f21e4263f177dca2d34f6ae9e750d932e3e80ce100154a19ed19d2bc920d14e29d535e28799c591d2833cf83c9
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.2.debian.tar.xz' libssh2_1.11.1-1ubuntu0.26.04.2.debian.tar.xz 20568 SHA512:0ecf5d25a62bcdf7a65ba6b084aabdc63d0f73d7bd8b4c24ad426b4d8f0209f1b1df9518294cde854059d1327182bba8a8b910fa7161ee9d8132aecbdbe1f4d6
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.2.dsc' libssh2_1.11.1-1ubuntu0.26.04.2.dsc 2458 SHA512:0a9ba90d3b204ec90821b5d9aeb51e4c17b5545e2fb50ea9cd74654290d42f318fb642d4bdafb0bc861602b2b04c3edf73f34f7c261606564e1cfd33fdf03db8
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
@@ -2120,15 +2120,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.68.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz' nghttp2_1.68.0.orig.tar.gz 2638098 SHA512:5f9204463b7a97060ff8ca2edbb1576ec194cb8c545bd4b90a3a35d72eb2a1c39bb588f85f7e21bfb31396552e90a47c5c8ecada5273d49b7e81b23d08eb0fa5
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.68.0.orig.tar.gz.asc' nghttp2_1.68.0.orig.tar.gz.asc 833 SHA512:93eba11415c29789dac80874b2cb4f6341195f52d2b43ab9a00542bf7bf8c96d4ed776a0f91c8803998e6dea337a0635bc0a93835a5284e921867f6de1fa2581
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.68.0-2ubuntu0.1.debian.tar.xz' nghttp2_1.68.0-2ubuntu0.1.debian.tar.xz 15772 SHA512:b77ba834754e4b6b5a6ad2c34c58c7ecd22424876e5c0192fbe604891f37cce008f309664985542e0c915cabfa6a8c7623c9168920ff965326791adb2d3af171
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.68.0-2ubuntu0.1.dsc' nghttp2_1.68.0-2ubuntu0.1.dsc 2913 SHA512:2ffd15c9da6ebd10b90ee09d1c100efd622e2882a06cae5ad7b3cf4360aa12d28f3381ebbc517440f70245fa304f945690f98370575032fefb7100b5766719b1
-```
 
 ### `dpkg` source package: `npth=1.8-3build1`
 
@@ -2765,11 +2759,11 @@ $ apt-get source -qq --print-uris shadow=1:4.17.4-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4-2ubuntu3.dsc' shadow_4.17.4-2ubuntu3.dsc 2991 SHA256:5c7ebf6e7e9894c91df3474212a6e21bc5b6da82bbcef760bad495a0b5f48c87
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-9`
+### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-9`
+- `libsqlite3-0:amd64=3.46.1-9ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2780,11 +2774,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.dsc' sqlite3_3.46.1-9.dsc 2641 SHA256:9ebf8f5168120f5950abe53a6f995db5b7fbda0daefb85864c2bd7ff1d18a5dd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.debian.tar.xz' sqlite3_3.46.1-9.debian.tar.xz 35848 SHA256:df4c95da200c01221809dc60f2b60618025c3f8565f43e6a5b18a7e34b5d615c
+$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz 36180 SHA512:65fbf93fd72c530cc8d262d5a8707a39b8cb8d354baf0b494abd8ee2ca7d572d6c3da10657816fc84ac852ea3dcd61ed2e4d9b19249b03bd2d58c039fd6371af
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.dsc' sqlite3_3.46.1-9ubuntu0.1.dsc 2756 SHA512:4c269a90477b177a9e55473f402314e1a09bfd08671db72ba633986d347094f50ae9a43c6f4077d04888eb01765d53504a7c921c743a000fdda9c49e34ea6b63
 ```
 
 ### `dpkg` source package: `subversion=1.14.5-6build1`
