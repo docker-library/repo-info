@@ -27,21 +27,13 @@ Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris acl=2.3.2-3
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.2-3.dsc' acl_2.3.2-3.dsc 2642 SHA256:19a27264c715b57f954df7a753627d197c8ad839e4428d86455d82a29384b67b
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.2.orig.tar.xz' acl_2.3.2.orig.tar.xz 371680 SHA256:97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.2.orig.tar.xz.asc' acl_2.3.2.orig.tar.xz.asc 833 SHA256:184c6a903490885a096095db67b433a04542c6569f167cbe8115268c0f227273
-'http://deb.debian.org/debian/pool/main/a/acl/acl_2.3.2-3.debian.tar.xz' acl_2.3.2-3.debian.tar.xz 25016 SHA256:a3ae602c78e6c3465560e695242d0a649223ddc90de5dc4c83688106e42ba009
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/acl/2.3.2-3/
 
-- https://sources.debian.net/src/acl/2.3.2-3/ (for browsing the source)
-- https://sources.debian.net/src/acl/2.3.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/acl/2.3.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.3.1`
 
@@ -85,21 +77,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-4
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-4.dsc' attr_2.5.2-4.dsc 2614 SHA256:256e36ed6f60a39813a304a11617a3e573a11019db007a891bfeff7f2dad7175
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-4.debian.tar.xz' attr_2.5.2-4.debian.tar.xz 32372 SHA256:d49f176ceaceb3679141e9bb00a7595848e91b4c4db8682f81a828109ee6e2c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/attr/1:2.5.2-4/
 
-- https://sources.debian.net/src/attr/1:2.5.2-4/ (for browsing the source)
-- https://sources.debian.net/src/attr/1:2.5.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/attr/1:2.5.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `audit=1:4.1.2-1`
 
@@ -1355,20 +1339,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.3.0-5
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-5.dsc' rust-sequoia-sqv_1.3.0-5.dsc 2630 SHA256:dd766214353afb35bc610df910323263abd79da52e9ed7d003858e4db3c590ac
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0.orig.tar.gz' rust-sequoia-sqv_1.3.0.orig.tar.gz 140759 SHA256:8924571d26720b245292ad3c450e4061fcb24890461874790549747bffa35e60
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.3.0-5.debian.tar.xz' rust-sequoia-sqv_1.3.0-5.debian.tar.xz 3944 SHA256:ddff90296cb649bd9408e801f9f8cca28a36e63c7e2bab8db8c8716043152b3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-5/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-5/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.3.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.3.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-3`
 
