@@ -1,10 +1,10 @@
-# `xwiki:17`
+# `xwiki:16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77fb0a4cc43bac0ae1d7cb1ddcff899d5fd81858b779cb1ec290556cd97823e1`
-- Created: `2026-07-02T07:14:02.887806682Z`
-- Virtual Size: ~ 1.31 Gb  
+- Image ID: `sha256:d764b275d6f085ec4bf1cb75d81b891c1acb972f6a6b1854207257da6bd4ce2f`
+- Created: `2026-07-02T07:14:28.876347164Z`
+- Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,12 +19,12 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.56`
-  - `TOMCAT_SHA512=8fae99273615eb9d7fbe7ed80abda0ca27647a80f6fcfda98459c5b412d5ef555740b4c4d4af5afae2eb150f1f5bede21ab007ab8cc1f407f508d8908a81b7cc`
-  - `XWIKI_VERSION=17.10.9`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.9`
-  - `XWIKI_DOWNLOAD_SHA256=b786a85a043cc673e26d887fd0ef34d2fda2f4a9ef4a362360814868ccf41e1f`
+  - `TOMCAT_MAJOR=9`
+  - `TOMCAT_VERSION=9.0.119`
+  - `TOMCAT_SHA512=5215f1c672a9869f8405e440afcc84cc8a2f1e2dce795f5afbaa534d1bc9f2ca20f083661b1d893b9ef26b9b57aa048215c58b861d808130362ba1422a23649a`
+  - `XWIKI_VERSION=16.10.18`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.18`
+  - `XWIKI_DOWNLOAD_SHA256=53de2ca1583d8d4b17d858b2b81b615dd29b08dbac73eecd2d61deae7afee5bf`
   - `MYSQL_JDBC_VERSION=9.7.0`
   - `MYSQL_JDBC_SHA256=0353648eaa1c91e0f4020c959abf756bc866ffd583df22ae6b6f6e0cbd43eb44`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.7.0`
