@@ -1,10 +1,10 @@
-# `nextcloud:34.0.0-fpm-alpine`
+# `nextcloud:34.0.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d16505d017973941866784cb235647898a993a2374e8b81b1793888459281053`
-- Created: `2026-06-16T01:21:47.461978592Z`
-- Virtual Size: ~ 997.34 Mb  
+- Image ID: `sha256:462cabf112d66659b8a222bf2c4f697a67842c89508aad1d8c535b5632040b8b`
+- Created: `2026-06-30T23:57:21.992365175Z`
+- Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,15 +16,15 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc`
-  - `PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
+  - `PHP_VERSION=8.5.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
+  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=34.0.0`
+  - `NEXTCLOUD_VERSION=34.0.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -439,16 +439,16 @@ GPL-3.0-or-later
 ### `apk` package: `gdk-pixbuf`
 
 ```console
-gdk-pixbuf-2.44.6-r0 description:
+gdk-pixbuf-2.44.7-r0 description:
 GTK+ image loading library
 
-gdk-pixbuf-2.44.6-r0 webpage:
+gdk-pixbuf-2.44.7-r0 webpage:
 https://gitlab.gnome.org/GNOME/gdk-pixbuf
 
-gdk-pixbuf-2.44.6-r0 installed size:
+gdk-pixbuf-2.44.7-r0 installed size:
 214 KiB
 
-gdk-pixbuf-2.44.6-r0 license:
+gdk-pixbuf-2.44.7-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -490,16 +490,16 @@ LGPL-2.1-or-later
 ### `apk` package: `glycin-image-rs`
 
 ```console
-glycin-image-rs-2.1.0-r0 description:
+glycin-image-rs-2.1.5-r0 description:
 Sandboxed and extendable image decoding (glycin-image-rs loader)
 
-glycin-image-rs-2.1.0-r0 webpage:
+glycin-image-rs-2.1.5-r0 webpage:
 https://gitlab.gnome.org/GNOME/glycin
 
-glycin-image-rs-2.1.0-r0 installed size:
-4077 KiB
+glycin-image-rs-2.1.5-r0 installed size:
+4069 KiB
 
-glycin-image-rs-2.1.0-r0 license:
+glycin-image-rs-2.1.5-r0 license:
 MPL-2.0 OR LGPL-2.0-or-later
 
 ```
@@ -507,16 +507,16 @@ MPL-2.0 OR LGPL-2.0-or-later
 ### `apk` package: `glycin-svg`
 
 ```console
-glycin-svg-2.1.0-r0 description:
+glycin-svg-2.1.5-r0 description:
 Sandboxed and extendable image decoding (glycin-svg loader)
 
-glycin-svg-2.1.0-r0 webpage:
+glycin-svg-2.1.5-r0 webpage:
 https://gitlab.gnome.org/GNOME/glycin
 
-glycin-svg-2.1.0-r0 installed size:
+glycin-svg-2.1.5-r0 installed size:
 1338 KiB
 
-glycin-svg-2.1.0-r0 license:
+glycin-svg-2.1.5-r0 license:
 MPL-2.0 OR LGPL-2.0-or-later
 
 ```
@@ -881,16 +881,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42-r0 description:
+libblkid-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.42-r0 webpage:
+libblkid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42-r0 installed size:
+libblkid-2.42.1-r0 installed size:
 198 KiB
 
-libblkid-2.42-r0 license:
+libblkid-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1034,16 +1034,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -1085,16 +1085,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libglycin`
 
 ```console
-libglycin-2.1.0-r0 description:
+libglycin-2.1.5-r0 description:
 Sandboxed and extendable image decoding
 
-libglycin-2.1.0-r0 webpage:
+libglycin-2.1.5-r0 webpage:
 https://gitlab.gnome.org/GNOME/glycin
 
-libglycin-2.1.0-r0 installed size:
-2509 KiB
+libglycin-2.1.5-r0 installed size:
+2513 KiB
 
-libglycin-2.1.0-r0 license:
+libglycin-2.1.5-r0 license:
 MPL-2.0 OR LGPL-2.0-or-later
 
 ```
@@ -1340,16 +1340,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42-r0 description:
+libmount-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libmount-2.42-r0 webpage:
+libmount-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42-r0 installed size:
+libmount-2.42.1-r0 installed size:
 282 KiB
 
-libmount-2.42-r0 license:
+libmount-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1629,16 +1629,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -2037,16 +2037,16 @@ Apache-2.0
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
