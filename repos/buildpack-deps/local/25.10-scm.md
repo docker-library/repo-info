@@ -373,15 +373,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.14.1-2ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA512:22307bd41d5ded22e7e53e2412b3218763db9b7c32b1254df26172e6cf00d1650c66874dfc03037da89a5bd72ffbca1eeb83784be62a38d5779484376f3a53c7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA512:c9b7ad3407660e87fed16a4184a5d75f08815ab569dc8972115430fe750ca5a0a7c72b60e9bacc5ff50084256d1ebc80bb2141f664fa1e0fb239cb86b03f8819
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-2ubuntu1.3.debian.tar.xz' curl_8.14.1-2ubuntu1.3.debian.tar.xz 75356 SHA512:d2f23f3df9d57f4851014282e5c9712212b4484470504b0d867f45a14e1399a87964afbd8e13cc63039eba86653f848e6722cb4422ee2636d227e3c6fca5f148
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.14.1-2ubuntu1.3.dsc' curl_8.14.1-2ubuntu1.3.dsc 3267 SHA512:67b28f58af367528ad2930b54577cacdb8cd5f09b6550e864b8e13a7d4ef048923eb9ad3eee968a6ab51bb2e5b23f0996532ba4c870aa952e509983b39eabd98
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu1`
 
@@ -1495,15 +1489,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1ubuntu0.25.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA512:8703636fc28f0b12c8171712f3d605e0466a5bb9ba06e136c3203548fc3408ab07defd71dc801d7009a337e1e02fd60e8933a2a526d5ef0ce53153058d201233
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA512:83e600ddd676013932297c4f3d2cf2e65b5308f7700d818b34f30d760c7495180e6d8dae70579c8bea95ea2d7ccb12fc42641e545e11ec4b6630a0e6b350b282
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.25.10.1.debian.tar.xz' libssh2_1.11.1-1ubuntu0.25.10.1.debian.tar.xz 17940 SHA512:00cb4cf3923327ef2db8b97e252b5fbdecf3e3c90cbd20ce64656625eeaba76d958081e12c9f6caff3bcf3702eb46055c84dddbb160ebff72f7fc3209359f062
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.25.10.1.dsc' libssh2_1.11.1-1ubuntu0.25.10.1.dsc 2458 SHA512:b80cd677a30dc106a382b863fa757fc19070a1815704ef03fc2ff7cfc49a93e8e553f5c6e401ff39cf05429d1bebce574aab118b37dcb17ce6defbf5a325bae6
-```
 
 ### `dpkg` source package: `libtasn1-6=4.20.0-2ubuntu0.25.10.1`
 
@@ -1828,14 +1816,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.64.0-1.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA512:35f8230a0fa2825f0bc400d4852d8e8b484f659c67b00639ccd074a0029088f016e967db2f62b6b64af1f8ef684f5809a833e7f922e38b9405f7cc7756bcfb75
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1ubuntu1.1.debian.tar.xz' nghttp2_1.64.0-1.1ubuntu1.1.debian.tar.xz 43052 SHA512:799b37a5d1ac1b489f7f7e1ca24356e7273dbbb33271e59cadac69a7295ec2f7d52b425c60e92d66f0cb1dae2431d52b54632d45e5722cec1cc1b9327a0d8720
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.1ubuntu1.1.dsc' nghttp2_1.64.0-1.1ubuntu1.1.dsc 2674 SHA512:d0a9a519abac1593dd2ce59c1a820f683b2d5e9b1deab2052a764f106f1cc8ac1fba8588c4be4db30fa47335d2b8f762dd3a4a3d92a0e5a673bb9e062bd64172
-```
 
 ### `dpkg` source package: `npth=1.8-3`
 
