@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2f0d0e539e60fe4a24a583f3adf126478669c04ea1f5e485f404c6d7b3a17b2`
-- Created: `2026-06-19T01:11:12.911994937Z`
+- Image ID: `sha256:a7123688cd77d0de4d7e10025f48f707a07a72ab582102c89eb6634909839699`
+- Created: `2026-07-02T02:22:08.765766735Z`
 - Virtual Size: ~ 335.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.3+9`
 - Labels:
-  - `org.opencontainers.image.created=2026-06-10T03:30:57.931695+00:00`
+  - `org.opencontainers.image.created=2026-06-27T04:19:04.617438+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1411,11 +1411,11 @@ $ apt-get source -qq --print-uris pcre2=10.46-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
 ```
 
-### `dpkg` source package: `perl=5.40.1-7build1`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.40.1-7build1`
+- `perl-base=5.40.1-7ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1448,11 +1448,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-7build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7build1.debian.tar.xz' perl_5.40.1-7build1.debian.tar.xz 172948 SHA256:203fd30659ad1101e08b211154337b8e9f2bb7bc5784d3b1d7653dc1f4bcf637
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7build1.dsc' perl_5.40.1-7build1.dsc 2932 SHA256:695b27c16ca71ba567e6758428401426108b2e636cb3e4376bfe0bd111d2249a
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.1.debian.tar.xz' perl_5.40.1-7ubuntu0.1.debian.tar.xz 174800 SHA512:6e7c2f3a580366b9303161465fdb9ad2cbf58bc602ab9d86fd9aad454d3d3b1ff312912e3bf694b36d23309492bdc2013a3c6e092d6cae3c4accf0e6cafa8c8f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.1.dsc' perl_5.40.1-7ubuntu0.1.dsc 2893 SHA512:c4822a4d84cab4fe29b6b4c7e881fb985eea1cff87ae133848df58f1af07de8d4fdd6a86f0e3bcacc5631c46e650a38feabf03b06453c4368c3e89004d5e4f7d
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
@@ -1628,11 +1628,11 @@ $ apt-get source -qq --print-uris sysvinit=3.15-5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.15-5ubuntu1.dsc' sysvinit_3.15-5ubuntu1.dsc 2489 SHA256:48e604576ae74c4c66e7c23992f0a6a89cdaa86b475d3c64da985506a5ad5e88
 ```
 
-### `dpkg` source package: `tar=1.35+dfsg-4`
+### `dpkg` source package: `tar=1.35+dfsg-4ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.35+dfsg-4`
+- `tar=1.35+dfsg-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1649,10 +1649,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.dsc' tar_1.35+dfsg-4.dsc 2034 SHA256:493403c9708bdf8ccd516aea90d81058eeff058e7e459fcc46ffa78867554b39
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.debian.tar.xz' tar_1.35+dfsg-4.debian.tar.xz 21640 SHA256:9bb51d273e49502eab6d98228e8dd711c46a3418bf8428a2104148734810157e
+$ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.debian.tar.xz' tar_1.35+dfsg-4ubuntu0.1.debian.tar.xz 24548 SHA512:de695f5d0a1e0882e80b5c940a36e890fc97de716d4da025caf493935335f77529d0cf5d4f29d518d4177cac3f48b7d69c6f9c518d2542c074bb37b9597e81f0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.dsc' tar_1.35+dfsg-4ubuntu0.1.dsc 2124 SHA512:dea3fcd160f045ac9995e8e6f432da6396af783fa4418dac7225965fcbe450856d213eb9d88d4cdc83451636c25b16c744fcf9d20550206d2215074c701c9332
 ```
 
 ### `dpkg` source package: `tzdata=2026a-3ubuntu1`
