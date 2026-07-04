@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25f0432af52778b39b110d22c372e4f49f4ff7b77f2e30b8c24340d2350a648a`
-- Created: `2026-06-16T01:13:49.483601711Z`
-- Virtual Size: ~ 118.83 Mb  
+- Image ID: `sha256:c1bff9426851bf664be573d5dcb7595c070259dd360a2e94343e827d7f18e435`
+- Created: `2026-07-02T21:13:11.292333528Z`
+- Virtual Size: ~ 118.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc`
-  - `PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf`
+  - `PHP_VERSION=8.4.23`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.23.tar.xz.asc`
+  - `PHP_SHA256=1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72`
   - `ADMINER_VERSION=5.4.2`
   - `ADMINER_DOWNLOAD_SHA256=5b761efe7049bf586119256324fd417b49e5bb9243b40d9734fe86655e4402fd`
   - `ADMINER_SRC_DOWNLOAD_SHA256=a4106d61bc81575d0b45c762105eead064384643418cad197a3257677625bd10`
@@ -251,16 +251,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.20.0-r1 description:
+curl-8.21.0-r0 description:
 URL retrieval utility and library
 
-curl-8.20.0-r1 webpage:
+curl-8.21.0-r0 webpage:
 https://curl.se/
 
-curl-8.20.0-r1 installed size:
+curl-8.21.0-r0 installed size:
 273 KiB
 
-curl-8.20.0-r1 license:
+curl-8.21.0-r0 license:
 curl
 
 ```
@@ -336,16 +336,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
