@@ -8318,14 +8318,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.debian.tar.xz' tar_1.35+dfsg-4ubuntu0.1.debian.tar.xz 24548 SHA512:de695f5d0a1e0882e80b5c940a36e890fc97de716d4da025caf493935335f77529d0cf5d4f29d518d4177cac3f48b7d69c6f9c518d2542c074bb37b9597e81f0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.dsc' tar_1.35+dfsg-4ubuntu0.1.dsc 2124 SHA512:dea3fcd160f045ac9995e8e6f432da6396af783fa4418dac7225965fcbe450856d213eb9d88d4cdc83451636c25b16c744fcf9d20550206d2215074c701c9332
-```
 
 ### `dpkg` source package: `tiff=4.7.0-3ubuntu4`
 
