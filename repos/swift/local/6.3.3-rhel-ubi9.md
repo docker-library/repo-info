@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7589880ba958fc4cfe20131dc0184057fb3950cc2005c85c0c3f6938c7c1f9bb`
-- Created: `2026-06-30T18:57:44.422165686Z`
-- Virtual Size: ~ 4.02 Gb  
+- Image ID: `sha256:1028de153d4c73a07c3c384c173b91134c20af9623ec0a0dec161df2337b2733`
+- Created: `2026-07-03T00:30:40.037473512Z`
+- Virtual Size: ~ 4.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-25T05:38:13Z`
+  - `build-date=2026-06-30T17:49:35Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-06-25T05:38:13Z`
-  - `org.opencontainers.image.revision=5f0052ae5ad6e692325f20b47f9a15830ba43ef2`
-  - `release=1782365825`
+  - `org.opencontainers.image.created=2026-06-30T17:49:35Z`
+  - `org.opencontainers.image.revision=f55fcf2a35c9fe343a15bb3cfbc2f2ee52a0d6a1`
+  - `release=1782841664`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=5f0052ae5ad6e692325f20b47f9a15830ba43ef2`
+  - `vcs-ref=f55fcf2a35c9fe343a15bb3cfbc2f2ee52a0d6a1`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -579,17 +579,6 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url glibc-headers-2.34-272.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
-```
-
-### `rpm` package: `glibc-langpack-en-2.34-272.el9_8.x86_64`
-
-Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
-
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-langpack-en-2.34-272.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
 ```
 
