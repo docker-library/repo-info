@@ -1,19 +1,19 @@
-# `haproxy:3.4.1-alpine`
+# `haproxy:3.4.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:103f3270314d8eb96ec5da5cfecd1090ef1770cbad88db07696ef4ad1cfc2574`
-- Created: `2026-06-25T23:27:01.59586595Z`
-- Virtual Size: ~ 43.45 Mb  
+- Image ID: `sha256:db11bf71ac7da0781a7b10719f96ee56e9a36a978d5cea674369e17d94f05cc9`
+- Created: `2026-07-06T20:11:34.979357357Z`
+- Virtual Size: ~ 43.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=3.4.1`
-  - `HAPROXY_URL=https://www.haproxy.org/download/3.4/src/haproxy-3.4.1.tar.gz`
-  - `HAPROXY_SHA256=2e62c4ce4fd77d3bc7cf17e586431663454456a078b7c8465b8f0125b5bc22f8`
+  - `HAPROXY_VERSION=3.4.2`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.4/src/haproxy-3.4.2.tar.gz`
+  - `HAPROXY_SHA256=b1330dbb0d6e6bc4a72c4708a6a9e585579cd1156dfe5763c26305105bc12907`
 
 ## `apk` (`.apk`-based packages)
 
@@ -360,16 +360,16 @@ GPL-2.0-only
 ### `apk` package: `socat`
 
 ```console
-socat-1.8.1.2-r0 description:
+socat-1.8.1.3-r0 description:
 Multipurpose relay for binary protocols
 
-socat-1.8.1.2-r0 webpage:
+socat-1.8.1.3-r0 webpage:
 http://www.dest-unreach.org/socat/
 
-socat-1.8.1.2-r0 installed size:
+socat-1.8.1.3-r0 installed size:
 532 KiB
 
-socat-1.8.1.2-r0 license:
+socat-1.8.1.3-r0 license:
 GPL-2.0-only WITH OpenSSL-Exception
 
 ```
