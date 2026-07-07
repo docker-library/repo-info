@@ -1,10 +1,10 @@
-# `composer:2.10.1`
+# `composer:2.10.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32581849b66b4dc6e4fe7f06c57196f3eb4693ca72c91f91720a411db8a6bb70`
-- Created: `2026-06-16T01:16:41.858518641Z`
-- Virtual Size: ~ 224.37 Mb  
+- Image ID: `sha256:a98035f19bdb947ec6279321f7565e6c44613c14a339c612a58fd730494776ac`
+- Created: `2026-07-06T18:11:00.613020905Z`
+- Virtual Size: ~ 224.6 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,29 +17,29 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
-  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
+  - `PHP_VERSION=8.5.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.8.tar.xz.asc`
+  - `PHP_SHA256=58910198d19e873048fe87cdfe16bc790025417ede3d1651bfa1c4b533d573f2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.10.1`
+  - `COMPOSER_VERSION=2.10.2`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `7zip`
 
 ```console
-7zip-26.00-r0 description:
+7zip-26.01-r0 description:
 File archiver with a high compression ratio
 
-7zip-26.00-r0 webpage:
+7zip-26.01-r0 webpage:
 https://7-zip.org/
 
-7zip-26.00-r0 installed size:
-1742 KiB
+7zip-26.01-r0 installed size:
+1746 KiB
 
-7zip-26.00-r0 license:
+7zip-26.01-r0 license:
 LGPL-2.0-only
 
 ```
@@ -387,16 +387,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.20.0-r1 description:
+curl-8.21.0-r0 description:
 URL retrieval utility and library
 
-curl-8.20.0-r1 webpage:
+curl-8.21.0-r0 webpage:
 https://curl.se/
 
-curl-8.20.0-r1 installed size:
+curl-8.21.0-r0 installed size:
 273 KiB
 
-curl-8.20.0-r1 license:
+curl-8.21.0-r0 license:
 curl
 
 ```
@@ -540,16 +540,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
@@ -574,16 +574,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -778,16 +778,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
