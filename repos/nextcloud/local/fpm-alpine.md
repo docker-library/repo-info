@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:462cabf112d66659b8a222bf2c4f697a67842c89508aad1d8c535b5632040b8b`
-- Created: `2026-06-30T23:57:21.992365175Z`
+- Image ID: `sha256:d011b9391cbd7e227e56eb7283e79874364e35b1b1b7c8d88af25b942212e4d5`
+- Created: `2026-07-06T17:14:58.44243568Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
-  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
+  - `PHP_VERSION=8.5.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.8.tar.xz.asc`
+  - `PHP_SHA256=58910198d19e873048fe87cdfe16bc790025417ede3d1651bfa1c4b533d573f2`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -320,16 +320,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.20.0-r1 description:
+curl-8.21.0-r0 description:
 URL retrieval utility and library
 
-curl-8.20.0-r1 webpage:
+curl-8.21.0-r0 webpage:
 https://curl.se/
 
-curl-8.20.0-r1 installed size:
+curl-8.21.0-r0 installed size:
 273 KiB
 
-curl-8.20.0-r1 license:
+curl-8.21.0-r0 license:
 curl
 
 ```
@@ -439,16 +439,16 @@ GPL-3.0-or-later
 ### `apk` package: `gdk-pixbuf`
 
 ```console
-gdk-pixbuf-2.44.7-r0 description:
+gdk-pixbuf-2.44.7-r1 description:
 GTK+ image loading library
 
-gdk-pixbuf-2.44.7-r0 webpage:
+gdk-pixbuf-2.44.7-r1 webpage:
 https://gitlab.gnome.org/GNOME/gdk-pixbuf
 
-gdk-pixbuf-2.44.7-r0 installed size:
-214 KiB
+gdk-pixbuf-2.44.7-r1 installed size:
+247 KiB
 
-gdk-pixbuf-2.44.7-r0 license:
+gdk-pixbuf-2.44.7-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -966,16 +966,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
