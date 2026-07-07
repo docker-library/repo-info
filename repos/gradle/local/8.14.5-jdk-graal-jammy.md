@@ -1041,15 +1041,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.10-4ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA256:c91f74430bf7bc20402e1f657d0b252cb80aa66ba333a25704512af346633c68
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz.asc' gzip_1.10.orig.tar.gz.asc 833 SHA256:b5e4942cca901ca37772d3ea060c4af6a1908719cec5327fbe033f9d30933f1b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-4ubuntu4.1.debian.tar.xz' gzip_1.10-4ubuntu4.1.debian.tar.xz 39520 SHA256:35a9967c2ab73e620fffad4cca6f65183dc83024aae4866cea92a1f26c8b6232
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-4ubuntu4.1.dsc' gzip_1.10-4ubuntu4.1.dsc 2277 SHA256:ecdfb40e6271b4895e9b108be68d47d9b164903cdae7b8400478e1047adfd34e
-```
 
 ### `dpkg` source package: `hostname=3.23ubuntu2`
 
@@ -1956,15 +1950,9 @@ Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.3-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3.orig.tar.gz' ncurses_6.3.orig.tar.gz 3583550 SHA256:97fc51ac2b085d4cde31ef4d2c3122c21abc217e9090a43a30fc5ec21684e059
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3.orig.tar.gz.asc' ncurses_6.3.orig.tar.gz.asc 729 SHA256:37b9e80c11fa02fbd8caf42ab9573427f54f2c7212eb4aeec9f455b5d79dee14
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3-2ubuntu0.1.debian.tar.xz' ncurses_6.3-2ubuntu0.1.debian.tar.xz 56080 SHA256:ca221fdf0d4a987b9719985a8c7a6e603a7ef8f855cdfaefe73b56c08130064a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3-2ubuntu0.1.dsc' ncurses_6.3-2ubuntu0.1.dsc 3955 SHA256:ece6823e39b4c104937c90a26a54cef143b22916cee062d842a7356fa3bbe324
-```
 
 ### `dpkg` source package: `nettle=3.7.3-1build2`
 
@@ -2378,14 +2366,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.15
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA256:afb74bf19130e7a47d10312c8f5e784f24e0527981eab68e20546cfb865830b8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.debian.tar.xz' python3.10_3.10.12-1~22.04.15.debian.tar.xz 269472 SHA256:8b0a4f3e9c480217250168121072957fc66bc659ec17ddc1e18c01a6cac95b6e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.15.dsc' python3.10_3.10.12-1~22.04.15.dsc 3110 SHA256:87728197b1f0166458be06ae373c2c806e594792de6a0724a1fc19091006b44e
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -2667,14 +2650,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA512:ec5553c53c4a5f523f872a8095f699c17bf41400fbe2f0f8b45291ccbaf9ac51dea8445c81bd95697f8853c95dcad3250071d23dbbcab857a428ee92e647bde9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.3.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.3.debian.tar.xz 23328 SHA512:c029197cc3c5e594801338850a197242102ceceb9cbc2aa77501496e934798d81af9b9db48f01bc000c33e88be63c864a3a9c7bb5a8e267c997456d09ef5565c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.3.dsc' tar_1.34+dfsg-1ubuntu0.1.22.04.3.dsc 2137 SHA512:d3aabc8a2133609268068cd45ed09bcaac16f896b5b27bead08eb078847b90deb7668064b01d0ddec893c4fc2b2bc80cf98657965db5f5c7d96979b335947f78
-```
 
 ### `dpkg` source package: `tzdata=2026a-0ubuntu0.22.04.1`
 

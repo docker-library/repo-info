@@ -1138,14 +1138,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.debian.tar.xz' gzip_1.12-1ubuntu3.1.debian.tar.xz 21180 SHA256:1d0fe69725211bb5d9fc9287ec04493b964e6ff8d7f2d1ae8495d976d5cf9ee0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.dsc' gzip_1.12-1ubuntu3.1.dsc 2042 SHA256:62dd2256518d009efdb82d03e1f11ab4239d619bce546b210561abccc4d2a23d
-```
 
 ### `dpkg` source package: `hostname=3.23+nmu2ubuntu2`
 
@@ -2536,14 +2531,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA256:56bfef1fdfc1221ce6720e43a661e3eb41785dd914ce99698d8c7896af4bdaa1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.debian.tar.xz' python3.12_3.12.3-1ubuntu0.13.debian.tar.xz 271684 SHA256:c29d3713afdaadbeb910f01df96877a81c3deb114876be42a47ce8e7172a2b91
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.dsc' python3.12_3.12.3-1ubuntu0.13.dsc 3879 SHA256:c9dac8ff007c2b12b917cae256b2477cd1662de3fd3d02171ba3ebe98bbd7b30
-```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
@@ -2854,13 +2844,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3ubuntu0.1.tar.gz' tar_1.35+dfsg-3ubuntu0.1.tar.gz 4368882 SHA512:59070f4edb013a780fc9d1c7b0605e84a11925b37aa547d5ac40857bdf99829220f1c30afefa8cb3456c9b7e5437a6dc8c888332e7b876d5f4e6b6915091b3a1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3ubuntu0.1.dsc' tar_1.35+dfsg-3ubuntu0.1.dsc 1857 SHA512:2f57cb60d3ae566557fba74347a173f26dd1f2df4cff530dbef075b3b9492286d6d8b23beeff08c939cbd061f0f49c3e25a7b03772d6f502571dfb17042fa3c4
-```
 
 ### `dpkg` source package: `tzdata=2026a-0ubuntu0.24.04.1`
 
