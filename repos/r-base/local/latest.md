@@ -1647,20 +1647,13 @@ Licenses: (parsed from: `/usr/share/doc/libjansson4/copyright`)
 - `ISC-like-dmgfp`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jansson=2.15.0-1
-'http://deb.debian.org/debian/pool/main/j/jansson/jansson_2.15.0-1.dsc' jansson_2.15.0-1.dsc 2070 SHA256:29514d4199c8719f87767a8e04ac5f3dd4f8e99482d12be7ebaacc4314cdf9e6
-'http://deb.debian.org/debian/pool/main/j/jansson/jansson_2.15.0.orig.tar.gz' jansson_2.15.0.orig.tar.gz 194525 SHA256:73ac12bbc62ff536e40c7a3e15ed007993c5ca4d23897de23f1906f891b5a4bb
-'http://deb.debian.org/debian/pool/main/j/jansson/jansson_2.15.0-1.debian.tar.xz' jansson_2.15.0-1.debian.tar.xz 6684 SHA256:c1b87e9396a1883cfa951aa11fcbb08ef6c5bd94d07d54dd529a24f4a07593cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/jansson/2.15.0-1/
 
-- https://sources.debian.net/src/jansson/2.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/jansson/2.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jansson/2.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-6.1`
 
@@ -4317,20 +4310,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.1-3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-3.dsc' tiff_4.7.1-3.dsc 2262 SHA256:46d753c708645b5df240371ab877f5af3169f6df0a395fd8e8a17fbad19875ca
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1.orig.tar.bz2' tiff_4.7.1.orig.tar.bz2 2200037 SHA256:7bbeb6ece519e302dc68bb820ae17b9cf071baf30f70a4a6b98e9f72e6d8c1eb
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-3.debian.tar.xz' tiff_4.7.1-3.debian.tar.xz 28052 SHA256:4619215f664cd3f08604e649da222d89d7f5a7ffa83c8b978dbe2d25bb7da1e1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.7.1-3/
 
-- https://sources.debian.net/src/tiff/4.7.1-3/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.18-1`
 
