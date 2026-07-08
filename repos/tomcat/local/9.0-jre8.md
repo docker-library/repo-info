@@ -1,10 +1,10 @@
-# `tomcat:9.0.119-jre8-temurin-noble`
+# `tomcat:9.0.120-jre8-temurin-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:631dad53792064cc526c6e1f362344f990428a532aed371db3dbc737e94dd5b9`
-- Created: `2026-07-02T06:28:33.558225176Z`
-- Virtual Size: ~ 253.88 Mb  
+- Image ID: `sha256:34b5c0ef8d9446e1c8b8e14006b6490654fe7868f7a819afb701ce4fbcdbe342`
+- Created: `2026-07-07T18:11:01.147103065Z`
+- Virtual Size: ~ 253.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.119`
-  - `TOMCAT_SHA512=5215f1c672a9869f8405e440afcc84cc8a2f1e2dce795f5afbaa534d1bc9f2ca20f083661b1d893b9ef26b9b57aa048215c58b861d808130362ba1422a23649a`
+  - `TOMCAT_VERSION=9.0.120`
+  - `TOMCAT_SHA512=07eb6d9639c3e69af81171a16ccff1c19b7fd5b2e87e3646851f0a3f42a4ce3c1bf128fbe40fc978a08935ba4f0400ef3b43ded3e470b9aaf23b97a9e1fa0858`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -897,14 +897,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.debian.tar.xz' gzip_1.12-1ubuntu3.1.debian.tar.xz 21180 SHA256:1d0fe69725211bb5d9fc9287ec04493b964e6ff8d7f2d1ae8495d976d5cf9ee0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.dsc' gzip_1.12-1ubuntu3.1.dsc 2042 SHA256:62dd2256518d009efdb82d03e1f11ab4239d619bce546b210561abccc4d2a23d
-```
 
 ### `dpkg` source package: `hostname=3.23+nmu2ubuntu2`
 
