@@ -1,10 +1,10 @@
-# `couchbase:8.0.1`
+# `couchbase:8.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8671dd762acc0ab4b2bdab19850e5d5bd59c1cb35fa2b657da441f3b3a731b0`
-- Created: `2026-07-02T02:13:28.111980804Z`
-- Virtual Size: ~ 2.05 Gb  
+- Image ID: `sha256:c4ae1a556da6300be1649ea8569fa677c2fae12aa02d6b1f6c9e57716de7ac80`
+- Created: `2026-07-08T16:52:53.743367598Z`
+- Virtual Size: ~ 2.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -322,11 +322,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `couchbase-server=8.0.1-4792-1`
+### `dpkg` source package: `couchbase-server=8.0.2-5503-1`
 
 Binary Packages:
 
-- `couchbase-server=8.0.1-4792-1`
+- `couchbase-server=8.0.2-5503-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -933,14 +933,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.debian.tar.xz' gzip_1.12-1ubuntu3.1.debian.tar.xz 21180 SHA256:1d0fe69725211bb5d9fc9287ec04493b964e6ff8d7f2d1ae8495d976d5cf9ee0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.1.dsc' gzip_1.12-1ubuntu3.1.dsc 2042 SHA256:62dd2256518d009efdb82d03e1f11ab4239d619bce546b210561abccc4d2a23d
-```
 
 ### `dpkg` source package: `hostname=3.23+nmu2ubuntu2`
 
@@ -2105,14 +2100,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA256:79676920120c7f45f1605d92047174fca9cc75a39d9df91c9740be98fb8cc542
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.13`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.15`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.13`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.13`
-- `python3.12=3.12.3-1ubuntu0.13`
-- `python3.12-minimal=3.12.3-1ubuntu0.13`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.15`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.15`
+- `python3.12=3.12.3-1ubuntu0.15`
+- `python3.12-minimal=3.12.3-1ubuntu0.15`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2137,10 +2132,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA256:56bfef1fdfc1221ce6720e43a661e3eb41785dd914ce99698d8c7896af4bdaa1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.debian.tar.xz' python3.12_3.12.3-1ubuntu0.13.debian.tar.xz 271684 SHA256:c29d3713afdaadbeb910f01df96877a81c3deb114876be42a47ce8e7172a2b91
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.dsc' python3.12_3.12.3-1ubuntu0.13.dsc 3879 SHA256:c9dac8ff007c2b12b917cae256b2477cd1662de3fd3d02171ba3ebe98bbd7b30
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.15
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.debian.tar.xz' python3.12_3.12.3-1ubuntu0.15.debian.tar.xz 299248 SHA512:cc765bbb9c7487599b37697c637e8b806bcaec44a42ad038aa75f92011158ae8fb7da59ed58b31b504917660d9df30dc77e318ef832eccd898ed3abd9f309936
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.dsc' python3.12_3.12.3-1ubuntu0.15.dsc 3879 SHA512:bcf9b36359ec28d3ff0c75d9b47fc60d3de150ce10d8451e84b313edeb67c459d599ff0598c327021e1a527ced7ac36c0fba343fec89d85a02ff7832dd744758
 ```
 
 ### `dpkg` source package: `readline=8.2-4build1`
@@ -2393,8 +2388,9 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 Binary Packages:
 
 - `tzdata=2026a-0ubuntu0.24.04.1`
+- `tzdata-legacy=2026a-0ubuntu0.24.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
+Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`, `/usr/share/doc/tzdata-legacy/copyright`)
 
 - `ICU`
 - `public-domain`
