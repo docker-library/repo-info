@@ -1,19 +1,19 @@
-# `memcached:1.6.42-alpine`
+# `memcached:1.6.44-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:19d284e7a8445d8dc70e97c673a8a0175d18f39d5336ccbdfa8b240c0ef3ce4d`
-- Created: `2026-06-16T00:17:54.423478808Z`
-- Virtual Size: ~ 12.96 Mb  
+- Image ID: `sha256:8d0d5953b259ea47611c590bf8690878ba0fc8a6d554206f2386326acdee5f68`
+- Created: `2026-07-07T17:54:07.703606792Z`
+- Virtual Size: ~ 12.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.42`
-  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.42.tar.gz`
-  - `MEMCACHED_SHA1=de453f58745238c70091fe243549c406aabdc3c5`
+  - `MEMCACHED_VERSION=1.6.44`
+  - `MEMCACHED_URL=https://memcached.org/files/memcached-1.6.44.tar.gz`
+  - `MEMCACHED_SHA1=35ce68d69d143fa6fc9f26b039a677772d62d1c3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -207,16 +207,16 @@ Apache-2.0
 ### `apk` package: `libevent`
 
 ```console
-libevent-2.1.12-r9 description:
+libevent-2.1.13-r0 description:
 An event notification library
 
-libevent-2.1.12-r9 webpage:
+libevent-2.1.13-r0 webpage:
 https://libevent.org/
 
-libevent-2.1.12-r9 installed size:
+libevent-2.1.13-r0 installed size:
 641 KiB
 
-libevent-2.1.12-r9 license:
+libevent-2.1.13-r0 license:
 BSD-3-Clause
 
 ```
