@@ -1,7 +1,7 @@
 ## `golang:tip`
 
 ```console
-$ docker pull golang@sha256:e90b6293be52ad8bcce78ffa460b945a43830737e9a459de8c2aa17b4d07d65d
+$ docker pull golang@sha256:7db2719afc6c0389115ec9e0457a4d572d4d0011b098f13de298858c64f6611d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -469,7 +469,7 @@ $ docker pull golang@sha256:76196468797847dcdb7a903e7e2ac39bbdddd79ea641c6e6a76b
 ### `golang:tip` - linux; riscv64
 
 ```console
-$ docker pull golang@sha256:4704fbd87a9ebe46dfbfa3b422b5af81b612b94586142e6bd426d10cf7051426
+$ docker pull golang@sha256:8adae28afa016387095e0bbdd56cfff12bd5b006cecad55164d03c12556d215c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -534,25 +534,25 @@ WORKDIR /go
 ### `golang:tip` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:5b3dae20ad464825c6c06791bb01107a7ddf8b0a183f8691f7de64219b75f571
+$ docker pull golang@sha256:ac9193e5a19a409712a1bbd99a6e09c0b59e352526a8edfb9e2ce5755b9fee59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.9 MB (10884654 bytes)**  
+-	Total Size: **10.9 MB (10884655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82f17d90b9ea2f5aed98dbd8ec966b53496dcf0c1c55e94048eca0efea82d360`
+-	Image ID: `sha256:aaef2998dbb425ee14d55c88fef9df59affabda3c957f631a128cf84bfc62b5a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6cb5d316ec57c2fd3b5fd80ef2ea93e63259ed1a8ec4ef48124c0fbe2ebadfb8`  
-		Last Modified: Tue, 07 Jul 2026 02:35:46 GMT  
+	-	`sha256:17c78918b0679818a42cdd443a8c56eb4a8e2ff980b77c0a7ad12e6828f43aee`  
+		Last Modified: Thu, 09 Jul 2026 06:52:07 GMT  
 		Size: 10.9 MB (10855628 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a6be49953dfd2bdfde66d76858e874f007e243045256c2664cfdaa18fedd53cd`  
-		Last Modified: Tue, 07 Jul 2026 02:35:43 GMT  
-		Size: 29.0 KB (29026 bytes)  
+	-	`sha256:07a161222b3754ac577fe8b9f90b378e4028f4b4f12166e17a0a0bc67b6d7080`  
+		Last Modified: Thu, 09 Jul 2026 06:52:05 GMT  
+		Size: 29.0 KB (29027 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip` - linux; s390x
