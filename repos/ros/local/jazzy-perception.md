@@ -4281,9 +4281,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.debian.tar.xz' libheif_1.17.6-1ubuntu4.4.debian.tar.xz 13696 SHA512:b66d1308611f87ae13e26885f43bdb64fc31f40964d96eb3ddc4aad950364f1263325567e0ccaeea997c39a43b2f55af622d8be3e637200b6d9255c69a45bae7
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.dsc' libheif_1.17.6-1ubuntu4.4.dsc 3561 SHA512:1ea333bb29ce1e134489214d8a7b69845b92e68ee7c90aa87714b666afcaf31a7418cb4ad5688f3b1140156ab2e63e70dce2dd58a69357c14297094590058452
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.debian.tar.xz' libheif_1.17.6-1ubuntu4.4.debian.tar.xz 13696 SHA512:b66d1308611f87ae13e26885f43bdb64fc31f40964d96eb3ddc4aad950364f1263325567e0ccaeea997c39a43b2f55af622d8be3e637200b6d9255c69a45bae7
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.dsc' libheif_1.17.6-1ubuntu4.4.dsc 3561 SHA512:1ea333bb29ce1e134489214d8a7b69845b92e68ee7c90aa87714b666afcaf31a7418cb4ad5688f3b1140156ab2e63e70dce2dd58a69357c14297094590058452
 ```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build3`
@@ -4344,14 +4344,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.25.0-1ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0.orig.tar.gz' libinput_1.25.0.orig.tar.gz 1016846 SHA512:17c668d04e3ff7d3e99519f7e7fe37377bd25e90ff36acc8c3f06f6de31265514780a0823b6fbd5712272a6b6f759bf768cb35b4f68c29828c1964899e9ee752
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.4.debian.tar.xz' libinput_1.25.0-1ubuntu3.4.debian.tar.xz 14156 SHA512:6b3b0966479827dc3070b46839e7925362c2a52e01a62b85891b4beef8588e738089e49f016db00282cd5db3f17c64ca6b0f6cc4be805ab1fbac0545e8fcf7b6
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.4.dsc' libinput_1.25.0-1ubuntu3.4.dsc 2590 SHA512:902d941894efffe0306e9009abb34e5f04e5681b8fe14bddac402610a9d40f823c0195ac876e24175eecc4e24590ac69e2cdfeca118f36b1610899331cab3fe5
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-2ubuntu2`
 
@@ -13466,15 +13461,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz 188416 SHA256:31c2e4fa4da6dd0579e2b6172d3e30123e909d37742be6eda71b2819d0e78ad8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.dsc' tzdata_2026a-0ubuntu0.24.04.1.dsc 2728 SHA256:e6c10889a33dba55bcf422dc2fc4d2635d29b95eb366fd88e2017c0ba1503f88
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
