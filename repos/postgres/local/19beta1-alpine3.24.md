@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dbeee29dcbb05d4fc3f34dae87bea98dfd228871ccc83dd91f72feac6c7ed9ca`
-- Created: `2026-06-16T23:00:02.567658761Z`
-- Virtual Size: ~ 306.35 Mb  
+- Image ID: `sha256:f159cc2aac778d1919893438b7db4cf738d165c074fdc955bf732398280e17de`
+- Created: `2026-07-07T17:46:25.57284884Z`
+- Virtual Size: ~ 306.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -364,16 +364,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.21.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.21.0-r0 installed size:
+709 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.21.0-r0 license:
 curl
 
 ```
@@ -585,16 +585,16 @@ LGPL-2.1-or-later OR MIT
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```

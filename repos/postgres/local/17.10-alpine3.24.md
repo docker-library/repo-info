@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:126edd17cd7e5566fd560e85e256fcb8e58a6db96805a96a33127c535d09f2d8`
-- Created: `2026-06-16T23:00:42.611136216Z`
+- Image ID: `sha256:93aa428db0aeeb71d24dcad1491bef6e1396a4255697e4bfc4c725bfeb981b74`
+- Created: `2026-07-07T17:46:32.727573082Z`
 - Virtual Size: ~ 297.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -466,16 +466,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
