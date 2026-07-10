@@ -2500,15 +2500,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.25.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.25.10.1.debian.tar.xz' tzdata_2026a-0ubuntu0.25.10.1.debian.tar.xz 188752 SHA256:2fff731b05273c6712a9f42e914ba0d23e6fa38f99ea4fa86264f6da5627bc4f
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.25.10.1.dsc' tzdata_2026a-0ubuntu0.25.10.1.dsc 2712 SHA256:de7d5a7bfc7af8e7df98e5723e58ab2a2855e6d401cdecaa35f9e636d2133a47
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 

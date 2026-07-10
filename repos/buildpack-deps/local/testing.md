@@ -4514,21 +4514,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.7.0-6
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-6.dsc' pam_1.7.0-6.dsc 2282 SHA256:373de3b541037f562ec3004663302485500e48853f9ca99d70e7597da85d7556
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz' pam_1.7.0.orig.tar.xz 507824 SHA256:57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz.asc' pam_1.7.0.orig.tar.xz.asc 801 SHA256:7a8ea18ec7d9dd1f8cbf9055c32128cbca8241aa63e9fea44d56ce6f0e15e441
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-6.debian.tar.xz' pam_1.7.0-6.debian.tar.xz 145468 SHA256:fffd119180e205f2892c6f4fdb20837ed13204480bc00b10df1ceca20f91c1ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.7.0-6/
 
-- https://sources.debian.net/src/pam/1.7.0-6/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.7.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.7.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.57.1-2`
 
@@ -5388,20 +5380,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.1-3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-3.dsc' tiff_4.7.1-3.dsc 2262 SHA256:46d753c708645b5df240371ab877f5af3169f6df0a395fd8e8a17fbad19875ca
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1.orig.tar.bz2' tiff_4.7.1.orig.tar.bz2 2200037 SHA256:7bbeb6ece519e302dc68bb820ae17b9cf071baf30f70a4a6b98e9f72e6d8c1eb
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-3.debian.tar.xz' tiff_4.7.1-3.debian.tar.xz 28052 SHA256:4619215f664cd3f08604e649da222d89d7f5a7ffa83c8b978dbe2d25bb7da1e1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.7.1-3/
 
-- https://sources.debian.net/src/tiff/4.7.1-3/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026b-1`
 

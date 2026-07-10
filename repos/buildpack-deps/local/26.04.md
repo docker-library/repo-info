@@ -555,15 +555,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.2.debian.tar.xz' curl_8.18.0-1ubuntu2.2.debian.tar.xz 78044 SHA512:4d84d146a22c476daa6a77670da177226531e38a662d8bb217abd6e82cad5e8879f03f2ac7c1161b7ee95714df9a50665182213eddfab09d0714e529dbbf900b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.2.dsc' curl_8.18.0-1ubuntu2.2.dsc 3304 SHA512:60e1ae0dfafb152651ea425508fd6ab483cd4d405ba8063e843f32a3601b285c0665f54bcbf7f7b4b1fd00d9e8111c6470a494468e090ff9386ff87e780d1863
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -2218,14 +2212,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.2.debian.tar.xz' libheif_1.21.2-3ubuntu0.2.debian.tar.xz 18912 SHA512:3d5ad673b04cd643bbac78b0b8f1f4453648fb5704da8111fe300777212eeca23a81df25375dd1e4d578fdb7e2c1ed5e00949d6757108543aff02aabf15ecfb4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.2.dsc' libheif_1.21.2-3ubuntu0.2.dsc 3989 SHA512:509ea05af6d4413c91630dedfb193420d0b1cbf5a3855ce18e3f1fedde6b1bfcd56b287d9b48a182b70c00c0926b6daa0821e945754851cb02976eb01ed04af4
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
