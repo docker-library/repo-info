@@ -1,10 +1,10 @@
-# `sonarqube:26.6.0.123539-community`
+# `sonarqube:26.7.0.124771-community`
 
 ## Docker Metadata
 
-- Image ID: `sha256:981143c6fa3814389d52fe4ee845742d4db587806a13c7a3292aceae0ec5d82f`
-- Created: `2026-07-02T05:39:51.792569963Z`
-- Virtual Size: ~ 1.43 Gb  
+- Image ID: `sha256:48961161d6cbadc37863beeb419e12b039cddd614d8157af39ed3c7829604db2`
+- Created: `2026-07-08T17:00:25.629711899Z`
+- Virtual Size: ~ 1.39 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `JAVA_VERSION=jdk-25.0.3+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=26.6.0.123539`
+  - `SONAR_VERSION=26.7.0.124771`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -364,14 +364,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.debian.tar.xz' curl_8.5.0-2ubuntu10.10.debian.tar.xz 79980 SHA512:660785c6d393cd3929e9ee6c1f86765bec276496821e343d6d4275be14bca66de7bc0badf5e5930dc839ac0f74223f7ab715440ef5456b59b9a1c6a5186b730a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.dsc' curl_8.5.0-2ubuntu10.10.dsc 3092 SHA512:41d2fbf3032eebdf1f2196f4d10350d8b8c49562887b96ace09eb7caee9743902bb4db8b1d8235638a7b74ec8ef7ee3dd15f7bd1849e7aa5fab4f8d781581e4f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1596,11 +1591,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.4`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1611,9 +1606,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz 18840 SHA512:772de1e6c13fcac45ebe7050db19c225b5e889f11234da446268ac9c84e932fee6a3ca2161bdf75092ce518f0637f189d91cbb189d362fc9118cd8039a78e6fa
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.dsc' nghttp2_1.59.0-1ubuntu0.4.dsc 2624 SHA512:0b952d54608ccef01e309c91512f3567c2e847d2d76a983cc3be56f66f4a20226de629e5d4e96472334d5c06a1444db6922964f85952066d5dae08449ce86a72
+```
 
 ### `dpkg` source package: `npth=1.6-3.1build1`
 
@@ -2106,15 +2106,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz 188416 SHA256:31c2e4fa4da6dd0579e2b6172d3e30123e909d37742be6eda71b2819d0e78ad8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.dsc' tzdata_2026a-0ubuntu0.24.04.1.dsc 2728 SHA256:e6c10889a33dba55bcf422dc2fc4d2635d29b95eb366fd88e2017c0ba1503f88
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
