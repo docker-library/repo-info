@@ -1777,20 +1777,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas-dev/copyright`, `/usr/share/doc/
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.12.1-7
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1-7.dsc' lapack_3.12.1-7.dsc 3389 SHA256:3358ae0356808709ce142ebfe4ed9b48c2c28700b652f7d1b508af3803c71d3d
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1.orig.tar.gz' lapack_3.12.1.orig.tar.gz 8067087 SHA256:2ca6407a001a474d4d4d35f3a61550156050c48016d949f0da0529c0aa052422
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1-7.debian.tar.xz' lapack_3.12.1-7.debian.tar.xz 28648 SHA256:2d5aaab5ea97fc394d7f14c5a354357475260c30b048fd3e1b5ef2767e3c68e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lapack/3.12.1-7/
 
-- https://sources.debian.net/src/lapack/3.12.1-7/ (for browsing the source)
-- https://sources.debian.net/src/lapack/3.12.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lapack/3.12.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lattice=0.22-9-1`
 
@@ -3492,21 +3485,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.7.0-6
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-6.dsc' pam_1.7.0-6.dsc 2282 SHA256:373de3b541037f562ec3004663302485500e48853f9ca99d70e7597da85d7556
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz' pam_1.7.0.orig.tar.xz 507824 SHA256:57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz.asc' pam_1.7.0.orig.tar.xz.asc 801 SHA256:7a8ea18ec7d9dd1f8cbf9055c32128cbca8241aa63e9fea44d56ce6f0e15e441
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-6.debian.tar.xz' pam_1.7.0-6.debian.tar.xz 145468 SHA256:fffd119180e205f2892c6f4fdb20837ed13204480bc00b10df1ceca20f91c1ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.7.0-6/
 
-- https://sources.debian.net/src/pam/1.7.0-6/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.7.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.7.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.57.1-2`
 
