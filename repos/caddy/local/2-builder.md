@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd012b780204a531a72bb0bdff6b3b810cb50e05df244bf571d03399bac74c88`
-- Created: `2026-06-22T20:24:29.627959049Z`
-- Virtual Size: ~ 258.97 Mb  
+- Image ID: `sha256:3e0688745aeed77f3231cc1767934729a766c35551fe47124a016e916eecf1c5`
+- Created: `2026-07-07T23:12:16.549093482Z`
+- Virtual Size: ~ 259.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.26.4`
+  - `GOLANG_VERSION=1.26.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.5`
@@ -397,16 +397,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
