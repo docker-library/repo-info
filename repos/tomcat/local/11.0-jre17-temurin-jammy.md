@@ -1,10 +1,10 @@
-# `tomcat:11.0.23-jre17-temurin-jammy`
+# `tomcat:11.0.24-jre17-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed908c8f68e966a18a64a5fadb4f5b71a3f210a65e5f385f04961c62bf4a98a9`
-- Created: `2026-07-02T06:27:36.560443185Z`
-- Virtual Size: ~ 283.32 Mb  
+- Image ID: `sha256:a2430f910e89ae42d034049990c227d85ca512bf5dbdfb0716a2cc72205d6479`
+- Created: `2026-07-08T17:00:26.839589543Z`
+- Virtual Size: ~ 283.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=11`
-  - `TOMCAT_VERSION=11.0.23`
-  - `TOMCAT_SHA512=f5acb7a1e5ad60dea682ffe16cf075596f0e7b62e460828eb176639714d125ab08c763753fb709e3626ce6f42712c281b4ccf54930354aa07325550d6e6cbdac`
+  - `TOMCAT_VERSION=11.0.24`
+  - `TOMCAT_SHA512=a2fb1bd511735bd3d135b87f628d2b1f71a43aed7c4d7511e770092e571bad6d5ad9e97a580852119770477fd86d7ed156d83d3cee2854bce260725ce48934d0`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -1960,15 +1960,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz 181756 SHA256:26fae193bae0e8cc1905d1cf3ddfe1e12a152ef340125dee49c6c4ee1200f419
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.dsc' tzdata_2026a-0ubuntu0.22.04.1.dsc 2541 SHA256:2eabe6ac25cbee2d15639c9c379fc79aa796cb0e08196a4442c0b77012ec9e0f
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
