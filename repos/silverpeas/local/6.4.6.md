@@ -2954,15 +2954,9 @@ Licenses: (parsed from: `/usr/share/doc/libidn12/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn=1.38-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.38.orig.tar.gz' libidn_1.38.orig.tar.gz 2681263 SHA256:de00b840f757cd3bb14dd9a20d5936473235ddcba06d4bc2da804654b8bbf0f6
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.38.orig.tar.gz.asc' libidn_1.38.orig.tar.gz.asc 488 SHA256:fb7f239c113d122a256eaf26cabaff50db998150ed3704f8bfb98b56154fdcc1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.38-4ubuntu1.debian.tar.xz' libidn_1.38-4ubuntu1.debian.tar.xz 15336 SHA256:a7447ad2dd9f5e3bbe8f394d63265be8232a1b884cfec4603a4c3a4b0f4313e9
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.38-4ubuntu1.dsc' libidn_1.38-4ubuntu1.dsc 2510 SHA256:a5ec51f06f8e3d11bf834e2c486305439eb8ac7798abc685de4ec5fa6cfb42c0
-```
 
 ### `dpkg` source package: `libiec61883=1.2.0-4build3`
 
@@ -6360,15 +6354,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz 181756 SHA256:26fae193bae0e8cc1905d1cf3ddfe1e12a152ef340125dee49c6c4ee1200f419
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.dsc' tzdata_2026a-0ubuntu0.22.04.1.dsc 2541 SHA256:2eabe6ac25cbee2d15639c9c379fc79aa796cb0e08196a4442c0b77012ec9e0f
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
