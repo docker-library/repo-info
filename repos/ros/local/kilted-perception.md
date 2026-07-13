@@ -1218,14 +1218,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.debian.tar.xz' curl_8.5.0-2ubuntu10.10.debian.tar.xz 79980 SHA512:660785c6d393cd3929e9ee6c1f86765bec276496821e343d6d4275be14bca66de7bc0badf5e5930dc839ac0f74223f7ab715440ef5456b59b9a1c6a5186b730a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.dsc' curl_8.5.0-2ubuntu10.10.dsc 3092 SHA512:41d2fbf3032eebdf1f2196f4d10350d8b8c49562887b96ace09eb7caee9743902bb4db8b1d8235638a7b74ec8ef7ee3dd15f7bd1849e7aa5fab4f8d781581e4f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -7345,15 +7340,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.16
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.16.debian.tar.xz' openssh_9.6p1-3ubuntu13.16.debian.tar.xz 211780 SHA512:533409dea5197794bfe6354b8d6b242224572540b7b0740eb33d25eead9bd3374c4ab89ffe42d03cce3dd6c15083f751324ee291038b8dc92b8e97207db2020e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.16.dsc' openssh_9.6p1-3ubuntu13.16.dsc 3346 SHA512:4f7d3819d497944f750a76a3b121344b87237e3ebbd5dd4a6c282314decfb5437d835f5bcaf14dddaa9c9c98fde94197f709e0a92121285ddb63629861d9907e
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.11`
 
