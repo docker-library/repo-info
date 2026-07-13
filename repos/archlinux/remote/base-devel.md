@@ -1,7 +1,7 @@
 ## `archlinux:base-devel`
 
 ```console
-$ docker pull archlinux@sha256:b21289eb1954872de0dc9f88976627e38611b1817be75e50946c83ab7b9c474d
+$ docker pull archlinux@sha256:212b1e518e94ee9c52be55e8a32da75fcf11e7b5610b80b49479e67880102406
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,76 +12,76 @@ $ docker pull archlinux@sha256:b21289eb1954872de0dc9f88976627e38611b1817be75e509
 ### `archlinux:base-devel` - linux; amd64
 
 ```console
-$ docker pull archlinux@sha256:377f594c95c2c4f245e7285ec7f0bc7cd5a36003bd8b869c932b9b0ff2d761a5
+$ docker pull archlinux@sha256:d5ae80f3489764be5c8e27fe19b7ebfe876b35d7b42aaa5ab99aff2bf7438c34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **305.0 MB (305024351 bytes)**  
+-	Total Size: **305.5 MB (305505654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf8e193a01e9e91aa0966b171e857cde7183392b33b09a5bed268f2a38dad8b6`
+-	Image ID: `sha256:923c58ad3d50f024a21e499c0b4b43777661d0373d45bff60d56d20bc2c0b699`
 -	Default Command: `["\/usr\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.title=Arch Linux base-devel Image
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.description=Official containerd image of Arch Linux, a simple, lightweight Linux distribution aimed for flexibility.
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.authors=Santiago Torres-Arias <santiago@archlinux.org> (@SantiagoTorres), Christian Rebischke <Chris.Rebischke@archlinux.org> (@shibumi), Justin Kromlinger <hashworks@archlinux.org> (@hashworks)
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.url=https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/master/README.md
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.documentation=https://wiki.archlinux.org/title/Docker#Arch_Linux
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.source=https://gitlab.archlinux.org/archlinux/archlinux-docker
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.licenses=GPL-3.0-or-later
-# Mon, 06 Jul 2026 18:57:00 GMT
-LABEL org.opencontainers.image.version=20260705.0.552420
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
+LABEL org.opencontainers.image.version=20260712.0.555161
+# Mon, 13 Jul 2026 17:32:56 GMT
 LABEL org.opencontainers.image.revision=34b87485162b028c8d957bdcd2674359d883cd21
-# Mon, 06 Jul 2026 18:57:00 GMT
-LABEL org.opencontainers.image.created=2026-07-05T00:09:31+00:00
-# Mon, 06 Jul 2026 18:57:00 GMT
+# Mon, 13 Jul 2026 17:32:56 GMT
+LABEL org.opencontainers.image.created=2026-07-12T00:09:32+00:00
+# Mon, 13 Jul 2026 17:32:56 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 06 Jul 2026 18:57:07 GMT
-RUN ldconfig &&     sed -i '/BUILD_ID/a VERSION_ID=20260705.0.552420' /etc/os-release # buildkit
-# Mon, 06 Jul 2026 18:57:07 GMT
+# Mon, 13 Jul 2026 17:33:04 GMT
+RUN ldconfig &&     sed -i '/BUILD_ID/a VERSION_ID=20260712.0.555161' /etc/os-release # buildkit
+# Mon, 13 Jul 2026 17:33:04 GMT
 ENV LANG=C.UTF-8
-# Mon, 06 Jul 2026 18:57:07 GMT
+# Mon, 13 Jul 2026 17:33:04 GMT
 CMD ["/usr/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3b9fc7ae39e7b9b403232773a0fdeced6b5d7d72f22fc93f25fefb52b169eaad`  
-		Last Modified: Mon, 06 Jul 2026 18:58:03 GMT  
-		Size: 305.0 MB (305012906 bytes)  
+	-	`sha256:033715f1ddb09147c20bf66fe6d6da7face3f7580bc3d5b79a40d59c9dd4f528`  
+		Last Modified: Mon, 13 Jul 2026 17:34:02 GMT  
+		Size: 305.5 MB (305494172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3e41423bd05647bd329138f0bb616daabf72b618a9237341c7a150e4845c62e`  
-		Last Modified: Mon, 06 Jul 2026 18:57:57 GMT  
-		Size: 11.4 KB (11445 bytes)  
+	-	`sha256:d1cbde703137b434c8904c80101aba662aae8ac00b31abdaf9cd4d47f03be572`  
+		Last Modified: Mon, 13 Jul 2026 17:33:55 GMT  
+		Size: 11.5 KB (11482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `archlinux:base-devel` - unknown; unknown
 
 ```console
-$ docker pull archlinux@sha256:92f402fcdd1d135dbb49dfb355e5438aa34e56c40581834206725dbdbb8fa27e
+$ docker pull archlinux@sha256:da2381e8c1ed0381f1dfcf7baed36a970155584a8c70d838f9a3f949152e63cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 MB (14414582 bytes)**  
+-	Total Size: **14.4 MB (14419786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1076ef59696b64297eba20aa1800fead61c3406200d0d94bf0fd9775b8961b7e`
+-	Image ID: `sha256:bfafd8fc71fedce2e20e7733e99698b2e364afaec00525fd2693245e0293ade3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e4b456d99aa6c43becabe84fd73ec77ec4b3c0d35865304fb86c4aedf571d0bc`  
-		Last Modified: Mon, 06 Jul 2026 18:57:58 GMT  
-		Size: 14.4 MB (14402870 bytes)  
+	-	`sha256:90b1cd01b2e4ab01e5f26994420c2c6fb34bcedfe319d2b0b90fb98b651cbf56`  
+		Last Modified: Mon, 13 Jul 2026 17:33:56 GMT  
+		Size: 14.4 MB (14408074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8ba5c7f0c7cb43ccf0e05111ae9c72e6a28661f5f36c63aa0cebabbbd528c8b4`  
-		Last Modified: Mon, 06 Jul 2026 18:57:57 GMT  
+	-	`sha256:9a975db45ecbea5abea16402d106d7b89ec6f7b41d11673bb392a03b8653f85b`  
+		Last Modified: Mon, 13 Jul 2026 17:33:55 GMT  
 		Size: 11.7 KB (11712 bytes)  
 		MIME: application/vnd.in-toto+json
