@@ -377,14 +377,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/sha
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.debian.tar.xz' curl_8.5.0-2ubuntu10.10.debian.tar.xz 79980 SHA512:660785c6d393cd3929e9ee6c1f86765bec276496821e343d6d4275be14bca66de7bc0badf5e5930dc839ac0f74223f7ab715440ef5456b59b9a1c6a5186b730a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.10.dsc' curl_8.5.0-2ubuntu10.10.dsc 3092 SHA512:41d2fbf3032eebdf1f2196f4d10350d8b8c49562887b96ace09eb7caee9743902bb4db8b1d8235638a7b74ec8ef7ee3dd15f7bd1849e7aa5fab4f8d781581e4f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1579,9 +1574,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.debian.tar.xz' libheif_1.17.6-1ubuntu4.4.debian.tar.xz 13696 SHA512:b66d1308611f87ae13e26885f43bdb64fc31f40964d96eb3ddc4aad950364f1263325567e0ccaeea997c39a43b2f55af622d8be3e637200b6d9255c69a45bae7
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.dsc' libheif_1.17.6-1ubuntu4.4.dsc 3561 SHA512:1ea333bb29ce1e134489214d8a7b69845b92e68ee7c90aa87714b666afcaf31a7418cb4ad5688f3b1140156ab2e63e70dce2dd58a69357c14297094590058452
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.debian.tar.xz' libheif_1.17.6-1ubuntu4.4.debian.tar.xz 13696 SHA512:b66d1308611f87ae13e26885f43bdb64fc31f40964d96eb3ddc4aad950364f1263325567e0ccaeea997c39a43b2f55af622d8be3e637200b6d9255c69a45bae7
+'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.dsc' libheif_1.17.6-1ubuntu4.4.dsc 3561 SHA512:1ea333bb29ce1e134489214d8a7b69845b92e68ee7c90aa87714b666afcaf31a7418cb4ad5688f3b1140156ab2e63e70dce2dd58a69357c14297094590058452
 ```
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1.1`
@@ -3034,15 +3029,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.24.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.24.04.1.debian.tar.xz 188416 SHA256:31c2e4fa4da6dd0579e2b6172d3e30123e909d37742be6eda71b2819d0e78ad8
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.24.04.1.dsc' tzdata_2026a-0ubuntu0.24.04.1.dsc 2728 SHA256:e6c10889a33dba55bcf422dc2fc4d2635d29b95eb366fd88e2017c0ba1503f88
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
