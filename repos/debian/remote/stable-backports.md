@@ -1,7 +1,7 @@
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:c018a429e2266c5a17ea723ba0d22be1b40302918a1c5135c5e97c948b184604
+$ docker pull debian@sha256:12e88802217408420561d7146b098b64f77bb6b29084bb29353a7c5c0cec9806
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,53 +26,53 @@ $ docker pull debian@sha256:c018a429e2266c5a17ea723ba0d22be1b40302918a1c5135c5e9
 ### `debian:stable-backports` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:99b507759401f63fd66ed9765c9799f414308aea07aa361f77ba6fc36bcc2313
+$ docker pull debian@sha256:283fecde9e55d999da17ba6a694410a727ed0e1e1f4a02d509201c96118b1ede
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.3 MB (49317477 bytes)**  
+-	Total Size: **49.3 MB (49312793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6066884817f971f73d7cc337cf571ee7af6e416815be8000db0be4ff9a93ab95`
+-	Image ID: `sha256:e601e3b36d18cae0cb88dd950328e32677fb897cc01426bbc1a32ebbfc734db3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'stable' '@1782172800'
-# Wed, 24 Jun 2026 01:15:20 GMT
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'stable' '@1783900800'
+# Tue, 14 Jul 2026 01:16:03 GMT
 RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:0175edf8aedd0f204848248c24be4f601a41e3ff33fe804beb0ad78a40d3a242`  
-		Last Modified: Wed, 24 Jun 2026 00:28:22 GMT  
-		Size: 49.3 MB (49317255 bytes)  
+	-	`sha256:8abc06702a80c362980685dbfb8283a9f93d15163543400231bece845b5d3b24`  
+		Last Modified: Tue, 14 Jul 2026 00:14:48 GMT  
+		Size: 49.3 MB (49312571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:274fead83b3fd32b2c075e903ca372ee36fa80484efb5a794a1714264d100967`  
-		Last Modified: Wed, 24 Jun 2026 01:15:27 GMT  
+	-	`sha256:5c3954d9752579541d0d24fe630c454aa05059b33055e8302f20702dfe1b8c4a`  
+		Last Modified: Tue, 14 Jul 2026 01:16:09 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:stable-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:46601307b7d7dce9a7d007418b61e10dac81dd0d72e12a3984b913d4628a69df
+$ docker pull debian@sha256:12aa94b366c3690aedf927e2c64ad2c32343b440aaceb34ba7aa04a13a199156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3176739 bytes)**  
+-	Total Size: **3.2 MB (3176775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22120b433aba917db14ad5c4a03b2c36c3c9c31bb8789dd74124ac3ae147be22`
+-	Image ID: `sha256:8a27b5afe754112ab036fc559bc86027d58acbddf7c024f5739e2e79c49a3d59`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:153c82f93da458b749e32a37f8848acf5815312ac1ae411ff5ad0d23fb5b9953`  
-		Last Modified: Wed, 24 Jun 2026 01:15:27 GMT  
-		Size: 3.2 MB (3170955 bytes)  
+	-	`sha256:068d22120e0366930963c92e00b7b1ed90227533ec0d65fa7f74863259f5d5fc`  
+		Last Modified: Tue, 14 Jul 2026 01:16:09 GMT  
+		Size: 3.2 MB (3170991 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d7ed6062dda1c0dba36a4ab9dc531513bda0dce2b787a98d07c627147c0e2aaa`  
-		Last Modified: Wed, 24 Jun 2026 01:15:26 GMT  
+	-	`sha256:333890db999931825d69d0f0e6548b79a9edb04de59809e6d534748eb2ca6699`  
+		Last Modified: Tue, 14 Jul 2026 01:16:09 GMT  
 		Size: 5.8 KB (5784 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -185,106 +185,106 @@ $ docker pull debian@sha256:e653981d5f53389f098ceee64e7e13e90d9d8d70e14fb3779f45
 ### `debian:stable-backports` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:e92a08a049f7dae660be0fed5f14068b75dd1e5078ae3f219313c0d2812af866
+$ docker pull debian@sha256:310519d641aa733c1bac47122b341830185e44c967f138d7a95ec3007643bbd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.7 MB (49678615 bytes)**  
+-	Total Size: **49.7 MB (49674403 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b76b0bb88536d24919d7abd7c931279d83c999191595488e8108f755e92b9c50`
+-	Image ID: `sha256:d95c5b0d298cc115b5788378997c4ece3c1776d6508f0f2ceb2a93cffd2bf5bd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'stable' '@1782172800'
-# Wed, 24 Jun 2026 01:15:07 GMT
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'stable' '@1783900800'
+# Tue, 14 Jul 2026 01:15:44 GMT
 RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:98f023cbf349ace3ea3a02dcd5f98a707a369c17e008607e5d4f7d8fc588d8c2`  
-		Last Modified: Wed, 24 Jun 2026 00:28:37 GMT  
-		Size: 49.7 MB (49678393 bytes)  
+	-	`sha256:13d35567b69145c5932cb840ffc49879698a6de8990ec2d561279ec4c2f1870a`  
+		Last Modified: Tue, 14 Jul 2026 00:15:02 GMT  
+		Size: 49.7 MB (49674184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2f8f38af4e76623f1a4d7b53a16117f19cdb9728d4c494ccab3f4b49b607cf0`  
-		Last Modified: Wed, 24 Jun 2026 01:15:14 GMT  
+	-	`sha256:d0186e06de34eebb2af5530ff0b99bd23281e1a3f12bccfc0620d109e69bc386`  
+		Last Modified: Tue, 14 Jul 2026 01:15:51 GMT  
+		Size: 219.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:stable-backports` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:b62af3d25cff2d92f71fa00f3ee5a235f94464cd013c0f502c255798e785b9d7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.2 MB (3177687 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:46c9c42b5c2d40c5399fcbab6a6919d9b2fc0357e9a6e49ac5a7d890f883cdae`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:96856963f3d385d9142150f0f6516b81e13e42d73165268a9f4bb5083edd4a39`  
+		Last Modified: Tue, 14 Jul 2026 01:15:51 GMT  
+		Size: 3.2 MB (3171835 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:8b7000c00946d8ea36e709ee6fc3d1bcb7e745f81415d2fd42318ba15b1ff5a2`  
+		Last Modified: Tue, 14 Jul 2026 01:15:51 GMT  
+		Size: 5.9 KB (5852 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:stable-backports` - linux; 386
+
+```console
+$ docker pull debian@sha256:bf1d27c66ad2985a60aeaa5a1fd224fee4bbfab092cdc84f92a370878acbbd05
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **50.8 MB (50831712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c40fb35d06042ef08ec6ef2f690a75848ff54bd887442414b2ca8737a7e9abd`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'stable' '@1783900800'
+# Tue, 14 Jul 2026 01:16:05 GMT
+RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
+```
+
+-	Layers:
+	-	`sha256:8c4bacab1e6a6e7f1bceece7c11f3b53d84e3cd7993909650f0bf526b9a34923`  
+		Last Modified: Tue, 14 Jul 2026 00:14:41 GMT  
+		Size: 50.8 MB (50831490 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c380ae5028128c2fbe4f6b8e1c81bfcfd01bbb127a6eed11947d24b253f62cb`  
+		Last Modified: Tue, 14 Jul 2026 01:16:12 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:stable-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:1461c395fd121c942e48c72e8d77f16127260d6a4488a5eeff3556975bc54dfa
+$ docker pull debian@sha256:7ec4cc0336f57336718e452853743d638a2025d22170e3cd385d4e5919666e53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3177650 bytes)**  
+-	Total Size: **3.2 MB (3173960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:872c12f614d9f8ebaa6f308f782ef87a46797c18d8064a01c9c7032a0576c83b`
+-	Image ID: `sha256:798b0d0bcf61380a565b4e4ab4ef992b5c341a844f18dd9673d330b98d8a5a48`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae55981b918c70936f35118dbf135b80d97eb59eab67562c8c9a5cf8a1a83b82`  
-		Last Modified: Wed, 24 Jun 2026 01:15:14 GMT  
-		Size: 3.2 MB (3171799 bytes)  
+	-	`sha256:92c2942051de1bd469e320c5ff869d52902cbacd884325042e750b5e84fde7d7`  
+		Last Modified: Tue, 14 Jul 2026 01:16:12 GMT  
+		Size: 3.2 MB (3168193 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5688bbe7cc8088ae57cd3b8a836b7ee555b6f1f01fe3399faf44eba6fe1c10b8`  
-		Last Modified: Wed, 24 Jun 2026 01:15:14 GMT  
-		Size: 5.9 KB (5851 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:stable-backports` - linux; 386
-
-```console
-$ docker pull debian@sha256:d3d53bf269c1241105b7e48a7e05b6da2dfce5f0cfb25b0deb123b6aee7476a4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50835878 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e264fbb40f6a822f692ce0d1aa9e50e919394799245fe0235de473b2f4328fc`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'stable' '@1782172800'
-# Wed, 24 Jun 2026 01:15:13 GMT
-RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
-```
-
--	Layers:
-	-	`sha256:3173584128605dba40001b373c97b4d1f865681b3b3096c43780ad0489fbe9af`  
-		Last Modified: Wed, 24 Jun 2026 00:28:24 GMT  
-		Size: 50.8 MB (50835655 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:674f3b9941e4d9de02b85ee47bc12000ba59678e24782fe74612ca1a8b088fd8`  
-		Last Modified: Wed, 24 Jun 2026 01:15:19 GMT  
-		Size: 223.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:stable-backports` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:181fca2ccc5d19eb725fa7fa9bea3fe5929149ad1b4496af781811c7ab1c830c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3173924 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ff93dfba117c3c644c4cbd23c3903305c2cd68a8cde31529a671f0f683fb13d`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:62c66851234e00c87828c5e6601d4a3a2df08fa485ce2446dbf30d02e00d2ee0`  
-		Last Modified: Wed, 24 Jun 2026 01:15:19 GMT  
-		Size: 3.2 MB (3168157 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:1fd0e54951ddfa654e148f5054d6a8a877f8c6065a7b8522735b1b90f10e8c4a`  
-		Last Modified: Wed, 24 Jun 2026 01:15:19 GMT  
+	-	`sha256:e5de40cfa3e92c0a89a25d13364d55e86421f7ee2fdabfd916a079d0f0f52176`  
+		Last Modified: Tue, 14 Jul 2026 01:16:12 GMT  
 		Size: 5.8 KB (5767 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -344,53 +344,53 @@ $ docker pull debian@sha256:a05e671158c9d4608e541316dba98dd5085509200ca4a57de957
 ### `debian:stable-backports` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:508e0e09dec7e0929f5b712de5deaf96176052bd2d26a1a31e365b5d82a502c9
+$ docker pull debian@sha256:956f8dccb73c7b36f4570bc6048d2772c113eb2dbed94735855fde3e109eedd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.8 MB (47802881 bytes)**  
+-	Total Size: **47.8 MB (47798007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34955cf8494d714869ff466d997ea6c8135862876170a4dd362955c9647a1f08`
+-	Image ID: `sha256:0dafdf7952ab94cdda6a330514ea98aaf4b93efb7a2da73b754b8ebca0dfc843`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1782172800'
-# Wed, 24 Jun 2026 18:34:15 GMT
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'stable' '@1783900800'
+# Tue, 14 Jul 2026 01:17:20 GMT
 RUN echo 'deb http://deb.debian.org/debian stable-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:d87ebda907a967e46f3f6a0c315278db601dd9852d95f8abf098acf0060a9257`  
-		Last Modified: Wed, 24 Jun 2026 03:32:55 GMT  
-		Size: 47.8 MB (47802658 bytes)  
+	-	`sha256:33b46800a587b07be441b7195b09803502d373f650d43ec86a9a5c74dc7663cc`  
+		Last Modified: Tue, 14 Jul 2026 00:21:47 GMT  
+		Size: 47.8 MB (47797785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd928141a8d6571bf92e08655acc23c6df4cf582a4ae302313aefb1829762df8`  
-		Last Modified: Wed, 24 Jun 2026 18:35:10 GMT  
-		Size: 223.0 B  
+	-	`sha256:19a50f8d05c06eefb550b3679e4b5ebb878c8688f271d6516445cad7a66710c5`  
+		Last Modified: Tue, 14 Jul 2026 01:18:13 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:stable-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:9430f0d8dfc553e02153630f5b38155d1ac5fe9114c2c1a6ea90fbbeb8f1383d
+$ docker pull debian@sha256:4e477d5db3c76c47da108f30122ce604f528255bc699c17ed470a36d8d9dcca3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3169090 bytes)**  
+-	Total Size: **3.2 MB (3169126 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9e11061ce18f2072293f7be171ed68c6023c5bc879d1dfeb97052e714570dae`
+-	Image ID: `sha256:eea76db050e299def9db53af5aa965afdfda36c2411009c2d335948298cff5d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2bedf2277f2c1f16750347d2318f2ffa5ee5e04be562623433aa5489dbca6fbe`  
-		Last Modified: Wed, 24 Jun 2026 18:35:11 GMT  
-		Size: 3.2 MB (3163280 bytes)  
+	-	`sha256:bdd9405e091f4e4a1e439a4ed79cab865518684c828cf08e00fa96558a7df397`  
+		Last Modified: Tue, 14 Jul 2026 01:18:14 GMT  
+		Size: 3.2 MB (3163316 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:defc283ed535f6e4cd1d5cad880d3ac3dded6fe74020c0d87e01f4184b6fcd6c`  
-		Last Modified: Wed, 24 Jun 2026 18:35:10 GMT  
+	-	`sha256:dc1017e32a6f4f16a64bf53b82656c0f33311cd3baaa03fe113242d1a3963057`  
+		Last Modified: Tue, 14 Jul 2026 01:18:13 GMT  
 		Size: 5.8 KB (5810 bytes)  
 		MIME: application/vnd.in-toto+json
 
