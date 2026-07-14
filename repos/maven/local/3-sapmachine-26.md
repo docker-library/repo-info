@@ -77,15 +77,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA256:9f3f2f69b995f9ad37359072fbc69a3a88bfba081fc83e9be30e14662795bb4d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA256:d9c93a9d8fd4c1ce0f90ebda7570c32612bfd3a6572579e87b0ef29c81b9c584
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.2.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.2.debian.tar.xz 34428 SHA256:00679ae1460f538d83404849f9027d4277c119a9547b118e7e6518f9acdd7d9d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.2.dsc' alsa-lib_1.2.11-1ubuntu0.2.dsc 3034 SHA256:6e458bbf6c1d67bf4529c752d8937e27ca95c1ae663a9ba67010048b4f59e334
-```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -1995,15 +1989,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.16
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.16.debian.tar.xz' openssh_9.6p1-3ubuntu13.16.debian.tar.xz 211780 SHA512:533409dea5197794bfe6354b8d6b242224572540b7b0740eb33d25eead9bd3374c4ab89ffe42d03cce3dd6c15083f751324ee291038b8dc92b8e97207db2020e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.16.dsc' openssh_9.6p1-3ubuntu13.16.dsc 3346 SHA512:4f7d3819d497944f750a76a3b121344b87237e3ebbd5dd4a6c282314decfb5437d835f5bcaf14dddaa9c9c98fde94197f709e0a92121285ddb63629861d9907e
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.11`
 
