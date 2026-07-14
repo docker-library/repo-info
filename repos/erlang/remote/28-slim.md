@@ -1,7 +1,7 @@
 ## `erlang:28-slim`
 
 ```console
-$ docker pull erlang@sha256:1225b1b86aec284d1ed4b406212949f7f5c9855558943708606bbb6823b7ae83
+$ docker pull erlang@sha256:d06f741d53e2c14de1722021e03d75a4f7f09f90c941ff377618b90d253555ec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,119 +24,119 @@ $ docker pull erlang@sha256:1225b1b86aec284d1ed4b406212949f7f5c9855558943708606b
 ### `erlang:28-slim` - linux; amd64
 
 ```console
-$ docker pull erlang@sha256:f1ba61f90332384e41cb7d42cddcc5b2fe82e5346edd52e94f8bf49af47b1d75
+$ docker pull erlang@sha256:ee6e3a8782b991b484959707147427ad56995ccbff5f2af0bdcdbd56c72ffb38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128282029 bytes)**  
+-	Total Size: **128.3 MB (128277073 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecb777ceeefcc2c934023ac63cbc3ad93b8dead54d6714849351dbe4060427a6`
+-	Image ID: `sha256:c13491b2a16f99010714d89755d28b2bb7352ad8b6beb31e716988d677dc4b4a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
-# Mon, 06 Jul 2026 18:13:17 GMT
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1783900800'
+# Tue, 14 Jul 2026 01:46:14 GMT
 ENV OTP_VERSION=28.5.0.3 REBAR3_VERSION=3.27.0
-# Mon, 06 Jul 2026 18:13:17 GMT
+# Tue, 14 Jul 2026 01:46:14 GMT
 LABEL org.opencontainers.image.version=28.5.0.3
-# Mon, 06 Jul 2026 18:13:17 GMT
+# Tue, 14 Jul 2026 01:46:14 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="63c56a954fe6134f283a01312ebefad00fb0f3ac7d7d42062ca3aa8e92ccd21d" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jul 2026 18:13:17 GMT
+# Tue, 14 Jul 2026 01:46:14 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
-		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
-		Size: 49.3 MB (49317255 bytes)  
+	-	`sha256:b890c9407285c31d25426ef154b55c72e225f19b478a59451b01a8a44f5ea4f7`  
+		Last Modified: Tue, 14 Jul 2026 00:14:54 GMT  
+		Size: 49.3 MB (49312572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0002af9ae103e906bdc773e995a702312bc1ca99a8e13d910cf222c62fd4fec`  
-		Last Modified: Mon, 06 Jul 2026 18:13:32 GMT  
-		Size: 79.0 MB (78964774 bytes)  
+	-	`sha256:c48c05fddfa2b0fdcde0a2c8cf63d95800c29d0009e9ccb01f01d8158b1fab52`  
+		Last Modified: Tue, 14 Jul 2026 01:46:27 GMT  
+		Size: 79.0 MB (78964501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:629b4943ae8d7526f27e3a0fd777a274298026e106df6a546637f6e711634c99
+$ docker pull erlang@sha256:e082c3ea1dffed3b5c6072a457b1be7be44b317ab9b2798acd7e78a0b0fd117d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3297414 bytes)**  
+-	Total Size: **3.3 MB (3297451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f22da6395b3fedad0e32fbfaeece1bfc274a0de3c0558b0c37ac34e12a652a5`
+-	Image ID: `sha256:eb5c937931e638135a13ccdb75f32f53d782a5efe915df83b77edfd9149864ea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:787715ebc208ac7c041e47b7fa6d829bbe4ec432f4b9bfce1a89e56286054ae9`  
-		Last Modified: Mon, 06 Jul 2026 18:13:30 GMT  
-		Size: 3.3 MB (3283778 bytes)  
+	-	`sha256:ca894f521aa8d0da6cc49ce4db124dfe5b02033a1a80c63bfaa39daeac966963`  
+		Last Modified: Tue, 14 Jul 2026 01:46:25 GMT  
+		Size: 3.3 MB (3283814 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:189ba9e6a91c64762f4256c10797aed52e92ce293c46c619d91345ea5542247d`  
-		Last Modified: Mon, 06 Jul 2026 18:13:30 GMT  
-		Size: 13.6 KB (13636 bytes)  
+	-	`sha256:cf9598f33338799e1f13f7d18cd2404d696bb3f62cabe48a68bb804fedce7b11`  
+		Last Modified: Tue, 14 Jul 2026 01:46:25 GMT  
+		Size: 13.6 KB (13637 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28-slim` - linux; arm variant v5
 
 ```console
-$ docker pull erlang@sha256:7caf797528b64790ba4f29b3752b361c3df76591b050b5d3eb9dbe9422655b2d
+$ docker pull erlang@sha256:a344bce1f52a75ce4889fdf6aa14faf44e160f94f9fe4313458b9be66a54929f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.0 MB (116956000 bytes)**  
+-	Total Size: **117.0 MB (116950996 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea9f47f96e5d9a3930870b86293ddcfef4c46f52e215e4b98f4403ab608d05df`
+-	Image ID: `sha256:ec9d50702faddf43c3765c1760d4b786ecb3324de40e91435d22dbf0ac92178a`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1782172800'
-# Mon, 06 Jul 2026 18:13:00 GMT
+# Mon, 13 Jul 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1783900800'
+# Tue, 14 Jul 2026 02:28:12 GMT
 ENV OTP_VERSION=28.5.0.3 REBAR3_VERSION=3.27.0
-# Mon, 06 Jul 2026 18:13:00 GMT
+# Tue, 14 Jul 2026 02:28:12 GMT
 LABEL org.opencontainers.image.version=28.5.0.3
-# Mon, 06 Jul 2026 18:13:00 GMT
+# Tue, 14 Jul 2026 02:28:12 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="63c56a954fe6134f283a01312ebefad00fb0f3ac7d7d42062ca3aa8e92ccd21d" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jul 2026 18:13:00 GMT
+# Tue, 14 Jul 2026 02:28:12 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:0904cce1afe0c8a47ab4491cfda145d253ca2ea73dc133ce8c90a1475215fe54`  
-		Last Modified: Wed, 24 Jun 2026 00:28:15 GMT  
-		Size: 47.5 MB (47494964 bytes)  
+	-	`sha256:1ad99c59586600a5647dd3e6e12fc8c9b5e12a7e7f8e1bd39b7df82072afb746`  
+		Last Modified: Tue, 14 Jul 2026 00:14:08 GMT  
+		Size: 47.5 MB (47489966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8c4a817ff1a2a96cc541c9894e15da975ea1994180d8fcb98bf0daee392b2b0`  
-		Last Modified: Mon, 06 Jul 2026 18:13:15 GMT  
-		Size: 69.5 MB (69461036 bytes)  
+	-	`sha256:9aed9cdf78d9e6ff42d3c12bcd03f275547402c69570de9200b41402fcff9014`  
+		Last Modified: Tue, 14 Jul 2026 02:28:26 GMT  
+		Size: 69.5 MB (69461030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:28-slim` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:13244828c527e466773a197a6bd75558046d8e76687ab1569e2b03385246148b
+$ docker pull erlang@sha256:9e6d4d92f0aee852c2a7aa71e31583ce0bac72c5951f6dfe4a650e437847ed4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3300461 bytes)**  
+-	Total Size: **3.3 MB (3300498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38975316f3d1e181ba2ac17d12f05ca520865827cea69e8c1085f338312ef6aa`
+-	Image ID: `sha256:69251c775b92ac83f717a8672df5b84470de01f4248d4853d0c4c198de58a430`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79c0a1e2e8adecf3039bc5793b4d8d1e7a8ca48985a1634689eb38d82a215e98`  
-		Last Modified: Mon, 06 Jul 2026 18:13:13 GMT  
-		Size: 3.3 MB (3286745 bytes)  
+	-	`sha256:d85bc7b003f028e5d7d6b9695b7d992ba7beb4da67c3d680373762ed528a8fe8`  
+		Last Modified: Tue, 14 Jul 2026 02:28:24 GMT  
+		Size: 3.3 MB (3286781 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:56150a63e7b7b23147535ed17b23734a8a5ac41f9558323085157ade4a044650`  
-		Last Modified: Mon, 06 Jul 2026 18:13:12 GMT  
-		Size: 13.7 KB (13716 bytes)  
+	-	`sha256:39c2e8523c43b7981897a1389e6938dd7bff23308c5f2c66b9abd97f5be60fdd`  
+		Last Modified: Tue, 14 Jul 2026 02:28:24 GMT  
+		Size: 13.7 KB (13717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `erlang:28-slim` - linux; arm variant v7
