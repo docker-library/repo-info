@@ -1094,12 +1094,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libsolv-0.7.24-5.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-5.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libstdc++-11.5.0-14.el9.x86_64`
 
@@ -1237,12 +1232,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1391,12 +1381,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-3.5.5-4.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-4.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-11.el9_8.x86_64`
 
@@ -1424,12 +1409,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-libs-3.5.5-4.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-4.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `p11-kit-0.26.2-1.el9.x86_64`
 
@@ -1545,12 +1525,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/sourc
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-Source:
-
-```console
-$ dnf --quiet download --source --url perl-DBI-1.643-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-DBI-1.643-9.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `perl-Data-Dumper-2.174-462.el9.x86_64`
 
