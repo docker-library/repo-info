@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2481edb3016c3749e400daea78a7d2a9d288286105bac729d63adfef95e8534d`
-- Created: `2026-06-24T01:42:51.533126851Z`
+- Image ID: `sha256:da3958f512eed039170b888ab48a80fa3424482ee50d52a634cf71c7b7b1ca45`
+- Created: `2026-07-14T01:44:18.945080795Z`
 - Virtual Size: ~ 142.6 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -130,11 +130,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:4.0.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:4.0.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=13.8+deb13u5`
+### `dpkg` source package: `base-files=13.8+deb13u6`
 
 Binary Packages:
 
-- `base-files=13.8+deb13u5`
+- `base-files=13.8+deb13u6`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -142,13 +142,19 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=13.8+deb13u6
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u6.dsc' base-files_13.8+deb13u6.dsc 1247 SHA256:8e2254627410ebf9424cea290166f717e5ff1fa02758679fd9273e5f41b606c6
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u6.tar.xz' base-files_13.8+deb13u6.tar.xz 68672 SHA256:0d8c018d562213aa274a8210042bbc3c4ca985a43a75e0021de4bfa4d9722e34
+```
 
-- http://snapshot.debian.org/package/base-files/13.8+deb13u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/13.8+deb13u6/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.8+deb13u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.8+deb13u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1661,11 +1667,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.8.1-1`
+### `dpkg` source package: `xz-utils=5.8.1-1+deb13u1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.8.1-1`
+- `liblzma5:amd64=5.8.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1687,7 +1693,7 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.8.1-1
+$ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u1
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u1.dsc' xz-utils_5.8.1-1+deb13u1.dsc 2736 SHA256:ddadd9d9f7c4bb80b08f9f17409e2701a29a4cf8fe25e15d19605e5281c1fc1b
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
@@ -1696,9 +1702,9 @@ $ apt-get source -qq --print-uris xz-utils=5.8.1-1
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.8.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 
