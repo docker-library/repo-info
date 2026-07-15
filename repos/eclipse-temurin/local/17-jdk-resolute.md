@@ -1474,15 +1474,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1ubuntu0.26.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA512:8703636fc28f0b12c8171712f3d605e0466a5bb9ba06e136c3203548fc3408ab07defd71dc801d7009a337e1e02fd60e8933a2a526d5ef0ce53153058d201233
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA512:83e600ddd676013932297c4f3d2cf2e65b5308f7700d818b34f30d760c7495180e6d8dae70579c8bea95ea2d7ccb12fc42641e545e11ec4b6630a0e6b350b282
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.2.debian.tar.xz' libssh2_1.11.1-1ubuntu0.26.04.2.debian.tar.xz 20568 SHA512:0ecf5d25a62bcdf7a65ba6b084aabdc63d0f73d7bd8b4c24ad426b4d8f0209f1b1df9518294cde854059d1327182bba8a8b910fa7161ee9d8132aecbdbe1f4d6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-1ubuntu0.26.04.2.dsc' libssh2_1.11.1-1ubuntu0.26.04.2.dsc 2458 SHA512:0a9ba90d3b204ec90821b5d9aeb51e4c17b5545e2fb50ea9cd74654290d42f318fb642d4bdafb0bc861602b2b04c3edf73f34f7c261606564e1cfd33fdf03db8
-```
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
