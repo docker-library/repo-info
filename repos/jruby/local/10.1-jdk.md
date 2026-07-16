@@ -2255,15 +2255,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA256:81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA256:fb1ce21577dee962be8bf95cbf86f806815778264622a5d756324ff8dd3bfc57
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.debian.tar.xz' wget_1.21.4-1ubuntu4.1.debian.tar.xz 65000 SHA256:82c6ea0038692a42e2e9c3059ddae0fdc948fcf7d4bb23087ec34200a4bcee0e
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.dsc' wget_1.21.4-1ubuntu4.1.dsc 2251 SHA256:7d544dbdfa13f1e22b848ab4f8f2459ebb2273897b869508e93092e7e34baaa7
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
