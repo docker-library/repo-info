@@ -20,6 +20,12 @@
 -	[`open-liberty:26.0.0.6-kernel-slim-java11-openj9`](#open-liberty26006-kernel-slim-java11-openj9)
 -	[`open-liberty:26.0.0.6-kernel-slim-java17-openj9`](#open-liberty26006-kernel-slim-java17-openj9)
 -	[`open-liberty:26.0.0.6-kernel-slim-java8-openj9`](#open-liberty26006-kernel-slim-java8-openj9)
+-	[`open-liberty:26.0.0.7-full-java11-openj9`](#open-liberty26007-full-java11-openj9)
+-	[`open-liberty:26.0.0.7-full-java17-openj9`](#open-liberty26007-full-java17-openj9)
+-	[`open-liberty:26.0.0.7-full-java8-openj9`](#open-liberty26007-full-java8-openj9)
+-	[`open-liberty:26.0.0.7-kernel-slim-java11-openj9`](#open-liberty26007-kernel-slim-java11-openj9)
+-	[`open-liberty:26.0.0.7-kernel-slim-java17-openj9`](#open-liberty26007-kernel-slim-java17-openj9)
+-	[`open-liberty:26.0.0.7-kernel-slim-java8-openj9`](#open-liberty26007-kernel-slim-java8-openj9)
 -	[`open-liberty:beta`](#open-libertybeta)
 -	[`open-liberty:beta-java11`](#open-libertybeta-java11)
 -	[`open-liberty:beta-java17`](#open-libertybeta-java17)
@@ -12074,6 +12080,30 @@ $ docker pull open-liberty@sha256:eb209a33cd8bd9a103b0f811cb59e63230ed904c02e41a
 		Last Modified: Thu, 02 Jul 2026 05:26:08 GMT  
 		Size: 39.7 KB (39696 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `open-liberty:26.0.0.7-full-java11-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:26.0.0.7-full-java17-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:26.0.0.7-full-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:26.0.0.7-kernel-slim-java11-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:26.0.0.7-kernel-slim-java17-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:26.0.0.7-kernel-slim-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:beta`
 
