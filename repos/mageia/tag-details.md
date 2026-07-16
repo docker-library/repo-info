@@ -2,9 +2,14 @@
 
 # Tags of `mageia`
 
+-	[`mageia:10`](#mageia10)
 -	[`mageia:9`](#mageia9)
 -	[`mageia:cauldron`](#mageiacauldron)
 -	[`mageia:latest`](#mageialatest)
+
+## `mageia:10`
+
+**does not exist** (yet?)
 
 ## `mageia:9`
 
