@@ -70,15 +70,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA256:9f3f2f69b995f9ad37359072fbc69a3a88bfba081fc83e9be30e14662795bb4d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA256:d9c93a9d8fd4c1ce0f90ebda7570c32612bfd3a6572579e87b0ef29c81b9c584
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.2.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.2.debian.tar.xz 34428 SHA256:00679ae1460f538d83404849f9027d4277c119a9547b118e7e6518f9acdd7d9d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.2.dsc' alsa-lib_1.2.11-1ubuntu0.2.dsc 3034 SHA256:6e458bbf6c1d67bf4529c752d8937e27ca95c1ae663a9ba67010048b4f59e334
-```
 
 ### `dpkg` source package: `apt=2.8.3`
 
