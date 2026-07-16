@@ -1891,9 +1891,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-134.134
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.diff.gz' linux_6.8.0-134.134.diff.gz 8241843 SHA512:b0a89b7fb982fef35a854e3029a1b500f5c19a8af8cb10a0bd806554c6a137307ce3e036d14b3beaea14dd927279d3e8ebdff864adf9d66d9588db1196572ea7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.dsc' linux_6.8.0-134.134.dsc 9473 SHA512:b61f816d05cb7ac489b926b59aa09c203b208333ecaf31da3ea8b78c55622ae21183c142f0f9805ac1f811e26ff470a805a92dfa0f615e37d1ec348fefa11a0a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.diff.gz' linux_6.8.0-134.134.diff.gz 8241843 SHA512:b0a89b7fb982fef35a854e3029a1b500f5c19a8af8cb10a0bd806554c6a137307ce3e036d14b3beaea14dd927279d3e8ebdff864adf9d66d9588db1196572ea7
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.dsc' linux_6.8.0-134.134.dsc 9473 SHA512:b61f816d05cb7ac489b926b59aa09c203b208333ecaf31da3ea8b78c55622ae21183c142f0f9805ac1f811e26ff470a805a92dfa0f615e37d1ec348fefa11a0a
 ```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
