@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c921eb4e0ed8f21795cc59b2fdde256911e14722157457c03969d4c9c52e5fa`
-- Created: `2026-06-22T19:54:23.224042593Z`
-- Virtual Size: ~ 229.11 Mb  
+- Image ID: `sha256:fa7237598e05a1aea1866e8f2d241d20a806d667a3a7556236e35b7368265bdd`
+- Created: `2026-07-14T18:12:38.696135408Z`
+- Virtual Size: ~ 229.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -587,7 +587,7 @@ varnish-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
 varnish-8.0.2-r1 installed size:
-2349 KiB
+2350 KiB
 
 varnish-8.0.2-r1 license:
 BSD

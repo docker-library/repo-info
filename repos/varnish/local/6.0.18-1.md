@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:183ac03bdc0f21da38d3532baaea549b4b9c8d860628997a635b361776c45a42`
-- Created: `2026-06-24T01:37:47.853853572Z`
+- Image ID: `sha256:1176fffba2ebf74600f5af171f16e1c312295accca1eedf724bf371daf6a9213`
+- Created: `2026-07-14T01:39:21.276781936Z`
 - Virtual Size: ~ 306.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -153,23 +153,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:3.0.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:3.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=12.4+deb12u14`
+### `dpkg` source package: `base-files=12.4+deb12u15`
 
 Binary Packages:
 
-- `base-files=12.4+deb12u14`
+- `base-files=12.4+deb12u15`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=12.4+deb12u15
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u15.dsc' base-files_12.4+deb12u15.dsc 1137 SHA256:e531274d0c3916dacfe55bbd27148d775b004e1836bc2fbb01549f142d524e8c
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u15.tar.xz' base-files_12.4+deb12u15.tar.xz 66280 SHA256:9fb369194365fe9da74621da247ea70884fc3d1d9c063db310764ef0e43c02c5
+```
 
-- http://snapshot.debian.org/package/base-files/12.4+deb12u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/12.4+deb12u15/ (for browsing the source)
+- https://sources.debian.net/src/base-files/12.4+deb12u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/12.4+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -399,12 +405,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.88.1-10+deb12u14`
+### `dpkg` source package: `curl=7.88.1-10+deb12u15`
 
 Binary Packages:
 
-- `curl=7.88.1-10+deb12u14`
-- `libcurl4:amd64=7.88.1-10+deb12u14`
+- `curl=7.88.1-10+deb12u15`
+- `libcurl4:amd64=7.88.1-10+deb12u15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -421,13 +427,21 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u15
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u15.dsc' curl_7.88.1-10+deb12u15.dsc 3256 SHA256:2744f12e3aef161c0361743fa1b318296b122e566e47f381e4a63320fbcc23f4
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u15.debian.tar.xz' curl_7.88.1-10+deb12u15.debian.tar.xz 87732 SHA256:961b78bc48492c5693e4decb352ddd176f343260a8956f48b2887874048ef23b
+```
 
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u15/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.88.1-10+deb12u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -1961,11 +1975,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.174-1`
+### `dpkg` source package: `linux=6.1.176-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.174-1`
+- `linux-libc-dev:amd64=6.1.176-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1980,17 +1994,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.174-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174-1.dsc' linux_6.1.174-1.dsc 399396 SHA256:faa65e532e688156f94f06e5be9f7b13ab742c77a60fe1679f38f341da15005f
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174.orig.tar.xz' linux_6.1.174.orig.tar.xz 137896484 SHA256:a4eb0303d116da3da0f213aaa01ba559ae35127aa0dcbdaa30ce3598fdd42ffe
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174-1.debian.tar.xz' linux_6.1.174-1.debian.tar.xz 1841184 SHA256:279ba1361f5bf487deba6ad25fcb433225ff5e29686c85d029b4230f2a39db02
+$ apt-get source -qq --print-uris linux=6.1.176-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.176-1.dsc' linux_6.1.176-1.dsc 290776 SHA256:640124b35c5d7e32af9a9d536c47cfebf723fbb86bfbb25d0f2729b798bca35e
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.176.orig.tar.xz' linux_6.1.176.orig.tar.xz 137945728 SHA256:9aad4025973feea3f0d978e82ab7db97d8d5ce3f59fcc6b1f316153d66e3a504
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.176-1.debian.tar.xz' linux_6.1.176-1.debian.tar.xz 1873136 SHA256:10477b04dc15f7c1c52d8c812c889be5fd37aa178163e352755cd137c73ade6b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.174-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.174-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.174-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.176-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.176-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.176-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -2949,11 +2963,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.4.1-1`
+### `dpkg` source package: `xz-utils=5.4.1-1+deb12u1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.4.1-1`
+- `liblzma5:amd64=5.4.1-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -2976,18 +2990,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.4.1-1
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
+$ apt-get source -qq --print-uris xz-utils=5.4.1-1+deb12u1
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u1.dsc' xz-utils_5.4.1-1+deb12u1.dsc 2515 SHA256:38f98e356f7e7e89b0920d39c55dd5f3d1a9f2684bff83c8b4890561e1832e94
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u1.debian.tar.xz' xz-utils_5.4.1-1+deb12u1.debian.tar.xz 93600 SHA256:3e162db2b76480c7e157f4c2f6ff9a426fc023f262d4dc3287530b36e2843ebe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.4.1-1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.4.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-1`
 
