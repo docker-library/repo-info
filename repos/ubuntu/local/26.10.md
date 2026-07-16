@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e7ea2d9ce829251e4355d2b59deaaaa1d83a55091508e3635789ce0e9c40ced`
-- Created: `2026-06-22T04:08:53.902601579Z`
-- Virtual Size: ~ 100.48 Mb  
+- Image ID: `sha256:ddf17c91c25beadae4d3d07aa6720321408a7065ab8516a08f71e1a287c76c47`
+- Created: `2026-07-05T05:01:36.652028314Z`
+- Virtual Size: ~ 100.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-06-22T04:10:30.518961+00:00`
+  - `org.opencontainers.image.created=2026-07-05T05:02:45.701705+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -223,20 +223,24 @@ $ apt-get source -qq --print-uris cdebconf=0.280ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.280ubuntu1.dsc' cdebconf_0.280ubuntu1.dsc 2873 SHA512:bd0f7dd6a9e3b19040f726c966775955569f29c4f63c1a6680549a42f8bd591a93574346f0dba3fd5f46f60b2cbe75d77422fa09e85e908c1ea6a83b390ef1a9
 ```
 
-### `dpkg` source package: `coreutils-from=0.0.0~ubuntu25`
+### `dpkg` source package: `coreutils-from=0.0.0~ubuntu28`
 
 Binary Packages:
 
-- `coreutils=9.5-1ubuntu2+0.0.0~ubuntu25`
-- `coreutils-from-uutils=0.0.0~ubuntu25`
+- `coreutils=9.5-1ubuntu2+0.0.0~ubuntu28`
+- `coreutils-from-uutils=0.0.0~ubuntu28`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`, `/usr/share/doc/coreutils-from-uutils/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris coreutils-from=0.0.0~ubuntu28
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu28.tar.xz' coreutils-from_0.0.0~ubuntu28.tar.xz 7776 SHA512:0ba589b6de17a20e19444d8274294cfbf5d7d29c3cc47c8deeb25ec6da1e3803a8c4ff56537b78f7ea629acae96b73cb4288e325640b3d85ce91428a601d52d7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu28.dsc' coreutils-from_0.0.0~ubuntu28.dsc 1937 SHA512:8460db2f2cec113833eaa3bf681b8388dd4ba8fdfad0eca964667e542ba89bb9a9410e0c2a4f19a2eb2132c95f6bfff03dc09c88544396143aa5224904563384
+```
 
 ### `dpkg` source package: `coreutils=9.7-3ubuntu2`
 
@@ -301,13 +305,14 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3t64/copyright`)
 - `X11`
 - `zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-11/
-
+```console
+$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-11
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-11.dsc' db5.3_5.3.28+dfsg2-11.dsc 2032 SHA256:0550eb464a02703e35d86fbc4a7ac0736ab30b2a0ebe0818c490f7106d1d4230
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-11.debian.tar.xz' db5.3_5.3.28+dfsg2-11.debian.tar.xz 36580 SHA256:701601b7398c1ff8714594287db6c042b2cbc2e15bc98e85afd77c4324d3e3aa
+```
 
 ### `dpkg` source package: `debconf=1.5.92`
 
@@ -792,11 +797,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.12.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.2-1ubuntu1.dsc' libgcrypt20_1.12.2-1ubuntu1.dsc 3106 SHA512:afc09b21d7614ad14490b5972ee987a96872defdff7a10eb1a5e292dd5c210a37d48d917e17f5ea1568d5c35ec38db517c185df481d565d8d7182a83bd85035d
 ```
 
-### `dpkg` source package: `libgpg-error=1.58-2`
+### `dpkg` source package: `libgpg-error=1.61-3`
 
 Binary Packages:
 
-- `libgpg-error0:amd64=1.58-2`
+- `libgpg-error0:amd64=1.61-3`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
@@ -807,13 +812,15 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgpg-error/1.58-2/
-
+```console
+$ apt-get source -qq --print-uris libgpg-error=1.61-3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.61-3.dsc' libgpg-error_1.61-3.dsc 2969 SHA512:25377828480372fb65fd560f044132f375e760b734db6becf0f670ca3a0d18f39b6e164aaf1a560428703994ace4850b381f291cdf37a52a48c91739e554826a
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.61.orig.tar.bz2' libgpg-error_1.61.orig.tar.bz2 1124751 SHA512:3e59eb52d061709fd8dfe56a4b36d2d5b49dd5e0c90c283899669d6a355286cb3a3f851631f8456c78c48b652bb31a4c1f8b081ccdf87e5db64b313d141a7670
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.61.orig.tar.bz2.asc' libgpg-error_1.61.orig.tar.bz2.asc 464 SHA512:db0c6f8a2758f374924b31d9117151c699411f16da372ab31024da3e6379c622903a5ee1b8894e24a5cb851fe23efebff99276477d38f2228bfdbdcae6e1466f
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.61-3.debian.tar.xz' libgpg-error_1.61-3.debian.tar.xz 22004 SHA512:cde87c290747bbdb79090369749bd55c6f0a28284c9d565a51a79ec669276b09a7a87364a055545a81402b5ea64e5938c03aa38c836d2172fe2b4b3b461d041f
+```
 
 ### `dpkg` source package: `libmd=1.2.0-2`
 
@@ -885,12 +892,12 @@ $ apt-get source -qq --print-uris libselinux=3.10-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.10-1.debian.tar.xz' libselinux_3.10-1.debian.tar.xz 51700 SHA512:f81fcb973742dcd63131bc185858d531ab2f3bd7da82f745f30c8d349290226d4a09e8e2f72b82db36903784b3f47670c281aaf16213609674ed6d1a358660cf
 ```
 
-### `dpkg` source package: `libsemanage=3.9-1build1`
+### `dpkg` source package: `libsemanage=3.10-1`
 
 Binary Packages:
 
-- `libsemanage-common=3.9-1build1`
-- `libsemanage2:amd64=3.9-1build1`
+- `libsemanage-common=3.10-1`
+- `libsemanage2:amd64=3.10-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/share/doc/libsemanage2/copyright`)
 
@@ -898,9 +905,15 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libsemanage=3.10-1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10-1.dsc' libsemanage_3.10-1.dsc 2980 SHA512:ef0007832411546e7823bc0e4e1a725be6f416ed3796f90127fdd83e5d68b14090e76c5efc987a006d0820e41264c8e3c1a4ba4ff644569c633131154eb2a4dd
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10.orig.tar.gz' libsemanage_3.10.orig.tar.gz 185969 SHA512:e07cb1d7e145b3baa2fb857c043c8ede7581d29fbb6a59709ebbee73097c12768e8b77eab35b4394efc0a655f3d266cdf7b08ac69759d6989d41e4213fe8aafd
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10.orig.tar.gz.asc' libsemanage_3.10.orig.tar.gz.asc 1000 SHA512:cee44df8a2bfe880540fa61a17a23d17447ca272c4a0066ab348ef6c90a7ec7a5d19bd8ae9bba1efd562d7ea4be3afcb66bec2f28e1de5179d4f74320cfa3921
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10-1.debian.tar.xz' libsemanage_3.10-1.debian.tar.xz 38008 SHA512:0d88042521a28e3cb472d144e624ae9551c35c2ebae64d6db2ff60978ee524fe68bbd402c238cd4973acbc5cefa2c359c39d58a1d03f3e47455fba59dda55a82
+```
 
 ### `dpkg` source package: `libsepol=3.10-1`
 
@@ -999,13 +1012,15 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mawk/1.3.4.20260302-1/
-
+```console
+$ apt-get source -qq --print-uris mawk=1.3.4.20260302-1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20260302-1.dsc' mawk_1.3.4.20260302-1.dsc 2969 SHA256:26e1f5c5864ea340a8f16049025a31be2aa16c7bb59ad531616e7066032953e4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20260302.orig.tar.gz' mawk_1.3.4.20260302.orig.tar.gz 438318 SHA256:e2c08a77d0a84a01f9be454d1ca3872d4f103f9ada683d075198b0c6e965633d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20260302.orig.tar.gz.asc' mawk_1.3.4.20260302.orig.tar.gz.asc 729 SHA256:19d493061dff7df253d698f866be24856028155f51abb037fdb4ad2872d611f5
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20260302-1.debian.tar.xz' mawk_1.3.4.20260302-1.debian.tar.xz 16128 SHA256:0e9a3e00800cb10dab402196b0511ed19a9f626e351b6cc1b807026f3594de62
+```
 
 ### `dpkg` source package: `ncurses=6.6+20251231-1`
 
@@ -1470,16 +1485,21 @@ $ apt-get source -qq --print-uris xz-utils=5.8.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1.debian.tar.xz' xz-utils_5.8.3-1.debian.tar.xz 27344 SHA512:acaf62ccbe85eee2f5d489f3d3c358184bbaf814f9c77239de522ea419e5276c0adcba1efb39479f2a580cf8cd84d3ecf6d4ff99bb5e3052439d207b02573e08
 ```
 
-### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu3`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.2-3ubuntu1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1ubuntu3`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.2-3ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.2-3ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2.orig.tar.gz' zlib_1.3.dfsg+really1.3.2.orig.tar.gz 1295859 SHA512:6e537c18904e5f7e7495666202c0d731b9374e6b6969fd2d5283801e9d90a177caf6bd28aa6d10162fa0bec0ed1bb05d87f8486326706bb62fec3d191151613e
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.debian.tar.xz' zlib_1.3.dfsg+really1.3.2-3ubuntu1.debian.tar.xz 22392 SHA512:75195fb471f6c2e82f1ce93e51855b18689a67b28beeea797da59c5ecbbcec205b5f4c327a4b20e20a69e605e15e16c8baa57e231801907a72033c1fa7e1a1fe
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.dsc' zlib_1.3.dfsg+really1.3.2-3ubuntu1.dsc 3375 SHA512:c1145b6e96baf43deb2a56c0e05c4e889ec794f6810ff3269da1cf9ab705ac000d2c0016ab3611a45378a756379f7796ec47b3a0d9941bb6934365f29f06ec70
+```
