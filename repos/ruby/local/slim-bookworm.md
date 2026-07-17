@@ -1,19 +1,19 @@
-# `ruby:4.0.5-slim-bookworm`
+# `ruby:4.0.6-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f5c3ddd928c59f521ced43ab29d6b186bf14340f2d02f1d4f3552fcebe79be7`
-- Created: `2026-07-14T02:13:24.749950214Z`
-- Virtual Size: ~ 173.57 Mb  
+- Image ID: `sha256:7c414fa8e15f1780a4903b386109fdc82284f543f2a8186c9cf470b519c34774`
+- Created: `2026-07-14T16:54:16.728559946Z`
+- Virtual Size: ~ 173.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.5`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=5dc5521ea54c726e6cc10b1b5a0f4004b27b482e61c04c99aed79315e30895e5`
+  - `RUBY_VERSION=4.0.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=9c9d121fe3314ea7c801e690b9de981d2b9d12d7849db99c27482468a541ba0a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
