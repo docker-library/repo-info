@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9197314f1413e2f1282aa405c4d27240302bfb4f3ee2516417dbd3e19ee0ad4`
-- Created: `2026-07-02T06:41:41.174213643Z`
-- Virtual Size: ~ 861.65 Mb  
+- Image ID: `sha256:3ede9d1985bb32eb81088c971f4aad322a4df2251efb6f0dae6197be7ccab842`
+- Created: `2026-07-16T01:29:13.191869509Z`
+- Virtual Size: ~ 859.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -23,20 +23,20 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl260620260531-0302`
+  - `BuildLabel=cl260720260702-0043`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=26.0.0.6`
-  - `com.ibm.websphere.liberty.version=26.0.0.6`
-  - `liberty.version=26.0.0.6`
+  - `ProductVersion=26.0.0.7`
+  - `com.ibm.websphere.liberty.version=26.0.0.7`
+  - `liberty.version=26.0.0.7`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl260620260531-0302`
+  - `org.opencontainers.image.revision=cl260720260702-0043`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=26.0.0.6`
+  - `org.opencontainers.image.version=26.0.0.7`
 
 ## `dpkg` (`.deb`-based packages)
 

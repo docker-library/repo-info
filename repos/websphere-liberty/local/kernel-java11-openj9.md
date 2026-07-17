@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7eeed8f2f75512f74f83a6636a6475a5c0ccc7af48cb569ce7caec8ec4e1f85f`
-- Created: `2026-07-02T05:46:32.57296174Z`
-- Virtual Size: ~ 334.62 Mb  
+- Image ID: `sha256:88dbc9a500c4697fa0713c86400473e45470b93dee3cc61e8036bcd4bdd197ae`
+- Created: `2026-07-16T00:37:34.069086093Z`
+- Virtual Size: ~ 334.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -23,20 +23,20 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl260620260531-0302`
+  - `BuildLabel=cl260720260702-0043`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=26.0.0.6`
-  - `com.ibm.websphere.liberty.version=26.0.0.6`
-  - `liberty.version=26.0.0.6`
+  - `ProductVersion=26.0.0.7`
+  - `com.ibm.websphere.liberty.version=26.0.0.7`
+  - `liberty.version=26.0.0.7`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl260620260531-0302`
+  - `org.opencontainers.image.revision=cl260720260702-0043`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=26.0.0.6`
+  - `org.opencontainers.image.version=26.0.0.7`
 
 ## `dpkg` (`.deb`-based packages)
 
