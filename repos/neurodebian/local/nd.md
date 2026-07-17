@@ -1082,20 +1082,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.7.1-1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1-1.dsc' libffi_3.7.1-1.dsc 2096 SHA256:343b8cb0efd59d014d27a82efd1366e1fb3daa160bf344463e66112f1c6a9e4b
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1.orig.tar.gz' libffi_3.7.1.orig.tar.gz 1515185 SHA256:d5e9a6638ddbd2513ddb54518eb67e4bbe6fa707bcc01c10f6212f0a088d819d
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1-1.debian.tar.xz' libffi_3.7.1-1.debian.tar.xz 11004 SHA256:9f1fd3663c5e6d1c6339e895ea99ea97519eab4695560f6b548b4fab59a326ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.7.1-1/
 
-- https://sources.debian.net/src/libffi/3.7.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.7.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.7.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.12.2-1`
 
