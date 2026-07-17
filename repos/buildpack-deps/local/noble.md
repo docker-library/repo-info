@@ -2253,14 +2253,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.4
-'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.debian.tar.xz' libheif_1.17.6-1ubuntu4.4.debian.tar.xz 13696 SHA512:b66d1308611f87ae13e26885f43bdb64fc31f40964d96eb3ddc4aad950364f1263325567e0ccaeea997c39a43b2f55af622d8be3e637200b6d9255c69a45bae7
-'http://security.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.4.dsc' libheif_1.17.6-1ubuntu4.4.dsc 3561 SHA512:1ea333bb29ce1e134489214d8a7b69845b92e68ee7c90aa87714b666afcaf31a7418cb4ad5688f3b1140156ab2e63e70dce2dd58a69357c14297094590058452
-```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build3`
 
@@ -3130,14 +3125,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-134.134
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.diff.gz' linux_6.8.0-134.134.diff.gz 8241843 SHA512:b0a89b7fb982fef35a854e3029a1b500f5c19a8af8cb10a0bd806554c6a137307ce3e036d14b3beaea14dd927279d3e8ebdff864adf9d66d9588db1196572ea7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-134.134.dsc' linux_6.8.0-134.134.dsc 9473 SHA512:b61f816d05cb7ac489b926b59aa09c203b208333ecaf31da3ea8b78c55622ae21183c142f0f9805ac1f811e26ff470a805a92dfa0f615e37d1ec348fefa11a0a
-```
 
 ### `dpkg` source package: `lto-disabled-list=47`
 
@@ -4640,15 +4630,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA256:81542f5cefb8faacc39bbbc6c82ded80e3e4a88505ae72ea51df27525bcde04c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA256:fb1ce21577dee962be8bf95cbf86f806815778264622a5d756324ff8dd3bfc57
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.debian.tar.xz' wget_1.21.4-1ubuntu4.1.debian.tar.xz 65000 SHA256:82c6ea0038692a42e2e9c3059ddae0fdc948fcf7d4bb23087ec34200a4bcee0e
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.1.dsc' wget_1.21.4-1ubuntu4.1.dsc 2251 SHA256:7d544dbdfa13f1e22b848ab4f8f2459ebb2273897b869508e93092e7e34baaa7
-```
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1.1`
 
