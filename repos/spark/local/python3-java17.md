@@ -2169,9 +2169,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-185.195
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-185.195.diff.gz' linux_5.15.0-185.195.diff.gz 12831444 SHA512:345ea889a7694b6bc08f8682b0999cda8e6232a1e589acf6a3a9cbab475ca85789567f4918972e520553ab7f303d8159044a4cb33d331e522cff369c095d5db6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-185.195.dsc' linux_5.15.0-185.195.dsc 7824 SHA512:56d50954282fe4190360efdb1f467eaba8856f86e129df0ed06c84aa4f581f16a408e587d0f44f390a213e7a165ddfba5a6ab9dc721ec23acd2e35d034abb07d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-185.195.diff.gz' linux_5.15.0-185.195.diff.gz 12831444 SHA512:345ea889a7694b6bc08f8682b0999cda8e6232a1e589acf6a3a9cbab475ca85789567f4918972e520553ab7f303d8159044a4cb33d331e522cff369c095d5db6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-185.195.dsc' linux_5.15.0-185.195.dsc 7824 SHA512:56d50954282fe4190360efdb1f467eaba8856f86e129df0ed06c84aa4f581f16a408e587d0f44f390a213e7a165ddfba5a6ab9dc721ec23acd2e35d034abb07d
 ```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
@@ -2918,9 +2918,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8.orig.tar.xz' python3-stdlib-extensions_3.10.8.orig.tar.xz 1118220 SHA256:7df3daa415b5295898067c30aab0bb7e3922406f1e7b772400d0789e102c6976
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA256:d00e41f6fbd5a119f4cfe7608f9b551823ce033846b245185db43765da9b0e2f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.dsc' python3-stdlib-extensions_3.10.8-1~22.04.dsc 2599 SHA256:3f11ecfb84aad5f1688d7f0e4b07b5341995fbba40f9330b44140853d9b45af8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8.orig.tar.xz' python3-stdlib-extensions_3.10.8.orig.tar.xz 1118220 SHA512:0583a86aad9ce78df7c175c82fe09611a72e7d60567f5269843781711702c6f3ae0c209a1a8b71eb35d9c9a5e210e8fbac1c7e6302e106cde48a2db0d29dc2ad
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.dsc' python3-stdlib-extensions_3.10.8-1~22.04.dsc 2599 SHA512:4ff10912289f2bb26884c865c18aed3b19c310dda74d75b838575aaecb3cdc256bea1e14dad5c079bb5a3c5ec3553e136e461d0bf39af956a4e287caae8e2aa6
 ```
 
 ### `dpkg` source package: `python3.10=3.10.12-1~22.04.15`
@@ -3402,15 +3402,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz' wget_1.21.2.orig.tar.gz 5004576 SHA256:e6d4c76be82c676dd7e8c61a29b2ac8510ae108a810b5d1d18fc9a1d2c9a2497
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz.asc' wget_1.21.2.orig.tar.gz.asc 833 SHA256:877e0b2580655a0ef71628f3975d2f629f56f5338b169667f97c2742e9970137
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.1.debian.tar.xz' wget_1.21.2-2ubuntu1.1.debian.tar.xz 65124 SHA256:3f2e8d5e9fa30f40120839566ce793c9a325f692da12db94fa34d5abc1bab47b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.1.dsc' wget_1.21.2-2ubuntu1.1.dsc 2251 SHA256:20677326d7ba35e97e44d895d2354f06810f5872e2f8b931546e8b752a928712
-```
 
 ### `dpkg` source package: `wheel=0.37.1-2ubuntu0.22.04.1`
 
