@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b792fd24bcfa8eeeb95a96d11db0045e62a7346ed641a195f558df330e31c4b`
-- Created: `2026-07-13T18:46:42.375226771Z`
+- Image ID: `sha256:13e86b5d6b9ffe758b958c8d107e065212bd4add422576c5018fff7973e5a746`
+- Created: `2026-07-14T17:44:01.792676274Z`
 - Virtual Size: ~ 448.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3`
   - `INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub`
   - `INFLUXDB_IOX_DB_DIR=/var/lib/influxdb3`
-  - `LOG_FILTER=info`
+  - `INFLUXDB3_LOG_FILTER=info`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
