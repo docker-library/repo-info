@@ -1,18 +1,18 @@
-# `nginx:1.30.3-perl`
+# `nginx:1.30.4-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:332758c7b6d3ec03a6915112363ca43c5aca08da311e9292f708cc05c3fde8f8`
-- Created: `2026-07-14T02:27:23.152406361Z`
-- Virtual Size: ~ 212.1 Mb  
+- Image ID: `sha256:7ef11d1a644221fcc6e57f35d473a7d98ffa71b9274a2925932d0049464dba24`
+- Created: `2026-07-15T23:56:57.255623656Z`
+- Virtual Size: ~ 212.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.3`
-  - `NJS_VERSION=0.9.9`
+  - `NGINX_VERSION=1.30.4`
+  - `NJS_VERSION=1.0.0`
   - `NJS_RELEASE=1~trixie`
   - `ACME_VERSION=0.4.1`
   - `PKG_RELEASE=1~trixie`
@@ -2675,11 +2675,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.30.3+0.4.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.30.4+0.4.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.30.3+0.4.1-1~trixie`
+- `nginx-module-acme=1.30.4+0.4.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2689,11 +2689,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.30.3-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.30.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.30.3-1~trixie`
+- `nginx-module-geoip=1.30.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2703,11 +2703,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.30.3-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.30.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.30.3-1~trixie`
+- `nginx-module-image-filter=1.30.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2717,11 +2717,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.30.3+0.9.9-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.30.4+1.0.0-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.30.3+0.9.9-1~trixie`
+- `nginx-module-njs=1.30.4+1.0.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2731,11 +2731,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.30.3-1~trixie`
+### `dpkg` source package: `nginx-module-perl=1.30.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-perl=1.30.3-1~trixie`
+- `nginx-module-perl=1.30.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2745,11 +2745,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.30.3-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.30.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.30.3-1~trixie`
+- `nginx-module-xslt=1.30.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2759,11 +2759,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.30.3-1~trixie`
+### `dpkg` source package: `nginx=1.30.4-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.30.3-1~trixie`
+- `nginx=1.30.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
