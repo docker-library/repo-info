@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb172276216b63561e5c3020c0edb83d859f7b1b7141d189f7cfa9cd6989d758`
-- Created: `2026-07-01T01:10:47.142619638Z`
-- Virtual Size: ~ 760.04 Mb  
+- Image ID: `sha256:33e217954e68a3836da9fe5ae7aa7af523c9bc27d2e1b5160b8c76b91dab8fcb`
+- Created: `2026-07-16T01:13:55.965045686Z`
+- Virtual Size: ~ 760.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.6.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-30T05:29:15Z`
+  - `build-date=2026-07-15T05:22:58Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-06-30T05:29:15Z`
-  - `org.opencontainers.image.revision=9d52f7ccf5e43749249b95c398cdcb9020bc399d`
-  - `release=1782797275`
+  - `org.opencontainers.image.created=2026-07-15T05:22:58Z`
+  - `org.opencontainers.image.revision=16f88afee7519f22ef5135afbe7398092df3f543`
+  - `release=1784092902`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=9d52f7ccf5e43749249b95c398cdcb9020bc399d`
+  - `vcs-ref=16f88afee7519f22ef5135afbe7398092df3f543`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -486,15 +486,15 @@ $ dnf --quiet download --source --url git-core-doc-2.52.0-1.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.52.0-1.el9.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.7.1-4.el9_8.1.x86_64`
+### `rpm` package: `git-lfs-3.7.1-4.el9_8.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url git-lfs-3.7.1-4.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.7.1-4.el9_8.1.src.rpm
+$ dnf --quiet download --source --url git-lfs-3.7.1-4.el9_8.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.7.1-4.el9_8.2.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.68.4-19.el9_8.1.x86_64`
@@ -1224,15 +1224,15 @@ $ dnf --quiet download --source --url libsmartcols-2.37.4-25.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-25.el9.src.rpm
 ```
 
-### `rpm` package: `libsolv-0.7.24-5.el9_8.x86_64`
+### `rpm` package: `libsolv-0.7.24-6.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsolv-0.7.24-5.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-5.el9_8.src.rpm
+$ dnf --quiet download --source --url libsolv-0.7.24-6.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-6.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-11.5.0-14.el9.x86_64`
@@ -1334,15 +1334,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-14.el9_8.1.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_8.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.1.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.2.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1510,15 +1510,15 @@ $ dnf --quiet download --source --url openssh-clients-9.9p1-7.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-7.el9_8.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.5-4.el9_8.x86_64`
+### `rpm` package: `openssl-3.5.5-5.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-3.5.5-4.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-4.el9_8.src.rpm
+$ dnf --quiet download --source --url openssl-3.5.5-5.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-5.el9_8.src.rpm
 ```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-11.el9_8.x86_64`
@@ -1543,15 +1543,15 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-11.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-11.el9_8.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.5-4.el9_8.x86_64`
+### `rpm` package: `openssl-libs-3.5.5-5.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.5-4.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-4.el9_8.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.5-5.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-5.el9_8.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.26.2-1.el9.x86_64`
