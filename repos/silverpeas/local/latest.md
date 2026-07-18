@@ -717,9 +717,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dbus=1.12.20-2ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20.orig.tar.gz' dbus_1.12.20.orig.tar.gz 2095511 SHA256:f77620140ecb4cdc67f37fb444f8a6bea70b5b6461f12f1cbe2cec60fa7de5fe
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20-2ubuntu4.1.debian.tar.xz' dbus_1.12.20-2ubuntu4.1.debian.tar.xz 65220 SHA256:c1f655920ef22949145c7b2287a057012c71ae39b3998b8bc260ce0609c30585
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20-2ubuntu4.1.dsc' dbus_1.12.20-2ubuntu4.1.dsc 3271 SHA256:9eb0861266c097572ae79ced86c85fda3401c6544f1d08151213683e036f8be9
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20.orig.tar.gz' dbus_1.12.20.orig.tar.gz 2095511 SHA512:0964683bc6859374cc94e42e1ec0cdb542cca67971c205fcba4352500b6c0891665b0718e7d85eb060c81cb82e3346c313892bc02384da300ddd306c7eef0056
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20-2ubuntu4.1.debian.tar.xz' dbus_1.12.20-2ubuntu4.1.debian.tar.xz 65220 SHA512:2875cc688bc37a8b5c6a4e0bbb28a0a153709d70ddf8ee264d78ba44efdd0346776df86be493e9b68526387ae97a02abc76da7672abb5ca3537891fc455d1c2f
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.20-2ubuntu4.1.dsc' dbus_1.12.20-2ubuntu4.1.dsc 3271 SHA512:161aca34132f46355d230c9acfe4860a5a05b6c881dfedae682f6553ce6e48e9a1cffd38c2097e4e320afbc6594de3ef391caaa5e94eaec64a28cfa69c7b8798
 ```
 
 ### `dpkg` source package: `dconf=0.40.0-3ubuntu0.1`
