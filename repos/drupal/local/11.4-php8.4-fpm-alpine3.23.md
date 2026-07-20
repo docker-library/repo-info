@@ -1,10 +1,10 @@
-# `drupal:11.4.1-php8.4-fpm-alpine3.23`
+# `drupal:11.4.4-php8.4-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1c096e7d0a7a1806ed0cda20c035c3217a0cc5a25f2765170a725601b6118c8`
-- Created: `2026-07-06T21:38:11.43114973Z`
-- Virtual Size: ~ 211.16 Mb  
+- Image ID: `sha256:c9d72456bffb10bced0d1761bd46148b8a38b5ac4cd61c5223f739f5c32391d9`
+- Created: `2026-07-15T21:38:06.941124406Z`
+- Virtual Size: ~ 211.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.23.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.23.tar.xz.asc`
   - `PHP_SHA256=1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72`
-  - `DRUPAL_VERSION=11.4.1`
+  - `DRUPAL_VERSION=11.4.4`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -284,16 +284,16 @@ curl
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
