@@ -1376,14 +1376,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.2.debian.tar.xz' tar_1.35+dfsg-4ubuntu0.2.debian.tar.xz 49796 SHA512:7ed7b0234a271b2d57e51298efe381483197d485815e2ed54b713b030d447ad672a3e15a7ded79f7c5c35e7728bd6161868f45dbe509b0ed290f1fdb85f8dced
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.2.dsc' tar_1.35+dfsg-4ubuntu0.2.dsc 2124 SHA512:a1fdda4eb6610396567f0f55bf6502abe494213d946776be501a55a3290c9ae15c716313d5bb6fa1a9f93358a4ca1379bf74638f8723e2a5c9bdb9edbba9c417
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 
