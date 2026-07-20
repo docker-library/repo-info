@@ -2007,14 +2007,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-27.27
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-27.27.diff.gz' linux_7.0.0-27.27.diff.gz 1122147 SHA512:96547cf0d02bf3bed277032a065e3d681bb3806d4785fbdf20d97eaea3cc8bb4bae7cbb5a0e55f6b5b6deb80df47c78ccea7b77b8162468d93d4ca20d0f7c39c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-27.27.dsc' linux_7.0.0-27.27.dsc 7925 SHA512:6935d5a6b3fcb3383899ee5167acb6d2660a8ad9a581c5c5d4a9c069de42ba154fc24bf6debac437b121b99b10b447e67f5be8426344d43efe5f7d3e16b8db3f
-```
 
 ### `dpkg` source package: `lsb-release-minimal=12.1-2build1`
 
@@ -5960,15 +5955,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz 36180 SHA512:65fbf93fd72c530cc8d262d5a8707a39b8cb8d354baf0b494abd8ee2ca7d572d6c3da10657816fc84ac852ea3dcd61ed2e4d9b19249b03bd2d58c039fd6371af
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.dsc' sqlite3_3.46.1-9ubuntu0.1.dsc 2756 SHA512:4c269a90477b177a9e55473f402314e1a09bfd08671db72ba633986d347094f50ae9a43c6f4077d04888eb01765d53504a7c921c743a000fdda9c49e34ea6b63
-```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3`
 
@@ -6040,14 +6029,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.2.debian.tar.xz' tar_1.35+dfsg-4ubuntu0.2.debian.tar.xz 49796 SHA512:7ed7b0234a271b2d57e51298efe381483197d485815e2ed54b713b030d447ad672a3e15a7ded79f7c5c35e7728bd6161868f45dbe509b0ed290f1fdb85f8dced
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.2.dsc' tar_1.35+dfsg-4ubuntu0.2.dsc 2124 SHA512:a1fdda4eb6610396567f0f55bf6502abe494213d946776be501a55a3290c9ae15c716313d5bb6fa1a9f93358a4ca1379bf74638f8723e2a5c9bdb9edbba9c417
-```
 
 ### `dpkg` source package: `tinyxml2=11.0.0+dfsg-1build1`
 
