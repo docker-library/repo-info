@@ -1,10 +1,10 @@
-# `postgres:19beta1-alpine3.24`
+# `postgres:19beta2-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f159cc2aac778d1919893438b7db4cf738d165c074fdc955bf732398280e17de`
-- Created: `2026-07-07T17:46:25.57284884Z`
-- Virtual Size: ~ 306.36 Mb  
+- Image ID: `sha256:3b4b0000fd3100c9b60ccb9ff94e6352b9fea27921b0c33437195e416f376167`
+- Created: `2026-07-16T22:07:37.823752185Z`
+- Virtual Size: ~ 306.4 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=19`
-  - `PG_VERSION=19beta1`
-  - `PG_SHA256=d8c8d3e18c12e9fb792b3e927049900d40571f4ef6167017a23e5bbfc40d30ee`
+  - `PG_VERSION=19beta2`
+  - `PG_SHA256=f1fb4373f4b0f4db896964f3e5b01658ff0acebd595da7558436ccf0d63b82b2`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/19/docker`
 
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -823,16 +823,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

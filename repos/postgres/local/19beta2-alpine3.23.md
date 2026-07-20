@@ -1,10 +1,10 @@
-# `postgres:19beta1-alpine3.23`
+# `postgres:19beta2-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59b7c28b5ffeccee4c60dc9ef4b3c9bf48c3946ac682070d8b258f733b32f5fd`
-- Created: `2026-07-07T17:46:27.197427926Z`
-- Virtual Size: ~ 304.97 Mb  
+- Image ID: `sha256:b7d2c78d0794d718f387407fa2f36d349eb02d40019ce872c940a9b1128cf3e1`
+- Created: `2026-07-16T22:07:51.355115829Z`
+- Virtual Size: ~ 305 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=19`
-  - `PG_VERSION=19beta1`
-  - `PG_SHA256=d8c8d3e18c12e9fb792b3e927049900d40571f4ef6167017a23e5bbfc40d30ee`
+  - `PG_VERSION=19beta2`
+  - `PG_SHA256=f1fb4373f4b0f4db896964f3e5b01658ff0acebd595da7558436ccf0d63b82b2`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/19/docker`
 
@@ -177,16 +177,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -364,16 +364,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```
@@ -823,16 +823,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
