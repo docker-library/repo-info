@@ -8,8 +8,8 @@
 -	[`orientdb:3.1.20-tp3`](#orientdb3120-tp3)
 -	[`orientdb:3.2`](#orientdb32)
 -	[`orientdb:3.2-tp3`](#orientdb32-tp3)
--	[`orientdb:3.2.54`](#orientdb3254)
--	[`orientdb:3.2.54-tp3`](#orientdb3254-tp3)
+-	[`orientdb:3.2.55`](#orientdb3255)
+-	[`orientdb:3.2.55-tp3`](#orientdb3255-tp3)
 -	[`orientdb:latest`](#orientdblatest)
 
 ## `orientdb:3.1`
@@ -683,7 +683,7 @@ $ docker pull orientdb@sha256:a27d52fe886e62a8434888ac1bf0886a574d34fb068393a0e5
 ## `orientdb:3.2`
 
 ```console
-$ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb2ce4d1bfd8a748
+$ docker pull orientdb@sha256:d627d20f531e6a69dd795cd4712dcff0a6faceb61279b12292610d78d5b4562b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -698,13 +698,13 @@ $ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb
 ### `orientdb:3.2` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:b6ded3c3f48bfc92ab72b2b9a8642eb6c88754f0303db69b5b7cf71e7a053cbe
+$ docker pull orientdb@sha256:34ec6868bbe43dd4097e7ac368e7c1f6168bdc08939bd87f64cec94409e2f9c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.1 MB (191126595 bytes)**  
+-	Total Size: **192.8 MB (192823847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27a60594dd26c3d3ff27dca1a70b17961c8ec382ac683bc0f6b6a08eadcb8771`
+-	Image ID: `sha256:485478d1582983fb4a55bac99796894e336e150274019a05b830c1c54fcd8a3b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -753,35 +753,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:45:21 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 CMD ["server.sh"]
 ```
 
@@ -810,13 +810,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:0e1231ff97a3ca59055171f70388fae0f1cab97e62d94ce65679ae732eace144`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 411.7 KB (411663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0928243c38cc61a36f2eab87cc0e3f4b2c7f42df9afd8784381feb4181a9f46a`  
-		Last Modified: Thu, 16 Jul 2026 01:17:03 GMT  
-		Size: 74.2 MB (74220625 bytes)  
+	-	`sha256:be6f55d043450e33fc855fd37b28a53a8efc74b377f59f3c98bfa71509309d53`  
+		Last Modified: Mon, 20 Jul 2026 22:45:39 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -826,37 +826,37 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:24e0c25cad643e3ab29df3132c8ac42b1af099792b23a9068333a2c751124e4b
+$ docker pull orientdb@sha256:ac273f45bf4d1029fdb23a84ab27a0f0f26c3344aa01202b5b914f07ee2d1271
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5405951 bytes)**  
+-	Total Size: **5.4 MB (5406033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65a647bcf57e6eb3b41dddc1cce68b632eeb55dcf41c517d6e37f6d713494c8b`
+-	Image ID: `sha256:b463230bdcd4c222acd9c6fcfade8252139240a2e0969e55e374dca46894a36d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39ec0d68168f3f269b0a741ac5ea2d6ba0adde24ea5f2d99b056f4b2ea3efa94`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 5.4 MB (5390860 bytes)  
+	-	`sha256:fb75dc67e6b5ce681ac491ef91529956cd8544affa8107e6e2e63a8e7e1b6f24`  
+		Last Modified: Mon, 20 Jul 2026 22:45:38 GMT  
+		Size: 5.4 MB (5390932 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ced8b13bad977c3421b82e7b44474d4df384b1dee48ba671cb01d025cd300e05`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 15.1 KB (15091 bytes)  
+	-	`sha256:a075b90035706445f0119800324dabd66ee671dbfd9a95d6b89aca6237839348`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 15.1 KB (15101 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:96d8e7285b3ddc3363989c744cb588d84efa394220fdf811c627bc094c5f7208
+$ docker pull orientdb@sha256:b9a771ae8a9a473af5bd1294559c36489b26248c1fd78302ef47d1de4923ed79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.6 MB (182639193 bytes)**  
+-	Total Size: **184.3 MB (184301758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64b003c6b81e676b35cc76421331bbd98a88e1c093afebcb0aaf3900fb5fddf`
+-	Image ID: `sha256:0cf8e482c110493efab959d4db309e031ded7dc5f8502816226bf95094e14321`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -905,35 +905,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:21:27 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 23:00:39 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 CMD ["server.sh"]
 ```
 
@@ -962,13 +962,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:21:41 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:fb90502dbd24003fb9d0c3db2fec206424d9cd553d91da75f8a7b4919f009ea2`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 377.0 KB (376974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8d3b57bd9d8b2c8759b5b217c7d3f20a766b9ae5e4f7e902eb561fdd97fdab5`  
-		Last Modified: Thu, 16 Jul 2026 01:14:10 GMT  
-		Size: 74.2 MB (74220623 bytes)  
+	-	`sha256:714ff64f43a3d2ddf5ac6155a7ab5a150ba82c1d623a46271f1f48386578b49f`  
+		Last Modified: Mon, 20 Jul 2026 23:00:59 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -978,37 +978,37 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:d17496e3b38fb5c4fa80ee57e2919e5e3d82d368b223f6a277c77d952c2a8e1d
+$ docker pull orientdb@sha256:96be198bd9002c59b800fe159ca758cedde5c92ec8d3890dcfa31502366d7def
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5409219 bytes)**  
+-	Total Size: **5.4 MB (5409303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dfc0f67aad2e4e9746f98a8b5540a7184c019b5422413ee1f3b8917f19e914a`
+-	Image ID: `sha256:3ad39f4de61e3f2526c31defb05d20c6dda4e2caa24027793aa4f8cfb83dd3a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f00383ba20facefcf9991e3584cce0b86fa06619f2e76251c35b40fe3bdd3`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 5.4 MB (5394043 bytes)  
+	-	`sha256:f63629c662dbfe1d1257bd01e590f0d13771dc3531906576c172f613152ff3c9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 5.4 MB (5394115 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6c794b2429d87c0218498383e9ee445a641a14d3ea8953676255b2faa544ee39`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 15.2 KB (15176 bytes)  
+	-	`sha256:3b54e2187efc32354d3ae01d49f1e30931e11a7ca794c1e4ca4b66ce534d2ae9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 15.2 KB (15188 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:148f47f4fca21e174d52cf69dfa77594154cc873a8f8b18169cb9d01b3d2be82
+$ docker pull orientdb@sha256:2d21cd585faf1bf3f13d94080058c4efdb4b1199051716ab8f2072111676e500
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.1 MB (189136686 bytes)**  
+-	Total Size: **190.8 MB (190828736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ab043a473cc04c74a06ec45a50f33aa475bcdd55595e2c7a04c05d96ba70ec4`
+-	Image ID: `sha256:1b6874c263d1456aa1d0ad537bbbae0ffe448c81e10a4e93c87406d4ea0d4104`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1057,35 +1057,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:47:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 CMD ["server.sh"]
 ```
 
@@ -1114,13 +1114,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:2dcb09bce3163e96c6454c6e6a09570c3c06e4c49a8878af5a6b3411c467407d`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 406.4 KB (406435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f738da1a037ecddfaf4f8e6fcff2c48efc569d670c0ccf6095d5db2b99fe001b`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 74.2 MB (74220637 bytes)  
+	-	`sha256:b98a6eade98b5091e06577305cd1de2c9d2fcdbf51f8041ca8186838b09ee0df`  
+		Last Modified: Mon, 20 Jul 2026 22:48:01 GMT  
+		Size: 75.5 MB (75506284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1130,31 +1130,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:f50e9ddd0dca905a888c483adf12716733c32ee1331b6073604b978eb4352368
+$ docker pull orientdb@sha256:5a4c607a752f94afa07ec0895926090eb5e71e04d4248fd2608ebf5ece857d1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5406413 bytes)**  
+-	Total Size: **5.4 MB (5406499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab1dbd41a416ba5a21474dfa0d29d8a6ec94de6b08325f928b60d85828202a87`
+-	Image ID: `sha256:d8cb5dd6ef989abe6c358eb1c8c91f731f4fbaaa60bb0bfbb54afd2ff0527fd4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:730b5f6c7ff1252e826b496f73ef3ebf091628f65251fdb8b42f7407b36551ef`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 5.4 MB (5391217 bytes)  
+	-	`sha256:83ad233cd7763887855d1f63f3dab94aaed714c7bc7b0fc7dbb5539b4970f85f`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 5.4 MB (5391289 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cd785ff0df1b439ced4fa252097dd2055a6d45cf598037c9bf36d665c6752fb8`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 15.2 KB (15196 bytes)  
+	-	`sha256:a500b701075e0b1c420a2c57833e1f502053b2dce75e15b2d9b6c78c678f449e`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 15.2 KB (15210 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2-tp3`
 
 ```console
-$ docker pull orientdb@sha256:ee63abb616cb6509081659f6a65fd019ca9337f32159c15fa4d612bc12ac4d97
+$ docker pull orientdb@sha256:3455152710627b9e23b6784aabb2f2a5dfe95e01f0658a419cfc55d54e6e2cd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1169,13 +1169,13 @@ $ docker pull orientdb@sha256:ee63abb616cb6509081659f6a65fd019ca9337f32159c15fa4
 ### `orientdb:3.2-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:21573eb4dbccaeb7b5b5be0a3ec3bf392757e4cbc42ad25013f1b2d0cd69331a
+$ docker pull orientdb@sha256:1184f4e4262b727ec94ec7fe41a8e85bbf99628d476680431f4896a387be59d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.1 MB (223065166 bytes)**  
+-	Total Size: **224.8 MB (224759408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55290c029044822670d544941e069e8d79b391fc902695b4a17049e3a5ad0f6e`
+-	Image ID: `sha256:6ada4f7e8554045e16e7506dfd9747db27c0f4f662e379c84a6307fd44006040`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1224,39 +1224,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:45:27 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 CMD ["server.sh"]
 ```
 
@@ -1285,17 +1285,17 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:5448927b06285d876dd311d7973721803e403deed29cf8e7bcbf7bf2cd974006`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 411.7 KB (411659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5751b99437ea61b1cd3187a3d96605f8229cdadec9df45ea2b8b9fd284a7fd0`  
-		Last Modified: Thu, 16 Jul 2026 01:17:12 GMT  
-		Size: 106.2 MB (106157827 bytes)  
+	-	`sha256:67101465fcaf633f74ae05bf477b27700262a7e16b98c18aa10c46705aeddc5d`  
+		Last Modified: Mon, 20 Jul 2026 22:45:48 GMT  
+		Size: 107.4 MB (107440440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b606f94187bb9120a75464851b19c693e83ef7f7e80fb842fce5d1f31a950f9c`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 1.4 KB (1369 bytes)  
+	-	`sha256:4f3cbd7807328822937b3f8a7001d0da78ffc1bd8478d705021fabc086f3b6c4`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 1.4 KB (1371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1305,37 +1305,37 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:35e15a64d9c665aeb7d8a9d174fe0f4a21459c9ff9c7b2f5855522c3ad8a6b23
+$ docker pull orientdb@sha256:0d2932fc2cfb73e13e9e212978a46937cb883c9e6009eb6055771436e8fb94cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5544572 bytes)**  
+-	Total Size: **5.5 MB (5544660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9b2bbfec99f15a18413179b18afe1d81ec00effc9397280107c75d598fed622`
+-	Image ID: `sha256:40ba713091eac70205b5d2b0035618ef6a948d6b6116ee5f9c10a6ee91b7a385`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2875e5b4080d6b10fc81e48331d16b2ef4b246fcc956188aba4620acac90b0ce`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 5.5 MB (5526999 bytes)  
+	-	`sha256:13eb88410a4edaf83db593259532184d52158a69b3c33975913460187724d94e`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 5.5 MB (5527071 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:632ba2d04ac87624b53c030db2c637b69fe21ba167414520ed4f2adb218e2290`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 17.6 KB (17573 bytes)  
+	-	`sha256:623c50faaa882651b9647ff81294d4ce77ddf5ccc52788644c545c2ae8581ad2`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 17.6 KB (17589 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2-tp3` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:39a54c7cfe52da15d8ab3ae6f8e0d9a435a0e26ea6fee165e7e94281b3833efb
+$ docker pull orientdb@sha256:d5d5a02d9072ccf721b132797aa95ab338cc4b3d8c66476ff2fe45c4591fcf03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.6 MB (214577803 bytes)**  
+-	Total Size: **216.2 MB (216237325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d08489435126d5389b0f489004c40f144cc7dc0678c935c9c06197b2d5f44978`
+-	Image ID: `sha256:f0a9b0a94591155b034750a78cd4e3fa5bf3a0edec3ec06f077fe10a360a8bf7`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1384,39 +1384,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:21:27 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 23:00:47 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 CMD ["server.sh"]
 ```
 
@@ -1445,17 +1445,17 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:21:41 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:6e5713db34ff0396e522f234790011503a1f3b251643301333d11c1d3a7bfc9d`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 377.0 KB (376977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4964a62bca425d57c89ba800b73bc5bb1056d089ae48b2c5877351a974461200`  
-		Last Modified: Thu, 16 Jul 2026 01:14:23 GMT  
-		Size: 106.2 MB (106157862 bytes)  
+	-	`sha256:350691c3602cfcce4a7394f67cb243aa2562b217aa510728212a5e403c2783ad`  
+		Last Modified: Mon, 20 Jul 2026 23:01:10 GMT  
+		Size: 107.4 MB (107440440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:082bd88c3e09fe9df952b11f319b2d3d4d02de6edeecaae0732cb4028efdbf13`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:b2e2256021134015141cb13559302f69dc1a8cd34324eb8646c8a46ca922dfdb`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 1.4 KB (1370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1465,37 +1465,37 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:14157d9737a294f6ce3a9df961608c08614ef6623b6b9952e6f3c0c828511e3f
+$ docker pull orientdb@sha256:c8bf25cf9e37637e2da61e55aa42acc78ecee0b6eff1a1898833a272531c1f1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5547824 bytes)**  
+-	Total Size: **5.5 MB (5547912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33426b1056a7739f725ae6616efa1100eecc858b008284ad5df0a843aac82489`
+-	Image ID: `sha256:0a608c324a3d528787cef2c2aabeec6c2a7c25f2782b7bd9d4bb41ab2d233079`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c8f251ffb07cc5d38fc1ef834cc4ab55b836a28732c184b711dc4edc5d45f3d`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 5.5 MB (5530174 bytes)  
+	-	`sha256:bdf8ea1cef117c7fe08d232006c1c38be78f27e398f727116d712a6934fa4166`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 5.5 MB (5530246 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86ebd828e7111ae260ffc2e2f35990aef9e11d27e58347e940b1b0b97347a746`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 17.6 KB (17650 bytes)  
+	-	`sha256:14a480604aae9406005d253717ee9adec35412894f2f62ed8ac0e2216bc2ce23`  
+		Last Modified: Mon, 20 Jul 2026 23:01:07 GMT  
+		Size: 17.7 KB (17666 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2-tp3` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:05267c7f693990819aef2fffeb6ae4c8f8130624abf2e160933052c5491eae0a
+$ docker pull orientdb@sha256:99191d9ffd6d72278e1a7d0a9de2893f5551a58adda373b36d2214cab2570442
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.1 MB (221075277 bytes)**  
+-	Total Size: **222.8 MB (222764236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25b87206ccd827f8b53bb642e5129af2dbea8f865fb9448f662cd823f96a6fb3`
+-	Image ID: `sha256:3c3a2d81ea75874fdbaac33c406726ab8df937e5fb2d847504b4cccbccb13b9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1544,39 +1544,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:47:47 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 CMD ["server.sh"]
 ```
 
@@ -1605,17 +1605,17 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:e745af944d787cccd2decedf322462e9a2d89dc97dd64974c7d6feb70007823d`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 406.4 KB (406440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:263ad025a12e716ead9a0807f1e3fb77da0bdd162c43f5b7d13de5b0a7db6ca2`  
-		Last Modified: Thu, 16 Jul 2026 01:16:57 GMT  
-		Size: 106.2 MB (106157857 bytes)  
+	-	`sha256:ee3b7a10879f9df026ab8efbd75aeb0ab93bcfa0e8b09d180638c2d7fe4ee382`  
+		Last Modified: Mon, 20 Jul 2026 22:48:08 GMT  
+		Size: 107.4 MB (107440406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b7127809db36fff06a14136d1de1ba0e9156483a792e20f99cf8a58252ef19e`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:0d74ac64f6988c1342e88395633a88a23844f9d0488ff50d751963459e61c701`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 1.4 KB (1373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1625,31 +1625,31 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:60bfd48e336bbafe5332feaf8e52966e05170bb12babeb4969cb0243f9480fa1
+$ docker pull orientdb@sha256:dc3c3e65952797eb8ff915ed31914a8f40a87e944d98272dd201e703dda84282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5545012 bytes)**  
+-	Total Size: **5.5 MB (5545099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a2dd847d096155ba33a63297d6820bf997a2ac6c4f9d37f0f46a20df1ef3d70`
+-	Image ID: `sha256:6f477a907d8ab92cae2cf89a1746f72cbba191d78dcc04efc3e9ca117b50795a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29349b8869b3e6300c0a50a82c59051801ee699cb24c83e2ab78893746b6ac44`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 5.5 MB (5527344 bytes)  
+	-	`sha256:4dfbf9a6194f5186709a22cab075a60ca5fd39bdc9e18ec2d4a434737cc471e4`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 5.5 MB (5527416 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fef0400889e123f6ee158128492ca7b4e6c958804623a585ed4d3cae5a69903`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 17.7 KB (17668 bytes)  
+	-	`sha256:08fd355f6abb4987d581337ef2bf42e0cfeb97000b3524ab6cbd24289f6a6754`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 17.7 KB (17683 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `orientdb:3.2.54`
+## `orientdb:3.2.55`
 
 ```console
-$ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb2ce4d1bfd8a748
+$ docker pull orientdb@sha256:d627d20f531e6a69dd795cd4712dcff0a6faceb61279b12292610d78d5b4562b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1661,16 +1661,16 @@ $ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `orientdb:3.2.54` - linux; amd64
+### `orientdb:3.2.55` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:b6ded3c3f48bfc92ab72b2b9a8642eb6c88754f0303db69b5b7cf71e7a053cbe
+$ docker pull orientdb@sha256:34ec6868bbe43dd4097e7ac368e7c1f6168bdc08939bd87f64cec94409e2f9c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.1 MB (191126595 bytes)**  
+-	Total Size: **192.8 MB (192823847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27a60594dd26c3d3ff27dca1a70b17961c8ec382ac683bc0f6b6a08eadcb8771`
+-	Image ID: `sha256:485478d1582983fb4a55bac99796894e336e150274019a05b830c1c54fcd8a3b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1719,35 +1719,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:45:21 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 CMD ["server.sh"]
 ```
 
@@ -1776,53 +1776,53 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:0e1231ff97a3ca59055171f70388fae0f1cab97e62d94ce65679ae732eace144`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 411.7 KB (411663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0928243c38cc61a36f2eab87cc0e3f4b2c7f42df9afd8784381feb4181a9f46a`  
-		Last Modified: Thu, 16 Jul 2026 01:17:03 GMT  
-		Size: 74.2 MB (74220625 bytes)  
+	-	`sha256:be6f55d043450e33fc855fd37b28a53a8efc74b377f59f3c98bfa71509309d53`  
+		Last Modified: Mon, 20 Jul 2026 22:45:39 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54` - unknown; unknown
+### `orientdb:3.2.55` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:24e0c25cad643e3ab29df3132c8ac42b1af099792b23a9068333a2c751124e4b
+$ docker pull orientdb@sha256:ac273f45bf4d1029fdb23a84ab27a0f0f26c3344aa01202b5b914f07ee2d1271
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5405951 bytes)**  
+-	Total Size: **5.4 MB (5406033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65a647bcf57e6eb3b41dddc1cce68b632eeb55dcf41c517d6e37f6d713494c8b`
+-	Image ID: `sha256:b463230bdcd4c222acd9c6fcfade8252139240a2e0969e55e374dca46894a36d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39ec0d68168f3f269b0a741ac5ea2d6ba0adde24ea5f2d99b056f4b2ea3efa94`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 5.4 MB (5390860 bytes)  
+	-	`sha256:fb75dc67e6b5ce681ac491ef91529956cd8544affa8107e6e2e63a8e7e1b6f24`  
+		Last Modified: Mon, 20 Jul 2026 22:45:38 GMT  
+		Size: 5.4 MB (5390932 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ced8b13bad977c3421b82e7b44474d4df384b1dee48ba671cb01d025cd300e05`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 15.1 KB (15091 bytes)  
+	-	`sha256:a075b90035706445f0119800324dabd66ee671dbfd9a95d6b89aca6237839348`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 15.1 KB (15101 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `orientdb:3.2.54` - linux; arm variant v7
+### `orientdb:3.2.55` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:96d8e7285b3ddc3363989c744cb588d84efa394220fdf811c627bc094c5f7208
+$ docker pull orientdb@sha256:b9a771ae8a9a473af5bd1294559c36489b26248c1fd78302ef47d1de4923ed79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.6 MB (182639193 bytes)**  
+-	Total Size: **184.3 MB (184301758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64b003c6b81e676b35cc76421331bbd98a88e1c093afebcb0aaf3900fb5fddf`
+-	Image ID: `sha256:0cf8e482c110493efab959d4db309e031ded7dc5f8502816226bf95094e14321`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -1871,35 +1871,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:21:27 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 23:00:39 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 CMD ["server.sh"]
 ```
 
@@ -1928,53 +1928,53 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:21:41 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:fb90502dbd24003fb9d0c3db2fec206424d9cd553d91da75f8a7b4919f009ea2`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 377.0 KB (376974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8d3b57bd9d8b2c8759b5b217c7d3f20a766b9ae5e4f7e902eb561fdd97fdab5`  
-		Last Modified: Thu, 16 Jul 2026 01:14:10 GMT  
-		Size: 74.2 MB (74220623 bytes)  
+	-	`sha256:714ff64f43a3d2ddf5ac6155a7ab5a150ba82c1d623a46271f1f48386578b49f`  
+		Last Modified: Mon, 20 Jul 2026 23:00:59 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54` - unknown; unknown
+### `orientdb:3.2.55` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:d17496e3b38fb5c4fa80ee57e2919e5e3d82d368b223f6a277c77d952c2a8e1d
+$ docker pull orientdb@sha256:96be198bd9002c59b800fe159ca758cedde5c92ec8d3890dcfa31502366d7def
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5409219 bytes)**  
+-	Total Size: **5.4 MB (5409303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dfc0f67aad2e4e9746f98a8b5540a7184c019b5422413ee1f3b8917f19e914a`
+-	Image ID: `sha256:3ad39f4de61e3f2526c31defb05d20c6dda4e2caa24027793aa4f8cfb83dd3a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f00383ba20facefcf9991e3584cce0b86fa06619f2e76251c35b40fe3bdd3`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 5.4 MB (5394043 bytes)  
+	-	`sha256:f63629c662dbfe1d1257bd01e590f0d13771dc3531906576c172f613152ff3c9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 5.4 MB (5394115 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6c794b2429d87c0218498383e9ee445a641a14d3ea8953676255b2faa544ee39`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 15.2 KB (15176 bytes)  
+	-	`sha256:3b54e2187efc32354d3ae01d49f1e30931e11a7ca794c1e4ca4b66ce534d2ae9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 15.2 KB (15188 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `orientdb:3.2.54` - linux; arm64 variant v8
+### `orientdb:3.2.55` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:148f47f4fca21e174d52cf69dfa77594154cc873a8f8b18169cb9d01b3d2be82
+$ docker pull orientdb@sha256:2d21cd585faf1bf3f13d94080058c4efdb4b1199051716ab8f2072111676e500
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.1 MB (189136686 bytes)**  
+-	Total Size: **190.8 MB (190828736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ab043a473cc04c74a06ec45a50f33aa475bcdd55595e2c7a04c05d96ba70ec4`
+-	Image ID: `sha256:1b6874c263d1456aa1d0ad537bbbae0ffe448c81e10a4e93c87406d4ea0d4104`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2023,35 +2023,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:47:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 CMD ["server.sh"]
 ```
 
@@ -2080,47 +2080,47 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:2dcb09bce3163e96c6454c6e6a09570c3c06e4c49a8878af5a6b3411c467407d`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 406.4 KB (406435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f738da1a037ecddfaf4f8e6fcff2c48efc569d670c0ccf6095d5db2b99fe001b`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 74.2 MB (74220637 bytes)  
+	-	`sha256:b98a6eade98b5091e06577305cd1de2c9d2fcdbf51f8041ca8186838b09ee0df`  
+		Last Modified: Mon, 20 Jul 2026 22:48:01 GMT  
+		Size: 75.5 MB (75506284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54` - unknown; unknown
+### `orientdb:3.2.55` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:f50e9ddd0dca905a888c483adf12716733c32ee1331b6073604b978eb4352368
+$ docker pull orientdb@sha256:5a4c607a752f94afa07ec0895926090eb5e71e04d4248fd2608ebf5ece857d1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5406413 bytes)**  
+-	Total Size: **5.4 MB (5406499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab1dbd41a416ba5a21474dfa0d29d8a6ec94de6b08325f928b60d85828202a87`
+-	Image ID: `sha256:d8cb5dd6ef989abe6c358eb1c8c91f731f4fbaaa60bb0bfbb54afd2ff0527fd4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:730b5f6c7ff1252e826b496f73ef3ebf091628f65251fdb8b42f7407b36551ef`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 5.4 MB (5391217 bytes)  
+	-	`sha256:83ad233cd7763887855d1f63f3dab94aaed714c7bc7b0fc7dbb5539b4970f85f`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 5.4 MB (5391289 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cd785ff0df1b439ced4fa252097dd2055a6d45cf598037c9bf36d665c6752fb8`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 15.2 KB (15196 bytes)  
+	-	`sha256:a500b701075e0b1c420a2c57833e1f502053b2dce75e15b2d9b6c78c678f449e`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 15.2 KB (15210 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `orientdb:3.2.54-tp3`
+## `orientdb:3.2.55-tp3`
 
 ```console
-$ docker pull orientdb@sha256:ee63abb616cb6509081659f6a65fd019ca9337f32159c15fa4d612bc12ac4d97
+$ docker pull orientdb@sha256:3455152710627b9e23b6784aabb2f2a5dfe95e01f0658a419cfc55d54e6e2cd3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2132,16 +2132,16 @@ $ docker pull orientdb@sha256:ee63abb616cb6509081659f6a65fd019ca9337f32159c15fa4
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `orientdb:3.2.54-tp3` - linux; amd64
+### `orientdb:3.2.55-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:21573eb4dbccaeb7b5b5be0a3ec3bf392757e4cbc42ad25013f1b2d0cd69331a
+$ docker pull orientdb@sha256:1184f4e4262b727ec94ec7fe41a8e85bbf99628d476680431f4896a387be59d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.1 MB (223065166 bytes)**  
+-	Total Size: **224.8 MB (224759408 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55290c029044822670d544941e069e8d79b391fc902695b4a17049e3a5ad0f6e`
+-	Image ID: `sha256:6ada4f7e8554045e16e7506dfd9747db27c0f4f662e379c84a6307fd44006040`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2190,39 +2190,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:16:53 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:53 GMT
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 22:45:27 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:45:27 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:16:54 GMT
+# Mon, 20 Jul 2026 22:45:29 GMT
 CMD ["server.sh"]
 ```
 
@@ -2251,57 +2251,57 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:5448927b06285d876dd311d7973721803e403deed29cf8e7bcbf7bf2cd974006`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 411.7 KB (411659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5751b99437ea61b1cd3187a3d96605f8229cdadec9df45ea2b8b9fd284a7fd0`  
-		Last Modified: Thu, 16 Jul 2026 01:17:12 GMT  
-		Size: 106.2 MB (106157827 bytes)  
+	-	`sha256:67101465fcaf633f74ae05bf477b27700262a7e16b98c18aa10c46705aeddc5d`  
+		Last Modified: Mon, 20 Jul 2026 22:45:48 GMT  
+		Size: 107.4 MB (107440440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b606f94187bb9120a75464851b19c693e83ef7f7e80fb842fce5d1f31a950f9c`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 1.4 KB (1369 bytes)  
+	-	`sha256:4f3cbd7807328822937b3f8a7001d0da78ffc1bd8478d705021fabc086f3b6c4`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 1.4 KB (1371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54-tp3` - unknown; unknown
+### `orientdb:3.2.55-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:35e15a64d9c665aeb7d8a9d174fe0f4a21459c9ff9c7b2f5855522c3ad8a6b23
+$ docker pull orientdb@sha256:0d2932fc2cfb73e13e9e212978a46937cb883c9e6009eb6055771436e8fb94cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5544572 bytes)**  
+-	Total Size: **5.5 MB (5544660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9b2bbfec99f15a18413179b18afe1d81ec00effc9397280107c75d598fed622`
+-	Image ID: `sha256:40ba713091eac70205b5d2b0035618ef6a948d6b6116ee5f9c10a6ee91b7a385`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2875e5b4080d6b10fc81e48331d16b2ef4b246fcc956188aba4620acac90b0ce`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 5.5 MB (5526999 bytes)  
+	-	`sha256:13eb88410a4edaf83db593259532184d52158a69b3c33975913460187724d94e`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 5.5 MB (5527071 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:632ba2d04ac87624b53c030db2c637b69fe21ba167414520ed4f2adb218e2290`  
-		Last Modified: Thu, 16 Jul 2026 01:17:09 GMT  
-		Size: 17.6 KB (17573 bytes)  
+	-	`sha256:623c50faaa882651b9647ff81294d4ce77ddf5ccc52788644c545c2ae8581ad2`  
+		Last Modified: Mon, 20 Jul 2026 22:45:45 GMT  
+		Size: 17.6 KB (17589 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `orientdb:3.2.54-tp3` - linux; arm variant v7
+### `orientdb:3.2.55-tp3` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:39a54c7cfe52da15d8ab3ae6f8e0d9a435a0e26ea6fee165e7e94281b3833efb
+$ docker pull orientdb@sha256:d5d5a02d9072ccf721b132797aa95ab338cc4b3d8c66476ff2fe45c4591fcf03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.6 MB (214577803 bytes)**  
+-	Total Size: **216.2 MB (216237325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d08489435126d5389b0f489004c40f144cc7dc0678c935c9c06197b2d5f44978`
+-	Image ID: `sha256:f0a9b0a94591155b034750a78cd4e3fa5bf3a0edec3ec06f077fe10a360a8bf7`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2350,39 +2350,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:21:27 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:13:59 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:13:59 GMT
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 23:00:47 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 23:00:47 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:14:05 GMT
+# Mon, 20 Jul 2026 23:00:52 GMT
 CMD ["server.sh"]
 ```
 
@@ -2411,57 +2411,57 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:21:41 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:6e5713db34ff0396e522f234790011503a1f3b251643301333d11c1d3a7bfc9d`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 377.0 KB (376977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4964a62bca425d57c89ba800b73bc5bb1056d089ae48b2c5877351a974461200`  
-		Last Modified: Thu, 16 Jul 2026 01:14:23 GMT  
-		Size: 106.2 MB (106157862 bytes)  
+	-	`sha256:350691c3602cfcce4a7394f67cb243aa2562b217aa510728212a5e403c2783ad`  
+		Last Modified: Mon, 20 Jul 2026 23:01:10 GMT  
+		Size: 107.4 MB (107440440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:082bd88c3e09fe9df952b11f319b2d3d4d02de6edeecaae0732cb4028efdbf13`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:b2e2256021134015141cb13559302f69dc1a8cd34324eb8646c8a46ca922dfdb`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 1.4 KB (1370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54-tp3` - unknown; unknown
+### `orientdb:3.2.55-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:14157d9737a294f6ce3a9df961608c08614ef6623b6b9952e6f3c0c828511e3f
+$ docker pull orientdb@sha256:c8bf25cf9e37637e2da61e55aa42acc78ecee0b6eff1a1898833a272531c1f1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5547824 bytes)**  
+-	Total Size: **5.5 MB (5547912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33426b1056a7739f725ae6616efa1100eecc858b008284ad5df0a843aac82489`
+-	Image ID: `sha256:0a608c324a3d528787cef2c2aabeec6c2a7c25f2782b7bd9d4bb41ab2d233079`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1c8f251ffb07cc5d38fc1ef834cc4ab55b836a28732c184b711dc4edc5d45f3d`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 5.5 MB (5530174 bytes)  
+	-	`sha256:bdf8ea1cef117c7fe08d232006c1c38be78f27e398f727116d712a6934fa4166`  
+		Last Modified: Mon, 20 Jul 2026 23:01:08 GMT  
+		Size: 5.5 MB (5530246 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86ebd828e7111ae260ffc2e2f35990aef9e11d27e58347e940b1b0b97347a746`  
-		Last Modified: Thu, 16 Jul 2026 01:14:20 GMT  
-		Size: 17.6 KB (17650 bytes)  
+	-	`sha256:14a480604aae9406005d253717ee9adec35412894f2f62ed8ac0e2216bc2ce23`  
+		Last Modified: Mon, 20 Jul 2026 23:01:07 GMT  
+		Size: 17.7 KB (17666 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `orientdb:3.2.54-tp3` - linux; arm64 variant v8
+### `orientdb:3.2.55-tp3` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:05267c7f693990819aef2fffeb6ae4c8f8130624abf2e160933052c5491eae0a
+$ docker pull orientdb@sha256:99191d9ffd6d72278e1a7d0a9de2893f5551a58adda373b36d2214cab2570442
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.1 MB (221075277 bytes)**  
+-	Total Size: **222.8 MB (222764236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25b87206ccd827f8b53bb642e5129af2dbea8f865fb9448f662cd823f96a6fb3`
+-	Image ID: `sha256:3c3a2d81ea75874fdbaac33c406726ab8df937e5fb2d847504b4cccbccb13b9f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2510,39 +2510,39 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=aa7e7025b8bba51510b521ff5aed2be4
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=367ce48d3d310beb8db8b6ba3731616179b4587c
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.54/orientdb-tp3-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=d4c1405c694e648141cb57ca83aa7e69
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=6576b511dd09ce7be1bb630c59641dff415f01b9
+# Mon, 20 Jul 2026 22:47:47 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.2.55/orientdb-tp3-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:47:47 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 ADD gremlin-server.yaml /orientdb/config # buildkit
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 EXPOSE map[8182/tcp:{}]
-# Thu, 16 Jul 2026 01:16:39 GMT
+# Mon, 20 Jul 2026 22:47:50 GMT
 CMD ["server.sh"]
 ```
 
@@ -2571,51 +2571,51 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:e745af944d787cccd2decedf322462e9a2d89dc97dd64974c7d6feb70007823d`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 406.4 KB (406440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:263ad025a12e716ead9a0807f1e3fb77da0bdd162c43f5b7d13de5b0a7db6ca2`  
-		Last Modified: Thu, 16 Jul 2026 01:16:57 GMT  
-		Size: 106.2 MB (106157857 bytes)  
+	-	`sha256:ee3b7a10879f9df026ab8efbd75aeb0ab93bcfa0e8b09d180638c2d7fe4ee382`  
+		Last Modified: Mon, 20 Jul 2026 22:48:08 GMT  
+		Size: 107.4 MB (107440406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b7127809db36fff06a14136d1de1ba0e9156483a792e20f99cf8a58252ef19e`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:0d74ac64f6988c1342e88395633a88a23844f9d0488ff50d751963459e61c701`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 1.4 KB (1373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `orientdb:3.2.54-tp3` - unknown; unknown
+### `orientdb:3.2.55-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:60bfd48e336bbafe5332feaf8e52966e05170bb12babeb4969cb0243f9480fa1
+$ docker pull orientdb@sha256:dc3c3e65952797eb8ff915ed31914a8f40a87e944d98272dd201e703dda84282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5545012 bytes)**  
+-	Total Size: **5.5 MB (5545099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a2dd847d096155ba33a63297d6820bf997a2ac6c4f9d37f0f46a20df1ef3d70`
+-	Image ID: `sha256:6f477a907d8ab92cae2cf89a1746f72cbba191d78dcc04efc3e9ca117b50795a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:29349b8869b3e6300c0a50a82c59051801ee699cb24c83e2ab78893746b6ac44`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 5.5 MB (5527344 bytes)  
+	-	`sha256:4dfbf9a6194f5186709a22cab075a60ca5fd39bdc9e18ec2d4a434737cc471e4`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 5.5 MB (5527416 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8fef0400889e123f6ee158128492ca7b4e6c958804623a585ed4d3cae5a69903`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 17.7 KB (17668 bytes)  
+	-	`sha256:08fd355f6abb4987d581337ef2bf42e0cfeb97000b3524ab6cbd24289f6a6754`  
+		Last Modified: Mon, 20 Jul 2026 22:48:05 GMT  
+		Size: 17.7 KB (17683 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb2ce4d1bfd8a748
+$ docker pull orientdb@sha256:d627d20f531e6a69dd795cd4712dcff0a6faceb61279b12292610d78d5b4562b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2630,13 +2630,13 @@ $ docker pull orientdb@sha256:98a348ec78e8604bc8895e310c95437d02101113d7ccec27cb
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:b6ded3c3f48bfc92ab72b2b9a8642eb6c88754f0303db69b5b7cf71e7a053cbe
+$ docker pull orientdb@sha256:34ec6868bbe43dd4097e7ac368e7c1f6168bdc08939bd87f64cec94409e2f9c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.1 MB (191126595 bytes)**  
+-	Total Size: **192.8 MB (192823847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27a60594dd26c3d3ff27dca1a70b17961c8ec382ac683bc0f6b6a08eadcb8771`
+-	Image ID: `sha256:485478d1582983fb4a55bac99796894e336e150274019a05b830c1c54fcd8a3b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2685,35 +2685,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:46 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:46 GMT
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:45:21 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:45:21 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:47 GMT
+# Mon, 20 Jul 2026 22:45:23 GMT
 CMD ["server.sh"]
 ```
 
@@ -2742,13 +2742,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:0e1231ff97a3ca59055171f70388fae0f1cab97e62d94ce65679ae732eace144`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 411.7 KB (411663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0928243c38cc61a36f2eab87cc0e3f4b2c7f42df9afd8784381feb4181a9f46a`  
-		Last Modified: Thu, 16 Jul 2026 01:17:03 GMT  
-		Size: 74.2 MB (74220625 bytes)  
+	-	`sha256:be6f55d043450e33fc855fd37b28a53a8efc74b377f59f3c98bfa71509309d53`  
+		Last Modified: Mon, 20 Jul 2026 22:45:39 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2758,37 +2758,37 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:24e0c25cad643e3ab29df3132c8ac42b1af099792b23a9068333a2c751124e4b
+$ docker pull orientdb@sha256:ac273f45bf4d1029fdb23a84ab27a0f0f26c3344aa01202b5b914f07ee2d1271
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5405951 bytes)**  
+-	Total Size: **5.4 MB (5406033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65a647bcf57e6eb3b41dddc1cce68b632eeb55dcf41c517d6e37f6d713494c8b`
+-	Image ID: `sha256:b463230bdcd4c222acd9c6fcfade8252139240a2e0969e55e374dca46894a36d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:39ec0d68168f3f269b0a741ac5ea2d6ba0adde24ea5f2d99b056f4b2ea3efa94`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 5.4 MB (5390860 bytes)  
+	-	`sha256:fb75dc67e6b5ce681ac491ef91529956cd8544affa8107e6e2e63a8e7e1b6f24`  
+		Last Modified: Mon, 20 Jul 2026 22:45:38 GMT  
+		Size: 5.4 MB (5390932 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ced8b13bad977c3421b82e7b44474d4df384b1dee48ba671cb01d025cd300e05`  
-		Last Modified: Thu, 16 Jul 2026 01:17:01 GMT  
-		Size: 15.1 KB (15091 bytes)  
+	-	`sha256:a075b90035706445f0119800324dabd66ee671dbfd9a95d6b89aca6237839348`  
+		Last Modified: Mon, 20 Jul 2026 22:45:37 GMT  
+		Size: 15.1 KB (15101 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:latest` - linux; arm variant v7
 
 ```console
-$ docker pull orientdb@sha256:96d8e7285b3ddc3363989c744cb588d84efa394220fdf811c627bc094c5f7208
+$ docker pull orientdb@sha256:b9a771ae8a9a473af5bd1294559c36489b26248c1fd78302ef47d1de4923ed79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.6 MB (182639193 bytes)**  
+-	Total Size: **184.3 MB (184301758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64b003c6b81e676b35cc76421331bbd98a88e1c093afebcb0aaf3900fb5fddf`
+-	Image ID: `sha256:0cf8e482c110493efab959d4db309e031ded7dc5f8502816226bf95094e14321`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2837,35 +2837,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:21:27 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:13:49 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:13:49 GMT
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 23:00:39 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 23:00:39 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:13:53 GMT
+# Mon, 20 Jul 2026 23:00:43 GMT
 CMD ["server.sh"]
 ```
 
@@ -2894,13 +2894,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:21:41 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:fb90502dbd24003fb9d0c3db2fec206424d9cd553d91da75f8a7b4919f009ea2`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 377.0 KB (376974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8d3b57bd9d8b2c8759b5b217c7d3f20a766b9ae5e4f7e902eb561fdd97fdab5`  
-		Last Modified: Thu, 16 Jul 2026 01:14:10 GMT  
-		Size: 74.2 MB (74220623 bytes)  
+	-	`sha256:714ff64f43a3d2ddf5ac6155a7ab5a150ba82c1d623a46271f1f48386578b49f`  
+		Last Modified: Mon, 20 Jul 2026 23:00:59 GMT  
+		Size: 75.5 MB (75506246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2910,37 +2910,37 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:d17496e3b38fb5c4fa80ee57e2919e5e3d82d368b223f6a277c77d952c2a8e1d
+$ docker pull orientdb@sha256:96be198bd9002c59b800fe159ca758cedde5c92ec8d3890dcfa31502366d7def
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5409219 bytes)**  
+-	Total Size: **5.4 MB (5409303 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dfc0f67aad2e4e9746f98a8b5540a7184c019b5422413ee1f3b8917f19e914a`
+-	Image ID: `sha256:3ad39f4de61e3f2526c31defb05d20c6dda4e2caa24027793aa4f8cfb83dd3a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f00383ba20facefcf9991e3584cce0b86fa06619f2e76251c35b40fe3bdd3`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 5.4 MB (5394043 bytes)  
+	-	`sha256:f63629c662dbfe1d1257bd01e590f0d13771dc3531906576c172f613152ff3c9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 5.4 MB (5394115 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6c794b2429d87c0218498383e9ee445a641a14d3ea8953676255b2faa544ee39`  
-		Last Modified: Thu, 16 Jul 2026 01:14:08 GMT  
-		Size: 15.2 KB (15176 bytes)  
+	-	`sha256:3b54e2187efc32354d3ae01d49f1e30931e11a7ca794c1e4ca4b66ce534d2ae9`  
+		Last Modified: Mon, 20 Jul 2026 23:00:57 GMT  
+		Size: 15.2 KB (15188 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull orientdb@sha256:148f47f4fca21e174d52cf69dfa77594154cc873a8f8b18169cb9d01b3d2be82
+$ docker pull orientdb@sha256:2d21cd585faf1bf3f13d94080058c4efdb4b1199051716ab8f2072111676e500
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.1 MB (189136686 bytes)**  
+-	Total Size: **190.8 MB (190828736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ab043a473cc04c74a06ec45a50f33aa475bcdd55595e2c7a04c05d96ba70ec4`
+-	Image ID: `sha256:1b6874c263d1456aa1d0ad537bbbae0ffe448c81e10a4e93c87406d4ea0d4104`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -2989,35 +2989,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_VERSION=3.2.54
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=c9db85cefc94e58f9651cfe399e5c017
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=84ef61a94463b622acbd6037fe570854d7b478c5
-# Thu, 16 Jul 2026 01:16:36 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.54/orientdb-community-3.2.54.tar.gz
-# Thu, 16 Jul 2026 01:16:36 GMT
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_VERSION=3.2.55
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=bd5320848e4219d2bf7af7f69c4e062a
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=16c80c5b54829a2431b03ca631d76f1f57cece33
+# Mon, 20 Jul 2026 22:47:43 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.55/orientdb-community-3.2.55.tar.gz
+# Mon, 20 Jul 2026 22:47:43 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 # ARGS: ORIENTDB_DOWNLOAD_SERVER=
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/* # buildkit
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 ENV PATH=/orientdb/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 WORKDIR /orientdb
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2424/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 EXPOSE map[2480/tcp:{}]
-# Thu, 16 Jul 2026 01:16:38 GMT
+# Mon, 20 Jul 2026 22:47:45 GMT
 CMD ["server.sh"]
 ```
 
@@ -3046,13 +3046,13 @@ CMD ["server.sh"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:2dcb09bce3163e96c6454c6e6a09570c3c06e4c49a8878af5a6b3411c467407d`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 406.4 KB (406435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f738da1a037ecddfaf4f8e6fcff2c48efc569d670c0ccf6095d5db2b99fe001b`  
-		Last Modified: Thu, 16 Jul 2026 01:16:54 GMT  
-		Size: 74.2 MB (74220637 bytes)  
+	-	`sha256:b98a6eade98b5091e06577305cd1de2c9d2fcdbf51f8041ca8186838b09ee0df`  
+		Last Modified: Mon, 20 Jul 2026 22:48:01 GMT  
+		Size: 75.5 MB (75506284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3062,23 +3062,23 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:f50e9ddd0dca905a888c483adf12716733c32ee1331b6073604b978eb4352368
+$ docker pull orientdb@sha256:5a4c607a752f94afa07ec0895926090eb5e71e04d4248fd2608ebf5ece857d1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5406413 bytes)**  
+-	Total Size: **5.4 MB (5406499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab1dbd41a416ba5a21474dfa0d29d8a6ec94de6b08325f928b60d85828202a87`
+-	Image ID: `sha256:d8cb5dd6ef989abe6c358eb1c8c91f731f4fbaaa60bb0bfbb54afd2ff0527fd4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:730b5f6c7ff1252e826b496f73ef3ebf091628f65251fdb8b42f7407b36551ef`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 5.4 MB (5391217 bytes)  
+	-	`sha256:83ad233cd7763887855d1f63f3dab94aaed714c7bc7b0fc7dbb5539b4970f85f`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 5.4 MB (5391289 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cd785ff0df1b439ced4fa252097dd2055a6d45cf598037c9bf36d665c6752fb8`  
-		Last Modified: Thu, 16 Jul 2026 01:16:52 GMT  
-		Size: 15.2 KB (15196 bytes)  
+	-	`sha256:a500b701075e0b1c420a2c57833e1f502053b2dce75e15b2d9b6c78c678f449e`  
+		Last Modified: Mon, 20 Jul 2026 22:47:59 GMT  
+		Size: 15.2 KB (15210 bytes)  
 		MIME: application/vnd.in-toto+json
