@@ -501,12 +501,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/sourc
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.34-272.el9_8.x86_64`
 
