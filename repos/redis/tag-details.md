@@ -38,6 +38,10 @@
 -	[`redis:8-alpine`](#redis8-alpine)
 -	[`redis:8-alpine3.23`](#redis8-alpine323)
 -	[`redis:8-trixie`](#redis8-trixie)
+-	[`redis:8.10-rc2`](#redis810-rc2)
+-	[`redis:8.10-rc2-alpine`](#redis810-rc2-alpine)
+-	[`redis:8.10-rc2-alpine3.23`](#redis810-rc2-alpine323)
+-	[`redis:8.10-rc2-trixie`](#redis810-rc2-trixie)
 -	[`redis:8.2`](#redis82)
 -	[`redis:8.2-alpine`](#redis82-alpine)
 -	[`redis:8.2-alpine3.22`](#redis82-alpine322)
@@ -29862,6 +29866,22 @@ $ docker pull redis@sha256:cfe806ce3adeafacfa263c8506174649dbd23862f6f6763086ca7
 		Last Modified: Tue, 14 Jul 2026 03:05:20 GMT  
 		Size: 29.4 KB (29384 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redis:8.10-rc2`
+
+**does not exist** (yet?)
+
+## `redis:8.10-rc2-alpine`
+
+**does not exist** (yet?)
+
+## `redis:8.10-rc2-alpine3.23`
+
+**does not exist** (yet?)
+
+## `redis:8.10-rc2-trixie`
+
+**does not exist** (yet?)
 
 ## `redis:8.2`
 
