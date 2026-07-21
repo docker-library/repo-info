@@ -1240,7 +1240,7 @@ $ docker pull kapacitor@sha256:b91380df4545f3b6c4480fe8bc1932dd76ea2e0502d605bcb
 ## `kapacitor:alpine`
 
 ```console
-$ docker pull kapacitor@sha256:9e800ab84f6e55477f0f32725a07cc65971814aa029b90a2bab6ef781dec2ab0
+$ docker pull kapacitor@sha256:b3f24ce78141f03e30185738688ff564299a9920d244a3a1794a3b84edf1fc48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1251,13 +1251,13 @@ $ docker pull kapacitor@sha256:9e800ab84f6e55477f0f32725a07cc65971814aa029b90a2b
 ### `kapacitor:alpine` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:d642f1246ee977700b45d6f1c1a677c537c5a0317a74475dc79fb38133f13f6a
+$ docker pull kapacitor@sha256:7d30e734c47523a3498eed34139e832c6f8c6fc7cdd00afe7f73199f59291331
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76077263 bytes)**  
+-	Total Size: **97.3 MB (97254311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:579dee0aaddfe2ce8db2b0a6780a162c9fab94fbc5ad6074042701e3076b2f66`
+-	Image ID: `sha256:d1d41e2563825e9aea22ff4612cb8725b76fd05c8e264b2620adb815130c68c5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -1268,23 +1268,23 @@ ADD alpine-minirootfs-3.24.1-x86_64.tar.gz / # buildkit
 CMD ["/bin/sh"]
 # Mon, 20 Jul 2026 18:48:21 GMT
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf # buildkit
-# Mon, 20 Jul 2026 18:48:22 GMT
-RUN apk add --no-cache ca-certificates su-exec &&     update-ca-certificates # buildkit
-# Mon, 20 Jul 2026 18:48:26 GMT
-ENV KAPACITOR_VERSION=1.7.7
-# Mon, 20 Jul 2026 18:48:26 GMT
-RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     cp -ar /usr/src/kapacitor-*/* / &&     gpgconf --kill all &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps &&     addgroup -S kapacitor &&     adduser -S kapacitor -G kapacitor &&     mkdir -m 0750 -p /var/lib/kapacitor &&     chown kapacitor:kapacitor /var/lib/kapacitor # buildkit
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:16 GMT
+RUN apk add --no-cache ca-certificates setpriv &&     update-ca-certificates # buildkit
+# Mon, 20 Jul 2026 18:49:22 GMT
+ENV KAPACITOR_VERSION=1.8.6
+# Mon, 20 Jul 2026 18:49:22 GMT
+RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}_linux_amd64.tar.gz &&     cp -ar /usr/src/kapacitor-*/* / &&     gpgconf --kill all &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps &&     addgroup -S kapacitor &&     adduser -S kapacitor -G kapacitor &&     mkdir -m 0750 -p /var/lib/kapacitor &&     chown kapacitor:kapacitor /var/lib/kapacitor # buildkit
+# Mon, 20 Jul 2026 18:49:22 GMT
 COPY kapacitor.conf /etc/kapacitor/kapacitor.conf # buildkit
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:22 GMT
 EXPOSE map[9092/tcp:{}]
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:22 GMT
 VOLUME [/var/lib/kapacitor]
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:22 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:22 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 20 Jul 2026 18:48:26 GMT
+# Mon, 20 Jul 2026 18:49:22 GMT
 CMD ["kapacitord"]
 ```
 
@@ -1297,45 +1297,45 @@ CMD ["kapacitord"]
 		Last Modified: Mon, 20 Jul 2026 18:48:37 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bebd2156cd67d6054fcbcf000f3e61597135229866ceb73837dc980a73118ef5`  
-		Last Modified: Mon, 20 Jul 2026 18:48:37 GMT  
-		Size: 246.9 KB (246868 bytes)  
+	-	`sha256:8782d10ad554fdcdae9d843aa5deda64e0da8f313c2c8ab79c3741f9d6b19444`  
+		Last Modified: Mon, 20 Jul 2026 18:49:38 GMT  
+		Size: 294.3 KB (294343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bcd1639839e58f1c2056d0a46ee6e13087618776665fa7c2be1285d9b7f7895`  
-		Last Modified: Mon, 20 Jul 2026 18:48:39 GMT  
-		Size: 72.0 MB (71983221 bytes)  
+	-	`sha256:5ed84eed67ca9143e27e9c9f4a14d42553ccb53fe702ec9a6e778491714ce911`  
+		Last Modified: Mon, 20 Jul 2026 18:49:40 GMT  
+		Size: 93.1 MB (93112775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8e730d188cd6d367cb2827c1395715f71f2424d388268c062c734c156333433`  
-		Last Modified: Mon, 20 Jul 2026 18:48:37 GMT  
+	-	`sha256:58948abc6c9ccdb955f021d14cf35281ecfa81c4532c2ad3d02ea51015524104`  
+		Last Modified: Mon, 20 Jul 2026 18:49:37 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd106f6107edf05b8a52994fa58da475bef51cc6c539daffb16d8eed65faf879`  
-		Last Modified: Mon, 20 Jul 2026 18:48:38 GMT  
-		Size: 277.0 B  
+	-	`sha256:5fdd794310e6d156bd824e443d86a48fd2c9754f124f135455d86cc233360a31`  
+		Last Modified: Mon, 20 Jul 2026 18:49:38 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:alpine` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:1ee9d4461c41552955dcebe99acbf65ed71205890bfd6e3026d5cdb224e7b137
+$ docker pull kapacitor@sha256:b91380df4545f3b6c4480fe8bc1932dd76ea2e0502d605bcb96735c6425fd0ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **370.0 KB (369981 bytes)**  
+-	Total Size: **404.6 KB (404599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4632d298c19e43abb91cbe79b901acc585fcc3a09ce7e83f77fac500b1b7654`
+-	Image ID: `sha256:1b5c46fd2ff2cf703e92ef8cb6836a09683dd5a6f52c52bbadc7e876fdcd6433`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5be486745f3aca1717cfff83198f7c979888f602262d251a7e613617317931d5`  
-		Last Modified: Mon, 20 Jul 2026 18:48:37 GMT  
-		Size: 354.3 KB (354340 bytes)  
+	-	`sha256:dc7d77c7c3dee2e3bddcd598fecea3c46bba9adb7471a95dd7ae555b9e571b53`  
+		Last Modified: Mon, 20 Jul 2026 18:49:38 GMT  
+		Size: 389.3 KB (389262 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f777630344f35c5344cb6ec0f440244c50772ca892266a5d678e3464f3d981b0`  
-		Last Modified: Mon, 20 Jul 2026 18:48:37 GMT  
-		Size: 15.6 KB (15641 bytes)  
+	-	`sha256:306a8d09ce7672699020f53fcb183ae5242aa03ae0cdd618cac8b05e7b1914cb`  
+		Last Modified: Mon, 20 Jul 2026 18:49:37 GMT  
+		Size: 15.3 KB (15337 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kapacitor:latest`
