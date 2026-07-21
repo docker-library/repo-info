@@ -1,7 +1,7 @@
 ## `hylang:1-python3.15-rc-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull hylang@sha256:b6a7543e7c9dece8174d1dd4e8e827ad6bfab19ffbe9dac1e0ad22a32bec3d4c
+$ docker pull hylang@sha256:25268f857cdba50096d1d7ef528252ff5157dab9f7620debd3f56d927fb9548f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull hylang@sha256:b6a7543e7c9dece8174d1dd4e8e827ad6bfab19ffbe9dac1e0ad
 ### `hylang:1-python3.15-rc-windowsservercore-ltsc2022` - windows version 10.0.20348.5386; amd64
 
 ```console
-$ docker pull hylang@sha256:aa13f0ee570f39c18464c46b409a604ccc2087513bbe6cfcfe947287af078bc5
+$ docker pull hylang@sha256:521ae228047b675ffa49a3e7cf749ba005d8ef23f4153f1d2993a9180b20de43
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2240229609 bytes)**  
+-	Total Size: **2.2 GB (2240156157 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:880991dbdcd3037b0c74a49330d33e0d04df0ff536bbee960700a2eb233a88b5`
+-	Image ID: `sha256:0da4b037d35b75fd22485cb16fa05564019c65a74fa6ce13db6a57921d09f2f8`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -27,25 +27,25 @@ $ docker pull hylang@sha256:aa13f0ee570f39c18464c46b409a604ccc2087513bbe6cfcfe94
 RUN Apply image 10.0.20348.4294
 # Sat, 11 Jul 2026 16:30:20 GMT
 RUN Install update 10.0.20348.5386
-# Wed, 15 Jul 2026 23:02:57 GMT
+# Mon, 20 Jul 2026 23:02:37 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 15 Jul 2026 23:29:19 GMT
+# Mon, 20 Jul 2026 23:02:39 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Wed, 15 Jul 2026 23:30:25 GMT
-ENV PYTHON_VERSION=3.15.0b3
-# Wed, 15 Jul 2026 23:30:25 GMT
-ENV PYTHON_SHA256=8002dbdf7277964a3c50f5deef090dfcd0769647a35aec97999f63d5f2903d38
-# Wed, 15 Jul 2026 23:30:58 GMT
+# Mon, 20 Jul 2026 23:02:42 GMT
+ENV PYTHON_VERSION=3.15.0b4
+# Mon, 20 Jul 2026 23:02:43 GMT
+ENV PYTHON_SHA256=56387cf17effe4ae5464c3af0fa2f74758cbfaddcd1d30b0dd29afdf0e5b4295
+# Mon, 20 Jul 2026 23:05:38 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f ($env:PYTHON_VERSION -replace '[a-z]+[0-9]*$', ''), $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_SHA256); 	if ((Get-FileHash python.exe -Algorithm sha256).Hash -ne $env:PYTHON_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	$exitCode = (Start-Process python.exe -Wait -NoNewWindow -PassThru 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=1', 			'Include_test=0' 		) 	).ExitCode; 	if ($exitCode -ne 0) { 		Write-Host ('Running python installer failed with exit code: {0}' -f $exitCode); 		Get-ChildItem $env:TEMP | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1 | Get-Content; 		exit $exitCode; 	} 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 	Remove-Item $env:TEMP/Python*.log -Force; 		$env:PYTHONDONTWRITEBYTECODE = '1'; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 15 Jul 2026 23:30:59 GMT
+# Mon, 20 Jul 2026 23:05:39 GMT
 CMD ["python"]
-# Thu, 16 Jul 2026 00:09:46 GMT
+# Tue, 21 Jul 2026 00:17:40 GMT
 ENV HY_VERSION=1.3.0
-# Thu, 16 Jul 2026 00:09:46 GMT
+# Tue, 21 Jul 2026 00:17:44 GMT
 ENV HYRULE_VERSION=1.1.0
-# Thu, 16 Jul 2026 00:10:16 GMT
+# Tue, 21 Jul 2026 00:19:34 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Thu, 16 Jul 2026 00:10:16 GMT
+# Tue, 21 Jul 2026 00:19:34 GMT
 CMD ["hy"]
 ```
 
@@ -58,43 +58,43 @@ CMD ["hy"]
 		Last Modified: Tue, 14 Jul 2026 18:09:28 GMT  
 		Size: 668.5 MB (668534031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5552627ff15545aa9fdec68ddce1b24a3653c79d40f00b6e24d9e684d2d01c6b`  
-		Last Modified: Wed, 15 Jul 2026 23:04:54 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:07f91c6ce357a7e21ee294a75c08daa5a9ea253067f040e8af75f83b51b2e16d`  
+		Last Modified: Mon, 20 Jul 2026 23:05:46 GMT  
+		Size: 1.3 KB (1336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0ca70be573a550d161f919b6d2f0753ef2c65a6e3e4773462f48ba783f9d4d`  
-		Last Modified: Wed, 15 Jul 2026 23:30:08 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:bfafadc80130ea062c812b7804fdf22f1afdc0c0f3ea10d3afbcad01c972df00`  
+		Last Modified: Mon, 20 Jul 2026 23:05:44 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d2a79f0773a32c34c5c37574b01ede31a5dbfbc59f7f8beaa06d3a8e2ed84f6`  
-		Last Modified: Wed, 15 Jul 2026 23:31:03 GMT  
-		Size: 1.3 KB (1327 bytes)  
+	-	`sha256:c1f75a139b1e94d7d54a5b3bd32b4b6d01649ce0dedf7a2538e71b17458dc70c`  
+		Last Modified: Mon, 20 Jul 2026 23:05:44 GMT  
+		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15bfd158ef723721665979f2a22bdcd00962134bbf592de9ee3cf7666ac7a462`  
-		Last Modified: Wed, 15 Jul 2026 23:31:03 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:bfb73960c85fdd71b07332abe85c66e867423e6a67b9856773f3e6ba79f7e982`  
+		Last Modified: Mon, 20 Jul 2026 23:05:44 GMT  
+		Size: 1.3 KB (1277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ede0351728cdd44c5251262dbca0a8f4e5538506ae5afed3a782d2361436515`  
-		Last Modified: Wed, 15 Jul 2026 23:31:08 GMT  
-		Size: 74.5 MB (74479732 bytes)  
+	-	`sha256:7190c93d65ef9603877ca4ea5473c121566d4d01f72fc4ac80083d874e3c2b95`  
+		Last Modified: Mon, 20 Jul 2026 23:05:50 GMT  
+		Size: 74.4 MB (74443232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4dc2fb627a453b08f441dc4a63f35780e66fe5919d5c79882042337e40d0f5`  
-		Last Modified: Wed, 15 Jul 2026 23:31:03 GMT  
-		Size: 1.3 KB (1330 bytes)  
+	-	`sha256:b24e7780786ea9625a1e5763e40b5aaee6455361d9ad9406bfa1ff79a91f849f`  
+		Last Modified: Mon, 20 Jul 2026 23:05:44 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1983073e019d560aa1f31d73bf2629e941660442da25c9a48ef00950a7a2c8c`  
-		Last Modified: Thu, 16 Jul 2026 00:10:20 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:5713179293f9647d0286c104a8f93c2cc6be3a226cfb3bed3249cc61be1ee8a3`  
+		Last Modified: Tue, 21 Jul 2026 00:19:39 GMT  
+		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3bfe59625338f28527c9930c72d8f0b313914a900f3fe9517e282fa66fed868`  
-		Last Modified: Thu, 16 Jul 2026 00:10:20 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:bd7355e1092ec64be61fae86f8ba2223c7b83882e0f332a71fd3734c347a070c`  
+		Last Modified: Tue, 21 Jul 2026 00:19:39 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba45f2c628b22af00ae55ec2e4eea203b75eeeefb7b4401abbdbea03723f264`  
-		Last Modified: Thu, 16 Jul 2026 00:10:22 GMT  
-		Size: 8.2 MB (8186247 bytes)  
+	-	`sha256:f0fc6c94716b42841e0d2a00cf63dd35402f72277336a6a7cfa4f2cd578a3da5`  
+		Last Modified: Tue, 21 Jul 2026 00:19:40 GMT  
+		Size: 8.1 MB (8149310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90b5fd0bd943c27ad71d3a0da9be33e84d5e07e52a3cd20d7eac3396d4de9bca`  
-		Last Modified: Thu, 16 Jul 2026 00:10:20 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:ef56b9e7cb58236c6be6d90c491eafafa76c02e3322e3fd984fa39cbfc0bc643`  
+		Last Modified: Tue, 21 Jul 2026 00:19:39 GMT  
+		Size: 1.3 KB (1324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
