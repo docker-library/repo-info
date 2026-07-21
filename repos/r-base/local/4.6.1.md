@@ -1857,20 +1857,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc4/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.1.1+ds-1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds-1.dsc' lerc_4.1.1+ds-1.dsc 2718 SHA256:c15693b091bacc1c46afd3e01e3fe6526dae6c4aa6ef7e596bbdc451ea6a6fcb
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds.orig.tar.xz' lerc_4.1.1+ds.orig.tar.xz 349460 SHA256:148a624088486490fc9b72e5a457c4cd32cf4ca943983809321d3fc39208f8f1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds-1.debian.tar.xz' lerc_4.1.1+ds-1.debian.tar.xz 7040 SHA256:fffe8be97d01d11ab4fe1d1555845c41510f62ef39544620e0878cc3d53c8eca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.1.1+ds-1/
 
-- https://sources.debian.net/src/lerc/4.1.1+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.1.1+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.1.1+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `less=668-1`
 
@@ -3273,21 +3266,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.15.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.15.0-1.dsc' nghttp3_1.15.0-1.dsc 1612 SHA256:942f7905556604590b6b5c8a8f8626fa06ebd6176bc5817a7d3040dbc47613c4
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.15.0.orig.tar.xz' nghttp3_1.15.0.orig.tar.xz 408660 SHA256:6da0cd06b428d32a54c58137838505d9dc0371a900bb8070a46b29e1ceaf2e0f
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.15.0.orig.tar.xz.asc' nghttp3_1.15.0.orig.tar.xz.asc 833 SHA256:8fc15ae8b22970e54103a2166fe2d4ec1b0f17c3e3aba4bc5b39e33f5958d6f8
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.15.0-1.debian.tar.xz' nghttp3_1.15.0-1.debian.tar.xz 8840 SHA256:46b242663cf3cbe0957948f46903fa926be895f38d98b6373b6db6d61a3a06e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.15.0-1/
 
-- https://sources.debian.net/src/nghttp3/1.15.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.15.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.15.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ngtcp2=1.22.1-1`
 
@@ -3337,20 +3322,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.169-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.169-1.dsc' nlme_3.1.169-1.dsc 1840 SHA256:d7bffaaf1ecd705a2e5fbfdd556785a2daa9f380bd98bfa9cde5a6f56a6753d3
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.169.orig.tar.gz' nlme_3.1.169.orig.tar.gz 842715 SHA256:51b92f1b543d2eb5915478965dab05a9094e1675a160138d49963eb3a0e7fdb8
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.169-1.debian.tar.xz' nlme_3.1.169-1.debian.tar.xz 7412 SHA256:9ddb4a6a57c76b183266ac18950f443af6e7e2826a02dab9e40be829076eab93
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.169-1/
 
-- https://sources.debian.net/src/nlme/3.1.169-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.169-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.169-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.33+ds-3`
 
@@ -3863,20 +3841,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-65-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65-1.dsc' r-cran-mass_7.3-65-1.dsc 1851 SHA256:530e4881166d5a06103cd8bd8ea1378269390fd788a2092e948684759edef6e0
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65.orig.tar.gz' r-cran-mass_7.3-65.orig.tar.gz 510322 SHA256:b07ef1e3c364ce56269b4a8a7759cc9f87c876554f91293437bb578cfe38172f
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65-1.debian.tar.xz' r-cran-mass_7.3-65-1.debian.tar.xz 6656 SHA256:7afbb1ad2accbdd53ec74654d9b6bebbcd31a0e474fbaca4289b9928c85c275c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-mass/7.3-65-1/
 
-- https://sources.debian.net/src/r-cran-mass/7.3-65-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-65-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-65-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-20-1`
 
