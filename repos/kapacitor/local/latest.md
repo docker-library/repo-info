@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:943d63fc5f4293ef947c84bc55fb4181d8c05b86f525bab749cef59a6541579c`
-- Created: `2026-07-02T05:26:30.534425491Z`
-- Virtual Size: ~ 484.49 Mb  
+- Image ID: `sha256:3dc8b001cd6511aa4111c32186d8ec23b1e389303bae8e512d0c714415f323cc`
+- Created: `2026-07-20T18:48:50.747330789Z`
+- Virtual Size: ~ 520.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.8.5`
+  - `KAPACITOR_VERSION=1.8.6`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -749,11 +749,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
 ```
 
-### `dpkg` source package: `kapacitor=1.8.5-1`
+### `dpkg` source package: `kapacitor=1.8.6-1`
 
 Binary Packages:
 
-- `kapacitor=1.8.5-1`
+- `kapacitor=1.8.6-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1777,15 +1777,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz 34132 SHA512:f8092a1d3f8deae2f409f192b063748165760b22873fd44191cef876655d54ea9cbb2adafc95766e531ad30722617a8a589aa902d6c77df406724cec68d21ef7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.dsc' sqlite3_3.37.2-2ubuntu0.6.dsc 2602 SHA512:46e9bcdf9da29494949ef51fd0664803a436b5399278c419af81e5cb1966e5ccfee9be6ebac01a6db58b62227bf53377cbccb65b838a68524a03a268cf69944a
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
 
