@@ -32,6 +32,24 @@
 -	[`redmine:6.1.3-alpine3.24`](#redmine613-alpine324)
 -	[`redmine:6.1.3-bookworm`](#redmine613-bookworm)
 -	[`redmine:6.1.3-trixie`](#redmine613-trixie)
+-	[`redmine:7`](#redmine7)
+-	[`redmine:7-alpine`](#redmine7-alpine)
+-	[`redmine:7-alpine3.23`](#redmine7-alpine323)
+-	[`redmine:7-alpine3.24`](#redmine7-alpine324)
+-	[`redmine:7-bookworm`](#redmine7-bookworm)
+-	[`redmine:7-trixie`](#redmine7-trixie)
+-	[`redmine:7.0`](#redmine70)
+-	[`redmine:7.0-alpine`](#redmine70-alpine)
+-	[`redmine:7.0-alpine3.23`](#redmine70-alpine323)
+-	[`redmine:7.0-alpine3.24`](#redmine70-alpine324)
+-	[`redmine:7.0-bookworm`](#redmine70-bookworm)
+-	[`redmine:7.0-trixie`](#redmine70-trixie)
+-	[`redmine:7.0.0`](#redmine700)
+-	[`redmine:7.0.0-alpine`](#redmine700-alpine)
+-	[`redmine:7.0.0-alpine3.23`](#redmine700-alpine323)
+-	[`redmine:7.0.0-alpine3.24`](#redmine700-alpine324)
+-	[`redmine:7.0.0-bookworm`](#redmine700-bookworm)
+-	[`redmine:7.0.0-trixie`](#redmine700-trixie)
 -	[`redmine:alpine`](#redminealpine)
 -	[`redmine:alpine3.23`](#redminealpine323)
 -	[`redmine:alpine3.24`](#redminealpine324)
@@ -33188,6 +33206,78 @@ $ docker pull redmine@sha256:8eb2fee3de4473c493bae8fb21e14a0ea5b62de1de5fa58e294
 		Last Modified: Tue, 14 Jul 2026 05:34:47 GMT  
 		Size: 42.5 KB (42497 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redmine:7`
+
+**does not exist** (yet?)
+
+## `redmine:7-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:7-alpine3.23`
+
+**does not exist** (yet?)
+
+## `redmine:7-alpine3.24`
+
+**does not exist** (yet?)
+
+## `redmine:7-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:7-trixie`
+
+**does not exist** (yet?)
+
+## `redmine:7.0`
+
+**does not exist** (yet?)
+
+## `redmine:7.0-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:7.0-alpine3.23`
+
+**does not exist** (yet?)
+
+## `redmine:7.0-alpine3.24`
+
+**does not exist** (yet?)
+
+## `redmine:7.0-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:7.0-trixie`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0-alpine3.23`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0-alpine3.24`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:7.0.0-trixie`
+
+**does not exist** (yet?)
 
 ## `redmine:alpine`
 
