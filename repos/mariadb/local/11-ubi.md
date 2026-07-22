@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6823de13679620d41d6b46bfd0e312ebc82634805867a617aadd4db3dd6f6617`
-- Created: `2026-07-16T00:25:40.631328978Z`
-- Virtual Size: ~ 515.55 Mb  
+- Image ID: `sha256:fe9467d790aec0f964fed486c3436a03fd08e3fe491f9b43d650d35c89353f1e`
+- Created: `2026-07-21T17:08:40.850546068Z`
+- Virtual Size: ~ 515.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-15T05:22:58Z`
+  - `build-date=2026-07-21T01:09:09Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-07-15T05:22:58Z`
+  - `org.opencontainers.image.created=2026-07-21T01:09:09Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=16f88afee7519f22ef5135afbe7398092df3f543`
+  - `org.opencontainers.image.revision=4f0cbbc4b2e97d9740b4f68c126ca1b9bda22aec`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=16f88afee7519f22ef5135afbe7398092df3f543`
+  - `vcs-ref=4f0cbbc4b2e97d9740b4f68c126ca1b9bda22aec`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.8`
@@ -93,15 +93,15 @@ Licenses (from `rpm --query`): LGPLv2.1
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `acl-2.3.1-4.el9.x86_64`
+### `rpm` package: `acl-2.4.0-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url acl-2.3.1-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
+$ dnf --quiet download --source --url acl-2.4.0-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `alternatives-1.24-2.el9.x86_64`
@@ -321,7 +321,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
@@ -407,49 +407,34 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-19.el9_8.1.x86_64`
+### `rpm` package: `glib2-2.68.4-19.el9_8.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.1.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.2.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-2.34-272.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-common-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-common-2.34-272.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-minimal-langpack-2.34-272.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-272.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-272.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
 
@@ -503,7 +488,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +578,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -684,15 +669,15 @@ $ dnf --quiet download --source --url langpacks-en-3.0-16.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
-### `rpm` package: `libacl-2.3.1-4.el9.x86_64`
+### `rpm` package: `libacl-2.4.0-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libacl-2.3.1-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
+$ dnf --quiet download --source --url libacl-2.4.0-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libaio-0.3.111-13.el9.x86_64`
@@ -1176,7 +1161,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2243,7 +2228,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2254,7 +2239,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirror.tzulo.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`

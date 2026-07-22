@@ -855,14 +855,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA256:10453fee4e3a8f8ce6129059e5c050b8a65dab1c257df68b99b3112eaa0cdf6a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.7.debian.tar.xz' krb5_1.19.2-2ubuntu0.7.debian.tar.xz 124844 SHA256:b7e94dfecde73a4a79e7433fd8723851ad8886635d568fe99796f812a4fbc463
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.7.dsc' krb5_1.19.2-2ubuntu0.7.dsc 3697 SHA256:c987b71948299427d2f46ea0c64c9ebd9e5d06a55e6362839f77ee3c7adbd6ca
-```
 
 ### `dpkg` source package: `libaio=0.3.112-13build1`
 
@@ -933,9 +928,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libbpf=0.5.0-1ubuntu22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0.orig.tar.gz' libbpf_0.5.0.orig.tar.gz 815083 SHA256:d5b27980ceab9a80b6f28d3e67b51cea526fda49bd13151ba966e33548feb4f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0-1ubuntu22.04.1.debian.tar.xz' libbpf_0.5.0-1ubuntu22.04.1.debian.tar.xz 8228 SHA256:7ef0e19d998b224f2db918abd93f80f81ad4124591a872809b3501c67ce1603b
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0-1ubuntu22.04.1.dsc' libbpf_0.5.0-1ubuntu22.04.1.dsc 1887 SHA256:d2d7b48b669b1e782570951e43f3909ee90956763218796278c3d3e1fbb0f780
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0.orig.tar.gz' libbpf_0.5.0.orig.tar.gz 815083 SHA512:3c578d3e6e93a306a1f182978e54f35fec8acfa51fad5d7de72c5003f10c266d7474e82d6dd045311fcaf8c18aa8cebe64a3336a458a9ea477e5a58e5111dd85
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0-1ubuntu22.04.1.debian.tar.xz' libbpf_0.5.0-1ubuntu22.04.1.debian.tar.xz 8228 SHA512:0377f0a7313deb0e73e171a50055e7540c978d1196f234ebd0f69d7e59348d836b8ce2eaf27588f1b045c26b007c0f1d3eb51384b9f3e25b19d956ba6536ccb3
+'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbpf/libbpf_0.5.0-1ubuntu22.04.1.dsc' libbpf_0.5.0-1ubuntu22.04.1.dsc 1887 SHA512:e8308327200b848ebd113afb233e7615e236a8cf1ed24b35ecd1a80fafa2e2e0f7c7afcec591c21c10e8511fea6b8f4e4c18758eebed4c31ac8e0a8f5827a57f
 ```
 
 ### `dpkg` source package: `libbsd=0.11.5-1`
@@ -2063,15 +2058,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz 34132 SHA512:f8092a1d3f8deae2f409f192b063748165760b22873fd44191cef876655d54ea9cbb2adafc95766e531ad30722617a8a589aa902d6c77df406724cec68d21ef7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.dsc' sqlite3_3.37.2-2ubuntu0.6.dsc 2602 SHA512:46e9bcdf9da29494949ef51fd0664803a436b5399278c419af81e5cb1966e5ccfee9be6ebac01a6db58b62227bf53377cbccb65b838a68524a03a268cf69944a
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
 
