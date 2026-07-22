@@ -2156,15 +2156,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.1.debian.tar.xz 36180 SHA512:65fbf93fd72c530cc8d262d5a8707a39b8cb8d354baf0b494abd8ee2ca7d572d6c3da10657816fc84ac852ea3dcd61ed2e4d9b19249b03bd2d58c039fd6371af
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.1.dsc' sqlite3_3.46.1-9ubuntu0.1.dsc 2756 SHA512:4c269a90477b177a9e55473f402314e1a09bfd08671db72ba633986d347094f50ae9a43c6f4077d04888eb01765d53504a7c921c743a000fdda9c49e34ea6b63
-```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3`
 
@@ -2332,14 +2326,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0.orig.tar.gz' wget_1.25.0.orig.tar.gz 5263736 SHA512:a7ce33c07a1a206a8574b6e9ea7cc5292315df0914edbcf05a014d35ae9e3d24699a46818b409b884ada57428cf30502f4bbb3767cae2c6934e4e7fb2d0c5036
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.2.debian.tar.xz' wget_1.25.0-2ubuntu4.2.debian.tar.xz 34608 SHA512:3a38a30acc48c3ff78dc84667e387a4be3ac1f1a36a8e68c7b5e1f2e270152b6ab82346b9c725fc066e02e401f1ce11a67633df640f8e36c6c12ae0c54fc76a2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.2.dsc' wget_1.25.0-2ubuntu4.2.dsc 2184 SHA512:b0b06dfb25df467e78e3d20cc006ffb6ed3b54730b7a1a8b436445c3142dd7a2bd8695e212217d30b1b45998c132ea07dcc47505ed3fd4c95d28880376528ed4
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 
