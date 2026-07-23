@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:518893910ba47ded86c0de1a0668f6bec5e0225e03576315e71a6087940f906f`
-- Created: `2026-07-02T05:24:13.247099297Z`
-- Virtual Size: ~ 584.48 Mb  
+- Image ID: `sha256:e192f9f3b073655f310919b7c205c031e1dacdf1207dafa23323f73a15152d0c`
+- Created: `2026-07-22T19:02:24.265094023Z`
+- Virtual Size: ~ 588.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
-  - `JRUBY_VERSION=10.1.0.0`
-  - `JRUBY_SHA256=9c14a0ce81f3a312fd98c415986982132e91d36b12cb8d74a3dfdae93fe984ac`
+  - `JRUBY_VERSION=10.1.1.0`
+  - `JRUBY_SHA256=1e08bff6a7f0134a4774fba37d8cf88b9dd4a7317bd49fca5af696a327450148`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -998,15 +998,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.debian.tar.xz' krb5_1.20.1-6ubuntu2.6.debian.tar.xz 122284 SHA256:58e9a5265de110bcebfaf1f88efc384673508302abed9ec189e2f8f9053abe70
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.dsc' krb5_1.20.1-6ubuntu2.6.dsc 4125 SHA256:52ce15dc89411879dc429344ae34ceec3f6301d425257b858804cf8baa8a4c13
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1485,19 +1479,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.dsc' libzstd_1.5.5+dfsg2-2build1.1.dsc 2485 SHA256:c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570
 ```
 
-### `dpkg` source package: `linux=6.8.0-134.134`
+### `dpkg` source package: `linux=6.8.0-136.136`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-134.134`
+- `linux-libc-dev:amd64=6.8.0-136.136`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-136.136
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-136.136.diff.gz' linux_6.8.0-136.136.diff.gz 8960450 SHA512:c4b9babfdc5a9590ceba5989bc164d4d9378dfbe4ad73b4eaf5e41ace6ac470c81b0f247d5cc120f8c9af9a0a974a36c19812dc6d2f7395e08ce7e4740b74fda
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-136.136.dsc' linux_6.8.0-136.136.dsc 9463 SHA512:f5664e87080b804eb61debb6b421ccfaed1265702f2c1740e3036c5c126233c06c72f154fff246adc776f76435f4a513f0e9b9211bb980d7497c599c21e99797
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2058,15 +2057,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.6.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.6.debian.tar.xz 35492 SHA512:ee7befc5b28808287f89e70fcd850eaaf0fa759e40ef087e8e702cd01a61635b44501707adbc64041ee1fb54431a471099288f65b3afbbf361a69fcd25f55f98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.6.dsc' sqlite3_3.45.1-1ubuntu2.6.dsc 2601 SHA512:9389451ddbeda6818ee1d88e23189c6bf43eef3ab9a528ea298ba19d3916c5e8f1c56ecb837745a66b66112cde1f79b6c27170c0a6535a44d688451e777aad18
-```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
 
