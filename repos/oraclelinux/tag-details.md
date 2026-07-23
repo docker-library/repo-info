@@ -685,7 +685,7 @@ $ docker pull oraclelinux@sha256:382ad209af84477ee4b3dc4bcfee2f50041252a10cf71d5
 ## `oraclelinux:8`
 
 ```console
-$ docker pull oraclelinux@sha256:ebcc991ea8bb5e750b825daf9fa2110f6980d2937741fe06c9fe1d427e572de7
+$ docker pull oraclelinux@sha256:5522b8e141df66b055fa24b53d55b2bb21d7bd1c26ac056b0df6f835c3191a69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -698,105 +698,105 @@ $ docker pull oraclelinux@sha256:ebcc991ea8bb5e750b825daf9fa2110f6980d2937741fe0
 ### `oraclelinux:8` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:f1ae7f5be49add677da525e2cdba804d04f9f4d67c4fe3ec8fa981621959034b
+$ docker pull oraclelinux@sha256:9aed4a1dcdb5b43a7994dd4549087769b276f297d0568a0fa08d075ca87cd72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.1 MB (101054477 bytes)**  
+-	Total Size: **101.0 MB (101044358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:817bb755e82f4f69564e4c4f0de1ccb69cb442221ae646fb58c406780bfd23d2`
+-	Image ID: `sha256:ead38851648132c7e300282ee37edde2c75436aeaadb2cd315461b638fa59a73`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 16 Jul 2026 20:47:31 GMT
+# Thu, 23 Jul 2026 19:15:05 GMT
 ADD oraclelinux-8-amd64-rootfs.tar.xz / # buildkit
-# Thu, 16 Jul 2026 20:47:31 GMT
+# Thu, 23 Jul 2026 19:15:05 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a9a2e5957aecd9feef9759ba31aa15fbc6ef33ac8f2e926baff1f1e78461978c`  
-		Last Modified: Thu, 16 Jul 2026 20:47:51 GMT  
-		Size: 101.1 MB (101054477 bytes)  
+	-	`sha256:2d6edc316ac3e874ba5ee5e659d6d8131fb4887bc1a4b1bd84951f9f03b2bc26`  
+		Last Modified: Thu, 23 Jul 2026 19:15:25 GMT  
+		Size: 101.0 MB (101044358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:32cf49206bb9901159ef2cfe1fa24aaf3e0eec7ae95834d7bc58037c3f378f76
+$ docker pull oraclelinux@sha256:49e13da207b7ef90a1a4739065de5daaa9b4e09c849556e5dec03a0cc5be8881
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6149379 bytes)**  
+-	Total Size: **6.1 MB (6147560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddd682f02d42f33cfdd93bc75774dc214c74f4388c5bd6d6cecf91e0cce9f683`
+-	Image ID: `sha256:928e4f9725b47e299818c207a6b27b017692fa03bcaa5341fe3c1056161dc9b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:01b205998dd54d0e2e74c8c1e03a48b87615cc38dd406eaf887b7fbd0f891659`  
-		Last Modified: Thu, 16 Jul 2026 20:47:48 GMT  
-		Size: 6.1 MB (6144270 bytes)  
+	-	`sha256:5c68723525dcdae545bdad60a98786355d158b3ef99789921f7ae26038105652`  
+		Last Modified: Thu, 23 Jul 2026 19:15:23 GMT  
+		Size: 6.1 MB (6142452 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f401dbc8020a1d03f693ffcbed8aef270dc2781aec3ddafee84ee87d70e5d19`  
-		Last Modified: Thu, 16 Jul 2026 20:47:48 GMT  
-		Size: 5.1 KB (5109 bytes)  
+	-	`sha256:72f2608478194adc11a96abaab6d7e2cd21951ed31a587fdc71da5243ac1643d`  
+		Last Modified: Thu, 23 Jul 2026 19:15:22 GMT  
+		Size: 5.1 KB (5108 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `oraclelinux:8` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:75f111c84629d1697f2f2cf33b215d87ab97f9e6a01e1195cc8ad845ec3d5220
+$ docker pull oraclelinux@sha256:ddbfa353f01e103f1b7dc543fecaadfffcd59f52679b4e3faf8353f323e4582b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.9 MB (99930259 bytes)**  
+-	Total Size: **99.9 MB (99912641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:399ad123cbe656ec0343b5e00f669d0414c4c5c9a0fd5ce9839ef9428c3f018a`
+-	Image ID: `sha256:b2abc372e795329944e85548067498d4380fbe493c52c8cf438abccdbe3a6c7e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 16 Jul 2026 20:47:48 GMT
+# Thu, 23 Jul 2026 19:14:48 GMT
 ADD oraclelinux-8-arm64v8-rootfs.tar.xz / # buildkit
-# Thu, 16 Jul 2026 20:47:48 GMT
+# Thu, 23 Jul 2026 19:14:48 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:860b21ca9cd33d021ca33557b8795b5f110b64f19380650d63002dd49128e5d4`  
-		Last Modified: Thu, 16 Jul 2026 20:48:09 GMT  
-		Size: 99.9 MB (99930259 bytes)  
+	-	`sha256:7a17df27e403fe4a613a332c24217e48ba010d3e57bd89db2d0edb8554b1967d`  
+		Last Modified: Thu, 23 Jul 2026 19:15:11 GMT  
+		Size: 99.9 MB (99912641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:fc75e4c6c9350b1a9ad08fcf75dc2cd40657b01c7e60793f68cb1962959d9a8b
+$ docker pull oraclelinux@sha256:d63e8cd539c4d183306af192aa3462ee18e17eb2fd9d64ed686e540649bb5fea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.1 MB (6148382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:332d24823baf91b77a3dd68264fcaf39e9099f67b5eb35e324612fa9aec3ad6c`
+-	Image ID: `sha256:640e26c2a277999fffd50fd108b3510a65d6b4b45eff804e20faaed7e3120cf3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8dc173c05c06942e94034ad8dbd141b52c269672ea834ecbcf077e10f44450a`  
-		Last Modified: Thu, 16 Jul 2026 20:48:07 GMT  
+	-	`sha256:3347a410c98d21dfacc0ef1c158a7612b627893bdb14885047d18c60e25a9bd2`  
+		Last Modified: Thu, 23 Jul 2026 19:15:08 GMT  
 		Size: 6.1 MB (6143233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1533d92dd76f522583e4c5319b55414b1bef55d269716444d722dd69b1e8c184`  
-		Last Modified: Thu, 16 Jul 2026 20:48:07 GMT  
+	-	`sha256:1cbb7b0b1be2526ac3259d852a645aff3c531f4921888e80e8de9439d33da9f5`  
+		Last Modified: Thu, 23 Jul 2026 19:15:07 GMT  
 		Size: 5.1 KB (5149 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `oraclelinux:8-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:3557a80ab147f6e3da8853a77563b14e705fd31d1b1a8674dfa1a40b875d37e7
+$ docker pull oraclelinux@sha256:5eabf6b02eba54a1f723399669110c41942b669053e57f1f4cbf42e384e9f4d0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -809,105 +809,105 @@ $ docker pull oraclelinux@sha256:3557a80ab147f6e3da8853a77563b14e705fd31d1b1a867
 ### `oraclelinux:8-slim` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:c63c3d12c542da129469f8ebadb89106476897969ead002ac0ef789413e0dde5
+$ docker pull oraclelinux@sha256:289056e2772f3d19c04e303531b1103298d4b54f14f5d5d28ff755a37a4d0c17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.5 MB (51488402 bytes)**  
+-	Total Size: **51.5 MB (51485400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c928761b0f1ba828286371965632108b1dde12be236918416218ce1fc140a40`
+-	Image ID: `sha256:e35b5e26ddc71de1221e55ee8c42d3a642a1f6d4a4a389e956044c3437d4235f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jul 2026 18:36:52 GMT
+# Thu, 23 Jul 2026 19:14:55 GMT
 ADD oraclelinux-8-slim-amd64-rootfs.tar.xz / # buildkit
-# Thu, 09 Jul 2026 18:36:52 GMT
+# Thu, 23 Jul 2026 19:14:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f7f64226bf0810cf60e054c8ba0a386320c6f2b8cbb547b3f49f3e51634627b1`  
-		Last Modified: Thu, 09 Jul 2026 18:37:04 GMT  
-		Size: 51.5 MB (51488402 bytes)  
+	-	`sha256:38e6d3882785494ac325b93f235b5ce54e240c318d456eab8bf1c0325df5d0a8`  
+		Last Modified: Thu, 23 Jul 2026 19:15:07 GMT  
+		Size: 51.5 MB (51485400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8-slim` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:2ced53868588a03c32ee8822f7488bbb646420b56cd75e504a7aeea2a6f83603
+$ docker pull oraclelinux@sha256:35a2e575b8080fcf4aab621d5cbffde966511bac6a32266a838463dbece2b42e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2089672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e8df7b5bbc6df9e759931668669050d062423c98d2f864747f4b1a30d896e40`
+-	Image ID: `sha256:6832ff0bb4133a3d85141dd3d53b7034ba937a6f15dd43cf64aa31254d28ae14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0198ec150a1779bb49021fb632f20999e4a9932eb67bbabde3d3a4ac8bb7c58c`  
-		Last Modified: Thu, 09 Jul 2026 18:37:02 GMT  
+	-	`sha256:8af77e1839fc5f59b6c76efc699ebbc8ebfed8680be518e6d0413c5b92e88bb3`  
+		Last Modified: Thu, 23 Jul 2026 19:15:05 GMT  
 		Size: 2.1 MB (2084835 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83d0c9209532078a8909c5d7b84709c2f231dc677f4a1228d8900a872961ecc9`  
-		Last Modified: Thu, 09 Jul 2026 18:37:02 GMT  
+	-	`sha256:7fe981935c2617d502a50115b5cb9e8e34d56bcba35b96a287d1e319c4e56c16`  
+		Last Modified: Thu, 23 Jul 2026 19:15:05 GMT  
 		Size: 4.8 KB (4837 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `oraclelinux:8-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:a607d68fce4f0280be85e4ad24428853be2eadb1dfd6e564244f78e7251e2882
+$ docker pull oraclelinux@sha256:7d2b71ac754969174a33ae890d2d21562de2146788c9fe741946333f790d7554
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50232083 bytes)**  
+-	Total Size: **50.2 MB (50217362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5913bbc26b5e01790bb531f2b8e1c82fe17f11b892b00279bdedf1af22da588d`
+-	Image ID: `sha256:03d3ee69e1dc6710b3d584197311509486d91d0555820cd3b2dbe34dcb6bcb54`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jul 2026 18:35:59 GMT
+# Thu, 23 Jul 2026 19:14:43 GMT
 ADD oraclelinux-8-slim-arm64v8-rootfs.tar.xz / # buildkit
-# Thu, 09 Jul 2026 18:35:59 GMT
+# Thu, 23 Jul 2026 19:14:43 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:69934e0d22950b6349ac6dfa14daa8f401e8ad95fc2ca4aa37bccf63bd8b6690`  
-		Last Modified: Thu, 09 Jul 2026 18:36:10 GMT  
-		Size: 50.2 MB (50232083 bytes)  
+	-	`sha256:d9fb96317bfa20c0670c49c2faeb01a73432efe30fb2c7f4a57cd581e5f88a02`  
+		Last Modified: Thu, 23 Jul 2026 19:14:55 GMT  
+		Size: 50.2 MB (50217362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8-slim` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:db51ffa3b46b396938354bdffb2ddbc37e35951d5763943727cc6573e52e68d9
+$ docker pull oraclelinux@sha256:fcd9f26a1261c79c0cc1341339744cab836e8f98cdb8c7b9818b6793b3cedd06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2090922 bytes)**  
+-	Total Size: **2.1 MB (2089104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f21f48758d1a18429727bde100a93ad9b6406c600498d1fd213f3ff91c1e168d`
+-	Image ID: `sha256:7e068cdea5e268a19ae1660dfa9622be669bcce2433d40459dcd1ce05340fcf0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:adf059c8bbeb034cbb721677b5355b1dab8f2596bbbadc78353ba7beae69cf5a`  
-		Last Modified: Thu, 09 Jul 2026 18:36:09 GMT  
-		Size: 2.1 MB (2086051 bytes)  
+	-	`sha256:bcd756f09155b1c26720c4e85bd656cf2f04f7cdede80a0bd559f2f4957b5691`  
+		Last Modified: Thu, 23 Jul 2026 19:14:53 GMT  
+		Size: 2.1 MB (2084233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14611241d89e804383d758130ead225dcb237dee757f6ae4f6e12fde2a691ba1`  
-		Last Modified: Thu, 09 Jul 2026 18:36:08 GMT  
+	-	`sha256:00bff039e23d4b52c05977236b086181b07e95e20f384c811da5fcd0018854b0`  
+		Last Modified: Thu, 23 Jul 2026 19:14:53 GMT  
 		Size: 4.9 KB (4871 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `oraclelinux:8-slim-fips`
 
 ```console
-$ docker pull oraclelinux@sha256:5ead0650ce6a410e738cf96b31d4289fa093c1a2f8866968efb1eaf775b908d6
+$ docker pull oraclelinux@sha256:f302d44c74aed512b922ff5580900c51c395d4ac0ed67dd85d4118a5ee32ed56
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -920,105 +920,105 @@ $ docker pull oraclelinux@sha256:5ead0650ce6a410e738cf96b31d4289fa093c1a2f886696
 ### `oraclelinux:8-slim-fips` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:f7132149008c7ca472f316bb14bac90c99edd83663dc56707d18c231b99c7f08
+$ docker pull oraclelinux@sha256:8a9c3a1abccccad4a7b624028e3b51637dd360b931b0fe69cc385d27f0ecc5e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.5 MB (51505271 bytes)**  
+-	Total Size: **51.5 MB (51492931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86d79d394475fca256f0f816fb5c0c0f23e11d409c7235015ba7fa08896e5ffa`
+-	Image ID: `sha256:9b7cee88b187e46177956bc9a4b1b0b93371e2483af1b055a1ea74e8b9b8ec4a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jul 2026 18:36:57 GMT
+# Thu, 23 Jul 2026 19:15:50 GMT
 ADD oraclelinux-8-slim-fips-amd64-rootfs.tar.xz / # buildkit
-# Thu, 09 Jul 2026 18:36:57 GMT
+# Thu, 23 Jul 2026 19:15:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:63ec52b14e49d9d5c1549ef497d12a609e781268930af38d0f6d34e8f18b6c30`  
-		Last Modified: Thu, 09 Jul 2026 18:37:09 GMT  
-		Size: 51.5 MB (51505271 bytes)  
+	-	`sha256:4c014031161c748bd62fa63fcfb0067df755853a349116e76061900bc7a15bae`  
+		Last Modified: Thu, 23 Jul 2026 19:16:02 GMT  
+		Size: 51.5 MB (51492931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8-slim-fips` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:e1ed601b1ce3ad475f05e4c033207fe150663d82e677385e384b6062ce8294b8
+$ docker pull oraclelinux@sha256:91a0255681441a844d60ea0b8b96252ef9817266fce00a755a69dc2607210260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.1 MB (2096049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa353bb4fec5206a9b9ad86b33e3d715eff27633f477a8fdca9473351888e4d5`
+-	Image ID: `sha256:3cb74a2cfdc08af39b19814e735fdc4ff9b223c0c3694626b3f348d811963e97`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1deea8f95d6b4f7151c04f9219735302201dd25b6e0c2be280728de8aea002db`  
-		Last Modified: Thu, 09 Jul 2026 18:37:07 GMT  
+	-	`sha256:b352179da2be8ef97df9127fcc34382e532d69a219a7f21566c96bf77942576b`  
+		Last Modified: Thu, 23 Jul 2026 19:16:00 GMT  
 		Size: 2.1 MB (2091173 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18d7a2ffccd3fc50a19c8da19fe07cab1e73ae1ac0b02f4d7791997302d04621`  
-		Last Modified: Thu, 09 Jul 2026 18:37:07 GMT  
+	-	`sha256:48767c2674c4322701c109c3069d70fc8017acb4ad376cc59d5ab2c7e3ab1010`  
+		Last Modified: Thu, 23 Jul 2026 19:16:00 GMT  
 		Size: 4.9 KB (4876 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `oraclelinux:8-slim-fips` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:a72b7f95ef40b476397d60d9798a3cf308793b4bbcec9b47f565f3da5da7a2e8
+$ docker pull oraclelinux@sha256:0790cdb41dd8f303eee7a0c38b3426675b24af96535497248493203048944f94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50219232 bytes)**  
+-	Total Size: **50.2 MB (50229830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12ee9e2ee89772e9b8d66d08076036e2a70afa0fe0841230b005d282b63e9f22`
+-	Image ID: `sha256:a16f7edf054c08b6da41eb0d52fcd2b3ecd7c63eb29d1882b415349ff473ceae`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jul 2026 18:36:18 GMT
+# Thu, 23 Jul 2026 19:15:51 GMT
 ADD oraclelinux-8-slim-fips-arm64v8-rootfs.tar.xz / # buildkit
-# Thu, 09 Jul 2026 18:36:18 GMT
+# Thu, 23 Jul 2026 19:15:51 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f2908884dd23de56e25a741f1d1ab251249db677fd356a559117b61f4f9cc7fd`  
-		Last Modified: Thu, 09 Jul 2026 18:36:29 GMT  
-		Size: 50.2 MB (50219232 bytes)  
+	-	`sha256:a41ff13ef755d0ec0939f84a7a82157fce0b5de2061dbf53e0ad7fd211a8192d`  
+		Last Modified: Thu, 23 Jul 2026 19:16:03 GMT  
+		Size: 50.2 MB (50229830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8-slim-fips` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:468a4c0a4309c6e54ebda7322b5f7afd3f1e5de7cc37e2a0802c1ac50dd44e13
+$ docker pull oraclelinux@sha256:394ca2a7d389ce48a2b5bd6dfe1d56f8b01ed76734d6cffdd4f67401d80c4717
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2095480 bytes)**  
+-	Total Size: **2.1 MB (2097298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f00c0f13f039a54a975dc3fb6e30ee98732dce578a99f735351a419293705e4`
+-	Image ID: `sha256:689ff4a62d1dfbe41aad575b24f092383f75dbf62ccf78764b2dd1095beab52f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e4a72cb119180d9cd24f02a282326d789016d4e8098d935faac51213f3e89a5a`  
-		Last Modified: Thu, 09 Jul 2026 18:36:28 GMT  
-		Size: 2.1 MB (2090571 bytes)  
+	-	`sha256:2ff131c895e0aef514fa2c802cb2d105c1d9b0b8893596dcc870776f24201f4a`  
+		Last Modified: Thu, 23 Jul 2026 19:16:02 GMT  
+		Size: 2.1 MB (2092389 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f07e1652dab096cc9d8ef38411a4546c07f9e1965ff78dd5a907623195dd6d9f`  
-		Last Modified: Thu, 09 Jul 2026 18:36:28 GMT  
+	-	`sha256:34d0f105089635bc798ad97e2eb503590ffac8af34bc5f3bdb726e0478e7ba32`  
+		Last Modified: Thu, 23 Jul 2026 19:16:01 GMT  
 		Size: 4.9 KB (4909 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `oraclelinux:8.10`
 
 ```console
-$ docker pull oraclelinux@sha256:ebcc991ea8bb5e750b825daf9fa2110f6980d2937741fe06c9fe1d427e572de7
+$ docker pull oraclelinux@sha256:5522b8e141df66b055fa24b53d55b2bb21d7bd1c26ac056b0df6f835c3191a69
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1031,98 +1031,98 @@ $ docker pull oraclelinux@sha256:ebcc991ea8bb5e750b825daf9fa2110f6980d2937741fe0
 ### `oraclelinux:8.10` - linux; amd64
 
 ```console
-$ docker pull oraclelinux@sha256:f1ae7f5be49add677da525e2cdba804d04f9f4d67c4fe3ec8fa981621959034b
+$ docker pull oraclelinux@sha256:9aed4a1dcdb5b43a7994dd4549087769b276f297d0568a0fa08d075ca87cd72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.1 MB (101054477 bytes)**  
+-	Total Size: **101.0 MB (101044358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:817bb755e82f4f69564e4c4f0de1ccb69cb442221ae646fb58c406780bfd23d2`
+-	Image ID: `sha256:ead38851648132c7e300282ee37edde2c75436aeaadb2cd315461b638fa59a73`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 16 Jul 2026 20:47:31 GMT
+# Thu, 23 Jul 2026 19:15:05 GMT
 ADD oraclelinux-8-amd64-rootfs.tar.xz / # buildkit
-# Thu, 16 Jul 2026 20:47:31 GMT
+# Thu, 23 Jul 2026 19:15:05 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a9a2e5957aecd9feef9759ba31aa15fbc6ef33ac8f2e926baff1f1e78461978c`  
-		Last Modified: Thu, 16 Jul 2026 20:47:51 GMT  
-		Size: 101.1 MB (101054477 bytes)  
+	-	`sha256:2d6edc316ac3e874ba5ee5e659d6d8131fb4887bc1a4b1bd84951f9f03b2bc26`  
+		Last Modified: Thu, 23 Jul 2026 19:15:25 GMT  
+		Size: 101.0 MB (101044358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8.10` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:32cf49206bb9901159ef2cfe1fa24aaf3e0eec7ae95834d7bc58037c3f378f76
+$ docker pull oraclelinux@sha256:49e13da207b7ef90a1a4739065de5daaa9b4e09c849556e5dec03a0cc5be8881
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.1 MB (6149379 bytes)**  
+-	Total Size: **6.1 MB (6147560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddd682f02d42f33cfdd93bc75774dc214c74f4388c5bd6d6cecf91e0cce9f683`
+-	Image ID: `sha256:928e4f9725b47e299818c207a6b27b017692fa03bcaa5341fe3c1056161dc9b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:01b205998dd54d0e2e74c8c1e03a48b87615cc38dd406eaf887b7fbd0f891659`  
-		Last Modified: Thu, 16 Jul 2026 20:47:48 GMT  
-		Size: 6.1 MB (6144270 bytes)  
+	-	`sha256:5c68723525dcdae545bdad60a98786355d158b3ef99789921f7ae26038105652`  
+		Last Modified: Thu, 23 Jul 2026 19:15:23 GMT  
+		Size: 6.1 MB (6142452 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f401dbc8020a1d03f693ffcbed8aef270dc2781aec3ddafee84ee87d70e5d19`  
-		Last Modified: Thu, 16 Jul 2026 20:47:48 GMT  
-		Size: 5.1 KB (5109 bytes)  
+	-	`sha256:72f2608478194adc11a96abaab6d7e2cd21951ed31a587fdc71da5243ac1643d`  
+		Last Modified: Thu, 23 Jul 2026 19:15:22 GMT  
+		Size: 5.1 KB (5108 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `oraclelinux:8.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:75f111c84629d1697f2f2cf33b215d87ab97f9e6a01e1195cc8ad845ec3d5220
+$ docker pull oraclelinux@sha256:ddbfa353f01e103f1b7dc543fecaadfffcd59f52679b4e3faf8353f323e4582b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.9 MB (99930259 bytes)**  
+-	Total Size: **99.9 MB (99912641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:399ad123cbe656ec0343b5e00f669d0414c4c5c9a0fd5ce9839ef9428c3f018a`
+-	Image ID: `sha256:b2abc372e795329944e85548067498d4380fbe493c52c8cf438abccdbe3a6c7e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 16 Jul 2026 20:47:48 GMT
+# Thu, 23 Jul 2026 19:14:48 GMT
 ADD oraclelinux-8-arm64v8-rootfs.tar.xz / # buildkit
-# Thu, 16 Jul 2026 20:47:48 GMT
+# Thu, 23 Jul 2026 19:14:48 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:860b21ca9cd33d021ca33557b8795b5f110b64f19380650d63002dd49128e5d4`  
-		Last Modified: Thu, 16 Jul 2026 20:48:09 GMT  
-		Size: 99.9 MB (99930259 bytes)  
+	-	`sha256:7a17df27e403fe4a613a332c24217e48ba010d3e57bd89db2d0edb8554b1967d`  
+		Last Modified: Thu, 23 Jul 2026 19:15:11 GMT  
+		Size: 99.9 MB (99912641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8.10` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:fc75e4c6c9350b1a9ad08fcf75dc2cd40657b01c7e60793f68cb1962959d9a8b
+$ docker pull oraclelinux@sha256:d63e8cd539c4d183306af192aa3462ee18e17eb2fd9d64ed686e540649bb5fea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.1 MB (6148382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:332d24823baf91b77a3dd68264fcaf39e9099f67b5eb35e324612fa9aec3ad6c`
+-	Image ID: `sha256:640e26c2a277999fffd50fd108b3510a65d6b4b45eff804e20faaed7e3120cf3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8dc173c05c06942e94034ad8dbd141b52c269672ea834ecbcf077e10f44450a`  
-		Last Modified: Thu, 16 Jul 2026 20:48:07 GMT  
+	-	`sha256:3347a410c98d21dfacc0ef1c158a7612b627893bdb14885047d18c60e25a9bd2`  
+		Last Modified: Thu, 23 Jul 2026 19:15:08 GMT  
 		Size: 6.1 MB (6143233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1533d92dd76f522583e4c5319b55414b1bef55d269716444d722dd69b1e8c184`  
-		Last Modified: Thu, 16 Jul 2026 20:48:07 GMT  
+	-	`sha256:1cbb7b0b1be2526ac3259d852a645aff3c531f4921888e80e8de9439d33da9f5`  
+		Last Modified: Thu, 23 Jul 2026 19:15:07 GMT  
 		Size: 5.1 KB (5149 bytes)  
 		MIME: application/vnd.in-toto+json
 
