@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d2fd7e64a730411d255acd78802d161f8dd85c50ad0b8e4a213747ec6847cf8`
-- Created: `2026-07-01T00:15:39.739343256Z`
-- Virtual Size: ~ 447.56 Mb  
+- Image ID: `sha256:8f67092782eefc5ed7752a834a308a662f5492e9e8475dc1bcd6722f11015f92`
+- Created: `2026-07-22T20:51:36.164190204Z`
+- Virtual Size: ~ 447.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -269,16 +269,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -1544,16 +1544,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.2.1-r0 description:
+mercurial-7.2.3-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.2.1-r0 webpage:
+mercurial-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.2.1-r0 installed size:
-9 MiB
+mercurial-7.2.3-r0 installed size:
+10 MiB
 
-mercurial-7.2.1-r0 license:
+mercurial-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1561,16 +1561,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.2.1-r0 description:
+mercurial-pyc-7.2.3-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.2.1-r0 webpage:
+mercurial-pyc-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.2.1-r0 installed size:
+mercurial-pyc-7.2.3-r0 installed size:
 10 MiB
 
-mercurial-pyc-7.2.1-r0 license:
+mercurial-pyc-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -2241,16 +2241,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

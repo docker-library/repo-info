@@ -1,10 +1,10 @@
-# `redmine:6.1.3`
+# `redmine:7.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfbe33363f6fcb9c1505f90dc86bf90b3f2d451e2ef88373c804f7016970f43c`
-- Created: `2026-07-14T02:48:05.855847627Z`
-- Virtual Size: ~ 613.07 Mb  
+- Image ID: `sha256:352c66aa35dc11e8db7d5898432c054e572e218861d4012d7983e48d5af75e6b`
+- Created: `2026-07-22T20:50:36.936880552Z`
+- Virtual Size: ~ 670.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,18 +12,18 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.10`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
+  - `RUBY_VERSION=4.0.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=9c9d121fe3314ea7c801e690b9de981d2b9d12d7849db99c27482468a541ba0a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.3`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.3.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=61db3008c7fd18a3afc559ed656fd38fdf8df8220ac69598b319095183190b7a`
+  - `REDMINE_VERSION=7.0.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-7.0.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=857e9f8860c31e4c531389e5d93eea26488dba69830484a3b0aa904be615e90a`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1153,41 +1153,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/fonts-urw-base35/20200910-8/ (for browsing the source)
 - https://sources.debian.net/src/fonts-urw-base35/20200910-8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/fonts-urw-base35/20200910-8/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `freetds=1.3.17+ds-2+deb13u1`
-
-Binary Packages:
-
-- `freetds-common=1.3.17+ds-2+deb13u1`
-- `libsybdb5:amd64=1.3.17+ds-2+deb13u1`
-
-Licenses: (parsed from: `/usr/share/doc/freetds-common/copyright`, `/usr/share/doc/libsybdb5/copyright`)
-
-- `BSD-3-clause`
-- `Expat`
-- `GFDL`
-- `GFDL-NIV-1.1+`
-- `GPL-2`
-- `GPL-2.0+`
-- `ISC`
-- `LGPL`
-- `LGPL-2+`
-- `public-domain`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris freetds=1.3.17+ds-2+deb13u1
-'http://deb.debian.org/debian/pool/main/f/freetds/freetds_1.3.17%2bds-2%2bdeb13u1.dsc' freetds_1.3.17+ds-2+deb13u1.dsc 1702 SHA256:575edf80b8c0a8224e9f4d68d2e9d3d1c58db128addd2cd74a657ab55389da93
-'http://deb.debian.org/debian/pool/main/f/freetds/freetds_1.3.17%2bds.orig.tar.xz' freetds_1.3.17+ds.orig.tar.xz 1088488 SHA256:7995b99e6e0b121002e59de2b7b4acf170af29b7098e01f884e695816027ed01
-'http://deb.debian.org/debian/pool/main/f/freetds/freetds_1.3.17%2bds-2%2bdeb13u1.debian.tar.xz' freetds_1.3.17+ds-2+deb13u1.debian.tar.xz 22480 SHA256:323cc083324a22c78a4532049d74e7a40b4e7a30519c711e1f7de1dc87c7f988
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/freetds/1.3.17+ds-2+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/freetds/1.3.17+ds-2+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetds/1.3.17+ds-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.13.3+dfsg-1+deb13u1`
 
@@ -3959,42 +3924,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-17=17.10-0+deb13u1`
-
-Binary Packages:
-
-- `libpq5:amd64=17.10-0+deb13u1`
-
-Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
-
-- `Artistic`
-- `BSD-2-clause`
-- `BSD-3-Clause`
-- `BSD-3-clause`
-- `Custom-Unicode`
-- `Custom-pg_dump`
-- `Custom-regex`
-- `GPL-1`
-- `PostgreSQL`
-- `Tcl`
-- `double-metaphone`
-- `nagaysau-ishii`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.10-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10-0%2bdeb13u1.dsc' postgresql-17_17.10-0+deb13u1.dsc 4522 SHA256:5bc74b90b27b78101b93d04645fc5db8671713ae88b4836decacc7204464b708
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10.orig.tar.bz2' postgresql-17_17.10.orig.tar.bz2 21664720 SHA256:078a03516dcdbdb705fecaf415ea3d13a956c589e46f09fed68a06fb00598c90
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.10-0+deb13u1.debian.tar.xz 31488 SHA256:fa9f5903f1b0ad94a07c50f1d2997419ef6e8cbc7dd27b651060b7e19f630392
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/postgresql-17/17.10-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.10-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.10-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
 Binary Packages:
@@ -4154,15 +4083,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.13.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.13.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.13=3.13.5-2+deb13u3`
+### `dpkg` source package: `python3.13=3.13.5-2+deb13u4`
 
 Binary Packages:
 
-- `libpython3.13:amd64=3.13.5-2+deb13u3`
-- `libpython3.13-minimal:amd64=3.13.5-2+deb13u3`
-- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u3`
-- `python3.13=3.13.5-2+deb13u3`
-- `python3.13-minimal=3.13.5-2+deb13u3`
+- `libpython3.13:amd64=3.13.5-2+deb13u4`
+- `libpython3.13-minimal:amd64=3.13.5-2+deb13u4`
+- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u4`
+- `python3.13=3.13.5-2+deb13u4`
+- `python3.13-minimal=3.13.5-2+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.13/copyright`, `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/share/doc/libpython3.13-stdlib/copyright`, `/usr/share/doc/python3.13/copyright`, `/usr/share/doc/python3.13-minimal/copyright`)
 
@@ -4187,18 +4116,18 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u3
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.dsc' python3.13_3.13.5-2+deb13u3.dsc 3721 SHA256:2f6c3f83cd3de0355f4411807871a95f99a0aae9b397daba5dbdbf1bd5169cc8
+$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u4
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.dsc' python3.13_3.13.5-2+deb13u4.dsc 3721 SHA256:72134c9f6705d0d87a53cf48c5a997f088b6b675ad5d87f57fa6e9f338393519
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz' python3.13_3.13.5.orig.tar.xz 22856016 SHA256:93e583f243454e6e9e4588ca2c2662206ad961659863277afcdb96801647d640
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz.asc' python3.13_3.13.5.orig.tar.xz.asc 963 SHA256:da6e013d98dcf8fc6696cdb2872b0051fc8fdeb632f73ef9f54d7b5a68647401
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.debian.tar.xz' python3.13_3.13.5-2+deb13u3.debian.tar.xz 295440 SHA256:8e9ed35b583e093f80fbcd53bf3de9245c8070cc5ea9b36e5f34d3a45bff73e9
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.debian.tar.xz' python3.13_3.13.5-2+deb13u4.debian.tar.xz 296316 SHA256:b5cc42821fb6a6f91b7a5ac1da5b313bb251288ca03f03d683b4c6ca453ece11
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pyyaml=6.0.2-1`
 
@@ -4584,11 +4513,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3+deb13u2`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u3`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.7.0-3+deb13u2`
+- `libtiff6:amd64=4.7.0-3+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -4597,17 +4526,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.dsc' tiff_4.7.0-3+deb13u2.dsc 2287 SHA256:503d624f692bd30c8b005204065ec6f1197455b850c4f760ca2e6c67cd8b0f4b
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.debian.tar.xz' tiff_4.7.0-3+deb13u2.debian.tar.xz 26680 SHA256:3a201857c5c8433ddd494e01a8d2745f88ae200c3d509446a4aaa480dc106f64
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u3.dsc' tiff_4.7.0-3+deb13u3.dsc 2442 SHA256:51cdbd32322b5d35ef35677ace1cb7cd6591325da4ecd470ec6ccefab47d6a29
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u3.debian.tar.xz' tiff_4.7.0-3+deb13u3.debian.tar.xz 28212 SHA256:c0cbcb717e20a69964bfa7471cbb0137dd39a451434932972bc7fbcdb86345f8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tini=0.19.0-3`
 

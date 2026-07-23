@@ -1,10 +1,10 @@
-# `redmine:6.1.3-alpine3.24`
+# `redmine:7.0.0-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d2fd7e64a730411d255acd78802d161f8dd85c50ad0b8e4a213747ec6847cf8`
-- Created: `2026-07-01T00:15:39.739343256Z`
-- Virtual Size: ~ 447.56 Mb  
+- Image ID: `sha256:d52c1ffa28bdc14c06614fdbe703a2c1d8d186fc0db7ffbccffe6b0f1ec6794a`
+- Created: `2026-07-22T20:50:32.905502998Z`
+- Virtual Size: ~ 497.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,18 +12,18 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.10`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
+  - `RUBY_VERSION=4.0.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=9c9d121fe3314ea7c801e690b9de981d2b9d12d7849db99c27482468a541ba0a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.3`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.3.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=61db3008c7fd18a3afc559ed656fd38fdf8df8220ac69598b319095183190b7a`
+  - `REDMINE_VERSION=7.0.0`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-7.0.0.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=857e9f8860c31e4c531389e5d93eea26488dba69830484a3b0aa904be615e90a`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `apk` (`.apk`-based packages)
@@ -269,16 +269,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -399,23 +399,6 @@ fontconfig-2.17.1-r1 installed size:
 
 fontconfig-2.17.1-r1 license:
 MIT
-
-```
-
-### `apk` package: `freetds`
-
-```console
-freetds-1.5.14-r0 description:
-Tabular Datastream Library
-
-freetds-1.5.14-r0 webpage:
-https://www.freetds.org/
-
-freetds-1.5.14-r0 installed size:
-1724 KiB
-
-freetds-1.5.14-r0 license:
-GPL-2.0-or-later OR LGPL-2.0-or-later
 
 ```
 
@@ -1150,23 +1133,6 @@ Libpng
 
 ```
 
-### `apk` package: `libpq`
-
-```console
-libpq-18.4-r0 description:
-PostgreSQL client library
-
-libpq-18.4-r0 webpage:
-https://www.postgresql.org/
-
-libpq-18.4-r0 installed size:
-350 KiB
-
-libpq-18.4-r0 license:
-PostgreSQL
-
-```
-
 ### `apk` package: `libpsl`
 
 ```console
@@ -1544,16 +1510,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.2.1-r0 description:
+mercurial-7.2.3-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.2.1-r0 webpage:
+mercurial-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.2.1-r0 installed size:
-9 MiB
+mercurial-7.2.3-r0 installed size:
+10 MiB
 
-mercurial-7.2.1-r0 license:
+mercurial-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1561,16 +1527,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.2.1-r0 description:
+mercurial-pyc-7.2.3-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.2.1-r0 webpage:
+mercurial-pyc-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.2.1-r0 installed size:
+mercurial-pyc-7.2.3-r0 installed size:
 10 MiB
 
-mercurial-pyc-7.2.1-r0 license:
+mercurial-pyc-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -2241,34 +2207,17 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
-
-```
-
-### `apk` package: `unixodbc`
-
-```console
-unixodbc-2.3.14-r1 description:
-Unix Open DataBase Connectivity sub-system and SDK
-
-unixodbc-2.3.14-r1 webpage:
-https://www.unixodbc.org/
-
-unixodbc-2.3.14-r1 installed size:
-651 KiB
-
-unixodbc-2.3.14-r1 license:
-LGPL-2.0-or-later
 
 ```
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2df3493aa7790bfe907b723d3c3c6cabfc400d66ac5d1b7f21f1b0427c0ba9e9`
-- Created: `2026-07-01T00:16:31.961753834Z`
-- Virtual Size: ~ 447.9 Mb  
+- Image ID: `sha256:e1e1f0900592d80e95d3940f9e2b8f214b07591619f12c48e71ac13bc169892b`
+- Created: `2026-07-22T20:51:39.335219533Z`
+- Virtual Size: ~ 447.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -269,16 +269,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -422,16 +422,16 @@ GPL-2.0-or-later OR LGPL-2.0-or-later
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
@@ -864,16 +864,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```
@@ -2207,16 +2207,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
