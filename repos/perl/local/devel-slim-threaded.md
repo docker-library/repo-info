@@ -1,13 +1,13 @@
-# `perl:5.43.9-slim-threaded`
+# `perl:5.45.1-slim-threaded`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce1112fedc5b9f9fa06f432cde391cedd2245317ee3937a5e4679c54c691c397`
-- Created: `2026-07-14T02:02:41.046872783Z`
-- Virtual Size: ~ 194.83 Mb  
+- Image ID: `sha256:2485354c3c44a4d1ff84dc02775b68560e06d5fded7ef015b3f3670a4eeea4ce`
+- Created: `2026-07-22T18:57:17.658830176Z`
+- Virtual Size: ~ 194.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.43.9","-de0"]`
+- Command: `["perl5.45.1","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -1545,11 +1545,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.95-1`
+### `dpkg` source package: `linux=6.12.96-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.95-1`
+- `linux-libc-dev=6.12.96-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1563,17 +1563,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.95-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95-1.dsc' linux_6.12.95-1.dsc 288306 SHA256:ef7ffb480d44c4109efebc8d658fd0370adabb7dd4dfb0035ca9e1a7d23721cf
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95.orig.tar.xz' linux_6.12.95.orig.tar.xz 151304520 SHA256:82ee332c20307c8e75b59c2779f3d554c592f5efa454bacf1e58daced5199f89
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95-1.debian.tar.xz' linux_6.12.95-1.debian.tar.xz 1840680 SHA256:ee558061352ea28f1013ff968fe3a3055a07f0ee23297606893d5230dfa3f180
+$ apt-get source -qq --print-uris linux=6.12.96-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.dsc' linux_6.12.96-1.dsc 288306 SHA256:4fca3ebc4d2c1c2c7b88e05dc67fef7a7f539f03b19b4308f61d7ee3e2f1b738
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96.orig.tar.xz' linux_6.12.96.orig.tar.xz 151315096 SHA256:59f9548e0384dbafd08eaf05872576de8de50206f972b091c567a9fc91867ca7
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.debian.tar.xz' linux_6.12.96-1.debian.tar.xz 1845940 SHA256:6052af0c3d43d5676853e25d1a52521d09440fa000dd73c30350783d47271918
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.95-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.95-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.95-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.96-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.96-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.96-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
