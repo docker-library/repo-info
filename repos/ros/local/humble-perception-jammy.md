@@ -1226,9 +1226,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg2.orig.tar.xz 829892 SHA256:f3d90671718e7dc1d46db7ccbad548d60ffe1edd1e9a620e5d3b779e6a0a9326
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2-3ubuntu1.2.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg2-3ubuntu1.2.debian.tar.xz 98836 SHA256:1b152ebdeb96d901f801d286e4d3e5e78bcf262d4d3b9c937c216770aeaeb262
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2-3ubuntu1.2.dsc' cyrus-sasl2_2.1.27+dfsg2-3ubuntu1.2.dsc 3626 SHA256:f6afc91de318eda0251bcc8eb668d32d0db40e77d921ee57fd17dbcafb63e7ba
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg2.orig.tar.xz 829892 SHA512:13337dfcc57ea8fec471ee0f2a0f6b58fb92907ad0899a4a8afaba957c5da302924e71c9fc4a61bbc913a4ee2ea74b05772cb26ed58d5724a312bb20a8b6a4cb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2-3ubuntu1.2.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg2-3ubuntu1.2.debian.tar.xz 98836 SHA512:91457b1c476fae1b407f82304e6f651053ceaa923059e185b59e2be680038c2a38aab7749004b640ba604f7fdf51eb87a45e91671077207b8b8b4319e1bf24fb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg2-3ubuntu1.2.dsc' cyrus-sasl2_2.1.27+dfsg2-3ubuntu1.2.dsc 3626 SHA512:fc67304c71b6bf7e5097bdb080ef0973ab873ff7558d91153066820c2f7d5983260586564760d6abd04c3e3fe7b076b474ae44bc97907cc2fb2757d4ca3cfe56
 ```
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-3build1`
@@ -2208,14 +2208,9 @@ Licenses: (parsed from: `/usr/share/doc/libgif-dev/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris giflib=5.1.9-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.9.orig.tar.bz2' giflib_5.1.9.orig.tar.bz2 336304 SHA256:292b10b86a87cb05f9dcbe1b6c7b99f3187a106132dd14f1ba79c90f561c3295
-'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.9-2ubuntu0.1.debian.tar.xz' giflib_5.1.9-2ubuntu0.1.debian.tar.xz 11128 SHA256:7e72a81f6362cfb85ac750d78b1b3e6153b9dcc27613d1880548841aa7097aa7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.9-2ubuntu0.1.dsc' giflib_5.1.9-2ubuntu0.1.dsc 1929 SHA256:cc8d1b882864c72483e812bbe39c85c0adcdf235b90521f2944ae95dc3a7a93c
-```
 
 ### `dpkg` source package: `git=1:2.34.1-1ubuntu1.17`
 
@@ -3126,14 +3121,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA256:10453fee4e3a8f8ce6129059e5c050b8a65dab1c257df68b99b3112eaa0cdf6a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.7.debian.tar.xz' krb5_1.19.2-2ubuntu0.7.debian.tar.xz 124844 SHA256:b7e94dfecde73a4a79e7433fd8723851ad8886635d568fe99796f812a4fbc463
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.7.dsc' krb5_1.19.2-2ubuntu0.7.dsc 3697 SHA256:c987b71948299427d2f46ea0c64c9ebd9e5d06a55e6362839f77ee3c7adbd6ca
-```
 
 ### `dpkg` source package: `lame=3.100-3build2`
 
@@ -3264,15 +3254,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.6.0-1ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz' libarchive_3.6.0.orig.tar.xz 6400620 SHA512:eeffec08a632cdf55d46b0f4b8261de20128163c39f63422aa5af081c9c5159a9445bca5f89ebaff984d9d5387b5c6901166949df09a2e46fe5adec31bfad0e5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz.asc' libarchive_3.6.0.orig.tar.xz.asc 833 SHA512:be03f9376eaafa77379ccbbc396602039ba7ac79bf496a5a7f60c847296b8425579d267dc6a96a23c07a65a1a8a8d1cc77fae6deb9dcd3fc2bdfa259b623a8d0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.7.debian.tar.xz' libarchive_3.6.0-1ubuntu1.7.debian.tar.xz 38920 SHA512:6dc4527c7f11d95f6ded09f0a52b87e8aebb638b3545232776c14dd2bd465de70f12cf15a0ce23e864c49d9662fb6e45d270aa90384adb8484029ba64aa7dc47
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.7.dsc' libarchive_3.6.0-1ubuntu1.7.dsc 2668 SHA512:79fd3d22ec43ecbc5b56ade04f0ae597a0e22705fe1cf2bd74e2a65c9c52c5ef30282ebcec683551bff08e0c8f5fc2ef1090e9bdcdff0a54c2cf4b144fbb6e3b
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -4223,10 +4207,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libksba=1.6.0-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2' libksba_1.6.0.orig.tar.bz2 662120 SHA256:dad683e6f2d915d880aa4bed5cea9a115690b8935b78a1bbe01669189307a48b
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2.asc' libksba_1.6.0.orig.tar.bz2.asc 228 SHA256:c695098f67cc837071d899f0e15d993bcf29eaac8f1ca7428ee793d9c62c795c
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.2.debian.tar.xz' libksba_1.6.0-2ubuntu0.2.debian.tar.xz 16004 SHA256:51f00b01877995ccd56fc056cd5d50f9b5f676f0359385d4a4298c012203307f
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.2.dsc' libksba_1.6.0-2ubuntu0.2.dsc 2585 SHA256:d113abd41140b8f60638f31058674494053f4432fe15ef7da24b95627fc6a809
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2' libksba_1.6.0.orig.tar.bz2 662120 SHA512:a7c76d41dfd8ec6383ac2de3c53848cd9f066b538f6f3cd43175e3c8095df51b96d0a24a573481c0c4856b09b7c224e2b562d88f5c0801e7acfb582ea2739c2b
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2.asc' libksba_1.6.0.orig.tar.bz2.asc 228 SHA512:fc381ea66eefdb431a5248fa3ac0751d7343d7f99cc7ebf7621b0763e6e31a80b45c5e17b09bbc7c1c1154e6a0152af1f13798f64959ac63f50b789ec046d7a3
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.2.debian.tar.xz' libksba_1.6.0-2ubuntu0.2.debian.tar.xz 16004 SHA512:24a609ca522b5e3a1402ff5a97ce451869bdf0960902d171a89f2190d4de7c8442403d21f938cebeeafd0ae082bf03d76c0521b26a2c153257df784cf7894b43
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.2.dsc' libksba_1.6.0-2ubuntu0.2.dsc 2585 SHA512:ef96729e570627b7cf38ed0dcc3338097a81f690dde041fd9ea63b3c4b55c11ccf35ab7b2bbd196af3ca7834f8e5017cbb14436a7718034608f3276ca3db9f3f
 ```
 
 ### `dpkg` source package: `libmd=1.0.4-1build1`
@@ -5529,14 +5513,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.12-1ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12.orig.tar.gz' libxpm_3.5.12.orig.tar.gz 529302 SHA256:2523acc780eac01db5163267b36f5b94374bfb0de26fc0b5a7bee76649fd8501
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12-1ubuntu0.22.04.2.diff.gz' libxpm_3.5.12-1ubuntu0.22.04.2.diff.gz 21876 SHA256:79a8454f087f24d901e7562987529979d679f7125b7d599d995d5a0bc7b1bce8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12-1ubuntu0.22.04.2.dsc' libxpm_3.5.12-1ubuntu0.22.04.2.dsc 2203 SHA256:c7edc4bd5a6d48f2bfb33ee77155f405f7ac12a19f971b7f422e1d3ccd22a455
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -7070,14 +7049,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.debian.tar.xz' pam_1.4.0-11ubuntu2.6.debian.tar.xz 187648 SHA256:3c39973311d521677a9e35994eedf22fe24d0fc1da39f31abeeaab82eb3674f8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.6.dsc' pam_1.4.0-11ubuntu2.6.dsc 2728 SHA256:3a3ad2fc2206083b7b8b143e1adc904cb5399ba1be9067a749332194d87cbd47
-```
 
 ### `dpkg` source package: `pango1.0=1.50.6+ds-2ubuntu1`
 
@@ -12494,15 +12468,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.6.debian.tar.xz 34132 SHA512:f8092a1d3f8deae2f409f192b063748165760b22873fd44191cef876655d54ea9cbb2adafc95766e531ad30722617a8a589aa902d6c77df406724cec68d21ef7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.6.dsc' sqlite3_3.37.2-2ubuntu0.6.dsc 2602 SHA512:46e9bcdf9da29494949ef51fd0664803a436b5399278c419af81e5cb1966e5ccfee9be6ebac01a6db58b62227bf53377cbccb65b838a68524a03a268cf69944a
-```
 
 ### `dpkg` source package: `srt=1.4.4-4`
 

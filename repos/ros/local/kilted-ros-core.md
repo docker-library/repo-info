@@ -1226,15 +1226,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.debian.tar.xz' krb5_1.20.1-6ubuntu2.6.debian.tar.xz 122284 SHA256:58e9a5265de110bcebfaf1f88efc384673508302abed9ec189e2f8f9053abe70
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.dsc' krb5_1.20.1-6ubuntu2.6.dsc 4125 SHA256:52ce15dc89411879dc429344ae34ceec3f6301d425257b858804cf8baa8a4c13
-```
 
 ### `dpkg` source package: `lapack=3.12.0-3build1.1`
 
@@ -1276,15 +1270,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.7.debian.tar.xz' libarchive_3.7.2-2ubuntu0.7.debian.tar.xz 41100 SHA512:ebf6efa37b1481dda388e043b4d5eca4d4b6a675e0fce864d856debd9d788fea44111447490b14823430ccfb0cf223c113eeed2d124c3b7df42776b34063235b
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.7.dsc' libarchive_3.7.2-2ubuntu0.7.dsc 2733 SHA512:c87aa7062c09cb3a54a3c015f68bb4e26dc63e90ad9bbcf79776c77c725c9a65af62f053ef8a8faa1a5e07743ea9ec43bd6cf669df6c2d5ffa20277a7928fc5a
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -2336,14 +2324,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA256:7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.5.debian.tar.xz' pam_1.5.3-5ubuntu5.5.debian.tar.xz 204688 SHA256:391da0d96481d5df4ee3952d8cac5a1496ff65fcb5e76f62caae8fdc2e866b44
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.5.dsc' pam_1.5.3-5ubuntu5.5.dsc 2727 SHA256:7f29945c6c01f7a1710401ab9ef0c2a1132fffeefecbaa308c2570d8515ee50a
-```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 

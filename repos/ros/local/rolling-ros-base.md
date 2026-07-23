@@ -2037,15 +2037,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.8.5-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz' libarchive_3.8.5.orig.tar.xz 6009124 SHA512:b050ca8488143503bdec38ffcab7a5010af61f1b93c1207a3fa006d72d643b84aa8c1ab267e890eb39966ccaedd6e18db8fe5b02f2789bbd1b318a3c4cf138f3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz.asc' libarchive_3.8.5.orig.tar.xz.asc 833 SHA512:80b155e86d9f93efd3f2e65655c1fe66fb0b9b937888fd5b24e65b26418f01ee6fbd66c649079b8591c15ae593980ece3de49778bb1215eaecd9af0f2823fb71
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.1.debian.tar.xz' libarchive_3.8.5-1ubuntu2.1.debian.tar.xz 30556 SHA512:1b72d8f8476b13ce34fe0715528527ab96fa8fa95a4ed1a104120720431d668eb6784ed7cf44084f8e3f4c34b5a9e3bdbcdf4c27487cfd0d7b8525c3684e38fe
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.1.dsc' libarchive_3.8.5-1ubuntu2.1.dsc 2857 SHA512:c2d86c0cac86143c763161a1b8c60922a3d8537b9c7a2864ddd365713c1772879633fca0677aa56d24b6715844c4588018e07926f72ee92bd3b65b84364de52c
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
