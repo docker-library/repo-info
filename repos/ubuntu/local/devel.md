@@ -1061,15 +1061,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.debian.tar.xz' openssl_3.5.5-1ubuntu3.debian.tar.xz 80844 SHA512:8d80c3e254ac463d3e1997436ff035c44e896b2387e0d675d5a3858108648afc09c920c1bc6088a18524c5eff1fe5e316acae9b6c328c2b8097098d85d5ac99b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.dsc' openssl_3.5.5-1ubuntu3.dsc 2905 SHA512:d7d0c83037cf32df4aadfd7ae043c78aa61fa9a4d253575444a862743e120f8bd03c85981ff8821d4b65a0ffcff5021281b4bf4d95b930cf349ecf24a75e1c17
-```
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu3`
 
@@ -1166,10 +1160,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.40.1-8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-8.dsc' perl_5.40.1-8.dsc 2372 SHA512:5bd6928bac21f9f567800a8ca9679a936270d309e82d849f6a8d1e05329a08ef5e96148a4e7c31ded02b1f776e3cd0d6769cc72ac171e9df516a7edbd6a3e093
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-8.debian.tar.xz' perl_5.40.1-8.debian.tar.xz 179088 SHA512:63d6020cff76321dd4068ee12aeaa8c04cdf18bcdf6eff0cbbab58a3f0848e6622c824c75d631ed95c9b08328ccd9b500519088ea57e4d98157e45b627e8bcce
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-8ubuntu1.debian.tar.xz' perl_5.40.1-8ubuntu1.debian.tar.xz 180004 SHA512:7ae4b22d226e975f94d3de3b319b774c0bec94ed994c4fe348ccf8b80e164729505eb6c0f98da2018d3615aca9aef2be942556bc397c1a395b2d86003cdb9d60
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-8ubuntu1.dsc' perl_5.40.1-8ubuntu1.dsc 3015 SHA512:10419b77b43a520c7041db6fb4955701bf9070658defadcee16b10d746e18c4d078d106de13e27310b352d70dd53a57c0c1142341f94247a7de6820ee6e3dd79
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
