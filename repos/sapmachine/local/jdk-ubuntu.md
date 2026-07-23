@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b676b6c210a2806318e3ed304976ddf9080c7ffdf075c2872ccf7aa419b2a17e`
-- Created: `2026-07-02T02:35:29.832927673Z`
-- Virtual Size: ~ 457.52 Mb  
+- Image ID: `sha256:4dce2bccf5e6b856b4accdba33f39c5918ec5b4d3a499ff9420589fd7310a5b9`
+- Created: `2026-07-22T18:23:16.957599075Z`
+- Virtual Size: ~ 376.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -58,21 +58,27 @@ $ apt-get source -qq --print-uris adduser=3.137ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz' adduser_3.137ubuntu1.tar.xz 280408 SHA512:46979160ef2f6b85097958cd11e549ae48efa24e1719155fd90ae7b322c0adac087cac7d0a709cd084ee11557575b05dfde89a9d63bcfd80fb47779c41098d48
 ```
 
-### `dpkg` source package: `alsa-lib=1.2.11-1ubuntu0.2`
+### `dpkg` source package: `alsa-lib=1.2.11-1ubuntu0.3`
 
 Binary Packages:
 
-- `libasound2-data=1.2.11-1ubuntu0.2`
-- `libasound2t64:amd64=1.2.11-1ubuntu0.2`
+- `libasound2-data=1.2.11-1ubuntu0.3`
+- `libasound2t64:amd64=1.2.11-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/doc/libasound2t64/copyright`)
 
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA512:7bf2c541dff5262c0302a1c716ca10cdb5105f4e0ad48f3341c3c7e975b0c3ea835a298a05974c3e216a85912c368d8025ba3cdda3ff04a7683133ce5b2a286d
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA512:22ebba05f37ffe8e38644907e9037379c826ff36940f0c5a96f1c7abd5c2a87109899c362e242d12f079251b8423b8234ae4b333feddad5e220351828e30c732
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz 34836 SHA512:8a576e443008d7cad04ac7474fd69322ead756aa046086347657a17bc3f318f558bc9403184f60cd04df142ac55088a5955772c9e3c0e057b7e844ac6c9fac18
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.dsc' alsa-lib_1.2.11-1ubuntu0.3.dsc 3034 SHA512:d26f939ee14e738ffad5f0ceafe45426f20b97c41bfff4181474f943e75a7e29b9ce75219f2088c1b8d6b7a25d2eeeae3f4b7fe240557bc32a1947ae82e4dd07
+```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -1758,11 +1764,11 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.dsc' procps_4.0.4-4ubuntu3.2.dsc 2251 SHA256:eee89a6469fcc4fb8ee3844b10bf48c894322ff781e92732554c7ceed680c5a1
 ```
 
-### `dpkg` source package: `sapmachine-26-jdk=26.0.1`
+### `dpkg` source package: `sapmachine-26-jdk=26.0.2`
 
 Binary Packages:
 
-- `sapmachine-26-jdk=26.0.1`
+- `sapmachine-26-jdk=26.0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1846,11 +1852,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.dsc' shadow_4.13+dfsg1-4ubuntu3.2.dsc 2400 SHA256:0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.6`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.7`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.6`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1861,11 +1867,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.6
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.7
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.6.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.6.debian.tar.xz 35492 SHA512:ee7befc5b28808287f89e70fcd850eaaf0fa759e40ef087e8e702cd01a61635b44501707adbc64041ee1fb54431a471099288f65b3afbbf361a69fcd25f55f98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.6.dsc' sqlite3_3.45.1-1ubuntu2.6.dsc 2601 SHA512:9389451ddbeda6818ee1d88e23189c6bf43eef3ab9a528ea298ba19d3916c5e8f1c56ecb837745a66b66112cde1f79b6c27170c0a6535a44d688451e777aad18
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz 37004 SHA512:db667b39cfe043e12ae692f922e6d5372ea26f6ce37de51f193a57e19e766ec77a76e33c1a61c99714c1e55ea157b170c6f2502c9893bcfec1afc00e35d39aaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.dsc' sqlite3_3.45.1-1ubuntu2.7.dsc 2601 SHA512:3facf920149eb11209b1487c864bdfc1d1858cdb9107dddf8f38677714ad25fe4f477132a58ebc4a819ac7c0aa6646ecc3554052a40e32fbcbb5ca6308986444
 ```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.16`

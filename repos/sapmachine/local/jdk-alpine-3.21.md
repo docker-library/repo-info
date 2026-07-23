@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55aa90d8509e0c90d3bf38959003c13becf4571f7ef0a8590f79502f0b1ab0e9`
-- Created: `2026-04-21T23:03:03.536249195Z`
-- Virtual Size: ~ 386.11 Mb  
+- Image ID: `sha256:22bae245c6a621607e4607dc9202de80926aff8373b662ba66fff3ad18c675ad`
+- Created: `2026-07-22T18:23:38.273833455Z`
+- Virtual Size: ~ 297.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -289,16 +289,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.5-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.5-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.5-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.7.5-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-26-jdk`
 
 ```console
-sapmachine-26-jdk-26.0.1-r0 description:
+sapmachine-26-jdk-26.0.2-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-26-jdk-26.0.1-r0 webpage:
+sapmachine-26-jdk-26.0.2-r0 webpage:
 https://sapmachine.io
 
-sapmachine-26-jdk-26.0.1-r0 installed size:
-345 MiB
+sapmachine-26-jdk-26.0.2-r0 installed size:
+261 MiB
 
-sapmachine-26-jdk-26.0.1-r0 license:
+sapmachine-26-jdk-26.0.2-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```

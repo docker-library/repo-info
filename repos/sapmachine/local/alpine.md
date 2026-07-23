@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5eb0257cb3055ecc61d13dd2ff7f30216f7544299527aa0a007c6c2e393238c4`
-- Created: `2026-06-22T20:07:38.0496464Z`
-- Virtual Size: ~ 387.28 Mb  
+- Image ID: `sha256:45ab0ab45d3dbf5cb8794e27f0300001fc08df955f7b8f07817948f8a877f115`
+- Created: `2026-07-22T18:23:15.182106094Z`
+- Virtual Size: ~ 298.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -204,16 +204,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.2-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.2-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.2-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.2-r0 license:
 MIT
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-26-jdk`
 
 ```console
-sapmachine-26-jdk-26.0.1-r0 description:
+sapmachine-26-jdk-26.0.2-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-26-jdk-26.0.1-r0 webpage:
+sapmachine-26-jdk-26.0.2-r0 webpage:
 https://sapmachine.io
 
-sapmachine-26-jdk-26.0.1-r0 installed size:
-345 MiB
+sapmachine-26-jdk-26.0.2-r0 installed size:
+261 MiB
 
-sapmachine-26-jdk-26.0.1-r0 license:
+sapmachine-26-jdk-26.0.2-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
