@@ -3295,21 +3295,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `ISC`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.22.1-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.22.1-1.dsc' ngtcp2_1.22.1-1.dsc 2599 SHA256:d3ce1fe931b39d3fd6feb4b7feb1a166319102de527b2c53f034193de2dc1f0d
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.22.1.orig.tar.xz' ngtcp2_1.22.1.orig.tar.xz 692880 SHA256:dfd2c68bd64b89847c611425b9487105c46e8447b5c21e6aeb00642c8fbe2ca8
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.22.1.orig.tar.xz.asc' ngtcp2_1.22.1.orig.tar.xz.asc 833 SHA256:802e87fd27427f2c91f80f38419858f5240f09d1f92cc4e2a70ec717be7c2283
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.22.1-1.debian.tar.xz' ngtcp2_1.22.1-1.debian.tar.xz 11808 SHA256:368ac3aa1aaa0cb43f0ae243afa564fa13a960ae01b20a5a05377d4e3fbe3474
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.22.1-1/
 
-- https://sources.debian.net/src/ngtcp2/1.22.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.22.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.22.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.169-1`
 
