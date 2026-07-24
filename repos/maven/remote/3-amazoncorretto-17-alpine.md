@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-17-alpine`
 
 ```console
-$ docker pull maven@sha256:e9d1ba004df5a5c22475843089502ec3b642086163bfd11b7e760b807207dbb2
+$ docker pull maven@sha256:53215f45dda1e255693160346acc2a9cc10e3b6a59a19ce3a2fc95c476c1772a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:e9d1ba004df5a5c22475843089502ec3b642086163bfd11b7e760
 ### `maven:3-amazoncorretto-17-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:8d4b57a8bb56f6b0ffac6e76cd36da5648d4e1f29545bc9fff4ffe7d518bc8f1
+$ docker pull maven@sha256:7cb75bfb08197c104d52c227e915ebff15e42080482aeb7a13c8a8c03448cb3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.0 MB (164029881 bytes)**  
+-	Total Size: **164.4 MB (164381940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05c6a80dc13215caf18cacc2fefccb8224f0abfefc8507f03786dba91ada2762`
+-	Image ID: `sha256:4b67dcb3de1ac5277f7f3041d68912fca9651a26b0197d6e57205be75381722d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -29,42 +29,42 @@ $ docker pull maven@sha256:8d4b57a8bb56f6b0ffac6e76cd36da5648d4e1f29545bc9fff4ff
 ADD alpine-minirootfs-3.24.1-x86_64.tar.gz / # buildkit
 # Tue, 16 Jun 2026 00:01:29 GMT
 CMD ["/bin/sh"]
-# Tue, 16 Jun 2026 00:19:25 GMT
-ARG version=17.0.19.10.1
-# Tue, 16 Jun 2026 00:19:25 GMT
-# ARGS: version=17.0.19.10.1
+# Thu, 23 Jul 2026 23:12:16 GMT
+ARG version=17.0.20.8.1
+# Thu, 23 Jul 2026 23:12:16 GMT
+# ARGS: version=17.0.20.8.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-17=$version-r0 &&     rm -rf /usr/lib/jvm/java-17-amazon-corretto/lib/src.zip # buildkit
-# Tue, 16 Jun 2026 00:19:25 GMT
+# Thu, 23 Jul 2026 23:12:16 GMT
 ENV LANG=C.UTF-8
-# Tue, 16 Jun 2026 00:19:25 GMT
+# Thu, 23 Jul 2026 23:12:16 GMT
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
-# Tue, 16 Jun 2026 00:19:25 GMT
+# Thu, 23 Jul 2026 23:12:16 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:19 GMT
 RUN apk add --no-cache bash openssh-client # buildkit
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 ARG USER_HOME_DIR=/root
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 02 Jul 2026 06:44:34 GMT
+# Fri, 24 Jul 2026 00:15:25 GMT
 CMD ["mvn"]
 ```
 
@@ -73,61 +73,61 @@ CMD ["mvn"]
 		Last Modified: Sun, 14 Jun 2026 06:44:06 GMT  
 		Size: 3.8 MB (3846391 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca623af35f11c167e66c0b2d9ab5d16b630814b00d63a79e81122b4b25532b7f`  
-		Last Modified: Tue, 16 Jun 2026 00:19:43 GMT  
-		Size: 148.6 MB (148606924 bytes)  
+	-	`sha256:d27e94e76fff4b78747bfbd72ea73dee354f8a8f818401a3807fed3574eb38ef`  
+		Last Modified: Thu, 23 Jul 2026 23:12:33 GMT  
+		Size: 149.0 MB (148958991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75e3b4d2fc04f0c32696f5ad00293f56349eff93ec93226077205cae573a3dee`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
-		Size: 2.2 MB (2215593 bytes)  
+	-	`sha256:765b563b7c1ad6ff0d451146762008478267fa3cd322163f2d1fc76c9294e7d6`  
+		Last Modified: Fri, 24 Jul 2026 00:15:32 GMT  
+		Size: 2.2 MB (2215574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e56d2d2ce1ade2360788efb1cbcbbaaa74589ea2296c99cf8cbcafe171950c78`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
-		Size: 9.4 MB (9359966 bytes)  
+	-	`sha256:de666830b627a9b2038346739a9941f518c3a603e5e7ab3ae66213a56c06f03e`  
+		Last Modified: Fri, 24 Jul 2026 00:15:32 GMT  
+		Size: 9.4 MB (9359975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:582af138f5b9fc2535afb4d6ae59aef2e8803a759be6260d273bc95e1de6713f`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
-		Size: 852.0 B  
+	-	`sha256:2606e8aa0c917d3386c918ad9bd5aec944d1d31a3273ca16db2e0f11f2f2a7b7`  
+		Last Modified: Fri, 24 Jul 2026 00:15:32 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e358a42c538f3623fe8584d5d66d6b61d5d005a696a0a5efb4b600c581aedd2`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
+	-	`sha256:50f11ed704869f3badec9ec5c26e013acda92548a59e1f7c16f25ef045a6fd94`  
+		Last Modified: Fri, 24 Jul 2026 00:15:32 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9c9f7bb9ebeee74e26fb17dda27090417974cd2638468b61da11eea4f88e839b
+$ docker pull maven@sha256:6d4296a9cdb4ec0bdad79cc48d3a0835f4e9d9d627df69e0b84b8cb948564136
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **743.0 KB (742952 bytes)**  
+-	Total Size: **743.0 KB (742950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b05b81654e2226f41c6a62d6033b97a286ab14221bd76b160c9c68384720a526`
+-	Image ID: `sha256:16e35619aa0155f2b1d2389855791c1ef967c297e26a0f8285b99fb4da5a3287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fac81b7890f78c0f3b756669a184e35ca8910c412e90a7003cebf6e10c186ebf`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
-		Size: 728.4 KB (728426 bytes)  
+	-	`sha256:cfbb145f9f3b2f75fb5c192d641a568ee9ac2b3de7cf29fa921aea1209399593`  
+		Last Modified: Fri, 24 Jul 2026 00:15:33 GMT  
+		Size: 728.4 KB (728424 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:543e9c1fb985b9c339bcc3438ecb3fee10078bca8d0c188d2dc69a8b1e6ad717`  
-		Last Modified: Thu, 02 Jul 2026 06:44:42 GMT  
+	-	`sha256:503c0c9e173b92d9597d559ef62b748d80c5c6515c1e2c63ab4147831bd1c3c1`  
+		Last Modified: Fri, 24 Jul 2026 00:15:32 GMT  
 		Size: 14.5 KB (14526 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-17-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:985b136f37671b4138ec0463ac72cfe9420c3793561ba9ebdb1838b1fc2b0ec4
+$ docker pull maven@sha256:0a4a43d3797c0dd19c2396f830d28500b005ab4c5b4fbb188b4a8d3ec02dfcca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.8 MB (162753329 bytes)**  
+-	Total Size: **163.2 MB (163173435 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f6a3837fc15b21101616cc5f2575623c24eeea5cc5dad97bb5b5f747a11af2`
+-	Image ID: `sha256:442d8fd5b492792d089e846b468c466a726acdfe3108f638033af0b2108e895d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -136,42 +136,42 @@ $ docker pull maven@sha256:985b136f37671b4138ec0463ac72cfe9420c3793561ba9ebdb183
 ADD alpine-minirootfs-3.24.1-aarch64.tar.gz / # buildkit
 # Tue, 16 Jun 2026 00:01:20 GMT
 CMD ["/bin/sh"]
-# Tue, 16 Jun 2026 00:17:34 GMT
-ARG version=17.0.19.10.1
-# Tue, 16 Jun 2026 00:17:34 GMT
-# ARGS: version=17.0.19.10.1
+# Thu, 23 Jul 2026 23:13:59 GMT
+ARG version=17.0.20.8.1
+# Thu, 23 Jul 2026 23:13:59 GMT
+# ARGS: version=17.0.20.8.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-17=$version-r0 &&     rm -rf /usr/lib/jvm/java-17-amazon-corretto/lib/src.zip # buildkit
-# Tue, 16 Jun 2026 00:17:34 GMT
+# Thu, 23 Jul 2026 23:13:59 GMT
 ENV LANG=C.UTF-8
-# Tue, 16 Jun 2026 00:17:34 GMT
+# Thu, 23 Jul 2026 23:13:59 GMT
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
-# Tue, 16 Jun 2026 00:17:34 GMT
+# Thu, 23 Jul 2026 23:13:59 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 RUN apk add --no-cache bash openssh-client # buildkit
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 ARG USER_HOME_DIR=/root
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 02 Jul 2026 06:37:37 GMT
+# Fri, 24 Jul 2026 00:15:31 GMT
 CMD ["mvn"]
 ```
 
@@ -180,47 +180,47 @@ CMD ["mvn"]
 		Last Modified: Sun, 14 Jun 2026 06:44:31 GMT  
 		Size: 4.2 MB (4183037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d65be918273f7584173158de2c2356b09ef7f1f84bd03d633a3a88684025d512`  
-		Last Modified: Tue, 16 Jun 2026 00:17:53 GMT  
-		Size: 147.0 MB (146953552 bytes)  
+	-	`sha256:384d46bc345dbea4c44bfc14d27a3af5b9da7e0be8e75579442fad22ef885abf`  
+		Last Modified: Thu, 23 Jul 2026 23:14:17 GMT  
+		Size: 147.4 MB (147373675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:349a4bdd7031d9924048bc8724886351c4577fa82959f20c8226864828023d98`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
-		Size: 2.3 MB (2255754 bytes)  
+	-	`sha256:cf919412b54b203967a7ff8a68872b4f1ec3f79ec78ffe70c58535be2c6427b1`  
+		Last Modified: Fri, 24 Jul 2026 00:15:39 GMT  
+		Size: 2.3 MB (2255737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b3903f246c050fa095d0b05a464791f990b1d4eddd337b7e452d75870f34203`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
+	-	`sha256:50853b61c414b423be75418a5d4c8f38c703e907f30e157e54178a91962e9a43`  
+		Last Modified: Fri, 24 Jul 2026 00:15:39 GMT  
 		Size: 9.4 MB (9359977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47f0b09d8d1cb6cedc5c3f7d304048f6ce386060da5992113546ef84f48ae44d`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
-		Size: 853.0 B  
+	-	`sha256:ca8a2d6681fba7276abcc1cfb245e726d369379bdfc981238efd05a74445908a`  
+		Last Modified: Fri, 24 Jul 2026 00:15:39 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77a5447d795d97d304077ca7bf9816852e03c55693883eb2d75927b098b2446a`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
-		Size: 156.0 B  
+	-	`sha256:499ae2d156eaff6aa16779d746746f627623673e0f69b060a99f6b01beabb117`  
+		Last Modified: Fri, 24 Jul 2026 00:15:42 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:e2c56397bde5cf1ef7c1650b9ab8e50184f008586b1e543d0718dda319f7a274
+$ docker pull maven@sha256:b82ffae7ff7f3b0fd1432baca8d9384b54763384b1eec567d0b877bb64108f68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **741.8 KB (741842 bytes)**  
+-	Total Size: **741.8 KB (741840 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f31ca783a5362dccb02f8ca084eee7791d9438590372ccfa4a123bc9b082a632`
+-	Image ID: `sha256:6e4654282ad4411483a6d46794ba29a654e4995bd591ff2514c59f58e8fcbfa0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44f31d3277d1c078dfa0fd2a3ef2b23334a9917a62cf8f75f7cc0422a5cf1f08`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
-		Size: 727.2 KB (727183 bytes)  
+	-	`sha256:f00e21209a8da8b888dd3c2c1c90533602e084169e524adf480be71e8acf8c71`  
+		Last Modified: Fri, 24 Jul 2026 00:15:39 GMT  
+		Size: 727.2 KB (727181 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65557df13c14b3ab3928d175eff79e518db8e0bbc6f0d9619d25b04660af0046`  
-		Last Modified: Thu, 02 Jul 2026 06:37:45 GMT  
+	-	`sha256:b62119c29554907ba451469385b63ec78c286fb19a729e8d036bcdc222f8da96`  
+		Last Modified: Fri, 24 Jul 2026 00:15:40 GMT  
 		Size: 14.7 KB (14659 bytes)  
 		MIME: application/vnd.in-toto+json
