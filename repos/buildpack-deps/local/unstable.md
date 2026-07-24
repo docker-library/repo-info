@@ -707,21 +707,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d7/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.5.3-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.3-1.dsc' dav1d_1.5.3-1.dsc 2290 SHA256:1592217a09f18e62b59851631d467c931c5891dacd087e02a7469c379b5e819c
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.3.orig.tar.xz' dav1d_1.5.3.orig.tar.xz 1022836 SHA256:732010aa5ef461fa93355ed2c6c5fedb48ddc4b74e697eaabe8907eaeb943011
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.3.orig.tar.xz.asc' dav1d_1.5.3.orig.tar.xz.asc 195 SHA256:8a3edf1d814175c61c4b8ccb752e6d9b3a795c9c14aa83243239e782ba935224
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.3-1.debian.tar.xz' dav1d_1.5.3-1.debian.tar.xz 8572 SHA256:2701010cf2ed259c4970bb945be99ca271be2515e90052ec6fc48c0a6317afd8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.5.3-1/
 
-- https://sources.debian.net/src/dav1d/1.5.3-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.5.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.5.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.4`
 
@@ -2215,20 +2207,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.1.1+ds-1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds-1.dsc' lerc_4.1.1+ds-1.dsc 2718 SHA256:c15693b091bacc1c46afd3e01e3fe6526dae6c4aa6ef7e596bbdc451ea6a6fcb
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds.orig.tar.xz' lerc_4.1.1+ds.orig.tar.xz 349460 SHA256:148a624088486490fc9b72e5a457c4cd32cf4ca943983809321d3fc39208f8f1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.1.1%2bds-1.debian.tar.xz' lerc_4.1.1+ds-1.debian.tar.xz 7040 SHA256:fffe8be97d01d11ab4fe1d1555845c41510f62ef39544620e0878cc3d53c8eca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.1.1+ds-1/
 
-- https://sources.debian.net/src/lerc/4.1.1+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.1.1+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.1.1+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=3.0.2-2`
 
@@ -2618,21 +2603,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.17.0-1
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0-1.dsc' libfido2_1.17.0-1.dsc 2585 SHA256:d8895d511a6a9fffb19639bea47f27c9dc6a2ad6c2a4c09350034c2e2233a7b8
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz' libfido2_1.17.0.orig.tar.gz 714675 SHA256:c1012c8871d71b65872fd5ff1a9d6b0838a55683a03e85ba97479ce57129c736
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz.asc' libfido2_1.17.0.orig.tar.gz.asc 228 SHA256:7ae37a23c2152d5d0760e4a2518c1718da23c3c76f73124aead6a1a2fe00f4da
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0-1.debian.tar.xz' libfido2_1.17.0-1.debian.tar.xz 68776 SHA256:ec214814a5c797091679d866bfb4aa24efda604bb8f969e387c0796dc266b3bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libfido2/1.17.0-1/
 
-- https://sources.debian.net/src/libfido2/1.17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libfido2/1.17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libfido2/1.17.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.12.2-1`
 
@@ -4477,21 +4454,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`, `/usr/share/d
 - `curl`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.4p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-1.dsc' openssh_10.4p1-1.dsc 3651 SHA256:878de8e50995ae6a2eaad52c829036729c48a57a104d9ba32d558fb82096ee5e
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz' openssh_10.4p1.orig.tar.gz 2321796 SHA256:ef6026dd2aea8d56059638d5d3262902c892ceba9f88395835e0d06d3fb63238
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz.asc' openssh_10.4p1.orig.tar.gz.asc 833 SHA256:9206329419c45245913ae42fd290e2ed5b1669df97d9cf0d3e28c06b63035e51
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-1.debian.tar.xz' openssh_10.4p1-1.debian.tar.xz 208228 SHA256:5c5d2f7ee53bef6f96355eab24062b82f226ead501dc3f8630f75202f662ca1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.4p1-1/
 
-- https://sources.debian.net/src/openssh/1:10.4p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.4p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.4p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.3-1`
 
@@ -5585,21 +5554,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.25.1-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.25.1-1.dsc' unbound_1.25.1-1.dsc 3319 SHA256:7d643c0e718c2c505d643b5f95685c16b115ad8185a1ee206292f3b3b35b5dde
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.25.1.orig.tar.gz' unbound_1.25.1.orig.tar.gz 6832247 SHA256:0fe8b6277b0959cfd17562debac0aa5f71e0b02dc4ffa9c60271c583edab586f
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.25.1.orig.tar.gz.asc' unbound_1.25.1.orig.tar.gz.asc 659 SHA256:387296d9a53d59fef89b5ccc3be7a58306fcb3c5febf1e99270ccca9030127a1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.25.1-1.debian.tar.xz' unbound_1.25.1-1.debian.tar.xz 28460 SHA256:2e4fc847b61f48ae463a72301f7c47089e39b8f5d0584abe8a2fb3e07e0c335e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.25.1-1/
 
-- https://sources.debian.net/src/unbound/1.25.1-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.25.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.25.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 

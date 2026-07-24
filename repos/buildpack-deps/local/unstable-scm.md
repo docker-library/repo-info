@@ -1490,21 +1490,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.17.0-1
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0-1.dsc' libfido2_1.17.0-1.dsc 2585 SHA256:d8895d511a6a9fffb19639bea47f27c9dc6a2ad6c2a4c09350034c2e2233a7b8
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz' libfido2_1.17.0.orig.tar.gz 714675 SHA256:c1012c8871d71b65872fd5ff1a9d6b0838a55683a03e85ba97479ce57129c736
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz.asc' libfido2_1.17.0.orig.tar.gz.asc 228 SHA256:7ae37a23c2152d5d0760e4a2518c1718da23c3c76f73124aead6a1a2fe00f4da
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.17.0-1.debian.tar.xz' libfido2_1.17.0-1.debian.tar.xz 68776 SHA256:ec214814a5c797091679d866bfb4aa24efda604bb8f969e387c0796dc266b3bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libfido2/1.17.0-1/
 
-- https://sources.debian.net/src/libfido2/1.17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libfido2/1.17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libfido2/1.17.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.12.2-1`
 
@@ -2408,21 +2400,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`, `/usr/share/d
 - `curl`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.4p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-1.dsc' openssh_10.4p1-1.dsc 3651 SHA256:878de8e50995ae6a2eaad52c829036729c48a57a104d9ba32d558fb82096ee5e
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz' openssh_10.4p1.orig.tar.gz 2321796 SHA256:ef6026dd2aea8d56059638d5d3262902c892ceba9f88395835e0d06d3fb63238
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz.asc' openssh_10.4p1.orig.tar.gz.asc 833 SHA256:9206329419c45245913ae42fd290e2ed5b1669df97d9cf0d3e28c06b63035e51
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-1.debian.tar.xz' openssh_10.4p1-1.debian.tar.xz 208228 SHA256:5c5d2f7ee53bef6f96355eab24062b82f226ead501dc3f8630f75202f662ca1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.4p1-1/
 
-- https://sources.debian.net/src/openssh/1:10.4p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.4p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.4p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.3-1`
 
