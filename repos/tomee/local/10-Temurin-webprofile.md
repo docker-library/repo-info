@@ -1,10 +1,10 @@
-# `tomee:10.1.5-jre25-Temurin-ubuntu-webprofile`
+# `tomee:10.2.0-jre25-Temurin-ubuntu-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae743e30cb208cf0809ea1d46310c0ece3ef00f3d437676519bf2bee9fc83f15`
-- Created: `2026-07-02T05:45:16.200721085Z`
-- Virtual Size: ~ 392.64 Mb  
+- Image ID: `sha256:0fb0743955a2604b692aac44d113573d34b52ace8614a193bc58f3f0a5a62f17`
+- Created: `2026-07-21T16:32:33.069601693Z`
+- Virtual Size: ~ 394.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.3+9`
-  - `TOMEE_VER=10.1.5`
+  - `TOMEE_VER=10.2.0`
   - `TOMEE_BUILD=webprofile`
 - Labels:
   - `org.opencontainers.image.version=24.04`
@@ -303,12 +303,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.10`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.10`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.10`
+- `curl=8.5.0-2ubuntu10.11`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -325,9 +325,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.11
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.debian.tar.xz' curl_8.5.0-2ubuntu10.11.debian.tar.xz 82508 SHA512:caaa7ef5b0a78245a0c05a8aba6c098bed621525f6856c853c58e1e43ae4b5eb3801b998d6f397718ef195704c5c7b8fcbe303ca72ab7020eb90faf07c4a7b9a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.dsc' curl_8.5.0-2ubuntu10.11.dsc 3092 SHA512:4145db15d82794eb43c904faa2251d40c3c6cfa3310b72c6ef1bff2e7dc5775354a26b634e94d7d175426978c2b6edff1f5d41a537d19607547f6e9202d34c8b
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -942,15 +947,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.debian.tar.xz' krb5_1.20.1-6ubuntu2.6.debian.tar.xz 122284 SHA256:58e9a5265de110bcebfaf1f88efc384673508302abed9ec189e2f8f9053abe70
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.6.dsc' krb5_1.20.1-6ubuntu2.6.dsc 4125 SHA256:52ce15dc89411879dc429344ae34ceec3f6301d425257b858804cf8baa8a4c13
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1528,11 +1527,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.4`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1543,9 +1542,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz 18840 SHA512:772de1e6c13fcac45ebe7050db19c225b5e889f11234da446268ac9c84e932fee6a3ca2161bdf75092ce518f0637f189d91cbb189d362fc9118cd8039a78e6fa
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.4.dsc' nghttp2_1.59.0-1ubuntu0.4.dsc 2624 SHA512:0b952d54608ccef01e309c91512f3567c2e847d2d76a983cc3be56f66f4a20226de629e5d4e96472334d5c06a1444db6922964f85952066d5dae08449ce86a72
+```
 
 ### `dpkg` source package: `npth=1.6-3.1build1`
 
@@ -1687,14 +1691,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA256:7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.5.debian.tar.xz' pam_1.5.3-5ubuntu5.5.debian.tar.xz 204688 SHA256:391da0d96481d5df4ee3952d8cac5a1496ff65fcb5e76f62caae8fdc2e866b44
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.5.dsc' pam_1.5.3-5ubuntu5.5.dsc 2727 SHA256:7f29945c6c01f7a1710401ab9ef0c2a1132fffeefecbaa308c2570d8515ee50a
-```
 
 ### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
 
@@ -1926,11 +1925,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.dsc' shadow_4.13+dfsg1-4ubuntu3.2.dsc 2400 SHA256:0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.6`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.7`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.6`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1938,9 +1937,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz 37004 SHA512:db667b39cfe043e12ae692f922e6d5372ea26f6ce37de51f193a57e19e766ec77a76e33c1a61c99714c1e55ea157b170c6f2502c9893bcfec1afc00e35d39aaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.dsc' sqlite3_3.45.1-1ubuntu2.7.dsc 2601 SHA512:3facf920149eb11209b1487c864bdfc1d1858cdb9107dddf8f38677714ad25fe4f477132a58ebc4a819ac7c0aa6646ecc3554052a40e32fbcbb5ca6308986444
+```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
 
