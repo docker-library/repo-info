@@ -1,9 +1,9 @@
-# `redis:6.2.22-alpine`
+# `redis:6.2.23-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f0f16ceecd18a5e956b58a0b240f8ffb3fcad767eca2b14b90650dbc6543a6f`
-- Created: `2026-05-07T17:36:32.716000742Z`
+- Image ID: `sha256:c09cfd71b4b8924db442d175cffa414b9ca6666fa605b72b2e3fd585b1a75b91`
+- Created: `2026-07-24T17:12:09.356444076Z`
 - Virtual Size: ~ 27.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=6.2.22`
+  - `REDIS_VERSION=6.2.23`
 
 ## `apk` (`.apk`-based packages)
 
@@ -290,16 +290,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
