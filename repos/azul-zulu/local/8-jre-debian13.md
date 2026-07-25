@@ -1,10 +1,10 @@
-# `azul-zulu:8.94-8.0.492-jre-debian13`
+# `azul-zulu:8.96-8.0.502-jre-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc1c9c0f376b43640f9a762d4dc06c0246d39a848cb7c24a2a39d57afa770b79`
-- Created: `2026-07-14T01:40:00.460150321Z`
-- Virtual Size: ~ 206.83 Mb  
+- Image ID: `sha256:6c20623c0e271c4723d0dc23fe65a2fab1a888ba9afd59542bdf7fb4051c5835`
+- Created: `2026-07-23T22:28:30.269966675Z`
+- Virtual Size: ~ 206.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2328,12 +2328,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu8-ca=8.0.492-3`
+### `dpkg` source package: `zulu8-ca=8.0.502-1`
 
 Binary Packages:
 
-- `zulu8-ca-jre=8.0.492-3`
-- `zulu8-ca-jre-headless=8.0.492-3`
+- `zulu8-ca-jre=8.0.502-1`
+- `zulu8-ca-jre-headless=8.0.502-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu8-ca-jre/copyright`, `/usr/share/doc/zulu8-ca-jre-headless/copyright`)
 
@@ -2343,12 +2343,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu8-ca-jre/copyright`, `/usr/share/doc
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu8=8.0.492-3`
+### `dpkg` source package: `zulu8=8.0.502-1`
 
 Binary Packages:
 
-- `zulu8-jre=8.0.492-3`
-- `zulu8-jre-headless=8.0.492-3`
+- `zulu8-jre=8.0.502-1`
+- `zulu8-jre-headless=8.0.502-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu8-jre/copyright`, `/usr/share/doc/zulu8-jre-headless/copyright`)
 

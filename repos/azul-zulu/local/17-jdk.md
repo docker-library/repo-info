@@ -1,10 +1,10 @@
-# `azul-zulu:17.66-17.0.19-jdk-debian13`
+# `azul-zulu:17.68-17.0.20-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37c02b68d0b4a68ca3a6e1fc4c7686893234df477b3ba435140edebafab9d74d`
-- Created: `2026-07-14T01:41:21.641767928Z`
-- Virtual Size: ~ 378.38 Mb  
+- Image ID: `sha256:da6583961ce782d2017d5d7e1ccb5b8b543317823e02e10da12696a6d1caa4a6`
+- Created: `2026-07-23T22:29:37.747951181Z`
+- Virtual Size: ~ 375.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2328,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu17-ca=17.0.19-3`
+### `dpkg` source package: `zulu17-ca=17.0.20-1`
 
 Binary Packages:
 
-- `zulu17-ca-doc=17.0.19-3`
-- `zulu17-ca-jdk=17.0.19-3`
-- `zulu17-ca-jdk-headless=17.0.19-3`
-- `zulu17-ca-jre=17.0.19-3`
-- `zulu17-ca-jre-headless=17.0.19-3`
+- `zulu17-ca-doc=17.0.20-1`
+- `zulu17-ca-jdk=17.0.20-1`
+- `zulu17-ca-jdk-headless=17.0.20-1`
+- `zulu17-ca-jre=17.0.20-1`
+- `zulu17-ca-jre-headless=17.0.20-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu17-ca-doc/copyright`, `/usr/share/doc/zulu17-ca-jdk/copyright`, `/usr/share/doc/zulu17-ca-jdk-headless/copyright`, `/usr/share/doc/zulu17-ca-jre/copyright`, `/usr/share/doc/zulu17-ca-jre-headless/copyright`)
 
@@ -2346,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu17-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu17=17.0.19-3`
+### `dpkg` source package: `zulu17=17.0.20-1`
 
 Binary Packages:
 
-- `zulu17-doc=17.0.19-3`
-- `zulu17-jdk=17.0.19-3`
-- `zulu17-jdk-headless=17.0.19-3`
-- `zulu17-jre=17.0.19-3`
-- `zulu17-jre-headless=17.0.19-3`
+- `zulu17-doc=17.0.20-1`
+- `zulu17-jdk=17.0.20-1`
+- `zulu17-jdk-headless=17.0.20-1`
+- `zulu17-jre=17.0.20-1`
+- `zulu17-jre-headless=17.0.20-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu17-doc/copyright`, `/usr/share/doc/zulu17-jdk/copyright`, `/usr/share/doc/zulu17-jdk-headless/copyright`, `/usr/share/doc/zulu17-jre/copyright`, `/usr/share/doc/zulu17-jre-headless/copyright`)
 

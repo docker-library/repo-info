@@ -1,10 +1,10 @@
-# `azul-zulu:25.34-25.0.3-jdk-debian13`
+# `azul-zulu:25.36-25.0.4-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5cddac06d079671f1a29246306ed192d64f2ed0077d14a1018885535d8809fd`
-- Created: `2026-07-14T01:42:47.057724678Z`
-- Virtual Size: ~ 452.58 Mb  
+- Image ID: `sha256:e7497b8daf931efc22d934d5d62873d2f3e60a6cc7ca7af37556e53369edc98f`
+- Created: `2026-07-23T22:31:00.972055866Z`
+- Virtual Size: ~ 449.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2328,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu25-ca=25.0.3-3`
+### `dpkg` source package: `zulu25-ca=25.0.4-1`
 
 Binary Packages:
 
-- `zulu25-ca-doc=25.0.3-3`
-- `zulu25-ca-jdk=25.0.3-3`
-- `zulu25-ca-jdk-headless=25.0.3-3`
-- `zulu25-ca-jre=25.0.3-3`
-- `zulu25-ca-jre-headless=25.0.3-3`
+- `zulu25-ca-doc=25.0.4-1`
+- `zulu25-ca-jdk=25.0.4-1`
+- `zulu25-ca-jdk-headless=25.0.4-1`
+- `zulu25-ca-jre=25.0.4-1`
+- `zulu25-ca-jre-headless=25.0.4-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-ca-doc/copyright`, `/usr/share/doc/zulu25-ca-jdk/copyright`, `/usr/share/doc/zulu25-ca-jdk-headless/copyright`, `/usr/share/doc/zulu25-ca-jre/copyright`, `/usr/share/doc/zulu25-ca-jre-headless/copyright`)
 
@@ -2346,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu25-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu25=25.0.3-3`
+### `dpkg` source package: `zulu25=25.0.4-1`
 
 Binary Packages:
 
-- `zulu25-doc=25.0.3-3`
-- `zulu25-jdk=25.0.3-3`
-- `zulu25-jdk-headless=25.0.3-3`
-- `zulu25-jre=25.0.3-3`
-- `zulu25-jre-headless=25.0.3-3`
+- `zulu25-doc=25.0.4-1`
+- `zulu25-jdk=25.0.4-1`
+- `zulu25-jdk-headless=25.0.4-1`
+- `zulu25-jre=25.0.4-1`
+- `zulu25-jre-headless=25.0.4-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-doc/copyright`, `/usr/share/doc/zulu25-jdk/copyright`, `/usr/share/doc/zulu25-jdk-headless/copyright`, `/usr/share/doc/zulu25-jre/copyright`, `/usr/share/doc/zulu25-jre-headless/copyright`)
 

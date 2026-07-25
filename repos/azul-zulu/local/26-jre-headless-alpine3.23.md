@@ -1,10 +1,10 @@
-# `azul-zulu:26.30-26.0.1-jre-headless-alpine3.23`
+# `azul-zulu:26.32-26.0.2-jre-headless-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f11894f4d1a0607e1cfb2f7d42fe2bfa9579ef484334dc28812b4e5ff5d0a13`
-- Created: `2026-06-22T19:56:11.868231238Z`
-- Virtual Size: ~ 260.59 Mb  
+- Image ID: `sha256:cbc3e5f2e071f7e6d3157af8caef86b56737b04155501a3640e90c0addfaf45e`
+- Created: `2026-07-23T22:31:18.910998941Z`
+- Virtual Size: ~ 260.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -307,16 +307,16 @@ Zlib
 ### `apk` package: `zulu26-ca-jre-headless`
 
 ```console
-zulu26-ca-jre-headless-26.0.1-r1 description:
-Azul Zulu 26.30+11 (26.0.1-b8) CA Headless JRE
+zulu26-ca-jre-headless-26.0.2-r1 description:
+Azul Zulu 26.32+13 (26.0.2-b10) CA Headless JRE
 
-zulu26-ca-jre-headless-26.0.1-r1 webpage:
+zulu26-ca-jre-headless-26.0.2-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu26-ca-jre-headless-26.0.1-r1 installed size:
+zulu26-ca-jre-headless-26.0.2-r1 installed size:
 241 MiB
 
-zulu26-ca-jre-headless-26.0.1-r1 license:
+zulu26-ca-jre-headless-26.0.2-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu26-jre-headless`
 
 ```console
-zulu26-jre-headless-26.0.1-r1 description:
-Azul Zulu 26.30+11 (26.0.1-b8) Headless JRE
+zulu26-jre-headless-26.0.2-r1 description:
+Azul Zulu 26.32+13 (26.0.2-b10) Headless JRE
 
-zulu26-jre-headless-26.0.1-r1 webpage:
+zulu26-jre-headless-26.0.2-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu26-jre-headless-26.0.1-r1 installed size:
+zulu26-jre-headless-26.0.2-r1 installed size:
 4096 B
 
-zulu26-jre-headless-26.0.1-r1 license:
+zulu26-jre-headless-26.0.2-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

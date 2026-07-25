@@ -1,10 +1,10 @@
-# `azul-zulu:8.94-8.0.492-jdk-debian13`
+# `azul-zulu:8.96-8.0.502-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:caa818cd1046bce4668fa8b74565f6cee645a8421ca1972dd11e170a29350713`
-- Created: `2026-07-14T01:39:08.711345257Z`
-- Virtual Size: ~ 248.5 Mb  
+- Image ID: `sha256:5101bec6427f055d241f00dd7a672686b2e2d800a764f16c477056c0679de622`
+- Created: `2026-07-23T22:28:16.343601764Z`
+- Virtual Size: ~ 247.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2328,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu8-ca=8.0.492-3`
+### `dpkg` source package: `zulu8-ca=8.0.502-1`
 
 Binary Packages:
 
-- `zulu8-ca-doc=8.0.492-3`
-- `zulu8-ca-jdk=8.0.492-3`
-- `zulu8-ca-jdk-headless=8.0.492-3`
-- `zulu8-ca-jre=8.0.492-3`
-- `zulu8-ca-jre-headless=8.0.492-3`
+- `zulu8-ca-doc=8.0.502-1`
+- `zulu8-ca-jdk=8.0.502-1`
+- `zulu8-ca-jdk-headless=8.0.502-1`
+- `zulu8-ca-jre=8.0.502-1`
+- `zulu8-ca-jre-headless=8.0.502-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu8-ca-doc/copyright`, `/usr/share/doc/zulu8-ca-jdk/copyright`, `/usr/share/doc/zulu8-ca-jdk-headless/copyright`, `/usr/share/doc/zulu8-ca-jre/copyright`, `/usr/share/doc/zulu8-ca-jre-headless/copyright`)
 
@@ -2346,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu8-ca-doc/copyright`, `/usr/share/doc
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu8=8.0.492-3`
+### `dpkg` source package: `zulu8=8.0.502-1`
 
 Binary Packages:
 
-- `zulu8-doc=8.0.492-3`
-- `zulu8-jdk=8.0.492-3`
-- `zulu8-jdk-headless=8.0.492-3`
-- `zulu8-jre=8.0.492-3`
-- `zulu8-jre-headless=8.0.492-3`
+- `zulu8-doc=8.0.502-1`
+- `zulu8-jdk=8.0.502-1`
+- `zulu8-jdk-headless=8.0.502-1`
+- `zulu8-jre=8.0.502-1`
+- `zulu8-jre-headless=8.0.502-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu8-doc/copyright`, `/usr/share/doc/zulu8-jdk/copyright`, `/usr/share/doc/zulu8-jdk-headless/copyright`, `/usr/share/doc/zulu8-jre/copyright`, `/usr/share/doc/zulu8-jre-headless/copyright`)
 

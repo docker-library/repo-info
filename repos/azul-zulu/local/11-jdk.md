@@ -1,10 +1,10 @@
-# `azul-zulu:11.88-11.0.31-jdk-debian13`
+# `azul-zulu:11.90-11.0.32-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d321afd46f8c1cab7df03f5307623c45cde5ee11aab30ebd8049c0271aa6571c`
-- Created: `2026-07-14T01:40:38.301127365Z`
-- Virtual Size: ~ 363.17 Mb  
+- Image ID: `sha256:e5c5f2e1c24f3170dd86647e58076f56b0807f73df46f28c72c7e9aaab1ff188`
+- Created: `2026-07-23T22:29:02.399235857Z`
+- Virtual Size: ~ 361.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2328,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu11-ca=11.0.31-3`
+### `dpkg` source package: `zulu11-ca=11.0.32-1`
 
 Binary Packages:
 
-- `zulu11-ca-doc=11.0.31-3`
-- `zulu11-ca-jdk=11.0.31-3`
-- `zulu11-ca-jdk-headless=11.0.31-3`
-- `zulu11-ca-jre=11.0.31-3`
-- `zulu11-ca-jre-headless=11.0.31-3`
+- `zulu11-ca-doc=11.0.32-1`
+- `zulu11-ca-jdk=11.0.32-1`
+- `zulu11-ca-jdk-headless=11.0.32-1`
+- `zulu11-ca-jre=11.0.32-1`
+- `zulu11-ca-jre-headless=11.0.32-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-ca-doc/copyright`, `/usr/share/doc/zulu11-ca-jdk/copyright`, `/usr/share/doc/zulu11-ca-jdk-headless/copyright`, `/usr/share/doc/zulu11-ca-jre/copyright`, `/usr/share/doc/zulu11-ca-jre-headless/copyright`)
 
@@ -2346,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu11-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu11=11.0.31-3`
+### `dpkg` source package: `zulu11=11.0.32-1`
 
 Binary Packages:
 
-- `zulu11-doc=11.0.31-3`
-- `zulu11-jdk=11.0.31-3`
-- `zulu11-jdk-headless=11.0.31-3`
-- `zulu11-jre=11.0.31-3`
-- `zulu11-jre-headless=11.0.31-3`
+- `zulu11-doc=11.0.32-1`
+- `zulu11-jdk=11.0.32-1`
+- `zulu11-jdk-headless=11.0.32-1`
+- `zulu11-jre=11.0.32-1`
+- `zulu11-jre-headless=11.0.32-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-doc/copyright`, `/usr/share/doc/zulu11-jdk/copyright`, `/usr/share/doc/zulu11-jdk-headless/copyright`, `/usr/share/doc/zulu11-jre/copyright`, `/usr/share/doc/zulu11-jre-headless/copyright`)
 

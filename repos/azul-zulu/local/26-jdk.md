@@ -1,10 +1,10 @@
-# `azul-zulu:26.30-26.0.1-jdk-debian13`
+# `azul-zulu:26.32-26.0.2-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f035da803c60b661cc47b28970b1538ea7c60d2cf880e763fa0f3c9a560fbae`
-- Created: `2026-07-14T01:43:21.592169728Z`
-- Virtual Size: ~ 455.45 Mb  
+- Image ID: `sha256:70b05211ac06b45fab9753ee2ef8616d0872ec7904c887ff821f047a49ced7c3`
+- Created: `2026-07-23T22:31:42.778139665Z`
+- Virtual Size: ~ 455.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2328,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu26-ca=26.0.1-1`
+### `dpkg` source package: `zulu26-ca=26.0.2-1`
 
 Binary Packages:
 
-- `zulu26-ca-doc=26.0.1-1`
-- `zulu26-ca-jdk=26.0.1-1`
-- `zulu26-ca-jdk-headless=26.0.1-1`
-- `zulu26-ca-jre=26.0.1-1`
-- `zulu26-ca-jre-headless=26.0.1-1`
+- `zulu26-ca-doc=26.0.2-1`
+- `zulu26-ca-jdk=26.0.2-1`
+- `zulu26-ca-jdk-headless=26.0.2-1`
+- `zulu26-ca-jre=26.0.2-1`
+- `zulu26-ca-jre-headless=26.0.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu26-ca-doc/copyright`, `/usr/share/doc/zulu26-ca-jdk/copyright`, `/usr/share/doc/zulu26-ca-jdk-headless/copyright`, `/usr/share/doc/zulu26-ca-jre/copyright`, `/usr/share/doc/zulu26-ca-jre-headless/copyright`)
 
@@ -2346,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu26-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu26=26.0.1-1`
+### `dpkg` source package: `zulu26=26.0.2-1`
 
 Binary Packages:
 
-- `zulu26-doc=26.0.1-1`
-- `zulu26-jdk=26.0.1-1`
-- `zulu26-jdk-headless=26.0.1-1`
-- `zulu26-jre=26.0.1-1`
-- `zulu26-jre-headless=26.0.1-1`
+- `zulu26-doc=26.0.2-1`
+- `zulu26-jdk=26.0.2-1`
+- `zulu26-jdk-headless=26.0.2-1`
+- `zulu26-jre=26.0.2-1`
+- `zulu26-jre-headless=26.0.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu26-doc/copyright`, `/usr/share/doc/zulu26-jdk/copyright`, `/usr/share/doc/zulu26-jdk-headless/copyright`, `/usr/share/doc/zulu26-jre/copyright`, `/usr/share/doc/zulu26-jre-headless/copyright`)
 

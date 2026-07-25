@@ -1,10 +1,10 @@
-# `azul-zulu:17.66-17.0.19-jre-headless-alpine3.23`
+# `azul-zulu:17.68-17.0.20-jre-headless-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90880405a446673a9e6c0326b352dad2a0b58de4a1147e49a1bba677880eae1c`
-- Created: `2026-06-22T19:55:22.376420484Z`
-- Virtual Size: ~ 197.26 Mb  
+- Image ID: `sha256:af4ac68e0a58e837401cf057a63329f3a1c2d835de9cd565b0b1b19cfe3e570e`
+- Created: `2026-07-23T22:29:17.922897315Z`
+- Virtual Size: ~ 195.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -307,16 +307,16 @@ Zlib
 ### `apk` package: `zulu17-ca-jre-headless`
 
 ```console
-zulu17-ca-jre-headless-17.0.19-r3 description:
-Azul Zulu 17.66+19 (17.0.19-b10) CA Headless JRE
+zulu17-ca-jre-headless-17.0.20-r1 description:
+Azul Zulu 17.68+17 (17.0.20-b8) CA Headless JRE
 
-zulu17-ca-jre-headless-17.0.19-r3 webpage:
+zulu17-ca-jre-headless-17.0.20-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-headless-17.0.19-r3 installed size:
-180 MiB
+zulu17-ca-jre-headless-17.0.20-r1 installed size:
+179 MiB
 
-zulu17-ca-jre-headless-17.0.19-r3 license:
+zulu17-ca-jre-headless-17.0.20-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre-headless`
 
 ```console
-zulu17-jre-headless-17.0.19-r3 description:
-Azul Zulu 17.66+19 (17.0.19-b10) Headless JRE
+zulu17-jre-headless-17.0.20-r1 description:
+Azul Zulu 17.68+17 (17.0.20-b8) Headless JRE
 
-zulu17-jre-headless-17.0.19-r3 webpage:
+zulu17-jre-headless-17.0.20-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-headless-17.0.19-r3 installed size:
+zulu17-jre-headless-17.0.20-r1 installed size:
 4096 B
 
-zulu17-jre-headless-17.0.19-r3 license:
+zulu17-jre-headless-17.0.20-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
