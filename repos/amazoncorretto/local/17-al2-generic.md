@@ -1,10 +1,10 @@
-# `amazoncorretto:17`
+# `amazoncorretto:17-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:45ae59a1c8b6131852529cabfec6a909ff0dc15bf0850dd6318a591cb7cb67c7`
-- Created: `2026-07-18T00:12:02.645583296Z`
-- Virtual Size: ~ 465.13 Mb  
+- Image ID: `sha256:6ce3fc0fe98ec7edd54f4a45656b3b600ff9e3c90b4debacf622f3eb2f512ac2`
+- Created: `2026-07-23T23:11:45.736658614Z`
+- Virtual Size: ~ 464.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -390,7 +390,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a83d77c6025875d736a37066f2fd071c31e2532086cf32824e2c3936f3aecbdf/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-devel-17.0.19.10-1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.20.8-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
