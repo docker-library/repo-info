@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a479190d4d1dae442367ac28fd4f83916383db78ef61b9b56b995a14cd89c827`
-- Created: `2026-07-08T16:52:13.146319204Z`
-- Virtual Size: ~ 442.29 Mb  
+- Image ID: `sha256:7e6390566b0c4ac45bdf2cfec8aec58072f1a402852d32fa97c902ec2c8ac3b6`
+- Created: `2026-07-24T00:13:22.466972731Z`
+- Virtual Size: ~ 443.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -110,16 +110,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-25`
 
 ```console
-amazon-corretto-25-25.0.3.9.1-r0 description:
+amazon-corretto-25-25.0.4.7.1-r0 description:
 Corretto25
 
-amazon-corretto-25-25.0.3.9.1-r0 webpage:
+amazon-corretto-25-25.0.4.7.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-25-25.0.3.9.1-r0 installed size:
-390 MiB
+amazon-corretto-25-25.0.4.7.1-r0 installed size:
+391 MiB
 
-amazon-corretto-25-25.0.3.9.1-r0 license:
+amazon-corretto-25-25.0.4.7.1-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -195,16 +195,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
