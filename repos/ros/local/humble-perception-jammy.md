@@ -2330,15 +2330,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA256:5123732f6b67ccd319305efd399971d58592122bcc2a6518a1bd2510dd0cf52e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA256:853aaaf17d7366817e814057a467625ee7c0b26240e8b878db0f33c389c7bcb6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.debian.tar.xz' glibc_2.35-0ubuntu3.13.debian.tar.xz 943368 SHA256:28173285cf885df068374baf9b513ede397988ea3f93a1377f0268fe257a62f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.13.dsc' glibc_2.35-0ubuntu3.13.dsc 8758 SHA256:b8e7304bc899913294f1f1a2b2633f84f3ea93208f8da1a33e1340c4ad06e359
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -4091,14 +4085,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.20.0-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0.orig.tar.gz' libinput_1.20.0.orig.tar.gz 982547 SHA256:04d27bce1eb8387e99740e43224b0de7ea65161826d120199bf96230132e5186
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.3.debian.tar.xz' libinput_1.20.0-1ubuntu0.3.debian.tar.xz 14200 SHA256:94164aa60751c0dd1102ebdf985cad883f11da05d34e44bb2ccd270a15d2744c
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.3.dsc' libinput_1.20.0-1ubuntu0.3.dsc 1907 SHA256:090e0fa8b8b64a34cd01ba62d0ce94d4e8b478a4214c05fc5215571999da13b0
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.2-0ubuntu1`
 
