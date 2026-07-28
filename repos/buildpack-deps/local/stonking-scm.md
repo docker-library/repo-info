@@ -141,15 +141,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-4.dsc' attr_2.5.2-4.dsc 2614 SHA512:41318867cdf78e342e4b559e5b4a275ec2c4317a2387e24f00f510cee2eaa0a4f324c2e76609063205d190a966fe1fcf86ec44779cbffa009a3218772cf7c93b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA512:f587ea544effb7cfed63b3027bf14baba2c2dbe3a9b6c0c45fc559f7e8cb477b3e9a4a826eae30f929409468c50d11f3e7dc6d2500f41e1af8662a7e96a30ef3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA512:16362013313d055dec307bcf755a9846f5153a78309a499f8cac4ff57a2154de2bc8f3b1400e81dba7a0bf0c67aa02a5d464898ed6e4aa721b64ec95fd313968
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-4.debian.tar.xz' attr_2.5.2-4.debian.tar.xz 32372 SHA512:bbad8871fb1edfe17e5d0ca12f0b6eb5fa944dc8676b5180a2f4d6c6f18231eb8ec64230d0efb43c61fc33969c0aebcab7699ae381f0b6c8147fc87614a10bac
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.5.2-4/
+
 
 ### `dpkg` source package: `audit=1:4.1.2-1build1`
 
@@ -184,13 +182,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.1ubuntu1.tar.xz' base-files_14.1ubuntu1.tar.xz 112760 SHA512:8e349243a076879c421979d1cc4fa8f4843564534b2e6daf5778d7037a1b084754b985b2e4f57f4cd9018ddb5b5a05ba4fbf6a3c8b4ad30235f2feb9fd3c4d28
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.1ubuntu1.dsc' base-files_14.1ubuntu1.dsc 1738 SHA512:80b947421896b49896673a084feb2bf7550d6ac8a08247aa06df50b0e5d7c74e9497cf58ccdbc39ae99d6f1f4d70f64d08a87268a8d72fe73f6b64dc294d0254
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -616,14 +610,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.1-1.dsc' expat_2.8.1-1.dsc 1970 SHA512:069606c7d758836e7d667b996e66b8d52102350cfcda7a8794902b04f463bdce6c67dcd2e3793228f66495f67ee7c4e560b67e86473f5dccacb5adf7ba5911e2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.1.orig.tar.gz' expat_2.8.1.orig.tar.gz 8455751 SHA512:eb1db97184b5812d7c15afcd2219478295316c21d8a0566e002cc6f5e4ca576a8ed403a290e5b84f7b152543f38f81a26bb69fb4e5b0809d0d0ad310e47d4bbc
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.1-1.debian.tar.xz' expat_2.8.1-1.debian.tar.xz 13732 SHA512:aff90d3d439d7cd7fda5f32942db36fcc714663e009910e154614d0683b6ae5e7159f0cb772b1fe07c571929ea4755bfa7dfa90f017db48860880ddf0af3ba92
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.8.1-1/
+
 
 ### `dpkg` source package: `findutils=4.10.0-4`
 
@@ -987,14 +980,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.14-1~exp2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.14.orig.tar.xz' gzip_1.14.orig.tar.xz 885748 SHA512:82aef53188b3e69b51b7ddab5b8c44a11a5b73c0039b22a315a0c7d244694feab0146748add4265901eb1b4c0cee8a9eb69594995f098830d964091af97079c5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.14-1%7eexp2ubuntu2.debian.tar.xz' gzip_1.14-1~exp2ubuntu2.debian.tar.xz 22352 SHA512:671b440e9a7a3cffc2388b05df7fbb0220e10efea5ed75e0728e40ccfa0cb9efce111b2d2e27f16f3af660c1422f43bf9bcbade629ea38d9074f647d39c860ec
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.14-1%7eexp2ubuntu2.dsc' gzip_1.14-1~exp2ubuntu2.dsc 1368 SHA512:65c0a2349f85b7e18a6824491c7ce5a93b6c2262041adff2d134ecd8bc799d2772ef6e19557054d8dd14f343d1e49b7468c49fc35095c5a0f883fb032a9b9210
-```
 
 ### `dpkg` source package: `hostname=3.25build1`
 
@@ -1415,14 +1403,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5t64/copyright`)
 - `MIT`
 - `gnulib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.22.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.22.0-1.dsc' libpsl_0.22.0-1.dsc 2293 SHA512:3a4d121dfdfa02bee602d7950c9679db8a0f8007b2da0efd5b4035d3faf64d7d1674f83f8a4049a09b91059f290bd4c7f5ae5a7a14975b32f707e893cb344fce
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.22.0.orig.tar.xz' libpsl_0.22.0.orig.tar.xz 2237792 SHA512:3b24d6ab66d7d4bcba83af01ab789d602f3d7b555bda195d7f210a00fc3690cfff11c89b051a342453e5142ee084d08fe14eae857c45a85c3d4f638cca01a973
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.22.0-1.debian.tar.xz' libpsl_0.22.0-1.debian.tar.xz 11260 SHA512:2ce8305e8bdf3bcb53ded6986bba0c56489a33e11376b7aff2df7291920837c8a6d37788a2587269c75e1d11e593e6efa20b95b9dc2c4d4f8e0311c825225038
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpsl/0.22.0-1/
+
 
 ### `dpkg` source package: `libseccomp=2.6.0-2ubuntu5`
 
@@ -1694,14 +1681,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.10.0-8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-8.dsc' lz4_1.10.0-8.dsc 2062 SHA512:69b04e49d5d0d9bd8c5041c935f401e3dea226021c7ff9ebf200484ab59b556b0af9a4c072b2a1fa3412b838802c16f4b285176af00bb377f499a2f020708e4e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0.orig.tar.gz' lz4_1.10.0.orig.tar.gz 387114 SHA512:8c4ceb217e6dc8e7e0beba99adc736aca8963867bcf9f970d621978ba11ce92855912f8b66138037a1d2ae171e8e17beb7be99281fea840106aa60373c455b28
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-8.debian.tar.xz' lz4_1.10.0-8.debian.tar.xz 9676 SHA512:dd40a08d4b15ffdcec2137540bab7d35d1a5ac853ccb364838f9823ec18642d9e30aaea5cab31a6c858a7f5a75b8b019698aa4b6a60be12059928bd007d85b1d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lz4/1.10.0-8/
+
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-1`
 
@@ -1985,15 +1971,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.26.2-3.dsc' p11-kit_0.26.2-3.dsc 2541 SHA512:d5e1017d6414d4dbbe38f14e7a545ca9e31eb5012d9f5ab83f53f6b773d46509c7b26a5ea8198f5415dac5f95511afe8682046400d99d93d1247ae3f061c2dbe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz' p11-kit_0.26.2.orig.tar.xz 1069216 SHA512:662c77e3133a9ee00f155fc2c1f12fdb16492920f992ab6e9de587c8abf76f990d442643bf8464cc08ad4d1c584f4d6f8d3a006aa7fc791010fa9cb7acaf6b7b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz.asc' p11-kit_0.26.2.orig.tar.xz.asc 228 SHA512:86c518b609da5d48dfc816d70a17910b430d4ecf4315de77944c2d4250c00fe941f79b1055705630388df25924333460a4f65e1713f4d1ce141fe1f598cf658c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.26.2-3.debian.tar.xz' p11-kit_0.26.2-3.debian.tar.xz 24772 SHA512:426690895d605e13b30db4095a678922b244c24f4ded1259fd695543b2cf3c4e2b85a203ae5fa3b208544dc018d59309f44b5eaee804d78902138b1249e1c52c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/p11-kit/0.26.2-3/
+
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu3`
 
@@ -2354,15 +2338,9 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.17.4-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz' shadow_4.17.4.orig.tar.xz 2326584 SHA512:06830f654650312a79ccd6d729a51808b324d594abf1c05d56a2d0880936df292ec5c9fd6c7f4ad59a6d0f2bf5be0af42afe6386c24c2c087fd64fff301bade3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4.orig.tar.xz.asc' shadow_4.17.4.orig.tar.xz.asc 488 SHA512:24f14397a975e4b09be087705a96544ff8ad76e0aa8c708ed4a53db3a295ad0a33fd0797fc570dcbb2446d4e103a3e43922a93168f65012eba5d3fe31549ebdd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4-2ubuntu3.debian.tar.xz' shadow_4.17.4-2ubuntu3.debian.tar.xz 181748 SHA512:2400077447e1fdf88777a9a9069b1329569be0cc747cf4b6b962a10ca7309f04c0f0cf430ea58149689ab05afb65a874cb5ebbe538122702b88921d0edcf3664
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4-2ubuntu3.dsc' shadow_4.17.4-2ubuntu3.dsc 2991 SHA512:7f33c32998b04495e429129d9bad0cb963b19e9813373d983cf40ace75a2e643fc182cef9d125320190344e86d0a13e2bcf40680f10ac00da64cc07ce7063a73
-```
 
 ### `dpkg` source package: `sqlite3=3.46.1-9`
 
@@ -2541,13 +2519,9 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0052ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0052ubuntu1.tar.xz' ucf_3.0052ubuntu1.tar.xz 71700 SHA512:9527efa31392d165cae80677a79695cf0b12eafe168eeadeed0de470494acd974a6947c0497db76047596149f11937fde092294a7af7f1cf143a7d6f40a105a4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0052ubuntu1.dsc' ucf_3.0052ubuntu1.dsc 1619 SHA512:48d088d41eee2fbd4945aa56ccf4deb50930f92f7d6074875f6261ebb55b00bb0527b63b1d9d98be52e39d9311a5a55888ecfbc82426ac26d16f74edf0ecd972
-```
 
 ### `dpkg` source package: `utf8proc=2.11.3-2`
 
