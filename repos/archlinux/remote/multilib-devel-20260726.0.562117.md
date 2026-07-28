@@ -1,4 +1,4 @@
-## `archlinux:multilib-devel`
+## `archlinux:multilib-devel-20260726.0.562117`
 
 ```console
 $ docker pull archlinux@sha256:5548375d430c550b1ef3c1adca1b776a8df94c0102a4f7a604777499bd974e5f
@@ -9,7 +9,7 @@ $ docker pull archlinux@sha256:5548375d430c550b1ef3c1adca1b776a8df94c0102a4f7a60
 	-	linux; amd64
 	-	unknown; unknown
 
-### `archlinux:multilib-devel` - linux; amd64
+### `archlinux:multilib-devel-20260726.0.562117` - linux; amd64
 
 ```console
 $ docker pull archlinux@sha256:f6c9e19c74d3a78a9d79098fc5bb78a90f298385d8b4832bf89fc9b3759a45cd
@@ -62,7 +62,7 @@ CMD ["/usr/bin/bash"]
 		Size: 12.6 KB (12604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `archlinux:multilib-devel` - unknown; unknown
+### `archlinux:multilib-devel-20260726.0.562117` - unknown; unknown
 
 ```console
 $ docker pull archlinux@sha256:6e498d9e87b8b7c2ea0048f05e417c2060756cdeb4ed1cd129f7dc59c8615376
