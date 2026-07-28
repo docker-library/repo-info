@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:997aa767f9d40bdfeaf1181fd1399bcf2798ffa07bd4f3abb7d6ae30bcd50ebd`
-- Created: `2026-07-23T22:19:33.724517424Z`
-- Virtual Size: ~ 239.41 Mb  
+- Image ID: `sha256:3129f58163c63f7848f0147baf5d60773feac4a78ee87bdf29b32ca6de90f319`
+- Created: `2026-07-27T22:12:49.406316586Z`
+- Virtual Size: ~ 239.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -551,15 +551,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA256:f77bd47cf8170c57365ae7bf86696c118adb3b120d3259c64c502d3dc1e2d926
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA256:2cce427ef7933c17379f5514e4f0ccf8dffae5bf8c72f0f7e0bf8b8401f34be5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.debian.tar.xz' glibc_2.39-0ubuntu8.7.debian.tar.xz 469880 SHA256:9642284fbb90ca3b56af777e3e5d6989bf3f80ba5d0c37c4ec0c94fb37912b70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.7.dsc' glibc_2.39-0ubuntu8.7.dsc 9257 SHA256:1d210efa9b492a2c340c709714abced58ef843009009b1fe4d1282796e0719d9
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
