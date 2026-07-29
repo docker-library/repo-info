@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bb31b4e3dd6832a0d63c8a1dff53ba9ce06ee31681272560f4d2f1974439c5d`
-- Created: `2026-07-22T18:28:21.363021725Z`
-- Virtual Size: ~ 464.14 Mb  
+- Image ID: `sha256:adad8119f735c53870087127872d01032d43bca723a01dfcbc82542160adea7b`
+- Created: `2026-07-29T18:27:28.744724369Z`
+- Virtual Size: ~ 464.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-17.0.19+10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-22T07:34:05Z`
+  - `build-date=2026-07-28T04:52:32Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-07-22T07:34:05Z`
-  - `org.opencontainers.image.revision=9932c86214d5e8b9c79570f3f4ebe16275359bc0`
-  - `release=1784705586`
+  - `org.opencontainers.image.created=2026-07-28T04:52:32Z`
+  - `org.opencontainers.image.revision=426f997bb9b2f48201b14b0d5655a78bd43f7523`
+  - `release=1785214301`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=9932c86214d5e8b9c79570f3f4ebe16275359bc0`
+  - `vcs-ref=426f997bb9b2f48201b14b0d5655a78bd43f7523`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -1310,15 +1310,15 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.5-5.el9_8.x86_64`
+### `rpm` package: `openssl-3.5.5-6.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-3.5.5-5.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-5.el9_8.src.rpm
+$ dnf --quiet download --source --url openssl-3.5.5-6.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-6.el9_8.src.rpm
 ```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-11.el9_8.x86_64`
@@ -1343,15 +1343,15 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-11.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-11.el9_8.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.5-5.el9_8.x86_64`
+### `rpm` package: `openssl-libs-3.5.5-6.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.5-5.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-5.el9_8.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.5-6.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-6.el9_8.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.26.2-1.el9.x86_64`
