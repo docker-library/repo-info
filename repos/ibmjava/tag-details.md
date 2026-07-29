@@ -14,7 +14,7 @@
 ## `ibmjava:8`
 
 ```console
-$ docker pull ibmjava@sha256:1491a3b072ac38e27f9aa1d3530dd52762d48aaabd135b00f954aa97152c5147
+$ docker pull ibmjava@sha256:a31b815a65646630d256e0abaacebffc4ac3093ce2c78a62ca96cd3dc98b7cdf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -175,13 +175,13 @@ $ docker pull ibmjava@sha256:9a313ec0d1a24cfd685b0b979887b1a89fe4c1380a892f96365
 ### `ibmjava:8` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:6564fc1c61e327488e788ac552d285896e2c6c84cb871d4b86c3c78eed83ace3
+$ docker pull ibmjava@sha256:986fd839ee234a372b4cb48a0aae125649673e38b407c32ba4bec2d1e5d4eeb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.2 MB (164236585 bytes)**  
+-	Total Size: **167.8 MB (167845969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4074de26dc02517ff20333baa432c7cf115dfcee628a8eb9487449094381650d`
+-	Image ID: `sha256:d5f95c0d32c82e32705bd2bab98640c49ffb6ab10970659147a5de2cee1c4c76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -195,15 +195,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:27 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:45:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='48af4b3612968fb5289aabbc07333bb00e5998677ac6f8a6998af949b0ad1db5';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='d2c610017701936f50edbdc6b4f9a105e614522faa6c3ccadfaf94651cc91769';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8ef49d39831c6db5532f71834a50a384982e16f3880aa320ec67e07522949df0';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:45:07 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -212,43 +212,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e47ee2edf7b912bd2221415636ea5d2cc378c3290511104e9c5f89db73c8cb9`  
-		Last Modified: Thu, 02 Jul 2026 02:24:51 GMT  
-		Size: 134.6 MB (134620686 bytes)  
+	-	`sha256:d8e3b68a2e3f2678c0da6135c6c7266cb511b1cd6de55e2403204b1331facc7c`  
+		Last Modified: Tue, 28 Jul 2026 21:46:43 GMT  
+		Size: 138.2 MB (138229499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:8` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:ea932006c2a68fedaf7ea7d5f9160db05c6201883c893e17214a43c88d9d98b0
+$ docker pull ibmjava@sha256:7f350b54ff4fdab6230df3f989ce0d745bedcfc61a5adc5580a6e3336f89d6e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2170995 bytes)**  
+-	Total Size: **2.2 MB (2171031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48f2688ccb4b0cf406a6d28656fc50f3c53c9744f3d0c3332a0f58ad9062eb8a`
+-	Image ID: `sha256:10734f2d431e12d88e16f36dcc8c58967e425020d99ca2721ab41a92bd3d38ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:26b5ad087b464d544623160840c49e47c562282e0f1ad22f17aedb0fda60acb0`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 2.2 MB (2157803 bytes)  
+	-	`sha256:fb65705067f2519afcba9447fe3ea1ebce25d53d019e496a6a314821bfa20d33`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 2.2 MB (2157839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2aba0f6fab19566d030df2351fd7aa011251672a7cbf8045a2c9765e182b7d2e`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
+	-	`sha256:73c925084ae0109ea8ca2847f3b7435efc55c22baedbb02e591d6cdd17b05c7e`  
+		Last Modified: Tue, 28 Jul 2026 21:46:17 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:8-jre`
 
 ```console
-$ docker pull ibmjava@sha256:1491a3b072ac38e27f9aa1d3530dd52762d48aaabd135b00f954aa97152c5147
+$ docker pull ibmjava@sha256:a31b815a65646630d256e0abaacebffc4ac3093ce2c78a62ca96cd3dc98b7cdf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -409,13 +409,13 @@ $ docker pull ibmjava@sha256:9a313ec0d1a24cfd685b0b979887b1a89fe4c1380a892f96365
 ### `ibmjava:8-jre` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:6564fc1c61e327488e788ac552d285896e2c6c84cb871d4b86c3c78eed83ace3
+$ docker pull ibmjava@sha256:986fd839ee234a372b4cb48a0aae125649673e38b407c32ba4bec2d1e5d4eeb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.2 MB (164236585 bytes)**  
+-	Total Size: **167.8 MB (167845969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4074de26dc02517ff20333baa432c7cf115dfcee628a8eb9487449094381650d`
+-	Image ID: `sha256:d5f95c0d32c82e32705bd2bab98640c49ffb6ab10970659147a5de2cee1c4c76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -429,15 +429,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:27 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:45:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='48af4b3612968fb5289aabbc07333bb00e5998677ac6f8a6998af949b0ad1db5';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='d2c610017701936f50edbdc6b4f9a105e614522faa6c3ccadfaf94651cc91769';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8ef49d39831c6db5532f71834a50a384982e16f3880aa320ec67e07522949df0';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:45:07 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -446,43 +446,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e47ee2edf7b912bd2221415636ea5d2cc378c3290511104e9c5f89db73c8cb9`  
-		Last Modified: Thu, 02 Jul 2026 02:24:51 GMT  
-		Size: 134.6 MB (134620686 bytes)  
+	-	`sha256:d8e3b68a2e3f2678c0da6135c6c7266cb511b1cd6de55e2403204b1331facc7c`  
+		Last Modified: Tue, 28 Jul 2026 21:46:43 GMT  
+		Size: 138.2 MB (138229499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:8-jre` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:ea932006c2a68fedaf7ea7d5f9160db05c6201883c893e17214a43c88d9d98b0
+$ docker pull ibmjava@sha256:7f350b54ff4fdab6230df3f989ce0d745bedcfc61a5adc5580a6e3336f89d6e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2170995 bytes)**  
+-	Total Size: **2.2 MB (2171031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48f2688ccb4b0cf406a6d28656fc50f3c53c9744f3d0c3332a0f58ad9062eb8a`
+-	Image ID: `sha256:10734f2d431e12d88e16f36dcc8c58967e425020d99ca2721ab41a92bd3d38ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:26b5ad087b464d544623160840c49e47c562282e0f1ad22f17aedb0fda60acb0`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 2.2 MB (2157803 bytes)  
+	-	`sha256:fb65705067f2519afcba9447fe3ea1ebce25d53d019e496a6a314821bfa20d33`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 2.2 MB (2157839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2aba0f6fab19566d030df2351fd7aa011251672a7cbf8045a2c9765e182b7d2e`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
+	-	`sha256:73c925084ae0109ea8ca2847f3b7435efc55c22baedbb02e591d6cdd17b05c7e`  
+		Last Modified: Tue, 28 Jul 2026 21:46:17 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:8-sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5c5ec2a6224d2efd7ab3504f8a510fdc6c36d50613c5a0942fe2d77bf9c4fd9d
+$ docker pull ibmjava@sha256:55ecfa03758ed41f08e25da19dbe7711aba1d55035e620a70e67749be956977d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -643,13 +643,13 @@ $ docker pull ibmjava@sha256:4d089fa404fc17ff4606cd1ebec508aaef7e48d9dee39682f0c
 ### `ibmjava:8-sdk` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:525bb581a605ff134a54b05278a7636802b36bc477c455563eb896ca07bdfa17
+$ docker pull ibmjava@sha256:fb8e9d33772f11710b1a7c25d24bd9949bc6d22ca033ce8a02dc20c1f63a0018
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.8 MB (194785399 bytes)**  
+-	Total Size: **198.4 MB (198398498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66e1d23562412b48f8010524d5acbbda188c54c23842ed671130749bdcd517d4`
+-	Image ID: `sha256:e08b2eb28d1aba7cb8ef36d4ad4ac3e78d9ab7ca7bd5a09f47765307a0f19002`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -663,15 +663,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:25:22 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='0978a87ce0b78bf6530fe5b9bd9fb737ff04ecc8dae1c849cb1c42908b1095a8';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='731c2693424a66054fcc45624c411461ea8a62efd898a90f508bdbd20c0b6125';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8a1cfafb51e8cf4753df40fb9906d3571ae086ed33b1bbcf807c416beac37521';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:25:22 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:47:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='3dbad870105877617434e8bc7be2f8254de9391add4920347e793aa616aacd00';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='2fa08a3a0bd0b40ea414d85cbe34691471693ca48b0c9056641eb79b27065cc0';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='b3cbe10f8eed41d4addec8de004e1a1be50282060b530a302816f57b234929e1';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:47:42 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -680,43 +680,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec4a14236a6b733391151cbb12a4542696ca75e015a3a8bd782b5b3048b413f8`  
-		Last Modified: Thu, 02 Jul 2026 02:25:48 GMT  
-		Size: 165.2 MB (165169500 bytes)  
+	-	`sha256:d9d901bedadb76de293934f60049ab6bd0c2292e0d98e74ad27c52ffadfa3078`  
+		Last Modified: Tue, 28 Jul 2026 21:49:10 GMT  
+		Size: 168.8 MB (168782028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:8-sdk` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:c2894be3453f38cf956852100325fbff1e38a1177dc8b390a6bd03e0eca1c779
+$ docker pull ibmjava@sha256:82e86d4aa8c56b6a44454908e95a8f386d053fc92d2a9e10445e02c23a75bd93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2754699 bytes)**  
+-	Total Size: **2.8 MB (2754735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d723bd8104274beb80ed41473c647175063bd0c6a45c9e626153d1b77253575`
+-	Image ID: `sha256:8d46bb119f6cc3c372aa189c048296b5027edb4add8823e121801dbeb09cd8bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:115bfdfecd2a711b2b6e987ed89eb13a512a537a1addfa3c781724cbc3159e87`  
-		Last Modified: Thu, 02 Jul 2026 02:25:46 GMT  
-		Size: 2.7 MB (2742101 bytes)  
+	-	`sha256:b8774fd6ae05b2f7673c27aa3113c078a1abc7702f7a9384c83740a55e85f7fa`  
+		Last Modified: Tue, 28 Jul 2026 21:48:57 GMT  
+		Size: 2.7 MB (2742137 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65618a39b3f209a9271074706d4dc9d503a9ae061cda4cae350ca05294b79cdc`  
-		Last Modified: Thu, 02 Jul 2026 02:25:46 GMT  
+	-	`sha256:d58d98a880b922b238edd07f06e235691913db515e16d3ea43997da1aa4ea2f9`  
+		Last Modified: Tue, 28 Jul 2026 21:48:51 GMT  
 		Size: 12.6 KB (12598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:8-sfj`
 
 ```console
-$ docker pull ibmjava@sha256:83a98155d497550dd99f4667238baf714366bcf79a4042ab3bd8e595f9de2599
+$ docker pull ibmjava@sha256:44aef1ab65f1007c3e1cfab095c4c0274a0c77da769d5cd91aa8fca19af236aa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -877,13 +877,13 @@ $ docker pull ibmjava@sha256:dbeef7d4bf1a6607a408be4418c000b7ccae62b659e612b131c
 ### `ibmjava:8-sfj` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:9dd07b061719e083c622f7abafe8d803f2b3de4e4892c555f4488d94c118e437
+$ docker pull ibmjava@sha256:7ce27db62eb49f6d4a89723636baec717030d88030413d384ae8964c86109df4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.8 MB (102848033 bytes)**  
+-	Total Size: **104.7 MB (104665325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f327f8581219733abb4e19a3408c20c21a06f6cef7f43ef113a72f08c9026d36`
+-	Image ID: `sha256:a9044132f0ced63480d476cfd681db7713398506bb47ba8f648641ab7a510440`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -897,15 +897,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:14 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:14 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:14 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:36 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='a21f423374e941588c9d22e69cc011821558d044ba6a30c27eeb333535ed30be';          YML_FILE='8.0/sfj/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e85af7337f10d424e2660093dc3fc9d04e8c7e018eaa353a49e4dfa6902dd31d';          YML_FILE='8.0/sfj/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='bd360b8ccf462c9537dd214c9cc5920b93145b44fe05d3b49e214d01d79cfb5c';          YML_FILE='8.0/sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:36 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:48:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='9294b4d1c8f648dc59c1237d7e5fd4c2a3236e29fb79f83e34c1de1c03522eaa';          YML_FILE='8.0/sfj/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='82a74387fe138a7f79260fb5a52fda243d1f875bf2955209d55db9952d60135e';          YML_FILE='8.0/sfj/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='a5512b6afa58e9a086713de9ef2ab42e80b1541eba51a32a76833b56ed508922';          YML_FILE='8.0/sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:48:30 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -914,43 +914,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fec4e584e870a1fb1da4fe98131d0d941c08ebdde07862c32bad5226949972`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
-		Size: 1.4 MB (1411771 bytes)  
+	-	`sha256:e3562d6411d4ce28f47260485c9c8b80e5e6795ebef08c4387aeded00384ad97`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
+		Size: 1.4 MB (1412414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36e9c5c7e5a4d735cdb241e8ab6034c2a196cfa1d2ec2abc7455afc63bdba485`  
-		Last Modified: Thu, 02 Jul 2026 02:24:55 GMT  
-		Size: 73.2 MB (73232131 bytes)  
+	-	`sha256:8ba10a9594e64eba536443af4b6146a8bf20fb91b81ce6790fbf656131e16587`  
+		Last Modified: Tue, 28 Jul 2026 21:51:02 GMT  
+		Size: 75.0 MB (75048780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:8-sfj` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:57702184df9ddddb9157403c7b835595732d6b837946cef88e8b8016d94739a1
+$ docker pull ibmjava@sha256:f09b4c6e5d182383dba52d03e77bcd164a299c15124ffe142b6951a017328357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2156512 bytes)**  
+-	Total Size: **2.2 MB (2156548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd4249b063097ceee071ff2d4d6bff48022b46ee30d961fa93a9a713599863c5`
+-	Image ID: `sha256:6fd00ef02818ca8c6f9d51dc5f782bd91655ca4b63b95530804562e5ce995d90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2f6216a70fab7373905c2feb25a15585aefccc17f885021594eb49b9739dbb2c`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
-		Size: 2.1 MB (2143911 bytes)  
+	-	`sha256:fde4330dce714f7bfd5f989f7661c4a4207a28711b27b41828607adf56db7476`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
+		Size: 2.1 MB (2143947 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1bebd5f974acd67fe8341ce4ce90211cd162cab4e70d1c42a9b0f4a7421eea9a`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
+	-	`sha256:ff05c1e3b323ee516bff80403749704982799e8f1c3fdd1ddf7179d1c753e945`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
 		Size: 12.6 KB (12601 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:jre`
 
 ```console
-$ docker pull ibmjava@sha256:1491a3b072ac38e27f9aa1d3530dd52762d48aaabd135b00f954aa97152c5147
+$ docker pull ibmjava@sha256:a31b815a65646630d256e0abaacebffc4ac3093ce2c78a62ca96cd3dc98b7cdf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1111,13 +1111,13 @@ $ docker pull ibmjava@sha256:9a313ec0d1a24cfd685b0b979887b1a89fe4c1380a892f96365
 ### `ibmjava:jre` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:6564fc1c61e327488e788ac552d285896e2c6c84cb871d4b86c3c78eed83ace3
+$ docker pull ibmjava@sha256:986fd839ee234a372b4cb48a0aae125649673e38b407c32ba4bec2d1e5d4eeb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.2 MB (164236585 bytes)**  
+-	Total Size: **167.8 MB (167845969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4074de26dc02517ff20333baa432c7cf115dfcee628a8eb9487449094381650d`
+-	Image ID: `sha256:d5f95c0d32c82e32705bd2bab98640c49ffb6ab10970659147a5de2cee1c4c76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1131,15 +1131,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:27 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:45:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='48af4b3612968fb5289aabbc07333bb00e5998677ac6f8a6998af949b0ad1db5';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='d2c610017701936f50edbdc6b4f9a105e614522faa6c3ccadfaf94651cc91769';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8ef49d39831c6db5532f71834a50a384982e16f3880aa320ec67e07522949df0';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:45:07 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -1148,43 +1148,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e47ee2edf7b912bd2221415636ea5d2cc378c3290511104e9c5f89db73c8cb9`  
-		Last Modified: Thu, 02 Jul 2026 02:24:51 GMT  
-		Size: 134.6 MB (134620686 bytes)  
+	-	`sha256:d8e3b68a2e3f2678c0da6135c6c7266cb511b1cd6de55e2403204b1331facc7c`  
+		Last Modified: Tue, 28 Jul 2026 21:46:43 GMT  
+		Size: 138.2 MB (138229499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:jre` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:ea932006c2a68fedaf7ea7d5f9160db05c6201883c893e17214a43c88d9d98b0
+$ docker pull ibmjava@sha256:7f350b54ff4fdab6230df3f989ce0d745bedcfc61a5adc5580a6e3336f89d6e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2170995 bytes)**  
+-	Total Size: **2.2 MB (2171031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48f2688ccb4b0cf406a6d28656fc50f3c53c9744f3d0c3332a0f58ad9062eb8a`
+-	Image ID: `sha256:10734f2d431e12d88e16f36dcc8c58967e425020d99ca2721ab41a92bd3d38ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:26b5ad087b464d544623160840c49e47c562282e0f1ad22f17aedb0fda60acb0`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 2.2 MB (2157803 bytes)  
+	-	`sha256:fb65705067f2519afcba9447fe3ea1ebce25d53d019e496a6a314821bfa20d33`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 2.2 MB (2157839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2aba0f6fab19566d030df2351fd7aa011251672a7cbf8045a2c9765e182b7d2e`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
+	-	`sha256:73c925084ae0109ea8ca2847f3b7435efc55c22baedbb02e591d6cdd17b05c7e`  
+		Last Modified: Tue, 28 Jul 2026 21:46:17 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:latest`
 
 ```console
-$ docker pull ibmjava@sha256:1491a3b072ac38e27f9aa1d3530dd52762d48aaabd135b00f954aa97152c5147
+$ docker pull ibmjava@sha256:a31b815a65646630d256e0abaacebffc4ac3093ce2c78a62ca96cd3dc98b7cdf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1345,13 +1345,13 @@ $ docker pull ibmjava@sha256:9a313ec0d1a24cfd685b0b979887b1a89fe4c1380a892f96365
 ### `ibmjava:latest` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:6564fc1c61e327488e788ac552d285896e2c6c84cb871d4b86c3c78eed83ace3
+$ docker pull ibmjava@sha256:986fd839ee234a372b4cb48a0aae125649673e38b407c32ba4bec2d1e5d4eeb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.2 MB (164236585 bytes)**  
+-	Total Size: **167.8 MB (167845969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4074de26dc02517ff20333baa432c7cf115dfcee628a8eb9487449094381650d`
+-	Image ID: `sha256:d5f95c0d32c82e32705bd2bab98640c49ffb6ab10970659147a5de2cee1c4c76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1365,15 +1365,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='f848631ac7f7e61aa26d1e648bc7a96e97da64c33cbc4f76627ea3b367c9a085';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='9fad050b730cf070b341e5f7b5353c6cdd0a5a6f2d2b150678bfdff1f94f2637';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='c844b329e2161a7d0c5810b30085b5deeec28b911844220cb3b930f860b10884';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:27 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:45:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='48af4b3612968fb5289aabbc07333bb00e5998677ac6f8a6998af949b0ad1db5';          YML_FILE='8.0/jre/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='d2c610017701936f50edbdc6b4f9a105e614522faa6c3ccadfaf94651cc91769';          YML_FILE='8.0/jre/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8ef49d39831c6db5532f71834a50a384982e16f3880aa320ec67e07522949df0';          YML_FILE='8.0/jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:45:07 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -1382,43 +1382,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e47ee2edf7b912bd2221415636ea5d2cc378c3290511104e9c5f89db73c8cb9`  
-		Last Modified: Thu, 02 Jul 2026 02:24:51 GMT  
-		Size: 134.6 MB (134620686 bytes)  
+	-	`sha256:d8e3b68a2e3f2678c0da6135c6c7266cb511b1cd6de55e2403204b1331facc7c`  
+		Last Modified: Tue, 28 Jul 2026 21:46:43 GMT  
+		Size: 138.2 MB (138229499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:latest` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:ea932006c2a68fedaf7ea7d5f9160db05c6201883c893e17214a43c88d9d98b0
+$ docker pull ibmjava@sha256:7f350b54ff4fdab6230df3f989ce0d745bedcfc61a5adc5580a6e3336f89d6e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2170995 bytes)**  
+-	Total Size: **2.2 MB (2171031 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48f2688ccb4b0cf406a6d28656fc50f3c53c9744f3d0c3332a0f58ad9062eb8a`
+-	Image ID: `sha256:10734f2d431e12d88e16f36dcc8c58967e425020d99ca2721ab41a92bd3d38ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:26b5ad087b464d544623160840c49e47c562282e0f1ad22f17aedb0fda60acb0`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 2.2 MB (2157803 bytes)  
+	-	`sha256:fb65705067f2519afcba9447fe3ea1ebce25d53d019e496a6a314821bfa20d33`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 2.2 MB (2157839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2aba0f6fab19566d030df2351fd7aa011251672a7cbf8045a2c9765e182b7d2e`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
+	-	`sha256:73c925084ae0109ea8ca2847f3b7435efc55c22baedbb02e591d6cdd17b05c7e`  
+		Last Modified: Tue, 28 Jul 2026 21:46:17 GMT  
 		Size: 13.2 KB (13192 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5c5ec2a6224d2efd7ab3504f8a510fdc6c36d50613c5a0942fe2d77bf9c4fd9d
+$ docker pull ibmjava@sha256:55ecfa03758ed41f08e25da19dbe7711aba1d55035e620a70e67749be956977d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1579,13 +1579,13 @@ $ docker pull ibmjava@sha256:4d089fa404fc17ff4606cd1ebec508aaef7e48d9dee39682f0c
 ### `ibmjava:sdk` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:525bb581a605ff134a54b05278a7636802b36bc477c455563eb896ca07bdfa17
+$ docker pull ibmjava@sha256:fb8e9d33772f11710b1a7c25d24bd9949bc6d22ca033ce8a02dc20c1f63a0018
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.8 MB (194785399 bytes)**  
+-	Total Size: **198.4 MB (198398498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66e1d23562412b48f8010524d5acbbda188c54c23842ed671130749bdcd517d4`
+-	Image ID: `sha256:e08b2eb28d1aba7cb8ef36d4ad4ac3e78d9ab7ca7bd5a09f47765307a0f19002`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1599,15 +1599,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:01 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:01 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:25:22 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='0978a87ce0b78bf6530fe5b9bd9fb737ff04ecc8dae1c849cb1c42908b1095a8';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='731c2693424a66054fcc45624c411461ea8a62efd898a90f508bdbd20c0b6125';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='8a1cfafb51e8cf4753df40fb9906d3571ae086ed33b1bbcf807c416beac37521';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:25:22 GMT
+# Tue, 28 Jul 2026 21:43:00 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:47:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='3dbad870105877617434e8bc7be2f8254de9391add4920347e793aa616aacd00';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='2fa08a3a0bd0b40ea414d85cbe34691471693ca48b0c9056641eb79b27065cc0';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='b3cbe10f8eed41d4addec8de004e1a1be50282060b530a302816f57b234929e1';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:47:42 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -1616,43 +1616,43 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:077d98d70f7175644539ba931cd352f09866041f33524d55b14b62e62c1a8769`  
-		Last Modified: Thu, 02 Jul 2026 02:24:49 GMT  
-		Size: 1.4 MB (1411768 bytes)  
+	-	`sha256:0da9f2c5d6343453177cc3d26866ba033274eea7b135ed97e4a1b17bb580c928`  
+		Last Modified: Tue, 28 Jul 2026 21:46:21 GMT  
+		Size: 1.4 MB (1412339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec4a14236a6b733391151cbb12a4542696ca75e015a3a8bd782b5b3048b413f8`  
-		Last Modified: Thu, 02 Jul 2026 02:25:48 GMT  
-		Size: 165.2 MB (165169500 bytes)  
+	-	`sha256:d9d901bedadb76de293934f60049ab6bd0c2292e0d98e74ad27c52ffadfa3078`  
+		Last Modified: Tue, 28 Jul 2026 21:49:10 GMT  
+		Size: 168.8 MB (168782028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:sdk` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:c2894be3453f38cf956852100325fbff1e38a1177dc8b390a6bd03e0eca1c779
+$ docker pull ibmjava@sha256:82e86d4aa8c56b6a44454908e95a8f386d053fc92d2a9e10445e02c23a75bd93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2754699 bytes)**  
+-	Total Size: **2.8 MB (2754735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d723bd8104274beb80ed41473c647175063bd0c6a45c9e626153d1b77253575`
+-	Image ID: `sha256:8d46bb119f6cc3c372aa189c048296b5027edb4add8823e121801dbeb09cd8bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:115bfdfecd2a711b2b6e987ed89eb13a512a537a1addfa3c781724cbc3159e87`  
-		Last Modified: Thu, 02 Jul 2026 02:25:46 GMT  
-		Size: 2.7 MB (2742101 bytes)  
+	-	`sha256:b8774fd6ae05b2f7673c27aa3113c078a1abc7702f7a9384c83740a55e85f7fa`  
+		Last Modified: Tue, 28 Jul 2026 21:48:57 GMT  
+		Size: 2.7 MB (2742137 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65618a39b3f209a9271074706d4dc9d503a9ae061cda4cae350ca05294b79cdc`  
-		Last Modified: Thu, 02 Jul 2026 02:25:46 GMT  
+	-	`sha256:d58d98a880b922b238edd07f06e235691913db515e16d3ea43997da1aa4ea2f9`  
+		Last Modified: Tue, 28 Jul 2026 21:48:51 GMT  
 		Size: 12.6 KB (12598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `ibmjava:sfj`
 
 ```console
-$ docker pull ibmjava@sha256:83a98155d497550dd99f4667238baf714366bcf79a4042ab3bd8e595f9de2599
+$ docker pull ibmjava@sha256:44aef1ab65f1007c3e1cfab095c4c0274a0c77da769d5cd91aa8fca19af236aa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1813,13 +1813,13 @@ $ docker pull ibmjava@sha256:dbeef7d4bf1a6607a408be4418c000b7ccae62b659e612b131c
 ### `ibmjava:sfj` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:9dd07b061719e083c622f7abafe8d803f2b3de4e4892c555f4488d94c118e437
+$ docker pull ibmjava@sha256:7ce27db62eb49f6d4a89723636baec717030d88030413d384ae8964c86109df4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.8 MB (102848033 bytes)**  
+-	Total Size: **104.7 MB (104665325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f327f8581219733abb4e19a3408c20c21a06f6cef7f43ef113a72f08c9026d36`
+-	Image ID: `sha256:a9044132f0ced63480d476cfd681db7713398506bb47ba8f648641ab7a510440`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1833,15 +1833,15 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:a7caac22d71edeca734e094edaefd29ba696f6b6850656befefab899becd4181 in / 
 # Mon, 29 Jun 2026 10:41:49 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:24:14 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Thu, 02 Jul 2026 02:24:14 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:24:14 GMT
-ENV JAVA_VERSION=8.0.8.65
-# Thu, 02 Jul 2026 02:24:36 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='a21f423374e941588c9d22e69cc011821558d044ba6a30c27eeb333535ed30be';          YML_FILE='8.0/sfj/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='e85af7337f10d424e2660093dc3fc9d04e8c7e018eaa353a49e4dfa6902dd31d';          YML_FILE='8.0/sfj/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='bd360b8ccf462c9537dd214c9cc5920b93145b44fe05d3b49e214d01d79cfb5c';          YML_FILE='8.0/sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Thu, 02 Jul 2026 02:24:36 GMT
+# Tue, 28 Jul 2026 21:46:59 GMT
+ENV JAVA_VERSION=8.0.8.70
+# Tue, 28 Jul 2026 21:48:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='9294b4d1c8f648dc59c1237d7e5fd4c2a3236e29fb79f83e34c1de1c03522eaa';          YML_FILE='8.0/sfj/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='82a74387fe138a7f79260fb5a52fda243d1f875bf2955209d55db9952d60135e';          YML_FILE='8.0/sfj/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='a5512b6afa58e9a086713de9ef2ab42e80b1541eba51a32a76833b56ed508922';          YML_FILE='8.0/sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
+# Tue, 28 Jul 2026 21:48:30 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
@@ -1850,35 +1850,35 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Last Modified: Mon, 29 Jun 2026 11:25:56 GMT  
 		Size: 28.2 MB (28204131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fec4e584e870a1fb1da4fe98131d0d941c08ebdde07862c32bad5226949972`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
-		Size: 1.4 MB (1411771 bytes)  
+	-	`sha256:e3562d6411d4ce28f47260485c9c8b80e5e6795ebef08c4387aeded00384ad97`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
+		Size: 1.4 MB (1412414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36e9c5c7e5a4d735cdb241e8ab6034c2a196cfa1d2ec2abc7455afc63bdba485`  
-		Last Modified: Thu, 02 Jul 2026 02:24:55 GMT  
-		Size: 73.2 MB (73232131 bytes)  
+	-	`sha256:8ba10a9594e64eba536443af4b6146a8bf20fb91b81ce6790fbf656131e16587`  
+		Last Modified: Tue, 28 Jul 2026 21:51:02 GMT  
+		Size: 75.0 MB (75048780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:sfj` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:57702184df9ddddb9157403c7b835595732d6b837946cef88e8b8016d94739a1
+$ docker pull ibmjava@sha256:f09b4c6e5d182383dba52d03e77bcd164a299c15124ffe142b6951a017328357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2156512 bytes)**  
+-	Total Size: **2.2 MB (2156548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd4249b063097ceee071ff2d4d6bff48022b46ee30d961fa93a9a713599863c5`
+-	Image ID: `sha256:6fd00ef02818ca8c6f9d51dc5f782bd91655ca4b63b95530804562e5ce995d90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2f6216a70fab7373905c2feb25a15585aefccc17f885021594eb49b9739dbb2c`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
-		Size: 2.1 MB (2143911 bytes)  
+	-	`sha256:fde4330dce714f7bfd5f989f7661c4a4207a28711b27b41828607adf56db7476`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
+		Size: 2.1 MB (2143947 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1bebd5f974acd67fe8341ce4ce90211cd162cab4e70d1c42a9b0f4a7421eea9a`  
-		Last Modified: Thu, 02 Jul 2026 02:24:52 GMT  
+	-	`sha256:ff05c1e3b323ee516bff80403749704982799e8f1c3fdd1ddf7179d1c753e945`  
+		Last Modified: Tue, 28 Jul 2026 21:50:58 GMT  
 		Size: 12.6 KB (12601 bytes)  
 		MIME: application/vnd.in-toto+json
