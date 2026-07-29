@@ -3,8 +3,22 @@
 # Tags of `nim`
 
 -	[`nim:2`](#nim2)
+-	[`nim:2.0`](#nim20)
+-	[`nim:2.0.0`](#nim200)
+-	[`nim:2.0.10`](#nim2010)
+-	[`nim:2.0.12`](#nim2012)
+-	[`nim:2.0.14`](#nim2014)
+-	[`nim:2.0.2`](#nim202)
+-	[`nim:2.0.4`](#nim204)
+-	[`nim:2.0.6`](#nim206)
+-	[`nim:2.0.8`](#nim208)
 -	[`nim:2.2`](#nim22)
+-	[`nim:2.2.0`](#nim220)
 -	[`nim:2.2.10`](#nim2210)
+-	[`nim:2.2.2`](#nim222)
+-	[`nim:2.2.4`](#nim224)
+-	[`nim:2.2.6`](#nim226)
+-	[`nim:2.2.8`](#nim228)
 -	[`nim:latest`](#nimlatest)
 
 ## `nim:2`
@@ -268,6 +282,42 @@ $ docker pull nim@sha256:63e44d44866c694b6d88d02965e13b9928a36c7bb524c80d304e954
 		Size: 18.8 KB (18757 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `nim:2.0`
+
+**does not exist** (yet?)
+
+## `nim:2.0.0`
+
+**does not exist** (yet?)
+
+## `nim:2.0.10`
+
+**does not exist** (yet?)
+
+## `nim:2.0.12`
+
+**does not exist** (yet?)
+
+## `nim:2.0.14`
+
+**does not exist** (yet?)
+
+## `nim:2.0.2`
+
+**does not exist** (yet?)
+
+## `nim:2.0.4`
+
+**does not exist** (yet?)
+
+## `nim:2.0.6`
+
+**does not exist** (yet?)
+
+## `nim:2.0.8`
+
+**does not exist** (yet?)
+
 ## `nim:2.2`
 
 ```console
@@ -529,6 +579,10 @@ $ docker pull nim@sha256:63e44d44866c694b6d88d02965e13b9928a36c7bb524c80d304e954
 		Size: 18.8 KB (18757 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `nim:2.2.0`
+
+**does not exist** (yet?)
+
 ## `nim:2.2.10`
 
 ```console
@@ -789,6 +843,22 @@ $ docker pull nim@sha256:63e44d44866c694b6d88d02965e13b9928a36c7bb524c80d304e954
 		Last Modified: Fri, 17 Jul 2026 22:01:15 GMT  
 		Size: 18.8 KB (18757 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `nim:2.2.2`
+
+**does not exist** (yet?)
+
+## `nim:2.2.4`
+
+**does not exist** (yet?)
+
+## `nim:2.2.6`
+
+**does not exist** (yet?)
+
+## `nim:2.2.8`
+
+**does not exist** (yet?)
 
 ## `nim:latest`
 
