@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jdk8`
 
 ```console
-$ docker pull lightstreamer@sha256:b77222e69b9237e4bb75118769eae24b7d96fb43ac1824de02c288923ebe303b
+$ docker pull lightstreamer@sha256:3e05e8c08c74484a860e18650f3a83eea0aff02d7b7251e8225c3cd4e0df6ef3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull lightstreamer@sha256:b77222e69b9237e4bb75118769eae24b7d96fb43ac182
 ### `lightstreamer:7-jdk8` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:520ca958d8b3e38149f04bfb1df43f132b850637105beb964eba8d62ffd48791
+$ docker pull lightstreamer@sha256:c833d1603e9843affa985fdc5743ebf3d38047cc8ad2176182881f80f8daa715
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.2 MB (176168049 bytes)**  
+-	Total Size: **176.2 MB (176165863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5be79f803ba57a227b45081d30e986f96ac18610feb9c63fc105f99983830ac4`
+-	Image ID: `sha256:878c8e64d42983433d48120d9c8a802c6bec2666b3a2750f2deb78fade16b8a5`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
@@ -69,25 +69,26 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:33:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:12 GMT
-LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Thu, 16 Jul 2026 01:16:12 GMT
-RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:13 GMT
-RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2 # buildkit
-# Thu, 16 Jul 2026 01:16:13 GMT
+# Thu, 30 Jul 2026 19:46:34 GMT
+LABEL org.opencontainers.image.authors=Lightstreamer Server Development Team <support@lightstreamer.com>
+# Thu, 30 Jul 2026 19:46:34 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.8
-# Thu, 16 Jul 2026 01:16:13 GMT
-ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz
-# Thu, 16 Jul 2026 01:16:17 GMT
-RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc # buildkit
-# Thu, 16 Jul 2026 01:16:17 GMT
-USER lightstreamer
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 19:46:34 GMT
+ARG LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz
+# Thu, 30 Jul 2026 19:46:34 GMT
+ARG FINGERPRINT=9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
+# Thu, 30 Jul 2026 19:46:34 GMT
+WORKDIR /lightstreamer
+# Thu, 30 Jul 2026 19:50:16 GMT
+# ARGS: LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz FINGERPRINT=9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
+RUN set -eux;         apt-get update;         apt-get install -y --no-install-recommends curl gnupg;         curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD};         curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc;         GNUPGHOME="$(mktemp -d)";         export GNUPGHOME;         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "${FINGERPRINT}";         gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz;         tar -xf Lightstreamer.tar.gz --strip-components=1;         sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                conf/lightstreamer_log_conf.xml;         rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc;         gpgconf --kill all;         rm -rf "$GNUPGHOME";         rm -rf /var/lib/apt/lists/*;         groupadd -g 10000 lightstreamer;         useradd --no-log-init -M -s /usr/sbin/nologin -g lightstreamer -u 10000 lightstreamer;         chown -R lightstreamer:root /lightstreamer;         chmod -R g=u /lightstreamer; # buildkit
+# Thu, 30 Jul 2026 19:50:16 GMT
+USER 10000:10000
+# Thu, 30 Jul 2026 19:50:16 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 19:50:16 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 19:50:16 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -116,17 +117,13 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Thu, 16 Jul 2026 00:33:47 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:5bf44dbeb89692f9f312c045f1c0a299152a4d0e596c0cc92a89ad372731b26e`  
+		Last Modified: Thu, 30 Jul 2026 19:46:46 GMT  
+		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f451a5461750646676e0c26eaab95b04d251e270ebc84559e97bef50100c9da7`  
-		Last Modified: Thu, 16 Jul 2026 01:16:23 GMT  
-		Size: 2.6 KB (2644 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:724c6977c3f657ad67debffd989357b91cab75f8fb67d37149e8ec1268c80442`  
-		Last Modified: Thu, 16 Jul 2026 01:16:24 GMT  
-		Size: 59.3 MB (59259435 bytes)  
+	-	`sha256:2bc84cee192f76ea687191c7e55e5c0db0ce38072b6eea67028fbbfeeb5c83f8`  
+		Last Modified: Thu, 30 Jul 2026 19:50:23 GMT  
+		Size: 59.3 MB (59259822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -136,33 +133,33 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-jdk8` - unknown; unknown
 
 ```console
-$ docker pull lightstreamer@sha256:f5f976ce2e43cd079f98240e2f4da2bcdd8b768d3ffd2a9a7a117fd198cdcb76
+$ docker pull lightstreamer@sha256:b360d837be7210c8f715d3b776e1c15d974c0a1ca4afc48d9414132070ba6724
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.3 KB (20266 bytes)**  
+-	Total Size: **18.7 KB (18681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf66d668971b5f1b55eaa895467a1d85293d27d2b15854175dd1772beeb9fa8f`
+-	Image ID: `sha256:27955000e54370959a713e9aedaded0111a6c491c87154343a81a119763295cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3b1324c08d5395fad348a5a7bb15ecc165cb947308f06cb98ea6fa4c041d67e7`  
-		Last Modified: Thu, 16 Jul 2026 01:16:22 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:12251b2ce15ada386159202e4707e3bd329131e3aaa47329fecb516c63484ca1`  
+		Last Modified: Thu, 30 Jul 2026 19:50:21 GMT  
+		Size: 18.7 KB (18681 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `lightstreamer:7-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull lightstreamer@sha256:a58ac5ebcfb9a53d5df9a4dc61b72d3e8ce2be210254a080b5c4ec70c7b71eb6
+$ docker pull lightstreamer@sha256:631f4cca01fea240407aa9aebe29d4e2ff8f2fc48cbc66d537af7af53ad89cd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174178124 bytes)**  
+-	Total Size: **174.2 MB (174175946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd6d246daa6105b4bdf99e749d4c398910acb17e7da909b9f41b69f62792c5f6`
+-	Image ID: `sha256:726e8b10a876da5acf8daf61b5d8b73f4b5671e250dc40b378a13a8bcf38596f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `[".\/LS.sh","run"]`
 
@@ -211,25 +208,26 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 16 Jul 2026 00:35:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 16 Jul 2026 01:16:12 GMT
-LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Thu, 16 Jul 2026 01:16:12 GMT
-RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 16 Jul 2026 01:16:13 GMT
-RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2 # buildkit
-# Thu, 16 Jul 2026 01:16:13 GMT
+# Thu, 30 Jul 2026 20:00:41 GMT
+LABEL org.opencontainers.image.authors=Lightstreamer Server Development Team <support@lightstreamer.com>
+# Thu, 30 Jul 2026 20:00:41 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.8
-# Thu, 16 Jul 2026 01:16:13 GMT
-ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz
-# Thu, 16 Jul 2026 01:16:17 GMT
-RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc # buildkit
-# Thu, 16 Jul 2026 01:16:17 GMT
-USER lightstreamer
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 20:00:41 GMT
+ARG LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz
+# Thu, 30 Jul 2026 20:00:41 GMT
+ARG FINGERPRINT=9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
+# Thu, 30 Jul 2026 20:00:41 GMT
+WORKDIR /lightstreamer
+# Thu, 30 Jul 2026 20:00:48 GMT
+# ARGS: LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz FINGERPRINT=9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
+RUN set -eux;         apt-get update;         apt-get install -y --no-install-recommends curl gnupg;         curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD};         curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc;         GNUPGHOME="$(mktemp -d)";         export GNUPGHOME;         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "${FINGERPRINT}";         gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz;         tar -xf Lightstreamer.tar.gz --strip-components=1;         sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                conf/lightstreamer_log_conf.xml;         rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc;         gpgconf --kill all;         rm -rf "$GNUPGHOME";         rm -rf /var/lib/apt/lists/*;         groupadd -g 10000 lightstreamer;         useradd --no-log-init -M -s /usr/sbin/nologin -g lightstreamer -u 10000 lightstreamer;         chown -R lightstreamer:root /lightstreamer;         chmod -R g=u /lightstreamer; # buildkit
+# Thu, 30 Jul 2026 20:00:48 GMT
+USER 10000:10000
+# Thu, 30 Jul 2026 20:00:48 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 20:00:48 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 16 Jul 2026 01:16:17 GMT
+# Thu, 30 Jul 2026 20:00:48 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -258,17 +256,13 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Thu, 16 Jul 2026 00:36:00 GMT  
 		Size: 2.5 KB (2484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
+	-	`sha256:f0c4f08d81a9130b1015a219322c9bd9bf491e1eb88cb5db518a028ba87a70a7`  
+		Last Modified: Thu, 30 Jul 2026 20:00:54 GMT  
+		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dcf2ea2b91f2133f2c504272d303c0e7243f1316ae72d021a6670db2a2cfa77`  
-		Last Modified: Thu, 16 Jul 2026 01:16:23 GMT  
-		Size: 2.6 KB (2634 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e526d055acebedadda9f7d3c11f946d98fc0a5e035857c43153881acdb2ce89`  
-		Last Modified: Thu, 16 Jul 2026 01:16:25 GMT  
-		Size: 59.3 MB (59259441 bytes)  
+	-	`sha256:d53d2994bfee6cac5fbc7ee93f7148da5ac71a2697e0d4e03618b0e99d70a591`  
+		Last Modified: Thu, 30 Jul 2026 20:00:56 GMT  
+		Size: 59.3 MB (59259826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -278,19 +272,19 @@ CMD ["./LS.sh" "run"]
 ### `lightstreamer:7-jdk8` - unknown; unknown
 
 ```console
-$ docker pull lightstreamer@sha256:50c6b129a301bfd94740602b9f303cf724968d033399141cf862c0244e7d45f2
+$ docker pull lightstreamer@sha256:e098ab15f5deddd5fad94aae319b770410017a3bdb29f01482799b353e8298ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.4 KB (20424 bytes)**  
+-	Total Size: **18.8 KB (18810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31dcae5dad4bd2247d49c9da964c9c492af9a675b151ed3d5ea9297187e74d45`
+-	Image ID: `sha256:745afb33f7afab4a10d9c8fc8593a39fe5337d524ec1d0355a634d0fa828fb2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5767101a9578fc2a31eacafba41c58d67444226adf57bcea523075cf11e0fe0a`  
-		Last Modified: Thu, 16 Jul 2026 01:16:23 GMT  
-		Size: 20.4 KB (20424 bytes)  
+	-	`sha256:18d439ba01275dacec3b872f15b06ed2e4356682871173bcf7ef6595426660d8`  
+		Last Modified: Thu, 30 Jul 2026 20:00:54 GMT  
+		Size: 18.8 KB (18810 bytes)  
 		MIME: application/vnd.in-toto+json
