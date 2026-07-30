@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a1e3457a67021ee39e4bfdf0a086fbafc011db76f3486bcf36a4e935f84a492`
-- Created: `2026-07-14T02:41:44.65661746Z`
+- Image ID: `sha256:4a7fad0e894b36c5ea97cf0314cecd661cd15caf866463608b8346e81b82ef5e`
+- Created: `2026-07-29T17:50:05.090090414Z`
 - Virtual Size: ~ 1.39 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.23.1`
+  - `NODE_VERSION=22.23.2`
   - `YARN_VERSION=1.22.22`
   - `DENO_VERSION=1.43.5`
   - `NODE_ENV=production`
