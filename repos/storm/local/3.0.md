@@ -1691,15 +1691,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.2.debian.tar.xz' openssl_3.5.5-1ubuntu3.2.debian.tar.xz 102168 SHA512:aa6605091a7601a0b4d716a176872309028fe46b790c9cf483b74de26b078620bd1e126ac852ebc1e89b057924c83ac7fe7eaf70360faa6bcaec2ee74d1a9baf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.2.dsc' openssl_3.5.5-1ubuntu3.2.dsc 2916 SHA512:f00f6d500b1616908a72368b9d58db4c9a1c178b217b194eb8a096e7eb1e033d3a32fff200814315ef130a7d70808234df611d6cc1e23b82ffaccaead496578c
-```
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -2174,9 +2168,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2026b-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA512:a44882258c0a7fbe587e8b73d6bb3cd5be7d4788976ea742adbbf176eb3b33e5bd7d1714b2fffe2972b1a42e7335eac39ed0bd63e819bb421550f8cae1df4f2f
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz 190364 SHA512:9026b449d2af9b08651ec181889d6d0e1a263395c030edf74f694c50708382724a27b767be399068ede9ecfc43186989e3d6f3ef8880c0995cae01abe2bdc545
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.dsc' tzdata_2026b-0ubuntu0.26.04.1.dsc 2471 SHA512:a50afa091a667bf7860c1d7fc1d4cd4449fb584d7c25f04b22712bfcee1fc91fa4ba6171d05448bcbf7c7f62f90bada20b0d6b29201455671b3e3ede91274479
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA512:a44882258c0a7fbe587e8b73d6bb3cd5be7d4788976ea742adbbf176eb3b33e5bd7d1714b2fffe2972b1a42e7335eac39ed0bd63e819bb421550f8cae1df4f2f
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz 190364 SHA512:9026b449d2af9b08651ec181889d6d0e1a263395c030edf74f694c50708382724a27b767be399068ede9ecfc43186989e3d6f3ef8880c0995cae01abe2bdc545
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.dsc' tzdata_2026b-0ubuntu0.26.04.1.dsc 2471 SHA512:a50afa091a667bf7860c1d7fc1d4cd4449fb584d7c25f04b22712bfcee1fc91fa4ba6171d05448bcbf7c7f62f90bada20b0d6b29201455671b3e3ede91274479
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
