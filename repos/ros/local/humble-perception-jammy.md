@@ -1485,8 +1485,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.tar.xz' distro-info-data_0.52ubuntu0.12.tar.xz 10424 SHA512:d3877bfe0b4f5f9bc4d8f9a82b63049b4f7b25ac7258950eb88a0faefcbe6c5924fb1239fc35bc63256b1e25d1441db7377674e4afc795d64b45349508146284
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.dsc' distro-info-data_0.52ubuntu0.12.dsc 1800 SHA512:4a83e96f7d04bf74f5f5098e1537f015994957f049c7316e884ee44ef90cc2eea77509c56856858174e20fb86a84f09a580c38eefd914f14c91b98cd39d61685
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.tar.xz' distro-info-data_0.52ubuntu0.12.tar.xz 10424 SHA512:d3877bfe0b4f5f9bc4d8f9a82b63049b4f7b25ac7258950eb88a0faefcbe6c5924fb1239fc35bc63256b1e25d1441db7377674e4afc795d64b45349508146284
+'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.dsc' distro-info-data_0.52ubuntu0.12.dsc 1800 SHA512:4a83e96f7d04bf74f5f5098e1537f015994957f049c7316e884ee44ef90cc2eea77509c56856858174e20fb86a84f09a580c38eefd914f14c91b98cd39d61685
 ```
 
 ### `dpkg` source package: `double-conversion=3.1.7-4`
@@ -6927,15 +6927,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.25
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.debian.tar.xz' openssl_3.0.2-0ubuntu1.25.debian.tar.xz 292264 SHA512:68d7cb2233d1cb266fc9bd4d11e435d64237033624a22c2ec7f75917314238bc7dbcc38bcc7a761a844ce0c68b426b4b572f87f83bd458162ebe705cc4dd84c3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.dsc' openssl_3.0.2-0ubuntu1.25.dsc 2730 SHA512:6e4d4e77f6a68dd44a5a042e55a70c7ed414ed93d05ee3d1bb7b7c9699accbfab2c297c453b06d5f6b5c537d1c480e685b3df344206bf9671eb9d8a362930581
-```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 
