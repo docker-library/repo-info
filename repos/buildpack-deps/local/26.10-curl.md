@@ -574,15 +574,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.10.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-4.dsc' findutils_4.10.0-4.dsc 2289 SHA512:bf77d3adc922f555c8de5f4327b5fa080b15865131d0001b6fcfc6863f7fef3c370ab16a1c99ab1d114c21a5f9e6f8db9113dae9ff850c74b3f06a33e7fe0268
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz' findutils_4.10.0.orig.tar.xz 2240712 SHA512:b8b683d21cd26c6da4f41c56e83cadbda4780f8610a2bbd4b4e34bb1f339c3209721974b03e076d5eef0331fd876d947b398197aad37c29bbcc2e0405c641b34
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz.asc' findutils_4.10.0.orig.tar.xz.asc 488 SHA512:a835153a0671309021be187bf78afee58d9682acb40545aaa9dd187f0ebdea0cfa5583bd03f363243633ea056ddb0a7a6603987ab5e34a608426cb4265ac6d8f
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-4.debian.tar.xz' findutils_4.10.0-4.debian.tar.xz 34252 SHA512:b7abc0516043b72e9dd45b6e77c0ba9282a28325e533d41c9699983f04b896bfd28cc113370ce4a29af2ed9c5d134e2424b2543b0a5ff36de381f5b834efcdb3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/findutils/4.10.0-4/
+
 
 ### `dpkg` source package: `gcc-16=16.1.0-2ubuntu1`
 
@@ -1680,15 +1678,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.7.0-5ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0.orig.tar.xz' pam_1.7.0.orig.tar.xz 507824 SHA512:ab5cadb0eb5e95e36146fdbbc77eef4e5e0f38aeee4e819b080a1316f69969c3c33e4a2daf3246ded4c2e58ce517d7f1acb0d8de02a4898ff753f4c3aeec51cf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0.orig.tar.xz.asc' pam_1.7.0.orig.tar.xz.asc 801 SHA512:573bef1d63c0ce4efb5d1efd71a582f6ff679f2e278c326f66e142175cf67e42404453d41b92c5ce201b7d41db7b0617695f0d0972a812f0ab19553dec37192e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0-5ubuntu3.debian.tar.xz' pam_1.7.0-5ubuntu3.debian.tar.xz 194108 SHA512:0cdc2295f7490523bd9947884546257e7b610ed1c5fada24a8be20572c0e8e8311765228630747f891a02466f92811c49bf64dd38e786a992485959f5f2b10c3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0-5ubuntu3.dsc' pam_1.7.0-5ubuntu3.dsc 2908 SHA512:1c74137e64054a7aeb23bae5fe58f3a2797b2fa780d8d41b26afc2b8a93c25f2171b4418ac4efc40466a02b1808bab075086f19dc296a12085a310ea1b0807a8
-```
 
 ### `dpkg` source package: `pcre2=10.46-1build1`
 
@@ -1771,15 +1763,9 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.3.2-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.2.orig.tar.bz2' pinentry_1.3.2.orig.tar.bz2 612858 SHA512:3b4d50a42d412d649a7830f7378aa966342c2bc0157d03b0ad79cf0aed29d6698d48c734e23b1dccada5f6ef81d0c09d3ead6cd703eadfc8082987e6bea0aafc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.2.orig.tar.bz2.asc' pinentry_1.3.2.orig.tar.bz2.asc 427 SHA512:645e0bc78001dd1883f03437594588d2be8b0d1a32521c13d4ceea437652ca5675bd15977bdccdcfdabf96bc4edbaa567f547b46d7725d48c28e65be13654098
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.2-4ubuntu1.debian.tar.xz' pinentry_1.3.2-4ubuntu1.debian.tar.xz 20912 SHA512:b7e1a1384d888ae2bd454d80291e99f921d7d23da7cc1dd926d6a554e17951e5e85bff367d95a6b06bcbfa8e570ee560c6ebf0e98c142a76d754e87f546bd8ac
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.2-4ubuntu1.dsc' pinentry_1.3.2-4ubuntu1.dsc 3431 SHA512:fa325d3b5c50c149355aa4d6dc6fe922b6d933cf8fb8ee300fd9b3803a5f3fb77905729b18b27a5f9157d5390c5248c9db155ff29c2c354609de4e276b272783
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
 
@@ -2051,14 +2037,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026b-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA512:a44882258c0a7fbe587e8b73d6bb3cd5be7d4788976ea742adbbf176eb3b33e5bd7d1714b2fffe2972b1a42e7335eac39ed0bd63e819bb421550f8cae1df4f2f
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-1ubuntu2.debian.tar.xz' tzdata_2026b-1ubuntu2.debian.tar.xz 190332 SHA512:6525e030010fa43e4a1cb9f68adf264c8158381c954c66af80204346b3e955f40083152306d3fcfc7f69b00e5c0e9e21dc6e952f76450b7122b4fca21673dbce
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-1ubuntu2.dsc' tzdata_2026b-1ubuntu2.dsc 2439 SHA512:14007f6b1c368a02c9adde287202eb604106ce96ba7c1b5240d2afe10952c9990a0136115992051a03c38b14ad29a0b6836db177f84f2c5de145d73dd59c425a
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 

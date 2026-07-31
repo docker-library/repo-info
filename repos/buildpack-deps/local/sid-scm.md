@@ -109,19 +109,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.3.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.1.dsc' apt_3.3.1.dsc 3132 SHA256:dbb1ef739a7d564547b8d4791d15044e52dbf07a15d8fde76352db1ef96e095f
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.1.tar.xz' apt_3.3.1.tar.xz 2478544 SHA256:bc979b233f864ce08f177ac40118d44406c06179aec4d684dd1227d61e40673a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.3.1/
 
-- https://sources.debian.net/src/apt/3.3.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
 
@@ -1789,21 +1783,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-4
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-4.dsc' libssh2_1.11.1-4.dsc 2329 SHA256:efe3cc06d27337d41aec053dccfc6a742d22a134c1b484c2104327bc81770948
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-4.debian.tar.xz' libssh2_1.11.1-4.debian.tar.xz 19516 SHA256:e899b43734e37e9f8a08d293265eea8d131bc5206634fc3b3f563ab6b5bdbbc4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.1-4/
 
-- https://sources.debian.net/src/libssh2/1.11.1-4/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
@@ -2638,20 +2624,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-1/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.6-2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-2.dsc' procps_4.0.6-2.dsc 2124 SHA256:641fd3501edc04fb0f64175433ee1643928fe15301e983386779b1c2d5a81aa3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6.orig.tar.xz' procps_4.0.6.orig.tar.xz 1577796 SHA256:069333015b10e79440a0884b8d72400819b2ea8d1e77e2b2c3e75de5291eced4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-2.debian.tar.xz' procps_4.0.6-2.debian.tar.xz 29732 SHA256:1d56bb5b627b3e8e652f6b5b8b5ea549dc51901f5ba5fb8c8c27dc5f829884d3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.6-2/
 
-- https://sources.debian.net/src/procps/2:4.0.6-2/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.14.6-1`
 
@@ -2932,21 +2911,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.53.3-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.53.3-1.dsc' sqlite3_3.53.3-1.dsc 2641 SHA256:14e08e21dafba0f1a94b8f966aac84a78181b094c1e672b2ebb57604ccfea82e
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.53.3.orig-www.tar.xz' sqlite3_3.53.3.orig-www.tar.xz 6328220 SHA256:1051eb983eb1cdc4a5f6032bb3b02bb778ddba00da38c0759dc65fba5d4cff10
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.53.3.orig.tar.xz' sqlite3_3.53.3.orig.tar.xz 8648448 SHA256:329a9a17304a702e578163c91c8eb66ad0dcc2a41adcf1093cd2f08c706875c3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.53.3-1.debian.tar.xz' sqlite3_3.53.3-1.debian.tar.xz 31324 SHA256:1131038f24b461b2dd912ba612af0ed509d3c0d96480433eb9dfc43898c96b5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.53.3-1/
 
-- https://sources.debian.net/src/sqlite3/3.53.3-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.53.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.53.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.5-6`
 
