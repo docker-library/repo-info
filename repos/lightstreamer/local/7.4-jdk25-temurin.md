@@ -1,10 +1,10 @@
-# `lightstreamer:7.4.8-jdk25-temurin`
+# `lightstreamer:7.4.8-jdk25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a7292e9d42462494a5622033d40b08f1e5b72f01c02be6347aece78cf9de54a`
-- Created: `2026-07-16T01:16:35.920622341Z`
-- Virtual Size: ~ 502.01 Mb  
+- Image ID: `sha256:951a664a3e9ec7acccfdd040c957f31c141dfcda4fcc9fe72cd2cf3b0504a5cf`
+- Created: `2026-07-30T19:51:46.306536387Z`
+- Virtual Size: ~ 499.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,9 +17,8 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.3+9`
   - `LIGHTSTREAMER_VERSION=7.4.8`
-  - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.8/Lightstreamer-7.4.8.tar.gz`
 - Labels:
-  - `maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>`
+  - `org.opencontainers.image.authors=Lightstreamer Server Development Team <support@lightstreamer.com>`
   - `org.opencontainers.image.created=2026-07-13T16:06:30.499069+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
@@ -179,26 +178,6 @@ Source:
 $ apt-get source -qq --print-uris base-passwd=3.6.8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.6.8.dsc' base-passwd_3.6.8.dsc 2044 SHA256:e76e572d2653f2b8eda64c662f5b4310a978ef1fdd039410ace5f6355c3af7d6
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.6.8.tar.xz' base-passwd_3.6.8.tar.xz 61840 SHA256:fab3d0e6e8b641e116bda9bd5f7a7ed24482384c1513f6a369b506327fbc8dde
-```
-
-### `dpkg` source package: `bash-completion=1:2.16.0-8build1`
-
-Binary Packages:
-
-- `bash-completion=1:2.16.0-8build1`
-
-Licenses: (parsed from: `/usr/share/doc/bash-completion/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris bash-completion=1:2.16.0-8build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash-completion/bash-completion_2.16.0.orig.tar.gz' bash-completion_2.16.0.orig.tar.gz 503843 SHA256:c4d7edf0b035d8f6ed33294380326bde1fb8a4a8e24699566d545b4276141cc2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash-completion/bash-completion_2.16.0-8build1.debian.tar.xz' bash-completion_2.16.0-8build1.debian.tar.xz 20984 SHA256:8dec9e048a54bb632496373ae55049a1a81fb4416fed4ca2825a535c22978f4b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash-completion/bash-completion_2.16.0-8build1.dsc' bash-completion_2.16.0-8build1.dsc 2083 SHA256:2dc08fb1aa80568d1db83e84c3729d6a9b8737a8e5e24f8cfeab99fc1f9c30eb
 ```
 
 ### `dpkg` source package: `bash=5.3-2ubuntu1`
@@ -413,10 +392,9 @@ $ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.3
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.28+dfsg1-9ubuntu3`
-- `libsasl2-modules:amd64=2.1.28+dfsg1-9ubuntu3`
 - `libsasl2-modules-db:amd64=2.1.28+dfsg1-9ubuntu3`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-2.2-clause`
@@ -884,16 +862,13 @@ Binary Packages:
 
 - `dirmngr=2.4.8-4ubuntu3`
 - `gnupg=2.4.8-4ubuntu3`
-- `gnupg-l10n=2.4.8-4ubuntu3`
-- `gnupg-utils=2.4.8-4ubuntu3`
 - `gpg=2.4.8-4ubuntu3`
 - `gpg-agent=2.4.8-4ubuntu3`
-- `gpg-wks-client=2.4.8-4ubuntu3`
 - `gpgconf=2.4.8-4ubuntu3`
 - `gpgsm=2.4.8-4ubuntu3`
 - `gpgv=2.4.8-4ubuntu3`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `CC0-1.0`
@@ -1097,27 +1072,26 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-6ubuntu3.dsc' keyutils_1.6.3-6ubuntu3.dsc 2186 SHA256:ba44d62a5bcf68a8cbd872d8cabe7570b54a3b17101ea5ff260adf33de5c4302
 ```
 
-### `dpkg` source package: `krb5=1.22.1-2ubuntu4`
+### `dpkg` source package: `krb5=1.22.1-2ubuntu4.1`
 
 Binary Packages:
 
-- `krb5-locales=1.22.1-2ubuntu4`
-- `libgssapi-krb5-2:amd64=1.22.1-2ubuntu4`
-- `libk5crypto3:amd64=1.22.1-2ubuntu4`
-- `libkrb5-3:amd64=1.22.1-2ubuntu4`
-- `libkrb5support0:amd64=1.22.1-2ubuntu4`
+- `libgssapi-krb5-2:amd64=1.22.1-2ubuntu4.1`
+- `libk5crypto3:amd64=1.22.1-2ubuntu4.1`
+- `libkrb5-3:amd64=1.22.1-2ubuntu4.1`
+- `libkrb5support0:amd64=1.22.1-2ubuntu4.1`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA256:1a8832b8cad923ebbf1394f67e2efcf41e3a49f460285a66e35adec8fa0053af
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.debian.tar.xz' krb5_1.22.1-2ubuntu4.debian.tar.xz 107916 SHA256:d40738e00b7636b3efbc39b22fe6d9fa09fdb25fe1bd17a63f92d5d5522069b2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.dsc' krb5_1.22.1-2ubuntu4.dsc 3896 SHA256:8905c13fb836119574040cd82eb572c63f5cb02818298bb519662d4a083aac8c
+$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.debian.tar.xz' krb5_1.22.1-2ubuntu4.1.debian.tar.xz 109240 SHA512:6b6518bd38d6e8939b8f0295f6c07a26308b50769b848bd77cc86456052a9cdf35421f56075cd97bd07aa7a1b5509dc12bd00da3a36b94f370694fb3b889277e
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.dsc' krb5_1.22.1-2ubuntu4.1.dsc 3879 SHA512:2a3e54f7a1e241eb678053b145f69161af113ab3f62a1c5cc2333098572586bcf001c98a54e246246105a269067f991ac4318a347020527a29dc56e6eee44ef8
 ```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
@@ -1830,15 +1804,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.2.debian.tar.xz' openssl_3.5.5-1ubuntu3.2.debian.tar.xz 102168 SHA512:aa6605091a7601a0b4d716a176872309028fe46b790c9cf483b74de26b078620bd1e126ac852ebc1e89b057924c83ac7fe7eaf70360faa6bcaec2ee74d1a9baf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.2.dsc' openssl_3.5.5-1ubuntu3.2.dsc 2916 SHA512:f00f6d500b1616908a72368b9d58db4c9a1c178b217b194eb8a096e7eb1e033d3a32fff200814315ef130a7d70808234df611d6cc1e23b82ffaccaead496578c
-```
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -2022,27 +1990,6 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-9ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-9ubuntu1.dsc' procps_4.0.4-9ubuntu1.dsc 2247 SHA256:02942f7296bb9f0db5177ee4d88909583b0eeb751b2ef9a675116c09d2ef176b
 ```
 
-### `dpkg` source package: `publicsuffix=20260129.1928-1`
-
-Binary Packages:
-
-- `publicsuffix=20260129.1928-1`
-
-Licenses: (parsed from: `/usr/share/doc/publicsuffix/copyright`)
-
-- `CC0`
-- `Expat`
-- `MPL-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris publicsuffix=20260129.1928-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20260129.1928-1.dsc' publicsuffix_20260129.1928-1.dsc 2063 SHA256:31daa3096c6e94a7baf144790e34b82043cd56ffe25251c0c42015932f1bc98c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20260129.1928.orig.tar.gz' publicsuffix_20260129.1928.orig.tar.gz 301155 SHA256:81d80d924731b5f18e26025b27ed1386190f7da398ece517da31753a57a3f22d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20260129.1928-1.debian.tar.xz' publicsuffix_20260129.1928-1.debian.tar.xz 166328 SHA256:c2dd4ecac55b7447955c9799553cb77197a28907a7694f5c2401fe4cb8e3c51c
-```
-
 ### `dpkg` source package: `readline=8.3-4`
 
 Binary Packages:
@@ -2187,11 +2134,11 @@ $ apt-get source -qq --print-uris shadow=1:4.17.4-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4-2ubuntu3.dsc' shadow_4.17.4-2ubuntu3.dsc 2991 SHA256:5c7ebf6e7e9894c91df3474212a6e21bc5b6da82bbcef760bad495a0b5f48c87
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.1`
+### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-9ubuntu0.1`
+- `libsqlite3-0:amd64=3.46.1-9ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2199,9 +2146,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.2.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.2.debian.tar.xz 37792 SHA512:0883f1c15042ccab5035ebcbf992c3f40bfdfbd082756cd2dd913d882efab7ac6fc37093ff7cc3d7d7cb8c2e7a0af509d0f85570269a0f601b760431a62ce600
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.2.dsc' sqlite3_3.46.1-9ubuntu0.2.dsc 2756 SHA512:e2cd292f2acd4f990292436e9985b5ee9c3c9500c85a599d9bd8983cadc0b33da8f375db79e5be5ed8b2e4096244f45bded91e82283041ae943ae558255c39d0
+```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3`
 
@@ -2288,14 +2241,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026b-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA512:a44882258c0a7fbe587e8b73d6bb3cd5be7d4788976ea742adbbf176eb3b33e5bd7d1714b2fffe2972b1a42e7335eac39ed0bd63e819bb421550f8cae1df4f2f
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026b-0ubuntu0.26.04.1.debian.tar.xz 190364 SHA512:9026b449d2af9b08651ec181889d6d0e1a263395c030edf74f694c50708382724a27b767be399068ede9ecfc43186989e3d6f3ef8880c0995cae01abe2bdc545
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026b-0ubuntu0.26.04.1.dsc' tzdata_2026b-0ubuntu0.26.04.1.dsc 2471 SHA512:a50afa091a667bf7860c1d7fc1d4cd4449fb584d7c25f04b22712bfcee1fc91fa4ba6171d05448bcbf7c7f62f90bada20b0d6b29201455671b3e3ede91274479
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 
