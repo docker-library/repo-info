@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3438c47d0713c7a8593f8d4bd6ee20336226d9a5bb4a3961473cc243e628925`
-- Created: `2026-07-08T16:47:11.706565845Z`
-- Virtual Size: ~ 301 Mb  
+- Image ID: `sha256:4b74395878610cc3702e24f01f9ed2f8fc8b60e3d50be3da1ae5e8d8c91024f2`
+- Created: `2026-07-30T23:23:44.165102907Z`
+- Virtual Size: ~ 301.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.32`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.32.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.32.tar.xz.asc`
-  - `PHP_SHA256=8698ec1f9402fa5e5e872ae3d0916b62f5f27503c1fbfc9cc3521e113355ea92`
+  - `PHP_VERSION=8.3.33`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.33.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.33.tar.xz.asc`
+  - `PHP_SHA256=e293ed620cec74651bb4a071317892a478aa6840fab22db45c72d77cd42f9676`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=6.1.2`
   - `JOOMLA_SHA512=ed4f9ff27329726ece46e3ebab71aeef57f88a7c218f5236d22d4029ac3bd1b615d066d38f5edeabc421ed88153aaface8947e29a49dc06889a4d08207627d3b`
@@ -236,16 +236,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -576,16 +576,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.24-r0 description:
+imagemagick-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.24-r0 webpage:
+imagemagick-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.24-r0 installed size:
-3696 KiB
+imagemagick-7.1.2.27-r0 installed size:
+3700 KiB
 
-imagemagick-7.1.2.24-r0 license:
+imagemagick-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.24-r0 description:
+imagemagick-jp2-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.24-r0 webpage:
+imagemagick-jp2-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.24-r0 installed size:
+imagemagick-jp2-7.1.2.27-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.24-r0 license:
+imagemagick-jp2-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.24-r0 description:
+imagemagick-jpeg-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.24-r0 webpage:
+imagemagick-jpeg-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.24-r0 installed size:
+imagemagick-jpeg-7.1.2.27-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.24-r0 license:
+imagemagick-jpeg-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.24-r0 description:
+imagemagick-libs-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.24-r0 webpage:
+imagemagick-libs-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.24-r0 installed size:
-4261 KiB
+imagemagick-libs-7.1.2.27-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.24-r0 license:
+imagemagick-libs-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.24-r0 description:
+imagemagick-pdf-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.24-r0 webpage:
+imagemagick-pdf-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.24-r0 installed size:
-121 KiB
+imagemagick-pdf-7.1.2.27-r0 installed size:
+125 KiB
 
-imagemagick-pdf-7.1.2.24-r0 license:
+imagemagick-pdf-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -661,16 +661,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.24-r0 description:
+imagemagick-tiff-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.24-r0 webpage:
+imagemagick-tiff-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.24-r0 installed size:
+imagemagick-tiff-7.1.2.27-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.24-r0 license:
+imagemagick-tiff-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -678,16 +678,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.24-r0 description:
+imagemagick-webp-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.24-r0 webpage:
+imagemagick-webp-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.24-r0 installed size:
+imagemagick-webp-7.1.2.27-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.24-r0 license:
+imagemagick-webp-7.1.2.27-r0 license:
 ImageMagick
 
 ```
