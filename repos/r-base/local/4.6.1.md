@@ -938,21 +938,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.10.0-4
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-4.dsc' findutils_4.10.0-4.dsc 2289 SHA256:16136829f0f4b58afe7f88266385ae7ae66cb578b205c763dd59c3ff5bf0e411
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz' findutils_4.10.0.orig.tar.xz 2240712 SHA256:1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0.orig.tar.xz.asc' findutils_4.10.0.orig.tar.xz.asc 488 SHA256:7f53670eea6bd114e014571221eb652855c1129a3ed99f2a9257c2a313cc216f
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.10.0-4.debian.tar.xz' findutils_4.10.0-4.debian.tar.xz 34252 SHA256:ee434c83525b581e24952540b123fb06a7d154df6eee75548ab9e61df1090de3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.10.0-4/
 
-- https://sources.debian.net/src/findutils/4.10.0-4/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.10.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.10.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.17.1-5`
 
@@ -2505,20 +2497,13 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.30-2
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.30-2.dsc' libthai_0.1.30-2.dsc 2302 SHA256:aea239caad323b433d59c85f7f1f9bf51c8d157fdea5a1e8fe243c257980a119
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.30.orig.tar.xz' libthai_0.1.30.orig.tar.xz 436044 SHA256:ddba8b53dfe584c3253766030218a88825488a51a7deef041d096e715af64bdd
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.30-2.debian.tar.xz' libthai_0.1.30-2.debian.tar.xz 12736 SHA256:b8935ea10b97ebc21599e10d39c9cd8d3ed3a22ec6bed1466888884dc5ecc1c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libthai/0.1.30-2/
 
-- https://sources.debian.net/src/libthai/0.1.30-2/ (for browsing the source)
-- https://sources.debian.net/src/libthai/0.1.30-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libthai/0.1.30-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtirpc=1.3.7+ds-1`
 
@@ -3931,20 +3916,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.7-5-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-5-1.dsc' rmatrix_1.7-5-1.dsc 1860 SHA256:49163797375a2743bd933a3875cdc4c129124e6dd850dfe2774d2f3936e20393
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-5.orig.tar.gz' rmatrix_1.7-5.orig.tar.gz 2529215 SHA256:308b0edd7bcb023a8bb50cc5cec98e66b3658c94a5badfb1ce6024e595fa8a83
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-5-1.debian.tar.xz' rmatrix_1.7-5-1.debian.tar.xz 6144 SHA256:dc918df4ab05ff188c3d5a4b48aa684de556cd1fb12c4e1bd92f74bec742accc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.7-5-1/
 
-- https://sources.debian.net/src/rmatrix/1.7-5-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.7-5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.7-5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.27-1`
 
