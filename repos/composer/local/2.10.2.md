@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a98035f19bdb947ec6279321f7565e6c44613c14a339c612a58fd730494776ac`
-- Created: `2026-07-06T18:11:00.613020905Z`
-- Virtual Size: ~ 224.6 Mb  
+- Image ID: `sha256:783e008e683e5c8778b8455645a7cf237ec51c2f06104dd6c36b3aa9f3d0753d`
+- Created: `2026-07-30T23:19:49.272705114Z`
+- Virtual Size: ~ 224.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.8`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.8.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.8.tar.xz.asc`
-  - `PHP_SHA256=58910198d19e873048fe87cdfe16bc790025417ede3d1651bfa1c4b533d573f2`
+  - `PHP_VERSION=8.5.9`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.9.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.9.tar.xz.asc`
+  - `PHP_SHA256=0db7855f25bcd0ab1d592cdb35e284d6f6a5d2ae0f6f621122e364cc39b708f4`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.10.2`
@@ -268,16 +268,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -863,16 +863,16 @@ GPL-3.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.2.1-r0 description:
+mercurial-7.2.3-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.2.1-r0 webpage:
+mercurial-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.2.1-r0 installed size:
-9 MiB
+mercurial-7.2.3-r0 installed size:
+10 MiB
 
-mercurial-7.2.1-r0 license:
+mercurial-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -880,16 +880,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.2.1-r0 description:
+mercurial-pyc-7.2.3-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.2.1-r0 webpage:
+mercurial-pyc-7.2.3-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.2.1-r0 installed size:
+mercurial-pyc-7.2.3-r0 installed size:
 10 MiB
 
-mercurial-pyc-7.2.1-r0 license:
+mercurial-pyc-7.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
