@@ -1,9 +1,9 @@
-# `clojure:temurin-21-tools-deps-1.12.5.1654-trixie`
+# `clojure:temurin-21-tools-deps-1.12.5.1664-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86d0f9ef1d6f97c9be6f5c546cce9ad3d1f8aced71cd5f51f43ed54a829e3e68`
-- Created: `2026-07-16T01:34:31.71293347Z`
+- Image ID: `sha256:233b64d7d29ebd4be94c19a8cff51339b40ab4e51747306950b137e8f102d2d5`
+- Created: `2026-07-29T17:57:10.007414896Z`
 - Virtual Size: ~ 618.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.5.1654`
+  - `CLOJURE_VERSION=1.12.5.1664`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2664,14 +2664,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.13.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.13.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.13=3.13.5-2+deb13u3`
+### `dpkg` source package: `python3.13=3.13.5-2+deb13u4`
 
 Binary Packages:
 
-- `libpython3.13-minimal:amd64=3.13.5-2+deb13u3`
-- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u3`
-- `python3.13=3.13.5-2+deb13u3`
-- `python3.13-minimal=3.13.5-2+deb13u3`
+- `libpython3.13-minimal:amd64=3.13.5-2+deb13u4`
+- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u4`
+- `python3.13=3.13.5-2+deb13u4`
+- `python3.13-minimal=3.13.5-2+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/share/doc/libpython3.13-stdlib/copyright`, `/usr/share/doc/python3.13/copyright`, `/usr/share/doc/python3.13-minimal/copyright`)
 
@@ -2696,18 +2696,18 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u3
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.dsc' python3.13_3.13.5-2+deb13u3.dsc 3721 SHA256:2f6c3f83cd3de0355f4411807871a95f99a0aae9b397daba5dbdbf1bd5169cc8
+$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u4
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.dsc' python3.13_3.13.5-2+deb13u4.dsc 3721 SHA256:72134c9f6705d0d87a53cf48c5a997f088b6b675ad5d87f57fa6e9f338393519
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz' python3.13_3.13.5.orig.tar.xz 22856016 SHA256:93e583f243454e6e9e4588ca2c2662206ad961659863277afcdb96801647d640
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz.asc' python3.13_3.13.5.orig.tar.xz.asc 963 SHA256:da6e013d98dcf8fc6696cdb2872b0051fc8fdeb632f73ef9f54d7b5a68647401
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.debian.tar.xz' python3.13_3.13.5-2+deb13u3.debian.tar.xz 295440 SHA256:8e9ed35b583e093f80fbcd53bf3de9245c8070cc5ea9b36e5f34d3a45bff73e9
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.debian.tar.xz' python3.13_3.13.5-2+deb13u4.debian.tar.xz 296316 SHA256:b5cc42821fb6a6f91b7a5ac1da5b313bb251288ca03f03d683b4c6ca453ece11
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
