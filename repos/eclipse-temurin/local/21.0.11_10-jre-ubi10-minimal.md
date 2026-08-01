@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c71ce919e7334c0a118e783bb3ed3ae06491a2c02ba462b8250e113b04156711`
-- Created: `2026-07-29T18:27:49.1722787Z`
+- Image ID: `sha256:9ea6301f312731fae7b742031d141d075cdded2ec98e91efac5a60696feb7b98`
+- Created: `2026-07-31T00:13:41.873519875Z`
 - Virtual Size: ~ 351.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-21.0.11+10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-28T05:13:50Z`
+  - `build-date=2026-07-29T13:46:17Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-07-28T05:13:50Z`
+  - `org.opencontainers.image.created=2026-07-29T13:46:17Z`
   - `org.opencontainers.image.revision=f473c706206356d94dd0dd94948a1be8c065fc47`
-  - `release=1785215492`
+  - `release=1785332632`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=f473c706206356d94dd0dd94948a1be8c065fc47`
@@ -189,11 +189,16 @@ $ dnf --quiet download --source --url curl-8.12.1-4.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10.src.rpm
 ```
 
-### `rpm` package: `cyrus-sasl-lib-2.1.28-29.el10.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-Attribution-HPND-disclaimer
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.28-30.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.28-30.el10_2.src.rpm
+```
 
 ### `rpm` package: `dbus-1.14.10-5.el10.x86_64`
 
@@ -378,11 +383,16 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-12.el10_0.src.rpm
 ```
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.13.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.14.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.14
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.80.4-12.el10_2.14.src.rpm
+```
 
 ### `rpm` package: `glibc-2.39-126.0.1.el10_2.x86_64`
 
@@ -413,11 +423,16 @@ $ dnf --quiet download --source --url gmp-6.2.1-12.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gmp-6.2.1-12.el10.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.10-3.el10_1.x86_64`
+### `rpm` package: `gnutls-3.8.10-4.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnutls-3.8.10-4.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-4.el10_2.src.rpm
+```
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
 
@@ -521,11 +536,16 @@ Licenses (from `rpm --query`): Brian-Gladman-2-Clause AND BSD-2-Clause AND (BSD-
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libacl-2.3.2-4.el10.x86_64`
+### `rpm` package: `libacl-2.4.0-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libacl-2.4.0-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `libarchive-3.7.7-8.el10_1.x86_64`
 
@@ -966,11 +986,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.36-10.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.36-10.el10.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.12.5-10.el10.x86_64`
+### `rpm` package: `libxml2-2.12.5-10.el10_2.2.x86_64`
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.12.5-10.el10_2.2.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
 
@@ -1071,19 +1096,19 @@ $ dnf --quiet download --source --url openldap-2.6.10-1.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.10-1.el10.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-server-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-server-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
@@ -1101,7 +1126,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.5.5-2.0.1.el10_2.x86_64`
+### `rpm` package: `openssl-libs-3.5.5-6.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
@@ -1219,7 +1244,7 @@ $ dnf --quiet download --source --url publicsuffix-list-dafsa-20240107-5.el10.no
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/publicsuffix-list-20240107-5.el10.src.rpm
 ```
 
-### `rpm` package: `python3-3.12.13-2.0.1.el10_2.x86_64`
+### `rpm` package: `python3-3.12.13-2.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): Python-2.0.1
 
@@ -1282,17 +1307,22 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.12.13-2.0.1.el10_2.x86_64`
+### `rpm` package: `python3-libs-3.12.13-2.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): Python-2.0.1 AND CC0-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-pip-wheel-23.3.2-7.el10.noarch`
+### `rpm` package: `python3-pip-wheel-23.3.2-11.el10_2.noarch`
 
 Licenses (from `rpm --query`): MIT AND Python-2.0.1 AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND ISC AND LGPL-2.1-only AND MPL-2.0 AND (Apache-2.0 OR BSD-2-Clause)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-pip-wheel-23.3.2-11.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/python-pip-23.3.2-11.el10_2.src.rpm
+```
 
 ### `rpm` package: `python3-rpm-4.19.1.1-23.el10.x86_64`
 
@@ -1505,11 +1535,16 @@ $ dnf --quiet download --source --url tpm2-tss-4.1.3-6.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026a-1.el10.noarch`
+### `rpm` package: `tzdata-2026b-1.el10.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026b-1.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026b-1.el10.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
@@ -1523,13 +1558,13 @@ Licenses (from `rpm --query`): GPL-2.0-only AND GPL-2.0-or-later AND BSD-2-Claus
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.2.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.7.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.2.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
