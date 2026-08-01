@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0fe89f858e12a651aef4b76aaf51e1ed21cae40b1a9865532b2e7711a7e8524a`
-- Created: `2026-07-22T18:29:40.281627836Z`
-- Virtual Size: ~ 515.56 Mb  
+- Image ID: `sha256:573e8fd57c33cc8259e0dbe0ae6c031d1b7a7862d4c496f9acf02e50a5101ca8`
+- Created: `2026-07-31T00:14:52.106240065Z`
+- Virtual Size: ~ 515.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-22T07:34:05Z`
+  - `build-date=2026-07-29T15:33:16Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-07-22T07:34:05Z`
+  - `org.opencontainers.image.created=2026-07-29T15:33:16Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=9932c86214d5e8b9c79570f3f4ebe16275359bc0`
+  - `org.opencontainers.image.revision=426f997bb9b2f48201b14b0d5655a78bd43f7523`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=9932c86214d5e8b9c79570f3f4ebe16275359bc0`
+  - `vcs-ref=426f997bb9b2f48201b14b0d5655a78bd43f7523`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.8`
@@ -1399,11 +1399,16 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.5.5-5.el9_8.x86_64`
+### `rpm` package: `openssl-3.5.5-6.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-3.5.5-6.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-6.el9_8.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-11.el9_8.x86_64`
 
@@ -1427,11 +1432,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-11.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-11.el9_8.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.5-5.el9_8.x86_64`
+### `rpm` package: `openssl-libs-3.5.5-6.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.5.5-6.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-6.el9_8.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.26.2-1.el9.x86_64`
 
