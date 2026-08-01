@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0880e7d0fe3c78e742b643e0805f41f7571ab31147ea59d6639c02cd54084a13`
-- Created: `2026-07-17T19:17:28.318452817Z`
-- Virtual Size: ~ 94.14 Mb  
+- Image ID: `sha256:2dec76ec599394b971749365380d8db55b08ab05dc5f02a3be4b9a13b910fb19`
+- Created: `2026-07-30T23:19:20.730918201Z`
+- Virtual Size: ~ 94.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.23.tar.xz.asc`
-  - `PHP_SHA256=1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72`
+  - `PHP_VERSION=8.4.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
+  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
   - `ADMINER_VERSION=5.5.0`
   - `ADMINER_DOWNLOAD_SHA256=d7494bb10abc7c5c7709fd134ab1bd6ebd3b37aabef6d11c42985209864e4dc9`
   - `ADMINER_SRC_DOWNLOAD_SHA256=df469c31699848c7523f67204530bd7e3126c4f5048107f526232ccc5d0fe1f7`
@@ -200,16 +200,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
