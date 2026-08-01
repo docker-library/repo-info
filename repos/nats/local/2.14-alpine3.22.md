@@ -1,17 +1,17 @@
-# `nats:2.14.3-alpine3.22`
+# `nats:2.14.4-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:93bc12a71290912ecf2ffb2e5df45be9ae532fef1b8240aef6102891d375ce25`
-- Created: `2026-06-29T19:11:20.445097254Z`
-- Virtual Size: ~ 27.21 Mb  
+- Image ID: `sha256:2978f67bea67f09466accdc7786b781fd456572c446b459ca5922ad58b14e0d3`
+- Created: `2026-07-30T19:46:18.699131277Z`
+- Virtual Size: ~ 27.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.14.3`
+  - `NATS_SERVER=2.14.4`
 - Labels:
   - `org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system.`
   - `org.opencontainers.image.documentation=https://docs.nats.io`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=NATS Server`
   - `org.opencontainers.image.url=https://nats.io`
   - `org.opencontainers.image.vendor=NATS.io`
-  - `org.opencontainers.image.version=2.14.3`
+  - `org.opencontainers.image.version=2.14.4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -299,16 +299,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
