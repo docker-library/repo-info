@@ -2080,9 +2080,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysstat=12.5.2-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2.orig.tar.xz' sysstat_12.5.2.orig.tar.xz 817856 SHA256:e7bce0ba36b0ad9f4b3ef9eef9abfa56d341e2ca33ce9616874da2e4d9b0d5ef
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2-2ubuntu0.2.debian.tar.xz' sysstat_12.5.2-2ubuntu0.2.debian.tar.xz 38960 SHA256:cee6874fce5b21250012ba24229951d656448fca2e80d742086d447c09ab7333
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2-2ubuntu0.2.dsc' sysstat_12.5.2-2ubuntu0.2.dsc 1801 SHA256:06fa642986de9a59a2b5799a0d0a1977d263cda509024d6d93a9a36934947e20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2.orig.tar.xz' sysstat_12.5.2.orig.tar.xz 817856 SHA512:5dce1c399dfe61ae11fe75c5fd90004f64388d2ebb0c6996fff3f0ba702652108f678eb602102f29bfe4a926db3f8510e2e17ced2b613520182203d2322fa11e
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2-2ubuntu0.2.debian.tar.xz' sysstat_12.5.2-2ubuntu0.2.debian.tar.xz 38960 SHA512:98949ab6b911363b77af778c89bb52d71bcb95be777efcd792bf63c0db9b1d112a1320ff918ca547b8c18ad9c42c447d9e6115fc41e0f496f1f239819580b3b6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2-2ubuntu0.2.dsc' sysstat_12.5.2-2ubuntu0.2.dsc 1801 SHA512:7907868fcef0d81395a589ade80aad9d2de78750a77339d2f0009dee15f06f7e5440a6359f448340d5439df11d21d671cd8cf87c902ac3da5154050c04449b73
 ```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
