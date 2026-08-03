@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6828d38b8910a97443c26a63f8ae9f701a83c62bf5b755461a961932db3e60de`
-- Created: `2026-07-29T18:27:10.440100202Z`
+- Image ID: `sha256:26623bb74eeff1e2b3d0c0a53490cef57e6623ad6eab90acc81c465cc9082051`
+- Created: `2026-07-31T00:13:07.998598664Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-28T04:52:32Z`
+  - `build-date=2026-07-29T15:33:16Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,9 +39,9 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-07-28T04:52:32Z`
+  - `org.opencontainers.image.created=2026-07-29T15:33:16Z`
   - `org.opencontainers.image.revision=426f997bb9b2f48201b14b0d5655a78bd43f7523`
-  - `release=1785214301`
+  - `release=1785339117`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=426f997bb9b2f48201b14b0d5655a78bd43f7523`

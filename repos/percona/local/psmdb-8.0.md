@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6dcb7d44144e774f2a11c2c5518deffa9847a74c7b9f94cef794ee79539b2db`
-- Created: `2026-07-29T18:27:02.894332331Z`
+- Image ID: `sha256:11a334cf8d4d496876f82191f37331717f34e2c7713cce7483b8e22e2cffd3c6`
+- Created: `2026-07-31T00:13:00.960179164Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-28T04:52:32Z`
+  - `build-date=2026-07-29T15:33:16Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,9 +38,9 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-07-28T04:52:32Z`
+  - `org.opencontainers.image.created=2026-07-29T15:33:16Z`
   - `org.opencontainers.image.revision=426f997bb9b2f48201b14b0d5655a78bd43f7523`
-  - `release=1785214301`
+  - `release=1785339117`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=426f997bb9b2f48201b14b0d5655a78bd43f7523`
@@ -1389,7 +1389,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.8.3-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.9.2-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
