@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b72d8ea1430b58208bad954e80eee320f8f7901ef974babe33c862b37e6c4cc6`
-- Created: `2026-07-02T21:28:29.055242474Z`
-- Virtual Size: ~ 536.29 Mb  
+- Image ID: `sha256:7eb52013735ff8927e5e49e15fb518743b33adf4cb7515895403e3f84d3952e9`
+- Created: `2026-07-30T23:29:17.601982942Z`
+- Virtual Size: ~ 536.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.32`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.32.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.32.tar.xz.asc`
-  - `PHP_SHA256=8698ec1f9402fa5e5e872ae3d0916b62f5f27503c1fbfc9cc3521e113355ea92`
+  - `PHP_VERSION=8.3.33`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.33.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.33.tar.xz.asc`
+  - `PHP_SHA256=e293ed620cec74651bb4a071317892a478aa6840fab22db45c72d77cd42f9676`
   - `MEDIAWIKI_MAJOR_VERSION=1.43`
   - `MEDIAWIKI_VERSION=1.43.9`
 
@@ -199,16 +199,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -488,16 +488,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.24-r0 description:
+imagemagick-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.24-r0 webpage:
+imagemagick-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.24-r0 installed size:
-3696 KiB
+imagemagick-7.1.2.27-r0 installed size:
+3700 KiB
 
-imagemagick-7.1.2.24-r0 license:
+imagemagick-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -505,16 +505,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.24-r0 description:
+imagemagick-libs-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.24-r0 webpage:
+imagemagick-libs-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.24-r0 installed size:
-4261 KiB
+imagemagick-libs-7.1.2.27-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.24-r0 license:
+imagemagick-libs-7.1.2.27-r0 license:
 ImageMagick
 
 ```
