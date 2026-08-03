@@ -1481,13 +1481,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.12
-'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.tar.xz' distro-info-data_0.52ubuntu0.12.tar.xz 10424 SHA512:d3877bfe0b4f5f9bc4d8f9a82b63049b4f7b25ac7258950eb88a0faefcbe6c5924fb1239fc35bc63256b1e25d1441db7377674e4afc795d64b45349508146284
-'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.dsc' distro-info-data_0.52ubuntu0.12.dsc 1800 SHA512:4a83e96f7d04bf74f5f5098e1537f015994957f049c7316e884ee44ef90cc2eea77509c56856858174e20fb86a84f09a580c38eefd914f14c91b98cd39d61685
-```
 
 ### `dpkg` source package: `double-conversion=3.1.7-4`
 
@@ -7206,10 +7202,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcsc-lite=1.9.5-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5.orig.tar.bz2' pcsc-lite_1.9.5.orig.tar.bz2 775736 SHA256:9ee3f9b333537562177893559ad4f7b8d5c23ebe828eef53056c02db14049d08
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5.orig.tar.bz2.asc' pcsc-lite_1.9.5.orig.tar.bz2.asc 833 SHA256:c6079ed5e6caa3c9f8259da2040274acb4c35119ec6be39558a80a9463e6b096
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz' pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz 19320 SHA256:cad8c96e40eab885c14cdc191197953553f4cc19a1a1a36e427d85bab6226ce3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.dsc' pcsc-lite_1.9.5-3ubuntu1.dsc 2411 SHA256:a7c2e211ded58acb9008675ae8101217c2cf2a96b677ff1441353447c05d0bc8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5.orig.tar.bz2' pcsc-lite_1.9.5.orig.tar.bz2 775736 SHA512:0315c2cf97cc9da0f5faf115f24e523b5a1746cea250a4fe6c4d5d7b2fbfc7c3ea0f068611072ca84866c672eb679e8067101437573148ccd1ac5ad26b18cd78
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5.orig.tar.bz2.asc' pcsc-lite_1.9.5.orig.tar.bz2.asc 833 SHA512:5e678c784dd3a860956c1e8ccc40e801a2f676faf46ca3137a309f002a44a65a87a98da0d130da57c6551a80dded9a60259b8c0fb06d3586e2020babf0de18ed
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz' pcsc-lite_1.9.5-3ubuntu1.debian.tar.xz 19320 SHA512:faa39ebcf5e06bebf76eac1a80e979f071623868a455f76b61ec56a0f10fca456d95f1d7d688cbfa8ca333d5197f865ad0b3f092e2a6c54327abc28c3b5a7a41
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_1.9.5-3ubuntu1.dsc' pcsc-lite_1.9.5-3ubuntu1.dsc 2411 SHA512:5daefcbe6ee55deed7c44f3ad7ef7d852a23c94230be52f454388df16fd2f134498f005e4f05e6d9912b449a5aab44ff667123ff6c3e253eb6b5741b232ede4e
 ```
 
 ### `dpkg` source package: `perl=5.34.0-3ubuntu1.7`

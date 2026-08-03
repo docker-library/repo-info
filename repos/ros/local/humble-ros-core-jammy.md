@@ -569,13 +569,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.12
-'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.tar.xz' distro-info-data_0.52ubuntu0.12.tar.xz 10424 SHA512:d3877bfe0b4f5f9bc4d8f9a82b63049b4f7b25ac7258950eb88a0faefcbe6c5924fb1239fc35bc63256b1e25d1441db7377674e4afc795d64b45349508146284
-'http://security.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.dsc' distro-info-data_0.52ubuntu0.12.dsc 1800 SHA512:4a83e96f7d04bf74f5f5098e1537f015994957f049c7316e884ee44ef90cc2eea77509c56856858174e20fb86a84f09a580c38eefd914f14c91b98cd39d61685
-```
 
 ### `dpkg` source package: `dpkg=1.21.1ubuntu2.6`
 
