@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:478cc33a6266d3363de4bbe16283a48369c3c9e82233477ac79d8a4ab140a33d`
-- Created: `2026-07-29T18:30:18.431010557Z`
+- Image ID: `sha256:d70a7cb6385178917537e1f589e9d3f469c33cc2c38c1a24f3c197e278a87444`
+- Created: `2026-07-31T00:16:25.696833616Z`
 - Virtual Size: ~ 880.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-28T05:13:50Z`
+  - `build-date=2026-07-29T13:46:17Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,9 +32,9 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-07-28T05:13:50Z`
+  - `org.opencontainers.image.created=2026-07-29T13:46:17Z`
   - `org.opencontainers.image.revision=f473c706206356d94dd0dd94948a1be8c065fc47`
-  - `release=1785215492`
+  - `release=1785332632`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=f473c706206356d94dd0dd94948a1be8c065fc47`
@@ -1097,19 +1097,19 @@ $ dnf --quiet download --source --url openldap-2.6.10-1.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.10-1.el10.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-server-9.9p1-23.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-server-9.9p1-25.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
