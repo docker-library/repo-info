@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a4369fb710e348f676614b51cf1db71fe2264f0082b25287523ee081fadd4be`
-- Created: `2026-07-02T06:42:40.971907662Z`
+- Image ID: `sha256:8eff8927baf26bdadf3df8b5a1ff186a6d3f1da09f57c344dffcd7b47680d7b1`
+- Created: `2026-08-04T03:39:22.935528217Z`
 - Virtual Size: ~ 382.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -216,16 +216,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -335,16 +335,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.19.0-r0 description:
+curl-8.20.0-r0 description:
 URL retrival utility and library
 
-curl-8.19.0-r0 webpage:
+curl-8.20.0-r0 webpage:
 https://curl.se/
 
-curl-8.19.0-r0 installed size:
+curl-8.20.0-r0 installed size:
 273 KiB
 
-curl-8.19.0-r0 license:
+curl-8.20.0-r0 license:
 curl
 
 ```
@@ -760,16 +760,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```
