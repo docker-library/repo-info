@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5586a35974e73eb777a034e3b0501450fc311be38114e71572354ee937a3f0b8`
-- Created: `2026-07-02T21:12:28.938772068Z`
-- Virtual Size: ~ 210.93 Mb  
+- Image ID: `sha256:6802b6ddf1098cf4902f7793b2454dd41515176d60fcbfa441839b44e5bb10c1`
+- Created: `2026-07-30T23:17:35.827118968Z`
+- Virtual Size: ~ 211 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.23.tar.xz.asc`
-  - `PHP_SHA256=1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72`
+  - `PHP_VERSION=8.4.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
+  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.24-r0 description:
+imagemagick-libs-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.24-r0 webpage:
+imagemagick-libs-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.24-r0 installed size:
-4261 KiB
+imagemagick-libs-7.1.2.27-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.24-r0 license:
+imagemagick-libs-7.1.2.27-r0 license:
 ImageMagick
 
 ```

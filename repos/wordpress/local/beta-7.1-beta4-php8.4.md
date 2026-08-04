@@ -1,10 +1,10 @@
-# `wordpress:beta-7.1-beta3-apache`
+# `wordpress:beta-7.1-beta4-php8.4-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec9a97d2b9aaa5c90991f4948b49494885f80a0f7b09dd4a302fbbbafd527847`
-- Created: `2026-07-22T21:42:17.594275639Z`
-- Virtual Size: ~ 786.45 Mb  
+- Image ID: `sha256:a1eee1761945912e843ee41877ea8b8861f6061d1c265605e564bb97c48e8975`
+- Created: `2026-07-31T00:08:19.808752592Z`
+- Virtual Size: ~ 792.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.32`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.32.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.32.tar.xz.asc`
-  - `PHP_SHA256=8698ec1f9402fa5e5e872ae3d0916b62f5f27503c1fbfc9cc3521e113355ea92`
+  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
+  - `PHP_VERSION=8.4.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
+  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1095,11 +1095,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.7.1-2`
+### `dpkg` source package: `expat=2.8.2-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.7.1-2`
+- `libexpat1:amd64=2.8.2-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -1108,17 +1108,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.7.1-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.dsc' expat_2.7.1-2.dsc 1964 SHA256:0f6068677eae5a40d223f47cc798210c8227022516d90569f657a793e5b2956f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1.orig.tar.gz' expat_2.7.1.orig.tar.gz 8433717 SHA256:85372797ff0673a8fc4a6be16466bb5a0ca28c0dcf3c6f7ac1686b4a3ba2aabb
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.debian.tar.xz' expat_2.7.1-2.debian.tar.xz 13264 SHA256:3b5417d59688e7759b00af6f92a87415b363ba00f946078201555fa3dd78420d
+$ apt-get source -qq --print-uris expat=2.8.2-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.dsc' expat_2.8.2-1~deb13u1.dsc 1638 SHA256:cb0adcbd159f18b2254ab03cef4e25b538a74d797c473b52b839553445105e46
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2.orig.tar.gz' expat_2.8.2.orig.tar.gz 8462437 SHA256:ca9d7c05560653cb977bfaa1ac54f717919cc0c68f6798b42fe55347c0b0ad52
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.debian.tar.xz' expat_2.8.2-1~deb13u1.debian.tar.xz 14044 SHA256:b9f366d5659d3eceb224f01e9f8bf5535b842ba8adfd7398ea1bdbf57772f695
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-2`
 
@@ -3365,11 +3365,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.95-1`
+### `dpkg` source package: `linux=6.12.96-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.95-1`
+- `linux-libc-dev=6.12.96-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3383,17 +3383,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.95-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95-1.dsc' linux_6.12.95-1.dsc 288306 SHA256:ef7ffb480d44c4109efebc8d658fd0370adabb7dd4dfb0035ca9e1a7d23721cf
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95.orig.tar.xz' linux_6.12.95.orig.tar.xz 151304520 SHA256:82ee332c20307c8e75b59c2779f3d554c592f5efa454bacf1e58daced5199f89
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.95-1.debian.tar.xz' linux_6.12.95-1.debian.tar.xz 1840680 SHA256:ee558061352ea28f1013ff968fe3a3055a07f0ee23297606893d5230dfa3f180
+$ apt-get source -qq --print-uris linux=6.12.96-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.dsc' linux_6.12.96-1.dsc 288306 SHA256:4fca3ebc4d2c1c2c7b88e05dc67fef7a7f539f03b19b4308f61d7ee3e2f1b738
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96.orig.tar.xz' linux_6.12.96.orig.tar.xz 151315096 SHA256:59f9548e0384dbafd08eaf05872576de8de50206f972b091c567a9fc91867ca7
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.debian.tar.xz' linux_6.12.96-1.debian.tar.xz 1845940 SHA256:6052af0c3d43d5676853e25d1a52521d09440fa000dd73c30350783d47271918
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.95-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.95-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.95-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.96-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.96-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.96-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 
