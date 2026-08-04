@@ -1,7 +1,7 @@
 ## `tomcat:9-jre21-temurin`
 
 ```console
-$ docker pull tomcat@sha256:b494de430b4a5c5e50b41f2bb4eee2a7887425d448ba4598f0529dcaaccd0972
+$ docker pull tomcat@sha256:3f754f8165b0d06f1626e8635282fff01e7056e1026cdbc36f292addb849f0e5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -437,112 +437,112 @@ $ docker pull tomcat@sha256:a24951109ef66c17daa29e585a1f23e480e3e77efcb46948e70e
 ### `tomcat:9-jre21-temurin` - linux; riscv64
 
 ```console
-$ docker pull tomcat@sha256:dd6b109ffaf44cac665bafb000cb74444c77a3ca8ec44bc89c9fa54b602d908b
+$ docker pull tomcat@sha256:8e784e60d08a9b62ba49ad6aaed90dce881732d5ee1880a16d026c67d46584fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.0 MB (116039647 bytes)**  
+-	Total Size: **116.0 MB (116049243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e11d11d54c90db2f9406f55e2bdae09d5f4c26356140baf3a83221fdcd0e955c`
+-	Image ID: `sha256:a3a20f9a439ee214de6b1b55f4f0ff275640b81c819d7ccf244dfc85134e262a`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 23 Jun 2026 01:25:37 GMT
+# Fri, 31 Jul 2026 22:05:08 GMT
 ARG RELEASE
-# Tue, 23 Jun 2026 01:25:37 GMT
+# Fri, 31 Jul 2026 22:05:09 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 23 Jun 2026 01:25:38 GMT
+# Fri, 31 Jul 2026 22:05:09 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 23 Jun 2026 01:26:18 GMT
-ADD file:7170cf1f50457fa19167130bbb168bf8fb601a52574716867b67758ab43d5dbb in / 
-# Tue, 23 Jun 2026 01:26:22 GMT
+# Fri, 31 Jul 2026 22:06:18 GMT
+ADD file:92a48184ab69ab31b698d333efd875f6fa0f69b8c6b66fb9364e2c45ad98a3e9 in / 
+# Fri, 31 Jul 2026 22:06:24 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:25:42 GMT
+# Tue, 04 Aug 2026 01:25:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 02 Jul 2026 02:25:42 GMT
+# Tue, 04 Aug 2026 01:25:36 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Jul 2026 02:25:42 GMT
+# Tue, 04 Aug 2026 01:25:36 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 02 Jul 2026 02:25:42 GMT
+# Tue, 04 Aug 2026 01:25:36 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:25:42 GMT
+# Tue, 04 Aug 2026 01:25:36 GMT
 ENV JAVA_VERSION=jdk-21.0.11+10
-# Thu, 02 Jul 2026 02:36:08 GMT
+# Tue, 04 Aug 2026 01:35:13 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e5038aae3ca9ff670bc696496b0728dbd23d280026bad30291cb919221ecfdcb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.11_10.tar.gz';          ;;        arm64)          ESUM='fa23d9d9945053e67bcc7638410eabf1e17a7672c7c95a24f70cd08b8407d36e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.11_10.tar.gz';          ;;        ppc64el)          ESUM='fefb53c4bd687e7a91a9a9809ec80e0862e829cd20513839ad1a9988ddc89482';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.11_10.tar.gz';          ;;        riscv64)          ESUM='f3d8843c5a1b77ded3353e0df85d803d84b9faa5ece20673564e7c47fc4591d9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.11_10.tar.gz';          ;;        s390x)          ESUM='45736e9e14d52619133900a077b4f72d1ebee0fd0bb053da0bca9dce9fc4d916';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.11_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 02 Jul 2026 02:36:09 GMT
+# Tue, 04 Aug 2026 01:35:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 02 Jul 2026 02:36:09 GMT
+# Tue, 04 Aug 2026 01:35:14 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 02 Jul 2026 02:36:09 GMT
+# Tue, 04 Aug 2026 01:35:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV TOMCAT_VERSION=9.0.120
-# Thu, 09 Jul 2026 13:51:01 GMT
+# Tue, 04 Aug 2026 07:34:02 GMT
 ENV TOMCAT_SHA512=07eb6d9639c3e69af81171a16ccff1c19b7fd5b2e87e3646851f0a3f42a4ce3c1bf128fbe40fc978a08935ba4f0400ef3b43ded3e470b9aaf23b97a9e1fa0858
-# Thu, 09 Jul 2026 13:51:02 GMT
+# Tue, 04 Aug 2026 07:55:36 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Thu, 09 Jul 2026 13:51:46 GMT
+# Tue, 04 Aug 2026 07:56:19 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 09 Jul 2026 13:51:55 GMT
+# Tue, 04 Aug 2026 07:56:27 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Thu, 09 Jul 2026 13:51:55 GMT
+# Tue, 04 Aug 2026 07:56:27 GMT
 EXPOSE map[8080/tcp:{}]
-# Thu, 09 Jul 2026 13:51:55 GMT
+# Tue, 04 Aug 2026 07:56:27 GMT
 ENTRYPOINT []
-# Thu, 09 Jul 2026 13:51:55 GMT
+# Tue, 04 Aug 2026 07:56:27 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:d36d9a4ee5b21337a0038d06f00582b458b412ffa7aa3be4086c8692dfab4687`  
-		Last Modified: Tue, 23 Jun 2026 01:35:00 GMT  
-		Size: 31.0 MB (30971606 bytes)  
+	-	`sha256:762baa88da0248ffd5b4e64693b9d04fc144101bcdbcc6dcc7d9a6be2a8b7953`  
+		Last Modified: Fri, 31 Jul 2026 22:22:50 GMT  
+		Size: 31.0 MB (30982563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ac67dd6c068291ec7a10af8483682c929d96d783d13897b916862b7778a69fc`  
-		Last Modified: Thu, 02 Jul 2026 02:28:42 GMT  
-		Size: 17.8 MB (17831597 bytes)  
+	-	`sha256:9204a703f92c86d54bcd269915514fffc107fa6118031ed8c8b4ade32fef8acc`  
+		Last Modified: Tue, 04 Aug 2026 01:28:20 GMT  
+		Size: 17.8 MB (17830256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3352f718b94ca8c996b747ced90987b1692ca8f81f4b45c857e367ca86ccbef`  
-		Last Modified: Thu, 02 Jul 2026 02:38:54 GMT  
-		Size: 52.6 MB (52641562 bytes)  
+	-	`sha256:dd7211ee1972bfa07772afdf59f793485e2d17e58eb142d3321a3aed49a9788a`  
+		Last Modified: Tue, 04 Aug 2026 01:37:47 GMT  
+		Size: 52.6 MB (52641587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5562d564466d74709c621675cd9a6fdf6f357113c4f68842787e32aa4595a685`  
-		Last Modified: Thu, 02 Jul 2026 02:38:46 GMT  
+	-	`sha256:6c4a0ea9123aeecd6fb44a6eae9dfee2e22fb4bb98f26af3e636cfa846f8f87b`  
+		Last Modified: Tue, 04 Aug 2026 01:37:38 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7c6374c7ee67f95ba3c5251cf67489cd3c6841beefe7f47ca2a340d06aed1ec`  
-		Last Modified: Thu, 02 Jul 2026 02:38:45 GMT  
+	-	`sha256:04499a5959142a41ec147068fdf851d998c6d841a41c35535d4e2c944aff778a`  
+		Last Modified: Tue, 04 Aug 2026 01:37:38 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50cd740d6e6e728eccc34e70dfbbbeb3ad202c165fad948d1256433ed9f4773e`  
-		Last Modified: Thu, 09 Jul 2026 13:53:39 GMT  
-		Size: 138.0 B  
+	-	`sha256:c5855fbfaa8f15bc9803ab83547ea3ac3235762d97f6db97a6f14beae1bd3668`  
+		Last Modified: Tue, 04 Aug 2026 07:36:39 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb471451f17ba5d52b15cf9f519fc6b2430e8390334f8b38b47c562b5971f65`  
-		Last Modified: Thu, 09 Jul 2026 13:53:42 GMT  
-		Size: 14.4 MB (14363648 bytes)  
+	-	`sha256:aad1f6a03185d80c1aae5b66863b3037c0e389e42d5a4c4f278c961020928df0`  
+		Last Modified: Tue, 04 Aug 2026 07:58:13 GMT  
+		Size: 14.4 MB (14363685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8e5871aac7c0f95c89ddac8aca8eecee37c1c41af9e68d91c4332191b79e7fd`  
-		Last Modified: Thu, 09 Jul 2026 13:53:40 GMT  
-		Size: 228.6 KB (228591 bytes)  
+	-	`sha256:834f9b431b200270dea8fe122e02e25307d11faace975d0bcb88bf1fed456d6e`  
+		Last Modified: Tue, 04 Aug 2026 07:58:11 GMT  
+		Size: 228.5 KB (228508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -552,25 +552,25 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jre21-temurin` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:71a1aae6b98cd74e606bd4729ed2ff13a50c291dfd17224cc30be358a0811896
+$ docker pull tomcat@sha256:50745b08774218e2f23f6b108b39c8c747f89009501780c4e5a2aee5dca6d148
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3346725 bytes)**  
+-	Total Size: **3.3 MB (3346752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53249afc37706f2eba9fd244003059d355fa7d3a8080396a096d00a188d48314`
+-	Image ID: `sha256:6a5419eaba47b4d60dde8417888ed893cadfeddcb7d1976f42550fb5e21cb799`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c5bd7dae78de70bd13bc30408f1646ac5f720e1f58e0203e98c26e21d031292a`  
-		Last Modified: Thu, 09 Jul 2026 13:53:40 GMT  
-		Size: 3.3 MB (3323542 bytes)  
+	-	`sha256:4ea700262fb6b65ba1c027c27f31c11efa2acd462e38d927fa5fc3e08c17ab10`  
+		Last Modified: Tue, 04 Aug 2026 07:58:12 GMT  
+		Size: 3.3 MB (3323568 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b4c954abf540df94ae7a4204f358860e18999323a3b8f060220b9620872df8ad`  
-		Last Modified: Thu, 09 Jul 2026 13:53:39 GMT  
-		Size: 23.2 KB (23183 bytes)  
+	-	`sha256:8ae96fc447fbc354086f8e816c3c27dca064d51e2776aaddf1e6d17e136f1304`  
+		Last Modified: Tue, 04 Aug 2026 07:58:11 GMT  
+		Size: 23.2 KB (23184 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jre21-temurin` - linux; s390x
