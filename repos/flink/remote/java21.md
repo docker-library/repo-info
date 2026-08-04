@@ -1,7 +1,7 @@
 ## `flink:java21`
 
 ```console
-$ docker pull flink@sha256:618567c703f2021f064da7451481db6ea65d2ce65e6ad3e6b7589ec861d7608b
+$ docker pull flink@sha256:3c44856b7f3b89237cf04006b8a875690ea52fa345fc9dc691f33d44473c7365
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,267 +14,267 @@ $ docker pull flink@sha256:618567c703f2021f064da7451481db6ea65d2ce65e6ad3e6b7589
 ### `flink:java21` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:06603e51c345edbf99e9109a46977f0d60d6c0f476e0b8451f51b7d06a212617
+$ docker pull flink@sha256:2f3f536be0c362172710e9993ebf4a1f31f31da222fc147b96772696570ca5b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **706.7 MB (706727105 bytes)**  
+-	Total Size: **709.1 MB (709144041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afab4f49a6fa15b23b7e993baad8795641168bae820f4dc5e96e137189604146`
+-	Image ID: `sha256:7f911bbd448bc73791b791afb671cc3440586e350122d303f2d47aa26830a483`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 21:24:17 GMT
+# Fri, 31 Jul 2026 20:37:20 GMT
 ARG RELEASE
-# Mon, 22 Jun 2026 21:24:18 GMT
+# Fri, 31 Jul 2026 20:37:20 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 22 Jun 2026 21:24:18 GMT
+# Fri, 31 Jul 2026 20:37:20 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 22 Jun 2026 21:24:20 GMT
-ADD file:8c609c85109d07bf47cf268a175b3be8bbe34fc0c41d15d99b090d099f4dc837 in / 
-# Mon, 22 Jun 2026 21:24:21 GMT
+# Fri, 31 Jul 2026 20:37:22 GMT
+ADD file:d938ff3d4eee15d8600de84bf85eac6ecd0f20bc92dfe305dafbff0bdc974c0f in / 
+# Fri, 31 Jul 2026 20:37:23 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:21:37 GMT
+# Tue, 04 Aug 2026 01:18:05 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 02 Jul 2026 02:21:37 GMT
+# Tue, 04 Aug 2026 01:18:05 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Jul 2026 02:21:37 GMT
+# Tue, 04 Aug 2026 01:18:05 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 02 Jul 2026 02:21:37 GMT
+# Tue, 04 Aug 2026 01:18:05 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:21:37 GMT
+# Tue, 04 Aug 2026 01:18:05 GMT
 ENV JAVA_VERSION=jdk-21.0.11+10
-# Thu, 02 Jul 2026 02:21:41 GMT
+# Tue, 04 Aug 2026 01:18:09 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e5038aae3ca9ff670bc696496b0728dbd23d280026bad30291cb919221ecfdcb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.11_10.tar.gz';          ;;        arm64)          ESUM='fa23d9d9945053e67bcc7638410eabf1e17a7672c7c95a24f70cd08b8407d36e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.11_10.tar.gz';          ;;        ppc64el)          ESUM='fefb53c4bd687e7a91a9a9809ec80e0862e829cd20513839ad1a9988ddc89482';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.11_10.tar.gz';          ;;        riscv64)          ESUM='f3d8843c5a1b77ded3353e0df85d803d84b9faa5ece20673564e7c47fc4591d9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.11_10.tar.gz';          ;;        s390x)          ESUM='45736e9e14d52619133900a077b4f72d1ebee0fd0bb053da0bca9dce9fc4d916';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.11_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 02 Jul 2026 02:21:41 GMT
+# Tue, 04 Aug 2026 01:18:09 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 02 Jul 2026 02:21:41 GMT
+# Tue, 04 Aug 2026 01:18:09 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 02 Jul 2026 02:21:41 GMT
+# Tue, 04 Aug 2026 01:18:09 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz.asc GPG_KEY=E11F792053638C56C98ACFADB5B638DCA5F94E4A CHECK_GPG=true
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Thu, 02 Jul 2026 05:18:06 GMT
+# Tue, 04 Aug 2026 02:18:37 GMT
 WORKDIR /opt/flink
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 USER flink
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Thu, 02 Jul 2026 05:20:19 GMT
+# Tue, 04 Aug 2026 02:19:00 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:ca2678b20700c15185707964d9211b1a6406196114bf675f568b6025d37b3888`  
-		Last Modified: Tue, 23 Jun 2026 01:34:01 GMT  
-		Size: 29.7 MB (29735601 bytes)  
+	-	`sha256:966c395d29cb24a3faf7e04f32878fe5778819d4132daee4f47e2aaf7b9af924`  
+		Last Modified: Fri, 31 Jul 2026 22:22:22 GMT  
+		Size: 29.8 MB (29751109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4659a3f0a10cbdc0c83229ad68d274d301233e350f6ac37acd8b32d57494d2b`  
-		Last Modified: Thu, 02 Jul 2026 02:21:53 GMT  
-		Size: 16.9 MB (16944548 bytes)  
+	-	`sha256:8db609f0511d6a531ae0c608482194102e3b44423827e5087555be1f32a977c3`  
+		Last Modified: Tue, 04 Aug 2026 01:18:22 GMT  
+		Size: 19.3 MB (19345541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:731837b1a3884014378c504ce2435a1a4b03c6b5447f28ad0ef87ffa59a3b579`  
-		Last Modified: Thu, 02 Jul 2026 02:21:55 GMT  
+	-	`sha256:f0b0b9c8c3cda2f2a083b90ee737957c84124b2832310c7add37dbd8e6abcea4`  
+		Last Modified: Tue, 04 Aug 2026 01:18:24 GMT  
 		Size: 53.1 MB (53123202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55a03f4df9eb3b2b6dde23a3ba7c33f29f915d9813d28f742e9e703b3491754e`  
-		Last Modified: Thu, 02 Jul 2026 02:21:52 GMT  
+	-	`sha256:e2acd1ddedbb669f90237c42d72ff6e525f6fb0c41a6bc39c88cf52bcd93b327`  
+		Last Modified: Tue, 04 Aug 2026 01:18:22 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:622a4f311026ef54c349d9581ea611b6840dde68b9b03b8dacfa0ba946cacef5`  
-		Last Modified: Thu, 02 Jul 2026 02:21:53 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:b31e784d031e69160094ca9e6db5b52cebc312e641fb92e44b9ea6c728c5d7f2`  
+		Last Modified: Tue, 04 Aug 2026 01:18:22 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f0dbd71ce2d60e7ef59fb481c12527598f168927282ef330a313e9770105a8a`  
-		Last Modified: Thu, 02 Jul 2026 05:20:50 GMT  
-		Size: 1.3 MB (1323295 bytes)  
+	-	`sha256:cb829c0fc0a35b2e978a4dfd8110b0ab765e749f20fa7feaa2eee8c7cd69ac65`  
+		Last Modified: Tue, 04 Aug 2026 02:19:33 GMT  
+		Size: 1.3 MB (1323774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27b7f82c05a845a0c7ec438f622a11c22a17f5d695e090cc11d3ff4e5ff1ed63`  
-		Last Modified: Thu, 02 Jul 2026 05:20:50 GMT  
-		Size: 1.2 KB (1160 bytes)  
+	-	`sha256:5f5a17ac81e2d52103ae2652ea2954b64b6390a9f477323be1bfeb6db535fe5c`  
+		Last Modified: Tue, 04 Aug 2026 02:19:32 GMT  
+		Size: 1.2 KB (1156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8a30c1acb8aa93819955b0497d195f64429609b8bb943ab4c4dc98e441fa866`  
-		Last Modified: Thu, 02 Jul 2026 05:19:25 GMT  
-		Size: 114.0 B  
+	-	`sha256:ef4a2be5bbd76cef396b6b600162ad45f1e11cf4552035390c4de8b42980df88`  
+		Last Modified: Tue, 04 Aug 2026 02:19:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22c99b5710960a47093327ca8021100eaad0b98180d2ca5d9d99ba6879f2187f`  
-		Last Modified: Thu, 02 Jul 2026 05:21:03 GMT  
-		Size: 605.6 MB (605594507 bytes)  
+	-	`sha256:15eb35a289a74ed73531891ac50cd06993bf8906ffcf90fdabb4e1dad7e34231`  
+		Last Modified: Tue, 04 Aug 2026 02:19:45 GMT  
+		Size: 605.6 MB (605594462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7eefc31dfa62fd9058ce7551982f74a30fc73c6e6da8dff933015ecfb1abf7ba`  
-		Last Modified: Thu, 02 Jul 2026 05:20:51 GMT  
-		Size: 2.2 KB (2237 bytes)  
+	-	`sha256:731ed5d3af2b76728f0a0aae0387c99824f3e39842ba09435ef815dfce2129c9`  
+		Last Modified: Tue, 04 Aug 2026 02:19:34 GMT  
+		Size: 2.2 KB (2240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java21` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:b687da6ade47332bcb1221ebdff0913a1aac4e5019b38cdd08d99bea56e92dd3
+$ docker pull flink@sha256:8c4df027a6c7419aadfbed3fa06b98c4182c1e3ee40559afc04722b27c9e848d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3404140 bytes)**  
+-	Total Size: **3.4 MB (3404166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9dadf8f83f4dbc2357db983413298321029795dadfdbb4c4e42cd25983f41f1`
+-	Image ID: `sha256:175c4ef5ed0f2ddad8f3085ab20905aca31cec2885d2d634fe93d2bf0d966534`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7bb2c4630e6c1d64696a5ef60002c7cfdddc0828f37118425cdb52e3279fe8a9`  
-		Last Modified: Thu, 02 Jul 2026 05:20:50 GMT  
-		Size: 3.4 MB (3380368 bytes)  
+	-	`sha256:78fe1fcf43ea941a3afcf320c41ca637296a238e13454ceddf1641eeb9a2e520`  
+		Last Modified: Tue, 04 Aug 2026 02:19:33 GMT  
+		Size: 3.4 MB (3380394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:13c1b270bfb3017013c3c9c7282d543b84b7f1e231f70e1527004d9849fd1300`  
-		Last Modified: Thu, 02 Jul 2026 05:20:50 GMT  
+	-	`sha256:25023ff488bff5040c7dec12d0904f9d60534ff3f824d0360e4f3082494d0bb0`  
+		Last Modified: Tue, 04 Aug 2026 02:19:32 GMT  
 		Size: 23.8 KB (23772 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:java21` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:4b61aa3df2a9299562d9bf2c9266abbcdfdbc1c62575c7d5786ae36e6501997b
+$ docker pull flink@sha256:b81be5a0a2baf78f2eb65ec5d14fc03bce16d2a94ac02eaab330ff183c01db2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **704.9 MB (704938632 bytes)**  
+-	Total Size: **704.9 MB (704941253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:653f03f8294a457fa2123eaa705701e971fd71dbb61a14416b0d2cf62b9850ce`
+-	Image ID: `sha256:9dab8c66d700633024ed4578d7db2222f7cf29b9c7c7e3ef1ba5c20fc8cf6af5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 21:25:05 GMT
+# Fri, 31 Jul 2026 20:45:33 GMT
 ARG RELEASE
-# Mon, 22 Jun 2026 21:25:05 GMT
+# Fri, 31 Jul 2026 20:45:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 22 Jun 2026 21:25:05 GMT
+# Fri, 31 Jul 2026 20:45:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 22 Jun 2026 21:25:07 GMT
-ADD file:cdc9a547b921f36a32310f732815bbee6c6e4f5bd768ab5d49cdc0aa1b9f4785 in / 
-# Mon, 22 Jun 2026 21:25:07 GMT
+# Fri, 31 Jul 2026 20:45:37 GMT
+ADD file:695c79b2217675519eeed9028b8e5d7ae9915817a49f5bf34e80ad57197f07f6 in / 
+# Fri, 31 Jul 2026 20:45:37 GMT
 CMD ["/bin/bash"]
-# Thu, 02 Jul 2026 02:20:35 GMT
+# Tue, 04 Aug 2026 01:27:58 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 02 Jul 2026 02:20:35 GMT
+# Tue, 04 Aug 2026 01:27:58 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Jul 2026 02:20:35 GMT
+# Tue, 04 Aug 2026 01:27:58 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 02 Jul 2026 02:20:35 GMT
+# Tue, 04 Aug 2026 01:27:58 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 02:20:35 GMT
+# Tue, 04 Aug 2026 01:27:58 GMT
 ENV JAVA_VERSION=jdk-21.0.11+10
-# Thu, 02 Jul 2026 02:20:40 GMT
+# Tue, 04 Aug 2026 01:28:02 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e5038aae3ca9ff670bc696496b0728dbd23d280026bad30291cb919221ecfdcb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.11_10.tar.gz';          ;;        arm64)          ESUM='fa23d9d9945053e67bcc7638410eabf1e17a7672c7c95a24f70cd08b8407d36e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.11_10.tar.gz';          ;;        ppc64el)          ESUM='fefb53c4bd687e7a91a9a9809ec80e0862e829cd20513839ad1a9988ddc89482';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.11_10.tar.gz';          ;;        riscv64)          ESUM='f3d8843c5a1b77ded3353e0df85d803d84b9faa5ece20673564e7c47fc4591d9';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.11_10.tar.gz';          ;;        s390x)          ESUM='45736e9e14d52619133900a077b4f72d1ebee0fd0bb053da0bca9dce9fc4d916';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_s390x_linux_hotspot_21.0.11_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 02 Jul 2026 02:20:40 GMT
+# Tue, 04 Aug 2026 01:28:02 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 02 Jul 2026 02:20:40 GMT
+# Tue, 04 Aug 2026 01:28:02 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 02 Jul 2026 02:20:40 GMT
+# Tue, 04 Aug 2026 01:28:02 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 02 Jul 2026 05:17:39 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 02 Jul 2026 05:17:40 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz.asc GPG_KEY=E11F792053638C56C98ACFADB5B638DCA5F94E4A CHECK_GPG=true
-# Thu, 02 Jul 2026 05:17:40 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 02 Jul 2026 05:17:40 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Jul 2026 05:17:40 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Thu, 02 Jul 2026 05:17:40 GMT
+# Tue, 04 Aug 2026 02:18:29 GMT
 WORKDIR /opt/flink
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 USER flink
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Thu, 02 Jul 2026 05:20:17 GMT
+# Tue, 04 Aug 2026 02:19:01 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:4b987da45db4d6278590ab89840c7167ea397df222f3ee4cdb77c3e15694b1a9`  
-		Last Modified: Tue, 23 Jun 2026 01:34:08 GMT  
-		Size: 28.9 MB (28884180 bytes)  
+	-	`sha256:d23996caa910b8e5029375ee7c7ec02ef8bae3d85194897323e7145071299ac9`  
+		Last Modified: Fri, 31 Jul 2026 22:22:28 GMT  
+		Size: 28.9 MB (28886818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4475bb8ddba9ec9625d934465a03fa921efbea1fd8aff40b3605d9d85b5028e`  
-		Last Modified: Thu, 02 Jul 2026 02:20:54 GMT  
-		Size: 17.0 MB (16951457 bytes)  
+	-	`sha256:d40501aa6065f35c62f51a3adac24cd69021db23b6be3790cc06e85d984f303d`  
+		Last Modified: Tue, 04 Aug 2026 01:28:15 GMT  
+		Size: 17.0 MB (16950948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bfa8304becf1bb05f54254c011a194caa5e83fb46ca04101ddf15c00d4142a1`  
-		Last Modified: Thu, 02 Jul 2026 02:20:55 GMT  
-		Size: 52.3 MB (52314891 bytes)  
+	-	`sha256:da155a57f6201a82fcc6a428ea6cf11db5bd715d1ab51f1e4a609f4ff00f5e81`  
+		Last Modified: Tue, 04 Aug 2026 01:28:16 GMT  
+		Size: 52.3 MB (52314863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1747af856ddb4f793dc019f23a0e80e87ad78ed3829e6e3a4f490dd2938f1643`  
-		Last Modified: Thu, 02 Jul 2026 02:20:53 GMT  
-		Size: 161.0 B  
+	-	`sha256:e6ffd2f8998c8f393f62d0792bd96ba7ae1b0d862070122182ac538504d1b7f9`  
+		Last Modified: Tue, 04 Aug 2026 01:28:14 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed507c913156f1d9395acbd5915eb0a2bb85af7b85502500780e7184e0ded549`  
-		Last Modified: Thu, 02 Jul 2026 02:20:53 GMT  
+	-	`sha256:acaf32fa9272cd80c33f65c6c8f50b0dfe08768f5557c2e5b49301ceb961268c`  
+		Last Modified: Tue, 04 Aug 2026 01:28:14 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a832a05812738cde926b763b634840d24f7afedc9868bd611f9a046596c27f4`  
-		Last Modified: Thu, 02 Jul 2026 05:20:53 GMT  
-		Size: 1.2 MB (1187614 bytes)  
+	-	`sha256:4eeb65950b1bc5ab000537c0e10d6d4d292ab0025b856ee5be6b8e4284a7f45a`  
+		Last Modified: Tue, 04 Aug 2026 02:19:35 GMT  
+		Size: 1.2 MB (1188234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1a4a9b14683c2b0c86f331725943fbf740aaccb7fdd74d962e5079834bc19ca`  
-		Last Modified: Thu, 02 Jul 2026 05:20:53 GMT  
-		Size: 1.2 KB (1159 bytes)  
+	-	`sha256:d48ab8fd11b9992b7107bc9f55337db6cf7f2cd2d8f9acf6ccbd2f3133ec1d12`  
+		Last Modified: Tue, 04 Aug 2026 02:19:35 GMT  
+		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e069cd9291ffac0d5f223428306f0f526c54d51b0a40214bbc646c86d2bb86d7`  
-		Last Modified: Thu, 02 Jul 2026 05:20:53 GMT  
+	-	`sha256:b9311b09e8357ee1bb0d8e12232daf5c60bb4a9874a65002fdbe59e90811427f`  
+		Last Modified: Tue, 04 Aug 2026 02:19:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba2259529c0ed50cf6359d6a10b6144c59f4af85d0ec7ea1e55c519287824714`  
-		Last Modified: Thu, 02 Jul 2026 05:21:06 GMT  
-		Size: 605.6 MB (605594536 bytes)  
+	-	`sha256:c3f46b9d9721b477f144ad0ea40e46f0b60f31cb1b96612b5a361a642c379f0d`  
+		Last Modified: Tue, 04 Aug 2026 02:19:46 GMT  
+		Size: 605.6 MB (605594438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ebfb00e87343a99b85a44cdf5f122586a6656984afdb406eb76cdde7776735e`  
-		Last Modified: Thu, 02 Jul 2026 05:20:54 GMT  
-		Size: 2.2 KB (2236 bytes)  
+	-	`sha256:83021c78b11461ea2415d49e4caa97a2cdc4e46f5beea0c8dc3e63aecfd76795`  
+		Last Modified: Tue, 04 Aug 2026 02:19:37 GMT  
+		Size: 2.2 KB (2240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:java21` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:b5c6371b83f5544791608c71505c5e703181f76f67ac682de22ed772249648cc
+$ docker pull flink@sha256:8701465f3f2f68dc7199f727ff7879f15586d65b5eea0603751cb9d4afa4a140
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3404798 bytes)**  
+-	Total Size: **3.4 MB (3404824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3929d9b8d635d17e60648e2ff08ef20c7f7e12dc026d468bf0a23d8136bb01cd`
+-	Image ID: `sha256:facce11ddea4a5236546f7c2864a7ac53678e4c0517632b5d2cf788748b40293`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e946978cb43838c32239ec49becc908fa0868b6e53c21eba21595ef9c78ea625`  
-		Last Modified: Thu, 02 Jul 2026 05:20:53 GMT  
-		Size: 3.4 MB (3380868 bytes)  
+	-	`sha256:8b422920fa8bc10d1a78abb417d5da8d054bea480eff2a040232326237225f8b`  
+		Last Modified: Tue, 04 Aug 2026 02:19:36 GMT  
+		Size: 3.4 MB (3380894 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1fc294e8d297a59ebae2a0ef2169bd0f53d32e64a3dcb708a9f2f32cad8dcbc2`  
-		Last Modified: Thu, 02 Jul 2026 05:20:53 GMT  
+	-	`sha256:989c2481ca55c7101f39716b7b90a110cd6295927bbf32c0a0c2a47cf8252ce2`  
+		Last Modified: Tue, 04 Aug 2026 02:19:35 GMT  
 		Size: 23.9 KB (23930 bytes)  
 		MIME: application/vnd.in-toto+json
