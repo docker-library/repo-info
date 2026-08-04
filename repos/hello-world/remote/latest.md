@@ -1,11 +1,11 @@
 ## `hello-world:latest`
 
 ```console
-$ docker pull hello-world@sha256:c3cbe1cc1aa588a64951ac6286e0df7b27fe2e6324b1001c619bb358770c0178
+$ docker pull hello-world@sha256:7f4da0fc94bcece205a8c0b6f4d11c8196924654ffe5c4d1aa439b7f632048b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 22
+-	Platforms: 20
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17,8 +17,6 @@ $ docker pull hello-world@sha256:c3cbe1cc1aa588a64951ac6286e0df7b27fe2e6324b1001
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
-	-	unknown; unknown
-	-	linux; mips64le
 	-	unknown; unknown
 	-	linux; ppc64le
 	-	unknown; unknown
@@ -297,51 +295,6 @@ $ docker pull hello-world@sha256:fb038e8f2e79b9c3d69c54bcd4b57218f5aea32fc3e9885
 	-	`sha256:b01c88428724d538ccf6c5b71a0f6803bdc3940a12aec2167cde444afb10f075`  
 		Last Modified: Mon, 23 Mar 2026 21:29:50 GMT  
 		Size: 4.7 KB (4727 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `hello-world:latest` - linux; mips64le
-
-```console
-$ docker pull hello-world@sha256:341e85ad78413d9178a74b6bb436a2d3bc49e14b2b89602c19c0bf7980f0cd2d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 KB (3968 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a9ef7449370b0f71a3aec3557a731ad6be59d1506a0e230bd5314964ab64957`
--	Default Command: `["\/hello"]`
-
-```dockerfile
-# Mon, 23 Mar 2026 21:28:55 GMT
-COPY hello / # buildkit
-# Mon, 23 Mar 2026 21:28:55 GMT
-CMD ["/hello"]
-```
-
--	Layers:
-	-	`sha256:6012bc6cdd67a4dfe2f41c9913b2410cc57cfe99e0b93814bcabfad957fefb8a`  
-		Last Modified: Mon, 23 Mar 2026 21:29:08 GMT  
-		Size: 4.0 KB (3968 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `hello-world:latest` - unknown; unknown
-
-```console
-$ docker pull hello-world@sha256:7ac70f871d3c30a83e42dec5fe60482d640fffb1528e8d762bb53dd629588374
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.8 KB (4782 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7581faa1ec8b5a2b8d7d3ec04cccac85443361ede031ba7df65a0d878aaf2d0`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6cf684a1c304498faec513cea9ce736e473659347a278341e0f0f8a0a5d3dade`  
-		Last Modified: Mon, 23 Mar 2026 21:29:08 GMT  
-		Size: 4.8 KB (4782 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hello-world:latest` - linux; ppc64le
