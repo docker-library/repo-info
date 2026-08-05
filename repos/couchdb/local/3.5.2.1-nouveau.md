@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d60609ccb280b731d2f846ac5c540b5f9f3efd706fac83fa1f0ac1515865402`
-- Created: `2026-07-14T01:44:14.640068753Z`
+- Image ID: `sha256:3731b436f7eb9683a1c53527fcf783646d01cf64761f547be3fe375795fba856`
+- Created: `2026-08-05T00:45:37.139111329Z`
 - Virtual Size: ~ 367.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1886,11 +1886,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.36-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.36-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.110-1+deb13u3`
+### `dpkg` source package: `nss=2:3.110-1+deb13u4`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.110-1+deb13u3`
+- `libnss3:amd64=2:3.110-1+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 
@@ -1902,17 +1902,17 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.110-1+deb13u3
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110-1%2bdeb13u3.dsc' nss_3.110-1+deb13u3.dsc 2350 SHA256:b5b559ea29b1db03a8a9464531a38dd1ede4383e9d98fc5906d6c18809112113
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110.orig.tar.gz' nss_3.110.orig.tar.gz 76616684 SHA256:9cd610c40422a07771b9b45166be2d052ea2f00b605a7928129e1f2071b3ae27
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110-1%2bdeb13u3.debian.tar.xz' nss_3.110-1+deb13u3.debian.tar.xz 25508 SHA256:10995c80cd5e9a22cd0858b4f65ed0cddf1eb55358628ba477dc62d053c7a6fa
+$ apt-get source -qq --print-uris nss=2:3.110-1+deb13u4
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110-1%2bdeb13u4.dsc' nss_3.110-1+deb13u4.dsc 2350 SHA256:45c3eeae75c94da73f8f38630a73fc20673296cd3d689df416a8d4658c1a8d96
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110.orig.tar.gz' nss_3.110.orig.tar.gz 76616684 SHA256:9cd610c40422a07771b9b45166be2d052ea2f00b605a7928129e1f2071b3ae27
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110-1%2bdeb13u4.debian.tar.xz' nss_3.110-1+deb13u4.debian.tar.xz 26148 SHA256:29d935bca3ea867383004f7e0abfcc92a5e956e8c405e4994631e4a7f92a6062
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.110-1+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.110-1+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.110-1+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.110-1+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.110-1+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.110-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-21=21.0.11+10-1~deb13u2`
 
