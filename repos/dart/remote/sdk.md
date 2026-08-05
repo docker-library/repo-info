@@ -1,7 +1,7 @@
 ## `dart:sdk`
 
 ```console
-$ docker pull dart@sha256:6f4ff308a7f39142e618bdec9d1445ff814643b2c27e380befe9ef25af4717b1
+$ docker pull dart@sha256:8d7b6fcd6d2766e167c2b2e569e6411d981ea8b282d5766372859f4a07b24600
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -89,71 +89,71 @@ $ docker pull dart@sha256:d4a3699f239cdbe77f627a07dec7d0023993a095c6eff264fdc948
 ### `dart:sdk` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:70ff9295d9cffa66deab044c0e28b30e08efb8599e47312d82b5b8e727ce47ed
+$ docker pull dart@sha256:ed85203b6e59e196ba2adf9e88290660320c9903eba2948c056135712e339140
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.1 MB (226077199 bytes)**  
+-	Total Size: **226.1 MB (226079182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00453eb6fa353dc5aac2050b7beca6bac26a261602d5b4a37fff7220a1b13ce6`
+-	Image ID: `sha256:09749d00b69bacce046a6edb8328843b2295bc4bdcf9d42c356862ec5f910ba9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 13 Jul 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1783900800'
-# Tue, 14 Jul 2026 02:33:42 GMT
+# Mon, 03 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1785715200'
+# Wed, 05 Aug 2026 01:20:38 GMT
 RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 14 Jul 2026 02:33:43 GMT
+# Wed, 05 Aug 2026 01:20:38 GMT
 RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             TRIPLET="x86_64-linux-gnu" ;             FILES="/lib64/ld-linux-x86-64.so.2" ;;         armhf)             TRIPLET="arm-linux-gnueabihf" ;             FILES="/lib/ld-linux-armhf.so.3                 /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3";;         arm64)             TRIPLET="aarch64-linux-gnu" ;             FILES="/lib/ld-linux-aarch64.so.1                 /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1" ;;         riscv64)             TRIPLET="riscv64-linux-gnu" ;             FILES="/lib/ld-linux-riscv64-lp64d.so.1                 /lib/riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1" ;;         *)             echo "Unsupported architecture" ;             exit 5;;     esac;     FILES="$FILES         /etc/nsswitch.conf         /etc/ssl/certs         /usr/share/ca-certificates         /lib/$TRIPLET/libc.so.6         /lib/$TRIPLET/libdl.so.2         /lib/$TRIPLET/libm.so.6         /lib/$TRIPLET/libnss_dns.so.2         /lib/$TRIPLET/libpthread.so.0         /lib/$TRIPLET/libresolv.so.2         /lib/$TRIPLET/librt.so.1";     for f in $FILES; do         dir=$(dirname "$f");         mkdir -p "/runtime$dir";         cp --archive --link --dereference --no-target-directory "$f" "/runtime$f";     done # buildkit
-# Tue, 14 Jul 2026 02:33:43 GMT
+# Wed, 05 Aug 2026 01:20:38 GMT
 ENV DART_SDK=/usr/lib/dart
-# Tue, 14 Jul 2026 02:33:43 GMT
+# Wed, 05 Aug 2026 01:20:38 GMT
 ENV PATH=/usr/lib/dart/bin:/root/.pub-cache/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 14 Jul 2026 02:33:43 GMT
+# Wed, 05 Aug 2026 01:20:38 GMT
 WORKDIR /root
-# Tue, 14 Jul 2026 02:33:51 GMT
+# Wed, 05 Aug 2026 01:20:47 GMT
 RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=28e47b44cf075f36771046c068bb0d174201cf9c7608744aed1cc23204299c2d;             SDK_ARCH="x64";;         armhf)             DART_SHA256=659fd41329db2c17e5f186c351fff50ac026b0ed1770a6ace712364d309b4a39;             SDK_ARCH="arm";;         arm64)             DART_SHA256=f82c83ece7d168047550dfd4a664e4071ac7c488bddb72dc43102c22d7e0b518;             SDK_ARCH="arm64";;         riscv64)             DART_SHA256=c11cf4764fabac705118c02fc4ee3bf3b7210ac6919329ead8ceed5cf63a4820;             SDK_ARCH="riscv64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.12.2/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin"; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:8b0c60fc22122a8e02a3c7dc27db46ec4b01b60e0c0959df8f52f036a5b48482`  
-		Last Modified: Tue, 14 Jul 2026 00:14:43 GMT  
-		Size: 26.2 MB (26206467 bytes)  
+	-	`sha256:672c0d216bfc857b06e612ddef27e7e627f137e3b1d462ba55fc70cf69be0989`  
+		Last Modified: Tue, 04 Aug 2026 23:52:19 GMT  
+		Size: 26.2 MB (26206372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9b59d60b0778d6438b52311e6042c518dd228d82d38c099a5483d0b4c05501a`  
-		Last Modified: Tue, 14 Jul 2026 02:34:14 GMT  
-		Size: 37.5 MB (37511611 bytes)  
+	-	`sha256:b8f74326b5cdfe3ab818cdf66c72173ce4eb7d0d705112bd1ee0bc0410cc0677`  
+		Last Modified: Wed, 05 Aug 2026 01:21:10 GMT  
+		Size: 37.5 MB (37513688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fc7989d8dcf84fcbf70474aa40200bfecf15db8a37c0abf5f3f26547d2d80e2`  
-		Last Modified: Tue, 14 Jul 2026 02:34:13 GMT  
-		Size: 1.3 MB (1273157 bytes)  
+	-	`sha256:3c5a2be87d373955787b12cf67085dcd55eff208690f50be2fe95b547fe4b17e`  
+		Last Modified: Wed, 05 Aug 2026 01:21:09 GMT  
+		Size: 1.3 MB (1273156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e20ac6001a366bc5a3d411c998636f325b35327356c1b049184ecf5828c2af5`  
-		Last Modified: Tue, 14 Jul 2026 02:34:17 GMT  
-		Size: 161.1 MB (161085932 bytes)  
+	-	`sha256:b65f1bfd861f0500397eb702ff7f3d35b00a06b071835efaece03815d6bc20e8`  
+		Last Modified: Wed, 05 Aug 2026 01:21:12 GMT  
+		Size: 161.1 MB (161085934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `dart:sdk` - unknown; unknown
 
 ```console
-$ docker pull dart@sha256:f0da35966025ac1aae5f4720cb625094b720044cf6b001b85849eac10c3d315e
+$ docker pull dart@sha256:c3d065d95903b9ef4f151ae80e3cead5c8679eeb37169408bc2ff23fa7843b10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.8 KB (20770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bbc5bb7e7895ebae28e0aa6240ad047defc722efc9b634382340d35fdf939a3`
+-	Image ID: `sha256:66695f912de635abc910e9505ad4f1e2d9964aeef45cc6e009c51575ccebc761`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:107e671295534b73040349e2b7c5f00024f8968a7de06fae27b305b8f05a236f`  
-		Last Modified: Tue, 14 Jul 2026 02:34:13 GMT  
+	-	`sha256:e73019034986db262f40450060b4a5c97a4ff79fd778e2dfd4121f809a4bd935`  
+		Last Modified: Wed, 05 Aug 2026 01:21:08 GMT  
 		Size: 20.8 KB (20770 bytes)  
 		MIME: application/vnd.in-toto+json
 
