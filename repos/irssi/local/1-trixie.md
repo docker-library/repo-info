@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a1355ecfb7107f457bc0c9969931516a7d7710384a68f6d5dd359ff88b9f498`
-- Created: `2026-07-14T01:21:27.703031606Z`
-- Virtual Size: ~ 184.06 Mb  
+- Image ID: `sha256:bdc4127c3e7c7d502478df2b2790aec74cc60d3a0ddadb3110b6e6f0596976c7`
+- Created: `2026-08-05T00:20:55.635571278Z`
+- Virtual Size: ~ 183.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -1378,11 +1378,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libdatetime-perl/2:1.65-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libdatetime-perl/2:1.65-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libdatetime-timezone-perl=1:2.65-1+2026b`
+### `dpkg` source package: `libdatetime-timezone-perl=1:2.65-1+2026c`
 
 Binary Packages:
 
-- `libdatetime-timezone-perl=1:2.65-1+2026b`
+- `libdatetime-timezone-perl=1:2.65-1+2026c`
 
 Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 
@@ -1393,17 +1393,17 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:2.65-1+2026b
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026b.dsc' libdatetime-timezone-perl_2.65-1+2026b.dsc 2930 SHA256:fed43fd2325b76f73d2bb94d3d3af31ef6fee941bfb19a6c62d9ffd8b9043f07
+$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:2.65-1+2026c
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026c.dsc' libdatetime-timezone-perl_2.65-1+2026c.dsc 2930 SHA256:14117c160784b505d2ddb8a19a8d673f16bfc6d2e102587580454e7cc9f0a359
 'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65.orig.tar.gz' libdatetime-timezone-perl_2.65.orig.tar.gz 928969 SHA256:019e99ca8e8c655d70d6813b6df3f351c2bee5983e0f4732f18c5788e1d38e62
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026b.debian.tar.xz' libdatetime-timezone-perl_2.65-1+2026b.debian.tar.xz 27360 SHA256:5a8601f245e216d89384e303ea976435f76db5212a93e0e751ef3f57739d32c2
+'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026c.debian.tar.xz' libdatetime-timezone-perl_2.65-1+2026c.debian.tar.xz 31828 SHA256:6c63eb2b5ddf6e65c7a644b94cc331baf1851409c589d9bbb0a91c83359e229d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026b/ (for browsing the source)
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026b/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.65-1+2026b/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026c/ (for browsing the source)
+- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026c/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.65-1+2026c/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdevel-callchecker-perl=0.009-2`
 
