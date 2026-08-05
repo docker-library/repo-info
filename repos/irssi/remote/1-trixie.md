@@ -1,7 +1,7 @@
 ## `irssi:1-trixie`
 
 ```console
-$ docker pull irssi@sha256:688a02f9f48a00257def053f1f862ba2907a22d6309a914f6e660e69fecb2aea
+$ docker pull irssi@sha256:7a8c31ac01ec950705d76e7abc058a793d532e1d708e63860b0bf7b402419395
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -512,54 +512,54 @@ $ docker pull irssi@sha256:720c6c77ff4ba60b81ba6568e0a50061116e0d83c4cd555d0fa09
 ### `irssi:1-trixie` - linux; riscv64
 
 ```console
-$ docker pull irssi@sha256:48c8394b465d62125c037b46030dafdde237557d90e91fa08bb5fb142646e8bc
+$ docker pull irssi@sha256:ba63e426552de5e964b1c3d0a25d4cddcd8fd1924d028f31bb2b06895c186e4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.7 MB (51706138 bytes)**  
+-	Total Size: **51.7 MB (51695028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c11175ee96eac0863d0b1ea64902bb9b015621a9ef6c4498368f522159b3a7cb`
+-	Image ID: `sha256:d0885417aecf3aa55a25af06245f18514ac175e44b3c312e53828a0e805c6691`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Mon, 13 Jul 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1783900800'
-# Tue, 14 Jul 2026 03:39:03 GMT
+# Mon, 03 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1785715200'
+# Wed, 05 Aug 2026 11:51:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 14 Jul 2026 03:39:04 GMT
+# Wed, 05 Aug 2026 11:51:34 GMT
 ENV HOME=/home/user
-# Tue, 14 Jul 2026 03:39:04 GMT
+# Wed, 05 Aug 2026 11:51:34 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Tue, 14 Jul 2026 03:39:04 GMT
+# Wed, 05 Aug 2026 11:51:34 GMT
 ENV LANG=C.UTF-8
-# Tue, 14 Jul 2026 03:39:04 GMT
+# Wed, 05 Aug 2026 11:51:34 GMT
 ENV IRSSI_VERSION=1.4.5
-# Tue, 14 Jul 2026 03:46:01 GMT
+# Wed, 05 Aug 2026 11:58:29 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version # buildkit
-# Tue, 14 Jul 2026 03:46:01 GMT
+# Wed, 05 Aug 2026 11:58:29 GMT
 WORKDIR /home/user
-# Tue, 14 Jul 2026 03:46:01 GMT
+# Wed, 05 Aug 2026 11:58:29 GMT
 USER user
-# Tue, 14 Jul 2026 03:46:01 GMT
+# Wed, 05 Aug 2026 11:58:29 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:3ed37bd5491de4685b6418abd6b83c4b16cc06b7a51e46da7f154c5a149a41a5`  
-		Last Modified: Tue, 14 Jul 2026 00:30:18 GMT  
-		Size: 28.3 MB (28278203 bytes)  
+	-	`sha256:4b662f844c11eb624262cf201f852ccf968e45c6d3c4ec3fa1c5a288fef35ca8`  
+		Last Modified: Wed, 05 Aug 2026 00:57:36 GMT  
+		Size: 28.3 MB (28278118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1340e0d7069bd261cc83414875fd3f5588fdf40b277fb417450062d24d225cc0`  
-		Last Modified: Tue, 14 Jul 2026 03:47:56 GMT  
-		Size: 18.6 MB (18563174 bytes)  
+	-	`sha256:5690af89a4824fcf8914d4d1077ec5024fc4887732d65b6073f17d9b14de059b`  
+		Last Modified: Wed, 05 Aug 2026 12:00:25 GMT  
+		Size: 18.6 MB (18552173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad2ac628019e1a86aca9c40ba6d59372dcc5f3e9150028043e7d4372747f14a`  
-		Last Modified: Tue, 14 Jul 2026 03:47:52 GMT  
-		Size: 3.3 KB (3328 bytes)  
+	-	`sha256:c7461ab7ce6c37ef2d5c3784ee87ebc5c08753eb6221b8c5410ed6b25fa6514c`  
+		Last Modified: Wed, 05 Aug 2026 12:00:20 GMT  
+		Size: 3.3 KB (3334 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54442680d526394b95a078b54a9ecbf769c3810f95956bfc9e3e5b726d76ae79`  
-		Last Modified: Tue, 14 Jul 2026 03:47:54 GMT  
-		Size: 4.9 MB (4861401 bytes)  
+	-	`sha256:0bd120ac16fb10299c27bc476875cfcb598f740c9119f008760cafa8ffbaa9a4`  
+		Last Modified: Wed, 05 Aug 2026 12:00:23 GMT  
+		Size: 4.9 MB (4861371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -569,24 +569,24 @@ CMD ["irssi"]
 ### `irssi:1-trixie` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:18d890db80b611c34cab61fcff0b3b3f248cbf0ef919d7a69502d47187ef936d
+$ docker pull irssi@sha256:31b123cb041b8a528b24ff818e141dbfce8c754894fc44ba6d7b283802b7993f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.6 MB (5598641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1858b304f7f3010a69381c8c8b81ee106dc13a91d34437d49af9378a2af83f95`
+-	Image ID: `sha256:4dfa4ad49f5c32c410baaef7ca0807de63b7e22f29a80e8826a274eab9bece26`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8536b987b7d4713eda56395f1ab2872b69265248ce4241103688e63726e2c7cb`  
-		Last Modified: Tue, 14 Jul 2026 03:47:54 GMT  
+	-	`sha256:267d3bd440657b31f3d607cc6eeb35587639d4a1184114fa2ed877e59089e50b`  
+		Last Modified: Wed, 05 Aug 2026 12:00:23 GMT  
 		Size: 5.6 MB (5579918 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3932587e0eee660c2d5695aed2be4bc10356bdc502a3b9c330d3b0dc41845a0c`  
-		Last Modified: Tue, 14 Jul 2026 03:47:52 GMT  
+	-	`sha256:de36feb186b2b5021c592ae85930d7b8d66410af7a466c3abfa57a89683e8191`  
+		Last Modified: Wed, 05 Aug 2026 12:00:20 GMT  
 		Size: 18.7 KB (18723 bytes)  
 		MIME: application/vnd.in-toto+json
 
