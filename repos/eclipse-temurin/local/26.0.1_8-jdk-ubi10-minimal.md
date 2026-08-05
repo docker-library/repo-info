@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7beb1a4ba5a45ab2f211fddae7eb58e5f401ba05fad1a44978011849b7ec6862`
-- Created: `2026-07-31T00:14:00.351985023Z`
+- Image ID: `sha256:3893828a1a0df43384091830775d0ed8e09bb5429216f3d0e17823fc3461851c`
+- Created: `2026-08-04T21:04:50.17223655Z`
 - Virtual Size: ~ 455.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-26.0.1+8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-29T13:46:17Z`
+  - `build-date=2026-08-03T17:40:34Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-07-29T13:46:17Z`
-  - `org.opencontainers.image.revision=f473c706206356d94dd0dd94948a1be8c065fc47`
-  - `release=1785332632`
+  - `org.opencontainers.image.created=2026-08-03T17:40:34Z`
+  - `org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
+  - `release=1785778687`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f473c706206356d94dd0dd94948a1be8c065fc47`
+  - `vcs-ref=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -1145,26 +1145,26 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url p11-kit-0.26.2-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.2-1.el10.src.rpm
+$ dnf --quiet download --source --url p11-kit-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
-### `rpm` package: `p11-kit-trust-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url p11-kit-trust-0.26.2-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.2-1.el10.src.rpm
+$ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `pam-1.6.1-9.el10.x86_64`
@@ -1205,12 +1205,7 @@ Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-l
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url policycoreutils-3.10-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.10-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `popt-1.19-8.el10.x86_64`
 
@@ -1559,13 +1554,13 @@ Licenses (from `rpm --query`): GPL-2.0-only AND GPL-2.0-or-later AND BSD-2-Claus
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.7.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.12.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.7.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.12.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
