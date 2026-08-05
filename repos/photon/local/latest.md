@@ -713,13 +713,13 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-trust-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
@@ -977,13 +977,13 @@ Licenses (from `rpm --query`): GPL-2.0-only AND GPL-2.0-or-later AND BSD-2-Claus
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.7.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.12.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.7.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.12.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
