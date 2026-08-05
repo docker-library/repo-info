@@ -1,18 +1,18 @@
-# `hylang:1.3.0-python3.14-alpine3.24`
+# `hylang:1.3.1-python3.14-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ffb44c64e5fe7e0932ae52269b18ba298099409d53b2ca90b9923e21a5bc4882`
-- Created: `2026-06-16T01:22:24.328402242Z`
-- Virtual Size: ~ 59.6 Mb  
+- Image ID: `sha256:b75e23cbfb437c525828db1b2ad4d38e8aeac847be4f1ab82113760f60907120`
+- Created: `2026-08-05T17:10:49.72763769Z`
+- Virtual Size: ~ 59.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.6`
-  - `PYTHON_SHA256=143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63`
-  - `HY_VERSION=1.3.0`
+  - `PYTHON_VERSION=3.14.7`
+  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
+  - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
 ## `apk` (`.apk`-based packages)
@@ -309,16 +309,16 @@ Apache-2.0
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -445,16 +445,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

@@ -1,10 +1,10 @@
-# `hylang:1.3.0-python3.12-bookworm`
+# `hylang:1.3.1-python3.12-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dedb3a49f8246a6b3f10706a8e9bb17af09d0f57326368c39adf3735d3add625`
-- Created: `2026-07-14T02:46:35.969224561Z`
-- Virtual Size: ~ 135.22 Mb  
+- Image ID: `sha256:6364e41074b6a9ff7a7a18b415a326b0d47a7f552c8c23d05aa84cc1e67a6bb3`
+- Created: `2026-08-05T15:58:18.406109619Z`
+- Virtual Size: ~ 135.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -14,7 +14,7 @@
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.13`
   - `PYTHON_SHA256=c08bc65a81971c1dd5783182826503369466c7e67374d1646519adf05207b684`
-  - `HY_VERSION=1.3.0`
+  - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
 ## `dpkg` (`.deb`-based packages)

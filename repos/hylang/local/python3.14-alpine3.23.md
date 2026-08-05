@@ -1,18 +1,18 @@
-# `hylang:1.3.0-python3.14-alpine3.23`
+# `hylang:1.3.1-python3.14-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d027954a73bd8d07a4d25f45fbc5b814a1d629682b6e99c6ef970d9142748ce9`
-- Created: `2026-06-22T20:26:49.089285306Z`
-- Virtual Size: ~ 59.57 Mb  
+- Image ID: `sha256:0aea4d7ee81832dd8c337e4a67bb7413d9f3b78d081f4ac92897568cfd59b6e1`
+- Created: `2026-08-05T17:10:56.074102776Z`
+- Virtual Size: ~ 59.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.6`
-  - `PYTHON_SHA256=143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63`
-  - `HY_VERSION=1.3.0`
+  - `PYTHON_VERSION=3.14.7`
+  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
+  - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
 ## `apk` (`.apk`-based packages)
@@ -445,16 +445,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
