@@ -1,10 +1,10 @@
-# `adminer:5.5.0`
+# `adminer:5.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aac328f9d090609ae3f830842adae553a8d1529c9e29faf89900d7e98d9d7f6a`
-- Created: `2026-07-30T23:19:10.812250913Z`
-- Virtual Size: ~ 115.85 Mb  
+- Image ID: `sha256:6154fd226a3387105606e7470f8883fa303bfd974b6f9557c48e78cf631676e3`
+- Created: `2026-08-03T17:48:02.850333014Z`
+- Virtual Size: ~ 115.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -21,9 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
   - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
-  - `ADMINER_VERSION=5.5.0`
-  - `ADMINER_DOWNLOAD_SHA256=d7494bb10abc7c5c7709fd134ab1bd6ebd3b37aabef6d11c42985209864e4dc9`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=df469c31699848c7523f67204530bd7e3126c4f5048107f526232ccc5d0fe1f7`
+  - `ADMINER_VERSION=5.5.1`
+  - `ADMINER_DOWNLOAD_SHA256=f2c70c6403a042d554be1dd8d69b6f6270a97e5b40d2fb7626f46aad821e9a18`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=dfac9604fc044e0856fbcacd587db9540df4e67d53a180377f51b9a228d7b136`
 
 ## `apk` (`.apk`-based packages)
 
