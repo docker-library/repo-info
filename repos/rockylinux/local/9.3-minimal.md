@@ -93,7 +93,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dejavu-sans-fonts-2.37-18.el9.noarch
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/d/dejavu-fonts-2.37-18.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/d/dejavu-fonts-2.37-18.el9.src.rpm
 ```
 
 ### `rpm` package: `dnf-data-4.14.0-8.el9.noarch`
@@ -122,7 +122,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
 ### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
@@ -133,7 +133,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gawk-5.1.0-6.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/gawk-5.1.0-6.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/gawk-5.1.0-6.el9.src.rpm
 ```
 
 ### `rpm` package: `gdbm-libs-1.19-4.el9.x86_64`
@@ -174,7 +174,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gmp-6.2.0-13.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/gmp-6.2.0-13.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/gmp-6.2.0-13.el9.src.rpm
 ```
 
 ### `rpm` package: `gnupg2-2.3.3-4.el9.x86_64`
@@ -197,7 +197,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gobject-introspection-1.68.0-11.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/gobject-introspection-1.68.0-11.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/gobject-introspection-1.68.0-11.el9.src.rpm
 ```
 
 ### `rpm` package: `gpgme-1.15.1-6.el9.x86_64`
@@ -208,7 +208,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gpgme-1.15.1-6.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/gpgme-1.15.1-6.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/gpgme-1.15.1-6.el9.src.rpm
 ```
 
 ### `rpm` package: `grep-3.6-5.el9.x86_64`
@@ -219,7 +219,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url grep-3.6-5.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/grep-3.6-5.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/grep-3.6-5.el9.src.rpm
 ```
 
 ### `rpm` package: `gzip-1.12-1.el9.x86_64`
@@ -230,7 +230,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gzip-1.12-1.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/g/gzip-1.12-1.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/g/gzip-1.12-1.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -241,7 +241,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url json-c-0.14-11.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/j/json-c-0.14-11.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/j/json-c-0.14-11.el9.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.6.3-1.el9.x86_64`
@@ -252,7 +252,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url keyutils-libs-1.6.3-1.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/k/keyutils-1.6.3-1.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/k/keyutils-1.6.3-1.el9.src.rpm
 ```
 
 ### `rpm` package: `krb5-libs-1.21.1-1.el9.x86_64`
@@ -269,7 +269,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-font-en-3.0-16.el9.noarch`
@@ -280,7 +280,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-font-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-3.0-16.el9.noarch`
@@ -291,7 +291,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.3.1-3.el9.x86_64`
@@ -314,7 +314,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libassuan-2.5.5-3.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libassuan-2.5.5-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libassuan-2.5.5-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libattr-2.5.1-3.el9.x86_64`
@@ -325,7 +325,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libattr-2.5.1-3.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/a/attr-2.5.1-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/a/attr-2.5.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libblkid-2.37.4-15.el9.x86_64`
@@ -354,7 +354,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcap-ng-0.8.2-7.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libcap-ng-0.8.2-7.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libcap-ng-0.8.2-7.el9.src.rpm
 ```
 
 ### `rpm` package: `libcom_err-1.46.5-3.el9.x86_64`
@@ -407,7 +407,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libffi-3.4.2-8.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libffi-3.4.2-8.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libffi-3.4.2-8.el9.src.rpm
 ```
 
 ### `rpm` package: `libgcc-11.4.1-2.1.el9.x86_64`
@@ -430,7 +430,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgpg-error-1.42-5.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libgpg-error-1.42-5.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libgpg-error-1.42-5.el9.src.rpm
 ```
 
 ### `rpm` package: `libidn2-2.3.0-7.el9.x86_64`
@@ -441,7 +441,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libidn2-2.3.0-7.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libidn2-2.3.0-7.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libidn2-2.3.0-7.el9.src.rpm
 ```
 
 ### `rpm` package: `libksba-1.5.1-6.el9_1.x86_64`
@@ -458,7 +458,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libmodulemd-2.13.0-2.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libmodulemd-2.13.0-2.el9.src.rpm
 ```
 
 ### `rpm` package: `libmount-2.37.4-15.el9.x86_64`
@@ -481,7 +481,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libpeas-1.30.0-4.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libpeas-1.30.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
@@ -492,7 +492,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpsl-0.21.1-5.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libpsl-0.21.1-5.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libpsl-0.21.1-5.el9.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.4-8.el9.x86_64`
@@ -503,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpwquality-1.4.4-8.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libpwquality-1.4.4-8.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libpwquality-1.4.4-8.el9.src.rpm
 ```
 
 ### `rpm` package: `librepo-1.14.5-1.el9.x86_64`
@@ -520,7 +520,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libreport-filesystem-2.15.2-6.el9.rocky.0.2.noarch
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libreport-2.15.2-6.el9.rocky.0.2.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libreport-2.15.2-6.el9.rocky.0.2.src.rpm
 ```
 
 ### `rpm` package: `libselinux-3.5-1.el9.x86_64`
@@ -549,7 +549,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsigsegv-2.13-4.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libsigsegv-2.13-4.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libsigsegv-2.13-4.el9.src.rpm
 ```
 
 ### `rpm` package: `libsmartcols-2.37.4-15.el9.x86_64`
@@ -596,7 +596,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunistring-0.9.10-15.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libunistring-0.9.10-15.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libunistring-0.9.10-15.el9.src.rpm
 ```
 
 ### `rpm` package: `libutempter-1.2.1-6.el9.x86_64`
@@ -607,7 +607,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libutempter-1.2.1-6.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libutempter-1.2.1-6.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libutempter-1.2.1-6.el9.src.rpm
 ```
 
 ### `rpm` package: `libuuid-2.37.4-15.el9.x86_64`
@@ -624,7 +624,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libverto-0.3.2-3.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libverto-0.3.2-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libverto-0.3.2-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libxcrypt-4.4.18-3.el9.x86_64`
@@ -635,7 +635,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libxml2-2.9.13-4.el9.x86_64`
@@ -652,7 +652,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libyaml-0.2.5-7.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/libyaml-0.2.5-7.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/libyaml-0.2.5-7.el9.src.rpm
 ```
 
 ### `rpm` package: `libzstd-1.5.1-2.el9.x86_64`
@@ -669,7 +669,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lua-libs-5.4.4-4.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/lua-5.4.4-4.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/lua-5.4.4-4.el9.src.rpm
 ```
 
 ### `rpm` package: `lz4-libs-1.9.3-5.el9.x86_64`
@@ -680,7 +680,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.3-5.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/l/lz4-1.9.3-5.el9.src.rpm
 ```
 
 ### `rpm` package: `microdnf-3.9.1-3.el9.x86_64`
@@ -691,7 +691,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url microdnf-3.9.1-3.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/m/microdnf-3.9.1-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/m/microdnf-3.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `mpfr-4.1.0-7.el9.x86_64`
@@ -726,7 +726,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url npth-1.6-8.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/n/npth-1.6-8.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/n/npth-1.6-8.el9.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.6.3-1.el9.x86_64`
@@ -791,7 +791,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url popt-1.18-8.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/p/popt-1.18-8.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/p/popt-1.18-8.el9.src.rpm
 ```
 
 ### `rpm` package: `publicsuffix-list-dafsa-20210518-3.el9.noarch`
@@ -802,7 +802,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url publicsuffix-list-dafsa-20210518-3.el9.noarch
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/p/publicsuffix-list-20210518-3.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -813,7 +813,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url readline-8.1-4.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/r/readline-8.1-4.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/r/readline-8.1-4.el9.src.rpm
 ```
 
 ### `rpm` package: `rocky-gpg-keys-9.3-1.1.el9.noarch`
@@ -902,7 +902,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/x/xz-5.2.5-8.el9_0.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
@@ -913,5 +913,5 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url zlib-1.2.11-40.el9
-http://mirror.siena.edu/rocky/9.8/BaseOS/source/tree/Packages/z/zlib-1.2.11-40.el9.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/9.8/BaseOS/source/tree/Packages/z/zlib-1.2.11-40.el9.src.rpm
 ```
