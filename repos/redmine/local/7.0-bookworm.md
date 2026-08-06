@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:398d8d091fa3ef506a9ac25dace1775443347b4276cd56fb1a68297101da17d9`
-- Created: `2026-07-22T20:50:38.816638938Z`
-- Virtual Size: ~ 713.89 Mb  
+- Image ID: `sha256:c7380fdc2ec2ff19da1bad487893464e541d15337978090a434e50438113d4ac`
+- Created: `2026-08-05T01:50:43.584221067Z`
+- Virtual Size: ~ 715.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1742,15 +1742,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u12`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u13`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u12`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u12`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u12`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u12`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u12`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u13`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u13`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u13`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u13`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u13`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1781,13 +1781,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u13
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u13.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u13.dsc 5134 SHA256:5c8b1c18631110ad370fa42a71e2512ebcf2a7b8a5b5554287e04fb259517531
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u13.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u13.debian.tar.xz 368032 SHA256:c90c29b2d46525513b471b1522c6187a25353e3a4101f4a10aa24ac3d741251f
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u12/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u13/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u13/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 
