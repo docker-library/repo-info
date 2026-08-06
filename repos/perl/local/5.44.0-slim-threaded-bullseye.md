@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:56ef0561a24c3f4f689e7b100752bf0309a349404ed0f74ea8448fab928ff9a5`
-- Created: `2026-07-22T18:41:08.022081448Z`
+- Image ID: `sha256:e056129992627225b7ae5e2f6f4f5f580ac47ffa8485e7b409406f66c179b13a`
+- Created: `2026-08-05T00:54:52.747927322Z`
 - Virtual Size: ~ 177.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1497,11 +1497,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.259-1`
+### `dpkg` source package: `linux=5.10.262-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.259-1`
+- `linux-libc-dev:amd64=5.10.262-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1517,17 +1517,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.259-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.259-1.dsc' linux_5.10.259-1.dsc 193221 SHA256:564040abcb53b72de34044b9a4433092a1f7f721420276d6f3e62457fbddcc53
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.259.orig.tar.xz' linux_5.10.259.orig.tar.xz 122193944 SHA256:eb46eb4553f655eba232db67415fbfb82de34a348768eddefebe77a88f9bb574
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.259-1.debian.tar.xz' linux_5.10.259-1.debian.tar.xz 1802400 SHA256:af96af51ac3d7a31d95dffd14d0a5b6160fb5cf8e7103a8b1992f5958b77891a
+$ apt-get source -qq --print-uris linux=5.10.262-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.262-1.dsc' linux_5.10.262-1.dsc 193221 SHA256:573d73cce15a3ac06ae030c2678cbb66217a42cf9afc5a036c611f1a205dd316
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.262.orig.tar.xz' linux_5.10.262.orig.tar.xz 122205276 SHA256:e03766e4b2c246a20c9e2770aa599ee25c336d33b31c0980950230634e195339
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.262-1.debian.tar.xz' linux_5.10.262-1.debian.tar.xz 1814852 SHA256:117a1e100275833b98b14b0af5babf9f5996190c87fe489f00cc5ec9f953ce3a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.259-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.259-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.259-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.262-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.262-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.262-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2226,11 +2226,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.2.5-2.1~deb11u1`
+### `dpkg` source package: `xz-utils=5.2.5-2.1~deb11u2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.2.5-2.1~deb11u1`
+- `liblzma5:amd64=5.2.5-2.1~deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -2253,18 +2253,17 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.2.5-2.1~deb11u1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-2.1%7edeb11u1.dsc' xz-utils_5.2.5-2.1~deb11u1.dsc 2681 SHA256:68a2702d252ab75789130fc9d2f48b9b38fc0181990c42a947b0d923d9d1922a
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz' xz-utils_5.2.5.orig.tar.xz 1148824 SHA256:3e1e518ffc912f86608a8cb35e4bd41ad1aec210df2a47aaa1f95e7f5576ef56
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz.asc' xz-utils_5.2.5.orig.tar.xz.asc 833 SHA256:6efc0075a58912e640119d2b52ef7d1518b260d8720fadc73df21ab7fc727624
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-2.1%7edeb11u1.debian.tar.xz' xz-utils_5.2.5-2.1~deb11u1.debian.tar.xz 34948 SHA256:07627e4c7a50ef91d64c177626507afd6107f44e27f4aacb5e41151d1399ff4f
+$ apt-get source -qq --print-uris xz-utils=5.2.5-2.1~deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.5-2.1%7edeb11u2.dsc' xz-utils_5.2.5-2.1~deb11u2.dsc 2279 SHA256:53e30ae028bdf6966db2fafd4397ee0cfaf3ee2c3f3116ae9a69e1aaba5f5301
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.5.orig.tar.gz' xz-utils_5.2.5.orig.tar.gz 1800720 SHA256:2e0a85d107b83832d370470b0ac6fc246734e78aed0711af58c981c0f39370df
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.5-2.1%7edeb11u2.debian.tar.xz' xz-utils_5.2.5-2.1~deb11u2.debian.tar.xz 35928 SHA256:79a11483d477231a6d7f35655aebd95fe06beece4be76df47792b309c214fab2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.2.5-2.1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.2.5-2.1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.2.5-2.1~deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.2.5-2.1~deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.2.5-2.1~deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.2.5-2.1~deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2+deb11u2`
 
