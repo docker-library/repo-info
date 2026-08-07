@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae1c28e4cf8432240c5e39e59d5959a5375d2dd53998705dadbf4d48788be147`
-- Created: `2026-07-14T01:44:27.689355506Z`
-- Virtual Size: ~ 847.88 Mb  
+- Image ID: `sha256:8fc3fc26fee0c74bbf1eb16ec881ea17ca04860daec88ca1187d8007cd926e79`
+- Created: `2026-08-05T00:45:42.348505903Z`
+- Virtual Size: ~ 847.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -240,13 +240,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.2.37-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.2.37-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.20.23-1~deb13u1`
+### `dpkg` source package: `bind9=1:9.20.26-1~deb13u1`
 
 Binary Packages:
 
-- `bind9-dnsutils=1:9.20.23-1~deb13u1`
-- `bind9-host=1:9.20.23-1~deb13u1`
-- `bind9-libs:amd64=1:9.20.23-1~deb13u1`
+- `bind9-dnsutils=1:9.20.26-1~deb13u1`
+- `bind9-host=1:9.20.26-1~deb13u1`
+- `bind9-libs:amd64=1:9.20.26-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -261,18 +261,17 @@ Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.20.23-1~deb13u1
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.23-1%7edeb13u1.dsc' bind9_9.20.23-1~deb13u1.dsc 3197 SHA256:96fd588129489993b5f32b1e96f2787797f978950d4aa00d1ad7370e3c642eb0
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.23.orig.tar.xz' bind9_9.20.23.orig.tar.xz 5837532 SHA256:5d4475aed3f9e500ef554b2b14d972bdb83d33de214a9b3be92918ea46908371
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.23.orig.tar.xz.asc' bind9_9.20.23.orig.tar.xz.asc 833 SHA256:db7a5ba95b4c313014b182638c050f28fc081f5bbf7ac0ba2a88306fec33ee24
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.23-1%7edeb13u1.debian.tar.xz' bind9_9.20.23-1~deb13u1.debian.tar.xz 62240 SHA256:ab489983e983608b4afc9469cd6a862dac863d0634ca8e521532d29d9646e8b0
+$ apt-get source -qq --print-uris bind9=1:9.20.26-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.26-1%7edeb13u1.dsc' bind9_9.20.26-1~deb13u1.dsc 2953 SHA256:b10b99ce94a98395328da4a7b66954fb90dfe71a6355b01cb0749e9d6af73eba
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.26.orig.tar.xz' bind9_9.20.26.orig.tar.xz 5918032 SHA256:55248def0f870c4c46b3de72978ea972615131516663188a4564dca1d20bf350
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.26-1%7edeb13u1.debian.tar.xz' bind9_9.20.26-1~deb13u1.debian.tar.xz 62424 SHA256:abbd2aa72a67d631d9d9fb8f6af15872a1ee7b5f1ef04018242ca5be4d174997
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.20.23-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.20.23-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.20.23-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.20.26-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.20.26-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.20.26-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -739,11 +738,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.7.1-2`
+### `dpkg` source package: `expat=2.8.2-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.7.1-2`
+- `libexpat1:amd64=2.8.2-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -752,17 +751,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.7.1-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.dsc' expat_2.7.1-2.dsc 1964 SHA256:0f6068677eae5a40d223f47cc798210c8227022516d90569f657a793e5b2956f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1.orig.tar.gz' expat_2.7.1.orig.tar.gz 8433717 SHA256:85372797ff0673a8fc4a6be16466bb5a0ca28c0dcf3c6f7ac1686b4a3ba2aabb
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.debian.tar.xz' expat_2.7.1-2.debian.tar.xz 13264 SHA256:3b5417d59688e7759b00af6f92a87415b363ba00f946078201555fa3dd78420d
+$ apt-get source -qq --print-uris expat=2.8.2-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.dsc' expat_2.8.2-1~deb13u1.dsc 1638 SHA256:cb0adcbd159f18b2254ab03cef4e25b538a74d797c473b52b839553445105e46
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2.orig.tar.gz' expat_2.8.2.orig.tar.gz 8462437 SHA256:ca9d7c05560653cb977bfaa1ac54f717919cc0c68f6798b42fe55347c0b0ad52
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.debian.tar.xz' expat_2.8.2-1~deb13u1.debian.tar.xz 14044 SHA256:b9f366d5659d3eceb224f01e9f8bf5535b842ba8adfd7398ea1bdbf57772f695
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
