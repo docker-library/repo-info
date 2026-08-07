@@ -1,10 +1,10 @@
-# `wordpress:beta-7.1-beta4-php8.5-fpm`
+# `wordpress:beta-7.1-RC1-php8.5-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0600fc774ed61b08ae0d006d16069fdc92504dde00c0a98e49e096674b516913`
-- Created: `2026-07-31T00:09:04.412224427Z`
-- Virtual Size: ~ 799.85 Mb  
+- Image ID: `sha256:67ef3f4711ff87f6c3ca98486ad61d600fe4f4dd34494ce65ae5e4b3d4a07bfb`
+- Created: `2026-08-06T22:30:31.86259086Z`
+- Virtual Size: ~ 799.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -103,11 +103,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=3.12.1-1`
+### `dpkg` source package: `aom=3.12.1-1+deb13u1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.12.1-1`
+- `libaom3:amd64=3.12.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -121,17 +121,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.12.1-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.dsc' aom_3.12.1-1.dsc 2552 SHA256:696b9e32b3fe787e8598811e8b680b829b93e65781e0328f8b5056619454b408
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.debian.tar.xz' aom_3.12.1-1.debian.tar.xz 20464 SHA256:ac01db2f3d78d8ba39d5d7546ce4fcc1fa827e7b92387d7234d140d8d9afa5f9
+$ apt-get source -qq --print-uris aom=3.12.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.dsc' aom_3.12.1-1+deb13u1.dsc 2235 SHA256:796b09717499ced9d82820fad950a31532d7c193a2a764617df05c9aa68090cb
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.debian.tar.xz' aom_3.12.1-1+deb13u1.debian.tar.xz 24788 SHA256:e94efe3356d69b0056dd95746f3cf29551130766b3f3503365e40e9d1c8f8ee7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/3.12.1-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.12.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.12.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/3.12.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.0.3`
 
@@ -2135,11 +2135,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.75-10+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.75-10+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.15-1`
+### `dpkg` source package: `libde265=1.0.15-1+deb13u1`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.15-1+b3`
+- `libde265-0:amd64=1.0.15-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -2154,17 +2154,17 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libde265=1.0.15-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.dsc' libde265_1.0.15-1.dsc 1872 SHA256:41fe11a559a57a8cdf19978c55f58f0d83de78c61e1367f8b73d05bdcce416eb
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.debian.tar.xz' libde265_1.0.15-1.debian.tar.xz 136584 SHA256:70cb236e55972d2d1bc062bacd68320ad402e0d378c79c99224a512208c90e5b
+$ apt-get source -qq --print-uris libde265=1.0.15-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.dsc' libde265_1.0.15-1+deb13u1.dsc 1904 SHA256:0e1bff0db1fbd8c827e3a665174da6667411f598454d806bc59ff3e1f2f74d46
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.debian.tar.xz' libde265_1.0.15-1+deb13u1.debian.tar.xz 145088 SHA256:721ab671ae27928da346206ec1e66cfa62cf1d119d0d6f9b6f96d0b17fa3eea7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libde265/1.0.15-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.15-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.23-2`
 
@@ -3266,11 +3266,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.96-1`
+### `dpkg` source package: `linux=6.12.100-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.96-1`
+- `linux-libc-dev=6.12.100-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3284,17 +3284,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.96-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.dsc' linux_6.12.96-1.dsc 288306 SHA256:4fca3ebc4d2c1c2c7b88e05dc67fef7a7f539f03b19b4308f61d7ee3e2f1b738
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96.orig.tar.xz' linux_6.12.96.orig.tar.xz 151315096 SHA256:59f9548e0384dbafd08eaf05872576de8de50206f972b091c567a9fc91867ca7
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.debian.tar.xz' linux_6.12.96-1.debian.tar.xz 1845940 SHA256:6052af0c3d43d5676853e25d1a52521d09440fa000dd73c30350783d47271918
+$ apt-get source -qq --print-uris linux=6.12.100-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.dsc' linux_6.12.100-1.dsc 290418 SHA256:c31dab9bf96a8bd7603f1afd953f1f97fc5d1e9c0820ffac1fa1d1ad1e2f4dd1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100.orig.tar.xz' linux_6.12.100.orig.tar.xz 151348476 SHA256:d352d8271fafd61d76b01326fbddef24848d498adb8eace1cc208d04663cc22e
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.debian.tar.xz' linux_6.12.100-1.debian.tar.xz 1864380 SHA256:c345b6b78e43f8e80580e15869d17828ed8eff44ac62e00965c2033006230a15
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.96-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.96-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.96-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.100-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.100-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.100-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
