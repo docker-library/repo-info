@@ -1,17 +1,17 @@
-# `python:3.14.6-alpine3.24`
+# `python:3.14.7-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ff4111a89e61a65f2246d5687bbba5c735c6d9e0ba7d488cf9b404154fec262`
-- Created: `2026-06-16T00:22:30.14998675Z`
-- Virtual Size: ~ 47.62 Mb  
+- Image ID: `sha256:d72efe4a0d6f3b328d4111a76a4cc0964ff69dbb86256425eba4e1d37854d5fb`
+- Created: `2026-08-05T16:30:06.20756765Z`
+- Virtual Size: ~ 47.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.6`
-  - `PYTHON_SHA256=143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63`
+  - `PYTHON_VERSION=3.14.7`
+  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
 
 ## `apk` (`.apk`-based packages)
 
@@ -307,16 +307,16 @@ Apache-2.0
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -443,16 +443,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

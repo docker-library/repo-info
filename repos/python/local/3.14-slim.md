@@ -1,17 +1,17 @@
-# `python:3.14.6-slim-trixie`
+# `python:3.14.7-slim-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:88a1ba8985b8bf15ef34ea2a0744b188c61defda367077758abacb8ca3f31d96`
-- Created: `2026-07-14T02:07:16.728323656Z`
-- Virtual Size: ~ 119.31 Mb  
+- Image ID: `sha256:a41c1f663be90eb31af9864d1e1ccdaa91b6af11776b7ade1c05915e76da7aea`
+- Created: `2026-08-05T16:33:44.841549973Z`
+- Virtual Size: ~ 119.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.6`
-  - `PYTHON_SHA256=143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63`
+  - `PYTHON_VERSION=3.14.7`
+  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
 
 ## `dpkg` (`.deb`-based packages)
 
