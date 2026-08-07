@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef8c8300b15fdf739e724d7e0723ec44067afa1761032ea2243b0c965ce0fc61`
-- Created: `2026-07-31T01:13:54.095101739Z`
-- Virtual Size: ~ 727.62 Mb  
+- Image ID: `sha256:ef25eac7a0cad37619de1b30f97ba67e959072ad636dbcb9ae83d64d0735cbb0`
+- Created: `2026-08-04T21:16:38.756065445Z`
+- Virtual Size: ~ 727.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.6.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-07-29T13:46:17Z`
+  - `build-date=2026-08-03T17:40:34Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-07-29T13:46:17Z`
-  - `org.opencontainers.image.revision=f473c706206356d94dd0dd94948a1be8c065fc47`
-  - `release=1785332632`
+  - `org.opencontainers.image.created=2026-08-03T17:40:34Z`
+  - `org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
+  - `release=1785778687`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f473c706206356d94dd0dd94948a1be8c065fc47`
+  - `vcs-ref=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -1147,17 +1147,27 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `p11-kit-trust-0.26.2-1.el10.x86_64`
+```console
+$ dnf --quiet download --source --url p11-kit-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+```
+
+### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `pam-1.6.1-9.el10.x86_64`
 
@@ -1197,12 +1207,7 @@ Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-l
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url policycoreutils-3.10-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.10-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `popt-1.19-8.el10.x86_64`
 
@@ -1532,12 +1537,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026b-1.el10.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026b-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
