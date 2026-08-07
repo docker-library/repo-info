@@ -164,7 +164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url curl-8.21.0-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+http://mirror.math.princeton.edu/pub/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `dash-static-0.5.12-3.mga10.x86_64`
@@ -643,7 +643,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64curl4-8.21.0-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+http://mirror.math.princeton.edu/pub/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64daemon0-0.14-16.mga10.x86_64`
@@ -2678,7 +2678,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url vim-minimal-9.2.782-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
+http://mirror.math.princeton.edu/pub/mageia/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `which-2.23-2.mga10.x86_64`
