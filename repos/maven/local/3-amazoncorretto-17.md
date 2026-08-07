@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9201860e5a768b21f9653af08250e2bf21ace7bfd28eaa99436631e02f6ee309`
-- Created: `2026-08-04T03:41:23.333065679Z`
-- Virtual Size: ~ 682.39 Mb  
+- Image ID: `sha256:4eec2135434fb9f3a00a6047fff32b717dc531f9d5894578e4a93ab8120c45fd`
+- Created: `2026-08-04T20:27:44.151305712Z`
+- Virtual Size: ~ 684.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -296,6 +296,17 @@ Source:
 ```console
 $ dnf --quiet download --source --url filesystem-3.14-5.amzn2023.0.3
 https://cdn.amazonlinux.com/al2023/core/guids/b931e59462596572851c0724d5b8efa54b154f37b41f56caa06283d8d5bc4b84/SRPMS/../../../../blobstore/5df3821dcd7b584e67c5e02c6b5c9cff32bee0118e263d7602148432375e398c/filesystem-3.14-5.amzn2023.0.3.src.rpm
+```
+
+### `rpm` package: `findutils-4.8.0-2.amzn2023.0.2.x86_64`
+
+Licenses (from `rpm --query`): GPLv3+
+
+Source:
+
+```console
+$ dnf --quiet download --source --url findutils-4.8.0-2.amzn2023.0.2
+https://cdn.amazonlinux.com/al2023/core/guids/b931e59462596572851c0724d5b8efa54b154f37b41f56caa06283d8d5bc4b84/SRPMS/../../../../blobstore/d38118808ee85787845a67279e1fe96530adc794c734ee89942325946a8490fb/findutils-4.8.0-2.amzn2023.0.2.src.rpm
 ```
 
 ### `rpm` package: `fontconfig-2.13.94-2.amzn2023.0.2.x86_64`
