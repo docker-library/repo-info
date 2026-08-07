@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c57093ad67d31ce3aff515cf436cad4311458057b9b74dcd3e7dd9b801af277`
-- Created: `2026-07-15T23:56:17.347567118Z`
-- Virtual Size: ~ 212.17 Mb  
+- Image ID: `sha256:bdf84d5dfde600186157fdf411594c94880ba16f12e34c44f2b07b2569970f61`
+- Created: `2026-08-05T01:28:42.614084785Z`
+- Virtual Size: ~ 212.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -770,11 +770,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.7.1-2`
+### `dpkg` source package: `expat=2.8.2-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.7.1-2`
+- `libexpat1:amd64=2.8.2-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -783,17 +783,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.7.1-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.dsc' expat_2.7.1-2.dsc 1964 SHA256:0f6068677eae5a40d223f47cc798210c8227022516d90569f657a793e5b2956f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1.orig.tar.gz' expat_2.7.1.orig.tar.gz 8433717 SHA256:85372797ff0673a8fc4a6be16466bb5a0ca28c0dcf3c6f7ac1686b4a3ba2aabb
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.debian.tar.xz' expat_2.7.1-2.debian.tar.xz 13264 SHA256:3b5417d59688e7759b00af6f92a87415b363ba00f946078201555fa3dd78420d
+$ apt-get source -qq --print-uris expat=2.8.2-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.dsc' expat_2.8.2-1~deb13u1.dsc 1638 SHA256:cb0adcbd159f18b2254ab03cef4e25b538a74d797c473b52b839553445105e46
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2.orig.tar.gz' expat_2.8.2.orig.tar.gz 8462437 SHA256:ca9d7c05560653cb977bfaa1ac54f717919cc0c68f6798b42fe55347c0b0ad52
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.debian.tar.xz' expat_2.8.2-1~deb13u1.debian.tar.xz 14044 SHA256:b9f366d5659d3eceb224f01e9f8bf5535b842ba8adfd7398ea1bdbf57772f695
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1698,11 +1698,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgcrypt20/1.11.0-7+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgcrypt20/1.11.0-7+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgd2=2.3.3-13`
+### `dpkg` source package: `libgd2=2.3.3-14~deb13u1`
 
 Binary Packages:
 
-- `libgd3:amd64=2.3.3-13`
+- `libgd3:amd64=2.3.3-14~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -1721,17 +1721,17 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.3.3-13
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.3.3-13.dsc' libgd2_2.3.3-13.dsc 2437 SHA256:b609c9f8242e42b2f65575d2868e8e71de654aeb357e3ec4d3a6b9b8044783a7
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.3.3.orig.tar.gz' libgd2_2.3.3.orig.tar.gz 3593182 SHA256:dd3f1f0bb016edcc0b2d082e8229c822ad1d02223511997c80461481759b1ed2
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.3.3-13.debian.tar.xz' libgd2_2.3.3-13.debian.tar.xz 32548 SHA256:723e826359453a0d0180c5a744c85eb67a537d4ec30c30367298731a571c5ffa
+$ apt-get source -qq --print-uris libgd2=2.3.3-14~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.3.3-14%7edeb13u1.dsc' libgd2_2.3.3-14~deb13u1.dsc 2472 SHA256:2ca4f21d945a8ceb2be5396e6a2ce28dda8eb4ddb6690a097cbb9a51b570375b
+'http://deb.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.3.3.orig.tar.gz' libgd2_2.3.3.orig.tar.gz 3593182 SHA256:dd3f1f0bb016edcc0b2d082e8229c822ad1d02223511997c80461481759b1ed2
+'http://deb.debian.org/debian-security/pool/updates/main/libg/libgd2/libgd2_2.3.3-14%7edeb13u1.debian.tar.xz' libgd2_2.3.3-14~deb13u1.debian.tar.xz 33060 SHA256:c4b1a3d2d17562ffda21a672f4d8be54406d6d8f1320637a4caddd664536bdf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libgd2/2.3.3-13/ (for browsing the source)
-- https://sources.debian.net/src/libgd2/2.3.3-13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgd2/2.3.3-13/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libgd2/2.3.3-14~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libgd2/2.3.3-14~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgd2/2.3.3-14~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.51-4`
 
@@ -3309,11 +3309,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3+deb13u2`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u3`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.7.0-3+deb13u2`
+- `libtiff6:amd64=4.7.0-3+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -3322,17 +3322,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.dsc' tiff_4.7.0-3+deb13u2.dsc 2287 SHA256:503d624f692bd30c8b005204065ec6f1197455b850c4f760ca2e6c67cd8b0f4b
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.debian.tar.xz' tiff_4.7.0-3+deb13u2.debian.tar.xz 26680 SHA256:3a201857c5c8433ddd494e01a8d2745f88ae200c3d509446a4aaa480dc106f64
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u3.dsc' tiff_4.7.0-3+deb13u3.dsc 2442 SHA256:51cdbd32322b5d35ef35677ace1cb7cd6591325da4ecd470ec6ccefab47d6a29
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u3.debian.tar.xz' tiff_4.7.0-3+deb13u3.debian.tar.xz 28212 SHA256:c0cbcb717e20a69964bfa7471cbb0137dd39a451434932972bc7fbcdb86345f8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026b-0+deb13u1`
 
