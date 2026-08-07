@@ -1020,27 +1020,17 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url p11-kit-0.26.2-1.el10
-http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/p11-kit-0.26.2-1.el10.src.rpm
-```
-
-### `rpm` package: `p11-kit-trust-0.26.2-1.el10.x86_64`
+### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-Source:
-
-```console
-$ dnf --quiet download --source --url p11-kit-trust-0.26.2-1.el10
-http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/p11-kit-0.26.2-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pam-1.6.1-9.el10.x86_64`
 
