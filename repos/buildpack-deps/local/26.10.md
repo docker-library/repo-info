@@ -1024,18 +1024,13 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype-dev/copyright`, `/usr/share/
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.14.3+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg-1.dsc' freetype_2.14.3+dfsg-1.dsc 4011 SHA512:fa3c659cc98916fba741a90a7385dc6ea37459ba8828c0312f24c5219b477539515556f46841a743916b054afd435fd90120afdbc8af4b5ed861b1a99daaeb6d
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.3+dfsg.orig-ft2demos.tar.xz 347960 SHA512:e59c1266010330a8cbfd25dec096a72ce7539b64f9c057de062a281261b3ad658240f58e75b53d7a880d7ad5e020206316a6e9e82b03dec2e4d999f3f56cb39a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.3+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:c6bf87617bedec1430dd75e9d48e00b9994f9caf13d8721eb7059597e617ec7b51aac260aa644f82e4c54f12494cdd57ba21cec657f548b29b57e16576bc7865
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.3+dfsg.orig-ft2docs.tar.xz 2176200 SHA512:f5d9bdd5119d353533a17366bfbe6d847d079f908137b1353cb9b6ce2e9ae5998dcaf7c888eeceec22b162cdb14256c6e7fefd75057250321fbcd9fcafc068f4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.3+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:df8bcb57839dcab5734f21eebc3b3db4b3656415695e87d86e44996e03d79e6507933a433633005fc004605432bd96d43d69efb140ab84b9c1136ca9c069fdba
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg.orig.tar.xz' freetype_2.14.3+dfsg.orig.tar.xz 2247556 SHA512:86c66805f8b578e3ffb27f7d2b5eb60b26d37bcfea90a9d1718ef93c6d0a75982246724dde3d3507dbf5f6d4e67b615001121e5ba3f1ff08b7fe613a54088c4b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.3%2bdfsg-1.debian.tar.xz' freetype_2.14.3+dfsg-1.debian.tar.xz 44132 SHA512:c81acb665aefbeb49c78fff8b8fe465604474ef085c713cca0d7768c5f68c079bbf50a3d0b15986d247f255441daa102343f939bde9e773f63eb61a73df67d81
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/freetype/2.14.3+dfsg-1/
+
 
 ### `dpkg` source package: `fribidi=1.0.16-5`
 
@@ -2212,14 +2207,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-4.dsc' libheif_1.21.2-4.dsc 3818 SHA512:cf61a00fe79c9b8fd5794845c29a513de6963c441b602241ce5eb142b1f0d7192271292175ce15b2fee5562c3b46bc1cfa436f1a8056f670f1f1c66c5d8db91d
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-4.debian.tar.xz' libheif_1.21.2-4.debian.tar.xz 14152 SHA512:1e4680aa403598d583f00ce0eba74b44b21d8a05605ef605614444a2052fa189e44a2bd19db977288ec71175ae9cba55c0274aab84b0a731baedc8bfb2e05b30
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libheif/1.21.2-4/
+
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
