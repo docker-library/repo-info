@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae8b737d83948ebc3bc02b573cfa00bac73dcca6dfda233ef328b924253a4f3a`
-- Created: `2026-08-04T21:06:06.893857214Z`
+- Image ID: `sha256:40ccb9fe972fcfe25d0bbe84488c6e79bba9cfe12c695187061473a156e99bdb`
+- Created: `2026-08-05T18:16:06.008849234Z`
 - Virtual Size: ~ 515.8 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-03T17:14:53Z`
+  - `build-date=2026-08-05T05:11:46Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-08-03T17:14:53Z`
+  - `org.opencontainers.image.created=2026-08-05T05:11:46Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=fed5ae6ccb10c6d16ee2e00c675d23ea0a6c587f`
+  - `org.opencontainers.image.revision=1ca6f1fd6baff20888272c2426a8dc7f6030dff2`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=fed5ae6ccb10c6d16ee2e00c675d23ea0a6c587f`
+  - `vcs-ref=1ca6f1fd6baff20888272c2426a8dc7f6030dff2`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.8`
@@ -321,7 +321,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
@@ -473,11 +473,16 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.10-4.el9_8.x86_64`
+### `rpm` package: `gnutls-3.8.10-8.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnutls-3.8.10-8.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-8.el9_8.src.rpm
+```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
 
@@ -498,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -588,7 +593,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -888,11 +893,16 @@ $ dnf --quiet download --source --url libgcc-11.5.0-14.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-14.el9.src.rpm
 ```
 
-### `rpm` package: `libgcrypt-1.10.0-11.el9.x86_64`
+### `rpm` package: `libgcrypt-1.10.0-13.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libgcrypt-1.10.0-13.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libgcrypt-1.10.0-13.el9_8.src.rpm
+```
 
 ### `rpm` package: `libgpg-error-1.42-5.el9.x86_64`
 
@@ -1166,7 +1176,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2233,7 +2243,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2244,7 +2254,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.sfo12.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2427,12 +2437,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026b-1.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026b-1.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.37.4-25.el9.x86_64`
 
