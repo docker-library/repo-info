@@ -1,10 +1,10 @@
-# `golang:tip-20260726-trixie`
+# `golang:tip-20260731-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:749211f71c51c8449fce56e473f54e4c54fb48154e06647c1bbfb15b6f38af2c`
-- Created: `2026-07-27T22:08:49.544869351Z`
-- Virtual Size: ~ 915.34 Mb  
+- Image ID: `sha256:d2ba6d1a44e1ca351e07ac6ae78b0d2c3c201d91534d4cc5b0b05128cc993f44`
+- Created: `2026-08-05T15:54:50.500502451Z`
+- Virtual Size: ~ 915.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -792,11 +792,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.7.1-2`
+### `dpkg` source package: `expat=2.8.2-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.7.1-2`
+- `libexpat1:amd64=2.8.2-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -805,17 +805,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.7.1-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.dsc' expat_2.7.1-2.dsc 1964 SHA256:0f6068677eae5a40d223f47cc798210c8227022516d90569f657a793e5b2956f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1.orig.tar.gz' expat_2.7.1.orig.tar.gz 8433717 SHA256:85372797ff0673a8fc4a6be16466bb5a0ca28c0dcf3c6f7ac1686b4a3ba2aabb
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.1-2.debian.tar.xz' expat_2.7.1-2.debian.tar.xz 13264 SHA256:3b5417d59688e7759b00af6f92a87415b363ba00f946078201555fa3dd78420d
+$ apt-get source -qq --print-uris expat=2.8.2-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.dsc' expat_2.8.2-1~deb13u1.dsc 1638 SHA256:cb0adcbd159f18b2254ab03cef4e25b538a74d797c473b52b839553445105e46
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2.orig.tar.gz' expat_2.8.2.orig.tar.gz 8462437 SHA256:ca9d7c05560653cb977bfaa1ac54f717919cc0c68f6798b42fe55347c0b0ad52
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.debian.tar.xz' expat_2.8.2-1~deb13u1.debian.tar.xz 14044 SHA256:b9f366d5659d3eceb224f01e9f8bf5535b842ba8adfd7398ea1bdbf57772f695
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -2189,11 +2189,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.96-1`
+### `dpkg` source package: `linux=6.12.100-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.96-1`
+- `linux-libc-dev=6.12.100-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2207,17 +2207,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.96-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.dsc' linux_6.12.96-1.dsc 288306 SHA256:4fca3ebc4d2c1c2c7b88e05dc67fef7a7f539f03b19b4308f61d7ee3e2f1b738
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96.orig.tar.xz' linux_6.12.96.orig.tar.xz 151315096 SHA256:59f9548e0384dbafd08eaf05872576de8de50206f972b091c567a9fc91867ca7
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.96-1.debian.tar.xz' linux_6.12.96-1.debian.tar.xz 1845940 SHA256:6052af0c3d43d5676853e25d1a52521d09440fa000dd73c30350783d47271918
+$ apt-get source -qq --print-uris linux=6.12.100-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.dsc' linux_6.12.100-1.dsc 290418 SHA256:c31dab9bf96a8bd7603f1afd953f1f97fc5d1e9c0820ffac1fa1d1ad1e2f4dd1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100.orig.tar.xz' linux_6.12.100.orig.tar.xz 151348476 SHA256:d352d8271fafd61d76b01326fbddef24848d498adb8eace1cc208d04663cc22e
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.debian.tar.xz' linux_6.12.100-1.debian.tar.xz 1864380 SHA256:c345b6b78e43f8e80580e15869d17828ed8eff44ac62e00965c2033006230a15
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.96-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.96-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.96-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.100-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.100-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.100-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -3015,14 +3015,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.13.5-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.13.5-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.13=3.13.5-2+deb13u3`
+### `dpkg` source package: `python3.13=3.13.5-2+deb13u4`
 
 Binary Packages:
 
-- `libpython3.13-minimal:amd64=3.13.5-2+deb13u3`
-- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u3`
-- `python3.13=3.13.5-2+deb13u3`
-- `python3.13-minimal=3.13.5-2+deb13u3`
+- `libpython3.13-minimal:amd64=3.13.5-2+deb13u4`
+- `libpython3.13-stdlib:amd64=3.13.5-2+deb13u4`
+- `python3.13=3.13.5-2+deb13u4`
+- `python3.13-minimal=3.13.5-2+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/share/doc/libpython3.13-stdlib/copyright`, `/usr/share/doc/python3.13/copyright`, `/usr/share/doc/python3.13-minimal/copyright`)
 
@@ -3047,18 +3047,18 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u3
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.dsc' python3.13_3.13.5-2+deb13u3.dsc 3721 SHA256:2f6c3f83cd3de0355f4411807871a95f99a0aae9b397daba5dbdbf1bd5169cc8
+$ apt-get source -qq --print-uris python3.13=3.13.5-2+deb13u4
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.dsc' python3.13_3.13.5-2+deb13u4.dsc 3721 SHA256:72134c9f6705d0d87a53cf48c5a997f088b6b675ad5d87f57fa6e9f338393519
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz' python3.13_3.13.5.orig.tar.xz 22856016 SHA256:93e583f243454e6e9e4588ca2c2662206ad961659863277afcdb96801647d640
 'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5.orig.tar.xz.asc' python3.13_3.13.5.orig.tar.xz.asc 963 SHA256:da6e013d98dcf8fc6696cdb2872b0051fc8fdeb632f73ef9f54d7b5a68647401
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u3.debian.tar.xz' python3.13_3.13.5-2+deb13u3.debian.tar.xz 295440 SHA256:8e9ed35b583e093f80fbcd53bf3de9245c8070cc5ea9b36e5f34d3a45bff73e9
+'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.5-2%2bdeb13u4.debian.tar.xz' python3.13_3.13.5-2+deb13u4.debian.tar.xz 296316 SHA256:b5cc42821fb6a6f91b7a5ac1da5b313bb251288ca03f03d683b4c6ca453ece11
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/python3.13/3.13.5-2+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.13/3.13.5-2+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
