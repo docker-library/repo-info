@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk26-ubi`
+# `gradle:9.7.0-jdk26-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7533d5f2831a351202e6e87a82d3e078ae9eb56a8c8c11117ffa9b6f0e66fcdc`
-- Created: `2026-08-04T21:16:23.698773303Z`
-- Virtual Size: ~ 733.02 Mb  
+- Image ID: `sha256:3d220d36c6c1f36c40a90b2444d2e383da38af5b0d4d5b24c6e3fcf6ec86fbdd`
+- Created: `2026-08-10T17:47:57.421558828Z`
+- Virtual Size: ~ 745.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-26.0.1+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.1`
+  - `GRADLE_VERSION=9.7.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-08-03T17:40:34Z`
@@ -554,12 +554,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libarchive-3.7.7-8.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-8.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
 
@@ -1203,11 +1198,16 @@ Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-l
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `policycoreutils-3.10-1.el10.x86_64`
+### `rpm` package: `policycoreutils-3.10-2.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url policycoreutils-3.10-2.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.10-2.el10_2.src.rpm
+```
 
 ### `rpm` package: `popt-1.19-8.el10.x86_64`
 
@@ -1533,11 +1533,16 @@ $ dnf --quiet download --source --url tpm2-tss-4.1.3-6.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026b-1.el10.noarch`
+### `rpm` package: `tzdata-2026c-1.el10_2.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026c-1.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 

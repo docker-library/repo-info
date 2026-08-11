@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk17-alpine`
+# `gradle:9.7.0-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:327f26dcb87bc0311e67983fc395cc27a604f7b95a08d9cbaf726456303bcd72`
-- Created: `2026-06-29T17:12:56.046185267Z`
-- Virtual Size: ~ 609.23 Mb  
+- Image ID: `sha256:948947bd4a174ff437763d215607ee4a6be030235e2f9f6b92c8ae069483b05f`
+- Created: `2026-08-10T17:46:38.241994589Z`
+- Virtual Size: ~ 621.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.19+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.1`
+  - `GRADLE_VERSION=9.7.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -143,16 +143,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.3-r2 description:
+apr-util-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.3-r2 webpage:
+apr-util-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.3-r2 installed size:
+apr-util-1.6.4-r0 installed size:
 180 KiB
 
-apr-util-1.6.3-r2 license:
+apr-util-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -262,16 +262,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -381,16 +381,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.19.0-r0 description:
+curl-8.20.0-r0 description:
 URL retrival utility and library
 
-curl-8.19.0-r0 webpage:
+curl-8.20.0-r0 webpage:
 https://curl.se/
 
-curl-8.19.0-r0 installed size:
+curl-8.20.0-r0 installed size:
 273 KiB
 
-curl-8.19.0-r0 license:
+curl-8.20.0-r0 license:
 curl
 
 ```
@@ -857,16 +857,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```

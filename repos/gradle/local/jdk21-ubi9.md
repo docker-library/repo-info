@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk21-ubi9`
+# `gradle:9.7.0-jdk21-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:18f6f67fee8c1de980b11d075ce8661f61bbe76767c1adcdc9690d82b90e1f4e`
-- Created: `2026-08-05T19:10:18.906015534Z`
-- Virtual Size: ~ 760.04 Mb  
+- Image ID: `sha256:f4af7a7d12594bd1e39956105eb0ebc58859b1d0018ad1766d2be111b88588e9`
+- Created: `2026-08-10T17:45:53.16942818Z`
+- Virtual Size: ~ 772.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.1`
+  - `GRADLE_VERSION=9.7.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-08-05T05:11:46Z`
@@ -788,12 +788,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libarchive-3.5.3-9.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-9.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 

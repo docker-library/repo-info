@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk-lts-and-current-alpine`
+# `gradle:9.7.0-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0edd72403a00cd6120304adf541327305ec0890fa83b75f040c09e4d723a1e99`
-- Created: `2026-06-29T17:14:26.961891202Z`
-- Virtual Size: ~ 847.44 Mb  
+- Image ID: `sha256:83783c03e95f4a5f5e6d04c5a838a46cb512ee047282623ed267d242a0618363`
+- Created: `2026-08-10T17:48:07.994336317Z`
+- Virtual Size: ~ 859.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk26`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.1`
+  - `GRADLE_VERSION=9.7.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -145,16 +145,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.3-r2 description:
+apr-util-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.3-r2 webpage:
+apr-util-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.3-r2 installed size:
+apr-util-1.6.4-r0 installed size:
 180 KiB
 
-apr-util-1.6.3-r2 license:
+apr-util-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -264,16 +264,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -383,16 +383,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.19.0-r0 description:
+curl-8.20.0-r0 description:
 URL retrival utility and library
 
-curl-8.19.0-r0 webpage:
+curl-8.20.0-r0 webpage:
 https://curl.se/
 
-curl-8.19.0-r0 installed size:
+curl-8.20.0-r0 installed size:
 273 KiB
 
-curl-8.19.0-r0 license:
+curl-8.20.0-r0 license:
 curl
 
 ```
@@ -621,16 +621,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```

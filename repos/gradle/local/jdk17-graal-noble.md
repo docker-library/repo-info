@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk17-graal-noble`
+# `gradle:9.7.0-jdk17-graal-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d260e930d902fda7a5d1da242eac18e2d400c856b3a36314537ee13bf9b473c`
-- Created: `2026-08-04T01:30:40.608448457Z`
-- Virtual Size: ~ 1.23 Gb  
+- Image ID: `sha256:b85fa191ecb7c15e6183711b96720321e86ccc52ff76b573345539ea31f7ce1a`
+- Created: `2026-08-10T17:48:03.158714097Z`
+- Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=9.6.1`
+  - `GRADLE_VERSION=9.7.0`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -1861,19 +1861,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.dsc' libzstd_1.5.5+dfsg2-2build1.1.dsc 2485 SHA256:c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570
 ```
 
-### `dpkg` source package: `linux=6.8.0-136.136`
+### `dpkg` source package: `linux=6.8.0-137.137`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-136.136`
+- `linux-libc-dev:amd64=6.8.0-137.137`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-137.137
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-137.137.diff.gz' linux_6.8.0-137.137.diff.gz 8971725 SHA512:c8a8c856de4d7b88723e89286aabbc6e2405d6dafc5320bf7b3ef11ec7bd12b668ed1ee3bc2ca6f3e624e63fac91d3206c13f8d26aa79794cfc74f132f904e68
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-137.137.dsc' linux_6.8.0-137.137.dsc 9504 SHA512:f23ab0b8201cddca91f984211971daf21da11d6ebe3223dbd43a0dcea9931240b2a7c38eb9b3ea4a8a4eecbfc833a32c633e30fa395d2400e5c4f9e322594330
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2801,14 +2806,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.16.debian.tar.xz' systemd_255.4-1ubuntu8.16.debian.tar.xz 265512 SHA512:f8760a5fe788f08deb96120704eb3f4f12f92652bd032898cbe0a30159430b76cab7269866c67e84abab6cf6301390ce7d0935e785d1c8c873dc8289c9536f78
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.16.dsc' systemd_255.4-1ubuntu8.16.dsc 7324 SHA512:3743076a6c09de360bfee7e8a6aaf08b2530e7aeac767f457888d3f5ef842a3508116d9d3a7dde8caaaec9faddcead7afebf16f8b1bccc8f1a0dfbbdac38ba16
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 

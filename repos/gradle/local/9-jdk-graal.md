@@ -1,10 +1,10 @@
-# `gradle:9.6.1-jdk25-graal`
+# `gradle:9.7.0-jdk25-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4eb172e5413fd1ebf9eb4020ef93c3c0a75b1b0e6fd2d64aee6c638205ce3007`
-- Created: `2026-08-04T01:29:44.463832257Z`
-- Virtual Size: ~ 1.49 Gb  
+- Image ID: `sha256:43d64bbbc0b8abdbfbd20c99d46d10cb0e411014bd0321f844ba72d8b4074ea0`
+- Created: `2026-08-10T17:45:55.114836466Z`
+- Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
-  - `JAVA_VERSION=25.0.2`
-  - `GRADLE_VERSION=9.6.1`
+  - `JAVA_VERSION=25.0.4`
+  - `GRADLE_VERSION=9.7.0`
 - Labels:
   - `org.opencontainers.image.created=2026-07-24T12:48:28.650696+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -1943,19 +1943,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-28.28`
+### `dpkg` source package: `linux=7.0.0-29.29`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-28.28`
+- `linux-libc-dev:amd64=7.0.0-29.29`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=7.0.0-29.29
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-29.29.diff.gz' linux_7.0.0-29.29.diff.gz 2013229 SHA512:3f0bbb86090bd1436c1a952b1964c6e033c3b3a66ac6cce62e39afc4613502ffbc887ac4419ca9b637724b9c4f4ea452daefcba262a18d6dddd49eb81d5df531
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-29.29.dsc' linux_7.0.0-29.29.dsc 7925 SHA512:dbe2ee57cb5dc3093089bd905284aa9514132280fa1fbeff3a89404aba6de151d5c5b836d5b6e0e30ce0a08fea0851182a7ec27feaade24beb662f91dab19c47
+```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
 
