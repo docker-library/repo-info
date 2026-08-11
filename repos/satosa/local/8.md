@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5f2ccd1b7f43dfaa3dbbe2f7bc90556d54fe6a03f84ef59b320771be50ce4c4`
-- Created: `2026-08-05T01:46:54.130331911Z`
-- Virtual Size: ~ 257.13 Mb  
+- Image ID: `sha256:9662b53e98bde6aca6c1084ff373d76ecf904f73624bccc1640d29fc28e11d62`
+- Created: `2026-08-10T22:10:43.400443228Z`
+- Virtual Size: ~ 257.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.14`
-  - `PYTHON_SHA256=639e43243c620a308f968213df9e00f2f8f62332f7adbaa7a7eeb9783057c690`
+  - `PYTHON_VERSION=3.13.15`
+  - `PYTHON_SHA256=1e66a7945a48390ee4c2a4268a0e4185884059a13c4aab6d148aa208deea4a76`
   - `SATOSA_VERSION=8.5.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -267,11 +267,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1`
+- `ca-certificates=20250419~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -282,16 +282,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.dsc' ca-certificates_20230311+deb12u1.dsc 1800 SHA256:d4d57c9b56db87c8ebe7a0c27d55023e3369d183d4b774bdf455f775a80f00eb
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.tar.xz' ca-certificates_20230311+deb12u1.tar.xz 259756 SHA256:4cd6bbd5577a16432438bc1006dc05c333afacb76104fc3564612858c8ee3280
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
