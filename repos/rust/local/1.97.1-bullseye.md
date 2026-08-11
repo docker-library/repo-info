@@ -503,19 +503,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1~deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1%7edeb11u1.dsc' ca-certificates_20230311+deb12u1~deb11u1.dsc 1803 SHA256:f9a7dfde551005b522e1d6e421fd9d690c56f70d7b5d083a422cbfa499cf7326
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1%7edeb11u1.tar.xz' ca-certificates_20230311+deb12u1~deb11u1.tar.xz 260104 SHA256:4491564ba510e58aa65ae0c8d6d912cf047e10cc224cf235c96bef4e30d7daae
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1~deb11u1/
 
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.16.0-5`
 
