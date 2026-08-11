@@ -1,7 +1,7 @@
 ## `gradle:9-jdk-25-and-26-corretto-al2023`
 
 ```console
-$ docker pull gradle@sha256:c0bdff0544f44a7d00a483fb45617756cc5819b9005ebc522246a31c791dc0cd
+$ docker pull gradle@sha256:f1a71af19b53dbc55d4f6dc2c8a697b0fa978112b82c8107e02d06cefe67ffce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull gradle@sha256:c0bdff0544f44a7d00a483fb45617756cc5819b9005ebc522246
 ### `gradle:9-jdk-25-and-26-corretto-al2023` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:b184f79f0e20bb9f2c941502ffbb51c891f93e52ff01d56377bc3fea589423ca
+$ docker pull gradle@sha256:8386acd20f6d4f6fbd8226053a95e6ee5f144005f90403a3f4197e516cf50fd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **650.8 MB (650774617 bytes)**  
+-	Total Size: **660.4 MB (660406451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ff26bbf2787e719b3dfa27028b8615b81eafc9d1a30e674f73295e7d531d3e1`
+-	Image ID: `sha256:201d8904ffe51fa1ecdfacc5254fc8b7c30881bece813a93214f91ba64adf4f8`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -39,37 +39,37 @@ RUN set -eux     && ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)"     && rpm
 ENV LANG=C.UTF-8
 # Tue, 04 Aug 2026 00:58:51 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto
-# Tue, 04 Aug 2026 01:18:09 GMT
+# Mon, 10 Aug 2026 17:48:28 GMT
 COPY /usr/lib/jvm/java-26-amazon-corretto /usr/lib/jvm/java-26-amazon-corretto # buildkit
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 ENV JAVA_LTS_HOME=/usr/lib/jvm/java-25-amazon-corretto
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 ENV JAVA_CURRENT_HOME=/usr/lib/jvm/java-26-amazon-corretto
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 CMD ["gradle"]
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 RUN set -o errexit -o nounset     && dnf install -y         make         curl-minimal         wget         tar                 unzip         which                 findutils                 git         git-lfs         mercurial         subversion     && dnf clean all     && rm -rf /var/cache/yum         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which hg     && which svn # buildkit
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle         && echo "Ensuring Gradle detects installed JDKs"     && echo "org.gradle.java.installations.auto-detect=false" > /home/gradle/.gradle/gradle.properties     && echo "org.gradle.java.installations.auto-download=false" >> /home/gradle/.gradle/gradle.properties     && echo "org.gradle.java.installations.fromEnv=JAVA_LTS_HOME,JAVA_CURRENT_HOME" >> /home/gradle/.gradle/gradle.properties # buildkit
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 04 Aug 2026 01:18:28 GMT
+# Mon, 10 Aug 2026 17:48:49 GMT
 WORKDIR /home/gradle
-# Tue, 04 Aug 2026 01:18:28 GMT
-ENV GRADLE_VERSION=9.6.1
-# Tue, 04 Aug 2026 01:18:28 GMT
-ARG GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
-# Tue, 04 Aug 2026 01:18:31 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
+# Mon, 10 Aug 2026 17:48:49 GMT
+ENV GRADLE_VERSION=9.7.0
+# Mon, 10 Aug 2026 17:48:49 GMT
+ARG GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
+# Mon, 10 Aug 2026 17:48:51 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Tue, 04 Aug 2026 01:18:31 GMT
+# Mon, 10 Aug 2026 17:48:51 GMT
 USER gradle
-# Tue, 04 Aug 2026 01:18:31 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
+# Mon, 10 Aug 2026 17:48:52 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Tue, 04 Aug 2026 01:18:31 GMT
+# Mon, 10 Aug 2026 17:48:52 GMT
 USER root
 ```
 
@@ -82,65 +82,65 @@ USER root
 		Last Modified: Tue, 04 Aug 2026 00:59:15 GMT  
 		Size: 189.5 MB (189475802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc884d69205532eef22d56359f3254335f517808de557bfab3c7baab535654ee`  
-		Last Modified: Tue, 04 Aug 2026 01:19:09 GMT  
-		Size: 179.4 MB (179421466 bytes)  
+	-	`sha256:d3461269c249ba9479599efc73a3d872c3b789ccf8754a6bdfcdcee7f0bbd601`  
+		Last Modified: Mon, 10 Aug 2026 17:49:30 GMT  
+		Size: 179.4 MB (179421454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b09d8c5690e2f8322b68598b944657289046b5fd1f454915fcb5eadcef7a85d`  
-		Last Modified: Tue, 04 Aug 2026 01:19:06 GMT  
-		Size: 86.7 MB (86681249 bytes)  
+	-	`sha256:714379836108e17763dfb82ee8c55b4b23d6d180d4a8b765d97c8424e0ee6527`  
+		Last Modified: Mon, 10 Aug 2026 17:49:27 GMT  
+		Size: 86.7 MB (86681167 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31e76876c5f4a0008ce1df09f3c2b7fbdccd1d1c4ca8d7dd7820cb233e31bff9`  
-		Last Modified: Tue, 04 Aug 2026 01:19:01 GMT  
-		Size: 1.8 KB (1758 bytes)  
+	-	`sha256:274a2509e95199f7bd897c563c1e3275798916f522a0450c2f540b0ac6eae1d4`  
+		Last Modified: Mon, 10 Aug 2026 17:49:22 GMT  
+		Size: 1.8 KB (1759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a18ccbf343a676c01d738a646beb72f9f791f29e9489b31ac319382af00787a1`  
-		Last Modified: Tue, 04 Aug 2026 01:19:08 GMT  
-		Size: 140.6 MB (140596022 bytes)  
+	-	`sha256:c7e937f5417b844794d3a8ab9d3eb1c983c5977b54a81542014efb4ff0341082`  
+		Last Modified: Mon, 10 Aug 2026 17:49:29 GMT  
+		Size: 150.2 MB (150227946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5d50fed1af2b61b5bf2ce79c981bcf969812c6ae7ce094f4f21639502f3a56`  
-		Last Modified: Tue, 04 Aug 2026 01:19:02 GMT  
-		Size: 25.6 KB (25608 bytes)  
+	-	`sha256:55a6f6b17cc8afdd77a0e11f56f6f04ab43019ed5a88dd59ff6a0b38a9b3af7a`  
+		Last Modified: Mon, 10 Aug 2026 17:49:23 GMT  
+		Size: 25.6 KB (25611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:9-jdk-25-and-26-corretto-al2023` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:a5d8247698d04626c7ac74d6a81870a8103bb7cc80e3f83e526d16728c3c4ba4
+$ docker pull gradle@sha256:5f76fed62411022de13073173647441e423914745bd8ff2e9b2f40f49c138dac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.6 MB (11591989 bytes)**  
+-	Total Size: **11.6 MB (11598731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b588e87865dc61dca4b3c8b4de768b81e90a3606d27d2ff333b6bfca0390a539`
+-	Image ID: `sha256:5a45b94dc00120707e1b66306196f8f252ce9829ba5d290add85c6fe98cc2c1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d33c044a1fd8ea5ccfdc08165fe4a55eee9dc60295f11e02b0200a6363edd1ad`  
-		Last Modified: Tue, 04 Aug 2026 01:19:02 GMT  
-		Size: 11.6 MB (11562480 bytes)  
+	-	`sha256:f47f27387967efcf0c966ba75abb3b38e32dde825396059160ae9ba7686845d0`  
+		Last Modified: Mon, 10 Aug 2026 17:49:23 GMT  
+		Size: 11.6 MB (11569222 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:35f04282432507ccf1a4fbef45c5b498e572787a80d41dafb5751a3b40c23c01`  
-		Last Modified: Tue, 04 Aug 2026 01:19:01 GMT  
+	-	`sha256:80873b1888ef821bdbf3405a16b7a71b1980d9952b465c5f0c1508603fb78106`  
+		Last Modified: Mon, 10 Aug 2026 17:49:22 GMT  
 		Size: 29.5 KB (29509 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:9-jdk-25-and-26-corretto-al2023` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:73104a046254e1cb5751b05a4dd780fdfae16b8cf55d077346510e6c3d906556
+$ docker pull gradle@sha256:5f18aad9d51ebc051ea5af8dd9efbc63c19e8c71a222d5af9e7e2211a879f2df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.8 MB (644795831 bytes)**  
+-	Total Size: **654.4 MB (654427661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9346cbd2926f3642a87cc6435f8d80e55a1899ee5d5b1a6fd342ee3514c4668a`
+-	Image ID: `sha256:6e85b6076dba0ad322bf0322ae0ddfc6f7fcf77f0fabda246a2ad9f07eb86b37`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -159,37 +159,37 @@ RUN set -eux     && ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)"     && rpm
 ENV LANG=C.UTF-8
 # Tue, 04 Aug 2026 00:58:09 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto
-# Tue, 04 Aug 2026 01:31:13 GMT
+# Mon, 10 Aug 2026 17:48:34 GMT
 COPY /usr/lib/jvm/java-26-amazon-corretto /usr/lib/jvm/java-26-amazon-corretto # buildkit
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 ENV JAVA_LTS_HOME=/usr/lib/jvm/java-25-amazon-corretto
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 ENV JAVA_CURRENT_HOME=/usr/lib/jvm/java-26-amazon-corretto
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 CMD ["gradle"]
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 RUN set -o errexit -o nounset     && dnf install -y         make         curl-minimal         wget         tar                 unzip         which                 findutils                 git         git-lfs         mercurial         subversion     && dnf clean all     && rm -rf /var/cache/yum         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which hg     && which svn # buildkit
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle         && echo "Ensuring Gradle detects installed JDKs"     && echo "org.gradle.java.installations.auto-detect=false" > /home/gradle/.gradle/gradle.properties     && echo "org.gradle.java.installations.auto-download=false" >> /home/gradle/.gradle/gradle.properties     && echo "org.gradle.java.installations.fromEnv=JAVA_LTS_HOME,JAVA_CURRENT_HOME" >> /home/gradle/.gradle/gradle.properties # buildkit
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 04 Aug 2026 01:31:38 GMT
+# Mon, 10 Aug 2026 17:49:00 GMT
 WORKDIR /home/gradle
-# Tue, 04 Aug 2026 01:31:38 GMT
-ENV GRADLE_VERSION=9.6.1
-# Tue, 04 Aug 2026 01:31:38 GMT
-ARG GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
-# Tue, 04 Aug 2026 01:31:41 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
+# Mon, 10 Aug 2026 17:49:00 GMT
+ENV GRADLE_VERSION=9.7.0
+# Mon, 10 Aug 2026 17:49:00 GMT
+ARG GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
+# Mon, 10 Aug 2026 17:49:03 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Tue, 04 Aug 2026 01:31:41 GMT
+# Mon, 10 Aug 2026 17:49:03 GMT
 USER gradle
-# Tue, 04 Aug 2026 01:31:42 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=9c0f7faeeb306cb14e4279a3e084ca6b596894089a0638e68a07c945a32c9e14
+# Mon, 10 Aug 2026 17:49:03 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Tue, 04 Aug 2026 01:31:42 GMT
+# Mon, 10 Aug 2026 17:49:03 GMT
 USER root
 ```
 
@@ -202,51 +202,51 @@ USER root
 		Last Modified: Tue, 04 Aug 2026 00:58:34 GMT  
 		Size: 187.4 MB (187379559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca9028d7bc3a08311e6b8539da2e2450df22aa63072c7d8a08b2e2bfb24fc80d`  
-		Last Modified: Tue, 04 Aug 2026 01:32:22 GMT  
-		Size: 177.3 MB (177296379 bytes)  
+	-	`sha256:c9f7ed227bc17f6b598e9f4c0f18a36e8aeedea766bb62a56f97fa674b00967d`  
+		Last Modified: Mon, 10 Aug 2026 17:49:41 GMT  
+		Size: 177.3 MB (177296414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:794b182329deb495c6d6a148df51867e4f2ce7f2b81402f177788aca41342336`  
-		Last Modified: Tue, 04 Aug 2026 01:32:19 GMT  
-		Size: 86.0 MB (86044095 bytes)  
+	-	`sha256:db6d371065671e3a731f2387b690d9239024ebb44a610169d3f77c1dd80684b2`  
+		Last Modified: Mon, 10 Aug 2026 17:49:40 GMT  
+		Size: 86.0 MB (86043970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01cd6c6e4a3d4e5ab354da4eb487a88811d1e5e9f0f674ac5e5fffc1880a499f`  
-		Last Modified: Tue, 04 Aug 2026 01:32:14 GMT  
+	-	`sha256:cc25090bcc4da300621c6b48f3d07b38d6bf193ed45184da19fc3203fe52ed10`  
+		Last Modified: Mon, 10 Aug 2026 17:49:36 GMT  
 		Size: 1.8 KB (1756 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b23bde99182d096e835a74fd3c703384ab810ede66d63d44e9053e724dd4b33c`  
-		Last Modified: Tue, 04 Aug 2026 01:32:21 GMT  
-		Size: 140.6 MB (140596024 bytes)  
+	-	`sha256:84885236ac8d3d133e6f67aa5d827f0c3e649ee8c2060fa450706636d4311630`  
+		Last Modified: Mon, 10 Aug 2026 17:49:43 GMT  
+		Size: 150.2 MB (150227942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13c86c59760d735730a0f65f7983a7dec10dedade87548830d5df184d0c6920b`  
-		Last Modified: Tue, 04 Aug 2026 01:32:16 GMT  
-		Size: 29.3 KB (29329 bytes)  
+	-	`sha256:936f2979c0b2d6d60687ba2c3029a0962c63684bea09c61f72288da591dcc52c`  
+		Last Modified: Mon, 10 Aug 2026 17:49:39 GMT  
+		Size: 29.3 KB (29331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:9-jdk-25-and-26-corretto-al2023` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:cd0a866678f2bcf5b2322dbea17f0334892422a978923b0b3140cb9b34708b8d
+$ docker pull gradle@sha256:55d725b5df4d2b4a375e6c109afc25c7978a94c5a87b1302a5afa8a9f6d2bd7f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.6 MB (11590779 bytes)**  
+-	Total Size: **11.6 MB (11597521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b63579c424c274034e27f99086480094cac31a262a0c8c488f2ca99f48396c4`
+-	Image ID: `sha256:c45d2dd481e8bdf04d0176ad7e4f816f6c955be897104c382592168d2b8a925f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e595a0794498c00a2cf24559c11c4869799f70d6028b174d5ff0e35febc28753`  
-		Last Modified: Tue, 04 Aug 2026 01:32:15 GMT  
-		Size: 11.6 MB (11560950 bytes)  
+	-	`sha256:c6564e8fbc0a71dfe7381b6c92ab7a6e1cecea776356539e992a0ad5be7e7d29`  
+		Last Modified: Mon, 10 Aug 2026 17:49:35 GMT  
+		Size: 11.6 MB (11567692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1463a4e7bf98177e989bb7c4883c843941a846cf368dcd4cba2b8610adace640`  
-		Last Modified: Tue, 04 Aug 2026 01:32:14 GMT  
+	-	`sha256:ad0010d1c2f5310d799b08eb4bfe95283f2540939cdac0ec251c5251740af481`  
+		Last Modified: Mon, 10 Aug 2026 17:49:35 GMT  
 		Size: 29.8 KB (29829 bytes)  
 		MIME: application/vnd.in-toto+json
