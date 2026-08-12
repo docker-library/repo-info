@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e1a99afc664676862ed0990ab3be8b7b0dbdc485bc22f65cda70d80462e6e95`
-- Created: `2026-08-05T15:57:59.151167313Z`
-- Virtual Size: ~ 56.55 Mb  
+- Image ID: `sha256:2ba3557a71ed0ba0c092aaa7e1b7b788b4bb71359c36286ed6e9e9ada13fd564`
+- Created: `2026-08-10T22:11:37.993460094Z`
+- Virtual Size: ~ 56.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.14`
-  - `PYTHON_SHA256=639e43243c620a308f968213df9e00f2f8f62332f7adbaa7a7eeb9783057c690`
+  - `PYTHON_VERSION=3.13.15`
+  - `PYTHON_SHA256=1e66a7945a48390ee4c2a4268a0e4185884059a13c4aab6d148aa208deea4a76`
   - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
@@ -446,16 +446,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
