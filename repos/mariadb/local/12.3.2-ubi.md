@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d69bac099136be34c7b7da317e8599f74edd67cea43b76867f57f03ae8c001e9`
-- Created: `2026-08-04T21:07:05.019018357Z`
+- Image ID: `sha256:74fbb96cc98cbbc873e514671f40eba04b9bdfb21e201013a3cb9fad550c02ce`
+- Created: `2026-08-11T17:52:07.944943562Z`
 - Virtual Size: ~ 527.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=12.3.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-03T17:40:34Z`
+  - `build-date=2026-08-10T21:51:06Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-08-03T17:40:34Z`
+  - `org.opencontainers.image.created=2026-08-10T21:51:06Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
+  - `org.opencontainers.image.revision=f79522b6176b2c2293398c933c4f7a44008ab395`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
+  - `vcs-ref=f79522b6176b2c2293398c933c4f7a44008ab395`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.3.2`
@@ -555,15 +555,15 @@ $ dnf --quiet download --source --url libacl-2.4.0-1.el10_2
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.7.7-8.el10_1.x86_64`
+### `rpm` package: `libarchive-3.7.7-10.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.7.7-8.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-8.el10_1.src.rpm
+$ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-10.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
@@ -1208,11 +1208,16 @@ Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-l
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `policycoreutils-3.10-1.el10.x86_64`
+### `rpm` package: `policycoreutils-3.10-2.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url policycoreutils-3.10-2.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.10-2.el10_2.src.rpm
+```
 
 ### `rpm` package: `popt-1.19-8.el10.x86_64`
 
@@ -1538,11 +1543,16 @@ $ dnf --quiet download --source --url tpm2-tss-4.1.3-6.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026b-1.el10.noarch`
+### `rpm` package: `tzdata-2026c-1.el10_2.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026c-1.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
