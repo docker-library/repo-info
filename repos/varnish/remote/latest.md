@@ -1,7 +1,7 @@
 ## `varnish:latest`
 
 ```console
-$ docker pull varnish@sha256:4c27969e671ef7ca9110072ba298fb4a53027ddf244266adfa46df0f722f88c1
+$ docker pull varnish@sha256:dab6ab41664d04cb948ca3441a2effa7a1406cac474094851d83fa7fdceec59a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,48 +14,50 @@ $ docker pull varnish@sha256:4c27969e671ef7ca9110072ba298fb4a53027ddf244266adfa4
 ### `varnish:latest` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:dd90730bdc3b8ba73623b94f6176eb6f52106e498deabb3c71e2ba6173596264
+$ docker pull varnish@sha256:063aa04b3dbe757c48a85266b80bce2aef7d532fc7f3291bc760971866ca6b21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.1 MB (125063188 bytes)**  
+-	Total Size: **132.4 MB (132412810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c58f8a67edfb58a44b23a3b5654bb87c42b35bccf2e5e7281f1796c9e7eccf93`
+-	Image ID: `sha256:1b6ec3bb87308fdb848672a2b3f21b49a951e424c3746f1a5d21049dc3fa4d48`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 
 ```dockerfile
 # Mon, 03 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1785715200'
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 ARG REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344
-# Wed, 05 Aug 2026 00:39:46 GMT
-ARG VARNISH_VERSION_NUMBER=9.0.3-3
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
+ARG VARNISH_VERSION_NUMBER=9.0.3-4
+# Wed, 12 Aug 2026 17:27:13 GMT
+ARG VARNISH_OTEL_VERSION_NUMBER=3.0.0-1
+# Wed, 12 Aug 2026 17:27:13 GMT
 ARG TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 ENV VMOD_DEPS=autoconf-archive automake curl libtool make pkg-config python3-sphinx varnish-dev
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 ENV VARNISH_SIZE=100M
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 ENV VSM_NOPID=1
-# Wed, 05 Aug 2026 00:39:46 GMT
-# ARGS: REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344 VARNISH_VERSION_NUMBER=9.0.3-3 TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
-RUN set -ex;     . /etc/os-release;     VARNISH_VERSION=$VARNISH_VERSION_NUMBER~$VERSION_CODENAME;     BASE_PKGS="apt-utils automake git gpg libgetdns-dev libtool make pkg-config python3-docutils";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;         apt-get update;     apt-get install -y curl $BASE_PKGS;     mkdir -p /etc/apt/keyrings;     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys $REPO_FINGERPRINT;     gpg --batch --armor --export "$REPO_FINGERPRINT" > /etc/apt/keyrings/varnish.gpg;     echo "deb [signed-by=/etc/apt/keyrings/varnish.gpg] https://packages.varnish-software.com/varnish/$ID $VERSION_CODENAME main" | tee -a /etc/apt/sources.list.d/varnish.list;     apt-get update;     adduser --uid 1000 --quiet --system --no-create-home --home /nonexistent --group varnish;     adduser --uid 1001 --quiet --system --no-create-home --home /nonexistent --ingroup varnish vcache;     adduser --uid 1002 --quiet --system --no-create-home --home /nonexistent --ingroup varnish varnishlog;         apt-get update;     apt-get install -y --no-install-recommends 				varnish=${VARNISH_VERSION} 				varnish-dev=${VARNISH_VERSION} 				varnish-modules=${VARNISH_VERSION} 				vmod-cfg=${VARNISH_VERSION} 				vmod-digest=${VARNISH_VERSION} 				vmod-fileserver=${VARNISH_VERSION} 				vmod-geoip2=${VARNISH_VERSION} 				vmod-k8s-endpoint=${VARNISH_VERSION} 				vmod-jq=${VARNISH_VERSION} 				vmod-querystring=${VARNISH_VERSION} 				vmod-redis=${VARNISH_VERSION} 				vmod-reqwest=${VARNISH_VERSION} 				vmod-rers=${VARNISH_VERSION} 				vmod-uuid=${VARNISH_VERSION};         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;     cp vcls/verbose_builtin/verbose_builtin.vcl vcls/hit-miss/hit-miss.vcl /etc/varnish/;         apt-mark hold varnish;     apt-get -y purge --auto-remove $BASE_PKGS varnish-dev;     rm -rf /var/lib/apt/lists/* /usr/lib/varnish/vmods/libvmod_*.la;     rm -rf ~/.gnupg;     chown varnish /var/lib/varnish;     mkdir -p -m 1777 /var/lib/varnish/varnishd # buildkit
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
+# ARGS: REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344 VARNISH_VERSION_NUMBER=9.0.3-4 VARNISH_OTEL_VERSION_NUMBER=3.0.0-1 TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
+RUN set -ex;     . /etc/os-release;     VARNISH_VERSION=$VARNISH_VERSION_NUMBER~$VERSION_CODENAME;     VARNISH_OTEL_VERSION=$VARNISH_OTEL_VERSION_NUMBER~$VERSION_CODENAME;     BASE_PKGS="apt-utils automake git gpg libgetdns-dev libtool make pkg-config python3-docutils";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;         apt-get update;     apt-get install -y curl $BASE_PKGS;     mkdir -p /etc/apt/keyrings;     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys $REPO_FINGERPRINT;     gpg --batch --armor --export "$REPO_FINGERPRINT" > /etc/apt/keyrings/varnish.gpg;     echo "deb [signed-by=/etc/apt/keyrings/varnish.gpg] https://packages.varnish-software.com/varnish/$ID $VERSION_CODENAME main" | tee -a /etc/apt/sources.list.d/varnish.list;     apt-get update;     adduser --uid 1000 --quiet --system --no-create-home --home /nonexistent --group varnish;     adduser --uid 1001 --quiet --system --no-create-home --home /nonexistent --ingroup varnish vcache;     adduser --uid 1002 --quiet --system --no-create-home --home /nonexistent --ingroup varnish varnishlog;         apt-get update;     apt-get install -y --no-install-recommends 				varnish=${VARNISH_VERSION} 				varnish-dev=${VARNISH_VERSION} 				varnish-modules=${VARNISH_VERSION} 				vmod-cfg=${VARNISH_VERSION} 				vmod-digest=${VARNISH_VERSION} 				vmod-fileserver=${VARNISH_VERSION} 				vmod-geoip2=${VARNISH_VERSION} 				vmod-k8s-endpoint=${VARNISH_VERSION} 				vmod-jq=${VARNISH_VERSION} 				vmod-querystring=${VARNISH_VERSION} 				vmod-redis=${VARNISH_VERSION} 				vmod-reqwest=${VARNISH_VERSION} 				vmod-rers=${VARNISH_VERSION} 				varnish-otel=$VARNISH_OTEL_VERSION 				vmod-uuid=${VARNISH_VERSION};         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;     cp vcls/verbose_builtin/verbose_builtin.vcl vcls/hit-miss/hit-miss.vcl /etc/varnish/;         apt-mark hold varnish;     apt-get -y purge --auto-remove $BASE_PKGS varnish-dev;     rm -rf /var/lib/apt/lists/* /usr/lib/varnish/vmods/libvmod_*.la;     rm -rf ~/.gnupg;     chown varnish /var/lib/varnish;     mkdir -p -m 1777 /var/lib/varnish/varnishd # buildkit
+# Wed, 12 Aug 2026 17:27:13 GMT
 WORKDIR /etc/varnish
-# Wed, 05 Aug 2026 00:39:46 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 COPY scripts/ /usr/local/bin/ # buildkit
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 COPY default.vcl /etc/varnish/ # buildkit
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 COPY index.html /var/www/html/ # buildkit
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 USER varnish
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 EXPOSE map[80/tcp:{} 8443/tcp:{}]
-# Wed, 05 Aug 2026 00:39:47 GMT
+# Wed, 12 Aug 2026 17:27:13 GMT
 CMD []
 ```
 
@@ -64,92 +66,94 @@ CMD []
 		Last Modified: Tue, 04 Aug 2026 23:52:43 GMT  
 		Size: 29.8 MB (29780765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5abd463899a2b60229f9574315ea9b6e8a9bf5c62b95c6d2133f4c7c1e11cb3`  
-		Last Modified: Wed, 05 Aug 2026 00:40:00 GMT  
-		Size: 95.3 MB (95279541 bytes)  
+	-	`sha256:386f77363a0a52bc9b1771c285e2afd0a17ff205e99047b62f9ac8d0ab13c77b`  
+		Last Modified: Wed, 12 Aug 2026 17:27:27 GMT  
+		Size: 102.6 MB (102629157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:033d91e34cb846e5302950a97ec58222239dc6ddcfd09993e0e14f2f205660eb`  
-		Last Modified: Wed, 05 Aug 2026 00:39:58 GMT  
-		Size: 494.0 B  
+	-	`sha256:3c6f78eebad93ee69153c99e02727bf5986d502a9b8726c59968d9088539d9f5`  
+		Last Modified: Wed, 12 Aug 2026 17:27:25 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15114431b6a37bcacf1f06e4fa082a2ce354d562273ef9840894c8ffa3b1c51d`  
-		Last Modified: Wed, 05 Aug 2026 00:39:58 GMT  
-		Size: 1.0 KB (1008 bytes)  
+	-	`sha256:e18298aa3480c4bb83373f50b8808e94e7f7c9ba7b00e0c31ec6aae437eacc4b`  
+		Last Modified: Wed, 12 Aug 2026 17:27:25 GMT  
+		Size: 1.0 KB (1009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:656920ae9d0ad23e9d9a381414b58ef0bed5b8fb79bfbf70afa05b439d4e1fd2`  
-		Last Modified: Wed, 05 Aug 2026 00:39:58 GMT  
-		Size: 1.3 KB (1348 bytes)  
+	-	`sha256:4ccb1f718e7761a3649df2e61f5541998b4b2dbc56908064c305a010bbfb56e5`  
+		Last Modified: Wed, 12 Aug 2026 17:27:25 GMT  
+		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `varnish:latest` - unknown; unknown
 
 ```console
-$ docker pull varnish@sha256:4cca90cbd544c574b171d66b750ddb96d4296a9c66d7c74fb3ec11fa720b07e3
+$ docker pull varnish@sha256:ed469d42698e4dd48a9983cb49eeb8c06e912436d6de928110464951d0e41ab5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.3 KB (20293 bytes)**  
+-	Total Size: **20.7 KB (20744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:546eb2b1fea64889e2ea5c8747da6b443a6929f66f385e95dfe38fcb6d14bfc9`
+-	Image ID: `sha256:44b86eccaa8455aad5e7434f5061331b897c4d4c15586f65873e6f5fa6467ff8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d72a2660ac35a18d8048b410aba771490021b60dc4e4961a66fe6c1a196c2ec`  
-		Last Modified: Wed, 05 Aug 2026 00:39:58 GMT  
-		Size: 20.3 KB (20293 bytes)  
+	-	`sha256:3317b81cf435f04242fff6fd5e3cf5fdbad4e0eaf3acfcc3bbff1814b8d01281`  
+		Last Modified: Wed, 12 Aug 2026 17:27:25 GMT  
+		Size: 20.7 KB (20744 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `varnish:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull varnish@sha256:f6b578c2aca9198d2e9d4123f24250c144abc1a8e4ad46620b816b00dd8f499b
+$ docker pull varnish@sha256:f968a6ffe30dc0505a7a20cbef479b7b576a517e72e3967c4048b572fde676fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.9 MB (118868899 bytes)**  
+-	Total Size: **125.6 MB (125567938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4531d148c18ae278d331186a6d338465938b5f3fed101e31a99043ccb5422b66`
+-	Image ID: `sha256:a525a48ea11e636a9199cced1f53fd93e13fabcf1c3fbae5e48381d089655b3d`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 
 ```dockerfile
 # Mon, 03 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1785715200'
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 ARG REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344
-# Wed, 05 Aug 2026 00:41:56 GMT
-ARG VARNISH_VERSION_NUMBER=9.0.3-3
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
+ARG VARNISH_VERSION_NUMBER=9.0.3-4
+# Wed, 12 Aug 2026 17:33:22 GMT
+ARG VARNISH_OTEL_VERSION_NUMBER=3.0.0-1
+# Wed, 12 Aug 2026 17:33:22 GMT
 ARG TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 ENV VMOD_DEPS=autoconf-archive automake curl libtool make pkg-config python3-sphinx varnish-dev
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 ENV VARNISH_SIZE=100M
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 ENV VSM_NOPID=1
-# Wed, 05 Aug 2026 00:41:56 GMT
-# ARGS: REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344 VARNISH_VERSION_NUMBER=9.0.3-3 TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
-RUN set -ex;     . /etc/os-release;     VARNISH_VERSION=$VARNISH_VERSION_NUMBER~$VERSION_CODENAME;     BASE_PKGS="apt-utils automake git gpg libgetdns-dev libtool make pkg-config python3-docutils";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;         apt-get update;     apt-get install -y curl $BASE_PKGS;     mkdir -p /etc/apt/keyrings;     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys $REPO_FINGERPRINT;     gpg --batch --armor --export "$REPO_FINGERPRINT" > /etc/apt/keyrings/varnish.gpg;     echo "deb [signed-by=/etc/apt/keyrings/varnish.gpg] https://packages.varnish-software.com/varnish/$ID $VERSION_CODENAME main" | tee -a /etc/apt/sources.list.d/varnish.list;     apt-get update;     adduser --uid 1000 --quiet --system --no-create-home --home /nonexistent --group varnish;     adduser --uid 1001 --quiet --system --no-create-home --home /nonexistent --ingroup varnish vcache;     adduser --uid 1002 --quiet --system --no-create-home --home /nonexistent --ingroup varnish varnishlog;         apt-get update;     apt-get install -y --no-install-recommends 				varnish=${VARNISH_VERSION} 				varnish-dev=${VARNISH_VERSION} 				varnish-modules=${VARNISH_VERSION} 				vmod-cfg=${VARNISH_VERSION} 				vmod-digest=${VARNISH_VERSION} 				vmod-fileserver=${VARNISH_VERSION} 				vmod-geoip2=${VARNISH_VERSION} 				vmod-k8s-endpoint=${VARNISH_VERSION} 				vmod-jq=${VARNISH_VERSION} 				vmod-querystring=${VARNISH_VERSION} 				vmod-redis=${VARNISH_VERSION} 				vmod-reqwest=${VARNISH_VERSION} 				vmod-rers=${VARNISH_VERSION} 				vmod-uuid=${VARNISH_VERSION};         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;     cp vcls/verbose_builtin/verbose_builtin.vcl vcls/hit-miss/hit-miss.vcl /etc/varnish/;         apt-mark hold varnish;     apt-get -y purge --auto-remove $BASE_PKGS varnish-dev;     rm -rf /var/lib/apt/lists/* /usr/lib/varnish/vmods/libvmod_*.la;     rm -rf ~/.gnupg;     chown varnish /var/lib/varnish;     mkdir -p -m 1777 /var/lib/varnish/varnishd # buildkit
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
+# ARGS: REPO_FINGERPRINT=694566269779DFAC975ED9BDD0525EAE838B3344 VARNISH_VERSION_NUMBER=9.0.3-4 VARNISH_OTEL_VERSION_NUMBER=3.0.0-1 TOOLBOX_COMMIT=da1c5ce23d2ad81032bb45627d10a8dcb2c6f1d9
+RUN set -ex;     . /etc/os-release;     VARNISH_VERSION=$VARNISH_VERSION_NUMBER~$VERSION_CODENAME;     VARNISH_OTEL_VERSION=$VARNISH_OTEL_VERSION_NUMBER~$VERSION_CODENAME;     BASE_PKGS="apt-utils automake git gpg libgetdns-dev libtool make pkg-config python3-docutils";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;         apt-get update;     apt-get install -y curl $BASE_PKGS;     mkdir -p /etc/apt/keyrings;     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys $REPO_FINGERPRINT;     gpg --batch --armor --export "$REPO_FINGERPRINT" > /etc/apt/keyrings/varnish.gpg;     echo "deb [signed-by=/etc/apt/keyrings/varnish.gpg] https://packages.varnish-software.com/varnish/$ID $VERSION_CODENAME main" | tee -a /etc/apt/sources.list.d/varnish.list;     apt-get update;     adduser --uid 1000 --quiet --system --no-create-home --home /nonexistent --group varnish;     adduser --uid 1001 --quiet --system --no-create-home --home /nonexistent --ingroup varnish vcache;     adduser --uid 1002 --quiet --system --no-create-home --home /nonexistent --ingroup varnish varnishlog;         apt-get update;     apt-get install -y --no-install-recommends 				varnish=${VARNISH_VERSION} 				varnish-dev=${VARNISH_VERSION} 				varnish-modules=${VARNISH_VERSION} 				vmod-cfg=${VARNISH_VERSION} 				vmod-digest=${VARNISH_VERSION} 				vmod-fileserver=${VARNISH_VERSION} 				vmod-geoip2=${VARNISH_VERSION} 				vmod-k8s-endpoint=${VARNISH_VERSION} 				vmod-jq=${VARNISH_VERSION} 				vmod-querystring=${VARNISH_VERSION} 				vmod-redis=${VARNISH_VERSION} 				vmod-reqwest=${VARNISH_VERSION} 				vmod-rers=${VARNISH_VERSION} 				varnish-otel=$VARNISH_OTEL_VERSION 				vmod-uuid=${VARNISH_VERSION};         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;     cp vcls/verbose_builtin/verbose_builtin.vcl vcls/hit-miss/hit-miss.vcl /etc/varnish/;         apt-mark hold varnish;     apt-get -y purge --auto-remove $BASE_PKGS varnish-dev;     rm -rf /var/lib/apt/lists/* /usr/lib/varnish/vmods/libvmod_*.la;     rm -rf ~/.gnupg;     chown varnish /var/lib/varnish;     mkdir -p -m 1777 /var/lib/varnish/varnishd # buildkit
+# Wed, 12 Aug 2026 17:33:22 GMT
 WORKDIR /etc/varnish
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 COPY scripts/ /usr/local/bin/ # buildkit
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 COPY default.vcl /etc/varnish/ # buildkit
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 COPY index.html /var/www/html/ # buildkit
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 USER varnish
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 EXPOSE map[80/tcp:{} 8443/tcp:{}]
-# Wed, 05 Aug 2026 00:41:56 GMT
+# Wed, 12 Aug 2026 17:33:22 GMT
 CMD []
 ```
 
@@ -158,43 +162,43 @@ CMD []
 		Last Modified: Tue, 04 Aug 2026 23:52:14 GMT  
 		Size: 30.1 MB (30143609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e85b2f8135239fa72dc9650524339ba5e1e6831018d9b7ecbdf9d327d17ce4a0`  
-		Last Modified: Wed, 05 Aug 2026 00:42:10 GMT  
-		Size: 88.7 MB (88722401 bytes)  
+	-	`sha256:422f6757d7957dac2e125c0d2dd54a8bdb5d4b9ff8ea5af7c0cc612d79579940`  
+		Last Modified: Wed, 12 Aug 2026 17:33:36 GMT  
+		Size: 95.4 MB (95421440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df3aa52ae6ac8bb52c1e58697d783a83315f889f2db0bfab0f948eeb5e06eec1`  
-		Last Modified: Wed, 05 Aug 2026 00:42:07 GMT  
+	-	`sha256:bf39d1a1c0e339c7c4b50f3b99573bf48d0b9309116e2548477c9d443d3c4f8e`  
+		Last Modified: Wed, 12 Aug 2026 17:33:33 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a529d063ced1e70255b1bdca7453b24796ec3e7756bdcd9d3390b1f5ec628dc5`  
-		Last Modified: Wed, 05 Aug 2026 00:42:07 GMT  
+	-	`sha256:8de7b5d8b26239e7b5bb2988ee2c0bb774e5f6f43acd244e7f6bba94b8bfa627`  
+		Last Modified: Wed, 12 Aug 2026 17:33:33 GMT  
 		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4bf9176c72eeaab7f14d59ffc1f9f4d1a45a7e1c075d73e70358d96413719b7`  
-		Last Modified: Wed, 05 Aug 2026 00:42:07 GMT  
+	-	`sha256:cf2c403eebd3f1db043c844d6a295cdb45595910fb7f1f03358ab0af33cdcd79`  
+		Last Modified: Wed, 12 Aug 2026 17:33:34 GMT  
 		Size: 1.4 KB (1350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `varnish:latest` - unknown; unknown
 
 ```console
-$ docker pull varnish@sha256:fdab5e454a335da245cecd52c55610f34a496851851a29e16b66cbe52c156c4a
+$ docker pull varnish@sha256:ddb1226ee5ff9dd565138676bef8b7586ffd733bd2c397e4f053550300284cd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.4 KB (20421 bytes)**  
+-	Total Size: **20.9 KB (20867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f10663f2e9487aa63d3829b15f39d564e00685cdaadbfcfee9b3145d0b327e25`
+-	Image ID: `sha256:796dda4bc808e4fc139153168cd9ba3b99752b4102dc94b8605bc96a192082c3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e6264c47db289dcd3331de47ff983f4a619249db0f6d4a256d646abba77c808b`  
-		Last Modified: Wed, 05 Aug 2026 00:42:07 GMT  
-		Size: 20.4 KB (20421 bytes)  
+	-	`sha256:2e60457db363a2929811fe47d95198642281660129260a78dce57cb874b827ef`  
+		Last Modified: Wed, 12 Aug 2026 17:33:34 GMT  
+		Size: 20.9 KB (20867 bytes)  
 		MIME: application/vnd.in-toto+json
