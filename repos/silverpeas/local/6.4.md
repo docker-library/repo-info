@@ -1003,9 +1003,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris flac=1.3.3-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3.orig.tar.xz' flac_1.3.3.orig.tar.xz 1044472 SHA256:213e82bd716c9de6db2f98bcadbc4c24c7e2efe8c75939a1a84e28539c4e1748
-'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3-2ubuntu0.2.debian.tar.xz' flac_1.3.3-2ubuntu0.2.debian.tar.xz 19988 SHA256:31b31b70a6081b92fdc422b87483c50ddc8adcbd468c9783e6c8d6165d0cffc4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3-2ubuntu0.2.dsc' flac_1.3.3-2ubuntu0.2.dsc 2356 SHA256:31024ace7d30aaaf5ce06f2520a20fa46f8f1610febb5b4eac62662fc2d4eb9e
+'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3.orig.tar.xz' flac_1.3.3.orig.tar.xz 1044472 SHA512:d6417e14fab0c41b2df369e5e39ce62a5f588e491af4d465b0162f74e171e5549b2f061867f344bfbf8aaccd246bf5f2acd697e532a2c7901c920c69429b1a28
+'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3-2ubuntu0.2.debian.tar.xz' flac_1.3.3-2ubuntu0.2.debian.tar.xz 19988 SHA512:82d452a573989a27aae0a4abbe9d422d30ebf41d05c7456aa683b35671d424197d36f82f8658d8e11dbb3ffc142156a99809b871d287de471698f3d8afe7b7f4
+'http://archive.ubuntu.com/ubuntu/pool/main/f/flac/flac_1.3.3-2ubuntu0.2.dsc' flac_1.3.3-2ubuntu0.2.dsc 2356 SHA512:50a0f450ce5294b054ec31634c6e4ea8ee95a1cbe6ffa6266ec54925a51034286ccfbfcc74e6e9f9e4d248c69cad5de13cdc3b2cf50717960d6cb8cc11063d51
 ```
 
 ### `dpkg` source package: `flite=2.2-3`
@@ -1431,10 +1431,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gpgme1.0=1.16.0-1.2ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2' gpgme1.0_1.16.0.orig.tar.bz2 1718913 SHA256:6c8cc4aedb10d5d4c905894ba1d850544619ee765606ac43df7405865de29ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2.asc' gpgme1.0_1.16.0.orig.tar.bz2.asc 228 SHA256:d362c79f9a352eb5119b94820306b27de89afbb0a6a223910e873bf86215616a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.2.debian.tar.xz' gpgme1.0_1.16.0-1.2ubuntu4.2.debian.tar.xz 26868 SHA256:92bb50c2880d8c4e5ffb6005a6548467c347fb676cb69e0d9dad256249dad3b8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.2.dsc' gpgme1.0_1.16.0-1.2ubuntu4.2.dsc 3057 SHA256:06154fbe73bbf0f821e32eaeb37a282d7462bbce134257351093e582d235a47f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2' gpgme1.0_1.16.0.orig.tar.bz2 1718913 SHA512:69487be69612e9bf0221ff56ae687248bd13635db1b7087130e93c1670e38f3c810bbca17723555c04fe207976c35871bbc3da005179ce099504321cf33636e4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2.asc' gpgme1.0_1.16.0.orig.tar.bz2.asc 228 SHA512:fbafd1dbe1fd96ed6457ffbda6b7de603cf66b5325e233c08a33b2b5b977ec116abf938608260a85ad007e08b54a474ebbf8732c75ad682de535e5b563591f19
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.2.debian.tar.xz' gpgme1.0_1.16.0-1.2ubuntu4.2.debian.tar.xz 26868 SHA512:f41d8c0c51b3537953bfd38bc4e02fa063ae7f8b65b078293d6e04277ac2e90fd85621c8331938186775feff42b71cfcab31884c391aa05ad95374e34e0fb4fd
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.2.dsc' gpgme1.0_1.16.0-1.2ubuntu4.2.dsc 3057 SHA512:4359b0b51205100cc99bfa61a632a7fe8876704e6d361288f388b2421f62af69aca32b69499b994fc961fb19b01596755cc444aaf23f182e61d436a10f5080bc
 ```
 
 ### `dpkg` source package: `gpm=1.20.7-10build1`
@@ -4219,9 +4219,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libwebp=1.2.2-2ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2.orig.tar.gz' libwebp_1.2.2.orig.tar.gz 4117468 SHA256:7656532f837af5f4cec3ff6bafe552c044dc39bf453587bd5b77450802f4aee6
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz' libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz 10468 SHA256:b6d9d43c6eaa96cb3a0720819add82664d37cca2fe4fcd3245db533919e4d779
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.dsc' libwebp_1.2.2-2ubuntu0.22.04.2.dsc 2186 SHA256:4870b586cae8beb49c8ec15fa090ce37e2ad73a599de55b05dac4476e201b99b
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2.orig.tar.gz' libwebp_1.2.2.orig.tar.gz 4117468 SHA512:0dd0a721352b513a218d55383bcd0cc45b786df8089f70f87257b5dcc0c4e2f1798e20f1ca98b8fe51710abb667f9c4c14f20f980a11c484c8832f0dc66e3bff
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz' libwebp_1.2.2-2ubuntu0.22.04.2.debian.tar.xz 10468 SHA512:3c524505239652dbd3252aaaeee9161b0bb4c2ad146849341e87370760554de17d748d9b6f03c5e35db2d3f3dfedcf5e62b165502d207d2a114bda907483a830
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.2.dsc' libwebp_1.2.2-2ubuntu0.22.04.2.dsc 2186 SHA512:b81aa127277d4927b79d4ea5c8b63369f0b63e4944cc70bd98b277a1ae890169d91f4a0f30502830975bd2e34faa7a861b82d61f19ef660be1b7cf1d86010668
 ```
 
 ### `dpkg` source package: `libwpd=0.10.3-2build1`
@@ -4301,10 +4301,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.7.5-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA256:78992abcd2bfdebe657699203ad8914e7ae77025175460e04a1045387192a978
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA256:8332442d1675118c43e341630bf62aeb93972254d139bb865cc047006ca7e8d6
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.diff.gz' libx11_1.7.5-1ubuntu0.3.diff.gz 98716 SHA256:cb704ffd480c5b895fa2eeed05dde55029d0f255d1da129a1c9208945743120f
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.dsc' libx11_1.7.5-1ubuntu0.3.dsc 2654 SHA256:0dd283f309406a9b771d494de14edf87409e7afcbdbffb58a4f97d8ddd44c574
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA512:90474f5f95c3498a02100aeeb6b5ad7ae9076bc40a70cdd828bd881adac0bf278002186142f2760e5504cf82120f4869798831e0e2332ecbc6903e8f7c9114ab
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA512:75139b9f7b2f19aed3d3a66ea8b883480db2fa56d713bb0160ea8a0faba208da4c241768f9f2703f723f13906438eda3117f489d7d5d17fbe1cbb75b13c9935d
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.diff.gz' libx11_1.7.5-1ubuntu0.3.diff.gz 98716 SHA512:54531c960c2252c99e2f32f0d051eb1e764f181aaa68fc20a053384f70b14f32872e9ca05ed45affd2e97ea2821cdd8c3e3ebacf8c81c3088386a7d95214f64b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.3.dsc' libx11_1.7.5-1ubuntu0.3.dsc 2654 SHA512:97c9c7e8096cdb264d45a08f0333025ded9b74296689809d687de62b60b5d5ef7d2dc8b592b8155dbe12aa18129f97a12b978234b52ba2ed553568d207c62fce
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.9-1build5`
@@ -5701,9 +5701,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA256:7ecb85faef890f1f56c4e6d2eb73988b02283b32e6367a24cd006b91dfdb7979
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.dsc' procps_3.3.17-6ubuntu2.1.dsc 2111 SHA256:2160554b394a265e1be8fe668ea15955ccbb89c5ccf8f53ea2b3f38abb3e2d93
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA512:59e9a5013430fd9da508c4655d58375dc32e025bb502bb28fb9a92a48e4f2838b3355e92b4648f7384b2050064d17079bf4595d889822ebb5030006bc154a1a7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.dsc' procps_3.3.17-6ubuntu2.1.dsc 2111 SHA512:585933efef8d8e93b4187c65b678d146960480386ac3172097c790723ffadbf1d5347e05cc6de2682adcb96dd5b45ec1f98a3e00cff33ad2b30f729939896aca
 ```
 
 ### `dpkg` source package: `pulseaudio=1:15.99.1+dfsg1-1ubuntu2.2`
@@ -6288,14 +6288,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.21.debian.tar.xz' systemd_249.11-0ubuntu3.21.debian.tar.xz 269776 SHA512:69037e8087700a97e6128f36c3d3c5a75a5c8ba5daea3bdcb02512c0c6bb51da65c125fe0f30a45500dea8cd8b4c626dd252123baa5b368d52322c60e27329a6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.21.dsc' systemd_249.11-0ubuntu3.21.dsc 5907 SHA512:8aef6fd4cf395232a58ac3d29ef63ee2e3c5ead2db35831f9d410bfaab0c24235ff9a5852d1d9ffe3d093355bdd2df7846f090161b27f0f452cc71d2dac7bcb8
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
