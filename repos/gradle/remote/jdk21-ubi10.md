@@ -1,7 +1,7 @@
 ## `gradle:jdk21-ubi10`
 
 ```console
-$ docker pull gradle@sha256:6de6d92d97ef024e3d280e5eac99a02c53f3871da4df3a8204dfeb1fbc2b1b70
+$ docker pull gradle@sha256:65860c3ca8bd51430be7072da346148543d510332bc07d50b045500686037bbc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -182,328 +182,328 @@ $ docker pull gradle@sha256:20376550f1ef68503e5d36ba5c0af41e81aaed10ced7996db920
 ### `gradle:jdk21-ubi10` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:213ed9beb22775426a16e236cd975ac154439bcc34b63e9b3a4ccd8c8dafdbbf
+$ docker pull gradle@sha256:b074716bb4f26886ef8f83043efd01f6f4569feb58cb521d76bb1e994c7a76c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **416.8 MB (416821710 bytes)**  
+-	Total Size: **416.9 MB (416893645 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9eb1f1e5b549e794ad93323bb5ebc90ece8cdc69f3958ad9e8a55e7752ff685`
+-	Image ID: `sha256:5786e12916156cf6a041a243ccb8802a061ec83937f446d669575b85af7532bf`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 LABEL io.openshift.tags="minimal rhel10"
-# Mon, 03 Aug 2026 17:42:25 GMT
+# Mon, 10 Aug 2026 21:53:25 GMT
 ENV container oci
-# Mon, 03 Aug 2026 17:42:26 GMT
-COPY dir:26fa351aba4d56b41677f6e2b1ab88063d4c9bbfc6176232f37e77eaf773115e in /      
-# Mon, 03 Aug 2026 17:42:26 GMT
+# Mon, 10 Aug 2026 21:53:26 GMT
+COPY dir:9b127e1be7f03495b8968f9753237fa3e68b28fbfc2ca0a6affa6cd45dc58ba9 in /      
+# Mon, 10 Aug 2026 21:53:26 GMT
 COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Mon, 03 Aug 2026 17:42:26 GMT
+# Mon, 10 Aug 2026 21:53:26 GMT
 CMD ["/bin/bash"]
-# Mon, 03 Aug 2026 17:42:26 GMT
-COPY dir:866ddf8cef7c479ff27d941240740a59788ad28338ae4d90f502ab418f7eb118 in /usr/share/buildinfo/      
-# Mon, 03 Aug 2026 17:42:26 GMT
-COPY dir:866ddf8cef7c479ff27d941240740a59788ad28338ae4d90f502ab418f7eb118 in /root/buildinfo/      
-# Mon, 03 Aug 2026 17:42:26 GMT
-LABEL "org.opencontainers.image.created"="2026-08-03T17:42:02Z" "org.opencontainers.image.revision"="b9fdece4d2c962654c1c4a6f9578551c79e4c4c6" "build-date"="2026-08-03T17:42:02Z" "architecture"="aarch64" "vcs-ref"="b9fdece4d2c962654c1c4a6f9578551c79e4c4c6" "vcs-type"="git" "release"="1785778687"org.opencontainers.image.created=2026-08-03T17:42:02Z,org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6
-# Tue, 04 Aug 2026 21:04:02 GMT
+# Mon, 10 Aug 2026 21:53:26 GMT
+COPY dir:9ab660a0e21475a7f5a194ebb4173ccfdc8efc453ad00cf084e289cfef69ef69 in /usr/share/buildinfo/      
+# Mon, 10 Aug 2026 21:53:26 GMT
+COPY dir:9ab660a0e21475a7f5a194ebb4173ccfdc8efc453ad00cf084e289cfef69ef69 in /root/buildinfo/      
+# Mon, 10 Aug 2026 21:53:26 GMT
+LABEL "org.opencontainers.image.created"="2026-08-10T21:53:05Z" "org.opencontainers.image.revision"="f79522b6176b2c2293398c933c4f7a44008ab395" "build-date"="2026-08-10T21:53:05Z" "architecture"="aarch64" "vcs-ref"="f79522b6176b2c2293398c933c4f7a44008ab395" "vcs-type"="git" "release"="1786398535"org.opencontainers.image.created=2026-08-10T21:53:05Z,org.opencontainers.image.revision=f79522b6176b2c2293398c933c4f7a44008ab395
+# Tue, 11 Aug 2026 19:05:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 04 Aug 2026 21:04:02 GMT
+# Tue, 11 Aug 2026 19:05:23 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Aug 2026 21:04:02 GMT
+# Tue, 11 Aug 2026 19:05:23 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 04 Aug 2026 21:04:02 GMT
+# Tue, 11 Aug 2026 19:05:23 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Tue, 04 Aug 2026 21:04:02 GMT
+# Tue, 11 Aug 2026 19:05:23 GMT
 ENV JAVA_VERSION=jdk-21.0.11+10
-# Tue, 04 Aug 2026 21:04:35 GMT
+# Tue, 11 Aug 2026 19:05:31 GMT
 RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='8d498ec88e1c1989fab95c6784240ab92d011e29c54d20a3f9c324b13476f9ad';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.11_10.tar.gz';          ;;        ppc64le)          ESUM='3d043ae96d2343962bf2307d8c55f19849fbfa4c6be9fe164a77d79263f0d989';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.11_10.tar.gz';          ;;        s390x)          ESUM='14dbe3cb226e64b945a36bea32686e8deec746504fe3ccee8de585c54af41ffd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.11_10.tar.gz';          ;;        x86_64)          ESUM='4b2220e232a97997b436ca6ab15cbf70171ecff52958a46159dfa5a8c44ca4de';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_x64_linux_hotspot_21.0.11_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 04 Aug 2026 21:04:36 GMT
+# Tue, 11 Aug 2026 19:05:33 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 04 Aug 2026 21:04:36 GMT
+# Tue, 11 Aug 2026 19:05:33 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 04 Aug 2026 21:04:36 GMT
+# Tue, 11 Aug 2026 19:05:33 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 04 Aug 2026 21:04:36 GMT
+# Tue, 11 Aug 2026 19:05:33 GMT
 CMD ["jshell"]
-# Mon, 10 Aug 2026 17:45:51 GMT
+# Tue, 11 Aug 2026 19:15:05 GMT
 CMD ["gradle"]
-# Mon, 10 Aug 2026 17:45:51 GMT
+# Tue, 11 Aug 2026 19:15:05 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 10 Aug 2026 17:45:51 GMT
+# Tue, 11 Aug 2026 19:15:05 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Mon, 10 Aug 2026 17:45:51 GMT
+# Tue, 11 Aug 2026 19:15:05 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 10 Aug 2026 17:45:51 GMT
+# Tue, 11 Aug 2026 19:15:05 GMT
 WORKDIR /home/gradle
-# Mon, 10 Aug 2026 17:45:57 GMT
+# Tue, 11 Aug 2026 19:15:09 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make         curl-minimal         wget         tar                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Mon, 10 Aug 2026 17:45:57 GMT
+# Tue, 11 Aug 2026 19:15:09 GMT
 ENV GRADLE_VERSION=9.7.0
-# Mon, 10 Aug 2026 17:45:57 GMT
+# Tue, 11 Aug 2026 19:15:09 GMT
 ARG GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
-# Mon, 10 Aug 2026 17:46:00 GMT
+# Tue, 11 Aug 2026 19:15:12 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 10 Aug 2026 17:46:00 GMT
+# Tue, 11 Aug 2026 19:15:12 GMT
 USER gradle
-# Mon, 10 Aug 2026 17:46:01 GMT
+# Tue, 11 Aug 2026 19:15:13 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Mon, 10 Aug 2026 17:46:01 GMT
+# Tue, 11 Aug 2026 19:15:13 GMT
 USER root
 ```
 
 -	Layers:
-	-	`sha256:37c5f70fcd6cd766028ac1d94a4780f9f0b7d6d0cef13f7218ef89620df991eb`  
-		Last Modified: Mon, 03 Aug 2026 18:50:21 GMT  
-		Size: 33.0 MB (33046883 bytes)  
+	-	`sha256:6ad2b21e4232c6d46ffbc015ce8e9bfb1643a196de1763d432d925693df6f338`  
+		Last Modified: Tue, 11 Aug 2026 00:19:28 GMT  
+		Size: 33.1 MB (33117757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e0e0ff01ad4c7a81ec54e1909ae773bd61cc9ae43d6f9539cf11cbf55a77177`  
-		Last Modified: Tue, 04 Aug 2026 21:04:19 GMT  
-		Size: 37.7 MB (37712120 bytes)  
+	-	`sha256:519fa617a7fddd48898cafc8558cc9c66953a00e80c350943347e42232517a07`  
+		Last Modified: Tue, 11 Aug 2026 19:05:53 GMT  
+		Size: 37.7 MB (37708989 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64921b5d02911fc744bec9f1b6ab0114540d943a28e1ac37dd5dfcc5a77a6416`  
-		Last Modified: Tue, 04 Aug 2026 21:04:56 GMT  
-		Size: 156.5 MB (156464391 bytes)  
+	-	`sha256:2d4dda32cd006f0e3d85128db18a25ebb945653b82cda03f4754e0346b4fb117`  
+		Last Modified: Tue, 11 Aug 2026 19:05:55 GMT  
+		Size: 156.5 MB (156464359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:731ed9d05ee970917503d53319f972fad60c43ae43bec040dfafcd194e890bf8`  
-		Last Modified: Tue, 04 Aug 2026 21:04:53 GMT  
+	-	`sha256:5fab4121dc9c442f6085aa1ffa8b960a409e27785b95aa1f76a16df650da515e`  
+		Last Modified: Tue, 11 Aug 2026 19:05:51 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d7de0325d4003f168f39463ae5f33119138c02e0f8575bddfb46c1894dc5181`  
-		Last Modified: Tue, 04 Aug 2026 21:04:53 GMT  
-		Size: 2.3 KB (2292 bytes)  
+	-	`sha256:8e05e611bcc80918e2b88de686f4a4c75ef8830a2f545e326ef1478e55f8df9b`  
+		Last Modified: Tue, 11 Aug 2026 19:05:51 GMT  
+		Size: 2.3 KB (2289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97acd4c1289493570715f4670bad67e405cf1c226e185cc6b28ccd5839f6da0c`  
-		Last Modified: Mon, 10 Aug 2026 17:46:21 GMT  
-		Size: 1.6 KB (1591 bytes)  
+	-	`sha256:f549ac4dbbae919d279d16c5190adc90689415fda5d240116e35bc7317a206da`  
+		Last Modified: Tue, 11 Aug 2026 19:15:32 GMT  
+		Size: 1.6 KB (1581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbb203d84353297a2888d599edb714925284ec58ed44b44ce1450742621bd85e`  
-		Last Modified: Mon, 10 Aug 2026 17:46:23 GMT  
-		Size: 39.3 MB (39336975 bytes)  
+	-	`sha256:2f6bdcf8a9c95f24fe6c0436fa0c28604536291223b713ace2b98383c4cc1270`  
+		Last Modified: Tue, 11 Aug 2026 19:15:33 GMT  
+		Size: 39.3 MB (39341315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d651554d0fa23d3a2223c72ac726861ee97df3bd3ab5cb77d116b4a250e2562b`  
-		Last Modified: Mon, 10 Aug 2026 17:46:26 GMT  
-		Size: 150.2 MB (150227953 bytes)  
+	-	`sha256:d20a3c0a6e8c5ccb20cb14ace60390983f69564e2f085ef6eca4b350b80a1571`  
+		Last Modified: Tue, 11 Aug 2026 19:15:36 GMT  
+		Size: 150.2 MB (150227856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f35da1309e69c1b5dae5c92f6b91919e5e0370078cf386bc7dc14f358cae6e7`  
-		Last Modified: Mon, 10 Aug 2026 17:46:21 GMT  
-		Size: 29.3 KB (29343 bytes)  
+	-	`sha256:8d163e738898c04a53164895f04e9c7c78ec892e19627d1834f8e2edfbbab22a`  
+		Last Modified: Tue, 11 Aug 2026 19:15:32 GMT  
+		Size: 29.3 KB (29337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:jdk21-ubi10` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:cf5ffa989eeae26d6dd82be970a514e701fb4981ed181942163cda8449c63890
+$ docker pull gradle@sha256:3aab225a6b72d3c534bd516d7c7de64795744a929ed49c2a56866a66ad5feb6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7120142 bytes)**  
+-	Total Size: **7.1 MB (7120149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95c6c49045a1d1bb091665a6bd62c8d064a02427fffcaf87ce10670f01fe1bde`
+-	Image ID: `sha256:132c7545ebbd3c1f547fec7b38b73248dbf9d090a8eaff5d04ca38c66d478032`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e0221a0d7bc95b9af4a1cf6e740d37f6296c70b7dfa084f69b7b852d51f889cf`  
-		Last Modified: Mon, 10 Aug 2026 17:46:21 GMT  
-		Size: 7.1 MB (7095491 bytes)  
+	-	`sha256:8efa573b5526a30a12668d63e63182e22945bdfcb55cce15bb933d68c5bf56cf`  
+		Last Modified: Tue, 11 Aug 2026 19:15:32 GMT  
+		Size: 7.1 MB (7095497 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8802db0a084b4eab9a44cf0eec9db1083b5157c2456bfbf3a95fd1dbd92fbc39`  
-		Last Modified: Mon, 10 Aug 2026 17:46:21 GMT  
-		Size: 24.7 KB (24651 bytes)  
+	-	`sha256:18ea29b22e6953f85601b6238049f252b08f2b75e2fd7381e31ea4def5bfd709`  
+		Last Modified: Tue, 11 Aug 2026 19:15:32 GMT  
+		Size: 24.7 KB (24652 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:jdk21-ubi10` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:434f75c83799cf7582d4441a8ac8ad539ce64a2cb214906e80afde0bb6e5a9b5
+$ docker pull gradle@sha256:5f4d12e947afb04bac678b006b76b27209223efd858c290b36499382137b3936
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.8 MB (428763658 bytes)**  
+-	Total Size: **428.8 MB (428777052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5210b4aac78342604f2ff906434471d6c6d41753c48bb4b01d2a215cd5f2dd28`
+-	Image ID: `sha256:cfe2b6885b5953aeca160e5c8063c77cb3e69b36cc48409d9e34100b3d3100bc`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 LABEL io.openshift.tags="minimal rhel10"
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 ENV container oci
-# Mon, 03 Aug 2026 17:50:45 GMT
-COPY dir:59842d43bb5f3afddc1c28e5e18da7b985b05428a00d20ae001285b8f505c302 in /      
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
+COPY dir:249066be360b20bac2c3d87c82d2fd5913a2bd1c8a7703095843f7bb07f442b8 in /      
+# Mon, 10 Aug 2026 21:59:05 GMT
 COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Mon, 03 Aug 2026 17:50:45 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
 CMD ["/bin/bash"]
-# Mon, 03 Aug 2026 17:50:45 GMT
-COPY dir:ae8dd099b872415c3b83342ad84051e92399936f8a2b6d52f98c685368d33413 in /usr/share/buildinfo/      
-# Mon, 03 Aug 2026 17:50:46 GMT
-COPY dir:ae8dd099b872415c3b83342ad84051e92399936f8a2b6d52f98c685368d33413 in /root/buildinfo/      
-# Mon, 03 Aug 2026 17:50:46 GMT
-LABEL "org.opencontainers.image.created"="2026-08-03T17:50:29Z" "org.opencontainers.image.revision"="b9fdece4d2c962654c1c4a6f9578551c79e4c4c6" "build-date"="2026-08-03T17:50:29Z" "architecture"="ppc64le" "vcs-ref"="b9fdece4d2c962654c1c4a6f9578551c79e4c4c6" "vcs-type"="git" "release"="1785778687"org.opencontainers.image.created=2026-08-03T17:50:29Z,org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6
-# Tue, 04 Aug 2026 20:54:03 GMT
+# Mon, 10 Aug 2026 21:59:05 GMT
+COPY dir:7876787ddee47582bd5037da96d6c1c51bee54abfb82e51e92e428cf06595bca in /usr/share/buildinfo/      
+# Mon, 10 Aug 2026 21:59:05 GMT
+COPY dir:7876787ddee47582bd5037da96d6c1c51bee54abfb82e51e92e428cf06595bca in /root/buildinfo/      
+# Mon, 10 Aug 2026 21:59:06 GMT
+LABEL "org.opencontainers.image.created"="2026-08-10T21:58:46Z" "org.opencontainers.image.revision"="f79522b6176b2c2293398c933c4f7a44008ab395" "build-date"="2026-08-10T21:58:46Z" "architecture"="ppc64le" "vcs-ref"="f79522b6176b2c2293398c933c4f7a44008ab395" "vcs-type"="git" "release"="1786398535"org.opencontainers.image.created=2026-08-10T21:58:46Z,org.opencontainers.image.revision=f79522b6176b2c2293398c933c4f7a44008ab395
+# Tue, 11 Aug 2026 20:19:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 04 Aug 2026 20:54:03 GMT
+# Tue, 11 Aug 2026 20:19:36 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Aug 2026 20:54:03 GMT
+# Tue, 11 Aug 2026 20:19:36 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 04 Aug 2026 20:54:03 GMT
+# Tue, 11 Aug 2026 20:19:36 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Tue, 04 Aug 2026 20:54:03 GMT
+# Tue, 11 Aug 2026 20:19:36 GMT
 ENV JAVA_VERSION=jdk-21.0.11+10
-# Tue, 04 Aug 2026 20:59:46 GMT
+# Tue, 11 Aug 2026 20:25:20 GMT
 RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='8d498ec88e1c1989fab95c6784240ab92d011e29c54d20a3f9c324b13476f9ad';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.11_10.tar.gz';          ;;        ppc64le)          ESUM='3d043ae96d2343962bf2307d8c55f19849fbfa4c6be9fe164a77d79263f0d989';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.11_10.tar.gz';          ;;        s390x)          ESUM='14dbe3cb226e64b945a36bea32686e8deec746504fe3ccee8de585c54af41ffd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.11_10.tar.gz';          ;;        x86_64)          ESUM='4b2220e232a97997b436ca6ab15cbf70171ecff52958a46159dfa5a8c44ca4de';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_x64_linux_hotspot_21.0.11_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Tue, 04 Aug 2026 20:59:49 GMT
+# Tue, 11 Aug 2026 20:25:23 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 04 Aug 2026 20:59:49 GMT
+# Tue, 11 Aug 2026 20:25:23 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 04 Aug 2026 20:59:49 GMT
+# Tue, 11 Aug 2026 20:25:23 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 04 Aug 2026 20:59:49 GMT
+# Tue, 11 Aug 2026 20:25:23 GMT
 CMD ["jshell"]
-# Tue, 04 Aug 2026 22:27:32 GMT
+# Tue, 11 Aug 2026 21:09:53 GMT
 CMD ["gradle"]
-# Tue, 04 Aug 2026 22:27:32 GMT
+# Tue, 11 Aug 2026 21:09:53 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 04 Aug 2026 22:27:32 GMT
+# Tue, 11 Aug 2026 21:09:53 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 101 gradle     && useradd --system --gid gradle --uid 101 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Tue, 04 Aug 2026 22:27:32 GMT
+# Tue, 11 Aug 2026 21:09:53 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 04 Aug 2026 22:27:32 GMT
+# Tue, 11 Aug 2026 21:09:55 GMT
 WORKDIR /home/gradle
-# Tue, 04 Aug 2026 22:27:50 GMT
+# Tue, 11 Aug 2026 21:10:19 GMT
 RUN set -o errexit -o nounset     && microdnf install -y         make         curl-minimal         wget         tar                 findutils                 unzip         which                 git         git-lfs         subversion     && microdnf clean all         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which git     && which git-lfs     && which svn # buildkit
-# Tue, 04 Aug 2026 22:27:50 GMT
+# Tue, 11 Aug 2026 21:10:19 GMT
 ENV GRADLE_VERSION=9.7.0
-# Tue, 04 Aug 2026 22:27:50 GMT
+# Tue, 11 Aug 2026 21:10:19 GMT
 ARG GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
-# Mon, 10 Aug 2026 17:47:09 GMT
+# Tue, 11 Aug 2026 21:10:25 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Mon, 10 Aug 2026 17:47:09 GMT
+# Tue, 11 Aug 2026 21:10:25 GMT
 USER gradle
-# Mon, 10 Aug 2026 17:47:12 GMT
+# Tue, 11 Aug 2026 21:10:27 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=84fbba45c7f4c64abc77460e1c00f541e9f960e3c7ed2538f1ede19eacd873ae
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Mon, 10 Aug 2026 17:47:12 GMT
+# Tue, 11 Aug 2026 21:10:27 GMT
 USER root
 ```
 
 -	Layers:
-	-	`sha256:116623ca973258787b24d7b3d292610e22b2ae0e9f57a15bcf49eb44e18b11f0`  
-		Last Modified: Tue, 04 Aug 2026 00:20:16 GMT  
-		Size: 39.0 MB (38982890 bytes)  
+	-	`sha256:8cd8bf1356749857de78a84ea2d535a37f25277dac8b1dcfbb2a37ef254ca46b`  
+		Last Modified: Tue, 11 Aug 2026 00:19:54 GMT  
+		Size: 39.0 MB (38992795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5c460c8e9859a18331fc86452678494f5f123066c74d20d535927b4675cce27`  
-		Last Modified: Tue, 04 Aug 2026 20:54:45 GMT  
-		Size: 39.5 MB (39545720 bytes)  
+	-	`sha256:a3681bd23f68912b8e5fc514148289990dda7f13561576208484ea88934ecba6`  
+		Last Modified: Tue, 11 Aug 2026 20:20:14 GMT  
+		Size: 39.5 MB (39545533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc26893d81fa4d422ce1910c33996f9a944bbd40720294d0a56969f4008c4cd8`  
-		Last Modified: Tue, 04 Aug 2026 21:00:33 GMT  
-		Size: 158.3 MB (158348504 bytes)  
+	-	`sha256:1bea7c833c20ebf9a599ee103164c2e5fb076b277613081633cccf5d0930f7bf`  
+		Last Modified: Tue, 11 Aug 2026 20:26:05 GMT  
+		Size: 158.3 MB (158348533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bb92902096f692f6eb2f5a79220d085cc3fbf983247f3200230f770e1775b57`  
-		Last Modified: Tue, 04 Aug 2026 21:00:27 GMT  
+	-	`sha256:5505e24696c92b87cde0fb29b6d5472860e0759322e4db7dea50afa6b786ccc5`  
+		Last Modified: Tue, 11 Aug 2026 20:25:59 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:690d32bc5cce3f3fcdcdd7efa686488999f66cc5ca4841459f6bc163d326fd26`  
-		Last Modified: Tue, 04 Aug 2026 21:00:29 GMT  
-		Size: 2.3 KB (2291 bytes)  
+	-	`sha256:37cd873cc20d0cd8e3ea46d7435ab0ff2b97d389624c296ca3ce65b27b456187`  
+		Last Modified: Tue, 11 Aug 2026 20:26:00 GMT  
+		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87707a4b3754e81fc4a7dd7f7863c0bfff10660faa4c91bacbd70dd911aed87d`  
-		Last Modified: Tue, 04 Aug 2026 22:28:46 GMT  
-		Size: 1.6 KB (1585 bytes)  
+	-	`sha256:12e89ed88b32cd568c3bde08f95b09e5ec33c1e49e59574f43b0bb63af89f554`  
+		Last Modified: Tue, 11 Aug 2026 21:11:07 GMT  
+		Size: 1.6 KB (1584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a175316c4f990bd9903aa4ec1be5b675f6c5279ec7ce14ec9045f9a5e8a44947`  
-		Last Modified: Tue, 04 Aug 2026 22:28:48 GMT  
-		Size: 41.7 MB (41654167 bytes)  
+	-	`sha256:2c2c3bb4330839c2600ab7eb1e25796504cac4e2e6352f254e7a0cf2440ec508`  
+		Last Modified: Tue, 11 Aug 2026 21:11:10 GMT  
+		Size: 41.7 MB (41657873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:613420b7ed3e99556ca2a8c11472a1ff5d0569086e68707bef2d09bcfaeddc2e`  
-		Last Modified: Mon, 10 Aug 2026 17:47:57 GMT  
-		Size: 150.2 MB (150227951 bytes)  
+	-	`sha256:b1d469a149e2b4ff34af89ed0086c3629b550fc9912f72d1f96ae7ee46d379fd`  
+		Last Modified: Tue, 11 Aug 2026 21:11:12 GMT  
+		Size: 150.2 MB (150227900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a424723e1ae265c6c6ab1768651f63cf0c6bd876cb00dadc455a764a2e75fb9f`  
-		Last Modified: Mon, 10 Aug 2026 17:47:53 GMT  
-		Size: 388.0 B  
+	-	`sha256:197d7c6a13ac615efe5b29bf776967f6599b1fe64bc17c66398f859d28aa6a11`  
+		Last Modified: Tue, 11 Aug 2026 21:11:08 GMT  
+		Size: 382.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:jdk21-ubi10` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:aa57f59da75b5ff1666a1be2e4b03022dacb6300f533db6754cc615a5f23ed07
+$ docker pull gradle@sha256:0f45513b006ccfeaeb1bfe85bdc54d00fed03b250379e50d46813f48238558f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7113180 bytes)**  
+-	Total Size: **7.1 MB (7113186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af94a8d53057de5c480e55a3df29be53c9d362ba84922c60602df1496d26c9b8`
+-	Image ID: `sha256:4a284f28b8daf5bb09898c682d3a2e4110b1f6c24c1e70438323c42706f2bb8c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f1eedd562729d0fbfec5a312a4e3ddfd1947e5aca632748202de0329f12aacd`  
-		Last Modified: Mon, 10 Aug 2026 17:47:54 GMT  
-		Size: 7.1 MB (7088653 bytes)  
+	-	`sha256:d6fbe5f1a94443e6644a179e5e7dd01c12363bebfe4a6cddcf9631d6bd585565`  
+		Last Modified: Tue, 11 Aug 2026 21:11:08 GMT  
+		Size: 7.1 MB (7088659 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f636795c8518d8ba4ab1051a25c0034318aedeb9cd433b46e7b85fb7bb51eb9c`  
-		Last Modified: Mon, 10 Aug 2026 17:47:53 GMT  
+	-	`sha256:1c7ec7efe57f711041ffc36a38adde8cdc2b8615260ce0d15581accb4c5b275d`  
+		Last Modified: Tue, 11 Aug 2026 21:11:07 GMT  
 		Size: 24.5 KB (24527 bytes)  
 		MIME: application/vnd.in-toto+json
 
