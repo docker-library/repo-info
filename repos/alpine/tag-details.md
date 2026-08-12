@@ -18,11 +18,11 @@
 ## `alpine:20260805`
 
 ```console
-$ docker pull alpine@sha256:5438a72d48083e111ad9ee3adc7469f34d19537e30fcf14069ee7fd6bef686a5
+$ docker pull alpine@sha256:020dfcbaaf4cc1078bf2d9c7ba31a8466e334061dcd2f248001d68f79e52c000
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 14
+-	Platforms: 16
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -34,6 +34,8 @@ $ docker pull alpine@sha256:5438a72d48083e111ad9ee3adc7469f34d19537e30fcf14069ee
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -326,6 +328,55 @@ $ docker pull alpine@sha256:68f89b059a5377d7a0a8ed18cea5f80ce65b0ac7971a5963fd98
 	-	`sha256:22fcc885d875d2e48b9d54e3e07b61ff453bfdcad6ccf7031aabfb67ea1529a0`  
 		Last Modified: Thu, 06 Aug 2026 18:23:39 GMT  
 		Size: 5.1 KB (5087 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `alpine:20260805` - linux; riscv64
+
+```console
+$ docker pull alpine@sha256:48f8e797d02cf38fd4f2671a9f563e6a37cba9da20740bd51e05466f9f1a811d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 MB (3574650 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7dcf02c066cd949a5a55724daf7f6787e3f0ffbd2f038372094cb07e5975dcf1`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Tue, 11 Aug 2026 21:18:36 GMT
+ADD alpine-minirootfs-20260805-riscv64.tar.gz / # buildkit
+# Tue, 11 Aug 2026 21:18:36 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:c74130aa3c908a72a8b96e4187bed125c4a4a5625f5a238efa3896be022b3374`  
+		Last Modified: Tue, 11 Aug 2026 21:19:00 GMT  
+		Size: 3.6 MB (3574650 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `alpine:20260805` - unknown; unknown
+
+```console
+$ docker pull alpine@sha256:1107bed49c1fdb489d59bf94fb8d57a7d50f1fd0f4f0a83f0c1f6513e4d72a8b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **83.6 KB (83593 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ba355f7bc8715823555729daa692d9605189181e5e5466ead7578ca003cec054`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b0b85a168d61d16b4f873cabf9324ef00b0a8e65a5fb98854fc99bdeb31f1a38`  
+		Last Modified: Tue, 11 Aug 2026 21:18:59 GMT  
+		Size: 78.5 KB (78508 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:af7300f9c3a4ff014a8434b6e365e103b8bdc7feb00b66270270da92f7a8bda5`  
+		Last Modified: Tue, 11 Aug 2026 21:19:00 GMT  
+		Size: 5.1 KB (5085 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:20260805` - linux; s390x
@@ -4097,7 +4148,7 @@ $ docker pull alpine@sha256:4a411cfbe9fc8bbe39859f835711f280d91a856a28a6ca01ef82
 ## `alpine:edge`
 
 ```console
-$ docker pull alpine@sha256:d77617aef5805191da75fbbfe2f9dc2043582ecad0f4d381b27c151034765a76
+$ docker pull alpine@sha256:020dfcbaaf4cc1078bf2d9c7ba31a8466e334061dcd2f248001d68f79e52c000
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4412,50 +4463,50 @@ $ docker pull alpine@sha256:68f89b059a5377d7a0a8ed18cea5f80ce65b0ac7971a5963fd98
 ### `alpine:edge` - linux; riscv64
 
 ```console
-$ docker pull alpine@sha256:78367022ec3265af02f168f979a2f059b96e29c8723ebe0a4da5e7aa091b2e9d
+$ docker pull alpine@sha256:48f8e797d02cf38fd4f2671a9f563e6a37cba9da20740bd51e05466f9f1a811d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3586377 bytes)**  
+-	Total Size: **3.6 MB (3574650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56acfac7e8940330921347f776c23ca9b25b978f5a2ac7cfcce35ce2f6d67489`
+-	Image ID: `sha256:7dcf02c066cd949a5a55724daf7f6787e3f0ffbd2f038372094cb07e5975dcf1`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 28 Jan 2026 03:45:10 GMT
-ADD alpine-minirootfs-20260127-riscv64.tar.gz / # buildkit
-# Wed, 28 Jan 2026 03:45:10 GMT
+# Tue, 11 Aug 2026 21:18:36 GMT
+ADD alpine-minirootfs-20260805-riscv64.tar.gz / # buildkit
+# Tue, 11 Aug 2026 21:18:36 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:022c766c9404d89d4041ad5c42533be4c5a330984f2fe0dfcfec79fdc3fab497`  
-		Last Modified: Wed, 28 Jan 2026 03:45:42 GMT  
-		Size: 3.6 MB (3586377 bytes)  
+	-	`sha256:c74130aa3c908a72a8b96e4187bed125c4a4a5625f5a238efa3896be022b3374`  
+		Last Modified: Tue, 11 Aug 2026 21:19:00 GMT  
+		Size: 3.6 MB (3574650 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:edge` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:03045228c85c76ed99116642b7ff7f39e0f10f4a11c9ce1ecc5c85dabcf7c0ad
+$ docker pull alpine@sha256:1107bed49c1fdb489d59bf94fb8d57a7d50f1fd0f4f0a83f0c1f6513e4d72a8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.6 KB (83609 bytes)**  
+-	Total Size: **83.6 KB (83593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caa2c042d34d178261fbf8eddc3e2e5fb040ccfafd765d22be10bb8d752c29c9`
+-	Image ID: `sha256:ba355f7bc8715823555729daa692d9605189181e5e5466ead7578ca003cec054`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6184d03c6df6577b95f098c9a6723b0ecf402474e104ba70024411abbdf9fc0`  
-		Last Modified: Wed, 28 Jan 2026 03:45:41 GMT  
-		Size: 78.5 KB (78522 bytes)  
+	-	`sha256:b0b85a168d61d16b4f873cabf9324ef00b0a8e65a5fb98854fc99bdeb31f1a38`  
+		Last Modified: Tue, 11 Aug 2026 21:18:59 GMT  
+		Size: 78.5 KB (78508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bbdc323d2fd031badc8243b41b984b6872c2b01c4d05aa77f33d0e5da1388afb`  
-		Last Modified: Wed, 28 Jan 2026 03:45:42 GMT  
-		Size: 5.1 KB (5087 bytes)  
+	-	`sha256:af7300f9c3a4ff014a8434b6e365e103b8bdc7feb00b66270270da92f7a8bda5`  
+		Last Modified: Tue, 11 Aug 2026 21:19:00 GMT  
+		Size: 5.1 KB (5085 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `alpine:edge` - linux; s390x
