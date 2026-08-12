@@ -1,10 +1,10 @@
-# `jetty:12.1.11-jdk17-alpine`
+# `jetty:12.1.12-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d95799bd1573aaea19124978050e4e28e5920af91c9da59d3a1bec5b6e3f87ed`
-- Created: `2026-07-08T16:51:21.076805209Z`
-- Virtual Size: ~ 389.88 Mb  
+- Image ID: `sha256:97ee159809c461c024c3d37ebdc3573c40ae72dde0f27b2cbbd62d1b3950dc55`
+- Created: `2026-08-10T23:36:46.511693318Z`
+- Virtual Size: ~ 390.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,12 +16,12 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.19+10`
-  - `JETTY_VERSION=12.1.11`
+  - `JETTY_VERSION=12.1.12`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.11/jetty-home-12.1.11.tar.gz`
-  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.12/jetty-home-12.1.12.tar.gz`
+  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348`
 
 ## `apk` (`.apk`-based packages)
 
@@ -198,16 +198,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -317,16 +317,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.19.0-r0 description:
+curl-8.20.0-r0 description:
 URL retrival utility and library
 
-curl-8.19.0-r0 webpage:
+curl-8.20.0-r0 webpage:
 https://curl.se/
 
-curl-8.19.0-r0 installed size:
+curl-8.20.0-r0 installed size:
 273 KiB
 
-curl-8.19.0-r0 license:
+curl-8.20.0-r0 license:
 curl
 
 ```
@@ -742,16 +742,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```
