@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08557d539827021b76699c34b5f2d82d5c51ea673283e702a4d03aed75e4823d`
-- Created: `2026-08-05T18:15:00.819130752Z`
-- Virtual Size: ~ 825.11 Mb  
+- Image ID: `sha256:2ecb8de9fb25381763753c43ee30ef9dc44d8fc74575f1f03f21625dc01de1f4`
+- Created: `2026-08-11T17:50:08.880492263Z`
+- Virtual Size: ~ 825.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-05T05:11:46Z`
+  - `build-date=2026-08-10T16:55:47Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -37,12 +37,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-08-05T05:11:46Z`
-  - `org.opencontainers.image.revision=1ca6f1fd6baff20888272c2426a8dc7f6030dff2`
-  - `release=1785906621`
+  - `org.opencontainers.image.created=2026-08-10T16:55:47Z`
+  - `org.opencontainers.image.revision=905bde9da31110a4bb776761a921a6b4e6b12a93`
+  - `release=1786380870`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=1ca6f1fd6baff20888272c2426a8dc7f6030dff2`
+  - `vcs-ref=905bde9da31110a4bb776761a921a6b4e6b12a93`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -624,15 +624,15 @@ $ dnf --quiet download --source --url libacl-2.4.0-1.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el9_8.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-9.el9_7.x86_64`
+### `rpm` package: `libarchive-3.5.3-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-9.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-9.el9_7.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-11.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -1617,11 +1617,16 @@ $ dnf --quiet download --source --url tar-1.34-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-11.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026b-1.el9.noarch`
+### `rpm` package: `tzdata-2026c-1.el9_8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2026c-1.el9_8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-25.el9.x86_64`
 
