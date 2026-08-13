@@ -1,10 +1,10 @@
-# `drupal:10.6.14-php8.4-fpm-trixie`
+# `drupal:10.6.15-php8.4-fpm-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:114342ea76f021971792b8c6cdfec687e74e1bf2051d8aa0b02846ef4bb0eeb7`
-- Created: `2026-08-05T01:35:25.336978555Z`
-- Virtual Size: ~ 623.05 Mb  
+- Image ID: `sha256:3df14ed44f915119dc23eec41c167bbdc3122d4ad1228dcb6983ac1a5a809f9b`
+- Created: `2026-08-10T23:28:15.915206054Z`
+- Virtual Size: ~ 623.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
   - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
-  - `DRUPAL_VERSION=10.6.14`
+  - `DRUPAL_VERSION=10.6.15`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -105,11 +105,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=3.12.1-1`
+### `dpkg` source package: `aom=3.12.1-1+deb13u1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.12.1-1`
+- `libaom3:amd64=3.12.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -123,17 +123,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.12.1-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.dsc' aom_3.12.1-1.dsc 2552 SHA256:696b9e32b3fe787e8598811e8b680b829b93e65781e0328f8b5056619454b408
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.debian.tar.xz' aom_3.12.1-1.debian.tar.xz 20464 SHA256:ac01db2f3d78d8ba39d5d7546ce4fcc1fa827e7b92387d7234d140d8d9afa5f9
+$ apt-get source -qq --print-uris aom=3.12.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.dsc' aom_3.12.1-1+deb13u1.dsc 2235 SHA256:796b09717499ced9d82820fad950a31532d7c193a2a764617df05c9aa68090cb
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.debian.tar.xz' aom_3.12.1-1+deb13u1.debian.tar.xz 24788 SHA256:e94efe3356d69b0056dd95746f3cf29551130766b3f3503365e40e9d1c8f8ee7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/3.12.1-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.12.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.12.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/3.12.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.0.3`
 
