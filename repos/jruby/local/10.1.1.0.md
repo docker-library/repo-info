@@ -965,10 +965,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
 ```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
@@ -2060,14 +2060,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.16.debian.tar.xz' systemd_255.4-1ubuntu8.16.debian.tar.xz 265512 SHA512:f8760a5fe788f08deb96120704eb3f4f12f92652bd032898cbe0a30159430b76cab7269866c67e84abab6cf6301390ce7d0935e785d1c8c873dc8289c9536f78
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.16.dsc' systemd_255.4-1ubuntu8.16.dsc 7324 SHA512:3743076a6c09de360bfee7e8a6aaf08b2530e7aeac767f457888d3f5ef842a3508116d9d3a7dde8caaaec9faddcead7afebf16f8b1bccc8f1a0dfbbdac38ba16
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
