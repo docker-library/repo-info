@@ -62,13 +62,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA512:4a4582b1949244b0f597f2c4ba09bab21f734b1c0d1168d340992821f4fb1b1e09ec8a2f9a77b9380f09b4d7cf2989acfa02d8f91601d7a210367039ed41a947
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA512:02a029afdbc7612d860e145120113da0e25abcb5cbef947f5838fae41d02361d3c150322ef24a0d6e675d66e45b491da53fd0e5c8311d45f017a72e8eba6e33f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.2.0/
+
 
 ### `dpkg` source package: `attr=1:2.5.2-4`
 
@@ -858,15 +858,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.10-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.10-1.dsc' libselinux_3.10-1.dsc 3050 SHA512:64646a7ff5d571afcf98ad43d32bef5e532f69562adb6fb5e0f18650e8bfac7ca89f6de97ca44bc0aa517295e4ac9e2984d97f34c31d3bba244bb05dd2d68e91
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.10.orig.tar.gz' libselinux_3.10.orig.tar.gz 205800 SHA512:5783f737675eb94e0bdff082013589e5bddfa0669a357df185eb89f4f88cec8b90779e86c4b17b58f5c248175da0208c80cc2642046e348c7384dd799f1ba4c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.10.orig.tar.gz.asc' libselinux_3.10.orig.tar.gz.asc 1000 SHA512:6e0a18eb77b810eb7cbf756dcd82f57fa71d7c8d066ea99f754760d9e61db8f22e776c729a7387b01638249dacc270da7a5eb6a7ed38377ba858bebcd090cce6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.10-1.debian.tar.xz' libselinux_3.10-1.debian.tar.xz 51700 SHA512:f81fcb973742dcd63131bc185858d531ab2f3bd7da82f745f30c8d349290226d4a09e8e2f72b82db36903784b3f47670c281aaf16213609674ed6d1a358660cf
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/3.10-1/
+
 
 ### `dpkg` source package: `libsemanage=3.10-1`
 
@@ -881,15 +879,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.10-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10-1.dsc' libsemanage_3.10-1.dsc 2980 SHA512:ef0007832411546e7823bc0e4e1a725be6f416ed3796f90127fdd83e5d68b14090e76c5efc987a006d0820e41264c8e3c1a4ba4ff644569c633131154eb2a4dd
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10.orig.tar.gz' libsemanage_3.10.orig.tar.gz 185969 SHA512:e07cb1d7e145b3baa2fb857c043c8ede7581d29fbb6a59709ebbee73097c12768e8b77eab35b4394efc0a655f3d266cdf7b08ac69759d6989d41e4213fe8aafd
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10.orig.tar.gz.asc' libsemanage_3.10.orig.tar.gz.asc 1000 SHA512:cee44df8a2bfe880540fa61a17a23d17447ca272c4a0066ab348ef6c90a7ec7a5d19bd8ae9bba1efd562d7ea4be3afcb66bec2f28e1de5179d4f74320cfa3921
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.10-1.debian.tar.xz' libsemanage_3.10-1.debian.tar.xz 38008 SHA512:0d88042521a28e3cb472d144e624ae9551c35c2ebae64d6db2ff60978ee524fe68bbd402c238cd4973acbc5cefa2c359c39d58a1d03f3e47455fba59dda55a82
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libsemanage/3.10-1/
+
 
 ### `dpkg` source package: `libsepol=3.10-1`
 
@@ -1171,16 +1167,9 @@ Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 - `MIT`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-coreutils=0.8.0-0ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-l10n.tar.gz' rust-coreutils_0.8.0.orig-l10n.tar.gz 740364 SHA512:f322d1b77ff6ef0945b08aa4237dd0b1db8da5c3e32de5e86bd22a60b5a56dd6f4828c90a4758c562ca560e6588b6e61af4507e0b6c6d8bde7d8e587010ca1e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-rust-vendor.tar.xz' rust-coreutils_0.8.0.orig-rust-vendor.tar.xz 13213352 SHA512:a66ba2f98a544fea37ace0774244dda1a7b2477536df90301765819b9bb9f0f27831df2349b7fc1cbf712ba5b9bd8c7cc9a9e900714e51b6c226f0fc2d50b250
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig.tar.gz' rust-coreutils_0.8.0.orig.tar.gz 3189640 SHA512:0c35cfb31d7810701cf5c639cbafb2be3870f4abd0f08fbade291d2534f576e067599e1b53ff228d9d2bd126210225d09bcd559761623f645883d4dd68e8f39b
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu4.debian.tar.xz' rust-coreutils_0.8.0-0ubuntu4.debian.tar.xz 23640 SHA512:58ed68f6622137beccd0114c0d0aa2ad79e51570d3849d901ae4feab6809b5f40df496056dac11e0e755603ea60da26c2408e129feb193d15f3a9efc48e209e4
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu4.dsc' rust-coreutils_0.8.0-0ubuntu4.dsc 8878 SHA512:5e4b413e5285d81392e5d69efd6fe58951845c8ad8816bfb8740678e0b6de852e7de67c7f4222f2e593c64797dfd586961da9418a12022b12630ff5e55819e2c
-```
 
 ### `dpkg` source package: `sed=4.9-3`
 
