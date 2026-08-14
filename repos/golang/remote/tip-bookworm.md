@@ -1,7 +1,7 @@
 ## `golang:tip-bookworm`
 
 ```console
-$ docker pull golang@sha256:bfef45d3963bf706768abf44be59f5c3df96fe760eb39091a67f0e543eb4fe33
+$ docker pull golang@sha256:29293025a9e4d6449452e4b63893cd5903b2255713f9cdb259fc7fca456ca463
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -376,7 +376,7 @@ $ docker pull golang@sha256:b8bb9e6609b43c18d18f77aa8449c7079ddb3dec64ca017de84c
 ### `golang:tip-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:7100124e1e11f9cff08ae17cb09aafb536ee9cf0123276ea55f5d036e0990d0a
+$ docker pull golang@sha256:65da95787b91707417fffffa46baa5987155c3c2d530604321d11536054a5aaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -441,23 +441,23 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:84b2b575cd964248fb9905a9f852e03613d6aace8b41005c5b866f06863fb551
+$ docker pull golang@sha256:c64847feabee8f3c2513f8b3b3407b96a5d2f3cfd0e432063b38ec5ae5e46b5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10497565 bytes)**  
+-	Total Size: **10.5 MB (10497738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:621539e10f37216c78981aed6a5ce5860406f929e572e43659fe02c86efb720f`
+-	Image ID: `sha256:2dd36465152d369401cf9425e2c750acb18c0e1ed7bd9d96b58b4713f8ddab6e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ad695e754d584345cb4a15b8f7af6a62c7820cce81792c755c16f279def39bb`  
-		Last Modified: Tue, 11 Aug 2026 00:14:23 GMT  
+	-	`sha256:571c5060e13aa7f1a03fc6d38a7f6dd5b5de02471d7d934c4deaa5ee08d7f069`  
+		Last Modified: Thu, 13 Aug 2026 22:30:57 GMT  
 		Size: 10.5 MB (10469594 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e07f8f9394e2f874f4daa9d889eb619b12862112788eb2590d723cc86a62ac2`  
-		Last Modified: Tue, 11 Aug 2026 00:14:22 GMT  
-		Size: 28.0 KB (27971 bytes)  
+	-	`sha256:777651e6568cfa037bc2b0ee77d26603104fd92fcce414ae8458dc4a1c364b21`  
+		Last Modified: Thu, 13 Aug 2026 22:30:56 GMT  
+		Size: 28.1 KB (28144 bytes)  
 		MIME: application/vnd.in-toto+json
