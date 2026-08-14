@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1092fc64a685a81f3088797835dc7290492d2a9afced33c808e31c2e3c5aab1f`
-- Created: `2026-08-05T01:46:14.222661397Z`
-- Virtual Size: ~ 534.89 Mb  
+- Image ID: `sha256:f3fba4fea15ea0bd1d0d4b6015a3ac3aa4b17c5ebff4c17dff725a5abac11ca6`
+- Created: `2026-08-11T18:03:35.80982942Z`
+- Virtual Size: ~ 543.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["/usr/bin/tini","--","/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.39.2`
+  - `TELEGRAF_VERSION=1.39.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2689,11 +2689,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-32/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-32/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `telegraf=1.39.2-1`
+### `dpkg` source package: `telegraf=1.39.3-1`
 
 Binary Packages:
 
-- `telegraf=1.39.2-1`
+- `telegraf=1.39.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2702,6 +2702,31 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `tini=0.19.0-1`
+
+Binary Packages:
+
+- `tini=0.19.0-1+b3`
+
+Licenses: (parsed from: `/usr/share/doc/tini/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris tini=0.19.0-1
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.19.0-1.dsc' tini_0.19.0-1.dsc 1810 SHA256:0641749862d510c2fd009413e274d878c39139bf37a4e3669f9fcd745ec9e9ea
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.19.0.orig.tar.gz' tini_0.19.0.orig.tar.gz 32369 SHA256:0fd35a7030052acd9f58948d1d900fe1e432ee37103c5561554408bdac6bbf0d
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.19.0-1.debian.tar.xz' tini_0.19.0-1.debian.tar.xz 1832 SHA256:6e3e35148962098ff64f262cc60c7f89085dc1203b2c85574a5324a8f57f5c52
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tini/0.19.0-1/ (for browsing the source)
+- https://sources.debian.net/src/tini/0.19.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tini/0.19.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026b-0+deb12u1`
 

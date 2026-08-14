@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b18f975e8292043c05b0cb03082c37f7665a64d3b9ff990a1a92d5b74543ef7`
-- Created: `2026-07-20T22:46:02.261999806Z`
-- Virtual Size: ~ 323.89 Mb  
+- Image ID: `sha256:77fcd569cc185013d60bf8b43fb6552c34acd7354b8e6ccdf548ea4caf1089ab`
+- Created: `2026-08-11T18:03:33.950018562Z`
+- Virtual Size: ~ 332.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["/sbin/tini","--","/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.39.2`
+  - `TELEGRAF_VERSION=1.39.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -692,6 +692,23 @@ sysfsutils-2.1.1-r3 installed size:
 
 sysfsutils-2.1.1-r3 license:
 GPL-2.0-only AND LGPL-2.1-only
+
+```
+
+### `apk` package: `tini`
+
+```console
+tini-0.19.0-r3 description:
+A tiny but valid init for containers
+
+tini-0.19.0-r3 webpage:
+https://github.com/krallin/tini
+
+tini-0.19.0-r3 installed size:
+23 KiB
+
+tini-0.19.0-r3 license:
+MIT
 
 ```
 
