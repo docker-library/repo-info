@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d080332b6f6b76acae310d6f97fcb2e8085753f8146bd2c303b4498b94ca61c2`
-- Created: `2026-08-04T01:39:54.61835472Z`
-- Virtual Size: ~ 425.72 Mb  
+- Image ID: `sha256:a2748b51d403e4b09fae4c82b069635fb8a034a80f230810b6189f25d8cdd1f9`
+- Created: `2026-08-12T21:01:09.076400127Z`
+- Virtual Size: ~ 425.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/entrypoint.sh"]`
 - Command: `["influxdb3","serve"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=3.11.0`
+  - `INFLUXDB_VERSION=3.11.1`
   - `INFLUXDB3_PLUGIN_DIR=/plugins`
   - `INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3`
   - `INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub`
@@ -882,10 +882,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
 ```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
