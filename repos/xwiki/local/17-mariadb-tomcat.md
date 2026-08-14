@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a76296aa5dd2dbaf32fc46ed1c0cd5ef4934e36b88ed308fe4643df9863a006e`
-- Created: `2026-08-04T04:14:39.842591999Z`
+- Image ID: `sha256:dd0297b056a973937cafa6f919be28131d272cfde0ffdd375fa319f80572b29e`
+- Created: `2026-08-12T17:24:48.976541852Z`
 - Virtual Size: ~ 1.57 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -27,14 +27,14 @@
   - `LIBREOFFICE_SHA256_AMD64=7f4d7b2e36921eec5122c655249a24cc88935ee357e8261fd3bccd15aa1f7b9f`
   - `LIBREOFFICE_SHA256_ARM64=67e9b7dcdeae72c7aa1357345307e67376fc2b729a7f9ebfafb372b010e22ffa`
   - `LIBREOFFICE_URL_PREFIX=https://download.documentfoundation.org/libreoffice/stable/25.8.7/deb`
-  - `XWIKI_VERSION=17.10.11`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.11`
-  - `XWIKI_DOWNLOAD_SHA256=c52f9330775dd822eb7af3d9abc84a8c2fd82a295e0233379a0d27ee48722f5a`
-  - `MARIADB_JDBC_VERSION=3.5.9`
-  - `MARIADB_JDBC_SHA256=11e3bb5bbf8ef0e806ae4d6c5d5033fedf7262cc777f0190bde8a2f3c8e6bd8d`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.9`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.9.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.9.jar`
+  - `XWIKI_VERSION=17.10.12`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.12`
+  - `XWIKI_DOWNLOAD_SHA256=68ce377fa59b2bd411eef863ab1216d08b63803b0a26264b3b00679fa0183ead`
+  - `MARIADB_JDBC_VERSION=3.5.10`
+  - `MARIADB_JDBC_SHA256=919b8c1c771d9ee3465811462f242c9543ab401e140c64988ddbf1d8abcb18b2`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.10.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.10.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -1189,10 +1189,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
 ```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
