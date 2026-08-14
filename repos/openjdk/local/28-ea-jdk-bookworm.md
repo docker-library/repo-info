@@ -1,10 +1,10 @@
-# `openjdk:28-ea-9-jdk-bookworm`
+# `openjdk:28-ea-10-jdk-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:265a23a4eb1bececb7ef4b8a77d077f693a2d5fcf224cebc5b9ab237cb494601`
-- Created: `2026-08-05T02:22:29.802111698Z`
-- Virtual Size: ~ 786.22 Mb  
+- Image ID: `sha256:f14cbd9be9dae653b59374fa73b387db6b200e81db7b7a662aef14ac4aef17e4`
+- Created: `2026-08-10T23:34:39.561969595Z`
+- Virtual Size: ~ 862.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-28/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-28`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=28-ea+9`
+  - `JAVA_VERSION=28-ea+10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -376,11 +376,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1`
+- `ca-certificates=20250419~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -391,16 +391,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.dsc' ca-certificates_20230311+deb12u1.dsc 1800 SHA256:d4d57c9b56db87c8ebe7a0c27d55023e3369d183d4b774bdf455f775a80f00eb
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.tar.xz' ca-certificates_20230311+deb12u1.tar.xz 259756 SHA256:4cd6bbd5577a16432438bc1006dc05c333afacb76104fc3564612858c8ee3280
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
