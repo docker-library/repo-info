@@ -17,13 +17,23 @@
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url basesystem-minimal-10-0.2.mga10
+http://mirror.math.princeton.edu/pub/mageia/distrib/cauldron/SRPMS/core/release/basesystem-10-0.2.mga10.src.rpm
+```
 
 ### `rpm` package: `basesystem-minimal-core-10-0.2.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url basesystem-minimal-core-10-0.2.mga10
+http://mirror.math.princeton.edu/pub/mageia/distrib/cauldron/SRPMS/core/release/basesystem-10-0.2.mga10.src.rpm
+```
 
 ### `rpm` package: `bash-5.3-2.mga10.x86_64`
 
@@ -35,7 +45,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url bc-1.08.2-1.mga10
+http://mirror.math.princeton.edu/pub/mageia/distrib/cauldron/SRPMS/core/release/bc-1.08.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `binutils-2.46.1-1.mga11.x86_64`
 
@@ -47,7 +62,12 @@ Licenses (from `rpm --query`): GPLv3+
 
 Licenses (from `rpm --query`): GPL-2.0-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url chkconfig-1.33-1.mga10
+http://mirror.math.princeton.edu/pub/mageia/distrib/cauldron/SRPMS/core/release/chkconfig-1.33-1.mga10.src.rpm
+```
 
 ### `rpm` package: `common-licenses-1.1-12.mga10.noarch`
 
