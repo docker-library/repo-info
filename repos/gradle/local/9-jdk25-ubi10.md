@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79f4a70ac1654d3ade74b43f17866edf97f87a5d230f48ffe4dbdb0e867a09b8`
-- Created: `2026-08-10T17:45:09.025371276Z`
-- Virtual Size: ~ 739.97 Mb  
+- Image ID: `sha256:462eb5d27c4950984761bec5f829a75c804be4674f1a161417fe7dc10af40e15`
+- Created: `2026-08-11T18:10:39.032333785Z`
+- Virtual Size: ~ 739.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.7.0`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-03T17:40:34Z`
+  - `build-date=2026-08-10T21:51:06Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-03T17:40:34Z`
-  - `org.opencontainers.image.revision=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
-  - `release=1785778687`
+  - `org.opencontainers.image.created=2026-08-10T21:51:06Z`
+  - `org.opencontainers.image.revision=f79522b6176b2c2293398c933c4f7a44008ab395`
+  - `release=1786398535`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b9fdece4d2c962654c1c4a6f9578551c79e4c4c6`
+  - `vcs-ref=f79522b6176b2c2293398c933c4f7a44008ab395`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -550,11 +550,16 @@ $ dnf --quiet download --source --url libacl-2.4.0-1.el10_2
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-1.el10_2.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.7.7-8.el10_1.x86_64`
+### `rpm` package: `libarchive-3.7.7-10.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-10.el10_2.src.rpm
+```
 
 ### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
 
@@ -783,12 +788,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libnghttp2-1.68.0-3.el10_2.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/n/nghttp2-1.68.0-3.el10_2.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libpsl-0.21.5-6.el10.x86_64`
 
