@@ -1,10 +1,10 @@
-# `wordpress:beta-7.1-RC1-php8.5-fpm`
+# `wordpress:beta-7.1-RC3-php8.5-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67ef3f4711ff87f6c3ca98486ad61d600fe4f4dd34494ce65ae5e4b3d4a07bfb`
-- Created: `2026-08-06T22:30:31.86259086Z`
-- Virtual Size: ~ 799.96 Mb  
+- Image ID: `sha256:90f95b92f130533a7e4e0fb16b747c9a45782140a4b2ee70875e1f9b0db6aa2f`
+- Created: `2026-08-12T23:38:35.980503117Z`
+- Virtual Size: ~ 799.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2275,15 +2275,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgav1/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgav1/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.19.8-1`
+### `dpkg` source package: `libheif=1.19.8-1+deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-aomenc:amd64=1.19.8-1`
-- `libheif-plugin-dav1d:amd64=1.19.8-1`
-- `libheif-plugin-libde265:amd64=1.19.8-1`
-- `libheif-plugin-x265:amd64=1.19.8-1`
-- `libheif1:amd64=1.19.8-1`
+- `libheif-plugin-aomenc:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-dav1d:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-libde265:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-x265:amd64=1.19.8-1+deb13u1`
+- `libheif1:amd64=1.19.8-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomenc/copyright`, `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif-plugin-x265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2300,17 +2300,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomenc/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.19.8-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.dsc' libheif_1.19.8-1.dsc 3631 SHA256:c0fe86feee6e4ffaae774f53c4d33810095fc6c91e48239dbc4fb2d825c3d22e
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.debian.tar.xz' libheif_1.19.8-1.debian.tar.xz 12260 SHA256:a51ba863ca4f99b5aa1c2468f492b75b909449a941459d93fca9e1a1ee904e5f
+$ apt-get source -qq --print-uris libheif=1.19.8-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.dsc' libheif_1.19.8-1+deb13u1.dsc 3289 SHA256:906a8840e79669856631707990f50d92d7adc25516206199342b17e30271eec6
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.debian.tar.xz' libheif_1.19.8-1+deb13u1.debian.tar.xz 26196 SHA256:acb2f40072ef11a679fa100c64c51f29a5fedd0359e5a426e5d5f66377bf6f43
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.19.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.8-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.19.8-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 

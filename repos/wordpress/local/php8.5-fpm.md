@@ -1,10 +1,10 @@
-# `wordpress:7.0.2-php8.5-fpm`
+# `wordpress:7.0.4-php8.5-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:18584dc3a2ab7339d288e1d906cc288c51b5e07d67e999bb924928bb1b485916`
-- Created: `2026-08-05T01:31:10.974632615Z`
-- Virtual Size: ~ 775.27 Mb  
+- Image ID: `sha256:9987b611ce4361ee1930bf34402dcb05f406477adabcb4a0289e12be85bf9cdf`
+- Created: `2026-08-12T23:36:29.730613718Z`
+- Virtual Size: ~ 775.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -103,11 +103,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=3.12.1-1`
+### `dpkg` source package: `aom=3.12.1-1+deb13u1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.12.1-1`
+- `libaom3:amd64=3.12.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -121,17 +121,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.12.1-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.dsc' aom_3.12.1-1.dsc 2552 SHA256:696b9e32b3fe787e8598811e8b680b829b93e65781e0328f8b5056619454b408
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.debian.tar.xz' aom_3.12.1-1.debian.tar.xz 20464 SHA256:ac01db2f3d78d8ba39d5d7546ce4fcc1fa827e7b92387d7234d140d8d9afa5f9
+$ apt-get source -qq --print-uris aom=3.12.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.dsc' aom_3.12.1-1+deb13u1.dsc 2235 SHA256:796b09717499ced9d82820fad950a31532d7c193a2a764617df05c9aa68090cb
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.debian.tar.xz' aom_3.12.1-1+deb13u1.debian.tar.xz 24788 SHA256:e94efe3356d69b0056dd95746f3cf29551130766b3f3503365e40e9d1c8f8ee7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/3.12.1-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.12.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.12.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/3.12.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.0.3`
 
@@ -2135,11 +2135,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.75-10+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.75-10+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.15-1`
+### `dpkg` source package: `libde265=1.0.15-1+deb13u1`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.15-1+b3`
+- `libde265-0:amd64=1.0.15-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -2154,17 +2154,17 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libde265=1.0.15-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.dsc' libde265_1.0.15-1.dsc 1872 SHA256:41fe11a559a57a8cdf19978c55f58f0d83de78c61e1367f8b73d05bdcce416eb
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.debian.tar.xz' libde265_1.0.15-1.debian.tar.xz 136584 SHA256:70cb236e55972d2d1bc062bacd68320ad402e0d378c79c99224a512208c90e5b
+$ apt-get source -qq --print-uris libde265=1.0.15-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.dsc' libde265_1.0.15-1+deb13u1.dsc 1904 SHA256:0e1bff0db1fbd8c827e3a665174da6667411f598454d806bc59ff3e1f2f74d46
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.debian.tar.xz' libde265_1.0.15-1+deb13u1.debian.tar.xz 145088 SHA256:721ab671ae27928da346206ec1e66cfa62cf1d119d0d6f9b6f96d0b17fa3eea7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libde265/1.0.15-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.15-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.23-2`
 
@@ -2275,15 +2275,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgav1/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgav1/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.19.8-1`
+### `dpkg` source package: `libheif=1.19.8-1+deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-aomenc:amd64=1.19.8-1`
-- `libheif-plugin-dav1d:amd64=1.19.8-1`
-- `libheif-plugin-libde265:amd64=1.19.8-1`
-- `libheif-plugin-x265:amd64=1.19.8-1`
-- `libheif1:amd64=1.19.8-1`
+- `libheif-plugin-aomenc:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-dav1d:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-libde265:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-x265:amd64=1.19.8-1+deb13u1`
+- `libheif1:amd64=1.19.8-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomenc/copyright`, `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif-plugin-x265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2300,17 +2300,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomenc/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.19.8-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.dsc' libheif_1.19.8-1.dsc 3631 SHA256:c0fe86feee6e4ffaae774f53c4d33810095fc6c91e48239dbc4fb2d825c3d22e
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.debian.tar.xz' libheif_1.19.8-1.debian.tar.xz 12260 SHA256:a51ba863ca4f99b5aa1c2468f492b75b909449a941459d93fca9e1a1ee904e5f
+$ apt-get source -qq --print-uris libheif=1.19.8-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.dsc' libheif_1.19.8-1+deb13u1.dsc 3289 SHA256:906a8840e79669856631707990f50d92d7adc25516206199342b17e30271eec6
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.debian.tar.xz' libheif_1.19.8-1+deb13u1.debian.tar.xz 26196 SHA256:acb2f40072ef11a679fa100c64c51f29a5fedd0359e5a426e5d5f66377bf6f43
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.19.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.8-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.19.8-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
