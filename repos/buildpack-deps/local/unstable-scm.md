@@ -1186,19 +1186,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.69
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69.dsc' init-system-helpers_1.69.dsc 2234 SHA256:99b681c969728fba085226b1d1fd25cc37c9fe16f9eb5118e679d845b50ae7ee
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69.tar.xz' init-system-helpers_1.69.tar.xz 45648 SHA256:e246ee7f39b110803e5307fdb25ec2fb5fe0c62dbd9274011803fef50af08100
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.69/
 
-- https://sources.debian.net/src/init-system-helpers/1.69/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.69/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.69/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-6`
 
@@ -1665,20 +1659,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5t64/copyright`)
 - `MIT`
 - `gnulib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.23.1-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1-1.dsc' libpsl_0.23.1-1.dsc 2293 SHA256:01ededcdbfb98bef7dc7493caea6878dab046918cea611d2a7cc4d9e18385a21
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1.orig.tar.xz' libpsl_0.23.1.orig.tar.xz 2238012 SHA256:19ded32eed36a58394dd158b1f27b41129dbf5e27deaf826c3ad92cf9d621e3f
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1-1.debian.tar.xz' libpsl_0.23.1-1.debian.tar.xz 11420 SHA256:ff7b59365c16839f159ea830e5b8d4727c700ee549018dabf03cc65e1f217f05
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.23.1-1/
 
-- https://sources.debian.net/src/libpsl/0.23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.1-1`
 
@@ -2675,20 +2662,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-1/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.6-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-3.dsc' procps_4.0.6-3.dsc 2124 SHA256:4e1816635c1a5d7d62ba740429c17fd711a1192eed3c1b56ab6f0ffbefbc4d31
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6.orig.tar.xz' procps_4.0.6.orig.tar.xz 1577796 SHA256:069333015b10e79440a0884b8d72400819b2ea8d1e77e2b2c3e75de5291eced4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-3.debian.tar.xz' procps_4.0.6-3.debian.tar.xz 29768 SHA256:e17bf54c282647dc70f195cb3088e7dbb9983576523039253aa7a40335d07c86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.6-3/
 
-- https://sources.debian.net/src/procps/2:4.0.6-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.14.6-1`
 
@@ -2745,20 +2725,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.14-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.14=3.14.6-1
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.6-1.dsc' python3.14_3.14.6-1.dsc 3480 SHA256:809f3f0fa57c5bb981f38f411ae0f298afd766046293eff98cebef69e5a4c508
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.6.orig.tar.xz' python3.14_3.14.6.orig.tar.xz 23921184 SHA256:143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.6-1.debian.tar.xz' python3.14_3.14.6-1.debian.tar.xz 223848 SHA256:846e53dd7568f3b20de49ae829b1282d4e1b36755f8ef3802f68b4bbc54f4a1c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.14/3.14.6-1/
 
-- https://sources.debian.net/src/python3.14/3.14.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.14/3.14.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.14/3.14.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -3111,20 +3084,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-4.dsc' tar_1.35+dfsg-4.dsc 2034 SHA256:493403c9708bdf8ccd516aea90d81058eeff058e7e459fcc46ffa78867554b39
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-4.debian.tar.xz' tar_1.35+dfsg-4.debian.tar.xz 21640 SHA256:9bb51d273e49502eab6d98228e8dd711c46a3418bf8428a2104148734810157e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-4/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026c-1`
 

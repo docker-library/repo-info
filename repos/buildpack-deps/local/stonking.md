@@ -144,13 +144,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA512:4a4582b1949244b0f597f2c4ba09bab21f734b1c0d1168d340992821f4fb1b1e09ec8a2f9a77b9380f09b4d7cf2989acfa02d8f91601d7a210367039ed41a947
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA512:02a029afdbc7612d860e145120113da0e25abcb5cbef947f5838fae41d02361d3c150322ef24a0d6e675d66e45b491da53fd0e5c8311d45f017a72e8eba6e33f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/3.2.0/
+
 
 ### `dpkg` source package: `architecture-properties=0.2.6build1`
 
@@ -573,14 +573,9 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-9ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA512:e94075d09b38a50138b782323de286deb7b15008064f07df4fa682e94367e829d9bfafef48d5478f730fef8fde536bcc6d54cab0452b76473a3c620b3dc18fa2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-9ubuntu4.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-9ubuntu4.debian.tar.xz 100304 SHA512:cf53bc0b3dbb290ba3b983462b6bc838889795f7d3e73d7c119f9c350ffb80ea270caa08e1b82c831895d31d25cd13680055f15333a3223e9997318199daa9ec
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-9ubuntu4.dsc' cyrus-sasl2_2.1.28+dfsg1-9ubuntu4.dsc 3831 SHA512:c6c9a0516bf499faebd6128c657d179430e73aadc406afbf646ddae19e7d720aabac93ede8843bb5317d535928767ce63d34b7db581908d04b0cdd813dd1f5a2
-```
 
 ### `dpkg` source package: `dash=0.5.12-12ubuntu3`
 
@@ -2049,14 +2044,9 @@ Licenses: (parsed from: `/usr/share/doc/libevent-2.1-7t64/copyright`, `/usr/shar
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libevent=2.1.12-stable-10build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz' libevent_2.1.12-stable.orig.tar.gz 1100847 SHA512:88d8944cd75cbe78bc4e56a6741ca67c017a3686d5349100f1c74f8a68ac0b6410ce64dff160be4a4ba0696ee29540dfed59aaf3c9a02f0c164b00307fcfe84f
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-10build2.debian.tar.xz' libevent_2.1.12-stable-10build2.debian.tar.xz 18060 SHA512:22c896807ecd0b651e7228e6a59c0a9b968221db1e3633d479ce7719632bf6cefc82546337a90a3bc7e839e80813d03b19ef6431cd6dec841dd027f08b0635b5
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-10build2.dsc' libevent_2.1.12-stable-10build2.dsc 2436 SHA512:bc7c961f9858e8212f8822104accd902d64477ab18a7db6b896bfe5f4f7b4f400ae5aa944570e6fc9da932446b9171b1f133e62081037383a5c7256db157e672
-```
 
 ### `dpkg` source package: `libexif=0.6.26-1`
 
@@ -2127,15 +2117,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.17.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.17.0-1.dsc' libfido2_1.17.0-1.dsc 2585 SHA512:5fee80380a9dd41e7f9fe40aa88962cafeb2940f79dfc1a44c2d2acf38f0e94af5dca33f1c0b028c8e1b543194bda9515bacb97e6aa8e2422e36caab1d5e5322
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz' libfido2_1.17.0.orig.tar.gz 714675 SHA512:42da7eac4baa6e0c193a2fc2b42d86cbab45c4c7a79220b523c0b4ddc547bbd12b86b3fbbadd7a961e930417ca3026873fb7f0e72903976ca5dc70b445910b79
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.17.0.orig.tar.gz.asc' libfido2_1.17.0.orig.tar.gz.asc 228 SHA512:c01cfb04cc731f52680da615e1b2fc2b8a4e68c1d57453f527ea46655ec8a89b2792c5a11eeb47c29d967a11f9604d38cd9711f6b02ada2b2da72b3845adf30a
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.17.0-1.debian.tar.xz' libfido2_1.17.0-1.debian.tar.xz 68776 SHA512:00c464ea3f663c98ec967d008c2f3be42aca8035857a1942c26fd665f9aec076c2d088cf326906718bbfe2d4a3487aeeba671b36eba238545d8d8163a7360efe
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libfido2/1.17.0-1/
+
 
 ### `dpkg` source package: `libgcrypt20=1.12.2-1ubuntu1`
 
@@ -4391,14 +4379,9 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.25.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.25.1.orig.tar.gz' unbound_1.25.1.orig.tar.gz 6832247 SHA512:a536ff1d9b637e4ffa46ab498919ddf089b4498e65c748748c4920a6da52e1f5bacfbba9ac1dc47798d168e2ea64a7ae7ea2a581464d1fcabae241a6e38c8d13
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.25.1-1ubuntu1.debian.tar.xz' unbound_1.25.1-1ubuntu1.debian.tar.xz 30388 SHA512:e94c33fa420e6a72217c274c28077ebdea9a6a1948b9501ad52d7b1826ec9a95df121dc0b855cf0d493099fc1120823e72bc91990fedb4efc9015a6bfb9f060e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.25.1-1ubuntu1.dsc' unbound_1.25.1-1ubuntu1.dsc 3215 SHA512:f4fbf362ee167624a68dd98a1d3c2b4d817689aa63cf3ea3b1ce73fad17bcaedb2c5f61315966e4d51a05d5e09181fd45a0b89ce6c2a33d3a6aed10e1ad710d8
-```
 
 ### `dpkg` source package: `unzip=6.0-29ubuntu1`
 
