@@ -518,7 +518,12 @@ http://vault.almalinux.org/10.2/BaseOS/Source/Packages/acl-2.4.0-1.el10_2.src.rp
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libarchive-3.7.7-10.el10_2.src.rpm
+```
 
 ### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
 
@@ -743,15 +748,15 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libnghttp2-1.68.0-3.el10_2.1.x86_64`
+### `rpm` package: `libnghttp2-1.68.0-3.el10_2.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.68.0-3.el10_2.1
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/nghttp2-1.68.0-3.el10_2.1.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.68.0-3.el10_2.2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/nghttp2-1.68.0-3.el10_2.2.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.5-6.el10.x86_64`
