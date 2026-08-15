@@ -676,7 +676,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libnghttp2-1.68.0-3.el10_2.1.x86_64`
+### `rpm` package: `libnghttp2-1.68.0-3.el10_2.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
