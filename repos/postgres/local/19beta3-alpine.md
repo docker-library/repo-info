@@ -1,10 +1,10 @@
-# `postgres:16.15-alpine3.24`
+# `postgres:19beta3-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75f5a96988cdf694a215073c3e9c001b706b371e2f94df3967f2efdec2787f6b`
-- Created: `2026-08-13T19:18:09.513955733Z`
-- Virtual Size: ~ 294.28 Mb  
+- Image ID: `sha256:4e9a7dd0de26358c0ef16bfa0bb6f3fa327f52e77470509e1355d57ee9c61d62`
+- Created: `2026-08-13T19:16:41.370255198Z`
+- Virtual Size: ~ 306.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=16`
-  - `PG_VERSION=16.15`
-  - `PG_SHA256=c1575341fa7bd40f5274ea465b34390f4dc64cdd0770af327005caaeb9f6b7ed`
+  - `PG_MAJOR=19`
+  - `PG_VERSION=19beta3`
+  - `PG_SHA256=ea4ad8933121930a58f23c73dc99c26a4184faca26faefa77d15ce0fba7dfe2c`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
-  - `PGDATA=/var/lib/postgresql/data`
+  - `PGDATA=/var/lib/postgresql/19/docker`
 
 ## `apk` (`.apk`-based packages)
 
@@ -123,6 +123,23 @@ GPL-3.0-or-later
 
 ```
 
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.2.0-r1 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.2.0-r1 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.2.0-r1 installed size:
+957 KiB
+
+brotli-libs-1.2.0-r1 license:
+MIT
+
+```
+
 ### `apk` package: `busybox`
 
 ```console
@@ -154,6 +171,23 @@ busybox-binsh-1.37.0-r31 installed size:
 
 busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `c-ares`
+
+```console
+c-ares-1.34.8-r0 description:
+Asynchronous DNS/names resolver library
+
+c-ares-1.34.8-r0 webpage:
+https://c-ares.org/
+
+c-ares-1.34.8-r0 installed size:
+237 KiB
+
+c-ares-1.34.8-r0 license:
+MIT
 
 ```
 
@@ -327,6 +361,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.21.0-r0 description:
+The multiprotocol file transfer library
+
+libcurl-8.21.0-r0 webpage:
+https://curl.se/
+
+libcurl-8.21.0-r0 installed size:
+709 KiB
+
+libcurl-8.21.0-r0 license:
+curl
+
+```
+
 ### `apk` package: `libedit`
 
 ```console
@@ -378,6 +429,23 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.8-r0 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.8-r0 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.8-r0 installed size:
+193 KiB
+
+libidn2-2.3.8-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libldap`
 
 ```console
@@ -409,6 +477,23 @@ libncursesw-6.6_p20260516-r0 installed size:
 
 libncursesw-6.6_p20260516-r0 license:
 X11
+
+```
+
+### `apk` package: `libpsl`
+
+```console
+libpsl-0.21.5-r3 description:
+C library for the Publix Suffix List
+
+libpsl-0.21.5-r3 webpage:
+https://rockdaboot.github.io/libpsl
+
+libpsl-0.21.5-r3 installed size:
+73 KiB
+
+libpsl-0.21.5-r3 license:
+MIT
 
 ```
 
@@ -460,6 +545,40 @@ libstdc++-15.2.0-r5 installed size:
 
 libstdc++-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.4.2-r0 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.4.2-r0 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.4.2-r0 installed size:
+1877 KiB
+
+libunistring-1.4.2-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `liburing`
+
+```console
+liburing-2.14-r0 description:
+Linux kernel io_uring access library
+
+liburing-2.14-r0 webpage:
+https://git.kernel.dk/cgit/liburing/
+
+liburing-2.14-r0 installed size:
+29 KiB
+
+liburing-2.14-r0 license:
+LGPL-2.1-or-later OR MIT
 
 ```
 
@@ -613,6 +732,23 @@ ncurses-terminfo-base-6.6_p20260516-r0 installed size:
 
 ncurses-terminfo-base-6.6_p20260516-r0 license:
 X11
+
+```
+
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.69.0-r0 description:
+HTTP/2 C client, server and proxy (libraries)
+
+nghttp2-libs-1.69.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.69.0-r0 installed size:
+129 KiB
+
+nghttp2-libs-1.69.0-r0 license:
+MIT
 
 ```
 
