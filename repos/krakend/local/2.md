@@ -1,10 +1,10 @@
-# `krakend:2.13.8`
+# `krakend:2.13.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d683dbf727468f9bf2ece3c664a5c2bf2889940c02c5f6199e044fa9b9cee4db`
-- Created: `2026-07-08T16:50:48.385759229Z`
-- Virtual Size: ~ 143.39 Mb  
+- Image ID: `sha256:105a0173f7d55380be7435a095a5ee288f15b00289884e7fda573bd8d29c1b02`
+- Created: `2026-08-14T18:27:22.301334963Z`
+- Virtual Size: ~ 146.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -308,16 +308,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
