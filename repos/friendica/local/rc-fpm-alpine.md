@@ -1,13 +1,13 @@
-# `friendica:2026.05-fpm-alpine`
+# `friendica:2026.08-rc-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b90faa08d19954953a25bff7564227c2be52c294718babcf8ba132e2fe998a7`
-- Created: `2026-08-17T17:37:52.210073083Z`
-- Virtual Size: ~ 286.63 Mb  
+- Image ID: `sha256:3d50f0581349c9534e5a48d47dc99a0636434e340a3846056191cb3086227395`
+- Created: `2026-08-17T17:38:05.99556973Z`
+- Virtual Size: ~ 159.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["/entrypoint-dev.sh"]`
 - Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -25,8 +25,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2026.05`
-  - `FRIENDICA_DOWNLOAD_SHA256=b0a1e218c4a5a30d25b8be5a66cb97a4f4f802b98e7cf3d0d34ce045b2714ab2`
+  - `FRIENDICA_VERSION=2026.08-rc`
 
 ## `apk` (`.apk`-based packages)
 
@@ -404,6 +403,210 @@ LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `gnupg`
+
+```console
+gnupg-2.4.9-r1 description:
+GNU Privacy Guard 2 - meta package for full GnuPG suite
+
+gnupg-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-2.4.9-r1 installed size:
+0 B
+
+gnupg-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-dirmngr`
+
+```console
+gnupg-dirmngr-2.4.9-r1 description:
+GNU Privacy Guard 2 - network certificate management service
+
+gnupg-dirmngr-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-dirmngr-2.4.9-r1 installed size:
+625 KiB
+
+gnupg-dirmngr-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-gpgconf`
+
+```console
+gnupg-gpgconf-2.4.9-r1 description:
+GNU Privacy Guard 2 - core configuration utilities
+
+gnupg-gpgconf-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-gpgconf-2.4.9-r1 installed size:
+233 KiB
+
+gnupg-gpgconf-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-keyboxd`
+
+```console
+gnupg-keyboxd-2.4.9-r1 description:
+GNU Privacy Guard 2 - keyboxd manager
+
+gnupg-keyboxd-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-keyboxd-2.4.9-r1 installed size:
+223 KiB
+
+gnupg-keyboxd-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-utils`
+
+```console
+gnupg-utils-2.4.9-r1 description:
+GNU Privacy Guard 2 - utility programs
+
+gnupg-utils-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-utils-2.4.9-r1 installed size:
+824 KiB
+
+gnupg-utils-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-wks-client`
+
+```console
+gnupg-wks-client-2.4.9-r1 description:
+GNU Privacy Guard 2 - Web Key Service client
+
+gnupg-wks-client-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gnupg-wks-client-2.4.9-r1 installed size:
+167 KiB
+
+gnupg-wks-client-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnutls`
+
+```console
+gnutls-3.8.13-r0 description:
+TLS protocol implementation
+
+gnutls-3.8.13-r0 webpage:
+https://www.gnutls.org/
+
+gnutls-3.8.13-r0 installed size:
+2012 KiB
+
+gnutls-3.8.13-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `gpg`
+
+```console
+gpg-2.4.9-r1 description:
+GNU Privacy Guard 2 - public key operations only
+
+gpg-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gpg-2.4.9-r1 installed size:
+925 KiB
+
+gpg-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpg-agent`
+
+```console
+gpg-agent-2.4.9-r1 description:
+GNU Privacy Guard 2 - cryptographic agent
+
+gpg-agent-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gpg-agent-2.4.9-r1 installed size:
+634 KiB
+
+gpg-agent-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpg-wks-server`
+
+```console
+gpg-wks-server-2.4.9-r1 description:
+GNU Privacy Guard 2 - Web Key Service server
+
+gpg-wks-server-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gpg-wks-server-2.4.9-r1 installed size:
+150 KiB
+
+gpg-wks-server-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpgsm`
+
+```console
+gpgsm-2.4.9-r1 description:
+GNU Privacy Guard 2 - S/MIME version
+
+gpgsm-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gpgsm-2.4.9-r1 installed size:
+477 KiB
+
+gpgsm-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpgv`
+
+```console
+gpgv-2.4.9-r1 description:
+GNU Privacy Guard 2 - signature verification only
+
+gpgv-2.4.9-r1 webpage:
+https://www.gnupg.org/
+
+gpgv-2.4.9-r1 installed size:
+428 KiB
+
+gpgv-2.4.9-r1 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `graphite2`
 
 ```console
@@ -622,6 +825,23 @@ libapk-3.0.6-r0 installed size:
 
 libapk-3.0.6-r0 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `libassuan`
+
+```console
+libassuan-3.0.2-r0 description:
+IPC library used by some GnuPG related software
+
+libassuan-3.0.2-r0 webpage:
+https://www.gnupg.org/software/libassuan/index.html
+
+libassuan-3.0.2-r0 installed size:
+74 KiB
+
+libassuan-3.0.2-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -931,6 +1151,23 @@ BSD-3-Clause AND IJG AND Zlib
 
 ```
 
+### `apk` package: `libksba`
+
+```console
+libksba-1.7.0-r0 description:
+Libksba is a CMS and X.509 access library
+
+libksba-1.7.0-r0 webpage:
+https://www.gnupg.org/software/libksba/index.html
+
+libksba-1.7.0-r0 installed size:
+205 KiB
+
+libksba-1.7.0-r0 license:
+LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
+
+```
+
 ### `apk` package: `libldap`
 
 ```console
@@ -1183,6 +1420,23 @@ libstdc++-15.2.0-r5 installed size:
 
 libstdc++-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libtasn1`
+
+```console
+libtasn1-4.21.0-r0 description:
+The ASN.1 library used in GNUTLS
+
+libtasn1-4.21.0-r0 webpage:
+https://www.gnu.org/software/gnutls/
+
+libtasn1-4.21.0-r0 installed size:
+65 KiB
+
+libtasn1-4.21.0-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -1509,6 +1763,23 @@ X11
 
 ```
 
+### `apk` package: `nettle`
+
+```console
+nettle-3.10.2-r0 description:
+Low-level cryptographic library
+
+nettle-3.10.2-r0 webpage:
+https://www.lysator.liu.se/~nisse/nettle/
+
+nettle-3.10.2-r0 installed size:
+583 KiB
+
+nettle-3.10.2-r0 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `nghttp2-libs`
 
 ```console
@@ -1523,6 +1794,23 @@ nghttp2-libs-1.69.0-r0 installed size:
 
 nghttp2-libs-1.69.0-r0 license:
 MIT
+
+```
+
+### `apk` package: `npth`
+
+```console
+npth-1.8-r0 description:
+The New GNU Portable Threads library
+
+npth-1.8-r0 webpage:
+https://gnupg.org/related_software/npth/
+
+npth-1.8-r0 installed size:
+17 KiB
+
+npth-1.8-r0 license:
+LGPL-2.0-or-later
 
 ```
 
@@ -1560,6 +1848,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `p11-kit`
+
+```console
+p11-kit-0.26.2-r0 description:
+Library for loading and sharing PKCS#11 modules
+
+p11-kit-0.26.2-r0 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
+
+p11-kit-0.26.2-r0 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `pcre2`
 
 ```console
@@ -1574,6 +1879,23 @@ pcre2-10.47-r1 installed size:
 
 pcre2-10.47-r1 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `pinentry`
+
+```console
+pinentry-1.3.2-r0 description:
+Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
+
+pinentry-1.3.2-r0 webpage:
+https://www.gnupg.org/aegypten2/
+
+pinentry-1.3.2-r0 installed size:
+66 KiB
+
+pinentry-1.3.2-r0 license:
+GPL-2.0-or-later
 
 ```
 
