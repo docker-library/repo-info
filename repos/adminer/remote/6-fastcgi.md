@@ -1,11 +1,11 @@
-## `adminer:4-fastcgi`
+## `adminer:6-fastcgi`
 
 ```console
-$ docker pull adminer@sha256:cd3561abd473fa387ef362cbe691b5a0b7d18611342b175a51217d1ac021a740
+$ docker pull adminer@sha256:323451b3755f53dfffbad8c917140aa605c100ffb90d6a79ffb8dbe34a32a0d9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 16
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -16,23 +16,19 @@ $ docker pull adminer@sha256:cd3561abd473fa387ef362cbe691b5a0b7d18611342b175a512
 	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
-	-	linux; ppc64le
-	-	unknown; unknown
-	-	linux; riscv64
-	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
 
-### `adminer:4-fastcgi` - linux; amd64
+### `adminer:6-fastcgi` - linux; amd64
 
 ```console
-$ docker pull adminer@sha256:a1bf687091b6daf88d44e486aa8cf7da328baf784cb00fb02db87a3957a44d1d
+$ docker pull adminer@sha256:1c8109b12110b02ed4e42c0235aeb66cec7897609324bc6235602a417714830e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41617624 bytes)**  
+-	Total Size: **38.6 MB (38621611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e1e87c4abfea3e7d66381a726f0f4208df2dc2a034f400883a7698e7338caca`
+-	Image ID: `sha256:d22526e7926388d1b310468024b9a09ea99740924b91766cfaf5e27b94e507a4`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -89,29 +85,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 22:49:15 GMT
 CMD ["php-fpm"]
-# Thu, 30 Jul 2026 23:19:05 GMT
+# Tue, 18 Aug 2026 17:02:23 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Thu, 30 Jul 2026 23:19:05 GMT
+# Tue, 18 Aug 2026 17:02:23 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Thu, 30 Jul 2026 23:19:31 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Thu, 30 Jul 2026 23:19:31 GMT
+# Tue, 18 Aug 2026 17:02:48 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:02:48 GMT
 COPY *.php /var/www/html/ # buildkit
-# Thu, 30 Jul 2026 23:19:32 GMT
-ENV ADMINER_VERSION=4.17.1
-# Thu, 30 Jul 2026 23:19:32 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Thu, 30 Jul 2026 23:19:32 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Thu, 30 Jul 2026 23:19:32 GMT
+# Tue, 18 Aug 2026 17:02:49 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:02:49 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:02:49 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:02:49 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Thu, 30 Jul 2026 23:19:32 GMT
+# Tue, 18 Aug 2026 17:02:49 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 30 Jul 2026 23:19:32 GMT
+# Tue, 18 Aug 2026 17:02:49 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Thu, 30 Jul 2026 23:19:32 GMT
+# Tue, 18 Aug 2026 17:02:49 GMT
 USER adminer
-# Thu, 30 Jul 2026 23:19:32 GMT
+# Tue, 18 Aug 2026 17:02:49 GMT
 CMD ["php-fpm"]
 ```
 
@@ -164,61 +160,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 22:49:24 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14a442496802ba27fa7a029dd2d795e7d86dc2e4503f69447161f0c5e5d20674`  
-		Last Modified: Thu, 30 Jul 2026 23:19:36 GMT  
-		Size: 305.0 B  
+	-	`sha256:095e399d24f22b310afd9b85c06a7b6838622db859c647f7e6f169a434ece12f`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3ee1b9d6f1e666afb8474ee4b667e4d3d6a5021ad7071515f5766a60268df64`  
-		Last Modified: Thu, 30 Jul 2026 23:19:36 GMT  
-		Size: 1.0 KB (1042 bytes)  
+	-	`sha256:40e1dfa80e1b938b483f00f07b14d14cb16488b825e104d6e8690f61b7bbcbb8`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 1.0 KB (1046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1adc9554909dbe36c1f1b5025485ab8e10e515a7b77cc75f8ecccf936b71ce1`  
-		Last Modified: Thu, 30 Jul 2026 23:19:36 GMT  
-		Size: 4.5 MB (4516342 bytes)  
+	-	`sha256:24826661c4fd07fd4b1c1efb75c36d96f8e98df7865fe8b8f901e9809a01bb2e`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 1.5 MB (1467231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6af45829f373ccb781c7385b407a73b8e63a4cb2e4ed2721ecc720e67a13f4ac`  
-		Last Modified: Thu, 30 Jul 2026 23:19:36 GMT  
-		Size: 1.5 KB (1493 bytes)  
+	-	`sha256:72fbbd1321d587247ec460edf3672164837be1ca73032355c1455f0ab2682cb6`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 1.8 KB (1771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3195c4220f12b87631be58e8980a61456cbb49e0848fcdd751af1d31bbbd48ed`  
-		Last Modified: Thu, 30 Jul 2026 23:19:37 GMT  
-		Size: 562.1 KB (562108 bytes)  
+	-	`sha256:be6fb122430d4edef033dd80045a11a0b7c17ae3629101bd02e99bd2e7545343`  
+		Last Modified: Tue, 18 Aug 2026 17:02:54 GMT  
+		Size: 614.9 KB (614921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3f10fd70107c17d1b819cccabe724ed4eedb24f9c42e6e5be7a78fc8334a945`  
-		Last Modified: Thu, 30 Jul 2026 23:19:37 GMT  
-		Size: 490.0 B  
+	-	`sha256:3e2ece446496f40c5b4733a1db53c2b5e5b7e48a4f6e5e5e4802f29937a2bd8d`  
+		Last Modified: Tue, 18 Aug 2026 17:02:54 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:577bbb6a2761b0d34f4e75227c6da3e8278e71eb43b649616d40e9e3d80324c4
+$ docker pull adminer@sha256:1e53ba90c6f70880123a7384821cc12a7c35e6a164fbfca957089560e80ab09b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33689 bytes)**  
+-	Total Size: **34.0 KB (34011 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c9802deb08ef425572cda367733032128f222de527da91958c67177ac2bf088`
+-	Image ID: `sha256:36f25190684a5deb1925446d49637c35b5b7353fe97f781cbd8225c695816816`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:054ea4e68d919f3d398d8adcb7d867e398e3244ba9cef4ade5f657fb2b36883f`  
-		Last Modified: Thu, 30 Jul 2026 23:19:35 GMT  
-		Size: 33.7 KB (33689 bytes)  
+	-	`sha256:92991e4cdd88dc3b82111c36f9692fdeff739c680e0ede1d8736a8e847e460a1`  
+		Last Modified: Tue, 18 Aug 2026 17:02:52 GMT  
+		Size: 34.0 KB (34011 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `adminer:4-fastcgi` - linux; arm variant v6
+### `adminer:6-fastcgi` - linux; arm variant v6
 
 ```console
-$ docker pull adminer@sha256:46e58caa40982904e1ab55b725026cebc4cad53710fe3f261bc144488d59b4f4
+$ docker pull adminer@sha256:b4adcc727aae70e6d250f271e3e3ca240df1ae789357c0360763aa7583fd7ab3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.3 MB (39312646 bytes)**  
+-	Total Size: **36.7 MB (36717305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2e4f961e87c10cc33f9cc2468fb591eb87c78e32c72883469ab7c3fd3e9568c`
+-	Image ID: `sha256:052b8621d0946c47e6957013d5b872d9c7be6456f2fc9ca2840b7d89673704a2`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -275,29 +271,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 22:45:34 GMT
 CMD ["php-fpm"]
-# Thu, 30 Jul 2026 23:37:53 GMT
+# Tue, 18 Aug 2026 17:03:24 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Thu, 30 Jul 2026 23:37:53 GMT
+# Tue, 18 Aug 2026 17:03:24 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Thu, 30 Jul 2026 23:38:30 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Thu, 30 Jul 2026 23:38:30 GMT
+# Tue, 18 Aug 2026 17:04:02 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:04:02 GMT
 COPY *.php /var/www/html/ # buildkit
-# Thu, 30 Jul 2026 23:38:31 GMT
-ENV ADMINER_VERSION=4.17.1
-# Thu, 30 Jul 2026 23:38:31 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Thu, 30 Jul 2026 23:38:31 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Thu, 30 Jul 2026 23:38:31 GMT
+# Tue, 18 Aug 2026 17:04:03 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:04:03 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:04:03 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:04:03 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Thu, 30 Jul 2026 23:38:31 GMT
+# Tue, 18 Aug 2026 17:04:03 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 30 Jul 2026 23:38:31 GMT
+# Tue, 18 Aug 2026 17:04:03 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Thu, 30 Jul 2026 23:38:31 GMT
+# Tue, 18 Aug 2026 17:04:03 GMT
 USER adminer
-# Thu, 30 Jul 2026 23:38:31 GMT
+# Tue, 18 Aug 2026 17:04:03 GMT
 CMD ["php-fpm"]
 ```
 
@@ -350,61 +346,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 22:45:41 GMT  
 		Size: 9.3 KB (9262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e35c91572c0c1a8e7302bbc9f4c6c3201b3b2c00993c1e8fb2861556c7846941`  
-		Last Modified: Thu, 30 Jul 2026 23:38:35 GMT  
-		Size: 303.0 B  
+	-	`sha256:909a279bc5a22396b1e1ebeb9c33bfb375f932c98b5de1ada212f0b7b54c2fad`  
+		Last Modified: Tue, 18 Aug 2026 17:04:07 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db68e8e471d29ff24aaa1af5182b540ca4db0695b36d4474cc7e11a726cd123d`  
-		Last Modified: Thu, 30 Jul 2026 23:38:35 GMT  
-		Size: 1.0 KB (1039 bytes)  
+	-	`sha256:31557b9caf8e7dd7eff1cfe972b12e56ceb694c4913ec53a59c767de917dec26`  
+		Last Modified: Tue, 18 Aug 2026 17:04:07 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02e80f352c31db0af7433efec9328f632ec23621e463c3a4f035c299d9b0177b`  
-		Last Modified: Thu, 30 Jul 2026 23:38:35 GMT  
-		Size: 4.1 MB (4112036 bytes)  
+	-	`sha256:96b800689f356f8bc4d68cf22b33d88e960d37685af13b45a676d486e280e607`  
+		Last Modified: Tue, 18 Aug 2026 17:04:07 GMT  
+		Size: 1.5 MB (1463594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:faa17b1ebe142d86012b3b4a453914a0bbf7fb1b498ff5e83e60836bf632251f`  
-		Last Modified: Thu, 30 Jul 2026 23:38:35 GMT  
-		Size: 1.5 KB (1489 bytes)  
+	-	`sha256:4103e3f8b79b2b3c5ee9539571f3e6e78585a377750e4097f55121104734833b`  
+		Last Modified: Tue, 18 Aug 2026 17:04:07 GMT  
+		Size: 1.8 KB (1768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f268c396690fb5e63a62cc635b0224a052fb262e9b06ab018f2c90c513cb655`  
-		Last Modified: Thu, 30 Jul 2026 23:38:36 GMT  
-		Size: 562.1 KB (562108 bytes)  
+	-	`sha256:6fdefc35fa637e92ed6782bbbee09d5368dc101525b558eb8b85c272f742b25d`  
+		Last Modified: Tue, 18 Aug 2026 17:04:08 GMT  
+		Size: 614.9 KB (614921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:814f64599ac3fd48bb7b3196f31dcd7460daabb96d54820be72d5db3615802f8`  
-		Last Modified: Thu, 30 Jul 2026 23:38:36 GMT  
-		Size: 489.0 B  
+	-	`sha256:1d888d3f8482825a30241e12135cc9fae02f6be75b3a349b1e176d735c506ac2`  
+		Last Modified: Tue, 18 Aug 2026 17:04:08 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:acb9f3a3158725fc7f9cc7be01eb1605ea2e86a755a2363e7417d16cc7428a59
+$ docker pull adminer@sha256:db5694a613691bcb0e7fb7162b13f249f4e84d1350e27421f219b0767ce0365a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.8 KB (33792 bytes)**  
+-	Total Size: **34.1 KB (34122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60c573d3ceb8efd898f7dd25c111aa08dae3fb8dd89bf739acddd853dfb83282`
+-	Image ID: `sha256:526226ea75514d8d6e10533d9e23ae2a17dc37ac4155e97871e38a319f876987`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c2ea6cc00ce57f903b75d0e33a202ae39aab45a7d30190e20efcdaa83020b56`  
-		Last Modified: Thu, 30 Jul 2026 23:38:35 GMT  
-		Size: 33.8 KB (33792 bytes)  
+	-	`sha256:fb5758d0f2292820e199b47e9817abb9c857489081f506742ce71427a83aa30d`  
+		Last Modified: Tue, 18 Aug 2026 17:04:07 GMT  
+		Size: 34.1 KB (34122 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `adminer:4-fastcgi` - linux; arm variant v7
+### `adminer:6-fastcgi` - linux; arm variant v7
 
 ```console
-$ docker pull adminer@sha256:39e7930330d6d1982d439508c71d32b9ea41118926a6196929413c2a0e7a3a7e
+$ docker pull adminer@sha256:9fa9b36cc07d50f3437b2d724a49be66ce604bb3f7b1bc3b3f46dbb8c56e8dd0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 MB (38104323 bytes)**  
+-	Total Size: **35.3 MB (35311849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9129e7d920ac64ecd5469c7956456281a811cbbabb8437e55b17e4b8daa52f2a`
+-	Image ID: `sha256:75caa1f68fe24c270958af40a272332bcd1cfc27d41c50cc1e38e7ec3e5ec22e`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -461,29 +457,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 23:10:38 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jul 2026 00:20:05 GMT
+# Tue, 18 Aug 2026 17:02:12 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Fri, 31 Jul 2026 00:20:05 GMT
+# Tue, 18 Aug 2026 17:02:12 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Fri, 31 Jul 2026 00:20:38 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:46 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:02:46 GMT
 COPY *.php /var/www/html/ # buildkit
-# Fri, 31 Jul 2026 00:20:39 GMT
-ENV ADMINER_VERSION=4.17.1
-# Fri, 31 Jul 2026 00:20:39 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Fri, 31 Jul 2026 00:20:39 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:47 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:02:47 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:02:47 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:02:47 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:47 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:47 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:47 GMT
 USER adminer
-# Fri, 31 Jul 2026 00:20:39 GMT
+# Tue, 18 Aug 2026 17:02:47 GMT
 CMD ["php-fpm"]
 ```
 
@@ -536,61 +532,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 23:10:47 GMT  
 		Size: 9.3 KB (9262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0b2d7311b7eb03f0ecbb19b6c70e99da055b13982e10ee9c5a23d945ee97a52`  
-		Last Modified: Fri, 31 Jul 2026 00:20:43 GMT  
-		Size: 304.0 B  
+	-	`sha256:2981f69174c55a3deb47dbd9bd78b822823972be5dce24e5d79ac676ec68076a`  
+		Last Modified: Tue, 18 Aug 2026 17:02:51 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0537f49cf9e3883bea1ea03644375603ddd580b9e6a2ffb9d01e989954739f6`  
-		Last Modified: Fri, 31 Jul 2026 00:20:43 GMT  
-		Size: 1.0 KB (1039 bytes)  
+	-	`sha256:102ef8464a757210cfc4ef4355a1159385a9ee8226fe2171af8a1c31eb5f8927`  
+		Last Modified: Tue, 18 Aug 2026 17:02:51 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0948ee881d4efd441c27ac13881f1fe222e88fa62f688e978412a6bc6cb03929`  
-		Last Modified: Fri, 31 Jul 2026 00:20:43 GMT  
-		Size: 4.2 MB (4158940 bytes)  
+	-	`sha256:fdec42b27afb2fcdb96d274d33f9e33f9e6613dea848f9c9844323125ad5b2c7`  
+		Last Modified: Tue, 18 Aug 2026 17:02:52 GMT  
+		Size: 1.3 MB (1313375 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4b688648f17a11ffb1f46b8a94c4acc8422627e2c31cb3774ce9db6ec3f929e`  
-		Last Modified: Fri, 31 Jul 2026 00:20:43 GMT  
-		Size: 1.5 KB (1491 bytes)  
+	-	`sha256:f0c44b8717c9107a1516858ef8c9e143a56d3471a1f9bc87a5bde6a2a270f6e2`  
+		Last Modified: Tue, 18 Aug 2026 17:02:51 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48a96a2b956e19196441d54b1ec15bcdf513796cbb0d353e743988ec19594889`  
-		Last Modified: Fri, 31 Jul 2026 00:20:44 GMT  
-		Size: 562.1 KB (562108 bytes)  
+	-	`sha256:1e73ce6cabd450a416aa030591a6d8bbcf6a173f3d1fd8cb27c503949a86cec0`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 614.9 KB (614918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e52c00b89be39a9fc9220c78723506a3c91aac1ff462f8d14e1781488d15848f`  
-		Last Modified: Fri, 31 Jul 2026 00:20:44 GMT  
-		Size: 494.0 B  
+	-	`sha256:a25a72e87f0deaa1c4c26b9be1faa7cd62073e8c0c2142e11ae42c3ab00e7bca`  
+		Last Modified: Tue, 18 Aug 2026 17:02:53 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:d7cc84d31fbd78fde13cf9ccb397ec26835484e37b45134b17ee377e9a5eefd9
+$ docker pull adminer@sha256:20e35ea398be39615b7218d4d014bf61144aecc5972e84a5dbabaa4205375db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.8 KB (33792 bytes)**  
+-	Total Size: **34.1 KB (34122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edce1996946a81900a523fc4ac6fe36b5fea7b3cc9e0219d10fcf9258be236ff`
+-	Image ID: `sha256:d94972a60cfc0f95b0756bfad69608d9e16d30f8475e468407bd948a4baa931e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4468e9fa9dfa888319b240dfa9af9aaac5a6271645eacbaeded4f448e12bbbfc`  
-		Last Modified: Fri, 31 Jul 2026 00:20:43 GMT  
-		Size: 33.8 KB (33792 bytes)  
+	-	`sha256:6ad4b7f0fecd61912f843e6700687257b3e8798383980346e26ce7ae4c15430d`  
+		Last Modified: Tue, 18 Aug 2026 17:02:51 GMT  
+		Size: 34.1 KB (34122 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `adminer:4-fastcgi` - linux; arm64 variant v8
+### `adminer:6-fastcgi` - linux; arm64 variant v8
 
 ```console
-$ docker pull adminer@sha256:eb4204aa2b69b89f2b7ec6fe008645e4f0e90c3525cf658ca36004a8ee0304c1
+$ docker pull adminer@sha256:1e4456b905d1931d5c58a42df42e19ab41897424333a325da57574d5f544d95d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.5 MB (41470908 bytes)**  
+-	Total Size: **38.5 MB (38487953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad773afc0df466268e4fac0bed491e0263207a6f982da026a17c395eb3649f5a`
+-	Image ID: `sha256:9c31feb3f298951429f18364b82c9c99b3a8eb115500f6d8fc532891720c8eaa`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -647,29 +643,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 22:50:05 GMT
 CMD ["php-fpm"]
-# Thu, 30 Jul 2026 23:22:49 GMT
+# Tue, 18 Aug 2026 17:03:13 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Thu, 30 Jul 2026 23:22:50 GMT
+# Tue, 18 Aug 2026 17:03:13 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Thu, 30 Jul 2026 23:23:23 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Thu, 30 Jul 2026 23:23:23 GMT
+# Tue, 18 Aug 2026 17:03:49 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:03:49 GMT
 COPY *.php /var/www/html/ # buildkit
-# Thu, 30 Jul 2026 23:23:24 GMT
-ENV ADMINER_VERSION=4.17.1
-# Thu, 30 Jul 2026 23:23:24 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Thu, 30 Jul 2026 23:23:24 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Thu, 30 Jul 2026 23:23:24 GMT
+# Tue, 18 Aug 2026 17:03:50 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:03:50 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:03:50 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:03:50 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Thu, 30 Jul 2026 23:23:24 GMT
+# Tue, 18 Aug 2026 17:03:50 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 30 Jul 2026 23:23:24 GMT
+# Tue, 18 Aug 2026 17:03:50 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Thu, 30 Jul 2026 23:23:24 GMT
+# Tue, 18 Aug 2026 17:03:50 GMT
 USER adminer
-# Thu, 30 Jul 2026 23:23:24 GMT
+# Tue, 18 Aug 2026 17:03:50 GMT
 CMD ["php-fpm"]
 ```
 
@@ -722,61 +718,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 22:50:13 GMT  
 		Size: 9.3 KB (9264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87cd7380b7e642e6913bcb37ef0815b7abe40849126ff58514f74273dcbb1d19`  
-		Last Modified: Thu, 30 Jul 2026 23:23:28 GMT  
-		Size: 304.0 B  
+	-	`sha256:59e94da9c1a5ef98fa8d2eea46e7d79a3525fd2fb58133ef26e9967fb7f42b37`  
+		Last Modified: Tue, 18 Aug 2026 17:03:54 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5e85b6caa388020d814101c81682d6caecb4ad6aff1c5a53a3d4ed27a14c426`  
-		Last Modified: Thu, 30 Jul 2026 23:23:28 GMT  
-		Size: 1.0 KB (1038 bytes)  
+	-	`sha256:cc636f95111d6b3291585cecf7f2dad5bb3d1cfbb3e40b9bbdd0d12cf1395226`  
+		Last Modified: Tue, 18 Aug 2026 17:03:54 GMT  
+		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb33a875626f20e6b9a69debd810742b8be6e0403a89a194731156ad0e25e59d`  
-		Last Modified: Thu, 30 Jul 2026 23:23:28 GMT  
-		Size: 4.5 MB (4515594 bytes)  
+	-	`sha256:04dee6d5a4a99e027253d7b6605d5065863fce87151b68997580cb381cda829c`  
+		Last Modified: Tue, 18 Aug 2026 17:03:54 GMT  
+		Size: 1.5 MB (1479538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fad1166aee285d7c33bf09cd9a1994f78b0f4650b2a39b179f3411ab2c62f224`  
-		Last Modified: Thu, 30 Jul 2026 23:23:28 GMT  
-		Size: 1.5 KB (1490 bytes)  
+	-	`sha256:cc30f99176906085acaafd6239bee3926511a1c35ead80b68af23515073cf8f9`  
+		Last Modified: Tue, 18 Aug 2026 17:03:54 GMT  
+		Size: 1.8 KB (1768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a82e2ffb2b7009958e654db32b7de0b5ed62a1f6335f1ecee119c2b05cc8efef`  
-		Last Modified: Thu, 30 Jul 2026 23:23:29 GMT  
-		Size: 562.1 KB (562109 bytes)  
+	-	`sha256:a1bef7dfa76c6c38b579715c9eb84ccd8999c6b7d88da0cd74dff1dd4f3d6247`  
+		Last Modified: Tue, 18 Aug 2026 17:03:55 GMT  
+		Size: 614.9 KB (614921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dca8484c141a8d26f62548c85830166e06b8fdd380826e0e273d9e02b3379f3`  
-		Last Modified: Thu, 30 Jul 2026 23:23:29 GMT  
-		Size: 488.0 B  
+	-	`sha256:f47ee220ef3b44a869b284a12f7d05e5453fa435085ce180203ca123d8a91313`  
+		Last Modified: Tue, 18 Aug 2026 17:03:55 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:bc11453eaa854313344e690c80066e55b27edc272522debc5b089af42fbf490d
+$ docker pull adminer@sha256:3e7856f41493a0b13c52ff0c15ee86c33d2295ab18565168347654f024671775
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.8 KB (33814 bytes)**  
+-	Total Size: **34.1 KB (34148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6bd12892cd1179f6391154aa6bc1e75d3fce04f2a3dda90c6b25e0bde3b56d7`
+-	Image ID: `sha256:0e21c33d2a52756c546919ce445d34923d37eaee65d309105727468774de77a8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74fafe525be1196b049841202227a88f43fe85f7f69025e389f7103133e6e050`  
-		Last Modified: Thu, 30 Jul 2026 23:23:27 GMT  
-		Size: 33.8 KB (33814 bytes)  
+	-	`sha256:544762bbdc5bf38cf7658316fbf9844207c6ac3a0fd66f69c07fcba0e48b6d76`  
+		Last Modified: Tue, 18 Aug 2026 17:03:54 GMT  
+		Size: 34.1 KB (34148 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `adminer:4-fastcgi` - linux; 386
+### `adminer:6-fastcgi` - linux; 386
 
 ```console
-$ docker pull adminer@sha256:44571b8106a3016ad0570bc3a0ccbef5f57bf68eca1134009522713fa45cb3f5
+$ docker pull adminer@sha256:9394fbbdb11a091c457dae1b2e194165b672a0515ed283c2f112a16fff8834f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.6 MB (41613163 bytes)**  
+-	Total Size: **38.8 MB (38826482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5592691477ead98953f5f0c2984d68697b940eff2bdd5962ac4194f3e1cdcd8a`
+-	Image ID: `sha256:b2e660e68bbad94d7cb5ba9145ee4db89c34fec0781cf12d8a06829a8b389b58`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -833,29 +829,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 22:50:13 GMT
 CMD ["php-fpm"]
-# Thu, 30 Jul 2026 23:19:35 GMT
+# Tue, 18 Aug 2026 17:00:35 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Thu, 30 Jul 2026 23:19:35 GMT
+# Tue, 18 Aug 2026 17:00:36 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Thu, 30 Jul 2026 23:20:01 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Thu, 30 Jul 2026 23:20:01 GMT
+# Tue, 18 Aug 2026 17:01:05 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:01:05 GMT
 COPY *.php /var/www/html/ # buildkit
-# Thu, 30 Jul 2026 23:20:02 GMT
-ENV ADMINER_VERSION=4.17.1
-# Thu, 30 Jul 2026 23:20:02 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Thu, 30 Jul 2026 23:20:02 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Thu, 30 Jul 2026 23:20:02 GMT
+# Tue, 18 Aug 2026 17:01:06 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:01:06 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:01:06 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:01:06 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Thu, 30 Jul 2026 23:20:02 GMT
+# Tue, 18 Aug 2026 17:01:06 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 30 Jul 2026 23:20:02 GMT
+# Tue, 18 Aug 2026 17:01:06 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Thu, 30 Jul 2026 23:20:02 GMT
+# Tue, 18 Aug 2026 17:01:06 GMT
 USER adminer
-# Thu, 30 Jul 2026 23:20:02 GMT
+# Tue, 18 Aug 2026 17:01:06 GMT
 CMD ["php-fpm"]
 ```
 
@@ -908,433 +904,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 22:50:23 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2af49a81a39e19bfb546fd579f0c8f58eec397ef4ec70a875997ba9a9059a166`  
-		Last Modified: Thu, 30 Jul 2026 23:20:06 GMT  
-		Size: 303.0 B  
+	-	`sha256:f76a33b4e250a91d661341facc7976325a42718648fe26748b53609948132eda`  
+		Last Modified: Tue, 18 Aug 2026 17:01:11 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8381543ec3bfed045e8e85d6ba1fb1cc71b0e4383a9d0f491bec204f872399a5`  
-		Last Modified: Thu, 30 Jul 2026 23:20:06 GMT  
-		Size: 1.0 KB (1040 bytes)  
+	-	`sha256:fc6e3f9618e172d6b78dbe9f026f1e80144fd710eaa24453fab31a00dd7582f3`  
+		Last Modified: Tue, 18 Aug 2026 17:01:11 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6129f70bb6559495355bd5dad3c79378ba0843384587899ff669ad1086d740e3`  
-		Last Modified: Thu, 30 Jul 2026 23:20:06 GMT  
-		Size: 4.3 MB (4335340 bytes)  
+	-	`sha256:8cfc0730d97bdb554104d57d1ab1e43f4aa67133240caa02025aca3c395c0845`  
+		Last Modified: Tue, 18 Aug 2026 17:01:11 GMT  
+		Size: 1.5 MB (1495556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04ca06aca30202310c922d4c60abc49b73581ddd523a8e07da140305a7ddad38`  
-		Last Modified: Thu, 30 Jul 2026 23:20:06 GMT  
-		Size: 1.5 KB (1490 bytes)  
+	-	`sha256:086b7990be695bce84393033dcf8f3e3a57cf1871f61a68b6fe3b128c86b19de`  
+		Last Modified: Tue, 18 Aug 2026 17:01:11 GMT  
+		Size: 1.8 KB (1771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8044545eab5e4265b5b42f63687fbed7bb799e3dd2fb1497ec9ee7ed8bb763f`  
-		Last Modified: Thu, 30 Jul 2026 23:20:07 GMT  
-		Size: 562.1 KB (562109 bytes)  
+	-	`sha256:af7f6f4bbca7c8bbb084dff91aff96ec9fdc98edc93d71c501e73e50f3e82086`  
+		Last Modified: Tue, 18 Aug 2026 17:01:12 GMT  
+		Size: 614.9 KB (614918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0808dd1c5f3e35b8d172e70c435631e5d7df4ecce28d2a33eb3cbd8b32ca6a2`  
-		Last Modified: Thu, 30 Jul 2026 23:20:07 GMT  
-		Size: 490.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `adminer:4-fastcgi` - unknown; unknown
-
-```console
-$ docker pull adminer@sha256:ac92ddcce864ab027aa230e6f9165b50cfd6319da759846eee6378f7af235491
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33660 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0dad19bd46a36563a56ef77edae2982b04c2833be60ad3c9b04e408bfd561d4`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:c13cfe9d6f8d492f8d077832f548f279ba0b2d4dc68fb11260fdd9706f90f54e`  
-		Last Modified: Thu, 30 Jul 2026 23:20:06 GMT  
-		Size: 33.7 KB (33660 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `adminer:4-fastcgi` - linux; ppc64le
-
-```console
-$ docker pull adminer@sha256:5747df9f89cb99ce678eed437c59eb98ab0fa535b911d9ea380d66507e8f0801
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.4 MB (42407897 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7266e32666de68898597fb76aa508447d8cce30656862c716a2fb787e28a8c5d`
--	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
--	Default Command: `["php-fpm"]`
-
-```dockerfile
-# Tue, 16 Jun 2026 00:00:15 GMT
-ADD alpine-minirootfs-3.24.1-ppc64le.tar.gz / # buildkit
-# Tue, 16 Jun 2026 00:00:15 GMT
-CMD ["/bin/sh"]
-# Thu, 02 Jul 2026 20:57:29 GMT
-ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Thu, 02 Jul 2026 20:57:29 GMT
-RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
-# Thu, 02 Jul 2026 20:57:30 GMT
-RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_INI_DIR=/usr/local/etc/php
-# Thu, 02 Jul 2026 20:57:30 GMT
-RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_VERSION=8.4.24
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc
-# Thu, 02 Jul 2026 20:57:30 GMT
-ENV PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731
-# Fri, 31 Jul 2026 00:22:54 GMT
-RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 31 Jul 2026 00:22:55 GMT
-COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 31 Jul 2026 00:28:02 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 31 Jul 2026 00:28:03 GMT
-COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 31 Jul 2026 00:28:05 GMT
-RUN docker-php-ext-enable opcache # buildkit
-# Fri, 31 Jul 2026 00:28:06 GMT
-RUN docker-php-ext-enable sodium # buildkit
-# Fri, 31 Jul 2026 00:28:06 GMT
-ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 31 Jul 2026 00:28:07 GMT
-WORKDIR /var/www/html
-# Fri, 31 Jul 2026 00:28:07 GMT
-RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Fri, 31 Jul 2026 00:28:07 GMT
-STOPSIGNAL SIGQUIT
-# Fri, 31 Jul 2026 00:28:07 GMT
-EXPOSE map[9000/tcp:{}]
-# Fri, 31 Jul 2026 00:28:07 GMT
-CMD ["php-fpm"]
-# Fri, 31 Jul 2026 02:07:56 GMT
-RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Fri, 31 Jul 2026 02:07:56 GMT
-RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Fri, 31 Jul 2026 02:10:09 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Fri, 31 Jul 2026 02:10:10 GMT
-COPY *.php /var/www/html/ # buildkit
-# Fri, 31 Jul 2026 02:10:11 GMT
-ENV ADMINER_VERSION=4.17.1
-# Fri, 31 Jul 2026 02:10:11 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Fri, 31 Jul 2026 02:10:11 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Fri, 31 Jul 2026 02:10:11 GMT
-RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Fri, 31 Jul 2026 02:10:12 GMT
-COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 31 Jul 2026 02:10:12 GMT
-ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Fri, 31 Jul 2026 02:10:12 GMT
-USER adminer
-# Fri, 31 Jul 2026 02:10:12 GMT
-CMD ["php-fpm"]
-```
-
--	Layers:
-	-	`sha256:3ebcdcd395ccee658b9200e4b27d7699e5d6ed9f6c1858dea12781aac519ff59`  
-		Last Modified: Sun, 14 Jun 2026 06:46:36 GMT  
-		Size: 3.8 MB (3813400 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c21e4c935439302c2613da21e00f33b1b7ba6044d334f32deb82f09c5a5952ab`  
-		Last Modified: Thu, 02 Jul 2026 21:03:42 GMT  
-		Size: 3.6 MB (3647350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57b549e7f4463ca7f92da7527719118c35266fbf75ac1eefbc3fd312809d1dd6`  
-		Last Modified: Thu, 02 Jul 2026 21:03:41 GMT  
-		Size: 933.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32645532feb9a012c3d8e233656d0b9135c712a35d8af82155617d9f1088ab94`  
-		Last Modified: Thu, 02 Jul 2026 21:03:41 GMT  
-		Size: 219.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2c7b089b0f336ff2d1b5c725e46ba0ac6ef7702950d5420f2c05f5b2e47cc81`  
-		Last Modified: Fri, 31 Jul 2026 00:27:47 GMT  
-		Size: 13.8 MB (13775215 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe377fe0947caf068edcd996de5dcca8f22e5e9ed068dffbd6996e03ac949a5`  
-		Last Modified: Fri, 31 Jul 2026 00:27:46 GMT  
-		Size: 493.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ade48299cddbd67703240ca7ceaf5fb7f64e446e51ab732c75de491e117818ba`  
-		Last Modified: Fri, 31 Jul 2026 00:28:20 GMT  
-		Size: 16.1 MB (16056291 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4841fd828117edacabf4038f1edc30db43cdf84fb38b2c47655f65b9d5647e5a`  
-		Last Modified: Fri, 31 Jul 2026 00:28:19 GMT  
-		Size: 2.4 KB (2449 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d542e0e9899dabcb388b1452fa13e24bc42f4660b84a6ab7f2586aa8bfd52d8e`  
-		Last Modified: Fri, 31 Jul 2026 00:28:19 GMT  
-		Size: 22.2 KB (22201 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:790bb5aa8eb33dd8ab9377bf8f2c08cfad558361c0ba1dc0d010e8791f079bea`  
-		Last Modified: Fri, 31 Jul 2026 00:28:19 GMT  
-		Size: 22.2 KB (22224 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df907396147251c2544e31958da2a392ef123d7eaac71a1c2b0527da89f4fcf2`  
-		Last Modified: Fri, 31 Jul 2026 00:28:20 GMT  
-		Size: 9.3 KB (9266 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:546bd93f79979c5ce187864639785d1cf346c700b82ffeff348eca425b608e8e`  
-		Last Modified: Fri, 31 Jul 2026 02:08:59 GMT  
-		Size: 306.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49caa45500321c5429445336daa1a1ccfc88ae6ba77c8eee0c737d61110ba03b`  
-		Last Modified: Fri, 31 Jul 2026 02:08:59 GMT  
-		Size: 1.0 KB (1042 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21ac8974f69dcf39e77d782d9b47e55fc22227754afe25bc73d54e5c8999d59b`  
-		Last Modified: Fri, 31 Jul 2026 02:10:21 GMT  
-		Size: 4.5 MB (4492385 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84d57daee342116e57242f79c41b0fd55d9270e0484cec8d7ca363066485f18e`  
-		Last Modified: Fri, 31 Jul 2026 02:10:21 GMT  
-		Size: 1.5 KB (1494 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb1bbc5d6e225b1342fdd70d7b8f9e5900d22ccae0e034e600d025c49a53e85`  
-		Last Modified: Fri, 31 Jul 2026 02:10:21 GMT  
-		Size: 562.1 KB (562105 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e11e2504fe39dcf96088f547e4600ac481eff55b9f473c671bc9673de23338dd`  
-		Last Modified: Fri, 31 Jul 2026 02:10:21 GMT  
-		Size: 492.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `adminer:4-fastcgi` - unknown; unknown
-
-```console
-$ docker pull adminer@sha256:82218c5e98880d1dccd415d9cbde340478e9a3e328eb74091233c4391a15af4a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33726 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebe36066a0809637cf39c64ede2248a73a88a185820eadb09a5d3303a9e68bd0`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:445d5ce2d9a5d43bf99dc6abbc5cbc0e90099790469c670cd519d4d416c8f584`  
-		Last Modified: Fri, 31 Jul 2026 02:10:21 GMT  
-		Size: 33.7 KB (33726 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `adminer:4-fastcgi` - linux; riscv64
-
-```console
-$ docker pull adminer@sha256:1302c97dd6275ce85853ff08c952ff8b7bd21aa561bfe8e76cad128d1898f055
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.9 MB (40909793 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5487629f5611c9c73d50bee3ffa242b927891936ac3bca40cc01b0dcd2e379c2`
--	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
--	Default Command: `["php-fpm"]`
-
-```dockerfile
-# Tue, 16 Jun 2026 05:59:15 GMT
-ADD alpine-minirootfs-3.24.1-riscv64.tar.gz / # buildkit
-# Tue, 16 Jun 2026 05:59:15 GMT
-CMD ["/bin/sh"]
-# Wed, 17 Jun 2026 10:08:26 GMT
-ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Wed, 17 Jun 2026 10:08:26 GMT
-RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
-# Wed, 17 Jun 2026 10:08:27 GMT
-RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_INI_DIR=/usr/local/etc/php
-# Wed, 17 Jun 2026 10:08:27 GMT
-RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_VERSION=8.4.24
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc
-# Wed, 17 Jun 2026 10:08:27 GMT
-ENV PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731
-# Sat, 01 Aug 2026 01:57:23 GMT
-RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
-# Sat, 01 Aug 2026 01:57:23 GMT
-COPY docker-php-source /usr/local/bin/ # buildkit
-# Sat, 01 Aug 2026 03:55:25 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 						--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Sat, 01 Aug 2026 03:55:25 GMT
-COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Sat, 01 Aug 2026 03:55:30 GMT
-RUN docker-php-ext-enable opcache # buildkit
-# Sat, 01 Aug 2026 03:55:34 GMT
-RUN docker-php-ext-enable sodium # buildkit
-# Sat, 01 Aug 2026 03:55:34 GMT
-ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 01 Aug 2026 03:55:35 GMT
-WORKDIR /var/www/html
-# Sat, 01 Aug 2026 03:55:35 GMT
-RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Sat, 01 Aug 2026 03:55:35 GMT
-STOPSIGNAL SIGQUIT
-# Sat, 01 Aug 2026 03:55:35 GMT
-EXPOSE map[9000/tcp:{}]
-# Sat, 01 Aug 2026 03:55:35 GMT
-CMD ["php-fpm"]
-# Sun, 02 Aug 2026 10:36:02 GMT
-RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Sun, 02 Aug 2026 10:36:03 GMT
-RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Sun, 02 Aug 2026 10:54:37 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Sun, 02 Aug 2026 10:54:38 GMT
-COPY *.php /var/www/html/ # buildkit
-# Sun, 02 Aug 2026 10:54:40 GMT
-ENV ADMINER_VERSION=4.17.1
-# Sun, 02 Aug 2026 10:54:40 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Sun, 02 Aug 2026 10:54:40 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Sun, 02 Aug 2026 10:54:40 GMT
-RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Sun, 02 Aug 2026 10:54:40 GMT
-COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Sun, 02 Aug 2026 10:54:40 GMT
-ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Sun, 02 Aug 2026 10:54:40 GMT
-USER adminer
-# Sun, 02 Aug 2026 10:54:40 GMT
-CMD ["php-fpm"]
-```
-
--	Layers:
-	-	`sha256:c34e5222b29b86391cdae95b0473ef789493ff1a0068a3a30b5d66f544bd7cf6`  
-		Last Modified: Sun, 14 Jun 2026 06:47:00 GMT  
-		Size: 3.6 MB (3574358 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdc09af4ff1d594ba4ff939387160eac2fe7e3118ca810f61819eb5d92f7b520`  
-		Last Modified: Wed, 17 Jun 2026 12:01:56 GMT  
-		Size: 3.6 MB (3604699 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01600916adca5933ee02bb7a5a25279f28df2779de050e87ee103675d313f666`  
-		Last Modified: Wed, 17 Jun 2026 12:01:55 GMT  
-		Size: 932.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a891144274182ffd9c264ebaada55f1b357da87b9d652cda214fc6307d6f939`  
-		Last Modified: Wed, 17 Jun 2026 12:01:55 GMT  
-		Size: 220.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c153cd523b6d149e8125fd84af1719725e21a89c8f4ffd44621109ab3eae54d`  
-		Last Modified: Sat, 01 Aug 2026 02:56:38 GMT  
-		Size: 13.8 MB (13775231 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22c074f8062e63f84853bc8d83804f1053e086f373f1ec15fd0e0990f205b7a4`  
-		Last Modified: Sat, 01 Aug 2026 02:56:34 GMT  
+	-	`sha256:5293f6816bab48d379f5502e7f62871abdbba1fa23826d7d201b12612d33723a`  
+		Last Modified: Tue, 18 Aug 2026 17:01:12 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a7263fc42b5bb1ecd6e242dfa75d1e5f3370fc01608e76b9a5798cbd7a3e00b`  
-		Last Modified: Sat, 01 Aug 2026 03:56:29 GMT  
-		Size: 15.3 MB (15294508 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:035678238a791ec108aaed4d4c4f9290a74e140d57aff66276979c95b0721569`  
-		Last Modified: Sat, 01 Aug 2026 03:56:27 GMT  
-		Size: 2.5 KB (2452 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86aa157223d5b2319392528b255e5ae720cb4543c3e9a97586e3e3ed05fab654`  
-		Last Modified: Sat, 01 Aug 2026 03:56:27 GMT  
-		Size: 22.2 KB (22211 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bcc1149692f5e6babac73d5f75cd3bef90a981c70590410b2f19016a7bdb3838`  
-		Last Modified: Sat, 01 Aug 2026 03:56:27 GMT  
-		Size: 22.2 KB (22228 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:431a01eef9020b79095f065f57f22f49b8bf761915349f101341ca942d473955`  
-		Last Modified: Sat, 01 Aug 2026 03:56:28 GMT  
-		Size: 9.3 KB (9270 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d05d652dcc10da1cdada9835d00f91776b669a7ee69091a8894f15c010e5615`  
-		Last Modified: Sun, 02 Aug 2026 10:42:00 GMT  
-		Size: 309.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bd59be2225d1291382a38b4c25f55abbfcc4a3cfac3148f20ea8283c0ffecc1`  
-		Last Modified: Sun, 02 Aug 2026 10:42:00 GMT  
-		Size: 1.0 KB (1041 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5d668cb8777900d3fb34288339a465eef16740e59b6c969301d19a68aad1562`  
-		Last Modified: Sun, 02 Aug 2026 10:54:57 GMT  
-		Size: 4.0 MB (4037709 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0de97811d75d0c1e1d477c6d83e57f35fae1ba9c1a94263de07e55905331b7ea`  
-		Last Modified: Sun, 02 Aug 2026 10:54:56 GMT  
-		Size: 1.5 KB (1495 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e8ce3431702c00227802bea14c2f8ecf29b80c335a9c4fbfddbf0d847ebbdb7`  
-		Last Modified: Sun, 02 Aug 2026 10:54:57 GMT  
-		Size: 562.1 KB (562109 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:590f47d8ab3bdc3f00bdc6de3190b44065caeb25a55814c8c58c466fdffe6b77`  
-		Last Modified: Sun, 02 Aug 2026 10:54:56 GMT  
-		Size: 493.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:e94251e67cfe05ef9ee0328ac33cf2a6ff916f6147d0de86df412db4984f1953
+$ docker pull adminer@sha256:b8f6c1f5f50d5c56d14165ee0195577d9dbb9bfdcd13a61f3d2d8feecfc122c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33727 bytes)**  
+-	Total Size: **34.0 KB (33978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b25f19ca42f37fc13a61eb7a87e2c62ed512a8446eb87065df359f2146bf6d40`
+-	Image ID: `sha256:bb9a343a0efe5890fd067cb905ac2716fa3ddbd42740719eeaab61db81cd28ce`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:50653ee97b9df878dec826a5ede7c24cd9a67ef0528737c0321eea7e9634276e`  
-		Last Modified: Sun, 02 Aug 2026 10:54:56 GMT  
-		Size: 33.7 KB (33727 bytes)  
+	-	`sha256:25af88a844b8a994622e3ca71166dc2fbebe75fd4c677275435b10cc3fb0bd6e`  
+		Last Modified: Tue, 18 Aug 2026 17:01:11 GMT  
+		Size: 34.0 KB (33978 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `adminer:4-fastcgi` - linux; s390x
+### `adminer:6-fastcgi` - linux; s390x
 
 ```console
-$ docker pull adminer@sha256:d0241cce24de8e7e71c278bc9ce0cd1c3e132e8426023fa25f83e57af9d52ec0
+$ docker pull adminer@sha256:02db6de93503d23a24e42e48437728bbee7c8b59a4325478a42c7bcd7c1f0bb6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.2 MB (41191602 bytes)**  
+-	Total Size: **38.5 MB (38478405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebfcc9855d2ac0f692fba69458f9eb8738c17b4f0be511068d733b388d1f90fa`
+-	Image ID: `sha256:d5026311dada2ca7a5e52cc108755b283f07db66f7d4b0af8ce3bfbd5449a12e`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1391,29 +1015,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 30 Jul 2026 23:24:13 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jul 2026 00:25:07 GMT
+# Tue, 18 Aug 2026 17:19:50 GMT
 RUN echo "upload_max_filesize = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "post_max_size = 128M" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "memory_limit = 1G" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini &&	echo "max_input_vars = 5000" >> /usr/local/etc/php/conf.d/0-upload_large_dumps.ini # buildkit
-# Fri, 31 Jul 2026 00:25:08 GMT
+# Tue, 18 Aug 2026 17:19:51 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html &&	mkdir /var/www/html/plugins-enabled &&	chown -R adminer:adminer /var/www/html # buildkit
-# Fri, 31 Jul 2026 00:25:46 GMT
-RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
-# Fri, 31 Jul 2026 00:25:46 GMT
+# Tue, 18 Aug 2026 17:20:57 GMT
+RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	mysqli 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --no-cache --virtual .phpexts-rundeps $runDeps &&	apk del --no-network .build-deps # buildkit
+# Tue, 18 Aug 2026 17:20:58 GMT
 COPY *.php /var/www/html/ # buildkit
-# Fri, 31 Jul 2026 00:25:47 GMT
-ENV ADMINER_VERSION=4.17.1
-# Fri, 31 Jul 2026 00:25:47 GMT
-ENV ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a
-# Fri, 31 Jul 2026 00:25:47 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0
-# Fri, 31 Jul 2026 00:25:47 GMT
+# Tue, 18 Aug 2026 17:21:00 GMT
+ENV ADMINER_VERSION=6.0.1
+# Tue, 18 Aug 2026 17:21:00 GMT
+ENV ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c
+# Tue, 18 Aug 2026 17:21:00 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1
+# Tue, 18 Aug 2026 17:21:00 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz # buildkit
-# Fri, 31 Jul 2026 00:25:47 GMT
+# Tue, 18 Aug 2026 17:21:01 GMT
 COPY entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 31 Jul 2026 00:25:47 GMT
+# Tue, 18 Aug 2026 17:21:01 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Fri, 31 Jul 2026 00:25:47 GMT
+# Tue, 18 Aug 2026 17:21:01 GMT
 USER adminer
-# Fri, 31 Jul 2026 00:25:47 GMT
+# Tue, 18 Aug 2026 17:21:01 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1466,47 +1090,47 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 30 Jul 2026 23:24:25 GMT  
 		Size: 9.3 KB (9265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a2fc2b3a5379c0664d995d18118953946eb72a5195e6be94f8eca4355e91d8a`  
-		Last Modified: Fri, 31 Jul 2026 00:25:55 GMT  
-		Size: 304.0 B  
+	-	`sha256:d4c2b8eccb5b9bad9f54bf09c761e98992d8ad7ffdb97d19692218f8512da824`  
+		Last Modified: Tue, 18 Aug 2026 17:21:25 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e53625e797795cc74d2babb10586725b5b2a25ea5e2fea81c60f12b39b22d8b5`  
-		Last Modified: Fri, 31 Jul 2026 00:25:55 GMT  
-		Size: 1.0 KB (1041 bytes)  
+	-	`sha256:38fc346a48a9922e326f806a96b53f56d844f64f342e490a3ef4e9606040a367`  
+		Last Modified: Tue, 18 Aug 2026 17:21:25 GMT  
+		Size: 1.0 KB (1046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f992c0cc911fdc8d4742e452798d6b3f6fdb20e7bd83ba7b9f98883c8961254`  
-		Last Modified: Fri, 31 Jul 2026 00:25:55 GMT  
-		Size: 4.3 MB (4300560 bytes)  
+	-	`sha256:516514f13ebcd779b7ba431bdd6d2fbc29c13ab5b2e60860f734e632a20d4ed4`  
+		Last Modified: Tue, 18 Aug 2026 17:21:25 GMT  
+		Size: 1.5 MB (1534264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b44bfb4ce22101e294bdb39ffccfb7b8455d8773d560cddbb7874fd937ed7e30`  
-		Last Modified: Fri, 31 Jul 2026 00:25:55 GMT  
-		Size: 1.5 KB (1493 bytes)  
+	-	`sha256:22ff2d0755e8bf3357bfb4fc113fd376c0b7e1c4a5e19ed6db725cbebb50e34e`  
+		Last Modified: Tue, 18 Aug 2026 17:21:25 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2624d13e4ebc9fad82eed0785d61c8b673d01dfc6f8d1d4243c399e08d08d3c2`  
-		Last Modified: Fri, 31 Jul 2026 00:25:56 GMT  
-		Size: 562.1 KB (562106 bytes)  
+	-	`sha256:37613743a244f1f4018a831d7ac750a6f5d848db836586ad5033759eaaf35cac`  
+		Last Modified: Tue, 18 Aug 2026 17:21:26 GMT  
+		Size: 614.9 KB (614919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f9560f3bcc8f4ed1fbdda070e2059e33181bce857dcb8f6efa03b5b7d5b1936`  
-		Last Modified: Fri, 31 Jul 2026 00:25:56 GMT  
-		Size: 492.0 B  
+	-	`sha256:c1e2fca3c737c5ffd969129221fd9bb6539b2f339967b20fd599f15b59efeb3a`  
+		Last Modified: Tue, 18 Aug 2026 17:21:26 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `adminer:4-fastcgi` - unknown; unknown
+### `adminer:6-fastcgi` - unknown; unknown
 
 ```console
-$ docker pull adminer@sha256:a045bc9e0012df556e4cef6ae3ef551382e4fbda870542f0ef57f3f3972372c0
+$ docker pull adminer@sha256:8bd47f5b2fb802dd08f132fe0bb3929e23a8f0763abdacee4c0ae4cee20eb3c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33689 bytes)**  
+-	Total Size: **34.0 KB (34011 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03207df6822791a4564e95ff63dd848371ad15a343d7f720e92bfff1c4086ea5`
+-	Image ID: `sha256:95237a6e072d29c76a4c358ef2fc620a6af1b54727b4beec24c4d502d97d73b6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6cedc63e757b59833c84c879bc316075bfd2b39e3aeddfdf1451147db48ac00f`  
-		Last Modified: Fri, 31 Jul 2026 00:25:55 GMT  
-		Size: 33.7 KB (33689 bytes)  
+	-	`sha256:d48c74e352823dc54d5e789c5ec4eeceab21365d2acb5f63e075945dd96023fc`  
+		Last Modified: Tue, 18 Aug 2026 17:21:25 GMT  
+		Size: 34.0 KB (34011 bytes)  
 		MIME: application/vnd.in-toto+json
