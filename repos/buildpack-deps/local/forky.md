@@ -2000,19 +2000,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.69
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69.dsc' init-system-helpers_1.69.dsc 2234 SHA256:99b681c969728fba085226b1d1fd25cc37c9fe16f9eb5118e679d845b50ae7ee
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69.tar.xz' init-system-helpers_1.69.tar.xz 45648 SHA256:e246ee7f39b110803e5307fdb25ec2fb5fe0c62dbd9274011803fef50af08100
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.69/
 
-- https://sources.debian.net/src/init-system-helpers/1.69/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.69/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.69/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.28-1`
 
@@ -2972,20 +2966,13 @@ Licenses: (parsed from: `/usr/share/doc/libpsl-dev/copyright`, `/usr/share/doc/l
 - `MIT`
 - `gnulib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.23.1-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1-1.dsc' libpsl_0.23.1-1.dsc 2293 SHA256:01ededcdbfb98bef7dc7493caea6878dab046918cea611d2a7cc4d9e18385a21
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1.orig.tar.xz' libpsl_0.23.1.orig.tar.xz 2238012 SHA256:19ded32eed36a58394dd158b1f27b41129dbf5e27deaf826c3ad92cf9d621e3f
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.23.1-1.debian.tar.xz' libpsl_0.23.1-1.debian.tar.xz 11420 SHA256:ff7b59365c16839f159ea830e5b8d4727c700ee549018dabf03cc65e1f217f05
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpsl/0.23.1-1/
 
-- https://sources.debian.net/src/libpsl/0.23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libpsl/0.23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpsl/0.23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libraw=0.22.1-1`
 
@@ -4430,20 +4417,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-dev/copyright`, `/usr/share/doc/
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.13+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg-1.dsc' openldap_2.6.13+dfsg-1.dsc 3281 SHA256:c4fc20d12262cecedfaf5b416cfb5fb747899999a7d8189dd5838ede7a138b4f
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg.orig.tar.xz' openldap_2.6.13+dfsg.orig.tar.xz 3801012 SHA256:61baeca1b41cd0620a8c40899fbc11657898e99ba4ba0e9328fac8e58c58effa
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg-1.debian.tar.xz' openldap_2.6.13+dfsg-1.debian.tar.xz 177256 SHA256:c3f462528e5ae3f1e0918a5eabfb4e3e550baf8ddabf374baa2f5ca09b7a1eb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.6.13+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.6.13+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.6.13+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.6.13+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:10.4p1-2`
 

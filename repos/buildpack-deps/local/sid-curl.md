@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.3.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.2.dsc' apt_3.3.2.dsc 3132 SHA256:62b65b8ff473c9f6e99ab88f4bee84befef42075198201c67ff872c07da65dd6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.2.tar.xz' apt_3.3.2.tar.xz 2500604 SHA256:97d2cb48a3a91994662ab879a39ae803dc7a08d6d93070262c9e3bdfa22ae928
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.3.2/
 
-- https://sources.debian.net/src/apt/3.3.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
 
@@ -992,21 +986,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.13-1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.dsc' gzip_1.13-1.dsc 1884 SHA256:4942638dbb63dc5690e0a95ed70ee9f11e93565c43941c2485da3e561ec72028
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz' gzip_1.13.orig.tar.xz 838248 SHA256:7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz.asc' gzip_1.13.orig.tar.xz.asc 833 SHA256:aa752d6460fff2e0064857f1c6057d2dc49a28a45ad28c6b29c525851d6771f1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.debian.tar.xz' gzip_1.13-1.debian.tar.xz 19028 SHA256:29319b3f91d8e03d940d4d7c0f2a5fe5ec4f2ba4a0e621c9ef2682f2d0240dd2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.13-1/
 
-- https://sources.debian.net/src/gzip/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1234,20 +1220,13 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libffi=3.7.1-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1-2.dsc' libffi_3.7.1-2.dsc 2096 SHA256:79544849d6ec8e65061fa1639ec4ae97148bb844fc83b98c963a8d0f821e7aeb
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1.orig.tar.gz' libffi_3.7.1.orig.tar.gz 1515185 SHA256:d5e9a6638ddbd2513ddb54518eb67e4bbe6fa707bcc01c10f6212f0a088d819d
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.7.1-2.debian.tar.xz' libffi_3.7.1-2.debian.tar.xz 11060 SHA256:41f169adab75439c8f077b1da70b7e3250048dd361ed3f901edbe57096f0c898
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libffi/3.7.1-2/
 
-- https://sources.debian.net/src/libffi/3.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libffi/3.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libffi/3.7.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.12.2-1`
 
@@ -1548,21 +1527,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-5
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-5.dsc' libssh2_1.11.1-5.dsc 2329 SHA256:15cbf3b1503c99397ac14333a7a3b69ac6c60f22745f86a358702022c303cab5
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-5.debian.tar.xz' libssh2_1.11.1-5.debian.tar.xz 20688 SHA256:953b3206b83c5c5fe4d6ad0da95743ba0e3fdb9de22d2ab11e5aabdb0701b81d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.1-5/
 
-- https://sources.debian.net/src/libssh2/1.11.1-5/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
@@ -2011,20 +1982,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.13+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg-1.dsc' openldap_2.6.13+dfsg-1.dsc 3281 SHA256:c4fc20d12262cecedfaf5b416cfb5fb747899999a7d8189dd5838ede7a138b4f
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg.orig.tar.xz' openldap_2.6.13+dfsg.orig.tar.xz 3801012 SHA256:61baeca1b41cd0620a8c40899fbc11657898e99ba4ba0e9328fac8e58c58effa
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.13%2bdfsg-1.debian.tar.xz' openldap_2.6.13+dfsg-1.debian.tar.xz 177256 SHA256:c3f462528e5ae3f1e0918a5eabfb4e3e550baf8ddabf374baa2f5ca09b7a1eb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.6.13+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.6.13+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.6.13+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.6.13+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.3-1`
 
@@ -2077,21 +2041,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.4-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.4-1.dsc' p11-kit_0.26.4-1.dsc 2541 SHA256:7d84cf28d361f0ff3fc3d84ca4f8af055dafe6fc3c9ff4321a5b7eb74106e5de
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.4.orig.tar.xz' p11-kit_0.26.4.orig.tar.xz 1081912 SHA256:89c3ffb10e076ee036e14732bf6547a1e1c4fb48699a5dee7ceb5ce4f7c0c462
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.4.orig.tar.xz.asc' p11-kit_0.26.4.orig.tar.xz.asc 228 SHA256:d90cf61ce8586e7cbd00088057ad8f1b6ef5fba0bff085a16ffca99b8e72289e
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.4-1.debian.tar.xz' p11-kit_0.26.4-1.debian.tar.xz 24564 SHA256:1c90bd8e284394c651748da318021eaaa6f5f1e728bc4793b88fe9fed10aff0a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.4-1/
 
-- https://sources.debian.net/src/p11-kit/0.26.4-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-8`
 
@@ -2196,21 +2152,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.42.2-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2-3.dsc' perl_5.42.2-3.dsc 2372 SHA256:7a6fe9de777768b31f01efcd686c62561f363d597bb37c46ef1df278c101cb34
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2.orig-regen-configure.tar.xz' perl_5.42.2.orig-regen-configure.tar.xz 421372 SHA256:5ae2aea5bc800c05324e4c9b166391b17368d10300c036fbe45f8c23a799c355
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2.orig.tar.xz' perl_5.42.2.orig.tar.xz 14483976 SHA256:0a585eeb9e363c0f80482ddb3571625250c2c86aeb408853e8ea50805cfb14bb
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2-3.debian.tar.xz' perl_5.42.2-3.debian.tar.xz 175692 SHA256:d8b0c0c641b09f6f143b503de356a9a23f752dce65fd545a8fe3fc228be81146
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.42.2-3/
 
-- https://sources.debian.net/src/perl/5.42.2-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.42.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.42.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.3.3-2`
 
@@ -2582,20 +2530,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42.2-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.dsc' util-linux_2.42.2-2.dsc 5324 SHA256:d53337876804ed5184f6cf3cbfa3cc20811e43b9fc35d8f4489775495bcc2c26
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2.orig.tar.xz' util-linux_2.42.2.orig.tar.xz 10658220 SHA256:03a05d3adf9602ef128f2da05b84b3205ce60c351e5737c0370f74000679ce8a
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.debian.tar.xz' util-linux_2.42.2-2.debian.tar.xz 102364 SHA256:610957123f906d085d6cce6ae2540bd5d24f874ea48561beaac7abf9aa201ede
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42.2-2/
 
-- https://sources.debian.net/src/util-linux/2.42.2-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-3`
 
