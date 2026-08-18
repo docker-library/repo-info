@@ -58,19 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.3.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.2.dsc' apt_3.3.2.dsc 3132 SHA256:62b65b8ff473c9f6e99ab88f4bee84befef42075198201c67ff872c07da65dd6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.2.tar.xz' apt_3.3.2.tar.xz 2500604 SHA256:97d2cb48a3a91994662ab879a39ae803dc7a08d6d93070262c9e3bdfa22ae928
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.3.2/
 
-- https://sources.debian.net/src/apt/3.3.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
 
@@ -738,21 +732,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.13-1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.dsc' gzip_1.13-1.dsc 1884 SHA256:4942638dbb63dc5690e0a95ed70ee9f11e93565c43941c2485da3e561ec72028
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz' gzip_1.13.orig.tar.xz 838248 SHA256:7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz.asc' gzip_1.13.orig.tar.xz.asc 833 SHA256:aa752d6460fff2e0064857f1c6057d2dc49a28a45ad28c6b29c525851d6771f1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.debian.tar.xz' gzip_1.13-1.debian.tar.xz 19028 SHA256:29319b3f91d8e03d940d4d7c0f2a5fe5ec4f2ba4a0e621c9ef2682f2d0240dd2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.13-1/
 
-- https://sources.debian.net/src/gzip/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1321,21 +1307,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.42.2-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2-3.dsc' perl_5.42.2-3.dsc 2372 SHA256:7a6fe9de777768b31f01efcd686c62561f363d597bb37c46ef1df278c101cb34
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2.orig-regen-configure.tar.xz' perl_5.42.2.orig-regen-configure.tar.xz 421372 SHA256:5ae2aea5bc800c05324e4c9b166391b17368d10300c036fbe45f8c23a799c355
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2.orig.tar.xz' perl_5.42.2.orig.tar.xz 14483976 SHA256:0a585eeb9e363c0f80482ddb3571625250c2c86aeb408853e8ea50805cfb14bb
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.2-3.debian.tar.xz' perl_5.42.2-3.debian.tar.xz 175692 SHA256:d8b0c0c641b09f6f143b503de356a9a23f752dce65fd545a8fe3fc228be81146
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.42.2-3/
 
-- https://sources.debian.net/src/perl/5.42.2-3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.42.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.42.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.4.0-1`
 
@@ -1579,20 +1557,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42.2-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.dsc' util-linux_2.42.2-2.dsc 5324 SHA256:d53337876804ed5184f6cf3cbfa3cc20811e43b9fc35d8f4489775495bcc2c26
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2.orig.tar.xz' util-linux_2.42.2.orig.tar.xz 10658220 SHA256:03a05d3adf9602ef128f2da05b84b3205ce60c351e5737c0370f74000679ce8a
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.debian.tar.xz' util-linux_2.42.2-2.debian.tar.xz 102364 SHA256:610957123f906d085d6cce6ae2540bd5d24f874ea48561beaac7abf9aa201ede
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42.2-2/
 
-- https://sources.debian.net/src/util-linux/2.42.2-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
