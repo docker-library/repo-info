@@ -1,10 +1,10 @@
-# `nextcloud:34.0.2-fpm-alpine`
+# `nextcloud:34.0.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cbc95e3516459c0dfe66815a3e9df0425035090a124acc95c6009194dc11f1e`
-- Created: `2026-07-30T23:32:44.814020486Z`
-- Virtual Size: ~ 1.08 Gb  
+- Image ID: `sha256:b7c8f625c92944f03906ba16b5be7efc1713255eff4d84e38ed77e29835a7642`
+- Created: `2026-08-14T18:33:49.514938219Z`
+- Virtual Size: ~ 1.09 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=34.0.2`
+  - `NEXTCLOUD_VERSION=34.0.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1272,16 +1272,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```

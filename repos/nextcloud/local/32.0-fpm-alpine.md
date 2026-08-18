@@ -1,9 +1,9 @@
-# `nextcloud:32.0.13-fpm-alpine`
+# `nextcloud:32.0.14-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34cc096c8fd57e1482ef87ba683f7137fbaaeb84c53882529be93c2320b748e7`
-- Created: `2026-07-30T23:31:47.792734386Z`
+- Image ID: `sha256:d9f710862cdd73290ecbaeb578481135076800bfd718f57016db47b0b6e4d0f8`
+- Created: `2026-08-14T18:32:35.098313326Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=32.0.13`
+  - `NEXTCLOUD_VERSION=32.0.14`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1272,16 +1272,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```
