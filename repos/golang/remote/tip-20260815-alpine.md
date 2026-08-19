@@ -1,11 +1,11 @@
 ## `golang:tip-20260815-alpine`
 
 ```console
-$ docker pull golang@sha256:89b10e07d89260b816ddc02ecd084da6621b04fc64511f948fbe7c0b4e866527
+$ docker pull golang@sha256:48d4a6926a9867b52f6266673dfc5ddfa121053bc78e5c4ee5c42e8f5c12f7e9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 12
+-	Platforms: 14
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v6
@@ -15,6 +15,8 @@ $ docker pull golang@sha256:89b10e07d89260b816ddc02ecd084da6621b04fc64511f948fbe
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -408,6 +410,85 @@ $ docker pull golang@sha256:09ea0425af9742b4c334f0642b7cede7db849015596479af6663
 	-	`sha256:648a51c984393e68d357f2dbd39e7898875058b6a525d95957468cae50f6f976`  
 		Last Modified: Wed, 19 Aug 2026 00:15:04 GMT  
 		Size: 25.1 KB (25056 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `golang:tip-20260815-alpine` - linux; riscv64
+
+```console
+$ docker pull golang@sha256:30217ef7eef83169b1acfc8d1dc60e38e073bb1c61a357a3b196a18994ae269e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **103.6 MB (103602872 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680e79ccb3f82f9d0c218d05a9a4c27db0d0b0e1e4c4f213790e2dc7d798004a`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Tue, 16 Jun 2026 05:59:15 GMT
+ADD alpine-minirootfs-3.24.1-riscv64.tar.gz / # buildkit
+# Tue, 16 Jun 2026 05:59:15 GMT
+CMD ["/bin/sh"]
+# Sun, 16 Aug 2026 13:03:06 GMT
+RUN apk add --no-cache ca-certificates # buildkit
+# Wed, 19 Aug 2026 01:38:45 GMT
+ENV GOTOOLCHAIN=local
+# Wed, 19 Aug 2026 01:38:45 GMT
+ENV GOPATH=/go
+# Wed, 19 Aug 2026 01:38:45 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 19 Aug 2026 01:38:45 GMT
+COPY /target/ / # buildkit
+# Wed, 19 Aug 2026 02:20:21 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Wed, 19 Aug 2026 02:20:21 GMT
+WORKDIR /go
+```
+
+-	Layers:
+	-	`sha256:c34e5222b29b86391cdae95b0473ef789493ff1a0068a3a30b5d66f544bd7cf6`  
+		Last Modified: Sun, 14 Jun 2026 06:47:00 GMT  
+		Size: 3.6 MB (3574358 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a4eb8a0847d9b0c7c04686bc15eb9657f78c75e47160e656e88ff25111d0b39`  
+		Last Modified: Sun, 16 Aug 2026 13:05:32 GMT  
+		Size: 245.5 KB (245497 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8b66ced02a080459655fe9028bf92837cf230d038730ed43c848544aa262c9c3`  
+		Last Modified: Wed, 19 Aug 2026 01:46:04 GMT  
+		Size: 99.8 MB (99782858 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:297f7baea542cb0f1a174829815723cd73b1882f38a941d85491e8d8fa41c804`  
+		Last Modified: Wed, 19 Aug 2026 02:21:37 GMT  
+		Size: 127.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `golang:tip-20260815-alpine` - unknown; unknown
+
+```console
+$ docker pull golang@sha256:f8049471d381e5300190fe629196a4f4657c5f9cb585bde0a624df22a600b851
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **201.3 KB (201300 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ffb40ba31a00a93dd5616a7f5fdeff027de524ac66420231b059c4c8bf00ad16`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4b6b44fdb73bca14e87403b6d946d8747b9045119dc3d21fc091691f66ec8b6b`  
+		Last Modified: Wed, 19 Aug 2026 02:21:37 GMT  
+		Size: 176.1 KB (176147 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:f972a0461e87745fe261b87a7120790246e956c0ccbb5e0194bdae0f0a84ba3d`  
+		Last Modified: Wed, 19 Aug 2026 02:21:37 GMT  
+		Size: 25.2 KB (25153 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:tip-20260815-alpine` - linux; s390x
