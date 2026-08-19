@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3f38c7a0ff5b3d4cff2826531021f606718150b9df2ec32a8fc8bc1f39e5acf`
-- Created: `2026-08-04T02:49:00.846149046Z`
+- Image ID: `sha256:cd70fde45e3885f5cd71bbcf0240ee226471d35bdddc5a2ccf684da13fda25a5`
+- Created: `2026-08-18T02:21:37.956578621Z`
 - Virtual Size: ~ 516.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1324,11 +1324,11 @@ $ apt-get source -qq --print-uris libnsl=1.3.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnsl/libnsl_1.3.0-2build2.debian.tar.xz' libnsl_1.3.0-2build2.debian.tar.xz 4868 SHA512:367904106ba925eaa667cc273b37afd052ba795b7ed004cdb501c13dd26b469df971ac10acec2bf57d91fa4839f356c7dcbcd4969914891152588365844ced9a
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.5`
+### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.6`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.37-3ubuntu0.5`
+- `libpng16-16:amd64=1.6.37-3ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1344,10 +1344,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.5
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.6
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.5.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.5.debian.tar.xz 50892 SHA512:fc9aa6035ac3e69d59fcdc58a1eef2eda4ad2f4ceba4bee2f6ff59f911f4ad4ed7b0e5ddac8c66a8abe2145305990fb7dd18f784949527c16f976f4d74405747
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.5.dsc' libpng1.6_1.6.37-3ubuntu0.5.dsc 2340 SHA512:ffe74706fa8dc41283f30496bc18d33d7644aa2e705efb798fedae4f27f9af3c0235e8f6f063728db32b19ff1b3603e639b67266da0dfb9f862640ca2cf49b98
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz 51756 SHA512:5b5a9954e6a126aaccae6c2b6992f63237267f67a7f4ebadcbd7db84f5cd1363557f6fa8955e9b1fb09c89859d06692ae6f03cbda8f8377027346e2456985c25
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.dsc' libpng1.6_1.6.37-3ubuntu0.6.dsc 2377 SHA512:6b94b7d48a89d4c0950ee8875c38610c2f854eaf1fe6f0191f89cefed3346d3e56315a44c423ca4de091fe0ac7736d09278d235fa0faf40b4bbec822b24e7ad6
 ```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
@@ -2430,12 +2430,12 @@ $ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.7
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.7.dsc' sqlite3_3.37.2-2ubuntu0.7.dsc 2602 SHA512:d61457ec1210cc5ec0fe94ff343d071bd851b38482223d1f53c81dea045d2571136a885aeb49d8e44041b7444506f31e9874bd67ef18687a7fbf8b74b17d464a
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.22`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.21`
-- `libudev1:amd64=249.11-0ubuntu3.21`
+- `libsystemd0:amd64=249.11-0ubuntu3.22`
+- `libudev1:amd64=249.11-0ubuntu3.22`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2448,9 +2448,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.22
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.debian.tar.xz' systemd_249.11-0ubuntu3.22.debian.tar.xz 275816 SHA512:54dbb3c8a8ae9e41a8fe1ee3ea2d76d8c7ca03aa0b9a0ffd8b26fc2cd068ef82ac5d30d4b2dda00e36c2ff517d79ef99aa5128cf185bc99ea2f30f6b4e356f20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.dsc' systemd_249.11-0ubuntu3.22.dsc 5907 SHA512:ad316eccb5926c87ce9f9c113beac8ecc49acc0a2879fc98666f4f9cacdb111eb8e43e8ebc4b97c98a0eaea4a5675caf2eb8e6cbca5f3fb26eb07acd6af226df
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 

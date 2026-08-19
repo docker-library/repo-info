@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:acd9946a5090661eb3c2ed59fdba166804d87d4664f5ed0b03e475fee4b73270`
-- Created: `2026-08-05T01:25:05.742582083Z`
-- Virtual Size: ~ 415.43 Mb  
+- Image ID: `sha256:256f8371c7bdc589ad3c0cdd9a8fdebb590b720dfbf1c83802e5366f7d5945e5`
+- Created: `2026-08-18T20:49:07.40003248Z`
+- Virtual Size: ~ 415.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -254,11 +254,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1~deb11u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1~deb11u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1~deb11u1`
+- `ca-certificates=20250419~deb12u1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -266,13 +266,19 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1%7edeb11u1.dsc' ca-certificates_20250419~deb12u1~deb11u1.dsc 1803 SHA256:6694f3eea397d26f0177ba642df9565a223dd1dac5a7791f978c7014b1da9068
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1%7edeb11u1.tar.xz' ca-certificates_20250419~deb12u1~deb11u1.tar.xz 277184 SHA256:48cf1629c05522c360d97e89d7357ed532b108ca9133c5993ff76a9a320edb12
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1~deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.260`
 
