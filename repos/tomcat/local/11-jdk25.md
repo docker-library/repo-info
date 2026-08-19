@@ -1,10 +1,10 @@
-# `tomcat:11.0.24-jdk25-temurin-noble`
+# `tomcat:11.0.25-jdk25-temurin-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a9129ddf58fa317b0ed815133e90c5668d35624b80369f5c7dc5fb2f4bbf011`
-- Created: `2026-08-04T02:39:17.148574985Z`
-- Virtual Size: ~ 420.61 Mb  
+- Image ID: `sha256:0f116dd4832864aa03d68136fa1e1e164342f05aa7b34f0d2260ca26d4d89b1d`
+- Created: `2026-08-18T20:29:05.915895608Z`
+- Virtual Size: ~ 414.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=11`
-  - `TOMCAT_VERSION=11.0.24`
-  - `TOMCAT_SHA512=a2fb1bd511735bd3d135b87f628d2b1f71a43aed7c4d7511e770092e571bad6d5ad9e97a580852119770477fd86d7ed156d83d3cee2854bce260725ce48934d0`
+  - `TOMCAT_VERSION=11.0.25`
+  - `TOMCAT_SHA512=81339c046dff1b363a80a3bccf80cb391660a6828dd8ae042180ceb11c8b1614317143e60b311b9e791dab585bb046b777234667acce7dca2203a74b37bf20f2`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -1699,12 +1699,12 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.dsc' shadow_4.13+dfsg1-4ubuntu3.2.dsc 2400 SHA256:0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.16`
-- `libudev1:amd64=255.4-1ubuntu8.16`
+- `libsystemd0:amd64=255.4-1ubuntu8.17`
+- `libudev1:amd64=255.4-1ubuntu8.17`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1717,9 +1717,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.17
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz' systemd_255.4-1ubuntu8.17.debian.tar.xz 272596 SHA512:0019048e54e69c48dd0724d753ae1e1c8feca0d7f5078231b370e23205cb5cd3630182c48cacf41a71031cb3e90cfda5f802035c0937c3ae788382960fe495ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc' systemd_255.4-1ubuntu8.17.dsc 7324 SHA512:d329cc29055aad81ea4020ebc8a9e72c9192a205b8e8df71b58993dfc0cd8cdcf7bcfdb877009c5aadc0a017190ab625cb09228d04c3b30bd591a396aa13496d
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
