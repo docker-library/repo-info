@@ -138,16 +138,11 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-8.12.1-4.el10.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-8.12.1-4.el10
-http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/curl-8.12.1-4.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -536,16 +531,11 @@ $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
 http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/libcomps-0.1.21-3.el10.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.12.1-4.el10.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.4.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcurl-8.12.1-4.el10
-http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/curl-8.12.1-4.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
