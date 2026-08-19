@@ -40461,59 +40461,129 @@ $ docker pull nginx@sha256:935a4950327585488608636d85c607aad96f68c127f0d5b17b6a0
 
 ## `nginx:1.31.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine-otel`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine-perl`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine3.24-otel`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine3.24-perl`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-alpine3.24-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-otel`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-perl`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-trixie-otel`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:1.31.4-trixie-perl`
 
-**does not exist** (yet?)
+```console
+$ docker pull nginx@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `nginx:alpine`
 
