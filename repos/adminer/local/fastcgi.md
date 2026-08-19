@@ -1,10 +1,10 @@
-# `adminer:5.5.1-fastcgi`
+# `adminer:6.0.1-fastcgi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a53c5991aa3139245b06d4fcd02e1a8963be7e6f4a4ef45c262184ee9759492`
-- Created: `2026-08-03T17:48:59.727106923Z`
-- Virtual Size: ~ 94.14 Mb  
+- Image ID: `sha256:d22526e7926388d1b310468024b9a09ea99740924b91766cfaf5e27b94e507a4`
+- Created: `2026-08-18T17:02:49.101283647Z`
+- Virtual Size: ~ 94.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -21,9 +21,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
   - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
-  - `ADMINER_VERSION=5.5.1`
-  - `ADMINER_DOWNLOAD_SHA256=f2c70c6403a042d554be1dd8d69b6f6270a97e5b40d2fb7626f46aad821e9a18`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=dfac9604fc044e0856fbcacd587db9540df4e67d53a180377f51b9a228d7b136`
+  - `ADMINER_VERSION=6.0.1`
+  - `ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -404,16 +404,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.4-r0 description:
+libpq-18.6-r0 description:
 PostgreSQL client library
 
-libpq-18.4-r0 webpage:
+libpq-18.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.4-r0 installed size:
+libpq-18.6-r0 installed size:
 350 KiB
 
-libpq-18.4-r0 license:
+libpq-18.6-r0 license:
 PostgreSQL
 
 ```
