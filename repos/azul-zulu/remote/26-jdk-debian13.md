@@ -1,7 +1,7 @@
 ## `azul-zulu:26-jdk-debian13`
 
 ```console
-$ docker pull azul-zulu@sha256:0169b9e1a03700be65f9feca80643a48e0b02d1610bad05452677df86aad133d
+$ docker pull azul-zulu@sha256:5f467e094c709ed8ee80e3564e08a1584c5e7e7418af6b48312218b19ea97144
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,28 +14,28 @@ $ docker pull azul-zulu@sha256:0169b9e1a03700be65f9feca80643a48e0b02d1610bad0545
 ### `azul-zulu:26-jdk-debian13` - linux; amd64
 
 ```console
-$ docker pull azul-zulu@sha256:bbaa6b2184015b154f7d9de1f4ffa8294e2b02a9aab5492c7db08192b51bc396
+$ docker pull azul-zulu@sha256:9922cdf8aac7842863741cbd785a19df96b6b27d1fcbebdcc2f5a75d0962c545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217283347 bytes)**  
+-	Total Size: **217.3 MB (217288647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:356ad49de7aaa6216c2c7cfc6b99ca8434eaae2573488683988f11b3020e54c6`
+-	Image ID: `sha256:0067a816dbb77584e59384d074f1e4bee0191984dbf52f54ba0b41c5bc3e4e53`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
 # Mon, 03 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1785715200'
-# Wed, 05 Aug 2026 00:44:17 GMT
+# Wed, 19 Aug 2026 17:37:58 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 05 Aug 2026 00:44:17 GMT
+# Wed, 19 Aug 2026 17:37:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Aug 2026 00:44:17 GMT
+# Wed, 19 Aug 2026 17:37:58 GMT
 # ARGS: REPO_HOST=repos.azul.com
-RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu26-*\nPin: version 26.0.2-1\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu26-jdk &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
-# Wed, 05 Aug 2026 00:44:17 GMT
+RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu26-*\nPin: version 26.0.2.1-1\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu26-jdk &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
+# Wed, 19 Aug 2026 17:37:58 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 05 Aug 2026 00:44:17 GMT
+# Wed, 19 Aug 2026 17:37:58 GMT
 CMD ["jshell"]
 ```
 
@@ -44,56 +44,56 @@ CMD ["jshell"]
 		Last Modified: Tue, 04 Aug 2026 23:52:43 GMT  
 		Size: 29.8 MB (29780765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dd73eeaa0086cf3cda55f41bd13f7f5fe694ca6a5e7e76ba866a53880bf7615`  
-		Last Modified: Wed, 05 Aug 2026 00:44:35 GMT  
-		Size: 187.5 MB (187502582 bytes)  
+	-	`sha256:60f85cca1725d67300857285bf6cf537f38631b94bbc093fbb3c595dd1493c4a`  
+		Last Modified: Wed, 19 Aug 2026 17:38:17 GMT  
+		Size: 187.5 MB (187507882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-debian13` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:5295fc04a08491d4ec2bcfd6bbdbf8e86f69a33eb54886826fa44c08b59108fe
+$ docker pull azul-zulu@sha256:afc21dba5bc042df929bbbbab3b7b19b824ae70df995011d5220da20a298409e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.5 KB (9504 bytes)**  
+-	Total Size: **9.5 KB (9510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:061e3e11ad9314d76cc3e7d0839d7a46c6cd8106cbcae1076643155f90569c2b`
+-	Image ID: `sha256:ad51daf6af64e08dbf0f7953dace9f2e915ff0d088f7fdd79f55d705cf31789f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e17db3211be2bb9c512762e1670d92098c852110a45cc64feeddfdefde7cb43f`  
-		Last Modified: Wed, 05 Aug 2026 00:44:31 GMT  
-		Size: 9.5 KB (9504 bytes)  
+	-	`sha256:453303ccf860f197a094f30065587484869f5fdae06e5688646fb04d1a51e97b`  
+		Last Modified: Wed, 19 Aug 2026 17:38:12 GMT  
+		Size: 9.5 KB (9510 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `azul-zulu:26-jdk-debian13` - linux; arm64 variant v8
 
 ```console
-$ docker pull azul-zulu@sha256:1891540759f4f53ccd90912bd573ac740d372d502d714fd82d9c8679cca708d0
+$ docker pull azul-zulu@sha256:c57f04a08f8ba0ffa4d85820ac51e5a2c20f2e4bc0bdd705f0996900d4336734
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.4 MB (217357130 bytes)**  
+-	Total Size: **217.4 MB (217354908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13b0e844eb2d70bc40590b34209708a7750d0f5ee68b5845f7d9be665325544e`
+-	Image ID: `sha256:be3c4ef8eaa09ae4f2793fbd4bcb9c7dd0eb9b34289c0f39460bacb66a85fe34`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
 # Mon, 03 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1785715200'
-# Wed, 05 Aug 2026 00:46:50 GMT
+# Wed, 19 Aug 2026 17:38:15 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 05 Aug 2026 00:46:50 GMT
+# Wed, 19 Aug 2026 17:38:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 05 Aug 2026 00:46:50 GMT
+# Wed, 19 Aug 2026 17:38:15 GMT
 # ARGS: REPO_HOST=repos.azul.com
-RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu26-*\nPin: version 26.0.2-1\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu26-jdk &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
-# Wed, 05 Aug 2026 00:46:50 GMT
+RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu26-*\nPin: version 26.0.2.1-1\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu26-jdk &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
+# Wed, 19 Aug 2026 17:38:15 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 05 Aug 2026 00:46:50 GMT
+# Wed, 19 Aug 2026 17:38:15 GMT
 CMD ["jshell"]
 ```
 
@@ -102,27 +102,27 @@ CMD ["jshell"]
 		Last Modified: Tue, 04 Aug 2026 23:52:14 GMT  
 		Size: 30.1 MB (30143609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e11bdc3eca7ea3450e1cdedae8c517d49d7da3827dd08d3a7bded3d9a8071762`  
-		Last Modified: Wed, 05 Aug 2026 00:47:10 GMT  
-		Size: 187.2 MB (187213521 bytes)  
+	-	`sha256:ea8bfe7b5d9e1829cf469961def8a2a787dee306eefdce729a92a02aeafbfd49`  
+		Last Modified: Wed, 19 Aug 2026 17:38:35 GMT  
+		Size: 187.2 MB (187211299 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-debian13` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:e2e842c09e2be6b3cab74391846eec0bac7e50df25590e762abef7574d203f2e
+$ docker pull azul-zulu@sha256:3c46970b24052057206c63dc96647f17aa0d342aef24d6d7b719b09e7ed9ae1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.6 KB (9619 bytes)**  
+-	Total Size: **9.6 KB (9626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53535ca822821ffc93f27b12b889c6f82c0e11ce657065ab6e2b52c582eded5b`
+-	Image ID: `sha256:91081991d8269ec18aa929078106d360f3b40c7c0a326bfa2483b769c390172d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84059458ed3b832441d0ec665532c831a6c4f3f70e910209b3c0955b94569c07`  
-		Last Modified: Wed, 05 Aug 2026 00:47:06 GMT  
-		Size: 9.6 KB (9619 bytes)  
+	-	`sha256:14154a81c34ffe8af43c4fd1142b4c239f9f9bc74de2eaad68fb2866645a3dbb`  
+		Last Modified: Wed, 19 Aug 2026 17:38:31 GMT  
+		Size: 9.6 KB (9626 bytes)  
 		MIME: application/vnd.in-toto+json
