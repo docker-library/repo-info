@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9efeb6d1aa13a303cdae041b3e2550ef4993bf3d281934a951c7d1a5635c14f`
-- Created: `2026-08-04T01:19:39.89022084Z`
+- Image ID: `sha256:3abcf457d12c8df1537d8b7d19118540f7a3184caf3831cfb5f49ee7df612f7d`
+- Created: `2026-08-18T01:14:36.700560481Z`
 - Virtual Size: ~ 1.52 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2130,14 +2130,14 @@ $ apt-get source -qq --print-uris sysstat=12.5.2-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.5.2-2ubuntu0.2.dsc' sysstat_12.5.2-2ubuntu0.2.dsc 1801 SHA512:7907868fcef0d81395a589ade80aad9d2de78750a77339d2f0009dee15f06f7e5440a6359f448340d5439df11d21d671cd8cf87c902ac3da5154050c04449b73
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.22`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.21`
-- `libudev1:amd64=249.11-0ubuntu3.21`
-- `systemd=249.11-0ubuntu3.21`
-- `systemd-timesyncd=249.11-0ubuntu3.21`
+- `libsystemd0:amd64=249.11-0ubuntu3.22`
+- `libudev1:amd64=249.11-0ubuntu3.22`
+- `systemd=249.11-0ubuntu3.22`
+- `systemd-timesyncd=249.11-0ubuntu3.22`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
 
@@ -2150,9 +2150,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.22
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.debian.tar.xz' systemd_249.11-0ubuntu3.22.debian.tar.xz 275816 SHA512:54dbb3c8a8ae9e41a8fe1ee3ea2d76d8c7ca03aa0b9a0ffd8b26fc2cd068ef82ac5d30d4b2dda00e36c2ff517d79ef99aa5128cf185bc99ea2f30f6b4e356f20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.dsc' systemd_249.11-0ubuntu3.22.dsc 5907 SHA512:ad316eccb5926c87ce9f9c113beac8ecc49acc0a2879fc98666f4f9cacdb111eb8e43e8ebc4b97c98a0eaea4a5675caf2eb8e6cbca5f3fb26eb07acd6af226df
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
