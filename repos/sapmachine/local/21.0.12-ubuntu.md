@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5273874268295118a9b534f87c678b23d3c12b5c9f40812f9e84b91cdf75b831`
-- Created: `2026-08-04T01:49:57.483811413Z`
-- Virtual Size: ~ 472.97 Mb  
+- Image ID: `sha256:f553fbb0e8d97c157bb6fdcd1e0c2200ce60b1ec1c35a13cb201c69d563bdacf`
+- Created: `2026-08-18T19:29:27.218102511Z`
+- Virtual Size: ~ 466.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -1885,12 +1885,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.7
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.dsc' sqlite3_3.45.1-1ubuntu2.7.dsc 2601 SHA512:3facf920149eb11209b1487c864bdfc1d1858cdb9107dddf8f38677714ad25fe4f477132a58ebc4a819ac7c0aa6646ecc3554052a40e32fbcbb5ca6308986444
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.16`
-- `libudev1:amd64=255.4-1ubuntu8.16`
+- `libsystemd0:amd64=255.4-1ubuntu8.17`
+- `libudev1:amd64=255.4-1ubuntu8.17`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1903,9 +1903,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.17
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz' systemd_255.4-1ubuntu8.17.debian.tar.xz 272596 SHA512:0019048e54e69c48dd0724d753ae1e1c8feca0d7f5078231b370e23205cb5cd3630182c48cacf41a71031cb3e90cfda5f802035c0937c3ae788382960fe495ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc' systemd_255.4-1ubuntu8.17.dsc 7324 SHA512:d329cc29055aad81ea4020ebc8a9e72c9192a205b8e8df71b58993dfc0cd8cdcf7bcfdb877009c5aadc0a017190ab625cb09228d04c3b30bd591a396aa13496d
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
