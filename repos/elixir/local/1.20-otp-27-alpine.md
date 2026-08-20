@@ -1,21 +1,21 @@
-# `elixir:1.20.2-otp-27-alpine`
+# `elixir:1.20.3-otp-27-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b31ce5cdaf048ae985fe97d812138ab86dc53d21413c4541085acfb923d3503`
-- Created: `2026-07-28T21:13:30.028531548Z`
-- Virtual Size: ~ 94.91 Mb  
+- Image ID: `sha256:894b51a69338e1cafbbc8b91a1d02239f3bdede4ffb1f388a5d4c81c0fd19aaf`
+- Created: `2026-08-20T18:25:11.27090324Z`
+- Virtual Size: ~ 94.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`386`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=27.3.4.15`
+  - `OTP_VERSION=27.3.4.16`
   - `REBAR3_VERSION=3.27.0`
-  - `ELIXIR_VERSION=v1.20.2`
+  - `ELIXIR_VERSION=v1.20.3`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=27.3.4.15`
+  - `org.opencontainers.image.version=27.3.4.16`
 
 ## `apk` (`.apk`-based packages)
 
