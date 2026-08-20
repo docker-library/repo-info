@@ -1319,15 +1319,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.3.debian.tar.xz' curl_8.18.0-1ubuntu2.3.debian.tar.xz 84260 SHA512:c873c9d75b30cef3513e44351a21ce2a9d0e20d57c3730d0b8875eabcdc5255b4dc31dc7d4ec15b38a842f7a2b54f16d8517d3b4418a088bbac39fc88aae0ff0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.3.dsc' curl_8.18.0-1ubuntu2.3.dsc 3304 SHA512:9d1d3e9b94122affb0a12396eb27123355c9b3005cf99f44575ffe4d6f8558d6612d18d8e44ff5bd2574619c0129e6c2951335accf26922331268b575d1a0b11
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -4755,14 +4749,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.3.debian.tar.xz' libheif_1.21.2-3ubuntu0.3.debian.tar.xz 22176 SHA512:8cadd9af6cd2c332a5b4a73989d9ca35e1955f68a13c300e64feca4abe5f23dd2a3d2ba3156567bc661c01a6f511d7c71fb66a839fe36bf44efb5c9297c7c1d5
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.3.dsc' libheif_1.21.2-3ubuntu0.3.dsc 3989 SHA512:1e4d52a17bd1157e47a9284369781243b6c70c36191b2ad61aeace028e208a6d7786456355bca8331f51a0ea83b22c8331d50eb7a6981059eb4046ceb8fbf7b6
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -8338,14 +8327,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.4-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.4.orig.tar.gz' postgresql-18_18.4.orig.tar.gz 29477735 SHA512:188107a9db0d5c3939ca8078bcc5987d257ecf7eb2b9ee1bda1fff0b5cf2a7424a9e600a92facdf1b4fae9c0ff465cbaf108d21a7ab98288e68c223cc1708ac2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.4-0ubuntu0.26.04.1.debian.tar.xz' postgresql-18_18.4-0ubuntu0.26.04.1.debian.tar.xz 26956 SHA512:112836fbc9c5dc9090d006d9fc8db535f92916703626edd5a4a32ffd2eb65a8b6d94564a887f6da81cb9c7e251b88cee29dd41a65740c7d11944127b5397aadd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-18/postgresql-18_18.4-0ubuntu0.26.04.1.dsc' postgresql-18_18.4-0ubuntu0.26.04.1.dsc 4888 SHA512:21280323d0abd376cc9b644266dd437f23916c944242bdea4b9c67ddfbbbb885e1d99168e6aecb281f480e13138c9b07b074c3a3fa745b58675ad1b31a65f428
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
 
@@ -14071,9 +14055,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unbound=1.24.2-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz' unbound_1.24.2.orig.tar.gz 6905018 SHA512:655d63ec5305323e84d82691425d74d98c332d0028517bd729d191e5f968ce9481b49ec7447d4c4906dce7997a998a115db36e911a59d2d877da5840c2080261
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.1.debian.tar.xz' unbound_1.24.2-1ubuntu2.1.debian.tar.xz 45564 SHA512:8cf71f548cc249bc431af02b5a0caad4ecaef7cf2ad6b0f2b11eb4e2cb1f5863a2451501ab0d4b8f6fbdbc943082d3ca32e319c83e47aa1e1165f83e5f2ccc4a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.1.dsc' unbound_1.24.2-1ubuntu2.1.dsc 3171 SHA512:2cfec04923a6ed767246fa1cbfb594f12a2db557bca3a1a16dd382c7ff5b03cea07f1dd9b3db489d848fb5952783baa179fbc1443877c4473c00b094a7339222
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz' unbound_1.24.2.orig.tar.gz 6905018 SHA512:655d63ec5305323e84d82691425d74d98c332d0028517bd729d191e5f968ce9481b49ec7447d4c4906dce7997a998a115db36e911a59d2d877da5840c2080261
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.1.debian.tar.xz' unbound_1.24.2-1ubuntu2.1.debian.tar.xz 45564 SHA512:8cf71f548cc249bc431af02b5a0caad4ecaef7cf2ad6b0f2b11eb4e2cb1f5863a2451501ab0d4b8f6fbdbc943082d3ca32e319c83e47aa1e1165f83e5f2ccc4a
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.1.dsc' unbound_1.24.2-1ubuntu2.1.dsc 3171 SHA512:2cfec04923a6ed767246fa1cbfb594f12a2db557bca3a1a16dd382c7ff5b03cea07f1dd9b3db489d848fb5952783baa179fbc1443877c4473c00b094a7339222
 ```
 
 ### `dpkg` source package: `uncrustify=0.78.1+dfsg1-1build1`
