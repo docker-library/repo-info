@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a55b5aecba5291889fe0e60e6206ca01a06f0dacae35f1d5c6602b5d1ff4707`
-- Created: `2026-08-11T17:50:16.134130086Z`
+- Image ID: `sha256:3be0c91e5d2b8662f25b6e41f6f71d07ad8d6d408cc2c38bb920bf1384544745`
+- Created: `2026-08-17T22:36:58.670460831Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-10T16:55:47Z`
+  - `build-date=2026-08-17T17:26:46Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,12 +38,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-08-10T16:55:47Z`
-  - `org.opencontainers.image.revision=905bde9da31110a4bb776761a921a6b4e6b12a93`
-  - `release=1786380870`
+  - `org.opencontainers.image.created=2026-08-17T17:26:46Z`
+  - `org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9`
+  - `release=1786987521`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=905bde9da31110a4bb776761a921a6b4e6b12a93`
+  - `vcs-ref=6bb838e7904a1c68094d157a898fff623ad3fcb9`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -171,15 +171,15 @@ $ dnf --quiet download --source --url crypto-policies-20260224-1.gitea0f072.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260224-1.gitea0f072.el9_8.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-40.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-40.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-gssapi-2.1.27-22.el9.x86_64`
@@ -358,15 +358,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-19.el9_8.2.x86_64`
+### `rpm` package: `glib2-2.68.4-19.el9_8.9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.2.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.9.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-275.el9_8.x86_64`
@@ -696,15 +696,15 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -850,11 +850,16 @@ $ dnf --quiet download --source --url libmount-2.37.4-25.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-25.el9.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.43.0-6.el9_8.1.x86_64`
+### `rpm` package: `libnghttp2-1.43.0-6.el9_8.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libnghttp2-1.43.0-6.el9_8.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/nghttp2-1.43.0-6.el9_8.2.src.rpm
+```
 
 ### `rpm` package: `libpeas-1.30.0-4.el9.x86_64`
 
