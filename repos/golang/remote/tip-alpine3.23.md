@@ -1,7 +1,7 @@
 ## `golang:tip-alpine3.23`
 
 ```console
-$ docker pull golang@sha256:47f0de69f84b4260fe37c127a55c3442f6f67cc568089cde9e20fbc6e4d12c66
+$ docker pull golang@sha256:ffd8b259bc8dd6f6cd79f042891a2cd9da1bef8c8822dc528371d28228facf4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -496,7 +496,7 @@ $ docker pull golang@sha256:880945123c09e54f778d194b1c1659d37547e9bcb46532400741
 ### `golang:tip-alpine3.23` - linux; riscv64
 
 ```console
-$ docker pull golang@sha256:ffc71513d476e19daa76343f32b42e02269a6fa194ee16bce9b3f9259c2088de
+$ docker pull golang@sha256:f1773bc4f97765ca3a6e1a1d1562ff3948dd3b279a13163cd7f6693a3f927c9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -551,24 +551,24 @@ WORKDIR /go
 ### `golang:tip-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:4184d7284bbbb2e2c88454d97bdf56234fdffe2206440a9f2973c304e250251c
+$ docker pull golang@sha256:2dfc6786060eb0a233053435e149685b4a5649252c0ad191c7a2eea81245963c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **200.0 KB (200020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fd5ae5e5ed2fa9c1c38d7f3dea28a2e17b0b2e80fcd84c618bf5a182976e8ee`
+-	Image ID: `sha256:798d78dbb13ad46b08926432b702537dfd1adc2eb1b6bc89cfc0441f5ffa1b29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7b9db4e9b7fa4370795403af18ec57e7ddf4c774d2a1dfdade4518c5121bd82`  
-		Last Modified: Wed, 19 Aug 2026 02:56:43 GMT  
+	-	`sha256:e331cbcd642fea12c3eafd9494c3e13d6a91aaa9954f5bf2cb1dec28e1e7ab84`  
+		Last Modified: Thu, 20 Aug 2026 03:31:26 GMT  
 		Size: 175.5 KB (175509 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5dfc56d5b6d38fa5ad552cda95dc28ed864fe9346ddfe7e9bf1b2fcfc1bfc015`  
-		Last Modified: Wed, 19 Aug 2026 02:56:43 GMT  
+	-	`sha256:1cff0f390641a4db9621ecd7a7155f33a52f0c0cb530718222c1f503ce312a2b`  
+		Last Modified: Thu, 20 Aug 2026 03:31:26 GMT  
 		Size: 24.5 KB (24511 bytes)  
 		MIME: application/vnd.in-toto+json
 
