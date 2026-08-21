@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bc233f6c025f2c3f6d0568acc75b6c1a98bff9b19c2d19097ee126b1ea96d47`
-- Created: `2026-08-04T01:43:10.176370556Z`
+- Image ID: `sha256:32e9a5a48bafdbb0ca6f6e7096e2944b8050720b6a1557018d4e44354040a466`
+- Created: `2026-08-18T19:24:21.346571542Z`
 - Virtual Size: ~ 86.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1353,11 +1353,11 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-0ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.dsc' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc 3653 SHA256:63be3643ff4157d84ef8bd9763fb7252695ceaea46773277600377417ecd21de
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.11`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.12`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.11`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1366,9 +1366,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.debian.tar.xz' openssl_3.0.13-0ubuntu3.12.debian.tar.xz 197124 SHA512:eed41bdde74405cbe96ed3a18cb4b95c5cc65bcb7630245981090bc7e36510b65d96ed530d09b7582fca8158f9383475d4efc2e78e374e059af4102a0f90c35a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.dsc' openssl_3.0.13-0ubuntu3.12.dsc 2516 SHA512:304f5cd24991427633fbbaf5e2f6c1b84a7388c82d34740f9821927dbfb5a49d40e6e5f182cd4c417b957dd428de23e756fcd9ba50c8ca889f067bf4ba390b46
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -1670,12 +1675,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.7
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.dsc' sqlite3_3.45.1-1ubuntu2.7.dsc 2601 SHA512:3facf920149eb11209b1487c864bdfc1d1858cdb9107dddf8f38677714ad25fe4f477132a58ebc4a819ac7c0aa6646ecc3554052a40e32fbcbb5ca6308986444
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.16`
-- `libudev1:amd64=255.4-1ubuntu8.16`
+- `libsystemd0:amd64=255.4-1ubuntu8.17`
+- `libudev1:amd64=255.4-1ubuntu8.17`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1688,9 +1693,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.17
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz' systemd_255.4-1ubuntu8.17.debian.tar.xz 272596 SHA512:0019048e54e69c48dd0724d753ae1e1c8feca0d7f5078231b370e23205cb5cd3630182c48cacf41a71031cb3e90cfda5f802035c0937c3ae788382960fe495ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc' systemd_255.4-1ubuntu8.17.dsc 7324 SHA512:d329cc29055aad81ea4020ebc8a9e72c9192a205b8e8df71b58993dfc0cd8cdcf7bcfdb877009c5aadc0a017190ab625cb09228d04c3b30bd591a396aa13496d
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
