@@ -1,17 +1,17 @@
-# `nginx:1.31.3-alpine`
+# `nginx:1.31.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0ba77f796e57c6fa89ae7f4fdad1665d6fcbd8e3f211535120542b337f9959e`
-- Created: `2026-07-15T23:57:33.943663441Z`
-- Virtual Size: ~ 62.36 Mb  
+- Image ID: `sha256:7bc5ba2f958a043e123135f456af857350673b64eaddcf811698239f3a53d6e6`
+- Created: `2026-08-19T20:10:57.964589829Z`
+- Virtual Size: ~ 62.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.3`
+  - `NGINX_VERSION=1.31.4`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=1.0.0`
@@ -994,16 +994,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.3-r1 description:
+nginx-1.31.4-r1 description:
 High performance web server
 
-nginx-1.31.3-r1 webpage:
+nginx-1.31.4-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.3-r1 installed size:
-2783 KiB
+nginx-1.31.4-r1 installed size:
+2793 KiB
 
-nginx-1.31.3-r1 license:
+nginx-1.31.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1011,16 +1011,16 @@ nginx-1.31.3-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.3.0.4.1-r1 description:
+nginx-module-acme-1.31.4.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.3.0.4.1-r1 webpage:
+nginx-module-acme-1.31.4.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.3.0.4.1-r1 installed size:
+nginx-module-acme-1.31.4.0.4.1-r1 installed size:
 8167 KiB
 
-nginx-module-acme-1.31.3.0.4.1-r1 license:
+nginx-module-acme-1.31.4.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-module-acme-1.31.3.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.3-r1 description:
+nginx-module-geoip-1.31.4-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.3-r1 webpage:
+nginx-module-geoip-1.31.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.3-r1 installed size:
+nginx-module-geoip-1.31.4-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.31.3-r1 license:
+nginx-module-geoip-1.31.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-geoip-1.31.3-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.3-r1 description:
+nginx-module-image-filter-1.31.4-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.3-r1 webpage:
+nginx-module-image-filter-1.31.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.3-r1 installed size:
+nginx-module-image-filter-1.31.4-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.3-r1 license:
+nginx-module-image-filter-1.31.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-image-filter-1.31.3-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.3.1.0.0-r1 description:
+nginx-module-njs-1.31.4.1.0.0-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.3.1.0.0-r1 webpage:
+nginx-module-njs-1.31.4.1.0.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.3.1.0.0-r1 installed size:
-9396 KiB
+nginx-module-njs-1.31.4.1.0.0-r1 installed size:
+9840 KiB
 
-nginx-module-njs-1.31.3.1.0.0-r1 license:
+nginx-module-njs-1.31.4.1.0.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-njs-1.31.3.1.0.0-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.3-r1 description:
+nginx-module-xslt-1.31.4-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.3-r1 webpage:
+nginx-module-xslt-1.31.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.3-r1 installed size:
+nginx-module-xslt-1.31.4-r1 installed size:
 47 KiB
 
-nginx-module-xslt-1.31.3-r1 license:
+nginx-module-xslt-1.31.4-r1 license:
 2-clause BSD-like license
 
 ```

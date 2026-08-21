@@ -1,17 +1,17 @@
-# `nginx:1.31.3`
+# `nginx:1.31.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5253dc86cc93ac6249902934655c6f7c959d8caa45a8c2ecc0b95953834d8ee8`
-- Created: `2026-08-05T00:22:02.46355677Z`
-- Virtual Size: ~ 161.34 Mb  
+- Image ID: `sha256:f075e3f9498646fffa374cbd2a781eec14d8e788304a2c40a7f2355996a2146a`
+- Created: `2026-08-19T19:08:28.682045501Z`
+- Virtual Size: ~ 161.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.3`
+  - `NGINX_VERSION=1.31.4`
   - `NJS_VERSION=1.0.0`
   - `NJS_RELEASE=1~trixie`
   - `ACME_VERSION=0.4.1`
@@ -76,11 +76,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/acl/2.3.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/acl/2.3.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=3.12.1-1`
+### `dpkg` source package: `aom=3.12.1-1+deb13u1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.12.1-1`
+- `libaom3:amd64=3.12.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -94,17 +94,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.12.1-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.dsc' aom_3.12.1-1.dsc 2552 SHA256:696b9e32b3fe787e8598811e8b680b829b93e65781e0328f8b5056619454b408
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.12.1-1.debian.tar.xz' aom_3.12.1-1.debian.tar.xz 20464 SHA256:ac01db2f3d78d8ba39d5d7546ce4fcc1fa827e7b92387d7234d140d8d9afa5f9
+$ apt-get source -qq --print-uris aom=3.12.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.dsc' aom_3.12.1-1+deb13u1.dsc 2235 SHA256:796b09717499ced9d82820fad950a31532d7c193a2a764617df05c9aa68090cb
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1.orig.tar.gz' aom_3.12.1.orig.tar.gz 5504164 SHA256:40c929a41b2a59c24319a699c358351422829b3ae646de31b18cbabed0191962
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_3.12.1-1%2bdeb13u1.debian.tar.xz' aom_3.12.1-1+deb13u1.debian.tar.xz 24788 SHA256:e94efe3356d69b0056dd95746f3cf29551130766b3f3503365e40e9d1c8f8ee7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/3.12.1-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.12.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.12.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/aom/3.12.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/3.12.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=3.0.3`
 
@@ -770,23 +770,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.2-1~deb13u1`
+### `dpkg` source package: `expat=2.8.3-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.2-1~deb13u1`
+- `libexpat1:amd64=2.8.3-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
+```
 
-- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1494,11 +1501,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.75-10+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.75-10+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.15-1`
+### `dpkg` source package: `libde265=1.0.15-1+deb13u1`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.15-1+b3`
+- `libde265-0:amd64=1.0.15-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -1513,17 +1520,17 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libde265=1.0.15-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.dsc' libde265_1.0.15-1.dsc 1872 SHA256:41fe11a559a57a8cdf19978c55f58f0d83de78c61e1367f8b73d05bdcce416eb
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.debian.tar.xz' libde265_1.0.15-1.debian.tar.xz 136584 SHA256:70cb236e55972d2d1bc062bacd68320ad402e0d378c79c99224a512208c90e5b
+$ apt-get source -qq --print-uris libde265=1.0.15-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.dsc' libde265_1.0.15-1+deb13u1.dsc 1904 SHA256:0e1bff0db1fbd8c827e3a665174da6667411f598454d806bc59ff3e1f2f74d46
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.debian.tar.xz' libde265_1.0.15-1+deb13u1.debian.tar.xz 145088 SHA256:721ab671ae27928da346206ec1e66cfa62cf1d119d0d6f9b6f96d0b17fa3eea7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libde265/1.0.15-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.15-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.23-2`
 
@@ -1726,13 +1733,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.51-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.51-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.19.8-1`
+### `dpkg` source package: `libheif=1.19.8-1+deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-dav1d:amd64=1.19.8-1`
-- `libheif-plugin-libde265:amd64=1.19.8-1`
-- `libheif1:amd64=1.19.8-1`
+- `libheif-plugin-dav1d:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-libde265:amd64=1.19.8-1+deb13u1`
+- `libheif1:amd64=1.19.8-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -1749,17 +1756,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.19.8-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.dsc' libheif_1.19.8-1.dsc 3631 SHA256:c0fe86feee6e4ffaae774f53c4d33810095fc6c91e48239dbc4fb2d825c3d22e
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.debian.tar.xz' libheif_1.19.8-1.debian.tar.xz 12260 SHA256:a51ba863ca4f99b5aa1c2468f492b75b909449a941459d93fca9e1a1ee904e5f
+$ apt-get source -qq --print-uris libheif=1.19.8-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.dsc' libheif_1.19.8-1+deb13u1.dsc 3289 SHA256:906a8840e79669856631707990f50d92d7adc25516206199342b17e30271eec6
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.debian.tar.xz' libheif_1.19.8-1+deb13u1.debian.tar.xz 26196 SHA256:acb2f40072ef11a679fa100c64c51f29a5fedd0359e5a426e5d5f66377bf6f43
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.19.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.8-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.19.8-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.8-2`
 
@@ -2637,11 +2644,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.31.3+0.4.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.31.4+0.4.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.31.3+0.4.1-1~trixie`
+- `nginx-module-acme=1.31.4+0.4.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2651,11 +2658,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.31.3-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.31.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.31.3-1~trixie`
+- `nginx-module-geoip=1.31.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2665,11 +2672,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.31.3-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.31.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.31.3-1~trixie`
+- `nginx-module-image-filter=1.31.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2679,11 +2686,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.31.3+1.0.0-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.31.4+1.0.0-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.31.3+1.0.0-1~trixie`
+- `nginx-module-njs=1.31.4+1.0.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2693,11 +2700,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.31.3-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.31.4-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.31.3-1~trixie`
+- `nginx-module-xslt=1.31.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2707,11 +2714,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.31.3-1~trixie`
+### `dpkg` source package: `nginx=1.31.4-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.31.3-1~trixie`
+- `nginx=1.31.4-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
