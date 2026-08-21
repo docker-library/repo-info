@@ -26,6 +26,14 @@
 -	[`influxdb:1.12.4-data-alpine`](#influxdb1124-data-alpine)
 -	[`influxdb:1.12.4-meta`](#influxdb1124-meta)
 -	[`influxdb:1.12.4-meta-alpine`](#influxdb1124-meta-alpine)
+-	[`influxdb:1.13-data`](#influxdb113-data)
+-	[`influxdb:1.13-data-alpine`](#influxdb113-data-alpine)
+-	[`influxdb:1.13-meta`](#influxdb113-meta)
+-	[`influxdb:1.13-meta-alpine`](#influxdb113-meta-alpine)
+-	[`influxdb:1.13.0-data`](#influxdb1130-data)
+-	[`influxdb:1.13.0-data-alpine`](#influxdb1130-data-alpine)
+-	[`influxdb:1.13.0-meta`](#influxdb1130-meta)
+-	[`influxdb:1.13.0-meta-alpine`](#influxdb1130-meta-alpine)
 -	[`influxdb:2`](#influxdb2)
 -	[`influxdb:2-alpine`](#influxdb2-alpine)
 -	[`influxdb:2.8`](#influxdb28)
@@ -3390,6 +3398,38 @@ $ docker pull influxdb@sha256:667228df4c2fe4090dfa788f0b272b45189b51414433b171b5
 		Last Modified: Fri, 17 Apr 2026 00:29:41 GMT  
 		Size: 13.9 KB (13931 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `influxdb:1.13-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13-meta-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13.0-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13.0-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13.0-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.13.0-meta-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:2`
 
