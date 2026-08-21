@@ -1,10 +1,10 @@
-# `joomla:6.1.2-php8.3-apache`
+# `joomla:6.1.3-php8.3-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f7e357d2f5b06986fa84b30f1bd77bc41a4bc237154243d831534444f450adb`
-- Created: `2026-08-05T01:38:52.422885363Z`
-- Virtual Size: ~ 791.61 Mb  
+- Image ID: `sha256:193062f735e1cdbcf5f48953fb279203ab65406aa46f8bc534f7c68a25f48531`
+- Created: `2026-08-19T20:54:31.319619332Z`
+- Virtual Size: ~ 798.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.33.tar.xz.asc`
   - `PHP_SHA256=e293ed620cec74651bb4a071317892a478aa6840fab22db45c72d77cd42f9676`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=6.1.2`
-  - `JOOMLA_SHA512=ed4f9ff27329726ece46e3ebab71aeef57f88a7c218f5236d22d4029ac3bd1b615d066d38f5edeabc421ed88153aaface8947e29a49dc06889a4d08207627d3b`
+  - `JOOMLA_VERSION=6.1.3`
+  - `JOOMLA_SHA512=0378709fa1ebf06de26e32eeb635c46f0aa05971d206580a00dcde8038bebc6a4e04158e2e43a8f07edecffd62bfe2e07fe3869b8fddab124875c13391052f55`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1106,23 +1106,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/elfutils/0.192-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/elfutils/0.192-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.2-1~deb13u1`
+### `dpkg` source package: `expat=2.8.3-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.2-1~deb13u1`
+- `libexpat1:amd64=2.8.3-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
+```
 
-- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-2`
 
@@ -2215,11 +2222,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.75-10+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.75-10+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.15-1`
+### `dpkg` source package: `libde265=1.0.15-1+deb13u1`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.15-1+b3`
+- `libde265-0:amd64=1.0.15-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -2234,17 +2241,17 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libde265=1.0.15-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.dsc' libde265_1.0.15-1.dsc 1872 SHA256:41fe11a559a57a8cdf19978c55f58f0d83de78c61e1367f8b73d05bdcce416eb
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1.debian.tar.xz' libde265_1.0.15-1.debian.tar.xz 136584 SHA256:70cb236e55972d2d1bc062bacd68320ad402e0d378c79c99224a512208c90e5b
+$ apt-get source -qq --print-uris libde265=1.0.15-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.dsc' libde265_1.0.15-1+deb13u1.dsc 1904 SHA256:0e1bff0db1fbd8c827e3a665174da6667411f598454d806bc59ff3e1f2f74d46
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.15-1%2bdeb13u1.debian.tar.xz' libde265_1.0.15-1+deb13u1.debian.tar.xz 145088 SHA256:721ab671ae27928da346206ec1e66cfa62cf1d119d0d6f9b6f96d0b17fa3eea7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libde265/1.0.15-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.15-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.23-2`
 
@@ -2330,13 +2337,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libfontenc/1:1.1.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libfontenc/1:1.1.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.19.8-1`
+### `dpkg` source package: `libheif=1.19.8-1+deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-dav1d:amd64=1.19.8-1`
-- `libheif-plugin-libde265:amd64=1.19.8-1`
-- `libheif1:amd64=1.19.8-1`
+- `libheif-plugin-dav1d:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-libde265:amd64=1.19.8-1+deb13u1`
+- `libheif1:amd64=1.19.8-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2353,17 +2360,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.19.8-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.dsc' libheif_1.19.8-1.dsc 3631 SHA256:c0fe86feee6e4ffaae774f53c4d33810095fc6c91e48239dbc4fb2d825c3d22e
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1.debian.tar.xz' libheif_1.19.8-1.debian.tar.xz 12260 SHA256:a51ba863ca4f99b5aa1c2468f492b75b909449a941459d93fca9e1a1ee904e5f
+$ apt-get source -qq --print-uris libheif=1.19.8-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.dsc' libheif_1.19.8-1+deb13u1.dsc 3289 SHA256:906a8840e79669856631707990f50d92d7adc25516206199342b17e30271eec6
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.debian.tar.xz' libheif_1.19.8-1+deb13u1.debian.tar.xz 26196 SHA256:acb2f40072ef11a679fa100c64c51f29a5fedd0359e5a426e5d5f66377bf6f43
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.19.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.8-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.19.8-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -4085,11 +4092,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-17=17.10-0+deb13u1`
+### `dpkg` source package: `postgresql-17=17.11-0+deb13u1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.10-0+deb13u1`
+- `libpq5:amd64=17.11-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -4109,17 +4116,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-17=17.10-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10-0%2bdeb13u1.dsc' postgresql-17_17.10-0+deb13u1.dsc 4522 SHA256:5bc74b90b27b78101b93d04645fc5db8671713ae88b4836decacc7204464b708
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10.orig.tar.bz2' postgresql-17_17.10.orig.tar.bz2 21664720 SHA256:078a03516dcdbdb705fecaf415ea3d13a956c589e46f09fed68a06fb00598c90
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.10-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.10-0+deb13u1.debian.tar.xz 31488 SHA256:fa9f5903f1b0ad94a07c50f1d2997419ef6e8cbc7dd27b651060b7e19f630392
+$ apt-get source -qq --print-uris postgresql-17=17.11-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.dsc' postgresql-17_17.11-0+deb13u1.dsc 4284 SHA256:bf148ae423a982707c3f60672c3a072ef62b701bd9f5df847d9f4b8c9b3e3b18
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.11.orig.tar.bz2' postgresql-17_17.11.orig.tar.bz2 21787224 SHA256:dd27f2b3c59e73ed14aa3324901242bf69a032a6347805f274e6260322d42979
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.11-0+deb13u1.debian.tar.xz 37348 SHA256:82851f4dfeb372c99b94b412e2e3046a8eee7771098e42ac1fa234bef2611cbd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-17/17.10-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.10-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.10-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-17/17.11-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -4673,22 +4680,22 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2026b-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2026b-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.41-5`
+### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-5`
-- `libblkid-dev:amd64=2.41-5`
-- `libblkid1:amd64=2.41-5`
-- `liblastlog2-2:amd64=2.41-5`
-- `libmount-dev:amd64=2.41-5`
-- `libmount1:amd64=2.41-5`
-- `libsmartcols1:amd64=2.41-5`
-- `libuuid1:amd64=2.41-5`
-- `login=1:4.16.0-2+really2.41-5`
-- `mount=2.41-5`
-- `util-linux=2.41-5`
-- `uuid-dev:amd64=2.41-5`
+- `bsdutils=1:2.41.5-0+deb13u1`
+- `libblkid-dev:amd64=2.41.5-0+deb13u1`
+- `libblkid1:amd64=2.41.5-0+deb13u1`
+- `liblastlog2-2:amd64=2.41.5-0+deb13u1`
+- `libmount-dev:amd64=2.41.5-0+deb13u1`
+- `libmount1:amd64=2.41.5-0+deb13u1`
+- `libsmartcols1:amd64=2.41.5-0+deb13u1`
+- `libuuid1:amd64=2.41.5-0+deb13u1`
+- `login=1:4.16.0-2+really2.41.5-0+deb13u1`
+- `mount=2.41.5-0+deb13u1`
+- `util-linux=2.41.5-0+deb13u1`
+- `uuid-dev:amd64=2.41.5-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -4714,17 +4721,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.dsc' util-linux_2.41-5.dsc 4942 SHA256:9e84dcc64170262f850aa5fd65902846a1ebf054d556ab5c4ec17fa16b00e628
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.debian.tar.xz' util-linux_2.41-5.debian.tar.xz 120144 SHA256:20ad832160d5ed8de4759ce00652f620ce642ab583c3c1c431b68a15cdba1d07
+$ apt-get source -qq --print-uris util-linux=2.41.5-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.dsc' util-linux_2.41.5-0+deb13u1.dsc 4988 SHA256:43e9b2cbebd10fdc598c4ad10217c8202c28de53af6eafc892c8e9b5cbf3a3a5
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5.orig.tar.xz' util-linux_2.41.5.orig.tar.xz 9474992 SHA256:f586e35d320ff537aab3ffeca37e9ecd482ccbe013590db4429a414d8aa6a728
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.debian.tar.xz' util-linux_2.41.5-0+deb13u1.debian.tar.xz 107604 SHA256:5b327ccd22f0f4ed28a389870aa51d04ecedb8693e52a1d122850f2b3188cbf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xfonts-encodings=1:1.0.4-2.2`
 

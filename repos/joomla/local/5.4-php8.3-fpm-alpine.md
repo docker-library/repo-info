@@ -1,10 +1,10 @@
-# `joomla:5.4.7-php8.3-fpm-alpine`
+# `joomla:5.4.8-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f41e66de3683515bdc9969f105112ca1c1f28bcb136ff5e5d433311598ca944a`
-- Created: `2026-07-30T23:25:21.361145301Z`
-- Virtual Size: ~ 296.69 Mb  
+- Image ID: `sha256:d193cd4831e8146b389ec9600df48ffbd0c7091dade8599bad16bfc02272fb7c`
+- Created: `2026-08-19T21:00:40.146246554Z`
+- Virtual Size: ~ 296.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.33.tar.xz.asc`
   - `PHP_SHA256=e293ed620cec74651bb4a071317892a478aa6840fab22db45c72d77cd42f9676`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.4.7`
-  - `JOOMLA_SHA512=95daa3c37b454d8a23c82403ec7a74d86539834afc7842ede150b98bf7bf912602b6e79b247e310772428105dc126db693efcf7473dfa3df041532c022cb0180`
+  - `JOOMLA_VERSION=5.4.8`
+  - `JOOMLA_SHA512=84fe04fe224a376209a85f36781c73db7c7787ee572b633ae1b31739af39a1e8e310f10faaac30f8bf8181536dc118182e873143346c4f47cd33b7d785c86b6e`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -984,16 +984,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```
@@ -1103,16 +1103,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.4-r0 description:
+libpq-18.6-r0 description:
 PostgreSQL client library
 
-libpq-18.4-r0 webpage:
+libpq-18.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.4-r0 installed size:
+libpq-18.6-r0 installed size:
 350 KiB
 
-libpq-18.4-r0 license:
+libpq-18.6-r0 license:
 PostgreSQL
 
 ```
