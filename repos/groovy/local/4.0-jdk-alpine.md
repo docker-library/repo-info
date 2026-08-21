@@ -1,9 +1,9 @@
-# `groovy:4.0.32-jdk21-alpine`
+# `groovy:4.0.33-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a75cf66fddccd1cc5bc1066d8ffa369b8353d8d36c7d4a696e1538f2371219a`
-- Created: `2026-06-22T20:19:58.087807258Z`
+- Image ID: `sha256:0ccec422d5718322ca526deb89939bd9d63f72c7dcc17b47324fc713a67c0f99`
+- Created: `2026-08-20T17:10:45.036405365Z`
 - Virtual Size: ~ 397.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.32`
+  - `GROOVY_VERSION=4.0.33`
 
 ## `apk` (`.apk`-based packages)
 
