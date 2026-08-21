@@ -1218,21 +1218,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.88.3-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.88.3-2.dsc' glib2.0_2.88.3-2.dsc 5091 SHA256:adc31bd6d4cb8684ca244c002465ea86d2a5be7f115e1ac6aeb48699f174bed6
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.88.3.orig-unicode-data.tar.xz' glib2.0_2.88.3.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.88.3.orig.tar.xz' glib2.0_2.88.3.orig.tar.xz 5794356 SHA256:ab24d24e698dfa1e408b7bcdb508f4aafc906185a8b8ce72fdf79bbbdc9b383b
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.88.3-2.debian.tar.xz' glib2.0_2.88.3-2.debian.tar.xz 145756 SHA256:56cd728ff13c1d5b39ab9cf8001df330b1858054588e8490b34bff24a68b2010
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.88.3-2/
 
-- https://sources.debian.net/src/glib2.0/2.88.3-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.88.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.88.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-17`
 
@@ -1462,21 +1454,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.13-1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.dsc' gzip_1.13-1.dsc 1884 SHA256:4942638dbb63dc5690e0a95ed70ee9f11e93565c43941c2485da3e561ec72028
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz' gzip_1.13.orig.tar.xz 838248 SHA256:7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz.asc' gzip_1.13.orig.tar.xz.asc 833 SHA256:aa752d6460fff2e0064857f1c6057d2dc49a28a45ad28c6b29c525851d6771f1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1.debian.tar.xz' gzip_1.13-1.debian.tar.xz 19028 SHA256:29319b3f91d8e03d940d4d7c0f2a5fe5ec4f2ba4a0e621c9ef2682f2d0240dd2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.13-1/
 
-- https://sources.debian.net/src/gzip/1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `harfbuzz=12.3.2-2`
 
@@ -2366,21 +2350,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-5
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-5.dsc' libssh2_1.11.1-5.dsc 2329 SHA256:15cbf3b1503c99397ac14333a7a3b69ac6c60f22745f86a358702022c303cab5
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-5.debian.tar.xz' libssh2_1.11.1-5.debian.tar.xz 20688 SHA256:953b3206b83c5c5fe4d6ad0da95743ba0e3fdb9de22d2ab11e5aabdb0701b81d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.1-5/
 
-- https://sources.debian.net/src/libssh2/1.11.1-5/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
