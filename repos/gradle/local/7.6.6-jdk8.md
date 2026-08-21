@@ -378,15 +378,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.25
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.debian.tar.xz' curl_7.81.0-1ubuntu1.25.debian.tar.xz 97692 SHA512:231dd5fc4585a0160869f1e804ba8671ebd68a4fea179a6eb3b0ff9365357db99ceef5f9ac50c04e1bdad41bbb12c66e2006a5083204730250681e388f96acf1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.dsc' curl_7.81.0-1ubuntu1.25.dsc 3180 SHA512:c003e2ad82a64df87bf71cd2e62dbe81beae287d7d3a9514e029a94ad4584e270a8cecc562acb3520b117eb148cdb3b0123e7ddc6ff047335cae56ab0f7f2ce7
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -2762,15 +2756,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz' wget_1.21.2.orig.tar.gz 5004576 SHA512:3e35f92604486ca459f26df97d392579f1d83a9254519e8ce249b410bacf70dddf716d6caa3b29fd4865163f60410b2b8ad1ca1f7bb3dbb2456386b7647b988d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz.asc' wget_1.21.2.orig.tar.gz.asc 833 SHA512:c5349ed20902d4e4d76e681b9e14370d5c1f07d1ba9e600a82af67ac24fe79051b3beabbe563e6967c429cc344ee1bc46aff57c1ab0eb2db8d70e907df49c953
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.debian.tar.xz' wget_1.21.2-2ubuntu1.4.debian.tar.xz 68668 SHA512:897aa8e1d707ba2ab78e4a103b07fe9fd8d95891106a53a6ae083ea9c9bdea3c2f42c84e155388f89dbf60c542aaf9901319eae71b42a956b30290295b9347e1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.dsc' wget_1.21.2-2ubuntu1.4.dsc 2288 SHA512:15ea2aa07db8c2cd6cf6124479fb2cb1a7a6baa4262e60403d19db83489c0698023502435b5df68166e11da6f574dc39807c2018e8d9903fc4107fe3786f62bf
-```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 

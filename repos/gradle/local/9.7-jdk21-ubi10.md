@@ -1,10 +1,10 @@
-# `gradle:9.7.0-jdk21-ubi`
+# `gradle:9.7.1-jdk21-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:556497d6e5408e010aae1d91b2142fbcb69a47482eb0ffb7cf5740475a84890e`
-- Created: `2026-08-17T23:10:23.788201404Z`
-- Virtual Size: ~ 784.19 Mb  
+- Image ID: `sha256:f093ab4525b99181d57a291ef20ea4536c111eff040fec5dc6a113215536cf14`
+- Created: `2026-08-19T17:39:52.482266068Z`
+- Virtual Size: ~ 785.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.0`
+  - `GRADLE_VERSION=9.7.1`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-08-17T09:59:37Z`
@@ -390,12 +390,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.14
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.80.4-12.el10_2.14.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.39-126.0.1.el10_2.x86_64`
 

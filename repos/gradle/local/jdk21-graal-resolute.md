@@ -1,10 +1,10 @@
-# `gradle:9.7.0-jdk21-graal`
+# `gradle:9.7.1-jdk21-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d4b7abaf8cd6284d1a8f7cd5b32b6d0903295624e83ffef0b935ab1f3c897a3`
-- Created: `2026-08-10T17:46:55.899642701Z`
-- Virtual Size: ~ 1.32 Gb  
+- Image ID: `sha256:5ebe13d4e799ce70648aff04b59e27e10c972abd86a4e212979212cd04824d62`
+- Created: `2026-08-19T17:40:42.896932373Z`
+- Virtual Size: ~ 1.29 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,9 +13,9 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=9.7.0`
+  - `GRADLE_VERSION=9.7.1`
 - Labels:
-  - `org.opencontainers.image.created=2026-07-24T12:48:28.650696+00:00`
+  - `org.opencontainers.image.created=2026-08-17T09:02:45.677319+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -432,13 +432,13 @@ Licenses: (parsed from: `/usr/share/doc/gnu-coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.3`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.3`
-- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.3`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.3`
+- `curl=8.18.0-1ubuntu2.4`
+- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.4`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -457,11 +457,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.3
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.3.debian.tar.xz' curl_8.18.0-1ubuntu2.3.debian.tar.xz 84260 SHA512:c873c9d75b30cef3513e44351a21ce2a9d0e20d57c3730d0b8875eabcdc5255b4dc31dc7d4ec15b38a842f7a2b54f16d8517d3b4418a088bbac39fc88aae0ff0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.3.dsc' curl_8.18.0-1ubuntu2.3.dsc 3304 SHA512:9d1d3e9b94122affb0a12396eb27123355c9b3005cf99f44575ffe4d6f8558d6612d18d8e44ff5bd2574619c0129e6c2951335accf26922331268b575d1a0b11
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.debian.tar.xz' curl_8.18.0-1ubuntu2.4.debian.tar.xz 86052 SHA512:9d36dada94931e7677a949b92b1a1c3d222ed83c687a588537f9cfcb8ca8ec43c0a6e1b958df85daa82ce598220ffd19cf617011b4fce5dceba8cee965ef3019
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.dsc' curl_8.18.0-1ubuntu2.4.dsc 3304 SHA512:8d7085afc31041c645eac66fd45e73b9e5a0a9d9d818bcc0fcbc66d26636ba138d66827a9c197ac1be7cc2b987d03905970405b116d902b8eeebeaae7e1d2b0f
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
@@ -1943,11 +1943,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-29.29`
+### `dpkg` source package: `linux=7.0.0-30.30`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-29.29`
+- `linux-libc-dev:amd64=7.0.0-30.30`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1956,10 +1956,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.0.0-29.29
+$ apt-get source -qq --print-uris linux=7.0.0-30.30
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-29.29.diff.gz' linux_7.0.0-29.29.diff.gz 2013229 SHA512:3f0bbb86090bd1436c1a952b1964c6e033c3b3a66ac6cce62e39afc4613502ffbc887ac4419ca9b637724b9c4f4ea452daefcba262a18d6dddd49eb81d5df531
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-29.29.dsc' linux_7.0.0-29.29.dsc 7925 SHA512:dbe2ee57cb5dc3093089bd905284aa9514132280fa1fbeff3a89404aba6de151d5c5b836d5b6e0e30ce0a08fea0851182a7ec27feaade24beb662f91dab19c47
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-30.30.diff.gz' linux_7.0.0-30.30.diff.gz 2015294 SHA512:3d24178c972124af3ac31b5a876668ba545cfff69bb3fcedbbf8157d30216ba7d42c5752d1a6caa2cad1e6264074b45b7010d21863614559422d235c1fc4613a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-30.30.dsc' linux_7.0.0-30.30.dsc 7884 SHA512:63e23b31b4f749613f7ba3a8229540d5405eca3c0b7251950d7c0a8aa387aa6f011a145cc981d884ea1aa242d464f11909e42a417f518864fc18cc04c0ff3768
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
@@ -2880,12 +2880,12 @@ $ apt-get source -qq --print-uris subversion=1.14.5-6build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.5-6build1.dsc' subversion_1.14.5-6build1.dsc 3720 SHA256:c185b30768ab7c8e671d765d6fd190c1f25f3eccf661db24f65c84670d4330d2
 ```
 
-### `dpkg` source package: `systemd=259.5-0ubuntu3`
+### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=259.5-0ubuntu3`
-- `libudev1:amd64=259.5-0ubuntu3`
+- `libsystemd0:amd64=259.5-0ubuntu3.4`
+- `libudev1:amd64=259.5-0ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2901,10 +2901,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=259.5-0ubuntu3
+$ apt-get source -qq --print-uris systemd=259.5-0ubuntu3.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.debian.tar.xz' systemd_259.5-0ubuntu3.debian.tar.xz 252636 SHA512:1bd51c28499af93be9ff77cc1cafadaec4272aea117ca401d14664749226695ca7b01eec91095ab09ae93688383596001cd36b68f08a8d507e8059f1cba45b99
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.dsc' systemd_259.5-0ubuntu3.dsc 8771 SHA512:dd16a74d2357fcfdf87880ff35d009d73f1a408902b37e55a18927cc71c48b795871731f72e9cac93d583b6a79aa146e3e29b0576deab46fa200e9590bde0cf0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.debian.tar.xz' systemd_259.5-0ubuntu3.4.debian.tar.xz 267032 SHA512:8b446ab051d47ae14e3633bfe388fd309dc96c438db5ac568ac7c68da4cd258eeaeaf231c41f9b5b55ce16445f7164e47887cbe53755af470415cbff2196e358
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.dsc' systemd_259.5-0ubuntu3.4.dsc 8779 SHA512:92ab82be5174bb0b79bb2c25cfb400b23c817edf662c4c34f6e7b68bef308b6815ffb86d21439ccf27a83eec19854b90537119628ecb3ebafa205759cd9927ea
 ```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
@@ -3109,14 +3109,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0.orig.tar.gz' wget_1.25.0.orig.tar.gz 5263736 SHA512:a7ce33c07a1a206a8574b6e9ea7cc5292315df0914edbcf05a014d35ae9e3d24699a46818b409b884ada57428cf30502f4bbb3767cae2c6934e4e7fb2d0c5036
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.3.debian.tar.xz' wget_1.25.0-2ubuntu4.3.debian.tar.xz 35820 SHA512:58028aad471855e2512cd4edbe7eed1213ef0cbb730e73059245621aa494cbe65a09e6c8c3709742e1094ce64572a8147b7e050d828a7983221474d501e856aa
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.3.dsc' wget_1.25.0-2ubuntu4.3.dsc 2184 SHA512:14f0cf3a33aee695a5df28218dec164ebbd74482064ecac445dd14e503381eb37222a2c993351cafec80394ce4054efd0e601bd815e5e34f2610f5ccdb52054b
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 

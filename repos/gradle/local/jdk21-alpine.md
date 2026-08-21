@@ -1,10 +1,10 @@
-# `gradle:9.7.0-jdk21-alpine`
+# `gradle:9.7.1-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8f44070112f026c4138bb607a74cfbe259ae4959bcc756ca32b579f2b82cb4e`
-- Created: `2026-08-10T17:45:33.638136876Z`
-- Virtual Size: ~ 649.02 Mb  
+- Image ID: `sha256:27f4a45e6bb538ee77de655e4a57ce6f7b2ccb0778b39672178ce2de40588586`
+- Created: `2026-08-19T17:39:31.879710176Z`
+- Virtual Size: ~ 650.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.0`
+  - `GRADLE_VERSION=9.7.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1843,16 +1843,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.13-r0 description:
+pyc-3.12.14-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.13-r0 webpage:
+pyc-3.12.14-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.13-r0 installed size:
+pyc-3.12.14-r0 installed size:
 0 B
 
-pyc-3.12.13-r0 license:
+pyc-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1860,16 +1860,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.13-r0 description:
+python3-3.12.14-r0 description:
 High-level scripting language
 
-python3-3.12.13-r0 webpage:
+python3-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-3.12.13-r0 installed size:
+python3-3.12.14-r0 installed size:
 22 MiB
 
-python3-3.12.13-r0 license:
+python3-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1877,16 +1877,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.13-r0 description:
+python3-pyc-3.12.14-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.13-r0 webpage:
+python3-pyc-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.13-r0 installed size:
+python3-pyc-3.12.14-r0 installed size:
 0 B
 
-python3-pyc-3.12.13-r0 license:
+python3-pyc-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1894,16 +1894,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.13-r0 description:
+python3-pycache-pyc0-3.12.14-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.13-r0 webpage:
+python3-pycache-pyc0-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.13-r0 installed size:
+python3-pycache-pyc0-3.12.14-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.13-r0 license:
+python3-pycache-pyc0-3.12.14-r0 license:
 PSF-2.0
 
 ```

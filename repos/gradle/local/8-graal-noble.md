@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d0cd3b6b9af32d7006544a41075125f75708e736d16704c04cf0b741b4c16fff`
-- Created: `2026-08-04T01:31:36.825139496Z`
+- Image ID: `sha256:e980c5b9b4154464e6c4e111f74be3c1802d3f5f18274daa340e86fcb7edf47c`
+- Created: `2026-08-18T19:18:03.949703775Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -431,14 +431,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.11
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.debian.tar.xz' curl_8.5.0-2ubuntu10.11.debian.tar.xz 82508 SHA512:caaa7ef5b0a78245a0c05a8aba6c098bed621525f6856c853c58e1e43ae4b5eb3801b998d6f397718ef195704c5c7b8fcbe303ca72ab7020eb90faf07c4a7b9a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.dsc' curl_8.5.0-2ubuntu10.11.dsc 3092 SHA512:4145db15d82794eb43c904faa2251d40c3c6cfa3310b72c6ef1bff2e7dc5775354a26b634e94d7d175426978c2b6edff1f5d41a537d19607547f6e9202d34c8b
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1248,14 +1243,14 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.7`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.8`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.7`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.7`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.7`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.7`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.8`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.8`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.8`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1264,11 +1259,10 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.7
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.debian.tar.xz' krb5_1.20.1-6ubuntu2.7.debian.tar.xz 123356 SHA512:0abd1746ff75b2c63fa6b5c95ec524fa4441790da13d829a41c54c624863928431a631e9cb1ada6c5b2ae4ff942fa4bc6ad301b77f136c8181502749c799c70e
-'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.7.dsc' krb5_1.20.1-6ubuntu2.7.dsc 4080 SHA512:665fad4b40ec80b60a1964c79295edbfdd1cc74b6380857ffa5dfb4119edd1aac06ecfb11419b7ad4107f3c9e351ec19ef8945d3bbe615f54ab92d865e4dd849
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.debian.tar.xz' krb5_1.20.1-6ubuntu2.8.debian.tar.xz 130012 SHA512:8eb9f9c79acca668a11b7b9747cc17bbaeaf3e899d86b5a381598ccf87ffb6317dbd6f26c8ddaea998c000ee2d41557bd42a936e5e5d97a0c7fe5dd39b8b5727
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.dsc' krb5_1.20.1-6ubuntu2.8.dsc 3256 SHA512:052846c5a5402378d2a512bb30ec4e9d21508821054d6f4456d3b9b15e736a1c0b7801d5e417993d7c53ba745f5aa1fd0a9075d7071bc8027998bf9db5524471
 ```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
@@ -1861,19 +1855,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.dsc' libzstd_1.5.5+dfsg2-2build1.1.dsc 2485 SHA256:c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570
 ```
 
-### `dpkg` source package: `linux=6.8.0-136.136`
+### `dpkg` source package: `linux=6.8.0-138.138`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-136.136`
+- `linux-libc-dev:amd64=6.8.0-138.138`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-138.138
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-138.138.diff.gz' linux_6.8.0-138.138.diff.gz 8974445 SHA512:17633904396ecf3c583c5b01bcf485ed2eb864dd0a4550bd9f6d62a73a96c13dde7725dae1425e20b79b5961d7098da200a3d9b0fa7fa95c07406d711162fa4c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-138.138.dsc' linux_6.8.0-138.138.dsc 9463 SHA512:6dee513958c7e1175c474abbbc3db9200b84d4cafd27336e1de654cbf8d3e100c1b80452a2053e4b13d92f05c5e2c27215fa985607c9bdd466defcb0023568ca
+```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2783,12 +2782,12 @@ $ apt-get source -qq --print-uris subversion=1.14.3-1build4
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.3-1build4.debian.tar.xz' subversion_1.14.3-1build4.debian.tar.xz 337036 SHA512:62a40df50e32846f25ffde6e806575427cca51b0f7ff24f184d1dc73b58c120b19739893280371764e23d174bab4b714ae6caf95eaf620fde5bd28cd35b6ace8
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.16`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.16`
-- `libudev1:amd64=255.4-1ubuntu8.16`
+- `libsystemd0:amd64=255.4-1ubuntu8.17`
+- `libudev1:amd64=255.4-1ubuntu8.17`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2801,9 +2800,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.17
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz' systemd_255.4-1ubuntu8.17.debian.tar.xz 272596 SHA512:0019048e54e69c48dd0724d753ae1e1c8feca0d7f5078231b370e23205cb5cd3630182c48cacf41a71031cb3e90cfda5f802035c0937c3ae788382960fe495ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc' systemd_255.4-1ubuntu8.17.dsc 7324 SHA512:d329cc29055aad81ea4020ebc8a9e72c9192a205b8e8df71b58993dfc0cd8cdcf7bcfdb877009c5aadc0a017190ab625cb09228d04c3b30bd591a396aa13496d
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
@@ -3023,15 +3027,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.debian.tar.xz' wget_1.21.4-1ubuntu4.4.debian.tar.xz 68600 SHA512:828f74c5b7cd02853cb03fff2a9684d03e900de2b091acda288546620c5c0bcbb47c105124f6d98528634fbac7259a35ed999bff42d15c30ea5791223ea9da15
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.dsc' wget_1.21.4-1ubuntu4.4.dsc 2288 SHA512:1820b54dee0e934c0d839fe633eb25f218271649974be2690358dd2ddc74db431bad443619070bf84c625676cfe63bacf018ce683e3e019f25a5dae82c3b05d3
-```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 

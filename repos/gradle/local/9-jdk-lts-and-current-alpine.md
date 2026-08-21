@@ -1,10 +1,10 @@
-# `gradle:9.7.0-jdk-lts-and-current-alpine`
+# `gradle:9.7.1-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83783c03e95f4a5f5e6d04c5a838a46cb512ee047282623ed267d242a0618363`
-- Created: `2026-08-10T17:48:07.994336317Z`
-- Virtual Size: ~ 859.78 Mb  
+- Image ID: `sha256:42894cba0d563d902ebeeb2e91708c54c046371c7e55be63c11c54e0b411c08e`
+- Created: `2026-08-19T17:41:51.182148146Z`
+- Virtual Size: ~ 861.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk26`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.0`
+  - `GRADLE_VERSION=9.7.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1488,16 +1488,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.13-r0 description:
+pyc-3.12.14-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.13-r0 webpage:
+pyc-3.12.14-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.13-r0 installed size:
+pyc-3.12.14-r0 installed size:
 0 B
 
-pyc-3.12.13-r0 license:
+pyc-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1505,16 +1505,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.13-r0 description:
+python3-3.12.14-r0 description:
 High-level scripting language
 
-python3-3.12.13-r0 webpage:
+python3-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-3.12.13-r0 installed size:
+python3-3.12.14-r0 installed size:
 22 MiB
 
-python3-3.12.13-r0 license:
+python3-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1522,16 +1522,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.13-r0 description:
+python3-pyc-3.12.14-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.13-r0 webpage:
+python3-pyc-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.13-r0 installed size:
+python3-pyc-3.12.14-r0 installed size:
 0 B
 
-python3-pyc-3.12.13-r0 license:
+python3-pyc-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1539,16 +1539,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.13-r0 description:
+python3-pycache-pyc0-3.12.14-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.13-r0 webpage:
+python3-pycache-pyc0-3.12.14-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.13-r0 installed size:
+python3-pycache-pyc0-3.12.14-r0 installed size:
 10 MiB
 
-python3-pycache-pyc0-3.12.13-r0 license:
+python3-pycache-pyc0-3.12.14-r0 license:
 PSF-2.0
 
 ```
@@ -1624,16 +1624,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.2-r0 installed size:
-1577 KiB
+sqlite-libs-3.53.4-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.51.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```

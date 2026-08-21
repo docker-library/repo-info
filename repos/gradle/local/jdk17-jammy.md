@@ -1,10 +1,10 @@
-# `gradle:9.7.0-jdk17-jammy`
+# `gradle:9.7.1-jdk17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c889f8f597af94c08e6e04440e1229ffd303dbf581d096c2a8753b0138265f18`
-- Created: `2026-08-10T17:46:50.495020818Z`
-- Virtual Size: ~ 741.52 Mb  
+- Image ID: `sha256:dbf73ac7aab6dca390209f1021295b9f4a543490b431f4d42b049ea51cfa5706`
+- Created: `2026-08-19T17:40:46.004781169Z`
+- Virtual Size: ~ 743.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.19+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.0`
+  - `GRADLE_VERSION=9.7.1`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -387,13 +387,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA256:26959de3887a535d7929e5f3ac18eab6eaba5f221cdcf3b4cf7b43c68d32f92b
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.25`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.26`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.25`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.25`
-- `libcurl4:amd64=7.81.0-1ubuntu1.25`
+- `curl=7.81.0-1ubuntu1.26`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.26`
+- `libcurl4:amd64=7.81.0-1ubuntu1.26`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -407,11 +407,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.25
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.26
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.debian.tar.xz' curl_7.81.0-1ubuntu1.25.debian.tar.xz 97692 SHA512:231dd5fc4585a0160869f1e804ba8671ebd68a4fea179a6eb3b0ff9365357db99ceef5f9ac50c04e1bdad41bbb12c66e2006a5083204730250681e388f96acf1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.dsc' curl_7.81.0-1ubuntu1.25.dsc 3180 SHA512:c003e2ad82a64df87bf71cd2e62dbe81beae287d7d3a9514e029a94ad4584e270a8cecc562acb3520b117eb148cdb3b0123e7ddc6ff047335cae56ab0f7f2ce7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.debian.tar.xz' curl_7.81.0-1ubuntu1.26.debian.tar.xz 99540 SHA512:3e9c79e561dd1a259109140906e7808d17bcadbf0fda5e1d89c00ca9c0ff0d1b12eebe56ef30d4e79269ac9c1466861b20f22350abb3a3454d17a3ea277adea0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.dsc' curl_7.81.0-1ubuntu1.26.dsc 3180 SHA512:ff01d718b22f23e9329e425fbe3a25906dbbe2f6b69712e711247e3f13d3ecb61093f703ea89f8b1c15b73275c99c0ac104cbf203a4157cf9cfa79e370d2623d
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -1453,11 +1453,11 @@ $ apt-get source -qq --print-uris libnsl=1.3.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnsl/libnsl_1.3.0-2build2.debian.tar.xz' libnsl_1.3.0-2build2.debian.tar.xz 4868 SHA512:367904106ba925eaa667cc273b37afd052ba795b7ed004cdb501c13dd26b469df971ac10acec2bf57d91fa4839f356c7dcbcd4969914891152588365844ced9a
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.5`
+### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.6`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.37-3ubuntu0.5`
+- `libpng16-16:amd64=1.6.37-3ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1470,9 +1470,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz 51756 SHA512:5b5a9954e6a126aaccae6c2b6992f63237267f67a7f4ebadcbd7db84f5cd1363557f6fa8955e9b1fb09c89859d06692ae6f03cbda8f8377027346e2456985c25
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.dsc' libpng1.6_1.6.37-3ubuntu0.6.dsc 2377 SHA512:6b94b7d48a89d4c0950ee8875c38610c2f854eaf1fe6f0191f89cefed3346d3e56315a44c423ca4de091fe0ac7736d09278d235fa0faf40b4bbec822b24e7ad6
+```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
@@ -2550,12 +2555,12 @@ $ apt-get source -qq --print-uris subversion=1.14.1-3ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3ubuntu0.22.04.1.dsc' subversion_1.14.1-3ubuntu0.22.04.1.dsc 3362 SHA256:3d79e0b348cfa236b900356418b293e59b0c80e729677b8f084d613d9591d757
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.21`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.22`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.21`
-- `libudev1:amd64=249.11-0ubuntu3.21`
+- `libsystemd0:amd64=249.11-0ubuntu3.22`
+- `libudev1:amd64=249.11-0ubuntu3.22`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2568,9 +2573,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.22
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.debian.tar.xz' systemd_249.11-0ubuntu3.22.debian.tar.xz 275816 SHA512:54dbb3c8a8ae9e41a8fe1ee3ea2d76d8c7ca03aa0b9a0ffd8b26fc2cd068ef82ac5d30d4b2dda00e36c2ff517d79ef99aa5128cf185bc99ea2f30f6b4e356f20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.dsc' systemd_249.11-0ubuntu3.22.dsc 5907 SHA512:ad316eccb5926c87ce9f9c113beac8ecc49acc0a2879fc98666f4f9cacdb111eb8e43e8ebc4b97c98a0eaea4a5675caf2eb8e6cbca5f3fb26eb07acd6af226df
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2778,15 +2788,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz' wget_1.21.2.orig.tar.gz 5004576 SHA512:3e35f92604486ca459f26df97d392579f1d83a9254519e8ce249b410bacf70dddf716d6caa3b29fd4865163f60410b2b8ad1ca1f7bb3dbb2456386b7647b988d
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz.asc' wget_1.21.2.orig.tar.gz.asc 833 SHA512:c5349ed20902d4e4d76e681b9e14370d5c1f07d1ba9e600a82af67ac24fe79051b3beabbe563e6967c429cc344ee1bc46aff57c1ab0eb2db8d70e907df49c953
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.debian.tar.xz' wget_1.21.2-2ubuntu1.4.debian.tar.xz 68668 SHA512:897aa8e1d707ba2ab78e4a103b07fe9fd8d95891106a53a6ae083ea9c9bdea3c2f42c84e155388f89dbf60c542aaf9901319eae71b42a956b30290295b9347e1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.dsc' wget_1.21.2-2ubuntu1.4.dsc 2288 SHA512:15ea2aa07db8c2cd6cf6124479fb2cb1a7a6baa4262e60403d19db83489c0698023502435b5df68166e11da6f574dc39807c2018e8d9903fc4107fe3786f62bf
-```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 
