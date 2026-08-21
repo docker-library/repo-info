@@ -1,10 +1,10 @@
-# `matomo:5.12.0-fpm-alpine`
+# `matomo:5.13.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:95665fc6c2623df45112153839239d9cd15ad6e9a2e2f28a4d4fda712b737499`
-- Created: `2026-07-30T23:26:03.901040427Z`
-- Virtual Size: ~ 170.94 Mb  
+- Image ID: `sha256:e68f159b70e53fc1990315d6b111f84ca3eee75174c0f7189ca748310a6e0dde`
+- Created: `2026-08-20T17:23:08.207725257Z`
+- Virtual Size: ~ 171.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
   - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.12.0`
+  - `MATOMO_VERSION=5.13.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -437,16 +437,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```

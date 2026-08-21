@@ -1,10 +1,10 @@
-# `matomo:5.12.0-apache`
+# `matomo:5.13.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7fc9927887a9bdda4d28803006edf191bd98e865132fbd220787596f1a39203`
-- Created: `2026-08-05T01:40:04.57385626Z`
-- Virtual Size: ~ 591.26 Mb  
+- Image ID: `sha256:7f0c168f99dfd3d84a20171f31da6663a7aabbbf56b05c5c0483849279b9db98`
+- Created: `2026-08-20T17:22:56.517275746Z`
+- Virtual Size: ~ 592.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
   - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.12.0`
+  - `MATOMO_VERSION=5.13.0`
 
 ## `dpkg` (`.deb`-based packages)
 
