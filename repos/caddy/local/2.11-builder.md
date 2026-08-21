@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:870295ed9ad0fb4fcf4e8286c62b5bb1e34b4ad6d0a4b2483915fa2160f70de7`
-- Created: `2026-08-13T20:11:33.752874474Z`
-- Virtual Size: ~ 259.12 Mb  
+- Image ID: `sha256:836e6bad815ffba02cb2c01e7f42358d8257395464eea78a7f8af4cf8a615a54`
+- Created: `2026-08-19T18:11:24.196407141Z`
+- Virtual Size: ~ 259.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.26.6`
+  - `GOLANG_VERSION=1.26.7`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.5`
