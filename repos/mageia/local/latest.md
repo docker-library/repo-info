@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53b34e9bf0674564d0dda284d859ca3fe46b99266e272f7c11f37477e4d9f1f8`
-- Created: `2026-07-15T23:54:33.543800047Z`
-- Virtual Size: ~ 322.69 Mb  
+- Image ID: `sha256:988c2674365c06842f205a141835acdce9ac3a20213b22dd0e24dc9549f7bea0`
+- Created: `2026-08-19T17:13:56.787878883Z`
+- Virtual Size: ~ 323.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -164,7 +164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url curl-8.21.0-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `dash-static-0.5.12-3.mga10.x86_64`
@@ -338,15 +338,15 @@ $ dnf --quiet download --source --url grep-3.12-3.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/grep-3.12-3.mga10.src.rpm
 ```
 
-### `rpm` package: `gzip-1.14-2.mga10.x86_64`
+### `rpm` package: `gzip-1.14-2.1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gzip-1.14-2.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/gzip-1.14-2.mga10.src.rpm
+$ dnf --quiet download --source --url gzip-1.14-2.1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/gzip-1.14-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `hostname-3.25-1.mga10.x86_64`
@@ -470,26 +470,26 @@ $ dnf --quiet download --source --url less-685-2.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/less-685-2.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64acl1-2.3.2-3.mga10.x86_64`
+### `rpm` package: `lib64acl1-2.4.0-3.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64acl1-2.3.2-3.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/acl-2.3.2-3.mga10.src.rpm
+$ dnf --quiet download --source --url lib64acl1-2.4.0-3.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/acl-2.4.0-3.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64archive13-3.8.7-1.mga10.x86_64`
+### `rpm` package: `lib64archive13-3.8.8-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64archive13-3.8.7-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/libarchive-3.8.7-1.mga10.src.rpm
+$ dnf --quiet download --source --url lib64archive13-3.8.8-1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/libarchive-3.8.8-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64assuan9-3.0.2-1.mga10.x86_64`
@@ -503,15 +503,15 @@ $ dnf --quiet download --source --url lib64assuan9-3.0.2-1.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/libassuan-3.0.2-1.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64attr1-2.5.2-3.mga10.x86_64`
+### `rpm` package: `lib64attr1-2.6.0-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64attr1-2.5.2-3.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/attr-2.5.2-3.mga10.src.rpm
+$ dnf --quiet download --source --url lib64attr1-2.6.0-1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/attr-2.6.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64audit1-4.0.3-3.mga10.x86_64`
@@ -536,15 +536,15 @@ $ dnf --quiet download --source --url lib64blkid1-2.42-1.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/util-linux-2.42-1.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64bpf1-6.18.35-1.mga10.x86_64`
+### `rpm` package: `lib64bpf1-6.18.39-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64bpf1-6.18.35-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/kernel-6.18.35-1.mga10.src.rpm
+$ dnf --quiet download --source --url lib64bpf1-6.18.39-1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/kernel-6.18.39-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64brotlicommon1-1.2.0-1.mga10.x86_64`
@@ -643,7 +643,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64curl4-8.21.0-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64daemon0-0.14-16.mga10.x86_64`
@@ -1152,15 +1152,15 @@ $ dnf --quiet download --source --url lib64nettle8-3.10.2-1.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/nettle-3.10.2-1.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64nghttp2_14-1.68.1-2.mga10.x86_64`
+### `rpm` package: `lib64nghttp2_14-1.68.1-2.1.mga10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64nghttp2_14-1.68.1-2.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/nghttp2-1.68.1-2.mga10.src.rpm
+$ dnf --quiet download --source --url lib64nghttp2_14-1.68.1-2.1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/nghttp2-1.68.1-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64nghttp3_9-1.14.0-1.mga10.x86_64`
@@ -1207,15 +1207,15 @@ $ dnf --quiet download --source --url lib64npth0-1.8-2.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/npth-1.8-2.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64openssl3-3.5.6-1.mga10.x86_64`
+### `rpm` package: `lib64openssl3-3.5.7-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64openssl3-3.5.6-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/openssl-3.5.6-1.mga10.src.rpm
+$ dnf --quiet download --source --url lib64openssl3-3.5.7-1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/openssl-3.5.7-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64p11-kit0-0.25.10-1.mga10.x86_64`
@@ -1460,15 +1460,15 @@ $ dnf --quiet download --source --url lib64solv1-0.7.35-2.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/libsolv-0.7.35-2.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64sqlite3_0-3.51.3-1.mga10.x86_64`
+### `rpm` package: `lib64sqlite3_0-3.51.3-1.2.mga10.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64sqlite3_0-3.51.3-1.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/sqlite3-3.51.3-1.mga10.src.rpm
+$ dnf --quiet download --source --url lib64sqlite3_0-3.51.3-1.2.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/sqlite3-3.51.3-1.2.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64ssh4-0.11.4-1.mga10.x86_64`
@@ -1746,15 +1746,15 @@ $ dnf --quiet download --source --url lib64xcrypt1-4.4.38-1.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/libxcrypt-4.4.38-1.mga10.src.rpm
 ```
 
-### `rpm` package: `lib64xml2_16-2.15.1-3.mga10.x86_64`
+### `rpm` package: `lib64xml2_16-2.15.1-3.1.mga10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lib64xml2_16-2.15.1-3.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/libxml2-2.15.1-3.mga10.src.rpm
+$ dnf --quiet download --source --url lib64xml2_16-2.15.1-3.1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/libxml2-2.15.1-3.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64yaml0_2-0.2.5-4.mga10.x86_64`
@@ -2175,26 +2175,26 @@ $ dnf --quiet download --source --url passwd-0.80-6.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/passwd-0.80-6.mga10.src.rpm
 ```
 
-### `rpm` package: `perl-5.42.0-2.mga10.x86_64`
+### `rpm` package: `perl-5.42.0-3.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url perl-5.42.0-2.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/perl-5.42.0-2.mga10.src.rpm
+$ dnf --quiet download --source --url perl-5.42.0-3.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
 ```
 
-### `rpm` package: `perl-Config-IniFiles-3.0.3-3.mga10.noarch`
+### `rpm` package: `perl-Config-IniFiles-3.0.3-3.1.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url perl-Config-IniFiles-3.0.3-3.mga10.noarch
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/perl-Config-IniFiles-3.0.3-3.mga10.src.rpm
+$ dnf --quiet download --source --url perl-Config-IniFiles-3.0.3-3.1.mga10.noarch
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/perl-Config-IniFiles-3.0.3-3.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `perl-File-Sync-0.110.0-42.mga10.x86_64`
@@ -2340,15 +2340,15 @@ $ dnf --quiet download --source --url perl-XML-SAX-Base-1.90.0-6.mga10.noarch
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/perl-XML-SAX-Base-1.90.0-6.mga10.src.rpm
 ```
 
-### `rpm` package: `perl-base-5.42.0-2.mga10.x86_64`
+### `rpm` package: `perl-base-5.42.0-3.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url perl-base-5.42.0-2.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/perl-5.42.0-2.mga10.src.rpm
+$ dnf --quiet download --source --url perl-base-5.42.0-3.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
 ```
 
 ### `rpm` package: `pkgconf-2.3.0-2.mga10.x86_64`
@@ -2450,15 +2450,15 @@ $ dnf --quiet download --source --url rmt-0.4b52-1.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/dump-0.4b52-1.mga10.src.rpm
 ```
 
-### `rpm` package: `rootcerts-20260412.00-1.mga10.noarch`
+### `rpm` package: `rootcerts-20260714.00-1.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rootcerts-20260412.00-1.mga10.noarch
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/rootcerts-20260412.00-1.mga10.src.rpm
+$ dnf --quiet download --source --url rootcerts-20260714.00-1.mga10.noarch
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/rootcerts-20260714.00-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `rootfiles-11.0-18.mga10.noarch`
@@ -2494,15 +2494,15 @@ $ dnf --quiet download --source --url rpm-helper-0.24.22-2.mga10.noarch
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/rpm-helper-0.24.22-2.mga10.src.rpm
 ```
 
-### `rpm` package: `rpm-mageia-setup-2.83-8.mga10.x86_64`
+### `rpm` package: `rpm-mageia-setup-2.84-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-mageia-setup-2.83-8.mga10
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/rpm-mageia-setup-2.83-8.mga10.src.rpm
+$ dnf --quiet download --source --url rpm-mageia-setup-2.84-1.mga10
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/rpm-mageia-setup-2.84-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `run-parts-4.8.4-7.mga10.x86_64`
@@ -2648,15 +2648,15 @@ $ dnf --quiet download --source --url traceroute-2.1.6-2.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/traceroute-2.1.6-2.mga10.src.rpm
 ```
 
-### `rpm` package: `urpmi-8.136-2.mga10.noarch`
+### `rpm` package: `urpmi-8.136-2.1.mga10.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url urpmi-8.136-2.mga10.noarch
-http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/urpmi-8.136-2.mga10.src.rpm
+$ dnf --quiet download --source --url urpmi-8.136-2.1.mga10.noarch
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/urpmi-8.136-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `util-linux-2.42-1.mga10.x86_64`
@@ -2678,7 +2678,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url vim-minimal-9.2.782-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
+http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `which-2.23-2.mga10.x86_64`
@@ -2690,4 +2690,15 @@ Source:
 ```console
 $ dnf --quiet download --source --url which-2.23-2.mga10
 http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/which-2.23-2.mga10.src.rpm
+```
+
+### `rpm` package: `xz-5.8.3-1.mga10.x86_64`
+
+Licenses (from `rpm --query`): GPLv2+ and Public Domain
+
+Source:
+
+```console
+$ dnf --quiet download --source --url xz-5.8.3-1.mga10
+http://mirrors.kernel.org/mageia/distrib/10/SRPMS/core/release/xz-5.8.3-1.mga10.src.rpm
 ```
