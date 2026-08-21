@@ -1,10 +1,10 @@
-# `wordpress:7.0.4-php8.4-fpm`
+# `wordpress:7.1.0-php8.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:18b7e1619919c19df9c1be6037c48c3ce57d307b5bc144db99e77b1d9313a24e`
-- Created: `2026-08-12T23:35:39.494887453Z`
-- Virtual Size: ~ 757.05 Mb  
+- Image ID: `sha256:767f018e5b898a25e3b40d7d2c9fbc25797945db9e66baf60b49d62bb4172a9d`
+- Created: `2026-08-20T16:58:05.81995104Z`
+- Virtual Size: ~ 788.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -996,11 +996,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.2-1~deb13u1`
+### `dpkg` source package: `expat=2.8.3-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.2-1~deb13u1`
+- `libexpat1:amd64=2.8.3-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -1009,17 +1009,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.8.2-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.dsc' expat_2.8.2-1~deb13u1.dsc 1638 SHA256:cb0adcbd159f18b2254ab03cef4e25b538a74d797c473b52b839553445105e46
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2.orig.tar.gz' expat_2.8.2.orig.tar.gz 8462437 SHA256:ca9d7c05560653cb977bfaa1ac54f717919cc0c68f6798b42fe55347c0b0ad52
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.2-1%7edeb13u1.debian.tar.xz' expat_2.8.2-1~deb13u1.debian.tar.xz 14044 SHA256:b9f366d5659d3eceb224f01e9f8bf5535b842ba8adfd7398ea1bdbf57772f695
+$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.2-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-2`
 
@@ -4417,19 +4417,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2026b-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2026b-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.41-5`
+### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-5`
-- `libblkid1:amd64=2.41-5`
-- `liblastlog2-2:amd64=2.41-5`
-- `libmount1:amd64=2.41-5`
-- `libsmartcols1:amd64=2.41-5`
-- `libuuid1:amd64=2.41-5`
-- `login=1:4.16.0-2+really2.41-5`
-- `mount=2.41-5`
-- `util-linux=2.41-5`
+- `bsdutils=1:2.41.5-0+deb13u1`
+- `libblkid1:amd64=2.41.5-0+deb13u1`
+- `liblastlog2-2:amd64=2.41.5-0+deb13u1`
+- `libmount1:amd64=2.41.5-0+deb13u1`
+- `libsmartcols1:amd64=2.41.5-0+deb13u1`
+- `libuuid1:amd64=2.41.5-0+deb13u1`
+- `login=1:4.16.0-2+really2.41.5-0+deb13u1`
+- `mount=2.41.5-0+deb13u1`
+- `util-linux=2.41.5-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -4455,17 +4455,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.dsc' util-linux_2.41-5.dsc 4942 SHA256:9e84dcc64170262f850aa5fd65902846a1ebf054d556ab5c4ec17fa16b00e628
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.debian.tar.xz' util-linux_2.41-5.debian.tar.xz 120144 SHA256:20ad832160d5ed8de4759ce00652f620ce642ab583c3c1c431b68a15cdba1d07
+$ apt-get source -qq --print-uris util-linux=2.41.5-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.dsc' util-linux_2.41.5-0+deb13u1.dsc 4988 SHA256:43e9b2cbebd10fdc598c4ad10217c8202c28de53af6eafc892c8e9b5cbf3a3a5
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5.orig.tar.xz' util-linux_2.41.5.orig.tar.xz 9474992 SHA256:f586e35d320ff537aab3ffeca37e9ecd482ccbe013590db4429a414d8aa6a728
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.debian.tar.xz' util-linux_2.41.5-0+deb13u1.debian.tar.xz 107604 SHA256:5b327ccd22f0f4ed28a389870aa51d04ecedb8693e52a1d122850f2b3188cbf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `x265=4.1-2`
 

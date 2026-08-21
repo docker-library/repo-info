@@ -1,10 +1,10 @@
-# `wordpress:7.0.4-php8.2-fpm-alpine`
+# `wordpress:7.1.0-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c02766963b30971f60e94998f67b82e550d45a36165b1916534e94beae23f100`
-- Created: `2026-08-12T23:34:23.812787392Z`
-- Virtual Size: ~ 295.54 Mb  
+- Image ID: `sha256:fc472168f11c45bd6299959968a88fbafb23756ef747446b4a8f2e9d7d132b1f`
+- Created: `2026-08-20T16:57:12.915187897Z`
+- Virtual Size: ~ 320 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -877,16 +877,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
