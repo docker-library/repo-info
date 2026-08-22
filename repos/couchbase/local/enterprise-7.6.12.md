@@ -2535,15 +2535,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.debian.tar.xz' wget_1.21.4-1ubuntu4.4.debian.tar.xz 68600 SHA512:828f74c5b7cd02853cb03fff2a9684d03e900de2b091acda288546620c5c0bcbb47c105124f6d98528634fbac7259a35ed999bff42d15c30ea5791223ea9da15
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.dsc' wget_1.21.4-1ubuntu4.4.dsc 2288 SHA512:1820b54dee0e934c0d839fe633eb25f218271649974be2690358dd2ddc74db431bad443619070bf84c625676cfe63bacf018ce683e3e019f25a5dae82c3b05d3
-```
 
 ### `dpkg` source package: `xdg-user-dirs=0.18-1build1`
 
