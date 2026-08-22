@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7cdf6a94c853143f4aad0516a02e239da54c36a8b820ffa5194c93a2d5ae037`
-- Created: `2026-07-23T23:11:16.684120079Z`
+- Image ID: `sha256:197fb2e1b1d8b34251a075a3438e7f1dbab3a1ba64238ea5b9f463ca7620e7b7`
+- Created: `2026-08-20T17:19:26.028629915Z`
 - Virtual Size: ~ 281.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -103,16 +103,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-11`
 
 ```console
-amazon-corretto-11-11.0.32.9.1-r0 description:
+amazon-corretto-11-11.0.32.10.1-r0 description:
 Corretto11
 
-amazon-corretto-11-11.0.32.9.1-r0 webpage:
+amazon-corretto-11-11.0.32.10.1-r0 webpage:
 https://github.com/corretto/corretto-11
 
-amazon-corretto-11-11.0.32.9.1-r0 installed size:
+amazon-corretto-11-11.0.32.10.1-r0 installed size:
 311 MiB
 
-amazon-corretto-11-11.0.32.9.1-r0 license:
+amazon-corretto-11-11.0.32.10.1-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
