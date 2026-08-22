@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-26`
 
 ```console
-$ docker pull maven@sha256:9992096136d752e0756e9f6c0ff9a9fa8081cb08a67f5a859737df07fffa9eaf
+$ docker pull maven@sha256:d5cc2d4546c1fcd3a2c4f90a2c8762ce0ea03102c85cd1d99c391afb63ad3734
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -232,7 +232,7 @@ $ docker pull maven@sha256:53f147a87203a843a6d281e4db4e3d8824e8f43243f3cde516e57
 ### `maven:3-sapmachine-26` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:5ddeae112fb8d2cd290f073fcf06bf76e92c56e15a5d16a8d83ce5e101ce8dd4
+$ docker pull maven@sha256:c732a80361acaaa77d3ffabbc115034bce08792f47820717430c377ee2303cb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -316,23 +316,23 @@ CMD ["mvn"]
 ### `maven:3-sapmachine-26` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:641efc38452ba0910a9c93c5ae8f8e1dab19c6793ef6e512884991a8f9ef4761
+$ docker pull maven@sha256:b13801301aacd428b4f4af0ba89d6e1b1e04b644c854985067733d7ea7a8d599
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4268821 bytes)**  
+-	Total Size: **4.3 MB (4268822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7579876d9b1a67c24d7cb02782c19e286c7bc3906f8067a2b4825ce66327f6ba`
+-	Image ID: `sha256:b7ebbfffdaf4e8a8cdf85a6bd12913b58e535f50acd6aacb3a823825503391b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7062e0e8eb5c027445b29dbc85b55b60f000cd49946a3320e551dae2691285a8`  
-		Last Modified: Thu, 20 Aug 2026 18:34:36 GMT  
+	-	`sha256:80eece8dc9819d8d242609f33574975a31c55cd7ef7475af74758ff46ffb4e1c`  
+		Last Modified: Fri, 21 Aug 2026 23:41:24 GMT  
 		Size: 4.3 MB (4252841 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:448d730a1f34534d352548a212f89a15ebcdfcf75e9c6999f6267e4c8bca5930`  
-		Last Modified: Thu, 20 Aug 2026 18:34:35 GMT  
-		Size: 16.0 KB (15980 bytes)  
+	-	`sha256:90fcbda905d79698be296b4d1021ccd1d4e25a4e4361305079b7524ffe326444`  
+		Last Modified: Fri, 21 Aug 2026 23:41:24 GMT  
+		Size: 16.0 KB (15981 bytes)  
 		MIME: application/vnd.in-toto+json

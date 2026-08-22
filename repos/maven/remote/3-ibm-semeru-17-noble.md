@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-17-noble`
 
 ```console
-$ docker pull maven@sha256:804b923b271725ad3ff4896157ade89a18b38d6f8f8cf975435d03e57dfd0028
+$ docker pull maven@sha256:2b0a253d9ddcf4a3abd3d0d7c37cffbcfba8b0c2d3a688d191e3700d5addd880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -266,7 +266,7 @@ $ docker pull maven@sha256:5a51bf5bdab198a652e8ee06a5262ec61254380430cf08d94b0ea
 ### `maven:3-ibm-semeru-17-noble` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:597cf158ced26011fa79b1a41e87ca4cda4c3ba68028f38ab4055703a60d6ad3
+$ docker pull maven@sha256:6624792768b490ed47c7a310df3be133a62bbffa4ba3d0736928c2c09eff373d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -366,25 +366,25 @@ CMD ["mvn"]
 ### `maven:3-ibm-semeru-17-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d1ce4692f03865522dc3d73feb05e6b76466043a8431729d73977731c7df3a23
+$ docker pull maven@sha256:351acb5c10265a9726f71ab0fd7405d2720103ab2a166bec1fcd7bb1e5948925
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.8 MB (4796731 bytes)**  
+-	Total Size: **4.8 MB (4796732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95a65a9e2e922eab2d698149aecddf638bd3234c1d94a158bfc300a4d826ca59`
+-	Image ID: `sha256:8cb9cafd3130e63b01e25560b6ce724f6f5c5d6957491488808429012f6c50d6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b971849e55f6b965d7b9ea5838700d19e028d92fd52222383a3ff3bc750684dd`  
-		Last Modified: Thu, 20 Aug 2026 06:27:01 GMT  
+	-	`sha256:76816c58edd8c5c8e6be2d21aad0f296f5cb7494306e4155a42bacf33712f4b2`  
+		Last Modified: Fri, 21 Aug 2026 23:37:52 GMT  
 		Size: 4.8 MB (4779817 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cca39d0e69112e7d04e91c5c8d402f3aae382954eb47b95f402c57b5d57f937e`  
-		Last Modified: Thu, 20 Aug 2026 06:27:00 GMT  
-		Size: 16.9 KB (16914 bytes)  
+	-	`sha256:86a6bf21e875f751381fd02788b940f0efa3bb6e8d889ca402f4e42dc834b01e`  
+		Last Modified: Fri, 21 Aug 2026 23:37:52 GMT  
+		Size: 16.9 KB (16915 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-ibm-semeru-17-noble` - linux; s390x

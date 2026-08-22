@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-17`
 
 ```console
-$ docker pull maven@sha256:a78328b2c72c783d5356a06f834dc443f66054d473dd46e85f6cfd4dce8bef31
+$ docker pull maven@sha256:e40f3dfc28af322cd90d23fcb729675f69c7cd3c197d3a8b49b84eb97bfb284c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -232,7 +232,7 @@ $ docker pull maven@sha256:3388208668c9326265dadd02c9bb2bf5a545a955d1c731142de72
 ### `maven:3-sapmachine-17` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:1d274ad1dad0a1cc05f9bfb123271e0fec94b2d20dbff39cf294c7c5a34df06e
+$ docker pull maven@sha256:2e87d0fc39caeb332883c39d7c6ecea740107bbadd4e29f4ca1285139f79fe6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -316,23 +316,23 @@ CMD ["mvn"]
 ### `maven:3-sapmachine-17` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:af1ebfaecbcf87d9ec33f76cb7d9104e3f4e0c6efde684f68111e2b8bbb1dc77
+$ docker pull maven@sha256:47842d86dac711d5fb264e3aed9767ae840bd0a0f918e81d4628095434c9a859
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.3 MB (4320366 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:786a122bedc7206ee7567d00671acdeb0d83199fd4ae775fda610f017dc946c3`
+-	Image ID: `sha256:1d1ed88c3a51d1d339f6382bb0ef29423071588d6622742d566a044a20dddcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:84c435676a64285bcd78832ec4c882cd5ce270a78a4a0da3292f183ab192bdb3`  
-		Last Modified: Thu, 20 Aug 2026 18:36:24 GMT  
+	-	`sha256:31721d5c32546a8c25fb6c82ae0eee6fb8223fc40f80ca7f6e94a8db865ddc25`  
+		Last Modified: Fri, 21 Aug 2026 23:39:47 GMT  
 		Size: 4.3 MB (4305651 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b2f48456da9e8d97c7c3e18e09cd4e3f03495c8957e8ea812ab9e3a8d4728b4e`  
-		Last Modified: Thu, 20 Aug 2026 18:36:23 GMT  
+	-	`sha256:09dd9687117a8f0e49e1f063862b3243f3d9953379169519005ea9923018f323`  
+		Last Modified: Fri, 21 Aug 2026 23:39:46 GMT  
 		Size: 14.7 KB (14715 bytes)  
 		MIME: application/vnd.in-toto+json
