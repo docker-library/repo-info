@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef1d85a80ddf2d5abb5842c07ff8c78e1fca9dc602736dd56c22f008c52e6f89`
-- Created: `2026-08-10T23:37:33.075384276Z`
+- Image ID: `sha256:1148959c90f594edc01549760557ca5d3c84e7600df899717937a1214e8e037e`
+- Created: `2026-08-20T18:03:32.625310231Z`
 - Virtual Size: ~ 370.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -110,16 +110,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-17`
 
 ```console
-amazon-corretto-17-17.0.20.8.1-r0 description:
+amazon-corretto-17-17.0.20.10.1-r0 description:
 Corretto17
 
-amazon-corretto-17-17.0.20.8.1-r0 webpage:
+amazon-corretto-17-17.0.20.10.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-17-17.0.20.8.1-r0 installed size:
+amazon-corretto-17-17.0.20.10.1-r0 installed size:
 320 MiB
 
-amazon-corretto-17-17.0.20.8.1-r0 license:
+amazon-corretto-17-17.0.20.10.1-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -688,16 +688,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```
