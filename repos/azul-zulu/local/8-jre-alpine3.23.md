@@ -1,9 +1,9 @@
-# `azul-zulu:8.96-8.0.502-jre-alpine3.23`
+# `azul-zulu:8.96-8.0.504-jre-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5717a4c230ca8815dd667efacb444c76b7211d36607d1905346be4aa9f8acde`
-- Created: `2026-07-23T22:27:57.309551234Z`
+- Image ID: `sha256:89b3dfdc127b1f608d54e4dce07a0f2a2c91259cc7549715c3ed2c8b24f041e8`
+- Created: `2026-08-19T17:34:19.159327987Z`
 - Virtual Size: ~ 123.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -494,16 +494,16 @@ Zlib
 ### `apk` package: `zulu8-ca-jre`
 
 ```console
-zulu8-ca-jre-8.0.502-r1 description:
-Azul Zulu 8.96.0.19 (8u502-b07) CA JRE
+zulu8-ca-jre-8.0.504-r1 description:
+Azul Zulu 8.96.0.205 (8u504-b01) CA JRE
 
-zulu8-ca-jre-8.0.502-r1 webpage:
+zulu8-ca-jre-8.0.504-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu8-ca-jre-8.0.502-r1 installed size:
+zulu8-ca-jre-8.0.504-r1 installed size:
 1596 KiB
 
-zulu8-ca-jre-8.0.502-r1 license:
+zulu8-ca-jre-8.0.504-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -511,16 +511,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu8-ca-jre-headless`
 
 ```console
-zulu8-ca-jre-headless-8.0.502-r1 description:
-Azul Zulu 8.96.0.19 (8u502-b07) CA Headless JRE
+zulu8-ca-jre-headless-8.0.504-r1 description:
+Azul Zulu 8.96.0.205 (8u504-b01) CA Headless JRE
 
-zulu8-ca-jre-headless-8.0.502-r1 webpage:
+zulu8-ca-jre-headless-8.0.504-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu8-ca-jre-headless-8.0.502-r1 installed size:
+zulu8-ca-jre-headless-8.0.504-r1 installed size:
 103 MiB
 
-zulu8-ca-jre-headless-8.0.502-r1 license:
+zulu8-ca-jre-headless-8.0.504-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -528,16 +528,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu8-jre`
 
 ```console
-zulu8-jre-8.0.502-r1 description:
-Azul Zulu 8.96.0.19 (8u502-b07) JRE
+zulu8-jre-8.0.504-r1 description:
+Azul Zulu 8.96.0.205 (8u504-b01) JRE
 
-zulu8-jre-8.0.502-r1 webpage:
+zulu8-jre-8.0.504-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu8-jre-8.0.502-r1 installed size:
+zulu8-jre-8.0.504-r1 installed size:
 4096 B
 
-zulu8-jre-8.0.502-r1 license:
+zulu8-jre-8.0.504-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -545,16 +545,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu8-jre-headless`
 
 ```console
-zulu8-jre-headless-8.0.502-r1 description:
-Azul Zulu 8.96.0.19 (8u502-b07) Headless JRE
+zulu8-jre-headless-8.0.504-r1 description:
+Azul Zulu 8.96.0.205 (8u504-b01) Headless JRE
 
-zulu8-jre-headless-8.0.502-r1 webpage:
+zulu8-jre-headless-8.0.504-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu8-jre-headless-8.0.502-r1 installed size:
+zulu8-jre-headless-8.0.504-r1 installed size:
 4096 B
 
-zulu8-jre-headless-8.0.502-r1 license:
+zulu8-jre-headless-8.0.504-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

@@ -1,9 +1,9 @@
-# `azul-zulu:17.68-17.0.20-jdk-headless-almalinux10`
+# `azul-zulu:17.68-17.0.20.1-jdk-headless-almalinux10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7684c0df0f74a3efc9871452ca5798ff00cb2983e5c625803d09f50554af55c2`
-- Created: `2026-07-23T22:29:03.948986243Z`
+- Image ID: `sha256:90dfec80fa769a208d498b01699a60960f5f9b42d6cea23578e0062e9bd3d9f1`
+- Created: `2026-08-19T17:35:22.0092585Z`
 - Virtual Size: ~ 484.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

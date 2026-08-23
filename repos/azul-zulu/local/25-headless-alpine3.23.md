@@ -1,9 +1,9 @@
-# `azul-zulu:25.36-25.0.4-jdk-headless-alpine3.23`
+# `azul-zulu:25.36-25.0.4.1-jdk-headless-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4daa26ee65c71947d7d5a8b9ae7a90d54270140f6da2a42d0ee9537399766b18`
-- Created: `2026-07-23T22:30:15.38093519Z`
+- Image ID: `sha256:38adfac10e69f84fa40cdfcf961d1f45f29f323bcc25c76a4c0cac4dad7acd34`
+- Created: `2026-08-19T17:36:37.227883Z`
 - Virtual Size: ~ 358.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -307,16 +307,16 @@ Zlib
 ### `apk` package: `zulu25-ca-jdk-headless`
 
 ```console
-zulu25-ca-jdk-headless-25.0.4-r1 description:
-Azul Zulu 25.36+15 (25.0.4-b7) CA Headless JDK
+zulu25-ca-jdk-headless-25.0.4.1-r1 description:
+Azul Zulu 25.36+205 (25.0.4.1-b1) CA Headless JDK
 
-zulu25-ca-jdk-headless-25.0.4-r1 webpage:
+zulu25-ca-jdk-headless-25.0.4.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu25-ca-jdk-headless-25.0.4-r1 installed size:
+zulu25-ca-jdk-headless-25.0.4.1-r1 installed size:
 98 MiB
 
-zulu25-ca-jdk-headless-25.0.4-r1 license:
+zulu25-ca-jdk-headless-25.0.4.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu25-ca-jre-headless`
 
 ```console
-zulu25-ca-jre-headless-25.0.4-r1 description:
-Azul Zulu 25.36+15 (25.0.4-b7) CA Headless JRE
+zulu25-ca-jre-headless-25.0.4.1-r1 description:
+Azul Zulu 25.36+205 (25.0.4.1-b1) CA Headless JRE
 
-zulu25-ca-jre-headless-25.0.4-r1 webpage:
+zulu25-ca-jre-headless-25.0.4.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu25-ca-jre-headless-25.0.4-r1 installed size:
+zulu25-ca-jre-headless-25.0.4.1-r1 installed size:
 235 MiB
 
-zulu25-ca-jre-headless-25.0.4-r1 license:
+zulu25-ca-jre-headless-25.0.4.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -341,16 +341,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu25-jdk-headless`
 
 ```console
-zulu25-jdk-headless-25.0.4-r1 description:
-Azul Zulu 25.36+15 (25.0.4-b7) Headless JDK
+zulu25-jdk-headless-25.0.4.1-r1 description:
+Azul Zulu 25.36+205 (25.0.4.1-b1) Headless JDK
 
-zulu25-jdk-headless-25.0.4-r1 webpage:
+zulu25-jdk-headless-25.0.4.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu25-jdk-headless-25.0.4-r1 installed size:
+zulu25-jdk-headless-25.0.4.1-r1 installed size:
 4096 B
 
-zulu25-jdk-headless-25.0.4-r1 license:
+zulu25-jdk-headless-25.0.4.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -358,16 +358,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu25-jre-headless`
 
 ```console
-zulu25-jre-headless-25.0.4-r1 description:
-Azul Zulu 25.36+15 (25.0.4-b7) Headless JRE
+zulu25-jre-headless-25.0.4.1-r1 description:
+Azul Zulu 25.36+205 (25.0.4.1-b1) Headless JRE
 
-zulu25-jre-headless-25.0.4-r1 webpage:
+zulu25-jre-headless-25.0.4.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu25-jre-headless-25.0.4-r1 installed size:
+zulu25-jre-headless-25.0.4.1-r1 installed size:
 4096 B
 
-zulu25-jre-headless-25.0.4-r1 license:
+zulu25-jre-headless-25.0.4.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

@@ -1,10 +1,10 @@
-# `azul-zulu:25.36-25.0.4-jdk-debian13`
+# `azul-zulu:25.36-25.0.4.1-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f643a037f9a3c82392eee9fc361e1b4a435162e367a219ec9aaa336b37b9eed5`
-- Created: `2026-08-05T00:43:42.815611459Z`
-- Virtual Size: ~ 449.09 Mb  
+- Image ID: `sha256:6c02a78a865b9df44dcd441ae5b0bd9cb1a8d5499cb091e24c7b8674233f7a71`
+- Created: `2026-08-19T17:37:13.40055564Z`
+- Virtual Size: ~ 449.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -613,23 +613,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.22.22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.22.22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.2-1~deb13u1`
+### `dpkg` source package: `expat=2.8.3-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.2-1~deb13u1`
+- `libexpat1:amd64=2.8.3-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
+```
 
-- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -2321,15 +2328,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu25-ca=25.0.4-1`
+### `dpkg` source package: `zulu25-ca=25.0.4.1-1`
 
 Binary Packages:
 
-- `zulu25-ca-doc=25.0.4-1`
-- `zulu25-ca-jdk=25.0.4-1`
-- `zulu25-ca-jdk-headless=25.0.4-1`
-- `zulu25-ca-jre=25.0.4-1`
-- `zulu25-ca-jre-headless=25.0.4-1`
+- `zulu25-ca-doc=25.0.4.1-1`
+- `zulu25-ca-jdk=25.0.4.1-1`
+- `zulu25-ca-jdk-headless=25.0.4.1-1`
+- `zulu25-ca-jre=25.0.4.1-1`
+- `zulu25-ca-jre-headless=25.0.4.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-ca-doc/copyright`, `/usr/share/doc/zulu25-ca-jdk/copyright`, `/usr/share/doc/zulu25-ca-jdk-headless/copyright`, `/usr/share/doc/zulu25-ca-jre/copyright`, `/usr/share/doc/zulu25-ca-jre-headless/copyright`)
 
@@ -2339,15 +2346,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu25-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu25=25.0.4-1`
+### `dpkg` source package: `zulu25=25.0.4.1-1`
 
 Binary Packages:
 
-- `zulu25-doc=25.0.4-1`
-- `zulu25-jdk=25.0.4-1`
-- `zulu25-jdk-headless=25.0.4-1`
-- `zulu25-jre=25.0.4-1`
-- `zulu25-jre-headless=25.0.4-1`
+- `zulu25-doc=25.0.4.1-1`
+- `zulu25-jdk=25.0.4.1-1`
+- `zulu25-jdk-headless=25.0.4.1-1`
+- `zulu25-jre=25.0.4.1-1`
+- `zulu25-jre-headless=25.0.4.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-doc/copyright`, `/usr/share/doc/zulu25-jdk/copyright`, `/usr/share/doc/zulu25-jdk-headless/copyright`, `/usr/share/doc/zulu25-jre/copyright`, `/usr/share/doc/zulu25-jre-headless/copyright`)
 

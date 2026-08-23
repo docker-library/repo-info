@@ -1,9 +1,9 @@
-# `azul-zulu:21.52-21.0.12-jre-debian13`
+# `azul-zulu:21.52-21.0.12.1-jre-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aaa2b0196f29be1152ffdac46a65603eb5ebccac9866073cf3887a78365d5d89`
-- Created: `2026-08-05T00:43:24.542820615Z`
+- Image ID: `sha256:19d0d58874091b070916b05742cae6962971c85bcec772964bde0bdb6faa523d`
+- Created: `2026-08-19T17:36:34.83846834Z`
 - Virtual Size: ~ 304.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -613,23 +613,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.22.22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.22.22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.2-1~deb13u1`
+### `dpkg` source package: `expat=2.8.3-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.2-1~deb13u1`
+- `libexpat1:amd64=2.8.3-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
+```
 
-- http://snapshot.debian.org/package/expat/2.8.2-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -2321,12 +2328,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu21-ca=21.0.12-1`
+### `dpkg` source package: `zulu21-ca=21.0.12.1-1`
 
 Binary Packages:
 
-- `zulu21-ca-jre=21.0.12-1`
-- `zulu21-ca-jre-headless=21.0.12-1`
+- `zulu21-ca-jre=21.0.12.1-1`
+- `zulu21-ca-jre-headless=21.0.12.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-ca-jre/copyright`, `/usr/share/doc/zulu21-ca-jre-headless/copyright`)
 
@@ -2336,12 +2343,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu21-ca-jre/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu21=21.0.12-1`
+### `dpkg` source package: `zulu21=21.0.12.1-1`
 
 Binary Packages:
 
-- `zulu21-jre=21.0.12-1`
-- `zulu21-jre-headless=21.0.12-1`
+- `zulu21-jre=21.0.12.1-1`
+- `zulu21-jre-headless=21.0.12.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-jre/copyright`, `/usr/share/doc/zulu21-jre-headless/copyright`)
 

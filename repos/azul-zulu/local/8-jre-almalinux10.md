@@ -1,9 +1,9 @@
-# `azul-zulu:8.96-8.0.502-jre-almalinux10`
+# `azul-zulu:8.96-8.0.504-jre-almalinux10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:22e982fe0d3a220cd56b9d654b782879a518b49096ed06b4852f109f252dcfbc`
-- Created: `2026-07-23T22:28:01.330835798Z`
+- Image ID: `sha256:4e847b68c6a8f210318ceec6f01e7892210467b7ac294f9cfa1848a7fe5516dd`
+- Created: `2026-08-19T17:34:07.746270954Z`
 - Virtual Size: ~ 322.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
