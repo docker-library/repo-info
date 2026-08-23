@@ -1,10 +1,10 @@
-# `eclipse-temurin:26.0.1_8-jdk-ubi10-minimal`
+# `eclipse-temurin:26.0.2_10-jdk-ubi10-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8660b487ac57a4f31fc91714740de661efc7c49e399a8e6a71ea89e4e431d822`
-- Created: `2026-08-17T22:38:25.80974406Z`
-- Virtual Size: ~ 455.23 Mb  
+- Image ID: `sha256:2f8aaa6039b23f7e0f0c07c24b7f86a9f4edf44d99e04744751a6dd6d98fddce`
+- Created: `2026-08-21T18:26:59.7568858Z`
+- Virtual Size: ~ 455.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,10 +16,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-26.0.1+8`
+  - `JAVA_VERSION=jdk-26.0.2+10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-17T09:59:37Z`
+  - `build-date=2026-08-20T05:42:51Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-17T09:59:37Z`
-  - `org.opencontainers.image.revision=e7c0028707fa6423887e58fdaaa0ce41b96656c8`
-  - `release=1786960640`
+  - `org.opencontainers.image.created=2026-08-20T05:42:51Z`
+  - `org.opencontainers.image.revision=b2232799f269a1f388bb8eab702d61fa78c72fce`
+  - `release=1787204459`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=e7c0028707fa6423887e58fdaaa0ce41b96656c8`
+  - `vcs-ref=b2232799f269a1f388bb8eab702d61fa78c72fce`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`

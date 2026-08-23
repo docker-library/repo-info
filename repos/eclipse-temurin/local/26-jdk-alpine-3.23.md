@@ -1,10 +1,10 @@
-# `eclipse-temurin:26.0.1_8-jdk-alpine-3.23`
+# `eclipse-temurin:26.0.2_10-jdk-alpine-3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bdc1c6c3d741f0df7dfa529e5947bed1cc6745321955fbbef01ab0e8b05a0ce2`
-- Created: `2026-06-22T19:58:00.324680519Z`
-- Virtual Size: ~ 308.58 Mb  
+- Image ID: `sha256:82e07304f32889e945e0de4b70677c4d671cb97d0bd27fe8786ee32e926fd5e5`
+- Created: `2026-08-21T18:26:36.681620996Z`
+- Virtual Size: ~ 309.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-26.0.1+8`
+  - `JAVA_VERSION=jdk-26.0.2+10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -345,16 +345,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
@@ -447,16 +447,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -702,16 +702,16 @@ Apache-2.0
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -719,16 +719,16 @@ BSD-3-Clause
 ### `apk` package: `p11-kit-trust`
 
 ```console
-p11-kit-trust-0.25.5-r2 description:
+p11-kit-trust-0.26.2-r0 description:
 System trust module from p11-kit
 
-p11-kit-trust-0.25.5-r2 webpage:
+p11-kit-trust-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-trust-0.25.5-r2 installed size:
-321 KiB
+p11-kit-trust-0.26.2-r0 installed size:
+397 KiB
 
-p11-kit-trust-0.25.5-r2 license:
+p11-kit-trust-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -787,16 +787,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

@@ -1,10 +1,10 @@
-# `eclipse-temurin:8u492-b09-jdk-alpine-3.22`
+# `eclipse-temurin:8u502-b07-jdk-alpine-3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9ce13c7058110aed3c415123c5108f6b4752169908845d80533657fa0195eb8`
-- Created: `2026-06-22T19:56:29.051699248Z`
-- Virtual Size: ~ 192.26 Mb  
+- Image ID: `sha256:15e945a91b3f28d8af57bbdfb7c8eda9376ca55391f78a49fcfc08ee97dece5a`
+- Created: `2026-08-21T18:21:23.755883101Z`
+- Virtual Size: ~ 192.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u492-b09`
+  - `JAVA_VERSION=jdk8u502-b07`
 
 ## `apk` (`.apk`-based packages)
 
@@ -667,16 +667,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -1075,16 +1075,16 @@ Apache-2.0
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1362 KiB
+p11-kit-0.26.2-r0 installed size:
+1565 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -1092,16 +1092,16 @@ BSD-3-Clause
 ### `apk` package: `p11-kit-trust`
 
 ```console
-p11-kit-trust-0.25.5-r2 description:
+p11-kit-trust-0.26.2-r0 description:
 System trust module from p11-kit
 
-p11-kit-trust-0.25.5-r2 webpage:
+p11-kit-trust-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-trust-0.25.5-r2 installed size:
-329 KiB
+p11-kit-trust-0.26.2-r0 installed size:
+397 KiB
 
-p11-kit-trust-0.25.5-r2 license:
+p11-kit-trust-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -1194,16 +1194,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```

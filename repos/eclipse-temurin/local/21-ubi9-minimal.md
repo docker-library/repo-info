@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.11_10-jdk-ubi9-minimal`
+# `eclipse-temurin:21.0.12_8-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0252852fbb9f778ef98f5b9b6ad03a269d9f81953f46b268ec8a53dfd1bd508`
-- Created: `2026-08-17T22:38:11.134899503Z`
-- Virtual Size: ~ 490.97 Mb  
+- Image ID: `sha256:ffd83e044506a04a5d39b91bec2af562fe07ef2af6c635f9d386dc34c589e0fb`
+- Created: `2026-08-21T18:25:14.702289979Z`
+- Virtual Size: ~ 490.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-08-17T17:26:46Z`

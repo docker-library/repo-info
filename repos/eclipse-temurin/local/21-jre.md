@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.11_10-jre-resolute`
+# `eclipse-temurin:21.0.12_8-jre-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:57c03c98daeda437f4fdd5c4e0370718262cba5f9a07d92ebe8a2b0ae1027488`
-- Created: `2026-08-18T19:16:21.013693961Z`
-- Virtual Size: ~ 318.12 Mb  
+- Image ID: `sha256:57a04a45584adac49fd9384a21e542ef47652030ff2168fab59d1bdf2a027c96`
+- Created: `2026-08-21T18:25:31.235036436Z`
+- Virtual Size: ~ 318.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
 - Labels:
   - `org.opencontainers.image.created=2026-08-17T09:02:45.677319+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -325,12 +325,12 @@ Licenses: (parsed from: `/usr/share/doc/gnu-coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.3`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.3`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.3`
+- `curl=8.18.0-1ubuntu2.4`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -346,9 +346,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.debian.tar.xz' curl_8.18.0-1ubuntu2.4.debian.tar.xz 86052 SHA512:9d36dada94931e7677a949b92b1a1c3d222ed83c687a588537f9cfcb8ca8ec43c0a6e1b958df85daa82ce598220ffd19cf617011b4fce5dceba8cee965ef3019
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.dsc' curl_8.18.0-1ubuntu2.4.dsc 3304 SHA512:8d7085afc31041c645eac66fd45e73b9e5a0a9d9d818bcc0fcbc66d26636ba138d66827a9c197ac1be7cc2b987d03905970405b116d902b8eeebeaae7e1d2b0f
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -2267,11 +2273,11 @@ $ apt-get source -qq --print-uris util-linux=2.41.3-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.3-3ubuntu2.dsc' util-linux_2.41.3-3ubuntu2.dsc 5439 SHA256:4b87e555cfa77a3301e0fc92b77f2f2fc119d7ff27b229af259793103e7674e2
 ```
 
-### `dpkg` source package: `wget=1.25.0-2ubuntu4.3`
+### `dpkg` source package: `wget=1.25.0-2ubuntu4.4`
 
 Binary Packages:
 
-- `wget=1.25.0-2ubuntu4.3`
+- `wget=1.25.0-2ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2281,10 +2287,10 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu4.3
+$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu4.4
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0.orig.tar.gz' wget_1.25.0.orig.tar.gz 5263736 SHA512:a7ce33c07a1a206a8574b6e9ea7cc5292315df0914edbcf05a014d35ae9e3d24699a46818b409b884ada57428cf30502f4bbb3767cae2c6934e4e7fb2d0c5036
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.3.debian.tar.xz' wget_1.25.0-2ubuntu4.3.debian.tar.xz 35820 SHA512:58028aad471855e2512cd4edbe7eed1213ef0cbb730e73059245621aa494cbe65a09e6c8c3709742e1094ce64572a8147b7e050d828a7983221474d501e856aa
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.3.dsc' wget_1.25.0-2ubuntu4.3.dsc 2184 SHA512:14f0cf3a33aee695a5df28218dec164ebbd74482064ecac445dd14e503381eb37222a2c993351cafec80394ce4054efd0e601bd815e5e34f2610f5ccdb52054b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.4.debian.tar.xz' wget_1.25.0-2ubuntu4.4.debian.tar.xz 37328 SHA512:7da4368a37c2ae9d8e259d4fa4685e3041b61bf4e30790774da0415cc2b2d491a64c0febb1bd1dc9bb0964148f289944883d5ee3084c1c055d8bb0318816929d
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.4.dsc' wget_1.25.0-2ubuntu4.4.dsc 2184 SHA512:d23a2e3ac67602f088711b7b98ba2785a0d8e94f47d4778c0553da9abcfc91cce2ae985465cd574018a98fb294430d2fde26908207f6d0e3bd4a78fa97a79645
 ```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
