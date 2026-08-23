@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1178229d72ff2bef658ce9c48bdcd4ef5c4d6061c0192462cd065d92bebcbbda`
-- Created: `2026-08-18T20:49:28.751808058Z`
-- Virtual Size: ~ 529.23 Mb  
+- Image ID: `sha256:6c523edaf92393ea73897e6c497742557fabe18e51bd8a5eeed293d4437f06d7`
+- Created: `2026-08-21T19:21:28.642225849Z`
+- Virtual Size: ~ 529.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.3+9`
+  - `JAVA_VERSION=jdk-25.0.4+7`
   - `CLOJURE_VERSION=1.12.5.1664`
 - Labels:
   - `org.opencontainers.image.version=24.04`
@@ -330,13 +330,13 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -353,9 +353,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.debian.tar.xz' curl_8.5.0-2ubuntu10.12.debian.tar.xz 84352 SHA512:5c1ac08f57563800007f31370d1080836fa187cf6c18e02cdd3116f1b0a8a1e6cec9deccfc96d5cb193918c5881bed39a8e6f854e87e7a7143cbab46f4289755
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.dsc' curl_8.5.0-2ubuntu10.12.dsc 3092 SHA512:df51cce2e0bbd1bd6924464e71c182c6635193afbb8b59dc3d366974d5488f8eab6001238a5d976b8e95e26d24677359c44a0aae246a0758627199ab4c5a2488
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
