@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e190318f609d05069a126eb528d422dd5cdb7ceec3f68585cdf8861e7e385580`
-- Created: `2026-08-18T18:09:39.85083961Z`
-- Virtual Size: ~ 307.03 Mb  
+- Image ID: `sha256:987dec74f97d4f01f65bf6f0b489085da1f0f9f1732e2f500d0ab8c2fe89e5b4`
+- Created: `2026-08-21T20:36:41.283600256Z`
+- Virtual Size: ~ 307 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -304,12 +304,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA256:26959de3887a535d7929e5f3ac18eab6eaba5f221cdcf3b4cf7b43c68d32f92b
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.25`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.26`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.25`
-- `libcurl4:amd64=7.81.0-1ubuntu1.25`
+- `curl=7.81.0-1ubuntu1.26`
+- `libcurl4:amd64=7.81.0-1ubuntu1.26`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -323,11 +323,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.25
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.26
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.debian.tar.xz' curl_7.81.0-1ubuntu1.25.debian.tar.xz 97692 SHA512:231dd5fc4585a0160869f1e804ba8671ebd68a4fea179a6eb3b0ff9365357db99ceef5f9ac50c04e1bdad41bbb12c66e2006a5083204730250681e388f96acf1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.25.dsc' curl_7.81.0-1ubuntu1.25.dsc 3180 SHA512:c003e2ad82a64df87bf71cd2e62dbe81beae287d7d3a9514e029a94ad4584e270a8cecc562acb3520b117eb148cdb3b0123e7ddc6ff047335cae56ab0f7f2ce7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.debian.tar.xz' curl_7.81.0-1ubuntu1.26.debian.tar.xz 99540 SHA512:3e9c79e561dd1a259109140906e7808d17bcadbf0fda5e1d89c00ca9c0ff0d1b12eebe56ef30d4e79269ac9c1466861b20f22350abb3a3454d17a3ea277adea0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.dsc' curl_7.81.0-1ubuntu1.26.dsc 3180 SHA512:ff01d718b22f23e9329e425fbe3a25906dbbe2f6b69712e711247e3f13d3ecb61093f703ea89f8b1c15b73275c99c0ac104cbf203a4157cf9cfa79e370d2623d
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -2088,11 +2088,11 @@ $ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA256:024c983405cf31b5ba1230c99d27fd340552c0f59e05b4d94f222d9e399ac522
 ```
 
-### `dpkg` source package: `wget=1.21.2-2ubuntu1.4`
+### `dpkg` source package: `wget=1.21.2-2ubuntu1.5`
 
 Binary Packages:
 
-- `wget=1.21.2-2ubuntu1.4`
+- `wget=1.21.2-2ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2102,11 +2102,11 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.4
+$ apt-get source -qq --print-uris wget=1.21.2-2ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz' wget_1.21.2.orig.tar.gz 5004576 SHA512:3e35f92604486ca459f26df97d392579f1d83a9254519e8ce249b410bacf70dddf716d6caa3b29fd4865163f60410b2b8ad1ca1f7bb3dbb2456386b7647b988d
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2.orig.tar.gz.asc' wget_1.21.2.orig.tar.gz.asc 833 SHA512:c5349ed20902d4e4d76e681b9e14370d5c1f07d1ba9e600a82af67ac24fe79051b3beabbe563e6967c429cc344ee1bc46aff57c1ab0eb2db8d70e907df49c953
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.debian.tar.xz' wget_1.21.2-2ubuntu1.4.debian.tar.xz 68668 SHA512:897aa8e1d707ba2ab78e4a103b07fe9fd8d95891106a53a6ae083ea9c9bdea3c2f42c84e155388f89dbf60c542aaf9901319eae71b42a956b30290295b9347e1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.4.dsc' wget_1.21.2-2ubuntu1.4.dsc 2288 SHA512:15ea2aa07db8c2cd6cf6124479fb2cb1a7a6baa4262e60403d19db83489c0698023502435b5df68166e11da6f574dc39807c2018e8d9903fc4107fe3786f62bf
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.5.debian.tar.xz' wget_1.21.2-2ubuntu1.5.debian.tar.xz 70124 SHA512:9ef9148da7e4c6e556f1c4b952f58f58112545405f1cf43e1df95ea353594d376c86f3ad112bff06c9fbf407b24b1e3e03fd5c058b664e50d0dd79991e78cf0a
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.2-2ubuntu1.5.dsc' wget_1.21.2-2ubuntu1.5.dsc 2288 SHA512:bbe75fb6243384d78f1fcd14cbca58d16e5a07f967fb4a5f2f97392d0e91d9b398645c49400d4ef32af656b3231ac06c78d58a4f77756fccc6030e7577bb154c
 ```
 
 ### `dpkg` source package: `xxhash=0.8.1-1`

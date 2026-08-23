@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a958ddb14137fae57701c63f7a20216a1d4d1f05735d2cf7f83227fd8da6f16`
-- Created: `2026-08-18T21:15:25.77381871Z`
-- Virtual Size: ~ 284.67 Mb  
+- Image ID: `sha256:3771c28f04334879df66f965f31a8aaaad4955779474aaf2e010f1d8b3fe4d8b`
+- Created: `2026-08-21T20:36:41.368815325Z`
+- Virtual Size: ~ 284.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.19+10`
+  - `JAVA_VERSION=jdk-17.0.20+8`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -326,12 +326,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -351,10 +351,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.11
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.12
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.debian.tar.xz' curl_8.5.0-2ubuntu10.11.debian.tar.xz 82508 SHA512:caaa7ef5b0a78245a0c05a8aba6c098bed621525f6856c853c58e1e43ae4b5eb3801b998d6f397718ef195704c5c7b8fcbe303ca72ab7020eb90faf07c4a7b9a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.11.dsc' curl_8.5.0-2ubuntu10.11.dsc 3092 SHA512:4145db15d82794eb43c904faa2251d40c3c6cfa3310b72c6ef1bff2e7dc5775354a26b634e94d7d175426978c2b6edff1f5d41a537d19607547f6e9202d34c8b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.debian.tar.xz' curl_8.5.0-2ubuntu10.12.debian.tar.xz 84352 SHA512:5c1ac08f57563800007f31370d1080836fa187cf6c18e02cdd3116f1b0a8a1e6cec9deccfc96d5cb193918c5881bed39a8e6f854e87e7a7143cbab46f4289755
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.dsc' curl_8.5.0-2ubuntu10.12.dsc 3092 SHA512:df51cce2e0bbd1bd6924464e71c182c6635193afbb8b59dc3d366974d5488f8eab6001238a5d976b8e95e26d24677359c44a0aae246a0758627199ab4c5a2488
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
@@ -2172,11 +2172,11 @@ $ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.dsc' util-linux_2.39.3-9ubuntu6.5.dsc 4726 SHA256:206b6fb92d3cb0f6b1a959a6173d81ebf4e0a340564378ac49667a16968578d8
 ```
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4.4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.5`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4.4`
+- `wget=1.21.4-1ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2186,11 +2186,11 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.4
+$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.debian.tar.xz' wget_1.21.4-1ubuntu4.4.debian.tar.xz 68600 SHA512:828f74c5b7cd02853cb03fff2a9684d03e900de2b091acda288546620c5c0bcbb47c105124f6d98528634fbac7259a35ed999bff42d15c30ea5791223ea9da15
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.dsc' wget_1.21.4-1ubuntu4.4.dsc 2288 SHA512:1820b54dee0e934c0d839fe633eb25f218271649974be2690358dd2ddc74db431bad443619070bf84c625676cfe63bacf018ce683e3e019f25a5dae82c3b05d3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.debian.tar.xz' wget_1.21.4-1ubuntu4.5.debian.tar.xz 70064 SHA512:23cbb85cdbe090751c91ae3e13e3a705c7f505c9900c08c8c6c7bbdd97ec08d1ceea27d8ed60db48c865a878b81492d1ad1a515e57c70e9a7b41ed54514b1db9
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.dsc' wget_1.21.4-1ubuntu4.5.dsc 2288 SHA512:088bf43b10b913453d0733e2cd8e6f4a516e7961271ea804726c5d054e70447100017ca3de0b9a938f5065fecbb8e11f124fac4b2b4ac63a4affe960def20dce
 ```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
