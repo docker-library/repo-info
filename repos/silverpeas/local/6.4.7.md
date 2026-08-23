@@ -6564,9 +6564,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris wayland=1.20.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0.orig.tar.gz' wayland_1.20.0.orig.tar.gz 349593 SHA256:cb04e273c2013f44da1d3bd9e835189a9ab07aa7d4878f183a2beaa9c7b25be8
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.diff.gz' wayland_1.20.0-1ubuntu0.1.diff.gz 14532 SHA256:0fb2f5ac6fe54c2c9a92f31d30d613809e97e13de7d6d8ee9df130dd025ea707
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.dsc' wayland_1.20.0-1ubuntu0.1.dsc 2687 SHA256:bb90c23eea89d2ff74c623f633416be96918e98346c2ec25a31a80440fa7505e
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0.orig.tar.gz' wayland_1.20.0.orig.tar.gz 349593 SHA512:2881fe23a80732e4b660ff6e1b01711212d3463d20e3442c381bf7ea34c866c3dbab0b39354f5fb8e29649c4530e74aedb6df668a8b54530593257b8e68be541
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.diff.gz' wayland_1.20.0-1ubuntu0.1.diff.gz 14532 SHA512:73ecb5c916c30e61352cd6d4a3839d46003fd94c73daadd13cbe2a4f43ada37817c97a74ed73fd614cade863ee0e417d1a8cb8db7cef4a768e56f24424125bd9
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.dsc' wayland_1.20.0-1ubuntu0.1.dsc 2687 SHA512:37074c6f0092329291687b6f8b2f63ec8330fa705a641693814b934a9fa29dab47312ca6d347d322d8d2183cc555cca74097b45b274cc4864e2beb79960fe95a
 ```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1.4`
