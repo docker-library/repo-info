@@ -884,9 +884,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA256:c109c96bb04998cd44156622d36f8e04b140701ec60531a10668cfdff5e8d8f0
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA256:5defc79effea0d1f0276d0cd4e711551b9431f45e00ab88a898f78ee5133dfab
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA256:9dd07b52c43d44213f18b05fb7f73326d8d7a3a1b5c03a9725c5734f933669b0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA512:c0a33fafbf1139157a9f52860938ebedc282a1394a68dcbd58981159379eb525919f999b25925f2cb4d6b18089bd99a94b00b3e73cff5cb0a0e47bdff174ed75
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA512:c9f01e0fbfd22f5961f17da4edc3c15902959cb031067b4872d2e8d20ca3a96f56bb260f3d51fefd0c17177bbc1753dd7e3b23e1836e7b9eae252db313e4b402
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA512:b07f7e5e7056bcff264bbd7cf770b40462f6c5984582b175fc86f22c6435f4b3e138074db97851c92739dc32e80a6f9fc29d990e7efebdeabd8532440c4a500a
 ```
 
 ### `dpkg` source package: `json-c=0.15-3~ubuntu1.22.04.2`
