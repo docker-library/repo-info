@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5f19b477e98fc864469520e30c23423d043548601ce566c7ab096a1647054e1`
-- Created: `2026-08-18T22:13:49.941193618Z`
-- Virtual Size: ~ 679.55 Mb  
+- Image ID: `sha256:43f9aa33d0cb9af1c028d75eaca33335793e3052e960d67d58df68f746234019`
+- Created: `2026-08-21T21:22:16.836190246Z`
+- Virtual Size: ~ 679.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u492-b09`
+  - `JAVA_VERSION=jdk8u502-b07`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -332,12 +332,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1875,12 +1875,12 @@ $ apt-get source -qq --print-uris pinentry=1.2.1-3ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.1-3ubuntu5.debian.tar.xz' pinentry_1.2.1-3ubuntu5.debian.tar.xz 19244 SHA512:7d4a8fe8920f1d6ef656ab485e2625bc646c5726ba18f91eedb3f4c95241680f2169b80791355e34a707bbebdb0de9986e264f2d8f36848e48a8300fc8497481
 ```
 
-### `dpkg` source package: `postgresql-16=16.14-0ubuntu0.24.04.1`
+### `dpkg` source package: `postgresql-16=16.15-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libpq5:amd64=16.14-0ubuntu0.24.04.1`
-- `postgresql-client-16=16.14-0ubuntu0.24.04.1`
+- `libpq5:amd64=16.15-0ubuntu0.24.04.1`
+- `postgresql-client-16=16.15-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-16/copyright`)
 
@@ -1897,9 +1897,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `double-metaphone`
 - `nagaysau-ishii`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-16=16.15-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.15.orig.tar.gz' postgresql-16_16.15.orig.tar.gz 33138496 SHA512:61a8023ab5507b66c3c2839a380e0572672535c301adba193b346d4645e2206083790fc98b7b1fbedf20cf81abc69d04675688c4d4317c783aeda2782fe74cb7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.15-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.15-0ubuntu0.24.04.1.debian.tar.xz 43720 SHA512:ef3c51da8662d44d2037c992481202caf880975877707bff767461f1e2c6b9840b33255e75110cbd1adae7784a0a30d85f81e928f4825d52aba48e9425e9b6b3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.15-0ubuntu0.24.04.1.dsc' postgresql-16_16.15-0ubuntu0.24.04.1.dsc 4336 SHA512:cc24d6ca942d9b08f4eb37321e44572cc4ea851a03333785028a847ce311c7b03c5557b04549ab4c7e451e7081de70f24924e5be10accf10f94f563b7a0a9540
+```
 
 ### `dpkg` source package: `postgresql-common=257build1.1`
 
@@ -2284,11 +2289,11 @@ $ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.dsc' util-linux_2.39.3-9ubuntu6.5.dsc 4726 SHA256:206b6fb92d3cb0f6b1a959a6173d81ebf4e0a340564378ac49667a16968578d8
 ```
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4.4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.5`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4.4`
+- `wget=1.21.4-1ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
@@ -2298,11 +2303,11 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.4
+$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.debian.tar.xz' wget_1.21.4-1ubuntu4.4.debian.tar.xz 68600 SHA512:828f74c5b7cd02853cb03fff2a9684d03e900de2b091acda288546620c5c0bcbb47c105124f6d98528634fbac7259a35ed999bff42d15c30ea5791223ea9da15
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.4.dsc' wget_1.21.4-1ubuntu4.4.dsc 2288 SHA512:1820b54dee0e934c0d839fe633eb25f218271649974be2690358dd2ddc74db431bad443619070bf84c625676cfe63bacf018ce683e3e019f25a5dae82c3b05d3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.debian.tar.xz' wget_1.21.4-1ubuntu4.5.debian.tar.xz 70064 SHA512:23cbb85cdbe090751c91ae3e13e3a705c7f505c9900c08c8c6c7bbdd97ec08d1ceea27d8ed60db48c865a878b81492d1ad1a515e57c70e9a7b41ed54514b1db9
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.dsc' wget_1.21.4-1ubuntu4.5.dsc 2288 SHA512:088bf43b10b913453d0733e2cd8e6f4a516e7961271ea804726c5d054e70447100017ca3de0b9a938f5065fecbb8e11f124fac4b2b4ac63a4affe960def20dce
 ```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
