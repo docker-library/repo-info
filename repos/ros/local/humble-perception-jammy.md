@@ -2946,9 +2946,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iptables=1.8.7-1ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA256:c109c96bb04998cd44156622d36f8e04b140701ec60531a10668cfdff5e8d8f0
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA256:5defc79effea0d1f0276d0cd4e711551b9431f45e00ab88a898f78ee5133dfab
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA256:9dd07b52c43d44213f18b05fb7f73326d8d7a3a1b5c03a9725c5734f933669b0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7.orig.tar.bz2' iptables_1.8.7.orig.tar.bz2 717862 SHA512:c0a33fafbf1139157a9f52860938ebedc282a1394a68dcbd58981159379eb525919f999b25925f2cb4d6b18089bd99a94b00b3e73cff5cb0a0e47bdff174ed75
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.debian.tar.xz' iptables_1.8.7-1ubuntu5.2.debian.tar.xz 88180 SHA512:c9f01e0fbfd22f5961f17da4edc3c15902959cb031067b4872d2e8d20ca3a96f56bb260f3d51fefd0c17177bbc1753dd7e3b23e1836e7b9eae252db313e4b402
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.8.7-1ubuntu5.2.dsc' iptables_1.8.7-1ubuntu5.2.dsc 2850 SHA512:b07f7e5e7056bcff264bbd7cf770b40462f6c5984582b175fc86f22c6435f4b3e138074db97851c92739dc32e80a6f9fc29d990e7efebdeabd8532440c4a500a
 ```
 
 ### `dpkg` source package: `isl=0.24-2build1`
@@ -7461,14 +7461,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-14=14.23-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.23.orig.tar.gz' postgresql-14_14.23.orig.tar.gz 29629150 SHA512:b851b0abf1beb8c58b4d6c0fe18c93b2ad1f272a4dc0cf90f2b9c4f24a0d6aceea4735f3b3d54d3194093dbd695193312c9706ec47c54d0f4a7e84b42ed98e5b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.23-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.23-0ubuntu0.22.04.1.debian.tar.xz 35120 SHA512:adf1d1cc9b0ca189bd7be4722d49f3d49757b4653f0b169e5bf822e020c5f8b9bc698960574d4eae52e5c76a89931b9c90bd704167fa16732accc2942ed4f921
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.23-0ubuntu0.22.04.1.dsc' postgresql-14_14.23-0ubuntu0.22.04.1.dsc 3864 SHA512:1be6c7f256dbc6ab53cab8372264ad0dfcacbcd40def362d3f3ea720473151d701745b56d12432e5757b87dfa8e42586b74725ddce560895c83e4b49c70fdc10
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
@@ -12816,9 +12811,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tinyxml=2.6.2-6ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2.orig.tar.gz' tinyxml_2.6.2.orig.tar.gz 210124 SHA256:15bdfdcec58a7da30adc87ac2b078e4417dbe5392f3afb719f9ba6d062645593
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz' tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz 5644 SHA256:98bace360e88f07aabcf4a14d2952a93a1a5a325debeaf47e715ec0e8cea6a15
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.dsc' tinyxml_2.6.2-6ubuntu0.22.04.1.dsc 1974 SHA256:a10826f50c41b49201b36402aeb7007e215c7f7940d348d92160b91a40f955ba
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2.orig.tar.gz' tinyxml_2.6.2.orig.tar.gz 210124 SHA512:133b5db06131a90ad0c2b39b0063f1c8e65e67288a7e5d67e1f7d9ba32af10dc5dfa0462f9723985ee27debe8f09a10a25d4b5a5aaff2ede979b1cebe8e59d56
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz' tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz 5644 SHA512:65e02984b1135c11c11d3e921b590cdb7607d4fc0d90d2785ae1e493ca92ba14c7575f41859111e977e822840037e107357981b58e68dadbf0c152a83e48e69d
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.dsc' tinyxml_2.6.2-6ubuntu0.22.04.1.dsc 1974 SHA512:069c69050486598fc964ce8b3c4a1cc1e78aeaf794c7bb372ad1b0da97373e2bf85269b332720a96accf72fc4df9062f762e490de9d55dc17474ed1e0128f5c3
 ```
 
 ### `dpkg` source package: `tk8.6=8.6.12-1build1`
@@ -13212,9 +13207,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris wayland=1.20.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0.orig.tar.gz' wayland_1.20.0.orig.tar.gz 349593 SHA256:cb04e273c2013f44da1d3bd9e835189a9ab07aa7d4878f183a2beaa9c7b25be8
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.diff.gz' wayland_1.20.0-1ubuntu0.1.diff.gz 14532 SHA256:0fb2f5ac6fe54c2c9a92f31d30d613809e97e13de7d6d8ee9df130dd025ea707
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.dsc' wayland_1.20.0-1ubuntu0.1.dsc 2687 SHA256:bb90c23eea89d2ff74c623f633416be96918e98346c2ec25a31a80440fa7505e
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0.orig.tar.gz' wayland_1.20.0.orig.tar.gz 349593 SHA512:2881fe23a80732e4b660ff6e1b01711212d3463d20e3442c381bf7ea34c866c3dbab0b39354f5fb8e29649c4530e74aedb6df668a8b54530593257b8e68be541
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.diff.gz' wayland_1.20.0-1ubuntu0.1.diff.gz 14532 SHA512:73ecb5c916c30e61352cd6d4a3839d46003fd94c73daadd13cbe2a4f43ada37817c97a74ed73fd614cade863ee0e417d1a8cb8db7cef4a768e56f24424125bd9
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.20.0-1ubuntu0.1.dsc' wayland_1.20.0-1ubuntu0.1.dsc 2687 SHA512:37074c6f0092329291687b6f8b2f63ec8330fa705a641693814b934a9fa29dab47312ca6d347d322d8d2183cc555cca74097b45b274cc4864e2beb79960fe95a
 ```
 
 ### `dpkg` source package: `woff2=1.0.2-1build4`

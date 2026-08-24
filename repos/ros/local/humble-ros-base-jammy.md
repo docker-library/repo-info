@@ -7734,9 +7734,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tinyxml=2.6.2-6ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2.orig.tar.gz' tinyxml_2.6.2.orig.tar.gz 210124 SHA256:15bdfdcec58a7da30adc87ac2b078e4417dbe5392f3afb719f9ba6d062645593
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz' tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz 5644 SHA256:98bace360e88f07aabcf4a14d2952a93a1a5a325debeaf47e715ec0e8cea6a15
-'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.dsc' tinyxml_2.6.2-6ubuntu0.22.04.1.dsc 1974 SHA256:a10826f50c41b49201b36402aeb7007e215c7f7940d348d92160b91a40f955ba
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2.orig.tar.gz' tinyxml_2.6.2.orig.tar.gz 210124 SHA512:133b5db06131a90ad0c2b39b0063f1c8e65e67288a7e5d67e1f7d9ba32af10dc5dfa0462f9723985ee27debe8f09a10a25d4b5a5aaff2ede979b1cebe8e59d56
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz' tinyxml_2.6.2-6ubuntu0.22.04.1.debian.tar.xz 5644 SHA512:65e02984b1135c11c11d3e921b590cdb7607d4fc0d90d2785ae1e493ca92ba14c7575f41859111e977e822840037e107357981b58e68dadbf0c152a83e48e69d
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml/tinyxml_2.6.2-6ubuntu0.22.04.1.dsc' tinyxml_2.6.2-6ubuntu0.22.04.1.dsc 1974 SHA512:069c69050486598fc964ce8b3c4a1cc1e78aeaf794c7bb372ad1b0da97373e2bf85269b332720a96accf72fc4df9062f762e490de9d55dc17474ed1e0128f5c3
 ```
 
 ### `dpkg` source package: `tzdata=2026c-0ubuntu0.22.04.1`
