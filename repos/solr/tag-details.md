@@ -24,7 +24,7 @@
 ## `solr:10`
 
 ```console
-$ docker pull solr@sha256:4c8d9331bc0271afd9e79ba891a6490f2b8aca31b3ca0c66a2b0c94f84f89399
+$ docker pull solr@sha256:c2a983cd9a5759c3b802b7b47f48b5cfae2b34d63a9444d62730fdbdb1b5308b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -550,13 +550,13 @@ $ docker pull solr@sha256:8ca657e97f3a3cdab64a153c5d5cc9b343b9891811c74a60c5b621
 ### `solr:10` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:4ea5fe289ea9c835f67f07245bbf1fa6b8ebe33ed535c02fb1633225e9e5a085
+$ docker pull solr@sha256:2c7a0540476a77af31b8d53b97051a92b5c57e365137e2851d7b151cf557c4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **468.2 MB (468188914 bytes)**  
+-	Total Size: **468.2 MB (468176149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5c174d6d961058229c0765561a524a7935cf0a0fc9e7e87e553709e7008857`
+-	Image ID: `sha256:19917e0d3a28bb51b6824850d26798314a2a2a187e78d1eeeec2c15c2446ecf6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -580,69 +580,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DIST=
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:10:45 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -655,37 +655,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9e22de98da54f3405963a6ebeaa0696f9ab3d54d86ce48c3ab188284fe5ebd7`  
-		Last Modified: Wed, 19 Aug 2026 06:19:08 GMT  
-		Size: 360.2 MB (360214904 bytes)  
+	-	`sha256:5dfdfdf20db19f87e4029b42890d96571540ee8ff8011347538a19cf2633762f`  
+		Last Modified: Mon, 24 Aug 2026 16:49:01 GMT  
+		Size: 360.2 MB (360214999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bda01e7672dad056e973b66ac7db3219dd27c6dbd14425e3689042d6007c3632`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:809042f587c8dfe9ed7dc83f9a3cda1abf3c084639118d3c3dc348dc4e4813d7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cb178277ea660a332013d8ed023d229b08b33bd4da1e0c262b1ffe46a0b7d7b`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 207.0 B  
+	-	`sha256:76c0324580e66b55d86ed8afb00f48dadb3a99f14a543f4de57f850166159143`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b907c2597eca0d0edfbdd50cec715e9af11a56246485862dee47be8a239f8dc3`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 10.3 KB (10304 bytes)  
+	-	`sha256:53ab320ad588fb2f44e5ea8c5d24cda597fd5c6c86d2bb7d8d039bac99935cbd`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 10.3 KB (10302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e599c43071092f9df1db0c71bc6e254a32bdb2d38dd8e991b63b0976b3932e2a`  
-		Last Modified: Wed, 19 Aug 2026 06:18:15 GMT  
-		Size: 3.8 MB (3755104 bytes)  
+	-	`sha256:046302bdbcfd32d2212b55797cf4f6e82b5aaf3ccb2d7b2b4b5541ca09f486f7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:07 GMT  
+		Size: 3.8 MB (3755666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -695,24 +695,24 @@ CMD ["solr-foreground"]
 ### `solr:10` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:1b9e5411114a44aa6dad4626db60274586985ce45eb2821522ae3dfaa0808b29
+$ docker pull solr@sha256:c9b0184524840b9b22945126ca313ce2ab238fa0e67edc3c760c169e18772250
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7469df317dfb881be1d9b7952dfcc53375853d0538b17ee36bfde5714851506`
+-	Image ID: `sha256:1a61881f0135e91e74c1013f6df08164479a4f7f6f3468bf5e515148155e1dc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f91cab94b90d53f9498855da95e0404f5c394a5afea65bdf98b0405b6c3f1bc`  
-		Last Modified: Wed, 19 Aug 2026 06:18:13 GMT  
+	-	`sha256:f875f1b0268c6a28fdfaf7d0f6e09479d59c2a4f17eeac678cfe83fd0c4e5528`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 3.7 MB (3721451 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20072a77d88816871774f2448d1d81b0d49cfdef372d2307260f56ea3119c47e`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
+	-	`sha256:5fb2cd4420b7918e7ad2d5f506a851f2805074c7b673333d6e3062a04e54daa9`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 33.7 KB (33682 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -888,7 +888,7 @@ $ docker pull solr@sha256:43a8d1574828a0b8df37e1f8fc4c105fa8b78bb6415089051b9455
 ## `solr:10-slim`
 
 ```console
-$ docker pull solr@sha256:c80f64e2c6db199ec8695d62bfd0f5ca326a319fb84ac5d278b223326b3f7db4
+$ docker pull solr@sha256:708361fdcf4da4c218e5ddd8aeca1289ebd1d035df716cf63551d37a298e80b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1414,13 +1414,13 @@ $ docker pull solr@sha256:b887ea1178da47a7121cb91d2f0ccd2140538bde011d250dc40ad1
 ### `solr:10-slim` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:968b9eaee10a70ee24bd94042753802dd7c7176810c2995a81dabd78aa4114a3
+$ docker pull solr@sha256:501166c36cf7b031697545d8990760ff1ede12115d9ea8df1f9d50e48cb5b2f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.0 MB (187034157 bytes)**  
+-	Total Size: **187.0 MB (187021454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:874ddbfdcb92807dfdb12cf1888bcf094083fe1622bb6de8b8524e9ac4eeebb2`
+-	Image ID: `sha256:de8b29956bc0f6c776c202827fc4870fd0325bd7536adfbe6bb6b4fab46b6a61`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -1444,69 +1444,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DIST=-slim
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:03 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -1519,37 +1519,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76824198fde9c806343785bcc6bdec4fbfb2a701de635213c1c12d438bb8e9e4`  
-		Last Modified: Wed, 19 Aug 2026 06:25:08 GMT  
-		Size: 79.1 MB (79060183 bytes)  
+	-	`sha256:6a0a5733289f9e804ec0308e3ac6813bf0a39c15a81648032ee40aa1bbba9c42`  
+		Last Modified: Mon, 24 Aug 2026 16:54:45 GMT  
+		Size: 79.1 MB (79060284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:961f38b902ed1f96e11d7939638757547d05a4bfe9cca52bd9840c04b6a548f7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:8d54d1ef6ff456ef8099da2ca0a3cc0dd38e0d123365ac0775cb108a3a5133c2`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d928dc17e00ffd3d580db2db7196db14dd48eb1ee97dc7b64ed8f58cd0bb261`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:b7c9e542531073405117767b2fc73921e71a784f6198c1b794565b5c4ab47024`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3bb8c6d8dfcafbe5e04cb114c7dfd819b87a38d327478bc99c5ca36f471d3de`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 10.3 KB (10308 bytes)  
+	-	`sha256:8de9a69f0198fe103702391899ed4b8e89a7d2d73bc605341cdb02b1d6f4da7f`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
+		Size: 10.3 KB (10312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d05a8fb034a86fc768a1e82841d77910ddec6aa82551b3d4f64b0f007fce679f`  
-		Last Modified: Wed, 19 Aug 2026 06:24:58 GMT  
-		Size: 3.8 MB (3755056 bytes)  
+	-	`sha256:ca8418a46458082e7db2534db8d862085a826b9e62834090ca67e7f35e52e567`  
+		Last Modified: Mon, 24 Aug 2026 16:54:35 GMT  
+		Size: 3.8 MB (3755668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1559,25 +1559,25 @@ CMD ["solr-foreground"]
 ### `solr:10-slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:77df26df7c74a48efbc088462e55f191a49850347b1ec6806cabcfc8e2fead4f
+$ docker pull solr@sha256:6cabb10ee083036cef859ad8359136e7db1e0776e8514523dee8e9280157c02c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3457483 bytes)**  
+-	Total Size: **3.5 MB (3457485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7f1dcd84450a5f9be0c09c96bd236c2ce221561025c093a84dc058afff3ed3e`
+-	Image ID: `sha256:61f4b1269732dfbc074b2d13aa84f5aa8dba1d89465271fb79422c797c4dee56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:999991ccb47be36a2e019185d65d624fe0006c790f8197376bdd876973827ca3`  
-		Last Modified: Wed, 19 Aug 2026 06:24:56 GMT  
+	-	`sha256:5e334129308d137ec88c77c73009107de99e14ac0f7045f5eb185c74dfe984da`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 3.4 MB (3423744 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:624845b6b9d2afa74ef424b107b860f23c7ba7342d7136191e4a30b0340861a7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 33.7 KB (33739 bytes)  
+	-	`sha256:12d4d8bcc7b168e6ba038c2d133d410cbf2f201ba1861813629f01fce703c35a`  
+		Last Modified: Mon, 24 Aug 2026 16:54:32 GMT  
+		Size: 33.7 KB (33741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `solr:10-slim` - linux; s390x
@@ -1752,7 +1752,7 @@ $ docker pull solr@sha256:36aac73b195ad676b064ba351b5ecada73ee151257fd398406f474
 ## `solr:10.0`
 
 ```console
-$ docker pull solr@sha256:4c8d9331bc0271afd9e79ba891a6490f2b8aca31b3ca0c66a2b0c94f84f89399
+$ docker pull solr@sha256:c2a983cd9a5759c3b802b7b47f48b5cfae2b34d63a9444d62730fdbdb1b5308b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2278,13 +2278,13 @@ $ docker pull solr@sha256:8ca657e97f3a3cdab64a153c5d5cc9b343b9891811c74a60c5b621
 ### `solr:10.0` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:4ea5fe289ea9c835f67f07245bbf1fa6b8ebe33ed535c02fb1633225e9e5a085
+$ docker pull solr@sha256:2c7a0540476a77af31b8d53b97051a92b5c57e365137e2851d7b151cf557c4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **468.2 MB (468188914 bytes)**  
+-	Total Size: **468.2 MB (468176149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5c174d6d961058229c0765561a524a7935cf0a0fc9e7e87e553709e7008857`
+-	Image ID: `sha256:19917e0d3a28bb51b6824850d26798314a2a2a187e78d1eeeec2c15c2446ecf6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -2308,69 +2308,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DIST=
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:10:45 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -2383,37 +2383,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9e22de98da54f3405963a6ebeaa0696f9ab3d54d86ce48c3ab188284fe5ebd7`  
-		Last Modified: Wed, 19 Aug 2026 06:19:08 GMT  
-		Size: 360.2 MB (360214904 bytes)  
+	-	`sha256:5dfdfdf20db19f87e4029b42890d96571540ee8ff8011347538a19cf2633762f`  
+		Last Modified: Mon, 24 Aug 2026 16:49:01 GMT  
+		Size: 360.2 MB (360214999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bda01e7672dad056e973b66ac7db3219dd27c6dbd14425e3689042d6007c3632`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:809042f587c8dfe9ed7dc83f9a3cda1abf3c084639118d3c3dc348dc4e4813d7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cb178277ea660a332013d8ed023d229b08b33bd4da1e0c262b1ffe46a0b7d7b`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 207.0 B  
+	-	`sha256:76c0324580e66b55d86ed8afb00f48dadb3a99f14a543f4de57f850166159143`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b907c2597eca0d0edfbdd50cec715e9af11a56246485862dee47be8a239f8dc3`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 10.3 KB (10304 bytes)  
+	-	`sha256:53ab320ad588fb2f44e5ea8c5d24cda597fd5c6c86d2bb7d8d039bac99935cbd`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 10.3 KB (10302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e599c43071092f9df1db0c71bc6e254a32bdb2d38dd8e991b63b0976b3932e2a`  
-		Last Modified: Wed, 19 Aug 2026 06:18:15 GMT  
-		Size: 3.8 MB (3755104 bytes)  
+	-	`sha256:046302bdbcfd32d2212b55797cf4f6e82b5aaf3ccb2d7b2b4b5541ca09f486f7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:07 GMT  
+		Size: 3.8 MB (3755666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2423,24 +2423,24 @@ CMD ["solr-foreground"]
 ### `solr:10.0` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:1b9e5411114a44aa6dad4626db60274586985ce45eb2821522ae3dfaa0808b29
+$ docker pull solr@sha256:c9b0184524840b9b22945126ca313ce2ab238fa0e67edc3c760c169e18772250
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7469df317dfb881be1d9b7952dfcc53375853d0538b17ee36bfde5714851506`
+-	Image ID: `sha256:1a61881f0135e91e74c1013f6df08164479a4f7f6f3468bf5e515148155e1dc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f91cab94b90d53f9498855da95e0404f5c394a5afea65bdf98b0405b6c3f1bc`  
-		Last Modified: Wed, 19 Aug 2026 06:18:13 GMT  
+	-	`sha256:f875f1b0268c6a28fdfaf7d0f6e09479d59c2a4f17eeac678cfe83fd0c4e5528`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 3.7 MB (3721451 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20072a77d88816871774f2448d1d81b0d49cfdef372d2307260f56ea3119c47e`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
+	-	`sha256:5fb2cd4420b7918e7ad2d5f506a851f2805074c7b673333d6e3062a04e54daa9`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 33.7 KB (33682 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2616,7 +2616,7 @@ $ docker pull solr@sha256:43a8d1574828a0b8df37e1f8fc4c105fa8b78bb6415089051b9455
 ## `solr:10.0-slim`
 
 ```console
-$ docker pull solr@sha256:c80f64e2c6db199ec8695d62bfd0f5ca326a319fb84ac5d278b223326b3f7db4
+$ docker pull solr@sha256:708361fdcf4da4c218e5ddd8aeca1289ebd1d035df716cf63551d37a298e80b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3142,13 +3142,13 @@ $ docker pull solr@sha256:b887ea1178da47a7121cb91d2f0ccd2140538bde011d250dc40ad1
 ### `solr:10.0-slim` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:968b9eaee10a70ee24bd94042753802dd7c7176810c2995a81dabd78aa4114a3
+$ docker pull solr@sha256:501166c36cf7b031697545d8990760ff1ede12115d9ea8df1f9d50e48cb5b2f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.0 MB (187034157 bytes)**  
+-	Total Size: **187.0 MB (187021454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:874ddbfdcb92807dfdb12cf1888bcf094083fe1622bb6de8b8524e9ac4eeebb2`
+-	Image ID: `sha256:de8b29956bc0f6c776c202827fc4870fd0325bd7536adfbe6bb6b4fab46b6a61`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -3172,69 +3172,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DIST=-slim
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:03 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -3247,37 +3247,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76824198fde9c806343785bcc6bdec4fbfb2a701de635213c1c12d438bb8e9e4`  
-		Last Modified: Wed, 19 Aug 2026 06:25:08 GMT  
-		Size: 79.1 MB (79060183 bytes)  
+	-	`sha256:6a0a5733289f9e804ec0308e3ac6813bf0a39c15a81648032ee40aa1bbba9c42`  
+		Last Modified: Mon, 24 Aug 2026 16:54:45 GMT  
+		Size: 79.1 MB (79060284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:961f38b902ed1f96e11d7939638757547d05a4bfe9cca52bd9840c04b6a548f7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:8d54d1ef6ff456ef8099da2ca0a3cc0dd38e0d123365ac0775cb108a3a5133c2`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d928dc17e00ffd3d580db2db7196db14dd48eb1ee97dc7b64ed8f58cd0bb261`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:b7c9e542531073405117767b2fc73921e71a784f6198c1b794565b5c4ab47024`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3bb8c6d8dfcafbe5e04cb114c7dfd819b87a38d327478bc99c5ca36f471d3de`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 10.3 KB (10308 bytes)  
+	-	`sha256:8de9a69f0198fe103702391899ed4b8e89a7d2d73bc605341cdb02b1d6f4da7f`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
+		Size: 10.3 KB (10312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d05a8fb034a86fc768a1e82841d77910ddec6aa82551b3d4f64b0f007fce679f`  
-		Last Modified: Wed, 19 Aug 2026 06:24:58 GMT  
-		Size: 3.8 MB (3755056 bytes)  
+	-	`sha256:ca8418a46458082e7db2534db8d862085a826b9e62834090ca67e7f35e52e567`  
+		Last Modified: Mon, 24 Aug 2026 16:54:35 GMT  
+		Size: 3.8 MB (3755668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -3287,25 +3287,25 @@ CMD ["solr-foreground"]
 ### `solr:10.0-slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:77df26df7c74a48efbc088462e55f191a49850347b1ec6806cabcfc8e2fead4f
+$ docker pull solr@sha256:6cabb10ee083036cef859ad8359136e7db1e0776e8514523dee8e9280157c02c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3457483 bytes)**  
+-	Total Size: **3.5 MB (3457485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7f1dcd84450a5f9be0c09c96bd236c2ce221561025c093a84dc058afff3ed3e`
+-	Image ID: `sha256:61f4b1269732dfbc074b2d13aa84f5aa8dba1d89465271fb79422c797c4dee56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:999991ccb47be36a2e019185d65d624fe0006c790f8197376bdd876973827ca3`  
-		Last Modified: Wed, 19 Aug 2026 06:24:56 GMT  
+	-	`sha256:5e334129308d137ec88c77c73009107de99e14ac0f7045f5eb185c74dfe984da`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 3.4 MB (3423744 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:624845b6b9d2afa74ef424b107b860f23c7ba7342d7136191e4a30b0340861a7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 33.7 KB (33739 bytes)  
+	-	`sha256:12d4d8bcc7b168e6ba038c2d133d410cbf2f201ba1861813629f01fce703c35a`  
+		Last Modified: Mon, 24 Aug 2026 16:54:32 GMT  
+		Size: 33.7 KB (33741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `solr:10.0-slim` - linux; s390x
@@ -3480,7 +3480,7 @@ $ docker pull solr@sha256:36aac73b195ad676b064ba351b5ecada73ee151257fd398406f474
 ## `solr:10.0.0`
 
 ```console
-$ docker pull solr@sha256:4c8d9331bc0271afd9e79ba891a6490f2b8aca31b3ca0c66a2b0c94f84f89399
+$ docker pull solr@sha256:c2a983cd9a5759c3b802b7b47f48b5cfae2b34d63a9444d62730fdbdb1b5308b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4006,13 +4006,13 @@ $ docker pull solr@sha256:8ca657e97f3a3cdab64a153c5d5cc9b343b9891811c74a60c5b621
 ### `solr:10.0.0` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:4ea5fe289ea9c835f67f07245bbf1fa6b8ebe33ed535c02fb1633225e9e5a085
+$ docker pull solr@sha256:2c7a0540476a77af31b8d53b97051a92b5c57e365137e2851d7b151cf557c4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **468.2 MB (468188914 bytes)**  
+-	Total Size: **468.2 MB (468176149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5c174d6d961058229c0765561a524a7935cf0a0fc9e7e87e553709e7008857`
+-	Image ID: `sha256:19917e0d3a28bb51b6824850d26798314a2a2a187e78d1eeeec2c15c2446ecf6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -4036,69 +4036,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DIST=
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:10:45 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -4111,37 +4111,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9e22de98da54f3405963a6ebeaa0696f9ab3d54d86ce48c3ab188284fe5ebd7`  
-		Last Modified: Wed, 19 Aug 2026 06:19:08 GMT  
-		Size: 360.2 MB (360214904 bytes)  
+	-	`sha256:5dfdfdf20db19f87e4029b42890d96571540ee8ff8011347538a19cf2633762f`  
+		Last Modified: Mon, 24 Aug 2026 16:49:01 GMT  
+		Size: 360.2 MB (360214999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bda01e7672dad056e973b66ac7db3219dd27c6dbd14425e3689042d6007c3632`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:809042f587c8dfe9ed7dc83f9a3cda1abf3c084639118d3c3dc348dc4e4813d7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cb178277ea660a332013d8ed023d229b08b33bd4da1e0c262b1ffe46a0b7d7b`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 207.0 B  
+	-	`sha256:76c0324580e66b55d86ed8afb00f48dadb3a99f14a543f4de57f850166159143`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b907c2597eca0d0edfbdd50cec715e9af11a56246485862dee47be8a239f8dc3`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 10.3 KB (10304 bytes)  
+	-	`sha256:53ab320ad588fb2f44e5ea8c5d24cda597fd5c6c86d2bb7d8d039bac99935cbd`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 10.3 KB (10302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e599c43071092f9df1db0c71bc6e254a32bdb2d38dd8e991b63b0976b3932e2a`  
-		Last Modified: Wed, 19 Aug 2026 06:18:15 GMT  
-		Size: 3.8 MB (3755104 bytes)  
+	-	`sha256:046302bdbcfd32d2212b55797cf4f6e82b5aaf3ccb2d7b2b4b5541ca09f486f7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:07 GMT  
+		Size: 3.8 MB (3755666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -4151,24 +4151,24 @@ CMD ["solr-foreground"]
 ### `solr:10.0.0` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:1b9e5411114a44aa6dad4626db60274586985ce45eb2821522ae3dfaa0808b29
+$ docker pull solr@sha256:c9b0184524840b9b22945126ca313ce2ab238fa0e67edc3c760c169e18772250
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7469df317dfb881be1d9b7952dfcc53375853d0538b17ee36bfde5714851506`
+-	Image ID: `sha256:1a61881f0135e91e74c1013f6df08164479a4f7f6f3468bf5e515148155e1dc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f91cab94b90d53f9498855da95e0404f5c394a5afea65bdf98b0405b6c3f1bc`  
-		Last Modified: Wed, 19 Aug 2026 06:18:13 GMT  
+	-	`sha256:f875f1b0268c6a28fdfaf7d0f6e09479d59c2a4f17eeac678cfe83fd0c4e5528`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 3.7 MB (3721451 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20072a77d88816871774f2448d1d81b0d49cfdef372d2307260f56ea3119c47e`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
+	-	`sha256:5fb2cd4420b7918e7ad2d5f506a851f2805074c7b673333d6e3062a04e54daa9`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 33.7 KB (33682 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4344,7 +4344,7 @@ $ docker pull solr@sha256:43a8d1574828a0b8df37e1f8fc4c105fa8b78bb6415089051b9455
 ## `solr:10.0.0-slim`
 
 ```console
-$ docker pull solr@sha256:c80f64e2c6db199ec8695d62bfd0f5ca326a319fb84ac5d278b223326b3f7db4
+$ docker pull solr@sha256:708361fdcf4da4c218e5ddd8aeca1289ebd1d035df716cf63551d37a298e80b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4870,13 +4870,13 @@ $ docker pull solr@sha256:b887ea1178da47a7121cb91d2f0ccd2140538bde011d250dc40ad1
 ### `solr:10.0.0-slim` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:968b9eaee10a70ee24bd94042753802dd7c7176810c2995a81dabd78aa4114a3
+$ docker pull solr@sha256:501166c36cf7b031697545d8990760ff1ede12115d9ea8df1f9d50e48cb5b2f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.0 MB (187034157 bytes)**  
+-	Total Size: **187.0 MB (187021454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:874ddbfdcb92807dfdb12cf1888bcf094083fe1622bb6de8b8524e9ac4eeebb2`
+-	Image ID: `sha256:de8b29956bc0f6c776c202827fc4870fd0325bd7536adfbe6bb6b4fab46b6a61`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -4900,69 +4900,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DIST=-slim
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:03 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -4975,37 +4975,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76824198fde9c806343785bcc6bdec4fbfb2a701de635213c1c12d438bb8e9e4`  
-		Last Modified: Wed, 19 Aug 2026 06:25:08 GMT  
-		Size: 79.1 MB (79060183 bytes)  
+	-	`sha256:6a0a5733289f9e804ec0308e3ac6813bf0a39c15a81648032ee40aa1bbba9c42`  
+		Last Modified: Mon, 24 Aug 2026 16:54:45 GMT  
+		Size: 79.1 MB (79060284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:961f38b902ed1f96e11d7939638757547d05a4bfe9cca52bd9840c04b6a548f7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:8d54d1ef6ff456ef8099da2ca0a3cc0dd38e0d123365ac0775cb108a3a5133c2`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d928dc17e00ffd3d580db2db7196db14dd48eb1ee97dc7b64ed8f58cd0bb261`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:b7c9e542531073405117767b2fc73921e71a784f6198c1b794565b5c4ab47024`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3bb8c6d8dfcafbe5e04cb114c7dfd819b87a38d327478bc99c5ca36f471d3de`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 10.3 KB (10308 bytes)  
+	-	`sha256:8de9a69f0198fe103702391899ed4b8e89a7d2d73bc605341cdb02b1d6f4da7f`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
+		Size: 10.3 KB (10312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d05a8fb034a86fc768a1e82841d77910ddec6aa82551b3d4f64b0f007fce679f`  
-		Last Modified: Wed, 19 Aug 2026 06:24:58 GMT  
-		Size: 3.8 MB (3755056 bytes)  
+	-	`sha256:ca8418a46458082e7db2534db8d862085a826b9e62834090ca67e7f35e52e567`  
+		Last Modified: Mon, 24 Aug 2026 16:54:35 GMT  
+		Size: 3.8 MB (3755668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -5015,25 +5015,25 @@ CMD ["solr-foreground"]
 ### `solr:10.0.0-slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:77df26df7c74a48efbc088462e55f191a49850347b1ec6806cabcfc8e2fead4f
+$ docker pull solr@sha256:6cabb10ee083036cef859ad8359136e7db1e0776e8514523dee8e9280157c02c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3457483 bytes)**  
+-	Total Size: **3.5 MB (3457485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7f1dcd84450a5f9be0c09c96bd236c2ce221561025c093a84dc058afff3ed3e`
+-	Image ID: `sha256:61f4b1269732dfbc074b2d13aa84f5aa8dba1d89465271fb79422c797c4dee56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:999991ccb47be36a2e019185d65d624fe0006c790f8197376bdd876973827ca3`  
-		Last Modified: Wed, 19 Aug 2026 06:24:56 GMT  
+	-	`sha256:5e334129308d137ec88c77c73009107de99e14ac0f7045f5eb185c74dfe984da`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 3.4 MB (3423744 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:624845b6b9d2afa74ef424b107b860f23c7ba7342d7136191e4a30b0340861a7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 33.7 KB (33739 bytes)  
+	-	`sha256:12d4d8bcc7b168e6ba038c2d133d410cbf2f201ba1861813629f01fce703c35a`  
+		Last Modified: Mon, 24 Aug 2026 16:54:32 GMT  
+		Size: 33.7 KB (33741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `solr:10.0.0-slim` - linux; s390x
@@ -12138,7 +12138,7 @@ $ docker pull solr@sha256:58b433879ae72c2e02ed620334621319d5b6689c31a72f06ca5afe
 ## `solr:latest`
 
 ```console
-$ docker pull solr@sha256:4c8d9331bc0271afd9e79ba891a6490f2b8aca31b3ca0c66a2b0c94f84f89399
+$ docker pull solr@sha256:c2a983cd9a5759c3b802b7b47f48b5cfae2b34d63a9444d62730fdbdb1b5308b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12664,13 +12664,13 @@ $ docker pull solr@sha256:8ca657e97f3a3cdab64a153c5d5cc9b343b9891811c74a60c5b621
 ### `solr:latest` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:4ea5fe289ea9c835f67f07245bbf1fa6b8ebe33ed535c02fb1633225e9e5a085
+$ docker pull solr@sha256:2c7a0540476a77af31b8d53b97051a92b5c57e365137e2851d7b151cf557c4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **468.2 MB (468188914 bytes)**  
+-	Total Size: **468.2 MB (468176149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5c174d6d961058229c0765561a524a7935cf0a0fc9e7e87e553709e7008857`
+-	Image ID: `sha256:19917e0d3a28bb51b6824850d26798314a2a2a187e78d1eeeec2c15c2446ecf6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -12694,69 +12694,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DIST=
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:10:43 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:44 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:10:44 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:10:45 GMT
+# Mon, 24 Aug 2026 16:40:45 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST= SOLR_SHA512=825ab4e92a839802d9f5d570600b622881ddfe4f700cab569afb7d8220590a59d11088f4e10d4dcf9395073c35d73a420cc275a9ed7b18e2f84178bfcb49ae82 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:11:33 GMT
+# Mon, 24 Aug 2026 16:41:33 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -12769,37 +12769,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9e22de98da54f3405963a6ebeaa0696f9ab3d54d86ce48c3ab188284fe5ebd7`  
-		Last Modified: Wed, 19 Aug 2026 06:19:08 GMT  
-		Size: 360.2 MB (360214904 bytes)  
+	-	`sha256:5dfdfdf20db19f87e4029b42890d96571540ee8ff8011347538a19cf2633762f`  
+		Last Modified: Mon, 24 Aug 2026 16:49:01 GMT  
+		Size: 360.2 MB (360214999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bda01e7672dad056e973b66ac7db3219dd27c6dbd14425e3689042d6007c3632`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:809042f587c8dfe9ed7dc83f9a3cda1abf3c084639118d3c3dc348dc4e4813d7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cb178277ea660a332013d8ed023d229b08b33bd4da1e0c262b1ffe46a0b7d7b`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 207.0 B  
+	-	`sha256:76c0324580e66b55d86ed8afb00f48dadb3a99f14a543f4de57f850166159143`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b907c2597eca0d0edfbdd50cec715e9af11a56246485862dee47be8a239f8dc3`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
-		Size: 10.3 KB (10304 bytes)  
+	-	`sha256:53ab320ad588fb2f44e5ea8c5d24cda597fd5c6c86d2bb7d8d039bac99935cbd`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
+		Size: 10.3 KB (10302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e599c43071092f9df1db0c71bc6e254a32bdb2d38dd8e991b63b0976b3932e2a`  
-		Last Modified: Wed, 19 Aug 2026 06:18:15 GMT  
-		Size: 3.8 MB (3755104 bytes)  
+	-	`sha256:046302bdbcfd32d2212b55797cf4f6e82b5aaf3ccb2d7b2b4b5541ca09f486f7`  
+		Last Modified: Mon, 24 Aug 2026 16:48:07 GMT  
+		Size: 3.8 MB (3755666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -12809,24 +12809,24 @@ CMD ["solr-foreground"]
 ### `solr:latest` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:1b9e5411114a44aa6dad4626db60274586985ce45eb2821522ae3dfaa0808b29
+$ docker pull solr@sha256:c9b0184524840b9b22945126ca313ce2ab238fa0e67edc3c760c169e18772250
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3755133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7469df317dfb881be1d9b7952dfcc53375853d0538b17ee36bfde5714851506`
+-	Image ID: `sha256:1a61881f0135e91e74c1013f6df08164479a4f7f6f3468bf5e515148155e1dc3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3f91cab94b90d53f9498855da95e0404f5c394a5afea65bdf98b0405b6c3f1bc`  
-		Last Modified: Wed, 19 Aug 2026 06:18:13 GMT  
+	-	`sha256:f875f1b0268c6a28fdfaf7d0f6e09479d59c2a4f17eeac678cfe83fd0c4e5528`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 3.7 MB (3721451 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20072a77d88816871774f2448d1d81b0d49cfdef372d2307260f56ea3119c47e`  
-		Last Modified: Wed, 19 Aug 2026 06:18:12 GMT  
+	-	`sha256:5fb2cd4420b7918e7ad2d5f506a851f2805074c7b673333d6e3062a04e54daa9`  
+		Last Modified: Mon, 24 Aug 2026 16:48:05 GMT  
 		Size: 33.7 KB (33682 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13002,7 +13002,7 @@ $ docker pull solr@sha256:43a8d1574828a0b8df37e1f8fc4c105fa8b78bb6415089051b9455
 ## `solr:slim`
 
 ```console
-$ docker pull solr@sha256:c80f64e2c6db199ec8695d62bfd0f5ca326a319fb84ac5d278b223326b3f7db4
+$ docker pull solr@sha256:708361fdcf4da4c218e5ddd8aeca1289ebd1d035df716cf63551d37a298e80b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13528,13 +13528,13 @@ $ docker pull solr@sha256:b887ea1178da47a7121cb91d2f0ccd2140538bde011d250dc40ad1
 ### `solr:slim` - linux; riscv64
 
 ```console
-$ docker pull solr@sha256:968b9eaee10a70ee24bd94042753802dd7c7176810c2995a81dabd78aa4114a3
+$ docker pull solr@sha256:501166c36cf7b031697545d8990760ff1ede12115d9ea8df1f9d50e48cb5b2f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.0 MB (187034157 bytes)**  
+-	Total Size: **187.0 MB (187021454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:874ddbfdcb92807dfdb12cf1888bcf094083fe1622bb6de8b8524e9ac4eeebb2`
+-	Image ID: `sha256:de8b29956bc0f6c776c202827fc4870fd0325bd7536adfbe6bb6b4fab46b6a61`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -13558,69 +13558,69 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 19 Aug 2026 00:47:33 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 19 Aug 2026 00:47:33 GMT
-ENV JAVA_VERSION=jdk-25.0.3+9
-# Wed, 19 Aug 2026 00:49:38 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='487ad434d8b121ae3902d5ad9cb830cd8e1f75fefad6e2ba80f89d60e3db95d7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_linux_hotspot_25.0.3_9.tar.gz';          ;;        arm64)          ESUM='d12d5b19ff7f6c4a99fd4f9eecede2c96e64df7d1f41cc84f2e9c9b38408600b';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.3_9.tar.gz';          ;;        ppc64el)          ESUM='82daf66b73505d3974d831bd244acbb1123a340b7752ced449dcdca69ff3a780';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.3_9.tar.gz';          ;;        riscv64)          ESUM='8325460857162b85050622962cee64cbc441ca9baf07f93a7535fd3f9962ca33';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.3_9.tar.gz';          ;;        s390x)          ESUM='ee513969bef35f10afb7d06840d9a421138a3d30c062cde3dda8fe780dc451a2';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_s390x_linux_hotspot_25.0.3_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+ENV JAVA_VERSION=jdk-25.0.4+7
+# Sat, 22 Aug 2026 14:49:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='7c4235dc156e85d4e8b7b12075d7d72265fa49b73af2d0453d118a4786176476';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='ee3e62f50e2bdd5b65f9f8937b33d862846d0245bc1be0dd8e3a99ea10fce32a';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='7698a64e995bf41cb2620bea225b6383e66a8b76a0b97ea04db89e300c470ed8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sat, 22 Aug 2026 14:49:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 19 Aug 2026 00:49:39 GMT
+# Sat, 22 Aug 2026 14:49:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_VERSION=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DIST=-slim
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ARG SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   apt-get update;   apt-get -y --no-install-recommends install wget gpg gnupg dirmngr;   rm -rf /var/lib/apt/lists/*;   export SOLR_BINARY="solr-$SOLR_VERSION$SOLR_DIST.tgz";   MAX_REDIRECTS=3;   case "${SOLR_DOWNLOAD_SERVER}" in     (*"apache.org"*);;     (*)       MAX_REDIRECTS=4 &&       SKIP_GPG_CHECK=true;;   esac;   export DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/$SOLR_BINARY";   echo "downloading $DOWNLOAD_URL";   if ! wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$DOWNLOAD_URL" -O "/opt/$SOLR_BINARY"; then rm -f "/opt/$SOLR_BINARY"; fi;   if [ ! -f "/opt/$SOLR_BINARY" ]; then echo "failed download attempt for $SOLR_BINARY"; exit 1; fi;   echo "$SOLR_SHA512 */opt/$SOLR_BINARY" | sha512sum -c -;   if [ -z "$SKIP_GPG_CHECK" ]; then     export GNUPGHOME="/tmp/gnupg_home";     mkdir -p "$GNUPGHOME";     chmod 700 "$GNUPGHOME";     echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";     if [ -n "$SOLR_KEYS" ]; then       wget -nv "https://downloads.apache.org/solr/KEYS" -O- |         gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';       release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";       rm -rf "$GNUPGHOME"/*;       echo "${release_keys}" | gpg --batch --import;     fi;     echo "downloading $DOWNLOAD_URL.asc";     wget -nv "$DOWNLOAD_URL.asc" -O "/opt/$SOLR_BINARY.asc";     (>&2 ls -l "/opt/$SOLR_BINARY" "/opt/$SOLR_BINARY.asc");     gpg --batch --verify "/opt/$SOLR_BINARY.asc" "/opt/$SOLR_BINARY";     { command -v gpgconf; gpgconf --kill all || :; };     rm -r "$GNUPGHOME";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --preserve-permissions --file "/opt/$SOLR_BINARY";   rm "/opt/$SOLR_BINARY"*;   apt-get -y remove gpg dirmngr && apt-get -y autoremove; # buildkit
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.description=Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations.
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.version=10.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:01 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/cross-dc-manager/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_HOST_BIND=0.0.0.0 SOLR_ZOOKEEPER_EMBEDDED_HOST=0.0.0.0
-# Wed, 19 Aug 2026 06:21:16 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER" # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:02 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile; # buildkit
-# Wed, 19 Aug 2026 06:21:17 GMT
+# Mon, 24 Aug 2026 16:51:03 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 # ARGS: SOLR_VERSION=10.0.0 SOLR_DIST=-slim SOLR_SHA512=18817965956567405f5788f391ac94b88777ecb2ebb0ee11ef88e6bd117508461b735f926cdf2e138b9ffb48c51700c104f3f20722f85d4e5bc8c9f790d16ef1 SOLR_KEYS=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F SOLR_DOWNLOAD_SERVER=https://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr
 RUN set -ex;     apt-get update;     apt-get -y --no-install-recommends install curl acl lsof procps wget netcat-openbsd gosu tini jattach;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 VOLUME [/var/solr]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 EXPOSE map[8983/tcp:{}]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 WORKDIR /opt/solr
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 USER 8983
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 19 Aug 2026 06:22:05 GMT
+# Mon, 24 Aug 2026 16:51:49 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -13633,37 +13633,37 @@ CMD ["solr-foreground"]
 		Last Modified: Wed, 19 Aug 2026 00:52:20 GMT  
 		Size: 11.5 MB (11527891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:592f17b9cfbeab3c98ee4615dc61a438096b15cdedbb092bb7636d54b9c25ac9`  
-		Last Modified: Wed, 19 Aug 2026 00:52:28 GMT  
-		Size: 61.7 MB (61693932 bytes)  
+	-	`sha256:369d41c16e09722007c91c1b678812a9c4ae06f974aff2a14bf6c86653cfc86f`  
+		Last Modified: Sat, 22 Aug 2026 14:52:49 GMT  
+		Size: 61.7 MB (61680330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:041675c3d2b09b22d047f5a873ccc82f860f15653bc34ebee6baca61bcb1c6da`  
-		Last Modified: Wed, 19 Aug 2026 00:52:18 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:579653e0f76202dbe218b7074acc0d5d3ec9940b2346d510ec469cd79f619a96`  
+		Last Modified: Sat, 22 Aug 2026 14:52:39 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76824198fde9c806343785bcc6bdec4fbfb2a701de635213c1c12d438bb8e9e4`  
-		Last Modified: Wed, 19 Aug 2026 06:25:08 GMT  
-		Size: 79.1 MB (79060183 bytes)  
+	-	`sha256:6a0a5733289f9e804ec0308e3ac6813bf0a39c15a81648032ee40aa1bbba9c42`  
+		Last Modified: Mon, 24 Aug 2026 16:54:45 GMT  
+		Size: 79.1 MB (79060284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:961f38b902ed1f96e11d7939638757547d05a4bfe9cca52bd9840c04b6a548f7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:8d54d1ef6ff456ef8099da2ca0a3cc0dd38e0d123365ac0775cb108a3a5133c2`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d928dc17e00ffd3d580db2db7196db14dd48eb1ee97dc7b64ed8f58cd0bb261`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
+	-	`sha256:b7c9e542531073405117767b2fc73921e71a784f6198c1b794565b5c4ab47024`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3bb8c6d8dfcafbe5e04cb114c7dfd819b87a38d327478bc99c5ca36f471d3de`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 10.3 KB (10308 bytes)  
+	-	`sha256:8de9a69f0198fe103702391899ed4b8e89a7d2d73bc605341cdb02b1d6f4da7f`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
+		Size: 10.3 KB (10312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d05a8fb034a86fc768a1e82841d77910ddec6aa82551b3d4f64b0f007fce679f`  
-		Last Modified: Wed, 19 Aug 2026 06:24:58 GMT  
-		Size: 3.8 MB (3755056 bytes)  
+	-	`sha256:ca8418a46458082e7db2534db8d862085a826b9e62834090ca67e7f35e52e567`  
+		Last Modified: Mon, 24 Aug 2026 16:54:35 GMT  
+		Size: 3.8 MB (3755668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -13673,25 +13673,25 @@ CMD ["solr-foreground"]
 ### `solr:slim` - unknown; unknown
 
 ```console
-$ docker pull solr@sha256:77df26df7c74a48efbc088462e55f191a49850347b1ec6806cabcfc8e2fead4f
+$ docker pull solr@sha256:6cabb10ee083036cef859ad8359136e7db1e0776e8514523dee8e9280157c02c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3457483 bytes)**  
+-	Total Size: **3.5 MB (3457485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7f1dcd84450a5f9be0c09c96bd236c2ce221561025c093a84dc058afff3ed3e`
+-	Image ID: `sha256:61f4b1269732dfbc074b2d13aa84f5aa8dba1d89465271fb79422c797c4dee56`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:999991ccb47be36a2e019185d65d624fe0006c790f8197376bdd876973827ca3`  
-		Last Modified: Wed, 19 Aug 2026 06:24:56 GMT  
+	-	`sha256:5e334129308d137ec88c77c73009107de99e14ac0f7045f5eb185c74dfe984da`  
+		Last Modified: Mon, 24 Aug 2026 16:54:33 GMT  
 		Size: 3.4 MB (3423744 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:624845b6b9d2afa74ef424b107b860f23c7ba7342d7136191e4a30b0340861a7`  
-		Last Modified: Wed, 19 Aug 2026 06:24:55 GMT  
-		Size: 33.7 KB (33739 bytes)  
+	-	`sha256:12d4d8bcc7b168e6ba038c2d133d410cbf2f201ba1861813629f01fce703c35a`  
+		Last Modified: Mon, 24 Aug 2026 16:54:32 GMT  
+		Size: 33.7 KB (33741 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `solr:slim` - linux; s390x
