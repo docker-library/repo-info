@@ -1,10 +1,10 @@
-# `percona:psmdb-7.0.39`
+# `percona:psmdb-7.0.40`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f33dc9bcffbcb43dc65ae31dc89815acf3b1078fe7ca6cddcd306b27f47414b2`
-- Created: `2026-08-17T22:37:02.128312144Z`
-- Virtual Size: ~ 921.43 Mb  
+- Image ID: `sha256:96210b8ee9963becb653f47dd38c473c713c346030b09b27c75f2bd3ef95e0c3`
+- Created: `2026-08-21T17:40:14.156504031Z`
+- Virtual Size: ~ 931 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=7.0.39-21`
+  - `PSMDB_VERSION=7.0.40-22`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=7.0.39-21.el9`
+  - `FULL_PERCONA_VERSION=7.0.40-22.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=release`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
@@ -1388,7 +1388,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.9.2-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.10.0-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1400,25 +1400,25 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-7.0.39-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-7.0.40-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-7.0.39-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-7.0.40-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-7.0.39-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-7.0.40-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.15-2.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.16-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
