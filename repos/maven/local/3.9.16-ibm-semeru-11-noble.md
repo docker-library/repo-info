@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:458ac638e46bfafc0b7f09483e9918f1f45d47d1e8962585c4ae1628fc24f170`
-- Created: `2026-08-18T21:25:59.905283212Z`
-- Virtual Size: ~ 586.46 Mb  
+- Image ID: `sha256:55c14946e52c3582a53cc9bccd099157a1c51b88747dc72a6d473ae5b842949d`
+- Created: `2026-08-21T20:38:39.45308896Z`
+- Virtual Size: ~ 587.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -308,13 +308,13 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
