@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:460f44519483b4a98fd64bf1692a186ad4f434cb48726659260771f1629487a8`
-- Created: `2026-06-30T19:16:35.619674236Z`
-- Virtual Size: ~ 338.71 Mb  
+- Image ID: `sha256:99b7769bbde076a4f7f1dba498603791f950ce262fee8f3a985f007b366bed4f`
+- Created: `2026-08-21T19:08:13.812147033Z`
+- Virtual Size: ~ 338.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh","/opt/files/startup.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
   - `BONITA_VERSION=11.1.0`
   - `BRANDING_VERSION=2026.2-u0`
   - `BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f`
@@ -215,16 +215,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -334,16 +334,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.19.0-r0 description:
+curl-8.20.0-r0 description:
 URL retrival utility and library
 
-curl-8.19.0-r0 webpage:
+curl-8.20.0-r0 webpage:
 https://curl.se/
 
-curl-8.19.0-r0 installed size:
+curl-8.20.0-r0 installed size:
 273 KiB
 
-curl-8.19.0-r0 license:
+curl-8.20.0-r0 license:
 curl
 
 ```
@@ -402,16 +402,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
@@ -759,16 +759,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.19.0-r0 description:
+libcurl-8.20.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.19.0-r0 webpage:
+libcurl-8.20.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.19.0-r0 installed size:
-697 KiB
+libcurl-8.20.0-r0 installed size:
+693 KiB
 
-libcurl-8.19.0-r0 license:
+libcurl-8.20.0-r0 license:
 curl
 
 ```
@@ -776,16 +776,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -1218,16 +1218,16 @@ Apache-2.0
 ### `apk` package: `p11-kit`
 
 ```console
-p11-kit-0.25.5-r2 description:
+p11-kit-0.26.2-r0 description:
 Library for loading and sharing PKCS#11 modules
 
-p11-kit-0.25.5-r2 webpage:
+p11-kit-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-0.25.5-r2 installed size:
-1346 KiB
+p11-kit-0.26.2-r0 installed size:
+1549 KiB
 
-p11-kit-0.25.5-r2 license:
+p11-kit-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -1235,16 +1235,16 @@ BSD-3-Clause
 ### `apk` package: `p11-kit-trust`
 
 ```console
-p11-kit-trust-0.25.5-r2 description:
+p11-kit-trust-0.26.2-r0 description:
 System trust module from p11-kit
 
-p11-kit-trust-0.25.5-r2 webpage:
+p11-kit-trust-0.26.2-r0 webpage:
 https://p11-glue.freedesktop.org/
 
-p11-kit-trust-0.25.5-r2 installed size:
-321 KiB
+p11-kit-trust-0.26.2-r0 installed size:
+397 KiB
 
-p11-kit-trust-0.25.5-r2 license:
+p11-kit-trust-0.26.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -1320,16 +1320,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.2-r0 installed size:
-1577 KiB
+sqlite-libs-3.53.4-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.51.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
@@ -1371,16 +1371,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
