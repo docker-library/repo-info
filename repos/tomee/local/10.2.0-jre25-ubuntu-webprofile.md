@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a56f3a9b8417b2271ddef244b1857d42136e358b25c9d8b453486b7dd6e14318`
-- Created: `2026-08-18T20:38:23.795591911Z`
-- Virtual Size: ~ 394.37 Mb  
+- Image ID: `sha256:8d68f11e0ee41f8d926cc2da9bf099eb3dd51313b9d3d5178c3d6c0c56bfd3bb`
+- Created: `2026-08-21T19:06:43.095618188Z`
+- Virtual Size: ~ 394.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.3+9`
+  - `JAVA_VERSION=jdk-25.0.4+7`
   - `TOMEE_VER=10.2.0`
   - `TOMEE_BUILD=webprofile`
 - Labels:
@@ -303,12 +303,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 

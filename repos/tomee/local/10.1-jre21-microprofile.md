@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb4908189e065f1b76000b3a7c8c7a4089c1da95adf5d6acaafe3e076801cafe`
-- Created: `2026-08-18T20:38:57.548358801Z`
-- Virtual Size: ~ 373.19 Mb  
+- Image ID: `sha256:865f586c7eac881b3d0185353d3859dbb18ba905148998f8f1129520be478628`
+- Created: `2026-08-21T19:06:39.242065333Z`
+- Virtual Size: ~ 373.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
   - `TOMEE_VER=10.2.0`
   - `TOMEE_BUILD=microprofile`
 - Labels:
@@ -303,12 +303,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.11`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.12`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.11`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.11`
+- `curl=8.5.0-2ubuntu10.12`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -2144,20 +2144,26 @@ $ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.dsc' util-linux_2.39.3-9ubuntu6.5.dsc 4726 SHA256:206b6fb92d3cb0f6b1a959a6173d81ebf4e0a340564378ac49667a16968578d8
 ```
 
-### `dpkg` source package: `wget=1.21.4-1ubuntu4.4`
+### `dpkg` source package: `wget=1.21.4-1ubuntu4.5`
 
 Binary Packages:
 
-- `wget=1.21.4-1ubuntu4.4`
+- `wget=1.21.4-1ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.21.4-1ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz' wget_1.21.4.orig.tar.gz 5059591 SHA512:7a1539045174f6b97ab6980811c2ac1799edc20db72987b5ba9b1710cffb19669a7736813d15c8da3aa2d4a384246ff946b77ecb0baeb6fd3e12ae591f1bf6a3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4.orig.tar.gz.asc' wget_1.21.4.orig.tar.gz.asc 854 SHA512:72603493c2d799dca08700175a2010d8736fd6d3cb9bea3987db8814e9f133ab0fbd1477892115f7fbbd1a7d4d416ec370bdbff6dbe8f00d1eea84f0c4f8d84b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.debian.tar.xz' wget_1.21.4-1ubuntu4.5.debian.tar.xz 70064 SHA512:23cbb85cdbe090751c91ae3e13e3a705c7f505c9900c08c8c6c7bbdd97ec08d1ceea27d8ed60db48c865a878b81492d1ad1a515e57c70e9a7b41ed54514b1db9
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.4-1ubuntu4.5.dsc' wget_1.21.4-1ubuntu4.5.dsc 2288 SHA512:088bf43b10b913453d0733e2cd8e6f4a516e7961271ea804726c5d054e70447100017ca3de0b9a938f5065fecbb8e11f124fac4b2b4ac63a4affe960def20dce
+```
 
 ### `dpkg` source package: `xxhash=0.8.2-2build1`
 
