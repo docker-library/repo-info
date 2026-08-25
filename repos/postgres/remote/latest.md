@@ -1,7 +1,7 @@
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:06cad38a5d9f5d24b4d83d86def30795d5e4b757fedbf5281172b576dedcd941
+$ docker pull postgres@sha256:1ffbf339f5b8e78c394cfaad3711ef6dbc4e14546bf70428e0bb30cba66e8e4d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,143 +26,143 @@ $ docker pull postgres@sha256:06cad38a5d9f5d24b4d83d86def30795d5e4b757fedbf52811
 ### `postgres:latest` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:cd78ca58eb75f929698e117a589488ccb2bd45107247fe02400b50ff6c418324
+$ docker pull postgres@sha256:7341002d2b8c7c5bdd7542a671a95b36196c0b5b888daf454ae4fc33ba5346d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.4 MB (162421246 bytes)**  
+-	Total Size: **162.4 MB (162433831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d6ed4b5a1f44557313cab42a8951c53d1b86ccc899266bcee2ee1ee84076c14`
+-	Image ID: `sha256:a6638641707cdf047e5d5c2781f437e2e809323cab22c70b280be8389fbb7878`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1785715200'
-# Thu, 13 Aug 2026 19:14:51 GMT
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1787529600'
+# Tue, 25 Aug 2026 00:40:36 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Thu, 13 Aug 2026 19:14:56 GMT
+# Tue, 25 Aug 2026 00:40:42 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:15:03 GMT
+# Tue, 25 Aug 2026 00:40:49 GMT
 ENV GOSU_VERSION=1.19
-# Thu, 13 Aug 2026 19:15:03 GMT
+# Tue, 25 Aug 2026 00:40:49 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 13 Aug 2026 19:15:07 GMT
+# Tue, 25 Aug 2026 00:40:54 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
-# Thu, 13 Aug 2026 19:15:07 GMT
+# Tue, 25 Aug 2026 00:40:54 GMT
 ENV LANG=en_US.utf8
-# Thu, 13 Aug 2026 19:15:10 GMT
+# Tue, 25 Aug 2026 00:40:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:15:10 GMT
+# Tue, 25 Aug 2026 00:40:58 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 13 Aug 2026 19:15:11 GMT
+# Tue, 25 Aug 2026 00:40:59 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Thu, 13 Aug 2026 19:15:11 GMT
+# Tue, 25 Aug 2026 00:40:59 GMT
 ENV PG_MAJOR=18
-# Thu, 13 Aug 2026 19:15:11 GMT
+# Tue, 25 Aug 2026 00:40:59 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/18/bin
-# Thu, 13 Aug 2026 19:15:11 GMT
+# Tue, 25 Aug 2026 00:40:59 GMT
 ENV PG_VERSION=18.6-1.pgdg13+2
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | loong64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 	if apt-get install -s "postgresql-$PG_MAJOR-jit" > /dev/null 2>&1; then 		apt-get install -y --no-install-recommends "postgresql-$PG_MAJOR-jit=$PG_VERSION"; 	fi; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 ENV PGDATA=/var/lib/postgresql/18/docker
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 VOLUME [/var/lib/postgresql]
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:15 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:16 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:16 GMT
 STOPSIGNAL SIGINT
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:16 GMT
 EXPOSE map[5432/tcp:{}]
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:41:16 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:26c307b5e35a59ce911f5fde5b9458120ec8734e831ea2da5649a9ad14abfd3d`  
-		Last Modified: Tue, 04 Aug 2026 23:52:43 GMT  
-		Size: 29.8 MB (29780765 bytes)  
+	-	`sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be`  
+		Last Modified: Mon, 24 Aug 2026 23:20:57 GMT  
+		Size: 29.8 MB (29792658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32a162df14253acdf7eac4d29a48ef2de961802fcf0961e953eb838d730dc818`  
-		Last Modified: Thu, 13 Aug 2026 19:15:46 GMT  
+	-	`sha256:6463c6b5c70320dc516e6ddd2381861493bc90ed29e1654a204f6df10575d055`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
 		Size: 1.2 KB (1170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f63dbab9339ad553b26c22741694c5cc7bdcfa92edf0afecc94f890cad5074`  
-		Last Modified: Thu, 13 Aug 2026 19:15:46 GMT  
-		Size: 6.4 MB (6443015 bytes)  
+	-	`sha256:8d6422da287d3f004bab103e0204f8c55d5cddd98dac7f21899aefe2e6db3c87`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
+		Size: 6.4 MB (6443010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0418a1024c2057c7816c81832c744d366869ae00c0c574779ed399f83c3f0893`  
-		Last Modified: Thu, 13 Aug 2026 19:15:46 GMT  
-		Size: 1.3 MB (1256746 bytes)  
+	-	`sha256:2fc0e69f8d7d3027b0921714635ca43e715347c0521a568b359fb2cb70c9f09c`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
+		Size: 1.3 MB (1256759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c85fe314a1e19acba299a48a5ff3b6a951b03a5243b99a3de83129f1d3fc137`  
-		Last Modified: Thu, 13 Aug 2026 19:15:46 GMT  
-		Size: 8.2 MB (8203820 bytes)  
+	-	`sha256:5fa29c524b4efe024dba1cdc0c1a0a57a24d0e7965c5f832c7836c98b0fda0ad`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
+		Size: 8.2 MB (8203894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3220d19f365ad68d94ffebc40507af7b23a8509d1ebd8fcb545e74babbc4d8c4`  
-		Last Modified: Thu, 13 Aug 2026 19:15:47 GMT  
-		Size: 1.3 MB (1311696 bytes)  
+	-	`sha256:ace4b5b96a9138c160b00a5acad3900eac771a13fad27e8948a66a7ed0270627`  
+		Last Modified: Tue, 25 Aug 2026 00:41:37 GMT  
+		Size: 1.3 MB (1311680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4edcba0bccbb5d02a9c32f27a3e7500dee23903ca35c89943ad7afe82a1417a`  
-		Last Modified: Thu, 13 Aug 2026 19:15:47 GMT  
+	-	`sha256:af2a6480a0588ba2d48e077961144ed182076ebac70c8c26e6ce1986c8c3ff22`  
+		Last Modified: Tue, 25 Aug 2026 00:41:37 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82bf5df0bf962075df3d5625c69c414a9c6e9b4479cd8c1c4b8d950f6589bb77`  
-		Last Modified: Thu, 13 Aug 2026 19:15:47 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:5ee6c6ca7fd9b2a38ea430f570030b2eb87e9975e565897b3cce2f62e05411ba`  
+		Last Modified: Tue, 25 Aug 2026 00:41:38 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdc476d11914056aa84fe28d00a7562d28a3442dce0796ef89f4ff3c7e8e9921`  
-		Last Modified: Thu, 13 Aug 2026 19:15:50 GMT  
-		Size: 115.4 MB (115394935 bytes)  
+	-	`sha256:c5694bff1357bc2fd0c382590ab729b949e8c4494a509cd55d9e3c90b453dc13`  
+		Last Modified: Tue, 25 Aug 2026 00:41:40 GMT  
+		Size: 115.4 MB (115395563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:819c67f68608c86e63aa304e4c0062246708bbedfe3ead31ec09929726637fc0`  
-		Last Modified: Thu, 13 Aug 2026 19:15:48 GMT  
-		Size: 19.4 KB (19421 bytes)  
+	-	`sha256:aedab71775047c7e8101a9fcdd8be088a9575b6b0cdad7650d6f67a4e076d73b`  
+		Last Modified: Tue, 25 Aug 2026 00:41:38 GMT  
+		Size: 19.4 KB (19420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a148fcff7f0f79a2b82858bc92d18cd8cc4b484650771c9d705b0b2e078a8ce`  
-		Last Modified: Thu, 13 Aug 2026 19:15:49 GMT  
+	-	`sha256:a4635eaec9b86bda9e3f2634e14915b9dbbc964755f336572e8ba56d6d7e6c0f`  
+		Last Modified: Tue, 25 Aug 2026 00:41:39 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c87d25da910b97ada1559eb14747d170b1a35ecf2858d7105e46b7768cf6745b`  
-		Last Modified: Thu, 13 Aug 2026 19:15:49 GMT  
+	-	`sha256:46e663abc8f5ed994cede123e749e21c7b0675bfc5cd0905d87d8cef3c7b74dd`  
+		Last Modified: Tue, 25 Aug 2026 00:41:39 GMT  
 		Size: 6.1 KB (6107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dea17d67b330542a25e631e74c2229ac5bf7c52fb514f98b7268ecb6897440e5`  
-		Last Modified: Thu, 13 Aug 2026 19:15:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:1bb54e8f77276172953d507b21a7ad3af088aab59ce62a36c834348649641857`  
+		Last Modified: Tue, 25 Aug 2026 00:41:40 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:latest` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:e8fb7131ebbbb242dba2ba567df13f3ec3503d8aace1ec15ffcb470373ddb1df
+$ docker pull postgres@sha256:877c25a32ef132c94b678ef219e8146f0f8d6068f43d05e3ce5a583054e035f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6009473 bytes)**  
+-	Total Size: **6.0 MB (6009670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:278114143b784038df124f168b8314cdd1f0ecb2ee0919370c973202233709ae`
+-	Image ID: `sha256:2c3b5cb1c3b390c8e5d6c1514da939fbb18cba8f72cd99bd1ad5c9d332f6aaac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3ff5c55f9ec8fec7f338271677f2370e218f055ac4a33f4300cebadbfcdc30cb`  
-		Last Modified: Thu, 13 Aug 2026 19:15:46 GMT  
-		Size: 6.0 MB (5956993 bytes)  
+	-	`sha256:6ff88415323fb15f66bfb644eeac94a38e9e5aebb0a0a3b0371c4370424337bf`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
+		Size: 6.0 MB (5957191 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ebe57bb0a4d6de8645a142882fc12013968a5472defb93b795bcd522bb987f`  
-		Last Modified: Thu, 13 Aug 2026 19:15:45 GMT  
-		Size: 52.5 KB (52480 bytes)  
+	-	`sha256:041cb76c0e1d3bcb8eb812a384c357ad5d511b4014ea6e962bf917eaf385d6b0`  
+		Last Modified: Tue, 25 Aug 2026 00:41:36 GMT  
+		Size: 52.5 KB (52479 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:latest` - linux; arm variant v5
@@ -452,285 +452,285 @@ $ docker pull postgres@sha256:476ed7b0d491c073abeb0afd1d367dffc9b773f9407f8e1ee5
 ### `postgres:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:772ab753f714afefc07b096906b4961e2bb576938c7d007beaa9b62d80680c48
+$ docker pull postgres@sha256:6fd9e18b6fedda0a34e4d53ad6fdbd4289a217300af573c31ec7084e6d9cf329
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.0 MB (161037844 bytes)**  
+-	Total Size: **161.1 MB (161054002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e3d1143517ae98e9ea9cb0646c72c3a007cc91282e973bdb0524071fa084264`
+-	Image ID: `sha256:47fcd92135b73f3b3ba0761ef77c305c4263093b999559505afec11a7ed8cbdc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1785715200'
-# Thu, 13 Aug 2026 19:14:43 GMT
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1787529600'
+# Tue, 25 Aug 2026 00:42:37 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Thu, 13 Aug 2026 19:15:19 GMT
+# Tue, 25 Aug 2026 00:42:43 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:42:51 GMT
 ENV GOSU_VERSION=1.19
-# Thu, 13 Aug 2026 19:15:26 GMT
+# Tue, 25 Aug 2026 00:42:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 13 Aug 2026 19:15:32 GMT
+# Tue, 25 Aug 2026 00:42:57 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
-# Thu, 13 Aug 2026 19:15:32 GMT
+# Tue, 25 Aug 2026 00:42:57 GMT
 ENV LANG=en_US.utf8
-# Thu, 13 Aug 2026 19:15:35 GMT
+# Tue, 25 Aug 2026 00:43:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:15:35 GMT
+# Tue, 25 Aug 2026 00:43:01 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 13 Aug 2026 19:15:36 GMT
+# Tue, 25 Aug 2026 00:43:02 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Thu, 13 Aug 2026 19:15:36 GMT
+# Tue, 25 Aug 2026 00:43:02 GMT
 ENV PG_MAJOR=18
-# Thu, 13 Aug 2026 19:15:36 GMT
+# Tue, 25 Aug 2026 00:43:02 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/18/bin
-# Thu, 13 Aug 2026 19:15:36 GMT
+# Tue, 25 Aug 2026 00:43:02 GMT
 ENV PG_VERSION=18.6-1.pgdg13+2
-# Thu, 13 Aug 2026 19:15:53 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | loong64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 	if apt-get install -s "postgresql-$PG_MAJOR-jit" > /dev/null 2>&1; then 		apt-get install -y --no-install-recommends "postgresql-$PG_MAJOR-jit=$PG_VERSION"; 	fi; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
-# Thu, 13 Aug 2026 19:15:53 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
-# Thu, 13 Aug 2026 19:15:53 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Thu, 13 Aug 2026 19:15:53 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 ENV PGDATA=/var/lib/postgresql/18/docker
-# Thu, 13 Aug 2026 19:15:53 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 VOLUME [/var/lib/postgresql]
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 STOPSIGNAL SIGINT
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 EXPOSE map[5432/tcp:{}]
-# Thu, 13 Aug 2026 19:15:54 GMT
+# Tue, 25 Aug 2026 00:43:21 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:1b7200988f192e72703c70486d494e2457935ac9b0f031ac09eb115b01a12d45`  
-		Last Modified: Tue, 04 Aug 2026 23:52:14 GMT  
-		Size: 30.1 MB (30143609 bytes)  
+	-	`sha256:bf7af0229701decd1b9f42143504fc8f69e5664c37e57001d198e731e4f86c2e`  
+		Last Modified: Mon, 24 Aug 2026 23:20:48 GMT  
+		Size: 30.2 MB (30159582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6d46a3f7b5aa0ef8722d797758747cd469a118c2c145cf86ec322566fc2fc32`  
-		Last Modified: Thu, 13 Aug 2026 19:16:13 GMT  
-		Size: 1.2 KB (1172 bytes)  
+	-	`sha256:6437d6ec8fee240e8f39c319270c007ae4b54550515565c3da37ef8f4a4ddb11`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 1.2 KB (1171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce59c00d071e554f37c3db81471bdbd6e17da60190a1153dc68c9054473181ef`  
-		Last Modified: Thu, 13 Aug 2026 19:16:14 GMT  
-		Size: 6.2 MB (6234929 bytes)  
+	-	`sha256:3e1f39995a92649f3b285b74dae221f40dee5f6f62e34cbd64c5282bb3639c80`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 6.2 MB (6234978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ab53b80971891f84b24df3041f7a25f7e082c2ec66e65d8913006fa5994a394`  
-		Last Modified: Thu, 13 Aug 2026 19:16:13 GMT  
-		Size: 1.2 MB (1209571 bytes)  
+	-	`sha256:ebe3b74b62b86929d3f548a489b6f72fb09df0452f33b517ee13edeece9e8f1b`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 1.2 MB (1209591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dde961cf0d0121d43fd35871e746c26452cb25f5ad5f7edcb819b07f047a139`  
-		Last Modified: Thu, 13 Aug 2026 19:16:14 GMT  
-		Size: 8.2 MB (8203986 bytes)  
+	-	`sha256:1a59b8215a09d233a387cb001c778468c3ab67a8a1fd244bcd8d1b67d4fdfffe`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 8.2 MB (8204044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:388827fed25bc6875858e76ceeb8aaedc97287a5fe7f1557d26ae7b4b98a2395`  
-		Last Modified: Thu, 13 Aug 2026 19:16:15 GMT  
-		Size: 1.2 MB (1220629 bytes)  
+	-	`sha256:93eeac19656f3715478c4668897424a046327c33055cba27d6f5e095726c130c`  
+		Last Modified: Tue, 25 Aug 2026 00:43:42 GMT  
+		Size: 1.2 MB (1220621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a9d4cfa675a2af720ba1873da3e993e034696716c44dbab0039cf2ed7f0c5fb`  
-		Last Modified: Thu, 13 Aug 2026 19:16:15 GMT  
+	-	`sha256:4f28b201a80ce9b9d2a3a02cf30fa97ad44ad0364113db2f79483a2a2623b24e`  
+		Last Modified: Tue, 25 Aug 2026 00:43:42 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4913cff6be02c8a5ac46624bbdda2db658d715ab8b4e634bf005bec28541c3c9`  
-		Last Modified: Thu, 13 Aug 2026 19:16:15 GMT  
+	-	`sha256:4e582dc1d360ca6a0edd4e80b3b00290a58a8a51dec1a5b24d602fcabc810fe7`  
+		Last Modified: Tue, 25 Aug 2026 00:43:43 GMT  
 		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:679cb3ea65e4f693f03ec75b5aa28b249cc0468c606c56e8d3d8166cf8db6997`  
-		Last Modified: Thu, 13 Aug 2026 19:16:18 GMT  
-		Size: 114.0 MB (113994852 bytes)  
+	-	`sha256:ab1e9043b37f35b5976c2e8264e83191cd8e9e77d0e7babd01abfecd1a436a32`  
+		Last Modified: Tue, 25 Aug 2026 00:43:45 GMT  
+		Size: 114.0 MB (113994917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b12e7d1b75bfc73a34bcf9d8cfb7f22fd61f658c005369bf286aeced3ca8f26`  
-		Last Modified: Thu, 13 Aug 2026 19:16:16 GMT  
+	-	`sha256:a3089dfdc569b0bb110c981325e6c63fb68e830f960899c1dc463503717a8a2e`  
+		Last Modified: Tue, 25 Aug 2026 00:43:43 GMT  
 		Size: 19.4 KB (19418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2897274c758d5f3dae748051067d94eb98d50caa8ffede3b1cd18c9e0bbb23`  
-		Last Modified: Thu, 13 Aug 2026 19:16:16 GMT  
+	-	`sha256:521aece6b33df09e7d85dc2d971cd4bab55be1ff99d24b9c075f37baf8e0b2be`  
+		Last Modified: Tue, 25 Aug 2026 00:43:44 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8349c7a03d0b32b863cbd8e3f224db334e175514b5e218db111b047b89ddeeba`  
-		Last Modified: Thu, 13 Aug 2026 19:16:16 GMT  
-		Size: 6.1 KB (6107 bytes)  
+	-	`sha256:bc5ea3235db867ea91fd62a9ff12aca6f5e2f318e8b72834af7aaa3264f89d64`  
+		Last Modified: Tue, 25 Aug 2026 00:43:44 GMT  
+		Size: 6.1 KB (6108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5e52a27223097e6c912af1b18b027b3590e6dde3dff85078a252889993d7a96`  
-		Last Modified: Thu, 13 Aug 2026 19:16:17 GMT  
+	-	`sha256:dc0e071a4d070f4d4bfa96d374327d2d4f5a6c2461ba57e9e3f2e8282d16e8be`  
+		Last Modified: Tue, 25 Aug 2026 00:43:45 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `postgres:latest` - unknown; unknown
+
+```console
+$ docker pull postgres@sha256:51432c653769d02c119666b25b669387390f505ab55e6336e2b6514293095176
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.0 MB (6016314 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:30d2d7d24fed5fbf4c8ea407b4583f8abfc5225e5bfb1fdfe02449728ba19e53`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f833d8542db15f6d1ef5f96f97b408bd757ef980b444c819df2af97e4703d0a4`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 6.0 MB (5963556 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4e9eb4879291e416294afe189df52a11a8f9851fc397f7278ae13b7f9d84c33c`  
+		Last Modified: Tue, 25 Aug 2026 00:43:41 GMT  
+		Size: 52.8 KB (52758 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `postgres:latest` - linux; 386
+
+```console
+$ docker pull postgres@sha256:de8781cb9b321c949fcd47afd639be81c7fb20423f2885bca9c06c42f8cc6548
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **97.7 MB (97666218 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:14652dfae1fc2c49081160080cf21f56b4662839384ff799873c9112dee8790e`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["postgres"]`
+
+```dockerfile
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1787529600'
+# Tue, 25 Aug 2026 00:38:32 GMT
+RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
+# Tue, 25 Aug 2026 00:38:38 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 25 Aug 2026 00:38:45 GMT
+ENV GOSU_VERSION=1.19
+# Tue, 25 Aug 2026 00:38:45 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Tue, 25 Aug 2026 00:38:50 GMT
+RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
+# Tue, 25 Aug 2026 00:38:50 GMT
+ENV LANG=en_US.utf8
+# Tue, 25 Aug 2026 00:38:53 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 25 Aug 2026 00:38:53 GMT
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Tue, 25 Aug 2026 00:38:54 GMT
+RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
+# Tue, 25 Aug 2026 00:38:54 GMT
+ENV PG_MAJOR=18
+# Tue, 25 Aug 2026 00:38:54 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/18/bin
+# Tue, 25 Aug 2026 00:38:54 GMT
+ENV PG_VERSION=18.6-1.pgdg13+2
+# Tue, 25 Aug 2026 00:47:14 GMT
+RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | loong64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 	if apt-get install -s "postgresql-$PG_MAJOR-jit" > /dev/null 2>&1; then 		apt-get install -y --no-install-recommends "postgresql-$PG_MAJOR-jit=$PG_VERSION"; 	fi; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
+# Tue, 25 Aug 2026 00:47:14 GMT
+RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
+# Tue, 25 Aug 2026 00:47:14 GMT
+RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
+# Tue, 25 Aug 2026 00:47:14 GMT
+ENV PGDATA=/var/lib/postgresql/18/docker
+# Tue, 25 Aug 2026 00:47:14 GMT
+VOLUME [/var/lib/postgresql]
+# Tue, 25 Aug 2026 00:47:14 GMT
+COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
+# Tue, 25 Aug 2026 00:47:14 GMT
+RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
+# Tue, 25 Aug 2026 00:47:14 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 25 Aug 2026 00:47:14 GMT
+STOPSIGNAL SIGINT
+# Tue, 25 Aug 2026 00:47:14 GMT
+EXPOSE map[5432/tcp:{}]
+# Tue, 25 Aug 2026 00:47:14 GMT
+CMD ["postgres"]
+```
+
+-	Layers:
+	-	`sha256:53dd1701fe55fa5affd8b9c6d6572dd8ec54300469e314130f40456ca2b957f3`  
+		Last Modified: Mon, 24 Aug 2026 23:20:57 GMT  
+		Size: 31.3 MB (31303397 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2fd6bfdd179c6b3f1b148ad5f133cf574bd6d95b4e7b291c1b43bd0cedd56280`  
+		Last Modified: Tue, 25 Aug 2026 00:47:25 GMT  
+		Size: 1.2 KB (1169 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b63f945bb8e4699aeadef6d094928e866d4cca3f0616b21dbefb64770fcf3eca`  
+		Last Modified: Tue, 25 Aug 2026 00:47:26 GMT  
+		Size: 6.6 MB (6631369 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2a9e35a49e6a73128ef92456a614d407cab783bb57177b80a00e726763f4708`  
+		Last Modified: Tue, 25 Aug 2026 00:47:26 GMT  
+		Size: 1.2 MB (1225867 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8891bf7ab797b43a5944f28ccf1a0c0f865d17a9d6d20cc97b44d06740b5be0b`  
+		Last Modified: Tue, 25 Aug 2026 00:47:26 GMT  
+		Size: 8.2 MB (8204062 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e73dfac55ccae2335d3de5a6943139e5acf049bae94807bdd8b79218257775fd`  
+		Last Modified: Tue, 25 Aug 2026 00:47:27 GMT  
+		Size: 1.3 MB (1308298 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:96d91c50010bf8ab746717be65b04caee58332591de4e8ec767b9b75d83b1de4`  
+		Last Modified: Tue, 25 Aug 2026 00:47:27 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b2d93d41d35ff6a56ba09ae0f763987a3d1384e9bd2b7ea4ddad64e60c240d3f`  
+		Last Modified: Tue, 25 Aug 2026 00:47:27 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:17fced9215eca0094ba657fe4ac2238e1c82632408e94bb026411a3fb67ef9f5`  
+		Last Modified: Tue, 25 Aug 2026 00:47:29 GMT  
+		Size: 49.0 MB (48962954 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7944886cfd03a9701662021305c64c0f2fb672cbbf31e71a641e344e7c62f331`  
+		Last Modified: Tue, 25 Aug 2026 00:47:28 GMT  
+		Size: 19.4 KB (19421 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:72d1e90ce98b5c45d19b48c230b4b11144e4e947b17abdf7e2fe7669de99b8ff`  
+		Last Modified: Tue, 25 Aug 2026 00:47:28 GMT  
+		Size: 129.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1f262f7c90e6f82bd77ed0d1a19d1a7d416b288f020704f7379207bf2347e1f3`  
+		Last Modified: Tue, 25 Aug 2026 00:47:28 GMT  
+		Size: 6.1 KB (6110 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43dbbeb270b53783192fbccd9a1afa0d02db4dd10844b152c55c90688b453213`  
+		Last Modified: Tue, 25 Aug 2026 00:47:29 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:latest` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:fa93fd08b3db6ed9f35174109c9eb1e91ac14797b3797aab13ad50e5e8beef94
+$ docker pull postgres@sha256:d7b341f98c9600e05b75469411469dde887d4e999e1f51daed35204d6e2cb6b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6016115 bytes)**  
+-	Total Size: **5.2 MB (5168101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:142f0459da0a3b3633776b5cfffef919a2f5ec915a4dae6cb1f47366669e8d94`
+-	Image ID: `sha256:65cd6679dd077767eacca144720ee279c892b7323eda53edbea476c31f862f78`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0a8729ed7338011225cf08a27e2dd8387f2832db3324f9635de9b9346cad33b`  
-		Last Modified: Thu, 13 Aug 2026 19:16:14 GMT  
-		Size: 6.0 MB (5963358 bytes)  
+	-	`sha256:8f1d7d880fe7773bf6fa8ec37fc988cb7619aa000299a984fd7807e7c1e055ad`  
+		Last Modified: Tue, 25 Aug 2026 00:47:26 GMT  
+		Size: 5.1 MB (5115689 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0d4ae12082bbaa2d6b8b890c06a64ab8330c292879b089bac38a00645a39960c`  
-		Last Modified: Thu, 13 Aug 2026 19:16:13 GMT  
-		Size: 52.8 KB (52757 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `postgres:latest` - linux; 386
-
-```console
-$ docker pull postgres@sha256:24967457547f35adeda87cc3851532cd93cf89b318a0e6d3eca6802deb4496b2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.7 MB (97658859 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34fd81939e17e2e5393d4864683c3575a2bfca45729e93ba01c97ba0135535d1`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["postgres"]`
-
-```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1785715200'
-# Thu, 13 Aug 2026 19:14:44 GMT
-RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Thu, 13 Aug 2026 19:14:50 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:14:58 GMT
-ENV GOSU_VERSION=1.19
-# Thu, 13 Aug 2026 19:14:58 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 13 Aug 2026 19:15:04 GMT
-RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
-# Thu, 13 Aug 2026 19:15:04 GMT
-ENV LANG=en_US.utf8
-# Thu, 13 Aug 2026 19:15:08 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:15:08 GMT
-RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 13 Aug 2026 19:15:08 GMT
-RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Thu, 13 Aug 2026 19:15:08 GMT
-ENV PG_MAJOR=18
-# Thu, 13 Aug 2026 19:15:08 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/18/bin
-# Thu, 13 Aug 2026 19:15:08 GMT
-ENV PG_VERSION=18.6-1.pgdg13+2
-# Thu, 13 Aug 2026 19:24:23 GMT
-RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | loong64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 	if apt-get install -s "postgresql-$PG_MAJOR-jit" > /dev/null 2>&1; then 		apt-get install -y --no-install-recommends "postgresql-$PG_MAJOR-jit=$PG_VERSION"; 	fi; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
-# Thu, 13 Aug 2026 19:24:23 GMT
-RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
-# Thu, 13 Aug 2026 19:24:24 GMT
-RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Thu, 13 Aug 2026 19:24:24 GMT
-ENV PGDATA=/var/lib/postgresql/18/docker
-# Thu, 13 Aug 2026 19:24:24 GMT
-VOLUME [/var/lib/postgresql]
-# Thu, 13 Aug 2026 19:24:24 GMT
-COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Thu, 13 Aug 2026 19:24:24 GMT
-RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Thu, 13 Aug 2026 19:24:24 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 13 Aug 2026 19:24:24 GMT
-STOPSIGNAL SIGINT
-# Thu, 13 Aug 2026 19:24:24 GMT
-EXPOSE map[5432/tcp:{}]
-# Thu, 13 Aug 2026 19:24:24 GMT
-CMD ["postgres"]
-```
-
--	Layers:
-	-	`sha256:311b26cfa6b9aedb9c35bd9a9ce5c9fb13add824446bae9f72de3efd7775647d`  
-		Last Modified: Tue, 04 Aug 2026 23:52:24 GMT  
-		Size: 31.3 MB (31296269 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72d45f0629651319e30dfee0d2fc7dfe3003e37c0b883ea2465037dab7f47bf`  
-		Last Modified: Thu, 13 Aug 2026 19:15:37 GMT  
-		Size: 1.2 KB (1170 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ce924709bc8b49a6f17c58fd8b6ac27f31a26fd01a339b1cab2a787e37a7005`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 6.6 MB (6631366 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:588906a9e69a0f4faa1f90a4ba92673b6fc0544c34b60a62ee1a86363af49d71`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 1.2 MB (1225849 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1e905fffbfa7834854e40b8fc20f9c94711e74f174a4140910d44951ee7a7cc`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 8.2 MB (8203980 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b1e142a077964f8fc0a0787d05a2f31d43a3059463a164fc8fce6ccd9c38b42`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 1.3 MB (1308271 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e2866691c6e60f7d90809c47b9b2e697c4532624460e5983901401424365726`  
-		Last Modified: Thu, 13 Aug 2026 19:24:38 GMT  
-		Size: 116.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8933daccd915276a1fe49b3f9604355e1185569fc9520e989595d458fd0050d7`  
-		Last Modified: Thu, 13 Aug 2026 19:24:38 GMT  
-		Size: 3.1 KB (3140 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa8541775ce78361b8fc720d6d42a11f205ed84b3843115d8ee8e52b1027a6f3`  
-		Last Modified: Thu, 13 Aug 2026 19:24:40 GMT  
-		Size: 49.0 MB (48962865 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b38ddcdcc13bccca81d232159d92648e257d8662af9f3ddfd6756e39f44a8cb3`  
-		Last Modified: Thu, 13 Aug 2026 19:24:39 GMT  
-		Size: 19.4 KB (19414 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08265232197a0c536481e19537ec5fab35370a833b6daa44527988e17f5c34f8`  
-		Last Modified: Thu, 13 Aug 2026 19:24:39 GMT  
-		Size: 128.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e582a2fd3331d75d0773fbea9550676e999c7d1a25eca04f23bd6f2f594da3ff`  
-		Last Modified: Thu, 13 Aug 2026 19:24:40 GMT  
-		Size: 6.1 KB (6108 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2bde87217813e40af4db51ea25accbf3ca671b55743dfc4f51cc4c5c6aaeb9e`  
-		Last Modified: Thu, 13 Aug 2026 19:24:40 GMT  
-		Size: 183.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `postgres:latest` - unknown; unknown
-
-```console
-$ docker pull postgres@sha256:f8b179d6787a8acfc6a1596980bd5b0656661a5d92cb60871eb9b62f8f689949
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5167882 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb2163e92657bf34ebb7783ca8745d8b4a25f990629fcbb18a76e4264b76d8bf`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:296050b4a49e95a2028f91b5c1b309a86a7dc7a4b25a645640efb1e58f27f927`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 5.1 MB (5115469 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:f9632314ff0e0d6d9b269bf428799a391dd38bf4494bcf320e888cc35743dc49`  
-		Last Modified: Thu, 13 Aug 2026 19:24:37 GMT  
-		Size: 52.4 KB (52413 bytes)  
+	-	`sha256:6ed04337658752fec4e8da0b5f1bead105954bc5a0098acfc09e647aa51004c8`  
+		Last Modified: Tue, 25 Aug 2026 00:47:25 GMT  
+		Size: 52.4 KB (52412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:latest` - linux; ppc64le
@@ -1020,141 +1020,141 @@ $ docker pull postgres@sha256:c64bcebf60319a4fc097f5235aa109e09f8d237a8db05c4916
 ### `postgres:latest` - linux; s390x
 
 ```console
-$ docker pull postgres@sha256:c1a5263969c3c9bd5c290d01943c39a2abf763e6ca7efd224de3d066b3cbf856
+$ docker pull postgres@sha256:4b856c8371ac7ba2b8ac04fdf6cca9484dc7d51b916786b31a844e9e141f9854
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177051885 bytes)**  
+-	Total Size: **177.1 MB (177097399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b364b533ba45d7b0b6ef4cd71d994136878b7e8fecd08a40aaec3b4d5bff8394`
+-	Image ID: `sha256:c2c92ac0a0c0c83fdd748123f955ae44dfc9cbf8877551233d2824134946ad76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1785715200'
-# Thu, 13 Aug 2026 19:12:56 GMT
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1787529600'
+# Tue, 25 Aug 2026 01:02:49 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	install --verbose --directory --owner postgres --group postgres --mode 1777 /var/lib/postgresql # buildkit
-# Thu, 13 Aug 2026 19:13:05 GMT
+# Tue, 25 Aug 2026 01:02:55 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 		less 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:13:14 GMT
+# Tue, 25 Aug 2026 01:03:02 GMT
 ENV GOSU_VERSION=1.19
-# Thu, 13 Aug 2026 19:13:14 GMT
+# Tue, 25 Aug 2026 01:03:02 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 13 Aug 2026 19:13:21 GMT
+# Tue, 25 Aug 2026 01:03:07 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen; 	locale-gen; 	locale -a | grep 'en_US.utf8' # buildkit
-# Thu, 13 Aug 2026 19:13:21 GMT
+# Tue, 25 Aug 2026 01:03:07 GMT
 ENV LANG=en_US.utf8
-# Thu, 13 Aug 2026 19:13:25 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 		zstd 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Aug 2026 19:13:25 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 13 Aug 2026 19:13:26 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	mkdir -p /usr/local/share/keyrings/; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export --armor "$key" > /usr/local/share/keyrings/postgres.gpg.asc; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Thu, 13 Aug 2026 19:13:26 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 ENV PG_MAJOR=18
-# Thu, 13 Aug 2026 19:13:26 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/18/bin
-# Thu, 13 Aug 2026 19:13:26 GMT
+# Tue, 25 Aug 2026 01:03:12 GMT
 ENV PG_VERSION=18.6-1.pgdg13+2
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt trixie-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | loong64 | ppc64el) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common-dev; 			apt-get source --compile postgresql-common-dev; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 	if apt-get install -s "postgresql-$PG_MAJOR-jit" > /dev/null 2>&1; then 		apt-get install -y --no-install-recommends "postgresql-$PG_MAJOR-jit=$PG_VERSION"; 	fi; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version # buildkit
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample # buildkit
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 ENV PGDATA=/var/lib/postgresql/18/docker
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 VOLUME [/var/lib/postgresql]
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 STOPSIGNAL SIGINT
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 EXPOSE map[5432/tcp:{}]
-# Thu, 13 Aug 2026 19:27:59 GMT
+# Tue, 25 Aug 2026 01:16:40 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:5059f072c5e2b09a216d4e66de6e94d1586b3eea64256e6d5277e3ddb8f78991`  
-		Last Modified: Tue, 04 Aug 2026 23:51:38 GMT  
-		Size: 29.8 MB (29846573 bytes)  
+	-	`sha256:3b49fae03f57292f29c23992f1f40c8e724a3c2e43e39a20e805a76ce5694095`  
+		Last Modified: Mon, 24 Aug 2026 23:20:17 GMT  
+		Size: 29.9 MB (29867719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bae146c924ce67eebf5bbd920170f0e3409fe1e2d226d2692cbd534238504dc`  
-		Last Modified: Thu, 13 Aug 2026 19:28:32 GMT  
+	-	`sha256:cdd8731eec8971558bbdb113d579eee82339be70321f1517f4045f67ac0e3593`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
 		Size: 1.2 KB (1170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40707c83bac46faad92b75714f3612002f18e2717150c612659508d3045570ac`  
-		Last Modified: Thu, 13 Aug 2026 19:28:32 GMT  
-		Size: 6.4 MB (6408530 bytes)  
+	-	`sha256:5f99000ffd322ec426616116a1762013aaf8dd58b8f418f7a395634e4e71889f`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
+		Size: 6.4 MB (6408414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59856be00a346ec33e71423bf4686d6ebc7f808da8c7e90222137e4f7ccc7794`  
-		Last Modified: Thu, 13 Aug 2026 19:28:32 GMT  
-		Size: 1.2 MB (1230270 bytes)  
+	-	`sha256:925aacd8e3738ee432491f7dcdedb89cbc80a502bb4b52107b8ae6707236fca1`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
+		Size: 1.2 MB (1230244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7b950f7edb9b459beafa6abd53080d8d9d052d12f28e3d4b181c75ba0108841`  
-		Last Modified: Thu, 13 Aug 2026 19:28:33 GMT  
-		Size: 8.3 MB (8258995 bytes)  
+	-	`sha256:98fa9d9403661dd4bdeb7ceaaa513f00f47a07acc514c8e4f8285854e4e8709b`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
+		Size: 8.3 MB (8258986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:405cf7a2a74d9fc3831c2487cacb6e36796e1ae3411f6cdadd726f77b3d5b189`  
-		Last Modified: Thu, 13 Aug 2026 19:28:34 GMT  
-		Size: 1.4 MB (1398250 bytes)  
+	-	`sha256:5d41930945d2a5142a6dc1f98125139111ced922817896d47d7bdf9b4f8ea0dd`  
+		Last Modified: Tue, 25 Aug 2026 01:17:14 GMT  
+		Size: 1.4 MB (1398271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3eb09ef23ea3308be4404f5f585d8c653b9935449ee22ec0859963484548591`  
-		Last Modified: Thu, 13 Aug 2026 19:28:34 GMT  
+	-	`sha256:8227cac7224b811f2621f30a20090c9ec9d2c6051656f298431c66088d5a0ade`  
+		Last Modified: Tue, 25 Aug 2026 01:17:14 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08f42c1171b65d551b817e5b12e1db99ffb8bf3ee82578a4864891ad02e65f88`  
-		Last Modified: Thu, 13 Aug 2026 19:28:34 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:55261074fe0f610acb07bbd1ba284b376ff1e49a5be4474d54a4f7a6ca411a1a`  
+		Last Modified: Tue, 25 Aug 2026 01:17:15 GMT  
+		Size: 3.1 KB (3138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f57b42f606bd5a332afa1ad8407c6c13ef99cab56b4c54922b995faf9526370d`  
-		Last Modified: Thu, 13 Aug 2026 19:28:43 GMT  
-		Size: 129.9 MB (129878997 bytes)  
+	-	`sha256:e296cf53a49b6e853d55a93c0883552dd8caa6c434e107c18b5abeca3347bbc9`  
+		Last Modified: Tue, 25 Aug 2026 01:17:17 GMT  
+		Size: 129.9 MB (129903501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f5a40f1be38547ae93f430cf70bb8f1a42fba4dbdfc7434c194adcea015d9bd`  
-		Last Modified: Thu, 13 Aug 2026 19:28:39 GMT  
-		Size: 19.4 KB (19418 bytes)  
+	-	`sha256:783fa90bda9d05b5e52857080ebe87ed698f10ac69e15625b15bdf73ae071d28`  
+		Last Modified: Tue, 25 Aug 2026 01:17:15 GMT  
+		Size: 19.4 KB (19422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8965df5b4c4004fdfa63fcd21f39e84c7f3a26e9991d1aa54689c0adcc05f48b`  
-		Last Modified: Thu, 13 Aug 2026 19:28:39 GMT  
-		Size: 128.0 B  
+	-	`sha256:aa171c9d73d1147a4bb7d1ff08dc86a90ef02ef47dd793ac297d67be5b7ef1c3`  
+		Last Modified: Tue, 25 Aug 2026 01:17:15 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f61675794381c9337b6d7d4af190c0bd3647e74da33d2c5c567ea7253b30c1e6`  
-		Last Modified: Thu, 13 Aug 2026 19:28:39 GMT  
-		Size: 6.1 KB (6110 bytes)  
+	-	`sha256:caa49d1136f5c24e9c757e1acfa5593caef9e84cd07209d597cbb46bf4bd00b9`  
+		Last Modified: Tue, 25 Aug 2026 01:17:16 GMT  
+		Size: 6.1 KB (6106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56f7de4881587e9c1c6d987873065dce990741206c57eccd445457e89689ff61`  
-		Last Modified: Thu, 13 Aug 2026 19:28:41 GMT  
-		Size: 184.0 B  
+	-	`sha256:6f3826eb45291d75951537e68f05eb1497189eb09a3d10dc497fda9d658f1877`  
+		Last Modified: Tue, 25 Aug 2026 01:17:16 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:latest` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:9496641c75da060bd5111e94dd5d24f86b22cb598d1bdc13a7dde09eedec8223
+$ docker pull postgres@sha256:6303a100a84df6cd2b74e1df1e24e3033614df14828673bb2c5050f7a0f4f4b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6026143 bytes)**  
+-	Total Size: **6.0 MB (6026362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9911a92fbc776035d691cf7505159854c9bde3fa4f67ac85691ec3e0411fa13b`
+-	Image ID: `sha256:4939207e322ea3853da3340e47150a8159dce7c81e16d2f1e2d857b9d3842a4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c74b48fa76a3cd7d536f3d367d669c7e5b56f9026d4c5d6f342eb3ccce291fd4`  
-		Last Modified: Thu, 13 Aug 2026 19:28:32 GMT  
-		Size: 6.0 MB (5973663 bytes)  
+	-	`sha256:6818ab9a25ee0c7e2e54dd7e23eb88ceed9d39ac287ecc41248fdd310f63d7e0`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
+		Size: 6.0 MB (5973883 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ae1380cd21487b36f6d037309cdad62db7dfbbd1e47866e8a7d3210371698114`  
-		Last Modified: Thu, 13 Aug 2026 19:28:32 GMT  
-		Size: 52.5 KB (52480 bytes)  
+	-	`sha256:fffe4e9d6f7be1d4d19db637417d41c49b4235ea19b0519828add4b1e537d5fd`  
+		Last Modified: Tue, 25 Aug 2026 01:17:13 GMT  
+		Size: 52.5 KB (52479 bytes)  
 		MIME: application/vnd.in-toto+json
