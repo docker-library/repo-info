@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:584ecc05d5136c6dce55ca589c1821cfb31803759dedd30488508f1fc42ef9eb`
-- Created: `2026-08-19T17:40:30.549142353Z`
-- Virtual Size: ~ 827.15 Mb  
+- Image ID: `sha256:3bc1894217bc63119f9964dd6ebd50b8f06ad1ec3deee5f137a76162c8d8b17d`
+- Created: `2026-08-21T18:44:25.798637395Z`
+- Virtual Size: ~ 825.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.19+10`
+  - `JAVA_VERSION=jdk-17.0.20+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.7.1`
 - Labels:
@@ -192,13 +192,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.1.tar.xz' base-files_14ubuntu6.1.tar.xz 97896 SHA512:1ae9b18258b5be56503a8107f6a263239832313870c5cc4db694523ebe5912eb5bd6790a1ec7fd0f1cb0516b45ab2272000bcd2015449a69c91f79c1d1aec046
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.1.dsc' base-files_14ubuntu6.1.dsc 1735 SHA512:6b07c45bdd30ce310aae834ef27e9bf7c261056a16d2e8d2173a7e8ab0f4936b5bac15524a02f5d36576d91df159456aaf451cbade340307d409a9e40a0e37ec
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -3038,20 +3034,25 @@ $ apt-get source -qq --print-uris util-linux=2.41.3-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.41.3-3ubuntu2.dsc' util-linux_2.41.3-3ubuntu2.dsc 5439 SHA256:4b87e555cfa77a3301e0fc92b77f2f2fc119d7ff27b229af259793103e7674e2
 ```
 
-### `dpkg` source package: `wget=1.25.0-2ubuntu4.3`
+### `dpkg` source package: `wget=1.25.0-2ubuntu4.4`
 
 Binary Packages:
 
-- `wget=1.25.0-2ubuntu4.3`
+- `wget=1.25.0-2ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0.orig.tar.gz' wget_1.25.0.orig.tar.gz 5263736 SHA512:a7ce33c07a1a206a8574b6e9ea7cc5292315df0914edbcf05a014d35ae9e3d24699a46818b409b884ada57428cf30502f4bbb3767cae2c6934e4e7fb2d0c5036
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.4.debian.tar.xz' wget_1.25.0-2ubuntu4.4.debian.tar.xz 37328 SHA512:7da4368a37c2ae9d8e259d4fa4685e3041b61bf4e30790774da0415cc2b2d491a64c0febb1bd1dc9bb0964148f289944883d5ee3084c1c055d8bb0318816929d
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu4.4.dsc' wget_1.25.0-2ubuntu4.4.dsc 2184 SHA512:d23a2e3ac67602f088711b7b98ba2785a0d8e94f47d4778c0553da9abcfc91cce2ae985465cd574018a98fb294430d2fde26908207f6d0e3bd4a78fa97a79645
+```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 

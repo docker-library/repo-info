@@ -2740,9 +2740,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unzip=6.0-26ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.2.debian.tar.xz' unzip_6.0-26ubuntu3.2.debian.tar.xz 28676 SHA256:d900318cf37e612b71d93fe1c105fcd7e239b9219b59e9f4f49ee73ad922290f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.2.dsc' unzip_6.0-26ubuntu3.2.dsc 1811 SHA256:f8bd45d8c0a3e425fedf2301abd78549556a8772ac5b9107c63201994c89f554
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.2.debian.tar.xz' unzip_6.0-26ubuntu3.2.debian.tar.xz 28676 SHA512:996f43dcb28f8b3cd4b16ecb35d19c1bb568f249320a70c07dc1b02bad6657646904683751bfce9d4dbad89241d25924424322f95e48a345acb181fd7577bffb
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu3.2.dsc' unzip_6.0-26ubuntu3.2.dsc 1811 SHA512:9339b501ce82f43a9b04655a0ee1534332972b4b42365245812aeeaf1258417695a82db6446dc5c4d630c8df7119fbc9026bd4a91dc3bd5829596075c19fdf10
 ```
 
 ### `dpkg` source package: `usrmerge=25ubuntu2`

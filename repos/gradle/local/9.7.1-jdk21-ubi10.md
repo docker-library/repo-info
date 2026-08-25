@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f093ab4525b99181d57a291ef20ea4536c111eff040fec5dc6a113215536cf14`
-- Created: `2026-08-19T17:39:52.482266068Z`
-- Virtual Size: ~ 785.58 Mb  
+- Image ID: `sha256:0bbc2eddcfa6aed89fb2762c0b0bc2494b83495eea46a79a8c4cb8aab8a479c1`
+- Created: `2026-08-21T18:43:54.817149295Z`
+- Virtual Size: ~ 785.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,12 +16,12 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.11+10`
+  - `JAVA_VERSION=jdk-21.0.12+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.7.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-17T09:59:37Z`
+  - `build-date=2026-08-20T05:42:51Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-17T09:59:37Z`
-  - `org.opencontainers.image.revision=e7c0028707fa6423887e58fdaaa0ce41b96656c8`
-  - `release=1786960640`
+  - `org.opencontainers.image.created=2026-08-20T05:42:51Z`
+  - `org.opencontainers.image.revision=b2232799f269a1f388bb8eab702d61fa78c72fce`
+  - `release=1787204459`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=e7c0028707fa6423887e58fdaaa0ce41b96656c8`
+  - `vcs-ref=b2232799f269a1f388bb8eab702d61fa78c72fce`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -1476,12 +1476,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): blessing
 
-Source:
-
-```console
-$ dnf --quiet download --source --url sqlite-libs-3.46.1-5.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.46.1-5.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
 

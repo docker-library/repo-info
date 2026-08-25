@@ -431,14 +431,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.12
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.debian.tar.xz' curl_8.5.0-2ubuntu10.12.debian.tar.xz 84352 SHA512:5c1ac08f57563800007f31370d1080836fa187cf6c18e02cdd3116f1b0a8a1e6cec9deccfc96d5cb193918c5881bed39a8e6f854e87e7a7143cbab46f4289755
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.dsc' curl_8.5.0-2ubuntu10.12.dsc 3092 SHA512:df51cce2e0bbd1bd6924464e71c182c6635193afbb8b59dc3d366974d5488f8eab6001238a5d976b8e95e26d24677359c44a0aae246a0758627199ab4c5a2488
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 

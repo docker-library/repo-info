@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab48844ba549001138db88e406eed969587f15a5f11bd5317b17c4ae3097ac87`
-- Created: `2026-08-17T23:11:18.424701673Z`
-- Virtual Size: ~ 591.58 Mb  
+- Image ID: `sha256:0f6111c277c729bee03cf682b3a36d83bc9109b4d225524d6a4521f86b77221b`
+- Created: `2026-08-21T18:47:09.344767594Z`
+- Virtual Size: ~ 591.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u492-b09`
+  - `JAVA_VERSION=jdk8u502-b07`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.6.6`
 - Labels:
@@ -2416,12 +2416,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `subversion-1.14.1-7.el9.x86_64`
 
