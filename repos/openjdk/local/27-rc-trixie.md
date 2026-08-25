@@ -1,9 +1,9 @@
-# `openjdk:27-ea-34-jdk-trixie`
+# `openjdk:27-rc-jdk-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e1af0a6618a0495b2d1b8bc11042ba4a611cf196cff6f0881ead23609af1410`
-- Created: `2026-08-10T23:33:42.318744193Z`
+- Image ID: `sha256:0960f6b4b3ade18c691cc12862bb1d2ba91772f1d1acd48b332499cc84d95dba`
+- Created: `2026-08-21T17:44:16.430749677Z`
 - Virtual Size: ~ 813.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+34`
+  - `JAVA_VERSION=27`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3405,11 +3405,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0052/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0052/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-29`
+### `dpkg` source package: `unzip=6.0-29+deb13u1`
 
 Binary Packages:
 
-- `unzip=6.0-29`
+- `unzip=6.0-29+deb13u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3418,17 +3418,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unzip=6.0-29
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-29.dsc' unzip_6.0-29.dsc 1464 SHA256:ecc73beeb9a18f354124b87f6713facb726ffd4b732ce7a6e144d073a1e777ae
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-29.debian.tar.xz' unzip_6.0-29.debian.tar.xz 25876 SHA256:14043e5ea351c02b3bc8676e1e6d20d79b9a690b6d7520e8138ac629cc048417
+$ apt-get source -qq --print-uris unzip=6.0-29+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-29%2bdeb13u1.dsc' unzip_6.0-29+deb13u1.dsc 1495 SHA256:b700df33b987c07f3d6435b175e0c2c924368d8c6e4efdcd2adf730ed69d4405
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-29%2bdeb13u1.debian.tar.xz' unzip_6.0-29+deb13u1.debian.tar.xz 27112 SHA256:32716adbdf903ee4e7e28f8c9884fc3459b22b2214e0ff4cefc0ab9839f43481
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unzip/6.0-29/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-29/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-29/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unzip/6.0-29+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-29+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-29+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.9.0-1`
 
