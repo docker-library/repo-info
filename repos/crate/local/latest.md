@@ -1,10 +1,10 @@
-# `crate:6.4.2`
+# `crate:6.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6bceb1a3677d74520e210e7970d6fc7a454adc69a81696cf3c78fa5bcd455bcc`
-- Created: `2026-08-10T18:56:53.994533673Z`
-- Virtual Size: ~ 540.49 Mb  
+- Image ID: `sha256:b6b1a5c041f21b2ab71a9ccd0654d3272089b4e0edfee2735f54964281019b57`
+- Created: `2026-08-21T17:30:30.623334845Z`
+- Virtual Size: ~ 540.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,13 +14,13 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.opencontainers.image.created=2026-08-04T11:04:40.772955+00:00`
+  - `org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=6.4.2`
+  - `org.opencontainers.image.version=6.4.3`
 
 ## `rpm` (`.rpm`-based packages)
 
