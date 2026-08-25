@@ -274,7 +274,7 @@ $ docker pull elasticsearch@sha256:1b6ac5292724d81f66d2a775462bd52a8bf3dd2029992
 ## `elasticsearch:9.4.5`
 
 ```console
-$ docker pull elasticsearch@sha256:e384b019312e26e6942cdcfabfd33cc33c369a1d44ae48958eb8cc1e11629caa
+$ docker pull elasticsearch@sha256:0b6f7a12d6630f43b81b77a615ac839bd664555a61c5ea8a01d057793ca093a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -287,315 +287,315 @@ $ docker pull elasticsearch@sha256:e384b019312e26e6942cdcfabfd33cc33c369a1d44ae4
 ### `elasticsearch:9.4.5` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:ef71e8ab31c06e6331210b5f167a8af5e7750e97ed3410fe94c3a894f3b4c2bf
+$ docker pull elasticsearch@sha256:f952fcf4281afa14399ce09a46f81c5b32c33401dd4b2589d174748b4fe2bcc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **868.8 MB (868804667 bytes)**  
+-	Total Size: **868.8 MB (868804963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6706f34b5c06ce7a59f591dfa875a4f471fb88ec57e1b743e11e420b4f0796b5`
+-	Image ID: `sha256:8009cd0a6d184521b162e32b396eca923536ce31d6d1df44d502822d1f927afd`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 ENV container oci
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:975e595a9e6cbbfee7f07eb5443a58fb81eff06cafb12ae4f0e1422e8692c141 in /      
-# Mon, 17 Aug 2026 17:27:16 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:8b54154024a9f6604a1f7d88b375ea31b450980a74152912280af8df957f00cd in /      
+# Tue, 25 Aug 2026 08:42:09 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 17 Aug 2026 17:27:16 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 CMD ["/bin/bash"]
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:65a3d9e22af3e56e090455b33d2c3174efac94e4f8a1283201a9e46186020641 in /usr/share/buildinfo/      
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:65a3d9e22af3e56e090455b33d2c3174efac94e4f8a1283201a9e46186020641 in /root/buildinfo/      
-# Mon, 17 Aug 2026 17:27:16 GMT
-LABEL "org.opencontainers.image.created"="2026-08-17T17:26:46Z" "org.opencontainers.image.revision"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "build-date"="2026-08-17T17:26:46Z" "architecture"="x86_64" "vcs-ref"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "vcs-type"="git" "release"="1786987521"org.opencontainers.image.created=2026-08-17T17:26:46Z,org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9
-# Mon, 17 Aug 2026 22:38:23 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:070ea34291ea740e6cd31833ff6dcb8f3000a7173f6294c8f875540d0e160dbf in /usr/share/buildinfo/      
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:070ea34291ea740e6cd31833ff6dcb8f3000a7173f6294c8f875540d0e160dbf in /root/buildinfo/      
+# Tue, 25 Aug 2026 08:42:10 GMT
+LABEL "org.opencontainers.image.created"="2026-08-25T08:41:53Z" "org.opencontainers.image.revision"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "build-date"="2026-08-25T08:41:53Z" "architecture"="x86_64" "vcs-ref"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "vcs-type"="git" "release"="1787647261"org.opencontainers.image.created=2026-08-25T08:41:53Z,org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f
+# Tue, 25 Aug 2026 17:46:19 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
-# Mon, 17 Aug 2026 22:38:23 GMT
+# Tue, 25 Aug 2026 17:46:19 GMT
 RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
-# Mon, 17 Aug 2026 22:39:57 GMT
+# Tue, 25 Aug 2026 17:46:51 GMT
 ENV ELASTIC_CONTAINER=true
-# Mon, 17 Aug 2026 22:39:57 GMT
+# Tue, 25 Aug 2026 17:46:51 GMT
 COPY /bin/tini /bin/tini # buildkit
-# Mon, 17 Aug 2026 22:39:57 GMT
+# Tue, 25 Aug 2026 17:46:51 GMT
 WORKDIR /usr/share/elasticsearch
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 COPY --chown=0:0 /usr/share/elasticsearch . # buildkit
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts jdk/lib/security/cacerts # buildkit
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 ENV SHELL=/bin/bash
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 COPY --chmod=0555 bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 RUN chmod g=u /etc/passwd &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 EXPOSE map[9200/tcp:{} 9300/tcp:{}]
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 LABEL org.label-schema.build-date=2026-08-05T22:14:02.491442712Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=adc1f04ffdd393d1977990338d5512c5eaf1ce94 org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=9.4.5 org.opencontainers.image.created=2026-08-05T22:14:02.491442712Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=adc1f04ffdd393d1977990338d5512c5eaf1ce94 org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.5
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 LABEL name=Elasticsearch maintainer=infra@elastic.co vendor=Elastic version=9.4.5 release=1 summary=Elasticsearch description=You know, for search.
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 CMD ["eswrapper"]
-# Mon, 17 Aug 2026 22:40:08 GMT
+# Tue, 25 Aug 2026 17:47:02 GMT
 USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:c282501e7b1aa336a39e8eb09b91d97b94921c378c6a6fbfe7b56d2db572c305`  
-		Last Modified: Mon, 17 Aug 2026 18:11:34 GMT  
-		Size: 40.7 MB (40711990 bytes)  
+	-	`sha256:4853116e101d40f67d98c14106326af68960f39e03627259f46bfe4c535cca9b`  
+		Last Modified: Tue, 25 Aug 2026 09:35:48 GMT  
+		Size: 40.7 MB (40711993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb0d684929f5a0874df655b4905c622d45a8134dbc906269f9dbd7ccaa567b62`  
-		Last Modified: Mon, 17 Aug 2026 22:41:03 GMT  
-		Size: 4.1 MB (4109954 bytes)  
+	-	`sha256:0628f0db181550a0cecbf2592a8b3d35c084edea805a6a14ca531a7eefcd0651`  
+		Last Modified: Tue, 25 Aug 2026 17:47:57 GMT  
+		Size: 4.1 MB (4110205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8dd3baa31f16f795c6a090d0f0023437f8673d7ec04187b9722be20d3676e3`  
-		Last Modified: Mon, 17 Aug 2026 22:41:02 GMT  
+	-	`sha256:cc6538164cdcbce9339b34c2a073dc191ed1485e5031b0f2f82c312520696c83`  
+		Last Modified: Tue, 25 Aug 2026 17:47:56 GMT  
 		Size: 1.5 KB (1528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fc166e3ec9433d7d77c81dfe6c92f1f083d1fd426f9718c04e91616417977a8`  
-		Last Modified: Mon, 17 Aug 2026 22:41:02 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:18bb5f85a01399570270db95cb960620da68d72d06756acd173bfca5abf0c9a8`  
+		Last Modified: Tue, 25 Aug 2026 17:47:56 GMT  
+		Size: 9.5 KB (9530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a533e8b0ec7ce2f9fb75a60fe9393af598a9238230bf2123354992988cd14d2`  
-		Last Modified: Mon, 17 Aug 2026 22:41:21 GMT  
-		Size: 823.9 MB (823892765 bytes)  
+	-	`sha256:d103511a6cd8f7c948e6667d815aa4820d80fdadcac6efb74d1af203576282c3`  
+		Last Modified: Tue, 25 Aug 2026 17:48:13 GMT  
+		Size: 823.9 MB (823892806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9c93b99e57eaa425bcde1afd23c9065918b61a165c7ddef3100d433ab006709`  
-		Last Modified: Mon, 17 Aug 2026 22:41:03 GMT  
-		Size: 269.0 B  
+	-	`sha256:ecb78484b6fa5d6180329473c34df52b4c92c059a482004d8ad107edcd06fd42`  
+		Last Modified: Tue, 25 Aug 2026 17:47:57 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a868f66855fecbb3920eb83d72edb0d5f734bc587e668367de4fadde4b30cd95`  
-		Last Modified: Mon, 17 Aug 2026 22:41:03 GMT  
-		Size: 1.7 KB (1716 bytes)  
+	-	`sha256:d575cc921d849382100eacff2d6d46a9e96b77ea1f1b68061ecd1ebb57318c8f`  
+		Last Modified: Tue, 25 Aug 2026 17:47:58 GMT  
+		Size: 1.7 KB (1717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e32f80ccf5e0d789071786f6e568866158163b1ce69f80591d3217d5b95235c3`  
-		Last Modified: Mon, 17 Aug 2026 22:41:04 GMT  
-		Size: 75.2 KB (75186 bytes)  
+	-	`sha256:5120f7c23fa683e18e516cd2b1c9241a0023568b81068563bee3076734053510`  
+		Last Modified: Tue, 25 Aug 2026 17:47:58 GMT  
+		Size: 75.2 KB (75185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e34b03e05a48a25af8151d7d17eab91cb8268e200d5a2a746230339dd51e294`  
-		Last Modified: Mon, 17 Aug 2026 22:41:05 GMT  
+	-	`sha256:a7885fc175ef474894c6db24d6034d85b3d6901c8e36e23cd75dd7539ff7132e`  
+		Last Modified: Tue, 25 Aug 2026 17:47:59 GMT  
 		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.4.5` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:73c711b5452f1cfe82fd6fc89da6271f42aabac11c02dea62afff07b19738758
+$ docker pull elasticsearch@sha256:a2f60763e96112df52bbfe5db316bda71eea6db6ddc9e86fb33ce92ea85a2ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.4 MB (2423799 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df8755ecef6118983d9a6562173430c79fe1e024e1808b94d33cfd4ece84fc44`
+-	Image ID: `sha256:4d939625bc0215b9a748002e9c623e5d29c0e81d1a4d69a3cce5aa57bfbf10be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7c01525fe096ae5d7263871da30c357425e0ec77fca89a33ba7ce57cf4f124a4`  
-		Last Modified: Mon, 17 Aug 2026 22:41:02 GMT  
+	-	`sha256:170da62e59f82e116feb0648325318a70456ad8cda19f9f89ff3a2e623837bd5`  
+		Last Modified: Tue, 25 Aug 2026 17:47:57 GMT  
 		Size: 2.4 MB (2390023 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:88a92b4ec2bac4995a388f806904178c96ca66bc9f7c915147fd24939f477dc9`  
-		Last Modified: Mon, 17 Aug 2026 22:41:02 GMT  
+	-	`sha256:e376a35d696b4fec2c9fac4a3ad0c82d723a8dd1b32f91256312a8817eaba59e`  
+		Last Modified: Tue, 25 Aug 2026 17:47:56 GMT  
 		Size: 33.8 KB (33776 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elasticsearch:9.4.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull elasticsearch@sha256:8890609c89081978cc9dbe7e98345fb420c33904a342030b87536ac8ebfb3e56
+$ docker pull elasticsearch@sha256:7dc1626fb9c7b05403f61b5bfebda2bb25e57ce819d15272b2769178e4e45dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **713.4 MB (713372502 bytes)**  
+-	Total Size: **713.4 MB (713372934 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:761d028f19d1d049b12105d98b20e9742a6c50f790a2b2a0078552cea94b3355`
+-	Image ID: `sha256:b7f42694ca7b4789afa93dd9bbb5ba8c451a302f8a5d9d0fb6f5df2c006c9ef2`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 17 Aug 2026 17:29:38 GMT
+# Tue, 25 Aug 2026 08:43:54 GMT
 ENV container oci
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:bc0c34c3de4568914cc6d0ce9e475804776b9932a837352e0a0b8eaeec65f0ab in /      
-# Mon, 17 Aug 2026 17:29:39 GMT
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:fc82963b4cd1761f20a1a620749f6598604531a4997e7419bffffcb2369d8feb in /      
+# Tue, 25 Aug 2026 08:43:55 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 17 Aug 2026 17:29:39 GMT
+# Tue, 25 Aug 2026 08:43:55 GMT
 CMD ["/bin/bash"]
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:75017821d3d7ffd12376ef094bfe2a63592d7cc455658a85911fc189573e02d7 in /usr/share/buildinfo/      
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:75017821d3d7ffd12376ef094bfe2a63592d7cc455658a85911fc189573e02d7 in /root/buildinfo/      
-# Mon, 17 Aug 2026 17:29:40 GMT
-LABEL "org.opencontainers.image.created"="2026-08-17T17:29:16Z" "org.opencontainers.image.revision"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "build-date"="2026-08-17T17:29:16Z" "architecture"="aarch64" "vcs-ref"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "vcs-type"="git" "release"="1786987521"org.opencontainers.image.created=2026-08-17T17:29:16Z,org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9
-# Mon, 17 Aug 2026 22:37:48 GMT
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:3079f305cc24544d349abf38a4bec53199670ed6b04fb0218ac1be8ab8e4f589 in /usr/share/buildinfo/      
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:3079f305cc24544d349abf38a4bec53199670ed6b04fb0218ac1be8ab8e4f589 in /root/buildinfo/      
+# Tue, 25 Aug 2026 08:43:55 GMT
+LABEL "org.opencontainers.image.created"="2026-08-25T08:43:32Z" "org.opencontainers.image.revision"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "build-date"="2026-08-25T08:43:32Z" "architecture"="aarch64" "vcs-ref"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "vcs-type"="git" "release"="1787647261"org.opencontainers.image.created=2026-08-25T08:43:32Z,org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f
+# Tue, 25 Aug 2026 17:45:44 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
-# Mon, 17 Aug 2026 22:37:49 GMT
+# Tue, 25 Aug 2026 17:45:44 GMT
 RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
-# Mon, 17 Aug 2026 22:39:07 GMT
+# Tue, 25 Aug 2026 17:46:12 GMT
 ENV ELASTIC_CONTAINER=true
-# Mon, 17 Aug 2026 22:39:07 GMT
+# Tue, 25 Aug 2026 17:46:12 GMT
 COPY /bin/tini /bin/tini # buildkit
-# Mon, 17 Aug 2026 22:39:08 GMT
+# Tue, 25 Aug 2026 17:46:12 GMT
 WORKDIR /usr/share/elasticsearch
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 COPY --chown=0:0 /usr/share/elasticsearch . # buildkit
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts jdk/lib/security/cacerts # buildkit
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 ENV SHELL=/bin/bash
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 COPY --chmod=0555 bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 RUN chmod g=u /etc/passwd &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 EXPOSE map[9200/tcp:{} 9300/tcp:{}]
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 LABEL org.label-schema.build-date=2026-08-05T22:14:02.491442712Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=adc1f04ffdd393d1977990338d5512c5eaf1ce94 org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=9.4.5 org.opencontainers.image.created=2026-08-05T22:14:02.491442712Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=adc1f04ffdd393d1977990338d5512c5eaf1ce94 org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.5
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 LABEL name=Elasticsearch maintainer=infra@elastic.co vendor=Elastic version=9.4.5 release=1 summary=Elasticsearch description=You know, for search.
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 CMD ["eswrapper"]
-# Mon, 17 Aug 2026 22:39:15 GMT
+# Tue, 25 Aug 2026 17:46:20 GMT
 USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:210b7d6959bf1413d4a100e480de134d4278c3fb9c1808fc5395449f4bd1229f`  
-		Last Modified: Mon, 17 Aug 2026 18:17:33 GMT  
-		Size: 38.8 MB (38815799 bytes)  
+	-	`sha256:cfeec01a2bba583c2dcde9b457cc89d4b56583567390972f5501ce5ad4fa4ae8`  
+		Last Modified: Tue, 25 Aug 2026 09:35:36 GMT  
+		Size: 38.8 MB (38815608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:051f554017e9aa5e4cc6663e496bc0c666f81e8d5a2d5e197585329f9027d61d`  
-		Last Modified: Mon, 17 Aug 2026 22:40:02 GMT  
-		Size: 4.1 MB (4108567 bytes)  
+	-	`sha256:31ee73c3f40edf5e57054807ce764611885c51e72f3a76686c028316b87d98ca`  
+		Last Modified: Tue, 25 Aug 2026 17:47:06 GMT  
+		Size: 4.1 MB (4109098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa7c76473952dbb94e719f4890b98da62d836c40f6ac45a28581549ff862f538`  
-		Last Modified: Mon, 17 Aug 2026 22:40:02 GMT  
-		Size: 1.5 KB (1528 bytes)  
+	-	`sha256:78d6290726b925eb285d5c261a283b575f09a9943b58f9574be7c643a480999d`  
+		Last Modified: Tue, 25 Aug 2026 17:47:06 GMT  
+		Size: 1.5 KB (1529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79233330e60cfe9ff661769a83ed76b0699435264cca8346d4de89b453efa783`  
-		Last Modified: Mon, 17 Aug 2026 22:40:02 GMT  
-		Size: 9.1 KB (9098 bytes)  
+	-	`sha256:cca7fe8f6900687894989f5515e171c6d9ca94678a94522ed7d3f94bf4fdfc39`  
+		Last Modified: Tue, 25 Aug 2026 17:47:06 GMT  
+		Size: 9.1 KB (9097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4421bbf1c98d9bb616bb0f896f993fd46ff184415baf4002580fa055562a5c7b`  
-		Last Modified: Mon, 17 Aug 2026 22:40:14 GMT  
-		Size: 670.4 MB (670359689 bytes)  
+	-	`sha256:fda1777ef3e966c3a73b7bc695913025460e867afe1f0b262d46449e87025718`  
+		Last Modified: Tue, 25 Aug 2026 17:47:19 GMT  
+		Size: 670.4 MB (670359784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:649fda1d99981e20fd776a13c7a19a02dd08e21bc5fa0d8189752c52d40b6aa8`  
-		Last Modified: Mon, 17 Aug 2026 22:40:03 GMT  
-		Size: 269.0 B  
+	-	`sha256:a1aa38c194880b9b9a4f09091b8a247d8457c94da931b3b8bc6c5e1d6ef4ab95`  
+		Last Modified: Tue, 25 Aug 2026 17:47:07 GMT  
+		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271116e2d71a17933c9d9567bfae7405ae3d5ecf1ad43fc4f2c65ddf8ce4d919`  
-		Last Modified: Mon, 17 Aug 2026 22:40:03 GMT  
-		Size: 1.7 KB (1719 bytes)  
+	-	`sha256:8284eedefdd65e6f2ac369c317d49303cf70ae35275207728fe4311969310dac`  
+		Last Modified: Tue, 25 Aug 2026 17:47:07 GMT  
+		Size: 1.7 KB (1717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62ddb9c431faf06ab5b9ea1692ad00f831741c05ff8543dfe5644eeae118fcdb`  
-		Last Modified: Mon, 17 Aug 2026 22:40:04 GMT  
-		Size: 74.1 KB (74106 bytes)  
+	-	`sha256:493987466e4558b85b8e032af99f569fc50fa8191ecc9086ccb452b262b683f0`  
+		Last Modified: Tue, 25 Aug 2026 17:47:08 GMT  
+		Size: 74.1 KB (74104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b67bb370f50f7dc7cda5c167eb89ecdac79c8de78a01fb54e15ad6ae758b06e`  
-		Last Modified: Mon, 17 Aug 2026 22:40:04 GMT  
+	-	`sha256:baa609c4026f9697107173b68a0ef4fef94f3f958d51384899f43db6f5381061`  
+		Last Modified: Tue, 25 Aug 2026 17:47:08 GMT  
 		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.4.5` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:48a6af053ed9c4b7f435ba94c67a825b15eb1e4055da5dfa1afe0844503a2cba
+$ docker pull elasticsearch@sha256:6a54a4919369621ec8694929038a181bd77e690d6530c5375418bf630c4a1244
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.4 MB (2422761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7d4de098f6f500acd439c92862191be16af8ee54314ab6541316a66dfd5b8fb`
+-	Image ID: `sha256:5a45fd948cc985704ffc07ea993ba01a66d058e88c321e9bcc6ff8f42734a90c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:705fb8d170574b803c41ea3e837d9d8ca8cf12610610194d8495c700f8749344`  
-		Last Modified: Mon, 17 Aug 2026 22:40:02 GMT  
+	-	`sha256:ecadf1b40384d7a706446470f2413cbbed488216bef89db653a2759d50a22eea`  
+		Last Modified: Tue, 25 Aug 2026 17:47:06 GMT  
 		Size: 2.4 MB (2388803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5d956735b8160f657ad840d3e27a6013b063ddd3d88c3ac030b04f32d59929cf`  
-		Last Modified: Mon, 17 Aug 2026 22:40:02 GMT  
+	-	`sha256:f0240bc073c6d7e46cebfee584f81f1870ba12aafc881c3e149bd7bc60c1e75a`  
+		Last Modified: Tue, 25 Aug 2026 17:47:06 GMT  
 		Size: 34.0 KB (33958 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `elasticsearch:9.5.2`
 
 ```console
-$ docker pull elasticsearch@sha256:38198f65c5ed1313b2bc490bf913c6fe46e512d38e70af4e3b4e8e648af4ed42
+$ docker pull elasticsearch@sha256:7b92af0bc2055e499c903ad631b40e646bd07edd8cf206da9b9265942925e5e2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -608,307 +608,307 @@ $ docker pull elasticsearch@sha256:38198f65c5ed1313b2bc490bf913c6fe46e512d38e70a
 ### `elasticsearch:9.5.2` - linux; amd64
 
 ```console
-$ docker pull elasticsearch@sha256:95316790513e253d5499daedde4197bf970d1980807be6303c50ffe96f18ac4d
+$ docker pull elasticsearch@sha256:f4826179c3a80de9fc2b521b009aeff6246bc00ea1f367b8e28f12e0f51261e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **894.6 MB (894588234 bytes)**  
+-	Total Size: **894.6 MB (894588654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bbb21aa04a3880c63d4d042c9eb3f43319cc376afa36d41964f015ad642bddc`
+-	Image ID: `sha256:2cf56f51d3da1236ef59c908ee7757d103b2b2089007a2554fd65a0b51c61871`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["eswrapper"]`
 
 ```dockerfile
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:08 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 17 Aug 2026 17:27:15 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 ENV container oci
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:975e595a9e6cbbfee7f07eb5443a58fb81eff06cafb12ae4f0e1422e8692c141 in /      
-# Mon, 17 Aug 2026 17:27:16 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:8b54154024a9f6604a1f7d88b375ea31b450980a74152912280af8df957f00cd in /      
+# Tue, 25 Aug 2026 08:42:09 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 17 Aug 2026 17:27:16 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
 CMD ["/bin/bash"]
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:65a3d9e22af3e56e090455b33d2c3174efac94e4f8a1283201a9e46186020641 in /usr/share/buildinfo/      
-# Mon, 17 Aug 2026 17:27:16 GMT
-COPY dir:65a3d9e22af3e56e090455b33d2c3174efac94e4f8a1283201a9e46186020641 in /root/buildinfo/      
-# Mon, 17 Aug 2026 17:27:16 GMT
-LABEL "org.opencontainers.image.created"="2026-08-17T17:26:46Z" "org.opencontainers.image.revision"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "build-date"="2026-08-17T17:26:46Z" "architecture"="x86_64" "vcs-ref"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "vcs-type"="git" "release"="1786987521"org.opencontainers.image.created=2026-08-17T17:26:46Z,org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9
-# Thu, 20 Aug 2026 17:21:58 GMT
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:070ea34291ea740e6cd31833ff6dcb8f3000a7173f6294c8f875540d0e160dbf in /usr/share/buildinfo/      
+# Tue, 25 Aug 2026 08:42:09 GMT
+COPY dir:070ea34291ea740e6cd31833ff6dcb8f3000a7173f6294c8f875540d0e160dbf in /root/buildinfo/      
+# Tue, 25 Aug 2026 08:42:10 GMT
+LABEL "org.opencontainers.image.created"="2026-08-25T08:41:53Z" "org.opencontainers.image.revision"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "build-date"="2026-08-25T08:41:53Z" "architecture"="x86_64" "vcs-ref"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "vcs-type"="git" "release"="1787647261"org.opencontainers.image.created=2026-08-25T08:41:53Z,org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f
+# Tue, 25 Aug 2026 17:49:14 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
-# Thu, 20 Aug 2026 17:21:58 GMT
+# Tue, 25 Aug 2026 17:49:14 GMT
 RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
-# Thu, 20 Aug 2026 17:23:38 GMT
+# Tue, 25 Aug 2026 17:50:45 GMT
 ENV ELASTIC_CONTAINER=true
-# Thu, 20 Aug 2026 17:23:38 GMT
+# Tue, 25 Aug 2026 17:50:45 GMT
 COPY /bin/tini /bin/tini # buildkit
-# Thu, 20 Aug 2026 17:23:38 GMT
+# Tue, 25 Aug 2026 17:50:45 GMT
 WORKDIR /usr/share/elasticsearch
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 COPY --chown=0:0 /usr/share/elasticsearch . # buildkit
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts jdk/lib/security/cacerts # buildkit
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 ENV SHELL=/bin/bash
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 COPY --chmod=0555 bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 RUN chmod g=u /etc/passwd &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 EXPOSE map[9200/tcp:{} 9300/tcp:{}]
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 LABEL org.label-schema.build-date=2026-08-18T10:07:58.745010960Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=9.5.2 org.opencontainers.image.created=2026-08-18T10:07:58.745010960Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.5.2
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 LABEL name=Elasticsearch maintainer=infra@elastic.co vendor=Elastic version=9.5.2 release=1 summary=Elasticsearch description=You know, for search.
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 CMD ["eswrapper"]
-# Thu, 20 Aug 2026 17:23:50 GMT
+# Tue, 25 Aug 2026 17:50:57 GMT
 USER 1000:0
 ```
 
 -	Layers:
-	-	`sha256:c282501e7b1aa336a39e8eb09b91d97b94921c378c6a6fbfe7b56d2db572c305`  
-		Last Modified: Mon, 17 Aug 2026 18:11:34 GMT  
-		Size: 40.7 MB (40711990 bytes)  
+	-	`sha256:4853116e101d40f67d98c14106326af68960f39e03627259f46bfe4c535cca9b`  
+		Last Modified: Tue, 25 Aug 2026 09:35:48 GMT  
+		Size: 40.7 MB (40711993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2b956bfe12691c918228e18ddbdb122cd9c580bcdebe845ccbdfeb117cefead`  
-		Last Modified: Thu, 20 Aug 2026 17:24:49 GMT  
-		Size: 4.1 MB (4109950 bytes)  
+	-	`sha256:314e0edd83d6b4052fc2ac1028e3eafc8557d6a7aa18b8542d3c9ee95888f2ec`  
+		Last Modified: Tue, 25 Aug 2026 17:51:53 GMT  
+		Size: 4.1 MB (4110257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcc7c57a9cc58629577a9602392ab54532d43976c155fda8ce0567366caec551`  
-		Last Modified: Thu, 20 Aug 2026 17:24:49 GMT  
-		Size: 1.5 KB (1529 bytes)  
+	-	`sha256:5c39a4a5a1ca61b094a6e87a962c6da0c0ce4e7c9de6088b36ca07cdee613586`  
+		Last Modified: Tue, 25 Aug 2026 17:51:53 GMT  
+		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6fcdf14c9547fabf022733d6aecc6496231c3e581f07d4db4698d71d49717f6`  
-		Last Modified: Thu, 20 Aug 2026 17:24:49 GMT  
-		Size: 9.5 KB (9534 bytes)  
+	-	`sha256:a366ab27cb7f87f7e9fcd3fd903c2aa50fc63f5a9e3b8c6f8cd523f0cdf0fb6e`  
+		Last Modified: Tue, 25 Aug 2026 17:51:53 GMT  
+		Size: 9.5 KB (9530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a1865cc45cf2d1327da404fdca22e2157cb320e0301707d14fbb0e62b7202cc`  
-		Last Modified: Thu, 20 Aug 2026 17:25:07 GMT  
-		Size: 849.7 MB (849676318 bytes)  
+	-	`sha256:2b576140deb4bc3a0a460999cf06926270efaf13dec07a859e1384d276b77036`  
+		Last Modified: Tue, 25 Aug 2026 17:52:20 GMT  
+		Size: 849.7 MB (849676445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36203e5dfe4f59fa694cb4d497ad553a993bb5b9630d888d9404599e84cd8cc6`  
-		Last Modified: Thu, 20 Aug 2026 17:24:50 GMT  
-		Size: 271.0 B  
+	-	`sha256:661d1bcb5aa737851ae4f47b89a7d0723964bcce1eef8bde278089c96552e3c7`  
+		Last Modified: Tue, 25 Aug 2026 17:51:54 GMT  
+		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7345eb10791004111be6b3c7f67beaec782012926dce1c7259b2ecaed582edeb`  
-		Last Modified: Thu, 20 Aug 2026 17:24:51 GMT  
-		Size: 1.7 KB (1721 bytes)  
+	-	`sha256:0ec3e794cf9bc2cc994d09355fd35b6a221ee7a0cdb3f36a4a8e44c051d2644e`  
+		Last Modified: Tue, 25 Aug 2026 17:51:54 GMT  
+		Size: 1.7 KB (1718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:007b94c1f69e7faa2066d2074a6cb62d6edd32c89182a1b3ad32d2156ad93af4`  
-		Last Modified: Thu, 20 Aug 2026 17:24:51 GMT  
-		Size: 75.2 KB (75193 bytes)  
+	-	`sha256:f2b42bb658d75d7bf2a0b8eab3e8b06b5cd7d46b6691c5a017d5c257a0ad6525`  
+		Last Modified: Tue, 25 Aug 2026 17:51:54 GMT  
+		Size: 75.2 KB (75188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:100996ea371a31fe753cd1498265ee77952d3ebc65349ced0577f9fe9f99ae8a`  
-		Last Modified: Thu, 20 Aug 2026 17:24:52 GMT  
-		Size: 1.7 KB (1696 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `elasticsearch:9.5.2` - unknown; unknown
-
-```console
-$ docker pull elasticsearch@sha256:805339cf0ae533af55fb655e06f7ec31f14b2ff740766c227be0c0c59201d64d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2475852 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6850874162273b3e2bc9bb6efc03696737f6a3c4c9ff289003ca0c80a3529fe9`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7f7119e76905834c47c6f1aaac7726985b12e4f27eb4ae26529ff96f13c14565`  
-		Last Modified: Thu, 20 Aug 2026 17:24:49 GMT  
-		Size: 2.4 MB (2442076 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8128c46bb39563dae0a77c1a862a23b7ac3633360b7e64e1ea7d334e87c47a66`  
-		Last Modified: Thu, 20 Aug 2026 17:24:49 GMT  
-		Size: 33.8 KB (33776 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `elasticsearch:9.5.2` - linux; arm64 variant v8
-
-```console
-$ docker pull elasticsearch@sha256:cba0b0b7e53a9b66ce76f4f78fb5512b97f34ae4f0d8ffe9af66de79de0c2592
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **739.1 MB (739082629 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd4946505bae1a9a5423b46871fd9b6918dae371dec28e494fade1e3b6a446d2`
--	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
--	Default Command: `["eswrapper"]`
-
-```dockerfile
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL maintainer="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL vendor="Red Hat, Inc."
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL io.openshift.expose-services=""
-# Mon, 17 Aug 2026 17:29:38 GMT
-LABEL io.openshift.tags="minimal rhel9"
-# Mon, 17 Aug 2026 17:29:38 GMT
-ENV container oci
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:bc0c34c3de4568914cc6d0ce9e475804776b9932a837352e0a0b8eaeec65f0ab in /      
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 17 Aug 2026 17:29:39 GMT
-CMD ["/bin/bash"]
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:75017821d3d7ffd12376ef094bfe2a63592d7cc455658a85911fc189573e02d7 in /usr/share/buildinfo/      
-# Mon, 17 Aug 2026 17:29:39 GMT
-COPY dir:75017821d3d7ffd12376ef094bfe2a63592d7cc455658a85911fc189573e02d7 in /root/buildinfo/      
-# Mon, 17 Aug 2026 17:29:40 GMT
-LABEL "org.opencontainers.image.created"="2026-08-17T17:29:16Z" "org.opencontainers.image.revision"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "build-date"="2026-08-17T17:29:16Z" "architecture"="aarch64" "vcs-ref"="6bb838e7904a1c68094d157a898fff623ad3fcb9" "vcs-type"="git" "release"="1786987521"org.opencontainers.image.created=2026-08-17T17:29:16Z,org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9
-# Thu, 20 Aug 2026 17:20:50 GMT
-RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
-# Thu, 20 Aug 2026 17:20:51 GMT
-RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
-# Thu, 20 Aug 2026 17:21:31 GMT
-ENV ELASTIC_CONTAINER=true
-# Thu, 20 Aug 2026 17:21:31 GMT
-COPY /bin/tini /bin/tini # buildkit
-# Thu, 20 Aug 2026 17:21:31 GMT
-WORKDIR /usr/share/elasticsearch
-# Thu, 20 Aug 2026 17:21:38 GMT
-COPY --chown=0:0 /usr/share/elasticsearch . # buildkit
-# Thu, 20 Aug 2026 17:21:38 GMT
-RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts jdk/lib/security/cacerts # buildkit
-# Thu, 20 Aug 2026 17:21:38 GMT
-ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 20 Aug 2026 17:21:38 GMT
-ENV SHELL=/bin/bash
-# Thu, 20 Aug 2026 17:21:38 GMT
-COPY --chmod=0555 bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Thu, 20 Aug 2026 17:21:39 GMT
-RUN chmod g=u /etc/passwd &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
-# Thu, 20 Aug 2026 17:21:39 GMT
-EXPOSE map[9200/tcp:{} 9300/tcp:{}]
-# Thu, 20 Aug 2026 17:21:39 GMT
-LABEL org.label-schema.build-date=2026-08-18T10:07:58.745010960Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=9.5.2 org.opencontainers.image.created=2026-08-18T10:07:58.745010960Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.5.2
-# Thu, 20 Aug 2026 17:21:39 GMT
-LABEL name=Elasticsearch maintainer=infra@elastic.co vendor=Elastic version=9.5.2 release=1 summary=Elasticsearch description=You know, for search.
-# Thu, 20 Aug 2026 17:21:39 GMT
-RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Thu, 20 Aug 2026 17:21:39 GMT
-ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
-# Thu, 20 Aug 2026 17:21:39 GMT
-CMD ["eswrapper"]
-# Thu, 20 Aug 2026 17:21:39 GMT
-USER 1000:0
-```
-
--	Layers:
-	-	`sha256:210b7d6959bf1413d4a100e480de134d4278c3fb9c1808fc5395449f4bd1229f`  
-		Last Modified: Mon, 17 Aug 2026 18:17:33 GMT  
-		Size: 38.8 MB (38815799 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de81ec62ce7f96a6cc06f7d45a6ba9b1bfb6570243ce1ab9d5754728b38ab300`  
-		Last Modified: Thu, 20 Aug 2026 17:22:27 GMT  
-		Size: 4.1 MB (4108553 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7155a6ee35f68a56443f019a5de51f5cbdda537b7bb1dd90ecf8d0b6de913a35`  
-		Last Modified: Thu, 20 Aug 2026 17:22:26 GMT  
-		Size: 1.5 KB (1530 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22b79faf24ab1b0feb397580ea9f59b3cdcb1d119d2eb563a98ad4ffb02e0dad`  
-		Last Modified: Thu, 20 Aug 2026 17:22:26 GMT  
-		Size: 9.1 KB (9100 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81aa23e3a1e36f2c2874a110e9f89d32eac5e9382c82a603918bb650d1cfb052`  
-		Last Modified: Thu, 20 Aug 2026 17:22:39 GMT  
-		Size: 696.1 MB (696069824 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e47bfabf11d3770fef74b35c1dccca292f7070a6b1316a673a0310232cd55d26`  
-		Last Modified: Thu, 20 Aug 2026 17:22:28 GMT  
-		Size: 269.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1e3599d5dab143e3d6ccc674c6d129f2f21a8ff011bd5696a5b8c411af68e98`  
-		Last Modified: Thu, 20 Aug 2026 17:22:28 GMT  
-		Size: 1.7 KB (1720 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e93759f021906e349fa7a7b750a2b9ed1adf59641ebfbfeeaaaf6196336cde67`  
-		Last Modified: Thu, 20 Aug 2026 17:22:28 GMT  
-		Size: 74.1 KB (74107 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b79a88976537e2a0e1e4c2e406cbe340f15745ec5c5d971f7f2b443ab718abe`  
-		Last Modified: Thu, 20 Aug 2026 17:22:29 GMT  
+	-	`sha256:363b11f72fa83d066dff4bb2d2213f3444815719a4bbd0e12aa3e0774f6c9de7`  
+		Last Modified: Tue, 25 Aug 2026 17:51:55 GMT  
 		Size: 1.7 KB (1695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elasticsearch:9.5.2` - unknown; unknown
 
 ```console
-$ docker pull elasticsearch@sha256:3de58c8c6a6a0167268c12a0b4fdef5f0e25ee61f4eb3533e25672aee0291b2b
+$ docker pull elasticsearch@sha256:fefb77500fc9040fd09c832e46fb4d628476b3084c659f3c0b7eb6e100db7874
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2474814 bytes)**  
+-	Total Size: **2.5 MB (2475852 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c097ddf0114787f8879b38f2ff8a17f5c7451c166ab58ececec0efeba3eed2f3`
+-	Image ID: `sha256:185c91ba05eab229aae47a60bcb6bc8fa6624db089c2df2ef132103f34e03942`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5bc0e8c667311a3a49b71529a6e3a2a68bb18476d80a4e475119cefd1f301500`  
-		Last Modified: Thu, 20 Aug 2026 17:22:27 GMT  
+	-	`sha256:b292c6570d1d0e231581f2ee5f0d4fd3965651b361d7ab10b5f33b997cf00321`  
+		Last Modified: Tue, 25 Aug 2026 17:51:53 GMT  
+		Size: 2.4 MB (2442076 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c699dd3cda6181270702b32261c0f5a73bd9a15c8b2cbb9a9d16bb2130386e5f`  
+		Last Modified: Tue, 25 Aug 2026 17:51:53 GMT  
+		Size: 33.8 KB (33776 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `elasticsearch:9.5.2` - linux; arm64 variant v8
+
+```console
+$ docker pull elasticsearch@sha256:2d5ae8917aa525decacb03c3b690a13d11e59dea8c5278fc1085e9e4d5999ef1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **739.1 MB (739082736 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:06c27386c5b0d03f2a9c4b129d6a473d152528c9a4ad2140e4eb03337b16dc35`
+-	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["eswrapper"]`
+
+```dockerfile
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL maintainer="Red Hat, Inc."
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL vendor="Red Hat, Inc."
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL io.openshift.expose-services=""
+# Tue, 25 Aug 2026 08:43:54 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Tue, 25 Aug 2026 08:43:54 GMT
+ENV container oci
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:fc82963b4cd1761f20a1a620749f6598604531a4997e7419bffffcb2369d8feb in /      
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
+# Tue, 25 Aug 2026 08:43:55 GMT
+CMD ["/bin/bash"]
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:3079f305cc24544d349abf38a4bec53199670ed6b04fb0218ac1be8ab8e4f589 in /usr/share/buildinfo/      
+# Tue, 25 Aug 2026 08:43:55 GMT
+COPY dir:3079f305cc24544d349abf38a4bec53199670ed6b04fb0218ac1be8ab8e4f589 in /root/buildinfo/      
+# Tue, 25 Aug 2026 08:43:55 GMT
+LABEL "org.opencontainers.image.created"="2026-08-25T08:43:32Z" "org.opencontainers.image.revision"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "build-date"="2026-08-25T08:43:32Z" "architecture"="aarch64" "vcs-ref"="85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f" "vcs-type"="git" "release"="1787647261"org.opencontainers.image.created=2026-08-25T08:43:32Z,org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f
+# Tue, 25 Aug 2026 17:45:27 GMT
+RUN microdnf install --setopt=tsflags=nodocs -y     nc shadow-utils zip unzip findutils procps-ng &&     microdnf clean all # buildkit
+# Tue, 25 Aug 2026 17:45:27 GMT
+RUN groupadd -g 1000 elasticsearch &&     adduser -u 1000 -g 1000 -G 0 -d /usr/share/elasticsearch elasticsearch &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
+# Tue, 25 Aug 2026 17:46:35 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 25 Aug 2026 17:46:35 GMT
+COPY /bin/tini /bin/tini # buildkit
+# Tue, 25 Aug 2026 17:46:35 GMT
+WORKDIR /usr/share/elasticsearch
+# Tue, 25 Aug 2026 17:46:43 GMT
+COPY --chown=0:0 /usr/share/elasticsearch . # buildkit
+# Tue, 25 Aug 2026 17:46:43 GMT
+RUN ln -sf /etc/pki/ca-trust/extracted/java/cacerts jdk/lib/security/cacerts # buildkit
+# Tue, 25 Aug 2026 17:46:43 GMT
+ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 25 Aug 2026 17:46:43 GMT
+ENV SHELL=/bin/bash
+# Tue, 25 Aug 2026 17:46:43 GMT
+COPY --chmod=0555 bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Tue, 25 Aug 2026 17:46:43 GMT
+RUN chmod g=u /etc/passwd &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
+# Tue, 25 Aug 2026 17:46:43 GMT
+EXPOSE map[9200/tcp:{} 9300/tcp:{}]
+# Tue, 25 Aug 2026 17:46:43 GMT
+LABEL org.label-schema.build-date=2026-08-18T10:07:58.745010960Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=9.5.2 org.opencontainers.image.created=2026-08-18T10:07:58.745010960Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=b42549c72e6e040825b13e5d8ebf7ff63886b24d org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.5.2
+# Tue, 25 Aug 2026 17:46:43 GMT
+LABEL name=Elasticsearch maintainer=infra@elastic.co vendor=Elastic version=9.5.2 release=1 summary=Elasticsearch description=You know, for search.
+# Tue, 25 Aug 2026 17:46:43 GMT
+RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
+# Tue, 25 Aug 2026 17:46:43 GMT
+ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
+# Tue, 25 Aug 2026 17:46:43 GMT
+CMD ["eswrapper"]
+# Tue, 25 Aug 2026 17:46:43 GMT
+USER 1000:0
+```
+
+-	Layers:
+	-	`sha256:cfeec01a2bba583c2dcde9b457cc89d4b56583567390972f5501ce5ad4fa4ae8`  
+		Last Modified: Tue, 25 Aug 2026 09:35:36 GMT  
+		Size: 38.8 MB (38815608 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5590ab10ad0abc657e9954e5d344b8205045280f88a53dc052e30d0bba2a8e96`  
+		Last Modified: Tue, 25 Aug 2026 17:47:30 GMT  
+		Size: 4.1 MB (4109048 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eaf202d78d785aa1771e836c18ee8d8b497ef7ec8936c11c7a481507ecbd2c77`  
+		Last Modified: Tue, 25 Aug 2026 17:47:30 GMT  
+		Size: 1.5 KB (1527 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2bbbc9b79bb4f7a0f17b7e382e73ac6ecec37b054746343b40cad7a5f750807`  
+		Last Modified: Tue, 25 Aug 2026 17:47:30 GMT  
+		Size: 9.1 KB (9102 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:91f5977255134a00916d784f21a50391ab9b632f518ef72f586c253a272f79a0`  
+		Last Modified: Tue, 25 Aug 2026 17:47:43 GMT  
+		Size: 696.1 MB (696069625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ef818bb40bb37efadedf1d4e89ab9209fcb4fe292f39f4a65afc7e9466a2188d`  
+		Last Modified: Tue, 25 Aug 2026 17:47:31 GMT  
+		Size: 271.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ef93237ce3ac88f5ded359ef6b488768c7d4ab46e42d339af07c7c089cffa9e`  
+		Last Modified: Tue, 25 Aug 2026 17:47:31 GMT  
+		Size: 1.7 KB (1719 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c69cd147a5c7103ee7bfa1a387b0e31d6b66c083e710476f6bee6846ca574e57`  
+		Last Modified: Tue, 25 Aug 2026 17:47:32 GMT  
+		Size: 74.1 KB (74109 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d79dcf592681a8b893ccc82d5705deb694f5a6976354e2c87ed2f41032f9e377`  
+		Last Modified: Tue, 25 Aug 2026 17:47:33 GMT  
+		Size: 1.7 KB (1695 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `elasticsearch:9.5.2` - unknown; unknown
+
+```console
+$ docker pull elasticsearch@sha256:4ad22dfdbb19a7386e665b9c8eab8d5981b99dd9a1c91500d7a9d73b76543971
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.5 MB (2474814 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d85f6d0a7a4b3c120fbc63ce148705a16bf8e950ae62ff31f6ee4d3b4fd71fe2`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ed71272ed9725985830fd482abd4438ee3e78064cd2189c69da23ff706bbd2ec`  
+		Last Modified: Tue, 25 Aug 2026 17:47:30 GMT  
 		Size: 2.4 MB (2440856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6d9a5679fd1af4a2b6dc5a51b4cf2b5ff9d54d74f6197e659039537169ae7258`  
-		Last Modified: Thu, 20 Aug 2026 17:22:26 GMT  
+	-	`sha256:053d04af6fcb1a6bf5728132dd329d1907cd554b16142f682895d769eac62668`  
+		Last Modified: Tue, 25 Aug 2026 17:47:30 GMT  
 		Size: 34.0 KB (33958 bytes)  
 		MIME: application/vnd.in-toto+json
