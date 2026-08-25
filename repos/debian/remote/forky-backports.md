@@ -1,7 +1,7 @@
 ## `debian:forky-backports`
 
 ```console
-$ docker pull debian@sha256:083cd577ad4f95e5dcd47ca6b4b3f422ebd17fe51548c2d687a64ef60b216e2f
+$ docker pull debian@sha256:3c76ee060ffa866ebc1abe6a6771c9fc1f0adbef389e8318d92fd86bdceddbc7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -183,107 +183,107 @@ $ docker pull debian@sha256:8d547008aaf5225e1637db0bc593a26328a124b89bc2bfff15a2
 ### `debian:forky-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:80fc21ff26290a3582bdbaf5e7a3a74b7222073fc6aa6cbf4e052274cfe8950d
+$ docker pull debian@sha256:7f5cd5ba285343b3294beaf7b57f2de29d8fa728682c88ab136ccb1d9af3c846
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.7 MB (50668914 bytes)**  
+-	Total Size: **50.9 MB (50891385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99d82f47a783802eecb70991befa7f20f3ec1c2662309356490942f7c2aff97`
+-	Image ID: `sha256:ae69aed8245e9df5d799241f5e6070917814350864d574392cc8e38e2893f4c5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'forky' '@1785715200'
-# Wed, 05 Aug 2026 00:15:17 GMT
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'forky' '@1787529600'
+# Tue, 25 Aug 2026 00:15:29 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:5ee9cec7ecffffde5454be1577dcc2e874bcfbeb92f7c0c58c02330aa3cd53bf`  
-		Last Modified: Tue, 04 Aug 2026 23:51:46 GMT  
-		Size: 50.7 MB (50668690 bytes)  
+	-	`sha256:aaf68b813d1715d979a28cb2734f0c4792e12b8f67526d02f1eb51e9f0ab73d6`  
+		Last Modified: Mon, 24 Aug 2026 23:20:41 GMT  
+		Size: 50.9 MB (50891162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c1ff58dfac1df78c93e4bce85d59f2bc7912f12d323e8c7fe8cb2ee95ff7aad`  
-		Last Modified: Wed, 05 Aug 2026 00:15:23 GMT  
-		Size: 224.0 B  
+	-	`sha256:5138a68acabfc670ca256966d037ccf765990aa7692f843bb6ad91045cf51163`  
+		Last Modified: Tue, 25 Aug 2026 00:15:35 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:aa28227d8e2d17bcda9577372165a06f990f1d735377a1e7f530ff5d39f0c48e
+$ docker pull debian@sha256:acf0482c34aca574bc41331fe0f95892887272fb9e7925cf0f053244fe048e8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3197135 bytes)**  
+-	Total Size: **3.2 MB (3197640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8db5226e275c039de38a9e27cb3879e30dd19a54d07a6a38fdc06d9afc83188d`
+-	Image ID: `sha256:d48c5d3279eeaef1052d1ebe09edd16a95d5298e17b23966a85ad4dbd7e23bd2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e4c67760f7f011a078fb219f779dfff2b3283c4de73875f640373671d85b8d92`  
-		Last Modified: Wed, 05 Aug 2026 00:15:23 GMT  
-		Size: 3.2 MB (3191374 bytes)  
+	-	`sha256:db8de398786f7c95bb3ab4c185e2f0eb759d80ca2640d004000633c8f6f19e48`  
+		Last Modified: Tue, 25 Aug 2026 00:15:36 GMT  
+		Size: 3.2 MB (3191879 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fb891234f8a60465922a126ef20bacbbc69b9563070842b2a700095602a24b`  
-		Last Modified: Wed, 05 Aug 2026 00:15:23 GMT  
+	-	`sha256:1c9d3fbb232d962989bde1e55332f024f6f44e129fef4b284cfa4c21272b4a27`  
+		Last Modified: Tue, 25 Aug 2026 00:15:35 GMT  
 		Size: 5.8 KB (5761 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:ebc031bf31badda7aa182b835aeb0c3c0f4cd57deda50ea256ae0f7fdb29a995
+$ docker pull debian@sha256:8562af11e6c4908a2df47d3940f16d56ace238d5ff816c69f06a3d4d2783aca4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.7 MB (54675247 bytes)**  
+-	Total Size: **54.8 MB (54795293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6eafe407ecee6d8a7ff248e501b16e166f4907c6ec2851782f612e41ff643b6c`
+-	Image ID: `sha256:897850e432b6be006358eb8aa0b4cc84e7d6c5cd2e2471f4a939b519cce43ca5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 03 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'forky' '@1785715200'
-# Wed, 05 Aug 2026 03:50:36 GMT
+# Mon, 24 Aug 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'forky' '@1787529600'
+# Tue, 25 Aug 2026 00:14:05 GMT
 RUN echo 'deb http://deb.debian.org/debian forky-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:58bf9e1f9f35e2c6a73b629d77c34637db6af6dea128933949542988f5d743f4`  
-		Last Modified: Tue, 04 Aug 2026 23:50:54 GMT  
-		Size: 54.7 MB (54675023 bytes)  
+	-	`sha256:c7ecd50aeb6375d3d0c7120423d98e9beb1310a2c03f9fe165066e2287c041a0`  
+		Last Modified: Mon, 24 Aug 2026 23:19:44 GMT  
+		Size: 54.8 MB (54795070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd418e95d3d662902bb75d12bc001dcd01c08d04621adfc071b817995e56d2c7`  
-		Last Modified: Wed, 05 Aug 2026 03:51:07 GMT  
-		Size: 224.0 B  
+	-	`sha256:c88f6d57ebb76e4c723e42f8341b0cf0930131fd52d114406362c776e16b679c`  
+		Last Modified: Tue, 25 Aug 2026 00:14:18 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:forky-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:a9d4eb2d98dec76b197dedd3b1bc48c6a72d7733a793ca49a60fc7bbab558a6c
+$ docker pull debian@sha256:7db95a5975cf1a86046b37f69ffd3c252cf891ece912eaaa8974c073836ca32e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3203847 bytes)**  
+-	Total Size: **3.2 MB (3204348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab17b9e9c9b4f17d062e00880bbc2fcf051cf6ba02eed5e637b59ac72a25aa3f`
+-	Image ID: `sha256:756a1ed86ec6e7da744f3fcd37cfcbf7bff6781076e039dd97e7b15c20ce74c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:33558d23ea547e1e84aa2df0b7780509464337f87cdacf43e972cc8fcfb51d65`  
-		Last Modified: Wed, 05 Aug 2026 03:51:07 GMT  
-		Size: 3.2 MB (3198043 bytes)  
+	-	`sha256:bef5e1c95504e1b72c58f74da58a833160cbbfe1719d8a39a344a95c46e2797a`  
+		Last Modified: Tue, 25 Aug 2026 00:14:18 GMT  
+		Size: 3.2 MB (3198545 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:098a432d7e3b93f5808400470ce4141cbd06971c0f02fce01bd01916da5cc4e7`  
-		Last Modified: Wed, 05 Aug 2026 03:51:07 GMT  
-		Size: 5.8 KB (5804 bytes)  
+	-	`sha256:cd6a323fec02c0bb4bd0729565241d63fad8331bf6b42b8389dfbe4a63e4994a`  
+		Last Modified: Tue, 25 Aug 2026 00:14:18 GMT  
+		Size: 5.8 KB (5803 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:forky-backports` - linux; riscv64
