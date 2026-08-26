@@ -1,10 +1,10 @@
-# `mariadb:10.11.18-jammy`
+# `mariadb:10.11.19-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5077e20185da2defdc68763c9f87e9ce6c449207f9e8de120dee346b54ce696`
-- Created: `2026-08-18T01:19:25.621743673Z`
-- Virtual Size: ~ 326.08 Mb  
+- Image ID: `sha256:469ca2503d14f4ee8e7960ad186840a1cf4574378bb79608d40e46bd238c2f28`
+- Created: `2026-08-24T18:05:30.353288417Z`
+- Virtual Size: ~ 326.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.18+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.19+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -24,7 +24,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.18`
+  - `org.opencontainers.image.version=10.11.19`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1573,18 +1573,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.18+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.19+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.18+maria~ubu2204`
-- `mariadb-backup=1:10.11.18+maria~ubu2204`
-- `mariadb-client=1:10.11.18+maria~ubu2204`
-- `mariadb-client-core=1:10.11.18+maria~ubu2204`
-- `mariadb-common=1:10.11.18+maria~ubu2204`
-- `mariadb-server=1:10.11.18+maria~ubu2204`
-- `mariadb-server-core=1:10.11.18+maria~ubu2204`
-- `mysql-common=1:10.11.18+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.19+maria~ubu2204`
+- `mariadb-backup=1:10.11.19+maria~ubu2204`
+- `mariadb-client=1:10.11.19+maria~ubu2204`
+- `mariadb-client-core=1:10.11.19+maria~ubu2204`
+- `mariadb-common=1:10.11.19+maria~ubu2204`
+- `mariadb-server=1:10.11.19+maria~ubu2204`
+- `mariadb-server-core=1:10.11.19+maria~ubu2204`
+- `mysql-common=1:10.11.19+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1593,9 +1593,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.18+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.18/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.18%2bmaria%7eubu2204.dsc' mariadb_10.11.18+maria~ubu2204.dsc 4276 SHA256:f98d5deaaf0dc7309907f4ac3baf4dbaa03904abbe48c376680f024c72600fdb
-'http://archive.mariadb.org/mariadb-10.11.18/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.18%2bmaria%7eubu2204.tar.xz' mariadb_10.11.18+maria~ubu2204.tar.xz 183900548 SHA256:2bb982d8c69c923bb5fa92982f925c0e780e7368a2b1bb953fd1cd528dc7052a
+$ apt-get source -qq --print-uris mariadb=1:10.11.19+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.19/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.19%2bmaria%7eubu2204.dsc' mariadb_10.11.19+maria~ubu2204.dsc 4187 SHA512:0b022d737c38fd45b61b1b891b678de36cf5d176d4e6fac1270d8ed96ac55fda5dfbd3c9e4687ad495abfc32cbaafcd1c9beb60c8f2f497b1a5bd9609992fb66
+'http://archive.mariadb.org/mariadb-10.11.19/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.19%2bmaria%7eubu2204.tar.xz' mariadb_10.11.19+maria~ubu2204.tar.xz 184425432 SHA512:b22e61d6613b180cb30ba61e7729fea852eadd0a7819eb6c7be6560efaa4e2143b43c3ecd077c911b62240b183f2675477f2b39c7bf01eedf44d68b12c133088
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
@@ -1708,15 +1708,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.26
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.debian.tar.xz' openssl_3.0.2-0ubuntu1.26.debian.tar.xz 293340 SHA512:ad719686887f4755dca3e747723c8222e6a0f019e056e96d0b6d22c92e640b83901a2a3e32af79f288cf72097aca510259b733dffb64d3a777461034244b54c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.dsc' openssl_3.0.2-0ubuntu1.26.dsc 2730 SHA512:fe4685066cac1cf41f5cbfb6f9db7669d0654b746c3a6aaeb8e4598e1a88e6bf7437f23c03732112c5c24135cf98de4e7c951f1a04fc54f2a2b6740a100d551a
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -1844,15 +1838,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.debian.tar.xz' perl_5.34.0-3ubuntu1.7.debian.tar.xz 202360 SHA512:113a4ac142c5d29a98aac9403e1641a27e06ab6c0472dc6d1063a5b4d643739def16bdef2b441f5d657cf54fe1c82f916034d2d75dc30849839e453540870b6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.dsc' perl_5.34.0-3ubuntu1.7.dsc 2846 SHA512:b519fc33f507a36e2ba06df6a7df4ffb28f26d8f3977b88b8dd958ac5fd9333c94fa15acfa887f73365b27abbc32caf8b2e337ec48285ac019fd575bab8b2664
-```
 
 ### `dpkg` source package: `popt=1.18-3build1`
 

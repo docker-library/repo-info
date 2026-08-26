@@ -1,10 +1,10 @@
-# `mariadb:12.3.2-ubi10`
+# `mariadb:12.3.3-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e332b568f64846b40e0f846018456ac623c198f57f071b54b712cf4f0e9d06cc`
-- Created: `2026-08-21T17:48:44.381298261Z`
-- Virtual Size: ~ 527.26 Mb  
+- Image ID: `sha256:c61279cf01af0c3e6529deb5122f04b8fd5250cc8f2391e6663d78118d9d9db0`
+- Created: `2026-08-24T18:04:50.732378527Z`
+- Virtual Size: ~ 529.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.19`
-  - `MARIADB_VERSION=12.3.2`
+  - `MARIADB_VERSION=12.3.3`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-08-20T05:42:51Z`
@@ -40,14 +40,14 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=12.3.2`
+  - `org.opencontainers.image.version=12.3.3`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
   - `vcs-ref=b2232799f269a1f388bb8eab702d61fa78c72fce`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=12.3.2`
+  - `version=12.3.3`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -61,12 +61,7 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url attr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `audit-libs-4.0.3-5.0.1.el10.x86_64`
 
@@ -179,12 +174,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
 
@@ -565,12 +555,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.40.2-18.0.1.el10.x86_64`
 
@@ -1163,23 +1148,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pam-libs-1.6.1-9.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
 
@@ -1481,12 +1456,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): blessing
 
-Source:
-
-```console
-$ dnf --quiet download --source --url sqlite-libs-3.46.1-5.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.46.1-5.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
 

@@ -1,10 +1,10 @@
-# `mariadb:11.8.8-ubi9`
+# `mariadb:11.8.9-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:df7d571e3a9bcaf4f1ec7c1a162398fb5dcd99f8e12c0a09f8954e83e4f4f33f`
-- Created: `2026-08-17T22:39:20.033699854Z`
-- Virtual Size: ~ 515.78 Mb  
+- Image ID: `sha256:e25a71c4039226f4a11dca3e08c36174459519c1eee046ab46248ec2847dd748`
+- Created: `2026-08-25T17:46:58.440150534Z`
+- Virtual Size: ~ 516.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,10 +13,10 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.19`
-  - `MARIADB_VERSION=11.8.8`
+  - `MARIADB_VERSION=11.8.9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-17T17:26:46Z`
+  - `build-date=2026-08-25T08:41:53Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,63 +31,63 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-08-17T17:26:46Z`
+  - `org.opencontainers.image.created=2026-08-25T08:41:53Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9`
+  - `org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.8.8`
+  - `org.opencontainers.image.version=11.8.9`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=6bb838e7904a1c68094d157a898fff623ad3fcb9`
+  - `vcs-ref=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=11.8.8`
+  - `version=11.8.9`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `MariaDB-backup-11.8.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-backup-11.8.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-11.8.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-client-11.8.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-compat-11.8.8-1.el9.noarch`
+### `rpm` package: `MariaDB-client-compat-11.8.9-1.el9.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-common-11.8.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-common-11.8.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-11.8.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-server-11.8.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-compat-11.8.8-1.el9.noarch`
+### `rpm` package: `MariaDB-server-compat-11.8.9-1.el9.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-shared-11.8.8-1.el9.x86_64`
+### `rpm` package: `MariaDB-shared-11.8.9-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
@@ -732,12 +732,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.1-3.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.37.4-25.el9.x86_64`
 
@@ -2367,15 +2362,26 @@ $ dnf --quiet download --source --url socat-1.7.4.1-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/s/socat-1.7.4.1-8.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-10.el9_8.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-10.el9_8.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-11.el9_8.src.rpm
+```
+
+### `rpm` package: `stunnel-5.71-2.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv2
+
+Source:
+
+```console
+$ dnf --quiet download --source --url stunnel-5.71-2.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/stunnel-5.71-2.el9.src.rpm
 ```
 
 ### `rpm` package: `systemd-252-67.el9_8.4.x86_64`
