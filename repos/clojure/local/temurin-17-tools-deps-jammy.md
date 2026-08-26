@@ -323,15 +323,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.26
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.debian.tar.xz' curl_7.81.0-1ubuntu1.26.debian.tar.xz 99540 SHA512:3e9c79e561dd1a259109140906e7808d17bcadbf0fda5e1d89c00ca9c0ff0d1b12eebe56ef30d4e79269ac9c1466861b20f22350abb3a3454d17a3ea277adea0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.26.dsc' curl_7.81.0-1ubuntu1.26.dsc 3180 SHA512:ff01d718b22f23e9329e425fbe3a25906dbbe2f6b69712e711247e3f13d3ecb61093f703ea89f8b1c15b73275c99c0ac104cbf203a4157cf9cfa79e370d2623d
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -2035,15 +2029,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.26
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.debian.tar.xz' openssl_3.0.2-0ubuntu1.26.debian.tar.xz 293340 SHA512:ad719686887f4755dca3e747723c8222e6a0f019e056e96d0b6d22c92e640b83901a2a3e32af79f288cf72097aca510259b733dffb64d3a777461034244b54c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.dsc' openssl_3.0.2-0ubuntu1.26.dsc 2730 SHA512:fe4685066cac1cf41f5cbfb6f9db7669d0654b746c3a6aaeb8e4598e1a88e6bf7437f23c03732112c5c24135cf98de4e7c951f1a04fc54f2a2b6740a100d551a
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -2192,15 +2180,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.debian.tar.xz' perl_5.34.0-3ubuntu1.7.debian.tar.xz 202360 SHA512:113a4ac142c5d29a98aac9403e1641a27e06ab6c0472dc6d1063a5b4d643739def16bdef2b441f5d657cf54fe1c82f916034d2d75dc30849839e453540870b6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.dsc' perl_5.34.0-3ubuntu1.7.dsc 2846 SHA512:b519fc33f507a36e2ba06df6a7df4ffb28f26d8f3977b88b8dd958ac5fd9333c94fa15acfa887f73365b27abbc32caf8b2e337ec48285ac019fd575bab8b2664
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -2304,9 +2286,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.16
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.debian.tar.xz' python3.10_3.10.12-1~22.04.16.debian.tar.xz 295076 SHA512:53a45b5744a563d26c96c614a1fd0531ee1bd138aeb2c2a81e7a5ec326b72480132a65b8bcf49d3054b99a9968991fea85f8c4bc806925c0ab117bdf0473a4a3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.dsc' python3.10_3.10.12-1~22.04.16.dsc 3678 SHA512:687e9913126183dd5be7bbbfcf7068138f8d7c81a78e894db0317034b620e1793fe1b0a6e542e5f2ccde1f8b00f6d74e74d5e3131baf09122669c6bec94e997d
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.debian.tar.xz' python3.10_3.10.12-1~22.04.16.debian.tar.xz 295076 SHA512:53a45b5744a563d26c96c614a1fd0531ee1bd138aeb2c2a81e7a5ec326b72480132a65b8bcf49d3054b99a9968991fea85f8c4bc806925c0ab117bdf0473a4a3
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.dsc' python3.10_3.10.12-1~22.04.16.dsc 3678 SHA512:687e9913126183dd5be7bbbfcf7068138f8d7c81a78e894db0317034b620e1793fe1b0a6e542e5f2ccde1f8b00f6d74e74d5e3131baf09122669c6bec94e997d
 ```
 
 ### `dpkg` source package: `readline=8.1.2-1`
