@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3731b436f7eb9683a1c53527fcf783646d01cf64761f547be3fe375795fba856`
-- Created: `2026-08-05T00:45:37.139111329Z`
-- Virtual Size: ~ 367.15 Mb  
+- Image ID: `sha256:da3172bafdcdfcae651ba49fe401c8824bf2eef1850d5d1b94b1c24dcba052c2`
+- Created: `2026-08-25T00:51:36.397648686Z`
+- Virtual Size: ~ 367.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
@@ -1914,35 +1914,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nss/2:3.110-1+deb13u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nss/2:3.110-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjdk-21=21.0.11+10-1~deb13u2`
+### `dpkg` source package: `openjdk-21=21.0.12.1+1-1~deb13u1`
 
 Binary Packages:
 
-- `openjdk-21-jre-headless:amd64=21.0.11+10-1~deb13u2`
+- `openjdk-21-jre-headless:amd64=21.0.12.1+1-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-21-jre-headless/copyright`)
 
-- `BSD-C3`
-- `GPL with Classpath exception`
+- `BSD-3-Clause`
 - `GPL-2`
-- `LGPL`
+- `GPL2 with Classpath exception`
+- `LGPL-2.1`
 - `MIT`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.11+10-1~deb13u2
-'http://deb.debian.org/debian/pool/main/o/openjdk-21/openjdk-21_21.0.11%2b10-1%7edeb13u2.dsc' openjdk-21_21.0.11+10-1~deb13u2.dsc 5095 SHA256:910bdf638fd3ecb44ebdf94143cb611e715494ea05cdb8cb4b7dc96794eb8db1
-'http://deb.debian.org/debian/pool/main/o/openjdk-21/openjdk-21_21.0.11%2b10.orig-googletest.tar.xz' openjdk-21_21.0.11+10.orig-googletest.tar.xz 613408 SHA256:6e6699c442cd6bc008140d159b43a7a39bb811d1ecd380cf3b707cc535e04393
-'http://deb.debian.org/debian/pool/main/o/openjdk-21/openjdk-21_21.0.11%2b10.orig.tar.xz' openjdk-21_21.0.11+10.orig.tar.xz 67649120 SHA256:0bd85b2ddd8a4cfcb3f4bee02e01e1cc001b9ac9f7f1ecbbe1c37ac6fbc34d99
-'http://deb.debian.org/debian/pool/main/o/openjdk-21/openjdk-21_21.0.11%2b10-1%7edeb13u2.debian.tar.xz' openjdk-21_21.0.11+10-1~deb13u2.debian.tar.xz 231412 SHA256:6a0ac85ad077a4140e07ea8cd1a4b078efe35eba7e93220856e01d1d938e7e56
+$ apt-get source -qq --print-uris openjdk-21=21.0.12.1+1-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-21/openjdk-21_21.0.12.1%2b1-1%7edeb13u1.dsc' openjdk-21_21.0.12.1+1-1~deb13u1.dsc 5152 SHA256:bf1593ec4a5cc809e445b6a456625328d358058353be86f1f36a08fc2110cedd
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-21/openjdk-21_21.0.12.1%2b1.orig-googletest.tar.xz' openjdk-21_21.0.12.1+1.orig-googletest.tar.xz 615644 SHA256:94695f01012f939e8eeb51f839dd11323a57a6bb70dee8a34c7a7a1cddf00905
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-21/openjdk-21_21.0.12.1%2b1.orig.tar.xz' openjdk-21_21.0.12.1+1.orig.tar.xz 67853652 SHA256:ec270145b9c8870e6f0263597efefc6e2c90d99dbe41135b3d8fb8b887499aa5
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-21/openjdk-21_21.0.12.1%2b1-1%7edeb13u1.debian.tar.xz' openjdk-21_21.0.12.1+1-1~deb13u1.debian.tar.xz 232260 SHA256:b81c5aee89347faf1777b44a487d8ca3e323f5253be6da56b574dbba7cce98a5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjdk-21/21.0.11+10-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-21/21.0.11+10-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-21/21.0.11+10-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjdk-21/21.0.12.1+1-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/openjdk-21/21.0.12.1+1-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjdk-21/21.0.12.1+1-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
@@ -2569,19 +2569,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2026b-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2026b-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.41-5`
+### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-5`
-- `libblkid1:amd64=2.41-5`
-- `liblastlog2-2:amd64=2.41-5`
-- `libmount1:amd64=2.41-5`
-- `libsmartcols1:amd64=2.41-5`
-- `libuuid1:amd64=2.41-5`
-- `login=1:4.16.0-2+really2.41-5`
-- `mount=2.41-5`
-- `util-linux=2.41-5`
+- `bsdutils=1:2.41.5-0+deb13u1`
+- `libblkid1:amd64=2.41.5-0+deb13u1`
+- `liblastlog2-2:amd64=2.41.5-0+deb13u1`
+- `libmount1:amd64=2.41.5-0+deb13u1`
+- `libsmartcols1:amd64=2.41.5-0+deb13u1`
+- `libuuid1:amd64=2.41.5-0+deb13u1`
+- `login=1:4.16.0-2+really2.41.5-0+deb13u1`
+- `mount=2.41.5-0+deb13u1`
+- `util-linux=2.41.5-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2607,17 +2607,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.dsc' util-linux_2.41-5.dsc 4942 SHA256:9e84dcc64170262f850aa5fd65902846a1ebf054d556ab5c4ec17fa16b00e628
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.debian.tar.xz' util-linux_2.41-5.debian.tar.xz 120144 SHA256:20ad832160d5ed8de4759ce00652f620ce642ab583c3c1c431b68a15cdba1d07
+$ apt-get source -qq --print-uris util-linux=2.41.5-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.dsc' util-linux_2.41.5-0+deb13u1.dsc 4988 SHA256:43e9b2cbebd10fdc598c4ad10217c8202c28de53af6eafc892c8e9b5cbf3a3a5
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5.orig.tar.xz' util-linux_2.41.5.orig.tar.xz 9474992 SHA256:f586e35d320ff537aab3ffeca37e9ecd482ccbe013590db4429a414d8aa6a728
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.debian.tar.xz' util-linux_2.41.5-0+deb13u1.debian.tar.xz 107604 SHA256:5b327ccd22f0f4ed28a389870aa51d04ecedb8693e52a1d122850f2b3188cbf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
