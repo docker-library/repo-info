@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf3116eb146cce879c96ae3d59a8de2f1fe434b859b9fcab31b4d6e136c9d823`
-- Created: `2026-08-21T18:22:44.932427746Z`
-- Virtual Size: ~ 293.16 Mb  
+- Image ID: `sha256:debce6e917e12b989227276248be4accb3322aa0d55e40e94b8127f4cb10cd12`
+- Created: `2026-08-25T17:45:53.093692651Z`
+- Virtual Size: ~ 293.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk8u502-b07`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-17T17:26:46Z`
+  - `build-date=2026-08-25T08:41:53Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-17T17:26:46Z`
-  - `org.opencontainers.image.revision=6bb838e7904a1c68094d157a898fff623ad3fcb9`
-  - `release=1786987521`
+  - `org.opencontainers.image.created=2026-08-25T08:41:53Z`
+  - `org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
+  - `release=1787647261`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=6bb838e7904a1c68094d157a898fff623ad3fcb9`
+  - `vcs-ref=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -697,12 +697,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.1-3.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.37.4-25.el9.x86_64`
 
@@ -1529,15 +1524,15 @@ $ dnf --quiet download --source --url shadow-utils-4.9-16.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-16.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-10.el9_8.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-10.el9_8.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-11.el9_8.src.rpm
 ```
 
 ### `rpm` package: `systemd-252-67.el9_8.4.x86_64`

@@ -323,14 +323,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.12
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.debian.tar.xz' curl_8.5.0-2ubuntu10.12.debian.tar.xz 84352 SHA512:5c1ac08f57563800007f31370d1080836fa187cf6c18e02cdd3116f1b0a8a1e6cec9deccfc96d5cb193918c5881bed39a8e6f854e87e7a7143cbab46f4289755
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.12.dsc' curl_8.5.0-2ubuntu10.12.dsc 3092 SHA512:df51cce2e0bbd1bd6924464e71c182c6635193afbb8b59dc3d366974d5488f8eab6001238a5d976b8e95e26d24677359c44a0aae246a0758627199ab4c5a2488
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1639,14 +1634,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.debian.tar.xz' openssl_3.0.13-0ubuntu3.12.debian.tar.xz 197124 SHA512:eed41bdde74405cbe96ed3a18cb4b95c5cc65bcb7630245981090bc7e36510b65d96ed530d09b7582fca8158f9383475d4efc2e78e374e059af4102a0f90c35a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.dsc' openssl_3.0.13-0ubuntu3.12.dsc 2516 SHA512:304f5cd24991427633fbbaf5e2f6c1b84a7388c82d34740f9821927dbfb5a49d40e6e5f182cd4c417b957dd428de23e756fcd9ba50c8ca889f067bf4ba390b46
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -1819,14 +1809,9 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-4ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.debian.tar.xz' procps_4.0.4-4ubuntu3.2.debian.tar.xz 38784 SHA256:519e5cd39f4a8401dfd892134f3c5ccf5221f23fe32174393ce81cc45526f05e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.dsc' procps_4.0.4-4ubuntu3.2.dsc 2251 SHA256:eee89a6469fcc4fb8ee3844b10bf48c894322ff781e92732554c7ceed680c5a1
-```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 

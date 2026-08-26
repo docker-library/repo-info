@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc10f8ebaf518abfa55f91ecc848d3bccf6bba83f081dacba2858872c5eccfa3`
-- Created: `2026-08-21T18:23:31.254386329Z`
-- Virtual Size: ~ 317.02 Mb  
+- Image ID: `sha256:61a5dfa7d435659a00824548173f247f940398b3b231826ac7d64c51628c9160`
+- Created: `2026-08-26T18:29:38.496816718Z`
+- Virtual Size: ~ 317.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-11.0.32+9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-20T05:42:51Z`
+  - `build-date=2026-08-25T20:06:27Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-20T05:42:51Z`
-  - `org.opencontainers.image.revision=b2232799f269a1f388bb8eab702d61fa78c72fce`
-  - `release=1787204459`
+  - `org.opencontainers.image.created=2026-08-25T20:06:27Z`
+  - `org.opencontainers.image.revision=0b4cc93aa2450ac257d3e3051c62ff62306cdb95`
+  - `release=1787688243`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b2232799f269a1f388bb8eab702d61fa78c72fce`
+  - `vcs-ref=0b4cc93aa2450ac257d3e3051c62ff62306cdb95`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -53,12 +53,7 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url attr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `audit-libs-4.0.3-5.0.1.el10.x86_64`
 
@@ -171,12 +166,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
 
@@ -557,12 +547,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.40.2-18.0.1.el10.x86_64`
 
@@ -1155,23 +1140,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pam-libs-1.6.1-9.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
 
@@ -1473,12 +1448,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): blessing
 
-Source:
-
-```console
-$ dnf --quiet download --source --url sqlite-libs-3.46.1-5.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.46.1-5.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
 
