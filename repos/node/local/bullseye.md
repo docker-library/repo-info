@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2d76bfd8c341856e5e375d6bce671b8e356a4ade0fb6e25873d0c0362eee615`
-- Created: `2026-08-05T21:18:28.992092116Z`
+- Image ID: `sha256:2fee2bc261d2d63afc35dcb7b6a6d6d8fb820ffa4fa31fd65632ec653bdfa2b8`
+- Created: `2026-08-25T03:17:55.132712544Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -98,11 +98,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/1.0.0.errata1-3+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/1.0.0.errata1-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apr-util=1.6.1-5+deb11u1`
+### `dpkg` source package: `apr-util=1.6.1-5+deb11u2`
 
 Binary Packages:
 
-- `libaprutil1:amd64=1.6.1-5+deb11u1`
+- `libaprutil1:amd64=1.6.1-5+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
@@ -111,17 +111,17 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-5+deb11u1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-5%2bdeb11u1.dsc' apr-util_1.6.1-5+deb11u1.dsc 2691 SHA256:e71909d6c919c795682e51e183f90003f42af301cefe9b81dd5c24d07b693dd3
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.1-5%2bdeb11u1.debian.tar.xz' apr-util_1.6.1-5+deb11u1.debian.tar.xz 343692 SHA256:2f3e30a4ba9b762e248dd7368234c4c302ad94f529fdc7e90942a0ee972b6708
+$ apt-get source -qq --print-uris apr-util=1.6.1-5+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.1-5%2bdeb11u2.dsc' apr-util_1.6.1-5+deb11u2.dsc 2536 SHA256:9e0da3029f1fca236297ac93ce8e07a6522e121df69dbc5a12b3bd44a0ac0a27
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.1-5%2bdeb11u2.debian.tar.xz' apr-util_1.6.1-5+deb11u2.debian.tar.xz 350288 SHA256:28181ca096cd1759b5bb9f2cc10b4ad3e7c6f0d6d24cbde633d258a329e50215
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apr-util/1.6.1-5+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.1-5+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.1-5+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apr-util/1.6.1-5+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/apr-util/1.6.1-5+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr-util/1.6.1-5+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.7.0-6+deb11u2`
 
@@ -488,11 +488,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1~deb11u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1~deb11u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1~deb11u1`
+- `ca-certificates=20250419~deb12u1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -500,13 +500,19 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1%7edeb11u1.dsc' ca-certificates_20250419~deb12u1~deb11u1.dsc 1803 SHA256:6694f3eea397d26f0177ba642df9565a223dd1dac5a7791f978c7014b1da9068
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1%7edeb11u1.tar.xz' ca-certificates_20250419~deb12u1~deb11u1.tar.xz 277184 SHA256:48cf1629c05522c360d97e89d7357ed532b108ca9133c5993ff76a9a320edb12
+```
 
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1~deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.16.0-5`
 
@@ -5280,11 +5286,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0043+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0043+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-26+deb11u1`
+### `dpkg` source package: `unzip=6.0-26+deb11u2`
 
 Binary Packages:
 
-- `unzip=6.0-26+deb11u1`
+- `unzip=6.0-26+deb11u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5293,17 +5299,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unzip=6.0-26+deb11u1
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26%2bdeb11u1.dsc' unzip_6.0-26+deb11u1.dsc 1383 SHA256:44f7e29339e16ea91cffc121927ca6a36ce89230fbb1c31c4526ac6cbaa0df8c
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26%2bdeb11u1.debian.tar.xz' unzip_6.0-26+deb11u1.debian.tar.xz 24996 SHA256:7f15d1a95de7d8198348da54e56c6248863f84ad2a71c6302ddc9c1448639f00
+$ apt-get source -qq --print-uris unzip=6.0-26+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-26%2bdeb11u2.dsc' unzip_6.0-26+deb11u2.dsc 1123 SHA256:a413d017796645b62cb85610697bf387e7c903de3719464f9622ce886c5873ec
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-26%2bdeb11u2.debian.tar.xz' unzip_6.0-26+deb11u2.debian.tar.xz 26496 SHA256:f1355fe65f938dc52862eb4c00db7fa6b384f30e4bc849433b8a88c784c00af3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unzip/6.0-26+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-26+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-26+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unzip/6.0-26+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-26+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-26+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.5.0-1`
 
