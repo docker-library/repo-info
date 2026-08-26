@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:6c75d5bf57cb0fa5aa4b92c6a83c86c791644496d9ac230de7711f5b8ec3b898
+$ docker pull fedora@sha256:43b29f65a41eb9c35e1cd5323e3bdf3b655c2357a9f4f1ff2f9c2798e5045d80
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,211 +18,211 @@ $ docker pull fedora@sha256:6c75d5bf57cb0fa5aa4b92c6a83c86c791644496d9ac230de771
 ### `fedora:latest` - linux; amd64
 
 ```console
-$ docker pull fedora@sha256:89f61a124414261868224666aa7fb8df1b78397a53623774bdfb105d1612b48b
+$ docker pull fedora@sha256:be9d65e2344d805cc11114319c685ecaa96b6d9b4350a0a6460cdb931babbd19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69313859 bytes)**  
+-	Total Size: **69.4 MB (69396734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad119a9813828e36e1bc0a8337c14b12dd5dc41673f64f81a39cb9f4a33ca1a8`
+-	Image ID: `sha256:ccb55df1d2413428166d80b08aa37a4bdcb61a63d09fff6f8abc0d561f311053`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 May 2026 22:08:46 GMT
+# Wed, 26 Aug 2026 18:36:01 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Wed, 27 May 2026 22:08:46 GMT
+# Wed, 26 Aug 2026 18:36:01 GMT
 ENV DISTTAG=f44container FGC=f44 FBR=f44
-# Wed, 27 May 2026 22:08:46 GMT
-ADD fedora-20260527.tar / # buildkit
-# Wed, 27 May 2026 22:08:46 GMT
+# Wed, 26 Aug 2026 18:36:01 GMT
+ADD fedora-20260826.tar / # buildkit
+# Wed, 26 Aug 2026 18:36:01 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4dd84e24b4ebeafd11df963cf2ee4b8544198650dd964a0f008448a2e2664f2b`  
-		Last Modified: Wed, 27 May 2026 22:09:03 GMT  
-		Size: 69.3 MB (69313859 bytes)  
+	-	`sha256:59259e167f1330a2378d204c639ab48759f9d49f292cf10905abc5ac474bc6c4`  
+		Last Modified: Wed, 26 Aug 2026 14:04:30 GMT  
+		Size: 69.4 MB (69396734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fedora:latest` - unknown; unknown
 
 ```console
-$ docker pull fedora@sha256:34d9f359f7f0f3ee926bd8e1fcb375deed68daa639f31c439f5dff4666f73fd0
+$ docker pull fedora@sha256:ba0139951e786ee5ed6a097a67546b3892addfd7df2d900dfca85e67f0bbd3d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3386924 bytes)**  
+-	Total Size: **3.4 MB (3398124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0600c562c21afbd5bb3c00525e3b3ec6f1622a5ce80a20bcdadfd4ca577c052`
+-	Image ID: `sha256:7744a6e468d235c640615c7c05e21145c196c28d373229573d32f2263d2227d6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5fb8de3299cd38702a15a3ac29e8e3677d113fdf141454d4f9b5e448432fd489`  
-		Last Modified: Wed, 27 May 2026 22:09:02 GMT  
-		Size: 3.4 MB (3381681 bytes)  
+	-	`sha256:3ebbaf332340c7a96f93d7a9e2252c9205559a977742cdad999f0e9d1ba31d2a`  
+		Last Modified: Wed, 26 Aug 2026 18:36:15 GMT  
+		Size: 3.4 MB (3392881 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:54254e96f9e8fb8d9f5d529c0a350ad753223886172d0eed830a28134d79c3c2`  
-		Last Modified: Wed, 27 May 2026 22:09:01 GMT  
+	-	`sha256:dc7d8fa277cd5a6b6b8ec503f57798b97ea893aabce63b835f999b1620652b68`  
+		Last Modified: Wed, 26 Aug 2026 18:36:15 GMT  
 		Size: 5.2 KB (5243 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fedora:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:a471bd8bf8e7e99812fd2f29fc950685d860b3d528b9f090443dbc1a0d2bad62
+$ docker pull fedora@sha256:e402cca673711fee025f9ce21c6c08b1bd25ee26b3c482119c8675fbaaedbc85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.8 MB (65755722 bytes)**  
+-	Total Size: **65.8 MB (65817728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ba367df7d46dba37f3b2820342c64f9778b85dc29c1155ae0ea08d80ff3bff9`
+-	Image ID: `sha256:da5ed9cff0af80751b165c7e8f8dbe795498b56f5a436e8533d09402aa7b1249`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 May 2026 22:09:03 GMT
+# Wed, 26 Aug 2026 18:36:06 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Wed, 27 May 2026 22:09:03 GMT
+# Wed, 26 Aug 2026 18:36:06 GMT
 ENV DISTTAG=f44container FGC=f44 FBR=f44
-# Wed, 27 May 2026 22:09:03 GMT
-ADD fedora-20260527.tar / # buildkit
-# Wed, 27 May 2026 22:09:03 GMT
+# Wed, 26 Aug 2026 18:36:06 GMT
+ADD fedora-20260826.tar / # buildkit
+# Wed, 26 Aug 2026 18:36:06 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:594bd6d79d070efa3007bb9bc092a4889026b51ebcaa7d396d46276a0f315e5e`  
-		Last Modified: Wed, 27 May 2026 22:09:19 GMT  
-		Size: 65.8 MB (65755722 bytes)  
+	-	`sha256:a056ec3130acbc57acf84eb6673e6469c74c5f9758153df1ce778fbe98be3bf4`  
+		Last Modified: Wed, 26 Aug 2026 18:36:22 GMT  
+		Size: 65.8 MB (65817728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fedora:latest` - unknown; unknown
 
 ```console
-$ docker pull fedora@sha256:29ce094847aeb74f91b830f62cc78b64f5786c66e68da77f05447c6ab75e6cdb
+$ docker pull fedora@sha256:0d57b53d28533f778aa7592fb0a05dd7a4c6f67c4573c06b6b049f345b4525e6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3386996 bytes)**  
+-	Total Size: **3.4 MB (3398196 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a7149887d73e44b7cb756c83572509aad5caa3598bbf9f1d1bce4a45e7381e8`
+-	Image ID: `sha256:7056f9ad33551e74c4201a1ea60888487c0a0d549dc697907f4c6fb3b512ac76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60fff9c85547b24e41a9ee40f3d0d26520b5d0bf6c8e71c3981f4f88c516e9a4`  
-		Last Modified: Wed, 27 May 2026 22:09:18 GMT  
-		Size: 3.4 MB (3381711 bytes)  
+	-	`sha256:a7eba590948b2c72aa9ed59a2cde0639b073e9dc1963a59fe29c34e9a7ac56eb`  
+		Last Modified: Wed, 26 Aug 2026 18:36:21 GMT  
+		Size: 3.4 MB (3392911 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef18897e323f95111662ac78be7af8475f971e0e34d8070f13dc5daf741b60c1`  
-		Last Modified: Wed, 27 May 2026 22:09:18 GMT  
+	-	`sha256:75468ba785b45049d39a04664eb426012d93061a809503cad698436257c6603d`  
+		Last Modified: Wed, 26 Aug 2026 18:36:20 GMT  
 		Size: 5.3 KB (5285 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fedora:latest` - linux; ppc64le
 
 ```console
-$ docker pull fedora@sha256:c2e593e6a5a9c47cc1e001256313fe5db1f768cacba15005702d07317a1b5b48
+$ docker pull fedora@sha256:e1106a35f590de92316b5c9e8b428e56fbe62bf6d17186fb06b9aad3e4fda383
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.2 MB (75214063 bytes)**  
+-	Total Size: **75.3 MB (75299216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a701c89f70ae78ccb57bc7d713bf0b0216b8b80d68817f5be54ddbc0864f37f`
+-	Image ID: `sha256:ea2dd1c7523c05462e7f86745237eacd64e3e95e2f236e0b7dfc5cbf4983bd76`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 May 2026 22:07:12 GMT
+# Wed, 26 Aug 2026 19:06:38 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Wed, 27 May 2026 22:07:12 GMT
+# Wed, 26 Aug 2026 19:06:38 GMT
 ENV DISTTAG=f44container FGC=f44 FBR=f44
-# Wed, 27 May 2026 22:07:12 GMT
-ADD fedora-20260527.tar / # buildkit
-# Wed, 27 May 2026 22:07:12 GMT
+# Wed, 26 Aug 2026 19:06:38 GMT
+ADD fedora-20260826.tar / # buildkit
+# Wed, 26 Aug 2026 19:06:38 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:42c2bd0d49b852557ea49966c6ac3d1c814d18b48892e154e9b819dac52462ba`  
-		Last Modified: Wed, 27 May 2026 22:07:48 GMT  
-		Size: 75.2 MB (75214063 bytes)  
+	-	`sha256:18d4934d5af4c0cac4ebb8dba1cb562f7a98a0e2331922d97df9ac60fdce0398`  
+		Last Modified: Wed, 26 Aug 2026 19:07:14 GMT  
+		Size: 75.3 MB (75299216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fedora:latest` - unknown; unknown
 
 ```console
-$ docker pull fedora@sha256:be67ce9b5401bc4297c2e67c0e8a36907cc32cfbd14799dc010265d08c29968b
+$ docker pull fedora@sha256:b70ae90a4db8d7cfd7d70fc0b8756ec92f0642bce49ffe3908cd59eb1acf2ace
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3387595 bytes)**  
+-	Total Size: **3.4 MB (3398796 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaa8bd3d94fdf507d1e3e4bd8390c63625fe6e52aa879cd64245c333fa33dbfc`
+-	Image ID: `sha256:56d54cb0ed4ae1dacefcb75f91f4d7cc0139c580c92a7211d41fb70cf734eecf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71f1935da197acc672587d82cc073a68634605dd532ea035d1d3d8fcd988dc77`  
-		Last Modified: Wed, 27 May 2026 22:07:45 GMT  
-		Size: 3.4 MB (3382330 bytes)  
+	-	`sha256:2751929a3c8c85daee21f759d65aa4c3d3c59a9ccbf13e3fb2be4556f7414173`  
+		Last Modified: Wed, 26 Aug 2026 19:07:12 GMT  
+		Size: 3.4 MB (3393530 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5465121237a5e7a71b0651ca52d0c3897744e4cef542ca8e21d9d8449e18c6d3`  
-		Last Modified: Wed, 27 May 2026 22:07:45 GMT  
-		Size: 5.3 KB (5265 bytes)  
+	-	`sha256:66d1ac291e0abf09a0f1f96c60c69c9739b3719cf57315ce9d6e79b39482752f`  
+		Last Modified: Wed, 26 Aug 2026 19:07:11 GMT  
+		Size: 5.3 KB (5266 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `fedora:latest` - linux; s390x
 
 ```console
-$ docker pull fedora@sha256:80aec3859f7aff062c21d28b5e009aa7facb6347879524d289478732e3db0788
+$ docker pull fedora@sha256:3011f913be935914441330686d27a8aadaf78b69dff37bfe0610e691e4e7cbfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68528718 bytes)**  
+-	Total Size: **68.6 MB (68620007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:271d60a579e69dbc903ae0caddee53f97f419e503c42ef0f4b11a6f2562dfd69`
+-	Image ID: `sha256:20925ae4b8555cd06dd12a20de4198fd64b788e013fd9247afbb59147af36c3d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 May 2026 22:08:17 GMT
+# Wed, 26 Aug 2026 19:04:24 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Wed, 27 May 2026 22:08:17 GMT
+# Wed, 26 Aug 2026 19:04:24 GMT
 ENV DISTTAG=f44container FGC=f44 FBR=f44
-# Wed, 27 May 2026 22:08:17 GMT
-ADD fedora-20260527.tar / # buildkit
-# Wed, 27 May 2026 22:08:17 GMT
+# Wed, 26 Aug 2026 19:04:24 GMT
+ADD fedora-20260826.tar / # buildkit
+# Wed, 26 Aug 2026 19:04:24 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:2a6a82dfb51cb2112fe668b7f31dcc738dd6521b571127674f13bcfab06cb770`  
-		Last Modified: Wed, 27 May 2026 22:08:40 GMT  
-		Size: 68.5 MB (68528718 bytes)  
+	-	`sha256:996d207fd7757d01d6922dece8458d653d34826ff2a82256dc898462374a69d1`  
+		Last Modified: Wed, 26 Aug 2026 19:05:11 GMT  
+		Size: 68.6 MB (68620007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `fedora:latest` - unknown; unknown
 
 ```console
-$ docker pull fedora@sha256:9f21979a1b30256e59a409731060fe0020de5ae4af95b252d8545d40095ffb56
+$ docker pull fedora@sha256:00fad356061f006d5b2eb654c373e99d62c9ad384b459c9bae58102361debe6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3389422 bytes)**  
+-	Total Size: **3.4 MB (3400622 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5e98c7a7310f3a64476297a13a16adda458580a7b1db4a2295204eb6df15002`
+-	Image ID: `sha256:c7579939839706bf0a8f537dd33a85daf8563cb6073d558dcf4f89cf56d4c3c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14de17611bde03193c6bbf708faa70a0f691d9df1dde6eecffb81d215294486a`  
-		Last Modified: Wed, 27 May 2026 22:08:39 GMT  
-		Size: 3.4 MB (3384182 bytes)  
+	-	`sha256:67b7876307f51f9e6b0f8111df1529f4e9b36baf4bcfdc198e00af24949e760a`  
+		Last Modified: Wed, 26 Aug 2026 19:05:06 GMT  
+		Size: 3.4 MB (3395382 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:123be2dfe166ee56ac55c810fa4dc111c6d058544c775e534ec28222c2472581`  
-		Last Modified: Wed, 27 May 2026 22:08:39 GMT  
+	-	`sha256:586a3ce0eaff4e88b74001fbbca580c9d882c91d6511456698bf8bd80ddf92f2`  
+		Last Modified: Wed, 26 Aug 2026 19:05:05 GMT  
 		Size: 5.2 KB (5240 bytes)  
 		MIME: application/vnd.in-toto+json
