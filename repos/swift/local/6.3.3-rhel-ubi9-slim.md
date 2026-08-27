@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a339dc2a4c860e3b177efc466e9d6ebd070d009e0f979ba10ce1eb9ad42cd259`
-- Created: `2026-08-17T22:41:14.16194909Z`
-- Virtual Size: ~ 379.32 Mb  
+- Image ID: `sha256:6c45653370d2bbe2cf43c52f9bf48453d96e8162ebc2f81a67b4e599aa51e3b4`
+- Created: `2026-08-25T18:02:00.824860228Z`
+- Virtual Size: ~ 379.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-17T16:59:20Z`
+  - `build-date=2026-08-25T05:13:52Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-08-17T16:59:20Z`
-  - `org.opencontainers.image.revision=ea8b00418e7f684bedbc8e99572a475727a3dc10`
-  - `release=1786985871`
+  - `org.opencontainers.image.created=2026-08-25T05:13:52Z`
+  - `org.opencontainers.image.revision=5aeebc5823e26eeb3883d4ac00f420562ac162fb`
+  - `release=1787634763`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=ea8b00418e7f684bedbc8e99572a475727a3dc10`
+  - `vcs-ref=5aeebc5823e26eeb3883d4ac00f420562ac162fb`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -69,12 +69,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url attr-2.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.1-3.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `audit-libs-3.1.5-8.el9.x86_64`
 
@@ -708,12 +703,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.1-3.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.1-3.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.37.4-25.el9.x86_64`
 
@@ -1892,15 +1882,15 @@ $ dnf --quiet download --source --url shadow-utils-4.9-16.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-16.el9.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-10.el9_8.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-10.el9_8.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-11.el9_8.src.rpm
 ```
 
 ### `rpm` package: `subscription-manager-1.29.50-1.el9.x86_64`
