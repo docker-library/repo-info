@@ -1,10 +1,10 @@
-# `redmine:6.1.3-alpine3.24`
+# `redmine:6.1.4-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f67092782eefc5ed7752a834a308a662f5492e9e8475dc1bcd6722f11015f92`
-- Created: `2026-07-22T20:51:36.164190204Z`
-- Virtual Size: ~ 447.64 Mb  
+- Image ID: `sha256:cce12c724267ad2f2af5b27cbf0bbf472b0df08bb63843e203c1c83247810e62`
+- Created: `2026-08-26T18:31:55.777151194Z`
+- Virtual Size: ~ 454.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.3`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.3.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=61db3008c7fd18a3afc559ed656fd38fdf8df8220ac69598b319095183190b7a`
+  - `REDMINE_VERSION=6.1.4`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.4.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=add3a006d37ef3d77a7ca0fe0907a2744b58831a349cb09a675442c2d2e82fc9`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `apk` (`.apk`-based packages)
@@ -133,16 +133,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.3-r2 description:
+apr-util-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.3-r2 webpage:
+apr-util-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.3-r2 installed size:
+apr-util-1.6.4-r0 installed size:
 180 KiB
 
-apr-util-1.6.3-r2 license:
+apr-util-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -626,16 +626,16 @@ MIT
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.24-r0 description:
+imagemagick-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.24-r0 webpage:
+imagemagick-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.24-r0 installed size:
-3696 KiB
+imagemagick-7.1.2.27-r0 installed size:
+3700 KiB
 
-imagemagick-7.1.2.24-r0 license:
+imagemagick-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -643,16 +643,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.24-r0 description:
+imagemagick-jp2-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.24-r0 webpage:
+imagemagick-jp2-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.24-r0 installed size:
+imagemagick-jp2-7.1.2.27-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.24-r0 license:
+imagemagick-jp2-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.24-r0 description:
+imagemagick-jpeg-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.24-r0 webpage:
+imagemagick-jpeg-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.24-r0 installed size:
+imagemagick-jpeg-7.1.2.27-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.24-r0 license:
+imagemagick-jpeg-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.24-r0 description:
+imagemagick-libs-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.24-r0 webpage:
+imagemagick-libs-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.24-r0 installed size:
-4261 KiB
+imagemagick-libs-7.1.2.27-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.24-r0 license:
+imagemagick-libs-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.24-r0 description:
+imagemagick-pdf-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.24-r0 webpage:
+imagemagick-pdf-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.24-r0 installed size:
-121 KiB
+imagemagick-pdf-7.1.2.27-r0 installed size:
+125 KiB
 
-imagemagick-pdf-7.1.2.24-r0 license:
+imagemagick-pdf-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.24-r0 description:
+imagemagick-tiff-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.24-r0 webpage:
+imagemagick-tiff-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.24-r0 installed size:
+imagemagick-tiff-7.1.2.27-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.24-r0 license:
+imagemagick-tiff-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.24-r0 description:
+imagemagick-webp-7.1.2.27-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.24-r0 webpage:
+imagemagick-webp-7.1.2.27-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.24-r0 installed size:
+imagemagick-webp-7.1.2.27-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.24-r0 license:
+imagemagick-webp-7.1.2.27-r0 license:
 ImageMagick
 
 ```
@@ -847,16 +847,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -915,16 +915,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -1153,16 +1153,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.4-r0 description:
+libpq-18.6-r0 description:
 PostgreSQL client library
 
-libpq-18.4-r0 webpage:
+libpq-18.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.4-r0 installed size:
+libpq-18.6-r0 installed size:
 350 KiB
 
-libpq-18.4-r0 license:
+libpq-18.6-r0 license:
 PostgreSQL
 
 ```
@@ -1255,16 +1255,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1544,16 +1544,16 @@ LGPL-2.1-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.2.3-r0 description:
+mercurial-7.2.4-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.2.3-r0 webpage:
+mercurial-7.2.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.2.3-r0 installed size:
+mercurial-7.2.4-r0 installed size:
 10 MiB
 
-mercurial-7.2.3-r0 license:
+mercurial-7.2.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1561,16 +1561,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.2.3-r0 description:
+mercurial-pyc-7.2.4-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.2.3-r0 webpage:
+mercurial-pyc-7.2.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.2.3-r0 installed size:
+mercurial-pyc-7.2.4-r0 installed size:
 10 MiB
 
-mercurial-pyc-7.2.3-r0 license:
+mercurial-pyc-7.2.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -2020,16 +2020,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.5-r0 description:
+pyc-3.14.7-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.5-r0 webpage:
+pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.5-r0 installed size:
+pyc-3.14.7-r1 installed size:
 0 B
 
-pyc-3.14.5-r0 license:
+pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -2037,16 +2037,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.5-r0 description:
+python3-3.14.7-r1 description:
 High-level scripting language
 
-python3-3.14.5-r0 webpage:
+python3-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-3.14.5-r0 installed size:
+python3-3.14.7-r1 installed size:
 22 MiB
 
-python3-3.14.5-r0 license:
+python3-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -2054,16 +2054,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.5-r0 description:
+python3-pyc-3.14.7-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.5-r0 webpage:
+python3-pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.5-r0 installed size:
+python3-pyc-3.14.7-r1 installed size:
 0 B
 
-python3-pyc-3.14.5-r0 license:
+python3-pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -2071,16 +2071,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.5-r0 description:
+python3-pycache-pyc0-3.14.7-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.5-r0 webpage:
+python3-pycache-pyc0-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.5-r0 installed size:
+python3-pycache-pyc0-3.14.7-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.5-r0 license:
+python3-pycache-pyc0-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -2139,16 +2139,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
