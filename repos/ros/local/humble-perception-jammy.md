@@ -527,9 +527,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA256:d5eeee4f953c09826409d572e2e8996a2140d67eb8f382ce1f3a9d23883ad696
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA256:32332a77dedfbeee4deae3a435e07a9377a117d8326120abe0b26b92c60f5404
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA256:5c35c7efb7cfb6cfcaaaa4825ca7227151d434b4ff18b0ca88441c9f6dc9ba4e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA512:8adffecbfd9ffe55500fb70616e4b441bccb95fda13762dc2cccc3605a25f34851b142d2c633f17a5a7e426f0c5010ad76b0a70d375f923e25f6c9f4c893c8e4
 ```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
@@ -3500,9 +3500,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libde265=1.0.8-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8.orig.tar.gz' libde265_1.0.8.orig.tar.gz 837878 SHA256:24c791dd334fa521762320ff54f0febfd3c09fc978880a8c5fbc40a88f21d905
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.3.debian.tar.xz' libde265_1.0.8-1ubuntu0.3.debian.tar.xz 17620 SHA256:4093907105db5cb15e599ddb2f6c2584968cf6b2adef29235efa1f0b25f7f45d
-'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.3.dsc' libde265_1.0.8-1ubuntu0.3.dsc 2375 SHA256:d9849aad83155dc51b3f4ab2dbe2411386890aa5b2076e044b88878af54de3f6
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8.orig.tar.gz' libde265_1.0.8.orig.tar.gz 837878 SHA512:bcb33493cbc337d29047c6765189aaba523b20c138aa4fd5c264b3c6aea64cd174cbe14ca2d88c76319e0a8bd5d2e6269f300f056876d2962217eea7934172da
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.3.debian.tar.xz' libde265_1.0.8-1ubuntu0.3.debian.tar.xz 17620 SHA512:3bd585f11a185581bcae1ff4aee43728aab83c27131bf98f5724dfa16ce874f07648a5f298d3e965f02886f281942f5fe47142bed8fbf2b23f4e972e150a177b
+'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libde265/libde265_1.0.8-1ubuntu0.3.dsc' libde265_1.0.8-1ubuntu0.3.dsc 2375 SHA512:52ec53c96c3646fa2b53fbfdf312ade25537fd0d40e5a0bdc5983ec9b3d188393a45f508e81085cc8ed5ecf927cddd40981ecec73d28a323f09568d33af57ea7
 ```
 
 ### `dpkg` source package: `libdeflate=1.10-2`
@@ -5058,9 +5058,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libuv1=1.43.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0.orig.tar.gz' libuv1_1.43.0.orig.tar.gz 1296029 SHA256:8e9b3d2b722a7e3ad1748d240f8cfd662b1be06c31ed83b5240df8a0e6ba6d9e
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0-1ubuntu0.1.debian.tar.xz' libuv1_1.43.0-1ubuntu0.1.debian.tar.xz 21876 SHA256:6c6c5e8bd110be19da699d4c902537c69f8596f92226c0c9ec6dc5b5f133b685
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0-1ubuntu0.1.dsc' libuv1_1.43.0-1ubuntu0.1.dsc 2112 SHA256:375d4f1c5beeff47b41a678260c57472020cccacaf9b86b4da19d148e68dabae
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0.orig.tar.gz' libuv1_1.43.0.orig.tar.gz 1296029 SHA512:5a000b5a57efa03218cb8cc8deac91a8371f472452f48fef7d15c8d03ea0d98a966feba1ad9f2bf00f03635563663562dbd6d0cd2018e4d6c9783e64c2b3cd92
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0-1ubuntu0.1.debian.tar.xz' libuv1_1.43.0-1ubuntu0.1.debian.tar.xz 21876 SHA512:c37c2cb3d4be67220482be266dbc08243c8412714a0da039eebd03ec1bc7ecf3ccf91d49005545d4361dcc33012a48a6045c400611eb9887785f10284ab6c8da
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.43.0-1ubuntu0.1.dsc' libuv1_1.43.0-1ubuntu0.1.dsc 2112 SHA512:ed025d990a1285fcfdfeafdbac651571f7eb3dd0eda17261378d93ef635563922247c2c2a87a62b4f426531a4508730d9c7ba1a8130c58fb5bf9aebf0e8e2f48
 ```
 
 ### `dpkg` source package: `libva=2.14.0-1`
@@ -6813,14 +6813,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.31+11-1ubuntu1~22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.31%2b11.orig.tar.xz' openjdk-lts_11.0.31+11.orig.tar.xz 69405288 SHA512:6b9233882f3917ac529a0948dacaaad353a9693cbb9eed8dfc727842d7215cb1dad147738e2142b614dbf8d4edc4ae27d1da094d498bfdcde052682581edee73
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.31%2b11-1ubuntu1%7e22.04.2.debian.tar.xz' openjdk-lts_11.0.31+11-1ubuntu1~22.04.2.debian.tar.xz 172976 SHA512:ff317ba1a807be428e79687301e426c68f31fb92eb9d17ea3d0eb9912b77c8f62ca9c40109185a874a304a636c6d6468a569dd307e99e603be1e14919a137eb2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.31%2b11-1ubuntu1%7e22.04.2.dsc' openjdk-lts_11.0.31+11-1ubuntu1~22.04.2.dsc 4624 SHA512:34e78d476808c20ac6863a875ea18d3011f90433e01879257d3b8b437d926eb559142652ed1e6cdab4d1171d62cb7f12c6d76cf1c35adde554656eaa74823fc6
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
 
@@ -6984,15 +6979,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.26
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.debian.tar.xz' openssl_3.0.2-0ubuntu1.26.debian.tar.xz 293340 SHA512:ad719686887f4755dca3e747723c8222e6a0f019e056e96d0b6d22c92e640b83901a2a3e32af79f288cf72097aca510259b733dffb64d3a777461034244b54c1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.26.dsc' openssl_3.0.2-0ubuntu1.26.dsc 2730 SHA512:fe4685066cac1cf41f5cbfb6f9db7669d0654b746c3a6aaeb8e4598e1a88e6bf7437f23c03732112c5c24135cf98de4e7c951f1a04fc54f2a2b6740a100d551a
-```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 
@@ -7319,15 +7308,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.debian.tar.xz' perl_5.34.0-3ubuntu1.7.debian.tar.xz 202360 SHA512:113a4ac142c5d29a98aac9403e1641a27e06ab6c0472dc6d1063a5b4d643739def16bdef2b441f5d657cf54fe1c82f916034d2d75dc30849839e453540870b6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.7.dsc' perl_5.34.0-3ubuntu1.7.dsc 2846 SHA512:b519fc33f507a36e2ba06df6a7df4ffb28f26d8f3977b88b8dd958ac5fd9333c94fa15acfa887f73365b27abbc32caf8b2e337ec48285ac019fd575bab8b2664
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -8589,9 +8572,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.16
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.debian.tar.xz' python3.10_3.10.12-1~22.04.16.debian.tar.xz 295076 SHA512:53a45b5744a563d26c96c614a1fd0531ee1bd138aeb2c2a81e7a5ec326b72480132a65b8bcf49d3054b99a9968991fea85f8c4bc806925c0ab117bdf0473a4a3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.dsc' python3.10_3.10.12-1~22.04.16.dsc 3678 SHA512:687e9913126183dd5be7bbbfcf7068138f8d7c81a78e894db0317034b620e1793fe1b0a6e542e5f2ccde1f8b00f6d74e74d5e3131baf09122669c6bec94e997d
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.debian.tar.xz' python3.10_3.10.12-1~22.04.16.debian.tar.xz 295076 SHA512:53a45b5744a563d26c96c614a1fd0531ee1bd138aeb2c2a81e7a5ec326b72480132a65b8bcf49d3054b99a9968991fea85f8c4bc806925c0ab117bdf0473a4a3
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.16.dsc' python3.10_3.10.12-1~22.04.16.dsc 3678 SHA512:687e9913126183dd5be7bbbfcf7068138f8d7c81a78e894db0317034b620e1793fe1b0a6e542e5f2ccde1f8b00f6d74e74d5e3131baf09122669c6bec94e997d
 ```
 
 ### `dpkg` source package: `pyyaml=5.4.1-1ubuntu1`
@@ -13022,9 +13005,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unixodbc=2.3.9-5ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9.orig.tar.gz' unixodbc_2.3.9.orig.tar.gz 1676145 SHA256:52833eac3d681c8b0c9a5a65f2ebd745b3a964f208fc748f977e44015a31b207
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9-5ubuntu0.1.debian.tar.xz' unixodbc_2.3.9-5ubuntu0.1.debian.tar.xz 20384 SHA256:272e059a4c54f539c179fadd4feb8d5f20559415db113f1e714a29b20db5bab2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9-5ubuntu0.1.dsc' unixodbc_2.3.9-5ubuntu0.1.dsc 2445 SHA256:c5ffe86085b7465a7acbfb3a1ff6bd5a7e87856d3617f63759dc5b34faa583c8
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9.orig.tar.gz' unixodbc_2.3.9.orig.tar.gz 1676145 SHA512:6637eab751401522e0af775cb104cd07693b82927453a98e5af28e079f4b9f40e1cfab8cb36f509c46dced89b45244bc5ed1a3dda17ba5a52a844e8e82f187bb
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9-5ubuntu0.1.debian.tar.xz' unixodbc_2.3.9-5ubuntu0.1.debian.tar.xz 20384 SHA512:5a411938e04b1bb76ff045d2b8834e1fde8edd998382bdbe25e2d5dd26bd0726d8c604f4279b9334250a2a0006f7dd55eed15db2733038c6706cb80fc7911d99
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.9-5ubuntu0.1.dsc' unixodbc_2.3.9-5ubuntu0.1.dsc 2445 SHA512:5f2a55fa91e5237d42e01ba95509776553ff2e70d3723e9af5e7fb6cb4e85c4ad62f84d197d0a11b664d688efa78a33784ef1283d47af19292d39dbaf477f8d4
 ```
 
 ### `dpkg` source package: `uriparser=0.9.6+dfsg-1`

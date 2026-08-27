@@ -478,13 +478,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.1.tar.xz' base-files_14ubuntu6.1.tar.xz 97896 SHA512:1ae9b18258b5be56503a8107f6a263239832313870c5cc4db694523ebe5912eb5bd6790a1ec7fd0f1cb0516b45ab2272000bcd2015449a69c91f79c1d1aec046
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.1.dsc' base-files_14ubuntu6.1.dsc 1735 SHA512:6b07c45bdd30ce310aae834ef27e9bf7c261056a16d2e8d2173a7e8ab0f4936b5bac15524a02f5d36576d91df159456aaf451cbade340307d409a9e40a0e37ec
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -7662,15 +7658,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-25=25.0.3+9-2~26.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.3%2b9.orig-googletest.tar.xz' openjdk-25_25.0.3+9.orig-googletest.tar.xz 613408 SHA512:6f36da71c9d2709b2ed306b84dbce4d2fb36b4a2720ccb17de928c742e6b9563d596423436e05addaa206d65372370dcf3bc51a06815b0bb3af4a481b3746810
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.3%2b9.orig.tar.xz' openjdk-25_25.0.3+9.orig.tar.xz 74084132 SHA512:eae7f3ba83682bf8890a6d0cae69b534187c49d2309f57bf5dde47223a3f80e204c010d3f787fc18504dd1f40d6e1a51cc1ef095e5c1b3ea54215e34fba4539d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.3%2b9-2%7e26.04.2.debian.tar.xz' openjdk-25_25.0.3+9-2~26.04.2.debian.tar.xz 380848 SHA512:0a1d68c9ee5586cc7a9f352354113732baeed0c655ebf318cb52fa19dc288130db68784151fe8046b530577974970a8914381b2f5200f37b66b2fb4e00153e06
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.3%2b9-2%7e26.04.2.dsc' openjdk-25_25.0.3+9-2~26.04.2.dsc 5158 SHA512:9bc88735433f3100c69634e847022c8b68b1f5a814db7d0effb9f5c14bfcfb0f7497d5931306a0b0c1b98dba21f4b54e53295ad742ff9921207de98694eedb23
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1ubuntu0.1`
 
@@ -7862,15 +7852,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.3.debian.tar.xz' openssl_3.5.5-1ubuntu3.3.debian.tar.xz 103404 SHA512:3ee959529afd5808af3d0e60ed95e9984ac04af3c887daec8d2329db913049da5bb72bcd7c32163c3a554fd3a20450dc425f74d3a1b61ecb113badcc180a5c0a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.3.dsc' openssl_3.5.5-1ubuntu3.3.dsc 2916 SHA512:625bb9fd19eb07e6d0a8dc1290be59788900f1892abe7ebefed9b6e94ce270201a5f6e6ff7874a75f05f3056fd8cde7290b917972f92346507fa9f15b7973b5d
-```
 
 ### `dpkg` source package: `opus=1.6.1-1`
 
