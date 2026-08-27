@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:481ca1811220758d046d259b735a78e81a49bbc48ce3cf656f814950e8da7f6c`
-- Created: `2026-08-10T23:24:51.008046556Z`
-- Virtual Size: ~ 647.08 Mb  
+- Image ID: `sha256:b1a3f2d0722550d07b2d16cf1f825e4d16c8ab4bef25de9553221cc27042f3a5`
+- Created: `2026-08-25T01:39:14.377548586Z`
+- Virtual Size: ~ 647.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -456,11 +456,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1`
+- `ca-certificates=20250419~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -471,16 +471,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.dsc' ca-certificates_20230311+deb12u1.dsc 1800 SHA256:d4d57c9b56db87c8ebe7a0c27d55023e3369d183d4b774bdf455f775a80f00eb
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.tar.xz' ca-certificates_20230311+deb12u1.tar.xz 259756 SHA256:4cd6bbd5577a16432438bc1006dc05c333afacb76104fc3564612858c8ee3280
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
@@ -2930,11 +2930,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.18-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.19-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.18-0+deb12u1`
+- `libpq5:amd64=15.19-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2954,17 +2954,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.18-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18-0%2bdeb12u1.dsc' postgresql-15_15.18-0+deb12u1.dsc 3942 SHA256:d940b57dd029ef0712212164410fcb51854c883f3fc0c3a11486acdfd2ca5947
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18.orig.tar.bz2' postgresql-15_15.18.orig.tar.bz2 23405115 SHA256:11df0df97fe3ea4ba9a791faaf39cee1d2fe571e78885b5b55d8517d27c323b4
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.18-0+deb12u1.debian.tar.xz 31828 SHA256:efe6fc2007229a2cc7b087d75cb1213d49e275ec47c4b896d5e0880b4904f8b3
+$ apt-get source -qq --print-uris postgresql-15=15.19-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19-0%2bdeb12u1.dsc' postgresql-15_15.19-0+deb12u1.dsc 3926 SHA256:d8319b3e4fb0acd532f223266fda5e282f9d12d0313c411b2d243e7ae75ed70b
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19.orig.tar.bz2' postgresql-15_15.19.orig.tar.bz2 23452545 SHA256:e1a64a87a46b825b88c082e4518161a47aab53c45694964f8ba1df28f7859f89
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.19-0+deb12u1.debian.tar.xz 37708 SHA256:f04031b5e96cb5e1ce02ec6f131f20329c31c2784731918bc49e0d9c39909b0c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.18-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.18-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.18-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.19-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.19-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.19-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
