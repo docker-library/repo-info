@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ed2022441494d868c08d1496aa98c3c494a22c6941e1b5899d7a50c0a532869`
-- Created: `2026-08-05T00:40:16.953528304Z`
-- Virtual Size: ~ 315.56 Mb  
+- Image ID: `sha256:e61239bd46f3c06da83464eea8b652cdf640c161b59b2cce69011ec860c2fad4`
+- Created: `2026-08-25T00:45:32.80556047Z`
+- Virtual Size: ~ 315.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -1317,11 +1317,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/jemalloc/5.3.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/jemalloc/5.3.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jq=1.7.1-6+deb13u2`
+### `dpkg` source package: `jq=1.7.1-6+deb13u3`
 
 Binary Packages:
 
-- `libjq1:amd64=1.7.1-6+deb13u2`
+- `libjq1:amd64=1.7.1-6+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libjq1/copyright`)
 
@@ -1334,17 +1334,17 @@ Licenses: (parsed from: `/usr/share/doc/libjq1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jq=1.7.1-6+deb13u2
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1-6%2bdeb13u2.dsc' jq_1.7.1-6+deb13u2.dsc 2032 SHA256:2014960ab5dfa3a26f4cb661e7f2f40fbf68ff11e9b8d165f3a8f27c2444d6ca
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1.orig.tar.gz' jq_1.7.1.orig.tar.gz 1323338 SHA256:fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1
-'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1-6%2bdeb13u2.debian.tar.xz' jq_1.7.1-6+deb13u2.debian.tar.xz 18816 SHA256:4dc9dd33287c003ab8b38b5aa1a231d1bcbe79c8ca7f6eb20fdf038b8ac770ac
+$ apt-get source -qq --print-uris jq=1.7.1-6+deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1-6%2bdeb13u3.dsc' jq_1.7.1-6+deb13u3.dsc 1687 SHA256:b8f3bb5475bf6efc82eb0f22469b86bfd3ce4316244bef360c38b038844bcbdb
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1.orig.tar.gz' jq_1.7.1.orig.tar.gz 1323338 SHA256:fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1
+'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1-6%2bdeb13u3.debian.tar.xz' jq_1.7.1-6+deb13u3.debian.tar.xz 34064 SHA256:815de96992ec0f465b03a0e08dbc5dffa59c3ef89585b5ae71bb877a8545759c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jq/1.7.1-6+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/jq/1.7.1-6+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jq/1.7.1-6+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jq/1.7.1-6+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/jq/1.7.1-6+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jq/1.7.1-6+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-6`
 
@@ -2075,11 +2075,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.100-1`
+### `dpkg` source package: `linux=6.12.101-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.100-1`
+- `linux-libc-dev=6.12.101-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2093,17 +2093,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.100-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.dsc' linux_6.12.100-1.dsc 290418 SHA256:c31dab9bf96a8bd7603f1afd953f1f97fc5d1e9c0820ffac1fa1d1ad1e2f4dd1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100.orig.tar.xz' linux_6.12.100.orig.tar.xz 151348476 SHA256:d352d8271fafd61d76b01326fbddef24848d498adb8eace1cc208d04663cc22e
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.100-1.debian.tar.xz' linux_6.12.100-1.debian.tar.xz 1864380 SHA256:c345b6b78e43f8e80580e15869d17828ed8eff44ac62e00965c2033006230a15
+$ apt-get source -qq --print-uris linux=6.12.101-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.dsc' linux_6.12.101-1.dsc 290418 SHA256:5f4710f4c60b932526f04d72fcf0cc6febc561dbaac36f5784ee2179a6be36f0
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101.orig.tar.xz' linux_6.12.101.orig.tar.xz 151366788 SHA256:ba6df356e6c9aeca8930556d2732eb502e168815a31269d74eb0d9d0c170fd89
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.debian.tar.xz' linux_6.12.101-1.debian.tar.xz 1874152 SHA256:eb563ea1a4e67b918936356092f07b57f3aa67c73cb41ec276f9ec1eaa0254b2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.100-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.100-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.100-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.101-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.101-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.101-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `luajit=2.1.0+openresty20250117-2`
 
@@ -3153,19 +3153,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/unbound/1.22.0-2+deb13u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/unbound/1.22.0-2+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.41-5`
+### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-5`
-- `libblkid1:amd64=2.41-5`
-- `liblastlog2-2:amd64=2.41-5`
-- `libmount1:amd64=2.41-5`
-- `libsmartcols1:amd64=2.41-5`
-- `libuuid1:amd64=2.41-5`
-- `login=1:4.16.0-2+really2.41-5`
-- `mount=2.41-5`
-- `util-linux=2.41-5`
+- `bsdutils=1:2.41.5-0+deb13u1`
+- `libblkid1:amd64=2.41.5-0+deb13u1`
+- `liblastlog2-2:amd64=2.41.5-0+deb13u1`
+- `libmount1:amd64=2.41.5-0+deb13u1`
+- `libsmartcols1:amd64=2.41.5-0+deb13u1`
+- `libuuid1:amd64=2.41.5-0+deb13u1`
+- `login=1:4.16.0-2+really2.41.5-0+deb13u1`
+- `mount=2.41.5-0+deb13u1`
+- `util-linux=2.41.5-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -3191,17 +3191,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.dsc' util-linux_2.41-5.dsc 4942 SHA256:9e84dcc64170262f850aa5fd65902846a1ebf054d556ab5c4ec17fa16b00e628
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.debian.tar.xz' util-linux_2.41-5.debian.tar.xz 120144 SHA256:20ad832160d5ed8de4759ce00652f620ce642ab583c3c1c431b68a15cdba1d07
+$ apt-get source -qq --print-uris util-linux=2.41.5-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.dsc' util-linux_2.41.5-0+deb13u1.dsc 4988 SHA256:43e9b2cbebd10fdc598c4ad10217c8202c28de53af6eafc892c8e9b5cbf3a3a5
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5.orig.tar.xz' util-linux_2.41.5.orig.tar.xz 9474992 SHA256:f586e35d320ff537aab3ffeca37e9ecd482ccbe013590db4429a414d8aa6a728
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.debian.tar.xz' util-linux_2.41.5-0+deb13u1.debian.tar.xz 107604 SHA256:5b327ccd22f0f4ed28a389870aa51d04ecedb8693e52a1d122850f2b3188cbf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `varnish-modules=8.0.2-1~trixie`
 

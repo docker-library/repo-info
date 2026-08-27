@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b6ec3bb87308fdb848672a2b3f21b49a951e424c3746f1a5d21049dc3fa4d48`
-- Created: `2026-08-12T17:27:13.443836882Z`
-- Virtual Size: ~ 345.89 Mb  
+- Image ID: `sha256:d963e4c963941b8e0b906711bb61176f906364841987939280de646be9bc27ac`
+- Created: `2026-08-25T20:47:53.411403107Z`
+- Virtual Size: ~ 354.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -1952,11 +1952,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.101-1`
+### `dpkg` source package: `linux=6.12.105-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.101-1`
+- `linux-libc-dev=6.12.105-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1970,17 +1970,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.101-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.dsc' linux_6.12.101-1.dsc 290418 SHA256:5f4710f4c60b932526f04d72fcf0cc6febc561dbaac36f5784ee2179a6be36f0
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101.orig.tar.xz' linux_6.12.101.orig.tar.xz 151366788 SHA256:ba6df356e6c9aeca8930556d2732eb502e168815a31269d74eb0d9d0c170fd89
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.debian.tar.xz' linux_6.12.101-1.debian.tar.xz 1874152 SHA256:eb563ea1a4e67b918936356092f07b57f3aa67c73cb41ec276f9ec1eaa0254b2
+$ apt-get source -qq --print-uris linux=6.12.105-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105-1.dsc' linux_6.12.105-1.dsc 290418 SHA256:546d33ef1a1ec53c3ac12a78853347c77aa161b00649f338dc535c09a59f3567
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105.orig.tar.xz' linux_6.12.105.orig.tar.xz 151395944 SHA256:5d2c47d01ff7a688e650daf2f1c0c21269b58d54c2b151bcf3a58549f5559e82
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105-1.debian.tar.xz' linux_6.12.105-1.debian.tar.xz 1885248 SHA256:95090297cea3ae7d3b4cce5e94cb0adc7912a5c9659a6d1fbb6898f80692b7ee
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.101-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.101-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.101-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.105-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.105-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.105-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `luajit=2.1.0+openresty20250117-2`
 
@@ -2397,13 +2397,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.6-1~deb13u2`
+### `dpkg` source package: `openssl=3.5.7-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.6-1~deb13u2`
-- `openssl=3.5.6-1~deb13u2`
-- `openssl-provider-legacy=3.5.6-1~deb13u2`
+- `libssl3t64:amd64=3.5.7-1~deb13u2`
+- `openssl=3.5.7-1~deb13u2`
+- `openssl-provider-legacy=3.5.7-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -2415,18 +2415,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u2.dsc' openssl_3.5.6-1~deb13u2.dsc 2707 SHA256:6a7f8fef28a5134eeb1a88435c35704f6200a268b913232eca09775651a19210
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u2.debian.tar.xz' openssl_3.5.6-1~deb13u2.debian.tar.xz 82144 SHA256:322797f9ac320606e91eb07540fd4c7ba910ee84f52fa455c7f8619dd53f9bcc
+$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2.dsc' openssl_3.5.7-1~deb13u2.dsc 2707 SHA256:25904642004d30c5c3da4642a72a7d09f8d9eb6e5ce62dab53c0371114faf8f2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2.debian.tar.xz' openssl_3.5.7-1~deb13u2.debian.tar.xz 74836 SHA256:593a47654ead460a3b609503733f80bef552ff0802799d3b47784faacc50809f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ossp-uuid=1.6.4-1`
 
@@ -2966,19 +2966,19 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2026b-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2026b-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.41-5`
+### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.41-5`
-- `libblkid1:amd64=2.41-5`
-- `liblastlog2-2:amd64=2.41-5`
-- `libmount1:amd64=2.41-5`
-- `libsmartcols1:amd64=2.41-5`
-- `libuuid1:amd64=2.41-5`
-- `login=1:4.16.0-2+really2.41-5`
-- `mount=2.41-5`
-- `util-linux=2.41-5`
+- `bsdutils=1:2.41.5-0+deb13u1`
+- `libblkid1:amd64=2.41.5-0+deb13u1`
+- `liblastlog2-2:amd64=2.41.5-0+deb13u1`
+- `libmount1:amd64=2.41.5-0+deb13u1`
+- `libsmartcols1:amd64=2.41.5-0+deb13u1`
+- `libuuid1:amd64=2.41.5-0+deb13u1`
+- `login=1:4.16.0-2+really2.41.5-0+deb13u1`
+- `mount=2.41.5-0+deb13u1`
+- `util-linux=2.41.5-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/liblastlog2-2/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -3004,23 +3004,23 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.41-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.dsc' util-linux_2.41-5.dsc 4942 SHA256:9e84dcc64170262f850aa5fd65902846a1ebf054d556ab5c4ec17fa16b00e628
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.orig.tar.xz' util-linux_2.41.orig.tar.xz 9535724 SHA256:81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41-5.debian.tar.xz' util-linux_2.41-5.debian.tar.xz 120144 SHA256:20ad832160d5ed8de4759ce00652f620ce642ab583c3c1c431b68a15cdba1d07
+$ apt-get source -qq --print-uris util-linux=2.41.5-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.dsc' util-linux_2.41.5-0+deb13u1.dsc 4988 SHA256:43e9b2cbebd10fdc598c4ad10217c8202c28de53af6eafc892c8e9b5cbf3a3a5
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5.orig.tar.xz' util-linux_2.41.5.orig.tar.xz 9474992 SHA256:f586e35d320ff537aab3ffeca37e9ecd482ccbe013590db4429a414d8aa6a728
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.41.5-0%2bdeb13u1.debian.tar.xz' util-linux_2.41.5-0+deb13u1.debian.tar.xz 107604 SHA256:5b327ccd22f0f4ed28a389870aa51d04ecedb8693e52a1d122850f2b3188cbf6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.41-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `varnish-modules=9.0.3-4~trixie`
+### `dpkg` source package: `varnish-modules=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `varnish-modules=9.0.3-4~trixie`
+- `varnish-modules=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3044,11 +3044,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `varnish=9.0.3-4~trixie`
+### `dpkg` source package: `varnish=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `varnish=9.0.3-4~trixie`
+- `varnish=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3058,11 +3058,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-cfg=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-cfg=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-cfg=9.0.3-4~trixie`
+- `vmod-cfg=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3072,11 +3072,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-digest=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-digest=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-digest=9.0.3-4~trixie`
+- `vmod-digest=9.0.3-5~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/vmod-digest/copyright`)
 
@@ -3086,11 +3086,11 @@ Licenses: (parsed from: `/usr/share/doc/vmod-digest/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-fileserver=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-fileserver=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-fileserver=9.0.3-4~trixie`
+- `vmod-fileserver=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3100,11 +3100,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-geoip2=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-geoip2=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-geoip2=9.0.3-4~trixie`
+- `vmod-geoip2=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3114,11 +3114,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-jq=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-jq=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-jq=9.0.3-4~trixie`
+- `vmod-jq=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3128,11 +3128,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-k8s-endpoint=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-k8s-endpoint=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-k8s-endpoint=9.0.3-4~trixie`
+- `vmod-k8s-endpoint=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3142,11 +3142,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-querystring=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-querystring=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-querystring=9.0.3-4~trixie`
+- `vmod-querystring=9.0.3-5~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/vmod-querystring/copyright`)
 
@@ -3157,11 +3157,11 @@ Licenses: (parsed from: `/usr/share/doc/vmod-querystring/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-redis=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-redis=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-redis=9.0.3-4~trixie`
+- `vmod-redis=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3171,11 +3171,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-reqwest=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-reqwest=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-reqwest=9.0.3-4~trixie`
+- `vmod-reqwest=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3185,11 +3185,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-rers=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-rers=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-rers=9.0.3-4~trixie`
+- `vmod-rers=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3199,11 +3199,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-uuid=9.0.3-4~trixie`
+### `dpkg` source package: `vmod-uuid=9.0.3-5~trixie`
 
 Binary Packages:
 
-- `vmod-uuid=9.0.3-4~trixie`
+- `vmod-uuid=9.0.3-5~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
