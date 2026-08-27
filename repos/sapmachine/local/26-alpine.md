@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45ab0ab45d3dbf5cb8794e27f0300001fc08df955f7b8f07817948f8a877f115`
-- Created: `2026-07-22T18:23:15.182106094Z`
-- Virtual Size: ~ 298.9 Mb  
+- Image ID: `sha256:fafe76b85b5a6878bb44724c73528c03933eb850aa458d4349cdbe50f9755289`
+- Created: `2026-08-20T18:05:08.008776672Z`
+- Virtual Size: ~ 298.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-26-jdk`
 
 ```console
-sapmachine-26-jdk-26.0.2-r0 description:
+sapmachine-26-jdk-26.0.2.1-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-26-jdk-26.0.2-r0 webpage:
+sapmachine-26-jdk-26.0.2.1-r0 webpage:
 https://sapmachine.io
 
-sapmachine-26-jdk-26.0.2-r0 installed size:
+sapmachine-26-jdk-26.0.2.1-r0 installed size:
 261 MiB
 
-sapmachine-26-jdk-26.0.2-r0 license:
+sapmachine-26-jdk-26.0.2.1-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -612,16 +612,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.2-r0 installed size:
-1577 KiB
+sqlite-libs-3.53.4-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.51.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```

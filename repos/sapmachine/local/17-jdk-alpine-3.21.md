@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25ff942c679acb776254626112952ebac26c74ae1d7342482d084e0b14cabe15`
-- Created: `2026-07-22T18:26:22.074567336Z`
+- Image ID: `sha256:96439358d396e6fc75c6a6f3269b945b4485566358bedc2da2d115230de3128d`
+- Created: `2026-08-20T18:08:42.978600541Z`
 - Virtual Size: ~ 358.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -289,16 +289,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-17-jdk`
 
 ```console
-sapmachine-17-jdk-17.0.20-r0 description:
+sapmachine-17-jdk-17.0.20.1-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-17-jdk-17.0.20-r0 webpage:
+sapmachine-17-jdk-17.0.20.1-r0 webpage:
 https://sapmachine.io
 
-sapmachine-17-jdk-17.0.20-r0 installed size:
+sapmachine-17-jdk-17.0.20.1-r0 installed size:
 319 MiB
 
-sapmachine-17-jdk-17.0.20-r0 license:
+sapmachine-17-jdk-17.0.20.1-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```

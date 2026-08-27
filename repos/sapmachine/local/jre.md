@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba7b7b0576829dad226ea8f2e3e26c4646bffc0865773b4fd7da52b38d3e9fae`
-- Created: `2026-08-18T19:27:35.702585286Z`
-- Virtual Size: ~ 261.96 Mb  
+- Image ID: `sha256:fcb9abd7c212dde869c85957c04458fda38c11e212a5b3851e9a61ad469431aa`
+- Created: `2026-08-20T18:04:36.548350924Z`
+- Virtual Size: ~ 262.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1612,14 +1612,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.debian.tar.xz' openssl_3.0.13-0ubuntu3.12.debian.tar.xz 197124 SHA512:eed41bdde74405cbe96ed3a18cb4b95c5cc65bcb7630245981090bc7e36510b65d96ed530d09b7582fca8158f9383475d4efc2e78e374e059af4102a0f90c35a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.dsc' openssl_3.0.13-0ubuntu3.12.dsc 2516 SHA512:304f5cd24991427633fbbaf5e2f6c1b84a7388c82d34740f9821927dbfb5a49d40e6e5f182cd4c417b957dd428de23e756fcd9ba50c8ca889f067bf4ba390b46
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -1766,20 +1761,15 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-4ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.debian.tar.xz' procps_4.0.4-4ubuntu3.2.debian.tar.xz 38784 SHA256:519e5cd39f4a8401dfd892134f3c5ccf5221f23fe32174393ce81cc45526f05e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.dsc' procps_4.0.4-4ubuntu3.2.dsc 2251 SHA256:eee89a6469fcc4fb8ee3844b10bf48c894322ff781e92732554c7ceed680c5a1
-```
 
-### `dpkg` source package: `sapmachine-26-jre=26.0.2`
+### `dpkg` source package: `sapmachine-26-jre=26.0.2.1`
 
 Binary Packages:
 
-- `sapmachine-26-jre=26.0.2`
+- `sapmachine-26-jre=26.0.2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
