@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b90faa08d19954953a25bff7564227c2be52c294718babcf8ba132e2fe998a7`
-- Created: `2026-08-17T17:37:52.210073083Z`
-- Virtual Size: ~ 286.63 Mb  
+- Image ID: `sha256:eb840818fc2088a4010193860073cab2e800a0cd611cc4ce37da37cca851248f`
+- Created: `2026-08-27T20:32:45.50206237Z`
+- Virtual Size: ~ 292.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
-  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
+  - `PHP_VERSION=8.4.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.25.tar.xz.asc`
+  - `PHP_SHA256=dc1ad8b4109898d9db49744450403874858c23efc685b1032a50bd1e83906848`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -696,16 +696,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -747,16 +747,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -1155,16 +1155,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1546,16 +1546,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1682,16 +1682,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```

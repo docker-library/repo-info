@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c1acde0fed02353ba0c5314cdd73df0e7bec113a59cff0ba6e0306c48b96eb4`
-- Created: `2026-08-25T01:44:11.377722971Z`
-- Virtual Size: ~ 698.82 Mb  
+- Image ID: `sha256:4c2bb5a517c51e90d92cc50f22bca929dcc1f53cb887600fd1cf173b1dd14cc2`
+- Created: `2026-08-27T20:34:11.061356627Z`
+- Virtual Size: ~ 707.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
-  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
+  - `PHP_VERSION=8.4.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.25.tar.xz.asc`
+  - `PHP_SHA256=dc1ad8b4109898d9db49744450403874858c23efc685b1032a50bd1e83906848`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -3229,11 +3229,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.101-1`
+### `dpkg` source package: `linux=6.12.105-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.101-1`
+- `linux-libc-dev=6.12.105-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3247,17 +3247,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.101-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.dsc' linux_6.12.101-1.dsc 290418 SHA256:5f4710f4c60b932526f04d72fcf0cc6febc561dbaac36f5784ee2179a6be36f0
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101.orig.tar.xz' linux_6.12.101.orig.tar.xz 151366788 SHA256:ba6df356e6c9aeca8930556d2732eb502e168815a31269d74eb0d9d0c170fd89
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.debian.tar.xz' linux_6.12.101-1.debian.tar.xz 1874152 SHA256:eb563ea1a4e67b918936356092f07b57f3aa67c73cb41ec276f9ec1eaa0254b2
+$ apt-get source -qq --print-uris linux=6.12.105-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105-1.dsc' linux_6.12.105-1.dsc 290418 SHA256:546d33ef1a1ec53c3ac12a78853347c77aa161b00649f338dc535c09a59f3567
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105.orig.tar.xz' linux_6.12.105.orig.tar.xz 151395944 SHA256:5d2c47d01ff7a688e650daf2f1c0c21269b58d54c2b151bcf3a58549f5559e82
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.105-1.debian.tar.xz' linux_6.12.105-1.debian.tar.xz 1885248 SHA256:95090297cea3ae7d3b4cce5e94cb0adc7912a5c9659a6d1fbb6898f80692b7ee
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.101-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.101-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.101-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.105-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.105-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.105-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -3735,13 +3735,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.6-1~deb13u2`
+### `dpkg` source package: `openssl=3.5.7-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.6-1~deb13u2`
-- `openssl=3.5.6-1~deb13u2`
-- `openssl-provider-legacy=3.5.6-1~deb13u2`
+- `libssl3t64:amd64=3.5.7-1~deb13u2`
+- `openssl=3.5.7-1~deb13u2`
+- `openssl-provider-legacy=3.5.7-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -3753,18 +3753,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u2.dsc' openssl_3.5.6-1~deb13u2.dsc 2707 SHA256:6a7f8fef28a5134eeb1a88435c35704f6200a268b913232eca09775651a19210
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u2.debian.tar.xz' openssl_3.5.6-1~deb13u2.debian.tar.xz 82144 SHA256:322797f9ac320606e91eb07540fd4c7ba910ee84f52fa455c7f8619dd53f9bcc
+$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2.dsc' openssl_3.5.7-1~deb13u2.dsc 2707 SHA256:25904642004d30c5c3da4642a72a7d09f8d9eb6e5ce62dab53c0371114faf8f2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u2.debian.tar.xz' openssl_3.5.7-1~deb13u2.debian.tar.xz 74836 SHA256:593a47654ead460a3b609503733f80bef552ff0802799d3b47784faacc50809f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
