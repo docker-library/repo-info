@@ -1,10 +1,10 @@
-# `openjdk:28-ea-11-jdk-bookworm`
+# `openjdk:28-ea-12-jdk-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2bf6bda30dbb58262cf12f1e129ba532d859c544cd97c6bc7da17d4190f8aed`
-- Created: `2026-08-14T17:58:55.123237094Z`
-- Virtual Size: ~ 862.28 Mb  
+- Image ID: `sha256:2c65d9e5f1d9b965458c403cfed3d8b689b13303dd9e765f81ec6cbacf6a21ab`
+- Created: `2026-08-25T18:00:44.034655651Z`
+- Virtual Size: ~ 861.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-28/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-28`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=28-ea+11`
+  - `JAVA_VERSION=28-ea+12`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -70,11 +70,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apr-util=1.6.3-1`
+### `dpkg` source package: `apr-util=1.6.3-1+deb12u1`
 
 Binary Packages:
 
-- `libaprutil1:amd64=1.6.3-1`
+- `libaprutil1:amd64=1.6.3-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
@@ -83,18 +83,18 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr-util=1.6.3-1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.dsc' apr-util_1.6.3-1.dsc 2760 SHA256:e43ecafbe39a8d47fbe5faee705295435ac753e6b40c9b4c8d483a769ad8253e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.debian.tar.xz' apr-util_1.6.3-1.debian.tar.xz 340808 SHA256:51400024f722f3427a720f485bd20874d846f38320e7fe52a290b8c9c7b201f5
+$ apt-get source -qq --print-uris apr-util=1.6.3-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3-1%2bdeb12u1.dsc' apr-util_1.6.3-1+deb12u1.dsc 2792 SHA256:80ddd39ee305158055729b83c53e7030b63508cdb8fdfe5b0f4ebab947077866
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3-1%2bdeb12u1.debian.tar.xz' apr-util_1.6.3-1+deb12u1.debian.tar.xz 347680 SHA256:f52fa29f517c3a746ec1227f868ac62fe37f99a0c1246291a78a541fdf9461e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apr-util/1.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apr-util/1.6.3-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/apr-util/1.6.3-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr-util/1.6.3-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.7.2-3+deb12u1`
 
@@ -3268,11 +3268,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0043+nmu1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0043+nmu1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-28`
+### `dpkg` source package: `unzip=6.0-28+deb12u1`
 
 Binary Packages:
 
-- `unzip=6.0-28`
+- `unzip=6.0-28+deb12u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3281,17 +3281,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unzip=6.0-28
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.dsc' unzip_6.0-28.dsc 1359 SHA256:f5b486028b61a145b591fdd96aaeaf89ef6eef164a299f43bd5e6704bdefc8a2
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.debian.tar.xz' unzip_6.0-28.debian.tar.xz 25032 SHA256:e51364116c84739c591728ecc841113a914fa11358fd10ff0d6813524d811bb9
+$ apt-get source -qq --print-uris unzip=6.0-28+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-28%2bdeb12u1.dsc' unzip_6.0-28+deb12u1.dsc 1131 SHA256:e1bb1f919fe04ced4da497c1f9f4e2e3174c74c0080d889cc368d8fddb495870
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-28%2bdeb12u1.debian.tar.xz' unzip_6.0-28+deb12u1.debian.tar.xz 26508 SHA256:defefe4900f2065b9f067652645fe7e5d99421566565d8b743cc7c5636deb4fe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unzip/6.0-28/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-28/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-28/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unzip/6.0-28+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-28+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-28+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
