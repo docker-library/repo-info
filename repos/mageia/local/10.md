@@ -164,7 +164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url curl-8.21.0-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `dash-static-0.5.12-3.mga10.x86_64`
@@ -346,7 +346,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gzip-1.14-2.1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/gzip-1.14-2.1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/gzip-1.14-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `hostname-3.25-1.mga10.x86_64`
@@ -478,7 +478,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64acl1-2.4.0-3.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/acl-2.4.0-3.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/acl-2.4.0-3.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64archive13-3.8.8-1.mga10.x86_64`
@@ -489,7 +489,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64archive13-3.8.8-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/libarchive-3.8.8-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/libarchive-3.8.8-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64assuan9-3.0.2-1.mga10.x86_64`
@@ -511,7 +511,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64attr1-2.6.0-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/attr-2.6.0-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/attr-2.6.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64audit1-4.0.3-3.mga10.x86_64`
@@ -544,7 +544,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64bpf1-6.18.39-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/kernel-6.18.39-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/kernel-6.18.39-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64brotlicommon1-1.2.0-1.mga10.x86_64`
@@ -643,7 +643,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64curl4-8.21.0-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/curl-8.21.0-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64daemon0-0.14-16.mga10.x86_64`
@@ -1160,7 +1160,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64nghttp2_14-1.68.1-2.1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/nghttp2-1.68.1-2.1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/nghttp2-1.68.1-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64nghttp3_9-1.14.0-1.mga10.x86_64`
@@ -1215,7 +1215,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64openssl3-3.5.7-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/openssl-3.5.7-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/openssl-3.5.7-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64p11-kit0-0.25.10-1.mga10.x86_64`
@@ -1468,7 +1468,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64sqlite3_0-3.51.3-1.2.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/sqlite3-3.51.3-1.2.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/sqlite3-3.51.3-1.2.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64ssh4-0.11.4-1.mga10.x86_64`
@@ -1754,7 +1754,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64xml2_16-2.15.1-3.1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/libxml2-2.15.1-3.1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/libxml2-2.15.1-3.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `lib64yaml0_2-0.2.5-4.mga10.x86_64`
@@ -2183,7 +2183,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url perl-5.42.0-3.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
 ```
 
 ### `rpm` package: `perl-Config-IniFiles-3.0.3-3.1.mga10.noarch`
@@ -2194,7 +2194,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url perl-Config-IniFiles-3.0.3-3.1.mga10.noarch
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/perl-Config-IniFiles-3.0.3-3.1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/perl-Config-IniFiles-3.0.3-3.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `perl-File-Sync-0.110.0-42.mga10.x86_64`
@@ -2348,7 +2348,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url perl-base-5.42.0-3.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/perl-5.42.0-3.mga10.src.rpm
 ```
 
 ### `rpm` package: `pkgconf-2.3.0-2.mga10.x86_64`
@@ -2458,7 +2458,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rootcerts-20260714.00-1.mga10.noarch
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/rootcerts-20260714.00-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/rootcerts-20260714.00-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `rootfiles-11.0-18.mga10.noarch`
@@ -2502,7 +2502,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-mageia-setup-2.84-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/rpm-mageia-setup-2.84-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/rpm-mageia-setup-2.84-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `run-parts-4.8.4-7.mga10.x86_64`
@@ -2656,7 +2656,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url urpmi-8.136-2.1.mga10.noarch
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/urpmi-8.136-2.1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/urpmi-8.136-2.1.mga10.src.rpm
 ```
 
 ### `rpm` package: `util-linux-2.42-1.mga10.x86_64`
@@ -2678,7 +2678,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url vim-minimal-9.2.782-1.mga10
-ftp://ftp.mageia-highland.us/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
+https://us.mirrors.cicku.me/mageia/distrib/10/SRPMS/core/updates/vim-9.2.782-1.mga10.src.rpm
 ```
 
 ### `rpm` package: `which-2.23-2.mga10.x86_64`
