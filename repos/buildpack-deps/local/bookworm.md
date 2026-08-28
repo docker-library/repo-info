@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:edbeca8a0d16da4759fccae2d0b0434117f439daec188d069660c58531d9692f`
-- Created: `2026-08-05T02:16:43.606173989Z`
-- Virtual Size: ~ 929.99 Mb  
+- Image ID: `sha256:8928b227d9f896277273fa52850b77012a6fe4925f8d75f6625bf4667e26845d`
+- Created: `2026-08-25T02:16:53.32234541Z`
+- Virtual Size: ~ 930.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -97,11 +97,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/3.6.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/3.6.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apr-util=1.6.3-1`
+### `dpkg` source package: `apr-util=1.6.3-1+deb12u1`
 
 Binary Packages:
 
-- `libaprutil1:amd64=1.6.3-1`
+- `libaprutil1:amd64=1.6.3-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
@@ -110,18 +110,18 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr-util=1.6.3-1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.dsc' apr-util_1.6.3-1.dsc 2760 SHA256:e43ecafbe39a8d47fbe5faee705295435ac753e6b40c9b4c8d483a769ad8253e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.debian.tar.xz' apr-util_1.6.3-1.debian.tar.xz 340808 SHA256:51400024f722f3427a720f485bd20874d846f38320e7fe52a290b8c9c7b201f5
+$ apt-get source -qq --print-uris apr-util=1.6.3-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3-1%2bdeb12u1.dsc' apr-util_1.6.3-1+deb12u1.dsc 2792 SHA256:80ddd39ee305158055729b83c53e7030b63508cdb8fdfe5b0f4ebab947077866
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
+'http://deb.debian.org/debian-security/pool/updates/main/a/apr-util/apr-util_1.6.3-1%2bdeb12u1.debian.tar.xz' apr-util_1.6.3-1+deb12u1.debian.tar.xz 347680 SHA256:f52fa29f517c3a746ec1227f868ac62fe37f99a0c1246291a78a541fdf9461e5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apr-util/1.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apr-util/1.6.3-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/apr-util/1.6.3-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr-util/1.6.3-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.7.2-3+deb12u1`
 
@@ -502,11 +502,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20230311+deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u1`
 
 Binary Packages:
 
-- `ca-certificates=20230311+deb12u1`
+- `ca-certificates=20250419~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -517,16 +517,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311+deb12u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.dsc' ca-certificates_20230311+deb12u1.dsc 1800 SHA256:d4d57c9b56db87c8ebe7a0c27d55023e3369d183d4b774bdf455f775a80f00eb
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20230311%2bdeb12u1.tar.xz' ca-certificates_20230311+deb12u1.tar.xz 259756 SHA256:4cd6bbd5577a16432438bc1006dc05c333afacb76104fc3564612858c8ee3280
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20230311+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20230311+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.16.0-7`
 
@@ -4916,12 +4916,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.18-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.19-0+deb12u1`
 
 Binary Packages:
 
-- `libpq-dev=15.18-0+deb12u1`
-- `libpq5:amd64=15.18-0+deb12u1`
+- `libpq-dev=15.19-0+deb12u1`
+- `libpq5:amd64=15.19-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4941,17 +4941,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.18-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18-0%2bdeb12u1.dsc' postgresql-15_15.18-0+deb12u1.dsc 3942 SHA256:d940b57dd029ef0712212164410fcb51854c883f3fc0c3a11486acdfd2ca5947
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18.orig.tar.bz2' postgresql-15_15.18.orig.tar.bz2 23405115 SHA256:11df0df97fe3ea4ba9a791faaf39cee1d2fe571e78885b5b55d8517d27c323b4
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.18-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.18-0+deb12u1.debian.tar.xz 31828 SHA256:efe6fc2007229a2cc7b087d75cb1213d49e275ec47c4b896d5e0880b4904f8b3
+$ apt-get source -qq --print-uris postgresql-15=15.19-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19-0%2bdeb12u1.dsc' postgresql-15_15.19-0+deb12u1.dsc 3926 SHA256:d8319b3e4fb0acd532f223266fda5e282f9d12d0313c411b2d243e7ae75ed70b
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19.orig.tar.bz2' postgresql-15_15.19.orig.tar.bz2 23452545 SHA256:e1a64a87a46b825b88c082e4518161a47aab53c45694964f8ba1df28f7859f89
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.19-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.19-0+deb12u1.debian.tar.xz 37708 SHA256:f04031b5e96cb5e1ce02ec6f131f20329c31c2784731918bc49e0d9c39909b0c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.18-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.18-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.18-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.19-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.19-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.19-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
@@ -5574,11 +5574,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0043+nmu1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0043+nmu1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unzip=6.0-28`
+### `dpkg` source package: `unzip=6.0-28+deb12u1`
 
 Binary Packages:
 
-- `unzip=6.0-28`
+- `unzip=6.0-28+deb12u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5587,17 +5587,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unzip=6.0-28
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.dsc' unzip_6.0-28.dsc 1359 SHA256:f5b486028b61a145b591fdd96aaeaf89ef6eef164a299f43bd5e6704bdefc8a2
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.debian.tar.xz' unzip_6.0-28.debian.tar.xz 25032 SHA256:e51364116c84739c591728ecc841113a914fa11358fd10ff0d6813524d811bb9
+$ apt-get source -qq --print-uris unzip=6.0-28+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-28%2bdeb12u1.dsc' unzip_6.0-28+deb12u1.dsc 1131 SHA256:e1bb1f919fe04ced4da497c1f9f4e2e3174c74c0080d889cc368d8fddb495870
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian-security/pool/updates/main/u/unzip/unzip_6.0-28%2bdeb12u1.debian.tar.xz' unzip_6.0-28+deb12u1.debian.tar.xz 26508 SHA256:defefe4900f2065b9f067652645fe7e5d99421566565d8b743cc7c5636deb4fe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/unzip/6.0-28/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-28/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-28/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/unzip/6.0-28+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-28+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-28+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 

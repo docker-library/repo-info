@@ -3691,14 +3691,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.debian.tar.xz' openssl_3.0.13-0ubuntu3.12.debian.tar.xz 197124 SHA512:eed41bdde74405cbe96ed3a18cb4b95c5cc65bcb7630245981090bc7e36510b65d96ed530d09b7582fca8158f9383475d4efc2e78e374e059af4102a0f90c35a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.12.dsc' openssl_3.0.13-0ubuntu3.12.dsc 2516 SHA512:304f5cd24991427633fbbaf5e2f6c1b84a7388c82d34740f9821927dbfb5a49d40e6e5f182cd4c417b957dd428de23e756fcd9ba50c8ca889f067bf4ba390b46
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -3721,14 +3716,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.3-4ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3.orig.tar.xz' p11-kit_0.25.3.orig.tar.xz 991528 SHA256:d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz' p11-kit_0.25.3-4ubuntu2.1.debian.tar.xz 26028 SHA256:f6e9bd39af9478e27900e9b557dc9352f5dcebb2da3ad8a0193686ebfe322cb2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.25.3-4ubuntu2.1.dsc' p11-kit_0.25.3-4ubuntu2.1.dsc 2405 SHA256:8c97d633fe815e73655b4d4b25a997a967eebca33b42db38a07b706db692a13c
-```
 
 ### `dpkg` source package: `pam=1.5.3-5ubuntu5.6`
 
@@ -3753,14 +3743,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA512:af88e8c1b6a9b737ffaffff7dd9ed8eec996d1fbb5804fb76f590bed66d8a1c2c6024a534d7a7b6d18496b300f3d6571a08874cf406cd2e8cea1d5eff49c136a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.6.debian.tar.xz' pam_1.5.3-5ubuntu5.6.debian.tar.xz 206496 SHA512:c911eca86607c9875297dd24bede33c2ee77ec02883a10979d9844a0ff010dcd68a412f60cfa19535d6133585b8a6eaaad0e82bc9cda0db61b46653e240d44f5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.6.dsc' pam_1.5.3-5ubuntu5.6.dsc 2727 SHA512:11e16998ec5156b4f2fdfc41ffa6fcd0e9e2af989f172b5862d3a654dbf296fbdae2ed8255855a464ce342f7fb8b5a2c6277af07f3bfe0fb11a2aac0440f364e
-```
 
 ### `dpkg` source package: `pango1.0=1.52.1+ds-1build1`
 
@@ -3878,15 +3863,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.3.debian.tar.xz' perl_5.38.2-3.2ubuntu0.3.debian.tar.xz 173452 SHA512:a75d0901b711a0a28af4f9ea78bf9126718ffdf9cebc49d3debb8b8226d74834f0ec2407907bf32731f46794168b8751f8bf607607ea55ee728bda6b3dd19028
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.3.dsc' perl_5.38.2-3.2ubuntu0.3.dsc 2906 SHA512:061ab3b4c4ec7c7bb824d9fd9d29d2a3e4a8e948f14fb2f8ee96464436d79e305d0c993c1431b0e3efb14b8406d8f0b35a9e551518b5f875ba59c37a64d1ea1e
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
@@ -4000,14 +3979,9 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-4ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.debian.tar.xz' procps_4.0.4-4ubuntu3.2.debian.tar.xz 38784 SHA256:519e5cd39f4a8401dfd892134f3c5ccf5221f23fe32174393ce81cc45526f05e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.2.dsc' procps_4.0.4-4ubuntu3.2.dsc 2251 SHA256:eee89a6469fcc4fb8ee3844b10bf48c894322ff781e92732554c7ceed680c5a1
-```
 
 ### `dpkg` source package: `python-markdown=3.5.2-1`
 
@@ -4102,9 +4076,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.15
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.debian.tar.xz' python3.12_3.12.3-1ubuntu0.15.debian.tar.xz 299248 SHA512:cc765bbb9c7487599b37697c637e8b806bcaec44a42ad038aa75f92011158ae8fb7da59ed58b31b504917660d9df30dc77e318ef832eccd898ed3abd9f309936
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.dsc' python3.12_3.12.3-1ubuntu0.15.dsc 3879 SHA512:bcf9b36359ec28d3ff0c75d9b47fc60d3de150ce10d8451e84b313edeb67c459d599ff0598c327021e1a527ced7ac36c0fba343fec89d85a02ff7832dd744758
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.debian.tar.xz' python3.12_3.12.3-1ubuntu0.15.debian.tar.xz 299248 SHA512:cc765bbb9c7487599b37697c637e8b806bcaec44a42ad038aa75f92011158ae8fb7da59ed58b31b504917660d9df30dc77e318ef832eccd898ed3abd9f309936
+'http://security.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.15.dsc' python3.12_3.12.3-1ubuntu0.15.dsc 3879 SHA512:bcf9b36359ec28d3ff0c75d9b47fc60d3de150ce10d8451e84b313edeb67c459d599ff0598c327021e1a527ced7ac36c0fba343fec89d85a02ff7832dd744758
 ```
 
 ### `dpkg` source package: `readline=8.2-4build1`
