@@ -538,20 +538,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.22.0~rc2-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0%7erc2-2.dsc' curl_8.22.0~rc2-2.dsc 3351 SHA256:57c7dde2a8520cffa5a53c909eb8955c42dd78ea45025ecaaedd5172a18eb955
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0%7erc2.orig.tar.xz' curl_8.22.0~rc2.orig.tar.xz 2924468 SHA256:4ba4148f2b8cb84e1865fe58d39d3e7bbbf2f88b7e97897b8aa7b1144a9ef681
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0%7erc2-2.debian.tar.xz' curl_8.22.0~rc2-2.debian.tar.xz 68228 SHA256:3a98efe04ddafb6b08500cd6edd03be31cf76ff7297264f6870575a7b6e95222
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.22.0~rc2-2/
 
-- https://sources.debian.net/src/curl/8.22.0~rc2-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.22.0~rc2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.22.0~rc2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
