@@ -1,26 +1,25 @@
-# `ghost:6.61.0-alpine3.23`
+# `ghost:6.61.0-next-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:892de83ca7d462de735eec4304ba48b47d02dcbf5467dd9c17edc6cf2c6a9594`
-- Created: `2026-08-28T23:37:49.372453286Z`
-- Virtual Size: ~ 683.68 Mb  
+- Image ID: `sha256:1c43dc4546ace9a7a6bc22c265e8e4cb189e0bd42bef9d8ca8f0474af117f740`
+- Created: `2026-08-28T23:38:52.700138389Z`
+- Virtual Size: ~ 431.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
-- Command: `["node","current/index.js"]`
+- Command: `["node","index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=22.23.2`
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.32.2`
-  - `GHOST_CLI_SHA=5e0b07b7619207459956dd9728bafc5cd7d15f01`
-  - `GHOST_CLI_INSTALL=/usr/local/lib/ghost-cli`
-  - `GHOST_INSTALL=/var/lib/ghost`
-  - `GHOST_CONTENT=/var/lib/ghost/content`
+  - `GHOST_INSTALL=/home/ghost`
+  - `GHOST_CONTENT=/home/ghost/content`
   - `GHOST_VERSION=6.61.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.61.0/ghost-6.61.0.tgz`
+  - `GHOST_SHA256=d7a4de32641979fd57fa98bd29c128e406aa5421f3dadc04ffe28cb96507e69c`
 
 ## `apk` (`.apk`-based packages)
 
@@ -106,23 +105,6 @@ apk-tools-3.0.6-r0 installed size:
 
 apk-tools-3.0.6-r0 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `bash`
-
-```console
-bash-5.3.3-r1 description:
-The GNU Bourne Again shell
-
-bash-5.3.3-r1 webpage:
-https://www.gnu.org/software/bash/bash.html
-
-bash-5.3.3-r1 installed size:
-1344 KiB
-
-bash-5.3.3-r1 license:
-GPL-3.0-or-later
 
 ```
 
@@ -228,23 +210,6 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
-### `apk` package: `libncursesw`
-
-```console
-libncursesw-6.5_p20251123-r0 description:
-Console display library (libncursesw)
-
-libncursesw-6.5_p20251123-r0 webpage:
-https://invisible-island.net/ncurses/
-
-libncursesw-6.5_p20251123-r0 installed size:
-334 KiB
-
-libncursesw-6.5_p20251123-r0 license:
-X11
-
-```
-
 ### `apk` package: `libssl3`
 
 ```console
@@ -310,40 +275,6 @@ musl-utils-1.2.5-r23 installed size:
 
 musl-utils-1.2.5-r23 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
-
-```
-
-### `apk` package: `ncurses-terminfo-base`
-
-```console
-ncurses-terminfo-base-6.5_p20251123-r0 description:
-Descriptions of common terminals
-
-ncurses-terminfo-base-6.5_p20251123-r0 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-terminfo-base-6.5_p20251123-r0 installed size:
-98 KiB
-
-ncurses-terminfo-base-6.5_p20251123-r0 license:
-X11
-
-```
-
-### `apk` package: `readline`
-
-```console
-readline-8.3.1-r0 description:
-GNU readline library
-
-readline-8.3.1-r0 webpage:
-https://tiswww.cwru.edu/php/chet/readline/rltop.html
-
-readline-8.3.1-r0 installed size:
-292 KiB
-
-readline-8.3.1-r0 license:
-GPL-3.0-or-later
 
 ```
 

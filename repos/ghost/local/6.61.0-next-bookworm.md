@@ -1,26 +1,25 @@
-# `ghost:6.61.0-bookworm`
+# `ghost:6.61.0-next-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c09cdd57059514ec4671216af7af76d709fd3f8d8ad2ffcdf9ef1974be1d8d10`
-- Created: `2026-08-28T23:37:36.94318069Z`
-- Virtual Size: ~ 747.38 Mb  
+- Image ID: `sha256:72ceddd9eb0d86e2125a364571303f6d1b8479b64b6563f233a712814c7deec2`
+- Created: `2026-08-28T23:38:29.429391149Z`
+- Virtual Size: ~ 504.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
-- Command: `["node","current/index.js"]`
+- Command: `["node","index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NODE_VERSION=22.23.2`
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.32.2`
-  - `GHOST_CLI_SHA=5e0b07b7619207459956dd9728bafc5cd7d15f01`
-  - `GHOST_CLI_INSTALL=/usr/local/lib/ghost-cli`
-  - `GHOST_INSTALL=/var/lib/ghost`
-  - `GHOST_CONTENT=/var/lib/ghost/content`
+  - `GHOST_INSTALL=/home/ghost`
+  - `GHOST_CONTENT=/home/ghost/content`
   - `GHOST_VERSION=6.61.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.61.0/ghost-6.61.0.tgz`
+  - `GHOST_SHA256=d7a4de32641979fd57fa98bd29c128e406aa5421f3dadc04ffe28cb96507e69c`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -272,6 +271,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/ (for browsing the source)
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ca-certificates=20250419~deb12u1`
+
+Binary Packages:
+
+- `ca-certificates=20250419~deb12u1`
+
+Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `MPL-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
@@ -1465,6 +1490,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/ (for browsing the source)
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=3.0.20-1~deb12u2`
+
+Binary Packages:
+
+- `libssl3:amd64=3.0.20-1~deb12u2`
+- `openssl=3.0.20-1~deb12u2`
+
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.20-1~deb12u2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20-1%7edeb12u2.dsc' openssl_3.0.20-1~deb12u2.dsc 2539 SHA256:a614474a2773c23b10c0d65f4eccbcf93fdac4749afb7c26d76e1b0340154d3d
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20.orig.tar.gz' openssl_3.0.20.orig.tar.gz 15292815 SHA256:c80a01dfc70ece4dc21168932c37739042d404d46ccc81a5986dd75314ecda6f
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20.orig.tar.gz.asc' openssl_3.0.20.orig.tar.gz.asc 833 SHA256:07669568ab34cf3a4dcf8fd8e0d85cacdacfaa10d5ab51bdc6fc47c22fa6b33a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20-1%7edeb12u2.debian.tar.xz' openssl_3.0.20-1~deb12u2.debian.tar.xz 72332 SHA256:7279efe85c359500c95aa88347e3395dd303d7566e2bb818d80d96e0c3bb9629
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/3.0.20-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.20-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.20-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
