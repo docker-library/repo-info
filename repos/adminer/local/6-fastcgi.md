@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d22526e7926388d1b310468024b9a09ea99740924b91766cfaf5e27b94e507a4`
-- Created: `2026-08-18T17:02:49.101283647Z`
-- Virtual Size: ~ 94.21 Mb  
+- Image ID: `sha256:e384e34f85d65036eb51a1461c88704151a0763fce27bdc75da493a75cf81f15`
+- Created: `2026-08-27T20:28:20.176233455Z`
+- Virtual Size: ~ 100.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.24.tar.xz.asc`
-  - `PHP_SHA256=e127be09a8506f4327c5cfa78a614b00d210714484ec215ce0011b4a03c00731`
+  - `PHP_VERSION=8.4.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.25.tar.xz.asc`
+  - `PHP_SHA256=dc1ad8b4109898d9db49744450403874858c23efc685b1032a50bd1e83906848`
   - `ADMINER_VERSION=6.0.1`
   - `ADMINER_DOWNLOAD_SHA256=1815c03f26e21d533e729c0b09bc69a59c902a6440409d013105ee679dff006c`
   - `ADMINER_SRC_DOWNLOAD_SHA256=155ba6bcb54a4176c225034feb8a3a2abc5e58ea5e4359b28a8415f8fa068cc1`
@@ -319,16 +319,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -455,16 +455,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -591,16 +591,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -642,16 +642,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
