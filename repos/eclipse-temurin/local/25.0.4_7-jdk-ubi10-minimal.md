@@ -961,12 +961,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.12.5-10.el10_2.2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
 
