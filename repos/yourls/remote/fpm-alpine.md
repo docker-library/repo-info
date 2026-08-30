@@ -1,7 +1,7 @@
 ## `yourls:fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:7b739a4015b0c7d3205be9d515707042aecce51d9d4a04b49e71a02dd5e20289
+$ docker pull yourls@sha256:50a16248b9985e05d07af043cf337fe61f04f9104079b62bc3ee6f1c498b1fa3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1112,13 +1112,13 @@ $ docker pull yourls@sha256:83b796c0aa264b060e593acf23cb717f1d03e38161808cd21946
 ### `yourls:fpm-alpine` - linux; riscv64
 
 ```console
-$ docker pull yourls@sha256:975b8185f615b947137b33ecaa77b968188703ec4cd1ac031c5e4578ef65f167
+$ docker pull yourls@sha256:448dcad884dd5a34fc7c2d2a1a9d2dfbb66a0fa9eb7f10fea6e07e9770ae7e48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.4 MB (44446619 bytes)**  
+-	Total Size: **44.2 MB (44170990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb91af8903d4b8954025e3a428e439c3e85eaae12d76e75fcdb25c6978646b3d`
+-	Image ID: `sha256:f05b6d4a16a5315bc025863ab79f36c2330b9915960744e6cdf20743b7bfb3b2`
 -	Entrypoint: `["container-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1173,30 +1173,30 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 31 Jul 2026 17:42:40 GMT
 CMD ["php-fpm"]
-# Sun, 02 Aug 2026 10:28:31 GMT
+# Sun, 30 Aug 2026 12:13:08 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)"     bcmath     pdo_mysql     mysqli # buildkit
-# Sun, 02 Aug 2026 10:28:32 GMT
+# Sun, 30 Aug 2026 12:13:08 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > "$PHP_INI_DIR/conf.d/opcache-recommended.ini" # buildkit
-# Sun, 02 Aug 2026 10:28:35 GMT
+# Sun, 30 Aug 2026 12:13:12 GMT
 RUN apk add --no-cache bash # buildkit
-# Sun, 02 Aug 2026 10:28:39 GMT
-ARG YOURLS_VERSION=1.10.4
-# Sun, 02 Aug 2026 10:28:39 GMT
-ARG YOURLS_SHA256=1a41606138615c9869e232077b9da7b2a084e8751459f72b6c073bf0f092b808
-# Sun, 02 Aug 2026 10:28:39 GMT
-ENV YOURLS_VERSION=1.10.4
-# Sun, 02 Aug 2026 10:28:39 GMT
-ENV YOURLS_SHA256=1a41606138615c9869e232077b9da7b2a084e8751459f72b6c073bf0f092b808
-# Sun, 02 Aug 2026 10:28:39 GMT
-# ARGS: YOURLS_VERSION=1.10.4 YOURLS_SHA256=1a41606138615c9869e232077b9da7b2a084e8751459f72b6c073bf0f092b808
+# Sun, 30 Aug 2026 12:13:16 GMT
+ARG YOURLS_VERSION=1.10.5
+# Sun, 30 Aug 2026 12:13:16 GMT
+ARG YOURLS_SHA256=4c1ff34798762599eeb446884c6a436e43a89e74923aa92fdf55825b0cbb9e6e
+# Sun, 30 Aug 2026 12:13:16 GMT
+ENV YOURLS_VERSION=1.10.5
+# Sun, 30 Aug 2026 12:13:16 GMT
+ENV YOURLS_SHA256=4c1ff34798762599eeb446884c6a436e43a89e74923aa92fdf55825b0cbb9e6e
+# Sun, 30 Aug 2026 12:13:16 GMT
+# ARGS: YOURLS_VERSION=1.10.5 YOURLS_SHA256=4c1ff34798762599eeb446884c6a436e43a89e74923aa92fdf55825b0cbb9e6e
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls # buildkit
-# Sun, 02 Aug 2026 10:28:39 GMT
+# Sun, 30 Aug 2026 12:13:16 GMT
 COPY --chown=www-data:www-data config-container.php /usr/src/yourls/user/ # buildkit
-# Sun, 02 Aug 2026 10:28:40 GMT
+# Sun, 30 Aug 2026 12:13:16 GMT
 COPY container-entrypoint.sh /usr/local/bin/ # buildkit
-# Sun, 02 Aug 2026 10:28:40 GMT
+# Sun, 30 Aug 2026 12:13:16 GMT
 ENTRYPOINT ["container-entrypoint.sh"]
-# Sun, 02 Aug 2026 10:28:40 GMT
+# Sun, 30 Aug 2026 12:13:16 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1245,48 +1245,48 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 31 Jul 2026 17:43:36 GMT  
 		Size: 9.3 KB (9261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:962c07be3b86971d5306a6cf90d1576247b6bfd2ebdeea41410ebbd2e4d4de94`  
-		Last Modified: Sun, 02 Aug 2026 10:29:02 GMT  
-		Size: 127.5 KB (127475 bytes)  
+	-	`sha256:d5f58f6c3d4312405e7d85f22d2b6131d5c95180f7ff743ec2f75d980a426db3`  
+		Last Modified: Sun, 30 Aug 2026 12:13:38 GMT  
+		Size: 127.5 KB (127480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:326bf115d168d226467dbf3b07e8dccc2430bbe4ff37f5df002a86f850b1a86a`  
-		Last Modified: Sun, 02 Aug 2026 10:29:02 GMT  
-		Size: 327.0 B  
+	-	`sha256:afdb93bf3ccbd8623157ae35d0fae239a042fdf45a0d116ad706d78c60641cb9`  
+		Last Modified: Sun, 30 Aug 2026 12:13:38 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a74412bd00c7e930351dd676e5158b3fefda9e25e8d6ad2c1b3cb95bfc1921e`  
-		Last Modified: Sun, 02 Aug 2026 10:29:02 GMT  
-		Size: 536.5 KB (536460 bytes)  
+	-	`sha256:1905a4c66f613f82a5e9a81f7d528b0b151248eff1adf9315e2317c827d3cbae`  
+		Last Modified: Sun, 30 Aug 2026 12:13:39 GMT  
+		Size: 536.5 KB (536470 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a9142b73197ada2478eac20f238161181fd3260fbe5f2d6278db0845f2e5384`  
-		Last Modified: Sun, 02 Aug 2026 10:29:03 GMT  
-		Size: 5.9 MB (5871645 bytes)  
+	-	`sha256:3ed81ee1a37af3881747ceb4cabb2abe57c11bc26ec6bc8a2d040d7e6d65ba20`  
+		Last Modified: Sun, 30 Aug 2026 12:13:39 GMT  
+		Size: 5.6 MB (5595745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4248771f3d6e9090dba6742ea583d63f7b526c22f9da85c025c544dd1c1245f`  
-		Last Modified: Sun, 02 Aug 2026 10:29:03 GMT  
-		Size: 2.1 KB (2091 bytes)  
+	-	`sha256:2ad118d4e7b165fc7167aaad408ace98440e9447b2a07dc659f51e1a1e0f3a61`  
+		Last Modified: Sun, 30 Aug 2026 12:13:39 GMT  
+		Size: 2.3 KB (2309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768cad7b9eac07a520418eb99257cd69bccba51a203b28c9dc09e40ab5132112`  
-		Last Modified: Sun, 02 Aug 2026 10:29:03 GMT  
-		Size: 1.6 KB (1583 bytes)  
+	-	`sha256:51a06364c722ecc70c6303db552a814d8461161fa67c097ef33bf7afe56919da`  
+		Last Modified: Sun, 30 Aug 2026 12:13:40 GMT  
+		Size: 1.6 KB (1623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `yourls:fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull yourls@sha256:a6a07ba0f4509b7d8b5b83f481558d49fb8df7f7b884d0333269122f80a7e4cc
+$ docker pull yourls@sha256:a1d6038158ff526be308da6f113bf3b43bf40e64357d4e684a7ee9142fc02303
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:203bec5db7966dd01d4441049e10f5471c078e9a87c9aa7435c87c9a433988bb`
+-	Image ID: `sha256:2abd4f3ce623b0f110c9d447dd237b61b95897db1b1de8dab73b1e5594b4b116`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a992d3f6348a13420672d9cba14a268f1ce5722adae3988113a9ef757da393c9`  
-		Last Modified: Sun, 02 Aug 2026 10:29:02 GMT  
+	-	`sha256:275b83d267325ff71ebd0894663d970e27c37bddf374a9db924d47c98e2e9abf`  
+		Last Modified: Sun, 30 Aug 2026 12:13:38 GMT  
 		Size: 30.8 KB (30766 bytes)  
 		MIME: application/vnd.in-toto+json
 
