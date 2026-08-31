@@ -1087,14 +1087,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA256:4458d8de7849df44ccab15e16b1548b285224dbba5f08fac070c1c0e0bcc4cfa
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA256:5ff54161038e479c904042f8848e40b40f5330bc4e4f2df9a474974f3d466061
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA256:26959de3887a535d7929e5f3ac18eab6eaba5f221cdcf3b4cf7b43c68d32f92b
-```
 
 ### `dpkg` source package: `cppcheck=2.7-1`
 
@@ -4817,15 +4812,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/lib
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA256:86bcf885bd9b80466fe0e05453c58b877df61afa8ba947a58c356d7f0fab829b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA256:050d4e532a614c20b4830ebc210bb28acee2ed458e694c8aedfe2ab152688298
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz 75780 SHA256:324c4371a1c73edab635a028c0049b8e568e43014148e87c0a5b3d2e791d2295
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.dsc' libssh_0.9.6-2ubuntu0.22.04.7.dsc 2750 SHA256:7068a71d241496023af2b737f04f435ef80d36bd45d28ab4c42b31f76c3b30fe
-```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.2`
 
@@ -6274,14 +6263,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.46-0ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46.orig.tar.gz' mysql-8.0_8.0.46.orig.tar.gz 492495969 SHA512:b90ee9ad03ddc4732d2942ae4918010a7c398b2080f0e11750df0e61ec07a17bf26ce6aea8806729250b015607e398a8608363ed0830f4f613fafd09dbab7412
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46-0ubuntu0.22.04.3.debian.tar.xz' mysql-8.0_8.0.46-0ubuntu0.22.04.3.debian.tar.xz 170792 SHA512:f0676930f8a8f5e2d1b3f969cb0a8a4c103da5982567233cb918c17f0b0704c06dcec59a7b1ee170ee98b669052c5067ba2c21de6d51d579484cad7ec451ec11
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46-0ubuntu0.22.04.3.dsc' mysql-8.0_8.0.46-0ubuntu0.22.04.3.dsc 3568 SHA512:77637a2776e886dd7c39ffcda8ecc765d42b1f39a5f00425b6fb69b32000a923e992106e7291ad8467d006811e55fa262805cde027a029587fed0af67ab9b95f
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
@@ -7084,14 +7068,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.7.debian.tar.xz' pam_1.4.0-11ubuntu2.7.debian.tar.xz 189436 SHA512:82e18faa2478af16dd11705b827bb691c92cc956f31c55c0b414e6397e503c350a7ac641d1e76c4c8130c4cb8324d00f023e93d8f86e4972629757e8dd4a7a1d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.7.dsc' pam_1.4.0-11ubuntu2.7.dsc 2728 SHA512:7bbd2aef254332c62770e9e110cea4b1544f607e882992b779e69a1625ebb705c2d384f41f58f8eabb4e79de5e5e6aad8d89800f2d49ac2c9202f98a093e5810
-```
 
 ### `dpkg` source package: `pango1.0=1.50.6+ds-2ubuntu1`
 
@@ -12252,9 +12231,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA256:7ea89214714f06a15925f6fb89de4d96a61ad5fc18bbd2ed210e7c4568f63391
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA256:09708d1e384f6b9d3ff1f65aa6c05db9260050e523c9e7a99331f60a42880d61
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA512:765de71da656f0fd36b0872e05c1f736b167faf3af9a52247e0810d260606fe440a541c5558a882f8a5d150d91f76f01303cada28ba5febe4d16042eda3da7c8
 ```
 
 ### `dpkg` source package: `shared-mime-info=2.1-2`
@@ -13105,14 +13084,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA256:6a0764c1aae7fb607ef8a6dd2c0f6c47d5e5fd27aa08820abaad9ec14e28e9d9
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA256:fe69a2cc84ddcfb17a47f57b8c39c3919844bd92ef8868b40676656025f391c8
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA256:024c983405cf31b5ba1230c99d27fd340552c0f59e05b4d94f222d9e399ac522
-```
 
 ### `dpkg` source package: `vtk9=9.1.0+really9.1.0+dfsg2-3build1`
 
@@ -13394,9 +13368,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xerces-c=3.2.3+debian-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian.orig.tar.xz' xerces-c_3.2.3+debian.orig.tar.xz 1560396 SHA256:25652e6ed8a55e9273d6514f7e2744678b6d51f5d88c03d4219fac0310393f8d
-'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian-3ubuntu0.1.debian.tar.xz' xerces-c_3.2.3+debian-3ubuntu0.1.debian.tar.xz 28900 SHA256:84eb304919f8850a2346bb8c715c82f2cc37b01ed8f092cf8210f09df0a08c3d
-'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian-3ubuntu0.1.dsc' xerces-c_3.2.3+debian-3ubuntu0.1.dsc 2153 SHA256:886033b8f91d1284cb3923ba20a3ff1c8e2d9ef3aad9ba49ca69efe11dea08c6
+'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian.orig.tar.xz' xerces-c_3.2.3+debian.orig.tar.xz 1560396 SHA512:4a479a163e9e61cb25e3cf0c89501e43da892274e9571e260b73a3c0ca3da8606e54cd62b375640ddf004c6c8014dd210b00624b8d812111d03c72f31a79ee6c
+'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian-3ubuntu0.1.debian.tar.xz' xerces-c_3.2.3+debian-3ubuntu0.1.debian.tar.xz 28900 SHA512:77e4bf579ede5d38a0587965b24c82edfa50ed07672f0a88fad1279363e9ed21f70f9771a13020f6e53c7bcabb540dd823a4be9af2b44cb30f5bd6a2f1118de1
+'http://archive.ubuntu.com/ubuntu/pool/universe/x/xerces-c/xerces-c_3.2.3%2bdebian-3ubuntu0.1.dsc' xerces-c_3.2.3+debian-3ubuntu0.1.dsc 2153 SHA512:e95a518f2547378559fbf122523edbd9c3a04f9ef63949fc9b548468293560b0f7af9b39fd739803f1c55d15b07e23a56f4fb0e17f0306a74a1866020b1bfad5
 ```
 
 ### `dpkg` source package: `xft=2.3.4-1`

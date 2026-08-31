@@ -159,9 +159,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris aom=3.8.2-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2.orig.tar.gz' aom_3.8.2.orig.tar.gz 5466676 SHA256:08be381e014c3cf508293f9127c8e24cc35262c6e9c805b0a8313cebf99cbcda
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.debian.tar.xz' aom_3.8.2-2ubuntu0.1.debian.tar.xz 22776 SHA256:a1c3b5c2db4cdb1756aecd90f474d0be1447196330bf385f9db600455b817d27
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.dsc' aom_3.8.2-2ubuntu0.1.dsc 2395 SHA256:2cba9732b1e244fd5d59feaffa23fac4258c3914a8d30d627a7ce562fadbbbae
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2.orig.tar.gz' aom_3.8.2.orig.tar.gz 5466676 SHA512:fca573bab8653fb99773377444c8890325ba0ba4d2cde7cdcbd5aba3465859b297df3ba9343f5917a46284413743efb0730646ac720bb4abf8324875103ab2e7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.debian.tar.xz' aom_3.8.2-2ubuntu0.1.debian.tar.xz 22776 SHA512:cf01fad7c9c05a65ccabc046e91305612c8b9311502f51a09cf07e99296ef3900c85fb5bd18e7ab6cc5b562efdb6ba18a4c18c922f4d6aa6364950e16fd6ad25
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.dsc' aom_3.8.2-2ubuntu0.1.dsc 2395 SHA512:4a21de7415dbb23550b17ebebb98e443a20f3b811ee4e3d5da4995377fc308e6523f4f906aa77ad459e1aee8e8fad36348e45799277a98569fa367088455989f
 ```
 
 ### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.7`
@@ -313,15 +313,9 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-1build1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1build1.1.debian.tar.xz' attr_2.5.2-1build1.1.debian.tar.xz 26032 SHA256:9d020c0d557c8a932da9e330683e2cfaa8afc932bd9181b96dfda23077901e7f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1build1.1.dsc' attr_2.5.2-1build1.1.dsc 2588 SHA256:0397ea8ae0991bbf21ca031e5312439f3b050f185c3016ef52ba4c627493debe
-```
 
 ### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
 
@@ -777,14 +771,9 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-5.1build0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA256:ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1build0.1.debian.tar.bz2' bzip2_1.0.8-5.1build0.1.debian.tar.bz2 26927 SHA256:0ac0bd78fc0a7f6311a0bb62e81037ec920eb29e315261032ee84c4018e600f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1build0.1.dsc' bzip2_1.0.8-5.1build0.1.dsc 2220 SHA256:edf9f297ccfba3fc6f89d64fb6c63d866527498d21d0f0771a60f2fb7bc9b16a
-```
 
 ### `dpkg` source package: `c-blosc=1.21.5+ds-1build1`
 
@@ -1107,14 +1096,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA256:ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.debian.tar.xz' coreutils_9.4-3ubuntu6.2.debian.tar.xz 42032 SHA256:6cd2ec4b6af4c52d5aa7bf6b5843bbb9b878be42d91b279de8b7afae843c8fa0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
-```
 
 ### `dpkg` source package: `cppcheck=2.13.0-2ubuntu3`
 
@@ -5016,15 +5000,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`, `/usr/share/doc/lib
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.10.6-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz' libssh_0.10.6.orig.tar.xz 561036 SHA256:1861d498f5b6f1741b6abc73e608478491edcf9c9d4b6630eef6e74596de9dc1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6.orig.tar.xz.asc' libssh_0.10.6.orig.tar.xz.asc 833 SHA256:140420406d7796548b0beaf736e73864c32291787cf2bd3983fdbc41741494ae
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.4.debian.tar.xz' libssh_0.10.6-2ubuntu0.4.debian.tar.xz 56400 SHA256:13cb7f1a5b294bf5b0a9970acf22a7ccdfca5be546495b930960f0508725e4b9
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.10.6-2ubuntu0.4.dsc' libssh_0.10.6-2ubuntu0.4.dsc 2723 SHA256:dec8669834a233aa336e7607395dbd8c5946f1f83cb6792772bf0c2e09825f7b
-```
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-3ubuntu0.24.04.2`
 
@@ -6585,14 +6563,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.46-0ubuntu0.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46.orig.tar.gz' mysql-8.0_8.0.46.orig.tar.gz 492495969 SHA512:b90ee9ad03ddc4732d2942ae4918010a7c398b2080f0e11750df0e61ec07a17bf26ce6aea8806729250b015607e398a8608363ed0830f4f613fafd09dbab7412
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46-0ubuntu0.24.04.3.debian.tar.xz' mysql-8.0_8.0.46-0ubuntu0.24.04.3.debian.tar.xz 154420 SHA512:2888b119d9cca44d095cc26520d29ba96d65c961ac40f31adf6c6291c34392062fa23ff2baf59ca26eb1fe981d7170cc357e30c4a167226e27cb4ba2997b9d33
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.46-0ubuntu0.24.04.3.dsc' mysql-8.0_8.0.46-0ubuntu0.24.04.3.dsc 3613 SHA512:60fc0b21725f540960f61ac6ba1bd063b4a1909b6ed5aeae987128979c6be42cfc1d5bc0848a037f36fe8393451de26da8717b0192be9290a12a68306cf6399c
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.0build1`
 
@@ -13590,8 +13563,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unminimize=0.2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.tar.xz' unminimize_0.2.1.tar.xz 9400 SHA256:f15f4c1df275fa116024ea1142730f524cc552da1222effeec981aebc04f7461
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.dsc' unminimize_0.2.1.dsc 1554 SHA256:04cec314558830aba7f2c0a47fc156875c083db3f711d5525bea25a9a26fb638
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.tar.xz' unminimize_0.2.1.tar.xz 9400 SHA512:692ed9d0bb2d42ab5c74ef0f4c86d8f5922e4d1ee9d8efa8a03490437aff35c13b0114f7a62aa5464e95d4014db2745605a83fe7d9bfc81977de8ad56e3e901e
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unminimize/unminimize_0.2.1.dsc' unminimize_0.2.1.dsc 1554 SHA512:28b51904aaf6edb27c93d250e5b91caa1d39ff749e059be036be4bf8ff710ee9812b5080c678b155db45dfbbb01dd30ea7908728aa5d0129108aa630db1c2aef
 ```
 
 ### `dpkg` source package: `uriparser=0.9.7+dfsg-2build1`
@@ -13703,14 +13676,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.3-9ubuntu6.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3.orig.tar.xz' util-linux_2.39.3.orig.tar.xz 8526168 SHA256:7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.debian.tar.xz' util-linux_2.39.3-9ubuntu6.5.debian.tar.xz 148016 SHA256:e0130fe89b648a42710af003c965f9622707c69045aab442d17e028e232f105c
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.39.3-9ubuntu6.5.dsc' util-linux_2.39.3-9ubuntu6.5.dsc 4726 SHA256:206b6fb92d3cb0f6b1a959a6173d81ebf4e0a340564378ac49667a16968578d8
-```
 
 ### `dpkg` source package: `vtk9=9.1.0+really9.1.0+dfsg2-7.1build3`
 
@@ -14030,9 +13998,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xkeyboard-config=2.41-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41.orig.tar.gz' xkeyboard-config_2.41.orig.tar.gz 1697731 SHA256:8af4ed51ce0dc6fcf8cd9291355eec0221b3f0e531ad3ab022f086c05b7fe93f
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41-2ubuntu1.1.diff.gz' xkeyboard-config_2.41-2ubuntu1.1.diff.gz 43597 SHA256:4962300f6d3eeaa579c42d11de7fa5e4d0800b18037d20560b99535f4bf3a6c4
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41-2ubuntu1.1.dsc' xkeyboard-config_2.41-2ubuntu1.1.dsc 2227 SHA256:f6ae180603c1dee0578aeb46ef615ef0b01cece5ae301129204d688a1f43a810
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41.orig.tar.gz' xkeyboard-config_2.41.orig.tar.gz 1697731 SHA512:16b039683e41c1b10ebca4dda49bdb4f6346561b21c820fee81d002b78e0f08b1e23a713fb546d60200e2a74f51f86a1221b9e164e696e787cc2467694cd6a9a
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41-2ubuntu1.1.diff.gz' xkeyboard-config_2.41-2ubuntu1.1.diff.gz 43597 SHA512:ae1823a7dcf2ec759533cb87d91793982654e4175139887549890840e0398875754a67a61a3e3735f934ea947fbd146c798c023165e64f41da13cc30837e6319
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xkeyboard-config/xkeyboard-config_2.41-2ubuntu1.1.dsc' xkeyboard-config_2.41-2ubuntu1.1.dsc 2227 SHA512:ef3b993097b5eecada8dd5b321e88e7b1476bd6b8f2b18050f30d31342cfbd6f36f8cd3db3ff66d2f97110d84ee1e94488d2cee47ed9a78c9e0fea5dedb2f7c4
 ```
 
 ### `dpkg` source package: `xml-core=0.19`
@@ -14266,14 +14234,9 @@ Licenses: (parsed from: `/usr/share/doc/libminizip-dev/copyright`, `/usr/share/d
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg-3.1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg.orig.tar.xz' zlib_1.3.dfsg.orig.tar.xz 1128572 SHA256:5eea0322c1c21c75cad3b607ac1c43ff5c71e014b8ac4a34300b5e2b80d02e70
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.1.debian.tar.xz' zlib_1.3.dfsg-3.1ubuntu2.1.debian.tar.xz 61028 SHA256:958c7031c02f894516492954153c8d760d94e20a4039e48ca7231880b913ae26
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.1.dsc' zlib_1.3.dfsg-3.1ubuntu2.1.dsc 3116 SHA256:d083d6e1eb6f7f0dc5b107b0cc6b898f097947e1317769553f1c5c5d71ea5073
-```
 
 ### `dpkg` source package: `zvbi=0.2.42-2`
 
