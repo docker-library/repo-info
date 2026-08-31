@@ -179,9 +179,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA256:d5eeee4f953c09826409d572e2e8996a2140d67eb8f382ce1f3a9d23883ad696
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA256:32332a77dedfbeee4deae3a435e07a9377a117d8326120abe0b26b92c60f5404
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA256:5c35c7efb7cfb6cfcaaaa4825ca7227151d434b4ff18b0ca88441c9f6dc9ba4e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA512:8adffecbfd9ffe55500fb70616e4b441bccb95fda13762dc2cccc3605a25f34851b142d2c633f17a5a7e426f0c5010ad76b0a70d375f923e25f6c9f4c893c8e4
 ```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
@@ -2064,9 +2064,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris llvm-toolchain-13=1:13.0.1-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1.orig.tar.xz' llvm-toolchain-13_13.0.1.orig.tar.xz 121050160 SHA256:38f14321caa46e0c890ceac2faf5ba29af6f1db759214134516515596e675a80
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1-2ubuntu2.2.debian.tar.xz' llvm-toolchain-13_13.0.1-2ubuntu2.2.debian.tar.xz 159840 SHA256:7d999516201ee97f66d8b38c13defdbb9aa0003a70d73d6c935dee94b22508f9
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1-2ubuntu2.2.dsc' llvm-toolchain-13_13.0.1-2ubuntu2.2.dsc 6912 SHA256:d61c3e1ca9fb4fa40f22f6422e754b1d7332e3868ffe081395a4e74977950fa7
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1.orig.tar.xz' llvm-toolchain-13_13.0.1.orig.tar.xz 121050160 SHA512:1387fabc239ba982bf7845cf8c611d87fb005a554d3d11701b4c0de1ee280c3402c32eca7e221d4c6c2b2d6b2782891606dbc33f2a7ae1c85211826009b19eac
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1-2ubuntu2.2.debian.tar.xz' llvm-toolchain-13_13.0.1-2ubuntu2.2.debian.tar.xz 159840 SHA512:1e908fb2d7cfcf24972fbeb0892d01377bc5f9ce9f1a58c58ff167992abbd39d35776711bd38edaf6175b5c570e0ccc2c09315b951b3cebaeb02a7bba78ebebe
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-13/llvm-toolchain-13_13.0.1-2ubuntu2.2.dsc' llvm-toolchain-13_13.0.1-2ubuntu2.2.dsc 6912 SHA512:ca12b451614843a1b85acbd5e98ff7f22141bc689389705d775351d5007700fa8a56ccc449eab90dbdbe403726b17dbc017b97ff5913fabaad4fb8e713f8328e
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2420,14 +2420,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.7.debian.tar.xz' pam_1.4.0-11ubuntu2.7.debian.tar.xz 189436 SHA512:82e18faa2478af16dd11705b827bb691c92cc956f31c55c0b414e6397e503c350a7ac641d1e76c4c8130c4cb8324d00f023e93d8f86e4972629757e8dd4a7a1d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.7.dsc' pam_1.4.0-11ubuntu2.7.dsc 2728 SHA512:7bbd2aef254332c62770e9e110cea4b1544f607e882992b779e69a1625ebb705c2d384f41f58f8eabb4e79de5e5e6aad8d89800f2d49ac2c9202f98a093e5810
-```
 
 ### `dpkg` source package: `patch=2.7.6-7build2`
 
@@ -2805,9 +2800,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA256:7ea89214714f06a15925f6fb89de4d96a61ad5fc18bbd2ed210e7c4568f63391
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA256:09708d1e384f6b9d3ff1f65aa6c05db9260050e523c9e7a99331f60a42880d61
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA512:765de71da656f0fd36b0872e05c1f736b167faf3af9a52247e0810d260606fe440a541c5558a882f8a5d150d91f76f01303cada28ba5febe4d16042eda3da7c8
 ```
 
 ### `dpkg` source package: `shared-mime-info=2.1-2`
