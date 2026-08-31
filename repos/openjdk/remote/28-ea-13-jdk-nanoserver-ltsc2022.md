@@ -1,4 +1,4 @@
-## `openjdk:28-ea-jdk-nanoserver-ltsc2022`
+## `openjdk:28-ea-13-jdk-nanoserver-ltsc2022`
 
 ```console
 $ docker pull openjdk@sha256:c5613de0bfe4dbe9ead47e07d18bde2e4a0e4226518fe8bf63de5cb0b4cd0881
@@ -8,7 +8,7 @@ $ docker pull openjdk@sha256:c5613de0bfe4dbe9ead47e07d18bde2e4a0e4226518fe8bf63d
 -	Platforms: 1
 	-	windows version 10.0.20348.5499; amd64
 
-### `openjdk:28-ea-jdk-nanoserver-ltsc2022` - windows version 10.0.20348.5499; amd64
+### `openjdk:28-ea-13-jdk-nanoserver-ltsc2022` - windows version 10.0.20348.5499; amd64
 
 ```console
 $ docker pull openjdk@sha256:7e8e42a06ae0d56932a83c31860546d59d744def5c475343f27afe891fe6d63c

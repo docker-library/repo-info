@@ -1,4 +1,4 @@
-## `openjdk:28-ea-jdk-bookworm`
+## `openjdk:28-ea-13-bookworm`
 
 ```console
 $ docker pull openjdk@sha256:88b1f0550f52f6c29b7ef6ebef23a50c9fd7d5e59a99e22bb6a58c44bb6e7ad0
@@ -11,7 +11,7 @@ $ docker pull openjdk@sha256:88b1f0550f52f6c29b7ef6ebef23a50c9fd7d5e59a99e22bb6a
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `openjdk:28-ea-jdk-bookworm` - linux; amd64
+### `openjdk:28-ea-13-bookworm` - linux; amd64
 
 ```console
 $ docker pull openjdk@sha256:005c2957146f4cc3d97bb28c5aedd68e4368df36fec781d47c39afadd23aa47c
@@ -68,7 +68,7 @@ CMD ["jshell"]
 		Size: 242.6 MB (242641971 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:28-ea-jdk-bookworm` - unknown; unknown
+### `openjdk:28-ea-13-bookworm` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:6fa40681e1d43b5a86da3cd9961f689487c0c40df24d50c05288555b1acad160
@@ -92,7 +92,7 @@ $ docker pull openjdk@sha256:6fa40681e1d43b5a86da3cd9961f689487c0c40df24d50c0528
 		Size: 17.9 KB (17938 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `openjdk:28-ea-jdk-bookworm` - linux; arm64 variant v8
+### `openjdk:28-ea-13-bookworm` - linux; arm64 variant v8
 
 ```console
 $ docker pull openjdk@sha256:a0a7fb4108c25cb35bd1bba546ea90bbb7a37ff0e663d41fe1f0817da5e69dd8
@@ -149,7 +149,7 @@ CMD ["jshell"]
 		Size: 240.7 MB (240723123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `openjdk:28-ea-jdk-bookworm` - unknown; unknown
+### `openjdk:28-ea-13-bookworm` - unknown; unknown
 
 ```console
 $ docker pull openjdk@sha256:8e57a793a40c082748d4de92706d42085ce28fedb0714ffe6c9e6ad227b62fa3

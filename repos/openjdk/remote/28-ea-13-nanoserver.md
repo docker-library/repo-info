@@ -1,4 +1,4 @@
-## `openjdk:28-ea-jdk-nanoserver`
+## `openjdk:28-ea-13-nanoserver`
 
 ```console
 $ docker pull openjdk@sha256:3d875d043886fbb510c874a1d728603b9df2ec5f833b2b284f0ca3253b8af5ef
@@ -9,7 +9,7 @@ $ docker pull openjdk@sha256:3d875d043886fbb510c874a1d728603b9df2ec5f833b2b284f0
 	-	windows version 10.0.26100.33296; amd64
 	-	windows version 10.0.20348.5499; amd64
 
-### `openjdk:28-ea-jdk-nanoserver` - windows version 10.0.26100.33296; amd64
+### `openjdk:28-ea-13-nanoserver` - windows version 10.0.26100.33296; amd64
 
 ```console
 $ docker pull openjdk@sha256:a1c02dba421d08a3f591bd083972448560247444908c2159092833c5f48704a1
@@ -88,7 +88,7 @@ CMD ["jshell"]
 		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:28-ea-jdk-nanoserver` - windows version 10.0.20348.5499; amd64
+### `openjdk:28-ea-13-nanoserver` - windows version 10.0.20348.5499; amd64
 
 ```console
 $ docker pull openjdk@sha256:7e8e42a06ae0d56932a83c31860546d59d744def5c475343f27afe891fe6d63c
