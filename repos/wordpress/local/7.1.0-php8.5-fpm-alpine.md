@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8488a7e6cf1de58a097b48bf0ead0ef025251c90987891efbf391363d53c6ec2`
-- Created: `2026-08-20T16:58:54.264789531Z`
-- Virtual Size: ~ 346.52 Mb  
+- Image ID: `sha256:4798d16a2b37d7b03ebe0834fb0e3fa4e92ed053431d5475b8d7904e2c72fb70`
+- Created: `2026-08-31T20:32:51.498814103Z`
+- Virtual Size: ~ 352.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.9.tar.xz.asc`
-  - `PHP_SHA256=0db7855f25bcd0ab1d592cdb35e284d6f6a5d2ae0f6f621122e364cc39b708f4`
+  - `PHP_VERSION=8.5.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.10.tar.xz.asc`
+  - `PHP_SHA256=6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957`
 
 ## `apk` (`.apk`-based packages)
 
@@ -571,16 +571,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.27-r0 description:
+imagemagick-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.27-r0 webpage:
+imagemagick-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.27-r0 installed size:
-3700 KiB
+imagemagick-7.1.2.30-r0 installed size:
+3758 KiB
 
-imagemagick-7.1.2.27-r0 license:
+imagemagick-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.27-r0 description:
+imagemagick-jp2-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.27-r0 webpage:
+imagemagick-jp2-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.27-r0 installed size:
+imagemagick-jp2-7.1.2.30-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.27-r0 license:
+imagemagick-jp2-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -605,16 +605,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.27-r0 description:
+imagemagick-jpeg-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.27-r0 webpage:
+imagemagick-jpeg-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.27-r0 installed size:
+imagemagick-jpeg-7.1.2.30-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.27-r0 license:
+imagemagick-jpeg-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -622,16 +622,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.27-r0 description:
+imagemagick-libs-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.27-r0 webpage:
+imagemagick-libs-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.27-r0 installed size:
-4313 KiB
+imagemagick-libs-7.1.2.30-r0 installed size:
+4301 KiB
 
-imagemagick-libs-7.1.2.27-r0 license:
+imagemagick-libs-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -639,16 +639,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.27-r0 description:
+imagemagick-pdf-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.27-r0 webpage:
+imagemagick-pdf-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.27-r0 installed size:
+imagemagick-pdf-7.1.2.30-r0 installed size:
 125 KiB
 
-imagemagick-pdf-7.1.2.27-r0 license:
+imagemagick-pdf-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.27-r0 description:
+imagemagick-tiff-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.27-r0 webpage:
+imagemagick-tiff-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.27-r0 installed size:
-115 KiB
+imagemagick-tiff-7.1.2.30-r0 installed size:
+119 KiB
 
-imagemagick-tiff-7.1.2.27-r0 license:
+imagemagick-tiff-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -673,16 +673,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.27-r0 description:
+imagemagick-webp-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.27-r0 webpage:
+imagemagick-webp-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.27-r0 installed size:
+imagemagick-webp-7.1.2.30-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.27-r0 license:
+imagemagick-webp-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -809,16 +809,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1183,16 +1183,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1591,16 +1591,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1676,16 +1676,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
