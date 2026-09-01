@@ -365,15 +365,9 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 - `MPL-2.0`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.18.39-0ubuntu0.22.04.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz' bind9_9.18.39.orig.tar.xz 5383056 SHA512:fd6d45c9cb9c599d8770c18801fad2f177faf3a8af82948800d186ae6dc9eb2c894b61802def0841eb722c615c93c077b55368204f0cf2737a3c50d949efca07
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz.asc' bind9_9.18.39.orig.tar.xz.asc 833 SHA512:17e8aad74f1eaa42119f84ab3df05e85a1775f97c628259e00f7224d4f0d250050d022db670bc036b0ba05a3cd586de331da0b77c42ab58307711fed36c7ee9e
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.5.debian.tar.xz' bind9_9.18.39-0ubuntu0.22.04.5.debian.tar.xz 152296 SHA512:ad18a56be237abfa4dc4ee68b377bd1fa6d4ae1c7c9d320c67a42aaa31221b5373e71bf00d108180175b74043885d2a9c79c34260dd9ff4f2522a0d644a6673a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.5.dsc' bind9_9.18.39-0ubuntu0.22.04.5.dsc 3295 SHA512:acb40f065d8cba37d02423739932d2117e5b40d67ffd8f5e9647c2a0a7136a34ada2cffce492d630e49c3b293b3f0b2c7bbe633d9b5064e8a3ccb65db32fb3be
-```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
 
@@ -611,14 +605,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA256:4458d8de7849df44ccab15e16b1548b285224dbba5f08fac070c1c0e0bcc4cfa
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.debian.tar.xz' coreutils_8.32-4.1ubuntu1.3.debian.tar.xz 45556 SHA256:5ff54161038e479c904042f8848e40b40f5330bc4e4f2df9a474974f3d466061
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA256:26959de3887a535d7929e5f3ac18eab6eaba5f221cdcf3b4cf7b43c68d32f92b
-```
 
 ### `dpkg` source package: `cryptsetup=2:2.4.3-1ubuntu1.3`
 
@@ -3565,15 +3554,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.6-2ubuntu0.22.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz' libssh_0.9.6.orig.tar.xz 1053056 SHA256:86bcf885bd9b80466fe0e05453c58b877df61afa8ba947a58c356d7f0fab829b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6.orig.tar.xz.asc' libssh_0.9.6.orig.tar.xz.asc 833 SHA256:050d4e532a614c20b4830ebc210bb28acee2ed458e694c8aedfe2ab152688298
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz' libssh_0.9.6-2ubuntu0.22.04.7.debian.tar.xz 75780 SHA256:324c4371a1c73edab635a028c0049b8e568e43014148e87c0a5b3d2e791d2295
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.6-2ubuntu0.22.04.7.dsc' libssh_0.9.6-2ubuntu0.22.04.7.dsc 2750 SHA256:7068a71d241496023af2b737f04f435ef80d36bd45d28ab4c42b31f76c3b30fe
-```
 
 ### `dpkg` source package: `libtasn1-6=4.18.0-4ubuntu0.2`
 
@@ -5916,9 +5899,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA256:7ea89214714f06a15925f6fb89de4d96a61ad5fc18bbd2ed210e7c4568f63391
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA256:09708d1e384f6b9d3ff1f65aa6c05db9260050e523c9e7a99331f60a42880d61
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.dsc' shadow_4.8.1-2ubuntu2.2.dsc 2060 SHA512:765de71da656f0fd36b0872e05c1f736b167faf3af9a52247e0810d260606fe440a541c5558a882f8a5d150d91f76f01303cada28ba5febe4d16042eda3da7c8
 ```
 
 ### `dpkg` source package: `shared-mime-info=2.1-2`
@@ -6299,14 +6282,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA256:6a0764c1aae7fb607ef8a6dd2c0f6c47d5e5fd27aa08820abaad9ec14e28e9d9
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA256:fe69a2cc84ddcfb17a47f57b8c39c3919844bd92ef8868b40676656025f391c8
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.dsc' util-linux_2.37.2-4ubuntu3.5.dsc 4550 SHA256:024c983405cf31b5ba1230c99d27fd340552c0f59e05b4d94f222d9e399ac522
-```
 
 ### `dpkg` source package: `vte2.91=0.68.0-1ubuntu0.1`
 
@@ -6327,9 +6305,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vte2.91=0.68.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0.orig.tar.xz' vte2.91_0.68.0.orig.tar.xz 901856 SHA256:13e7d4789ca216a33780030d246c9b13ddbfd04094c6316eea7ff92284dd1749
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0-1ubuntu0.1.debian.tar.xz' vte2.91_0.68.0-1ubuntu0.1.debian.tar.xz 25308 SHA256:58916f47055901cfbe58f2304bdd93a2db1ef4d56ff2e329fad1987b2f2ca542
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0-1ubuntu0.1.dsc' vte2.91_0.68.0-1ubuntu0.1.dsc 3006 SHA256:dbfad9315432db47aad49fc8fd9489a7ec478da9ddbafb336c4091681c0e1248
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0.orig.tar.xz' vte2.91_0.68.0.orig.tar.xz 901856 SHA512:c5bd53cc449bf7296f2288f788770d439254c4b220d51dc136f0660f932fff84b1c2a288febf0040b9630f15dea34ab2fdf6b2696283cb8bc7285840eb91fe63
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0-1ubuntu0.1.debian.tar.xz' vte2.91_0.68.0-1ubuntu0.1.debian.tar.xz 25308 SHA512:1cba6bfc5a08199834717c57d72cb22baf3b89082e52709fdc5f36b8931ad7dba20cfed093ae6a5b1f0179676a5877d2fccee3e8dc367514a6a4b7119180d81b
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/vte2.91_0.68.0-1ubuntu0.1.dsc' vte2.91_0.68.0-1ubuntu0.1.dsc 3006 SHA512:4ec401c94112dd01727e3fa5183567677269205de53fc680ed05c67746ec1637462a0caa19de2fdb7598a798be2b08592854fc254c24365e63618ae8294bc20f
 ```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
