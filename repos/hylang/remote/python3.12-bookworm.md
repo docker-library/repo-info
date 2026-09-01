@@ -1,7 +1,7 @@
 ## `hylang:python3.12-bookworm`
 
 ```console
-$ docker pull hylang@sha256:f80c32926e07392771d9b379badcc6fb2c2960e6c225aa7124813423c67edd76
+$ docker pull hylang@sha256:a17850c975123ee2606c53ae07014e1ec3673cca61d56d550b9bcfb8d980d854
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -376,43 +376,43 @@ $ docker pull hylang@sha256:0eab18d82cb5d0a8b41029f094970793dc27d4e7568df571217c
 ### `hylang:python3.12-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:60c340cdbfa74c01af21d16d77b3ddb38ce2e700d002c671cb6314d17055d51d
+$ docker pull hylang@sha256:581e6320bea498f8e63c20e45eea5ce2e41946931b2bfd61f99b404b6a97ddc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.4 MB (55439304 bytes)**  
+-	Total Size: **55.4 MB (55441106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e74b2f15c09b75b54e1610f40b4b1a294cc6ec492678dd995e19564cbcfa799`
+-	Image ID: `sha256:343c69e370cbb7ef830eef9ec6d59788c99c357b269b1c5930f3e4dbeb416a6a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Mon, 24 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 ENV LANG=C.UTF-8
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 ENV PYTHON_VERSION=3.12.14
-# Tue, 25 Aug 2026 06:47:13 GMT
+# Tue, 01 Sep 2026 01:58:57 GMT
 ENV PYTHON_SHA256=5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a
-# Tue, 25 Aug 2026 07:08:23 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:-} -Wl,--strip-all"; 	arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 	case "$arch" in 		amd64|arm64) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 			;; 		i386) 			;; 		*) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 			;; 	esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-} -Wl,-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Tue, 25 Aug 2026 07:08:24 GMT
+# Tue, 01 Sep 2026 02:19:35 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		g++ 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:-} -Wl,--strip-all"; 	arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 	case "$arch" in 		amd64|arm64) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 			;; 		i386) 			;; 		*) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 			;; 	esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-} -Wl,-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
+# Tue, 01 Sep 2026 02:19:35 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Tue, 25 Aug 2026 07:08:24 GMT
+# Tue, 01 Sep 2026 02:19:35 GMT
 CMD ["python3"]
-# Tue, 25 Aug 2026 12:16:55 GMT
+# Tue, 01 Sep 2026 04:13:45 GMT
 ENV HY_VERSION=1.3.1
-# Tue, 25 Aug 2026 12:16:55 GMT
+# Tue, 01 Sep 2026 04:13:45 GMT
 ENV HYRULE_VERSION=1.1.0
-# Tue, 25 Aug 2026 12:16:55 GMT
+# Tue, 01 Sep 2026 04:13:45 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Tue, 25 Aug 2026 12:16:55 GMT
+# Tue, 01 Sep 2026 04:13:45 GMT
 CMD ["hy"]
 ```
 
@@ -421,43 +421,43 @@ CMD ["hy"]
 		Last Modified: Mon, 24 Aug 2026 23:19:16 GMT  
 		Size: 32.1 MB (32076477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76dd50cd2162a82f7e7234fcf68e35bb64c1e45db5e4bd7b2eaa01a5abce39f6`  
-		Last Modified: Tue, 25 Aug 2026 07:08:38 GMT  
-		Size: 3.7 MB (3737907 bytes)  
+	-	`sha256:c1fca778ef4d16d49888d034355c224105e87f5b7fc7425aea40ebd36c73d010`  
+		Last Modified: Tue, 01 Sep 2026 02:19:52 GMT  
+		Size: 3.7 MB (3737942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1d0911346879ae1419a0a9b92b78f7509306ae20848841bd6fae3c610a65ea0`  
-		Last Modified: Tue, 25 Aug 2026 07:08:38 GMT  
-		Size: 14.4 MB (14370133 bytes)  
+	-	`sha256:773139ff209a253f4655d0495a38599507c6694492d8277cc3644d15d65f0520`  
+		Last Modified: Tue, 01 Sep 2026 02:19:52 GMT  
+		Size: 14.4 MB (14372032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6732cf950b1df302f7215bf04344a0c36608fee043f46fbab6cedb4d6155f39`  
-		Last Modified: Tue, 25 Aug 2026 07:08:37 GMT  
-		Size: 249.0 B  
+	-	`sha256:cde20fc5eb2da479903109b152266bca768b20955d9e7cdc64d938d9010a9bbb`  
+		Last Modified: Tue, 01 Sep 2026 02:19:52 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cf8f8a3b9e8b0b61c3ed681f51816b18b88c3a358aecd7532e959984d935cb0`  
-		Last Modified: Tue, 25 Aug 2026 12:17:08 GMT  
-		Size: 5.3 MB (5254538 bytes)  
+	-	`sha256:5030a2434f39ee9320699ec3a92e996b66be495b6f3c4077e17f0004c5e21128`  
+		Last Modified: Tue, 01 Sep 2026 04:13:56 GMT  
+		Size: 5.3 MB (5254405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:python3.12-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:0267d1732e636f9e16c1a5717ec45cf8e1798226ad4af384ee5f7fe3599505e4
+$ docker pull hylang@sha256:6fe126656ce4ba8b1ead4c47fbf2046f67cfc1b5d6b5d6e85268496928b41b7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.6 MB (2595910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee2135e4c2dc95892812439abc93710dcecff42abd5954b0e5725c30fcc51040`
+-	Image ID: `sha256:42a50406970d743168798ac2fbe283900d5a5eb1106f1f256d23de42d675dbdb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:85a4076c9967830789e7d933fec87b688815bfa50260f2e9ce6f45b059a79404`  
-		Last Modified: Tue, 25 Aug 2026 12:17:08 GMT  
+	-	`sha256:a9185fda59a78b36eb595ad1991b4497bd334aac80a9a2f76bf1e7f4ea0316af`  
+		Last Modified: Tue, 01 Sep 2026 04:13:56 GMT  
 		Size: 2.6 MB (2587772 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3ee45d7db71a58f81bdda13893ad678d184ec58628b19912e7e2150bd07a7add`  
-		Last Modified: Tue, 25 Aug 2026 12:17:08 GMT  
+	-	`sha256:e347814dc37ce36c14ea09975585e35fb7a0cd99062a5d7f6365559f9a0c8af2`  
+		Last Modified: Tue, 01 Sep 2026 04:13:56 GMT  
 		Size: 8.1 KB (8138 bytes)  
 		MIME: application/vnd.in-toto+json
