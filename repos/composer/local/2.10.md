@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:783e008e683e5c8778b8455645a7cf237ec51c2f06104dd6c36b3aa9f3d0753d`
-- Created: `2026-07-30T23:19:49.272705114Z`
-- Virtual Size: ~ 224.73 Mb  
+- Image ID: `sha256:c6be6463748878c9142ed712d76729c78dafcd41cea4b872eaafbb15bfd8f033`
+- Created: `2026-08-31T20:33:00.572651358Z`
+- Virtual Size: ~ 230.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.9.tar.xz.asc`
-  - `PHP_SHA256=0db7855f25bcd0ab1d592cdb35e284d6f6a5d2ae0f6f621122e364cc39b708f4`
+  - `PHP_VERSION=8.5.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.10.tar.xz.asc`
+  - `PHP_SHA256=6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.10.2`
@@ -166,16 +166,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.3-r2 description:
+apr-util-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.3-r2 webpage:
+apr-util-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.3-r2 installed size:
+apr-util-1.6.4-r0 installed size:
 180 KiB
 
-apr-util-1.6.3-r2 license:
+apr-util-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -523,16 +523,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -574,16 +574,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -727,16 +727,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -863,16 +863,16 @@ GPL-3.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-7.2.3-r0 description:
+mercurial-7.2.4-r0 description:
 Scalable distributed SCM tool
 
-mercurial-7.2.3-r0 webpage:
+mercurial-7.2.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-7.2.3-r0 installed size:
+mercurial-7.2.4-r0 installed size:
 10 MiB
 
-mercurial-7.2.3-r0 license:
+mercurial-7.2.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -880,16 +880,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-7.2.3-r0 description:
+mercurial-pyc-7.2.4-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-7.2.3-r0 webpage:
+mercurial-pyc-7.2.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-7.2.3-r0 installed size:
+mercurial-pyc-7.2.4-r0 installed size:
 10 MiB
 
-mercurial-pyc-7.2.3-r0 license:
+mercurial-pyc-7.2.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -999,16 +999,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r0 description:
+openssh-client-common-10.3_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r0 webpage:
+openssh-client-common-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r0 installed size:
+openssh-client-common-10.3_p1-r1 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r0 license:
+openssh-client-common-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1016,16 +1016,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r0 description:
+openssh-client-default-10.3_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r0 webpage:
+openssh-client-default-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r0 installed size:
+openssh-client-default-10.3_p1-r1 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r0 license:
+openssh-client-default-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1033,16 +1033,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r0 description:
+openssh-keygen-10.3_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r0 webpage:
+openssh-keygen-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r0 installed size:
+openssh-keygen-10.3_p1-r1 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r0 license:
+openssh-keygen-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1050,16 +1050,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1101,16 +1101,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.5-r0 description:
+pyc-3.14.7-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.5-r0 webpage:
+pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.5-r0 installed size:
+pyc-3.14.7-r1 installed size:
 0 B
 
-pyc-3.14.5-r0 license:
+pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1118,16 +1118,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.5-r0 description:
+python3-3.14.7-r1 description:
 High-level scripting language
 
-python3-3.14.5-r0 webpage:
+python3-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-3.14.5-r0 installed size:
+python3-3.14.7-r1 installed size:
 22 MiB
 
-python3-3.14.5-r0 license:
+python3-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1135,16 +1135,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.5-r0 description:
+python3-pyc-3.14.7-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.5-r0 webpage:
+python3-pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.5-r0 installed size:
+python3-pyc-3.14.7-r1 installed size:
 0 B
 
-python3-pyc-3.14.5-r0 license:
+python3-pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1152,16 +1152,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.5-r0 description:
+python3-pycache-pyc0-3.14.7-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.5-r0 webpage:
+python3-pycache-pyc0-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.5-r0 installed size:
+python3-pycache-pyc0-3.14.7-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.5-r0 license:
+python3-pycache-pyc0-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1237,16 +1237,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
