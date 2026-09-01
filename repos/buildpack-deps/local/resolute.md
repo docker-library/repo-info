@@ -3293,15 +3293,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.10-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.10.orig.tar.gz' mysql-8.4_8.4.10.orig.tar.gz 479076067 SHA512:0e85b84bee32414959755a1f59c997bc4a7c81fe3a12267a7963cd2c6607ebccfd49ab23c872a429a80e319c65ba92c104f0b4445494e90c4aacab32b6cc6d9e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.10.orig.tar.gz.asc' mysql-8.4_8.4.10.orig.tar.gz.asc 833 SHA512:ac206858786943bbe32b9f07bd893ae8d5d4a7528039aa0f0f2b17a1cc01a791c9fcadc1ad0626f26951e59b57a87431c6cce91a0496b629b9b10e1a0261b2ee
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.10-0ubuntu0.26.04.1.debian.tar.xz' mysql-8.4_8.4.10-0ubuntu0.26.04.1.debian.tar.xz 135996 SHA512:dd03a90f78f60b324f6581058951b5054e98248ce992bdce85dbbc980285008320877a1a47028e513cf03223a5495152f1ae7d2fe67424af22a9ed1a4c04db8e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.10-0ubuntu0.26.04.1.dsc' mysql-8.4_8.4.10-0ubuntu0.26.04.1.dsc 3806 SHA512:080c9dfe7949344ab922089a79aaeec0e03b0a169a1f84a1252bd782ff9b620fb98b9dd67809c98fd92254a0a38e6c9b26b7e5f2211d02a8e72de84b49b68125
-```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu2`
 

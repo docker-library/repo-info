@@ -211,14 +211,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA512:79a1800b6b579a1cc4247c67fc2aceed9a7197f2ea91a3528365297eee1b20a860af27d6d8cadc3c4a3c91a9f8ac9e04c34d7a5e80b605e1252adffedd26e932
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.3-2ubuntu1.debian.tar.xz' bash_5.3-2ubuntu1.debian.tar.xz 98872 SHA512:1952501498230c9e42a8cf579d53597ec814fdee5bbd3d371b79dd673d4405debebb2400a6fc9d79e44bf4ac6cea18e6de2c24b1be6a7e14edad006e7c119f5f
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.3-2ubuntu1.dsc' bash_5.3-2ubuntu1.dsc 2246 SHA512:fa2d5895397e0907326385ed7aa93339a0a53524393d288af4a91eee75632408a13868ae5edadf6dbb55c617745978c0271803184025d8071723a9af2b108b5b
-```
 
 ### `dpkg` source package: `brotli=1.2.0-3build1`
 
@@ -653,14 +648,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16.1.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.1.0.orig.tar.gz' gcc-16_16.1.0.orig.tar.gz 107439690 SHA512:3be1ca6eb01fb5429f35a9fe3069a57919019e23e2e44b2ec404bd1277d90db7bdc079502dc58915b7d36e0ee2a4622c6e1a3b9cd7c44e67ce065e7dc846bf52
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.1.0-2ubuntu1.debian.tar.xz' gcc-16_16.1.0-2ubuntu1.debian.tar.xz 2492444 SHA512:8171aff5e7313b39d3ad77bfa0df5434e1feb9030302247a04c6dece44de879504f34fba26d1ec9b10c2385f5147a972a7fd5daf8cd6eae0b9c5d7e284fa6307
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.1.0-2ubuntu1.dsc' gcc-16_16.1.0-2ubuntu1.dsc 52844 SHA512:cb677ef7de2fe9b5f0fc64a034688ca8d41e2bbaac5a80e689b54f828074db6beca0a89628b0119fe634c370fed6893b15170a65f6098a5c8713c14461bcb4bd
-```
 
 ### `dpkg` source package: `gdbm=1.26-1build1`
 
@@ -851,14 +841,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.9-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9.orig.tar.bz2' gnupg2_2.4.9.orig.tar.bz2 8086407 SHA512:4638016b390a0024fa0cbe14181c43a81991e4275043855397ef099b927985d175d32452fc15b06485623b9292662dd6da464b2e5def8b77b2e4e48a072ab521
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9-4ubuntu1.debian.tar.xz' gnupg2_2.4.9-4ubuntu1.debian.tar.xz 109080 SHA512:b9f1d572fe273fb69ebbb3af533ae45a23db1a4279adb1841ead4a416aa8de3ed7f106ddc61de2cf41619a00988c4a0b803c5ad817b9ca279704435260c9190a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9-4ubuntu1.dsc' gnupg2_2.4.9-4ubuntu1.dsc 4878 SHA512:50d1f8b6686ff47862fc822b7cf36191aa406b001a46a225038167fbf7b2b7d8ec5fc61e232e2932281bfc13b21268f82d20955ae2b62612d8742a91a62b01e9
-```
 
 ### `dpkg` source package: `gnutls28=3.8.12-2ubuntu1.1`
 

@@ -1029,20 +1029,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.3-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3-1.dsc' expat_2.8.3-1.dsc 1970 SHA256:234090d3535cfceb09f61b9f97d14f8a0afe51f04bd26a077bc83092543f9ab3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3-1.debian.tar.xz' expat_2.8.3-1.debian.tar.xz 14044 SHA256:c9817a59c9f9a56b689651a38e94d6ac403eb19e7146af76bd29f081948a443e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.3-1/
 
-- https://sources.debian.net/src/expat/2.8.3-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.11-1`
 
@@ -2665,20 +2658,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.1-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.1-1.dsc' libheif_1.23.1-1.dsc 3844 SHA256:a9c2ea49af68fb13ac57b167cef3325c655fbe66a6f6eba16c1acb6c262d1b25
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.1.orig.tar.gz' libheif_1.23.1.orig.tar.gz 2071186 SHA256:0de0327f60fcd47de90d5654c6fe152232738d60d84fe084ec3e0f35e03b166a
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.1-1.debian.tar.xz' libheif_1.23.1-1.debian.tar.xz 14164 SHA256:e237289f23bc6607681843de81e9c19429ea5f1ca0f87b880658d08065179181
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.1-1/
 
-- https://sources.debian.net/src/libheif/1.23.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -4432,21 +4418,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`, `/usr/share/d
 - `curl`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.4p1-5
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-5.dsc' openssh_10.4p1-5.dsc 3619 SHA256:122b17df377491df263987fdcb84628efc3d5130e0b5dabd77288409f466748c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz' openssh_10.4p1.orig.tar.gz 2321796 SHA256:ef6026dd2aea8d56059638d5d3262902c892ceba9f88395835e0d06d3fb63238
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1.orig.tar.gz.asc' openssh_10.4p1.orig.tar.gz.asc 833 SHA256:9206329419c45245913ae42fd290e2ed5b1669df97d9cf0d3e28c06b63035e51
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.4p1-5.debian.tar.xz' openssh_10.4p1-5.debian.tar.xz 186232 SHA256:719fddbf7db8dba47415091bbd61f4331ba79449a7656afd5ddeb635f0437b28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.4p1-5/
 
-- https://sources.debian.net/src/openssh/1:10.4p1-5/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.4p1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.4p1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.3-1`
 
@@ -5498,21 +5476,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.26.0-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.0-1.dsc' unbound_1.26.0-1.dsc 3221 SHA256:e786c04dda9ccc362eeb45199074fb4d70b39a717ce47438169a387324c3f08b
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.0.orig.tar.gz' unbound_1.26.0.orig.tar.gz 6945614 SHA256:77458a7156e275c0b7b17fabcb357cb12445d95cfcb26fb9bb7d5ecba45e0b63
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.0.orig.tar.gz.asc' unbound_1.26.0.orig.tar.gz.asc 659 SHA256:5ef5827a1028f333614991fb52f755661abcbd9ec18ec276450694fc7d5933a0
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.0-1.debian.tar.xz' unbound_1.26.0-1.debian.tar.xz 29444 SHA256:2d1652ddf5b1f14e39b3e0ed06f8c0e62101abb2d520093eaefde0b509ed8ffe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.26.0-1/
 
-- https://sources.debian.net/src/unbound/1.26.0-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.26.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.26.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-31`
 
