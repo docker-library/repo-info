@@ -464,19 +464,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.23.2
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.2.dsc' debianutils_5.23.2.dsc 1908 SHA256:471b65deec232bb033f3e3e06d5bf64dac0ced474c6fd61d41538f3f3de876f8
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.23.2.tar.xz' debianutils_5.23.2.tar.xz 82376 SHA256:79e524b7526dba2ec5c409d0ee52ebec135815cf5b2907375d444122e0594b69
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.23.2/
 
-- https://sources.debian.net/src/debianutils/5.23.2/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.23.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.23.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.12-1`
 
@@ -1712,20 +1706,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.14+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.14%2bdfsg-1.dsc' openldap_2.6.14+dfsg-1.dsc 3413 SHA256:3d97135e085a02b54ae855029d1956df58c9d87efaa0f3578c38591eba6ab047
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.14%2bdfsg.orig.tar.xz' openldap_2.6.14+dfsg.orig.tar.xz 3803392 SHA256:f8e1b8ed7343667b124ecf872bf9f1f38cf36da65f652d77d95ce6995f39a131
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.6.14%2bdfsg-1.debian.tar.xz' openldap_2.6.14+dfsg-1.debian.tar.xz 175840 SHA256:6d18db7e91db9eff03f1376cdcba89d657d61ed5a6ba2f9aadebb184df96412e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.6.14+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.6.14+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.6.14+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.6.14+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.3-1`
 
