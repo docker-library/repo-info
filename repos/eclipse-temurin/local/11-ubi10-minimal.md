@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:18f1c1e5daa18c768891136550237a683a20fe0890c292e73c14799eca76c017`
-- Created: `2026-08-26T18:29:36.959041513Z`
-- Virtual Size: ~ 453.72 Mb  
+- Image ID: `sha256:430b487afeb1a57feebcc2a72b067acd171cd2c3128a9134a7653c49cb5ae580`
+- Created: `2026-08-31T19:16:21.146528187Z`
+- Virtual Size: ~ 453.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-11.0.32+9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-25T20:06:27Z`
+  - `build-date=2026-08-31T00:57:07Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-25T20:06:27Z`
-  - `org.opencontainers.image.revision=0b4cc93aa2450ac257d3e3051c62ff62306cdb95`
-  - `release=1787688243`
+  - `org.opencontainers.image.created=2026-08-31T00:57:07Z`
+  - `org.opencontainers.image.revision=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
+  - `release=1788137716`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0b4cc93aa2450ac257d3e3051c62ff62306cdb95`
+  - `vcs-ref=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -206,12 +206,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): Apache-2.0 AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND (Apache-2.0 OR LGPL-2.1-or-later)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url dbus-broker-36-4.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-36-4.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `dbus-common-1.14.10-5.el10.noarch`
 
@@ -447,12 +442,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-only
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gzip-1.13-3.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gzip-1.13-3.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `ima-evm-utils-1.6.2-4.el10.x86_64`
 
@@ -1468,12 +1458,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tar-1.35-11.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tar-1.35-11.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
 
