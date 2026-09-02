@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-8.0.502.0-jdk-resolute`
+# `ibm-semeru-runtimes:open-8.0.504.0-jdk-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6dc51d208e5a0e5caf258413a42e3ade0b6ce24f0e455a9457ea7b7484a29909`
-- Created: `2026-08-18T19:20:15.704422929Z`
-- Virtual Size: ~ 398.9 Mb  
+- Image ID: `sha256:1fb2ca443f4f5e5ec9b3cbbb2c153931c297557bfa97db232cd27286889f2083`
+- Created: `2026-08-31T19:19:52.997257526Z`
+- Virtual Size: ~ 407.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=8.0.502.0`
+  - `JAVA_VERSION=8.0.504.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -303,12 +303,12 @@ Licenses: (parsed from: `/usr/share/doc/gnu-coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.3`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.3`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.3`
+- `curl=8.18.0-1ubuntu2.4`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -324,9 +324,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.debian.tar.xz' curl_8.18.0-1ubuntu2.4.debian.tar.xz 86052 SHA512:9d36dada94931e7677a949b92b1a1c3d222ed83c687a588537f9cfcb8ca8ec43c0a6e1b958df85daa82ce598220ffd19cf617011b4fce5dceba8cee965ef3019
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.4.dsc' curl_8.18.0-1ubuntu2.4.dsc 3304 SHA512:8d7085afc31041c645eac66fd45e73b9e5a0a9d9d818bcc0fcbc66d26636ba138d66827a9c197ac1be7cc2b987d03905970405b116d902b8eeebeaae7e1d2b0f
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -1103,15 +1109,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.12.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2' libgcrypt20_1.12.0.orig.tar.bz2 4438947 SHA512:9421461297bd79b14f94d1ab275c3ed93b5d433531915c5cc7a718a94d32978a46feccb7a33fe63a60780ff00d465fbe1fe9ada5c250cf6d10a525c246c63d1c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0.orig.tar.bz2.asc' libgcrypt20_1.12.0.orig.tar.bz2.asc 265 SHA512:9861910a5a955e37b5c90dbb01e1fcf35cd573801004d3cf762fc33180b9bfed1db229827395b54fdb1c499004daece4b6201ec83e9ca214fff79855b691e9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu1.debian.tar.xz' libgcrypt20_1.12.0-2ubuntu1.debian.tar.xz 46836 SHA512:aba5ad42c5f8be7ef8e86cb9cb56320ece65f4064475564be1905588fcf372d288ce4c753cb3582e5b59a759189bd5ea9cef57028686ba526afe9669bc29b446
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.0-2ubuntu1.dsc' libgcrypt20_1.12.0-2ubuntu1.dsc 3106 SHA512:02754ddea2e5519ec068b82b355aaddbbd3edec1931d1115d22563da271eb7d82c8f075c521d63df4153059edc1594f0d5000b46c300b37185c3f069025b92af
-```
 
 ### `dpkg` source package: `libgpg-error=1.58-2`
 
@@ -1628,13 +1628,13 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu5.dsc' openldap_2.6.10+dfsg-1ubuntu5.dsc 3426 SHA256:88dcaf31dac1a493430427d7d9ff2cb5c4138b1e0ab6c53c5be7c1d9c87f403c
 ```
 
-### `dpkg` source package: `openssl=3.5.5-1ubuntu3.3`
+### `dpkg` source package: `openssl=3.5.5-1ubuntu3.5`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1ubuntu3.3`
-- `openssl=3.5.5-1ubuntu3.3`
-- `openssl-provider-legacy=3.5.5-1ubuntu3.3`
+- `libssl3t64:amd64=3.5.5-1ubuntu3.5`
+- `openssl=3.5.5-1ubuntu3.5`
+- `openssl-provider-legacy=3.5.5-1ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1643,9 +1643,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.debian.tar.xz' openssl_3.5.5-1ubuntu3.5.debian.tar.xz 124844 SHA512:a28cdb1e18d65672624340370f71334310a246952fdcb6a3f28dd51f099ed04b567be6c5ca0a2f82a6c177cf0b9531e9dfa9f9e7cf813e7373734e1b82731ef7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.dsc' openssl_3.5.5-1ubuntu3.5.dsc 2916 SHA512:eaa43652f6129b07e8e5ec51c82eabb1575a420d1a2eb36edd53323113203191776331906188a34106f5941c4849a50ba6619bb85351b3977534496ba534452f
+```
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -1701,15 +1707,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.7.0-5ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0.orig.tar.xz' pam_1.7.0.orig.tar.xz 507824 SHA512:ab5cadb0eb5e95e36146fdbbc77eef4e5e0f38aeee4e819b080a1316f69969c3c33e4a2daf3246ded4c2e58ce517d7f1acb0d8de02a4898ff753f4c3aeec51cf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0.orig.tar.xz.asc' pam_1.7.0.orig.tar.xz.asc 801 SHA512:573bef1d63c0ce4efb5d1efd71a582f6ff679f2e278c326f66e142175cf67e42404453d41b92c5ce201b7d41db7b0617695f0d0972a812f0ab19553dec37192e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0-5ubuntu3.1.debian.tar.xz' pam_1.7.0-5ubuntu3.1.debian.tar.xz 195564 SHA512:7ed3d2ab8a17940da7af912fed3b3feb2df7acf00e5106b51f800805911466fd36e145e6c557a11f9d91bf88845b85c6e461a08c963c6e99ceb9f62b45458ac0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0-5ubuntu3.1.dsc' pam_1.7.0-5ubuntu3.1.dsc 2934 SHA512:fbfa3baae8b3e9096a48bba9f092e58102c794cdd88d5df63dadc4b5029eec96eada3a404ac78dd105430a2294e2a2b0958ce7f1d718fdcc2d14c72347cef5e3
-```
 
 ### `dpkg` source package: `pcre2=10.46-1build1`
 
