@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5d239a4d0d5e379dcd0954c44715513478665236597b4689ccd3b0435e90bcf`
-- Created: `2026-08-21T18:45:08.304443829Z`
-- Virtual Size: ~ 746.85 Mb  
+- Image ID: `sha256:b3349344e6ea4d02282843df00b7ef77ac6a7e0de786d08d1228f999b684fa24`
+- Created: `2026-08-31T20:33:26.05752268Z`
+- Virtual Size: ~ 746.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.7.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-20T05:42:51Z`
+  - `build-date=2026-08-31T00:57:07Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-20T05:42:51Z`
-  - `org.opencontainers.image.revision=b2232799f269a1f388bb8eab702d61fa78c72fce`
-  - `release=1787204459`
+  - `org.opencontainers.image.created=2026-08-31T00:57:07Z`
+  - `org.opencontainers.image.revision=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
+  - `release=1788137716`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b2232799f269a1f388bb8eab702d61fa78c72fce`
+  - `vcs-ref=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -56,12 +56,7 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url attr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `audit-libs-4.0.3-5.0.1.el10.x86_64`
 
@@ -174,12 +169,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
 
@@ -218,12 +208,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): Apache-2.0 AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND (Apache-2.0 OR LGPL-2.1-or-later)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url dbus-broker-36-4.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-36-4.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `dbus-common-1.14.10-5.el10.noarch`
 
@@ -459,12 +444,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-only
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gzip-1.13-3.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gzip-1.13-3.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `ima-evm-utils-1.6.2-4.el10.x86_64`
 
@@ -560,12 +540,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libattr-2.5.2-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.5.2-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libblkid-2.40.2-18.0.1.el10.x86_64`
 
@@ -978,12 +953,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.12.5-10.el10_2.2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
 
@@ -1158,23 +1128,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pam-libs-1.6.1-9.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
 
@@ -1500,12 +1460,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tar-1.35-11.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tar-1.35-11.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
 
