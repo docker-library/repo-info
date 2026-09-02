@@ -1,7 +1,7 @@
 ## `golang:tip-20260829-alpine`
 
 ```console
-$ docker pull golang@sha256:696db507780b9f1775db8f9f9481f61a737048a8de502e0f4f2bb5aa402cba63
+$ docker pull golang@sha256:433f5c72639c0b3fbe4fb691ce41dc00bbd4a1b43af98595416d52d95c4238a7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -496,7 +496,7 @@ $ docker pull golang@sha256:4e5344be92fbd4fc2a6496df431be6a83b155e1ac292c3eafff1
 ### `golang:tip-20260829-alpine` - linux; riscv64
 
 ```console
-$ docker pull golang@sha256:2943a4130bf69c12a8a35c751735406e6876e700d83dc444f5436e2936ef3b85
+$ docker pull golang@sha256:139909382e824d21157371af53d1fd693aad5e69593035c4cff49f0414ac30cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -551,24 +551,24 @@ WORKDIR /go
 ### `golang:tip-20260829-alpine` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:8c4a86e1bb34c7bc409ea8bc05293c5c30437457d1f1d84cd99922bed4ba6894
+$ docker pull golang@sha256:b98695b00793a8147659956dccaabc400e97a7fffc964f9ff2980ee5f39fa6c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **202.8 KB (202787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f539b5cc91fda70ae00ba1dc6303aadaf077b72a4cf37c308226a98cacf37e7d`
+-	Image ID: `sha256:186c34fa2cb28937a903abe173d2d6ed796aac97ed00ba15c5cb9c7bc20790b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0acec04846acad448672d97651d712f0aad14996a013d20aa9deaf6286907908`  
-		Last Modified: Tue, 01 Sep 2026 15:10:19 GMT  
+	-	`sha256:e115dcceccfb58816a0ba668067718b745187119e441bc81fc951e956ccd088e`  
+		Last Modified: Wed, 02 Sep 2026 19:10:43 GMT  
 		Size: 177.6 KB (177630 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:61203f1fab12bdde2d7337b57e5ee631a2e11c68016b9d30b96c91de7d1571b7`  
-		Last Modified: Tue, 01 Sep 2026 15:10:19 GMT  
+	-	`sha256:39c172960f078ba685ce9941de457a9bf5e466ce14c7d086a32272e79d4f38f3`  
+		Last Modified: Wed, 02 Sep 2026 19:10:43 GMT  
 		Size: 25.2 KB (25157 bytes)  
 		MIME: application/vnd.in-toto+json
 
