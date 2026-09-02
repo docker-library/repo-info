@@ -1,7 +1,7 @@
 ## `azul-zulu:26-jdk-almalinux10`
 
 ```console
-$ docker pull azul-zulu@sha256:417c933cf47162bbe39899664ca7e7ed8267116346eef1ffb77e634c87d8dba9
+$ docker pull azul-zulu@sha256:1aa6116c67f8e1465523101cb3d71d560904307c50391d9c1496d3c85b92b349
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,123 +14,123 @@ $ docker pull azul-zulu@sha256:417c933cf47162bbe39899664ca7e7ed8267116346eef1ffb
 ### `azul-zulu:26-jdk-almalinux10` - linux; amd64
 
 ```console
-$ docker pull azul-zulu@sha256:73303a2466a13de5597bd8a280f92a0e4c8efadef2eaf4dd13b7ef29c8ceab57
+$ docker pull azul-zulu@sha256:2ffe122022e2cd2f7b00bb1682e1fac1c9714458be840832d10beb3192116426
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.4 MB (255380783 bytes)**  
+-	Total Size: **256.0 MB (255962605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7a5935e192adb059c72fc79bd6580a71c1cfc3f51057a91d3aeeef00fcf19d5`
+-	Image ID: `sha256:7813de47aa5e360b9355cd2d6e45a3b5ae33e358174dc0fdb9656a4c2a93218e`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:16 GMT
+# Wed, 02 Sep 2026 21:53:13 GMT
 ADD almalinux-10-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:16 GMT
+# Wed, 02 Sep 2026 21:53:13 GMT
 CMD ["/bin/bash"]
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux;      dnf install -y --setopt=install_weak_deps=False gnupg2;      curl -fsSL https://repos.azul.com/azul-repo.key -o /tmp/azul-repo.key;      GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;      gpg --batch --import /tmp/azul-repo.key;      gpg --batch --export --armor '27BC0C8CB3D81623F59BDADCB1998361219BD9C9' > /etc/pki/rpm-gpg/RPM-GPG-KEY-azul;      gpgconf --kill all; rm -rf "$GNUPGHOME";      rm /tmp/azul-repo.key;      printf '%s\n'        '[zulu-openjdk]'        'name=zulu-openjdk - Azul Systems Inc., Zulu packages'        "baseurl=https://$REPO_HOST/zulu/rpm"        'enabled=1'        'gpgcheck=1'        'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-azul'        > /etc/yum.repos.d/zulu-openjdk.repo;      dnf install -y --setopt=install_weak_deps=False fontconfig        zulu26-jdk-26.0.2.1-1;      dnf remove -y gnupg2;      dnf clean all; rm -rf /var/cache/dnf;      java -version # buildkit
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 ENV PATH=/usr/lib/jvm/zulu26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 19 Aug 2026 17:37:15 GMT
+# Wed, 02 Sep 2026 22:17:15 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:4224950577242fb7ff1faf31d7a6c1520d455ab1a1eecff8aed5766688091539`  
-		Last Modified: Tue, 02 Jun 2026 19:04:32 GMT  
-		Size: 68.6 MB (68562462 bytes)  
+	-	`sha256:653c5d8d0d6694b5f22ff2c258227792bc61603c5743f59b2221eb24864d05d3`  
+		Last Modified: Wed, 02 Sep 2026 21:53:28 GMT  
+		Size: 68.9 MB (68862668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54df168fe055d9abaf6c1303b94b8cd983b83b9b56d8eed756bd73e20259f9e1`  
-		Last Modified: Wed, 19 Aug 2026 17:37:33 GMT  
-		Size: 186.8 MB (186818321 bytes)  
+	-	`sha256:4de4955a5f635d4339f6162dc22b229f77bc85539d7f6d40fc98f96e681877cc`  
+		Last Modified: Wed, 02 Sep 2026 22:17:33 GMT  
+		Size: 187.1 MB (187099937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-almalinux10` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:7fc2936c5a57882f69eb916c7518c945523d7ba142790c4ee6c05f36de44ef01
+$ docker pull azul-zulu@sha256:15a5b9691769718edb83d145a48bde192c85a97df511f26e0ed03b039d3ce3a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.5 KB (9485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d123b8c793f92f0423213f107face33643091d0fd430efc185906ae97e5f348`
+-	Image ID: `sha256:8d4cc6142637b4d652fb3a75440ef422226db0fde939b2e57678f8f0facc3f73`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56f88ec4052081298f996867dc78b15c8f2be7147f012f7a3ca6ee324069b278`  
-		Last Modified: Wed, 19 Aug 2026 17:37:29 GMT  
+	-	`sha256:3fe2072d88062a0dfdb0bf5e9bc4aa3779075ef66f3de9dfb850b0c17aa88553`  
+		Last Modified: Wed, 02 Sep 2026 22:17:29 GMT  
 		Size: 9.5 KB (9485 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `azul-zulu:26-jdk-almalinux10` - linux; arm64 variant v8
 
 ```console
-$ docker pull azul-zulu@sha256:e9c4e6495166452b79a3f051f2588b179996d1a5b1e81311145427a1e3b22c5d
+$ docker pull azul-zulu@sha256:a816df462acc3e5834b499208981e72851e16b855ffd9c6dcf0ee33dfbbcd3a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.7 MB (253671265 bytes)**  
+-	Total Size: **254.2 MB (254240991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c1eddff9d7424a594ded71b0e542a83ac8f105e2427a232f57ffd98a792d004`
+-	Image ID: `sha256:bc6c5cbf20833e216cf037c49c3017fe636f3fd301c15a1d90f8f0b7c6c337cc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:37 GMT
+# Wed, 02 Sep 2026 21:53:16 GMT
 ADD almalinux-10-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:37 GMT
+# Wed, 02 Sep 2026 21:53:16 GMT
 CMD ["/bin/bash"]
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 ENV LANG=C.UTF-8
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux;      dnf install -y --setopt=install_weak_deps=False gnupg2;      curl -fsSL https://repos.azul.com/azul-repo.key -o /tmp/azul-repo.key;      GNUPGHOME="$(mktemp -d)"; export GNUPGHOME;      gpg --batch --import /tmp/azul-repo.key;      gpg --batch --export --armor '27BC0C8CB3D81623F59BDADCB1998361219BD9C9' > /etc/pki/rpm-gpg/RPM-GPG-KEY-azul;      gpgconf --kill all; rm -rf "$GNUPGHOME";      rm /tmp/azul-repo.key;      printf '%s\n'        '[zulu-openjdk]'        'name=zulu-openjdk - Azul Systems Inc., Zulu packages'        "baseurl=https://$REPO_HOST/zulu/rpm"        'enabled=1'        'gpgcheck=1'        'gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-azul'        > /etc/yum.repos.d/zulu-openjdk.repo;      dnf install -y --setopt=install_weak_deps=False fontconfig        zulu26-jdk-26.0.2.1-1;      dnf remove -y gnupg2;      dnf clean all; rm -rf /var/cache/dnf;      java -version # buildkit
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 ENV PATH=/usr/lib/jvm/zulu26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 19 Aug 2026 17:37:28 GMT
+# Wed, 02 Sep 2026 22:18:41 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:11aaeaf9729fbc9690ea62f609dd17fc5d9fca4e16048f27425d411f758066b2`  
-		Last Modified: Tue, 02 Jun 2026 19:04:54 GMT  
-		Size: 67.1 MB (67141961 bytes)  
+	-	`sha256:802b840a8d25ea1358a31fbc4ea7c8131247ca176ca97b5f148712b005031c7f`  
+		Last Modified: Wed, 02 Sep 2026 21:53:33 GMT  
+		Size: 67.4 MB (67431802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a0abdd14570ed6962be8774edb4dd3201182ca3bb19e1967a5d63b2eea02719`  
-		Last Modified: Wed, 19 Aug 2026 17:37:48 GMT  
-		Size: 186.5 MB (186529304 bytes)  
+	-	`sha256:39ba843074a4ee64120424d6be6d6d1c23aab003180011fa2872bf4c3cc1fd5c`  
+		Last Modified: Wed, 02 Sep 2026 22:19:01 GMT  
+		Size: 186.8 MB (186809189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-almalinux10` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:4aca17cfedc6f0baed5711b4a6c4e0dc71a29ece35a0cf263e1fa9965e6a3410
+$ docker pull azul-zulu@sha256:f5b9b32bb34ae6decda545aa64e69dd9af81fcf4daab5afe1aa3d27cb473409a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.6 KB (9589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0698f6b904139688b5485b999eb9894dd6bb1211ea9471f43312a57a2c311c35`
+-	Image ID: `sha256:79120d218fd68ef19751e2f2259e215d7df508c4869bd8e07f9cbba096e9376b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd88f73710a8637a2f17ef704dd2d439003618fd12ac9fa247540871a758f273`  
-		Last Modified: Wed, 19 Aug 2026 17:37:43 GMT  
+	-	`sha256:b9bd7762aa4a10616c28017bdef52597278086b58b62950f3bedc45d31bc3def`  
+		Last Modified: Wed, 02 Sep 2026 22:18:57 GMT  
 		Size: 9.6 KB (9589 bytes)  
 		MIME: application/vnd.in-toto+json
