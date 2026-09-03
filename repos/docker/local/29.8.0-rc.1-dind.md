@@ -1,16 +1,16 @@
-# `docker:29.7.2-dind-rootless`
+# `docker:29.8.0-rc.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c413369499ca1b6f70c5033c546abacb462885408be35123f371303d80e00674`
-- Created: `2026-08-31T21:12:37.47615619Z`
-- Virtual Size: ~ 429.9 Mb  
+- Image ID: `sha256:6eb2660fe6d8cda0223afc2c3c67469d29e9605aa2ae7f0259d7ea214d4dc9ce`
+- Created: `2026-08-31T20:29:49.583131171Z`
+- Virtual Size: ~ 398.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.7.2`
+  - `DOCKER_VERSION=29.8.0-rc.1`
   - `DOCKER_BUILDX_VERSION=0.36.1`
   - `DOCKER_COMPOSE_VERSION=5.5.0`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -290,74 +290,6 @@ GPL-2.0-or-later
 
 ```
 
-### `apk` package: `fuse-common`
-
-```console
-fuse-common-3.18.2-r0 description:
-Common files for fuse2 and fuse3
-
-fuse-common-3.18.2-r0 webpage:
-https://github.com/libfuse/libfuse
-
-fuse-common-3.18.2-r0 installed size:
-216 B
-
-fuse-common-3.18.2-r0 license:
-GPL-2.0-only AND LGPL-2.1-only
-
-```
-
-### `apk` package: `fuse-overlayfs`
-
-```console
-fuse-overlayfs-1.16-r0 description:
-FUSE implementation for overlayfs
-
-fuse-overlayfs-1.16-r0 webpage:
-https://github.com/containers/fuse-overlayfs
-
-fuse-overlayfs-1.16-r0 installed size:
-82 KiB
-
-fuse-overlayfs-1.16-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `fuse3`
-
-```console
-fuse3-3.18.2-r0 description:
-Reference implementation of the Linux FUSE (Filesystem in Userspace) interface
-
-fuse3-3.18.2-r0 webpage:
-https://github.com/libfuse/libfuse
-
-fuse3-3.18.2-r0 installed size:
-48 KiB
-
-fuse3-3.18.2-r0 license:
-GPL-2.0-only AND LGPL-2.1-only
-
-```
-
-### `apk` package: `fuse3-libs`
-
-```console
-fuse3-libs-3.18.2-r0 description:
-Reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
-
-fuse3-libs-3.18.2-r0 webpage:
-https://github.com/libfuse/libfuse
-
-fuse3-libs-3.18.2-r0 installed size:
-294 KiB
-
-fuse3-libs-3.18.2-r0 license:
-GPL-2.0-only AND LGPL-2.1-only
-
-```
-
 ### `apk` package: `git`
 
 ```console
@@ -392,23 +324,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `glib`
-
-```console
-glib-2.88.1-r1 description:
-Low-level core library that forms the basis for projects such as GTK and GNOME
-
-glib-2.88.1-r1 webpage:
-https://developer.gnome.org/glib/
-
-glib-2.88.1-r1 installed size:
-5262 KiB
-
-glib-2.88.1-r1 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `inih`
 
 ```console
@@ -423,74 +338,6 @@ inih-62-r0 installed size:
 
 inih-62-r0 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `iproute2`
-
-```console
-iproute2-7.0.0-r0 description:
-IP Routing Utilities
-
-iproute2-7.0.0-r0 webpage:
-https://wiki.linuxfoundation.org/networking/iproute2
-
-iproute2-7.0.0-r0 installed size:
-484 KiB
-
-iproute2-7.0.0-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `iproute2-minimal`
-
-```console
-iproute2-minimal-7.0.0-r0 description:
-IP Routing Utilities (/sbin/ip only)
-
-iproute2-minimal-7.0.0-r0 webpage:
-https://wiki.linuxfoundation.org/networking/iproute2
-
-iproute2-minimal-7.0.0-r0 installed size:
-601 KiB
-
-iproute2-minimal-7.0.0-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `iproute2-ss`
-
-```console
-iproute2-ss-7.0.0-r0 description:
-IP Routing Utilities (socket statistics tool)
-
-iproute2-ss-7.0.0-r0 webpage:
-https://wiki.linuxfoundation.org/networking/iproute2
-
-iproute2-ss-7.0.0-r0 installed size:
-96 KiB
-
-iproute2-ss-7.0.0-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `iproute2-tc`
-
-```console
-iproute2-tc-7.0.0-r0 description:
-IP Routing Utilities (traffic control and XDP support)
-
-iproute2-tc-7.0.0-r0 webpage:
-https://wiki.linuxfoundation.org/networking/iproute2
-
-iproute2-tc-7.0.0-r0 installed size:
-575 KiB
-
-iproute2-tc-7.0.0-r0 license:
-GPL-2.0-or-later
 
 ```
 
@@ -630,23 +477,6 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `libcap2`
-
-```console
-libcap2-2.78-r0 description:
-POSIX 1003.1e capabilities (libraries)
-
-libcap2-2.78-r0 webpage:
-https://sites.google.com/site/fullycapable/
-
-libcap2-2.78-r0 installed size:
-47 KiB
-
-libcap2-2.78-r0 license:
-BSD-3-Clause OR GPL-2.0-only
-
-```
-
 ### `apk` package: `libcom_err`
 
 ```console
@@ -732,23 +562,6 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `libelf`
-
-```console
-libelf-0.195-r0 description:
-Library to read, modify and create ELF files
-
-libelf-0.195-r0 webpage:
-https://sourceware.org/elfutils/
-
-libelf-0.195-r0 installed size:
-89 KiB
-
-libelf-0.195-r0 license:
-GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
-
-```
-
 ### `apk` package: `libexpat`
 
 ```console
@@ -762,23 +575,6 @@ libexpat-2.8.3-r0 installed size:
 133 KiB
 
 libexpat-2.8.3-r0 license:
-MIT
-
-```
-
-### `apk` package: `libffi`
-
-```console
-libffi-3.5.2-r1 description:
-portable, high level programming interface to various calling conventions.
-
-libffi-3.5.2-r1 webpage:
-https://sourceware.org/libffi/
-
-libffi-3.5.2-r1 installed size:
-38 KiB
-
-libffi-3.5.2-r1 license:
 MIT
 
 ```
@@ -885,23 +681,6 @@ LGPL-2.1-or-later
 
 ```
 
-### `apk` package: `libmount`
-
-```console
-libmount-2.42.1-r0 description:
-Block device identification library from util-linux
-
-libmount-2.42.1-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libmount-2.42.1-r0 installed size:
-282 KiB
-
-libmount-2.42.1-r0 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libncursesw`
 
 ```console
@@ -950,40 +729,6 @@ libpsl-0.21.5-r3 installed size:
 
 libpsl-0.21.5-r3 license:
 MIT
-
-```
-
-### `apk` package: `libseccomp`
-
-```console
-libseccomp-2.6.0-r2 description:
-interface to the Linux Kernel's syscall filtering mechanism
-
-libseccomp-2.6.0-r2 webpage:
-https://github.com/seccomp/libseccomp
-
-libseccomp-2.6.0-r2 installed size:
-163 KiB
-
-libseccomp-2.6.0-r2 license:
-LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libslirp`
-
-```console
-libslirp-4.9.1-r0 description:
-A general purpose TCP-IP emulator
-
-libslirp-4.9.1-r0 webpage:
-https://gitlab.freedesktop.org/slirp/libslirp
-
-libslirp-4.9.1-r0 installed size:
-125 KiB
-
-libslirp-4.9.1-r0 license:
-BSD-3-Clause
 
 ```
 
@@ -1375,23 +1120,6 @@ skalibs-libs-2.15.0.0-r0 installed size:
 
 skalibs-libs-2.15.0.0-r0 license:
 ISC
-
-```
-
-### `apk` package: `slirp4netns`
-
-```console
-slirp4netns-1.3.3-r0 description:
-User-mode networking for unprivileged network namespaces
-
-slirp4netns-1.3.3-r0 webpage:
-https://github.com/rootless-containers/slirp4netns
-
-slirp4netns-1.3.3-r0 installed size:
-66 KiB
-
-slirp4netns-1.3.3-r0 license:
-GPL-2.0-or-later
 
 ```
 

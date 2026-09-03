@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8193d29aa6a99a72ade95625654b79b60daf8e2af1a8a752c82378027fd2dda9`
-- Created: `2026-08-10T23:33:20.684552358Z`
-- Virtual Size: ~ 391.07 Mb  
+- Image ID: `sha256:8cdb6d492106752d557cda50e628b88e7bb303a7eaea91a10bdf672b95ad4f52`
+- Created: `2026-08-31T20:30:15.977084822Z`
+- Virtual Size: ~ 397.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.7.2`
   - `DOCKER_BUILDX_VERSION=0.36.1`
-  - `DOCKER_COMPOSE_VERSION=5.4.0`
+  - `DOCKER_COMPOSE_VERSION=5.5.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -497,16 +497,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -565,16 +565,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -735,16 +735,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -956,16 +956,16 @@ MIT
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r0 description:
+openssh-client-common-10.3_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r0 webpage:
+openssh-client-common-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r0 installed size:
+openssh-client-common-10.3_p1-r1 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r0 license:
+openssh-client-common-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -973,16 +973,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r0 description:
+openssh-client-default-10.3_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r0 webpage:
+openssh-client-default-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r0 installed size:
+openssh-client-default-10.3_p1-r1 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r0 license:
+openssh-client-default-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -990,16 +990,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r0 description:
+openssh-keygen-10.3_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r0 webpage:
+openssh-keygen-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r0 installed size:
+openssh-keygen-10.3_p1-r1 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r0 license:
+openssh-keygen-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1007,16 +1007,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1228,16 +1228,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.3-r0 description:
+zfs-2.4.4-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.3-r0 webpage:
+zfs-2.4.4-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.3-r0 installed size:
+zfs-2.4.4-r0 installed size:
 1252 KiB
 
-zfs-2.4.3-r0 license:
+zfs-2.4.4-r0 license:
 CDDL-1.0
 
 ```
@@ -1245,16 +1245,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.3-r0 description:
+zfs-libs-2.4.4-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.3-r0 webpage:
+zfs-libs-2.4.4-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.3-r0 installed size:
+zfs-libs-2.4.4-r0 installed size:
 4118 KiB
 
-zfs-libs-2.4.3-r0 license:
+zfs-libs-2.4.4-r0 license:
 CDDL-1.0
 
 ```

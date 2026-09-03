@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:10900ba73429df91dc30f1435013a3c5663e3478d12e89e465c44ca0a82edefe`
-- Created: `2026-08-10T23:30:08.497843936Z`
-- Virtual Size: ~ 183.21 Mb  
+- Image ID: `sha256:e2c7120396aac127cd2e58ce19ba30adc0b7b229da50d95b404c3d3a1625d204`
+- Created: `2026-08-31T19:11:15.102414585Z`
+- Virtual Size: ~ 183.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.7.2`
   - `DOCKER_BUILDX_VERSION=0.36.1`
-  - `DOCKER_COMPOSE_VERSION=5.4.0`
+  - `DOCKER_COMPOSE_VERSION=5.5.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -310,16 +310,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
+libexpat-2.8.3-r0 installed size:
 133 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.3-r0 license:
 MIT
 
 ```
@@ -480,16 +480,16 @@ MIT
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r0 description:
+openssh-client-common-10.3_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r0 webpage:
+openssh-client-common-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r0 installed size:
+openssh-client-common-10.3_p1-r1 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r0 license:
+openssh-client-common-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -497,16 +497,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r0 description:
+openssh-client-default-10.3_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r0 webpage:
+openssh-client-default-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r0 installed size:
+openssh-client-default-10.3_p1-r1 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r0 license:
+openssh-client-default-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -514,16 +514,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r0 description:
+openssh-keygen-10.3_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r0 webpage:
+openssh-keygen-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r0 installed size:
+openssh-keygen-10.3_p1-r1 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r0 license:
+openssh-keygen-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
