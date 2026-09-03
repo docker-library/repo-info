@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0484ca655767495b8d79f03137d69d3082724a7f5c2d821447f1cbaf26d02e64`
-- Created: `2026-08-25T17:45:39.959066373Z`
+- Image ID: `sha256:1c04f6e2bef6f692bf67a4d0184e6a24a082f68fc7395239671105bb3cf342c0`
+- Created: `2026-08-31T19:11:39.681263655Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-25T08:41:53Z`
+  - `build-date=2026-08-31T08:53:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,12 +38,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-08-25T08:41:53Z`
-  - `org.opencontainers.image.revision=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
-  - `release=1787647261`
+  - `org.opencontainers.image.created=2026-08-31T08:53:29Z`
+  - `org.opencontainers.image.revision=3c32d7c63d617fc21bc66bb65a893d8db99096da`
+  - `release=1788166357`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=85fbbe99585cc2a24e8b7c66c0c7127ddd59f55f`
+  - `vcs-ref=3c32d7c63d617fc21bc66bb65a893d8db99096da`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -226,15 +226,15 @@ $ dnf --quiet download --source --url dbus-1.12.20-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.12.20-8.el9.src.rpm
 ```
 
-### `rpm` package: `dbus-broker-28-7.el9.x86_64`
+### `rpm` package: `dbus-broker-28-9.el9_8.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-broker-28-7.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-28-7.el9.src.rpm
+$ dnf --quiet download --source --url dbus-broker-28-9.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-28-9.el9_8.src.rpm
 ```
 
 ### `rpm` package: `dbus-common-1.12.20-8.el9.noarch`
@@ -502,12 +502,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv3+ and GFDL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gzip-1.12-1.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gzip-1.12-1.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `jq-1.6-19.el9_8.2.x86_64`
 
@@ -641,11 +636,16 @@ $ dnf --quiet download --source --url libassuan-2.5.5-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libassuan-2.5.5-3.el9.src.rpm
 ```
 
-### `rpm` package: `libattr-2.5.1-3.el9.x86_64`
+### `rpm` package: `libattr-2.6.0-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libattr-2.6.0-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/attr-2.6.0-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `libblkid-2.37.4-25.el9.x86_64`
 
@@ -1098,15 +1098,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-14.el9_8.2.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_8.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.2.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.4.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1390,7 +1390,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-release-1.0-33.noarch`
+### `rpm` package: `percona-release-1.0-34.noarch`
 
 Licenses (from `rpm --query`): GPL-3.0+
 
@@ -1596,15 +1596,15 @@ $ dnf --quiet download --source --url systemd-rpm-macros-252-67.el9_8.4.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.4.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-11.el9.x86_64`
+### `rpm` package: `tar-1.34-13.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tar-1.34-11.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-11.el9.src.rpm
+$ dnf --quiet download --source --url tar-1.34-13.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-13.el9_8.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2026c-1.el9_8.noarch`
