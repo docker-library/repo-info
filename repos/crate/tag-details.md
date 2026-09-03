@@ -11,7 +11,7 @@
 ## `crate:6.3`
 
 ```console
-$ docker pull crate@sha256:09da06408fc8fd14d73c7f097035b8c14644e67ba2bdd54fd38bf4465480d38c
+$ docker pull crate@sha256:7fb2ab7b9204c80314a8ab6cac71edaa0080bb77d325975b57a60a7a446f098f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,231 +24,231 @@ $ docker pull crate@sha256:09da06408fc8fd14d73c7f097035b8c14644e67ba2bdd54fd38bf
 ### `crate:6.3` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:721176ab2f9ea529d9c8419f5046f7e38a3a2c85f71d60fe93d4248f2852498b
+$ docker pull crate@sha256:7cf38b07f55cac5381d3f54dc529077dda94523569b1b0fdc30c2f3cc70e7856
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.3 MB (245269662 bytes)**  
+-	Total Size: **260.9 MB (260928832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f46223cc7eb5ceaf5724bb09c68bee5e2e295be75fdc06753df1d33710c40ed7`
+-	Image ID: `sha256:cbdb74d2bc63f689901dd5baded7947dae5462bf9cde2232f908d39bbbf04caa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 ADD almalinux-10-kitten-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 CMD ["/bin/bash"]
-# Mon, 10 Aug 2026 18:56:59 GMT
+# Wed, 02 Sep 2026 22:13:55 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Mon, 10 Aug 2026 18:57:13 GMT
+# Wed, 02 Sep 2026 22:14:43 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 VOLUME [/data]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 WORKDIR /data
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:e787432b3044759d693031c5b5b1f432cb4b7cc6c8f9d21577a5906dd5e538c5`  
-		Last Modified: Tue, 02 Jun 2026 19:04:29 GMT  
-		Size: 68.6 MB (68553003 bytes)  
+	-	`sha256:7129cd03b9724af185dcf2cb52631fe5fad4e6b40911de8df488e9cd8c2d9814`  
+		Last Modified: Wed, 02 Sep 2026 21:53:34 GMT  
+		Size: 69.2 MB (69236295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8690202e22d63aee3f470fe5286abe91c8577d95f74f07f1bf128a4a758d030f`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 18.9 MB (18883121 bytes)  
+	-	`sha256:9b06f588f907735ff54d242d317df11c188f12beffd10ff8aeeaafc9a2d200d5`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 33.8 MB (33792460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ea80e66bbafd656f1c12525f0738d3458475e21ba53f1a2facd2b3bf02365d1`  
-		Last Modified: Mon, 10 Aug 2026 18:57:39 GMT  
-		Size: 149.0 MB (149030082 bytes)  
+	-	`sha256:92136efa5b4b12756d4eb7a4fa078388568f95120ff98caf3acdf569add421bc`  
+		Last Modified: Wed, 02 Sep 2026 22:15:08 GMT  
+		Size: 149.0 MB (149030030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:751d079739291bf444e5a0005923bb3579dff0e832b8ce1693b10015103537d1`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 8.8 MB (8801576 bytes)  
+	-	`sha256:788e89321edc4ab5d3557a097f7579a2bc181644ce73a50b11d4be7fa0488fc5`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 8.9 MB (8868169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f8fe5fd1e9264c3dd421b5645351f514ff88b8881ebef9ea8734d3fa986e4d7`  
-		Last Modified: Mon, 10 Aug 2026 18:57:35 GMT  
+	-	`sha256:44f5c605cd9cd2a9218def5fea9514e0284e1664199f2fc168d287cb6fba1fe4`  
+		Last Modified: Wed, 02 Sep 2026 22:15:03 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b06340cd3efb0f4fa7bf19504ffe5f8af6b982d8599fdbe9fd1ecfc01286be9c`  
-		Last Modified: Mon, 10 Aug 2026 18:57:37 GMT  
+	-	`sha256:84e7cf2799dca0087a2bcf52b5ce208de19894ad869698223951f62ec90f1fa0`  
+		Last Modified: Wed, 02 Sep 2026 22:15:03 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f419a6ce2a3fdfa82874147db9e56d05d1e97feb15cc295792dfc5915834a5`  
-		Last Modified: Mon, 10 Aug 2026 18:57:37 GMT  
+	-	`sha256:0594b806131c05aa599d2ba6869a3f5e1644556ce0ea7a067f303e1c5c063dd1`  
+		Last Modified: Wed, 02 Sep 2026 22:15:05 GMT  
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9097abb2a397311a555b227558a33b48a96c38f15211709ac84106cd411dadbb`  
-		Last Modified: Mon, 10 Aug 2026 18:57:38 GMT  
-		Size: 506.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `crate:6.3` - unknown; unknown
-
-```console
-$ docker pull crate@sha256:92bf06a6e66890f7e48e73c167b8595df714fe152c0d41c76e67c1b3b1e9f706
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628058 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5403946f22e69860280a584d0966b21cec9233fc0661758d432cac8aeea339b6`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6590fbf755951742f957721c6671a63947015365b562d051366dd07bed377045`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 6.6 MB (6606714 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:bdd80dcb8c8bbe9fe7a2db2686b2c449bedeaadfc4dbee66e0c1d3b73d71dab8`  
-		Last Modified: Mon, 10 Aug 2026 18:57:35 GMT  
-		Size: 21.3 KB (21344 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `crate:6.3` - linux; arm64 variant v8
-
-```console
-$ docker pull crate@sha256:19d7ccdece76b0fd78804c1afb93c96eb8bcb87ff457f2c59c42ae37fd7cf62d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.5 MB (241513786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dda6c89527755bc3dab017710031cb73de09777b8b1771e7e0679be426c5f7ae`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["crate"]`
-
-```dockerfile
-# Tue, 02 Jun 2026 19:04:17 GMT
-ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:17 GMT
-CMD ["/bin/bash"]
-# Mon, 10 Aug 2026 18:56:34 GMT
-RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Mon, 10 Aug 2026 18:56:48 GMT
-RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENV CRATE_HEAP_SIZE=512M
-# Mon, 10 Aug 2026 18:56:51 GMT
-RUN mkdir -p /data/data /data/log # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-VOLUME [/data]
-# Mon, 10 Aug 2026 18:56:51 GMT
-WORKDIR /data
-# Mon, 10 Aug 2026 18:56:51 GMT
-EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY docker-entrypoint.sh / # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 10 Aug 2026 18:56:51 GMT
-CMD ["crate"]
-```
-
--	Layers:
-	-	`sha256:f4e642e2dc39d48325d258aab2be76368a8810b551698a78f8de70b4d572f710`  
-		Last Modified: Tue, 02 Jun 2026 19:04:33 GMT  
-		Size: 67.1 MB (67133180 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bceecf48a3887b0cf2104ef8d0a4b37cf88f4c509de40b62145baf812f890c9e`  
-		Last Modified: Mon, 10 Aug 2026 18:57:11 GMT  
-		Size: 18.9 MB (18922739 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fb802ba1dc97fd419a25eff137c3cf5820517b1bd7b18e701fca7458724e00`  
-		Last Modified: Mon, 10 Aug 2026 18:57:15 GMT  
-		Size: 146.7 MB (146658637 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03b223f5672e71b166e84010282fcc225ea32abe542f8c45394cb73d7fbc874f`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 8.8 MB (8797348 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc89376a20de7b214ca7bcdbe7559bb2da1064198ce5193348189967d84a8c8e`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 126.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72a1757757c9af506f9e2da1ee50d8631a9c647429f098140647ae5c03988861`  
-		Last Modified: Mon, 10 Aug 2026 18:57:11 GMT  
-		Size: 264.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abe7f0bd3aabc400b569f3f93dd00ad68e1b25f8b692bdb2f12232ee3f023bdc`  
-		Last Modified: Mon, 10 Aug 2026 18:57:12 GMT  
-		Size: 956.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a5ce6c9d30e1614db1a1e1123f15bc2f5f7a4c8fd0d4c643ae15c3a65ab242`  
-		Last Modified: Mon, 10 Aug 2026 18:57:12 GMT  
+	-	`sha256:e15f3502360dfb210a59e914f32621fd51729cc6b4667d45e546cae44aa8313e`  
+		Last Modified: Wed, 02 Sep 2026 22:15:05 GMT  
 		Size: 504.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.3` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:2f4143e7882c2b02570995c82a302bdb008dd9fcb43abf87ecd6188463194827
+$ docker pull crate@sha256:22242cc4a957dac0491ba793a88df161856f23a2cb4d9cfd81830b806086af13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6626095 bytes)**  
+-	Total Size: **6.6 MB (6614756 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:347aebef27b2eccfa8095745e422af44edc23e5101a9eb37dda90363f3364deb`
+-	Image ID: `sha256:12ce9e3fc6d41f780034962e332be72de5c0e479daa6444276daf21a368a25cb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e95a19f6e4da922c0e02d3cac7f5315a3094e54367371c7f2c2ea7eb84e8f6e9`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 6.6 MB (6604626 bytes)  
+	-	`sha256:e8d938d16a62e43ebaa67583f322256b9a041fdc15a65570cf08d6e733129657`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 6.6 MB (6593413 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5506824ddbfd5f69bc6bdcdf910a7d2de6d3e17c9b9784fda98269374cfc93b`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
+	-	`sha256:6671a361f45daa3467d8c2c28c9e8baade1d3a568dfd92bc2771ddd3384f9056`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 21.3 KB (21343 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `crate:6.3` - linux; arm64 variant v8
+
+```console
+$ docker pull crate@sha256:cf6818c7ba065f3ceb33b318572acaca3c3d3a003f57f8f35eb2bb2cc300af21
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **257.0 MB (257035603 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b339e48db1dc2adce1ad52d8069ce2d535ee1c25780e222f3a979cc20e511b9b`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Wed, 02 Sep 2026 21:53:18 GMT
+ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
+# Wed, 02 Sep 2026 21:53:18 GMT
+CMD ["/bin/bash"]
+# Wed, 02 Sep 2026 22:16:55 GMT
+RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
+# Wed, 02 Sep 2026 22:17:08 GMT
+RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+RUN python3 -m pip install 'crash==0.32.0' # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENV CRATE_HEAP_SIZE=512M
+# Wed, 02 Sep 2026 22:17:11 GMT
+RUN mkdir -p /data/data /data/log # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+VOLUME [/data]
+# Wed, 02 Sep 2026 22:17:11 GMT
+WORKDIR /data
+# Wed, 02 Sep 2026 22:17:11 GMT
+EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY docker-entrypoint.sh / # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Wed, 02 Sep 2026 22:17:11 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:5c1c9e074ac4d1badb151e5e5a82b6884b85b4ce910263dca58c74961a6ee8ce`  
+		Last Modified: Wed, 02 Sep 2026 21:53:35 GMT  
+		Size: 67.8 MB (67808693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fb11bb4bfc63b1ba41f27c2a44bffe389b14f7f34ff316ca7f64d3c8044bd2bf`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 33.7 MB (33699650 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9b16c42e37e96dccc800e4b1aca60f2d7988e81b2fe132ea12c813d311d911d`  
+		Last Modified: Wed, 02 Sep 2026 22:17:34 GMT  
+		Size: 146.7 MB (146658670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79599d3c1fe11e5106612ccb432439cc7c0a20730295e8dc5afe856304ffce55`  
+		Last Modified: Wed, 02 Sep 2026 22:17:31 GMT  
+		Size: 8.9 MB (8866721 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ffdbb7c04cd0d8c5bf191e759b64f262d8e4d7fd3ece52265180461f5780683`  
+		Last Modified: Wed, 02 Sep 2026 22:17:30 GMT  
+		Size: 124.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b5f7401fa7907ffbbb4274f87506e27fb0ea8fe0de60bcfa1ac4951298938f3c`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 261.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2de3820e776d8c0033c365ab7682def00ec7a81e7db780133160e6283b9f502`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 950.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3fdeb3b54de2fc16a2ac4adb8187f6636b77dc7830cd7edcb72f4526f40ee7cf`  
+		Last Modified: Wed, 02 Sep 2026 22:17:33 GMT  
+		Size: 502.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `crate:6.3` - unknown; unknown
+
+```console
+$ docker pull crate@sha256:53ef0593b9acd02e4a1b13df0a8962408e53da1e53a3312282a92b549f03e25a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.6 MB (6612794 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:78ee53bed4a7f6bb3fe571472829bb9a4aecedf3e72aeb709a5e79dd67642283`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9779a054853fec686922a5fff7390b566c48bddcf1ce3f9d6a7426181787f665`  
+		Last Modified: Wed, 02 Sep 2026 22:17:31 GMT  
+		Size: 6.6 MB (6591325 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2125a75e34bf6ae160d6f8f2688095badbeeee75f0e4ff258e57fa9d0b68651c`  
+		Last Modified: Wed, 02 Sep 2026 22:17:30 GMT  
 		Size: 21.5 KB (21469 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `crate:6.3.7`
 
 ```console
-$ docker pull crate@sha256:09da06408fc8fd14d73c7f097035b8c14644e67ba2bdd54fd38bf4465480d38c
+$ docker pull crate@sha256:7fb2ab7b9204c80314a8ab6cac71edaa0080bb77d325975b57a60a7a446f098f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -261,231 +261,231 @@ $ docker pull crate@sha256:09da06408fc8fd14d73c7f097035b8c14644e67ba2bdd54fd38bf
 ### `crate:6.3.7` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:721176ab2f9ea529d9c8419f5046f7e38a3a2c85f71d60fe93d4248f2852498b
+$ docker pull crate@sha256:7cf38b07f55cac5381d3f54dc529077dda94523569b1b0fdc30c2f3cc70e7856
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.3 MB (245269662 bytes)**  
+-	Total Size: **260.9 MB (260928832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f46223cc7eb5ceaf5724bb09c68bee5e2e295be75fdc06753df1d33710c40ed7`
+-	Image ID: `sha256:cbdb74d2bc63f689901dd5baded7947dae5462bf9cde2232f908d39bbbf04caa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 ADD almalinux-10-kitten-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 CMD ["/bin/bash"]
-# Mon, 10 Aug 2026 18:56:59 GMT
+# Wed, 02 Sep 2026 22:13:55 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Mon, 10 Aug 2026 18:57:13 GMT
+# Wed, 02 Sep 2026 22:14:43 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 VOLUME [/data]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 WORKDIR /data
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 10 Aug 2026 18:57:16 GMT
+# Wed, 02 Sep 2026 22:14:46 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:e787432b3044759d693031c5b5b1f432cb4b7cc6c8f9d21577a5906dd5e538c5`  
-		Last Modified: Tue, 02 Jun 2026 19:04:29 GMT  
-		Size: 68.6 MB (68553003 bytes)  
+	-	`sha256:7129cd03b9724af185dcf2cb52631fe5fad4e6b40911de8df488e9cd8c2d9814`  
+		Last Modified: Wed, 02 Sep 2026 21:53:34 GMT  
+		Size: 69.2 MB (69236295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8690202e22d63aee3f470fe5286abe91c8577d95f74f07f1bf128a4a758d030f`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 18.9 MB (18883121 bytes)  
+	-	`sha256:9b06f588f907735ff54d242d317df11c188f12beffd10ff8aeeaafc9a2d200d5`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 33.8 MB (33792460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ea80e66bbafd656f1c12525f0738d3458475e21ba53f1a2facd2b3bf02365d1`  
-		Last Modified: Mon, 10 Aug 2026 18:57:39 GMT  
-		Size: 149.0 MB (149030082 bytes)  
+	-	`sha256:92136efa5b4b12756d4eb7a4fa078388568f95120ff98caf3acdf569add421bc`  
+		Last Modified: Wed, 02 Sep 2026 22:15:08 GMT  
+		Size: 149.0 MB (149030030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:751d079739291bf444e5a0005923bb3579dff0e832b8ce1693b10015103537d1`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 8.8 MB (8801576 bytes)  
+	-	`sha256:788e89321edc4ab5d3557a097f7579a2bc181644ce73a50b11d4be7fa0488fc5`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 8.9 MB (8868169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f8fe5fd1e9264c3dd421b5645351f514ff88b8881ebef9ea8734d3fa986e4d7`  
-		Last Modified: Mon, 10 Aug 2026 18:57:35 GMT  
+	-	`sha256:44f5c605cd9cd2a9218def5fea9514e0284e1664199f2fc168d287cb6fba1fe4`  
+		Last Modified: Wed, 02 Sep 2026 22:15:03 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b06340cd3efb0f4fa7bf19504ffe5f8af6b982d8599fdbe9fd1ecfc01286be9c`  
-		Last Modified: Mon, 10 Aug 2026 18:57:37 GMT  
+	-	`sha256:84e7cf2799dca0087a2bcf52b5ce208de19894ad869698223951f62ec90f1fa0`  
+		Last Modified: Wed, 02 Sep 2026 22:15:03 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f419a6ce2a3fdfa82874147db9e56d05d1e97feb15cc295792dfc5915834a5`  
-		Last Modified: Mon, 10 Aug 2026 18:57:37 GMT  
+	-	`sha256:0594b806131c05aa599d2ba6869a3f5e1644556ce0ea7a067f303e1c5c063dd1`  
+		Last Modified: Wed, 02 Sep 2026 22:15:05 GMT  
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9097abb2a397311a555b227558a33b48a96c38f15211709ac84106cd411dadbb`  
-		Last Modified: Mon, 10 Aug 2026 18:57:38 GMT  
-		Size: 506.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `crate:6.3.7` - unknown; unknown
-
-```console
-$ docker pull crate@sha256:92bf06a6e66890f7e48e73c167b8595df714fe152c0d41c76e67c1b3b1e9f706
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628058 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5403946f22e69860280a584d0966b21cec9233fc0661758d432cac8aeea339b6`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:6590fbf755951742f957721c6671a63947015365b562d051366dd07bed377045`  
-		Last Modified: Mon, 10 Aug 2026 18:57:36 GMT  
-		Size: 6.6 MB (6606714 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:bdd80dcb8c8bbe9fe7a2db2686b2c449bedeaadfc4dbee66e0c1d3b73d71dab8`  
-		Last Modified: Mon, 10 Aug 2026 18:57:35 GMT  
-		Size: 21.3 KB (21344 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `crate:6.3.7` - linux; arm64 variant v8
-
-```console
-$ docker pull crate@sha256:19d7ccdece76b0fd78804c1afb93c96eb8bcb87ff457f2c59c42ae37fd7cf62d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.5 MB (241513786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dda6c89527755bc3dab017710031cb73de09777b8b1771e7e0679be426c5f7ae`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["crate"]`
-
-```dockerfile
-# Tue, 02 Jun 2026 19:04:17 GMT
-ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:17 GMT
-CMD ["/bin/bash"]
-# Mon, 10 Aug 2026 18:56:34 GMT
-RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Mon, 10 Aug 2026 18:56:48 GMT
-RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENV CRATE_HEAP_SIZE=512M
-# Mon, 10 Aug 2026 18:56:51 GMT
-RUN mkdir -p /data/data /data/log # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-VOLUME [/data]
-# Mon, 10 Aug 2026 18:56:51 GMT
-WORKDIR /data
-# Mon, 10 Aug 2026 18:56:51 GMT
-EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
-# Mon, 10 Aug 2026 18:56:51 GMT
-COPY docker-entrypoint.sh / # buildkit
-# Mon, 10 Aug 2026 18:56:51 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 10 Aug 2026 18:56:51 GMT
-CMD ["crate"]
-```
-
--	Layers:
-	-	`sha256:f4e642e2dc39d48325d258aab2be76368a8810b551698a78f8de70b4d572f710`  
-		Last Modified: Tue, 02 Jun 2026 19:04:33 GMT  
-		Size: 67.1 MB (67133180 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bceecf48a3887b0cf2104ef8d0a4b37cf88f4c509de40b62145baf812f890c9e`  
-		Last Modified: Mon, 10 Aug 2026 18:57:11 GMT  
-		Size: 18.9 MB (18922739 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0fb802ba1dc97fd419a25eff137c3cf5820517b1bd7b18e701fca7458724e00`  
-		Last Modified: Mon, 10 Aug 2026 18:57:15 GMT  
-		Size: 146.7 MB (146658637 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03b223f5672e71b166e84010282fcc225ea32abe542f8c45394cb73d7fbc874f`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 8.8 MB (8797348 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc89376a20de7b214ca7bcdbe7559bb2da1064198ce5193348189967d84a8c8e`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 126.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72a1757757c9af506f9e2da1ee50d8631a9c647429f098140647ae5c03988861`  
-		Last Modified: Mon, 10 Aug 2026 18:57:11 GMT  
-		Size: 264.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abe7f0bd3aabc400b569f3f93dd00ad68e1b25f8b692bdb2f12232ee3f023bdc`  
-		Last Modified: Mon, 10 Aug 2026 18:57:12 GMT  
-		Size: 956.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a5ce6c9d30e1614db1a1e1123f15bc2f5f7a4c8fd0d4c643ae15c3a65ab242`  
-		Last Modified: Mon, 10 Aug 2026 18:57:12 GMT  
+	-	`sha256:e15f3502360dfb210a59e914f32621fd51729cc6b4667d45e546cae44aa8313e`  
+		Last Modified: Wed, 02 Sep 2026 22:15:05 GMT  
 		Size: 504.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.3.7` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:2f4143e7882c2b02570995c82a302bdb008dd9fcb43abf87ecd6188463194827
+$ docker pull crate@sha256:22242cc4a957dac0491ba793a88df161856f23a2cb4d9cfd81830b806086af13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6626095 bytes)**  
+-	Total Size: **6.6 MB (6614756 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:347aebef27b2eccfa8095745e422af44edc23e5101a9eb37dda90363f3364deb`
+-	Image ID: `sha256:12ce9e3fc6d41f780034962e332be72de5c0e479daa6444276daf21a368a25cb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e95a19f6e4da922c0e02d3cac7f5315a3094e54367371c7f2c2ea7eb84e8f6e9`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
-		Size: 6.6 MB (6604626 bytes)  
+	-	`sha256:e8d938d16a62e43ebaa67583f322256b9a041fdc15a65570cf08d6e733129657`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 6.6 MB (6593413 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5506824ddbfd5f69bc6bdcdf910a7d2de6d3e17c9b9784fda98269374cfc93b`  
-		Last Modified: Mon, 10 Aug 2026 18:57:10 GMT  
+	-	`sha256:6671a361f45daa3467d8c2c28c9e8baade1d3a568dfd92bc2771ddd3384f9056`  
+		Last Modified: Wed, 02 Sep 2026 22:15:04 GMT  
+		Size: 21.3 KB (21343 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `crate:6.3.7` - linux; arm64 variant v8
+
+```console
+$ docker pull crate@sha256:cf6818c7ba065f3ceb33b318572acaca3c3d3a003f57f8f35eb2bb2cc300af21
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **257.0 MB (257035603 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b339e48db1dc2adce1ad52d8069ce2d535ee1c25780e222f3a979cc20e511b9b`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["crate"]`
+
+```dockerfile
+# Wed, 02 Sep 2026 21:53:18 GMT
+ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
+# Wed, 02 Sep 2026 21:53:18 GMT
+CMD ["/bin/bash"]
+# Wed, 02 Sep 2026 22:16:55 GMT
+RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
+# Wed, 02 Sep 2026 22:17:08 GMT
+RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.3.7.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.3.7.tar.gz.asc crate-6.3.7.tar.gz     && rm -rf "$GNUPGHOME" crate-6.3.7.tar.gz.asc     && tar -xf crate-6.3.7.tar.gz -C /crate --strip-components=1     && rm crate-6.3.7.tar.gz # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+RUN python3 -m pip install 'crash==0.32.0' # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENV CRATE_HEAP_SIZE=512M
+# Wed, 02 Sep 2026 22:17:11 GMT
+RUN mkdir -p /data/data /data/log # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+VOLUME [/data]
+# Wed, 02 Sep 2026 22:17:11 GMT
+WORKDIR /data
+# Wed, 02 Sep 2026 22:17:11 GMT
+EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-04T09:34:22.717620+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.3.7
+# Wed, 02 Sep 2026 22:17:11 GMT
+COPY docker-entrypoint.sh / # buildkit
+# Wed, 02 Sep 2026 22:17:11 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Wed, 02 Sep 2026 22:17:11 GMT
+CMD ["crate"]
+```
+
+-	Layers:
+	-	`sha256:5c1c9e074ac4d1badb151e5e5a82b6884b85b4ce910263dca58c74961a6ee8ce`  
+		Last Modified: Wed, 02 Sep 2026 21:53:35 GMT  
+		Size: 67.8 MB (67808693 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fb11bb4bfc63b1ba41f27c2a44bffe389b14f7f34ff316ca7f64d3c8044bd2bf`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 33.7 MB (33699650 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9b16c42e37e96dccc800e4b1aca60f2d7988e81b2fe132ea12c813d311d911d`  
+		Last Modified: Wed, 02 Sep 2026 22:17:34 GMT  
+		Size: 146.7 MB (146658670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79599d3c1fe11e5106612ccb432439cc7c0a20730295e8dc5afe856304ffce55`  
+		Last Modified: Wed, 02 Sep 2026 22:17:31 GMT  
+		Size: 8.9 MB (8866721 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ffdbb7c04cd0d8c5bf191e759b64f262d8e4d7fd3ece52265180461f5780683`  
+		Last Modified: Wed, 02 Sep 2026 22:17:30 GMT  
+		Size: 124.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b5f7401fa7907ffbbb4274f87506e27fb0ea8fe0de60bcfa1ac4951298938f3c`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 261.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f2de3820e776d8c0033c365ab7682def00ec7a81e7db780133160e6283b9f502`  
+		Last Modified: Wed, 02 Sep 2026 22:17:32 GMT  
+		Size: 950.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3fdeb3b54de2fc16a2ac4adb8187f6636b77dc7830cd7edcb72f4526f40ee7cf`  
+		Last Modified: Wed, 02 Sep 2026 22:17:33 GMT  
+		Size: 502.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `crate:6.3.7` - unknown; unknown
+
+```console
+$ docker pull crate@sha256:53ef0593b9acd02e4a1b13df0a8962408e53da1e53a3312282a92b549f03e25a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.6 MB (6612794 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:78ee53bed4a7f6bb3fe571472829bb9a4aecedf3e72aeb709a5e79dd67642283`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9779a054853fec686922a5fff7390b566c48bddcf1ce3f9d6a7426181787f665`  
+		Last Modified: Wed, 02 Sep 2026 22:17:31 GMT  
+		Size: 6.6 MB (6591325 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2125a75e34bf6ae160d6f8f2688095badbeeee75f0e4ff258e57fa9d0b68651c`  
+		Last Modified: Wed, 02 Sep 2026 22:17:30 GMT  
 		Size: 21.5 KB (21469 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `crate:6.4`
 
 ```console
-$ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2af5ab98f2c8
+$ docker pull crate@sha256:b427b7c534f0203ea61d829cbd65d58619ad0b9232465e281b39af25ad0bd71a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -498,231 +498,231 @@ $ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2
 ### `crate:6.4` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:5715b7d501ea56a670193233d7ae06d2904295f2f43f83ffba316dd50275e55e
+$ docker pull crate@sha256:58b0a326e770f32daf9f1c3712174063162ebd9409d3a4d0ada6857af926a515
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.5 MB (245505189 bytes)**  
+-	Total Size: **261.1 MB (261109871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1a5c041f21b2ab71a9ccd0654d3272089b4e0edfee2735f54964281019b57`
+-	Image ID: `sha256:d48559a5adcd916706974638dbd081dea93d45290e70db2b531b03145ccfb27c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 ADD almalinux-10-kitten-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:15 GMT
+# Wed, 02 Sep 2026 22:13:55 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:27 GMT
+# Wed, 02 Sep 2026 22:14:00 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:e787432b3044759d693031c5b5b1f432cb4b7cc6c8f9d21577a5906dd5e538c5`  
-		Last Modified: Tue, 02 Jun 2026 19:04:29 GMT  
-		Size: 68.6 MB (68553003 bytes)  
+	-	`sha256:7129cd03b9724af185dcf2cb52631fe5fad4e6b40911de8df488e9cd8c2d9814`  
+		Last Modified: Wed, 02 Sep 2026 21:53:34 GMT  
+		Size: 69.2 MB (69236295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9de075094dc2d2b92d430ce14c1858dc98c526dfaea15d2ce574fff7084e2a9`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 18.9 MB (18883196 bytes)  
+	-	`sha256:9b06f588f907735ff54d242d317df11c188f12beffd10ff8aeeaafc9a2d200d5`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 33.8 MB (33792460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c1ca9760708ca21277e6cb29d271730ff2198f6b40056a5060277340467253`  
-		Last Modified: Fri, 21 Aug 2026 17:30:50 GMT  
-		Size: 149.2 MB (149210915 bytes)  
+	-	`sha256:9ad2f8fc56a9b4b3566e9bf539ebc3ec5e556e008eeadd9a5e22d55607000d99`  
+		Last Modified: Wed, 02 Sep 2026 22:14:25 GMT  
+		Size: 149.2 MB (149210973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcd1aa052a26c9f33bfbb6883518aacb42e8c5fb92f15abe52faedfdeb5ac571`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 8.9 MB (8856199 bytes)  
+	-	`sha256:d0890d3148ed39f05227953190e7c814937c58d5ef69c0c19e891406b5a5a9fa`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 8.9 MB (8868263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d53b6d091dd5cc0988ffe4a04287c59f782036d96f2658380a7d3b35a4f8eb5`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
-		Size: 125.0 B  
+	-	`sha256:39894ee03524ea545ef5847ad35a1185f9a630fdd6216e893def847734f92c14`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0c55464d31e9ef72de014b9ffd8c0a62063510776ad9e17cac2c726100056c2`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 262.0 B  
+	-	`sha256:9d776c64ee84e2f1194d4d9532bbc814f3a2b41d78278cb3e8eea8e16b20c662`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e6f82bcebbb1084a4dd75732dd0ada4e43f2a9fa8af98f40eb57dc7094eb68`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 953.0 B  
+	-	`sha256:f88881e3c092cd1f9e510891153ea606364322dd29061631e8fd8c585c082afb`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5de982051ee06f0e1a5ce1e58ea7a0aca6e8698966a467b3b7826b21b8b526d`  
-		Last Modified: Fri, 21 Aug 2026 17:30:49 GMT  
-		Size: 504.0 B  
+	-	`sha256:55fd9316cd7a1d6e2a52123afd1b1443df0c98cf5a9e1c07508327db6629ec32`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.4` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:aa65fbd3f3d4de6ec095b27e901d6f96a5ddf7258a16bd4bc2e4cbb71ad9364e
+$ docker pull crate@sha256:b39a388ec235eb47a8890a457472a9c70b2031ee43e6bc71db95013b58eb25e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628650 bytes)**  
+-	Total Size: **6.6 MB (6615349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5754bf9f520cb6e4259528a49b0072da92916cbf91b4e0dd3a4b8b70afefd0f2`
+-	Image ID: `sha256:77d3474b36caee9956177b9470f5bc079d8a977c0337a9a918cb20bf4c2fc41e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e86049a9583b814ad475f3b0a0d0c430b744d746fc223118d8cf27167b9a8db`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 6.6 MB (6607010 bytes)  
+	-	`sha256:c966ffc7a41f2ccea3815ee240bf0009fa516262e82bfdbe5ae8037ef3d2bfd0`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 6.6 MB (6593709 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9281c952966aec2257e1c87db0fd874b51f883f209541fd542235655e6f762da`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
+	-	`sha256:7be40e8247875e5ab7a4e962292b873ed86814c37b128283bd92a727f9114c7c`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
 		Size: 21.6 KB (21640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `crate:6.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull crate@sha256:9e52167539b1a4ae394037bc259599ee1eb1e23e37d16cb61f828ac2287c37a5
+$ docker pull crate@sha256:3aebea64d2a7263f74d1fb90fb4d74d4ff5014aa74b4cdc58b56b7cafd57a272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241744628 bytes)**  
+-	Total Size: **257.2 MB (257207689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e029a4e09828054e722ef9e0cfd980c7b11ad26e2671eede2b12d094fd376fd7`
+-	Image ID: `sha256:0a2eaa87363a3079171425df323dbaf11ef73ea11a9dbd725c32eab091759da5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:41 GMT
+# Wed, 02 Sep 2026 22:16:10 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:55 GMT
+# Wed, 02 Sep 2026 22:16:23 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:f4e642e2dc39d48325d258aab2be76368a8810b551698a78f8de70b4d572f710`  
-		Last Modified: Tue, 02 Jun 2026 19:04:33 GMT  
-		Size: 67.1 MB (67133180 bytes)  
+	-	`sha256:5c1c9e074ac4d1badb151e5e5a82b6884b85b4ce910263dca58c74961a6ee8ce`  
+		Last Modified: Wed, 02 Sep 2026 21:53:35 GMT  
+		Size: 67.8 MB (67808693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf5f0679193e743745202bacfb4bfe405bbbe78c74a2e502ae7a62bbc46c0df7`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 18.9 MB (18922999 bytes)  
+	-	`sha256:5822815a56e5c98836aed442024398e2231a88c9e1387e36985f33cbf43de75b`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
+		Size: 33.7 MB (33699866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6bc03887d327c6a59a06d8a231d4a170a7c1e4c1fecc2a305f514af639d8c66`  
-		Last Modified: Fri, 21 Aug 2026 17:31:22 GMT  
-		Size: 146.8 MB (146830699 bytes)  
+	-	`sha256:ffc925a150f17591108f9642c8e6fb53ada54a92276998f673a4c279f2ac09b9`  
+		Last Modified: Wed, 02 Sep 2026 22:16:49 GMT  
+		Size: 146.8 MB (146830738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c05b7a9c228380e14b5f34688cfac6809343c1ac8532bb67ed52fe32434b5e57`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 8.9 MB (8855872 bytes)  
+	-	`sha256:5c01d961b0eed6650ffa83177cdf8d9debebe51d2341c0e6f9d83367713bbd31`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 8.9 MB (8866513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744d4f4e9cfa15eca3152fc08147d815707299dfd148f33fd27bfc1e7540fe3e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:30e4181e50946a4f55130714d8c9493eb390e14680e6f06bc24bfeab253958b5`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84b2a9eb9574f8cff85af766dee8f6c7472ca2e49ccfef5761636170836a187e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:3f5fdf2249805ea31b8534f355a7d486176f9aba21f76b62cb57ba53250da345`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:284fb24b2662280d6edadfc4422e1d6f5b63218cf960578cf0531e24f85c0b93`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:ccd3ed769c1cea390728a036c1a3f6e86f75f108c8a278214a75e0da889a1a8c`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95aa00e46e83ac4ff31c7de0ef9fe69c13d7b411c741cccb442fdba08b8b0ccf`  
-		Last Modified: Fri, 21 Aug 2026 17:31:20 GMT  
-		Size: 504.0 B  
+	-	`sha256:454d5184d2009511d37c7c341892ad81b95ab92ba20e649b59d123609cc4f175`  
+		Last Modified: Wed, 02 Sep 2026 22:16:48 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.4` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:07e4c56528c0ef6779a43b3358348837e4fbfd14b2d2d0c748a63affdab7889d
+$ docker pull crate@sha256:673e471a9dc30060edce204608c7963e947c3e904de7c89e9a278e7344d72330
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6626711 bytes)**  
+-	Total Size: **6.6 MB (6613410 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63799ecc955140806c9031e8aa22b709a38a9aa62e739f27d3c01dd8fad78a1e`
+-	Image ID: `sha256:3d1d525eace4be899039ef0c4c90cebefe53123bdd38cf99e3c7c01d08df153f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced1dacf54741c39a93cb4a3d99d0b81b635e8cdd5e70c24b96e62fef11e7476`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 6.6 MB (6604934 bytes)  
+	-	`sha256:343b42125f56655069bfb292c9dad81bc42ec05eec75ffc4d06cc10dee601f69`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 6.6 MB (6591633 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb9c977b029ed11911ba3a5da45e7bced20fe124dd8e93b0e73977cba6a78d7d`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:495174eb7351f8815d700a80f2d4dcf14d654918a2d6aff2e7e26b26ce9a4fa1`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 21.8 KB (21777 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `crate:6.4.3`
 
 ```console
-$ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2af5ab98f2c8
+$ docker pull crate@sha256:b427b7c534f0203ea61d829cbd65d58619ad0b9232465e281b39af25ad0bd71a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -735,231 +735,231 @@ $ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2
 ### `crate:6.4.3` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:5715b7d501ea56a670193233d7ae06d2904295f2f43f83ffba316dd50275e55e
+$ docker pull crate@sha256:58b0a326e770f32daf9f1c3712174063162ebd9409d3a4d0ada6857af926a515
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.5 MB (245505189 bytes)**  
+-	Total Size: **261.1 MB (261109871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1a5c041f21b2ab71a9ccd0654d3272089b4e0edfee2735f54964281019b57`
+-	Image ID: `sha256:d48559a5adcd916706974638dbd081dea93d45290e70db2b531b03145ccfb27c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 ADD almalinux-10-kitten-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:15 GMT
+# Wed, 02 Sep 2026 22:13:55 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:27 GMT
+# Wed, 02 Sep 2026 22:14:00 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:e787432b3044759d693031c5b5b1f432cb4b7cc6c8f9d21577a5906dd5e538c5`  
-		Last Modified: Tue, 02 Jun 2026 19:04:29 GMT  
-		Size: 68.6 MB (68553003 bytes)  
+	-	`sha256:7129cd03b9724af185dcf2cb52631fe5fad4e6b40911de8df488e9cd8c2d9814`  
+		Last Modified: Wed, 02 Sep 2026 21:53:34 GMT  
+		Size: 69.2 MB (69236295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9de075094dc2d2b92d430ce14c1858dc98c526dfaea15d2ce574fff7084e2a9`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 18.9 MB (18883196 bytes)  
+	-	`sha256:9b06f588f907735ff54d242d317df11c188f12beffd10ff8aeeaafc9a2d200d5`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 33.8 MB (33792460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c1ca9760708ca21277e6cb29d271730ff2198f6b40056a5060277340467253`  
-		Last Modified: Fri, 21 Aug 2026 17:30:50 GMT  
-		Size: 149.2 MB (149210915 bytes)  
+	-	`sha256:9ad2f8fc56a9b4b3566e9bf539ebc3ec5e556e008eeadd9a5e22d55607000d99`  
+		Last Modified: Wed, 02 Sep 2026 22:14:25 GMT  
+		Size: 149.2 MB (149210973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcd1aa052a26c9f33bfbb6883518aacb42e8c5fb92f15abe52faedfdeb5ac571`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 8.9 MB (8856199 bytes)  
+	-	`sha256:d0890d3148ed39f05227953190e7c814937c58d5ef69c0c19e891406b5a5a9fa`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 8.9 MB (8868263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d53b6d091dd5cc0988ffe4a04287c59f782036d96f2658380a7d3b35a4f8eb5`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
-		Size: 125.0 B  
+	-	`sha256:39894ee03524ea545ef5847ad35a1185f9a630fdd6216e893def847734f92c14`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0c55464d31e9ef72de014b9ffd8c0a62063510776ad9e17cac2c726100056c2`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 262.0 B  
+	-	`sha256:9d776c64ee84e2f1194d4d9532bbc814f3a2b41d78278cb3e8eea8e16b20c662`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e6f82bcebbb1084a4dd75732dd0ada4e43f2a9fa8af98f40eb57dc7094eb68`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 953.0 B  
+	-	`sha256:f88881e3c092cd1f9e510891153ea606364322dd29061631e8fd8c585c082afb`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5de982051ee06f0e1a5ce1e58ea7a0aca6e8698966a467b3b7826b21b8b526d`  
-		Last Modified: Fri, 21 Aug 2026 17:30:49 GMT  
-		Size: 504.0 B  
+	-	`sha256:55fd9316cd7a1d6e2a52123afd1b1443df0c98cf5a9e1c07508327db6629ec32`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.4.3` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:aa65fbd3f3d4de6ec095b27e901d6f96a5ddf7258a16bd4bc2e4cbb71ad9364e
+$ docker pull crate@sha256:b39a388ec235eb47a8890a457472a9c70b2031ee43e6bc71db95013b58eb25e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628650 bytes)**  
+-	Total Size: **6.6 MB (6615349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5754bf9f520cb6e4259528a49b0072da92916cbf91b4e0dd3a4b8b70afefd0f2`
+-	Image ID: `sha256:77d3474b36caee9956177b9470f5bc079d8a977c0337a9a918cb20bf4c2fc41e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e86049a9583b814ad475f3b0a0d0c430b744d746fc223118d8cf27167b9a8db`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 6.6 MB (6607010 bytes)  
+	-	`sha256:c966ffc7a41f2ccea3815ee240bf0009fa516262e82bfdbe5ae8037ef3d2bfd0`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 6.6 MB (6593709 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9281c952966aec2257e1c87db0fd874b51f883f209541fd542235655e6f762da`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
+	-	`sha256:7be40e8247875e5ab7a4e962292b873ed86814c37b128283bd92a727f9114c7c`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
 		Size: 21.6 KB (21640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `crate:6.4.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull crate@sha256:9e52167539b1a4ae394037bc259599ee1eb1e23e37d16cb61f828ac2287c37a5
+$ docker pull crate@sha256:3aebea64d2a7263f74d1fb90fb4d74d4ff5014aa74b4cdc58b56b7cafd57a272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241744628 bytes)**  
+-	Total Size: **257.2 MB (257207689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e029a4e09828054e722ef9e0cfd980c7b11ad26e2671eede2b12d094fd376fd7`
+-	Image ID: `sha256:0a2eaa87363a3079171425df323dbaf11ef73ea11a9dbd725c32eab091759da5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:41 GMT
+# Wed, 02 Sep 2026 22:16:10 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:55 GMT
+# Wed, 02 Sep 2026 22:16:23 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:f4e642e2dc39d48325d258aab2be76368a8810b551698a78f8de70b4d572f710`  
-		Last Modified: Tue, 02 Jun 2026 19:04:33 GMT  
-		Size: 67.1 MB (67133180 bytes)  
+	-	`sha256:5c1c9e074ac4d1badb151e5e5a82b6884b85b4ce910263dca58c74961a6ee8ce`  
+		Last Modified: Wed, 02 Sep 2026 21:53:35 GMT  
+		Size: 67.8 MB (67808693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf5f0679193e743745202bacfb4bfe405bbbe78c74a2e502ae7a62bbc46c0df7`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 18.9 MB (18922999 bytes)  
+	-	`sha256:5822815a56e5c98836aed442024398e2231a88c9e1387e36985f33cbf43de75b`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
+		Size: 33.7 MB (33699866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6bc03887d327c6a59a06d8a231d4a170a7c1e4c1fecc2a305f514af639d8c66`  
-		Last Modified: Fri, 21 Aug 2026 17:31:22 GMT  
-		Size: 146.8 MB (146830699 bytes)  
+	-	`sha256:ffc925a150f17591108f9642c8e6fb53ada54a92276998f673a4c279f2ac09b9`  
+		Last Modified: Wed, 02 Sep 2026 22:16:49 GMT  
+		Size: 146.8 MB (146830738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c05b7a9c228380e14b5f34688cfac6809343c1ac8532bb67ed52fe32434b5e57`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 8.9 MB (8855872 bytes)  
+	-	`sha256:5c01d961b0eed6650ffa83177cdf8d9debebe51d2341c0e6f9d83367713bbd31`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 8.9 MB (8866513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744d4f4e9cfa15eca3152fc08147d815707299dfd148f33fd27bfc1e7540fe3e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:30e4181e50946a4f55130714d8c9493eb390e14680e6f06bc24bfeab253958b5`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84b2a9eb9574f8cff85af766dee8f6c7472ca2e49ccfef5761636170836a187e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:3f5fdf2249805ea31b8534f355a7d486176f9aba21f76b62cb57ba53250da345`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:284fb24b2662280d6edadfc4422e1d6f5b63218cf960578cf0531e24f85c0b93`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:ccd3ed769c1cea390728a036c1a3f6e86f75f108c8a278214a75e0da889a1a8c`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95aa00e46e83ac4ff31c7de0ef9fe69c13d7b411c741cccb442fdba08b8b0ccf`  
-		Last Modified: Fri, 21 Aug 2026 17:31:20 GMT  
-		Size: 504.0 B  
+	-	`sha256:454d5184d2009511d37c7c341892ad81b95ab92ba20e649b59d123609cc4f175`  
+		Last Modified: Wed, 02 Sep 2026 22:16:48 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:6.4.3` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:07e4c56528c0ef6779a43b3358348837e4fbfd14b2d2d0c748a63affdab7889d
+$ docker pull crate@sha256:673e471a9dc30060edce204608c7963e947c3e904de7c89e9a278e7344d72330
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6626711 bytes)**  
+-	Total Size: **6.6 MB (6613410 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63799ecc955140806c9031e8aa22b709a38a9aa62e739f27d3c01dd8fad78a1e`
+-	Image ID: `sha256:3d1d525eace4be899039ef0c4c90cebefe53123bdd38cf99e3c7c01d08df153f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced1dacf54741c39a93cb4a3d99d0b81b635e8cdd5e70c24b96e62fef11e7476`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 6.6 MB (6604934 bytes)  
+	-	`sha256:343b42125f56655069bfb292c9dad81bc42ec05eec75ffc4d06cc10dee601f69`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 6.6 MB (6591633 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb9c977b029ed11911ba3a5da45e7bced20fe124dd8e93b0e73977cba6a78d7d`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:495174eb7351f8815d700a80f2d4dcf14d654918a2d6aff2e7e26b26ce9a4fa1`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 21.8 KB (21777 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2af5ab98f2c8
+$ docker pull crate@sha256:b427b7c534f0203ea61d829cbd65d58619ad0b9232465e281b39af25ad0bd71a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -972,223 +972,223 @@ $ docker pull crate@sha256:d26c4c6c35834a00be523eae8e1a17af9f55096a954d735c67cc2
 ### `crate:latest` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:5715b7d501ea56a670193233d7ae06d2904295f2f43f83ffba316dd50275e55e
+$ docker pull crate@sha256:58b0a326e770f32daf9f1c3712174063162ebd9409d3a4d0ada6857af926a515
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.5 MB (245505189 bytes)**  
+-	Total Size: **261.1 MB (261109871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6b1a5c041f21b2ab71a9ccd0654d3272089b4e0edfee2735f54964281019b57`
+-	Image ID: `sha256:d48559a5adcd916706974638dbd081dea93d45290e70db2b531b03145ccfb27c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 ADD almalinux-10-kitten-default-amd64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:12 GMT
+# Wed, 02 Sep 2026 21:53:17 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:15 GMT
+# Wed, 02 Sep 2026 22:13:55 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:27 GMT
+# Wed, 02 Sep 2026 22:14:00 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:30 GMT
+# Wed, 02 Sep 2026 22:14:03 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:e787432b3044759d693031c5b5b1f432cb4b7cc6c8f9d21577a5906dd5e538c5`  
-		Last Modified: Tue, 02 Jun 2026 19:04:29 GMT  
-		Size: 68.6 MB (68553003 bytes)  
+	-	`sha256:7129cd03b9724af185dcf2cb52631fe5fad4e6b40911de8df488e9cd8c2d9814`  
+		Last Modified: Wed, 02 Sep 2026 21:53:34 GMT  
+		Size: 69.2 MB (69236295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9de075094dc2d2b92d430ce14c1858dc98c526dfaea15d2ce574fff7084e2a9`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 18.9 MB (18883196 bytes)  
+	-	`sha256:9b06f588f907735ff54d242d317df11c188f12beffd10ff8aeeaafc9a2d200d5`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 33.8 MB (33792460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0c1ca9760708ca21277e6cb29d271730ff2198f6b40056a5060277340467253`  
-		Last Modified: Fri, 21 Aug 2026 17:30:50 GMT  
-		Size: 149.2 MB (149210915 bytes)  
+	-	`sha256:9ad2f8fc56a9b4b3566e9bf539ebc3ec5e556e008eeadd9a5e22d55607000d99`  
+		Last Modified: Wed, 02 Sep 2026 22:14:25 GMT  
+		Size: 149.2 MB (149210973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcd1aa052a26c9f33bfbb6883518aacb42e8c5fb92f15abe52faedfdeb5ac571`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 8.9 MB (8856199 bytes)  
+	-	`sha256:d0890d3148ed39f05227953190e7c814937c58d5ef69c0c19e891406b5a5a9fa`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 8.9 MB (8868263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d53b6d091dd5cc0988ffe4a04287c59f782036d96f2658380a7d3b35a4f8eb5`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
-		Size: 125.0 B  
+	-	`sha256:39894ee03524ea545ef5847ad35a1185f9a630fdd6216e893def847734f92c14`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0c55464d31e9ef72de014b9ffd8c0a62063510776ad9e17cac2c726100056c2`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 262.0 B  
+	-	`sha256:9d776c64ee84e2f1194d4d9532bbc814f3a2b41d78278cb3e8eea8e16b20c662`  
+		Last Modified: Wed, 02 Sep 2026 22:14:22 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e6f82bcebbb1084a4dd75732dd0ada4e43f2a9fa8af98f40eb57dc7094eb68`  
-		Last Modified: Fri, 21 Aug 2026 17:30:48 GMT  
-		Size: 953.0 B  
+	-	`sha256:f88881e3c092cd1f9e510891153ea606364322dd29061631e8fd8c585c082afb`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5de982051ee06f0e1a5ce1e58ea7a0aca6e8698966a467b3b7826b21b8b526d`  
-		Last Modified: Fri, 21 Aug 2026 17:30:49 GMT  
-		Size: 504.0 B  
+	-	`sha256:55fd9316cd7a1d6e2a52123afd1b1443df0c98cf5a9e1c07508327db6629ec32`  
+		Last Modified: Wed, 02 Sep 2026 22:14:23 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:latest` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:aa65fbd3f3d4de6ec095b27e901d6f96a5ddf7258a16bd4bc2e4cbb71ad9364e
+$ docker pull crate@sha256:b39a388ec235eb47a8890a457472a9c70b2031ee43e6bc71db95013b58eb25e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628650 bytes)**  
+-	Total Size: **6.6 MB (6615349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5754bf9f520cb6e4259528a49b0072da92916cbf91b4e0dd3a4b8b70afefd0f2`
+-	Image ID: `sha256:77d3474b36caee9956177b9470f5bc079d8a977c0337a9a918cb20bf4c2fc41e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e86049a9583b814ad475f3b0a0d0c430b744d746fc223118d8cf27167b9a8db`  
-		Last Modified: Fri, 21 Aug 2026 17:30:47 GMT  
-		Size: 6.6 MB (6607010 bytes)  
+	-	`sha256:c966ffc7a41f2ccea3815ee240bf0009fa516262e82bfdbe5ae8037ef3d2bfd0`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
+		Size: 6.6 MB (6593709 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9281c952966aec2257e1c87db0fd874b51f883f209541fd542235655e6f762da`  
-		Last Modified: Fri, 21 Aug 2026 17:30:46 GMT  
+	-	`sha256:7be40e8247875e5ab7a4e962292b873ed86814c37b128283bd92a727f9114c7c`  
+		Last Modified: Wed, 02 Sep 2026 22:14:21 GMT  
 		Size: 21.6 KB (21640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `crate:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull crate@sha256:9e52167539b1a4ae394037bc259599ee1eb1e23e37d16cb61f828ac2287c37a5
+$ docker pull crate@sha256:3aebea64d2a7263f74d1fb90fb4d74d4ff5014aa74b4cdc58b56b7cafd57a272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241744628 bytes)**  
+-	Total Size: **257.2 MB (257207689 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e029a4e09828054e722ef9e0cfd980c7b11ad26e2671eede2b12d094fd376fd7`
+-	Image ID: `sha256:0a2eaa87363a3079171425df323dbaf11ef73ea11a9dbd725c32eab091759da5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Tue, 02 Jun 2026 19:04:17 GMT
+# Wed, 02 Sep 2026 21:53:18 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 17:30:41 GMT
+# Wed, 02 Sep 2026 22:16:10 GMT
 RUN dnf install --nodocs --assumeyes gzip python3 python3-pip shadow-utils tar util-linux gnupg     && dnf clean all     && rm -rf /var/cache/yum # buildkit
-# Fri, 21 Aug 2026 17:30:55 GMT
+# Wed, 02 Sep 2026 22:16:23 GMT
 RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-6.4.3.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-6.4.3.tar.gz.asc crate-6.4.3.tar.gz     && rm -rf "$GNUPGHOME" crate-6.4.3.tar.gz.asc     && tar -xf crate-6.4.3.tar.gz -C /crate --strip-components=1     && rm crate-6.4.3.tar.gz # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN python3 -m pip install 'crash==0.32.0' # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 RUN mkdir -p /data/data /data/log # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 VOLUME [/data]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 WORKDIR /data
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 EXPOSE map[4200/tcp:{} 4300/tcp:{} 5432/tcp:{}]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2026-08-19T11:57:38.146976+00:00 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=6.4.3
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Aug 2026 17:30:58 GMT
+# Wed, 02 Sep 2026 22:16:27 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:f4e642e2dc39d48325d258aab2be76368a8810b551698a78f8de70b4d572f710`  
-		Last Modified: Tue, 02 Jun 2026 19:04:33 GMT  
-		Size: 67.1 MB (67133180 bytes)  
+	-	`sha256:5c1c9e074ac4d1badb151e5e5a82b6884b85b4ce910263dca58c74961a6ee8ce`  
+		Last Modified: Wed, 02 Sep 2026 21:53:35 GMT  
+		Size: 67.8 MB (67808693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf5f0679193e743745202bacfb4bfe405bbbe78c74a2e502ae7a62bbc46c0df7`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 18.9 MB (18922999 bytes)  
+	-	`sha256:5822815a56e5c98836aed442024398e2231a88c9e1387e36985f33cbf43de75b`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
+		Size: 33.7 MB (33699866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6bc03887d327c6a59a06d8a231d4a170a7c1e4c1fecc2a305f514af639d8c66`  
-		Last Modified: Fri, 21 Aug 2026 17:31:22 GMT  
-		Size: 146.8 MB (146830699 bytes)  
+	-	`sha256:ffc925a150f17591108f9642c8e6fb53ada54a92276998f673a4c279f2ac09b9`  
+		Last Modified: Wed, 02 Sep 2026 22:16:49 GMT  
+		Size: 146.8 MB (146830738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c05b7a9c228380e14b5f34688cfac6809343c1ac8532bb67ed52fe32434b5e57`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 8.9 MB (8855872 bytes)  
+	-	`sha256:5c01d961b0eed6650ffa83177cdf8d9debebe51d2341c0e6f9d83367713bbd31`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 8.9 MB (8866513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744d4f4e9cfa15eca3152fc08147d815707299dfd148f33fd27bfc1e7540fe3e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:30e4181e50946a4f55130714d8c9493eb390e14680e6f06bc24bfeab253958b5`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84b2a9eb9574f8cff85af766dee8f6c7472ca2e49ccfef5761636170836a187e`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:3f5fdf2249805ea31b8534f355a7d486176f9aba21f76b62cb57ba53250da345`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 263.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:284fb24b2662280d6edadfc4422e1d6f5b63218cf960578cf0531e24f85c0b93`  
-		Last Modified: Fri, 21 Aug 2026 17:31:19 GMT  
+	-	`sha256:ccd3ed769c1cea390728a036c1a3f6e86f75f108c8a278214a75e0da889a1a8c`  
+		Last Modified: Wed, 02 Sep 2026 22:16:47 GMT  
 		Size: 954.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95aa00e46e83ac4ff31c7de0ef9fe69c13d7b411c741cccb442fdba08b8b0ccf`  
-		Last Modified: Fri, 21 Aug 2026 17:31:20 GMT  
-		Size: 504.0 B  
+	-	`sha256:454d5184d2009511d37c7c341892ad81b95ab92ba20e649b59d123609cc4f175`  
+		Last Modified: Wed, 02 Sep 2026 22:16:48 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `crate:latest` - unknown; unknown
 
 ```console
-$ docker pull crate@sha256:07e4c56528c0ef6779a43b3358348837e4fbfd14b2d2d0c748a63affdab7889d
+$ docker pull crate@sha256:673e471a9dc30060edce204608c7963e947c3e904de7c89e9a278e7344d72330
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6626711 bytes)**  
+-	Total Size: **6.6 MB (6613410 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63799ecc955140806c9031e8aa22b709a38a9aa62e739f27d3c01dd8fad78a1e`
+-	Image ID: `sha256:3d1d525eace4be899039ef0c4c90cebefe53123bdd38cf99e3c7c01d08df153f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ced1dacf54741c39a93cb4a3d99d0b81b635e8cdd5e70c24b96e62fef11e7476`  
-		Last Modified: Fri, 21 Aug 2026 17:31:18 GMT  
-		Size: 6.6 MB (6604934 bytes)  
+	-	`sha256:343b42125f56655069bfb292c9dad81bc42ec05eec75ffc4d06cc10dee601f69`  
+		Last Modified: Wed, 02 Sep 2026 22:16:46 GMT  
+		Size: 6.6 MB (6591633 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb9c977b029ed11911ba3a5da45e7bced20fe124dd8e93b0e73977cba6a78d7d`  
-		Last Modified: Fri, 21 Aug 2026 17:31:17 GMT  
+	-	`sha256:495174eb7351f8815d700a80f2d4dcf14d654918a2d6aff2e7e26b26ce9a4fa1`  
+		Last Modified: Wed, 02 Sep 2026 22:16:45 GMT  
 		Size: 21.8 KB (21777 bytes)  
 		MIME: application/vnd.in-toto+json
