@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a189a67926d572e06dd72f31ff7e296d4e73d8024de3cf43c56f7bf233e134b6`
-- Created: `2026-08-31T18:23:33.396968078Z`
-- Virtual Size: ~ 120.21 Mb  
+- Image ID: `sha256:2f5eb601f0cfbe5633cc72e33f11dde0919767b7ae89abc061c0ee69d939691e`
+- Created: `2026-08-31T20:32:46.120012586Z`
+- Virtual Size: ~ 127.4 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Entrypoint: `["container-entrypoint.sh"]`
 - Command: `["php-fpm"]`
 - Environment:
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.9.tar.xz.asc`
-  - `PHP_SHA256=0db7855f25bcd0ab1d592cdb35e284d6f6a5d2ae0f6f621122e364cc39b708f4`
+  - `PHP_VERSION=8.5.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.10.tar.xz.asc`
+  - `PHP_SHA256=6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957`
   - `YOURLS_VERSION=1.10.6`
   - `YOURLS_SHA256=95549b8463c67a88eaa93f5dd8079599bc895f5ca047001ce385d1afdda26563`
 
@@ -121,7 +121,7 @@ apk-tools-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-3.0.6-r0 installed size:
-106 KiB
+112 KiB
 
 apk-tools-3.0.6-r0 license:
 GPL-2.0-only
@@ -138,7 +138,7 @@ argon2-libs-20190702-r5 webpage:
 https://github.com/P-H-C/phc-winner-argon2
 
 argon2-libs-20190702-r5 installed size:
-49 KiB
+41 KiB
 
 argon2-libs-20190702-r5 license:
 Apache-2.0 OR CC0-1.0
@@ -155,7 +155,7 @@ bash-5.3.9-r1 webpage:
 https://www.gnu.org/software/bash/bash.html
 
 bash-5.3.9-r1 installed size:
-1349 KiB
+1344 KiB
 
 bash-5.3.9-r1 license:
 GPL-3.0-or-later
@@ -172,7 +172,7 @@ brotli-libs-1.2.0-r1 webpage:
 https://github.com/google/brotli
 
 brotli-libs-1.2.0-r1 installed size:
-908 KiB
+957 KiB
 
 brotli-libs-1.2.0-r1 license:
 MIT
@@ -189,7 +189,7 @@ busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
 busybox-1.37.0-r31 installed size:
-809 KiB
+794 KiB
 
 busybox-1.37.0-r31 license:
 GPL-2.0-only
@@ -223,7 +223,7 @@ c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
 c-ares-1.34.8-r0 installed size:
-245 KiB
+237 KiB
 
 c-ares-1.34.8-r0 license:
 MIT
@@ -240,7 +240,7 @@ ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20260611-r0 installed size:
-210 KiB
+207 KiB
 
 ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
@@ -274,7 +274,7 @@ curl-8.21.0-r0 webpage:
 https://curl.se/
 
 curl-8.21.0-r0 installed size:
-276 KiB
+273 KiB
 
 curl-8.21.0-r0 license:
 curl
@@ -291,7 +291,7 @@ gnu-libiconv-libs-1.18-r0 webpage:
 https://www.gnu.org/software/libiconv
 
 gnu-libiconv-libs-1.18-r0 installed size:
-1066 KiB
+1063 KiB
 
 gnu-libiconv-libs-1.18-r0 license:
 LGPL-2.1-or-later
@@ -308,7 +308,7 @@ libapk-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 libapk-3.0.6-r0 installed size:
-277 KiB
+270 KiB
 
 libapk-3.0.6-r0 license:
 GPL-2.0-only
@@ -318,16 +318,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-3870 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -342,7 +342,7 @@ libcurl-8.21.0-r0 webpage:
 https://curl.se/
 
 libcurl-8.21.0-r0 installed size:
-719 KiB
+709 KiB
 
 libcurl-8.21.0-r0 license:
 curl
@@ -359,7 +359,7 @@ libgcc-15.2.0-r5 webpage:
 https://gcc.gnu.org
 
 libgcc-15.2.0-r5 installed size:
-205 KiB
+169 KiB
 
 libgcc-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -393,7 +393,7 @@ libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
 libncursesw-6.6_p20260516-r0 installed size:
-325 KiB
+334 KiB
 
 libncursesw-6.6_p20260516-r0 license:
 X11
@@ -410,7 +410,7 @@ libpsl-0.21.5-r3 webpage:
 https://rockdaboot.github.io/libpsl
 
 libpsl-0.21.5-r3 installed size:
-69 KiB
+73 KiB
 
 libpsl-0.21.5-r3 license:
 MIT
@@ -427,7 +427,7 @@ libsodium-1.0.22-r0 webpage:
 https://github.com/jedisct1/libsodium
 
 libsodium-1.0.22-r0 installed size:
-502 KiB
+407 KiB
 
 libsodium-1.0.22-r0 license:
 ISC
@@ -437,16 +437,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
-832 KiB
+libssl3-3.5.8-r0 installed size:
+819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -461,7 +461,7 @@ libunistring-1.4.2-r0 webpage:
 https://www.gnu.org/software/libunistring/
 
 libunistring-1.4.2-r0 installed size:
-1853 KiB
+1877 KiB
 
 libunistring-1.4.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
@@ -478,7 +478,7 @@ libxml2-2.13.9-r2 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
 libxml2-2.13.9-r2 installed size:
-1018 KiB
+1046 KiB
 
 libxml2-2.13.9-r2 license:
 MIT
@@ -495,7 +495,7 @@ musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-1.2.6-r2 installed size:
-657 KiB
+654 KiB
 
 musl-1.2.6-r2 license:
 MIT
@@ -512,7 +512,7 @@ musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-utils-1.2.6-r2 installed size:
-44 KiB
+54 KiB
 
 musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
@@ -563,7 +563,7 @@ oniguruma-6.9.10-r0 webpage:
 https://github.com/kkos/oniguruma
 
 oniguruma-6.9.10-r0 installed size:
-540 KiB
+547 KiB
 
 oniguruma-6.9.10-r0 license:
 BSD-2-Clause
@@ -573,16 +573,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
-751 KiB
+openssl-3.5.8-r0 installed size:
+801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -597,7 +597,7 @@ readline-8.3.3-r1 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
 readline-8.3.3-r1 installed size:
-257 KiB
+292 KiB
 
 readline-8.3.3-r1 license:
 GPL-3.0-or-later
@@ -624,16 +624,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
-1758 KiB
+sqlite-libs-3.53.4-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
@@ -648,7 +648,7 @@ ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
 ssl_client-1.37.0-r31 installed size:
-13 KiB
+14 KiB
 
 ssl_client-1.37.0-r31 license:
 GPL-2.0-only
@@ -665,7 +665,7 @@ tar-1.35-r5 webpage:
 https://www.gnu.org/software/tar/
 
 tar-1.35-r5 installed size:
-396 KiB
+399 KiB
 
 tar-1.35-r5 license:
 GPL-3.0-or-later
@@ -682,7 +682,7 @@ xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
 xz-5.8.3-r0 installed size:
-180 KiB
+162 KiB
 
 xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
@@ -699,7 +699,7 @@ xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
 xz-libs-5.8.3-r0 installed size:
-253 KiB
+221 KiB
 
 xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
@@ -716,7 +716,7 @@ zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
 zlib-1.3.2-r0 installed size:
-101 KiB
+105 KiB
 
 zlib-1.3.2-r0 license:
 Zlib
@@ -733,7 +733,7 @@ zstd-libs-1.5.7-r2 webpage:
 https://facebook.github.io/zstd/
 
 zstd-libs-1.5.7-r2 installed size:
-717 KiB
+697 KiB
 
 zstd-libs-1.5.7-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
