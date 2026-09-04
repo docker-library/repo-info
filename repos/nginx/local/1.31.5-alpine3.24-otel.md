@@ -1,20 +1,20 @@
-# `nginx:1.31.4-alpine-otel`
+# `nginx:1.31.5-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53d131a12f2798d71a2ed829b7a7269f394ab0e8d8b35e3a40ed36d8bf575384`
-- Created: `2026-08-19T20:52:20.731801003Z`
-- Virtual Size: ~ 107.27 Mb  
+- Image ID: `sha256:48c2279191946b01df72376d6dcd5f995e92724269f2c6ed4c9d193712eaa92c`
+- Created: `2026-09-02T21:48:13.166911206Z`
+- Virtual Size: ~ 113.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.4`
+  - `NGINX_VERSION=1.31.5`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=1.0.0`
+  - `NJS_VERSION=1.0.1`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.4.1`
   - `OTEL_VERSION=0.1.2`
@@ -1352,16 +1352,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.21.0-r0 description:
+curl-8.22.0-r0 description:
 URL retrieval utility and library
 
-curl-8.21.0-r0 webpage:
+curl-8.22.0-r0 webpage:
 https://curl.se/
 
-curl-8.21.0-r0 installed size:
-273 KiB
+curl-8.22.0-r0 installed size:
+278 KiB
 
-curl-8.21.0-r0 license:
+curl-8.22.0-r0 license:
 curl
 
 ```
@@ -1590,16 +1590,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1607,16 +1607,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -1658,16 +1658,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1981,16 +1981,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -2389,16 +2389,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.4-r1 description:
+nginx-1.31.5-r1 description:
 High performance web server
 
-nginx-1.31.4-r1 webpage:
+nginx-1.31.5-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.4-r1 installed size:
-2793 KiB
+nginx-1.31.5-r1 installed size:
+2835 KiB
 
-nginx-1.31.4-r1 license:
+nginx-1.31.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2406,16 +2406,16 @@ nginx-1.31.4-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.4.0.4.1-r1 description:
+nginx-module-acme-1.31.5.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.4.0.4.1-r1 webpage:
+nginx-module-acme-1.31.5.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.4.0.4.1-r1 installed size:
+nginx-module-acme-1.31.5.0.4.1-r1 installed size:
 8167 KiB
 
-nginx-module-acme-1.31.4.0.4.1-r1 license:
+nginx-module-acme-1.31.5.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2423,16 +2423,16 @@ nginx-module-acme-1.31.4.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.4-r1 description:
+nginx-module-geoip-1.31.5-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.4-r1 webpage:
+nginx-module-geoip-1.31.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.4-r1 installed size:
+nginx-module-geoip-1.31.5-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.31.4-r1 license:
+nginx-module-geoip-1.31.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2440,16 +2440,16 @@ nginx-module-geoip-1.31.4-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.4-r1 description:
+nginx-module-image-filter-1.31.5-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.4-r1 webpage:
+nginx-module-image-filter-1.31.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.4-r1 installed size:
+nginx-module-image-filter-1.31.5-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.4-r1 license:
+nginx-module-image-filter-1.31.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-image-filter-1.31.4-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.4.1.0.0-r1 description:
+nginx-module-njs-1.31.5.1.0.1-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.4.1.0.0-r1 webpage:
+nginx-module-njs-1.31.5.1.0.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.4.1.0.0-r1 installed size:
-9840 KiB
+nginx-module-njs-1.31.5.1.0.1-r1 installed size:
+9867 KiB
 
-nginx-module-njs-1.31.4.1.0.0-r1 license:
+nginx-module-njs-1.31.5.1.0.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2474,16 +2474,16 @@ nginx-module-njs-1.31.4.1.0.0-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.31.4.0.1.2-r1 description:
+nginx-module-otel-1.31.5.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.31.4.0.1.2-r1 webpage:
+nginx-module-otel-1.31.5.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.31.4.0.1.2-r1 installed size:
+nginx-module-otel-1.31.5.0.1.2-r1 installed size:
 600 KiB
 
-nginx-module-otel-1.31.4.0.1.2-r1 license:
+nginx-module-otel-1.31.5.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2491,16 +2491,16 @@ nginx-module-otel-1.31.4.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.4-r1 description:
+nginx-module-xslt-1.31.5-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.4-r1 webpage:
+nginx-module-xslt-1.31.5-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.4-r1 installed size:
+nginx-module-xslt-1.31.5-r1 installed size:
 47 KiB
 
-nginx-module-xslt-1.31.4-r1 license:
+nginx-module-xslt-1.31.5-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2508,16 +2508,16 @@ nginx-module-xslt-1.31.4-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```

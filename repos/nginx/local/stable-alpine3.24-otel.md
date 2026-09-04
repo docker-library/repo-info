@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3adf8ec0a65c9b3840bd2692db677fb6ef84791045610fd5b284da7ae7860ca`
-- Created: `2026-07-16T00:18:39.98794121Z`
-- Virtual Size: ~ 106.87 Mb  
+- Image ID: `sha256:0106f3d93c4e977043a851a0079037dbb950c6140f1d55094dbe713ca33da430`
+- Created: `2026-09-02T21:48:29.933188917Z`
+- Virtual Size: ~ 112.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `NGINX_VERSION=1.30.4`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=1.0.0`
+  - `NJS_VERSION=1.0.1`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.4.1`
   - `OTEL_VERSION=0.1.2`
@@ -1352,16 +1352,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.21.0-r0 description:
+curl-8.22.0-r0 description:
 URL retrieval utility and library
 
-curl-8.21.0-r0 webpage:
+curl-8.22.0-r0 webpage:
 https://curl.se/
 
-curl-8.21.0-r0 installed size:
-273 KiB
+curl-8.22.0-r0 installed size:
+278 KiB
 
-curl-8.21.0-r0 license:
+curl-8.22.0-r0 license:
 curl
 
 ```
@@ -1590,16 +1590,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1607,16 +1607,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -1658,16 +1658,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1981,16 +1981,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-image-filter-1.30.4-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.30.4.1.0.0-r1 description:
+nginx-module-njs-1.30.4.1.0.1-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.30.4.1.0.0-r1 webpage:
+nginx-module-njs-1.30.4.1.0.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.30.4.1.0.0-r1 installed size:
-9396 KiB
+nginx-module-njs-1.30.4.1.0.1-r1 installed size:
+9423 KiB
 
-nginx-module-njs-1.30.4.1.0.0-r1 license:
+nginx-module-njs-1.30.4.1.0.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2508,16 +2508,16 @@ nginx-module-xslt-1.30.4-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
