@@ -1,16 +1,15 @@
-# `golang:1.27.0-trixie`
+# `golang:tip-20260829-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccb6f18cbf10486608b5fea50834a621b9fada5dd869841f08c486ba307155a3`
-- Created: `2026-08-25T02:18:33.848049727Z`
-- Virtual Size: ~ 885.2 Mb  
+- Image ID: `sha256:584b464838f8cbe802d83c9bd5bdf9e5a624904cb374fb51c386967732443d82`
+- Created: `2026-09-01T23:34:24.521369332Z`
+- Virtual Size: ~ 925.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.27.0`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
@@ -2189,11 +2188,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.101-1`
+### `dpkg` source package: `linux=6.12.107-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.101-1`
+- `linux-libc-dev=6.12.107-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2207,17 +2206,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.101-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.dsc' linux_6.12.101-1.dsc 290418 SHA256:5f4710f4c60b932526f04d72fcf0cc6febc561dbaac36f5784ee2179a6be36f0
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101.orig.tar.xz' linux_6.12.101.orig.tar.xz 151366788 SHA256:ba6df356e6c9aeca8930556d2732eb502e168815a31269d74eb0d9d0c170fd89
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.101-1.debian.tar.xz' linux_6.12.101-1.debian.tar.xz 1874152 SHA256:eb563ea1a4e67b918936356092f07b57f3aa67c73cb41ec276f9ec1eaa0254b2
+$ apt-get source -qq --print-uris linux=6.12.107-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.107-1.dsc' linux_6.12.107-1.dsc 290418 SHA256:00f5874a383295a3237321cf59a0f172495084f16cb3dac24ee5aae6649d809a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.107.orig.tar.xz' linux_6.12.107.orig.tar.xz 151398592 SHA256:efc76d3c78a5d65f42724118c437d11db1c9f6309a5f024ee9a8b1978fdc6919
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.107-1.debian.tar.xz' linux_6.12.107-1.debian.tar.xz 1886412 SHA256:d8c003ecac7c54f59c69dc61258f93d937dce90e70f53bb5a34dd58db13028ed
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.101-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.101-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.101-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.107-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.107-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.107-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
