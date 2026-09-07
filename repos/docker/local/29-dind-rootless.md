@@ -1,18 +1,18 @@
-# `docker:29.7.2-dind-rootless`
+# `docker:29.8.0-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c413369499ca1b6f70c5033c546abacb462885408be35123f371303d80e00674`
-- Created: `2026-08-31T21:12:37.47615619Z`
-- Virtual Size: ~ 429.9 Mb  
+- Image ID: `sha256:9a99a5d9ef2c5d50042d2937ba6836b782f5001ca93995add006241a71c69639`
+- Created: `2026-09-04T22:10:08.072113444Z`
+- Virtual Size: ~ 410.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.7.2`
-  - `DOCKER_BUILDX_VERSION=0.36.1`
-  - `DOCKER_COMPOSE_VERSION=5.5.0`
+  - `DOCKER_VERSION=29.8.0`
+  - `DOCKER_BUILDX_VERSION=0.37.0`
+  - `DOCKER_COMPOSE_VERSION=5.5.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -120,23 +120,6 @@ MIT
 
 ```
 
-### `apk` package: `btrfs-progs`
-
-```console
-btrfs-progs-6.17.1-r1 description:
-BTRFS filesystem utilities
-
-btrfs-progs-6.17.1-r1 webpage:
-https://btrfs.wiki.kernel.org
-
-btrfs-progs-6.17.1-r1 installed size:
-1588 KiB
-
-btrfs-progs-6.17.1-r1 license:
-GPL-2.0-or-later
-
-```
-
 ### `apk` package: `busybox`
 
 ```console
@@ -219,74 +202,6 @@ ca-certificates-bundle-20260611-r0 installed size:
 
 ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
-
-```
-
-### `apk` package: `e2fsprogs`
-
-```console
-e2fsprogs-1.47.4-r0 description:
-Standard Ext2/3/4 filesystem utilities
-
-e2fsprogs-1.47.4-r0 webpage:
-https://e2fsprogs.sourceforge.net/
-
-e2fsprogs-1.47.4-r0 installed size:
-387 KiB
-
-e2fsprogs-1.47.4-r0 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-
-```
-
-### `apk` package: `e2fsprogs-extra`
-
-```console
-e2fsprogs-extra-1.47.4-r0 description:
-Ext2/3/4 filesystem extra utilities
-
-e2fsprogs-extra-1.47.4-r0 webpage:
-https://e2fsprogs.sourceforge.net/
-
-e2fsprogs-extra-1.47.4-r0 installed size:
-575 KiB
-
-e2fsprogs-extra-1.47.4-r0 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-
-```
-
-### `apk` package: `e2fsprogs-libs`
-
-```console
-e2fsprogs-libs-1.47.4-r0 description:
-Standard Ext2/3/4 filesystem utilities (libraries)
-
-e2fsprogs-libs-1.47.4-r0 webpage:
-https://e2fsprogs.sourceforge.net/
-
-e2fsprogs-libs-1.47.4-r0 installed size:
-441 KiB
-
-e2fsprogs-libs-1.47.4-r0 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
-
-```
-
-### `apk` package: `eudev-libs`
-
-```console
-eudev-libs-3.2.14-r6 description:
-Dynamic library to access udev device information
-
-eudev-libs-3.2.14-r6 webpage:
-https://github.com/eudev-project/eudev
-
-eudev-libs-3.2.14-r6 installed size:
-53 KiB
-
-eudev-libs-3.2.14-r6 license:
-GPL-2.0-or-later
 
 ```
 
@@ -406,23 +321,6 @@ glib-2.88.1-r1 installed size:
 
 glib-2.88.1-r1 license:
 LGPL-2.1-or-later
-
-```
-
-### `apk` package: `inih`
-
-```console
-inih-62-r0 description:
-Simple .INI file parser for embedded systems
-
-inih-62-r0 webpage:
-https://github.com/benhoyt/inih
-
-inih-62-r0 installed size:
-13 KiB
-
-inih-62-r0 license:
-BSD-3-Clause
 
 ```
 
@@ -684,16 +582,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -752,16 +650,16 @@ GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1123,23 +1021,6 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `lzo`
-
-```console
-lzo-2.10-r5 description:
-LZO -- a real-time data compression library
-
-lzo-2.10-r5 webpage:
-https://www.oberhumer.com/opensource/lzo
-
-lzo-2.10-r5 installed size:
-217 KiB
-
-lzo-2.10-r5 license:
-GPL-2.0-or-later
-
-```
-
 ### `apk` package: `musl`
 
 ```console
@@ -1279,16 +1160,16 @@ Apache-2.0
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
@@ -1412,23 +1293,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `userspace-rcu`
-
-```console
-userspace-rcu-0.15.3-r0 description:
-Userspace RCU (read-copy-update) library
-
-userspace-rcu-0.15.3-r0 webpage:
-https://liburcu.org/
-
-userspace-rcu-0.15.3-r0 installed size:
-206 KiB
-
-userspace-rcu-0.15.3-r0 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `utmps-libs`
 
 ```console
@@ -1443,23 +1307,6 @@ utmps-libs-0.1.3.3-r0 installed size:
 
 utmps-libs-0.1.3.3-r0 license:
 ISC
-
-```
-
-### `apk` package: `xfsprogs`
-
-```console
-xfsprogs-7.0.1-r0 description:
-XFS filesystem utilities
-
-xfsprogs-7.0.1-r0 webpage:
-https://xfs.org/index.php/Main_Page
-
-xfsprogs-7.0.1-r0 installed size:
-1207 KiB
-
-xfsprogs-7.0.1-r0 license:
-LGPL-2.1-or-later
 
 ```
 
