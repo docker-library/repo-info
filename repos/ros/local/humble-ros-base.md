@@ -98,8 +98,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.4.14
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA256:8d1b2748a6b5c99c9fd56dfadde280b85616dd67d22f7ca44f86225fa688a98c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA256:317040c4ab15f20cc77460126fd78745814a81d73a6c37d0559876977a7dfe35
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA512:16c3eee24d40d94e9e11f70002564331a35373db693f75cfefa028767b9bcd80307dda99c52953173d575ba6724fe7a7fb37724eb2dd44bf87db17ff36a94ef8
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA512:b1b8ce83cead480ab2c6fa2cbc9ed7384ab9d1dbcca437b96947653f16e7ef96df7d04269db20fa915325033845f5aaf7429f35741ada18e0a9b3b0cbf285cc9
 ```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
@@ -1895,9 +1895,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgd2=2.3.0-2ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0.orig.tar.gz' libgd2_2.3.0.orig.tar.gz 3102749 SHA256:32590e361a1ea6c93915d2448ab0041792c11bae7b18ee812514fe08b2c6a342
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.debian.tar.xz' libgd2_2.3.0-2ubuntu2.3.debian.tar.xz 35264 SHA256:3f0105b5901026dde27f377bccbf56e974bb387986c452b385ccd85f23a97367
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.dsc' libgd2_2.3.0-2ubuntu2.3.dsc 2371 SHA256:20c0f60eac2b51700072bb22aee5790a9b5cac9b44859df5c70ddf90086598d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0.orig.tar.gz' libgd2_2.3.0.orig.tar.gz 3102749 SHA512:1ffdbe41f24fcdb22f5b195b8f1a22650a3dc30a798c23a7ee1a93acfdb70c2608d97ff908a01246ad44e1cfc13dbd20cc006d7a25b882907489daa1880db30b
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.debian.tar.xz' libgd2_2.3.0-2ubuntu2.3.debian.tar.xz 35264 SHA512:e7dfcd3c44a13f3c85d8d0e011b94c022d13c6bb37c069e4c7f8a70f45b19c90a828052520bd61e49cb5e4637ab22245fdbbb97f4001f9f1b39e7a9689049d16
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.dsc' libgd2_2.3.0-2ubuntu2.3.dsc 2371 SHA512:dc97e4b404e1b5f3f2723b9dfca188a9948295bd2fecb91cbcadc195e5f9e059f60318f8996a6364fb103b0fc5f719e9193c0afae5096ecc28c31e51c7a42b55
 ```
 
 ### `dpkg` source package: `libgpg-error=1.43-3`
@@ -2172,10 +2172,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.5.3-2ubuntu3~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA256:59065c8733364725e9721ba48c3a99bbc52af921daf48df4b1e012fbc7b10a76
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA256:cc1cbe9d9eb6a67b78de107eb37b2bc8d7599e3c1d36699ae2528db489cb5d44
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA256:cd582c847ced99c97f487b3f4a851bc1f2bed9065f90729d90dc8721b6dc483e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA256:e7f514056a28794c6a7067cd0881b5bf03e918578df3418eea6752cbfa83fd13
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA512:00170fe2360f0c0b33293dccfcc33e98fabb99619f34ecefbcc92bfdaa249ba91e7433226545b842b71542a3b224b6e980ea2ae656c4addf07e84a0def1870a0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA512:c879872448471fb1e01617145473254a0536ade1ff1e12871793631c3c63199cd46cb48317b4d596294d5cb187ff1fe9b58dc20ce52a89bfc9234a566bf8eb85
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA512:2eca56dc8497a403e87f9ff4efe4f12b37e0443de6fad5884669f156f19590572cfaeae6b3d1073bd1a64188fa563699a7454de80c1999e8240c93c6029a4e72
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA512:332a059782f315e840f19f756baebbc4f6021ee6a1c0dc53ecfc36df5385e30d6b00363a73e16978a46cd099f552f697189b1313c2ce96fa2b652eaf320eac68
 ```
 
 ### `dpkg` source package: `libselinux=3.3-1build2`
@@ -3569,9 +3569,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pygments=2.11.2+dfsg-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg.orig.tar.gz' pygments_2.11.2+dfsg.orig.tar.gz 1380213 SHA256:625d9097060b3efc7f47261d889c1af52f74ffb4f8fb20a63e7549d2f9c32d1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.debian.tar.xz' pygments_2.11.2+dfsg-2ubuntu0.1.debian.tar.xz 9768 SHA256:c3b775dcebf019eeae8ed744bcc8835085ac3d53d763fda0fa5422176dc62f93
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.dsc' pygments_2.11.2+dfsg-2ubuntu0.1.dsc 2493 SHA256:a515bfba5b135980ac16d60ff8eab83506692423b0b430f3aac5faca095c6a1f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg.orig.tar.gz' pygments_2.11.2+dfsg.orig.tar.gz 1380213 SHA512:82cea14de2e9871c8ffdfe773b1a4bd14d546a99b49d47736d652d1d3a23c54e2efc30aa78153de24cf9babc9405372e69fe4627064e27f13a75325a22e335ff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.debian.tar.xz' pygments_2.11.2+dfsg-2ubuntu0.1.debian.tar.xz 9768 SHA512:63bb977975f7a5375e063d050f1ab4fb26bf943ebd8fe85aeab70980aa107d6ff0eaf4e945a1f0b3d34e92f262bb5e39dbc79222d095d748b27ecda139651030
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.dsc' pygments_2.11.2+dfsg-2ubuntu0.1.dsc 2493 SHA512:15b98783fe5c7c9c2cf159bd6e2b971dfb85995e4bf9be97ac165736e2e22b8f0bec951cebb61eed936b85c46a10ea636c0ab1b308e931dbf4214c6eb292ad7d
 ```
 
 ### `dpkg` source package: `pyparsing=2.4.7-1`

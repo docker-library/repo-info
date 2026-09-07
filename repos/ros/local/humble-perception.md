@@ -198,8 +198,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.4.14
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA256:8d1b2748a6b5c99c9fd56dfadde280b85616dd67d22f7ca44f86225fa688a98c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA256:317040c4ab15f20cc77460126fd78745814a81d73a6c37d0559876977a7dfe35
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA512:16c3eee24d40d94e9e11f70002564331a35373db693f75cfefa028767b9bcd80307dda99c52953173d575ba6724fe7a7fb37724eb2dd44bf87db17ff36a94ef8
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA512:b1b8ce83cead480ab2c6fa2cbc9ed7384ab9d1dbcca437b96947653f16e7ef96df7d04269db20fa915325033845f5aaf7429f35741ada18e0a9b3b0cbf285cc9
 ```
 
 ### `dpkg` source package: `argon2=0~20171227-0.3`
@@ -2579,9 +2579,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gstreamer1.0=1.20.3-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3.orig.tar.xz' gstreamer1.0_1.20.3.orig.tar.xz 2681088 SHA256:607daf64bbbd5fb18af9d17e21c0d22c4d702fffe83b23cb22d1b1af2ca23a2a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz 45248 SHA256:0ee631a2e31ff72d4011c7a620fdfb2cc937157d88d93128cfce646a542a32c1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.dsc' gstreamer1.0_1.20.3-0ubuntu1.1.dsc 2968 SHA256:bfa22278b17f2816ae13dd56710784326786c65aaf4b8c3403d1d730a97ae689
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3.orig.tar.xz' gstreamer1.0_1.20.3.orig.tar.xz 2681088 SHA512:e93f9fbf2d7a839dcbe2030ed16dd53eb250741db7c2f1cea396c23e4fabf9a0caff6be4babf7c10aec4b56dc8319a970b1b0bfa6eea2e36aed3e6e1265d9278
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz 45248 SHA512:a77666adbad0054f9ccd118b1151dd54f7b62ce42ccf7ad9757652d125dd7040701a7fd68893ccfa4275760aa09f37e5a7f9aecbe86e19b6bf33ab464488e388
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.dsc' gstreamer1.0_1.20.3-0ubuntu1.1.dsc 2968 SHA512:874b7438bd8021858a321ff07a81783541c79faf416c888f96b3368c48dc38229cc0266a1d1c2b022a499ffcfa6549420bae1bf9cb2f6747a78a44e12677053e
 ```
 
 ### `dpkg` source package: `gtk+3.0=3.24.33-1ubuntu2.2`
@@ -3796,9 +3796,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgd2=2.3.0-2ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0.orig.tar.gz' libgd2_2.3.0.orig.tar.gz 3102749 SHA256:32590e361a1ea6c93915d2448ab0041792c11bae7b18ee812514fe08b2c6a342
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.debian.tar.xz' libgd2_2.3.0-2ubuntu2.3.debian.tar.xz 35264 SHA256:3f0105b5901026dde27f377bccbf56e974bb387986c452b385ccd85f23a97367
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.dsc' libgd2_2.3.0-2ubuntu2.3.dsc 2371 SHA256:20c0f60eac2b51700072bb22aee5790a9b5cac9b44859df5c70ddf90086598d4
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0.orig.tar.gz' libgd2_2.3.0.orig.tar.gz 3102749 SHA512:1ffdbe41f24fcdb22f5b195b8f1a22650a3dc30a798c23a7ee1a93acfdb70c2608d97ff908a01246ad44e1cfc13dbd20cc006d7a25b882907489daa1880db30b
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.debian.tar.xz' libgd2_2.3.0-2ubuntu2.3.debian.tar.xz 35264 SHA512:e7dfcd3c44a13f3c85d8d0e011b94c022d13c6bb37c069e4c7f8a70f45b19c90a828052520bd61e49cb5e4637ab22245fdbbb97f4001f9f1b39e7a9689049d16
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.dsc' libgd2_2.3.0-2ubuntu2.3.dsc 2371 SHA512:dc97e4b404e1b5f3f2723b9dfca188a9948295bd2fecb91cbcadc195e5f9e059f60318f8996a6364fb103b0fc5f719e9193c0afae5096ecc28c31e51c7a42b55
 ```
 
 ### `dpkg` source package: `libgeotiff=1.7.0-2build1`
@@ -4523,14 +4523,9 @@ Licenses: (parsed from: `/usr/share/doc/librabbitmq4/copyright`)
 - `BSD-Author`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librabbitmq=0.10.0-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librabbitmq/librabbitmq_0.10.0.orig.tar.gz' librabbitmq_0.10.0.orig.tar.gz 145361 SHA512:52a1194fab2dc8698ed065d63898e32aa004a4d68080d4aaf5cb7148cc28ad967283f7a99910d7f054cbba92b487b3a67b839b6f0bd88486ef9be043c9517d4c
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librabbitmq/librabbitmq_0.10.0-1ubuntu2.1.debian.tar.xz' librabbitmq_0.10.0-1ubuntu2.1.debian.tar.xz 14284 SHA512:58ea804e98731fdcd3d77a3b57868914888eacc5cb47ae0ad0136b6f1fdb067927b06be2774929988e6a7b5001e61961ce4b33ab9b3f646b9d6a53ced5137075
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librabbitmq/librabbitmq_0.10.0-1ubuntu2.1.dsc' librabbitmq_0.10.0-1ubuntu2.1.dsc 2199 SHA512:6843f799401bcbef239632789c6fdefe33f2759452ea5febc6c6183d6a883b06b9299f09fdaaf0dbef58dc47b2eb339621aa1c2f1a8f32dc354882bed9121115
-```
 
 ### `dpkg` source package: `libraw1394=2.1.2-2build2`
 
@@ -4591,9 +4586,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris librsvg=2.52.5+dfsg-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg.orig.tar.xz' librsvg_2.52.5+dfsg.orig.tar.xz 20813024 SHA256:66d01957678559bec1c23404aa5eab90d68f034ba0826a2bd48dd5fd106d86a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg-3ubuntu0.2.debian.tar.xz' librsvg_2.52.5+dfsg-3ubuntu0.2.debian.tar.xz 37684 SHA256:b997f1bb479d2bb45e19fefe1c60b2da0629dac21797040206fe9e32dc5077b6
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg-3ubuntu0.2.dsc' librsvg_2.52.5+dfsg-3ubuntu0.2.dsc 3126 SHA256:dca942d1851a69f4df53f9e43bd60bed8ba8af189eeb71543a25218881aabd6f
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg.orig.tar.xz' librsvg_2.52.5+dfsg.orig.tar.xz 20813024 SHA512:641dcd149ce0d5117947e3fcb04efd41591812953ec4b12ba350ce9950ed4bcb26726a78df9d317e6bd557e6fd463867476205b5e6720a9a15bd1bcfcb6f7ffe
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg-3ubuntu0.2.debian.tar.xz' librsvg_2.52.5+dfsg-3ubuntu0.2.debian.tar.xz 37684 SHA512:171868ea6d28e98afb6af4c75eb05de3b85a7adb21ae5ac36d8720fb86fa30769795a2487a2979e735662a6da9fcc4ce41a2caa128aa5044892904885e9c7e0a
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.52.5%2bdfsg-3ubuntu0.2.dsc' librsvg_2.52.5+dfsg-3ubuntu0.2.dsc 3126 SHA512:de08f845fd7b27d57369a01ec7a6d15063af5fbc39d35d306c40354b2254dca4e2721f98bec5ed64a1e2d1772a2df7436ef32a55cde8850b09ecfb1b637f1734
 ```
 
 ### `dpkg` source package: `librttopo=1.1.0-2`
@@ -4631,10 +4626,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.5.3-2ubuntu3~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA256:59065c8733364725e9721ba48c3a99bbc52af921daf48df4b1e012fbc7b10a76
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA256:cc1cbe9d9eb6a67b78de107eb37b2bc8d7599e3c1d36699ae2528db489cb5d44
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA256:cd582c847ced99c97f487b3f4a851bc1f2bed9065f90729d90dc8721b6dc483e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA256:e7f514056a28794c6a7067cd0881b5bf03e918578df3418eea6752cbfa83fd13
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA512:00170fe2360f0c0b33293dccfcc33e98fabb99619f34ecefbcc92bfdaa249ba91e7433226545b842b71542a3b224b6e980ea2ae656c4addf07e84a0def1870a0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA512:c879872448471fb1e01617145473254a0536ade1ff1e12871793631c3c63199cd46cb48317b4d596294d5cb187ff1fe9b58dc20ce52a89bfc9234a566bf8eb85
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA512:2eca56dc8497a403e87f9ff4efe4f12b37e0443de6fad5884669f156f19590572cfaeae6b3d1073bd1a64188fa563699a7454de80c1999e8240c93c6029a4e72
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA512:332a059782f315e840f19f756baebbc4f6021ee6a1c0dc53ecfc36df5385e30d6b00363a73e16978a46cd099f552f697189b1313c2ce96fa2b652eaf320eac68
 ```
 
 ### `dpkg` source package: `libselinux=3.3-1build2`
@@ -5875,9 +5870,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lvm2=2.03.11-2.1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11.orig.tar.xz' lvm2_2.03.11.orig.tar.xz 1699012 SHA256:7ef41edc65c4b807c5667ac7e9c371016d0db2a641812b334571acc0e025d86c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11-2.1ubuntu5.debian.tar.xz' lvm2_2.03.11-2.1ubuntu5.debian.tar.xz 45012 SHA256:aae130e69d61f05b9c518fed7e5b0d566c12e1983efd21dcd5177bfe54c93cfc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11-2.1ubuntu5.dsc' lvm2_2.03.11-2.1ubuntu5.dsc 3224 SHA256:8f751f6bd8baebf4fde3f4412ee0d41c0b9676535deebb3029423f7f24667381
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11.orig.tar.xz' lvm2_2.03.11.orig.tar.xz 1699012 SHA512:80befad86e93dea1d3eeb299d864ac5c48880bf196a80898199bf09dc6bc1a30b3c8acc86efed43e8ff62a20280b60b853a0c5772eadf6aa2fbcfd79aad0372d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11-2.1ubuntu5.debian.tar.xz' lvm2_2.03.11-2.1ubuntu5.debian.tar.xz 45012 SHA512:2aa2a1682df64da3cb38f442cebfb68eaae6e52ee46f03d42fe6472be06533cbad8380146649635962a35ba42cb426675bf1bb9908918e76e97ca40ccefbe8bb
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.03.11-2.1ubuntu5.dsc' lvm2_2.03.11-2.1ubuntu5.dsc 3224 SHA512:b6f644fc4179809e0737aa8d5ca1dc8e4b2b334b9ef10be605463f176c9a46e81f4baf7755d7a1049a1f78a644d71f593f83eb699ec39acf4e148f7b89708c3a
 ```
 
 ### `dpkg` source package: `lxml=4.8.0-1build1`
@@ -6171,10 +6166,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mpg123=1.29.3-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3.orig.tar.bz2' mpg123_1.29.3.orig.tar.bz2 1069979 SHA256:963885d8cc77262f28b77187c7d189e32195e64244de2530b798ddf32183e847
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3.orig.tar.bz2.asc' mpg123_1.29.3.orig.tar.bz2.asc 833 SHA256:b805d96f2affd4a43d6252f85cd1aa5cc9dd2c68fb29ff903f44fa3ccc129e53
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3-1ubuntu0.1.debian.tar.xz' mpg123_1.29.3-1ubuntu0.1.debian.tar.xz 33676 SHA256:6bf685a9c05195d6f724623663a19d5a17d1fc2d8e8567e7b8791c521dc65ccc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3-1ubuntu0.1.dsc' mpg123_1.29.3-1ubuntu0.1.dsc 2717 SHA256:2fc0f75dab7c2f70d6be8a83b9e456c5315ee3fb078934d21b1cf4412045e3d2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3.orig.tar.bz2' mpg123_1.29.3.orig.tar.bz2 1069979 SHA512:0d8db63f9bae1507887bc5241a56abccfeb767b7ba8362eb0fce9de2f63369e57fdd6f25a953f8ef5f9ead4f400237db51914816e278566fdf8e6f205ebca5d6
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3.orig.tar.bz2.asc' mpg123_1.29.3.orig.tar.bz2.asc 833 SHA512:cc258dca5fac129eaf93339934118d3da7c6bfefd4637c9478cea4cd004a412848afc15f70628936ba8687df35af8c89fb87fa095164ed7d5d92ca10e04cdc28
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3-1ubuntu0.1.debian.tar.xz' mpg123_1.29.3-1ubuntu0.1.debian.tar.xz 33676 SHA512:d0e1b68842bc44fe0ad2758289e62cbc3d5dca8eb10366bb6187141976af4d336bde003f165fa8cc46d56cbcbd4eb178c16be8e82df65c61e838893330dfca58
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/mpg123_1.29.3-1ubuntu0.1.dsc' mpg123_1.29.3-1ubuntu0.1.dsc 2717 SHA512:8b85bcdc1f97400f12501dbe6cfc105f666debcafc04b5189b51df9b4fb14acaf741d03f832681080e4670040bc3242d82d5763ff98be1ecf453d2dcf22f49a5
 ```
 
 ### `dpkg` source package: `mpi-defaults=1.14`
@@ -7583,9 +7578,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pygments=2.11.2+dfsg-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg.orig.tar.gz' pygments_2.11.2+dfsg.orig.tar.gz 1380213 SHA256:625d9097060b3efc7f47261d889c1af52f74ffb4f8fb20a63e7549d2f9c32d1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.debian.tar.xz' pygments_2.11.2+dfsg-2ubuntu0.1.debian.tar.xz 9768 SHA256:c3b775dcebf019eeae8ed744bcc8835085ac3d53d763fda0fa5422176dc62f93
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.dsc' pygments_2.11.2+dfsg-2ubuntu0.1.dsc 2493 SHA256:a515bfba5b135980ac16d60ff8eab83506692423b0b430f3aac5faca095c6a1f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg.orig.tar.gz' pygments_2.11.2+dfsg.orig.tar.gz 1380213 SHA512:82cea14de2e9871c8ffdfe773b1a4bd14d546a99b49d47736d652d1d3a23c54e2efc30aa78153de24cf9babc9405372e69fe4627064e27f13a75325a22e335ff
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.debian.tar.xz' pygments_2.11.2+dfsg-2ubuntu0.1.debian.tar.xz 9768 SHA512:63bb977975f7a5375e063d050f1ab4fb26bf943ebd8fe85aeab70980aa107d6ff0eaf4e945a1f0b3d34e92f262bb5e39dbc79222d095d748b27ecda139651030
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pygments/pygments_2.11.2%2bdfsg-2ubuntu0.1.dsc' pygments_2.11.2+dfsg-2ubuntu0.1.dsc 2493 SHA512:15b98783fe5c7c9c2cf159bd6e2b971dfb85995e4bf9be97ac165736e2e22b8f0bec951cebb61eed936b85c46a10ea636c0ab1b308e931dbf4214c6eb292ad7d
 ```
 
 ### `dpkg` source package: `pyparsing=2.4.7-1`
