@@ -372,20 +372,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-3
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.dsc' bash_5.3-3.dsc 2141 SHA256:8675ad0389cda5d0494f4b6b1e08a03c83a55a44e303e02d91a65dc58749b522
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.debian.tar.xz' bash_5.3-3.debian.tar.xz 91936 SHA256:d2542e1e6c33511266814496916a72a7a5aa50f690fba7f37a1308fc73f6407a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.3-3/
 
-- https://sources.debian.net/src/bash/5.3-3/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.47-2`
 
@@ -1004,20 +997,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.195-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.195-1.dsc' elfutils_0.195-1.dsc 3416 SHA256:d409570c357705e5898be9a73930c7519a7716ab3be85100d6e01526c5a4184f
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.195.orig.tar.bz2' elfutils_0.195.orig.tar.bz2 12032640 SHA256:37629fdf7f1f3dc2818e138fca2b8094177d6c2d0f701d3bb650a561218dc026
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.195-1.debian.tar.xz' elfutils_0.195-1.debian.tar.xz 44136 SHA256:0b21fae15e07c807cc0f8511747139a4c8db1a0476bdbbe6b2cd0ee082dccb29
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.195-1/
 
-- https://sources.debian.net/src/elfutils/0.195-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.195-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.195-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.8.3-1`
 
@@ -2346,20 +2332,13 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.1.1-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.1.1-1.dsc' libde265_1.1.1-1.dsc 2217 SHA256:3f19a2f0acdc853aeda89c6404abb1fefc8e7401ecaf733405ef227aa0895aa0
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.1.1.orig.tar.gz' libde265_1.1.1.orig.tar.gz 315566 SHA256:fd48a927e94ed74fc7ce8829d222b9d8599fcbfe8b6448ba66705babc56ab219
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.1.1-1.debian.tar.xz' libde265_1.1.1-1.debian.tar.xz 136296 SHA256:871384ea40d46bb94089303697c4ace91d65621a495c8ec32550bead547ae78d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libde265/1.1.1-1/
 
-- https://sources.debian.net/src/libde265/1.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.25-1`
 
@@ -3857,21 +3836,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.8-1
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8-1.dsc' mariadb_11.8.8-1.dsc 5637 SHA256:92d2ce77abb8a895977299ef878969749b88c22cf8f53b1661a31188f7514aa4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8.orig.tar.gz' mariadb_11.8.8.orig.tar.gz 119402982 SHA256:bd023a4959faf012db7f0ebfc0d276729e67e5443df193163f98d80fdfc524c9
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8.orig.tar.gz.asc' mariadb_11.8.8.orig.tar.gz.asc 833 SHA256:12601a392e99fc15abd5c03abe3b5217d50e8a8578fc93fd3a6cd871552e6065
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8-1.debian.tar.xz' mariadb_11.8.8-1.debian.tar.xz 303436 SHA256:01fff8e0ce19920d371f11a2eb623e3a72952ea415602186816621ddf3c48fb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.8-1/
 
-- https://sources.debian.net/src/mariadb/1:11.8.8-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-1`
 
@@ -4927,20 +4898,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.14-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.14=3.14.7-1
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.7-1.dsc' python3.14_3.14.7-1.dsc 4082 SHA256:cc0e605221af514ef83d0445ef163c8ef05fcc53b54cf7b71ccedbbd28dbea90
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.7.orig.tar.xz' python3.14_3.14.7.orig.tar.xz 24053924 SHA256:3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.7-1.debian.tar.xz' python3.14_3.14.7-1.debian.tar.xz 223864 SHA256:43187e8f368dfdcb77ef1f879c50dcacfb1438ca01657859f2a06cfaf9c3cd2a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.14/3.14.7-1/
 
-- https://sources.debian.net/src/python3.14/3.14.7-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.14/3.14.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.14/3.14.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -5043,20 +5007,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.4.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.dsc' rust-sequoia-sqv_1.4.0-1.dsc 2636 SHA256:d6c265539bb6653b3ad45201264a5e3fb5372cb92ff699301a79aedf50974fa2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0.orig.tar.gz' rust-sequoia-sqv_1.4.0.orig.tar.gz 164331 SHA256:5d3b8b08019ad65c180e029d596f25830586ff28915c83d060ff720d7e698e62
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.debian.tar.xz' rust-sequoia-sqv_1.4.0-1.debian.tar.xz 4072 SHA256:2ae2dfa28e30323ce2ddc0b8fbc814d076303f767b9f912903d293244d91bd71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-3`
 
@@ -5297,20 +5254,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/shar
 - `Unlicense`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=261.2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2-1.dsc' systemd_261.2-1.dsc 9228 SHA256:7729a8b2e6b566a9a28581a1cbfb586dfc18d132d6b35e3b8dc58a64f74152f7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2.orig.tar.gz' systemd_261.2.orig.tar.gz 18456346 SHA256:ed1059ff964f5df35b6056434cc17cc83f86dc913f10489948a0b19b6081c5ec
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2-1.debian.tar.xz' systemd_261.2-1.debian.tar.xz 189648 SHA256:1fc81b6193e7459893337f4efcd7b4a736e51ee5f190716d8923dddc1e944b35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/261.2-1/
 
-- https://sources.debian.net/src/systemd/261.2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/261.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/261.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 

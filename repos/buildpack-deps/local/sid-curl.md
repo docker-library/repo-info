@@ -198,20 +198,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-3
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.dsc' bash_5.3-3.dsc 2141 SHA256:8675ad0389cda5d0494f4b6b1e08a03c83a55a44e303e02d91a65dc58749b522
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.debian.tar.xz' bash_5.3-3.debian.tar.xz 91936 SHA256:d2542e1e6c33511266814496916a72a7a5aa50f690fba7f37a1308fc73f6407a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.3-3/
 
-- https://sources.debian.net/src/bash/5.3-3/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.2.0-4`
 
@@ -2307,20 +2300,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.4.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.dsc' rust-sequoia-sqv_1.4.0-1.dsc 2636 SHA256:d6c265539bb6653b3ad45201264a5e3fb5372cb92ff699301a79aedf50974fa2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0.orig.tar.gz' rust-sequoia-sqv_1.4.0.orig.tar.gz 164331 SHA256:5d3b8b08019ad65c180e029d596f25830586ff28915c83d060ff720d7e698e62
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.debian.tar.xz' rust-sequoia-sqv_1.4.0-1.debian.tar.xz 4072 SHA256:2ae2dfa28e30323ce2ddc0b8fbc814d076303f767b9f912903d293244d91bd71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-3`
 
@@ -2436,20 +2422,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `Unlicense`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=261.2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2-1.dsc' systemd_261.2-1.dsc 9228 SHA256:7729a8b2e6b566a9a28581a1cbfb586dfc18d132d6b35e3b8dc58a64f74152f7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2.orig.tar.gz' systemd_261.2.orig.tar.gz 18456346 SHA256:ed1059ff964f5df35b6056434cc17cc83f86dc913f10489948a0b19b6081c5ec
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_261.2-1.debian.tar.xz' systemd_261.2-1.debian.tar.xz 189648 SHA256:1fc81b6193e7459893337f4efcd7b4a736e51ee5f190716d8923dddc1e944b35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/261.2-1/
 
-- https://sources.debian.net/src/systemd/261.2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/261.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/261.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 

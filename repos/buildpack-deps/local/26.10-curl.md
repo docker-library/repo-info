@@ -176,14 +176,9 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.2.0-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA512:ceb2a1a5661296885a2f67bd2d6b02ad467cdc5fb39a82ec8e5fde26633ef4df354ebf7491c8442b090cdd38dc607857c4f9bee8aebb8ff63d44ae7322faceae
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.debian.tar.xz' brotli_1.2.0-3build1.debian.tar.xz 5976 SHA512:5ba45f6142daccab0f2dc71da08ecc8f8ecec5370923db06450ef0628b4c1eb5e5f805ba5d02b57b6ad14884f0cb89bb6895a9290e83e5e249ad3fe16cdccf86
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.dsc' brotli_1.2.0-3build1.dsc 2281 SHA512:8a47d671763614d0413611bc14733fd75f116cb22d5d7530edc87a19c7de0d5a83c8723389b9800628f17e00099158e23987e77a5d35b55c11f63248a1d3b5f1
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-6build2`
 
@@ -1874,15 +1869,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.dsc' sqlite3_3.46.1-9.dsc 2641 SHA512:be933217438ad743e42d815a8f373a561ac27377037766c4c067bd6e6e193212cb809e200d522a8472049cf01f268b8ac77be1cf5710fdcf95655c0f6e52dfb8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.debian.tar.xz' sqlite3_3.46.1-9.debian.tar.xz 35848 SHA512:56337376f7ae87bf33076b8c4f732ece42483339febfb68b7500922e1a5a85c93bfd0c9ec105643aab3f6995444bde06f528c50986948819dbd20c92dffd59bd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-9/
+
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3`
 
@@ -1978,13 +1971,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2023.11.28.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1build1.tar.xz' ubuntu-keyring_2023.11.28.1build1.tar.xz 20300 SHA512:5f6d23d46b4f6d0b0e894ca54509aa4cc6fcd3904ab58ed275111d7a5612b05ddc07664e30e516c5315f73ac28a3d81c23618fcef185cde8599131f5775b64e5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1build1.dsc' ubuntu-keyring_2023.11.28.1build1.dsc 1896 SHA512:07c3c2cfb1eb230ed745245d069a4c41c8ae3f9bb82d9aeed9d1823f7c398f13b996b4708e8ccdb509347ae2764982735cdfa5927d58b4e7fa8508068148293e
-```
 
 ### `dpkg` source package: `util-linux=2.41.3-3ubuntu2`
 

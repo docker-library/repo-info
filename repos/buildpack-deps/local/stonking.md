@@ -371,14 +371,9 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli-dev/copyright`, `/usr/share/do
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.2.0-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA512:ceb2a1a5661296885a2f67bd2d6b02ad467cdc5fb39a82ec8e5fde26633ef4df354ebf7491c8442b090cdd38dc607857c4f9bee8aebb8ff63d44ae7322faceae
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.debian.tar.xz' brotli_1.2.0-3build1.debian.tar.xz 5976 SHA512:5ba45f6142daccab0f2dc71da08ecc8f8ecec5370923db06450ef0628b4c1eb5e5f805ba5d02b57b6ad14884f0cb89bb6895a9290e83e5e249ad3fe16cdccf86
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.2.0-3build1.dsc' brotli_1.2.0-3build1.dsc 2281 SHA512:8a47d671763614d0413611bc14733fd75f116cb22d5d7530edc87a19c7de0d5a83c8723389b9800628f17e00099158e23987e77a5d35b55c11f63248a1d3b5f1
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-6build2`
 
@@ -1158,14 +1153,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.53.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.53.0.orig.tar.xz' git_2.53.0.orig.tar.xz 7993096 SHA512:f9c0c0f527e10fe3eb524e368b1a24088bfd41097d8cac7854dae7ff21ab8ab2a1716384be53ea6174023ca5a2af3eeddca1d9feb57e447713f82e061df55c8d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.53.0-1ubuntu1.debian.tar.xz' git_2.53.0-1ubuntu1.debian.tar.xz 835760 SHA512:b950624dce3daf0833392c3918f9705ee7aa809432fad55cfd6d0db6c63be61d17ff186f148612607253608bd5cd142b0fe7ecf20a5e326ab0a25d155d33fd0c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.53.0-1ubuntu1.dsc' git_2.53.0-1ubuntu1.dsc 2656 SHA512:c9ba8fba03da566978a8a0fca023f6e35a77469e7faf8b987475d84d70807e1af9ed33ab16379dfcad9d96b03cd1a430318f57e1ece4d4db9adaa8f0f2b108bd
-```
 
 ### `dpkg` source package: `glib2.0=2.88.1-2`
 
@@ -3806,14 +3796,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=26.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_26.0-1.dsc' python-packaging_26.0-1.dsc 2372 SHA512:03f00a6ac85957b915e07a204adba7b1b557f9e4698705fc7a306c40d54243a8230c8f165b002369d5265113f7e872bf103e0298db40759ba36f6297fa72e101
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_26.0.orig.tar.gz' python-packaging_26.0.orig.tar.gz 143416 SHA512:27a066a7d65ba76189212973b6a0d162f3d361848b1b0c34a82865cf180b3284a837cc34206c297f002a73feae414e25a26c5960bb884a74ea337f582585f1d2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-packaging/python-packaging_26.0-1.debian.tar.xz' python-packaging_26.0-1.debian.tar.xz 4264 SHA512:eb51c0b293e846a46d9c17806f364b6d3380ff50a93dcbd12f5e0659f463676616e5e62ebedb37106472c935dfa05515c74351353cafd3ca52c0e3ec58732742
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python-packaging/26.0-1/
+
 
 ### `dpkg` source package: `python3-defaults=3.14.3-0ubuntu2`
 
@@ -4086,15 +4075,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.dsc' sqlite3_3.46.1-9.dsc 2641 SHA512:be933217438ad743e42d815a8f373a561ac27377037766c4c067bd6e6e193212cb809e200d522a8472049cf01f268b8ac77be1cf5710fdcf95655c0f6e52dfb8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9.debian.tar.xz' sqlite3_3.46.1-9.debian.tar.xz 35848 SHA512:56337376f7ae87bf33076b8c4f732ece42483339febfb68b7500922e1a5a85c93bfd0c9ec105643aab3f6995444bde06f528c50986948819dbd20c92dffd59bd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-9/
+
 
 ### `dpkg` source package: `subversion=1.14.5-6build1`
 
@@ -4268,13 +4255,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2023.11.28.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1build1.tar.xz' ubuntu-keyring_2023.11.28.1build1.tar.xz 20300 SHA512:5f6d23d46b4f6d0b0e894ca54509aa4cc6fcd3904ab58ed275111d7a5612b05ddc07664e30e516c5315f73ac28a3d81c23618fcef185cde8599131f5775b64e5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2023.11.28.1build1.dsc' ubuntu-keyring_2023.11.28.1build1.dsc 1896 SHA512:07c3c2cfb1eb230ed745245d069a4c41c8ae3f9bb82d9aeed9d1823f7c398f13b996b4708e8ccdb509347ae2764982735cdfa5927d58b4e7fa8508068148293e
-```
 
 ### `dpkg` source package: `ucf=3.0052ubuntu1`
 

@@ -2302,20 +2302,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.4.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.dsc' rust-sequoia-sqv_1.4.0-1.dsc 2636 SHA256:d6c265539bb6653b3ad45201264a5e3fb5372cb92ff699301a79aedf50974fa2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0.orig.tar.gz' rust-sequoia-sqv_1.4.0.orig.tar.gz 164331 SHA256:5d3b8b08019ad65c180e029d596f25830586ff28915c83d060ff720d7e698e62
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.debian.tar.xz' rust-sequoia-sqv_1.4.0-1.debian.tar.xz 4072 SHA256:2ae2dfa28e30323ce2ddc0b8fbc814d076303f767b9f912903d293244d91bd71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-3`
 
@@ -2568,20 +2561,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42.2-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.dsc' util-linux_2.42.2-2.dsc 5324 SHA256:d53337876804ed5184f6cf3cbfa3cc20811e43b9fc35d8f4489775495bcc2c26
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2.orig.tar.xz' util-linux_2.42.2.orig.tar.xz 10658220 SHA256:03a05d3adf9602ef128f2da05b84b3205ce60c351e5737c0370f74000679ce8a
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.2-2.debian.tar.xz' util-linux_2.42.2-2.debian.tar.xz 102364 SHA256:610957123f906d085d6cce6ae2540bd5d24f874ea48561beaac7abf9aa201ede
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42.2-2/
 
-- https://sources.debian.net/src/util-linux/2.42.2-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-3`
 

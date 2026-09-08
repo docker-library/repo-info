@@ -72,8 +72,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.4.14
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA256:8d1b2748a6b5c99c9fd56dfadde280b85616dd67d22f7ca44f86225fa688a98c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA256:317040c4ab15f20cc77460126fd78745814a81d73a6c37d0559876977a7dfe35
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA512:16c3eee24d40d94e9e11f70002564331a35373db693f75cfefa028767b9bcd80307dda99c52953173d575ba6724fe7a7fb37724eb2dd44bf87db17ff36a94ef8
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA512:b1b8ce83cead480ab2c6fa2cbc9ed7384ab9d1dbcca437b96947653f16e7ef96df7d04269db20fa915325033845f5aaf7429f35741ada18e0a9b3b0cbf285cc9
 ```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
@@ -135,8 +135,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=12ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.tar.xz' base-files_12ubuntu4.7.tar.xz 81888 SHA256:000a3d5f46f1e1cc5379a8cb1b6461cff55f150b4847576d4f1f6e4ad628fdce
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.dsc' base-files_12ubuntu4.7.dsc 1277 SHA256:cb8a669fec06f514fef89be1df6ef2e8b439197a6a962c3e1675be1fbe90dc3e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.tar.xz' base-files_12ubuntu4.7.tar.xz 81888 SHA512:e3a9f3188f6f43a53818200ac110f504f81b2819e301d69931a18fb34673541c11b2fc43af256e0c52f4a6daa6bd4b408b99ba432fa1b2b6624658bf312b0db5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.dsc' base-files_12ubuntu4.7.dsc 1277 SHA512:9421fa1b62eb1c09d8aa93bb7c96ceaa077aaa4841ed5e516a682cfcc7cefdb7a7fd87976ba9e2718791fda2583141710968c4ce7357e089f5e5c3f7a0683ccf
 ```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
@@ -469,10 +469,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA256:b7430d1e6b7b5817ce8e36d7c8c7c3249b3051d0808a96ffd6e5c398e4e2fbb9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA256:b1e248ed73d4d67ac0cf7760e780e0a5cd2db85bbb9a5dcc235538b596128916
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA256:b04fad2b12787628497127e6fab76de11c54229e08a406eba126df13f5224fdf
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.dsc' e2fsprogs_1.46.5-2ubuntu1.2.dsc 3190 SHA256:6f41e832d3e69bff96374f20e886a286f6dd8cfff68c1f0fc902281ed365560a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA512:1a3496cb6ac575c7a5c523cc4eede39bc77c313a6d1fea2d303fc967792d75d94e42d7821e1a61b7513509320aae4a7170506decf5753ddbd1dda9d304cc392e
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA512:b288fa2418a85750673743cb58faf10537e2c79a5c2ec8b0d59435316f00006424195556ccf78fa023b67b05a29cd85bf9d96c14c166847d71a1d79b189c1d05
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.dsc' e2fsprogs_1.46.5-2ubuntu1.2.dsc 3190 SHA512:8bf3cf7816ff7a774b03e846fcd90083083c1cd9072635d1eb45ba76c87ea8a1d9f7c5bf99f9a80ad1fed2c294425835ff801ada260b3417258d94cee3dc3758
 ```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
@@ -868,15 +868,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.9.4-3ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4.orig.tar.bz2' libgcrypt20_1.9.4.orig.tar.bz2 3239704 SHA512:d0e117ac73c94d70e9521ee1e6328691498cc8328f8c4e21338096908f5c04c7b838966eb63d59494565f4e19f506c07dab4f4d922150d75610d9f7b57abbf60
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4.orig.tar.bz2.asc' libgcrypt20_1.9.4.orig.tar.bz2.asc 228 SHA512:5fbc2f52ff8a9f2b254791a0d127b012a3648a03d26e043af2ab63d05f69045492581462ba485ecf005a171ea391175bdc73350aa0e76f8b5f75c64a4d685d49
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4-3ubuntu3.2.debian.tar.xz' libgcrypt20_1.9.4-3ubuntu3.2.debian.tar.xz 35680 SHA512:6c4b618df4b748e4d75958d70321b459d64c8e8337bbc37b7823bb07f032ff4b5d91e4fa89f7ad9a01cd5e6c52b37d117320f16d908570ebc5dd4281f403b1c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4-3ubuntu3.2.dsc' libgcrypt20_1.9.4-3ubuntu3.2.dsc 2915 SHA512:110a7f5629aa506c3b48a9d4aef4e33087fd0252d01f7424b3ac582e9c7a3d4d9c5edd8bdc50897028153910ad9736fe68c4cb76a136e452789316fbe5f17186
-```
 
 ### `dpkg` source package: `libgpg-error=1.43-3`
 
@@ -1017,10 +1011,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.5.3-2ubuntu3~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA256:59065c8733364725e9721ba48c3a99bbc52af921daf48df4b1e012fbc7b10a76
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA256:cc1cbe9d9eb6a67b78de107eb37b2bc8d7599e3c1d36699ae2528db489cb5d44
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA256:cd582c847ced99c97f487b3f4a851bc1f2bed9065f90729d90dc8721b6dc483e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA256:e7f514056a28794c6a7067cd0881b5bf03e918578df3418eea6752cbfa83fd13
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA512:00170fe2360f0c0b33293dccfcc33e98fabb99619f34ecefbcc92bfdaa249ba91e7433226545b842b71542a3b224b6e980ea2ae656c4addf07e84a0def1870a0
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA512:c879872448471fb1e01617145473254a0536ade1ff1e12871793631c3c63199cd46cb48317b4d596294d5cb187ff1fe9b58dc20ce52a89bfc9234a566bf8eb85
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.debian.tar.xz' libseccomp_2.5.3-2ubuntu3~22.04.1.debian.tar.xz 24328 SHA512:2eca56dc8497a403e87f9ff4efe4f12b37e0443de6fad5884669f156f19590572cfaeae6b3d1073bd1a64188fa563699a7454de80c1999e8240c93c6029a4e72
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu3%7e22.04.1.dsc' libseccomp_2.5.3-2ubuntu3~22.04.1.dsc 2860 SHA512:332a059782f315e840f19f756baebbc4f6021ee6a1c0dc53ecfc36df5385e30d6b00363a73e16978a46cd099f552f697189b1313c2ce96fa2b652eaf320eac68
 ```
 
 ### `dpkg` source package: `libselinux=3.3-1build2`
@@ -1297,15 +1291,9 @@ Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.3-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3.orig.tar.gz' ncurses_6.3.orig.tar.gz 3583550 SHA512:5373f228cba6b7869210384a607a2d7faecfcbfef6dbfcd7c513f4e84fbd8bcad53ac7db2e7e84b95582248c1039dcfc7c4db205a618f7da22a166db482f0105
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3.orig.tar.gz.asc' ncurses_6.3.orig.tar.gz.asc 729 SHA512:5673088e7d6af580e8f1e163687146adb51261cd3c75be9ea61368c7590efc0e5e4bc1c2ae76d717f289ff6609089c5ca1f7e4a572266d7b6c5daba98eabed2e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3-2ubuntu0.2.debian.tar.xz' ncurses_6.3-2ubuntu0.2.debian.tar.xz 56728 SHA512:9c1cbdc0f7fccb3688d5c5213c6a517b2b48e20c69ef943a8d1f2bf991c601f0c10868bf8e429d614a243869fb94bada2a650af500f17a98b73163b56d1fa96c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.3-2ubuntu0.2.dsc' ncurses_6.3-2ubuntu0.2.dsc 4251 SHA512:b13bc6afea012563fadc86fd4b22bf27b6ad849a46dc2ecf1d5c3931355f89dd7048ad12bcf01a47f045ef1d79f701bfd4eec40cef3730caf3ca48e484693dbf
-```
 
 ### `dpkg` source package: `netbase=6.3`
 
@@ -1515,9 +1503,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA256:b6542e9adae20f212637f133e892c1d6874d9a21af928ed4cbd94fb77133916e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.dsc' pcre3_8.39-13ubuntu0.22.04.1.dsc 2101 SHA256:f9c1a08a5856eee3644a4f5bbffe62ff04d21940ebd7798e7b15f48463571867
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA512:8b0f14ae5947c4b2d74876a795b04e532fd71c2479a64dbe0ed817e7c7894ea3cae533413de8c17322d305cb7f4e275d72b43e4e828eaca77dc4bcaf04529cf6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.dsc' pcre3_8.39-13ubuntu0.22.04.1.dsc 2101 SHA512:c2b619e559192c367485fec01cf65dbc49a67ec8f2fb9d5785fdf7dba052540d70c16b4316afc83f4765ef9b57f3e2c0e6f245500866476df8a8a90310584f62
 ```
 
 ### `dpkg` source package: `perl=5.34.0-3ubuntu1.7`
