@@ -3308,20 +3308,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.170-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.170-1.dsc' nlme_3.1.170-1.dsc 1840 SHA256:8fa7e968fbe491a1014b75edf24afdc7f486a6457072319ae44db7c0c8ed8e43
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.170.orig.tar.gz' nlme_3.1.170.orig.tar.gz 843293 SHA256:d8e1a92cc295b046c9fd12bc1b875fe7921cc1db58f4407f0b97d625e8197b44
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.170-1.debian.tar.xz' nlme_3.1.170-1.debian.tar.xz 7428 SHA256:47f0d526fa4810d36f2f948fbb08b93ca88e4f3e5bb662d5831da6f6ad1be181
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.170-1/
 
-- https://sources.debian.net/src/nlme/3.1.170-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.170-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.170-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.33+ds-3`
 
@@ -3998,20 +3991,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.4.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.dsc' rust-sequoia-sqv_1.4.0-1.dsc 2636 SHA256:d6c265539bb6653b3ad45201264a5e3fb5372cb92ff699301a79aedf50974fa2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0.orig.tar.gz' rust-sequoia-sqv_1.4.0.orig.tar.gz 164331 SHA256:5d3b8b08019ad65c180e029d596f25830586ff28915c83d060ff720d7e698e62
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.4.0-1.debian.tar.xz' rust-sequoia-sqv_1.4.0-1.debian.tar.xz 4072 SHA256:2ae2dfa28e30323ce2ddc0b8fbc814d076303f767b9f912903d293244d91bd71
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-3`
 
@@ -4114,20 +4100,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=3.8-9-1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-9-1.dsc' survival_3.8-9-1.dsc 1861 SHA256:5c44509b3dc92cece875ab5d4da7a3fd2f31536ad5a0b40fd6e0346b42b7887c
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-9.orig.tar.gz' survival_3.8-9.orig.tar.gz 8821382 SHA256:9aa8fadd4fb185ac48f260c9d0f69fd6dfff4a4e2724920618057aa1f5d5bfbe
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.8-9-1.debian.tar.xz' survival_3.8-9-1.debian.tar.xz 6416 SHA256:0be1d54e6a2d2d02bc965d9be1199233c69514a2d8f440619bc1c04027ef9328
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/survival/3.8-9-1/
 
-- https://sources.debian.net/src/survival/3.8-9-1/ (for browsing the source)
-- https://sources.debian.net/src/survival/3.8-9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/survival/3.8-9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=261.2-1`
 
