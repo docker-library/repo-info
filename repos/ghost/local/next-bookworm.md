@@ -1,10 +1,10 @@
-# `ghost:6.62.0-next-bookworm`
+# `ghost:6.63.0-next-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:502bae60b8acb03c514cb0e06df5cdc2900a1bd29ac839ecac90c1de7282dee1`
-- Created: `2026-09-01T22:59:53.445765275Z`
-- Virtual Size: ~ 510.56 Mb  
+- Image ID: `sha256:8c14ce4b6e0990d5570f7261484cf71661784101b3c1a401a5a7e9d8171dbb94`
+- Created: `2026-09-09T01:18:08.908948316Z`
+- Virtual Size: ~ 511.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,9 +17,9 @@
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.62.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.62.0/ghost-6.62.0.tgz`
-  - `GHOST_SHA256=3f81079d07e2f6fd0365fbc0846b134c12b202dc5fe62b3252cb6ee34fa5c9e3`
+  - `GHOST_VERSION=6.63.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.63.0/ghost-6.63.0.tgz`
+  - `GHOST_SHA256=20b2ac6e936299d5b88b37d2a7175712ad35e6ade78a594ab6d495256ab54292`
 
 ## `dpkg` (`.deb`-based packages)
 
