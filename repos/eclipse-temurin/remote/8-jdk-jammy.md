@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8-jdk-jammy`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7cb1137d4a02aeb7ca85faae69c5f0720703936cbfb0b4af21067c73174f9b5e
+$ docker pull eclipse-temurin@sha256:0d568cc4232ceb9ed2b5def9647c8f505ff504e8b21e3558e7a89ec59cd9ed0c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -105,89 +105,89 @@ $ docker pull eclipse-temurin@sha256:82215855f4695135c22f52cc515c0eba126bc419375
 ### `eclipse-temurin:8-jdk-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:725b36013c0a24f02c7a9a70411ee270d55b6285b075316793f358b25ed59695
+$ docker pull eclipse-temurin@sha256:e28e267317d03f7c2f22f7f11d37fce9e8b148b1fec4e7551630305f77e990ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.9 MB (97932034 bytes)**  
+-	Total Size: **98.0 MB (97991253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da91ac3410baa19c2026d601211291e4b56fe6096a7c94c6a345a29d15c4f7a0`
+-	Image ID: `sha256:ad926f0a34ff24c92d9789a619450205b506bda53909a6d9f4eae7c8a2fb3807`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 10 Aug 2026 17:38:35 GMT
+# Thu, 03 Sep 2026 12:14:40 GMT
 ARG RELEASE
-# Mon, 10 Aug 2026 17:38:35 GMT
+# Thu, 03 Sep 2026 12:14:40 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 10 Aug 2026 17:38:35 GMT
+# Thu, 03 Sep 2026 12:14:40 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 10 Aug 2026 17:38:37 GMT
-ADD file:c4ec32d39509d0c1acf2ddbb89cdc1fb3ceeae66ef80238f2ba7df53758fb44a in / 
-# Mon, 10 Aug 2026 17:38:38 GMT
+# Thu, 03 Sep 2026 12:14:43 GMT
+ADD file:b920ec328a9d4f41fbaa4e839ab5a48ad3f138f98a847b3ee8c48142817ee32d in / 
+# Thu, 03 Sep 2026 12:14:43 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Aug 2026 18:25:16 GMT
+# Wed, 09 Sep 2026 01:31:08 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 21 Aug 2026 18:25:16 GMT
+# Wed, 09 Sep 2026 01:31:08 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Aug 2026 18:25:16 GMT
+# Wed, 09 Sep 2026 01:31:08 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 21 Aug 2026 18:25:16 GMT
+# Wed, 09 Sep 2026 01:31:08 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 21 Aug 2026 18:25:16 GMT
+# Wed, 09 Sep 2026 01:31:08 GMT
 ENV JAVA_VERSION=jdk8u502-b07
-# Fri, 21 Aug 2026 18:25:19 GMT
+# Wed, 09 Sep 2026 01:31:13 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='b8f5440f64f50193c01f67dacba55c9660caffe13b908baf6bd1955f4dd4c3ea';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u502b07.tar.gz';          ;;        arm64)          ESUM='34912db17786f7144dab274f040a42028e25da6e7a6a09780d7013339a56bdb2';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_aarch64_linux_hotspot_8u502b07.tar.gz';          ;;        ppc64el)          ESUM='626e870f411d01d6541fafa11e64b8584d8b737195cec5576256e6d3d34a62ba';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u502b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Fri, 21 Aug 2026 18:25:20 GMT
+# Wed, 09 Sep 2026 01:31:13 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Fri, 21 Aug 2026 18:25:20 GMT
+# Wed, 09 Sep 2026 01:31:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 21 Aug 2026 18:25:20 GMT
+# Wed, 09 Sep 2026 01:31:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:231032373bb3b10375f5940876c5c9a4a630f4e007e3aee895f8e1687b00295e`  
-		Last Modified: Mon, 10 Aug 2026 20:08:48 GMT  
-		Size: 27.6 MB (27620453 bytes)  
+	-	`sha256:e4be80ccf23625c2b9f55507e92a0bef3343c6a3f274f9d593c52bd4d2fa2945`  
+		Last Modified: Thu, 03 Sep 2026 17:08:27 GMT  
+		Size: 27.7 MB (27682747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f70671d002acdc381d4a51fd83422e33c9444f3c1e9b08ddf7c48e6928409542`  
-		Last Modified: Fri, 21 Aug 2026 18:25:32 GMT  
-		Size: 16.0 MB (16039432 bytes)  
+	-	`sha256:5fa36522f876aa0ad5ec8c7053fcdd3f2f984f60a45540cbab777266302fdaf9`  
+		Last Modified: Wed, 09 Sep 2026 01:32:08 GMT  
+		Size: 16.0 MB (16036371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d33992b693978633c66ae36c362599a138a08891872cf6380a319840500f73f`  
-		Last Modified: Fri, 21 Aug 2026 18:25:33 GMT  
-		Size: 54.3 MB (54269538 bytes)  
+	-	`sha256:ed46ba8e0b3e37bc973be3ed00b44ad738eb76e11f85f78261e42ad907399ca4`  
+		Last Modified: Wed, 09 Sep 2026 01:32:09 GMT  
+		Size: 54.3 MB (54269522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8ef437e8e95c3f31bade294400d6d853302f6063ba93588b360bcf1c3b8e40c`  
-		Last Modified: Fri, 21 Aug 2026 18:25:31 GMT  
-		Size: 126.0 B  
+	-	`sha256:e03910709adabbb0663e7ca2c2752b4477292e80a97060eea7667154303e1760`  
+		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386a4df355d1932b4cdb3f2c11e29bef94d6a92bc229a2c450e4c7a3a56fd007`  
-		Last Modified: Fri, 21 Aug 2026 18:25:31 GMT  
+	-	`sha256:5bf4ba91cd7ae1cc600652c4d1c9d8c82540c21262876e7d0a0cd59eb38aabb2`  
+		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:8-jdk-jammy` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:28f5398c16d38d0e566e1d7a45cae907a21699dfb0f99ec6b896602291553468
+$ docker pull eclipse-temurin@sha256:2f414f62ec23fd2ec576a7f276254e28dc53b1c4faeaac87092318e99e5179fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4091339 bytes)**  
+-	Total Size: **4.1 MB (4092991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d82820f498b8497e1aaca01e249ed9526ea3aa75e39c17f49bb4f4601af6b82`
+-	Image ID: `sha256:6e1fdea645b790d807aa5be409bddfd37888592c4fe98418639b48d55d763655`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0a0f6438ce8250194419cfeb73132ae7f70f19444b9912d56c5fbd58419dbd`  
-		Last Modified: Fri, 21 Aug 2026 18:25:31 GMT  
-		Size: 4.1 MB (4070188 bytes)  
+	-	`sha256:d61ac1f8616b4d6af94c66344171741aedf817151626e725c47a4dc88c76179e`  
+		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
+		Size: 4.1 MB (4071840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca08eee70b62699bb838775e6c49dd5c44b2f7bcb83b0835d79b7c9188847d93`  
-		Last Modified: Fri, 21 Aug 2026 18:25:31 GMT  
+	-	`sha256:f7b90fe842e04fc6609249b99699d8ef722e4e244e79a09c17dad146f1443ff6`  
+		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
 		Size: 21.2 KB (21151 bytes)  
 		MIME: application/vnd.in-toto+json
 
