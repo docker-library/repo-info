@@ -228,7 +228,7 @@ Licenses (from `rpm --query`): GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.14.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.21.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
@@ -552,13 +552,13 @@ Licenses (from `rpm --query`): BSD-3-Clause
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-0.12.0-2.el10.x86_64`
+### `rpm` package: `libssh-0.12.0-3.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-config-0.12.0-2.el10.noarch`
+### `rpm` package: `libssh-config-0.12.0-3.el10_2.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
