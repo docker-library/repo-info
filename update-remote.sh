@@ -14,9 +14,21 @@ if [ ${#repos[@]} -eq 0 ]; then
 fi
 repos=( "${repos[@]%/}" )
 
+args=()
+if [ -n "${DOCKERHUB_PUBLIC_PROXY:-}" ]; then
+	# extract the hostname from the proxy url
+	proxyHost="${DOCKERHUB_PUBLIC_PROXY#*://}" # protocol
+	proxyHost="${proxyHost%%/*}" # path
+	proxyHost="${proxyHost%:[0-9]*}" # port
+	# autoscaling jenkins workers can't resolve the proxy host within a container because it is in /etc/hosts
+	# so this pre-resolves it and adds it to the container run
+	ips=( $(getent ahostsv4 "$proxyHost" | cut -d' ' -f1 | sort -u) )
+	args=( "${ips[@]/#/--add-host=$proxyHost:}" )
+fi
+
 docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
 trap 'docker rm -f repo-info-remote > /dev/null' EXIT
-docker run -e DOCKERHUB_PUBLIC_PROXY -d --name repo-info-remote repo-info:remote daemon > /dev/null
+docker run -e DOCKERHUB_PUBLIC_PROXY "${args[@]}" -d --name repo-info-remote repo-info:remote daemon > /dev/null
 
 trap 'err="$?"; echo >&2 "ERROR: exit code $err"; ( set -x && docker logs repo-info-remote ); exit "$err"' ERR
 
