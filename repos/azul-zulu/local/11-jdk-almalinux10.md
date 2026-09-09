@@ -350,15 +350,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/gdbm-1.23-12.el10_0.src.rpm
 ```
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.14.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.21.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.14
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/glib2-2.80.4-12.el10_2.14.src.rpm
+$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.21
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/glib2-2.80.4-12.el10_2.21.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.39-126.0.1.el10_2.x86_64`
@@ -859,26 +859,26 @@ Licenses (from `rpm --query`): BSD-3-Clause
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libssh-0.12.0-2.el10.x86_64`
+### `rpm` package: `libssh-0.12.0-3.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libssh-0.12.0-2.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libssh-0.12.0-2.el10.src.rpm
+$ dnf --quiet download --source --url libssh-0.12.0-3.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libssh-0.12.0-3.el10_2.src.rpm
 ```
 
-### `rpm` package: `libssh-config-0.12.0-2.el10.noarch`
+### `rpm` package: `libssh-config-0.12.0-3.el10_2.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libssh-config-0.12.0-2.el10.noarch
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libssh-0.12.0-2.el10.src.rpm
+$ dnf --quiet download --source --url libssh-config-0.12.0-3.el10_2.noarch
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libssh-0.12.0-3.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-14.3.1-4.4.0.1.el10.x86_64`
