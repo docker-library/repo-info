@@ -1,7 +1,7 @@
 ## `percona:ps-8.0`
 
 ```console
-$ docker pull percona@sha256:821e0d56236987e875e743f60798714ef6a58b3518dc4714e31167a26e63cc34
+$ docker pull percona@sha256:f3a52ed891d058ce9ad03300fdb98f4b913b98be4cf34208e988f739eb5f8fe4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,153 +12,153 @@ $ docker pull percona@sha256:821e0d56236987e875e743f60798714ef6a58b3518dc4714e31
 ### `percona:ps-8.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:0cd33ccc6b4fd6edce4bc2fa72a74c22ede4cd5206dd7bcb7b19b56296bb95ee
+$ docker pull percona@sha256:137444672034c479dc020509a94917e1d319669af4c53cd6d56abfeb7c1692a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **411.3 MB (411302907 bytes)**  
+-	Total Size: **411.5 MB (411522777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:743015bd69b63afbc539e5de68c1f924e65b8cb0dd2d511ab8bf9cb12d980621`
+-	Image ID: `sha256:5ac7cb6496c1b276a6928af37cc1dd1fdcfa8285560f8a5f7ddf555eefd88023`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.8"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:03 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:04 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:04 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:04 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:04 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:04 GMT
 ENV container oci
-# Mon, 31 Aug 2026 08:53:44 GMT
-COPY dir:19cc2d5b9eaa116f3cb84eada48063b3bc3fe9e2c9e39a73cc87b72cc8d70c32 in /      
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:05 GMT
+COPY dir:7d4e1add6b136709dfd81a23f253956035f58d34c5d236b96fba89c53c087ca2 in /      
+# Wed, 09 Sep 2026 07:32:05 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 31 Aug 2026 08:53:44 GMT
+# Wed, 09 Sep 2026 07:32:05 GMT
 CMD ["/bin/bash"]
-# Mon, 31 Aug 2026 08:53:45 GMT
-COPY dir:06b2f05cbdc30c870d2738e959aef49498d01d38b907966b94425ac991c6f532 in /usr/share/buildinfo/      
-# Mon, 31 Aug 2026 08:53:45 GMT
-COPY dir:06b2f05cbdc30c870d2738e959aef49498d01d38b907966b94425ac991c6f532 in /root/buildinfo/      
-# Mon, 31 Aug 2026 08:53:45 GMT
-LABEL "org.opencontainers.image.created"="2026-08-31T08:53:29Z" "org.opencontainers.image.revision"="3c32d7c63d617fc21bc66bb65a893d8db99096da" "build-date"="2026-08-31T08:53:29Z" "architecture"="x86_64" "vcs-ref"="3c32d7c63d617fc21bc66bb65a893d8db99096da" "vcs-type"="git" "release"="1788166357"org.opencontainers.image.created=2026-08-31T08:53:29Z,org.opencontainers.image.revision=3c32d7c63d617fc21bc66bb65a893d8db99096da
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 07:32:05 GMT
+COPY dir:aab9058c830b4fe09c53d67f66c40e388b8f6b803bd122483e9e5b39e792636e in /usr/share/buildinfo/      
+# Wed, 09 Sep 2026 07:32:05 GMT
+COPY dir:aab9058c830b4fe09c53d67f66c40e388b8f6b803bd122483e9e5b39e792636e in /root/buildinfo/      
+# Wed, 09 Sep 2026 07:32:06 GMT
+LABEL "org.opencontainers.image.created"="2026-09-09T07:31:28Z" "org.opencontainers.image.revision"="032ccfa67770989ab0253359280f8ba2cf77ce39" "build-date"="2026-09-09T07:31:28Z" "architecture"="x86_64" "vcs-ref"="032ccfa67770989ab0253359280f8ba2cf77ce39" "vcs-type"="git" "release"="1788939036"org.opencontainers.image.created=2026-09-09T07:31:28Z,org.opencontainers.image.revision=032ccfa67770989ab0253359280f8ba2cf77ce39
+# Wed, 09 Sep 2026 22:36:02 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 RUN set -ex;     groupadd -g 1001 mysql;     useradd -u 1001 -r -g 1001 -s /sbin/nologin         -m -c "Default Application User" mysql # buildkit
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV PS_VERSION=8.0.46-37.1
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV MYSQL_SHELL_VERSION=8.0.46-1
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV OS_VER=el9
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV FULL_PERCONA_VERSION=8.0.46-37.1.el9
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV FULL_MYSQL_SHELL_VERSION=8.0.46-1.el9
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV PS_REPO=testing
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV PS_TELEMETRY_VERSION=8.0.46-37-1
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV KEY_RPM_DOWNLOAD_SHA256=fcf0eab4f05a1c0de6363ac4b707600a27a9d774e9b491059e59e6921b255a84
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ENV CALL_HOME_VERSION=0.1
-# Mon, 31 Aug 2026 19:11:12 GMT
+# Wed, 09 Sep 2026 22:36:02 GMT
 ARG PERCONA_TELEMETRY_DISABLE=1
-# Mon, 31 Aug 2026 19:11:21 GMT
+# Wed, 09 Sep 2026 22:36:10 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 4D1BB29D63D98E422B2113B19334A25F8507EFA5 99DB70FAE1D7CE227FB6488205B555B38483C65D;     gpg --batch --export --armor 4D1BB29D63D98E422B2113B19334A25F8507EFA5 > ${GNUPGHOME}/PERCONA-PACKAGING-KEY;     gpg --batch --export --armor 99DB70FAE1D7CE227FB6488205B555B38483C65D > ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     rpmkeys --import ${GNUPGHOME}/PERCONA-PACKAGING-KEY ${GNUPGHOME}/RPM-GPG-KEY-centosofficial;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     microdnf install -y findutils;     rpm -i /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     percona-release disable all;     percona-release enable ps-80 ${PS_REPO};     percona-release enable mysql-shell ${PS_REPO};     curl -O https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-9;     echo "$KEY_RPM_DOWNLOAD_SHA256 RPM-GPG-KEY-EPEL-9" | sha256sum --strict --check;     rpm --import RPM-GPG-KEY-EPEL-9;     curl -Lf -o /tmp/jemalloc.rpm https://rpmfind.net/linux/epel/9/Everything/x86_64/Packages/j/jemalloc-5.2.1-2.el9.x86_64.rpm;     curl -Lf -o /tmp/gflags.rpm https://rpmfind.net/linux/epel/9/Everything/x86_64/Packages/g/gflags-2.2.2-9.el9.x86_64.rpm;     rpmkeys --checksig /tmp/gflags.rpm /tmp/jemalloc.rpm;     rpm -i /tmp/jemalloc.rpm;     rpm -i /tmp/gflags.rpm;     rm -f /tmp/gflags.rpm /tmp/jemalloc.rpm # buildkit
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:45 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
 RUN set -ex;     rpm -e --nodeps tzdata;     microdnf -y install         hostname         tzdata         jemalloc         which         cracklib-dicts         tar         policycoreutils;     microdnf -y update         libnghttp2         openssh         python3-setuptools-wheel         krb5-libs         pam         python3;         microdnf -y install         percona-server-server-${FULL_PERCONA_VERSION}         percona-server-devel-${FULL_PERCONA_VERSION}         percona-server-rocksdb-${FULL_PERCONA_VERSION}         percona-icu-data-files-${FULL_PERCONA_VERSION}         percona-mysql-shell-${FULL_MYSQL_SHELL_VERSION};     microdnf clean all;     rm -rf /var/cache/dnf /var/cache/yum /var/lib/mysql # buildkit
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:45 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
 RUN set -ex;     /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d; 	find /etc/my.cnf /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/'; 	echo '!includedir /etc/my.cnf.d' >> /etc/my.cnf; 	printf '[mysqld]\nhost_cache_size=0\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf; 	/usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql; 	echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql; 	echo "THP_SETTING=never" >> /etc/sysconfig/mysql; 	chown -R mysql:root /etc/my.cnf /etc/my.cnf.d; 	chmod -R ug+rwX /etc/my.cnf /etc/my.cnf.d # buildkit
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:45 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 # ARGS: PERCONA_TELEMETRY_DISABLE=1
 RUN set -eux;     curl -fL "https://github.com/Percona-Lab/telemetry-agent/archive/refs/tags/phase-$CALL_HOME_VERSION.tar.gz" -o "phase-$CALL_HOME_VERSION.tar.gz";     echo "$CALL_HOME_DOWNLOAD_SHA256 phase-$CALL_HOME_VERSION.tar.gz" | sha256sum --strict --check;     tar -xvf phase-$CALL_HOME_VERSION.tar.gz;     cp telemetry-agent-phase-$CALL_HOME_VERSION/call-home.sh .;    rm -rf telemetry-agent-phase-$CALL_HOME_VERSION phase-$CALL_HOME_VERSION.tar.gz;     chmod a+rx /call-home.sh;     mkdir -p /usr/local/percona;     chown mysql:mysql /usr/local/percona # buildkit
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 ENV CALL_HOME_OPTIONAL_PARAMS= -s el9
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 COPY ps-entry-dockerhub.sh /docker-entrypoint.sh # buildkit
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 USER mysql
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 EXPOSE map[3306/tcp:{} 33060/tcp:{}]
-# Mon, 31 Aug 2026 19:11:55 GMT
+# Wed, 09 Sep 2026 22:36:46 GMT
 CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:2943616793071e9fa96e298a7454ac45b7a498df6ca5c681004955a177cdf999`  
-		Last Modified: Mon, 31 Aug 2026 10:01:51 GMT  
-		Size: 40.7 MB (40709577 bytes)  
+	-	`sha256:399616a84899868b5dcba80b172eb2b68d9d6ceba1655cad130718f24d1f2160`  
+		Last Modified: Wed, 09 Sep 2026 08:28:28 GMT  
+		Size: 40.7 MB (40711761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:450a326dbc878aa5a12b79a1c8a6c7dd55fe6827f284ceb7df765a892bd1ab2b`  
-		Last Modified: Mon, 31 Aug 2026 19:12:38 GMT  
-		Size: 1.4 KB (1373 bytes)  
+	-	`sha256:f970009e609f0e5795554c09f472bb6b597c7f5c19f45f9cf0ff68cd291397e4`  
+		Last Modified: Wed, 09 Sep 2026 22:37:28 GMT  
+		Size: 1.4 KB (1372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e6be64d96b04ed1535b487a1fe39ab32f1dc119f09c46f3b1a711b474337491`  
-		Last Modified: Mon, 31 Aug 2026 19:12:39 GMT  
-		Size: 9.4 MB (9374303 bytes)  
+	-	`sha256:2bbe6657b1467b5f22961161d9dab732c48a14e4b33f4c8e42e0caad6093fd7a`  
+		Last Modified: Wed, 09 Sep 2026 22:37:28 GMT  
+		Size: 9.4 MB (9380842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24d391673976d01ef04c980621de91da4c854eadbe7508607e10c9a6900ceacb`  
-		Last Modified: Mon, 31 Aug 2026 19:12:46 GMT  
-		Size: 361.2 MB (361209295 bytes)  
+	-	`sha256:3185b54fc4582d2daae55d36234b61056c6558917eabebe4fd41215891e0b9ad`  
+		Last Modified: Wed, 09 Sep 2026 22:37:35 GMT  
+		Size: 361.4 MB (361420446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e801a5be1bbdcaa3f57ffe1b4f684f8bbcb3d9be2301f1c37e01b4f7e7789307`  
-		Last Modified: Mon, 31 Aug 2026 19:12:38 GMT  
+	-	`sha256:652a9599d38f9e21fb1e76ff8e678d7b5d0e8545336cbe05fe096156718e3d75`  
+		Last Modified: Wed, 09 Sep 2026 22:37:28 GMT  
 		Size: 1.1 KB (1118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eaa6c49e52d622e97b1b02b620fa14451d3208eccc85c3c319f6b14cf2c65bdc`  
-		Last Modified: Mon, 31 Aug 2026 19:12:39 GMT  
-		Size: 4.0 KB (3959 bytes)  
+	-	`sha256:0f2adea48525e1f75ea69f3a6e0662a8b8d2d554ce4312f772092c32dfff8ac3`  
+		Last Modified: Wed, 09 Sep 2026 22:37:29 GMT  
+		Size: 4.0 KB (3956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c69f794f66630db4fea1731defd1185e4c3a70f70e8222bfd2b71330ac6c41b`  
-		Last Modified: Mon, 31 Aug 2026 19:12:39 GMT  
+	-	`sha256:972782e8175707701aca64a9074af6fe9c31c3a13ac7fea3641be75fb6f7b6af`  
+		Last Modified: Wed, 09 Sep 2026 22:37:29 GMT  
 		Size: 3.3 KB (3282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `percona:ps-8.0` - unknown; unknown
 
 ```console
-$ docker pull percona@sha256:4576fd5606daf9fd92445e18fc7c4807cfa30ab54a26c1be5d06b734a8ba778e
+$ docker pull percona@sha256:6f80941aeb1d767537dc3dd04458c63861b05556eb804a1e7d9d9c3d9557dce2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f4d779d05306f5c1414487865788d01da5df7c11ae0d5941a112570cdcf093f`
+-	Image ID: `sha256:a1e610a854426b812fefe703e331ef959ea1a5c5fb37eb884ff66df42ccc305e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67e45102871be2c5bf3bd6400f17297d1909cc5ced5fe2fa64744febf000e4bf`  
-		Last Modified: Mon, 31 Aug 2026 19:12:38 GMT  
+	-	`sha256:c0eadfb5463d4a758343a342feeda10c5b386b7c88a266a47424aa06cb3e7028`  
+		Last Modified: Wed, 09 Sep 2026 22:37:28 GMT  
 		Size: 30.8 KB (30847 bytes)  
 		MIME: application/vnd.in-toto+json
