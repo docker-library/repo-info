@@ -1776,9 +1776,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris jbig2dec=0.20-1
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.20-1.dsc' jbig2dec_0.20-1.dsc 2075 SHA256:764cdb37f9d4b200bf452dd95b90a66578fb3edf749a700b567bc6aaf1cd4a5b
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.20.orig.tar.gz' jbig2dec_0.20.orig.tar.gz 149782 SHA256:a9705369a6633aba532693450ec802c562397e1b824662de809ede92f67aff21
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.20-1.debian.tar.xz' jbig2dec_0.20-1.debian.tar.xz 21820 SHA256:da72d9f85b60cf2a95a6e2cc1b0baee7207a648c8e213331a9415d2911356086
+'http://deb.debian.org/debian-security/pool/updates/main/j/jbig2dec/jbig2dec_0.20-1%2bdeb13u1.dsc' jbig2dec_0.20-1+deb13u1.dsc 2107 SHA256:ab80643a90f118ff818cda5185aae4cc794e502e0f564d543227b23997847ffc
+'http://deb.debian.org/debian-security/pool/updates/main/j/jbig2dec/jbig2dec_0.20.orig.tar.gz' jbig2dec_0.20.orig.tar.gz 149782 SHA256:a9705369a6633aba532693450ec802c562397e1b824662de809ede92f67aff21
+'http://deb.debian.org/debian-security/pool/updates/main/j/jbig2dec/jbig2dec_0.20-1%2bdeb13u1.debian.tar.xz' jbig2dec_0.20-1+deb13u1.debian.tar.xz 22468 SHA256:130b542458b21b5c54f98aeb79ce58c0e793fd0c3fe10745df9046b49704bba6
 ```
 
 Other potentially useful URLs:
