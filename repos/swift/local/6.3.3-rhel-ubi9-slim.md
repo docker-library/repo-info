@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a88a731009d2ce36342f736485a6e0d12eccca90c39648cfce1fc9d45b4f183`
-- Created: `2026-09-03T23:15:43.150634063Z`
-- Virtual Size: ~ 379.34 Mb  
+- Image ID: `sha256:2b29a184585b3854ed45158eeaa437ff1e3b3757de6336180f08b1f16cd87ad1`
+- Created: `2026-09-09T22:43:24.755330392Z`
+- Virtual Size: ~ 379.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-01T06:45:46Z`
+  - `build-date=2026-09-09T07:32:57Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-09-01T06:45:46Z`
-  - `org.opencontainers.image.revision=b353a7c5167fc9b52dde0d7483a39f41ea885fef`
-  - `release=1788245065`
+  - `org.opencontainers.image.created=2026-09-09T07:32:57Z`
+  - `org.opencontainers.image.revision=843fd747812760f27f802aede252fdd84ab4605c`
+  - `release=1788939089`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b353a7c5167fc9b52dde0d7483a39f41ea885fef`
+  - `vcs-ref=843fd747812760f27f802aede252fdd84ab4605c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -329,15 +329,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.194-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.194-1.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.1.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.3.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -417,15 +417,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-19.el9_8.9.x86_64`
+### `rpm` package: `glib2-2.68.4-19.el9_8.10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.9.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-19.el9_8.10.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-275.el9_8.x86_64`
@@ -1386,15 +1386,15 @@ $ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el9_8.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-28.el9.x86_64`
+### `rpm` package: `pam-1.5.1-28.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-28.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-28.el9.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-28.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-28.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `passwd-0.80-12.el9.x86_64`
