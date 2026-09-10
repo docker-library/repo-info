@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ab425ab1d0a2f242bfb16196f50cb3d7fc0d4f90414d541c9e3d5475ee30258`
-- Created: `2026-09-03T19:09:44.319875342Z`
-- Virtual Size: ~ 714.94 Mb  
+- Image ID: `sha256:032633e1f472eb60ca122d76c529485251a656c76890fbfeece738782c1cbcb3`
+- Created: `2026-09-08T21:19:29.582509904Z`
+- Virtual Size: ~ 714.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.25.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.25.tar.xz.asc`
   - `PHP_SHA256=dc1ad8b4109898d9db49744450403874858c23efc685b1032a50bd1e83906848`
-  - `ESPOCRM_VERSION=10.0.7`
-  - `ESPOCRM_SHA256=8414b10f64861f881056c27083192c1c0ce2329af74734332394b27a4618fb4f`
+  - `ESPOCRM_VERSION=10.0.8`
+  - `ESPOCRM_SHA256=b40f1631cda1f49a1958734bddef5831a48363a1785bc9d57ff67ded58419163`
 - Labels:
   - `org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.`
   - `org.opencontainers.image.source=https://github.com/espocrm/espocrm`
