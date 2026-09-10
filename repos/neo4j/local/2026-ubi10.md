@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f3dfaa3e6d6f1c1526f48f2d0d54046313edd908fcfb7546f7c94282f586c92`
-- Created: `2026-08-31T19:27:44.867835038Z`
-- Virtual Size: ~ 674.63 Mb  
+- Image ID: `sha256:0112307df75df3994b7d6923659962c20e17d1fa4358c515c2910daa597f4285`
+- Created: `2026-09-09T22:42:27.115774091Z`
+- Virtual Size: ~ 674.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-08-31T00:57:07Z`
+  - `build-date=2026-09-09T08:04:26Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-08-31T00:57:07Z`
-  - `org.opencontainers.image.revision=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
-  - `release=1788137716`
+  - `org.opencontainers.image.created=2026-09-09T08:04:26Z`
+  - `org.opencontainers.image.revision=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
+  - `release=1788940913`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=bdaac53e4bd232830af8a1ca6268fcea3b2faa33`
+  - `vcs-ref=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -296,12 +296,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 
@@ -369,7 +364,7 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-12.el10_0.src.rpm
 ```
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.14.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.21.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
@@ -868,17 +863,27 @@ $ dnf --quiet download --source --url libsolv-0.7.33-5.el10_2
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.33-5.el10_2.src.rpm
 ```
 
-### `rpm` package: `libssh-0.12.0-2.el10.x86_64`
+### `rpm` package: `libssh-0.12.0-3.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `libssh-config-0.12.0-2.el10.noarch`
+```console
+$ dnf --quiet download --source --url libssh-0.12.0-3.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.12.0-3.el10_2.src.rpm
+```
+
+### `rpm` package: `libssh-config-0.12.0-3.el10_2.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libssh-config-0.12.0-3.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.12.0-3.el10_2.src.rpm
+```
 
 ### `rpm` package: `libstdc++-14.3.1-4.4.0.1.el10.x86_64`
 
@@ -1510,12 +1515,7 @@ Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-onl
 
 Licenses (from `rpm --query`): 0BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url xz-libs-5.6.2-4.el10_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/x/xz-5.6.2-4.el10_0.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `yum-4.20.0-22.0.1.el10_2.noarch`
 
