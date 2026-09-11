@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:68fda12c9f7b5373168423949b8dc695c449e581fcba731be5e7c6bfcc4716a1`
-- Created: `2026-06-22T19:46:28.613967318Z`
-- Virtual Size: ~ 27.8 Mb  
+- Image ID: `sha256:60a9f27d2990e903dcebb4d3307583fb03f2e7398b3724a8c917a3f93022d363`
+- Created: `2026-09-08T19:18:54.67167009Z`
+- Virtual Size: ~ 34.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
 - Command: `["eggdrop.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `EGGDROP_SHA256=e42668f102c1446901b066d13fe0bf39622afca8d723f356ac2390d5faaf6e5e`
-  - `EGGDROP_COMMIT=541e8ac17e549a40e177b5eea54e4abf24629a33`
+  - `EGGDROP_SHA256=fdfc2d08c17f6318b351981a64b193228852bb740ad94d2b43d3cd5585067c4b`
+  - `EGGDROP_COMMIT=d93dbd7444d2519b83f613fe4d21e36ae4cc5797`
   - `NICK=`
   - `SERVER=`
   - `LISTEN=3333`
@@ -197,16 +197,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -231,16 +231,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -299,16 +299,16 @@ X11
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -367,16 +367,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.2-r0 installed size:
-1577 KiB
+sqlite-libs-3.53.4-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.51.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
@@ -452,16 +452,16 @@ TCL
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026b-r0 description:
+tzdata-2026c-r0 description:
 Timezone data
 
-tzdata-2026b-r0 webpage:
+tzdata-2026c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026b-r0 installed size:
-436 KiB
+tzdata-2026c-r0 installed size:
+433 KiB
 
-tzdata-2026b-r0 license:
+tzdata-2026c-r0 license:
 Public-Domain
 
 ```
