@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:11d1f5bfee3235a4e8fbee7f220feebbf8c1938037cd2a9638b7c2af7bf04dc7`
-- Created: `2026-08-21T20:38:27.536664125Z`
-- Virtual Size: ~ 212.79 Mb  
+- Image ID: `sha256:ea61fad59b687c6f8f70a66c0e78f1d9884879ad58446b2bd878af4e7cd0b453`
+- Created: `2026-09-09T04:36:19.588054299Z`
+- Virtual Size: ~ 212.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -318,16 +318,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.21.0-r0 description:
+curl-8.22.0-r0 description:
 URL retrieval utility and library
 
-curl-8.21.0-r0 webpage:
+curl-8.22.0-r0 webpage:
 https://curl.se/
 
-curl-8.21.0-r0 installed size:
-273 KiB
+curl-8.22.0-r0 installed size:
+278 KiB
 
-curl-8.21.0-r0 license:
+curl-8.22.0-r0 license:
 curl
 
 ```
@@ -726,16 +726,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -1202,16 +1202,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r0 description:
+openssh-client-common-10.3_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r0 webpage:
+openssh-client-common-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r0 installed size:
+openssh-client-common-10.3_p1-r1 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r0 license:
+openssh-client-common-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1219,16 +1219,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r0 description:
+openssh-client-default-10.3_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r0 webpage:
+openssh-client-default-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r0 installed size:
+openssh-client-default-10.3_p1-r1 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r0 license:
+openssh-client-default-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1236,16 +1236,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r0 description:
+openssh-keygen-10.3_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r0 webpage:
+openssh-keygen-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r0 installed size:
+openssh-keygen-10.3_p1-r1 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r0 license:
+openssh-keygen-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
