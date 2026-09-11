@@ -1,17 +1,17 @@
-# `telegraf:1.39-alpine`
+# `telegraf:1.40-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77fcd569cc185013d60bf8b43fb6552c34acd7354b8e6ccdf548ea4caf1089ab`
-- Created: `2026-08-11T18:03:33.950018562Z`
-- Virtual Size: ~ 332.02 Mb  
+- Image ID: `sha256:66bf956a7c938bce1ddf2ae68f09e5789c36ac99cfb474326cfd72a117e7e914`
+- Created: `2026-09-08T19:49:10.893446788Z`
+- Virtual Size: ~ 343.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","--","/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.39.3`
+  - `TELEGRAF_VERSION=1.40.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -630,16 +630,16 @@ GPL-2.0-only
 ### `apk` package: `setpriv`
 
 ```console
-setpriv-2.41.4-r0 description:
+setpriv-2.41.6-r1 description:
 Run a program with different Linux privilege settings
 
-setpriv-2.41.4-r0 webpage:
+setpriv-2.41.6-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-setpriv-2.41.4-r0 installed size:
+setpriv-2.41.6-r1 installed size:
 33 KiB
 
-setpriv-2.41.4-r0 license:
+setpriv-2.41.6-r1 license:
 GPL-2.0-or-later
 
 ```
