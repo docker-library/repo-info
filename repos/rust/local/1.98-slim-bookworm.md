@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:638b399c881b3035633d81b118935b97979e9deccacb3925efd4d23ff44ced8b`
-- Created: `2026-08-25T01:22:11.352553771Z`
-- Virtual Size: ~ 894.18 Mb  
+- Image ID: `sha256:ff09915dc81b6088d47b9428ce47034436cc77ce893afbdd186e9e73f6d11087`
+- Created: `2026-09-09T00:09:27.248073868Z`
+- Virtual Size: ~ 894.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.98.0`
+  - `RUST_VERSION=1.98.1`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -1620,11 +1620,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.180-1`
+### `dpkg` source package: `linux=6.1.187-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.180-1`
+- `linux-libc-dev:amd64=6.1.187-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1639,17 +1639,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.180-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.180-1.dsc' linux_6.1.180-1.dsc 290776 SHA256:632dfb8da246e2c96da255d5accc12d36db43c2d576b6ec277e9207cbdf40306
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.180.orig.tar.xz' linux_6.1.180.orig.tar.xz 137969612 SHA256:f7599e3e0da2c9b29108b86bef75d0bafffea43aede773772415d6eea32636df
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.180-1.debian.tar.xz' linux_6.1.180-1.debian.tar.xz 1886996 SHA256:da26dc45b1d1c0dc99bfb77cbaac5c0bab4032dc19605e015b5ab1a4c2decd24
+$ apt-get source -qq --print-uris linux=6.1.187-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187-1.dsc' linux_6.1.187-1.dsc 399396 SHA256:9a66f3af2a0d90ad5ae16b059b7e299923d2fd0b1ad88c8f74c500e7abe6171a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187.orig.tar.xz' linux_6.1.187.orig.tar.xz 137990204 SHA256:bec853ea2b0314c64012478964e10d3e094fa019799c926b8057157afdae23f6
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187-1.debian.tar.xz' linux_6.1.187-1.debian.tar.xz 1904540 SHA256:0d61e19cd8b6dcf83ac5a35a930cc132c37879dfe2f50dd889440d6026104729
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.180-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.180-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.180-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.187-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.187-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.187-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
