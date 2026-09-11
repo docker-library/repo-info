@@ -4246,20 +4246,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-4-33/copyright`, `/usr/shar
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=3.4.14-0.1
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.4.14-0.1.dsc' openexr_3.4.14-0.1.dsc 2261 SHA256:30540eb3d46620be9aaed388d0c179d5846a890e94baf48e0f1650ca3cd4d7a7
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.4.14.orig.tar.xz' openexr_3.4.14.orig.tar.xz 20598272 SHA256:5bc1a561a418ac59b5c309e42820dda0e6f4c087f10b5cf8e30c4899c1d68f09
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_3.4.14-0.1.debian.tar.xz' openexr_3.4.14-0.1.debian.tar.xz 19384 SHA256:d1f1929c2045562640f5c3cda3ef93ca49827e2ad91ae90fde243bd16a0aeeef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openexr/3.4.14-0.1/
 
-- https://sources.debian.net/src/openexr/3.4.14-0.1/ (for browsing the source)
-- https://sources.debian.net/src/openexr/3.4.14-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/3.4.14-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1.1`
 
@@ -4981,20 +4974,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-12
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-12.dsc' rust-sequoia-sq_1.3.1-12.dsc 4494 SHA256:76ad575d3ac66f2dc51b9af29270ed234040a925a3971505fc24091fe94f7b1f
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-12.debian.tar.xz' rust-sequoia-sq_1.3.1-12.debian.tar.xz 6348 SHA256:1dcc3cd24a9bb4354a471e4a7287d4c89f6614fe8c6712e57f03482339100b5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-12/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-12/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.4.0-1`
 
