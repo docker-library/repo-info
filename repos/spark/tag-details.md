@@ -81,10 +81,13 @@
 -	[`spark:latest`](#sparklatest)
 -	[`spark:python3`](#sparkpython3)
 -	[`spark:python3-java17`](#sparkpython3-java17)
+-	[`spark:python3-java25`](#sparkpython3-java25)
 -	[`spark:r`](#sparkr)
 -	[`spark:r-java17`](#sparkr-java17)
+-	[`spark:r-java25`](#sparkr-java25)
 -	[`spark:scala`](#sparkscala)
 -	[`spark:scala-java17`](#sparkscala-java17)
+-	[`spark:scala-java25`](#sparkscala-java25)
 
 ## `spark:3.5.9`
 
@@ -23581,6 +23584,10 @@ $ docker pull spark@sha256:e94be1af2cbfc8d6c14a6675a9274914ff147e178362c45ac4135
 		Size: 11.7 KB (11709 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `spark:python3-java25`
+
+**does not exist** (yet?)
+
 ## `spark:r`
 
 ```console
@@ -24191,6 +24198,10 @@ $ docker pull spark@sha256:8c9a9d1f2d1c8a47af745011d7a9c62795a27eed7a9167aae7024
 		Size: 11.7 KB (11682 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `spark:r-java25`
+
+**does not exist** (yet?)
+
 ## `spark:scala`
 
 ```console
@@ -24752,3 +24763,7 @@ $ docker pull spark@sha256:aed4075369ca9995793b702d2920bba6f652bf88fd061d22acbd8
 		Last Modified: Wed, 09 Sep 2026 20:29:23 GMT  
 		Size: 24.0 KB (24046 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `spark:scala-java25`
+
+**does not exist** (yet?)
