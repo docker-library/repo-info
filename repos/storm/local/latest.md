@@ -1,10 +1,10 @@
-# `storm:3.0.0-jre25`
+# `storm:3.1.0-jre25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b8d67d5ffbc6edcd86b8ed5c934bea9fb0b436c3e52f16fb4d4de43a7dafd1b`
-- Created: `2026-09-09T03:36:56.430359004Z`
-- Virtual Size: ~ 749.8 Mb  
+- Image ID: `sha256:1c74fb96ef6084847f1b96f9218e2f0d039e70678fc92fc556843cab606366ae`
+- Created: `2026-09-14T19:59:39.211598039Z`
+- Virtual Size: ~ 750.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
