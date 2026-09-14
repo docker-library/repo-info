@@ -4890,14 +4890,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.31.1-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.31.1.orig.tar.gz' libinput_1.31.1.orig.tar.gz 1175300 SHA512:624530d5263976ab6b309947616fd9bf07a28142fa13c7d3a8c71ee036d3b5981346fb5241c7a94d6bc1708e0e5aaa491ab1c63b29badb303c06f8f5592a4d71
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.31.1-1ubuntu1.1.debian.tar.xz' libinput_1.31.1-1ubuntu1.1.debian.tar.xz 12300 SHA512:71eca35d0c39e8b5bfad2e9ad8c9b242549a8411afa78c06bae0b47865c8a776ad70a6cd2f7bc2351ad020f82995af9996734106971c046a60c1d091436f3ffa
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.31.1-1ubuntu1.1.dsc' libinput_1.31.1-1ubuntu1.1.dsc 2527 SHA512:96bc2942441c93981e3ca2bdee66e13a7e23fddcd6177742f6521528a0f77ae1dd6846a6aad19fe1279e363fd7108ec78af4533bd218afea5f65885c5c5c9f98
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-4ubuntu4`
 

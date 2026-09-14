@@ -3040,10 +3040,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris icu=74.2-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2.orig.tar.gz' icu_74.2.orig.tar.gz 26618071 SHA256:5e4fb11d6a3e6b85afb55de8da8a71538f1d8fd64fce893986b37d60e5bb0091
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2.orig.tar.gz.asc' icu_74.2.orig.tar.gz.asc 659 SHA256:1ca528b0017bae639fec7e89e3f988d0fa7def3e2436e5f7f5f9ec7dec2d9ece
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2-1ubuntu3.1.debian.tar.xz' icu_74.2-1ubuntu3.1.debian.tar.xz 64432 SHA256:45c74f50709547b0bfe3de020fd77be92c44d55e7020e718b0a47a0d0382f074
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2-1ubuntu3.1.dsc' icu_74.2-1ubuntu3.1.dsc 2350 SHA256:6cbf2e7018b5d16d634994e32af96f4d60f4468c36674c57f897b68812bbd883
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2.orig.tar.gz' icu_74.2.orig.tar.gz 26618071 SHA512:0cbe29122370ba03a8fb5b0f1494f598748044ad2aa4d66ba65fe98ebeb88da2d73d324ad6bfc44e004846e0ab5c9a34d1fdf3d6bdb3095c0d47e929b943e6db
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2.orig.tar.gz.asc' icu_74.2.orig.tar.gz.asc 659 SHA512:e961664f91a66afe898041fb42950f925854cfe7f5a287f691b90ad79c215a14300cdd1aad94a310aa2b1cdda3d850ab978d1fe2eadba5fd46f375f4bcefcd11
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2-1ubuntu3.1.debian.tar.xz' icu_74.2-1ubuntu3.1.debian.tar.xz 64432 SHA512:967f2dfd11ea2a11f0cee4558b78b067ae2e169d279b39a1f2796457554f9147f23bb79c9f7873314c197f6a17598a989a58ab7bd3f12d49f0ec5b71a9666ed4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_74.2-1ubuntu3.1.dsc' icu_74.2-1ubuntu3.1.dsc 2350 SHA512:97c4d28b6887488adcf0079fbb43ec668ba2f38b9b924c391989316e6698c48fe430e5b7dd8cf5323915becbb98fe1748e19ce19402d2a3ed8416bd465de2d9a
 ```
 
 ### `dpkg` source package: `imath=3.1.9-3.1ubuntu2`
@@ -4338,14 +4338,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.25.0-1ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0.orig.tar.gz' libinput_1.25.0.orig.tar.gz 1016846 SHA512:17c668d04e3ff7d3e99519f7e7fe37377bd25e90ff36acc8c3f06f6de31265514780a0823b6fbd5712272a6b6f759bf768cb35b4f68c29828c1964899e9ee752
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.6.debian.tar.xz' libinput_1.25.0-1ubuntu3.6.debian.tar.xz 14616 SHA512:1ee6ddc6c1b64d351dc3d77374a98336cf526bc22154dff291d60ee0bfa2153b378096699a63f13fa989c5c90d3e29951e8001bd9e3dd76927c0c0bb26b721f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.6.dsc' libinput_1.25.0-1ubuntu3.6.dsc 2609 SHA512:25fffa29643c0b09d00d8685d2137b52568954a9a0f666274e349fa13ec4baf740a993103f9d6117ef765c0cf0afc7f0611fc11c608a6a514c30b64a37b32ae5
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-2ubuntu2`
 
