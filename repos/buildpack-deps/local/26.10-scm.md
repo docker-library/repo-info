@@ -313,13 +313,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`, `/usr/share/doc/co
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils-from=0.0.0~ubuntu29
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu29.tar.xz' coreutils-from_0.0.0~ubuntu29.tar.xz 7804 SHA512:f155fcff30302d25cdecfbfee686f1b36702a30625836ea7ed0f5a10186a28aa1f5eec5852688742d1a2544045b4e023d29998d8732499b6df4550dfd2615a7a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils-from/coreutils-from_0.0.0%7eubuntu29.dsc' coreutils-from_0.0.0~ubuntu29.dsc 1958 SHA512:3fd35a24f1b45b55c4786e976f709a6b03b0c0b66e89bc068ae20adb0bcff65bab8f3fcca43b8e7721471d5aa4345bfefe994c6434e74503dda9d7b3820a9a57
-```
 
 ### `dpkg` source package: `coreutils=9.10-1ubuntu2`
 
@@ -363,14 +359,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.20.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.20.0.orig.tar.gz' curl_8.20.0.orig.tar.gz 4220899 SHA512:0d8798d854a32d86ec260fdfabbcf983521a56589d8e5963543a88119e57d231c4a5f3e64737cff61845d837684c73ef58eff92f9c921ef03d87c1d37531e6bf
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.20.0-2ubuntu1.debian.tar.xz' curl_8.20.0-2ubuntu1.debian.tar.xz 56828 SHA512:8c6af76d9bb534c3904a8a4f21b7187ecc9370c3121c7f1f05c2dd404f2811a7d457fde290c5bc7727fe3c1cea869620aaab844181f9c62c24712499d2b82485
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.20.0-2ubuntu1.dsc' curl_8.20.0-2ubuntu1.dsc 3014 SHA512:649cd6b2db93fa9d92567a14463fd6d83c545dcde75bd4d59deb88904ea5d76342ed7d93b30db17b178fce7e3dad76cba3860acd4959c0fd62d439596183771a
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11ubuntu2`
 
@@ -669,14 +660,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.2.0.orig.tar.gz' gcc-16_16.2.0.orig.tar.gz 112184330 SHA512:6eb6fb95b7d08335b4036f20c8794b1c009d5f8e0f227c2f3503813b48e8512a13044c639d7c409072d8c49a294a0d21d420349ec69c168a85adcede9604c8e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.2.0-1ubuntu1.debian.tar.xz' gcc-16_16.2.0-1ubuntu1.debian.tar.xz 643976 SHA512:d533b439e528248d124415b4c0b7da8b1b4ce589cb859179bcda9dfbf1669b39b609c1774fd6fe6671410926b776575cb07c7b0d33283352966c335adeb92136
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.2.0-1ubuntu1.dsc' gcc-16_16.2.0-1ubuntu1.dsc 52995 SHA512:6995de1483386a3c07ee7d4fbb30b1b571c05145485b20ff32e3e01d65153fb535b2e82e737a21ea0ba937c7175870aeb168cdeb4cab65bb932a6761ce79f653
-```
 
 ### `dpkg` source package: `gdbm=1.26-1build1`
 
@@ -782,15 +768,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.3.debian.tar.xz' glibc_2.43-2ubuntu2.3.debian.tar.xz 522068 SHA512:ce62820ab900c8811da5c8789e5c22f731e6a3c5bcd1be4969cc6202d545c836d748264e50fa55e4d22f37715d27d70685257181c70313814389df52bc462b83
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.3.dsc' glibc_2.43-2ubuntu2.3.dsc 9078 SHA512:7df3df3b84f9434bd895a3f89de60bf4c65bbcaf068797160cd9e0604550c0f05e5ec22eff7e5d2175bdf45282e8f8d7f796d7b6de1fdc204f24ddb94ca97cb5
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
@@ -845,14 +825,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.9-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9.orig.tar.bz2' gnupg2_2.4.9.orig.tar.bz2 8086407 SHA512:4638016b390a0024fa0cbe14181c43a81991e4275043855397ef099b927985d175d32452fc15b06485623b9292662dd6da464b2e5def8b77b2e4e48a072ab521
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9-4ubuntu2.debian.tar.xz' gnupg2_2.4.9-4ubuntu2.debian.tar.xz 109096 SHA512:1ddb8260d9b3425cdbb391c0da8da72eb35f7a980a33fcb6e1a15cbceb4cb76242c486aa064f27c652bce4ad71de62bb71295e8aa9e851efe480f11414b36b40
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.9-4ubuntu2.dsc' gnupg2_2.4.9-4ubuntu2.dsc 4873 SHA512:529de19f6901c67f12fbb3a3c0bc0c354ff17b395f3b5797794cac2e41e313ceb997c93a76cc78498cf7618c463a07e4ecd06ff6edeabb429a325109b4f4d07d
-```
 
 ### `dpkg` source package: `gnutls28=3.8.13-1ubuntu1`
 
@@ -1242,15 +1217,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.12.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.2.orig.tar.bz2' libgcrypt20_1.12.2.orig.tar.bz2 4441855 SHA512:dc1a4a6c00a0d84d90c8d71f4bd121b968c80df74137d6e8867f1f4cc014a539efb5238c1a1429d7cb95e493a40718fc19252edc592ffe0f43057b372896591c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.2.orig.tar.bz2.asc' libgcrypt20_1.12.2.orig.tar.bz2.asc 265 SHA512:717f8ecb74f1260212af87f64e0c2ecf854ac4747569959b034ba729e6978be09c4bcc063ae39775e3b1f31c666fb9c7e98117a7f1a8fbfb12a6fcdf38afae92
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.2-1ubuntu1.debian.tar.xz' libgcrypt20_1.12.2-1ubuntu1.debian.tar.xz 41944 SHA512:911a8eebd28537966cb9e40b7d2de0368b6871a46cd4df49e4b3d2b050952eebb23a49bae5df95e4bbf407a87164ecc845b26ef8eb1c90b263821cfe207de494
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.12.2-1ubuntu1.dsc' libgcrypt20_1.12.2-1ubuntu1.dsc 3106 SHA512:afc09b21d7614ad14490b5972ee987a96872defdff7a10eb1a5e292dd5c210a37d48d917e17f5ea1568d5c35ec38db517c185df481d565d8d7182a83bd85035d
-```
 
 ### `dpkg` source package: `libgpg-error=1.61-3`
 
@@ -1809,15 +1778,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.69.0-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.69.0.orig.tar.gz' nghttp2_1.69.0.orig.tar.gz 2667714 SHA512:58c9c1165514040e9944ace8d0b5852578a1f2460d20929712f25dcba035c104d66865e53a97294a44b35bd7680f6525edcee7c547498829b27b1f14833608c8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.69.0.orig.tar.gz.asc' nghttp2_1.69.0.orig.tar.gz.asc 833 SHA512:794935dbad1663e10cc7b0c68fceca124bc10ed136448a5512697b2fd893bf157288057eca1dd286c10c9a5b8d51a1ae0ee10eb06b5361b5c6528e3abc2eb415
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.69.0-1ubuntu2.debian.tar.xz' nghttp2_1.69.0-1ubuntu2.debian.tar.xz 17840 SHA512:25cc335a929fb0ed333abce2353c98312bcebcc1c227043abbf3c2c9306c35ee6e921fa33acfcd2fa6b09772b544dad7f91d1ec7253a36411f991e08bf0f1812
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.69.0-1ubuntu2.dsc' nghttp2_1.69.0-1ubuntu2.dsc 2853 SHA512:e91fc519cb3db5823aee31fa2e833c9aed94c8a279895d01e7ffaef3dfe8675190e463742f1ee5af1f064324ed900fadf9e39edccb35326126299729c0b6fbbd
-```
 
 ### `dpkg` source package: `npth=1.8-3build1`
 
@@ -1899,14 +1862,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.3p1-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.3p1.orig.tar.gz' openssh_10.3p1.orig.tar.gz 2007369 SHA512:cb2bd67086491c25e305879b924c3dfa8236502a60c7f250b2fd17d2d9a79ebfc2e40b2f43e42dcf598cc510996e00cc03df9b8e38f34bc2dc71a3d4ff3788fa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.3p1-4ubuntu2.debian.tar.xz' openssh_10.3p1-4ubuntu2.debian.tar.xz 217356 SHA512:dfc284f345916f90b83ef8d071703c346ff6e5fdbc90538857b9876a61429b81006133ff89bf4d839477d07af28630be452cb45ff20fd4424f61a46058a98e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.3p1-4ubuntu2.dsc' openssh_10.3p1-4ubuntu2.dsc 3280 SHA512:d123338badff06c40e18c81a8478ebf64b2ac96bb54f3790226cfa1a2ca841b3e4c09929d238232a8ad0b46eec33e88e29f619330507fcb0b845583df8c509cd
-```
 
 ### `dpkg` source package: `openssl=3.5.5-1ubuntu4`
 
@@ -2186,14 +2144,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.14-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.14=3.14.6-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.14/python3.14_3.14.6-1.dsc' python3.14_3.14.6-1.dsc 3480 SHA512:e272b5fa1c2148b542a1d4a88942bc5f4ab69acb6623bbbfc01223cb0f9624629a662610d779534625fed8a817fdd99223b9aa4684b8c654cda1b50e42ceb290
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.14/python3.14_3.14.6.orig.tar.xz' python3.14_3.14.6.orig.tar.xz 23921184 SHA512:90a82f46c28f0fca613b67358fdc57c145ab05d20fb56bf3bc0c9e4e54947c7d30fbaa6856c41a41909237a9e601d1a7d19579d4b25c7a784ebcfe9012defc41
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.14/python3.14_3.14.6-1.debian.tar.xz' python3.14_3.14.6-1.debian.tar.xz 223848 SHA512:bc480ba381e573b90ce9903a807911cd1bc1a3a6b1786b0692725addb630c06231f0f4807853604a04129714d730127cb59a9cf21e579b8f4d153f6e938d28db
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.14/3.14.6-1/
+
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -2251,14 +2208,9 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA512:3aa4468b7bcb27532907ce759852e6b92b394a2fc91953b9f3723b9deaab3661c84fb298d79ef3332467aa7a5ca1158d6a8bd65dd961d30aafdcfb34a867c880
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-10ubuntu1.debian.tar.xz' rust-sequoia-sq_1.3.1-10ubuntu1.debian.tar.xz 24681944 SHA512:6376c48010a7d241f628b040b58972dfd069a7304bc9aa92b65b93c42ce86d8a1f5a2bfc5aaccaf4a6a79748f8c2e94f4e240145bd324206d947ec93456215a9
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-10ubuntu1.dsc' rust-sequoia-sq_1.3.1-10ubuntu1.dsc 8378 SHA512:2e7759e46f867f92afa32f7518dde808b20c6fcdd56772ca64549a3aa12afe24208a3edc0ba3d0063cf20f1856eb6675e372ac0602078c191ddefbbd74b8cc22
-```
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.4.0-1ubuntu2`
 
@@ -2640,14 +2592,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.25.0-2ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0.orig.tar.gz' wget_1.25.0.orig.tar.gz 5263736 SHA512:a7ce33c07a1a206a8574b6e9ea7cc5292315df0914edbcf05a014d35ae9e3d24699a46818b409b884ada57428cf30502f4bbb3767cae2c6934e4e7fb2d0c5036
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu6.debian.tar.xz' wget_1.25.0-2ubuntu6.debian.tar.xz 34604 SHA512:598cbb76e037d693b89ab606aa4cc107d10b074d5211fe4fb2c3d9b4a5f63c42f78f67bb1e2f4389a046fe1100794d372e4cf0f04afa34f37691ee89bf189cd1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.25.0-2ubuntu6.dsc' wget_1.25.0-2ubuntu6.dsc 2139 SHA512:ed8716e5b3f1964a04cb46938b0eec54afed07beadfbd4251d9538d97b74962b3ad5fd3bd2f4a6069131206ab99f535a66e60198191a5a8673117f75dbe0831e
-```
 
 ### `dpkg` source package: `xxhash=0.8.3-2build1`
 

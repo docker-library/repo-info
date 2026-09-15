@@ -372,20 +372,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-3
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.dsc' bash_5.3-3.dsc 2141 SHA256:8675ad0389cda5d0494f4b6b1e08a03c83a55a44e303e02d91a65dc58749b522
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.debian.tar.xz' bash_5.3-3.debian.tar.xz 91936 SHA256:d2542e1e6c33511266814496916a72a7a5aa50f690fba7f37a1308fc73f6407a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.3-3/
 
-- https://sources.debian.net/src/bash/5.3-3/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.47-2`
 
@@ -3863,21 +3856,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.8-1
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8-1.dsc' mariadb_11.8.8-1.dsc 5637 SHA256:92d2ce77abb8a895977299ef878969749b88c22cf8f53b1661a31188f7514aa4
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8.orig.tar.gz' mariadb_11.8.8.orig.tar.gz 119402982 SHA256:bd023a4959faf012db7f0ebfc0d276729e67e5443df193163f98d80fdfc524c9
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8.orig.tar.gz.asc' mariadb_11.8.8.orig.tar.gz.asc 833 SHA256:12601a392e99fc15abd5c03abe3b5217d50e8a8578fc93fd3a6cd871552e6065
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.8-1.debian.tar.xz' mariadb_11.8.8-1.debian.tar.xz 303436 SHA256:01fff8e0ce19920d371f11a2eb623e3a72952ea415602186816621ddf3c48fb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.8-1/
 
-- https://sources.debian.net/src/mariadb/1:11.8.8-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-1`
 
@@ -4828,20 +4813,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-1/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.6-3
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-3.dsc' procps_4.0.6-3.dsc 2124 SHA256:4e1816635c1a5d7d62ba740429c17fd711a1192eed3c1b56ab6f0ffbefbc4d31
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6.orig.tar.xz' procps_4.0.6.orig.tar.xz 1577796 SHA256:069333015b10e79440a0884b8d72400819b2ea8d1e77e2b2c3e75de5291eced4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.6-3.debian.tar.xz' procps_4.0.6-3.debian.tar.xz 29768 SHA256:e17bf54c282647dc70f195cb3088e7dbb9983576523039253aa7a40335d07c86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.6-3/
 
-- https://sources.debian.net/src/procps/2:4.0.6-3/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-packaging=26.2-2`
 
