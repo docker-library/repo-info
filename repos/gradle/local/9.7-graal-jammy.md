@@ -1165,9 +1165,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
 ```
 
 ### `dpkg` source package: `libbsd=0.11.5-1`
