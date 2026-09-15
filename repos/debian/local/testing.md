@@ -199,20 +199,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-3
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.dsc' bash_5.3-3.dsc 2141 SHA256:8675ad0389cda5d0494f4b6b1e08a03c83a55a44e303e02d91a65dc58749b522
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-3.debian.tar.xz' bash_5.3-3.debian.tar.xz 91936 SHA256:d2542e1e6c33511266814496916a72a7a5aa50f690fba7f37a1308fc73f6407a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.3-3/
 
-- https://sources.debian.net/src/bash/5.3-3/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
