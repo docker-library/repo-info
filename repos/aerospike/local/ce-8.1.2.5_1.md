@@ -1,10 +1,10 @@
-# `aerospike:ce-8.1.2.4`
+# `aerospike:ce-8.1.2.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6892e70465684f5faaaca5b40714ae2ece734a492bb379de6469185903458897`
-- Created: `2026-09-09T02:12:46.416289622Z`
-- Virtual Size: ~ 339.9 Mb  
+- Image ID: `sha256:470d8af06c46a5cf693c9d95775268cb75fdf3cde177c50c0aafd5b3c27a248f`
+- Created: `2026-09-12T00:08:54.932714342Z`
+- Virtual Size: ~ 329.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=8.1.2.4`
+  - `org.opencontainers.image.version=8.1.2.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -47,11 +47,11 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.dsc' acl_2.3.2-1build1.1.dsc 2616 SHA512:484c1b046c3d1fa9fc2837cb0612da89ea65fab4ed823ac41b0d7b3fc5deb12d1a30208e24ccc04ae9529a105ddd36d8ead48c22eb14df37f97b1d9e05dfb7bb
 ```
 
-### `dpkg` source package: `aerospike-server-community=8.1.2.4-4`
+### `dpkg` source package: `aerospike-server-community=8.1.2.5-20`
 
 Binary Packages:
 
-- `aerospike-server-community=8.1.2.4-4`
+- `aerospike-server-community=8.1.2.5-20`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -61,11 +61,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `aerospike-tools=13.0.2+rc1`
+### `dpkg` source package: `aerospike-tools=13.0.3-5ubuntu24.04`
 
 Binary Packages:
 
-- `aerospike-tools=13.0.2+rc1`
+- `aerospike-tools=13.0.3-5ubuntu24.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
