@@ -1,9 +1,9 @@
-# `nextcloud:33.0.8-fpm-alpine`
+# `nextcloud:33.0.9-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:41e3ff30bb1e087c586f696fc8e6f2aed3968a220d5c738b24f2fb168c9bfdc1`
-- Created: `2026-08-27T20:37:09.163907825Z`
+- Image ID: `sha256:3fc286ede9c841165e0508f961ab20c375ffea507244279112244fa1bf9132fc`
+- Created: `2026-09-11T23:20:35.385290229Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=33.0.8`
+  - `NEXTCLOUD_VERSION=33.0.9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -643,16 +643,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.27-r0 description:
+imagemagick-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.27-r0 webpage:
+imagemagick-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.27-r0 installed size:
-3700 KiB
+imagemagick-7.1.2.30-r0 installed size:
+3758 KiB
 
-imagemagick-7.1.2.27-r0 license:
+imagemagick-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-heic`
 
 ```console
-imagemagick-heic-7.1.2.27-r0 description:
+imagemagick-heic-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (HEIC support modules)
 
-imagemagick-heic-7.1.2.27-r0 webpage:
+imagemagick-heic-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-heic-7.1.2.27-r0 installed size:
+imagemagick-heic-7.1.2.30-r0 installed size:
 46 KiB
 
-imagemagick-heic-7.1.2.27-r0 license:
+imagemagick-heic-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.27-r0 description:
+imagemagick-jp2-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.27-r0 webpage:
+imagemagick-jp2-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.27-r0 installed size:
+imagemagick-jp2-7.1.2.30-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.27-r0 license:
+imagemagick-jp2-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.27-r0 description:
+imagemagick-jpeg-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.27-r0 webpage:
+imagemagick-jpeg-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.27-r0 installed size:
+imagemagick-jpeg-7.1.2.30-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.27-r0 license:
+imagemagick-jpeg-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.27-r0 description:
+imagemagick-libs-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.27-r0 webpage:
+imagemagick-libs-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.27-r0 installed size:
-4313 KiB
+imagemagick-libs-7.1.2.30-r0 installed size:
+4301 KiB
 
-imagemagick-libs-7.1.2.27-r0 license:
+imagemagick-libs-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pango`
 
 ```console
-imagemagick-pango-7.1.2.27-r0 description:
+imagemagick-pango-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (pango support modules)
 
-imagemagick-pango-7.1.2.27-r0 webpage:
+imagemagick-pango-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pango-7.1.2.27-r0 installed size:
+imagemagick-pango-7.1.2.30-r0 installed size:
 22 KiB
 
-imagemagick-pango-7.1.2.27-r0 license:
+imagemagick-pango-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -745,16 +745,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.27-r0 description:
+imagemagick-pdf-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.27-r0 webpage:
+imagemagick-pdf-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.27-r0 installed size:
+imagemagick-pdf-7.1.2.30-r0 installed size:
 125 KiB
 
-imagemagick-pdf-7.1.2.27-r0 license:
+imagemagick-pdf-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -762,16 +762,16 @@ ImageMagick
 ### `apk` package: `imagemagick-raw`
 
 ```console
-imagemagick-raw-7.1.2.27-r0 description:
+imagemagick-raw-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (RAW support modules)
 
-imagemagick-raw-7.1.2.27-r0 webpage:
+imagemagick-raw-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-raw-7.1.2.27-r0 installed size:
+imagemagick-raw-7.1.2.30-r0 installed size:
 22 KiB
 
-imagemagick-raw-7.1.2.27-r0 license:
+imagemagick-raw-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -779,16 +779,16 @@ ImageMagick
 ### `apk` package: `imagemagick-svg`
 
 ```console
-imagemagick-svg-7.1.2.27-r0 description:
+imagemagick-svg-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (SVG support modules)
 
-imagemagick-svg-7.1.2.27-r0 webpage:
+imagemagick-svg-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-svg-7.1.2.27-r0 installed size:
+imagemagick-svg-7.1.2.30-r0 installed size:
 75 KiB
 
-imagemagick-svg-7.1.2.27-r0 license:
+imagemagick-svg-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -796,16 +796,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.27-r0 description:
+imagemagick-tiff-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.27-r0 webpage:
+imagemagick-tiff-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.27-r0 installed size:
-115 KiB
+imagemagick-tiff-7.1.2.30-r0 installed size:
+119 KiB
 
-imagemagick-tiff-7.1.2.27-r0 license:
+imagemagick-tiff-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -813,16 +813,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.27-r0 description:
+imagemagick-webp-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.27-r0 webpage:
+imagemagick-webp-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.27-r0 installed size:
+imagemagick-webp-7.1.2.30-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.27-r0 license:
+imagemagick-webp-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -881,16 +881,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42.1-r0 description:
+libblkid-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.42.1-r0 webpage:
+libblkid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42.1-r0 installed size:
+libblkid-2.42.3-r1 installed size:
 198 KiB
 
-libblkid-2.42.1-r0 license:
+libblkid-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1034,16 +1034,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1340,16 +1340,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42.1-r0 description:
+libmount-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libmount-2.42.1-r0 webpage:
+libmount-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42.1-r0 installed size:
-282 KiB
+libmount-2.42.3-r1 installed size:
+286 KiB
 
-libmount-2.42.1-r0 license:
+libmount-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1629,16 +1629,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42.1-r0 description:
+libuuid-2.42.3-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42.1-r0 webpage:
+libuuid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42.1-r0 installed size:
+libuuid-2.42.3-r1 installed size:
 29 KiB
 
-libuuid-2.42.1-r0 license:
+libuuid-2.42.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -2071,16 +2071,16 @@ LGPL-2.1-or-later
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
@@ -2156,16 +2156,16 @@ GPL-3.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.4.3-r1 description:
+rsync-3.5.0-r0 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.4.3-r1 webpage:
+rsync-3.5.0-r0 webpage:
 https://rsync.samba.org/
 
-rsync-3.4.3-r1 installed size:
-389 KiB
+rsync-3.5.0-r0 installed size:
+431 KiB
 
-rsync-3.4.3-r1 license:
+rsync-3.5.0-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -2275,16 +2275,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.3-r0 description:
+xz-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.3-r0 webpage:
+xz-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.3-r0 installed size:
+xz-5.8.4-r0 installed size:
 162 KiB
 
-xz-5.8.3-r0 license:
+xz-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -2292,16 +2292,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
