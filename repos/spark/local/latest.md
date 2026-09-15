@@ -1,10 +1,10 @@
-# `spark:4.1.3-scala2.13-java21-python3-ubuntu`
+# `spark:4.2.0-scala2.13-java21-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4a3b4ef6703c1fce503b866c46f09d7da7cdd0112844fc51f03f18ee8e461eb`
-- Created: `2026-09-09T20:58:53.838490917Z`
-- Virtual Size: ~ 1.35 Gb  
+- Image ID: `sha256:6cb9d6e1de29251739b13a882adb539b71d43d1ca91bbf297067ba859ceb0615`
+- Created: `2026-09-09T22:11:57.563509685Z`
+- Virtual Size: ~ 1.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.12+8`
-  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.3/spark-4.1.3-bin-hadoop3.tgz?action=download`
-  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.3/spark-4.1.3-bin-hadoop3.tgz.asc?action=download`
-  - `GPG_KEY=D05CF4F16124A4B97D7F96C417C47D58C0A604AC`
+  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz?action=download`
+  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz.asc?action=download`
+  - `GPG_KEY=709226B910E0F10917123B6259B586ADA5A538D1`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -1243,9 +1243,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
 ```
 
 ### `dpkg` source package: `libalgorithm-diff-perl=1.201-1`
