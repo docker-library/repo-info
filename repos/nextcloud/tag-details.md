@@ -38,6 +38,18 @@
 -	[`nextcloud:34.0.4-apache`](#nextcloud3404-apache)
 -	[`nextcloud:34.0.4-fpm`](#nextcloud3404-fpm)
 -	[`nextcloud:34.0.4-fpm-alpine`](#nextcloud3404-fpm-alpine)
+-	[`nextcloud:35`](#nextcloud35)
+-	[`nextcloud:35-apache`](#nextcloud35-apache)
+-	[`nextcloud:35-fpm`](#nextcloud35-fpm)
+-	[`nextcloud:35-fpm-alpine`](#nextcloud35-fpm-alpine)
+-	[`nextcloud:35.0`](#nextcloud350)
+-	[`nextcloud:35.0-apache`](#nextcloud350-apache)
+-	[`nextcloud:35.0-fpm`](#nextcloud350-fpm)
+-	[`nextcloud:35.0-fpm-alpine`](#nextcloud350-fpm-alpine)
+-	[`nextcloud:35.0.0`](#nextcloud3500)
+-	[`nextcloud:35.0.0-apache`](#nextcloud3500-apache)
+-	[`nextcloud:35.0.0-fpm`](#nextcloud3500-fpm)
+-	[`nextcloud:35.0.0-fpm-alpine`](#nextcloud3500-fpm-alpine)
 -	[`nextcloud:apache`](#nextcloudapache)
 -	[`nextcloud:fpm`](#nextcloudfpm)
 -	[`nextcloud:fpm-alpine`](#nextcloudfpm-alpine)
@@ -54362,6 +54374,54 @@ $ docker pull nextcloud@sha256:e836fe44600eacd7148d90a217ab3d31203ce2b9bac334fb9
 		Last Modified: Wed, 16 Sep 2026 04:31:14 GMT  
 		Size: 44.5 KB (44509 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `nextcloud:35`
+
+**does not exist** (yet?)
+
+## `nextcloud:35-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:35-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:35-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0.0`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0.0-apache`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0.0-fpm`
+
+**does not exist** (yet?)
+
+## `nextcloud:35.0.0-fpm-alpine`
+
+**does not exist** (yet?)
 
 ## `nextcloud:apache`
 
