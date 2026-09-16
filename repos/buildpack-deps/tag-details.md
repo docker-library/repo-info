@@ -1791,7 +1791,7 @@ $ docker pull buildpack-deps@sha256:8d367d7e65d6808931961bd9a39ca656057fab9d3347
 ## `buildpack-deps:24.04-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:e6b09e25215618a5b5ff2758ae07ae2552d6eaca1c601f9608238eac8e97f9f4
+$ docker pull buildpack-deps@sha256:d0853560201a33f52f8009255a9fcdea524be1cd5982160b365ca8f95234ea39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1995,61 +1995,61 @@ $ docker pull buildpack-deps@sha256:4933c82cc5316267c14775eb84961bb5f6417ed8f21a
 ### `buildpack-deps:24.04-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:b55fbbf0a58c74ac44ccc3f2758a38eea59431733c74871bdc27ff999a8b349f
+$ docker pull buildpack-deps@sha256:4544f044f3674176b3f30e763d93d4d96062d6fe591f34adf3dc432d73809e0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50292386 bytes)**  
+-	Total Size: **50.3 MB (50291753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7791fe1d0239243e4befb8b3ff80ba5cb34f256da98dcb64db3e0c672341926e`
+-	Image ID: `sha256:ed6236a09967355d8ab34574e6fb5c89a9fbac7b7abe627f4e33dbcf79e447be`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG RELEASE
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 07 Sep 2026 07:38:43 GMT
-ADD file:b613d8cbbfcdd39316d0cc2ab20f713e42c2ffc939072314f82208cec1f794df in / 
-# Mon, 07 Sep 2026 07:38:44 GMT
+# Fri, 11 Sep 2026 11:54:04 GMT
+ADD file:23a54200dc45d2e165b80cd813d76a8863b2e15710bb20b738f813328f74d05b in / 
+# Fri, 11 Sep 2026 11:54:05 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 08:26:36 GMT
+# Wed, 16 Sep 2026 06:44:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:4b9f3660b529a1e81f04825056359c345d486cfb05010302b88737a58d21db86`  
-		Last Modified: Mon, 07 Sep 2026 07:57:18 GMT  
-		Size: 34.4 MB (34376879 bytes)  
+	-	`sha256:a7067f7ee788cc3e90f83fa0ac84d48a200fde4469a2a5e638f059842a8f11d1`  
+		Last Modified: Fri, 11 Sep 2026 13:39:01 GMT  
+		Size: 34.4 MB (34376958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fd789139c90474cd14d0f1d64890b57524ae7f44613110a6629eeb565746a1`  
-		Last Modified: Wed, 09 Sep 2026 08:26:52 GMT  
-		Size: 15.9 MB (15915507 bytes)  
+	-	`sha256:fb38d31ef3f1ef764251762eab36e1e4339f9b85ee3d6ecc79887237a849131c`  
+		Last Modified: Wed, 16 Sep 2026 06:44:48 GMT  
+		Size: 15.9 MB (15914795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:24.04-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:9815dc22d08406fddb23e05c20e3c1ff90769eef17614b4120750e292306ddeb
+$ docker pull buildpack-deps@sha256:dbedfd96f6756700487085e2cde4a2e743c79bfd43213dc819d1fc53cd094c35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2603216 bytes)**  
+-	Total Size: **2.6 MB (2603226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:101a0d2bd91e20d0d55442f25ebc43096458cce75db8174816444456c1fa5796`
+-	Image ID: `sha256:84c0f53d7c8b271166de6e7464b935aaf8c79f8dd11f563988b6d34531f7aaab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06280092622946524528e98d75a81f39cbba3fa4d573feb2d5dd644822a97af0`  
-		Last Modified: Wed, 09 Sep 2026 08:26:51 GMT  
-		Size: 2.6 MB (2596268 bytes)  
+	-	`sha256:1f0b20df6300739173d2f5b02442fed2c06c785c3783e1918625010262249a96`  
+		Last Modified: Wed, 16 Sep 2026 06:44:47 GMT  
+		Size: 2.6 MB (2596278 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:768d54baf60d8f48ada8b730e0bd40c12d5c72c3e2f59811ae68a4b12105e9d8`  
-		Last Modified: Wed, 09 Sep 2026 08:26:51 GMT  
+	-	`sha256:8159d8d04f3f38f58a2c47c2783e5a69b3f632b044ce498723982198152bb9ba`  
+		Last Modified: Wed, 16 Sep 2026 06:44:47 GMT  
 		Size: 6.9 KB (6948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2178,7 +2178,7 @@ $ docker pull buildpack-deps@sha256:6d7472400edb85bb0b68d27e44a89a79845e4f2718e5
 ## `buildpack-deps:24.04-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:8e91922f7df0338948d606da2b395cf60a229e98d0ef3a6cf56edd133e710d63
+$ docker pull buildpack-deps@sha256:04fba4abaddcba1e895864bc55960a1a49fae77ce033438623c64921d60318f9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2400,67 +2400,67 @@ $ docker pull buildpack-deps@sha256:82a256e8813bb94cee1d36a7db8331449592151b783f
 ### `buildpack-deps:24.04-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:292e4b635f9b10bb25a66b3f2a922d31565464053bedadf46de473f272c85221
+$ docker pull buildpack-deps@sha256:0b944ece23c7b0ba4cd71cf19be24a51d7d3cb3f9b1d230d5fc75f6904f24eed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100680501 bytes)**  
+-	Total Size: **100.7 MB (100681090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab9c936becf4dd13af96c40c86bfdcdecd0bacd1f350de90dd81b91bcfce2e3c`
+-	Image ID: `sha256:2f221e556287c6dfcbe4be394a4959cefe3bb0012b98484dd2c394376bd920f4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG RELEASE
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 07 Sep 2026 07:38:43 GMT
-ADD file:b613d8cbbfcdd39316d0cc2ab20f713e42c2ffc939072314f82208cec1f794df in / 
-# Mon, 07 Sep 2026 07:38:44 GMT
+# Fri, 11 Sep 2026 11:54:04 GMT
+ADD file:23a54200dc45d2e165b80cd813d76a8863b2e15710bb20b738f813328f74d05b in / 
+# Fri, 11 Sep 2026 11:54:05 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 08:26:36 GMT
+# Wed, 16 Sep 2026 06:44:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 11:57:41 GMT
+# Wed, 16 Sep 2026 08:35:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:4b9f3660b529a1e81f04825056359c345d486cfb05010302b88737a58d21db86`  
-		Last Modified: Mon, 07 Sep 2026 07:57:18 GMT  
-		Size: 34.4 MB (34376879 bytes)  
+	-	`sha256:a7067f7ee788cc3e90f83fa0ac84d48a200fde4469a2a5e638f059842a8f11d1`  
+		Last Modified: Fri, 11 Sep 2026 13:39:01 GMT  
+		Size: 34.4 MB (34376958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fd789139c90474cd14d0f1d64890b57524ae7f44613110a6629eeb565746a1`  
-		Last Modified: Wed, 09 Sep 2026 08:26:52 GMT  
-		Size: 15.9 MB (15915507 bytes)  
+	-	`sha256:fb38d31ef3f1ef764251762eab36e1e4339f9b85ee3d6ecc79887237a849131c`  
+		Last Modified: Wed, 16 Sep 2026 06:44:48 GMT  
+		Size: 15.9 MB (15914795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25731584d89277a0bd4f1efc9b5be6e658dd88951e3d6f52cdb3ffb1b476f7a`  
-		Last Modified: Wed, 09 Sep 2026 11:58:17 GMT  
-		Size: 50.4 MB (50388115 bytes)  
+	-	`sha256:b72e80ce47ea96c54b0b69cd13738614b54bb836e8dda46ba081285fa5a10702`  
+		Last Modified: Wed, 16 Sep 2026 08:36:17 GMT  
+		Size: 50.4 MB (50389337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:24.04-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a64daf723877a5b408c8d3bdda80a2cd888d507031856f3e41b53dedd5da5f63
+$ docker pull buildpack-deps@sha256:6466fb98a15ff464ed33e4ac4becd6f3f2e38f04f837aa86a781407851322a8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5273592 bytes)**  
+-	Total Size: **5.3 MB (5273602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89f7156ea6f9b91e6f05b3bd49e0f83c835fedda6edf74b0f80de4938eb1c1f1`
+-	Image ID: `sha256:5708fb73b64323c5c3a20d51f4dc25d51895753b5c47af24e90f92bf8d88ee9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a41935894712dff96d685458dbec32a6c2c6921e5a2f6a15e7460ba8b694d707`  
-		Last Modified: Wed, 09 Sep 2026 11:58:16 GMT  
-		Size: 5.3 MB (5266298 bytes)  
+	-	`sha256:ddce5087139da91b60b093f354b090859b4115cc09d648da3d1b67a43ad71e21`  
+		Last Modified: Wed, 16 Sep 2026 08:36:16 GMT  
+		Size: 5.3 MB (5266308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59f193d80d09a22a83e64d0bbcf7417cf4f4b4c0a5ab8bae094fb1e3df3b4185`  
-		Last Modified: Wed, 09 Sep 2026 11:58:15 GMT  
+	-	`sha256:cc3827b8a02b32488a10a4730ae5b885eefe7bdbed7036a67b2da2f9083449aa`  
+		Last Modified: Wed, 16 Sep 2026 08:36:15 GMT  
 		Size: 7.3 KB (7294 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3085,7 +3085,7 @@ $ docker pull buildpack-deps@sha256:61592cd7427e81835d25ff477bb4f42c5d9bfd2e5ace
 ## `buildpack-deps:26.04-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:90ae12a996fe71c0513897977731522ba89422ebcfd3971b26bb5259d0d2fcfe
+$ docker pull buildpack-deps@sha256:fcee4cd35246e93c64b491c2b7ba570f9c5a128eba55e387ff7e4cc5ed79cf4b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3347,82 +3347,82 @@ $ docker pull buildpack-deps@sha256:49db1aa704a10fe16ff744ae04522c881efb7d931c31
 ### `buildpack-deps:26.04-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:1b18bff23f0a761bc22c5475abaff8be351094533faf2d0f0b1f9915d5bcd022
+$ docker pull buildpack-deps@sha256:be0a9a45e056f261ca74a6024336fb82e6f3aeb9e97adbe715cbf90098fae942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68782246 bytes)**  
+-	Total Size: **68.8 MB (68793211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea4f03a75cdea2b62d4ff92b72416487737be1d4d1dc9314d566619a5791daad`
+-	Image ID: `sha256:f3262ba9cc827319ec0b7778201fb4b55a4ed1d7fd64bc6e78f756b7453ae508`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:39:28 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.9376.tar --tag 26.04
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:49 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.9566.tar --tag 26.04
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.control_data.9376.tar
-# Wed, 09 Sep 2026 04:54:14 GMT
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.control_data.9566.tar
+# Wed, 16 Sep 2026 06:44:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c1b37b8cb426f7a210dd8786c06f171c63481c6db3c316a2614bec3766a0ae59`  
-		Last Modified: Wed, 02 Sep 2026 10:46:24 GMT  
-		Size: 46.8 MB (46812713 bytes)  
+	-	`sha256:962bf9d875d6e8ff3c9b897eff15c72d89dbe29382b528395357e9d833c32fca`  
+		Last Modified: Sat, 12 Sep 2026 12:56:54 GMT  
+		Size: 46.8 MB (46823153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7921daa91a183933e9f6e51aa305ae2abf302203e4844d9714a4990c4dd3996b`  
-		Last Modified: Wed, 02 Sep 2026 10:46:27 GMT  
-		Size: 392.0 B  
+	-	`sha256:3b636516270ec3ead8a7f42e0dcac6372059cb5d7dc0a8fecbb3f92457667620`  
+		Last Modified: Sat, 12 Sep 2026 12:56:57 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37dc6d42e754679fade1f9c30437bc32546b1738dad5e82f7852ab73a56c735c`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 22.0 MB (21969141 bytes)  
+	-	`sha256:e302b07a230b20ee5e1a4c25f81e2062809dbc5d90d9c7d0a94d28e91c81d768`  
+		Last Modified: Wed, 16 Sep 2026 06:45:08 GMT  
+		Size: 22.0 MB (21969667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:26.04-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:2bbfd25091b317086e08e37842dcfbcafd6d548a210b83a18e5f1cfa1a3b6939
+$ docker pull buildpack-deps@sha256:dcf30a6d9e91ef3853f38e7662b0601ae39b35b46004a82bbec3385403a591b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4427645 bytes)**  
+-	Total Size: **4.4 MB (4426041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1bc8addfada73efc8cae3a966115f2e3ad4432648955b8621bd55fbe3c8f8fe`
+-	Image ID: `sha256:f9cba139ddfbd29a5022ab3b69152081171ab56114468283cec6bd249c836f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eccbf6ddaafa4d723f201a14555863ddd50d1f4ca1035a29c08319e7a735ec74`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 4.4 MB (4420370 bytes)  
+	-	`sha256:92e10b1d14deedf9e82d56d18d96b15af9b8b6515cab03a96d7c2bb9c509061c`  
+		Last Modified: Wed, 16 Sep 2026 06:45:07 GMT  
+		Size: 4.4 MB (4418767 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe698b900dbfbccfcb199e5f536165d666ee504a6d34b7b870f30024ecb5876a`  
-		Last Modified: Wed, 09 Sep 2026 04:55:08 GMT  
-		Size: 7.3 KB (7275 bytes)  
+	-	`sha256:31b285f6f512118248f80ec69f6b0e9eaa3121633ccc599d511a5fd434f6d101`  
+		Last Modified: Wed, 16 Sep 2026 06:45:07 GMT  
+		Size: 7.3 KB (7274 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:26.04-curl` - linux; s390x
@@ -3509,7 +3509,7 @@ $ docker pull buildpack-deps@sha256:c411fbb8a73195477282a9b6c3c78c3ca63024a76196
 ## `buildpack-deps:26.04-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f2cd0bf7aaba5352f159f3ed52e52195100b7874cabb59228c9683904d11b7b5
+$ docker pull buildpack-deps@sha256:48b796acfb0786e92c33c7d882ad40b3f3bcc4d02746d9b511384aba39e83f1a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3789,88 +3789,88 @@ $ docker pull buildpack-deps@sha256:596398742dcbb4ca02bda0c507820e6aecc3b10a7109
 ### `buildpack-deps:26.04-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:0942160d4b8a08dfd1df6cf3c62041fc886b7a003b53e87f22091a99d3ad54fa
+$ docker pull buildpack-deps@sha256:12167cc7c244fa725f1def276552ea082793e4c62d71e15d2966e21d1110af59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.8 MB (126812824 bytes)**  
+-	Total Size: **124.2 MB (124231134 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9ea106367ebf043189f2b59f1ed2795eb029f97c8daa16e80ac443a7357adcc`
+-	Image ID: `sha256:288d8e7ef7f91c4b2997f01cda9551bf9a0389fc6dd21bb29d9d50621594c291`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:39:28 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.9376.tar --tag 26.04
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:49 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.9566.tar --tag 26.04
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.control_data.9376.tar
-# Wed, 09 Sep 2026 04:54:14 GMT
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.control_data.9566.tar
+# Wed, 16 Sep 2026 06:44:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 08:40:07 GMT
+# Wed, 16 Sep 2026 08:35:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c1b37b8cb426f7a210dd8786c06f171c63481c6db3c316a2614bec3766a0ae59`  
-		Last Modified: Wed, 02 Sep 2026 10:46:24 GMT  
-		Size: 46.8 MB (46812713 bytes)  
+	-	`sha256:962bf9d875d6e8ff3c9b897eff15c72d89dbe29382b528395357e9d833c32fca`  
+		Last Modified: Sat, 12 Sep 2026 12:56:54 GMT  
+		Size: 46.8 MB (46823153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7921daa91a183933e9f6e51aa305ae2abf302203e4844d9714a4990c4dd3996b`  
-		Last Modified: Wed, 02 Sep 2026 10:46:27 GMT  
-		Size: 392.0 B  
+	-	`sha256:3b636516270ec3ead8a7f42e0dcac6372059cb5d7dc0a8fecbb3f92457667620`  
+		Last Modified: Sat, 12 Sep 2026 12:56:57 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37dc6d42e754679fade1f9c30437bc32546b1738dad5e82f7852ab73a56c735c`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 22.0 MB (21969141 bytes)  
+	-	`sha256:e302b07a230b20ee5e1a4c25f81e2062809dbc5d90d9c7d0a94d28e91c81d768`  
+		Last Modified: Wed, 16 Sep 2026 06:45:08 GMT  
+		Size: 22.0 MB (21969667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3490daaafe0b0deabdc59fb1a6376e8746e80dd034cba91588f8d89cbcfe6251`  
-		Last Modified: Wed, 09 Sep 2026 08:41:48 GMT  
-		Size: 58.0 MB (58030578 bytes)  
+	-	`sha256:afb7c98af20a6d5c56174ad4b750ac9f15228f9ba3af6f899a0248505e91b7e9`  
+		Last Modified: Wed, 16 Sep 2026 08:36:41 GMT  
+		Size: 55.4 MB (55437923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:26.04-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a008a7e7f39a3b43e8e64eb4eb9b6b31216188b2ccf99a5c540926246184a13c
+$ docker pull buildpack-deps@sha256:77b3b692cd8bafd120c13e9544c6a7392fa1d0d9529aa5ad4b60d0525f3a4cb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7298257 bytes)**  
+-	Total Size: **7.3 MB (7296656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3cabee415fee73d2a072c0c1853f5a82d3c42e4011eb87de4cef9ae26565e8d4`
+-	Image ID: `sha256:b63cdafbd179bcef1248edcb77377116861fdae1287bc0ad8dfbc64f0478383e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ddf8c1fd75faf870d1af6f5a4051503f704b381ab375f34b0c63dc6f7ab45177`  
-		Last Modified: Wed, 09 Sep 2026 08:41:47 GMT  
-		Size: 7.3 MB (7290638 bytes)  
+	-	`sha256:2d609306ba559c374b91a49cb25bacaab34cf608cfa258cf7820c1d82e2f3a87`  
+		Last Modified: Wed, 16 Sep 2026 08:36:39 GMT  
+		Size: 7.3 MB (7289035 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:02727eacf86143a8817335161170d1ad1896847c7f67101471a00d124cf924a0`  
-		Last Modified: Wed, 09 Sep 2026 08:41:46 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:341b69e48e382206636b28f732825f8e27165356b2c15b4de24254ad878cda6f`  
+		Last Modified: Wed, 16 Sep 2026 08:36:39 GMT  
+		Size: 7.6 KB (7621 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:26.04-scm` - linux; s390x
@@ -4447,7 +4447,7 @@ $ docker pull buildpack-deps@sha256:bf3a6179b90025025ba5cf414a2b5461c3a3eb2260e9
 ## `buildpack-deps:26.10-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:cd092dd6af3ff926131ea527de343dca1f2128d3a01f481672fd18d64805bf0f
+$ docker pull buildpack-deps@sha256:cd3dda26b3893217fba6dbc5aecf63606b7a203cdb54cb51c9eb4a6a61b0265b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4709,81 +4709,81 @@ $ docker pull buildpack-deps@sha256:a26836a31bf68ed0a018a8bfd2389b9d7e890eef012c
 ### `buildpack-deps:26.10-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:3e9e6305e31c4671ddf62e52c666fe0f58fb31dc134fae84ab6787ab16ddf1c1
+$ docker pull buildpack-deps@sha256:84ac4d28fb12d8ba20a572571a1ea88415f66942a48e07e5581c190f3ec469db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.2 MB (80166284 bytes)**  
+-	Total Size: **80.3 MB (80330476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3867127fc015acb570e69dedaa6a3a1da1820ae56a224e98f312d815812ed5b2`
+-	Image ID: `sha256:d7dc9b81dda1f1f730857cb510827a4329a9c2bea53099a685f0c104a0800955`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:41:04 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.9394.tar --tag 26.10
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:41 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.9466.tar --tag 26.10
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.control_data.9394.tar
-# Wed, 09 Sep 2026 08:44:10 GMT
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.control_data.9466.tar
+# Wed, 16 Sep 2026 06:46:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:5d571b36b765d5e25efee79a7547930722f9019afbbcdc355828615932d51a28`  
-		Last Modified: Wed, 02 Sep 2026 03:07:34 GMT  
-		Size: 57.6 MB (57555112 bytes)  
+	-	`sha256:b6cf460961532b7d23ccb0a46d05574772fe151fab4b57f2ff3d0e689fb83efa`  
+		Last Modified: Sun, 13 Sep 2026 16:04:49 GMT  
+		Size: 57.7 MB (57738984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc0860144ae4b6aadc103dd274170a657c7f62e296d00f3b13de17884a67b283`  
-		Last Modified: Wed, 02 Sep 2026 03:07:36 GMT  
-		Size: 391.0 B  
+	-	`sha256:99c977942f40d58e888a0a7d6e7271f9fba7d7da76aa15173a9d4a7d2614d218`  
+		Last Modified: Sun, 13 Sep 2026 16:04:52 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5df6647542f8c6b98c72781b3df20ad587a6544807982b3d8b78a8e9efc88a2`  
-		Last Modified: Wed, 09 Sep 2026 08:45:15 GMT  
-		Size: 22.6 MB (22610781 bytes)  
+	-	`sha256:508c57de96f4461586f4b5a1cab926baad157b368a53e9ec324ab051f5fac2d2`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 22.6 MB (22591102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:26.10-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a8cd958cdde70485fa7fdb53dab28612d2d6dcc031da1a1c92b03a5383fa5516
+$ docker pull buildpack-deps@sha256:7d8021aa222abe8bd9942a3e8db02d23dc9af42ae1b2e15f110e838af5e19df0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.8 MB (4786667 bytes)**  
+-	Total Size: **4.8 MB (4793927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1acf54a367064beb96658c3dbad01f2c446a956edfddfe8c6b633d4726cd8bc9`
+-	Image ID: `sha256:4b6d4ea79d9fcd390defd3bfdea9b386987ad67d90013fbbff803f45326b18e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c68bc261740351dd2efa4e1943acaa2e0497d6a773057e03a068eeec60491679`  
-		Last Modified: Wed, 09 Sep 2026 08:45:14 GMT  
-		Size: 4.8 MB (4779392 bytes)  
+	-	`sha256:7411f8d5ebd44cfd3e2fa0e092fc01e333abdf3738fe24f542c816e619b3fd77`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 4.8 MB (4786652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46e311d4032b0f812bd7a8a5d4202d4364adac658bb63da7aaf723af19b1ab55`  
-		Last Modified: Wed, 09 Sep 2026 08:45:14 GMT  
+	-	`sha256:55ac0d89517d2550d54c914588547a27067bb318fb3b36740690184212a5e099`  
+		Last Modified: Wed, 16 Sep 2026 06:46:33 GMT  
 		Size: 7.3 KB (7275 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4871,7 +4871,7 @@ $ docker pull buildpack-deps@sha256:9adc28caeb3b04d2413dc6f14b2a1b408bcb8f0afb80
 ## `buildpack-deps:26.10-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f8d1ed370ee448f9f70c1f7c1d03b308fe90f6e237620b775f30018938b28724
+$ docker pull buildpack-deps@sha256:b45b884e0f84468e30a11400715d905a67dc95426554b503e62e08cd719f23a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5151,88 +5151,88 @@ $ docker pull buildpack-deps@sha256:dc4b278257a26688d18dd2bbc5bb434a7216527bf56a
 ### `buildpack-deps:26.10-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:5999eff4a9d13723209388e0b42e99de47d43e9fab5b8b180ddd814ca72a2adb
+$ docker pull buildpack-deps@sha256:9f4edca1becd560cc16e41a12a04288ae6709be5b1ba1818977f476f9d925034
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.9 MB (135899285 bytes)**  
+-	Total Size: **136.8 MB (136823310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:514673bb75b2a31da0a1faf149ae75040860237c99475a675fa985cfc03c02c3`
+-	Image ID: `sha256:da1427c4c72ad4be1616fccefab6ac33d3c963fb192d5c05cc0e1421bbe86bb4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:41:04 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.9394.tar --tag 26.10
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:41 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.9466.tar --tag 26.10
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.control_data.9394.tar
-# Wed, 09 Sep 2026 08:44:10 GMT
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.control_data.9466.tar
+# Wed, 16 Sep 2026 06:46:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 11:59:20 GMT
+# Wed, 16 Sep 2026 08:37:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:5d571b36b765d5e25efee79a7547930722f9019afbbcdc355828615932d51a28`  
-		Last Modified: Wed, 02 Sep 2026 03:07:34 GMT  
-		Size: 57.6 MB (57555112 bytes)  
+	-	`sha256:b6cf460961532b7d23ccb0a46d05574772fe151fab4b57f2ff3d0e689fb83efa`  
+		Last Modified: Sun, 13 Sep 2026 16:04:49 GMT  
+		Size: 57.7 MB (57738984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc0860144ae4b6aadc103dd274170a657c7f62e296d00f3b13de17884a67b283`  
-		Last Modified: Wed, 02 Sep 2026 03:07:36 GMT  
-		Size: 391.0 B  
+	-	`sha256:99c977942f40d58e888a0a7d6e7271f9fba7d7da76aa15173a9d4a7d2614d218`  
+		Last Modified: Sun, 13 Sep 2026 16:04:52 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5df6647542f8c6b98c72781b3df20ad587a6544807982b3d8b78a8e9efc88a2`  
-		Last Modified: Wed, 09 Sep 2026 08:45:15 GMT  
-		Size: 22.6 MB (22610781 bytes)  
+	-	`sha256:508c57de96f4461586f4b5a1cab926baad157b368a53e9ec324ab051f5fac2d2`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 22.6 MB (22591102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f27cba84bae5fd04f03fa690ddb3f5045d5ae3ddbdc319f2a6b0dd51d7d08b95`  
-		Last Modified: Wed, 09 Sep 2026 12:00:03 GMT  
-		Size: 55.7 MB (55733001 bytes)  
+	-	`sha256:2b1bda7e66eba0780f82e6222fca317180e9e2f73c3661ea73516e46c49d39e1`  
+		Last Modified: Wed, 16 Sep 2026 08:38:20 GMT  
+		Size: 56.5 MB (56492834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:26.10-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:5ed6142b87cf5ed47ecbee00222a06bb50f4c615eddded5c16fc227a2fec035e
+$ docker pull buildpack-deps@sha256:4b4fef22f7393e5cfd97e60ded1ea108c32bbca364b733b874343201db9736a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.7 MB (7656609 bytes)**  
+-	Total Size: **7.7 MB (7671072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0737ad8d6aa249cd6bb53f18bae5540483953d0d931a89d17182c221a65cf4fd`
+-	Image ID: `sha256:abc6e47251d95921792e56005564cf1b9161e1013c193073824245e34a88ccb9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e638ad040cd0b2f7500195f1e1e3c1201f3be4c06121d174b3caa80d02c858cf`  
-		Last Modified: Wed, 09 Sep 2026 12:00:02 GMT  
-		Size: 7.6 MB (7648988 bytes)  
+	-	`sha256:19dd6636142d447d65d46943144cfd1f30ca4ea2a7839d6311fc199f356d6e21`  
+		Last Modified: Wed, 16 Sep 2026 08:38:19 GMT  
+		Size: 7.7 MB (7663452 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e449b0e1a4146e8bacabcef5dc697eb0ef0b7b54567eb2929714d46a77eda7ac`  
-		Last Modified: Wed, 09 Sep 2026 12:00:01 GMT  
-		Size: 7.6 KB (7621 bytes)  
+	-	`sha256:cdc3feda4e2dba286f29b845a4b6b7b1073b07b8ed64b0d1b48d44977951ddda`  
+		Last Modified: Wed, 16 Sep 2026 08:38:18 GMT  
+		Size: 7.6 KB (7620 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:26.10-scm` - linux; s390x
@@ -11056,7 +11056,7 @@ $ docker pull buildpack-deps@sha256:8d367d7e65d6808931961bd9a39ca656057fab9d3347
 ## `buildpack-deps:noble-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:e6b09e25215618a5b5ff2758ae07ae2552d6eaca1c601f9608238eac8e97f9f4
+$ docker pull buildpack-deps@sha256:d0853560201a33f52f8009255a9fcdea524be1cd5982160b365ca8f95234ea39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11260,61 +11260,61 @@ $ docker pull buildpack-deps@sha256:4933c82cc5316267c14775eb84961bb5f6417ed8f21a
 ### `buildpack-deps:noble-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:b55fbbf0a58c74ac44ccc3f2758a38eea59431733c74871bdc27ff999a8b349f
+$ docker pull buildpack-deps@sha256:4544f044f3674176b3f30e763d93d4d96062d6fe591f34adf3dc432d73809e0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50292386 bytes)**  
+-	Total Size: **50.3 MB (50291753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7791fe1d0239243e4befb8b3ff80ba5cb34f256da98dcb64db3e0c672341926e`
+-	Image ID: `sha256:ed6236a09967355d8ab34574e6fb5c89a9fbac7b7abe627f4e33dbcf79e447be`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG RELEASE
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 07 Sep 2026 07:38:43 GMT
-ADD file:b613d8cbbfcdd39316d0cc2ab20f713e42c2ffc939072314f82208cec1f794df in / 
-# Mon, 07 Sep 2026 07:38:44 GMT
+# Fri, 11 Sep 2026 11:54:04 GMT
+ADD file:23a54200dc45d2e165b80cd813d76a8863b2e15710bb20b738f813328f74d05b in / 
+# Fri, 11 Sep 2026 11:54:05 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 08:26:36 GMT
+# Wed, 16 Sep 2026 06:44:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:4b9f3660b529a1e81f04825056359c345d486cfb05010302b88737a58d21db86`  
-		Last Modified: Mon, 07 Sep 2026 07:57:18 GMT  
-		Size: 34.4 MB (34376879 bytes)  
+	-	`sha256:a7067f7ee788cc3e90f83fa0ac84d48a200fde4469a2a5e638f059842a8f11d1`  
+		Last Modified: Fri, 11 Sep 2026 13:39:01 GMT  
+		Size: 34.4 MB (34376958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fd789139c90474cd14d0f1d64890b57524ae7f44613110a6629eeb565746a1`  
-		Last Modified: Wed, 09 Sep 2026 08:26:52 GMT  
-		Size: 15.9 MB (15915507 bytes)  
+	-	`sha256:fb38d31ef3f1ef764251762eab36e1e4339f9b85ee3d6ecc79887237a849131c`  
+		Last Modified: Wed, 16 Sep 2026 06:44:48 GMT  
+		Size: 15.9 MB (15914795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:noble-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:9815dc22d08406fddb23e05c20e3c1ff90769eef17614b4120750e292306ddeb
+$ docker pull buildpack-deps@sha256:dbedfd96f6756700487085e2cde4a2e743c79bfd43213dc819d1fc53cd094c35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2603216 bytes)**  
+-	Total Size: **2.6 MB (2603226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:101a0d2bd91e20d0d55442f25ebc43096458cce75db8174816444456c1fa5796`
+-	Image ID: `sha256:84c0f53d7c8b271166de6e7464b935aaf8c79f8dd11f563988b6d34531f7aaab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06280092622946524528e98d75a81f39cbba3fa4d573feb2d5dd644822a97af0`  
-		Last Modified: Wed, 09 Sep 2026 08:26:51 GMT  
-		Size: 2.6 MB (2596268 bytes)  
+	-	`sha256:1f0b20df6300739173d2f5b02442fed2c06c785c3783e1918625010262249a96`  
+		Last Modified: Wed, 16 Sep 2026 06:44:47 GMT  
+		Size: 2.6 MB (2596278 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:768d54baf60d8f48ada8b730e0bd40c12d5c72c3e2f59811ae68a4b12105e9d8`  
-		Last Modified: Wed, 09 Sep 2026 08:26:51 GMT  
+	-	`sha256:8159d8d04f3f38f58a2c47c2783e5a69b3f632b044ce498723982198152bb9ba`  
+		Last Modified: Wed, 16 Sep 2026 06:44:47 GMT  
 		Size: 6.9 KB (6948 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11443,7 +11443,7 @@ $ docker pull buildpack-deps@sha256:6d7472400edb85bb0b68d27e44a89a79845e4f2718e5
 ## `buildpack-deps:noble-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:8e91922f7df0338948d606da2b395cf60a229e98d0ef3a6cf56edd133e710d63
+$ docker pull buildpack-deps@sha256:04fba4abaddcba1e895864bc55960a1a49fae77ce033438623c64921d60318f9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11665,67 +11665,67 @@ $ docker pull buildpack-deps@sha256:82a256e8813bb94cee1d36a7db8331449592151b783f
 ### `buildpack-deps:noble-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:292e4b635f9b10bb25a66b3f2a922d31565464053bedadf46de473f272c85221
+$ docker pull buildpack-deps@sha256:0b944ece23c7b0ba4cd71cf19be24a51d7d3cb3f9b1d230d5fc75f6904f24eed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100680501 bytes)**  
+-	Total Size: **100.7 MB (100681090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab9c936becf4dd13af96c40c86bfdcdecd0bacd1f350de90dd81b91bcfce2e3c`
+-	Image ID: `sha256:2f221e556287c6dfcbe4be394a4959cefe3bb0012b98484dd2c394376bd920f4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG RELEASE
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Sep 2026 07:38:39 GMT
+# Fri, 11 Sep 2026 11:54:01 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 07 Sep 2026 07:38:43 GMT
-ADD file:b613d8cbbfcdd39316d0cc2ab20f713e42c2ffc939072314f82208cec1f794df in / 
-# Mon, 07 Sep 2026 07:38:44 GMT
+# Fri, 11 Sep 2026 11:54:04 GMT
+ADD file:23a54200dc45d2e165b80cd813d76a8863b2e15710bb20b738f813328f74d05b in / 
+# Fri, 11 Sep 2026 11:54:05 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 08:26:36 GMT
+# Wed, 16 Sep 2026 06:44:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 11:57:41 GMT
+# Wed, 16 Sep 2026 08:35:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:4b9f3660b529a1e81f04825056359c345d486cfb05010302b88737a58d21db86`  
-		Last Modified: Mon, 07 Sep 2026 07:57:18 GMT  
-		Size: 34.4 MB (34376879 bytes)  
+	-	`sha256:a7067f7ee788cc3e90f83fa0ac84d48a200fde4469a2a5e638f059842a8f11d1`  
+		Last Modified: Fri, 11 Sep 2026 13:39:01 GMT  
+		Size: 34.4 MB (34376958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3fd789139c90474cd14d0f1d64890b57524ae7f44613110a6629eeb565746a1`  
-		Last Modified: Wed, 09 Sep 2026 08:26:52 GMT  
-		Size: 15.9 MB (15915507 bytes)  
+	-	`sha256:fb38d31ef3f1ef764251762eab36e1e4339f9b85ee3d6ecc79887237a849131c`  
+		Last Modified: Wed, 16 Sep 2026 06:44:48 GMT  
+		Size: 15.9 MB (15914795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25731584d89277a0bd4f1efc9b5be6e658dd88951e3d6f52cdb3ffb1b476f7a`  
-		Last Modified: Wed, 09 Sep 2026 11:58:17 GMT  
-		Size: 50.4 MB (50388115 bytes)  
+	-	`sha256:b72e80ce47ea96c54b0b69cd13738614b54bb836e8dda46ba081285fa5a10702`  
+		Last Modified: Wed, 16 Sep 2026 08:36:17 GMT  
+		Size: 50.4 MB (50389337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:noble-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a64daf723877a5b408c8d3bdda80a2cd888d507031856f3e41b53dedd5da5f63
+$ docker pull buildpack-deps@sha256:6466fb98a15ff464ed33e4ac4becd6f3f2e38f04f837aa86a781407851322a8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5273592 bytes)**  
+-	Total Size: **5.3 MB (5273602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89f7156ea6f9b91e6f05b3bd49e0f83c835fedda6edf74b0f80de4938eb1c1f1`
+-	Image ID: `sha256:5708fb73b64323c5c3a20d51f4dc25d51895753b5c47af24e90f92bf8d88ee9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a41935894712dff96d685458dbec32a6c2c6921e5a2f6a15e7460ba8b694d707`  
-		Last Modified: Wed, 09 Sep 2026 11:58:16 GMT  
-		Size: 5.3 MB (5266298 bytes)  
+	-	`sha256:ddce5087139da91b60b093f354b090859b4115cc09d648da3d1b67a43ad71e21`  
+		Last Modified: Wed, 16 Sep 2026 08:36:16 GMT  
+		Size: 5.3 MB (5266308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59f193d80d09a22a83e64d0bbcf7417cf4f4b4c0a5ab8bae094fb1e3df3b4185`  
-		Last Modified: Wed, 09 Sep 2026 11:58:15 GMT  
+	-	`sha256:cc3827b8a02b32488a10a4730ae5b885eefe7bdbed7036a67b2da2f9083449aa`  
+		Last Modified: Wed, 16 Sep 2026 08:36:15 GMT  
 		Size: 7.3 KB (7294 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14051,7 +14051,7 @@ $ docker pull buildpack-deps@sha256:61592cd7427e81835d25ff477bb4f42c5d9bfd2e5ace
 ## `buildpack-deps:resolute-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:90ae12a996fe71c0513897977731522ba89422ebcfd3971b26bb5259d0d2fcfe
+$ docker pull buildpack-deps@sha256:fcee4cd35246e93c64b491c2b7ba570f9c5a128eba55e387ff7e4cc5ed79cf4b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14313,82 +14313,82 @@ $ docker pull buildpack-deps@sha256:49db1aa704a10fe16ff744ae04522c881efb7d931c31
 ### `buildpack-deps:resolute-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:1b18bff23f0a761bc22c5475abaff8be351094533faf2d0f0b1f9915d5bcd022
+$ docker pull buildpack-deps@sha256:be0a9a45e056f261ca74a6024336fb82e6f3aeb9e97adbe715cbf90098fae942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68782246 bytes)**  
+-	Total Size: **68.8 MB (68793211 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea4f03a75cdea2b62d4ff92b72416487737be1d4d1dc9314d566619a5791daad`
+-	Image ID: `sha256:f3262ba9cc827319ec0b7778201fb4b55a4ed1d7fd64bc6e78f756b7453ae508`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:39:28 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.9376.tar --tag 26.04
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:49 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.9566.tar --tag 26.04
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.control_data.9376.tar
-# Wed, 09 Sep 2026 04:54:14 GMT
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.control_data.9566.tar
+# Wed, 16 Sep 2026 06:44:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c1b37b8cb426f7a210dd8786c06f171c63481c6db3c316a2614bec3766a0ae59`  
-		Last Modified: Wed, 02 Sep 2026 10:46:24 GMT  
-		Size: 46.8 MB (46812713 bytes)  
+	-	`sha256:962bf9d875d6e8ff3c9b897eff15c72d89dbe29382b528395357e9d833c32fca`  
+		Last Modified: Sat, 12 Sep 2026 12:56:54 GMT  
+		Size: 46.8 MB (46823153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7921daa91a183933e9f6e51aa305ae2abf302203e4844d9714a4990c4dd3996b`  
-		Last Modified: Wed, 02 Sep 2026 10:46:27 GMT  
-		Size: 392.0 B  
+	-	`sha256:3b636516270ec3ead8a7f42e0dcac6372059cb5d7dc0a8fecbb3f92457667620`  
+		Last Modified: Sat, 12 Sep 2026 12:56:57 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37dc6d42e754679fade1f9c30437bc32546b1738dad5e82f7852ab73a56c735c`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 22.0 MB (21969141 bytes)  
+	-	`sha256:e302b07a230b20ee5e1a4c25f81e2062809dbc5d90d9c7d0a94d28e91c81d768`  
+		Last Modified: Wed, 16 Sep 2026 06:45:08 GMT  
+		Size: 22.0 MB (21969667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:resolute-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:2bbfd25091b317086e08e37842dcfbcafd6d548a210b83a18e5f1cfa1a3b6939
+$ docker pull buildpack-deps@sha256:dcf30a6d9e91ef3853f38e7662b0601ae39b35b46004a82bbec3385403a591b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.4 MB (4427645 bytes)**  
+-	Total Size: **4.4 MB (4426041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1bc8addfada73efc8cae3a966115f2e3ad4432648955b8621bd55fbe3c8f8fe`
+-	Image ID: `sha256:f9cba139ddfbd29a5022ab3b69152081171ab56114468283cec6bd249c836f9c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eccbf6ddaafa4d723f201a14555863ddd50d1f4ca1035a29c08319e7a735ec74`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 4.4 MB (4420370 bytes)  
+	-	`sha256:92e10b1d14deedf9e82d56d18d96b15af9b8b6515cab03a96d7c2bb9c509061c`  
+		Last Modified: Wed, 16 Sep 2026 06:45:07 GMT  
+		Size: 4.4 MB (4418767 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe698b900dbfbccfcb199e5f536165d666ee504a6d34b7b870f30024ecb5876a`  
-		Last Modified: Wed, 09 Sep 2026 04:55:08 GMT  
-		Size: 7.3 KB (7275 bytes)  
+	-	`sha256:31b285f6f512118248f80ec69f6b0e9eaa3121633ccc599d511a5fd434f6d101`  
+		Last Modified: Wed, 16 Sep 2026 06:45:07 GMT  
+		Size: 7.3 KB (7274 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:resolute-curl` - linux; s390x
@@ -14475,7 +14475,7 @@ $ docker pull buildpack-deps@sha256:c411fbb8a73195477282a9b6c3c78c3ca63024a76196
 ## `buildpack-deps:resolute-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f2cd0bf7aaba5352f159f3ed52e52195100b7874cabb59228c9683904d11b7b5
+$ docker pull buildpack-deps@sha256:48b796acfb0786e92c33c7d882ad40b3f3bcc4d02746d9b511384aba39e83f1a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14755,88 +14755,88 @@ $ docker pull buildpack-deps@sha256:596398742dcbb4ca02bda0c507820e6aecc3b10a7109
 ### `buildpack-deps:resolute-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:0942160d4b8a08dfd1df6cf3c62041fc886b7a003b53e87f22091a99d3ad54fa
+$ docker pull buildpack-deps@sha256:12167cc7c244fa725f1def276552ea082793e4c62d71e15d2966e21d1110af59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.8 MB (126812824 bytes)**  
+-	Total Size: **124.2 MB (124231134 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9ea106367ebf043189f2b59f1ed2795eb029f97c8daa16e80ac443a7357adcc`
+-	Image ID: `sha256:288d8e7ef7f91c4b2997f01cda9551bf9a0389fc6dd21bb29d9d50621594c291`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:39:28 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.9376.tar --tag 26.04
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:49 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.9566.tar --tag 26.04
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:39:29.562440+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:39:29 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-e1c60b1bc0d25a2115f571511888c62b/images/.temp_layer.control_data.9376.tar
-# Wed, 09 Sep 2026 04:54:14 GMT
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.control_data.9566.tar
+# Wed, 16 Sep 2026 06:44:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 08:40:07 GMT
+# Wed, 16 Sep 2026 08:35:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c1b37b8cb426f7a210dd8786c06f171c63481c6db3c316a2614bec3766a0ae59`  
-		Last Modified: Wed, 02 Sep 2026 10:46:24 GMT  
-		Size: 46.8 MB (46812713 bytes)  
+	-	`sha256:962bf9d875d6e8ff3c9b897eff15c72d89dbe29382b528395357e9d833c32fca`  
+		Last Modified: Sat, 12 Sep 2026 12:56:54 GMT  
+		Size: 46.8 MB (46823153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7921daa91a183933e9f6e51aa305ae2abf302203e4844d9714a4990c4dd3996b`  
-		Last Modified: Wed, 02 Sep 2026 10:46:27 GMT  
-		Size: 392.0 B  
+	-	`sha256:3b636516270ec3ead8a7f42e0dcac6372059cb5d7dc0a8fecbb3f92457667620`  
+		Last Modified: Sat, 12 Sep 2026 12:56:57 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37dc6d42e754679fade1f9c30437bc32546b1738dad5e82f7852ab73a56c735c`  
-		Last Modified: Wed, 09 Sep 2026 04:55:09 GMT  
-		Size: 22.0 MB (21969141 bytes)  
+	-	`sha256:e302b07a230b20ee5e1a4c25f81e2062809dbc5d90d9c7d0a94d28e91c81d768`  
+		Last Modified: Wed, 16 Sep 2026 06:45:08 GMT  
+		Size: 22.0 MB (21969667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3490daaafe0b0deabdc59fb1a6376e8746e80dd034cba91588f8d89cbcfe6251`  
-		Last Modified: Wed, 09 Sep 2026 08:41:48 GMT  
-		Size: 58.0 MB (58030578 bytes)  
+	-	`sha256:afb7c98af20a6d5c56174ad4b750ac9f15228f9ba3af6f899a0248505e91b7e9`  
+		Last Modified: Wed, 16 Sep 2026 08:36:41 GMT  
+		Size: 55.4 MB (55437923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:resolute-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a008a7e7f39a3b43e8e64eb4eb9b6b31216188b2ccf99a5c540926246184a13c
+$ docker pull buildpack-deps@sha256:77b3b692cd8bafd120c13e9544c6a7392fa1d0d9529aa5ad4b60d0525f3a4cb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7298257 bytes)**  
+-	Total Size: **7.3 MB (7296656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3cabee415fee73d2a072c0c1853f5a82d3c42e4011eb87de4cef9ae26565e8d4`
+-	Image ID: `sha256:b63cdafbd179bcef1248edcb77377116861fdae1287bc0ad8dfbc64f0478383e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ddf8c1fd75faf870d1af6f5a4051503f704b381ab375f34b0c63dc6f7ab45177`  
-		Last Modified: Wed, 09 Sep 2026 08:41:47 GMT  
-		Size: 7.3 MB (7290638 bytes)  
+	-	`sha256:2d609306ba559c374b91a49cb25bacaab34cf608cfa258cf7820c1d82e2f3a87`  
+		Last Modified: Wed, 16 Sep 2026 08:36:39 GMT  
+		Size: 7.3 MB (7289035 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:02727eacf86143a8817335161170d1ad1896847c7f67101471a00d124cf924a0`  
-		Last Modified: Wed, 09 Sep 2026 08:41:46 GMT  
-		Size: 7.6 KB (7619 bytes)  
+	-	`sha256:341b69e48e382206636b28f732825f8e27165356b2c15b4de24254ad878cda6f`  
+		Last Modified: Wed, 16 Sep 2026 08:36:39 GMT  
+		Size: 7.6 KB (7621 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:resolute-scm` - linux; s390x
@@ -18709,7 +18709,7 @@ $ docker pull buildpack-deps@sha256:bf3a6179b90025025ba5cf414a2b5461c3a3eb2260e9
 ## `buildpack-deps:stonking-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:cd092dd6af3ff926131ea527de343dca1f2128d3a01f481672fd18d64805bf0f
+$ docker pull buildpack-deps@sha256:cd3dda26b3893217fba6dbc5aecf63606b7a203cdb54cb51c9eb4a6a61b0265b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18971,81 +18971,81 @@ $ docker pull buildpack-deps@sha256:a26836a31bf68ed0a018a8bfd2389b9d7e890eef012c
 ### `buildpack-deps:stonking-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:3e9e6305e31c4671ddf62e52c666fe0f58fb31dc134fae84ab6787ab16ddf1c1
+$ docker pull buildpack-deps@sha256:84ac4d28fb12d8ba20a572571a1ea88415f66942a48e07e5581c190f3ec469db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.2 MB (80166284 bytes)**  
+-	Total Size: **80.3 MB (80330476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3867127fc015acb570e69dedaa6a3a1da1820ae56a224e98f312d815812ed5b2`
+-	Image ID: `sha256:d7dc9b81dda1f1f730857cb510827a4329a9c2bea53099a685f0c104a0800955`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:41:04 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.9394.tar --tag 26.10
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:41 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.9466.tar --tag 26.10
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.control_data.9394.tar
-# Wed, 09 Sep 2026 08:44:10 GMT
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.control_data.9466.tar
+# Wed, 16 Sep 2026 06:46:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:5d571b36b765d5e25efee79a7547930722f9019afbbcdc355828615932d51a28`  
-		Last Modified: Wed, 02 Sep 2026 03:07:34 GMT  
-		Size: 57.6 MB (57555112 bytes)  
+	-	`sha256:b6cf460961532b7d23ccb0a46d05574772fe151fab4b57f2ff3d0e689fb83efa`  
+		Last Modified: Sun, 13 Sep 2026 16:04:49 GMT  
+		Size: 57.7 MB (57738984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc0860144ae4b6aadc103dd274170a657c7f62e296d00f3b13de17884a67b283`  
-		Last Modified: Wed, 02 Sep 2026 03:07:36 GMT  
-		Size: 391.0 B  
+	-	`sha256:99c977942f40d58e888a0a7d6e7271f9fba7d7da76aa15173a9d4a7d2614d218`  
+		Last Modified: Sun, 13 Sep 2026 16:04:52 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5df6647542f8c6b98c72781b3df20ad587a6544807982b3d8b78a8e9efc88a2`  
-		Last Modified: Wed, 09 Sep 2026 08:45:15 GMT  
-		Size: 22.6 MB (22610781 bytes)  
+	-	`sha256:508c57de96f4461586f4b5a1cab926baad157b368a53e9ec324ab051f5fac2d2`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 22.6 MB (22591102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:stonking-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a8cd958cdde70485fa7fdb53dab28612d2d6dcc031da1a1c92b03a5383fa5516
+$ docker pull buildpack-deps@sha256:7d8021aa222abe8bd9942a3e8db02d23dc9af42ae1b2e15f110e838af5e19df0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.8 MB (4786667 bytes)**  
+-	Total Size: **4.8 MB (4793927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1acf54a367064beb96658c3dbad01f2c446a956edfddfe8c6b633d4726cd8bc9`
+-	Image ID: `sha256:4b6d4ea79d9fcd390defd3bfdea9b386987ad67d90013fbbff803f45326b18e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c68bc261740351dd2efa4e1943acaa2e0497d6a773057e03a068eeec60491679`  
-		Last Modified: Wed, 09 Sep 2026 08:45:14 GMT  
-		Size: 4.8 MB (4779392 bytes)  
+	-	`sha256:7411f8d5ebd44cfd3e2fa0e092fc01e333abdf3738fe24f542c816e619b3fd77`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 4.8 MB (4786652 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46e311d4032b0f812bd7a8a5d4202d4364adac658bb63da7aaf723af19b1ab55`  
-		Last Modified: Wed, 09 Sep 2026 08:45:14 GMT  
+	-	`sha256:55ac0d89517d2550d54c914588547a27067bb318fb3b36740690184212a5e099`  
+		Last Modified: Wed, 16 Sep 2026 06:46:33 GMT  
 		Size: 7.3 KB (7275 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19133,7 +19133,7 @@ $ docker pull buildpack-deps@sha256:9adc28caeb3b04d2413dc6f14b2a1b408bcb8f0afb80
 ## `buildpack-deps:stonking-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f8d1ed370ee448f9f70c1f7c1d03b308fe90f6e237620b775f30018938b28724
+$ docker pull buildpack-deps@sha256:b45b884e0f84468e30a11400715d905a67dc95426554b503e62e08cd719f23a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19413,88 +19413,88 @@ $ docker pull buildpack-deps@sha256:dc4b278257a26688d18dd2bbc5bb434a7216527bf56a
 ### `buildpack-deps:stonking-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:5999eff4a9d13723209388e0b42e99de47d43e9fab5b8b180ddd814ca72a2adb
+$ docker pull buildpack-deps@sha256:9f4edca1becd560cc16e41a12a04288ae6709be5b1ba1818977f476f9d925034
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.9 MB (135899285 bytes)**  
+-	Total Size: **136.8 MB (136823310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:514673bb75b2a31da0a1faf149ae75040860237c99475a675fa985cfc03c02c3`
+-	Image ID: `sha256:da1427c4c72ad4be1616fccefab6ac33d3c963fb192d5c05cc0e1421bbe86bb4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 01 Sep 2026 20:41:04 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.9394.tar --tag 26.10
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:41 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.9466.tar --tag 26.10
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.entrypoint --clear=config.cmd
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=config.labels --config.label org.opencontainers.image.version=26.10 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-01T20:41:05.549052+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.10 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-13T14:18:42.444610+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 01 Sep 2026 20:41:05 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-00d7c0c1fbf258ff5d50f3dd095eab78/images/.temp_layer.control_data.9394.tar
-# Wed, 09 Sep 2026 08:44:10 GMT
+# Sun, 13 Sep 2026 14:18:42 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/ubuntu:26.10 /home/buildd/rockcraft-ubuntu-60cd1cf8da9c0e3f5386a83c830ebaa7/images/.temp_layer.control_data.9466.tar
+# Wed, 16 Sep 2026 06:46:05 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 09 Sep 2026 11:59:20 GMT
+# Wed, 16 Sep 2026 08:37:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
 ```
 
 -	Layers:
-	-	`sha256:5d571b36b765d5e25efee79a7547930722f9019afbbcdc355828615932d51a28`  
-		Last Modified: Wed, 02 Sep 2026 03:07:34 GMT  
-		Size: 57.6 MB (57555112 bytes)  
+	-	`sha256:b6cf460961532b7d23ccb0a46d05574772fe151fab4b57f2ff3d0e689fb83efa`  
+		Last Modified: Sun, 13 Sep 2026 16:04:49 GMT  
+		Size: 57.7 MB (57738984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc0860144ae4b6aadc103dd274170a657c7f62e296d00f3b13de17884a67b283`  
-		Last Modified: Wed, 02 Sep 2026 03:07:36 GMT  
-		Size: 391.0 B  
+	-	`sha256:99c977942f40d58e888a0a7d6e7271f9fba7d7da76aa15173a9d4a7d2614d218`  
+		Last Modified: Sun, 13 Sep 2026 16:04:52 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5df6647542f8c6b98c72781b3df20ad587a6544807982b3d8b78a8e9efc88a2`  
-		Last Modified: Wed, 09 Sep 2026 08:45:15 GMT  
-		Size: 22.6 MB (22610781 bytes)  
+	-	`sha256:508c57de96f4461586f4b5a1cab926baad157b368a53e9ec324ab051f5fac2d2`  
+		Last Modified: Wed, 16 Sep 2026 06:46:34 GMT  
+		Size: 22.6 MB (22591102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f27cba84bae5fd04f03fa690ddb3f5045d5ae3ddbdc319f2a6b0dd51d7d08b95`  
-		Last Modified: Wed, 09 Sep 2026 12:00:03 GMT  
-		Size: 55.7 MB (55733001 bytes)  
+	-	`sha256:2b1bda7e66eba0780f82e6222fca317180e9e2f73c3661ea73516e46c49d39e1`  
+		Last Modified: Wed, 16 Sep 2026 08:38:20 GMT  
+		Size: 56.5 MB (56492834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:stonking-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:5ed6142b87cf5ed47ecbee00222a06bb50f4c615eddded5c16fc227a2fec035e
+$ docker pull buildpack-deps@sha256:4b4fef22f7393e5cfd97e60ded1ea108c32bbca364b733b874343201db9736a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.7 MB (7656609 bytes)**  
+-	Total Size: **7.7 MB (7671072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0737ad8d6aa249cd6bb53f18bae5540483953d0d931a89d17182c221a65cf4fd`
+-	Image ID: `sha256:abc6e47251d95921792e56005564cf1b9161e1013c193073824245e34a88ccb9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e638ad040cd0b2f7500195f1e1e3c1201f3be4c06121d174b3caa80d02c858cf`  
-		Last Modified: Wed, 09 Sep 2026 12:00:02 GMT  
-		Size: 7.6 MB (7648988 bytes)  
+	-	`sha256:19dd6636142d447d65d46943144cfd1f30ca4ea2a7839d6311fc199f356d6e21`  
+		Last Modified: Wed, 16 Sep 2026 08:38:19 GMT  
+		Size: 7.7 MB (7663452 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e449b0e1a4146e8bacabcef5dc697eb0ef0b7b54567eb2929714d46a77eda7ac`  
-		Last Modified: Wed, 09 Sep 2026 12:00:01 GMT  
-		Size: 7.6 KB (7621 bytes)  
+	-	`sha256:cdc3feda4e2dba286f29b845a4b6b7b1073b07b8ed64b0d1b48d44977951ddda`  
+		Last Modified: Wed, 16 Sep 2026 08:38:18 GMT  
+		Size: 7.6 KB (7620 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:stonking-scm` - linux; s390x
