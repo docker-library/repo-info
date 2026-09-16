@@ -217,6 +217,49 @@
 -	[`azul-zulu:26.32-26.0.2.1-jre-headless-almalinux10`](#azul-zulu2632-26021-jre-headless-almalinux10)
 -	[`azul-zulu:26.32-26.0.2.1-jre-headless-alpine3.23`](#azul-zulu2632-26021-jre-headless-alpine323)
 -	[`azul-zulu:26.32-26.0.2.1-jre-headless-debian13`](#azul-zulu2632-26021-jre-headless-debian13)
+-	[`azul-zulu:27`](#azul-zulu27)
+-	[`azul-zulu:27-almalinux10`](#azul-zulu27-almalinux10)
+-	[`azul-zulu:27-alpine3.23`](#azul-zulu27-alpine323)
+-	[`azul-zulu:27-headless`](#azul-zulu27-headless)
+-	[`azul-zulu:27-headless-almalinux`](#azul-zulu27-headless-almalinux)
+-	[`azul-zulu:27-headless-almalinux10`](#azul-zulu27-headless-almalinux10)
+-	[`azul-zulu:27-headless-alpine`](#azul-zulu27-headless-alpine)
+-	[`azul-zulu:27-headless-alpine3.23`](#azul-zulu27-headless-alpine323)
+-	[`azul-zulu:27-headless-debian`](#azul-zulu27-headless-debian)
+-	[`azul-zulu:27-headless-debian13`](#azul-zulu27-headless-debian13)
+-	[`azul-zulu:27-jdk`](#azul-zulu27-jdk)
+-	[`azul-zulu:27-jdk-almalinux`](#azul-zulu27-jdk-almalinux)
+-	[`azul-zulu:27-jdk-almalinux10`](#azul-zulu27-jdk-almalinux10)
+-	[`azul-zulu:27-jdk-alpine`](#azul-zulu27-jdk-alpine)
+-	[`azul-zulu:27-jdk-alpine3.23`](#azul-zulu27-jdk-alpine323)
+-	[`azul-zulu:27-jdk-debian`](#azul-zulu27-jdk-debian)
+-	[`azul-zulu:27-jdk-debian13`](#azul-zulu27-jdk-debian13)
+-	[`azul-zulu:27-jre`](#azul-zulu27-jre)
+-	[`azul-zulu:27-jre-almalinux`](#azul-zulu27-jre-almalinux)
+-	[`azul-zulu:27-jre-almalinux10`](#azul-zulu27-jre-almalinux10)
+-	[`azul-zulu:27-jre-alpine`](#azul-zulu27-jre-alpine)
+-	[`azul-zulu:27-jre-alpine3.23`](#azul-zulu27-jre-alpine323)
+-	[`azul-zulu:27-jre-debian`](#azul-zulu27-jre-debian)
+-	[`azul-zulu:27-jre-debian13`](#azul-zulu27-jre-debian13)
+-	[`azul-zulu:27-jre-headless`](#azul-zulu27-jre-headless)
+-	[`azul-zulu:27-jre-headless-almalinux`](#azul-zulu27-jre-headless-almalinux)
+-	[`azul-zulu:27-jre-headless-almalinux10`](#azul-zulu27-jre-headless-almalinux10)
+-	[`azul-zulu:27-jre-headless-alpine`](#azul-zulu27-jre-headless-alpine)
+-	[`azul-zulu:27-jre-headless-alpine3.23`](#azul-zulu27-jre-headless-alpine323)
+-	[`azul-zulu:27-jre-headless-debian`](#azul-zulu27-jre-headless-debian)
+-	[`azul-zulu:27-jre-headless-debian13`](#azul-zulu27-jre-headless-debian13)
+-	[`azul-zulu:27.28-27.0.0-jdk-almalinux10`](#azul-zulu2728-2700-jdk-almalinux10)
+-	[`azul-zulu:27.28-27.0.0-jdk-alpine3.23`](#azul-zulu2728-2700-jdk-alpine323)
+-	[`azul-zulu:27.28-27.0.0-jdk-debian13`](#azul-zulu2728-2700-jdk-debian13)
+-	[`azul-zulu:27.28-27.0.0-jdk-headless-almalinux10`](#azul-zulu2728-2700-jdk-headless-almalinux10)
+-	[`azul-zulu:27.28-27.0.0-jdk-headless-alpine3.23`](#azul-zulu2728-2700-jdk-headless-alpine323)
+-	[`azul-zulu:27.28-27.0.0-jdk-headless-debian13`](#azul-zulu2728-2700-jdk-headless-debian13)
+-	[`azul-zulu:27.28-27.0.0-jre-almalinux10`](#azul-zulu2728-2700-jre-almalinux10)
+-	[`azul-zulu:27.28-27.0.0-jre-alpine3.23`](#azul-zulu2728-2700-jre-alpine323)
+-	[`azul-zulu:27.28-27.0.0-jre-debian13`](#azul-zulu2728-2700-jre-debian13)
+-	[`azul-zulu:27.28-27.0.0-jre-headless-almalinux10`](#azul-zulu2728-2700-jre-headless-almalinux10)
+-	[`azul-zulu:27.28-27.0.0-jre-headless-alpine3.23`](#azul-zulu2728-2700-jre-headless-alpine323)
+-	[`azul-zulu:27.28-27.0.0-jre-headless-debian13`](#azul-zulu2728-2700-jre-headless-debian13)
 -	[`azul-zulu:8`](#azul-zulu8)
 -	[`azul-zulu:8-almalinux10`](#azul-zulu8-almalinux10)
 -	[`azul-zulu:8-alpine3.23`](#azul-zulu8-alpine323)
@@ -28635,6 +28678,178 @@ $ docker pull azul-zulu@sha256:17cb554c1acaa1e25399bbea6426984a138f76e4e6e8f59b9
 		Last Modified: Tue, 25 Aug 2026 00:52:54 GMT  
 		Size: 9.4 KB (9412 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:27`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-almalinux`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-almalinux`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jdk-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-almalinux`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-almalinux`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-debian`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27-jre-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-headless-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jdk-headless-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-debian13`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-headless-almalinux10`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
+## `azul-zulu:27.28-27.0.0-jre-headless-debian13`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8`
 
