@@ -2008,9 +2008,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
 ```
 
 ### `dpkg` source package: `lame=3.100-3build2`
@@ -2456,9 +2456,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcdio=2.1.0-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0.orig.tar.bz2' libcdio_2.1.0.orig.tar.bz2 1511725 SHA256:78e246d591b1e8907943b844c68019c5b5a75a6d8cb1aa49a7d659b4ad95838b
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0-3ubuntu0.2.debian.tar.xz' libcdio_2.1.0-3ubuntu0.2.debian.tar.xz 14632 SHA256:ce298e0f90c355c85c426dcb1350ed7cf06def6353e9ed2b1d40f230da1416b6
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0-3ubuntu0.2.dsc' libcdio_2.1.0-3ubuntu0.2.dsc 2433 SHA256:ba56650318405d6ea1e6d814c97b112fbc384d3b90e2d3f4c881516cd58d884e
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0.orig.tar.bz2' libcdio_2.1.0.orig.tar.bz2 1511725 SHA512:8d61142f35a0eb27cf0c3ff33d97b2d5261a4cc37dbd9ca2b2dc2b821706b7f70572c167994d2c97b33c8f269b046dfdc55fda9dc0746e2c279f2125ffadd88f
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0-3ubuntu0.2.debian.tar.xz' libcdio_2.1.0-3ubuntu0.2.debian.tar.xz 14632 SHA512:b4cfb838f036dc25fbd99b80fdc2b1b1507cb06dd580a91da6fdc09d40d455209aca85169b9bcebee194e36b8b64a6b7de1e83d3e1b59ec53a77e6c4da0f7db0
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcdio/libcdio_2.1.0-3ubuntu0.2.dsc' libcdio_2.1.0-3ubuntu0.2.dsc 2433 SHA512:29a6a2362226de70850c1e0023b6389a0c5b6905081e4eb0cf64d2eef3550d08ef386cad0eff2ba222a9042e4c4f71c4698a1695ae496cdcd47be963f080ce7e
 ```
 
 ### `dpkg` source package: `libcdr=0.1.6-2build2`
