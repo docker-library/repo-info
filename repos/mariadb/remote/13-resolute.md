@@ -1,14 +1,16 @@
 ## `mariadb:13-resolute`
 
 ```console
-$ docker pull mariadb@sha256:6364857ae6bd6640139189c632df94f76329c7b1402d33fb9e64b05bf1ca628d
+$ docker pull mariadb@sha256:831e1993f97fc7a25ea7ce5d07db61a5bb7fdc5cf28cdedcca4c84db4feb0760
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 6
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; ppc64le
 	-	unknown; unknown
 
 ### `mariadb:13-resolute` - linux; amd64
@@ -297,4 +299,148 @@ $ docker pull mariadb@sha256:7b56ac55172328a9b1b4b4b5ce661e8b91ef5f24131860683bd
 	-	`sha256:73eed121f8fee4aeae9ad2150fcbbbecb7639f3a9d29e828fb1c872612cc9cea`  
 		Last Modified: Wed, 16 Sep 2026 03:26:09 GMT  
 		Size: 32.9 KB (32945 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `mariadb:13-resolute` - linux; ppc64le
+
+```console
+$ docker pull mariadb@sha256:dd831182acca1062c9f3068f6444850caf60a8342f20a4eb5fe35e4e75fddf0e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **130.1 MB (130069890 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:102c2baa0869cd60991129ea83c57e37aa63e3e1321974d4d30afa48186caff1`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mariadbd"]`
+
+```dockerfile
+# Sat, 12 Sep 2026 10:32:49 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.9566.tar --tag 26.04
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+
+Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
+It is the world's most popular operating system across public clouds and OpenStack clouds.
+It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
+Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
+
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-09-12T10:32:50.586556+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+
+Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
+It is the world's most popular operating system across public clouds and OpenStack clouds.
+It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
+Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
+
+# Sat, 12 Sep 2026 10:32:50 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-64c38dcc01e7a4a6a4edc23c9f41a2cf/images/.temp_layer.control_data.9566.tar
+# Wed, 16 Sep 2026 07:22:47 GMT
+RUN groupadd -r mysql && useradd -r -g mysql mysql --home-dir /var/lib/mysql && userdel --remove ubuntu # buildkit
+# Wed, 16 Sep 2026 07:23:44 GMT
+ENV GOSU_VERSION=1.19
+# Wed, 16 Sep 2026 07:23:44 GMT
+ARG GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
+# Wed, 16 Sep 2026 07:23:44 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
+RUN set -eux; 	apt-get update; 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends 		ca-certificates 		gpg 		gpgv 		libjemalloc2 		libtcmalloc-minimal4t64 		pwgen 		tzdata 		xz-utils 		zstd ; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get install -y --no-install-recommends 		dirmngr 		gpg-agent 		wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -q -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -q -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	GNUPGHOME="$(mktemp -d)"; 	export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$GPG_KEYS" > /etc/apt/trusted.gpg.d/mariadb.gpg; 	if command -v gpgconf >/dev/null; then 		gpgconf --kill all; 	fi; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] ||	apt-mark manual $savedAptMark >/dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Wed, 16 Sep 2026 07:23:44 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Wed, 16 Sep 2026 07:23:44 GMT
+ENV LANG=C.UTF-8
+# Wed, 16 Sep 2026 07:23:44 GMT
+LABEL org.opencontainers.image.authors=MariaDB Community org.opencontainers.image.title=MariaDB Database org.opencontainers.image.description=MariaDB Database for relational SQL org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/ org.opencontainers.image.base.name=docker.io/library/ubuntu:resolute org.opencontainers.image.licenses=GPL-2.0 org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker org.opencontainers.image.vendor=MariaDB Community org.opencontainers.image.version=13.0.2 org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker
+# Wed, 16 Sep 2026 07:23:44 GMT
+ARG MARIADB_VERSION=1:13.0.2+maria~ubu2604
+# Wed, 16 Sep 2026 07:23:44 GMT
+ENV MARIADB_VERSION=1:13.0.2+maria~ubu2604
+# Wed, 16 Sep 2026 07:23:44 GMT
+ARG REPOSITORY=http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/ resolute main main/debug
+# Wed, 16 Sep 2026 07:23:45 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:13.0.2+maria~ubu2604 REPOSITORY=http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/ resolute main main/debug
+RUN set -e;	echo "deb ${REPOSITORY}" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb # buildkit
+# Wed, 16 Sep 2026 07:24:27 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:13.0.2+maria~ubu2604 REPOSITORY=http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/ resolute main main/debug
+RUN set -ex; 	{ 		echo "mariadb-server" mysql-server/root_password password 'unused'; 		echo "mariadb-server" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	apt-get update; 	mkdir -p /var/lib/mysql/mysql ; touch /var/lib/mysql/mysql/user.frm ; 	apt-get install -y --no-install-recommends mariadb-server-galera="$MARIADB_VERSION" mariadb-backup socat 	; 	rm -rf /var/lib/apt/lists/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /run/mysqld; 	chmod 1777 /run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user\s)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user\s)/#&/'; 	printf "[mariadb]\nhost-cache-size=0\nskip-name-resolve\n" > /etc/mysql/mariadb.conf.d/05-skipcache.cnf; 	if [ -L /etc/mysql/my.cnf ]; then 		sed -i -e '/includedir/ {N;s/\(.*\)\n\(.*\)/\n\2\n\1/}' /etc/mysql/mariadb.cnf; 	fi # buildkit
+# Wed, 16 Sep 2026 07:24:27 GMT
+VOLUME [/var/lib/mysql]
+# Wed, 16 Sep 2026 07:24:27 GMT
+COPY healthcheck.sh /usr/local/bin/healthcheck.sh # buildkit
+# Wed, 16 Sep 2026 07:24:28 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 16 Sep 2026 07:24:28 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 16 Sep 2026 07:24:28 GMT
+EXPOSE map[3306/tcp:{}]
+# Wed, 16 Sep 2026 07:24:28 GMT
+CMD ["mariadbd"]
+```
+
+-	Layers:
+	-	`sha256:962bf9d875d6e8ff3c9b897eff15c72d89dbe29382b528395357e9d833c32fca`  
+		Last Modified: Sat, 12 Sep 2026 12:56:54 GMT  
+		Size: 46.8 MB (46823153 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b636516270ec3ead8a7f42e0dcac6372059cb5d7dc0a8fecbb3f92457667620`  
+		Last Modified: Sat, 12 Sep 2026 12:56:57 GMT  
+		Size: 391.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efd4b057769062854b20c3859e137e956383bed79709cb224feae757321ea25a`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 1.3 KB (1342 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4c0c4eaf099cc83b87e330f244b8d44af0f4cfb6a11cc24aede04dc1896f248c`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 6.6 MB (6576388 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:781ad9350c72bf960030d9fa2c569f885010ba1c51a571893c799604259ce6a1`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 113.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a0c8fedc76ea90b31d0b9d9bcb142dcda10ddf459d161c3949612e244a7d86a`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 331.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2d9aa645010934a47a96f588a65d26535038e8c0ed581ddc11716cca755dcb0f`  
+		Last Modified: Wed, 16 Sep 2026 07:25:17 GMT  
+		Size: 76.7 MB (76655629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2e27d4f25645fe0b9901a2d409847638963f8aae0201b5a15372f2052c49f18`  
+		Last Modified: Wed, 16 Sep 2026 07:25:15 GMT  
+		Size: 4.0 KB (4042 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5ff518ec8087dc7434ad89f45666ad76e4215ce45502b86a4b179be759bd1e79`  
+		Last Modified: Wed, 16 Sep 2026 07:25:15 GMT  
+		Size: 8.5 KB (8501 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `mariadb:13-resolute` - unknown; unknown
+
+```console
+$ docker pull mariadb@sha256:297366d0ee5b96d776bf236a0b7f940d8efe962df6066a692fa190cb5791d28f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.2 MB (6196306 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5e4c1d57ecc4dd8edfca35e563ae827e46ed0fe09309a57f6eea525ad801df2f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:0c902adbdab62f027d46163332813eaefd49b3c1cb5e27c23b5e72e07fdd6663`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 6.2 MB (6163498 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:48350640006e6fda6ba7214fa253c8a1588642600a21ffcbb10d4c85941aa6aa`  
+		Last Modified: Wed, 16 Sep 2026 07:25:14 GMT  
+		Size: 32.8 KB (32808 bytes)  
 		MIME: application/vnd.in-toto+json
