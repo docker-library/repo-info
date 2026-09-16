@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f62c4c441f864521579bc71218753cf5f29e1fb955d74df5dc1654b1936d61cd`
-- Created: `2026-09-09T03:46:27.265239055Z`
-- Virtual Size: ~ 394.36 Mb  
+- Image ID: `sha256:a278540d37e2df4f0864e5dd8429837cb7449214861a86f55bfc9541a2e97576`
+- Created: `2026-09-16T04:34:03.283807936Z`
+- Virtual Size: ~ 401.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -1416,11 +1416,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre2/10.46-1~deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre2/10.46-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.40.1-6`
+### `dpkg` source package: `perl=5.40.1-6+deb13u1`
 
 Binary Packages:
 
-- `perl-base=5.40.1-6`
+- `perl-base=5.40.1-6+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1453,7 +1453,7 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-6
+$ apt-get source -qq --print-uris perl=5.40.1-6+deb13u1
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-6%2bdeb13u1.dsc' perl_5.40.1-6+deb13u1.dsc 2404 SHA256:92d1cfb32167d77fada7284f1c291de72f93eb896f5cfd58247d020182b403a8
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
@@ -1462,9 +1462,9 @@ $ apt-get source -qq --print-uris perl=5.40.1-6
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.40.1-6/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.1-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.40.1-6+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.1-6+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.1-6+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-3`
 
