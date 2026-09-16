@@ -1,10 +1,10 @@
-# `tomcat:9.0.121-jre25-temurin-noble`
+# `tomcat:9.0.122-jre25-temurin-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62ae352bdd2a7f799a2a2b863d87145563c8e4a2674aa04dd38793c278e9231a`
-- Created: `2026-09-09T04:26:07.064189343Z`
-- Virtual Size: ~ 332.9 Mb  
+- Image ID: `sha256:2cb38fdb04942dd137208ffba5b0dbbef201cf8ed5744f81c855f4f85d4fbb55`
+- Created: `2026-09-16T05:16:11.855789345Z`
+- Virtual Size: ~ 332.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.121`
-  - `TOMCAT_SHA512=16494dd4745f808d3c506807b5275521fd71044d976f441d18eeeab0f5a38bc1b5344ca395292f6f26eb7612cd8c8e746d01ccdfb29893d394052d9f4b1f4c11`
+  - `TOMCAT_VERSION=9.0.122`
+  - `TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -155,19 +155,23 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc' audit_3.1.2-2.1build1.1.dsc 2848 SHA512:3e54e808c6130829a386f25a3a40a35ae1598955407ca5eb1c400cabe4226da47688c0970e35bba4d841c73f3c625cce08130982657d9c5debdf98d78b717fb6
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.4`
+### `dpkg` source package: `base-files=13ubuntu10.5`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.4`
+- `base-files=13ubuntu10.5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.5.tar.xz' base-files_13ubuntu10.5.tar.xz 94204 SHA512:7d124fed72116c367991dc0dbbf4b686d7243668f0ea1b7e47c1d596bdb5936099b8fa7be92ab65479c8687774711af8a7e8a0da8136552af2ac70d79467210c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.5.dsc' base-files_13ubuntu10.5.dsc 1625 SHA512:378fbb7cc2bb06c59c46f1a60eb8d976cd5d16d6cafce555b98c8fd15e2800c0977f422b35c952d8d424311a5592f7606ccc595cb2f7ad1d84d69ef89ac7a064
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -670,13 +674,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.dsc' gcc-14_14.2.0-4ubuntu2~24.04.1.dsc 46930 SHA256:50950080874a6ec6780dd60c243e21d9cda9d736bb32bca98d16095d27cc01b5
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.8`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.8`
-- `libc6:amd64=2.39-0ubuntu8.8`
-- `locales=2.39-0ubuntu8.8`
+- `libc-bin=2.39-0ubuntu8.9`
+- `libc6:amd64=2.39-0ubuntu8.9`
+- `locales=2.39-0ubuntu8.9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -684,9 +688,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.debian.tar.xz' glibc_2.39-0ubuntu8.9.debian.tar.xz 491440 SHA512:b46142cc7a5159bcc25d764efe0b8b596a8522dee4e36e8d7c47f4f0ac2a6b9ce9652af58d15512bb24aa27b8f4c33dc354d8ef947cde7d127755afe94f44583
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.dsc' glibc_2.39-0ubuntu8.9.dsc 9387 SHA512:67cf2737d0b1fc4f8a4fa66c3b460301b9e88e925e1b65f78bfee1971ec23225c410befb2e326516e80d24adb99e838ce72f3bc6fef48f6e61e2771d7ddd2f51
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
