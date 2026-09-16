@@ -1,10 +1,10 @@
-# `mariadb:13.0.1-resolute-rc`
+# `mariadb:13.0.2-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f2566b276ae11f8ab578560af9913fa6a6e8cb63104b39cf5fb8f41a60390e1`
-- Created: `2026-09-09T02:33:38.49296765Z`
-- Virtual Size: ~ 369.83 Mb  
+- Image ID: `sha256:b2a2fb8d0621df2b499be0583ea92962b04c3a53304d763fa05db4e358ddcb29`
+- Created: `2026-09-16T03:26:24.597741047Z`
+- Virtual Size: ~ 362.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:13.0.1+maria~ubu2604`
+  - `MARIADB_VERSION=1:13.0.2+maria~ubu2604`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:resolute`
-  - `org.opencontainers.image.created=2026-09-01T20:37:00.369571+00:00`
+  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=13.0.1`
+  - `org.opencontainers.image.version=13.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -117,12 +117,12 @@ $ apt-get source -qq --print-uris attr=1:2.5.2-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-4ubuntu0.1.dsc' attr_2.5.2-4ubuntu0.1.dsc 2630 SHA512:90825037a582dee85943e8d383306d6412260f9f0e2ca88acdf44eb01e2bff5e8fe863f5a6eaeb1eeafecc0902a091d27013890b8ee92577bf201b4658a71554
 ```
 
-### `dpkg` source package: `audit=1:4.1.2-1build1`
+### `dpkg` source package: `audit=1:4.1.2-1ubuntu0.1`
 
 Binary Packages:
 
-- `libaudit-common=1:4.1.2-1build1`
-- `libaudit1:amd64=1:4.1.2-1build1`
+- `libaudit-common=1:4.1.2-1ubuntu0.1`
+- `libaudit1:amd64=1:4.1.2-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -132,10 +132,10 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris audit=1:4.1.2-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2.orig.tar.gz' audit_4.1.2.orig.tar.gz 656095 SHA256:5c638bbeef9adb6c5715d3a60f0f5adb93e9b81633608af13d23c61f5e5db04d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1build1.debian.tar.xz' audit_4.1.2-1build1.debian.tar.xz 19800 SHA256:f5448b31a499220c1e48f8eaae57306a1d76b1ca7f1534f63ce13fbcf9e60efe
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1build1.dsc' audit_4.1.2-1build1.dsc 2891 SHA256:9d273637613a8a29a29ade25bbed913362aeefd08ca5f19504d4df391ef08201
+$ apt-get source -qq --print-uris audit=1:4.1.2-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2.orig.tar.gz' audit_4.1.2.orig.tar.gz 656095 SHA512:a47fec1041e11a76ad57b57bcf6e9b454188d95ec26cabf15e92e114d46c7c8f09ddb251d5aebef8bc7faacc6ccffe44c73543d8234af237548b4ad89a408fc3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1ubuntu0.1.debian.tar.xz' audit_4.1.2-1ubuntu0.1.debian.tar.xz 20500 SHA512:2f8198526ed8c4330bd7568e59467dda88c2d1dd3824b15ef64e4a1764ba785e1c1aa0cb574756cfd3e2766b5ff47aa74a9c17d1f1f039caf026b842f69ead24
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1ubuntu0.1.dsc' audit_4.1.2-1ubuntu0.1.dsc 3032 SHA512:f376230aa543b89c0c4ceae06625005ad3be522b73cf7403304e8e4503b315058d1ff33e4591f4eaa115791a461da00d5470d07d437d7acccc8be5c9536a4059
 ```
 
 ### `dpkg` source package: `base-files=14ubuntu6.2`
@@ -653,13 +653,13 @@ $ apt-get source -qq --print-uris gdbm=1.26-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.26-1build1.dsc' gdbm_1.26-1build1.dsc 2258 SHA256:ae64d944a1f2ec46d872a27714c30f6b79e68f8398628bb801f80467972fa0ac
 ```
 
-### `dpkg` source package: `glibc=2.43-2ubuntu2.3`
+### `dpkg` source package: `glibc=2.43-2ubuntu2.4`
 
 Binary Packages:
 
-- `libc-bin=2.43-2ubuntu2.3`
-- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.3`
-- `libc6:amd64=2.43-2ubuntu2.3`
+- `libc-bin=2.43-2ubuntu2.4`
+- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.4`
+- `libc6:amd64=2.43-2ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -697,9 +697,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.debian.tar.xz' glibc_2.43-2ubuntu2.4.debian.tar.xz 530764 SHA512:18a877a97dc66d887d6d01f73358f527ce6233555749997b068cc45ae287f3635d76979e41b9b78e674799695369c055b8a66449793e3b99c3dc57f12ded4935
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.dsc' glibc_2.43-2ubuntu2.4.dsc 9078 SHA512:b07d5c013046605738daf62c21acaa7a87d8bd7fcfaa67187dc282c9ecea3cfb546bb5d43e5eddc429822cc258a844aa5d24a460fef4d4c88db21e3c0c008b24
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
@@ -1562,19 +1568,19 @@ $ apt-get source -qq --print-uris lz4=1.10.0-8
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-8.debian.tar.xz' lz4_1.10.0-8.debian.tar.xz 9676 SHA256:66d57e79483da61dee090b37b005fe43657846472c854709220621434df8e84c
 ```
 
-### `dpkg` source package: `mariadb=1:13.0.1+maria~ubu2604`
+### `dpkg` source package: `mariadb=1:13.0.2+maria~ubu2604`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:13.0.1+maria~ubu2604`
-- `mariadb-backup=1:13.0.1+maria~ubu2604`
-- `mariadb-client=1:13.0.1+maria~ubu2604`
-- `mariadb-client-core=1:13.0.1+maria~ubu2604`
-- `mariadb-common=1:13.0.1+maria~ubu2604`
-- `mariadb-server=1:13.0.1+maria~ubu2604`
-- `mariadb-server-core=1:13.0.1+maria~ubu2604`
-- `mariadb-server-galera=1:13.0.1+maria~ubu2604`
-- `mysql-common=1:13.0.1+maria~ubu2604`
+- `libmariadb3:amd64=1:13.0.2+maria~ubu2604`
+- `mariadb-backup=1:13.0.2+maria~ubu2604`
+- `mariadb-client=1:13.0.2+maria~ubu2604`
+- `mariadb-client-core=1:13.0.2+maria~ubu2604`
+- `mariadb-common=1:13.0.2+maria~ubu2604`
+- `mariadb-server=1:13.0.2+maria~ubu2604`
+- `mariadb-server-core=1:13.0.2+maria~ubu2604`
+- `mariadb-server-galera=1:13.0.2+maria~ubu2604`
+- `mysql-common=1:13.0.2+maria~ubu2604`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1583,9 +1589,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:13.0.1+maria~ubu2604
-'http://archive.mariadb.org/mariadb-13.0.1/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.1%2bmaria%7eubu2604.dsc' mariadb_13.0.1+maria~ubu2604.dsc 4704 SHA256:0e41dc3fd59fdb6225df1a2774d597225df8fed8297ae1d0887e6cffbc411fc5
-'http://archive.mariadb.org/mariadb-13.0.1/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.1%2bmaria%7eubu2604.tar.xz' mariadb_13.0.1+maria~ubu2604.tar.xz 184839820 SHA256:6e02bd8a36fd6b2747be48bd0b72dcc96df69d70b74b016be9ba7269ac3539b0
+$ apt-get source -qq --print-uris mariadb=1:13.0.2+maria~ubu2604
+'http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.2%2bmaria%7eubu2604.dsc' mariadb_13.0.2+maria~ubu2604.dsc 4609 SHA512:800398c31996697c435a6061dcb87084e38deb1fe3703f8ae2cc5d19a0d2503d441f87f43cfd36b14f76e18fd5f163631cd7d94c45caf02133141656126813ab
+'http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.2%2bmaria%7eubu2604.tar.xz' mariadb_13.0.2+maria~ubu2604.tar.xz 372627800 SHA512:14930aeddba377e3997ce8e2a29028b72cd0f0243100dbf35e384697c9d657346e9089cbc8abf3fc50c8110185ade0e078c12a677fdf38f9abeb5cb66b94a464
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20260129-1`
@@ -1761,14 +1767,14 @@ $ apt-get source -qq --print-uris pcre2=10.46-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
 ```
 
-### `dpkg` source package: `perl=5.40.1-7ubuntu0.2`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-7ubuntu0.2`
-- `perl=5.40.1-7ubuntu0.2`
-- `perl-base=5.40.1-7ubuntu0.2`
-- `perl-modules-5.40=5.40.1-7ubuntu0.2`
+- `libperl5.40:amd64=5.40.1-7ubuntu0.3`
+- `perl=5.40.1-7ubuntu0.3`
+- `perl-base=5.40.1-7ubuntu0.3`
+- `perl-modules-5.40=5.40.1-7ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -1798,9 +1804,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
+```
 
 ### `dpkg` source package: `popt=1.19+dfsg-2build1`
 

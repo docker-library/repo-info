@@ -1,10 +1,10 @@
-# `mariadb:13.0.1-ubi10-rc`
+# `mariadb:13.0.2-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0dcaa43ffb329c85d3f0f70d30694c454444f0ea3a56bfa3a97cd645f92342b7`
-- Created: `2026-09-09T22:41:47.704343711Z`
-- Virtual Size: ~ 527.7 Mb  
+- Image ID: `sha256:0c11f1c2ae805746a88d734555ff25a6d5bc551eb46ea4e99ce95f431deaa797`
+- Created: `2026-09-15T23:36:42.612510134Z`
+- Virtual Size: ~ 528.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,10 +13,10 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.19`
-  - `MARIADB_VERSION=13.0.1`
+  - `MARIADB_VERSION=13.0.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-09T08:04:26Z`
+  - `build-date=2026-09-15T07:20:44Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,23 +31,23 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-09-09T08:04:26Z`
+  - `org.opencontainers.image.created=2026-09-15T07:20:44Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
+  - `org.opencontainers.image.revision=c25cacc858803712e72276693173f29b561e6f08`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=13.0.1`
+  - `org.opencontainers.image.version=13.0.2`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
+  - `vcs-ref=c25cacc858803712e72276693173f29b561e6f08`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=13.0.1`
+  - `version=13.0.2`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -668,12 +668,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/sou
 
 Licenses (from `rpm --query`): BSD-3-Clause AND ISC AND LicenseRef-Fedora-Public-Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libevent-2.1.12-16.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.12-16.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
 
@@ -1402,12 +1397,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/source/SRPMS/Packages/r/rsyslog-8.2510.0-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `sed-4.9-5.el10.x86_64`
 
