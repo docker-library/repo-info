@@ -1,10 +1,10 @@
-# `golang:tip-20260905-trixie`
+# `golang:tip-20260913-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:20b08c168b630e72eb48cb9e60a9a32d9ab64bf550d72cecb7645f0c1c7e90df`
-- Created: `2026-09-08T21:51:33.990339623Z`
-- Virtual Size: ~ 925.7 Mb  
+- Image ID: `sha256:357aa495ef1bd8f670ff4e34f5278f63d6c7f8af7d022fe3f25f99f23111ee61`
+- Created: `2026-09-15T22:35:30.709092009Z`
+- Virtual Size: ~ 940.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -997,14 +997,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.47.3-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.47.3-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.41-12+deb13u3`
+### `dpkg` source package: `glibc=2.41-12+deb13u4`
 
 Binary Packages:
 
-- `libc-bin=2.41-12+deb13u3`
-- `libc-dev-bin=2.41-12+deb13u3`
-- `libc6:amd64=2.41-12+deb13u3`
-- `libc6-dev:amd64=2.41-12+deb13u3`
+- `libc-bin=2.41-12+deb13u4`
+- `libc-dev-bin=2.41-12+deb13u4`
+- `libc6:amd64=2.41-12+deb13u4`
+- `libc6-dev:amd64=2.41-12+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1044,17 +1044,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.41-12+deb13u3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.dsc' glibc_2.41-12+deb13u3.dsc 7576 SHA256:aa1ab10010fcf169454a5c6a123094a3997392922593d86a3a5adc180a07ca40
+$ apt-get source -qq --print-uris glibc=2.41-12+deb13u4
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.dsc' glibc_2.41-12+deb13u4.dsc 7576 SHA256:0915324aa646bb99abfaa9aa6ecb734b30babd28454a3e51f3152912370fbd3e
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.debian.tar.xz' glibc_2.41-12+deb13u3.debian.tar.xz 494644 SHA256:de7d715bf7e559b78baebac4115122641842f65faf0a5080a55954877a55cebe
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.debian.tar.xz' glibc_2.41-12+deb13u4.debian.tar.xz 499524 SHA256:dda4153511bfd543502d18e5bc9323110996fe9c531f14ae3fad6eb17f027c7d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.41-12+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-12+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-12+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.41-12+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
