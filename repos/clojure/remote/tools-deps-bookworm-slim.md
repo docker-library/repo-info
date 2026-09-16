@@ -1,7 +1,7 @@
 ## `clojure:tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e07fa868063193b1dcf12e79fb3286e8acf312ca2c51bc34c217265f2054ae9d
+$ docker pull clojure@sha256:fd000d3afc0b5c3edded87b2a1603bee7f7d8ed01319540571ad1ab8556fede6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -104,38 +104,38 @@ $ docker pull clojure@sha256:d2b2b359fbc8846624368bebc9c91ad206feba2129a8276f90d
 ### `clojure:tools-deps-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:edfc5dfdcab8c1a06c6e9155d0f06fbbb128fdb60804d728312db7ce9a1dab18
+$ docker pull clojure@sha256:378eaf35c37217ee96888b55cc24b334888452a238eefe2797434636b785913e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.3 MB (186334473 bytes)**  
+-	Total Size: **186.3 MB (186334301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a3aa3e2276d957bef8cb8e6a69f63d5f22e818aaf818a2dbf12352e68d094ef`
+-	Image ID: `sha256:aebe62cf765c2908202de31bf5041c3f1a717b769b6ded571cab1f1e50196b50`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Mon, 24 Aug 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Wed, 09 Sep 2026 04:01:55 GMT
+# Wed, 16 Sep 2026 04:37:37 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 09 Sep 2026 04:01:55 GMT
+# Wed, 16 Sep 2026 04:37:37 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Wed, 09 Sep 2026 04:01:55 GMT
+# Wed, 16 Sep 2026 04:37:37 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 09 Sep 2026 04:01:55 GMT
+# Wed, 16 Sep 2026 04:37:37 GMT
 ENV CLOJURE_VERSION=1.12.6.1673
-# Wed, 09 Sep 2026 04:01:55 GMT
+# Wed, 16 Sep 2026 04:37:37 GMT
 WORKDIR /tmp
-# Wed, 09 Sep 2026 04:02:09 GMT
+# Wed, 16 Sep 2026 04:37:51 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "5ae63b082ed33bf4c29bf1a8317c5c15249d1bc753676b2f5177fb3804ad6f77 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
-# Wed, 09 Sep 2026 04:02:09 GMT
+# Wed, 16 Sep 2026 04:37:51 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Wed, 09 Sep 2026 04:02:09 GMT
+# Wed, 16 Sep 2026 04:37:51 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Wed, 09 Sep 2026 04:02:09 GMT
+# Wed, 16 Sep 2026 04:37:51 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 09 Sep 2026 04:02:09 GMT
+# Wed, 16 Sep 2026 04:37:51 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -144,49 +144,49 @@ CMD ["-M" "--repl"]
 		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
 		Size: 28.1 MB (28117289 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5f0badde0f1638aae6660eae8f8699a9fe3a73c340a1cb6e1d0947380705be0`  
-		Last Modified: Wed, 09 Sep 2026 04:02:31 GMT  
-		Size: 91.5 MB (91532216 bytes)  
+	-	`sha256:9706d8400e728f53d1679284e779962b249319b03bdd6ae83c94c205a4a2e43b`  
+		Last Modified: Wed, 16 Sep 2026 04:38:12 GMT  
+		Size: 91.5 MB (91532217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4027d69aedf6e34a0a8cb5c68561349c18c575540a334104c954033da3ecc28b`  
-		Last Modified: Wed, 09 Sep 2026 04:02:30 GMT  
-		Size: 66.7 MB (66683927 bytes)  
+	-	`sha256:a768706302d0df105d40d30a8d5f83e594d1335cbbfe0a16c779776f3d7de528`  
+		Last Modified: Wed, 16 Sep 2026 04:38:12 GMT  
+		Size: 66.7 MB (66683752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1d046dacb6028bc84545bd7643cee4a9e3defc38c9c955c4624d7e2c7aa105f`  
-		Last Modified: Wed, 09 Sep 2026 04:02:27 GMT  
-		Size: 612.0 B  
+	-	`sha256:715032a9702e603a03ddd41dd28252944f1db25fd0ce23eb3cd2f79ab28b4d4a`  
+		Last Modified: Wed, 16 Sep 2026 04:38:09 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac837ce994e480749efebcf780c694455ef67ee14d8f6ed6ecf5abb038f70f26`  
-		Last Modified: Wed, 09 Sep 2026 04:02:27 GMT  
+	-	`sha256:0aba616a33857aeea451881fe92870f83fd7897b904eece9a43a8e078c360451`  
+		Last Modified: Wed, 16 Sep 2026 04:38:09 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9b6abce5aab4774644f76d922f677d65a4e566dba4538248596d2dfa59a3ac28
+$ docker pull clojure@sha256:4d0be8ba8399dada75c8d75d4d11fdfa66b0fa2bae4642d14fc51b99ca23bf1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5109958 bytes)**  
+-	Total Size: **5.1 MB (5109959 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed16e6f268943ea164d4a27cc1b0d8aa35c91f6801a81a16f16331a841714708`
+-	Image ID: `sha256:babcee126b559fffcd1f8af8e87a71cf2cca5e8c25dc08d3225844d430ef98f0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:864337ab184576893f1ccd40b92145ce037dd39f8356753cfeebe11ab464a3b8`  
-		Last Modified: Wed, 09 Sep 2026 04:02:27 GMT  
+	-	`sha256:675f010bd20fe7e8511235e0d2a4d547ad27cd71cb171b9a67081a381b258815`  
+		Last Modified: Wed, 16 Sep 2026 04:38:10 GMT  
 		Size: 5.1 MB (5093138 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f431fa6d85f5f8c5355eff1bb2150f61d9e9962c38104602e37bd8783a891a6a`  
-		Last Modified: Wed, 09 Sep 2026 04:02:27 GMT  
-		Size: 16.8 KB (16820 bytes)  
+	-	`sha256:5c9ddda07b3a75a24e95dec2e4388377e7703fe637d5d749c64b89fa89ae9b50`  
+		Last Modified: Wed, 16 Sep 2026 04:38:09 GMT  
+		Size: 16.8 KB (16821 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:tools-deps-bookworm-slim` - linux; ppc64le
