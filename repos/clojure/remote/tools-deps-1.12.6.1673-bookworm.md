@@ -1,7 +1,7 @@
 ## `clojure:tools-deps-1.12.6.1673-bookworm`
 
 ```console
-$ docker pull clojure@sha256:2c3d30d541485dfb54eaa33d0afc4ddfdda71cc5ba5c3baaff2f30c2b5733da7
+$ docker pull clojure@sha256:a2eef29e5df5a49bf40650fab3c6258a18945ae90ea6982a845f96d18e153aa8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -192,7 +192,7 @@ $ docker pull clojure@sha256:12c89409aef7bd1caddf6c04744611f771f60f6f34078f48fcd
 ### `clojure:tools-deps-1.12.6.1673-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:82cafb1692c7811e56eaf6ba93d1a5834ac71eeb40da3a451a30646610c8c52b
+$ docker pull clojure@sha256:3e198781eeeafc6800045bf4f1d16e033bde9b945181e704937b22e756a01083
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -256,23 +256,23 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.6.1673-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:684777d56da1a3762aee71fabe70abf22e007b42616efb7e9daa6a44de419a43
+$ docker pull clojure@sha256:60bef21d600750c752164325004c4d1ab0836e76fc63d27c0ff734d875ae8838
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.4 MB (7357340 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ad7c1792dafa26a1b957f7b82a67a1a799a9f0476e376c776cb9638bff1fd58`
+-	Image ID: `sha256:c426b04c577436d0484e9b08ea1c38f979ba68b7cebcb4b5229b593cab97fe7e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1eef1ed74a1fbd24f83c99eeccadca35587e9a3b7ee5e23747305adcd215a41`  
-		Last Modified: Wed, 09 Sep 2026 11:16:16 GMT  
+	-	`sha256:24f39128f75a5f68d6861f949fc7834d48afccc1cfb859a4e6c18a82ac6711c1`  
+		Last Modified: Wed, 16 Sep 2026 10:57:41 GMT  
 		Size: 7.3 MB (7339331 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09d3a6a96c4606ccbc1aa9e9162d1cdbd5f6f919fc289abbb15cdbf1af140c19`  
-		Last Modified: Wed, 09 Sep 2026 11:16:15 GMT  
+	-	`sha256:210a84f4c16abfdc1c530d670d450e986617c153fdc764158904ab3515188595`  
+		Last Modified: Wed, 16 Sep 2026 10:57:40 GMT  
 		Size: 18.0 KB (18009 bytes)  
 		MIME: application/vnd.in-toto+json
