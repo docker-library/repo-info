@@ -1,9 +1,9 @@
-# `mongo:7.0.41-jammy`
+# `mongo:7.0.43-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:afc88244d9e7cd1881688f8952bd120bddbf8814e7a0fc683d296f52a71f375d`
-- Created: `2026-09-09T02:34:31.583282212Z`
+- Image ID: `sha256:1b70d5bf141c2c93946a8f8e39f3f22a0a04a6d24e22cf47472b703856c715de`
+- Created: `2026-09-14T18:38:22.710282075Z`
 - Virtual Size: ~ 865.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.41`
+  - `MONGO_VERSION=7.0.43`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.version=22.04`
