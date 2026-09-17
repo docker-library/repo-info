@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bfaa622baea5d8e268f52cbaae9985797d5712e80c72b8fcf9cc477f8216d360`
-- Created: `2026-07-30T23:27:07.446572887Z`
-- Virtual Size: ~ 593.87 Mb  
+- Image ID: `sha256:9076aac91f60c71d404c3e46ec8dfc8f13bc2c5eaeb0b59b1f72f003a5219b54`
+- Created: `2026-09-15T22:39:36.322370222Z`
+- Virtual Size: ~ 600.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.21.0-r0 description:
+curl-8.22.0-r0 description:
 URL retrieval utility and library
 
-curl-8.21.0-r0 webpage:
+curl-8.22.0-r0 webpage:
 https://curl.se/
 
-curl-8.21.0-r0 installed size:
-273 KiB
+curl-8.22.0-r0 installed size:
+278 KiB
 
-curl-8.21.0-r0 license:
+curl-8.22.0-r0 license:
 curl
 
 ```
@@ -488,16 +488,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.27-r0 description:
+imagemagick-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.27-r0 webpage:
+imagemagick-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.27-r0 installed size:
-3700 KiB
+imagemagick-7.1.2.30-r0 installed size:
+3758 KiB
 
-imagemagick-7.1.2.27-r0 license:
+imagemagick-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -505,16 +505,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.27-r0 description:
+imagemagick-libs-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.27-r0 webpage:
+imagemagick-libs-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.27-r0 installed size:
-4313 KiB
+imagemagick-libs-7.1.2.30-r0 installed size:
+4301 KiB
 
-imagemagick-libs-7.1.2.27-r0 license:
+imagemagick-libs-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -556,16 +556,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42.1-r0 description:
+libblkid-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.42.1-r0 webpage:
+libblkid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42.1-r0 installed size:
+libblkid-2.42.3-r1 installed size:
 198 KiB
 
-libblkid-2.42.1-r0 license:
+libblkid-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -607,16 +607,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -624,16 +624,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -658,16 +658,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.2-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.2-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.2-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.2-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -794,16 +794,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42.1-r0 description:
+libmount-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libmount-2.42.1-r0 webpage:
+libmount-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42.1-r0 installed size:
-282 KiB
+libmount-2.42.3-r1 installed size:
+286 KiB
 
-libmount-2.42.1-r0 license:
+libmount-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -913,16 +913,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1185,16 +1185,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1202,16 +1202,16 @@ Apache-2.0
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
@@ -1219,16 +1219,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.5-r0 description:
+pyc-3.14.7-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.5-r0 webpage:
+pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.5-r0 installed size:
+pyc-3.14.7-r1 installed size:
 0 B
 
-pyc-3.14.5-r0 license:
+pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1236,16 +1236,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.5-r0 description:
+python3-3.14.7-r1 description:
 High-level scripting language
 
-python3-3.14.5-r0 webpage:
+python3-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-3.14.5-r0 installed size:
+python3-3.14.7-r1 installed size:
 22 MiB
 
-python3-3.14.5-r0 license:
+python3-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1253,16 +1253,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.5-r0 description:
+python3-pyc-3.14.7-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.5-r0 webpage:
+python3-pyc-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.5-r0 installed size:
+python3-pyc-3.14.7-r1 installed size:
 0 B
 
-python3-pyc-3.14.5-r0 license:
+python3-pyc-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1270,16 +1270,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.5-r0 description:
+python3-pycache-pyc0-3.14.7-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.5-r0 webpage:
+python3-pycache-pyc0-3.14.7-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.5-r0 installed size:
+python3-pycache-pyc0-3.14.7-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.5-r0 license:
+python3-pycache-pyc0-3.14.7-r1 license:
 PSF-2.0
 
 ```
@@ -1321,16 +1321,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.53.2-r0 description:
+sqlite-libs-3.53.4-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.53.2-r0 webpage:
+sqlite-libs-3.53.4-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.53.2-r0 installed size:
+sqlite-libs-3.53.4-r0 installed size:
 1602 KiB
 
-sqlite-libs-3.53.2-r0 license:
+sqlite-libs-3.53.4-r0 license:
 blessing
 
 ```
@@ -1372,16 +1372,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.3-r0 description:
+xz-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.3-r0 webpage:
+xz-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.3-r0 installed size:
+xz-5.8.4-r0 installed size:
 162 KiB
 
-xz-5.8.3-r0 license:
+xz-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1389,16 +1389,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
