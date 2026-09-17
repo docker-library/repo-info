@@ -1,17 +1,17 @@
-# `docker:29.8.0-dind`
+# `docker:29.8.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:91d8bd00911082b57a797bfe6eb76c17a648605b84e1bb2a0e6ab47fcf6184d0`
-- Created: `2026-09-04T21:48:33.577568855Z`
-- Virtual Size: ~ 377.93 Mb  
+- Image ID: `sha256:19a365b64dc50e3dec0a4b5687b6b4708e6f120bcbc11468574c9096a447f83f`
+- Created: `2026-09-15T23:38:05.201663432Z`
+- Virtual Size: ~ 369.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.8.0`
-  - `DOCKER_BUILDX_VERSION=0.37.0`
+  - `DOCKER_VERSION=29.8.1`
+  - `DOCKER_BUILDX_VERSION=0.37.1`
   - `DOCKER_COMPOSE_VERSION=5.5.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
@@ -273,57 +273,6 @@ GPL-2.0-or-later
 
 ```
 
-### `apk` package: `keyutils-libs`
-
-```console
-keyutils-libs-1.6.3-r4 description:
-Key utilities library
-
-keyutils-libs-1.6.3-r4 webpage:
-https://people.redhat.com/~dhowells/keyutils/
-
-keyutils-libs-1.6.3-r4 installed size:
-17 KiB
-
-keyutils-libs-1.6.3-r4 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later
-
-```
-
-### `apk` package: `krb5-conf`
-
-```console
-krb5-conf-1.0-r2 description:
-Shared krb5.conf for both MIT krb5 and heimdal
-
-krb5-conf-1.0-r2 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-conf-1.0-r2 installed size:
-450 B
-
-krb5-conf-1.0-r2 license:
-MIT
-
-```
-
-### `apk` package: `krb5-libs`
-
-```console
-krb5-libs-1.22.2-r1 description:
-The shared libraries used by Kerberos 5
-
-krb5-libs-1.22.2-r1 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-libs-1.22.2-r1 installed size:
-1747 KiB
-
-krb5-libs-1.22.2-r1 license:
-MIT
-
-```
-
 ### `apk` package: `libapk`
 
 ```console
@@ -341,23 +290,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `libblkid`
-
-```console
-libblkid-2.42.1-r0 description:
-Block device identification library from util-linux
-
-libblkid-2.42.1-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libblkid-2.42.1-r0 installed size:
-198 KiB
-
-libblkid-2.42.1-r0 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libbsd`
 
 ```console
@@ -372,23 +304,6 @@ libbsd-0.12.2-r0 installed size:
 
 libbsd-0.12.2-r0 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `libcom_err`
-
-```console
-libcom_err-1.47.4-r0 description:
-Common error description library
-
-libcom_err-1.47.4-r0 webpage:
-https://e2fsprogs.sourceforge.net/
-
-libcom_err-1.47.4-r0 installed size:
-17 KiB
-
-libcom_err-1.47.4-r0 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 
 ```
 
@@ -423,23 +338,6 @@ libcurl-8.22.0-r0 installed size:
 
 libcurl-8.22.0-r0 license:
 curl
-
-```
-
-### `apk` package: `libeconf`
-
-```console
-libeconf-0.8.3-r0 description:
-Enhanced Config File Parser
-
-libeconf-0.8.3-r0 webpage:
-https://github.com/openSUSE/libeconf
-
-libeconf-0.8.3-r0 installed size:
-64 KiB
-
-libeconf-0.8.3-r0 license:
-MIT
 
 ```
 
@@ -491,23 +389,6 @@ libidn2-2.3.8-r0 installed size:
 
 libidn2-2.3.8-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libintl`
-
-```console
-libintl-1.0-r0 description:
-GNU gettext runtime library
-
-libintl-1.0-r0 webpage:
-https://www.gnu.org/software/gettext/gettext.html
-
-libintl-1.0-r0 installed size:
-133 KiB
-
-libintl-1.0-r0 license:
-LGPL-2.1-or-later
 
 ```
 
@@ -647,40 +528,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `libtirpc`
-
-```console
-libtirpc-1.3.5-r1 description:
-Transport Independent RPC library (SunRPC replacement)
-
-libtirpc-1.3.5-r1 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-1.3.5-r1 installed size:
-166 KiB
-
-libtirpc-1.3.5-r1 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `libtirpc-conf`
-
-```console
-libtirpc-conf-1.3.5-r1 description:
-Configuration files for TI-RPC
-
-libtirpc-conf-1.3.5-r1 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-conf-1.3.5-r1 installed size:
-1302 B
-
-libtirpc-conf-1.3.5-r1 license:
-BSD-3-Clause
-
-```
-
 ### `apk` package: `libunistring`
 
 ```console
@@ -695,40 +542,6 @@ libunistring-1.4.2-r0 installed size:
 
 libunistring-1.4.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libuuid`
-
-```console
-libuuid-2.42.1-r0 description:
-DCE compatible Universally Unique Identifier library
-
-libuuid-2.42.1-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libuuid-2.42.1-r0 installed size:
-29 KiB
-
-libuuid-2.42.1-r0 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `libverto`
-
-```console
-libverto-0.3.2-r2 description:
-Main loop abstraction library
-
-libverto-0.3.2-r2 webpage:
-https://github.com/latchset/libverto
-
-libverto-0.3.2-r2 installed size:
-21 KiB
-
-libverto-0.3.2-r2 license:
-MIT
 
 ```
 
@@ -1041,16 +854,16 @@ ISC
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.3-r0 description:
+xz-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.3-r0 webpage:
+xz-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.3-r0 installed size:
+xz-5.8.4-r0 installed size:
 162 KiB
 
-xz-5.8.3-r0 license:
+xz-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1058,51 +871,17 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `zfs`
-
-```console
-zfs-2.4.4-r0 description:
-Advanced filesystem and volume manager
-
-zfs-2.4.4-r0 webpage:
-https://openzfs.org
-
-zfs-2.4.4-r0 installed size:
-1252 KiB
-
-zfs-2.4.4-r0 license:
-CDDL-1.0
-
-```
-
-### `apk` package: `zfs-libs`
-
-```console
-zfs-libs-2.4.4-r0 description:
-Advanced filesystem and volume manager (libraries)
-
-zfs-libs-2.4.4-r0 webpage:
-https://openzfs.org
-
-zfs-libs-2.4.4-r0 installed size:
-4118 KiB
-
-zfs-libs-2.4.4-r0 license:
-CDDL-1.0
 
 ```
 

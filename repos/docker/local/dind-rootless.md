@@ -1,17 +1,17 @@
-# `docker:29.8.0-dind-rootless`
+# `docker:29.8.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a99a5d9ef2c5d50042d2937ba6836b782f5001ca93995add006241a71c69639`
-- Created: `2026-09-04T22:10:08.072113444Z`
-- Virtual Size: ~ 410.45 Mb  
+- Image ID: `sha256:bf6bbf0fa25d0729ed7da958f988ea7f8e0d1eb60c15e8d52ac6e40391fbf65c`
+- Created: `2026-09-15T23:57:30.385209402Z`
+- Virtual Size: ~ 402.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.8.0`
-  - `DOCKER_BUILDX_VERSION=0.37.0`
+  - `DOCKER_VERSION=29.8.1`
+  - `DOCKER_BUILDX_VERSION=0.37.1`
   - `DOCKER_COMPOSE_VERSION=5.5.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
@@ -208,16 +208,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `fuse-common`
 
 ```console
-fuse-common-3.18.2-r0 description:
+fuse-common-3.18.3-r0 description:
 Common files for fuse2 and fuse3
 
-fuse-common-3.18.2-r0 webpage:
+fuse-common-3.18.3-r0 webpage:
 https://github.com/libfuse/libfuse
 
-fuse-common-3.18.2-r0 installed size:
+fuse-common-3.18.3-r0 installed size:
 216 B
 
-fuse-common-3.18.2-r0 license:
+fuse-common-3.18.3-r0 license:
 GPL-2.0-only AND LGPL-2.1-only
 
 ```
@@ -242,16 +242,16 @@ GPL-2.0-or-later
 ### `apk` package: `fuse3`
 
 ```console
-fuse3-3.18.2-r0 description:
+fuse3-3.18.3-r0 description:
 Reference implementation of the Linux FUSE (Filesystem in Userspace) interface
 
-fuse3-3.18.2-r0 webpage:
+fuse3-3.18.3-r0 webpage:
 https://github.com/libfuse/libfuse
 
-fuse3-3.18.2-r0 installed size:
+fuse3-3.18.3-r0 installed size:
 48 KiB
 
-fuse3-3.18.2-r0 license:
+fuse3-3.18.3-r0 license:
 GPL-2.0-only AND LGPL-2.1-only
 
 ```
@@ -259,16 +259,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `fuse3-libs`
 
 ```console
-fuse3-libs-3.18.2-r0 description:
+fuse3-libs-3.18.3-r0 description:
 Reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
 
-fuse3-libs-3.18.2-r0 webpage:
+fuse3-libs-3.18.3-r0 webpage:
 https://github.com/libfuse/libfuse
 
-fuse3-libs-3.18.2-r0 installed size:
-294 KiB
+fuse3-libs-3.18.3-r0 installed size:
+298 KiB
 
-fuse3-libs-3.18.2-r0 license:
+fuse3-libs-3.18.3-r0 license:
 GPL-2.0-only AND LGPL-2.1-only
 
 ```
@@ -426,57 +426,6 @@ GPL-2.0-or-later
 
 ```
 
-### `apk` package: `keyutils-libs`
-
-```console
-keyutils-libs-1.6.3-r4 description:
-Key utilities library
-
-keyutils-libs-1.6.3-r4 webpage:
-https://people.redhat.com/~dhowells/keyutils/
-
-keyutils-libs-1.6.3-r4 installed size:
-17 KiB
-
-keyutils-libs-1.6.3-r4 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later
-
-```
-
-### `apk` package: `krb5-conf`
-
-```console
-krb5-conf-1.0-r2 description:
-Shared krb5.conf for both MIT krb5 and heimdal
-
-krb5-conf-1.0-r2 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-conf-1.0-r2 installed size:
-450 B
-
-krb5-conf-1.0-r2 license:
-MIT
-
-```
-
-### `apk` package: `krb5-libs`
-
-```console
-krb5-libs-1.22.2-r1 description:
-The shared libraries used by Kerberos 5
-
-krb5-libs-1.22.2-r1 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-libs-1.22.2-r1 installed size:
-1747 KiB
-
-krb5-libs-1.22.2-r1 license:
-MIT
-
-```
-
 ### `apk` package: `libapk`
 
 ```console
@@ -497,16 +446,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42.1-r0 description:
+libblkid-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.42.1-r0 webpage:
+libblkid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42.1-r0 installed size:
+libblkid-2.42.3-r1 installed size:
 198 KiB
 
-libblkid-2.42.1-r0 license:
+libblkid-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -542,23 +491,6 @@ libcap2-2.78-r0 installed size:
 
 libcap2-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
-
-```
-
-### `apk` package: `libcom_err`
-
-```console
-libcom_err-1.47.4-r0 description:
-Common error description library
-
-libcom_err-1.47.4-r0 webpage:
-https://e2fsprogs.sourceforge.net/
-
-libcom_err-1.47.4-r0 installed size:
-17 KiB
-
-libcom_err-1.47.4-r0 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 
 ```
 
@@ -786,16 +718,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42.1-r0 description:
+libmount-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libmount-2.42.1-r0 webpage:
+libmount-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42.1-r0 installed size:
-282 KiB
+libmount-2.42.3-r1 installed size:
+286 KiB
 
-libmount-2.42.1-r0 license:
+libmount-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -902,40 +834,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `libtirpc`
-
-```console
-libtirpc-1.3.5-r1 description:
-Transport Independent RPC library (SunRPC replacement)
-
-libtirpc-1.3.5-r1 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-1.3.5-r1 installed size:
-166 KiB
-
-libtirpc-1.3.5-r1 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `libtirpc-conf`
-
-```console
-libtirpc-conf-1.3.5-r1 description:
-Configuration files for TI-RPC
-
-libtirpc-conf-1.3.5-r1 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-conf-1.3.5-r1 installed size:
-1302 B
-
-libtirpc-conf-1.3.5-r1 license:
-BSD-3-Clause
-
-```
-
 ### `apk` package: `libunistring`
 
 ```console
@@ -950,40 +848,6 @@ libunistring-1.4.2-r0 installed size:
 
 libunistring-1.4.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libuuid`
-
-```console
-libuuid-2.42.1-r0 description:
-DCE compatible Universally Unique Identifier library
-
-libuuid-2.42.1-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libuuid-2.42.1-r0 installed size:
-29 KiB
-
-libuuid-2.42.1-r0 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `libverto`
-
-```console
-libverto-0.3.2-r2 description:
-Main loop abstraction library
-
-libverto-0.3.2-r2 webpage:
-https://github.com/latchset/libverto
-
-libverto-0.3.2-r2 installed size:
-21 KiB
-
-libverto-0.3.2-r2 license:
-MIT
 
 ```
 
@@ -1313,16 +1177,16 @@ ISC
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.3-r0 description:
+xz-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.3-r0 webpage:
+xz-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.3-r0 installed size:
+xz-5.8.4-r0 installed size:
 162 KiB
 
-xz-5.8.3-r0 license:
+xz-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1330,51 +1194,17 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `zfs`
-
-```console
-zfs-2.4.4-r0 description:
-Advanced filesystem and volume manager
-
-zfs-2.4.4-r0 webpage:
-https://openzfs.org
-
-zfs-2.4.4-r0 installed size:
-1252 KiB
-
-zfs-2.4.4-r0 license:
-CDDL-1.0
-
-```
-
-### `apk` package: `zfs-libs`
-
-```console
-zfs-libs-2.4.4-r0 description:
-Advanced filesystem and volume manager (libraries)
-
-zfs-libs-2.4.4-r0 webpage:
-https://openzfs.org
-
-zfs-libs-2.4.4-r0 installed size:
-4118 KiB
-
-zfs-libs-2.4.4-r0 license:
-CDDL-1.0
 
 ```
 
