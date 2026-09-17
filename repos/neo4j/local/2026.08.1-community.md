@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1719b47322e7462aef593ffaff3e8cde2e13e2b537139f2bd4c28037494c8eaa`
-- Created: `2026-09-11T22:31:03.333215079Z`
-- Virtual Size: ~ 678.96 Mb  
+- Image ID: `sha256:2011a203e1a75bf71d51093b577dc1242bb56b94ddfee05d22f2486465a4fbe6`
+- Created: `2026-09-16T04:20:39.521854523Z`
+- Virtual Size: ~ 701.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -607,14 +607,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-14/14.2.0-19/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-14/14.2.0-19/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.41-12+deb13u3`
+### `dpkg` source package: `glibc=2.41-12+deb13u4`
 
 Binary Packages:
 
-- `libc-bin=2.41-12+deb13u3`
-- `libc-dev-bin=2.41-12+deb13u3`
-- `libc6:amd64=2.41-12+deb13u3`
-- `libc6-dev:amd64=2.41-12+deb13u3`
+- `libc-bin=2.41-12+deb13u4`
+- `libc-dev-bin=2.41-12+deb13u4`
+- `libc6:amd64=2.41-12+deb13u4`
+- `libc6-dev:amd64=2.41-12+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -654,17 +654,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.41-12+deb13u3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.dsc' glibc_2.41-12+deb13u3.dsc 7576 SHA256:aa1ab10010fcf169454a5c6a123094a3997392922593d86a3a5adc180a07ca40
+$ apt-get source -qq --print-uris glibc=2.41-12+deb13u4
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.dsc' glibc_2.41-12+deb13u4.dsc 7576 SHA256:0915324aa646bb99abfaa9aa6ecb734b30babd28454a3e51f3152912370fbd3e
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.debian.tar.xz' glibc_2.41-12+deb13u3.debian.tar.xz 494644 SHA256:de7d715bf7e559b78baebac4115122641842f65faf0a5080a55954877a55cebe
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.debian.tar.xz' glibc_2.41-12+deb13u4.debian.tar.xz 499524 SHA256:dda4153511bfd543502d18e5bc9323110996fe9c531f14ae3fad6eb17f027c7d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.41-12+deb13u3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-12+deb13u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-12+deb13u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.41-12+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -1649,11 +1649,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre2/10.46-1~deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre2/10.46-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.40.1-6`
+### `dpkg` source package: `perl=5.40.1-6+deb13u1`
 
 Binary Packages:
 
-- `perl-base=5.40.1-6`
+- `perl-base=5.40.1-6+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1686,7 +1686,7 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-6
+$ apt-get source -qq --print-uris perl=5.40.1-6+deb13u1
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-6%2bdeb13u1.dsc' perl_5.40.1-6+deb13u1.dsc 2404 SHA256:92d1cfb32167d77fada7284f1c291de72f93eb896f5cfd58247d020182b403a8
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
 'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
@@ -1695,9 +1695,9 @@ $ apt-get source -qq --print-uris perl=5.40.1-6
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.40.1-6/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.1-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.40.1-6+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.1-6+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.1-6+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -1975,7 +1975,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `tini=0.19.0-3+b7`
+- `tini=0.19.0-3+b8`
 
 Licenses: (parsed from: `/usr/share/doc/tini/copyright`)
 
