@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:257ec6b327b65586f1b808dc6d25279ee1d45683bd6eaf58fbfbba628d3b5b45`
-- Created: `2026-09-09T03:31:18.683533295Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:548a1d07a458902f4da470c8a567f1407f65a59d14a13b67d36164c5dc14dd9e`
+- Created: `2026-09-16T04:24:37.413471952Z`
+- Virtual Size: ~ 1 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LC_ALL=C.UTF-8`
   - `ROS_DISTRO=rolling`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-01T20:37:00.369571+00:00`
+  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -164,12 +164,12 @@ $ apt-get source -qq --print-uris attr=1:2.5.2-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-4ubuntu0.1.dsc' attr_2.5.2-4ubuntu0.1.dsc 2630 SHA512:90825037a582dee85943e8d383306d6412260f9f0e2ca88acdf44eb01e2bff5e8fe863f5a6eaeb1eeafecc0902a091d27013890b8ee92577bf201b4658a71554
 ```
 
-### `dpkg` source package: `audit=1:4.1.2-1build1`
+### `dpkg` source package: `audit=1:4.1.2-1ubuntu0.1`
 
 Binary Packages:
 
-- `libaudit-common=1:4.1.2-1build1`
-- `libaudit1:amd64=1:4.1.2-1build1`
+- `libaudit-common=1:4.1.2-1ubuntu0.1`
+- `libaudit1:amd64=1:4.1.2-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -179,10 +179,10 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris audit=1:4.1.2-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2.orig.tar.gz' audit_4.1.2.orig.tar.gz 656095 SHA256:5c638bbeef9adb6c5715d3a60f0f5adb93e9b81633608af13d23c61f5e5db04d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1build1.debian.tar.xz' audit_4.1.2-1build1.debian.tar.xz 19800 SHA256:f5448b31a499220c1e48f8eaae57306a1d76b1ca7f1534f63ce13fbcf9e60efe
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1build1.dsc' audit_4.1.2-1build1.dsc 2891 SHA256:9d273637613a8a29a29ade25bbed913362aeefd08ca5f19504d4df391ef08201
+$ apt-get source -qq --print-uris audit=1:4.1.2-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2.orig.tar.gz' audit_4.1.2.orig.tar.gz 656095 SHA512:a47fec1041e11a76ad57b57bcf6e9b454188d95ec26cabf15e92e114d46c7c8f09ddb251d5aebef8bc7faacc6ccffe44c73543d8234af237548b4ad89a408fc3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1ubuntu0.1.debian.tar.xz' audit_4.1.2-1ubuntu0.1.debian.tar.xz 20500 SHA512:2f8198526ed8c4330bd7568e59467dda88c2d1dd3824b15ef64e4a1764ba785e1c1aa0cb574756cfd3e2766b5ff47aa74a9c17d1f1f039caf026b842f69ead24
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1ubuntu0.1.dsc' audit_4.1.2-1ubuntu0.1.dsc 3032 SHA512:f376230aa543b89c0c4ceae06625005ad3be522b73cf7403304e8e4503b315058d1ff33e4591f4eaa115791a461da00d5470d07d437d7acccc8be5c9536a4059
 ```
 
 ### `dpkg` source package: `base-files=14ubuntu6.2`
@@ -1531,39 +1531,6 @@ $ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-5ubuntu2.dsc' gmp_6.3.0+dfsg-5ubuntu2.dsc 2337 SHA256:124ecc12680fb9cef589e9c4c60abba140cb5439f2742f109500fe7214d4db18
 ```
 
-### `dpkg` source package: `gnupg2=2.4.8-4ubuntu3`
-
-Binary Packages:
-
-- `gpgv=2.4.8-4ubuntu3`
-
-Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
-
-- `BSD-3-clause`
-- `CC0-1.0`
-- `Expat`
-- `GPL-2+`
-- `GPL-2.0`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-- `RFC-Reference`
-- `TinySCHEME`
-- `permissive`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.8-4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2' gnupg2_2.4.8.orig.tar.bz2 8017685 SHA256:b58c80d79b04d3243ff49c1c3fc6b5f83138eb3784689563bcdd060595318616
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8.orig.tar.bz2.asc' gnupg2_2.4.8.orig.tar.bz2.asc 228 SHA256:92982ed45a1ca3af60e04addd6df14569158509364b70694a53f48b6bfed025b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8-4ubuntu3.debian.tar.xz' gnupg2_2.4.8-4ubuntu3.debian.tar.xz 122928 SHA256:b6071750c3663b5d21e89fee68bab55dd00dd3bb5a3a7ad0fe468bfd6e5d5783
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.8-4ubuntu3.dsc' gnupg2_2.4.8-4ubuntu3.dsc 4565 SHA256:8a6f37fcc6c0a044277d4937e8f9859e6928fcb7d2ac3369ada7b812901693bc
-```
-
 ### `dpkg` source package: `gnupg2=2.4.8-4ubuntu3.1`
 
 Binary Packages:
@@ -1575,8 +1542,9 @@ Binary Packages:
 - `gpg-agent=2.4.8-4ubuntu3.1`
 - `gpgconf=2.4.8-4ubuntu3.1`
 - `gpgsm=2.4.8-4ubuntu3.1`
+- `gpgv=2.4.8-4ubuntu3.1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg2/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `CC0-1.0`
@@ -2356,14 +2324,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.4.debian.tar.xz' libheif_1.21.2-3ubuntu0.4.debian.tar.xz 24364 SHA512:ec452eb2eb825e8c7f0eb57f54babfd38ab6e96c9988c0c826f20732c5720702cb8e95e143c0153181886af63f675f0eccdec33d7804373b3d99113d95289255
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.4.dsc' libheif_1.21.2-3ubuntu0.4.dsc 3952 SHA512:f778992098a11d660694cbb900406a4597b95c6cf4ce218a3b500a311a64c469797733a090db46ec4f849f48f699f67bb59bffb10f4bc19293e37265f64a65c4
-```
 
 ### `dpkg` source package: `libidn2=2.3.8-4build1`
 
@@ -3793,14 +3756,14 @@ $ apt-get source -qq --print-uris pcre2=10.46-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
 ```
 
-### `dpkg` source package: `perl=5.40.1-7ubuntu0.2`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-7ubuntu0.2`
-- `perl=5.40.1-7ubuntu0.2`
-- `perl-base=5.40.1-7ubuntu0.2`
-- `perl-modules-5.40=5.40.1-7ubuntu0.2`
+- `libperl5.40:amd64=5.40.1-7ubuntu0.3`
+- `perl=5.40.1-7ubuntu0.3`
+- `perl-base=5.40.1-7ubuntu0.3`
+- `perl-modules-5.40=5.40.1-7ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -3830,9 +3793,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
+```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
@@ -4558,11 +4527,11 @@ $ apt-get source -qq --print-uris python-zipp=3.23.0-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_3.23.0-1build1.dsc' python-zipp_3.23.0-1build1.dsc 2198 SHA256:f2a4f78b7aff75ac5c894c341ca2990b326c5db66544b3af11922151724ae0e1
 ```
 
-### `dpkg` source package: `python3-catkin-pkg-modules=1.1.0-2`
+### `dpkg` source package: `python3-catkin-pkg-modules=1.1.1-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg-modules=1.1.0-2`
+- `python3-catkin-pkg-modules=1.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4628,11 +4597,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-core=0.21.1+upstream-1`
+### `dpkg` source package: `python3-colcon-core=0.21.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-core=0.21.1+upstream-1`
+- `python3-colcon-core=0.21.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4670,11 +4639,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-metadata=0.2.5-100`
+### `dpkg` source package: `python3-colcon-metadata=0.3.1+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-metadata=0.2.5-100`
+- `python3-colcon-metadata=0.3.1+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4684,11 +4653,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-mixin=0.2.3-100`
+### `dpkg` source package: `python3-colcon-mixin=0.3.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-mixin=0.2.3-100`
+- `python3-colcon-mixin=0.3.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4698,11 +4667,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-notification=0.3.1+upstream-1`
+### `dpkg` source package: `python3-colcon-notification=0.3.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-notification=0.3.1+upstream-1`
+- `python3-colcon-notification=0.3.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4860,11 +4829,11 @@ $ apt-get source -qq --print-uris python3-defaults=3.14.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.14.3-0ubuntu2.dsc' python3-defaults_3.14.3-0ubuntu2.dsc 3081 SHA256:9049cdf51732dd772dd84eb6b632bef12fee4328f6329407df514121386818ad
 ```
 
-### `dpkg` source package: `python3-rosdep-modules=0.26.0-1`
+### `dpkg` source package: `python3-rosdep-modules=0.27.0-1`
 
 Binary Packages:
 
-- `python3-rosdep-modules=0.26.0-1`
+- `python3-rosdep-modules=0.27.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4874,11 +4843,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-rosdep=0.26.0-1`
+### `dpkg` source package: `python3-rosdep=0.27.0-1`
 
 Binary Packages:
 
-- `python3-rosdep=0.26.0-1`
+- `python3-rosdep=0.27.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4902,11 +4871,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-rospkg-modules=1.6.2-1`
+### `dpkg` source package: `python3-rospkg-modules=1.6.3-1`
 
 Binary Packages:
 
-- `python3-rospkg-modules=1.6.2-1`
+- `python3-rospkg-modules=1.6.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8223,15 +8192,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.2.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.2.debian.tar.xz 37792 SHA512:0883f1c15042ccab5035ebcbf992c3f40bfdfbd082756cd2dd913d882efab7ac6fc37093ff7cc3d7d7cb8c2e7a0af509d0f85570269a0f601b760431a62ce600
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.2.dsc' sqlite3_3.46.1-9ubuntu0.2.dsc 2756 SHA512:e2cd292f2acd4f990292436e9985b5ee9c3c9500c85a599d9bd8983cadc0b33da8f375db79e5be5ed8b2e4096244f45bded91e82283041ae943ae558255c39d0
-```
 
 ### `dpkg` source package: `sudo-common=1.2ubuntu`
 

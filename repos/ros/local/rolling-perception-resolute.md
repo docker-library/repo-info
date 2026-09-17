@@ -788,15 +788,9 @@ Licenses: (parsed from: `/usr/share/doc/bubblewrap/copyright`)
 - `LGPL-2+`
 - `pd-bubblewrap.jpg`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bubblewrap=0.11.1-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.11.1.orig.tar.xz' bubblewrap_0.11.1.orig.tar.xz 115836 SHA512:875c851c298a821648995edae1dee4cf7628e7e5a9d92af25ca8d43052ac3ae8b5447ca31e53126bf8837545c3987f5952993e1538cd06769aeaea65ed9fbe78
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.11.1.orig.tar.xz.asc' bubblewrap_0.11.1.orig.tar.xz.asc 833 SHA512:97120e2bf54ab60c1dc4a4b184dff121de41319cdd7ed420c3582aad6868411f313526a03ce624802de5a7c2a923fb1e9d2002a4b0e811f60c99a3bfe14eba3d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.1.debian.tar.xz' bubblewrap_0.11.1-1ubuntu0.1.debian.tar.xz 13800 SHA512:f40fb3154657fd2f11cadee71dd830b6c29ea69ede610fc26d241bb87120347313a4fe1bb7d0cd60f454793bfeec73b824002e9e5161bf31385c26a07d85e9e0
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.1.dsc' bubblewrap_0.11.1-1ubuntu0.1.dsc 2718 SHA512:dd4e11115a900d5a35159d13d8db663684d89fca86137c79c4ff9f727a9b6024169d2d0edc02e2daaec21be688e632da38658f8b33d514be5af16c98db08df14
-```
 
 ### `dpkg` source package: `build-essential=12.12ubuntu2.26.04.1`
 

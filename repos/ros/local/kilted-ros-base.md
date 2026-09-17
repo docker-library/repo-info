@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63ef7f5c2dafb0030d180619039f298bf4243b2b13afbc763a9acf40ade9c0b7`
-- Created: `2026-09-09T03:31:06.460740071Z`
-- Virtual Size: ~ 881.71 Mb  
+- Image ID: `sha256:b5d9626d80d022c513a9289700efdc13df9fdd01f05a0c59b7f0ef7fdb4d5260`
+- Created: `2026-09-16T04:24:36.760665381Z`
+- Virtual Size: ~ 881.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -98,14 +98,9 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 - `ISC`
 - `public-domain-md5`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris aom=3.8.2-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2.orig.tar.gz' aom_3.8.2.orig.tar.gz 5466676 SHA512:fca573bab8653fb99773377444c8890325ba0ba4d2cde7cdcbd5aba3465859b297df3ba9343f5917a46284413743efb0730646ac720bb4abf8324875103ab2e7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.debian.tar.xz' aom_3.8.2-2ubuntu0.1.debian.tar.xz 22776 SHA512:cf01fad7c9c05a65ccabc046e91305612c8b9311502f51a09cf07e99296ef3900c85fb5bd18e7ab6cc5b562efdb6ba18a4c18c922f4d6aa6364950e16fd6ad25
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.8.2-2ubuntu0.1.dsc' aom_3.8.2-2ubuntu0.1.dsc 2395 SHA512:4a21de7415dbb23550b17ebebb98e443a20f3b811ee4e3d5da4995377fc308e6523f4f906aa77ad459e1aee8e8fad36348e45799277a98569fa367088455989f
-```
 
 ### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.7`
 
@@ -197,19 +192,23 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc' audit_3.1.2-2.1build1.1.dsc 2848 SHA512:3e54e808c6130829a386f25a3a40a35ae1598955407ca5eb1c400cabe4226da47688c0970e35bba4d841c73f3c625cce08130982657d9c5debdf98d78b717fb6
 ```
 
-### `dpkg` source package: `base-files=13ubuntu10.4`
+### `dpkg` source package: `base-files=13ubuntu10.5`
 
 Binary Packages:
 
-- `base-files=13ubuntu10.4`
+- `base-files=13ubuntu10.5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=13ubuntu10.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.5.tar.xz' base-files_13ubuntu10.5.tar.xz 94204 SHA512:7d124fed72116c367991dc0dbbf4b686d7243668f0ea1b7e47c1d596bdb5936099b8fa7be92ab65479c8687774711af8a7e8a0da8136552af2ac70d79467210c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_13ubuntu10.5.dsc' base-files_13ubuntu10.5.dsc 1625 SHA512:378fbb7cc2bb06c59c46f1a60eb8d976cd5d16d6cafce555b98c8fd15e2800c0977f422b35c952d8d424311a5592f7606ccc595cb2f7ad1d84d69ef89ac7a064
+```
 
 ### `dpkg` source package: `base-passwd=3.6.3build1`
 
@@ -1461,14 +1460,14 @@ $ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.8.dsc' glib2.0_2.80.0-6ubuntu3.8.dsc 4542 SHA256:d44112b09956f61ffd5790a1a40e42558dca287052a945078cffff9b2490ee84
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.8`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.8`
-- `libc-dev-bin=2.39-0ubuntu8.8`
-- `libc6:amd64=2.39-0ubuntu8.8`
-- `libc6-dev:amd64=2.39-0ubuntu8.8`
+- `libc-bin=2.39-0ubuntu8.9`
+- `libc-dev-bin=2.39-0ubuntu8.9`
+- `libc6:amd64=2.39-0ubuntu8.9`
+- `libc6-dev:amd64=2.39-0ubuntu8.9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1476,9 +1475,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.debian.tar.xz' glibc_2.39-0ubuntu8.9.debian.tar.xz 491440 SHA512:b46142cc7a5159bcc25d764efe0b8b596a8522dee4e36e8d7c47f4f0ac2a6b9ce9652af58d15512bb24aa27b8f4c33dc354d8ef947cde7d127755afe94f44583
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.dsc' glibc_2.39-0ubuntu8.9.dsc 9387 SHA512:67cf2737d0b1fc4f8a4fa66c3b460301b9e88e925e1b65f78bfee1971ec23225c410befb2e326516e80d24adb99e838ce72f3bc6fef48f6e61e2771d7ddd2f51
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1924,14 +1929,14 @@ $ apt-get source -qq --print-uris kmod=31+20240202-2ubuntu7.2
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.2.dsc' kmod_31+20240202-2ubuntu7.2.dsc 2288 SHA512:b9330c384f8f6c0e43145f216d7603c37a6775b3808691e7e211f59c4648c2ccc610df5c10bf59e2e9dc3e65c3b73a965e0a6e0aa8e62b0e720d6f935ffb7610
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.8`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.10`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.8`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.8`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.8`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.8`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.10`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.10`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.10`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1940,10 +1945,10 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.8
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.debian.tar.xz' krb5_1.20.1-6ubuntu2.8.debian.tar.xz 130012 SHA512:8eb9f9c79acca668a11b7b9747cc17bbaeaf3e899d86b5a381598ccf87ffb6317dbd6f26c8ddaea998c000ee2d41557bd42a936e5e5d97a0c7fe5dd39b8b5727
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.8.dsc' krb5_1.20.1-6ubuntu2.8.dsc 3256 SHA512:052846c5a5402378d2a512bb30ec4e9d21508821054d6f4456d3b9b15e736a1c0b7801d5e417993d7c53ba745f5aa1fd0a9075d7071bc8027998bf9db5524471
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.debian.tar.xz' krb5_1.20.1-6ubuntu2.10.debian.tar.xz 132764 SHA512:217d5e53bb1876bb9125a1ab3b0206425b3180fd19dfe73808e579aa009a8c2088f994b48862e6f0b90aae3049b31e6cbb53640d4d5d04a21ef2b0a4122aa673
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.dsc' krb5_1.20.1-6ubuntu2.10.dsc 3890 SHA512:00eb9a269711aa853ec7fc32dd9b96df0fa0c0aa14812ae61a20cfb0c1101787dfac7acc3b5d6f7adcd62a60611e7dc9a13b488a9ae26a8fd08d2bb32db4f2ed
 ```
 
 ### `dpkg` source package: `lapack=3.12.0-3build1.1`
@@ -3820,15 +3825,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.4.debian.tar.xz' perl_5.38.2-3.2ubuntu0.4.debian.tar.xz 181972 SHA512:e0e7adbfe75230f33886ff44880298f8ed7ac1c13fef02f1b371146b3fdc2b92259962841e51c0f784c9a90c12d48143dec6f8c2d41006b1820f70f8549bfc21
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.4.dsc' perl_5.38.2-3.2ubuntu0.4.dsc 3036 SHA512:6eb1940c6487a4035b8ac18d0ec179438f1c174d154b9167c07347d30b322a0b852178e314f8d0fabb18541cb04c5ffeaf14c7712ffc69132b79404d97fd39cb
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
@@ -4448,11 +4447,11 @@ $ apt-get source -qq --print-uris python-zipp=1.0.0-6ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-6ubuntu0.1.dsc' python-zipp_1.0.0-6ubuntu0.1.dsc 1616 SHA256:b64a8f5fcd78afe01b9cdbb61f7a5e8eae3baa5e6f3966a6efe33cd585b0330b
 ```
 
-### `dpkg` source package: `python3-catkin-pkg-modules=1.1.0-2`
+### `dpkg` source package: `python3-catkin-pkg-modules=1.1.1-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg-modules=1.1.0-2`
+- `python3-catkin-pkg-modules=1.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4532,11 +4531,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-core=0.21.1+upstream-1`
+### `dpkg` source package: `python3-colcon-core=0.21.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-core=0.21.1+upstream-1`
+- `python3-colcon-core=0.21.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4588,11 +4587,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-metadata=0.2.5-100`
+### `dpkg` source package: `python3-colcon-metadata=0.3.1+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-metadata=0.2.5-100`
+- `python3-colcon-metadata=0.3.1+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4602,11 +4601,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-mixin=0.3.0+upstream-1`
+### `dpkg` source package: `python3-colcon-mixin=0.3.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-mixin=0.3.0+upstream-1`
+- `python3-colcon-mixin=0.3.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4616,11 +4615,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-notification=0.3.1+upstream-1`
+### `dpkg` source package: `python3-colcon-notification=0.3.2+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-notification=0.3.1+upstream-1`
+- `python3-colcon-notification=0.3.2+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4806,11 +4805,11 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA256:79676920120c7f45f1605d92047174fca9cc75a39d9df91c9740be98fb8cc542
 ```
 
-### `dpkg` source package: `python3-rosdep-modules=0.26.0-1`
+### `dpkg` source package: `python3-rosdep-modules=0.27.0-1`
 
 Binary Packages:
 
-- `python3-rosdep-modules=0.26.0-1`
+- `python3-rosdep-modules=0.27.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4820,11 +4819,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-rosdep=0.26.0-1`
+### `dpkg` source package: `python3-rosdep=0.27.0-1`
 
 Binary Packages:
 
-- `python3-rosdep=0.26.0-1`
+- `python3-rosdep=0.27.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4848,11 +4847,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-rospkg-modules=1.6.2-1`
+### `dpkg` source package: `python3-rospkg-modules=1.6.3-1`
 
 Binary Packages:
 
-- `python3-rospkg-modules=1.6.2-1`
+- `python3-rospkg-modules=1.6.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4876,17 +4875,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.16`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.17`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.16`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.16`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.16`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.16`
-- `python3.12=3.12.3-1ubuntu0.16`
-- `python3.12-dev=3.12.3-1ubuntu0.16`
-- `python3.12-minimal=3.12.3-1ubuntu0.16`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.17`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.17`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.17`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.17`
+- `python3.12=3.12.3-1ubuntu0.17`
+- `python3.12-dev=3.12.3-1ubuntu0.17`
+- `python3.12-minimal=3.12.3-1ubuntu0.17`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-dev/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -4908,9 +4907,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.17
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.17.debian.tar.xz' python3.12_3.12.3-1ubuntu0.17.debian.tar.xz 302472 SHA512:d2c4e670aaf9f306fc7c39de1e272638ff0d35741f5f81f05d9a0b7c467a63326dd1891d8141cf2f17c2fc6867365834d5f04d14d29bbc26022823ea358bef35
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.17.dsc' python3.12_3.12.3-1ubuntu0.17.dsc 3916 SHA512:02047f3712702b984c0566f3403a4229edc76771b149f812f2b2423f99c6539bad8702e40b5ebc5a814c5b1a55c43f3122b0e287cbd0d51f1ed40457f3433306
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
@@ -8090,15 +8094,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.7.debian.tar.xz 37004 SHA512:db667b39cfe043e12ae692f922e6d5372ea26f6ce37de51f193a57e19e766ec77a76e33c1a61c99714c1e55ea157b170c6f2502c9893bcfec1afc00e35d39aaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.7.dsc' sqlite3_3.45.1-1ubuntu2.7.dsc 2601 SHA512:3facf920149eb11209b1487c864bdfc1d1858cdb9107dddf8f38677714ad25fe4f477132a58ebc4a819ac7c0aa6646ecc3554052a40e32fbcbb5ca6308986444
-```
 
 ### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.2`
 
