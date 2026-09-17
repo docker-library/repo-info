@@ -1,7 +1,7 @@
 ## `drupal:fpm-alpine3.23`
 
 ```console
-$ docker pull drupal@sha256:5610bab40a72a10b783426685d8dc81e587c34239aa316d2ae4380a80ae19bc4
+$ docker pull drupal@sha256:4bc5cbe7a3a9a254990a89f3fb27c589021ba72e9aeba47ff5337d6eb6a21ecd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull drupal@sha256:5610bab40a72a10b783426685d8dc81e587c34239aa316d2ae43
 ### `drupal:fpm-alpine3.23` - linux; amd64
 
 ```console
-$ docker pull drupal@sha256:9768e271af18c9981de7ed8a69ae0e56b13f7d1141e167714557de9fdd67cf96
+$ docker pull drupal@sha256:22fc9964dd150d074dcb5ad9901911009f907cabbb19baeea3c5c568b5d72b1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.0 MB (72996435 bytes)**  
+-	Total Size: **73.0 MB (73000679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c2ffb402cdbca4165cd90bf41c4f3dbf1bc2dc20cee19aefdea52dd69260461`
+-	Image ID: `sha256:118b71421afdc8c2105de22176790f0c1da1779c0b62abe0b87e275481692a87`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -87,21 +87,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 15 Sep 2026 21:20:04 GMT
 CMD ["php-fpm"]
-# Tue, 15 Sep 2026 22:49:59 GMT
+# Wed, 16 Sep 2026 23:42:44 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libavif-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Tue, 15 Sep 2026 22:49:59 GMT
+# Wed, 16 Sep 2026 23:42:44 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 15 Sep 2026 22:49:59 GMT
+# Wed, 16 Sep 2026 23:42:44 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
-# Tue, 15 Sep 2026 22:49:59 GMT
-ENV DRUPAL_VERSION=11.4.6
-# Tue, 15 Sep 2026 22:49:59 GMT
+# Wed, 16 Sep 2026 23:42:44 GMT
+ENV DRUPAL_VERSION=11.4.7
+# Wed, 16 Sep 2026 23:42:44 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Tue, 15 Sep 2026 22:49:59 GMT
+# Wed, 16 Sep 2026 23:42:44 GMT
 WORKDIR /opt/drupal
-# Tue, 15 Sep 2026 22:50:05 GMT
+# Wed, 16 Sep 2026 23:42:50 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Tue, 15 Sep 2026 22:50:05 GMT
+# Wed, 16 Sep 2026 23:42:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -150,61 +150,61 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 15 Sep 2026 21:20:13 GMT  
 		Size: 9.3 KB (9262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec813638ad43ccf0ea72a3cab21364a540e547b1a6fa9a82f4b78a3206718ff5`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
-		Size: 7.4 MB (7426950 bytes)  
+	-	`sha256:851faf770f64e05ef9926cec0b3e3d2252d4fbe51c4afdaec699644adb379b60`  
+		Last Modified: Wed, 16 Sep 2026 23:43:04 GMT  
+		Size: 7.4 MB (7426976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67d1a341e3f836d1a2eec604e4cd3f9e87748d04e92e9208651146be55a954f0`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
+	-	`sha256:392a4a3814609fa043acb04e00cf306f81d3bbe9d7d7c7f3a28292df11888d2e`  
+		Last Modified: Wed, 16 Sep 2026 23:43:03 GMT  
 		Size: 313.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e66a683ed8ab22f57d673d56c824f64badea718afa6a78c70a22663d3e5905d0`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
-		Size: 833.0 KB (832975 bytes)  
+	-	`sha256:22a5eda497810f10423a85e85cd1ccd8cb5020947bcc316fca4a88bbcdac9bf2`  
+		Last Modified: Wed, 16 Sep 2026 23:43:03 GMT  
+		Size: 833.0 KB (832978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90ec038f2aa93ec8ea54ffeb364cef06636a7ac6cced6c85f2f3020046628add`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
-		Size: 116.0 B  
+	-	`sha256:692cdd816bcfd7d58791b4d88bd4211901e3de94f0c1f1ad63ae497736188173`  
+		Last Modified: Wed, 16 Sep 2026 23:43:03 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65a8a6d7d23bf8ab0e4dd1165a95a5015d60a2da0b139608b087a9360b774aec`  
-		Last Modified: Tue, 15 Sep 2026 22:50:18 GMT  
-		Size: 23.6 MB (23594090 bytes)  
+	-	`sha256:12c4d8c49c3e2f3821be4340cdee0b0c064894196c07a18456ee9336449996bc`  
+		Last Modified: Wed, 16 Sep 2026 23:43:05 GMT  
+		Size: 23.6 MB (23598306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:00662d35d729817a72afbf5611426f24abdb90eb59dfdd532848c103f374c30a
+$ docker pull drupal@sha256:c629a2fc713ad18a37098ecc9ff28eb56e5386a3d4d948d243757eb01a429fbf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **409.2 KB (409166 bytes)**  
+-	Total Size: **409.2 KB (409167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:807a28bc45a38dfdb70c856db83b04cf89adb4a1319aaf0de4c58ce0a6c56ec4`
+-	Image ID: `sha256:c6a177c6f6e4b9b14c235883f91bbbc2ea6fccef34e0b4e5deb9eac3e5cfa5c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bace46a0bad2ca8b2ed0133d52ac84eeca84bbd19b2bd8dcc2a933661320019e`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
+	-	`sha256:598b35d1e8a05ddacd303373fc7a5891c4adbc106459ebea7b913022e1796249`  
+		Last Modified: Wed, 16 Sep 2026 23:43:03 GMT  
 		Size: 375.5 KB (375451 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5e2c0964dcbdeb43c8fcc30ec9c84273f8f9c340c744e90034c92c93c4d3e83a`  
-		Last Modified: Tue, 15 Sep 2026 22:50:16 GMT  
-		Size: 33.7 KB (33715 bytes)  
+	-	`sha256:db75e343ca4f74b6666661c1b3ac707907c06621e73ca3cb5dcb32a659059930`  
+		Last Modified: Wed, 16 Sep 2026 23:43:03 GMT  
+		Size: 33.7 KB (33716 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; arm variant v6
 
 ```console
-$ docker pull drupal@sha256:a45fade49ec44256cc5c012055d8ca17bdeef0dfd99160ba30e403bda1c79eb8
+$ docker pull drupal@sha256:a76ea713bf713d104c545a80d6749c2b7af6e629027b714334400b6c286232aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.5 MB (67507284 bytes)**  
+-	Total Size: **67.5 MB (67511461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a3344a774a19114d1f0fd9b55cc7c392b0694676835eb51956c557dd3d3aabe`
+-	Image ID: `sha256:19035fb972951fb3ac1cb91e6282bf6487c68306904aaec49681a02308b55a6c`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -259,21 +259,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 15 Sep 2026 21:19:32 GMT
 CMD ["php-fpm"]
-# Tue, 15 Sep 2026 23:03:39 GMT
+# Wed, 16 Sep 2026 23:41:18 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libavif-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Tue, 15 Sep 2026 23:03:39 GMT
+# Wed, 16 Sep 2026 23:41:18 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 15 Sep 2026 23:03:39 GMT
+# Wed, 16 Sep 2026 23:41:18 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
-# Tue, 15 Sep 2026 23:03:39 GMT
-ENV DRUPAL_VERSION=11.4.6
-# Tue, 15 Sep 2026 23:03:39 GMT
+# Wed, 16 Sep 2026 23:41:18 GMT
+ENV DRUPAL_VERSION=11.4.7
+# Wed, 16 Sep 2026 23:41:18 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Tue, 15 Sep 2026 23:03:39 GMT
+# Wed, 16 Sep 2026 23:41:18 GMT
 WORKDIR /opt/drupal
-# Tue, 15 Sep 2026 23:03:48 GMT
+# Wed, 16 Sep 2026 23:41:28 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Tue, 15 Sep 2026 23:03:48 GMT
+# Wed, 16 Sep 2026 23:41:28 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -322,57 +322,57 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 15 Sep 2026 21:19:39 GMT  
 		Size: 9.3 KB (9259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9615b4df8699078fad47ddaf30a6d0d858a0a964097a9514d381e9c101b25d9`  
-		Last Modified: Tue, 15 Sep 2026 23:03:57 GMT  
-		Size: 4.8 MB (4750116 bytes)  
+	-	`sha256:c27be4e869cdb007d69642830b2236659803a47de3fbf5e8c1d2f130c64d4f78`  
+		Last Modified: Wed, 16 Sep 2026 23:41:36 GMT  
+		Size: 4.8 MB (4750152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e985293e1b7b8b3e37600d5f64b3963391f9eac6137b552a164624e4b1d1e2cf`  
-		Last Modified: Tue, 15 Sep 2026 23:03:56 GMT  
+	-	`sha256:7e4f54917c46a72fabeb6512b0d068783920eb9493cbae0dfdfbc84c69f1824f`  
+		Last Modified: Wed, 16 Sep 2026 23:41:36 GMT  
 		Size: 311.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63f85e94f8e12c238bf7d2e75bb231d60506cdbed20cce3a32f31fb2520a0341`  
-		Last Modified: Tue, 15 Sep 2026 23:03:57 GMT  
+	-	`sha256:ca580d7c79230c24fa65974adeab04d073d817e2b0ffdb8cdd7eaf9e251698cd`  
+		Last Modified: Wed, 16 Sep 2026 23:41:36 GMT  
 		Size: 833.0 KB (832975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a59a02bccd4ccf28ea5c851c490f6c768757174c4159cb557f4f0a5a7269d31b`  
-		Last Modified: Tue, 15 Sep 2026 23:03:56 GMT  
-		Size: 114.0 B  
+	-	`sha256:57e8abd9cce5214f6eacdb6fe9e5e09bb82fb89acbe840fcc3b7607f87f83552`  
+		Last Modified: Wed, 16 Sep 2026 23:41:36 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecd66e18c30a8d6a1fc07eb960c59d20d1df2301c699381785fa08912cd9a65a`  
-		Last Modified: Tue, 15 Sep 2026 23:03:59 GMT  
-		Size: 23.6 MB (23594178 bytes)  
+	-	`sha256:ab195c1f3221261070d2d21fe34a85a9f971718cd3b5442f1fa5066bcb7c162b`  
+		Last Modified: Wed, 16 Sep 2026 23:41:38 GMT  
+		Size: 23.6 MB (23598318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:05529ab7a075d4993cff559e34918f18d4b513c479842bd49749eb06e031a0fa
+$ docker pull drupal@sha256:ae0c534c586ebb99fab4f8cb131329e600afe67a9f609e624e0d610b9315f537
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.7 KB (33661 bytes)**  
+-	Total Size: **33.7 KB (33659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01b45adbe401c9ca70c4724dbef676d77da9f5fc2639cc46d814632d1572f274`
+-	Image ID: `sha256:0fdfd0a614be57782ace329ebc70afc27c304c23ab28dc1789b867e84da0383d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b620c771070f08c02465aab486505d4f6f25cc8c545c7f92912621c537c30a23`  
-		Last Modified: Tue, 15 Sep 2026 23:03:56 GMT  
-		Size: 33.7 KB (33661 bytes)  
+	-	`sha256:5558cb42ca4f9dc6070771efea74c09537154b9363f3ea0d38905cc98a1a9b5e`  
+		Last Modified: Wed, 16 Sep 2026 23:41:36 GMT  
+		Size: 33.7 KB (33659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; arm variant v7
 
 ```console
-$ docker pull drupal@sha256:e00fd100dedc327528e369b1d810f63816fb386bb3be9880bc61e92d2f1f2dea
+$ docker pull drupal@sha256:b8f56cf516b51325d95bc11b1d9f9fc2554f04bfee886cd4fb2e832c4fd4fec6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.9 MB (66883069 bytes)**  
+-	Total Size: **66.9 MB (66887273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d7c92d78577fa6f833c461b715e83ce394d500e827bdd31d8c01b56dcc8b1c7`
+-	Image ID: `sha256:76c8b94f4c68fb42c54426d7849648ff3d811e7963c8d7f72df6208358dfcef2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -427,21 +427,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 15 Sep 2026 21:40:15 GMT
 CMD ["php-fpm"]
-# Tue, 15 Sep 2026 23:10:25 GMT
+# Wed, 16 Sep 2026 23:43:32 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libavif-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Tue, 15 Sep 2026 23:10:25 GMT
+# Wed, 16 Sep 2026 23:43:33 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 15 Sep 2026 23:10:25 GMT
+# Wed, 16 Sep 2026 23:43:33 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
-# Tue, 15 Sep 2026 23:10:25 GMT
-ENV DRUPAL_VERSION=11.4.6
-# Tue, 15 Sep 2026 23:10:25 GMT
+# Wed, 16 Sep 2026 23:43:33 GMT
+ENV DRUPAL_VERSION=11.4.7
+# Wed, 16 Sep 2026 23:43:33 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Tue, 15 Sep 2026 23:10:25 GMT
+# Wed, 16 Sep 2026 23:43:33 GMT
 WORKDIR /opt/drupal
-# Tue, 15 Sep 2026 23:11:05 GMT
+# Wed, 16 Sep 2026 23:43:40 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Tue, 15 Sep 2026 23:11:05 GMT
+# Wed, 16 Sep 2026 23:43:40 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -490,61 +490,61 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 15 Sep 2026 21:40:24 GMT  
 		Size: 9.3 KB (9260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:989ca46b5224b18b16563ceb949ad8397c3895757b173ccc34b72fb1fed241e3`  
-		Last Modified: Tue, 15 Sep 2026 23:10:50 GMT  
-		Size: 5.6 MB (5578845 bytes)  
+	-	`sha256:b7d95ce95334c5def5a77fb918b324d610fe3e1d531ffbdf022fbb73c97f2079`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
+		Size: 5.6 MB (5578849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d0d207b4a0cf89758651197b59823e298127271de569db7fbb2af1b6cc32186`  
-		Last Modified: Tue, 15 Sep 2026 23:10:50 GMT  
-		Size: 311.0 B  
+	-	`sha256:ae1e51adfa01dca0888cb5eec180b9f0ae41600f2feaf9198746459afc33899b`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
+		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9b3ca09a51823193134242d7177af93b998374c57bc811066211d113bcedaee`  
-		Last Modified: Tue, 15 Sep 2026 23:10:50 GMT  
-		Size: 833.0 KB (832976 bytes)  
+	-	`sha256:0f38eacb7ebe5343783167ef99ccb105a9f068fba34503794faf2c78d719f08c`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
+		Size: 833.0 KB (832978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:087476b5e9d418e087fad085a7fde1800f6d54f72e179d9ef31975ac570cb1d4`  
-		Last Modified: Tue, 15 Sep 2026 23:10:50 GMT  
+	-	`sha256:a430134c04a759ab4245a7fc0e7b439b8981fc104d02e853b7b33a85ee694c48`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f2be5822ae923080e5a33abeba7102265bba03f4a7f3e5a8526446c58db88ae`  
-		Last Modified: Tue, 15 Sep 2026 23:11:18 GMT  
-		Size: 23.6 MB (23594120 bytes)  
+	-	`sha256:d9c1fe468ad13ea7e3c31a468bc1094d92af951c30e0e6452cab08c9cc098517`  
+		Last Modified: Wed, 16 Sep 2026 23:43:55 GMT  
+		Size: 23.6 MB (23598317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:22fc0bd9cd8efaacfd26f2cca3caecc3285297a581cddc3653d3d60568a6d267
+$ docker pull drupal@sha256:d74ebbae9f87a10256737d6c9fb3f32dab15e3e58f83caf5358ae5c0818b8815
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **408.7 KB (408745 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97badb381888e5705e9a8724984bc8fd57b331194dce2105cd5f13a3c23d9338`
+-	Image ID: `sha256:811bceead8aa9ee64568f6b36c436a832fcd1b8738a7ec21bbb9a06cab64ca5f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8726fadf7b6fbc6be7196741824f88ab95802cf18b18d55dcd177591df67639`  
-		Last Modified: Tue, 15 Sep 2026 23:11:18 GMT  
+	-	`sha256:3d1aab95741d7a849e8d0cd2f9d29bb7876cef9a957e76855c2878796507aa0d`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
 		Size: 374.9 KB (374869 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1622ba737cf3ba0f14d05cc9dc6a8b7686017dfa217c6081046d99282279e013`  
-		Last Modified: Tue, 15 Sep 2026 23:11:18 GMT  
+	-	`sha256:81a1a4ddc5da42c8997c337af25a160e7b0e39c4bfac9d559011e2c269792814`  
+		Last Modified: Wed, 16 Sep 2026 23:43:54 GMT  
 		Size: 33.9 KB (33876 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; arm64 variant v8
 
 ```console
-$ docker pull drupal@sha256:67fec88e702a29d37e0649d20825c366e2546626640156a91e999932ac573efd
+$ docker pull drupal@sha256:baa6a8e5666d9c7f236981770650d8f1fdbe484f94f7858f52ff9fc76c3cafee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.8 MB (72826454 bytes)**  
+-	Total Size: **72.8 MB (72830621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79e0d9ed8a0749e64eb0777d483c81d852fbab23b6f18b0ebc0a32287ab86b8c`
+-	Image ID: `sha256:3e8de02a9e99031cb87a049b49fefd2c94f1ab41514aa107c85eebe65c6bea7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -599,21 +599,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 15 Sep 2026 21:20:54 GMT
 CMD ["php-fpm"]
-# Tue, 15 Sep 2026 22:37:56 GMT
+# Wed, 16 Sep 2026 23:46:12 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libavif-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Tue, 15 Sep 2026 22:37:57 GMT
+# Wed, 16 Sep 2026 23:46:12 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 15 Sep 2026 22:37:57 GMT
+# Wed, 16 Sep 2026 23:46:12 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
-# Tue, 15 Sep 2026 22:37:57 GMT
-ENV DRUPAL_VERSION=11.4.6
-# Tue, 15 Sep 2026 22:37:57 GMT
+# Wed, 16 Sep 2026 23:46:12 GMT
+ENV DRUPAL_VERSION=11.4.7
+# Wed, 16 Sep 2026 23:46:12 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Tue, 15 Sep 2026 22:37:57 GMT
+# Wed, 16 Sep 2026 23:46:12 GMT
 WORKDIR /opt/drupal
-# Tue, 15 Sep 2026 22:38:32 GMT
+# Wed, 16 Sep 2026 23:46:18 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Tue, 15 Sep 2026 22:38:32 GMT
+# Wed, 16 Sep 2026 23:46:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -662,61 +662,61 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 15 Sep 2026 21:21:03 GMT  
 		Size: 9.3 KB (9262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce92cb1db2fbdf2efa9f15f4b3c0858b7e518648b439e73535953037bc62e19f`  
-		Last Modified: Tue, 15 Sep 2026 22:38:19 GMT  
-		Size: 7.2 MB (7196980 bytes)  
+	-	`sha256:40660424fa52261a4b4ab97cfe569e5ff23b6d131129782b3e9090ec331adbd9`  
+		Last Modified: Wed, 16 Sep 2026 23:46:33 GMT  
+		Size: 7.2 MB (7197003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2f7094d0d28b3a80f678408ff818ab4157dbdb6c9a76dfc1d1d19a4fe4a7f7e`  
-		Last Modified: Tue, 15 Sep 2026 22:38:18 GMT  
+	-	`sha256:5ea07d3e89a998961b25b2c9b1641deb0e9bc311883408306f7e52cb0b56a2ff`  
+		Last Modified: Wed, 16 Sep 2026 23:46:32 GMT  
 		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998128349a132cdabe1e3cb2bff219a87613baa55fc65f48d5b967be9faa4d9f`  
-		Last Modified: Tue, 15 Sep 2026 22:38:19 GMT  
-		Size: 833.0 KB (832977 bytes)  
+	-	`sha256:53e3d61c6df6b207783ce1e6d30a353976dd8494bc7a4a5af46329dd880e8fb5`  
+		Last Modified: Wed, 16 Sep 2026 23:46:33 GMT  
+		Size: 833.0 KB (832975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a258fbd28d40d512d37993fa9a1afdd5dd88d7e5d3a01ce5a33a3da5999c9387`  
-		Last Modified: Tue, 15 Sep 2026 22:38:19 GMT  
-		Size: 114.0 B  
+	-	`sha256:03b555a74dbbd0aeb43ba4a95a19f5cc4882da478219af1aa18d3c263f3ad17e`  
+		Last Modified: Wed, 16 Sep 2026 23:46:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6338e92ac62fc0863ce31f883a449301d132a36e0ab27bc2929c9491f0893550`  
-		Last Modified: Tue, 15 Sep 2026 22:38:46 GMT  
-		Size: 23.6 MB (23594362 bytes)  
+	-	`sha256:29a595a76d64976717876d65a2948194c0709950349767ab21217e6d9b328724`  
+		Last Modified: Wed, 16 Sep 2026 23:46:34 GMT  
+		Size: 23.6 MB (23598507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:7e019adb1c3f4abf498f5c08426e3c72dae2ca7fca8dd85c79003f7feca4bd65
+$ docker pull drupal@sha256:c0b1dee601717466a134edab80d5535a60b3614fe98be226bb3159a5cb10bd54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.8 KB (408828 bytes)**  
+-	Total Size: **408.8 KB (408829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3792f6b8ae75550cfd25e7a3dccbce578d44feb2b8d40326680b1ac6b114f813`
+-	Image ID: `sha256:7c7916640cbaa5383c181df9258d3c96c80b8ff7603358cdb115255aeea1e0e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cbf3d36a3668f6179aa36b04abd1ba332294bb831dc0285f3e703aa63bd1c924`  
-		Last Modified: Tue, 15 Sep 2026 22:38:45 GMT  
+	-	`sha256:d19a9fe24cd4e5d9fddcb158d769c152e224e86392cc5e6314ad069fb433b1b2`  
+		Last Modified: Wed, 16 Sep 2026 23:46:32 GMT  
 		Size: 374.9 KB (374905 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c0dae77b99514cb15d066c6e625c7b6dcbe0e74bc4b6943801576332b5d9fd24`  
-		Last Modified: Tue, 15 Sep 2026 22:38:45 GMT  
-		Size: 33.9 KB (33923 bytes)  
+	-	`sha256:0101f857c1565fb7c3383e371a7fac5711612601cecf1295e75720b2e1f55fd6`  
+		Last Modified: Wed, 16 Sep 2026 23:46:32 GMT  
+		Size: 33.9 KB (33924 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; 386
 
 ```console
-$ docker pull drupal@sha256:661bdd6becd2a6dc8875d0d8e938f81eeb6523f187f3aad80b90fb97ddde5c3a
+$ docker pull drupal@sha256:85c5216bcff48da7f4a2d01467db40c57ded95922d91107b72a5849b46c89aab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.9 MB (71906006 bytes)**  
+-	Total Size: **71.9 MB (71909989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f337415f677393b004f3a1d1c1153f654bea3bed18a6081463c781e57ef417f`
+-	Image ID: `sha256:fbbaa137663c8464715f04a88def491e28f0f04f9c1ab1337487937012acee4c`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -771,21 +771,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Tue, 15 Sep 2026 21:20:30 GMT
 CMD ["php-fpm"]
-# Tue, 15 Sep 2026 22:36:02 GMT
+# Wed, 16 Sep 2026 23:43:56 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libavif-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-avif 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Tue, 15 Sep 2026 22:36:02 GMT
+# Wed, 16 Sep 2026 23:43:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 15 Sep 2026 22:36:02 GMT
+# Wed, 16 Sep 2026 23:43:56 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
-# Tue, 15 Sep 2026 22:36:02 GMT
-ENV DRUPAL_VERSION=11.4.6
-# Tue, 15 Sep 2026 22:36:02 GMT
+# Wed, 16 Sep 2026 23:43:56 GMT
+ENV DRUPAL_VERSION=11.4.7
+# Wed, 16 Sep 2026 23:43:56 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Tue, 15 Sep 2026 22:36:02 GMT
+# Wed, 16 Sep 2026 23:43:56 GMT
 WORKDIR /opt/drupal
-# Tue, 15 Sep 2026 22:36:09 GMT
+# Wed, 16 Sep 2026 23:44:03 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Tue, 15 Sep 2026 22:36:09 GMT
+# Wed, 16 Sep 2026 23:44:03 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -834,61 +834,61 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Tue, 15 Sep 2026 21:20:40 GMT  
 		Size: 9.3 KB (9260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50a46c34709d21d2b3debd17935e4aae65581148671377127fb64aaf2f5df8f3`  
-		Last Modified: Tue, 15 Sep 2026 22:36:22 GMT  
-		Size: 6.3 MB (6330187 bytes)  
+	-	`sha256:1cd2008b86ee0f34a456cc7ed46bf0f61428e994e450fb367d77c225ce423e96`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
+		Size: 6.3 MB (6330180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4290de08da2621deae4194cb085fa426ad34563f7d67ec52b5c2583cef64ad7`  
-		Last Modified: Tue, 15 Sep 2026 22:36:22 GMT  
-		Size: 309.0 B  
+	-	`sha256:723f7cf02da7159df64b61bd77314054c2521a1f05cdb783a73e7dae0bac3d0e`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
+		Size: 311.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3df8179610edd403907867cd128aaaf9f1f922c7f6deed168d24742af85f48c1`  
-		Last Modified: Tue, 15 Sep 2026 22:36:22 GMT  
+	-	`sha256:df38ea674b2103203301129ac7409585bb87b76ec69a61a209565c814f76b517`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
 		Size: 833.0 KB (832975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dd39109ac29c3ea64ed6e799d3e8e9b964d7606b7aefa244e7b2e5d6537c7d4`  
-		Last Modified: Tue, 15 Sep 2026 22:36:22 GMT  
+	-	`sha256:8db3c1476051bd5b040922d547694888ac5e0a59543253ccc1d1a04c1c00d863`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b09391a392e269d5e8495308b185b3a71bbc3186e177dfa7cac77ae1b23064f8`  
-		Last Modified: Tue, 15 Sep 2026 22:36:23 GMT  
-		Size: 23.6 MB (23594124 bytes)  
+	-	`sha256:e4ba3c4b73b7a535a7ba5bd854ed11eaef64c25b0f272cd3eb252a3e82384aea`  
+		Last Modified: Wed, 16 Sep 2026 23:44:16 GMT  
+		Size: 23.6 MB (23598112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:f9be620833f56952271f7c3ddb4313433ed953851c3e2cfb9c96706caebdef21
+$ docker pull drupal@sha256:c7b108d695c5f920a21c1e271c5be3642e8abd78639ab30a8c1707a7bf711420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **409.1 KB (409059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d6fd9a124f957a2b03f2e656b976f93893658efd04a51f55452c78b33632394`
+-	Image ID: `sha256:d3f1ca1824bd94d7697b1d7ce66ad4f473f77e5bcb6965872b5a8680355ecf20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8558bcf82bb65601983843fbb9fa769dfa9ba58c2d2d0b7fccc8ede253b51a6b`  
-		Last Modified: Tue, 15 Sep 2026 22:36:22 GMT  
+	-	`sha256:528ddfa301b4bd1238f3196bb2331a902e0fc78fb69b6f832621b78de1acbcf2`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
 		Size: 375.4 KB (375406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:136bdda30d5b48e5cdc911447d9d4ebf54eeff8e4dfc5b96d35705918342863e`  
-		Last Modified: Tue, 15 Sep 2026 22:36:21 GMT  
+	-	`sha256:8a617aa7819ca9a30fee04e0cb15f6200a3855eebec7ca241077932a0556fadc`  
+		Last Modified: Wed, 16 Sep 2026 23:44:14 GMT  
 		Size: 33.7 KB (33653 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:d3fef2a9a8a3d8bcd64cff1380f3feef2f952450c82369a526e5c17a745dd2d9
+$ docker pull drupal@sha256:3ba91d0aecfa3f4d6119a8a6f88a9e9026aac698e05f759353d9711af5c96a93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.6 MB (73584676 bytes)**  
+-	Total Size: **73.6 MB (73588811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2277373de91ed6dfa69543bd7973a03baa029f3a58290c9ec715cbcd4f4507a2`
+-	Image ID: `sha256:5b49ec9eec4b2ab238fd73b6bdc27f90e7194b831f3847d940a8e33c3d428189`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -950,14 +950,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Wed, 16 Sep 2026 05:31:27 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Wed, 16 Sep 2026 05:31:30 GMT
-ENV DRUPAL_VERSION=11.4.6
+ENV DRUPAL_VERSION=11.4.7
 # Wed, 16 Sep 2026 05:31:30 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Wed, 16 Sep 2026 05:31:30 GMT
 WORKDIR /opt/drupal
-# Wed, 16 Sep 2026 05:34:42 GMT
+# Wed, 16 Sep 2026 23:45:20 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 16 Sep 2026 05:34:42 GMT
+# Wed, 16 Sep 2026 23:45:20 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1022,33 +1022,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Wed, 16 Sep 2026 05:32:12 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443132b6bf8413fef6badeb44ae4840dc7d3b5214bfef2258136761dede3bf0b`  
-		Last Modified: Wed, 16 Sep 2026 05:35:12 GMT  
-		Size: 23.6 MB (23594241 bytes)  
+	-	`sha256:491a6e0265c244d87ee28045071b7137f560ff6b2cd4420ad9562184bc2d76b1`  
+		Last Modified: Wed, 16 Sep 2026 23:46:03 GMT  
+		Size: 23.6 MB (23598376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:086d31397905fd78d60d7d35bf607b2f1966af4bed0d6bdd60d65f457f3faf60
+$ docker pull drupal@sha256:680649b3501bcb3654eca74a7311b75aeab5fcf978f339906483d46e2f877272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.7 KB (408656 bytes)**  
+-	Total Size: **408.7 KB (408655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:669135eecc6ab3d16a2f8cc87a954e4d9e81c792f07fe4238651a3adb06f6fdf`
+-	Image ID: `sha256:6629af5dcd314acc390b956e67efd08d23b6908ea4f10a11bc54c9f1103d562d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b76d7331fb89cba49f32a45c16486245943c6195147a797d85ba0d97d0245305`  
-		Last Modified: Wed, 16 Sep 2026 05:35:12 GMT  
+	-	`sha256:0cf82acfca913bf03fa27d4f536e36e369a071898ff449ee6fc2068ae70b0c7b`  
+		Last Modified: Wed, 16 Sep 2026 23:46:02 GMT  
 		Size: 374.9 KB (374858 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8cfac9d6773b3ab516877ebcda0ed674e2ee8d16ec3cbc7abb86587c68797960`  
-		Last Modified: Wed, 16 Sep 2026 05:35:10 GMT  
-		Size: 33.8 KB (33798 bytes)  
+	-	`sha256:4ac9ade43b1318db38f313dac429906e1994220c35be5b9d82c9d8c3772e4f46`  
+		Last Modified: Wed, 16 Sep 2026 23:46:02 GMT  
+		Size: 33.8 KB (33797 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.23` - linux; riscv64
