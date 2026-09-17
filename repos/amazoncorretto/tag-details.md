@@ -193,6 +193,38 @@
 -	[`amazoncorretto:26.0.2-alpine3.22`](#amazoncorretto2602-alpine322)
 -	[`amazoncorretto:26.0.2-alpine3.23`](#amazoncorretto2602-alpine323)
 -	[`amazoncorretto:26.0.2-alpine3.24`](#amazoncorretto2602-alpine324)
+-	[`amazoncorretto:27`](#amazoncorretto27)
+-	[`amazoncorretto:27-al2023`](#amazoncorretto27-al2023)
+-	[`amazoncorretto:27-al2023-headful`](#amazoncorretto27-al2023-headful)
+-	[`amazoncorretto:27-al2023-headless`](#amazoncorretto27-al2023-headless)
+-	[`amazoncorretto:27-al2023-jdk`](#amazoncorretto27-al2023-jdk)
+-	[`amazoncorretto:27-alpine`](#amazoncorretto27-alpine)
+-	[`amazoncorretto:27-alpine-full`](#amazoncorretto27-alpine-full)
+-	[`amazoncorretto:27-alpine-jdk`](#amazoncorretto27-alpine-jdk)
+-	[`amazoncorretto:27-alpine3.21`](#amazoncorretto27-alpine321)
+-	[`amazoncorretto:27-alpine3.21-full`](#amazoncorretto27-alpine321-full)
+-	[`amazoncorretto:27-alpine3.21-jdk`](#amazoncorretto27-alpine321-jdk)
+-	[`amazoncorretto:27-alpine3.22`](#amazoncorretto27-alpine322)
+-	[`amazoncorretto:27-alpine3.22-full`](#amazoncorretto27-alpine322-full)
+-	[`amazoncorretto:27-alpine3.22-jdk`](#amazoncorretto27-alpine322-jdk)
+-	[`amazoncorretto:27-alpine3.23`](#amazoncorretto27-alpine323)
+-	[`amazoncorretto:27-alpine3.23-full`](#amazoncorretto27-alpine323-full)
+-	[`amazoncorretto:27-alpine3.23-jdk`](#amazoncorretto27-alpine323-jdk)
+-	[`amazoncorretto:27-alpine3.24`](#amazoncorretto27-alpine324)
+-	[`amazoncorretto:27-alpine3.24-full`](#amazoncorretto27-alpine324-full)
+-	[`amazoncorretto:27-alpine3.24-jdk`](#amazoncorretto27-alpine324-jdk)
+-	[`amazoncorretto:27-headful`](#amazoncorretto27-headful)
+-	[`amazoncorretto:27-headless`](#amazoncorretto27-headless)
+-	[`amazoncorretto:27-jdk`](#amazoncorretto27-jdk)
+-	[`amazoncorretto:27.0.0`](#amazoncorretto2700)
+-	[`amazoncorretto:27.0.0-al2023`](#amazoncorretto2700-al2023)
+-	[`amazoncorretto:27.0.0-al2023-headful`](#amazoncorretto2700-al2023-headful)
+-	[`amazoncorretto:27.0.0-al2023-headless`](#amazoncorretto2700-al2023-headless)
+-	[`amazoncorretto:27.0.0-alpine`](#amazoncorretto2700-alpine)
+-	[`amazoncorretto:27.0.0-alpine3.21`](#amazoncorretto2700-alpine321)
+-	[`amazoncorretto:27.0.0-alpine3.22`](#amazoncorretto2700-alpine322)
+-	[`amazoncorretto:27.0.0-alpine3.23`](#amazoncorretto2700-alpine323)
+-	[`amazoncorretto:27.0.0-alpine3.24`](#amazoncorretto2700-alpine324)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2`](#amazoncorretto8-al2)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
@@ -27003,6 +27035,294 @@ $ docker pull amazoncorretto@sha256:ab21d13df61c03492be94eea4f9f724f647d673a2d34
 		Last Modified: Thu, 20 Aug 2026 17:18:58 GMT  
 		Size: 10.8 KB (10830 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:27`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-al2023`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-al2023-headful`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-al2023-headless`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-al2023-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine-full`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.21`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.21-full`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.21-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.22`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.22-full`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.22-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.23`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.23-full`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.23-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.24`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.24-full`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-alpine3.24-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-headful`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-headless`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27-jdk`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-al2023`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-al2023-headful`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-al2023-headless`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-alpine`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-alpine3.21`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-alpine3.22`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-alpine3.23`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `amazoncorretto:27.0.0-alpine3.24`
+
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8`
 
