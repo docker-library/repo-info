@@ -9,7 +9,7 @@
 ## `teamspeak:3.13`
 
 ```console
-$ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee494132f26b5ca265c6b
+$ docker pull teamspeak@sha256:6dfdfb22869adf50e1b66d024b360b786d57a85ea09e8e8fdb6cca23949b2813
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,98 +20,98 @@ $ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee4941
 ### `teamspeak:3.13` - linux; amd64
 
 ```console
-$ docker pull teamspeak@sha256:15ff29970f209b3c639162382130ac925035e57cffe22dba8e53f86189fb80e2
+$ docker pull teamspeak@sha256:2b3412de8b5ccd93cf131f2be5719e6dbc188e8729705dafa0c59b5debb63c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.6 MB (14588824 bytes)**  
+-	Total Size: **17.5 MB (17505252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efcd763fd1adf802a0d21b87b0d5353ce00075786c9fd015c0f25b5aa430a9bb`
+-	Image ID: `sha256:795270ac29d3eba49354eca2cb5b03ff40a13d4fdd97929c69a8dcf071fdc29c`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["ts3server"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:09 GMT
-ADD alpine-minirootfs-3.23.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:09 GMT
+# Thu, 17 Sep 2026 20:37:33 GMT
+ADD alpine-minirootfs-3.23.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:33 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 19:53:05 GMT
+# Thu, 17 Sep 2026 21:33:03 GMT
 RUN set -eux;     apk add --no-cache ca-certificates libstdc++ su-exec libpq;     addgroup -g 9987 ts3server;     adduser -u 9987 -Hh /var/ts3server -G ts3server -s /sbin/nologin -D ts3server;     install -d -o ts3server -g ts3server -m 775 /var/ts3server /var/run/ts3server /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server TS3SERVER_FILETRANSFER_PORT=30033
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.title=TeamSpeak 3 Server
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.version=3.13.8
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.description=TeamSpeak 3 Server on Alpine Linux
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 # ARGS: TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
 RUN set -eux;     apk add --no-cache --virtual .fetch-deps tar;     wget "${TEAMSPEAK_URL}" -O server.tar.bz2;     echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -;     mkdir -p /opt/ts3server;     tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server;     rm server.tar.bz2;     apk del .fetch-deps;     mv /opt/ts3server/*.so /opt/ts3server/redist/* /usr/local/lib;     ldconfig /usr/local/lib;     rm -rf /opt/ts3server/redist # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 VOLUME [/var/ts3server/]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 WORKDIR /var/ts3server/
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 EXPOSE map[10011/tcp:{} 30033/tcp:{} 9987/udp:{}]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 COPY entrypoint.sh /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 CMD ["ts3server"]
 ```
 
 -	Layers:
-	-	`sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe`  
-		Last Modified: Mon, 22 Jun 2026 12:03:33 GMT  
-		Size: 3.8 MB (3844421 bytes)  
+	-	`sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3`  
+		Last Modified: Thu, 17 Sep 2026 20:37:37 GMT  
+		Size: 3.8 MB (3848507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20450458b311eeea24386a9e674f7c9b792dc95ea3122e772cb66d8b9b7705b2`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.5 MB (1491119 bytes)  
+	-	`sha256:7e33426cc712b0add26fed42a7f0421715759b3e65cc89b59093ba8e0e8ef8cd`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.5 MB (1495132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9401b7d25013e1fe97735c3bbb4525ec55fc945ca13c3ac5b7e2cf3cc89566b`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 9.3 MB (9251700 bytes)  
+	-	`sha256:07446f625033e25dffec754559793eed1301a828d43367f39c485accba051830`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 12.2 MB (12160027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caa113739bb53453d412e3fdfdb21950fc2791258d9a129f3c60d331ec8ca1e4`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.6 KB (1552 bytes)  
+	-	`sha256:f1ea0b8b7d2db5362d19f85072e6c99a1c1803baab0b4931f82f379b7dcf6651`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.6 KB (1554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `teamspeak:3.13` - unknown; unknown
 
 ```console
-$ docker pull teamspeak@sha256:d497ef473384fac18b54855c10fd4366afe9cf8dfb0efba7e72e54ad820f7957
+$ docker pull teamspeak@sha256:3baf118c846e76b27efbd6897cd82b4eccccdd8390454567459f31822efbd0a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 KB (13210 bytes)**  
+-	Total Size: **13.2 KB (13213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58c630cf36fdb35df4140c4ab4038cbc256e8a81851cf4b3a51360895934e900`
+-	Image ID: `sha256:92fac97ce7697073992e2f3d9d8174247a16cdc8daccd662b3847d9c74285e45`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:00934ab82ad6f6ff5b1426368a98dcd8fc205025f1e301fe512d1ec4ea74a722`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 13.2 KB (13210 bytes)  
+	-	`sha256:a7db9f91c2b5325e606aee1ece8af25a124b3f5958302b8f0083e71f096114a7`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 13.2 KB (13213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `teamspeak:3.13.8`
 
 ```console
-$ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee494132f26b5ca265c6b
+$ docker pull teamspeak@sha256:6dfdfb22869adf50e1b66d024b360b786d57a85ea09e8e8fdb6cca23949b2813
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -122,98 +122,98 @@ $ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee4941
 ### `teamspeak:3.13.8` - linux; amd64
 
 ```console
-$ docker pull teamspeak@sha256:15ff29970f209b3c639162382130ac925035e57cffe22dba8e53f86189fb80e2
+$ docker pull teamspeak@sha256:2b3412de8b5ccd93cf131f2be5719e6dbc188e8729705dafa0c59b5debb63c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.6 MB (14588824 bytes)**  
+-	Total Size: **17.5 MB (17505252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efcd763fd1adf802a0d21b87b0d5353ce00075786c9fd015c0f25b5aa430a9bb`
+-	Image ID: `sha256:795270ac29d3eba49354eca2cb5b03ff40a13d4fdd97929c69a8dcf071fdc29c`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["ts3server"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:09 GMT
-ADD alpine-minirootfs-3.23.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:09 GMT
+# Thu, 17 Sep 2026 20:37:33 GMT
+ADD alpine-minirootfs-3.23.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:33 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 19:53:05 GMT
+# Thu, 17 Sep 2026 21:33:03 GMT
 RUN set -eux;     apk add --no-cache ca-certificates libstdc++ su-exec libpq;     addgroup -g 9987 ts3server;     adduser -u 9987 -Hh /var/ts3server -G ts3server -s /sbin/nologin -D ts3server;     install -d -o ts3server -g ts3server -m 775 /var/ts3server /var/run/ts3server /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server TS3SERVER_FILETRANSFER_PORT=30033
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.title=TeamSpeak 3 Server
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.version=3.13.8
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.description=TeamSpeak 3 Server on Alpine Linux
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 # ARGS: TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
 RUN set -eux;     apk add --no-cache --virtual .fetch-deps tar;     wget "${TEAMSPEAK_URL}" -O server.tar.bz2;     echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -;     mkdir -p /opt/ts3server;     tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server;     rm server.tar.bz2;     apk del .fetch-deps;     mv /opt/ts3server/*.so /opt/ts3server/redist/* /usr/local/lib;     ldconfig /usr/local/lib;     rm -rf /opt/ts3server/redist # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 VOLUME [/var/ts3server/]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 WORKDIR /var/ts3server/
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 EXPOSE map[10011/tcp:{} 30033/tcp:{} 9987/udp:{}]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 COPY entrypoint.sh /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 CMD ["ts3server"]
 ```
 
 -	Layers:
-	-	`sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe`  
-		Last Modified: Mon, 22 Jun 2026 12:03:33 GMT  
-		Size: 3.8 MB (3844421 bytes)  
+	-	`sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3`  
+		Last Modified: Thu, 17 Sep 2026 20:37:37 GMT  
+		Size: 3.8 MB (3848507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20450458b311eeea24386a9e674f7c9b792dc95ea3122e772cb66d8b9b7705b2`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.5 MB (1491119 bytes)  
+	-	`sha256:7e33426cc712b0add26fed42a7f0421715759b3e65cc89b59093ba8e0e8ef8cd`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.5 MB (1495132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9401b7d25013e1fe97735c3bbb4525ec55fc945ca13c3ac5b7e2cf3cc89566b`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 9.3 MB (9251700 bytes)  
+	-	`sha256:07446f625033e25dffec754559793eed1301a828d43367f39c485accba051830`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 12.2 MB (12160027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caa113739bb53453d412e3fdfdb21950fc2791258d9a129f3c60d331ec8ca1e4`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.6 KB (1552 bytes)  
+	-	`sha256:f1ea0b8b7d2db5362d19f85072e6c99a1c1803baab0b4931f82f379b7dcf6651`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.6 KB (1554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `teamspeak:3.13.8` - unknown; unknown
 
 ```console
-$ docker pull teamspeak@sha256:d497ef473384fac18b54855c10fd4366afe9cf8dfb0efba7e72e54ad820f7957
+$ docker pull teamspeak@sha256:3baf118c846e76b27efbd6897cd82b4eccccdd8390454567459f31822efbd0a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 KB (13210 bytes)**  
+-	Total Size: **13.2 KB (13213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58c630cf36fdb35df4140c4ab4038cbc256e8a81851cf4b3a51360895934e900`
+-	Image ID: `sha256:92fac97ce7697073992e2f3d9d8174247a16cdc8daccd662b3847d9c74285e45`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:00934ab82ad6f6ff5b1426368a98dcd8fc205025f1e301fe512d1ec4ea74a722`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 13.2 KB (13210 bytes)  
+	-	`sha256:a7db9f91c2b5325e606aee1ece8af25a124b3f5958302b8f0083e71f096114a7`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 13.2 KB (13213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `teamspeak:latest`
 
 ```console
-$ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee494132f26b5ca265c6b
+$ docker pull teamspeak@sha256:6dfdfb22869adf50e1b66d024b360b786d57a85ea09e8e8fdb6cca23949b2813
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -224,90 +224,90 @@ $ docker pull teamspeak@sha256:15acbc64c92f57ef1fd8dd203791fa7f70a14707e60ee4941
 ### `teamspeak:latest` - linux; amd64
 
 ```console
-$ docker pull teamspeak@sha256:15ff29970f209b3c639162382130ac925035e57cffe22dba8e53f86189fb80e2
+$ docker pull teamspeak@sha256:2b3412de8b5ccd93cf131f2be5719e6dbc188e8729705dafa0c59b5debb63c4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.6 MB (14588824 bytes)**  
+-	Total Size: **17.5 MB (17505252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efcd763fd1adf802a0d21b87b0d5353ce00075786c9fd015c0f25b5aa430a9bb`
+-	Image ID: `sha256:795270ac29d3eba49354eca2cb5b03ff40a13d4fdd97929c69a8dcf071fdc29c`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["ts3server"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:09 GMT
-ADD alpine-minirootfs-3.23.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:09 GMT
+# Thu, 17 Sep 2026 20:37:33 GMT
+ADD alpine-minirootfs-3.23.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:33 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 19:53:05 GMT
+# Thu, 17 Sep 2026 21:33:03 GMT
 RUN set -eux;     apk add --no-cache ca-certificates libstdc++ su-exec libpq;     addgroup -g 9987 ts3server;     adduser -u 9987 -Hh /var/ts3server -G ts3server -s /sbin/nologin -D ts3server;     install -d -o ts3server -g ts3server -m 775 /var/ts3server /var/run/ts3server /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ts3server TS3SERVER_FILETRANSFER_PORT=30033
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.title=TeamSpeak 3 Server
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.version=3.13.8
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 LABEL com.teamspeak.description=TeamSpeak 3 Server on Alpine Linux
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ARG TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 # ARGS: TEAMSPEAK_CHECKSUM=b04af5fbcbca3e847336389569eca3bff6339cba6f13f0151d6b012360e038ae TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/3.13.8/teamspeak3-server_linux_alpine-3.13.8.tar.bz2
 RUN set -eux;     apk add --no-cache --virtual .fetch-deps tar;     wget "${TEAMSPEAK_URL}" -O server.tar.bz2;     echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -;     mkdir -p /opt/ts3server;     tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server;     rm server.tar.bz2;     apk del .fetch-deps;     mv /opt/ts3server/*.so /opt/ts3server/redist/* /usr/local/lib;     ldconfig /usr/local/lib;     rm -rf /opt/ts3server/redist # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 VOLUME [/var/ts3server/]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 WORKDIR /var/ts3server/
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 EXPOSE map[10011/tcp:{} 30033/tcp:{} 9987/udp:{}]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 COPY entrypoint.sh /opt/ts3server # buildkit
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Mon, 22 Jun 2026 19:53:07 GMT
+# Thu, 17 Sep 2026 21:33:05 GMT
 CMD ["ts3server"]
 ```
 
 -	Layers:
-	-	`sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe`  
-		Last Modified: Mon, 22 Jun 2026 12:03:33 GMT  
-		Size: 3.8 MB (3844421 bytes)  
+	-	`sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3`  
+		Last Modified: Thu, 17 Sep 2026 20:37:37 GMT  
+		Size: 3.8 MB (3848507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20450458b311eeea24386a9e674f7c9b792dc95ea3122e772cb66d8b9b7705b2`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.5 MB (1491119 bytes)  
+	-	`sha256:7e33426cc712b0add26fed42a7f0421715759b3e65cc89b59093ba8e0e8ef8cd`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.5 MB (1495132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9401b7d25013e1fe97735c3bbb4525ec55fc945ca13c3ac5b7e2cf3cc89566b`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 9.3 MB (9251700 bytes)  
+	-	`sha256:07446f625033e25dffec754559793eed1301a828d43367f39c485accba051830`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 12.2 MB (12160027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:caa113739bb53453d412e3fdfdb21950fc2791258d9a129f3c60d331ec8ca1e4`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 1.6 KB (1552 bytes)  
+	-	`sha256:f1ea0b8b7d2db5362d19f85072e6c99a1c1803baab0b4931f82f379b7dcf6651`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 1.6 KB (1554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `teamspeak:latest` - unknown; unknown
 
 ```console
-$ docker pull teamspeak@sha256:d497ef473384fac18b54855c10fd4366afe9cf8dfb0efba7e72e54ad820f7957
+$ docker pull teamspeak@sha256:3baf118c846e76b27efbd6897cd82b4eccccdd8390454567459f31822efbd0a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 KB (13210 bytes)**  
+-	Total Size: **13.2 KB (13213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58c630cf36fdb35df4140c4ab4038cbc256e8a81851cf4b3a51360895934e900`
+-	Image ID: `sha256:92fac97ce7697073992e2f3d9d8174247a16cdc8daccd662b3847d9c74285e45`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:00934ab82ad6f6ff5b1426368a98dcd8fc205025f1e301fe512d1ec4ea74a722`  
-		Last Modified: Mon, 22 Jun 2026 19:53:12 GMT  
-		Size: 13.2 KB (13210 bytes)  
+	-	`sha256:a7db9f91c2b5325e606aee1ece8af25a124b3f5958302b8f0083e71f096114a7`  
+		Last Modified: Thu, 17 Sep 2026 21:33:10 GMT  
+		Size: 13.2 KB (13213 bytes)  
 		MIME: application/vnd.in-toto+json
