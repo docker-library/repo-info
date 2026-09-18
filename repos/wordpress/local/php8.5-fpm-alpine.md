@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4798d16a2b37d7b03ebe0834fb0e3fa4e92ed053431d5475b8d7904e2c72fb70`
-- Created: `2026-08-31T20:32:51.498814103Z`
-- Virtual Size: ~ 352.67 Mb  
+- Image ID: `sha256:e2d8cf9b0f245a04afbd46e2061b41c1ba36954d87f038ba74fadb6233e6754e`
+- Created: `2026-09-15T22:28:11.391560578Z`
+- Virtual Size: ~ 352.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.21.0-r0 description:
+curl-8.22.0-r0 description:
 URL retrieval utility and library
 
-curl-8.21.0-r0 webpage:
+curl-8.22.0-r0 webpage:
 https://curl.se/
 
-curl-8.21.0-r0 installed size:
-273 KiB
+curl-8.22.0-r0 installed size:
+278 KiB
 
-curl-8.21.0-r0 license:
+curl-8.22.0-r0 license:
 curl
 
 ```
@@ -758,16 +758,16 @@ BSD-2-Clause
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42.1-r0 description:
+libblkid-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.42.1-r0 webpage:
+libblkid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42.1-r0 installed size:
+libblkid-2.42.3-r1 installed size:
 198 KiB
 
-libblkid-2.42.1-r0 license:
+libblkid-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -826,16 +826,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -877,16 +877,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1047,16 +1047,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42.1-r0 description:
+libmount-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libmount-2.42.1-r0 webpage:
+libmount-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42.1-r0 installed size:
-282 KiB
+libmount-2.42.3-r1 installed size:
+286 KiB
 
-libmount-2.42.1-r0 license:
+libmount-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1251,16 +1251,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42.1-r0 description:
+libuuid-2.42.3-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42.1-r0 webpage:
+libuuid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42.1-r0 installed size:
+libuuid-2.42.3-r1 installed size:
 29 KiB
 
-libuuid-2.42.1-r0 license:
+libuuid-2.42.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -1625,16 +1625,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
@@ -1744,16 +1744,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.3-r0 description:
+xz-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.3-r0 webpage:
+xz-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.3-r0 installed size:
+xz-5.8.4-r0 installed size:
 162 KiB
 
-xz-5.8.3-r0 license:
+xz-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1761,16 +1761,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
