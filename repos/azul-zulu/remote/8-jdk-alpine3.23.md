@@ -1,7 +1,7 @@
 ## `azul-zulu:8-jdk-alpine3.23`
 
 ```console
-$ docker pull azul-zulu@sha256:2a46d68c336abea9628b9d576f532f2e35077dfc3121a047ebd288ca57795ae5
+$ docker pull azul-zulu@sha256:0437704594f906c7ce12d8471c45eb73c0d4c10922ed8d3d8f797bbe02fa5d6b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,61 +14,61 @@ $ docker pull azul-zulu@sha256:2a46d68c336abea9628b9d576f532f2e35077dfc3121a047e
 ### `azul-zulu:8-jdk-alpine3.23` - linux; amd64
 
 ```console
-$ docker pull azul-zulu@sha256:38dd4858ace89003611d5aa8b433cc05c5a65c9b8f6fddc020648d90ddfd90a5
+$ docker pull azul-zulu@sha256:190b4f5347ce7c8cdc9ed7e46e1ce3df5a65ed051893cb470611b3540b28a1d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.8 MB (59763003 bytes)**  
+-	Total Size: **59.8 MB (59767099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:775a2d8c5d6d814cda5b8ae6b3804b413fed6e1938f347988bed31f2d7665a1c`
+-	Image ID: `sha256:1dcd7f5578f62da8851b67018116b4efe1aa453f7a864d745c0e822c5d548a45`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:09 GMT
-ADD alpine-minirootfs-3.23.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:09 GMT
+# Thu, 17 Sep 2026 20:37:33 GMT
+ADD alpine-minirootfs-3.23.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:33 GMT
 CMD ["/bin/sh"]
-# Wed, 19 Aug 2026 17:34:18 GMT
+# Thu, 17 Sep 2026 21:37:56 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 19 Aug 2026 17:34:18 GMT
+# Thu, 17 Sep 2026 21:37:56 GMT
 ENV LANG=C.UTF-8
-# Wed, 19 Aug 2026 17:34:18 GMT
+# Thu, 17 Sep 2026 21:37:56 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux;      wget -O /tmp/azul-signing.pub https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "6c6393d4755818a15cf055a5216cffa599f038cd508433faed2226925956509a  /tmp/azul-signing.pub" | sha256sum -c -;      mv /tmp/azul-signing.pub /etc/apk/keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "https://$REPO_HOST/zulu/alpine" | tee -a /etc/apk/repositories;      apk add --no-cache zulu8-jdk=8.0.504-r1;      java -version # buildkit
-# Wed, 19 Aug 2026 17:34:18 GMT
+# Thu, 17 Sep 2026 21:37:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu8
-# Wed, 19 Aug 2026 17:34:18 GMT
+# Thu, 17 Sep 2026 21:37:56 GMT
 ENV PATH=/usr/lib/jvm/zulu8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:e6f31ffc071e5560b82a8685fba8214954e5721e3e49269d00958316edbe89fe`  
-		Last Modified: Mon, 22 Jun 2026 12:03:33 GMT  
-		Size: 3.8 MB (3844421 bytes)  
+	-	`sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3`  
+		Last Modified: Thu, 17 Sep 2026 20:37:37 GMT  
+		Size: 3.8 MB (3848507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88d77f17f27046025439f57c65b63fc414625202d8a00c92be60572ed05459e9`  
-		Last Modified: Wed, 19 Aug 2026 17:34:27 GMT  
-		Size: 55.9 MB (55918582 bytes)  
+	-	`sha256:8cd8b9a7331e356744686fc16127fdcdee2f3740e9401cf331171179bc62ff56`  
+		Last Modified: Thu, 17 Sep 2026 21:38:06 GMT  
+		Size: 55.9 MB (55918592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:8-jdk-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:4615dba0355f17d87ad82f07e03f3885e30be7f70219932bf2b0dd5710cd3090
+$ docker pull azul-zulu@sha256:4bf3ceaa89c73f301799859a9c3a0cf6ca08d3c884c1265b89fa580e80bfd679
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 KB (7790 bytes)**  
+-	Total Size: **7.8 KB (7789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:102762f1de546b2c2223dac54ba75154cb5c35ec361ca703960acea957db2e4e`
+-	Image ID: `sha256:9b578aee5cbaed0507ab0c999fc281d5066c1e053e74b2603214678e4a38f0dc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:893e4d51ee2deb85da97ce14886e14ee892a979c4abec8fc9234ec4355970b04`  
-		Last Modified: Wed, 19 Aug 2026 17:34:26 GMT  
-		Size: 7.8 KB (7790 bytes)  
+	-	`sha256:43de822757c1ef3e2cd1af049d60ce915057990ebd83c854d97b0cb1bc50d7a5`  
+		Last Modified: Thu, 17 Sep 2026 21:38:04 GMT  
+		Size: 7.8 KB (7789 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `azul-zulu:8-jdk-alpine3.23` - linux; arm64 variant v8
