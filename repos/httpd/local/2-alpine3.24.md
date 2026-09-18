@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9436aee6e00c6e8ece7fd6f8bdf82b3fc001425d71f911b9e96bf9fe620e5381`
-- Created: `2026-06-16T00:16:19.669077134Z`
-- Virtual Size: ~ 66.86 Mb  
+- Image ID: `sha256:71cc3b294a7d5cab671380adce59be59f7f45683feafc524b5f017f2b7fa0376`
+- Created: `2026-09-17T21:17:01.091081141Z`
+- Virtual Size: ~ 66.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -71,16 +71,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.1-r0 description:
+alpine-release-3.24.2-r0 description:
 Alpine release data
 
-alpine-release-3.24.1-r0 webpage:
+alpine-release-3.24.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.1-r0 installed size:
+alpine-release-3.24.2-r0 installed size:
 343 B
 
-alpine-release-3.24.1-r0 license:
+alpine-release-3.24.2-r0 license:
 MIT
 
 ```
@@ -88,16 +88,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.6-r0 description:
+apk-tools-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.6-r0 webpage:
+apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.6-r0 installed size:
+apk-tools-3.0.8-r0 installed size:
 112 KiB
 
-apk-tools-3.0.6-r0 license:
+apk-tools-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -122,16 +122,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.3-r2 description:
+apr-util-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.3-r2 webpage:
+apr-util-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.3-r2 installed size:
+apr-util-1.6.4-r0 installed size:
 180 KiB
 
-apr-util-1.6.3-r2 license:
+apr-util-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -139,16 +139,16 @@ Apache-2.0
 ### `apk` package: `apr-util-ldap`
 
 ```console
-apr-util-ldap-1.6.3-r2 description:
+apr-util-ldap-1.6.4-r0 description:
 The Apache Portable Runtime Utility Library - LDAP driver
 
-apr-util-ldap-1.6.3-r2 webpage:
+apr-util-ldap-1.6.4-r0 webpage:
 https://apr.apache.org/
 
-apr-util-ldap-1.6.3-r2 installed size:
+apr-util-ldap-1.6.4-r0 installed size:
 13 KiB
 
-apr-util-ldap-1.6.3-r2 license:
+apr-util-ldap-1.6.4-r0 license:
 Apache-2.0
 
 ```
@@ -207,16 +207,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.6-r0 description:
+c-ares-1.34.8-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.6-r0 webpage:
+c-ares-1.34.8-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.6-r0 installed size:
-233 KiB
+c-ares-1.34.8-r0 installed size:
+237 KiB
 
-c-ares-1.34.6-r0 license:
+c-ares-1.34.8-r0 license:
 MIT
 
 ```
@@ -224,16 +224,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260611-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260611-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260611-r0 installed size:
-207 KiB
+ca-certificates-20260909-r0 installed size:
+210 KiB
 
-ca-certificates-20260611-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -241,16 +241,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -292,16 +292,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.6-r0 description:
+libapk-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.6-r0 webpage:
+libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.6-r0 installed size:
+libapk-3.0.8-r0 installed size:
 270 KiB
 
-libapk-3.0.6-r0 license:
+libapk-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -326,16 +326,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -343,16 +343,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.20.0-r1 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.20.0-r1 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.20.0-r1 installed size:
-693 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.20.0-r1 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -360,16 +360,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.1-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.1-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.1-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.1-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -394,16 +394,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.13-r0 description:
+libldap-2.6.14-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.13-r0 webpage:
+libldap-2.6.14-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.13-r0 installed size:
+libldap-2.6.14-r0 installed size:
 365 KiB
 
-libldap-2.6.13-r0 license:
+libldap-2.6.14-r0 license:
 OLDAP-2.8
 
 ```
@@ -445,16 +445,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -479,16 +479,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.3-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.3-r1 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -649,16 +649,16 @@ GPL-2.0-only
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
