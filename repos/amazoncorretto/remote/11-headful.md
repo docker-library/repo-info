@@ -1,7 +1,7 @@
 ## `amazoncorretto:11-headful`
 
 ```console
-$ docker pull amazoncorretto@sha256:e1577c6d56db139ad2718fbb2e55120dfba4801d8cf22826489ad0248120f5ec
+$ docker pull amazoncorretto@sha256:84f7820fb50c7c452f364375096520c4633332b8b70f50f8ac84fb891e49965a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -76,28 +76,28 @@ $ docker pull amazoncorretto@sha256:7985590f0e03868a68974e546d97596cafcd07537784
 ### `amazoncorretto:11-headful` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:86e13180b7d789bf2b8d2c56a270d1469821ffc1d012e15a9f094a5910dbd66a
+$ docker pull amazoncorretto@sha256:6017a599bc07cdca1c17ec2800b58e52e405da09c1c7243da6c3681cd10b9d70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.5 MB (129463595 bytes)**  
+-	Total Size: **129.5 MB (129463545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bd2245a3a63a13c5df947fcc2037a18effaf03f68ac3b0e93e35e280729be24`
+-	Image ID: `sha256:033614824ae0eeee5756d88b71b35ee65ed1ade9c78b0fd247b61209d428182a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 14 Sep 2026 23:45:56 GMT
+# Thu, 17 Sep 2026 21:12:44 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 14 Sep 2026 23:45:56 GMT
+# Thu, 17 Sep 2026 21:12:44 GMT
 CMD ["/bin/bash"]
-# Tue, 15 Sep 2026 00:11:19 GMT
+# Thu, 17 Sep 2026 22:46:02 GMT
 ARG version=11.0.32.10-1
-# Tue, 15 Sep 2026 00:11:19 GMT
+# Thu, 17 Sep 2026 22:46:02 GMT
 # ARGS: version=11.0.32.10-1
 RUN set -eux     && ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)"     && rpm --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023     && echo "localpkg_gpgcheck=1" >> /etc/dnf/dnf.conf     && CORRETO_TEMP=$(mktemp -d)     && pushd ${CORRETO_TEMP}     && RPM_LIST=("java-11-amazon-corretto-headless-$version.amzn2023.${ARCH}.rpm" "java-11-amazon-corretto-$version.amzn2023.${ARCH}.rpm")     && for rpm in ${RPM_LIST[@]}; do     curl --fail -O https://corretto.aws/downloads/resources/$(echo $version | tr '-' '.')/${rpm}     && rpm -K "${CORRETO_TEMP}/${rpm}" | grep -F "${CORRETO_TEMP}/${rpm}: digests signatures OK" || exit 1;     done     && dnf install -y ${CORRETO_TEMP}/*.rpm     && popd     && rm -rf /usr/lib/jvm/java-11-amazon-corretto.${ARCH}/lib/src.zip     && rm -rf ${CORRETO_TEMP}     && dnf clean all     && sed -i '/localpkg_gpgcheck=1/d' /etc/dnf/dnf.conf # buildkit
-# Tue, 15 Sep 2026 00:11:19 GMT
+# Thu, 17 Sep 2026 22:46:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 15 Sep 2026 00:11:19 GMT
+# Thu, 17 Sep 2026 22:46:02 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 ```
 
@@ -106,31 +106,31 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Last Modified: Mon, 31 Aug 2026 23:14:33 GMT  
 		Size: 53.5 MB (53452573 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7a7ae47287e73ece35ee07cfb62931218bbf62e8253043bf15abe65b652bb3b`  
-		Last Modified: Tue, 15 Sep 2026 00:11:36 GMT  
-		Size: 76.0 MB (76011022 bytes)  
+	-	`sha256:00304b80b66e3d4a73793fee67691f38fe22b673eddb958ac2f1050f9dc7e07c`  
+		Last Modified: Thu, 17 Sep 2026 22:46:19 GMT  
+		Size: 76.0 MB (76010972 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazoncorretto:11-headful` - unknown; unknown
 
 ```console
-$ docker pull amazoncorretto@sha256:27654388ceb050fe782d40d8a8dc7e8fbf871d23d395dce2d876cf708c198bf9
+$ docker pull amazoncorretto@sha256:d350a09a8fa7d20ceb56afb70f22a289b588b4b2af494cd90e0fef7db1828d07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5244598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30d7afce53694ff9d6a2feefccba5be245171f5372a985e1e69ff125a27eba6d`
+-	Image ID: `sha256:b3b5b1e6853d70a7ae616a80e69eebb841491b12f4a0aa2588c72a54afc32b1e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a843b223d23f5fd9e6d596ef6d6838a644343dc34042f7525aa190ccc000042`  
-		Last Modified: Tue, 15 Sep 2026 00:11:35 GMT  
+	-	`sha256:64ea5c1e9d2bd1e38dc7ba004811fe16c81cd5691e9150e14cc3aad20364481a`  
+		Last Modified: Thu, 17 Sep 2026 22:46:17 GMT  
 		Size: 5.2 MB (5235277 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad5556ba23f95eb5c8b48d87b451752d471f9ca7c3a61b16fb8157fecc5ffbbc`  
-		Last Modified: Tue, 15 Sep 2026 00:11:34 GMT  
+	-	`sha256:d0811a58fb8049345fc6543e34f105ae9f7ee78260a5787348983206cba8749c`  
+		Last Modified: Thu, 17 Sep 2026 22:46:17 GMT  
 		Size: 9.3 KB (9321 bytes)  
 		MIME: application/vnd.in-toto+json
