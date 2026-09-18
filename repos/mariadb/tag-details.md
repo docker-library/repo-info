@@ -66,6 +66,14 @@
 -	[`mariadb:13.0.2-resolute`](#mariadb1302-resolute)
 -	[`mariadb:13.0.2-ubi`](#mariadb1302-ubi)
 -	[`mariadb:13.0.2-ubi10`](#mariadb1302-ubi10)
+-	[`mariadb:13.1-rc`](#mariadb131-rc)
+-	[`mariadb:13.1-resolute-rc`](#mariadb131-resolute-rc)
+-	[`mariadb:13.1-ubi-rc`](#mariadb131-ubi-rc)
+-	[`mariadb:13.1-ubi10-rc`](#mariadb131-ubi10-rc)
+-	[`mariadb:13.1.1-rc`](#mariadb1311-rc)
+-	[`mariadb:13.1.1-resolute-rc`](#mariadb1311-resolute-rc)
+-	[`mariadb:13.1.1-ubi-rc`](#mariadb1311-ubi-rc)
+-	[`mariadb:13.1.1-ubi10-rc`](#mariadb1311-ubi10-rc)
 -	[`mariadb:latest`](#mariadblatest)
 -	[`mariadb:lts`](#mariadblts)
 -	[`mariadb:lts-noble`](#mariadblts-noble)
@@ -37800,6 +37808,38 @@ $ docker pull mariadb@sha256:0049710953f2ef46876251b6b9a190e9262df404a9d67ee6a32
 		Last Modified: Thu, 17 Sep 2026 21:34:22 GMT  
 		Size: 33.9 KB (33947 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `mariadb:13.1-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1-resolute-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1-ubi-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1-ubi10-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1.1-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1.1-resolute-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1.1-ubi-rc`
+
+**does not exist** (yet?)
+
+## `mariadb:13.1.1-ubi10-rc`
+
+**does not exist** (yet?)
 
 ## `mariadb:latest`
 
