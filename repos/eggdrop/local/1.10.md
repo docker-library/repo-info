@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e74403e9246f462c8ac4bf194b1df8d6ed604451d265e0480a5ceb47a4c8679`
-- Created: `2026-09-08T19:18:59.318266186Z`
-- Virtual Size: ~ 34.18 Mb  
+- Image ID: `sha256:44070294318d061838e38f699162a8b570748e65fc6463d48dc17a5b95babd6e`
+- Created: `2026-09-17T21:15:58.358050607Z`
+- Virtual Size: ~ 28.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.5-r0 description:
+alpine-release-3.23.6-r0 description:
 Alpine release data
 
-alpine-release-3.23.5-r0 webpage:
+alpine-release-3.23.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.5-r0 installed size:
+alpine-release-3.23.6-r0 installed size:
 343 B
 
-alpine-release-3.23.5-r0 license:
+alpine-release-3.23.6-r0 license:
 MIT
 
 ```
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.6-r0 description:
+apk-tools-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.6-r0 webpage:
+apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.6-r0 installed size:
+apk-tools-3.0.8-r0 installed size:
 112 KiB
 
-apk-tools-3.0.6-r0 license:
+apk-tools-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -178,16 +178,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.6-r0 description:
+libapk-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.6-r0 webpage:
+libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.6-r0 installed size:
+libapk-3.0.8-r0 installed size:
 270 KiB
 
-libapk-3.0.6-r0 license:
+libapk-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -450,16 +450,16 @@ TCL
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026c-r0 description:
+tzdata-2026d-r0 description:
 Timezone data
 
-tzdata-2026c-r0 webpage:
+tzdata-2026d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026c-r0 installed size:
-433 KiB
+tzdata-2026d-r0 installed size:
+441 KiB
 
-tzdata-2026c-r0 license:
+tzdata-2026d-r0 license:
 Public-Domain
 
 ```
