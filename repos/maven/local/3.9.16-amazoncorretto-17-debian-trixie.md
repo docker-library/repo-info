@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ff670da1f992d86c079b78cca89c818ca8df0ea6865d433838232491ef2f6a7`
-- Created: `2026-09-09T04:41:52.337817193Z`
+- Image ID: `sha256:d95683681b0aa4c7780ba84cf2705c449db3f76c6302be6e000009e80f1e4c68`
+- Created: `2026-09-16T05:22:11.47550756Z`
 - Virtual Size: ~ 451.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -585,7 +585,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcom-err2:amd64=1.47.2-3+b11`
+- `libcom-err2:amd64=1.47.2-3+b12`
 
 Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 
