@@ -1,7 +1,7 @@
 ## `sapmachine:25-jre-alpine-3.21`
 
 ```console
-$ docker pull sapmachine@sha256:b3c6c4bc5563c9e3630e54fdfdbcadec6b379780f89c3980c34139bca665b14f
+$ docker pull sapmachine@sha256:b744caa4e37aeb090e60d039a5909c0f8e92d2f80d061c293c1f9afa77ff9b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,58 +12,58 @@ $ docker pull sapmachine@sha256:b3c6c4bc5563c9e3630e54fdfdbcadec6b379780f89c3980
 ### `sapmachine:25-jre-alpine-3.21` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:0e4e9de270b1b685f6fba982113e8357bcf3e7f4872274573b7baa1255dcff4f
+$ docker pull sapmachine@sha256:8503d642fa3c54e67c8aaf2dc5a827a9e44d951db0deb0387c13cf67b6732334
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63415907 bytes)**  
+-	Total Size: **63.4 MB (63395705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08ce69e374d44f057957685b3e903076031147fddefcbd0df04d2131777099fe`
+-	Image ID: `sha256:06d0edf6d066b258ce959af25f93a110c3194679ce74f702db315a696ee271eb`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Thu, 16 Apr 2026 23:53:15 GMT
-ADD alpine-minirootfs-3.21.7-x86_64.tar.gz / # buildkit
-# Thu, 16 Apr 2026 23:53:15 GMT
+# Thu, 17 Sep 2026 20:38:22 GMT
+ADD alpine-minirootfs-3.21.8-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:38:22 GMT
 CMD ["/bin/sh"]
-# Thu, 20 Aug 2026 18:06:26 GMT
+# Thu, 17 Sep 2026 21:57:07 GMT
 RUN wget -qO /etc/apk/keys/sapmachine-apk.rsa.pub https://dist.sapmachine.io/alpine/sapmachine-apk.rsa.pub &&     echo "4444e47cabf35695f9406692848de191d3b7cbd47dcdc1ffb62f4f70aea06e89 /etc/apk/keys/sapmachine-apk.rsa.pub" | sha256sum -c - &&     echo "https://dist.sapmachine.io/alpine" >> /etc/apk/repositories &&     apk add sapmachine-25-jre=25.0.4.1-r0 # buildkit
-# Thu, 20 Aug 2026 18:06:26 GMT
+# Thu, 17 Sep 2026 21:57:07 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jre
-# Thu, 20 Aug 2026 18:06:26 GMT
+# Thu, 17 Sep 2026 21:57:07 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:897d797d2723cf0e318402f4d6f37d51b011517e5cf09246b22155f0fa90dc81`  
-		Last Modified: Thu, 16 Apr 2026 05:32:55 GMT  
-		Size: 3.6 MB (3646875 bytes)  
+	-	`sha256:16333ee0c00fc65e025a2a4f839703ad37a74728832977fbdf080984de1b8e5a`  
+		Last Modified: Thu, 17 Sep 2026 20:38:28 GMT  
+		Size: 3.6 MB (3626020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4bb8b0a7254a8c6109b88872da9f3dc79c48a6ddb3405fb88ccf0517d68db8a`  
-		Last Modified: Thu, 20 Aug 2026 18:06:38 GMT  
-		Size: 59.8 MB (59769032 bytes)  
+	-	`sha256:f51beafff254b941ef23a9d36bf9417fc6d596cdb827d89ae46c1544d330926a`  
+		Last Modified: Thu, 17 Sep 2026 21:57:20 GMT  
+		Size: 59.8 MB (59769685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:25-jre-alpine-3.21` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:3560c032366542a46a7a5c0df65b3590004f8e3633efd2f23f163230270599e6
+$ docker pull sapmachine@sha256:1aba38b7a8537475de283defd19249ca12be9c543b42c5fcca6f033bafdf1353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **440.4 KB (440367 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96378c8485adf0c29bfc3fc565a8b7e545c09ee2eca72ca775d7e8a0f0643de9`
+-	Image ID: `sha256:6221077e540d4c906f254ab2279cb6947a3d44938424ead9cb820d855ba00ba5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0281c860d357cf96b85fcf571bc43f8b6e2ce2b5f8cb3ef83d37dc49c0626ba8`  
-		Last Modified: Thu, 20 Aug 2026 18:06:36 GMT  
+	-	`sha256:ea1f4deb7f764aade8f0fb30f3fef46b9702ba6c5cc6d2f55df93d81050188e3`  
+		Last Modified: Thu, 17 Sep 2026 21:57:18 GMT  
 		Size: 433.1 KB (433068 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b90a1fda6f7c31738d32f0e2b07c07a1dc6dd74fea742515823985a1ed9018a`  
-		Last Modified: Thu, 20 Aug 2026 18:06:35 GMT  
+	-	`sha256:ea87c0efd8b73da50930651fc8635798ce708925893e0237c1fd01c9f5fd277c`  
+		Last Modified: Thu, 17 Sep 2026 21:57:18 GMT  
 		Size: 7.3 KB (7299 bytes)  
 		MIME: application/vnd.in-toto+json
