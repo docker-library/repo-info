@@ -1,7 +1,7 @@
 ## `influxdb:3-core`
 
 ```console
-$ docker pull influxdb@sha256:59b7589cfec3bf4b2a2ad30074c7adb1b1bbb7cbd0d8315338d5d2cb1cfa27c0
+$ docker pull influxdb@sha256:43991052bc05fd1ee494998de89a55699587c8c0a6591dd33f30c7246752c7f8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull influxdb@sha256:59b7589cfec3bf4b2a2ad30074c7adb1b1bbb7cbd0d8315338
 ### `influxdb:3-core` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:597239cda4e34c31d4b7630ddd386d668332c26224af5f56f18082d8f3d20de8
+$ docker pull influxdb@sha256:242eb7b90d53088b8cd39837ef5219a63865777033ec5759c12d5b37bcdb4c13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.7 MB (148673813 bytes)**  
+-	Total Size: **148.7 MB (148681749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6e47c86a1eaef62d691fd4b8d2e85c0f64597e242be8d4674420c73a85e5bf4`
+-	Image ID: `sha256:8fc6a1c3de3129cfca8ac4b62fa51cf013960e01e44aa33fb3feb95e665f63d4`
 -	Entrypoint: `["\/usr\/bin\/entrypoint.sh"]`
 -	Default Command: `["influxdb3","serve"]`
 
@@ -35,35 +35,35 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:43d479b270bbaf47965cfc86b37f4c517bda83ddefda6f708f98c3b2b7d15396 in / 
 # Fri, 11 Sep 2026 11:44:06 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2026 03:25:16 GMT
+# Fri, 18 Sep 2026 17:50:31 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update &&     apt-get install --no-install-recommends -y         ca-certificates         curl         gettext-base         gnupg         libssl3 &&     rm -rf /var/lib/apt/lists* # buildkit
-# Wed, 16 Sep 2026 03:25:17 GMT
+# Fri, 18 Sep 2026 17:50:31 GMT
 RUN groupadd --gid 1500 influxdb3 &&     useradd  --uid 1500 --gid influxdb3 --shell /bin/bash --create-home influxdb3 &&     mkdir -p /var/lib/influxdb3              /usr/lib/influxdb3              /plugins # buildkit
-# Wed, 16 Sep 2026 03:25:22 GMT
-ENV INFLUXDB_VERSION=3.11.4
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
+ENV INFLUXDB_VERSION=3.11.5
+# Fri, 18 Sep 2026 17:50:37 GMT
 RUN case "$(dpkg --print-architecture)" in         amd64) ARCH=amd64 ;;         arm64) ARCH=arm64 ;;         *) echo 'Unsupported Architecture' ; exit 1 ;;     esac &&     curl -fsSLO "https://dl.influxdata.com/influxdb/releases/influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"          -fsSLO "https://dl.influxdata.com/influxdb/releases/influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys         24C975CBA61A024EE1B631787C3D57159FC2F927 &&     gpg --batch --verify         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     tar --strip-components 1 -C /usr/lib/influxdb3 -xvf "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     mv /usr/lib/influxdb3/influxdb3 /usr/bin/influxdb3 &&     chown -R influxdb3:influxdb3 /var/lib/influxdb3 /plugins &&     chown -R root:root /usr/lib/influxdb3 &&     rm  "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" # buildkit
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 COPY entrypoint.sh /usr/bin/entrypoint.sh # buildkit
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 USER influxdb3
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 RUN mkdir ~/.influxdb3 # buildkit
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENV INFLUXDB3_PLUGIN_DIR=/plugins
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENV INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENV INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENV INFLUXDB_IOX_DB_DIR=/var/lib/influxdb3
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENV INFLUXDB3_LOG_FILTER=info
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 EXPOSE map[8181/tcp:{}]
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
-# Wed, 16 Sep 2026 03:25:22 GMT
+# Fri, 18 Sep 2026 17:50:37 GMT
 CMD ["influxdb3" "serve"]
 ```
 
@@ -72,61 +72,61 @@ CMD ["influxdb3" "serve"]
 		Last Modified: Fri, 11 Sep 2026 13:38:39 GMT  
 		Size: 29.8 MB (29764116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8959afb2b3739b43bdff113833589f57762b94ee254477e707f4984c164aea0c`  
-		Last Modified: Wed, 16 Sep 2026 03:25:41 GMT  
-		Size: 6.6 MB (6632033 bytes)  
+	-	`sha256:d5456e42be6baa525b04ee0f3170cbd6132d41f0e4cc4c34c74e9af85c524851`  
+		Last Modified: Fri, 18 Sep 2026 17:50:57 GMT  
+		Size: 6.6 MB (6632319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d9aac118a7517885a1e5d30abc158f56eb9452ecaf051125688b00c2e1a8895`  
-		Last Modified: Wed, 16 Sep 2026 03:25:40 GMT  
+	-	`sha256:1bb5ef423dd59455f16c89a5ea2f31340b9703e27e6a6ec4d93de12b59f43d9e`  
+		Last Modified: Fri, 18 Sep 2026 17:50:57 GMT  
 		Size: 3.7 KB (3653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3599a5e9830ba2d4dff41cdd6e824f850a726555102fc99fc19b1f9ee99f1395`  
-		Last Modified: Wed, 16 Sep 2026 03:25:43 GMT  
-		Size: 112.3 MB (112273343 bytes)  
+	-	`sha256:c81c7ea6bb227e906e24f0a2002a1369314ee1f2a476031ed6628f225f861ca8`  
+		Last Modified: Fri, 18 Sep 2026 17:51:00 GMT  
+		Size: 112.3 MB (112280995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883ad1b8860bcaa53e124c14c56a9e6c48f27eebf38a8c4762ba991511875257`  
-		Last Modified: Wed, 16 Sep 2026 03:25:40 GMT  
-		Size: 519.0 B  
+	-	`sha256:6bd6a9b2dd7e0d46bcb5d2c1ee4472e9d1eb420483045ffb4474ec67409dd52d`  
+		Last Modified: Fri, 18 Sep 2026 17:50:57 GMT  
+		Size: 518.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52cc2b74d4cfca601b23f5ed2adec041428f1fd9b31c55142c2ac76928a96d33`  
-		Last Modified: Wed, 16 Sep 2026 03:25:42 GMT  
-		Size: 149.0 B  
+	-	`sha256:b6f6633bb2500917855687f04dabab5f4c1cecdace2f3da1811d4e8e1b58a708`  
+		Last Modified: Fri, 18 Sep 2026 17:50:58 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:3-core` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:57fe3a12ca0334d0ec22ce10cc35b4da4bca16902eef90f236003bf25a8214fe
+$ docker pull influxdb@sha256:73aa014ef331d5a0d5f78a40e5ae8c8fd580c1416706b2b43e68bb9fd684b24b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2326284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858d82a9198520eddfeceb7a72ce0ea2b7308b5f23e342404bb8c26804b7483d`
+-	Image ID: `sha256:85415c8d99e280b7c883ab0c79588983e5ca19985e06c2a16d676a676eee964f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bff9c63373c68a34fe778150a5755fa0cd0ecb42f404889d53c097ca5dfaec83`  
-		Last Modified: Wed, 16 Sep 2026 03:25:40 GMT  
+	-	`sha256:d97f2a917d4c2269be968a159dcb069c58df8014965137fe033594787e3f9a8c`  
+		Last Modified: Fri, 18 Sep 2026 17:50:57 GMT  
 		Size: 2.3 MB (2308643 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d0874cba1614f65ad19a8461bf677a0e56a8974a73be45f589170c0a9a310fb7`  
-		Last Modified: Wed, 16 Sep 2026 03:25:40 GMT  
+	-	`sha256:7cdcb6b2d78d89ed4cb804ac8b9ded83d4ed5dc9587a49a2d9dedaf6d8f36140`  
+		Last Modified: Fri, 18 Sep 2026 17:50:56 GMT  
 		Size: 17.6 KB (17641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `influxdb:3-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:5e7bc5a0adb1d40758e2b57c161c00b3853092f53f231dba6255eed8aa04dea5
+$ docker pull influxdb@sha256:785a2ef90ef8701a7edbc55481154d8b85b362103cc82c53d5251fa8b3d45d4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.0 MB (140044544 bytes)**  
+-	Total Size: **140.1 MB (140055777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3d7e5ac525d69b4bd60196597421ef22db6f7474ba5616274763504657ed2f9`
+-	Image ID: `sha256:16e3d769e106b5547e2375f1593825363c98e9c77b122ec414ec5e679f73bbfc`
 -	Entrypoint: `["\/usr\/bin\/entrypoint.sh"]`
 -	Default Command: `["influxdb3","serve"]`
 
@@ -141,35 +141,35 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:ff1ce8d2ee022926eb353ff9248358531fbe1661ef12d8784e68fbc52738ed34 in / 
 # Fri, 11 Sep 2026 11:53:37 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2026 03:24:04 GMT
+# Fri, 18 Sep 2026 17:51:01 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update &&     apt-get install --no-install-recommends -y         ca-certificates         curl         gettext-base         gnupg         libssl3 &&     rm -rf /var/lib/apt/lists* # buildkit
-# Wed, 16 Sep 2026 03:24:04 GMT
+# Fri, 18 Sep 2026 17:51:01 GMT
 RUN groupadd --gid 1500 influxdb3 &&     useradd  --uid 1500 --gid influxdb3 --shell /bin/bash --create-home influxdb3 &&     mkdir -p /var/lib/influxdb3              /usr/lib/influxdb3              /plugins # buildkit
-# Wed, 16 Sep 2026 03:24:39 GMT
-ENV INFLUXDB_VERSION=3.11.4
-# Wed, 16 Sep 2026 03:24:39 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
+ENV INFLUXDB_VERSION=3.11.5
+# Fri, 18 Sep 2026 17:51:07 GMT
 RUN case "$(dpkg --print-architecture)" in         amd64) ARCH=amd64 ;;         arm64) ARCH=arm64 ;;         *) echo 'Unsupported Architecture' ; exit 1 ;;     esac &&     curl -fsSLO "https://dl.influxdata.com/influxdb/releases/influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"          -fsSLO "https://dl.influxdata.com/influxdb/releases/influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys         24C975CBA61A024EE1B631787C3D57159FC2F927 &&     gpg --batch --verify         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     tar --strip-components 1 -C /usr/lib/influxdb3 -xvf "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" &&     mv /usr/lib/influxdb3/influxdb3 /usr/bin/influxdb3 &&     chown -R influxdb3:influxdb3 /var/lib/influxdb3 /plugins &&     chown -R root:root /usr/lib/influxdb3 &&     rm  "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz.asc"         "influxdb3-core-${INFLUXDB_VERSION}_linux_${ARCH}.tar.gz" # buildkit
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 COPY entrypoint.sh /usr/bin/entrypoint.sh # buildkit
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 USER influxdb3
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 RUN mkdir ~/.influxdb3 # buildkit
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENV INFLUXDB3_PLUGIN_DIR=/plugins
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENV INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENV INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENV INFLUXDB_IOX_DB_DIR=/var/lib/influxdb3
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENV INFLUXDB3_LOG_FILTER=info
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 EXPOSE map[8181/tcp:{}]
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
-# Wed, 16 Sep 2026 03:24:40 GMT
+# Fri, 18 Sep 2026 17:51:07 GMT
 CMD ["influxdb3" "serve"]
 ```
 
@@ -178,47 +178,47 @@ CMD ["influxdb3" "serve"]
 		Last Modified: Fri, 11 Sep 2026 13:38:46 GMT  
 		Size: 28.9 MB (28941580 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:306e196c078d8ec9789c45a1ca87091a2ab20c21e8cfe77aaadde54c930696d6`  
-		Last Modified: Wed, 16 Sep 2026 03:24:26 GMT  
-		Size: 6.6 MB (6645226 bytes)  
+	-	`sha256:4661b9b44702493575c1a1004c22f4b597501c89ecfaaaf30b8de3625541d6e6`  
+		Last Modified: Fri, 18 Sep 2026 17:51:24 GMT  
+		Size: 6.6 MB (6645355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92e28047286e441a7a60b53d2c1769a1e55aedfc5b211e2c53d72d95aa8f4a9b`  
-		Last Modified: Wed, 16 Sep 2026 03:24:26 GMT  
-		Size: 3.7 KB (3653 bytes)  
+	-	`sha256:2be77a2e97f3c961303d3d245db7c22d5b3e8201b0025b6c2793b120483aebf6`  
+		Last Modified: Fri, 18 Sep 2026 17:51:23 GMT  
+		Size: 3.7 KB (3651 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc89a6686bf2b85b73c9dfbc559faabdd72d5ab86679051f3fba746e6d52c0ce`  
-		Last Modified: Wed, 16 Sep 2026 03:24:58 GMT  
-		Size: 104.5 MB (104453418 bytes)  
+	-	`sha256:42a0afd21c8fbb67aceeba4890efa5561f67ab39832d251114a0a6425e1d439c`  
+		Last Modified: Fri, 18 Sep 2026 17:51:26 GMT  
+		Size: 104.5 MB (104464522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63948f3f3790bc6575e947f5633032f878d056a3390554a38b912c9daff489e6`  
-		Last Modified: Wed, 16 Sep 2026 03:24:56 GMT  
-		Size: 519.0 B  
+	-	`sha256:d809074c4be1feba62341dfcc9edbcd40e4a0d8b1fb936c26e19b50d81ee8a8c`  
+		Last Modified: Fri, 18 Sep 2026 17:51:23 GMT  
+		Size: 521.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42bf441aade7ecaab84aca065aaad8eb20efd39e4299859e98a952fd6946a83a`  
-		Last Modified: Wed, 16 Sep 2026 03:24:56 GMT  
+	-	`sha256:1ce8212c13867732d23df4a19b284f4acb3c60060477c76b59b55b4c5ce866cc`  
+		Last Modified: Fri, 18 Sep 2026 17:51:24 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:3-core` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:1332674959d5e0b7963a46758a7b76f6abb16bedbf8f06a6f42dc73884f718df
+$ docker pull influxdb@sha256:f7b6c524783f0862b8c83a85d6c2e251352d277051442f8cc50969e550aaac04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2327515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e2fafaf3eaf5c09e1b5902a5bde05eb2a36751f3daef4a12d13262eacb635d6`
+-	Image ID: `sha256:e64c11cc947e589ba576c3033248cb1bb23d19b73fa17aef236c336d5f37ddd0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff091dfe6969419e3799f39412a3119716845e9495f410d2699cab1a5d86d29c`  
-		Last Modified: Wed, 16 Sep 2026 03:24:56 GMT  
+	-	`sha256:fdf7057ff352f567788ccae81446a49b4b4fa855ed83c97320c3bce8dc29523b`  
+		Last Modified: Fri, 18 Sep 2026 17:51:24 GMT  
 		Size: 2.3 MB (2309725 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4da5b988b3205a37ab33cfc00442bbe506fddc894261a052962ea0510151754d`  
-		Last Modified: Wed, 16 Sep 2026 03:24:55 GMT  
+	-	`sha256:71bf4edbfa716d450ba481b1100f14e2f7bb20f9cbdca1b6dacab28cc9cf2202`  
+		Last Modified: Fri, 18 Sep 2026 17:51:23 GMT  
 		Size: 17.8 KB (17790 bytes)  
 		MIME: application/vnd.in-toto+json
