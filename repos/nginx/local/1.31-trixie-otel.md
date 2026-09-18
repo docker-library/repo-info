@@ -1,9 +1,9 @@
-# `nginx:1.31.5-otel`
+# `nginx:1.31.6-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:30cb36fb418413e84b7eecf2c99367dd04a621a49eaf20b506eaafffd60d0f4f`
-- Created: `2026-09-02T21:06:54.421864578Z`
+- Image ID: `sha256:3ac6f84a1b78867f1680139be22d11e2e2f9e2e94c978d9052ea48f37d05ec05`
+- Created: `2026-09-15T23:12:13.276527964Z`
 - Virtual Size: ~ 178.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.5`
+  - `NGINX_VERSION=1.31.6`
   - `NJS_VERSION=1.0.1`
   - `NJS_RELEASE=1~trixie`
   - `ACME_VERSION=0.4.1`
@@ -441,12 +441,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=8.14.1-2+deb13u4`
+### `dpkg` source package: `curl=8.14.1-2+deb13u5`
 
 Binary Packages:
 
-- `curl=8.14.1-2+deb13u4`
-- `libcurl4t64:amd64=8.14.1-2+deb13u4`
+- `curl=8.14.1-2+deb13u5`
+- `libcurl4t64:amd64=8.14.1-2+deb13u5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -463,13 +463,21 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.dsc' curl_8.14.1-2+deb13u5.dsc 3263 SHA256:9a9a2c95cdc8b5d76892c70858f25eaf2dc0b0a475a1e43e0b4ad428414752df
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.debian.tar.xz' curl_8.14.1-2+deb13u5.debian.tar.xz 72312 SHA256:ebdfcfab1c2001c7a539fe2a4044dbf666a544393f191bedce9ee2d07c4ea925
+```
 
-- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -752,7 +760,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcom-err2:amd64=1.47.2-3+b11`
+- `libcom-err2:amd64=1.47.2-3+b12`
 
 Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 
@@ -1512,11 +1520,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap2/1:2.75-10+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap2/1:2.75-10+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.15-1+deb13u1`
+### `dpkg` source package: `libde265=1.0.15-1+deb13u2`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.15-1+deb13u1`
+- `libde265-0:amd64=1.0.15-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -1528,13 +1536,20 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libde265=1.0.15-1+deb13u2
+'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1%2bdeb13u2.dsc' libde265_1.0.15-1+deb13u2.dsc 2249 SHA256:d85412b00d6e52e12ca5ecb5003dfd3cd48da5f26a0f7a8ee63336289ecf6393
+'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA256:00251986c29d34d3af7117ed05874950c875dd9292d016be29d3b3762666511d
+'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.15-1%2bdeb13u2.debian.tar.xz' libde265_1.0.15-1+deb13u2.debian.tar.xz 145468 SHA256:108b5d4d71243554110e2899e20d3f409c8368573bfddc98473eb1637b902ba9
+```
 
-- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.15-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.15-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.23-2`
 
@@ -2067,11 +2082,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/3.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/3.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.11.1-1+deb13u1`
+### `dpkg` source package: `libssh2=1.11.1-1+deb13u2`
 
 Binary Packages:
 
-- `libssh2-1t64:amd64=1.11.1-1+deb13u1`
+- `libssh2-1t64:amd64=1.11.1-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 
@@ -2081,18 +2096,18 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-1+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.dsc' libssh2_1.11.1-1+deb13u1.dsc 2351 SHA256:b49dae094697248bd4d3665dd73d13b27739237701b939bc7c1ebedf17dc81e4
-'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u1.debian.tar.xz' libssh2_1.11.1-1+deb13u1.debian.tar.xz 19312 SHA256:095817cecf4b527b68208d72987439622877dde62cd88afe8822efc3d775e013
+$ apt-get source -qq --print-uris libssh2=1.11.1-1+deb13u2
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u2.dsc' libssh2_1.11.1-1+deb13u2.dsc 2351 SHA256:f584c22bccd948a432cc56f64adb896af2cb26d9b38bcaac13cdc7907e766599
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-1%2bdeb13u2.debian.tar.xz' libssh2_1.11.1-1+deb13u2.debian.tar.xz 20956 SHA256:ee81e3ea0d65fdbc979c50f1433966d0139e33ac09242d7dc7c83567139126a7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.11.1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.11.1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.20.0-2+deb13u1`
 
@@ -2648,11 +2663,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.31.5+0.4.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.31.6+0.4.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.31.5+0.4.1-1~trixie`
+- `nginx-module-acme=1.31.6+0.4.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2662,11 +2677,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.31.5-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.31.6-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.31.5-1~trixie`
+- `nginx-module-geoip=1.31.6-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2676,11 +2691,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.31.5-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.31.6-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.31.5-1~trixie`
+- `nginx-module-image-filter=1.31.6-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2690,11 +2705,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.31.5+1.0.1-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.31.6+1.0.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.31.5+1.0.1-1~trixie`
+- `nginx-module-njs=1.31.6+1.0.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2704,11 +2719,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-otel=1.31.5+0.1.2-1~trixie`
+### `dpkg` source package: `nginx-module-otel=1.31.6+0.1.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-otel=1.31.5+0.1.2-1~trixie`
+- `nginx-module-otel=1.31.6+0.1.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2718,11 +2733,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.31.5-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.31.6-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.31.5-1~trixie`
+- `nginx-module-xslt=1.31.6-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2732,11 +2747,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.31.5-1~trixie`
+### `dpkg` source package: `nginx=1.31.6-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.31.5-1~trixie`
+- `nginx=1.31.6-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
