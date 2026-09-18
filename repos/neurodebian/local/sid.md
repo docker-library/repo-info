@@ -2144,20 +2144,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-5
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-5.dsc' tar_1.35+dfsg-5.dsc 2428 SHA256:e026e7a19c295212fcc3250e3136b134ae09661c559bf707b8ebfdd8f5093c0a
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-5.debian.tar.xz' tar_1.35+dfsg-5.debian.tar.xz 22704 SHA256:51fecfaa10cbadb1ab19be88adfd34a6d876619c50aaaafd69011ddb2e283b70
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-5/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-5/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026c-1`
 
