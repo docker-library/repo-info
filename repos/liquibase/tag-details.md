@@ -341,7 +341,7 @@ $ docker pull liquibase@sha256:226b3536e81367e26d5df0edb017d5389d6528fe5337bc2fd
 ## `liquibase:5.0-alpine`
 
 ```console
-$ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a98bb7099a51ef902
+$ docker pull liquibase@sha256:f93a82c34b49e3557e49b3fd69ceb7a3b1bd50bea977bc9c452dda7f359370a3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -354,125 +354,125 @@ $ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a9
 ### `liquibase:5.0-alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:6f1b64d9dad9f86340411854e9236bce69adbd105a656ab03fafa174eff5742f
+$ docker pull liquibase@sha256:c42d095a9d09e19fbfcfd62e7a179fe2ac1fd89d716555aed5e80def7c3b273b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (84026615 bytes)**  
+-	Total Size: **84.1 MB (84105710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b033fcf5c88b7364061790e9be4069210c58bddcc02f45c1f3443388b0e90b9`
+-	Image ID: `sha256:9456b7e5ab4d2135b6409628273cf7d3a1ea89c59acf4fdce853cc3e26ba4414`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:21 GMT
-ADD alpine-minirootfs-3.22.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:21 GMT
+# Thu, 17 Sep 2026 20:37:44 GMT
+ADD alpine-minirootfs-3.22.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:44 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 20:01:26 GMT
+# Thu, 17 Sep 2026 21:47:08 GMT
 RUN addgroup --gid 1001 liquibase &&     adduser --disabled-password --uid 1001 --ingroup liquibase --home /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 RUN apk add --no-cache openjdk21-jre-headless bash # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 WORKDIR /liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LIQUIBASE_VERSION=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_VERSION=0.2.14
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.description=Liquibase Container Image (Alpine)
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.vendor=Liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.version=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449 LPM_VERSION=0.2.14 LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV DOCKER_LIQUIBASE=true
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 USER liquibase:liquibase
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 CMD ["--help"]
 ```
 
 -	Layers:
-	-	`sha256:f7ee36c9aa34bbb665f975c76e5c0d1607f0674b94c84cfb0061f87006ea5d10`  
-		Last Modified: Mon, 22 Jun 2026 09:11:44 GMT  
-		Size: 3.8 MB (3787595 bytes)  
+	-	`sha256:53f8f5e03afd86ade91b7aa57a749f5a3d1419c113be5d8c10e7ee61bb5ab887`  
+		Last Modified: Thu, 17 Sep 2026 20:37:49 GMT  
+		Size: 3.8 MB (3792075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:253834b0b4a07a4a08a9cf3853bbfdcad0e00afa439ffb671c19b363b5dc375e`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 932.0 B  
+	-	`sha256:3985237039c9367dade70640ee1779ef029635c74ea354eb5e50c84296adc42f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1421e4bc4f56791584a359bb984744f7162218def18c0c7bd00f589374f1581a`  
-		Last Modified: Mon, 22 Jun 2026 20:01:45 GMT  
-		Size: 67.9 MB (67866848 bytes)  
+	-	`sha256:a17fb838ec6697f3a036e6d32efc5b147dc04831bfb017eed6dc845abb6f4875`  
+		Last Modified: Thu, 17 Sep 2026 21:47:26 GMT  
+		Size: 67.9 MB (67941262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe375d9b1dcd009815bb94a6847858abb051f1989c6b3a6e3b1f8f362b487566`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 8.7 MB (8687795 bytes)  
+	-	`sha256:a627cf0a5169a1e1487ef75b4e6f72fac643e65d3f8da27b756d29351bc8161d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 8.7 MB (8687855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1112bfd2dbff32c98a0b59687132e5e061574e8977db4c1bbb4d279f5cc120c9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 3.7 MB (3681812 bytes)  
+	-	`sha256:61f84561c4599930659aa004706795a2b5e34a9bab169312a9b3462caac4dc57`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 3.7 MB (3681949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afea256cda865a09b494d19686ad77da823bccb11c08208311e18c29f3e489b9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:27fd5e4669a47727d3e73fbf3f1078a25165b71651ab388289f1784206889d5d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:086dc2d708e845fb0ebc7636a1cd22a36b8fdfb0e0110ae8faf40c295b57e1de`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
+	-	`sha256:07711533981f0bbfe33ecd269cf3ab528baebd3cac8b830512c2f12fa35eed2f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:5.0-alpine` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:f15bbb0a9359d50787758806b2a8386860f349b17ee8a16eb7bdd5ef244c0ef5
+$ docker pull liquibase@sha256:f197561e3dabbed13e0de504a0cf4e477461da96688e1b0fcd31463d86c9325f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **363.6 KB (363566 bytes)**  
+-	Total Size: **364.9 KB (364858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f17d640c725627af296b4b0f9f894bb491667aadf2b70eba6b5de6ff134ddf`
+-	Image ID: `sha256:f964d3114dc2275c4707389a2beb9830d761933d5d3d0b538c2570018afd748f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a122d75c777219ec4376fb4f372cace532c9b3fc73b7bd4a5392c0ef45e39e10`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 341.9 KB (341908 bytes)  
+	-	`sha256:6b9744abf6c114fde49033d90dbe7db40397dc073c193d110290779cf73d96c0`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 343.2 KB (343201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:38d89e5eec10e43f5123173c7848bf95f8f292155023c824db40bf24f6354e92`  
-		Last Modified: Mon, 22 Jun 2026 20:01:41 GMT  
-		Size: 21.7 KB (21658 bytes)  
+	-	`sha256:d3f76e46085aaee9c118a6a739565ac312bab2807703a00ba0cbc8124e63791b`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 21.7 KB (21657 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `liquibase:5.0-alpine` - linux; arm64 variant v8
@@ -931,7 +931,7 @@ $ docker pull liquibase@sha256:226b3536e81367e26d5df0edb017d5389d6528fe5337bc2fd
 ## `liquibase:5.0.1-alpine`
 
 ```console
-$ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a98bb7099a51ef902
+$ docker pull liquibase@sha256:f93a82c34b49e3557e49b3fd69ceb7a3b1bd50bea977bc9c452dda7f359370a3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -944,125 +944,125 @@ $ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a9
 ### `liquibase:5.0.1-alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:6f1b64d9dad9f86340411854e9236bce69adbd105a656ab03fafa174eff5742f
+$ docker pull liquibase@sha256:c42d095a9d09e19fbfcfd62e7a179fe2ac1fd89d716555aed5e80def7c3b273b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (84026615 bytes)**  
+-	Total Size: **84.1 MB (84105710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b033fcf5c88b7364061790e9be4069210c58bddcc02f45c1f3443388b0e90b9`
+-	Image ID: `sha256:9456b7e5ab4d2135b6409628273cf7d3a1ea89c59acf4fdce853cc3e26ba4414`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:21 GMT
-ADD alpine-minirootfs-3.22.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:21 GMT
+# Thu, 17 Sep 2026 20:37:44 GMT
+ADD alpine-minirootfs-3.22.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:44 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 20:01:26 GMT
+# Thu, 17 Sep 2026 21:47:08 GMT
 RUN addgroup --gid 1001 liquibase &&     adduser --disabled-password --uid 1001 --ingroup liquibase --home /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 RUN apk add --no-cache openjdk21-jre-headless bash # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 WORKDIR /liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LIQUIBASE_VERSION=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_VERSION=0.2.14
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.description=Liquibase Container Image (Alpine)
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.vendor=Liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.version=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449 LPM_VERSION=0.2.14 LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV DOCKER_LIQUIBASE=true
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 USER liquibase:liquibase
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 CMD ["--help"]
 ```
 
 -	Layers:
-	-	`sha256:f7ee36c9aa34bbb665f975c76e5c0d1607f0674b94c84cfb0061f87006ea5d10`  
-		Last Modified: Mon, 22 Jun 2026 09:11:44 GMT  
-		Size: 3.8 MB (3787595 bytes)  
+	-	`sha256:53f8f5e03afd86ade91b7aa57a749f5a3d1419c113be5d8c10e7ee61bb5ab887`  
+		Last Modified: Thu, 17 Sep 2026 20:37:49 GMT  
+		Size: 3.8 MB (3792075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:253834b0b4a07a4a08a9cf3853bbfdcad0e00afa439ffb671c19b363b5dc375e`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 932.0 B  
+	-	`sha256:3985237039c9367dade70640ee1779ef029635c74ea354eb5e50c84296adc42f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1421e4bc4f56791584a359bb984744f7162218def18c0c7bd00f589374f1581a`  
-		Last Modified: Mon, 22 Jun 2026 20:01:45 GMT  
-		Size: 67.9 MB (67866848 bytes)  
+	-	`sha256:a17fb838ec6697f3a036e6d32efc5b147dc04831bfb017eed6dc845abb6f4875`  
+		Last Modified: Thu, 17 Sep 2026 21:47:26 GMT  
+		Size: 67.9 MB (67941262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe375d9b1dcd009815bb94a6847858abb051f1989c6b3a6e3b1f8f362b487566`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 8.7 MB (8687795 bytes)  
+	-	`sha256:a627cf0a5169a1e1487ef75b4e6f72fac643e65d3f8da27b756d29351bc8161d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 8.7 MB (8687855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1112bfd2dbff32c98a0b59687132e5e061574e8977db4c1bbb4d279f5cc120c9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 3.7 MB (3681812 bytes)  
+	-	`sha256:61f84561c4599930659aa004706795a2b5e34a9bab169312a9b3462caac4dc57`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 3.7 MB (3681949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afea256cda865a09b494d19686ad77da823bccb11c08208311e18c29f3e489b9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:27fd5e4669a47727d3e73fbf3f1078a25165b71651ab388289f1784206889d5d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:086dc2d708e845fb0ebc7636a1cd22a36b8fdfb0e0110ae8faf40c295b57e1de`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
+	-	`sha256:07711533981f0bbfe33ecd269cf3ab528baebd3cac8b830512c2f12fa35eed2f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:5.0.1-alpine` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:f15bbb0a9359d50787758806b2a8386860f349b17ee8a16eb7bdd5ef244c0ef5
+$ docker pull liquibase@sha256:f197561e3dabbed13e0de504a0cf4e477461da96688e1b0fcd31463d86c9325f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **363.6 KB (363566 bytes)**  
+-	Total Size: **364.9 KB (364858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f17d640c725627af296b4b0f9f894bb491667aadf2b70eba6b5de6ff134ddf`
+-	Image ID: `sha256:f964d3114dc2275c4707389a2beb9830d761933d5d3d0b538c2570018afd748f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a122d75c777219ec4376fb4f372cace532c9b3fc73b7bd4a5392c0ef45e39e10`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 341.9 KB (341908 bytes)  
+	-	`sha256:6b9744abf6c114fde49033d90dbe7db40397dc073c193d110290779cf73d96c0`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 343.2 KB (343201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:38d89e5eec10e43f5123173c7848bf95f8f292155023c824db40bf24f6354e92`  
-		Last Modified: Mon, 22 Jun 2026 20:01:41 GMT  
-		Size: 21.7 KB (21658 bytes)  
+	-	`sha256:d3f76e46085aaee9c118a6a739565ac312bab2807703a00ba0cbc8124e63791b`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 21.7 KB (21657 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `liquibase:5.0.1-alpine` - linux; arm64 variant v8
@@ -1192,7 +1192,7 @@ $ docker pull liquibase@sha256:556fa07b9f53a6c7a4061a26e77e1fa9e0cb4a0238dbf9995
 ## `liquibase:alpine`
 
 ```console
-$ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a98bb7099a51ef902
+$ docker pull liquibase@sha256:f93a82c34b49e3557e49b3fd69ceb7a3b1bd50bea977bc9c452dda7f359370a3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1205,125 +1205,125 @@ $ docker pull liquibase@sha256:2d0283867e389c8bc824ea18809a6b85935f88c0249eed2a9
 ### `liquibase:alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:6f1b64d9dad9f86340411854e9236bce69adbd105a656ab03fafa174eff5742f
+$ docker pull liquibase@sha256:c42d095a9d09e19fbfcfd62e7a179fe2ac1fd89d716555aed5e80def7c3b273b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (84026615 bytes)**  
+-	Total Size: **84.1 MB (84105710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b033fcf5c88b7364061790e9be4069210c58bddcc02f45c1f3443388b0e90b9`
+-	Image ID: `sha256:9456b7e5ab4d2135b6409628273cf7d3a1ea89c59acf4fdce853cc3e26ba4414`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:21 GMT
-ADD alpine-minirootfs-3.22.5-x86_64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:21 GMT
+# Thu, 17 Sep 2026 20:37:44 GMT
+ADD alpine-minirootfs-3.22.6-x86_64.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:44 GMT
 CMD ["/bin/sh"]
-# Mon, 22 Jun 2026 20:01:26 GMT
+# Thu, 17 Sep 2026 21:47:08 GMT
 RUN addgroup --gid 1001 liquibase &&     adduser --disabled-password --uid 1001 --ingroup liquibase --home /liquibase liquibase &&     chown liquibase /liquibase # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 RUN apk add --no-cache openjdk21-jre-headless bash # buildkit
-# Mon, 22 Jun 2026 20:01:28 GMT
+# Thu, 17 Sep 2026 21:47:10 GMT
 WORKDIR /liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LIQUIBASE_VERSION=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version # buildkit
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_VERSION=0.2.14
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 ARG LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.description=Liquibase Container Image (Alpine)
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.licenses=FSL-1.1-ALv2
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.vendor=Liquibase
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.version=5.0.1
-# Mon, 22 Jun 2026 20:01:29 GMT
+# Thu, 17 Sep 2026 21:47:12 GMT
 LABEL org.opencontainers.image.documentation=https://docs.liquibase.com
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 # ARGS: LIQUIBASE_VERSION=5.0.1 LB_SHA256=3ae11ccdcd4c080e421e5fd043bdbd624d56fcfc9b294d5d9d898cb8b074e449 LPM_VERSION=0.2.14 LPM_SHA256=28750d84bf76d32ba3a2d51674a1b4e14205523c87e4655b2cd8de68b916758e LPM_SHA256_ARM=541a220aa3c3227cc0fb40b15976b11011568a06a6499af090258bf604f45cc0
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version # buildkit
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENV DOCKER_LIQUIBASE=true
-# Mon, 22 Jun 2026 20:01:30 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY docker-entrypoint.sh ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 COPY liquibase.docker.properties ./ # buildkit
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 USER liquibase:liquibase
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Mon, 22 Jun 2026 20:01:31 GMT
+# Thu, 17 Sep 2026 21:47:13 GMT
 CMD ["--help"]
 ```
 
 -	Layers:
-	-	`sha256:f7ee36c9aa34bbb665f975c76e5c0d1607f0674b94c84cfb0061f87006ea5d10`  
-		Last Modified: Mon, 22 Jun 2026 09:11:44 GMT  
-		Size: 3.8 MB (3787595 bytes)  
+	-	`sha256:53f8f5e03afd86ade91b7aa57a749f5a3d1419c113be5d8c10e7ee61bb5ab887`  
+		Last Modified: Thu, 17 Sep 2026 20:37:49 GMT  
+		Size: 3.8 MB (3792075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:253834b0b4a07a4a08a9cf3853bbfdcad0e00afa439ffb671c19b363b5dc375e`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 932.0 B  
+	-	`sha256:3985237039c9367dade70640ee1779ef029635c74ea354eb5e50c84296adc42f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 933.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1421e4bc4f56791584a359bb984744f7162218def18c0c7bd00f589374f1581a`  
-		Last Modified: Mon, 22 Jun 2026 20:01:45 GMT  
-		Size: 67.9 MB (67866848 bytes)  
+	-	`sha256:a17fb838ec6697f3a036e6d32efc5b147dc04831bfb017eed6dc845abb6f4875`  
+		Last Modified: Thu, 17 Sep 2026 21:47:26 GMT  
+		Size: 67.9 MB (67941262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe375d9b1dcd009815bb94a6847858abb051f1989c6b3a6e3b1f8f362b487566`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 8.7 MB (8687795 bytes)  
+	-	`sha256:a627cf0a5169a1e1487ef75b4e6f72fac643e65d3f8da27b756d29351bc8161d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 8.7 MB (8687855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1112bfd2dbff32c98a0b59687132e5e061574e8977db4c1bbb4d279f5cc120c9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 3.7 MB (3681812 bytes)  
+	-	`sha256:61f84561c4599930659aa004706795a2b5e34a9bab169312a9b3462caac4dc57`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 3.7 MB (3681949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afea256cda865a09b494d19686ad77da823bccb11c08208311e18c29f3e489b9`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:27fd5e4669a47727d3e73fbf3f1078a25165b71651ab388289f1784206889d5d`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:086dc2d708e845fb0ebc7636a1cd22a36b8fdfb0e0110ae8faf40c295b57e1de`  
-		Last Modified: Mon, 22 Jun 2026 20:01:43 GMT  
+	-	`sha256:07711533981f0bbfe33ecd269cf3ab528baebd3cac8b830512c2f12fa35eed2f`  
+		Last Modified: Thu, 17 Sep 2026 21:47:25 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:alpine` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:f15bbb0a9359d50787758806b2a8386860f349b17ee8a16eb7bdd5ef244c0ef5
+$ docker pull liquibase@sha256:f197561e3dabbed13e0de504a0cf4e477461da96688e1b0fcd31463d86c9325f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **363.6 KB (363566 bytes)**  
+-	Total Size: **364.9 KB (364858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f17d640c725627af296b4b0f9f894bb491667aadf2b70eba6b5de6ff134ddf`
+-	Image ID: `sha256:f964d3114dc2275c4707389a2beb9830d761933d5d3d0b538c2570018afd748f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a122d75c777219ec4376fb4f372cace532c9b3fc73b7bd4a5392c0ef45e39e10`  
-		Last Modified: Mon, 22 Jun 2026 20:01:42 GMT  
-		Size: 341.9 KB (341908 bytes)  
+	-	`sha256:6b9744abf6c114fde49033d90dbe7db40397dc073c193d110290779cf73d96c0`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 343.2 KB (343201 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:38d89e5eec10e43f5123173c7848bf95f8f292155023c824db40bf24f6354e92`  
-		Last Modified: Mon, 22 Jun 2026 20:01:41 GMT  
-		Size: 21.7 KB (21658 bytes)  
+	-	`sha256:d3f76e46085aaee9c118a6a739565ac312bab2807703a00ba0cbc8124e63791b`  
+		Last Modified: Thu, 17 Sep 2026 21:47:24 GMT  
+		Size: 21.7 KB (21657 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `liquibase:alpine` - linux; arm64 variant v8
