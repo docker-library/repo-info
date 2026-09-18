@@ -1,7 +1,7 @@
 ## `erlang:24-alpine`
 
 ```console
-$ docker pull erlang@sha256:eb1179db8bc8798f838d35d476aeb3842d31954d8d1025063e577a8e80fb12e5
+$ docker pull erlang@sha256:f93ae1fb542ae86c24ad843d5c13f17c4855bb1f30823ab0226b3545d0f14b6e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -201,60 +201,60 @@ $ docker pull erlang@sha256:6a1b5c0cccb365447587a6820086c508a57f8cfec24f84a89b7f
 ### `erlang:24-alpine` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:4de9d427f7aac4ee1945b4ef1575404cbca3727e1a32ff0452358902cb6c0e07
+$ docker pull erlang@sha256:b8fa192f34de8351996e5473b2557413e85bd1afdf2167aa8202a4b8ec75af16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.0 MB (47986025 bytes)**  
+-	Total Size: **48.0 MB (47995189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7efaa26af4882ea0d87042f4329a108c69a0118015fc6cbb7e3c142ebc58a3e3`
+-	Image ID: `sha256:6c38c8417d84f046e8fd6e3e41ecaa8b407d3348b3f6e963bd62a029aacd943d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:20:21 GMT
-ADD alpine-minirootfs-3.22.5-x86.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:20:21 GMT
+# Thu, 17 Sep 2026 20:37:39 GMT
+ADD alpine-minirootfs-3.22.6-x86.tar.gz / # buildkit
+# Thu, 17 Sep 2026 20:37:39 GMT
 CMD ["/bin/sh"]
-# Tue, 28 Jul 2026 20:59:12 GMT
+# Thu, 17 Sep 2026 21:37:28 GMT
 ENV OTP_VERSION=24.3.4.17 REBAR3_VERSION=3.23.0
-# Tue, 28 Jul 2026 20:59:12 GMT
+# Thu, 17 Sep 2026 21:37:28 GMT
 LABEL org.opencontainers.image.version=24.3.4.17
-# Tue, 28 Jul 2026 20:59:12 GMT
+# Thu, 17 Sep 2026 21:37:28 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="35f88a3af4d4885c5c17bcb8611da2d19f0626faa277392cd39c445254c015a2" 	&& REBAR3_DOWNLOAD_SHA256="00646b692762ffd340560e8f16486dbda840e1546749ee5a7f58feeb77e7b516" 	&& apk add --no-cache --virtual .fetch-deps 		curl 		ca-certificates 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& apk add --no-cache --virtual .build-deps 		dpkg-dev dpkg 		gcc 		g++ 		libc-dev 		linux-headers 		make 		autoconf 		ncurses-dev 		openssl-dev 		unixodbc-dev 		lksctp-tools-dev 		tar 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(getconf _NPROCESSORS_ONLN) 	  && make install ) 	&& rm -rf $ERL_TOP 	&& find /usr/local -regex '/usr/local/lib/erlang/\(lib/\|erts-\).*/\(man\|doc\|obj\|c_src\|emacs\|info\|examples\)' | xargs rm -rf 	&& { find /usr/local -name src | xargs -r find | grep -v '\.hrl$' | xargs rm -v || true; } 	&& { find /usr/local -name src | xargs -r find | xargs rmdir -vp || true; } 	&& scanelf --nobanner -E ET_EXEC -BF '%F' --recursive /usr/local | xargs -r strip --strip-all 	&& scanelf --nobanner -E ET_DYN -BF '%F' --recursive /usr/local | xargs -r strip --strip-unneeded 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "${REBAR3_DOWNLOAD_SHA256}  rebar3-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/rebar3-src 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apk add --virtual .erlang-rundeps 		$runDeps 		lksctp-tools 		ca-certificates 	&& apk del .fetch-deps .build-deps # buildkit
-# Tue, 28 Jul 2026 20:59:12 GMT
+# Thu, 17 Sep 2026 21:37:28 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:a4b74ab0c43260cc6600b37d5a1ed742d904bba03625caa74b18e45744cde3d1`  
-		Last Modified: Mon, 22 Jun 2026 12:03:14 GMT  
-		Size: 3.6 MB (3605660 bytes)  
+	-	`sha256:f56d7d6b5127bf94712804c40576a43c05306e0ba46acd3d9a97bc381db4ca02`  
+		Last Modified: Thu, 17 Sep 2026 20:37:44 GMT  
+		Size: 3.6 MB (3609299 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:252b73362ba543710a96f064303607f33243de857cfee0acb4dcd1428a8aed04`  
-		Last Modified: Tue, 28 Jul 2026 20:59:20 GMT  
-		Size: 44.4 MB (44380365 bytes)  
+	-	`sha256:af9b200518c669b44c4ceb16b8da57a9e3f9d09b72c4b31e03ec3f0356b4013b`  
+		Last Modified: Thu, 17 Sep 2026 21:37:36 GMT  
+		Size: 44.4 MB (44385890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:24-alpine` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:094cd080ecaa669409ef5dac27c670c6ab17c9dea2544ba2d13fbd32bbf13dd8
+$ docker pull erlang@sha256:12ee7206eaa711a128b989466bd095500909055e77215120458e4d3349d54f1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.4 KB (272401 bytes)**  
+-	Total Size: **273.7 KB (273694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba2860e5af24a00b1e96e37196df81f5a547cd33037b82219b06d5bc28564166`
+-	Image ID: `sha256:78d922b0839a7f4696f2dbc576cb7199353a180a0beac164de2e5997a197475a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b447d8bfc2e98b06acbe55e6b8472cbfd81b4b8beaf41b06f15c3e40d6d4b1cc`  
-		Last Modified: Tue, 28 Jul 2026 20:59:19 GMT  
-		Size: 257.4 KB (257404 bytes)  
+	-	`sha256:cabc14f6449d5814171bc226b817273b743ffff272c89395023c6c524d22b29d`  
+		Last Modified: Thu, 17 Sep 2026 21:37:35 GMT  
+		Size: 258.7 KB (258697 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7f791fbb71b1a8e1f5b98a7d6ea4a5e38e3efad8566e84b886084cfe563250e`  
-		Last Modified: Tue, 28 Jul 2026 20:59:19 GMT  
+	-	`sha256:ad8a7d02dd0cd2705a9e2dfb98676f69a4218eb20868d5517d78b02069ce3730`  
+		Last Modified: Thu, 17 Sep 2026 21:37:35 GMT  
 		Size: 15.0 KB (14997 bytes)  
 		MIME: application/vnd.in-toto+json
