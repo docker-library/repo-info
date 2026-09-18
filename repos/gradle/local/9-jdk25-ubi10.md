@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c70da26667f9335b57e89fb7faea86019be02bd0b81848fb2e9551763eea23a`
-- Created: `2026-09-09T23:12:18.848697391Z`
-- Virtual Size: ~ 741.58 Mb  
+- Image ID: `sha256:a1937aee6cd3b2584261677f79d437d18202b6af8217738319d76477fbe71e02`
+- Created: `2026-09-15T23:13:55.794616744Z`
+- Virtual Size: ~ 741.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=9.7.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-09T08:04:26Z`
+  - `build-date=2026-09-15T07:20:44Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-09T08:04:26Z`
-  - `org.opencontainers.image.revision=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
-  - `release=1788940913`
+  - `org.opencontainers.image.created=2026-09-15T07:20:44Z`
+  - `org.opencontainers.image.revision=c25cacc858803712e72276693173f29b561e6f08`
+  - `release=1789456728`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=6f0a7fe9019ce54888ba398cc0415651fcba8b7a`
+  - `vcs-ref=c25cacc858803712e72276693173f29b561e6f08`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -663,12 +663,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/sou
 
 Licenses (from `rpm --query`): BSD-3-Clause AND ISC AND LicenseRef-Fedora-Public-Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libevent-2.1.12-16.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.12-16.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
 
@@ -1397,12 +1392,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/source/SRPMS/Packages/r/rsyslog-8.2510.0-5.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `sed-4.9-5.el10.x86_64`
 
