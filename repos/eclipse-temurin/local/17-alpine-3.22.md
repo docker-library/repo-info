@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85c9f1cc5ddff39fa1e73cdd99e13caf73eab21ad98deef40d572225da93fbd2`
-- Created: `2026-08-21T18:23:46.837561291Z`
-- Virtual Size: ~ 335.36 Mb  
+- Image ID: `sha256:bbcee28c590484470f7ee1ec19e019e3cd5a287b46d01985db189eb82609950a`
+- Created: `2026-09-17T21:40:47.297382256Z`
+- Virtual Size: ~ 335.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -90,16 +90,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.5-r0 description:
+alpine-release-3.22.6-r0 description:
 Alpine release data
 
-alpine-release-3.22.5-r0 webpage:
+alpine-release-3.22.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.5-r0 installed size:
+alpine-release-3.22.6-r0 installed size:
 343 B
 
-alpine-release-3.22.5-r0 license:
+alpine-release-3.22.6-r0 license:
 MIT
 
 ```
@@ -107,16 +107,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.10-r0 description:
+apk-tools-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.10-r0 webpage:
+apk-tools-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.10-r0 installed size:
+apk-tools-2.14.12-r0 installed size:
 68 KiB
 
-apk-tools-2.14.10-r0 license:
+apk-tools-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260611-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260611-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260611-r0 installed size:
-207 KiB
+ca-certificates-20260909-r0 installed size:
+210 KiB
 
-ca-certificates-20260611-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -209,16 +209,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -617,16 +617,16 @@ MIT
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.10-r0 description:
+libapk2-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.10-r0 webpage:
+libapk2-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.10-r0 installed size:
+libapk2-2.14.12-r0 installed size:
 179 KiB
 
-libapk2-2.14.10-r0 license:
+libapk2-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -685,16 +685,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5099 KiB
+libcrypto3-3.5.8-r0 installed size:
+5103 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -702,16 +702,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
+libexpat-2.8.4-r0 installed size:
 133 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -923,16 +923,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 823 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1127,16 +1127,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.7-r0 description:
+openssl-3.5.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.7-r0 webpage:
+openssl-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.7-r0 installed size:
+openssl-3.5.8-r0 installed size:
 801 KiB
 
-openssl-3.5.7-r0 license:
+openssl-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -1263,16 +1263,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026c-r0 description:
+tzdata-2026d-r0 description:
 Timezone data
 
-tzdata-2026c-r0 webpage:
+tzdata-2026d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026c-r0 installed size:
-433 KiB
+tzdata-2026d-r0 installed size:
+441 KiB
 
-tzdata-2026c-r0 license:
+tzdata-2026d-r0 license:
 Public-Domain
 
 ```

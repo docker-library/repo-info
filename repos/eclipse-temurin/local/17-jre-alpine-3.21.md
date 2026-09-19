@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee82523e0741a454c616b0a664c15fde025b39a78514421ac0c9dffc586be4a9`
-- Created: `2026-08-21T18:24:16.834801703Z`
-- Virtual Size: ~ 181.93 Mb  
+- Image ID: `sha256:28612a78922e9fbe5f47d4408927abc09af2498d724ed4448ada2838ebd1b05d`
+- Created: `2026-09-17T21:40:52.050808006Z`
+- Virtual Size: ~ 181.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -89,16 +89,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.7-r0 description:
+alpine-release-3.21.8-r0 description:
 Alpine release data
 
-alpine-release-3.21.7-r0 webpage:
+alpine-release-3.21.8-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.7-r0 installed size:
+alpine-release-3.21.8-r0 installed size:
 346 B
 
-alpine-release-3.21.7-r0 license:
+alpine-release-3.21.8-r0 license:
 MIT
 
 ```
@@ -174,16 +174,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260909-r0 installed size:
+210 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -191,16 +191,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -633,16 +633,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.7-r0 description:
+libcrypto3-3.3.7-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.7-r0 webpage:
+libcrypto3-3.3.7-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.7-r0 installed size:
+libcrypto3-3.3.7-r1 installed size:
 4611 KiB
 
-libcrypto3-3.3.7-r0 license:
+libcrypto3-3.3.7-r1 license:
 Apache-2.0
 
 ```
@@ -650,16 +650,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
+libexpat-2.8.4-r0 installed size:
 133 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -854,16 +854,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.7-r0 description:
+libssl3-3.3.7-r1 description:
 SSL shared libraries
 
-libssl3-3.3.7-r0 webpage:
+libssl3-3.3.7-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.7-r0 installed size:
+libssl3-3.3.7-r1 installed size:
 779 KiB
 
-libssl3-3.3.7-r0 license:
+libssl3-3.3.7-r1 license:
 Apache-2.0
 
 ```
@@ -1041,16 +1041,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.7-r0 description:
+openssl-3.3.7-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.7-r0 webpage:
+openssl-3.3.7-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.7-r0 installed size:
+openssl-3.3.7-r1 installed size:
 769 KiB
 
-openssl-3.3.7-r0 license:
+openssl-3.3.7-r1 license:
 Apache-2.0
 
 ```
@@ -1177,16 +1177,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026c-r0 description:
+tzdata-2026d-r0 description:
 Timezone data
 
-tzdata-2026c-r0 webpage:
+tzdata-2026d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026c-r0 installed size:
-433 KiB
+tzdata-2026d-r0 installed size:
+441 KiB
 
-tzdata-2026c-r0 license:
+tzdata-2026d-r0 license:
 Public-Domain
 
 ```
