@@ -1,17 +1,17 @@
-# `nats:2.14.7-alpine3.22`
+# `nats:2.15.0-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:06f23e459ec3092d97b3252d7047ecd44060a89d09363ec8b348bfe2b0d03df7`
-- Created: `2026-09-15T22:48:24.697045439Z`
-- Virtual Size: ~ 27.4 Mb  
+- Image ID: `sha256:1fba79b99cb8c01be0a0b9d85cc90fa648f79c1d1d4ab4d56c753874e4c19bd7`
+- Created: `2026-09-17T21:16:37.445095263Z`
+- Virtual Size: ~ 27.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.14.7`
+  - `NATS_SERVER=2.15.0`
 - Labels:
   - `org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system.`
   - `org.opencontainers.image.documentation=https://docs.nats.io`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=NATS Server`
   - `org.opencontainers.image.url=https://nats.io`
   - `org.opencontainers.image.vendor=NATS.io`
-  - `org.opencontainers.image.version=2.14.7`
+  - `org.opencontainers.image.version=2.15.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -78,16 +78,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.5-r0 description:
+alpine-release-3.22.6-r0 description:
 Alpine release data
 
-alpine-release-3.22.5-r0 webpage:
+alpine-release-3.22.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.5-r0 installed size:
+alpine-release-3.22.6-r0 installed size:
 343 B
 
-alpine-release-3.22.5-r0 license:
+alpine-release-3.22.6-r0 license:
 MIT
 
 ```
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.10-r0 description:
+apk-tools-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.10-r0 webpage:
+apk-tools-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.10-r0 installed size:
+apk-tools-2.14.12-r0 installed size:
 68 KiB
 
-apk-tools-2.14.10-r0 license:
+apk-tools-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -146,16 +146,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260611-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260611-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260611-r0 installed size:
-207 KiB
+ca-certificates-20260909-r0 installed size:
+210 KiB
 
-ca-certificates-20260611-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -163,16 +163,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -180,16 +180,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.10-r0 description:
+libapk2-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.10-r0 webpage:
+libapk2-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.10-r0 installed size:
+libapk2-2.14.12-r0 installed size:
 179 KiB
 
-libapk2-2.14.10-r0 license:
+libapk2-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -197,16 +197,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5099 KiB
+libcrypto3-3.5.8-r0 installed size:
+5103 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -214,16 +214,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 823 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
