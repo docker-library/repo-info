@@ -1,7 +1,7 @@
 ## `swift:rhel-ubi9-slim`
 
 ```console
-$ docker pull swift@sha256:550e145da0264df633d76ee33b92440706da3f67da63ca5ee52e9f84bdae8449
+$ docker pull swift@sha256:da5136210fc8ab646eec60fe67b57ff106afe58967ac14976725cbe5e8120995
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull swift@sha256:550e145da0264df633d76ee33b92440706da3f67da63ca5ee52e9
 ### `swift:rhel-ubi9-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0dff8e1e07f59ad4891dc246ca0c7d254017b0a004518ca06b4cce0e7c97d983
+$ docker pull swift@sha256:ed5bd5d216cf583e67b2ee324d0dad82d39542bb4841ea1568a46b94c8da0d03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.8 MB (138848110 bytes)**  
+-	Total Size: **140.3 MB (140308999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c61ac2fe0dd37cbd5303b9af204a653985f656ac6a045d56e35124a14bed6ea`
+-	Image ID: `sha256:ce5e1340de537be3c1dc875fce98c1352f4e1f1be5c1d61b158d229eb9cc9d2c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -58,24 +58,24 @@ COPY dir:4c18b02d085cbf8444985104fdbe68445959b50c254aa9aab20a2cf2b86c84b9 in /us
 COPY dir:4c18b02d085cbf8444985104fdbe68445959b50c254aa9aab20a2cf2b86c84b9 in /root/buildinfo/      
 # Wed, 16 Sep 2026 09:52:57 GMT
 LABEL "org.opencontainers.image.created"="2026-09-16T09:52:32Z" "org.opencontainers.image.revision"="2fd8738ecb2f0fb14d41b5138c446e13b1be5682" "build-date"="2026-09-16T09:52:32Z" "architecture"="x86_64" "vcs-ref"="2fd8738ecb2f0fb14d41b5138c446e13b1be5682" "vcs-type"="git" "release"="1789552280"org.opencontainers.image.created=2026-09-16T09:52:32Z,org.opencontainers.image.revision=2fd8738ecb2f0fb14d41b5138c446e13b1be5682
-# Thu, 17 Sep 2026 18:57:38 GMT
+# Fri, 18 Sep 2026 23:50:40 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Thu, 17 Sep 2026 18:57:38 GMT
+# Fri, 18 Sep 2026 23:50:40 GMT
 LABEL description=Docker Container for the Swift programming language
-# Thu, 17 Sep 2026 18:57:38 GMT
+# Fri, 18 Sep 2026 23:50:40 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Thu, 17 Sep 2026 18:57:38 GMT
+# Fri, 18 Sep 2026 23:50:40 GMT
 ARG SWIFT_PLATFORM=ubi9
-# Thu, 17 Sep 2026 18:57:38 GMT
-ARG SWIFT_BRANCH=swift-6.3.3-release
-# Thu, 17 Sep 2026 18:57:38 GMT
-ARG SWIFT_VERSION=swift-6.3.3-RELEASE
-# Thu, 17 Sep 2026 18:57:38 GMT
+# Fri, 18 Sep 2026 23:50:40 GMT
+ARG SWIFT_BRANCH=swift-6.4.0-release
+# Fri, 18 Sep 2026 23:50:40 GMT
+ARG SWIFT_VERSION=swift-6.4.0-RELEASE
+# Fri, 18 Sep 2026 23:50:40 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Thu, 17 Sep 2026 18:57:38 GMT
-ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.3.3-release SWIFT_VERSION=swift-6.3.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Thu, 17 Sep 2026 18:57:38 GMT
-# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.3.3-release SWIFT_VERSION=swift-6.3.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 18 Sep 2026 23:50:40 GMT
+ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.4.0-release SWIFT_VERSION=swift-6.4.0-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 18 Sep 2026 23:50:40 GMT
+# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.4.0-release SWIFT_VERSION=swift-6.4.0-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && yum -y install tar gzip     && tar -xzf swift.tar.gz --directory / --strip-components=1         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/lib/swift/linux         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/libexec/swift/linux     && chmod -R o+r /usr/lib/swift /usr/libexec/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz # buildkit
 ```
 
@@ -84,45 +84,45 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Last Modified: Wed, 16 Sep 2026 11:07:09 GMT  
 		Size: 80.5 MB (80454149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a69f52b758a576cf50bb660b2c7d948d6f8d0e7707d413351f69b53419b8b0`  
-		Last Modified: Thu, 17 Sep 2026 18:57:54 GMT  
-		Size: 58.4 MB (58393961 bytes)  
+	-	`sha256:218d83a7eaaa76476b8af9b599502c76c3a56d401e0968ae1aaca80a2ab1bc8a`  
+		Last Modified: Fri, 18 Sep 2026 23:50:55 GMT  
+		Size: 59.9 MB (59854850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:627c96309d27a4c6fe7a657ab521d062418155b7084ef2aa5fde837e2f8dc9a2
+$ docker pull swift@sha256:68eecafdb089c7fe9f6c6a0e16a100a2adf38f4be196ce7fda7b0ec8c1d8fef7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6420079 bytes)**  
+-	Total Size: **6.4 MB (6420077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78ebdf4ee77b6f79340b5d5b9637df0210224d8c1b5ff48f91797502648230b8`
+-	Image ID: `sha256:33624074712802b7408c03840db1f691aeaf7b4a3df6a989f768681a910daad2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:02f42fc943191ab01e2dcfd34cabae7799173c37fdee66456a0854bebc904d84`  
-		Last Modified: Thu, 17 Sep 2026 18:57:51 GMT  
+	-	`sha256:4e62ddd0a3e8c4e4c1639f2f1fc5615a244c332819166d6823947f4895860cf6`  
+		Last Modified: Fri, 18 Sep 2026 23:50:54 GMT  
 		Size: 6.4 MB (6408611 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cb787424bd916d48986a4f2f9b0043a8ee7dd2401701d39115c4930a379f238b`  
-		Last Modified: Thu, 17 Sep 2026 18:57:51 GMT  
-		Size: 11.5 KB (11468 bytes)  
+	-	`sha256:14d5a3d5ffbf05c06bf1ed5283af13e56edab63981c83abfbfc99534ce70cd49`  
+		Last Modified: Fri, 18 Sep 2026 23:50:54 GMT  
+		Size: 11.5 KB (11466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:rhel-ubi9-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:cd812d410478d0dec9a27e189a8d927cfb9a9f8a284b4fa96d01a6eab942b992
+$ docker pull swift@sha256:3099126ccf361424c91b3bf367e25e64cbfa5c57c3a4e05a8f14a3a057abbaf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.8 MB (134765366 bytes)**  
+-	Total Size: **136.2 MB (136215239 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c71f350ba4c02a4012d0673d73840fbbc338c23124c84c9a6af534a9b382aac`
+-	Image ID: `sha256:98e0c80091fa9990ec470b92ca8642dd63a4d2147f1a8bc85d0aeb2e6d915aeb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -160,24 +160,24 @@ COPY dir:72e6137cdb11a467c56059870b644da24803e393282908ef33611c5d677c5780 in /us
 COPY dir:72e6137cdb11a467c56059870b644da24803e393282908ef33611c5d677c5780 in /root/buildinfo/      
 # Wed, 16 Sep 2026 09:54:59 GMT
 LABEL "org.opencontainers.image.created"="2026-09-16T09:54:25Z" "org.opencontainers.image.revision"="2fd8738ecb2f0fb14d41b5138c446e13b1be5682" "build-date"="2026-09-16T09:54:25Z" "architecture"="aarch64" "vcs-ref"="2fd8738ecb2f0fb14d41b5138c446e13b1be5682" "vcs-type"="git" "release"="1789552280"org.opencontainers.image.created=2026-09-16T09:54:25Z,org.opencontainers.image.revision=2fd8738ecb2f0fb14d41b5138c446e13b1be5682
-# Thu, 17 Sep 2026 18:56:58 GMT
+# Fri, 18 Sep 2026 23:50:31 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Thu, 17 Sep 2026 18:56:58 GMT
+# Fri, 18 Sep 2026 23:50:31 GMT
 LABEL description=Docker Container for the Swift programming language
-# Thu, 17 Sep 2026 18:56:58 GMT
+# Fri, 18 Sep 2026 23:50:31 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Thu, 17 Sep 2026 18:56:58 GMT
+# Fri, 18 Sep 2026 23:50:31 GMT
 ARG SWIFT_PLATFORM=ubi9
-# Thu, 17 Sep 2026 18:56:58 GMT
-ARG SWIFT_BRANCH=swift-6.3.3-release
-# Thu, 17 Sep 2026 18:56:58 GMT
-ARG SWIFT_VERSION=swift-6.3.3-RELEASE
-# Thu, 17 Sep 2026 18:56:58 GMT
+# Fri, 18 Sep 2026 23:50:31 GMT
+ARG SWIFT_BRANCH=swift-6.4.0-release
+# Fri, 18 Sep 2026 23:50:31 GMT
+ARG SWIFT_VERSION=swift-6.4.0-RELEASE
+# Fri, 18 Sep 2026 23:50:31 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Thu, 17 Sep 2026 18:56:58 GMT
-ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.3.3-release SWIFT_VERSION=swift-6.3.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Thu, 17 Sep 2026 18:56:58 GMT
-# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.3.3-release SWIFT_VERSION=swift-6.3.3-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 18 Sep 2026 23:50:31 GMT
+ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.4.0-release SWIFT_VERSION=swift-6.4.0-RELEASE SWIFT_WEBROOT=https://download.swift.org
+# Fri, 18 Sep 2026 23:50:31 GMT
+# ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubi9 SWIFT_BRANCH=swift-6.4.0-release SWIFT_VERSION=swift-6.4.0-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH_NAME##*-}" in         'x86_64')             OS_ARCH_SUFFIX='';             ;;         'aarch64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && yum -y install tar gzip     && tar -xzf swift.tar.gz --directory / --strip-components=1         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/lib/swift/linux         $SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX/usr/libexec/swift/linux     && chmod -R o+r /usr/lib/swift /usr/libexec/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz # buildkit
 ```
 
@@ -186,31 +186,31 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Last Modified: Wed, 16 Sep 2026 10:52:27 GMT  
 		Size: 78.2 MB (78154346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7823a1678ce834a0bc6170a96f810a70d77bcc60823b0d310c2fcd2551eca9`  
-		Last Modified: Thu, 17 Sep 2026 18:57:15 GMT  
-		Size: 56.6 MB (56611020 bytes)  
+	-	`sha256:dcd2c8b9a44992278c0ce22ad8821f62c51064077c741a710a95a6942f1e0b78`  
+		Last Modified: Fri, 18 Sep 2026 23:50:47 GMT  
+		Size: 58.1 MB (58060893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:rhel-ubi9-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:ef6b2fb6b66dee6ea9f52cdaede3a8d21800c18e1129b4f2a97853952321cdf1
+$ docker pull swift@sha256:1f0f6628b67cc248a498e17c4153105048948a78ac41c41a21417a96042e8a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6415963 bytes)**  
+-	Total Size: **6.4 MB (6415964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aac453bcb91db3e4c90ff1b87bfacade97a923a05d6d1327036cddd401ba58f`
+-	Image ID: `sha256:94a064fb93bb32aa663ac02c5df07b93c1381b92e54aeee9c50eca89d2647552`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:96d48904ccf2afddaa9e86c1ab09861484f3142e40cf668a38c605d18de4ff3e`  
-		Last Modified: Thu, 17 Sep 2026 18:57:13 GMT  
+	-	`sha256:31591058757bf4388f5b7cb73ff0154aa3053263a843ad77aba16eec48743fa8`  
+		Last Modified: Fri, 18 Sep 2026 23:50:45 GMT  
 		Size: 6.4 MB (6404410 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:49e3ec82fd9c054251aad56b7241ca8e0c4ed823ce46dd7f02215f70e0c8125c`  
-		Last Modified: Thu, 17 Sep 2026 18:57:12 GMT  
-		Size: 11.6 KB (11553 bytes)  
+	-	`sha256:78581acb97d45132b0d4d716d947e39a4ca4f2f6d15f0792461786155e28ff7c`  
+		Last Modified: Fri, 18 Sep 2026 23:50:45 GMT  
+		Size: 11.6 KB (11554 bytes)  
 		MIME: application/vnd.in-toto+json
