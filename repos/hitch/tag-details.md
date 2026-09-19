@@ -11,7 +11,7 @@
 ## `hitch:1`
 
 ```console
-$ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef46151766711
+$ docker pull hitch@sha256:d7c88419b6a7e413ee301ced652ee2ad4f1314052f03b50ad71b8759aaaec75f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28,247 +28,247 @@ $ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef
 ### `hitch:1` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:b1c124bd34f056fe47a117246bf780ccdfe3122730d968e86f3798a30ace5415
+$ docker pull hitch@sha256:037ebb312816d1ed35af11ad6b60a0067750b2bb7deee8df9f730a447a33e22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32270672 bytes)**  
+-	Total Size: **32.3 MB (32276517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7494a0493d6ae9a3047694ade8b1ef67efe7f53380231877cfcde4b763225832`
+-	Image ID: `sha256:066643e5570599d3ff033e0d54430e6dd9eb1978e471b2d9c58f395bec9f8d64`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a8ac7f6c67abc236e4c745052c404112b8fab6fe8ac3a329d1ef3b867ad67c71`  
-		Last Modified: Mon, 24 Aug 2026 23:20:26 GMT  
-		Size: 28.2 MB (28232655 bytes)  
+	-	`sha256:774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150`  
+		Last Modified: Sat, 19 Sep 2026 00:03:16 GMT  
+		Size: 28.2 MB (28238443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b73537a206640006845c29e04ff5c4b435cac6f1f33efc9c352068264cf2f`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 4.0 MB (4037570 bytes)  
+	-	`sha256:995859b6a5d95d5066de9c30b35e270a1f8b0d9013232038954df1dcf3c05906`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 4.0 MB (4037630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717c316c03b32a7f61361377bb8ad13f71ef8915c8f3745473d759c47652c20b`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 415.0 B  
+	-	`sha256:dd9cc1712cae08d80e3c61750acbecebf9c9523b13bcdf5ec9fbdb977a9d46ba`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:8504ffc58824f972a47dade7dfc8ca56942b0bd353d26e90069ee1d7505883d4
+$ docker pull hitch@sha256:51ce6516530b3ee5f5aa71ca042dedfbfc65980e0f18e68ba3c4cc54fd9c0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550212 bytes)**  
+-	Total Size: **2.6 MB (2550248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0055ba9924dd29ed0b3b92ed95d1dd319c794a2cc00431778bfe99f70d01eaa9`
+-	Image ID: `sha256:ef86789b9b1ab6bb68ffa42f183a1a06080c9908a09b16eb5452d86ad6b22287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0dca915fa64bc12641989cd303b09d750eaa0931832d7b0ccfc0794e8aeca0`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 2.5 MB (2536630 bytes)  
+	-	`sha256:53f21c95fa3e33c7da6b387d7a90d5b8df9f3d584d747546b7e2f93e598efed9`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 2.5 MB (2536666 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ad1fafcf501a76f9b7f9abe26aa0fbd1b853378756008c147eeaac9a52d41`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
+	-	`sha256:98c7eec242c85e7e086d14395a63a3d2a00a0b07d08c4a2b1935ebd1099105e2`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
 		Size: 13.6 KB (13582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:df5ff5149394e85465c86de954ee4a93e977b176f9aea5f5d8695a5a99c18761
+$ docker pull hitch@sha256:345c5035adcd3b78265b79abe6b4604fced9c4db23d59f8e3a5d5ac6afa0e263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27346398 bytes)**  
+-	Total Size: **27.3 MB (27349685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbfa4b5dd477aada9bc919435fde5fdd472775dd150e403ed00c9d6a4c1f3f84`
+-	Image ID: `sha256:9c266f0d88c6f52eebec12fda2cf06e8a304d582f3737256841b8f2a9cf1fd96`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:441f33fd84d954d91728ce045d0358ca0600c55299770b0eba913196956f53f1`  
-		Last Modified: Mon, 24 Aug 2026 23:20:27 GMT  
-		Size: 23.9 MB (23939844 bytes)  
+	-	`sha256:0f3351a6d282c9993e318db2f90ca23ba75e8f5e94bfff11cad56d85c2a630d2`  
+		Last Modified: Sat, 19 Sep 2026 00:02:48 GMT  
+		Size: 23.9 MB (23943116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc8b6b6c06d3d7aaa25c24b8910db97dedb6966910cca3fe7efcbe7cedccaf2`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 3.4 MB (3406109 bytes)  
+	-	`sha256:f425a78e75e8304e83ec422d3d1f872f87dfd73addd39a1dfd6d9d9bd80f4abf`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 3.4 MB (3406125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1ff2993ff3337234061e15550ec0177ab3e7f992667cbe1315d49a568fff2c6`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 413.0 B  
+	-	`sha256:5bebc5019bba0028c4bf22ff83d52fb3cb241032645837ad1d391a8474e01055`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:ad8fb1adaf5081ace01c043ef13810ddc9b3f63273493d80633b0c4e56cb19d2
+$ docker pull hitch@sha256:b21ae63513bcb7f2b3dd31cb0b1da3acae8aa1223e1e499d217261807253eac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2552532 bytes)**  
+-	Total Size: **2.6 MB (2552568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92278dc6f2f64259c51302bad215f731f9fbb6a2a83babcc9c9065abaeeda33`
+-	Image ID: `sha256:7d640eeeb5db398c6fb71aa944b1ed7255a8b2003e03b7fb806c5f8cdd948ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e472f1aa808189e896ffdc86725703fe2b516e47830f96d4af6e9a12b71a509c`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 2.5 MB (2538862 bytes)  
+	-	`sha256:7c3bf02430b65451bb9f922d32d9c6b043f63a18e7e7f8dc7bff992d559d4827`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 2.5 MB (2538898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36a9fa3f1fb97fca2f4c979f3bb5a97bf9048abe59b325450ab1f2aae2c70633`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
+	-	`sha256:2a744a5c11ac60e7c07fb0ade4893a01821d118e24d64be5d6fab421c3816657`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
 		Size: 13.7 KB (13670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:061aa0bacfccc5849ee0f965b9f889ace4bef7e8d0970cbbfb10fa2cf732676e
+$ docker pull hitch@sha256:d6afde2eb8791c19ca72d69e39414299074a33d62ee580d85cc319b028efd0e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32003467 bytes)**  
+-	Total Size: **32.0 MB (32009725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e5d59fcbb035bfe530bb4962512a9e55898e1e99a2753e8143b0f410488ccc`
+-	Image ID: `sha256:5c20717769eb55874f68cd3cfb84f33d11048739ed761ecc4147e99838d96ca9`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:75782e20ea1f4a9d9259bc20a5ecbbea8d5943bf5370bf0f5727900728f1cc9a`  
-		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
-		Size: 28.1 MB (28117289 bytes)  
+	-	`sha256:333125b5cee9fb6718bdcb523fc93b4adc71b7c37ada6146a20c193430e549b9`  
+		Last Modified: Sat, 19 Sep 2026 00:03:02 GMT  
+		Size: 28.1 MB (28123680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3492952b2c75b69f248cb2df2887c145385a868e620b07f27c104abc25e89d81`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 3.9 MB (3885732 bytes)  
+	-	`sha256:6f1bbd946214e038ba3d4d7d8e8a2be4d75cf6144dffa3b2c87030d328bd9fdc`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 3.9 MB (3885601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:646ce38cc10f6cb345a828ba0a736c130dbde768707b765b934ef78004e0c547`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 414.0 B  
+	-	`sha256:1093b6039f0b04736154880e7dbcae8995d44e4248f710fa4ee0fe718fa14b08`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:60b3d60e3fa66d15baee13e8f6e52a0fcc2f8792c4822a99714178443cd9e84a
+$ docker pull hitch@sha256:712ceccec9e97e2f4f73ff9ea513ddbae2f425398824d719a653e5e6a7787c9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550598 bytes)**  
+-	Total Size: **2.6 MB (2550632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57e4213fe63f817d5f53497e66d1be7d83c77e14fe33beb59719fbf0bfc3bf3f`
+-	Image ID: `sha256:6e9aace060ca8fb0d04d3cb5845055d8933f140489e5fac169b93ed7a46d4ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:beef97747d55a7e3093c98a65c5e2c36d210a301365237f4206904b4f8c7eb46`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 2.5 MB (2536900 bytes)  
+	-	`sha256:427230ff42246d62781b9a6965e27fb4082584ef0740c6edbf0acf375a5a5e72`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 2.5 MB (2536936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5295641b17f247abcc279eb806aa3f698e820dd93f27c93f2d9ca3f25373b303`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 13.7 KB (13698 bytes)  
+	-	`sha256:f4a52423a9cd0b236223fcecccb6622b06b44c5aa9d440dbc7605eec620c2789`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 13.7 KB (13696 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1` - linux; 386
@@ -356,7 +356,7 @@ $ docker pull hitch@sha256:ff4f936e54dd29f8ac5aa91f441bd2788c12dbf0af29e2e07f774
 ## `hitch:1.8`
 
 ```console
-$ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef46151766711
+$ docker pull hitch@sha256:d7c88419b6a7e413ee301ced652ee2ad4f1314052f03b50ad71b8759aaaec75f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -373,247 +373,247 @@ $ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef
 ### `hitch:1.8` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:b1c124bd34f056fe47a117246bf780ccdfe3122730d968e86f3798a30ace5415
+$ docker pull hitch@sha256:037ebb312816d1ed35af11ad6b60a0067750b2bb7deee8df9f730a447a33e22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32270672 bytes)**  
+-	Total Size: **32.3 MB (32276517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7494a0493d6ae9a3047694ade8b1ef67efe7f53380231877cfcde4b763225832`
+-	Image ID: `sha256:066643e5570599d3ff033e0d54430e6dd9eb1978e471b2d9c58f395bec9f8d64`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a8ac7f6c67abc236e4c745052c404112b8fab6fe8ac3a329d1ef3b867ad67c71`  
-		Last Modified: Mon, 24 Aug 2026 23:20:26 GMT  
-		Size: 28.2 MB (28232655 bytes)  
+	-	`sha256:774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150`  
+		Last Modified: Sat, 19 Sep 2026 00:03:16 GMT  
+		Size: 28.2 MB (28238443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b73537a206640006845c29e04ff5c4b435cac6f1f33efc9c352068264cf2f`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 4.0 MB (4037570 bytes)  
+	-	`sha256:995859b6a5d95d5066de9c30b35e270a1f8b0d9013232038954df1dcf3c05906`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 4.0 MB (4037630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717c316c03b32a7f61361377bb8ad13f71ef8915c8f3745473d759c47652c20b`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 415.0 B  
+	-	`sha256:dd9cc1712cae08d80e3c61750acbecebf9c9523b13bcdf5ec9fbdb977a9d46ba`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:8504ffc58824f972a47dade7dfc8ca56942b0bd353d26e90069ee1d7505883d4
+$ docker pull hitch@sha256:51ce6516530b3ee5f5aa71ca042dedfbfc65980e0f18e68ba3c4cc54fd9c0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550212 bytes)**  
+-	Total Size: **2.6 MB (2550248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0055ba9924dd29ed0b3b92ed95d1dd319c794a2cc00431778bfe99f70d01eaa9`
+-	Image ID: `sha256:ef86789b9b1ab6bb68ffa42f183a1a06080c9908a09b16eb5452d86ad6b22287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0dca915fa64bc12641989cd303b09d750eaa0931832d7b0ccfc0794e8aeca0`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 2.5 MB (2536630 bytes)  
+	-	`sha256:53f21c95fa3e33c7da6b387d7a90d5b8df9f3d584d747546b7e2f93e598efed9`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 2.5 MB (2536666 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ad1fafcf501a76f9b7f9abe26aa0fbd1b853378756008c147eeaac9a52d41`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
+	-	`sha256:98c7eec242c85e7e086d14395a63a3d2a00a0b07d08c4a2b1935ebd1099105e2`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
 		Size: 13.6 KB (13582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:df5ff5149394e85465c86de954ee4a93e977b176f9aea5f5d8695a5a99c18761
+$ docker pull hitch@sha256:345c5035adcd3b78265b79abe6b4604fced9c4db23d59f8e3a5d5ac6afa0e263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27346398 bytes)**  
+-	Total Size: **27.3 MB (27349685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbfa4b5dd477aada9bc919435fde5fdd472775dd150e403ed00c9d6a4c1f3f84`
+-	Image ID: `sha256:9c266f0d88c6f52eebec12fda2cf06e8a304d582f3737256841b8f2a9cf1fd96`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:441f33fd84d954d91728ce045d0358ca0600c55299770b0eba913196956f53f1`  
-		Last Modified: Mon, 24 Aug 2026 23:20:27 GMT  
-		Size: 23.9 MB (23939844 bytes)  
+	-	`sha256:0f3351a6d282c9993e318db2f90ca23ba75e8f5e94bfff11cad56d85c2a630d2`  
+		Last Modified: Sat, 19 Sep 2026 00:02:48 GMT  
+		Size: 23.9 MB (23943116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc8b6b6c06d3d7aaa25c24b8910db97dedb6966910cca3fe7efcbe7cedccaf2`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 3.4 MB (3406109 bytes)  
+	-	`sha256:f425a78e75e8304e83ec422d3d1f872f87dfd73addd39a1dfd6d9d9bd80f4abf`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 3.4 MB (3406125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1ff2993ff3337234061e15550ec0177ab3e7f992667cbe1315d49a568fff2c6`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 413.0 B  
+	-	`sha256:5bebc5019bba0028c4bf22ff83d52fb3cb241032645837ad1d391a8474e01055`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:ad8fb1adaf5081ace01c043ef13810ddc9b3f63273493d80633b0c4e56cb19d2
+$ docker pull hitch@sha256:b21ae63513bcb7f2b3dd31cb0b1da3acae8aa1223e1e499d217261807253eac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2552532 bytes)**  
+-	Total Size: **2.6 MB (2552568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92278dc6f2f64259c51302bad215f731f9fbb6a2a83babcc9c9065abaeeda33`
+-	Image ID: `sha256:7d640eeeb5db398c6fb71aa944b1ed7255a8b2003e03b7fb806c5f8cdd948ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e472f1aa808189e896ffdc86725703fe2b516e47830f96d4af6e9a12b71a509c`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 2.5 MB (2538862 bytes)  
+	-	`sha256:7c3bf02430b65451bb9f922d32d9c6b043f63a18e7e7f8dc7bff992d559d4827`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 2.5 MB (2538898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36a9fa3f1fb97fca2f4c979f3bb5a97bf9048abe59b325450ab1f2aae2c70633`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
+	-	`sha256:2a744a5c11ac60e7c07fb0ade4893a01821d118e24d64be5d6fab421c3816657`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
 		Size: 13.7 KB (13670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:061aa0bacfccc5849ee0f965b9f889ace4bef7e8d0970cbbfb10fa2cf732676e
+$ docker pull hitch@sha256:d6afde2eb8791c19ca72d69e39414299074a33d62ee580d85cc319b028efd0e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32003467 bytes)**  
+-	Total Size: **32.0 MB (32009725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e5d59fcbb035bfe530bb4962512a9e55898e1e99a2753e8143b0f410488ccc`
+-	Image ID: `sha256:5c20717769eb55874f68cd3cfb84f33d11048739ed761ecc4147e99838d96ca9`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:75782e20ea1f4a9d9259bc20a5ecbbea8d5943bf5370bf0f5727900728f1cc9a`  
-		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
-		Size: 28.1 MB (28117289 bytes)  
+	-	`sha256:333125b5cee9fb6718bdcb523fc93b4adc71b7c37ada6146a20c193430e549b9`  
+		Last Modified: Sat, 19 Sep 2026 00:03:02 GMT  
+		Size: 28.1 MB (28123680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3492952b2c75b69f248cb2df2887c145385a868e620b07f27c104abc25e89d81`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 3.9 MB (3885732 bytes)  
+	-	`sha256:6f1bbd946214e038ba3d4d7d8e8a2be4d75cf6144dffa3b2c87030d328bd9fdc`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 3.9 MB (3885601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:646ce38cc10f6cb345a828ba0a736c130dbde768707b765b934ef78004e0c547`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 414.0 B  
+	-	`sha256:1093b6039f0b04736154880e7dbcae8995d44e4248f710fa4ee0fe718fa14b08`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:60b3d60e3fa66d15baee13e8f6e52a0fcc2f8792c4822a99714178443cd9e84a
+$ docker pull hitch@sha256:712ceccec9e97e2f4f73ff9ea513ddbae2f425398824d719a653e5e6a7787c9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550598 bytes)**  
+-	Total Size: **2.6 MB (2550632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57e4213fe63f817d5f53497e66d1be7d83c77e14fe33beb59719fbf0bfc3bf3f`
+-	Image ID: `sha256:6e9aace060ca8fb0d04d3cb5845055d8933f140489e5fac169b93ed7a46d4ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:beef97747d55a7e3093c98a65c5e2c36d210a301365237f4206904b4f8c7eb46`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 2.5 MB (2536900 bytes)  
+	-	`sha256:427230ff42246d62781b9a6965e27fb4082584ef0740c6edbf0acf375a5a5e72`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 2.5 MB (2536936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5295641b17f247abcc279eb806aa3f698e820dd93f27c93f2d9ca3f25373b303`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 13.7 KB (13698 bytes)  
+	-	`sha256:f4a52423a9cd0b236223fcecccb6622b06b44c5aa9d440dbc7605eec620c2789`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 13.7 KB (13696 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8` - linux; 386
@@ -701,7 +701,7 @@ $ docker pull hitch@sha256:ff4f936e54dd29f8ac5aa91f441bd2788c12dbf0af29e2e07f774
 ## `hitch:1.8.0`
 
 ```console
-$ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef46151766711
+$ docker pull hitch@sha256:d7c88419b6a7e413ee301ced652ee2ad4f1314052f03b50ad71b8759aaaec75f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -718,247 +718,247 @@ $ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef
 ### `hitch:1.8.0` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:b1c124bd34f056fe47a117246bf780ccdfe3122730d968e86f3798a30ace5415
+$ docker pull hitch@sha256:037ebb312816d1ed35af11ad6b60a0067750b2bb7deee8df9f730a447a33e22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32270672 bytes)**  
+-	Total Size: **32.3 MB (32276517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7494a0493d6ae9a3047694ade8b1ef67efe7f53380231877cfcde4b763225832`
+-	Image ID: `sha256:066643e5570599d3ff033e0d54430e6dd9eb1978e471b2d9c58f395bec9f8d64`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a8ac7f6c67abc236e4c745052c404112b8fab6fe8ac3a329d1ef3b867ad67c71`  
-		Last Modified: Mon, 24 Aug 2026 23:20:26 GMT  
-		Size: 28.2 MB (28232655 bytes)  
+	-	`sha256:774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150`  
+		Last Modified: Sat, 19 Sep 2026 00:03:16 GMT  
+		Size: 28.2 MB (28238443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b73537a206640006845c29e04ff5c4b435cac6f1f33efc9c352068264cf2f`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 4.0 MB (4037570 bytes)  
+	-	`sha256:995859b6a5d95d5066de9c30b35e270a1f8b0d9013232038954df1dcf3c05906`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 4.0 MB (4037630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717c316c03b32a7f61361377bb8ad13f71ef8915c8f3745473d759c47652c20b`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 415.0 B  
+	-	`sha256:dd9cc1712cae08d80e3c61750acbecebf9c9523b13bcdf5ec9fbdb977a9d46ba`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:8504ffc58824f972a47dade7dfc8ca56942b0bd353d26e90069ee1d7505883d4
+$ docker pull hitch@sha256:51ce6516530b3ee5f5aa71ca042dedfbfc65980e0f18e68ba3c4cc54fd9c0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550212 bytes)**  
+-	Total Size: **2.6 MB (2550248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0055ba9924dd29ed0b3b92ed95d1dd319c794a2cc00431778bfe99f70d01eaa9`
+-	Image ID: `sha256:ef86789b9b1ab6bb68ffa42f183a1a06080c9908a09b16eb5452d86ad6b22287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0dca915fa64bc12641989cd303b09d750eaa0931832d7b0ccfc0794e8aeca0`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 2.5 MB (2536630 bytes)  
+	-	`sha256:53f21c95fa3e33c7da6b387d7a90d5b8df9f3d584d747546b7e2f93e598efed9`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 2.5 MB (2536666 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ad1fafcf501a76f9b7f9abe26aa0fbd1b853378756008c147eeaac9a52d41`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
+	-	`sha256:98c7eec242c85e7e086d14395a63a3d2a00a0b07d08c4a2b1935ebd1099105e2`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
 		Size: 13.6 KB (13582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:df5ff5149394e85465c86de954ee4a93e977b176f9aea5f5d8695a5a99c18761
+$ docker pull hitch@sha256:345c5035adcd3b78265b79abe6b4604fced9c4db23d59f8e3a5d5ac6afa0e263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27346398 bytes)**  
+-	Total Size: **27.3 MB (27349685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbfa4b5dd477aada9bc919435fde5fdd472775dd150e403ed00c9d6a4c1f3f84`
+-	Image ID: `sha256:9c266f0d88c6f52eebec12fda2cf06e8a304d582f3737256841b8f2a9cf1fd96`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:441f33fd84d954d91728ce045d0358ca0600c55299770b0eba913196956f53f1`  
-		Last Modified: Mon, 24 Aug 2026 23:20:27 GMT  
-		Size: 23.9 MB (23939844 bytes)  
+	-	`sha256:0f3351a6d282c9993e318db2f90ca23ba75e8f5e94bfff11cad56d85c2a630d2`  
+		Last Modified: Sat, 19 Sep 2026 00:02:48 GMT  
+		Size: 23.9 MB (23943116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc8b6b6c06d3d7aaa25c24b8910db97dedb6966910cca3fe7efcbe7cedccaf2`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 3.4 MB (3406109 bytes)  
+	-	`sha256:f425a78e75e8304e83ec422d3d1f872f87dfd73addd39a1dfd6d9d9bd80f4abf`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 3.4 MB (3406125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1ff2993ff3337234061e15550ec0177ab3e7f992667cbe1315d49a568fff2c6`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 413.0 B  
+	-	`sha256:5bebc5019bba0028c4bf22ff83d52fb3cb241032645837ad1d391a8474e01055`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:ad8fb1adaf5081ace01c043ef13810ddc9b3f63273493d80633b0c4e56cb19d2
+$ docker pull hitch@sha256:b21ae63513bcb7f2b3dd31cb0b1da3acae8aa1223e1e499d217261807253eac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2552532 bytes)**  
+-	Total Size: **2.6 MB (2552568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92278dc6f2f64259c51302bad215f731f9fbb6a2a83babcc9c9065abaeeda33`
+-	Image ID: `sha256:7d640eeeb5db398c6fb71aa944b1ed7255a8b2003e03b7fb806c5f8cdd948ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e472f1aa808189e896ffdc86725703fe2b516e47830f96d4af6e9a12b71a509c`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 2.5 MB (2538862 bytes)  
+	-	`sha256:7c3bf02430b65451bb9f922d32d9c6b043f63a18e7e7f8dc7bff992d559d4827`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 2.5 MB (2538898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36a9fa3f1fb97fca2f4c979f3bb5a97bf9048abe59b325450ab1f2aae2c70633`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
+	-	`sha256:2a744a5c11ac60e7c07fb0ade4893a01821d118e24d64be5d6fab421c3816657`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
 		Size: 13.7 KB (13670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:061aa0bacfccc5849ee0f965b9f889ace4bef7e8d0970cbbfb10fa2cf732676e
+$ docker pull hitch@sha256:d6afde2eb8791c19ca72d69e39414299074a33d62ee580d85cc319b028efd0e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32003467 bytes)**  
+-	Total Size: **32.0 MB (32009725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e5d59fcbb035bfe530bb4962512a9e55898e1e99a2753e8143b0f410488ccc`
+-	Image ID: `sha256:5c20717769eb55874f68cd3cfb84f33d11048739ed761ecc4147e99838d96ca9`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:75782e20ea1f4a9d9259bc20a5ecbbea8d5943bf5370bf0f5727900728f1cc9a`  
-		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
-		Size: 28.1 MB (28117289 bytes)  
+	-	`sha256:333125b5cee9fb6718bdcb523fc93b4adc71b7c37ada6146a20c193430e549b9`  
+		Last Modified: Sat, 19 Sep 2026 00:03:02 GMT  
+		Size: 28.1 MB (28123680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3492952b2c75b69f248cb2df2887c145385a868e620b07f27c104abc25e89d81`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 3.9 MB (3885732 bytes)  
+	-	`sha256:6f1bbd946214e038ba3d4d7d8e8a2be4d75cf6144dffa3b2c87030d328bd9fdc`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 3.9 MB (3885601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:646ce38cc10f6cb345a828ba0a736c130dbde768707b765b934ef78004e0c547`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 414.0 B  
+	-	`sha256:1093b6039f0b04736154880e7dbcae8995d44e4248f710fa4ee0fe718fa14b08`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:60b3d60e3fa66d15baee13e8f6e52a0fcc2f8792c4822a99714178443cd9e84a
+$ docker pull hitch@sha256:712ceccec9e97e2f4f73ff9ea513ddbae2f425398824d719a653e5e6a7787c9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550598 bytes)**  
+-	Total Size: **2.6 MB (2550632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57e4213fe63f817d5f53497e66d1be7d83c77e14fe33beb59719fbf0bfc3bf3f`
+-	Image ID: `sha256:6e9aace060ca8fb0d04d3cb5845055d8933f140489e5fac169b93ed7a46d4ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:beef97747d55a7e3093c98a65c5e2c36d210a301365237f4206904b4f8c7eb46`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 2.5 MB (2536900 bytes)  
+	-	`sha256:427230ff42246d62781b9a6965e27fb4082584ef0740c6edbf0acf375a5a5e72`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 2.5 MB (2536936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5295641b17f247abcc279eb806aa3f698e820dd93f27c93f2d9ca3f25373b303`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 13.7 KB (13698 bytes)  
+	-	`sha256:f4a52423a9cd0b236223fcecccb6622b06b44c5aa9d440dbc7605eec620c2789`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 13.7 KB (13696 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0` - linux; 386
@@ -1046,7 +1046,7 @@ $ docker pull hitch@sha256:ff4f936e54dd29f8ac5aa91f441bd2788c12dbf0af29e2e07f774
 ## `hitch:1.8.0-1`
 
 ```console
-$ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef46151766711
+$ docker pull hitch@sha256:d7c88419b6a7e413ee301ced652ee2ad4f1314052f03b50ad71b8759aaaec75f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1063,247 +1063,247 @@ $ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef
 ### `hitch:1.8.0-1` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:b1c124bd34f056fe47a117246bf780ccdfe3122730d968e86f3798a30ace5415
+$ docker pull hitch@sha256:037ebb312816d1ed35af11ad6b60a0067750b2bb7deee8df9f730a447a33e22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32270672 bytes)**  
+-	Total Size: **32.3 MB (32276517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7494a0493d6ae9a3047694ade8b1ef67efe7f53380231877cfcde4b763225832`
+-	Image ID: `sha256:066643e5570599d3ff033e0d54430e6dd9eb1978e471b2d9c58f395bec9f8d64`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a8ac7f6c67abc236e4c745052c404112b8fab6fe8ac3a329d1ef3b867ad67c71`  
-		Last Modified: Mon, 24 Aug 2026 23:20:26 GMT  
-		Size: 28.2 MB (28232655 bytes)  
+	-	`sha256:774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150`  
+		Last Modified: Sat, 19 Sep 2026 00:03:16 GMT  
+		Size: 28.2 MB (28238443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b73537a206640006845c29e04ff5c4b435cac6f1f33efc9c352068264cf2f`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 4.0 MB (4037570 bytes)  
+	-	`sha256:995859b6a5d95d5066de9c30b35e270a1f8b0d9013232038954df1dcf3c05906`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 4.0 MB (4037630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717c316c03b32a7f61361377bb8ad13f71ef8915c8f3745473d759c47652c20b`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 415.0 B  
+	-	`sha256:dd9cc1712cae08d80e3c61750acbecebf9c9523b13bcdf5ec9fbdb977a9d46ba`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:8504ffc58824f972a47dade7dfc8ca56942b0bd353d26e90069ee1d7505883d4
+$ docker pull hitch@sha256:51ce6516530b3ee5f5aa71ca042dedfbfc65980e0f18e68ba3c4cc54fd9c0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550212 bytes)**  
+-	Total Size: **2.6 MB (2550248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0055ba9924dd29ed0b3b92ed95d1dd319c794a2cc00431778bfe99f70d01eaa9`
+-	Image ID: `sha256:ef86789b9b1ab6bb68ffa42f183a1a06080c9908a09b16eb5452d86ad6b22287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0dca915fa64bc12641989cd303b09d750eaa0931832d7b0ccfc0794e8aeca0`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 2.5 MB (2536630 bytes)  
+	-	`sha256:53f21c95fa3e33c7da6b387d7a90d5b8df9f3d584d747546b7e2f93e598efed9`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 2.5 MB (2536666 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ad1fafcf501a76f9b7f9abe26aa0fbd1b853378756008c147eeaac9a52d41`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
+	-	`sha256:98c7eec242c85e7e086d14395a63a3d2a00a0b07d08c4a2b1935ebd1099105e2`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
 		Size: 13.6 KB (13582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:df5ff5149394e85465c86de954ee4a93e977b176f9aea5f5d8695a5a99c18761
+$ docker pull hitch@sha256:345c5035adcd3b78265b79abe6b4604fced9c4db23d59f8e3a5d5ac6afa0e263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27346398 bytes)**  
+-	Total Size: **27.3 MB (27349685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbfa4b5dd477aada9bc919435fde5fdd472775dd150e403ed00c9d6a4c1f3f84`
+-	Image ID: `sha256:9c266f0d88c6f52eebec12fda2cf06e8a304d582f3737256841b8f2a9cf1fd96`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:441f33fd84d954d91728ce045d0358ca0600c55299770b0eba913196956f53f1`  
-		Last Modified: Mon, 24 Aug 2026 23:20:27 GMT  
-		Size: 23.9 MB (23939844 bytes)  
+	-	`sha256:0f3351a6d282c9993e318db2f90ca23ba75e8f5e94bfff11cad56d85c2a630d2`  
+		Last Modified: Sat, 19 Sep 2026 00:02:48 GMT  
+		Size: 23.9 MB (23943116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc8b6b6c06d3d7aaa25c24b8910db97dedb6966910cca3fe7efcbe7cedccaf2`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 3.4 MB (3406109 bytes)  
+	-	`sha256:f425a78e75e8304e83ec422d3d1f872f87dfd73addd39a1dfd6d9d9bd80f4abf`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 3.4 MB (3406125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1ff2993ff3337234061e15550ec0177ab3e7f992667cbe1315d49a568fff2c6`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 413.0 B  
+	-	`sha256:5bebc5019bba0028c4bf22ff83d52fb3cb241032645837ad1d391a8474e01055`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:ad8fb1adaf5081ace01c043ef13810ddc9b3f63273493d80633b0c4e56cb19d2
+$ docker pull hitch@sha256:b21ae63513bcb7f2b3dd31cb0b1da3acae8aa1223e1e499d217261807253eac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2552532 bytes)**  
+-	Total Size: **2.6 MB (2552568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92278dc6f2f64259c51302bad215f731f9fbb6a2a83babcc9c9065abaeeda33`
+-	Image ID: `sha256:7d640eeeb5db398c6fb71aa944b1ed7255a8b2003e03b7fb806c5f8cdd948ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e472f1aa808189e896ffdc86725703fe2b516e47830f96d4af6e9a12b71a509c`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 2.5 MB (2538862 bytes)  
+	-	`sha256:7c3bf02430b65451bb9f922d32d9c6b043f63a18e7e7f8dc7bff992d559d4827`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 2.5 MB (2538898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36a9fa3f1fb97fca2f4c979f3bb5a97bf9048abe59b325450ab1f2aae2c70633`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
+	-	`sha256:2a744a5c11ac60e7c07fb0ade4893a01821d118e24d64be5d6fab421c3816657`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
 		Size: 13.7 KB (13670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:061aa0bacfccc5849ee0f965b9f889ace4bef7e8d0970cbbfb10fa2cf732676e
+$ docker pull hitch@sha256:d6afde2eb8791c19ca72d69e39414299074a33d62ee580d85cc319b028efd0e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32003467 bytes)**  
+-	Total Size: **32.0 MB (32009725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e5d59fcbb035bfe530bb4962512a9e55898e1e99a2753e8143b0f410488ccc`
+-	Image ID: `sha256:5c20717769eb55874f68cd3cfb84f33d11048739ed761ecc4147e99838d96ca9`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:75782e20ea1f4a9d9259bc20a5ecbbea8d5943bf5370bf0f5727900728f1cc9a`  
-		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
-		Size: 28.1 MB (28117289 bytes)  
+	-	`sha256:333125b5cee9fb6718bdcb523fc93b4adc71b7c37ada6146a20c193430e549b9`  
+		Last Modified: Sat, 19 Sep 2026 00:03:02 GMT  
+		Size: 28.1 MB (28123680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3492952b2c75b69f248cb2df2887c145385a868e620b07f27c104abc25e89d81`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 3.9 MB (3885732 bytes)  
+	-	`sha256:6f1bbd946214e038ba3d4d7d8e8a2be4d75cf6144dffa3b2c87030d328bd9fdc`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 3.9 MB (3885601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:646ce38cc10f6cb345a828ba0a736c130dbde768707b765b934ef78004e0c547`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 414.0 B  
+	-	`sha256:1093b6039f0b04736154880e7dbcae8995d44e4248f710fa4ee0fe718fa14b08`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:1.8.0-1` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:60b3d60e3fa66d15baee13e8f6e52a0fcc2f8792c4822a99714178443cd9e84a
+$ docker pull hitch@sha256:712ceccec9e97e2f4f73ff9ea513ddbae2f425398824d719a653e5e6a7787c9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550598 bytes)**  
+-	Total Size: **2.6 MB (2550632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57e4213fe63f817d5f53497e66d1be7d83c77e14fe33beb59719fbf0bfc3bf3f`
+-	Image ID: `sha256:6e9aace060ca8fb0d04d3cb5845055d8933f140489e5fac169b93ed7a46d4ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:beef97747d55a7e3093c98a65c5e2c36d210a301365237f4206904b4f8c7eb46`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 2.5 MB (2536900 bytes)  
+	-	`sha256:427230ff42246d62781b9a6965e27fb4082584ef0740c6edbf0acf375a5a5e72`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 2.5 MB (2536936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5295641b17f247abcc279eb806aa3f698e820dd93f27c93f2d9ca3f25373b303`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 13.7 KB (13698 bytes)  
+	-	`sha256:f4a52423a9cd0b236223fcecccb6622b06b44c5aa9d440dbc7605eec620c2789`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 13.7 KB (13696 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:1.8.0-1` - linux; 386
@@ -1391,7 +1391,7 @@ $ docker pull hitch@sha256:ff4f936e54dd29f8ac5aa91f441bd2788c12dbf0af29e2e07f774
 ## `hitch:latest`
 
 ```console
-$ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef46151766711
+$ docker pull hitch@sha256:d7c88419b6a7e413ee301ced652ee2ad4f1314052f03b50ad71b8759aaaec75f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1408,247 +1408,247 @@ $ docker pull hitch@sha256:d12492565905391d759e76cf3aa0add52722c89b8a94da65602ef
 ### `hitch:latest` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:b1c124bd34f056fe47a117246bf780ccdfe3122730d968e86f3798a30ace5415
+$ docker pull hitch@sha256:037ebb312816d1ed35af11ad6b60a0067750b2bb7deee8df9f730a447a33e22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32270672 bytes)**  
+-	Total Size: **32.3 MB (32276517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7494a0493d6ae9a3047694ade8b1ef67efe7f53380231877cfcde4b763225832`
+-	Image ID: `sha256:066643e5570599d3ff033e0d54430e6dd9eb1978e471b2d9c58f395bec9f8d64`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:45 GMT
+# Sat, 19 Sep 2026 00:20:18 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a8ac7f6c67abc236e4c745052c404112b8fab6fe8ac3a329d1ef3b867ad67c71`  
-		Last Modified: Mon, 24 Aug 2026 23:20:26 GMT  
-		Size: 28.2 MB (28232655 bytes)  
+	-	`sha256:774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150`  
+		Last Modified: Sat, 19 Sep 2026 00:03:16 GMT  
+		Size: 28.2 MB (28238443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005b73537a206640006845c29e04ff5c4b435cac6f1f33efc9c352068264cf2f`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 4.0 MB (4037570 bytes)  
+	-	`sha256:995859b6a5d95d5066de9c30b35e270a1f8b0d9013232038954df1dcf3c05906`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 4.0 MB (4037630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:717c316c03b32a7f61361377bb8ad13f71ef8915c8f3745473d759c47652c20b`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 415.0 B  
+	-	`sha256:dd9cc1712cae08d80e3c61750acbecebf9c9523b13bcdf5ec9fbdb977a9d46ba`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:8504ffc58824f972a47dade7dfc8ca56942b0bd353d26e90069ee1d7505883d4
+$ docker pull hitch@sha256:51ce6516530b3ee5f5aa71ca042dedfbfc65980e0f18e68ba3c4cc54fd9c0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550212 bytes)**  
+-	Total Size: **2.6 MB (2550248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0055ba9924dd29ed0b3b92ed95d1dd319c794a2cc00431778bfe99f70d01eaa9`
+-	Image ID: `sha256:ef86789b9b1ab6bb68ffa42f183a1a06080c9908a09b16eb5452d86ad6b22287`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f0dca915fa64bc12641989cd303b09d750eaa0931832d7b0ccfc0794e8aeca0`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
-		Size: 2.5 MB (2536630 bytes)  
+	-	`sha256:53f21c95fa3e33c7da6b387d7a90d5b8df9f3d584d747546b7e2f93e598efed9`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
+		Size: 2.5 MB (2536666 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:401ad1fafcf501a76f9b7f9abe26aa0fbd1b853378756008c147eeaac9a52d41`  
-		Last Modified: Tue, 25 Aug 2026 00:21:51 GMT  
+	-	`sha256:98c7eec242c85e7e086d14395a63a3d2a00a0b07d08c4a2b1935ebd1099105e2`  
+		Last Modified: Sat, 19 Sep 2026 00:20:25 GMT  
 		Size: 13.6 KB (13582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:df5ff5149394e85465c86de954ee4a93e977b176f9aea5f5d8695a5a99c18761
+$ docker pull hitch@sha256:345c5035adcd3b78265b79abe6b4604fced9c4db23d59f8e3a5d5ac6afa0e263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27346398 bytes)**  
+-	Total Size: **27.3 MB (27349685 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fbfa4b5dd477aada9bc919435fde5fdd472775dd150e403ed00c9d6a4c1f3f84`
+-	Image ID: `sha256:9c266f0d88c6f52eebec12fda2cf06e8a304d582f3737256841b8f2a9cf1fd96`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:19:22 GMT
+# Sat, 19 Sep 2026 00:20:35 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:441f33fd84d954d91728ce045d0358ca0600c55299770b0eba913196956f53f1`  
-		Last Modified: Mon, 24 Aug 2026 23:20:27 GMT  
-		Size: 23.9 MB (23939844 bytes)  
+	-	`sha256:0f3351a6d282c9993e318db2f90ca23ba75e8f5e94bfff11cad56d85c2a630d2`  
+		Last Modified: Sat, 19 Sep 2026 00:02:48 GMT  
+		Size: 23.9 MB (23943116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc8b6b6c06d3d7aaa25c24b8910db97dedb6966910cca3fe7efcbe7cedccaf2`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 3.4 MB (3406109 bytes)  
+	-	`sha256:f425a78e75e8304e83ec422d3d1f872f87dfd73addd39a1dfd6d9d9bd80f4abf`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 3.4 MB (3406125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1ff2993ff3337234061e15550ec0177ab3e7f992667cbe1315d49a568fff2c6`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 413.0 B  
+	-	`sha256:5bebc5019bba0028c4bf22ff83d52fb3cb241032645837ad1d391a8474e01055`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:ad8fb1adaf5081ace01c043ef13810ddc9b3f63273493d80633b0c4e56cb19d2
+$ docker pull hitch@sha256:b21ae63513bcb7f2b3dd31cb0b1da3acae8aa1223e1e499d217261807253eac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2552532 bytes)**  
+-	Total Size: **2.6 MB (2552568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d92278dc6f2f64259c51302bad215f731f9fbb6a2a83babcc9c9065abaeeda33`
+-	Image ID: `sha256:7d640eeeb5db398c6fb71aa944b1ed7255a8b2003e03b7fb806c5f8cdd948ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e472f1aa808189e896ffdc86725703fe2b516e47830f96d4af6e9a12b71a509c`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
-		Size: 2.5 MB (2538862 bytes)  
+	-	`sha256:7c3bf02430b65451bb9f922d32d9c6b043f63a18e7e7f8dc7bff992d559d4827`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
+		Size: 2.5 MB (2538898 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36a9fa3f1fb97fca2f4c979f3bb5a97bf9048abe59b325450ab1f2aae2c70633`  
-		Last Modified: Tue, 25 Aug 2026 00:19:28 GMT  
+	-	`sha256:2a744a5c11ac60e7c07fb0ade4893a01821d118e24d64be5d6fab421c3816657`  
+		Last Modified: Sat, 19 Sep 2026 00:20:41 GMT  
 		Size: 13.7 KB (13670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:061aa0bacfccc5849ee0f965b9f889ace4bef7e8d0970cbbfb10fa2cf732676e
+$ docker pull hitch@sha256:d6afde2eb8791c19ca72d69e39414299074a33d62ee580d85cc319b028efd0e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.0 MB (32003467 bytes)**  
+-	Total Size: **32.0 MB (32009725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22e5d59fcbb035bfe530bb4962512a9e55898e1e99a2753e8143b0f410488ccc`
+-	Image ID: `sha256:5c20717769eb55874f68cd3cfb84f33d11048739ed761ecc4147e99838d96ca9`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SRCVER=1.8.0
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGVER=1
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG DISTVER=bullseye
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 # ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
 RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 WORKDIR /etc/hitch
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 EXPOSE map[443/tcp:{}]
-# Tue, 25 Aug 2026 00:21:33 GMT
+# Sat, 19 Sep 2026 00:18:43 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:75782e20ea1f4a9d9259bc20a5ecbbea8d5943bf5370bf0f5727900728f1cc9a`  
-		Last Modified: Mon, 24 Aug 2026 23:20:16 GMT  
-		Size: 28.1 MB (28117289 bytes)  
+	-	`sha256:333125b5cee9fb6718bdcb523fc93b4adc71b7c37ada6146a20c193430e549b9`  
+		Last Modified: Sat, 19 Sep 2026 00:03:02 GMT  
+		Size: 28.1 MB (28123680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3492952b2c75b69f248cb2df2887c145385a868e620b07f27c104abc25e89d81`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 3.9 MB (3885732 bytes)  
+	-	`sha256:6f1bbd946214e038ba3d4d7d8e8a2be4d75cf6144dffa3b2c87030d328bd9fdc`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 3.9 MB (3885601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:646ce38cc10f6cb345a828ba0a736c130dbde768707b765b934ef78004e0c547`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 414.0 B  
+	-	`sha256:1093b6039f0b04736154880e7dbcae8995d44e4248f710fa4ee0fe718fa14b08`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:60b3d60e3fa66d15baee13e8f6e52a0fcc2f8792c4822a99714178443cd9e84a
+$ docker pull hitch@sha256:712ceccec9e97e2f4f73ff9ea513ddbae2f425398824d719a653e5e6a7787c9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2550598 bytes)**  
+-	Total Size: **2.6 MB (2550632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57e4213fe63f817d5f53497e66d1be7d83c77e14fe33beb59719fbf0bfc3bf3f`
+-	Image ID: `sha256:6e9aace060ca8fb0d04d3cb5845055d8933f140489e5fac169b93ed7a46d4ae2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:beef97747d55a7e3093c98a65c5e2c36d210a301365237f4206904b4f8c7eb46`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 2.5 MB (2536900 bytes)  
+	-	`sha256:427230ff42246d62781b9a6965e27fb4082584ef0740c6edbf0acf375a5a5e72`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 2.5 MB (2536936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5295641b17f247abcc279eb806aa3f698e820dd93f27c93f2d9ca3f25373b303`  
-		Last Modified: Tue, 25 Aug 2026 00:21:40 GMT  
-		Size: 13.7 KB (13698 bytes)  
+	-	`sha256:f4a52423a9cd0b236223fcecccb6622b06b44c5aa9d440dbc7605eec620c2789`  
+		Last Modified: Sat, 19 Sep 2026 00:18:50 GMT  
+		Size: 13.7 KB (13696 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; 386
