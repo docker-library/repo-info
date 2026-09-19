@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8943ff9e86d0831db94ff793ca9dbe058a3462a690235d4c1f3f6c287045a14f`
-- Created: `2026-09-15T22:54:41.932110127Z`
-- Virtual Size: ~ 518.37 Mb  
+- Image ID: `sha256:af637c029a68a3d6e3932e74c3bc3b4ec2d43c3a4573e6ec3ce829652bb8033f`
+- Created: `2026-09-17T18:56:32.007126486Z`
+- Virtual Size: ~ 517.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-15T08:29:54Z`
+  - `build-date=2026-09-16T08:14:20Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-09-15T08:29:54Z`
+  - `org.opencontainers.image.created=2026-09-16T08:14:20Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=13aaee314b4f1afa7645fa9b2b46b02e3e55f433`
+  - `org.opencontainers.image.revision=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=13aaee314b4f1afa7645fa9b2b46b02e3e55f433`
+  - `vcs-ref=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.9`
@@ -849,11 +849,16 @@ $ dnf --quiet download --source --url libedit-3.1-39.20210216cvs.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libedit-3.1-39.20210216cvs.el9.src.rpm
 ```
 
-### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
+### `rpm` package: `libevent-2.1.13-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD and ISC
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libevent-2.1.13-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.13-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `libfdisk-2.37.4-25.el9.x86_64`
 
