@@ -1,7 +1,7 @@
 ## `cassandra:5-trixie`
 
 ```console
-$ docker pull cassandra@sha256:97cc0f3999ebd9a9fa86413a4822d4b71255ecdcd4900c43a1b0ba486b7e01a9
+$ docker pull cassandra@sha256:ee178b38a2746a8e15a115bd038ad1f864391d04a84162a018cb0dd79511709a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -368,116 +368,116 @@ $ docker pull cassandra@sha256:c060729b87f306678a6f28eef501624ad9c2efdca3281d8f2
 ### `cassandra:5-trixie` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8fa791142b00baf6a407867bbdf421dac68a325e0bdf940e7afb354ecf3f57dd
+$ docker pull cassandra@sha256:1ce694bbc459b56c0155a4672ecdb282ef8a9c1157814386137d1c3f0d1e0805
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.1 MB (176112497 bytes)**  
+-	Total Size: **172.9 MB (172938021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbcbd23ff0620928ca8a3e741f384f555140823d2d52298d6b1ea29741b048cc`
+-	Image ID: `sha256:183df34878c64abf1e5c2a8442150f96c055f309580d00f9ddc33bf20c8d2afe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1787529600'
-# Wed, 09 Sep 2026 10:20:24 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1789689600'
+# Sat, 19 Sep 2026 07:28:43 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
-# Wed, 09 Sep 2026 10:20:52 GMT
+# Sat, 19 Sep 2026 07:29:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig # buildkit
-# Wed, 09 Sep 2026 10:21:25 GMT
+# Sat, 19 Sep 2026 07:29:33 GMT
 ENV GOSU_VERSION=1.19
-# Wed, 09 Sep 2026 10:21:25 GMT
+# Sat, 19 Sep 2026 07:29:33 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Wed, 09 Sep 2026 10:21:25 GMT
+# Sat, 19 Sep 2026 07:29:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 16 Sep 2026 10:12:47 GMT
+# Sat, 19 Sep 2026 07:30:28 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Wed, 16 Sep 2026 10:12:47 GMT
+# Sat, 19 Sep 2026 07:30:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 RUN java --version # buildkit
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV CASSANDRA_VERSION=5.0.9
-# Wed, 16 Sep 2026 10:12:48 GMT
+# Sat, 19 Sep 2026 07:30:29 GMT
 ENV CASSANDRA_SHA512=beaf3df6342ef1a0ccc83fa80214f250b32c35cfbb1af591b00e3fd539eef0915bc3b89f0e7ae73f6d50cbb03f6075c4e4cf32d3c46ff9c33f745542fcc925df
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:09 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			https://dlcdn.apache.org/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 1777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v # buildkit
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:09 GMT
 VOLUME [/var/lib/cassandra]
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:10 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:10 GMT
 EXPOSE map[7000/tcp:{} 7001/tcp:{} 7199/tcp:{} 9042/tcp:{} 9160/tcp:{}]
-# Wed, 16 Sep 2026 10:14:01 GMT
+# Sat, 19 Sep 2026 07:31:10 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:2b3dfadc0808f798cf371605ccaac4ef505f4812ae4087e8fef3c0d0fa4498a7`  
-		Last Modified: Mon, 24 Aug 2026 23:22:18 GMT  
-		Size: 33.6 MB (33615461 bytes)  
+	-	`sha256:7cae0376943bf0e6eee16df358f9d9b19c3ecbf1126c81658c6b41549e7b6cb6`  
+		Last Modified: Sat, 19 Sep 2026 00:05:59 GMT  
+		Size: 33.6 MB (33641235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63517711a9b662fbf17e967abc6479f1520f483c97938a7cd549ba5b091b1318`  
-		Last Modified: Wed, 09 Sep 2026 10:22:38 GMT  
-		Size: 1.1 KB (1112 bytes)  
+	-	`sha256:214cbe558ba966a99604a73253c693bfa2e9a5119d45b126074ed81a5a7d1f93`  
+		Last Modified: Sat, 19 Sep 2026 07:30:38 GMT  
+		Size: 1.1 KB (1110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a23755d7a90a61e163a72532cba6ee198ee2d8bfc7d49227b5b7e584eb33ed17`  
-		Last Modified: Wed, 09 Sep 2026 10:22:39 GMT  
-		Size: 16.7 MB (16651826 bytes)  
+	-	`sha256:7b49b55d9bffc7d2b962e4bce950c5869f55950c829167b219568b3da8a1058c`  
+		Last Modified: Sat, 19 Sep 2026 07:30:39 GMT  
+		Size: 16.7 MB (16657844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b55a63993c7f8d413fea931b8f90b6b06fcbc6aff7e1e2a703041e449767277`  
-		Last Modified: Wed, 09 Sep 2026 10:22:39 GMT  
-		Size: 4.5 MB (4473037 bytes)  
+	-	`sha256:8d6e1cae1b62f3f35051d98995a70c557a6c4d63d43e2eca35dee8deecf5fcaa`  
+		Last Modified: Sat, 19 Sep 2026 07:30:38 GMT  
+		Size: 1.3 MB (1267207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c21614e13cfa16a0c8beb97eff5b2aacab79a6d5a099fe0b60b1cc98e6edf207`  
-		Last Modified: Wed, 16 Sep 2026 10:14:33 GMT  
-		Size: 47.4 MB (47422402 bytes)  
+	-	`sha256:b551be2a9440ec45e2199d24ef74f140e6fa483d42c74e8ed2820ef0346921a8`  
+		Last Modified: Sat, 19 Sep 2026 07:31:39 GMT  
+		Size: 47.4 MB (47422397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55e36d0fdb69bab06aa41c6e23ecccd2c1b2b8e8e1f1adf1217f1695fcf7bc63`  
-		Last Modified: Wed, 16 Sep 2026 10:14:30 GMT  
-		Size: 128.0 B  
+	-	`sha256:8ab88f662a659f46d71854abb05664fa73a748e81879f0b61babac888f7f9f67`  
+		Last Modified: Sat, 19 Sep 2026 07:31:36 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2754491b24dad80f358c1e3c4eb8c73db0cbc99adb83cb9bde28f0528e18e11e`  
-		Last Modified: Wed, 16 Sep 2026 10:14:33 GMT  
-		Size: 73.9 MB (73947307 bytes)  
+	-	`sha256:160c7881bd1227cbf80d9fc8c028dd690afce1224e8d9a86a04ca437a8cc75e8`  
+		Last Modified: Sat, 19 Sep 2026 07:31:39 GMT  
+		Size: 73.9 MB (73946878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e58d7f40df6bbf09a467ba0d61ffddcb9a9bb696cccf58136369f798448c8845`  
-		Last Modified: Wed, 16 Sep 2026 10:14:31 GMT  
-		Size: 1.2 KB (1224 bytes)  
+	-	`sha256:c1cca74b9aa3866869b9323b9e0c54411e875c44b148b0e7d015e3685c3268bf`  
+		Last Modified: Sat, 19 Sep 2026 07:31:36 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:5-trixie` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:4d3b9c9631e76697c9da5cea669a6149db92eb634db9f5c72ee869995519f714
+$ docker pull cassandra@sha256:0c09bb80fcfd1871ef91778d9fe36c407343dda9dbb58bf24f388bd18b2e0502
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3010782 bytes)**  
+-	Total Size: **3.0 MB (3016492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d497d5c343e4bc7f8c2d938d21f31978cefd02f9030a7597d0e43ca5621609df`
+-	Image ID: `sha256:61308fbaaea663eede68bdd27ff6a1aba9ac1bed7adae79021f66172905c98d7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8346e4999811a8ef86ae6af447af807774a8211d59acd88f3a9d32d3f564996a`  
-		Last Modified: Wed, 16 Sep 2026 10:14:30 GMT  
-		Size: 3.0 MB (2973632 bytes)  
+	-	`sha256:2f493ac8f0c4aab6fc761f27a14a894f96894cad3af0cd5e23f92a50a372b773`  
+		Last Modified: Sat, 19 Sep 2026 07:31:37 GMT  
+		Size: 3.0 MB (2979342 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e28fb6e0b48ad4d816dce21004c2dea895e95689b3d0778c93d767723982db8`  
-		Last Modified: Wed, 16 Sep 2026 10:14:30 GMT  
+	-	`sha256:31832bbc431bb9594fea85e08132022f3f85dd7da26b06d7e18209f8abb95d3d`  
+		Last Modified: Sat, 19 Sep 2026 07:31:36 GMT  
 		Size: 37.1 KB (37150 bytes)  
 		MIME: application/vnd.in-toto+json
 
