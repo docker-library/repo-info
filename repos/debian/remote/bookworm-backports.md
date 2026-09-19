@@ -1,7 +1,7 @@
 ## `debian:bookworm-backports`
 
 ```console
-$ docker pull debian@sha256:5dd603555010de39da3fe6f5528a5df40fd61051993445b2eaa7f8d34fcdb58a
+$ docker pull debian@sha256:96349c9378349234c95a5ed1985674fbc740798a26868eaa197c1f36c5c215af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -179,54 +179,54 @@ $ docker pull debian@sha256:f86891db9e95a8075a1692473f15a7921da645b35d745fd75cfa
 ### `debian:bookworm-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:afd145da797bbda480bba10fcce69ad531f3c2df2beed6e5e5aec553f6e930c5
+$ docker pull debian@sha256:d0a87687265ef4595d65e5fba36e29348ed7818b38541e216a9c16af2ca511cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49485619 bytes)**  
+-	Total Size: **49.5 MB (49491629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c755ca011031c16628a41317db80465f8880bfa6a15e6aa26818de4f2552ce7`
+-	Image ID: `sha256:de15daf640264113a000e2f38b3f44026ec150700b2342c9c263e2c958b44a7e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 24 Aug 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1787529600'
-# Tue, 25 Aug 2026 00:15:17 GMT
+# Fri, 18 Sep 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1789689600'
+# Sat, 19 Sep 2026 00:13:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:87896a92d6ed96e4c8127d574fb44191e126b11d1a05b77306bc1034c455ec5d`  
-		Last Modified: Mon, 24 Aug 2026 23:20:08 GMT  
-		Size: 49.5 MB (49485396 bytes)  
+	-	`sha256:5251485f272d2f5b30f340b3424d4885551b55c64d74f383ca196bc8338f8f3e`  
+		Last Modified: Sat, 19 Sep 2026 00:03:27 GMT  
+		Size: 49.5 MB (49491404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ae81624f56221a6c1a02efd5cdc40397592d6293b48459116799cb79ffd43e7`  
-		Last Modified: Tue, 25 Aug 2026 00:15:24 GMT  
-		Size: 223.0 B  
+	-	`sha256:d20b262fa2c6af9f28715c363585871f9edf599ae523b8ceddff21f2f78a1566`  
+		Last Modified: Sat, 19 Sep 2026 00:13:07 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bookworm-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:e9a988bf7e91d54553c7051baef6fe1518bff83ce65a5f25dbede59723755a60
+$ docker pull debian@sha256:04b526bc4848454c928f4a354b8bebc1422307210b2b07ac9ff79a50c358a949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3737129 bytes)**  
+-	Total Size: **3.7 MB (3737164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:540cf0699913100e317324bab10514e7e1b30b9e8ad8703a83eed7dcadc4b241`
+-	Image ID: `sha256:490756a601448c4993e617f893b2794abe5d0d0da68bc7f3be626bfabce5b18b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:31c547b7c53b6910815c8aa964706c1339c767a14bcf14bbe603ca1e38824aef`  
-		Last Modified: Tue, 25 Aug 2026 00:15:24 GMT  
-		Size: 3.7 MB (3731342 bytes)  
+	-	`sha256:0a0713c80056cb56e67396391123cb6b1e25c5e2672a219b9476850fdd82b700`  
+		Last Modified: Sat, 19 Sep 2026 00:13:07 GMT  
+		Size: 3.7 MB (3731378 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64371204d1b1380c6a4f2d109aa318f7c622896bfe66512ead419df4b4ffa272`  
-		Last Modified: Tue, 25 Aug 2026 00:15:24 GMT  
-		Size: 5.8 KB (5787 bytes)  
+	-	`sha256:7d3ec0a2c27ef5e7adc21ed2a95bd575b1d1fe26efad02a9e84092a7255cacda`  
+		Last Modified: Sat, 19 Sep 2026 00:13:07 GMT  
+		Size: 5.8 KB (5786 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bookworm-backports` - linux; ppc64le
