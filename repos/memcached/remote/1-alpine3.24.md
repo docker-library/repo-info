@@ -1,7 +1,7 @@
 ## `memcached:1-alpine3.24`
 
 ```console
-$ docker pull memcached@sha256:69ecd3c5701cebbe51f9fca15c1f9bd3b8773fd57cdb215adb6e1fa844bb0ea2
+$ docker pull memcached@sha256:9e4de012dc607573052061c0bcb38abc775e1dd59b24e7ac38d1892842094aaf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -586,95 +586,95 @@ $ docker pull memcached@sha256:f80e28a730a608ba861ca92c6a4227987495a1441e641cd1b
 ### `memcached:1-alpine3.24` - linux; riscv64
 
 ```console
-$ docker pull memcached@sha256:f6503d027a3102edc399de42008e6de6b523702df436fd74be6c6837a0882c3a
+$ docker pull memcached@sha256:b655eb23860c9f5cd8820dc15391d6c85f5c4001c69fb484b508a7a6c0b2ccf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5742697 bytes)**  
+-	Total Size: **5.7 MB (5745298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9200c9ee0cd3682e447f0071af9c2edff3b87a15688bbb8e4b3360b97a75dd22`
+-	Image ID: `sha256:55b8dced45037bb279c8b4b7c6173dd938bb75674f945d9f8554ffed1b752ca6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 16 Jun 2026 05:59:15 GMT
-ADD alpine-minirootfs-3.24.1-riscv64.tar.gz / # buildkit
-# Tue, 16 Jun 2026 05:59:15 GMT
+# Fri, 18 Sep 2026 16:49:18 GMT
+ADD alpine-minirootfs-3.24.2-riscv64.tar.gz / # buildkit
+# Fri, 18 Sep 2026 16:49:18 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jul 2026 15:23:50 GMT
+# Sat, 19 Sep 2026 06:17:46 GMT
 RUN set -eux; 	addgroup -g 11211 memcache; 	adduser -D -u 11211 -G memcache memcache # buildkit
-# Tue, 07 Jul 2026 15:23:54 GMT
+# Sat, 19 Sep 2026 06:17:50 GMT
 RUN apk add --no-cache libsasl # buildkit
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 ENV MEMCACHED_VERSION=1.6.45
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 ENV MEMCACHED_URL=https://memcached.org/files/memcached-1.6.45.tar.gz
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 ENV MEMCACHED_SHA1=45038980ea7045a548b9b5b5125ef7116312a768
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		coreutils 		cyrus-sasl-dev 		dpkg-dev dpkg 		gcc 		libc-dev 		libevent-dev 		linux-headers 		make 		openssl 		openssl-dev 		perl 		perl-io-socket-ssl 		perl-utils 	; 		wget -O memcached.tar.gz "$MEMCACHED_URL"; 	echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c -; 	mkdir -p /usr/src/memcached; 	tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1; 	rm memcached.tar.gz; 		cd /usr/src/memcached; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	case "$gnuArch" in 		arm-*abihf) export ac_cv_c_alignment=need ;; 	esac; 	./configure 		--build="$gnuArch" 		--enable-extstore 		--enable-proxy 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 	; 	nproc="$(nproc)"; 	make -j "$nproc"; 		make test PARALLEL="$nproc" || make test; 		make install; 		cd /; 	rm -rf /usr/src/memcached; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .memcached-rundeps $runDeps; 	apk del --no-network .build-deps; 		memcached -V # buildkit
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat # buildkit
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 USER memcache
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 EXPOSE map[11211/tcp:{}]
-# Fri, 10 Jul 2026 18:17:54 GMT
+# Sat, 19 Sep 2026 07:00:09 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:c34e5222b29b86391cdae95b0473ef789493ff1a0068a3a30b5d66f544bd7cf6`  
-		Last Modified: Sun, 14 Jun 2026 06:47:00 GMT  
-		Size: 3.6 MB (3574358 bytes)  
+	-	`sha256:64f7f08b6763becdda2e72bfacdfd36663e4847bc6fdb366336127620012bc02`  
+		Last Modified: Fri, 18 Sep 2026 16:49:42 GMT  
+		Size: 3.6 MB (3575371 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:941235bbafd533700d0cc64f160a6e039681d628670d1459598da425f80a671f`  
-		Last Modified: Tue, 07 Jul 2026 15:37:43 GMT  
-		Size: 952.0 B  
+	-	`sha256:50696ee7fd6dd6a48287f1be319d7356f1aab635568394ca3f5d932466f8bc69`  
+		Last Modified: Sat, 19 Sep 2026 07:00:33 GMT  
+		Size: 951.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b5ceafabde54b0ee281c4c55e0fa52bc718b5f67e1cf01b2596ce139ce91689`  
-		Last Modified: Tue, 07 Jul 2026 15:37:44 GMT  
-		Size: 108.9 KB (108895 bytes)  
+	-	`sha256:f37eda83220efe3380370c6043e0694c7ff2ccf346970849bf28d6897aeb60f5`  
+		Last Modified: Sat, 19 Sep 2026 07:00:34 GMT  
+		Size: 108.9 KB (108897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6cc49b0ef8ea996fd966c0929e48cc1b3e4c976fd3f5318322e48ebc3c742cf`  
-		Last Modified: Fri, 10 Jul 2026 18:18:18 GMT  
-		Size: 2.1 MB (2058088 bytes)  
+	-	`sha256:f3259f74c8597dcf889fea8d8e6a0221da5289a45dac4f2851502a79b91f4a1f`  
+		Last Modified: Sat, 19 Sep 2026 07:00:34 GMT  
+		Size: 2.1 MB (2059672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc547d2752adfd06887e58e4938230be78719712f64613173fdbf15322296cd`  
-		Last Modified: Fri, 10 Jul 2026 18:18:18 GMT  
-		Size: 282.0 B  
+	-	`sha256:4bced3b020a43d00c9ff35fc2ff7e2abbc320776123d4e75d5ba63bdbde9992f`  
+		Last Modified: Sat, 19 Sep 2026 07:00:34 GMT  
+		Size: 285.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28702830c4f44b0abd3826454a1ce8fff39a742c980a4cc715c11d6b2a3735d2`  
-		Last Modified: Fri, 10 Jul 2026 18:18:18 GMT  
+	-	`sha256:8c55e359dc42a43fbf052b329a4eaa4484f898a931a8caff3b10d2211ebcaf55`  
+		Last Modified: Sat, 19 Sep 2026 07:00:35 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:1-alpine3.24` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:5f3dca65e175b723b9be05a830b290629d08dc7dfee38b614716144e532f766b
+$ docker pull memcached@sha256:4156ffa9a211bd5adbd087c9f683e974870966536c1ae129337da66360b95151
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.9 KB (114905 bytes)**  
+-	Total Size: **114.9 KB (114904 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b6abb5cabee5aa9238e08e76ddf612911ed9189bcb374b335d7f638d087707b`
+-	Image ID: `sha256:4a4f0ecd5f404f87006c9e26865243a7998e2aafa80a461dd9752c041697bf2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:65e49063062422d01a294e89ecd5dbd733e014683e3a7467d189fa0bd4e4bc6e`  
-		Last Modified: Fri, 10 Jul 2026 18:18:18 GMT  
+	-	`sha256:c6980ceb4c4153eb9d97e749ed0af9b20c568aae526989597ec81e90c3b06ad9`  
+		Last Modified: Sat, 19 Sep 2026 07:00:33 GMT  
 		Size: 94.3 KB (94300 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:38c3fe116a56893dd7290547344a3c341309b11d85ad3be36dfe73a2020e64c9`  
-		Last Modified: Fri, 10 Jul 2026 18:18:18 GMT  
-		Size: 20.6 KB (20605 bytes)  
+	-	`sha256:82e8e25f4832f3505dd2a86cfbdd4fb23a849b2a41c2a65539cc5fc2e5c853a0`  
+		Last Modified: Sat, 19 Sep 2026 07:00:33 GMT  
+		Size: 20.6 KB (20604 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `memcached:1-alpine3.24` - linux; s390x
