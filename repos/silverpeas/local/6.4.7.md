@@ -1609,9 +1609,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=2.7.4-1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4.orig.tar.xz' harfbuzz_2.7.4.orig.tar.xz 9532468 SHA256:6ad11d653347bd25d8317589df4e431a2de372c0cf9be3543368e07ec23bb8e7
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4-1ubuntu3.2.debian.tar.xz' harfbuzz_2.7.4-1ubuntu3.2.debian.tar.xz 15000 SHA256:39c75dcef97ae5b6d60fbdf2228ee040f5f7dd6fad4e18c06901cf708a1ca1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4-1ubuntu3.2.dsc' harfbuzz_2.7.4-1ubuntu3.2.dsc 2855 SHA256:6c75d24d8abd1fd901b9ffe8d4943c0837d96badd67c7c7672d5e619fc758d79
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4.orig.tar.xz' harfbuzz_2.7.4.orig.tar.xz 9532468 SHA512:d2af6a768c397c664f654cf36140e7b5696b3b983f637454604570c348247f7ffea135048d9b02cf6593cbde728567e31bf82a39df5ff38d680c78dff24d4cf0
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4-1ubuntu3.2.debian.tar.xz' harfbuzz_2.7.4-1ubuntu3.2.debian.tar.xz 15000 SHA512:70a45981d34a9f5c085f8dea48a2ebd8c189506358e9e34bd4e9bf94f1a559001dc80915a409332a04efe01135f8aaa30f715da7efc9bd1245fa6352d6083f6d
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.7.4-1ubuntu3.2.dsc' harfbuzz_2.7.4-1ubuntu3.2.dsc 2855 SHA512:7e79b81a2740e2a02e4f11d898b4ace6bd5201616c888e02c07665afefe402d55961f0b141310b4a97ac396498e606e313281caa27915c825a70f20ec38ca15d
 ```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
@@ -3805,9 +3805,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsndfile=1.0.31-2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31.orig.tar.gz' libsndfile_1.0.31.orig.tar.gz 662584 SHA256:8cdee0acb06bb0a3c1a6ca524575643df8b1f3a55a0893b4dd9f829d08263785
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31-2ubuntu0.2.debian.tar.xz' libsndfile_1.0.31-2ubuntu0.2.debian.tar.xz 25092 SHA256:5ea08b6307ba862ebb2b99a304d5491809533e802ae2f051bdbad94ce58012f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31-2ubuntu0.2.dsc' libsndfile_1.0.31-2ubuntu0.2.dsc 2277 SHA256:3aa214beb1a56ee44d2c3426d6563c287a0572666435b4e6c1179a9c59068221
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31.orig.tar.gz' libsndfile_1.0.31.orig.tar.gz 662584 SHA512:5767ced306f2d300aa2014d383c22f3ee9a4fe1ffb2c463405bc26209ede09a9cfb95e1c08256db36e986d2b30151c38dbe635a3cae0b7138d7de485e2084891
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31-2ubuntu0.2.debian.tar.xz' libsndfile_1.0.31-2ubuntu0.2.debian.tar.xz 25092 SHA512:64d478af31f56d4cd3d2cc091be48373ed08ff4083664a1d74833859f2c650e86deb6990b55f8e838ccf43ad230a3c54617a4afaf21d89bf20cb29165c26876f
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.31-2ubuntu0.2.dsc' libsndfile_1.0.31-2ubuntu0.2.dsc 2277 SHA512:cea2fbcad3778eabf347f0dce7fd4503970c68de5ad23a9961afeccdf39c60d31641357669ea3cd2b04e96d8c365030e7cd3d868c7a1ad3ceca882b87b0841e6
 ```
 
 ### `dpkg` source package: `libsodium=1.0.18-1ubuntu0.22.04.1`
