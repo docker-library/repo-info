@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee107db61179256e872a25960135acfc52f4c20601bd0c218e15cbb682c26174`
-- Created: `2026-09-15T22:35:39.303426931Z`
-- Virtual Size: ~ 883.23 Mb  
+- Image ID: `sha256:0de0e6001ab10add374a2c311bc7fd5c3dd8292fe2b335d0b525402c34ccd52f`
+- Created: `2026-09-19T03:17:42.433606016Z`
+- Virtual Size: ~ 883.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -791,11 +791,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.5.0-1+deb12u2`
+### `dpkg` source package: `expat=2.5.0-1+deb12u3`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.5.0-1+deb12u2`
+- `libexpat1:amd64=2.5.0-1+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -804,17 +804,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-1%2bdeb12u2.dsc' expat_2.5.0-1+deb12u2.dsc 2013 SHA256:6fc87dbd01f49999ed368cfb37c08d35e41348dda2281d60642f3aa14cb77e32
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-1%2bdeb12u2.debian.tar.xz' expat_2.5.0-1+deb12u2.debian.tar.xz 36688 SHA256:7e29f5db5067e55193540089ed0f3ec9676704cf79dcea81a9bfb9f49435ae53
+$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.dsc' expat_2.5.0-1+deb12u3.dsc 1427 SHA256:67388db2780dbb8f10cd2d5ace402b655272649dc345825fdc50612007af78d9
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.debian.tar.xz' expat_2.5.0-1+deb12u3.debian.tar.xz 50900 SHA256:1d3fe684581e73766f03c6486dc5e0c068b915da4ae8e778e820495cd9ae44b7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.9.0-4`
 
@@ -1973,11 +1973,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/3.4-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/3.4-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libssh2=1.10.0-3`
+### `dpkg` source package: `libssh2=1.10.0-3+deb12u1`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.10.0-3+b1`
+- `libssh2-1:amd64=1.10.0-3+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
@@ -1986,18 +1986,17 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh2=1.10.0-3
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.10.0-3.dsc' libssh2_1.10.0-3.dsc 2283 SHA256:a0fe68f402a2f44dd6bd2219457fb8677b2149a83e7b009e93ff0635de940766
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.10.0.orig.tar.gz' libssh2_1.10.0.orig.tar.gz 965044 SHA256:2d64e90f3ded394b91d3a2e774ca203a4179f69aebee03003e5a6fa621e41d51
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.10.0.orig.tar.gz.asc' libssh2_1.10.0.orig.tar.gz.asc 488 SHA256:75702eaf490fa8c1e69b889c5c6366c2c3f3b089bc715f9f9be081c88f115f81
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.10.0-3.debian.tar.xz' libssh2_1.10.0-3.debian.tar.xz 8416 SHA256:c0bea31fe565273656349484d1000b557e489ee322834b40c4d7d33317a56940
+$ apt-get source -qq --print-uris libssh2=1.10.0-3+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.10.0-3%2bdeb12u1.dsc' libssh2_1.10.0-3+deb12u1.dsc 2096 SHA256:c83e73990cdc7f315c57cc558fcc677fbc6e9a102edde97b3ddb4ba9c9fc189a
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.10.0.orig.tar.gz' libssh2_1.10.0.orig.tar.gz 965044 SHA256:2d64e90f3ded394b91d3a2e774ca203a4179f69aebee03003e5a6fa621e41d51
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libssh2/libssh2_1.10.0-3%2bdeb12u1.debian.tar.xz' libssh2_1.10.0-3+deb12u1.debian.tar.xz 12196 SHA256:e4da32facae7fea48f1ba73ba1a17214ee88863143517bf7e4d58a6149deb792
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libssh2/1.10.0-3/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.10.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.10.0-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libssh2/1.10.0-3+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libssh2/1.10.0-3+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libssh2/1.10.0-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-2+deb12u1`
 
@@ -2699,11 +2698,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pam/1.5.2-6+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pam/1.5.2-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcre2=10.42-1`
+### `dpkg` source package: `pcre2=10.42-1+deb12u1`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-1`
+- `libpcre2-8-0:amd64=10.42-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -2716,17 +2715,17 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.42-1
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42-1.dsc' pcre2_10.42-1.dsc 2302 SHA256:726dafe7a8d07332d4df61edf23f384ddb158b2b263846273d1103b6b9a7c176
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42-1.diff.gz' pcre2_10.42-1.diff.gz 7895 SHA256:8267c3acacb04e8a077235f676187393e295443fc16ff46ddbe5f6476879c8cb
+$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.dsc' pcre2_10.42-1+deb12u1.dsc 2226 SHA256:20bfc5b620ab5017489fd5168fd427bbaad9d209dffa0a2e4025d5cc215f70a3
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.diff.gz' pcre2_10.42-1+deb12u1.diff.gz 15939 SHA256:4e1e2103da0d905d30c69c8fea259d654ac7282b90236071281901f28e7dd719
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcre2/10.42-1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.42-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.42-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-7+deb12u3`
 
@@ -3538,11 +3537,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.4.1-1+deb12u1`
+### `dpkg` source package: `xz-utils=5.4.1-1+deb12u2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.4.1-1+deb12u1`
+- `liblzma5:amd64=5.4.1-1+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -3565,18 +3564,17 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.4.1-1+deb12u1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u1.dsc' xz-utils_5.4.1-1+deb12u1.dsc 2515 SHA256:38f98e356f7e7e89b0920d39c55dd5f3d1a9f2684bff83c8b4890561e1832e94
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u1.debian.tar.xz' xz-utils_5.4.1-1+deb12u1.debian.tar.xz 93600 SHA256:3e162db2b76480c7e157f4c2f6ff9a426fc023f262d4dc3287530b36e2843ebe
+$ apt-get source -qq --print-uris xz-utils=5.4.1-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u2.dsc' xz-utils_5.4.1-1+deb12u2.dsc 2442 SHA256:bffc9917562b5787661379621bb1f7510bf7271b03d8ce4181cebc84b90d3c35
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1%2bdeb12u2.debian.tar.xz' xz-utils_5.4.1-1+deb12u2.debian.tar.xz 95356 SHA256:7e0b1d1448520ea4f88ec05136a88f07564cc4a1abd6dfcf53c1f822a3e4f64f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.4.1-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.4.1-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-1`
 
