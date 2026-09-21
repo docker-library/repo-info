@@ -1160,9 +1160,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cryptsetup=2:2.7.0-1ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0.orig.tar.gz' cryptsetup_2.7.0.orig.tar.gz 11754085 SHA256:f0d490f2eb32d1648d586d56fab1329666d34e69e0db3bd6f0ac16fb3de816a2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0-1ubuntu4.2.debian.tar.xz' cryptsetup_2.7.0-1ubuntu4.2.debian.tar.xz 169908 SHA256:f219b25303b8f934780c6f348c71387ddc1597906d3b7fe5960f1678a5b8098a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0-1ubuntu4.2.dsc' cryptsetup_2.7.0-1ubuntu4.2.dsc 3690 SHA256:dd0d8fafae0aba2d9e331d24af5e919bdac9baf501a3ad52f909392ca2b5a1f6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0.orig.tar.gz' cryptsetup_2.7.0.orig.tar.gz 11754085 SHA512:cc197e785bebac24618996852371e8158496d7cf84c1f9051723a0ead4966cd0c0063bdcacd7f0ef58d8252fa86156b847312f8aadf2c6292bbea9bc2fac7ecd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0-1ubuntu4.2.debian.tar.xz' cryptsetup_2.7.0-1ubuntu4.2.debian.tar.xz 169908 SHA512:6fd19d7346d71949b38c298045535a93858f21bae55dfd084ea6f75e3d7bbc03f8ff1d44b015a3f70e71c559becb9edea1d17584203044b90c5ccb7b99908af6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.7.0-1ubuntu4.2.dsc' cryptsetup_2.7.0-1ubuntu4.2.dsc 3690 SHA512:847a0f4ede10e6ebf5a459f62dd7a91372c753fc154d3709c44292439c6ab75530ab99151cd09bbcf038ce17b58f3a1ad9452ea0054781ccca6e0df49593b625
 ```
 
 ### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.14`
@@ -1672,14 +1672,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA256:14113ed69357172a0bf5a268793c8b5b01afc77c7a2e5fb8dd0b06cb87c02c4a
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.debian.tar.xz' expat_2.6.1-2ubuntu0.4.debian.tar.xz 31092 SHA256:8a24bd6c87fe292a2f00a2df71f7d2bbe3713fa63b1952c8552cdac4288d10fd
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.dsc' expat_2.6.1-2ubuntu0.4.dsc 1945 SHA256:a25d3fde103454ad5d34d4770bd5adb60bb5872da775df74cad193b5c4de1dff
-```
 
 ### `dpkg` source package: `ffmpeg=7:6.1.1-3ubuntu5`
 
@@ -2529,15 +2524,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA256:38680f78a0ae6258826418cb5096c19ae3566ba8fee0a2112a0ec40056e58729
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA256:8228a92f92a412160b139ae68b6345bd28f24434a7b5af150ebe21ff587a561d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.8.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.8.debian.tar.xz 166540 SHA256:3ee18682434b0213fbc7f5892527f748810a657aba2353d660c5eb30ed1656f0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.8.dsc' glib2.0_2.80.0-6ubuntu3.8.dsc 4542 SHA256:d44112b09956f61ffd5790a1a40e42558dca287052a945078cffff9b2490ee84
-```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
 
@@ -2777,15 +2766,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.24.2-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz' gst-plugins-base1.0_1.24.2.orig.tar.xz 2421032 SHA512:8b4ffbbf427859c4d8ba889034b00ea8314e4357645c788f6b52d65a512ce76fa1840f2a4fd562d92b213ad9dc9636db44de289bc56600ae19bce39e156b1579
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2.orig.tar.xz.asc' gst-plugins-base1.0_1.24.2.orig.tar.xz.asc 833 SHA512:996a9c50facd6d6b4e9496874320fcb1aa374b0ec0a14b9945238b7e233f933856f3b91cc332da2f1e246c870f51373b3d1b9de455bd3d70e51b5a32be429f70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.4.debian.tar.xz' gst-plugins-base1.0_1.24.2-1ubuntu0.4.debian.tar.xz 57620 SHA512:d644ae71ab83c8a02b3d7c7a98a7aae8d0cab74b5aea4a2de79b42db9b4824d0d6d13f82f985df17bfb43f7cb087a922ba2803f83fc7bd797f64ed8f41697afa
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.24.2-1ubuntu0.4.dsc' gst-plugins-base1.0_1.24.2-1ubuntu0.4.dsc 4113 SHA512:d17cbafc3563b4ca4cb14df70dc13acdd5463872d6a84fae35c4773119f090c15869375e11ca7c16146e6ff965621d8cd9298fe6fcfce72fcfe8cd3e6034513b
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.24.2-1ubuntu0.1`
 
@@ -2841,9 +2824,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gtk+3.0=3.24.41-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41.orig.tar.xz' gtk+3.0_3.24.41.orig.tar.xz 13188312 SHA256:47da61487af3087a94bc49296fd025ca0bc02f96ef06c556e7c8988bd651b6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.3.debian.tar.xz' gtk+3.0_3.24.41-4ubuntu1.3.debian.tar.xz 3666360 SHA256:1a82c70d722296f15af0a00a737a0c552580c6bf3f527f9ef7e66f192fe1831c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.3.dsc' gtk+3.0_3.24.41-4ubuntu1.3.dsc 4996 SHA256:b7ea9dda7ffd3f01f97d7ee673f130a82db5b346ade2d003e609e27886b35269
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41.orig.tar.xz' gtk+3.0_3.24.41.orig.tar.xz 13188312 SHA512:aaf061d846fac592e71089feace302bdef1bb64bb2ad6ff30d51d90000da9084cad2fa5bf88cb75adcd789c911d94231ae60a2ca7cf97a2f5720687369a3da98
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.3.debian.tar.xz' gtk+3.0_3.24.41-4ubuntu1.3.debian.tar.xz 3666360 SHA512:07bb1cfc019cd04ac0b83097d4f176729118b3d89f956c65e2845f71476e4949ae2af4d845e460b4775032bb92a750e910aef4ac4cf9b4acf75d0d78d0f57b1e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.41-4ubuntu1.3.dsc' gtk+3.0_3.24.41-4ubuntu1.3.dsc 4996 SHA512:84d76dbea2324bbe2f25c07273e532050207ec8e475d2a2e410a203d32143f5a6e33f932c95e723cc224f34dd434798f83ff957c17de69b43e7440fe0db19698
 ```
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-5.2build1`
@@ -5800,14 +5783,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.8.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.8.debian.tar.xz 58596 SHA512:622c5a74574cde7bfc49748f8dd1d42a9cdab39e117ddd099293dd1aa981bed1e8156e22d28917d1d01a2746e17991d17bce93c31ddb68d5ac925e93bf539984
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.8.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.8.dsc 3079 SHA512:4d6416be5ad25c5901bf7622f0c74aec99a18ea7b7ce2c579eb8d80f17d6b0c9b39d0355b95b349126034456c13c737918776218ceeeed1da28db183f9b807a8
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 
@@ -7184,15 +7162,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.12+8-1~24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.12%2b8.orig-googletest.tar.xz' openjdk-21_21.0.12+8.orig-googletest.tar.xz 613408 SHA512:6f36da71c9d2709b2ed306b84dbce4d2fb36b4a2720ccb17de928c742e6b9563d596423436e05addaa206d65372370dcf3bc51a06815b0bb3af4a481b3746810
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.12%2b8.orig.tar.xz' openjdk-21_21.0.12+8.orig.tar.xz 67729632 SHA512:31a86637022fb9ec16c6263c6b38a13b56db0965faf3f8ea21c6f516ab473560aad31d048c44aefbd0d69803a639a663631309cdef7ff4fb32add8d1b44cd07b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.12%2b8-1%7e24.04.debian.tar.xz' openjdk-21_21.0.12+8-1~24.04.debian.tar.xz 231888 SHA512:f0e6a677e7018f1a82e284076c279f0e5698f39f6bb5c6be3fc877c9cc4b225a018e773882bf18b25c308b9a6393680f32a78085ab14f03fbf3d95efbca5bc50
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.12%2b8-1%7e24.04.dsc' openjdk-21_21.0.12+8-1~24.04.dsc 4779 SHA512:b9c92e8739ec8202ce858160954643adee9dab6b758c78aace7e15ce6c614ff188d9dad086fa1b169879e3f5fc5eb5521a607bd882ccd343a7b91e82070ab5c7
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.5`
 

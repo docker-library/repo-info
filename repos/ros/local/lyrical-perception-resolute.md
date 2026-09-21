@@ -6280,14 +6280,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.1.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.1.debian.tar.xz 37664 SHA512:6a14210cfa15e187fcde9090a08bb7e91547d4dc1ac1e61f6455f6d0eb6ca3c52b79541db392fffda88a786886354cf356f748c49b904ddd8803b9eed20b8cb4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.1.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.1.dsc 3262 SHA512:988b6f5f97d8d8ed1ee55c92dc5d1b978dbd663e37655e1f29a4a50a6263e86a537dbec0edabf4964eaf212a262d4f7d49de358e1e69d063aa7fbddc6122e923
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.17-1ubuntu0.26.04.1`
 
@@ -7662,15 +7657,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-25=25.0.4+7-1~26.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4%2b7.orig-googletest.tar.xz' openjdk-25_25.0.4+7.orig-googletest.tar.xz 613408 SHA512:6f36da71c9d2709b2ed306b84dbce4d2fb36b4a2720ccb17de928c742e6b9563d596423436e05addaa206d65372370dcf3bc51a06815b0bb3af4a481b3746810
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4%2b7.orig.tar.xz' openjdk-25_25.0.4+7.orig.tar.xz 74213872 SHA512:f945f285403040d547df1c3d25e5ca9fc60aed66884ed0ca749ebdf23083371e1ecbcc54deae8f08afb19749dca741c34a348a72d096f1bdce86db5387513f6d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4%2b7-1%7e26.04.debian.tar.xz' openjdk-25_25.0.4+7-1~26.04.debian.tar.xz 385580 SHA512:f591ac1c0b7ef96fd7bc084070626b839c3b0b0a34910bc44be14f175dc1cfc03904b544724dee64be5bb3f88e3c54b386ee169b9cd235982f30b6d139339d78
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4%2b7-1%7e26.04.dsc' openjdk-25_25.0.4+7-1~26.04.dsc 4852 SHA512:f541517f9a4b832a3c11b6a232b8868b7acc713bd87b7cf576392c750e920eb0250fc3efdbeecca1a7cfa611d5c6185920c8c3449eaec336e40d55d81f2181bb
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1ubuntu0.1`
 
