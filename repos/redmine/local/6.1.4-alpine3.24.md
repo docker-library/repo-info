@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cce12c724267ad2f2af5b27cbf0bbf472b0df08bb63843e203c1c83247810e62`
-- Created: `2026-08-26T18:31:55.777151194Z`
-- Virtual Size: ~ 454.74 Mb  
+- Image ID: `sha256:e5a052475fd1e85499f8bceaa113cdf6e629006bbf6965474047061c56cb8e35`
+- Created: `2026-09-17T22:37:25.210111238Z`
+- Virtual Size: ~ 448.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -82,16 +82,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.1-r0 description:
+alpine-release-3.24.2-r0 description:
 Alpine release data
 
-alpine-release-3.24.1-r0 webpage:
+alpine-release-3.24.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.1-r0 installed size:
+alpine-release-3.24.2-r0 installed size:
 343 B
 
-alpine-release-3.24.1-r0 license:
+alpine-release-3.24.2-r0 license:
 MIT
 
 ```
@@ -99,16 +99,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.6-r0 description:
+apk-tools-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.6-r0 webpage:
+apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.6-r0 installed size:
+apk-tools-3.0.8-r0 installed size:
 112 KiB
 
-apk-tools-3.0.6-r0 license:
+apk-tools-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -286,16 +286,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260611-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260611-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260611-r0 installed size:
-207 KiB
+ca-certificates-20260909-r0 installed size:
+210 KiB
 
-ca-certificates-20260611-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -303,16 +303,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -626,16 +626,16 @@ MIT
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.27-r0 description:
+imagemagick-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.27-r0 webpage:
+imagemagick-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.27-r0 installed size:
-3700 KiB
+imagemagick-7.1.2.30-r0 installed size:
+3758 KiB
 
-imagemagick-7.1.2.27-r0 license:
+imagemagick-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -643,16 +643,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.27-r0 description:
+imagemagick-jp2-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.27-r0 webpage:
+imagemagick-jp2-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.27-r0 installed size:
+imagemagick-jp2-7.1.2.30-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.27-r0 license:
+imagemagick-jp2-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.27-r0 description:
+imagemagick-jpeg-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.27-r0 webpage:
+imagemagick-jpeg-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.27-r0 installed size:
+imagemagick-jpeg-7.1.2.30-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.27-r0 license:
+imagemagick-jpeg-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.27-r0 description:
+imagemagick-libs-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.27-r0 webpage:
+imagemagick-libs-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.27-r0 installed size:
-4313 KiB
+imagemagick-libs-7.1.2.30-r0 installed size:
+4301 KiB
 
-imagemagick-libs-7.1.2.27-r0 license:
+imagemagick-libs-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.27-r0 description:
+imagemagick-pdf-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.27-r0 webpage:
+imagemagick-pdf-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.27-r0 installed size:
+imagemagick-pdf-7.1.2.30-r0 installed size:
 125 KiB
 
-imagemagick-pdf-7.1.2.27-r0 license:
+imagemagick-pdf-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.27-r0 description:
+imagemagick-tiff-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.27-r0 webpage:
+imagemagick-tiff-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.27-r0 installed size:
-115 KiB
+imagemagick-tiff-7.1.2.30-r0 installed size:
+119 KiB
 
-imagemagick-tiff-7.1.2.27-r0 license:
+imagemagick-tiff-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.27-r0 description:
+imagemagick-webp-7.1.2.30-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.27-r0 webpage:
+imagemagick-webp-7.1.2.30-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.27-r0 installed size:
+imagemagick-webp-7.1.2.30-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.27-r0 license:
+imagemagick-webp-7.1.2.30-r0 license:
 ImageMagick
 
 ```
@@ -779,16 +779,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.6-r0 description:
+libapk-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.6-r0 webpage:
+libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.6-r0 installed size:
+libapk-3.0.8-r0 installed size:
 270 KiB
 
-libapk-3.0.6-r0 license:
+libapk-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -796,16 +796,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42.1-r0 description:
+libblkid-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libblkid-2.42.1-r0 webpage:
+libblkid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42.1-r0 installed size:
+libblkid-2.42.3-r1 installed size:
 198 KiB
 
-libblkid-2.42.1-r0 license:
+libblkid-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -864,16 +864,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -915,16 +915,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
-133 KiB
+libexpat-2.8.4-r0 installed size:
+137 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -1085,16 +1085,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42.1-r0 description:
+libmount-2.42.3-r1 description:
 Block device identification library from util-linux
 
-libmount-2.42.1-r0 webpage:
+libmount-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42.1-r0 installed size:
-282 KiB
+libmount-2.42.3-r1 installed size:
+286 KiB
 
-libmount-2.42.1-r0 license:
+libmount-2.42.3-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1323,16 +1323,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42.1-r0 description:
+libuuid-2.42.3-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42.1-r0 webpage:
+libuuid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42.1-r0 installed size:
+libuuid-2.42.3-r1 installed size:
 29 KiB
 
-libuuid-2.42.1-r0 license:
+libuuid-2.42.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -1697,16 +1697,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r0 description:
+openssh-client-common-10.3_p1-r1 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r0 webpage:
+openssh-client-common-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r0 installed size:
+openssh-client-common-10.3_p1-r1 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r0 license:
+openssh-client-common-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1714,16 +1714,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r0 description:
+openssh-client-default-10.3_p1-r1 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r0 webpage:
+openssh-client-default-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r0 installed size:
+openssh-client-default-10.3_p1-r1 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r0 license:
+openssh-client-default-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1731,16 +1731,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r0 description:
+openssh-keygen-10.3_p1-r1 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r0 webpage:
+openssh-keygen-10.3_p1-r1 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r0 installed size:
+openssh-keygen-10.3_p1-r1 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r0 license:
+openssh-keygen-10.3_p1-r1 license:
 SSH-OpenSSH
 
 ```
@@ -1765,16 +1765,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.47-r1 description:
+pcre2-10.48-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.47-r1 webpage:
+pcre2-10.48-r0 webpage:
 https://pcre.org/
 
-pcre2-10.47-r1 installed size:
-775 KiB
+pcre2-10.48-r0 installed size:
+779 KiB
 
-pcre2-10.47-r1 license:
+pcre2-10.48-r0 license:
 BSD-3-Clause
 
 ```
@@ -2241,16 +2241,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026c-r0 description:
+tzdata-2026d-r0 description:
 Timezone data
 
-tzdata-2026c-r0 webpage:
+tzdata-2026d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026c-r0 installed size:
-433 KiB
+tzdata-2026d-r0 installed size:
+441 KiB
 
-tzdata-2026c-r0 license:
+tzdata-2026d-r0 license:
 Public-Domain
 
 ```
@@ -2292,16 +2292,16 @@ GPL-3.0-or-later WITH OpenSSL-Exception
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
