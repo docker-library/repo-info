@@ -173,12 +173,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -611,12 +606,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
