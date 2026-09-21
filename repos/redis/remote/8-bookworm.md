@@ -1,4 +1,4 @@
-## `redis:8.2-bookworm`
+## `redis:8-bookworm`
 
 ```console
 $ docker pull redis@sha256:164c759a0c342ee69d08fc99219382b0fd682181465c0df2e0e6911f4c85d73c
@@ -17,7 +17,7 @@ $ docker pull redis@sha256:164c759a0c342ee69d08fc99219382b0fd682181465c0df2e0e69
 	-	linux; ppc64le
 	-	unknown; unknown
 
-### `redis:8.2-bookworm` - linux; amd64
+### `redis:8-bookworm` - linux; amd64
 
 ```console
 $ docker pull redis@sha256:a2f2c0b14d1e30e66599825fa299282cf55cd16edc8624961cf7d87d7fa4d7f4
@@ -93,7 +93,7 @@ CMD ["redis-server"]
 		Size: 2.1 KB (2114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `redis:8.2-bookworm` - unknown; unknown
+### `redis:8-bookworm` - unknown; unknown
 
 ```console
 $ docker pull redis@sha256:3238684174ae7a2b88a781da3e525fd3c8845e6e8cc17693be800cd3c10468bc
@@ -117,7 +117,7 @@ $ docker pull redis@sha256:3238684174ae7a2b88a781da3e525fd3c8845e6e8cc17693be800
 		Size: 27.7 KB (27724 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `redis:8.2-bookworm` - linux; arm variant v7
+### `redis:8-bookworm` - linux; arm variant v7
 
 ```console
 $ docker pull redis@sha256:56f76727b6bbe828cfe22332d6922953b618c746d588512b4deae61f8a92a483
@@ -193,7 +193,7 @@ CMD ["redis-server"]
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `redis:8.2-bookworm` - unknown; unknown
+### `redis:8-bookworm` - unknown; unknown
 
 ```console
 $ docker pull redis@sha256:339a67d7d133e04124043a0a9fcde4ccb5b4bc8e24eb98ada8e32b77c78d0b0e
@@ -217,7 +217,7 @@ $ docker pull redis@sha256:339a67d7d133e04124043a0a9fcde4ccb5b4bc8e24eb98ada8e32
 		Size: 27.9 KB (27859 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `redis:8.2-bookworm` - linux; arm64 variant v8
+### `redis:8-bookworm` - linux; arm64 variant v8
 
 ```console
 $ docker pull redis@sha256:b77eddbcd5045575abc83811f5664b8ff024067e75dc34dcdd3904f99731ec12
@@ -293,7 +293,7 @@ CMD ["redis-server"]
 		Size: 2.1 KB (2114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `redis:8.2-bookworm` - unknown; unknown
+### `redis:8-bookworm` - unknown; unknown
 
 ```console
 $ docker pull redis@sha256:d5a802f175e17456a83d5b259ae267726a636a159554b2533bd17a66436a0c73
@@ -317,7 +317,7 @@ $ docker pull redis@sha256:d5a802f175e17456a83d5b259ae267726a636a159554b2533bd17
 		Size: 27.9 KB (27897 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `redis:8.2-bookworm` - linux; 386
+### `redis:8-bookworm` - linux; 386
 
 ```console
 $ docker pull redis@sha256:f991f0c5668633da4b0ebeb1212acdd815e7ec45cda22af575df8bc6a3bea098
@@ -393,7 +393,7 @@ CMD ["redis-server"]
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `redis:8.2-bookworm` - unknown; unknown
+### `redis:8-bookworm` - unknown; unknown
 
 ```console
 $ docker pull redis@sha256:db8d9df6e3efda511c99b9d1f8ee3413267bc2681ad442aaa07c9d3819c2d4bd
@@ -417,7 +417,7 @@ $ docker pull redis@sha256:db8d9df6e3efda511c99b9d1f8ee3413267bc2681ad442aaa07c9
 		Size: 27.7 KB (27676 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `redis:8.2-bookworm` - linux; ppc64le
+### `redis:8-bookworm` - linux; ppc64le
 
 ```console
 $ docker pull redis@sha256:60a54bfba75a05a4d2dfb66d8f2d09bd4b0e24c31275cbb65760ef45d7f72d71
@@ -493,7 +493,7 @@ CMD ["redis-server"]
 		Size: 2.1 KB (2103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `redis:8.2-bookworm` - unknown; unknown
+### `redis:8-bookworm` - unknown; unknown
 
 ```console
 $ docker pull redis@sha256:8ac992d8f9848db313509873cf76bd9ef239dfe1869855d6e9f1d305d38cf108
