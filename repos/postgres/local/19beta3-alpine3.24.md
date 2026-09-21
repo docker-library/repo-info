@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e9a7dd0de26358c0ef16bfa0bb6f3fa327f52e77470509e1355d57ee9c61d62`
-- Created: `2026-08-13T19:16:41.370255198Z`
-- Virtual Size: ~ 306.5 Mb  
+- Image ID: `sha256:427a233051626d6cceef8be96ad3fe5fe6227a4182faa4cf9c914aba9db44db9`
+- Created: `2026-09-17T21:29:31.13663517Z`
+- Virtual Size: ~ 306.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -75,16 +75,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.1-r0 description:
+alpine-release-3.24.2-r0 description:
 Alpine release data
 
-alpine-release-3.24.1-r0 webpage:
+alpine-release-3.24.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.1-r0 installed size:
+alpine-release-3.24.2-r0 installed size:
 343 B
 
-alpine-release-3.24.1-r0 license:
+alpine-release-3.24.2-r0 license:
 MIT
 
 ```
@@ -92,16 +92,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.6-r0 description:
+apk-tools-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.6-r0 webpage:
+apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.6-r0 installed size:
+apk-tools-3.0.8-r0 installed size:
 112 KiB
 
-apk-tools-3.0.6-r0 license:
+apk-tools-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -194,16 +194,16 @@ MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -313,16 +313,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.6-r0 description:
+libapk-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.6-r0 webpage:
+libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.6-r0 installed size:
+libapk-3.0.8-r0 installed size:
 270 KiB
 
-libapk-3.0.6-r0 license:
+libapk-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -347,16 +347,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5091 KiB
+libcrypto3-3.5.8-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -364,16 +364,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.21.0-r0 description:
+libcurl-8.22.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.21.0-r0 webpage:
+libcurl-8.22.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.21.0-r0 installed size:
-709 KiB
+libcurl-8.22.0-r0 installed size:
+725 KiB
 
-libcurl-8.21.0-r0 license:
+libcurl-8.22.0-r0 license:
 curl
 
 ```
@@ -517,16 +517,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 819 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -585,16 +585,16 @@ LGPL-2.1-or-later OR MIT
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42.1-r0 description:
+libuuid-2.42.3-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42.1-r0 webpage:
+libuuid-2.42.3-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42.1-r0 installed size:
+libuuid-2.42.3-r1 installed size:
 29 KiB
 
-libuuid-2.42.1-r0 license:
+libuuid-2.42.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -823,16 +823,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026c-r0 description:
+tzdata-2026d-r0 description:
 Timezone data
 
-tzdata-2026c-r0 webpage:
+tzdata-2026d-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026c-r0 installed size:
-433 KiB
+tzdata-2026d-r0 installed size:
+441 KiB
 
-tzdata-2026c-r0 license:
+tzdata-2026d-r0 license:
 Public-Domain
 
 ```
@@ -840,16 +840,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.3-r0 description:
+xz-libs-5.8.4-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.3-r0 webpage:
+xz-libs-5.8.4-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.3-r0 installed size:
+xz-libs-5.8.4-r0 installed size:
 221 KiB
 
-xz-libs-5.8.3-r0 license:
+xz-libs-5.8.4-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
