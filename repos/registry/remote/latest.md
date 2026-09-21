@@ -1,7 +1,7 @@
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:fd374bae807c225661adfe2c0c1f9970a0b8fab1761fd7dfb91e0fd9a8748f9b
+$ docker pull registry@sha256:325b4b29b041e82803abeb703e201655e4e23ab83264ec1a7c9ddb0a5b14a6e0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -440,84 +440,84 @@ $ docker pull registry@sha256:4e215ddf604f8bfe43f92523edcb6a708a32c9b1fdda74e5eb
 ### `registry:latest` - linux; riscv64
 
 ```console
-$ docker pull registry@sha256:50a4402473f31a470e7427e96fc52b14ea33af25b96ac3b08f69d07ca3c696a9
+$ docker pull registry@sha256:d9b02f0dff163a708fb12c7621ce745bcf4ce942b609cd79be04d4b762d53ea6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19135793 bytes)**  
+-	Total Size: **19.1 MB (19141378 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9afedb42ee0c533e1776d2de277e9ba5fbdd64993017b5f6a45118fbe134462`
+-	Image ID: `sha256:efe41742b4151ded664003f7ae88151417f0b9cd8c8ad10b738e04abd5731d8c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/distribution\/config.yml"]`
 
 ```dockerfile
-# Mon, 22 Jun 2026 19:30:17 GMT
-ADD alpine-minirootfs-3.23.5-riscv64.tar.gz / # buildkit
-# Mon, 22 Jun 2026 19:30:17 GMT
+# Fri, 18 Sep 2026 16:50:23 GMT
+ADD alpine-minirootfs-3.23.6-riscv64.tar.gz / # buildkit
+# Fri, 18 Sep 2026 16:50:23 GMT
 CMD ["/bin/sh"]
-# Tue, 23 Jun 2026 14:05:16 GMT
+# Mon, 21 Sep 2026 09:45:55 GMT
 RUN apk add --no-cache ca-certificates # buildkit
-# Tue, 23 Jun 2026 14:05:22 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 RUN set -eux; 	version='3.1.1'; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  arch='amd64';   sha256='6f330a3ba9ea1d23a6ee189f449d792595240585bb2f159123d76ac594f70dd8' ;; 		aarch64) arch='arm64';   sha256='8167316d2b4a57e10d44f8c8a3c75fea5f3ec1c71872760bb903e5e8e52e9ad6' ;; 		armhf)   arch='armv6';   sha256='8cf93e43dfddb195f46dcf3e643d021f29c689a2662d1edb1e70f536f380e3ba' ;; 		armv7)   arch='armv7';   sha256='23bfb562d2b41dc6cb800fc7a2ea682071999ebb4c6e7c8162988bc49eb10ec3' ;; 		ppc64le) arch='ppc64le'; sha256='7f7e126b18b3deb1eecf14824bd80215cda6a10bb07a47c7c42268319cf5b305' ;; 		s390x)   arch='s390x';   sha256='27f5f3237a6332b129d7383066eee99f15759f9add9304fbf283cef1e3803041' ;; 		riscv64) arch='riscv64'; sha256='a64bb17c994885382c977d73695a3f000e884c25b8e5aa14857fedaa096619bb' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget -O registry.tar.gz "https://github.com/distribution/distribution/releases/download/v${version}/registry_${version}_linux_${arch}.tar.gz"; 	echo "$sha256 *registry.tar.gz" | sha256sum -c -; 	tar --extract --verbose --file registry.tar.gz --directory /bin/ registry; 	rm registry.tar.gz; 	registry --version # buildkit
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 COPY ./config-example.yml /etc/distribution/config.yml # buildkit
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 ENV OTEL_TRACES_EXPORTER=none
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 VOLUME [/var/lib/registry]
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 EXPOSE map[5000/tcp:{}]
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 23 Jun 2026 14:05:23 GMT
+# Mon, 21 Sep 2026 09:46:01 GMT
 CMD ["/etc/distribution/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:8a1e5860a6401101356d3688f519ef896539fceeb0e505b24a7224fe7e76fdb1`  
-		Last Modified: Mon, 22 Jun 2026 19:30:41 GMT  
-		Size: 3.6 MB (3573240 bytes)  
+	-	`sha256:125f7ed2919501383cc2a463efb0a6d988a780211c71de97a05b674ca6bb8dde`  
+		Last Modified: Fri, 18 Sep 2026 16:50:46 GMT  
+		Size: 3.6 MB (3576321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3d1b6a4c21a78dbb25159d2e273a4550eac3caff5f0f9a74168efac89740c36`  
-		Last Modified: Tue, 23 Jun 2026 14:06:21 GMT  
-		Size: 245.5 KB (245467 bytes)  
+	-	`sha256:0a26110e639e5c2f5ae2a279e28220c86acc4835d7de4818e4ea9064ba9bcf1f`  
+		Last Modified: Mon, 21 Sep 2026 09:47:07 GMT  
+		Size: 248.0 KB (247955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe99b974a84169b2ca12be6633ba4a7ee840ea1abbd3f6cdbc4b6c42c77beda1`  
-		Last Modified: Tue, 23 Jun 2026 14:06:23 GMT  
-		Size: 15.3 MB (15316476 bytes)  
+	-	`sha256:7ade842977f10bef3e3cba2522d1e7a010382f2d19f5603afcde474c1cbb8a1b`  
+		Last Modified: Mon, 21 Sep 2026 09:47:09 GMT  
+		Size: 15.3 MB (15316491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c893b5aea44bc331c01e03f12d4257cbea486eb42187ad15e564fa1e687891f3`  
-		Last Modified: Tue, 23 Jun 2026 14:06:21 GMT  
+	-	`sha256:afaa2d47cb38982b3b6c32e912f74fc40992d98d6c6c5618aade12cf60627b35`  
+		Last Modified: Mon, 21 Sep 2026 09:47:07 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dba5c7dde5b7db95855936540944aa0f64b7bda800c6fd59737507eb42b3e9ac`  
-		Last Modified: Tue, 23 Jun 2026 14:06:21 GMT  
-		Size: 213.0 B  
+	-	`sha256:71f0ed8e7abf883953776fcfbfc1789cc19aedaf42265c6c82ed3201f462db36`  
+		Last Modified: Mon, 21 Sep 2026 09:47:07 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:latest` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:23c2ca8c8d8430044412eecd31b28adc3be4a0216f43d65c4ca9cc31a7933c9a
+$ docker pull registry@sha256:2c748b2e4b0e57bc4e1f5fa40330377041a842c9d98214acd5b29a84ce432a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.0 KB (263974 bytes)**  
+-	Total Size: **265.3 KB (265267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47bceea67eb25309c98d71f978a163dee545b6448c1ed376a108203c85c5929e`
+-	Image ID: `sha256:aef74b36768b0f9e7c8a9cf7bb56233a6aa15f8da386e7e5a0f7974498229bf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dfab2b1e83d442a2c29ce8d5c1eb6fcd58902855a601a67d0e04ebfc78972a45`  
-		Last Modified: Tue, 23 Jun 2026 14:06:20 GMT  
-		Size: 249.6 KB (249603 bytes)  
+	-	`sha256:316af2572dd44a25bce8de4a6baa0785c3e890c2fcdf41741214d9252b6a4c87`  
+		Last Modified: Mon, 21 Sep 2026 09:47:07 GMT  
+		Size: 250.9 KB (250896 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a850f3c3ecaf89ed7e0ec1026990ca88ccfbd5f548d65c7950eaee6c7786931`  
-		Last Modified: Tue, 23 Jun 2026 14:06:20 GMT  
+	-	`sha256:0b3b4375c86b8ecc15bea3ebb62b8ea74c91225104da312041c15fc3a96d58c1`  
+		Last Modified: Mon, 21 Sep 2026 09:47:06 GMT  
 		Size: 14.4 KB (14371 bytes)  
 		MIME: application/vnd.in-toto+json
 
