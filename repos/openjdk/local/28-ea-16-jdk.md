@@ -1,10 +1,10 @@
-# `openjdk:28-ea-15-jdk-oraclelinux10`
+# `openjdk:28-ea-16-jdk-oraclelinux10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:937d5678b6ac1bee35b66937780c70616ed77f42f3049a21f68e977ad905b216`
-- Created: `2026-09-15T21:38:11.431289277Z`
-- Virtual Size: ~ 673.39 Mb  
+- Image ID: `sha256:1c12a435581263123e096d3b6574ccb0e16402f6d0b459be326d5b612a7efb93`
+- Created: `2026-09-18T22:28:40.361183209Z`
+- Virtual Size: ~ 673.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-28/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-28`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=28-ea+15`
+  - `JAVA_VERSION=28-ea+16`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -28,16 +28,16 @@ https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/c
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/chkconfig-1.30-2.0.1.el10.src.rpm
 ```
 
-### `rpm` package: `attr-2.5.2-5.el10.x86_64`
+### `rpm` package: `attr-2.6.0-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url attr-2.5.2-5.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/attr-2.5.2-5.el10.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/attr-2.5.2-5.el10.src.rpm
+$ dnf --quiet download --source --url attr-2.6.0-1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/attr-2.6.0-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/attr-2.6.0-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `audit-libs-4.0.3-5.0.1.el10.x86_64`
@@ -131,26 +131,26 @@ https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/c
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/chkconfig-1.30-2.0.1.el10.src.rpm
 ```
 
-### `rpm` package: `coreutils-9.5-8.0.1.el10_2.x86_64`
+### `rpm` package: `coreutils-9.5-8.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-no-invariants-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url coreutils-9.5-8.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/coreutils-9.5-8.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url coreutils-9.5-8.0.1.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/coreutils-9.5-8.0.1.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `coreutils-common-9.5-8.0.1.el10_2.x86_64`
+### `rpm` package: `coreutils-common-9.5-8.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-no-invariants-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url coreutils-common-9.5-8.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/coreutils-9.5-8.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url coreutils-common-9.5-8.0.1.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/coreutils-9.5-8.0.1.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `cracklib-2.9.11-8.el10.x86_64`
@@ -175,15 +175,15 @@ $ dnf --quiet download --source --url cracklib-dicts-2.9.11-8.el10
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/cracklib-2.9.11-8.el10.src.rpm
 ```
 
-### `rpm` package: `crypto-policies-20260216-1.git0e54016.el10.noarch`
+### `rpm` package: `crypto-policies-20260216-1.git0e54016.el10_2.2.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/crypto-policies-20260216-1.git0e54016.el10.src.rpm
+$ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10_2.2.noarch
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/crypto-policies-20260216-1.git0e54016.el10_2.2.src.rpm
 ```
 
 ### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
@@ -194,8 +194,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url curl-8.12.1-4.el10_2.4
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
@@ -222,15 +222,15 @@ https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSour
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/dbus-1.14.10-5.el10.src.rpm
 ```
 
-### `rpm` package: `dbus-broker-36-4.el10.x86_64`
+### `rpm` package: `dbus-broker-36-5.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0 AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND (Apache-2.0 OR LGPL-2.1-or-later)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-broker-36-4.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/dbus-broker-36-4.el10.src.rpm
+$ dnf --quiet download --source --url dbus-broker-36-5.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/dbus-broker-36-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `dbus-common-1.14.10-5.el10.noarch`
@@ -312,8 +312,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url elfutils-default-yama-scope-0.194-2.el10_2.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 ```
 
 ### `rpm` package: `elfutils-libelf-0.194-2.el10_2.x86_64`
@@ -324,8 +324,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url elfutils-libelf-0.194-2.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 ```
 
 ### `rpm` package: `elfutils-libs-0.194-2.el10_2.x86_64`
@@ -336,20 +336,20 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url elfutils-libs-0.194-2.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/elfutils-0.194-2.el10_2.src.rpm
 ```
 
-### `rpm` package: `expat-2.7.3-1.el10_2.1.x86_64`
+### `rpm` package: `expat-2.7.3-1.el10_2.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.1
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/expat-2.7.3-1.el10_2.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/expat-2.7.3-1.el10_2.1.src.rpm
+$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.3
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/expat-2.7.3-1.el10_2.3.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/expat-2.7.3-1.el10_2.3.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
@@ -360,8 +360,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url file-libs-5.45-9.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/file-5.45-9.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/file-5.45-9.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/file-5.45-9.el10.src.rpm
 ```
 
 ### `rpm` package: `filesystem-3.18-17.el10.x86_64`
@@ -420,52 +420,52 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gdbm-1.23-12.el10_0.src.rpm
 ```
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.21.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.22.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.21
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glib2-2.80.4-12.el10_2.21.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glib2-2.80.4-12.el10_2.21.src.rpm
+$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.22
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glib2-2.80.4-12.el10_2.22.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glib2-2.80.4-12.el10_2.22.src.rpm
 ```
 
-### `rpm` package: `glibc-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.39-126.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url glibc-2.39-128.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-common-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.39-126.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.39-128.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
 ```
 
-### `rpm` package: `glibc-langpack-en-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-langpack-en-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-langpack-en-2.39-126.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-126.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url glibc-langpack-en-2.39-128.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/glibc-2.39-128.0.1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.1-12.el10.x86_64`
@@ -488,8 +488,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gnutls-3.8.10-4.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gnutls-3.8.10-4.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gnutls-3.8.10-4.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gnutls-3.8.10-4.el10_2.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
@@ -515,15 +515,15 @@ $ dnf --quiet download --source --url grep-3.11-10.el10
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/grep-3.11-10.el10.src.rpm
 ```
 
-### `rpm` package: `gzip-1.13-3.el10.x86_64`
+### `rpm` package: `gzip-1.13-4.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-only
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gzip-1.13-3.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gzip-1.13-3.el10.src.rpm
+$ dnf --quiet download --source --url gzip-1.13-4.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gzip-1.13-4.el10_2.src.rpm
 ```
 
 ### `rpm` package: `ima-evm-utils-1.6.2-4.el10.x86_64`
@@ -578,8 +578,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url json-c-0.18-3.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/json-c-0.18-3.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/json-c-0.18-3.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/json-c-0.18-3.el10.src.rpm
 ```
 
 ### `rpm` package: `keyutils-1.6.3-5.el10.x86_64`
@@ -590,8 +590,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url keyutils-1.6.3-5.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.6.3-5.el10.x86_64`
@@ -602,8 +602,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url keyutils-libs-1.6.3-5.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/keyutils-1.6.3-5.el10.src.rpm
 ```
 
 ### `rpm` package: `krb5-libs-1.21.3-10.0.1.el10_2.x86_64`
@@ -614,8 +614,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url krb5-libs-1.21.3-10.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/krb5-1.21.3-10.0.1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/krb5-1.21.3-10.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/krb5-1.21.3-10.0.1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.4.0-1.el10_2.x86_64`
@@ -626,8 +626,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libacl-2.4.0-1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/acl-2.4.0-1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/acl-2.4.0-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/acl-2.4.0-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libarchive-3.7.7-10.el10_2.x86_64`
@@ -638,20 +638,20 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libarchive-3.7.7-10.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libarchive-3.7.7-10.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libarchive-3.7.7-10.el10_2.src.rpm
 ```
 
-### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
+### `rpm` package: `libattr-2.6.0-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libattr-2.5.2-5.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/attr-2.5.2-5.el10.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/attr-2.5.2-5.el10.src.rpm
+$ dnf --quiet download --source --url libattr-2.6.0-1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/attr-2.6.0-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/attr-2.6.0-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libblkid-2.40.2-18.0.1.el10.x86_64`
@@ -698,8 +698,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcap-ng-0.8.4-6.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libcap-ng-0.8.4-6.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libcap-ng-0.8.4-6.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libcap-ng-0.8.4-6.el10.src.rpm
 ```
 
 ### `rpm` package: `libcbor-0.11.0-3.el10.x86_64`
@@ -744,8 +744,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.4
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/curl-8.12.1-4.el10_2.4.src.rpm
 ```
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
@@ -778,8 +778,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libedit-3.1-52.20230828cvs.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libedit-3.1-52.20230828cvs.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libedit-3.1-52.20230828cvs.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libedit-3.1-52.20230828cvs.el10.src.rpm
 ```
 
 ### `rpm` package: `libestr-0.1.11-11.el10.x86_64`
@@ -793,16 +793,16 @@ $ dnf --quiet download --source --url libestr-0.1.11-11.el10
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libestr-0.1.11-11.el10.src.rpm
 ```
 
-### `rpm` package: `libevent-2.1.12-16.el10.x86_64`
+### `rpm` package: `libevent-2.1.13-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND ISC AND LicenseRef-Fedora-Public-Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libevent-2.1.12-16.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libevent-2.1.12-16.el10.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libevent-2.1.12-16.el10.src.rpm
+$ dnf --quiet download --source --url libevent-2.1.13-1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libevent-2.1.13-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libevent-2.1.13-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
@@ -836,8 +836,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libffi-3.4.4-10.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libffi-3.4.4-10.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libffi-3.4.4-10.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libffi-3.4.4-10.el10.src.rpm
 ```
 
 ### `rpm` package: `libfido2-1.14.0-7.el10.x86_64`
@@ -848,8 +848,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfido2-1.14.0-7.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libfido2-1.14.0-7.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libfido2-1.14.0-7.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libfido2-1.14.0-7.el10.src.rpm
 ```
 
 ### `rpm` package: `libgcc-14.3.1-4.4.0.1.el10.x86_64`
@@ -860,8 +860,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgcc-14.3.1-4.4.0.1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 ```
 
 ### `rpm` package: `libgomp-14.3.1-4.4.0.1.el10.x86_64`
@@ -872,8 +872,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgomp-14.3.1-4.4.0.1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 ```
 
 ### `rpm` package: `libidn2-2.3.7-3.el10.x86_64`
@@ -884,8 +884,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libidn2-2.3.7-3.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libidn2-2.3.7-3.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libidn2-2.3.7-3.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libidn2-2.3.7-3.el10.src.rpm
 ```
 
 ### `rpm` package: `libmodulemd-2.15.0-12.el10.x86_64`
@@ -932,8 +932,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpsl-0.21.5-6.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libpsl-0.21.5-6.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libpsl-0.21.5-6.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libpsl-0.21.5-6.el10.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.5-12.el10.x86_64`
@@ -944,8 +944,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpwquality-1.4.5-12.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libpwquality-1.4.5-12.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libpwquality-1.4.5-12.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libpwquality-1.4.5-12.el10.src.rpm
 ```
 
 ### `rpm` package: `librepo-1.19.0-1.el10.x86_64`
@@ -967,8 +967,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libseccomp-2.5.6-1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libseccomp-2.5.6-1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libseccomp-2.5.6-1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libseccomp-2.5.6-1.el10.src.rpm
 ```
 
 ### `rpm` package: `libselinux-3.10-1.el10.x86_64`
@@ -1003,8 +1003,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsemanage-3.10-1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libsemanage-3.10-1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libsemanage-3.10-1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libsemanage-3.10-1.el10.src.rpm
 ```
 
 ### `rpm` package: `libsepol-3.10-1.el10.x86_64`
@@ -1039,8 +1039,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsolv-0.7.33-5.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libsolv-0.7.33-5.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libsolv-0.7.33-5.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libsolv-0.7.33-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libssh-0.12.0-3.el10_2.x86_64`
@@ -1051,8 +1051,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libssh-0.12.0-3.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libssh-config-0.12.0-3.el10_2.noarch`
@@ -1063,8 +1063,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libssh-config-0.12.0-3.el10_2.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libssh-0.12.0-3.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-14.3.1-4.4.0.1.el10.x86_64`
@@ -1075,8 +1075,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libstdc++-14.3.1-4.4.0.1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/gcc-14.3.1-4.4.0.1.el10.src.rpm
 ```
 
 ### `rpm` package: `libtasn1-4.20.0-5.el10_2.x86_64`
@@ -1145,20 +1145,20 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxcrypt-4.4.36-10.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libxcrypt-4.4.36-10.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libxcrypt-4.4.36-10.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libxcrypt-4.4.36-10.el10.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.12.5-10.el10_2.2.x86_64`
+### `rpm` package: `libxml2-2.12.5-10.el10_2.3.x86_64`
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libxml2-2.12.5-10.el10_2.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libxml2-2.12.5-10.el10_2.2.src.rpm
+$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.3
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/libxml2-2.12.5-10.el10_2.3.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/libxml2-2.12.5-10.el10_2.3.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
@@ -1192,8 +1192,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lua-libs-5.4.6-7.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/lua-5.4.6-7.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/lua-5.4.6-7.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/lua-5.4.6-7.el10.src.rpm
 ```
 
 ### `rpm` package: `lz4-libs-1.9.4-8.el10.x86_64`
@@ -1204,8 +1204,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.4-8.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/lz4-1.9.4-8.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/lz4-1.9.4-8.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/lz4-1.9.4-8.el10.src.rpm
 ```
 
 ### `rpm` package: `mpdecimal-2.5.1-12.el10.x86_64`
@@ -1239,8 +1239,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url ncurses-base-6.4-15.20240127.el10_1.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
 ```
 
 ### `rpm` package: `ncurses-libs-6.4-15.20240127.el10_1.x86_64`
@@ -1251,8 +1251,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url ncurses-libs-6.4-15.20240127.el10_1
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/ncurses-6.4-15.20240127.el10_1.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.6.10-1.el10.x86_64`
@@ -1263,8 +1263,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openldap-2.6.10-1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openldap-2.6.10-1.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openldap-2.6.10-1.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openldap-2.6.10-1.el10.src.rpm
 ```
 
 ### `rpm` package: `openssh-9.9p1-25.0.1.el10_2.x86_64`
@@ -1275,8 +1275,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-9.9p1-25.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `openssh-clients-9.9p1-25.0.1.el10_2.x86_64`
@@ -1287,8 +1287,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-clients-9.9p1-25.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `openssh-server-9.9p1-25.0.1.el10_2.x86_64`
@@ -1299,42 +1299,42 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-server-9.9p1-25.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssh-9.9p1-25.0.1.el10_2.src.rpm
 ```
 
-### `rpm` package: `openssl-fips-provider-3.0.7-8.0.1.el10.x86_64`
+### `rpm` package: `openssl-fips-provider-3.0.7-11.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-fips-provider-3.0.7-8.0.1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-fips-provider-3.0.7-8.0.1.el10.src.rpm
+$ dnf --quiet download --source --url openssl-fips-provider-3.0.7-11.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-fips-provider-3.0.7-11.0.1.el10_2.src.rpm
 ```
 
-### `rpm` package: `openssl-fips-provider-so-3.0.7-8.0.1.el10.x86_64`
+### `rpm` package: `openssl-fips-provider-so-3.0.7-11.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.0.1.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-fips-provider-3.0.7-8.0.1.el10.src.rpm
+$ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-11.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-fips-provider-3.0.7-11.0.1.el10_2.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.5.5-6.0.1.el10_2.x86_64`
+### `rpm` package: `openssl-libs-3.5.8-1.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.5.5-6.0.1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-3.5.5-6.0.1.el10_2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssl-3.5.5-6.0.1.el10_2.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.5.8-1.0.1.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/openssl-3.5.8-1.0.1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/openssl-3.5.8-1.0.1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-10.2-1.0.6.el10.x86_64`
@@ -1367,8 +1367,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url p11-kit-0.26.4-1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
@@ -1379,32 +1379,32 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
-### `rpm` package: `pam-1.6.1-9.el10.x86_64`
+### `rpm` package: `pam-1.6.1-9.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.6.1-9.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/pam-1.6.1-9.el10.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/pam-1.6.1-9.el10.src.rpm
+$ dnf --quiet download --source --url pam-1.6.1-9.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/pam-1.6.1-9.el10_2.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pam-libs-1.6.1-9.el10.x86_64`
+### `rpm` package: `pam-libs-1.6.1-9.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/pam-1.6.1-9.el10.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/pam-1.6.1-9.el10.src.rpm
+$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/pam-1.6.1-9.el10_2.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
@@ -1451,8 +1451,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url popt-1.19-8.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/popt-1.19-8.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/popt-1.19-8.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/popt-1.19-8.el10.src.rpm
 ```
 
 ### `rpm` package: `procps-ng-4.0.4-11.el10.x86_64`
@@ -1474,8 +1474,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url publicsuffix-list-dafsa-20240107-5.el10.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/publicsuffix-list-20240107-5.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/publicsuffix-list-20240107-5.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/publicsuffix-list-20240107-5.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-3.12.13-2.0.1.el10_2.1.x86_64`
@@ -1589,8 +1589,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-pip-wheel-23.3.2-11.el10_2.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/python-pip-23.3.2-11.el10_2.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/python-pip-23.3.2-11.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/python-pip-23.3.2-11.el10_2.src.rpm
 ```
 
 ### `rpm` package: `python3-rpm-4.19.1.1-23.el10.x86_64`
@@ -1601,8 +1601,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-rpm-4.19.1.1-23.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-six-1.16.0-16.el10.noarch`
@@ -1669,8 +1669,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-4.19.1.1-23.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 ```
 
 ### `rpm` package: `rpm-build-libs-4.19.1.1-23.el10.x86_64`
@@ -1681,8 +1681,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-build-libs-4.19.1.1-23.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 ```
 
 ### `rpm` package: `rpm-libs-4.19.1.1-23.el10.x86_64`
@@ -1693,8 +1693,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-libs-4.19.1.1-23.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 ```
 
 ### `rpm` package: `rpm-sequoia-1.10.1.1-2.el10.x86_64`
@@ -1716,19 +1716,19 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-sign-libs-4.19.1.1-23.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rpm-4.19.1.1-23.el10.src.rpm
 ```
 
-### `rpm` package: `rsyslog-8.2510.0-5.el10.x86_64`
+### `rpm` package: `rsyslog-8.2510.0-5.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rsyslog-8.2510.0-5.el10.src.rpm
+$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/rsyslog-8.2510.0-5.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `sed-4.9-5.el10.x86_64`
@@ -1764,16 +1764,16 @@ $ dnf --quiet download --source --url shadow-utils-4.15.0-11.el10
 https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/shadow-utils-4.15.0-11.el10.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.46.1-5.el10_1.x86_64`
+### `rpm` package: `sqlite-libs-3.46.1-6.el10_2.x86_64`
 
 Licenses (from `rpm --query`): blessing
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.46.1-5.el10_1
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/sqlite-3.46.1-5.el10_1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/sqlite-3.46.1-5.el10_1.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.46.1-6.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/sqlite-3.46.1-6.el10_2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/sqlite-3.46.1-6.el10_2.src.rpm
 ```
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
@@ -1812,15 +1812,15 @@ https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSour
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/systemd-257-23.0.1.el10_2.2.src.rpm
 ```
 
-### `rpm` package: `tar-1.35-11.el10.x86_64`
+### `rpm` package: `tar-1.35-13.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tar-1.35-11.el10
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/tar-1.35-11.el10.src.rpm
+$ dnf --quiet download --source --url tar-1.35-13.el10_2
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/tar-1.35-13.el10_2.src.rpm
 ```
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
@@ -1870,40 +1870,40 @@ https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSour
 https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/util-linux-2.40.2-18.0.1.el10.src.rpm
 ```
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.12.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.20.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-data-9.1.083-9.0.1.el10_2.12.noarch
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.12.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.12.src.rpm
+$ dnf --quiet download --source --url vim-data-9.1.083-9.0.1.el10_2.20.noarch
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.20.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.20.src.rpm
 ```
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.12.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.20.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-minimal-9.1.083-9.0.1.el10_2.12
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.12.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.12.src.rpm
+$ dnf --quiet download --source --url vim-minimal-9.1.083-9.0.1.el10_2.20
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.20.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/vim-9.1.083-9.0.1.el10_2.20.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.6.2-4.el10_0.x86_64`
+### `rpm` package: `xz-libs-5.6.2-4.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): 0BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.6.2-4.el10_0
-https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/xz-5.6.2-4.el10_0.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/xz-5.6.2-4.el10_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.6.2-4.el10_2.1
+https://yum.oracle.com/repo/OracleLinux/OL10/appstream/x86_64/getPackageSource/xz-5.6.2-4.el10_2.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL10/baseos/latest/x86_64/getPackageSource/xz-5.6.2-4.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `yum-4.20.0-22.0.1.el10_2.noarch`
