@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e748bd3580761333e2e6ddac4c70d84766b2bcfc58f17b7a95905a031a45b7ad`
-- Created: `2026-09-09T02:40:21.265810276Z`
-- Virtual Size: ~ 257.4 Mb  
+- Image ID: `sha256:62a57b14225f6a56bc558d6e5ed7647ec78b2f22d659d5edb90b0a23ba64d565`
+- Created: `2026-09-16T16:36:37.166057376Z`
+- Virtual Size: ~ 252.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-26`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-27`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -790,9 +790,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.debian.tar.xz' krb5_1.19.2-2ubuntu0.8.debian.tar.xz 125888 SHA512:5b50675962f63f2e25c5782d9ea049a9c97220d3822f45e7c731702391d9cc1dca52f4cdf856dbab6cbd7d1796794caf374215ef229d29af42648e875b38e0c0
+'http://security.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.8.dsc' krb5_1.19.2-2ubuntu0.8.dsc 3652 SHA512:0623b673bf84d48cb04a1c18d787baa406ce86c2b9b0784edbc3313d60700ffcff7684e3e94a2802a7039879e5fe6b9a3d7d54dea89f1fb7d63b5810bef6d76c
 ```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2build3`
@@ -1519,11 +1519,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.dsc' procps_3.3.17-6ubuntu2.1.dsc 2111 SHA512:585933efef8d8e93b4187c65b678d146960480386ac3172097c790723ffadbf1d5347e05cc6de2682adcb96dd5b45ec1f98a3e00cff33ad2b30f729939896aca
 ```
 
-### `dpkg` source package: `sapmachine-26-jre-headless=26.0.2.1`
+### `dpkg` source package: `sapmachine-27-jre-headless=27`
 
 Binary Packages:
 
-- `sapmachine-26-jre-headless=26.0.2.1`
+- `sapmachine-27-jre-headless=27`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1607,15 +1607,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.7.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.7.debian.tar.xz 35636 SHA512:429a023d4091e462e5d8fd72058ae1cf6a62f72f9b6e8d719e689a407b1d7821615549303caa9923929b0ace22aee5aa72cbeaa0df052c7c244c0bfc265fbf7b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.7.dsc' sqlite3_3.37.2-2ubuntu0.7.dsc 2602 SHA512:d61457ec1210cc5ec0fe94ff343d071bd851b38482223d1f53c81dea045d2571136a885aeb49d8e44041b7444506f31e9874bd67ef18687a7fbf8b74b17d464a
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.22`
 

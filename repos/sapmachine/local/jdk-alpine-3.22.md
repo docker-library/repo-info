@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:afb3fbda3ad40b889e287c06fb9c82bd025f3b0995126b23a0dd19b36e102fb1`
-- Created: `2026-08-20T18:05:19.179899244Z`
-- Virtual Size: ~ 298.35 Mb  
+- Image ID: `sha256:d7df0da1175300d557e95e54cf74d5968f3d2b46ac9a61c8965cdb2417f92ac4`
+- Created: `2026-09-17T21:56:37.115454612Z`
+- Virtual Size: ~ 293.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-26-sapmachine-jdk`
+  - `JAVA_HOME=/usr/lib/jvm/java-27-sapmachine-jdk`
 
 ## `apk` (`.apk`-based packages)
 
@@ -68,16 +68,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.5-r0 description:
+alpine-release-3.22.6-r0 description:
 Alpine release data
 
-alpine-release-3.22.5-r0 webpage:
+alpine-release-3.22.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.5-r0 installed size:
+alpine-release-3.22.6-r0 installed size:
 343 B
 
-alpine-release-3.22.5-r0 license:
+alpine-release-3.22.6-r0 license:
 MIT
 
 ```
@@ -102,16 +102,16 @@ LGPL-2.1-or-later
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.10-r0 description:
+apk-tools-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.10-r0 webpage:
+apk-tools-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.10-r0 installed size:
+apk-tools-2.14.12-r0 installed size:
 68 KiB
 
-apk-tools-2.14.10-r0 license:
+apk-tools-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -170,16 +170,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -238,16 +238,16 @@ GPL-2.0-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.10-r0 description:
+libapk2-2.14.12-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.10-r0 webpage:
+libapk2-2.14.12-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.10-r0 installed size:
+libapk2-2.14.12-r0 installed size:
 179 KiB
 
-libapk2-2.14.10-r0 license:
+libapk2-2.14.12-r0 license:
 GPL-2.0-only
 
 ```
@@ -289,16 +289,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.7-r0 description:
+libcrypto3-3.5.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.7-r0 webpage:
+libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.7-r0 installed size:
-5099 KiB
+libcrypto3-3.5.8-r0 installed size:
+5103 KiB
 
-libcrypto3-3.5.7-r0 license:
+libcrypto3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.3-r0 description:
+libexpat-2.8.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.3-r0 webpage:
+libexpat-2.8.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.3-r0 installed size:
+libexpat-2.8.4-r0 installed size:
 133 KiB
 
-libexpat-2.8.3-r0 license:
+libexpat-2.8.4-r0 license:
 MIT
 
 ```
@@ -357,16 +357,16 @@ Libpng
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.7-r0 description:
+libssl3-3.5.8-r0 description:
 SSL shared libraries
 
-libssl3-3.5.7-r0 webpage:
+libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.7-r0 installed size:
+libssl3-3.5.8-r0 installed size:
 823 KiB
 
-libssl3-3.5.7-r0 license:
+libssl3-3.5.8-r0 license:
 Apache-2.0
 
 ```
@@ -575,19 +575,19 @@ MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-26-jdk`
+### `apk` package: `sapmachine-27-jdk`
 
 ```console
-sapmachine-26-jdk-26.0.2.1-r0 description:
+sapmachine-27-jdk-27-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-26-jdk-26.0.2.1-r0 webpage:
+sapmachine-27-jdk-27-r0 webpage:
 https://sapmachine.io
 
-sapmachine-26-jdk-26.0.2.1-r0 installed size:
-261 MiB
+sapmachine-27-jdk-27-r0 installed size:
+256 MiB
 
-sapmachine-26-jdk-26.0.2.1-r0 license:
+sapmachine-27-jdk-27-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
