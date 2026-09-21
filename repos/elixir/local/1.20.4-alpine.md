@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b9f3fe405f6121449e22f9ed19983d670158d5e08bd36de8829887923ff2862`
-- Created: `2026-09-01T23:31:59.914953079Z`
-- Virtual Size: ~ 99.31 Mb  
+- Image ID: `sha256:befceb19381be25097ef3fac207da3269f700930aa518175f03c0af73e573285`
+- Created: `2026-09-18T18:46:37.276479985Z`
+- Virtual Size: ~ 105.02 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=29.0.6`
+  - `OTP_VERSION=29.1`
   - `REBAR3_VERSION=3.27.0`
   - `ELIXIR_VERSION=v1.20.4`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=29.0.6`
+  - `org.opencontainers.image.version=29.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -73,16 +73,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.1-r0 description:
+alpine-release-3.24.2-r0 description:
 Alpine release data
 
-alpine-release-3.24.1-r0 webpage:
+alpine-release-3.24.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.1-r0 installed size:
+alpine-release-3.24.2-r0 installed size:
 343 B
 
-alpine-release-3.24.1-r0 license:
+alpine-release-3.24.2-r0 license:
 MIT
 
 ```
@@ -90,16 +90,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.6-r0 description:
+apk-tools-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.6-r0 webpage:
+apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.6-r0 installed size:
-106 KiB
+apk-tools-3.0.8-r0 installed size:
+112 KiB
 
-apk-tools-3.0.6-r0 license:
+apk-tools-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -114,7 +114,7 @@ busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
 busybox-1.37.0-r31 installed size:
-809 KiB
+794 KiB
 
 busybox-1.37.0-r31 license:
 GPL-2.0-only
@@ -141,16 +141,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260611-r0 description:
+ca-certificates-20260909-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260611-r0 webpage:
+ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260611-r0 installed size:
+ca-certificates-20260909-r0 installed size:
 210 KiB
 
-ca-certificates-20260611-r0 license:
+ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -158,16 +158,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260611-r0 description:
+ca-certificates-bundle-20260909-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260611-r0 webpage:
+ca-certificates-bundle-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260611-r0 installed size:
-175 KiB
+ca-certificates-bundle-20260909-r0 installed size:
+177 KiB
 
-ca-certificates-bundle-20260611-r0 license:
+ca-certificates-bundle-20260909-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -175,16 +175,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.6-r0 description:
+libapk-3.0.8-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.6-r0 webpage:
+libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.6-r0 installed size:
-277 KiB
+libapk-3.0.8-r0 installed size:
+270 KiB
 
-libapk-3.0.6-r0 license:
+libapk-3.0.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -199,10 +199,27 @@ libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
 libcrypto3-3.5.8-r0 installed size:
-3874 KiB
+5095 KiB
 
 libcrypto3-3.5.8-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libgcc`
+
+```console
+libgcc-15.2.0-r5 description:
+GNU C compiler runtime libraries
+
+libgcc-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libgcc-15.2.0-r5 installed size:
+169 KiB
+
+libgcc-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -216,7 +233,7 @@ liblksctp-1.0.19-r5 webpage:
 https://lksctp.sourceforge.net/
 
 liblksctp-1.0.19-r5 installed size:
-27 KiB
+28 KiB
 
 liblksctp-1.0.19-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -233,7 +250,7 @@ libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
 libncursesw-6.6_p20260516-r0 installed size:
-325 KiB
+334 KiB
 
 libncursesw-6.6_p20260516-r0 license:
 X11
@@ -250,10 +267,27 @@ libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
 libssl3-3.5.8-r0 installed size:
-832 KiB
+819 KiB
 
 libssl3-3.5.8-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-15.2.0-r5 description:
+GNU C++ standard runtime library
+
+libstdc++-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libstdc++-15.2.0-r5 installed size:
+2738 KiB
+
+libstdc++-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -267,7 +301,7 @@ lksctp-tools-1.0.19-r5 webpage:
 https://lksctp.sourceforge.net/
 
 lksctp-tools-1.0.19-r5 installed size:
-102 KiB
+108 KiB
 
 lksctp-tools-1.0.19-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -284,7 +318,7 @@ musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-1.2.6-r2 installed size:
-657 KiB
+654 KiB
 
 musl-1.2.6-r2 license:
 MIT
@@ -301,7 +335,7 @@ musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-utils-1.2.6-r2 installed size:
-44 KiB
+54 KiB
 
 musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
@@ -352,7 +386,7 @@ ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
 ssl_client-1.37.0-r31 installed size:
-13 KiB
+14 KiB
 
 ssl_client-1.37.0-r31 license:
 GPL-2.0-only
@@ -369,7 +403,7 @@ zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
 zlib-1.3.2-r0 installed size:
-101 KiB
+105 KiB
 
 zlib-1.3.2-r0 license:
 Zlib
