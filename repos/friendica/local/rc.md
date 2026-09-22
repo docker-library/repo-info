@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fd12052e5172da662276ddd42dbba1c920c9f57b976d991a0a194843f529349`
-- Created: `2026-09-15T22:35:35.97149258Z`
-- Virtual Size: ~ 743.26 Mb  
+- Image ID: `sha256:4421f8c56855fba367a1f84f8b674509faba667fd270f3e3f489ea7963c10b50`
+- Created: `2026-09-19T01:29:37.071892362Z`
+- Virtual Size: ~ 708.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -290,12 +290,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/attr/1:2.5.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/attr/1:2.5.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `audit=1:4.0.2-2`
+### `dpkg` source package: `audit=1:4.0.2-2+deb13u1`
 
 Binary Packages:
 
-- `libaudit-common=1:4.0.2-2`
-- `libaudit1:amd64=1:4.0.2-2+b2`
+- `libaudit-common=1:4.0.2-2+deb13u1`
+- `libaudit1:amd64=1:4.0.2-2+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -303,13 +303,20 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris audit=1:4.0.2-2+deb13u1
+'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2-2%2bdeb13u1.dsc' audit_4.0.2-2+deb13u1.dsc 2761 SHA256:f72198219d4a50967e328a143c9c0a7ba981c8f3790b2880465b8a80ac33850e
+'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2.orig.tar.gz' audit_4.0.2.orig.tar.gz 1198769 SHA256:d5d1b5d50ee4a2d0d17875bc6ae6bd6a7d5b34d9557ea847a39faec531faaa0a
+'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.2-2%2bdeb13u1.debian.tar.xz' audit_4.0.2-2+deb13u1.debian.tar.xz 25008 SHA256:ab39cb2d6dc6b0440da37f085b643dffc86d8cc5370b5cc6502d36b53edaa862
+```
 
-- http://snapshot.debian.org/package/audit/1:4.0.2-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/audit/1:4.0.2-2+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/audit/1:4.0.2-2+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/audit/1:4.0.2-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autoconf=2.72-3.1`
 
@@ -352,25 +359,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/autoconf/2.72-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/autoconf/2.72-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=13.8+deb13u6`
+### `dpkg` source package: `base-files=13.8+deb13u7`
 
 Binary Packages:
 
-- `base-files=13.8+deb13u6`
+- `base-files=13.8+deb13u7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
-- `GPL`
+- `GPL-2`
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=13.8+deb13u7
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u7.dsc' base-files_13.8+deb13u7.dsc 1247 SHA256:6240b5a02fc32bd6d925bb7776e00c467e80d930f8cf3c4a20c299ce692dc7e4
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u7.tar.xz' base-files_13.8+deb13u7.tar.xz 83444 SHA256:be32803b9408ac9aa46b96f68c83ee45e88d04d89854a87999986efc4cb34c69
+```
 
-- http://snapshot.debian.org/package/base-files/13.8+deb13u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/13.8+deb13u7/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.8+deb13u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.8+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1628,11 +1641,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gsasl/2.2.2-1.1+deb13u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gsasl/2.2.2-1.1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gzip=1.13-1`
+### `dpkg` source package: `gzip=1.13-1+deb13u1`
 
 Binary Packages:
 
-- `gzip=1.13-1`
+- `gzip=1.13-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
@@ -1642,13 +1655,20 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gzip=1.13-1+deb13u1
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1%2bdeb13u1.dsc' gzip_1.13-1+deb13u1.dsc 1708 SHA256:0c25763da4f7242fbe7e9185b69bcb3f986011b04446b66a84c52bbdf731d308
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13.orig.tar.xz' gzip_1.13.orig.tar.xz 838248 SHA256:7454eb6935db17c6655576c2e1b0fabefd38b4d0936e0f87f48cd062ce91a057
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.13-1%2bdeb13u1.debian.tar.xz' gzip_1.13-1+deb13u1.debian.tar.xz 21364 SHA256:ffc69d13290009f42dbb4d10a34839350eff3fdaf4be1fda03d10b238ba2f77d
+```
 
-- http://snapshot.debian.org/package/gzip/1.13-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gzip/1.13-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/gzip/1.13-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gzip/1.13-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -2080,7 +2100,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.75-10+deb13u1+b1`
+- `libcap2:amd64=1:2.75-10+deb13u1+b3`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -4764,23 +4784,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tini/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tini/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026b-0+deb13u1`
+### `dpkg` source package: `tzdata=2026c-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026b-0+deb13u1`
+- `tzdata=2026c-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026c-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.dsc' tzdata_2026c-0+deb13u1.dsc 2466 SHA256:b18d6eddfb23971bacbf569a2641cda837002a813d8e8940d8792ea7ba8e2d4e
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.debian.tar.xz' tzdata_2026c-0+deb13u1.debian.tar.xz 127148 SHA256:48cd3f42cee2b8ec62ca9c2f4c43cf6c0ec05e1a5ae97f4ed771635811b82f29
+```
 
-- http://snapshot.debian.org/package/tzdata/2026b-0+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026c-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
