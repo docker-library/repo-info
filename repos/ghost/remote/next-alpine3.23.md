@@ -1,7 +1,7 @@
 ## `ghost:next-alpine3.23`
 
 ```console
-$ docker pull ghost@sha256:d98338fe513aff0e688e5cb85a34b6b14bc15853b80127dedb3b8be6a80a1933
+$ docker pull ghost@sha256:62fb7ee667cd1daf6bd23ef1d78327084008337bacd6f4d2dfd9c618813c468f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull ghost@sha256:d98338fe513aff0e688e5cb85a34b6b14bc15853b80127dedb3b8
 ### `ghost:next-alpine3.23` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:a51d9562e87f74d76602118779362dc997d260f1e64e2f909fc8052fcc21845e
+$ docker pull ghost@sha256:9a2d6ff0f3839c1741a000fb802bcd33ea6cabdd088bb08bdbe609123411f248
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.1 MB (143113866 bytes)**  
+-	Total Size: **139.1 MB (139126258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6756c6df420383ea8db8847b451593b0e4ac8490e612122bee5a54b41647e9ef`
+-	Image ID: `sha256:626ce4993102056ab97441a393c77d8580378a792f4b8df32bec2d97b8bf32b8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","index.js"]`
 
@@ -43,41 +43,41 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Thu, 17 Sep 2026 21:47:30 GMT
 CMD ["node"]
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 ENV GOSU_VERSION=1.19
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 RUN set -eux; 	apk add --no-cache --virtual .gosu-deps ca-certificates dpkg gnupg; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 RUN set -eux; 	deluser node; 	rm -rf /home/node; 	addgroup -g 1000 ghost; 	adduser -u 1000 -G ghost -h /home/ghost -s /bin/sh -H -D ghost # buildkit
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 ENV NODE_ENV=production
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 ENV GHOST_INSTALL=/home/ghost
-# Thu, 17 Sep 2026 22:35:11 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
 ENV GHOST_CONTENT=/home/ghost/content
-# Thu, 17 Sep 2026 22:35:11 GMT
-ENV GHOST_VERSION=6.64.0
-# Thu, 17 Sep 2026 22:35:11 GMT
-ENV GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.64.0/ghost-6.64.0.tgz
-# Thu, 17 Sep 2026 22:35:11 GMT
-ENV GHOST_SHA256=7d9420128eeb2102339e326fd03fd17c581c91a26549a918fda717fe37d8fd4e
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:43 GMT
+ENV GHOST_VERSION=6.65.0
+# Tue, 22 Sep 2026 19:15:43 GMT
+ENV GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.65.0/ghost-6.65.0.tgz
+# Tue, 22 Sep 2026 19:15:43 GMT
+ENV GHOST_SHA256=13318d07a2c44a1ab96fb49bfb45855f53028ff7fbee6428d050ba73fa72b9e4
+# Tue, 22 Sep 2026 19:15:57 GMT
 RUN set -eux; 	corepack enable; 		mkdir -p "$GHOST_INSTALL"; 	chown ghost:ghost "$GHOST_INSTALL"; 	cd "$GHOST_INSTALL"; 		export XDG_CACHE_HOME=/tmp/xdg-cache XDG_DATA_HOME=/tmp/xdg-data; 		gosu ghost wget -O ghost.tgz "$GHOST_TARBALL"; 	echo "$GHOST_SHA256  ghost.tgz" | sha256sum -c -; 	gosu ghost tar --extract --file ghost.tgz; 	rm ghost.tgz; 		gosu ghost pnpm install --prod --frozen-lockfile; 		gosu ghost rm -rf "$GHOST_INSTALL/components"; 		gosu ghost node scripts/prune.mts "$GHOST_INSTALL" --profile=image; 		gosu ghost ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 		gosu ghost mv "$GHOST_INSTALL/content" "$GHOST_INSTALL/content.orig"; 	gosu ghost mkdir -p "$GHOST_INSTALL/content"; 		rm -rf /opt/yarn-*; 	rm -rf /tmp/xdg-cache /tmp/xdg-data; 	npm cache clean --force; 		node --version; 	gosu ghost node -e 'require("better-sqlite3"); if (!require("@tryghost/image-transform").canTransformFiles()) throw new Error("sharp not installed");' # buildkit
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 COPY --chown=ghost:ghost config.production.json /home/ghost/ # buildkit
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 RUN set -eux; 	chmod 1777 "$GHOST_CONTENT"; 	cd "$GHOST_INSTALL"; 	node -e 'JSON.parse(require("fs").readFileSync("config.production.json"))'; 	[ "$(readlink -f config.development.json)" = "$GHOST_INSTALL/config.production.json" ] # buildkit
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 WORKDIR /home/ghost
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 VOLUME [/home/ghost/content]
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 EXPOSE map[2368/tcp:{}]
-# Thu, 17 Sep 2026 22:35:27 GMT
+# Tue, 22 Sep 2026 19:15:58 GMT
 CMD ["node" "index.js"]
 ```
 
@@ -98,69 +98,69 @@ CMD ["node" "index.js"]
 		Last Modified: Thu, 17 Sep 2026 21:47:43 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f2937e1b5f5dd9116d37d807573a9219d7c3221f2a01515e6a5f5f1c37d3274`  
-		Last Modified: Thu, 17 Sep 2026 22:35:47 GMT  
-		Size: 902.2 KB (902238 bytes)  
+	-	`sha256:aa933d7516d46af7ac01cdff893410b7649f5379c8ff991e2631456ba7a0b680`  
+		Last Modified: Tue, 22 Sep 2026 19:16:20 GMT  
+		Size: 902.3 KB (902252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779667227b30f54542b60b8b838d7e85645f67c3c8458876991e91f26d068a03`  
-		Last Modified: Thu, 17 Sep 2026 22:35:47 GMT  
-		Size: 933.0 B  
+	-	`sha256:1fa68333e52e6b00ad6e6790fad909841e8dde4560bef571c745580461f2c828`  
+		Last Modified: Tue, 22 Sep 2026 19:16:20 GMT  
+		Size: 935.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc6372459eef655a5e3768fe5c543ad61f2b91aa300cc9c1654fd327dabea7c2`  
-		Last Modified: Thu, 17 Sep 2026 22:35:49 GMT  
-		Size: 81.6 MB (81558082 bytes)  
+	-	`sha256:e4e04c61692d2cf82e4e94d418311254ab87fb4165d890cbfb00706b186ed022`  
+		Last Modified: Tue, 22 Sep 2026 19:16:22 GMT  
+		Size: 77.6 MB (77570453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa3471d40759c5b31597a1ddb6041d717ecbd943af8bd876c716d0c45b5d8247`  
-		Last Modified: Thu, 17 Sep 2026 22:35:47 GMT  
+	-	`sha256:fb5871add71cf5b76c5f6036e7c72930bfa1828c967533d9eadafac852e41422`  
+		Last Modified: Tue, 22 Sep 2026 19:16:20 GMT  
 		Size: 355.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16a503a321a4d3e67e01806522b1ec5429f17d2bd748338d37de1bc7ac27cfe3`  
-		Last Modified: Thu, 17 Sep 2026 22:35:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:21763d8c393428e7b47146f14e944caa6c681e992717e9f79bd93b9e8421b70b`  
+		Last Modified: Tue, 22 Sep 2026 19:16:21 GMT  
+		Size: 149.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e87171343c5c51501123928b1a6195af8b898825895cd2506b989035912e086f`  
-		Last Modified: Thu, 17 Sep 2026 22:35:48 GMT  
-		Size: 1.8 KB (1828 bytes)  
+	-	`sha256:c6506fd6a99498a82ced3e9e82f071d2c16845cf28a72e4f621b008581456e36`  
+		Last Modified: Tue, 22 Sep 2026 19:16:21 GMT  
+		Size: 1.8 KB (1831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:next-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:8b659786e66fb24e8fd9df4ad98914aa7b6e874ddf2c61fffdd632eee578e85f
+$ docker pull ghost@sha256:5437c14b9573d7c15f565f37ebc83b763e3bee505a8f097b1dbcde60f229a642
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2064837 bytes)**  
+-	Total Size: **2.0 MB (1977848 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:660f52d89fb8a7bcbf4ca2448fd326e5a953fae43b8c4fa6f9274783c596b780`
+-	Image ID: `sha256:855a02bdd6faa0d5087daa0f832809f800299b000abbf0e1e7049aec156e11f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4877194b76e6388a9a88911a09ada8b5cf4e0ae41a730e68e96f7275b35f022`  
-		Last Modified: Thu, 17 Sep 2026 22:35:47 GMT  
-		Size: 2.0 MB (2031746 bytes)  
+	-	`sha256:d9223d51fafe2e17f217f5d299b65a2441f1d472d314d4bec24e0e192dd671a3`  
+		Last Modified: Tue, 22 Sep 2026 19:16:20 GMT  
+		Size: 1.9 MB (1944757 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5eb3e569010aa25864bafb31d35c89e404b2421c37db3a142a38718e1bc165b0`  
-		Last Modified: Thu, 17 Sep 2026 22:35:47 GMT  
+	-	`sha256:f2c29a7c7409ed8af7fea07bd2789f565b1d116220f6db3f78a01ca858332199`  
+		Last Modified: Tue, 22 Sep 2026 19:16:20 GMT  
 		Size: 33.1 KB (33091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:next-alpine3.23` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:faf078cd4b3ab01bf1ac4deac1f4f33be81c4f1a91caf68ad79f32679d3f82ac
+$ docker pull ghost@sha256:25598db4d40c782a8ecebacebbf2e55bf775889b2ec5037d7142ce000de4f738
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.0 MB (142990614 bytes)**  
+-	Total Size: **139.0 MB (139009298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53d8eba3fb00d181858fa3a404df4c5b16acb930192cb6b5e3046d458bfe1cee`
+-	Image ID: `sha256:966675c2998edd14cb10ce39208a2a37c02b9322bb7fa0acceb1a8b85bacbc38`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","index.js"]`
 
@@ -183,41 +183,41 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Thu, 17 Sep 2026 22:20:19 GMT
 CMD ["node"]
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:31 GMT
 ENV GOSU_VERSION=1.19
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:31 GMT
 RUN set -eux; 	apk add --no-cache --virtual .gosu-deps ca-certificates dpkg gnupg; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:32 GMT
 RUN set -eux; 	deluser node; 	rm -rf /home/node; 	addgroup -g 1000 ghost; 	adduser -u 1000 -G ghost -h /home/ghost -s /bin/sh -H -D ghost # buildkit
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:32 GMT
 ENV NODE_ENV=production
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:32 GMT
 ENV GHOST_INSTALL=/home/ghost
-# Thu, 17 Sep 2026 23:26:36 GMT
+# Tue, 22 Sep 2026 19:56:32 GMT
 ENV GHOST_CONTENT=/home/ghost/content
-# Thu, 17 Sep 2026 23:26:36 GMT
-ENV GHOST_VERSION=6.64.0
-# Thu, 17 Sep 2026 23:26:36 GMT
-ENV GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.64.0/ghost-6.64.0.tgz
-# Thu, 17 Sep 2026 23:26:36 GMT
-ENV GHOST_SHA256=7d9420128eeb2102339e326fd03fd17c581c91a26549a918fda717fe37d8fd4e
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:32 GMT
+ENV GHOST_VERSION=6.65.0
+# Tue, 22 Sep 2026 19:56:32 GMT
+ENV GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.65.0/ghost-6.65.0.tgz
+# Tue, 22 Sep 2026 19:56:32 GMT
+ENV GHOST_SHA256=13318d07a2c44a1ab96fb49bfb45855f53028ff7fbee6428d050ba73fa72b9e4
+# Tue, 22 Sep 2026 19:56:47 GMT
 RUN set -eux; 	corepack enable; 		mkdir -p "$GHOST_INSTALL"; 	chown ghost:ghost "$GHOST_INSTALL"; 	cd "$GHOST_INSTALL"; 		export XDG_CACHE_HOME=/tmp/xdg-cache XDG_DATA_HOME=/tmp/xdg-data; 		gosu ghost wget -O ghost.tgz "$GHOST_TARBALL"; 	echo "$GHOST_SHA256  ghost.tgz" | sha256sum -c -; 	gosu ghost tar --extract --file ghost.tgz; 	rm ghost.tgz; 		gosu ghost pnpm install --prod --frozen-lockfile; 		gosu ghost rm -rf "$GHOST_INSTALL/components"; 		gosu ghost node scripts/prune.mts "$GHOST_INSTALL" --profile=image; 		gosu ghost ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 		gosu ghost mv "$GHOST_INSTALL/content" "$GHOST_INSTALL/content.orig"; 	gosu ghost mkdir -p "$GHOST_INSTALL/content"; 		rm -rf /opt/yarn-*; 	rm -rf /tmp/xdg-cache /tmp/xdg-data; 	npm cache clean --force; 		node --version; 	gosu ghost node -e 'require("better-sqlite3"); if (!require("@tryghost/image-transform").canTransformFiles()) throw new Error("sharp not installed");' # buildkit
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 COPY --chown=ghost:ghost config.production.json /home/ghost/ # buildkit
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 RUN set -eux; 	chmod 1777 "$GHOST_CONTENT"; 	cd "$GHOST_INSTALL"; 	node -e 'JSON.parse(require("fs").readFileSync("config.production.json"))'; 	[ "$(readlink -f config.development.json)" = "$GHOST_INSTALL/config.production.json" ] # buildkit
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 WORKDIR /home/ghost
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 VOLUME [/home/ghost/content]
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 EXPOSE map[2368/tcp:{}]
-# Thu, 17 Sep 2026 23:26:52 GMT
+# Tue, 22 Sep 2026 19:56:47 GMT
 CMD ["node" "index.js"]
 ```
 
@@ -238,55 +238,55 @@ CMD ["node" "index.js"]
 		Last Modified: Thu, 17 Sep 2026 22:20:34 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91fc499e808bb290328a24fd48d0681c70d908dc73de6c6a52bbfc354032b0d3`  
-		Last Modified: Thu, 17 Sep 2026 23:27:16 GMT  
-		Size: 855.0 KB (855048 bytes)  
+	-	`sha256:09dbd88d3b1f354a26bb3c03f425bae42c97df2af6edfc6c9224b51a3bab9832`  
+		Last Modified: Tue, 22 Sep 2026 19:57:10 GMT  
+		Size: 855.1 KB (855057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e748ce65668907f61ee31be747db86fb58ee273df9717c49e9acc590590aedc9`  
-		Last Modified: Thu, 17 Sep 2026 23:27:16 GMT  
+	-	`sha256:4cfd4830b76ad87c49f5773efd2ba1db64723b7cb17c4f76cd9f5486e01fc0ad`  
+		Last Modified: Tue, 22 Sep 2026 19:57:10 GMT  
 		Size: 934.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4deeb11eae6cded324694eaa4de4f65a4e4305b1979331d410c2a0a9e2195555`  
-		Last Modified: Thu, 17 Sep 2026 23:27:18 GMT  
-		Size: 81.1 MB (81124209 bytes)  
+	-	`sha256:c944ae8b75707b4d894c0d8c30c9f49920a5bb69a6d17d0ccc73fbfee0295536`  
+		Last Modified: Tue, 22 Sep 2026 19:57:12 GMT  
+		Size: 77.1 MB (77142885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d5bb65c583463519661a8964e6468541a3d297b9f68e87bb19eabd84ee7501b`  
-		Last Modified: Thu, 17 Sep 2026 23:27:16 GMT  
-		Size: 354.0 B  
+	-	`sha256:cacda3582d164793153ea7f59c7ce0673558553abbec4c38d00635af85f54703`  
+		Last Modified: Tue, 22 Sep 2026 19:57:10 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:492443e82841b8474905f0287bc3fdf4b897eaa5977b2b6647a0b39aca8c2825`  
-		Last Modified: Thu, 17 Sep 2026 23:27:17 GMT  
-		Size: 146.0 B  
+	-	`sha256:520030e9de6d115042be71335f2bcc090ba443dcd53ef556037633ed846d3a05`  
+		Last Modified: Tue, 22 Sep 2026 19:57:11 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41c74ef15d955ac83cf09a7ce0fe79e8309f7db866b8f1856df527730e9ddb04`  
-		Last Modified: Thu, 17 Sep 2026 23:27:17 GMT  
-		Size: 1.8 KB (1828 bytes)  
+	-	`sha256:a4d90cae6990399cf3033ffb34e6f2706500a940f7be29761bf52776bbc34330`  
+		Last Modified: Tue, 22 Sep 2026 19:57:11 GMT  
+		Size: 1.8 KB (1826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:next-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:f4cbbc18e4ff7ac9e6e90ad645e591716331cca4a52e36775995bff7cf8cf7c9
+$ docker pull ghost@sha256:25f33693048c476200f8564a4e69cd7e2864ea400e05824474547061ba7d7a13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2063722 bytes)**  
+-	Total Size: **2.0 MB (1976734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb9f265912b2132326f213d2ff356a6a36e5fe3299cd49e6ac8813b779952c7f`
+-	Image ID: `sha256:3d022e4730aa7b5f73589b75a36a4554a2e8b6b9709b82038567b4e7e84ee6c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aa03657bb887a87675e04a6b81bb145d64c7620a87a1a8e9078fd239e1ef3bb7`  
-		Last Modified: Thu, 17 Sep 2026 23:27:16 GMT  
-		Size: 2.0 MB (2030435 bytes)  
+	-	`sha256:2f09a8761a11e07a0f722d51c2ee491863c14ec573d3e8bd653290c8a3d4da1b`  
+		Last Modified: Tue, 22 Sep 2026 19:57:10 GMT  
+		Size: 1.9 MB (1943446 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9c8445d32f9d7e0217d0fbe5a0456124956ce1f3b503bd26d31968ac3fc75a88`  
-		Last Modified: Thu, 17 Sep 2026 23:27:16 GMT  
-		Size: 33.3 KB (33287 bytes)  
+	-	`sha256:9a705c6bf73c0bd4aaafaa2f97eb8c6eebde8981c094c3811b563f3f1c89a0dd`  
+		Last Modified: Tue, 22 Sep 2026 19:57:10 GMT  
+		Size: 33.3 KB (33288 bytes)  
 		MIME: application/vnd.in-toto+json
