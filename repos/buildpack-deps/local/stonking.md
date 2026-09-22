@@ -764,13 +764,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.23.7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.tar.xz' dpkg_1.23.7ubuntu1.tar.xz 5773036 SHA512:94489c924b7d8588ea156fc9593fb576c1fce1b6e159d5095aacbea33c257459af523f77a5c471bbf54f3fb7787c554e90705e40d048db28c00d2e756525c6df
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.23.7ubuntu1.dsc' dpkg_1.23.7ubuntu1.dsc 3482 SHA512:b8af1554884f9057bfca85a0dc20a7c18f6ef1773b4ab423148360b069b99bed9624c8fdbbf9c0cc0626df9ea993b3f833ba7c2112c12157fd4d7696b3e8dc3a
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.4-1`
 
@@ -2201,14 +2197,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.23.3-1.dsc' libheif_1.23.3-1.dsc 3844 SHA512:597c48c58b569124094ace3a454c1e82813f284d9d8b4c8aa1a6f81966ddc03c86b1045b6044938a131ac448ab056bcef0c5b82c0d1e55582d142c4a89142c2d
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.23.3.orig.tar.gz' libheif_1.23.3.orig.tar.gz 2178756 SHA512:035b194bba5d55bc860e95956d38eb8392bf8714f799a7918f46f504d7c61b2ed616ad06a7e8b8da577afd3abc006e9201e96ae967f2eb07b163165ddb53d8e7
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.23.3-1.debian.tar.xz' libheif_1.23.3-1.debian.tar.xz 14936 SHA512:9885a74e7c840dac2b28587652ad12960247c6084f969eb8a0cb14e7bad3be1055cb43ab53d94186543e7ef61b8e6fad1833b4a15394351a7038b90e39d7762c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libheif/1.23.3-1/
+
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -2764,15 +2759,9 @@ Licenses: (parsed from: `/usr/share/doc/libsharpyuv-dev/copyright`, `/usr/share/
 - `Apache-2.0`
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.5.0-0.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.5.0.orig.tar.gz' libwebp_1.5.0.orig.tar.gz 4267494 SHA512:7a39594cf5585428f82d555b05e78aa63758a56841a313c0b74dfb4996afe37dddf92498d6123ff2a949a7209fb9097927f10ee75b5a38b481f110c892e5302b
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.5.0.orig.tar.gz.asc' libwebp_1.5.0.orig.tar.gz.asc 833 SHA512:892e6240b767d7b47fc4faa337aa78f1426359e155c94305377510b0a0c8a24830597b261ebb458f6310338afde487616bd6cca3347b624d8f46500487a3c067
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.5.0-0.1build1.debian.tar.xz' libwebp_1.5.0-0.1build1.debian.tar.xz 11356 SHA512:c27b0795a00e022d91a881f438a6166fe7ea080bf6e758db487a6f033e81615a3061790a505a95f2baa9f7bc7fc07f80f3ce5f4435ef9e7f121039b95699cf02
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.5.0-0.1build1.dsc' libwebp_1.5.0-0.1build1.dsc 2889 SHA512:085f6790e762ec35b9e9821085fd38d7788f5c7ab8d503f56d3b5d374f678b3cdcce147969a91ddd0e54bf8eaeafe9ffe331cf7b6ac3ed1cdc9fd5b0a5fb2a53
-```
 
 ### `dpkg` source package: `libwmf=0.2.14-1`
 
@@ -3061,14 +3050,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.2.0-5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.2.0.orig.tar.gz' linux_7.2.0.orig.tar.gz 260288076 SHA512:3254753cec98f5f1c6ffb12eba5b710c1882cd82d174e3061ccffc281502c33827bf9aa2cc45b918a4c5892ac2ac0d1692e366b8861d2592e4949a137f5a37d2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.2.0-5.5.diff.gz' linux_7.2.0-5.5.diff.gz 866260 SHA512:2c95f97be731d519fb7204608989bb34b9a25ee9c850924dd197928fde731892f751a3e462e10ef3d1c46d49c08e1c75bafd437eebe271a17c9674b12c391f0c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.2.0-5.5.dsc' linux_7.2.0-5.5.dsc 7709 SHA512:c3485f79c39f1469631af3ac24af3b4f94bb7f0dfca191fb77cd7f99fe7be3cc6284fa7994a399888e51560a1aaa2f2b2b82a8643ae10d8d80cb2a0ef9ffffdb
-```
 
 ### `dpkg` source package: `lto-disabled-list=83`
 
@@ -3419,15 +3403,9 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0t64/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.8-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.8.orig.tar.bz2' npth_1.8.orig.tar.bz2 317739 SHA512:34fdeea3d8a7a594d8fdbcc6d5d389b5c8e282e8e84c1491b1e51960c0fa007df6a1d62543f0107f0772f3215557d4b25c2a9c7067cb0ae2f8de7b4d63d09fb4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.8.orig.tar.bz2.asc' npth_1.8.orig.tar.bz2.asc 390 SHA512:2d2d26d2bde77997187792f724b89b6c1ba7ad845c0087d78d7bd2eef688136df8fa8ea02c5199c0a3ad602bf228af0fadf82ecd3ff4b9ed35c71d009bb2e1a5
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.8-3build1.debian.tar.xz' npth_1.8-3build1.debian.tar.xz 8752 SHA512:b834fb1ce6f2d4d267fd2263a66e210ac07fb66be29a7fd396997437e33f0e3b1f89b9a093cf400a112a40ae7e62b4ec5ea3dda63861e52a4832d63bbda812cd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.8-3build1.dsc' npth_1.8-3build1.dsc 2212 SHA512:3f8e58740736464a74a97012dee0f7141ae9ffbcf315d3f388aa5fc52031ef4c0e3abad39fad258b6732e21df31878b6d20598ea88e7e719d9a001a99d86e845
-```
 
 ### `dpkg` source package: `openexr=3.4.6+ds-4ubuntu3`
 
@@ -4105,14 +4083,9 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.4.0-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.4.0.orig.tar.gz' rust-sequoia-sq_1.4.0.orig.tar.gz 779216 SHA512:53a776ddd367e3d327770aff964f64010618a9ebc8380f57316fd65b3b76288bf8232ae4090d29b3bb57cc48092dfd932471dcef81b0672ba6e5ddbb060985f1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.4.0-0ubuntu1.debian.tar.xz' rust-sequoia-sq_1.4.0-0ubuntu1.debian.tar.xz 28676300 SHA512:2ae21f9dcc017a873be4a71be87068c6f74d6d4160b6b503673b66c88402cdf150bde329f68abd6af3d2f9c30f5a74e7de5fdfe2f40d000128753014e0bc5112
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-sequoia-sq/rust-sequoia-sq_1.4.0-0ubuntu1.dsc' rust-sequoia-sq_1.4.0-0ubuntu1.dsc 8585 SHA512:b1450894beb87bd3ca7a59f74a2a2ed77085b6f9c2157e297d96e79f46f3571e618fbd0581bef7e79dcf4afd7a8da0f1a95161573e0e6fd52a0c7c59071640c8
-```
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.4.0-1ubuntu2`
 
