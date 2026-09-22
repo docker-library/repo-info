@@ -1,19 +1,19 @@
-# `erlang:29.0.6.0-alpine`
+# `erlang:29.1.0.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac39a593295357ada6db3038fb800070f668c6cdbf732d9ef4dfcdf296634a55`
-- Created: `2026-09-17T21:35:25.855979552Z`
-- Virtual Size: ~ 78.88 Mb  
+- Image ID: `sha256:f9ad0e9783a3d8313dcad8e2062a8a8b1d6ce1d48a8b4ce9588b3f749cb6a420`
+- Created: `2026-09-18T18:20:08.870428525Z`
+- Virtual Size: ~ 89.41 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=29.0.6`
+  - `OTP_VERSION=29.1`
   - `REBAR3_VERSION=3.27.0`
 - Labels:
-  - `org.opencontainers.image.version=29.0.6`
+  - `org.opencontainers.image.version=29.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -95,7 +95,7 @@ apk-tools-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-3.0.8-r0 installed size:
-106 KiB
+112 KiB
 
 apk-tools-3.0.8-r0 license:
 GPL-2.0-only
@@ -112,7 +112,7 @@ busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
 busybox-1.37.0-r31 installed size:
-809 KiB
+794 KiB
 
 busybox-1.37.0-r31 license:
 GPL-2.0-only
@@ -146,7 +146,7 @@ ca-certificates-20260909-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20260909-r0 installed size:
-213 KiB
+210 KiB
 
 ca-certificates-20260909-r0 license:
 MPL-2.0 AND MIT
@@ -180,7 +180,7 @@ libapk-3.0.8-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 libapk-3.0.8-r0 installed size:
-277 KiB
+270 KiB
 
 libapk-3.0.8-r0 license:
 GPL-2.0-only
@@ -197,10 +197,27 @@ libcrypto3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
 libcrypto3-3.5.8-r0 installed size:
-3874 KiB
+5095 KiB
 
 libcrypto3-3.5.8-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libgcc`
+
+```console
+libgcc-15.2.0-r5 description:
+GNU C compiler runtime libraries
+
+libgcc-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libgcc-15.2.0-r5 installed size:
+169 KiB
+
+libgcc-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -214,7 +231,7 @@ liblksctp-1.0.19-r5 webpage:
 https://lksctp.sourceforge.net/
 
 liblksctp-1.0.19-r5 installed size:
-27 KiB
+28 KiB
 
 liblksctp-1.0.19-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -231,7 +248,7 @@ libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
 libncursesw-6.6_p20260516-r0 installed size:
-325 KiB
+334 KiB
 
 libncursesw-6.6_p20260516-r0 license:
 X11
@@ -248,10 +265,27 @@ libssl3-3.5.8-r0 webpage:
 https://www.openssl.org/
 
 libssl3-3.5.8-r0 installed size:
-832 KiB
+819 KiB
 
 libssl3-3.5.8-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-15.2.0-r5 description:
+GNU C++ standard runtime library
+
+libstdc++-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libstdc++-15.2.0-r5 installed size:
+2738 KiB
+
+libstdc++-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -265,7 +299,7 @@ lksctp-tools-1.0.19-r5 webpage:
 https://lksctp.sourceforge.net/
 
 lksctp-tools-1.0.19-r5 installed size:
-102 KiB
+108 KiB
 
 lksctp-tools-1.0.19-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -282,7 +316,7 @@ musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-1.2.6-r2 installed size:
-657 KiB
+654 KiB
 
 musl-1.2.6-r2 license:
 MIT
@@ -299,7 +333,7 @@ musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
 musl-utils-1.2.6-r2 installed size:
-44 KiB
+54 KiB
 
 musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
@@ -350,7 +384,7 @@ ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
 ssl_client-1.37.0-r31 installed size:
-13 KiB
+14 KiB
 
 ssl_client-1.37.0-r31 license:
 GPL-2.0-only
@@ -367,7 +401,7 @@ zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
 zlib-1.3.2-r0 installed size:
-101 KiB
+105 KiB
 
 zlib-1.3.2-r0 license:
 Zlib
