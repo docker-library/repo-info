@@ -1,7 +1,7 @@
 ## `groovy:5-jdk17-alpine`
 
 ```console
-$ docker pull groovy@sha256:6618508a451a5c18bc7a8273bee7eb01f9e251ea542e5b1ab5c4ab58368c5359
+$ docker pull groovy@sha256:7db7e1ac50b27494916b1218c974de1e201549dca1d8957f8614b5213978a713
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull groovy@sha256:6618508a451a5c18bc7a8273bee7eb01f9e251ea542e5b1ab5c4
 ### `groovy:5-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull groovy@sha256:afaee1c03935957cbfdb4ffaffe1095f6ffac61fc04c37e1e5d7d74a6ea2fa62
+$ docker pull groovy@sha256:c2fadb45b2417449b113848d43fc03a8e36773f86350387ed3e39fc6e1dd0962
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.9 MB (207914996 bytes)**  
+-	Total Size: **208.0 MB (207976208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d2baa01a0d2b56e9a688a96f7e6d92584d36113f041ecb479ec187545de06ad`
+-	Image ID: `sha256:43fe24abc8a3d91463e1504ed6f09aaddf3cfca6fa4a24404b3f7c61a41d0eaa`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -47,23 +47,23 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 17 Sep 2026 21:40:44 GMT
 CMD ["jshell"]
-# Thu, 17 Sep 2026 22:25:54 GMT
+# Wed, 23 Sep 2026 18:16:48 GMT
 CMD ["groovysh"]
-# Thu, 17 Sep 2026 22:25:54 GMT
+# Wed, 23 Sep 2026 18:16:48 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Thu, 17 Sep 2026 22:25:54 GMT
+# Wed, 23 Sep 2026 18:16:48 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && addgroup --system --gid 1000 groovy     && adduser --system --ingroup groovy --uid 1000 --shell /bin/ash groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown -R groovy:groovy /home/groovy     && chmod -R 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln -s /home/groovy/.groovy /root/.groovy # buildkit
-# Thu, 17 Sep 2026 22:25:54 GMT
+# Wed, 23 Sep 2026 18:16:48 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Thu, 17 Sep 2026 22:25:54 GMT
+# Wed, 23 Sep 2026 18:16:49 GMT
 WORKDIR /home/groovy
-# Thu, 17 Sep 2026 22:25:54 GMT
-ENV GROOVY_VERSION=5.1.1
-# Thu, 17 Sep 2026 22:26:03 GMT
+# Wed, 23 Sep 2026 18:16:49 GMT
+ENV GROOVY_VERSION=5.1.3
+# Wed, 23 Sep 2026 18:18:51 GMT
 RUN set -o errexit -o nounset     && echo "Installing build dependencies"     && apk add --no-cache --virtual .build-deps         gnupg         && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && (rm -rf "${GNUPGHOME}" || true)     && rm groovy.zip.asc         && echo "Cleaning up build dependencies"     && apk del .build-deps         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && rm -f "${GROOVY_HOME}/lib/groovy-raw-${GROOVY_VERSION}-raw.jar"     && ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy" # buildkit
-# Thu, 17 Sep 2026 22:26:03 GMT
+# Wed, 23 Sep 2026 18:18:51 GMT
 USER 1000:1000
-# Thu, 17 Sep 2026 22:26:04 GMT
+# Wed, 23 Sep 2026 18:18:52 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version # buildkit
 ```
 
@@ -88,43 +88,43 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Thu, 17 Sep 2026 21:40:59 GMT  
 		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93e883d5a9b951964fa04e66cc1f2e96b7b251d95c3a7c1be5c3d6e4c9c6f197`  
-		Last Modified: Thu, 17 Sep 2026 22:26:12 GMT  
-		Size: 1.0 KB (1030 bytes)  
+	-	`sha256:d865e31ce6058dd6879140b7811897a4633b2c69c5917a791af891258b7144d8`  
+		Last Modified: Wed, 23 Sep 2026 18:19:01 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f32eb9d286749fc41bd3e347b05159daa7b8ce28dfc375e33aa280767e166559`  
-		Last Modified: Thu, 17 Sep 2026 22:26:14 GMT  
-		Size: 37.7 MB (37714859 bytes)  
+	-	`sha256:8400131cd70cf86923d6f20bfe38648812a25161e2436db937d6a132d716484c`  
+		Last Modified: Wed, 23 Sep 2026 18:19:02 GMT  
+		Size: 37.8 MB (37776069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c9e84919f3e2314b1ffe478c8c4a2cab12255a8554ba0390998ea79ae050bb6`  
-		Last Modified: Thu, 17 Sep 2026 22:26:12 GMT  
+	-	`sha256:cf4c5ce19bedfb18ba45b55d92acaa2251c6fa5610bf9e09904b574beb32a1cb`  
+		Last Modified: Wed, 23 Sep 2026 18:19:01 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:5-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:272438e1d0376d5777612a1bf6eee2b56ed872509898494c007c4a7484e4f64b
+$ docker pull groovy@sha256:37fb92bf545b71ede9c1c1d11b5dbcf1f16c1e3f81a49703af084fc11cc027a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1212811 bytes)**  
+-	Total Size: **1.2 MB (1212191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8300fc03d95e125d31a972951beb5936bbfe2ecc63ea1fbca9fa32cee1c02677`
+-	Image ID: `sha256:fba5ba1ccd264ab78fcb7e6e4eba7f8c4211dcf00cd79c2b3c0dbe073550b981`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f722a1de6a84586ad0450a165c0c64c89f8ef593b7a474d87cd957684675695b`  
-		Last Modified: Thu, 17 Sep 2026 22:26:12 GMT  
-		Size: 1.2 MB (1190484 bytes)  
+	-	`sha256:1a3be56d8396f5777212fdf9059c017fdbc3c562a8e11cd6d8c1ab896b05f3b3`  
+		Last Modified: Wed, 23 Sep 2026 18:19:01 GMT  
+		Size: 1.2 MB (1190174 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:435f3d71e59a1830217c5c5df24b154c7a2d0ebf936f1ddb9c92d31f06852ce6`  
-		Last Modified: Thu, 17 Sep 2026 22:26:12 GMT  
-		Size: 22.3 KB (22327 bytes)  
+	-	`sha256:ce499581d21ecfa47f28903e63ebf6e02feabb6c88b4a9400b98be180034763b`  
+		Last Modified: Wed, 23 Sep 2026 18:19:02 GMT  
+		Size: 22.0 KB (22017 bytes)  
 		MIME: application/vnd.in-toto+json
