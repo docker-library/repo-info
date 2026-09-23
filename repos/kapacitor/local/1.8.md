@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:96716cc409276b26ae2041b9c7d6960aa638125e7e591449e888bbc550745291`
-- Created: `2026-09-09T03:24:55.823728232Z`
-- Virtual Size: ~ 522.42 Mb  
+- Image ID: `sha256:088d1c6058f25e297a27ce0c3a6ed98fca5f7f8b40f224511063f1e45d02ee5a`
+- Created: `2026-09-22T18:49:14.096308067Z`
+- Virtual Size: ~ 525.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.8.6`
+  - `KAPACITOR_VERSION=1.8.7`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -749,11 +749,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
 ```
 
-### `dpkg` source package: `kapacitor=1.8.6-1`
+### `dpkg` source package: `kapacitor=1.8.7-1`
 
 Binary Packages:
 
-- `kapacitor=1.8.6-1`
+- `kapacitor=1.8.7-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
