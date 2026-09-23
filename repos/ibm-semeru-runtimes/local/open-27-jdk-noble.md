@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-26.0.2.10-jre-noble`
+# `ibm-semeru-runtimes:open-27.0.0.0-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf6d125daf958a2292be41bed40e5fcd641e99e2309092cda7cf3e7ff5ad7a0e`
-- Created: `2026-09-16T03:25:19.768038433Z`
-- Virtual Size: ~ 317.4 Mb  
+- Image ID: `sha256:21be7382bfce43d69f302363cb09b1ee957cf895c5b313567ef52f3f7b3c15f0`
+- Created: `2026-09-22T18:31:14.70560949Z`
+- Virtual Size: ~ 551.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=26.0.2.10`
+  - `JAVA_VERSION=27.0.0.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -530,11 +530,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.47.0-2.4~exp1ubuntu4.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-2.4%7eexp1ubuntu4.1.dsc' e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.dsc 3294 SHA512:0b9616118928aee8c2893dd1d6444735fd2c1852975414fbfeccb8d94bd01c34b49111282d728f835d539a17b6642b1c20509b17367b0bafc1d417b2910621b0
 ```
 
-### `dpkg` source package: `expat=2.6.1-2ubuntu0.4`
+### `dpkg` source package: `expat=2.6.1-2ubuntu0.5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.6.1-2ubuntu0.4`
+- `libexpat1:amd64=2.6.1-2ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -543,10 +543,10 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA256:14113ed69357172a0bf5a268793c8b5b01afc77c7a2e5fb8dd0b06cb87c02c4a
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.debian.tar.xz' expat_2.6.1-2ubuntu0.4.debian.tar.xz 31092 SHA256:8a24bd6c87fe292a2f00a2df71f7d2bbe3713fa63b1952c8552cdac4288d10fd
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.4.dsc' expat_2.6.1-2ubuntu0.4.dsc 1945 SHA256:a25d3fde103454ad5d34d4770bd5adb60bb5872da775df74cad193b5c4de1dff
+$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.5.debian.tar.xz' expat_2.6.1-2ubuntu0.5.debian.tar.xz 65444 SHA512:8bf60a55457b0c0b4b93f7754386774cb6248c28941a7cddca9efd0cb7c76c6bfb2a10c4dc11ce3aa373c8bc3e305b9332c6a7600aaaf4878901a6d768217925
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.5.dsc' expat_2.6.1-2ubuntu0.5.dsc 1474 SHA512:8aadd318d487503b9c5f901c88bbcd7325e0c817f7b9c9d0f618d41702eff718502ba3c7b8866ddc4a0b9ccf67d0fff9653b5cdd41460413fcb177bd6c6b2047
 ```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
