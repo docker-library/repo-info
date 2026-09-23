@@ -1,10 +1,10 @@
-# `ghost:6.64.0-next-alpine3.23`
+# `ghost:6.65.0-next-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6756c6df420383ea8db8847b451593b0e4ac8490e612122bee5a54b41647e9ef`
-- Created: `2026-09-17T22:35:27.443684653Z`
-- Virtual Size: ~ 426.29 Mb  
+- Image ID: `sha256:626ce4993102056ab97441a393c77d8580378a792f4b8df32bec2d97b8bf32b8`
+- Created: `2026-09-22T19:15:58.400827848Z`
+- Virtual Size: ~ 420.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,9 +17,9 @@
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.64.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.64.0/ghost-6.64.0.tgz`
-  - `GHOST_SHA256=7d9420128eeb2102339e326fd03fd17c581c91a26549a918fda717fe37d8fd4e`
+  - `GHOST_VERSION=6.65.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.65.0/ghost-6.65.0.tgz`
+  - `GHOST_SHA256=13318d07a2c44a1ab96fb49bfb45855f53028ff7fbee6428d050ba73fa72b9e4`
 
 ## `apk` (`.apk`-based packages)
 
