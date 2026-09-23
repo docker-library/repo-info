@@ -18,6 +18,12 @@
 -	[`hylang:1-pypy3.11-windowsservercore`](#hylang1-pypy311-windowsservercore)
 -	[`hylang:1-pypy3.11-windowsservercore-ltsc2022`](#hylang1-pypy311-windowsservercore-ltsc2022)
 -	[`hylang:1-pypy3.11-windowsservercore-ltsc2025`](#hylang1-pypy311-windowsservercore-ltsc2025)
+-	[`hylang:1-pypy3.12`](#hylang1-pypy312)
+-	[`hylang:1-pypy3.12-bookworm`](#hylang1-pypy312-bookworm)
+-	[`hylang:1-pypy3.12-trixie`](#hylang1-pypy312-trixie)
+-	[`hylang:1-pypy3.12-windowsservercore`](#hylang1-pypy312-windowsservercore)
+-	[`hylang:1-pypy3.12-windowsservercore-ltsc2022`](#hylang1-pypy312-windowsservercore-ltsc2022)
+-	[`hylang:1-pypy3.12-windowsservercore-ltsc2025`](#hylang1-pypy312-windowsservercore-ltsc2025)
 -	[`hylang:1-python3.10`](#hylang1-python310)
 -	[`hylang:1-python3.10-alpine`](#hylang1-python310-alpine)
 -	[`hylang:1-python3.10-alpine3.23`](#hylang1-python310-alpine323)
@@ -83,6 +89,12 @@
 -	[`hylang:1.3-pypy3.11-windowsservercore`](#hylang13-pypy311-windowsservercore)
 -	[`hylang:1.3-pypy3.11-windowsservercore-ltsc2022`](#hylang13-pypy311-windowsservercore-ltsc2022)
 -	[`hylang:1.3-pypy3.11-windowsservercore-ltsc2025`](#hylang13-pypy311-windowsservercore-ltsc2025)
+-	[`hylang:1.3-pypy3.12`](#hylang13-pypy312)
+-	[`hylang:1.3-pypy3.12-bookworm`](#hylang13-pypy312-bookworm)
+-	[`hylang:1.3-pypy3.12-trixie`](#hylang13-pypy312-trixie)
+-	[`hylang:1.3-pypy3.12-windowsservercore`](#hylang13-pypy312-windowsservercore)
+-	[`hylang:1.3-pypy3.12-windowsservercore-ltsc2022`](#hylang13-pypy312-windowsservercore-ltsc2022)
+-	[`hylang:1.3-pypy3.12-windowsservercore-ltsc2025`](#hylang13-pypy312-windowsservercore-ltsc2025)
 -	[`hylang:1.3-python3.10`](#hylang13-python310)
 -	[`hylang:1.3-python3.10-alpine`](#hylang13-python310-alpine)
 -	[`hylang:1.3-python3.10-alpine3.23`](#hylang13-python310-alpine323)
@@ -148,6 +160,12 @@
 -	[`hylang:1.3.1-pypy3.11-windowsservercore`](#hylang131-pypy311-windowsservercore)
 -	[`hylang:1.3.1-pypy3.11-windowsservercore-ltsc2022`](#hylang131-pypy311-windowsservercore-ltsc2022)
 -	[`hylang:1.3.1-pypy3.11-windowsservercore-ltsc2025`](#hylang131-pypy311-windowsservercore-ltsc2025)
+-	[`hylang:1.3.1-pypy3.12`](#hylang131-pypy312)
+-	[`hylang:1.3.1-pypy3.12-bookworm`](#hylang131-pypy312-bookworm)
+-	[`hylang:1.3.1-pypy3.12-trixie`](#hylang131-pypy312-trixie)
+-	[`hylang:1.3.1-pypy3.12-windowsservercore`](#hylang131-pypy312-windowsservercore)
+-	[`hylang:1.3.1-pypy3.12-windowsservercore-ltsc2022`](#hylang131-pypy312-windowsservercore-ltsc2022)
+-	[`hylang:1.3.1-pypy3.12-windowsservercore-ltsc2025`](#hylang131-pypy312-windowsservercore-ltsc2025)
 -	[`hylang:1.3.1-python3.10`](#hylang131-python310)
 -	[`hylang:1.3.1-python3.10-alpine`](#hylang131-python310-alpine)
 -	[`hylang:1.3.1-python3.10-alpine3.23`](#hylang131-python310-alpine323)
@@ -213,6 +231,12 @@
 -	[`hylang:pypy3.11-windowsservercore`](#hylangpypy311-windowsservercore)
 -	[`hylang:pypy3.11-windowsservercore-ltsc2022`](#hylangpypy311-windowsservercore-ltsc2022)
 -	[`hylang:pypy3.11-windowsservercore-ltsc2025`](#hylangpypy311-windowsservercore-ltsc2025)
+-	[`hylang:pypy3.12`](#hylangpypy312)
+-	[`hylang:pypy3.12-bookworm`](#hylangpypy312-bookworm)
+-	[`hylang:pypy3.12-trixie`](#hylangpypy312-trixie)
+-	[`hylang:pypy3.12-windowsservercore`](#hylangpypy312-windowsservercore)
+-	[`hylang:pypy3.12-windowsservercore-ltsc2022`](#hylangpypy312-windowsservercore-ltsc2022)
+-	[`hylang:pypy3.12-windowsservercore-ltsc2025`](#hylangpypy312-windowsservercore-ltsc2025)
 -	[`hylang:python3.10`](#hylangpython310)
 -	[`hylang:python3.10-alpine`](#hylangpython310-alpine)
 -	[`hylang:python3.10-alpine3.23`](#hylangpython310-alpine323)
@@ -6223,6 +6247,30 @@ CMD ["hy"]
 		Last Modified: Mon, 21 Sep 2026 23:34:20 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `hylang:1-pypy3.12`
+
+**does not exist** (yet?)
+
+## `hylang:1-pypy3.12-bookworm`
+
+**does not exist** (yet?)
+
+## `hylang:1-pypy3.12-trixie`
+
+**does not exist** (yet?)
+
+## `hylang:1-pypy3.12-windowsservercore`
+
+**does not exist** (yet?)
+
+## `hylang:1-pypy3.12-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `hylang:1-pypy3.12-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `hylang:1-python3.10`
 
@@ -38626,6 +38674,30 @@ CMD ["hy"]
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `hylang:1.3-pypy3.12`
+
+**does not exist** (yet?)
+
+## `hylang:1.3-pypy3.12-bookworm`
+
+**does not exist** (yet?)
+
+## `hylang:1.3-pypy3.12-trixie`
+
+**does not exist** (yet?)
+
+## `hylang:1.3-pypy3.12-windowsservercore`
+
+**does not exist** (yet?)
+
+## `hylang:1.3-pypy3.12-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `hylang:1.3-pypy3.12-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `hylang:1.3-python3.10`
 
 ```console
@@ -71028,6 +71100,30 @@ CMD ["hy"]
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `hylang:1.3.1-pypy3.12`
+
+**does not exist** (yet?)
+
+## `hylang:1.3.1-pypy3.12-bookworm`
+
+**does not exist** (yet?)
+
+## `hylang:1.3.1-pypy3.12-trixie`
+
+**does not exist** (yet?)
+
+## `hylang:1.3.1-pypy3.12-windowsservercore`
+
+**does not exist** (yet?)
+
+## `hylang:1.3.1-pypy3.12-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `hylang:1.3.1-pypy3.12-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `hylang:1.3.1-python3.10`
 
 ```console
@@ -103429,6 +103525,30 @@ CMD ["hy"]
 		Last Modified: Mon, 21 Sep 2026 23:34:20 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `hylang:pypy3.12`
+
+**does not exist** (yet?)
+
+## `hylang:pypy3.12-bookworm`
+
+**does not exist** (yet?)
+
+## `hylang:pypy3.12-trixie`
+
+**does not exist** (yet?)
+
+## `hylang:pypy3.12-windowsservercore`
+
+**does not exist** (yet?)
+
+## `hylang:pypy3.12-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `hylang:pypy3.12-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `hylang:python3.10`
 
