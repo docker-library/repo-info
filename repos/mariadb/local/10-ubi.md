@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:86afbe5c968dc6cf71c2f49993062125ce409c62625781bf9c88a584f5e3e8c7`
-- Created: `2026-09-17T18:56:36.750808244Z`
-- Virtual Size: ~ 509.3 Mb  
+- Image ID: `sha256:b173ff9db476f376307d9d0947138409f3e401bce167a6310c0b80c0bc11b3d5`
+- Created: `2026-09-22T18:50:56.86066821Z`
+- Virtual Size: ~ 508.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.19`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-16T08:14:20Z`
+  - `build-date=2026-09-22T10:53:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-09-16T08:14:20Z`
+  - `org.opencontainers.image.created=2026-09-22T10:53:29Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
+  - `org.opencontainers.image.revision=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
+  - `vcs-ref=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.19`
@@ -213,15 +213,15 @@ $ dnf --quiet download --source --url crypto-policies-20260224-1.gitea0f072.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260224-1.gitea0f072.el9_8.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.3.x86_64`
@@ -491,7 +491,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -581,7 +581,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -782,15 +782,15 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -1164,7 +1164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2242,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2253,7 +2253,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://mirror.us.leaseweb.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
