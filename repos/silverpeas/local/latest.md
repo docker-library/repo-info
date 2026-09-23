@@ -885,14 +885,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA256:ddc1111651cdd4095b67c9d9ed46babfb8fb64843d89ff785399f5739b84867b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.7.debian.tar.xz' expat_2.4.7-1ubuntu0.7.debian.tar.xz 37472 SHA256:20cc871a48373cafec06dd008798afcd891946f319254ac5a9f9c958456f09e6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.7.dsc' expat_2.4.7-1ubuntu0.7.dsc 1962 SHA256:b385c2614d9729d641b14b8cb3e95efb3a0a9afaa4dca23cebc75a792653c911
-```
 
 ### `dpkg` source package: `ffmpeg=7:4.4.2-0ubuntu0.22.04.1`
 
@@ -1239,14 +1234,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.55.0~dfsg1-0ubuntu5.13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1.orig.tar.xz' ghostscript_9.55.0~dfsg1.orig.tar.xz 53473556 SHA256:7cd410b493b68b8471981f6a3f79f3ed687e9664177d188b290617f921e8052d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.13.debian.tar.xz' ghostscript_9.55.0~dfsg1-0ubuntu5.13.debian.tar.xz 189024 SHA256:58e253c86d5be55fd7f407da211ccb37ac40f3b6cf229c751c4aad7004b98532
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.13.dsc' ghostscript_9.55.0~dfsg1-0ubuntu5.13.dsc 2818 SHA256:2e167af4048942063c99505a8de0f0dd29c51bb366ddd215ecacc9f4c51fe898
-```
 
 ### `dpkg` source package: `giflib=5.1.9-2ubuntu0.3`
 
@@ -1280,14 +1270,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA256:8848aba518ba2f4217d144307a1d6cb9afcc92b54e5c13ac1f8c4d4608e96f0e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.9.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.9.debian.tar.xz 162336 SHA256:0af196e7038e4f8f829dae0847fadc3213c0689a449d1e0f60ec2f44804645f1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.9.dsc' glib2.0_2.72.4-0ubuntu2.9.dsc 3670 SHA256:822aedb2617eaae1bdc7360911052d9804497ab810d1f121d2a8927492bd858e
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.14`
 
@@ -1538,14 +1523,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.6.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.6.debian.tar.xz 52584 SHA512:fdc712672a99e3034d4a06a5dff5d32dc88a6bb277165b75e279173cddbfd4413d0a5b35d3387ad3569eaec7a467d280b8470e4a8c9c8ea9a533c26426674372
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.6.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.6.dsc 3796 SHA512:bd8d94a5eee50c549d0ccaf13144bc5a15fe32f0d7daffe8ae332d0fa9e3ad5ab27c7f32f8755fb55cd5c53f1269b016a17dbee7f97fa2c8835b7b97e3cb6ab5
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1.1`
 
@@ -4535,14 +4515,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.12
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.12.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.12.debian.tar.xz 60032 SHA512:e76f9d18ab57f26d73d71b47d783dd1eaee168485ccb1aeca19454c053d1389cae018851215ae1e3df42fe823cd2d0c3754ad3460e18e4e579f4d30e8c78f422
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.12.dsc' libxml2_2.9.13+dfsg-1ubuntu0.12.dsc 3075 SHA512:b28b052bec8c1e09ed65c2f27aaadbe31d8350c08a96284b535ef65756111edc9f9915ce8ae6d8d96bb65dc40cdf92ee27bf7dc77e4a89b2486c2e582fa7349f
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -5267,14 +5242,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.32+9-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.32%2b9.orig.tar.xz' openjdk-lts_11.0.32+9.orig.tar.xz 69384508 SHA512:de2d14baab466103fd28b5f539bfdb42670943d03192034e279a7606851658af38ce11cdd9706604b23027cb3025364ab1c195efeb5fd3faf41af70583a79b61
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.32%2b9-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.32+9-1ubuntu1~22.04.debian.tar.xz 176860 SHA512:283c2dd038aa3052072f67fb2ed7838959a2823fee6a44a8cc4b4fda223c57eb63784befd1cb173b18584f1332691be84020f72a8cf720c9359ba2d39a046963
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.32%2b9-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.32+9-1ubuntu1~22.04.dsc 4264 SHA512:a3d9a97ef231018147d9a9c267501569e83d58e702f8fee40959c1d5f0e0c5d0f2c5176da1afcc7f0ce8fb9dbd9ce8ce72f24d23f66d618983ccde0cb360dec6
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
 
