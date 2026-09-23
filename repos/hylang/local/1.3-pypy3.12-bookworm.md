@@ -1,10 +1,10 @@
-# `hylang:1.3.1-pypy3.11-bookworm`
+# `hylang:1.3.1-pypy3.12-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d941b671a1bc9fe1853d2edd7b4bb3754f508d7b29bbd18cdb0bbc44ae027324`
-- Created: `2026-09-21T23:07:18.371874894Z`
-- Virtual Size: ~ 228.67 Mb  
+- Image ID: `sha256:11ef0c5b629cbac661214e2d3b25117da6188e164ce8ee9ec689e7e902a97076`
+- Created: `2026-09-22T23:45:13.97806368Z`
+- Virtual Size: ~ 220.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`

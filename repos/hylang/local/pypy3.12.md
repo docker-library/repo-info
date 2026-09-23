@@ -1,10 +1,10 @@
-# `hylang:1.3.1-pypy3.11-trixie`
+# `hylang:1.3.1-pypy3.12-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c523fdb11506f917b41c9389c61c0212a9910dd7cf0dbe52762b0bcfaa4b422`
-- Created: `2026-09-21T23:07:16.898422966Z`
-- Virtual Size: ~ 226.14 Mb  
+- Image ID: `sha256:733fce5e1afadc476707a969d8aed747c1ff18c9a85c2f505136e3745fee6f0a`
+- Created: `2026-09-22T23:45:36.100975084Z`
+- Virtual Size: ~ 218.4 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
