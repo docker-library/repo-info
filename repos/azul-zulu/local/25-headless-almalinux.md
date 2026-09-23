@@ -21,15 +21,15 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `attr-2.5.2-5.el10.x86_64`
+### `rpm` package: `attr-2.6.0-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url attr-2.5.2-5.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/attr-2.5.2-5.el10.src.rpm
+$ dnf --quiet download --source --url attr-2.6.0-1.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/attr-2.6.0-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `audit-libs-4.0.3-5.0.1.el10.x86_64`
@@ -105,13 +105,13 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `coreutils-9.5-8.0.1.el10_2.x86_64`
+### `rpm` package: `coreutils-9.5-8.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-no-invariants-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `coreutils-common-9.5-8.0.1.el10_2.x86_64`
+### `rpm` package: `coreutils-common-9.5-8.0.1.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-no-invariants-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later
 
@@ -139,7 +139,7 @@ $ dnf --quiet download --source --url cracklib-dicts-2.9.11-8.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/cracklib-2.9.11-8.el10.src.rpm
 ```
 
-### `rpm` package: `crypto-policies-20260216-1.git0e54016.el10.noarch`
+### `rpm` package: `crypto-policies-20260216-1.git0e54016.el10_2.2.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
@@ -178,15 +178,15 @@ $ dnf --quiet download --source --url dbus-1.14.10-5.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/dbus-1.14.10-5.el10.src.rpm
 ```
 
-### `rpm` package: `dbus-broker-36-4.el10.x86_64`
+### `rpm` package: `dbus-broker-36-5.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0 AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND (Apache-2.0 OR LGPL-2.1-or-later)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-broker-36-4.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/dbus-broker-36-4.el10.src.rpm
+$ dnf --quiet download --source --url dbus-broker-36-5.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/dbus-broker-36-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `dbus-common-1.14.10-5.el10.noarch`
@@ -273,15 +273,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.194-2.el10_2
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/elfutils-0.194-2.el10_2.src.rpm
 ```
 
-### `rpm` package: `expat-2.7.3-1.el10_2.1.x86_64`
+### `rpm` package: `expat-2.7.3-1.el10_2.3.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.1
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/expat-2.7.3-1.el10_2.1.src.rpm
+$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.3
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/expat-2.7.3-1.el10_2.3.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
@@ -350,30 +350,30 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/gdbm-1.23-12.el10_0.src.rpm
 ```
 
-### `rpm` package: `glib2-2.80.4-12.el10_2.21.x86_64`
+### `rpm` package: `glib2-2.80.4-12.el10_2.22.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.21
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/glib2-2.80.4-12.el10_2.21.src.rpm
+$ dnf --quiet download --source --url glib2-2.80.4-12.el10_2.22
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/glib2-2.80.4-12.el10_2.22.src.rpm
 ```
 
-### `rpm` package: `glibc-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-common-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-langpack-en-2.39-126.0.1.el10_2.x86_64`
+### `rpm` package: `glibc-langpack-en-2.39-128.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.1-only AND LGPL-2.0-or-later AND Unicode-DFS-2015 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
@@ -424,15 +424,15 @@ $ dnf --quiet download --source --url grep-3.11-10.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/grep-3.11-10.el10.src.rpm
 ```
 
-### `rpm` package: `gzip-1.13-3.el10.x86_64`
+### `rpm` package: `gzip-1.13-4.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-only
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gzip-1.13-3.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/gzip-1.13-3.el10.src.rpm
+$ dnf --quiet download --source --url gzip-1.13-4.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/gzip-1.13-4.el10_2.src.rpm
 ```
 
 ### `rpm` package: `ima-evm-utils-1.6.2-4.el10.x86_64`
@@ -525,15 +525,15 @@ $ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libarchive-3.7.7-10.el10_2.src.rpm
 ```
 
-### `rpm` package: `libattr-2.5.2-5.el10.x86_64`
+### `rpm` package: `libattr-2.6.0-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libattr-2.5.2-5.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/attr-2.5.2-5.el10.src.rpm
+$ dnf --quiet download --source --url libattr-2.6.0-1.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/attr-2.6.0-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libblkid-2.40.2-18.0.1.el10.x86_64`
@@ -658,15 +658,15 @@ $ dnf --quiet download --source --url libestr-0.1.11-11.el10
 http://vault.almalinux.org/10.2/AppStream/Source/Packages/libestr-0.1.11-11.el10.src.rpm
 ```
 
-### `rpm` package: `libevent-2.1.12-16.el10.x86_64`
+### `rpm` package: `libevent-2.1.13-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND ISC AND LicenseRef-Fedora-Public-Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libevent-2.1.12-16.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libevent-2.1.12-16.el10.src.rpm
+$ dnf --quiet download --source --url libevent-2.1.13-1.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libevent-2.1.13-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
@@ -948,15 +948,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.36-10.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libxcrypt-4.4.36-10.el10.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.12.5-10.el10_2.2.x86_64`
+### `rpm` package: `libxml2-2.12.5-10.el10_2.3.x86_64`
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.2
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libxml2-2.12.5-10.el10_2.2.src.rpm
+$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.3
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/libxml2-2.12.5-10.el10_2.3.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
@@ -1076,19 +1076,19 @@ Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-Ope
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-fips-provider-3.0.7-8.0.1.el10.x86_64`
+### `rpm` package: `openssl-fips-provider-3.0.7-11.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-fips-provider-so-3.0.7-8.0.1.el10.x86_64`
+### `rpm` package: `openssl-fips-provider-so-3.0.7-11.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.5.5-6.0.1.el10_2.x86_64`
+### `rpm` package: `openssl-libs-3.5.8-1.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
@@ -1128,26 +1128,26 @@ $ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
-### `rpm` package: `pam-1.6.1-9.el10.x86_64`
+### `rpm` package: `pam-1.6.1-9.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.6.1-9.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/pam-1.6.1-9.el10.src.rpm
+$ dnf --quiet download --source --url pam-1.6.1-9.el10_2.1
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pam-libs-1.6.1-9.el10.x86_64`
+### `rpm` package: `pam-libs-1.6.1-9.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/pam-1.6.1-9.el10.src.rpm
+$ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
@@ -1377,15 +1377,15 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rsyslog-8.2510.0-5.el10.x86_64`
+### `rpm` package: `rsyslog-8.2510.0-5.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10
-http://vault.almalinux.org/10.2/AppStream/Source/Packages/rsyslog-8.2510.0-5.el10.src.rpm
+$ dnf --quiet download --source --url rsyslog-8.2510.0-5.el10_2.1
+http://vault.almalinux.org/10.2/AppStream/Source/Packages/rsyslog-8.2510.0-5.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `sed-4.9-5.el10.x86_64`
@@ -1421,15 +1421,15 @@ $ dnf --quiet download --source --url shadow-utils-4.15.0-11.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/shadow-utils-4.15.0-11.el10.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.46.1-5.el10_1.x86_64`
+### `rpm` package: `sqlite-libs-3.46.1-6.el10_2.x86_64`
 
 Licenses (from `rpm --query`): blessing
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.46.1-5.el10_1
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/sqlite-3.46.1-5.el10_1.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.46.1-6.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/sqlite-3.46.1-6.el10_2.src.rpm
 ```
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
@@ -1450,15 +1450,15 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tar-1.35-11.el10.x86_64`
+### `rpm` package: `tar-1.35-13.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tar-1.35-11.el10
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/tar-1.35-11.el10.src.rpm
+$ dnf --quiet download --source --url tar-1.35-13.el10_2
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/tar-1.35-13.el10_2.src.rpm
 ```
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
@@ -1490,27 +1490,27 @@ Licenses (from `rpm --query`): GPL-2.0-only AND GPL-2.0-or-later AND BSD-2-Claus
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.12.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.20.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.12.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.20.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `xz-libs-5.6.2-4.el10_0.x86_64`
+### `rpm` package: `xz-libs-5.6.2-4.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): 0BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.6.2-4.el10_0
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/xz-5.6.2-4.el10_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.6.2-4.el10_2.1
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/xz-5.6.2-4.el10_2.1.src.rpm
 ```
 
 ### `rpm` package: `yum-4.20.0-22.0.1.el10_2.noarch`
