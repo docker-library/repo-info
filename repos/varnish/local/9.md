@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:04d1c7f707ce7ec7ec7ede50766fb238ff6127812347a322cb611ab70cbb4830`
-- Created: `2026-09-19T00:39:33.512022683Z`
-- Virtual Size: ~ 346.1 Mb  
+- Image ID: `sha256:37820760379585f60008e27c44683a69c553fc4ac78100e49f990ccc763423d4`
+- Created: `2026-09-23T23:04:57.81475891Z`
+- Virtual Size: ~ 347.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -3015,11 +3015,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.41.5-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.41.5-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `varnish-modules=9.0.4-5~trixie`
+### `dpkg` source package: `varnish-modules=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `varnish-modules=9.0.4-5~trixie`
+- `varnish-modules=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3043,11 +3043,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `varnish=9.0.4-5~trixie`
+### `dpkg` source package: `varnish=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `varnish=9.0.4-5~trixie`
+- `varnish=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3057,11 +3057,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-cfg=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-cfg=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-cfg=9.0.4-5~trixie`
+- `vmod-cfg=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3071,11 +3071,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-digest=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-digest=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-digest=9.0.4-5~trixie`
+- `vmod-digest=9.1.0-2~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/vmod-digest/copyright`)
 
@@ -3085,11 +3085,11 @@ Licenses: (parsed from: `/usr/share/doc/vmod-digest/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-fileserver=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-fileserver=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-fileserver=9.0.4-5~trixie`
+- `vmod-fileserver=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3099,11 +3099,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-geoip2=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-geoip2=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-geoip2=9.0.4-5~trixie`
+- `vmod-geoip2=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3113,11 +3113,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-jq=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-jq=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-jq=9.0.4-5~trixie`
+- `vmod-jq=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3127,11 +3127,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-k8s-endpoint=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-k8s-endpoint=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-k8s-endpoint=9.0.4-5~trixie`
+- `vmod-k8s-endpoint=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3141,11 +3141,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-querystring=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-querystring=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-querystring=9.0.4-5~trixie`
+- `vmod-querystring=9.1.0-2~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/vmod-querystring/copyright`)
 
@@ -3156,11 +3156,11 @@ Licenses: (parsed from: `/usr/share/doc/vmod-querystring/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-redis=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-redis=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-redis=9.0.4-5~trixie`
+- `vmod-redis=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3170,11 +3170,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-reqwest=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-reqwest=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-reqwest=9.0.4-5~trixie`
+- `vmod-reqwest=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3184,11 +3184,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-rers=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-rers=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-rers=9.0.4-5~trixie`
+- `vmod-rers=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3198,11 +3198,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `vmod-uuid=9.0.4-5~trixie`
+### `dpkg` source package: `vmod-uuid=9.1.0-2~trixie`
 
 Binary Packages:
 
-- `vmod-uuid=9.0.4-5~trixie`
+- `vmod-uuid=9.1.0-2~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
