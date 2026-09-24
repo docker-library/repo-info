@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4bb1d4860c601bbf2beaa7f740808514167f5ef0b2181b2f9e08e264fcf5db83`
-- Created: `2026-09-17T18:55:40.953463578Z`
+- Image ID: `sha256:5a846e16bcee03260df23aa6b2f27275bf762d3a1159575d47162656a2bc0852`
+- Created: `2026-09-22T18:46:09.695773499Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-16T08:14:20Z`
+  - `build-date=2026-09-22T10:53:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-09-16T08:14:20Z`
-  - `org.opencontainers.image.revision=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
-  - `release=1789546276`
+  - `org.opencontainers.image.created=2026-09-22T10:53:29Z`
+  - `org.opencontainers.image.revision=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
+  - `release=1790074235`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
+  - `vcs-ref=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -172,15 +172,15 @@ $ dnf --quiet download --source --url crypto-policies-20260224-1.gitea0f072.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260224-1.gitea0f072.el9_8.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
@@ -720,15 +720,15 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.5.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -764,11 +764,16 @@ $ dnf --quiet download --source --url libeconf-0.4.1-7.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libeconf-0.4.1-7.el9_8.src.rpm
 ```
 
-### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
+### `rpm` package: `libevent-2.1.13-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD and ISC
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libevent-2.1.13-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.13-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `libfdisk-2.37.4-25.el9.x86_64`
 
