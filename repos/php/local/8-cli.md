@@ -1,10 +1,10 @@
-# `php:8.5.10-cli-trixie`
+# `php:8.5.11-cli-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a69ce02282928ded3a9ce493ede6cac52c3e558c0a08aa74f3146d4f6f90d10d`
-- Created: `2026-09-19T00:24:54.555945164Z`
-- Virtual Size: ~ 571.21 Mb  
+- Image ID: `sha256:8bbad73815e985f6ce023ceabb78ae7e0ee9137cc82bd84a25c5de01657b2639`
+- Created: `2026-09-24T19:08:17.455238067Z`
+- Virtual Size: ~ 571.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.10.tar.xz.asc`
-  - `PHP_SHA256=6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957`
+  - `PHP_VERSION=8.5.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.11.tar.xz.asc`
+  - `PHP_SHA256=d9be75c08e8c316f4c8f4194d8fbe1750a15f6a6d9d4e3fe72082abeeb800360`
 
 ## `dpkg` (`.deb`-based packages)
 
