@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16a4b3e2c9680e3e7d2f35ce01c1451f51fbd2cb9c9cbbbab49a497a85a69041`
-- Created: `2026-09-19T01:43:42.500361822Z`
-- Virtual Size: ~ 657.48 Mb  
+- Image ID: `sha256:b965bfac64e3515c3cd86b8d590fdafad9702652fb8b7c664966b7f333ea2474`
+- Created: `2026-09-23T19:12:55.391827653Z`
+- Virtual Size: ~ 657.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.10`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.10.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=6f32ad662baafc228d12030dbcd284f83b034dd4337b300dc84ac74d11a1eb68`
+  - `RUBY_VERSION=3.4.11`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.11.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=f79c6e789ce4f30f77c88a40b23b93e2547c512a843dc17db27ab1f5cc66f4e4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -2147,11 +2147,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcbor/0.8.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcbor/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libde265=1.0.11-1+deb12u2`
+### `dpkg` source package: `libde265=1.0.11-1+deb12u3`
 
 Binary Packages:
 
-- `libde265-0:amd64=1.0.11-1+deb12u2`
+- `libde265-0:amd64=1.0.11-1+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 
@@ -2166,17 +2166,17 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libde265=1.0.11-1+deb12u2
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.11-1%2bdeb12u2.dsc' libde265_1.0.11-1+deb12u2.dsc 2381 SHA256:3f42b562a89db54867cbc7f101b73fc581ac9a0b397637c61d9f41e8bbf13332
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.11.orig.tar.gz' libde265_1.0.11.orig.tar.gz 845996 SHA256:2f8f12cabbdb15e53532b7c1eb964d4e15d444db1be802505e6ac97a25035bab
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.11-1%2bdeb12u2.debian.tar.xz' libde265_1.0.11-1+deb12u2.debian.tar.xz 16280 SHA256:81de2919da09690f2fb80383fcc68cda397bfed878a010061627f7794e278f4b
+$ apt-get source -qq --print-uris libde265=1.0.11-1+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11-1%2bdeb12u3.dsc' libde265_1.0.11-1+deb12u3.dsc 2221 SHA256:16f23e3613dae4a6d5a25be5a884448d61963628118d0508111052b715a48544
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11.orig.tar.gz' libde265_1.0.11.orig.tar.gz 845996 SHA256:2f8f12cabbdb15e53532b7c1eb964d4e15d444db1be802505e6ac97a25035bab
+'http://deb.debian.org/debian-security/pool/updates/main/libd/libde265/libde265_1.0.11-1%2bdeb12u3.debian.tar.xz' libde265_1.0.11-1+deb12u3.debian.tar.xz 28308 SHA256:ccdd55e4bf2aa04155de5d00fbc677e4cf620d961fd4584a43a37f13993d0f94
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libde265/1.0.11-1+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.11-1+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.11-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libde265/1.0.11-1+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/libde265/1.0.11-1+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libde265/1.0.11-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.14-1`
 
