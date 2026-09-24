@@ -2002,14 +2002,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-31.31
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-31.31.diff.gz' linux_7.0.0-31.31.diff.gz 2399688 SHA512:b68bac707a0353fe40321778d2ef644e1d37721620d081c1f7ba1523ec9754b7028f6f30e6aeb7ffabbd021ba20742c837e9494a4430843dc9b38cbbd17cf807
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-31.31.dsc' linux_7.0.0-31.31.dsc 7746 SHA512:5b83c3852d3b75e94701d4c48af9b1d3efc3d6613f80c6ff93da6dc7929a13ee399eff72354641803d51818981396cd8d2bfaa7109b429a244d0135fab815a13
-```
 
 ### `dpkg` source package: `lsb-release-minimal=12.1-2build1`
 

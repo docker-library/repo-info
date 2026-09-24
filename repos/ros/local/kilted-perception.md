@@ -173,14 +173,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.debian.tar.xz 140044 SHA512:42ca1d8e7c1706de78d5f293723da7ad53274b311e2e11172e2f30a5fc6f50cfa5832513773f4c21c1815920c5806d8a24b6d21195cfed6e00b291d37595b596
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.dsc 3434 SHA512:d38b967070cf58ed336e5e65a57c0795e6a4f282b10908a065cae87b2ce8801ac6cd9bacf46a39cd7936c68132e12dd16f91df2bf98b81c791f67c0bf7c221c6
-```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -331,14 +326,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc' audit_3.1.2-2.1build1.1.dsc 2848 SHA512:3e54e808c6130829a386f25a3a40a35ae1598955407ca5eb1c400cabe4226da47688c0970e35bba4d841c73f3c625cce08130982657d9c5debdf98d78b717fb6
-```
 
 ### `dpkg` source package: `autoconf=2.71-3`
 
@@ -4640,15 +4630,9 @@ Licenses: (parsed from: `/usr/share/doc/libpciaccess0/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpciaccess=0.17-3ubuntu0.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpciaccess/libpciaccess_0.17.orig.tar.gz' libpciaccess_0.17.orig.tar.gz 490419 SHA256:bf6985a77d2ecb00e2c79da3edfb26b909178ffca3f2e9d14ed0620259ab733b
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpciaccess/libpciaccess_0.17.orig.tar.gz.asc' libpciaccess_0.17.orig.tar.gz.asc 801 SHA256:f8eb8809b95f6bed9f5fe315d84c45b7a4c2ef2d0e3d94b942f6c76548c80cdd
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpciaccess/libpciaccess_0.17-3ubuntu0.24.04.2.diff.gz' libpciaccess_0.17-3ubuntu0.24.04.2.diff.gz 34865 SHA256:57c554e8ff64f82a6adc4372934d13058b6a63d43ef86c7c03f4fb4ebf241668
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpciaccess/libpciaccess_0.17-3ubuntu0.24.04.2.dsc' libpciaccess_0.17-3ubuntu0.24.04.2.dsc 2430 SHA256:29d0322213dbb983223b44f88b49a5d4b4d88b53b541bba9906ecee36209cc13
-```
 
 ### `dpkg` source package: `libpgm=5.3.128~dfsg-2.1build1`
 
@@ -6037,14 +6021,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-139.139
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-139.139.diff.gz' linux_6.8.0-139.139.diff.gz 9025336 SHA512:5e41903178d40886783566c3d69468d671ef90944da10025aa7545c69c155c8f32b796f88c8adb27f167be6ecbf63e9b4006479d40c204f84973f553c58ee051
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-139.139.dsc' linux_6.8.0-139.139.dsc 9348 SHA512:e15a97e67a2de4b3d042294453fc04a3a82ac73227685000a4af437a6a5c60c7d73ec4e90f71cd86b96f660659d0327c0fcbef8f25e477c79770f5b1309f8786
-```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
 
@@ -13205,15 +13184,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA256:558d10b9a1991fb3b9fa7fa7b07ec4405b7aefb5b3cb0b0871dbc81e3a88e558
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA256:ca030b4dc43915f0802311384e6cdeae030a765ad51ca116d9d022893eb8e35e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.2.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.2.debian.tar.xz 71516 SHA256:20813d44820701a71acfdc693018f303dd43e61357b89cbda5892645c769a335
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.2.dsc' sudo_1.9.15p5-3ubuntu5.24.04.2.dsc 2763 SHA256:958c187c118c684aeb455afa3b49309e9c609d854f1fb702780a025d8be7450a
-```
 
 ### `dpkg` source package: `superlu=6.0.1+dfsg1-1build1`
 
