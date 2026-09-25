@@ -1,10 +1,10 @@
-# `gradle:9.7.1-jdk21-ubi9`
+# `gradle:9.8.0-jdk21-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9710eda0cdf809681dd1e3f61118bbf42211f9b53b363529ab773b544cbada42`
-- Created: `2026-09-17T19:12:40.136704691Z`
-- Virtual Size: ~ 773.54 Mb  
+- Image ID: `sha256:fa9dff217d9e4c5a4270ea03ae51473dde46a8e68f5cde9a113616297e9fab09`
+- Created: `2026-09-24T19:34:03.514306381Z`
+- Virtual Size: ~ 773.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.12+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.1`
+  - `GRADLE_VERSION=9.8.0`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-16T08:14:20Z`
+  - `build-date=2026-09-22T10:53:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-16T08:14:20Z`
-  - `org.opencontainers.image.revision=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
-  - `release=1789546276`
+  - `org.opencontainers.image.created=2026-09-22T10:53:29Z`
+  - `org.opencontainers.image.revision=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
+  - `release=1790074235`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28eadd3b1a5a834acaab9dbfe06d7a5df73b64ee`
+  - `vcs-ref=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -233,11 +233,16 @@ $ dnf --quiet download --source --url crypto-policies-20260224-1.gitea0f072.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260224-1.gitea0f072.el9_8.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -878,11 +883,16 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.5.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.7.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
@@ -928,11 +938,16 @@ $ dnf --quiet download --source --url libedit-3.1-39.20210216cvs.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libedit-3.1-39.20210216cvs.el9.src.rpm
 ```
 
-### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
+### `rpm` package: `libevent-2.1.13-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD and ISC
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libevent-2.1.13-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.13-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `libfdisk-2.37.4-25.el9.x86_64`
 
@@ -1323,12 +1338,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1473,17 +1483,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-9.el9_8.x86_64`
+### `rpm` package: `openssh-9.9p1-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssh-clients-9.9p1-9.el9_8.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-9.9p1-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-11.el9_8.src.rpm
+```
+
+### `rpm` package: `openssh-clients-9.9p1-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssh-clients-9.9p1-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-11.el9_8.src.rpm
+```
 
 ### `rpm` package: `openssl-3.5.8-1.el9_8.x86_64`
 

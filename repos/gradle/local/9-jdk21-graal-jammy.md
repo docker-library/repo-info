@@ -1,9 +1,9 @@
-# `gradle:9.7.1-jdk21-graal-jammy`
+# `gradle:9.8.0-jdk21-graal-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:21774989bd2470e994f3577e26a5f3a2732b755171abfb802013d92344ef34b3`
-- Created: `2026-09-09T02:23:20.50022968Z`
+- Image ID: `sha256:7e3b77d2f56a4ddf048d80e63d113b744cec8e29291ad478c02a690b21695649`
+- Created: `2026-09-24T19:34:49.53871755Z`
 - Virtual Size: ~ 1.18 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=9.7.1`
+  - `GRADLE_VERSION=9.8.0`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -383,13 +383,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.4.dsc' coreutils_8.32-4.1ubuntu1.4.dsc 2027 SHA512:cc0b47976933acc36010800551bfd9ce8808582176e1ae2e611e70ead70bdf4e5cd5ac725acb7aee4a47b5c668875084742e28d66b0619f24b75c6a421fb3fed
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.27`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.29`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.27`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.27`
-- `libcurl4:amd64=7.81.0-1ubuntu1.27`
+- `curl=7.81.0-1ubuntu1.29`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.29`
+- `libcurl4:amd64=7.81.0-1ubuntu1.29`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -403,11 +403,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.27
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.29
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.debian.tar.xz' curl_7.81.0-1ubuntu1.27.debian.tar.xz 104392 SHA512:9a11457c28112f90bb422d35ff54ca6b42e4a3afb370ca7813646240a7e36f94dcb931cb6da0029a09906905582dbd985077dabb8fd1d9647a06fa3d553e29cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.dsc' curl_7.81.0-1ubuntu1.27.dsc 3183 SHA512:7fb0f883e5feba9cf3f6c6cc5e83a137591ad627f62833c7f0aaf45d6891cec012644923fd40a068580be5f6d0376bce56cf68fc064ca1216186823c58de7f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.debian.tar.xz' curl_7.81.0-1ubuntu1.29.debian.tar.xz 106316 SHA512:cfd696f0576a56b02da16adc385803e5cd83e980ea0641b550011f59f86ea25ed184bd48599a2c7ea4f35d192d4e03fd34284b77ea13234bf343873780ba5003
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.dsc' curl_7.81.0-1ubuntu1.29.dsc 3187 SHA512:a61df1d374f27064353ff42b6ea57fcfb7ee4c54e88734326a21f23983826fb947fd496f4234de81587a6f8e8c697a527009e8ab152730e06b9d3a3d5560868c
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -619,19 +619,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.dsc' e2fsprogs_1.46.5-2ubuntu1.2.dsc 3190 SHA512:8bf3cf7816ff7a774b03e846fcd90083083c1cd9072635d1eb45ba76c87ea8a1d9f7c5bf99f9a80ad1fed2c294425835ff801ada260b3417258d94cee3dc3758
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.7`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.9`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.7`
+- `libexpat1:amd64=2.4.7-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.9.debian.tar.xz' expat_2.4.7-1ubuntu0.9.debian.tar.xz 59156 SHA512:47f9f699db46a9bebd0cb56074c4637517a44dbcc6345accf361dc73ba4a05f7f8de98f92dcca52782227b7707abcd24a4a741f4ce25f3ea6efb06475f623443
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.9.dsc' expat_2.4.7-1ubuntu0.9.dsc 1491 SHA512:719cdecb522d2f4aca510b142131275d1b1379767ebf90770dd3e8f36ce71989a229b80edf7a774a704f24e3b1712c4c8bd079f29462c56fe88bdbe95e1efbed
+```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
@@ -1750,11 +1755,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-191.201`
+### `dpkg` source package: `linux=5.15.0-194.204`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-191.201`
+- `linux-libc-dev:amd64=5.15.0-194.204`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1763,10 +1768,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-191.201
+$ apt-get source -qq --print-uris linux=5.15.0-194.204
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-191.201.diff.gz' linux_5.15.0-191.201.diff.gz 13276142 SHA512:be556b37ace1c89e9cbdb8c79246e6660a900434c6d5dc41ac9290652699e1d8fd12c2e9940b1b1c5d032e78cebf79b7a321e34f98596d99ac9cc0d0821b5582
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-191.201.dsc' linux_5.15.0-191.201.dsc 7655 SHA512:40e90fa7c6c698cf28a1d4cfd9f46e6f72be2b51e1ecdb3417eec8c726a9fc260668a9062575a6b36c3ab310ddec5fc1f839ddf73709009ed73188354e7f62a1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-194.204.diff.gz' linux_5.15.0-194.204.diff.gz 13282122 SHA512:0888a9ddd022550762299657b8944d2e9836e89dc213b8e040594e444d41fe6e499c04101986f9f751ee4dbff0ee106b6f9571f3151050c58eab8f7d7c5eea59
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-194.204.dsc' linux_5.15.0-194.204.dsc 7696 SHA512:1db8924a63d39bae1949b4e5fd326184fe7e8c85a72648371d005f2e6ebf9a5b338ace927cfe9ebc6f101053e902f1d379c394a5be95d3f5dd9aaf9f82d0083e
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2568,11 +2573,11 @@ $ apt-get source -qq --print-uris six=1.16.0-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.16.0-3ubuntu1.debian.tar.xz' six_1.16.0-3ubuntu1.debian.tar.xz 5072 SHA512:790dfd825c173fbfe6d54bc0e6bf8f6161b065ba1da561cb4e1fc8050e629f8d344a2e84e895855b7da696cf62acb2daf92aca8548a00f12e6eb239f30057e1c
 ```
 
-### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.7`
+### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.8`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.37.2-2ubuntu0.7`
+- `libsqlite3-0:amd64=3.37.2-2ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2580,9 +2585,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.8.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.8.debian.tar.xz 36152 SHA512:e0fa8914703615c155a36365bd9b09041828569ba090cfcce6fb9ae0260f92acde9002c81ed3caa2c3e20df6de8d3542803ef8dfe6b99f5914a080acdf57b0fc
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.8.dsc' sqlite3_3.37.2-2ubuntu0.8.dsc 2602 SHA512:be450c4bf666ef7b8bf7535ae20925fd4743c15aec11b89c0cfc711c4db11a9436191a9e5e154267c856fda9768d0a80294cff159c092d0216ce2e96ed308b0b
+```
 
 ### `dpkg` source package: `subversion=1.14.1-3ubuntu0.22.04.1`
 

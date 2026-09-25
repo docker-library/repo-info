@@ -1,10 +1,10 @@
-# `gradle:9.7.1-jdk17-jammy`
+# `gradle:9.8.0-jdk17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:47a05a5d266830ece2b2a2e3cab4f8eff51c9fcceeb7678703c8c068b4d91ffd`
-- Created: `2026-09-09T03:19:39.521322271Z`
-- Virtual Size: ~ 750.25 Mb  
+- Image ID: `sha256:3ac87adaf65513bb3d65efc65fed2b2308224a0e6cacbde2dbd419c0c4d37500`
+- Created: `2026-09-24T19:34:53.633212397Z`
+- Virtual Size: ~ 751.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.20+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.1`
+  - `GRADLE_VERSION=9.8.0`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -387,13 +387,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.4.dsc' coreutils_8.32-4.1ubuntu1.4.dsc 2027 SHA512:cc0b47976933acc36010800551bfd9ce8808582176e1ae2e611e70ead70bdf4e5cd5ac725acb7aee4a47b5c668875084742e28d66b0619f24b75c6a421fb3fed
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.27`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.29`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.27`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.27`
-- `libcurl4:amd64=7.81.0-1ubuntu1.27`
+- `curl=7.81.0-1ubuntu1.29`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.29`
+- `libcurl4:amd64=7.81.0-1ubuntu1.29`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -407,11 +407,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.27
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.29
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.debian.tar.xz' curl_7.81.0-1ubuntu1.27.debian.tar.xz 104392 SHA512:9a11457c28112f90bb422d35ff54ca6b42e4a3afb370ca7813646240a7e36f94dcb931cb6da0029a09906905582dbd985077dabb8fd1d9647a06fa3d553e29cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.dsc' curl_7.81.0-1ubuntu1.27.dsc 3183 SHA512:7fb0f883e5feba9cf3f6c6cc5e83a137591ad627f62833c7f0aaf45d6891cec012644923fd40a068580be5f6d0376bce56cf68fc064ca1216186823c58de7f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.debian.tar.xz' curl_7.81.0-1ubuntu1.29.debian.tar.xz 106316 SHA512:cfd696f0576a56b02da16adc385803e5cd83e980ea0641b550011f59f86ea25ed184bd48599a2c7ea4f35d192d4e03fd34284b77ea13234bf343873780ba5003
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.dsc' curl_7.81.0-1ubuntu1.29.dsc 3187 SHA512:a61df1d374f27064353ff42b6ea57fcfb7ee4c54e88734326a21f23983826fb947fd496f4234de81587a6f8e8c697a527009e8ab152730e06b9d3a3d5560868c
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`

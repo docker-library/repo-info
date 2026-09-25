@@ -1,10 +1,10 @@
-# `gradle:9.7.1-jdk26-ubi`
+# `gradle:9.8.0-jdk26-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:95fc9912b280f161a79a6bbc8422628742c94e9fb914702818705ba6d39c0e5f`
-- Created: `2026-09-15T23:16:53.401650307Z`
-- Virtual Size: ~ 747.12 Mb  
+- Image ID: `sha256:5e35e72e513a6c4e3c1ce62270b2a6c139009f09ada0acc227a081464cc5d704`
+- Created: `2026-09-24T19:36:00.427926889Z`
+- Virtual Size: ~ 747.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-26.0.2+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.7.1`
+  - `GRADLE_VERSION=9.8.0`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-15T07:20:44Z`
+  - `build-date=2026-09-22T11:16:40Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-15T07:20:44Z`
-  - `org.opencontainers.image.revision=c25cacc858803712e72276693173f29b561e6f08`
-  - `release=1789456728`
+  - `org.opencontainers.image.created=2026-09-22T11:16:40Z`
+  - `org.opencontainers.image.revision=496f022c586de3cdc994d6097f91f0776122c30e`
+  - `release=1790075626`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c25cacc858803712e72276693173f29b561e6f08`
+  - `vcs-ref=496f022c586de3cdc994d6097f91f0776122c30e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -549,12 +549,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libarchive-3.7.7-10.el10_2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-10.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libattr-2.6.0-1.el10_2.x86_64`
 
@@ -983,12 +978,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.12.5-10.el10_2.3.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
 
