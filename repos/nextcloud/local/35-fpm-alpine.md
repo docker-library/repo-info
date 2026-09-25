@@ -1,9 +1,9 @@
-# `nextcloud:35.0.0-fpm-alpine`
+# `nextcloud:35.0.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc75bc70428103a34d154c9a4d35b2b4b56eb32ca494cb4b512fbeac5e285577`
-- Created: `2026-09-17T22:31:17.869716768Z`
+- Image ID: `sha256:9c26b73f0110e5a88b20a01613792edf4036b0292807852acfe6bff30ae19e6c`
+- Created: `2026-09-24T21:09:59.005142737Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,14 +17,14 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.10.tar.xz.asc`
-  - `PHP_SHA256=6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957`
+  - `PHP_VERSION=8.5.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.11.tar.xz.asc`
+  - `PHP_SHA256=d9be75c08e8c316f4c8f4194d8fbe1750a15f6a6d9d4e3fe72082abeeb800360`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=35.0.0`
+  - `NEXTCLOUD_VERSION=35.0.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1034,16 +1034,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
@@ -1119,16 +1119,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libheif`
 
 ```console
-libheif-1.23.0-r0 description:
+libheif-1.23.4-r0 description:
 ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 
-libheif-1.23.0-r0 webpage:
+libheif-1.23.4-r0 webpage:
 https://www.libde265.org/
 
-libheif-1.23.0-r0 installed size:
-1810 KiB
+libheif-1.23.4-r0 installed size:
+1850 KiB
 
-libheif-1.23.0-r0 license:
+libheif-1.23.4-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1136,16 +1136,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-dav1d`
 
 ```console
-libheif-dav1d-1.23.0-r0 description:
+libheif-dav1d-1.23.4-r0 description:
 libheif AVIF/AV1 decoder plugin using dav1d
 
-libheif-dav1d-1.23.0-r0 webpage:
+libheif-dav1d-1.23.4-r0 webpage:
 https://www.libde265.org/
 
-libheif-dav1d-1.23.0-r0 installed size:
+libheif-dav1d-1.23.4-r0 installed size:
 17 KiB
 
-libheif-dav1d-1.23.0-r0 license:
+libheif-dav1d-1.23.4-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1153,16 +1153,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-jpeg`
 
 ```console
-libheif-jpeg-1.23.0-r0 description:
+libheif-jpeg-1.23.4-r0 description:
 libheif JPEG decoder and encoder plugins for JPEG-in-HEIF images
 
-libheif-jpeg-1.23.0-r0 webpage:
+libheif-jpeg-1.23.4-r0 webpage:
 https://www.libde265.org/
 
-libheif-jpeg-1.23.0-r0 installed size:
+libheif-jpeg-1.23.4-r0 installed size:
 31 KiB
 
-libheif-jpeg-1.23.0-r0 license:
+libheif-jpeg-1.23.4-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1170,16 +1170,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-libde265`
 
 ```console
-libheif-libde265-1.23.0-r0 description:
+libheif-libde265-1.23.4-r0 description:
 libheif HEIC/HEVC (H.265) decoder plugin using libde265
 
-libheif-libde265-1.23.0-r0 webpage:
+libheif-libde265-1.23.4-r0 webpage:
 https://www.libde265.org/
 
-libheif-libde265-1.23.0-r0 installed size:
+libheif-libde265-1.23.4-r0 installed size:
 17 KiB
 
-libheif-libde265-1.23.0-r0 license:
+libheif-libde265-1.23.4-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1187,16 +1187,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-openjpeg`
 
 ```console
-libheif-openjpeg-1.23.0-r0 description:
+libheif-openjpeg-1.23.4-r0 description:
 libheif JPEG 2000 encoder and decoder plugins using OpenJPEG
 
-libheif-openjpeg-1.23.0-r0 webpage:
+libheif-openjpeg-1.23.4-r0 webpage:
 https://www.libde265.org/
 
-libheif-openjpeg-1.23.0-r0 installed size:
+libheif-openjpeg-1.23.4-r0 installed size:
 35 KiB
 
-libheif-openjpeg-1.23.0-r0 license:
+libheif-openjpeg-1.23.4-r0 license:
 LGPL-3.0-or-later
 
 ```
