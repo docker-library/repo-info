@@ -1,4 +1,4 @@
-# `clickhouse:latest`
+# `clickhouse:lts`
 
 ## Docker Metadata
 
