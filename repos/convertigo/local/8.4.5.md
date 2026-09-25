@@ -1,10 +1,10 @@
-# `convertigo:8.4.3`
+# `convertigo:8.4.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e3dee10545879c0485ae2718e34efb2caa7859ea2bf49719de88fe8982bacc8`
-- Created: `2026-09-16T05:17:11.564666179Z`
-- Virtual Size: ~ 638.15 Mb  
+- Image ID: `sha256:67565c97e963437b076e9a81ad1b14ad9559717723fec619bb16d7d6fd4c92a8`
+- Created: `2026-09-25T17:55:58.004562108Z`
+- Virtual Size: ~ 648.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `TOMCAT_VERSION=9.0.122`
   - `TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.4.3`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.3/convertigo-8.4.3.war`
+  - `CONVERTIGO_VERSION=8.4.5`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.5/convertigo-8.4.5.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.version=24.04`
@@ -73,11 +73,11 @@ $ apt-get source -qq --print-uris adduser=3.137ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz' adduser_3.137ubuntu1.tar.xz 280408 SHA512:46979160ef2f6b85097958cd11e549ae48efa24e1719155fd90ae7b322c0adac087cac7d0a709cd084ee11557575b05dfde89a9d63bcfd80fb47779c41098d48
 ```
 
-### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.7`
+### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.8`
 
 Binary Packages:
 
-- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.7`
+- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.8`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -90,10 +90,10 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.7
+$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.8
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.debian.tar.xz 140044 SHA512:42ca1d8e7c1706de78d5f293723da7ad53274b311e2e11172e2f30a5fc6f50cfa5832513773f4c21c1815920c5806d8a24b6d21195cfed6e00b291d37595b596
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.7.dsc 3434 SHA512:d38b967070cf58ed336e5e65a57c0795e6a4f282b10908a065cae87b2ce8801ac6cd9bacf46a39cd7936c68132e12dd16f91df2bf98b81c791f67c0bf7c221c6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.debian.tar.xz 140696 SHA512:89028da0e42f3d144cbfb19dd6306d6075e2cf7aeb62e035f7734e9a02cd3b64016ff0b8c6d10f0d19c4cb8522c7d43c8b1dd61988e097f0c8bf5be4acec50dd
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.dsc 3434 SHA512:efa53e6b95a703f5023033f2b462dfa3c2d8b1844a685245e4246a4076f318b132c030fcca19457e21120250c98c80ffa8e47c3381e5927265496049173da9d7
 ```
 
 ### `dpkg` source package: `apr=1.7.2-3.1ubuntu0.1`
@@ -174,14 +174,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.debian.tar.xz' audit_3.1.2-2.1build1.1.debian.tar.xz 18860 SHA512:0d536e42718911a3b237816d67a1cb05f0c4e591dcf6aa2e17a657711e27b523bb8f79e06c895a107f0fa0039bdc192cfffd16f7b0c17eced8102bd902ac16e7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc' audit_3.1.2-2.1build1.1.dsc 2848 SHA512:3e54e808c6130829a386f25a3a40a35ae1598955407ca5eb1c400cabe4226da47688c0970e35bba4d841c73f3c625cce08130982657d9c5debdf98d78b717fb6
-```
 
 ### `dpkg` source package: `base-files=13ubuntu10.5`
 
@@ -382,12 +377,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.dsc' coreutils_9.4-3ubuntu6.3.dsc 2030 SHA512:80505334592653a7ee541b5aa5d6bc400232a8cf2a01aa7407c5d94073b2b7210a86b9b133835ffa6d5c48050ea74db89d74234cad1ae83b1e98ba1d9ee87624
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.13`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.15`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.13`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.13`
+- `curl=8.5.0-2ubuntu10.15`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.15`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -407,10 +402,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.13
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.15
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.debian.tar.xz' curl_8.5.0-2ubuntu10.13.debian.tar.xz 89820 SHA512:0387ac0b784f8f2db333786f56d0925f696c8bcbf0a0f39651c6fa35d875fd3aecbd91b30713f93f7afb7b49f21af0d96b37d700f22c7ab5ca21cb14af5da96b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.dsc' curl_8.5.0-2ubuntu10.13.dsc 3092 SHA512:bd71e6c018e6cdddc0072fd4984007760dd37ce31e9293b7058b31192cfe9fae2920dd530e75ce582d895140ae758c1646981e05720082ffeb098b98db75a9b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.15.debian.tar.xz' curl_8.5.0-2ubuntu10.15.debian.tar.xz 92276 SHA512:36f94bd79bf0d3c6ab9db6baadc912869d46dcb4b6f39f0132692cad98b5a5b02f0a24c8713140f5dceb636fe10fde404e80fca5407b7fc03c2fd623826b11ec
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.15.dsc' curl_8.5.0-2ubuntu10.15.dsc 3096 SHA512:3fb1c5fcb13e5fdbc26d28b1a829c4dc69ee51425dc2d46a55494bb25c4defb4b0d6ec6d075ff12e2bcfab9985fa746bc70548519b27e9b5da972f3f77cdc9f3
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
@@ -1918,11 +1913,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.dsc' shadow_4.13+dfsg1-4ubuntu3.2.dsc 2400 SHA256:0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.7`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.8`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.7`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1930,15 +1925,21 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz 37512 SHA512:3ff673e1dbdbea223c1ca984d9dc08877190eed0c40d5f33dae049b866ba57ed8ca59c87fa0dd634232c388edf48d088fa0e569319c4ee20fe1a63df0f047f35
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc' sqlite3_3.45.1-1ubuntu2.8.dsc 2601 SHA512:8b492de28c699f0a0a32115b781cc9a6c2d8801992b907a41e5ed0642c3845a1688cbb9aee60ea9a4e8af436100f9f29dc8e6af0d75f8411d8b6a6b0ea99163a
+```
 
-### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.2`
+### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.3`
 
 Binary Packages:
 
-- `sudo=1.9.15p5-3ubuntu5.24.04.2`
+- `sudo=1.9.15p5-3ubuntu5.24.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -1954,11 +1955,11 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA256:558d10b9a1991fb3b9fa7fa7b07ec4405b7aefb5b3cb0b0871dbc81e3a88e558
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA256:ca030b4dc43915f0802311384e6cdeae030a765ad51ca116d9d022893eb8e35e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.2.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.2.debian.tar.xz 71516 SHA256:20813d44820701a71acfdc693018f303dd43e61357b89cbda5892645c769a335
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.2.dsc' sudo_1.9.15p5-3ubuntu5.24.04.2.dsc 2763 SHA256:958c187c118c684aeb455afa3b49309e9c609d854f1fb702780a025d8be7450a
+$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA512:ebac69719de2fe7bd587924701bdd24149bf376a68b17ec02f69b2b96d4bb6fa5eb8260a073ec5ea046d3ac69bb5b1c0b9d61709fe6a56f1f66e40817a70b15a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA512:2447b8b660d8902594a9e809cd96fef8c6074223ced086c1a81453fbe509c387f48f6c2817c802c7d7f3225fcea2539a0e420a4fb120384de5535abec8d60f34
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz 76884 SHA512:ba10e7bfa4669779f661ea38d89a8fe9da50a08b21d906997b81a31e3fc1f52f4f87ed0854f3cd855395cb294328fd83283f50e75e96a12d214ac432aea3d74d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.dsc' sudo_1.9.15p5-3ubuntu5.24.04.3.dsc 2763 SHA512:e866dd616e7630defa896af454ac1435a21b51fd2bd726f0c21f54931eb8ac0cc657b703497c8c2341484debbc039b224f9f178887c7430a731b777a71d00aec
 ```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
