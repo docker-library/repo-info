@@ -1330,20 +1330,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-16/copyright`, `/usr/share/doc/cpp-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16.2.0-2
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16.2.0-2.dsc' gcc-16_16.2.0-2.dsc 52568 SHA256:ea409efc17b7dc970bdd6e1ceb6d2054b579a5e4ec0f4fe9728f524e427eba37
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16.2.0.orig.tar.gz' gcc-16_16.2.0.orig.tar.gz 107365398 SHA256:1f12db4797c619339c7285ce109b35888cafad2487a388430e62f03b65e9ed64
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16.2.0-2.debian.tar.xz' gcc-16_16.2.0-2.debian.tar.xz 2822824 SHA256:1b9b85e5ee94681ddf8605f4b72d67d1dc59ea681f73457e4b2f7ef9e1a632de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-16/16.2.0-2/
 
-- https://sources.debian.net/src/gcc-16/16.2.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gcc-16/16.2.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-16/16.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.233`
 
@@ -1983,19 +1976,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.69+nmu1
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69%2bnmu1.dsc' init-system-helpers_1.69+nmu1.dsc 2327 SHA256:df61b1473575eba598f98a7828a37bd2e5dfa96cd8f118233a16c9a8fd130099
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.69%2bnmu1.tar.xz' init-system-helpers_1.69+nmu1.tar.xz 45776 SHA256:4aa70e315f51398860883de524232dbbd7edd8373a3901d32ae62b826fae2ad3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.69+nmu1/
 
-- https://sources.debian.net/src/init-system-helpers/1.69+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.69+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.69+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.28-1`
 
@@ -3770,20 +3757,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.1.13-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.1.13-1.dsc' linux_7.1.13-1.dsc 196174 SHA256:f20cc891957963f4bf2285a90c8b478b4c8aa8ab6765f06bcdf50dfb8a0b6f80
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.1.13.orig.tar.xz' linux_7.1.13.orig.tar.xz 161695252 SHA256:25f65727fb83a4fa90d18ec1449bd99db93ad54faceacab821c38f19431940c2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.1.13-1.debian.tar.xz' linux_7.1.13-1.debian.tar.xz 1541736 SHA256:4d28914071c65882c46bdc0a0cf90ace5ee2f8dcba3c397ad7c9cee5084f0483
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/7.1.13-1/
 
-- https://sources.debian.net/src/linux/7.1.13-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/7.1.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/7.1.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-10`
 

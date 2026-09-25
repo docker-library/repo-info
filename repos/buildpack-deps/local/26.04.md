@@ -555,15 +555,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.5.debian.tar.xz' curl_8.18.0-1ubuntu2.5.debian.tar.xz 93216 SHA512:167c802f2fd7cc0984003d5d242cc48ba214452b922932904697e4df618a41c71e5c4646421fb68c6d4f14e3f5b9f6be46397023e8e5f6d4d20f2a3f52085a4b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.5.dsc' curl_8.18.0-1ubuntu2.5.dsc 3304 SHA512:9ea04b010de2d491ce3226828b139119553a297c04ed12acb27cd122742e02956452c0e2712d4e3a6c898db0d7791c472d3e0b153d477c260a07da4980f90512
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -3084,14 +3078,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-31.31
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-31.31.diff.gz' linux_7.0.0-31.31.diff.gz 2399688 SHA512:b68bac707a0353fe40321778d2ef644e1d37721620d081c1f7ba1523ec9754b7028f6f30e6aeb7ffabbd021ba20742c837e9494a4430843dc9b38cbbd17cf807
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-31.31.dsc' linux_7.0.0-31.31.dsc 7746 SHA512:5b83c3852d3b75e94701d4c48af9b1d3efc3d6613f80c6ff93da6dc7929a13ee399eff72354641803d51818981396cd8d2bfaa7109b429a244d0135fab815a13
-```
 
 ### `dpkg` source package: `lto-disabled-list=79`
 
