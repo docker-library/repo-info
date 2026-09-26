@@ -1,9 +1,9 @@
-# `eclipse-temurin:8u502-b07-jdk-ubi9-minimal`
+# `eclipse-temurin:8u504-b01-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:793801232c60eee86f2bb59468790c0e11d2664528e2f338e474db4a17f9cf88`
-- Created: `2026-09-22T18:48:05.876394914Z`
+- Image ID: `sha256:4277397cfc2de25f2465a79912f63d2b4dd830aba69d834e25cfb861effb1df7`
+- Created: `2026-09-25T22:35:08.331831681Z`
 - Virtual Size: ~ 336.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u502-b07`
+  - `JAVA_VERSION=jdk8u504-b01`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-09-22T10:53:29Z`
@@ -1181,12 +1181,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 

@@ -1,9 +1,9 @@
-# `eclipse-temurin:21.0.12_8-jdk-ubi9-minimal`
+# `eclipse-temurin:21.0.12.1_1-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:678f7c064070de2dde6477aa462b79b78d3d25e8b4e9ae802d9349140ae184e6`
-- Created: `2026-09-22T18:48:33.563736619Z`
+- Image ID: `sha256:bf75ae83e7e98f2fbf2f35c29bddf8b86289287d4e4bf75742d92b4e2526803d`
+- Created: `2026-09-25T22:38:01.189053392Z`
 - Virtual Size: ~ 490.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12+8`
+  - `JAVA_VERSION=jdk-21.0.12.1+1`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-09-22T10:53:29Z`
@@ -1182,12 +1182,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 

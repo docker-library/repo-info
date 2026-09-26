@@ -1,9 +1,9 @@
-# `eclipse-temurin:25.0.4_7-jdk-alpine-3.22`
+# `eclipse-temurin:25.0.4.1_1-jdk-alpine-3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:79574d237bfac6acdf98925176515efd6e109dbaa52fa294cf4d55c7418f57ad`
-- Created: `2026-09-17T21:41:38.364668961Z`
+- Image ID: `sha256:d99dff2ccc334480f143c0fe7e09e089825bc3985aa7d63526f5c630ba4efe75`
+- Created: `2026-09-25T22:38:34.880350011Z`
 - Virtual Size: ~ 302.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.4+7`
+  - `JAVA_VERSION=jdk-25.0.4.1+1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -447,16 +447,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 133 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```

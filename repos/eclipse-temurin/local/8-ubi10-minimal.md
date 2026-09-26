@@ -1,9 +1,9 @@
-# `eclipse-temurin:8u502-b07-jdk-ubi10-minimal`
+# `eclipse-temurin:8u504-b01-jdk-ubi10-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75595009bce074300b37c45f135f0846d54db351a06d190ac8855be691e153c1`
-- Created: `2026-09-22T18:48:04.73103411Z`
+- Image ID: `sha256:9b04860193c9072ae25519ad0826414968cd96c19c9a0b9a6c2eacf73380bf53`
+- Created: `2026-09-25T22:35:05.486746924Z`
 - Virtual Size: ~ 339.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u502-b07`
+  - `JAVA_VERSION=jdk8u504-b01`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-09-22T11:16:40Z`
@@ -975,12 +975,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libxml2-2.12.5-10.el10_2.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.12.5-10.el10_2.3.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libyaml-0.2.5-16.el10.x86_64`
 
