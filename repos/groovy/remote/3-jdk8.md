@@ -1,7 +1,7 @@
 ## `groovy:3-jdk8`
 
 ```console
-$ docker pull groovy@sha256:733ad3adb42bd35dabcd54de9e264cd24e37d1cf057818f8ec91da0bb6740120
+$ docker pull groovy@sha256:3faafe29f7f93b79eef583784aaecfa532f9fba2bad20a87e8ecb1be42864f26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull groovy@sha256:733ad3adb42bd35dabcd54de9e264cd24e37d1cf057818f8ec91
 ### `groovy:3-jdk8` - linux; amd64
 
 ```console
-$ docker pull groovy@sha256:fe443f488ba30fdaf71c35b93db977e7a356f019099b6d110fe8b46e9151f35e
+$ docker pull groovy@sha256:6e22016a90639530898098c6237e26eb911dadeaf7d9be167b4aa8193f33e4f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.3 MB (146325043 bytes)**  
+-	Total Size: **146.4 MB (146352188 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e7c2fd50b0a380449e87a3a096edbf52dfa049e622d4314be39c0af0981978e`
+-	Image ID: `sha256:57a1cddebf4e954f64b10aa036203c6c6ca45433b014beb20e6127d7be350841`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -37,43 +37,43 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
 # Thu, 03 Sep 2026 12:14:54 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:18:58 GMT
+# Fri, 25 Sep 2026 22:35:07 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 09 Sep 2026 02:18:58 GMT
+# Fri, 25 Sep 2026 22:35:07 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 09 Sep 2026 02:18:58 GMT
+# Fri, 25 Sep 2026 22:35:07 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:18:58 GMT
+# Fri, 25 Sep 2026 22:35:07 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 02:18:58 GMT
-ENV JAVA_VERSION=jdk8u502-b07
-# Wed, 09 Sep 2026 02:19:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='b8f5440f64f50193c01f67dacba55c9660caffe13b908baf6bd1955f4dd4c3ea';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u502b07.tar.gz';          ;;        arm64)          ESUM='34912db17786f7144dab274f040a42028e25da6e7a6a09780d7013339a56bdb2';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_aarch64_linux_hotspot_8u502b07.tar.gz';          ;;        ppc64el)          ESUM='626e870f411d01d6541fafa11e64b8584d8b737195cec5576256e6d3d34a62ba';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u502b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 09 Sep 2026 02:19:02 GMT
+# Fri, 25 Sep 2026 22:35:07 GMT
+ENV JAVA_VERSION=jdk8u504-b01
+# Fri, 25 Sep 2026 22:35:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9c70e102f527ac674ac2fe9c7d47b9a04e2d19842ba5ab8e9b33f368bbadfaea';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u504b01.tar.gz';          ;;        arm64)          ESUM='57b7ed8af9d48542bb49ff7894448040b17bea0a48b41677d11ecaec6129768d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_aarch64_linux_hotspot_8u504b01.tar.gz';          ;;        armhf)          ESUM='b3e720d6515ec36b7de8a885e7e59a9b41968038644167aaff9c88d98b5e2aa7';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_arm_linux_hotspot_8u504b01.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='9ab4f48f91c5e140c732cef76a332989aeef9df7a19b2436de7833ef9d7d8960';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u504b01.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Fri, 25 Sep 2026 22:35:11 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 09 Sep 2026 02:19:02 GMT
+# Fri, 25 Sep 2026 22:35:11 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 09 Sep 2026 02:19:02 GMT
+# Fri, 25 Sep 2026 22:35:11 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 09 Sep 2026 03:21:31 GMT
+# Fri, 25 Sep 2026 23:02:31 GMT
 CMD ["groovysh"]
-# Wed, 09 Sep 2026 03:21:31 GMT
+# Fri, 25 Sep 2026 23:02:31 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 09 Sep 2026 03:21:31 GMT
+# Fri, 25 Sep 2026 23:02:31 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && groupadd --system --gid 1000 groovy     && useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown --recursive groovy:groovy /home/groovy     && chmod --recursive 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln --symbolic /home/groovy/.groovy /root/.groovy # buildkit
-# Wed, 09 Sep 2026 03:21:31 GMT
+# Fri, 25 Sep 2026 23:02:31 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 09 Sep 2026 03:21:31 GMT
+# Fri, 25 Sep 2026 23:02:31 GMT
 WORKDIR /home/groovy
-# Wed, 09 Sep 2026 03:21:37 GMT
+# Fri, 25 Sep 2026 23:02:37 GMT
 RUN set -o errexit -o nounset     && apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 03:21:37 GMT
+# Fri, 25 Sep 2026 23:02:37 GMT
 ENV GROOVY_VERSION=3.0.25
-# Wed, 09 Sep 2026 03:22:16 GMT
+# Fri, 25 Sep 2026 23:02:45 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && rm --force "${GROOVY_HOME}/lib/groovy-raw-${GROOVY_VERSION}-raw.jar"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy # buildkit
-# Wed, 09 Sep 2026 03:22:16 GMT
+# Fri, 25 Sep 2026 23:02:45 GMT
 USER 1000:1000
-# Wed, 09 Sep 2026 03:22:16 GMT
+# Fri, 25 Sep 2026 23:02:46 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version # buildkit
 ```
 
@@ -82,77 +82,77 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
 		Size: 29.8 MB (29750251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3244ad44e6697377b8666bb431d1ae7f226f835cb423552d8f161fb9885e1b7`  
-		Last Modified: Wed, 09 Sep 2026 02:19:14 GMT  
-		Size: 16.1 MB (16112152 bytes)  
+	-	`sha256:9f8861b8e2aa9c4da02029c032b2a5a463b24b50c586567d8fbb4ed4655038ae`  
+		Last Modified: Fri, 25 Sep 2026 22:35:22 GMT  
+		Size: 16.1 MB (16114040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92e5de2ce24d66e0c442be9ccafca033ee0c9811dd9d949921b7290d8003cc67`  
-		Last Modified: Wed, 09 Sep 2026 02:19:15 GMT  
-		Size: 55.2 MB (55168701 bytes)  
+	-	`sha256:81f31216e67adfece400d9afa03e11d02f0cc91c845fa65300c730c6564632fe`  
+		Last Modified: Fri, 25 Sep 2026 22:35:23 GMT  
+		Size: 55.2 MB (55193999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb1e10a0539df2c792a24a88a4b87ea0b397495d2f212eff301ce2fbc0a83010`  
-		Last Modified: Wed, 09 Sep 2026 02:19:13 GMT  
+	-	`sha256:25a55a5a44941f7499774107596a90e82e56f5255895bd6bf576a2f6f1355284`  
+		Last Modified: Fri, 25 Sep 2026 22:35:22 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bbd6db92bbbbd5dc5a743966a87ff1e7bb128562df2769b9d819a3316bdc9cb`  
-		Last Modified: Wed, 09 Sep 2026 02:19:13 GMT  
+	-	`sha256:4539a0ae61b11e62031f364d176b4730362393b523009228c8e63660f4b66e4c`  
+		Last Modified: Fri, 25 Sep 2026 22:35:22 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e85f1fe6d7bf139fcd8392af1180337de5ddfd4647ba5493e131a479540aaf4`  
-		Last Modified: Wed, 09 Sep 2026 03:22:26 GMT  
+	-	`sha256:a61483a8d27deefe83e3403ad217c75225c0954697892fdc773326f8a699b065`  
+		Last Modified: Fri, 25 Sep 2026 23:02:54 GMT  
 		Size: 4.3 KB (4330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae4c67828659ded3e1b8b0d95c20f6147acec789458bf3bbc7de1c032c54a3b`  
-		Last Modified: Wed, 09 Sep 2026 03:22:26 GMT  
-		Size: 245.3 KB (245256 bytes)  
+	-	`sha256:af20ad76f0f179a103fccb8c936cf8d9a74d7133aba740912ac63809c345b2e6`  
+		Last Modified: Fri, 25 Sep 2026 23:02:54 GMT  
+		Size: 245.2 KB (245234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0de7bffea531ec31f0ad12c4f11e503eea6bd3fdb7f6d1db0ea32de1942f940`  
-		Last Modified: Wed, 09 Sep 2026 03:22:27 GMT  
-		Size: 45.0 MB (45041573 bytes)  
+	-	`sha256:a096a861459e4cb49eb7456cee7e4808af1bdc4cf3d45ab963e9328e48eacc50`  
+		Last Modified: Fri, 25 Sep 2026 23:02:55 GMT  
+		Size: 45.0 MB (45041553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e305fd8ed74070637be6d1edbdbd2357145804e7a1a382bdaf6e5a50338874c`  
-		Last Modified: Wed, 09 Sep 2026 03:22:26 GMT  
-		Size: 136.0 B  
+	-	`sha256:5674471804b623d4aeb8a8d74c8f9a7b218a899cadd59315c4b67da902253425`  
+		Last Modified: Fri, 25 Sep 2026 23:02:54 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:3-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:61238f1d6aec3ce81532bca333bd8139241bcbfd0cbc04be5f661a650833f9b2
+$ docker pull groovy@sha256:efb2178f23c915bf1132ebe28f60f09c0b3fd0805aa1e55a0d63e602537ae2f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4233531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f67f1b2b0a4ee62f6b32da432ed942c0b910026a5637e87a010694065a01c13`
+-	Image ID: `sha256:0df59f2ca3f77d36cab1ad24daf2fc6976f45e1f7c8c9374a42aabc7cc8f100f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74a670dee757587acced7ecee3e69f12a2514b33a7dc23edb1fe1a7fb65fb46d`  
-		Last Modified: Wed, 09 Sep 2026 03:22:26 GMT  
+	-	`sha256:d317cc833324c11bc3be760752a7631f9162b5269eace7e8bc4a2d38b854f318`  
+		Last Modified: Fri, 25 Sep 2026 23:02:54 GMT  
 		Size: 4.2 MB (4208630 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9911bfcc385a1c7f816bdd0e6cf58e4f1cb06786c4fda1480e65f86e25b06fb4`  
-		Last Modified: Wed, 09 Sep 2026 03:22:26 GMT  
+	-	`sha256:12a6be4b3623456c52e4a3b3da5d21921b1572bdacf7ae255a537184974c5625`  
+		Last Modified: Fri, 25 Sep 2026 23:02:54 GMT  
 		Size: 24.9 KB (24901 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `groovy:3-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull groovy@sha256:7bfefd0b52e1e86be8fabcc3732ac182f34ab13bd3d9f79f8c930898f56d8480
+$ docker pull groovy@sha256:4f6ff771d1fe3d6bbef932fe79963f1fee799f95896ca293e22ceb93a506a6c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.3 MB (143279297 bytes)**  
+-	Total Size: **143.3 MB (143281082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb80a2edaaf4608de74943b8409c1481be4bb2aac228f526174d9a4c1773707f`
+-	Image ID: `sha256:8d33508e1b5312b9bdb4ec952c8c2fef304a3d9639e29449d904a88226562ea3`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -167,43 +167,43 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b920ec328a9d4f41fbaa4e839ab5a48ad3f138f98a847b3ee8c48142817ee32d in / 
 # Thu, 03 Sep 2026 12:14:43 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 01:31:08 GMT
+# Fri, 25 Sep 2026 22:34:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 09 Sep 2026 01:31:08 GMT
+# Fri, 25 Sep 2026 22:34:45 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 09 Sep 2026 01:31:08 GMT
+# Fri, 25 Sep 2026 22:34:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 01:31:08 GMT
+# Fri, 25 Sep 2026 22:34:45 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 01:31:08 GMT
-ENV JAVA_VERSION=jdk8u502-b07
-# Wed, 09 Sep 2026 01:31:13 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='b8f5440f64f50193c01f67dacba55c9660caffe13b908baf6bd1955f4dd4c3ea';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_x64_linux_hotspot_8u502b07.tar.gz';          ;;        arm64)          ESUM='34912db17786f7144dab274f040a42028e25da6e7a6a09780d7013339a56bdb2';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_aarch64_linux_hotspot_8u502b07.tar.gz';          ;;        ppc64el)          ESUM='626e870f411d01d6541fafa11e64b8584d8b737195cec5576256e6d3d34a62ba';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u502-b07/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u502b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 09 Sep 2026 01:31:13 GMT
+# Fri, 25 Sep 2026 22:34:45 GMT
+ENV JAVA_VERSION=jdk8u504-b01
+# Fri, 25 Sep 2026 22:34:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9c70e102f527ac674ac2fe9c7d47b9a04e2d19842ba5ab8e9b33f368bbadfaea';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u504b01.tar.gz';          ;;        arm64)          ESUM='57b7ed8af9d48542bb49ff7894448040b17bea0a48b41677d11ecaec6129768d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_aarch64_linux_hotspot_8u504b01.tar.gz';          ;;        armhf)          ESUM='b3e720d6515ec36b7de8a885e7e59a9b41968038644167aaff9c88d98b5e2aa7';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_arm_linux_hotspot_8u504b01.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='9ab4f48f91c5e140c732cef76a332989aeef9df7a19b2436de7833ef9d7d8960';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u504b01.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Fri, 25 Sep 2026 22:34:49 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 09 Sep 2026 01:31:13 GMT
+# Fri, 25 Sep 2026 22:34:49 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 09 Sep 2026 01:31:13 GMT
+# Fri, 25 Sep 2026 22:34:49 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 09 Sep 2026 02:22:53 GMT
+# Fri, 25 Sep 2026 23:00:03 GMT
 CMD ["groovysh"]
-# Wed, 09 Sep 2026 02:22:53 GMT
+# Fri, 25 Sep 2026 23:00:03 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Wed, 09 Sep 2026 02:22:53 GMT
+# Fri, 25 Sep 2026 23:00:03 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && groupadd --system --gid 1000 groovy     && useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown --recursive groovy:groovy /home/groovy     && chmod --recursive 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln --symbolic /home/groovy/.groovy /root/.groovy # buildkit
-# Wed, 09 Sep 2026 02:22:53 GMT
+# Fri, 25 Sep 2026 23:00:03 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Wed, 09 Sep 2026 02:22:53 GMT
+# Fri, 25 Sep 2026 23:00:03 GMT
 WORKDIR /home/groovy
-# Wed, 09 Sep 2026 02:23:01 GMT
+# Fri, 25 Sep 2026 23:00:11 GMT
 RUN set -o errexit -o nounset     && apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 02:23:01 GMT
+# Fri, 25 Sep 2026 23:00:11 GMT
 ENV GROOVY_VERSION=3.0.25
-# Wed, 09 Sep 2026 02:23:09 GMT
+# Fri, 25 Sep 2026 23:00:29 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && rm --force "${GROOVY_HOME}/lib/groovy-raw-${GROOVY_VERSION}-raw.jar"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy # buildkit
-# Wed, 09 Sep 2026 02:23:09 GMT
+# Fri, 25 Sep 2026 23:00:29 GMT
 USER 1000:1000
-# Wed, 09 Sep 2026 02:23:10 GMT
+# Fri, 25 Sep 2026 23:00:30 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version # buildkit
 ```
 
@@ -212,64 +212,64 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Thu, 03 Sep 2026 17:08:27 GMT  
 		Size: 27.7 MB (27682747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fa36522f876aa0ad5ec8c7053fcdd3f2f984f60a45540cbab777266302fdaf9`  
-		Last Modified: Wed, 09 Sep 2026 01:32:08 GMT  
-		Size: 16.0 MB (16036371 bytes)  
+	-	`sha256:59e308058eca2f4231320ba4ff02a5040d9668f27fb8441e85bbe028965733fe`  
+		Last Modified: Fri, 25 Sep 2026 22:35:02 GMT  
+		Size: 16.0 MB (16048233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed46ba8e0b3e37bc973be3ed00b44ad738eb76e11f85f78261e42ad907399ca4`  
-		Last Modified: Wed, 09 Sep 2026 01:32:09 GMT  
-		Size: 54.3 MB (54269522 bytes)  
+	-	`sha256:39c2b234be3f04949923191089d04e50ab60fd92833a4bfedec98bfa783fe76e`  
+		Last Modified: Fri, 25 Sep 2026 22:35:03 GMT  
+		Size: 54.3 MB (54259482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e03910709adabbb0663e7ca2c2752b4477292e80a97060eea7667154303e1760`  
-		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
-		Size: 128.0 B  
+	-	`sha256:f9a69caa6d476b98d9c4d6121d5a2ab7c6fe64ae284cd5c05cc19dd673d7e7d9`  
+		Last Modified: Fri, 25 Sep 2026 22:35:01 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bf4ba91cd7ae1cc600652c4d1c9d8c82540c21262876e7d0a0cd59eb38aabb2`  
-		Last Modified: Wed, 09 Sep 2026 01:32:07 GMT  
+	-	`sha256:3b2faf3c23d214466c0a81be28fcfb461749bd25e4291c95bf4390dab9947a8e`  
+		Last Modified: Fri, 25 Sep 2026 22:35:01 GMT  
 		Size: 2.5 KB (2485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a520697f44cb96bd2553aeb94f5f89e3ad97f5962d708a47c6229ad65b70743a`  
-		Last Modified: Wed, 09 Sep 2026 02:23:20 GMT  
-		Size: 4.3 KB (4336 bytes)  
+	-	`sha256:3594cc5a62d3518e44aea69f40fe4f6d39552dea2cc27aa8bd7afac08ddd6bad`  
+		Last Modified: Fri, 25 Sep 2026 23:00:40 GMT  
+		Size: 4.3 KB (4335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ad970d5a7b885878a1a1887e8fbcece4c393115fab3bdcbc0a5bb4377044495`  
-		Last Modified: Wed, 09 Sep 2026 02:23:20 GMT  
-		Size: 242.0 KB (241986 bytes)  
+	-	`sha256:d88a013636c9c9a0e058ae1e21513ad3b169706c8f5dfb508074b37442595a73`  
+		Last Modified: Fri, 25 Sep 2026 23:00:40 GMT  
+		Size: 241.9 KB (241948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5e50923ed88cc8d8e885f01655a4ab39ebd8d73810939d9cb4e4adbf9797bc2`  
-		Last Modified: Wed, 09 Sep 2026 02:23:21 GMT  
-		Size: 45.0 MB (45041551 bytes)  
+	-	`sha256:e71c05194616cde908cc9e8f0dbce97a9ed182c7165763e0a9ca78878aa771f9`  
+		Last Modified: Fri, 25 Sep 2026 23:00:42 GMT  
+		Size: 45.0 MB (45041555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:363b4a8cda330d4c4b139c9eb587720d8d0bd431aea5e296e466ce2239622d93`  
-		Last Modified: Wed, 09 Sep 2026 02:23:20 GMT  
+	-	`sha256:7c125fa7ab45e9601dc923eaa6975df8e0b85656376fe04293c4cb7123b23be0`  
+		Last Modified: Fri, 25 Sep 2026 23:00:40 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:3-jdk8` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:f046fd10de8f23f657918de3933563c155839cfaf71931db346d4ecdb5a53389
+$ docker pull groovy@sha256:6b598c755e41ef103323b5fa350b67b3ed7349a287bd7a9be3fced716f7f5d0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4234108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8bd0f285e878f7122efb8ad36610ed7ca0a205861b70736d611c6c5c724364e`
+-	Image ID: `sha256:d30d882062546dddca5cd9398facc762ac25bad4ada7254105794407d944f3c3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3fdef385632c670e6992c82385e6bbec7d9542de3335b4630f6891f7ec21fdf6`  
-		Last Modified: Wed, 09 Sep 2026 02:23:20 GMT  
+	-	`sha256:9f6c9b8f176402c6b0c133879823fa354ec26881de64ade661d5302ea461a9ba`  
+		Last Modified: Fri, 25 Sep 2026 23:00:40 GMT  
 		Size: 4.2 MB (4209034 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9cb3adc3fe7adfedfe3c83b1a592f1eed5f11e6b5309dca9ff935f7b35e961c4`  
-		Last Modified: Wed, 09 Sep 2026 02:23:19 GMT  
+	-	`sha256:b8e6c4b55f6608f8060d6571f15ffc5746b873a2fb2d8f6043da90c666069368`  
+		Last Modified: Fri, 25 Sep 2026 23:00:40 GMT  
 		Size: 25.1 KB (25074 bytes)  
 		MIME: application/vnd.in-toto+json
 
