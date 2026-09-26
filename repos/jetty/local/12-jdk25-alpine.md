@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d730d5fc3590cb080c617906bfd2cbdbf243f4143c56a6a880e26752b44e9087`
-- Created: `2026-09-17T22:26:35.823082224Z`
+- Image ID: `sha256:e4affd5d00e820bce8df97fd05e55a4b25e40e1eadea293564685c43eb6942c8`
+- Created: `2026-09-25T23:02:51.412620936Z`
 - Virtual Size: ~ 372.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.4+7`
+  - `JAVA_VERSION=jdk-25.0.4.1+1`
   - `JETTY_VERSION=12.1.13`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
@@ -759,16 +759,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
