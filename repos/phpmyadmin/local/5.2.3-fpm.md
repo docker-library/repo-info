@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73dfd51e64b35491c2a204ed7ca39d061286d190ce6f60a2f7923906df725482`
-- Created: `2026-09-19T01:22:37.224244413Z`
-- Virtual Size: ~ 566.97 Mb  
+- Image ID: `sha256:36abe2682591012d97d9daff96c91d098386e7e6d14b26d3e609a83dbc199a5e`
+- Created: `2026-09-25T17:49:09.4029169Z`
+- Virtual Size: ~ 566.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.33`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.33.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.33.tar.xz.asc`
-  - `PHP_SHA256=e293ed620cec74651bb4a071317892a478aa6840fab22db45c72d77cd42f9676`
+  - `PHP_VERSION=8.3.35`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.35.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.35.tar.xz.asc`
+  - `PHP_SHA256=ff4630fbbbd94359134b7d3c223db59329905bdc4f5a9ef93d257b48e358619a`
   - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
   - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
