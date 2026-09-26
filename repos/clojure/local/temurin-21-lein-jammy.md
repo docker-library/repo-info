@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9be8c02d6c1e0117b0dd42605b96c295ee55ee0551e478c91ddc53ddd0b043a`
-- Created: `2026-09-09T03:49:24.473045415Z`
-- Virtual Size: ~ 473.07 Mb  
+- Image ID: `sha256:9b91bcc021b0c25ec0fc39e3e29ccb3cf69b919dc8f1bb6655ca8e9aeb3c2427`
+- Created: `2026-09-25T23:23:41.297667576Z`
+- Virtual Size: ~ 473.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12+8`
+  - `JAVA_VERSION=jdk-21.0.12.1+1`
   - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -308,12 +308,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.4.dsc' coreutils_8.32-4.1ubuntu1.4.dsc 2027 SHA512:cc0b47976933acc36010800551bfd9ce8808582176e1ae2e611e70ead70bdf4e5cd5ac725acb7aee4a47b5c668875084742e28d66b0619f24b75c6a421fb3fed
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.27`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.29`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.27`
-- `libcurl4:amd64=7.81.0-1ubuntu1.27`
+- `curl=7.81.0-1ubuntu1.29`
+- `libcurl4:amd64=7.81.0-1ubuntu1.29`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -327,11 +327,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.27
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.29
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.debian.tar.xz' curl_7.81.0-1ubuntu1.27.debian.tar.xz 104392 SHA512:9a11457c28112f90bb422d35ff54ca6b42e4a3afb370ca7813646240a7e36f94dcb931cb6da0029a09906905582dbd985077dabb8fd1d9647a06fa3d553e29cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.dsc' curl_7.81.0-1ubuntu1.27.dsc 3183 SHA512:7fb0f883e5feba9cf3f6c6cc5e83a137591ad627f62833c7f0aaf45d6891cec012644923fd40a068580be5f6d0376bce56cf68fc064ca1216186823c58de7f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.debian.tar.xz' curl_7.81.0-1ubuntu1.29.debian.tar.xz 106316 SHA512:cfd696f0576a56b02da16adc385803e5cd83e980ea0641b550011f59f86ea25ed184bd48599a2c7ea4f35d192d4e03fd34284b77ea13234bf343873780ba5003
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.29.dsc' curl_7.81.0-1ubuntu1.29.dsc 3187 SHA512:a61df1d374f27064353ff42b6ea57fcfb7ee4c54e88734326a21f23983826fb947fd496f4234de81587a6f8e8c697a527009e8ab152730e06b9d3a3d5560868c
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -521,19 +521,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.dsc' e2fsprogs_1.46.5-2ubuntu1.2.dsc 3190 SHA512:8bf3cf7816ff7a774b03e846fcd90083083c1cd9072635d1eb45ba76c87ea8a1d9f7c5bf99f9a80ad1fed2c294425835ff801ada260b3417258d94cee3dc3758
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.7`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.9`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.7`
+- `libexpat1:amd64=2.4.7-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.9.debian.tar.xz' expat_2.4.7-1ubuntu0.9.debian.tar.xz 59156 SHA512:47f9f699db46a9bebd0cb56074c4637517a44dbcc6345accf361dc73ba4a05f7f8de98f92dcca52782227b7707abcd24a4a741f4ce25f3ea6efb06475f623443
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.9.dsc' expat_2.4.7-1ubuntu0.9.dsc 1491 SHA512:719cdecb522d2f4aca510b142131275d1b1379767ebf90770dd3e8f36ce71989a229b80edf7a774a704f24e3b1712c4c8bd079f29462c56fe88bdbe95e1efbed
+```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 

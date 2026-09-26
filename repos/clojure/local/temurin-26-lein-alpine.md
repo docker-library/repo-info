@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa389c42de76468f664072aa57592698443427de84992cc4764f6ea581510e0a`
-- Created: `2026-09-17T22:34:52.340039021Z`
+- Image ID: `sha256:db5c8c4b336313ddeb6096d47a53f8a1d10ac2aa5fd7ef5c51a438fe87799023`
+- Created: `2026-09-25T23:25:50.481743309Z`
 - Virtual Size: ~ 336.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-26.0.2+10`
+  - `JAVA_VERSION=jdk-26.0.2.1+1`
   - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -450,16 +450,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
