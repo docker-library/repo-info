@@ -58,6 +58,27 @@
 -	[`mongo:8.3.11-windowsservercore`](#mongo8311-windowsservercore)
 -	[`mongo:8.3.11-windowsservercore-ltsc2022`](#mongo8311-windowsservercore-ltsc2022)
 -	[`mongo:8.3.11-windowsservercore-ltsc2025`](#mongo8311-windowsservercore-ltsc2025)
+-	[`mongo:9`](#mongo9)
+-	[`mongo:9-nanoserver`](#mongo9-nanoserver)
+-	[`mongo:9-nanoserver-ltsc2022`](#mongo9-nanoserver-ltsc2022)
+-	[`mongo:9-noble`](#mongo9-noble)
+-	[`mongo:9-windowsservercore`](#mongo9-windowsservercore)
+-	[`mongo:9-windowsservercore-ltsc2022`](#mongo9-windowsservercore-ltsc2022)
+-	[`mongo:9-windowsservercore-ltsc2025`](#mongo9-windowsservercore-ltsc2025)
+-	[`mongo:9.0`](#mongo90)
+-	[`mongo:9.0-nanoserver`](#mongo90-nanoserver)
+-	[`mongo:9.0-nanoserver-ltsc2022`](#mongo90-nanoserver-ltsc2022)
+-	[`mongo:9.0-noble`](#mongo90-noble)
+-	[`mongo:9.0-windowsservercore`](#mongo90-windowsservercore)
+-	[`mongo:9.0-windowsservercore-ltsc2022`](#mongo90-windowsservercore-ltsc2022)
+-	[`mongo:9.0-windowsservercore-ltsc2025`](#mongo90-windowsservercore-ltsc2025)
+-	[`mongo:9.0.2`](#mongo902)
+-	[`mongo:9.0.2-nanoserver`](#mongo902-nanoserver)
+-	[`mongo:9.0.2-nanoserver-ltsc2022`](#mongo902-nanoserver-ltsc2022)
+-	[`mongo:9.0.2-noble`](#mongo902-noble)
+-	[`mongo:9.0.2-windowsservercore`](#mongo902-windowsservercore)
+-	[`mongo:9.0.2-windowsservercore-ltsc2022`](#mongo902-windowsservercore-ltsc2022)
+-	[`mongo:9.0.2-windowsservercore-ltsc2025`](#mongo902-windowsservercore-ltsc2025)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:nanoserver`](#mongonanoserver)
 -	[`mongo:nanoserver-ltsc2022`](#mongonanoserver-ltsc2022)
@@ -10017,6 +10038,90 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Mon, 14 Sep 2026 18:44:49 GMT  
 		Size: 1.3 KB (1302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:9`
+
+**does not exist** (yet?)
+
+## `mongo:9-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:9-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9-noble`
+
+**does not exist** (yet?)
+
+## `mongo:9-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:9-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `mongo:9.0`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-noble`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9.0-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-noble`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:9.0.2-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `mongo:latest`
 
