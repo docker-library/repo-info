@@ -1144,14 +1144,9 @@ Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdbi-perl=1.643-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643.orig.tar.gz' libdbi-perl_1.643.orig.tar.gz 612372 SHA512:03812f3eb1e43c8290dadb8cb14bbced9ec6e237228ea2a2ba91f22e52143906a91a7e82945dab30b1d1b9fc925073721111adafd9a09fac070808ab88f908b8
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-4ubuntu0.1.debian.tar.xz' libdbi-perl_1.643-4ubuntu0.1.debian.tar.xz 15880 SHA512:13f70b824e31ea823702a5af4f6144e517084acaae55fa952fa1ac232321b63a786f3667aa8e2e2550864a05e276658edd2a7dd36598813a324706a355e77da7
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-4ubuntu0.1.dsc' libdbi-perl_1.643-4ubuntu0.1.dsc 2202 SHA512:421e33e82c0d925b995106cfac176af04ac861032f2fd0a7de7ba3780a4022987773e99ace4313835100d0c931336db3b8339f69fd076a4de8ab32d23b197644
-```
 
 ### `dpkg` source package: `libedit=3.1-20230828-1build1`
 
@@ -1788,14 +1783,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz' openssl_3.0.13-0ubuntu3.15.debian.tar.xz 209648 SHA512:fd93a6f8467a6e8d92b80cca3fd352d5dbca99f33895051db596992de91917c3884e173c0cc5fff7fd2219faa6ff3a4eb4f655d5e8e08fc0589a566356a00dbc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.dsc' openssl_3.0.13-0ubuntu3.15.dsc 2516 SHA512:1d22555ad1138c60911fa5afd21a66cc6b10a4db52258573ce1edf237711feb95e64cb7439c80f014b76570d853b0528e473c4e73b37597daf4a52ab6394b030
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 

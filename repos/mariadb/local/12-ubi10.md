@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8b1125cca12be8dc68f8dead3b98d40482e5e817919fc09ed197f600647c627`
-- Created: `2026-09-22T18:50:05.151027973Z`
-- Virtual Size: ~ 528.59 Mb  
+- Image ID: `sha256:10b6d2d0c42a955681563eaa5b9257840680c9192e94fb17a61e4d9e67b021c5`
+- Created: `2026-09-29T17:56:21.875322485Z`
+- Virtual Size: ~ 530.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=12.3.3`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-22T11:16:40Z`
+  - `build-date=2026-09-28T00:57:32Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-09-22T11:16:40Z`
+  - `org.opencontainers.image.created=2026-09-28T00:57:32Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=496f022c586de3cdc994d6097f91f0776122c30e`
+  - `org.opencontainers.image.revision=7f58b38be2088aa773281b773dc5491ca3cf688a`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=496f022c586de3cdc994d6097f91f0776122c30e`
+  - `vcs-ref=7f58b38be2088aa773281b773dc5491ca3cf688a`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.3.3`
@@ -313,12 +313,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.3.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 
@@ -357,12 +352,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gawk-5.3.0-6.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.3.0-6.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gdbm-1.23-12.el10_0.x86_64`
 

@@ -1195,14 +1195,9 @@ Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdbi-perl=1.647-1ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647.orig.tar.gz' libdbi-perl_1.647.orig.tar.gz 727423 SHA512:365b9d51d3c17bb3d8ce6941ef5141512e5aaf4886a62297cb4b56f8bfce9d49d45163ba3841cef59040ff649c752136407c6e8355f8f5a3b2244efd8ef6b0d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.1.debian.tar.xz' libdbi-perl_1.647-1ubuntu0.26.04.1.debian.tar.xz 14444 SHA512:3f9cb5d4505e906b435b65f2f632a37129882d667bf2689001a80fd59c64ab1670b66758e655a20dfad6a993e3e0f6c7f2ba1cf9c1c1424af52b5dcd03ed7691
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.1.dsc' libdbi-perl_1.647-1ubuntu0.26.04.1.dsc 2191 SHA512:1aa9f05ad28d0164e0cebd35f140d38d2c1f523800b8c3a18d7b4a83c61741c6e543971b4dedefa598144f3a33419cba194821855a3db948bd6ec9dab163c9b5
-```
 
 ### `dpkg` source package: `libedit=3.1-20251016-1`
 
@@ -1699,15 +1694,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.debian.tar.xz' openssl_3.5.5-1ubuntu3.5.debian.tar.xz 124844 SHA512:a28cdb1e18d65672624340370f71334310a246952fdcb6a3f28dd51f099ed04b567be6c5ca0a2f82a6c177cf0b9531e9dfa9f9e7cf813e7373734e1b82731ef7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.dsc' openssl_3.5.5-1ubuntu3.5.dsc 2916 SHA512:eaa43652f6129b07e8e5ec51c82eabb1575a420d1a2eb36edd53323113203191776331906188a34106f5941c4849a50ba6619bb85351b3977534496ba534452f
-```
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu3.2`
 
