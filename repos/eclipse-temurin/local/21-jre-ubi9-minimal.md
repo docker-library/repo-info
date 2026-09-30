@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8d331af6a8933cffeab072e4c92f2b2173bfe20ead46a5677081804a5abcb00`
-- Created: `2026-09-25T22:38:27.690315914Z`
+- Image ID: `sha256:ab922c76b98aa567cd010bd231a979b6bd54ac95d9ba2aafce91f9d1f2de8937`
+- Created: `2026-09-29T17:53:26.388823839Z`
 - Virtual Size: ~ 348.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-21.0.12.1+1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-22T10:53:29Z`
+  - `build-date=2026-09-28T00:37:55Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-22T10:53:29Z`
-  - `org.opencontainers.image.revision=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
-  - `release=1790074235`
+  - `org.opencontainers.image.created=2026-09-28T00:37:55Z`
+  - `org.opencontainers.image.revision=5fed6512327cf4e03d25e424d9f6d5eed9016958`
+  - `release=1790555810`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
+  - `vcs-ref=5fed6512327cf4e03d25e424d9f6d5eed9016958`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -307,15 +307,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.194-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.194-1.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.3.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.3.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.5.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -388,12 +388,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv2+ and LGPLv2+ and BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gawk-5.1.0-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.1.0-6.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gdbm-libs-1.23-1.el9.x86_64`
 
@@ -1177,11 +1172,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-14.el9_8.4.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.5.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 

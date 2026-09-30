@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b04860193c9072ae25519ad0826414968cd96c19c9a0b9a6c2eacf73380bf53`
-- Created: `2026-09-25T22:35:05.486746924Z`
-- Virtual Size: ~ 339.45 Mb  
+- Image ID: `sha256:f53ce4da890d8327e6973cc320f3aa712ac9c44b1ecc13ea1dae09f51d174498`
+- Created: `2026-09-29T17:52:25.541607633Z`
+- Virtual Size: ~ 339.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk8u504-b01`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-22T11:16:40Z`
+  - `build-date=2026-09-28T00:57:32Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-22T11:16:40Z`
-  - `org.opencontainers.image.revision=496f022c586de3cdc994d6097f91f0776122c30e`
-  - `release=1790075626`
+  - `org.opencontainers.image.created=2026-09-28T00:57:32Z`
+  - `org.opencontainers.image.revision=7f58b38be2088aa773281b773dc5491ca3cf688a`
+  - `release=1790556942`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=496f022c586de3cdc994d6097f91f0776122c30e`
+  - `vcs-ref=7f58b38be2088aa773281b773dc5491ca3cf688a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -305,12 +305,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.3.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 
@@ -349,12 +344,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gawk-5.3.0-6.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.3.0-6.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gdbm-1.23-12.el10_0.x86_64`
 
