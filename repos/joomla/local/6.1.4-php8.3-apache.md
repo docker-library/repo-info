@@ -1,10 +1,10 @@
-# `joomla:6.1.3-php8.3-apache`
+# `joomla:6.1.4-php8.3-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:90def02a32d64ca28b855058e8bbc90167554cabaf8b5aea998ec117bc9d4144`
-- Created: `2026-09-25T17:52:16.132224381Z`
-- Virtual Size: ~ 791.98 Mb  
+- Image ID: `sha256:6f02241ae0778cdfb91389d3863506152c4b20d39d985465bfab24d40464ca98`
+- Created: `2026-09-29T18:37:03.050509306Z`
+- Virtual Size: ~ 793.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.35.tar.xz.asc`
   - `PHP_SHA256=ff4630fbbbd94359134b7d3c223db59329905bdc4f5a9ef93d257b48e358619a`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=6.1.3`
-  - `JOOMLA_SHA512=0378709fa1ebf06de26e32eeb635c46f0aa05971d206580a00dcde8038bebc6a4e04158e2e43a8f07edecffd62bfe2e07fe3869b8fddab124875c13391052f55`
+  - `JOOMLA_VERSION=6.1.4`
+  - `JOOMLA_SHA512=c969341376e41c957223559adea36d3090f1bba982cb08eb162cd40f9994e43a4400abd2cc0b9b5c5db61d9401101fcfc5db815a626691d44533dc38800b9146`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1443,14 +1443,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.24-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.24-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.05.1~dfsg-1+deb13u1`
+### `dpkg` source package: `ghostscript=10.05.1~dfsg-1+deb13u2`
 
 Binary Packages:
 
-- `ghostscript=10.05.1~dfsg-1+deb13u1`
-- `libgs-common=10.05.1~dfsg-1+deb13u1`
-- `libgs10:amd64=10.05.1~dfsg-1+deb13u1`
-- `libgs10-common=10.05.1~dfsg-1+deb13u1`
+- `ghostscript=10.05.1~dfsg-1+deb13u2`
+- `libgs-common=10.05.1~dfsg-1+deb13u2`
+- `libgs10:amd64=10.05.1~dfsg-1+deb13u2`
+- `libgs10-common=10.05.1~dfsg-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1486,17 +1486,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u1
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.dsc' ghostscript_10.05.1~dfsg-1+deb13u1.dsc 3034 SHA256:368616b13123e2887c54524a685e40856ea9401be3cb3cd0b9c39ba15fcfa818
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u1.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u1.debian.tar.xz 87492 SHA256:6490004f76429ef07f78d13d31ad4b55652414065460bd625d561009a0a6215e
+$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u2.dsc' ghostscript_10.05.1~dfsg-1+deb13u2.dsc 3052 SHA256:0f829e4da27f523e4067d1058b4cf9033d4731ba4a0d269a5fc01b7ee1578847
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u2.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u2.debian.tar.xz 89432 SHA256:ca55202d500a6907f62740419e7666e402098f38954ea8c69f85820dda5c27ad
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.84.4-3~deb13u5`
 
@@ -2335,13 +2335,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libfontenc/1:1.1.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libfontenc/1:1.1.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.19.8-1+deb13u1`
+### `dpkg` source package: `libheif=1.23.4-1~deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-dav1d:amd64=1.19.8-1+deb13u1`
-- `libheif-plugin-libde265:amd64=1.19.8-1+deb13u1`
-- `libheif1:amd64=1.19.8-1+deb13u1`
+- `libheif-plugin-dav1d:amd64=1.23.4-1~deb13u1`
+- `libheif-plugin-libde265:amd64=1.23.4-1~deb13u1`
+- `libheif1:amd64=1.23.4-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2358,17 +2358,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.19.8-1+deb13u1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.dsc' libheif_1.19.8-1+deb13u1.dsc 3289 SHA256:906a8840e79669856631707990f50d92d7adc25516206199342b17e30271eec6
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8.orig.tar.gz' libheif_1.19.8.orig.tar.gz 1718218 SHA256:6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.8-1%2bdeb13u1.debian.tar.xz' libheif_1.19.8-1+deb13u1.debian.tar.xz 26196 SHA256:acb2f40072ef11a679fa100c64c51f29a5fedd0359e5a426e5d5f66377bf6f43
+$ apt-get source -qq --print-uris libheif=1.23.4-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.dsc' libheif_1.23.4-1~deb13u1.dsc 3377 SHA256:6bf7fbd3de53ba819c770f07946e20123ed460f3d8eabe579f22218c96bf82c1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4.orig.tar.gz' libheif_1.23.4.orig.tar.gz 2217221 SHA256:d0c02b4b0e978f34a1974b6f3eea7975a537bf7a9195ffeea38e7242ff316fdd
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.debian.tar.xz' libheif_1.23.4-1~deb13u1.debian.tar.xz 15552 SHA256:5102677f6e7e98b9b80d19e7579617ae07fe56199e9c9ce91ce59c1e7a6e24aa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.8-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.8-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
