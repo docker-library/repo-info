@@ -1,13 +1,13 @@
-# `perl:5.45.2-bookworm`
+# `perl:5.45.3-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9ebb87ebf836f2ad0b04736e7140ca07a164c90ec83dd66e665ec5b8658fe8e`
-- Created: `2026-09-19T03:28:26.809696228Z`
-- Virtual Size: ~ 992.13 Mb  
+- Image ID: `sha256:47b8b43c092aefd5c14a5533c6eb5183477a6f55c7f2b6c9a451257ae22869cf`
+- Created: `2026-09-30T18:10:44.018095104Z`
+- Virtual Size: ~ 993.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.45.2","-de0"]`
+- Command: `["perl5.45.3","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -1080,20 +1080,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.dsc' expat_2.5.0-1+deb12u3.dsc 1427 SHA256:67388db2780dbb8f10cd2d5ace402b655272649dc345825fdc50612007af78d9
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.debian.tar.xz' expat_2.5.0-1+deb12u3.debian.tar.xz 50900 SHA256:1d3fe684581e73766f03c6486dc5e0c068b915da4ae8e778e820495cd9ae44b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/
 
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 
