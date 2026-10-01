@@ -1503,9 +1503,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-142.142
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-142.142.diff.gz' linux_6.8.0-142.142.diff.gz 9033047 SHA512:961845d7457bc66fea2abbfa9f8bd2dd228759e635bddd09b175d5cdecc27fb7fd19b4f1fb2282ef30703975189b7c7c2c9b6ac300bf4e351ecf78493a36e805
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-142.142.dsc' linux_6.8.0-142.142.dsc 9389 SHA512:827d1238b1d8e5855a530479680393adbaa93323d40af8238635e804d2db2c03d0503d45da223b4b9050cae4e2666b632a7bb82b81ae223c0b26f1eb9d429f33
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-142.142.diff.gz' linux_6.8.0-142.142.diff.gz 9033047 SHA512:961845d7457bc66fea2abbfa9f8bd2dd228759e635bddd09b175d5cdecc27fb7fd19b4f1fb2282ef30703975189b7c7c2c9b6ac300bf4e351ecf78493a36e805
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-142.142.dsc' linux_6.8.0-142.142.dsc 9389 SHA512:827d1238b1d8e5855a530479680393adbaa93323d40af8238635e804d2db2c03d0503d45da223b4b9050cae4e2666b632a7bb82b81ae223c0b26f1eb9d429f33
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
@@ -1728,14 +1728,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz' openssl_3.0.13-0ubuntu3.15.debian.tar.xz 209648 SHA512:fd93a6f8467a6e8d92b80cca3fd352d5dbca99f33895051db596992de91917c3884e173c0cc5fff7fd2219faa6ff3a4eb4f655d5e8e08fc0589a566356a00dbc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.dsc' openssl_3.0.13-0ubuntu3.15.dsc 2516 SHA512:1d22555ad1138c60911fa5afd21a66cc6b10a4db52258573ce1edf237711feb95e64cb7439c80f014b76570d853b0528e473c4e73b37597daf4a52ab6394b030
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 
