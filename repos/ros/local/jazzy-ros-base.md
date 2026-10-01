@@ -2226,14 +2226,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.8.debian.tar.xz' libheif_1.17.6-1ubuntu4.8.debian.tar.xz 21628 SHA512:80d3b771cd44169131b2a3f72515545fe9a30aadbfdee953daf3905e5b4cd98160172c9f61b21a646ff2352d431d826ff055ae85d1aec0b72c3eef7dc51ca2a0
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.8.dsc' libheif_1.17.6-1ubuntu4.8.dsc 3561 SHA512:acefe1324e870d0ff40c8e9eaa51957457b40c56f6c589abd11c8b9ca5b588d70d9c83bd4a9a49bd30a500228651969798c448e50cbe08065ebc1fbed5514344
-```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build3`
 
@@ -2933,15 +2928,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.17-1ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz' libxpm_3.5.17.orig.tar.gz 687199 SHA512:01d1b2dcbdd0c7927add19852ec1e68575d5957f043471b0aa6e2b3deb4df397e68a616e6d257ac5a38f60a836eacaae3dc0de5c4c312050673032edbc30f077
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz.asc' libxpm_3.5.17.orig.tar.gz.asc 833 SHA512:a14af9338551fdb37e8c6e3ac75971e173d4b6a2dbce00295e94519542063019392073d08e3f1e8105783815d9853284170bd84bb423bc40fa113f76a2b813a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.24.04.1.diff.gz' libxpm_3.5.17-1ubuntu0.24.04.1.diff.gz 51333 SHA512:8183c1faf12c4218d7a85fc4036934bac100f9db508d821105cdfed22be478923ca95d2ee45a60e3e0a3ae48ab9eec8db44d825eea1ed9ef9343e4400607f585
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.24.04.1.dsc' libxpm_3.5.17-1ubuntu0.24.04.1.dsc 2381 SHA512:a49785be14b41440c2dbde4c8d375174078168ef9b8553cff232c60d901df12422bfede9c3fd9536258b3e9ed467673b41b2608dcb238bc1e14c0f29134ba221
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
@@ -3526,14 +3515,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz' openssl_3.0.13-0ubuntu3.15.debian.tar.xz 209648 SHA512:fd93a6f8467a6e8d92b80cca3fd352d5dbca99f33895051db596992de91917c3884e173c0cc5fff7fd2219faa6ff3a4eb4f655d5e8e08fc0589a566356a00dbc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.dsc' openssl_3.0.13-0ubuntu3.15.dsc 2516 SHA512:1d22555ad1138c60911fa5afd21a66cc6b10a4db52258573ce1edf237711feb95e64cb7439c80f014b76570d853b0528e473c4e73b37597daf4a52ab6394b030
-```
 
 ### `dpkg` source package: `orocos-kdl=1.5.1-4build1`
 

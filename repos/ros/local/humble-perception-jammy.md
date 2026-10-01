@@ -3661,15 +3661,9 @@ Licenses: (parsed from: `/usr/share/doc/libevent-2.1-7/copyright`, `/usr/share/d
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libevent=2.1.12-stable-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz' libevent_2.1.12-stable.orig.tar.gz 1100847 SHA512:88d8944cd75cbe78bc4e56a6741ca67c017a3686d5349100f1c74f8a68ac0b6410ce64dff160be4a4ba0696ee29540dfed59aaf3c9a02f0c164b00307fcfe84f
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz.asc' libevent_2.1.12-stable.orig.tar.gz.asc 488 SHA512:841b57a0f6ba645b1871f257b9929093b11b7d6fd03332e6339adceddda233e78f6190faa2339e2b67b26dc2a56ddd7ce622792820b582168b31a2d1d1854f1f
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-1ubuntu0.1.debian.tar.xz' libevent_2.1.12-stable-1ubuntu0.1.debian.tar.xz 23832 SHA512:60656c10993bd2bb01528fb1a8bf7efbe64816821277a41b17c0d72f5d03b0797336ebc9c2b3aed69c5a4fc69093f4cf4167a3f868b4ff9f87ee3bef82575213
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-1ubuntu0.1.dsc' libevent_2.1.12-stable-1ubuntu0.1.dsc 2608 SHA512:7bb091b81f6cf5906aac651e074b207e219620cac0d24ff47d2f2664614d9d49665c5065da8fabf36cec60c573f490fbd397814fe995a8c6795f9b2b2176c3fe
-```
 
 ### `dpkg` source package: `libexif=0.6.24-1ubuntu0.22.04.1`
 
@@ -5526,14 +5520,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.12-1ubuntu0.22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12.orig.tar.gz' libxpm_3.5.12.orig.tar.gz 529302 SHA512:17169016efc1e139f079290b2369fd62df8617867d97d2f50940521951a50f173118143109f0d7c552de92913cefc5ccaeb52225ccdd9abc89b3b85d9b5669f7
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12-1ubuntu0.22.04.3.diff.gz' libxpm_3.5.12-1ubuntu0.22.04.3.diff.gz 23177 SHA512:439d960e80d1835ccba0bd2f3c7153193d7c9a8d0974dc3aa2c66617ff82a55ec5ae4fd5d6910f98103c1d618f228ee315507b6fabfc1844c2335fb874ccc96a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.12-1ubuntu0.22.04.3.dsc' libxpm_3.5.12-1ubuntu0.22.04.3.dsc 2203 SHA512:889b71fe9f2a5eeab04f40f0470a9245291faa85033d409e26d8d1240fc454a1ddb52383918f8384281e77905af0798d24a23d1f8545c1beed778b80085e73b7
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -5747,14 +5736,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-191.201
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-191.201.diff.gz' linux_5.15.0-191.201.diff.gz 13276142 SHA512:be556b37ace1c89e9cbdb8c79246e6660a900434c6d5dc41ac9290652699e1d8fd12c2e9940b1b1c5d032e78cebf79b7a321e34f98596d99ac9cc0d0821b5582
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-191.201.dsc' linux_5.15.0-191.201.dsc 7655 SHA512:40e90fa7c6c698cf28a1d4cfd9f46e6f72be2b51e1ecdb3417eec8c726a9fc260668a9062575a6b36c3ab310ddec5fc1f839ddf73709009ed73188354e7f62a1
-```
 
 ### `dpkg` source package: `llvm-toolchain-14=1:14.0.0-1ubuntu1.1`
 
@@ -6973,14 +6957,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.29
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.29.debian.tar.xz' openssl_3.0.2-0ubuntu1.29.debian.tar.xz 305548 SHA512:9e1fff476f9d40c88c0897bebb633d36be756d5ab5e80afb217812a2cbc1c15493b78c77484beacfa8418c681bd77a9e27c5a4c8bead39188d92b662d7b15d4c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.29.dsc' openssl_3.0.2-0ubuntu1.29.dsc 2486 SHA512:fcca46be597afc401718e2b7caf030dc924316d99bf4f6c4b3caf1a6e3807fb366060362a1a89677cf39409c3caaa44ae56449d4156e656eb0447d53c06fa306
-```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 

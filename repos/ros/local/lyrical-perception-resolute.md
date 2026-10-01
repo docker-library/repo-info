@@ -4344,14 +4344,9 @@ Licenses: (parsed from: `/usr/share/doc/libevent-2.1-7t64/copyright`, `/usr/shar
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libevent=2.1.12-stable-10ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable.orig.tar.gz' libevent_2.1.12-stable.orig.tar.gz 1100847 SHA512:88d8944cd75cbe78bc4e56a6741ca67c017a3686d5349100f1c74f8a68ac0b6410ce64dff160be4a4ba0696ee29540dfed59aaf3c9a02f0c164b00307fcfe84f
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-10ubuntu0.1.debian.tar.xz' libevent_2.1.12-stable-10ubuntu0.1.debian.tar.xz 23944 SHA512:79989423703ac90abf737db7ef30466ed8ed98702ada1c2dd01ef33f6d1b6cae48217902087d9b7f516f949fa45a6777b8724962e88c67b5a278f8ed6ebd50ae
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.1.12-stable-10ubuntu0.1.dsc' libevent_2.1.12-stable-10ubuntu0.1.dsc 2572 SHA512:c8cf3e2f90ed0560edd2d422ea934e0535c2441f557c7734032af6f22f1e32526b4dc1d39f4dc09c9e5a7463bcd1f9d5aefaf644c1818dd92e147dae5a69e325
-```
 
 ### `dpkg` source package: `libexif=0.6.25-2ubuntu0.1`
 
@@ -6288,15 +6283,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.17-1ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz' libxpm_3.5.17.orig.tar.gz 687199 SHA512:01d1b2dcbdd0c7927add19852ec1e68575d5957f043471b0aa6e2b3deb4df397e68a616e6d257ac5a38f60a836eacaae3dc0de5c4c312050673032edbc30f077
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz.asc' libxpm_3.5.17.orig.tar.gz.asc 833 SHA512:a14af9338551fdb37e8c6e3ac75971e173d4b6a2dbce00295e94519542063019392073d08e3f1e8105783815d9853284170bd84bb423bc40fa113f76a2b813a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.26.04.1.diff.gz' libxpm_3.5.17-1ubuntu0.26.04.1.diff.gz 51390 SHA512:99616c4f91c7ca937a4417b332518b212d42c6277860a0b906050c5088a0506ccdf6f0d526b46c89dbad6d02512159974524d1f7f1124aa75f6f5d649f375211
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.26.04.1.dsc' libxpm_3.5.17-1ubuntu0.26.04.1.dsc 2381 SHA512:fdba2da9098cacc5b05d6f53a5355ebc23d543eb03d66960c82d0ebd065bd0a2dd588339abae9f04f3feb2819395dca6a530c5ee8678c22a4c1cbeef8ef3586c
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.4-1build1`
 
@@ -7840,15 +7829,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.debian.tar.xz' openssl_3.5.5-1ubuntu3.5.debian.tar.xz 124844 SHA512:a28cdb1e18d65672624340370f71334310a246952fdcb6a3f28dd51f099ed04b567be6c5ca0a2f82a6c177cf0b9531e9dfa9f9e7cf813e7373734e1b82731ef7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.5.dsc' openssl_3.5.5-1ubuntu3.5.dsc 2916 SHA512:eaa43652f6129b07e8e5ec51c82eabb1575a420d1a2eb36edd53323113203191776331906188a34106f5941c4849a50ba6619bb85351b3977534496ba534452f
-```
 
 ### `dpkg` source package: `opus=1.6.1-1`
 
