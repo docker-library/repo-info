@@ -295,15 +295,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.27
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.debian.tar.xz' curl_7.81.0-1ubuntu1.27.debian.tar.xz 104392 SHA512:9a11457c28112f90bb422d35ff54ca6b42e4a3afb370ca7813646240a7e36f94dcb931cb6da0029a09906905582dbd985077dabb8fd1d9647a06fa3d553e29cc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.27.dsc' curl_7.81.0-1ubuntu1.27.dsc 3183 SHA512:7fb0f883e5feba9cf3f6c6cc5e83a137591ad627f62833c7f0aaf45d6891cec012644923fd40a068580be5f6d0376bce56cf68fc064ca1216186823c58de7f3a
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1389,14 +1383,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.29
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.29.debian.tar.xz' openssl_3.0.2-0ubuntu1.29.debian.tar.xz 305548 SHA512:9e1fff476f9d40c88c0897bebb633d36be756d5ab5e80afb217812a2cbc1c15493b78c77484beacfa8418c681bd77a9e27c5a4c8bead39188d92b662d7b15d4c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.29.dsc' openssl_3.0.2-0ubuntu1.29.dsc 2486 SHA512:fcca46be597afc401718e2b7caf030dc924316d99bf4f6c4b3caf1a6e3807fb366060362a1a89677cf39409c3caaa44ae56449d4156e656eb0447d53c06fa306
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6ubuntu0.1`
 

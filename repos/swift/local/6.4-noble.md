@@ -372,14 +372,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/sha
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.debian.tar.xz' curl_8.5.0-2ubuntu10.13.debian.tar.xz 89820 SHA512:0387ac0b784f8f2db333786f56d0925f696c8bcbf0a0f39651c6fa35d875fd3aecbd91b30713f93f7afb7b49f21af0d96b37d700f22c7ab5ca21cb14af5da96b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.13.dsc' curl_8.5.0-2ubuntu10.13.dsc 3092 SHA512:bd71e6c018e6cdddc0072fd4984007760dd37ce31e9293b7058b31192cfe9fae2920dd530e75ce582d895140ae758c1646981e05720082ffeb098b98db75a9b0
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1569,14 +1564,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.8.debian.tar.xz' libheif_1.17.6-1ubuntu4.8.debian.tar.xz 21628 SHA512:80d3b771cd44169131b2a3f72515545fe9a30aadbfdee953daf3905e5b4cd98160172c9f61b21a646ff2352d431d826ff055ae85d1aec0b72c3eef7dc51ca2a0
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.8.dsc' libheif_1.17.6-1ubuntu4.8.dsc 3561 SHA512:acefe1324e870d0ff40c8e9eaa51957457b40c56f6c589abd11c8b9ca5b588d70d9c83bd4a9a49bd30a500228651969798c448e50cbe08065ebc1fbed5514344
-```
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1.1`
 
@@ -2435,14 +2425,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz' openssl_3.0.13-0ubuntu3.15.debian.tar.xz 209648 SHA512:fd93a6f8467a6e8d92b80cca3fd352d5dbca99f33895051db596992de91917c3884e173c0cc5fff7fd2219faa6ff3a4eb4f655d5e8e08fc0589a566356a00dbc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.15.dsc' openssl_3.0.13-0ubuntu3.15.dsc 2516 SHA512:1d22555ad1138c60911fa5afd21a66cc6b10a4db52258573ce1edf237711feb95e64cb7439c80f014b76570d853b0528e473c4e73b37597daf4a52ab6394b030
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 
