@@ -1,10 +1,10 @@
-# `percona:psmdb-8.0.29`
+# `percona:psmdb-8.0.32`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fb612c81d7cf842124e6180c793f270fbd1291bdd1b6e1fac4ca76d97562550`
-- Created: `2026-09-22T18:47:00.565268074Z`
-- Virtual Size: ~ 1.02 Gb  
+- Image ID: `sha256:d487af544ea0f45c626ae37f879da0658e462a42dc411fbc0134741535adff85`
+- Created: `2026-09-30T21:02:51.266460809Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=8.0.29-13`
+  - `PSMDB_VERSION=8.0.32-14`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.29-13.el9`
+  - `FULL_PERCONA_VERSION=8.0.32-14.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=testing`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-22T10:53:29Z`
+  - `build-date=2026-09-30T07:43:22Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,12 +38,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-09-22T10:53:29Z`
-  - `org.opencontainers.image.revision=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
-  - `release=1790074235`
+  - `org.opencontainers.image.created=2026-09-30T07:43:22Z`
+  - `org.opencontainers.image.revision=f354e3d450169972cb1f8df64acae506d96d4c49`
+  - `release=1790754119`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c4ab05a33fa224d36e7e3e9795cadaf3e8d13746`
+  - `vcs-ref=f354e3d450169972cb1f8df64acae506d96d4c49`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -281,15 +281,15 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-34.el9_8.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dnf-4.14.0-34.el9_8.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.3.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.3.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.5.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -336,15 +336,15 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
+### `rpm` package: `gawk-5.1.0-6.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv2+ and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gawk-5.1.0-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.1.0-6.el9.src.rpm
+$ dnf --quiet download --source --url gawk-5.1.0-6.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.1.0-6.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `gdbm-libs-1.23-1.el9.x86_64`
@@ -1103,11 +1103,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-14.el9_8.4.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_8.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.5.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1396,19 +1401,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-8.0.29-13.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.32-14.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-8.0.29-13.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.32-14.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-8.0.29-13.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.32-14.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
