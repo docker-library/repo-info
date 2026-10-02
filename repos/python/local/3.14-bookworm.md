@@ -1,17 +1,17 @@
-# `python:3.14.7-bookworm`
+# `python:3.14.8-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6397536167b7244f855bb487854be3f8595e07a7d53d8028bfe6f10c52ff3c55`
-- Created: `2026-09-19T03:38:04.348838579Z`
+- Image ID: `sha256:c1bac91381ec31bca8c571254af2fa8a00fb9772452c20f574b1c6beee80bdcd`
+- Created: `2026-10-01T21:44:27.175368789Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.7`
-  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
+  - `PYTHON_VERSION=3.14.8`
+  - `PYTHON_SHA256=c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1113,20 +1113,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.dsc' expat_2.5.0-1+deb12u3.dsc 1427 SHA256:67388db2780dbb8f10cd2d5ace402b655272649dc345825fdc50612007af78d9
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.debian.tar.xz' expat_2.5.0-1+deb12u3.debian.tar.xz 50900 SHA256:1d3fe684581e73766f03c6486dc5e0c068b915da4ae8e778e820495cd9ae44b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/
 
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 

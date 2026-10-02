@@ -1,17 +1,17 @@
-# `python:3.14.7-alpine3.23`
+# `python:3.14.8-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:80cc52c6f1cf4d2b8711e273a814d5e5a2b59ccf909936fe09e5f6603a409170`
-- Created: `2026-09-17T21:50:23.852998913Z`
-- Virtual Size: ~ 47.8 Mb  
+- Image ID: `sha256:c44e7b5ad10f478ae1177aad3a35fb9b7ba494d9f7a9ef2b7770d9aedaf701b4`
+- Created: `2026-10-01T21:36:39.244093284Z`
+- Virtual Size: ~ 54.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.7`
-  - `PYTHON_SHA256=3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81`
+  - `PYTHON_VERSION=3.14.8`
+  - `PYTHON_SHA256=c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73`
 
 ## `apk` (`.apk`-based packages)
 
@@ -222,16 +222,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -290,16 +290,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
