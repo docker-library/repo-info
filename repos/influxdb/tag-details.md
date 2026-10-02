@@ -58,6 +58,10 @@
 -	[`influxdb:3.11-enterprise`](#influxdb311-enterprise)
 -	[`influxdb:3.11.5-core`](#influxdb3115-core)
 -	[`influxdb:3.11.5-enterprise`](#influxdb3115-enterprise)
+-	[`influxdb:3.12-core`](#influxdb312-core)
+-	[`influxdb:3.12-enterprise`](#influxdb312-enterprise)
+-	[`influxdb:3.12.0-core`](#influxdb3120-core)
+-	[`influxdb:3.12.0-enterprise`](#influxdb3120-enterprise)
 -	[`influxdb:3.9-core`](#influxdb39-core)
 -	[`influxdb:3.9-enterprise`](#influxdb39-enterprise)
 -	[`influxdb:3.9.13-core`](#influxdb3913-core)
@@ -9914,6 +9918,22 @@ $ docker pull influxdb@sha256:ea3ce4c66eaa6ec299c3ec5640671765f7a68cc078e98bd87b
 		Last Modified: Fri, 18 Sep 2026 17:51:57 GMT  
 		Size: 18.0 KB (17969 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `influxdb:3.12-core`
+
+**does not exist** (yet?)
+
+## `influxdb:3.12-enterprise`
+
+**does not exist** (yet?)
+
+## `influxdb:3.12.0-core`
+
+**does not exist** (yet?)
+
+## `influxdb:3.12.0-enterprise`
+
+**does not exist** (yet?)
 
 ## `influxdb:3.9-core`
 
