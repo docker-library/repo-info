@@ -1,7 +1,7 @@
 ## `rust:bookworm`
 
 ```console
-$ docker pull rust@sha256:3ee46017ddbe6be5863d09382ba1ca613640dc115c0125b0d6ab56d2b967277c
+$ docker pull rust@sha256:59037199c44290f2befcdd58dcc540164763fc296950255aaefeef096a1866b0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -320,13 +320,13 @@ $ docker pull rust@sha256:ba5730a80f9bcd7467a22e4c837f62a57fd3531cae5a040bf176a2
 ### `rust:bookworm` - linux; ppc64le
 
 ```console
-$ docker pull rust@sha256:633aaca1bba4de036c2e98f042d562c3b3af97c6bb6a34a315851dcb2cfc206f
+$ docker pull rust@sha256:b0c72f90531b1f3c605d25793a4c6ebfe64f2951bc4f52eec60a8228fa6e25f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **657.4 MB (657392695 bytes)**  
+-	Total Size: **660.3 MB (660294987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b98f85f122132429d6b75c8ce718c5383b509b5db32983626bab3002826ce75`
+-	Image ID: `sha256:2e7b69d9cb600d211742d48eb7235a5b86a54b0afb755035cf8b6713f1866fe5`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -338,11 +338,11 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 19 Sep 2026 11:47:10 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 19 Sep 2026 16:10:38 GMT
+# Fri, 02 Oct 2026 03:04:53 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Sat, 19 Sep 2026 16:10:38 GMT
-ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.98.1
-# Sat, 19 Sep 2026 16:10:38 GMT
+# Fri, 02 Oct 2026 03:04:53 GMT
+ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.99.0
+# Fri, 02 Oct 2026 03:04:53 GMT
 RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='dda7234360b7f578ca8b0ddcb80145646fa61a67c1720a5abc7051b35c9fcb71';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='6f34abb0d553273ce08306ea3adb758d0171f21090cc5ad5426f474ded5504d1';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='15f6e4ce9f583b929c996c91562bad6d4454f3281de858b02cdfdef615fac433';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='5b993042a9f0d3577592f08cb76f8b850951487c2556d90f6e9846abbb083a88';             ;;         'ppc64el')             rustArch='powerpc64le-unknown-linux-gnu';             rustupSha256='86ebc5b46b20013fca57dff4f83aa0c325ee90914626ce1c80ae76e126e48afb';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.1/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
@@ -363,31 +363,31 @@ RUN set -eux;         arch="$(dpkg --print-architecture)";     case "$arch" in  
 		Last Modified: Sat, 19 Sep 2026 11:48:44 GMT  
 		Size: 214.8 MB (214767033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be2f43975f3b90ac175866f6ce92a21f7843ad7f27c1dfb41d1fcee689cc1aed`  
-		Last Modified: Sat, 19 Sep 2026 16:12:12 GMT  
-		Size: 294.7 MB (294723922 bytes)  
+	-	`sha256:7b6a107a40d811f04cb4ace6ca1a61edaece9a45de8c207b9c289940261c73f7`  
+		Last Modified: Fri, 02 Oct 2026 03:06:36 GMT  
+		Size: 297.6 MB (297626214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:7f2463a18f095cd28f94eadd8536a6aa1b8513121b7928d5814c7065f87487d2
+$ docker pull rust@sha256:0e3d728a7048c438517a9e3dcba3c3a0a9e019c2d2c2253a8d3fd5d77590830c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.9 MB (15861353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3349027f008842af07715b7cf8d0e00cd44525526c1cedd26911632d9d8c24a2`
+-	Image ID: `sha256:7763f1fe915d4eadc04ad65f2aabe01448064c06379b2d1d9537aca86fc12b75`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:990d04020af97822d04cb80e40ec0344bdd80a0e8df0f5d392ebc73c0cad818c`  
-		Last Modified: Sat, 19 Sep 2026 16:12:07 GMT  
+	-	`sha256:e03227c43497454055e320b63825c64b6fe4ab1e1f28be8e22fc13ac34c00907`  
+		Last Modified: Fri, 02 Oct 2026 03:06:30 GMT  
 		Size: 15.8 MB (15848213 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b85838e7d4c61a76e4c3105e7067bf95b82c1dd43b37f2105ae475e83f6c4c28`  
-		Last Modified: Sat, 19 Sep 2026 16:12:06 GMT  
+	-	`sha256:b73cc5447655bd4abf049e6b9c80dd7a5d72913815c6ef026c649713ff8012b6`  
+		Last Modified: Fri, 02 Oct 2026 03:06:29 GMT  
 		Size: 13.1 KB (13140 bytes)  
 		MIME: application/vnd.in-toto+json
