@@ -11,7 +11,7 @@
 ## `silverpeas:6.3`
 
 ```console
-$ docker pull silverpeas@sha256:8de5bcd82bb6f88ddff14c90d8f94f22b27b34f8c50a9b00c2aaf34fc483f403
+$ docker pull silverpeas@sha256:1c84b416caa85d6c4c5625f4a86df8e4a3934e411e882c36fdd6187324106237
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,177 +22,177 @@ $ docker pull silverpeas@sha256:8de5bcd82bb6f88ddff14c90d8f94f22b27b34f8c50a9b00
 ### `silverpeas:6.3` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:5b764f377cc278881dd684b6bb360af8d64490a1354612683178d6ed05f57c07
+$ docker pull silverpeas@sha256:998f2fe2c4dccca5ee061ee3d07ce9d1313e2df569bc18c999bf1653bd69d28a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1889833116 bytes)**  
+-	Total Size: **1.9 GB (1887539114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d07145e1dc317a33152264bb63f4a29c453bf930ebab812d2304fda2093d1cd`
+-	Image ID: `sha256:846bbea5f82adc813b58380140e714c4302335dfb1e13d37ac6df30d5b757d81`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG RELEASE
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 03 Sep 2026 12:14:53 GMT
-ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
-# Thu, 03 Sep 2026 12:14:54 GMT
+# Thu, 24 Sep 2026 22:24:06 GMT
+ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
+# Thu, 24 Sep 2026 22:24:07 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 ENV TERM=xterm
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 RUN apt-get update   && apt-get install -y tzdata   && apt-get install -y     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f # buildkit
-# Wed, 09 Sep 2026 02:47:39 GMT
+# Fri, 02 Oct 2026 01:42:14 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip # buildkit
-# Wed, 09 Sep 2026 02:47:42 GMT
+# Fri, 02 Oct 2026 01:42:16 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip # buildkit
-# Wed, 09 Sep 2026 02:47:42 GMT
+# Fri, 02 Oct 2026 01:42:16 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE} # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV PING_ON=1
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV SILVERPEAS_VERSION=6.3.6
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV WILDFLY_VERSION=26.1.1
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 LABEL name=Silverpeas 6.3.6 description=Image to install and to run Silverpeas 6.3.6 vendor=Silverpeas version=6.3.6 build=2
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2 # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/settings.xml /root/.m2/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/silverpeas.gradle /opt/silverpeas/bin/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/run.sh /opt/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/converter.groovy /opt/silverpeas/configuration/silverpeas/ # buildkit
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle   && ./silverpeas construct   && rm ../log/build-*   && touch .install # buildkit
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 EXPOSE map[8000/tcp:{} 9990/tcp:{}]
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:20c3783cc497b5b0df1fc5f92bd64c3d2fbb24057c88692c8fda205b6ea8a2f2`  
-		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
-		Size: 29.8 MB (29750251 bytes)  
+	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
+		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
+		Size: 29.8 MB (29751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74aed50262a2ea181d01c54420811248bbcf6cb02745835098a3051300e02ceb`  
-		Last Modified: Wed, 09 Sep 2026 02:52:03 GMT  
-		Size: 874.0 MB (873957018 bytes)  
+	-	`sha256:3e55ea2ce51f7f4f045fab27c1f00d571f87c7513f17f8d555ea2bb5879b0562`  
+		Last Modified: Fri, 02 Oct 2026 01:46:36 GMT  
+		Size: 871.7 MB (871658359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e9933ec82ae1e375f231469da407e8b53bb45ef1df590b644242832ab7c6c2b`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 4.0 MB (3994007 bytes)  
+	-	`sha256:410d60a79102c6ca73725d91eb8232b38b6627640874fa2d01e882f72238365a`  
+		Last Modified: Fri, 02 Oct 2026 01:45:57 GMT  
+		Size: 4.0 MB (3994009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ec8e0371fcf89cc6488f541f1e883fcd029ce64e2a86a032d772dfafe480ae`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 7.1 MB (7146616 bytes)  
+	-	`sha256:327b8376285dafb25af15f08180f5ded6e76e4b9118480b7d2ca0fa778c02369`  
+		Last Modified: Fri, 02 Oct 2026 01:45:58 GMT  
+		Size: 7.1 MB (7146629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ab71230848e38e0c7a1cd8f61047a0e96c0ff908af9084f105347046a5a5e76`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 2.5 MB (2538622 bytes)  
+	-	`sha256:8ff8e09037c23bbe4926b16b1f24df4fec65488c41d6c951613d1a862b31fabe`  
+		Last Modified: Fri, 02 Oct 2026 01:45:58 GMT  
+		Size: 2.5 MB (2538612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd95bea97c3d9011cdb5b9628457365333cda242972b7ad74aa5b9129c72c429`  
-		Last Modified: Wed, 09 Sep 2026 02:51:35 GMT  
-		Size: 235.0 B  
+	-	`sha256:30bf92b1285d2c19e54e13cc291a3474955043013e0bf977f416970ae258067d`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71f7c91785d55c3c5ca4421e80ca21f8ba16ef34dc4e88e49b4ea6b6018f53b8`  
-		Last Modified: Wed, 09 Sep 2026 02:51:35 GMT  
+	-	`sha256:c2cb713208362e2c7475ccfc378399f761b08e7bc6dd7633479e386102a2f61e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41d94e0ac1fd66df149fc37107b905f238162b0c91610052d44729e6dab25243`  
-		Last Modified: Wed, 09 Sep 2026 02:51:45 GMT  
-		Size: 217.8 MB (217843289 bytes)  
+	-	`sha256:9ac998088476d322bec6f4d64248b5fcfb1455aaa8135f1bb42719c8456844e0`  
+		Last Modified: Fri, 02 Oct 2026 01:46:09 GMT  
+		Size: 217.8 MB (217843270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e84a6ea68854bc2aa743c8ee36491c8f97ca60c4ed3539ce35c71d61bc9b531a`  
-		Last Modified: Wed, 09 Sep 2026 02:51:36 GMT  
-		Size: 405.0 B  
+	-	`sha256:8841d7aa6ba04531fe6396c5da0c599ed07f28557e82fda78fef1e559c1163e5`  
+		Last Modified: Fri, 02 Oct 2026 01:46:00 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66349822ba14b9abad8e9f18ff87de22384844708df97a525e5c30a90b8534b6`  
-		Last Modified: Wed, 09 Sep 2026 02:51:36 GMT  
+	-	`sha256:cece4b92fb5ebba45a703767341f07ea6d5636d06a142ba5cb6df78b3004c214`  
+		Last Modified: Fri, 02 Oct 2026 01:46:00 GMT  
 		Size: 665.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7f72390b1b31a3b474fcee5d5333a1fa61f36e1b63ee7e2a8e9352fa34f3f7`  
-		Last Modified: Wed, 09 Sep 2026 02:51:37 GMT  
-		Size: 923.0 B  
+	-	`sha256:03e76a7acc8295c53b444aac8c8c651ecc2d6dc2311b505633ef657b278b5e2a`  
+		Last Modified: Fri, 02 Oct 2026 01:46:01 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1a47da7060717e4d6308306603755c2e6ad4447f3ffa267a797e0fed28c284a`  
-		Last Modified: Wed, 09 Sep 2026 02:51:37 GMT  
+	-	`sha256:1c9402573ec2665aa526d6540e63f8d976a8670c86611bcf46193c0864a5084a`  
+		Last Modified: Fri, 02 Oct 2026 01:46:02 GMT  
 		Size: 385.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:140202b919ceba324a9d2544ac67a5e1846a613107ac33263d90a568659f1e23`  
-		Last Modified: Wed, 09 Sep 2026 02:52:04 GMT  
-		Size: 754.6 MB (754600537 bytes)  
+	-	`sha256:ef70527b718b77665e116ba891b98ac2c649ad9224a59796ba4c21e9eb071436`  
+		Last Modified: Fri, 02 Oct 2026 01:46:37 GMT  
+		Size: 754.6 MB (754603836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `silverpeas:6.3` - unknown; unknown
 
 ```console
-$ docker pull silverpeas@sha256:758f7b0bfc7968ed3b8a11c08cc34db891cc56333f06a668cfe1640b971c8aa9
+$ docker pull silverpeas@sha256:34a82e0417257f5b75497a1a1fe3b9bb8cc20ac00a56124c6fba8e145f54386b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 MB (26853584 bytes)**  
+-	Total Size: **26.9 MB (26854046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c9bfdd3c39cf77438230d52fd59fedb835980c5076f00df13827c9b93e024ec`
+-	Image ID: `sha256:b20743c265ba6faef9db12481a27bce22ead276689b26f30bbea9d83f154e700`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:70b5f3d215ed262fcc5124aea2268183ab53518bc5322d6793ca027540e83d22`  
-		Last Modified: Wed, 09 Sep 2026 02:51:34 GMT  
-		Size: 26.8 MB (26812582 bytes)  
+	-	`sha256:aadf2ef37a3afc97ff6bc0ba72179e80d4c128239b5bf39d75295f4c5b32d4d4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
+		Size: 26.8 MB (26813044 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ebb692465befcc9b268876f974947fd4fb25e52d147965e90cdd2bafd2bfe45`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
+	-	`sha256:65dae200f2a748621c413b666c0bb73d908a392ea7103ee8efe0284ad69b6797`  
+		Last Modified: Fri, 02 Oct 2026 01:45:57 GMT  
 		Size: 41.0 KB (41002 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `silverpeas:6.3.6`
 
 ```console
-$ docker pull silverpeas@sha256:8de5bcd82bb6f88ddff14c90d8f94f22b27b34f8c50a9b00c2aaf34fc483f403
+$ docker pull silverpeas@sha256:1c84b416caa85d6c4c5625f4a86df8e4a3934e411e882c36fdd6187324106237
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -203,177 +203,177 @@ $ docker pull silverpeas@sha256:8de5bcd82bb6f88ddff14c90d8f94f22b27b34f8c50a9b00
 ### `silverpeas:6.3.6` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:5b764f377cc278881dd684b6bb360af8d64490a1354612683178d6ed05f57c07
+$ docker pull silverpeas@sha256:998f2fe2c4dccca5ee061ee3d07ce9d1313e2df569bc18c999bf1653bd69d28a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1889833116 bytes)**  
+-	Total Size: **1.9 GB (1887539114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d07145e1dc317a33152264bb63f4a29c453bf930ebab812d2304fda2093d1cd`
+-	Image ID: `sha256:846bbea5f82adc813b58380140e714c4302335dfb1e13d37ac6df30d5b757d81`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG RELEASE
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 03 Sep 2026 12:14:53 GMT
-ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
-# Thu, 03 Sep 2026 12:14:54 GMT
+# Thu, 24 Sep 2026 22:24:06 GMT
+ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
+# Thu, 24 Sep 2026 22:24:07 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 ENV TERM=xterm
-# Wed, 09 Sep 2026 02:47:37 GMT
+# Fri, 02 Oct 2026 01:42:12 GMT
 RUN apt-get update   && apt-get install -y tzdata   && apt-get install -y     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f # buildkit
-# Wed, 09 Sep 2026 02:47:39 GMT
+# Fri, 02 Oct 2026 01:42:14 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip # buildkit
-# Wed, 09 Sep 2026 02:47:42 GMT
+# Fri, 02 Oct 2026 01:42:16 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip # buildkit
-# Wed, 09 Sep 2026 02:47:42 GMT
+# Fri, 02 Oct 2026 01:42:16 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE} # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:37 GMT
 ENV PING_ON=1
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV SILVERPEAS_VERSION=6.3.6
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 ENV WILDFLY_VERSION=26.1.1
-# Wed, 09 Sep 2026 02:48:04 GMT
+# Fri, 02 Oct 2026 01:42:38 GMT
 LABEL name=Silverpeas 6.3.6 description=Image to install and to run Silverpeas 6.3.6 vendor=Silverpeas version=6.3.6 build=2
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2 # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/settings.xml /root/.m2/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/silverpeas.gradle /opt/silverpeas/bin/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/run.sh /opt/ # buildkit
-# Wed, 09 Sep 2026 02:48:23 GMT
+# Fri, 02 Oct 2026 01:42:56 GMT
 COPY src/converter.groovy /opt/silverpeas/configuration/silverpeas/ # buildkit
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle   && ./silverpeas construct   && rm ../log/build-*   && touch .install # buildkit
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 EXPOSE map[8000/tcp:{} 9990/tcp:{}]
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 09 Sep 2026 02:49:32 GMT
+# Fri, 02 Oct 2026 01:44:04 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:20c3783cc497b5b0df1fc5f92bd64c3d2fbb24057c88692c8fda205b6ea8a2f2`  
-		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
-		Size: 29.8 MB (29750251 bytes)  
+	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
+		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
+		Size: 29.8 MB (29751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74aed50262a2ea181d01c54420811248bbcf6cb02745835098a3051300e02ceb`  
-		Last Modified: Wed, 09 Sep 2026 02:52:03 GMT  
-		Size: 874.0 MB (873957018 bytes)  
+	-	`sha256:3e55ea2ce51f7f4f045fab27c1f00d571f87c7513f17f8d555ea2bb5879b0562`  
+		Last Modified: Fri, 02 Oct 2026 01:46:36 GMT  
+		Size: 871.7 MB (871658359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e9933ec82ae1e375f231469da407e8b53bb45ef1df590b644242832ab7c6c2b`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 4.0 MB (3994007 bytes)  
+	-	`sha256:410d60a79102c6ca73725d91eb8232b38b6627640874fa2d01e882f72238365a`  
+		Last Modified: Fri, 02 Oct 2026 01:45:57 GMT  
+		Size: 4.0 MB (3994009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ec8e0371fcf89cc6488f541f1e883fcd029ce64e2a86a032d772dfafe480ae`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 7.1 MB (7146616 bytes)  
+	-	`sha256:327b8376285dafb25af15f08180f5ded6e76e4b9118480b7d2ca0fa778c02369`  
+		Last Modified: Fri, 02 Oct 2026 01:45:58 GMT  
+		Size: 7.1 MB (7146629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ab71230848e38e0c7a1cd8f61047a0e96c0ff908af9084f105347046a5a5e76`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
-		Size: 2.5 MB (2538622 bytes)  
+	-	`sha256:8ff8e09037c23bbe4926b16b1f24df4fec65488c41d6c951613d1a862b31fabe`  
+		Last Modified: Fri, 02 Oct 2026 01:45:58 GMT  
+		Size: 2.5 MB (2538612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd95bea97c3d9011cdb5b9628457365333cda242972b7ad74aa5b9129c72c429`  
-		Last Modified: Wed, 09 Sep 2026 02:51:35 GMT  
-		Size: 235.0 B  
+	-	`sha256:30bf92b1285d2c19e54e13cc291a3474955043013e0bf977f416970ae258067d`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71f7c91785d55c3c5ca4421e80ca21f8ba16ef34dc4e88e49b4ea6b6018f53b8`  
-		Last Modified: Wed, 09 Sep 2026 02:51:35 GMT  
+	-	`sha256:c2cb713208362e2c7475ccfc378399f761b08e7bc6dd7633479e386102a2f61e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41d94e0ac1fd66df149fc37107b905f238162b0c91610052d44729e6dab25243`  
-		Last Modified: Wed, 09 Sep 2026 02:51:45 GMT  
-		Size: 217.8 MB (217843289 bytes)  
+	-	`sha256:9ac998088476d322bec6f4d64248b5fcfb1455aaa8135f1bb42719c8456844e0`  
+		Last Modified: Fri, 02 Oct 2026 01:46:09 GMT  
+		Size: 217.8 MB (217843270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e84a6ea68854bc2aa743c8ee36491c8f97ca60c4ed3539ce35c71d61bc9b531a`  
-		Last Modified: Wed, 09 Sep 2026 02:51:36 GMT  
-		Size: 405.0 B  
+	-	`sha256:8841d7aa6ba04531fe6396c5da0c599ed07f28557e82fda78fef1e559c1163e5`  
+		Last Modified: Fri, 02 Oct 2026 01:46:00 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66349822ba14b9abad8e9f18ff87de22384844708df97a525e5c30a90b8534b6`  
-		Last Modified: Wed, 09 Sep 2026 02:51:36 GMT  
+	-	`sha256:cece4b92fb5ebba45a703767341f07ea6d5636d06a142ba5cb6df78b3004c214`  
+		Last Modified: Fri, 02 Oct 2026 01:46:00 GMT  
 		Size: 665.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f7f72390b1b31a3b474fcee5d5333a1fa61f36e1b63ee7e2a8e9352fa34f3f7`  
-		Last Modified: Wed, 09 Sep 2026 02:51:37 GMT  
-		Size: 923.0 B  
+	-	`sha256:03e76a7acc8295c53b444aac8c8c651ecc2d6dc2311b505633ef657b278b5e2a`  
+		Last Modified: Fri, 02 Oct 2026 01:46:01 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1a47da7060717e4d6308306603755c2e6ad4447f3ffa267a797e0fed28c284a`  
-		Last Modified: Wed, 09 Sep 2026 02:51:37 GMT  
+	-	`sha256:1c9402573ec2665aa526d6540e63f8d976a8670c86611bcf46193c0864a5084a`  
+		Last Modified: Fri, 02 Oct 2026 01:46:02 GMT  
 		Size: 385.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:140202b919ceba324a9d2544ac67a5e1846a613107ac33263d90a568659f1e23`  
-		Last Modified: Wed, 09 Sep 2026 02:52:04 GMT  
-		Size: 754.6 MB (754600537 bytes)  
+	-	`sha256:ef70527b718b77665e116ba891b98ac2c649ad9224a59796ba4c21e9eb071436`  
+		Last Modified: Fri, 02 Oct 2026 01:46:37 GMT  
+		Size: 754.6 MB (754603836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `silverpeas:6.3.6` - unknown; unknown
 
 ```console
-$ docker pull silverpeas@sha256:758f7b0bfc7968ed3b8a11c08cc34db891cc56333f06a668cfe1640b971c8aa9
+$ docker pull silverpeas@sha256:34a82e0417257f5b75497a1a1fe3b9bb8cc20ac00a56124c6fba8e145f54386b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.9 MB (26853584 bytes)**  
+-	Total Size: **26.9 MB (26854046 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c9bfdd3c39cf77438230d52fd59fedb835980c5076f00df13827c9b93e024ec`
+-	Image ID: `sha256:b20743c265ba6faef9db12481a27bce22ead276689b26f30bbea9d83f154e700`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:70b5f3d215ed262fcc5124aea2268183ab53518bc5322d6793ca027540e83d22`  
-		Last Modified: Wed, 09 Sep 2026 02:51:34 GMT  
-		Size: 26.8 MB (26812582 bytes)  
+	-	`sha256:aadf2ef37a3afc97ff6bc0ba72179e80d4c128239b5bf39d75295f4c5b32d4d4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:59 GMT  
+		Size: 26.8 MB (26813044 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ebb692465befcc9b268876f974947fd4fb25e52d147965e90cdd2bafd2bfe45`  
-		Last Modified: Wed, 09 Sep 2026 02:51:33 GMT  
+	-	`sha256:65dae200f2a748621c413b666c0bb73d908a392ea7103ee8efe0284ad69b6797`  
+		Last Modified: Fri, 02 Oct 2026 01:45:57 GMT  
 		Size: 41.0 KB (41002 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `silverpeas:6.4`
 
 ```console
-$ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df6815cd0287f6349b1e
+$ docker pull silverpeas@sha256:f62318efa7f9f185a7115b18229dccb282f7576eb0d47db2633e49f8f5f4c57a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -384,177 +384,177 @@ $ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df68
 ### `silverpeas:6.4` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:f87009d5b6a9d15be51e40bbc1414ef956e6252c7854979665ec708d30abc368
+$ docker pull silverpeas@sha256:1fb76e903a15daf0670c3a41bc18aa324ef3521f02b99153fc8a52473a49b6d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1818545649 bytes)**  
+-	Total Size: **1.8 GB (1818581862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bacd1b1c988a2b6b40fa7ed60edb43ea8266f46faa441ffecba4a9572604afa`
+-	Image ID: `sha256:12eadc1b222867d148159c34972911498d28ae63513706d2d705bdf1c56d7bc7`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG RELEASE
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 03 Sep 2026 12:14:53 GMT
-ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
-# Thu, 03 Sep 2026 12:14:54 GMT
+# Thu, 24 Sep 2026 22:24:06 GMT
+ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
+# Thu, 24 Sep 2026 22:24:07 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 ENV TERM=xterm
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends tzdata   && apt-get install -y --no-install-recommends     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f # buildkit
-# Wed, 09 Sep 2026 02:44:13 GMT
+# Fri, 02 Oct 2026 01:41:29 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 swftools-bin-0.9.2.zip' | sha256sum -c --status -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 pdf2json-bin-0.68.zip' | sha256sum -c --status -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE} # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV PING_ON=1
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_VERSION=6.4.7
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV WILDFLY_VERSION=26.1.3
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 LABEL name=Silverpeas 6.4.7 description=Image to install and to run Silverpeas 6.4.7 vendor=Silverpeas version=6.4.7 build=1
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && wget -nc https://www.silverpeas.org/files/oak-migrate.zip   && echo '87009e55520e74b5d2a386f4ebc843ee43cd1f25ca5138f342a94a31add3cfbd oak-migrate.zip' | sha256sum -c --status -   && mkdir -p /opt/oak-migration   && unzip oak-migrate.zip -d /opt/oak-migration/   && chmod +x /opt/oak-migration/oak-migrate.sh   && rm *.zip   && mkdir -p /root/.m2 # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/settings.xml /root/.m2/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/silverpeas.gradle /opt/silverpeas/bin/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/run.sh /opt/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/converter.groovy /opt/silverpeas/configuration/silverpeas/ # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN set -eux;   sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle;   echo "Construct Silverpeas ${SILVERPEAS_VERSION}";   ./silverpeas assemble || (cat ../log/build-* && exit 1);   rm ../log/build-*;   touch .install; # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 EXPOSE map[8000/tcp:{} 9990/tcp:{}]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:20c3783cc497b5b0df1fc5f92bd64c3d2fbb24057c88692c8fda205b6ea8a2f2`  
-		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
-		Size: 29.8 MB (29750251 bytes)  
+	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
+		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
+		Size: 29.8 MB (29751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad5bf657fc6f5f6ed06d436f7c86f54f54683f9e77b9af417a384de0371ad9d7`  
-		Last Modified: Wed, 09 Sep 2026 02:48:08 GMT  
-		Size: 494.8 MB (494826814 bytes)  
+	-	`sha256:735a4663f3f021d8e3d864e96558179c1aa1e433d1109fded6458bc10833407b`  
+		Last Modified: Fri, 02 Oct 2026 01:45:29 GMT  
+		Size: 494.9 MB (494862288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d958173750b9501be14e53188c982014be1d75c3082180bf551c2564792ec91`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 4.0 MB (3994008 bytes)  
+	-	`sha256:3b43d5c16fb992e89b01f6df9167b643b5ff4f14b4923fc49cf4e80a638af4ca`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 4.0 MB (3994014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9503baee88be92adb3c695bd5df920cb55742624ab4154d90eab6d712d998ba8`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 7.1 MB (7146619 bytes)  
+	-	`sha256:ab6b08a9eff97ae7b331bfc938843074e0149b1e87c54e517cb4aa72c3b5d8dd`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 7.1 MB (7146626 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af5b7280f331982e9117f7c84c5f910ef02c8c56c47a585e6600dd66dec6a3ab`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 2.5 MB (2538619 bytes)  
+	-	`sha256:8b9cb371331c107fd5fde10353e81046a30aeb7c1e0bb4f3cd06b45e398ac7f4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 2.5 MB (2538614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ab77dd5e35edf0eee06bb46660a5e33069a0cbbb0905eb8f507ed0c392bff8f`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 236.0 B  
+	-	`sha256:fee0df555d3fcb2f5cf989262dd90e2308f682694f8ee66352ceb2f5798429df`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 235.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29088b13ecf4abaf91d332f94bbb94d9203ba8a46e89e5ac219de119237538f0`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 130.0 B  
+	-	`sha256:66e0ce1e64e0d08aedda3aa730647b4167aec1263d754ddbab1c9ba195b44ac4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30afd34e4cfb4cf563eb4e8ff514e27539900a255fb2383f8b93d650c652c989`  
-		Last Modified: Wed, 09 Sep 2026 02:48:04 GMT  
-		Size: 269.1 MB (269106983 bytes)  
+	-	`sha256:55e53520244e73cf211beb2eb5e1b7a5170790285415e3a8133ab6cbd69b3e5c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:24 GMT  
+		Size: 269.1 MB (269106985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd910ab941ce0f71f384e468ac975a78d0eeb10b46f10cb8247753671f3ac0bb`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
-		Size: 404.0 B  
+	-	`sha256:d7e6147b85d66571859815efd2cb87f8826e27bf43320653fc9dc6e6e8079dc3`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91b510ab96e136ed81ecbe375b01ddf2ded61a7ad5ed92f170aa455ba4770495`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
+	-	`sha256:17d318873d0bf65822dbb0b0c2dc6fa1406e0dd75242e108995063f17266ad4e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
 		Size: 663.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96ab7d1b70d162bbfb7cd79cef2a3bd7d8c4e8968f832ee1f4d9848a98ceafe1`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:dfee4ae361915d0aba1c3cbd6ed4c00f69751b907c942cdb602a448dc3b8155d`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 1.4 KB (1447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fec9427648ccb52a9a2b049474603e506dc26beaf06f04a79bb1ef52592f4639`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 388.0 B  
+	-	`sha256:5a1975c0acdd3442fd0db97e4bf660deafc8655ef30c1158d9e06132a6ec7a58`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:586a2f86721451f02837bc9acd2cab5f0a559dab4b43429370f0812e9841ff27`  
-		Last Modified: Wed, 09 Sep 2026 02:48:21 GMT  
-		Size: 1.0 GB (1011179056 bytes)  
+	-	`sha256:f837a1840e7402d021f7506b4f84b777efa22db1eedfcdaf3e546cd0430b578c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:42 GMT  
+		Size: 1.0 GB (1011178406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `silverpeas:6.4` - unknown; unknown
 
 ```console
-$ docker pull silverpeas@sha256:b7bca17221c578f9be9a80121ae3f5dc923f027982450b3769732bfcc3682d6b
+$ docker pull silverpeas@sha256:d65f4a90753b5d56cf156c97fcf989bff94f3270df6d736c2fa1bcfb78d65fc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 MB (16639076 bytes)**  
+-	Total Size: **16.6 MB (16639514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:887ddd3e2319c826253a36268e609fdf5a82db5ebac3b30cdc47eda44ee06591`
+-	Image ID: `sha256:5e019ce7bf224713d769d879b3085761004a00920258aab8709cb96594758e2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6cc0e87524d900b22370ab3bab83d9a6edbc511e14dca7a7bfa400d1d6d1592`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 16.6 MB (16596270 bytes)  
+	-	`sha256:0a9f414855121f3488547a22609c48a9ea1eaf7e16291669748af3e927297542`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 16.6 MB (16596708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ad8860da3db3eff2e2d59cfd91395ed9bad36203e7ae100231584491d93655`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
+	-	`sha256:f4a829fd1070a11e7c0a1a3a4bf8c7669e2a9ccf5837da73e081e6ce88d8e74e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:08 GMT  
 		Size: 42.8 KB (42806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `silverpeas:6.4.7`
 
 ```console
-$ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df6815cd0287f6349b1e
+$ docker pull silverpeas@sha256:f62318efa7f9f185a7115b18229dccb282f7576eb0d47db2633e49f8f5f4c57a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -565,177 +565,177 @@ $ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df68
 ### `silverpeas:6.4.7` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:f87009d5b6a9d15be51e40bbc1414ef956e6252c7854979665ec708d30abc368
+$ docker pull silverpeas@sha256:1fb76e903a15daf0670c3a41bc18aa324ef3521f02b99153fc8a52473a49b6d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1818545649 bytes)**  
+-	Total Size: **1.8 GB (1818581862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bacd1b1c988a2b6b40fa7ed60edb43ea8266f46faa441ffecba4a9572604afa`
+-	Image ID: `sha256:12eadc1b222867d148159c34972911498d28ae63513706d2d705bdf1c56d7bc7`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG RELEASE
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 03 Sep 2026 12:14:53 GMT
-ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
-# Thu, 03 Sep 2026 12:14:54 GMT
+# Thu, 24 Sep 2026 22:24:06 GMT
+ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
+# Thu, 24 Sep 2026 22:24:07 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 ENV TERM=xterm
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends tzdata   && apt-get install -y --no-install-recommends     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f # buildkit
-# Wed, 09 Sep 2026 02:44:13 GMT
+# Fri, 02 Oct 2026 01:41:29 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 swftools-bin-0.9.2.zip' | sha256sum -c --status -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 pdf2json-bin-0.68.zip' | sha256sum -c --status -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE} # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV PING_ON=1
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_VERSION=6.4.7
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV WILDFLY_VERSION=26.1.3
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 LABEL name=Silverpeas 6.4.7 description=Image to install and to run Silverpeas 6.4.7 vendor=Silverpeas version=6.4.7 build=1
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && wget -nc https://www.silverpeas.org/files/oak-migrate.zip   && echo '87009e55520e74b5d2a386f4ebc843ee43cd1f25ca5138f342a94a31add3cfbd oak-migrate.zip' | sha256sum -c --status -   && mkdir -p /opt/oak-migration   && unzip oak-migrate.zip -d /opt/oak-migration/   && chmod +x /opt/oak-migration/oak-migrate.sh   && rm *.zip   && mkdir -p /root/.m2 # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/settings.xml /root/.m2/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/silverpeas.gradle /opt/silverpeas/bin/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/run.sh /opt/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/converter.groovy /opt/silverpeas/configuration/silverpeas/ # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN set -eux;   sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle;   echo "Construct Silverpeas ${SILVERPEAS_VERSION}";   ./silverpeas assemble || (cat ../log/build-* && exit 1);   rm ../log/build-*;   touch .install; # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 EXPOSE map[8000/tcp:{} 9990/tcp:{}]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:20c3783cc497b5b0df1fc5f92bd64c3d2fbb24057c88692c8fda205b6ea8a2f2`  
-		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
-		Size: 29.8 MB (29750251 bytes)  
+	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
+		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
+		Size: 29.8 MB (29751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad5bf657fc6f5f6ed06d436f7c86f54f54683f9e77b9af417a384de0371ad9d7`  
-		Last Modified: Wed, 09 Sep 2026 02:48:08 GMT  
-		Size: 494.8 MB (494826814 bytes)  
+	-	`sha256:735a4663f3f021d8e3d864e96558179c1aa1e433d1109fded6458bc10833407b`  
+		Last Modified: Fri, 02 Oct 2026 01:45:29 GMT  
+		Size: 494.9 MB (494862288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d958173750b9501be14e53188c982014be1d75c3082180bf551c2564792ec91`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 4.0 MB (3994008 bytes)  
+	-	`sha256:3b43d5c16fb992e89b01f6df9167b643b5ff4f14b4923fc49cf4e80a638af4ca`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 4.0 MB (3994014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9503baee88be92adb3c695bd5df920cb55742624ab4154d90eab6d712d998ba8`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 7.1 MB (7146619 bytes)  
+	-	`sha256:ab6b08a9eff97ae7b331bfc938843074e0149b1e87c54e517cb4aa72c3b5d8dd`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 7.1 MB (7146626 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af5b7280f331982e9117f7c84c5f910ef02c8c56c47a585e6600dd66dec6a3ab`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 2.5 MB (2538619 bytes)  
+	-	`sha256:8b9cb371331c107fd5fde10353e81046a30aeb7c1e0bb4f3cd06b45e398ac7f4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 2.5 MB (2538614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ab77dd5e35edf0eee06bb46660a5e33069a0cbbb0905eb8f507ed0c392bff8f`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 236.0 B  
+	-	`sha256:fee0df555d3fcb2f5cf989262dd90e2308f682694f8ee66352ceb2f5798429df`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 235.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29088b13ecf4abaf91d332f94bbb94d9203ba8a46e89e5ac219de119237538f0`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 130.0 B  
+	-	`sha256:66e0ce1e64e0d08aedda3aa730647b4167aec1263d754ddbab1c9ba195b44ac4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30afd34e4cfb4cf563eb4e8ff514e27539900a255fb2383f8b93d650c652c989`  
-		Last Modified: Wed, 09 Sep 2026 02:48:04 GMT  
-		Size: 269.1 MB (269106983 bytes)  
+	-	`sha256:55e53520244e73cf211beb2eb5e1b7a5170790285415e3a8133ab6cbd69b3e5c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:24 GMT  
+		Size: 269.1 MB (269106985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd910ab941ce0f71f384e468ac975a78d0eeb10b46f10cb8247753671f3ac0bb`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
-		Size: 404.0 B  
+	-	`sha256:d7e6147b85d66571859815efd2cb87f8826e27bf43320653fc9dc6e6e8079dc3`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91b510ab96e136ed81ecbe375b01ddf2ded61a7ad5ed92f170aa455ba4770495`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
+	-	`sha256:17d318873d0bf65822dbb0b0c2dc6fa1406e0dd75242e108995063f17266ad4e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
 		Size: 663.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96ab7d1b70d162bbfb7cd79cef2a3bd7d8c4e8968f832ee1f4d9848a98ceafe1`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:dfee4ae361915d0aba1c3cbd6ed4c00f69751b907c942cdb602a448dc3b8155d`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 1.4 KB (1447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fec9427648ccb52a9a2b049474603e506dc26beaf06f04a79bb1ef52592f4639`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 388.0 B  
+	-	`sha256:5a1975c0acdd3442fd0db97e4bf660deafc8655ef30c1158d9e06132a6ec7a58`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:586a2f86721451f02837bc9acd2cab5f0a559dab4b43429370f0812e9841ff27`  
-		Last Modified: Wed, 09 Sep 2026 02:48:21 GMT  
-		Size: 1.0 GB (1011179056 bytes)  
+	-	`sha256:f837a1840e7402d021f7506b4f84b777efa22db1eedfcdaf3e546cd0430b578c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:42 GMT  
+		Size: 1.0 GB (1011178406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `silverpeas:6.4.7` - unknown; unknown
 
 ```console
-$ docker pull silverpeas@sha256:b7bca17221c578f9be9a80121ae3f5dc923f027982450b3769732bfcc3682d6b
+$ docker pull silverpeas@sha256:d65f4a90753b5d56cf156c97fcf989bff94f3270df6d736c2fa1bcfb78d65fc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 MB (16639076 bytes)**  
+-	Total Size: **16.6 MB (16639514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:887ddd3e2319c826253a36268e609fdf5a82db5ebac3b30cdc47eda44ee06591`
+-	Image ID: `sha256:5e019ce7bf224713d769d879b3085761004a00920258aab8709cb96594758e2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6cc0e87524d900b22370ab3bab83d9a6edbc511e14dca7a7bfa400d1d6d1592`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 16.6 MB (16596270 bytes)  
+	-	`sha256:0a9f414855121f3488547a22609c48a9ea1eaf7e16291669748af3e927297542`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 16.6 MB (16596708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ad8860da3db3eff2e2d59cfd91395ed9bad36203e7ae100231584491d93655`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
+	-	`sha256:f4a829fd1070a11e7c0a1a3a4bf8c7669e2a9ccf5837da73e081e6ce88d8e74e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:08 GMT  
 		Size: 42.8 KB (42806 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `silverpeas:latest`
 
 ```console
-$ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df6815cd0287f6349b1e
+$ docker pull silverpeas@sha256:f62318efa7f9f185a7115b18229dccb282f7576eb0d47db2633e49f8f5f4c57a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -746,169 +746,169 @@ $ docker pull silverpeas@sha256:84184f6353845dc7310bfb67e3a20b073fe623e498f8df68
 ### `silverpeas:latest` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:f87009d5b6a9d15be51e40bbc1414ef956e6252c7854979665ec708d30abc368
+$ docker pull silverpeas@sha256:1fb76e903a15daf0670c3a41bc18aa324ef3521f02b99153fc8a52473a49b6d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.8 GB (1818545649 bytes)**  
+-	Total Size: **1.8 GB (1818581862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bacd1b1c988a2b6b40fa7ed60edb43ea8266f46faa441ffecba4a9572604afa`
+-	Image ID: `sha256:12eadc1b222867d148159c34972911498d28ae63513706d2d705bdf1c56d7bc7`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG RELEASE
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Sep 2026 12:14:51 GMT
+# Thu, 24 Sep 2026 22:24:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 03 Sep 2026 12:14:53 GMT
-ADD file:81c01921c5f642ac2fcbfae682e489e8e64b347467d9fa1587707e310e64d790 in / 
-# Thu, 03 Sep 2026 12:14:54 GMT
+# Thu, 24 Sep 2026 22:24:06 GMT
+ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
+# Thu, 24 Sep 2026 22:24:07 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 ENV TERM=xterm
-# Wed, 09 Sep 2026 02:44:11 GMT
+# Fri, 02 Oct 2026 01:41:27 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends tzdata   && apt-get install -y --no-install-recommends     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f # buildkit
-# Wed, 09 Sep 2026 02:44:13 GMT
+# Fri, 02 Oct 2026 01:41:29 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 swftools-bin-0.9.2.zip' | sha256sum -c --status -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 pdf2json-bin-0.68.zip' | sha256sum -c --status -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip # buildkit
-# Wed, 09 Sep 2026 02:44:15 GMT
+# Fri, 02 Oct 2026 01:41:32 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE} # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 ENV PING_ON=1
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:54 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home # buildkit
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JAVA_HOME=/docker-java-home
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV SILVERPEAS_VERSION=6.4.7
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 ENV WILDFLY_VERSION=26.1.3
-# Wed, 09 Sep 2026 02:44:38 GMT
+# Fri, 02 Oct 2026 01:41:55 GMT
 LABEL name=Silverpeas 6.4.7 description=Image to install and to run Silverpeas 6.4.7 vendor=Silverpeas version=6.4.7 build=1
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver keys.openpgp.org --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && wget -nc https://www.silverpeas.org/files/oak-migrate.zip   && echo '87009e55520e74b5d2a386f4ebc843ee43cd1f25ca5138f342a94a31add3cfbd oak-migrate.zip' | sha256sum -c --status -   && mkdir -p /opt/oak-migration   && unzip oak-migrate.zip -d /opt/oak-migration/   && chmod +x /opt/oak-migration/oak-migrate.sh   && rm *.zip   && mkdir -p /root/.m2 # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/settings.xml /root/.m2/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/silverpeas.gradle /opt/silverpeas/bin/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 WORKDIR /opt/silverpeas/bin
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/run.sh /opt/ # buildkit
-# Wed, 09 Sep 2026 02:45:01 GMT
+# Fri, 02 Oct 2026 01:42:19 GMT
 COPY src/converter.groovy /opt/silverpeas/configuration/silverpeas/ # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN set -eux;   sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle;   echo "Construct Silverpeas ${SILVERPEAS_VERSION}";   ./silverpeas assemble || (cat ../log/build-* && exit 1);   rm ../log/build-*;   touch .install; # buildkit
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 EXPOSE map[8000/tcp:{} 9990/tcp:{}]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Wed, 09 Sep 2026 02:46:21 GMT
+# Fri, 02 Oct 2026 01:43:40 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:20c3783cc497b5b0df1fc5f92bd64c3d2fbb24057c88692c8fda205b6ea8a2f2`  
-		Last Modified: Thu, 03 Sep 2026 17:08:20 GMT  
-		Size: 29.8 MB (29750251 bytes)  
+	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
+		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
+		Size: 29.8 MB (29751627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad5bf657fc6f5f6ed06d436f7c86f54f54683f9e77b9af417a384de0371ad9d7`  
-		Last Modified: Wed, 09 Sep 2026 02:48:08 GMT  
-		Size: 494.8 MB (494826814 bytes)  
+	-	`sha256:735a4663f3f021d8e3d864e96558179c1aa1e433d1109fded6458bc10833407b`  
+		Last Modified: Fri, 02 Oct 2026 01:45:29 GMT  
+		Size: 494.9 MB (494862288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d958173750b9501be14e53188c982014be1d75c3082180bf551c2564792ec91`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 4.0 MB (3994008 bytes)  
+	-	`sha256:3b43d5c16fb992e89b01f6df9167b643b5ff4f14b4923fc49cf4e80a638af4ca`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 4.0 MB (3994014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9503baee88be92adb3c695bd5df920cb55742624ab4154d90eab6d712d998ba8`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 7.1 MB (7146619 bytes)  
+	-	`sha256:ab6b08a9eff97ae7b331bfc938843074e0149b1e87c54e517cb4aa72c3b5d8dd`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 7.1 MB (7146626 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af5b7280f331982e9117f7c84c5f910ef02c8c56c47a585e6600dd66dec6a3ab`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
-		Size: 2.5 MB (2538619 bytes)  
+	-	`sha256:8b9cb371331c107fd5fde10353e81046a30aeb7c1e0bb4f3cd06b45e398ac7f4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:09 GMT  
+		Size: 2.5 MB (2538614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ab77dd5e35edf0eee06bb46660a5e33069a0cbbb0905eb8f507ed0c392bff8f`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 236.0 B  
+	-	`sha256:fee0df555d3fcb2f5cf989262dd90e2308f682694f8ee66352ceb2f5798429df`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 235.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29088b13ecf4abaf91d332f94bbb94d9203ba8a46e89e5ac219de119237538f0`  
-		Last Modified: Wed, 09 Sep 2026 02:47:52 GMT  
-		Size: 130.0 B  
+	-	`sha256:66e0ce1e64e0d08aedda3aa730647b4167aec1263d754ddbab1c9ba195b44ac4`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30afd34e4cfb4cf563eb4e8ff514e27539900a255fb2383f8b93d650c652c989`  
-		Last Modified: Wed, 09 Sep 2026 02:48:04 GMT  
-		Size: 269.1 MB (269106983 bytes)  
+	-	`sha256:55e53520244e73cf211beb2eb5e1b7a5170790285415e3a8133ab6cbd69b3e5c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:24 GMT  
+		Size: 269.1 MB (269106985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd910ab941ce0f71f384e468ac975a78d0eeb10b46f10cb8247753671f3ac0bb`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
-		Size: 404.0 B  
+	-	`sha256:d7e6147b85d66571859815efd2cb87f8826e27bf43320653fc9dc6e6e8079dc3`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
+		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91b510ab96e136ed81ecbe375b01ddf2ded61a7ad5ed92f170aa455ba4770495`  
-		Last Modified: Wed, 09 Sep 2026 02:47:53 GMT  
+	-	`sha256:17d318873d0bf65822dbb0b0c2dc6fa1406e0dd75242e108995063f17266ad4e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:12 GMT  
 		Size: 663.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96ab7d1b70d162bbfb7cd79cef2a3bd7d8c4e8968f832ee1f4d9848a98ceafe1`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:dfee4ae361915d0aba1c3cbd6ed4c00f69751b907c942cdb602a448dc3b8155d`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 1.4 KB (1447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fec9427648ccb52a9a2b049474603e506dc26beaf06f04a79bb1ef52592f4639`  
-		Last Modified: Wed, 09 Sep 2026 02:47:54 GMT  
-		Size: 388.0 B  
+	-	`sha256:5a1975c0acdd3442fd0db97e4bf660deafc8655ef30c1158d9e06132a6ec7a58`  
+		Last Modified: Fri, 02 Oct 2026 01:45:13 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:586a2f86721451f02837bc9acd2cab5f0a559dab4b43429370f0812e9841ff27`  
-		Last Modified: Wed, 09 Sep 2026 02:48:21 GMT  
-		Size: 1.0 GB (1011179056 bytes)  
+	-	`sha256:f837a1840e7402d021f7506b4f84b777efa22db1eedfcdaf3e546cd0430b578c`  
+		Last Modified: Fri, 02 Oct 2026 01:45:42 GMT  
+		Size: 1.0 GB (1011178406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `silverpeas:latest` - unknown; unknown
 
 ```console
-$ docker pull silverpeas@sha256:b7bca17221c578f9be9a80121ae3f5dc923f027982450b3769732bfcc3682d6b
+$ docker pull silverpeas@sha256:d65f4a90753b5d56cf156c97fcf989bff94f3270df6d736c2fa1bcfb78d65fc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 MB (16639076 bytes)**  
+-	Total Size: **16.6 MB (16639514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:887ddd3e2319c826253a36268e609fdf5a82db5ebac3b30cdc47eda44ee06591`
+-	Image ID: `sha256:5e019ce7bf224713d769d879b3085761004a00920258aab8709cb96594758e2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6cc0e87524d900b22370ab3bab83d9a6edbc511e14dca7a7bfa400d1d6d1592`  
-		Last Modified: Wed, 09 Sep 2026 02:47:51 GMT  
-		Size: 16.6 MB (16596270 bytes)  
+	-	`sha256:0a9f414855121f3488547a22609c48a9ea1eaf7e16291669748af3e927297542`  
+		Last Modified: Fri, 02 Oct 2026 01:45:10 GMT  
+		Size: 16.6 MB (16596708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ad8860da3db3eff2e2d59cfd91395ed9bad36203e7ae100231584491d93655`  
-		Last Modified: Wed, 09 Sep 2026 02:47:50 GMT  
+	-	`sha256:f4a829fd1070a11e7c0a1a3a4bf8c7669e2a9ccf5837da73e081e6ce88d8e74e`  
+		Last Modified: Fri, 02 Oct 2026 01:45:08 GMT  
 		Size: 42.8 KB (42806 bytes)  
 		MIME: application/vnd.in-toto+json
