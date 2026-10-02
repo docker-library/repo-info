@@ -2261,21 +2261,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.11-2
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.11-2.dsc' libselinux_3.11-2.dsc 3130 SHA256:1b6bde259f663809baab233921422a847ade43abaf1bee2b0a330ea03ab99ba7
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.11.orig.tar.gz' libselinux_3.11.orig.tar.gz 208732 SHA256:73d419c6e20e874adaa4019372cbd097eecf4d276e13f27ec5e67d35c0bd203c
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.11.orig.tar.gz.asc' libselinux_3.11.orig.tar.gz.asc 833 SHA256:bf1cd41897dff67dbb20b5448677fee250faa2cefcbe5542d91f0f1d7ee266d5
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.11-2.debian.tar.xz' libselinux_3.11-2.debian.tar.xz 52512 SHA256:af4785e669854701a30895fca896dbcdb89c228bd562cab21f338785a4a83542
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libselinux/3.11-2/
 
-- https://sources.debian.net/src/libselinux/3.11-2/ (for browsing the source)
-- https://sources.debian.net/src/libselinux/3.11-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libselinux/3.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.11-1`
 
@@ -2919,20 +2911,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.2.6-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.6-1.dsc' linux_7.2.6-1.dsc 188238 SHA256:4ca2f2a7dc77828354742889ad03085832a7005072596cc998d0f9e021d2d8cd
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.6.orig.tar.xz' linux_7.2.6.orig.tar.xz 163554268 SHA256:1819c494eeda2be08fdca1b4d4d8d669e5a4215395595503502aeb78d019882a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.6-1.debian.tar.xz' linux_7.2.6-1.debian.tar.xz 1459024 SHA256:9201de4e4fbda61512959d0d99ed332e83c32a0ff97eeb0f6624b391c43e2bdb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/7.2.6-1/
 
-- https://sources.debian.net/src/linux/7.2.6-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/7.2.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/7.2.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.23-1`
 
