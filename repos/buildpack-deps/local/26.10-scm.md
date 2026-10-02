@@ -1700,15 +1700,9 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.2-3build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2.orig.tar.gz' mercurial_7.2.orig.tar.gz 9244423 SHA512:716203e038959e6641fdd8ed4bbcff8774f0d525f1709a20f51fe4faf0545bdbef1c567b382378b7bc07a3f08c620ea6a600ada2bb5a99d8da69be0155be1f7e
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2.orig.tar.gz.asc' mercurial_7.2.orig.tar.gz.asc 659 SHA512:03aae2720cc4b9e130e8e2d9ab0a3551192e466416811dbd2f6f239f1de51161ad0421f9ee37c40e434f15a1b5c3969558b8d185c0cf1412a12823106b122a36
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2-3build1.debian.tar.xz' mercurial_7.2-3build1.debian.tar.xz 54944 SHA512:34ea2cfb365fba8ecf12a5e745904f17baff2c0e5eeb981506127f5a998909d9cb7a1199420e74008866e3b2db90e1c5b7a860b323811b6991a2dcb9fc627771
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_7.2-3build1.dsc' mercurial_7.2-3build1.dsc 2856 SHA512:f6f0f4b12f88c1dd3dedf03a58f058fafaf1524946b2c27ac14308744ce7c602b1f2a668d963769fd4f63099a665a14851868eeef17fbec1a6e07a8f499de445
-```
 
 ### `dpkg` source package: `ncurses=6.6+20260608-2`
 
@@ -2356,15 +2350,9 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.19.3-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.19.3.orig.tar.xz' shadow_4.19.3.orig.tar.xz 2347720 SHA512:f2b41f8186681eb98dae0da87ed1a1f03327c5005c9d4bf9500801352e318de6f5954dc5b8f30ab9aece728b1efb74b4ff8fb2720acc4c2aaef701331a4a5a05
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.19.3.orig.tar.xz.asc' shadow_4.19.3.orig.tar.xz.asc 833 SHA512:295a6bffefd333a9ea84fa59b368f5c48d0ac5224199624b768087098110b0f0c19bef37f5c474c45277980758dcb6728e8bb17eb7ab1a57603cad41f1dd00ab
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.19.3-2ubuntu1.debian.tar.xz' shadow_4.19.3-2ubuntu1.debian.tar.xz 188128 SHA512:49afe4fa60fabaa11f72cfdd712d05f5558a2b089682a175c0a40f523f7a40c317dd202e912811b5cda5c0fec908fc7f570b0a1a986d0da4147d3d060ece10b3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.19.3-2ubuntu1.dsc' shadow_4.19.3-2ubuntu1.dsc 3018 SHA512:9208877c6ec19633f1c721ef839515d43e1f9f39e8eca2679067c321f26394c7de983b43263e35f8631ab184e12c0e30c09aaa68dcd4af0c7b740802829a8277
-```
 
 ### `dpkg` source package: `sqlite3=3.53.4-2`
 
@@ -2485,14 +2473,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.dsc' tar_1.35+dfsg-4.dsc 2034 SHA512:3035eeb3b2e6d10a8a086f615b8e8cf1a1de75ece40eca7695434c31ffdab6ee175eceb0065ccf8b9b9b3659332f5fff80833dbdd593fd78e1a4f569b6e2be02
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.debian.tar.xz' tar_1.35+dfsg-4.debian.tar.xz 21640 SHA512:8f15f5738bde72e4c234d105fbd8c088eda7c01a3b88e60c3d6b71fce80079440b8bb6a4350a7650a13f8c727e6ed9bc99b849299be5e8ec0b9fb379cea729e9
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tar/1.35+dfsg-4/
+
 
 ### `dpkg` source package: `tzdata=2026c-1ubuntu1`
 
