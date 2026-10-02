@@ -1,7 +1,7 @@
 ## `clojure:temurin-26-tools-deps-1.12.6.1673-trixie`
 
 ```console
-$ docker pull clojure@sha256:c66be52136a7a5b6920febfeb13e2ca4234166a4f045632fed67abc56b588664
+$ docker pull clojure@sha256:ba17a9ffb5b61cb65620516a51d684c499f9a794fe4c05cdf46e1924d018894f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -192,7 +192,7 @@ $ docker pull clojure@sha256:3b13be3b1cf0c5cd8e1a70445fd11acfec242366d3d90d53280
 ### `clojure:temurin-26-tools-deps-1.12.6.1673-trixie` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:a85bc33a3b506c6b695c3ab09e43851102ec8f35dec5ce8732dc363140375768
+$ docker pull clojure@sha256:d22b46acf98bf4acba55c41af93ac6d5f440319a8e31a11a03ab40b4719d23f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -256,23 +256,23 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-26-tools-deps-1.12.6.1673-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:254a4a24fa912aa516bc26cf206ba0560927fafcb0c3dba3ce4223c933480dc0
+$ docker pull clojure@sha256:a4738537e0b799bfdf85845ee208a97970fab78c24384385c29381d87a7f8835
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7448016 bytes)**  
+-	Total Size: **7.4 MB (7448017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf817f58b220301c478b8cb8ea6a54a359a13266770b51c23878fc81d6ae0910`
+-	Image ID: `sha256:86dae3ebe4cecdf7a6c90f703230386c433b1770f37a25c05ee2130dc8ab63d8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ccc15527795c8edfd1142ca7305ac7411310226451c3877b1a1531f0e2fe70f6`  
-		Last Modified: Sat, 26 Sep 2026 05:57:32 GMT  
+	-	`sha256:9d00e086c93a14f026aa8e6e5b3defa4e151b34c5bb616b8e2e8a10d8f340c22`  
+		Last Modified: Fri, 02 Oct 2026 08:33:30 GMT  
 		Size: 7.4 MB (7432068 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4dd452d6d6fa9e25f8bbda729c6bf84c0196ae677a04ef63626948a8170f23b`  
-		Last Modified: Sat, 26 Sep 2026 05:57:31 GMT  
-		Size: 15.9 KB (15948 bytes)  
+	-	`sha256:495a39a5a617ad651e429d7e8494ed4f7d4a9ff0f6efad97084802901c164382`  
+		Last Modified: Fri, 02 Oct 2026 08:33:30 GMT  
+		Size: 15.9 KB (15949 bytes)  
 		MIME: application/vnd.in-toto+json

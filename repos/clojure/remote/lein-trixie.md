@@ -1,7 +1,7 @@
 ## `clojure:lein-trixie`
 
 ```console
-$ docker pull clojure@sha256:f5889a11e3a2161affafb69ca4aa9ba532341925499a9a6a1c429cedea5be224
+$ docker pull clojure@sha256:18a1f045ff083802837457fdd416a6b4ff70a8dccb4da1d5c16947238375bb6c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -204,7 +204,7 @@ $ docker pull clojure@sha256:d0383c34b1a01c019f6c0851e63038072d832ad7d7b80666b22
 ### `clojure:lein-trixie` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:b497b3e3a7be40506150d3beac958185eb92fa6c59816e23dc2f245690657a31
+$ docker pull clojure@sha256:417fcf8a8fb087bcdc95630a3108b5966829fa30bb967850135c3b35abd3b4d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -274,23 +274,23 @@ CMD ["repl"]
 ### `clojure:lein-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:816d41150e7fa2e8a74592c68645ba3b64563120c297c8870bccf24c41cacf16
+$ docker pull clojure@sha256:ecdf35e1f6b5073c23d3cb05e1d18feee22240e2eedadd8c8e82c3af6933f79f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3798500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dbc6684e9e4d7347257b90bd604d9e6bb8f1346832b911c10f193c991c64989`
+-	Image ID: `sha256:5d5e03ecb2c30828abd1cd069c21bc82a24339d4c42e760f6f33022a16c78191`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60caebfb19b2364d5e5c028d6dab0f144f5521c82f267a16eebb9699c794443a`  
-		Last Modified: Sat, 26 Sep 2026 05:28:09 GMT  
+	-	`sha256:a92be81e0b80564b26fa606babb8532556680e9cd801e9b290aa7ea13427d8d0`  
+		Last Modified: Fri, 02 Oct 2026 08:25:01 GMT  
 		Size: 3.8 MB (3780099 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dbf811b9bc73aebf9eb52bf88496eae46b27c3db37fc10165107811a55685d64`  
-		Last Modified: Sat, 26 Sep 2026 05:28:09 GMT  
+	-	`sha256:6df247290716daefa313f492caf3b3b08fd4ea813782f42a20b8508a5ce2cda9`  
+		Last Modified: Fri, 02 Oct 2026 08:25:00 GMT  
 		Size: 18.4 KB (18401 bytes)  
 		MIME: application/vnd.in-toto+json
