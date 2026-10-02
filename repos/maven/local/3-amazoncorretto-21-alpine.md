@@ -1,10 +1,10 @@
-# `maven:3.9.16-amazoncorretto-21-alpine`
+# `maven:3.10.0-amazoncorretto-21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:afb347e1cb6e1635799b6f4103fea3b74625611853a1b1c8c96ec331c9f06e0f`
-- Created: `2026-09-28T18:09:37.917829621Z`
-- Virtual Size: ~ 341.64 Mb  
+- Image ID: `sha256:4fa98f3c05183e1e3b4be5880358837dd84f1ee30447f41ef230e36c6c64229e`
+- Created: `2026-10-02T03:42:25.006564444Z`
+- Virtual Size: ~ 342.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`

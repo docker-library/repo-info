@@ -1,10 +1,10 @@
-# `maven:3.9.16-eclipse-temurin-8-alpine`
+# `maven:3.10.0-eclipse-temurin-8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:21654843d1cf3e69885cf477a005846deb8450a997ec9d1db544146daf87f947`
-- Created: `2026-09-26T00:21:51.210062058Z`
-- Virtual Size: ~ 212.84 Mb  
+- Image ID: `sha256:97f72b7c55ec694a84ca4f4c4bc9e38987004c063bed1b9501f389e94ecb1ed3`
+- Created: `2026-10-02T03:37:56.771909826Z`
+- Virtual Size: ~ 213.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1168,16 +1168,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
