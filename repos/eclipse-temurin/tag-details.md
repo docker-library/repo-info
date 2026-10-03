@@ -407,6 +407,61 @@
 -	[`eclipse-temurin:26.0.2.1_1-jre-windowsservercore`](#eclipse-temurin26021_1-jre-windowsservercore)
 -	[`eclipse-temurin:26.0.2.1_1-jre-windowsservercore-ltsc2022`](#eclipse-temurin26021_1-jre-windowsservercore-ltsc2022)
 -	[`eclipse-temurin:26.0.2.1_1-jre-windowsservercore-ltsc2025`](#eclipse-temurin26021_1-jre-windowsservercore-ltsc2025)
+-	[`eclipse-temurin:27`](#eclipse-temurin27)
+-	[`eclipse-temurin:27-alpine`](#eclipse-temurin27-alpine)
+-	[`eclipse-temurin:27-alpine-3.24`](#eclipse-temurin27-alpine-324)
+-	[`eclipse-temurin:27-jdk`](#eclipse-temurin27-jdk)
+-	[`eclipse-temurin:27-jdk-alpine`](#eclipse-temurin27-jdk-alpine)
+-	[`eclipse-temurin:27-jdk-alpine-3.24`](#eclipse-temurin27-jdk-alpine-324)
+-	[`eclipse-temurin:27-jdk-nanoserver`](#eclipse-temurin27-jdk-nanoserver)
+-	[`eclipse-temurin:27-jdk-nanoserver-ltsc2022`](#eclipse-temurin27-jdk-nanoserver-ltsc2022)
+-	[`eclipse-temurin:27-jdk-nanoserver-ltsc2025`](#eclipse-temurin27-jdk-nanoserver-ltsc2025)
+-	[`eclipse-temurin:27-jdk-resolute`](#eclipse-temurin27-jdk-resolute)
+-	[`eclipse-temurin:27-jdk-ubi10-minimal`](#eclipse-temurin27-jdk-ubi10-minimal)
+-	[`eclipse-temurin:27-jdk-windowsservercore`](#eclipse-temurin27-jdk-windowsservercore)
+-	[`eclipse-temurin:27-jdk-windowsservercore-ltsc2022`](#eclipse-temurin27-jdk-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:27-jdk-windowsservercore-ltsc2025`](#eclipse-temurin27-jdk-windowsservercore-ltsc2025)
+-	[`eclipse-temurin:27-jre`](#eclipse-temurin27-jre)
+-	[`eclipse-temurin:27-jre-alpine`](#eclipse-temurin27-jre-alpine)
+-	[`eclipse-temurin:27-jre-alpine-3.24`](#eclipse-temurin27-jre-alpine-324)
+-	[`eclipse-temurin:27-jre-nanoserver`](#eclipse-temurin27-jre-nanoserver)
+-	[`eclipse-temurin:27-jre-nanoserver-ltsc2022`](#eclipse-temurin27-jre-nanoserver-ltsc2022)
+-	[`eclipse-temurin:27-jre-nanoserver-ltsc2025`](#eclipse-temurin27-jre-nanoserver-ltsc2025)
+-	[`eclipse-temurin:27-jre-resolute`](#eclipse-temurin27-jre-resolute)
+-	[`eclipse-temurin:27-jre-ubi10-minimal`](#eclipse-temurin27-jre-ubi10-minimal)
+-	[`eclipse-temurin:27-jre-windowsservercore`](#eclipse-temurin27-jre-windowsservercore)
+-	[`eclipse-temurin:27-jre-windowsservercore-ltsc2022`](#eclipse-temurin27-jre-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:27-jre-windowsservercore-ltsc2025`](#eclipse-temurin27-jre-windowsservercore-ltsc2025)
+-	[`eclipse-temurin:27-nanoserver`](#eclipse-temurin27-nanoserver)
+-	[`eclipse-temurin:27-nanoserver-ltsc2022`](#eclipse-temurin27-nanoserver-ltsc2022)
+-	[`eclipse-temurin:27-nanoserver-ltsc2025`](#eclipse-temurin27-nanoserver-ltsc2025)
+-	[`eclipse-temurin:27-resolute`](#eclipse-temurin27-resolute)
+-	[`eclipse-temurin:27-ubi10-minimal`](#eclipse-temurin27-ubi10-minimal)
+-	[`eclipse-temurin:27-windowsservercore`](#eclipse-temurin27-windowsservercore)
+-	[`eclipse-temurin:27-windowsservercore-ltsc2022`](#eclipse-temurin27-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:27-windowsservercore-ltsc2025`](#eclipse-temurin27-windowsservercore-ltsc2025)
+-	[`eclipse-temurin:27_35-jdk`](#eclipse-temurin27_35-jdk)
+-	[`eclipse-temurin:27_35-jdk-alpine`](#eclipse-temurin27_35-jdk-alpine)
+-	[`eclipse-temurin:27_35-jdk-alpine-3.24`](#eclipse-temurin27_35-jdk-alpine-324)
+-	[`eclipse-temurin:27_35-jdk-nanoserver`](#eclipse-temurin27_35-jdk-nanoserver)
+-	[`eclipse-temurin:27_35-jdk-nanoserver-ltsc2022`](#eclipse-temurin27_35-jdk-nanoserver-ltsc2022)
+-	[`eclipse-temurin:27_35-jdk-nanoserver-ltsc2025`](#eclipse-temurin27_35-jdk-nanoserver-ltsc2025)
+-	[`eclipse-temurin:27_35-jdk-resolute`](#eclipse-temurin27_35-jdk-resolute)
+-	[`eclipse-temurin:27_35-jdk-ubi10-minimal`](#eclipse-temurin27_35-jdk-ubi10-minimal)
+-	[`eclipse-temurin:27_35-jdk-windowsservercore`](#eclipse-temurin27_35-jdk-windowsservercore)
+-	[`eclipse-temurin:27_35-jdk-windowsservercore-ltsc2022`](#eclipse-temurin27_35-jdk-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:27_35-jdk-windowsservercore-ltsc2025`](#eclipse-temurin27_35-jdk-windowsservercore-ltsc2025)
+-	[`eclipse-temurin:27_35-jre`](#eclipse-temurin27_35-jre)
+-	[`eclipse-temurin:27_35-jre-alpine`](#eclipse-temurin27_35-jre-alpine)
+-	[`eclipse-temurin:27_35-jre-alpine-3.24`](#eclipse-temurin27_35-jre-alpine-324)
+-	[`eclipse-temurin:27_35-jre-nanoserver`](#eclipse-temurin27_35-jre-nanoserver)
+-	[`eclipse-temurin:27_35-jre-nanoserver-ltsc2022`](#eclipse-temurin27_35-jre-nanoserver-ltsc2022)
+-	[`eclipse-temurin:27_35-jre-nanoserver-ltsc2025`](#eclipse-temurin27_35-jre-nanoserver-ltsc2025)
+-	[`eclipse-temurin:27_35-jre-resolute`](#eclipse-temurin27_35-jre-resolute)
+-	[`eclipse-temurin:27_35-jre-ubi10-minimal`](#eclipse-temurin27_35-jre-ubi10-minimal)
+-	[`eclipse-temurin:27_35-jre-windowsservercore`](#eclipse-temurin27_35-jre-windowsservercore)
+-	[`eclipse-temurin:27_35-jre-windowsservercore-ltsc2022`](#eclipse-temurin27_35-jre-windowsservercore-ltsc2022)
+-	[`eclipse-temurin:27_35-jre-windowsservercore-ltsc2025`](#eclipse-temurin27_35-jre-windowsservercore-ltsc2025)
 -	[`eclipse-temurin:8`](#eclipse-temurin8)
 -	[`eclipse-temurin:8-alpine`](#eclipse-temurin8-alpine)
 -	[`eclipse-temurin:8-alpine-3.21`](#eclipse-temurin8-alpine-321)
@@ -102558,6 +102613,226 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Last Modified: Fri, 25 Sep 2026 22:45:16 GMT  
 		Size: 384.2 KB (384176 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-temurin:27`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-alpine`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-alpine-3.24`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-alpine-3.24`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-resolute`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-ubi10-minimal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-alpine`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-alpine-3.24`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-resolute`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-ubi10-minimal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-jre-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-resolute`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-ubi10-minimal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-alpine-3.24`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-resolute`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-ubi10-minimal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-alpine`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-alpine-3.24`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-resolute`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-ubi10-minimal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:27_35-jre-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `eclipse-temurin:8`
 
