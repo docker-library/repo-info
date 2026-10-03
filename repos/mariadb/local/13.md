@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2a2fb8d0621df2b499be0583ea92962b04c3a53304d763fa05db4e358ddcb29`
-- Created: `2026-09-16T03:26:24.597741047Z`
-- Virtual Size: ~ 362.08 Mb  
+- Image ID: `sha256:5c495ca32a46bc87e175c9e83c73cef6fccabd24046ade81b1f39e397a20d78a`
+- Created: `2026-10-02T01:30:58.444948071Z`
+- Virtual Size: ~ 370.8 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:resolute`
-  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
+  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
@@ -1183,11 +1183,11 @@ $ apt-get source -qq --print-uris libconfig-inifiles-perl=3.000003-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_3.000003-4ubuntu0.1.dsc' libconfig-inifiles-perl_3.000003-4ubuntu0.1.dsc 2429 SHA512:3e56f7e1a2971dae6eb8a998abda3977d9902439ea09bc5b1d2f20990fbb3366b420dec54dfa767c6c167239994b5f3b7ca7b41eda24870045bae257c40049d9
 ```
 
-### `dpkg` source package: `libdbi-perl=1.647-1ubuntu0.26.04.1`
+### `dpkg` source package: `libdbi-perl=1.647-1ubuntu0.26.04.3`
 
 Binary Packages:
 
-- `libdbi-perl:amd64=1.647-1ubuntu0.26.04.1`
+- `libdbi-perl:amd64=1.647-1ubuntu0.26.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 
@@ -1195,9 +1195,14 @@ Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdbi-perl=1.647-1ubuntu0.26.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647.orig.tar.gz' libdbi-perl_1.647.orig.tar.gz 727423 SHA512:365b9d51d3c17bb3d8ce6941ef5141512e5aaf4886a62297cb4b56f8bfce9d49d45163ba3841cef59040ff649c752136407c6e8355f8f5a3b2244efd8ef6b0d7
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.3.debian.tar.xz' libdbi-perl_1.647-1ubuntu0.26.04.3.debian.tar.xz 15832 SHA512:aeec219d81ffb0d6a474a403a0f5c12fe1208eb9e5e981fc638a5e5b4bb854c65037b4915a6c16423f111b692033236b617e47952bb6b6ee5aebbc9242e146af
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.3.dsc' libdbi-perl_1.647-1ubuntu0.26.04.3.dsc 2151 SHA512:bf0e2e29e0ae5b89b93889335d34063be6829bf70b8c67492769af7ae0af32652658a605e42122d924c7152e3d48a1061601a567bf087b0cd4f68e9ce1577af5
+```
 
 ### `dpkg` source package: `libedit=3.1-20251016-1`
 
@@ -1679,13 +1684,13 @@ $ apt-get source -qq --print-uris npth=1.8-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.8-3build1.dsc' npth_1.8-3build1.dsc 2212 SHA256:88dede80fb61ae0f6a022c6e580391c67f7bc437a2a9c12820c5c3cebef96582
 ```
 
-### `dpkg` source package: `openssl=3.5.5-1ubuntu3.5`
+### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1ubuntu3.5`
-- `openssl=3.5.5-1ubuntu3.5`
-- `openssl-provider-legacy=3.5.5-1ubuntu3.5`
+- `libssl3t64:amd64=3.5.5-1ubuntu3.7`
+- `openssl=3.5.5-1ubuntu3.7`
+- `openssl-provider-legacy=3.5.5-1ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1694,9 +1699,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.debian.tar.xz' openssl_3.5.5-1ubuntu3.7.debian.tar.xz 194720 SHA512:c8c6d9131240cadab289b494baed0a8683dc51625e232931088434af38b1acb6c97e437a1741f53fc821784834a2bacef5fd8b1c347d4c0283e65e9eec78460e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.dsc' openssl_3.5.5-1ubuntu3.7.dsc 2916 SHA512:1f318111347b6e2ff701e8b9f7b742d31d6c261b7913a76e553ef6a3982d13d469811b594e299b772559231c32e331a77f4bcf78420564b4e1018c2e5f618651
+```
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu3.2`
 
@@ -1947,27 +1958,27 @@ $ apt-get source -qq --print-uris rsync=3.4.1+ds1-7ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.4.1%2bds1-7ubuntu0.3.dsc' rsync_3.4.1+ds1-7ubuntu0.3.dsc 2274 SHA512:79ae7aab43de03c50c23448985b5fe89b9b934914bc328b9fc81edc8dd73ec5b8aa34291bbe95a438a92444a0718b86157a83a47cf831c3d652a291ce8aedd59
 ```
 
-### `dpkg` source package: `rust-coreutils=0.8.0-0ubuntu3`
+### `dpkg` source package: `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Binary Packages:
 
-- `rust-coreutils=0.8.0-0ubuntu3`
+- `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 
 - `Apache-2.0`
+- `CC-BY-4.0`
 - `MIT`
 - `permissive`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rust-coreutils=0.8.0-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-l10n.tar.gz' rust-coreutils_0.8.0.orig-l10n.tar.gz 740364 SHA512:f322d1b77ff6ef0945b08aa4237dd0b1db8da5c3e32de5e86bd22a60b5a56dd6f4828c90a4758c562ca560e6588b6e61af4507e0b6c6d8bde7d8e587010ca1e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-rust-vendor.tar.xz' rust-coreutils_0.8.0.orig-rust-vendor.tar.xz 13213352 SHA512:a66ba2f98a544fea37ace0774244dda1a7b2477536df90301765819b9bb9f0f27831df2349b7fc1cbf712ba5b9bd8c7cc9a9e900714e51b6c226f0fc2d50b250
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig.tar.gz' rust-coreutils_0.8.0.orig.tar.gz 3189640 SHA512:0c35cfb31d7810701cf5c639cbafb2be3870f4abd0f08fbade291d2534f576e067599e1b53ff228d9d2bd126210225d09bcd559761623f645883d4dd68e8f39b
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz' rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz 22812 SHA512:4058834e3899825b60f5db483f532e72f85b27f2bcb7bc2f2680f45d82c19b3d2d414e99bf17d5f7f0509d404819c28e16686fd6283db253ae841b23effcdb07
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.dsc' rust-coreutils_0.8.0-0ubuntu3.dsc 8878 SHA512:2c91bd122fa1c56c387f5e1133b508667568afee17e598ac3c1dfbea8327012bbf7115b323f77166dc5bbb36415a1aa98960c639d504d1b0026c79e40c31e295
+$ apt-get source -qq --print-uris rust-coreutils=0.10.0-1ubuntu2~26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig-l10n.tar.gz' rust-coreutils_0.10.0.orig-l10n.tar.gz 780526 SHA512:8d0b8c9053cc80033324d71ec57b7c3f5249eeff69978a759e81c7774e62ca74893708d583918a62dc448f4889d91d71aed37be2fd57ec683c717c78eecdbaa9
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig.tar.gz' rust-coreutils_0.10.0.orig.tar.gz 2671039 SHA512:cd5bc2b491ad36e559678aa45578c1646d48f4421abb1944195282acea4e5c6c1f9556c3fd2758cc7e37a1995fd5e2e1b94dfb91b6826f4e4c9bf8ddb7e50fd8
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.debian.tar.xz' rust-coreutils_0.10.0-1ubuntu2~26.04.1.debian.tar.xz 22541108 SHA512:b93fad2afd099bc04c9b78182d67e1e6f32e9c36833a3f74bb8d826e2a9e1393e37d05403974178ccda684246d665b21608fbfcd44178a050415368e18e44c41
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.dsc' rust-coreutils_0.10.0-1ubuntu2~26.04.1.dsc 8746 SHA512:16fe14c002607a30152a41bb6cd658ad7c2c341fe5178aa82b07cb1fabbf3cb042dec817c8fc195790b87ac7c035694b57cb3dffe86b4f498e7637c69591f8f0
 ```
 
 ### `dpkg` source package: `sed=4.9-2ubuntu1`
@@ -2067,11 +2078,11 @@ $ apt-get source -qq --print-uris socat=1.8.1.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/socat/socat_1.8.1.1-1ubuntu0.1.dsc' socat_1.8.1.1-1ubuntu0.1.dsc 1980 SHA512:c51937ec610064393843e1a4deadb39d196dbe447c366b8c0654d4974d3a40378ed14358616381ed7a470a03cfb4fc355b5ec86507aea3593ad4d9c421fe9358
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-9ubuntu0.2`
+- `libsqlite3-0:amd64=3.46.1-9ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2079,9 +2090,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
+```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
 

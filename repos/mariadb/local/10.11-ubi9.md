@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:127c14f8287964e936233ef9585bb33dc3cd32402b84ef475e72c08c23d85b01`
-- Created: `2026-09-29T17:56:39.06693129Z`
-- Virtual Size: ~ 508.4 Mb  
+- Image ID: `sha256:b62ed9639955e9c70cc6b4aab93db2dd2389b86326ada6cda5541a5bf6c685f4`
+- Created: `2026-09-30T21:05:53.533501187Z`
+- Virtual Size: ~ 508.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.19`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-28T00:37:55Z`
+  - `build-date=2026-09-30T07:43:22Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-09-28T00:37:55Z`
+  - `org.opencontainers.image.created=2026-09-30T07:43:22Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=5fed6512327cf4e03d25e424d9f6d5eed9016958`
+  - `org.opencontainers.image.revision=f354e3d450169972cb1f8df64acae506d96d4c49`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=5fed6512327cf4e03d25e424d9f6d5eed9016958`
+  - `vcs-ref=f354e3d450169972cb1f8df64acae506d96d4c49`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.19`
@@ -309,7 +309,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
@@ -373,11 +373,16 @@ Licenses (from `rpm --query`): GPL-2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
+### `rpm` package: `gawk-5.1.0-6.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv2+ and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gawk-5.1.0-6.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.1.0-6.el9_8.1.src.rpm
+```
 
 ### `rpm` package: `gdbm-libs-1.23-1.el9.x86_64`
 
@@ -486,7 +491,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -576,7 +581,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1159,7 +1164,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2237,7 +2242,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2248,7 +2253,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://mirror.cogentco.com/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
