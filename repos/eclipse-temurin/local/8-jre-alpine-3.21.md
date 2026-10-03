@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd95833f21aa0a651d91bc12cbeee24be4c90d66a63d14d2bb6d03b605fa0c56`
-- Created: `2026-09-25T22:34:58.217303714Z`
-- Virtual Size: ~ 150.6 Mb  
+- Image ID: `sha256:8943851acb0b57db57316a73340a706f4862539ae151d8c0f40164596729b0de`
+- Created: `2026-10-02T23:43:05.52210299Z`
+- Virtual Size: ~ 156.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -633,16 +633,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.7-r1 description:
+libcrypto3-3.3.7-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.3.7-r1 webpage:
+libcrypto3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.7-r1 installed size:
+libcrypto3-3.3.7-r2 installed size:
 4611 KiB
 
-libcrypto3-3.3.7-r1 license:
+libcrypto3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -820,16 +820,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -854,16 +854,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.7-r1 description:
+libssl3-3.3.7-r2 description:
 SSL shared libraries
 
-libssl3-3.3.7-r1 webpage:
+libssl3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.7-r1 installed size:
+libssl3-3.3.7-r2 installed size:
 779 KiB
 
-libssl3-3.3.7-r1 license:
+libssl3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -1041,16 +1041,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.7-r1 description:
+openssl-3.3.7-r2 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.7-r1 webpage:
+openssl-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-openssl-3.3.7-r1 installed size:
+openssl-3.3.7-r2 installed size:
 769 KiB
 
-openssl-3.3.7-r1 license:
+openssl-3.3.7-r2 license:
 Apache-2.0
 
 ```

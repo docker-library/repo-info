@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9934d5502c587d82221943f94d0fbb9b7b0f532a15d0377e8338e59b3f1bad1f`
-- Created: `2026-09-29T17:53:31.102259562Z`
+- Image ID: `sha256:86d5e2a51185d62ae7e246c587221ee9ea256bd22bde3af6bf289c6a661acd75`
+- Created: `2026-09-30T21:03:44.765501481Z`
 - Virtual Size: ~ 324.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-17.0.20.1+1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-28T00:37:55Z`
+  - `build-date=2026-09-30T07:43:22Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-28T00:37:55Z`
-  - `org.opencontainers.image.revision=5fed6512327cf4e03d25e424d9f6d5eed9016958`
-  - `release=1790555810`
+  - `org.opencontainers.image.created=2026-09-30T07:43:22Z`
+  - `org.opencontainers.image.revision=f354e3d450169972cb1f8df64acae506d96d4c49`
+  - `release=1790754119`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=5fed6512327cf4e03d25e424d9f6d5eed9016958`
+  - `vcs-ref=f354e3d450169972cb1f8df64acae506d96d4c49`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -384,11 +384,16 @@ $ dnf --quiet download --source --url freetype-2.10.4-10.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/freetype-2.10.4-10.el9_5.src.rpm
 ```
 
-### `rpm` package: `gawk-5.1.0-6.el9.x86_64`
+### `rpm` package: `gawk-5.1.0-6.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv2+ and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gawk-5.1.0-6.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.1.0-6.el9_8.1.src.rpm
+```
 
 ### `rpm` package: `gdbm-libs-1.23-1.el9.x86_64`
 
