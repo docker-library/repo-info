@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d0e1508bf7bdf699341b11e21865171bce6038e859c39d5aa3483b93b3d9112`
-- Created: `2026-09-25T23:25:12.7463494Z`
-- Virtual Size: ~ 574.49 Mb  
+- Image ID: `sha256:ecf2fad40c0a9f1fc9992e491a9a378083a676e14668868f7a6bdd87c2d5b931`
+- Created: `2026-10-02T02:49:08.488365574Z`
+- Virtual Size: ~ 582.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -2395,13 +2395,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:10.0p1-7+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.7-1~deb13u2`
+### `dpkg` source package: `openssl=3.5.7-1~deb13u3`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.7-1~deb13u2`
-- `openssl=3.5.7-1~deb13u2`
-- `openssl-provider-legacy=3.5.7-1~deb13u2`
+- `libssl3t64:amd64=3.5.7-1~deb13u3`
+- `openssl=3.5.7-1~deb13u3`
+- `openssl-provider-legacy=3.5.7-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -2413,18 +2413,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7-1%7edeb13u2.dsc' openssl_3.5.7-1~deb13u2.dsc 2707 SHA256:25904642004d30c5c3da4642a72a7d09f8d9eb6e5ce62dab53c0371114faf8f2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7-1%7edeb13u2.debian.tar.xz' openssl_3.5.7-1~deb13u2.debian.tar.xz 74836 SHA256:593a47654ead460a3b609503733f80bef552ff0802799d3b47784faacc50809f
+$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u3.dsc' openssl_3.5.7-1~deb13u3.dsc 2710 SHA256:9cdb0d9daf0773ca5c0f3f5ea1fc59b1106a99e005a5c048948b826e8d3b47e1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u3.debian.tar.xz' openssl_3.5.7-1~deb13u3.debian.tar.xz 147344 SHA256:0a427fdc3e773f4119a7dd5b36d1f0903a163cf4ea15d812bb823b251ff1cbc5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 

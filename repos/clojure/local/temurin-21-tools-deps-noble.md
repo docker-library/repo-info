@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c86709dd705db20862e86a97c8f8db2ae6d3f5eb6f95ef557c0079d8abc55173`
-- Created: `2026-09-25T23:23:40.229059888Z`
-- Virtual Size: ~ 584.79 Mb  
+- Image ID: `sha256:5dbf1f39f03eb34874bb6530bdc371f84265b491aeffefdf48ed9013b4089975`
+- Created: `2026-10-02T02:47:38.39384394Z`
+- Virtual Size: ~ 583.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -2071,12 +2071,12 @@ $ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.19
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.19.dsc' openssh_9.6p1-3ubuntu13.19.dsc 3102 SHA512:203374cc9a32d229abc9f51d59a9d6c6265ece1501146c316fd4a81a7261bf00e7c0a92347f6a278ca73b4c93933de3ccc251ad426c82dce6344e802674b09e4
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.15`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.16`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.15`
-- `openssl=3.0.13-0ubuntu3.15`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.16`
+- `openssl=3.0.13-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2085,9 +2085,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.debian.tar.xz' openssl_3.0.13-0ubuntu3.16.debian.tar.xz 223332 SHA512:55f136d2ddff466a14bcbd09cf6c9d6f6a847a5d78bcfadb2b6eaeee19398d14f7a8e6a9a82f3ed10ece70baab0933c0ff155b179294a549f013157e62b91d56
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.dsc' openssl_3.0.13-0ubuntu3.16.dsc 2516 SHA512:713ae161099b664e5396b95f25ab2d33784370bfcb47f9c28402b51fbe932bcde7c695630ad9c8c8d1515448e8b6ed023beeffa7425132ee70c2491dd86609f2
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 
