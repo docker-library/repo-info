@@ -1638,20 +1638,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.dsc' pcre2_10.42-1+deb12u1.dsc 2226 SHA256:20bfc5b620ab5017489fd5168fd427bbaad9d209dffa0a2e4025d5cc215f70a3
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.diff.gz' pcre2_10.42-1+deb12u1.diff.gz 15939 SHA256:4e1e2103da0d905d30c69c8fea259d654ac7282b90236071281901f28e7dd719
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/
 
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-7+deb12u3`
 
