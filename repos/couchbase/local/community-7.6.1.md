@@ -337,9 +337,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cryptsetup=2:2.4.3-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3.orig.tar.gz' cryptsetup_2.4.3.orig.tar.gz 11434956 SHA256:95ee4ec84d59e582eba2409281d8a41a1cc3eff3b4df91fed6dbe1df65b0614f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.3.debian.tar.xz' cryptsetup_2.4.3-1ubuntu1.3.debian.tar.xz 142968 SHA256:9375567741c3565805f2c887084b3f9a98ee9fc2238c60d07d98cbe07e57c996
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.3.dsc' cryptsetup_2.4.3-1ubuntu1.3.dsc 3185 SHA256:049b56bb25937bfed4e728dad7cccbc38eec5f9dec57e2bb2ca9d769ac8131f6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3.orig.tar.gz' cryptsetup_2.4.3.orig.tar.gz 11434956 SHA512:346893db2d0857953470c614e5808c514edd58f0c7c3fb127ce389128a69ca3821ec53d63e19131616a3598b9a373652da74fbf93de2a2662e6c9001fb486f65
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.3.debian.tar.xz' cryptsetup_2.4.3-1ubuntu1.3.debian.tar.xz 142968 SHA512:fbd888e3579e9e63158043e7e895224fad1cbf0f4d6badf89a0c7f7c702d386b7a0085398df8ab1951b719ac0c80932599ade2facee421d279016362afb42483
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.3.dsc' cryptsetup_2.4.3-1ubuntu1.3.dsc 3185 SHA512:ec6ec511f17da650c6d83838293142b8931ebdc842c03856e38efb9c581f13a26e5069c449913bedaf15edf2efe364bea73b86b46e31ec763c6b1d484d380496
 ```
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-3build1`
@@ -1788,9 +1788,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pci.ids=0.0~2022.01.22-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22.orig.tar.xz' pci.ids_0.0~2022.01.22.orig.tar.xz 228900 SHA256:3e1f96b156e74c4e70af0f3d16417d071ab73d57d038e71d193288408f1e66f6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22-1ubuntu0.1.debian.tar.xz' pci.ids_0.0~2022.01.22-1ubuntu0.1.debian.tar.xz 4524 SHA256:065b5fabe5621b8a3834563d42cdceee556144778fbcee53cf8074463cbfed4e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22-1ubuntu0.1.dsc' pci.ids_0.0~2022.01.22-1ubuntu0.1.dsc 2023 SHA256:66e0c08c70d7619876672e217c7394c17ad08500a0b5bb9fa75c02198f4355ae
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22.orig.tar.xz' pci.ids_0.0~2022.01.22.orig.tar.xz 228900 SHA512:0fef4e75caf7c9ddbced5e881abd4b3ad51ba34fd6a01c43a3f854766dc987f1483ff4643c80358063d1e4cacedbbbbfc09d1983ddd86ae10cd95cece5a187f0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22-1ubuntu0.1.debian.tar.xz' pci.ids_0.0~2022.01.22-1ubuntu0.1.debian.tar.xz 4524 SHA512:3397030b4616b0d7d846a46a0e3a04f43fbc6604456b2a4444e0bcadcb27ddf679405bfeab79395d41efe68eaa88191db1a213cf056019c645b86bf44c73a3a6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pci.ids/pci.ids_0.0%7e2022.01.22-1ubuntu0.1.dsc' pci.ids_0.0~2022.01.22-1ubuntu0.1.dsc 2023 SHA512:a9a4515514175b7e2ab605021e6969053d03f20a5363f37fb4f7bd8146e286979b9b3a062c2ab2ef7cd7f2f465762eb840241a5120d215e66d10d5baf36c41f5
 ```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
