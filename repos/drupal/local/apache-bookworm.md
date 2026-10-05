@@ -1,10 +1,10 @@
-# `drupal:11.4.7-php8.5-apache-bookworm`
+# `drupal:11.4.8-php8.5-apache-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:884c81f97f4234fd9fe2d15e69574e9f365302828ec6df310d2d0260a3d2fb74`
-- Created: `2026-09-24T20:15:28.387797263Z`
-- Virtual Size: ~ 654.35 Mb  
+- Image ID: `sha256:8a9c5775c06622b708d83d4bd90bf54f417bbde5f8285f285ca1e52217807a6a`
+- Created: `2026-09-28T23:40:56.629475702Z`
+- Virtual Size: ~ 661.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.11.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.11.tar.xz.asc`
   - `PHP_SHA256=d9be75c08e8c316f4c8f4194d8fbe1750a15f6a6d9d4e3fe72082abeeb800360`
-  - `DRUPAL_VERSION=11.4.7`
+  - `DRUPAL_VERSION=11.4.8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1011,20 +1011,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u3
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.dsc' expat_2.5.0-1+deb12u3.dsc 1427 SHA256:67388db2780dbb8f10cd2d5ace402b655272649dc345825fdc50612007af78d9
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u3.debian.tar.xz' expat_2.5.0-1+deb12u3.debian.tar.xz 50900 SHA256:1d3fe684581e73766f03c6486dc5e0c068b915da4ae8e778e820495cd9ae44b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/
 
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.44-3`
 
@@ -2860,12 +2853,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.20-1~deb12u2`
+### `dpkg` source package: `openssl=3.0.22-1~deb12u1`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.20-1~deb12u2`
-- `openssl=3.0.20-1~deb12u2`
+- `libssl3:amd64=3.0.22-1~deb12u1`
+- `openssl=3.0.22-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2877,18 +2870,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.20-1~deb12u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20-1%7edeb12u2.dsc' openssl_3.0.20-1~deb12u2.dsc 2539 SHA256:a614474a2773c23b10c0d65f4eccbcf93fdac4749afb7c26d76e1b0340154d3d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20.orig.tar.gz' openssl_3.0.20.orig.tar.gz 15292815 SHA256:c80a01dfc70ece4dc21168932c37739042d404d46ccc81a5986dd75314ecda6f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20.orig.tar.gz.asc' openssl_3.0.20.orig.tar.gz.asc 833 SHA256:07669568ab34cf3a4dcf8fd8e0d85cacdacfaa10d5ab51bdc6fc47c22fa6b33a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.20-1%7edeb12u2.debian.tar.xz' openssl_3.0.20-1~deb12u2.debian.tar.xz 72332 SHA256:7279efe85c359500c95aa88347e3395dd303d7566e2bb818d80d96e0c3bb9629
+$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.dsc' openssl_3.0.22-1~deb12u1.dsc 2742 SHA256:9eb196075ff65fed9512c743d5ccf918b77c3c637f6d518e4be550cf9065c655
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz' openssl_3.0.22.orig.tar.gz 15330396 SHA256:67ebca7e50d17383028045486653492195b83db95f8558709701bb47b5c1ef81
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz.asc' openssl_3.0.22.orig.tar.gz.asc 931 SHA256:b0cc4a379a7731c3a74c349f6756d85253d83099fd63352cf12407bce4395d19
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.debian.tar.xz' openssl_3.0.22-1~deb12u1.debian.tar.xz 56848 SHA256:08ee68527218d6d9a0fa4741ec8ffef47646cdcad0ed0822b84bf11677c66108
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.20-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.20-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.20-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -3000,20 +2993,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.dsc' pcre2_10.42-1+deb12u1.dsc 2226 SHA256:20bfc5b620ab5017489fd5168fd427bbaad9d209dffa0a2e4025d5cc215f70a3
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.diff.gz' pcre2_10.42-1+deb12u1.diff.gz 15939 SHA256:4e1e2103da0d905d30c69c8fea259d654ac7282b90236071281901f28e7dd719
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/
 
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-7+deb12u3`
 

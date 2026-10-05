@@ -1,10 +1,10 @@
-# `drupal:11.4.7-php8.5-apache-trixie`
+# `drupal:11.4.8-php8.5-apache-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d867077fca511294f0c5f142bdcb57e5000ad4f38832bc05b7ded08057ea6634`
-- Created: `2026-09-24T20:15:13.795233311Z`
-- Virtual Size: ~ 655.08 Mb  
+- Image ID: `sha256:47d3750b3552402e099b7d957e6e57c96e97931ef1384b3aa5a7c4e0e26bbf09`
+- Created: `2026-09-28T23:40:58.203318144Z`
+- Virtual Size: ~ 655.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.11.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.11.tar.xz.asc`
   - `PHP_SHA256=d9be75c08e8c316f4c8f4194d8fbe1750a15f6a6d9d4e3fe72082abeeb800360`
-  - `DRUPAL_VERSION=11.4.7`
+  - `DRUPAL_VERSION=11.4.8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
