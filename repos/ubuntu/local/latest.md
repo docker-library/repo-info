@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a0b35d4505084df58fc9e986b9ce23e6090260f5e54808626335435ba913b5e`
-- Created: `2026-09-12T10:24:38.361673881Z`
-- Virtual Size: ~ 100.2 Mb  
+- Image ID: `sha256:6e92c4fd8dfdf7276d56743a65002a91c9eb35dbe7af327e6c85bd204b646156`
+- Created: `2026-09-27T10:24:08.083210225Z`
+- Virtual Size: ~ 100.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
+  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1204,27 +1204,27 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-9ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-9ubuntu1.dsc' procps_4.0.4-9ubuntu1.dsc 2247 SHA256:02942f7296bb9f0db5177ee4d88909583b0eeb751b2ef9a675116c09d2ef176b
 ```
 
-### `dpkg` source package: `rust-coreutils=0.8.0-0ubuntu3`
+### `dpkg` source package: `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Binary Packages:
 
-- `rust-coreutils=0.8.0-0ubuntu3`
+- `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 
 - `Apache-2.0`
+- `CC-BY-4.0`
 - `MIT`
 - `permissive`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rust-coreutils=0.8.0-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-l10n.tar.gz' rust-coreutils_0.8.0.orig-l10n.tar.gz 740364 SHA512:f322d1b77ff6ef0945b08aa4237dd0b1db8da5c3e32de5e86bd22a60b5a56dd6f4828c90a4758c562ca560e6588b6e61af4507e0b6c6d8bde7d8e587010ca1e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-rust-vendor.tar.xz' rust-coreutils_0.8.0.orig-rust-vendor.tar.xz 13213352 SHA512:a66ba2f98a544fea37ace0774244dda1a7b2477536df90301765819b9bb9f0f27831df2349b7fc1cbf712ba5b9bd8c7cc9a9e900714e51b6c226f0fc2d50b250
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig.tar.gz' rust-coreutils_0.8.0.orig.tar.gz 3189640 SHA512:0c35cfb31d7810701cf5c639cbafb2be3870f4abd0f08fbade291d2534f576e067599e1b53ff228d9d2bd126210225d09bcd559761623f645883d4dd68e8f39b
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz' rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz 22812 SHA512:4058834e3899825b60f5db483f532e72f85b27f2bcb7bc2f2680f45d82c19b3d2d414e99bf17d5f7f0509d404819c28e16686fd6283db253ae841b23effcdb07
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.dsc' rust-coreutils_0.8.0-0ubuntu3.dsc 8878 SHA512:2c91bd122fa1c56c387f5e1133b508667568afee17e598ac3c1dfbea8327012bbf7115b323f77166dc5bbb36415a1aa98960c639d504d1b0026c79e40c31e295
+$ apt-get source -qq --print-uris rust-coreutils=0.10.0-1ubuntu2~26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig-l10n.tar.gz' rust-coreutils_0.10.0.orig-l10n.tar.gz 780526 SHA512:8d0b8c9053cc80033324d71ec57b7c3f5249eeff69978a759e81c7774e62ca74893708d583918a62dc448f4889d91d71aed37be2fd57ec683c717c78eecdbaa9
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig.tar.gz' rust-coreutils_0.10.0.orig.tar.gz 2671039 SHA512:cd5bc2b491ad36e559678aa45578c1646d48f4421abb1944195282acea4e5c6c1f9556c3fd2758cc7e37a1995fd5e2e1b94dfb91b6826f4e4c9bf8ddb7e50fd8
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.debian.tar.xz' rust-coreutils_0.10.0-1ubuntu2~26.04.1.debian.tar.xz 22541108 SHA512:b93fad2afd099bc04c9b78182d67e1e6f32e9c36833a3f74bb8d826e2a9e1393e37d05403974178ccda684246d665b21608fbfcd44178a050415368e18e44c41
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.dsc' rust-coreutils_0.10.0-1ubuntu2~26.04.1.dsc 8746 SHA512:16fe14c002607a30152a41bb6cd658ad7c2c341fe5178aa82b07cb1fabbf3cb042dec817c8fc195790b87ac7c035694b57cb3dffe86b4f498e7637c69591f8f0
 ```
 
 ### `dpkg` source package: `sed=4.9-2ubuntu1`
