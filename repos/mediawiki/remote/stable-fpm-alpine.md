@@ -1,7 +1,7 @@
 ## `mediawiki:stable-fpm-alpine`
 
 ```console
-$ docker pull mediawiki@sha256:96c46242300305da8cc2c680510c829c75c9153457d360f397af1fd4dbb9fa8a
+$ docker pull mediawiki@sha256:80897e5f23979385cb112127034b665505806da3504d502b18c12cb4809e54b0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull mediawiki@sha256:96c46242300305da8cc2c680510c829c75c9153457d360f39
 ### `mediawiki:stable-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull mediawiki@sha256:a519d984980b6d5889d3b722e774ac781353fb3146aa62f0b5d316510a1cf248
+$ docker pull mediawiki@sha256:7f59d28f57704c593b384136fbb380402292b3ed7223dda6b808e63549bc0e73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164829169 bytes)**  
+-	Total Size: **165.4 MB (165375550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca4cc293f94df1a2add03487572e8db10d71328aafb9bbdf2ad4dac716159f96`
+-	Image ID: `sha256:90de16693fc86666b7f479b6b14fe772a265abca513fddb6db726d4c27681372`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -85,21 +85,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 17:45:09 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 17:50:32 GMT
+# Mon, 05 Oct 2026 19:06:16 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 17:51:44 GMT
+# Mon, 05 Oct 2026 19:07:16 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 17:51:44 GMT
+# Mon, 05 Oct 2026 19:07:16 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 17:51:44 GMT
+# Mon, 05 Oct 2026 19:07:16 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 17:52:41 GMT
+# Mon, 05 Oct 2026 19:07:38 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 17:52:41 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 17:52:41 GMT
+# Mon, 05 Oct 2026 19:07:38 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:07:38 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 17:52:41 GMT
+# Mon, 05 Oct 2026 19:07:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -152,57 +152,57 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 17:45:18 GMT  
 		Size: 9.2 KB (9250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6062c4009530f2c275078c0efe36d59a19293e8c8d02bbb1e47cb3f3cb25366`  
-		Last Modified: Fri, 25 Sep 2026 17:52:59 GMT  
-		Size: 27.6 MB (27647260 bytes)  
+	-	`sha256:d50cd12b065432c864d035db1abd7b2d5fcc568a95d0bdb820248846bcce9689`  
+		Last Modified: Mon, 05 Oct 2026 19:07:55 GMT  
+		Size: 27.7 MB (27673343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4826635b1ded6a9df968604d6d9bb1d9c52012945268f5f736d9e37bfa855dab`  
-		Last Modified: Fri, 25 Sep 2026 17:52:58 GMT  
-		Size: 5.1 MB (5133559 bytes)  
+	-	`sha256:03eca903e654b26d9a47e79754cf16e76b70ef9a08eda6d518fa9a5474d8dff7`  
+		Last Modified: Mon, 05 Oct 2026 19:07:54 GMT  
+		Size: 5.1 MB (5133577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c86a8f882a3a51f984baa90cce2b5492a8dae4b312b50b4ed06f456e6a1f51cc`  
-		Last Modified: Fri, 25 Sep 2026 17:52:58 GMT  
-		Size: 320.0 B  
+	-	`sha256:111e950ab0d089e243b5ee56495fc37dd9ff5b5da39ba03cdf84fb807f4ee7df`  
+		Last Modified: Mon, 05 Oct 2026 19:07:54 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1ee88293c8e25b204ad4e17ffd130e5a1f1c59dab2529da339c16af9e51df39`  
-		Last Modified: Fri, 25 Sep 2026 17:52:58 GMT  
-		Size: 137.0 B  
+	-	`sha256:9385262f9c8fe09cf76fb511330fdc503723ad48fd900e351e1f1a497d20012d`  
+		Last Modified: Mon, 05 Oct 2026 19:07:54 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08bd8017f43c36340cfb0b5af986dd6323d63c0f2229343a14bd42f9e8fbc15e`  
-		Last Modified: Fri, 25 Sep 2026 17:53:02 GMT  
-		Size: 98.6 MB (98582613 bytes)  
+	-	`sha256:e53d2a43922bf3c0cc155ad278f763b6895915d510d518c66dcfc0334e1cd831`  
+		Last Modified: Mon, 05 Oct 2026 19:07:57 GMT  
+		Size: 99.1 MB (99102886 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:a680026f77c6858545187785c55011b1d7556360a307a2e6364283162edff84c
+$ docker pull mediawiki@sha256:78a6063ab2c9b75393b45e902b6cd7e2558baa2e194dbf6cb4ba597b80b7524c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.3 KB (33263 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5748893951ef01c3ae4c90357462734c2ab8423c430b16887bf08a32715e592`
+-	Image ID: `sha256:857cee5f0199918d57c668dc176dc63d31f0448b933eaf66e704274cfd7b141d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb1ae423c40403792ee470e05608d0787f2391d41eace4fb78ecfafe17eddf6f`  
-		Last Modified: Fri, 25 Sep 2026 17:52:58 GMT  
+	-	`sha256:6317c3a3df194783b03de1e1a17234ba1a9392fa4817df48d020a8d60fde60d2`  
+		Last Modified: Mon, 05 Oct 2026 19:07:53 GMT  
 		Size: 33.3 KB (33263 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull mediawiki@sha256:108755c894625119b28ce2dc90ba54f45f94ba13878a08457546ef86b71738c3
+$ docker pull mediawiki@sha256:a5dfa8f85f648c82cf3b186e00cf9cda1a38b27c7e01b3f75acacfc9fc5fafe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.8 MB (161845102 bytes)**  
+-	Total Size: **162.4 MB (162392268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:390952416ee524e24a625196620dde9473c052e530b7bad6e72617a4c4264c43`
+-	Image ID: `sha256:e77f18f496deacd42f5da5a644c05dbb71573e43c0e6b06db512f01a222db7d1`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -259,21 +259,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 17:43:46 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 17:49:36 GMT
+# Mon, 05 Oct 2026 18:58:36 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 17:50:50 GMT
+# Mon, 05 Oct 2026 18:59:48 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 17:50:50 GMT
+# Mon, 05 Oct 2026 18:59:48 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 17:50:50 GMT
+# Mon, 05 Oct 2026 18:59:48 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 17:51:06 GMT
+# Mon, 05 Oct 2026 19:00:32 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 17:51:06 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 17:51:06 GMT
+# Mon, 05 Oct 2026 19:00:32 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:00:32 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 17:51:06 GMT
+# Mon, 05 Oct 2026 19:00:32 GMT
 CMD ["php-fpm"]
 ```
 
@@ -326,57 +326,57 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 17:43:54 GMT  
 		Size: 9.3 KB (9251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194720d87d04d356ecd5741adf25de00bf7f033eebce4f523d758b9d5f3a568c`  
-		Last Modified: Fri, 25 Sep 2026 17:51:25 GMT  
-		Size: 26.8 MB (26774589 bytes)  
+	-	`sha256:86721e7b5e26b1fa7798769ce7b5586e44236a78f71f00787f861835957bbd85`  
+		Last Modified: Mon, 05 Oct 2026 19:00:52 GMT  
+		Size: 26.8 MB (26802629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1377ef25356aaa317edd60f80e4535f1af727073ea41d353e5554048357a600`  
-		Last Modified: Fri, 25 Sep 2026 17:51:24 GMT  
-		Size: 4.6 MB (4622706 bytes)  
+	-	`sha256:185d456963e75c1ca2a3c54f7ad2b5f391e9dc262004657ea963d26d1dea20ac`  
+		Last Modified: Mon, 05 Oct 2026 19:00:52 GMT  
+		Size: 4.6 MB (4622736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:440b3ac24b357ef3e800afed3853ad0798b3e67bc1fd5f549b99fc05f7a71dde`  
-		Last Modified: Fri, 25 Sep 2026 17:51:24 GMT  
-		Size: 320.0 B  
+	-	`sha256:052a57d5ba96ee02b9fea2efecd22a029db48f349b7564fb07676a3eedd0b04f`  
+		Last Modified: Mon, 05 Oct 2026 19:00:52 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b765745474e6db402776d4ad90eff5527c0cef17075b71b24ac796a7fcdf20a8`  
-		Last Modified: Fri, 25 Sep 2026 17:51:24 GMT  
-		Size: 137.0 B  
+	-	`sha256:412b578a95bad3bd22716e8d0169fc6ca56309431396787687f4d37d72dd36ec`  
+		Last Modified: Mon, 05 Oct 2026 19:00:52 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:518b1b8dffce8db5bf6b9f354cc07521ca375e8597d4e3bb56dc52e886a3b84f`  
-		Last Modified: Fri, 25 Sep 2026 17:51:27 GMT  
-		Size: 98.6 MB (98582315 bytes)  
+	-	`sha256:342753b1e6f4ce58a56c30bfd8a6ab0ad2ff604c898442addc4f9d44ccbebe10`  
+		Last Modified: Mon, 05 Oct 2026 19:00:56 GMT  
+		Size: 99.1 MB (99101403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:6aa49cf7692683b36d6c350924f2f90d683a5c27cb88b20bafaa0db635998db1
+$ docker pull mediawiki@sha256:c043d18e480399c913db3a5732a0f45962b02c5c8f7a80e538d82f364fe8c9be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.4 KB (33387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:683da4b075e6df9cc99bf01da8730dc3f30c7abe87665188bcf28681faa96d33`
+-	Image ID: `sha256:c5d611d3e31e26c79b83c6e2a08a1e9a1e66f9baeef079cf74d58cad01f0f85a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f5aef6873195795ca98e9a9e06a29b68f6aecef64733c5f538c676970653aa64`  
-		Last Modified: Fri, 25 Sep 2026 17:51:24 GMT  
+	-	`sha256:4c1556497e9f81a38345d4aa485d72bf04243d1c4158ca3cfcd65f7d3c39c20e`  
+		Last Modified: Mon, 05 Oct 2026 19:00:51 GMT  
 		Size: 33.4 KB (33387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:6c4bee1da8b8083ba72eed149d98efc4deb401a69c1e6bc3bfd0aa631aceeb07
+$ docker pull mediawiki@sha256:2a91fed62db0d0d7f185888d523822321bddf85e89d3c50d612d5a230d9def42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.3 MB (159336534 bytes)**  
+-	Total Size: **159.9 MB (159880801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b07fcb55f91ab82eb849b14a3b6095a86b1cf36c5a4b8d3d956207029979d57`
+-	Image ID: `sha256:17654af61146927fa289e15a96e831fc5879758412c87e7f7710e22d35b6f57d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -433,21 +433,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 17:48:14 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 18:01:06 GMT
+# Mon, 05 Oct 2026 18:58:43 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 18:02:22 GMT
+# Mon, 05 Oct 2026 18:59:55 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 18:02:22 GMT
+# Mon, 05 Oct 2026 18:59:55 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 18:02:22 GMT
+# Mon, 05 Oct 2026 18:59:55 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 18:02:47 GMT
+# Mon, 05 Oct 2026 19:01:05 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 18:02:47 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 18:02:47 GMT
+# Mon, 05 Oct 2026 19:01:05 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:01:05 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 18:02:47 GMT
+# Mon, 05 Oct 2026 19:01:05 GMT
 CMD ["php-fpm"]
 ```
 
@@ -500,57 +500,57 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 17:48:23 GMT  
 		Size: 9.2 KB (9248 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0d13cefdef306a1b07d35d6df74385afcc83bd61b6c872d735128cb44e432d1`  
-		Last Modified: Fri, 25 Sep 2026 18:03:06 GMT  
-		Size: 25.4 MB (25379017 bytes)  
+	-	`sha256:cd1c23d192f8231be1f79a242ae4dae4553c3ce1a323148401b7ee667cfc10b3`  
+		Last Modified: Mon, 05 Oct 2026 19:01:24 GMT  
+		Size: 25.4 MB (25403921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e50d828d07b67330a393ae0ac294ac37e3a9f5e30436f8783c8764f87574ce5`  
-		Last Modified: Fri, 25 Sep 2026 18:03:06 GMT  
-		Size: 4.7 MB (4702972 bytes)  
+	-	`sha256:0cd8392556f5e440d4ef982e6741572903072d6964fd5c50963dadaaa28c0548`  
+		Last Modified: Mon, 05 Oct 2026 19:01:24 GMT  
+		Size: 4.7 MB (4703006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:451e2757f82f57e1c604798f088718732d26b624582aea0e6c330dd24cec17b8`  
-		Last Modified: Fri, 25 Sep 2026 18:03:06 GMT  
-		Size: 320.0 B  
+	-	`sha256:0f7272f0125eb4c0f12877bb121daca0bf79b116617f0d91083a235fc3836d45`  
+		Last Modified: Mon, 05 Oct 2026 19:01:23 GMT  
+		Size: 323.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37ab7bef4992f0fa24b1cef6028babad2cd828fbdad7f6a9e7ec17011c3b7b7`  
-		Last Modified: Fri, 25 Sep 2026 18:03:06 GMT  
-		Size: 137.0 B  
+	-	`sha256:35bbae93c8bfc3eeeca2c09617658989cfb2a1801b47c420cee97c4d001f163f`  
+		Last Modified: Mon, 05 Oct 2026 19:01:23 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4524d921b9d86c0c10cd12738bc14753223dae506bd1622cceaeb3f5a39d8d61`  
-		Last Modified: Fri, 25 Sep 2026 18:03:09 GMT  
-		Size: 98.6 MB (98581754 bytes)  
+	-	`sha256:74f9f6fc4680eabd9c034f93d734aa047544a04fd89d2d6686f4f06cd0c238f3`  
+		Last Modified: Mon, 05 Oct 2026 19:01:27 GMT  
+		Size: 99.1 MB (99101076 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:f3021c65ad6b23cbc47ba4dbf659ad33f439f7e0b53779c1ee1e04b9a2bebf2f
+$ docker pull mediawiki@sha256:208c0f7991fe01251d36ebc9a6fa72ec77c2a62be41c93ab349e397849cf1f85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.4 KB (33387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12955e5b47eeb242758a0c38c67ea57b723894bc48f2ec7ec308aad2531b401c`
+-	Image ID: `sha256:b1df4ced80cbd8da13c7ac4e93fb60c12eb97f318e9c0b92292b414d456a1495`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e59c23a611acaf61c5054e60b6a50995cfde64cf45b23a0d1747cd0e2e2c5112`  
-		Last Modified: Fri, 25 Sep 2026 18:03:05 GMT  
+	-	`sha256:d7836e60857dfd2ef6b9b94b77be966c5f830590848f99d8a7a42187d2ba0158`  
+		Last Modified: Mon, 05 Oct 2026 19:01:23 GMT  
 		Size: 33.4 KB (33387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull mediawiki@sha256:7d340eacb19eee4b859a37bcb4b3ebbb2567097fef3c3a69f0c113a2c02c5265
+$ docker pull mediawiki@sha256:8c6cbc62490f024d37f6bb93d6182617afb34abe32f653fc02da09587e87fb35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164899584 bytes)**  
+-	Total Size: **165.4 MB (165439343 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af4f814f9158f69c03a356581ff204c2cc2a9b0ad49ac74952a63eca1e67812a`
+-	Image ID: `sha256:2503583dcfca9555afb4e7daf5a363cceb48e1e8f6daa29b91238a2f507b6adf`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -607,21 +607,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 17:46:23 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 17:54:15 GMT
+# Mon, 05 Oct 2026 19:05:15 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 17:56:16 GMT
+# Mon, 05 Oct 2026 19:07:20 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 17:56:16 GMT
+# Mon, 05 Oct 2026 19:07:20 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 17:56:17 GMT
+# Mon, 05 Oct 2026 19:07:20 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 17:56:32 GMT
+# Mon, 05 Oct 2026 19:07:58 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 17:56:32 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 17:56:32 GMT
+# Mon, 05 Oct 2026 19:07:58 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:07:58 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 17:56:32 GMT
+# Mon, 05 Oct 2026 19:07:58 GMT
 CMD ["php-fpm"]
 ```
 
@@ -674,57 +674,57 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 17:46:32 GMT  
 		Size: 9.3 KB (9251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52257c528e00fe228abf64d1fd64aad087579b779724c1ea063271d46227841a`  
-		Last Modified: Fri, 25 Sep 2026 17:56:51 GMT  
-		Size: 27.2 MB (27186886 bytes)  
+	-	`sha256:4ab77307bea871a547968d300f6a256aad716656e9f17e57850517f3de63068a`  
+		Last Modified: Mon, 05 Oct 2026 19:08:17 GMT  
+		Size: 27.2 MB (27206863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d199af373a66a6fd377a3b388bbb13f519f2323da4cd24479808fe9a3bf4648c`  
-		Last Modified: Fri, 25 Sep 2026 17:56:50 GMT  
-		Size: 5.4 MB (5417455 bytes)  
+	-	`sha256:f615ff5778d905485c0cf6a14d452c2dbb439890bfdface2fdea90c738f795d3`  
+		Last Modified: Mon, 05 Oct 2026 19:08:16 GMT  
+		Size: 5.4 MB (5417449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4c575b0d63fcc0332a6b44f8fed4d4c59ad0cd09710fd123fdc4da06efdf70e`  
-		Last Modified: Fri, 25 Sep 2026 17:56:50 GMT  
-		Size: 319.0 B  
+	-	`sha256:68dbbaec5bec2a574959f7af835a50a284f658a83993e3644fddb40a400e9b43`  
+		Last Modified: Mon, 05 Oct 2026 19:08:16 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ca0b9081404d2f8c400ec885fbef98f733fe1af3f7ebe283d36216dfaae82a9`  
-		Last Modified: Fri, 25 Sep 2026 17:56:50 GMT  
-		Size: 138.0 B  
+	-	`sha256:32357d8537c7dbcc8ba81208cc51b60e9f13a396f26a4ce9f042fb17fade0f28`  
+		Last Modified: Mon, 05 Oct 2026 19:08:16 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c241b52a4aa9a1fa152db4671327b2ae6a707127783b5bb83673e70af264a5e`  
-		Last Modified: Fri, 25 Sep 2026 17:56:53 GMT  
-		Size: 98.6 MB (98582634 bytes)  
+	-	`sha256:39ab63093ee838bb5861cdf4082ef20e40e2cdf8e77d405008dd79adf5cb7c5e`  
+		Last Modified: Mon, 05 Oct 2026 19:08:20 GMT  
+		Size: 99.1 MB (99102413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:d548fe4a43e9d0677bd48ae85a11beef3cb2b6cd15878e7ff0b3c3b7221ef584
+$ docker pull mediawiki@sha256:5e63f986c2fcc864c7b18b80b8e1ccc43d9df7da808d5f67576c86977237ad57
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 KB (33412 bytes)**  
+-	Total Size: **33.4 KB (33414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf77d93ccdb4542efb82e0643ebdcc408e2c7bc71a0d934ce36aa4cecf556ab3`
+-	Image ID: `sha256:f2df1fa502997602df36c40823bb36a6e9e6074aefa2a1b6dd5be556705c429a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cb26379a14bcddfe6e9be2b7bed7b3bac35699767832871c4cc6ecb8d7032357`  
-		Last Modified: Fri, 25 Sep 2026 17:56:50 GMT  
-		Size: 33.4 KB (33412 bytes)  
+	-	`sha256:1c541fd8424c261ebff0fa868126636be0658b00785d29bad7ccb0db88c4ca66`  
+		Last Modified: Mon, 05 Oct 2026 19:08:16 GMT  
+		Size: 33.4 KB (33414 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull mediawiki@sha256:2482433e9ce330bfc028f58f7bfde9e4ddda995e114adf71cb357ac51af96ebe
+$ docker pull mediawiki@sha256:1f4e62a5f5998467f5f98237d04ea56d5bafeb8e54fd4c4b0ebd58af2c9beda2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.8 MB (165774762 bytes)**  
+-	Total Size: **166.3 MB (166320749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f4d85258120effba759b23d49e5477e6ec0b4836e9462d2a60ed2c1323473e4`
+-	Image ID: `sha256:d0c15a2355038158e6f293793e4935cbcc41ca940898af0938c18285dd63b7d3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -781,21 +781,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 17:45:18 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 17:52:23 GMT
+# Mon, 05 Oct 2026 18:59:02 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 17:53:31 GMT
+# Mon, 05 Oct 2026 19:00:13 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 17:53:32 GMT
+# Mon, 05 Oct 2026 19:00:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 17:53:32 GMT
+# Mon, 05 Oct 2026 19:00:13 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 17:58:42 GMT
+# Mon, 05 Oct 2026 19:01:11 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 17:58:42 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 17:58:42 GMT
+# Mon, 05 Oct 2026 19:01:11 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:01:11 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 17:58:42 GMT
+# Mon, 05 Oct 2026 19:01:11 GMT
 CMD ["php-fpm"]
 ```
 
@@ -848,57 +848,57 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 17:45:28 GMT  
 		Size: 9.3 KB (9252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d9cc53eca5ebfb00977c63d68ae6e521579bb39a043a30663d350ec84f8e90d`  
-		Last Modified: Fri, 25 Sep 2026 17:54:14 GMT  
-		Size: 28.3 MB (28318364 bytes)  
+	-	`sha256:6029e431ff3332b37f3ed80ccca2c859e0bc1afecf32a21ef9a3ea4391a8baab`  
+		Last Modified: Mon, 05 Oct 2026 19:01:29 GMT  
+		Size: 28.3 MB (28344497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d810e11b2865f33e0b098b5a674c7c90113f172e148b3ff8350b26dbea57500`  
-		Last Modified: Fri, 25 Sep 2026 17:54:14 GMT  
-		Size: 5.3 MB (5273284 bytes)  
+	-	`sha256:c515baf483da04a0b78e596e0af8641a9c18d3baa8482be9f783420852b4cee4`  
+		Last Modified: Mon, 05 Oct 2026 19:01:28 GMT  
+		Size: 5.3 MB (5273328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85b37e1a7a910e549d8108b56c7d15da0ba91094224594ec41909bdbf190f97c`  
-		Last Modified: Fri, 25 Sep 2026 17:54:14 GMT  
-		Size: 324.0 B  
+	-	`sha256:27caedee7e23b296b9cf043f66e36d526d437464badf14b162d1f24e3432c122`  
+		Last Modified: Mon, 05 Oct 2026 19:01:28 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:093ac5ad0f652b2328ca42304970d3838b7f1da5f66498eaf0fb0ac038c30a61`  
-		Last Modified: Fri, 25 Sep 2026 17:54:14 GMT  
-		Size: 137.0 B  
+	-	`sha256:f92b0b1f1d4b01abc674518bdb2947582785a5f0af2664fbe8ac630ee70c6337`  
+		Last Modified: Mon, 05 Oct 2026 19:01:28 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7005518ba4689a298cf96da0e672743caeb8468c1fa51722faf4616ce5c1a12`  
-		Last Modified: Fri, 25 Sep 2026 17:59:00 GMT  
-		Size: 98.6 MB (98582209 bytes)  
+	-	`sha256:b30ad4b571e5b8c60d7b73202abce7fd50b809581cecad9a3e0fdbc294874a10`  
+		Last Modified: Mon, 05 Oct 2026 19:01:31 GMT  
+		Size: 99.1 MB (99102014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:17f97ca22f14f06aa5db8a8cc98de5d5f981aa9336c319b87305ae2fded4cf35
+$ docker pull mediawiki@sha256:d4705de2a20bdc6e6c82e96de3d6d975eccdc391bac6ea3a98eb7e21ee0b9de3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 KB (33227 bytes)**  
+-	Total Size: **33.2 KB (33228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4080e3fd25c24ae86c3218f8b38873678cca0541bc29ea00a92657727187189`
+-	Image ID: `sha256:1e3c358b22ab6da6cdcc6d722c18f9013b596d56427351ce1cf754c7ab08d6a2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fadeb1311caebffd1c19a05ef6181cbc565d8452987c5e560a0e63ece7da9653`  
-		Last Modified: Fri, 25 Sep 2026 17:58:57 GMT  
-		Size: 33.2 KB (33227 bytes)  
+	-	`sha256:f10b07cb0f01ffe1e39131e68c8a68ee4c6917b030ad70c9676cf86da0b56159`  
+		Last Modified: Mon, 05 Oct 2026 19:01:28 GMT  
+		Size: 33.2 KB (33228 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull mediawiki@sha256:f5ce3b4a3dc67fbb0e5f96198970dc8414453c163fd2fe15465070ec0251a5c6
+$ docker pull mediawiki@sha256:f90c225c8f64ba9ef80b1494a389240e433d6dbc8c3c84fa721e4f49acc72e42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166664087 bytes)**  
+-	Total Size: **167.2 MB (167212048 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:270642c9f74b332fc2b5d4636ccc81193f90386195e5a48b7b9d6ff56ea91b9b`
+-	Image ID: `sha256:caee750907553bae94a2379a2e1db65ee911aea37d537bf5867119abb778f882`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -955,21 +955,21 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Fri, 25 Sep 2026 18:04:34 GMT
 CMD ["php-fpm"]
-# Fri, 25 Sep 2026 19:04:59 GMT
+# Mon, 05 Oct 2026 19:02:43 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	; # buildkit
-# Fri, 25 Sep 2026 19:06:47 GMT
+# Mon, 05 Oct 2026 19:04:36 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 		lua5.1-dev 		oniguruma-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.28; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del --no-network .build-deps # buildkit
-# Fri, 25 Sep 2026 19:06:47 GMT
+# Mon, 05 Oct 2026 19:04:36 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 25 Sep 2026 19:06:48 GMT
+# Mon, 05 Oct 2026 19:04:36 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 25 Sep 2026 19:08:22 GMT
+# Mon, 05 Oct 2026 19:05:02 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.46
-# Fri, 25 Sep 2026 19:08:22 GMT
-ENV MEDIAWIKI_VERSION=1.46.0
-# Fri, 25 Sep 2026 19:08:22 GMT
+# Mon, 05 Oct 2026 19:05:02 GMT
+ENV MEDIAWIKI_VERSION=1.46.2
+# Mon, 05 Oct 2026 19:05:02 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 		7759DE19A22260232F251342FC4D45E75D14112B 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del --no-network .fetch-deps # buildkit
-# Fri, 25 Sep 2026 19:08:22 GMT
+# Mon, 05 Oct 2026 19:05:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1022,43 +1022,43 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 25 Sep 2026 18:04:51 GMT  
 		Size: 9.3 KB (9252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4449e91f8ef8a26362e88d11a59a9f2d6343baf971bbeb3c10810bec651a2fe5`  
-		Last Modified: Fri, 25 Sep 2026 19:09:01 GMT  
-		Size: 28.9 MB (28928091 bytes)  
+	-	`sha256:a564f2a1a1822ebd259d4639195f8fab6986213afd0b4e404bfae541280606e1`  
+		Last Modified: Mon, 05 Oct 2026 19:05:43 GMT  
+		Size: 29.0 MB (28956691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a36c3c0d9882dff77f592de503e0bda0f2b873c9686ce0933103e1d7fa920a96`  
-		Last Modified: Fri, 25 Sep 2026 19:09:00 GMT  
-		Size: 5.0 MB (4978719 bytes)  
+	-	`sha256:0fd1926d802bcd72ae8f682fb84145ee1ad4659bf3d28ada486971379c64bbf9`  
+		Last Modified: Mon, 05 Oct 2026 19:05:42 GMT  
+		Size: 5.0 MB (4978710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b018138d8dfef6920a2e7a1322b6148a6ebdb6e0f5adb736fdbfba16479f5e8`  
-		Last Modified: Fri, 25 Sep 2026 19:09:00 GMT  
-		Size: 326.0 B  
+	-	`sha256:dec03e09208f4f4637f5c7749ef7d37b0da07e4a891c949ecb66d3434f2f90cc`  
+		Last Modified: Mon, 05 Oct 2026 19:05:42 GMT  
+		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cbfb34ed50cc3b90de3eeed66fac2d2955de27f23e4a170c145c8a8161cf603`  
-		Last Modified: Fri, 25 Sep 2026 19:09:00 GMT  
-		Size: 141.0 B  
+	-	`sha256:5886440abc8b7715ef16ad17386475cd57c25e5424fd46b910d6c5b9c59b9ad9`  
+		Last Modified: Mon, 05 Oct 2026 19:05:42 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b5ed5a3d61c6a629495223299f392524fd49d3d4482f97d3841d9bf782a0156`  
-		Last Modified: Fri, 25 Sep 2026 19:09:04 GMT  
-		Size: 98.6 MB (98582099 bytes)  
+	-	`sha256:3c0272fd24df28db16b409d16cc12a64c9671a9bde0db15799df2e7cba2a3769`  
+		Last Modified: Mon, 05 Oct 2026 19:05:46 GMT  
+		Size: 99.1 MB (99101468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:0082613adb8e191c3d0ac94cd5309925f136a700b60efcf45e0cb867efd34de9
+$ docker pull mediawiki@sha256:4d3863591a56203586aabcc65c9c9f022e469070aad153258886fd04d8a21003
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.3 KB (33308 bytes)**  
+-	Total Size: **33.3 KB (33309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:046279702cc0b09442a1e2dd3ba6e8c83531375b72947e5de6f29dc612a1f6d9`
+-	Image ID: `sha256:3c2c08e464f61eacc311176d4ee2872d53b6d8dea8157be1059526d64838ff70`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11a440ba3a35f659abab7ecd6fca538efb80e5aafd563818c590ad825a1f97ad`  
-		Last Modified: Fri, 25 Sep 2026 19:09:00 GMT  
-		Size: 33.3 KB (33308 bytes)  
+	-	`sha256:190ee5793ebadf613d7b07aa43f021fcdd2d6fda0098e577cf0ca1dc345885ad`  
+		Last Modified: Mon, 05 Oct 2026 19:05:42 GMT  
+		Size: 33.3 KB (33309 bytes)  
 		MIME: application/vnd.in-toto+json
