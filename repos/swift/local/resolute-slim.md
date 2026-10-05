@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2cd6b186d2b0ab92dfae766d305a00d62f97be9eef0bce2608fd3c6a1167793`
-- Created: `2026-09-18T23:48:52.010745763Z`
-- Virtual Size: ~ 286.05 Mb  
+- Image ID: `sha256:949a871e678d7e88bcbbf3c8ba5a54093f5e2523d9fe96587e113cb8fb5333d3`
+- Created: `2026-10-02T01:40:53.069977559Z`
+- Virtual Size: ~ 286.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
 - Labels:
   - `description=Docker Container for the Swift programming language`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
-  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
+  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -347,11 +347,11 @@ Licenses: (parsed from: `/usr/share/doc/gnu-coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.5`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.7`
 
 Binary Packages:
 
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.5`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -367,9 +367,15 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.debian.tar.xz' curl_8.18.0-1ubuntu2.7.debian.tar.xz 97116 SHA512:c4314027cdbf519515942c214c6505033616c3d627792645d1d9745c8bd0964bed07f56080b0cb1fc89ae590db1df468b9a53c68fffac3d9261e34bc24aa3a18
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.dsc' curl_8.18.0-1ubuntu2.7.dsc 3308 SHA512:3b5de2c0329b287de4ea00e63372c69a9ac483951c40dfd9a9665e6f54f95d258bfa5921d090fbbc02904cddec2516e07557bd0683d43b41213b05a6343f458b
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -1358,20 +1364,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.5.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.5.1-1.debian.tar.xz' libxcrypt_4.5.1-1.debian.tar.xz 8684 SHA256:b6096f6498adf5a94d727c9065ed33b784190e8c2cd3eda5f073e435708293ae
 ```
 
-### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.1`
+### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.2`
 
 Binary Packages:
 
-- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.1`
+- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.2.debian.tar.xz 38744 SHA512:6e69e1de90844579490eb36a4d63a3b6e4255bfab8ae8bb2da7e32e4cdd869ba4964ae1a1e652d5a706244b0b31237eae3e70588712840f64a1f308177f989b5
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.2.dsc 3225 SHA512:d32a6b8f2813b687a54defcfc4b54c724dac5dc624d5ad8fd7199aab4726fdbfa5ddfc5651d7d0fc8300f9149a6c4c1455ba6c9cd86a45a549810b7fdf25ee4c
+```
 
 ### `dpkg` source package: `libzstd=1.5.7+dfsg-3`
 
@@ -1568,10 +1579,9 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu5
 Binary Packages:
 
 - `libssl3t64:amd64=3.5.5-1ubuntu3.5`
-- `openssl=3.5.5-1ubuntu3.5`
 - `openssl-provider-legacy=3.5.5-1ubuntu3.5`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1581,6 +1591,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`
+
+Binary Packages:
+
+- `openssl=3.5.5-1ubuntu3.7`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.debian.tar.xz' openssl_3.5.5-1ubuntu3.7.debian.tar.xz 194720 SHA512:c8c6d9131240cadab289b494baed0a8683dc51625e232931088434af38b1acb6c97e437a1741f53fc821784834a2bacef5fd8b1c347d4c0283e65e9eec78460e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.dsc' openssl_3.5.5-1ubuntu3.7.dsc 2916 SHA512:1f318111347b6e2ff701e8b9f7b742d31d6c261b7913a76e553ef6a3982d13d469811b594e299b772559231c32e331a77f4bcf78420564b4e1018c2e5f618651
+```
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -1781,27 +1814,27 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-3.debian.tar.xz 8180 SHA256:8b1d25a5942e762d792ea1beacb0fda0f9761331fd46ce3874fe24c2360485e2
 ```
 
-### `dpkg` source package: `rust-coreutils=0.8.0-0ubuntu3`
+### `dpkg` source package: `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Binary Packages:
 
-- `rust-coreutils=0.8.0-0ubuntu3`
+- `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 
 - `Apache-2.0`
+- `CC-BY-4.0`
 - `MIT`
 - `permissive`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rust-coreutils=0.8.0-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-l10n.tar.gz' rust-coreutils_0.8.0.orig-l10n.tar.gz 740364 SHA512:f322d1b77ff6ef0945b08aa4237dd0b1db8da5c3e32de5e86bd22a60b5a56dd6f4828c90a4758c562ca560e6588b6e61af4507e0b6c6d8bde7d8e587010ca1e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-rust-vendor.tar.xz' rust-coreutils_0.8.0.orig-rust-vendor.tar.xz 13213352 SHA512:a66ba2f98a544fea37ace0774244dda1a7b2477536df90301765819b9bb9f0f27831df2349b7fc1cbf712ba5b9bd8c7cc9a9e900714e51b6c226f0fc2d50b250
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig.tar.gz' rust-coreutils_0.8.0.orig.tar.gz 3189640 SHA512:0c35cfb31d7810701cf5c639cbafb2be3870f4abd0f08fbade291d2534f576e067599e1b53ff228d9d2bd126210225d09bcd559761623f645883d4dd68e8f39b
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz' rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz 22812 SHA512:4058834e3899825b60f5db483f532e72f85b27f2bcb7bc2f2680f45d82c19b3d2d414e99bf17d5f7f0509d404819c28e16686fd6283db253ae841b23effcdb07
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.dsc' rust-coreutils_0.8.0-0ubuntu3.dsc 8878 SHA512:2c91bd122fa1c56c387f5e1133b508667568afee17e598ac3c1dfbea8327012bbf7115b323f77166dc5bbb36415a1aa98960c639d504d1b0026c79e40c31e295
+$ apt-get source -qq --print-uris rust-coreutils=0.10.0-1ubuntu2~26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig-l10n.tar.gz' rust-coreutils_0.10.0.orig-l10n.tar.gz 780526 SHA512:8d0b8c9053cc80033324d71ec57b7c3f5249eeff69978a759e81c7774e62ca74893708d583918a62dc448f4889d91d71aed37be2fd57ec683c717c78eecdbaa9
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig.tar.gz' rust-coreutils_0.10.0.orig.tar.gz 2671039 SHA512:cd5bc2b491ad36e559678aa45578c1646d48f4421abb1944195282acea4e5c6c1f9556c3fd2758cc7e37a1995fd5e2e1b94dfb91b6826f4e4c9bf8ddb7e50fd8
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.debian.tar.xz' rust-coreutils_0.10.0-1ubuntu2~26.04.1.debian.tar.xz 22541108 SHA512:b93fad2afd099bc04c9b78182d67e1e6f32e9c36833a3f74bb8d826e2a9e1393e37d05403974178ccda684246d665b21608fbfcd44178a050415368e18e44c41
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.dsc' rust-coreutils_0.10.0-1ubuntu2~26.04.1.dsc 8746 SHA512:16fe14c002607a30152a41bb6cd658ad7c2c341fe5178aa82b07cb1fabbf3cb042dec817c8fc195790b87ac7c035694b57cb3dffe86b4f498e7637c69591f8f0
 ```
 
 ### `dpkg` source package: `sed=4.9-2ubuntu1`
