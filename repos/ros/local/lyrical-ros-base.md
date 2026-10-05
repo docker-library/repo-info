@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af4e49b0df4990292819d516c5e6e87e12338f933070f8777dba1505a6ffa7ab`
-- Created: `2026-09-16T04:24:31.604508617Z`
-- Virtual Size: ~ 1 Gb  
+- Image ID: `sha256:bec94f16b7711f3e2d9f3b0bc641a3515190c0377ce50ef249fd81f19be415d1`
+- Created: `2026-10-02T02:31:01.398340115Z`
+- Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LC_ALL=C.UTF-8`
   - `ROS_DISTRO=lyrical`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-12T10:25:59.825539+00:00`
+  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -70,11 +70,11 @@ $ apt-get source -qq --print-uris adduser=3.153ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.153ubuntu1.dsc' adduser_3.153ubuntu1.dsc 1807 SHA256:a4242f3e9dbbf4979b7960abbfcad7ff06499629eda2eb53d8c3527e95fff84c
 ```
 
-### `dpkg` source package: `aom=3.13.1-2`
+### `dpkg` source package: `aom=3.13.1-2ubuntu0.1`
 
 Binary Packages:
 
-- `libaom3:amd64=3.13.1-2`
+- `libaom3:amd64=3.13.1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 
@@ -89,10 +89,10 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=3.13.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1-2.dsc' aom_3.13.1-2.dsc 2402 SHA256:f55a29106fee067b34566cdaefd42e72aa7293ab26a7ab05903de05b4cb6bffc
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1.orig.tar.gz' aom_3.13.1.orig.tar.gz 6262920 SHA256:73f73d1ef94f93868edf2fae2bf80eca9c66a5813cfa63ef5e4c8d367c84e814
-'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1-2.debian.tar.xz' aom_3.13.1-2.debian.tar.xz 20840 SHA256:6617c623a0b4cbc3eab39a222bea3671b5e46fc8c4598b493e173f565810479e
+$ apt-get source -qq --print-uris aom=3.13.1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1.orig.tar.gz' aom_3.13.1.orig.tar.gz 6262920 SHA512:cde7b044131bdf642758948b6ccbcfa1c79d1d698badfc3a82d88f78ef09c55c6ac3a04e3c515af2f89becf94eb48f0af5145e0784628f95676a85e8dd350a7a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1-2ubuntu0.1.debian.tar.xz' aom_3.13.1-2ubuntu0.1.debian.tar.xz 23412 SHA512:8e5a8f4f9c488393e6dc3e5aaddf1a43d3bd711098802b0e70afcd3ef07d2dc0d68c9445d951a4cd9e9b65060b2c967cacbbe05027e7df3c2f134ca1d7d178cd
+'http://archive.ubuntu.com/ubuntu/pool/main/a/aom/aom_3.13.1-2ubuntu0.1.dsc' aom_3.13.1-2ubuntu0.1.dsc 2704 SHA512:5c41749d0df2e53b5acb6273fea5f5ab221268159d5bafd4d6fb778dfa9846dc9abde2d368679fec9fac28f9dda9e6d9a05b8e3304da7586a370deca0806e1aa
 ```
 
 ### `dpkg` source package: `apparmor=5.0.2-0ubuntu1~26.04.1`
@@ -544,13 +544,13 @@ $ apt-get source -qq --print-uris cppcheck=2.19.0-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_2.19.0-3.debian.tar.xz' cppcheck_2.19.0-3.debian.tar.xz 12448 SHA256:4a2bf771c3693fba518082beea44ba970951e72bd35cd4a2aa485bf4258a643f
 ```
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.5`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.7`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.5`
-- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.5`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.5`
+- `curl=8.18.0-1ubuntu2.7`
+- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.7`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -566,9 +566,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.debian.tar.xz' curl_8.18.0-1ubuntu2.7.debian.tar.xz 97116 SHA512:c4314027cdbf519515942c214c6505033616c3d627792645d1d9745c8bd0964bed07f56080b0cb1fc89ae590db1df468b9a53c68fffac3d9261e34bc24aa3a18
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.dsc' curl_8.18.0-1ubuntu2.7.dsc 3308 SHA512:3b5de2c0329b287de4ea00e63372c69a9ac483951c40dfd9a9665e6f54f95d258bfa5921d090fbbc02904cddec2516e07557bd0683d43b41213b05a6343f458b
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
 
@@ -909,12 +915,12 @@ $ apt-get source -qq --print-uris empy=4.2.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/e/empy/empy_4.2.1-1.debian.tar.xz' empy_4.2.1-1.debian.tar.xz 12064 SHA256:008aa39c6b1d3e5f3996dd34e11323707baba2482112a40bbac0dc4166d72b77
 ```
 
-### `dpkg` source package: `expat=2.7.4-1`
+### `dpkg` source package: `expat=2.7.4-1ubuntu0.2`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.7.4-1`
-- `libexpat1-dev:amd64=2.7.4-1`
+- `libexpat1:amd64=2.7.4-1ubuntu0.2`
+- `libexpat1-dev:amd64=2.7.4-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/libexpat1-dev/copyright`)
 
@@ -923,10 +929,10 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.7.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1.dsc' expat_2.7.4-1.dsc 1970 SHA256:2b8d94bbc4e830fb7268be91ff18dc24cfdc88608399311af85737cf360da3a0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA256:5b356795b889d3e5b379433ece069b8781bf0727f6959ad3bbc9da0c22164f59
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1.debian.tar.xz' expat_2.7.4-1.debian.tar.xz 13420 SHA256:d58d2cb39825e385b7063eca491ce1b34299b047bce45d9ef0b42666a289a9b0
+$ apt-get source -qq --print-uris expat=2.7.4-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA512:0e157ce875ec993b4e495e0cd04979109c1f0f0dbfa707c113d9b4ed243c668fce20e5ef79ff8df2f30587cc182a0254794b2fb9bb53f938da608ace32903820
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1ubuntu0.2.debian.tar.xz' expat_2.7.4-1ubuntu0.2.debian.tar.xz 45356 SHA512:1bf182ebcaa1b693f5559cccd849ba9b9e3c4a30b81dae055b9662c722b5af2421fd022a160d5295fb195fad050546c697e35ec8ad36388674006b6646dab925
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1ubuntu0.2.dsc' expat_2.7.4-1ubuntu0.2.dsc 1480 SHA512:838f8a6e59cec39179489ab892c6be84452eeea08841644f6156087867824d50668301aa4d08dc8ff0c8275709b9187990c3a45d358b339c911b95c52ad43dce
 ```
 
 ### `dpkg` source package: `findutils=4.10.0-3build2`
@@ -1400,11 +1406,11 @@ $ apt-get source -qq --print-uris git=1:2.53.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.53.0-1ubuntu1.dsc' git_2.53.0-1ubuntu1.dsc 2656 SHA256:5725094be101993b4c03ebb8a77c0808870d639b2a7039f20063af27d7a8ebf4
 ```
 
-### `dpkg` source package: `glib2.0=2.88.0-1`
+### `dpkg` source package: `glib2.0=2.88.0-1ubuntu0.1`
 
 Binary Packages:
 
-- `libglib2.0-0t64:amd64=2.88.0-1`
+- `libglib2.0-0t64:amd64=2.88.0-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 
@@ -1437,11 +1443,11 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.88.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0-1.dsc' glib2.0_2.88.0-1.dsc 4935 SHA256:ff592e1e093328e01b811118e8f68eec83359b71874eb320cc240da7d27e9f24
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0.orig-unicode-data.tar.xz' glib2.0_2.88.0.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0.orig.tar.xz' glib2.0_2.88.0.orig.tar.xz 5788396 SHA256:3546251ccbb3744d4bc4eb48354540e1f6200846572bab68e3a2b7b2b64dfd07
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0-1.debian.tar.xz' glib2.0_2.88.0-1.debian.tar.xz 142452 SHA256:e988a135ff5dffd39c05f67f3c2743ca1774c144615edcb6a823d4e1d976fbd1
+$ apt-get source -qq --print-uris glib2.0=2.88.0-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0.orig-unicode-data.tar.xz' glib2.0_2.88.0.orig-unicode-data.tar.xz 666552 SHA512:32c5e2303868cd80b85f83e94e3f1418ea050fde2f892db0463a41040db2ff0e6db7b29b0af5d0a7bd355976765d1f23ad947230d8c46696a6fd249fc465de6c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0.orig.tar.xz' glib2.0_2.88.0.orig.tar.xz 5788396 SHA512:ceead8d88720db17dc6bbff7aff14f261f90afc5e8261448aae0657f89b5fcc616cf62f4b049be88a4ddd3f50a869bbcdb66b29777da4969a47987828ecac280
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0-1ubuntu0.1.debian.tar.xz' glib2.0_2.88.0-1ubuntu0.1.debian.tar.xz 156176 SHA512:2716a68ab7235c82e69f8250228dc646edd14fc4c409c611b78a00c94c2aa000a8517555f83682654090a472510dc07ff5b150dfb779a15eda7d39f7e5bfe8eb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0-1ubuntu0.1.dsc' glib2.0_2.88.0-1ubuntu0.1.dsc 4936 SHA512:c195c8d769868d46f91f29e3a0af17d833be2fc2007d4bade31276bb80cb895d015dd74824c9e20b03b83a38d322472aa0f4fa4df9cc8e5851b8b04462a4158b
 ```
 
 ### `dpkg` source package: `glibc=2.43-2ubuntu2.4`
@@ -2299,12 +2305,12 @@ $ apt-get source -qq --print-uris libgpg-error=1.58-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58-2.debian.tar.xz' libgpg-error_1.58-2.debian.tar.xz 19792 SHA256:2e4f501ba6b2375ce23492d65192bfaf4658b68daa9c03965720bb1bc3a52cac
 ```
 
-### `dpkg` source package: `libheif=1.21.2-3ubuntu0.4`
+### `dpkg` source package: `libheif=1.21.2-3ubuntu0.6`
 
 Binary Packages:
 
-- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.4`
-- `libheif1:amd64=1.21.2-3ubuntu0.4`
+- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.6`
+- `libheif1:amd64=1.21.2-3ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2318,9 +2324,14 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.6.debian.tar.xz' libheif_1.21.2-3ubuntu0.6.debian.tar.xz 54744 SHA512:e275b556c3798967b92cf5365eba557379e7561c172298fef6f20237f0b46bbf3ff2867cf1ee5ff7b84a3750b0381cd3af1808a07abbd768da69b14498cbe203
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.6.dsc' libheif_1.21.2-3ubuntu0.6.dsc 3989 SHA512:afebd8401a86a703a4ebe40891404c4b25c6b4edc7ee53067014fa6d342df40e57692eaac99cc161ca177c26ded8644aabde3ea3cd0831209f3383ea912b9f2b
+```
 
 ### `dpkg` source package: `libidn2=2.3.8-4build1`
 
@@ -2955,35 +2966,46 @@ $ apt-get source -qq --print-uris libxext=2:1.3.4-1build3
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxext/libxext_1.3.4-1build3.dsc' libxext_1.3.4-1build3.dsc 2221 SHA256:9384eeeebb3b39b130f98b75776b9cea69815f2476a032f4c3aa9ef79e9034b7
 ```
 
-### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.1`
+### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.2`
 
 Binary Packages:
 
-- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.1`
-- `libxml2-utils=2.15.2+dfsg-0.1ubuntu0.1`
+- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.2`
+- `libxml2-utils=2.15.2+dfsg-0.1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.2.debian.tar.xz 38744 SHA512:6e69e1de90844579490eb36a4d63a3b6e4255bfab8ae8bb2da7e32e4cdd869ba4964ae1a1e652d5a706244b0b31237eae3e70588712840f64a1f308177f989b5
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.2.dsc 3225 SHA512:d32a6b8f2813b687a54defcfc4b54c724dac5dc624d5ad8fd7199aab4726fdbfa5ddfc5651d7d0fc8300f9149a6c4c1455ba6c9cd86a45a549810b7fdf25ee4c
+```
 
-### `dpkg` source package: `libxpm=1:3.5.17-1ubuntu0.26.04.1`
+### `dpkg` source package: `libxpm=1:3.5.17-1ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `libxpm4:amd64=1:3.5.17-1ubuntu0.26.04.1`
+- `libxpm4:amd64=1:3.5.17-1ubuntu0.26.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxpm=1:3.5.17-1ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz' libxpm_3.5.17.orig.tar.gz 687199 SHA512:01d1b2dcbdd0c7927add19852ec1e68575d5957f043471b0aa6e2b3deb4df397e68a616e6d257ac5a38f60a836eacaae3dc0de5c4c312050673032edbc30f077
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17.orig.tar.gz.asc' libxpm_3.5.17.orig.tar.gz.asc 833 SHA512:a14af9338551fdb37e8c6e3ac75971e173d4b6a2dbce00295e94519542063019392073d08e3f1e8105783815d9853284170bd84bb423bc40fa113f76a2b813a4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.26.04.2.diff.gz' libxpm_3.5.17-1ubuntu0.26.04.2.diff.gz 51748 SHA512:e0411ba393f0334f5afe5aefc56e828ed49f8233fc8611478718ab9fbafb67b3896ca2d9675e1aee38d0f56e2748adc6451fbdabcbd6e3fb5873d6d062199770
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.17-1ubuntu0.26.04.2.dsc' libxpm_3.5.17-1ubuntu0.26.04.2.dsc 2381 SHA512:160d9fbf790bc32ae6a5be5062042b387ddbae100c2fcffa00b77bdb6248298169e37e6b5d4d93f26e885a8764faffa6902604d43aa92b54e9188086d39b1a0b
+```
 
 ### `dpkg` source package: `libxrender=1:0.9.12-1build1`
 
@@ -3068,19 +3090,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-31.31`
+### `dpkg` source package: `linux=7.0.0-38.38`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-31.31`
+- `linux-libc-dev:amd64=7.0.0-38.38`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=7.0.0-38.38
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.diff.gz' linux_7.0.0-38.38.diff.gz 3455370 SHA512:70f37f6fa95fcddee670110bccf0a5a8db7bb7f7d84c607af059dbf4e3f6744c43cc01198ff54a5fce8b2ed71fb0abbeaee175a18497d931a878c04a5aba049a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.dsc' linux_7.0.0-38.38.dsc 7845 SHA512:bcfaca2361215c2af69407e51b31e9aac644de5e9fcdd35d9315c8e60fff96cca215784229b28e1036aa220dd1f76795f8250966834e1eebd00eea2a6e11ae80
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.1-2build1`
 
@@ -3545,14 +3572,14 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu5.dsc' openldap_2.6.10+dfsg-1ubuntu5.dsc 3426 SHA256:88dcaf31dac1a493430427d7d9ff2cb5c4138b1e0ab6c53c5be7c1d9c87f403c
 ```
 
-### `dpkg` source package: `openssl=3.5.5-1ubuntu3.5`
+### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.5.5-1ubuntu3.5`
-- `libssl3t64:amd64=3.5.5-1ubuntu3.5`
-- `openssl=3.5.5-1ubuntu3.5`
-- `openssl-provider-legacy=3.5.5-1ubuntu3.5`
+- `libssl-dev:amd64=3.5.5-1ubuntu3.7`
+- `libssl3t64:amd64=3.5.5-1ubuntu3.7`
+- `openssl=3.5.5-1ubuntu3.7`
+- `openssl-provider-legacy=3.5.5-1ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -3561,9 +3588,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.debian.tar.xz' openssl_3.5.5-1ubuntu3.7.debian.tar.xz 194720 SHA512:c8c6d9131240cadab289b494baed0a8683dc51625e232931088434af38b1acb6c97e437a1741f53fc821784834a2bacef5fd8b1c347d4c0283e65e9eec78460e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.dsc' openssl_3.5.5-1ubuntu3.7.dsc 2916 SHA512:1f318111347b6e2ff701e8b9f7b742d31d6c261b7913a76e553ef6a3982d13d469811b594e299b772559231c32e331a77f4bcf78420564b4e1018c2e5f618651
+```
 
 ### `dpkg` source package: `orocos-kdl=1.5.2-1`
 
@@ -4093,11 +4126,11 @@ $ apt-get source -qq --print-uris python-cffi=2.0.0-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_2.0.0-3build1.dsc' python-cffi_2.0.0-3build1.dsc 2589 SHA256:74d9e2d022e44088b3cf6e0081dacb2c62b8380d912cab3c62f46c7000c7675b
 ```
 
-### `dpkg` source package: `python-cryptography=46.0.5-1ubuntu2`
+### `dpkg` source package: `python-cryptography=46.0.5-1ubuntu2.2`
 
 Binary Packages:
 
-- `python3-cryptography=46.0.5-1ubuntu2`
+- `python3-cryptography=46.0.5-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 
@@ -4108,11 +4141,11 @@ Licenses: (parsed from: `/usr/share/doc/python3-cryptography/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-cryptography=46.0.5-1ubuntu2
+$ apt-get source -qq --print-uris python-cryptography=46.0.5-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5.orig-rust-vendor.tar.xz' python-cryptography_46.0.5.orig-rust-vendor.tar.xz 2294960 SHA512:fe8f2cc5175af3f01838750694a91af0ef30670bdbbf521d9ef61df707ce5ab64b577245d0fb5a65616d4a789ed4d198cac8f90d0cca2c910d8c2973331be3e5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5.orig.tar.gz' python-cryptography_46.0.5.orig.tar.gz 750064 SHA512:5bc5ea5b85c600504c46e2376a45cee749f41e2b4a6eb639b05d289370dcdc82b2ace423532f5591da16ca56ea32919e47ec154cb72bf7e1f5f3f923c744a185
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5-1ubuntu2.debian.tar.xz' python-cryptography_46.0.5-1ubuntu2.debian.tar.xz 16044 SHA512:3c1124116966f324801ab1856d00e927fdea27d3a9f658ace750a4b0b1de2328a80956bd1535a04a15e3292995c3382b643a33827b8c7098ba768d7f90cae6ca
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5-1ubuntu2.dsc' python-cryptography_46.0.5-1ubuntu2.dsc 3927 SHA512:80b2095b38a71b4a4737f658d9f7007b89c79ff16f80572289df8db1b3b5b1877f703b757e3c44c88e9095bf939061f91816ad1024a56deefa8c9518504d7040
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5-1ubuntu2.2.debian.tar.xz' python-cryptography_46.0.5-1ubuntu2.2.debian.tar.xz 26324 SHA512:f771b6e141f2c7ddca5dcb0867979b22754ffca2b0655326317deda797a46994f410f9354a8598ae8207775b64d81df4e87cd12f752ee17bad57e6f0823e9212
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_46.0.5-1ubuntu2.2.dsc' python-cryptography_46.0.5-1ubuntu2.2.dsc 3976 SHA512:576c3f4d68a24341374d8feae459e824b639edf78c7737fe38e866d7464cf12253eb85b646b1258774a270268d883e5bc3a92ed98d75a6dde5c1c41717f2a709
 ```
 
 ### `dpkg` source package: `python-dateutil=2.9.0-4build1`
@@ -4569,11 +4602,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-core=0.21.2+upstream-1`
+### `dpkg` source package: `python3-colcon-core=0.21.3+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-core=0.21.2+upstream-1`
+- `python3-colcon-core=0.21.3+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4639,11 +4672,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-colcon-notification=0.3.2+upstream-1`
+### `dpkg` source package: `python3-colcon-notification=0.3.3+upstream-1`
 
 Binary Packages:
 
-- `python3-colcon-notification=0.3.2+upstream-1`
+- `python3-colcon-notification=0.3.3+upstream-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5011,11 +5044,11 @@ Licenses: (parsed from: `/usr/share/doc/ros2-apt-source/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-action-msgs=2.4.5-1resolute.20260811.210253`
+### `dpkg` source package: `ros-lyrical-action-msgs=2.4.5-1resolute.20260915.041037`
 
 Binary Packages:
 
-- `ros-lyrical-action-msgs=2.4.5-1resolute.20260811.210253`
+- `ros-lyrical-action-msgs=2.4.5-1resolute.20260915.041037`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-action-msgs/copyright`)
 
@@ -5347,11 +5380,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ament-cmake-ros-core/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ament-cmake-ros=0.15.8-1resolute.20260812.003148`
+### `dpkg` source package: `ros-lyrical-ament-cmake-ros=0.15.8-1resolute.20260915.054806`
 
 Binary Packages:
 
-- `ros-lyrical-ament-cmake-ros=0.15.8-1resolute.20260812.003148`
+- `ros-lyrical-ament-cmake-ros=0.15.8-1resolute.20260915.054806`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ament-cmake-ros/copyright`)
 
@@ -5657,11 +5690,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ament-xmllint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-builtin-interfaces=2.4.5-1resolute.20260811.194455`
+### `dpkg` source package: `ros-lyrical-builtin-interfaces=2.4.5-1resolute.20260915.031157`
 
 Binary Packages:
 
-- `ros-lyrical-builtin-interfaces=2.4.5-1resolute.20260811.194455`
+- `ros-lyrical-builtin-interfaces=2.4.5-1resolute.20260915.031157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-builtin-interfaces/copyright`)
 
@@ -5671,11 +5704,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-builtin-interfaces/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-class-loader=2.9.4-3resolute.20260728.211940`
+### `dpkg` source package: `ros-lyrical-class-loader=2.9.4-3resolute.20260831.171005`
 
 Binary Packages:
 
-- `ros-lyrical-class-loader=2.9.4-3resolute.20260728.211940`
+- `ros-lyrical-class-loader=2.9.4-3resolute.20260831.171005`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-class-loader/copyright`)
 
@@ -5685,11 +5718,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-class-loader/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-common-interfaces=5.9.3-1resolute.20260811.235041`
+### `dpkg` source package: `ros-lyrical-common-interfaces=5.9.3-1resolute.20260915.053335`
 
 Binary Packages:
 
-- `ros-lyrical-common-interfaces=5.9.3-1resolute.20260811.235041`
+- `ros-lyrical-common-interfaces=5.9.3-1resolute.20260915.053335`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-common-interfaces/copyright`)
 
@@ -5699,11 +5732,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-common-interfaces/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-composition-interfaces=2.4.5-1resolute.20260811.235637`
+### `dpkg` source package: `ros-lyrical-composition-interfaces=2.4.5-1resolute.20260915.050451`
 
 Binary Packages:
 
-- `ros-lyrical-composition-interfaces=2.4.5-1resolute.20260811.235637`
+- `ros-lyrical-composition-interfaces=2.4.5-1resolute.20260915.050451`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-composition-interfaces/copyright`)
 
@@ -5728,11 +5761,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-console-bridge-vendor/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-diagnostic-msgs=5.9.3-1resolute.20260811.231430`
+### `dpkg` source package: `ros-lyrical-diagnostic-msgs=5.9.3-1resolute.20260915.051854`
 
 Binary Packages:
 
-- `ros-lyrical-diagnostic-msgs=5.9.3-1resolute.20260811.231430`
+- `ros-lyrical-diagnostic-msgs=5.9.3-1resolute.20260915.051854`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-diagnostic-msgs/copyright`)
 
@@ -5799,11 +5832,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-foonathan-memory-vendor/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-geometry-msgs=5.9.3-1resolute.20260811.214840`
+### `dpkg` source package: `ros-lyrical-geometry-msgs=5.9.3-1resolute.20260915.045122`
 
 Binary Packages:
 
-- `ros-lyrical-geometry-msgs=5.9.3-1resolute.20260811.214840`
+- `ros-lyrical-geometry-msgs=5.9.3-1resolute.20260915.045122`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-geometry-msgs/copyright`)
 
@@ -5813,11 +5846,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-geometry2=0.45.9-1resolute.20260812.065932`
+### `dpkg` source package: `ros-lyrical-geometry2=0.45.10-1resolute.20260915.143444`
 
 Binary Packages:
 
-- `ros-lyrical-geometry2=0.45.9-1resolute.20260812.065932`
+- `ros-lyrical-geometry2=0.45.10-1resolute.20260915.143444`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-geometry2/copyright`)
 
@@ -5827,11 +5860,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-geometry2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-kdl-parser=3.0.1-3resolute.20260812.012108`
+### `dpkg` source package: `ros-lyrical-kdl-parser=3.0.1-3resolute.20260915.060157`
 
 Binary Packages:
 
-- `ros-lyrical-kdl-parser=3.0.1-3resolute.20260812.012108`
+- `ros-lyrical-kdl-parser=3.0.1-3resolute.20260915.060157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-kdl-parser/copyright`)
 
@@ -5855,11 +5888,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-keyboard-handler/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-launch-ros=0.29.9-1resolute.20260812.024129`
+### `dpkg` source package: `ros-lyrical-launch-ros=0.29.9-1resolute.20260915.064616`
 
 Binary Packages:
 
-- `ros-lyrical-launch-ros=0.29.9-1resolute.20260812.024129`
+- `ros-lyrical-launch-ros=0.29.9-1resolute.20260915.064616`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-launch-ros/copyright`)
 
@@ -5884,11 +5917,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-launch-testing-ament-cmake/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-launch-testing-ros=0.29.9-1resolute.20260812.024517`
+### `dpkg` source package: `ros-lyrical-launch-testing-ros=0.29.9-1resolute.20260915.073741`
 
 Binary Packages:
 
-- `ros-lyrical-launch-testing-ros=0.29.9-1resolute.20260812.024517`
+- `ros-lyrical-launch-testing-ros=0.29.9-1resolute.20260915.073741`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-launch-testing-ros/copyright`)
 
@@ -5954,11 +5987,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-libstatistics-collector=2.1.2-1resolute.20260812.012738`
+### `dpkg` source package: `ros-lyrical-libstatistics-collector=2.1.2-1resolute.20260915.061028`
 
 Binary Packages:
 
-- `ros-lyrical-libstatistics-collector=2.1.2-1resolute.20260812.012738`
+- `ros-lyrical-libstatistics-collector=2.1.2-1resolute.20260915.061028`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-libstatistics-collector/copyright`)
 
@@ -5983,11 +6016,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-libyaml-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-lifecycle-msgs=2.4.5-1resolute.20260811.234650`
+### `dpkg` source package: `ros-lyrical-lifecycle-msgs=2.4.5-1resolute.20260915.045218`
 
 Binary Packages:
 
-- `ros-lyrical-lifecycle-msgs=2.4.5-1resolute.20260811.234650`
+- `ros-lyrical-lifecycle-msgs=2.4.5-1resolute.20260915.045218`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-lifecycle-msgs/copyright`)
 
@@ -6025,11 +6058,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-mcap-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-message-filters=7.4.2-1resolute.20260812.014855`
+### `dpkg` source package: `ros-lyrical-message-filters=7.4.2-1resolute.20260915.064044`
 
 Binary Packages:
 
-- `ros-lyrical-message-filters=7.4.2-1resolute.20260812.014855`
+- `ros-lyrical-message-filters=7.4.2-1resolute.20260915.064044`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-message-filters/copyright`)
 
@@ -6039,11 +6072,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-message-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-nav-msgs=5.9.3-1resolute.20260811.232935`
+### `dpkg` source package: `ros-lyrical-nav-msgs=5.9.3-1resolute.20260915.051911`
 
 Binary Packages:
 
-- `ros-lyrical-nav-msgs=5.9.3-1resolute.20260811.232935`
+- `ros-lyrical-nav-msgs=5.9.3-1resolute.20260915.051911`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-nav-msgs/copyright`)
 
@@ -6053,11 +6086,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-nav-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-pluginlib=5.8.4-3resolute.20260728.212925`
+### `dpkg` source package: `ros-lyrical-pluginlib=5.8.5-1resolute.20260831.172534`
 
 Binary Packages:
 
-- `ros-lyrical-pluginlib=5.8.4-3resolute.20260728.212925`
+- `ros-lyrical-pluginlib=5.8.5-1resolute.20260831.172534`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-pluginlib/copyright`)
 
@@ -6067,11 +6100,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-pluginlib/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-action=10.4.4-1resolute.20260812.012801`
+### `dpkg` source package: `ros-lyrical-rcl-action=10.4.5-1resolute.20260915.061100`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-action=10.4.4-1resolute.20260812.012801`
+- `ros-lyrical-rcl-action=10.4.5-1resolute.20260915.061100`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-action/copyright`)
 
@@ -6081,11 +6114,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-interfaces=2.4.5-1resolute.20260811.234851`
+### `dpkg` source package: `ros-lyrical-rcl-interfaces=2.4.5-1resolute.20260915.045418`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-interfaces=2.4.5-1resolute.20260811.234851`
+- `ros-lyrical-rcl-interfaces=2.4.5-1resolute.20260915.045418`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-interfaces/copyright`)
 
@@ -6095,11 +6128,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-interfaces/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-lifecycle=10.4.4-1resolute.20260812.012718`
+### `dpkg` source package: `ros-lyrical-rcl-lifecycle=10.4.5-1resolute.20260915.061109`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-lifecycle=10.4.4-1resolute.20260812.012718`
+- `ros-lyrical-rcl-lifecycle=10.4.5-1resolute.20260915.061109`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-lifecycle/copyright`)
 
@@ -6109,11 +6142,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-logging-implementation=3.4.1-3resolute.20260812.011632`
+### `dpkg` source package: `ros-lyrical-rcl-logging-implementation=3.4.1-3resolute.20260915.055807`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-logging-implementation=3.4.1-3resolute.20260812.011632`
+- `ros-lyrical-rcl-logging-implementation=3.4.1-3resolute.20260915.055807`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-implementation/copyright`)
 
@@ -6123,11 +6156,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-implementation/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-logging-interface=3.4.1-3resolute.20260812.010932`
+### `dpkg` source package: `ros-lyrical-rcl-logging-interface=3.4.1-3resolute.20260915.055121`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-logging-interface=3.4.1-3resolute.20260812.010932`
+- `ros-lyrical-rcl-logging-interface=3.4.1-3resolute.20260915.055121`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-interface/copyright`)
 
@@ -6137,11 +6170,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-interface/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-logging-spdlog=3.4.1-3resolute.20260812.011255`
+### `dpkg` source package: `ros-lyrical-rcl-logging-spdlog=3.4.1-3resolute.20260915.055418`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-logging-spdlog=3.4.1-3resolute.20260812.011255`
+- `ros-lyrical-rcl-logging-spdlog=3.4.1-3resolute.20260915.055418`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-spdlog/copyright`)
 
@@ -6151,11 +6184,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-logging-spdlog/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl-yaml-param-parser=10.4.4-1resolute.20260812.010939`
+### `dpkg` source package: `ros-lyrical-rcl-yaml-param-parser=10.4.5-1resolute.20260915.055121`
 
 Binary Packages:
 
-- `ros-lyrical-rcl-yaml-param-parser=10.4.4-1resolute.20260812.010939`
+- `ros-lyrical-rcl-yaml-param-parser=10.4.5-1resolute.20260915.055121`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-yaml-param-parser/copyright`)
 
@@ -6165,11 +6198,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl-yaml-param-parser/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcl=10.4.4-1resolute.20260812.012321`
+### `dpkg` source package: `ros-lyrical-rcl=10.4.5-1resolute.20260915.060844`
 
 Binary Packages:
 
-- `ros-lyrical-rcl=10.4.4-1resolute.20260812.012321`
+- `ros-lyrical-rcl=10.4.5-1resolute.20260915.060844`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl/copyright`)
 
@@ -6179,11 +6212,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rclcpp-action=32.0.2-1resolute.20260812.014919`
+### `dpkg` source package: `ros-lyrical-rclcpp-action=32.0.3-1resolute.20260915.064317`
 
 Binary Packages:
 
-- `ros-lyrical-rclcpp-action=32.0.2-1resolute.20260812.014919`
+- `ros-lyrical-rclcpp-action=32.0.3-1resolute.20260915.064317`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-action/copyright`)
 
@@ -6193,11 +6226,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rclcpp-components=32.0.2-1resolute.20260812.015019`
+### `dpkg` source package: `ros-lyrical-rclcpp-components=32.0.3-1resolute.20260915.065011`
 
 Binary Packages:
 
-- `ros-lyrical-rclcpp-components=32.0.2-1resolute.20260812.015019`
+- `ros-lyrical-rclcpp-components=32.0.3-1resolute.20260915.065011`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-components/copyright`)
 
@@ -6207,11 +6240,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-components/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rclcpp-lifecycle=32.0.2-1resolute.20260812.014952`
+### `dpkg` source package: `ros-lyrical-rclcpp-lifecycle=32.0.3-1resolute.20260915.064713`
 
 Binary Packages:
 
-- `ros-lyrical-rclcpp-lifecycle=32.0.2-1resolute.20260812.014952`
+- `ros-lyrical-rclcpp-lifecycle=32.0.3-1resolute.20260915.064713`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-lifecycle/copyright`)
 
@@ -6221,11 +6254,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rclcpp=32.0.2-1resolute.20260812.014037`
+### `dpkg` source package: `ros-lyrical-rclcpp=32.0.3-1resolute.20260915.061505`
 
 Binary Packages:
 
-- `ros-lyrical-rclcpp=32.0.2-1resolute.20260812.014037`
+- `ros-lyrical-rclcpp=32.0.3-1resolute.20260915.061505`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp/copyright`)
 
@@ -6235,11 +6268,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclcpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rclpy=10.0.10-1resolute.20260812.014024`
+### `dpkg` source package: `ros-lyrical-rclpy=10.0.11-1resolute.20260915.061807`
 
 Binary Packages:
 
-- `ros-lyrical-rclpy=10.0.10-1resolute.20260812.014024`
+- `ros-lyrical-rclpy=10.0.11-1resolute.20260915.061807`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclpy/copyright`)
 
@@ -6249,11 +6282,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rclpy/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcpputils=2.14.5-1resolute.20260728.210316`
+### `dpkg` source package: `ros-lyrical-rcpputils=2.14.5-1resolute.20260831.170316`
 
 Binary Packages:
 
-- `ros-lyrical-rcpputils=2.14.5-1resolute.20260728.210316`
+- `ros-lyrical-rcpputils=2.14.5-1resolute.20260831.170316`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcpputils/copyright`)
 
@@ -6264,11 +6297,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcpputils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rcutils=7.1.2-1resolute.20260728.210016`
+### `dpkg` source package: `ros-lyrical-rcutils=7.1.3-1resolute.20260831.165446`
 
 Binary Packages:
 
-- `ros-lyrical-rcutils=7.1.2-1resolute.20260728.210016`
+- `ros-lyrical-rcutils=7.1.3-1resolute.20260831.165446`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcutils/copyright`)
 
@@ -6278,11 +6311,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rcutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-dds-common=6.0.0-3resolute.20260811.214453`
+### `dpkg` source package: `ros-lyrical-rmw-dds-common=6.0.0-3resolute.20260915.045630`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-dds-common=6.0.0-3resolute.20260811.214453`
+- `ros-lyrical-rmw-dds-common=6.0.0-3resolute.20260915.045630`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-dds-common/copyright`)
 
@@ -6292,11 +6325,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-dds-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-fastrtps-cpp=9.4.9-1resolute.20260812.000633`
+### `dpkg` source package: `ros-lyrical-rmw-fastrtps-cpp=9.4.10-1resolute.20260915.053043`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-fastrtps-cpp=9.4.9-1resolute.20260812.000633`
+- `ros-lyrical-rmw-fastrtps-cpp=9.4.10-1resolute.20260915.053043`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-fastrtps-cpp/copyright`)
 
@@ -6306,11 +6339,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-fastrtps-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-fastrtps-shared-cpp=9.4.9-1resolute.20260811.235827`
+### `dpkg` source package: `ros-lyrical-rmw-fastrtps-shared-cpp=9.4.10-1resolute.20260915.051845`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-fastrtps-shared-cpp=9.4.9-1resolute.20260811.235827`
+- `ros-lyrical-rmw-fastrtps-shared-cpp=9.4.10-1resolute.20260915.051845`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-fastrtps-shared-cpp/copyright`)
 
@@ -6320,11 +6353,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-fastrtps-shared-cpp/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-implementation-cmake=7.10.1-5resolute.20260728.210014`
+### `dpkg` source package: `ros-lyrical-rmw-implementation-cmake=7.10.2-3resolute.20260901.091219`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-implementation-cmake=7.10.1-5resolute.20260728.210014`
+- `ros-lyrical-rmw-implementation-cmake=7.10.2-3resolute.20260901.091219`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-implementation-cmake/copyright`)
 
@@ -6334,11 +6367,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-implementation-cmake/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-implementation=3.1.6-1resolute.20260812.001853`
+### `dpkg` source package: `ros-lyrical-rmw-implementation=3.1.6-1resolute.20260915.053750`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-implementation=3.1.6-1resolute.20260812.001853`
+- `ros-lyrical-rmw-implementation=3.1.6-1resolute.20260915.053750`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-implementation/copyright`)
 
@@ -6348,11 +6381,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-implementation/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-security-common=7.10.1-5resolute.20260728.211356`
+### `dpkg` source package: `ros-lyrical-rmw-security-common=7.10.2-3resolute.20260901.091646`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-security-common=7.10.1-5resolute.20260728.211356`
+- `ros-lyrical-rmw-security-common=7.10.2-3resolute.20260901.091646`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-security-common/copyright`)
 
@@ -6362,11 +6395,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-security-common/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-test-fixture-implementation=0.15.8-1resolute.20260812.002527`
+### `dpkg` source package: `ros-lyrical-rmw-test-fixture-implementation=0.15.8-1resolute.20260915.054330`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-test-fixture-implementation=0.15.8-1resolute.20260812.002527`
+- `ros-lyrical-rmw-test-fixture-implementation=0.15.8-1resolute.20260915.054330`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-test-fixture-implementation/copyright`)
 
@@ -6376,11 +6409,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-test-fixture-implementat
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw-test-fixture=0.15.8-1resolute.20260728.211417`
+### `dpkg` source package: `ros-lyrical-rmw-test-fixture=0.15.8-1resolute.20260901.092020`
 
 Binary Packages:
 
-- `ros-lyrical-rmw-test-fixture=0.15.8-1resolute.20260728.211417`
+- `ros-lyrical-rmw-test-fixture=0.15.8-1resolute.20260901.092020`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-test-fixture/copyright`)
 
@@ -6390,11 +6423,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw-test-fixture/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rmw=7.10.1-5resolute.20260728.210946`
+### `dpkg` source package: `ros-lyrical-rmw=7.10.2-3resolute.20260901.091148`
 
 Binary Packages:
 
-- `ros-lyrical-rmw=7.10.1-5resolute.20260728.210946`
+- `ros-lyrical-rmw=7.10.2-3resolute.20260901.091148`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw/copyright`)
 
@@ -6404,11 +6437,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rmw/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-robot-state-publisher=3.5.5-3resolute.20260812.020221`
+### `dpkg` source package: `ros-lyrical-robot-state-publisher=3.5.6-1resolute.20260915.141620`
 
 Binary Packages:
 
-- `ros-lyrical-robot-state-publisher=3.5.5-3resolute.20260812.020221`
+- `ros-lyrical-robot-state-publisher=3.5.6-1resolute.20260915.141620`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-robot-state-publisher/copyright`)
 
@@ -6418,11 +6451,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-robot-state-publisher/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros-base=0.13.0-3resolute.20260812.070046`
+### `dpkg` source package: `ros-lyrical-ros-base=0.13.0-3resolute.20260915.154859`
 
 Binary Packages:
 
-- `ros-lyrical-ros-base=0.13.0-3resolute.20260812.070046`
+- `ros-lyrical-ros-base=0.13.0-3resolute.20260915.154859`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros-base/copyright`)
 
@@ -6432,11 +6465,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros-base/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros-core=0.13.0-3resolute.20260812.025814`
+### `dpkg` source package: `ros-lyrical-ros-core=0.13.0-3resolute.20260915.090714`
 
 Binary Packages:
 
-- `ros-lyrical-ros-core=0.13.0-3resolute.20260812.025814`
+- `ros-lyrical-ros-core=0.13.0-3resolute.20260915.090714`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros-core/copyright`)
 
@@ -6474,11 +6507,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros-workspace/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2action=0.40.8-1resolute.20260812.022257`
+### `dpkg` source package: `ros-lyrical-ros2action=0.40.9-1resolute.20260915.075756`
 
 Binary Packages:
 
-- `ros-lyrical-ros2action=0.40.8-1resolute.20260812.022257`
+- `ros-lyrical-ros2action=0.40.9-1resolute.20260915.075756`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2action/copyright`)
 
@@ -6488,11 +6521,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2bag=0.33.3-1resolute.20260812.034142`
+### `dpkg` source package: `ros-lyrical-ros2bag=0.33.3-1resolute.20260915.110720`
 
 Binary Packages:
 
-- `ros-lyrical-ros2bag=0.33.3-1resolute.20260812.034142`
+- `ros-lyrical-ros2bag=0.33.3-1resolute.20260915.110720`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2bag/copyright`)
 
@@ -6502,11 +6535,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2bag/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2cli-common-extensions=0.5.2-3resolute.20260812.025525`
+### `dpkg` source package: `ros-lyrical-ros2cli-common-extensions=0.5.2-3resolute.20260915.090532`
 
 Binary Packages:
 
-- `ros-lyrical-ros2cli-common-extensions=0.5.2-3resolute.20260812.025525`
+- `ros-lyrical-ros2cli-common-extensions=0.5.2-3resolute.20260915.090532`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2cli-common-extensions/copyright`)
 
@@ -6516,11 +6549,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2cli-common-extensions/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2cli=0.40.8-1resolute.20260812.022130`
+### `dpkg` source package: `ros-lyrical-ros2cli=0.40.9-1resolute.20260915.075638`
 
 Binary Packages:
 
-- `ros-lyrical-ros2cli=0.40.8-1resolute.20260812.022130`
+- `ros-lyrical-ros2cli=0.40.9-1resolute.20260915.075638`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2cli/copyright`)
 
@@ -6530,11 +6563,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2component=0.40.8-1resolute.20260812.025106`
+### `dpkg` source package: `ros-lyrical-ros2component=0.40.9-1resolute.20260915.082453`
 
 Binary Packages:
 
-- `ros-lyrical-ros2component=0.40.8-1resolute.20260812.025106`
+- `ros-lyrical-ros2component=0.40.9-1resolute.20260915.082453`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2component/copyright`)
 
@@ -6544,11 +6577,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2component/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2doctor=0.40.8-1resolute.20260812.022413`
+### `dpkg` source package: `ros-lyrical-ros2doctor=0.40.9-1resolute.20260915.075912`
 
 Binary Packages:
 
-- `ros-lyrical-ros2doctor=0.40.8-1resolute.20260812.022413`
+- `ros-lyrical-ros2doctor=0.40.9-1resolute.20260915.075912`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2doctor/copyright`)
 
@@ -6558,11 +6591,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2doctor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2interface=0.40.8-1resolute.20260812.024852`
+### `dpkg` source package: `ros-lyrical-ros2interface=0.40.9-1resolute.20260915.082233`
 
 Binary Packages:
 
-- `ros-lyrical-ros2interface=0.40.8-1resolute.20260812.024852`
+- `ros-lyrical-ros2interface=0.40.9-1resolute.20260915.082233`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2interface/copyright`)
 
@@ -6572,11 +6605,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2interface/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2launch=0.29.9-1resolute.20260812.025115`
+### `dpkg` source package: `ros-lyrical-ros2launch=0.29.9-1resolute.20260915.085616`
 
 Binary Packages:
 
-- `ros-lyrical-ros2launch=0.29.9-1resolute.20260812.025115`
+- `ros-lyrical-ros2launch=0.29.9-1resolute.20260915.085616`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2launch/copyright`)
 
@@ -6586,11 +6619,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2lifecycle=0.40.8-1resolute.20260812.023056`
+### `dpkg` source package: `ros-lyrical-ros2lifecycle=0.40.9-1resolute.20260915.080451`
 
 Binary Packages:
 
-- `ros-lyrical-ros2lifecycle=0.40.8-1resolute.20260812.023056`
+- `ros-lyrical-ros2lifecycle=0.40.9-1resolute.20260915.080451`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2lifecycle/copyright`)
 
@@ -6600,11 +6633,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2multicast=0.40.8-1resolute.20260812.024851`
+### `dpkg` source package: `ros-lyrical-ros2multicast=0.40.9-1resolute.20260915.082157`
 
 Binary Packages:
 
-- `ros-lyrical-ros2multicast=0.40.8-1resolute.20260812.024851`
+- `ros-lyrical-ros2multicast=0.40.9-1resolute.20260915.082157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2multicast/copyright`)
 
@@ -6614,11 +6647,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2multicast/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2node=0.40.8-1resolute.20260812.022937`
+### `dpkg` source package: `ros-lyrical-ros2node=0.40.9-1resolute.20260915.080017`
 
 Binary Packages:
 
-- `ros-lyrical-ros2node=0.40.8-1resolute.20260812.022937`
+- `ros-lyrical-ros2node=0.40.9-1resolute.20260915.080017`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2node/copyright`)
 
@@ -6628,11 +6661,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2node/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2param=0.40.8-1resolute.20260812.023104`
+### `dpkg` source package: `ros-lyrical-ros2param=0.40.9-1resolute.20260915.080636`
 
 Binary Packages:
 
-- `ros-lyrical-ros2param=0.40.8-1resolute.20260812.023104`
+- `ros-lyrical-ros2param=0.40.9-1resolute.20260915.080636`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2param/copyright`)
 
@@ -6642,11 +6675,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2param/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2pkg=0.40.8-1resolute.20260812.024906`
+### `dpkg` source package: `ros-lyrical-ros2pkg=0.40.9-1resolute.20260915.082312`
 
 Binary Packages:
 
-- `ros-lyrical-ros2pkg=0.40.8-1resolute.20260812.024906`
+- `ros-lyrical-ros2pkg=0.40.9-1resolute.20260915.082312`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2pkg/copyright`)
 
@@ -6656,11 +6689,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2pkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2plugin=5.8.4-3resolute.20260812.025108`
+### `dpkg` source package: `ros-lyrical-ros2plugin=5.8.5-1resolute.20260915.085453`
 
 Binary Packages:
 
-- `ros-lyrical-ros2plugin=5.8.4-3resolute.20260812.025108`
+- `ros-lyrical-ros2plugin=5.8.5-1resolute.20260915.085453`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2plugin/copyright`)
 
@@ -6670,11 +6703,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2plugin/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2run=0.40.8-1resolute.20260812.025152`
+### `dpkg` source package: `ros-lyrical-ros2run=0.40.9-1resolute.20260915.090402`
 
 Binary Packages:
 
-- `ros-lyrical-ros2run=0.40.8-1resolute.20260812.025152`
+- `ros-lyrical-ros2run=0.40.9-1resolute.20260915.090402`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2run/copyright`)
 
@@ -6684,11 +6717,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2run/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2service=0.40.8-1resolute.20260812.022915`
+### `dpkg` source package: `ros-lyrical-ros2service=0.40.9-1resolute.20260915.080006`
 
 Binary Packages:
 
-- `ros-lyrical-ros2service=0.40.8-1resolute.20260812.022915`
+- `ros-lyrical-ros2service=0.40.9-1resolute.20260915.080006`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2service/copyright`)
 
@@ -6698,11 +6731,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2service/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2topic=0.40.8-1resolute.20260812.022955`
+### `dpkg` source package: `ros-lyrical-ros2topic=0.40.9-1resolute.20260915.080326`
 
 Binary Packages:
 
-- `ros-lyrical-ros2topic=0.40.8-1resolute.20260812.022955`
+- `ros-lyrical-ros2topic=0.40.9-1resolute.20260915.080326`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2topic/copyright`)
 
@@ -6713,11 +6746,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260812.033924`
+### `dpkg` source package: `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260915.110400`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260812.033924`
+- `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260915.110400`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression-zstd/copyright`)
 
@@ -6727,11 +6760,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression-zstd/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260812.031247`
+### `dpkg` source package: `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260915.090557`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260812.031247`
+- `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260915.090557`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression/copyright`)
 
@@ -6741,11 +6774,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260812.024604`
+### `dpkg` source package: `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260915.080852`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260812.024604`
+- `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260915.080852`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-cpp/copyright`)
 
@@ -6755,11 +6788,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260811.213023`
+### `dpkg` source package: `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260915.050641`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260811.213023`
+- `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260915.050641`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-interfaces/copyright`)
 
@@ -6769,11 +6802,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-interfaces/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260812.033351`
+### `dpkg` source package: `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260915.092025`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260812.033351`
+- `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260915.092025`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-py/copyright`)
 
@@ -6783,11 +6816,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260812.033812`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260915.110336`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260812.033812`
+- `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260915.110336`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-default-plugins/copyright`)
 
@@ -6797,11 +6830,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-default-plug
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260812.031353`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260915.090607`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260812.031353`
+- `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260915.090607`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-mcap/copyright`)
 
@@ -6811,11 +6844,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-mcap/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260812.031643`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260915.090614`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260812.031643`
+- `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260915.090614`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-sqlite3/copyright`)
 
@@ -6825,11 +6858,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-sqlite3/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260812.023725`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260915.080404`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260812.023725`
+- `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260915.080404`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage/copyright`)
 
@@ -6839,11 +6872,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260812.031909`
+### `dpkg` source package: `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260915.091021`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260812.031909`
+- `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260915.091021`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-transport/copyright`)
 
@@ -6853,11 +6886,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-transport/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2=0.33.3-1resolute.20260812.034437`
+### `dpkg` source package: `ros-lyrical-rosbag2=0.33.3-1resolute.20260915.111344`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2=0.33.3-1resolute.20260812.034437`
+- `ros-lyrical-rosbag2=0.33.3-1resolute.20260915.111344`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2/copyright`)
 
@@ -6867,11 +6900,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosgraph-msgs=2.4.5-1resolute.20260811.235432`
+### `dpkg` source package: `ros-lyrical-rosgraph-msgs=2.4.5-1resolute.20260915.050401`
 
 Binary Packages:
 
-- `ros-lyrical-rosgraph-msgs=2.4.5-1resolute.20260811.235432`
+- `ros-lyrical-rosgraph-msgs=2.4.5-1resolute.20260915.050401`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosgraph-msgs/copyright`)
 
@@ -6895,11 +6928,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-adapter/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-buffer-backend-registry=5.2.1-1resolute.20260728.213234`
+### `dpkg` source package: `ros-lyrical-rosidl-buffer-backend-registry=5.2.1-1resolute.20260901.091931`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-buffer-backend-registry=5.2.1-1resolute.20260728.213234`
+- `ros-lyrical-rosidl-buffer-backend-registry=5.2.1-1resolute.20260901.091931`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-buffer-backend-registry/copyright`)
 
@@ -6909,11 +6942,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-buffer-backend-regist
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-buffer-backend=5.2.1-1resolute.20260728.211422`
+### `dpkg` source package: `ros-lyrical-rosidl-buffer-backend=5.2.1-1resolute.20260901.091711`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-buffer-backend=5.2.1-1resolute.20260728.211422`
+- `ros-lyrical-rosidl-buffer-backend=5.2.1-1resolute.20260901.091711`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-buffer-backend/copyright`)
 
@@ -6979,11 +7012,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-core-generators=0.4.3-3resolute.20260811.194301`
+### `dpkg` source package: `ros-lyrical-rosidl-core-generators=0.4.3-3resolute.20260915.030113`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-core-generators=0.4.3-3resolute.20260811.194301`
+- `ros-lyrical-rosidl-core-generators=0.4.3-3resolute.20260915.030113`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-core-generators/copyright`)
 
@@ -6993,11 +7026,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-core-generators/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-core-runtime=0.4.3-3resolute.20260728.212309`
+### `dpkg` source package: `ros-lyrical-rosidl-core-runtime=0.4.3-3resolute.20260915.030238`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-core-runtime=0.4.3-3resolute.20260728.212309`
+- `ros-lyrical-rosidl-core-runtime=0.4.3-3resolute.20260915.030238`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-core-runtime/copyright`)
 
@@ -7007,11 +7040,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-core-runtime/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-default-generators=1.8.1-3resolute.20260811.211639`
+### `dpkg` source package: `ros-lyrical-rosidl-default-generators=1.8.1-3resolute.20260915.042236`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-default-generators=1.8.1-3resolute.20260811.211639`
+- `ros-lyrical-rosidl-default-generators=1.8.1-3resolute.20260915.042236`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-default-generators/copyright`)
 
@@ -7021,11 +7054,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-default-generators/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-default-runtime=1.8.1-3resolute.20260811.210711`
+### `dpkg` source package: `ros-lyrical-rosidl-default-runtime=1.8.1-3resolute.20260915.042259`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-default-runtime=1.8.1-3resolute.20260811.210711`
+- `ros-lyrical-rosidl-default-runtime=1.8.1-3resolute.20260915.042259`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-default-runtime/copyright`)
 
@@ -7035,11 +7068,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-default-runtime/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-dynamic-typesupport-fastrtps=0.5.1-3resolute.20260728.210954`
+### `dpkg` source package: `ros-lyrical-rosidl-dynamic-typesupport-fastrtps=0.5.1-3resolute.20260831.171643`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-dynamic-typesupport-fastrtps=0.5.1-3resolute.20260728.210954`
+- `ros-lyrical-rosidl-dynamic-typesupport-fastrtps=0.5.1-3resolute.20260831.171643`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-dynamic-typesupport-fastrtps/copyright`)
 
@@ -7049,11 +7082,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-dynamic-typesupport-f
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-dynamic-typesupport=0.4.1-3resolute.20260728.210642`
+### `dpkg` source package: `ros-lyrical-rosidl-dynamic-typesupport=0.4.1-3resolute.20260831.170948`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-dynamic-typesupport=0.4.1-3resolute.20260728.210642`
+- `ros-lyrical-rosidl-dynamic-typesupport=0.4.1-3resolute.20260831.170948`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-dynamic-typesupport/copyright`)
 
@@ -7063,11 +7096,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-dynamic-typesupport/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-generator-c=5.2.1-1resolute.20260728.210700`
+### `dpkg` source package: `ros-lyrical-rosidl-generator-c=5.2.1-1resolute.20260831.170131`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-generator-c=5.2.1-1resolute.20260728.210700`
+- `ros-lyrical-rosidl-generator-c=5.2.1-1resolute.20260831.170131`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-c/copyright`)
 
@@ -7077,11 +7110,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-c/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-generator-cpp=5.2.1-1resolute.20260728.210943`
+### `dpkg` source package: `ros-lyrical-rosidl-generator-cpp=5.2.1-1resolute.20260831.171349`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-generator-cpp=5.2.1-1resolute.20260728.210943`
+- `ros-lyrical-rosidl-generator-cpp=5.2.1-1resolute.20260831.171349`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-cpp/copyright`)
 
@@ -7091,11 +7124,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-cpp/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-generator-py=0.27.2-3resolute.20260728.211553`
+### `dpkg` source package: `ros-lyrical-rosidl-generator-py=0.27.2-3resolute.20260901.091938`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-generator-py=0.27.2-3resolute.20260728.211553`
+- `ros-lyrical-rosidl-generator-py=0.27.2-3resolute.20260901.091938`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-py/copyright`)
 
@@ -7105,11 +7138,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-py/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-generator-rs=0.5.0-2resolute.20260811.194003`
+### `dpkg` source package: `ros-lyrical-rosidl-generator-rs=0.5.0-2resolute.20260831.171630`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-generator-rs=0.5.0-2resolute.20260811.194003`
+- `ros-lyrical-rosidl-generator-rs=0.5.0-2resolute.20260831.171630`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-generator-rs/copyright`)
 
@@ -7161,11 +7194,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-pycommon/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-runtime-c=5.2.1-1resolute.20260728.210328`
+### `dpkg` source package: `ros-lyrical-rosidl-runtime-c=5.2.1-1resolute.20260831.170154`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-runtime-c=5.2.1-1resolute.20260728.210328`
+- `ros-lyrical-rosidl-runtime-c=5.2.1-1resolute.20260831.170154`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-runtime-c/copyright`)
 
@@ -7175,11 +7208,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-runtime-c/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-runtime-cpp=5.2.1-1resolute.20260728.210648`
+### `dpkg` source package: `ros-lyrical-rosidl-runtime-cpp=5.2.1-1resolute.20260831.170544`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-runtime-cpp=5.2.1-1resolute.20260728.210648`
+- `ros-lyrical-rosidl-runtime-cpp=5.2.1-1resolute.20260831.170544`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-runtime-cpp/copyright`)
 
@@ -7203,11 +7236,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-runtime-py/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-c=3.4.2-3resolute.20260728.211303`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-c=3.4.2-3resolute.20260831.171238`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-c=3.4.2-3resolute.20260728.211303`
+- `ros-lyrical-rosidl-typesupport-c=3.4.2-3resolute.20260831.171238`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-c/copyright`)
 
@@ -7217,11 +7250,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-c/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-cpp=3.4.2-3resolute.20260728.211628`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-cpp=3.4.2-3resolute.20260831.173017`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-cpp=3.4.2-3resolute.20260728.211628`
+- `ros-lyrical-rosidl-typesupport-cpp=3.4.2-3resolute.20260831.173017`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-cpp/copyright`)
 
@@ -7231,11 +7264,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-cpp/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-fastrtps-c=3.9.5-3resolute.20260728.211956`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-fastrtps-c=3.9.7-1resolute.20260915.025611`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-fastrtps-c=3.9.5-3resolute.20260728.211956`
+- `ros-lyrical-rosidl-typesupport-fastrtps-c=3.9.7-1resolute.20260915.025611`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-fastrtps-c/copyright`)
 
@@ -7245,11 +7278,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-fastrtps-
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-fastrtps-cpp=3.9.5-3resolute.20260728.211709`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-fastrtps-cpp=3.9.7-1resolute.20260915.025317`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-fastrtps-cpp=3.9.5-3resolute.20260728.211709`
+- `ros-lyrical-rosidl-typesupport-fastrtps-cpp=3.9.7-1resolute.20260915.025317`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-fastrtps-cpp/copyright`)
 
@@ -7273,11 +7306,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-interface
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-introspection-c=5.2.1-1resolute.20260728.210952`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-introspection-c=5.2.1-1resolute.20260831.170823`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-introspection-c=5.2.1-1resolute.20260728.210952`
+- `ros-lyrical-rosidl-typesupport-introspection-c=5.2.1-1resolute.20260831.170823`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-introspection-c/copyright`)
 
@@ -7287,11 +7320,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-introspec
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosidl-typesupport-introspection-cpp=5.2.1-1resolute.20260728.211325`
+### `dpkg` source package: `ros-lyrical-rosidl-typesupport-introspection-cpp=5.2.1-1resolute.20260831.172258`
 
 Binary Packages:
 
-- `ros-lyrical-rosidl-typesupport-introspection-cpp=5.2.1-1resolute.20260728.211325`
+- `ros-lyrical-rosidl-typesupport-introspection-cpp=5.2.1-1resolute.20260831.172258`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosidl-typesupport-introspection-cpp/copyright`)
 
@@ -7315,11 +7348,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rpyutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-sensor-msgs-py=5.9.3-1resolute.20260812.064948`
+### `dpkg` source package: `ros-lyrical-sensor-msgs-py=5.9.3-1resolute.20260915.052909`
 
 Binary Packages:
 
-- `ros-lyrical-sensor-msgs-py=5.9.3-1resolute.20260812.064948`
+- `ros-lyrical-sensor-msgs-py=5.9.3-1resolute.20260915.052909`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sensor-msgs-py/copyright`)
 
@@ -7329,11 +7362,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sensor-msgs-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-sensor-msgs=5.9.3-1resolute.20260811.233053`
+### `dpkg` source package: `ros-lyrical-sensor-msgs=5.9.3-1resolute.20260915.051912`
 
 Binary Packages:
 
-- `ros-lyrical-sensor-msgs=5.9.3-1resolute.20260811.233053`
+- `ros-lyrical-sensor-msgs=5.9.3-1resolute.20260915.051912`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sensor-msgs/copyright`)
 
@@ -7343,11 +7376,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-service-msgs=2.4.5-1resolute.20260811.200407`
+### `dpkg` source package: `ros-lyrical-service-msgs=2.4.5-1resolute.20260915.032658`
 
 Binary Packages:
 
-- `ros-lyrical-service-msgs=2.4.5-1resolute.20260811.200407`
+- `ros-lyrical-service-msgs=2.4.5-1resolute.20260915.032658`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-service-msgs/copyright`)
 
@@ -7357,11 +7390,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-service-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-shape-msgs=5.9.3-1resolute.20260811.233816`
+### `dpkg` source package: `ros-lyrical-shape-msgs=5.9.3-1resolute.20260915.050607`
 
 Binary Packages:
 
-- `ros-lyrical-shape-msgs=5.9.3-1resolute.20260811.233816`
+- `ros-lyrical-shape-msgs=5.9.3-1resolute.20260915.050607`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-shape-msgs/copyright`)
 
@@ -7386,11 +7419,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-spdlog-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-sros2-cmake=0.16.6-1resolute.20260812.024945`
+### `dpkg` source package: `ros-lyrical-sros2-cmake=0.16.6-1resolute.20260915.082359`
 
 Binary Packages:
 
-- `ros-lyrical-sros2-cmake=0.16.6-1resolute.20260812.024945`
+- `ros-lyrical-sros2-cmake=0.16.6-1resolute.20260915.082359`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sros2-cmake/copyright`)
 
@@ -7400,11 +7433,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sros2-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-sros2=0.16.6-1resolute.20260812.023125`
+### `dpkg` source package: `ros-lyrical-sros2=0.16.6-1resolute.20260915.080327`
 
 Binary Packages:
 
-- `ros-lyrical-sros2=0.16.6-1resolute.20260812.023125`
+- `ros-lyrical-sros2=0.16.6-1resolute.20260915.080327`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sros2/copyright`)
 
@@ -7414,11 +7447,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-sros2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-statistics-msgs=2.4.5-1resolute.20260811.213037`
+### `dpkg` source package: `ros-lyrical-statistics-msgs=2.4.5-1resolute.20260915.043006`
 
 Binary Packages:
 
-- `ros-lyrical-statistics-msgs=2.4.5-1resolute.20260811.213037`
+- `ros-lyrical-statistics-msgs=2.4.5-1resolute.20260915.043006`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-statistics-msgs/copyright`)
 
@@ -7428,11 +7461,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-statistics-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-std-msgs=5.9.3-1resolute.20260811.213219`
+### `dpkg` source package: `ros-lyrical-std-msgs=5.9.3-1resolute.20260915.043001`
 
 Binary Packages:
 
-- `ros-lyrical-std-msgs=5.9.3-1resolute.20260811.213219`
+- `ros-lyrical-std-msgs=5.9.3-1resolute.20260915.043001`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-std-msgs/copyright`)
 
@@ -7442,11 +7475,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-std-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-std-srvs=5.9.3-1resolute.20260811.234022`
+### `dpkg` source package: `ros-lyrical-std-srvs=5.9.3-1resolute.20260915.045802`
 
 Binary Packages:
 
-- `ros-lyrical-std-srvs=5.9.3-1resolute.20260811.234022`
+- `ros-lyrical-std-srvs=5.9.3-1resolute.20260915.045802`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-std-srvs/copyright`)
 
@@ -7456,11 +7489,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-std-srvs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-stereo-msgs=5.9.3-1resolute.20260811.234335`
+### `dpkg` source package: `ros-lyrical-stereo-msgs=5.9.3-1resolute.20260915.052917`
 
 Binary Packages:
 
-- `ros-lyrical-stereo-msgs=5.9.3-1resolute.20260811.234335`
+- `ros-lyrical-stereo-msgs=5.9.3-1resolute.20260915.052917`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-stereo-msgs/copyright`)
 
@@ -7470,11 +7503,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-stereo-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-bullet=0.45.9-1resolute.20260812.020722`
+### `dpkg` source package: `ros-lyrical-tf2-bullet=0.45.10-1resolute.20260915.142835`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-bullet=0.45.9-1resolute.20260812.020722`
+- `ros-lyrical-tf2-bullet=0.45.10-1resolute.20260915.142835`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-bullet/copyright`)
 
@@ -7484,11 +7517,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-bullet/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-eigen-kdl=0.45.9-1resolute.20260812.011952`
+### `dpkg` source package: `ros-lyrical-tf2-eigen-kdl=0.45.10-1resolute.20260915.135157`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-eigen-kdl=0.45.9-1resolute.20260812.011952`
+- `ros-lyrical-tf2-eigen-kdl=0.45.10-1resolute.20260915.135157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-eigen-kdl/copyright`)
 
@@ -7498,11 +7531,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-eigen-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-eigen=0.45.9-1resolute.20260812.020513`
+### `dpkg` source package: `ros-lyrical-tf2-eigen=0.45.10-1resolute.20260915.143039`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-eigen=0.45.9-1resolute.20260812.020513`
+- `ros-lyrical-tf2-eigen=0.45.10-1resolute.20260915.143039`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-eigen/copyright`)
 
@@ -7512,11 +7545,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-eigen/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-geometry-msgs=0.45.9-1resolute.20260812.025229`
+### `dpkg` source package: `ros-lyrical-tf2-geometry-msgs=0.45.10-1resolute.20260915.143024`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-geometry-msgs=0.45.9-1resolute.20260812.025229`
+- `ros-lyrical-tf2-geometry-msgs=0.45.10-1resolute.20260915.143024`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-geometry-msgs/copyright`)
 
@@ -7526,11 +7559,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-geometry-msgs/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-kdl=0.45.9-1resolute.20260812.025208`
+### `dpkg` source package: `ros-lyrical-tf2-kdl=0.45.10-1resolute.20260915.143027`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-kdl=0.45.9-1resolute.20260812.025208`
+- `ros-lyrical-tf2-kdl=0.45.10-1resolute.20260915.143027`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-kdl/copyright`)
 
@@ -7540,11 +7573,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-msgs=0.45.9-1resolute.20260811.233056`
+### `dpkg` source package: `ros-lyrical-tf2-msgs=0.45.10-1resolute.20260915.134604`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-msgs=0.45.9-1resolute.20260811.233056`
+- `ros-lyrical-tf2-msgs=0.45.10-1resolute.20260915.134604`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-msgs/copyright`)
 
@@ -7554,11 +7587,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-py=0.45.9-1resolute.20260812.024611`
+### `dpkg` source package: `ros-lyrical-tf2-py=0.45.10-1resolute.20260915.135155`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-py=0.45.9-1resolute.20260812.024611`
+- `ros-lyrical-tf2-py=0.45.10-1resolute.20260915.135155`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-py/copyright`)
 
@@ -7568,11 +7601,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-ros-py=0.45.9-1resolute.20260812.025028`
+### `dpkg` source package: `ros-lyrical-tf2-ros-py=0.45.10-1resolute.20260915.135515`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-ros-py=0.45.9-1resolute.20260812.025028`
+- `ros-lyrical-tf2-ros-py=0.45.10-1resolute.20260915.135515`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-ros-py/copyright`)
 
@@ -7582,11 +7615,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-ros-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-ros=0.45.9-1resolute.20260812.015530`
+### `dpkg` source package: `ros-lyrical-tf2-ros=0.45.10-1resolute.20260915.140307`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-ros=0.45.9-1resolute.20260812.015530`
+- `ros-lyrical-tf2-ros=0.45.10-1resolute.20260915.140307`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-ros/copyright`)
 
@@ -7596,11 +7629,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-sensor-msgs=0.45.9-1resolute.20260812.065458`
+### `dpkg` source package: `ros-lyrical-tf2-sensor-msgs=0.45.10-1resolute.20260915.143046`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-sensor-msgs=0.45.9-1resolute.20260812.065458`
+- `ros-lyrical-tf2-sensor-msgs=0.45.10-1resolute.20260915.143046`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-sensor-msgs/copyright`)
 
@@ -7610,11 +7643,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2-tools=0.45.9-1resolute.20260812.025315`
+### `dpkg` source package: `ros-lyrical-tf2-tools=0.45.10-1resolute.20260915.135840`
 
 Binary Packages:
 
-- `ros-lyrical-tf2-tools=0.45.9-1resolute.20260812.025315`
+- `ros-lyrical-tf2-tools=0.45.10-1resolute.20260915.135840`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-tools/copyright`)
 
@@ -7624,11 +7657,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2-tools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-tf2=0.45.9-1resolute.20260812.011045`
+### `dpkg` source package: `ros-lyrical-tf2=0.45.10-1resolute.20260915.134323`
 
 Binary Packages:
 
-- `ros-lyrical-tf2=0.45.9-1resolute.20260812.011045`
+- `ros-lyrical-tf2=0.45.10-1resolute.20260915.134323`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tf2/copyright`)
 
@@ -7652,11 +7685,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-tracetools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-trajectory-msgs=5.9.3-1resolute.20260811.233349`
+### `dpkg` source package: `ros-lyrical-trajectory-msgs=5.9.3-1resolute.20260915.051919`
 
 Binary Packages:
 
-- `ros-lyrical-trajectory-msgs=5.9.3-1resolute.20260811.233349`
+- `ros-lyrical-trajectory-msgs=5.9.3-1resolute.20260915.051919`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-trajectory-msgs/copyright`)
 
@@ -7666,11 +7699,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-trajectory-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-type-description-interfaces=2.4.5-1resolute.20260811.210326`
+### `dpkg` source package: `ros-lyrical-type-description-interfaces=2.4.5-1resolute.20260915.033102`
 
 Binary Packages:
 
-- `ros-lyrical-type-description-interfaces=2.4.5-1resolute.20260811.210326`
+- `ros-lyrical-type-description-interfaces=2.4.5-1resolute.20260915.033102`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-type-description-interfaces/copyright`)
 
@@ -7695,11 +7728,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-uncrustify-vendor/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-unique-identifier-msgs=2.8.1-3resolute.20260811.194456`
+### `dpkg` source package: `ros-lyrical-unique-identifier-msgs=2.8.1-3resolute.20260915.030702`
 
 Binary Packages:
 
-- `ros-lyrical-unique-identifier-msgs=2.8.1-3resolute.20260811.194456`
+- `ros-lyrical-unique-identifier-msgs=2.8.1-3resolute.20260915.030702`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-unique-identifier-msgs/copyright`)
 
@@ -7709,11 +7742,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-unique-identifier-msgs/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-urdf-parser-plugin=2.13.2-3resolute.20260812.011111`
+### `dpkg` source package: `ros-lyrical-urdf-parser-plugin=2.13.2-3resolute.20260915.055127`
 
 Binary Packages:
 
-- `ros-lyrical-urdf-parser-plugin=2.13.2-3resolute.20260812.011111`
+- `ros-lyrical-urdf-parser-plugin=2.13.2-3resolute.20260915.055127`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-urdf-parser-plugin/copyright`)
 
@@ -7723,11 +7756,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-urdf-parser-plugin/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-urdf=2.13.2-3resolute.20260812.011426`
+### `dpkg` source package: `ros-lyrical-urdf=2.13.2-3resolute.20260915.055458`
 
 Binary Packages:
 
-- `ros-lyrical-urdf=2.13.2-3resolute.20260812.011426`
+- `ros-lyrical-urdf=2.13.2-3resolute.20260915.055458`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-urdf/copyright`)
 
@@ -7765,11 +7798,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-urdfdom/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-visualization-msgs=5.9.3-1resolute.20260811.234235`
+### `dpkg` source package: `ros-lyrical-visualization-msgs=5.9.3-1resolute.20260915.052651`
 
 Binary Packages:
 
-- `ros-lyrical-visualization-msgs=5.9.3-1resolute.20260811.234235`
+- `ros-lyrical-visualization-msgs=5.9.3-1resolute.20260915.052651`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-visualization-msgs/copyright`)
 
@@ -7955,27 +7988,27 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-3.debian.tar.xz 8180 SHA256:8b1d25a5942e762d792ea1beacb0fda0f9761331fd46ce3874fe24c2360485e2
 ```
 
-### `dpkg` source package: `rust-coreutils=0.8.0-0ubuntu3`
+### `dpkg` source package: `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Binary Packages:
 
-- `rust-coreutils=0.8.0-0ubuntu3`
+- `rust-coreutils=0.10.0-1ubuntu2~26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 
 - `Apache-2.0`
+- `CC-BY-4.0`
 - `MIT`
 - `permissive`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rust-coreutils=0.8.0-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-l10n.tar.gz' rust-coreutils_0.8.0.orig-l10n.tar.gz 740364 SHA512:f322d1b77ff6ef0945b08aa4237dd0b1db8da5c3e32de5e86bd22a60b5a56dd6f4828c90a4758c562ca560e6588b6e61af4507e0b6c6d8bde7d8e587010ca1e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig-rust-vendor.tar.xz' rust-coreutils_0.8.0.orig-rust-vendor.tar.xz 13213352 SHA512:a66ba2f98a544fea37ace0774244dda1a7b2477536df90301765819b9bb9f0f27831df2349b7fc1cbf712ba5b9bd8c7cc9a9e900714e51b6c226f0fc2d50b250
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0.orig.tar.gz' rust-coreutils_0.8.0.orig.tar.gz 3189640 SHA512:0c35cfb31d7810701cf5c639cbafb2be3870f4abd0f08fbade291d2534f576e067599e1b53ff228d9d2bd126210225d09bcd559761623f645883d4dd68e8f39b
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz' rust-coreutils_0.8.0-0ubuntu3.debian.tar.xz 22812 SHA512:4058834e3899825b60f5db483f532e72f85b27f2bcb7bc2f2680f45d82c19b3d2d414e99bf17d5f7f0509d404819c28e16686fd6283db253ae841b23effcdb07
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.8.0-0ubuntu3.dsc' rust-coreutils_0.8.0-0ubuntu3.dsc 8878 SHA512:2c91bd122fa1c56c387f5e1133b508667568afee17e598ac3c1dfbea8327012bbf7115b323f77166dc5bbb36415a1aa98960c639d504d1b0026c79e40c31e295
+$ apt-get source -qq --print-uris rust-coreutils=0.10.0-1ubuntu2~26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig-l10n.tar.gz' rust-coreutils_0.10.0.orig-l10n.tar.gz 780526 SHA512:8d0b8c9053cc80033324d71ec57b7c3f5249eeff69978a759e81c7774e62ca74893708d583918a62dc448f4889d91d71aed37be2fd57ec683c717c78eecdbaa9
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0.orig.tar.gz' rust-coreutils_0.10.0.orig.tar.gz 2671039 SHA512:cd5bc2b491ad36e559678aa45578c1646d48f4421abb1944195282acea4e5c6c1f9556c3fd2758cc7e37a1995fd5e2e1b94dfb91b6826f4e4c9bf8ddb7e50fd8
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.debian.tar.xz' rust-coreutils_0.10.0-1ubuntu2~26.04.1.debian.tar.xz 22541108 SHA512:b93fad2afd099bc04c9b78182d67e1e6f32e9c36833a3f74bb8d826e2a9e1393e37d05403974178ccda684246d665b21608fbfcd44178a050415368e18e44c41
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.10.0-1ubuntu2%7e26.04.1.dsc' rust-coreutils_0.10.0-1ubuntu2~26.04.1.dsc 8746 SHA512:16fe14c002607a30152a41bb6cd658ad7c2c341fe5178aa82b07cb1fabbf3cb042dec817c8fc195790b87ac7c035694b57cb3dffe86b4f498e7637c69591f8f0
 ```
 
 ### `dpkg` source package: `sed=4.9-2ubuntu1`
@@ -8151,12 +8184,12 @@ $ apt-get source -qq --print-uris sphinx=8.2.3-12
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sphinx/sphinx_8.2.3-12.debian.tar.xz' sphinx_8.2.3-12.debian.tar.xz 39400 SHA256:44f0e218adbec64ed0e3ec0e688587f899f571a43dcb908c9e52b71bd183c663
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-9ubuntu0.2`
-- `libsqlite3-dev:amd64=3.46.1-9ubuntu0.2`
+- `libsqlite3-0:amd64=3.46.1-9ubuntu0.3`
+- `libsqlite3-dev:amd64=3.46.1-9ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc/libsqlite3-dev/copyright`)
 
@@ -8164,9 +8197,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
+```
 
 ### `dpkg` source package: `sudo-common=1.2ubuntu`
 
@@ -8188,11 +8227,11 @@ $ apt-get source -qq --print-uris sudo-common=1.2ubuntu
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo-common/sudo-common_1.2ubuntu.dsc' sudo-common_1.2ubuntu.dsc 1566 SHA256:db86d809fb3e9824364d4fea473e896080a01539a8017b85f87a2705abac2cf3
 ```
 
-### `dpkg` source package: `sudo=1.9.17p2-1ubuntu3`
+### `dpkg` source package: `sudo=1.9.17p2-1ubuntu3.1`
 
 Binary Packages:
 
-- `sudo=1.9.17p2-1ubuntu3`
+- `sudo=1.9.17p2-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -8208,11 +8247,11 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sudo=1.9.17p2-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz' sudo_1.9.17p2.orig.tar.gz 5451682 SHA256:4a38a1ab3adb1199257edc2a7c4a2bd714665eb605b04368843b06dada2cfcfb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz.asc' sudo_1.9.17p2.orig.tar.gz.asc 566 SHA256:4605f51763a083ab1732da1ae8b28a28ddf8007f4d79d0de51b691a9fe4195ec
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.debian.tar.xz' sudo_1.9.17p2-1ubuntu3.debian.tar.xz 58952 SHA256:bc0a69796de7e23fa27bcaf1e810ca653e345c1d7627787e55ae12ca0ef15eea
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.dsc' sudo_1.9.17p2-1ubuntu3.dsc 2727 SHA256:c213d0bfa2d87c0aecaaf193ae3e98f413a03661351e46f60cf9916ef0cd6950
+$ apt-get source -qq --print-uris sudo=1.9.17p2-1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz' sudo_1.9.17p2.orig.tar.gz 5451682 SHA512:c8abd6ca56e54a081c9ef1e9f6579d1db5b93ff857e60d1f58d1f425d7dc23c31c58d40b7819780688f66dfdf87a1f3bbe0a78387b007e2beb1b0e546203ea93
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz.asc' sudo_1.9.17p2.orig.tar.gz.asc 566 SHA512:7ca1949a7ffe0481d7c0f9215fdeae54fff34f0156f06c72a090515b1a97d052e63ce94cffe5a92ca23a723ddd0b0186fabc957cdc22120482c6f9f87d65a5f6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.1.debian.tar.xz' sudo_1.9.17p2-1ubuntu3.1.debian.tar.xz 64500 SHA512:48176367521641f2a10cb467803ea6e58f93ec752149a3d838496790e38b6b9e72a3d9abbf52ff80f21aab92a776e71e59923bf3870fc165f382161159417e01
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.1.dsc' sudo_1.9.17p2-1ubuntu3.1.dsc 2735 SHA512:e56f0d6622ecd9229365a9692c875f2a96fa407170a2c6bc7ba5dad9e95c736d9dbc5ffaa588616ea631133abc5a2e31ad489d8e03081bef2bda32f483f7aea4
 ```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
