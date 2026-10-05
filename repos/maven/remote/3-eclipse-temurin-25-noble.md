@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-25-noble`
 
 ```console
-$ docker pull maven@sha256:4020041efbd0e5df7a6727b1c60f449bd59936df94153098c4adddfd88cd3e7a
+$ docker pull maven@sha256:dea516dc31ad2724a9258d4ed2c6d1b5a050b0019eb00dec4030608493451137
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -422,135 +422,135 @@ $ docker pull maven@sha256:f14ba994b068fc29a90973bb81ead894b1ff425034abc19dfff08
 ### `maven:3-eclipse-temurin-25-noble` - linux; riscv64
 
 ```console
-$ docker pull maven@sha256:f6038e0e80fbd05ec843a05cc78124a5c725c21d632f1a2ed0eb5df3db3744cd
+$ docker pull maven@sha256:6728dd003f7bfbf4b5e56589ac2f4c712bf1563d531b163b4d2689be6ba1dc46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.5 MB (178494467 bytes)**  
+-	Total Size: **181.4 MB (181392283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21f4f09d65b5f5cb7b75688374f8c7775ecba76f32fd6e582a09ebc212744f65`
+-	Image ID: `sha256:89a0af608b35e82a5cacbd93b3035f3727d4baebfc76edc0a687ad5d30ca171e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 07 Sep 2026 07:43:12 GMT
+# Fri, 18 Sep 2026 22:20:53 GMT
 ARG RELEASE
-# Mon, 07 Sep 2026 07:43:13 GMT
+# Fri, 18 Sep 2026 22:20:54 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 07 Sep 2026 07:43:13 GMT
+# Fri, 18 Sep 2026 22:20:54 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 07 Sep 2026 07:44:03 GMT
-ADD file:b9e2d6d291d1ed94a7f69f48c708e50bb181af64736f283e384c42c217fefce1 in / 
-# Mon, 07 Sep 2026 07:44:07 GMT
+# Fri, 18 Sep 2026 22:21:41 GMT
+ADD file:3a1916ce71708268db17b5ce7c5482fc86a6dce4c032062460878125231681f1 in / 
+# Fri, 18 Sep 2026 22:21:45 GMT
 CMD ["/bin/bash"]
-# Wed, 09 Sep 2026 02:39:36 GMT
+# Sun, 04 Oct 2026 21:13:16 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 09 Sep 2026 02:39:36 GMT
+# Sun, 04 Oct 2026 21:13:16 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 09 Sep 2026 02:39:36 GMT
+# Sun, 04 Oct 2026 21:13:16 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 09 Sep 2026 02:39:36 GMT
+# Sun, 04 Oct 2026 21:13:16 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 02:39:36 GMT
-ENV JAVA_VERSION=jdk-25.0.4+7
-# Wed, 09 Sep 2026 02:41:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='e58fcdcd637b25c03ca84cbbcefc70d11efb8f4b4cbd05decc9f661769d77f94';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4_7.tar.gz';          ;;        arm64)          ESUM='621f7196f0b682fb557da58bec89bd7dfe5419811fe1c0ba75c9cc8432f084c7';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4_7.tar.gz';          ;;        ppc64el)          ESUM='6b49f8289c377d4fb79ef54b612d77f969648f6ff862152f73c0be897e7c1ef8';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4_7.tar.gz';          ;;        riscv64)          ESUM='c6a70ed1ebe5ff66614f71fa9070e26d5b21587f576a8cb4f818269f4f475191';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_riscv64_linux_hotspot_25.0.4_7.tar.gz';          ;;        s390x)          ESUM='24f05bf8b13cbb2fd6bdcc02da837725309d7279b5edebafb6b0994dcda262b3';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 09 Sep 2026 02:42:11 GMT
+# Sun, 04 Oct 2026 21:13:16 GMT
+ENV JAVA_VERSION=jdk-25.0.4.1+1
+# Sun, 04 Oct 2026 21:15:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        arm64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64el)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        riscv64)          ESUM='8dbef2b12ceaecec9b5f00d7f568309b7e3525137777736abfc65900c054ccf9';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_riscv64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Sun, 04 Oct 2026 21:15:58 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 09 Sep 2026 02:42:12 GMT
+# Sun, 04 Oct 2026 21:15:58 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 09 Sep 2026 02:42:12 GMT
+# Sun, 04 Oct 2026 21:15:58 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 09 Sep 2026 02:42:12 GMT
+# Sun, 04 Oct 2026 21:15:58 GMT
 CMD ["jshell"]
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:05 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:06 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:06 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 09 Sep 2026 09:15:17 GMT
+# Mon, 05 Oct 2026 17:34:06 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:43253cac98e0bd3027a1f91776c6624571e5e05e6df478c1452294560ee5ff91`  
-		Last Modified: Mon, 07 Sep 2026 07:57:26 GMT  
-		Size: 31.0 MB (31049202 bytes)  
+	-	`sha256:f744af9afcd9f5fe3c98a1581df8785f8f3920cb60a4a7ba86497465ccf35413`  
+		Last Modified: Fri, 18 Sep 2026 22:30:18 GMT  
+		Size: 31.0 MB (31049980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70da7f41ae33d6ea0eeffe7a4534d2cd0e01d63196929e1e64c11277e73d6ca8`  
-		Last Modified: Wed, 09 Sep 2026 02:45:38 GMT  
-		Size: 13.8 MB (13807252 bytes)  
+	-	`sha256:7e9ed9ebb27db955de304c30a9bc6b5ee5a9060557084bebd17a29eafbffd4ff`  
+		Last Modified: Sun, 04 Oct 2026 21:19:43 GMT  
+		Size: 16.0 MB (15984845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b8d89d63f4925b0c0d6a7e4c90474cf72d49793f167e1ed3d5392cfb56358b0`  
-		Last Modified: Wed, 09 Sep 2026 02:45:49 GMT  
-		Size: 91.1 MB (91147197 bytes)  
+	-	`sha256:c2b9a617f21d746635dfa55cd148be468ec0b1aa1ec4bd9f50ba9ccb4c3f2886`  
+		Last Modified: Sun, 04 Oct 2026 21:19:55 GMT  
+		Size: 91.2 MB (91151162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3d523a87c06e2c3c9f7aa5e4ecf82cca65d5a6621b9d9b6348860209ad52804`  
-		Last Modified: Wed, 09 Sep 2026 02:45:35 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:db6d4dfd6191b539ac9c8d2a7c354f8b4418f47e88aa8bb19994998e6ab8bc2e`  
+		Last Modified: Sun, 04 Oct 2026 21:19:39 GMT  
+		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8484f1ffe14ed42caf4bb8d5b81cdd92124bc7e6bcfbca24697bc62cf5cd6e99`  
-		Last Modified: Wed, 09 Sep 2026 09:18:11 GMT  
-		Size: 33.1 MB (33127339 bytes)  
+	-	`sha256:1108f09bc00381bfc2e0f99a29bee030cd94c3068752d2a6ef4bebb30b6becf2`  
+		Last Modified: Mon, 05 Oct 2026 17:37:23 GMT  
+		Size: 33.1 MB (33143776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72ae46b21bc1ec985ded2a6bff0e58a4ed3513a25f5acebe1f109a04c8c1ca8`  
-		Last Modified: Wed, 09 Sep 2026 09:18:07 GMT  
-		Size: 9.4 MB (9359976 bytes)  
+	-	`sha256:0d173a28e0ed2ab6102dee4e5df6b070949aba6839bda6c036a17436df7547cb`  
+		Last Modified: Mon, 05 Oct 2026 17:37:19 GMT  
+		Size: 10.1 MB (10059016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437683b92f4525685d33918e45c38c7978d0c818d3fa7ff2519681a1fdcec724`  
-		Last Modified: Wed, 09 Sep 2026 09:18:04 GMT  
-		Size: 851.0 B  
+	-	`sha256:fa39601a0d8f698e056e0187096d6b8235aebff30938e06570386302155a969b`  
+		Last Modified: Mon, 05 Oct 2026 17:37:16 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:884f7666e8c80bf6d9c17d72e792c937356f9abbb529c2cd62fa4ec8a3d9db8c`  
-		Last Modified: Wed, 09 Sep 2026 09:18:04 GMT  
-		Size: 155.0 B  
+	-	`sha256:ce544a2efeaf53a434d6cff9ba0d7d05c36154fa5618bb4f12c8c0284f40bd00`  
+		Last Modified: Mon, 05 Oct 2026 17:37:16 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-eclipse-temurin-25-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f17948b7150aacc3bfb4c85435884355717b4f4c94da34450742c5b49ad9f7be
+$ docker pull maven@sha256:a087ecc341cd24f1e0f7ce9d67a85f2ac708a3eeb93999a02f3af7718935ea4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4967750 bytes)**  
+-	Total Size: **5.0 MB (4972833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:126b9a22978c4b69cd4a153b07d818c9997ff76a173d99a63fd27cecbc02bebd`
+-	Image ID: `sha256:d20007880f3f42dc1b7fb4b8034f32fb968db1b59cc510ab96b30dcc8bf1a64b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8783cfc07340af0d649dcb1b6ded9083a2080002bd1e9d054541c2b47f2ce626`  
-		Last Modified: Wed, 09 Sep 2026 09:18:05 GMT  
-		Size: 4.9 MB (4949313 bytes)  
+	-	`sha256:a9de73844b8cdc0459f6ca6fc57d9edc7e7227c59ea81694d87c2efff4958684`  
+		Last Modified: Mon, 05 Oct 2026 17:37:17 GMT  
+		Size: 5.0 MB (4954383 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cae7bd72ba4016acc0fb81d13f19d9fa38c3f173f4e7269ed82432b3bf7823ba`  
-		Last Modified: Wed, 09 Sep 2026 09:18:04 GMT  
-		Size: 18.4 KB (18437 bytes)  
+	-	`sha256:42e2cd499efa2c76f96b315eaa0741bdf4bb8565602ae21138229ecffb797093`  
+		Last Modified: Mon, 05 Oct 2026 17:37:15 GMT  
+		Size: 18.4 KB (18450 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-eclipse-temurin-25-noble` - linux; s390x
