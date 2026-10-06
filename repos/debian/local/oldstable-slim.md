@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e3cff354bbe4e510abb7c58ea923a4900e90cc5e6266899e4291aacdb8afcaa`
-- Created: `2026-09-18T00:00:00Z`
-- Virtual Size: ~ 74.83 Mb  
+- Image ID: `sha256:156190c4f541d5edf030311f777c86dff756b3cc52fbdfd9decb93e6dd5cc459`
+- Created: `2026-10-05T00:00:00Z`
+- Virtual Size: ~ 74.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `[]`
@@ -1527,11 +1527,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pam/1.5.2-6+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pam/1.5.2-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcre2=10.42-1+deb12u1`
+### `dpkg` source package: `pcre2=10.42-1+deb12u2`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-1+deb12u1`
+- `libpcre2-8-0:amd64=10.42-1+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1544,17 +1544,17 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.dsc' pcre2_10.42-1+deb12u1.dsc 2226 SHA256:20bfc5b620ab5017489fd5168fd427bbaad9d209dffa0a2e4025d5cc215f70a3
+$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u2.dsc' pcre2_10.42-1+deb12u2.dsc 2371 SHA256:63be58a94a6d2c7f03324cc0fe1ffb32d1f366d82d0fabef581ba3cc8a8ba5a6
 'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u1.diff.gz' pcre2_10.42-1+deb12u1.diff.gz 15939 SHA256:4e1e2103da0d905d30c69c8fea259d654ac7282b90236071281901f28e7dd719
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u2.diff.gz' pcre2_10.42-1+deb12u2.diff.gz 16865 SHA256:b28d4aeaa3198fcf2f41dffddec3d673c8ef53286ced930599f009522da11372
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.42-1+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-7+deb12u3`
 
@@ -1764,11 +1764,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026b-0+deb12u1`
+### `dpkg` source package: `tzdata=2026c-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026b-0+deb12u1`
+- `tzdata=2026c-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1777,18 +1777,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026b-0+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b-0%2bdeb12u1.dsc' tzdata_2026b-0+deb12u1.dsc 2396 SHA256:1a6e7b80823607130b79a12e5dff0d03ed81feb14faf5fffad94841e54cfe988
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA256:114543d9f19a6bfeb5bca43686aea173d38755a3db1f2eec112647ae92c6f544
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz.asc' tzdata_2026b.orig.tar.gz.asc 833 SHA256:b69ac9d9c926cb5ef80ab0b4bbc2a462eb9b4b36167e4aac649d87b744f7ca8b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b-0%2bdeb12u1.debian.tar.xz' tzdata_2026b-0+deb12u1.debian.tar.xz 122084 SHA256:a5b70ea0b5ffe7905e0e8bb5ac45196131ce235d3a0cf5665b4b3ac96caa2c35
+$ apt-get source -qq --print-uris tzdata=2026c-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.dsc' tzdata_2026c-0+deb12u1.dsc 2396 SHA256:0ca4eade11f843446aad110966ba335cd218f0897a1a51b82bd2b4104d6a7547
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.debian.tar.xz' tzdata_2026c-0+deb12u1.debian.tar.xz 122188 SHA256:bc6f8b573203f7e3802d6106eb814d2162c8ad7a2d3e6dcbc73d4cf87fe0986d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026b-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026b-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026b-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
