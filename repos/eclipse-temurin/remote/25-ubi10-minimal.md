@@ -1,7 +1,7 @@
 ## `eclipse-temurin:25-ubi10-minimal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:d8d32b4b0d2d2a56c3df492b471c527e40ab683e4d035da1977f2c6f1739784d
+$ docker pull eclipse-temurin@sha256:fae096b8862c1bf19fa28e942b52f2a956e60aee4b8d5be0c2bbdc6595fd4539
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,471 +18,471 @@ $ docker pull eclipse-temurin@sha256:d8d32b4b0d2d2a56c3df492b471c527e40ab683e4d0
 ### `eclipse-temurin:25-ubi10-minimal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:9c8c15f9f8221f51b08fdcd41e15d165093c222d88040fa04e6ed7d8a223c03c
+$ docker pull eclipse-temurin@sha256:c6307266a7b22cfd4cdd70669f6dd78eba0dd5cba65b888e63fbda5dc9a4e0ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165444219 bytes)**  
+-	Total Size: **165.4 MB (165437008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1809b257ef9ea804b0f50ece56828e2f61df4b318df360eb9c290394f9d89626`
+-	Image ID: `sha256:8ae534f259baeea5ff26b39a9e548887dd72a3e2c9c0a9fb1dd3c9721c67118f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 LABEL io.openshift.tags="minimal rhel10"
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:49 GMT
 ENV container oci
-# Wed, 30 Sep 2026 07:29:37 GMT
-COPY dir:4a2cf22f81e21a519a6037814395930006f66c73a33185c9b0909804097cd2e4 in /      
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:50 GMT
+COPY dir:f34bac4cb5386fae5c688b9edc1b823fe38f4dd16d1c362f8163660dba6cbcaa in /      
+# Tue, 06 Oct 2026 06:52:50 GMT
 COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Wed, 30 Sep 2026 07:29:37 GMT
+# Tue, 06 Oct 2026 06:52:50 GMT
 CMD ["/bin/bash"]
-# Wed, 30 Sep 2026 07:29:37 GMT
-COPY dir:0d19287003ab6c5bc6c6b54da180c6fbf0ccb471f51ab32ebe520362ec6a6019 in /usr/share/buildinfo/      
-# Wed, 30 Sep 2026 07:29:37 GMT
-COPY dir:0d19287003ab6c5bc6c6b54da180c6fbf0ccb471f51ab32ebe520362ec6a6019 in /root/buildinfo/      
-# Wed, 30 Sep 2026 07:29:38 GMT
-LABEL "org.opencontainers.image.created"="2026-09-30T07:29:16Z" "org.opencontainers.image.revision"="c36f95f6d717ca86d583acb486458c81a7d871c6" "build-date"="2026-09-30T07:29:16Z" "architecture"="x86_64" "vcs-ref"="c36f95f6d717ca86d583acb486458c81a7d871c6" "vcs-type"="git" "release"="1790753097"org.opencontainers.image.created=2026-09-30T07:29:16Z,org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6
-# Wed, 30 Sep 2026 21:02:57 GMT
+# Tue, 06 Oct 2026 06:52:50 GMT
+COPY dir:a955a0c99bb51e4c1fd6c1c97d380d39455977317b0ff795e31df9ed150f19a8 in /usr/share/buildinfo/      
+# Tue, 06 Oct 2026 06:52:50 GMT
+COPY dir:a955a0c99bb51e4c1fd6c1c97d380d39455977317b0ff795e31df9ed150f19a8 in /root/buildinfo/      
+# Tue, 06 Oct 2026 06:52:50 GMT
+LABEL "org.opencontainers.image.created"="2026-10-06T06:52:27Z" "org.opencontainers.image.revision"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "build-date"="2026-10-06T06:52:27Z" "architecture"="x86_64" "vcs-ref"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "vcs-type"="git" "release"="1791269426"org.opencontainers.image.created=2026-10-06T06:52:27Z,org.opencontainers.image.revision=d1f7fb92ac172a567c570c6de12bd9d216ea5c92
+# Tue, 06 Oct 2026 21:55:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 30 Sep 2026 21:02:57 GMT
+# Tue, 06 Oct 2026 21:55:28 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Sep 2026 21:02:57 GMT
+# Tue, 06 Oct 2026 21:55:28 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 30 Sep 2026 21:02:57 GMT
+# Tue, 06 Oct 2026 21:55:28 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Wed, 30 Sep 2026 21:02:57 GMT
+# Tue, 06 Oct 2026 21:55:28 GMT
 ENV JAVA_VERSION=jdk-25.0.4.1+1
-# Wed, 30 Sep 2026 21:03:56 GMT
+# Tue, 06 Oct 2026 21:55:58 GMT
 RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 30 Sep 2026 21:03:57 GMT
+# Tue, 06 Oct 2026 21:55:59 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 30 Sep 2026 21:03:57 GMT
+# Tue, 06 Oct 2026 21:55:59 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 30 Sep 2026 21:03:57 GMT
+# Tue, 06 Oct 2026 21:55:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 30 Sep 2026 21:03:57 GMT
+# Tue, 06 Oct 2026 21:55:59 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:391b2dfdd020c8a0be6ba9e27ed254ed8409bfbb569f3be31217c8d2a65c66a2`  
-		Last Modified: Wed, 30 Sep 2026 08:26:27 GMT  
-		Size: 35.0 MB (34957293 bytes)  
+	-	`sha256:9244a62486f52ea78c7c9bffc8936622a69a982b1ed177ee04ddfae80f9a2f94`  
+		Last Modified: Tue, 06 Oct 2026 07:58:50 GMT  
+		Size: 35.0 MB (34955692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e6786ba2bb10dc5ddbf3c631340903d7434cd1c339802537fcaea1aa30e1a92`  
-		Last Modified: Wed, 30 Sep 2026 21:03:13 GMT  
-		Size: 37.9 MB (37865340 bytes)  
+	-	`sha256:9c9301f67786be8013a2d5114f8de8138852310c96a18fc595ca453ac43c0c72`  
+		Last Modified: Tue, 06 Oct 2026 21:55:46 GMT  
+		Size: 37.9 MB (37859753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1dfb82285874e6e5405c1236c7478844937ac60dba7c86c14310c200bbab4839`  
-		Last Modified: Wed, 30 Sep 2026 21:04:14 GMT  
-		Size: 92.6 MB (92618986 bytes)  
+	-	`sha256:ce8094e22e66e2c7c39a39e1b5390cc59efd6122c4a4912080cbb645f3bc13e9`  
+		Last Modified: Tue, 06 Oct 2026 21:56:17 GMT  
+		Size: 92.6 MB (92618964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:277caa237c343b4b9e6f1d659d77f3153ff67266877e6af4447197d697b14c74`  
-		Last Modified: Wed, 30 Sep 2026 21:04:12 GMT  
+	-	`sha256:4f802c866bf26fdb2bba9d85f846d5c80293e97a4f5ae3b36e2e2343cce67543`  
+		Last Modified: Tue, 06 Oct 2026 21:56:15 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a22e8446a030a601a744893f867c5adfcf2d6f13fdef0fcffe511ad827aa0273`  
+		Last Modified: Tue, 06 Oct 2026 21:56:15 GMT  
+		Size: 2.5 KB (2469 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
+
+```console
+$ docker pull eclipse-temurin@sha256:c1045ac375d529ba01d80ed0f53229e04ef58a7c3674638fbafb7372afbb7a95
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.8 MB (3781254 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:229c3d1ef921a47bb434ff6b41ca0e25db072d3774da5eb8a07fe05b1838a72a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:eb307c61b43de954c81765e21b5f5abe459cf0e82dbdbc750bfadb88c6fb7207`  
+		Last Modified: Tue, 06 Oct 2026 21:56:15 GMT  
+		Size: 3.8 MB (3759918 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:5d47c918586498b8156fbbffdf8c66a48be284aea92a7636b7e182e4e143397f`  
+		Last Modified: Tue, 06 Oct 2026 21:56:15 GMT  
+		Size: 21.3 KB (21336 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `eclipse-temurin:25-ubi10-minimal` - linux; arm64 variant v8
+
+```console
+$ docker pull eclipse-temurin@sha256:f8b3148128edf4688c2b41c69ae37a99e3791fca8ab61baa213476d447734e53
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **162.5 MB (162456279 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:207d4443a88ef654c67bd2f391446ea3a8319cdfbff916b3b1921ca2c6bf4ac2`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL maintainer="Red Hat, Inc."
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL vendor="Red Hat, Inc."
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL io.openshift.expose-services=""
+# Tue, 06 Oct 2026 06:54:51 GMT
+LABEL io.openshift.tags="minimal rhel10"
+# Tue, 06 Oct 2026 06:54:51 GMT
+ENV container oci
+# Tue, 06 Oct 2026 06:54:52 GMT
+COPY dir:5d724641a5e7af80919f5b39a516d4561f65b3b7352fbda320935cbb5242688a in /      
+# Tue, 06 Oct 2026 06:54:52 GMT
+COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
+# Tue, 06 Oct 2026 06:54:52 GMT
+CMD ["/bin/bash"]
+# Tue, 06 Oct 2026 06:54:52 GMT
+COPY dir:00864b7e610d3da6756b5cf1b37de86187c773ede7d568403a72c9370ca645e1 in /usr/share/buildinfo/      
+# Tue, 06 Oct 2026 06:54:52 GMT
+COPY dir:00864b7e610d3da6756b5cf1b37de86187c773ede7d568403a72c9370ca645e1 in /root/buildinfo/      
+# Tue, 06 Oct 2026 06:54:52 GMT
+LABEL "org.opencontainers.image.created"="2026-10-06T06:54:30Z" "org.opencontainers.image.revision"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "build-date"="2026-10-06T06:54:30Z" "architecture"="aarch64" "vcs-ref"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "vcs-type"="git" "release"="1791269426"org.opencontainers.image.created=2026-10-06T06:54:30Z,org.opencontainers.image.revision=d1f7fb92ac172a567c570c6de12bd9d216ea5c92
+# Tue, 06 Oct 2026 21:51:44 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 06 Oct 2026 21:51:44 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 06 Oct 2026 21:51:44 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 06 Oct 2026 21:51:44 GMT
+RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
+# Tue, 06 Oct 2026 21:51:44 GMT
+ENV JAVA_VERSION=jdk-25.0.4.1+1
+# Tue, 06 Oct 2026 21:52:26 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 06 Oct 2026 21:52:27 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 06 Oct 2026 21:52:27 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 06 Oct 2026 21:52:27 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 06 Oct 2026 21:52:27 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:8bbad36d7459a5946aefb1e837706ffa90447344493f010df72763ae29ef2507`  
+		Last Modified: Tue, 06 Oct 2026 07:58:54 GMT  
+		Size: 33.1 MB (33124268 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:59a41a66587a18b2b09d2f21d5a0f7cbf80d891bb2349bfa1f93aadfee4ec229`  
+		Last Modified: Tue, 06 Oct 2026 21:52:12 GMT  
+		Size: 37.8 MB (37799847 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:187bdc258fb7a2804942b86ec75a182e7d43732f36fd65f646877c6a44a2ce7f`  
+		Last Modified: Tue, 06 Oct 2026 21:52:45 GMT  
+		Size: 91.5 MB (91529564 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa55b7d5e5fa070ba49bf0a57a25c044968ca47bf1f7b0b3051c6beaec56d812`  
+		Last Modified: Tue, 06 Oct 2026 21:52:43 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b24c21f39369a361efa455d8b2d3a81e42424242af514b33d5ffcad0357b7639`  
+		Last Modified: Tue, 06 Oct 2026 21:52:43 GMT  
+		Size: 2.5 KB (2470 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
+
+```console
+$ docker pull eclipse-temurin@sha256:e3d55ad0f19a16bead92ba8423c00b45ef7085f874301a5788debe1646342d14
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.8 MB (3780793 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ca7bc3568bad92f47006fbdce3cfb44f9815ca0a76a78cc27ee57d2189dc1fc2`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:88bf110bf9464923e32a9d12a6e8a2291f88214689edddebeffdb7481bca42f8`  
+		Last Modified: Tue, 06 Oct 2026 21:52:43 GMT  
+		Size: 3.8 MB (3759341 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2e26acab6e600c0c7463c2c87e6cdde253cafce6ef7ee4c9a8c317e43bb54137`  
+		Last Modified: Tue, 06 Oct 2026 21:52:43 GMT  
+		Size: 21.5 KB (21452 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `eclipse-temurin:25-ubi10-minimal` - linux; ppc64le
+
+```console
+$ docker pull eclipse-temurin@sha256:24071a3f712da6fa1c03d23913eced20a06a6de3e8bc07fd916675631aba121b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **170.0 MB (170029328 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:532b9b61e2fc9842abba24e1830c3b5416e63a0c20a9b91b0f488a358b10db22`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL maintainer="Red Hat, Inc."
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL vendor="Red Hat, Inc."
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL io.openshift.expose-services=""
+# Tue, 06 Oct 2026 06:54:24 GMT
+LABEL io.openshift.tags="minimal rhel10"
+# Tue, 06 Oct 2026 06:54:24 GMT
+ENV container oci
+# Tue, 06 Oct 2026 06:54:25 GMT
+COPY dir:e25ca9bce19950e134d1571bfd9f5606eb05da1f098ac5b727aef4ebc7b83454 in /      
+# Tue, 06 Oct 2026 06:54:25 GMT
+COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
+# Tue, 06 Oct 2026 06:54:25 GMT
+CMD ["/bin/bash"]
+# Tue, 06 Oct 2026 06:54:25 GMT
+COPY dir:c45e57b863ca71f3508a48e72ff9c0ad8871f2710bd7efaffe74fbc929216e53 in /usr/share/buildinfo/      
+# Tue, 06 Oct 2026 06:54:25 GMT
+COPY dir:c45e57b863ca71f3508a48e72ff9c0ad8871f2710bd7efaffe74fbc929216e53 in /root/buildinfo/      
+# Tue, 06 Oct 2026 06:54:25 GMT
+LABEL "org.opencontainers.image.created"="2026-10-06T06:54:08Z" "org.opencontainers.image.revision"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "build-date"="2026-10-06T06:54:08Z" "architecture"="ppc64le" "vcs-ref"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "vcs-type"="git" "release"="1791269426"org.opencontainers.image.created=2026-10-06T06:54:08Z,org.opencontainers.image.revision=d1f7fb92ac172a567c570c6de12bd9d216ea5c92
+# Tue, 06 Oct 2026 21:49:34 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 06 Oct 2026 21:49:34 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 06 Oct 2026 21:49:34 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 06 Oct 2026 21:49:34 GMT
+RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
+# Tue, 06 Oct 2026 21:49:34 GMT
+ENV JAVA_VERSION=jdk-25.0.4.1+1
+# Tue, 06 Oct 2026 21:57:28 GMT
+RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 06 Oct 2026 21:57:32 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 06 Oct 2026 21:57:32 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 06 Oct 2026 21:57:32 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 06 Oct 2026 21:57:32 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:3a3a2461cd07c59e0c778d6435ecc60f319acf3d0d977d18a22118130e1e6f78`  
+		Last Modified: Tue, 06 Oct 2026 12:22:40 GMT  
+		Size: 39.1 MB (39133633 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:be2fbb754e1bdb9156007fee5ee8b98c08e806b671924b977b328590aaee1039`  
+		Last Modified: Tue, 06 Oct 2026 21:50:16 GMT  
+		Size: 39.6 MB (39635607 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:732d4afa9fed00567ba6541182a69bde95fe8f1a26f2f39ce5e51e2a7534d214`  
+		Last Modified: Tue, 06 Oct 2026 21:58:11 GMT  
+		Size: 91.3 MB (91257488 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87af423afe645e42b6db96f3af161b3d29b008e3dd88f9d16096c16011d3056b`  
+		Last Modified: Tue, 06 Oct 2026 21:58:09 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6cd0fb6368cf8324fc9f124c76298e4b3e145844fb4612a5fe49463932957a53`  
-		Last Modified: Wed, 30 Sep 2026 21:04:12 GMT  
+	-	`sha256:0b74ab7eca7f423225d2f970051d5efdc0f6efcbd9fce3ebc1fa1d6f3f573f74`  
+		Last Modified: Tue, 06 Oct 2026 21:58:09 GMT  
 		Size: 2.5 KB (2471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:6545e5f49f32b7c2718266b0aebb95c1cc7555deffa50973ff67b264d076cddf
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3781255 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b55e7f7f139462d2de35688a713d0fb37145328a9fae700c1f44cb2a6bf045d9`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:3385e4b764831b2ecf3f81f63e3a549f4219a7abc7282ba0e2fc418dc529e2f9`  
-		Last Modified: Wed, 30 Sep 2026 21:04:12 GMT  
-		Size: 3.8 MB (3759918 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:065e32afce87e0e7558be2004c87c892721aca90b1170416977a4e3e86308e0e`  
-		Last Modified: Wed, 30 Sep 2026 21:04:12 GMT  
-		Size: 21.3 KB (21337 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `eclipse-temurin:25-ubi10-minimal` - linux; arm64 variant v8
-
-```console
-$ docker pull eclipse-temurin@sha256:d122221a3374596ef9d53a3eed2ac9d77c9d94b7725c9dddb7f727f1be88d565
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.5 MB (162480160 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edee2f877fb4d1be16962d147d9f8e0964985fb11ac112c1e4d5e4896e37b841`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 30 Sep 2026 07:33:03 GMT
-LABEL maintainer="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL vendor="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL io.openshift.expose-services=""
-# Wed, 30 Sep 2026 07:33:04 GMT
-LABEL io.openshift.tags="minimal rhel10"
-# Wed, 30 Sep 2026 07:33:04 GMT
-ENV container oci
-# Wed, 30 Sep 2026 07:33:04 GMT
-COPY dir:b23f1b0ddd9fd279c62ecc0b943b4a2c96946a2d2af1d1cdd1b530a4ba2459be in /      
-# Wed, 30 Sep 2026 07:33:04 GMT
-COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Wed, 30 Sep 2026 07:33:04 GMT
-CMD ["/bin/bash"]
-# Wed, 30 Sep 2026 07:33:05 GMT
-COPY dir:9cf1644e306c2a468e0c35a6515097d5f26998903ca48be5c88c30b23982ef21 in /usr/share/buildinfo/      
-# Wed, 30 Sep 2026 07:33:05 GMT
-COPY dir:9cf1644e306c2a468e0c35a6515097d5f26998903ca48be5c88c30b23982ef21 in /root/buildinfo/      
-# Wed, 30 Sep 2026 07:33:05 GMT
-LABEL "org.opencontainers.image.created"="2026-09-30T07:32:43Z" "org.opencontainers.image.revision"="c36f95f6d717ca86d583acb486458c81a7d871c6" "build-date"="2026-09-30T07:32:43Z" "architecture"="aarch64" "vcs-ref"="c36f95f6d717ca86d583acb486458c81a7d871c6" "vcs-type"="git" "release"="1790753097"org.opencontainers.image.created=2026-09-30T07:32:43Z,org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6
-# Wed, 30 Sep 2026 21:03:00 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 30 Sep 2026 21:03:00 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Sep 2026 21:03:00 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 30 Sep 2026 21:03:00 GMT
-RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Wed, 30 Sep 2026 21:03:00 GMT
-ENV JAVA_VERSION=jdk-25.0.4.1+1
-# Wed, 30 Sep 2026 21:03:07 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 30 Sep 2026 21:03:09 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 30 Sep 2026 21:03:09 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 30 Sep 2026 21:03:09 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 30 Sep 2026 21:03:09 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:9ecd9154d0ac1d3014d65a9a6871a8c0c64a22ac6d5a9235ede1bb14d47cbb9c`  
-		Last Modified: Wed, 30 Sep 2026 09:02:01 GMT  
-		Size: 33.2 MB (33151204 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4d354f796a36d6d1871dc2cd52223a3e8a88f9407305f02b09fc791a4829b3b`  
-		Last Modified: Wed, 30 Sep 2026 21:03:27 GMT  
-		Size: 37.8 MB (37796850 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb7fcbb00f86e703b70029ea19d0b5ba751b929e42f9836c9fa1f9a26a0a3ced`  
-		Last Modified: Wed, 30 Sep 2026 21:03:29 GMT  
-		Size: 91.5 MB (91529505 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4f7d9e15ded25fe24e2e3f8f58420227bd92893e8364cc8f8bb121cad54f2c4`  
-		Last Modified: Wed, 30 Sep 2026 21:03:26 GMT  
-		Size: 129.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6071b6968046e8906b6157128c58bbf1d8be6b9c16bb29df1de2d54e7b13ca9f`  
-		Last Modified: Wed, 30 Sep 2026 21:03:20 GMT  
-		Size: 2.5 KB (2472 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
-
-```console
-$ docker pull eclipse-temurin@sha256:9786b8a91c082af6c2a825ffdf6088122df679a1385dd8ff61002297b91f55e6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3780794 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc18dbbab4020a18a39aa9ccce7e5b9b4937e29321d94b83b63045677d84b99`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:0d9ab0bcb9df78601191ff8b7a1116a31386cf420c73405c1652d158744f213a`  
-		Last Modified: Wed, 30 Sep 2026 21:03:26 GMT  
-		Size: 3.8 MB (3759341 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:65746b1df39f411de504e0fd2cf472050f6e76b75c9aa02dc46b21da67126f36`  
-		Last Modified: Wed, 30 Sep 2026 21:03:26 GMT  
-		Size: 21.5 KB (21453 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `eclipse-temurin:25-ubi10-minimal` - linux; ppc64le
-
-```console
-$ docker pull eclipse-temurin@sha256:d142c694a591fcc92a858eb78735d5e3d75e6252b3f2b3bf2f80183e42d296b6
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **170.0 MB (170030510 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eadad8243bac1f87a9b491dd906e4aef34073295972016c900fe98cda9a82e05`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL maintainer="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL vendor="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL io.openshift.expose-services=""
-# Wed, 30 Sep 2026 07:32:24 GMT
-LABEL io.openshift.tags="minimal rhel10"
-# Wed, 30 Sep 2026 07:32:24 GMT
-ENV container oci
-# Wed, 30 Sep 2026 07:32:25 GMT
-COPY dir:011ac10d6905fed4073dab7e8db2ce401abb06876cd876c2627b45fcaa4bebc5 in /      
-# Wed, 30 Sep 2026 07:32:25 GMT
-COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Wed, 30 Sep 2026 07:32:25 GMT
-CMD ["/bin/bash"]
-# Wed, 30 Sep 2026 07:32:25 GMT
-COPY dir:515e9f8a7dba4b71d812235696c26ee13f6d7354d59bce30fdcdfdd7921042f8 in /usr/share/buildinfo/      
-# Wed, 30 Sep 2026 07:32:25 GMT
-COPY dir:515e9f8a7dba4b71d812235696c26ee13f6d7354d59bce30fdcdfdd7921042f8 in /root/buildinfo/      
-# Wed, 30 Sep 2026 07:32:25 GMT
-LABEL "org.opencontainers.image.created"="2026-09-30T07:32:02Z" "org.opencontainers.image.revision"="c36f95f6d717ca86d583acb486458c81a7d871c6" "build-date"="2026-09-30T07:32:02Z" "architecture"="ppc64le" "vcs-ref"="c36f95f6d717ca86d583acb486458c81a7d871c6" "vcs-type"="git" "release"="1790753097"org.opencontainers.image.created=2026-09-30T07:32:02Z,org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6
-# Wed, 30 Sep 2026 21:02:30 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 30 Sep 2026 21:02:30 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Sep 2026 21:02:30 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 30 Sep 2026 21:02:30 GMT
-RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Wed, 30 Sep 2026 21:02:30 GMT
-ENV JAVA_VERSION=jdk-25.0.4.1+1
-# Wed, 30 Sep 2026 21:12:43 GMT
-RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 30 Sep 2026 21:12:49 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 30 Sep 2026 21:12:51 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 30 Sep 2026 21:12:51 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 30 Sep 2026 21:12:51 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:a275ef60dc735135f2c1bbe39e0aa0e285cd85080b8a146978424089682245a2`  
-		Last Modified: Wed, 30 Sep 2026 12:35:40 GMT  
-		Size: 39.1 MB (39148108 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93ecea203b629dda6d1102b5717c9158590b74f9632f772168c3b49c66cee5c3`  
-		Last Modified: Wed, 30 Sep 2026 21:03:17 GMT  
-		Size: 39.6 MB (39622319 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c19f5b18098508d79c3120c20fc18ddfffcef05b43c86ca888618c9f8c603ac`  
-		Last Modified: Wed, 30 Sep 2026 21:13:41 GMT  
-		Size: 91.3 MB (91257481 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7994bda673fb1d55117e970ada9b4fd3f64e36612f55ef690adf54661ba26bed`  
-		Last Modified: Wed, 30 Sep 2026 21:13:39 GMT  
-		Size: 130.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f491bab6610955be81e1cedc0b17b2f105394790b83fbd351bf9e35ac2b61f30`  
-		Last Modified: Wed, 30 Sep 2026 21:13:39 GMT  
-		Size: 2.5 KB (2472 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
-
-```console
-$ docker pull eclipse-temurin@sha256:3be03b4898bb44821080426b6a11d58ee6edb0de805306dd06ecae8b32381229
+$ docker pull eclipse-temurin@sha256:5f97c53247d47fbac9f226db014da174445a335fbed2535b559783546fdf9c08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3751435 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be9a8ec9498e31c6e2ed5e8edc833e49253387da8ea76da3958662af4e29cee4`
+-	Image ID: `sha256:64a44c0c471e6edecf23888cf069ae5c92d9b54f294812aab95e82c22916e2f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6df31c22def991159676f7806c200bbee88d79ab68ac97623de5d074a85a8137`  
-		Last Modified: Wed, 30 Sep 2026 21:13:39 GMT  
+	-	`sha256:31312d87f54c864332a0ab4a42dd62b7b8691ef5b6179df1cdaad5f8a0471e56`  
+		Last Modified: Tue, 06 Oct 2026 21:58:09 GMT  
 		Size: 3.7 MB (3730062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91122d6a432ef66a7b701d5cb46001b461e83f671490fb89cce2c6398b7b95fa`  
-		Last Modified: Wed, 30 Sep 2026 21:13:39 GMT  
+	-	`sha256:41675df35c0f00a358ba7700298b565dc75c8185886137a0d4518b92de244ee3`  
+		Last Modified: Tue, 06 Oct 2026 21:58:09 GMT  
 		Size: 21.4 KB (21373 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:25-ubi10-minimal` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:0897fa9f9e102a71ec2840afb26bf3d326c3d5e99e979f5a4ed63538e70007c0
+$ docker pull eclipse-temurin@sha256:23e76dad9bf02402981abb30e8003ef77b7a444332dd9d7a04e2900d120c924f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.5 MB (161527309 bytes)**  
+-	Total Size: **161.5 MB (161527882 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d8066073b3ed86e480533797eff5b831cef76366054cc841d942dd3f9895cf9`
+-	Image ID: `sha256:02915433ed2435b86ecef0d53f485fabfe6ff7ba9158656990cd81a49f577e26`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL com.redhat.component="ubi10-minimal-container"       name="ubi10/ubi-minimal"       version="10.2"       cpe="cpe:/o:redhat:enterprise_linux:10.2"       distribution-scope="public"
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 10."
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 10 Minimal"
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 LABEL io.openshift.tags="minimal rhel10"
-# Wed, 30 Sep 2026 07:54:36 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 ENV container oci
-# Wed, 30 Sep 2026 07:54:36 GMT
-COPY dir:f1db57878cec66f0252c497e7449d358aeead644c362f5598e7f5cedde0b7305 in /      
-# Wed, 30 Sep 2026 07:54:37 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
+COPY dir:59b340005a5695367b2b6ba200b95afac8af79674120f76d505f107f62ec7ed4 in /      
+# Tue, 06 Oct 2026 06:58:22 GMT
 COPY file:5de33b5fc08b00635bccf9134a18978dba13e2250aa51838f9969515a3957847 in /etc/yum.repos.d/.      
-# Wed, 30 Sep 2026 07:54:37 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
 CMD ["/bin/bash"]
-# Wed, 30 Sep 2026 07:54:37 GMT
-COPY dir:e274cd48fadb6d2b5c146cbcb6453e991c30f1d6e64abba0eece0f1a7a04b307 in /usr/share/buildinfo/      
-# Wed, 30 Sep 2026 07:54:37 GMT
-COPY dir:e274cd48fadb6d2b5c146cbcb6453e991c30f1d6e64abba0eece0f1a7a04b307 in /root/buildinfo/      
-# Wed, 30 Sep 2026 07:54:37 GMT
-LABEL "org.opencontainers.image.created"="2026-09-30T07:53:27Z" "org.opencontainers.image.revision"="c36f95f6d717ca86d583acb486458c81a7d871c6" "build-date"="2026-09-30T07:53:27Z" "architecture"="s390x" "vcs-ref"="c36f95f6d717ca86d583acb486458c81a7d871c6" "vcs-type"="git" "release"="1790753097"org.opencontainers.image.created=2026-09-30T07:53:27Z,org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6
-# Wed, 30 Sep 2026 21:00:47 GMT
+# Tue, 06 Oct 2026 06:58:22 GMT
+COPY dir:c68ac7435b1ee2e4e342e6f714a2722fab812e488dc6d92d624bfb60cd57be96 in /usr/share/buildinfo/      
+# Tue, 06 Oct 2026 06:58:22 GMT
+COPY dir:c68ac7435b1ee2e4e342e6f714a2722fab812e488dc6d92d624bfb60cd57be96 in /root/buildinfo/      
+# Tue, 06 Oct 2026 06:58:23 GMT
+LABEL "org.opencontainers.image.created"="2026-10-06T06:57:02Z" "org.opencontainers.image.revision"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "build-date"="2026-10-06T06:57:02Z" "architecture"="s390x" "vcs-ref"="d1f7fb92ac172a567c570c6de12bd9d216ea5c92" "vcs-type"="git" "release"="1791269426"org.opencontainers.image.created=2026-10-06T06:57:02Z,org.opencontainers.image.revision=d1f7fb92ac172a567c570c6de12bd9d216ea5c92
+# Tue, 06 Oct 2026 21:49:56 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 30 Sep 2026 21:00:47 GMT
+# Tue, 06 Oct 2026 21:49:56 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Sep 2026 21:00:47 GMT
+# Tue, 06 Oct 2026 21:49:56 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 30 Sep 2026 21:00:47 GMT
+# Tue, 06 Oct 2026 21:49:56 GMT
 RUN set -eux;     microdnf install -y         gzip         tar         binutils         tzdata         wget         ca-certificates         openssl         fontconfig         glibc-langpack-en         gnupg2     ;     microdnf clean all # buildkit
-# Wed, 30 Sep 2026 21:00:47 GMT
+# Tue, 06 Oct 2026 21:49:56 GMT
 ENV JAVA_VERSION=jdk-25.0.4.1+1
-# Wed, 30 Sep 2026 21:02:59 GMT
+# Tue, 06 Oct 2026 21:52:07 GMT
 RUN set -eux;     ARCH="$(rpm --query --queryformat='%{ARCH}' rpm)";     case "${ARCH}" in        aarch64)          ESUM='69df11a02cfa3ef7d7ca645e03edce6778ec090e100f6ae2b42097865730ac52';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        ppc64le)          ESUM='b508ca140557322c73da4278d21004b22480b894ffdc67a8795d7814afd8775c';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_ppc64le_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        s390x)          ESUM='012d4fe2be909a80c64675ab579877dd9b1db1eff6c7b327eed87b907706f819';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_s390x_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        x86_64)          ESUM='dbb698396d478e7fa2b1e50f4103324b2a99b90569ee27c33f2261f9215cf41e';          BINARY_URL='https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 30 Sep 2026 21:03:00 GMT
+# Tue, 06 Oct 2026 21:52:08 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 30 Sep 2026 21:03:00 GMT
+# Tue, 06 Oct 2026 21:52:08 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 30 Sep 2026 21:03:00 GMT
+# Tue, 06 Oct 2026 21:52:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 30 Sep 2026 21:03:00 GMT
+# Tue, 06 Oct 2026 21:52:08 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:c8e472d215ec6e7ecaa53e374ca5d7fa6faf9ed3c5d5fcab813c21ff81738edc`  
-		Last Modified: Wed, 30 Sep 2026 12:35:33 GMT  
-		Size: 34.9 MB (34862430 bytes)  
+	-	`sha256:42cbc52a670f5b53993e0233ccf7a79e7a946f4215ce8ab80402bf2f86b79986`  
+		Last Modified: Tue, 06 Oct 2026 12:22:34 GMT  
+		Size: 34.9 MB (34862390 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5b1281f7c004b0b5aecc6a8b39642436d0d48942ce18d9a905b173e82bb19b2`  
-		Last Modified: Wed, 30 Sep 2026 21:01:15 GMT  
-		Size: 38.2 MB (38238716 bytes)  
+	-	`sha256:d3427043e69b9e9595c6764c342f83066a7dbb55b962934e649cdf7b38fafebb`  
+		Last Modified: Tue, 06 Oct 2026 21:50:27 GMT  
+		Size: 38.2 MB (38239362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a28c9ee5f04430838536f2dd67e26b3bf381706ef3f0da4b57d70f28e69b3b7`  
-		Last Modified: Wed, 30 Sep 2026 21:03:25 GMT  
-		Size: 88.4 MB (88423561 bytes)  
+	-	`sha256:943e651e62e7bc02f14122243424df3cc784025e06cdfa5aa8dd8a88c0be1fbf`  
+		Last Modified: Tue, 06 Oct 2026 21:52:32 GMT  
+		Size: 88.4 MB (88423529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c93b5f1bd3f63c74cc5e3236d2597ad64613def5ed8f23749e6b162e42c4d08`  
-		Last Modified: Wed, 30 Sep 2026 21:03:17 GMT  
+	-	`sha256:fa0e484ca4f27ef2d06389896a42c0dc7936e7fa1a939020ac8245add16839ca`  
+		Last Modified: Tue, 06 Oct 2026 21:52:30 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e19a7251244d71c4991e75ccee2ae4dad59e068f4d30cf64a029094bc27dd0e`  
-		Last Modified: Wed, 30 Sep 2026 21:03:17 GMT  
-		Size: 2.5 KB (2472 bytes)  
+	-	`sha256:bd613e136aae67e7cafb21d8ccc5b4c9e46b2d33a39fa25ec8465b73982232b9`  
+		Last Modified: Tue, 06 Oct 2026 21:52:30 GMT  
+		Size: 2.5 KB (2471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:25-ubi10-minimal` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:641c7e1313904799c3fab1e1053243595f71d1d55ced0dc806aed232d8127e04
+$ docker pull eclipse-temurin@sha256:78c47a345aea53f3292548a27c57f84621374fc326517e8d0ec37893ba535e8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3751407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:174f4840f902f5b64a5de2ad699908cb98d70e3f5f25f1ebbb5a4006f84d2722`
+-	Image ID: `sha256:11cf4bdd2a2cf68888d527619306a1b9ab14ca22e79866c189fada44c3f53176`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f926e1cb50f25aad3b0c829912c2aa1de55e4e949206febc22be44d40c2b200b`  
-		Last Modified: Wed, 30 Sep 2026 21:03:23 GMT  
+	-	`sha256:f0e1d0a891fb81ae530fea9928ea4e3a3b76390d6c1b6c2cdb502d1ce1a6fad8`  
+		Last Modified: Tue, 06 Oct 2026 21:52:30 GMT  
 		Size: 3.7 MB (3730070 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a62ea852b01d6523e0aa6f528ad38eec30cded4c6ffb1a5b799a27c9585409f6`  
-		Last Modified: Wed, 30 Sep 2026 21:03:23 GMT  
+	-	`sha256:d7ea496f9f06c5cd163f99c006ef52dc8084deb856dd00e18ebeedbe7e6ccd19`  
+		Last Modified: Tue, 06 Oct 2026 21:52:30 GMT  
 		Size: 21.3 KB (21337 bytes)  
 		MIME: application/vnd.in-toto+json
