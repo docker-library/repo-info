@@ -1,7 +1,7 @@
 ## `golang:tip`
 
 ```console
-$ docker pull golang@sha256:548a2865c005da6bc63dc98d73a1089ef81228aaf0c280f791ad0f6a556575ad
+$ docker pull golang@sha256:e0b841b30b643702075ad18de400e8d688d9d8d74b60e76d27fb65038501f538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -380,23 +380,23 @@ $ docker pull golang@sha256:446316b2c7f26bbdd69ca31b1349496749304f563d2ce77f151f
 ### `golang:tip` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:053f83540618355b7be50e7a5697b5e8398c435efce23c91c8517d9a320cfeb9
+$ docker pull golang@sha256:ea019b4a8122864b09f039f482232915e9e4deb3d374d908fd42f5905ee8c58e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.4 MB (348383945 bytes)**  
+-	Total Size: **348.4 MB (348397366 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22790b29ff8aca01487c557a9cbaa1d7aa9de055f56373b0c763087f9b851a1e`
+-	Image ID: `sha256:42ddc13493186f73785249e0b8494e1f20a767b4092028fbc61a171f1bf72fbc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 18 Sep 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1789689600'
-# Sat, 19 Sep 2026 03:17:12 GMT
+# Mon, 05 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1791158400'
+# Tue, 06 Oct 2026 04:41:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Sat, 19 Sep 2026 09:07:32 GMT
+# Tue, 06 Oct 2026 11:40:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Tue, 29 Sep 2026 18:10:56 GMT
+# Tue, 06 Oct 2026 14:35:42 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 05 Oct 2026 22:50:26 GMT
 ENV GOTOOLCHAIN=local
@@ -406,36 +406,36 @@ ENV GOPATH=/go
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 05 Oct 2026 22:50:26 GMT
 COPY /target/ / # buildkit
-# Mon, 05 Oct 2026 22:50:39 GMT
+# Tue, 06 Oct 2026 15:33:39 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 05 Oct 2026 22:50:40 GMT
+# Tue, 06 Oct 2026 15:33:40 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:fe57b34d87b4c3538e7b00694a21e5bd450391029c5c22b4da16fbe872c78d51`  
-		Last Modified: Sat, 19 Sep 2026 00:05:59 GMT  
-		Size: 53.2 MB (53195075 bytes)  
+	-	`sha256:1216778738c2d0f00bc38a90447aff403e59888e07d78e8b1c4f2dde2aa2eded`  
+		Last Modified: Tue, 06 Oct 2026 00:16:25 GMT  
+		Size: 53.2 MB (53207124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57552d4d0f86a402301d735d57c01cd3d2d1724c711b625717be1f6749424be9`  
-		Last Modified: Sat, 19 Sep 2026 03:17:41 GMT  
-		Size: 27.0 MB (27022750 bytes)  
+	-	`sha256:cee8c75408fb545ab55e5cbdf6e0c4e4b171baf24f9b88c760adbc0ef14b65b4`  
+		Last Modified: Tue, 06 Oct 2026 04:41:57 GMT  
+		Size: 27.0 MB (27023111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:688421ee6cf78616bfc56c3cd74e55a2ab39b5a15aae8b60dd132fa0e6540f48`  
-		Last Modified: Sat, 19 Sep 2026 09:08:06 GMT  
-		Size: 73.1 MB (73088760 bytes)  
+	-	`sha256:12fd755399b9c7323fd96b40a78a5e5e123878fa481c517d7cb1672f297a2b8b`  
+		Last Modified: Tue, 06 Oct 2026 11:41:10 GMT  
+		Size: 73.1 MB (73088931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b590588f65a31bc4544eac4a46e84e9867d6f38d4d02d2efa6b84e3cbda62f8`  
-		Last Modified: Tue, 29 Sep 2026 18:12:22 GMT  
-		Size: 93.1 MB (93115487 bytes)  
+	-	`sha256:298d8d9ec29cda3070ef66b73852621e95f363611660cab9dd0d1c76c9c66eb5`  
+		Last Modified: Tue, 06 Oct 2026 14:36:57 GMT  
+		Size: 93.1 MB (93116325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78a38b7e603d87210e83d472af3f9689d93ce5d229c01fadbc15ca279744bf2d`  
 		Last Modified: Mon, 05 Oct 2026 22:51:44 GMT  
 		Size: 102.0 MB (101961717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b64afec86ae2fdee26cefc613f159de1768241e9b20a7c42c2ebc4d3163da73f`  
-		Last Modified: Mon, 05 Oct 2026 22:51:41 GMT  
-		Size: 124.0 B  
+	-	`sha256:ac289bd70334ffd8f54a0656d408efda7c1d959fed865b5f5d8168d297bb9653`  
+		Last Modified: Tue, 06 Oct 2026 15:34:59 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -445,24 +445,24 @@ WORKDIR /go
 ### `golang:tip` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:6648bb1e082e580d6b1d3052b50c5b757c86a2a44ca40381c9274b59c4729497
+$ docker pull golang@sha256:bbf533ad094ef6cc20143a301a591b65c4833e199cddddb06ba7ae1b72719aec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.8 MB (10822045 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1ad7cc443d3c50735fd2ed08da08940c4da3baa64a73d07ea91be05b2ae674d`
+-	Image ID: `sha256:5a97b1da652fa51358982ab8831029ceb4fda5aae0dd083fd2e8fe6dbe94112f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11c864333b077332ee3db406445c7d7d8a44635e1702782102db1060f3767b76`  
-		Last Modified: Mon, 05 Oct 2026 22:51:42 GMT  
+	-	`sha256:f883559166adbfb2fdcfc89e5d7f540cf22dfc3b9e70422dd6cde7545ce8c2aa`  
+		Last Modified: Tue, 06 Oct 2026 15:34:59 GMT  
 		Size: 10.8 MB (10793307 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2aaf42073efbe42924d2eb4a84cb7767e60c78e98078cfe1b820d567adda7869`  
-		Last Modified: Mon, 05 Oct 2026 22:51:42 GMT  
+	-	`sha256:da5904d570e19009f1e05146b97cd14c5fc5d64162efc968a960188134d0166b`  
+		Last Modified: Tue, 06 Oct 2026 15:34:59 GMT  
 		Size: 28.7 KB (28738 bytes)  
 		MIME: application/vnd.in-toto+json
 
