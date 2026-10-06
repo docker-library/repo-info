@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97f72b7c55ec694a84ca4f4c4bc9e38987004c063bed1b9501f389e94ecb1ed3`
-- Created: `2026-10-02T03:37:56.771909826Z`
-- Virtual Size: ~ 213.75 Mb  
+- Image ID: `sha256:4d56636b5e85c0287cc8a008ddf873f3fbe9e880db4b9e9c72b45e05cd5e10ff`
+- Created: `2026-10-05T21:27:52.16741154Z`
+- Virtual Size: ~ 219.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -709,16 +709,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -896,16 +896,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -930,16 +930,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -998,16 +998,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1253,16 +1253,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```

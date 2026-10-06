@@ -1,10 +1,10 @@
-# `maven:3.10.0-eclipse-temurin-26-alpine`
+# `maven:3.10.0-eclipse-temurin-27-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a3f27c648591d07ae2126494c4d878ff98c0a118f315b20fc441361a4743814`
-- Created: `2026-10-02T03:36:04.733276058Z`
-- Virtual Size: ~ 331.54 Mb  
+- Image ID: `sha256:8c310d4c97bb75535f40ea1229f722cc5f466aee447ff5e97e915ab1d81a6f7d`
+- Created: `2026-10-05T21:27:07.322592175Z`
+- Virtual Size: ~ 332.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-26.0.2.1+1`
+  - `JAVA_VERSION=jdk-27+35`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -488,16 +488,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -658,16 +658,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -709,16 +709,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -947,16 +947,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```
