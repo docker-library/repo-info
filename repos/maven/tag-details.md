@@ -10557,7 +10557,7 @@ $ docker pull maven@sha256:0a3a0a483b06f32e1a35d7bc9704ddee43a3eade817d7c75de336
 ## `maven:3-eclipse-temurin-17-noble`
 
 ```console
-$ docker pull maven@sha256:a64f1f2efe11634a070d7a28fc331b44c60ad286e4e3616121d1f227317adef5
+$ docker pull maven@sha256:a1c9ba83816e9e6e8dfd780d6d251e7c16e0fa37f432569c0101fbcb485c29b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11138,7 +11138,7 @@ $ docker pull maven@sha256:2a7864641062afc9730cbd293397f418696b83dfebfb192722de2
 ### `maven:3-eclipse-temurin-17-noble` - linux; riscv64
 
 ```console
-$ docker pull maven@sha256:147047296c68118d471c8a24c0febcda2a93b38d29dfa842335f1b74294aa0ae
+$ docker pull maven@sha256:dab03aa6f9d79a853f7d4631bfcc835e41764b7b380cbf1e6d041cb49b2f37be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -11254,25 +11254,25 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-17-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:598709398dd76e178e2d8fad78587eb0f2cd8c16469d55fe3ca6efca04cff2a9
+$ docker pull maven@sha256:f5ebee1006778ebc0afc6e5d7f625bf9d84595578bce3215b31222c017021f5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5163229 bytes)**  
+-	Total Size: **5.2 MB (5161154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bb42a6ef196ac922dde3b592da14be870846ce97ab01529f66a4afa7707d3a8`
+-	Image ID: `sha256:5336b231fc2e69ba5fa5e254435e6427c307207b48cb38e987f01702da5ead94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6e4fbe42c3c202fb5cbf9ea6dbd074ba14ad78d7cf91cb6163c4a6eaa58edfb`  
-		Last Modified: Mon, 05 Oct 2026 07:42:54 GMT  
-		Size: 5.1 MB (5137279 bytes)  
+	-	`sha256:7bceb6b17a24b3ffb393e6171b7c8f324755bea717c260a417a80cda94d191ea`  
+		Last Modified: Tue, 06 Oct 2026 04:14:22 GMT  
+		Size: 5.1 MB (5136273 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e5b1c2becca4fa094666f5e8cbd3427114a505053c71fb78cd540ad65e6fd02`  
-		Last Modified: Mon, 05 Oct 2026 07:42:52 GMT  
-		Size: 25.9 KB (25950 bytes)  
+	-	`sha256:884c33bbfec0b1ddf40a8d4aa4e445e00e484344ff3abdac9bd2ab4e11961d41`  
+		Last Modified: Tue, 06 Oct 2026 04:14:21 GMT  
+		Size: 24.9 KB (24881 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-eclipse-temurin-17-noble` - linux; s390x
@@ -34933,7 +34933,7 @@ $ docker pull maven@sha256:0a3a0a483b06f32e1a35d7bc9704ddee43a3eade817d7c75de336
 ## `maven:3.10-eclipse-temurin-17-noble`
 
 ```console
-$ docker pull maven@sha256:a64f1f2efe11634a070d7a28fc331b44c60ad286e4e3616121d1f227317adef5
+$ docker pull maven@sha256:a1c9ba83816e9e6e8dfd780d6d251e7c16e0fa37f432569c0101fbcb485c29b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35514,7 +35514,7 @@ $ docker pull maven@sha256:2a7864641062afc9730cbd293397f418696b83dfebfb192722de2
 ### `maven:3.10-eclipse-temurin-17-noble` - linux; riscv64
 
 ```console
-$ docker pull maven@sha256:147047296c68118d471c8a24c0febcda2a93b38d29dfa842335f1b74294aa0ae
+$ docker pull maven@sha256:dab03aa6f9d79a853f7d4631bfcc835e41764b7b380cbf1e6d041cb49b2f37be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -35630,25 +35630,25 @@ CMD ["mvn"]
 ### `maven:3.10-eclipse-temurin-17-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:598709398dd76e178e2d8fad78587eb0f2cd8c16469d55fe3ca6efca04cff2a9
+$ docker pull maven@sha256:f5ebee1006778ebc0afc6e5d7f625bf9d84595578bce3215b31222c017021f5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5163229 bytes)**  
+-	Total Size: **5.2 MB (5161154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bb42a6ef196ac922dde3b592da14be870846ce97ab01529f66a4afa7707d3a8`
+-	Image ID: `sha256:5336b231fc2e69ba5fa5e254435e6427c307207b48cb38e987f01702da5ead94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6e4fbe42c3c202fb5cbf9ea6dbd074ba14ad78d7cf91cb6163c4a6eaa58edfb`  
-		Last Modified: Mon, 05 Oct 2026 07:42:54 GMT  
-		Size: 5.1 MB (5137279 bytes)  
+	-	`sha256:7bceb6b17a24b3ffb393e6171b7c8f324755bea717c260a417a80cda94d191ea`  
+		Last Modified: Tue, 06 Oct 2026 04:14:22 GMT  
+		Size: 5.1 MB (5136273 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e5b1c2becca4fa094666f5e8cbd3427114a505053c71fb78cd540ad65e6fd02`  
-		Last Modified: Mon, 05 Oct 2026 07:42:52 GMT  
-		Size: 25.9 KB (25950 bytes)  
+	-	`sha256:884c33bbfec0b1ddf40a8d4aa4e445e00e484344ff3abdac9bd2ab4e11961d41`  
+		Last Modified: Tue, 06 Oct 2026 04:14:21 GMT  
+		Size: 24.9 KB (24881 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.10-eclipse-temurin-17-noble` - linux; s390x
@@ -59309,7 +59309,7 @@ $ docker pull maven@sha256:0a3a0a483b06f32e1a35d7bc9704ddee43a3eade817d7c75de336
 ## `maven:3.10.0-eclipse-temurin-17-noble`
 
 ```console
-$ docker pull maven@sha256:a64f1f2efe11634a070d7a28fc331b44c60ad286e4e3616121d1f227317adef5
+$ docker pull maven@sha256:a1c9ba83816e9e6e8dfd780d6d251e7c16e0fa37f432569c0101fbcb485c29b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -59890,7 +59890,7 @@ $ docker pull maven@sha256:2a7864641062afc9730cbd293397f418696b83dfebfb192722de2
 ### `maven:3.10.0-eclipse-temurin-17-noble` - linux; riscv64
 
 ```console
-$ docker pull maven@sha256:147047296c68118d471c8a24c0febcda2a93b38d29dfa842335f1b74294aa0ae
+$ docker pull maven@sha256:dab03aa6f9d79a853f7d4631bfcc835e41764b7b380cbf1e6d041cb49b2f37be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -60006,25 +60006,25 @@ CMD ["mvn"]
 ### `maven:3.10.0-eclipse-temurin-17-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:598709398dd76e178e2d8fad78587eb0f2cd8c16469d55fe3ca6efca04cff2a9
+$ docker pull maven@sha256:f5ebee1006778ebc0afc6e5d7f625bf9d84595578bce3215b31222c017021f5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5163229 bytes)**  
+-	Total Size: **5.2 MB (5161154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bb42a6ef196ac922dde3b592da14be870846ce97ab01529f66a4afa7707d3a8`
+-	Image ID: `sha256:5336b231fc2e69ba5fa5e254435e6427c307207b48cb38e987f01702da5ead94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6e4fbe42c3c202fb5cbf9ea6dbd074ba14ad78d7cf91cb6163c4a6eaa58edfb`  
-		Last Modified: Mon, 05 Oct 2026 07:42:54 GMT  
-		Size: 5.1 MB (5137279 bytes)  
+	-	`sha256:7bceb6b17a24b3ffb393e6171b7c8f324755bea717c260a417a80cda94d191ea`  
+		Last Modified: Tue, 06 Oct 2026 04:14:22 GMT  
+		Size: 5.1 MB (5136273 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e5b1c2becca4fa094666f5e8cbd3427114a505053c71fb78cd540ad65e6fd02`  
-		Last Modified: Mon, 05 Oct 2026 07:42:52 GMT  
-		Size: 25.9 KB (25950 bytes)  
+	-	`sha256:884c33bbfec0b1ddf40a8d4aa4e445e00e484344ff3abdac9bd2ab4e11961d41`  
+		Last Modified: Tue, 06 Oct 2026 04:14:21 GMT  
+		Size: 24.9 KB (24881 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.10.0-eclipse-temurin-17-noble` - linux; s390x
@@ -78352,7 +78352,7 @@ $ docker pull maven@sha256:999207b3fae293b47e795ce85c8d0815f8add1749f439aee06a74
 ## `maven:4.0.0-rc-7-eclipse-temurin-17-noble`
 
 ```console
-$ docker pull maven@sha256:3d820f7410365fbb114a5dbd0d83102eec1c3abe8fbbb4d87e3ed75189d81c8e
+$ docker pull maven@sha256:5ba93cb19535ea1aad2072372837c0a656faa5f8f5d6bddbc1a302e14bacab19
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -78941,7 +78941,7 @@ $ docker pull maven@sha256:b42a23d0f60624727adff7e2e8849d31d1e8b57a9f722c24259ca
 ### `maven:4.0.0-rc-7-eclipse-temurin-17-noble` - linux; riscv64
 
 ```console
-$ docker pull maven@sha256:9a21c56546624b4700a14e90bf5afae295d097c52008f71463bc7f436c90df88
+$ docker pull maven@sha256:4233dd1edb273527c5988dfb4392c480ca9adaf8c663a5f3affcb1c4f1023489
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -79059,25 +79059,25 @@ CMD ["mvn"]
 ### `maven:4.0.0-rc-7-eclipse-temurin-17-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:73049dac82fc5acc797c5921236e9fbe4297c7fcf46e47145c85c13cbb01ed13
+$ docker pull maven@sha256:55f5a8ee658e238a866f3ac788202ae59b3ada34d4f26edeb0d71eb796d926d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5201524 bytes)**  
+-	Total Size: **5.2 MB (5200764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a575a1cd2f4efebc6f41f9c2e7d5425e73a7b6dd6819e15a60c407bf2407605`
+-	Image ID: `sha256:11c191ea050f52e375d25925052be51c0dcc32a5c4055b5e6738a2a59eae6eec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:58714f7be00318c99077af69972f18319c386f3df68bded26ef128754f95fc57`  
-		Last Modified: Mon, 05 Oct 2026 07:48:39 GMT  
-		Size: 5.2 MB (5176708 bytes)  
+	-	`sha256:e07b9722f701d499d5b051ca037db3d56cc3cbb56f8e2bf87809d3ee0d71a96e`  
+		Last Modified: Tue, 06 Oct 2026 04:18:41 GMT  
+		Size: 5.2 MB (5176360 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a941332632d2692a0e08042a86d6f5056643f32ff6a894d20fce53043571dcb7`  
-		Last Modified: Mon, 05 Oct 2026 07:48:38 GMT  
-		Size: 24.8 KB (24816 bytes)  
+	-	`sha256:9186669a9cf355e146ae4341f241753d6eee69b7d914860c806546d834bf7b2a`  
+		Last Modified: Tue, 06 Oct 2026 04:18:40 GMT  
+		Size: 24.4 KB (24404 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:4.0.0-rc-7-eclipse-temurin-17-noble` - linux; s390x
