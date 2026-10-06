@@ -4481,14 +4481,9 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.24.2-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz' unbound_1.24.2.orig.tar.gz 6905018 SHA512:655d63ec5305323e84d82691425d74d98c332d0028517bd729d191e5f968ce9481b49ec7447d4c4906dce7997a998a115db36e911a59d2d877da5840c2080261
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.2.debian.tar.xz' unbound_1.24.2-1ubuntu2.2.debian.tar.xz 45712 SHA512:9f80ae5061567f4e1d2c7165e7a5f78bc759eda2823487d4655d084f25a7ece04ce1b80928b51a4268b763640dee6dd319d70e0358d9d069515d31dffab25895
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.24.2-1ubuntu2.2.dsc' unbound_1.24.2-1ubuntu2.2.dsc 2586 SHA512:ab372ea5438892d9dbb397a943612ba9a676a2424d464aedc7fed3c793ce4823dbefcf65a6e8fb84c5898a7ecc63774023cdac0e508d87b45ab2e7712d08eb65
-```
 
 ### `dpkg` source package: `unzip=6.0-29ubuntu1`
 

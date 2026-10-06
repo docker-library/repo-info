@@ -842,9 +842,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.8.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.3-1.dsc' expat_2.8.3-1.dsc 1970 SHA512:4a5388f6246cd407fca724c1ac0f654df86d40e53a9bdf2431dd1b7c5d020896137a648638977b01eb0cdfdb997f686c61353fadca52120e2245ea0c41c0bb36
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA512:547fe1a3183f75edd23e925ab4151ef7a3afa5f65329784456374d733d54f04e744257239868d4a6c1a21e17edcc3c1eced7b1ed9885cec42006444323fd47e5
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.3-1.debian.tar.xz' expat_2.8.3-1.debian.tar.xz 14044 SHA512:958dcf45edb2ad077a700c4b6b243eeedf95735c45bd21373d906b4c4387d1dcfddf0746e112506aecd052fb0f2881c26f4dab701b3ba9163596e50b454f1737
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.3-1ubuntu1.debian.tar.xz' expat_2.8.3-1ubuntu1.debian.tar.xz 20000 SHA512:d478e8d69a75edda9b222ca8e0bb32f0bd919f94055b0fea2975f8b22770e444f6ae87c864e88aef295e4cbf2f353b965be4d93ff3e5708c576389e8f50b0667
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.8.3-1ubuntu1.dsc' expat_2.8.3-1ubuntu1.dsc 2077 SHA512:f20d88558f7435af17eaf8d9a85cb00bc7f42e7b83d4102af70d15414b50c3773843949646373afdf911e35055e953b125d78093ef88cc830f41c435e934663c
 ```
 
 ### `dpkg` source package: `fftw3=3.3.11-1`
@@ -2381,14 +2381,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.58-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.58-1.dsc' libpng1.6_1.6.58-1.dsc 2310 SHA512:be0bd3c811881fb5e9f404896c193d25ed63c2e348b698334e31032304c96ae1715defb8dddb4b4f9415bce67421016da307afae2f1ec14a44550d37e20b9b88
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.58.orig.tar.gz' libpng1.6_1.6.58.orig.tar.gz 1592190 SHA512:65f54d805e1f7c46a5fc335b984e4cbd4f934e0f02fbf6673c13800b49a4c11fbeb4098eebfb33079527a56c3d933e97631f91ab68dbb31442982784f9241ace
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.58-1.debian.tar.xz' libpng1.6_1.6.58-1.debian.tar.xz 33432 SHA512:8c5e3fb824e681ae7fc90305ce3ad251a106af3a5fdc8f16526fbf14b6a85a01560f01131a59dba0a62bdc1c3ac619c9eb00ed529d578306f9fb41b807629c3a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.58-1/
+
 
 ### `dpkg` source package: `libpsl=0.23.3-1`
 
@@ -2462,15 +2461,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.11-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.11-2.dsc' libselinux_3.11-2.dsc 3130 SHA512:660e73e55fc4f7f250083ffc17173a0f8ac2d37a80c570281d1d2f26e775e865c32e0ca116dddae0ce11acc8675dcba0e5a39acb958fbb0c7ffc46c0604db1da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.11.orig.tar.gz' libselinux_3.11.orig.tar.gz 208732 SHA512:49eb0b180b77b4b61505117ecd98ab9fdd79a36801b6d2216813ea370a02ba4f58a0f87a18e92a2d4eeffc11d9df67e4692d2d8f5d3ee77a2abd3f606196aaad
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.11.orig.tar.gz.asc' libselinux_3.11.orig.tar.gz.asc 833 SHA512:fa950a332a353dfbb7959b785956076d0547b6cf5387ecbaeeb11f8171a4fc3679772707364dee4bf8db76232eb2ea6a8f0280674a8351dcf98074892c3100de
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.11-2.debian.tar.xz' libselinux_3.11-2.debian.tar.xz 52512 SHA512:e0b639eb9e0308581b8bce5d4a04087d8665648651a7d1713a9da160fc0b0233d12a7f8ed8793b86d7d69597cb80e3ff9a9326f60255505daa55ac1e664fde71
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/3.11-2/
+
 
 ### `dpkg` source package: `libsemanage=3.11-1`
 
@@ -2552,15 +2549,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1-dev/copyright`, `/usr/share/do
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA512:8703636fc28f0b12c8171712f3d605e0466a5bb9ba06e136c3203548fc3408ab07defd71dc801d7009a337e1e02fd60e8933a2a526d5ef0ce53153058d201233
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA512:83e600ddd676013932297c4f3d2cf2e65b5308f7700d818b34f30d760c7495180e6d8dae70579c8bea95ea2d7ccb12fc42641e545e11ec4b6630a0e6b350b282
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-4ubuntu3.debian.tar.xz' libssh2_1.11.1-4ubuntu3.debian.tar.xz 24880 SHA512:914387be922f3c6cc02abe1a0f6c300e102b2f9d69fe6b1fabcb565f78922d94827f09f2dd21f5d03f4dd59396c3599ef61958bca264730cdb3075a32c70010b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh2/libssh2_1.11.1-4ubuntu3.dsc' libssh2_1.11.1-4ubuntu3.dsc 2436 SHA512:bfe589b3f87f527007faf221e47a44a118357a1fbe37ff01b56480a88066eff77b41a9679ea1ac8336a9437684936b20003867922e60d0ddc23e2b98d29bb08b
-```
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
@@ -3551,14 +3542,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=4.0.1-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1.orig.tar.gz' openssl_4.0.1.orig.tar.gz 55079428 SHA512:84104cbd928a3fbcb9a90c567fa37f927b974d4744b8cd774641e0d07db065d1564fa4c3df4c26818f3c6e726ca71b3aae72109d10482bba3396949886fc8892
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1-1ubuntu4.debian.tar.xz' openssl_4.0.1-1ubuntu4.debian.tar.xz 67368 SHA512:c15f4862fc7b56d07a78ceaf66aaf0356f76ef496c94f20d368be4bcb66121de6b10abcc4f9ca5c859e7f80060c0202ef338698fc3e87a2b354c6054acffd189
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1-1ubuntu4.dsc' openssl_4.0.1-1ubuntu4.dsc 2050 SHA512:e0d0baca65bfb4a61d38093c03a08ba16ba29800227d1e1dc01c76bb605c2168ed9d49a7241caf5b31106ddd8cc97a82c76e45aafaec6a2f706ba063487541eb
-```
 
 ### `dpkg` source package: `p11-kit=0.26.5-1`
 
@@ -4346,15 +4332,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026c-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-1ubuntu1.debian.tar.xz' tzdata_2026c-1ubuntu1.debian.tar.xz 190152 SHA512:e0226b9c842c7d0ebbae0e0742c1c88e784f9e276a01f0c3940ccc713451223f0ec58cfd6da89477ff924f4b19f7d1defa08e1007d0466c8af350a7af154f622
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-1ubuntu1.dsc' tzdata_2026c-1ubuntu1.dsc 2680 SHA512:ecf97772e482a4e7bd3853831cf07fe8e64daa30489bb90fcab3a176c50d0899e7c88be8a59201c15062ef0b2af9681fdaeaa07a543400d148e48ba292f5eb23
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2026.08.18`
 
