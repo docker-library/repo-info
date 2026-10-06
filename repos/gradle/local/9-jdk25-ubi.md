@@ -415,12 +415,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gnutls-3.8.10-4.el10_2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-4.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
 

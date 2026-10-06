@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b7e29c87aa53e2a05edf40532e6df5543eed70685bea0842bc3b07e59b4a53f3`
-- Created: `2026-09-25T22:58:14.336482889Z`
-- Virtual Size: ~ 793.31 Mb  
+- Image ID: `sha256:ac3a6f4a5cfc6839202bee541b751ddc64d63624ac1b01313f6f2ee053ee6c4a`
+- Created: `2026-10-02T02:18:27.899352319Z`
+- Virtual Size: ~ 792.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -1591,10 +1591,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libseccomp=2.5.5-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA256:248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA256:f3bf8a946020d3047581f11fe6ac71971a842115ddb362562b193861ef57d97b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz' libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz 24484 SHA256:ee1e79bc46f18a992ac80f349fdd5cfa0b5f2f6b298473b587c7cf5af89a8df6
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.dsc' libseccomp_2.5.5-1ubuntu3.1.dsc 2838 SHA256:8039579c8cd02819d8246b40483d69e2113979b5acc5900d7206e0b4bebff392
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA512:f630e7a7e53a21b7ccb4d3e7b37616b89aeceba916677c8e3032830411d77a14c2d74dcf594cd193b1acc11f52595072e28316dc44300e54083d5d7b314a38da
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA512:a32a7146598f9183179ad15603181d1066e806d01f7c5f215d5405ad8618c06a265d05fff3b4a6cc49c50a577d93d6b920e85f6a581786b3db7389f52a4638e2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz' libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz 24484 SHA512:89e68d82dd1985352e7ff0057fb1682c6b5beb0857c7329034d696bdc81e880f395309f065c23ff1f92ac7ad1a3c5ca46fe264309ce2be7dcbd0367d9e39cbde
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu3.1.dsc' libseccomp_2.5.5-1ubuntu3.1.dsc 2838 SHA512:bb64748ac6031e104c70a59a06e1b00ab4c516e3342b2bef50a7cd0dcf4fe3bfc316288da871994cfe39b42da968831efb20a8c51c3df74ab82983d9ecffdfc4
 ```
 
 ### `dpkg` source package: `libselinux=3.5-2ubuntu2.1`
@@ -2095,12 +2095,12 @@ $ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.19
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.19.dsc' openssh_9.6p1-3ubuntu13.19.dsc 3102 SHA512:203374cc9a32d229abc9f51d59a9d6c6265ece1501146c316fd4a81a7261bf00e7c0a92347f6a278ca73b4c93933de3ccc251ad426c82dce6344e802674b09e4
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.15`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.16`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.15`
-- `openssl=3.0.13-0ubuntu3.15`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.16`
+- `openssl=3.0.13-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2109,9 +2109,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.debian.tar.xz' openssl_3.0.13-0ubuntu3.16.debian.tar.xz 223332 SHA512:55f136d2ddff466a14bcbd09cf6c9d6f6a847a5d78bcfadb2b6eaeee19398d14f7a8e6a9a82f3ed10ece70baab0933c0ff155b179294a549f013157e62b91d56
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.dsc' openssl_3.0.13-0ubuntu3.16.dsc 2516 SHA512:713ae161099b664e5396b95f25ab2d33784370bfcb47f9c28402b51fbe932bcde7c695630ad9c8c8d1515448e8b6ed023beeffa7425132ee70c2491dd86609f2
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 

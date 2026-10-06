@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df617a8223769723dea2e2ed4d092fe4f158d19858002c8a313db9afcc2a7836`
-- Created: `2026-09-25T23:00:16.017479986Z`
-- Virtual Size: ~ 571.11 Mb  
+- Image ID: `sha256:c86543bdc9cec451a5264d55a451d71e916275a671818ee27d5f5a686750425f`
+- Created: `2026-10-02T23:50:19.786901278Z`
+- Virtual Size: ~ 577.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -806,16 +806,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -993,16 +993,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -1044,16 +1044,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -1095,16 +1095,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1384,16 +1384,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -1418,16 +1418,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1469,16 +1469,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -1843,16 +1843,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.7-r1 description:
+pyc-3.14.8-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.7-r1 webpage:
+pyc-3.14.8-r0 webpage:
 https://www.python.org/
 
-pyc-3.14.7-r1 installed size:
+pyc-3.14.8-r0 installed size:
 0 B
 
-pyc-3.14.7-r1 license:
+pyc-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1860,16 +1860,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.7-r1 description:
+python3-3.14.8-r0 description:
 High-level scripting language
 
-python3-3.14.7-r1 webpage:
+python3-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-3.14.7-r1 installed size:
+python3-3.14.8-r0 installed size:
 22 MiB
 
-python3-3.14.7-r1 license:
+python3-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1877,16 +1877,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.7-r1 description:
+python3-pyc-3.14.8-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.7-r1 webpage:
+python3-pyc-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.7-r1 installed size:
+python3-pyc-3.14.8-r0 installed size:
 0 B
 
-python3-pyc-3.14.7-r1 license:
+python3-pyc-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1894,16 +1894,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.7-r1 description:
+python3-pycache-pyc0-3.14.8-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.7-r1 webpage:
+python3-pycache-pyc0-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.7-r1 installed size:
+python3-pycache-pyc0-3.14.8-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.7-r1 license:
+python3-pycache-pyc0-3.14.8-r0 license:
 PSF-2.0
 
 ```
