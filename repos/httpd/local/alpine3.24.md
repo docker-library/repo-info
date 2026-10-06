@@ -1,18 +1,18 @@
-# `httpd:2.4.68-alpine`
+# `httpd:2.4.69-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:71cc3b294a7d5cab671380adce59be59f7f45683feafc524b5f017f2b7fa0376`
-- Created: `2026-09-17T21:17:01.091081141Z`
-- Virtual Size: ~ 66.92 Mb  
+- Image ID: `sha256:49c4a5d42d02391333a9d6a9caee6a46fa43fe3fd6fa381b89cd0601ff93bb82`
+- Created: `2026-10-02T22:50:12.614723648Z`
+- Virtual Size: ~ 73.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.68`
-  - `HTTPD_SHA256=68c74d4df38c26bed4dfbdb8f3baf1eb532f3872357becc1bba5d136f6b63c06`
+  - `HTTPD_VERSION=2.4.69`
+  - `HTTPD_SHA256=c5e6ebc66e349b87d7fc6916ae7cc2a808ed348003de134cf9e9d89d3e2cc73d`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
@@ -326,16 +326,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -360,16 +360,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
@@ -394,16 +394,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -445,16 +445,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -564,16 +564,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -598,16 +598,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.42.2-r0 description:
+perl-5.42.2-r1 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.42.2-r0 webpage:
+perl-5.42.2-r1 webpage:
 https://www.perl.org/
 
-perl-5.42.2-r0 installed size:
+perl-5.42.2-r1 installed size:
 38 MiB
 
-perl-5.42.2-r0 license:
+perl-5.42.2-r1 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
