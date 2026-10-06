@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22e049d91cac28d0d222079850bd2b48de4506b3a43ffc621653a440ea6f216f`
-- Created: `2026-09-25T23:02:41.575786713Z`
-- Virtual Size: ~ 361.03 Mb  
+- Image ID: `sha256:809cdd37222524857bbe265cde4ba958e5938aca0231d120ee479dce5fce6bd4`
+- Created: `2026-10-02T23:51:11.097070683Z`
+- Virtual Size: ~ 367.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -653,16 +653,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -840,16 +840,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -874,16 +874,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1061,16 +1061,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```
