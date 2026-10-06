@@ -1,7 +1,7 @@
 ## `hylang:pypy`
 
 ```console
-$ docker pull hylang@sha256:4622375c44f699466d037deff3be9b66e7a1504dd91b1d4709765ac50f40c87a
+$ docker pull hylang@sha256:64de93158c67f7ae088796c69d75e748ae7141540330f5e92e2144a054e1c082
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,79 +18,79 @@ $ docker pull hylang@sha256:4622375c44f699466d037deff3be9b66e7a1504dd91b1d470976
 ### `hylang:pypy` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:4b1bdbdefab0f0578c38af5a833a3ff243516acd70ec5238449416ccba24f6bd
+$ docker pull hylang@sha256:3b83e76986c56821847109b0837f71027b4574e71a842bce6e95877310d1b4f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.6 MB (74557322 bytes)**  
+-	Total Size: **74.6 MB (74570420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c523fdb11506f917b41c9389c61c0212a9910dd7cf0dbe52762b0bcfaa4b422`
+-	Image ID: `sha256:dc351f50c985c86e71859afd26e62ff47f01d9cec832b501c482e37c36f3a5c0`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Fri, 18 Sep 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1789689600'
-# Mon, 21 Sep 2026 23:04:20 GMT
+# Mon, 05 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1791158400'
+# Tue, 06 Oct 2026 01:51:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 21 Sep 2026 23:05:04 GMT
+# Tue, 06 Oct 2026 01:52:34 GMT
 ENV LANG=C.UTF-8
-# Mon, 21 Sep 2026 23:05:04 GMT
+# Tue, 06 Oct 2026 01:52:34 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 21 Sep 2026 23:05:04 GMT
+# Tue, 06 Oct 2026 01:52:34 GMT
 ENV PYPY_VERSION=8.0.0
-# Mon, 21 Sep 2026 23:05:04 GMT
+# Tue, 06 Oct 2026 01:52:34 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.11-v8.0.0-linux64.tar.gz'; 			sha256='66a3657e9ddf2d62ead44d3a44b9ea2f6e7dbf28d812554cae5c982a0585bfa5'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.11-v8.0.0-aarch64.tar.gz'; 			sha256='37faf1a0b00131748910ad21844a9b1b3fedd630c89b01ec98cdb1b5466ffca5'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.11-v8.0.0-linux32.tar.gz'; 			sha256='14fcf398eacffdc98db2f3b10ae9e8c9628932dc89b0958d145b9fd9c7307301'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.11; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 	pip install --disable-pip-version-check --no-cache-dir --no-compile 'wheel<0.46'; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Mon, 21 Sep 2026 23:05:04 GMT
+# Tue, 06 Oct 2026 01:52:34 GMT
 CMD ["pypy3"]
-# Mon, 21 Sep 2026 23:07:16 GMT
+# Tue, 06 Oct 2026 02:51:51 GMT
 ENV HY_VERSION=1.3.1
-# Mon, 21 Sep 2026 23:07:16 GMT
+# Tue, 06 Oct 2026 02:51:51 GMT
 ENV HYRULE_VERSION=1.1.0
-# Mon, 21 Sep 2026 23:07:16 GMT
+# Tue, 06 Oct 2026 02:51:51 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Mon, 21 Sep 2026 23:07:16 GMT
+# Tue, 06 Oct 2026 02:51:51 GMT
 CMD ["hy"]
 ```
 
 -	Layers:
-	-	`sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8`  
-		Last Modified: Sat, 19 Sep 2026 00:06:05 GMT  
-		Size: 29.8 MB (29830418 bytes)  
+	-	`sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e`  
+		Last Modified: Tue, 06 Oct 2026 00:13:48 GMT  
+		Size: 29.8 MB (29843350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0a217d87b01411aae8295f9ffd043abd9990c12a2f6a35a28e48ffd762cdf6d`  
-		Last Modified: Mon, 21 Sep 2026 23:05:16 GMT  
-		Size: 1.2 MB (1221121 bytes)  
+	-	`sha256:714bef88adb14646298cfb0c80220196959752a57a7e574ad6d12ee11bada890`  
+		Last Modified: Tue, 06 Oct 2026 01:52:46 GMT  
+		Size: 1.2 MB (1221091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7cbd642c08817c89249a9309a75b666044f0e3aa9dd94bbd2cff773a44425da1`  
-		Last Modified: Mon, 21 Sep 2026 23:05:17 GMT  
-		Size: 36.3 MB (36318933 bytes)  
+	-	`sha256:e29c031d85f69f0afe158e5b66ebeaa32a45098f31ca9d3ab6ba8ce88bf06df5`  
+		Last Modified: Tue, 06 Oct 2026 01:52:47 GMT  
+		Size: 36.3 MB (36319021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5179db30853b63c0fdc0a69a28c9ea64d53e9222b3288a64082828d71d0f7cbd`  
-		Last Modified: Mon, 21 Sep 2026 23:07:25 GMT  
-		Size: 7.2 MB (7186850 bytes)  
+	-	`sha256:0910e4d79db0cf7341612df088c28f1bbcb55d1bd2a8f022257b4e2f7453982b`  
+		Last Modified: Tue, 06 Oct 2026 02:51:58 GMT  
+		Size: 7.2 MB (7186958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:04b86e26e99e1473b361ac8cb4ed8985bd5f6fd048833b8617e1a1010dd9e6b7
+$ docker pull hylang@sha256:157fec63fec6578255ab68b073bf98a549bd561d390ad3f6cac9ba0f58adcb48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2314920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d6a8133cd2f4bedc52796df5ea612b2db46f472a720ba6d3c08890e31a74a7a`
+-	Image ID: `sha256:fd72200577365661d00bdb5592e1a8b933518baa8cbf157ef0ab05aad505d22b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7dfb0d028bb40357bbbd90598f62d18026a0a09458ad3b687136571b058e4b67`  
-		Last Modified: Mon, 21 Sep 2026 23:07:24 GMT  
+	-	`sha256:afe6550c05049b2c682b4dbf09f9f1f0e2a729dd74ccfbedef3a10b691c5583e`  
+		Last Modified: Tue, 06 Oct 2026 02:51:58 GMT  
 		Size: 2.3 MB (2303631 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cab468a6a6fd3a494065f6be401c75572d1e8a4ccf27d35976da120df17efd6c`  
-		Last Modified: Mon, 21 Sep 2026 23:07:24 GMT  
+	-	`sha256:d14abef8acf71df75750b2540dc557cffa2b3689ad9ac5b6d4f450a8a01355da`  
+		Last Modified: Tue, 06 Oct 2026 02:51:58 GMT  
 		Size: 11.3 KB (11289 bytes)  
 		MIME: application/vnd.in-toto+json
 
