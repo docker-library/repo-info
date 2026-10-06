@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-21-noble`
 
 ```console
-$ docker pull maven@sha256:3a34632e69ee8ab3dd74a3aab539c1dd9ffe798f4f4b690a18dfca6f17fcae0a
+$ docker pull maven@sha256:bdbe82dfd2a640a522750f43529e4a06332fdb1eb7d069648f33b6e2469c4d48
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -288,7 +288,7 @@ $ docker pull maven@sha256:72b8aa8049516f5bd3032d47c841a8bd2569ea3bfeea8d5215f42
 ### `maven:3-eclipse-temurin-21-noble` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:ece99ad5db210cee59e00365dd4db221f742096d49dd9f113563cac201f5a6f0
+$ docker pull maven@sha256:71e45a71c29b53cef6227ad7a802e03726fe744fd4c83ae0ead5d370e3265a32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -398,25 +398,25 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-21-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ab40abe4a3c1a82fe408686320a34433a8f94f7df89b2e00384b217b546db251
+$ docker pull maven@sha256:705718237a2c3af02ce9aca8187636ac539fb3c0d836aa4885a6ac80a27efeb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5106446 bytes)**  
+-	Total Size: **5.1 MB (5104385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a73f8c5a8812f516be84da2a15ce331268b8dc13bf1c98145f78b6edbf380ad8`
+-	Image ID: `sha256:0aeb71832610ccc7119974665d515182245fe17eecb34882659f0f4b8ed978af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f6db7b9e1552033fd9c478e15e6922879e9a92ead78af3d8778be0fe87ba2117`  
-		Last Modified: Fri, 02 Oct 2026 12:18:36 GMT  
-		Size: 5.1 MB (5087985 bytes)  
+	-	`sha256:f61a4819c6a50e6c016a2a807a54b5d88bf3836fe0cffd54217bb54ff30fae94`  
+		Last Modified: Mon, 05 Oct 2026 22:45:04 GMT  
+		Size: 5.1 MB (5086979 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5f3caeed62fda2ff4afd9e51a2d8a601655363fedce9746d0311c51feff29884`  
-		Last Modified: Fri, 02 Oct 2026 12:18:36 GMT  
-		Size: 18.5 KB (18461 bytes)  
+	-	`sha256:ae368f4bc4aea573c86681a8ab0237a27d4d0663eab7851f3e4620151187e508`  
+		Last Modified: Mon, 05 Oct 2026 22:45:04 GMT  
+		Size: 17.4 KB (17406 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-eclipse-temurin-21-noble` - linux; riscv64
