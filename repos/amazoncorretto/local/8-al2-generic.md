@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60dc845e78b4176bbcaac69d7874660c436bbe169aec000dea41b9a90295a3f1`
-- Created: `2026-09-28T20:10:18.283298971Z`
-- Virtual Size: ~ 332.06 Mb  
+- Image ID: `sha256:d97c35e67d983c32942bf4d5095395a424238ce264376a6c1cb45f4a61fecadd`
+- Created: `2026-10-05T21:35:50.12851918Z`
+- Virtual Size: ~ 332.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -103,15 +103,15 @@ $ dnf --quiet download --source --url cpio-2.12-11.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/bb095c4c518e2c72a241855ea49e34dc5a9972ff7cecfcbdd3e1975a346843de/cpio-2.12-11.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `curl-8.3.0-1.amzn2.0.12.x86_64`
+### `rpm` package: `curl-8.3.0-1.amzn2.0.13.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
+$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.13
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/5c18ff805c1ba1ee52de0078af3be485a1e3c685335ac720b94981162251c4f8/curl-8.3.0-1.amzn2.0.13.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
@@ -390,7 +390,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_504.b01-1.x86_64`
+### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_504.b04-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
 
@@ -495,15 +495,15 @@ $ dnf --quiet download --source --url libcrypt-2.26-64.amzn2.0.6
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/9aeaf65407312d50d5af9947e5b68e57e3b91c68da40b595b47fcf1336a491d3/glibc-2.26-64.amzn2.0.6.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.3.0-1.amzn2.0.12.x86_64`
+### `rpm` package: `libcurl-8.3.0-1.amzn2.0.13.x86_64`
 
 Licenses (from `rpm --query`): curl
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
+$ dnf --quiet download --source --url libcurl-8.3.0-1.amzn2.0.13
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/5c18ff805c1ba1ee52de0078af3be485a1e3c685335ac720b94981162251c4f8/curl-8.3.0-1.amzn2.0.13.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-24.amzn2.0.5.x86_64`
@@ -726,15 +726,15 @@ $ dnf --quiet download --source --url libverto-0.2.5-4.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/23eb8faf40e93c9ecbfeccc868d2e42b65bde82f92e1af0b0e9e17c387f1b049/libverto-0.2.5-4.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.26.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.27.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.26
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/705065f328b430ca0fbbdb104ed9c09a01e89b4c94e0600907053837486d7bf9/libxml2-2.9.1-6.amzn2.5.26.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.27
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3fc0e1970395a5f8c19fb58cd532a97443be51797a52048a8971cd802aecec02/../../../../../blobstore/5f1e5b0f3693de0327f88355b61d4706ce85924e1e0f86a56648bd04db5605be/libxml2-2.9.1-6.amzn2.5.27.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.amzn2.0.2.x86_64`
