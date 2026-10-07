@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ddc5730ff39358d99651eec370521ba77c8d82c95d64814488c9a27eda8e0ff`
-- Created: `2026-09-30T21:04:08.56157341Z`
-- Virtual Size: ~ 390.7 Mb  
+- Image ID: `sha256:5d2e33353dc3b0eea9f11427e9dfe856bb7b6ce22be16ef15612ad0b8a3fce76`
+- Created: `2026-10-07T22:08:29.222878769Z`
+- Virtual Size: ~ 397.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-26.0.2.1+1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-30T07:29:16Z`
+  - `build-date=2026-10-07T04:14:06Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-30T07:29:16Z`
-  - `org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6`
-  - `release=1790753097`
+  - `org.opencontainers.image.created=2026-10-07T04:14:06Z`
+  - `org.opencontainers.image.revision=b83a27d213c66aa5d7fbbd815fc09a0b8816c676`
+  - `release=1791346265`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c36f95f6d717ca86d583acb486458c81a7d871c6`
+  - `vcs-ref=b83a27d213c66aa5d7fbbd815fc09a0b8816c676`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -412,12 +412,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url gnutls-3.8.10-4.el10_2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-4.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
 
@@ -559,12 +554,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libbrotli-1.1.0-7.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/b/brotli-1.1.0-7.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.69-7.el10_2.1.x86_64`
 
@@ -1392,12 +1382,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.0-or-later AND Apache-2.0 AND BSL-1.0 AND MIT AND Unicode-DFS-2016 AND (Apache-2.0 OR MIT) AND (MIT OR Apache-2.0 OR Zlib) AND (Unlicense OR MIT)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url rpm-sequoia-1.10.1.1-2.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/r/rust-rpm-sequoia-1.10.1.1-2.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `rpm-sign-libs-4.19.1.1-23.el10.x86_64`
 

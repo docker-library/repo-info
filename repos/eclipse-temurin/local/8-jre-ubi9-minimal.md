@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ebf553ad26b767c0e5a635e66828a7e63854a83fd871b17515ab794301e7e0f`
-- Created: `2026-09-30T21:03:01.220508121Z`
+- Image ID: `sha256:0895cfe4142618845cf919b21b6b2c5707be3fab575ef2288b8dde4b99f68109`
+- Created: `2026-10-06T21:54:50.535593983Z`
 - Virtual Size: ~ 293.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk8u504-b01`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-30T07:43:22Z`
+  - `build-date=2026-10-06T09:40:51Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-30T07:43:22Z`
-  - `org.opencontainers.image.revision=f354e3d450169972cb1f8df64acae506d96d4c49`
-  - `release=1790754119`
+  - `org.opencontainers.image.created=2026-10-06T09:40:51Z`
+  - `org.opencontainers.image.revision=84687598811e20f52a46b476c889a722893da6fd`
+  - `release=1791279563`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f354e3d450169972cb1f8df64acae506d96d4c49`
+  - `vcs-ref=84687598811e20f52a46b476c889a722893da6fd`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -483,15 +483,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.10-8.el9_8.x86_64`
+### `rpm` package: `gnutls-3.8.10-9.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.10-8.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-8.el9_8.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.10-9.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-9.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -719,12 +719,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libbrotli-1.0.9-9.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/brotli-1.0.9-9.el9_7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.48-10.el9_8.1.x86_64`
 
