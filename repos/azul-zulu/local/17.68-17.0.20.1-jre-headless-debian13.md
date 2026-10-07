@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1d868252429d27179938eae080ec3d40f1121f3c427be694f9e57d8d9f6fe8d`
-- Created: `2026-09-19T00:42:35.538583872Z`
-- Virtual Size: ~ 280.76 Mb  
+- Image ID: `sha256:4e96fb051fa3d5e91e40d4a2ccb525b0224648e4693dacaa12317506ffe67316`
+- Created: `2026-10-06T01:38:58.239970917Z`
+- Virtual Size: ~ 280.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1168,11 +1168,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u5`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u6`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1+deb13u5`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1188,17 +1188,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u5
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.dsc' libpng1.6_1.6.48-1+deb13u5.dsc 2305 SHA256:746ec351ac044becb16725b903aee2c53815da9f89630767b6edbb317a50f98e
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.debian.tar.xz' libpng1.6_1.6.48-1+deb13u5.debian.tar.xz 52468 SHA256:b38d5929b9a6139f2ce02a0e831d0f3f5365410b050dc429ea079a73253fe97a
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u6
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u6.dsc' libpng1.6_1.6.48-1+deb13u6.dsc 2286 SHA256:6eb8e2cb5d3fdaf0b2381058906d0003c1667295eb4b965c9c653336e61872ae
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u6.debian.tar.xz' libpng1.6_1.6.48-1+deb13u6.debian.tar.xz 53284 SHA256:26a8f1c2bed971ad68d3549b7cd9b517e8f2ed2f23f75a7ac348452e25c87133
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u6/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -1537,13 +1537,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.7-1~deb13u2`
+### `dpkg` source package: `openssl=3.5.7-1~deb13u3`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.7-1~deb13u2`
-- `openssl=3.5.7-1~deb13u2`
-- `openssl-provider-legacy=3.5.7-1~deb13u2`
+- `libssl3t64:amd64=3.5.7-1~deb13u3`
+- `openssl=3.5.7-1~deb13u3`
+- `openssl-provider-legacy=3.5.7-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1555,18 +1555,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7-1%7edeb13u2.dsc' openssl_3.5.7-1~deb13u2.dsc 2707 SHA256:25904642004d30c5c3da4642a72a7d09f8d9eb6e5ce62dab53c0371114faf8f2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.7-1%7edeb13u2.debian.tar.xz' openssl_3.5.7-1~deb13u2.debian.tar.xz 74836 SHA256:593a47654ead460a3b609503733f80bef552ff0802799d3b47784faacc50809f
+$ apt-get source -qq --print-uris openssl=3.5.7-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u3.dsc' openssl_3.5.7-1~deb13u3.dsc 2710 SHA256:9cdb0d9daf0773ca5c0f3f5ea1fc59b1106a99e005a5c048948b826e8d3b47e1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz' openssl_3.5.7.orig.tar.gz 53153930 SHA256:a8c0d28a529ca480f9f36cf5792e2cd21984552a3c8e4aa11a24aa31aeac98e8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7.orig.tar.gz.asc' openssl_3.5.7.orig.tar.gz.asc 833 SHA256:d3d082bee3f658c31db53af625eceecf29d777c7010394bed5787ebcc98abdf2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.7-1%7edeb13u3.debian.tar.xz' openssl_3.5.7-1~deb13u3.debian.tar.xz 147344 SHA256:0a427fdc3e773f4119a7dd5b36d1f0903a163cf4ea15d812bb823b251ff1cbc5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.7-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.7-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.7-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -1608,11 +1608,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pam/1.7.0-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pam/1.7.0-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcre2=10.46-1~deb13u2`
+### `dpkg` source package: `pcre2=10.46-1~deb13u3`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.46-1~deb13u2`
+- `libpcre2-8-0:amd64=10.46-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1625,17 +1625,17 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.46-1~deb13u2
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u2.dsc' pcre2_10.46-1~deb13u2.dsc 2380 SHA256:4eac7bfc4d11259da7d299f90b6c74b359d7cbb3be2f017e039b02524f30d2e6
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u2.diff.gz' pcre2_10.46-1~deb13u2.diff.gz 19569 SHA256:4523b65a28a1fc9c418be7e70af68a354ae128d541243b1e1ea5c03a9e542236
+$ apt-get source -qq --print-uris pcre2=10.46-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.dsc' pcre2_10.46-1~deb13u3.dsc 2406 SHA256:5f317534eff1e33f0a5690a866ba2f2c9399c60ce9b74c89039d4de372420c5c
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.diff.gz' pcre2_10.46-1~deb13u3.diff.gz 20405 SHA256:28734c85365f431a4494c2efe2cdb42ed432673f962e421826f3c3b7aa76c4cf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcre2/10.46-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.46-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.46-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pcre2/10.46-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.46-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.46-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.40.1-6+deb13u1`
 
