@@ -154,9 +154,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris aom=3.3.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0.orig.tar.gz' aom_3.3.0.orig.tar.gz 4768166 SHA256:298ced1f5aeed8f7c4e21138eeb646b19486e9c6e2d711640f4ae5822ad330c1
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0-1ubuntu0.1.debian.tar.xz' aom_3.3.0-1ubuntu0.1.debian.tar.xz 14276 SHA256:59895e30f07c22e9784102b2244219a03c29d529334ebace61e634232c02a53f
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0-1ubuntu0.1.dsc' aom_3.3.0-1ubuntu0.1.dsc 2175 SHA256:b62109a6c1f94ecd07527cafaf288eac6a2bf1f25a7247bbc74d6407c3c30d75
+'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0.orig.tar.gz' aom_3.3.0.orig.tar.gz 4768166 SHA512:d385a38350a0dbfa9a032c6435a25426b9ed9a037e858add93cfc70cf8aedcc5e38270cd821ee48fff194894a238af85cf8904d206d15c1ba557ed7830558f88
+'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0-1ubuntu0.1.debian.tar.xz' aom_3.3.0-1ubuntu0.1.debian.tar.xz 14276 SHA512:80d9f6443a54afb7ee40d370860658adbe515df712a1558026e06377dfea74674278aee13b3977cb346c1e0a2777d69f4678531404363d121a9b008e4c99c8fc
+'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_3.3.0-1ubuntu0.1.dsc' aom_3.3.0-1ubuntu0.1.dsc 2175 SHA512:34be91d0dc147b88b7a53a29fbef0cb24696b2445bff6a703b7923acc7038368dbb3ad569c384dc8e297aa63e8dc02fe427f9b4ed033f3b0d17d6ca31f12b355
 ```
 
 ### `dpkg` source package: `apparmor=3.0.4-2ubuntu2.5`
@@ -1605,9 +1605,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.186-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186.orig.tar.bz2' elfutils_0.186.orig.tar.bz2 9230491 SHA256:7f6fb9149b1673d38d9178a0d3e0fb8a1ec4f53a9f4c2ff89469609879641177
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186-1ubuntu0.1.debian.tar.xz' elfutils_0.186-1ubuntu0.1.debian.tar.xz 39200 SHA256:01eae51a051c8fae1d2acc3a70dc6b06282448e9d5dc45adedf902f8e381d9f6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186-1ubuntu0.1.dsc' elfutils_0.186-1ubuntu0.1.dsc 3349 SHA256:d43ad325a63e52375fe807ce2c78b29a8bdfc6ae1a1879628fd13b461696824a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186.orig.tar.bz2' elfutils_0.186.orig.tar.bz2 9230491 SHA512:c9180b27ec62935f18b9431268d176f6023d1bb938731d2af6e7626ae460af6608a70ba68483aa1ec7e6cb0fa0528b661ca8b68bc4f58ea8e18af527c5950c78
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186-1ubuntu0.1.debian.tar.xz' elfutils_0.186-1ubuntu0.1.debian.tar.xz 39200 SHA512:e19fb6558f7acd320d1498f34481b5224e610b5170656f16d5b8cd5309a758aea92fec0c5b005157164845416c16d265c923774d70c572355441bbaa81da72c4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.186-1ubuntu0.1.dsc' elfutils_0.186-1ubuntu0.1.dsc 3349 SHA512:3c7407825a9f408f35be6d986ba60ce253e1dd652073bdb61e1fcaa619bd7f71e7aae032803c61db3ad32580dcd1c660e59fdf1c7ba2a16c3643467816deb32d
 ```
 
 ### `dpkg` source package: `emacsen-common=3.0.4`
@@ -1850,18 +1850,9 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype-dev/copyright`, `/usr/share/
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.11.1+dfsg-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.11.1+dfsg.orig-ft2demos.tar.xz 257240 SHA256:c60620d49d0f16d95586eb868c01b129569409e6cfdcb87a78e0482a12604672
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.11.1+dfsg.orig-ft2demos.tar.xz.asc 195 SHA256:d911a95830c50efcf60398e51db4ec307bbf4d24168377b515aded0611e977c0
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.11.1+dfsg.orig-ft2docs.tar.xz 2038348 SHA256:755e29908093c19138a38775784b0accf7e838ffa28a25b8722b3dfe651d80fa
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.11.1+dfsg.orig-ft2docs.tar.xz.asc 195 SHA256:67cbc2f192460dc4d46129e7debe55b40a9fa6e224ffeed70b4cf397ebaccab5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg.orig.tar.xz' freetype_2.11.1+dfsg.orig.tar.xz 1988020 SHA256:ef93541237834445eb7ff355e7d4139d48844f9c977a485dea1316df54994473
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg-1ubuntu0.3.debian.tar.xz' freetype_2.11.1+dfsg-1ubuntu0.3.debian.tar.xz 42292 SHA256:06de0e18b9ba09bbe576c2941784fe2c08cee498fdcc6d15b0e42eea92637e83
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.11.1%2bdfsg-1ubuntu0.3.dsc' freetype_2.11.1+dfsg-1ubuntu0.3.dsc 3791 SHA256:6048c3a9985b597d1964ca07e38deaaed6fdf743d39cf88d17887604e480dab8
-```
 
 ### `dpkg` source package: `freexl=1.0.6-1`
 
@@ -3278,15 +3269,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.6.0-1ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz' libarchive_3.6.0.orig.tar.xz 6400620 SHA512:eeffec08a632cdf55d46b0f4b8261de20128163c39f63422aa5af081c9c5159a9445bca5f89ebaff984d9d5387b5c6901166949df09a2e46fe5adec31bfad0e5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz.asc' libarchive_3.6.0.orig.tar.xz.asc 833 SHA512:be03f9376eaafa77379ccbbc396602039ba7ac79bf496a5a7f60c847296b8425579d267dc6a96a23c07a65a1a8a8d1cc77fae6deb9dcd3fc2bdfa259b623a8d0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.8.debian.tar.xz' libarchive_3.6.0-1ubuntu1.8.debian.tar.xz 39868 SHA512:006664fe5fafb298f1d4f1cf582efc70c4554c851c94dab8762bfd1217a4f38ccbb77c13ea846ee4d368bc128fb342f01acf790dae288b58a83dd98950bdbc42
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.8.dsc' libarchive_3.6.0-1ubuntu1.8.dsc 2660 SHA512:14ba4270e2aa288384458798672b807edbb72961c241c3cf0a12695048e7d2903b1ba0bb3ccbff837afad77943118f2a5e2c71cc2ff0a9ab45a651b5bed139fa
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -4458,14 +4443,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.6.debian.tar.xz 51756 SHA512:5b5a9954e6a126aaccae6c2b6992f63237267f67a7f4ebadcbd7db84f5cd1363557f6fa8955e9b1fb09c89859d06692ae6f03cbda8f8377027346e2456985c25
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.6.dsc' libpng1.6_1.6.37-3ubuntu0.6.dsc 2377 SHA512:6b94b7d48a89d4c0950ee8875c38610c2f854eaf1fe6f0191f89cefed3346d3e56315a44c423ca4de091fe0ac7736d09278d235fa0faf40b4bbec822b24e7ad6
-```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
@@ -5794,9 +5774,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris llvm-toolchain-14=1:14.0.0-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0.orig.tar.xz' llvm-toolchain-14_14.0.0.orig.tar.xz 129745012 SHA256:10a19af09e7ddc2eef267304de97abc0394e0d0fe2a67f3a1aca7461cc1b0655
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0-1ubuntu1.1.debian.tar.xz' llvm-toolchain-14_14.0.0-1ubuntu1.1.debian.tar.xz 154536 SHA256:7abf2e6fc7b7522b8d5f49d264ecf8b68c6fc8d53af04b47d17305d0574569ea
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0-1ubuntu1.1.dsc' llvm-toolchain-14_14.0.0-1ubuntu1.1.dsc 6912 SHA256:059552beeeec0f68d5fba48331ff4eb3d873f08bef1502b99554555eaa98b12b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0.orig.tar.xz' llvm-toolchain-14_14.0.0.orig.tar.xz 129745012 SHA512:03c181e8735c8f187d4af2a2cc00901372802a1509a1606e6936d12e9ecc072f0f75dc4f2b2cc64a0258a883e65ef07432498d218fa4cc697b7acb3f88fc54e5
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0-1ubuntu1.1.debian.tar.xz' llvm-toolchain-14_14.0.0-1ubuntu1.1.debian.tar.xz 154536 SHA512:64356f878503f3f76f86740b48a543935cffe8c45f87627bd0dc69557bf82e664d538e49062e1f154a87134bc80ea6ed4633a8b24cd33eba75f1cfed803fc968
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-14/llvm-toolchain-14_14.0.0-1ubuntu1.1.dsc' llvm-toolchain-14_14.0.0-1ubuntu1.1.dsc 6912 SHA512:ef82588c98ddc5797e22423a952f3ac8baf4ca6289ecfb33104333811ac4ed850eaa0a3260761ad67aebc8c2459fc66e50076c3541d75d178efa58f0dc5d96b7
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-0ubuntu0.22.04.3`
@@ -7437,14 +7417,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.13.debian.tar.xz' poppler_22.02.0-2ubuntu0.13.debian.tar.xz 47148 SHA512:0f3a6d6d1814b9cbb021989865ff6e3ee5e6d7e725081bd2a13da723cd920db89299983afabfe551cd3ab348680e654fefd072837a66b200343466b0644657b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.13.dsc' poppler_22.02.0-2ubuntu0.13.dsc 3364 SHA512:ee15b222c53c93f9a6400c02a656e32ff083bc9b2cf58cac07acd7e104a2e382ed2fbbe13510561d75c90f8fc20b69513e342057e1c54a6de280e8ef168ff3fa
-```
 
 ### `dpkg` source package: `postgresql-14=14.24-0ubuntu0.22.04.1`
 
@@ -12582,15 +12557,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `Zlib`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.9-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz' sudo_1.9.9.orig.tar.gz 4456969 SHA256:6d6ee863a3bc26c87661093a74ec63e10fd031ceba714642d21636dfe25e3e00
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9.orig.tar.gz.asc' sudo_1.9.9.orig.tar.gz.asc 833 SHA256:799e03bdeb3d4eaaefed3cb16546bcd6cba310d573ad4dc39cf5bbf91578810c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.6.debian.tar.xz' sudo_1.9.9-1ubuntu2.6.debian.tar.xz 53676 SHA256:466ff6fd38d8e3945f87f6caa98bcadb75f139f158c681e35893094e83a3876f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.9-1ubuntu2.6.dsc' sudo_1.9.9-1ubuntu2.6.dsc 2595 SHA256:1eb62fdb5bf02d9a3efdc8105d61f490bbb236ac5f9b0cb892a66dce4e83f8a8
-```
 
 ### `dpkg` source package: `superlu=5.3.0+dfsg1-2`
 

@@ -1201,18 +1201,9 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz 347364 SHA512:efef4187b3d9cc747daad26cef6700051388435480c60e96e371eb04be3baae1e09ac932183c3a72b7bb4db1889d2bda89a70bfb058193c73bc5a602e53a3553
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:569d05266c430b7fb361a5c74198e0047f44ba24fd723d13e89de8974a6ce3fc5837bbd551e2e404926e14da5db68bd50011c6fa6fa01d92460bd3eeaacdc0f2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz 2176140 SHA512:f2794dee78a00f91ea4241722deff64e03e7c42cbd26073ed0d7a6e0ecca14c5f87cb1dbd520ccc94311a6b0f510b4462eee3f8765e8d77841176e78d8c45837
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:9a42b83c2237cd04e5cea7e5389078a985d6e22f48c030d225c32b5da9230b0c1b8ae6dd213bef4ac572fec74c5d05b9acfc011c199f0db5995293800575514a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig.tar.xz' freetype_2.14.2+dfsg.orig.tar.xz 2246044 SHA512:fa16e901edee4b578cf920eb357ec5f8aea38fe1152e7ad8562201e7edde4d763a457dfdcf69bb1b5792c0b1ba0253e6dea2b8928141e77ab53e366be1b9af65
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.1.debian.tar.xz 45112 SHA512:4d5be2b05ace8730454a50716f303a310aa8b363ef13467b58f39035f93228f43e95b5cd7df7837beaac80f4a10efda931de565e1d2f2a9b041bb099bb04b1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.dsc' freetype_2.14.2+dfsg-1ubuntu0.1.dsc 4105 SHA512:818b73fce2b591edd77af51cfcf1d4853ea0064b8dc376128afb17dfadae4c6261ab21104129f0d37cac57ceab2107c5bed32dffd6cbb30c5b9fa72ce8abbe16
-```
 
 ### `dpkg` source package: `fribidi=1.0.16-5`
 
@@ -2041,15 +2032,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.8.5-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz' libarchive_3.8.5.orig.tar.xz 6009124 SHA512:b050ca8488143503bdec38ffcab7a5010af61f1b93c1207a3fa006d72d643b84aa8c1ab267e890eb39966ccaedd6e18db8fe5b02f2789bbd1b318a3c4cf138f3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz.asc' libarchive_3.8.5.orig.tar.xz.asc 833 SHA512:80b155e86d9f93efd3f2e65655c1fe66fb0b9b937888fd5b24e65b26418f01ee6fbd66c649079b8591c15ae593980ece3de49778bb1215eaecd9af0f2823fb71
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.2.debian.tar.xz' libarchive_3.8.5-1ubuntu2.2.debian.tar.xz 33220 SHA512:2a96dde4f51331b5e67eb50d36fb2478aa12b3cf25184173b47a95fcd9651bc388befcbf0f10f9a8f4dfb5f07ec693ac820ad7d708b2bcfc4bb5ea957b25309c
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.2.dsc' libarchive_3.8.5-1ubuntu2.2.dsc 2849 SHA512:6d429fec81cc8381dd95bcce34418c153e4b948ac8820c84d910ac341016eef4d216745e6e503e27fbe51c973312b401644ed4ebb800a857e11b2da31da5c6aa
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
@@ -8244,15 +8229,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.17p2-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz' sudo_1.9.17p2.orig.tar.gz 5451682 SHA512:c8abd6ca56e54a081c9ef1e9f6579d1db5b93ff857e60d1f58d1f425d7dc23c31c58d40b7819780688f66dfdf87a1f3bbe0a78387b007e2beb1b0e546203ea93
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz.asc' sudo_1.9.17p2.orig.tar.gz.asc 566 SHA512:7ca1949a7ffe0481d7c0f9215fdeae54fff34f0156f06c72a090515b1a97d052e63ce94cffe5a92ca23a723ddd0b0186fabc957cdc22120482c6f9f87d65a5f6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.1.debian.tar.xz' sudo_1.9.17p2-1ubuntu3.1.debian.tar.xz 64500 SHA512:48176367521641f2a10cb467803ea6e58f93ec752149a3d838496790e38b6b9e72a3d9abbf52ff80f21aab92a776e71e59923bf3870fc165f382161159417e01
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.1.dsc' sudo_1.9.17p2-1ubuntu3.1.dsc 2735 SHA512:e56f0d6622ecd9229365a9692c875f2a96fa407170a2c6bc7ba5dad9e95c736d9dbc5ffaa588616ea631133abc5a2e31ad489d8e03081bef2bda32f483f7aea4
-```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
 

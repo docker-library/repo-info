@@ -1636,9 +1636,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.190-1.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA256:8e00a3a9b5f04bc1dc273ae86281d2d26ed412020b391ffcc23198f10231d692
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz' elfutils_0.190-1.1ubuntu0.1.debian.tar.xz 46976 SHA256:4c3130951f7b865d50ff57379a258926a66bcd2753e3c12301bbb110fbb417fa
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.dsc' elfutils_0.190-1.1ubuntu0.1.dsc 3410 SHA256:7852785ce5ce51a6dad0f6b67188d94ffedaffa6d0128fecabeb6a1ccc2aabea
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz' elfutils_0.190-1.1ubuntu0.1.debian.tar.xz 46976 SHA512:f4bf523b754c8fd09c189483b3f084955b2b467e5e03338e2448ec0d4af478ea39a7d7bd4c2b7dfcfbe538a870ec452c51f840e6c33b0ffdec65837c2f6384cd
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.dsc' elfutils_0.190-1.1ubuntu0.1.dsc 3410 SHA512:56440e43ecfac444cca2cbd6f2a33f2780cea395b5caa302587c4a1e602b3c4bb45dbcede76e7767b6f18f519458b52c6300ef83b80cdebc603418fe2a4a0889
 ```
 
 ### `dpkg` source package: `empy=3.3.4-2`
@@ -2037,18 +2037,9 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype-dev/copyright`, `/usr/share/
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.13.2+dfsg-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.13.2+dfsg.orig-ft2demos.tar.xz 341140 SHA256:99ee2ed8b98bcfad17bc57c2d9699d764f20fe29ad304c69b8eb28834ca3b48e
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.13.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA256:e58ba462f7bdcdc5899f777d33453c1ce6f6e46b080047580f45c9fd9f2dc08c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.13.2+dfsg.orig-ft2docs.tar.xz 2173920 SHA256:685c25e1035a5076e5097186b3143b9c06878f3f9087d0a81e4d8538d5d15424
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.13.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA256:d7e17c8a3bce50181530ebe06346f506cbfc92ecc5ca7cc395c7dbb24a71a5c0
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg.orig.tar.xz' freetype_2.13.2+dfsg.orig.tar.xz 2220368 SHA256:48c78a4194adfcd15a4d089f3206dab8454c311f5577f3ef7eaef95f777f86e6
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg-1ubuntu0.1.debian.tar.xz' freetype_2.13.2+dfsg-1ubuntu0.1.debian.tar.xz 44692 SHA256:41371d9748c0e6f407c44c52c7fe5fbd4fbc2276a168ae528404731ae2e95b31
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.13.2%2bdfsg-1ubuntu0.1.dsc' freetype_2.13.2+dfsg-1ubuntu0.1.dsc 3606 SHA256:05368dead2fd8739fb2aa3a11e6ffd4376039b57536cc1c5cdadceb75496f385
-```
 
 ### `dpkg` source package: `freexl=2.0.0-1build2`
 
@@ -3554,15 +3545,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.8.debian.tar.xz' libarchive_3.7.2-2ubuntu0.8.debian.tar.xz 42076 SHA512:801970f6c0b9e3fbbbbffb0830bde0cd6ad4b139d4edede259740f5663abd98edc98ef7ef0cc8b140f4b32ae6bcd6e658b2238f951b787bdce2cd08ab6c716a2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.8.dsc' libarchive_3.7.2-2ubuntu0.8.dsc 2725 SHA512:cf3e87d895e841e064911ad00b39d2ffe29b5b5a3e1cb71c17c0d9fe324938e48fe9a6c5c61d48a2595dbe8bb4baad86abc16e13e2e14f423e82aea806cae546
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -4708,14 +4693,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz 50432 SHA512:ae0b6ce1f99d1c5a9d5ab5c1aa75f48f657796938b14733410c824242cc1ffcb40b50fcdb57d7a84ad9c5392388417746ea9110d4e2d2f67e6c111c26ab9915e
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.dsc' libpng1.6_1.6.43-5ubuntu0.6.dsc 2384 SHA512:1874607dce51f4d068e883e8ef95689e116e03bfa7a80809936b3825818b08850127b77fbdee36db5cd933cfd51713a2f528dff41156c2bb9602dcd1ce88cfa6
-```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -5274,10 +5254,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libunwind=1.6.2-3build1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2.orig.tar.gz' libunwind_1.6.2.orig.tar.gz 901392 SHA256:4a6aec666991fb45d0889c44aede8ad6eb108071c3554fcdff671f9c94794976
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2.orig.tar.gz.asc' libunwind_1.6.2.orig.tar.gz.asc 659 SHA256:f064387f5505fff34735a72dcaf190d2ea8a87569ef50c539cfb154986bbd4d2
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2-3build1.1.debian.tar.xz' libunwind_1.6.2-3build1.1.debian.tar.xz 16904 SHA256:1f267fd37c1a1eff97a002a0f96ce2e76bd8fa6f01c033da0d81ab715ed8f266
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2-3build1.1.dsc' libunwind_1.6.2-3build1.1.dsc 2919 SHA256:b598f97992f100e452d4766617a16275cb67674bb77731d649854729dc5b728a
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2.orig.tar.gz' libunwind_1.6.2.orig.tar.gz 901392 SHA512:1d17dfb14f99a894a6cda256caf9ec481c14068aaf8f3a85fa3befa7c7cca7fca0f544a91a3a7c2f2fc55bab19b06a67ca79f55ac9081151d94478c7f611f8f7
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2.orig.tar.gz.asc' libunwind_1.6.2.orig.tar.gz.asc 659 SHA512:53aa6a89b471856d4f62976476c81c576bbf8e27f00b9229fd2722424c1888f13e2f6745240e085a4e36a8043f0b14a633bfddf6c61603d8723db3faf9dad1ac
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2-3build1.1.debian.tar.xz' libunwind_1.6.2-3build1.1.debian.tar.xz 16904 SHA512:ef73541340d65ce1adb7ca763fe8e9635b80f2e84386310d683968ec8d8d32591b76998bfb30bbd7c79ff493346171dd1619409cfe90565d25eed5bf92869ca8
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.6.2-3build1.1.dsc' libunwind_1.6.2-3build1.1.dsc 2919 SHA512:50ad24ece273cf93e5dd3d25e1eb665334d83307bed1e896f3ed14c104d3926ad3f5c161c13533cd68b9286722a1385852c6f3b37e3995f0d4a064ba30e0ae29
 ```
 
 ### `dpkg` source package: `liburcu=0.14.0-3.1build1`
@@ -7809,14 +7789,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.debian.tar.xz' poppler_24.02.0-1ubuntu9.9.debian.tar.xz 44256 SHA512:ba83a39c4444ae67ecd73977eb6ca00980343de1b20c7f9d3e0569535bf778ce03f360351210468f0b996272058371aaa50bc60cf6a60181eae29ecf2c2a2a13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.dsc' poppler_24.02.0-1ubuntu9.9.dsc 3940 SHA512:5d261665cc98f0d14da1845eb609bccd0c5516e6b80b00bba097451cec84442ebb91f74ec116e5796bba682ee94d4cd406566bcd7b5107c49352ca6c51d31e3b
-```
 
 ### `dpkg` source package: `popt=1.19+dfsg-1build1`
 
@@ -13239,15 +13214,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA512:ebac69719de2fe7bd587924701bdd24149bf376a68b17ec02f69b2b96d4bb6fa5eb8260a073ec5ea046d3ac69bb5b1c0b9d61709fe6a56f1f66e40817a70b15a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA512:2447b8b660d8902594a9e809cd96fef8c6074223ced086c1a81453fbe509c387f48f6c2817c802c7d7f3225fcea2539a0e420a4fb120384de5535abec8d60f34
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz 76884 SHA512:ba10e7bfa4669779f661ea38d89a8fe9da50a08b21d906997b81a31e3fc1f52f4f87ed0854f3cd855395cb294328fd83283f50e75e96a12d214ac432aea3d74d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.dsc' sudo_1.9.15p5-3ubuntu5.24.04.3.dsc 2763 SHA512:e866dd616e7630defa896af454ac1435a21b51fd2bd726f0c21f54931eb8ac0cc657b703497c8c2341484debbc039b224f9f178887c7430a731b777a71d00aec
-```
 
 ### `dpkg` source package: `superlu=6.0.1+dfsg1-1build1`
 
