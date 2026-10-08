@@ -1,18 +1,18 @@
-# `docker:29.9.0-rc.1-dind-rootless`
+# `docker:29.9.0-rc.2-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd43d7634f364b3915aa896f33d83a3add57134a971e3d506499b7bb1dc5d64a`
-- Created: `2026-10-01T23:48:40.961729735Z`
-- Virtual Size: ~ 364.32 Mb  
+- Image ID: `sha256:d37be1294140f487cef317f7d297bd39f9b05ecb576738fa5a5c5528afec51a4`
+- Created: `2026-10-08T01:10:06.406578648Z`
+- Virtual Size: ~ 365.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.9.0-rc.1`
+  - `DOCKER_VERSION=29.9.0-rc.2`
   - `DOCKER_BUILDX_VERSION=0.37.2`
-  - `DOCKER_COMPOSE_VERSION=5.5.1`
+  - `DOCKER_COMPOSE_VERSION=5.6.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -786,16 +786,16 @@ MIT
 ### `apk` package: `libseccomp`
 
 ```console
-libseccomp-2.6.0-r2 description:
+libseccomp-2.6.1-r0 description:
 interface to the Linux Kernel's syscall filtering mechanism
 
-libseccomp-2.6.0-r2 webpage:
+libseccomp-2.6.1-r0 webpage:
 https://github.com/seccomp/libseccomp
 
-libseccomp-2.6.0-r2 installed size:
-163 KiB
+libseccomp-2.6.1-r0 installed size:
+167 KiB
 
-libseccomp-2.6.0-r2 license:
+libseccomp-2.6.1-r0 license:
 LGPL-2.1-or-later
 
 ```

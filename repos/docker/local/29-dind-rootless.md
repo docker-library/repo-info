@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb5534af3018b5d4f793eda678a2e97ff766e2cffea35ff1be2bca190caac122`
-- Created: `2026-10-01T01:09:52.253526793Z`
-- Virtual Size: ~ 401.87 Mb  
+- Image ID: `sha256:70dd8f2105a8bbe17be1ed3d11a075dc82ec3c850375a8c75b7c0b195a693aa7`
+- Created: `2026-10-08T01:10:24.402588861Z`
+- Virtual Size: ~ 402.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=29.8.2`
   - `DOCKER_BUILDX_VERSION=0.37.2`
-  - `DOCKER_COMPOSE_VERSION=5.5.1`
+  - `DOCKER_COMPOSE_VERSION=5.6.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -786,16 +786,16 @@ MIT
 ### `apk` package: `libseccomp`
 
 ```console
-libseccomp-2.6.0-r2 description:
+libseccomp-2.6.1-r0 description:
 interface to the Linux Kernel's syscall filtering mechanism
 
-libseccomp-2.6.0-r2 webpage:
+libseccomp-2.6.1-r0 webpage:
 https://github.com/seccomp/libseccomp
 
-libseccomp-2.6.0-r2 installed size:
-163 KiB
+libseccomp-2.6.1-r0 installed size:
+167 KiB
 
-libseccomp-2.6.0-r2 license:
+libseccomp-2.6.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -939,16 +939,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -1024,16 +1024,16 @@ Apache-2.0
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
