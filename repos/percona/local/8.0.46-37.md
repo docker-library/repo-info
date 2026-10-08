@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bef904a26d0b7bea4b61cc461a9fbe3283878670edf1a34a5b29d34b7a94ec9b`
-- Created: `2026-09-30T21:03:04.754210655Z`
+- Image ID: `sha256:dd176b8b4cfe42ecf67fa491b232ed7d8491f150d543181be4c799c6bbdadc05`
+- Created: `2026-10-06T21:53:49.048002845Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-30T07:43:22Z`
+  - `build-date=2026-10-06T09:40:51Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-09-30T07:43:22Z`
-  - `org.opencontainers.image.revision=f354e3d450169972cb1f8df64acae506d96d4c49`
-  - `release=1790754119`
+  - `org.opencontainers.image.created=2026-10-06T09:40:51Z`
+  - `org.opencontainers.image.revision=84687598811e20f52a46b476c889a722893da6fd`
+  - `release=1791279563`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f354e3d450169972cb1f8df64acae506d96d4c49`
+  - `vcs-ref=84687598811e20f52a46b476c889a722893da6fd`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -409,15 +409,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.10-8.el9_8.x86_64`
+### `rpm` package: `gnutls-3.8.10-9.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.10-8.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-8.el9_8.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.10-9.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-9.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
