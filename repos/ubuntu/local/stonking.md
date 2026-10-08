@@ -996,14 +996,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl4/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=4.0.1-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1.orig.tar.gz' openssl_4.0.1.orig.tar.gz 55079428 SHA512:84104cbd928a3fbcb9a90c567fa37f927b974d4744b8cd774641e0d07db065d1564fa4c3df4c26818f3c6e726ca71b3aae72109d10482bba3396949886fc8892
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1-1ubuntu4.debian.tar.xz' openssl_4.0.1-1ubuntu4.debian.tar.xz 67368 SHA512:c15f4862fc7b56d07a78ceaf66aaf0356f76ef496c94f20d368be4bcb66121de6b10abcc4f9ca5c859e7f80060c0202ef338698fc3e87a2b354c6054acffd189
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_4.0.1-1ubuntu4.dsc' openssl_4.0.1-1ubuntu4.dsc 2050 SHA512:e0d0baca65bfb4a61d38093c03a08ba16ba29800227d1e1dc01c76bb605c2168ed9d49a7241caf5b31106ddd8cc97a82c76e45aafaec6a2f706ba063487541eb
-```
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu4`
 
