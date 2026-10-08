@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5cff4342c5035d1a122dedc109d2935776342d02ebf4ee149430967dec60d686`
-- Created: `2026-10-01T00:12:49.416283133Z`
-- Virtual Size: ~ 624.48 Mb  
+- Image ID: `sha256:758fec659df0d17a6c58abd955a5243fc7f1818c7f2f30010849882cf54c6284`
+- Created: `2026-10-06T02:53:19.202719737Z`
+- Virtual Size: ~ 615.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -2526,11 +2526,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libpaper/2.2.5-0.3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libpaper/2.2.5-0.3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u5`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u6`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1+deb13u5`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2546,17 +2546,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u5
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.dsc' libpng1.6_1.6.48-1+deb13u5.dsc 2305 SHA256:746ec351ac044becb16725b903aee2c53815da9f89630767b6edbb317a50f98e
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.debian.tar.xz' libpng1.6_1.6.48-1+deb13u5.debian.tar.xz 52468 SHA256:b38d5929b9a6139f2ce02a0e831d0f3f5365410b050dc429ea079a73253fe97a
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u6
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u6.dsc' libpng1.6_1.6.48-1+deb13u6.dsc 2286 SHA256:6eb8e2cb5d3fdaf0b2381058906d0003c1667295eb4b965c9c653336e61872ae
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u6.debian.tar.xz' libpng1.6_1.6.48-1+deb13u6.debian.tar.xz 53284 SHA256:26a8f1c2bed971ad68d3549b7cd9b517e8f2ed2f23f75a7ac348452e25c87133
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u6/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3845,11 +3845,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/patiencediff/0.2.13-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/patiencediff/0.2.13-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcre2=10.46-1~deb13u2`
+### `dpkg` source package: `pcre2=10.46-1~deb13u3`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.46-1~deb13u2`
+- `libpcre2-8-0:amd64=10.46-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -3862,17 +3862,17 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.46-1~deb13u2
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u2.dsc' pcre2_10.46-1~deb13u2.dsc 2380 SHA256:4eac7bfc4d11259da7d299f90b6c74b359d7cbb3be2f017e039b02524f30d2e6
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u2.diff.gz' pcre2_10.46-1~deb13u2.diff.gz 19569 SHA256:4523b65a28a1fc9c418be7e70af68a354ae128d541243b1e1ea5c03a9e542236
+$ apt-get source -qq --print-uris pcre2=10.46-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.dsc' pcre2_10.46-1~deb13u3.dsc 2406 SHA256:5f317534eff1e33f0a5690a866ba2f2c9399c60ce9b74c89039d4de372420c5c
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.diff.gz' pcre2_10.46-1~deb13u3.diff.gz 20405 SHA256:28734c85365f431a4494c2efe2cdb42ed432673f962e421826f3c3b7aa76c4cf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pcre2/10.46-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.46-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.46-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pcre2/10.46-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.46-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.46-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.40.1-6+deb13u1`
 
