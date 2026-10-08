@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccc7132a0b536e475c7cf3902ee7c636643397bde80187882bcee8c55540e4bf`
-- Created: `2026-09-28T23:41:00.305975142Z`
-- Virtual Size: ~ 654.32 Mb  
+- Image ID: `sha256:09a1cc46e0ec28054b8d754604460acf7778135fc8b5155c0691bdca238a1cb1`
+- Created: `2026-10-06T02:35:47.785271728Z`
+- Virtual Size: ~ 654 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -1867,11 +1867,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libonig/6.9.8-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libonig/6.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u5`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u6`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2+deb12u5`
+- `libpng16-16:amd64=1.6.39-2+deb12u6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1887,17 +1887,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u5
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u5.dsc' libpng1.6_1.6.39-2+deb12u5.dsc 2292 SHA256:7b86211030a34deb6b0a2cd7e1d9db0fe92443fd30cab537fb89b1e7f7c9f188
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u5.debian.tar.xz' libpng1.6_1.6.39-2+deb12u5.debian.tar.xz 49904 SHA256:ab14906eda9fddf14cbb1e589b9ba7439c22e233dc3c5e3cf9356c9625565a82
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u6
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u6.dsc' libpng1.6_1.6.39-2+deb12u6.dsc 2302 SHA256:efd9099f7f74c7bcd4f1540a97be3ce1cb9bc4ff97dfc2062ea66117b17ce686
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u6.debian.tar.xz' libpng1.6_1.6.39-2+deb12u6.debian.tar.xz 51244 SHA256:bfb66eb5c000c6ce8dc4d6a146c2a81627143b8869f1e9ac9c1e5a286af3dc36
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u5/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u6/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -2812,11 +2812,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/patch/2.7.6-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/patch/2.7.6-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pcre2=10.42-1+deb12u1`
+### `dpkg` source package: `pcre2=10.42-1+deb12u2`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-1+deb12u1`
+- `libpcre2-8-0:amd64=10.42-1+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -2826,22 +2826,29 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris pcre2=10.42-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u2.dsc' pcre2_10.42-1+deb12u2.dsc 2371 SHA256:63be58a94a6d2c7f03324cc0fe1ffb32d1f366d82d0fabef581ba3cc8a8ba5a6
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
+'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.42-1%2bdeb12u2.diff.gz' pcre2_10.42-1+deb12u2.diff.gz 16865 SHA256:b28d4aeaa3198fcf2f41dffddec3d673c8ef53286ced930599f009522da11372
+```
 
-- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/pcre2/10.42-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pcre2/10.42-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.36.0-7+deb12u3`
+### `dpkg` source package: `perl=5.36.0-7+deb12u4`
 
 Binary Packages:
 
-- `libperl5.36:amd64=5.36.0-7+deb12u3`
-- `perl=5.36.0-7+deb12u3`
-- `perl-base=5.36.0-7+deb12u3`
-- `perl-modules-5.36=5.36.0-7+deb12u3`
+- `libperl5.36:amd64=5.36.0-7+deb12u4`
+- `perl=5.36.0-7+deb12u4`
+- `perl-base=5.36.0-7+deb12u4`
+- `perl-modules-5.36=5.36.0-7+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.36/copyright`)
 
@@ -2876,18 +2883,18 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u3.dsc' perl_5.36.0-7+deb12u3.dsc 2357 SHA256:ac13a1eb3d4bb63ca8c91a3695ad563b10792a3e0f2f8b74d9600625a98a68fb
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u3.debian.tar.xz' perl_5.36.0-7+deb12u3.debian.tar.xz 177092 SHA256:5dfbe06b76fd23a4cc4aef586220845de535b245a9066ec0658eb60fbe21be1b
+$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u4.dsc' perl_5.36.0-7+deb12u4.dsc 2922 SHA256:6f71e571ae69894ad2115013bbc3207e77dc796581e30a62be0297e7d90ee7b9
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u4.debian.tar.xz' perl_5.36.0-7+deb12u4.debian.tar.xz 190620 SHA256:f49d224fa9a6a356e1140f95fb5c864864b5423c9aece94cc68b4d348a3694b6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkgconf=1.8.1-1`
 
@@ -3322,11 +3329,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026b-0+deb12u1`
+### `dpkg` source package: `tzdata=2026c-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026b-0+deb12u1`
+- `tzdata=2026c-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -3335,18 +3342,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026b-0+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b-0%2bdeb12u1.dsc' tzdata_2026b-0+deb12u1.dsc 2396 SHA256:1a6e7b80823607130b79a12e5dff0d03ed81feb14faf5fffad94841e54cfe988
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA256:114543d9f19a6bfeb5bca43686aea173d38755a3db1f2eec112647ae92c6f544
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b.orig.tar.gz.asc' tzdata_2026b.orig.tar.gz.asc 833 SHA256:b69ac9d9c926cb5ef80ab0b4bbc2a462eb9b4b36167e4aac649d87b744f7ca8b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026b-0%2bdeb12u1.debian.tar.xz' tzdata_2026b-0+deb12u1.debian.tar.xz 122084 SHA256:a5b70ea0b5ffe7905e0e8bb5ac45196131ce235d3a0cf5665b4b3ac96caa2c35
+$ apt-get source -qq --print-uris tzdata=2026c-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.dsc' tzdata_2026c-0+deb12u1.dsc 2396 SHA256:0ca4eade11f843446aad110966ba335cd218f0897a1a51b82bd2b4104d6a7547
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.debian.tar.xz' tzdata_2026c-0+deb12u1.debian.tar.xz 122188 SHA256:bc6f8b573203f7e3802d6106eb814d2162c8ad7a2d3e6dcbc73d4cf87fe0986d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026b-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026b-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026b-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
