@@ -1958,15 +1958,9 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA512:ebac69719de2fe7bd587924701bdd24149bf376a68b17ec02f69b2b96d4bb6fa5eb8260a073ec5ea046d3ac69bb5b1c0b9d61709fe6a56f1f66e40817a70b15a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA512:2447b8b660d8902594a9e809cd96fef8c6074223ced086c1a81453fbe509c387f48f6c2817c802c7d7f3225fcea2539a0e420a4fb120384de5535abec8d60f34
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.3.debian.tar.xz 76884 SHA512:ba10e7bfa4669779f661ea38d89a8fe9da50a08b21d906997b81a31e3fc1f52f4f87ed0854f3cd855395cb294328fd83283f50e75e96a12d214ac432aea3d74d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.3.dsc' sudo_1.9.15p5-3ubuntu5.24.04.3.dsc 2763 SHA512:e866dd616e7630defa896af454ac1435a21b51fd2bd726f0c21f54931eb8ac0cc657b703497c8c2341484debbc039b224f9f178887c7430a731b777a71d00aec
-```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
