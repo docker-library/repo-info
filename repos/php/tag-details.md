@@ -217013,111 +217013,246 @@ $ docker pull php@sha256:b64de97d993f1212256f4257c4790e10fdd04524304c83c3717da34
 
 ## `php:8.4.27RC1`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-apache-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-apache-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-cli-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-fpm-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.4.27RC1-zts-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.5`
 
@@ -289706,87 +289841,192 @@ $ docker pull php@sha256:6a0c3ffa4504267d4d15775331107bc2a3770ff412bed5746cee337
 
 ## `php:8.6.0RC3`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-apache-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-apache-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-cli-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-fpm-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:8.6.0RC3-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull php@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `php:alpine`
 
