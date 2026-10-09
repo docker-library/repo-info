@@ -423,21 +423,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.23.0~rc2-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2-1.dsc' curl_8.23.0~rc2-1.dsc 3564 SHA256:f3c734900dcffcd9e35b2a472a64ff8d3d299188e2b036a58af614571c7e07c1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2.orig.tar.xz' curl_8.23.0~rc2.orig.tar.xz 2974064 SHA256:f9c4de02f15fa420517e1897342412864229426d8d88796e5492ac754ef6cef5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2.orig.tar.xz.asc' curl_8.23.0~rc2.orig.tar.xz.asc 488 SHA256:39080e08de02630a97a31097b423a3338fd455544afdbf57eeb0dbcb067bad3f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2-1.debian.tar.xz' curl_8.23.0~rc2-1.debian.tar.xz 65400 SHA256:018b563d9b96302f0b3f413529fc5e1d61194a5e97e934d80ae2272a40875714
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.23.0~rc2-1/
 
-- https://sources.debian.net/src/curl/8.23.0~rc2-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.23.0~rc2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.23.0~rc2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
@@ -739,20 +731,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.5-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5-2.dsc' expat_2.8.5-2.dsc 1970 SHA256:1093b599a1245827eca68383371a3b3a1991fd3c7f9537506e4e557a3c0523d4
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5.orig.tar.gz' expat_2.8.5.orig.tar.gz 8474242 SHA256:fd022c541a189bd5bee042a22188351b31e39b9389c2525fa98c28bd05c9ef21
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5-2.debian.tar.xz' expat_2.8.5-2.debian.tar.xz 15168 SHA256:1c4354bc84ba14b4269e72e41192655c1d0df48a661c6362d4349e0133ee67a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.5-2/
 
-- https://sources.debian.net/src/expat/2.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.11.0-3`
 
@@ -2429,20 +2414,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`, `/usr/share/d
 - `curl`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.5p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.5p1-1.dsc' openssh_10.5p1-1.dsc 3372 SHA256:15a621f5d4c298127b57740e271ef571760686133f344a4841aa8e96af0ad532
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.5p1.orig.tar.xz' openssh_10.5p1.orig.tar.xz 1632424 SHA256:9643e644c20dfef1271eaccc488ae4cebc9b5352b800c30771233880d985c74c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.5p1-1.debian.tar.xz' openssh_10.5p1-1.debian.tar.xz 186560 SHA256:4b19dea2fc78e93687d7f9e103542136d863e3d5c95e7d7be6088ac7979fb0cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.5p1-1/
 
-- https://sources.debian.net/src/openssh/1:10.5p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.5p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.5p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.5-1`
 

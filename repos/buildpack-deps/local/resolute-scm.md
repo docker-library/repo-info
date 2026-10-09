@@ -1931,9 +1931,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA512:66f3dd646179e71aaf41c33b6f14a207dc873d71d24f11c130a89dee317ee45398b818e5b94887b5913240964a38630d7bca3e481e0f1eff2e41d9e1cfdbdfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.debian.tar.xz' openssh_10.2p1-2ubuntu3.6.debian.tar.xz 226404 SHA512:8b220f0bc065a38d62695523294fc5ab3a2185535baa933f730fa7b60d45b76c291482ad0de64b9764f5a5fbf27755601998aa4217b498499da4033e67179218
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.dsc' openssh_10.2p1-2ubuntu3.6.dsc 3328 SHA512:29e87ca7441713dc653e5f539268f391c1155d0b74cb253a94cc5dd19dbc3401b460e571300f0fcc1def06cb62041975aa149b1a384df16352ce08ddb569e285
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA512:66f3dd646179e71aaf41c33b6f14a207dc873d71d24f11c130a89dee317ee45398b818e5b94887b5913240964a38630d7bca3e481e0f1eff2e41d9e1cfdbdfc5
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.debian.tar.xz' openssh_10.2p1-2ubuntu3.6.debian.tar.xz 226404 SHA512:8b220f0bc065a38d62695523294fc5ab3a2185535baa933f730fa7b60d45b76c291482ad0de64b9764f5a5fbf27755601998aa4217b498499da4033e67179218
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.dsc' openssh_10.2p1-2ubuntu3.6.dsc 3328 SHA512:29e87ca7441713dc653e5f539268f391c1155d0b74cb253a94cc5dd19dbc3401b460e571300f0fcc1def06cb62041975aa149b1a384df16352ce08ddb569e285
 ```
 
 ### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`

@@ -124,13 +124,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu1.tar.xz' base-files_14.2ubuntu1.tar.xz 112384 SHA512:90529cb7bc2d6d030f15521e779bbc7f493f35ac3c0160fec301cf9054303c2d42fce736a738dc76ca022ee58c2eb9602ff7faf3c6abf54effb5584d7750cef5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu1.dsc' base-files_14.2ubuntu1.dsc 1738 SHA512:fa1f8d69011c45e844d5405205439a27cbd9b0039464c21d41f02171cf6b74b89af56e7812c66a6a49b84d45cdc6f95314006c8838e548868c32e1214ead6d0c
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -648,15 +644,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.44-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz' glibc_2.44.orig.tar.xz 20620544 SHA512:963dc0275f7738653379909b64ee32e28f13cca77440f2cf9bd0ab82cb183f6cd1f7376d25cc5442de69b972713bd81bf0e38dbcca9b2a4d6649843e76fd50a5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz.asc' glibc_2.44.orig.tar.xz.asc 870 SHA512:e2034e369d2c233c9f9e155d6bc4b5e7472cace8a000253514a08b4dac3be6ed59cafe9aa6ceea2bdd07678291528c7937b358f43ab02a6f09422e7498837494
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu1.debian.tar.xz' glibc_2.44-1ubuntu1.debian.tar.xz 460036 SHA512:f31a4dfd260e668623f10292567d9126384cc2c8033b04a4262323dd7fd7185d2a08f4b33c7d5ccdf2ef0d44df32933a07084b2d5546ff20c37b77106e68ffac
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu1.dsc' glibc_2.44-1ubuntu1.dsc 9066 SHA512:7b174736da4b6ab7cbf7b510c7dd80592f869df3ae3b6fe88e228f6fac4bfe7b0b31d72330f583ca02a89d9de04fc00092b418418ab5c173411fcf93cbe18395
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
