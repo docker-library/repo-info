@@ -538,21 +538,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.23.0~rc2-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2-1.dsc' curl_8.23.0~rc2-1.dsc 3564 SHA256:f3c734900dcffcd9e35b2a472a64ff8d3d299188e2b036a58af614571c7e07c1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2.orig.tar.xz' curl_8.23.0~rc2.orig.tar.xz 2974064 SHA256:f9c4de02f15fa420517e1897342412864229426d8d88796e5492ac754ef6cef5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2.orig.tar.xz.asc' curl_8.23.0~rc2.orig.tar.xz.asc 488 SHA256:39080e08de02630a97a31097b423a3338fd455544afdbf57eeb0dbcb067bad3f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.23.0%7erc2-1.debian.tar.xz' curl_8.23.0~rc2-1.debian.tar.xz 65400 SHA256:018b563d9b96302f0b3f413529fc5e1d61194a5e97e934d80ae2272a40875714
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.23.0~rc2-1/
 
-- https://sources.debian.net/src/curl/8.23.0~rc2-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.23.0~rc2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.23.0~rc2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
@@ -890,20 +882,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.5-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5-2.dsc' expat_2.8.5-2.dsc 1970 SHA256:1093b599a1245827eca68383371a3b3a1991fd3c7f9537506e4e557a3c0523d4
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5.orig.tar.gz' expat_2.8.5.orig.tar.gz 8474242 SHA256:fd022c541a189bd5bee042a22188351b31e39b9389c2525fa98c28bd05c9ef21
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.5-2.debian.tar.xz' expat_2.8.5-2.debian.tar.xz 15168 SHA256:1c4354bc84ba14b4269e72e41192655c1d0df48a661c6362d4349e0133ee67a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.5-2/
 
-- https://sources.debian.net/src/expat/2.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.11.0-2`
 
@@ -3438,21 +3423,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.4-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.4-1.dsc' openssl_3.6.4-1.dsc 2675 SHA256:c300906132d616fcce9b704f026fe2b15a83407c1b955914f0f8fe1dbb98b1af
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.4.orig.tar.gz' openssl_3.6.4.orig.tar.gz 55003802 SHA256:9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.4.orig.tar.gz.asc' openssl_3.6.4.orig.tar.gz.asc 931 SHA256:2f957d2a61971714d256a6ed58a1336a687ee19859538514763f880aa89877de
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.4-1.debian.tar.xz' openssl_3.6.4-1.debian.tar.xz 51852 SHA256:79b60079960546d53abe36a93b52c93a965af8ea8c814d59f3865bbb5ebc1371
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.4-1/
 
-- https://sources.debian.net/src/openssl/3.6.4-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.5-1`
 
