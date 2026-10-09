@@ -1,9 +1,9 @@
-# `gradle:9.8.0-jdk17-graal`
+# `gradle:9.8.1-jdk17-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3025f4ad39c3dca98b0a83b61d82511cef46945cbd4d2ae6818275fefa599c47`
-- Created: `2026-10-02T01:21:25.762084694Z`
+- Image ID: `sha256:48f34de4ed34fdcfeff929c15a21ef7766ecad8a37de8fb3dc77ecc0f0d30bc8`
+- Created: `2026-10-08T16:41:37.000134106Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=9.8.0`
+  - `GRADLE_VERSION=9.8.1`
 - Labels:
   - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -813,11 +813,11 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.37-8build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-8build1.dsc' fonts-dejavu_2.37-8build1.dsc 2525 SHA256:f092af264087c8c3598f8ff4fc6548d883e49cfbf4854ac33a4850eb80f99aa8
 ```
 
-### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.1`
+### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.1`
+- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -839,14 +839,14 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.1
+$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz 347364 SHA512:efef4187b3d9cc747daad26cef6700051388435480c60e96e371eb04be3baae1e09ac932183c3a72b7bb4db1889d2bda89a70bfb058193c73bc5a602e53a3553
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:569d05266c430b7fb361a5c74198e0047f44ba24fd723d13e89de8974a6ce3fc5837bbd551e2e404926e14da5db68bd50011c6fa6fa01d92460bd3eeaacdc0f2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz 2176140 SHA512:f2794dee78a00f91ea4241722deff64e03e7c42cbd26073ed0d7a6e0ecca14c5f87cb1dbd520ccc94311a6b0f510b4462eee3f8765e8d77841176e78d8c45837
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:9a42b83c2237cd04e5cea7e5389078a985d6e22f48c030d225c32b5da9230b0c1b8ae6dd213bef4ac572fec74c5d05b9acfc011c199f0db5995293800575514a
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig.tar.xz' freetype_2.14.2+dfsg.orig.tar.xz 2246044 SHA512:fa16e901edee4b578cf920eb357ec5f8aea38fe1152e7ad8562201e7edde4d763a457dfdcf69bb1b5792c0b1ba0253e6dea2b8928141e77ab53e366be1b9af65
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.1.debian.tar.xz 45112 SHA512:4d5be2b05ace8730454a50716f303a310aa8b363ef13467b58f39035f93228f43e95b5cd7df7837beaac80f4a10efda931de565e1d2f2a9b041bb099bb04b1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.dsc' freetype_2.14.2+dfsg-1ubuntu0.1.dsc 4105 SHA512:818b73fce2b591edd77af51cfcf1d4853ea0064b8dc376128afb17dfadae4c6261ab21104129f0d37cac57ceab2107c5bed32dffd6cbb30c5b9fa72ce8abbe16
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.2.debian.tar.xz 45672 SHA512:4e6e6839d7076a28bcc53187ed393c03efe7906ee68bf6daf0ee1044a5d25facea4a8ea8bfbf2854e9277706781f93e3c62c31bf67be89547d1e40fc57e23537
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.dsc' freetype_2.14.2+dfsg-1ubuntu0.2.dsc 4105 SHA512:acb1b8995a0f6f107ebf23881205afe38c867caba0982af88456de3c4a459963e841d993bb2740300422cd1a5c1395540ed8b1f24be96658aa24139e1e35a42b
 ```
 
 ### `dpkg` source package: `gcc-15=15.2.0-16ubuntu1`
@@ -1618,11 +1618,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build4
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build4.dsc' libmd_1.1.0-2build4.dsc 2383 SHA256:8c735703ff1b9699379c6cf538d07199d6f532dce3bcab4a1bde0ae5f7e25a21
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.57-1`
+### `dpkg` source package: `libpng1.6=1.6.57-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.57-1`
+- `libpng16-16t64:amd64=1.6.57-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1638,10 +1638,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.57-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.dsc' libpng1.6_1.6.57-1.dsc 2306 SHA512:46588883287894dbe0c5ba77bc500df0ba8d86f14a48d6253850d4e315396aec0f9165ec8d2ee6d491fb47a753a1fd1bd3b84bd84c33bf465cdc978037b2a9c4
+$ apt-get source -qq --print-uris libpng1.6=1.6.57-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57.orig.tar.gz' libpng1.6_1.6.57.orig.tar.gz 1591776 SHA512:cd20c278b04ac6275cea495c66472782c175bf431eb28afd3f529d5913179ac8cbf3a306e67fe9dc3ae09c87ad67b5d937b83f427e15d8364f513d95ff8b4649
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.debian.tar.xz' libpng1.6_1.6.57-1.debian.tar.xz 33420 SHA512:c9259e36eb22c973e8a067c87d5a8d01f520ea629c158679c8666e53c79eeae2ac3769b4bdd039cdf48c3ad37effdbce0f7a76821c55dc7bacea5587d7a76ce4
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz' libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz 34984 SHA512:8e7f0bff9fb7f8daae9c4bffd2e3fca3fc03c12f832eb0a9f66be61bd5b305d3b3a8566388814af78c7562c78b4a56f709dd02cf87d590b896d2aa5eeb708db2
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.dsc' libpng1.6_1.6.57-1ubuntu0.1.dsc 2425 SHA512:f5e48826567c29abd2b7b1d7080fc5ecab77610b354a05ec9a1a896604ded4302e8852d4e1a83ea7eb00a66aee1e8a82ec9f1f652bea7e54e054b742d9958a34
 ```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build2`
@@ -2249,11 +2249,11 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu5.dsc' openldap_2.6.10+dfsg-1ubuntu5.dsc 3426 SHA256:88dcaf31dac1a493430427d7d9ff2cb5c4138b1e0ab6c53c5be7c1d9c87f403c
 ```
 
-### `dpkg` source package: `openssh=1:10.2p1-2ubuntu3.6`
+### `dpkg` source package: `openssh=1:10.2p1-2ubuntu3.7`
 
 Binary Packages:
 
-- `openssh-client=1:10.2p1-2ubuntu3.6`
+- `openssh-client=1:10.2p1-2ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2268,10 +2268,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu3.6
+$ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu3.7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA512:66f3dd646179e71aaf41c33b6f14a207dc873d71d24f11c130a89dee317ee45398b818e5b94887b5913240964a38630d7bca3e481e0f1eff2e41d9e1cfdbdfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.debian.tar.xz' openssh_10.2p1-2ubuntu3.6.debian.tar.xz 226404 SHA512:8b220f0bc065a38d62695523294fc5ab3a2185535baa933f730fa7b60d45b76c291482ad0de64b9764f5a5fbf27755601998aa4217b498499da4033e67179218
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.dsc' openssh_10.2p1-2ubuntu3.6.dsc 3328 SHA512:29e87ca7441713dc653e5f539268f391c1155d0b74cb253a94cc5dd19dbc3401b460e571300f0fcc1def06cb62041975aa149b1a384df16352ce08ddb569e285
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.7.debian.tar.xz' openssh_10.2p1-2ubuntu3.7.debian.tar.xz 226656 SHA512:44db9aba2c413e5c7408e7befe6e291f47fb4d5eb6e3b7b3f44f369f9cd303c010fc3d53a64bc2a67abec039499513c683b96b16284bc79d0f05c1282da571cc
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.7.dsc' openssh_10.2p1-2ubuntu3.7.dsc 3365 SHA512:7c76305b5ebe2e3b4cd36cc524f5f7f0de0bac96d86d822b22cdff33440d66fe1e8e08f77855793243e5b74c5934c80c540da94c38ead07396e9db0326a37e55
 ```
 
 ### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`

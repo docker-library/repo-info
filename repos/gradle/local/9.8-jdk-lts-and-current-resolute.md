@@ -1,9 +1,9 @@
-# `gradle:9.8.0-jdk-lts-and-current`
+# `gradle:9.8.1-jdk-lts-and-current`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7db9109fdd1674ac43c21516c59e9cf5a0d2cc84bb724bdd605d745ab39a609`
-- Created: `2026-10-05T21:16:03.429660132Z`
+- Image ID: `sha256:93be7009c50aeb68d6f4f297fb40e77e65ae6f88ac1810807cc1098efcb696a1`
+- Created: `2026-10-08T16:41:52.48837629Z`
 - Virtual Size: ~ 1.08 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk27`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.0`
+  - `GRADLE_VERSION=9.8.1`
 - Labels:
   - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -842,18 +842,9 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz 347364 SHA512:efef4187b3d9cc747daad26cef6700051388435480c60e96e371eb04be3baae1e09ac932183c3a72b7bb4db1889d2bda89a70bfb058193c73bc5a602e53a3553
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:569d05266c430b7fb361a5c74198e0047f44ba24fd723d13e89de8974a6ce3fc5837bbd551e2e404926e14da5db68bd50011c6fa6fa01d92460bd3eeaacdc0f2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz 2176140 SHA512:f2794dee78a00f91ea4241722deff64e03e7c42cbd26073ed0d7a6e0ecca14c5f87cb1dbd520ccc94311a6b0f510b4462eee3f8765e8d77841176e78d8c45837
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:9a42b83c2237cd04e5cea7e5389078a985d6e22f48c030d225c32b5da9230b0c1b8ae6dd213bef4ac572fec74c5d05b9acfc011c199f0db5995293800575514a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig.tar.xz' freetype_2.14.2+dfsg.orig.tar.xz 2246044 SHA512:fa16e901edee4b578cf920eb357ec5f8aea38fe1152e7ad8562201e7edde4d763a457dfdcf69bb1b5792c0b1ba0253e6dea2b8928141e77ab53e366be1b9af65
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.1.debian.tar.xz 45112 SHA512:4d5be2b05ace8730454a50716f303a310aa8b363ef13467b58f39035f93228f43e95b5cd7df7837beaac80f4a10efda931de565e1d2f2a9b041bb099bb04b1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.1.dsc' freetype_2.14.2+dfsg-1ubuntu0.1.dsc 4105 SHA512:818b73fce2b591edd77af51cfcf1d4853ea0064b8dc376128afb17dfadae4c6261ab21104129f0d37cac57ceab2107c5bed32dffd6cbb30c5b9fa72ce8abbe16
-```
 
 ### `dpkg` source package: `gcc-16=16-20260322-1ubuntu1`
 
@@ -2113,11 +2104,11 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-1ubuntu5.dsc' openldap_2.6.10+dfsg-1ubuntu5.dsc 3426 SHA256:88dcaf31dac1a493430427d7d9ff2cb5c4138b1e0ab6c53c5be7c1d9c87f403c
 ```
 
-### `dpkg` source package: `openssh=1:10.2p1-2ubuntu3.6`
+### `dpkg` source package: `openssh=1:10.2p1-2ubuntu3.7`
 
 Binary Packages:
 
-- `openssh-client=1:10.2p1-2ubuntu3.6`
+- `openssh-client=1:10.2p1-2ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2132,10 +2123,10 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu3.6
+$ apt-get source -qq --print-uris openssh=1:10.2p1-2ubuntu3.7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA512:66f3dd646179e71aaf41c33b6f14a207dc873d71d24f11c130a89dee317ee45398b818e5b94887b5913240964a38630d7bca3e481e0f1eff2e41d9e1cfdbdfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.debian.tar.xz' openssh_10.2p1-2ubuntu3.6.debian.tar.xz 226404 SHA512:8b220f0bc065a38d62695523294fc5ab3a2185535baa933f730fa7b60d45b76c291482ad0de64b9764f5a5fbf27755601998aa4217b498499da4033e67179218
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.6.dsc' openssh_10.2p1-2ubuntu3.6.dsc 3328 SHA512:29e87ca7441713dc653e5f539268f391c1155d0b74cb253a94cc5dd19dbc3401b460e571300f0fcc1def06cb62041975aa149b1a384df16352ce08ddb569e285
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.7.debian.tar.xz' openssh_10.2p1-2ubuntu3.7.debian.tar.xz 226656 SHA512:44db9aba2c413e5c7408e7befe6e291f47fb4d5eb6e3b7b3f44f369f9cd303c010fc3d53a64bc2a67abec039499513c683b96b16284bc79d0f05c1282da571cc
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_10.2p1-2ubuntu3.7.dsc' openssh_10.2p1-2ubuntu3.7.dsc 3365 SHA512:7c76305b5ebe2e3b4cd36cc524f5f7f0de0bac96d86d822b22cdff33440d66fe1e8e08f77855793243e5b74c5934c80c540da94c38ead07396e9db0326a37e55
 ```
 
 ### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`

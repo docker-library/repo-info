@@ -1,10 +1,10 @@
-# `gradle:9.8.0-jdk25-alpine`
+# `gradle:9.8.1-jdk25-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6340f938975c4ff785d1169835cf135b324a38755b74ec662b8726ad4cbe34e`
-- Created: `2026-09-25T22:56:44.829230973Z`
-- Virtual Size: ~ 596.27 Mb  
+- Image ID: `sha256:a14d8a9c9d0ee406c55967b476400648aa9cfdd310eeb91d88ee7e04f8fffc84`
+- Created: `2026-10-08T16:38:42.122766777Z`
+- Virtual Size: ~ 596.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.4.1+1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.0`
+  - `GRADLE_VERSION=9.8.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1095,16 +1095,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -1163,16 +1163,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -1520,16 +1520,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.7-r1 description:
+pyc-3.14.8-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.7-r1 webpage:
+pyc-3.14.8-r0 webpage:
 https://www.python.org/
 
-pyc-3.14.7-r1 installed size:
+pyc-3.14.8-r0 installed size:
 0 B
 
-pyc-3.14.7-r1 license:
+pyc-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1537,16 +1537,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.7-r1 description:
+python3-3.14.8-r0 description:
 High-level scripting language
 
-python3-3.14.7-r1 webpage:
+python3-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-3.14.7-r1 installed size:
+python3-3.14.8-r0 installed size:
 22 MiB
 
-python3-3.14.7-r1 license:
+python3-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1554,16 +1554,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.7-r1 description:
+python3-pyc-3.14.8-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.7-r1 webpage:
+python3-pyc-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.7-r1 installed size:
+python3-pyc-3.14.8-r0 installed size:
 0 B
 
-python3-pyc-3.14.7-r1 license:
+python3-pyc-3.14.8-r0 license:
 PSF-2.0
 
 ```
@@ -1571,16 +1571,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.7-r1 description:
+python3-pycache-pyc0-3.14.8-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.7-r1 webpage:
+python3-pycache-pyc0-3.14.8-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.7-r1 installed size:
+python3-pycache-pyc0-3.14.8-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.7-r1 license:
+python3-pycache-pyc0-3.14.8-r0 license:
 PSF-2.0
 
 ```

@@ -1,10 +1,10 @@
-# `gradle:9.8.0-jdk27-ubi`
+# `gradle:9.8.1-jdk27-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b06d136ce18ebb6b1a4a797bac5196db11d42a3d527cf9b2f0352df25dbcdf9`
-- Created: `2026-10-05T21:14:57.985530026Z`
-- Virtual Size: ~ 742.41 Mb  
+- Image ID: `sha256:e79ac98e93087570f24820780aa4a49d07e0965daeedd82cf8a23715e5304837`
+- Created: `2026-10-08T22:10:58.068663391Z`
+- Virtual Size: ~ 742.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-27+35`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.0`
+  - `GRADLE_VERSION=9.8.1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-09-30T07:29:16Z`
+  - `build-date=2026-10-08T07:29:25Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-09-30T07:29:16Z`
-  - `org.opencontainers.image.revision=c36f95f6d717ca86d583acb486458c81a7d871c6`
-  - `release=1790753097`
+  - `org.opencontainers.image.created=2026-10-08T07:29:25Z`
+  - `org.opencontainers.image.revision=15b051dbd9dfffc387e455857eb5a01665969eb9`
+  - `release=1791444377`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c36f95f6d717ca86d583acb486458c81a7d871c6`
+  - `vcs-ref=15b051dbd9dfffc387e455857eb5a01665969eb9`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -557,12 +557,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libbrotli-1.1.0-7.el10_1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/b/brotli-1.1.0-7.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.69-7.el10_2.1.x86_64`
 
@@ -1390,12 +1385,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LGPL-2.0-or-later AND Apache-2.0 AND BSL-1.0 AND MIT AND Unicode-DFS-2016 AND (Apache-2.0 OR MIT) AND (MIT OR Apache-2.0 OR Zlib) AND (Unlicense OR MIT)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url rpm-sequoia-1.10.1.1-2.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/r/rust-rpm-sequoia-1.10.1.1-2.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `rpm-sign-libs-4.19.1.1-23.el10.x86_64`
 
@@ -1502,12 +1492,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026c-1.el10_2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
