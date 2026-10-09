@@ -1,10 +1,10 @@
-# `wordpress:7.1.2-php8.2-fpm-alpine`
+# `wordpress:7.1.3-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23ed60377df5e0353e907392ca6c7777c1d6251f1315aa68941517685102f69c`
-- Created: `2026-09-25T18:01:06.60536413Z`
-- Virtual Size: ~ 323.09 Mb  
+- Image ID: `sha256:05f646fb1a0ea577c83d979b5219bb1bc4d41272d6b68af07105ba18d4616c40`
+- Created: `2026-10-07T21:50:34.537071311Z`
+- Virtual Size: ~ 323.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1217,16 +1217,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -1761,16 +1761,16 @@ BSD-3-Clause
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -1914,16 +1914,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
