@@ -491,9 +491,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.190-1.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA256:8e00a3a9b5f04bc1dc273ae86281d2d26ed412020b391ffcc23198f10231d692
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz' elfutils_0.190-1.1ubuntu0.1.debian.tar.xz 46976 SHA256:4c3130951f7b865d50ff57379a258926a66bcd2753e3c12301bbb110fbb417fa
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.dsc' elfutils_0.190-1.1ubuntu0.1.dsc 3410 SHA256:7852785ce5ce51a6dad0f6b67188d94ffedaffa6d0128fecabeb6a1ccc2aabea
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz' elfutils_0.190-1.1ubuntu0.1.debian.tar.xz 46976 SHA512:f4bf523b754c8fd09c189483b3f084955b2b467e5e03338e2448ec0d4af478ea39a7d7bd4c2b7dfcfbe538a870ec452c51f840e6c33b0ffdec65837c2f6384cd
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.dsc' elfutils_0.190-1.1ubuntu0.1.dsc 3410 SHA512:56440e43ecfac444cca2cbd6f2a33f2780cea395b5caa302587c4a1e602b3c4bb45dbcede76e7767b6f18f519458b52c6300ef83b80cdebc603418fe2a4a0889
 ```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
