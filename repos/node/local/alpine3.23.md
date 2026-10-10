@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d0a2d2113b4bac8c3c7ff851f7bac8b53925ddf7c09410522e8b2cd0a7d3247`
-- Created: `2026-09-22T18:51:35.583077954Z`
-- Virtual Size: ~ 182.33 Mb  
+- Image ID: `sha256:42d0bf94644cba1adb6a20abc48f137b8379938f5fc8212a1d425a4fe6e3705a`
+- Created: `2026-10-08T21:50:52.621921473Z`
+- Virtual Size: ~ 179.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=26.10.0`
+  - `NODE_VERSION=26.11.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -165,6 +165,23 @@ libapk-3.0.8-r0 installed size:
 
 libapk-3.0.8-r0 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `libatomic`
+
+```console
+libatomic-15.2.0-r2 description:
+GCC Atomic library
+
+libatomic-15.2.0-r2 webpage:
+https://gcc.gnu.org
+
+libatomic-15.2.0-r2 installed size:
+29 KiB
+
+libatomic-15.2.0-r2 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
