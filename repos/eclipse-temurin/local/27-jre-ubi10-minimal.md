@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24864e8a20c5199d5db4e9d1afa62ae56a49b28e2c3d6e08cac51f9e89ff8d2d`
-- Created: `2026-10-07T22:08:40.533447494Z`
-- Virtual Size: ~ 392.5 Mb  
+- Image ID: `sha256:bb5cd7684a8a19106d53e311e589954b8471bb7d23f2d311d65fa36f58b96c07`
+- Created: `2026-10-08T21:53:57.30722261Z`
+- Virtual Size: ~ 385.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-27+35`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-07T04:14:06Z`
+  - `build-date=2026-10-08T07:29:25Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-07T04:14:06Z`
-  - `org.opencontainers.image.revision=b83a27d213c66aa5d7fbbd815fc09a0b8816c676`
-  - `release=1791346265`
+  - `org.opencontainers.image.created=2026-10-08T07:29:25Z`
+  - `org.opencontainers.image.revision=15b051dbd9dfffc387e455857eb5a01665969eb9`
+  - `release=1791444377`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=b83a27d213c66aa5d7fbbd815fc09a0b8816c676`
+  - `vcs-ref=15b051dbd9dfffc387e455857eb5a01665969eb9`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -1489,12 +1489,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026c-1.el10_2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026c-1.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
