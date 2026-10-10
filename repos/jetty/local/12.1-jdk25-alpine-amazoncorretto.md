@@ -1,10 +1,10 @@
-# `jetty:12.1.13-jdk25-alpine-amazoncorretto`
+# `jetty:12.1.14-jdk25-alpine-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e8fc1016da49754f4fef4a00de500fb7f16fe1991cfe44dcc214a771733f3cb`
-- Created: `2026-09-28T18:08:35.330280105Z`
-- Virtual Size: ~ 443.64 Mb  
+- Image ID: `sha256:8a2473d10a81c996127de826ff8d0a1d9105bf12f9f8cb9923ace448c8d4f067`
+- Created: `2026-10-07T19:13:13.068496817Z`
+- Virtual Size: ~ 443.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/default-jvm`
-  - `JETTY_VERSION=12.1.13`
+  - `JETTY_VERSION=12.1.14`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.13/jetty-home-12.1.13.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348`
 
 ## `apk` (`.apk`-based packages)
@@ -688,16 +688,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -1028,16 +1028,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
