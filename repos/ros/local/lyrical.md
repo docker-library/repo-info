@@ -2963,14 +2963,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/l
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.2.debian.tar.xz 38744 SHA512:6e69e1de90844579490eb36a4d63a3b6e4255bfab8ae8bb2da7e32e4cdd869ba4964ae1a1e652d5a706244b0b31237eae3e70588712840f64a1f308177f989b5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.2.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.2.dsc 3225 SHA512:d32a6b8f2813b687a54defcfc4b54c724dac5dc624d5ad8fd7199aab4726fdbfa5ddfc5651d7d0fc8300f9149a6c4c1455ba6c9cd86a45a549810b7fdf25ee4c
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.17-1ubuntu0.26.04.2`
 
