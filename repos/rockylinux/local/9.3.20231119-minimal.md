@@ -269,7 +269,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-en-3.0-16.el9.noarch
-http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-font-en-3.0-16.el9.noarch`
@@ -280,7 +280,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-font-en-3.0-16.el9.noarch
-http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-3.0-16.el9.noarch`
@@ -291,7 +291,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-en-3.0-16.el9.noarch
-http://mirror.rnet.missouri.edu/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.3.1-3.el9.x86_64`

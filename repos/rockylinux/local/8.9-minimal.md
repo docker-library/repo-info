@@ -264,7 +264,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-en-1.0-12.el8.noarch
-http://mirror.rnet.missouri.edu/rocky/8.10/AppStream/source/tree/Packages/l/langpacks-1.0-12.el8.src.rpm
+http://mirror.cs.vt.edu/pub/rocky/8.10/AppStream/source/tree/Packages/l/langpacks-1.0-12.el8.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.53-1.el8.1.x86_64`
