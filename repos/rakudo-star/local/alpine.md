@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1939d8ef538bc1e742a718692d248cfa7aef86320d31d14b6b69e30c9f1491f`
-- Created: `2026-09-17T22:09:09.16684244Z`
-- Virtual Size: ~ 238.28 Mb  
+- Image ID: `sha256:509b7f89327529a4b18125b51c2ab67b1813cc3581516f1cf0a4f288a57924e8`
+- Created: `2026-10-12T18:22:38.828512661Z`
+- Virtual Size: ~ 182.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2026.06-01`
+  - `rakudo_version=2026.09-01`
 
 ## `apk` (`.apk`-based packages)
 
@@ -272,16 +272,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
@@ -425,16 +425,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -442,16 +442,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
