@@ -1,7 +1,7 @@
 ## `tomcat:9-jdk21-temurin-jammy`
 
 ```console
-$ docker pull tomcat@sha256:628ad76145e64d457a8871bd10d4312916928ac271d0935977206c7b5ad59914
+$ docker pull tomcat@sha256:01193f1862a4fdb04b27699258a09c4a263fb9b18732a8a192ef821ea869e6f6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull tomcat@sha256:628ad76145e64d457a8871bd10d4312916928ac271d093597720
 ### `tomcat:9-jdk21-temurin-jammy` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:f9e31a91d0d8bb49f239f27f1a2562d36830c9ccf010b3941a48f0e051e1b866
+$ docker pull tomcat@sha256:eae54db931cc290317819b7f99ee8065d9ae22aea4ac3df7adb9fceaeb1946f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.5 MB (225453272 bytes)**  
+-	Total Size: **225.5 MB (225486392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb6362e50522eb761ccb2e9b9d901ffbcc0131039a2997cc3f31ac57c8234f7e`
+-	Image ID: `sha256:8aa4ddc6e0a9669e0e29040c09bb5186ff41d6b4e99921e21fbbc2850d82476e`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -58,33 +58,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 02 Oct 2026 01:19:11 GMT
 CMD ["jshell"]
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:37:50 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 02 Oct 2026 02:37:50 GMT
-ENV TOMCAT_VERSION=9.0.122
-# Fri, 02 Oct 2026 02:37:50 GMT
-ENV TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a
-# Fri, 02 Oct 2026 02:38:19 GMT
+# Mon, 12 Oct 2026 23:14:22 GMT
+ENV TOMCAT_VERSION=9.0.123
+# Mon, 12 Oct 2026 23:14:22 GMT
+ENV TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290
+# Mon, 12 Oct 2026 23:14:52 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	curl -fL -o upstream-KEYS 'https://www.apache.org/dist/tomcat/tomcat-9/KEYS'; 	gpg --batch --import upstream-KEYS; 	printf '' > filtered-KEYS; 	for key in 		'DCFD35E0BF8CA7344752DE8B6FB21E8933C60243' 		'A9C5DF4D22E99998D9875A5110C01C5A2F6059E7' 		'48F8E69F6390C9F25CFEDCD268248959359E722B' 	; do 		gpg --batch --fingerprint "$key"; 		gpg --batch --export --armor "$key" >> filtered-KEYS; 	done; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --import filtered-KEYS; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version # buildkit
-# Fri, 02 Oct 2026 02:38:19 GMT
+# Mon, 12 Oct 2026 23:14:52 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 02 Oct 2026 02:38:19 GMT
+# Mon, 12 Oct 2026 23:14:52 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 02 Oct 2026 02:38:19 GMT
+# Mon, 12 Oct 2026 23:14:52 GMT
 ENTRYPOINT []
-# Fri, 02 Oct 2026 02:38:19 GMT
+# Mon, 12 Oct 2026 23:14:52 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -109,17 +109,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 02 Oct 2026 01:19:24 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84154140ea50039c9498eb050b4ee6bc3a6f1c72dd401d00ebad5b895d9118ce`  
-		Last Modified: Fri, 02 Oct 2026 02:38:28 GMT  
+	-	`sha256:c7a41329935c0cf9d6c0103d0d07bfc85c13152f35a7022d6b861674f2cc701e`  
+		Last Modified: Mon, 12 Oct 2026 23:15:03 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdda653c79a7e4039254256a5b94ed9e96f3c877f0c0f09a0e4c8286a52c3851`  
-		Last Modified: Fri, 02 Oct 2026 02:38:28 GMT  
-		Size: 16.9 MB (16912811 bytes)  
+	-	`sha256:bc0045e14684ce2842e1cc2c90d22c7cec1ba53119862f9fde367aae964d4407`  
+		Last Modified: Mon, 12 Oct 2026 23:15:03 GMT  
+		Size: 16.9 MB (16945931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -129,37 +129,37 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jdk21-temurin-jammy` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:450b90c2bea7c6694ead727f41ae22787645a09145d1f3d0fac5d0e11299d58e
+$ docker pull tomcat@sha256:844a5cc6d23be6d977ed2c847a6784ccd069a99b854353b11dd3ed8faeb85239
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.2 MB (4199009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c66c94ddd7da9c2f819d201a655736859592936712ebd1e3ca13927eacb2cfa4`
+-	Image ID: `sha256:c1100ffdc20273e5fe307643e7559b8fe746913f4bc05a0cd9d7e9ba8341a28c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c9ad59105b82cbc8aca2fa30ebd298426b96485a3c9f4ef455c62d073c740c78`  
-		Last Modified: Fri, 02 Oct 2026 02:38:28 GMT  
+	-	`sha256:610a930e096066b731373f85c22a8a9d6af8f917fdc59acaa8f061f27df79692`  
+		Last Modified: Mon, 12 Oct 2026 23:15:03 GMT  
 		Size: 4.2 MB (4168695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1dfca6016b51fc0ba67badc7562be5eee2b6f0b6da9124ec1efc5ee4a2e1ed59`  
-		Last Modified: Fri, 02 Oct 2026 02:38:28 GMT  
+	-	`sha256:2c26927b3284475efbc8dd44105fdef6efe395eef07856e8fa61fda3f30118e5`  
+		Last Modified: Mon, 12 Oct 2026 23:15:03 GMT  
 		Size: 30.3 KB (30314 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomcat:9-jdk21-temurin-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:ce3af556de2ce2db79b429e86b0e0f593d66138a03801a116a888c1b7d957fe6
+$ docker pull tomcat@sha256:02e0e241350aaa7ae307d1274354bba0c470e91cd7be63f7751a425363d04a7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.0 MB (222987825 bytes)**  
+-	Total Size: **223.0 MB (223022591 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a257639add2460577f5296c66607588bd9afa047b727d9b6e06be1a6193461f`
+-	Image ID: `sha256:8c267f427dd353b9baa8bb2d00b90a8894fbbba61f2c3aaf29f0daf0e55fc2bf`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -193,33 +193,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 02 Oct 2026 01:19:15 GMT
 CMD ["jshell"]
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:37:57 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 02 Oct 2026 02:37:57 GMT
-ENV TOMCAT_VERSION=9.0.122
-# Fri, 02 Oct 2026 02:37:57 GMT
-ENV TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a
-# Fri, 02 Oct 2026 02:38:28 GMT
+# Mon, 12 Oct 2026 23:12:13 GMT
+ENV TOMCAT_VERSION=9.0.123
+# Mon, 12 Oct 2026 23:12:13 GMT
+ENV TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290
+# Mon, 12 Oct 2026 23:12:47 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	curl -fL -o upstream-KEYS 'https://www.apache.org/dist/tomcat/tomcat-9/KEYS'; 	gpg --batch --import upstream-KEYS; 	printf '' > filtered-KEYS; 	for key in 		'DCFD35E0BF8CA7344752DE8B6FB21E8933C60243' 		'A9C5DF4D22E99998D9875A5110C01C5A2F6059E7' 		'48F8E69F6390C9F25CFEDCD268248959359E722B' 	; do 		gpg --batch --fingerprint "$key"; 		gpg --batch --export --armor "$key" >> filtered-KEYS; 	done; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --import filtered-KEYS; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version # buildkit
-# Fri, 02 Oct 2026 02:38:29 GMT
+# Mon, 12 Oct 2026 23:12:47 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 02 Oct 2026 02:38:29 GMT
+# Mon, 12 Oct 2026 23:12:47 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 02 Oct 2026 02:38:29 GMT
+# Mon, 12 Oct 2026 23:12:47 GMT
 ENTRYPOINT []
-# Fri, 02 Oct 2026 02:38:29 GMT
+# Mon, 12 Oct 2026 23:12:47 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -244,17 +244,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 02 Oct 2026 01:19:32 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dba104b1df5f786676257c9d200ef81b3130a3bd447518dd8b3fe28c48fa060`  
-		Last Modified: Fri, 02 Oct 2026 02:38:39 GMT  
-		Size: 138.0 B  
+	-	`sha256:171e1bc8c2cc15de545ff3483a4392aa3cd81148cb26befbf26d19af6ac94cfc`  
+		Last Modified: Mon, 12 Oct 2026 23:12:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:706f39f5e6b1b8534290a2da0ff2fbda4171dca92fc4e3fefb44a3408d2189c4`  
-		Last Modified: Fri, 02 Oct 2026 02:38:39 GMT  
-		Size: 16.8 MB (16807079 bytes)  
+	-	`sha256:2c6da0dedabc79049576fb48eab643bdcc9abe569417a244107b51ff6e24821c`  
+		Last Modified: Mon, 12 Oct 2026 23:12:58 GMT  
+		Size: 16.8 MB (16841844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -264,24 +264,24 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jdk21-temurin-jammy` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:c680f7acb0c9e058ad8da09387710e91437f5726c2f8654981a11803d8c1c81f
+$ docker pull tomcat@sha256:26660251fdcbb3d9cb00e2d42b968b6861623e6b9522c3b4f4e35ce603575db3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.3 MB (4294602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:267d5b0e9e0471dc6616e0e01ac9fbc578639a2b685c03d6e62d2587f8c5362d`
+-	Image ID: `sha256:ea9038ead15447b0f260e0b0557e151d9e72c0a771740f8c9c3020fbefab4147`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2ea61652113b5081d3feb0468b301caae8a4ddf134ef5d48002302cb388be12a`  
-		Last Modified: Fri, 02 Oct 2026 02:38:39 GMT  
+	-	`sha256:ac286aeb8c1b197ece56cda4bce9b3794fb035d1a4a3bd8d2638545a38b8234b`  
+		Last Modified: Mon, 12 Oct 2026 23:12:58 GMT  
 		Size: 4.3 MB (4264166 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4d19b98716fdda7eb213eb8976a11c12828a73f22854b5a5783ce4fb1695357`  
-		Last Modified: Fri, 02 Oct 2026 02:38:38 GMT  
+	-	`sha256:cd7de524b39393cda51e495aa2a8951b84f68e4b4ad6f8d4f87d2ebeb888ef79`  
+		Last Modified: Mon, 12 Oct 2026 23:12:57 GMT  
 		Size: 30.4 KB (30436 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -423,13 +423,13 @@ $ docker pull tomcat@sha256:2d6a3360525f2411d81c3040161b0df7b08248cc0dfe83ee8d5b
 ### `tomcat:9-jdk21-temurin-jammy` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:640b3668480852cdc42146d9fb85f145033afac6ab452353a85260b4cc414b90
+$ docker pull tomcat@sha256:f05fc7b775b2e72c3fa14bf4d653b28de40b7888b6fa4390c0490e8cb1f567d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.6 MB (212554615 bytes)**  
+-	Total Size: **212.6 MB (212590517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e40805af54de9348c412b13e77391e7eaae9d8eeb4c7ed81ad38386e9c1065db`
+-	Image ID: `sha256:50179bba741bd20a834629e70edd7d3851ff251e6d9a370c4aae187962a6306e`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -463,33 +463,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 02 Oct 2026 01:28:14 GMT
 CMD ["jshell"]
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 02 Oct 2026 02:36:29 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 02 Oct 2026 02:36:29 GMT
-ENV TOMCAT_VERSION=9.0.122
-# Fri, 02 Oct 2026 02:36:29 GMT
-ENV TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a
-# Fri, 02 Oct 2026 02:36:44 GMT
+# Mon, 12 Oct 2026 23:13:52 GMT
+ENV TOMCAT_VERSION=9.0.123
+# Mon, 12 Oct 2026 23:13:52 GMT
+ENV TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290
+# Mon, 12 Oct 2026 23:27:04 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://dlcdn.apache.org/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	curl -fL -o upstream-KEYS 'https://www.apache.org/dist/tomcat/tomcat-9/KEYS'; 	gpg --batch --import upstream-KEYS; 	printf '' > filtered-KEYS; 	for key in 		'DCFD35E0BF8CA7344752DE8B6FB21E8933C60243' 		'A9C5DF4D22E99998D9875A5110C01C5A2F6059E7' 		'48F8E69F6390C9F25CFEDCD268248959359E722B' 	; do 		gpg --batch --fingerprint "$key"; 		gpg --batch --export --armor "$key" >> filtered-KEYS; 	done; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --import filtered-KEYS; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version # buildkit
-# Fri, 02 Oct 2026 02:36:45 GMT
+# Mon, 12 Oct 2026 23:27:05 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Fri, 02 Oct 2026 02:36:45 GMT
+# Mon, 12 Oct 2026 23:27:05 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 02 Oct 2026 02:36:45 GMT
+# Mon, 12 Oct 2026 23:27:05 GMT
 ENTRYPOINT []
-# Fri, 02 Oct 2026 02:36:45 GMT
+# Mon, 12 Oct 2026 23:27:05 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -514,17 +514,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 02 Oct 2026 01:29:17 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:230461799fe2a9a9cb2791b98c8edab3ce9d4a7b24f1ed978b71f733fe78ad88`  
-		Last Modified: Fri, 02 Oct 2026 02:36:59 GMT  
-		Size: 139.0 B  
+	-	`sha256:22750853c7fd47001ae67eb4fcb48a55746c9ac6f75a8f3ce1da47ffbd02ed3d`  
+		Last Modified: Mon, 12 Oct 2026 23:16:30 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acc34bfc03859d55d73ab288a072007f705799abadd3d7405c4789f11f92d424`  
-		Last Modified: Fri, 02 Oct 2026 02:36:59 GMT  
-		Size: 16.6 MB (16588090 bytes)  
+	-	`sha256:53a6e515b4d1bed0e4e3293679d100e93dc4d5ede861916cd9f8652c4411aab8`  
+		Last Modified: Mon, 12 Oct 2026 23:27:31 GMT  
+		Size: 16.6 MB (16623993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -534,23 +534,23 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:9-jdk21-temurin-jammy` - unknown; unknown
 
 ```console
-$ docker pull tomcat@sha256:2787a10bc722fa548f8817cac41b71b6d8e05f8ab9dc10bdea9218222b74f88a
+$ docker pull tomcat@sha256:0e9db91509bb82740ce9a93996e773791c3bf6c48334005508389dcf5647755f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4124004 bytes)**  
+-	Total Size: **4.1 MB (4124003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61657a8b4e6063ba695ebec688020d7563716c809f741b86ccb11448fd08ea6c`
+-	Image ID: `sha256:68a97b5f6045dc4099db6fde8b9c5dc2cd1ecec6293e9f87099e6b32b6b3898d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ca402df12b20fd3cd20e64ef0faf6b22abe1aa61b85a112fc7e173c4720e046`  
-		Last Modified: Fri, 02 Oct 2026 02:36:59 GMT  
+	-	`sha256:3ca4a0f77f1793c1c271fc89d14a7bbacfe9e76019f91a2316d75ee1826a203d`  
+		Last Modified: Mon, 12 Oct 2026 23:27:31 GMT  
 		Size: 4.1 MB (4093690 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:63c6e23fa8030e825f7da659dbcadfb11a11c7b68f13b6f5d1544a24da44f1ae`  
-		Last Modified: Fri, 02 Oct 2026 02:36:58 GMT  
-		Size: 30.3 KB (30314 bytes)  
+	-	`sha256:ce0128da827b819ea9e513b6ca2f4fd0c2acc6f43c01aafb9e74d4c26540d857`  
+		Last Modified: Mon, 12 Oct 2026 23:27:30 GMT  
+		Size: 30.3 KB (30313 bytes)  
 		MIME: application/vnd.in-toto+json
