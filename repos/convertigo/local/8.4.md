@@ -1,10 +1,10 @@
-# `convertigo:8.4.5`
+# `convertigo:8.4.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e080a0733f802e2c7fa9eb1de5c3e4b4106365e89c042e6dbd5a9d73a4e8b68b`
-- Created: `2026-10-02T03:28:28.45894048Z`
-- Virtual Size: ~ 655.09 Mb  
+- Image ID: `sha256:dfd04da9d5af2901ca05c3df4f77bbf8a77a9337215c6ab00d018b3be68b2c80`
+- Created: `2026-10-13T00:13:32.810862008Z`
+- Virtual Size: ~ 656.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -20,11 +20,11 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.122`
-  - `TOMCAT_SHA512=1f2f7d822a407999d954e7eb4fb1e78998c2a9372bb466d27e8cefd2521ef779183744f39dfa50a77ce3b798e7fe30bf2fd43fd1d6a2e6135617af1ddda6ba2a`
+  - `TOMCAT_VERSION=9.0.123`
+  - `TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.4.5`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.5/convertigo-8.4.5.war`
+  - `CONVERTIGO_VERSION=8.4.6`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.6/convertigo-8.4.6.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.version=24.04`
@@ -1941,11 +1941,11 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.8
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc' sqlite3_3.45.1-1ubuntu2.8.dsc 2601 SHA512:8b492de28c699f0a0a32115b781cc9a6c2d8801992b907a41e5ed0642c3845a1688cbb9aee60ea9a4e8af436100f9f29dc8e6af0d75f8411d8b6a6b0ea99163a
 ```
 
-### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.3`
+### `dpkg` source package: `sudo=1.9.15p5-3ubuntu5.24.04.4`
 
 Binary Packages:
 
-- `sudo=1.9.15p5-3ubuntu5.24.04.3`
+- `sudo=1.9.15p5-3ubuntu5.24.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -1958,9 +1958,15 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.9.15p5-3ubuntu5.24.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz' sudo_1.9.15p5.orig.tar.gz 5306611 SHA512:ebac69719de2fe7bd587924701bdd24149bf376a68b17ec02f69b2b96d4bb6fa5eb8260a073ec5ea046d3ac69bb5b1c0b9d61709fe6a56f1f66e40817a70b15a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5.orig.tar.gz.asc' sudo_1.9.15p5.orig.tar.gz.asc 833 SHA512:2447b8b660d8902594a9e809cd96fef8c6074223ced086c1a81453fbe509c387f48f6c2817c802c7d7f3225fcea2539a0e420a4fb120384de5535abec8d60f34
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.4.debian.tar.xz' sudo_1.9.15p5-3ubuntu5.24.04.4.debian.tar.xz 78028 SHA512:a2454b5a3fb3e799c1ffa41844bc6a6821c276e0fe6b94f30cc880e30551a91958f64129bad2b76ee5a6edfa566896fe15d8d64c018b737c1c41b6907872149f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.15p5-3ubuntu5.24.04.4.dsc' sudo_1.9.15p5-3ubuntu5.24.04.4.dsc 2763 SHA512:1a383d9db84688910df43643b44cbc95312a34cb27a77934d90c9538cf439e89a23dddf887cadbb5d92ed7e97adc5ff7e227c1cfe8f4f40127e2b4ba13f49773
+```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
 
