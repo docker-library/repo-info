@@ -539,21 +539,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.11.0-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.11.0-2.dsc' findutils_4.11.0-2.dsc 2288 SHA256:55b9de3031abe1b4e6992ba75a263d1487af63f36490771787a158b8e467fcf6
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.11.0.orig.tar.xz' findutils_4.11.0.orig.tar.xz 2451424 SHA256:bfd19cb06cc71f3352d567e90284d8cdac02ac89774bbeadf0b533b0c11432fd
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.11.0.orig.tar.xz.asc' findutils_4.11.0.orig.tar.xz.asc 833 SHA256:532caaa3173e1bd500db929cd7bc1c9a8769e4607d97a754d57c274fc00f7c5c
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.11.0-2.debian.tar.xz' findutils_4.11.0-2.debian.tar.xz 34072 SHA256:f202f48a2f9f8ab4c2e419ac594263b6486c03b259c87449a8cc44d30d1af016
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.11.0-2/
 
-- https://sources.debian.net/src/findutils/4.11.0-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.11.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.11.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-16=16.2.0-3`
 
