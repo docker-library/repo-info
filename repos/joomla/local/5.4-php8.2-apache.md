@@ -1483,20 +1483,13 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u2.dsc' ghostscript_10.05.1~dfsg-1+deb13u2.dsc 3052 SHA256:0f829e4da27f523e4067d1058b4cf9033d4731ba4a0d269a5fc01b7ee1578847
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u2.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u2.debian.tar.xz 89432 SHA256:ca55202d500a6907f62740419e7666e402098f38954ea8c69f85820dda5c27ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u2/
 
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.84.4-3~deb13u5`
 
