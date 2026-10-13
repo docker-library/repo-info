@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ee789146baac8629f7f091ac3a794e17f635d6ca98941f3ef868d2eca136712`
-- Created: `2026-09-21T22:11:05.906732242Z`
-- Virtual Size: ~ 347.43 Mb  
+- Image ID: `sha256:a6f250f10eb8b613a94db2a149b68522f274f1b47d91ddb3ce83bd13774aafb3`
+- Created: `2026-10-12T18:24:17.495161003Z`
+- Virtual Size: ~ 346.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","--","/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.40.1`
+  - `TELEGRAF_VERSION=1.40.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -715,16 +715,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
