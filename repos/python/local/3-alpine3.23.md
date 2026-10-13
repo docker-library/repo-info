@@ -1,17 +1,17 @@
-# `python:3.14.8-alpine3.23`
+# `python:3.15.0-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c44e7b5ad10f478ae1177aad3a35fb9b7ba494d9f7a9ef2b7770d9aedaf701b4`
-- Created: `2026-10-01T21:36:39.244093284Z`
-- Virtual Size: ~ 54.11 Mb  
+- Image ID: `sha256:1a846407a77825f038ba2eda2dcf5fbc3297825759f55eb28c875ea3b9a7da2f`
+- Created: `2026-10-12T22:32:51.668106706Z`
+- Virtual Size: ~ 56.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.8`
-  - `PYTHON_SHA256=c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73`
+  - `PYTHON_VERSION=3.15.0`
+  - `PYTHON_SHA256=ba4bed1ba346b916890b76d9e320451420aa69f6408997d33c66482eeae3d575`
 
 ## `apk` (`.apk`-based packages)
 
@@ -443,16 +443,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
@@ -477,16 +477,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
