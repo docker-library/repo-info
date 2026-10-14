@@ -1,10 +1,10 @@
-# `ghost:6.69.0-bookworm`
+# `ghost:6.70.0-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1e938f2667cb634f9e8e414d739231872ca882bc8b94c5c05ad695e5784169a`
-- Created: `2026-10-07T19:19:15.432074579Z`
-- Virtual Size: ~ 731.68 Mb  
+- Image ID: `sha256:48b0eddb2b3213e92af2156ab6ffed54d7254dfe402c2b58ada8721b3b769d3a`
+- Created: `2026-10-13T21:04:31.962337615Z`
+- Virtual Size: ~ 710.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,12 +15,12 @@
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
-  - `GHOST_CLI_VERSION=1.33.1`
-  - `GHOST_CLI_SHA=cd09f6b38c0fd5b381e80d83f27c97e68b358783`
+  - `GHOST_CLI_VERSION=1.33.4`
+  - `GHOST_CLI_SHA=630700fa3443b0f522dbbe7f1fe1fdc80d38fc48`
   - `GHOST_CLI_INSTALL=/usr/local/lib/ghost-cli`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=6.69.0`
+  - `GHOST_VERSION=6.70.0`
 
 ## `dpkg` (`.deb`-based packages)
 
