@@ -1,7 +1,7 @@
 ## `hylang:pypy3.12-trixie`
 
 ```console
-$ docker pull hylang@sha256:6ae498cae8d099a7e03da82006426a52923caeb9e38210ba6ab03265c1bff5bd
+$ docker pull hylang@sha256:1fa0729c02a686ede1b462d619448962a5b4ca18899e434d58e79d4f5fc32dfc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,37 +16,37 @@ $ docker pull hylang@sha256:6ae498cae8d099a7e03da82006426a52923caeb9e38210ba6ab0
 ### `hylang:pypy3.12-trixie` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:aa367bfa06d8094466cc5b18a2ed372dff8f50d12970e12c1349a15e46d98311
+$ docker pull hylang@sha256:9b446f6b495e6202d1b10165051963803d9837666130f2b240162e2d8b899c31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71113938 bytes)**  
+-	Total Size: **71.2 MB (71225579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bdd0afe248f02e3ac73b8fe4dd3632e95a41b7a2070df3dfa177db7c5db96c0`
+-	Image ID: `sha256:d08cb530e90948f8f3396e591a398284f0ca084f1b8ef064606be6cf9b0cc3d8`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Mon, 05 Oct 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:51:14 GMT
+# Wed, 14 Oct 2026 20:14:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Oct 2026 01:51:59 GMT
+# Wed, 14 Oct 2026 20:15:12 GMT
 ENV LANG=C.UTF-8
-# Tue, 06 Oct 2026 01:51:59 GMT
+# Wed, 14 Oct 2026 20:15:12 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 01:51:59 GMT
-ENV PYPY_VERSION=8.0.0
-# Tue, 06 Oct 2026 01:51:59 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux64.tar.gz'; 			sha256='a1b4851459c2b3dffccab71cb08989534fab0839deddd34f0e6bf18add256fd7'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-aarch64.tar.gz'; 			sha256='72de008683246b0c18aeb8e163dc5d022d3f19b001e8cc5c258010968f10e336'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux32.tar.gz'; 			sha256='228d793e57217f2516032db2c38e593914cb222f0d41660d1d8adbb571dcd4e3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		patch 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		wget -O cffi.patch 'https://github.com/pypy/pypy/commit/8c384bde537fd7742f3acc0e7ecaf55924f29b16.patch?full_index=1'; 	echo '957c091c80a5041d4faeb82d012ec494c8fea8d260ce5fe4a642c8c0eee03caf *cffi.patch' | sha256sum --check --strict -; 	patch -p2 -d /opt/pypy/lib/pypy3.12 < cffi.patch; 	rm cffi.patch; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 06 Oct 2026 01:51:59 GMT
+# Wed, 14 Oct 2026 20:15:12 GMT
+ENV PYPY_VERSION=8.0.1
+# Wed, 14 Oct 2026 20:15:12 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux64.tar.gz'; 			sha256='aeed27797777296d9c94e53bdfa608804696dbd4ff9f2213003cce064ee46ef8'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-aarch64.tar.gz'; 			sha256='4dd9611f782f0974ffd25b521120b4297049daec05a3cec5698dbc6022c74fb9'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux32.tar.gz'; 			sha256='aac46889fd2e85e522f5446256cd57167f91648c48d906d79eb593c812dbe55f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Wed, 14 Oct 2026 20:15:12 GMT
 CMD ["pypy3"]
-# Tue, 06 Oct 2026 02:51:42 GMT
+# Wed, 14 Oct 2026 20:23:04 GMT
 ENV HY_VERSION=1.3.1
-# Tue, 06 Oct 2026 02:51:42 GMT
+# Wed, 14 Oct 2026 20:23:04 GMT
 ENV HYRULE_VERSION=1.1.0
-# Tue, 06 Oct 2026 02:51:42 GMT
+# Wed, 14 Oct 2026 20:23:04 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Tue, 06 Oct 2026 02:51:42 GMT
+# Wed, 14 Oct 2026 20:23:04 GMT
 CMD ["hy"]
 ```
 
@@ -55,77 +55,77 @@ CMD ["hy"]
 		Last Modified: Tue, 06 Oct 2026 00:13:48 GMT  
 		Size: 29.8 MB (29843350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17af6fe14ad5d3e449f740ad7bf28340e0f9a912789879b810c2ee028dd0bc0e`  
-		Last Modified: Tue, 06 Oct 2026 01:52:10 GMT  
-		Size: 1.2 MB (1221085 bytes)  
+	-	`sha256:99c9f78ad2e83a377d5ddcd210a7012ff8f63e5c109049a85e929ff53ae33150`  
+		Last Modified: Wed, 14 Oct 2026 20:15:24 GMT  
+		Size: 1.2 MB (1221063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74ec474b0aa801cd313400ac4b57ec025658d99ead96c239503ffaabc7e483c8`  
-		Last Modified: Tue, 06 Oct 2026 01:52:11 GMT  
-		Size: 34.2 MB (34217446 bytes)  
+	-	`sha256:1ff146a89c53515c757b134a34c1c79e18525a400c8a07825090892803509940`  
+		Last Modified: Wed, 14 Oct 2026 20:15:25 GMT  
+		Size: 34.3 MB (34312723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6c130c97c33d69c89d586ff754fcf18d2be55de024b97722eb4680a4824c0e8`  
-		Last Modified: Tue, 06 Oct 2026 02:51:49 GMT  
-		Size: 5.8 MB (5832057 bytes)  
+	-	`sha256:9ccbb303bba3af040a10465e8b4e95af45cfb1362af08d986746811297b02fa4`  
+		Last Modified: Wed, 14 Oct 2026 20:23:11 GMT  
+		Size: 5.8 MB (5848443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy3.12-trixie` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:9a4c1dac58c746388d3ebe7b18c36116b0720c90b5da62556f5a6cb7b45d52d2
+$ docker pull hylang@sha256:c7640b2621a4967be2f7089ef0d659c11d4a1bb71fbb2f1c4058fac7f6117fd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2265146 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e69e64a1103ee56b4770a6878d9e64272ea0d7ac226e59da7e488d4fefc738c5`
+-	Image ID: `sha256:2c648a13dc29fd63397e00fcc11587cd9e7f95b65692d95c7ab139b23ee85c2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:66b253369009c9b85c9cbd5adda858736ed4b33213bbd37621f64816bf548b11`  
-		Last Modified: Tue, 06 Oct 2026 02:51:49 GMT  
+	-	`sha256:ac8ac3170e899090723061942a8cc0065c18c62c973372ef4036bddb8cd564d8`  
+		Last Modified: Wed, 14 Oct 2026 20:23:11 GMT  
 		Size: 2.3 MB (2256313 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7b7ac8e62b4ec3cc20c36f9873d343b3fd2ae828ca23b406ce39207fa426fe8`  
-		Last Modified: Tue, 06 Oct 2026 02:51:49 GMT  
+	-	`sha256:6018e9692797ac0b23bd1298fc2db76fc9fea16a60d16c6752599dc5c4269156`  
+		Last Modified: Wed, 14 Oct 2026 20:23:11 GMT  
 		Size: 8.8 KB (8833 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:pypy3.12-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:dcd165522b8164c5b3ca964d2c0a0336763fe69bfadb9c22fe7677147ff72f25
+$ docker pull hylang@sha256:517379101919b1d0b031f2b5fd30d4f925fc07d76aff45c464d0945ed436a470
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.7 MB (69693373 bytes)**  
+-	Total Size: **69.8 MB (69791351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:894f52be2592524f95bd53c830cc23d9c9a5fd658ae291324adc290ea706b444`
+-	Image ID: `sha256:28af00c0a31e3f33fd19a8e1f068d96cc5e0ec40dbd89c2e38681ec7e1fe3c16`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Mon, 05 Oct 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:54:41 GMT
+# Wed, 14 Oct 2026 20:12:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Oct 2026 01:55:27 GMT
+# Wed, 14 Oct 2026 20:13:32 GMT
 ENV LANG=C.UTF-8
-# Tue, 06 Oct 2026 01:55:27 GMT
+# Wed, 14 Oct 2026 20:13:32 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 01:55:27 GMT
-ENV PYPY_VERSION=8.0.0
-# Tue, 06 Oct 2026 01:55:27 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux64.tar.gz'; 			sha256='a1b4851459c2b3dffccab71cb08989534fab0839deddd34f0e6bf18add256fd7'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-aarch64.tar.gz'; 			sha256='72de008683246b0c18aeb8e163dc5d022d3f19b001e8cc5c258010968f10e336'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux32.tar.gz'; 			sha256='228d793e57217f2516032db2c38e593914cb222f0d41660d1d8adbb571dcd4e3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		patch 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		wget -O cffi.patch 'https://github.com/pypy/pypy/commit/8c384bde537fd7742f3acc0e7ecaf55924f29b16.patch?full_index=1'; 	echo '957c091c80a5041d4faeb82d012ec494c8fea8d260ce5fe4a642c8c0eee03caf *cffi.patch' | sha256sum --check --strict -; 	patch -p2 -d /opt/pypy/lib/pypy3.12 < cffi.patch; 	rm cffi.patch; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 06 Oct 2026 01:55:27 GMT
+# Wed, 14 Oct 2026 20:13:32 GMT
+ENV PYPY_VERSION=8.0.1
+# Wed, 14 Oct 2026 20:13:32 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux64.tar.gz'; 			sha256='aeed27797777296d9c94e53bdfa608804696dbd4ff9f2213003cce064ee46ef8'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-aarch64.tar.gz'; 			sha256='4dd9611f782f0974ffd25b521120b4297049daec05a3cec5698dbc6022c74fb9'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux32.tar.gz'; 			sha256='aac46889fd2e85e522f5446256cd57167f91648c48d906d79eb593c812dbe55f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Wed, 14 Oct 2026 20:13:32 GMT
 CMD ["pypy3"]
-# Tue, 06 Oct 2026 02:45:06 GMT
+# Wed, 14 Oct 2026 20:19:45 GMT
 ENV HY_VERSION=1.3.1
-# Tue, 06 Oct 2026 02:45:06 GMT
+# Wed, 14 Oct 2026 20:19:45 GMT
 ENV HYRULE_VERSION=1.1.0
-# Tue, 06 Oct 2026 02:45:06 GMT
+# Wed, 14 Oct 2026 20:19:45 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Tue, 06 Oct 2026 02:45:06 GMT
+# Wed, 14 Oct 2026 20:19:45 GMT
 CMD ["hy"]
 ```
 
@@ -134,77 +134,77 @@ CMD ["hy"]
 		Last Modified: Tue, 06 Oct 2026 00:13:55 GMT  
 		Size: 30.2 MB (30200282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99d1550d15338eca9ff54f35658c5e985471c3d60c697f55a7486ddb546535f8`  
-		Last Modified: Tue, 06 Oct 2026 01:55:38 GMT  
-		Size: 1.2 MB (1202754 bytes)  
+	-	`sha256:7c9eebf44eb9c68db0dd1d7cb757fa2e4090ff50805a03054f1e15d2d7b22b92`  
+		Last Modified: Wed, 14 Oct 2026 20:13:42 GMT  
+		Size: 1.2 MB (1202737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a32c74393471068d700add3ffc0669d71b32189cbb5ec0a537e80fd16643b992`  
-		Last Modified: Tue, 06 Oct 2026 01:55:39 GMT  
-		Size: 32.5 MB (32458218 bytes)  
+	-	`sha256:0dfa2443e7dfec9907495c65297ac4cc1aba5d7fa2d364615656baabaa5a8480`  
+		Last Modified: Wed, 14 Oct 2026 20:13:43 GMT  
+		Size: 32.5 MB (32539917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f4cfd17092600b357b7765fbf4c683777cdb57f7627b0e2c7379cf995d6733e`  
-		Last Modified: Tue, 06 Oct 2026 02:45:14 GMT  
-		Size: 5.8 MB (5832119 bytes)  
+	-	`sha256:8c9e0b68f8f01e8ac6cd2861eddc6966b589210096071c82763cefa914439bb7`  
+		Last Modified: Wed, 14 Oct 2026 20:19:53 GMT  
+		Size: 5.8 MB (5848415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy3.12-trixie` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:16c8afff48912c8e24d3b31d2dcb151943c97b32750c77f0b2f0cbb0d5f64003
+$ docker pull hylang@sha256:ff099cda838bdf268e91ac490264fc082e1b6215574847bbad665c8a4fb36e8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2265608 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8407573e192b4732b281a626eb88f9a87a9c3dd1f376f113b68318c111bdcb94`
+-	Image ID: `sha256:5e6045edde91981ff3965f69c2f6cee908f76b5872f8719d97e278e9c3bc7d1b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ae8c4942630ab6f7822ae0e46bb04ee6ce28d0eeae7ac3f6ac82a33318560ef`  
-		Last Modified: Tue, 06 Oct 2026 02:45:14 GMT  
+	-	`sha256:779cebfd448a6b4d0a82f603f96202f711896983effb9e83a62e254beefd5e28`  
+		Last Modified: Wed, 14 Oct 2026 20:19:52 GMT  
 		Size: 2.3 MB (2256623 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:15f53c454b970a8f21b5211b807d9f4d24eeadec50bb11dfc4432a1e1ee3b516`  
-		Last Modified: Tue, 06 Oct 2026 02:45:13 GMT  
+	-	`sha256:c5c64c112546fbe9592154d3228c45772b2fcce9ea3e5bf54cc9c765392e2357`  
+		Last Modified: Wed, 14 Oct 2026 20:19:52 GMT  
 		Size: 9.0 KB (8985 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:pypy3.12-trixie` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:2489288f56516356ee846843f01b458d642301df3fab07ae561d578387a6146f
+$ docker pull hylang@sha256:777c7cf6c77133723557d657a41bdd786ee97fc378b2014765a38ab473c7be4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69259861 bytes)**  
+-	Total Size: **69.4 MB (69391707 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c561992f27b6473432470282d1658acf3a4fbad093aba2ea1ee232b48b69d26`
+-	Image ID: `sha256:729dfd15c4c5a13ac4b5c4749d8d5bf3153a3efcc102d7d736f70fd5c4a0d22f`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Mon, 05 Oct 2026 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:50:42 GMT
+# Wed, 14 Oct 2026 20:14:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Oct 2026 01:51:28 GMT
+# Wed, 14 Oct 2026 20:15:16 GMT
 ENV LANG=C.UTF-8
-# Tue, 06 Oct 2026 01:51:28 GMT
+# Wed, 14 Oct 2026 20:15:16 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 01:51:28 GMT
-ENV PYPY_VERSION=8.0.0
-# Tue, 06 Oct 2026 01:51:28 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux64.tar.gz'; 			sha256='a1b4851459c2b3dffccab71cb08989534fab0839deddd34f0e6bf18add256fd7'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-aarch64.tar.gz'; 			sha256='72de008683246b0c18aeb8e163dc5d022d3f19b001e8cc5c258010968f10e336'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.0-linux32.tar.gz'; 			sha256='228d793e57217f2516032db2c38e593914cb222f0d41660d1d8adbb571dcd4e3'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		patch 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		wget -O cffi.patch 'https://github.com/pypy/pypy/commit/8c384bde537fd7742f3acc0e7ecaf55924f29b16.patch?full_index=1'; 	echo '957c091c80a5041d4faeb82d012ec494c8fea8d260ce5fe4a642c8c0eee03caf *cffi.patch' | sha256sum --check --strict -; 	patch -p2 -d /opt/pypy/lib/pypy3.12 < cffi.patch; 	rm cffi.patch; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
-# Tue, 06 Oct 2026 01:51:28 GMT
+# Wed, 14 Oct 2026 20:15:16 GMT
+ENV PYPY_VERSION=8.0.1
+# Wed, 14 Oct 2026 20:15:16 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux64.tar.gz'; 			sha256='aeed27797777296d9c94e53bdfa608804696dbd4ff9f2213003cce064ee46ef8'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-aarch64.tar.gz'; 			sha256='4dd9611f782f0974ffd25b521120b4297049daec05a3cec5698dbc6022c74fb9'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy3.12-v8.0.1-linux32.tar.gz'; 			sha256='aac46889fd2e85e522f5446256cd57167f91648c48d906d79eb593c812dbe55f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 		libfontconfig1 	; 		wget -O pypy.tar.gz "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.gz" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xzC /opt/pypy --strip-components=1 -f pypy.tar.gz; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.gz; 		rm -v /opt/pypy/lib/libtk*.so /opt/pypy/lib/libz.so*; 		ln -sv '/opt/pypy/bin/pypy3' /usr/local/bin/; 		pypy3 --version; 		cd /opt/pypy/lib/pypy3.12; 	if [ -f _gdbm_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libgdbm-dev; 		pypy3 _gdbm_build.py; 	fi; 	if [ -f _ssl_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libssl-dev; 		pypy3 _ssl_build.py; 	fi; 	if [ -f _lzma_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev liblzma-dev; 		pypy3 _lzma_build.py; 	fi; 	if [ -f _sqlite3_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev libsqlite3-dev; 		pypy3 _sqlite3_build.py; 	fi; 	if [ -f _tkinter/tklib_build.py ]; then 		apt-get install -y --no-install-recommends gcc libc6-dev tk-dev; 		pypy3 _tkinter/tklib_build.py; 	fi; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	export shellPid="$$"; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| grep -vE 'lib(tcl|tk|X[a-z]*)[0-9]*[.]' 		| awk '/not found/ { print >> "/dev/stderr"; system("kill -9 -$shellPid") } /=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1 || index(so, "/opt/pypy/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy3 --version; 		pypy3 -m ensurepip --default-pip; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + # buildkit
+# Wed, 14 Oct 2026 20:15:16 GMT
 CMD ["pypy3"]
-# Tue, 06 Oct 2026 02:49:31 GMT
+# Wed, 14 Oct 2026 20:23:11 GMT
 ENV HY_VERSION=1.3.1
-# Tue, 06 Oct 2026 02:49:31 GMT
+# Wed, 14 Oct 2026 20:23:11 GMT
 ENV HYRULE_VERSION=1.1.0
-# Tue, 06 Oct 2026 02:49:31 GMT
+# Wed, 14 Oct 2026 20:23:11 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Tue, 06 Oct 2026 02:49:31 GMT
+# Wed, 14 Oct 2026 20:23:11 GMT
 CMD ["hy"]
 ```
 
@@ -213,39 +213,39 @@ CMD ["hy"]
 		Last Modified: Tue, 06 Oct 2026 00:13:53 GMT  
 		Size: 31.4 MB (31353297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:600672d77ea9d771e14d5acfc39dc0eecd5492326ca9603c434bc32d22854812`  
-		Last Modified: Tue, 06 Oct 2026 01:51:37 GMT  
-		Size: 1.2 MB (1228241 bytes)  
+	-	`sha256:28af3ae88c7595ff201666400dba53baf944a9f9edf642cf548a4356a62b14ad`  
+		Last Modified: Wed, 14 Oct 2026 20:15:26 GMT  
+		Size: 1.2 MB (1228266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29d59a31de7bdd7e8daa7991c1312d0538959e77a341582a0a1cf5bff777815`  
-		Last Modified: Tue, 06 Oct 2026 01:51:38 GMT  
-		Size: 30.8 MB (30846358 bytes)  
+	-	`sha256:699bf588f329336f34bc0b1ae70f8a7c95d5b04deab98f721827808c921f79ac`  
+		Last Modified: Wed, 14 Oct 2026 20:15:27 GMT  
+		Size: 31.0 MB (30961744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0507a456c1594e56b06289ff95b53cb89446554bae47fc25d94a97179abd075c`  
-		Last Modified: Tue, 06 Oct 2026 02:49:39 GMT  
-		Size: 5.8 MB (5831965 bytes)  
+	-	`sha256:a1c2252825544451756952d1768a0211e543e1baad79b93098c7d118c273a573`  
+		Last Modified: Wed, 14 Oct 2026 20:23:18 GMT  
+		Size: 5.8 MB (5848400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:pypy3.12-trixie` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:84cdf6c9a85fec7e25d67ac54fbe2a13d56601410fd9e246a11c15f12d423ad6
+$ docker pull hylang@sha256:e386452fe984cbfa3ce89c9262abbd69972827691cfc6f5acdf4ecde1c82d450
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2262246 bytes)**  
+-	Total Size: **2.3 MB (2262247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff01dd4960fd05485f187593dc6504789d2cc92e63fd1fca9ac1b89ebec2ef8f`
+-	Image ID: `sha256:9284f31c670af1ae1d18f431ee1b16099662ff2b4aa6727584f7abb007ad58a6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ded9d8dae893b2ac2098eb87eea290c9831dd02728b0935d82aaec2998afb02`  
-		Last Modified: Tue, 06 Oct 2026 02:49:39 GMT  
+	-	`sha256:d60c8a4a74a212b0533af75d5dd2fe09bd1d8f5f8773984b95acd27fe91c7cd1`  
+		Last Modified: Wed, 14 Oct 2026 20:23:18 GMT  
 		Size: 2.3 MB (2253466 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ce1d10718318bab59a105a45fb3356335917fbd1aa1fb2c102058cc137cdec2`  
-		Last Modified: Tue, 06 Oct 2026 02:49:38 GMT  
-		Size: 8.8 KB (8780 bytes)  
+	-	`sha256:06228b640826863d68bc310967f517e74144506df03f4f8601182bd3d56d88df`  
+		Last Modified: Wed, 14 Oct 2026 20:23:18 GMT  
+		Size: 8.8 KB (8781 bytes)  
 		MIME: application/vnd.in-toto+json
