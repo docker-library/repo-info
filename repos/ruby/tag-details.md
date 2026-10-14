@@ -74,6 +74,24 @@
 -	[`ruby:4.0.7-slim-bookworm`](#ruby407-slim-bookworm)
 -	[`ruby:4.0.7-slim-trixie`](#ruby407-slim-trixie)
 -	[`ruby:4.0.7-trixie`](#ruby407-trixie)
+-	[`ruby:4.1-rc`](#ruby41-rc)
+-	[`ruby:4.1-rc-alpine`](#ruby41-rc-alpine)
+-	[`ruby:4.1-rc-alpine3.23`](#ruby41-rc-alpine323)
+-	[`ruby:4.1-rc-alpine3.24`](#ruby41-rc-alpine324)
+-	[`ruby:4.1-rc-bookworm`](#ruby41-rc-bookworm)
+-	[`ruby:4.1-rc-slim`](#ruby41-rc-slim)
+-	[`ruby:4.1-rc-slim-bookworm`](#ruby41-rc-slim-bookworm)
+-	[`ruby:4.1-rc-slim-trixie`](#ruby41-rc-slim-trixie)
+-	[`ruby:4.1-rc-trixie`](#ruby41-rc-trixie)
+-	[`ruby:4.1.0-preview1`](#ruby410-preview1)
+-	[`ruby:4.1.0-preview1-alpine`](#ruby410-preview1-alpine)
+-	[`ruby:4.1.0-preview1-alpine3.23`](#ruby410-preview1-alpine323)
+-	[`ruby:4.1.0-preview1-alpine3.24`](#ruby410-preview1-alpine324)
+-	[`ruby:4.1.0-preview1-bookworm`](#ruby410-preview1-bookworm)
+-	[`ruby:4.1.0-preview1-slim`](#ruby410-preview1-slim)
+-	[`ruby:4.1.0-preview1-slim-bookworm`](#ruby410-preview1-slim-bookworm)
+-	[`ruby:4.1.0-preview1-slim-trixie`](#ruby410-preview1-slim-trixie)
+-	[`ruby:4.1.0-preview1-trixie`](#ruby410-preview1-trixie)
 -	[`ruby:alpine`](#rubyalpine)
 -	[`ruby:alpine3.23`](#rubyalpine323)
 -	[`ruby:alpine3.24`](#rubyalpine324)
@@ -48875,6 +48893,78 @@ $ docker pull ruby@sha256:3296afac87bfbf7fbe71ff4231425ab3c53c346c18ee281f00ddfd
 		Last Modified: Tue, 06 Oct 2026 04:52:30 GMT  
 		Size: 23.7 KB (23715 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `ruby:4.1-rc`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-alpine3.23`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-alpine3.24`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-bookworm`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-slim`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-slim-trixie`
+
+**does not exist** (yet?)
+
+## `ruby:4.1-rc-trixie`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-alpine3.23`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-alpine3.24`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-bookworm`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-slim`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-slim-trixie`
+
+**does not exist** (yet?)
+
+## `ruby:4.1.0-preview1-trixie`
+
+**does not exist** (yet?)
 
 ## `ruby:alpine`
 
