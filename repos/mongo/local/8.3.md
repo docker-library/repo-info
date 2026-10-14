@@ -1,10 +1,10 @@
-# `mongo:8.3.11-noble`
+# `mongo:8.3.13-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce3c05e42ae98526e12527140f6b935293148f84e76126375818d4f672bd6f94`
-- Created: `2026-10-02T01:32:03.079996395Z`
-- Virtual Size: ~ 839.38 Mb  
+- Image ID: `sha256:b8018e2cbff33a87a537451b1d413407821cdbee8992fa89f7752c5a80e1e7a6`
+- Created: `2026-10-13T21:13:48.811855845Z`
+- Virtual Size: ~ 840.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.3`
-  - `MONGO_VERSION=8.3.11`
+  - `MONGO_VERSION=8.3.13`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1387,11 +1387,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.12.0`
+### `dpkg` source package: `mongodb-mongosh=2.13.0`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.12.0`
+- `mongodb-mongosh=2.13.0`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1402,17 +1402,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.3.11`
+### `dpkg` source package: `mongodb-org=8.3.13`
 
 Binary Packages:
 
-- `mongodb-org=8.3.11`
-- `mongodb-org-database=8.3.11`
-- `mongodb-org-database-tools-extra=8.3.11`
-- `mongodb-org-mongos=8.3.11`
-- `mongodb-org-server=8.3.11`
-- `mongodb-org-shell=8.3.11`
-- `mongodb-org-tools=8.3.11`
+- `mongodb-org=8.3.13`
+- `mongodb-org-database=8.3.13`
+- `mongodb-org-database-tools-extra=8.3.13`
+- `mongodb-org-mongos=8.3.13`
+- `mongodb-org-server=8.3.13`
+- `mongodb-org-shell=8.3.13`
+- `mongodb-org-tools=8.3.13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1971,10 +1971,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz 188348 SHA512:fd539785392a3f9e79f88ca6e299baae834a9db8e18e3b0c9dba283024e65137d66e09ecf92501656ee3857ca66cd72918231800ba3c85b2eadd2123ecb3cf85
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.dsc' tzdata_2026c-0ubuntu0.24.04.1.dsc 2728 SHA512:df7df3199b1af5d6dc73bdd0296f2000e7068a1ba24b7e01db00d21a114cbe292db3993730d7be6ee5e0469401105bc441b50dc9680d430b01dce9ad904ed3e3
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz 188348 SHA512:fd539785392a3f9e79f88ca6e299baae834a9db8e18e3b0c9dba283024e65137d66e09ecf92501656ee3857ca66cd72918231800ba3c85b2eadd2123ecb3cf85
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.dsc' tzdata_2026c-0ubuntu0.24.04.1.dsc 2728 SHA512:df7df3199b1af5d6dc73bdd0296f2000e7068a1ba24b7e01db00d21a114cbe292db3993730d7be6ee5e0469401105bc441b50dc9680d430b01dce9ad904ed3e3
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
