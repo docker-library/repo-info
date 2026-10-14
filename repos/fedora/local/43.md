@@ -108,7 +108,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-8.12.1-4.el10_2.4.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.6.x86_64`
 
 Licenses (from `rpm --query`): curl
 
@@ -186,7 +186,7 @@ Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.7.3-1.el10_2.3.x86_64`
+### `rpm` package: `expat-2.7.3-1.el10_2.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -210,7 +210,7 @@ Licenses (from `rpm --query`): GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gawk-5.3.0-6.el10.x86_64`
+### `rpm` package: `gawk-5.3.0-6.el10_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
@@ -258,7 +258,7 @@ Licenses (from `rpm --query`): (LGPL-3.0-or-later OR GPL-2.0-or-later OR (LGPL-3
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.8.10-4.el10_2.x86_64`
+### `rpm` package: `gnutls-3.8.10-5.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
@@ -342,7 +342,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libarchive-3.7.7-10.el10_2.x86_64`
+### `rpm` package: `libarchive-3.7.7-11.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
@@ -360,7 +360,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libbrotli-1.1.0-7.el10_1.x86_64`
+### `rpm` package: `libbrotli-1.1.0-8.el10_2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -396,7 +396,7 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-8.12.1-4.el10_2.4.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.6.x86_64`
 
 Licenses (from `rpm --query`): curl
 
@@ -606,7 +606,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND BSD-3-Clause AND BSD-2-Clau
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-2.12.5-10.el10_2.3.x86_64`
+### `rpm` package: `libxml2-2.12.5-10.el10_2.4.x86_64`
 
 Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
@@ -666,19 +666,19 @@ Licenses (from `rpm --query`): OLDAP-2.8
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-9.9p1-25.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-9.9p1-28.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-9.9p1-25.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-28.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-server-9.9p1-25.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-server-9.9p1-28.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
@@ -696,7 +696,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.5.8-1.0.1.el10_2.x86_64`
+### `rpm` package: `openssl-libs-3.5.8-2.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0
 
@@ -774,7 +774,7 @@ Licenses (from `rpm --query`): MPL-2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.12.13-2.0.1.el10_2.1.x86_64`
+### `rpm` package: `python3-3.12.15-1.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Python-2.0.1
 
@@ -822,7 +822,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.12.13-2.0.1.el10_2.1.x86_64`
+### `rpm` package: `python3-libs-3.12.15-1.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): Python-2.0.1 AND CC0-1.0
 
@@ -888,7 +888,7 @@ Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-sequoia-1.10.1.1-2.el10.x86_64`
+### `rpm` package: `rpm-sequoia-1.10.2.1-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.0-or-later AND Apache-2.0 AND BSL-1.0 AND MIT AND Unicode-DFS-2016 AND (Apache-2.0 OR MIT) AND (MIT OR Apache-2.0 OR Zlib) AND (Unlicense OR MIT)
 
@@ -900,7 +900,7 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rsyslog-8.2510.0-5.el10_2.1.x86_64`
+### `rpm` package: `rsyslog-8.2510.0-5.el10_2.2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
@@ -960,7 +960,7 @@ Licenses (from `rpm --query`): BSD-2-Clause
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2026c-1.el10_2.noarch`
+### `rpm` package: `tzdata-2026e-1.el10_2.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
@@ -978,13 +978,13 @@ Licenses (from `rpm --query`): GPL-2.0-only AND GPL-2.0-or-later AND BSD-2-Claus
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.20.noarch`
+### `rpm` package: `vim-data-9.1.083-9.0.1.el10_2.22.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.20.x86_64`
+### `rpm` package: `vim-minimal-9.1.083-9.0.1.el10_2.22.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
