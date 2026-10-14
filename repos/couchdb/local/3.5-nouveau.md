@@ -1,9 +1,9 @@
-# `couchdb:3.5.2.1-nouveau`
+# `couchdb:3.5.3-nouveau`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2452e013c03d55a0460f86f845a427c201ad2a80a010ff8ed0ed06ae6c396025`
-- Created: `2026-10-06T01:41:50.55665226Z`
+- Image ID: `sha256:f2db9b2fa2b3307b3dee794dbbfa1eb960d7672cb2f9735984e3befd74cc6cc7`
+- Created: `2026-10-13T21:08:47.061095322Z`
 - Virtual Size: ~ 367.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -434,11 +434,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `couchdb=3.5.2.1~trixie`
+### `dpkg` source package: `couchdb=3.5.3~trixie`
 
 Binary Packages:
 
-- `couchdb-nouveau=3.5.2.1~trixie`
+- `couchdb-nouveau=3.5.3~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/couchdb-nouveau/copyright`)
 
