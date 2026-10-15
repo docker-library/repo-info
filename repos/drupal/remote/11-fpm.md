@@ -1,7 +1,7 @@
 ## `drupal:11-fpm`
 
 ```console
-$ docker pull drupal@sha256:3ff360cce7a37abfe6a97d7292eeddf7a6d9ac15f4f05af8c0f981e495e9b314
+$ docker pull drupal@sha256:d396266b39ed400fb97e75684d80343e293a0c98f80197aad6e216cfa3a1b721
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -874,13 +874,13 @@ $ docker pull drupal@sha256:bc97d6af962c4c14ea9209b5d2911128c9c089864bcd5f84b202
 ### `drupal:11-fpm` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:bfe9ef2aae6e84cff0d98cbd5920bb22fcbe7f13b5323f456aeb96c390374a2c
+$ docker pull drupal@sha256:68687a1653c9db8fa206f7ded0a7e1cdf603faf4856385752e5dfe4d0689bde1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.4 MB (235388532 bytes)**  
+-	Total Size: **235.4 MB (235389324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b44d9c84eb96cef8c16035570b72db840ec6e80515c8aa06963e7e4f7fbb9c05`
+-	Image ID: `sha256:d9fab3afa864d4235ab2695cefabf353653d8c29c91f76f70ebf174b23fb9580`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -940,14 +940,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Sat, 10 Oct 2026 07:12:27 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Sat, 10 Oct 2026 07:12:27 GMT
-ENV DRUPAL_VERSION=11.4.9
+ENV DRUPAL_VERSION=11.4.10
 # Sat, 10 Oct 2026 07:12:27 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Sat, 10 Oct 2026 07:12:27 GMT
 WORKDIR /opt/drupal
-# Wed, 14 Oct 2026 02:03:12 GMT
+# Thu, 15 Oct 2026 03:11:33 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 14 Oct 2026 02:03:12 GMT
+# Thu, 15 Oct 2026 03:11:33 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1012,33 +1012,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Sat, 10 Oct 2026 07:17:02 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8581f87b2e8a2165507effd20ff9127d5e9aedad29d3f17dbfc40f6491c8b16`  
-		Last Modified: Wed, 14 Oct 2026 02:08:08 GMT  
-		Size: 23.7 MB (23687980 bytes)  
+	-	`sha256:dc70fe5d26e216f635cde83c2ffa3a8571b77b2c096ae1a1c9303d54435ea7f1`  
+		Last Modified: Thu, 15 Oct 2026 03:16:28 GMT  
+		Size: 23.7 MB (23688772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:11-fpm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:252d6f16779c9ad896074f7eae1f97b2d29e2e6ee46d558075c913746965bb98
+$ docker pull drupal@sha256:c511be103d0832a2a85045db1bb763a2eccd6c80aff12aa588eddb217d64b782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7054507 bytes)**  
+-	Total Size: **7.1 MB (7054537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d388588b6bdbf1553097e2c2a24c121f6e64c0851743e89f6e8e1d77dd05780`
+-	Image ID: `sha256:2dd4d48b27d9d475e2bcf249b5bf8222f205b504aad721bdcaeac48588c407db`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:966fbb1792ba161a84fd664ebca32f12d7051760a5574622f83e97cd7f16886a`  
-		Last Modified: Wed, 14 Oct 2026 02:08:05 GMT  
-		Size: 7.0 MB (7016991 bytes)  
+	-	`sha256:f7189038b6f7c0dc2d254b2b47937fda1de8511a8c901a50354c27bda6c5c9b9`  
+		Last Modified: Thu, 15 Oct 2026 03:16:25 GMT  
+		Size: 7.0 MB (7017011 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75549452bf998801bd29540be5415839c2ba2912e5c3d863e9a767467089742a`  
-		Last Modified: Wed, 14 Oct 2026 02:08:03 GMT  
-		Size: 37.5 KB (37516 bytes)  
+	-	`sha256:ce3de651d7dc232fe25d8461f9fa130a4f4cbfa69e2d9133d96f38676c71dd7f`  
+		Last Modified: Thu, 15 Oct 2026 03:16:23 GMT  
+		Size: 37.5 KB (37526 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:11-fpm` - linux; s390x
