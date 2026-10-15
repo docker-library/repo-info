@@ -121,14 +121,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.debian.tar.xz 140696 SHA512:89028da0e42f3d144cbfb19dd6306d6075e2cf7aeb62e035f7734e9a02cd3b64016ff0b8c6d10f0d19c4cb8522c7d43c8b1dd61988e097f0c8bf5be4acec50dd
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.dsc 3434 SHA512:efa53e6b95a703f5023033f2b462dfa3c2d8b1844a685245e4246a4076f318b132c030fcca19457e21120250c98c80ffa8e47c3381e5927265496049173da9d7
-```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -3061,14 +3056,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-146.146
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-146.146.diff.gz' linux_6.8.0-146.146.diff.gz 9183513 SHA512:e30b0712f02f6d799acfec76d35c600abbd7aa96836cdae998fba29cd8414698b16e632654ef331e358077cd6cac01f80b4e2d84509ed44b726a66c478216c39
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-146.146.dsc' linux_6.8.0-146.146.dsc 9348 SHA512:57b555580691973c3b43ff6326f0c2591535629f6d97b12f922e398ec6e2b9a70697b3ec5e36b641208a8298eea35420d7c40da4e794c1c11ace8c09ca3a9ed5
-```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -8151,10 +8141,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz 188348 SHA512:fd539785392a3f9e79f88ca6e299baae834a9db8e18e3b0c9dba283024e65137d66e09ecf92501656ee3857ca66cd72918231800ba3c85b2eadd2123ecb3cf85
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.dsc' tzdata_2026c-0ubuntu0.24.04.1.dsc 2728 SHA512:df7df3199b1af5d6dc73bdd0296f2000e7068a1ba24b7e01db00d21a114cbe292db3993730d7be6ee5e0469401105bc441b50dc9680d430b01dce9ad904ed3e3
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz 188348 SHA512:fd539785392a3f9e79f88ca6e299baae834a9db8e18e3b0c9dba283024e65137d66e09ecf92501656ee3857ca66cd72918231800ba3c85b2eadd2123ecb3cf85
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.dsc' tzdata_2026c-0ubuntu0.24.04.1.dsc 2728 SHA512:df7df3199b1af5d6dc73bdd0296f2000e7068a1ba24b7e01db00d21a114cbe292db3993730d7be6ee5e0469401105bc441b50dc9680d430b01dce9ad904ed3e3
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
