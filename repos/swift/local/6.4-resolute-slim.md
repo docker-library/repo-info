@@ -1,10 +1,10 @@
-# `swift:6.4.0-slim`
+# `swift:6.4.1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:949a871e678d7e88bcbbf3c8ba5a54093f5e2523d9fe96587e113cb8fb5333d3`
-- Created: `2026-10-02T01:40:53.069977559Z`
-- Virtual Size: ~ 286.73 Mb  
+- Image ID: `sha256:098e709bd0a229a0b8e16c9f097d957878ba69c9ff9cfd84f009fcb9cee506a7`
+- Created: `2026-10-13T20:28:56.843657777Z`
+- Virtual Size: ~ 286.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu26.04`
-  - `SWIFT_BRANCH=swift-6.4.0-release`
-  - `SWIFT_VERSION=swift-6.4.0-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.1-release`
+  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1364,20 +1364,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.5.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.5.1-1.debian.tar.xz' libxcrypt_4.5.1-1.debian.tar.xz 8684 SHA256:b6096f6498adf5a94d727c9065ed33b784190e8c2cd3eda5f073e435708293ae
 ```
 
-### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.2`
+### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.3`
 
 Binary Packages:
 
-- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.2`
+- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.3.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.3.debian.tar.xz 41372 SHA512:813aa6b9bea7b74bea273382c9eb5f814ee644e2169dc178776b956e191ddf0fdea03614296a4fd712e0fc091436b48c05736c175452222d09073f623d6a941b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.3.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.3.dsc 3266 SHA512:6e8f005ef288ed1221b205bfd6337b11a8a4e925b7090318b548c0484a99ed4e9fc7bf341fcb51af525f4a32cd51ad2d7abf18b972e655f3e62343900a1f14ef
+```
 
 ### `dpkg` source package: `libzstd=1.5.7+dfsg-3`
 
@@ -1999,10 +2004,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz 189872 SHA512:21685b2bcc0620c6743ec618b1367162dc726a0a36157db4e57145ab3be85187f52868a1936c6150e0bef4beaf50e2703d3250aa61089b114e02556eebc056fe
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.dsc' tzdata_2026c-0ubuntu0.26.04.1.dsc 2712 SHA512:635f4cf83acfb7d30c5f356587d9cfe5465619c760e486f9a55a5a394d750d53ffe9195fad62063fc3c7d2565bf21f7d52e1eb42c23fe463c2cabab91255169d
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz 189872 SHA512:21685b2bcc0620c6743ec618b1367162dc726a0a36157db4e57145ab3be85187f52868a1936c6150e0bef4beaf50e2703d3250aa61089b114e02556eebc056fe
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.dsc' tzdata_2026c-0ubuntu0.26.04.1.dsc 2712 SHA512:635f4cf83acfb7d30c5f356587d9cfe5465619c760e486f9a55a5a394d750d53ffe9195fad62063fc3c7d2565bf21f7d52e1eb42c23fe463c2cabab91255169d
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`

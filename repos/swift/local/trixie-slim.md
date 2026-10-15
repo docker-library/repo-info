@@ -1,10 +1,10 @@
-# `swift:6.4.0-trixie-slim`
+# `swift:6.4.1-trixie-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:20bfa1608292230fbb0a559ab0dd8a11aa03fa3a96c369e80d0106542802eb2d`
-- Created: `2026-10-06T02:08:16.801757431Z`
-- Virtual Size: ~ 322.05 Mb  
+- Image ID: `sha256:9cc7ffe31bada6e0dd9591f8e66478c01eb9819d009b45f463660df1270e57aa`
+- Created: `2026-10-13T20:30:19.756017584Z`
+- Virtual Size: ~ 322.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian13`
-  - `SWIFT_BRANCH=swift-6.4.0-release`
-  - `SWIFT_VERSION=swift-6.4.0-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.1-release`
+  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
