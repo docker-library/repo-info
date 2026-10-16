@@ -1201,21 +1201,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.90.0-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0-1.dsc' glib2.0_2.90.0-1.dsc 4809 SHA256:0a7aee9c8edd7512bf732f7acf96066d463523acd53552a6677e32585f1faa1c
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0.orig-unicode-data.tar.xz' glib2.0_2.90.0.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0.orig.tar.xz' glib2.0_2.90.0.orig.tar.xz 5830480 SHA256:17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0-1.debian.tar.xz' glib2.0_2.90.0-1.debian.tar.xz 143956 SHA256:317eeae08f0f06a750f58b054af4e6dd2c6f37bad3e1140166ce2061b3f5d1df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.90.0-1/
 
-- https://sources.debian.net/src/glib2.0/2.90.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.90.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.90.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.43-7`
 
