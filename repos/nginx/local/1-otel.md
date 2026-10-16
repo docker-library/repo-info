@@ -1,18 +1,18 @@
-# `nginx:1.31.6-otel`
+# `nginx:1.31.7-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5fbf98bfd1e172b86c8aa965e67454bc0c20530c0c2aa38f40ed4b0e2f0d298d`
-- Created: `2026-10-06T02:28:37.664520751Z`
-- Virtual Size: ~ 171.93 Mb  
+- Image ID: `sha256:2ce97a83dd28f9c26f61cb5ee5578b08cbbcea7c8f57e2984af1ade24ec1c30e`
+- Created: `2026-10-14T18:50:46.427358791Z`
+- Virtual Size: ~ 171.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.6`
-  - `NJS_VERSION=1.0.1`
+  - `NGINX_VERSION=1.31.7`
+  - `NJS_VERSION=1.0.2`
   - `NJS_RELEASE=1~trixie`
   - `ACME_VERSION=0.4.1`
   - `PKG_RELEASE=1~trixie`
@@ -454,12 +454,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=8.14.1-2+deb13u5`
+### `dpkg` source package: `curl=8.14.1-2+deb13u7`
 
 Binary Packages:
 
-- `curl=8.14.1-2+deb13u5`
-- `libcurl4t64:amd64=8.14.1-2+deb13u5`
+- `curl=8.14.1-2+deb13u7`
+- `libcurl4t64:amd64=8.14.1-2+deb13u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -479,18 +479,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.dsc' curl_8.14.1-2+deb13u5.dsc 3263 SHA256:9a9a2c95cdc8b5d76892c70858f25eaf2dc0b0a475a1e43e0b4ad428414752df
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.debian.tar.xz' curl_8.14.1-2+deb13u5.debian.tar.xz 72312 SHA256:ebdfcfab1c2001c7a539fe2a4044dbf666a544393f191bedce9ee2d07c4ea925
+$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.dsc' curl_8.14.1-2+deb13u7.dsc 3263 SHA256:a559b829ff852b2ee1ac0e448b5d9c18e0f94875bc820d037609d4d807ac6f57
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.debian.tar.xz' curl_8.14.1-2+deb13u7.debian.tar.xz 75756 SHA256:e0f627ee2b9ae61078b2835edc25c8b94a0b57e180a1bc72dd8636ef260c370b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -1897,6 +1897,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-4/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libmaxminddb=1.12.2-1`
+
+Binary Packages:
+
+- `libmaxminddb0:amd64=1.12.2-1`
+
+Licenses: (parsed from: `/usr/share/doc/libmaxminddb0/copyright`)
+
+- `Apache-2.0`
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `Expat`
+- `LGPL-3`
+- `LGPL-3.0+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libmaxminddb=1.12.2-1
+'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.12.2-1.dsc' libmaxminddb_1.12.2-1.dsc 2235 SHA256:eff18dd8d9b1f191c206faa166acae9224453dc9a18e03f65b24f65b0d456f69
+'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.12.2.orig.tar.gz' libmaxminddb_1.12.2.orig.tar.gz 369848 SHA256:c0b20260a54cf4cebd3b879ac8e487cf2eac218fe6a5f64f1e2c3032b564fdd8
+'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.12.2-1.debian.tar.xz' libmaxminddb_1.12.2-1.debian.tar.xz 6912 SHA256:39e24b93cdebcb869fc0b45020ff86b0a318ac463fcbcb33f0ea3f12d7bb091a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libmaxminddb/1.12.2-1/ (for browsing the source)
+- https://sources.debian.net/src/libmaxminddb/1.12.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libmaxminddb/1.12.2-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libmd=1.1.0-2`
 
 Binary Packages:
@@ -2683,11 +2713,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.31.6+0.4.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.31.7+0.4.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.31.6+0.4.1-1~trixie`
+- `nginx-module-acme=1.31.7+0.4.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2697,11 +2727,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.31.6-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.31.7-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.31.6-1~trixie`
+- `nginx-module-geoip=1.31.7-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2711,11 +2741,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.31.6-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.31.7-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.31.6-1~trixie`
+- `nginx-module-image-filter=1.31.7-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2725,11 +2755,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.31.6+1.0.1-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.31.7+1.0.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.31.6+1.0.1-1~trixie`
+- `nginx-module-njs=1.31.7+1.0.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2739,11 +2769,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-otel=1.31.6+0.1.2-1~trixie`
+### `dpkg` source package: `nginx-module-otel=1.31.7+0.1.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-otel=1.31.6+0.1.2-1~trixie`
+- `nginx-module-otel=1.31.7+0.1.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2753,11 +2783,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.31.6-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.31.7-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.31.6-1~trixie`
+- `nginx-module-xslt=1.31.7-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2767,11 +2797,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.31.6-1~trixie`
+### `dpkg` source package: `nginx=1.31.7-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.31.6-1~trixie`
+- `nginx=1.31.7-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

@@ -1,17 +1,17 @@
-# `nginx:1.31.6-alpine-slim`
+# `nginx:1.31.7-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb56374ece78148ee31a9b16a1ebce406651f7d2a3b66672883490c13243c6fa`
-- Created: `2026-09-22T21:19:23.452901308Z`
-- Virtual Size: ~ 12.83 Mb  
+- Image ID: `sha256:19ff468d4acd98a05e7ad0950ab24b270a68b60548a743f1f93939d2e86425a1`
+- Created: `2026-10-14T18:42:01.578189796Z`
+- Virtual Size: ~ 18.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.6`
+  - `NGINX_VERSION=1.31.7`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.6-r1 description:
+nginx-1.31.7-r1 description:
 High performance web server
 
-nginx-1.31.6-r1 webpage:
+nginx-1.31.7-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.6-r1 installed size:
-2835 KiB
+nginx-1.31.7-r1 installed size:
+2857 KiB
 
-nginx-1.31.6-r1 license:
+nginx-1.31.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -294,16 +294,16 @@ nginx-1.31.6-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -345,16 +345,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```

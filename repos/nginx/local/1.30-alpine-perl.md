@@ -1,20 +1,20 @@
-# `nginx:1.30.5-alpine-perl`
+# `nginx:1.30.6-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3990a2b524ce3a576784f908ea8b814c69a722f5b924ffd5092e70d4febd2d3d`
-- Created: `2026-09-22T23:10:18.311737349Z`
-- Virtual Size: ~ 102.92 Mb  
+- Image ID: `sha256:e122317394d2842ab0b72d019c12fd37f464ed8e102135fe6acaf42a2f335c39`
+- Created: `2026-10-14T19:08:30.80071917Z`
+- Virtual Size: ~ 108.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.5`
+  - `NGINX_VERSION=1.30.6`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=1.0.1`
+  - `NJS_VERSION=1.0.2`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.4.1`
 - Labels:
@@ -382,16 +382,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -450,16 +450,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.8.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.8.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.8.5-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.8.5-r0 license:
 MIT
 
 ```
@@ -603,16 +603,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -671,16 +671,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -977,16 +977,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -994,16 +994,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.30.5-r1 description:
+nginx-1.30.6-r1 description:
 High performance web server
 
-nginx-1.30.5-r1 webpage:
+nginx-1.30.6-r1 webpage:
 https://nginx.org/
 
-nginx-1.30.5-r1 installed size:
+nginx-1.30.6-r1 installed size:
 2744 KiB
 
-nginx-1.30.5-r1 license:
+nginx-1.30.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1011,16 +1011,16 @@ nginx-1.30.5-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.30.5.0.4.1-r1 description:
+nginx-module-acme-1.30.6.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.30.5.0.4.1-r1 webpage:
+nginx-module-acme-1.30.6.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.30.5.0.4.1-r1 installed size:
-8167 KiB
+nginx-module-acme-1.30.6.0.4.1-r1 installed size:
+8043 KiB
 
-nginx-module-acme-1.30.5.0.4.1-r1 license:
+nginx-module-acme-1.30.6.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-module-acme-1.30.5.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.30.5-r1 description:
+nginx-module-geoip-1.30.6-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.30.5-r1 webpage:
+nginx-module-geoip-1.30.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.30.5-r1 installed size:
+nginx-module-geoip-1.30.6-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.30.5-r1 license:
+nginx-module-geoip-1.30.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-geoip-1.30.5-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.30.5-r1 description:
+nginx-module-image-filter-1.30.6-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.30.5-r1 webpage:
+nginx-module-image-filter-1.30.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.30.5-r1 installed size:
+nginx-module-image-filter-1.30.6-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.30.5-r1 license:
+nginx-module-image-filter-1.30.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-image-filter-1.30.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.30.5.1.0.1-r1 description:
+nginx-module-njs-1.30.6.1.0.2-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.30.5.1.0.1-r1 webpage:
+nginx-module-njs-1.30.6.1.0.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.30.5.1.0.1-r1 installed size:
-9423 KiB
+nginx-module-njs-1.30.6.1.0.2-r1 installed size:
+9476 KiB
 
-nginx-module-njs-1.30.5.1.0.1-r1 license:
+nginx-module-njs-1.30.6.1.0.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-njs-1.30.5.1.0.1-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.30.5-r1 description:
+nginx-module-perl-1.30.6-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.30.5-r1 webpage:
+nginx-module-perl-1.30.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.30.5-r1 installed size:
+nginx-module-perl-1.30.6-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.30.5-r1 license:
+nginx-module-perl-1.30.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-perl-1.30.5-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.30.5-r1 description:
+nginx-module-xslt-1.30.6-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.30.5-r1 webpage:
+nginx-module-xslt-1.30.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.30.5-r1 installed size:
+nginx-module-xslt-1.30.6-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.30.5-r1 license:
+nginx-module-xslt-1.30.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1113,16 +1113,16 @@ nginx-module-xslt-1.30.5-r1 license:
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -1130,16 +1130,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.42.2-r0 description:
+perl-5.42.2-r1 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.42.2-r0 webpage:
+perl-5.42.2-r1 webpage:
 https://www.perl.org/
 
-perl-5.42.2-r0 installed size:
+perl-5.42.2-r1 installed size:
 38 MiB
 
-perl-5.42.2-r0 license:
+perl-5.42.2-r1 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
@@ -1181,16 +1181,16 @@ GPL-2.0-only
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.1-r0 description:
+tiff-4.7.2-r0 description:
 Support for the Tag Image File Format or TIFF
 
-tiff-4.7.1-r0 webpage:
+tiff-4.7.2-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.1-r0 installed size:
-453 KiB
+tiff-4.7.2-r0 installed size:
+461 KiB
 
-tiff-4.7.1-r0 license:
+tiff-4.7.2-r0 license:
 libtiff
 
 ```
@@ -1198,16 +1198,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
