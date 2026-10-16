@@ -261,21 +261,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.18.1-4
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-4.dsc' automake_1.18.1-4.dsc 2483 SHA256:c0ef26b29a88526ecc7d19e4948522027716bcb904a7358445e5ac50facd22d7
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz' automake_1.18.1.orig.tar.xz 1652392 SHA256:168aa363278351b89af56684448f525a5bce5079d0b6842bd910fdd3f1646887
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1.orig.tar.xz.asc' automake_1.18.1.orig.tar.xz.asc 488 SHA256:728ce05b02f123ea360ab9d168111bc98470afc7568253e93ee2a7582ef5ddb4
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.18.1-4.debian.tar.xz' automake_1.18.1-4.debian.tar.xz 22816 SHA256:0205a6b27795c2ea015683a06f461ee9f4856525f4084157e66b657b9ddfe2c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake/1:1.18.1-4/
 
-- https://sources.debian.net/src/automake/1:1.18.1-4/ (for browsing the source)
-- https://sources.debian.net/src/automake/1:1.18.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake/1:1.18.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20240727.1+nmu1`
 
@@ -1464,21 +1456,13 @@ Licenses: (parsed from: `/usr/share/doc/girepository-tools/copyright`, `/usr/sha
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.90.0-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0-1.dsc' glib2.0_2.90.0-1.dsc 4809 SHA256:0a7aee9c8edd7512bf732f7acf96066d463523acd53552a6677e32585f1faa1c
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0.orig-unicode-data.tar.xz' glib2.0_2.90.0.orig-unicode-data.tar.xz 666552 SHA256:4b55352323696c72187f855981ed1f7d1594a53f257f7803a928749cab9f9f44
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0.orig.tar.xz' glib2.0_2.90.0.orig.tar.xz 5830480 SHA256:17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.90.0-1.debian.tar.xz' glib2.0_2.90.0-1.debian.tar.xz 143956 SHA256:317eeae08f0f06a750f58b054af4e6dd2c6f37bad3e1140166ce2061b3f5d1df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.90.0-1/
 
-- https://sources.debian.net/src/glib2.0/2.90.0-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.90.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.90.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.43-6`
 
@@ -1602,21 +1586,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.9-7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.9-7.dsc' gnupg2_2.4.9-7.dsc 5459 SHA256:8dbcf4186443fd29a1c641a1b8d1373d8f247acbcd64b8376a65e025e60d3d9f
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.9.orig.tar.bz2' gnupg2_2.4.9.orig.tar.bz2 8086407 SHA256:dd17ab2e9a04fd79d39d853f599cbc852062ddb9ab52a4ddeb4176fd8b302964
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.9.orig.tar.bz2.asc' gnupg2_2.4.9.orig.tar.bz2.asc 265 SHA256:92e5f835c9d7d3b762e8bdc4ed05d705b19138b0097be3ed98eeedce356393e6
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.4.9-7.debian.tar.xz' gnupg2_2.4.9-7.debian.tar.xz 106884 SHA256:cfe93dd00acd0402815d7c159db20ace4c3dd47979b81573c20d4ef31cc43cc6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.4.9-7/
 
-- https://sources.debian.net/src/gnupg2/2.4.9-7/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.4.9-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.4.9-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.13-1`
 
@@ -3284,21 +3260,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.6.2-2
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.6.2-2.dsc' libtool_2.6.2-2.dsc 2525 SHA256:7e3daf402cc236cfea7210548c57bb98febad8b14b7af77dfaf38309c7fd1224
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.6.2.orig.tar.xz' libtool_2.6.2.orig.tar.xz 1107468 SHA256:24298b805b633bb8c5f25d0b6f7078c85039e690fc1990a273604e5136cf67b3
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.6.2.orig.tar.xz.asc' libtool_2.6.2.orig.tar.xz.asc 833 SHA256:abb5cfb4304df7b8a2c55a6fcd8a37b6c526816e452ace43e1cf43d4f1c3eac3
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.6.2-2.debian.tar.xz' libtool_2.6.2-2.debian.tar.xz 28228 SHA256:fc3517e559197909440d427bfc576fb58579827ca0ec01c2dc3162a4b6d0f85c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.6.2-2/
 
-- https://sources.debian.net/src/libtool/2.6.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.6.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.6.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.4.2-1`
 
@@ -4872,20 +4840,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=26.2-2
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2-2.dsc' python-packaging_26.2-2.dsc 2350 SHA256:38a865384bd2c7f0ed12b6cdb9f0be2988a7e44b9ed9ed51368999b842ddd20a
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2.orig.tar.gz' python-packaging_26.2.orig.tar.gz 228134 SHA256:ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2-2.debian.tar.xz' python-packaging_26.2-2.debian.tar.xz 6172 SHA256:f2cf94e711b71c28a7e2d053ee24f4899084a39ba8ce1d246c3255ab71579255
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/26.2-2/
 
-- https://sources.debian.net/src/python-packaging/26.2-2/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/26.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/26.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.14.7-3`
 

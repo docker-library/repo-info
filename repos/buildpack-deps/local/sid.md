@@ -1897,20 +1897,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.31+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.31%2bdfsg1-1.dsc' imagemagick_7.1.2.31+dfsg1-1.dsc 5227 SHA256:3d07e8dc2215e0489924b0586e6119e80f2a6b9c7868bab54f717a1ccb0bd5d7
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.31%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.31+dfsg1.orig.tar.xz 10221556 SHA256:a24aca5eac73d22201169e6a68550ccf2dae5993a4209757c42c23884961d988
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.31%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.31+dfsg1-1.debian.tar.xz 263044 SHA256:2ade424bf2e06e755e8e34496ce139c5296959679aefcd89157a07ac8677bf22
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.31+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.31+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.31+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.31+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.2.2-2`
 
@@ -4338,20 +4331,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjph-dev/copyright`, `/usr/share/d
 - `BSD-2-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjph=0.28.1-1
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1-1.dsc' openjph_0.28.1-1.dsc 2172 SHA256:5815a549f9a9cf760bf01d6f71dea977497f300135f017180d13b089cf351161
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1.orig.tar.gz' openjph_0.28.1.orig.tar.gz 497176 SHA256:0b9bf698534cd121e422ff82e8ba86e4a9770a199314ef02358a86abc543d762
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1-1.debian.tar.xz' openjph_0.28.1-1.debian.tar.xz 5568 SHA256:ba6cdba33c1fea71d12b3ba97088dd92b64f04d91cc700409fad3f8e1b0f6bd9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjph/0.28.1-1/
 
-- https://sources.debian.net/src/openjph/0.28.1-1/ (for browsing the source)
-- https://sources.debian.net/src/openjph/0.28.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjph/0.28.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.14+dfsg-2`
 
