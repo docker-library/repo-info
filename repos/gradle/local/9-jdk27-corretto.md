@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2fbae9c7ed78c24126232b32def232815871b9ade78ac9cf6c54c4c7282f212d`
-- Created: `2026-10-08T16:41:47.238173786Z`
-- Virtual Size: ~ 990.34 Mb  
+- Image ID: `sha256:22da50616eb1e0e1ab356f5923079f2c455629f3a45c3ac59515263dfc5c5ba1`
+- Created: `2026-10-14T18:12:01.654060354Z`
+- Virtual Size: ~ 990.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -749,25 +749,25 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/5775d799f6e8c33e94d68682d3490cae250052e8798e544edd2d76501d867228/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-27-amazon-corretto-27.0.0+35-1.amzn2023.1.x86_64`
+### `rpm` package: `java-27-amazon-corretto-27.0.0+36-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-27-amazon-corretto-devel-27.0.0+35-1.amzn2023.1.x86_64`
+### `rpm` package: `java-27-amazon-corretto-devel-27.0.0+36-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-27-amazon-corretto-headless-27.0.0+35-1.amzn2023.1.x86_64`
+### `rpm` package: `java-27-amazon-corretto-headless-27.0.0+36-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-27-amazon-corretto-jmods-27.0.0+35-1.amzn2023.1.x86_64`
+### `rpm` package: `java-27-amazon-corretto-jmods-27.0.0+36-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 

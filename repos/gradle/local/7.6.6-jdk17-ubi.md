@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:486fc20d053913e56afa1a2f7c7e58a2196a9d17a2d1e2e862f94542b58d6cf1`
-- Created: `2026-10-13T01:12:27.531762403Z`
-- Virtual Size: ~ 719.09 Mb  
+- Image ID: `sha256:02923a9227bfb60d06992f9569c9cce9606dcef0480bbd9d2f63c9c71b92e9a6`
+- Created: `2026-10-13T23:11:24.215439867Z`
+- Virtual Size: ~ 719.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=7.6.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-12T12:36:05Z`
+  - `build-date=2026-10-13T13:35:30Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-12T12:36:05Z`
-  - `org.opencontainers.image.revision=605f9da3afeb17ea0827cac3edf823279a26c42f`
-  - `release=1791808450`
+  - `org.opencontainers.image.created=2026-10-13T13:35:30Z`
+  - `org.opencontainers.image.revision=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
+  - `release=1791898448`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=605f9da3afeb17ea0827cac3edf823279a26c42f`
+  - `vcs-ref=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -1598,26 +1598,26 @@ $ dnf --quiet download --source --url pcre-8.44-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre-8.44-4.el9.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.40-6.el9.x86_64`
+### `rpm` package: `pcre2-10.40-7.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pcre2-10.40-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
+$ dnf --quiet download --source --url pcre2-10.40-7.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-7.el9_8.src.rpm
 ```
 
-### `rpm` package: `pcre2-syntax-10.40-6.el9.noarch`
+### `rpm` package: `pcre2-syntax-10.40-7.el9_8.noarch`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
+$ dnf --quiet download --source --url pcre2-syntax-10.40-7.el9_8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-7.el9_8.src.rpm
 ```
 
 ### `rpm` package: `perl-AutoLoader-5.74-484.el9_8.noarch`
