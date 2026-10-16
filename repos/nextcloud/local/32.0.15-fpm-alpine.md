@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9bd4d08ad773c59f616cdf089e14b7dcc6d88fc3b3958a41f7ce80884ec2270`
-- Created: `2026-09-25T17:57:05.11360756Z`
-- Virtual Size: ~ 1.02 Gb  
+- Image ID: `sha256:593e931e293cf70eded197d21c23fd382dd975859501729e80128c607e1e7256`
+- Created: `2026-10-15T18:55:54.856035613Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -949,16 +949,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1272,16 +1272,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -1374,16 +1374,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -1493,16 +1493,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libseccomp`
 
 ```console
-libseccomp-2.6.0-r2 description:
+libseccomp-2.6.1-r0 description:
 interface to the Linux Kernel's syscall filtering mechanism
 
-libseccomp-2.6.0-r2 webpage:
+libseccomp-2.6.1-r0 webpage:
 https://github.com/seccomp/libseccomp
 
-libseccomp-2.6.0-r2 installed size:
-163 KiB
+libseccomp-2.6.1-r0 installed size:
+167 KiB
 
-libseccomp-2.6.0-r2 license:
+libseccomp-2.6.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1561,16 +1561,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -2003,16 +2003,16 @@ BSD-2-Clause
 ### `apk` package: `openjpeg`
 
 ```console
-openjpeg-2.5.4-r1 description:
+openjpeg-2.5.4-r2 description:
 Open-source implementation of JPEG2000 image codec
 
-openjpeg-2.5.4-r1 webpage:
+openjpeg-2.5.4-r2 webpage:
 https://www.openjpeg.org/
 
-openjpeg-2.5.4-r1 installed size:
+openjpeg-2.5.4-r2 installed size:
 305 KiB
 
-openjpeg-2.5.4-r1 license:
+openjpeg-2.5.4-r2 license:
 BSD-2-Clause
 
 ```
@@ -2020,16 +2020,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -2071,16 +2071,16 @@ LGPL-2.1-or-later
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -2258,16 +2258,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.7.1-r0 description:
+tiff-4.7.2-r0 description:
 Support for the Tag Image File Format or TIFF
 
-tiff-4.7.1-r0 webpage:
+tiff-4.7.2-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.7.1-r0 installed size:
-453 KiB
+tiff-4.7.2-r0 installed size:
+461 KiB
 
-tiff-4.7.1-r0 license:
+tiff-4.7.2-r0 license:
 libtiff
 
 ```
@@ -2309,16 +2309,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
