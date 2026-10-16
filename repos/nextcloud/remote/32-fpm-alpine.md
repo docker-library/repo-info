@@ -1,7 +1,7 @@
 ## `nextcloud:32-fpm-alpine`
 
 ```console
-$ docker pull nextcloud@sha256:e33dfd32579ae3768b0cb76b9e9a412b7a160353cd5ce7e141d9bfd13fbcba55
+$ docker pull nextcloud@sha256:3718db81c4a7a3bfce71d8134b6481236807c5e96fa4c80f2d91d4b372b624ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1154,13 +1154,13 @@ $ docker pull nextcloud@sha256:afee318f982bf590f3eca57e6f2fe5454a0e387e22db4cedd
 ### `nextcloud:32-fpm-alpine` - linux; riscv64
 
 ```console
-$ docker pull nextcloud@sha256:c794b430a86d8a757f8c8a65db1f652a79b2c4d2e662e55586dc42dae42a288f
+$ docker pull nextcloud@sha256:95aebba7708854f461ee63da3f34054681a99ca9e4f1da8c183687c62cbc39fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **355.2 MB (355228571 bytes)**  
+-	Total Size: **355.3 MB (355281389 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:742503e91d2e13ed2a9e7b24392ea0c404fd3237e8bb8fbf176270e137ab6997`
+-	Image ID: `sha256:a9c80c4a516f56108d229b79f9b8a8a4f0a13495c60d35237b2e21fb0d332d9c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1217,31 +1217,31 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Mon, 28 Sep 2026 07:25:07 GMT
 CMD ["php-fpm"]
-# Wed, 30 Sep 2026 14:59:11 GMT
+# Fri, 16 Oct 2026 05:29:22 GMT
 RUN set -ex;         apk add --no-cache         imagemagick         imagemagick-pdf         imagemagick-jpeg         imagemagick-raw         imagemagick-tiff         imagemagick-heic         imagemagick-webp         imagemagick-svg         rsync     ;         rm /var/spool/cron/crontabs/root;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 30 Sep 2026 15:25:47 GMT
+# Fri, 16 Oct 2026 05:56:05 GMT
 RUN set -ex;         apk add --no-cache --virtual .build-deps         $PHPIZE_DEPS         autoconf         freetype-dev         gmp-dev         icu-dev         imagemagick-dev         libevent-dev         libjpeg-turbo-dev         libmemcached-dev         libpng-dev         libwebp-dev         libxml2-dev         libzip-dev         openldap-dev         pcre-dev         postgresql-dev     ;         docker-php-ext-configure ftp --with-openssl-dir=/usr;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap;     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.17RC1;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --no-network --virtual .nextcloud-phpext-rundeps $runDeps;     apk del --no-network .build-deps # buildkit
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 VOLUME [/var/www/html]
-# Wed, 30 Sep 2026 15:25:48 GMT
+# Fri, 16 Oct 2026 05:56:06 GMT
 ENV NEXTCLOUD_VERSION=32.0.15
-# Wed, 30 Sep 2026 15:29:26 GMT
+# Fri, 16 Oct 2026 05:59:50 GMT
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com  --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del --no-network .fetch-deps # buildkit
-# Wed, 30 Sep 2026 15:29:27 GMT
+# Fri, 16 Oct 2026 05:59:51 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 30 Sep 2026 15:29:27 GMT
+# Fri, 16 Oct 2026 05:59:51 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 30 Sep 2026 15:29:27 GMT
+# Fri, 16 Oct 2026 05:59:51 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 30 Sep 2026 15:29:27 GMT
+# Fri, 16 Oct 2026 05:59:51 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1294,48 +1294,48 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 28 Sep 2026 07:25:57 GMT  
 		Size: 9.3 KB (9257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c7338217e8253e0934591cee9f3362a9c13ce9f961d5b54f80df7c2c88b3ccf`  
-		Last Modified: Wed, 30 Sep 2026 15:35:55 GMT  
-		Size: 43.0 MB (42960204 bytes)  
+	-	`sha256:3a28eeeed4ff51d20ff48a1e4e30ce270b81a03e9e3e686ac619dcb74d414552`  
+		Last Modified: Fri, 16 Oct 2026 06:06:23 GMT  
+		Size: 43.0 MB (42961199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc06c1c3a7b770c1743006603cc617a16d4f14b185b36a4d133220e1bbb65757`  
-		Last Modified: Wed, 30 Sep 2026 15:35:45 GMT  
-		Size: 9.9 MB (9898614 bytes)  
+	-	`sha256:17b9e0ed517760df15ed2de628d070cd3f4f4d64040173bc48ca84f8d490b08b`  
+		Last Modified: Fri, 16 Oct 2026 06:06:13 GMT  
+		Size: 10.0 MB (9950252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7e61cd01ab3483c5517a8b20477d387225e35908d584d6be7877b51cff62a75`  
-		Last Modified: Wed, 30 Sep 2026 15:35:41 GMT  
-		Size: 792.0 B  
+	-	`sha256:930fea998a22af91787238bba8f9e821d24868f81e75dd64ac6e7b2f2576f969`  
+		Last Modified: Fri, 16 Oct 2026 06:06:08 GMT  
+		Size: 794.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa7e537cb60ac21a4efddf5c81f48efc2300cc27392812b813e455f3f75a7d09`  
-		Last Modified: Wed, 30 Sep 2026 15:36:27 GMT  
-		Size: 269.6 MB (269613773 bytes)  
+	-	`sha256:34a0d8b4804e2fb7617287071650d8c44ac97fca511a0626fc939086508a98a0`  
+		Last Modified: Fri, 16 Oct 2026 06:06:56 GMT  
+		Size: 269.6 MB (269613906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e0a2400957d6b2e5604b0b31a4000ca84fbe3e5144c42c7fd90133ecaf58db5`  
-		Last Modified: Wed, 30 Sep 2026 15:35:43 GMT  
-		Size: 4.1 KB (4136 bytes)  
+	-	`sha256:7253fe20966026f093938ebeead504420f9209c684974f0354bd4f1711f14e77`  
+		Last Modified: Fri, 16 Oct 2026 06:06:11 GMT  
+		Size: 4.2 KB (4150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a26575d7dee4f72fbb4e0a3aca1197503e2796ef53c8ed07d1301643e23fa00a`  
-		Last Modified: Wed, 30 Sep 2026 15:35:45 GMT  
-		Size: 2.5 KB (2495 bytes)  
+	-	`sha256:3179d787273bf7ea997739962f7c014721014c2ac871968bd05229c0baae19ab`  
+		Last Modified: Fri, 16 Oct 2026 06:06:13 GMT  
+		Size: 2.5 KB (2531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:32-fpm-alpine` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:691c2f3173dd4529edfec762d292157eee1107b932b9eefa185eae87ce841bfd
+$ docker pull nextcloud@sha256:449f2056daf57f0778a8f6400cfab621704d4359cf588b82f7eba0ee0bd5a16b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **44.6 KB (44647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82abccc7871bbfaa957d1cd7683d32aab6e7a400ce9701d9539d87daaa2a3afa`
+-	Image ID: `sha256:b2796510af3cdcfa1c05df6c17b9a107c76166f956d1fb5a4c17e3ac89f8afd4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f74436801f6da5eda865579201bfdfa96661d2aeed1ad82a70976a9443b7aa91`  
-		Last Modified: Wed, 30 Sep 2026 15:35:40 GMT  
+	-	`sha256:febd657a3796206dd35557149a533161db0fc17a432041a73aef724a2e5678fa`  
+		Last Modified: Fri, 16 Oct 2026 06:06:08 GMT  
 		Size: 44.6 KB (44647 bytes)  
 		MIME: application/vnd.in-toto+json
 
