@@ -122,6 +122,20 @@
 -	[`python:3.15.0-windowsservercore`](#python3150-windowsservercore)
 -	[`python:3.15.0-windowsservercore-ltsc2022`](#python3150-windowsservercore-ltsc2022)
 -	[`python:3.15.0-windowsservercore-ltsc2025`](#python3150-windowsservercore-ltsc2025)
+-	[`python:3.16-rc`](#python316-rc)
+-	[`python:3.16-rc-alpine`](#python316-rc-alpine)
+-	[`python:3.16-rc-alpine3.23`](#python316-rc-alpine323)
+-	[`python:3.16-rc-alpine3.24`](#python316-rc-alpine324)
+-	[`python:3.16-rc-slim`](#python316-rc-slim)
+-	[`python:3.16-rc-slim-trixie`](#python316-rc-slim-trixie)
+-	[`python:3.16-rc-trixie`](#python316-rc-trixie)
+-	[`python:3.16.0a1`](#python3160a1)
+-	[`python:3.16.0a1-alpine`](#python3160a1-alpine)
+-	[`python:3.16.0a1-alpine3.23`](#python3160a1-alpine323)
+-	[`python:3.16.0a1-alpine3.24`](#python3160a1-alpine324)
+-	[`python:3.16.0a1-slim`](#python3160a1-slim)
+-	[`python:3.16.0a1-slim-trixie`](#python3160a1-slim-trixie)
+-	[`python:3.16.0a1-trixie`](#python3160a1-trixie)
 -	[`python:alpine`](#pythonalpine)
 -	[`python:alpine3.23`](#pythonalpine323)
 -	[`python:alpine3.24`](#pythonalpine324)
@@ -62570,6 +62584,62 @@ CMD ["python"]
 		Last Modified: Tue, 13 Oct 2026 23:13:49 GMT  
 		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:3.16-rc`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-alpine`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-alpine3.23`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-alpine3.24`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-slim`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-slim-trixie`
+
+**does not exist** (yet?)
+
+## `python:3.16-rc-trixie`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-alpine`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-alpine3.23`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-alpine3.24`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-slim`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-slim-trixie`
+
+**does not exist** (yet?)
+
+## `python:3.16.0a1-trixie`
+
+**does not exist** (yet?)
 
 ## `python:alpine`
 
