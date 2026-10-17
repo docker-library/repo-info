@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:239d755c72e049482e40022432ae808f87e7230c740ae2eb339f26c5117a3827`
-- Created: `2026-10-13T23:03:15.442811852Z`
-- Virtual Size: ~ 134.61 Mb  
+- Image ID: `sha256:2f72240b5d4ecaa2113e69b2c72370cb73e2db338e6d2c3209574419eabf15fd`
+- Created: `2026-10-16T23:34:54.41924854Z`
+- Virtual Size: ~ 134.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -1248,6 +1248,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.4.20250131-1/ (for browsing the source)
 - https://sources.debian.net/src/mawk/1.3.4.20250131-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.4.20250131-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `mpdecimal=4.0.1-5`
+
+Binary Packages:
+
+- `libmpdec4:amd64=4.0.1-5`
+
+Licenses: (parsed from: `/usr/share/doc/libmpdec4/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mpdecimal=4.0.1-5
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_4.0.1-5.dsc' mpdecimal_4.0.1-5.dsc 2109 SHA256:c9a381b980ac0a886d573e860736fb7f9bd8a89fb7cc590f6a5edf3db73ce7c9
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_4.0.1.orig.tar.gz' mpdecimal_4.0.1.orig.tar.gz 316268 SHA256:96d33abb4bb0070c7be0fed4246cd38416188325f820468214471938545b1ac8
+'http://deb.debian.org/debian/pool/main/m/mpdecimal/mpdecimal_4.0.1-5.debian.tar.xz' mpdecimal_4.0.1-5.debian.tar.xz 6140 SHA256:23ce761b340b1dad73d1abba88a27c690f41cc1af4a7b798cc982a7a46b72bfe
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/mpdecimal/4.0.1-5/ (for browsing the source)
+- https://sources.debian.net/src/mpdecimal/4.0.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mpdecimal/4.0.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2`
 

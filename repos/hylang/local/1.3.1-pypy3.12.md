@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6bdd0afe248f02e3ac73b8fe4dd3632e95a41b7a2070df3dfa177db7c5db96c0`
-- Created: `2026-10-06T02:51:42.571372726Z`
-- Virtual Size: ~ 218.42 Mb  
+- Image ID: `sha256:d08cb530e90948f8f3396e591a398284f0ca084f1b8ef064606be6cf9b0cc3d8`
+- Created: `2026-10-14T20:23:04.059984913Z`
+- Virtual Size: ~ 218.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=8.0.0`
+  - `PYPY_VERSION=8.0.1`
   - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
@@ -1980,11 +1980,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.8.1-1+deb13u1`
+### `dpkg` source package: `xz-utils=5.8.1-1+deb13u2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.8.1-1+deb13u1`
+- `liblzma5:amd64=5.8.1-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -2006,18 +2006,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u1.dsc' xz-utils_5.8.1-1+deb13u1.dsc 2736 SHA256:ddadd9d9f7c4bb80b08f9f17409e2701a29a4cf8fe25e15d19605e5281c1fc1b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u1.debian.tar.xz' xz-utils_5.8.1-1+deb13u1.debian.tar.xz 25696 SHA256:0e48427971a9ce674ddbba26e34ac1dd009c683f3816ce17852d99dc7b0a8e46
+$ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.dsc' xz-utils_5.8.1-1+deb13u2.dsc 2562 SHA256:f02574465dcb7da3d5b7bdfc20ea350248c3371b0df36bb005152af80d61cdfc
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.debian.tar.xz' xz-utils_5.8.1-1+deb13u2.debian.tar.xz 28044 SHA256:7dfcff43a8035561c4860a4893f7cf9de5e977e79a90aee4d101053e21912cb0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 
