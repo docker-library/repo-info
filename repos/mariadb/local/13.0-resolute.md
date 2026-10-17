@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c495ca32a46bc87e175c9e83c73cef6fccabd24046ade81b1f39e397a20d78a`
-- Created: `2026-10-02T01:30:58.444948071Z`
-- Virtual Size: ~ 370.8 Mb  
+- Image ID: `sha256:c912705a92a6b0645980ede642c047dbf24197c0a0cde1af8668aa51b68e4e31`
+- Created: `2026-10-17T00:31:57.163492449Z`
+- Virtual Size: ~ 363.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:resolute`
-  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
+  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
@@ -1183,11 +1183,11 @@ $ apt-get source -qq --print-uris libconfig-inifiles-perl=3.000003-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_3.000003-4ubuntu0.1.dsc' libconfig-inifiles-perl_3.000003-4ubuntu0.1.dsc 2429 SHA512:3e56f7e1a2971dae6eb8a998abda3977d9902439ea09bc5b1d2f20990fbb3366b420dec54dfa767c6c167239994b5f3b7ca7b41eda24870045bae257c40049d9
 ```
 
-### `dpkg` source package: `libdbi-perl=1.647-1ubuntu0.26.04.3`
+### `dpkg` source package: `libdbi-perl=1.647-1ubuntu0.26.04.4`
 
 Binary Packages:
 
-- `libdbi-perl:amd64=1.647-1ubuntu0.26.04.3`
+- `libdbi-perl:amd64=1.647-1ubuntu0.26.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 
@@ -1198,10 +1198,10 @@ Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdbi-perl=1.647-1ubuntu0.26.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647.orig.tar.gz' libdbi-perl_1.647.orig.tar.gz 727423 SHA512:365b9d51d3c17bb3d8ce6941ef5141512e5aaf4886a62297cb4b56f8bfce9d49d45163ba3841cef59040ff649c752136407c6e8355f8f5a3b2244efd8ef6b0d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.3.debian.tar.xz' libdbi-perl_1.647-1ubuntu0.26.04.3.debian.tar.xz 15832 SHA512:aeec219d81ffb0d6a474a403a0f5c12fe1208eb9e5e981fc638a5e5b4bb854c65037b4915a6c16423f111b692033236b617e47952bb6b6ee5aebbc9242e146af
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.3.dsc' libdbi-perl_1.647-1ubuntu0.26.04.3.dsc 2151 SHA512:bf0e2e29e0ae5b89b93889335d34063be6829bf70b8c67492769af7ae0af32652658a605e42122d924c7152e3d48a1061601a567bf087b0cd4f68e9ce1577af5
+$ apt-get source -qq --print-uris libdbi-perl=1.647-1ubuntu0.26.04.4
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647.orig.tar.gz' libdbi-perl_1.647.orig.tar.gz 727423 SHA512:365b9d51d3c17bb3d8ce6941ef5141512e5aaf4886a62297cb4b56f8bfce9d49d45163ba3841cef59040ff649c752136407c6e8355f8f5a3b2244efd8ef6b0d7
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.4.debian.tar.xz' libdbi-perl_1.647-1ubuntu0.26.04.4.debian.tar.xz 19628 SHA512:5dadecb295998f2084634bbd0c1d2873cbe634cebd155d738195b920a5a82e9175205dfe503f158dc24d96333ec6a12149d93b72c633a3e527bb3c89f4796f17
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.647-1ubuntu0.26.04.4.dsc' libdbi-perl_1.647-1ubuntu0.26.04.4.dsc 2151 SHA512:a07bcabb64e8e3a647de09b7f75928e95e45534fd99e5a783d379b0bd485c4b5187953264dc95e9fd6ebe4f86ef82d82b8fc3cb8b1fddfc207d49165e02e42b7
 ```
 
 ### `dpkg` source package: `libedit=3.1-20251016-1`
@@ -2200,11 +2200,11 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-36build2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-36build2.dsc' tcp-wrappers_7.6.q-36build2.dsc 1983 SHA256:6f891c7e3dba83750babd8f6d44797eeda56d48dff2721116dbcee66988c2d8a
 ```
 
-### `dpkg` source package: `tzdata=2026c-0ubuntu0.26.04.1`
+### `dpkg` source package: `tzdata=2026e-0ubuntu0.26.04.1`
 
 Binary Packages:
 
-- `tzdata=2026c-0ubuntu0.26.04.1`
+- `tzdata=2026e-0ubuntu0.26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -2214,11 +2214,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.26.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz 189872 SHA512:21685b2bcc0620c6743ec618b1367162dc726a0a36157db4e57145ab3be85187f52868a1936c6150e0bef4beaf50e2703d3250aa61089b114e02556eebc056fe
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.dsc' tzdata_2026c-0ubuntu0.26.04.1.dsc 2712 SHA512:635f4cf83acfb7d30c5f356587d9cfe5465619c760e486f9a55a5a394d750d53ffe9195fad62063fc3c7d2565bf21f7d52e1eb42c23fe463c2cabab91255169d
+$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz 192020 SHA512:40a96656a40567f064778395e8f03992a90db914a31a5a6ab2b8f93eee5c67cc0aabe466cc2fd06e73bb35ef62d40a9998587d9c22496ebb767f3edf1ca72600
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.dsc' tzdata_2026e-0ubuntu0.26.04.1.dsc 2712 SHA512:8aa848ce18914310f4e4643c6fdad9e5605da4d5c1a32be8714d71961fcf5fe002426a4e5f9aac69b1c3eab2d5e71351d0c4dfae5183c51ce29b287d23e38c44
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`

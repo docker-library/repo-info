@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:41096ae9913468679bb5e05bbc19f44edcaf0eae45d67fcde224ffdeda9d3a1f`
-- Created: `2026-10-02T01:31:32.418031885Z`
-- Virtual Size: ~ 326.67 Mb  
+- Image ID: `sha256:4e667183d5236dbbecf88167a0f1f49dc0c116aa46990309e920e663e2fdc348`
+- Created: `2026-10-17T00:32:20.176719089Z`
+- Virtual Size: ~ 326.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1046,11 +1046,11 @@ $ apt-get source -qq --print-uris libconfig-inifiles-perl=3.000003-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libconfig-inifiles-perl/libconfig-inifiles-perl_3.000003-1ubuntu0.1.dsc' libconfig-inifiles-perl_3.000003-1ubuntu0.1.dsc 2380 SHA512:adf305bc28df6f1b4bac8333505dec9122b241fb50732d72e59d08276411c94476166295734c6c0e92712551c85d4f936d52137a09d018ae9918eb5e648b5d7e
 ```
 
-### `dpkg` source package: `libdbi-perl=1.643-3ubuntu0.3`
+### `dpkg` source package: `libdbi-perl=1.643-3ubuntu0.4`
 
 Binary Packages:
 
-- `libdbi-perl:amd64=1.643-3ubuntu0.3`
+- `libdbi-perl:amd64=1.643-3ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 
@@ -1061,10 +1061,10 @@ Licenses: (parsed from: `/usr/share/doc/libdbi-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdbi-perl=1.643-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643.orig.tar.gz' libdbi-perl_1.643.orig.tar.gz 612372 SHA512:03812f3eb1e43c8290dadb8cb14bbced9ec6e237228ea2a2ba91f22e52143906a91a7e82945dab30b1d1b9fc925073721111adafd9a09fac070808ab88f908b8
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-3ubuntu0.3.debian.tar.xz' libdbi-perl_1.643-3ubuntu0.3.debian.tar.xz 17296 SHA512:526d4765b2e438a03d6721a97a1ccbcfea21daa9847e91845eb7720edb6656823093cf2cf46a91c764cea6fc7aba44a968df30233a1937521697847c19989fce
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-3ubuntu0.3.dsc' libdbi-perl_1.643-3ubuntu0.3.dsc 2162 SHA512:17a45c9b10b0ce28784d5f760c4a26b5757dc99ef45842258e02edcb688a395c68b9f0f2c55295db538c5b6ff6ae8a6dd84d4e796887ac5a0ad006ac6afcc7a4
+$ apt-get source -qq --print-uris libdbi-perl=1.643-3ubuntu0.4
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643.orig.tar.gz' libdbi-perl_1.643.orig.tar.gz 612372 SHA512:03812f3eb1e43c8290dadb8cb14bbced9ec6e237228ea2a2ba91f22e52143906a91a7e82945dab30b1d1b9fc925073721111adafd9a09fac070808ab88f908b8
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-3ubuntu0.4.debian.tar.xz' libdbi-perl_1.643-3ubuntu0.4.debian.tar.xz 20980 SHA512:03d48099fb6cf8b629ff2b82146457b6d07fe432aa4b1e1c600b4ad2af03728014f07fdf5c5b119639c38e024a80ea79633ee34876554639040cb904dea298bf
+'http://security.ubuntu.com/ubuntu/pool/main/libd/libdbi-perl/libdbi-perl_1.643-3ubuntu0.4.dsc' libdbi-perl_1.643-3ubuntu0.4.dsc 2162 SHA512:6d0c83ce58170b6f497abd27b25ae2a3101594402effbb7691f60a2eb4d0829bd5c61cdcf4210b4c5f45403c1fc2f8ca57e3f5cb73f9646ab82c9116cd3f1f06
 ```
 
 ### `dpkg` source package: `libedit=3.1-20210910-1build1`
@@ -1694,30 +1694,14 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.29`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.29`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.30`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.30`
 - `openssl=3.0.2-0ubuntu1.30`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -2186,11 +2170,11 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-31build2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-31build2.debian.tar.xz' tcp-wrappers_7.6.q-31build2.debian.tar.xz 36420 SHA512:7b6cadfbbbfc653234fdc24ee2b4818897efda54221eae61ae32e0d5161544408bf4de28a27eddaa2d1cb8338608300c212bf4479fdcaac74b2e0416b2846e18
 ```
 
-### `dpkg` source package: `tzdata=2026c-0ubuntu0.22.04.1`
+### `dpkg` source package: `tzdata=2026e-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `tzdata=2026c-0ubuntu0.22.04.1`
+- `tzdata=2026e-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -2199,11 +2183,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.22.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.22.04.1.debian.tar.xz 181592 SHA512:27f9c5b13dea3747eca6211e4a9625e7c34cbe87120c200bca53da73428afe8efd9995747c7615a29d3ec0ad73fd4c0fdb390aacafe8d3e2f0e1e9fa82766453
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.22.04.1.dsc' tzdata_2026c-0ubuntu0.22.04.1.dsc 2541 SHA512:885f4f4ae09e8d0b60288a55a11fe54b4cc83069ec795f6deea52bbc0846ecb236eefe854ebdb7a000f776a002e5ebb8f96571815103053ce944d79322d3d20a
+$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.22.04.1.debian.tar.xz 183128 SHA512:954e17778ec164ba7f7492f80dc606585c0456f4eeba6f216a03a83de8859a4df4d3bf5cbe8ed36a99be663427447bdad75568c05253f174b2075a21a4565396
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.22.04.1.dsc' tzdata_2026e-0ubuntu0.22.04.1.dsc 2541 SHA512:eb5cba5bfa7f23494227d31316d2bf4d84abed004e8956d2499877530bbeee317d9cb0502a8c27a348e56c8e906ff992ab3802a1564fda62e2e651b99e31e432
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
