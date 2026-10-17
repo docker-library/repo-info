@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9ac6dd39d596013a0107498d437873c5edf31a6df291bed5d1515ac2b4ef101`
-- Created: `2026-10-02T01:13:28.403443553Z`
+- Image ID: `sha256:0960a974f2f4729ff452a87c09a58581aacf2c09fe4409aec8f39a4eacd9bb38`
+- Created: `2026-10-17T00:13:33.536221251Z`
 - Virtual Size: ~ 1.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -59,11 +59,11 @@ $ apt-get source -qq --print-uris adduser=3.137ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz' adduser_3.137ubuntu1.tar.xz 280408 SHA512:46979160ef2f6b85097958cd11e549ae48efa24e1719155fd90ae7b322c0adac087cac7d0a709cd084ee11557575b05dfde89a9d63bcfd80fb47779c41098d48
 ```
 
-### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.8`
+### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.9`
 
 Binary Packages:
 
-- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.8`
+- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -73,9 +73,14 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.9.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.9.debian.tar.xz 141000 SHA512:e23729efa34b53188806445970a03090885080b7b2498e503ae34fb61817f8ee7b6ee363c2bc75144c15695cc0af5fa0f95d14abe55cf8c76dd11e0b23efc0b5
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.9.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.9.dsc 3434 SHA512:d7f981a9c9d5677ad0f93d242b2c5fce31446ec50552fdc95e92b3cde4dc0a3be8fe8ea131cf5aab93d4bb02691ebef32c69dfb8eaf0704774d37543473f5b8c
+```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -142,12 +147,12 @@ $ apt-get source -qq --print-uris attr=1:2.5.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc' attr_2.5.2-1ubuntu0.1.dsc 2592 SHA512:97cbe8f3d60d4760fbf6e1813d0a8da07357368bd8377f19fa8b808e6fad761adde5b27c2108f5a7c34eaf13eef09682cd3cb2534e1e8620dad9f629bfe2a9fb
 ```
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
+### `dpkg` source package: `audit=1:3.1.2-2.1ubuntu0.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1.1`
-- `libaudit1:amd64=1:3.1.2-2.1build1.1`
+- `libaudit-common=1:3.1.2-2.1ubuntu0.1`
+- `libaudit1:amd64=1:3.1.2-2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -155,9 +160,14 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris audit=1:3.1.2-2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.debian.tar.xz' audit_3.1.2-2.1ubuntu0.1.debian.tar.xz 19524 SHA512:1c0f7246a1ce1916f801df70de17bd7df99313476cf5afdbce1859287874fc8b5245ad117848a28f6942e12a03360b51b4d242bb8243501455994c8449b86007
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.dsc' audit_3.1.2-2.1ubuntu0.1.dsc 2902 SHA512:35e6be715483be88c4d36fb7db287948f25da0737abf87036036d18552eff4b69b4ce18962fbd43f062965aba1a1be4fd20ff4a59249fc5803790b321386bc4b
+```
 
 ### `dpkg` source package: `base-files=13ubuntu10.5`
 
@@ -1486,20 +1496,25 @@ $ apt-get source -qq --print-uris libxcrypt=1:4.4.36-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.36-4build1.debian.tar.xz' libxcrypt_4.4.36-4build1.debian.tar.xz 8356 SHA512:d181e5637d40e322cf03d80dff03acb9982c0a07a73229d660d8b2fcd02f31783347c0b0208d2ebb077bdf44e87330b04a8cd10a4bc272dbb0feca7f1adfe013
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.9`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.10`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.9`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.10`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.10
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.10.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.10.debian.tar.xz 61552 SHA512:e6944e8ccf2407eaeafbe18e07bfafe98e8f2f6d1750c5dccc552a3ef17dafafd6a82ffaeb2d7a19be3e1b9f6ac8f79e1e76c881d2c7c374a5aa924fdf43cdc8
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.10.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.10.dsc 3083 SHA512:6a1ae28ff39fd84d7a2ee657169be4d1145574b471630d251b783a01ab22ed1a43ded3be1081c1e3832f40b6564635e2b1a95d30db1d7872fe74fe45ce7b556d
+```
 
 ### `dpkg` source package: `libzstd=1.5.5+dfsg2-2build1.1`
 
@@ -1715,9 +1730,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris net-tools=2.10-0.1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10.orig.tar.xz' net-tools_2.10.orig.tar.xz 229616 SHA256:b262435a5241e89bfa51c3cabd5133753952f7a7b7b93f32e08cb9d96f580d69
-'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10-0.1ubuntu4.4.debian.tar.xz' net-tools_2.10-0.1ubuntu4.4.debian.tar.xz 60952 SHA256:90fdb597251e6dd181b0d1dba4377cd3c79abfb4c87f5ced379acb7d91b3d4cd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10-0.1ubuntu4.4.dsc' net-tools_2.10-0.1ubuntu4.4.dsc 2106 SHA256:21d9fabd2a679d297b5de385c371a87221343a0a027b724c931ac19f087d7f41
+'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10.orig.tar.xz' net-tools_2.10.orig.tar.xz 229616 SHA512:aa8f631772da6c16b165065fc5929a206504f2dce19e74a4ffc680f09b40f3a9180bd4bbeaac67e0b32693358b01383bae4fbfcb6061180c130e9e0801d536bf
+'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10-0.1ubuntu4.4.debian.tar.xz' net-tools_2.10-0.1ubuntu4.4.debian.tar.xz 60952 SHA512:3213ef0436a56dd4a68b38e342a58535fbe64c2d990833d3382e8b2e3ab9d64e4cf419b2c44761d56a0811a33f7b4d525953da674bff5e25dc5087d4ead686ba
+'http://archive.ubuntu.com/ubuntu/pool/main/n/net-tools/net-tools_2.10-0.1ubuntu4.4.dsc' net-tools_2.10-0.1ubuntu4.4.dsc 2106 SHA512:75b508c1f218e3bf4c02945d858aae0deb39f892d5eaeaf6eee032d27b00272058887784681c8824f91b0e18295922360dd6eed765840c222c03a2c1501f66e6
 ```
 
 ### `dpkg` source package: `netbase=6.4`
@@ -2288,17 +2303,17 @@ $ apt-get source -qq --print-uris sysstat=12.6.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.6.1-2.debian.tar.xz' sysstat_12.6.1-2.debian.tar.xz 38240 SHA512:e2733fcfee6639e86c1c08ab06ffa29e56e11820df1c0dcb09feb8352d20f1bbb714191544ee624d27cd302e09c392d94d9957b3298e276a5a5c93070eb48c6c
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.18`
 
 Binary Packages:
 
-- `libsystemd-shared:amd64=255.4-1ubuntu8.17`
-- `libsystemd0:amd64=255.4-1ubuntu8.17`
-- `libudev1:amd64=255.4-1ubuntu8.17`
-- `systemd=255.4-1ubuntu8.17`
-- `systemd-dev=255.4-1ubuntu8.17`
-- `systemd-resolved=255.4-1ubuntu8.17`
-- `systemd-timesyncd=255.4-1ubuntu8.17`
+- `libsystemd-shared:amd64=255.4-1ubuntu8.18`
+- `libsystemd0:amd64=255.4-1ubuntu8.18`
+- `libudev1:amd64=255.4-1ubuntu8.18`
+- `systemd=255.4-1ubuntu8.18`
+- `systemd-dev=255.4-1ubuntu8.18`
+- `systemd-resolved=255.4-1ubuntu8.18`
+- `systemd-timesyncd=255.4-1ubuntu8.18`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-dev/copyright`, `/usr/share/doc/systemd-resolved/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
 
@@ -2314,10 +2329,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz' systemd_255.4-1ubuntu8.17.debian.tar.xz 272596 SHA512:0019048e54e69c48dd0724d753ae1e1c8feca0d7f5078231b370e23205cb5cd3630182c48cacf41a71031cb3e90cfda5f802035c0937c3ae788382960fe495ef
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc' systemd_255.4-1ubuntu8.17.dsc 7324 SHA512:d329cc29055aad81ea4020ebc8a9e72c9192a205b8e8df71b58993dfc0cd8cdcf7bcfdb877009c5aadc0a017190ab625cb09228d04c3b30bd591a396aa13496d
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.18
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
@@ -2372,12 +2387,12 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3ubuntu0.4.dsc' tar_1.35+dfsg-3ubuntu0.4.dsc 2124 SHA512:7db5e186409ad66a391743f641ff273f46d95773f3de6fe3c452fb55ea38aef471dcb64717d2622c1abbf74406c83e561ed0b22da63afee7bc9aae9198f201f2
 ```
 
-### `dpkg` source package: `tzdata=2026c-0ubuntu0.24.04.1`
+### `dpkg` source package: `tzdata=2026e-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `tzdata=2026c-0ubuntu0.24.04.1`
-- `tzdata-legacy=2026c-0ubuntu0.24.04.1`
+- `tzdata=2026e-0ubuntu0.24.04.1`
+- `tzdata-legacy=2026e-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`, `/usr/share/doc/tzdata-legacy/copyright`)
 
@@ -2387,11 +2402,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`, `/usr/share/doc/tzdat
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.24.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.24.04.1.debian.tar.xz 188348 SHA512:fd539785392a3f9e79f88ca6e299baae834a9db8e18e3b0c9dba283024e65137d66e09ecf92501656ee3857ca66cd72918231800ba3c85b2eadd2123ecb3cf85
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.24.04.1.dsc' tzdata_2026c-0ubuntu0.24.04.1.dsc 2728 SHA512:df7df3199b1af5d6dc73bdd0296f2000e7068a1ba24b7e01db00d21a114cbe292db3993730d7be6ee5e0469401105bc441b50dc9680d430b01dce9ad904ed3e3
+$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.24.04.1.debian.tar.xz 189608 SHA512:d0914dfbb1afb8b9b750da32f6d87f793299dad1362bf803b5f29d2b9d2ae63b991b073077ad5b1fcc532d64bf4ff94a3556354c3088ee4b2c26269ab956fa04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.24.04.1.dsc' tzdata_2026e-0ubuntu0.24.04.1.dsc 2728 SHA512:077da1ca1a9d76ec9c8ddf78dd8556eb69bd56ec08ab9ce558dddb5e0a7ea9404df0af8d92cfacab2c9172aba4af4df90575d194a3e915586d7188d56d7075f3
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
