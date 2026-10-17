@@ -62587,59 +62587,129 @@ CMD ["python"]
 
 ## `python:3.16-rc`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:alpine`
 
