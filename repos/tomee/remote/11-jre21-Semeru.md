@@ -1,7 +1,7 @@
 ## `tomee:11-jre21-Semeru`
 
 ```console
-$ docker pull tomee@sha256:8348018bd0cd7c6f40597533da0e47a93a8e1e2c696d99e0b0a6c5a8ac7ca219
+$ docker pull tomee@sha256:33ea49ee2531dc99c936df142873bc29eb3d3cd6bcaf5dd03c1656af2c247bf2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,121 +14,121 @@ $ docker pull tomee@sha256:8348018bd0cd7c6f40597533da0e47a93a8e1e2c696d99e0b0a6c
 ### `tomee:11-jre21-Semeru` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:3fa1386cb3524fe22ccc7e0c53e59caab48f3660d360f713fc49050486bb7803
+$ docker pull tomee@sha256:11f022400c61de686fe5e1e4640fcc59ee637940bc4cfcb02af503bed5ce3fb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.4 MB (182442712 bytes)**  
+-	Total Size: **182.4 MB (182411327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4a27454716af2b9e4814c874a00ff71f6e8eacbb185dcf5a5afd4553c83f978`
+-	Image ID: `sha256:dcfd7cd54409038c3775ff81cdc69b0392fa990892fe2c4b783664557752f074`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 ARG RELEASE
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 24 Sep 2026 22:24:06 GMT
-ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
-# Thu, 24 Sep 2026 22:24:07 GMT
+# Fri, 02 Oct 2026 10:21:06 GMT
+ADD file:b6c410e935243e5623135210c34358091e8af5ff14851cb0f67195733b55d391 in / 
+# Fri, 02 Oct 2026 10:21:06 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Oct 2026 01:26:18 GMT
+# Sat, 17 Oct 2026 00:23:21 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 02 Oct 2026 01:26:18 GMT
+# Sat, 17 Oct 2026 00:23:21 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 02 Oct 2026 01:26:18 GMT
+# Sat, 17 Oct 2026 00:23:21 GMT
 ENV JAVA_VERSION=21.0.12.15
-# Fri, 02 Oct 2026 01:26:21 GMT
+# Sat, 17 Oct 2026 00:26:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2f27d7326021a68093351b1368cc9a44900456ec16f6ebee2dcb8842502e3b11';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.15/ibm-semeru-open-jre_aarch64_linux_21.0.12.15.tar.gz';          ;;        amd64|x86_64)          ESUM='7b5f5b353dafa76a2810902cb6088c6a01f7766a7bcc3a8182c412a7769a9242';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.15/ibm-semeru-open-jre_x64_linux_21.0.12.15.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a24a04707ea2b3c744ea6ce6a641d2c6001037e47546c1ec103d260ea1e77220';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.15/ibm-semeru-open-jre_ppc64le_linux_21.0.12.15.tar.gz';          ;;        s390x)          ESUM='7603caa37fabff1f95c4d8567b06c08c0f9d6b6cad6ffa3d43bd2421d4c304a9';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.15/ibm-semeru-open-jre_s390x_linux_21.0.12.15.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Fri, 02 Oct 2026 01:26:21 GMT
+# Sat, 17 Oct 2026 00:26:58 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Oct 2026 01:26:21 GMT
+# Sat, 17 Oct 2026 00:26:58 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 02 Oct 2026 01:27:25 GMT
+# Sat, 17 Oct 2026 00:28:04 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     export CATALINA_PID=/opt/tomcat-home/tomcat.pid;     TOMCAT_CHECKSUM="16494dd4745f808d3c506807b5275521fd71044d976f441d18eeeab0f5a38bc1b5344ca395292f6f26eb7612cd8c8e746d01ccdfb29893d394052d9f4b1f4c11";     TOMCAT_VERSION="9.0.121";     TOMCAT_FILENAME="apache-tomcat-${TOMCAT_VERSION}.tar.gz";     SUCCESS=;         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     for baseUrl in         https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin         https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin     ; do         if curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${baseUrl}/${TOMCAT_FILENAME}" && [ -s "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz ]; then             SUCCESS=1;             break;         fi;     done;     [ -n "$SUCCESS" ];     echo "${TOMCAT_CHECKSUM}  ${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     unset CATALINA_PID;     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
-# Fri, 02 Oct 2026 02:39:29 GMT
+# Sat, 17 Oct 2026 01:42:25 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Oct 2026 02:39:29 GMT
+# Sat, 17 Oct 2026 01:42:25 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg # buildkit
-# Fri, 02 Oct 2026 02:39:29 GMT
+# Sat, 17 Oct 2026 01:42:25 GMT
 WORKDIR /usr/local/tomee
-# Fri, 02 Oct 2026 02:39:38 GMT
+# Sat, 17 Oct 2026 01:42:32 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends gpg dirmngr gpg-agent   && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 02 Oct 2026 02:39:47 GMT
+# Sat, 17 Oct 2026 01:42:43 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   85FBBE98D6C37CDA8A7D8FF9F9FF83A48D339D37   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done # buildkit
-# Fri, 02 Oct 2026 02:39:47 GMT
+# Sat, 17 Oct 2026 01:42:43 GMT
 ENV TOMEE_VER=11.0.0-M1
-# Fri, 02 Oct 2026 02:39:47 GMT
+# Sat, 17 Oct 2026 01:42:43 GMT
 ENV TOMEE_BUILD=microprofile
-# Fri, 02 Oct 2026 02:39:49 GMT
+# Sat, 17 Oct 2026 01:42:45 GMT
 RUN set -eux; 	ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			https://dlcdn.apache.org/ 			https://archive.apache.org/dist/ 		; do 			if curl -fSL "$distUrl$distFile" -o "$f" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	};   ddist tomee.tar.gz.asc tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc   && ddist tomee.tar.gz.sha512 tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512   && ddist apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz* # buildkit
-# Fri, 02 Oct 2026 02:39:49 GMT
+# Sat, 17 Oct 2026 01:42:45 GMT
 EXPOSE map[8080/tcp:{}]
-# Fri, 02 Oct 2026 02:39:49 GMT
+# Sat, 17 Oct 2026 01:42:45 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
-		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
-		Size: 29.8 MB (29751627 bytes)  
+	-	`sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e`  
+		Last Modified: Fri, 02 Oct 2026 11:08:26 GMT  
+		Size: 29.8 MB (29752476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b2a4da4efd30321ceaa0daab38f6c34a3513358b9520e5ce24c465f649e8c59`  
-		Last Modified: Fri, 02 Oct 2026 01:27:38 GMT  
-		Size: 12.1 MB (12140251 bytes)  
+	-	`sha256:e17dada8baa4ed1d809c5b8177a1685a6a8f524a147cd19e289fabc4fec43821`  
+		Last Modified: Sat, 17 Oct 2026 00:24:50 GMT  
+		Size: 12.1 MB (12144839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e77f1ca290bf03dc2cc411f69c5ef3930e7552c82d7ecfdb69b4d1c7613664a7`  
-		Last Modified: Fri, 02 Oct 2026 01:27:39 GMT  
-		Size: 60.8 MB (60812000 bytes)  
+	-	`sha256:0200eb537fd9f9964bfed1d9014641d15cd7c70e15a4dab0844d4f0d5d4d4764`  
+		Last Modified: Sat, 17 Oct 2026 00:28:18 GMT  
+		Size: 60.8 MB (60812049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf4f66fd7c9c28d5cb548c140f42afc4457c92c87fbeb2242b16df00eb67ab52`  
-		Last Modified: Fri, 02 Oct 2026 01:27:38 GMT  
-		Size: 5.2 MB (5200632 bytes)  
+	-	`sha256:9e943a865558571f0b95a4053b1fa7b2f4d56325cbaa7c908dbe7fec1538e73a`  
+		Last Modified: Sat, 17 Oct 2026 00:28:17 GMT  
+		Size: 5.2 MB (5163804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c3e2f5452852e2da74a00ee3efe03ecbf8714483e548a77acd4bdbd43b901ae`  
-		Last Modified: Fri, 02 Oct 2026 02:39:58 GMT  
-		Size: 171.0 B  
+	-	`sha256:ab670806b738985aad15c2cf53e7c72c85d4900dfd5a399dd29d29cdbb32c0ed`  
+		Last Modified: Sat, 17 Oct 2026 01:42:55 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac1d27ad9d701af2ed0a24c488a2ef28e9b7c3d46db22f2909ba5aa2de1fac8`  
-		Last Modified: Fri, 02 Oct 2026 02:40:01 GMT  
-		Size: 2.4 MB (2358482 bytes)  
+	-	`sha256:b10e41f7ac26fc334a631e8af5c517a0a7949ce6a6bbec2e1d309b58d637ca42`  
+		Last Modified: Sat, 17 Oct 2026 01:42:55 GMT  
+		Size: 2.4 MB (2358468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8e70cff6bb575f532479d7ed9af39f3950650134e06bf83d60e5dc7ef604347`  
-		Last Modified: Fri, 02 Oct 2026 02:40:01 GMT  
-		Size: 75.7 KB (75655 bytes)  
+	-	`sha256:57b68a1f132e76160346ebbadc38cc2279278e754a8e3292b9ddd69a9535621b`  
+		Last Modified: Sat, 17 Oct 2026 01:42:55 GMT  
+		Size: 75.6 KB (75634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871e1d0e9ae6b30a7479b4a05d45cc4dd8f774eafbe3b5436125d4290c7e67d6`  
-		Last Modified: Fri, 02 Oct 2026 02:40:03 GMT  
-		Size: 72.1 MB (72103862 bytes)  
+	-	`sha256:10a43c9083699553d3f7cd2ef46ff1c4cd1231610990f3b2c69eb544439fa655`  
+		Last Modified: Sat, 17 Oct 2026 01:42:57 GMT  
+		Size: 72.1 MB (72103853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:11-jre21-Semeru` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:0dbc7992972d4d5eabfd45d5ef1338ddfda8c7e1aa9537da176455a7e9894e5e
+$ docker pull tomee@sha256:79e4ca4284e60b46fff406b64d995cd54b71e8ed8efacf43e98c22e07bfa4226
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4224119 bytes)**  
+-	Total Size: **4.2 MB (4222216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eaf202d304af1af26518ee2ecdec43b6db42b1fd0b3ea6bef252409dec8d3a15`
+-	Image ID: `sha256:9a4775f23c6dca1342c0ea5f5c3b6a40ca0251bbc994a9d9970e698457c9fc2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ea582b7e10d7f0a03194090a4bb7d1b007fdcd5125b7e06834e791548ee28f6d`  
-		Last Modified: Fri, 02 Oct 2026 02:40:01 GMT  
-		Size: 4.2 MB (4194975 bytes)  
+	-	`sha256:bf42c78b96d9726865148a1480fd68379bd3b63b3265901aad7fb812807dddc6`  
+		Last Modified: Sat, 17 Oct 2026 01:42:55 GMT  
+		Size: 4.2 MB (4193072 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ddd8faf08623dc303834f8dfa6dc98dfd3c062f4d7377ec4afc44461c005d34f`  
-		Last Modified: Fri, 02 Oct 2026 02:40:01 GMT  
+	-	`sha256:731cbc27b85a03659539ef96e553d4fbf79c817c33adcfd76ba1e5485788acf0`  
+		Last Modified: Sat, 17 Oct 2026 01:42:55 GMT  
 		Size: 29.1 KB (29144 bytes)  
 		MIME: application/vnd.in-toto+json
 
