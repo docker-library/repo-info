@@ -1,9 +1,9 @@
-# `pypy:3.11-8.0.0-trixie`
+# `pypy:3.11-8.0.1-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2737ae6947f8dc5a01dea2bdd3a4378c011ac324a1cea3e31172eaeceb1f7f3`
-- Created: `2026-10-06T04:30:54.854342982Z`
+- Image ID: `sha256:4d63444de551f840fa89e509a165083824aa4f7957ad3d7a438221a52b356af1`
+- Created: `2026-10-14T20:15:43.151131397Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=8.0.0`
+  - `PYPY_VERSION=8.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 

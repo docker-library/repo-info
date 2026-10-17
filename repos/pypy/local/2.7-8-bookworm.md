@@ -1,17 +1,17 @@
-# `pypy:2.7-8.0.0-bookworm`
+# `pypy:2.7-8.0.1-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:50c057b5d4ed0f91e5e822787c8ef42c1745ceb4f8b91336fd0b7b1abd677f9c`
-- Created: `2026-10-06T04:31:07.969091996Z`
-- Virtual Size: ~ 1.04 Gb  
+- Image ID: `sha256:c2e4ee98f6d58b19a433b16ef4e2ad6443b5661875d58da87fa2ce79c98bc04d`
+- Created: `2026-10-14T20:16:13.078738877Z`
+- Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=8.0.0`
+  - `PYPY_VERSION=8.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 

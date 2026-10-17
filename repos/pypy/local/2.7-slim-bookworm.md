@@ -1,17 +1,17 @@
-# `pypy:2.7-8.0.0-slim-bookworm`
+# `pypy:2.7-8.0.1-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6bf87aa6f1f1705bd9b93c862991599df1066655abb08d9598d68810b1f65c5`
-- Created: `2026-10-06T01:52:33.772901659Z`
-- Virtual Size: ~ 189.85 Mb  
+- Image ID: `sha256:9506ae1c7c5884f1090f7a0440aad8d713839797da40f53f2fbc255a995cb35f`
+- Created: `2026-10-14T20:15:48.926684117Z`
+- Virtual Size: ~ 192.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=8.0.0`
+  - `PYPY_VERSION=8.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
