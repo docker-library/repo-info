@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e01388c57393f4de1199ba4b5688246efc4169aea92034c2962e5c629b27af0b`
-- Created: `2026-10-08T21:51:25.172533515Z`
-- Virtual Size: ~ 179.19 Mb  
+- Image ID: `sha256:e666619c16e24dd18022a96db17aa092ed90ca04ddeb48446ae1e12f01eb0c32`
+- Created: `2026-10-14T18:28:37.757011028Z`
+- Virtual Size: ~ 179.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=26.11.1`
+  - `NODE_VERSION=26.12.0`
 
 ## `apk` (`.apk`-based packages)
 
