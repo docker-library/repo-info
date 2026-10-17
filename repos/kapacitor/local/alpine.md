@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad84a38f74190fa87e2ab20406dd66845ae8344ee1566f8810748753735fde46`
-- Created: `2026-09-22T18:49:09.04964702Z`
-- Virtual Size: ~ 360.22 Mb  
+- Image ID: `sha256:599dd9ee001ff84967f6a3a267239d6233826483620ac69890e4531a61bf2475`
+- Created: `2026-10-16T17:43:44.600014605Z`
+- Virtual Size: ~ 362.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.8.7`
+  - `KAPACITOR_VERSION=1.8.8`
 
 ## `apk` (`.apk`-based packages)
 
