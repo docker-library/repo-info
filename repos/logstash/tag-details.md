@@ -9,7 +9,7 @@
 ## `logstash:8.19.23`
 
 ```console
-$ docker pull logstash@sha256:f092e5c4253003c0d634588f719ce0d7ef3a99a4bac880f21f23d5bb26dd237e
+$ docker pull logstash@sha256:7e20f25191c3ed0d5960a1ecb325058fb85cec8291a667640bdc334fa7f844b2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,119 +22,119 @@ $ docker pull logstash@sha256:f092e5c4253003c0d634588f719ce0d7ef3a99a4bac880f21f
 ### `logstash:8.19.23` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:57fa5c2145739f0de009fa3736ede50ca6bc270f751bf151e034a0dc7abb9e5e
+$ docker pull logstash@sha256:24a7ab724dcfabf337e943805a9b3df0f30a4bd29b7da0ff8c4206915d733bef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **530.8 MB (530799764 bytes)**  
+-	Total Size: **529.5 MB (529456330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:877166eedd99bfe27cc762cd74abcea43661fdec7c6e084e3a50d33585a016ac`
+-	Image ID: `sha256:578f3580f645f45cef40c18d0d7d2c3c2d9c06dfdddc9ce4d5ed9a7b4798095f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
 
 ```dockerfile
-# Fri, 18 Sep 2026 21:20:35 GMT
+# Fri, 02 Oct 2026 08:10:52 GMT
 ARG RELEASE
-# Fri, 18 Sep 2026 21:20:35 GMT
+# Fri, 02 Oct 2026 08:10:52 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 18 Sep 2026 21:20:35 GMT
+# Fri, 02 Oct 2026 08:10:52 GMT
 LABEL org.opencontainers.image.version=24.04
-# Fri, 18 Sep 2026 21:20:37 GMT
-ADD file:6c214fc3c3c22122c7eb68f7fb32783df308e60b1eaeb9baf7e4d0cc961d448d in / 
-# Fri, 18 Sep 2026 21:20:38 GMT
+# Fri, 02 Oct 2026 08:10:54 GMT
+ADD file:7121eb4a5ba391efb4ba9a38c532d1c5dc2d22d276f04e062f357eea36ee62c4 in / 
+# Fri, 02 Oct 2026 08:10:55 GMT
 CMD ["/bin/bash"]
-# Tue, 06 Oct 2026 21:43:06 GMT
+# Sat, 17 Oct 2026 00:31:25 GMT
 RUN for iter in {1..10}; do       export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&   apt-get upgrade -y &&   apt-get install -y procps findutils tar gzip &&         apt-get install -y locales &&         apt-get install -y curl &&     apt-get clean all &&       locale-gen 'en_US.UTF-8' &&     apt-get clean metadata &&   exit_code=0 && break || exit_code=$? && echo "packaging error: retry $iter in 10s" && apt-get clean all &&   apt-get clean metadata && sleep 10; done; (exit $exit_code) # buildkit
-# Tue, 06 Oct 2026 21:43:07 GMT
+# Sat, 17 Oct 2026 00:31:25 GMT
 RUN userdel -r ubuntu && groupadd --gid 1000 logstash &&   useradd --uid 1000 --gid 1000 --home /usr/share/logstash --no-create-home logstash # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 RUN curl -Lo - https://artifacts.elastic.co/downloads/logstash/logstash-8.19.23-linux-$(arch).tar.gz |   tar zxf - -C /usr/share &&   mv /usr/share/logstash-8.19.23 /usr/share/logstash &&   chown --recursive logstash:logstash /usr/share/logstash/ &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses/ &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 WORKDIR /usr/share/logstash
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY config/logstash-full.yml config/logstash.yml # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY config/pipelines.yml config/log4j2.properties config/log4j2.file.properties config/ # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY pipeline/default.conf pipeline/logstash.conf # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 RUN chown --recursive logstash:root config/ pipeline/ # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 COPY bin/docker-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 RUN chmod 0755 /usr/local/bin/docker-entrypoint # buildkit
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 USER 1000
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 EXPOSE map[5044/tcp:{} 9600/tcp:{}]
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.opencontainers.image.vendor=Elastic org.label-schema.name=logstash org.opencontainers.image.title=logstash org.label-schema.version=8.19.23 org.opencontainers.image.version=8.19.23 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.license=Elastic License org.opencontainers.image.licenses=Elastic License org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.label-schema.build-date=2026-09-29T21:17:40+00:00 org.opencontainers.image.created=2026-09-29T21:17:40+00:00
-# Tue, 06 Oct 2026 21:43:51 GMT
+# Sat, 17 Oct 2026 00:32:01 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ```
 
 -	Layers:
-	-	`sha256:a60ef8ec184edb5ed91f5983f00261359fb2fe20f603e8d488b9477d32fcad70`  
-		Last Modified: Fri, 18 Sep 2026 22:29:51 GMT  
-		Size: 29.8 MB (29764422 bytes)  
+	-	`sha256:f2b4ef06ff01a67d4bed7657a4ae379a7d07934b7c3e743454a22a0d5275fb2b`  
+		Last Modified: Fri, 02 Oct 2026 08:36:14 GMT  
+		Size: 29.8 MB (29765758 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:feb341b45ac6ebab1ad6f028295c4c2da38dc514856bc0fdcfff0b8eadb11535`  
-		Last Modified: Tue, 06 Oct 2026 21:44:31 GMT  
-		Size: 50.3 MB (50329646 bytes)  
+	-	`sha256:f6dcac636d61ebe19bba6bff13795275c00cf5547e152b9ea89eaf7f5546c5bf`  
+		Last Modified: Sat, 17 Oct 2026 00:32:40 GMT  
+		Size: 49.0 MB (48985418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c7fbc5ab855cb40b473877b2fffe4ac39e3e55f5920ebc25844a8a292f1be4e`  
-		Last Modified: Tue, 06 Oct 2026 21:44:29 GMT  
-		Size: 1.2 KB (1233 bytes)  
+	-	`sha256:fadc0770cece1caf70fd69cef79761cd019b7a0ee9b6544c1ae9fdd8e9b69634`  
+		Last Modified: Sat, 17 Oct 2026 00:32:38 GMT  
+		Size: 1.2 KB (1222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ae70bd4a2a6b5d2f3234b57bfcf901ccfab52d1348d2f72f733e65322814c1`  
-		Last Modified: Tue, 06 Oct 2026 21:44:39 GMT  
-		Size: 450.4 MB (450437963 bytes)  
+	-	`sha256:a8e28a2020f0cce742e351554dd59656b29efee00c97e02cf861094f8c7170a7`  
+		Last Modified: Sat, 17 Oct 2026 00:32:48 GMT  
+		Size: 450.4 MB (450437407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bc23b6280c1889c5f892af1e7ab26245a3fff58b18adcd631cf13a4ad4eb77a`  
-		Last Modified: Tue, 06 Oct 2026 21:44:29 GMT  
-		Size: 276.0 B  
+	-	`sha256:4f5db2d70131a1e7234c330e205d1d61ec93fcc1f9bf1b48246acd80b4420e61`  
+		Last Modified: Sat, 17 Oct 2026 00:32:38 GMT  
+		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dd6ae9d52e59780eed356232817cceb2d333efb42fab2a33fa268eaa2aecc12`  
-		Last Modified: Tue, 06 Oct 2026 21:44:30 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:cdcb7b0bc49a6ce20e56d51941f1c4412554e6379841a94d3617cbd904601eff`  
+		Last Modified: Sat, 17 Oct 2026 00:32:39 GMT  
+		Size: 1.6 KB (1584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3712fd6536638f8c1747b989f6eb5acb3347e369b490a4fed1b5248b365c0ee9`  
-		Last Modified: Tue, 06 Oct 2026 21:44:30 GMT  
-		Size: 277.0 B  
+	-	`sha256:879390c971ae98e3ab6c707787e2aa02b55a71b9404b7bb37205534f9fd1a5d7`  
+		Last Modified: Sat, 17 Oct 2026 00:32:40 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1976f1859c8704c2bb760967508d843aacc7160743b2e638cb9fb445d858bb8b`  
-		Last Modified: Tue, 06 Oct 2026 21:44:32 GMT  
-		Size: 1.8 KB (1763 bytes)  
+	-	`sha256:1deab76324695684e98611209d2293a26b525e138335a07b29f5e3de1eb8c567`  
+		Last Modified: Sat, 17 Oct 2026 00:32:41 GMT  
+		Size: 1.8 KB (1766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cbb2ee0ee85d31050ac108f39447b6e43e458728ac5bf89edec50f57b8c38f4`  
-		Last Modified: Tue, 06 Oct 2026 21:44:32 GMT  
-		Size: 6.3 KB (6295 bytes)  
+	-	`sha256:4c3cdd4307d6320d47dbbd59a9055eeeaee1b1cb6ec127505ce481e90a2eb070`  
+		Last Modified: Sat, 17 Oct 2026 00:32:41 GMT  
+		Size: 6.3 KB (6299 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6c30920cf4b819a9d5b19520a2fc4d57f3f03ecbaf3ca7a0333f6cfa3f520f1`  
-		Last Modified: Tue, 06 Oct 2026 21:44:33 GMT  
-		Size: 255.2 KB (255182 bytes)  
+	-	`sha256:150b05853259619c8f5ee192998539a5ec78a3579af4a7601666291b886d0438`  
+		Last Modified: Sat, 17 Oct 2026 00:32:42 GMT  
+		Size: 255.2 KB (255188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a573ebb2911f516dc5a63fe2aae97718585ec29e956d45e11f3829b7fadf05ec`  
-		Last Modified: Tue, 06 Oct 2026 21:44:33 GMT  
-		Size: 355.0 B  
+	-	`sha256:2251b0ecabe561b8329472e92180005e9b549d77951e0ea838585db9a1b97ad6`  
+		Last Modified: Sat, 17 Oct 2026 00:32:42 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0559c5b7ba0d29f71571b7a45c0b8a6a6021488871c5ad5064d9f87b4177bfa1`  
-		Last Modified: Tue, 06 Oct 2026 21:44:33 GMT  
+	-	`sha256:45b9e7ecaf0eea15b9dc8b8fdf11bee17a0c355ff651f7c86dfab52c25a8410e`  
+		Last Modified: Sat, 17 Oct 2026 00:32:42 GMT  
 		Size: 712.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -145,24 +145,24 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ### `logstash:8.19.23` - unknown; unknown
 
 ```console
-$ docker pull logstash@sha256:4ddd909eb0a1946acaf80b49b2f3a1d5b9655392eed2db42e5d9b504dd1f1c59
+$ docker pull logstash@sha256:c35c64ec125123d08e7aa6c658ccd8a61b8e48950c3c7d8a8c0d62587d96db32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.6 MB (3645448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:526bd7521f78cbf49efe891c25346154e8dfaa21cd657ca46b7ea81a29038458`
+-	Image ID: `sha256:59c785c994f3a026b320a71de5c3337968b79c372e5e7d473ae9810c93b7facc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ef53644256399e6b47eddc411f57df582372e4acb7e3a7644d3f48a1084c17d1`  
-		Last Modified: Tue, 06 Oct 2026 21:44:29 GMT  
+	-	`sha256:7ec4f205dd335521be6370d9d65dc183d8d65d518a488fb94d6a6af1ec6a1ad2`  
+		Last Modified: Sat, 17 Oct 2026 00:32:38 GMT  
 		Size: 3.6 MB (3609599 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06ea90473870db4f1f59a6fe634887da129081125fc2b1b0a4c478cdb755a169`  
-		Last Modified: Tue, 06 Oct 2026 21:44:29 GMT  
+	-	`sha256:c6328ceb9171848ff20cbed0d12e801358a68456d04f4167559445cae5c5ce09`  
+		Last Modified: Sat, 17 Oct 2026 00:32:38 GMT  
 		Size: 35.8 KB (35849 bytes)  
 		MIME: application/vnd.in-toto+json
 
