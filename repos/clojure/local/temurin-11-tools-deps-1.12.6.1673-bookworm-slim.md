@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a93f8064cb4951f8fa58717309dc085b27fdf6764da8af15ed9a98dd06103bce`
-- Created: `2026-10-06T02:12:04.138812218Z`
-- Virtual Size: ~ 520.16 Mb  
+- Image ID: `sha256:9047b70b0c73ab51df1ecf4e8676c2d7a1ce9dc979a151a7980c963a48323417`
+- Created: `2026-10-17T01:47:31.98162313Z`
+- Virtual Size: ~ 520.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -2678,14 +2678,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.11.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.11.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.11=3.11.2-6+deb12u8`
+### `dpkg` source package: `python3.11=3.11.2-6+deb12u9`
 
 Binary Packages:
 
-- `libpython3.11-minimal:amd64=3.11.2-6+deb12u8`
-- `libpython3.11-stdlib:amd64=3.11.2-6+deb12u8`
-- `python3.11=3.11.2-6+deb12u8`
-- `python3.11-minimal=3.11.2-6+deb12u8`
+- `libpython3.11-minimal:amd64=3.11.2-6+deb12u9`
+- `libpython3.11-stdlib:amd64=3.11.2-6+deb12u9`
+- `python3.11=3.11.2-6+deb12u9`
+- `python3.11-minimal=3.11.2-6+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/share/doc/libpython3.11-stdlib/copyright`, `/usr/share/doc/python3.11/copyright`, `/usr/share/doc/python3.11-minimal/copyright`)
 
@@ -2710,17 +2710,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u8
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u8.dsc' python3.11_3.11.2-6+deb12u8.dsc 3805 SHA256:197fa19ab45f41c820f40f6d9ead671c2ea29ddc53ba9424b36f1bf58458a10e
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u8.debian.tar.xz' python3.11_3.11.2-6+deb12u8.debian.tar.xz 279556 SHA256:ece2d63c70ac0b7a401fbe6b51b0103be997c294a01a3865549be1862794ba97
+$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u9.dsc' python3.11_3.11.2-6+deb12u9.dsc 3171 SHA256:49c0d6e1f0d3aeef542de2e908da11bcbcb9343654fb70b51fe4f80865c9dc92
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u9.debian.tar.xz' python3.11_3.11.2-6+deb12u9.debian.tar.xz 314060 SHA256:c40df926f2856785028b4a40478e90382b84e2c7b2d22e3b8e49e79377586627
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-1.3`
 
