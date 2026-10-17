@@ -1,7 +1,7 @@
 ## `gradle:9-jdk-graal-jammy`
 
 ```console
-$ docker pull gradle@sha256:88779000a1693f0105e574044e8b8e75a7a8be5e3b0ac19a7a7540b9cba3bf22
+$ docker pull gradle@sha256:e955dbfe805127cbd339aed4bff23d3048095ff428043b2ac129528392f27488
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,221 +14,221 @@ $ docker pull gradle@sha256:88779000a1693f0105e574044e8b8e75a7a8be5e3b0ac19a7a75
 ### `gradle:9-jdk-graal-jammy` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:2c3939187cf206457342bc1f259a49b65607bc17e1f84a4e0ad5a8173380088b
+$ docker pull gradle@sha256:7b82c5dad6ac9577fc1ab664e4c30a0f3d969d97daf0746b9031752d56877416
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **598.1 MB (598109129 bytes)**  
+-	Total Size: **598.1 MB (598111884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81a9aa481bd9f40ec5fa0d723eaf12598a8d6885e3d049e364bf99cabf02389a`
+-	Image ID: `sha256:37f0d91284123829c2715438a5bdc2d2013d97c3ad346affbd0f2daf1406a832`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 ARG RELEASE
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Sep 2026 22:24:04 GMT
+# Fri, 02 Oct 2026 10:21:04 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 24 Sep 2026 22:24:06 GMT
-ADD file:b0bf3f64519bf10a51e00d4f8ab9c8693620659a0c4a4a5090a9765e754e1d1c in / 
-# Thu, 24 Sep 2026 22:24:07 GMT
+# Fri, 02 Oct 2026 10:21:06 GMT
+ADD file:b6c410e935243e5623135210c34358091e8af5ff14851cb0f67195733b55d391 in / 
+# Fri, 02 Oct 2026 10:21:06 GMT
 CMD ["/bin/bash"]
-# Thu, 08 Oct 2026 16:39:44 GMT
+# Sat, 17 Oct 2026 00:21:18 GMT
 CMD ["gradle"]
-# Thu, 08 Oct 2026 16:39:44 GMT
+# Sat, 17 Oct 2026 00:21:18 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Thu, 08 Oct 2026 16:39:44 GMT
+# Sat, 17 Oct 2026 00:21:18 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Thu, 08 Oct 2026 16:39:44 GMT
+# Sat, 17 Oct 2026 00:21:18 GMT
 VOLUME [/home/gradle/.gradle]
-# Thu, 08 Oct 2026 16:39:44 GMT
+# Sat, 17 Oct 2026 00:21:18 GMT
 WORKDIR /home/gradle
-# Thu, 08 Oct 2026 16:40:10 GMT
+# Sat, 17 Oct 2026 00:21:50 GMT
 RUN set -o errexit -o nounset     && export DEBIAN_FRONTEND=noninteractive     && apt-get update     && apt-get install --yes --no-install-recommends         make         curl         wget         tar                 binutils         ca-certificates         fontconfig         locales         p11-kit         tzdata         unzip                 gcc         libc-dev         libz-dev         zlib1g-dev                 brz         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which brz     && which git     && which git-lfs     && which hg     && which svn # buildkit
-# Thu, 08 Oct 2026 16:40:10 GMT
+# Sat, 17 Oct 2026 00:21:50 GMT
 ENV JAVA_HOME=/opt/java/graalvm
-# Thu, 08 Oct 2026 16:40:10 GMT
+# Sat, 17 Oct 2026 00:21:50 GMT
 ENV JAVA_VERSION=21.0.2
-# Thu, 08 Oct 2026 16:40:19 GMT
+# Sat, 17 Oct 2026 00:22:00 GMT
 RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=b048069aaa3a99b84f5b957b162cc181a32a4330cbc35402766363c5be76ae48     && GRAALVM_AARCH64_DOWNLOAD_SHA256=a34be691ce68f0acf4655c7c6c63a9a49ed276a11859d7224fd94fc2f657cd7a     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && native-image --version # buildkit
-# Thu, 08 Oct 2026 16:40:19 GMT
+# Sat, 17 Oct 2026 00:22:00 GMT
 ENV GRADLE_VERSION=9.8.1
-# Thu, 08 Oct 2026 16:40:19 GMT
+# Sat, 17 Oct 2026 00:22:00 GMT
 ARG GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
-# Thu, 08 Oct 2026 16:40:23 GMT
+# Sat, 17 Oct 2026 00:22:03 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Thu, 08 Oct 2026 16:40:23 GMT
+# Sat, 17 Oct 2026 00:22:03 GMT
 USER gradle
-# Thu, 08 Oct 2026 16:40:24 GMT
+# Sat, 17 Oct 2026 00:22:04 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Thu, 08 Oct 2026 16:40:24 GMT
+# Sat, 17 Oct 2026 00:22:04 GMT
 USER root
 ```
 
 -	Layers:
-	-	`sha256:98c4455a98982b35380ec62f90d5cf0edff02eeb4b3bb18595d871fdeb0c0c67`  
-		Last Modified: Thu, 24 Sep 2026 23:36:04 GMT  
-		Size: 29.8 MB (29751627 bytes)  
+	-	`sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e`  
+		Last Modified: Fri, 02 Oct 2026 11:08:26 GMT  
+		Size: 29.8 MB (29752476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa4fd8ae41f16122c86b2c74e3e561e52948b909528294d3423b0a3254a1a32a`  
-		Last Modified: Thu, 08 Oct 2026 16:40:53 GMT  
-		Size: 4.3 KB (4307 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e26f12d25b0900fc554b737f7289671066d3533cae7c07f0499a953a98a27c2`  
-		Last Modified: Thu, 08 Oct 2026 16:41:00 GMT  
-		Size: 126.8 MB (126807167 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc22f70d8860e6888a65fcaa0ceb0ac2fbff0a186caeda24a21f9819eab51d79`  
-		Last Modified: Thu, 08 Oct 2026 16:41:04 GMT  
-		Size: 290.0 MB (289986767 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:169617494d92505355ca036f05525b21a61dcd0d32ea10ab0667182970f014d4`  
-		Last Modified: Thu, 08 Oct 2026 16:41:01 GMT  
-		Size: 151.5 MB (151533612 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16c855e759e013cf467181057e00bf339fd6c27c8375f816e76bba62124d0c2b`  
-		Last Modified: Thu, 08 Oct 2026 16:40:54 GMT  
-		Size: 25.6 KB (25617 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `gradle:9-jdk-graal-jammy` - unknown; unknown
-
-```console
-$ docker pull gradle@sha256:fdfe3f42b64b824f0d27ecd42446b5f4ab092d1aa65364919111a5e7a09946e3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.4 MB (9430339 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89f06c021540511d1e46f5bffe8063e8632abbf9cce30980ceea0f4738c9e31e`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d77f0d531806b7654f64051e93266a6cafd6d88f8a3fd08a8669cb9868c8e978`  
-		Last Modified: Thu, 08 Oct 2026 16:40:54 GMT  
-		Size: 9.4 MB (9400338 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:6b4c9208eb54f992a3a220a4260a6173833f1136a86d63f9f0d617ce2306caad`  
-		Last Modified: Thu, 08 Oct 2026 16:40:53 GMT  
-		Size: 30.0 KB (30001 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `gradle:9-jdk-graal-jammy` - linux; arm64 variant v8
-
-```console
-$ docker pull gradle@sha256:484f068a8a1f93f1a12fc7f46e8bba8ea67c68f5364174636ea759cf795c5d6d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **583.9 MB (583865752 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc73ada8c12e636f6f506da4c302eec263184f33fab66fe0306207af71c7003a`
--	Default Command: `["gradle"]`
-
-```dockerfile
-# Thu, 24 Sep 2026 22:24:49 GMT
-ARG RELEASE
-# Thu, 24 Sep 2026 22:24:49 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 24 Sep 2026 22:24:49 GMT
-LABEL org.opencontainers.image.version=22.04
-# Thu, 24 Sep 2026 22:24:51 GMT
-ADD file:58bfc1b17a1e2fc6a3ed29355c9baf1c70e13393e0632376cd7d67572c65ba25 in / 
-# Thu, 24 Sep 2026 22:24:51 GMT
-CMD ["/bin/bash"]
-# Thu, 08 Oct 2026 16:39:42 GMT
-CMD ["gradle"]
-# Thu, 08 Oct 2026 16:39:42 GMT
-ENV GRADLE_HOME=/opt/gradle
-# Thu, 08 Oct 2026 16:39:42 GMT
-RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
-# Thu, 08 Oct 2026 16:39:42 GMT
-VOLUME [/home/gradle/.gradle]
-# Thu, 08 Oct 2026 16:39:42 GMT
-WORKDIR /home/gradle
-# Thu, 08 Oct 2026 16:40:12 GMT
-RUN set -o errexit -o nounset     && export DEBIAN_FRONTEND=noninteractive     && apt-get update     && apt-get install --yes --no-install-recommends         make         curl         wget         tar                 binutils         ca-certificates         fontconfig         locales         p11-kit         tzdata         unzip                 gcc         libc-dev         libz-dev         zlib1g-dev                 brz         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which brz     && which git     && which git-lfs     && which hg     && which svn # buildkit
-# Thu, 08 Oct 2026 16:40:12 GMT
-ENV JAVA_HOME=/opt/java/graalvm
-# Thu, 08 Oct 2026 16:40:12 GMT
-ENV JAVA_VERSION=21.0.2
-# Thu, 08 Oct 2026 16:40:21 GMT
-RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=b048069aaa3a99b84f5b957b162cc181a32a4330cbc35402766363c5be76ae48     && GRAALVM_AARCH64_DOWNLOAD_SHA256=a34be691ce68f0acf4655c7c6c63a9a49ed276a11859d7224fd94fc2f657cd7a     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && native-image --version # buildkit
-# Thu, 08 Oct 2026 16:40:21 GMT
-ENV GRADLE_VERSION=9.8.1
-# Thu, 08 Oct 2026 16:40:21 GMT
-ARG GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
-# Thu, 08 Oct 2026 16:40:24 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
-RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
-# Thu, 08 Oct 2026 16:40:24 GMT
-USER gradle
-# Thu, 08 Oct 2026 16:40:24 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
-RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
-# Thu, 08 Oct 2026 16:40:24 GMT
-USER root
-```
-
--	Layers:
-	-	`sha256:2ea2e315627a543238a7a365eba783401b8379861d62da1bf8d1506f5b14f136`  
-		Last Modified: Thu, 24 Sep 2026 23:36:11 GMT  
-		Size: 27.7 MB (27684136 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:369b171b53afcda55153f43c4e5cfb89e3822c6c644b7bf670e4071b798f02e6`  
-		Last Modified: Thu, 08 Oct 2026 16:40:57 GMT  
+	-	`sha256:c6467b7bffaa2d2e9d48f0bfebf08ccd554f204011efe0d94af43c00fe668f35`  
+		Last Modified: Sat, 17 Oct 2026 00:22:38 GMT  
 		Size: 4.3 KB (4310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c28140b0b8f821dc6b457c461c1478fb472e3174d0d7f73ef97b6e512d0e836e`  
-		Last Modified: Thu, 08 Oct 2026 16:41:04 GMT  
-		Size: 122.9 MB (122947915 bytes)  
+	-	`sha256:4d3c29813a58681238b5bbc5e5d243b4aaea34c3f2e25b6ba857bbdacf1dfc86`  
+		Last Modified: Sat, 17 Oct 2026 00:22:45 GMT  
+		Size: 126.8 MB (126809515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa09841a7944366a29be3f083915ff27a7563d994eff0e04e9454ed1aabb1160`  
-		Last Modified: Thu, 08 Oct 2026 16:41:07 GMT  
-		Size: 281.7 MB (281666418 bytes)  
+	-	`sha256:bab2ea055eefe1bddaebe4d739e6122d4a52c82c5672db8f1aad5fd1a44ae883`  
+		Last Modified: Sat, 17 Oct 2026 00:22:48 GMT  
+		Size: 290.0 MB (289986331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c885c348a0400307426a263ca8850ce4ab462d712d37567d9072467a874995fa`  
-		Last Modified: Thu, 08 Oct 2026 16:41:05 GMT  
-		Size: 151.5 MB (151533608 bytes)  
+	-	`sha256:a98e07602bd0230da8108a46872bd6072ef20db20ccc66fdd267384acf6848c9`  
+		Last Modified: Sat, 17 Oct 2026 00:22:45 GMT  
+		Size: 151.5 MB (151533607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dde84f41211f1d6fe612479fed7e89c9f03578de32418ab6215955523c43ed2`  
-		Last Modified: Thu, 08 Oct 2026 16:40:58 GMT  
-		Size: 29.3 KB (29333 bytes)  
+	-	`sha256:f96f5144da253dbe84b7db8a569e06f19d5492d5f63fda21d290e0d0020d8f30`  
+		Last Modified: Sat, 17 Oct 2026 00:22:39 GMT  
+		Size: 25.6 KB (25613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:9-jdk-graal-jammy` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:b7d6c5121cc9105bf6a397a6be5463ba8dbdd36a4a2bde548e744d5a2ce6f722
+$ docker pull gradle@sha256:5af767a4fa4ee662ecdafb8ef82fe0a4ea1244205e36851aa961fe503f888601
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.4 MB (9399454 bytes)**  
+-	Total Size: **9.4 MB (9428435 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e324595efcf4940149f845d7eeb34ec73cbfc5c40920b80be3af2e2c25a80e8`
+-	Image ID: `sha256:496541514ffdbcc6c73090833a32832e75bdb90eafecac1064db986a596d4b37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:011ca581dad18ce829c122e891f73eed1ead2a1a80f5cf3e25e316182c52fa44`  
-		Last Modified: Thu, 08 Oct 2026 16:40:57 GMT  
-		Size: 9.4 MB (9369194 bytes)  
+	-	`sha256:1e4f3911f32fb3af63acbaf750915cdfd4d3e6a6e407619343cadf178c389132`  
+		Last Modified: Sat, 17 Oct 2026 00:22:38 GMT  
+		Size: 9.4 MB (9398435 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09d793e100e4ff1adc12f9114e9e097fb974325550885788afeccc76462f2575`  
-		Last Modified: Thu, 08 Oct 2026 16:40:57 GMT  
-		Size: 30.3 KB (30260 bytes)  
+	-	`sha256:ee2a4418aae9ccaba658cbe8e491998cd6f53ab4019d38b42fa20967e87dc5bf`  
+		Last Modified: Sat, 17 Oct 2026 00:22:38 GMT  
+		Size: 30.0 KB (30000 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `gradle:9-jdk-graal-jammy` - linux; arm64 variant v8
+
+```console
+$ docker pull gradle@sha256:4a399e43a28f8dc2e4ada8b23bef38864e57d976ed65a9f0ca633bf132acd41d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **583.9 MB (583867448 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a9d8e1b302c743ab22bc2e1b3870d8d327d2cb4ea9bf761a32085fdca1d0d9d`
+-	Default Command: `["gradle"]`
+
+```dockerfile
+# Fri, 02 Oct 2026 10:22:44 GMT
+ARG RELEASE
+# Fri, 02 Oct 2026 10:22:44 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 02 Oct 2026 10:22:44 GMT
+LABEL org.opencontainers.image.version=22.04
+# Fri, 02 Oct 2026 10:22:46 GMT
+ADD file:1e8b3941ec802b3e9a687b06bf141aa99b460bda277875ad29712897c6622f25 in / 
+# Fri, 02 Oct 2026 10:22:46 GMT
+CMD ["/bin/bash"]
+# Sat, 17 Oct 2026 00:21:08 GMT
+CMD ["gradle"]
+# Sat, 17 Oct 2026 00:21:08 GMT
+ENV GRADLE_HOME=/opt/gradle
+# Sat, 17 Oct 2026 00:21:08 GMT
+RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle     && chmod --recursive o+rwx /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle # buildkit
+# Sat, 17 Oct 2026 00:21:08 GMT
+VOLUME [/home/gradle/.gradle]
+# Sat, 17 Oct 2026 00:21:08 GMT
+WORKDIR /home/gradle
+# Sat, 17 Oct 2026 00:21:42 GMT
+RUN set -o errexit -o nounset     && export DEBIAN_FRONTEND=noninteractive     && apt-get update     && apt-get install --yes --no-install-recommends         make         curl         wget         tar                 binutils         ca-certificates         fontconfig         locales         p11-kit         tzdata         unzip                 gcc         libc-dev         libz-dev         zlib1g-dev                 brz         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing common utilities"     && which awk     && which curl     && which cut     && which grep     && which gunzip     && which sha256sum     && which sed     && which tar     && which tr     && which unzip     && which wget         && echo "Testing VCSes"     && which brz     && which git     && which git-lfs     && which hg     && which svn # buildkit
+# Sat, 17 Oct 2026 00:21:42 GMT
+ENV JAVA_HOME=/opt/java/graalvm
+# Sat, 17 Oct 2026 00:21:42 GMT
+ENV JAVA_VERSION=21.0.2
+# Sat, 17 Oct 2026 00:21:55 GMT
+RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=b048069aaa3a99b84f5b957b162cc181a32a4330cbc35402766363c5be76ae48     && GRAALVM_AARCH64_DOWNLOAD_SHA256=a34be691ce68f0acf4655c7c6c63a9a49ed276a11859d7224fd94fc2f657cd7a     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && native-image --version # buildkit
+# Sat, 17 Oct 2026 00:21:55 GMT
+ENV GRADLE_VERSION=9.8.1
+# Sat, 17 Oct 2026 00:21:55 GMT
+ARG GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
+# Sat, 17 Oct 2026 00:21:58 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
+RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle # buildkit
+# Sat, 17 Oct 2026 00:21:58 GMT
+USER gradle
+# Sat, 17 Oct 2026 00:21:59 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=dce76f55f8e251a3a1f130eb120f30b3d271de2b76c9b0729d316b5a1b6dc01f
+RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --stacktrace --debug --version # buildkit
+# Sat, 17 Oct 2026 00:21:59 GMT
+USER root
+```
+
+-	Layers:
+	-	`sha256:2908c4fa36d87b4ba1206721a9efe744e0e9b35d1437148222276c744aa6efa0`  
+		Last Modified: Fri, 02 Oct 2026 11:08:32 GMT  
+		Size: 27.7 MB (27684723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5fce4d3be013febf5b90e985cbe28cbf4967273109c95bd7254b32416e4fe67a`  
+		Last Modified: Sat, 17 Oct 2026 00:22:31 GMT  
+		Size: 4.3 KB (4312 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c9d5f3206896101105a178934ea79de4cc6e3e85536f6d82bc54e2d72598879`  
+		Last Modified: Sat, 17 Oct 2026 00:22:38 GMT  
+		Size: 122.9 MB (122949041 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:74fc317f87eff43c60eb982f557b80650b2554d6fa68d3ac36af9ac1fdcdca8d`  
+		Last Modified: Sat, 17 Oct 2026 00:22:41 GMT  
+		Size: 281.7 MB (281666361 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0dd7c4988f306b317b30bcf83822d9ee3bdaea0cc1e02077cf578b1929168485`  
+		Last Modified: Sat, 17 Oct 2026 00:22:39 GMT  
+		Size: 151.5 MB (151533640 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81e26081be2c12523f9882705fc1a544d36a6929cda5dc9b8753d8d0086740f5`  
+		Last Modified: Sat, 17 Oct 2026 00:22:32 GMT  
+		Size: 29.3 KB (29339 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `gradle:9-jdk-graal-jammy` - unknown; unknown
+
+```console
+$ docker pull gradle@sha256:227651c55f4d0629e9ebd72c6cd2bfaefa357312540310d446648c64e0abec15
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.4 MB (9397552 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fe2bf57fd68dd60c33c10d160d7fca8357e64b4a6fb4d32179db8c9a9eb235c4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:25b91ae45fa5b4812111fef454d0f5bdce97d1696931ee156528379c58e5401a`  
+		Last Modified: Sat, 17 Oct 2026 00:22:32 GMT  
+		Size: 9.4 MB (9367291 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4d89bd85a599f337131fa75945f2adbdd2847bb600f20132a136a2a2adc77b8a`  
+		Last Modified: Sat, 17 Oct 2026 00:22:31 GMT  
+		Size: 30.3 KB (30261 bytes)  
 		MIME: application/vnd.in-toto+json
