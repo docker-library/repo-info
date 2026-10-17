@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c3d8e81a04115a6e805c72f166702feeb70011c12cbf97d11207957a1e9de65`
-- Created: `2026-10-12T23:11:54.80633912Z`
-- Virtual Size: ~ 443.62 Mb  
+- Image ID: `sha256:1702f879dd3e6730a404db665a7590e72c440f6d4da095515c3c5af9ef904aad`
+- Created: `2026-10-17T01:39:02.5693662Z`
+- Virtual Size: ~ 436.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -22,7 +22,7 @@
   - `TOMCAT_VERSION=11.0.27`
   - `TOMCAT_SHA512=a617896307cada4884b24f80c4e977ddad8b3e0f88ce0e2a6eea29d5f332498e276ae5976c227a9c8daecf05c7c90def684a3766dd5a81f47a56d8b1adf43dc3`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
+  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -671,11 +671,11 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.37-8build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-8build1.dsc' fonts-dejavu_2.37-8build1.dsc 2525 SHA256:f092af264087c8c3598f8ff4fc6548d883e49cfbf4854ac33a4850eb80f99aa8
 ```
 
-### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.1`
+### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.1`
+- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -694,9 +694,18 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `Public-Domain`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz 347364 SHA512:efef4187b3d9cc747daad26cef6700051388435480c60e96e371eb04be3baae1e09ac932183c3a72b7bb4db1889d2bda89a70bfb058193c73bc5a602e53a3553
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:569d05266c430b7fb361a5c74198e0047f44ba24fd723d13e89de8974a6ce3fc5837bbd551e2e404926e14da5db68bd50011c6fa6fa01d92460bd3eeaacdc0f2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz 2176140 SHA512:f2794dee78a00f91ea4241722deff64e03e7c42cbd26073ed0d7a6e0ecca14c5f87cb1dbd520ccc94311a6b0f510b4462eee3f8765e8d77841176e78d8c45837
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:9a42b83c2237cd04e5cea7e5389078a985d6e22f48c030d225c32b5da9230b0c1b8ae6dd213bef4ac572fec74c5d05b9acfc011c199f0db5995293800575514a
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig.tar.xz' freetype_2.14.2+dfsg.orig.tar.xz 2246044 SHA512:fa16e901edee4b578cf920eb357ec5f8aea38fe1152e7ad8562201e7edde4d763a457dfdcf69bb1b5792c0b1ba0253e6dea2b8928141e77ab53e366be1b9af65
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.2.debian.tar.xz 45672 SHA512:4e6e6839d7076a28bcc53187ed393c03efe7906ee68bf6daf0ee1044a5d25facea4a8ea8bfbf2854e9277706781f93e3c62c31bf67be89547d1e40fc57e23537
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.dsc' freetype_2.14.2+dfsg-1ubuntu0.2.dsc 4105 SHA512:acb1b8995a0f6f107ebf23881205afe38c867caba0982af88456de3c4a459963e841d993bb2740300422cd1a5c1395540ed8b1f24be96658aa24139e1e35a42b
+```
 
 ### `dpkg` source package: `gcc-16=16-20260322-1ubuntu1`
 
@@ -1114,11 +1123,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build4
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build4.dsc' libmd_1.1.0-2build4.dsc 2383 SHA256:8c735703ff1b9699379c6cf538d07199d6f532dce3bcab4a1bde0ae5f7e25a21
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.57-1`
+### `dpkg` source package: `libpng1.6=1.6.57-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.57-1`
+- `libpng16-16t64:amd64=1.6.57-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1134,10 +1143,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.57-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.dsc' libpng1.6_1.6.57-1.dsc 2306 SHA512:46588883287894dbe0c5ba77bc500df0ba8d86f14a48d6253850d4e315396aec0f9165ec8d2ee6d491fb47a753a1fd1bd3b84bd84c33bf465cdc978037b2a9c4
+$ apt-get source -qq --print-uris libpng1.6=1.6.57-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57.orig.tar.gz' libpng1.6_1.6.57.orig.tar.gz 1591776 SHA512:cd20c278b04ac6275cea495c66472782c175bf431eb28afd3f529d5913179ac8cbf3a306e67fe9dc3ae09c87ad67b5d937b83f427e15d8364f513d95ff8b4649
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.debian.tar.xz' libpng1.6_1.6.57-1.debian.tar.xz 33420 SHA512:c9259e36eb22c973e8a067c87d5a8d01f520ea629c158679c8666e53c79eeae2ac3769b4bdd039cdf48c3ad37effdbce0f7a76821c55dc7bacea5587d7a76ce4
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz' libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz 34984 SHA512:8e7f0bff9fb7f8daae9c4bffd2e3fca3fc03c12f832eb0a9f66be61bd5b305d3b3a8566388814af78c7562c78b4a56f709dd02cf87d590b896d2aa5eeb708db2
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.dsc' libpng1.6_1.6.57-1ubuntu0.1.dsc 2425 SHA512:f5e48826567c29abd2b7b1d7080fc5ecab77610b354a05ec9a1a896604ded4302e8852d4e1a83ea7eb00a66aee1e8a82ec9f1f652bea7e54e054b742d9958a34
 ```
 
 ### `dpkg` source package: `libseccomp=2.6.0-2ubuntu5`
@@ -1719,11 +1728,11 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.4.dsc' tar_1.35+dfsg-4ubuntu0.4.dsc 2124 SHA512:e07a3f1d08e737f295ab61ae81e3e80fd26b14ca7e809d321a2df037a8498f36fa230017f3db395cbeeac112a482550242310f69c9b40695c8bd467584e57d60
 ```
 
-### `dpkg` source package: `tzdata=2026c-0ubuntu0.26.04.1`
+### `dpkg` source package: `tzdata=2026e-0ubuntu0.26.04.1`
 
 Binary Packages:
 
-- `tzdata=2026c-0ubuntu0.26.04.1`
+- `tzdata=2026e-0ubuntu0.26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1733,11 +1742,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz 189872 SHA512:21685b2bcc0620c6743ec618b1367162dc726a0a36157db4e57145ab3be85187f52868a1936c6150e0bef4beaf50e2703d3250aa61089b114e02556eebc056fe
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.dsc' tzdata_2026c-0ubuntu0.26.04.1.dsc 2712 SHA512:635f4cf83acfb7d30c5f356587d9cfe5465619c760e486f9a55a5a394d750d53ffe9195fad62063fc3c7d2565bf21f7d52e1eb42c23fe463c2cabab91255169d
+$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz 192020 SHA512:40a96656a40567f064778395e8f03992a90db914a31a5a6ab2b8f93eee5c67cc0aabe466cc2fd06e73bb35ef62d40a9998587d9c22496ebb767f3edf1ca72600
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.dsc' tzdata_2026e-0ubuntu0.26.04.1.dsc 2712 SHA512:8aa848ce18914310f4e4643c6fdad9e5605da4d5c1a32be8714d71961fcf5fe002426a4e5f9aac69b1c3eab2d5e71351d0c4dfae5183c51ce29b287d23e38c44
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
