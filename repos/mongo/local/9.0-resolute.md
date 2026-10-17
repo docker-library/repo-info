@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d10bac793ee89d117c82397d5b48e1145cd737815506e5898396988229adc21`
-- Created: `2026-10-14T17:10:07.321546752Z`
-- Virtual Size: ~ 1.12 Gb  
+- Image ID: `sha256:fe6dd87698f3b344925407cfc3a6b26dee20265c7a41288620c1aeb1e74ad117`
+- Created: `2026-10-17T00:32:45.921431577Z`
+- Virtual Size: ~ 1.11 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
+  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
