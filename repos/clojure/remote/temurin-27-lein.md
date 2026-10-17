@@ -1,7 +1,7 @@
 ## `clojure:temurin-27-lein`
 
 ```console
-$ docker pull clojure@sha256:3baae5d78280b8d14b648c702d6106db727fcd760d0d3da854c8880b472150ad
+$ docker pull clojure@sha256:1e002d44702cb723ed4ee34040268436be8d07816f51578d4c6ebb8c785a0604
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -204,7 +204,7 @@ $ docker pull clojure@sha256:1cd95f9337ecfa485667ceabbe41a85557968c8e3cd6cb7eb8d
 ### `clojure:temurin-27-lein` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:1ae4cbd344de97f98acbda8a5bde5e8d3c34cbd44f9409eb743118df843dfa79
+$ docker pull clojure@sha256:c3f0063a7931fe968a3c4ff05ffe1f5069ec9672cef0b4746fa272ba40d129f9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -274,23 +274,23 @@ CMD ["repl"]
 ### `clojure:temurin-27-lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:7779ee481e7178d3f8143379685a02de0efaf0f4e3b83ee02bef217b5b68e2c4
+$ docker pull clojure@sha256:648d1261b9e6204fbf9a42bcf597c91c7186432a9f4e8d7ec8f7fbe1488ab5d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.3 MB (4257819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7251c9b7a53be9fe914426ce6ea7573ba90e9195e03c66c2f2f987c960e22465`
+-	Image ID: `sha256:5f4da6ebfc51cbfdcfe1c12187ec6f0997ff11b03246251b53128a703730133f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fc06a7737052d8cfd4be6ace2dc938757d72f01b63abef413f2dba70d9d8d18`  
-		Last Modified: Mon, 12 Oct 2026 18:22:18 GMT  
+	-	`sha256:898e0c5832855c1f3fc0c4c8016bf55195dae841dad50eaab477ad1d580edaf5`  
+		Last Modified: Sat, 17 Oct 2026 06:52:46 GMT  
 		Size: 4.2 MB (4239382 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a825a358ef296f5bbd7f3dea46e71bbdd9f9c13d45ef90114c2822a8208fbe32`  
-		Last Modified: Mon, 12 Oct 2026 18:22:17 GMT  
+	-	`sha256:5e76612995de64dcfc883b83a7180143603cfe58c457d8ab0666a1c0c79b4836`  
+		Last Modified: Sat, 17 Oct 2026 06:52:46 GMT  
 		Size: 18.4 KB (18437 bytes)  
 		MIME: application/vnd.in-toto+json
