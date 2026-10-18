@@ -804,9 +804,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git=1:2.43.0-1ubuntu7.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA256:5446603e73d911781d259e565750dcd277a42836c8e392cac91cf137aa9b76ec
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.3.debian.tar.xz' git_2.43.0-1ubuntu7.3.debian.tar.xz 795448 SHA256:5bb363b59fda93816ec9ef34476e720b4f66f4b9947866bfaf414964be7dd4a7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.3.dsc' git_2.43.0-1ubuntu7.3.dsc 2972 SHA256:1e3e5b83bf41318cc957a9e471ed82f8ca4d6befe91b008699959072c97430f4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0.orig.tar.xz' git_2.43.0.orig.tar.xz 7382996 SHA512:d0c1694ae23ff7d523e617b98d7c9a9753a2ee58f92c21b67a192d1c57398a62ff9c1a34558ae31af8dc8d95122c219f39f654e99a3b4e7cfc3dd07be9e13203
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.3.debian.tar.xz' git_2.43.0-1ubuntu7.3.debian.tar.xz 795448 SHA512:b02a6c69c994ef229c1c75a4b09bbf0b95f89d3274dc9750c9e0fd5effb1e1b6376d5aa7cc88710e9aec47ee1475d0c251a83386bfb0e3f4f54b2c5c516e7b30
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.3.dsc' git_2.43.0-1ubuntu7.3.dsc 2972 SHA512:dd6d41c0bbe04243367bf9198b1883826573159c89262e0bb68500710b6ea3aa171a33d83560f8b60bd14fb2caa834c831e449db80ca59085d9c6f0360154cd3
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
