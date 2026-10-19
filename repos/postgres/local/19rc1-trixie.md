@@ -1,10 +1,10 @@
-# `postgres:19beta4`
+# `postgres:19rc1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d90c42d136f7ccafee6204871aac55d98f10d94f83900441d5af2003d0b0ae4a`
-- Created: `2026-10-06T01:32:33.353850854Z`
-- Virtual Size: ~ 460.12 Mb  
+- Image ID: `sha256:0aa85fd014b541ca34a386563c0e38f6d8e1cd26d91e27ab218ce7d36c4c7181`
+- Created: `2026-10-16T20:27:05.512587416Z`
+- Virtual Size: ~ 461.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=19`
-  - `PG_VERSION=19~beta4-1.pgdg13+1`
+  - `PG_VERSION=19~rc1-1.pgdg13+1`
   - `PGDATA=/var/lib/postgresql/19/docker`

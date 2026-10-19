@@ -1,10 +1,10 @@
-# `postgres:19beta4-alpine3.24`
+# `postgres:19rc1-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d484eb7a8ae2cd37b3a1516eb553c40378f75a451a00dfae451e9771ac5f1da`
-- Created: `2026-09-24T21:06:48.485989671Z`
-- Virtual Size: ~ 305.9 Mb  
+- Image ID: `sha256:7c562bd25cd02d3043399c65fb079d097c6bf41c5f423841c60cdf2882953da1`
+- Created: `2026-10-16T20:29:19.525465777Z`
+- Virtual Size: ~ 312.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=19`
-  - `PG_VERSION=19beta4`
-  - `PG_SHA256=83157ee9c599d03b2f7a3d73ef3a56ec24e0e79cc2b3501a64d1364f56398c86`
+  - `PG_VERSION=19rc1`
+  - `PG_SHA256=af105fc8e960fc836a09fc2cd7f582b49fd17675d9d36631abe3a565bfd7d701`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/19/docker`
 
@@ -347,16 +347,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -449,16 +449,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.14-r0 description:
+libldap-2.6.15-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.14-r0 webpage:
+libldap-2.6.15-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.14-r0 installed size:
+libldap-2.6.15-r0 installed size:
 365 KiB
 
-libldap-2.6.14-r0 license:
+libldap-2.6.15-r0 license:
 OLDAP-2.8
 
 ```
@@ -517,16 +517,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -738,16 +738,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -823,16 +823,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
@@ -857,16 +857,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
