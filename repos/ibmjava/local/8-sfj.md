@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60991121c71b4c3118efab6fb6e13986df99c0f81634bf52e95f7de1cf3f5bd5`
-- Created: `2026-10-02T01:29:11.49888217Z`
+- Image ID: `sha256:f9d21e5ba23406e3522463bd3a235bbdf7a4a73454003c94c457667ce79c3af1`
+- Created: `2026-10-17T00:30:04.48433445Z`
 - Virtual Size: ~ 190.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1190,30 +1190,14 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.29`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.29`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.30`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.30`
 - `openssl=3.0.2-0ubuntu1.30`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
