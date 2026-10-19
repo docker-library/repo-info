@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8df6c74f650ad385efe2e20103eca9b0ad50690fb3c63d49fa00762412bbf55`
-- Created: `2026-09-24T22:24:07.239071539Z`
-- Virtual Size: ~ 78.09 Mb  
+- Image ID: `sha256:cee13550f97b8a595506e8e4ca74263ba44924248779a4ba4f942e197652acff`
+- Created: `2026-10-02T10:21:06.943369844Z`
+- Virtual Size: ~ 78.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1147,11 +1147,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.29`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.30`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.29`
+- `libssl3:amd64=3.0.2-0ubuntu1.30`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
@@ -1160,9 +1160,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.30
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.30.debian.tar.xz' openssl_3.0.2-0ubuntu1.30.debian.tar.xz 319128 SHA512:7378cba6fbc01e7db88e112e32939e18a1aaa304cd16d36fe0459fc335255416e13bbc5b9967f4149ec8374bc7a51edfdb6baebc3aaa948ce8464f4dc58c1097
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.30.dsc' openssl_3.0.2-0ubuntu1.30.dsc 2486 SHA512:cfd5b3c7e98c491a8311f0edd025297ae75b2d9c7182b697264dc89e812445a432e4505b0696053b956eac16ebc8acb911923d78e450d74a346f75fa7cb6f8d6
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6ubuntu0.1`
 

@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e92c4fd8dfdf7276d56743a65002a91c9eb35dbe7af327e6c85bd204b646156`
-- Created: `2026-09-27T10:24:08.083210225Z`
-- Virtual Size: ~ 100.87 Mb  
+- Image ID: `sha256:b9e485d4a3bc6efa60fc5150444a82f3d96991fdcec7caa1d0f3e7a0b5859321`
+- Created: `2026-10-06T21:23:49.230209274Z`
+- Virtual Size: ~ 101.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
+  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1060,12 +1060,12 @@ $ apt-get source -qq --print-uris ncurses=6.6+20251231-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.6%2b20251231-1.debian.tar.xz' ncurses_6.6+20251231-1.debian.tar.xz 50852 SHA256:fd4a1fd7113e034175310bda8f4589854a0f66fe70482a6bd553de73d773303c
 ```
 
-### `dpkg` source package: `openssl=3.5.5-1ubuntu3.5`
+### `dpkg` source package: `openssl=3.5.5-1ubuntu3.7`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1ubuntu3.5`
-- `openssl-provider-legacy=3.5.5-1ubuntu3.5`
+- `libssl3t64:amd64=3.5.5-1ubuntu3.7`
+- `openssl-provider-legacy=3.5.5-1ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1074,9 +1074,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.5.5-1ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA512:7cf0eb91bac175f7fe0adcafef457790d43fe7f98e2d4bef681c2fd5ca365e1fa5b562c645a60ab602365adedf9d91c074624eea66d3d7e155639fc50d5861ec
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA512:82645f4fb427467b1e52f096ef6c6ccbdaa5aefcd28c8d3149a92f7c7711d0936e1e097f4168db6196809c19f83c1b85068d327cc1f0c5ad9f33d9d3686003d7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.debian.tar.xz' openssl_3.5.5-1ubuntu3.7.debian.tar.xz 194720 SHA512:c8c6d9131240cadab289b494baed0a8683dc51625e232931088434af38b1acb6c97e437a1741f53fc821784834a2bacef5fd8b1c347d4c0283e65e9eec78460e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.5.5-1ubuntu3.7.dsc' openssl_3.5.5-1ubuntu3.7.dsc 2916 SHA512:1f318111347b6e2ff701e8b9f7b742d31d6c261b7913a76e553ef6a3982d13d469811b594e299b772559231c32e331a77f4bcf78420564b4e1018c2e5f618651
+```
 
 ### `dpkg` source package: `pam=1.7.0-5ubuntu3.2`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69f919497cada9a8611f3de61df902d9f94bf20f84552ef5bd93125c38608ef9`
-- Created: `2026-09-18T21:20:38.103397332Z`
+- Image ID: `sha256:6277ab668b2ad3c3ab851d370faa1690d324b30db29d342527f61fed28f20f36`
+- Created: `2026-10-02T08:10:55.064306818Z`
 - Virtual Size: ~ 78.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -83,12 +83,12 @@ $ apt-get source -qq --print-uris attr=1:2.5.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc' attr_2.5.2-1ubuntu0.1.dsc 2592 SHA512:97cbe8f3d60d4760fbf6e1813d0a8da07357368bd8377f19fa8b808e6fad761adde5b27c2108f5a7c34eaf13eef09682cd3cb2534e1e8620dad9f629bfe2a9fb
 ```
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
+### `dpkg` source package: `audit=1:3.1.2-2.1ubuntu0.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1.1`
-- `libaudit1:amd64=1:3.1.2-2.1build1.1`
+- `libaudit-common=1:3.1.2-2.1ubuntu0.1`
+- `libaudit1:amd64=1:3.1.2-2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -96,9 +96,14 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris audit=1:3.1.2-2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.debian.tar.xz' audit_3.1.2-2.1ubuntu0.1.debian.tar.xz 19524 SHA512:1c0f7246a1ce1916f801df70de17bd7df99313476cf5afdbce1859287874fc8b5245ad117848a28f6942e12a03360b51b4d242bb8243501455994c8449b86007
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.dsc' audit_3.1.2-2.1ubuntu0.1.dsc 2902 SHA512:35e6be715483be88c4d36fb7db287948f25da0737abf87036036d18552eff4b69b4ce18962fbd43f062965aba1a1be4fd20ff4a59249fc5803790b321386bc4b
+```
 
 ### `dpkg` source package: `base-files=13ubuntu10.5`
 
@@ -1180,11 +1185,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.15`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.16`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.15`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1193,9 +1198,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.debian.tar.xz' openssl_3.0.13-0ubuntu3.16.debian.tar.xz 223332 SHA512:55f136d2ddff466a14bcbd09cf6c9d6f6a847a5d78bcfadb2b6eaeee19398d14f7a8e6a9a82f3ed10ece70baab0933c0ff155b179294a549f013157e62b91d56
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.16.dsc' openssl_3.0.13-0ubuntu3.16.dsc 2516 SHA512:713ae161099b664e5396b95f25ab2d33784370bfcb47f9c28402b51fbe932bcde7c695630ad9c8c8d1515448e8b6ed023beeffa7425132ee70c2491dd86609f2
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.2`
 
