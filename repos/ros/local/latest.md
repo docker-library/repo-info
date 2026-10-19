@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bec94f16b7711f3e2d9f3b0bc641a3515190c0377ce50ef249fd81f19be415d1`
-- Created: `2026-10-02T02:31:01.398340115Z`
-- Virtual Size: ~ 1.01 Gb  
+- Image ID: `sha256:f406a9c90c1bdee653419a53b232fad91fc817b529342bdbd06ba8a3ab37cf27`
+- Created: `2026-10-17T01:32:36.998219299Z`
+- Virtual Size: ~ 1 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LC_ALL=C.UTF-8`
   - `ROS_DISTRO=lyrical`
 - Labels:
-  - `org.opencontainers.image.created=2026-09-27T10:25:52.887617+00:00`
+  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -544,13 +544,13 @@ $ apt-get source -qq --print-uris cppcheck=2.19.0-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_2.19.0-3.debian.tar.xz' cppcheck_2.19.0-3.debian.tar.xz 12448 SHA256:4a2bf771c3693fba518082beea44ba970951e72bd35cd4a2aa485bf4258a643f
 ```
 
-### `dpkg` source package: `curl=8.18.0-1ubuntu2.7`
+### `dpkg` source package: `curl=8.18.0-1ubuntu2.8`
 
 Binary Packages:
 
-- `curl=8.18.0-1ubuntu2.7`
-- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.7`
-- `libcurl4t64:amd64=8.18.0-1ubuntu2.7`
+- `curl=8.18.0-1ubuntu2.8`
+- `libcurl3t64-gnutls:amd64=8.18.0-1ubuntu2.8`
+- `libcurl4t64:amd64=8.18.0-1ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -569,11 +569,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.debian.tar.xz' curl_8.18.0-1ubuntu2.7.debian.tar.xz 97116 SHA512:c4314027cdbf519515942c214c6505033616c3d627792645d1d9745c8bd0964bed07f56080b0cb1fc89ae590db1df468b9a53c68fffac3d9261e34bc24aa3a18
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.7.dsc' curl_8.18.0-1ubuntu2.7.dsc 3308 SHA512:3b5de2c0329b287de4ea00e63372c69a9ac483951c40dfd9a9665e6f54f95d258bfa5921d090fbbc02904cddec2516e07557bd0683d43b41213b05a6343f458b
+$ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.8
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.debian.tar.xz' curl_8.18.0-1ubuntu2.8.debian.tar.xz 112048 SHA512:5aad657d277992a5f5a8c51858da0d5cb03b14650747e93dfebcb490c70c84c4e8e96864383a6f24cb5b946d1c73c60580cd7384d3b39459f17563390cb66334
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.dsc' curl_8.18.0-1ubuntu2.8.dsc 3270 SHA512:6211ab001fc394e7903b0932fe00916e2ffbf802f1df9c94378d4b819b702ed04d24a97b02aab1fe6b22a18ae81851e41ce60e3c85a34aa1f5c5156587c289f8
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
@@ -1178,11 +1178,11 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.37-8build1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-8build1.dsc' fonts-dejavu_2.37-8build1.dsc 2525 SHA256:f092af264087c8c3598f8ff4fc6548d883e49cfbf4854ac33a4850eb80f99aa8
 ```
 
-### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.1`
+### `dpkg` source package: `freetype=2.14.2+dfsg-1ubuntu0.2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.1`
+- `libfreetype6:amd64=2.14.2+dfsg-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -1201,9 +1201,18 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `Public-Domain`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.14.2+dfsg-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz 347364 SHA512:efef4187b3d9cc747daad26cef6700051388435480c60e96e371eb04be3baae1e09ac932183c3a72b7bb4db1889d2bda89a70bfb058193c73bc5a602e53a3553
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:569d05266c430b7fb361a5c74198e0047f44ba24fd723d13e89de8974a6ce3fc5837bbd551e2e404926e14da5db68bd50011c6fa6fa01d92460bd3eeaacdc0f2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz 2176140 SHA512:f2794dee78a00f91ea4241722deff64e03e7c42cbd26073ed0d7a6e0ecca14c5f87cb1dbd520ccc94311a6b0f510b4462eee3f8765e8d77841176e78d8c45837
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.14.2+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:9a42b83c2237cd04e5cea7e5389078a985d6e22f48c030d225c32b5da9230b0c1b8ae6dd213bef4ac572fec74c5d05b9acfc011c199f0db5995293800575514a
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg.orig.tar.xz' freetype_2.14.2+dfsg.orig.tar.xz 2246044 SHA512:fa16e901edee4b578cf920eb357ec5f8aea38fe1152e7ad8562201e7edde4d763a457dfdcf69bb1b5792c0b1ba0253e6dea2b8928141e77ab53e366be1b9af65
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.debian.tar.xz' freetype_2.14.2+dfsg-1ubuntu0.2.debian.tar.xz 45672 SHA512:4e6e6839d7076a28bcc53187ed393c03efe7906ee68bf6daf0ee1044a5d25facea4a8ea8bfbf2854e9277706781f93e3c62c31bf67be89547d1e40fc57e23537
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.14.2%2bdfsg-1ubuntu0.2.dsc' freetype_2.14.2+dfsg-1ubuntu0.2.dsc 4105 SHA512:acb1b8995a0f6f107ebf23881205afe38c867caba0982af88456de3c4a459963e841d993bb2740300422cd1a5c1395540ed8b1f24be96658aa24139e1e35a42b
+```
 
 ### `dpkg` source package: `fribidi=1.0.16-5`
 
@@ -2013,11 +2022,11 @@ $ apt-get source -qq --print-uris lerc=4.0.0+ds-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lerc/lerc_4.0.0%2bds-5ubuntu2.dsc' lerc_4.0.0+ds-5ubuntu2.dsc 2739 SHA256:c0263116dc87739c8070254036121f31d6494eff2494b1926ef0ef887965adc1
 ```
 
-### `dpkg` source package: `libarchive=3.8.5-1ubuntu2.2`
+### `dpkg` source package: `libarchive=3.8.5-1ubuntu2.3`
 
 Binary Packages:
 
-- `libarchive13t64:amd64=3.8.5-1ubuntu2.2`
+- `libarchive13t64:amd64=3.8.5-1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 
@@ -2032,9 +2041,15 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.8.5-1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz' libarchive_3.8.5.orig.tar.xz 6009124 SHA512:b050ca8488143503bdec38ffcab7a5010af61f1b93c1207a3fa006d72d643b84aa8c1ab267e890eb39966ccaedd6e18db8fe5b02f2789bbd1b318a3c4cf138f3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5.orig.tar.xz.asc' libarchive_3.8.5.orig.tar.xz.asc 833 SHA512:80b155e86d9f93efd3f2e65655c1fe66fb0b9b937888fd5b24e65b26418f01ee6fbd66c649079b8591c15ae593980ece3de49778bb1215eaecd9af0f2823fb71
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.3.debian.tar.xz' libarchive_3.8.5-1ubuntu2.3.debian.tar.xz 33796 SHA512:fbf67de255f140ed1c6747c0ae81dba2407090b0fe76ec309633852b98f5c443edf3937ac02fc3c932d3a6a3d4057923301d41659b34cc20cc6e8226aa784a09
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.8.5-1ubuntu2.3.dsc' libarchive_3.8.5-1ubuntu2.3.dsc 2812 SHA512:85c0487ace72e29c7cc39f179635c865394932e07391e1eedc16f8124eb556cabc0140234dff4dff6252232a2c9e9b496b6c0394e77e589da748d02328cd8215
+```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
@@ -2481,11 +2496,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build4
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build4.dsc' libmd_1.1.0-2build4.dsc 2383 SHA256:8c735703ff1b9699379c6cf538d07199d6f532dce3bcab4a1bde0ae5f7e25a21
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.57-1`
+### `dpkg` source package: `libpng1.6=1.6.57-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.57-1`
+- `libpng16-16t64:amd64=1.6.57-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2501,10 +2516,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.57-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.dsc' libpng1.6_1.6.57-1.dsc 2306 SHA512:46588883287894dbe0c5ba77bc500df0ba8d86f14a48d6253850d4e315396aec0f9165ec8d2ee6d491fb47a753a1fd1bd3b84bd84c33bf465cdc978037b2a9c4
+$ apt-get source -qq --print-uris libpng1.6=1.6.57-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57.orig.tar.gz' libpng1.6_1.6.57.orig.tar.gz 1591776 SHA512:cd20c278b04ac6275cea495c66472782c175bf431eb28afd3f529d5913179ac8cbf3a306e67fe9dc3ae09c87ad67b5d937b83f427e15d8364f513d95ff8b4649
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1.debian.tar.xz' libpng1.6_1.6.57-1.debian.tar.xz 33420 SHA512:c9259e36eb22c973e8a067c87d5a8d01f520ea629c158679c8666e53c79eeae2ac3769b4bdd039cdf48c3ad37effdbce0f7a76821c55dc7bacea5587d7a76ce4
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz' libpng1.6_1.6.57-1ubuntu0.1.debian.tar.xz 34984 SHA512:8e7f0bff9fb7f8daae9c4bffd2e3fca3fc03c12f832eb0a9f66be61bd5b305d3b3a8566388814af78c7562c78b4a56f709dd02cf87d590b896d2aa5eeb708db2
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.57-1ubuntu0.1.dsc' libpng1.6_1.6.57-1ubuntu0.1.dsc 2425 SHA512:f5e48826567c29abd2b7b1d7080fc5ecab77610b354a05ec9a1a896604ded4302e8852d4e1a83ea7eb00a66aee1e8a82ec9f1f652bea7e54e054b742d9958a34
 ```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build2`
@@ -2830,12 +2845,12 @@ $ apt-get source -qq --print-uris libwebp=1.5.0-0.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.5.0-0.1build1.dsc' libwebp_1.5.0-0.1build1.dsc 2889 SHA256:e2022160126aec63ee4c30a1616bcd8906d29f8f21d96c1e12ef3edfa84a9abe
 ```
 
-### `dpkg` source package: `libx11=2:1.8.13-1`
+### `dpkg` source package: `libx11=2:1.8.13-1ubuntu0.1`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.8.13-1`
-- `libx11-data=2:1.8.13-1`
+- `libx11-6:amd64=2:1.8.13-1ubuntu0.1`
+- `libx11-data=2:1.8.13-1ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2844,11 +2859,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.8.13-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1.dsc' libx11_1.8.13-1.dsc 2490 SHA256:59a024bc689876cafcdd6532e074ae1daa7b7198e102187685224b0793696f56
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz' libx11_1.8.13.orig.tar.gz 3217264 SHA256:acf0e7cd7541110e6330ecb539441a2d53061f386ec7be6906dfde0de2598470
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz.asc' libx11_1.8.13.orig.tar.gz.asc 833 SHA256:391221d291778f72b600104fb7907e8fb0ee61813ca5ab443bf0a0dcc3a1ce65
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1.diff.gz' libx11_1.8.13-1.diff.gz 76915 SHA256:571b7234db455a649a8ffe6599eaebb8f31e47528f21ec3caa2e255da75dd699
+$ apt-get source -qq --print-uris libx11=2:1.8.13-1ubuntu0.1
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz' libx11_1.8.13.orig.tar.gz 3217264 SHA512:3dbcb261bbf56e8613b61e84af5d6924bf804a5fb90fe84f3bde46e4bec3b0c8c496d9e2a9b6717511fd37544fe84350092a744aa98640612f653640693d791e
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz.asc' libx11_1.8.13.orig.tar.gz.asc 833 SHA512:172a116ff7070e1b9729f1f76b2d8dda460885c307f9a410233f49c12abbc59ad374a0b34e2c56b34a62ecb38143c1369e5ac39acd5ed3c8218840522356e4f7
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.diff.gz' libx11_1.8.13-1ubuntu0.1.diff.gz 81337 SHA512:d97da1a32927d91c8faf23750a8ebca7bc30f02a6f2094fa73b2394dc800403fe39abd5133fc9b88cbf3a79e32ca8445f9f422b3bad7562fa3cc8146c36f8df2
+'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.dsc' libx11_1.8.13-1ubuntu0.1.dsc 2297 SHA512:2fa4875660800b6a029f8f89e84272b302656e191856654a9ea9333db0d2f9444063116f150ed3044b4b5e0afb006bae5914259fbc921d0dba6a22af2223354a
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.11-1build2`
@@ -2951,21 +2966,26 @@ $ apt-get source -qq --print-uris libxext=2:1.3.4-1build3
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxext/libxext_1.3.4-1build3.dsc' libxext_1.3.4-1build3.dsc 2221 SHA256:9384eeeebb3b39b130f98b75776b9cea69815f2476a032f4c3aa9ef79e9034b7
 ```
 
-### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.2`
+### `dpkg` source package: `libxml2=2.15.2+dfsg-0.1ubuntu0.3`
 
 Binary Packages:
 
-- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.2`
-- `libxml2-utils=2.15.2+dfsg-0.1ubuntu0.2`
+- `libxml2-16:amd64=2.15.2+dfsg-0.1ubuntu0.3`
+- `libxml2-utils=2.15.2+dfsg-0.1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2-16/copyright`, `/usr/share/doc/libxml2-utils/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.15.2+dfsg-0.1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg.orig.tar.xz' libxml2_2.15.2+dfsg.orig.tar.xz 2154608 SHA512:d7f79a6c9435477a6b8b85e7eab8d5c69b253e2a7fbec073418ecbbd721a2feb4ebf8e04bd21ccde499d3620238fb343789cacaa6b175d9ca64a031ae07be933
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.3.debian.tar.xz' libxml2_2.15.2+dfsg-0.1ubuntu0.3.debian.tar.xz 41372 SHA512:813aa6b9bea7b74bea273382c9eb5f814ee644e2169dc178776b956e191ddf0fdea03614296a4fd712e0fc091436b48c05736c175452222d09073f623d6a941b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.15.2%2bdfsg-0.1ubuntu0.3.dsc' libxml2_2.15.2+dfsg-0.1ubuntu0.3.dsc 3266 SHA512:6e8f005ef288ed1221b205bfd6337b11a8a4e925b7090318b548c0484a99ed4e9fc7bf341fcb51af525f4a32cd51ad2d7abf18b972e655f3e62343900a1f14ef
+```
 
 ### `dpkg` source package: `libxpm=1:3.5.17-1ubuntu0.26.04.2`
 
@@ -3157,11 +3177,11 @@ $ apt-get source -qq --print-uris ltt-control=2.14.1-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/l/ltt-control/ltt-control_2.14.1-1build1.dsc' ltt-control_2.14.1-1build1.dsc 2766 SHA256:22d31c720d3e4c0c97074298832259d924cf23f018635184c759c9cfb5e374ed
 ```
 
-### `dpkg` source package: `lxml=6.0.2-1build1`
+### `dpkg` source package: `lxml=6.0.2-1ubuntu0.1`
 
 Binary Packages:
 
-- `python3-lxml:amd64=6.0.2-1build1`
+- `python3-lxml:amd64=6.0.2-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 
@@ -3172,10 +3192,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lxml=6.0.2-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2.orig.tar.gz' lxml_6.0.2.orig.tar.gz 4073426 SHA256:cd79f3367bd74b317dda655dc8fcfa304d9eb6e4fb06b7168c5cf27f96e0cd62
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2-1build1.debian.tar.xz' lxml_6.0.2-1build1.debian.tar.xz 8660 SHA256:cf022619cfadda335985045a24cae41c6f0623b60176afb2d83f5a9aee615da7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2-1build1.dsc' lxml_6.0.2-1build1.dsc 1930 SHA256:f212a6b71b855631125860706b71d79fa4d323e6873d559687a5f68dda9b59c4
+$ apt-get source -qq --print-uris lxml=6.0.2-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2.orig.tar.gz' lxml_6.0.2.orig.tar.gz 4073426 SHA512:2aaa37a4504cd23d2022cbe7c2d99173aa0e3d6ec82a95e2429369ef3ef787db185440b8581db975cb81287c3ab533dd2e7cb447cefe0d7e628082f51c5b5254
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2-1ubuntu0.1.debian.tar.xz' lxml_6.0.2-1ubuntu0.1.debian.tar.xz 11024 SHA512:1ce65d792bc349a6d80b3753284f99309e257222a05d8f38bff46cd62f7bc961dd4264f23f965be55ced7a8067de302a7e5a3e589b99b426717a67ef2f41738d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_6.0.2-1ubuntu0.1.dsc' lxml_6.0.2-1ubuntu0.1.dsc 2061 SHA512:be924e8bb891b8dfcff28a9356ffb554a3aff13ff6dbd0426d66a8825d76c635a617bbd0e50d97910dd56ff23b10d383e62c5b6c89367ebb71a448f9e25e8eab
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
@@ -6010,11 +6030,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-lifecycle-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-lz4-cmake-module=0.33.3-1resolute.20260728.205656`
+### `dpkg` source package: `ros-lyrical-lz4-cmake-module=0.33.4-1resolute.20260919.185746`
 
 Binary Packages:
 
-- `ros-lyrical-lz4-cmake-module=0.33.3-1resolute.20260728.205656`
+- `ros-lyrical-lz4-cmake-module=0.33.4-1resolute.20260919.185746`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-lz4-cmake-module/copyright`)
 
@@ -6024,11 +6044,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-lz4-cmake-module/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-mcap-vendor=0.33.3-1resolute.20260728.210724`
+### `dpkg` source package: `ros-lyrical-mcap-vendor=0.33.4-1resolute.20260919.190559`
 
 Binary Packages:
 
-- `ros-lyrical-mcap-vendor=0.33.3-1resolute.20260728.210724`
+- `ros-lyrical-mcap-vendor=0.33.4-1resolute.20260919.190559`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-mcap-vendor/copyright`)
 
@@ -6431,11 +6451,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-robot-state-publisher/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros-base=0.13.0-3resolute.20260915.154859`
+### `dpkg` source package: `ros-lyrical-ros-base=0.13.0-3resolute.20260919.194435`
 
 Binary Packages:
 
-- `ros-lyrical-ros-base=0.13.0-3resolute.20260915.154859`
+- `ros-lyrical-ros-base=0.13.0-3resolute.20260919.194435`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros-base/copyright`)
 
@@ -6501,11 +6521,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-ros2bag=0.33.3-1resolute.20260915.110720`
+### `dpkg` source package: `ros-lyrical-ros2bag=0.33.4-1resolute.20260919.194003`
 
 Binary Packages:
 
-- `ros-lyrical-ros2bag=0.33.3-1resolute.20260915.110720`
+- `ros-lyrical-ros2bag=0.33.4-1resolute.20260919.194003`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2bag/copyright`)
 
@@ -6726,11 +6746,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260915.110400`
+### `dpkg` source package: `ros-lyrical-rosbag2-compression-zstd=0.33.4-1resolute.20260919.191823`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-compression-zstd=0.33.3-1resolute.20260915.110400`
+- `ros-lyrical-rosbag2-compression-zstd=0.33.4-1resolute.20260919.191823`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression-zstd/copyright`)
 
@@ -6740,11 +6760,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression-zstd/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260915.090557`
+### `dpkg` source package: `ros-lyrical-rosbag2-compression=0.33.4-1resolute.20260919.191353`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-compression=0.33.3-1resolute.20260915.090557`
+- `ros-lyrical-rosbag2-compression=0.33.4-1resolute.20260919.191353`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression/copyright`)
 
@@ -6754,11 +6774,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-compression/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260915.080852`
+### `dpkg` source package: `ros-lyrical-rosbag2-cpp=0.33.4-1resolute.20260919.191117`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-cpp=0.33.3-1resolute.20260915.080852`
+- `ros-lyrical-rosbag2-cpp=0.33.4-1resolute.20260919.191117`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-cpp/copyright`)
 
@@ -6768,11 +6788,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260915.050641`
+### `dpkg` source package: `ros-lyrical-rosbag2-interfaces=0.33.4-1resolute.20260919.185736`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-interfaces=0.33.3-1resolute.20260915.050641`
+- `ros-lyrical-rosbag2-interfaces=0.33.4-1resolute.20260919.185736`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-interfaces/copyright`)
 
@@ -6782,11 +6802,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-interfaces/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260915.092025`
+### `dpkg` source package: `ros-lyrical-rosbag2-py=0.33.4-1resolute.20260919.193253`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-py=0.33.3-1resolute.20260915.092025`
+- `ros-lyrical-rosbag2-py=0.33.4-1resolute.20260919.193253`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-py/copyright`)
 
@@ -6796,11 +6816,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260915.110336`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-default-plugins=0.33.4-1resolute.20260919.191340`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-default-plugins=0.33.3-1resolute.20260915.110336`
+- `ros-lyrical-rosbag2-storage-default-plugins=0.33.4-1resolute.20260919.191340`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-default-plugins/copyright`)
 
@@ -6810,11 +6830,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-default-plug
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260915.090607`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-mcap=0.33.4-1resolute.20260919.190758`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-mcap=0.33.3-1resolute.20260915.090607`
+- `ros-lyrical-rosbag2-storage-mcap=0.33.4-1resolute.20260919.190758`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-mcap/copyright`)
 
@@ -6824,11 +6844,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-mcap/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260915.090614`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage-sqlite3=0.33.4-1resolute.20260919.190505`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage-sqlite3=0.33.3-1resolute.20260915.090614`
+- `ros-lyrical-rosbag2-storage-sqlite3=0.33.4-1resolute.20260919.190505`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-sqlite3/copyright`)
 
@@ -6838,11 +6858,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage-sqlite3/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260915.080404`
+### `dpkg` source package: `ros-lyrical-rosbag2-storage=0.33.4-1resolute.20260919.185751`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-storage=0.33.3-1resolute.20260915.080404`
+- `ros-lyrical-rosbag2-storage=0.33.4-1resolute.20260919.185751`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage/copyright`)
 
@@ -6852,11 +6872,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-storage/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260915.091021`
+### `dpkg` source package: `ros-lyrical-rosbag2-transport=0.33.4-1resolute.20260919.191828`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2-transport=0.33.3-1resolute.20260915.091021`
+- `ros-lyrical-rosbag2-transport=0.33.4-1resolute.20260919.191828`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-transport/copyright`)
 
@@ -6866,11 +6886,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2-transport/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-rosbag2=0.33.3-1resolute.20260915.111344`
+### `dpkg` source package: `ros-lyrical-rosbag2=0.33.4-1resolute.20260919.194218`
 
 Binary Packages:
 
-- `ros-lyrical-rosbag2=0.33.3-1resolute.20260915.111344`
+- `ros-lyrical-rosbag2=0.33.4-1resolute.20260919.194218`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-rosbag2/copyright`)
 
@@ -7807,11 +7827,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-lyrical-yaml-cpp-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-lyrical-zstd-cmake-module=0.33.3-1resolute.20260728.210616`
+### `dpkg` source package: `ros-lyrical-zstd-cmake-module=0.33.4-1resolute.20260919.185809`
 
 Binary Packages:
 
-- `ros-lyrical-zstd-cmake-module=0.33.3-1resolute.20260728.210616`
+- `ros-lyrical-zstd-cmake-module=0.33.4-1resolute.20260919.185809`
 
 Licenses: (parsed from: `/usr/share/doc/ros-lyrical-zstd-cmake-module/copyright`)
 
@@ -8207,11 +8227,11 @@ $ apt-get source -qq --print-uris sudo-common=1.2ubuntu
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo-common/sudo-common_1.2ubuntu.dsc' sudo-common_1.2ubuntu.dsc 1566 SHA256:db86d809fb3e9824364d4fea473e896080a01539a8017b85f87a2705abac2cf3
 ```
 
-### `dpkg` source package: `sudo=1.9.17p2-1ubuntu3.1`
+### `dpkg` source package: `sudo=1.9.17p2-1ubuntu3.2`
 
 Binary Packages:
 
-- `sudo=1.9.17p2-1ubuntu3.1`
+- `sudo=1.9.17p2-1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 
@@ -8224,9 +8244,15 @@ Licenses: (parsed from: `/usr/share/doc/sudo/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.9.17p2-1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz' sudo_1.9.17p2.orig.tar.gz 5451682 SHA512:c8abd6ca56e54a081c9ef1e9f6579d1db5b93ff857e60d1f58d1f425d7dc23c31c58d40b7819780688f66dfdf87a1f3bbe0a78387b007e2beb1b0e546203ea93
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2.orig.tar.gz.asc' sudo_1.9.17p2.orig.tar.gz.asc 566 SHA512:7ca1949a7ffe0481d7c0f9215fdeae54fff34f0156f06c72a090515b1a97d052e63ce94cffe5a92ca23a723ddd0b0186fabc957cdc22120482c6f9f87d65a5f6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.2.debian.tar.xz' sudo_1.9.17p2-1ubuntu3.2.debian.tar.xz 65720 SHA512:7748b07992abae2888d048a17f0ee92871a3693228a48d0590b9a18a312ea7d209e78cf9b463e3b9fc7f87173446fa02a3e5ccf27ecd7432171ea104f0b3ba9f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.9.17p2-1ubuntu3.2.dsc' sudo_1.9.17p2-1ubuntu3.2.dsc 2735 SHA512:abe5c96b53477b7765061ae27072b7719215a5bfcd527158490e9208f86c4638bf17b560c0c6881f4d637d6ac4c5b6de8fb6ebe70f0106aac7d39a081b59f9ce
+```
 
 ### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
 
@@ -8250,9 +8276,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=259.5-0ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.debian.tar.xz' systemd_259.5-0ubuntu3.4.debian.tar.xz 267032 SHA512:8b446ab051d47ae14e3633bfe388fd309dc96c438db5ac568ac7c68da4cd258eeaeaf231c41f9b5b55ce16445f7164e47887cbe53755af470415cbff2196e358
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.dsc' systemd_259.5-0ubuntu3.4.dsc 8779 SHA512:92ab82be5174bb0b79bb2c25cfb400b23c817edf662c4c34f6e7b68bef308b6815ffb86d21439ccf27a83eec19854b90537119628ecb3ebafa205759cd9927ea
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.debian.tar.xz' systemd_259.5-0ubuntu3.4.debian.tar.xz 267032 SHA512:8b446ab051d47ae14e3633bfe388fd309dc96c438db5ac568ac7c68da4cd258eeaeaf231c41f9b5b55ce16445f7164e47887cbe53755af470415cbff2196e358
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.dsc' systemd_259.5-0ubuntu3.4.dsc 8779 SHA512:92ab82be5174bb0b79bb2c25cfb400b23c817edf662c4c34f6e7b68bef308b6815ffb86d21439ccf27a83eec19854b90537119628ecb3ebafa205759cd9927ea
 ```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
@@ -8348,11 +8374,11 @@ $ apt-get source -qq --print-uris tinyxml2=11.0.0+dfsg-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_11.0.0%2bdfsg-1build1.dsc' tinyxml2_11.0.0+dfsg-1build1.dsc 2021 SHA256:ef20aeca3e2efc4082364238d1cdb2d419fcd9792365a44c8b90a5f9a37691d1
 ```
 
-### `dpkg` source package: `tzdata=2026c-0ubuntu0.26.04.1`
+### `dpkg` source package: `tzdata=2026e-0ubuntu0.26.04.1`
 
 Binary Packages:
 
-- `tzdata=2026c-0ubuntu0.26.04.1`
+- `tzdata=2026e-0ubuntu0.26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -8362,11 +8388,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0ubuntu0.26.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA512:e0b4b7044b66fbc27bc21d13d18063abcdf78ab58d5ba5fd64bd1a88d86e9d495f45add4d8e65bb6c40249f9c94ca29b72c8ebba8d0e4c468f2965ac77932ef0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA512:e1d44216608666bfb8a1855caacc9e6d30a1576f302c4db59faf8ec6aa2f7d5ae299c4c9b17b255b9612c30582358ca2a48f5fea82ab9b7d77d030e713c9010d
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026c-0ubuntu0.26.04.1.debian.tar.xz 189872 SHA512:21685b2bcc0620c6743ec618b1367162dc726a0a36157db4e57145ab3be85187f52868a1936c6150e0bef4beaf50e2703d3250aa61089b114e02556eebc056fe
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026c-0ubuntu0.26.04.1.dsc' tzdata_2026c-0ubuntu0.26.04.1.dsc 2712 SHA512:635f4cf83acfb7d30c5f356587d9cfe5465619c760e486f9a55a5a394d750d53ffe9195fad62063fc3c7d2565bf21f7d52e1eb42c23fe463c2cabab91255169d
+$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz 192020 SHA512:40a96656a40567f064778395e8f03992a90db914a31a5a6ab2b8f93eee5c67cc0aabe466cc2fd06e73bb35ef62d40a9998587d9c22496ebb767f3edf1ca72600
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.dsc' tzdata_2026e-0ubuntu0.26.04.1.dsc 2712 SHA512:8aa848ce18914310f4e4643c6fdad9e5605da4d5c1a32be8714d71961fcf5fe002426a4e5f9aac69b1c3eab2d5e71351d0c4dfae5183c51ce29b287d23e38c44
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
