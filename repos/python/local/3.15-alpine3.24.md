@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53375c612ba9dc32df616fb4d564c535f4658391ec9e74fbe171c35b3307bee0`
-- Created: `2026-10-12T22:30:10.573194531Z`
-- Virtual Size: ~ 56.5 Mb  
+- Image ID: `sha256:c94b9cf3b01531c3a28f55ba23b2dfaaf9afc84175978539a45f86e442eba521`
+- Created: `2026-10-16T22:26:54.492700996Z`
+- Virtual Size: ~ 59.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -253,6 +253,23 @@ MIT
 
 ```
 
+### `apk` package: `libgcc`
+
+```console
+libgcc-15.2.0-r5 description:
+GNU C compiler runtime libraries
+
+libgcc-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libgcc-15.2.0-r5 installed size:
+169 KiB
+
+libgcc-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libncursesw`
 
 ```console
@@ -304,6 +321,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-15.2.0-r5 description:
+GNU C++ standard runtime library
+
+libstdc++-15.2.0-r5 webpage:
+https://gcc.gnu.org
+
+libstdc++-15.2.0-r5 installed size:
+2738 KiB
+
+libstdc++-15.2.0-r5 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libuuid`
 
 ```console
@@ -318,6 +352,23 @@ libuuid-2.42.3-r1 installed size:
 
 libuuid-2.42.3-r1 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `mpdecimal`
+
+```console
+mpdecimal-4.0.1-r0 description:
+complete implementation of the General Decimal Arithmetic Specification
+
+mpdecimal-4.0.1-r0 webpage:
+https://www.bytereef.org/mpdecimal/index.html
+
+mpdecimal-4.0.1-r0 installed size:
+191 KiB
+
+mpdecimal-4.0.1-r0 license:
+BSD-2-Clause
 
 ```
 
