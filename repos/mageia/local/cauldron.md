@@ -245,12 +245,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url iputils-20250605-1.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/iputils-20250605-1.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `kbd-2.10.0-1.mga11.x86_64`
 
@@ -292,12 +287,7 @@ Licenses (from `rpm --query`): BSD
 
 Licenses (from `rpm --query`): LGPLv3
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64assuan9-3.0.2-1.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libassuan-3.0.2-1.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64attr1-2.6.0-1.mga11.x86_64`
 
@@ -327,23 +317,13 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64brotlicommon1-1.2.0-1.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/brotli-1.2.0-1.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64brotlidec1-1.2.0-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64brotlidec1-1.2.0-1.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/brotli-1.2.0-1.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64bz2_1-1.0.8-8.mga11.x86_64`
 
@@ -391,23 +371,13 @@ Licenses (from `rpm --query`): BSD-like
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64daemon0-0.14-16.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libdaemon-0.14-16.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64db5.3-5.3.28-31.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64db5.3-5.3.28-31.mga10
-http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/db53-5.3.28-31.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64devmapper1.02-1.02.196-6.mga10.x86_64`
 
