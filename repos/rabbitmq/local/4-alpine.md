@@ -1,10 +1,10 @@
-# `rabbitmq:4.3.6-alpine`
+# `rabbitmq:4.4.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d89a00a30facfc2f9a485665b1f1846f8f5da3f85e60e95f83fc805d7e0e9fdd`
-- Created: `2026-10-14T20:30:26.313814711Z`
-- Virtual Size: ~ 164.48 Mb  
+- Image ID: `sha256:b6107d68bc4a4483571128341c91ae360d58787ef215552b6b638e436bdd9143`
+- Created: `2026-10-19T22:38:53.602569967Z`
+- Virtual Size: ~ 174.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.3.6`
+  - `RABBITMQ_VERSION=4.4.0`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -28,16 +28,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.7.2-r0 description:
+alpine-baselayout-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.7.2-r0 webpage:
+alpine-baselayout-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.7.2-r0 installed size:
+alpine-baselayout-3.7.2-r1 installed size:
 6552 B
 
-alpine-baselayout-3.7.2-r0 license:
+alpine-baselayout-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -45,16 +45,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.7.2-r0 description:
+alpine-baselayout-data-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.7.2-r0 webpage:
+alpine-baselayout-data-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.7.2-r0 installed size:
+alpine-baselayout-data-3.7.2-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.7.2-r0 license:
+alpine-baselayout-data-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -79,16 +79,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.6-r0 description:
+alpine-release-3.24.2-r0 description:
 Alpine release data
 
-alpine-release-3.23.6-r0 webpage:
+alpine-release-3.24.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.6-r0 installed size:
+alpine-release-3.24.2-r0 installed size:
 343 B
 
-alpine-release-3.23.6-r0 license:
+alpine-release-3.24.2-r0 license:
 MIT
 
 ```
@@ -113,16 +113,16 @@ GPL-2.0-only
 ### `apk` package: `bash`
 
 ```console
-bash-5.3.3-r1 description:
+bash-5.3.9-r1 description:
 The GNU Bourne Again shell
 
-bash-5.3.3-r1 webpage:
+bash-5.3.9-r1 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.3.3-r1 installed size:
+bash-5.3.9-r1 installed size:
 1344 KiB
 
-bash-5.3.3-r1 license:
+bash-5.3.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -130,16 +130,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r30 description:
+busybox-1.37.0-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r30 webpage:
+busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r30 installed size:
+busybox-1.37.0-r31 installed size:
 794 KiB
 
-busybox-1.37.0-r30 license:
+busybox-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -147,16 +147,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r30 description:
+busybox-binsh-1.37.0-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r30 webpage:
+busybox-binsh-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r30 installed size:
+busybox-binsh-1.37.0-r31 installed size:
 1 B
 
-busybox-binsh-1.37.0-r30 license:
+busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -215,16 +215,16 @@ Apache-2.0
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-15.2.0-r2 description:
+libgcc-15.2.0-r5 description:
 GNU C compiler runtime libraries
 
-libgcc-15.2.0-r2 webpage:
+libgcc-15.2.0-r5 webpage:
 https://gcc.gnu.org
 
-libgcc-15.2.0-r2 installed size:
+libgcc-15.2.0-r5 installed size:
 169 KiB
 
-libgcc-15.2.0-r2 license:
+libgcc-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -232,16 +232,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.24.1-r1 description:
+libintl-1.0-r0 description:
 GNU gettext runtime library
 
-libintl-0.24.1-r1 webpage:
+libintl-1.0-r0 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.24.1-r1 installed size:
+libintl-1.0-r0 installed size:
 133 KiB
 
-libintl-0.24.1-r1 license:
+libintl-1.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -249,16 +249,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.5_p20251123-r0 description:
+libncursesw-6.6_p20260516-r0 description:
 Console display library (libncursesw)
 
-libncursesw-6.5_p20251123-r0 webpage:
+libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.5_p20251123-r0 installed size:
+libncursesw-6.6_p20260516-r0 installed size:
 334 KiB
 
-libncursesw-6.5_p20251123-r0 license:
+libncursesw-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -266,16 +266,16 @@ X11
 ### `apk` package: `libproc2`
 
 ```console
-libproc2-4.0.5-r0 description:
+libproc2-4.0.6-r0 description:
 Library for monitoring system and processes
 
-libproc2-4.0.5-r0 webpage:
+libproc2-4.0.6-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc2-4.0.5-r0 installed size:
+libproc2-4.0.6-r0 installed size:
 147 KiB
 
-libproc2-4.0.5-r0 license:
+libproc2-4.0.6-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -300,16 +300,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-15.2.0-r2 description:
+libstdc++-15.2.0-r5 description:
 GNU C++ standard runtime library
 
-libstdc++-15.2.0-r2 webpage:
+libstdc++-15.2.0-r5 webpage:
 https://gcc.gnu.org
 
-libstdc++-15.2.0-r2 installed size:
+libstdc++-15.2.0-r5 installed size:
 2738 KiB
 
-libstdc++-15.2.0-r2 license:
+libstdc++-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -317,16 +317,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
-650 KiB
+musl-1.2.6-r2 installed size:
+654 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.6-r2 license:
 MIT
 
 ```
@@ -334,16 +334,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.6-r2 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -351,16 +351,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.5_p20251123-r0 description:
+ncurses-terminfo-base-6.6_p20260516-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.5_p20251123-r0 webpage:
+ncurses-terminfo-base-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.5_p20251123-r0 installed size:
-98 KiB
+ncurses-terminfo-base-6.6_p20260516-r0 installed size:
+100 KiB
 
-ncurses-terminfo-base-6.5_p20251123-r0 license:
+ncurses-terminfo-base-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -368,16 +368,16 @@ X11
 ### `apk` package: `procps-ng`
 
 ```console
-procps-ng-4.0.5-r0 description:
+procps-ng-4.0.6-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-ng-4.0.5-r0 webpage:
+procps-ng-4.0.6-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-ng-4.0.5-r0 installed size:
-599 KiB
+procps-ng-4.0.6-r0 installed size:
+595 KiB
 
-procps-ng-4.0.5-r0 license:
+procps-ng-4.0.6-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -385,16 +385,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `readline`
 
 ```console
-readline-8.3.1-r0 description:
+readline-8.3.3-r1 description:
 GNU readline library
 
-readline-8.3.1-r0 webpage:
+readline-8.3.3-r1 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
-readline-8.3.1-r0 installed size:
+readline-8.3.3-r1 installed size:
 292 KiB
 
-readline-8.3.1-r0 license:
+readline-8.3.3-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -402,16 +402,16 @@ GPL-3.0-or-later
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.8-r2 description:
+scanelf-1.3.9-r1 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.8-r2 webpage:
+scanelf-1.3.9-r1 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.8-r2 installed size:
+scanelf-1.3.9-r1 installed size:
 65 KiB
 
-scanelf-1.3.8-r2 license:
+scanelf-1.3.9-r1 license:
 GPL-2.0-only
 
 ```
@@ -419,16 +419,16 @@ GPL-2.0-only
 ### `apk` package: `skalibs-libs`
 
 ```console
-skalibs-libs-2.14.4.0-r0 description:
+skalibs-libs-2.15.0.0-r0 description:
 Set of general-purpose C programming libraries for skarnet.org software. (libraries)
 
-skalibs-libs-2.14.4.0-r0 webpage:
+skalibs-libs-2.15.0.0-r0 webpage:
 https://skarnet.org/software/skalibs/
 
-skalibs-libs-2.14.4.0-r0 installed size:
-191 KiB
+skalibs-libs-2.15.0.0-r0 installed size:
+207 KiB
 
-skalibs-libs-2.14.4.0-r0 license:
+skalibs-libs-2.15.0.0-r0 license:
 ISC
 
 ```
@@ -436,16 +436,16 @@ ISC
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r30 description:
+ssl_client-1.37.0-r31 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r30 webpage:
+ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r30 installed size:
+ssl_client-1.37.0-r31 installed size:
 14 KiB
 
-ssl_client-1.37.0-r30 license:
+ssl_client-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -487,16 +487,16 @@ Public-Domain
 ### `apk` package: `utmps-libs`
 
 ```console
-utmps-libs-0.1.3.1-r0 description:
+utmps-libs-0.1.3.3-r0 description:
 A secure utmp/wtmp implementation (libraries)
 
-utmps-libs-0.1.3.1-r0 webpage:
+utmps-libs-0.1.3.3-r0 webpage:
 https://skarnet.org/software/utmps/
 
-utmps-libs-0.1.3.1-r0 installed size:
+utmps-libs-0.1.3.3-r0 installed size:
 17 KiB
 
-utmps-libs-0.1.3.1-r0 license:
+utmps-libs-0.1.3.3-r0 license:
 ISC
 
 ```
