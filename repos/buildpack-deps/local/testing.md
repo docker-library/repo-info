@@ -643,20 +643,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-11
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-11.dsc' cyrus-sasl2_2.1.28+dfsg1-11.dsc 3479 SHA256:60dfcaf966bf9bc1211ac307d36a635059a5ba364a98c1d9efcda8a0f5900d74
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-11.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-11.debian.tar.xz 102628 SHA256:9efbb3e4a6010aa7f25d1a73d9b42a63b10e29058c2083b0f0db3fe58cd49a77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-11/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-11/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-12`
 
@@ -1906,20 +1899,13 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-2-30/copyright`, `/usr/share/
 
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.2.2-2
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.2-2.dsc' imath_3.2.2-2.dsc 2108 SHA256:52d4b1766cc717bc4facca2307e2c0a76cfd12ae568ff2261ad133d1fc5f5374
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.2.orig.tar.gz' imath_3.2.2.orig.tar.gz 689217 SHA256:b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.2-2.debian.tar.xz' imath_3.2.2-2.debian.tar.xz 11372 SHA256:6cb014eaefd4193dbffdd185d8b536f5f84b408b8d837ca9b1bd84f59801af67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imath/3.2.2-2/
 
-- https://sources.debian.net/src/imath/3.2.2-2/ (for browsing the source)
-- https://sources.debian.net/src/imath/3.2.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imath/3.2.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69+nmu3`
 
@@ -2638,20 +2624,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.4-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.4-1.dsc' libheif_1.23.4-1.dsc 3844 SHA256:042456f22e06a4cbc878b59de2ff803d3edf636ee4b12506885e3b6bdcf586c6
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.4.orig.tar.gz' libheif_1.23.4.orig.tar.gz 2217221 SHA256:d0c02b4b0e978f34a1974b6f3eea7975a537bf7a9195ffeea38e7242ff316fdd
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.4-1.debian.tar.xz' libheif_1.23.4-1.debian.tar.xz 15244 SHA256:bafcccab0e63fa72461c47c95e0235b16e9d091b64535c44d7c2d2e9864a25ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.4-1/
 
-- https://sources.debian.net/src/libheif/1.23.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -4320,20 +4299,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjph-dev/copyright`, `/usr/share/d
 - `BSD-2-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjph=0.28.1-1
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1-1.dsc' openjph_0.28.1-1.dsc 2172 SHA256:5815a549f9a9cf760bf01d6f71dea977497f300135f017180d13b089cf351161
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1.orig.tar.gz' openjph_0.28.1.orig.tar.gz 497176 SHA256:0b9bf698534cd121e422ff82e8ba86e4a9770a199314ef02358a86abc543d762
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.28.1-1.debian.tar.xz' openjph_0.28.1-1.debian.tar.xz 5568 SHA256:ba6cdba33c1fea71d12b3ba97088dd92b64f04d91cc700409fad3f8e1b0f6bd9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjph/0.28.1-1/
 
-- https://sources.debian.net/src/openjph/0.28.1-1/ (for browsing the source)
-- https://sources.debian.net/src/openjph/0.28.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjph/0.28.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.14+dfsg-2`
 
