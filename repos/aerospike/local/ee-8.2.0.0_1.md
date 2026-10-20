@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ae080aff9b38b4e4e0328615e15e0d725f4a4623174a90a86d6cebf609b4392`
-- Created: `2026-10-02T23:49:58.18635369Z`
-- Virtual Size: ~ 265.42 Mb  
+- Image ID: `sha256:36d0ad92b7154fd5cea882b0fa26d7d5a376466ca506749bd542c5bad81943c3`
+- Created: `2026-10-17T00:11:55.524690007Z`
+- Virtual Size: ~ 258.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
@@ -120,12 +120,12 @@ $ apt-get source -qq --print-uris attr=1:2.5.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc' attr_2.5.2-1ubuntu0.1.dsc 2592 SHA512:97cbe8f3d60d4760fbf6e1813d0a8da07357368bd8377f19fa8b808e6fad761adde5b27c2108f5a7c34eaf13eef09682cd3cb2534e1e8620dad9f629bfe2a9fb
 ```
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
+### `dpkg` source package: `audit=1:3.1.2-2.1ubuntu0.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1.1`
-- `libaudit1:amd64=1:3.1.2-2.1build1.1`
+- `libaudit-common=1:3.1.2-2.1ubuntu0.1`
+- `libaudit1:amd64=1:3.1.2-2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -133,9 +133,14 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris audit=1:3.1.2-2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA512:a97003a294ed3671df01e2952688e7d5eef59a35f6891feb53e67c4c7eab9ae8c2d18de41a5b5b20e0ad7156fac93aec05f32f6bc5eea706b42b6f27f676446a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.debian.tar.xz' audit_3.1.2-2.1ubuntu0.1.debian.tar.xz 19524 SHA512:1c0f7246a1ce1916f801df70de17bd7df99313476cf5afdbce1859287874fc8b5245ad117848a28f6942e12a03360b51b4d242bb8243501455994c8449b86007
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1ubuntu0.1.dsc' audit_3.1.2-2.1ubuntu0.1.dsc 2902 SHA512:35e6be715483be88c4d36fb7db287948f25da0737abf87036036d18552eff4b69b4ce18962fbd43f062965aba1a1be4fd20ff4a59249fc5803790b321386bc4b
+```
 
 ### `dpkg` source package: `base-files=13ubuntu10.5`
 
@@ -308,11 +313,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.dsc' coreutils_9.4-3ubuntu6.3.dsc 2030 SHA512:80505334592653a7ee541b5aa5d6bc400232a8cf2a01aa7407c5d94073b2b7210a86b9b133835ffa6d5c48050ea74db89d74234cad1ae83b1e98ba1d9ee87624
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.15`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.16`
 
 Binary Packages:
 
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.15`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.16`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -332,10 +337,10 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.15
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.15.debian.tar.xz' curl_8.5.0-2ubuntu10.15.debian.tar.xz 92276 SHA512:36f94bd79bf0d3c6ab9db6baadc912869d46dcb4b6f39f0132692cad98b5a5b02f0a24c8713140f5dceb636fe10fde404e80fca5407b7fc03c2fd623826b11ec
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.15.dsc' curl_8.5.0-2ubuntu10.15.dsc 3096 SHA512:3fb1c5fcb13e5fdbc26d28b1a829c4dc69ee51425dc2d46a55494bb25c4defb4b0d6ec6d075ff12e2bcfab9985fa746bc70548519b27e9b5da972f3f77cdc9f3
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.16
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.16.debian.tar.xz' curl_8.5.0-2ubuntu10.16.debian.tar.xz 97764 SHA512:30ee1b3baf22b2ebb630494d84126d0818d04172e0c7bc86c594a0f9dd30623cf9d1f6e90632ef02166d31910fffbebc9eee26709c5f9ff7d9bc5e58f32a21cb
+'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.16.dsc' curl_8.5.0-2ubuntu10.16.dsc 3096 SHA512:fc4e683ec61bac0754ca947435a3b099d45577f7b8448095ed125e69146eba3275665b8dc73d05edcccb0e11b24f58ed491af2262f28eac50869cc778fa70f0b
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
