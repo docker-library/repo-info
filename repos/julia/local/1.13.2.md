@@ -1,9 +1,9 @@
-# `julia:1.13.1-trixie`
+# `julia:1.13.2-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fcb0a94693bf143945bb56f6b004fb695b411630213d41df6cb8892c19426c2`
-- Created: `2026-10-06T01:17:46.569635952Z`
+- Image ID: `sha256:aeb8ec35ceb8aa0fda39620117b7d056aff8cfb8b1fdaad670ff533aa147208c`
+- Created: `2026-10-16T20:32:28.28198612Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=64B779A570972FFF7BFC2B54EAD471E1A1F2C10A`
-  - `JULIA_VERSION=1.13.1`
+  - `JULIA_VERSION=1.13.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -379,12 +379,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=8.14.1-2+deb13u5`
+### `dpkg` source package: `curl=8.14.1-2+deb13u7`
 
 Binary Packages:
 
-- `curl=8.14.1-2+deb13u5`
-- `libcurl4t64:amd64=8.14.1-2+deb13u5`
+- `curl=8.14.1-2+deb13u7`
+- `libcurl4t64:amd64=8.14.1-2+deb13u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -404,18 +404,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.dsc' curl_8.14.1-2+deb13u5.dsc 3263 SHA256:9a9a2c95cdc8b5d76892c70858f25eaf2dc0b0a475a1e43e0b4ad428414752df
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.debian.tar.xz' curl_8.14.1-2+deb13u5.debian.tar.xz 72312 SHA256:ebdfcfab1c2001c7a539fe2a4044dbf666a544393f191bedce9ee2d07c4ea925
+$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.dsc' curl_8.14.1-2+deb13u7.dsc 3263 SHA256:a559b829ff852b2ee1ac0e448b5d9c18e0f94875bc820d037609d4d807ac6f57
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.debian.tar.xz' curl_8.14.1-2+deb13u7.debian.tar.xz 75756 SHA256:e0f627ee2b9ae61078b2835edc25c8b94a0b57e180a1bc72dd8636ef260c370b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
