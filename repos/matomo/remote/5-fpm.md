@@ -1,7 +1,7 @@
 ## `matomo:5-fpm`
 
 ```console
-$ docker pull matomo@sha256:e052c76ebb12bbcbe8af104df1768aec87a94935f96052f6ce78a6c0067f84e5
+$ docker pull matomo@sha256:71bd5f9c7e9f0a3dfcb47738296d2d07ebf74e6abd8909ad8c5c6ccfbfff872b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,881 +26,881 @@ $ docker pull matomo@sha256:e052c76ebb12bbcbe8af104df1768aec87a94935f96052f6ce78
 ### `matomo:5-fpm` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:6ebf0dbe5d4cb64e7e57c7a5a622b36437cc02a5685b6f1d53706521f09d54bc
+$ docker pull matomo@sha256:40f411e86efbadff19ec7155ec1ecbad7366ad63cbcf41380715e1f41d0b0212
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.7 MB (199680963 bytes)**  
+-	Total Size: **199.7 MB (199677534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62492bcb1b43e1d8d0aff3af5aeb1ae2ef0d3ee5bad6d6965953a08279c8266d`
+-	Image ID: `sha256:b1476bd797b8448a562a2d0995f81e6e3869b4be796cba533269ea3799a80315`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:20:42 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:20:09 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:20:57 GMT
+# Wed, 21 Oct 2026 00:20:25 GMT
 ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:24:08 GMT
+# Wed, 21 Oct 2026 00:30:00 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:24:08 GMT
+# Wed, 21 Oct 2026 00:30:00 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:28 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:28 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:26:26 GMT
+# Wed, 21 Oct 2026 00:32:29 GMT
 CMD ["php-fpm"]
-# Tue, 06 Oct 2026 02:42:05 GMT
+# Wed, 21 Oct 2026 01:53:44 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 02:42:05 GMT
+# Wed, 21 Oct 2026 01:53:44 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:42:05 GMT
+# Wed, 21 Oct 2026 01:53:44 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 02:42:05 GMT
+# Wed, 21 Oct 2026 01:53:44 GMT
 ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 02:42:16 GMT
+# Wed, 21 Oct 2026 01:53:55 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:ecc510c1e359bdc007b39802570bb7e4dec7d6ebccf357c3201a74299113e05e`  
-		Last Modified: Tue, 06 Oct 2026 00:13:48 GMT  
-		Size: 29.8 MB (29843350 bytes)  
+	-	`sha256:f2be67225471500c788ce88c597eb5ea8336e912ad1ca4815650e0281afe2034`  
+		Last Modified: Tue, 20 Oct 2026 23:31:18 GMT  
+		Size: 29.8 MB (29843579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5d549a3230683616e7cee13a3e7c2b045f2546f17d2862b5b36fac39fce2317`  
-		Last Modified: Tue, 06 Oct 2026 01:23:51 GMT  
+	-	`sha256:2eafa4e1c06150599527c2e32be5ab50ec548c3ba69a17e808d8075b74dd8ad7`  
+		Last Modified: Wed, 21 Oct 2026 00:23:36 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c693751ce57d344e51535f32dd89bf107c8a782f49fef934d8cedf64811a1f5`  
-		Last Modified: Tue, 06 Oct 2026 01:23:54 GMT  
-		Size: 117.8 MB (117842860 bytes)  
+	-	`sha256:869d33b75c24de088c844cf273d928904fffae41bc5f7462cfcb4492514ad3c0`  
+		Last Modified: Wed, 21 Oct 2026 00:23:39 GMT  
+		Size: 117.8 MB (117839025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34af96d136ec6dba10ae2e4da00ccba3043e15b47073110454c3c0f265848dcb`  
-		Last Modified: Tue, 06 Oct 2026 01:23:51 GMT  
-		Size: 223.0 B  
+	-	`sha256:fe077c59d11079e93dffc3ac198f9fcaff8e5ca321bea88c650765524da7c9fb`  
+		Last Modified: Wed, 21 Oct 2026 00:23:36 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a2526b2d955f6a595dc932cfe92f044d3c9c7e6020a16892b0bc3106d9db858`  
-		Last Modified: Tue, 06 Oct 2026 01:26:36 GMT  
-		Size: 13.9 MB (13939219 bytes)  
+	-	`sha256:0fb4af7fa8acfe2905c41b6fb6f031e8fc3fb7051e05b3c0bdc6c0e9ec8b7043`  
+		Last Modified: Wed, 21 Oct 2026 00:32:40 GMT  
+		Size: 13.9 MB (13939228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ad123cce9339500950e35da5529efe5b045f1e4166b2ca8e204ae8e3136055`  
-		Last Modified: Tue, 06 Oct 2026 01:26:35 GMT  
+	-	`sha256:9b19f457b659b274425eb591cdb09e15cd7014ed8f8ed671a2bf09d442b9ee37`  
+		Last Modified: Wed, 21 Oct 2026 00:32:39 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9f47e78435ac8e0f12e5afe709ebc344a8ed853a9905b3ae3eedbf449a7d189`  
-		Last Modified: Tue, 06 Oct 2026 01:26:36 GMT  
-		Size: 13.8 MB (13830452 bytes)  
+	-	`sha256:c166ceb6a6cdf74f82a6e3dffc1aeb68461833066ef4d53004de43eea9383f03`  
+		Last Modified: Wed, 21 Oct 2026 00:32:40 GMT  
+		Size: 13.8 MB (13830498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6741824108cec2979057602af0b6c2335572cfb03c8563c28402e02c85261736`  
-		Last Modified: Tue, 06 Oct 2026 01:26:36 GMT  
+	-	`sha256:834d855ce40b395e4f25b9bc896b2e4e605b0054aa0815982e3841df147598be`  
+		Last Modified: Wed, 21 Oct 2026 00:32:39 GMT  
 		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:758b3a8b8d7f8874d81bfde8f22c8b1b05a4342de8fdd8afbeee237765cef173`  
-		Last Modified: Tue, 06 Oct 2026 01:26:37 GMT  
-		Size: 252.0 B  
+	-	`sha256:6c1d9c36b6cd33e9010d9a339dd4e3d77963a4614c7be4500dbb23ca04699983`  
+		Last Modified: Wed, 21 Oct 2026 00:32:40 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b603d58cb44a9cdafcc01b5a86414d45e345853f8db305b224a8a94636cfee`  
-		Last Modified: Tue, 06 Oct 2026 01:26:37 GMT  
-		Size: 246.0 B  
+	-	`sha256:e75e9a79d456d9f31f941661793c84c5872edee6be7a55868f6ca115653c1b73`  
+		Last Modified: Wed, 21 Oct 2026 00:32:40 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:366baf7e18e1576e4ee69c310eaf5fb2e4fb3b2d0747bfa1a45dc05c1a13a8de`  
-		Last Modified: Tue, 06 Oct 2026 01:26:37 GMT  
-		Size: 9.3 KB (9268 bytes)  
+	-	`sha256:3c9937551a7a7db9ba63fc0bba342fc42541963668ce005e2da6827f6282323b`  
+		Last Modified: Wed, 21 Oct 2026 00:32:41 GMT  
+		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7360361ce0caf72de34c517193c9caaa36293944dae94a59f9baf98ed63a76f4`  
-		Last Modified: Tue, 06 Oct 2026 02:42:23 GMT  
-		Size: 2.7 MB (2689411 bytes)  
+	-	`sha256:c5341fecb900b75384be0c38269d5ee80e86680e776f69bd7cfc5a51a4e14c6f`  
+		Last Modified: Wed, 21 Oct 2026 01:54:02 GMT  
+		Size: 2.7 MB (2689488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2606ecce39512a00e856d505b0d176852988092b9936ef9b4efd990cb07d4a7`  
-		Last Modified: Tue, 06 Oct 2026 02:42:23 GMT  
-		Size: 324.0 B  
+	-	`sha256:e531dcda737d2af182060b71a3b6cfe52208d674742acaedf6f757067f8c4e31`  
+		Last Modified: Wed, 21 Oct 2026 01:54:02 GMT  
+		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a92d4238ed265ba94b4a31b65620b55a3bdd4c062b2c9adcd5dfb77cc01ef29`  
-		Last Modified: Tue, 06 Oct 2026 02:42:23 GMT  
-		Size: 21.5 MB (21520996 bytes)  
+	-	`sha256:642b09e3a61dfe3e034069e69c1a6665f3a03426576d84a19b3a95a0b2bcc6ef`  
+		Last Modified: Wed, 21 Oct 2026 01:54:03 GMT  
+		Size: 21.5 MB (21521041 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4057f00f585761530aff53063e8b48562f827eb2311108c921cadfaf40c694fc`  
-		Last Modified: Tue, 06 Oct 2026 02:42:23 GMT  
-		Size: 342.0 B  
+	-	`sha256:28c84eff663f407d8a72bfaea2a23b4cecbf3730cb7914fe62e4b98d117ad4cc`  
+		Last Modified: Wed, 21 Oct 2026 01:54:02 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ac7c1072324a9362aa269207551738197dbf73c57d64fc689a8005b26cb5993`  
-		Last Modified: Tue, 06 Oct 2026 02:42:24 GMT  
+	-	`sha256:74e5df5a2cf3a4f42ea4e004b0ff8ad0e634b7cd8eff05b88f98a2f16b815915`  
+		Last Modified: Wed, 21 Oct 2026 01:54:03 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:ac531632a74bcda979ee138ccd6478cf990973d28688ef3c9b1765430947241b
+$ docker pull matomo@sha256:7f8c15164ae39841315aca56b722d18f4639830be01e007394036a4baf635a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.3 KB (33253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47987cbd67cb4f041e1c2beea1d9e266f21125c735bde46231e6d6b1aea290c6`
+-	Image ID: `sha256:170e26bbf25b64ee6c4c9c3f9b42eb47eaf20867a93c3cf214ae9c77109366f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a120b8695d22022837cd7f8a3fc4efb91158d47528443ad0a223962d920e59e2`  
-		Last Modified: Tue, 06 Oct 2026 02:42:23 GMT  
+	-	`sha256:dac03b0ed2f2e2062e2957c034b6aaf81ed5685e90c87f7e677fd28535b717f3`  
+		Last Modified: Wed, 21 Oct 2026 01:54:02 GMT  
 		Size: 33.3 KB (33253 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull matomo@sha256:2680a8dcf8267a45cb051b57c7a8d18ca78d6d247129733f22387c0d5fb77967
+$ docker pull matomo@sha256:4e1b528abed5f3819f1f002923eb771e621b596113f40e74eedc5fd0bb724c71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.2 MB (173217048 bytes)**  
+-	Total Size: **173.2 MB (173218135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbc30c33bf660980c8cc290a4c9dcaf4b5be6644a2bd8d9e924585abc5684225`
+-	Image ID: `sha256:4877d44c254e55cffa8e18cb6c4b8bf7a1b60b1c922658ad3191ee97dbc8a202`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:21:44 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'armel' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:26:00 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:22 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:22 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:22:10 GMT
+# Wed, 21 Oct 2026 00:26:23 GMT
 ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:29:49 GMT
+# Wed, 21 Oct 2026 00:30:10 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:29:49 GMT
+# Wed, 21 Oct 2026 00:30:10 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:09 GMT
 WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:10 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:10 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:10 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:32:55 GMT
+# Wed, 21 Oct 2026 00:33:10 GMT
 CMD ["php-fpm"]
-# Tue, 06 Oct 2026 03:11:34 GMT
+# Wed, 21 Oct 2026 02:15:52 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 03:11:34 GMT
+# Wed, 21 Oct 2026 02:15:52 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 03:11:34 GMT
+# Wed, 21 Oct 2026 02:15:52 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 03:11:34 GMT
+# Wed, 21 Oct 2026 02:15:52 GMT
 ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 03:11:50 GMT
+# Wed, 21 Oct 2026 02:16:08 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:cb79ce05d3152dc6f7b8608f1f449aa1fbf1541a5dff435139649d755dd23d93`  
-		Last Modified: Tue, 06 Oct 2026 00:13:24 GMT  
-		Size: 28.0 MB (28007486 bytes)  
+	-	`sha256:ad6f6891c000008b22dd4db41d72c313bb813f72512b7f3c69916feec95e030d`  
+		Last Modified: Tue, 20 Oct 2026 23:30:41 GMT  
+		Size: 28.0 MB (28007794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e32895a8a593beeca87666df1de4730f1cad23156794644ddce3fd661cf9e9d2`  
-		Last Modified: Tue, 06 Oct 2026 01:25:40 GMT  
+	-	`sha256:8c989d6a489b1e03a58f668d81dd582ddc82429f3df1e3f0285b66f71a43de9c`  
+		Last Modified: Wed, 21 Oct 2026 00:29:35 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bb2710c7b943867eb00eaae6a5cd8f228c3308ea9ca9c38f32f2b8bebcc98af`  
-		Last Modified: Tue, 06 Oct 2026 01:25:43 GMT  
-		Size: 94.9 MB (94876863 bytes)  
+	-	`sha256:ee819d64283bc6e8f82ce8c6139534f0958fdbce55a2796aba68010144d15927`  
+		Last Modified: Wed, 21 Oct 2026 00:29:51 GMT  
+		Size: 94.9 MB (94885342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35ae3059027b7351a1842d2a4a32d516c7bdebb5c0e6f6073ed651d700ca0f76`  
-		Last Modified: Tue, 06 Oct 2026 01:25:40 GMT  
+	-	`sha256:cd6fe3e3e4f935fc8c9df42f405935c15c099c51b0dcf119fb85eb432a30ba34`  
+		Last Modified: Wed, 21 Oct 2026 00:29:48 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57090b72e95f88d3cfe47117181521adfad84465e3f234289149c6f83a471e17`  
-		Last Modified: Tue, 06 Oct 2026 01:33:06 GMT  
-		Size: 13.9 MB (13936886 bytes)  
+	-	`sha256:ef02322569e231906ee0d8792c0e1df06ce2ea992568b8093af5f3c1e4d53e7f`  
+		Last Modified: Wed, 21 Oct 2026 00:33:20 GMT  
+		Size: 13.9 MB (13936907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4aaef56cfeaf13f703b6f4c49a3aaeddfeea6b74d68039c380aad6c912a86a17`  
-		Last Modified: Tue, 06 Oct 2026 01:33:05 GMT  
-		Size: 490.0 B  
+	-	`sha256:caacd86d800153793499beceeecad65cbd06b65ae6bf8c133e1a264b0ce45992`  
+		Last Modified: Wed, 21 Oct 2026 00:33:20 GMT  
+		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e7b2716694f4f437fea59646c59d423a593a6ad52fb2cec3dda2a3128c29e6a`  
-		Last Modified: Tue, 06 Oct 2026 01:33:06 GMT  
-		Size: 12.3 MB (12341893 bytes)  
+	-	`sha256:074a8b1116a575f8a60a623fb37cdb504ebb4c125fd9971a5b17dab077999c57`  
+		Last Modified: Wed, 21 Oct 2026 00:33:20 GMT  
+		Size: 12.3 MB (12341914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a17cdf68725ee956e0522438e14434dce5700cc85b4e1b90f269e49da4142d60`  
-		Last Modified: Tue, 06 Oct 2026 01:33:05 GMT  
-		Size: 2.5 KB (2454 bytes)  
+	-	`sha256:7a1ee2823faadecd76b17cb2fa1039200420b0465faa70eb7df6fffb9eb55082`  
+		Last Modified: Wed, 21 Oct 2026 00:33:20 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c16d093478e2a3c94dbdafa644eaf5d31602f78b3f86881ca2400950566ace0`  
-		Last Modified: Tue, 06 Oct 2026 01:33:06 GMT  
-		Size: 253.0 B  
+	-	`sha256:0075345f62162268355bbb46c757c0cd5b827cb478211e3504dd0b6ff8f16e06`  
+		Last Modified: Wed, 21 Oct 2026 00:33:21 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d667a9fe1402a8b4aad246ed6b1d41ac800bda16b9e4e7cabb16585fccb44362`  
-		Last Modified: Tue, 06 Oct 2026 01:33:06 GMT  
-		Size: 247.0 B  
+	-	`sha256:dce0126a0e2bfe43674a6796f31ce0198042829370b0cbe06374e66200408049`  
+		Last Modified: Wed, 21 Oct 2026 00:33:21 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68ad190affc2a6119a23cfb31851152d275c99a74311826983d7168a54e8f59a`  
-		Last Modified: Tue, 06 Oct 2026 01:33:07 GMT  
-		Size: 9.3 KB (9271 bytes)  
+	-	`sha256:e906be5983011b657fd5eb7835f7ae4966f8becd8151c885c3c52dbe7f483da7`  
+		Last Modified: Wed, 21 Oct 2026 00:33:22 GMT  
+		Size: 9.3 KB (9273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411cc4733c69c91c44e167e8cf20a3c6e47d94fb537a3ae8413f2efe22009a62`  
-		Last Modified: Tue, 06 Oct 2026 03:11:57 GMT  
-		Size: 2.5 MB (2520748 bytes)  
+	-	`sha256:61207269e67aed18bdc192ba01cef96df69591a65fd16289bf802fb988826939`  
+		Last Modified: Wed, 21 Oct 2026 02:16:16 GMT  
+		Size: 2.5 MB (2513006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d54c3e4b0dfed6c30675e4eec9ca6b2cd488ad5855cc380fd994a0b6d3c68602`  
-		Last Modified: Tue, 06 Oct 2026 03:11:56 GMT  
+	-	`sha256:ab277d20392a4a8183197bea42cb0078e73d0caeab81d2872e31cc7b94b0c075`  
+		Last Modified: Wed, 21 Oct 2026 02:16:15 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24fccf544ac138e2af779c85d6af88096a5ea9077e903162614885ffec68d9ae`  
-		Last Modified: Tue, 06 Oct 2026 03:11:57 GMT  
+	-	`sha256:0ef5f7b9547382de16b0581878dd1023b023ff279ebca17f9fe46aad0135e380`  
+		Last Modified: Wed, 21 Oct 2026 02:16:16 GMT  
 		Size: 21.5 MB (21518477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7c0aff302187536fc665f5df02c51d50677e9f0cb9692cfa4094d51a025c5aa`  
-		Last Modified: Tue, 06 Oct 2026 03:11:56 GMT  
+	-	`sha256:3abe7bf5d643093d332b30d8d0d18ae41e8666ac92c508c1d4c6bd13843e1e09`  
+		Last Modified: Wed, 21 Oct 2026 02:16:15 GMT  
 		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56ee7581eb4d084db80e69f93a95ceed6256984df2f30983aab2b88900bbaed3`  
-		Last Modified: Tue, 06 Oct 2026 03:11:58 GMT  
-		Size: 823.0 B  
+	-	`sha256:5209e29cadaa5ca16e1ee5ef3c948c868cb55785208a712ac47ba5c46a275acf`  
+		Last Modified: Wed, 21 Oct 2026 02:16:16 GMT  
+		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:32fc510edcaa89589f288e78ff7d87019c07ab279aa309dbc2bf4e263d51bb23
+$ docker pull matomo@sha256:b1007813f8d10e3685ee4075cee6e5363fcfda512a38265a7383750d871439e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.4 KB (33353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:addddaafacbc67fffa626625e74d4c83e755787a5dea012f0b34ec0d94910417`
+-	Image ID: `sha256:dd7708e2325abe40fab4584855e8939994d6f76647a4ecebc4fcb97068a3ce4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae370db174a4f07c94a62982e4d54139deb31ae0c6d62ea4db8d03d0ac1cbc7a`  
-		Last Modified: Tue, 06 Oct 2026 03:11:56 GMT  
+	-	`sha256:6659df7293fdab74f34a3621975bdaff4bfaf1fd0a8cc0488dd7ab9ea26963a3`  
+		Last Modified: Wed, 21 Oct 2026 02:16:15 GMT  
 		Size: 33.4 KB (33353 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull matomo@sha256:de794c5a1237dd4843b77913e8e02bedcc0a64ecd4841248dd7c9b4a15288275
+$ docker pull matomo@sha256:e4ebb3f96b92c0d63de2891638b0f3852507838704114969f3c8a584c2b97b66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.1 MB (162063416 bytes)**  
+-	Total Size: **162.0 MB (162048884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52d1c1f40d9f1ab95123b459f4fa40bb01c28f5081fabe65ed13faafccf4a86a`
+-	Image ID: `sha256:263dcc3529df416943f009f4a306af005ac6c62e111c15e031b5b0ce35199e3e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:37:45 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:30:52 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:38:02 GMT
+# Wed, 21 Oct 2026 00:31:10 GMT
 ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:38:12 GMT
+# Wed, 21 Oct 2026 00:53:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:38:12 GMT
+# Wed, 21 Oct 2026 00:53:09 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:40:50 GMT
+# Wed, 21 Oct 2026 00:55:50 GMT
 CMD ["php-fpm"]
-# Tue, 06 Oct 2026 03:30:44 GMT
+# Wed, 21 Oct 2026 02:36:09 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 03:30:44 GMT
+# Wed, 21 Oct 2026 02:36:09 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 03:30:44 GMT
+# Wed, 21 Oct 2026 02:36:09 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 03:30:44 GMT
+# Wed, 21 Oct 2026 02:36:09 GMT
 ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:20 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:21 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:21 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:21 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 03:30:58 GMT
+# Wed, 21 Oct 2026 02:36:21 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:300a23646f25b185ab2272dd30c5f746e1b89a5b96a25accc2ae4aa55e80f6d1`  
-		Last Modified: Tue, 06 Oct 2026 00:13:54 GMT  
-		Size: 26.3 MB (26258178 bytes)  
+	-	`sha256:f8eb073e557b2fb506b6faa9eae3677b1d49ea8721e51992a31cf5c5c4dd75da`  
+		Last Modified: Tue, 20 Oct 2026 23:30:46 GMT  
+		Size: 26.3 MB (26258396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0351ad68f2f37dce885daf0d315d44f57c2a79ff8f2db634a1c74a4104a40201`  
-		Last Modified: Tue, 06 Oct 2026 01:41:06 GMT  
-		Size: 226.0 B  
+	-	`sha256:9292599cef45c37827354174c2b5474417eeea2a07f344b0198510644a7e9e63`  
+		Last Modified: Wed, 21 Oct 2026 00:34:48 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdf64618768efcbe09e7ddcc94c2832b182ecd510332f448ac063915c3b35beb`  
-		Last Modified: Tue, 06 Oct 2026 01:41:09 GMT  
-		Size: 86.3 MB (86265420 bytes)  
+	-	`sha256:5aae533e970c327a563606993f39f3ffd2db9a35fabe22bc1d13e48e26c722f3`  
+		Last Modified: Wed, 21 Oct 2026 00:34:50 GMT  
+		Size: 86.3 MB (86258166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f06370e7da900de79c9ec3e876dcd866108a4e72e24b1fde72c02c35772e438`  
-		Last Modified: Tue, 06 Oct 2026 01:41:06 GMT  
-		Size: 226.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd965324b5afc63303e354cf13d5e16dc334477487afa5537adb024f50cf6fc2`  
-		Last Modified: Tue, 06 Oct 2026 01:41:07 GMT  
-		Size: 13.9 MB (13937057 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f1b3a96a1bb0a2a599b99bb4dc5096c701d84a8d6a416f7f332aee100a59fb0`  
-		Last Modified: Tue, 06 Oct 2026 01:41:08 GMT  
-		Size: 488.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3b48fe1bd048e98acef91435faf5df7596e04c95eea32f888f3766977627b9b`  
-		Last Modified: Tue, 06 Oct 2026 01:41:08 GMT  
-		Size: 11.7 MB (11667080 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:441d4132db1577df0276e24b2a17e9d70451a212229ae3e58645057a44c26668`  
-		Last Modified: Tue, 06 Oct 2026 01:41:08 GMT  
-		Size: 2.5 KB (2451 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0eb286ac238c746594fde715d91299ff1333d887a91ec772961fa74bc85d5eb4`  
-		Last Modified: Tue, 06 Oct 2026 01:41:09 GMT  
-		Size: 250.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e0471843f1c46a4f788e72fc2a18007175fd7794cd567114b32bce4b564469e`  
-		Last Modified: Tue, 06 Oct 2026 01:41:10 GMT  
-		Size: 245.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb99e9e7d17d74ce901d651a16d47091114ab9705a159352fec0946a4512fcd0`  
-		Last Modified: Tue, 06 Oct 2026 01:41:10 GMT  
-		Size: 9.3 KB (9266 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b086eb15bd1ed259e49a34caa6fe095ba4e0d2bd03a518309fc9c15cdab1ca2`  
-		Last Modified: Tue, 06 Oct 2026 03:31:05 GMT  
-		Size: 2.4 MB (2402458 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e1bf6652abf4d541d678065b4704eb9ef1fe996ebd7c68801a8e4103a09e848`  
-		Last Modified: Tue, 06 Oct 2026 03:31:06 GMT  
-		Size: 326.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f3bdbf20bd820ae55fb49145bbfeaf7fca4cfa1701f11dc5cf7a20dd1d75d6b`  
-		Last Modified: Tue, 06 Oct 2026 03:31:06 GMT  
-		Size: 21.5 MB (21518549 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:562a07eb8923e1bbf5804ee6c93806b199e5ed26ba6f9ea777c829cba374285d`  
-		Last Modified: Tue, 06 Oct 2026 03:31:05 GMT  
-		Size: 340.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6611340b67638f3e853368eeb2df7cb08f36b12f96f971da7edbda1de2c2d3f7`  
-		Last Modified: Tue, 06 Oct 2026 03:31:06 GMT  
-		Size: 824.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `matomo:5-fpm` - unknown; unknown
-
-```console
-$ docker pull matomo@sha256:8915c03ab7b2a5e1bb66249ae12da9d2869f8f4d470c50b4aefb480f3628de00
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 KB (33352 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a36b7ad6c732fed8a1ffaf5450a02eb38a8664d1879976578c06b28ed2d0acb3`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:e384b4d2863fbc860fb6db183975cd5f8d46a7cd8e91a1aac9a4b687db297de2`  
-		Last Modified: Tue, 06 Oct 2026 03:31:05 GMT  
-		Size: 33.4 KB (33352 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `matomo:5-fpm` - linux; arm64 variant v8
-
-```console
-$ docker pull matomo@sha256:e5dae990c17cc721b96749e02a818a0d0630af3ecfa8eb54c6bd3ed785d33d2a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.0 MB (192007437 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a89b3712443aeaf66018d67aeb6385a5003ba430a34a0a4dd2d1c608650eb4a7`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["php-fpm"]`
-
-```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:21:10 GMT
-RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:21:27 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:21:27 GMT
-RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:21:27 GMT
-ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:25:16 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:25:16 GMT
-COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:28:12 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:28:12 GMT
-COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:28:12 GMT
-RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:28:13 GMT
-RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:28:13 GMT
-ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:28:13 GMT
-WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:28:13 GMT
-RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:28:13 GMT
-STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:28:13 GMT
-EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:28:13 GMT
-CMD ["php-fpm"]
-# Tue, 06 Oct 2026 02:34:20 GMT
-ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 02:34:20 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:34:21 GMT
-RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 02:34:21 GMT
-ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 02:34:33 GMT
-RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:34:33 GMT
-COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 02:34:33 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 02:34:33 GMT
-VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 02:34:33 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 02:34:33 GMT
-CMD ["php-fpm"]
-```
-
--	Layers:
-	-	`sha256:bbeda6b4abb749f743f4547ef5a28070a14de8caef211daa5afb78d5b5fa21ba`  
-		Last Modified: Tue, 06 Oct 2026 00:13:55 GMT  
-		Size: 30.2 MB (30200282 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:540e73eece3a30483acca536ca527950587a1d63ecf4ff68ae6585ed40bcb73a`  
-		Last Modified: Tue, 06 Oct 2026 01:24:58 GMT  
-		Size: 226.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04207943ebe7a093bcdb9fbea6ae2ec5f3c5345a2f23f642ca7aece33a60eeb4`  
-		Last Modified: Tue, 06 Oct 2026 01:25:01 GMT  
-		Size: 110.2 MB (110179267 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d09f0b397691c827fc58848060340d688f6800c460d01ab3cde38110797768df`  
-		Last Modified: Tue, 06 Oct 2026 01:24:58 GMT  
+	-	`sha256:c6b0bc2c23d6f65376f0da0bf488a9f57a805eeecb182263b601f56e8f33828c`  
+		Last Modified: Wed, 21 Oct 2026 00:34:48 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6531ef2db77c28bf1857529a30909ba8435b5ede3add78cf94dd83ba61d287d6`  
-		Last Modified: Tue, 06 Oct 2026 01:28:23 GMT  
-		Size: 13.9 MB (13938852 bytes)  
+	-	`sha256:1d42a92dc73ea1800de6b60a17c7b8f03822939df57d6c0a00ab8bc0d0b40bd8`  
+		Last Modified: Wed, 21 Oct 2026 00:56:01 GMT  
+		Size: 13.9 MB (13937070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e90f93ebc45d4f671cfeb160abc9858b069ec291e31d6acf9c6b2d00478141d2`  
-		Last Modified: Tue, 06 Oct 2026 01:28:23 GMT  
-		Size: 489.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29fa1e142c49ed815cadb9425e20141e93fcb5bb9d172b2a58ebc6a513a44555`  
-		Last Modified: Tue, 06 Oct 2026 01:28:24 GMT  
-		Size: 13.5 MB (13484401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd216e52af40577bcfe462f320928753b5051910a5d87cb33900e1ea715f1582`  
-		Last Modified: Tue, 06 Oct 2026 01:28:23 GMT  
-		Size: 2.5 KB (2453 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7491d6ee6046d4f216cc8a1f49e740d2d4834f0df98ba527db63cee3708861cc`  
-		Last Modified: Tue, 06 Oct 2026 01:28:24 GMT  
-		Size: 250.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2dae30e3fc31c32629166d0b482103372340523219e0b05417dca681940396d1`  
-		Last Modified: Tue, 06 Oct 2026 01:28:24 GMT  
-		Size: 245.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07535dcff9bba73bf3e4b1d587af7313a3bf53eafca27e77b665363ba8d47c9b`  
-		Last Modified: Tue, 06 Oct 2026 01:28:25 GMT  
-		Size: 9.3 KB (9267 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f78d093c252c72ff4f9fd3f7a10c101b13f0c3517301e2dea25bb16910025390`  
-		Last Modified: Tue, 06 Oct 2026 02:34:40 GMT  
-		Size: 2.7 MB (2669453 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15eb61683d468a7281aea0f02ef7aacb1de0b6928e0c75296eff1e21473a2a89`  
-		Last Modified: Tue, 06 Oct 2026 02:34:40 GMT  
-		Size: 326.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48cb03b8741631db529a7caabbc5911f0fb7aa30b24f5798d57b5a614d086211`  
-		Last Modified: Tue, 06 Oct 2026 02:34:40 GMT  
-		Size: 21.5 MB (21520502 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d80f2e1274d1b0f1546a21d4bb5146e345cdcb9556671df1c2e304ee6d7720f`  
-		Last Modified: Tue, 06 Oct 2026 02:34:40 GMT  
-		Size: 344.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ba7577e670b3679c5db0d34cfa76c4fb1afde4dbeb5766a4d067e8e4aee4c07`  
-		Last Modified: Tue, 06 Oct 2026 02:34:41 GMT  
-		Size: 824.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `matomo:5-fpm` - unknown; unknown
-
-```console
-$ docker pull matomo@sha256:f347ea869bd59d59f3cc8ffa72df7f69558b56501592780c0287636a00bda8f2
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 KB (33387 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3ebbaa5969b90c2f2eb945e6a8ab65aa095117817ff568a10d60172448eef5c`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:4c3c4e120860152e5c52ccea0dfce31bf20698aaee5d02cefdfb41c93d9d9156`  
-		Last Modified: Tue, 06 Oct 2026 02:34:40 GMT  
-		Size: 33.4 KB (33387 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `matomo:5-fpm` - linux; 386
-
-```console
-$ docker pull matomo@sha256:d2af51089d4b4b3d758c1fa581885afaff7180ac9757236a6a012b6a68b3b0cd
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.8 MB (199823913 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38632b8227f4977bcde1ba92d79a4c81257d5c619c69ffe1d3e56400b32a593c`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["php-fpm"]`
-
-```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:21:43 GMT
-RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:22:01 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:22:01 GMT
-RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:22:01 GMT
-ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:25:45 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:25:45 GMT
-COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:28:29 GMT
-WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:28:29 GMT
-RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:28:29 GMT
-STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:28:29 GMT
-EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:28:29 GMT
-CMD ["php-fpm"]
-# Tue, 06 Oct 2026 02:40:39 GMT
-ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 02:40:39 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:40:39 GMT
-RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 02:40:39 GMT
-ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 02:40:52 GMT
-RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:40:52 GMT
-COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 02:40:52 GMT
-COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 02:40:52 GMT
-VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 02:40:52 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 02:40:52 GMT
-CMD ["php-fpm"]
-```
-
--	Layers:
-	-	`sha256:b59aaa0193108c500830004d6b7bf57fbd8ddfd00c73f9c19253d16fa8acb12e`  
-		Last Modified: Tue, 06 Oct 2026 00:13:53 GMT  
-		Size: 31.4 MB (31353297 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:746aa628fff75b7a9211c3ab9e2bcf5bb8454e274713b3ef9e2e430686971f1d`  
-		Last Modified: Tue, 06 Oct 2026 01:25:23 GMT  
-		Size: 225.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea02ed7eaa1a4bfe247c6fc0d283075bf660f372effc2ae3c4ab3d9b7b7827a8`  
-		Last Modified: Tue, 06 Oct 2026 01:25:27 GMT  
-		Size: 116.1 MB (116149163 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a925948929c82125da9bc5198d9d714a882ed7da1928d003d1f826308aadfccc`  
-		Last Modified: Tue, 06 Oct 2026 01:25:24 GMT  
-		Size: 223.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:556a26ca5058a26bdd4c2aaed3a77b83ebdb6b6ec647bcceef25fcbcec7154de`  
-		Last Modified: Tue, 06 Oct 2026 01:28:39 GMT  
-		Size: 13.9 MB (13938268 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7545914bd7711837d010882c68b74df8d4c9583c2219ebf991a00065ac4f568a`  
-		Last Modified: Tue, 06 Oct 2026 01:28:38 GMT  
+	-	`sha256:c49703a68155c0011563c9bda6c292a7222f034c2dd5a3bc963d237e0e051b2d`  
+		Last Modified: Wed, 21 Oct 2026 00:56:00 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9a80a62f60d75aebab6f2132e5497ee9c4fc2e996340537ea2ed386efeb76bd`  
-		Last Modified: Tue, 06 Oct 2026 01:28:39 GMT  
-		Size: 14.2 MB (14182863 bytes)  
+	-	`sha256:b5933264b084f4bc343f42e2c9642db975c173fff8754d5ee83969f0d757ca75`  
+		Last Modified: Wed, 21 Oct 2026 00:56:01 GMT  
+		Size: 11.7 MB (11667108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2f523bbddba93e1a4ca4960504930a5fc59827c97df285eb706ce3c575f25e2`  
-		Last Modified: Tue, 06 Oct 2026 01:28:38 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:8b86352055506e9ff4d43b84a01b5b46856e7be2413d5d52e4cef028085d7689`  
+		Last Modified: Wed, 21 Oct 2026 00:56:00 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75ffa515ccdd3629bc180143a424fdc093d2105d9e4b9753f38f30708adadf99`  
-		Last Modified: Tue, 06 Oct 2026 01:28:40 GMT  
+	-	`sha256:97148b996e9cc48b69b58174e760826f2245e532a1cea09d5898c11365c5aa2f`  
+		Last Modified: Wed, 21 Oct 2026 00:56:02 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f74a7780b2cbbba4e5028527a11375dcfeddf96217ae6e24fbd61fcb43dd74`  
-		Last Modified: Tue, 06 Oct 2026 01:28:40 GMT  
-		Size: 245.0 B  
+	-	`sha256:f216f50f9a80499241947d89c380d04035dc18f25bd3bbb2acd7e18f6e134a18`  
+		Last Modified: Wed, 21 Oct 2026 00:56:02 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:055fbbd40ac8a2f8ae652bce628fa64e063ac9178e27ba77f46b9ea13c565fc2`  
-		Last Modified: Tue, 06 Oct 2026 01:28:40 GMT  
-		Size: 9.3 KB (9267 bytes)  
+	-	`sha256:c6c0f44e490117024734acb6cb2cb94e96f4824573dde401b4ae1158bce2103e`  
+		Last Modified: Wed, 21 Oct 2026 00:56:03 GMT  
+		Size: 9.3 KB (9269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bc25944d519211ad219530ac94283fe9b4f8825169a34385947c5c52800dbf1`  
-		Last Modified: Tue, 06 Oct 2026 02:40:59 GMT  
-		Size: 2.7 MB (2665656 bytes)  
+	-	`sha256:d6b4067ca2a382328bc3c814eb8ab36af3f307875199cadbf9d5519df74dcef2`  
+		Last Modified: Wed, 21 Oct 2026 02:36:28 GMT  
+		Size: 2.4 MB (2394840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fb4db8c66f12835e8a78efdab7334fdb2cee4265f1d940ecba1f48abe5bf37f`  
-		Last Modified: Tue, 06 Oct 2026 02:40:59 GMT  
-		Size: 327.0 B  
+	-	`sha256:335724854a7559ae4981f820585ed62de5573426c04e86e4e94dead9724b4817`  
+		Last Modified: Wed, 21 Oct 2026 02:36:28 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3d2de750761b4242b361e214b36e525bbefcf4feecb8b4137e6cb2d569a621`  
-		Last Modified: Tue, 06 Oct 2026 02:41:00 GMT  
-		Size: 21.5 MB (21519993 bytes)  
+	-	`sha256:44d0adf921fac621a872b965d286df780d754e062d77f06ae91c0b7f90c13e3b`  
+		Last Modified: Wed, 21 Oct 2026 02:36:29 GMT  
+		Size: 21.5 MB (21518624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2248c5f534891feb889ebed6536b688f9e66c341b3ca5e0ba055b7298735d9b`  
-		Last Modified: Tue, 06 Oct 2026 02:40:59 GMT  
-		Size: 343.0 B  
+	-	`sha256:a4678dc09c65f0c7faefd16c928c16ab258747a88243d3106f7fc0901c00d0fa`  
+		Last Modified: Wed, 21 Oct 2026 02:36:28 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f189e3fd324f501630f73ca82c9c5648b6f7ae8be53d874091735148a31dff90`  
-		Last Modified: Tue, 06 Oct 2026 02:40:51 GMT  
+	-	`sha256:047abd4e617be659ac3e08a06db7db81a7c2c9a488fdf0996d207ed375ceb5dd`  
+		Last Modified: Wed, 21 Oct 2026 02:36:29 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:463226a68e96c718f51921256e040ddaca8061245eff382cd420ce0e8e152c4a
+$ docker pull matomo@sha256:f9e51649396221bdff9197ce99d370145515923301f39692e91eb7a645712890
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 KB (33215 bytes)**  
+-	Total Size: **33.4 KB (33353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:055d6de0040b4236b73429e836897c1f4da612eb2908cb50fff2f448478ab110`
+-	Image ID: `sha256:01e5332566c249ea72bd2320a7294a6ec682b8569a7f7edf7a25ee61ee9f7753`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:430bb064a4e1dea05353e0752013a4eb495fb39bd8c933be6ad975affb34f132`  
-		Last Modified: Tue, 06 Oct 2026 02:40:59 GMT  
-		Size: 33.2 KB (33215 bytes)  
+	-	`sha256:98c1d21177a5f60b5bc184c4c3d4e2473d12a086f3f58747bb9848285c4668bb`  
+		Last Modified: Wed, 21 Oct 2026 02:36:28 GMT  
+		Size: 33.4 KB (33353 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `matomo:5-fpm` - linux; arm64 variant v8
+
+```console
+$ docker pull matomo@sha256:1e1ba2e72bff7575e3e677998ad83f39d36463e51e76765429e5c9cfd36661d3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **192.0 MB (192008315 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:64fa21d8f560635ad785269cd6e1bddf94f01a29cd626ac87ea7e29e842aafdb`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["php-fpm"]`
+
+```dockerfile
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:19:48 GMT
+RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Wed, 21 Oct 2026 00:20:06 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Wed, 21 Oct 2026 00:20:06 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_VERSION=8.4.26
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
+# Wed, 21 Oct 2026 00:20:06 GMT
+ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
+# Wed, 21 Oct 2026 00:31:27 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Wed, 21 Oct 2026 00:31:27 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+RUN docker-php-ext-enable opcache # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Wed, 21 Oct 2026 00:34:32 GMT
+WORKDIR /var/www/html
+# Wed, 21 Oct 2026 00:34:32 GMT
+RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
+# Wed, 21 Oct 2026 00:34:32 GMT
+STOPSIGNAL SIGQUIT
+# Wed, 21 Oct 2026 00:34:32 GMT
+EXPOSE map[9000/tcp:{}]
+# Wed, 21 Oct 2026 00:34:32 GMT
+CMD ["php-fpm"]
+# Wed, 21 Oct 2026 01:44:22 GMT
+ENV PHP_MEMORY_LIMIT=256M
+# Wed, 21 Oct 2026 01:44:22 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 01:44:22 GMT
+RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
+# Wed, 21 Oct 2026 01:44:22 GMT
+ENV MATOMO_VERSION=5.14.0
+# Wed, 21 Oct 2026 01:44:33 GMT
+RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 01:44:33 GMT
+COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
+# Wed, 21 Oct 2026 01:44:33 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Wed, 21 Oct 2026 01:44:33 GMT
+VOLUME [/var/www/html]
+# Wed, 21 Oct 2026 01:44:33 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Wed, 21 Oct 2026 01:44:33 GMT
+CMD ["php-fpm"]
+```
+
+-	Layers:
+	-	`sha256:ddc0c1e36a6793411b6c8d48e1ddad2987405d377da92bcf532ed3181c2e4d62`  
+		Last Modified: Tue, 20 Oct 2026 23:31:05 GMT  
+		Size: 30.2 MB (30200478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b59f20a1167e1cfdb66270a8c92014975f5fcddb0bd29838817bda8ff7c8d854`  
+		Last Modified: Wed, 21 Oct 2026 00:23:20 GMT  
+		Size: 226.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2dfebdc30aaeb5e9928c988d6c7170d8e06f8e928efea19a9b25de9d9b074ebf`  
+		Last Modified: Wed, 21 Oct 2026 00:23:52 GMT  
+		Size: 110.2 MB (110179755 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0ade9f56ea5ef836a8da636885efa160d083928e880ed1b7f04e961b8a0f4612`  
+		Last Modified: Wed, 21 Oct 2026 00:23:49 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3dc90ab646999709c89141c3af9371f039c581d0fff258b84821efeade2bfccf`  
+		Last Modified: Wed, 21 Oct 2026 00:34:43 GMT  
+		Size: 13.9 MB (13938905 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:25ed70f86409a417898708d64ea6dd3cd5f38d4c8551cd0e807d91a425fa56c6`  
+		Last Modified: Wed, 21 Oct 2026 00:34:43 GMT  
+		Size: 488.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:56dcefee103d6ff5fb6db100aca8477a094dba02c804ba3520d018aafde60972`  
+		Last Modified: Wed, 21 Oct 2026 00:34:43 GMT  
+		Size: 13.5 MB (13484468 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bbfb2d5dd2cc915d0cc5471626bfe0d44fc48253fae736091b5015083bc095d`  
+		Last Modified: Wed, 21 Oct 2026 00:34:43 GMT  
+		Size: 2.5 KB (2457 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:237d854e700e30ff2f4f85ca8f6b27230e406107f20653115dd64588206f4759`  
+		Last Modified: Wed, 21 Oct 2026 00:34:44 GMT  
+		Size: 249.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e49a2f5a9486c8c0dbb00fd049095508c00176efef0a1ba335925b6810ab05d`  
+		Last Modified: Wed, 21 Oct 2026 00:34:44 GMT  
+		Size: 244.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e20b6cdd86bb40cac7d5997df5633eb3a6a4637880d5d86a7678c3446ef647ab`  
+		Last Modified: Wed, 21 Oct 2026 00:34:45 GMT  
+		Size: 9.3 KB (9273 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f4baf08399d1bba297d4595c671a154c6745c48e2a9541a5fa3f27b964b085b5`  
+		Last Modified: Wed, 21 Oct 2026 01:44:41 GMT  
+		Size: 2.7 MB (2669480 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c1fc1bceff1245e0ec88cb34528eacae1c59060a08c97b09cfebbb4e8b19251e`  
+		Last Modified: Wed, 21 Oct 2026 01:44:40 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ea49b298a21d21f735c1c442cf08529c7547c7901a75dc69df10c88155253cd7`  
+		Last Modified: Wed, 21 Oct 2026 01:44:41 GMT  
+		Size: 21.5 MB (21520541 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3c408e9a98bb0fde59b97855252981a12c32fd3d913e137fbda397295e5bde6`  
+		Last Modified: Wed, 21 Oct 2026 01:44:40 GMT  
+		Size: 342.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dd15f2151c4d932ed7f937beb4b187e352e90b02908bcd6277f440b283be8eaa`  
+		Last Modified: Wed, 21 Oct 2026 01:44:42 GMT  
+		Size: 825.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `matomo:5-fpm` - unknown; unknown
+
+```console
+$ docker pull matomo@sha256:7af3d3fe5d63787f35013943ab30ec526fa4f5ff994cfdd21fcd6a5cf2c9269b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.4 KB (33387 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3ddada1394cddf706cf92a4d19e49514a921c8b1a06e7e03cc29800b2472c0b6`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:00dd32eb959e5781c490b4d3a872e4c25c9df4a64188c2df4907fecced88d31e`  
+		Last Modified: Wed, 21 Oct 2026 01:44:40 GMT  
+		Size: 33.4 KB (33387 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `matomo:5-fpm` - linux; 386
+
+```console
+$ docker pull matomo@sha256:257f147746861a7c5f8a3b874ddc5882b9a31992c2534b7eb0ec8f89b1f07e07
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **199.8 MB (199815662 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6a2561bf5621411e0309e0e1ef371896183fe2de6584d3311e9851c958c0ff98`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["php-fpm"]`
+
+```dockerfile
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:17:35 GMT
+RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Wed, 21 Oct 2026 00:17:54 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Wed, 21 Oct 2026 00:17:54 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_VERSION=8.4.26
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
+# Wed, 21 Oct 2026 00:17:54 GMT
+ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
+# Wed, 21 Oct 2026 00:29:06 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Wed, 21 Oct 2026 00:29:06 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+RUN docker-php-ext-enable opcache # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Wed, 21 Oct 2026 00:31:56 GMT
+WORKDIR /var/www/html
+# Wed, 21 Oct 2026 00:31:56 GMT
+RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
+# Wed, 21 Oct 2026 00:31:56 GMT
+STOPSIGNAL SIGQUIT
+# Wed, 21 Oct 2026 00:31:56 GMT
+EXPOSE map[9000/tcp:{}]
+# Wed, 21 Oct 2026 00:31:56 GMT
+CMD ["php-fpm"]
+# Wed, 21 Oct 2026 01:45:25 GMT
+ENV PHP_MEMORY_LIMIT=256M
+# Wed, 21 Oct 2026 01:45:25 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 01:45:25 GMT
+RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
+# Wed, 21 Oct 2026 01:45:25 GMT
+ENV MATOMO_VERSION=5.14.0
+# Wed, 21 Oct 2026 01:45:35 GMT
+RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
+# Wed, 21 Oct 2026 01:45:35 GMT
+COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
+# Wed, 21 Oct 2026 01:45:35 GMT
+COPY docker-entrypoint.sh /entrypoint.sh # buildkit
+# Wed, 21 Oct 2026 01:45:35 GMT
+VOLUME [/var/www/html]
+# Wed, 21 Oct 2026 01:45:35 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Wed, 21 Oct 2026 01:45:35 GMT
+CMD ["php-fpm"]
+```
+
+-	Layers:
+	-	`sha256:ed7ef4d8bb8a16e6b1a4d6e74da037bb60ce864d336261b439c7da8595c0f49f`  
+		Last Modified: Tue, 20 Oct 2026 23:30:51 GMT  
+		Size: 31.4 MB (31353534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:64798ef7ee65274c59c27c07115ecca470553e22c2d1855bc1d635807d46d07e`  
+		Last Modified: Wed, 21 Oct 2026 00:21:29 GMT  
+		Size: 223.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5b56791cadc3fd84b3eff950408a35fb64b7e0b534fa8d2d89c0069ccd572b1f`  
+		Last Modified: Wed, 21 Oct 2026 00:21:32 GMT  
+		Size: 116.1 MB (116140946 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:abba3c1b61bf5f72ebc531026122c4bcf9b89765b258e0159d1bb5c1e7223ee2`  
+		Last Modified: Wed, 21 Oct 2026 00:21:29 GMT  
+		Size: 226.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1859b5da735746e9f09af0dee3870dd92937e7efa9e811af10d03a1dd86bd47e`  
+		Last Modified: Wed, 21 Oct 2026 00:32:07 GMT  
+		Size: 13.9 MB (13938326 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa0011836784a3c2bddeab402e40a25662ece5bc32f399f4fe08c063be21d7e9`  
+		Last Modified: Wed, 21 Oct 2026 00:32:06 GMT  
+		Size: 488.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6347bc2715d3838a9077dd20f39a1dbc0a9e3aba04536385f9d7ca538c9bf0ed`  
+		Last Modified: Wed, 21 Oct 2026 00:32:07 GMT  
+		Size: 14.2 MB (14182611 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cad993982ac0d5ce3845ba7f1396b39cc38c733260b0a7969b53ab184c37fb2b`  
+		Last Modified: Wed, 21 Oct 2026 00:32:06 GMT  
+		Size: 2.5 KB (2453 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f2d05ac2159f2abbf741c35759147bec028c249fa562c2155f2a2fbfdffe83c`  
+		Last Modified: Wed, 21 Oct 2026 00:32:07 GMT  
+		Size: 251.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce6fbbb6b86e4d7494c67fed94a2966b4c3106feb73ab753fddca5a3e7ba4229`  
+		Last Modified: Wed, 21 Oct 2026 00:32:07 GMT  
+		Size: 246.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a8b2d82dccab74017235f6b2aa1f7ce602ae5e2d1a45b9889dd09ce64bdb494b`  
+		Last Modified: Wed, 21 Oct 2026 00:32:08 GMT  
+		Size: 9.3 KB (9268 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b061406d1035e9a605ff8c8cba59317ae6e928c9f048d3c91d60bd4e2289bbe7`  
+		Last Modified: Wed, 21 Oct 2026 01:45:42 GMT  
+		Size: 2.7 MB (2665634 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9b343ca506160d4f83fc7168a790c0936cf2b0069233930628dc7ddc31cea91`  
+		Last Modified: Wed, 21 Oct 2026 01:45:42 GMT  
+		Size: 327.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bc87ced2732853db63fd746126aed4d6c8ecb0bad2e19784c6df9ce96436336`  
+		Last Modified: Wed, 21 Oct 2026 01:45:43 GMT  
+		Size: 21.5 MB (21519930 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e382e15296730c89f919fca6dc7122e3dad5251fe47a3583ae9f8f42d2763210`  
+		Last Modified: Wed, 21 Oct 2026 01:45:42 GMT  
+		Size: 343.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:66e7780630e7ca85b811f76c8fa0931a461730359fe39e50df5b9d6fedfab31b`  
+		Last Modified: Wed, 21 Oct 2026 01:45:43 GMT  
+		Size: 824.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `matomo:5-fpm` - unknown; unknown
+
+```console
+$ docker pull matomo@sha256:8a6802432b33e2b840621ef78e34316b370dfb9e9460b94324967512679fbd08
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **33.2 KB (33216 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bf03949d74ef801786fdc06d41d755ebb626b6d243b6687b746a41f19e0f461e`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a9b26718c2e63b77196cc25f0f3a33e69ce07644c16e839c6a8093b58a98e94a`  
+		Last Modified: Wed, 21 Oct 2026 01:45:42 GMT  
+		Size: 33.2 KB (33216 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-fpm` - linux; ppc64le
@@ -1258,175 +1258,175 @@ $ docker pull matomo@sha256:5bf92ac480634d31c101f8fb87c7f21427ddf861a93048ad7fe9
 ### `matomo:5-fpm` - linux; s390x
 
 ```console
-$ docker pull matomo@sha256:43c06324e83342be16ee9236d308edfe244ea376f3ecd55c65405d3b3a278d78
+$ docker pull matomo@sha256:804531bcd1bb51c404db8dd1197d6bd55ae28039a9cde744140798aaa582eff6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.3 MB (174285300 bytes)**  
+-	Total Size: **174.3 MB (174273776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c35666038ef329b50ac6bce6b2f2edb8f9f5e85a061249727c1760ded37c13d`
+-	Image ID: `sha256:b11bd7bebd13717a4ac965bac06d8c34ecc2d92c6bbb282f0e2848b974d2d313`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1791158400'
-# Tue, 06 Oct 2026 01:18:06 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1792531975'
+# Wed, 21 Oct 2026 00:19:48 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_VERSION=8.4.26
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc
-# Tue, 06 Oct 2026 01:18:18 GMT
+# Wed, 21 Oct 2026 00:20:01 GMT
 ENV PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1
-# Tue, 06 Oct 2026 01:28:34 GMT
+# Wed, 21 Oct 2026 00:39:51 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 06 Oct 2026 01:28:34 GMT
+# Wed, 21 Oct 2026 00:39:51 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:31:51 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	case "$gnuArch" in 		'i686-linux-'*) 			export 				CFLAGS="$CFLAGS -msse2 -mfpmath=sse" 				CPPFLAGS="$CPPFLAGS -msse2 -mfpmath=sse" 			; 			;; 	esac; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 06 Oct 2026 01:31:51 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 06 Oct 2026 01:31:51 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:25 GMT
 WORKDIR /var/www/html
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:26 GMT
 RUN set -eux; 	cd "${PHP_INI_DIR%/php}"; 		cp -v php-fpm.conf.default php-fpm.conf; 	cp -v php-fpm.d/www.conf.default php-fpm.d/www.conf; 		grep -E '^listen = 127.0.0.1:9000' php-fpm.d/www.conf; 	sed -ri 's/^(listen = 127.0.0.1:9000)/;\1/' php-fpm.d/www.conf; 	grep -E '^;listen = 127.0.0.1:9000' php-fpm.d/www.conf; 		{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; php-fpm closes STDOUT on startup, so sending logs to /proc/self/fd/1 does not work.'; 		echo '; https://bugs.php.net/bug.php?id=73886'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 		echo; 		echo '; default listen address for easy override in later php-fpm.d/*.conf files'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '; the [www] ini section below is for backwards compatibility and will be removed in 8.6+'; 		echo '[www]'; 	} | tee php-fpm.d/zz-docker.conf; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	{ 		echo '; https://github.com/docker-library/php/issues/878#issuecomment-938595965'; 		echo 'fastcgi.logging = Off'; 	} > "$PHP_INI_DIR/conf.d/docker-fpm.ini" # buildkit
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:26 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:26 GMT
 EXPOSE map[9000/tcp:{}]
-# Tue, 06 Oct 2026 01:31:52 GMT
+# Wed, 21 Oct 2026 00:43:26 GMT
 CMD ["php-fpm"]
-# Tue, 06 Oct 2026 02:50:48 GMT
+# Wed, 21 Oct 2026 02:11:41 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Tue, 06 Oct 2026 02:50:48 GMT
+# Wed, 21 Oct 2026 02:11:41 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.28; 	pecl install redis-6.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:50:48 GMT
+# Wed, 21 Oct 2026 02:11:41 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Tue, 06 Oct 2026 02:50:48 GMT
+# Wed, 21 Oct 2026 02:11:41 GMT
 ENV MATOMO_VERSION=5.14.0
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	apt-get dist-clean # buildkit
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 VOLUME [/var/www/html]
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Oct 2026 02:50:56 GMT
+# Wed, 21 Oct 2026 02:11:49 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:fd14e6ce0256b9093e480e6146009effeb6c2bc486ff0052d50a32cbab8335fc`  
-		Last Modified: Tue, 06 Oct 2026 00:13:11 GMT  
-		Size: 29.9 MB (29909247 bytes)  
+	-	`sha256:8ea9a8c24bd3c92b5dfe24692234a4db47600db4bbc5b78a32119c1a1a244bb8`  
+		Last Modified: Tue, 20 Oct 2026 23:30:16 GMT  
+		Size: 29.9 MB (29911438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aee94829c70a192304253124b6b4fd9e07f2fc8c3da32be22423b156ff08fe22`  
-		Last Modified: Tue, 06 Oct 2026 01:21:18 GMT  
-		Size: 227.0 B  
+	-	`sha256:b59f20a1167e1cfdb66270a8c92014975f5fcddb0bd29838817bda8ff7c8d854`  
+		Last Modified: Wed, 21 Oct 2026 00:23:20 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a574a4272bcd15d787f31296d912711aae0758cea403b0c40b266b7ec2741134`  
-		Last Modified: Tue, 06 Oct 2026 01:21:20 GMT  
-		Size: 92.6 MB (92574377 bytes)  
+	-	`sha256:08180d9105f48ca4227880b4f30d6c40d9ddec8cd8a1f0b9c64f0266f6e575af`  
+		Last Modified: Wed, 21 Oct 2026 00:23:22 GMT  
+		Size: 92.6 MB (92570039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82ee0ccadb8ddf0aa19ac9205d833d8b74cd168228d0842d520c717631541fd5`  
-		Last Modified: Tue, 06 Oct 2026 01:21:18 GMT  
-		Size: 225.0 B  
+	-	`sha256:aabc532692fb7f7aa55d8dec5023ab89d6be9515e54d7ac701c3b8daa2948524`  
+		Last Modified: Wed, 21 Oct 2026 00:23:20 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42e7a554a8f2959176a112287248db73cae3b183168fa27c13e27dc7cea912c0`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 13.9 MB (13937690 bytes)  
+	-	`sha256:a044f9247a612d99c4d6bf5f188cdc5d325e75a45f3c9fe3a78719f6b99b0ae5`  
+		Last Modified: Wed, 21 Oct 2026 00:43:43 GMT  
+		Size: 13.9 MB (13937720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45059916862b66c6128cfe936ddba013ef651f8c9e59cec491e78b1472cd1820`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 488.0 B  
+	-	`sha256:d43906d35b61707ff1bc36fd131ce2079c44b10ccd387cd02a0010b9581e5113`  
+		Last Modified: Wed, 21 Oct 2026 00:43:42 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04c43f8fa993052487f014828435b32e6b08ddfe15144a0617750b5d2acfb545`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 13.6 MB (13602778 bytes)  
+	-	`sha256:32f74645476f3e0b4cfda02e3fe1a2304724f7db950562dc96693ff36f159942`  
+		Last Modified: Wed, 21 Oct 2026 00:43:43 GMT  
+		Size: 13.6 MB (13602807 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3758e25a32525261e64f66303b35dfa9b2cd7675ca34694eb717e3d3a18d4e06`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:9bdbc1a1c7cf6a2ee7dd5b83487609f4785fd670fbf816945393781cfc72b6b9`  
+		Last Modified: Wed, 21 Oct 2026 00:43:42 GMT  
+		Size: 2.5 KB (2456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bf48cbae6ede2276c474167f69736fe6efb97637eac4c901d62180b4f81d89c`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 251.0 B  
+	-	`sha256:6e2ad5bbe50f12d59f5163109f6488d65b0f3419439fda90f9539f7172fb4cbc`  
+		Last Modified: Wed, 21 Oct 2026 00:43:43 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bbbbba10944a031c130bb22e747385d8668c53dc21efecc4a5a57b9133ae13a`  
-		Last Modified: Tue, 06 Oct 2026 01:32:07 GMT  
-		Size: 246.0 B  
+	-	`sha256:323ddd6604ea6a7a529522c6ef6a902374fe97ed5bc93f9742b20c31f491e738`  
+		Last Modified: Wed, 21 Oct 2026 00:43:43 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c28962ad9be2ea475f7ee4efaf35ed9c650bdf0eeeddff6f8d910e557b058453`  
-		Last Modified: Tue, 06 Oct 2026 01:32:08 GMT  
-		Size: 9.3 KB (9269 bytes)  
+	-	`sha256:1ea1b526bd558dfe1dac17433b5047b6330ea2bf098890b8ec923fc98b327dab`  
+		Last Modified: Wed, 21 Oct 2026 00:43:44 GMT  
+		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74e7f726feb741f64771d5adbb87aa79f38da06744787835f62d37788ae7b502`  
-		Last Modified: Tue, 06 Oct 2026 02:51:06 GMT  
-		Size: 2.7 MB (2727254 bytes)  
+	-	`sha256:c9546d4e012ad7933668329c26d19a309f16eefd90fe35497d7704d2b24c494e`  
+		Last Modified: Wed, 21 Oct 2026 02:11:59 GMT  
+		Size: 2.7 MB (2717804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce7bcc676c4cbc50551c2d37134ca78eb5f27ff1be54d3e22c563593fc3276a5`  
-		Last Modified: Tue, 06 Oct 2026 02:51:06 GMT  
-		Size: 327.0 B  
+	-	`sha256:366eb5016158a0cbaf19f92a4d045b5e8bbec3f129b8c1034731ff1d3df9ab4a`  
+		Last Modified: Wed, 21 Oct 2026 02:11:59 GMT  
+		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e24c8de3f4e1e69da3213dec3f17cb0a79863e4d7746b1fa4731ec06be11967`  
-		Last Modified: Tue, 06 Oct 2026 02:51:07 GMT  
-		Size: 21.5 MB (21519267 bytes)  
+	-	`sha256:1de901380f4fdab775894f69490b91f75dd4af6e9720988f08dcee5171ec9292`  
+		Last Modified: Wed, 21 Oct 2026 02:12:00 GMT  
+		Size: 21.5 MB (21519284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e664a862798484821c339b5d1cf4561b526ed911dc8b5cac2e798c4aafca8b84`  
-		Last Modified: Tue, 06 Oct 2026 02:51:06 GMT  
-		Size: 344.0 B  
+	-	`sha256:728008bd6a7dc1301258acd5f34089681a8344e89c2fc2ea6f4f5bbed791545b`  
+		Last Modified: Wed, 21 Oct 2026 02:11:59 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eff442689248135a1606cc35e58f20bd6d488be4ea5b3d84abbbcdb8dab01ac4`  
-		Last Modified: Tue, 06 Oct 2026 02:51:07 GMT  
+	-	`sha256:7b6da06d2cde1e30a8dfc39ec0377f89420ed2f272bbbcfb7334791e9f4801d5`  
+		Last Modified: Wed, 21 Oct 2026 02:12:00 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:2cd93030187121680810a389ecf0e5b6b53b2279e12e3177acd3f90c0d27a797
+$ docker pull matomo@sha256:3e067f5a0a2e042dca193989da5b55f07a06637612ec320b24c73943977ff770
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **33.2 KB (33247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b70051de01f0384ab800382255a059b5fa61496a6328eb2c3e142b62c9c53aba`
+-	Image ID: `sha256:1997a183e11271f4b15845d035a37fe380b7eea98223f367193ad166991b9b1d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f35f981aebfbb9cc4124d7b394efbd4dc19678938ba5414373706e2b725eed82`  
-		Last Modified: Tue, 06 Oct 2026 02:51:06 GMT  
+	-	`sha256:abd099e2b8a3b3fb450928b102f4efc9e66e9030ebea068402580ce8896b2206`  
+		Last Modified: Wed, 21 Oct 2026 02:11:59 GMT  
 		Size: 33.2 KB (33247 bytes)  
 		MIME: application/vnd.in-toto+json
