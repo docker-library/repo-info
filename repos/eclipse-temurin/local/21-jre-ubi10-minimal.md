@@ -178,11 +178,16 @@ $ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10_2.2.src.rpm
 ```
 
-### `rpm` package: `curl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -636,11 +641,16 @@ $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
@@ -1178,13 +1188,13 @@ $ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
+### `rpm` package: `pcre2-10.44-1.5.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pcre2-syntax-10.44-1.0.1.el10.3.noarch`
+### `rpm` package: `pcre2-syntax-10.44-1.5.0.1.el10_2.noarch`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 

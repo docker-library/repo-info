@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:591965678ccbd40436d5bb735286269bb60e5a1a8f38882ca6fc72b5d6402ad8`
-- Created: `2026-10-13T22:58:31.128130622Z`
-- Virtual Size: ~ 386.46 Mb  
+- Image ID: `sha256:2afa2847f42bad4b6b17b0293c87e7e69a250128b8da66824ada2b4fbce2ebc0`
+- Created: `2026-10-21T21:49:54.275827402Z`
+- Virtual Size: ~ 386.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-25.0.4.1+1`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T11:35:38Z`
+  - `build-date=2026-10-20T00:48:29Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-13T11:35:38Z`
-  - `org.opencontainers.image.revision=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
-  - `release=1791891203`
+  - `org.opencontainers.image.created=2026-10-20T00:48:29Z`
+  - `org.opencontainers.image.revision=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
+  - `release=1792457157`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
+  - `vcs-ref=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -178,11 +178,16 @@ $ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10_2.2.src.rpm
 ```
 
-### `rpm` package: `curl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -636,11 +641,16 @@ $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
@@ -1178,13 +1188,13 @@ $ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
+### `rpm` package: `pcre2-10.44-1.5.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pcre2-syntax-10.44-1.0.1.el10.3.noarch`
+### `rpm` package: `pcre2-syntax-10.44-1.5.0.1.el10_2.noarch`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
