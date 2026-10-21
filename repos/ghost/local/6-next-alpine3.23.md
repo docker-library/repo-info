@@ -1,25 +1,25 @@
-# `ghost:6.71.0-next-alpine3.23`
+# `ghost:6.72.0-next-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:004646651824c86cd503e16ce8f9fd1e3ac33f29254812a8e670ae99c09bb632`
-- Created: `2026-10-15T19:05:34.364468848Z`
-- Virtual Size: ~ 392.16 Mb  
+- Image ID: `sha256:5f19df5a366fe11e9cf89764419a26084ca5dafe8130a83faac352da1abe02c2`
+- Created: `2026-10-21T11:59:00.820518185Z`
+- Virtual Size: ~ 393.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.23.3`
+  - `NODE_VERSION=22.23.4`
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.71.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.71.0/ghost-6.71.0.tgz`
-  - `GHOST_SHA256=0515a7dee4e4071923b2572dc33b6eb9b3efc4f1c9d7c97375819c75a10a6706`
+  - `GHOST_VERSION=6.72.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.72.0/ghost-6.72.0.tgz`
+  - `GHOST_SHA256=d2865b2cb625f64159504ae6963ccf359bdd73cc653345d2f8a94eb28b6c6548`
 
 ## `apk` (`.apk`-based packages)
 
@@ -173,6 +173,23 @@ libapk-3.0.8-r0 installed size:
 
 libapk-3.0.8-r0 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `libatomic`
+
+```console
+libatomic-15.2.0-r2 description:
+GCC Atomic library
+
+libatomic-15.2.0-r2 webpage:
+https://gcc.gnu.org
+
+libatomic-15.2.0-r2 installed size:
+29 KiB
+
+libatomic-15.2.0-r2 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
