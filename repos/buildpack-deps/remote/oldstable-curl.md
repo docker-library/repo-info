@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldstable-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:6a51d53f955bc1c56a25a9511b9b8ec5811cf29b06afcad21b54f23e7c040537
+$ docker pull buildpack-deps@sha256:5f8a65a7e3b419450aebd73c24e3ce8b25810354eccd7ff6f673b0c387479131
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -73,54 +73,54 @@ $ docker pull buildpack-deps@sha256:9e6b986f76c329d1591792146d9299e56f9f94abf9ae
 ### `buildpack-deps:oldstable-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:ed55b87bec3f2645aa35993f893f1dc8d187b423039881ac6b12f18e2a9d0830
+$ docker pull buildpack-deps@sha256:e0851afd919393c8bfbcff6c166fe1d6c918b0e2da9cf5dc4d4442efb2b1ce64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.0 MB (65988908 bytes)**  
+-	Total Size: **66.0 MB (65988250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bf7fa389a09947bf705018135a15d151ee7766806d171e4cdb0179733509df3`
+-	Image ID: `sha256:3f23a7ff0033cc6d9a490fd373f7307028db104679e3818f0a5d1672e3d7c94e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1791158400'
-# Tue, 06 Oct 2026 02:23:59 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
+# Wed, 21 Oct 2026 01:28:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:54b36b054c7cd92d990fdbe776041bda41bca67549e7f2f5b71aa81632707ced`  
-		Last Modified: Tue, 06 Oct 2026 00:13:12 GMT  
-		Size: 44.2 MB (44213912 bytes)  
+	-	`sha256:0e6c3aa2596e24d9a17b151f95f8e195e564ddb757b91b91b71a17fcb3d66860`  
+		Last Modified: Tue, 20 Oct 2026 23:29:51 GMT  
+		Size: 44.2 MB (44219795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d6b6172c735529bdb9ddec421bbd50381be57cbdde9600e8834517a79e2dbd5`  
-		Last Modified: Tue, 06 Oct 2026 02:24:08 GMT  
-		Size: 21.8 MB (21774996 bytes)  
+	-	`sha256:3ad4f19b42174763c21417798727f47dfa19a991678ae80c71f307fc6d78c84e`  
+		Last Modified: Wed, 21 Oct 2026 01:28:56 GMT  
+		Size: 21.8 MB (21768455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oldstable-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:36b94e650655d80ee57b9e7a45d957a56c3b193681ddbcfe129efbd9f9013205
+$ docker pull buildpack-deps@sha256:fe72c7ebd4af1aa35a541a786cc9d88b8bfbfde120c50ed1545484c7d4bd2e4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4528039 bytes)**  
+-	Total Size: **4.5 MB (4526745 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b9b9b9c70029228d9b2f0ca1cc3add4aa742a281161563b7668d0c2c965c80b`
+-	Image ID: `sha256:877d7a3bf5226e5daaef2bc5b46436f9067046eb9a7b224b027fd6e8a94816e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d7fc7ed1968ea372411bb0e2b0f67bad6daebcd78ecf998d4bed561eb69b32b1`  
-		Last Modified: Tue, 06 Oct 2026 02:24:07 GMT  
-		Size: 4.5 MB (4521159 bytes)  
+	-	`sha256:e094dc15d0104ded8eab677f252d8091230559f662499004eda48064b74d56ec`  
+		Last Modified: Wed, 21 Oct 2026 01:28:55 GMT  
+		Size: 4.5 MB (4519864 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f43e2800cfb10cfa6eaf6ce847ac20b60b9a5183f8c14f501b58ed37d4850b72`  
-		Last Modified: Tue, 06 Oct 2026 02:24:07 GMT  
-		Size: 6.9 KB (6880 bytes)  
+	-	`sha256:0035132c4ec86b89980e16c4d0c6b381a882ade5d5217cde7143d52098eff61a`  
+		Last Modified: Wed, 21 Oct 2026 01:28:55 GMT  
+		Size: 6.9 KB (6881 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:oldstable-curl` - linux; arm64 variant v8
@@ -179,105 +179,105 @@ $ docker pull buildpack-deps@sha256:02ca9538aa5a0e9a8acd275ff263a83e7ea82c6d5c21
 ### `buildpack-deps:oldstable-curl` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:9762839b0f30e3aec9c74e2f0518717b4193456c04095e6559617bb79b76bdfe
+$ docker pull buildpack-deps@sha256:747e33bb9e4b2c34c51c5f49e65a275425dff6344a3853cd43a17920b512dee9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.2 MB (74213658 bytes)**  
+-	Total Size: **74.2 MB (74213572 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4d18e750aaad986ee4fa2a59797d04a40d55c89422ac7c9197bc865e2e66e37`
+-	Image ID: `sha256:756cde0888d8afdbeea4dd940a540d5604a96a9ec30a3eff99941750c340a6bc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1791158400'
-# Tue, 06 Oct 2026 01:45:43 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1792531975'
+# Wed, 21 Oct 2026 00:48:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:70e4ecc0352ac50b173cb5a25f4b7f4f26ea4742d8b6e94d48a7b74d771b75b1`  
-		Last Modified: Tue, 06 Oct 2026 00:13:08 GMT  
-		Size: 49.5 MB (49505330 bytes)  
+	-	`sha256:5c931c0576f2166fcb004f72a7907d54e3d103e9fe67720d889fdb25bfdfecd7`  
+		Last Modified: Tue, 20 Oct 2026 23:30:02 GMT  
+		Size: 49.5 MB (49511651 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19ed8fc62fd627a37f6ed2ee27586e27cad83b5283812efa97b05e073356a198`  
-		Last Modified: Tue, 06 Oct 2026 01:45:52 GMT  
-		Size: 24.7 MB (24708328 bytes)  
+	-	`sha256:cb278f446e61688e19b3920610d3ef09cddb78ec196f53a7ade170a7ad811ce5`  
+		Last Modified: Wed, 21 Oct 2026 00:48:38 GMT  
+		Size: 24.7 MB (24701921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oldstable-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:73dc3408befa06cd97819dbcdbaa3203149767a2bbde876a7f7a8ca5a2368419
+$ docker pull buildpack-deps@sha256:e2498c65cb2b003417b5ea2b45046f9ffc6a302f951b4df9a2fd2f31b3c35db6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4522785 bytes)**  
+-	Total Size: **4.5 MB (4521490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2889a7ea35d49327c7ca434755834f7160d3e719d792227acde3dc8b9d249702`
+-	Image ID: `sha256:2ea7459cfd137eb48b28462dd9de8bd46cb9e768f1e3dfca41b051a957d7fecf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1aabb74488c57d46bab3e06cbe28d4a7ea50cbe2dd23f1078f048e30de61161`  
-		Last Modified: Tue, 06 Oct 2026 01:45:52 GMT  
-		Size: 4.5 MB (4515990 bytes)  
+	-	`sha256:7ec343a51151195f9138f4762c208bb3c93faf38528b7db7172d464ceffc9b58`  
+		Last Modified: Wed, 21 Oct 2026 00:48:37 GMT  
+		Size: 4.5 MB (4514695 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6143599477e200716cee5d0f99370b232eb85571973a6e258e97da9a0401d1e`  
-		Last Modified: Tue, 06 Oct 2026 01:45:51 GMT  
+	-	`sha256:e0f4b9fb4c22fce086680a4ceecb0da09edc7d6c31ccf6e932bf2ddaedffb525`  
+		Last Modified: Wed, 21 Oct 2026 00:48:37 GMT  
 		Size: 6.8 KB (6795 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:oldstable-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:a7871cce82e49c411dd63a11a433d119371df2deb004710775539e2ef2ef7753
+$ docker pull buildpack-deps@sha256:f82965438647b11fa74ffe415556dc4503647eaad143b084e4c88f7453bb72e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77881007 bytes)**  
+-	Total Size: **77.9 MB (77879682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea2a0c787766d85e223820a900b067307f1ccd178fc9c0b6385fc255d287128e`
+-	Image ID: `sha256:2355c86f81a4fe6445ccfd4c175bd4803605ed1d335fbabae3251c8b1348a35b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 05 Oct 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1791158400'
-# Tue, 06 Oct 2026 04:38:11 GMT
+# Tue, 20 Oct 2026 21:32:55 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1792531975'
+# Wed, 21 Oct 2026 04:20:10 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:58cab6801365446bc48a7346cc006c3b6212080a71cffab9057f5537e165cff1`  
-		Last Modified: Tue, 06 Oct 2026 00:12:12 GMT  
-		Size: 52.4 MB (52362739 bytes)  
+	-	`sha256:0d8f63583ffe9dea650eb3c2d930ac17764dc3edd73dcc6becb0a476d51e6619`  
+		Last Modified: Tue, 20 Oct 2026 23:30:07 GMT  
+		Size: 52.4 MB (52364741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dfced81c6d63d57c61f0cc455733d3e2c3415e1c19808bf1b361b6b77a0db73`  
-		Last Modified: Tue, 06 Oct 2026 04:38:35 GMT  
-		Size: 25.5 MB (25518268 bytes)  
+	-	`sha256:9b1464e6ff9e88f81f47790e0b4d11c04499f7ec50f83eee4e30ca561e051dd7`  
+		Last Modified: Wed, 21 Oct 2026 04:20:38 GMT  
+		Size: 25.5 MB (25514941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oldstable-curl` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:50d607eb4bff71a0c15cd2004df9ed4bb221a2c720df3a999ef0bc337fde875d
+$ docker pull buildpack-deps@sha256:092e37ef900ba8371714ea1f240b37e80fe8294788b3b8a26312db6c3bea1695
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4530342 bytes)**  
+-	Total Size: **4.5 MB (4529048 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61e98ea5db9f5dbbaa83208b7aeded61e089bbb686ec3e3b46b9a5dad5db1f6a`
+-	Image ID: `sha256:155034f2e62f8145826f731558b0f6f0cd1a813bbb30f06114ea3b546b5446fc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f7c6ca67de7096239d41832300ad517bd5e7f6f586cdad023f08bf97fe38d22f`  
-		Last Modified: Tue, 06 Oct 2026 04:38:35 GMT  
-		Size: 4.5 MB (4523494 bytes)  
+	-	`sha256:4f15fe746d9d1ded5da0f23a9c4b1a83773ad699e52da45ca9a5c5f043f5e3de`  
+		Last Modified: Wed, 21 Oct 2026 04:20:38 GMT  
+		Size: 4.5 MB (4522199 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6acc55c1156532bf6614b34b3907bdc286f0fb490cac6386b1d88283c84fcee2`  
-		Last Modified: Tue, 06 Oct 2026 04:38:34 GMT  
-		Size: 6.8 KB (6848 bytes)  
+	-	`sha256:891e570fdfc53bac0a01e7f4d0267fb289c9e5e7f8164f0af6c540badd1ace34`  
+		Last Modified: Wed, 21 Oct 2026 04:20:37 GMT  
+		Size: 6.8 KB (6849 bytes)  
 		MIME: application/vnd.in-toto+json
