@@ -1,7 +1,7 @@
 ## `sapmachine:lts-jdk-headless-ubuntu-jammy`
 
 ```console
-$ docker pull sapmachine@sha256:7b98b7253639fce9592776cb0c38450a03a8b07bb33f74a218429fa3c9d8fb80
+$ docker pull sapmachine@sha256:9ab53b8cee84366609d5af62e828e6f6d2a924b9a245f046e67a5552f86bee9f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull sapmachine@sha256:7b98b7253639fce9592776cb0c38450a03a8b07bb33f74a2
 ### `sapmachine:lts-jdk-headless-ubuntu-jammy` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:20d8097ddaa2901f44da789c749772006a20d5a46cba6f3274d75d7084551eb9
+$ docker pull sapmachine@sha256:5d7a35df57d56bf03274177ed5067349323781a8f7c28df8c9141a4ed33201fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.5 MB (252521978 bytes)**  
+-	Total Size: **166.5 MB (166542718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7544204cf20729d2c38c99467808a08edc20ebdf6227c7808fe3c306021e7175`
+-	Image ID: `sha256:cdbd82c615f03482ccb61cbbd56e716e3271c17f8b5f82f336a777e61730cb64`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36,11 +36,11 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:b6c410e935243e5623135210c34358091e8af5ff14851cb0f67195733b55d391 in / 
 # Fri, 02 Oct 2026 10:21:06 GMT
 CMD ["/bin/bash"]
-# Sat, 17 Oct 2026 00:39:36 GMT
-RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /usr/share/keyrings/sapmachine.gpg &&     {         echo 'Types: deb';         echo 'URIs: https://dist.sapmachine.io/debian';         echo 'Suites: stable';         echo 'Components: main';         echo 'Architectures: amd64 arm64 ppc64el';         echo 'Signed-By: /usr/share/keyrings/sapmachine.gpg';     } > /etc/apt/sources.list.d/sapmachine.sources &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk-headless=25.0.4.1 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:39:36 GMT
+# Wed, 21 Oct 2026 22:13:21 GMT
+RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /usr/share/keyrings/sapmachine.gpg &&     {         echo 'Types: deb';         echo 'URIs: https://dist.sapmachine.io/debian';         echo 'Suites: stable';         echo 'Components: main';         echo 'Architectures: amd64 arm64 ppc64el';         echo 'Signed-By: /usr/share/keyrings/sapmachine.gpg';     } > /etc/apt/sources.list.d/sapmachine.sources &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk-headless=25.0.5 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
+# Wed, 21 Oct 2026 22:13:21 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-25
-# Sat, 17 Oct 2026 00:39:36 GMT
+# Wed, 21 Oct 2026 22:13:21 GMT
 CMD ["jshell"]
 ```
 
@@ -49,45 +49,45 @@ CMD ["jshell"]
 		Last Modified: Fri, 02 Oct 2026 11:08:26 GMT  
 		Size: 29.8 MB (29752476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d826431a0f40d65c412176e623d65c5401f6ecda7072e93c9c591e448d70326`  
-		Last Modified: Sat, 17 Oct 2026 00:40:00 GMT  
-		Size: 222.8 MB (222769502 bytes)  
+	-	`sha256:bf75aa7a0a195242328cb5a78cce5764595ac7ce6b6cd18957dbaaaebfd2a3fe`  
+		Last Modified: Wed, 21 Oct 2026 22:13:39 GMT  
+		Size: 136.8 MB (136790242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:lts-jdk-headless-ubuntu-jammy` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:078a2198836cd8e29b850507026955d9af65bcfc82cbff47da8a96eda9061d4a
+$ docker pull sapmachine@sha256:045b76091c0f33207d6f145d0f4f49d1a19cd37a8842d740d0ab843bec8f06b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2379997 bytes)**  
+-	Total Size: **2.3 MB (2334783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb51bfe8bd3a046e05b32989a81f463354bf6b16aea257549e8024caf37428ca`
+-	Image ID: `sha256:7c146d9cfced9cbc3e9e16d796a48e5206b756c4a9d16ee6ab1d4fed9bc012c4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6062464b58a0ac61f022e98934e66fec02fbbc294230eace9b485adfc944e79b`  
-		Last Modified: Sat, 17 Oct 2026 00:39:55 GMT  
-		Size: 2.4 MB (2369664 bytes)  
+	-	`sha256:e6acbbea2b67d6b0f93002f3a785787478e162c826778b891c88fd5341772b91`  
+		Last Modified: Wed, 21 Oct 2026 22:13:36 GMT  
+		Size: 2.3 MB (2324461 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:17881f58dddfa8b229ab0fc9f63ba11ff0fea7829744400426d9f9c642dff42a`  
-		Last Modified: Sat, 17 Oct 2026 00:39:55 GMT  
-		Size: 10.3 KB (10333 bytes)  
+	-	`sha256:aeb6fe046de72896ce37a90b4547ba0ab5eb9bddafc9c1ad140ef042c5dc62f7`  
+		Last Modified: Wed, 21 Oct 2026 22:13:35 GMT  
+		Size: 10.3 KB (10322 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sapmachine:lts-jdk-headless-ubuntu-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull sapmachine@sha256:c6baabe074521048cb28ae2e7a027c48ea5b2141e409a26bc7f1d61bc54c0f06
+$ docker pull sapmachine@sha256:bc3ea81f38dbadc976b73a04bb92472a793b1c9d7b79c7188b2c3c3180bbee75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.2 MB (248174244 bytes)**  
+-	Total Size: **163.4 MB (163421319 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9db6c903a8e27dce716fceb8af74e7b8c2690f28acc89d1a0cbbbb0067e8f67`
+-	Image ID: `sha256:cd5abd2864d2f5eb6db0817f62aec205917aa19c188c38bd12899f295aebe2c7`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -101,11 +101,11 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:1e8b3941ec802b3e9a687b06bf141aa99b460bda277875ad29712897c6622f25 in / 
 # Fri, 02 Oct 2026 10:22:46 GMT
 CMD ["/bin/bash"]
-# Sat, 17 Oct 2026 00:39:24 GMT
-RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /usr/share/keyrings/sapmachine.gpg &&     {         echo 'Types: deb';         echo 'URIs: https://dist.sapmachine.io/debian';         echo 'Suites: stable';         echo 'Components: main';         echo 'Architectures: amd64 arm64 ppc64el';         echo 'Signed-By: /usr/share/keyrings/sapmachine.gpg';     } > /etc/apt/sources.list.d/sapmachine.sources &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk-headless=25.0.4.1 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:39:24 GMT
+# Wed, 21 Oct 2026 22:45:58 GMT
+RUN apt-get update &&     apt-get -y --no-install-recommends install ca-certificates gnupg &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23 &&     chmod 644 /usr/share/keyrings/sapmachine.gpg &&     {         echo 'Types: deb';         echo 'URIs: https://dist.sapmachine.io/debian';         echo 'Suites: stable';         echo 'Components: main';         echo 'Architectures: amd64 arm64 ppc64el';         echo 'Signed-By: /usr/share/keyrings/sapmachine.gpg';     } > /etc/apt/sources.list.d/sapmachine.sources &&     apt-get update &&     apt-get -y --no-install-recommends install sapmachine-25-jdk-headless=25.0.5 &&     apt-get remove -y --purge --autoremove ca-certificates gnupg &&     rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
+# Wed, 21 Oct 2026 22:45:58 GMT
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-25
-# Sat, 17 Oct 2026 00:39:24 GMT
+# Wed, 21 Oct 2026 22:45:58 GMT
 CMD ["jshell"]
 ```
 
@@ -114,33 +114,33 @@ CMD ["jshell"]
 		Last Modified: Fri, 02 Oct 2026 11:08:32 GMT  
 		Size: 27.7 MB (27684723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:476b8b5c080e847ad37c040a4ec62c5ad9196ffcb825b4078d2860b4efd0545b`  
-		Last Modified: Sat, 17 Oct 2026 00:39:49 GMT  
-		Size: 220.5 MB (220489521 bytes)  
+	-	`sha256:c8c9c85a9e500577936baf96330f7268a25e11fa4a242d002e2061adb4923e13`  
+		Last Modified: Wed, 21 Oct 2026 22:46:17 GMT  
+		Size: 135.7 MB (135736596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:lts-jdk-headless-ubuntu-jammy` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:995edeb463e298ccf0cee554819934eacc9aabc33590ae55d45983f4a6a4f8b3
+$ docker pull sapmachine@sha256:0b8545c1f02e0a44db5e4fdd29f33004c452ca8aaf5ced728cdbb0985002e791
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2379818 bytes)**  
+-	Total Size: **2.3 MB (2334605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea5c3b57b9ca39a7a61d92cccb6148c954d8fd4db7ce23ee47b6c5ff20f82628`
+-	Image ID: `sha256:66b99e3be0930aaff4d1800cbc06ae0f2bf1fac44dee5005f56d789030ad956a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:40d4f5d0b47433179180cbf40ca414d5c63c54cbc75419cb3ec143e82ae6f37b`  
-		Last Modified: Sat, 17 Oct 2026 00:39:43 GMT  
-		Size: 2.4 MB (2369357 bytes)  
+	-	`sha256:86636a5176333b102cb74527ddd21155dcb2c6407632829fcee475a79cf5c4d5`  
+		Last Modified: Wed, 21 Oct 2026 22:46:14 GMT  
+		Size: 2.3 MB (2324154 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6a68620b05a2c60b74cfbfd6c71eaba4a1c46600be771d9cb6041dc82b670e7e`  
-		Last Modified: Sat, 17 Oct 2026 00:39:43 GMT  
-		Size: 10.5 KB (10461 bytes)  
+	-	`sha256:bd4dab0eb88fe02f9b54122bb6bc104ee4e018a0a0b5c629983b491e813da79d`  
+		Last Modified: Wed, 21 Oct 2026 22:46:14 GMT  
+		Size: 10.5 KB (10451 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sapmachine:lts-jdk-headless-ubuntu-jammy` - linux; ppc64le
