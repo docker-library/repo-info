@@ -380,13 +380,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260601~26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e26.04.1.tar.xz' ca-certificates_20260601~26.04.1.tar.xz 267380 SHA512:d82662a6c959c6d2cbd463a986eda6a500bd1b4ae53e904bcabc3076b33b5662f93a52e69e15371694391a5fb12c313224a5447c73ab1b921cef0317e907b2f4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e26.04.1.dsc' ca-certificates_20260601~26.04.1.dsc 1769 SHA512:e8be457fd3aa8cacaf00e112858116c1b99f5af889f27f298a9880baea1b2a4014f07974c6bcbfa66ddf901271653daf7413b590d0bf26b6d488a6329bb92d14
-```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
@@ -570,10 +566,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.18.0-1ubuntu2.8
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.debian.tar.xz' curl_8.18.0-1ubuntu2.8.debian.tar.xz 112048 SHA512:5aad657d277992a5f5a8c51858da0d5cb03b14650747e93dfebcb490c70c84c4e8e96864383a6f24cb5b946d1c73c60580cd7384d3b39459f17563390cb66334
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.dsc' curl_8.18.0-1ubuntu2.8.dsc 3270 SHA512:6211ab001fc394e7903b0932fe00916e2ffbf802f1df9c94378d4b819b702ed04d24a97b02aab1fe6b22a18ae81851e41ce60e3c85a34aa1f5c5156587c289f8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz' curl_8.18.0.orig.tar.gz 4182005 SHA512:84f193f28369ccb7fba0d8933cfc24f5fbb282b046e7e8c2c1a0da35db8ec13d17e6407c240ce3a12cf4dccac62e5919bd98f3add77065408c6259cfe1071575
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0.orig.tar.gz.asc' curl_8.18.0.orig.tar.gz.asc 488 SHA512:fd31f4ff1dcb6c13f200cc67639b3760e6c47bead73f53f8700d3387792b57c8abe60e23f27d15d3ff9197490aa549e5c9910b271294cc3f75f4b37dc3c9af0c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.debian.tar.xz' curl_8.18.0-1ubuntu2.8.debian.tar.xz 112048 SHA512:5aad657d277992a5f5a8c51858da0d5cb03b14650747e93dfebcb490c70c84c4e8e96864383a6f24cb5b946d1c73c60580cd7384d3b39459f17563390cb66334
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.18.0-1ubuntu2.8.dsc' curl_8.18.0-1ubuntu2.8.dsc 3270 SHA512:6211ab001fc394e7903b0932fe00916e2ffbf802f1df9c94378d4b819b702ed04d24a97b02aab1fe6b22a18ae81851e41ce60e3c85a34aa1f5c5156587c289f8
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9ubuntu3`
@@ -2860,10 +2856,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.8.13-1ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz' libx11_1.8.13.orig.tar.gz 3217264 SHA512:3dbcb261bbf56e8613b61e84af5d6924bf804a5fb90fe84f3bde46e4bec3b0c8c496d9e2a9b6717511fd37544fe84350092a744aa98640612f653640693d791e
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz.asc' libx11_1.8.13.orig.tar.gz.asc 833 SHA512:172a116ff7070e1b9729f1f76b2d8dda460885c307f9a410233f49c12abbc59ad374a0b34e2c56b34a62ecb38143c1369e5ac39acd5ed3c8218840522356e4f7
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.diff.gz' libx11_1.8.13-1ubuntu0.1.diff.gz 81337 SHA512:d97da1a32927d91c8faf23750a8ebca7bc30f02a6f2094fa73b2394dc800403fe39abd5133fc9b88cbf3a79e32ca8445f9f422b3bad7562fa3cc8146c36f8df2
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.dsc' libx11_1.8.13-1ubuntu0.1.dsc 2297 SHA512:2fa4875660800b6a029f8f89e84272b302656e191856654a9ea9333db0d2f9444063116f150ed3044b4b5e0afb006bae5914259fbc921d0dba6a22af2223354a
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz' libx11_1.8.13.orig.tar.gz 3217264 SHA512:3dbcb261bbf56e8613b61e84af5d6924bf804a5fb90fe84f3bde46e4bec3b0c8c496d9e2a9b6717511fd37544fe84350092a744aa98640612f653640693d791e
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13.orig.tar.gz.asc' libx11_1.8.13.orig.tar.gz.asc 833 SHA512:172a116ff7070e1b9729f1f76b2d8dda460885c307f9a410233f49c12abbc59ad374a0b34e2c56b34a62ecb38143c1369e5ac39acd5ed3c8218840522356e4f7
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.diff.gz' libx11_1.8.13-1ubuntu0.1.diff.gz 81337 SHA512:d97da1a32927d91c8faf23750a8ebca7bc30f02a6f2094fa73b2394dc800403fe39abd5133fc9b88cbf3a79e32ca8445f9f422b3bad7562fa3cc8146c36f8df2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.8.13-1ubuntu0.1.dsc' libx11_1.8.13-1ubuntu0.1.dsc 2297 SHA512:2fa4875660800b6a029f8f89e84272b302656e191856654a9ea9333db0d2f9444063116f150ed3044b4b5e0afb006bae5914259fbc921d0dba6a22af2223354a
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.11-1build2`
@@ -8632,11 +8628,6 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1.orig.tar.gz' zlib_1.3.dfsg+really1.3.1.orig.tar.gz 1325737 SHA512:068cb731e400cfc435db292839737938199d05d77b3010c7b9b87c9d0a127c7545198cea2a620da124ea3dfdde02ab63672aa01fc6cfd1e1ab5a2d6f9ca454c8
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1ubuntu3.1.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1ubuntu3.1.debian.tar.xz 60500 SHA512:eec25d8c74cf62e127b5c56f1851a8c586be9ea78bdd8b9008c2d3c0586a4f22889d7a21480695d107bf3e6bd46656379cc213986788206a93185421469a5af1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1ubuntu3.1.dsc' zlib_1.3.dfsg+really1.3.1-1ubuntu3.1.dsc 3171 SHA512:a9c741bed1bafe16de2298a4920776d4478112b7515605f42bef750520a5e8f5bfd88c97f1cbef72f4de1ae723eebb76389347a26e5d94d34215d90f6548f6b6
-```
