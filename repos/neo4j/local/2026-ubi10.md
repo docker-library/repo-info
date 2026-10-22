@@ -1,10 +1,10 @@
-# `neo4j:2026.09.0-community-ubi10`
+# `neo4j:2026.10.0-community-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3650ddbab7e2ccbaf4027e9be0f8f1c914348e9fa8f57857bf07d0dcf6a3d6c`
-- Created: `2026-10-13T23:00:26.923638299Z`
-- Virtual Size: ~ 688.3 Mb  
+- Image ID: `sha256:c5cf0d956ee561ee0da7721ac7502bf4f51aeec185c6bc9ddb947b2f3c457eac`
+- Created: `2026-10-21T21:50:35.219056239Z`
+- Virtual Size: ~ 664.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,14 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=cdaa0905d9a533bbbc474d239c268f69978982eb5ca3177666c04c9792d1c399`
-  - `NEO4J_TARBALL=neo4j-community-2026.09.0-unix.tar.gz`
+  - `NEO4J_SHA256=36f68f8af6ab86f29b2ebe46361f50fc9be68076156623e86d1e12b801169d6d`
+  - `NEO4J_TARBALL=neo4j-community-2026.10.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T11:35:38Z`
+  - `build-date=2026-10-20T00:48:29Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-13T11:35:38Z`
-  - `org.opencontainers.image.revision=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
-  - `release=1791891203`
+  - `org.opencontainers.image.created=2026-10-20T00:48:29Z`
+  - `org.opencontainers.image.revision=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
+  - `release=1792457157`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
+  - `vcs-ref=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -179,11 +179,16 @@ $ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10_2.2.src.rpm
 ```
 
-### `rpm` package: `curl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -637,11 +642,16 @@ $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
@@ -1179,13 +1189,13 @@ $ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
+### `rpm` package: `pcre2-10.44-1.5.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pcre2-syntax-10.44-1.0.1.el10.3.noarch`
+### `rpm` package: `pcre2-syntax-10.44-1.5.0.1.el10_2.noarch`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
