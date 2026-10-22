@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72017b0bc6b8b968b12a3323b2e1f57234a50023f8d90435a1122aa9a31486f4`
-- Created: `2026-09-17T21:56:11.912549632Z`
-- Virtual Size: ~ 294 Mb  
+- Image ID: `sha256:718a9d93279098ff03744dab8e08ddec6dd2181d79731e5c620ae195f5db369f`
+- Created: `2026-10-21T23:03:50.351757573Z`
+- Virtual Size: ~ 294.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -68,16 +68,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -170,16 +170,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -289,16 +289,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.4-r0 description:
+libexpat-2.9.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.4-r0 webpage:
+libexpat-2.9.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.4-r0 installed size:
+libexpat-2.9.0-r0 installed size:
 137 KiB
 
-libexpat-2.8.4-r0 license:
+libexpat-2.9.0-r0 license:
 MIT
 
 ```
@@ -340,16 +340,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -357,16 +357,16 @@ Libpng
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -374,16 +374,16 @@ Apache-2.0
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.13-r0 description:
+libx11-1.8.14-r0 description:
 X11 client-side library
 
-libx11-1.8.13-r0 webpage:
+libx11-1.8.14-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.13-r0 installed size:
+libx11-1.8.14-r0 installed size:
 2271 KiB
 
-libx11-1.8.13-r0 license:
+libx11-1.8.14-r0 license:
 X11
 
 ```
@@ -459,16 +459,16 @@ MIT
 ### `apk` package: `libxi`
 
 ```console
-libxi-1.8.3-r0 description:
+libxi-1.8.4-r0 description:
 X11 Input extension library
 
-libxi-1.8.3-r0 webpage:
+libxi-1.8.4-r0 webpage:
 https://www.x.org
 
-libxi-1.8.3-r0 installed size:
+libxi-1.8.4-r0 installed size:
 61 KiB
 
-libxi-1.8.3-r0 license:
+libxi-1.8.4-r0 license:
 MIT AND X11
 
 ```
@@ -476,16 +476,16 @@ MIT AND X11
 ### `apk` package: `libxrender`
 
 ```console
-libxrender-0.9.12-r0 description:
+libxrender-0.9.13-r0 description:
 X Rendering Extension client library
 
-libxrender-0.9.12-r0 webpage:
+libxrender-0.9.13-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxrender-0.9.12-r0 installed size:
+libxrender-0.9.13-r0 installed size:
 41 KiB
 
-libxrender-0.9.12-r0 license:
+libxrender-0.9.13-r0 license:
 MIT
 
 ```
@@ -493,16 +493,16 @@ MIT
 ### `apk` package: `libxtst`
 
 ```console
-libxtst-1.2.5-r0 description:
+libxtst-1.2.6-r0 description:
 X11 Testing -- Resource extension library
 
-libxtst-1.2.5-r0 webpage:
+libxtst-1.2.6-r0 webpage:
 https://wiki.freedesktop.org/xorg/
 
-libxtst-1.2.5-r0 installed size:
+libxtst-1.2.6-r0 installed size:
 25 KiB
 
-libxtst-1.2.5-r0 license:
+libxtst-1.2.6-r0 license:
 MIT
 
 ```
@@ -510,16 +510,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -527,16 +527,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-27-jdk`
 
 ```console
-sapmachine-27-jdk-27-r0 description:
+sapmachine-27-jdk-27.0.1-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-27-jdk-27-r0 webpage:
+sapmachine-27-jdk-27.0.1-r0 webpage:
 https://sapmachine.io
 
-sapmachine-27-jdk-27-r0 installed size:
+sapmachine-27-jdk-27.0.1-r0 installed size:
 256 MiB
 
-sapmachine-27-jdk-27-r0 license:
+sapmachine-27-jdk-27.0.1-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -646,16 +646,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
