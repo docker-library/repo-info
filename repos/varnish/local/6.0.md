@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29a7e1025b26628b45a9b7e4ff5f02a3ff85356efe0fe4dd40a21978b7ac1c28`
-- Created: `2026-10-06T01:35:53.188559814Z`
-- Virtual Size: ~ 305.66 Mb  
+- Image ID: `sha256:72076c60dd236742353ddddb4894bfa6fab584758f5ceda759fa16b463f68e88`
+- Created: `2026-10-21T00:40:41.986110791Z`
+- Virtual Size: ~ 305.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -321,11 +321,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20250419~deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u2`
 
 Binary Packages:
 
-- `ca-certificates=20250419~deb12u1`
+- `ca-certificates=20250419~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -336,16 +336,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u2.dsc' ca-certificates_20250419~deb12u2.dsc 1924 SHA256:a041820e6feb1effe0598f80e02fb62a40ef312678b85cfbb57d2864d0b5c0b7
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u2.tar.xz' ca-certificates_20250419~deb12u2.tar.xz 277416 SHA256:934942a985b2efd7a8c122cb1d42cd87911cf6ac365c545938619fcf268ea8f4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
@@ -1974,11 +1974,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.187-1`
+### `dpkg` source package: `linux=6.1.190-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.187-1`
+- `linux-libc-dev:amd64=6.1.190-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1993,17 +1993,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.187-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187-1.dsc' linux_6.1.187-1.dsc 399396 SHA256:9a66f3af2a0d90ad5ae16b059b7e299923d2fd0b1ad88c8f74c500e7abe6171a
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187.orig.tar.xz' linux_6.1.187.orig.tar.xz 137990204 SHA256:bec853ea2b0314c64012478964e10d3e094fa019799c926b8057157afdae23f6
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.187-1.debian.tar.xz' linux_6.1.187-1.debian.tar.xz 1904540 SHA256:0d61e19cd8b6dcf83ac5a35a930cc132c37879dfe2f50dd889440d6026104729
+$ apt-get source -qq --print-uris linux=6.1.190-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.dsc' linux_6.1.190-1.dsc 399396 SHA256:30c921025c1c3f26a102e1d52c9ef23516a8362803d0bdfe738c7a841081ca82
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190.orig.tar.xz' linux_6.1.190.orig.tar.xz 138088908 SHA256:710755123060832bb0b58d64d49c2c54e370ec671ec5b0cd0586780a5dee53e7
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.debian.tar.xz' linux_6.1.190-1.debian.tar.xz 1940480 SHA256:4923f2b60c4417b08c498fa1dfc529ff827a75dfd49f81153efb38243d9c53d5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.187-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.187-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.187-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.190-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.190-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.190-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -2439,11 +2439,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.36.0-7+deb12u3`
+### `dpkg` source package: `perl=5.36.0-7+deb12u4`
 
 Binary Packages:
 
-- `perl-base=5.36.0-7+deb12u3`
+- `perl-base=5.36.0-7+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -2478,18 +2478,18 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u3.dsc' perl_5.36.0-7+deb12u3.dsc 2357 SHA256:ac13a1eb3d4bb63ca8c91a3695ad563b10792a3e0f2f8b74d9600625a98a68fb
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7%2bdeb12u3.debian.tar.xz' perl_5.36.0-7+deb12u3.debian.tar.xz 177092 SHA256:5dfbe06b76fd23a4cc4aef586220845de535b245a9066ec0658eb60fbe21be1b
+$ apt-get source -qq --print-uris perl=5.36.0-7+deb12u4
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u4.dsc' perl_5.36.0-7+deb12u4.dsc 2922 SHA256:6f71e571ae69894ad2115013bbc3207e77dc796581e30a62be0297e7d90ee7b9
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.36.0-7%2bdeb12u4.debian.tar.xz' perl_5.36.0-7+deb12u4.debian.tar.xz 190620 SHA256:f49d224fa9a6a356e1140f95fb5c864864b5423c9aece94cc68b4d348a3694b6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.36.0-7+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.36.0-7+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-1`
 
