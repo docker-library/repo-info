@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:593e931e293cf70eded197d21c23fd382dd975859501729e80128c607e1e7256`
-- Created: `2026-10-15T18:55:54.856035613Z`
-- Virtual Size: ~ 1.03 Gb  
+- Image ID: `sha256:e2cd95dcfedc8281d1851cc17eea7c4895807067d8c6c1dfb20383f5d44ae20c`
+- Created: `2026-10-23T16:38:37.934167131Z`
+- Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.35`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.35.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.35.tar.xz.asc`
-  - `PHP_SHA256=ff4630fbbbd94359134b7d3c223db59329905bdc4f5a9ef93d257b48e358619a`
+  - `PHP_VERSION=8.3.36`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.36.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.36.tar.xz.asc`
+  - `PHP_SHA256=dd54693aa334c5c4d72e9aee96b082c2473750a18a6c1d105789c93a3b1692fd`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -99,16 +99,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -167,16 +167,16 @@ LGPL-2.1-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -235,16 +235,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.8-r0 description:
+c-ares-1.34.9-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.8-r0 webpage:
+c-ares-1.34.9-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.8-r0 installed size:
-237 KiB
+c-ares-1.34.9-r0 installed size:
+241 KiB
 
-c-ares-1.34.8-r0 license:
+c-ares-1.34.9-r0 license:
 MIT
 
 ```
@@ -252,16 +252,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260909-r0 description:
+ca-certificates-20261020-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260909-r0 webpage:
+ca-certificates-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260909-r0 installed size:
-210 KiB
+ca-certificates-20261020-r0 installed size:
+207 KiB
 
-ca-certificates-20260909-r0 license:
+ca-certificates-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -269,16 +269,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -303,16 +303,16 @@ LGPL-2.1-or-later OR MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.19-r0 description:
+cups-libs-2.4.19-r1 description:
 CUPS libraries
 
-cups-libs-2.4.19-r0 webpage:
+cups-libs-2.4.19-r1 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.19-r0 installed size:
-559 KiB
+cups-libs-2.4.19-r1 installed size:
+563 KiB
 
-cups-libs-2.4.19-r0 license:
+cups-libs-2.4.19-r1 license:
 Apache-2.0
 
 ```
@@ -456,16 +456,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.07.1-r0 description:
+ghostscript-10.08.0-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.07.1-r0 webpage:
+ghostscript-10.08.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.07.1-r0 installed size:
-62 MiB
+ghostscript-10.08.0-r0 installed size:
+57 MiB
 
-ghostscript-10.07.1-r0 license:
+ghostscript-10.08.0-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -643,33 +643,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.30-r0 description:
+imagemagick-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.30-r0 webpage:
+imagemagick-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.30-r0 installed size:
-3758 KiB
+imagemagick-7.1.2.34-r0 installed size:
+3777 KiB
 
-imagemagick-7.1.2.30-r0 license:
-ImageMagick
-
-```
-
-### `apk` package: `imagemagick-heic`
-
-```console
-imagemagick-heic-7.1.2.30-r0 description:
-Collection of tools and libraries for many image formats (HEIC support modules)
-
-imagemagick-heic-7.1.2.30-r0 webpage:
-https://imagemagick.org/
-
-imagemagick-heic-7.1.2.30-r0 installed size:
-46 KiB
-
-imagemagick-heic-7.1.2.30-r0 license:
+imagemagick-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.30-r0 description:
+imagemagick-jp2-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.30-r0 webpage:
+imagemagick-jp2-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.30-r0 installed size:
+imagemagick-jp2-7.1.2.34-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.30-r0 license:
+imagemagick-jp2-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.30-r0 description:
+imagemagick-jpeg-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.30-r0 webpage:
+imagemagick-jpeg-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.30-r0 installed size:
+imagemagick-jpeg-7.1.2.34-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.30-r0 license:
+imagemagick-jpeg-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.30-r0 description:
+imagemagick-libs-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.30-r0 webpage:
+imagemagick-libs-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.30-r0 installed size:
-4301 KiB
+imagemagick-libs-7.1.2.34-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.30-r0 license:
+imagemagick-libs-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pango`
 
 ```console
-imagemagick-pango-7.1.2.30-r0 description:
+imagemagick-pango-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (pango support modules)
 
-imagemagick-pango-7.1.2.30-r0 webpage:
+imagemagick-pango-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pango-7.1.2.30-r0 installed size:
+imagemagick-pango-7.1.2.34-r0 installed size:
 22 KiB
 
-imagemagick-pango-7.1.2.30-r0 license:
+imagemagick-pango-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -745,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.30-r0 description:
+imagemagick-pdf-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.30-r0 webpage:
+imagemagick-pdf-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.30-r0 installed size:
-125 KiB
+imagemagick-pdf-7.1.2.34-r0 installed size:
+133 KiB
 
-imagemagick-pdf-7.1.2.30-r0 license:
+imagemagick-pdf-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -762,16 +745,16 @@ ImageMagick
 ### `apk` package: `imagemagick-raw`
 
 ```console
-imagemagick-raw-7.1.2.30-r0 description:
+imagemagick-raw-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (RAW support modules)
 
-imagemagick-raw-7.1.2.30-r0 webpage:
+imagemagick-raw-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-raw-7.1.2.30-r0 installed size:
-22 KiB
+imagemagick-raw-7.1.2.34-r0 installed size:
+26 KiB
 
-imagemagick-raw-7.1.2.30-r0 license:
+imagemagick-raw-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -779,16 +762,16 @@ ImageMagick
 ### `apk` package: `imagemagick-svg`
 
 ```console
-imagemagick-svg-7.1.2.30-r0 description:
+imagemagick-svg-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (SVG support modules)
 
-imagemagick-svg-7.1.2.30-r0 webpage:
+imagemagick-svg-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-svg-7.1.2.30-r0 installed size:
-75 KiB
+imagemagick-svg-7.1.2.34-r0 installed size:
+79 KiB
 
-imagemagick-svg-7.1.2.30-r0 license:
+imagemagick-svg-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -796,16 +779,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.30-r0 description:
+imagemagick-tiff-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.30-r0 webpage:
+imagemagick-tiff-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.30-r0 installed size:
+imagemagick-tiff-7.1.2.34-r0 installed size:
 119 KiB
 
-imagemagick-tiff-7.1.2.30-r0 license:
+imagemagick-tiff-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -813,16 +796,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.30-r0 description:
+imagemagick-webp-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.30-r0 webpage:
+imagemagick-webp-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.30-r0 installed size:
+imagemagick-webp-7.1.2.34-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.30-r0 license:
+imagemagick-webp-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -997,23 +980,6 @@ BSD-2-Clause
 
 ```
 
-### `apk` package: `libde265`
-
-```console
-libde265-1.0.18-r0 description:
-Open h.265 video codec implementation
-
-libde265-1.0.18-r0 webpage:
-https://github.com/strukturag/libde265
-
-libde265-1.0.18-r0 installed size:
-814 KiB
-
-libde265-1.0.18-r0 license:
-LGPL-3.0-or-later
-
-```
-
 ### `apk` package: `libeconf`
 
 ```console
@@ -1034,16 +1000,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.5-r0 description:
+libexpat-2.9.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.5-r0 webpage:
+libexpat-2.9.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.5-r0 installed size:
+libexpat-2.9.0-r0 installed size:
 137 KiB
 
-libexpat-2.8.5-r0 license:
+libexpat-2.9.0-r0 license:
 MIT
 
 ```
@@ -1113,91 +1079,6 @@ libgomp-15.2.0-r5 installed size:
 
 libgomp-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libheif`
-
-```console
-libheif-1.23.4-r0 description:
-ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
-
-libheif-1.23.4-r0 webpage:
-https://www.libde265.org/
-
-libheif-1.23.4-r0 installed size:
-1850 KiB
-
-libheif-1.23.4-r0 license:
-LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libheif-dav1d`
-
-```console
-libheif-dav1d-1.23.4-r0 description:
-libheif AVIF/AV1 decoder plugin using dav1d
-
-libheif-dav1d-1.23.4-r0 webpage:
-https://www.libde265.org/
-
-libheif-dav1d-1.23.4-r0 installed size:
-17 KiB
-
-libheif-dav1d-1.23.4-r0 license:
-LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libheif-jpeg`
-
-```console
-libheif-jpeg-1.23.4-r0 description:
-libheif JPEG decoder and encoder plugins for JPEG-in-HEIF images
-
-libheif-jpeg-1.23.4-r0 webpage:
-https://www.libde265.org/
-
-libheif-jpeg-1.23.4-r0 installed size:
-31 KiB
-
-libheif-jpeg-1.23.4-r0 license:
-LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libheif-libde265`
-
-```console
-libheif-libde265-1.23.4-r0 description:
-libheif HEIC/HEVC (H.265) decoder plugin using libde265
-
-libheif-libde265-1.23.4-r0 webpage:
-https://www.libde265.org/
-
-libheif-libde265-1.23.4-r0 installed size:
-17 KiB
-
-libheif-libde265-1.23.4-r0 license:
-LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libheif-openjpeg`
-
-```console
-libheif-openjpeg-1.23.4-r0 description:
-libheif JPEG 2000 encoder and decoder plugins using OpenJPEG
-
-libheif-openjpeg-1.23.4-r0 webpage:
-https://www.libde265.org/
-
-libheif-openjpeg-1.23.4-r0 installed size:
-35 KiB
-
-libheif-openjpeg-1.23.4-r0 license:
-LGPL-3.0-or-later
 
 ```
 
@@ -1697,16 +1578,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.13-r0 description:
+libx11-1.8.14-r0 description:
 X11 client-side library
 
-libx11-1.8.13-r0 webpage:
+libx11-1.8.14-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.13-r0 installed size:
+libx11-1.8.14-r0 installed size:
 2271 KiB
 
-libx11-1.8.13-r0 license:
+libx11-1.8.14-r0 license:
 X11
 
 ```
@@ -1816,16 +1697,16 @@ MIT
 ### `apk` package: `libxrender`
 
 ```console
-libxrender-0.9.12-r0 description:
+libxrender-0.9.13-r0 description:
 X Rendering Extension client library
 
-libxrender-0.9.12-r0 webpage:
+libxrender-0.9.13-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxrender-0.9.12-r0 installed size:
+libxrender-0.9.13-r0 installed size:
 41 KiB
 
-libxrender-0.9.12-r0 license:
+libxrender-0.9.13-r0 license:
 MIT
 
 ```
@@ -1901,16 +1782,16 @@ BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -1918,16 +1799,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1969,16 +1850,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
