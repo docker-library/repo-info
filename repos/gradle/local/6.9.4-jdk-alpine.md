@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e10e653588ec25f2168f0add60bad549281fea6f841a5e455fb3ceb0b1d7f56e`
-- Created: `2026-10-02T23:50:22.719829647Z`
-- Virtual Size: ~ 558.03 Mb  
+- Image ID: `sha256:3acaacabf4d1ce9900978f55f94d8a31f36c3d1c70bfa067db1709a54340def0`
+- Created: `2026-10-21T23:31:00.678563955Z`
+- Virtual Size: ~ 551.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -92,16 +92,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -245,16 +245,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.8-r0 description:
+c-ares-1.34.9-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.8-r0 webpage:
+c-ares-1.34.9-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.8-r0 installed size:
-237 KiB
+c-ares-1.34.9-r0 installed size:
+241 KiB
 
-c-ares-1.34.8-r0 license:
+c-ares-1.34.9-r0 license:
 MIT
 
 ```
@@ -262,16 +262,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260909-r0 description:
+ca-certificates-20261020-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260909-r0 webpage:
+ca-certificates-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260909-r0 installed size:
-210 KiB
+ca-certificates-20261020-r0 installed size:
+207 KiB
 
-ca-certificates-20260909-r0 license:
+ca-certificates-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -279,16 +279,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -500,16 +500,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.7.1-r1 description:
+git-lfs-3.7.1-r2 description:
 Git extension for versioning large files
 
-git-lfs-3.7.1-r1 webpage:
+git-lfs-3.7.1-r2 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.7.1-r1 installed size:
+git-lfs-3.7.1-r2 installed size:
 14 MiB
 
-git-lfs-3.7.1-r1 license:
+git-lfs-3.7.1-r2 license:
 MIT
 
 ```
@@ -840,16 +840,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.5-r0 description:
+libexpat-2.9.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.5-r0 webpage:
+libexpat-2.9.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.5-r0 installed size:
+libexpat-2.9.0-r0 installed size:
 137 KiB
 
-libexpat-2.8.5-r0 license:
+libexpat-2.9.0-r0 license:
 MIT
 
 ```
@@ -1282,16 +1282,16 @@ BSD-2-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -1333,16 +1333,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1707,16 +1707,16 @@ GPL-2.0-or-later
 ### `apk` package: `py3-tzdata`
 
 ```console
-py3-tzdata-2025.3-r1 description:
+py3-tzdata-2026.4-r0 description:
 Python package wrapping the IANA time zone database
 
-py3-tzdata-2025.3-r1 webpage:
+py3-tzdata-2026.4-r0 webpage:
 https://github.com/python/tzdata
 
-py3-tzdata-2025.3-r1 installed size:
-570 KiB
+py3-tzdata-2026.4-r0 installed size:
+567 KiB
 
-py3-tzdata-2025.3-r1 license:
+py3-tzdata-2026.4-r0 license:
 Apache-2.0
 
 ```
@@ -1724,16 +1724,16 @@ Apache-2.0
 ### `apk` package: `py3-tzdata-pyc`
 
 ```console
-py3-tzdata-pyc-2025.3-r1 description:
+py3-tzdata-pyc-2026.4-r0 description:
 Precompiled Python bytecode for py3-tzdata
 
-py3-tzdata-pyc-2025.3-r1 webpage:
+py3-tzdata-pyc-2026.4-r0 webpage:
 https://github.com/python/tzdata
 
-py3-tzdata-pyc-2025.3-r1 installed size:
+py3-tzdata-pyc-2026.4-r0 installed size:
 3757 B
 
-py3-tzdata-pyc-2025.3-r1 license:
+py3-tzdata-pyc-2026.4-r0 license:
 Apache-2.0
 
 ```
@@ -2047,16 +2047,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
@@ -2115,16 +2115,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```

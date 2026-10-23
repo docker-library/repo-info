@@ -1,10 +1,10 @@
-# `gradle:9.8.1-jdk25-ubi`
+# `gradle:9.8.2-jdk25-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:916a30c6b7dcfa8c0893d230eb2b0e3317046c38e924d43b6b23261a97b77cd0`
-- Created: `2026-10-13T23:10:41.991464965Z`
-- Virtual Size: ~ 742.14 Mb  
+- Image ID: `sha256:7bc4e0d4453246fdb687e862f014a1617192d89b8fdaa8c70d0b3fd1ec9fc71d`
+- Created: `2026-10-21T21:56:29.663299495Z`
+- Virtual Size: ~ 742.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.4.1+1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.1`
+  - `GRADLE_VERSION=9.8.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T11:35:38Z`
+  - `build-date=2026-10-20T00:48:29Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-13T11:35:38Z`
-  - `org.opencontainers.image.revision=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
-  - `release=1791891203`
+  - `org.opencontainers.image.created=2026-10-20T00:48:29Z`
+  - `org.opencontainers.image.revision=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
+  - `release=1792457157`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=4988974e41f8d667ce04e92cdb152c9dc1f5d08f`
+  - `vcs-ref=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -313,12 +313,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.5.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 

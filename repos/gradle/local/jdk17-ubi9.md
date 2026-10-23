@@ -1,10 +1,10 @@
-# `gradle:9.8.1-jdk17-ubi9`
+# `gradle:9.8.2-jdk17-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a51ea37b0ac4ac30d8af947551a7be8138493696f361ef4aa034be81a147b509`
-- Created: `2026-10-13T23:10:44.060276376Z`
-- Virtual Size: ~ 746.88 Mb  
+- Image ID: `sha256:c68ff3f17630cc017d92c08da5783d07b937dd2fe7921919a92bac6baeac0451`
+- Created: `2026-10-20T17:53:37.733928743Z`
+- Virtual Size: ~ 747.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.20.1+1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.1`
+  - `GRADLE_VERSION=9.8.2`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-10-13T13:35:30Z`
@@ -358,12 +358,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.5.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
 
@@ -1492,23 +1487,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssh-9.9p1-12.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-12.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssh-clients-9.9p1-12.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssh-clients-9.9p1-12.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-12.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-3.5.8-2.el9_8.x86_64`
 
@@ -2137,11 +2122,27 @@ $ dnf --quiet download --source --url perl-Time-Local-1.300-7.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Time-Local-1.300-7.el9.src.rpm
 ```
 
-### `rpm` package: `perl-URI-5.09-3.el9.noarch`
+### `rpm` package: `perl-URI-5.09-3.el9_8.1.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-URI-5.09-3.el9_8.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-URI-5.09-3.el9_8.1.src.rpm
+```
+
+### `rpm` package: `perl-Unicode-Normalize-1.27-461.el9.x86_64`
+
+Licenses (from `rpm --query`): GPL+ or Artistic
+
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Unicode-Normalize-1.27-461.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Unicode-Normalize-1.27-461.el9.src.rpm
+```
 
 ### `rpm` package: `perl-base-2.27-484.el9_8.noarch`
 

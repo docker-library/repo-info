@@ -1,9 +1,9 @@
-# `gradle:9.8.1-jdk21-jammy`
+# `gradle:9.8.2-jdk21-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f564afd291a1a22587e6fc5731fe71b17a373e0e7e6bde521722155766b98cb1`
-- Created: `2026-10-17T01:20:32.350236948Z`
+- Image ID: `sha256:d38934b375c9c4c15885782ac09f0871b7712c3a67dfecf2bab54f438645eb9b`
+- Created: `2026-10-20T17:52:08.985134836Z`
 - Virtual Size: ~ 770.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.12.1+1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.1`
+  - `GRADLE_VERSION=9.8.2`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -323,13 +323,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260601~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.tar.xz' ca-certificates_20260601~22.04.1.tar.xz 266492 SHA512:a06f67c74305ad876aa84bf41d594ac902f58143d7d5998fb494630453573e6606ddae5c462ebeeb255c9c94b89fe44af79f59ddcf8b0bd369a9353bfce709d6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.dsc' ca-certificates_20260601~22.04.1.dsc 1850 SHA512:af78747c137e3d0fb7ba55c278792d4c028f177b3c4af49b92c835301371477eb54c2a73120e75611f9f4b8ced331d5d6bcea37f7bba41f0b3f27fcd9871ca29
-```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -408,10 +404,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.30
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.debian.tar.xz' curl_7.81.0-1ubuntu1.30.debian.tar.xz 110812 SHA512:a8653bedcc0b4e7f1a6ebdab22ef2ff49cf8f106bb2f8c0145475f317acc305e0b9c5a370e524323b339f49a4e787ac7b5b1fae5e1c40128b67586b344024c03
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.dsc' curl_7.81.0-1ubuntu1.30.dsc 3187 SHA512:e06b5fb92e18902e04a257607da580544f1c48a6c9d3abb7a812cb646bad9c15ef8b46e9f53fc701a7d6b95f61d5bf961e1861b33cd1dc182f514989227596a6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.debian.tar.xz' curl_7.81.0-1ubuntu1.30.debian.tar.xz 110812 SHA512:a8653bedcc0b4e7f1a6ebdab22ef2ff49cf8f106bb2f8c0145475f317acc305e0b9c5a370e524323b339f49a4e787ac7b5b1fae5e1c40128b67586b344024c03
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.dsc' curl_7.81.0-1ubuntu1.30.dsc 3187 SHA512:e06b5fb92e18902e04a257607da580544f1c48a6c9d3abb7a812cb646bad9c15ef8b46e9f53fc701a7d6b95f61d5bf961e1861b33cd1dc182f514989227596a6
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -809,12 +805,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.3.dsc' git-lfs_3.0.2-1ubuntu0.3.dsc 2778 SHA512:05e22b5e4afebf1ad5e5213e6a1d5df27b60b0bb5ff850beb172d3969bebe47c5275aef275464a2c95dcb2766e5a212ee0c49c79363515fea25206397cffd96e
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.17`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.18`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.17`
-- `git-man=1:2.34.1-1ubuntu1.17`
+- `git=1:2.34.1-1ubuntu1.18`
+- `git-man=1:2.34.1-1ubuntu1.18`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -839,10 +835,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.17
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA256:3a0755dd1cfab71a24dd96df3498c29cd0acd13b04f3d08bf933e81286db802c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.17.debian.tar.xz' git_2.34.1-1ubuntu1.17.debian.tar.xz 789788 SHA256:871b62444dd5d5433dc36e990f9e3b97161eeb734ab1afed62c141c5d9250f6c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.17.dsc' git_2.34.1-1ubuntu1.17.dsc 2976 SHA256:675f4b310e78fdab130b12837f80858c9f41d3e5e9d6ff9870a46ecfa4821c80
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.18
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.18.debian.tar.xz' git_2.34.1-1ubuntu1.18.debian.tar.xz 791212 SHA512:4e2c213c0cef796342aa8dac18cbbf69f092eee0b927af862696904048639a6af5595ec61c29e2605b1a5aacd76328e7601b71e4e22954fd5c993e831e0d4a88
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.18.dsc' git_2.34.1-1ubuntu1.18.dsc 2972 SHA512:2d0df99643d14689fe0e7b2e4d7c58b4583cd22aad472f13d4c2b6b8250636da9dbee23c438954b5e964d6c272e9ee2fef2ba03501a7b281226d2273df93cb51
 ```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.15`
@@ -2007,10 +2003,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.18
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.18.debian.tar.xz' openssh_8.9p1-3ubuntu0.18.debian.tar.xz 218248 SHA512:6917db66dfbcc40fcdf65f2fb5a9d47d7edba20224af621258edd42f96324ae52cc263932f95d017e7ccf107fc8f060e3649c5c3e0059133580edaf78b7cc644
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.18.dsc' openssh_8.9p1-3ubuntu0.18.dsc 3380 SHA512:b31983b88e43174a4644a7e18e49cfed6c323162f31bba965c2fa239695b8874671971727ac8f67bf27ea7f386f7d9f26525c06df09b1ff0b9ff40b2476df147
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.18.debian.tar.xz' openssh_8.9p1-3ubuntu0.18.debian.tar.xz 218248 SHA512:6917db66dfbcc40fcdf65f2fb5a9d47d7edba20224af621258edd42f96324ae52cc263932f95d017e7ccf107fc8f060e3649c5c3e0059133580edaf78b7cc644
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.18.dsc' openssh_8.9p1-3ubuntu0.18.dsc 3380 SHA512:b31983b88e43174a4644a7e18e49cfed6c323162f31bba965c2fa239695b8874671971727ac8f67bf27ea7f386f7d9f26525c06df09b1ff0b9ff40b2476df147
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.30`
@@ -2298,9 +2294,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.8
-'http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
-'http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.8.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.8.debian.tar.xz 24600 SHA512:3cde0de9e6c123c66e53738032d76580d04e055148d6ddd97a83cffd700bf8ee6b4d03e8f332004b1a5024b798c815f46cbd40192f0fc3137b044b6f56dc8a52
-'http://security.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.8.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.8.dsc 2159 SHA512:2156dd50ca49a90941458e67b408d153a20c4ab82d187a2f75bf37a4accf935cef276172affb0add262aaeaf97a8479598ed226f6b5e5efa00c2aba451e80129
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.8.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.8.debian.tar.xz 24600 SHA512:3cde0de9e6c123c66e53738032d76580d04e055148d6ddd97a83cffd700bf8ee6b4d03e8f332004b1a5024b798c815f46cbd40192f0fc3137b044b6f56dc8a52
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.8.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.8.dsc 2159 SHA512:2156dd50ca49a90941458e67b408d153a20c4ab82d187a2f75bf37a4accf935cef276172affb0add262aaeaf97a8479598ed226f6b5e5efa00c2aba451e80129
 ```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
@@ -2572,14 +2568,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.22
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.debian.tar.xz' systemd_249.11-0ubuntu3.22.debian.tar.xz 275816 SHA512:54dbb3c8a8ae9e41a8fe1ee3ea2d76d8c7ca03aa0b9a0ffd8b26fc2cd068ef82ac5d30d4b2dda00e36c2ff517d79ef99aa5128cf185bc99ea2f30f6b4e356f20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.dsc' systemd_249.11-0ubuntu3.22.dsc 5907 SHA512:ad316eccb5926c87ce9f9c113beac8ecc49acc0a2879fc98666f4f9cacdb111eb8e43e8ebc4b97c98a0eaea4a5675caf2eb8e6cbca5f3fb26eb07acd6af226df
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2841,15 +2832,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.2.5-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz' xz-utils_5.2.5.orig.tar.xz 1148824 SHA512:59266068a51cb616eb31b67cd8f07ffeb2288d1391c61665ae2ec6814465afac80fec69248f6a2f2db45b44475af001296a99af6a32287226a9c41419173ccbb
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz.asc' xz-utils_5.2.5.orig.tar.xz.asc 833 SHA512:582864ae306861ede34074ebfd23ab161ad3340ab4a068f727583de2bd2058da70dfe73019f4e70b8267e0e0c62f275da1e23f47d40c0b80038449b0ac335020
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.1.debian.tar.xz' xz-utils_5.2.5-2ubuntu1.1.debian.tar.xz 36020 SHA512:2baca5944d2af4f31e3f41d0e3a4c9e0fe03963210947347d0abcb28775165be1097f5b8c195162eb0c6a0a85694588ef0c7bb6a8315dc6c984f2320964c24a5
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.1.dsc' xz-utils_5.2.5-2ubuntu1.1.dsc 2467 SHA512:ce7120ae2e0320d6ff5d13419fc8b77cd368cc6f7c258d7ffde97e4522eb1e5595f6c418efe88dff2b67ebac9976e89dccfff0961b4912ac63d129dd2bb8b47f
-```
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu9.2`
 
