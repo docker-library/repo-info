@@ -369,10 +369,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.18.39-0ubuntu0.22.04.7
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz' bind9_9.18.39.orig.tar.xz 5383056 SHA512:fd6d45c9cb9c599d8770c18801fad2f177faf3a8af82948800d186ae6dc9eb2c894b61802def0841eb722c615c93c077b55368204f0cf2737a3c50d949efca07
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz.asc' bind9_9.18.39.orig.tar.xz.asc 833 SHA512:17e8aad74f1eaa42119f84ab3df05e85a1775f97c628259e00f7224d4f0d250050d022db670bc036b0ba05a3cd586de331da0b77c42ab58307711fed36c7ee9e
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.7.debian.tar.xz' bind9_9.18.39-0ubuntu0.22.04.7.debian.tar.xz 187868 SHA512:820c3a110312df0b9e6e309859b6bf462655c55493f829a28f9825d6360b9cdc60b379a73e21bd8719bfd3da8b8f34d43b8d8426277285f3b671d046e2b33498
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.7.dsc' bind9_9.18.39-0ubuntu0.22.04.7.dsc 3295 SHA512:87f2491a1fdd4d77af15bb043702804d4ae28c6f3bfbfb2dc37ad51161f3434037475e1206f7063e976390d7ee708acbb4991f37bd64c61dddadf08ab1b2c57b
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz' bind9_9.18.39.orig.tar.xz 5383056 SHA512:fd6d45c9cb9c599d8770c18801fad2f177faf3a8af82948800d186ae6dc9eb2c894b61802def0841eb722c615c93c077b55368204f0cf2737a3c50d949efca07
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39.orig.tar.xz.asc' bind9_9.18.39.orig.tar.xz.asc 833 SHA512:17e8aad74f1eaa42119f84ab3df05e85a1775f97c628259e00f7224d4f0d250050d022db670bc036b0ba05a3cd586de331da0b77c42ab58307711fed36c7ee9e
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.7.debian.tar.xz' bind9_9.18.39-0ubuntu0.22.04.7.debian.tar.xz 187868 SHA512:820c3a110312df0b9e6e309859b6bf462655c55493f829a28f9825d6360b9cdc60b379a73e21bd8719bfd3da8b8f34d43b8d8426277285f3b671d046e2b33498
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.39-0ubuntu0.22.04.7.dsc' bind9_9.18.39-0ubuntu0.22.04.7.dsc 3295 SHA512:87f2491a1fdd4d77af15bb043702804d4ae28c6f3bfbfb2dc37ad51161f3434037475e1206f7063e976390d7ee708acbb4991f37bd64c61dddadf08ab1b2c57b
 ```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.12`
@@ -492,13 +492,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260601~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.tar.xz' ca-certificates_20260601~22.04.1.tar.xz 266492 SHA512:a06f67c74305ad876aa84bf41d594ac902f58143d7d5998fb494630453573e6606ddae5c462ebeeb255c9c94b89fe44af79f59ddcf8b0bd369a9353bfce709d6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.dsc' ca-certificates_20260601~22.04.1.dsc 1850 SHA512:af78747c137e3d0fb7ba55c278792d4c028f177b3c4af49b92c835301371477eb54c2a73120e75611f9f4b8ced331d5d6bcea37f7bba41f0b3f27fcd9871ca29
-```
 
 ### `dpkg` source package: `cairo=1.16.0-5ubuntu2.1`
 
@@ -691,10 +687,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.30
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.debian.tar.xz' curl_7.81.0-1ubuntu1.30.debian.tar.xz 110812 SHA512:a8653bedcc0b4e7f1a6ebdab22ef2ff49cf8f106bb2f8c0145475f317acc305e0b9c5a370e524323b339f49a4e787ac7b5b1fae5e1c40128b67586b344024c03
-'http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.dsc' curl_7.81.0-1ubuntu1.30.dsc 3187 SHA512:e06b5fb92e18902e04a257607da580544f1c48a6c9d3abb7a812cb646bad9c15ef8b46e9f53fc701a7d6b95f61d5bf961e1861b33cd1dc182f514989227596a6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.debian.tar.xz' curl_7.81.0-1ubuntu1.30.debian.tar.xz 110812 SHA512:a8653bedcc0b4e7f1a6ebdab22ef2ff49cf8f106bb2f8c0145475f317acc305e0b9c5a370e524323b339f49a4e787ac7b5b1fae5e1c40128b67586b344024c03
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.30.dsc' curl_7.81.0-1ubuntu1.30.dsc 3187 SHA512:e06b5fb92e18902e04a257607da580544f1c48a6c9d3abb7a812cb646bad9c15ef8b46e9f53fc701a7d6b95f61d5bf961e1861b33cd1dc182f514989227596a6
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
@@ -849,9 +845,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dconf=0.40.0-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0.orig.tar.xz' dconf_0.40.0.orig.tar.xz 117764 SHA256:cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.debian.tar.xz' dconf_0.40.0-3ubuntu0.1.debian.tar.xz 11972 SHA256:a213354ab6b170723af2e2b6d9ccccdf877c74983b38a1cbfbc62ffd42e6308b
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.dsc' dconf_0.40.0-3ubuntu0.1.dsc 2791 SHA256:196dd73182ed593e11bdc84a903db57c0a53cbf43272cc762b4124b856ac087a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0.orig.tar.xz' dconf_0.40.0.orig.tar.xz 117764 SHA512:71396d71f24f47653181482b052fdfc63795c50c373de34e2fb93e16101745daa7e81192b79a102d5389911cea34138eedf3ac32bc80562018e8a7f31963559a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.debian.tar.xz' dconf_0.40.0-3ubuntu0.1.debian.tar.xz 11972 SHA512:5aa361319aa6303b344b29eb35a508efddb730239131ef6c9769f8ac9565544fd419ef1f82e780b8ca0ca04e06225b5ba54c62f97f60ceae9ac95a5a18091310
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.dsc' dconf_0.40.0-3ubuntu0.1.dsc 2791 SHA512:f4b72126e0ed20893279ddd4a2e6ee4a01e58beba74acb156ac0f7456a1f2050f1e8f58dd5004aaf4b44755121c561ef0007ea80af604a1931d659a1d59abcb0
 ```
 
 ### `dpkg` source package: `debconf=1.5.79ubuntu1`
@@ -3958,10 +3954,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.7.5-1ubuntu0.4
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA512:90474f5f95c3498a02100aeeb6b5ad7ae9076bc40a70cdd828bd881adac0bf278002186142f2760e5504cf82120f4869798831e0e2332ecbc6903e8f7c9114ab
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA512:75139b9f7b2f19aed3d3a66ea8b883480db2fa56d713bb0160ea8a0faba208da4c241768f9f2703f723f13906438eda3117f489d7d5d17fbe1cbb75b13c9935d
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.4.diff.gz' libx11_1.7.5-1ubuntu0.4.diff.gz 102864 SHA512:182c7cf27075ea357191d0df3eb731c727f39689d8ef53ab4022299004074d5e8fc29af4597555b23a36079107b4f794b68223f4af95cca7043801f50536d000
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.4.dsc' libx11_1.7.5-1ubuntu0.4.dsc 2349 SHA512:f3ad0da0b46889cdd00e025bdcbcb5de138300f5949f02764ef29e68c347ea45b335cfb11d6536a16b8ae7b46b11227e8fe4310b6a928253fd446c7a8fc23efa
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz' libx11_1.7.5.orig.tar.gz 3170022 SHA512:90474f5f95c3498a02100aeeb6b5ad7ae9076bc40a70cdd828bd881adac0bf278002186142f2760e5504cf82120f4869798831e0e2332ecbc6903e8f7c9114ab
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5.orig.tar.gz.asc' libx11_1.7.5.orig.tar.gz.asc 358 SHA512:75139b9f7b2f19aed3d3a66ea8b883480db2fa56d713bb0160ea8a0faba208da4c241768f9f2703f723f13906438eda3117f489d7d5d17fbe1cbb75b13c9935d
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.4.diff.gz' libx11_1.7.5-1ubuntu0.4.diff.gz 102864 SHA512:182c7cf27075ea357191d0df3eb731c727f39689d8ef53ab4022299004074d5e8fc29af4597555b23a36079107b4f794b68223f4af95cca7043801f50536d000
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.7.5-1ubuntu0.4.dsc' libx11_1.7.5-1ubuntu0.4.dsc 2349 SHA512:f3ad0da0b46889cdd00e025bdcbcb5de138300f5949f02764ef29e68c347ea45b335cfb11d6536a16b8ae7b46b11227e8fe4310b6a928253fd446c7a8fc23efa
 ```
 
 ### `dpkg` source package: `libxau=1:1.0.9-1build5`
@@ -5217,14 +5213,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.98-0ubuntu0.22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98.orig.tar.gz' nss_3.98.orig.tar.gz 76685475 SHA512:4f335c5c284eff6424745cc15e32037715a915f6f61687ec36a8ffaef0e45d152602a1be275bbb2f14650c7d258d6488430cdcf512b18ba7cb73cd43ac625681
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.4.debian.tar.xz' nss_3.98-0ubuntu0.22.04.4.debian.tar.xz 26904 SHA512:c8e8aadba406e38600438f909edf08f11c92dcc86bbf63b2f111b4397f5206788c3aee2e9d20c8287a6886cfde894d43915c4894c8fb0dacbdd2da3b2278ac79
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.4.dsc' nss_3.98-0ubuntu0.22.04.4.dsc 2294 SHA512:85abecd6c42fc6ec69830b25e4dc47b8d2456b0355da4e8d1cde7f75b855043ea6d640e077cc0732d709b1743f3336b4f58e6e6fba9ca5bb7bdd2daf753720a1
-```
 
 ### `dpkg` source package: `openldap=2.5.20+dfsg-0ubuntu0.22.04.1`
 
@@ -6065,14 +6056,9 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`)
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.22
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.debian.tar.xz' systemd_249.11-0ubuntu3.22.debian.tar.xz 275816 SHA512:54dbb3c8a8ae9e41a8fe1ee3ea2d76d8c7ca03aa0b9a0ffd8b26fc2cd068ef82ac5d30d4b2dda00e36c2ff517d79ef99aa5128cf185bc99ea2f30f6b4e356f20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.22.dsc' systemd_249.11-0ubuntu3.22.dsc 5907 SHA512:ad316eccb5926c87ce9f9c113beac8ecc49acc0a2879fc98666f4f9cacdb111eb8e43e8ebc4b97c98a0eaea4a5675caf2eb8e6cbca5f3fb26eb07acd6af226df
-```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.23`
 
@@ -6100,9 +6086,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.23
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.debian.tar.xz' systemd_249.11-0ubuntu3.23.debian.tar.xz 276508 SHA512:981460478a62152cbc7187ff99f6c06c3d5d1354ed0c887742cee496588e2e6fa355d05fb86f93bb6848d6a3ba059b0c70a5ea3adc9f035bba6f218041e744d7
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.dsc' systemd_249.11-0ubuntu3.23.dsc 5907 SHA512:b9442d3df8bb9e6356089afbba22f2b66e311e234e824bd29c5332336dc30c6cbfaefbb1de22bdbbf45d70134ebbb90338823ede15706796654ddba3b5325342
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.debian.tar.xz' systemd_249.11-0ubuntu3.23.debian.tar.xz 276508 SHA512:981460478a62152cbc7187ff99f6c06c3d5d1354ed0c887742cee496588e2e6fa355d05fb86f93bb6848d6a3ba059b0c70a5ea3adc9f035bba6f218041e744d7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.dsc' systemd_249.11-0ubuntu3.23.dsc 5907 SHA512:b9442d3df8bb9e6356089afbba22f2b66e311e234e824bd29c5332336dc30c6cbfaefbb1de22bdbbf45d70134ebbb90338823ede15706796654ddba3b5325342
 ```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
@@ -6662,15 +6648,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.2.5-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz' xz-utils_5.2.5.orig.tar.xz 1148824 SHA512:59266068a51cb616eb31b67cd8f07ffeb2288d1391c61665ae2ec6814465afac80fec69248f6a2f2db45b44475af001296a99af6a32287226a9c41419173ccbb
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz.asc' xz-utils_5.2.5.orig.tar.xz.asc 833 SHA512:582864ae306861ede34074ebfd23ab161ad3340ab4a068f727583de2bd2058da70dfe73019f4e70b8267e0e0c62f275da1e23f47d40c0b80038449b0ac335020
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.1.debian.tar.xz' xz-utils_5.2.5-2ubuntu1.1.debian.tar.xz 36020 SHA512:2baca5944d2af4f31e3f41d0e3a4c9e0fe03963210947347d0abcb28775165be1097f5b8c195162eb0c6a0a85694588ef0c7bb6a8315dc6c984f2320964c24a5
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.1.dsc' xz-utils_5.2.5-2ubuntu1.1.dsc 2467 SHA512:ce7120ae2e0320d6ff5d13419fc8b77cd368cc6f7c258d7ffde97e4522eb1e5595f6c418efe88dff2b67ebac9976e89dccfff0961b4912ac63d129dd2bb8b47f
-```
 
 ### `dpkg` source package: `zip=3.0-12build2`
 
