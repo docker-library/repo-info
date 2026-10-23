@@ -1,7 +1,7 @@
 ## `eclipse-mosquitto:2-openssl`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:3ce196dd1ec2c38618efe03edc85c5eb4f1d6095e4ab5bd41003ac4b4b014bf9
+$ docker pull eclipse-mosquitto@sha256:09b62ff32c2e7b64d4b431b9a89236073289b68db273de2b089edeb9b0d92b5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -96,144 +96,144 @@ $ docker pull eclipse-mosquitto@sha256:9c84ecc355825f63ea77707990d28d2c24a4cb823
 ### `eclipse-mosquitto:2-openssl` - linux; arm variant v6
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:b67b00337d6583276301ac817c0f7348c7e75c118614ebbabb965793c33ce43d
+$ docker pull eclipse-mosquitto@sha256:131e8032faa3ab93bd038c4b9c002ace9735e3b7e08f0fbe38e73d1651139206
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.0 MB (6997405 bytes)**  
+-	Total Size: **7.0 MB (6997602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2a11668c33a9615dd5e517cd8c30cb8d14d7d9d423575dfecff63435a3fd78d`
+-	Image ID: `sha256:36e291dcdb6c5d5bdfa830801db4e771a367ef2d28d34664453bef2f4fff20f2`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
-# Thu, 17 Sep 2026 20:37:42 GMT
-ADD alpine-minirootfs-3.23.6-armhf.tar.gz / # buildkit
-# Thu, 17 Sep 2026 20:37:42 GMT
+# Wed, 21 Oct 2026 20:46:42 GMT
+ADD alpine-minirootfs-3.23.7-armhf.tar.gz / # buildkit
+# Wed, 21 Oct 2026 20:46:42 GMT
 CMD ["/bin/sh"]
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 ENV VERSION=2.0.22 DOWNLOAD_SHA256=2f752589ef7db40260b633fbdb536e9a04b446a315138d64a7ff3c14e2de6b68 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 LABEL org.opencontainers.image.authors=Roger Light <roger@atchoo.org> org.opencontainers.image.title=eclipse-mosquitto org.opencontainers.image.description=Eclipse Mosquitto MQTT Broker org.opencontainers.image.url=https://mosquitto.org/ org.opencontainers.image.documentation=https://mosquitto.org/documentation/ org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto org.opencontainers.image.licenses=EPL-2.0 OR BSD-3-Clause org.opencontainers.image.version=2.0.22
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 RUN set -x &&     apk --no-cache add --virtual build-deps         build-base         cmake         cjson-dev         gnupg         libwebsockets-dev         linux-headers         openssl-dev         util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz &&     echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     found='';     for server in         hkps://keys.openpgp.org         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo "Fetching GPG key $GPG_KEYS from $server";         gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1;     gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc &&     mkdir -p /build/mosq &&     tar --strip=1 -xf /tmp/mosq.tar.gz -C /build/mosq &&     rm /tmp/mosq.tar.gz &&     make -C /build/mosq -j "$(nproc)"         CFLAGS="-Wall -O2 -I/build"         WITH_ADNS=no         WITH_DOCS=no         WITH_SHARED_LIBRARIES=yes         WITH_SRV=no         WITH_STRIP=yes         WITH_WEBSOCKETS=yes         prefix=/usr         binary &&     addgroup -S -g 1883 mosquitto 2>/dev/null &&     adduser -S -u 1883 -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log &&     install -d /usr/sbin/ &&     install -s -m755 /build/mosq/client/mosquitto_pub /usr/bin/mosquitto_pub &&     install -s -m755 /build/mosq/client/mosquitto_rr /usr/bin/mosquitto_rr &&     install -s -m755 /build/mosq/client/mosquitto_sub /usr/bin/mosquitto_sub &&     install -s -m644 /build/mosq/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so.1 &&     install -s -m755 /build/mosq/src/mosquitto /usr/sbin/mosquitto &&     install -s -m755 /build/mosq/apps/mosquitto_ctrl/mosquitto_ctrl /usr/bin/mosquitto_ctrl &&     install -s -m755 /build/mosq/apps/mosquitto_passwd/mosquitto_passwd /usr/bin/mosquitto_passwd &&     install -s -m755 /build/mosq/plugins/dynamic-security/mosquitto_dynamic_security.so /usr/lib/mosquitto_dynamic_security.so &&     install -m644 /build/mosq/mosquitto.conf /mosquitto/config/mosquitto.conf &&     install -Dm644 /build/mosq/epl-v20 /usr/share/licenses/mosquitto/epl-v20 &&     install -Dm644 /build/mosq/edl-v10 /usr/share/licenses/mosquitto/edl-v10 &&     chown -R mosquitto:mosquitto /mosquitto &&     apk --no-cache add         ca-certificates         cjson         libwebsockets         tzdata &&     apk del build-deps &&     rm -rf /build # buildkit
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 COPY docker-entrypoint.sh mosquitto-no-auth.conf / # buildkit
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 EXPOSE map[1883/tcp:{}]
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 17 Sep 2026 21:19:18 GMT
+# Fri, 23 Oct 2026 09:06:34 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:b0cea9f80ea5defd79b131eda614476b4cdbb6b45165432dd3dbf895cf504ccb`  
-		Last Modified: Thu, 17 Sep 2026 20:37:45 GMT  
-		Size: 3.6 MB (3554926 bytes)  
+	-	`sha256:c51236e1484aa501b6ebe7b03b49315973e0452deb44828e506af4e36af597f8`  
+		Last Modified: Wed, 21 Oct 2026 20:46:46 GMT  
+		Size: 3.6 MB (3558187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:829ccfc9a5be48589f65a8ba64e6e562bcb1f517890bd5b6288f5371fbd483a7`  
-		Last Modified: Thu, 17 Sep 2026 21:19:22 GMT  
-		Size: 3.4 MB (3442110 bytes)  
+	-	`sha256:2935ac951a448c88df9efc0a9b468cd78b04c120a188290dfd81042e479ffb31`  
+		Last Modified: Fri, 23 Oct 2026 09:06:38 GMT  
+		Size: 3.4 MB (3439047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6953ea3a7be1cd75b901e34e6f05dad34e9985f52dfbc5416e7115932746aed8`  
-		Last Modified: Thu, 17 Sep 2026 21:19:22 GMT  
-		Size: 369.0 B  
+	-	`sha256:21cc4aec7724c03604be7887309c53349deade33b61d0d98dd89b50b40f57346`  
+		Last Modified: Fri, 23 Oct 2026 09:06:38 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:a65dddef304f20ffdfa04107f8a1479277be328733ff4d2f21f6a49e841fa35f
+$ docker pull eclipse-mosquitto@sha256:2df6b1d9df6f3db9180c1f5353767d5287428c91145ab4773a546bd56210c667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.8 KB (19780 bytes)**  
+-	Total Size: **19.8 KB (19781 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e0da18b4fb10cdfd43c4af36307e570aaf9d579e841d6c8cf2c999b4dd67100`
+-	Image ID: `sha256:866b4db9fb24a4ef4de477a8461249bd3745c033ce7912e87a91cc5e91c8d611`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6db0f69886e241ee0d84f8fa7a64c4c21fada0422aecef22c5cdce08ed6cb90e`  
-		Last Modified: Thu, 17 Sep 2026 21:19:22 GMT  
-		Size: 19.8 KB (19780 bytes)  
+	-	`sha256:cd02f439a50e07743aecfb8e342c40627f72472309d90a5f15c73cad07bee1fc`  
+		Last Modified: Fri, 23 Oct 2026 09:06:38 GMT  
+		Size: 19.8 KB (19781 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-mosquitto:2-openssl` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:0ceb78cee662befe83695d7bcbcf008304f74fa33e624776bde68ed8e54ba1d5
+$ docker pull eclipse-mosquitto@sha256:cc0d09fe917228a8ade6f88964bf09602485baa485cbc1fa4e1f752f9ae8698f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.0 MB (8034387 bytes)**  
+-	Total Size: **8.0 MB (8035865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:563f767eef8d01d45277b2749279075c778cb45fc280bb42b60fef54d2061298`
+-	Image ID: `sha256:c2cf757f19a94f094ef2a2e56471a819551d4755e63d0b3ade470d697c072595`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
-# Thu, 17 Sep 2026 20:37:18 GMT
-ADD alpine-minirootfs-3.23.6-aarch64.tar.gz / # buildkit
-# Thu, 17 Sep 2026 20:37:18 GMT
+# Wed, 21 Oct 2026 20:46:49 GMT
+ADD alpine-minirootfs-3.23.7-aarch64.tar.gz / # buildkit
+# Wed, 21 Oct 2026 20:46:49 GMT
 CMD ["/bin/sh"]
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 ENV VERSION=2.0.22 DOWNLOAD_SHA256=2f752589ef7db40260b633fbdb536e9a04b446a315138d64a7ff3c14e2de6b68 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 LABEL org.opencontainers.image.authors=Roger Light <roger@atchoo.org> org.opencontainers.image.title=eclipse-mosquitto org.opencontainers.image.description=Eclipse Mosquitto MQTT Broker org.opencontainers.image.url=https://mosquitto.org/ org.opencontainers.image.documentation=https://mosquitto.org/documentation/ org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto org.opencontainers.image.licenses=EPL-2.0 OR BSD-3-Clause org.opencontainers.image.version=2.0.22
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 RUN set -x &&     apk --no-cache add --virtual build-deps         build-base         cmake         cjson-dev         gnupg         libwebsockets-dev         linux-headers         openssl-dev         util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz &&     echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     found='';     for server in         hkps://keys.openpgp.org         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo "Fetching GPG key $GPG_KEYS from $server";         gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1;     gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc &&     mkdir -p /build/mosq &&     tar --strip=1 -xf /tmp/mosq.tar.gz -C /build/mosq &&     rm /tmp/mosq.tar.gz &&     make -C /build/mosq -j "$(nproc)"         CFLAGS="-Wall -O2 -I/build"         WITH_ADNS=no         WITH_DOCS=no         WITH_SHARED_LIBRARIES=yes         WITH_SRV=no         WITH_STRIP=yes         WITH_WEBSOCKETS=yes         prefix=/usr         binary &&     addgroup -S -g 1883 mosquitto 2>/dev/null &&     adduser -S -u 1883 -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log &&     install -d /usr/sbin/ &&     install -s -m755 /build/mosq/client/mosquitto_pub /usr/bin/mosquitto_pub &&     install -s -m755 /build/mosq/client/mosquitto_rr /usr/bin/mosquitto_rr &&     install -s -m755 /build/mosq/client/mosquitto_sub /usr/bin/mosquitto_sub &&     install -s -m644 /build/mosq/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so.1 &&     install -s -m755 /build/mosq/src/mosquitto /usr/sbin/mosquitto &&     install -s -m755 /build/mosq/apps/mosquitto_ctrl/mosquitto_ctrl /usr/bin/mosquitto_ctrl &&     install -s -m755 /build/mosq/apps/mosquitto_passwd/mosquitto_passwd /usr/bin/mosquitto_passwd &&     install -s -m755 /build/mosq/plugins/dynamic-security/mosquitto_dynamic_security.so /usr/lib/mosquitto_dynamic_security.so &&     install -m644 /build/mosq/mosquitto.conf /mosquitto/config/mosquitto.conf &&     install -Dm644 /build/mosq/epl-v20 /usr/share/licenses/mosquitto/epl-v20 &&     install -Dm644 /build/mosq/edl-v10 /usr/share/licenses/mosquitto/edl-v10 &&     chown -R mosquitto:mosquitto /mosquitto &&     apk --no-cache add         ca-certificates         cjson         libwebsockets         tzdata &&     apk del build-deps &&     rm -rf /build # buildkit
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 COPY docker-entrypoint.sh mosquitto-no-auth.conf / # buildkit
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 EXPOSE map[1883/tcp:{}]
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 17 Sep 2026 21:14:58 GMT
+# Fri, 23 Oct 2026 08:52:08 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:ace1621be7ff15b54252f68393ac33181df7f3e095e36a5d9a9892031b357d31`  
-		Last Modified: Thu, 17 Sep 2026 20:37:23 GMT  
-		Size: 4.2 MB (4186056 bytes)  
+	-	`sha256:197a036d7c646d3e744af55598877c355ab789d97466837b69296bed05ca0d5f`  
+		Last Modified: Wed, 21 Oct 2026 20:46:55 GMT  
+		Size: 4.2 MB (4189494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10950f178bddfd7f637c47a4a7ce1391e670e9e6ef99a53054ec8d75d43c50c8`  
-		Last Modified: Thu, 17 Sep 2026 21:15:03 GMT  
-		Size: 3.8 MB (3847962 bytes)  
+	-	`sha256:9dba6cc3dbda71744b64e628c0cdebff24764fad0e55a1340eb2e180ea0a2af9`  
+		Last Modified: Fri, 23 Oct 2026 08:52:14 GMT  
+		Size: 3.8 MB (3846002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c35c90d29549dc4e280d7a641226728f90ce9423d8a62bc4c1dc74e0796a9c87`  
-		Last Modified: Thu, 17 Sep 2026 21:15:03 GMT  
+	-	`sha256:de6ff6a6f7d44e60980ce6068f66d280b3bfaf3cf5903f0714db1577df5fcb99`  
+		Last Modified: Fri, 23 Oct 2026 08:52:13 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:65377442cb00101bcf22f415429d5350bf61ef80db205e873267e77bf1bd162a
+$ docker pull eclipse-mosquitto@sha256:52b2e511aa70e98a45e265cb9461717f5afda63443da9dd217a3d8719f5e9657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **560.5 KB (560473 bytes)**  
+-	Total Size: **558.5 KB (558536 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:238b63544474960f0eda35d54faf2d132542283f09d17ce032194e6e63ed34c5`
+-	Image ID: `sha256:94cb233633de772bab09fa772b12a672067657e09b90f2fcbe710e74eda29b2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:877567d0c1e880ee2abd1237ec500af078a101390aa325e26ba89c47ea05103d`  
-		Last Modified: Thu, 17 Sep 2026 21:15:03 GMT  
-		Size: 540.4 KB (540445 bytes)  
+	-	`sha256:001a15ed906c19436abfffda283be8a1442d501d883a852240b332e08fe8d850`  
+		Last Modified: Fri, 23 Oct 2026 08:52:14 GMT  
+		Size: 538.5 KB (538508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3f71893d408906cb532c70142e808c4785431e598cf8f7b52bcfc7eb0eefd3c1`  
-		Last Modified: Thu, 17 Sep 2026 21:15:03 GMT  
+	-	`sha256:bcd2590ee50b6efba9401cad119d8adf5c3a7888b3afedac12590cae87ec39c0`  
+		Last Modified: Fri, 23 Oct 2026 08:52:13 GMT  
 		Size: 20.0 KB (20028 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -388,73 +388,73 @@ $ docker pull eclipse-mosquitto@sha256:290c2dddf33d4b688e8a54ecf2b21c0cc065a4b6b
 ### `eclipse-mosquitto:2-openssl` - linux; s390x
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:28be59988bfdc3c9b1311a066a17d6438907e6fc5182b9e4cfe4ad05342545b4
+$ docker pull eclipse-mosquitto@sha256:3006bcdad6b6fce74932a09e434ab9a32d5ec91198e647215d82e29757bcf257
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7322836 bytes)**  
+-	Total Size: **7.3 MB (7323771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0297a995a8a05b1b126a253a6cc617a43dfebcee347d8993690cda68103f2858`
+-	Image ID: `sha256:9f6760f7325118e16d42fec5fdd462af72a29cfc64d44c589c3a9a1ba26c9365`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
-# Thu, 17 Sep 2026 21:38:23 GMT
-ADD alpine-minirootfs-3.23.6-s390x.tar.gz / # buildkit
-# Thu, 17 Sep 2026 21:38:23 GMT
+# Wed, 21 Oct 2026 20:45:54 GMT
+ADD alpine-minirootfs-3.23.7-s390x.tar.gz / # buildkit
+# Wed, 21 Oct 2026 20:45:54 GMT
 CMD ["/bin/sh"]
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 ENV VERSION=2.0.22 DOWNLOAD_SHA256=2f752589ef7db40260b633fbdb536e9a04b446a315138d64a7ff3c14e2de6b68 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 LABEL org.opencontainers.image.authors=Roger Light <roger@atchoo.org> org.opencontainers.image.title=eclipse-mosquitto org.opencontainers.image.description=Eclipse Mosquitto MQTT Broker org.opencontainers.image.url=https://mosquitto.org/ org.opencontainers.image.documentation=https://mosquitto.org/documentation/ org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto org.opencontainers.image.licenses=EPL-2.0 OR BSD-3-Clause org.opencontainers.image.version=2.0.22
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 RUN set -x &&     apk --no-cache add --virtual build-deps         build-base         cmake         cjson-dev         gnupg         libwebsockets-dev         linux-headers         openssl-dev         util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz &&     echo "$DOWNLOAD_SHA256  /tmp/mosq.tar.gz" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc &&     export GNUPGHOME="$(mktemp -d)" &&     found='';     for server in         hkps://keys.openpgp.org         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo "Fetching GPG key $GPG_KEYS from $server";         gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$GPG_KEYS" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $GPG_KEYS" && exit 1;     gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /tmp/mosq.tar.gz.asc &&     mkdir -p /build/mosq &&     tar --strip=1 -xf /tmp/mosq.tar.gz -C /build/mosq &&     rm /tmp/mosq.tar.gz &&     make -C /build/mosq -j "$(nproc)"         CFLAGS="-Wall -O2 -I/build"         WITH_ADNS=no         WITH_DOCS=no         WITH_SHARED_LIBRARIES=yes         WITH_SRV=no         WITH_STRIP=yes         WITH_WEBSOCKETS=yes         prefix=/usr         binary &&     addgroup -S -g 1883 mosquitto 2>/dev/null &&     adduser -S -u 1883 -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log &&     install -d /usr/sbin/ &&     install -s -m755 /build/mosq/client/mosquitto_pub /usr/bin/mosquitto_pub &&     install -s -m755 /build/mosq/client/mosquitto_rr /usr/bin/mosquitto_rr &&     install -s -m755 /build/mosq/client/mosquitto_sub /usr/bin/mosquitto_sub &&     install -s -m644 /build/mosq/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so.1 &&     install -s -m755 /build/mosq/src/mosquitto /usr/sbin/mosquitto &&     install -s -m755 /build/mosq/apps/mosquitto_ctrl/mosquitto_ctrl /usr/bin/mosquitto_ctrl &&     install -s -m755 /build/mosq/apps/mosquitto_passwd/mosquitto_passwd /usr/bin/mosquitto_passwd &&     install -s -m755 /build/mosq/plugins/dynamic-security/mosquitto_dynamic_security.so /usr/lib/mosquitto_dynamic_security.so &&     install -m644 /build/mosq/mosquitto.conf /mosquitto/config/mosquitto.conf &&     install -Dm644 /build/mosq/epl-v20 /usr/share/licenses/mosquitto/epl-v20 &&     install -Dm644 /build/mosq/edl-v10 /usr/share/licenses/mosquitto/edl-v10 &&     chown -R mosquitto:mosquitto /mosquitto &&     apk --no-cache add         ca-certificates         cjson         libwebsockets         tzdata &&     apk del build-deps &&     rm -rf /build # buildkit
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 VOLUME [/mosquitto/data /mosquitto/log]
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 COPY docker-entrypoint.sh mosquitto-no-auth.conf / # buildkit
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 EXPOSE map[1883/tcp:{}]
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 17 Sep 2026 22:21:19 GMT
+# Fri, 23 Oct 2026 09:20:00 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:4387077d70188f8428b97ed5df25698ad5aa9b8967d00a98ebb627a3e08ae986`  
-		Last Modified: Thu, 17 Sep 2026 21:38:32 GMT  
-		Size: 3.7 MB (3713255 bytes)  
+	-	`sha256:4f7b52b02a0ce5cc0125984e2e978bec03762b154ac5233175a21828f25dac5c`  
+		Last Modified: Wed, 21 Oct 2026 20:46:02 GMT  
+		Size: 3.7 MB (3717119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fcbed4c0cbe664c8778fbef2b60aaced600d9707b63d0e58885ba34b8a52f6e`  
-		Last Modified: Thu, 17 Sep 2026 22:21:27 GMT  
-		Size: 3.6 MB (3609212 bytes)  
+	-	`sha256:5cef18ff773cd0b1080ea9c5c1490653faa03bcbb803bc4bd159583355c240cc`  
+		Last Modified: Fri, 23 Oct 2026 09:20:08 GMT  
+		Size: 3.6 MB (3606283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c78c1fb1d5497935917668b3e4e6653e3f1fe4f5df2627a255cd2b267a349fb5`  
-		Last Modified: Thu, 17 Sep 2026 22:21:27 GMT  
+	-	`sha256:4c02dbcb80360952082bcf19af62fdea938561ae932e1faa9f6c313ad4e1ae68`  
+		Last Modified: Fri, 23 Oct 2026 09:20:08 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-mosquitto:2-openssl` - unknown; unknown
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:bb1a9e7d0a8a3871fbf4e27910cfd8fd06256f5eda1998f246553c43d512584e
+$ docker pull eclipse-mosquitto@sha256:8aab25cf7dac7a47441268432caac00e7c968593fcd719941adf51012587c63a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **560.3 KB (560264 bytes)**  
+-	Total Size: **558.3 KB (558327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fe568ce7efeee4a35d1c183ce3517cd03e3a9e20aa374499b1eb1e5c350b087`
+-	Image ID: `sha256:7f5e0ad36c01d75817985a5a3f6b5d6008cb904731404ec015a49500d89f21c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db16bef72cd3cd4d73202de1f4e05bc608bcc0fd2084bb7d276d207ef6b65181`  
-		Last Modified: Thu, 17 Sep 2026 22:21:27 GMT  
-		Size: 540.4 KB (540364 bytes)  
+	-	`sha256:75ac7b022f274dcc16c56637b2d7b6d5932aba2772632ce06c67c0a4bf492d1c`  
+		Last Modified: Fri, 23 Oct 2026 09:20:08 GMT  
+		Size: 538.4 KB (538427 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:739e2a4bfb73392a145266ca1379ff21299c5c588febcff7a3327bc872ea82c4`  
-		Last Modified: Thu, 17 Sep 2026 22:21:27 GMT  
+	-	`sha256:5862eee4b3f6791a95cecb3831e7dba03dbcb777aa92c32446fa0a0359cf53f4`  
+		Last Modified: Fri, 23 Oct 2026 09:20:08 GMT  
 		Size: 19.9 KB (19900 bytes)  
 		MIME: application/vnd.in-toto+json
