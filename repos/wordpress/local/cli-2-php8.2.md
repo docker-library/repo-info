@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47743b34c40943556155a9f701edb15b7c22bf4af3dba839fc9b8cc76a4e0d91`
-- Created: `2026-09-24T19:27:51.010456652Z`
-- Virtual Size: ~ 199.8 Mb  
+- Image ID: `sha256:1d7b9ca2346cb4d9d0dea5fe5bf5946a2454d7b248ccd6e61fadadcf07e1ad4a`
+- Created: `2026-10-21T23:26:32.609185116Z`
+- Virtual Size: ~ 199.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.34`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.34.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.34.tar.xz.asc`
-  - `PHP_SHA256=5351330c54de240f54f7527c26ef292e239749e6fe11db0330acb5317e02bb39`
+  - `PHP_VERSION=8.2.35`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.35.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.35.tar.xz.asc`
+  - `PHP_SHA256=5737b98601fe5ab1b8c5db0c82ed3158acb9283ed3081ffe2faffb9ac81455e6`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.8-r0 description:
+c-ares-1.34.9-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.8-r0 webpage:
+c-ares-1.34.9-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.8-r0 installed size:
-237 KiB
+c-ares-1.34.9-r0 installed size:
+241 KiB
 
-c-ares-1.34.8-r0 license:
+c-ares-1.34.9-r0 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260909-r0 description:
+ca-certificates-20261020-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260909-r0 webpage:
+ca-certificates-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260909-r0 installed size:
-210 KiB
+ca-certificates-20261020-r0 installed size:
+207 KiB
 
-ca-certificates-20260909-r0 license:
+ca-certificates-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -268,16 +268,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.30-r0 description:
+imagemagick-libs-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.30-r0 webpage:
+imagemagick-libs-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.30-r0 installed size:
-4301 KiB
+imagemagick-libs-7.1.2.34-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.30-r0 license:
+imagemagick-libs-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -608,16 +608,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -676,16 +676,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.8.5-r0 description:
+libexpat-2.9.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.8.5-r0 webpage:
+libexpat-2.9.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.8.5-r0 installed size:
+libexpat-2.9.0-r0 installed size:
 137 KiB
 
-libexpat-2.8.5-r0 license:
+libexpat-2.9.0-r0 license:
 MIT
 
 ```
@@ -863,16 +863,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.58-r1 description:
+libpng-1.6.59-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.58-r1 webpage:
+libpng-1.6.59-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.58-r1 installed size:
+libpng-1.6.59-r0 installed size:
 181 KiB
 
-libpng-1.6.58-r1 license:
+libpng-1.6.59-r0 license:
 Libpng
 
 ```
@@ -948,16 +948,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1016,16 +1016,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.13-r0 description:
+libx11-1.8.14-r0 description:
 X11 client-side library
 
-libx11-1.8.13-r0 webpage:
+libx11-1.8.14-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.13-r0 installed size:
+libx11-1.8.14-r0 installed size:
 2271 KiB
 
-libx11-1.8.13-r0 license:
+libx11-1.8.14-r0 license:
 X11
 
 ```
@@ -1152,16 +1152,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-11.8.8-r0 description:
+mariadb-client-11.8.9-r0 description:
 Client for the MariaDB database
 
-mariadb-client-11.8.8-r0 webpage:
+mariadb-client-11.8.9-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-11.8.8-r0 installed size:
+mariadb-client-11.8.9-r0 installed size:
 37 MiB
 
-mariadb-client-11.8.8-r0 license:
+mariadb-client-11.8.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-only
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-11.8.8-r0 description:
+mariadb-common-11.8.9-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-11.8.8-r0 webpage:
+mariadb-common-11.8.9-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-11.8.8-r0 installed size:
+mariadb-common-11.8.9-r0 installed size:
 2057 KiB
 
-mariadb-common-11.8.8-r0 license:
+mariadb-common-11.8.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -1186,16 +1186,16 @@ GPL-2.0-only
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -1203,16 +1203,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1220,16 +1220,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-11.8.8-r0 description:
+mysql-client-11.8.9-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-11.8.8-r0 webpage:
+mysql-client-11.8.9-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-11.8.8-r0 installed size:
+mysql-client-11.8.9-r0 installed size:
 0 B
 
-mysql-client-11.8.8-r0 license:
+mysql-client-11.8.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -1254,16 +1254,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -1288,16 +1288,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.8-r0 description:
+openssl-3.5.9-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.8-r0 webpage:
+openssl-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.8-r0 installed size:
+openssl-3.5.9-r0 installed size:
 801 KiB
 
-openssl-3.5.8-r0 license:
+openssl-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -1305,16 +1305,16 @@ Apache-2.0
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.48-r0 description:
+pcre2-10.49-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.48-r0 webpage:
+pcre2-10.49-r0 webpage:
 https://pcre.org/
 
-pcre2-10.48-r0 installed size:
+pcre2-10.49-r0 installed size:
 779 KiB
 
-pcre2-10.48-r0 license:
+pcre2-10.49-r0 license:
 BSD-3-Clause
 
 ```
@@ -1441,16 +1441,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```

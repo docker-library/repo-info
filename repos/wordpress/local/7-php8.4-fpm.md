@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e86293f50300cec97a70fffbe4a4bc7565d4b19b8e290aeaf7acb3e40d3d41e2`
-- Created: `2026-10-07T21:52:33.602726961Z`
-- Virtual Size: ~ 783.31 Mb  
+- Image ID: `sha256:6421f8b9a7651a55b1625ec90a82c5b71fce6311b5112fd296b6d77ca0f83529`
+- Created: `2026-10-21T16:30:42.182293406Z`
+- Virtual Size: ~ 783.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc`
-  - `PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1`
+  - `PHP_VERSION=8.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
+  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -487,11 +487,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20250419`
+### `dpkg` source package: `ca-certificates=20250419+deb13u1`
 
 Binary Packages:
 
-- `ca-certificates=20250419`
+- `ca-certificates=20250419+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -502,16 +502,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20250419
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419.dsc' ca-certificates_20250419.dsc 1766 SHA256:3fc919369a3b84e34a959faa8bdffb9bd2c5a7d4a948a4b07a09a5d43e257030
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419.tar.xz' ca-certificates_20250419.tar.xz 277504 SHA256:33b44ef78653ecd3f0f2f13e5bba6be466be2e7da72182f737912b81798ba5d2
+$ apt-get source -qq --print-uris ca-certificates=20250419+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.dsc' ca-certificates_20250419+deb13u1.dsc 1924 SHA256:347487e99c0b9f09150c8d78ad03e3552545c3904d5e0d7f731ef2ef79d484d4
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.tar.xz' ca-certificates_20250419+deb13u1.tar.xz 277284 SHA256:1b2e3d0b90cfc62ac8033d64e18ea4649fbb2a01c937c9ac9d36e762da6b9446
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20250419/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20250419/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20250419/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.280`
 
@@ -602,12 +602,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.4.10-3+deb13u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.4.10-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=8.14.1-2+deb13u5`
+### `dpkg` source package: `curl=8.14.1-2+deb13u7`
 
 Binary Packages:
 
-- `curl=8.14.1-2+deb13u5`
-- `libcurl4t64:amd64=8.14.1-2+deb13u5`
+- `curl=8.14.1-2+deb13u7`
+- `libcurl4t64:amd64=8.14.1-2+deb13u7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -627,18 +627,18 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.dsc' curl_8.14.1-2+deb13u5.dsc 3263 SHA256:9a9a2c95cdc8b5d76892c70858f25eaf2dc0b0a475a1e43e0b4ad428414752df
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.14.1-2%2bdeb13u5.debian.tar.xz' curl_8.14.1-2+deb13u5.debian.tar.xz 72312 SHA256:ebdfcfab1c2001c7a539fe2a4044dbf666a544393f191bedce9ee2d07c4ea925
+$ apt-get source -qq --print-uris curl=8.14.1-2+deb13u7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.dsc' curl_8.14.1-2+deb13u7.dsc 3263 SHA256:a559b829ff852b2ee1ac0e448b5d9c18e0f94875bc820d037609d4d807ac6f57
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz' curl_8.14.1.orig.tar.gz 4250332 SHA256:6766ada7101d292b42b8b15681120acd68effa4a9660935853cf6d61f0d984d4
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1.orig.tar.gz.asc' curl_8.14.1.orig.tar.gz.asc 488 SHA256:39cc2ec8ddc39d04e3e7101bbed46d858d0875cbb297a6bfa20959fa2bc7d5c7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_8.14.1-2%2bdeb13u7.debian.tar.xz' curl_8.14.1-2+deb13u7.debian.tar.xz 75756 SHA256:e0f627ee2b9ae61078b2835edc25c8b94a0b57e180a1bc72dd8636ef260c370b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.14.1-2+deb13u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.14.1-2+deb13u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.14.1-2+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -996,11 +996,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.8.3-1~deb13u1`
+### `dpkg` source package: `expat=2.9.0-1~deb13u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.8.3-1~deb13u1`
+- `libexpat1:amd64=2.9.0-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -1009,17 +1009,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.8.3-1~deb13u1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3-1%7edeb13u1.dsc' expat_2.8.3-1~deb13u1.dsc 1638 SHA256:d17f15fe413a553c72185d2d00448b87db72354e0d8fa6099ad19ee19e7117af
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3.orig.tar.gz' expat_2.8.3.orig.tar.gz 8464226 SHA256:533659a16e0184035a99fd8e783f1ad61a887a7bf8586a8681740b9d7ed42389
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.3-1%7edeb13u1.debian.tar.xz' expat_2.8.3-1~deb13u1.debian.tar.xz 14116 SHA256:4bf2c5c2f189673c66f79f2f8a8727cd8c08636d46b648c896e1c73673562c7b
+$ apt-get source -qq --print-uris expat=2.9.0-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.9.0-1%7edeb13u1.dsc' expat_2.9.0-1~deb13u1.dsc 2157 SHA256:09fe168e2186a2672e077d9fda02287b51fa08f73914fcc425b3307b503df8ff
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.9.0.orig.tar.gz' expat_2.9.0.orig.tar.gz 8488503 SHA256:6e8ce7b52ebbaa423c59becc7cf1e6875c42e49228c062ac8123c10e700cec27
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.9.0-1%7edeb13u1.debian.tar.xz' expat_2.9.0-1~deb13u1.debian.tar.xz 14348 SHA256:0c1575a3dc3d039f9e6751821efcdfd5246e04c6af4939defa01226d94541fba
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.3-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.3-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.9.0-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.9.0-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.9.0-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-2`
 
@@ -1334,14 +1334,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.24-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.24-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.05.1~dfsg-1+deb13u2`
+### `dpkg` source package: `ghostscript=10.05.1~dfsg-1+deb13u3`
 
 Binary Packages:
 
-- `ghostscript=10.05.1~dfsg-1+deb13u2`
-- `libgs-common=10.05.1~dfsg-1+deb13u2`
-- `libgs10:amd64=10.05.1~dfsg-1+deb13u2`
-- `libgs10-common=10.05.1~dfsg-1+deb13u2`
+- `ghostscript=10.05.1~dfsg-1+deb13u3`
+- `libgs-common=10.05.1~dfsg-1+deb13u3`
+- `libgs10:amd64=10.05.1~dfsg-1+deb13u3`
+- `libgs10-common=10.05.1~dfsg-1+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1374,13 +1374,20 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ghostscript=10.05.1~dfsg-1+deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u3.dsc' ghostscript_10.05.1~dfsg-1+deb13u3.dsc 3052 SHA256:c1f0541ac18bc890d296934a26a23825d3ca17b15e27c786eadd2570e4cc0c98
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg.orig.tar.xz' ghostscript_10.05.1~dfsg.orig.tar.xz 28467224 SHA256:ca4ff3a4c2b536baedd3029cb9b7bdd3bd9b27a03b53956efda062140843add1
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.05.1%7edfsg-1%2bdeb13u3.debian.tar.xz' ghostscript_10.05.1~dfsg-1+deb13u3.debian.tar.xz 91896 SHA256:f7635b85d7a692e62fa22d99bc21d70ee15a55078994b3ab8b7c27425b7080c2
+```
 
-- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.05.1~dfsg-1+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.05.1~dfsg-1+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.84.4-3~deb13u5`
 
@@ -3258,11 +3265,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.111-1`
+### `dpkg` source package: `linux=6.12.113-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.111-1`
+- `linux-libc-dev=6.12.113-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3276,17 +3283,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.111-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.111-1.dsc' linux_6.12.111-1.dsc 290418 SHA256:6935287a25ed12865714b53cb936959db5875ee025abdaadea8df6335fe74d55
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.111.orig.tar.xz' linux_6.12.111.orig.tar.xz 151518968 SHA256:716516cd85c3ff9e5c197203730b698ad7c0fb4c6c2d1d1e44ab3ced2faba178
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.111-1.debian.tar.xz' linux_6.12.111-1.debian.tar.xz 1933512 SHA256:e0146c63a70014f23141fe3e4e830e8a5b2627427d449f3e5415d930016be297
+$ apt-get source -qq --print-uris linux=6.12.113-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.113-1.dsc' linux_6.12.113-1.dsc 290418 SHA256:7785e2db803dc74912f2dd4861eb454404cf3b9a2c2120f0cc3efda1f2337fa6
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.113.orig.tar.xz' linux_6.12.113.orig.tar.xz 151589656 SHA256:2efc477744741f5d580a199ee79c251abb01f899759c621d1af0c3d361380821
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.113-1.debian.tar.xz' linux_6.12.113-1.debian.tar.xz 1954984 SHA256:e2d62aaf6d3771dce7116feea9c419b47d6bbf8cb957153896fbbc276f2a54f9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.111-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.111-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.111-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.113-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.113-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.113-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
