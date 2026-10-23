@@ -1,19 +1,19 @@
-# `ruby:4.0.7-slim-trixie`
+# `ruby:4.0.8-slim-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:50f59770b2c58e97f5178cba6d9afadde33f3a2a9a489043f9ed066856301764`
-- Created: `2026-10-06T02:06:52.109176962Z`
-- Virtual Size: ~ 173.32 Mb  
+- Image ID: `sha256:f7c79e78ae1a927041de058f9f082136da5dee03add84063acc6490195e1943f`
+- Created: `2026-10-22T20:49:18.461596789Z`
+- Virtual Size: ~ 173.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=47ef59413f7a4587ba6a6b78b14036eb5e36eec2ec0b90964801e88d56a3d375`
+  - `RUBY_VERSION=4.0.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=3bd35abc39dce9c682d62cf333fbd8b8f34816dd651f8228b3b59353157b84a4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -247,11 +247,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20250419`
+### `dpkg` source package: `ca-certificates=20250419+deb13u1`
 
 Binary Packages:
 
-- `ca-certificates=20250419`
+- `ca-certificates=20250419+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -262,16 +262,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20250419
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419.dsc' ca-certificates_20250419.dsc 1766 SHA256:3fc919369a3b84e34a959faa8bdffb9bd2c5a7d4a948a4b07a09a5d43e257030
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419.tar.xz' ca-certificates_20250419.tar.xz 277504 SHA256:33b44ef78653ecd3f0f2f13e5bba6be466be2e7da72182f737912b81798ba5d2
+$ apt-get source -qq --print-uris ca-certificates=20250419+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.dsc' ca-certificates_20250419+deb13u1.dsc 1924 SHA256:347487e99c0b9f09150c8d78ad03e3552545c3904d5e0d7f731ef2ef79d484d4
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.tar.xz' ca-certificates_20250419+deb13u1.tar.xz 277284 SHA256:1b2e3d0b90cfc62ac8033d64e18ea4649fbb2a01c937c9ac9d36e762da6b9446
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20250419/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20250419/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20250419/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.280`
 
@@ -1756,11 +1756,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.8.1-1+deb13u1`
+### `dpkg` source package: `xz-utils=5.8.1-1+deb13u2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.8.1-1+deb13u1`
+- `liblzma5:amd64=5.8.1-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1782,18 +1782,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u1.dsc' xz-utils_5.8.1-1+deb13u1.dsc 2736 SHA256:ddadd9d9f7c4bb80b08f9f17409e2701a29a4cf8fe25e15d19605e5281c1fc1b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u1.debian.tar.xz' xz-utils_5.8.1-1+deb13u1.debian.tar.xz 25696 SHA256:0e48427971a9ce674ddbba26e34ac1dd009c683f3816ce17852d99dc7b0a8e46
+$ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.dsc' xz-utils_5.8.1-1+deb13u2.dsc 2562 SHA256:f02574465dcb7da3d5b7bdfc20ea350248c3371b0df36bb005152af80d61cdfc
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.debian.tar.xz' xz-utils_5.8.1-1+deb13u2.debian.tar.xz 28044 SHA256:7dfcff43a8035561c4860a4893f7cf9de5e977e79a90aee4d101053e21912cb0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
 

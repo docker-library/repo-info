@@ -1,19 +1,19 @@
-# `ruby:4.0.7-alpine3.24`
+# `ruby:4.0.8-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67ff9b9cc0fcfb5774dee646e91f237867c516c5c56d53a7004019614b434f24`
-- Created: `2026-09-17T21:55:27.409190844Z`
-- Virtual Size: ~ 89.43 Mb  
+- Image ID: `sha256:7163b94f904ae8c84c1806fc95d1953d77133cb8219f513e656acda985d7bee4`
+- Created: `2026-10-22T20:50:36.373305732Z`
+- Virtual Size: ~ 89.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=47ef59413f7a4587ba6a6b78b14036eb5e36eec2ec0b90964801e88d56a3d375`
+  - `RUBY_VERSION=4.0.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=3bd35abc39dce9c682d62cf333fbd8b8f34816dd651f8228b3b59353157b84a4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -74,16 +74,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -142,16 +142,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -193,16 +193,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -244,16 +244,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -261,16 +261,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -278,16 +278,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -346,16 +346,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```

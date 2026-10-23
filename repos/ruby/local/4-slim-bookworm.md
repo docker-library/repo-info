@@ -1,19 +1,19 @@
-# `ruby:4.0.7-slim-bookworm`
+# `ruby:4.0.8-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab5ee160349a4855ae3dbb0d614128d260970ca92b3670ddc5946d2115bf314c`
-- Created: `2026-10-06T02:07:22.870949378Z`
-- Virtual Size: ~ 180.31 Mb  
+- Image ID: `sha256:a2505d4bfa1cd1e40b266314b648027f54c53c9863093d884f16ba004ec61145`
+- Created: `2026-10-22T20:50:32.971435383Z`
+- Virtual Size: ~ 172.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=47ef59413f7a4587ba6a6b78b14036eb5e36eec2ec0b90964801e88d56a3d375`
+  - `RUBY_VERSION=4.0.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=3bd35abc39dce9c682d62cf333fbd8b8f34816dd651f8228b3b59353157b84a4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -269,11 +269,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20250419~deb12u1`
+### `dpkg` source package: `ca-certificates=20250419~deb12u2`
 
 Binary Packages:
 
-- `ca-certificates=20250419~deb12u1`
+- `ca-certificates=20250419~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -284,16 +284,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.dsc' ca-certificates_20250419~deb12u1.dsc 1769 SHA256:72339e810ef8237a4c346540b52baf49607172cc849c2680328a608ce0f6a34b
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u1.tar.xz' ca-certificates_20250419~deb12u1.tar.xz 277244 SHA256:b2a431cbab9a0ece921cffacbe238dc27a3e382ad4a1806dc8968c5eff30471d
+$ apt-get source -qq --print-uris ca-certificates=20250419~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u2.dsc' ca-certificates_20250419~deb12u2.dsc 1924 SHA256:a041820e6feb1effe0598f80e02fb62a40ef312678b85cfbb57d2864d0b5c0b7
+'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%7edeb12u2.tar.xz' ca-certificates_20250419~deb12u2.tar.xz 277416 SHA256:934942a985b2efd7a8c122cb1d42cd87911cf6ac365c545938619fcf268ea8f4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20250419~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20250419~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20250419~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.270`
 
