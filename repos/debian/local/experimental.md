@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:485b6d8d52fb49a19ee4c4e8ecfe3fbbab68402e236dc1e5efff962a2a9a7de5`
-- Created: `2026-10-06T01:14:48.40901563Z`
-- Virtual Size: ~ 120.17 Mb  
+- Image ID: `sha256:df13944e00a8dff334b75d303203010210fd85bc62c755b6404d523075daba56`
+- Created: `2026-10-21T00:15:16.627252153Z`
+- Virtual Size: ~ 120.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -42,12 +42,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/acl/2.4.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/acl/2.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=3.3.3`
+### `dpkg` source package: `apt=3.3.4`
 
 Binary Packages:
 
-- `apt=3.3.3`
-- `libapt-pkg7.0:amd64=3.3.3`
+- `apt=3.3.4`
+- `libapt-pkg7.0:amd64=3.3.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -60,16 +60,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.3.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.3.dsc' apt_3.3.3.dsc 3132 SHA256:1123e12b66b9f293b51619b9c287fbed66fa9d3be7d0efa6f66be840a7c8d524
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.3.tar.xz' apt_3.3.3.tar.xz 2530836 SHA256:1c06b4a145d6117917c390c79fe7d27d9d92ee922101134ad6446717b0a1c28f
+$ apt-get source -qq --print-uris apt=3.3.4
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.4.dsc' apt_3.3.4.dsc 3132 SHA256:f306f8a41dda320920e044620bf3f8c36771294208263497f359f9434646c377
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.4.tar.xz' apt_3.3.4.tar.xz 2550420 SHA256:ce30b74ba6f633b23fb8162c37ae43c68baa5fa00e2367f6de675142df74b96b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/3.3.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/3.3.4/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.3.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.3.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
 
@@ -1400,12 +1400,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.9-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.9-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `shadow=1:4.20.2-2`
+### `dpkg` source package: `shadow=1:4.20.3-1`
 
 Binary Packages:
 
-- `login.defs=1:4.20.2-2`
-- `passwd=1:4.20.2-2`
+- `login.defs=1:4.20.3-1`
+- `passwd=1:4.20.3-1`
 
 Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1414,20 +1414,28 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris shadow=1:4.20.3-1
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.dsc' shadow_4.20.3-1.dsc 2252 SHA256:40becd5eba4be29401705ceffc0c72e6c5bb018460c7db1515a058b5f2cfea1d
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz' shadow_4.20.3.orig.tar.xz 2331188 SHA256:623be9429f64fa2165bfc5957c6a642ec309c5cf23c0d53855c99f7591922297
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz.asc' shadow_4.20.3.orig.tar.xz.asc 833 SHA256:7e339baf514d8b141e739f1c11c88d3816b1bfdf32f69bfd069db8b4edd2d61b
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.debian.tar.xz' shadow_4.20.3-1.debian.tar.xz 172764 SHA256:50585e008f56091261a176c8bdf4e90c905bb7ce81bbaae1e58f2ff666c45c6d
+```
 
-- http://snapshot.debian.org/package/shadow/1:4.20.2-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/shadow/1:4.20.3-1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.20.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.20.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=262-1`
+### `dpkg` source package: `systemd=262.1-1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=262-1`
-- `libudev1:amd64=262-1`
+- `libsystemd0:amd64=262.1-1`
+- `libudev1:amd64=262.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1445,13 +1453,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `Unlicense`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=262.1-1
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1-1.dsc' systemd_262.1-1.dsc 8887 SHA256:57060371066771ba54178f23a1672ee3462248a638c404887b35c739161638b1
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1.orig.tar.gz' systemd_262.1.orig.tar.gz 19088198 SHA256:100fc873b848b9b0297d8a705e8e2ed326256c8483d9960ee1ffe264c8a5c3e3
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1-1.debian.tar.xz' systemd_262.1-1.debian.tar.xz 190124 SHA256:61090fa2f459c8245c27184fb132b01ce5df20182d3a85d07caf6fa99c0bac62
+```
 
-- http://snapshot.debian.org/package/systemd/262-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/262.1-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/262.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/262.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 
