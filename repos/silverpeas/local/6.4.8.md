@@ -739,9 +739,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dconf=0.40.0-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0.orig.tar.xz' dconf_0.40.0.orig.tar.xz 117764 SHA256:cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.debian.tar.xz' dconf_0.40.0-3ubuntu0.1.debian.tar.xz 11972 SHA256:a213354ab6b170723af2e2b6d9ccccdf877c74983b38a1cbfbc62ffd42e6308b
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.dsc' dconf_0.40.0-3ubuntu0.1.dsc 2791 SHA256:196dd73182ed593e11bdc84a903db57c0a53cbf43272cc762b4124b856ac087a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0.orig.tar.xz' dconf_0.40.0.orig.tar.xz 117764 SHA512:71396d71f24f47653181482b052fdfc63795c50c373de34e2fb93e16101745daa7e81192b79a102d5389911cea34138eedf3ac32bc80562018e8a7f31963559a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.debian.tar.xz' dconf_0.40.0-3ubuntu0.1.debian.tar.xz 11972 SHA512:5aa361319aa6303b344b29eb35a508efddb730239131ef6c9769f8ac9565544fd419ef1f82e780b8ca0ca04e06225b5ba54c62f97f60ceae9ac95a5a18091310
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dconf/dconf_0.40.0-3ubuntu0.1.dsc' dconf_0.40.0-3ubuntu0.1.dsc 2791 SHA512:f4b72126e0ed20893279ddd4a2e6ee4a01e58beba74acb156ac0f7456a1f2050f1e8f58dd5004aaf4b44755121c561ef0007ea80af604a1931d659a1d59abcb0
 ```
 
 ### `dpkg` source package: `debconf=1.5.79ubuntu1`
@@ -1235,14 +1235,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.55.0~dfsg1-0ubuntu5.14
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1.orig.tar.xz' ghostscript_9.55.0~dfsg1.orig.tar.xz 53473556 SHA512:fb6dec73b8a1d88a6fe624d23549162f4e29059f41145aeb9bf96c09a7fb5e415fc15be5e2dbbcd21f49ecb2a91c78bc4f0d14eee8b3fe32884b405f0e709b93
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.14.debian.tar.xz' ghostscript_9.55.0~dfsg1-0ubuntu5.14.debian.tar.xz 190004 SHA512:5140e65e85d40a3db56a5dfd2b785b129237b62f253edde5c05d94a87d8c63b4400e4d40c8597f5c68f1db1a0603652a4877c274c1a9c25e914eec50e5777a0d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.14.dsc' ghostscript_9.55.0~dfsg1-0ubuntu5.14.dsc 2818 SHA512:1d8bd093234e3894d36637c79bd7af9ede4b15b84b8e2be3186206c561cc15563af653c1084b7b2fda70d73a3aeb00e692ec36e2c5513c4924299cc7c20e1d8a
-```
 
 ### `dpkg` source package: `giflib=5.1.9-2ubuntu0.3`
 
@@ -5156,14 +5151,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.98-0ubuntu0.22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98.orig.tar.gz' nss_3.98.orig.tar.gz 76685475 SHA512:4f335c5c284eff6424745cc15e32037715a915f6f61687ec36a8ffaef0e45d152602a1be275bbb2f14650c7d258d6488430cdcf512b18ba7cb73cd43ac625681
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.4.debian.tar.xz' nss_3.98-0ubuntu0.22.04.4.debian.tar.xz 26904 SHA512:c8e8aadba406e38600438f909edf08f11c92dcc86bbf63b2f111b4397f5206788c3aee2e9d20c8287a6886cfde894d43915c4894c8fb0dacbdd2da3b2278ac79
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-0ubuntu0.22.04.4.dsc' nss_3.98-0ubuntu0.22.04.4.dsc 2294 SHA512:85abecd6c42fc6ec69830b25e4dc47b8d2456b0355da4e8d1cde7f75b855043ea6d640e077cc0732d709b1743f3336b4f58e6e6fba9ca5bb7bdd2daf753720a1
-```
 
 ### `dpkg` source package: `numactl=2.0.14-3ubuntu2`
 
@@ -5667,14 +5657,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.14
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.14.debian.tar.xz' poppler_22.02.0-2ubuntu0.14.debian.tar.xz 48528 SHA512:c2bfc5443a57adfbf3077d6c228942a2ce40d37601df82ff0e5659c3d8269825a8889b298f6c9a2f1b378ef14910aac53d330657d205207f6cd9ce52d24e5404
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.14.dsc' poppler_22.02.0-2ubuntu0.14.dsc 3364 SHA512:f33c609b5c3ff5bbfd48434708a0f452a2b52c05c6ab99073b736f238c8ed8578a22cf4df31e946e8fa9d67a6f571575062e5d0226484f64626e9a3aaf0f43a8
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 
