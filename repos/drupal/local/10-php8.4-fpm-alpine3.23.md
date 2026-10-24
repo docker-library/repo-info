@@ -1,10 +1,10 @@
-# `drupal:10.6.19-php8.4-fpm-alpine3.23`
+# `drupal:10.6.20-php8.4-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:817da6c2e0ed4884299760376f143a7deba4e0a30fcfb6f22664e867c3d55544`
-- Created: `2026-10-14T19:11:42.286920811Z`
-- Virtual Size: ~ 213.36 Mb  
+- Image ID: `sha256:003e9be689514c00f9ebfdefd29dce47fce87f3709647d1feb906b6edbcc630e`
+- Created: `2026-10-22T00:22:05.468466481Z`
+- Virtual Size: ~ 206.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc`
-  - `PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1`
-  - `DRUPAL_VERSION=10.6.19`
+  - `PHP_VERSION=8.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
+  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
+  - `DRUPAL_VERSION=10.6.20`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -97,16 +97,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.6-r0 description:
+alpine-release-3.23.7-r0 description:
 Alpine release data
 
-alpine-release-3.23.6-r0 webpage:
+alpine-release-3.23.7-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.6-r0 installed size:
+alpine-release-3.23.7-r0 installed size:
 343 B
 
-alpine-release-3.23.6-r0 license:
+alpine-release-3.23.7-r0 license:
 MIT
 
 ```
@@ -216,16 +216,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.8-r0 description:
+c-ares-1.34.9-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.8-r0 webpage:
+c-ares-1.34.9-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.8-r0 installed size:
-237 KiB
+c-ares-1.34.9-r0 installed size:
+241 KiB
 
-c-ares-1.34.8-r0 license:
+c-ares-1.34.9-r0 license:
 MIT
 
 ```
@@ -233,16 +233,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260909-r0 description:
+ca-certificates-20261020-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260909-r0 webpage:
+ca-certificates-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260909-r0 installed size:
-210 KiB
+ca-certificates-20261020-r0 installed size:
+207 KiB
 
-ca-certificates-20260909-r0 license:
+ca-certificates-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -692,16 +692,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
+musl-1.2.5-r24 installed size:
 650 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.5-r24 license:
 MIT
 
 ```
@@ -709,16 +709,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.5-r24 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.5-r24 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
