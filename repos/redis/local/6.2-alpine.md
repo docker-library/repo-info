@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e80892f027ae4ce597b41ee75347321992aca98a1a1a56a18664393cfa939b07`
-- Created: `2026-09-17T21:33:06.577624849Z`
+- Image ID: `sha256:071a0ebd94d6d099c5424bc21e70b474fb3291cf9562f709183624d2483a2763`
+- Created: `2026-10-21T21:14:14.35820707Z`
 - Virtual Size: ~ 27.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.8-r0 description:
+alpine-release-3.21.9-r0 description:
 Alpine release data
 
-alpine-release-3.21.8-r0 webpage:
+alpine-release-3.21.9-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.8-r0 installed size:
+alpine-release-3.21.9-r0 installed size:
 346 B
 
-alpine-release-3.21.8-r0 license:
+alpine-release-3.21.9-r0 license:
 MIT
 
 ```
@@ -137,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -171,16 +171,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.7-r1 description:
+libcrypto3-3.3.7-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.3.7-r1 webpage:
+libcrypto3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.7-r1 installed size:
+libcrypto3-3.3.7-r2 installed size:
 4611 KiB
 
-libcrypto3-3.3.7-r1 license:
+libcrypto3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -188,16 +188,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.7-r1 description:
+libssl3-3.3.7-r2 description:
 SSL shared libraries
 
-libssl3-3.3.7-r1 webpage:
+libssl3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.7-r1 installed size:
+libssl3-3.3.7-r2 installed size:
 779 KiB
 
-libssl3-3.3.7-r1 license:
+libssl3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r11 description:
+musl-1.2.5-r12 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r11 webpage:
+musl-1.2.5-r12 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r11 installed size:
+musl-1.2.5-r12 installed size:
 646 KiB
 
-musl-1.2.5-r11 license:
+musl-1.2.5-r12 license:
 MIT
 
 ```
@@ -222,16 +222,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r11 description:
+musl-utils-1.2.5-r12 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r11 webpage:
+musl-utils-1.2.5-r12 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r11 installed size:
+musl-utils-1.2.5-r12 installed size:
 102 KiB
 
-musl-utils-1.2.5-r11 license:
+musl-utils-1.2.5-r12 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -290,16 +290,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026d-r0 description:
+tzdata-2026e-r0 description:
 Timezone data
 
-tzdata-2026d-r0 webpage:
+tzdata-2026e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026d-r0 installed size:
+tzdata-2026e-r0 installed size:
 441 KiB
 
-tzdata-2026d-r0 license:
+tzdata-2026e-r0 license:
 Public-Domain
 
 ```
@@ -307,16 +307,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 101 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
