@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:67df4918b7c3193e14372409c0eca21b9d583e6502498d7659dee9d3ae10e5be`
-- Created: `2026-10-13T21:07:50.310058762Z`
-- Virtual Size: ~ 123.16 Mb  
+- Image ID: `sha256:e67bda38629b1bf3eab7ea82a50c593f76c97de336c2b638c6f0b08b4db6ad3e`
+- Created: `2026-10-21T23:27:04.181844358Z`
+- Virtual Size: ~ 116.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.26.tar.xz.asc`
-  - `PHP_SHA256=32a2de53862ad44ed4a5005244ce4f1b50c271e74dced215449a4443b40569f1`
+  - `PHP_VERSION=8.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
+  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
   - `ADMINER_VERSION=6.1.2`
   - `ADMINER_DOWNLOAD_SHA256=b32316156bd18ffa99c1a27617142c2e5ad72260e37f15da4e9937a3dbb15f57`
   - `ADMINER_SRC_DOWNLOAD_SHA256=6e968d1826117139a28f7e4ae39effb366dadd1fda05b0ce1b64c22c1b986d4f`
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -200,16 +200,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.34.8-r0 description:
+c-ares-1.34.9-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.34.8-r0 webpage:
+c-ares-1.34.9-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.34.8-r0 installed size:
-237 KiB
+c-ares-1.34.9-r0 installed size:
+241 KiB
 
-c-ares-1.34.8-r0 license:
+c-ares-1.34.9-r0 license:
 MIT
 
 ```
@@ -217,16 +217,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260909-r0 description:
+ca-certificates-20261020-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260909-r0 webpage:
+ca-certificates-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260909-r0 installed size:
-210 KiB
+ca-certificates-20261020-r0 installed size:
+207 KiB
 
-ca-certificates-20260909-r0 license:
+ca-certificates-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -234,16 +234,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -506,16 +506,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -523,16 +523,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -557,16 +557,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.69.0-r0 description:
+nghttp2-libs-1.70.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.69.0-r0 webpage:
+nghttp2-libs-1.70.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.69.0-r0 installed size:
+nghttp2-libs-1.70.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.69.0-r0 license:
+nghttp2-libs-1.70.0-r0 license:
 MIT
 
 ```
@@ -744,16 +744,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
