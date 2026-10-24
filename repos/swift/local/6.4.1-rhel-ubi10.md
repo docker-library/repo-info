@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:090b82f0ca5cd364b231a7039ae5cb44949424258e0940f09b66af41d28c944f`
-- Created: `2026-10-13T23:01:59.622323502Z`
+- Image ID: `sha256:b769d80965c5c46e31dd385431edbd0e8e0362794faddd67953d1567ee7a4737`
+- Created: `2026-10-23T16:59:39.816148886Z`
 - Virtual Size: ~ 4.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T12:26:02Z`
+  - `build-date=2026-10-23T08:37:04Z`
   - `com.redhat.component=ubi10-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel10`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi10/ubi`
-  - `org.opencontainers.image.created=2026-10-13T12:26:02Z`
-  - `org.opencontainers.image.revision=418c9c2d9672935daa5ff80fd601b254e433ecef`
-  - `release=1791893534`
+  - `org.opencontainers.image.created=2026-10-23T08:37:04Z`
+  - `org.opencontainers.image.revision=12b42c0df97d412ddb00ce5e581fc0c5b97a06c9`
+  - `release=1792744468`
   - `summary=Provides the latest release of Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=418c9c2d9672935daa5ff80fd601b254e433ecef`
+  - `vcs-ref=12b42c0df97d412ddb00ce5e581fc0c5b97a06c9`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -120,12 +120,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-102.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
 
@@ -178,11 +173,16 @@ $ dnf --quiet download --source --url crypto-policies-20260216-1.git0e54016.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260216-1.git0e54016.el10_2.2.src.rpm
 ```
 
-### `rpm` package: `curl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `curl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -305,12 +305,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.5.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 
@@ -636,11 +631,16 @@ $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
-### `rpm` package: `libcurl-8.12.1-4.el10_2.6.x86_64`
+### `rpm` package: `libcurl-8.12.1-4.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
+```
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
@@ -1178,13 +1178,13 @@ $ dnf --quiet download --source --url pam-libs-1.6.1-9.el10_2.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-9.el10_2.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.44-1.0.1.el10.3.x86_64`
+### `rpm` package: `pcre2-10.44-1.5.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `pcre2-syntax-10.44-1.0.1.el10.3.noarch`
+### `rpm` package: `pcre2-syntax-10.44-1.5.0.1.el10_2.noarch`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-later AND FSFAP AND FSFUL AND GPL-3.0-or-later
 
