@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78be33ab54e68c892c68c51258c08ae56d9ad65a5217ee146195a64189f87639`
-- Created: `2026-10-13T23:00:26.587946553Z`
-- Virtual Size: ~ 508.41 Mb  
+- Image ID: `sha256:059e43d58fd39d9cf4fe1a034f39f0757f018cbdd225f2ee0f67ab73210ae02e`
+- Created: `2026-10-23T16:52:46.694570283Z`
+- Virtual Size: ~ 508.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.19`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T13:35:30Z`
+  - `build-date=2026-10-23T07:55:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-10-13T13:35:30Z`
+  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
+  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
+  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.19`
@@ -158,15 +158,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-11.el9.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-91.el9.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-91.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-91.el9.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.src.rpm
 ```
 
 ### `rpm` package: `coreutils-single-8.32-41.el9_8.1.x86_64`
@@ -312,15 +312,15 @@ $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
 https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.5.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -2047,11 +2047,27 @@ $ dnf --quiet download --source --url perl-Time-Local-1.300-7.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Time-Local-1.300-7.el9.src.rpm
 ```
 
-### `rpm` package: `perl-URI-5.09-3.el9.noarch`
+### `rpm` package: `perl-URI-5.09-3.el9_8.1.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-URI-5.09-3.el9_8.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-URI-5.09-3.el9_8.1.src.rpm
+```
+
+### `rpm` package: `perl-Unicode-Normalize-1.27-461.el9.x86_64`
+
+Licenses (from `rpm --query`): GPL+ or Artistic
+
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Unicode-Normalize-1.27-461.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Unicode-Normalize-1.27-461.el9.src.rpm
+```
 
 ### `rpm` package: `perl-base-2.27-484.el9_8.noarch`
 
