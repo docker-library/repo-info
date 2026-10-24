@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a81033366ec282f4bab98bb2789b01e4446476aef08deb46de3abb6056a26f0`
-- Created: `2026-09-28T18:03:03.617273843Z`
-- Virtual Size: ~ 281.84 Mb  
+- Image ID: `sha256:10b04e1ac62247c7b6e35d3e960951a297b568bef80d0159a9226738e7a34d52`
+- Created: `2026-10-23T18:07:51.937107833Z`
+- Virtual Size: ~ 281.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.2-r0 description:
+alpine-release-3.24.3-r0 description:
 Alpine release data
 
-alpine-release-3.24.2-r0 webpage:
+alpine-release-3.24.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.2-r0 installed size:
+alpine-release-3.24.3-r0 installed size:
 343 B
 
-alpine-release-3.24.2-r0 license:
+alpine-release-3.24.3-r0 license:
 MIT
 
 ```
@@ -103,16 +103,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-11`
 
 ```console
-amazon-corretto-11-11.0.32.12.1-r0 description:
+amazon-corretto-11-11.0.33.0.9-r0 description:
 Corretto11
 
-amazon-corretto-11-11.0.32.12.1-r0 webpage:
+amazon-corretto-11-11.0.33.0.9-r0 webpage:
 https://github.com/corretto/corretto-11
 
-amazon-corretto-11-11.0.32.12.1-r0 installed size:
+amazon-corretto-11-11.0.33.0.9-r0 installed size:
 311 MiB
 
-amazon-corretto-11-11.0.32.12.1-r0 license:
+amazon-corretto-11-11.0.33.0.9-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -171,16 +171,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -239,16 +239,16 @@ BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -273,16 +273,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -290,16 +290,16 @@ Apache-2.0
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.13-r0 description:
+libx11-1.8.14-r0 description:
 X11 client-side library
 
-libx11-1.8.13-r0 webpage:
+libx11-1.8.14-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.13-r0 installed size:
+libx11-1.8.14-r0 installed size:
 2271 KiB
 
-libx11-1.8.13-r0 license:
+libx11-1.8.14-r0 license:
 X11
 
 ```
@@ -375,16 +375,16 @@ MIT
 ### `apk` package: `libxi`
 
 ```console
-libxi-1.8.3-r0 description:
+libxi-1.8.4-r0 description:
 X11 Input extension library
 
-libxi-1.8.3-r0 webpage:
+libxi-1.8.4-r0 webpage:
 https://www.x.org
 
-libxi-1.8.3-r0 installed size:
+libxi-1.8.4-r0 installed size:
 61 KiB
 
-libxi-1.8.3-r0 license:
+libxi-1.8.4-r0 license:
 MIT AND X11
 
 ```
@@ -392,16 +392,16 @@ MIT AND X11
 ### `apk` package: `libxrender`
 
 ```console
-libxrender-0.9.12-r0 description:
+libxrender-0.9.13-r0 description:
 X Rendering Extension client library
 
-libxrender-0.9.12-r0 webpage:
+libxrender-0.9.13-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxrender-0.9.12-r0 installed size:
+libxrender-0.9.13-r0 installed size:
 41 KiB
 
-libxrender-0.9.12-r0 license:
+libxrender-0.9.13-r0 license:
 MIT
 
 ```
@@ -409,16 +409,16 @@ MIT
 ### `apk` package: `libxtst`
 
 ```console
-libxtst-1.2.5-r0 description:
+libxtst-1.2.6-r0 description:
 X11 Testing -- Resource extension library
 
-libxtst-1.2.5-r0 webpage:
+libxtst-1.2.6-r0 webpage:
 https://wiki.freedesktop.org/xorg/
 
-libxtst-1.2.5-r0 installed size:
+libxtst-1.2.6-r0 installed size:
 25 KiB
 
-libxtst-1.2.5-r0 license:
+libxtst-1.2.6-r0 license:
 MIT
 
 ```
@@ -426,16 +426,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.6-r2 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.6-r2 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.6-r2 installed size:
+musl-1.2.6-r3 installed size:
 654 KiB
 
-musl-1.2.6-r2 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -443,16 +443,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.6-r2 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.6-r2 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.6-r2 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.6-r2 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -494,16 +494,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e83ff41d5ebcac228f1ec887e17224e7ca737f016ef7f59165402654471dae1`
-- Created: `2026-09-28T18:03:32.434234435Z`
-- Virtual Size: ~ 297.09 Mb  
+- Image ID: `sha256:2cc363de06a684a32627c5e8eb1b43351505dab1ac16584454821d5d67a773d1`
+- Created: `2026-10-23T18:08:23.260313866Z`
+- Virtual Size: ~ 297.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.8-r0 description:
+alpine-release-3.21.9-r0 description:
 Alpine release data
 
-alpine-release-3.21.8-r0 webpage:
+alpine-release-3.21.9-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.8-r0 installed size:
+alpine-release-3.21.9-r0 installed size:
 346 B
 
-alpine-release-3.21.8-r0 license:
+alpine-release-3.21.9-r0 license:
 MIT
 
 ```
@@ -103,16 +103,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-17`
 
 ```console
-amazon-corretto-17-17.0.20.12.1-r0 description:
+amazon-corretto-17-17.0.21.0.10-r0 description:
 Corretto17
 
-amazon-corretto-17-17.0.20.12.1-r0 webpage:
+amazon-corretto-17-17.0.21.0.10-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-17-17.0.20.12.1-r0 installed size:
-320 MiB
+amazon-corretto-17-17.0.21.0.10-r0 installed size:
+321 MiB
 
-amazon-corretto-17-17.0.20.12.1-r0 license:
+amazon-corretto-17-17.0.21.0.10-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -171,16 +171,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -222,16 +222,16 @@ BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.7-r1 description:
+libcrypto3-3.3.7-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.3.7-r1 webpage:
+libcrypto3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.7-r1 installed size:
+libcrypto3-3.3.7-r2 installed size:
 4611 KiB
 
-libcrypto3-3.3.7-r1 license:
+libcrypto3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -256,16 +256,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.7-r1 description:
+libssl3-3.3.7-r2 description:
 SSL shared libraries
 
-libssl3-3.3.7-r1 webpage:
+libssl3-3.3.7-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.7-r1 installed size:
+libssl3-3.3.7-r2 installed size:
 779 KiB
 
-libssl3-3.3.7-r1 license:
+libssl3-3.3.7-r2 license:
 Apache-2.0
 
 ```
@@ -409,16 +409,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r11 description:
+musl-1.2.5-r12 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r11 webpage:
+musl-1.2.5-r12 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r11 installed size:
+musl-1.2.5-r12 installed size:
 646 KiB
 
-musl-1.2.5-r11 license:
+musl-1.2.5-r12 license:
 MIT
 
 ```
@@ -426,16 +426,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r11 description:
+musl-utils-1.2.5-r12 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r11 webpage:
+musl-utils-1.2.5-r12 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r11 installed size:
+musl-utils-1.2.5-r12 installed size:
 102 KiB
 
-musl-utils-1.2.5-r11 license:
+musl-utils-1.2.5-r12 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -477,16 +477,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 101 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
