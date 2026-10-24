@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:18158429ac730c34bff399229105a984974b1a921fd626a45e6ec062bc08cdfa`
-- Created: `2026-10-21T03:15:24.766455103Z`
+- Image ID: `sha256:b6d42647c48f5a4b0a10bfee0f1c1b10ecbecb5dee802318da89e9381bda3bb4`
+- Created: `2026-10-21T11:34:33.861798563Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=26.12.0`
+  - `NODE_VERSION=26.12.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -465,9 +465,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.0.9-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9-2.dsc' brotli_1.0.9-2.dsc 2261 SHA256:8c4c86748ec9770e08b60233d658593650444b04a452dc5b607ed5b5537b683e
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9.orig.tar.gz' brotli_1.0.9.orig.tar.gz 486984 SHA256:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.9-2.debian.tar.xz' brotli_1.0.9-2.debian.tar.xz 5552 SHA256:ab81b1db852c8d01e0fa5b0b650bb486f32a232b35336828423af50af6fecca0
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9-2%2bdeb12u1.dsc' brotli_1.0.9-2+deb12u1.dsc 1741 SHA256:942ab3bccf28fa76d2c98a4e4a3a13390ee4484a2250d95a9ca46e6fbe0d6240
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9.orig.tar.gz' brotli_1.0.9.orig.tar.gz 486984 SHA256:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9-2%2bdeb12u1.debian.tar.xz' brotli_1.0.9-2+deb12u1.debian.tar.xz 7828 SHA256:110534b0960a4d013942f48c5dcdee34d39501fcb40cd24106e160ad233cc8be
 ```
 
 Other potentially useful URLs:
@@ -1082,20 +1082,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u4
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u4.dsc' expat_2.5.0-1+deb12u4.dsc 1427 SHA256:e1537fb367ee0036f87b3bc2e8f44de9fb042b7c141643aaaa187bca0f25b0e4
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u4.debian.tar.xz' expat_2.5.0-1+deb12u4.debian.tar.xz 64488 SHA256:f522d550e0a3ff992c293f2c49d44a1248985863d64005f91e086afc5d295908
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u4/
 
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 
@@ -5535,21 +5528,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.dsc' tzdata_2026c-0+deb12u1.dsc 2396 SHA256:0ca4eade11f843446aad110966ba335cd218f0897a1a51b82bd2b4104d6a7547
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.debian.tar.xz' tzdata_2026c-0+deb12u1.debian.tar.xz 122188 SHA256:bc6f8b573203f7e3802d6106eb814d2162c8ad7a2d3e6dcbc73d4cf87fe0986d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1+deb12u1`
 

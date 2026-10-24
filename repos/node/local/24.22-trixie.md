@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb73eb856e69f9267a3fe14fb82aa723b6d09ceeecca2422faff6da235fa9244`
-- Created: `2026-10-21T03:16:44.236418714Z`
+- Image ID: `sha256:1ba6e67975472252bb8eca7b186dd91b65b887c263401b4f2c61c7d5f9eb828e`
+- Created: `2026-10-21T11:35:23.193411305Z`
 - Virtual Size: ~ 1.23 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.22.0`
+  - `NODE_VERSION=24.22.1`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -464,9 +464,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
 ```
 
 Other potentially useful URLs:
@@ -2858,20 +2858,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.4-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.dsc' libheif_1.23.4-1~deb13u1.dsc 3377 SHA256:6bf7fbd3de53ba819c770f07946e20123ed460f3d8eabe579f22218c96bf82c1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4.orig.tar.gz' libheif_1.23.4.orig.tar.gz 2217221 SHA256:d0c02b4b0e978f34a1974b6f3eea7975a537bf7a9195ffeea38e7242ff316fdd
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.debian.tar.xz' libheif_1.23.4-1~deb13u1.debian.tar.xz 15552 SHA256:5102677f6e7e98b9b80d19e7579617ae07fe56199e9c9ce91ce59c1e7a6e24aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/
 
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -5792,21 +5785,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.26.1-0+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.1-0%2bdeb13u1.dsc' unbound_1.26.1-0+deb13u1.dsc 3201 SHA256:5cfa6c981408a173490f851011f7151828a6626679ef78b1e4767ec55290e5dc
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.1.orig.tar.gz' unbound_1.26.1.orig.tar.gz 6948585 SHA256:35a6dc0e425a9282c3426d9a3043144011bf0534aed4b73ab62c52aee0af1503
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.1.orig.tar.gz.asc' unbound_1.26.1.orig.tar.gz.asc 659 SHA256:c52227c2a6918f991443c72709313fcd8530c41ea61268dbe820278a1c60a996
-'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.1-0%2bdeb13u1.debian.tar.xz' unbound_1.26.1-0+deb13u1.debian.tar.xz 32356 SHA256:22430ce4c5ab232b9530b1f7a0a21126a4ae745dfea7860c8a6b39c6851a86e4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.26.1-0+deb13u1/
 
-- https://sources.debian.net/src/unbound/1.26.1-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.26.1-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.26.1-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29+deb13u1`
 
