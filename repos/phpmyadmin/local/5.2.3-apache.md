@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f925878b28019c96e9573d736b1cb3008eb428a486faaa06e222f356507d895`
-- Created: `2026-10-21T01:26:30.472212687Z`
-- Virtual Size: ~ 575.23 Mb  
+- Image ID: `sha256:993cc51d3486b2c6d2abc78c11b6b5d479dfe9bb34459827c986d624a372f09d`
+- Created: `2026-10-21T16:28:19.595942749Z`
+- Virtual Size: ~ 575.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.35`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.35.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.35.tar.xz.asc`
-  - `PHP_SHA256=ff4630fbbbd94359134b7d3c223db59329905bdc4f5a9ef93d257b48e358619a`
+  - `PHP_VERSION=8.3.36`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.36.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.36.tar.xz.asc`
+  - `PHP_SHA256=dd54693aa334c5c4d72e9aee96b082c2473750a18a6c1d105789c93a3b1692fd`
   - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
   - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
@@ -484,9 +484,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
 ```
 
 Other potentially useful URLs:
