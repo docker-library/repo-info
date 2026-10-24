@@ -1,10 +1,10 @@
-# `azul-zulu:17.68-17.0.20.1-jdk-alpine3.23`
+# `azul-zulu:17.70-17.0.21-jdk-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2882df306164d126aa3ebe79427eda53e12ee8e210773884d2581533b5f15c47`
-- Created: `2026-09-17T21:38:23.5718081Z`
-- Virtual Size: ~ 293.02 Mb  
+- Image ID: `sha256:df50131119b69dbccb8b0af44ff6e6e2cac66f46ead869f09f633b0e92e08210`
+- Created: `2026-10-23T20:00:56.578360983Z`
+- Virtual Size: ~ 293.6 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.6-r0 description:
+alpine-release-3.23.7-r0 description:
 Alpine release data
 
-alpine-release-3.23.6-r0 webpage:
+alpine-release-3.23.7-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.6-r0 installed size:
+alpine-release-3.23.7-r0 installed size:
 343 B
 
-alpine-release-3.23.6-r0 license:
+alpine-release-3.23.7-r0 license:
 MIT
 
 ```
@@ -154,16 +154,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -222,16 +222,16 @@ BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -256,16 +256,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -409,16 +409,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
+musl-1.2.5-r24 installed size:
 650 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.5-r24 license:
 MIT
 
 ```
@@ -426,16 +426,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.5-r24 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.5-r24 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -477,16 +477,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
@@ -494,16 +494,16 @@ Zlib
 ### `apk` package: `zulu17-ca-jdk`
 
 ```console
-zulu17-ca-jdk-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) CA JDK
+zulu17-ca-jdk-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) CA JDK
 
-zulu17-ca-jdk-17.0.20.1-r1 webpage:
+zulu17-ca-jdk-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jdk-17.0.20.1-r1 installed size:
+zulu17-ca-jdk-17.0.21-r3 installed size:
 72 KiB
 
-zulu17-ca-jdk-17.0.20.1-r1 license:
+zulu17-ca-jdk-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -511,16 +511,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jdk-headless`
 
 ```console
-zulu17-ca-jdk-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) CA Headless JDK
+zulu17-ca-jdk-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) CA Headless JDK
 
-zulu17-ca-jdk-headless-17.0.20.1-r1 webpage:
+zulu17-ca-jdk-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jdk-headless-17.0.20.1-r1 installed size:
+zulu17-ca-jdk-headless-17.0.21-r3 installed size:
 85 MiB
 
-zulu17-ca-jdk-headless-17.0.20.1-r1 license:
+zulu17-ca-jdk-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -528,16 +528,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jre`
 
 ```console
-zulu17-ca-jre-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) CA JRE
+zulu17-ca-jre-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) CA JRE
 
-zulu17-ca-jre-17.0.20.1-r1 webpage:
+zulu17-ca-jre-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-17.0.20.1-r1 installed size:
+zulu17-ca-jre-17.0.21-r3 installed size:
 3004 KiB
 
-zulu17-ca-jre-17.0.20.1-r1 license:
+zulu17-ca-jre-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -545,16 +545,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jre-headless`
 
 ```console
-zulu17-ca-jre-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) CA Headless JRE
+zulu17-ca-jre-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) CA Headless JRE
 
-zulu17-ca-jre-headless-17.0.20.1-r1 webpage:
+zulu17-ca-jre-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-headless-17.0.20.1-r1 installed size:
+zulu17-ca-jre-headless-17.0.21-r3 installed size:
 179 MiB
 
-zulu17-ca-jre-headless-17.0.20.1-r1 license:
+zulu17-ca-jre-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -562,16 +562,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jdk`
 
 ```console
-zulu17-jdk-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) JDK
+zulu17-jdk-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) JDK
 
-zulu17-jdk-17.0.20.1-r1 webpage:
+zulu17-jdk-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jdk-17.0.20.1-r1 installed size:
+zulu17-jdk-17.0.21-r3 installed size:
 4096 B
 
-zulu17-jdk-17.0.20.1-r1 license:
+zulu17-jdk-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -579,16 +579,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jdk-headless`
 
 ```console
-zulu17-jdk-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) Headless JDK
+zulu17-jdk-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) Headless JDK
 
-zulu17-jdk-headless-17.0.20.1-r1 webpage:
+zulu17-jdk-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jdk-headless-17.0.20.1-r1 installed size:
+zulu17-jdk-headless-17.0.21-r3 installed size:
 4096 B
 
-zulu17-jdk-headless-17.0.20.1-r1 license:
+zulu17-jdk-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -596,16 +596,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre`
 
 ```console
-zulu17-jre-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) JRE
+zulu17-jre-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) JRE
 
-zulu17-jre-17.0.20.1-r1 webpage:
+zulu17-jre-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-17.0.20.1-r1 installed size:
+zulu17-jre-17.0.21-r3 installed size:
 4096 B
 
-zulu17-jre-17.0.20.1-r1 license:
+zulu17-jre-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -613,16 +613,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre-headless`
 
 ```console
-zulu17-jre-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) Headless JRE
+zulu17-jre-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) Headless JRE
 
-zulu17-jre-headless-17.0.20.1-r1 webpage:
+zulu17-jre-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-headless-17.0.20.1-r1 installed size:
+zulu17-jre-headless-17.0.21-r3 installed size:
 4096 B
 
-zulu17-jre-headless-17.0.20.1-r1 license:
+zulu17-jre-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

@@ -1,10 +1,10 @@
-# `azul-zulu:21.52-21.0.12.1-jdk-headless-alpine3.23`
+# `azul-zulu:21.54-21.0.13-jdk-headless-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c126f9d9dc6823414c9883148243269fa1cedeb7e4d9292e2e50a581278ab0ed`
-- Created: `2026-09-17T21:38:48.696790469Z`
-- Virtual Size: ~ 311.9 Mb  
+- Image ID: `sha256:c85c84ee4ef01e3fa1d9d9878ab14bd0e3b56cd3d66e7eb81e43f1554dd917ce`
+- Created: `2026-10-23T20:01:39.882932364Z`
+- Virtual Size: ~ 312.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.6-r0 description:
+alpine-release-3.23.7-r0 description:
 Alpine release data
 
-alpine-release-3.23.6-r0 webpage:
+alpine-release-3.23.7-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.6-r0 installed size:
+alpine-release-3.23.7-r0 installed size:
 343 B
 
-alpine-release-3.23.6-r0 license:
+alpine-release-3.23.7-r0 license:
 MIT
 
 ```
@@ -137,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -188,16 +188,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
+musl-1.2.5-r24 installed size:
 650 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.5-r24 license:
 MIT
 
 ```
@@ -239,16 +239,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.5-r24 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.5-r24 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -290,16 +290,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
@@ -307,16 +307,16 @@ Zlib
 ### `apk` package: `zulu21-ca-jdk-headless`
 
 ```console
-zulu21-ca-jdk-headless-21.0.12.1-r1 description:
-Azul Zulu 21.52+203 (21.0.12.1-b1) CA Headless JDK
+zulu21-ca-jdk-headless-21.0.13-r3 description:
+Azul Zulu 21.54+107 (21.0.13-b9) CA Headless JDK
 
-zulu21-ca-jdk-headless-21.0.12.1-r1 webpage:
+zulu21-ca-jdk-headless-21.0.13-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu21-ca-jdk-headless-21.0.12.1-r1 installed size:
+zulu21-ca-jdk-headless-21.0.13-r3 installed size:
 94 MiB
 
-zulu21-ca-jdk-headless-21.0.12.1-r1 license:
+zulu21-ca-jdk-headless-21.0.13-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu21-ca-jre-headless`
 
 ```console
-zulu21-ca-jre-headless-21.0.12.1-r1 description:
-Azul Zulu 21.52+203 (21.0.12.1-b1) CA Headless JRE
+zulu21-ca-jre-headless-21.0.13-r3 description:
+Azul Zulu 21.54+107 (21.0.13-b9) CA Headless JRE
 
-zulu21-ca-jre-headless-21.0.12.1-r1 webpage:
+zulu21-ca-jre-headless-21.0.13-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu21-ca-jre-headless-21.0.12.1-r1 installed size:
+zulu21-ca-jre-headless-21.0.13-r3 installed size:
 196 MiB
 
-zulu21-ca-jre-headless-21.0.12.1-r1 license:
+zulu21-ca-jre-headless-21.0.13-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -341,16 +341,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu21-jdk-headless`
 
 ```console
-zulu21-jdk-headless-21.0.12.1-r1 description:
-Azul Zulu 21.52+203 (21.0.12.1-b1) Headless JDK
+zulu21-jdk-headless-21.0.13-r3 description:
+Azul Zulu 21.54+107 (21.0.13-b9) Headless JDK
 
-zulu21-jdk-headless-21.0.12.1-r1 webpage:
+zulu21-jdk-headless-21.0.13-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu21-jdk-headless-21.0.12.1-r1 installed size:
+zulu21-jdk-headless-21.0.13-r3 installed size:
 4096 B
 
-zulu21-jdk-headless-21.0.12.1-r1 license:
+zulu21-jdk-headless-21.0.13-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -358,16 +358,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu21-jre-headless`
 
 ```console
-zulu21-jre-headless-21.0.12.1-r1 description:
-Azul Zulu 21.52+203 (21.0.12.1-b1) Headless JRE
+zulu21-jre-headless-21.0.13-r3 description:
+Azul Zulu 21.54+107 (21.0.13-b9) Headless JRE
 
-zulu21-jre-headless-21.0.12.1-r1 webpage:
+zulu21-jre-headless-21.0.13-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu21-jre-headless-21.0.12.1-r1 installed size:
+zulu21-jre-headless-21.0.13-r3 installed size:
 4096 B
 
-zulu21-jre-headless-21.0.12.1-r1 license:
+zulu21-jre-headless-21.0.13-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

@@ -1,10 +1,10 @@
-# `azul-zulu:17.68-17.0.20.1-jre-headless-alpine3.23`
+# `azul-zulu:17.70-17.0.21-jre-headless-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:db4b01c67fdde1fdb400caf9cd73521cc0ae4c27e472f55e80a73d4eec80e410`
-- Created: `2026-09-17T21:38:36.231954387Z`
-- Virtual Size: ~ 195.62 Mb  
+- Image ID: `sha256:9508eadda13f8fa23b35407be6073cfbd08bfb015dd8c38593cbe769bc9e3b6d`
+- Created: `2026-10-23T20:01:20.220095095Z`
+- Virtual Size: ~ 196.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.6-r0 description:
+alpine-release-3.23.7-r0 description:
 Alpine release data
 
-alpine-release-3.23.6-r0 webpage:
+alpine-release-3.23.7-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.6-r0 installed size:
+alpine-release-3.23.7-r0 installed size:
 343 B
 
-alpine-release-3.23.6-r0 license:
+alpine-release-3.23.7-r0 license:
 MIT
 
 ```
@@ -137,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260909-r0 description:
+ca-certificates-bundle-20261020-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260909-r0 webpage:
+ca-certificates-bundle-20261020-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260909-r0 installed size:
-177 KiB
+ca-certificates-bundle-20261020-r0 installed size:
+174 KiB
 
-ca-certificates-bundle-20260909-r0 license:
+ca-certificates-bundle-20261020-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -188,16 +188,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.8-r0 description:
+libcrypto3-3.5.9-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.8-r0 webpage:
+libcrypto3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.8-r0 installed size:
-5095 KiB
+libcrypto3-3.5.9-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.8-r0 license:
+libcrypto3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.8-r0 description:
+libssl3-3.5.9-r0 description:
 SSL shared libraries
 
-libssl3-3.5.8-r0 webpage:
+libssl3-3.5.9-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.8-r0 installed size:
-819 KiB
+libssl3-3.5.9-r0 installed size:
+823 KiB
 
-libssl3-3.5.8-r0 license:
+libssl3-3.5.9-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
+musl-1.2.5-r24 installed size:
 650 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.5-r24 license:
 MIT
 
 ```
@@ -239,16 +239,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.5-r24 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.5-r24 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.5-r24 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.5-r24 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -290,16 +290,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r0 description:
+zlib-1.3.2-r1 description:
 A compression/decompression Library
 
-zlib-1.3.2-r0 webpage:
+zlib-1.3.2-r1 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r0 installed size:
+zlib-1.3.2-r1 installed size:
 105 KiB
 
-zlib-1.3.2-r0 license:
+zlib-1.3.2-r1 license:
 Zlib
 
 ```
@@ -307,16 +307,16 @@ Zlib
 ### `apk` package: `zulu17-ca-jre-headless`
 
 ```console
-zulu17-ca-jre-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) CA Headless JRE
+zulu17-ca-jre-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) CA Headless JRE
 
-zulu17-ca-jre-headless-17.0.20.1-r1 webpage:
+zulu17-ca-jre-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-headless-17.0.20.1-r1 installed size:
+zulu17-ca-jre-headless-17.0.21-r3 installed size:
 179 MiB
 
-zulu17-ca-jre-headless-17.0.20.1-r1 license:
+zulu17-ca-jre-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre-headless`
 
 ```console
-zulu17-jre-headless-17.0.20.1-r1 description:
-Azul Zulu 17.68+203 (17.0.20.1-b1) Headless JRE
+zulu17-jre-headless-17.0.21-r3 description:
+Azul Zulu 17.70+111 (17.0.21-b9) Headless JRE
 
-zulu17-jre-headless-17.0.20.1-r1 webpage:
+zulu17-jre-headless-17.0.21-r3 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-headless-17.0.20.1-r1 installed size:
+zulu17-jre-headless-17.0.21-r3 installed size:
 4096 B
 
-zulu17-jre-headless-17.0.20.1-r1 license:
+zulu17-jre-headless-17.0.21-r3 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
