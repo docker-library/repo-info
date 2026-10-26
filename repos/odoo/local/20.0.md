@@ -1532,9 +1532,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris jinja2=3.1.2-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2.orig.tar.gz' jinja2_3.1.2.orig.tar.gz 268239 SHA256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.debian.tar.xz' jinja2_3.1.2-1ubuntu1.3.debian.tar.xz 15844 SHA256:636464fc28be1435f17c31a9a67680bb8f1a7d813846ed1bfb5b4f0f2afcf792
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.dsc' jinja2_3.1.2-1ubuntu1.3.dsc 2341 SHA256:0627402e42d79ebd43aa1a523b939af78d955ae9c57e47f9a4aa15143c210a09
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2.orig.tar.gz' jinja2_3.1.2.orig.tar.gz 268239 SHA512:5dfe122c1beef5305b34d25f22f96607bd3a6cba098b03091850ea36fefe62b645a7218d7584b35bea252393ac922c9bb3654a9e90f23bcfb273e811fcf2f2c1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.debian.tar.xz' jinja2_3.1.2-1ubuntu1.3.debian.tar.xz 15844 SHA512:23a12c0118cdab29c1940b2dd159e2c2517c47e136f46e91791ca0a082c6f5a86d41581492b8728e9191df70e7abea7aefeac69b1156df9c6ce3fa6ea4c9ab2a
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.dsc' jinja2_3.1.2-1ubuntu1.3.dsc 2341 SHA512:726f998ce22f2338afd55635086f68b331ee074585b504fccfcc571576f3c7bb8bd4b7489939f37a32402c7db716d09734c38996e40a7f9d5276568d5a32cb5d
 ```
 
 ### `dpkg` source package: `keyutils=1.6.3-3build1`
@@ -5348,14 +5348,9 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg-3.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg.orig.tar.xz' zlib_1.3.dfsg.orig.tar.xz 1128572 SHA512:be6f020c691c61fe4ddcb27d3f8b2515435f544177e0b97286b5e85afc3862c1de6cd74a14ff6b065d620d046d35bf029fabfd1cf473f43a2cad60bf9ad55afe
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.2.debian.tar.xz' zlib_1.3.dfsg-3.1ubuntu2.2.debian.tar.xz 61316 SHA512:545295662b3a060041c44d44ab02641fb934250ffc56b1e96f9dacca269f2da50276c9232970429ac369d6ad6b084dd5efee8f835cbf7875edc1364de7ce4ef3
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.2.dsc' zlib_1.3.dfsg-3.1ubuntu2.2.dsc 2987 SHA512:a2bcf9d72d96e9ed246edd71e77f1d23f2328027a0bd039dd9ef5538551c27b61409768a65696139e5eb2eb25bafb33097f40adb88dc80231043814ae53a0793
-```
 
 ### `dpkg` source package: `zope.event=5.0-0.1`
 
