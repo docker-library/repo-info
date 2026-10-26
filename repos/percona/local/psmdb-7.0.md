@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ecdb133948af223d855c4d3ff7cb8d82096a8aeca02c1849cb9e0543e401ec7`
-- Created: `2026-10-13T22:57:26.894678112Z`
-- Virtual Size: ~ 931.35 Mb  
+- Image ID: `sha256:239c4cafccfa97ed3d51f59222af3265d6cf9ddc38664b004c04653c1439f9e1`
+- Created: `2026-10-23T16:49:43.127761723Z`
+- Virtual Size: ~ 932.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T13:35:30Z`
+  - `build-date=2026-10-23T07:55:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -37,12 +37,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-10-13T13:35:30Z`
-  - `org.opencontainers.image.revision=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
-  - `release=1791898448`
+  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
+  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `release=1792742033`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
+  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -115,15 +115,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-11.el9.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-91.el9.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-91.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-91.el9.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.src.rpm
 ```
 
 ### `rpm` package: `coreutils-single-8.32-41.el9_8.1.x86_64`
@@ -280,15 +280,15 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-34.el9_8.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dnf-4.14.0-34.el9_8.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.5.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.7.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -1388,7 +1388,7 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-7.el9_8.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-7.el9_8.src.rpm
 ```
 
-### `rpm` package: `percona-mongodb-mongosh-2.10.0-1.el9.x86_64`
+### `rpm` package: `percona-mongodb-mongosh-2.13.0-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1418,7 +1418,7 @@ Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.18-1.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.19-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
