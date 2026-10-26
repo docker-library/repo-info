@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1aa2781be40bdee9e31b9c74f5a00abc9d159dba5cd92446cd8f86132ea966c2`
-- Created: `2026-10-21T22:12:28.582084721Z`
-- Virtual Size: ~ 179.03 Mb  
+- Image ID: `sha256:8cbfb5d5b080410b8ee2db8b5cc8a10b0877d0eeabce8dbf9a91b0e503ac5f2c`
+- Created: `2026-10-23T16:54:54.758743926Z`
+- Virtual Size: ~ 179.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
@@ -119,16 +119,16 @@ GPL-2.0-only
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.1.0-r2 description:
+brotli-libs-1.1.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.1.0-r2 webpage:
+brotli-libs-1.1.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.1.0-r2 installed size:
+brotli-libs-1.1.1-r0 installed size:
 913 KiB
 
-brotli-libs-1.1.0-r2 license:
+brotli-libs-1.1.1-r0 license:
 MIT
 
 ```
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-27-jre`
 
 ```console
-sapmachine-27-jre-27.0.1-r0 description:
+sapmachine-27-jre-27.0.1.0.2-r0 description:
 The SapMachine Java Runtime Environment
 
-sapmachine-27-jre-27.0.1-r0 webpage:
+sapmachine-27-jre-27.0.1.0.2-r0 webpage:
 https://sapmachine.io
 
-sapmachine-27-jre-27.0.1-r0 installed size:
+sapmachine-27-jre-27.0.1.0.2-r0 installed size:
 148 MiB
 
-sapmachine-27-jre-27.0.1-r0 license:
+sapmachine-27-jre-27.0.1.0.2-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```

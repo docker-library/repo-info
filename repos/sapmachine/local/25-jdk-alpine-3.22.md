@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0328ab43318cea1df5b6ee7c1fe0e7ae94250de9afdd3739f2c2cf279f9fa5b3`
-- Created: `2026-10-21T22:13:48.46044738Z`
-- Virtual Size: ~ 292.03 Mb  
+- Image ID: `sha256:35c0abc35be3a4c806dd63ce91f18e15534a3b38a33eaa0aad0b3ce8c7e8b5fe`
+- Created: `2026-10-23T16:56:16.399817676Z`
+- Virtual Size: ~ 384.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -119,16 +119,16 @@ GPL-2.0-only
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.1.0-r2 description:
+brotli-libs-1.1.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.1.0-r2 webpage:
+brotli-libs-1.1.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.1.0-r2 installed size:
+brotli-libs-1.1.1-r0 installed size:
 913 KiB
 
-brotli-libs-1.1.0-r2 license:
+brotli-libs-1.1.1-r0 license:
 MIT
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-25-jdk`
 
 ```console
-sapmachine-25-jdk-25.0.5-r0 description:
+sapmachine-25-jdk-25.0.5.0.2-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-25-jdk-25.0.5-r0 webpage:
+sapmachine-25-jdk-25.0.5.0.2-r0 webpage:
 https://sapmachine.io
 
-sapmachine-25-jdk-25.0.5-r0 installed size:
-255 MiB
+sapmachine-25-jdk-25.0.5.0.2-r0 installed size:
+343 MiB
 
-sapmachine-25-jdk-25.0.5-r0 license:
+sapmachine-25-jdk-25.0.5.0.2-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
