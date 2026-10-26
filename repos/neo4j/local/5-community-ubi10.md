@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ddfbebb97df73529c615e66ccb77495a11ff226c5d750873261b639f15eb71dc`
-- Created: `2026-10-21T21:50:47.178770727Z`
-- Virtual Size: ~ 512.51 Mb  
+- Image ID: `sha256:adcb9ab315060626158f5ce4cbb4eae5061fd1b947eb1d9a4743c747b299dfb3`
+- Created: `2026-10-23T16:53:29.932009953Z`
+- Virtual Size: ~ 512.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-20T00:48:29Z`
+  - `build-date=2026-10-23T08:01:58Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-20T00:48:29Z`
-  - `org.opencontainers.image.revision=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
-  - `release=1792457157`
+  - `org.opencontainers.image.created=2026-10-23T08:01:58Z`
+  - `org.opencontainers.image.revision=c29332dc58c1d049841f2bd7506b3249dc37ea6a`
+  - `release=1792742351`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
+  - `vcs-ref=c29332dc58c1d049841f2bd7506b3249dc37ea6a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -121,12 +121,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-102.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
 
@@ -311,12 +306,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.5.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 

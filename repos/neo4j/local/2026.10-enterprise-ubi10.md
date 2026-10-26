@@ -1,10 +1,10 @@
-# `neo4j:2026.10.0-enterprise-ubi10`
+# `neo4j:2026.10.1-enterprise-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5257e81c1f20a53e9bab1ef667135ca11e354beae2fb1dea8f3dffd4c2536fc4`
-- Created: `2026-10-21T21:50:40.933647073Z`
-- Virtual Size: ~ 870.15 Mb  
+- Image ID: `sha256:28d85921e3298d85183558efaadf7643269183828c819b34adde5f829a6039c8`
+- Created: `2026-10-23T16:53:27.759701743Z`
+- Virtual Size: ~ 865.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,14 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=aa6006e5f8bb93c144ac8a7cc5bf1bdc48332ac4626b6c5d527c1a0be92116a0`
-  - `NEO4J_TARBALL=neo4j-enterprise-2026.10.0-unix.tar.gz`
+  - `NEO4J_SHA256=96c6404dad2ac8728fbd147458441091ea8c444b9eb22aadde1209d3b4b23aa7`
+  - `NEO4J_TARBALL=neo4j-enterprise-2026.10.1-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-20T00:48:29Z`
+  - `build-date=2026-10-23T08:01:58Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-20T00:48:29Z`
-  - `org.opencontainers.image.revision=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
-  - `release=1792457157`
+  - `org.opencontainers.image.created=2026-10-23T08:01:58Z`
+  - `org.opencontainers.image.revision=c29332dc58c1d049841f2bd7506b3249dc37ea6a`
+  - `release=1792742351`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=a4525a44c38615f09f474d3b5285a2a1ea7a1905`
+  - `vcs-ref=c29332dc58c1d049841f2bd7506b3249dc37ea6a`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -121,12 +121,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-102.el10_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
 
@@ -311,12 +306,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/expat-2.7.3-1.el10_2.5.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
 
