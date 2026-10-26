@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4906c0e76c84338a28e58c185af79f1963eb481f293c06515bc127df8200b092`
-- Created: `2026-10-21T21:47:12.656930264Z`
-- Virtual Size: ~ 442.35 Mb  
+- Image ID: `sha256:829abbf4c5b255e4176757222915992329f10b420d1c7969a623465a872376f9`
+- Created: `2026-10-23T17:07:40.228525532Z`
+- Virtual Size: ~ 442.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.11`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.11.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=f79c6e789ce4f30f77c88a40b23b93e2547c512a843dc17db27ab1f5cc66f4e4`
+  - `RUBY_VERSION=3.4.12`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.12.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=db6c147940d7ad0b706823d42c8e6713c36dec70a1f83f635f1d3a7f0599ec90`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -218,16 +218,16 @@ GPL-2.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r0 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r0 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r0 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r0 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -626,16 +626,16 @@ MIT
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.29-r0 description:
+imagemagick-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.29-r0 webpage:
+imagemagick-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.29-r0 installed size:
-3701 KiB
+imagemagick-7.1.2.34-r0 installed size:
+3777 KiB
 
-imagemagick-7.1.2.29-r0 license:
+imagemagick-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -643,16 +643,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.29-r0 description:
+imagemagick-jp2-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.29-r0 webpage:
+imagemagick-jp2-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.29-r0 installed size:
+imagemagick-jp2-7.1.2.34-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.29-r0 license:
+imagemagick-jp2-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -660,16 +660,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.29-r0 description:
+imagemagick-jpeg-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.29-r0 webpage:
+imagemagick-jpeg-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.29-r0 installed size:
+imagemagick-jpeg-7.1.2.34-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.29-r0 license:
+imagemagick-jpeg-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -677,16 +677,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.29-r0 description:
+imagemagick-libs-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.29-r0 webpage:
+imagemagick-libs-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.29-r0 installed size:
-4309 KiB
+imagemagick-libs-7.1.2.34-r0 installed size:
+4313 KiB
 
-imagemagick-libs-7.1.2.29-r0 license:
+imagemagick-libs-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -694,16 +694,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.29-r0 description:
+imagemagick-pdf-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.29-r0 webpage:
+imagemagick-pdf-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.29-r0 installed size:
-125 KiB
+imagemagick-pdf-7.1.2.34-r0 installed size:
+133 KiB
 
-imagemagick-pdf-7.1.2.29-r0 license:
+imagemagick-pdf-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -711,16 +711,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.29-r0 description:
+imagemagick-tiff-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.29-r0 webpage:
+imagemagick-tiff-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.29-r0 installed size:
-115 KiB
+imagemagick-tiff-7.1.2.34-r0 installed size:
+119 KiB
 
-imagemagick-tiff-7.1.2.29-r0 license:
+imagemagick-tiff-7.1.2.34-r0 license:
 ImageMagick
 
 ```
@@ -728,16 +728,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.29-r0 description:
+imagemagick-webp-7.1.2.34-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.29-r0 webpage:
+imagemagick-webp-7.1.2.34-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.29-r0 installed size:
+imagemagick-webp-7.1.2.34-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.29-r0 license:
+imagemagick-webp-7.1.2.34-r0 license:
 ImageMagick
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a04f54c6b44a67f3f469e6fd9792cafa1872fb830e897500fbbdf6c19223e6a`
-- Created: `2026-10-21T23:42:05.264284603Z`
-- Virtual Size: ~ 494.77 Mb  
+- Image ID: `sha256:9b6b9d3b1091b8e2c716291c15b4f90a18b3f721dd2005aa76b8502fbbf93d45`
+- Created: `2026-10-23T17:02:55.350673822Z`
+- Virtual Size: ~ 494.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=47ef59413f7a4587ba6a6b78b14036eb5e36eec2ec0b90964801e88d56a3d375`
+  - `RUBY_VERSION=4.0.9`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.9.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=a8057adb39f51ad6dc3106237504c93dd792bb515837b4fe7817ae21ed7e51f4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -218,16 +218,16 @@ GPL-2.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -320,16 +320,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.19-r0 description:
+cups-libs-2.4.19-r1 description:
 CUPS libraries
 
-cups-libs-2.4.19-r0 webpage:
+cups-libs-2.4.19-r1 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.19-r0 installed size:
-559 KiB
+cups-libs-2.4.19-r1 installed size:
+563 KiB
 
-cups-libs-2.4.19-r0 license:
+cups-libs-2.4.19-r1 license:
 Apache-2.0
 
 ```

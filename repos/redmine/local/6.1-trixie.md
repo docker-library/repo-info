@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccdf41a886a2eeee0c7af32ac7af84ea95d41e7ede61f98f966380b6bcadceca`
-- Created: `2026-10-21T01:46:02.707399298Z`
-- Virtual Size: ~ 615.2 Mb  
+- Image ID: `sha256:82e6486c179e964b7202e4e5a1aa34f252d43a2e553990953fd517f9a4155150`
+- Created: `2026-10-23T17:04:17.154287334Z`
+- Virtual Size: ~ 616.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.11`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.11.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=f79c6e789ce4f30f77c88a40b23b93e2547c512a843dc17db27ab1f5cc66f4e4`
+  - `RUBY_VERSION=3.4.12`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.12.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=db6c147940d7ad0b706823d42c8e6713c36dec70a1f83f635f1d3a7f0599ec90`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -376,9 +376,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
 ```
 
 Other potentially useful URLs:
@@ -2294,20 +2294,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.4-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.dsc' libheif_1.23.4-1~deb13u1.dsc 3377 SHA256:6bf7fbd3de53ba819c770f07946e20123ed460f3d8eabe579f22218c96bf82c1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4.orig.tar.gz' libheif_1.23.4.orig.tar.gz 2217221 SHA256:d0c02b4b0e978f34a1974b6f3eea7975a537bf7a9195ffeea38e7242ff316fdd
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.debian.tar.xz' libheif_1.23.4-1~deb13u1.debian.tar.xz 15552 SHA256:5102677f6e7e98b9b80d19e7579617ae07fe56199e9c9ce91ce59c1e7a6e24aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/
 
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -4632,12 +4625,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tini/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tini/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb13u1`
+### `dpkg` source package: `tzdata=2026e-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb13u1`
-- `tzdata-legacy=2026c-0+deb13u1`
+- `tzdata=2026e-0+deb13u1`
+- `tzdata-legacy=2026e-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`, `/usr/share/doc/tzdata-legacy/copyright`)
 
@@ -4646,18 +4639,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`, `/usr/share/doc/tzdat
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.dsc' tzdata_2026c-0+deb13u1.dsc 2466 SHA256:b18d6eddfb23971bacbf569a2641cda837002a813d8e8940d8792ea7ba8e2d4e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.debian.tar.xz' tzdata_2026c-0+deb13u1.debian.tar.xz 127148 SHA256:48cd3f42cee2b8ec62ca9c2f4c43cf6c0ec05e1a5ae97f4ed771635811b82f29
+$ apt-get source -qq --print-uris tzdata=2026e-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.dsc' tzdata_2026e-0+deb13u1.dsc 2466 SHA256:d30d2263399c388a0903ee15114a80ee4583464faaa8fc08f753739ca5841cd6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.debian.tar.xz' tzdata_2026e-0+deb13u1.debian.tar.xz 128776 SHA256:5d14cd956e43a40b887413c6fe2de79036179648ef7f35aa7498b3bb1008e4bb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
