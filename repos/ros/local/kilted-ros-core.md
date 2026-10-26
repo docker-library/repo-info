@@ -2979,9 +2979,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-zipp=1.0.0-6ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0.orig.tar.gz' python-zipp_1.0.0.orig.tar.gz 10821 SHA256:d38fbe01bbf7a3593a32bc35a9c4453c32bc42b98c377f9bff7e9f8da157786c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-6ubuntu0.1.debian.tar.xz' python-zipp_1.0.0-6ubuntu0.1.debian.tar.xz 4188 SHA256:0a9ced99171dcc1904d2fef982c35c796e9c80d9a920dd618078c357b8981801
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-6ubuntu0.1.dsc' python-zipp_1.0.0-6ubuntu0.1.dsc 1616 SHA256:b64a8f5fcd78afe01b9cdbb61f7a5e8eae3baa5e6f3966a6efe33cd585b0330b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0.orig.tar.gz' python-zipp_1.0.0.orig.tar.gz 10821 SHA512:dbfadfedd30ca4cb31ac4163f367134d96e57405ef00d5f4c19c0af7a141f78487dec29a0ba94975584fcb462d22c8b536bf29c67b7e298368072e897b0e9d82
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-6ubuntu0.1.debian.tar.xz' python-zipp_1.0.0-6ubuntu0.1.debian.tar.xz 4188 SHA512:5d6b7d14ded6a5c2ae9769a023a01c37c85eab5013bf9c747b086d39a0fe43294c48a2ccc92f81df14e399872d36a4cfb19b03dcc51318e32da8a7cc3ecf66e7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-6ubuntu0.1.dsc' python-zipp_1.0.0-6ubuntu0.1.dsc 1616 SHA512:114339a929ac0ea228882adeeb5d4e13856151fcc88c77ee1e531abff30e9c47cf1dc22ba84a3a04391611fdf733cea02c6b28315d028fc48c489fdaf00067e6
 ```
 
 ### `dpkg` source package: `python3-catkin-pkg-modules=1.1.1-1`
