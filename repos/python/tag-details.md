@@ -11740,39 +11740,84 @@ $ docker pull python@sha256:381155001e72faf3bef391193a8fb68e1721de2c5d3fc92558b8
 
 ## `python:3.11.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.11.18-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12`
 
@@ -17485,48 +17530,93 @@ $ docker pull python@sha256:f985e9146bcd7a10fb7cd9631abb2f97a468353e5f5198fd0271
 
 ## `python:3.12.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.12.16-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13`
 
 ```console
-$ docker pull python@sha256:fa73a7f200473ac67c9d05b7d91b9b6f3b5b945e296406986b307d7f738e0b37
+$ docker pull python@sha256:23cf55275b5f3fa89ad0082e6507d3ba74e9a2aeb83e4fe740c24570a1385dd1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 18
+-	Platforms: 16
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17543,8 +17633,6 @@ $ docker pull python@sha256:fa73a7f200473ac67c9d05b7d91b9b6f3b5b945e296406986b30
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
-	-	windows version 10.0.26100.33650; amd64
-	-	windows version 10.0.20348.5761; amd64
 
 ### `python:3.13` - linux; amd64
 
@@ -18289,140 +18377,6 @@ $ docker pull python@sha256:f109e291ff4ccd7f7cea8dc38ba177f607dc93656579182ed27b
 		Last Modified: Wed, 21 Oct 2026 23:09:41 GMT  
 		Size: 22.4 KB (22355 bytes)  
 		MIME: application/vnd.in-toto+json
-
-### `python:3.13` - windows version 10.0.26100.33650; amd64
-
-```console
-$ docker pull python@sha256:806c67285624534627be8202d476b4c793c4d28e9c2342d881db420ce626033a
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2452646877 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f7a02aa0833d9b9e632f963d77dfe0d17b671c968151659c6c0da64e3bdd07`
--	Default Command: `["python"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Sun, 11 Jan 2026 09:57:36 GMT
-RUN Apply image 10.0.26100.32230
-# Tue, 13 Oct 2026 00:57:35 GMT
-RUN Install update 10.0.26100.33650
-# Wed, 21 Oct 2026 22:12:31 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 21 Oct 2026 22:30:35 GMT
-ENV PYTHONIOENCODING=UTF-8
-# Wed, 21 Oct 2026 22:32:35 GMT
-ENV PYTHON_VERSION=3.13.17
-# Wed, 21 Oct 2026 22:32:35 GMT
-ENV PYTHON_SHA256=5da012101ba2e17113a9a1cd901e9ce1441086f2b7ecb5de06ec94163899a190
-# Wed, 21 Oct 2026 22:33:11 GMT
-RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f ($env:PYTHON_VERSION -replace '[a-z]+[0-9]*$', ''), $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_SHA256); 	if ((Get-FileHash python.exe -Algorithm sha256).Hash -ne $env:PYTHON_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	$exitCode = (Start-Process python.exe -Wait -NoNewWindow -PassThru 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=1', 			'Include_test=0' 		) 	).ExitCode; 	if ($exitCode -ne 0) { 		Write-Host ('Running python installer failed with exit code: {0}' -f $exitCode); 		Get-ChildItem $env:TEMP | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1 | Get-Content; 		exit $exitCode; 	} 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 	Remove-Item $env:TEMP/Python*.log -Force; 		$env:PYTHONDONTWRITEBYTECODE = '1'; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 21 Oct 2026 22:33:12 GMT
-CMD ["python"]
-```
-
--	Layers:
-	-	`sha256:0938cf51b672b81c9804d1d5f0c57031c931f41b279270e84820c63642d6a3bd`  
-		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
-		Size: 1.5 GB (1523059351 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313fd727a719542e5d0b85e1b735e644a35d82775b58aa9afb5e79e24f63ae2f`  
-		Last Modified: Tue, 13 Oct 2026 21:56:04 GMT  
-		Size: 868.9 MB (868934967 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:191e7b66cb854415c1a42281cdbe07fa32854ef0e4df6bcc374620de008517f2`  
-		Last Modified: Wed, 21 Oct 2026 22:15:00 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6cfadb3c33e7d4fbb88f6dbecd2057b7a52299f3a4997cfdf0726c3a8a42a1`  
-		Last Modified: Wed, 21 Oct 2026 22:31:15 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c8ee90e52831bcc3dd16384842885a35ee2f66a2f3b31731682e3a9d7ec7f5c`  
-		Last Modified: Wed, 21 Oct 2026 22:33:16 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:904debd4d9cfdc48d38dbc6caca06e46c2b9c6f2bfb300a1144f5a7a0edca608`  
-		Last Modified: Wed, 21 Oct 2026 22:33:16 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc6d4124f239d6977d720e770c04832249715add4b313b79c7676494d85947a3`  
-		Last Modified: Wed, 21 Oct 2026 22:33:21 GMT  
-		Size: 60.6 MB (60646106 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a078a3a3b132b9568362563f3bf737a717412c134c6f3adaa31ea26da01666d6`  
-		Last Modified: Wed, 21 Oct 2026 22:33:16 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `python:3.13` - windows version 10.0.20348.5761; amd64
-
-```console
-$ docker pull python@sha256:912a5c20b44c61ff3882fcbafae468fd938902031aa71bc0bb654e0a63436d27
-```
-
--	Docker Version: 23.0.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2286745693 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d4f1f4efa9aeea0b434c9f5861484ad52af722a1f68410b5503b6e6159e003`
--	Default Command: `["python"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Thu, 09 Oct 2025 07:51:18 GMT
-RUN Apply image 10.0.20348.4294
-# Tue, 13 Oct 2026 04:45:55 GMT
-RUN Install update 10.0.20348.5761
-# Wed, 21 Oct 2026 22:11:41 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 21 Oct 2026 22:30:40 GMT
-ENV PYTHONIOENCODING=UTF-8
-# Wed, 21 Oct 2026 22:33:09 GMT
-ENV PYTHON_VERSION=3.13.17
-# Wed, 21 Oct 2026 22:33:10 GMT
-ENV PYTHON_SHA256=5da012101ba2e17113a9a1cd901e9ce1441086f2b7ecb5de06ec94163899a190
-# Wed, 21 Oct 2026 22:33:48 GMT
-RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f ($env:PYTHON_VERSION -replace '[a-z]+[0-9]*$', ''), $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_SHA256); 	if ((Get-FileHash python.exe -Algorithm sha256).Hash -ne $env:PYTHON_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	$exitCode = (Start-Process python.exe -Wait -NoNewWindow -PassThru 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=1', 			'Include_test=0' 		) 	).ExitCode; 	if ($exitCode -ne 0) { 		Write-Host ('Running python installer failed with exit code: {0}' -f $exitCode); 		Get-ChildItem $env:TEMP | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1 | Get-Content; 		exit $exitCode; 	} 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 	Remove-Item $env:TEMP/Python*.log -Force; 		$env:PYTHONDONTWRITEBYTECODE = '1'; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 21 Oct 2026 22:33:49 GMT
-CMD ["python"]
-```
-
--	Layers:
-	-	`sha256:3cc21a1b754848d23f00aa65cb94ec34c9a5dc6028b3aada42039c824738d02f`  
-		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
-		Size: 1.5 GB (1489019076 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ec79e5e58bee753e347abf7bc98770bade10fd0e7a859be73c331308b8eb13d`  
-		Last Modified: Tue, 13 Oct 2026 17:53:54 GMT  
-		Size: 737.3 MB (737266398 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d50c6aba90dbb9bb75beba9b047d772d576ae55d3a87354de75f0b41ad837331`  
-		Last Modified: Wed, 21 Oct 2026 22:17:19 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83678c2c7603b9f41d74f599899768084fae18f484d40d6ac75516ccc2a3fd8b`  
-		Last Modified: Wed, 21 Oct 2026 22:31:46 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e3557accfea35e6913b27dcd6e97c117f182e5cc938195197c4632a78f42ffe`  
-		Last Modified: Wed, 21 Oct 2026 22:33:54 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e36548960aa17affb83382667846a9c2cb80c967c72fc89f4c8f1ba04dfd2af2`  
-		Last Modified: Wed, 21 Oct 2026 22:33:54 GMT  
-		Size: 1.3 KB (1295 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a2007c6e8a0a8d5ac48014fce7570c31f8f43f7e989522625a307b10122ce0e`  
-		Last Modified: Wed, 21 Oct 2026 22:33:59 GMT  
-		Size: 60.5 MB (60453652 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:040a1dbdcba232c4cc05d046cfdd2f1a839f87e5baeef65ad4ce801ef78f2d88`  
-		Last Modified: Wed, 21 Oct 2026 22:33:54 GMT  
-		Size: 1.3 KB (1319 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.13-alpine`
 
@@ -23234,39 +23188,84 @@ $ docker pull python@sha256:f109e291ff4ccd7f7cea8dc38ba177f607dc93656579182ed27b
 
 ## `python:3.13.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.13.18-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14`
 
@@ -29150,51 +29149,111 @@ CMD ["python"]
 
 ## `python:3.14.10`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.14.10-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15`
 
@@ -35078,51 +35137,111 @@ CMD ["python"]
 
 ## `python:3.15.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-slim-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.15.2-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc`
 
@@ -38801,15 +38920,30 @@ $ docker pull python@sha256:9d4c0ffbdbff81a48a6f2ad961c794b564a6fdeb8383c050d3d8
 
 ## `python:3.16-rc-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16-rc-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1`
 
@@ -42488,15 +42622,30 @@ $ docker pull python@sha256:9d4c0ffbdbff81a48a6f2ad961c794b564a6fdeb8383c050d3d8
 
 ## `python:3.16.0a1-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:3.16.0a1-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull python@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `python:alpine`
 
