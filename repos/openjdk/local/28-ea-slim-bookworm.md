@@ -1,10 +1,10 @@
-# `openjdk:28-ea-20-jdk-slim-bookworm`
+# `openjdk:28-ea-21-jdk-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4b987ff4c829a0debea94da88505ef9dd97fe374466dc92248ef83c0febcd44`
-- Created: `2026-10-21T00:50:52.08495036Z`
-- Virtual Size: ~ 559.5 Mb  
+- Image ID: `sha256:64287cd158090d4be6a0fbcd43dd9cd71c84bf5364b41faa6d9cadea605a4092`
+- Created: `2026-10-26T17:19:24.7817398Z`
+- Virtual Size: ~ 559.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-28/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-28`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=28-ea+20`
+  - `JAVA_VERSION=28-ea+21`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1484,12 +1484,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.22-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.22-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.22-1~deb12u1`
-- `openssl=3.0.22-1~deb12u1`
+- `libssl3:amd64=3.0.22-1~deb12u2`
+- `openssl=3.0.22-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1501,18 +1501,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.dsc' openssl_3.0.22-1~deb12u1.dsc 2742 SHA256:9eb196075ff65fed9512c743d5ccf918b77c3c637f6d518e4be550cf9065c655
+$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.dsc' openssl_3.0.22-1~deb12u2.dsc 2742 SHA256:7c45299a4363febec120676393d4314841c7c50da244a6e6a256f072d632d337
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz' openssl_3.0.22.orig.tar.gz 15330396 SHA256:67ebca7e50d17383028045486653492195b83db95f8558709701bb47b5c1ef81
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz.asc' openssl_3.0.22.orig.tar.gz.asc 931 SHA256:b0cc4a379a7731c3a74c349f6756d85253d83099fd63352cf12407bce4395d19
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.debian.tar.xz' openssl_3.0.22-1~deb12u1.debian.tar.xz 56848 SHA256:08ee68527218d6d9a0fa4741ec8ffef47646cdcad0ed0822b84bf11677c66108
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.debian.tar.xz' openssl_3.0.22-1~deb12u2.debian.tar.xz 72104 SHA256:48971306c5df8124daea7f2bd0de2be7d711e18f2f53711c11327293732e42aa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -1834,21 +1834,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.dsc' tzdata_2026c-0+deb12u1.dsc 2396 SHA256:0ca4eade11f843446aad110966ba335cd218f0897a1a51b82bd2b4104d6a7547
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026c-0%2bdeb12u1.debian.tar.xz' tzdata_2026c-0+deb12u1.debian.tar.xz 122188 SHA256:bc6f8b573203f7e3802d6106eb814d2162c8ad7a2d3e6dcbc73d4cf87fe0986d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
