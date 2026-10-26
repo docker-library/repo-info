@@ -1912,7 +1912,12 @@ $ docker pull ubuntu@sha256:0798db291f8be6cb8db781414974abcd66268ab04471ba75f68d
 
 ## `ubuntu:jammy-20261020`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ubuntu:latest`
 
@@ -2696,7 +2701,12 @@ $ docker pull ubuntu@sha256:b3fa8b04c4bdc3f05232aa222017c5b80e018f6661c9c7fdbdc7
 
 ## `ubuntu:noble-20261024.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ubuntu:resolute`
 
@@ -3147,7 +3157,12 @@ $ docker pull ubuntu@sha256:0d116ccf2a9ba6ac4590542da37abbecdd6a91024f866c89dd2d
 
 ## `ubuntu:resolute-20261024.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ubuntu:rolling`
 
@@ -4045,4 +4060,9 @@ $ docker pull ubuntu@sha256:805798ab8cfceb57b8fa4b244bc9bfa5f0781063e4a597893488
 
 ## `ubuntu:stonking-20261023.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
