@@ -1,7 +1,7 @@
 ## `xwiki:16-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:ce6fe21f6df583a470e73c992ae1b4c77f925165af465e281aa8afc78d96bbc7
+$ docker pull xwiki@sha256:c8847e6e26592bf205498a936da4fb218d7818608c967354333b4e408b8534f2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,527 +14,527 @@ $ docker pull xwiki@sha256:ce6fe21f6df583a470e73c992ae1b4c77f925165af465e281aa8a
 ### `xwiki:16-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:43560fc760315b803a910043818f5ec977c5c9acf98830c386eb9c5853c74c93
+$ docker pull xwiki@sha256:8dad4493965c480c7b85113343b8cde05d717e303ed9f051034b0bb4291c9b4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **766.8 MB (766767965 bytes)**  
+-	Total Size: **766.8 MB (766756977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae5b7d45600c8351056a4bce05383bdf9a723bf51f3dced8f3dcf7befe170539`
+-	Image ID: `sha256:d77ad9a09767816562d500f8d857d8c0bebd7a82473efeddb9cdc2ca292f403f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Tue, 06 Oct 2026 21:25:29 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.9621.tar --tag 26.04
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.9587.tar --tag 26.04
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 21:25:30 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.control_data.9621.tar
-# Sat, 17 Oct 2026 00:17:39 GMT
+# Sun, 25 Oct 2026 10:26:07 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
+# Mon, 26 Oct 2026 23:12:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 17 Oct 2026 00:17:39 GMT
+# Mon, 26 Oct 2026 23:12:22 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 17 Oct 2026 00:17:39 GMT
+# Mon, 26 Oct 2026 23:12:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 17 Oct 2026 00:17:39 GMT
+# Mon, 26 Oct 2026 23:12:22 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:17:39 GMT
+# Mon, 26 Oct 2026 23:12:22 GMT
 ENV JAVA_VERSION=jdk-21.0.12.1+1
-# Sat, 17 Oct 2026 00:19:23 GMT
+# Mon, 26 Oct 2026 23:12:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='2413149700df0f7d440500a84a8f764c535f21e5a5e87d38328b64eec2c5b500';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_x64_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        arm64)          ESUM='14be1f35ebdbd1f6e8d57eb911a3ffb74d6d9aa255abc5daf2b1302002cf2cf2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        ppc64el)          ESUM='d2f07f1d97faab23b3add1af92db402b721b5b251cedab7144fdd4b2bf2e2f13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        s390x)          ESUM='df43dc82a935868915a4b76227e2c63ffeb32868b608980dc67312a3d6217e1e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_s390x_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 17 Oct 2026 00:19:23 GMT
+# Mon, 26 Oct 2026 23:12:47 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 17 Oct 2026 00:19:23 GMT
+# Mon, 26 Oct 2026 23:12:48 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 00:19:23 GMT
+# Mon, 26 Oct 2026 23:12:48 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 WORKDIR /usr/local/tomcat
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV TOMCAT_MAJOR=9
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV TOMCAT_VERSION=9.0.123
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 ENV TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290
-# Sat, 17 Oct 2026 02:29:48 GMT
+# Tue, 27 Oct 2026 01:27:41 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Sat, 17 Oct 2026 02:29:54 GMT
+# Tue, 27 Oct 2026 01:27:47 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 02:29:55 GMT
+# Tue, 27 Oct 2026 01:27:48 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Sat, 17 Oct 2026 02:29:55 GMT
+# Tue, 27 Oct 2026 01:27:48 GMT
 EXPOSE map[8080/tcp:{}]
-# Sat, 17 Oct 2026 02:29:55 GMT
+# Tue, 27 Oct 2026 01:27:48 GMT
 ENTRYPOINT []
-# Sat, 17 Oct 2026 02:29:55 GMT
+# Tue, 27 Oct 2026 01:27:48 GMT
 CMD ["catalina.sh" "run"]
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 RUN set -eux;   apt-get update;   apt-get --no-install-recommends -y install     curl     unzip     procps     libxtst6     libxi6     libxinerama1     libdbus-glib-1-2     libcairo2     libcups2     libsm6     libx11-xcb1     libnss3     libxml2-dev     libxslt1.1;   rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 ENV CURL_OPTIONS=-fSL --retry 5 --retry-all-errors --retry-delay 5 --connect-timeout 30
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 ENV LIBREOFFICE_VERSION=26.2.6
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 ENV LIBREOFFICE_SHA256_AMD64=fd0e8f8f2408dd2e5b90286e60f3f97cf566ba441cd48cfc5bcc68067303e0bc
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 ENV LIBREOFFICE_SHA256_ARM64=f8e8b1d30abde0d530d727ce1b26909ccbedc3d76bcf75d93b3dd5fcd5b8d278
-# Sat, 17 Oct 2026 03:14:58 GMT
+# Tue, 27 Oct 2026 02:14:49 GMT
 ENV LIBREOFFICE_URL_PREFIX=https://download.documentfoundation.org/libreoffice/stable/26.2.6/deb
-# Sat, 17 Oct 2026 03:15:21 GMT
+# Tue, 27 Oct 2026 02:15:06 GMT
 RUN set -eux;   LO_ARCH="$(dpkg --print-architecture)";   case "$LO_ARCH" in     amd64) LO_ARCH_DIR=x86_64; LO_ARCH_FILE=x86-64; LO_SHA256=$LIBREOFFICE_SHA256_AMD64 ;;     arm64) LO_ARCH_DIR=aarch64; LO_ARCH_FILE=aarch64; LO_SHA256=$LIBREOFFICE_SHA256_ARM64 ;;     *) echo "Unsupported architecture [$LO_ARCH] for the LibreOffice installation" >&2; exit 1 ;;   esac;   LO_ARCHIVE="LibreOffice_${LIBREOFFICE_VERSION}_Linux_${LO_ARCH_FILE}_deb.tar.gz";   curl $CURL_OPTIONS "${LIBREOFFICE_URL_PREFIX}/${LO_ARCH_DIR}/${LO_ARCHIVE}" -o /tmp/libreoffice.tar.gz;   echo "$LO_SHA256 */tmp/libreoffice.tar.gz" | sha256sum --strict -c -;   mkdir -p /tmp/libreoffice;   tar -C /tmp/libreoffice -xf /tmp/libreoffice.tar.gz;   dpkg -i /tmp/libreoffice/LibreOffice_${LIBREOFFICE_VERSION}*_Linux_*_deb/DEBS/*.deb;   ln -fns "/opt/libreoffice${LIBREOFFICE_VERSION%.*}" /opt/libreoffice;   test -x /opt/libreoffice/program/soffice;   rm -rf /tmp/libreoffice /tmp/libreoffice.tar.gz # buildkit
-# Sat, 17 Oct 2026 03:15:21 GMT
+# Tue, 27 Oct 2026 02:15:06 GMT
 ENV XWIKI_VERSION=16.10.19
-# Sat, 17 Oct 2026 03:15:21 GMT
+# Tue, 27 Oct 2026 02:15:06 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.19
-# Sat, 17 Oct 2026 03:15:21 GMT
+# Tue, 27 Oct 2026 02:15:06 GMT
 ENV XWIKI_DOWNLOAD_SHA256=ad7de1e6a40746f778fb37320491b1ee0d9cfbead8a2dda666ed028a2593bb34
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 RUN set -eux;   rm -rf /usr/local/tomcat/webapps/*;   mkdir -p /usr/local/tomcat/temp;   mkdir -p /usr/local/xwiki/data;   curl $CURL_OPTIONS "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war;   echo "$XWIKI_DOWNLOAD_SHA256 *xwiki.war" | sha256sum --strict -c -;   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war;   rm -f xwiki.war # buildkit
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENV MARIADB_JDBC_VERSION=3.5.10
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENV MARIADB_JDBC_SHA256=919b8c1c771d9ee3465811462f242c9543ab401e140c64988ddbf1d8abcb18b2
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.10.jar
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.10.jar
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 RUN set -eux;   curl $CURL_OPTIONS "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET;   echo "$MARIADB_JDBC_SHA256 *$MARIADB_JDBC_TARGET" | sha256sum --strict -c - # buildkit
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Sat, 17 Oct 2026 03:15:39 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 COPY xwiki/logback-filelog-appender.xml xwiki/logback-filelog-ref.xml /tmp/ # buildkit
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 RUN set -eux;   LOGBACK=/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/logback.xml;   sed -e '/<configuration/r /tmp/logback-filelog-appender.xml'       -e '/ref="stdout"/r /tmp/logback-filelog-ref.xml'       "$LOGBACK" > "$LOGBACK.new";   mv "$LOGBACK.new" "$LOGBACK";   rm -f /tmp/logback-filelog-appender.xml /tmp/logback-filelog-ref.xml # buildkit
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war</<id>org.xwiki.platform:xwiki-platform-distribution-docker</'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 VOLUME [/usr/local/xwiki]
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 17 Oct 2026 03:15:40 GMT
+# Tue, 27 Oct 2026 02:15:25 GMT
 CMD ["xwiki"]
 ```
 
 -	Layers:
-	-	`sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41`  
-		Last Modified: Wed, 07 Oct 2026 20:45:12 GMT  
-		Size: 42.1 MB (42149117 bytes)  
+	-	`sha256:edafa32f5d9e4d9629f0dbc6c01e63c79ff08133c01cfb7d3363aa8bd8a614cf`  
+		Last Modified: Sun, 25 Oct 2026 13:21:15 GMT  
+		Size: 42.1 MB (42139920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9d511d19a19ebdeda520e0752f184d457905c7a310df5b748d133a51274ecd4`  
-		Last Modified: Wed, 07 Oct 2026 20:45:15 GMT  
-		Size: 391.0 B  
+	-	`sha256:f3f25b84a7d74315d94ee4108231f8f5e0cd2a44725a7204d5dd6ce91c151697`  
+		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:082f3711ec02b5a05a0fbee55570854a286bad6c219253407b7351ec4278a5e0`  
-		Last Modified: Sat, 17 Oct 2026 00:17:56 GMT  
-		Size: 20.1 MB (20138580 bytes)  
+	-	`sha256:dbf7808018106e8dd0eb0c93db936d01666d9366c7aea09fa71d890a0cf44b62`  
+		Last Modified: Mon, 26 Oct 2026 23:12:38 GMT  
+		Size: 20.1 MB (20136020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0df34dd379940da83b42705ddc0ff5003ce7a013e912a7c4bf90c54e2072a010`  
-		Last Modified: Sat, 17 Oct 2026 00:19:39 GMT  
-		Size: 53.1 MB (53097659 bytes)  
+	-	`sha256:fc572c000eb78b4ce6f7e796699cb01a2f90aefa1eafe945802155c1a457c176`  
+		Last Modified: Mon, 26 Oct 2026 23:13:02 GMT  
+		Size: 53.1 MB (53097666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35e448951dfd8efd541223c0694e786af2edd0ee771ca82155105d36b58ce905`  
-		Last Modified: Sat, 17 Oct 2026 00:19:37 GMT  
-		Size: 159.0 B  
+	-	`sha256:c245b7a1c8de9a3d6528ce4ed90410488f18461475f9194fd1070ac7edd99961`  
+		Last Modified: Mon, 26 Oct 2026 23:13:00 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c7ba16bd344f677c6f8d058cbc17116b5dc990913267c9cc52980d2dfcd054e`  
-		Last Modified: Sat, 17 Oct 2026 00:19:37 GMT  
-		Size: 2.5 KB (2464 bytes)  
+	-	`sha256:e63591917c2638c7c92da89daea6d1681f9e1f8459c7fbeaffe405d082fa7512`  
+		Last Modified: Mon, 26 Oct 2026 23:13:00 GMT  
+		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2badc53e3fc63f61702f9f9e5f7f95cdd605f62bc22c93314619f1c722f9c46c`  
-		Last Modified: Sat, 17 Oct 2026 02:30:07 GMT  
-		Size: 139.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd77abdf4dacce95234fde757a2b04e5a6de2ad375dc2dba50e537b1c7be1d3d`  
-		Last Modified: Sat, 17 Oct 2026 02:30:07 GMT  
-		Size: 13.9 MB (13920020 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3d59f460647222b056580f151288b2d548d1e92f02f309c557409e21c8cf8b0`  
-		Last Modified: Sat, 17 Oct 2026 02:30:07 GMT  
-		Size: 225.9 KB (225887 bytes)  
+	-	`sha256:d0f12ad3b84d6dd47eaf3547ccea92e063412593dfb2b928dd1f8fd86beb1f6f`  
+		Last Modified: Tue, 27 Oct 2026 01:28:00 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3302db713322e0ddc87ba23422253192032312c703043ffa1ca392b67116be97`  
-		Last Modified: Sat, 17 Oct 2026 03:16:35 GMT  
-		Size: 14.5 MB (14539369 bytes)  
+	-	`sha256:11967a89d79764c10befd13b0a44b88b9cf0f80aadb0a6eb8cdcd144076858c1`  
+		Last Modified: Tue, 27 Oct 2026 01:28:01 GMT  
+		Size: 13.9 MB (13920010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c2384ef41e5e520c4f9f0b9f460df63e0a1f4e8edec17746ca315660aee7821`  
-		Last Modified: Sat, 17 Oct 2026 03:16:45 GMT  
-		Size: 303.6 MB (303618079 bytes)  
+	-	`sha256:4cb7b48e531fabf5fec0ea8633fdecdced8f87ea782a9546239f34c876d4b0a9`  
+		Last Modified: Tue, 27 Oct 2026 01:28:00 GMT  
+		Size: 225.8 KB (225786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecbe3571124d54aa4e557c39197caf55d23ebfdb41995229c3e1fc2cfef265da`  
-		Last Modified: Sat, 17 Oct 2026 03:16:45 GMT  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:653814e0f968c5fb07fb31785a5770dbf4ad6f1f98705619c8c36b3f81923b43`  
+		Last Modified: Tue, 27 Oct 2026 02:16:17 GMT  
+		Size: 14.5 MB (14539845 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe2c86cbbd1503b2ebaeac410409e9a130139c674137f3a3b9ede0d814e00545`  
+		Last Modified: Tue, 27 Oct 2026 02:16:26 GMT  
+		Size: 303.6 MB (303618483 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f4613c205875ffbead587a7504327689ce989d0de6379473539a4c19de4ff269`  
+		Last Modified: Tue, 27 Oct 2026 02:16:26 GMT  
 		Size: 318.3 MB (318322046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69ca6573da19bd05c70afde24f0ef8677cf6ad007140d2bb6a0c15822414c018`  
-		Last Modified: Sat, 17 Oct 2026 03:16:34 GMT  
+	-	`sha256:bb0d40b9a05985a646ddb67569d6945aece905a2bbdd395e21d1d67179f4b52b`  
+		Last Modified: Tue, 27 Oct 2026 02:16:16 GMT  
 		Size: 735.5 KB (735460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eab78db884aff909534655d619e9ed0255d506e89ef1b30ba0bac557b28c298d`  
-		Last Modified: Sat, 17 Oct 2026 03:16:35 GMT  
-		Size: 1.8 KB (1836 bytes)  
+	-	`sha256:d50ef7dee7524f2a1ab858f2dd7645fc598649ec20a395575fecd931a71fc38a`  
+		Last Modified: Tue, 27 Oct 2026 02:16:18 GMT  
+		Size: 1.8 KB (1837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3234e7245f558f6154ca0b02767ec54f7e7e16047857f29141ca68a9e3753199`  
-		Last Modified: Sat, 17 Oct 2026 03:16:36 GMT  
+	-	`sha256:9400a536054ed79b37b0c75db1a68af055e09f21bbf8a6c223709b56c0a3305b`  
+		Last Modified: Tue, 27 Oct 2026 02:16:18 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4baa0cbc081cef142ea4f4cc7745a315ca9e96b843d8f2e268f636c382b4205e`  
-		Last Modified: Sat, 17 Oct 2026 03:16:37 GMT  
-		Size: 875.0 B  
+	-	`sha256:fcce6d14d3332b325708dcc8fe4d0695b6afaa72e9ad128ee7b0ced65931e906`  
+		Last Modified: Tue, 27 Oct 2026 02:16:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e9f11de8164b168817b4d63d21a4ff9d8e6ce8abce0f2dfb511e4dd272fe37a`  
-		Last Modified: Sat, 17 Oct 2026 03:16:38 GMT  
-		Size: 2.4 KB (2442 bytes)  
+	-	`sha256:be2e3f9e9be6b7e7f539b463782d31ce1c222c05061d49ef4dd552b23e030214`  
+		Last Modified: Tue, 27 Oct 2026 02:16:20 GMT  
+		Size: 2.4 KB (2436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:292fb491a628a4a53e3993907ee60430bfcc31e97270dfe0d03cb0199ae7d8a5`  
-		Last Modified: Sat, 17 Oct 2026 03:16:38 GMT  
+	-	`sha256:87698309805826226f1e5d4359e4b42949d73132ec5a90058a2580a4c03ccde8`  
+		Last Modified: Tue, 27 Oct 2026 02:16:20 GMT  
 		Size: 6.8 KB (6765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89aa323118872e83a8bdd27607e40535b96669b7a2b9b44e3c0a23bfbe092891`  
-		Last Modified: Sat, 17 Oct 2026 03:16:39 GMT  
-		Size: 4.3 KB (4305 bytes)  
+	-	`sha256:789b85759cc4c8674f0694e10f3418083d99c10170a01c2963dd7a8f10c07864`  
+		Last Modified: Tue, 27 Oct 2026 02:16:21 GMT  
+		Size: 4.3 KB (4307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:16-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:30375a2a288d370716f1babc29aba0c4d4f088d8e2f034e3fd5064866c9ea788
+$ docker pull xwiki@sha256:d2bc3d182075cbad9457479d7119ae17578695cc20f094799ea343718ca7d6c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17497265 bytes)**  
+-	Total Size: **17.5 MB (17496699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad36847fafcf06afb054ace3ecaa7c27caf4279c25ccd01648a364be0dff4574`
+-	Image ID: `sha256:e6f44129b47889420a16e681fecc183bee5ab493d4e6eb68d22d7f744aecb9a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f95d1cfccfb6340119c7811d6d60b6c083c6d460c16c3212e9548b25ff050ce`  
-		Last Modified: Sat, 17 Oct 2026 03:16:35 GMT  
-		Size: 17.4 MB (17429683 bytes)  
+	-	`sha256:ecbb89081a074acecf67ec847ad01169feb0824dfa4c804539153779987b94e8`  
+		Last Modified: Tue, 27 Oct 2026 02:16:17 GMT  
+		Size: 17.4 MB (17429117 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f4ecd2094c2ea1f06fc15b9fc69d801fa8583283ae73891b34aadbb3c6e0101c`  
-		Last Modified: Sat, 17 Oct 2026 03:16:33 GMT  
+	-	`sha256:6a4faf9b65f1ea4baa253f3db8944561f1e4885cb1ff9e5eed92cec997a2e19a`  
+		Last Modified: Tue, 27 Oct 2026 02:16:16 GMT  
 		Size: 67.6 KB (67582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:16-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:bab7d800f6dcbbadc91d6f5ddf3a5e034f770b7938acd6703c61cfb27ba05c0c
+$ docker pull xwiki@sha256:0b9e6885c9b69eb3ea8da803e248d5d55dac157dd88d4a9bb4cbf7a4f37980c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **759.6 MB (759619670 bytes)**  
+-	Total Size: **759.6 MB (759635066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33bb47eec12b2560d8ecaf5ed02feef40281adc78c06f1aa3c7c8fea310e040e`
+-	Image ID: `sha256:565de1ea8b0f20ff3b2cf2cba9504bb978bb0d11a9a6c26992c1512bcb4fa37c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Tue, 06 Oct 2026 20:38:11 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.9614.tar --tag 26.04
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-06T20:38:12.175309+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:30:31 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.9649.tar --tag 26.04
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-25T10:30:32.309136+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-06T20:38:12.175309+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-25T10:30:32.309136+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 20:38:12 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.control_data.9614.tar
-# Sat, 17 Oct 2026 00:19:41 GMT
+# Sun, 25 Oct 2026 10:30:32 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
+# Mon, 26 Oct 2026 23:17:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 17 Oct 2026 00:19:41 GMT
+# Mon, 26 Oct 2026 23:17:29 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 17 Oct 2026 00:19:41 GMT
+# Mon, 26 Oct 2026 23:17:29 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 17 Oct 2026 00:19:41 GMT
+# Mon, 26 Oct 2026 23:17:29 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:19:41 GMT
+# Mon, 26 Oct 2026 23:17:29 GMT
 ENV JAVA_VERSION=jdk-21.0.12.1+1
-# Sat, 17 Oct 2026 00:19:44 GMT
+# Mon, 26 Oct 2026 23:17:32 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='2413149700df0f7d440500a84a8f764c535f21e5a5e87d38328b64eec2c5b500';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_x64_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        arm64)          ESUM='14be1f35ebdbd1f6e8d57eb911a3ffb74d6d9aa255abc5daf2b1302002cf2cf2';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        ppc64el)          ESUM='d2f07f1d97faab23b3add1af92db402b721b5b251cedab7144fdd4b2bf2e2f13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        s390x)          ESUM='df43dc82a935868915a4b76227e2c63ffeb32868b608980dc67312a3d6217e1e';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jre_s390x_linux_hotspot_21.0.12.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 17 Oct 2026 00:19:44 GMT
+# Mon, 26 Oct 2026 23:17:32 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 17 Oct 2026 00:19:44 GMT
+# Mon, 26 Oct 2026 23:17:32 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 00:19:44 GMT
+# Mon, 26 Oct 2026 23:17:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 WORKDIR /usr/local/tomcat
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV TOMCAT_MAJOR=9
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV TOMCAT_VERSION=9.0.123
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 ENV TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290
-# Sat, 17 Oct 2026 02:29:33 GMT
+# Tue, 27 Oct 2026 01:27:33 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Sat, 17 Oct 2026 02:29:39 GMT
+# Tue, 27 Oct 2026 01:27:40 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 02:29:40 GMT
+# Tue, 27 Oct 2026 01:27:40 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Sat, 17 Oct 2026 02:29:40 GMT
+# Tue, 27 Oct 2026 01:27:40 GMT
 EXPOSE map[8080/tcp:{}]
-# Sat, 17 Oct 2026 02:29:40 GMT
+# Tue, 27 Oct 2026 01:27:40 GMT
 ENTRYPOINT []
-# Sat, 17 Oct 2026 02:29:40 GMT
+# Tue, 27 Oct 2026 01:27:40 GMT
 CMD ["catalina.sh" "run"]
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 RUN set -eux;   apt-get update;   apt-get --no-install-recommends -y install     curl     unzip     procps     libxtst6     libxi6     libxinerama1     libdbus-glib-1-2     libcairo2     libcups2     libsm6     libx11-xcb1     libnss3     libxml2-dev     libxslt1.1;   rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 ENV CURL_OPTIONS=-fSL --retry 5 --retry-all-errors --retry-delay 5 --connect-timeout 30
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 ENV LIBREOFFICE_VERSION=26.2.6
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 ENV LIBREOFFICE_SHA256_AMD64=fd0e8f8f2408dd2e5b90286e60f3f97cf566ba441cd48cfc5bcc68067303e0bc
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 ENV LIBREOFFICE_SHA256_ARM64=f8e8b1d30abde0d530d727ce1b26909ccbedc3d76bcf75d93b3dd5fcd5b8d278
-# Sat, 17 Oct 2026 03:15:54 GMT
+# Tue, 27 Oct 2026 02:13:39 GMT
 ENV LIBREOFFICE_URL_PREFIX=https://download.documentfoundation.org/libreoffice/stable/26.2.6/deb
-# Sat, 17 Oct 2026 03:16:10 GMT
+# Tue, 27 Oct 2026 02:13:57 GMT
 RUN set -eux;   LO_ARCH="$(dpkg --print-architecture)";   case "$LO_ARCH" in     amd64) LO_ARCH_DIR=x86_64; LO_ARCH_FILE=x86-64; LO_SHA256=$LIBREOFFICE_SHA256_AMD64 ;;     arm64) LO_ARCH_DIR=aarch64; LO_ARCH_FILE=aarch64; LO_SHA256=$LIBREOFFICE_SHA256_ARM64 ;;     *) echo "Unsupported architecture [$LO_ARCH] for the LibreOffice installation" >&2; exit 1 ;;   esac;   LO_ARCHIVE="LibreOffice_${LIBREOFFICE_VERSION}_Linux_${LO_ARCH_FILE}_deb.tar.gz";   curl $CURL_OPTIONS "${LIBREOFFICE_URL_PREFIX}/${LO_ARCH_DIR}/${LO_ARCHIVE}" -o /tmp/libreoffice.tar.gz;   echo "$LO_SHA256 */tmp/libreoffice.tar.gz" | sha256sum --strict -c -;   mkdir -p /tmp/libreoffice;   tar -C /tmp/libreoffice -xf /tmp/libreoffice.tar.gz;   dpkg -i /tmp/libreoffice/LibreOffice_${LIBREOFFICE_VERSION}*_Linux_*_deb/DEBS/*.deb;   ln -fns "/opt/libreoffice${LIBREOFFICE_VERSION%.*}" /opt/libreoffice;   test -x /opt/libreoffice/program/soffice;   rm -rf /tmp/libreoffice /tmp/libreoffice.tar.gz # buildkit
-# Sat, 17 Oct 2026 03:16:10 GMT
+# Tue, 27 Oct 2026 02:13:57 GMT
 ENV XWIKI_VERSION=16.10.19
-# Sat, 17 Oct 2026 03:16:10 GMT
+# Tue, 27 Oct 2026 02:13:57 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.19
-# Sat, 17 Oct 2026 03:16:10 GMT
+# Tue, 27 Oct 2026 02:13:57 GMT
 ENV XWIKI_DOWNLOAD_SHA256=ad7de1e6a40746f778fb37320491b1ee0d9cfbead8a2dda666ed028a2593bb34
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 RUN set -eux;   rm -rf /usr/local/tomcat/webapps/*;   mkdir -p /usr/local/tomcat/temp;   mkdir -p /usr/local/xwiki/data;   curl $CURL_OPTIONS "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war;   echo "$XWIKI_DOWNLOAD_SHA256 *xwiki.war" | sha256sum --strict -c -;   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war;   rm -f xwiki.war # buildkit
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENV MARIADB_JDBC_VERSION=3.5.10
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENV MARIADB_JDBC_SHA256=919b8c1c771d9ee3465811462f242c9543ab401e140c64988ddbf1d8abcb18b2
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.10
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.10.jar
-# Sat, 17 Oct 2026 03:16:30 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.10.jar
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 RUN set -eux;   curl $CURL_OPTIONS "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET;   echo "$MARIADB_JDBC_SHA256 *$MARIADB_JDBC_TARGET" | sha256sum --strict -c - # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 COPY xwiki/logback-filelog-appender.xml xwiki/logback-filelog-ref.xml /tmp/ # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 RUN set -eux;   LOGBACK=/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/logback.xml;   sed -e '/<configuration/r /tmp/logback-filelog-appender.xml'       -e '/ref="stdout"/r /tmp/logback-filelog-ref.xml'       "$LOGBACK" > "$LOGBACK.new";   mv "$LOGBACK.new" "$LOGBACK";   rm -f /tmp/logback-filelog-appender.xml /tmp/logback-filelog-ref.xml # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war</<id>org.xwiki.platform:xwiki-platform-distribution-docker</'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 VOLUME [/usr/local/xwiki]
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 17 Oct 2026 03:16:31 GMT
+# Tue, 27 Oct 2026 02:14:16 GMT
 CMD ["xwiki"]
 ```
 
 -	Layers:
-	-	`sha256:00dbf11534ae4abda99e035d0e681f5254da63d2f778eaed69f1e5f6be9a6092`  
-		Last Modified: Wed, 07 Oct 2026 20:45:23 GMT  
-		Size: 41.1 MB (41107810 bytes)  
+	-	`sha256:afa7f7d582de8ee3433df193ede10fc2c50d3398de31c14d329b643e7a69b852`  
+		Last Modified: Sun, 25 Oct 2026 13:21:25 GMT  
+		Size: 41.1 MB (41122308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8eae6888566fa953bb1c57088f997a22020e240963959b195cbe865109eabd9`  
-		Last Modified: Wed, 07 Oct 2026 20:45:26 GMT  
-		Size: 386.0 B  
+	-	`sha256:6f01cc7d6fb3d703f324d1ccddfddeaa2e8c97cf4b5d6936a66396eaf4089d99`  
+		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
+		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bed5c298c55f553d0726079848b37a5cbc56f764d150ff5ce1ccbb27a9bcdc4`  
-		Last Modified: Sat, 17 Oct 2026 00:20:00 GMT  
-		Size: 19.9 MB (19946279 bytes)  
+	-	`sha256:e92d9d888dcf3f5af7af0c20f019049d4251f5d04f091cf978b9f8db09711a60`  
+		Last Modified: Mon, 26 Oct 2026 23:17:48 GMT  
+		Size: 19.9 MB (19946862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf42c0e7af495d6d31fb1776a3649af76e4f58fd4fb715fabfe9d2cc766d4036`  
-		Last Modified: Sat, 17 Oct 2026 00:20:01 GMT  
-		Size: 52.3 MB (52273908 bytes)  
+	-	`sha256:75ec47c8d1e8c31c3358fc1e70db96b0b228916ef579e73195adb0e1bde7d9a4`  
+		Last Modified: Mon, 26 Oct 2026 23:17:49 GMT  
+		Size: 52.3 MB (52273936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73d7511213b9d9634c253ef8cdd6d8de0844cd87150b05370fcf648f29f8ad30`  
-		Last Modified: Sat, 17 Oct 2026 00:19:59 GMT  
-		Size: 159.0 B  
+	-	`sha256:4c401ca4bb67746c9ce0c97d09634550ab0a4e7f6b86e921a5d5d642d84f84a7`  
+		Last Modified: Mon, 26 Oct 2026 23:17:47 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b345474eca76b320f9140446aa0d3a2b9c2f11928bda8408423754292f48f1f`  
-		Last Modified: Sat, 17 Oct 2026 00:19:52 GMT  
+	-	`sha256:99ef37534efd7ce11711552a71fa971b70f5752c92c2c2275374244babf4b4d6`  
+		Last Modified: Mon, 26 Oct 2026 23:17:47 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4655600c4ff89c5a816bd0dc1ce901359f597bbd5e8b22fb006ae21c32f09aa3`  
-		Last Modified: Sat, 17 Oct 2026 02:29:50 GMT  
-		Size: 137.0 B  
+	-	`sha256:ee0887defdbd34c1a01ea68801dbb6f62e4e3de7c566e5055094d3e37e15c170`  
+		Last Modified: Tue, 27 Oct 2026 01:27:51 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6cfd53d8231bff60dc60f0f33f20c9d2cecb04808359d55902b1f31f1e28903a`  
-		Last Modified: Sat, 17 Oct 2026 02:29:51 GMT  
-		Size: 13.9 MB (13924036 bytes)  
+	-	`sha256:9ebfb5420f75bacaec7ec3e07ea892c57e042681a235bb3aa93d09e46b2e8a70`  
+		Last Modified: Tue, 27 Oct 2026 01:27:52 GMT  
+		Size: 13.9 MB (13924074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7ce2ea05bf27335d5c53fa6cde9484ddc91cc0f66c59c6cafd01ee6876c2a43`  
-		Last Modified: Sat, 17 Oct 2026 02:29:51 GMT  
-		Size: 224.3 KB (224315 bytes)  
+	-	`sha256:585d427debcd4c6acce662da3ce49d684aadbb9c95f09b02c30a65fb3afc97fb`  
+		Last Modified: Tue, 27 Oct 2026 01:27:52 GMT  
+		Size: 224.6 KB (224582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36c8c42fbfcf81cd52ffb5ab2e377ceb074669aff90ac63717d17b9ffb9d945b`  
-		Last Modified: Sat, 17 Oct 2026 03:17:22 GMT  
-		Size: 13.4 MB (13415841 bytes)  
+	-	`sha256:a0c67fdb7de92de8ae2a2a09c53d5fc7fab9e24e9e779348207a3bcd573c0944`  
+		Last Modified: Tue, 27 Oct 2026 02:15:08 GMT  
+		Size: 13.4 MB (13416216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f58daa420b05d613991034b0b05c526b5859e3857c5e09c3c88a55f33454e084`  
-		Last Modified: Sat, 17 Oct 2026 03:17:31 GMT  
-		Size: 299.6 MB (299648146 bytes)  
+	-	`sha256:fffb288d0de1c7c5bd8f01ab8c500e520b063f25f1e59be6838765370f028145`  
+		Last Modified: Tue, 27 Oct 2026 02:15:18 GMT  
+		Size: 299.6 MB (299647849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8d82690f4121c4eecc41b7756894c92e280d6bb82570d7e16664fcd36c724dc`  
-		Last Modified: Sat, 17 Oct 2026 03:17:31 GMT  
-		Size: 318.3 MB (318322126 bytes)  
+	-	`sha256:a3fcf492b081228a78bff9c6425715b3bfcf67787b24d744f23dea614b22f970`  
+		Last Modified: Tue, 27 Oct 2026 02:15:18 GMT  
+		Size: 318.3 MB (318322035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fe9014502f90de1c5b15569c189909254d6de10ce508ee685295813df81366a`  
-		Last Modified: Sat, 17 Oct 2026 03:17:22 GMT  
-		Size: 735.5 KB (735461 bytes)  
+	-	`sha256:b0dbc43f64a897a6dd11d68922dd0a0ac34485bde4759e49e11fa74729184157`  
+		Last Modified: Tue, 27 Oct 2026 02:15:07 GMT  
+		Size: 735.5 KB (735460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2296432e3d257a535418e99d8f96a0170a54d03c378c6fa878de9ea3623970aa`  
-		Last Modified: Sat, 17 Oct 2026 03:17:23 GMT  
-		Size: 1.8 KB (1839 bytes)  
+	-	`sha256:822f2a1252f11072dd238716e1f8cfecaa5354663c7086cd779c97d30628045b`  
+		Last Modified: Tue, 27 Oct 2026 02:15:08 GMT  
+		Size: 1.8 KB (1838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:746853a6518967a83d68482f8f2c83e4a95650f06c4ccbb0d574da8a07ec91d1`  
-		Last Modified: Sat, 17 Oct 2026 03:17:24 GMT  
-		Size: 2.3 KB (2311 bytes)  
+	-	`sha256:9bc96e86d76cdeb47c493b0a81339191f044feee14946294c188d7c38af71aab`  
+		Last Modified: Tue, 27 Oct 2026 02:15:10 GMT  
+		Size: 2.3 KB (2309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d23d0939030bbfa08242bad009b8682895e47ee5a3cbf260077789b915b2cfb2`  
-		Last Modified: Sat, 17 Oct 2026 03:17:24 GMT  
-		Size: 874.0 B  
+	-	`sha256:824214fda7b6912608656f067493222eb95e6271ad9d3de06e2a3a57145f923c`  
+		Last Modified: Tue, 27 Oct 2026 02:15:10 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1551cb4b821be840d473c9b8d1508576ae2c8264e031affce90e052398af47d`  
-		Last Modified: Sat, 17 Oct 2026 03:17:25 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:97f03db42f8ae6ec4cab80b02e6ffe9b948bf1899b8119f13fe0ebb8e67cef9d`  
+		Last Modified: Tue, 27 Oct 2026 02:15:11 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9ac6de6fa322c5b825917bf51bbc836f25532ca463d5e790cc340e511a1a3e0`  
-		Last Modified: Sat, 17 Oct 2026 03:17:25 GMT  
+	-	`sha256:841c9a013e096d296bdaeeaee913e2ae8ef2392311d9e40629900c9edeadf444`  
+		Last Modified: Tue, 27 Oct 2026 02:15:11 GMT  
 		Size: 6.8 KB (6769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fbc6153211dab58111e6277c418e16ef3b8b6c3177c20ce5bceb8a96a9f675f`  
-		Last Modified: Sat, 17 Oct 2026 03:17:26 GMT  
-		Size: 4.3 KB (4304 bytes)  
+	-	`sha256:359e901b94bac2eb60e59bf1ec24efc013b636296b7fa8a569d4c26add2528b3`  
+		Last Modified: Tue, 27 Oct 2026 02:15:12 GMT  
+		Size: 4.3 KB (4307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:16-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:334b5c4551fa63e3e7555f0e246cf8ddd0e2f66305b34e2c776e02ae88d6652d
+$ docker pull xwiki@sha256:8d6faf58f5bf54517645c7315500c30b4832e2447d2bd86a0d2b316d74cc3f3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17468946 bytes)**  
+-	Total Size: **17.5 MB (17468380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a3ae0d169f8482c07e0c60c943b5cd552b1921f53554e632f39f12f7e3515e6`
+-	Image ID: `sha256:768746956c6a8bcb160ac1c0853b9fe8141e7b1cd104281ea1d2599d890a45bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d0aa719f581b3fb1395162666c5add311fb8e882b020961052a9f73fe6e54692`  
-		Last Modified: Sat, 17 Oct 2026 03:17:22 GMT  
-		Size: 17.4 MB (17401197 bytes)  
+	-	`sha256:458754f237b90c684a153ede32ed4aceb867745739e811c14fb7591006f03587`  
+		Last Modified: Tue, 27 Oct 2026 02:15:08 GMT  
+		Size: 17.4 MB (17400631 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2fd03619f9a18c3c1eaf8e9199bf35f64449c6db4b12ce4543473aa6d07e289a`  
-		Last Modified: Sat, 17 Oct 2026 03:17:22 GMT  
+	-	`sha256:cd714f4326f6663d4137e9ebe52f49ea9d90c630f0e792725b305dc35950081d`  
+		Last Modified: Tue, 27 Oct 2026 02:15:07 GMT  
 		Size: 67.7 KB (67749 bytes)  
 		MIME: application/vnd.in-toto+json
