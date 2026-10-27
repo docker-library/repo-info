@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e43d11666c6b6264ac0a0e52130db38ce7883242ce76a0c609ce2235c98ea354`
-- Created: `2026-10-17T00:33:00.899528632Z`
+- Image ID: `sha256:9ad66a1c753a32ccd74a74247d36db23e5a9cf34c5220265c05a1db4728ec144`
+- Created: `2026-10-26T23:25:56.825758208Z`
 - Virtual Size: ~ 86.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1675,12 +1675,12 @@ $ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.8
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc' sqlite3_3.45.1-1ubuntu2.8.dsc 2601 SHA512:8b492de28c699f0a0a32115b781cc9a6c2d8801992b907a41e5ed0642c3845a1688cbb9aee60ea9a4e8af436100f9f29dc8e6af0d75f8411d8b6a6b0ea99163a
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.17`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.18`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.17`
-- `libudev1:amd64=255.4-1ubuntu8.17`
+- `libsystemd0:amd64=255.4-1ubuntu8.18`
+- `libudev1:amd64=255.4-1ubuntu8.18`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1693,9 +1693,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.18
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
+```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
@@ -1847,11 +1852,11 @@ $ apt-get source -qq --print-uris xxhash=0.8.2-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.2-2build1.debian.tar.xz' xxhash_0.8.2-2build1.debian.tar.xz 5048 SHA512:c789fd0a22fd40db8983c0f69054141647ebaab94251598723ce1fdf894d0ed2d48c2d5a7f0df7d61e2d874485286e5742a546748d17cc22d5227ad61f6b4ef2
 ```
 
-### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1ubuntu0.3`
+### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1ubuntu0.4`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.6.1+really5.4.5-1ubuntu0.3`
+- `liblzma5:amd64=5.6.1+really5.4.5-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1871,20 +1876,30 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA512:5cbc3b5bb35a9f5773ad657788fe77013471e3b621c5a8149deb7389d48535926e5bed103456fcfe5ecb044b236b1055b03938a6cc877cfc749372b899fc79e5
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.4.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.4.debian.tar.xz 33844 SHA512:103e129a77cab76e73d0551a867dfc6a266e142b6fe38b299040e403054c1089772a24ba4c72b0bee44ea7f642de880e30985aecce17e451f29ff7cac98c8629
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.4.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.4.dsc 2684 SHA512:4bf1dd4b0f2abc036d94b6582633389a5a30b1e4a33bbcb77403e22772f3fad671101c8301bbe5332c7ced2c5d11a4360c2a45799b8a2bcaf3ade637e2e79634
+```
 
-### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.2`
+### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.3`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2.2`
+- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg-3.1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg.orig.tar.xz' zlib_1.3.dfsg.orig.tar.xz 1128572 SHA512:be6f020c691c61fe4ddcb27d3f8b2515435f544177e0b97286b5e85afc3862c1de6cd74a14ff6b065d620d046d35bf029fabfd1cf473f43a2cad60bf9ad55afe
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.3.debian.tar.xz' zlib_1.3.dfsg-3.1ubuntu2.3.debian.tar.xz 61772 SHA512:e2f59ee14cd0101db4738219eeaad2acad56c76619a4fcba8a94be675e53d16357120491bfafc90ee4efd76a0c702f7acbbd2393dffffea8019b58976a84ce52
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.3.dsc' zlib_1.3.dfsg-3.1ubuntu2.3.dsc 3162 SHA512:e9f6b7a559554bbfa10951cffdd220e24cf09098c1ab86016c843499a54b513aaff9efb78ded8097fae35b553eb8effbd5e6b643379ce3501283eac70953b3ce
+```
