@@ -1,7 +1,7 @@
 ## `ibmjava:sdk`
 
 ```console
-$ docker pull ibmjava@sha256:d0dc0806333b606f139396d95ab37adece35259f84bc415e98a78e079423f9d2
+$ docker pull ibmjava@sha256:16f6a4075468758fed8efc3e2e23aaacd915da3ffa8ab798eff5637742fb7c39
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,73 +16,73 @@ $ docker pull ibmjava@sha256:d0dc0806333b606f139396d95ab37adece35259f84bc415e98a
 ### `ibmjava:sdk` - linux; amd64
 
 ```console
-$ docker pull ibmjava@sha256:f204289e82e9031a45f042604ed17893bda0e18e35b8e7b02c342b4887e1a764
+$ docker pull ibmjava@sha256:ef1e6271de755dde78d28db455dd7d88eebbf74a34995aed51f35278175c910d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **205.3 MB (205338689 bytes)**  
+-	Total Size: **205.3 MB (205336574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a9143b2d286cf96d04566b30daac3fa94d8842175240eddfeb9b846b2e22156`
+-	Image ID: `sha256:ceeac25cfd3565b8a2a5e07024015f533fb714f737a24d42dbe583ff24cdb84a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 02 Oct 2026 10:21:04 GMT
+# Sun, 25 Oct 2026 20:10:42 GMT
 ARG RELEASE
-# Fri, 02 Oct 2026 10:21:04 GMT
+# Sun, 25 Oct 2026 20:10:42 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 02 Oct 2026 10:21:04 GMT
+# Sun, 25 Oct 2026 20:10:42 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 02 Oct 2026 10:21:06 GMT
-ADD file:b6c410e935243e5623135210c34358091e8af5ff14851cb0f67195733b55d391 in / 
-# Fri, 02 Oct 2026 10:21:06 GMT
+# Sun, 25 Oct 2026 20:10:44 GMT
+ADD file:ba52f9eec2a5a7de74e9a460017725370755c2d4814dd746bde7507601befb53 in / 
+# Sun, 25 Oct 2026 20:10:44 GMT
 CMD ["/bin/bash"]
-# Sat, 17 Oct 2026 00:30:06 GMT
+# Mon, 26 Oct 2026 23:23:05 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Sat, 17 Oct 2026 00:30:06 GMT
+# Mon, 26 Oct 2026 23:23:05 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:30:06 GMT
+# Mon, 26 Oct 2026 23:23:05 GMT
 ENV JAVA_VERSION=8.0.8.71
-# Sat, 17 Oct 2026 00:30:14 GMT
+# Mon, 26 Oct 2026 23:24:00 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='bf96528c4be42e2fc4520e3e0ef32ec9ccd6fb3492aea2cded29fe39ec1ea503';          YML_FILE='8.0/sdk/linux/x86_64/index.yml';          ;;        ppc64el|ppc64le)          ESUM='946f8e56cc033e8b964da34c5554fa6b50b66a0a220699b5dfb436f780c192eb';          YML_FILE='8.0/sdk/linux/ppc64le/index.yml';          ;;        s390x)          ESUM='3cb2cb64591dd4c438bed7cf5c5a5368b6b5a390bebb95828323947e5a7a91c1';          YML_FILE='8.0/sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.tgz ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.tgz" | sha256sum -c -;     mkdir -p /opt/ibm/java;     tar -xf /tmp/ibm-java.tgz -C /opt/ibm/java --strip-components=1;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.tgz; # buildkit
-# Sat, 17 Oct 2026 00:30:14 GMT
+# Mon, 26 Oct 2026 23:24:00 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e`  
-		Last Modified: Fri, 02 Oct 2026 11:08:26 GMT  
-		Size: 29.8 MB (29752476 bytes)  
+	-	`sha256:0626d3cc316c9fea3d4891e2ec19b8f371fe22ffb915622f6072a2ee2ca9017f`  
+		Last Modified: Sun, 25 Oct 2026 20:45:21 GMT  
+		Size: 29.8 MB (29752488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d42bb0e7ba34d8ef069c12ba99b148e9e33cc6b32e5186e79fd060bb0f56404`  
-		Last Modified: Sat, 17 Oct 2026 00:30:30 GMT  
-		Size: 1.4 MB (1409440 bytes)  
+	-	`sha256:99b4a30c81f6e9fd8bb89109487650f5a5293e51bc817aafb7d60330f8b3c75a`  
+		Last Modified: Mon, 26 Oct 2026 23:24:14 GMT  
+		Size: 1.4 MB (1407339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06aa41fbd7df3a4f6bd25bdf271e0276c94451f87cc238442c22c5880d28bee9`  
-		Last Modified: Sat, 17 Oct 2026 00:30:33 GMT  
-		Size: 174.2 MB (174176773 bytes)  
+	-	`sha256:b02e34adc58ad73b65c0fbd8e535a2de402cf412520bbc036352364154ed6506`  
+		Last Modified: Mon, 26 Oct 2026 23:24:18 GMT  
+		Size: 174.2 MB (174176747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibmjava:sdk` - unknown; unknown
 
 ```console
-$ docker pull ibmjava@sha256:229c17148db7c4f87ee82a4c7bcaaa233ffdb55d889a8d77250a28fc8b70d78c
+$ docker pull ibmjava@sha256:29e7ecd7f1942cde929e179301613df0fc803fa21c411a652083976a49a455ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3081501 bytes)**  
+-	Total Size: **3.1 MB (3080857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9993e67ce09774266818d15d6707c7a220a64d430121139ff2237c875c80454f`
+-	Image ID: `sha256:1b63e014fd9a97b1204266097f08f903ba418b41674e19ce35d91e06412ff4de`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19eb202645da03b143a6a8ed82efad80db090d5642d0c945c8ac826bd2390927`  
-		Last Modified: Sat, 17 Oct 2026 00:30:30 GMT  
-		Size: 3.1 MB (3068903 bytes)  
+	-	`sha256:f5089cf4023604c7745e5e12701cf778d8c3de144d56fbea8e96eb76de000cc9`  
+		Last Modified: Mon, 26 Oct 2026 23:24:14 GMT  
+		Size: 3.1 MB (3068259 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6b1549b717c1fd1f4614cf8de9f864e0417cd8c87ca1c47122576a2cfd490810`  
-		Last Modified: Sat, 17 Oct 2026 00:30:30 GMT  
+	-	`sha256:aa4ac9cbf83a0749fd9b8345239431a5f33aafc24a1980a11b85b2906d414380`  
+		Last Modified: Mon, 26 Oct 2026 23:24:14 GMT  
 		Size: 12.6 KB (12598 bytes)  
 		MIME: application/vnd.in-toto+json
 
