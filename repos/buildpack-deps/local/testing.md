@@ -261,21 +261,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake=1:1.19-2
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.19-2.dsc' automake_1.19-2.dsc 2463 SHA256:620b47f5f8649387628c34dcafd88575a81692c890bb9238d054f2e28d846334
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.19.orig.tar.xz' automake_1.19.orig.tar.xz 1682600 SHA256:e3e2c2e3abf37898138db5b6c1d1dc35c9160c5978be7947d2c741705251d445
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.19.orig.tar.xz.asc' automake_1.19.orig.tar.xz.asc 228 SHA256:2a0f55ae481093dc29f7410d243919b8d5675877f0147004e945cf84036d9577
-'http://deb.debian.org/debian/pool/main/a/automake/automake_1.19-2.debian.tar.xz' automake_1.19-2.debian.tar.xz 16976 SHA256:7566142124a101603269e8be204f427fd2539ecd28a5e9bbc8ea80961a795dde
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake/1:1.19-2/
 
-- https://sources.debian.net/src/automake/1:1.19-2/ (for browsing the source)
-- https://sources.debian.net/src/automake/1:1.19-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake/1:1.19-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20240727.1+nmu1`
 
@@ -3779,20 +3771,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.2.11-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.11-1.dsc' linux_7.2.11-1.dsc 189644 SHA256:d2b2b7436e64fc2e9c0bfc44c4bc17a44955c7230312caf9b1a167f646452cf7
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.11.orig.tar.xz' linux_7.2.11.orig.tar.xz 163724728 SHA256:f6ee73cb381b4b49a91d665f798594f29f8a3f280863de439f4993939b89d596
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.2.11-1.debian.tar.xz' linux_7.2.11-1.debian.tar.xz 1498828 SHA256:7ce7510d2b5204aba4d862d393b23cb9bd719a7e05663a7371110f9debc02d7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/7.2.11-1/
 
-- https://sources.debian.net/src/linux/7.2.11-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/7.2.11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/7.2.11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-10`
 
@@ -3984,21 +3969,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.2.3-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.3-1.dsc' mercurial_7.2.3-1.dsc 2876 SHA256:dcb6c57bd7b69ae35637fb3371cbe4400a267da898060cbc1cc4f16bbbe072d1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.3.orig.tar.gz' mercurial_7.2.3.orig.tar.gz 9290867 SHA256:1cb74ca95da021666b5a94a9bdc62f16255a6452f5a84cc2ae71bda8c7dbe36b
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.3.orig.tar.gz.asc' mercurial_7.2.3.orig.tar.gz.asc 659 SHA256:394292d2aed03729c50205aabdd2efe66c52e0e3cc4c840d6e5bcb79fee6cdb6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.3-1.debian.tar.xz' mercurial_7.2.3-1.debian.tar.xz 55020 SHA256:5eecb1048c9e6eeb716320083b3da55a65e72e1b145075cfafc62f47a334a750
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/7.2.3-1/
 
-- https://sources.debian.net/src/mercurial/7.2.3-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/7.2.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/7.2.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-3`
 
@@ -4636,20 +4613,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.8-2
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.dsc' patch_2.8-2.dsc 1689 SHA256:41fbd3f2c99f60dcbe02699ff01955a47711377b20987352b957bd55e02e2088
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8.orig.tar.xz' patch_2.8.orig.tar.xz 907208 SHA256:f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.debian.tar.xz' patch_2.8-2.debian.tar.xz 9460 SHA256:9a740460988c910c5538e4d24df00d9961d19dee014c63e92f5d60e611fa60c4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/patch/2.8-2/
 
-- https://sources.debian.net/src/patch/2.8-2/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.48-3.1`
 
@@ -5533,21 +5503,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.26.1-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.1-1.dsc' unbound_1.26.1-1.dsc 3221 SHA256:a7e647ac082bb9895d3bd059778a25497a3613ef558bbe8a08494a2818bd22c6
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.1.orig.tar.gz' unbound_1.26.1.orig.tar.gz 6948585 SHA256:35a6dc0e425a9282c3426d9a3043144011bf0534aed4b73ab62c52aee0af1503
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.1.orig.tar.gz.asc' unbound_1.26.1.orig.tar.gz.asc 659 SHA256:c52227c2a6918f991443c72709313fcd8530c41ea61268dbe820278a1c60a996
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.26.1-1.debian.tar.xz' unbound_1.26.1-1.debian.tar.xz 31500 SHA256:f42d337c4bc28d5c091bf767b4ff50285dc66f86ed84c0c6b0396b397f250951
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.26.1-1/
 
-- https://sources.debian.net/src/unbound/1.26.1-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.26.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.26.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-31`
 
