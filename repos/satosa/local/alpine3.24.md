@@ -2,17 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c609d9580d7f262d7b3cc1403e8f04ab4072d0bec9a774bf10a7682760b8a29`
-- Created: `2026-10-21T23:34:34.677796039Z`
-- Virtual Size: ~ 153.8 Mb  
+- Image ID: `sha256:f1142e5a4444ece958e9d1b4d39fc3b428f7c4cc9fe7829787371488dce2c208`
+- Created: `2026-10-26T23:41:12.036596862Z`
+- Virtual Size: ~ 154.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.9`
-  - `PYTHON_SHA256=e02d9ac21cebda6e46435369744a92c65cc7cd8669697694122cf97ffacd1e53`
+  - `LANG=C.UTF-8`
+  - `PYTHON_VERSION=3.14.10`
+  - `PYTHON_SHA256=de414a57119abef52784d8993e341d53aed635fc2b05c2607d9f98a2c5b72032`
   - `SATOSA_VERSION=8.6.0`
 
 ## `apk` (`.apk`-based packages)
