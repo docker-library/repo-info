@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad41b0214eb90d5155fd1d8d02da83c250a4293821eeecea67080e5ccb93c837`
-- Created: `2026-10-21T01:24:06.40260926Z`
-- Virtual Size: ~ 311.95 Mb  
+- Image ID: `sha256:f7f603929306794d889330d03d9e2b3ddba659614f2073ef43ba4572f2fcb375`
+- Created: `2026-10-27T02:19:30.2553598Z`
+- Virtual Size: ~ 312.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -909,11 +909,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.69~deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.69~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-1.8.0-amazon-corretto-jdk=1:8.504.04-1`
+### `dpkg` source package: `java-1.8.0-amazon-corretto-jdk=1:8.512.09-1`
 
 Binary Packages:
 
-- `java-1.8.0-amazon-corretto-jdk:amd64=1:8.504.04-1`
+- `java-1.8.0-amazon-corretto-jdk:amd64=1:8.512.09-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

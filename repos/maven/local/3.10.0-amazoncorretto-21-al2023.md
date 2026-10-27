@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16c9a6371b2c440f03f88484bc8f9f84333a9ec288b70a4c371e94b4588aa224`
-- Created: `2026-10-23T02:11:56.052674516Z`
-- Virtual Size: ~ 737.6 Mb  
+- Image ID: `sha256:ff9d9adae5b53775a943bbfe5f59133fc66e7f45bccc29459261a4d4e5323999`
+- Created: `2026-10-27T02:18:41.229527525Z`
+- Virtual Size: ~ 738.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -524,49 +524,29 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-21-amazon-corretto-21.0.12+13-1.amzn2023.1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-21.0.13.0.10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-21.0.12+13-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/eecf01ede358b1d4fc37695e58ee1d88a84a1fe156d8aa0f62da73afd17f021c/java-21-amazon-corretto-21.0.12+13-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-devel-21.0.12+13-1.amzn2023.1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-devel-21.0.13.0.10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-devel-21.0.12+13-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/eecf01ede358b1d4fc37695e58ee1d88a84a1fe156d8aa0f62da73afd17f021c/java-21-amazon-corretto-21.0.12+13-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-headless-21.0.12+13-1.amzn2023.1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-headless-21.0.13.0.10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-headless-21.0.12+13-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/eecf01ede358b1d4fc37695e58ee1d88a84a1fe156d8aa0f62da73afd17f021c/java-21-amazon-corretto-21.0.12+13-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-21-amazon-corretto-jmods-21.0.12+13-1.amzn2023.1.x86_64`
+### `rpm` package: `java-21-amazon-corretto-jmods-21.0.13.0.10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-21-amazon-corretto-jmods-21.0.12+13-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/eecf01ede358b1d4fc37695e58ee1d88a84a1fe156d8aa0f62da73afd17f021c/java-21-amazon-corretto-21.0.12+13-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
