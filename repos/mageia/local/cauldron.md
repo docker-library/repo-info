@@ -17,13 +17,23 @@
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url basesystem-minimal-10-0.2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/basesystem-10-0.2.mga10.src.rpm
+```
 
 ### `rpm` package: `basesystem-minimal-core-10-0.2.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url basesystem-minimal-core-10-0.2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/basesystem-10-0.2.mga10.src.rpm
+```
 
 ### `rpm` package: `bash-5.3-2.mga10.x86_64`
 
@@ -35,7 +45,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url bc-1.08.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/bc-1.08.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `binutils-2.47-1.mga11.x86_64`
 
@@ -47,13 +62,23 @@ Licenses (from `rpm --query`): GPLv3+
 
 Licenses (from `rpm --query`): GPL-2.0-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url chkconfig-1.33-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/chkconfig-1.33-1.mga10.src.rpm
+```
 
 ### `rpm` package: `common-licenses-1.1-12.mga10.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url common-licenses-1.1-12.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/common-licenses-1.1-12.mga10.src.rpm
+```
 
 ### `rpm` package: `coreutils-9.11-1.mga11.x86_64`
 
@@ -77,13 +102,23 @@ Licenses (from `rpm --query`): LGPLv2
 
 Licenses (from `rpm --query`): MIT and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url cronie-1.7.2-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/cronie-1.7.2-2.mga10.src.rpm
+```
 
 ### `rpm` package: `crontabs-1.10-26.mga10.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url crontabs-1.10-26.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/crontabs-1.10-26.mga10.src.rpm
+```
 
 ### `rpm` package: `crypto-policies-20250402-6.mga10.noarch`
 
@@ -101,7 +136,12 @@ Licenses (from `rpm --query`): BSD-like
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dash-static-0.5.12-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/dash-0.5.12-3.mga10.src.rpm
+```
 
 ### `rpm` package: `dbus-broker-37-3.mga11.x86_64`
 
@@ -131,7 +171,12 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url etcskel-1.63-38.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/etcskel-1.63-38.mga10.src.rpm
+```
 
 ### `rpm` package: `ethtool-7.1-1.mga11.x86_64`
 
@@ -155,7 +200,12 @@ Licenses (from `rpm --query`): Public Domain
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url findutils-4.10.0-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/findutils-4.10.0-2.mga10.src.rpm
+```
 
 ### `rpm` package: `gawk-5.4.1-1.mga11.x86_64`
 
@@ -167,7 +217,12 @@ Licenses (from `rpm --query`): GPLv3+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url genhdlist2-7.12-4.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/rpmtools-7.12-4.mga10.src.rpm
+```
 
 ### `rpm` package: `glibc-2.44-4.mga11.x86_64`
 
@@ -179,7 +234,12 @@ Licenses (from `rpm --query`): LGPL
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnulib-l10n-20241231-1.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/gnulib-l10n-20241231-1.mga10.src.rpm
+```
 
 ### `rpm` package: `gnupg2-2.4.9-2.mga10.x86_64`
 
@@ -209,7 +269,12 @@ Licenses (from `rpm --query`): GPLv3+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url hostname-3.25-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/hostname-3.25-1.mga10.src.rpm
+```
 
 ### `rpm` package: `icu78-data-78.3-1.mga11.noarch`
 
@@ -221,7 +286,12 @@ Licenses (from `rpm --query`): Unicode
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ifplugd-0.28-26.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/ifplugd-0.28-26.mga10.src.rpm
+```
 
 ### `rpm` package: `initscripts-10.04-10.mga10.x86_64`
 
@@ -233,7 +303,12 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ipcalc-1.0.3-4.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/ipcalc-1.0.3-4.mga10.src.rpm
+```
 
 ### `rpm` package: `iproute2-6.18.0-2.mga10.x86_64`
 
@@ -245,7 +320,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url iputils-20250605-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/iputils-20250605-1.mga10.src.rpm
+```
 
 ### `rpm` package: `kbd-2.10.0-1.mga11.x86_64`
 
@@ -287,7 +367,12 @@ Licenses (from `rpm --query`): BSD
 
 Licenses (from `rpm --query`): LGPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64assuan9-3.0.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libassuan-3.0.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64attr1-2.6.0-1.mga11.x86_64`
 
@@ -317,13 +402,23 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64brotlicommon1-1.2.0-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/brotli-1.2.0-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64brotlidec1-1.2.0-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64brotlidec1-1.2.0-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/brotli-1.2.0-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64bz2_1-1.0.8-8.mga11.x86_64`
 
@@ -371,13 +466,23 @@ Licenses (from `rpm --query`): BSD-like
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64daemon0-0.14-16.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libdaemon-0.14-16.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64db5.3-5.3.28-31.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64db5.3-5.3.28-31.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/db53-5.3.28-31.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64devmapper1.02-1.02.196-6.mga10.x86_64`
 
@@ -431,7 +536,12 @@ Licenses (from `rpm --query`): LGPL2+
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64ffi8-3.5.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libffi-3.5.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64fmt11-11.2.0-2.mga11.x86_64`
 
@@ -449,13 +559,23 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64gdbm6-1.26-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/gdbm-1.26-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64gdbm_compat4-1.26-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64gdbm_compat4-1.26-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/gdbm-1.26-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64gio2.0_0-2.90.1-2.mga11.x86_64`
 
@@ -473,7 +593,12 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64gmp10-6.3.0-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/gmp-6.3.0-3.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64gnutls30-3.8.13-1.mga10.x86_64`
 
@@ -497,7 +622,12 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64hogweed6-3.10.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/nettle-3.10.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64icu78-78.3-1.mga11.x86_64`
 
@@ -509,7 +639,12 @@ Licenses (from `rpm --query`): Unicode
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64idn2_0-2.3.8-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libidn2-2.3.8-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64intl8-1.0-1.mga11.x86_64`
 
@@ -533,7 +668,12 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64keyutils1-1.6.3-5.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/keyutils-1.6.3-5.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64krb53-1.21.3-6.mga11.x86_64`
 
@@ -563,13 +703,23 @@ Licenses (from `rpm --query`): GPL-2.0 OR BSD-2-Clause
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64lua5.4-5.4.8-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/lua-5.4.8-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64lz4_1-1.10.0-3.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64lz4_1-1.10.0-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/lz4-1.10.0-3.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64lzma5-5.8.4-1.mga11.x86_64`
 
@@ -581,7 +731,12 @@ Licenses (from `rpm --query`): GPLv2+ and Public Domain
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64lzo2_2-2.10-7.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/liblzo-2.10-7.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64magic1-5.48-1.mga11.x86_64`
 
@@ -599,7 +754,12 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64mnl0-1.0.5-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libmnl-1.0.5-3.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64modulemd2-2.15.3-1.mga11.x86_64`
 
@@ -617,7 +777,12 @@ Licenses (from `rpm --query`): LGPL2+
 
 Licenses (from `rpm --query`): LGPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64mpfr6-4.2.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/mpfr-4.2.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64msgpack-c2-7.0.2-1.mga11.x86_64`
 
@@ -641,7 +806,12 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64nettle8-3.10.2-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/nettle-3.10.2-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64nghttp2_14-1.70.0-1.mga11.x86_64`
 
@@ -671,7 +841,12 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64npth0-1.8-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/npth-1.8-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64openssl3-3.5.9-2.mga11.x86_64`
 
@@ -713,7 +888,12 @@ Licenses (from `rpm --query`): ISC
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64popt0-1.19-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/popt-1.19-3.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64proc2_1-4.0.7-1.mga11.x86_64`
 
@@ -725,19 +905,34 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64psl5-0.21.5-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libpsl-0.21.5-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64pwquality1-1.4.5-5.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPL+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64pwquality1-1.4.5-5.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libpwquality-1.4.5-5.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64readline8-8.3-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64readline8-8.3-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/readline-8.3-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64repo0-1.20.0-3.mga11.x86_64`
 
@@ -767,13 +962,23 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Licenses (from `rpm --query`): BSD-style
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64sasl2_3-2.1.28-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/cyrus-sasl-2.1.28-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64sdbus-c++2-2.2.1-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64sdbus-c++2-2.2.1-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/sdbus-cpp-2.2.1-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64seccomp2-2.6.1-1.mga11.x86_64`
 
@@ -827,7 +1032,12 @@ Licenses (from `rpm --query`): LGPLv2.1+
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64subid4-4.13-4.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/shadow-utils-4.13-4.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64systemd0-258.10-1.mga11.x86_64`
 
@@ -839,7 +1049,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tasn1_6-4.21.0-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libtasn1-4.21.0-1.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tcb0-1.2-6.mga10.x86_64`
 
@@ -851,79 +1066,144 @@ Licenses (from `rpm --query`): BSD or GPL+
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-esys0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-mu0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-mu0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-rc0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-rc0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-sys1-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-sys1-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-cmd0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-cmd0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-device0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-device0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-i2c-helper0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-i2c-helper0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-mssim0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-mssim0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-pcap0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-pcap0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-spi-helper0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-spi-helper0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-spidev0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-spidev0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tcti-swtpm0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tcti-swtpm0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64tss2-tctildr0-4.1.3-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64tss2-tctildr0-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64udev1-258.10-1.mga11.x86_64`
 
@@ -947,7 +1227,12 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64user1-0.64-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libuser-0.64-3.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64uuid1-2.42.4-1.mga11.x86_64`
 
@@ -959,7 +1244,12 @@ Licenses (from `rpm --query`): BSD
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64verto1-0.3.2-7.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libverto-0.3.2-7.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64xcrypt1-4.5.2-1.mga11.x86_64`
 
@@ -977,7 +1267,12 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64yaml0_2-0.2.5-4.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/yaml-0.2.5-4.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64z1-2.3.3-1.mga11.x86_64`
 
@@ -989,7 +1284,12 @@ Licenses (from `rpm --query`): zlib
 
 Licenses (from `rpm --query`): BSD and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lib64zck1-1.5.1-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/zchunk-1.5.1-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lib64zstd1-1.5.7-3.mga11.x86_64`
 
@@ -1019,13 +1319,23 @@ Licenses (from `rpm --query`): LGPLv2+
 
 Licenses (from `rpm --query`): (GPL-2.0-or-later OR LGPL-3.0-or-later) AND GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libidn2-i18n-2.3.8-2.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libidn2-2.3.8-2.mga10.src.rpm
+```
 
 ### `rpm` package: `libpwquality-tools-1.4.5-5.mga10.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPL+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpwquality-tools-1.4.5-5.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libpwquality-1.4.5-5.mga10.src.rpm
+```
 
 ### `rpm` package: `libselinux-3.11-1.mga11.x86_64`
 
@@ -1049,13 +1359,23 @@ Licenses (from `rpm --query`): GPLv3+
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libuser-0.64-3.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libuser-0.64-3.mga10.src.rpm
+```
 
 ### `rpm` package: `libutempter-1.2.3-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libutempter-1.2.3-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libutempter-1.2.3-1.mga10.src.rpm
+```
 
 ### `rpm` package: `locales-2.44-1.mga11.x86_64`
 
@@ -1073,7 +1393,12 @@ Licenses (from `rpm --query`): GPL
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url logrotate-3.22.0-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/logrotate-3.22.0-2.mga10.src.rpm
+```
 
 ### `rpm` package: `lsb-release-3.3-4.mga11.noarch`
 
@@ -1187,7 +1512,12 @@ Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
 Licenses (from `rpm --query`): BSD or GPL+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam_pwquality-1.4.5-5.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/libpwquality-1.4.5-5.mga10.src.rpm
+```
 
 ### `rpm` package: `pam_tcb-1.2-6.mga10.x86_64`
 
@@ -1205,7 +1535,12 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url passwd-0.80-6.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/passwd-0.80-6.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-5.42.0-3.mga11.x86_64`
 
@@ -1223,55 +1558,100 @@ Licenses (from `rpm --query`): GPL
 
 Licenses (from `rpm --query`): Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-File-Sync-0.110.0-42.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-File-Sync-0.110.0-42.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-Filesys-Df-0.920.0-43.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Filesys-Df-0.920.0-43.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-Filesys-Df-0.920.0-43.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-IO-stringy-2.113.0-3.mga10.noarch`
 
 Licenses (from `rpm --query`): Artistic/GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-IO-stringy-2.113.0-3.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-IO-stringy-2.113.0-3.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-Locale-gettext-1.70.0-25.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Locale-gettext-1.70.0-25.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-Locale-gettext-1.70.0-25.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-MDK-Common-1.2.34.2-6.mga10.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-MDK-Common-1.2.34.2-6.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-MDK-Common-1.2.34.2-6.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-MDV-Distribconf-4.101.0-5.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-MDV-Distribconf-4.101.0-5.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-MDV-Distribconf-4.101.0-5.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-MDV-Packdrakeng-1.130.0-8.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-MDV-Packdrakeng-1.130.0-8.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-MDV-Packdrakeng-1.130.0-8.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-Time-ZoneInfo-0.300.0-12.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Time-ZoneInfo-0.300.0-12.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-Time-ZoneInfo-0.300.0-12.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-URPM-5.226-1.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-URPM-5.226-1.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-URPM-5.226-1.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-XML-LibXML-2.21.300-3.mga11.x86_64`
 
@@ -1283,19 +1663,34 @@ Licenses (from `rpm --query`): GPL+ or Artistic
 
 Licenses (from `rpm --query`): MPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-XML-NamespaceSupport-1.120.0-5.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-XML-NamespaceSupport-1.120.0-5.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-XML-SAX-1.20.0-4.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-XML-SAX-1.20.0-4.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-XML-SAX-1.20.0-4.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-XML-SAX-Base-1.90.0-6.mga10.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-XML-SAX-Base-1.90.0-6.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/perl-XML-SAX-Base-1.90.0-6.mga10.src.rpm
+```
 
 ### `rpm` package: `perl-base-5.42.0-3.mga11.x86_64`
 
@@ -1325,7 +1720,12 @@ Licenses (from `rpm --query`): ISC
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url popt-data-1.19-3.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/popt-1.19-3.mga10.src.rpm
+```
 
 ### `rpm` package: `procps-ng-4.0.7-1.mga11.x86_64`
 
@@ -1337,7 +1737,12 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url psmisc-23.7-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/psmisc-23.7-2.mga10.src.rpm
+```
 
 ### `rpm` package: `publicsuffix-list-dafsa-20260624-1.mga11.noarch`
 
@@ -1367,7 +1772,12 @@ Licenses (from `rpm --query`): GPL
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rootfiles-11.0-18.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/rootfiles-11.0-18.mga10.src.rpm
+```
 
 ### `rpm` package: `rpm-4.20.1-3.mga11.x86_64`
 
@@ -1379,7 +1789,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): GPL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rpm-helper-0.24.22-2.mga10.noarch
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/rpm-helper-0.24.22-2.mga10.src.rpm
+```
 
 ### `rpm` package: `rpm-mageia-setup-2.84-1.mga11.x86_64`
 
@@ -1391,7 +1806,12 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url run-parts-4.8.4-7.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/run-parts-4.8.4-7.mga10.src.rpm
+```
 
 ### `rpm` package: `sash-3.8-14.mga10.x86_64`
 
@@ -1415,7 +1835,12 @@ Licenses (from `rpm --query`): Public Domain
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url shadow-utils-4.13-4.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/shadow-utils-4.13-4.mga10.src.rpm
+```
 
 ### `rpm` package: `shared-mime-info-2.5.1-1.mga11.x86_64`
 
@@ -1457,13 +1882,23 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): BSD and TCGL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tpm2-tss-4.1.3-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/tpm2-tss-4.1.3-2.mga10.src.rpm
+```
 
 ### `rpm` package: `traceroute-2.1.6-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url traceroute-2.1.6-2.mga10
+http://mirrors.kernel.org/mageia/distrib/cauldron/SRPMS/core/release/traceroute-2.1.6-2.mga10.src.rpm
+```
 
 ### `rpm` package: `urpmi-8.137-1.mga11.noarch`
 
