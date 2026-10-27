@@ -287,9 +287,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.2.0-4
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-4.dsc' brotli_1.2.0-4.dsc 2263 SHA256:497e4d2bc6476f64f1d3669067a09a702b16d04552c20832b6f2f5f1f7763d26
+'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-4.1.dsc' brotli_1.2.0-4.1.dsc 2426 SHA256:1fbe86d3679744118e4ef6e2a2d0856028ecffb47a71a7689f1545b78ecde570
 'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0.orig.tar.gz' brotli_1.2.0.orig.tar.gz 646398 SHA256:eb5f7dadf215d0670665fd81566e1fe2dfdc154d983f09142de7299df4c182e6
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-4.debian.tar.xz' brotli_1.2.0-4.debian.tar.xz 6440 SHA256:29fca60ade1a0fbfc353e8c4ac71c2f38ba43e797f5f8d62ec1cdffc84f20e17
+'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.2.0-4.1.debian.tar.xz' brotli_1.2.0-4.1.debian.tar.xz 8552 SHA256:154976a2a76ca7483d2f0012de67c8df7f8d2946b29214dd6d203174df1cb074
 ```
 
 Other potentially useful URLs:
@@ -3567,20 +3567,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.8-2
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.dsc' patch_2.8-2.dsc 1689 SHA256:41fbd3f2c99f60dcbe02699ff01955a47711377b20987352b957bd55e02e2088
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8.orig.tar.xz' patch_2.8.orig.tar.xz 907208 SHA256:f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.8-2.debian.tar.xz' patch_2.8-2.debian.tar.xz 9460 SHA256:9a740460988c910c5538e4d24df00d9961d19dee014c63e92f5d60e611fa60c4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/patch/2.8-2/
 
-- https://sources.debian.net/src/patch/2.8-2/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.48-3.1`
 
