@@ -1,10 +1,10 @@
-# `dart:3.13.6-sdk`
+# `dart:3.13.7-sdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53b87aedd953e8c732fe9c92b73b563b7a9ddf7e2a8598faa2745602c5c64c5a`
-- Created: `2026-10-21T00:46:52.756088812Z`
-- Virtual Size: ~ 869.2 Mb  
+- Image ID: `sha256:57c2c209c76bc8052c8b52c8fed4a3223406fe2c8d46bb25d0f540e25e152a2a`
+- Created: `2026-10-23T18:30:27.120822795Z`
+- Virtual Size: ~ 869.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -240,13 +240,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.2.37-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.2.37-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.20.29-1~deb13u1`
+### `dpkg` source package: `bind9=1:9.20.30-1~deb13u1`
 
 Binary Packages:
 
-- `bind9-dnsutils=1:9.20.29-1~deb13u1`
-- `bind9-host=1:9.20.29-1~deb13u1`
-- `bind9-libs:amd64=1:9.20.29-1~deb13u1`
+- `bind9-dnsutils=1:9.20.30-1~deb13u1`
+- `bind9-host=1:9.20.30-1~deb13u1`
+- `bind9-libs:amd64=1:9.20.30-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -258,13 +258,20 @@ Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/d
 - `MPL-2.0`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris bind9=1:9.20.30-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.30-1%7edeb13u1.dsc' bind9_9.20.30-1~deb13u1.dsc 2953 SHA256:6a25251ddfc51bd8c23606615fb1e705d1c8cf5a641b8533c8035e7663c92f8e
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.30.orig.tar.xz' bind9_9.20.30.orig.tar.xz 6004232 SHA256:9e1443a40a72a30272cbc3196d020a6b2e26937111c83e59e101e82e1e3b4fef
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.30-1%7edeb13u1.debian.tar.xz' bind9_9.20.30-1~deb13u1.debian.tar.xz 62852 SHA256:32dbfae3ec72ac2f4d64a624bfb650e3d7bd1b4e35dba67ff9d3026d252ed34d
+```
 
-- http://snapshot.debian.org/package/bind9/1:9.20.29-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/bind9/1:9.20.30-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.20.30-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.20.30-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
@@ -280,9 +287,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
 ```
 
 Other potentially useful URLs:
