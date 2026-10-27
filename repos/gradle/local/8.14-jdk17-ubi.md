@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bd1b5b272c858e2ed0d1ecdbbbb266e55f0bd83dbdcd7ae81c8b24f1686c336`
-- Created: `2026-10-13T23:11:21.054103895Z`
-- Virtual Size: ~ 731.14 Mb  
+- Image ID: `sha256:c8ca316ad0b05453252827f3ff1665481b76b7ec9489d265e4393797f70c1c6b`
+- Created: `2026-10-23T17:05:47.027979767Z`
+- Virtual Size: ~ 731.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=8.14.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-13T13:35:30Z`
+  - `build-date=2026-10-23T07:55:29Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-13T13:35:30Z`
-  - `org.opencontainers.image.revision=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
-  - `release=1791898448`
+  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
+  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `release=1792742033`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=31c16e4570d0b2dd27707ce88c88f65b1212cf78`
+  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -178,15 +178,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-11.el9.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-91.el9.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-91.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-91.el9.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2026.2.92_v9.0.319-90.3.el9_8.src.rpm
 ```
 
 ### `rpm` package: `coreutils-single-8.32-41.el9_8.1.x86_64`
@@ -354,11 +354,16 @@ $ dnf --quiet download --source --url elfutils-libs-0.194-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.194-1.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9_8.5.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.7.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
 
@@ -827,12 +832,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libbrotli-1.0.9-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/brotli-1.0.9-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.48-10.el9_8.1.x86_64`
 
@@ -1483,17 +1483,27 @@ $ dnf --quiet download --source --url openldap-2.6.8-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.8-4.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-12.el9_8.x86_64`
+### `rpm` package: `openssh-9.9p1-13.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssh-clients-9.9p1-12.el9_8.x86_64`
+```console
+$ dnf --quiet download --source --url openssh-9.9p1-13.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-13.el9_8.src.rpm
+```
+
+### `rpm` package: `openssh-clients-9.9p1-13.el9_8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssh-clients-9.9p1-13.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-13.el9_8.src.rpm
+```
 
 ### `rpm` package: `openssl-3.5.8-2.el9_8.x86_64`
 
@@ -2122,11 +2132,27 @@ $ dnf --quiet download --source --url perl-Time-Local-1.300-7.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Time-Local-1.300-7.el9.src.rpm
 ```
 
-### `rpm` package: `perl-URI-5.09-3.el9.noarch`
+### `rpm` package: `perl-URI-5.09-3.el9_8.1.noarch`
 
 Licenses (from `rpm --query`): GPL+ or Artistic
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-URI-5.09-3.el9_8.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-URI-5.09-3.el9_8.1.src.rpm
+```
+
+### `rpm` package: `perl-Unicode-Normalize-1.27-461.el9.x86_64`
+
+Licenses (from `rpm --query`): GPL+ or Artistic
+
+Source:
+
+```console
+$ dnf --quiet download --source --url perl-Unicode-Normalize-1.27-461.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/p/perl-Unicode-Normalize-1.27-461.el9.src.rpm
+```
 
 ### `rpm` package: `perl-base-2.27-484.el9_8.noarch`
 
@@ -2572,12 +2598,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/sourc
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
 
