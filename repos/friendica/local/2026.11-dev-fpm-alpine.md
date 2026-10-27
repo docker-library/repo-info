@@ -1,10 +1,10 @@
-# `friendica:2026.08-dev-fpm-alpine`
+# `friendica:2026.11-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:79dd8eb44ce8e56ad44e3c9405b4e2c315b81fa83b43a735eab2e1dfc34d863f`
-- Created: `2026-10-21T23:31:16.697746637Z`
-- Virtual Size: ~ 159.5 Mb  
+- Image ID: `sha256:c91497798e7622882839d9a49513d63421e68fd8c149e40cce85ac0a44c430e2`
+- Created: `2026-10-27T16:36:19.612322662Z`
+- Virtual Size: ~ 159.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -21,11 +21,11 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
   - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.19`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2026.08-dev`
+  - `FRIENDICA_VERSION=2026.11-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -151,16 +151,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```

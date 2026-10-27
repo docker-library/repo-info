@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb070a020ed6edf5cecf96bf45739662700a7dfb39d2890d50fca0826e2b030e`
-- Created: `2026-10-21T16:35:40.599836319Z`
-- Virtual Size: ~ 700.55 Mb  
+- Image ID: `sha256:81e2f8ff0f8a7356d0f9812ceec3f1574a642d617e50db661669f9404f5c6cb0`
+- Created: `2026-10-27T16:35:54.386449121Z`
+- Virtual Size: ~ 700.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
   - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
-  - `GOSU_VERSION=1.17`
+  - `GOSU_VERSION=1.19`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
@@ -381,11 +381,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/binutils/2.44-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/binutils/2.44-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `brotli=1.1.0-2`
+### `dpkg` source package: `brotli=1.1.0-2+deb13u1`
 
 Binary Packages:
 
-- `libbrotli1:amd64=1.1.0-2+b7`
+- `libbrotli1:amd64=1.1.0-2+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
@@ -394,17 +394,17 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.dsc' brotli_1.1.0-2.dsc 2261 SHA256:39b06802a852629132d549a7f7449dee7f435e801706714a4bc2ea2f15b28f36
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.1.0-2.debian.tar.xz' brotli_1.1.0-2.debian.tar.xz 5480 SHA256:3d913a3740bcad9a294007575a6beb1846beadbd62b44fb2bf9fdaeddea3236f
+$ apt-get source -qq --print-uris brotli=1.1.0-2+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
+'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/brotli/1.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/brotli/1.1.0-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -2200,13 +2200,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgssglue/0.9-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgssglue/0.9-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.23.4-1~deb13u1`
+### `dpkg` source package: `libheif=1.23.6-2~deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-dav1d:amd64=1.23.4-1~deb13u1`
-- `libheif-plugin-libde265:amd64=1.23.4-1~deb13u1`
-- `libheif1:amd64=1.23.4-1~deb13u1`
+- `libheif-plugin-dav1d:amd64=1.23.6-2~deb13u1`
+- `libheif-plugin-libde265:amd64=1.23.6-2~deb13u1`
+- `libheif1:amd64=1.23.6-2~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2223,17 +2223,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.23.4-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.dsc' libheif_1.23.4-1~deb13u1.dsc 3377 SHA256:6bf7fbd3de53ba819c770f07946e20123ed460f3d8eabe579f22218c96bf82c1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4.orig.tar.gz' libheif_1.23.4.orig.tar.gz 2217221 SHA256:d0c02b4b0e978f34a1974b6f3eea7975a537bf7a9195ffeea38e7242ff316fdd
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.4-1%7edeb13u1.debian.tar.xz' libheif_1.23.4-1~deb13u1.debian.tar.xz 15552 SHA256:5102677f6e7e98b9b80d19e7579617ae07fe56199e9c9ce91ce59c1e7a6e24aa
+$ apt-get source -qq --print-uris libheif=1.23.6-2~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6-2%7edeb13u1.dsc' libheif_1.23.6-2~deb13u1.dsc 3366 SHA256:b3d997ab26a37f7bb7309052a28d1e41c057588b6687616f7fb6ed415b021480
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6.orig.tar.gz' libheif_1.23.6.orig.tar.gz 2373898 SHA256:4484346dc5995319dbc11e3a1c35d0a2ec46511ce370900869337fd2c7033125
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6-2%7edeb13u1.debian.tar.xz' libheif_1.23.6-2~deb13u1.debian.tar.xz 16116 SHA256:91802e614b0a78acbf0fd6a23937bbf6898a5c2188e1f002a9a9eef0da132f87
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.4-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.23.6-2~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.23.6-2~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.23.6-2~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.8-2`
 
