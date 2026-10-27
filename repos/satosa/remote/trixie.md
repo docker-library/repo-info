@@ -1,7 +1,7 @@
 ## `satosa:trixie`
 
 ```console
-$ docker pull satosa@sha256:40342057550915198c0d806bc476c3045eae752c91eed09c3e138d8320afb18b
+$ docker pull satosa@sha256:4ad3031d8ac5c07b4f15e7ccf589f1d3123d299873bf3336c5ed9cd8eb0c4254
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,52 +14,54 @@ $ docker pull satosa@sha256:40342057550915198c0d806bc476c3045eae752c91eed09c3e13
 ### `satosa:trixie` - linux; amd64
 
 ```console
-$ docker pull satosa@sha256:8e55e867237dc13e5203e3eee27eb8934de3ecd97ad44bd8226dbc133570bc63
+$ docker pull satosa@sha256:00f53290bc3a3f5cd7417bf93a003a07427093484f028baa46744743848384fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.4 MB (79440565 bytes)**  
+-	Total Size: **79.8 MB (79808229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8749e8b06ff92f83a519a0cc6e4955d45b12b0175051a24eda082db667dc00ff`
+-	Image ID: `sha256:de663729909ccc9c99650a19f5248d28ddeca19057cdb0d0127c64f8c874eb7b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
 # Tue, 20 Oct 2026 21:32:55 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1792531975'
-# Wed, 21 Oct 2026 22:19:37 GMT
+# Mon, 26 Oct 2026 22:34:37 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:19:37 GMT
+# Mon, 26 Oct 2026 22:34:37 GMT
+ENV LANG=C.UTF-8
+# Mon, 26 Oct 2026 22:34:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 21 Oct 2026 22:19:37 GMT
-ENV PYTHON_VERSION=3.14.9
-# Wed, 21 Oct 2026 22:19:37 GMT
-ENV PYTHON_SHA256=e02d9ac21cebda6e46435369744a92c65cc7cd8669697694122cf97ffacd1e53
-# Wed, 21 Oct 2026 22:26:44 GMT
+# Mon, 26 Oct 2026 22:34:37 GMT
+ENV PYTHON_VERSION=3.14.10
+# Mon, 26 Oct 2026 22:34:37 GMT
+ENV PYTHON_SHA256=de414a57119abef52784d8993e341d53aed635fc2b05c2607d9f98a2c5b72032
+# Mon, 26 Oct 2026 22:41:38 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		g++ 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libzstd-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:-} -Wl,--strip-all"; 	arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 	case "$arch" in 		amd64|arm64) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 			;; 		i386) 			;; 		*) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 			;; 	esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-} -Wl,-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Wed, 21 Oct 2026 22:26:44 GMT
+# Mon, 26 Oct 2026 22:41:39 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Wed, 21 Oct 2026 22:26:44 GMT
+# Mon, 26 Oct 2026 22:41:39 GMT
 CMD ["python3"]
-# Wed, 21 Oct 2026 23:04:36 GMT
+# Mon, 26 Oct 2026 23:40:43 GMT
 RUN set -eux; 	groupadd -g 1000 satosa; 	useradd -m -g 1000 -u 1000 satosa; 	apt-get update; 	apt-get install -y --no-install-recommends 		jq 		libxml2-utils 		xmlsec1 	; 	rm -rf /var/lib/apt/lists/*; 	pip install --no-cache-dir 		yq 	; # buildkit
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 ENV SATOSA_VERSION=8.6.0
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		cargo 		dirmngr 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		pkg-config 		python3-dev 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 	pip install --no-cache-dir 		satosa[idpy_oidc_backend,ldap,pyop_mongo,pyop_redis]==${SATOSA_VERSION} 	; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa # buildkit
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz # buildkit
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 WORKDIR /etc/satosa
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 USER satosa:satosa
-# Wed, 21 Oct 2026 23:05:29 GMT
+# Mon, 26 Oct 2026 23:41:34 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
@@ -68,112 +70,114 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Tue, 20 Oct 2026 23:31:18 GMT  
 		Size: 29.8 MB (29843579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8c008b474ac76c5b59e7ad8bf45f234e69d9d618d800de57ec7b157be08381d`  
-		Last Modified: Wed, 21 Oct 2026 22:26:51 GMT  
-		Size: 1.3 MB (1291242 bytes)  
+	-	`sha256:a39baf2ebe086ad16daa557c3497ff937b42d135ac6762491641d77218bcf48c`  
+		Last Modified: Mon, 26 Oct 2026 22:41:46 GMT  
+		Size: 1.6 MB (1551783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cb672340c81d54eae68bd73635134ad5ede9da3664d3d638e94bae1666adae8`  
-		Last Modified: Wed, 21 Oct 2026 22:26:52 GMT  
-		Size: 12.4 MB (12392041 bytes)  
+	-	`sha256:f2653477103956dff27db1bc39e480465c1d75524c48abdeeba141f7c99d0a31`  
+		Last Modified: Mon, 26 Oct 2026 22:41:46 GMT  
+		Size: 12.4 MB (12411011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1484fb1dde9f1e72e81c3217b4081dbca2ff3cd75d9f7a4dbdd5ed9a9ab609d4`  
-		Last Modified: Wed, 21 Oct 2026 22:26:51 GMT  
-		Size: 250.0 B  
+	-	`sha256:cf01b8c3e5cdfa821553df5876421fa668994462a97521559e33a08c846bdc7c`  
+		Last Modified: Mon, 26 Oct 2026 22:41:46 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c72168aafe2489865e6e7173b2599f48e281c42b0fa4fb35c04d8273bfcb2aca`  
-		Last Modified: Wed, 21 Oct 2026 23:05:40 GMT  
-		Size: 7.5 MB (7526931 bytes)  
+	-	`sha256:5647431fdd4b50f6a12c86b966a2d17ca66da1c1ff14cfaf8e5e10aa30be4ada`  
+		Last Modified: Mon, 26 Oct 2026 23:41:46 GMT  
+		Size: 7.5 MB (7527519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:808b04942ed8e65cbc1948ef66a42991ac9b96113e012c7eae1f8ba446d8fd9b`  
-		Last Modified: Wed, 21 Oct 2026 23:05:41 GMT  
-		Size: 28.4 MB (28373956 bytes)  
+	-	`sha256:08f43298181513fdc1856d8fd1d550a5ae6775990f68021fd58d23c6a03da114`  
+		Last Modified: Mon, 26 Oct 2026 23:41:47 GMT  
+		Size: 28.5 MB (28461524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:644b41199e8cc725bce342a6466104316b6ea72fef748ec6a13985e83c514433`  
-		Last Modified: Wed, 21 Oct 2026 23:05:40 GMT  
-		Size: 10.5 KB (10457 bytes)  
+	-	`sha256:b35610732a12900944e1d19b66d1babe1d2c53bc8b90beb64754b49da84a389e`  
+		Last Modified: Mon, 26 Oct 2026 23:41:46 GMT  
+		Size: 10.5 KB (10454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fbd657c694358672d0973faadad463801b82ef3b6acfb0958f1695d8f2dab90`  
-		Last Modified: Wed, 21 Oct 2026 23:05:40 GMT  
-		Size: 2.1 KB (2077 bytes)  
+	-	`sha256:abe163ed1c5a75e9f9d4089b5a9cecd4b16e1f0d05a771300554987cf250439d`  
+		Last Modified: Mon, 26 Oct 2026 23:41:46 GMT  
+		Size: 2.1 KB (2079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:trixie` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:456bb98bf901155c558734bcce00200a772ddf251a9ccfd1052ad4d29349db0b
+$ docker pull satosa@sha256:ac393de43fede63c90083444eda6afa33e2614c7fc1845aadafa8abb39e8dddd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2366324 bytes)**  
+-	Total Size: **2.4 MB (2369671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ccdac589550e7d418e17aa243a8d73a09088e215f7b4ae053782f6f546fc0a0`
+-	Image ID: `sha256:b1fae431925f3b51ffcf8447694d90ce509f7216e079560bfdb9871edb8a5f6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:565365d8775f1deee2695b5e003e24f2f4c08790500a23c9e7875c8b9ff03ca2`  
-		Last Modified: Wed, 21 Oct 2026 23:05:40 GMT  
-		Size: 2.3 MB (2344243 bytes)  
+	-	`sha256:16931ac7457b01e978d79afb411b0791b3e5eef4f547a1aed7dc7128cbd0ca4e`  
+		Last Modified: Mon, 26 Oct 2026 23:41:46 GMT  
+		Size: 2.3 MB (2347542 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bee88df01f848fef88be645faf253ad8b5f004019bfce8063b5bca35f3d0ee8e`  
-		Last Modified: Wed, 21 Oct 2026 23:05:40 GMT  
-		Size: 22.1 KB (22081 bytes)  
+	-	`sha256:dca52b23ed629cdf53a6a9ed4cac9c78935633a0ba8cb883cbf1355063a83ea2`  
+		Last Modified: Mon, 26 Oct 2026 23:41:46 GMT  
+		Size: 22.1 KB (22129 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `satosa:trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull satosa@sha256:031d9d4eeefbc3f3eac612e93cbfc084f8d1d19518d91d94d5b02183aa4345b5
+$ docker pull satosa@sha256:4f08135e9d924e90159bf74a1ac7cb0e10e6e70b3bbf67c557fa83da499087e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.4 MB (79382747 bytes)**  
+-	Total Size: **79.8 MB (79761012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53ed94a3c8294aa435be0b9f8508b57c8159782953deb02bb5d340aaa74c8a48`
+-	Image ID: `sha256:e7c4ac37743b17c04cf0342a998b4067eed089a3277db8f810143b212a748c88`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
 # Tue, 20 Oct 2026 21:32:55 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1792531975'
-# Wed, 21 Oct 2026 22:27:34 GMT
+# Mon, 26 Oct 2026 22:34:55 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:27:34 GMT
+# Mon, 26 Oct 2026 22:34:55 GMT
+ENV LANG=C.UTF-8
+# Mon, 26 Oct 2026 22:34:55 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	apt-get dist-clean # buildkit
-# Wed, 21 Oct 2026 22:27:34 GMT
-ENV PYTHON_VERSION=3.14.9
-# Wed, 21 Oct 2026 22:27:34 GMT
-ENV PYTHON_SHA256=e02d9ac21cebda6e46435369744a92c65cc7cd8669697694122cf97ffacd1e53
-# Wed, 21 Oct 2026 22:35:05 GMT
+# Mon, 26 Oct 2026 22:34:55 GMT
+ENV PYTHON_VERSION=3.14.10
+# Mon, 26 Oct 2026 22:34:55 GMT
+ENV PYTHON_SHA256=de414a57119abef52784d8993e341d53aed635fc2b05c2607d9f98a2c5b72032
+# Mon, 26 Oct 2026 22:42:33 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		g++ 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libzstd-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:-} -Wl,--strip-all"; 	arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 	case "$arch" in 		amd64|arm64) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 			;; 		i386) 			;; 		*) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 			;; 	esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-} -Wl,-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Wed, 21 Oct 2026 22:35:05 GMT
+# Mon, 26 Oct 2026 22:42:33 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Wed, 21 Oct 2026 22:35:05 GMT
+# Mon, 26 Oct 2026 22:42:33 GMT
 CMD ["python3"]
-# Wed, 21 Oct 2026 22:52:01 GMT
+# Mon, 26 Oct 2026 23:45:17 GMT
 RUN set -eux; 	groupadd -g 1000 satosa; 	useradd -m -g 1000 -u 1000 satosa; 	apt-get update; 	apt-get install -y --no-install-recommends 		jq 		libxml2-utils 		xmlsec1 	; 	rm -rf /var/lib/apt/lists/*; 	pip install --no-cache-dir 		yq 	; # buildkit
-# Wed, 21 Oct 2026 22:52:58 GMT
+# Mon, 26 Oct 2026 23:46:13 GMT
 ENV SATOSA_VERSION=8.6.0
-# Wed, 21 Oct 2026 22:52:58 GMT
+# Mon, 26 Oct 2026 23:46:13 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		cargo 		dirmngr 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		pkg-config 		python3-dev 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 	pip install --no-cache-dir 		satosa[idpy_oidc_backend,ldap,pyop_mongo,pyop_redis]==${SATOSA_VERSION} 	; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa # buildkit
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz # buildkit
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 WORKDIR /etc/satosa
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 USER satosa:satosa
-# Wed, 21 Oct 2026 22:52:59 GMT
+# Mon, 26 Oct 2026 23:46:14 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
@@ -182,59 +186,59 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Tue, 20 Oct 2026 23:31:05 GMT  
 		Size: 30.2 MB (30200478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf290701b6e265c5df4fbd7e7af45f526dd23d8fa68c6b4b2738e2b6f54041c4`  
-		Last Modified: Wed, 21 Oct 2026 22:35:13 GMT  
-		Size: 1.3 MB (1271653 bytes)  
+	-	`sha256:ca79f135281071304babe832425a5c91eae8528d144a22fe8bfee518def17fb3`  
+		Last Modified: Mon, 26 Oct 2026 22:42:41 GMT  
+		Size: 1.5 MB (1534084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:138836be4abaf63078fb766ea079052c80ab81bb0cf0194645225c4b4e7040d4`  
-		Last Modified: Wed, 21 Oct 2026 22:35:13 GMT  
-		Size: 12.3 MB (12306274 bytes)  
+	-	`sha256:1c02e772a93271d8b320556859073951e8764f3255d44790ff1f4f510cb39fbb`  
+		Last Modified: Mon, 26 Oct 2026 22:42:41 GMT  
+		Size: 12.3 MB (12328549 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3e0f0e114d32fc17ed338df8f5be52b78d64dff5846840b69f75b91e6c6bef6`  
-		Last Modified: Wed, 21 Oct 2026 22:35:13 GMT  
-		Size: 250.0 B  
+	-	`sha256:e623427576e10fdabc83d039774c6fd6f2ea1ab85145801ddae08d4d0beda5aa`  
+		Last Modified: Mon, 26 Oct 2026 22:42:40 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a8244a3bf48286b4a2e3afe8d697360905061a0fc4b22f39a639e525d58ff3`  
-		Last Modified: Wed, 21 Oct 2026 22:53:09 GMT  
-		Size: 7.3 MB (7335971 bytes)  
+	-	`sha256:574224772466d52a27980de0e285e7e20706ec212870209f1baf38916a90794d`  
+		Last Modified: Mon, 26 Oct 2026 23:46:26 GMT  
+		Size: 7.3 MB (7336427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc9e8e2226ec45ac84577f6750445d2b975851ffc6852c8b4738a0aa923cdeb2`  
-		Last Modified: Wed, 21 Oct 2026 22:53:10 GMT  
-		Size: 28.3 MB (28255557 bytes)  
+	-	`sha256:656a06c23579025b0afadd59525bee3f92550623817c5d58dee092e3356a2c9c`  
+		Last Modified: Mon, 26 Oct 2026 23:46:27 GMT  
+		Size: 28.3 MB (28348661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8dadf3f8766d32af56fccba311f863614ea9cb31df50b54d3777609e913a400`  
-		Last Modified: Wed, 21 Oct 2026 22:53:09 GMT  
+	-	`sha256:8a0731bfc51b98d5a770bb962ff2379f70dd7234c186d00a04625fe175b45d92`  
+		Last Modified: Mon, 26 Oct 2026 23:46:26 GMT  
 		Size: 10.5 KB (10456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95954f7b197e2dae0ffb522eeb6522bb9a2bd53e15fbd526bcd6c24cabe75f0d`  
-		Last Modified: Wed, 21 Oct 2026 22:53:09 GMT  
-		Size: 2.1 KB (2076 bytes)  
+	-	`sha256:ca3a1343d08939b657c90a425b050e926c51ca68a526a7f1929d470493cb9073`  
+		Last Modified: Mon, 26 Oct 2026 23:46:26 GMT  
+		Size: 2.1 KB (2077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:trixie` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:e95a1b81a3551b96c49c44fec81dc28850d6819901e7c568ec5af16d2cd5a861
+$ docker pull satosa@sha256:796528ea05654fe01a6c811bbe80dc1103f2b5c667bd0230c12eb06b36f50248
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2366819 bytes)**  
+-	Total Size: **2.4 MB (2370168 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5c26c829baec735d5da6af716ba44e17e5a7c1a7cb27e3255e13fae02d8a83c`
+-	Image ID: `sha256:87f00acba514687e98b4e0af70322cfaae0113a70133fe4051d1c1ea83041c85`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:94ee5969f2a10a87794f46dc6f4d623053bd5fcf9ef97b90125ccc493c4a3f98`  
-		Last Modified: Wed, 21 Oct 2026 22:53:09 GMT  
-		Size: 2.3 MB (2344558 bytes)  
+	-	`sha256:230fb1a92de2d633d4accf4b53598956361ed4b61f79305b0c7d77d22a196f5f`  
+		Last Modified: Mon, 26 Oct 2026 23:46:26 GMT  
+		Size: 2.3 MB (2347857 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ed362a09130de86210a08936e2295dc55638a69243a681512294c2b26a1557e6`  
-		Last Modified: Wed, 21 Oct 2026 22:53:09 GMT  
-		Size: 22.3 KB (22261 bytes)  
+	-	`sha256:3221d268b48633bdacc5a012852475804eec7786adb61a5da58eb76020e5b2ee`  
+		Last Modified: Mon, 26 Oct 2026 23:46:26 GMT  
+		Size: 22.3 KB (22311 bytes)  
 		MIME: application/vnd.in-toto+json
