@@ -1,7 +1,7 @@
 ## `debian:trixie-backports`
 
 ```console
-$ docker pull debian@sha256:4fe500e941592237ad244701ac236e3cf42b50f08941f9c9422b0663b293dee1
+$ docker pull debian@sha256:60906396dcb097a5adf443e327f5e87d237a812dfb10e8943fee6f671a7f2995
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -238,53 +238,53 @@ $ docker pull debian@sha256:723b1a91cb15b24abbdff5ef9b8a6057c652191cacedc2e312d9
 ### `debian:trixie-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:36c442d77eb179a587f336206152ef802d8c5e4897e0a403e112aec7cc0ac9c9
+$ docker pull debian@sha256:97ec6de8ee6cd7f65662d03da719bf7b4dc14fdd1b1788db14fb3d62ee45f294
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.9 MB (50906769 bytes)**  
+-	Total Size: **50.9 MB (50921790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa1cf4badf81e805fd04d0dd94deade4695589f9ffc541e361022bbd4e58826f`
+-	Image ID: `sha256:07519ded677cd9d101fa9f7275ffa9bd463ede2c297f4063b253cb1109d3532a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'i386' out/ 'trixie' '@1792531975'
-# Wed, 21 Oct 2026 00:15:19 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'trixie' '@1793059200'
+# Wed, 28 Oct 2026 01:14:02 GMT
 RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:32b56ddaffdf524e89e42fd33cbc0e53bfe71b517148f5e7cb00252a55c2fc0c`  
-		Last Modified: Tue, 20 Oct 2026 23:30:52 GMT  
-		Size: 50.9 MB (50906545 bytes)  
+	-	`sha256:685483d080bb85d9422359e87391511d4083eee621a4085004f9ddd70e2a5f5a`  
+		Last Modified: Wed, 28 Oct 2026 00:10:56 GMT  
+		Size: 50.9 MB (50921567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d610b9338e98b567bfe59146f70a45f37f2ad10e2295b816c329269d4deca294`  
-		Last Modified: Wed, 21 Oct 2026 00:15:25 GMT  
-		Size: 224.0 B  
+	-	`sha256:6e133d7c59f84dcedc4d3049a8444176487057de1da58ae75597065fb94a1e92`  
+		Last Modified: Wed, 28 Oct 2026 01:14:08 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:trixie-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:d4afad505169d5518e383a388cc0cb9dc9119f755bfba1668d70822546eb12c8
+$ docker pull debian@sha256:c8b1a4330224359b5fd2dc45cf2d362d6f50b68f748cccefee9e8cfa632e3457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3183846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a23b081f7e4eb5d228687bd1c44df219279665470923d5c48e718f58dc536831`
+-	Image ID: `sha256:ff0fdd7de10f298f72ddb926d3baccebd62c9a21031c7329bc33fe2820e67cbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1e52e262af433919d894a74f6027edab24d9382bde176cac9c85dd37562e1fa`  
-		Last Modified: Wed, 21 Oct 2026 00:15:25 GMT  
+	-	`sha256:ea75e9fa9d7359f911f8d1ec68ee5d9db8b8d058d4df17b10ca9d5730ce297c3`  
+		Last Modified: Wed, 28 Oct 2026 01:14:09 GMT  
 		Size: 3.2 MB (3178079 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5ffe9804113abddd0658b0d32685147e3847c3fed26f6fa14021f67760e5610`  
-		Last Modified: Wed, 21 Oct 2026 00:15:25 GMT  
+	-	`sha256:d5059f63bc71b07046ba2173c3bd3d6a0130e3dc523e88aecc1e32c05df2075c`  
+		Last Modified: Wed, 28 Oct 2026 01:14:08 GMT  
 		Size: 5.8 KB (5767 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -397,52 +397,52 @@ $ docker pull debian@sha256:e8ef10a5fbd5cfac517f8fb5134db51181d6d20555d43b00cf8e
 ### `debian:trixie-backports` - linux; s390x
 
 ```console
-$ docker pull debian@sha256:d101aa1930f55210c265281e3d100a4fc89a9ab8b2a5637e5d416cbcf46ed5a0
+$ docker pull debian@sha256:baacc2a0028f691a37b070bfb022214609a9349a44a1f066afebf84f168cb72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49460366 bytes)**  
+-	Total Size: **49.5 MB (49476056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecdc05959d7512bdfee4628acdd9aab3730c476e05059b8e8161349fb62380aa`
+-	Image ID: `sha256:b91db04cc0826d5bca5bdfbdeec68566eec3621adc2708762ea679424ba8d6d0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 's390x' out/ 'trixie' '@1792531975'
-# Wed, 21 Oct 2026 00:14:20 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'trixie' '@1793059200'
+# Wed, 28 Oct 2026 01:12:42 GMT
 RUN echo 'deb http://deb.debian.org/debian trixie-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:704f7e15662a961f845613a96026b2730c44eeb4278aaecb894b38a2faf73324`  
-		Last Modified: Tue, 20 Oct 2026 23:30:16 GMT  
-		Size: 49.5 MB (49460141 bytes)  
+	-	`sha256:2250e610e1393c26b6c89de550932ab3d31129c6532b4cf00f5c62c0d6bda7d2`  
+		Last Modified: Wed, 28 Oct 2026 00:10:37 GMT  
+		Size: 49.5 MB (49475831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9343a7b473caabd58eebd4c2d67be8c77677605788216aea3092e4d794905f7c`  
-		Last Modified: Wed, 21 Oct 2026 00:14:28 GMT  
+	-	`sha256:63adc8468013fe2843de304b7144871bb860b951f5e415ea632998af79220d97`  
+		Last Modified: Wed, 28 Oct 2026 01:12:52 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:trixie-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:ab4f2cb8893febb105c59b64e57ef4fdb63f6d44e07b5cf03ff42eb1607ce749
+$ docker pull debian@sha256:726637740501918d75588353d666de28fd10e3ee7d75c2d363c8f6ee2d2a6d70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.2 MB (3188107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89b78c75ec653a78bf90f407d3a5670278ef89c1dcf7aed51b11f904a698b01d`
+-	Image ID: `sha256:c1775074ce73c979926edafd66d9cb97ddd8f5641f53e39ece1c8a9272f11a4f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:25b7d0b968d7a2e351211dab59bc40060aade037931306896dbe04c53adeb709`  
-		Last Modified: Wed, 21 Oct 2026 00:14:30 GMT  
+	-	`sha256:7c927b4046a1cd5b02131e5d1134d65e587dabe69694405cd09d6e1ebfc331ec`  
+		Last Modified: Wed, 28 Oct 2026 01:12:52 GMT  
 		Size: 3.2 MB (3182323 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8c0405436e6b1afe0a1c6324f01d086a13053dde3a5d84193f1fb81741d99772`  
-		Last Modified: Wed, 21 Oct 2026 00:14:30 GMT  
+	-	`sha256:58e12d7daedbbfee2a8918a88a5d7278dadeda49a829338c70a782530a03674a`  
+		Last Modified: Wed, 28 Oct 2026 01:12:52 GMT  
 		Size: 5.8 KB (5784 bytes)  
 		MIME: application/vnd.in-toto+json
