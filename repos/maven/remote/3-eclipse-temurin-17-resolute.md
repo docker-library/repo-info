@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-17-resolute`
 
 ```console
-$ docker pull maven@sha256:83abe005a318f92c93b340243c953d3ff35479444b64f884aa4e987162e5e2f1
+$ docker pull maven@sha256:b67db904974d04b9e6eba5b073ae227569ee1cae0d1f26be8993525291ef76dc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -482,155 +482,155 @@ $ docker pull maven@sha256:5d7b12d4e635f1e808e7e4610cbd949b2f5afae605fbd8158550b
 ### `maven:3-eclipse-temurin-17-resolute` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:aae5b1dcbf3726a694bd5364278d23f87159e503a32ced15b1ccb2ce0caa3d25
+$ docker pull maven@sha256:052b8847b09a2f2de5bb4c6e381dbdb8f18e564f59c43fb74f94554e4616b2d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.5 MB (257544064 bytes)**  
+-	Total Size: **257.6 MB (257566397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18904d2f12d5bf615edb7a9edc15b100e403c760b5c7e255eb604b8d7e41e5bb`
+-	Image ID: `sha256:2567bbfc7b2787a6bc34423b7c08a8aaf17bac2d229e90b940929c90a5e4a000`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.9489.tar --tag 26.04
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-06T20:40:52.926628+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:31:15 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.9530.tar --tag 26.04
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-10-25T10:31:16.245172+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-06T20:40:52.926628+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-10-25T10:31:16.245172+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 06 Oct 2026 20:40:52 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-f769691888dfc504c4977dc89c90edab/images/.temp_layer.control_data.9489.tar
-# Sat, 17 Oct 2026 00:27:02 GMT
+# Sun, 25 Oct 2026 10:31:16 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9530.tar
+# Tue, 27 Oct 2026 23:02:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 17 Oct 2026 00:27:02 GMT
+# Tue, 27 Oct 2026 23:02:27 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 17 Oct 2026 00:27:02 GMT
+# Tue, 27 Oct 2026 23:02:27 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 17 Oct 2026 00:27:02 GMT
+# Tue, 27 Oct 2026 23:02:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 00:27:02 GMT
+# Tue, 27 Oct 2026 23:02:27 GMT
 ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Sat, 17 Oct 2026 00:27:11 GMT
+# Tue, 27 Oct 2026 23:02:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 17 Oct 2026 00:27:15 GMT
+# Tue, 27 Oct 2026 23:02:51 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 17 Oct 2026 00:27:21 GMT
+# Tue, 27 Oct 2026 23:02:53 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 00:27:21 GMT
+# Tue, 27 Oct 2026 23:02:53 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 17 Oct 2026 00:27:21 GMT
+# Tue, 27 Oct 2026 23:02:53 GMT
 CMD ["jshell"]
-# Sat, 17 Oct 2026 08:44:42 GMT
+# Wed, 28 Oct 2026 00:11:04 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:06 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 17 Oct 2026 08:44:43 GMT
+# Wed, 28 Oct 2026 00:11:08 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 17 Oct 2026 08:44:44 GMT
+# Wed, 28 Oct 2026 00:11:09 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 17 Oct 2026 08:44:44 GMT
+# Wed, 28 Oct 2026 00:11:09 GMT
 ARG USER_HOME_DIR=/root
-# Sat, 17 Oct 2026 08:44:44 GMT
+# Wed, 28 Oct 2026 00:11:09 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Sat, 17 Oct 2026 08:44:44 GMT
+# Wed, 28 Oct 2026 00:11:09 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 17 Oct 2026 08:44:44 GMT
+# Wed, 28 Oct 2026 00:11:09 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:a262d7f3fc44532425408a05158e95511d4ebe3af8c0a1de354e7157bb27d6f0`  
-		Last Modified: Wed, 07 Oct 2026 20:45:34 GMT  
-		Size: 47.2 MB (47226803 bytes)  
+	-	`sha256:fa5f3e46d40acb674f2050b4ef04d91176107f76bc62fc95217c24448496d480`  
+		Last Modified: Sun, 25 Oct 2026 13:21:35 GMT  
+		Size: 47.3 MB (47256130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15f84129b3088bcac32100330a0fc3d834e81f5cfe23a85ce237f2a63cc920d6`  
-		Last Modified: Wed, 07 Oct 2026 20:45:37 GMT  
+	-	`sha256:94b0e1d91beb685cdc6eb1e3e71f0500733add62480a64f8686f1a915ddff88c`  
+		Last Modified: Sun, 25 Oct 2026 13:21:38 GMT  
 		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1403982d682947bbed4d3442f20398098a09ae2eb87e7be8cbd1f32657486c`  
-		Last Modified: Sat, 17 Oct 2026 00:28:32 GMT  
-		Size: 25.1 MB (25128634 bytes)  
+	-	`sha256:7c00412cda22bf53fe5c3fa50ae99c931e627eb96dbdf30ad3a85cf9e3f27098`  
+		Last Modified: Tue, 27 Oct 2026 23:03:49 GMT  
+		Size: 25.1 MB (25126445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c641662784758475066bd40ae3cd34c85519e3ad50f6d4d7c1126f384941ae72`  
-		Last Modified: Sat, 17 Oct 2026 00:28:35 GMT  
-		Size: 145.7 MB (145683099 bytes)  
+	-	`sha256:3e9c93eda9221589782b552983603f1698072f7f66ce948625423a23a905c66d`  
+		Last Modified: Tue, 27 Oct 2026 23:03:52 GMT  
+		Size: 145.7 MB (145683050 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33772761bba570384d8e6313f3f010fdf6953227fd2c64958c84c20e59a2b138`  
-		Last Modified: Sat, 17 Oct 2026 00:28:31 GMT  
+	-	`sha256:a583e8d529613e15475813c9a0fc2373c4209ff9ee72893d9773574028c89d99`  
+		Last Modified: Tue, 27 Oct 2026 23:03:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1684403248a4a41d7d84f518385311d882e0be74486d25a2002a8481365fbc6d`  
-		Last Modified: Sat, 17 Oct 2026 00:28:31 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:3a437c40cc9eea7918226b417f707256a44bcdcc6b0566e005106e876852e4b9`  
+		Last Modified: Tue, 27 Oct 2026 23:03:48 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2334e893858948b16fbf788fd7b06fd7fdf574754eb2045e3f3bc7151e72c67`  
-		Last Modified: Sat, 17 Oct 2026 08:45:45 GMT  
-		Size: 29.4 MB (29442496 bytes)  
+	-	`sha256:98d0e3c8208ba8393ddb3dab74ae0801da7f67245ae45d155cfbe8fb6cafb99c`  
+		Last Modified: Wed, 28 Oct 2026 00:11:58 GMT  
+		Size: 29.4 MB (29437736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7457e8a88ce2412000ea37297874a2c71ff67ff0217dc358aeceda02b589ecf5`  
-		Last Modified: Sat, 17 Oct 2026 08:45:44 GMT  
-		Size: 10.1 MB (10059008 bytes)  
+	-	`sha256:640129f58c2b7f489c5b7d4b8d92e95d186d8a0111da1f723d237d2b54450194`  
+		Last Modified: Wed, 28 Oct 2026 00:11:58 GMT  
+		Size: 10.1 MB (10059011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4b466a87bbef62d43e24caff4a612414a267ab506ca304003924679fd32516`  
-		Last Modified: Sat, 17 Oct 2026 08:45:44 GMT  
-		Size: 855.0 B  
+	-	`sha256:6b2c9dead358ba64925ce7bd300a2d71de6c3872d3f513754f07701915771550`  
+		Last Modified: Wed, 28 Oct 2026 00:11:57 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5f9c0d2484e366f9e0c8e997edfd74a8928cde3164752c77ee5a01aa6aa445f`  
-		Last Modified: Sat, 17 Oct 2026 08:45:44 GMT  
-		Size: 154.0 B  
+	-	`sha256:718bdaa1c1c6766311240f9dea9f38686f257eb8cadbf233849ddc3e1bd24740`  
+		Last Modified: Wed, 28 Oct 2026 00:11:57 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-eclipse-temurin-17-resolute` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:c5d0a98e9660e4a0c42a798c1e65876fed78583c74a8542e73f208f36efc6a95
+$ docker pull maven@sha256:74022f82928a94683b8ca475111b16cae05278fc7b6bcb43d87a8b9cf84cc4b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.1 MB (7125581 bytes)**  
+-	Total Size: **7.1 MB (7124994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bbb9c35f70fe7874bbe5435dc655a3bcb7c2ce25223ee7d1782eee01a6a9a2b5`
+-	Image ID: `sha256:378145a5fc2b2be8e81fbc38adf9168928bc41c35e541306ac64fb01bf4025c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bfc9c915b69be1d0b95f2702649390463b3e15cc8ee7da591b437fc7412160e`  
-		Last Modified: Sat, 17 Oct 2026 08:45:44 GMT  
-		Size: 7.1 MB (7106301 bytes)  
+	-	`sha256:b576ebb454a9fbaad2232f2440e430118c620ca0056e7f95d6902c8e25118526`  
+		Last Modified: Wed, 28 Oct 2026 00:11:58 GMT  
+		Size: 7.1 MB (7105713 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f3d9e571632e5a7ea2859f17386a934fc0def76c2df7447a0dc897dbc086894d`  
-		Last Modified: Sat, 17 Oct 2026 08:45:44 GMT  
-		Size: 19.3 KB (19280 bytes)  
+	-	`sha256:c5660c03cd90cf88754ee6a5f6a0eabb71338c7ed4294f86e57d14b9096a1351`  
+		Last Modified: Wed, 28 Oct 2026 00:11:57 GMT  
+		Size: 19.3 KB (19281 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-eclipse-temurin-17-resolute` - linux; s390x
