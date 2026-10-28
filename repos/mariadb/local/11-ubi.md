@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3381180764587cb206f058a2a0b2f3ade81611d84095fe854141ddade6c5d6ac`
-- Created: `2026-10-23T16:51:57.814064965Z`
+- Image ID: `sha256:220f560bd18b1eacaa662568aca1a08f09298cfb40041f206594ea738c1e51b3`
+- Created: `2026-10-27T17:45:06.693421805Z`
 - Virtual Size: ~ 517.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.8.9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-23T07:55:29Z`
+  - `build-date=2026-10-26T21:33:49Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
+  - `org.opencontainers.image.created=2026-10-26T21:33:49Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `org.opencontainers.image.revision=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `vcs-ref=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.8.9`
@@ -321,7 +321,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-11.el9.noarch
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/e/epel-release-9-11.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.7.x86_64`
@@ -503,7 +503,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +593,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -644,12 +644,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -1176,7 +1171,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.8.0-4.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2265,7 +2260,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2276,7 +2271,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirror.cs.princeton.edu/pub/mirrors/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2499,26 +2494,26 @@ $ dnf --quiet download --source --url util-linux-core-2.37.4-25.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-25.el9.src.rpm
 ```
 
-### `rpm` package: `xz-5.2.5-8.el9_0.x86_64`
+### `rpm` package: `xz-5.2.5-8.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+$ dnf --quiet download --source --url xz-5.2.5-8.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
+### `rpm` package: `xz-libs-5.2.5-8.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`

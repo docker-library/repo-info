@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e667183d5236dbbecf88167a0f1f49dc0c116aa46990309e920e663e2fdc348`
-- Created: `2026-10-17T00:32:20.176719089Z`
-- Virtual Size: ~ 326.68 Mb  
+- Image ID: `sha256:72b6ab51626b71b6118295b90c9408e537ff1cfdaa0b35c9930e8c2ee49a47bf`
+- Created: `2026-10-26T23:25:18.645832857Z`
+- Virtual Size: ~ 326.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -210,11 +210,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5ubuntu0.1.dsc' bzip2_1.0.8-5ubuntu0.1.dsc 1691 SHA512:003ad214b6fcded91fab760be534599980a4988c01fdbc1eda2bb5feda3ef9632dfe2db31c7ed32b7cd653be89753b9f8fd91e4164a27cabf57330808ded163f
 ```
 
-### `dpkg` source package: `ca-certificates=20260601~22.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20260601~22.04.1`
+- `ca-certificates=20260816ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -222,9 +222,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.1.tar.xz' ca-certificates_20260816ubuntu0.22.04.1.tar.xz 273212 SHA512:1f2ee44447e8661c766ffceee74d5e5b5e823fab03033c5d441a060a49a899f51019fb1742d41838e995202893e5b2aecaf682c36bbb0dd2fb4b9c4dfa127588
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.1.dsc' ca-certificates_20260816ubuntu0.22.04.1.dsc 1878 SHA512:c09aa8b888f8636202cfd12baa3b1c9dd60297e2a73884f4a3656bce1ab2759aa5d2ecaba7f8ee09d1ad74441f1e91f1164274d8359daa3f747100da085f25f5
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -2080,12 +2084,12 @@ $ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.8
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.8.dsc' sqlite3_3.37.2-2ubuntu0.8.dsc 2602 SHA512:be450c4bf666ef7b8bf7535ae20925fd4743c15aec11b89c0cfc711c4db11a9436191a9e5e154267c856fda9768d0a80294cff159c092d0216ce2e96ed308b0b
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.22`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.23`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.22`
-- `libudev1:amd64=249.11-0ubuntu3.22`
+- `libsystemd0:amd64=249.11-0ubuntu3.23`
+- `libudev1:amd64=249.11-0ubuntu3.23`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2098,9 +2102,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.23
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.debian.tar.xz' systemd_249.11-0ubuntu3.23.debian.tar.xz 276508 SHA512:981460478a62152cbc7187ff99f6c06c3d5d1354ed0c887742cee496588e2e6fa355d05fb86f93bb6848d6a3ba059b0c70a5ea3adc9f035bba6f218041e744d7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.23.dsc' systemd_249.11-0ubuntu3.23.dsc 5907 SHA512:b9442d3df8bb9e6356089afbba22f2b66e311e234e824bd29c5332336dc30c6cbfaefbb1de22bdbbf45d70134ebbb90338823ede15706796654ddba3b5325342
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2279,12 +2288,12 @@ $ apt-get source -qq --print-uris xxhash=0.8.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.1-1.debian.tar.xz' xxhash_0.8.1-1.debian.tar.xz 4572 SHA512:e59d4fc6f736d3af6f7be3ec64fc1ee4382e917a942e4000159652082e2f73f52ae0f72adb98505ac9bd8894a89800e21c0913ba4b511959f07a2bc84c341920
 ```
 
-### `dpkg` source package: `xz-utils=5.2.5-2ubuntu1.1`
+### `dpkg` source package: `xz-utils=5.2.5-2ubuntu1.2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.2.5-2ubuntu1.1`
-- `xz-utils=5.2.5-2ubuntu1.1`
+- `liblzma5:amd64=5.2.5-2ubuntu1.2`
+- `xz-utils=5.2.5-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
@@ -2304,9 +2313,15 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 - `permissive-nowarranty`
 - `probably-PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris xz-utils=5.2.5-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz' xz-utils_5.2.5.orig.tar.xz 1148824 SHA512:59266068a51cb616eb31b67cd8f07ffeb2288d1391c61665ae2ec6814465afac80fec69248f6a2f2db45b44475af001296a99af6a32287226a9c41419173ccbb
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz.asc' xz-utils_5.2.5.orig.tar.xz.asc 833 SHA512:582864ae306861ede34074ebfd23ab161ad3340ab4a068f727583de2bd2058da70dfe73019f4e70b8267e0e0c62f275da1e23f47d40c0b80038449b0ac335020
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.2.debian.tar.xz' xz-utils_5.2.5-2ubuntu1.2.debian.tar.xz 38160 SHA512:e273fd0f05702cb18205ea0731c553bd005527c0bf57906654dc4d1c5ad65d2e00e78f60c6ed40cfed8ad5972f7d6c33a2eda69417b232a4462a950ae0d809e6
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.5-2ubuntu1.2.dsc' xz-utils_5.2.5-2ubuntu1.2.dsc 2646 SHA512:ccb79581a960f08a4f63bc0370fb60ab9b3ece05a648f44d9a0f6fbcd2031e7ea0113e93fd5764f3d08067980473932f386e208f4a12d90352e991a63fc60a27
+```
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu9.2`
 
