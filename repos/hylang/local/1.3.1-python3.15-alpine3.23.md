@@ -2,16 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce68fda0245524cd23902b1ce89ea6e6e2740b3d0d46b00ecf7bf1acb2774c56`
-- Created: `2026-10-21T23:04:50.481669492Z`
-- Virtual Size: ~ 65.91 Mb  
+- Image ID: `sha256:8b498267d78c558526f56824819b44c2edf716c9e1d557caa58ee628bb92013b`
+- Created: `2026-10-26T23:47:32.707498473Z`
+- Virtual Size: ~ 65.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.15.1`
-  - `PYTHON_SHA256=673ae7232d84c894729882c8257d300ef2d26523911bfd3917ec8ce7f526f99b`
+  - `LANG=C.UTF-8`
+  - `PYTHON_VERSION=3.15.2`
+  - `PYTHON_SHA256=8b5536d280142ecf6cdfe15d12a21ba1c65e300bbf7b28a8d0cdb849575797de`
   - `HY_VERSION=1.3.1`
   - `HYRULE_VERSION=1.1.0`
 
