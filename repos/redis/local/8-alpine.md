@@ -1,17 +1,17 @@
-# `redis:8.10.2-alpine`
+# `redis:8.10.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6cfed4c686145bcd5807ef3ac1d2bf3384503cb3da30b0d308b4f25eb50dc373`
-- Created: `2026-10-21T21:22:18.977797396Z`
-- Virtual Size: ~ 118.85 Mb  
+- Image ID: `sha256:9722accf3e8eeaeb7cd74a86256d6a41b83deb44d508c2988c8e5776bfdb7694`
+- Created: `2026-10-26T16:42:40.352300269Z`
+- Virtual Size: ~ 119.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=8.10.2`
+  - `REDIS_VERSION=8.10.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -369,5 +369,22 @@ zlib-1.3.2-r1 installed size:
 
 zlib-1.3.2-r1 license:
 Zlib
+
+```
+
+### `apk` package: `zstd-libs`
+
+```console
+zstd-libs-1.5.7-r2 description:
+Zstandard - Fast real-time compression algorithm (libraries)
+
+zstd-libs-1.5.7-r2 webpage:
+https://facebook.github.io/zstd/
+
+zstd-libs-1.5.7-r2 installed size:
+693 KiB
+
+zstd-libs-1.5.7-r2 license:
+BSD-3-Clause OR GPL-2.0-or-later
 
 ```
