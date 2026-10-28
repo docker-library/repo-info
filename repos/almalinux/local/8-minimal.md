@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:98914f30771ddde5201257b74728353f0c6596320f037f2f54d365f1c059e9cd`
-- Created: `2026-10-02T18:17:39.746809488Z`
-- Virtual Size: ~ 93.55 Mb  
+- Image ID: `sha256:f8e4727969e49aefe470721dbdf3a853f48dfc11f483488bbc0896a541e93d58`
+- Created: `2026-10-27T17:20:46.642315644Z`
+- Virtual Size: ~ 93.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -57,15 +57,15 @@ $ dnf --quiet download --source --url bash-4.4.20-6.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/bash-4.4.20-6.el8_10.src.rpm
 ```
 
-### `rpm` package: `brotli-1.0.6-4.el8_10.x86_64`
+### `rpm` package: `brotli-1.0.6-5.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url brotli-1.0.6-4.el8_10
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/brotli-1.0.6-4.el8_10.src.rpm
+$ dnf --quiet download --source --url brotli-1.0.6-5.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/brotli-1.0.6-5.el8_10.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.6-28.el8_10.x86_64`
@@ -79,15 +79,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-28.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/bzip2-1.0.6-28.el8_10.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-81.3.el8_10.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.noarch
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/ca-certificates-2025.2.80_v9.0.304-80.2.el8_10.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-81.3.el8_10.noarch
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/ca-certificates-2026.2.92_v9.0.319-81.3.el8_10.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.19.2-1.el8.x86_64`
@@ -200,37 +200,37 @@ $ dnf --quiet download --source --url glib2-2.56.4-178.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-178.el8_10.src.rpm
 ```
 
-### `rpm` package: `glibc-2.28-251.el8_10.40.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.48.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.28-251.el8_10.40
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.40.src.rpm
+$ dnf --quiet download --source --url glibc-2.28-251.el8_10.48
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.48.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.28-251.el8_10.40.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.48.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.40
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.40.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.48
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.48.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.40.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.48.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.40
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.40.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.48
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.48.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.1.2-11.el8.x86_64`
@@ -509,15 +509,15 @@ $ dnf --quiet download --source --url libffi-3.1-24.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libffi-3.1-24.el8.src.rpm
 ```
 
-### `rpm` package: `libgcc-8.5.0-29.el8_10.alma.1.x86_64`
+### `rpm` package: `libgcc-8.5.0-30.el8_10.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgcc-8.5.0-29.el8_10.alma.1
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-29.el8_10.alma.1.src.rpm
+$ dnf --quiet download --source --url libgcc-8.5.0-30.el8_10.alma.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-30.el8_10.alma.1.src.rpm
 ```
 
 ### `rpm` package: `libgcrypt-1.8.5-8.el8_10.x86_64`
@@ -707,15 +707,15 @@ $ dnf --quiet download --source --url libssh-config-0.9.6-17.el8_10.noarch
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libssh-0.9.6-17.el8_10.src.rpm
 ```
 
-### `rpm` package: `libstdc++-8.5.0-29.el8_10.alma.1.x86_64`
+### `rpm` package: `libstdc++-8.5.0-30.el8_10.alma.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libstdc++-8.5.0-29.el8_10.alma.1
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-29.el8_10.alma.1.src.rpm
+$ dnf --quiet download --source --url libstdc++-8.5.0-30.el8_10.alma.1
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-30.el8_10.alma.1.src.rpm
 ```
 
 ### `rpm` package: `libtasn1-4.13-6.el8_10.x86_64`
@@ -784,15 +784,15 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-21.el8_10.9.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.9
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.9.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.10.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
@@ -916,15 +916,15 @@ $ dnf --quiet download --source --url openldap-2.4.46-21.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/openldap-2.4.46-21.el8_10.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.1.1k-17.el8_6.x86_64`
+### `rpm` package: `openssl-libs-1.1.1k-18.el8_6.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.1.1k-17.el8_6
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/openssl-1.1.1k-17.el8_6.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.1.1k-18.el8_6
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/openssl-1.1.1k-18.el8_6.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-2.el8.x86_64`
@@ -960,15 +960,15 @@ $ dnf --quiet download --source --url pcre-8.42-6.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/pcre-8.42-6.el8.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.32-3.el8_6.x86_64`
+### `rpm` package: `pcre2-10.32-4.el8_10.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pcre2-10.32-3.el8_6
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/pcre2-10.32-3.el8_6.src.rpm
+$ dnf --quiet download --source --url pcre2-10.32-4.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/pcre2-10.32-4.el8_10.src.rpm
 ```
 
 ### `rpm` package: `popt-1.18-1.el8.x86_64`
@@ -1081,15 +1081,15 @@ $ dnf --quiet download --source --url systemd-libs-239-82.el8_10.19
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.19.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026c-1.el8_10.noarch`
+### `rpm` package: `tzdata-2026e-1.el8_10.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2026c-1.el8_10.noarch
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/tzdata-2026c-1.el8_10.src.rpm
+$ dnf --quiet download --source --url tzdata-2026e-1.el8_10.noarch
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/tzdata-2026e-1.el8_10.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.4-4.el8_6.x86_64`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:006f64c08e64f0432875b41f67a9a0c52b59b2ab357b76899609a7fb01354a7b`
-- Created: `2026-10-02T18:16:31.4156276Z`
-- Virtual Size: ~ 74.16 Mb  
+- Image ID: `sha256:4c9e54909f036f1501ffcee14ff58d8e239acc4b6d7b34dcb1acdc340158a067`
+- Created: `2026-10-27T17:18:41.424887977Z`
+- Virtual Size: ~ 74.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -81,7 +81,7 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-25.el10
 http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/bzip2-1.0.8-25.el10.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
@@ -231,7 +231,7 @@ Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.7.3-1.el10_2.5.x86_64`
+### `rpm` package: `expat-2.7.3-1.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -450,7 +450,7 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libbrotli-1.1.0-8.el10_2.x86_64`
+### `rpm` package: `libbrotli-1.1.0-8.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -911,19 +911,19 @@ $ dnf --quiet download --source --url openldap-2.6.10-1.el10
 http://vault.almalinux.org/10-kitten/BaseOS/Source/Packages/openldap-2.6.10-1.el10.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-server-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-server-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
