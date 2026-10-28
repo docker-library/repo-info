@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2351def554fe157bac931f945860d4499255fd3b7a2c55c7220cee79902647bd`
-- Created: `2026-10-23T20:01:07.162442437Z`
-- Virtual Size: ~ 398 Mb  
+- Image ID: `sha256:ab485325e3313aa36c415c4597b2c12dfd7496153756ff2a383b1a5e7c28e9ab`
+- Created: `2026-10-27T17:27:31.22890406Z`
+- Virtual Size: ~ 398.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -88,15 +88,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.8-25.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/bzip2-1.0.8-25.el10.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch`
+### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-102.el10_1.noarch
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/ca-certificates-2025.2.80_v9.0.305-102.el10_1.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
@@ -273,15 +273,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.194-2.el10_2
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/elfutils-0.194-2.el10_2.src.rpm
 ```
 
-### `rpm` package: `expat-2.7.3-1.el10_2.5.x86_64`
+### `rpm` package: `expat-2.7.3-1.el10_2.7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.5
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/expat-2.7.3-1.el10_2.5.src.rpm
+$ dnf --quiet download --source --url expat-2.7.3-1.el10_2.7
+http://vault.almalinux.org/10.2/BaseOS/Source/Packages/expat-2.7.3-1.el10_2.7.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.45-9.el10.x86_64`
@@ -542,16 +542,11 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libbrotli-1.1.0-8.el10_2.x86_64`
+### `rpm` package: `libbrotli-1.1.0-8.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libbrotli-1.1.0-8.el10_2
-http://vault.almalinux.org/10.2/BaseOS/Source/Packages/brotli-1.1.0-8.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-2.69-7.el10_2.1.x86_64`
 
@@ -1058,19 +1053,19 @@ $ dnf --quiet download --source --url openldap-2.6.10-1.el10
 http://vault.almalinux.org/10.2/BaseOS/Source/Packages/openldap-2.6.10-1.el10.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-clients-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssh-server-9.9p1-28.0.1.el10_2.x86_64`
+### `rpm` package: `openssh-server-9.9p1-29.0.1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC AND SSH-OpenSSH AND ssh-keyscan AND sprintf AND LicenseRef-Fedora-Public-Domain AND X11-distribute-modifications-variant
 
