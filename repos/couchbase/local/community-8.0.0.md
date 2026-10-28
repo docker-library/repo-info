@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2482db67af080c27da61ce83e8cf947a8c31c056d6447a0ebe785a31e4c2984d`
-- Created: `2026-10-17T00:14:32.582090042Z`
+- Image ID: `sha256:90cada56945182358aa707c5f1a79827e7cd0c4eee814dd45141684a1605e063`
+- Created: `2026-10-26T23:06:18.505133881Z`
 - Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -256,11 +256,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.dsc' bzip2_1.0.8-5.1ubuntu0.1.dsc 1699 SHA512:57315fd236033f29de1487130d86e61d373bbc33ea51d431b782bd0f5113b9ccf62f235fd284c13ba371d28954ed3edceea77ceb7c813931e817049ad25c5a34
 ```
 
-### `dpkg` source package: `ca-certificates=20260601~24.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20260601~24.04.1`
+- `ca-certificates=20260816ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -268,9 +268,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.tar.xz' ca-certificates_20260816ubuntu0.24.04.1.tar.xz 273380 SHA512:c0db71f2f5d0fa53eb7844647e711592d3b15a3e38f7f1648d2faefb58dbbfb16094e18af45686b066ab449cc064e1b53989f494ac58756888079c92be30d3ee
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.dsc' ca-certificates_20260816ubuntu0.24.04.1.dsc 1876 SHA512:905a4840f0be6e46fcf353932a74eabe004d8ee21c5cbd44ac879dba550912d07a12e8d2e18174d5fb4c290d0c086ea2dfb679eb801354e6d43412d461d65d7b
+```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
@@ -692,13 +696,13 @@ $ apt-get source -qq --print-uris gcc-14=14.2.0-4ubuntu2~24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/gcc-14_14.2.0-4ubuntu2%7e24.04.1.dsc' gcc-14_14.2.0-4ubuntu2~24.04.1.dsc 46930 SHA256:50950080874a6ec6780dd60c243e21d9cda9d736bb32bca98d16095d27cc01b5
 ```
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.9`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.10`
 
 Binary Packages:
 
-- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.9`
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.9`
-- `libglib2.0-data=2.80.0-6ubuntu3.9`
+- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.10`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.10`
+- `libglib2.0-data=2.80.0-6ubuntu3.10`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/doc/libglib2.0-0t64/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -731,11 +735,11 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.9
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.9.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.9.debian.tar.xz 178288 SHA512:389a34b5989fbfaac5fe6c25ab0d62aee81e0f925cca2df9d8aeb5ab61a46235def6b5d02870937d118015b61d332d6cf6c7490f24c7a78e089b8ddbdcfd98a5
-'http://security.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.9.dsc' glib2.0_2.80.0-6ubuntu3.9.dsc 4542 SHA512:a95f9d3d361a2321512877816906b340b02d106f51cc9faf3657485af1d9ed5a869a52ed9a45694fb64179c899335c6f430188adfd415dd2bf4235ce0671e288
+$ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig-unicode-data.tar.xz' glib2.0_2.80.0.orig-unicode-data.tar.xz 263364 SHA512:1d1c00d7416d90aac86d851fc2df94f2a97cb100a3b99f2ac28a0660deea64b994f56bbc7c05b6c7ef3b6c3a2cb18267ebc5d189abf58bd922321b509c86e2b6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0.orig.tar.xz' glib2.0_2.80.0.orig.tar.xz 5510536 SHA512:1514d62aeb4c4a1a1048ae0f84f7db7f0dbf355772b2dadf6a34ec547045b163a5e28331b096e7616fe3c9c19bed98025a0202b05073f5d7ee901d0efaffe143
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.10.debian.tar.xz' glib2.0_2.80.0-6ubuntu3.10.debian.tar.xz 178808 SHA512:c75e75f0bbb451356288abc09d9bd2d6a822938035c3e4324178e6d3bd1942e7100c85c09b1c81a84695d7624b56c33749f66cfe95e9e795e889d0316ba3b2a2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.10.dsc' glib2.0_2.80.0-6ubuntu3.10.dsc 4080 SHA512:95e6a37b24d48bc66070a8d8b29be544677ef43593ac8ca92dc8a77f1faa9d4fc6be957d7af1a8c15b381157290a441ccff7ccaabed217d0033985e2511c5922
 ```
 
 ### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
@@ -2581,12 +2585,12 @@ $ apt-get source -qq --print-uris xxhash=0.8.2-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.2-2build1.debian.tar.xz' xxhash_0.8.2-2build1.debian.tar.xz 5048 SHA512:c789fd0a22fd40db8983c0f69054141647ebaab94251598723ce1fdf894d0ed2d48c2d5a7f0df7d61e2d874485286e5742a546748d17cc22d5227ad61f6b4ef2
 ```
 
-### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1ubuntu0.3`
+### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1ubuntu0.4`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.6.1+really5.4.5-1ubuntu0.3`
-- `xz-utils=5.6.1+really5.4.5-1ubuntu0.3`
+- `liblzma5:amd64=5.6.1+really5.4.5-1ubuntu0.4`
+- `xz-utils=5.6.1+really5.4.5-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
@@ -2606,20 +2610,30 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 - `permissive-nowarranty`
 - `probably-PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA512:5cbc3b5bb35a9f5773ad657788fe77013471e3b621c5a8149deb7389d48535926e5bed103456fcfe5ecb044b236b1055b03938a6cc877cfc749372b899fc79e5
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.4.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.4.debian.tar.xz 33844 SHA512:103e129a77cab76e73d0551a867dfc6a266e142b6fe38b299040e403054c1089772a24ba4c72b0bee44ea7f642de880e30985aecce17e451f29ff7cac98c8629
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.4.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.4.dsc 2684 SHA512:4bf1dd4b0f2abc036d94b6582633389a5a30b1e4a33bbcb77403e22772f3fad671101c8301bbe5332c7ced2c5d11a4360c2a45799b8a2bcaf3ade637e2e79634
+```
 
-### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.2`
+### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.3`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2.2`
+- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg-3.1ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg.orig.tar.xz' zlib_1.3.dfsg.orig.tar.xz 1128572 SHA512:be6f020c691c61fe4ddcb27d3f8b2515435f544177e0b97286b5e85afc3862c1de6cd74a14ff6b065d620d046d35bf029fabfd1cf473f43a2cad60bf9ad55afe
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.3.debian.tar.xz' zlib_1.3.dfsg-3.1ubuntu2.3.debian.tar.xz 61772 SHA512:e2f59ee14cd0101db4738219eeaad2acad56c76619a4fcba8a94be675e53d16357120491bfafc90ee4efd76a0c702f7acbbd2393dffffea8019b58976a84ce52
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg-3.1ubuntu2.3.dsc' zlib_1.3.dfsg-3.1ubuntu2.3.dsc 3162 SHA512:e9f6b7a559554bbfa10951cffdd220e24cf09098c1ab86016c843499a54b513aaff9efb78ded8097fae35b553eb8effbd5e6b643379ce3501283eac70953b3ce
+```
