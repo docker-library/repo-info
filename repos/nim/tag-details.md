@@ -12,7 +12,7 @@
 ## `nim:2`
 
 ```console
-$ docker pull nim@sha256:f4eb9da1d13d84d5d2ceeb0eb8b206fe4e07ebe9afc7eb088b1f22d091463f1b
+$ docker pull nim@sha256:36963dfe958c822f7f5e5d5dc6fc78d0bb9f5ba5729ec2dd57c0cf2595d03b64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -104,76 +104,76 @@ $ docker pull nim@sha256:43c223d4f18d74314c2e898167f592c53a390ccc2da0f5c09f9b324
 ### `nim:2` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:e7093620e0ca6704542e7b34a5146c9552db976a916418c3e9b6925c6cba6fd9
+$ docker pull nim@sha256:d48ebb5241a0b87785556df4a848f9a6d733636e560d090c34224ee3461d29c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.5 MB (144532763 bytes)**  
+-	Total Size: **144.5 MB (144532219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c2ce1f3dfb879870a25016e06ed13239ac0651b21d572ac85cd200785e1ea41`
+-	Image ID: `sha256:465c13e0bcac3afcfe1319362cae0bcd1b6532a2162f191246c61fa0cf9e4bb6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.2.12
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x64.tar.xz'; sha256='7df1611449a6842af69322aa2c1206942982650a5f6bc0d37bc8ec109932f638' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_arm64.tar.xz'; sha256='3dc04191af72a8310cf1c8ffb6f772cc3716fc5f264bc7c453ab4aecb4085221' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x32.tar.xz'; sha256='fabe576a48db63d20d6077b3ee921b2806fcfa108b7aaddf8f230d09f4b54e5d' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_armv7l.tar.xz'; sha256='c4893f5c4b51064ae9a686a4aeb168d0ba1da97f4cbc7032b6c684e51d63e881' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.2.12";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef14d3ba8e52e6feaaf77f14aa88bdbb0e7728333b146bbb0d062badd7f6ea86`  
-		Last Modified: Wed, 21 Oct 2026 00:24:33 GMT  
-		Size: 31.6 MB (31560058 bytes)  
+	-	`sha256:fd228ccef62d4c25c9e934b40d93cfc37a495a077370b8d5f2765b55015c5f19`  
+		Last Modified: Wed, 28 Oct 2026 01:21:24 GMT  
+		Size: 31.6 MB (31560049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a113ffccb35963e8e97c6735b556f4b62bd1443a462a945fb2bb5caa11445452`  
-		Last Modified: Wed, 21 Oct 2026 00:24:31 GMT  
+	-	`sha256:8d5a2a7565b44a7450780aa3bbc4af7fb9e6ab549950d8a3c342444512d81197`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:2` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6a45cd290d3ce1a6f7a7693a83e846a25c519cb4df140654ba544ab1c493b6c4
+$ docker pull nim@sha256:23d3b3026cdf3342058ce9310fbeed5bc7d62b2eb7b5991f81b28dfd9188ec4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14537 bytes)**  
+-	Total Size: **14.5 KB (14535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1eb50de67d4dc69de7c89aaf6a7167af8cf7cdc79aefcdba8da15b264363695`
+-	Image ID: `sha256:c3bad526c343ef5aae0fcaee25778d6b40b86c87f2d48fa227cbaa0a109c0ca9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6226904aa4b7dddf54bf346564c2d6d7b2681d396601cd19cb44dd6715e7cd76`  
-		Last Modified: Wed, 21 Oct 2026 00:24:32 GMT  
-		Size: 14.5 KB (14537 bytes)  
+	-	`sha256:34dafc67790493f02dd3e648af7056cee44aef783dce37e64e95ef26ad1e6977`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
+		Size: 14.5 KB (14535 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nim:2` - linux; arm64 variant v8
@@ -329,7 +329,7 @@ $ docker pull nim@sha256:210af947e49cf550778d84118cd19d211d6e4eb56cbc1cfd636e1ac
 ## `nim:2.0`
 
 ```console
-$ docker pull nim@sha256:06909bf10bda6b8667ade68f700156f30a2c17c95f855e34cb0e784b76059b06
+$ docker pull nim@sha256:cd9f335caafb3cb108f123e02213df4cb962d203610472ecbbe9791ec67abaf6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -421,75 +421,75 @@ $ docker pull nim@sha256:9dc2c32ed27e16ffb830620d0267ba4b7a5a9b367bdf6e9d8e6932d
 ### `nim:2.0` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:dc8379d5d6b69ec2c9c0e87479dac3981ff453d4482c63f3708fb26b43f450da
+$ docker pull nim@sha256:673184ed5e69ad377f0ad1d9a522064974a6f7e6a74602d842217fa9fd535709
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.2 MB (139206857 bytes)**  
+-	Total Size: **139.2 MB (139206325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3021ecd8997c2f25d2628745c0d5e6adeb670fc0fa1db8455c492a2fcfe67bb7`
+-	Image ID: `sha256:13b05145c04591df27c5ff86edf58cd880685ea4c42fa0492928186823b40bf6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.0.14
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_x64.tar.xz'; sha256='ae7ab1178565b8b56848ac714c3be0efa565f32684aca9bea6bd0aab11047ba3' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_arm64.tar.xz'; sha256='7f21018b88ac1afc1fd563dc4208e94fa2941ab8bbc873a234f87e19b95a461b' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_x32.tar.xz'; sha256='9e038c760d591f96337f62ca3abf3c739f23d7f9b91ebf6627e52ad5ffc0a4df' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_armv7l.tar.xz'; sha256='c15439e201cd9ecb83a655c7c30b088ae06593de07717571bc77e1fc7b606f28' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.0.14";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19cb31e9fa82d0c6040b44ea3bd62ed1bcf3ac9bc325e59bff6a38c24cf453fb`  
-		Last Modified: Wed, 21 Oct 2026 00:24:51 GMT  
-		Size: 26.2 MB (26234152 bytes)  
+	-	`sha256:192135f2966700c6af0c05c68534fa511e021f26d0bffa12b5f0ad9ff8c3d16c`  
+		Last Modified: Wed, 28 Oct 2026 01:21:42 GMT  
+		Size: 26.2 MB (26234154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dff85f2b8f394275b1184217aafac6d759aa6a62825636f80cea4907dadcddde`  
-		Last Modified: Wed, 21 Oct 2026 00:24:50 GMT  
-		Size: 132.0 B  
+	-	`sha256:93ff98def84813a9bb3ade8c0e59ebc1ca5dd1ebff1a78a05e06eead1ded0441`  
+		Last Modified: Wed, 28 Oct 2026 01:21:41 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:2.0` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6dd363cc1d6adaf6b6c9d8014d42eb04745830c737a4a6347a9e066968b89b2c
+$ docker pull nim@sha256:8b6e41e63f23d07d6da52bf99895dfeccf83d0a3685b5ef25958dacdee996d50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **13.9 KB (13947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07d61806760cbf06dd802e1f16a908a6658a0fb1297285a81275e763af09a8ac`
+-	Image ID: `sha256:0b8c6de7634fc75b2bc188b2d43aad8b9747fc55bf18297a1130939c8d90f38b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bfab048f5dd1c1dcd9d4d51bdf4a7a759240de067b67a20806557df9e4e2bdf5`  
-		Last Modified: Wed, 21 Oct 2026 00:24:50 GMT  
+	-	`sha256:d690ed74196abf9fb4cf6db72d037f0b4155eaa9c543bcc2162a8e221521a5ab`  
+		Last Modified: Wed, 28 Oct 2026 01:21:41 GMT  
 		Size: 13.9 KB (13947 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -646,7 +646,7 @@ $ docker pull nim@sha256:d910240348154895daba5a0e2c510affd31965480c4290c6c1e4e77
 ## `nim:2.0.14`
 
 ```console
-$ docker pull nim@sha256:06909bf10bda6b8667ade68f700156f30a2c17c95f855e34cb0e784b76059b06
+$ docker pull nim@sha256:cd9f335caafb3cb108f123e02213df4cb962d203610472ecbbe9791ec67abaf6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -738,75 +738,75 @@ $ docker pull nim@sha256:9dc2c32ed27e16ffb830620d0267ba4b7a5a9b367bdf6e9d8e6932d
 ### `nim:2.0.14` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:dc8379d5d6b69ec2c9c0e87479dac3981ff453d4482c63f3708fb26b43f450da
+$ docker pull nim@sha256:673184ed5e69ad377f0ad1d9a522064974a6f7e6a74602d842217fa9fd535709
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.2 MB (139206857 bytes)**  
+-	Total Size: **139.2 MB (139206325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3021ecd8997c2f25d2628745c0d5e6adeb670fc0fa1db8455c492a2fcfe67bb7`
+-	Image ID: `sha256:13b05145c04591df27c5ff86edf58cd880685ea4c42fa0492928186823b40bf6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.0.14
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_x64.tar.xz'; sha256='ae7ab1178565b8b56848ac714c3be0efa565f32684aca9bea6bd0aab11047ba3' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_arm64.tar.xz'; sha256='7f21018b88ac1afc1fd563dc4208e94fa2941ab8bbc873a234f87e19b95a461b' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_x32.tar.xz'; sha256='9e038c760d591f96337f62ca3abf3c739f23d7f9b91ebf6627e52ad5ffc0a4df' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2024-12-23-version-2-0-bf4de6a394e040d9810cba8c69fb2829ff04dcc6/nim-2.0.14-linux_armv7l.tar.xz'; sha256='c15439e201cd9ecb83a655c7c30b088ae06593de07717571bc77e1fc7b606f28' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.0.14";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:43 GMT
+# Wed, 28 Oct 2026 01:21:34 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19cb31e9fa82d0c6040b44ea3bd62ed1bcf3ac9bc325e59bff6a38c24cf453fb`  
-		Last Modified: Wed, 21 Oct 2026 00:24:51 GMT  
-		Size: 26.2 MB (26234152 bytes)  
+	-	`sha256:192135f2966700c6af0c05c68534fa511e021f26d0bffa12b5f0ad9ff8c3d16c`  
+		Last Modified: Wed, 28 Oct 2026 01:21:42 GMT  
+		Size: 26.2 MB (26234154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dff85f2b8f394275b1184217aafac6d759aa6a62825636f80cea4907dadcddde`  
-		Last Modified: Wed, 21 Oct 2026 00:24:50 GMT  
-		Size: 132.0 B  
+	-	`sha256:93ff98def84813a9bb3ade8c0e59ebc1ca5dd1ebff1a78a05e06eead1ded0441`  
+		Last Modified: Wed, 28 Oct 2026 01:21:41 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:2.0.14` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6dd363cc1d6adaf6b6c9d8014d42eb04745830c737a4a6347a9e066968b89b2c
+$ docker pull nim@sha256:8b6e41e63f23d07d6da52bf99895dfeccf83d0a3685b5ef25958dacdee996d50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **13.9 KB (13947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07d61806760cbf06dd802e1f16a908a6658a0fb1297285a81275e763af09a8ac`
+-	Image ID: `sha256:0b8c6de7634fc75b2bc188b2d43aad8b9747fc55bf18297a1130939c8d90f38b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bfab048f5dd1c1dcd9d4d51bdf4a7a759240de067b67a20806557df9e4e2bdf5`  
-		Last Modified: Wed, 21 Oct 2026 00:24:50 GMT  
+	-	`sha256:d690ed74196abf9fb4cf6db72d037f0b4155eaa9c543bcc2162a8e221521a5ab`  
+		Last Modified: Wed, 28 Oct 2026 01:21:41 GMT  
 		Size: 13.9 KB (13947 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -963,7 +963,7 @@ $ docker pull nim@sha256:d910240348154895daba5a0e2c510affd31965480c4290c6c1e4e77
 ## `nim:2.2`
 
 ```console
-$ docker pull nim@sha256:f4eb9da1d13d84d5d2ceeb0eb8b206fe4e07ebe9afc7eb088b1f22d091463f1b
+$ docker pull nim@sha256:36963dfe958c822f7f5e5d5dc6fc78d0bb9f5ba5729ec2dd57c0cf2595d03b64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1055,76 +1055,76 @@ $ docker pull nim@sha256:43c223d4f18d74314c2e898167f592c53a390ccc2da0f5c09f9b324
 ### `nim:2.2` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:e7093620e0ca6704542e7b34a5146c9552db976a916418c3e9b6925c6cba6fd9
+$ docker pull nim@sha256:d48ebb5241a0b87785556df4a848f9a6d733636e560d090c34224ee3461d29c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.5 MB (144532763 bytes)**  
+-	Total Size: **144.5 MB (144532219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c2ce1f3dfb879870a25016e06ed13239ac0651b21d572ac85cd200785e1ea41`
+-	Image ID: `sha256:465c13e0bcac3afcfe1319362cae0bcd1b6532a2162f191246c61fa0cf9e4bb6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.2.12
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x64.tar.xz'; sha256='7df1611449a6842af69322aa2c1206942982650a5f6bc0d37bc8ec109932f638' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_arm64.tar.xz'; sha256='3dc04191af72a8310cf1c8ffb6f772cc3716fc5f264bc7c453ab4aecb4085221' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x32.tar.xz'; sha256='fabe576a48db63d20d6077b3ee921b2806fcfa108b7aaddf8f230d09f4b54e5d' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_armv7l.tar.xz'; sha256='c4893f5c4b51064ae9a686a4aeb168d0ba1da97f4cbc7032b6c684e51d63e881' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.2.12";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef14d3ba8e52e6feaaf77f14aa88bdbb0e7728333b146bbb0d062badd7f6ea86`  
-		Last Modified: Wed, 21 Oct 2026 00:24:33 GMT  
-		Size: 31.6 MB (31560058 bytes)  
+	-	`sha256:fd228ccef62d4c25c9e934b40d93cfc37a495a077370b8d5f2765b55015c5f19`  
+		Last Modified: Wed, 28 Oct 2026 01:21:24 GMT  
+		Size: 31.6 MB (31560049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a113ffccb35963e8e97c6735b556f4b62bd1443a462a945fb2bb5caa11445452`  
-		Last Modified: Wed, 21 Oct 2026 00:24:31 GMT  
+	-	`sha256:8d5a2a7565b44a7450780aa3bbc4af7fb9e6ab549950d8a3c342444512d81197`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:2.2` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6a45cd290d3ce1a6f7a7693a83e846a25c519cb4df140654ba544ab1c493b6c4
+$ docker pull nim@sha256:23d3b3026cdf3342058ce9310fbeed5bc7d62b2eb7b5991f81b28dfd9188ec4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14537 bytes)**  
+-	Total Size: **14.5 KB (14535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1eb50de67d4dc69de7c89aaf6a7167af8cf7cdc79aefcdba8da15b264363695`
+-	Image ID: `sha256:c3bad526c343ef5aae0fcaee25778d6b40b86c87f2d48fa227cbaa0a109c0ca9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6226904aa4b7dddf54bf346564c2d6d7b2681d396601cd19cb44dd6715e7cd76`  
-		Last Modified: Wed, 21 Oct 2026 00:24:32 GMT  
-		Size: 14.5 KB (14537 bytes)  
+	-	`sha256:34dafc67790493f02dd3e648af7056cee44aef783dce37e64e95ef26ad1e6977`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
+		Size: 14.5 KB (14535 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nim:2.2` - linux; arm64 variant v8
@@ -1280,7 +1280,7 @@ $ docker pull nim@sha256:210af947e49cf550778d84118cd19d211d6e4eb56cbc1cfd636e1ac
 ## `nim:2.2.12`
 
 ```console
-$ docker pull nim@sha256:f4eb9da1d13d84d5d2ceeb0eb8b206fe4e07ebe9afc7eb088b1f22d091463f1b
+$ docker pull nim@sha256:36963dfe958c822f7f5e5d5dc6fc78d0bb9f5ba5729ec2dd57c0cf2595d03b64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1372,76 +1372,76 @@ $ docker pull nim@sha256:43c223d4f18d74314c2e898167f592c53a390ccc2da0f5c09f9b324
 ### `nim:2.2.12` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:e7093620e0ca6704542e7b34a5146c9552db976a916418c3e9b6925c6cba6fd9
+$ docker pull nim@sha256:d48ebb5241a0b87785556df4a848f9a6d733636e560d090c34224ee3461d29c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.5 MB (144532763 bytes)**  
+-	Total Size: **144.5 MB (144532219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c2ce1f3dfb879870a25016e06ed13239ac0651b21d572ac85cd200785e1ea41`
+-	Image ID: `sha256:465c13e0bcac3afcfe1319362cae0bcd1b6532a2162f191246c61fa0cf9e4bb6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.2.12
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x64.tar.xz'; sha256='7df1611449a6842af69322aa2c1206942982650a5f6bc0d37bc8ec109932f638' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_arm64.tar.xz'; sha256='3dc04191af72a8310cf1c8ffb6f772cc3716fc5f264bc7c453ab4aecb4085221' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x32.tar.xz'; sha256='fabe576a48db63d20d6077b3ee921b2806fcfa108b7aaddf8f230d09f4b54e5d' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_armv7l.tar.xz'; sha256='c4893f5c4b51064ae9a686a4aeb168d0ba1da97f4cbc7032b6c684e51d63e881' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.2.12";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef14d3ba8e52e6feaaf77f14aa88bdbb0e7728333b146bbb0d062badd7f6ea86`  
-		Last Modified: Wed, 21 Oct 2026 00:24:33 GMT  
-		Size: 31.6 MB (31560058 bytes)  
+	-	`sha256:fd228ccef62d4c25c9e934b40d93cfc37a495a077370b8d5f2765b55015c5f19`  
+		Last Modified: Wed, 28 Oct 2026 01:21:24 GMT  
+		Size: 31.6 MB (31560049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a113ffccb35963e8e97c6735b556f4b62bd1443a462a945fb2bb5caa11445452`  
-		Last Modified: Wed, 21 Oct 2026 00:24:31 GMT  
+	-	`sha256:8d5a2a7565b44a7450780aa3bbc4af7fb9e6ab549950d8a3c342444512d81197`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:2.2.12` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6a45cd290d3ce1a6f7a7693a83e846a25c519cb4df140654ba544ab1c493b6c4
+$ docker pull nim@sha256:23d3b3026cdf3342058ce9310fbeed5bc7d62b2eb7b5991f81b28dfd9188ec4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14537 bytes)**  
+-	Total Size: **14.5 KB (14535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1eb50de67d4dc69de7c89aaf6a7167af8cf7cdc79aefcdba8da15b264363695`
+-	Image ID: `sha256:c3bad526c343ef5aae0fcaee25778d6b40b86c87f2d48fa227cbaa0a109c0ca9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6226904aa4b7dddf54bf346564c2d6d7b2681d396601cd19cb44dd6715e7cd76`  
-		Last Modified: Wed, 21 Oct 2026 00:24:32 GMT  
-		Size: 14.5 KB (14537 bytes)  
+	-	`sha256:34dafc67790493f02dd3e648af7056cee44aef783dce37e64e95ef26ad1e6977`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
+		Size: 14.5 KB (14535 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nim:2.2.12` - linux; arm64 variant v8
@@ -1597,7 +1597,7 @@ $ docker pull nim@sha256:210af947e49cf550778d84118cd19d211d6e4eb56cbc1cfd636e1ac
 ## `nim:latest`
 
 ```console
-$ docker pull nim@sha256:f4eb9da1d13d84d5d2ceeb0eb8b206fe4e07ebe9afc7eb088b1f22d091463f1b
+$ docker pull nim@sha256:36963dfe958c822f7f5e5d5dc6fc78d0bb9f5ba5729ec2dd57c0cf2595d03b64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1689,76 +1689,76 @@ $ docker pull nim@sha256:43c223d4f18d74314c2e898167f592c53a390ccc2da0f5c09f9b324
 ### `nim:latest` - linux; arm variant v7
 
 ```console
-$ docker pull nim@sha256:e7093620e0ca6704542e7b34a5146c9552db976a916418c3e9b6925c6cba6fd9
+$ docker pull nim@sha256:d48ebb5241a0b87785556df4a848f9a6d733636e560d090c34224ee3461d29c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.5 MB (144532763 bytes)**  
+-	Total Size: **144.5 MB (144532219 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c2ce1f3dfb879870a25016e06ed13239ac0651b21d572ac85cd200785e1ea41`
+-	Image ID: `sha256:465c13e0bcac3afcfe1319362cae0bcd1b6532a2162f191246c61fa0cf9e4bb6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Oct 2026 21:32:55 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1792531975'
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Tue, 27 Oct 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1793059200'
+# Wed, 28 Oct 2026 01:21:09 GMT
 RUN set -eux;   apt-get update;   apt-get install -y --no-install-recommends     gcc     g++     libc6-dev     git     ca-certificates     openssl     curl     xz-utils     libpcre3-dev libpcre3   ;   rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV NIM_VERSION=2.2.12
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 ENV PATH=/root/.nimble/bin:/opt/nim/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 00:24:17 GMT
+# Wed, 28 Oct 2026 01:21:09 GMT
 WORKDIR /tmp
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 RUN set -eux;   dpkgArch="$(dpkg --print-architecture)";   case "${dpkgArch}" in     amd64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x64.tar.xz'; sha256='7df1611449a6842af69322aa2c1206942982650a5f6bc0d37bc8ec109932f638' ;;     arm64) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_arm64.tar.xz'; sha256='3dc04191af72a8310cf1c8ffb6f772cc3716fc5f264bc7c453ab4aecb4085221' ;;     i386) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_x32.tar.xz'; sha256='fabe576a48db63d20d6077b3ee921b2806fcfa108b7aaddf8f230d09f4b54e5d' ;;     armhf) url='https://github.com/nim-lang/nightlies/releases/download/2026-09-08-version-2-2-8e8fbf60693418dc95bb0d762fd660231d08a583/nim-2.2.12-linux_armv7l.tar.xz'; sha256='c4893f5c4b51064ae9a686a4aeb168d0ba1da97f4cbc7032b6c684e51d63e881' ;;     *) echo >&2 "error: unsupported architecture: ${dpkgArch}"; exit 1 ;;   esac;   curl --fail --location "$url" --output nim.tar.xz;   echo "$sha256 *nim.tar.xz" | sha256sum --check --strict -;   mkdir -p /opt/nim;   tar -xJf nim.tar.xz --strip-components=1 --directory /opt/nim "nim-2.2.12";   rm nim.tar.xz;   nim --version # buildkit
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 WORKDIR /usr/src/app
-# Wed, 21 Oct 2026 00:24:20 GMT
+# Wed, 28 Oct 2026 01:21:12 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:89330599b97158132cbb391b9e953f6981b48c30e1dd04817c4713d28bc7f013`  
-		Last Modified: Tue, 20 Oct 2026 23:30:03 GMT  
-		Size: 24.0 MB (23961489 bytes)  
+	-	`sha256:cbe97ec71a04b2e9c534c23b59d26efd60897a49fc8ed09b5b3363faac51e383`  
+		Last Modified: Wed, 28 Oct 2026 00:10:33 GMT  
+		Size: 24.0 MB (23960966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd29ebfbea415eb8e8fa45dfa4dec78e4a6051a0f5806ae265052a7a91d9aba2`  
-		Last Modified: Wed, 21 Oct 2026 00:24:34 GMT  
-		Size: 89.0 MB (89011052 bytes)  
+	-	`sha256:bcbf3f54cb59701807c073a4b097fbe9a346bf42695b9c0b0e94e709a7b76644`  
+		Last Modified: Wed, 28 Oct 2026 01:21:25 GMT  
+		Size: 89.0 MB (89011040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef14d3ba8e52e6feaaf77f14aa88bdbb0e7728333b146bbb0d062badd7f6ea86`  
-		Last Modified: Wed, 21 Oct 2026 00:24:33 GMT  
-		Size: 31.6 MB (31560058 bytes)  
+	-	`sha256:fd228ccef62d4c25c9e934b40d93cfc37a495a077370b8d5f2765b55015c5f19`  
+		Last Modified: Wed, 28 Oct 2026 01:21:24 GMT  
+		Size: 31.6 MB (31560049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a113ffccb35963e8e97c6735b556f4b62bd1443a462a945fb2bb5caa11445452`  
-		Last Modified: Wed, 21 Oct 2026 00:24:31 GMT  
+	-	`sha256:8d5a2a7565b44a7450780aa3bbc4af7fb9e6ab549950d8a3c342444512d81197`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nim:latest` - unknown; unknown
 
 ```console
-$ docker pull nim@sha256:6a45cd290d3ce1a6f7a7693a83e846a25c519cb4df140654ba544ab1c493b6c4
+$ docker pull nim@sha256:23d3b3026cdf3342058ce9310fbeed5bc7d62b2eb7b5991f81b28dfd9188ec4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 KB (14537 bytes)**  
+-	Total Size: **14.5 KB (14535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1eb50de67d4dc69de7c89aaf6a7167af8cf7cdc79aefcdba8da15b264363695`
+-	Image ID: `sha256:c3bad526c343ef5aae0fcaee25778d6b40b86c87f2d48fa227cbaa0a109c0ca9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6226904aa4b7dddf54bf346564c2d6d7b2681d396601cd19cb44dd6715e7cd76`  
-		Last Modified: Wed, 21 Oct 2026 00:24:32 GMT  
-		Size: 14.5 KB (14537 bytes)  
+	-	`sha256:34dafc67790493f02dd3e648af7056cee44aef783dce37e64e95ef26ad1e6977`  
+		Last Modified: Wed, 28 Oct 2026 01:21:23 GMT  
+		Size: 14.5 KB (14535 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nim:latest` - linux; arm64 variant v8
