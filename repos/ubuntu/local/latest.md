@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9e485d4a3bc6efa60fc5150444a82f3d96991fdcec7caa1d0f3e7a0b5859321`
-- Created: `2026-10-06T21:23:49.230209274Z`
-- Virtual Size: ~ 101.5 Mb  
+- Image ID: `sha256:febc1a2eec1fdaad5db7e542ce1fefaee9656b6e3a177f0c703d616e77b86a62`
+- Created: `1970-01-01T00:00:00Z`
+- Virtual Size: ~ 101.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-10-06T21:25:30.040262+00:00`
+  - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1306,12 +1306,12 @@ $ apt-get source -qq --print-uris shadow=1:4.17.4-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.17.4-2ubuntu3.dsc' shadow_4.17.4-2ubuntu3.dsc 2991 SHA256:5c7ebf6e7e9894c91df3474212a6e21bc5b6da82bbcef760bad495a0b5f48c87
 ```
 
-### `dpkg` source package: `systemd=259.5-0ubuntu3.4`
+### `dpkg` source package: `systemd=259.9-0ubuntu0.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=259.5-0ubuntu3.4`
-- `libudev1:amd64=259.5-0ubuntu3.4`
+- `libsystemd0:amd64=259.9-0ubuntu0.1`
+- `libudev1:amd64=259.9-0ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1327,10 +1327,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=259.5-0ubuntu3.4
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.debian.tar.xz' systemd_259.5-0ubuntu3.4.debian.tar.xz 267032 SHA512:8b446ab051d47ae14e3633bfe388fd309dc96c438db5ac568ac7c68da4cd258eeaeaf231c41f9b5b55ce16445f7164e47887cbe53755af470415cbff2196e358
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu3.4.dsc' systemd_259.5-0ubuntu3.4.dsc 8779 SHA512:92ab82be5174bb0b79bb2c25cfb400b23c817edf662c4c34f6e7b68bef308b6815ffb86d21439ccf27a83eec19854b90537119628ecb3ebafa205759cd9927ea
+$ apt-get source -qq --print-uris systemd=259.9-0ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.9.orig.tar.gz' systemd_259.9.orig.tar.gz 17618264 SHA512:9343f531d1110253213cef103862e96057de9d0edb9a1957bcbf899aa313882a997a1e3cdb93c01de50dfa5684fc74b6f1794388123bb898fc1c2e3e0da13608
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.9-0ubuntu0.1.debian.tar.xz' systemd_259.9-0ubuntu0.1.debian.tar.xz 254204 SHA512:334c8894d6fe75b6a8e52f58ec963db22ab468d541c4268f87048bbe722da5af8846b8686fd288e61b16f8ab39429bef9c0e715618faeec1a8488cdd8672b5ab
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.9-0ubuntu0.1.dsc' systemd_259.9-0ubuntu0.1.dsc 8779 SHA512:c373b2d0b4c0b68846eb4fdbb143d557f8c22a08b43d2e6a9dfbb8d51842e49ebcbefb3bc79d5d63d01948d5c1c1e7783fb732ba0ad4d4d9df29f573e31b3a1e
 ```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
@@ -1467,11 +1467,11 @@ $ apt-get source -qq --print-uris xxhash=0.8.3-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.3-2build1.dsc' xxhash_0.8.3-2build1.dsc 1968 SHA256:2428b6123da0fa2e2b948474faa829657dc682d741d10a341c9c348c09ea720a
 ```
 
-### `dpkg` source package: `xz-utils=5.8.3-1`
+### `dpkg` source package: `xz-utils=5.8.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.8.3-1`
+- `liblzma5:amd64=5.8.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1492,22 +1492,27 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.8.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1.dsc' xz-utils_5.8.3-1.dsc 2494 SHA512:2c78a287be77ac1c84f6ede8c4d9b8333f78ca8aea9ed7beecdbb232bde98700cce4c06586182c3c16a4b764b163036c83f3b6d913ea34424e8abc7790cfcc9b
+$ apt-get source -qq --print-uris xz-utils=5.8.3-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3.orig.tar.xz' xz-utils_5.8.3.orig.tar.xz 1548064 SHA512:c288f436b211031ca122e9169d85403d4ab8b0500a6542b2d9ba101587e04a4358ab5509f5d15cc7899f1ab3e0118567866ca0508f880007b4af802dedd7068d
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1.debian.tar.xz' xz-utils_5.8.3-1.debian.tar.xz 27344 SHA512:acaf62ccbe85eee2f5d489f3d3c358184bbaf814f9c77239de522ea419e5276c0adcba1efb39479f2a580cf8cd84d3ecf6d4ff99bb5e3052439d207b02573e08
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1ubuntu0.1.debian.tar.xz' xz-utils_5.8.3-1ubuntu0.1.debian.tar.xz 29712 SHA512:d3403d50f92af704e944a652b99c98b2d6cee78102c5e2f3db43328d32b2acf1f6948e4d1c67c6a8669f0dedd2d1015556e9962a43b34638b0258ec135bd75bd
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1ubuntu0.1.dsc' xz-utils_5.8.3-1ubuntu0.1.dsc 2654 SHA512:ffb9be92bc60ecda509c2d0719a07b4385faa8c72ea3b07e06df0b898bfdcad738313e658d69cc6712baf06e353a3ad5863a27c423211b8464a672d5313c1699
 ```
 
-### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu3.1`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu3.2`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1ubuntu3.1`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1.orig.tar.gz' zlib_1.3.dfsg+really1.3.1.orig.tar.gz 1325737 SHA512:068cb731e400cfc435db292839737938199d05d77b3010c7b9b87c9d0a127c7545198cea2a620da124ea3dfdde02ab63672aa01fc6cfd1e1ab5a2d6f9ca454c8
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1ubuntu3.2.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1ubuntu3.2.debian.tar.xz 60888 SHA512:fd5efbc8b15f24f42c8d8cd029adf8fb9bc1b06134a430ba31d0d17464833a859e8190df595924584f28973255b133d765e94d957c58e7e72a788937b5b3a359
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1ubuntu3.2.dsc' zlib_1.3.dfsg+really1.3.1-1ubuntu3.2.dsc 3346 SHA512:f88638c9c8946c14ff1473458070fe86a039cb031de061b873ae8d409286409fd465bb0faad3f60e27a46ae9f05cf7fe0e5d3520240667185de3ef90cac1e7fa
+```

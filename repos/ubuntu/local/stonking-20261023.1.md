@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:383af3e6d22026f17e140be28f6623257f4beb0de340d9ebe3d821c079f402a9`
-- Created: `2026-10-13T14:51:30.804754373Z`
-- Virtual Size: ~ 103.81 Mb  
+- Image ID: `sha256:2a8dd0a9934910b2f14c486e6b74857d0d5a9430b5d531cc51051f921fb42e4c`
+- Created: `1970-01-01T00:00:00Z`
+- Virtual Size: ~ 103.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-10-13T14:53:10.907747+00:00`
+  - `org.opencontainers.image.created=2026-10-23T23:26:58.552491+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1409,11 +1409,11 @@ $ apt-get source -qq --print-uris xxhash=0.8.3-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.3-2build1.dsc' xxhash_0.8.3-2build1.dsc 1968 SHA512:c0724343c725447e14dcb6478eeb56db152fa4bb8e86cdd4f2764eaee7acb9682b165c74ce8f177047305ef33249d110436865840118e703f740c58eec0115d6
 ```
 
-### `dpkg` source package: `xz-utils=5.8.3-1`
+### `dpkg` source package: `xz-utils=5.8.3-1ubuntu1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.8.3-1`
+- `liblzma5:amd64=5.8.3-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1434,17 +1434,17 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.8.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1.dsc' xz-utils_5.8.3-1.dsc 2494 SHA512:2c78a287be77ac1c84f6ede8c4d9b8333f78ca8aea9ed7beecdbb232bde98700cce4c06586182c3c16a4b764b163036c83f3b6d913ea34424e8abc7790cfcc9b
+$ apt-get source -qq --print-uris xz-utils=5.8.3-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3.orig.tar.xz' xz-utils_5.8.3.orig.tar.xz 1548064 SHA512:c288f436b211031ca122e9169d85403d4ab8b0500a6542b2d9ba101587e04a4358ab5509f5d15cc7899f1ab3e0118567866ca0508f880007b4af802dedd7068d
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1.debian.tar.xz' xz-utils_5.8.3-1.debian.tar.xz 27344 SHA512:acaf62ccbe85eee2f5d489f3d3c358184bbaf814f9c77239de522ea419e5276c0adcba1efb39479f2a580cf8cd84d3ecf6d4ff99bb5e3052439d207b02573e08
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1ubuntu1.debian.tar.xz' xz-utils_5.8.3-1ubuntu1.debian.tar.xz 29728 SHA512:85e82cc6d9dd50dde06e88370669c5a11496eb42c8b6269183975526192874913e62aed96661b21fb621b853e27900d69ad4c39aa45f72a62207be77acd56b7b
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.8.3-1ubuntu1.dsc' xz-utils_5.8.3-1ubuntu1.dsc 2646 SHA512:f1caf734189b91321cba966380396a3be8fd628dddddecd01adda44ff6b24868c666155ffd6f62ec91733db041508b4200f2b11ba6f6c4575fb0675ff93a876a
 ```
 
-### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.2-3ubuntu1`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.2-3ubuntu1.1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg+really1.3.2-3ubuntu1`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.2-3ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
@@ -1453,8 +1453,8 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.2-3ubuntu1
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.2-3ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2.orig.tar.gz' zlib_1.3.dfsg+really1.3.2.orig.tar.gz 1295859 SHA512:6e537c18904e5f7e7495666202c0d731b9374e6b6969fd2d5283801e9d90a177caf6bd28aa6d10162fa0bec0ed1bb05d87f8486326706bb62fec3d191151613e
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.debian.tar.xz' zlib_1.3.dfsg+really1.3.2-3ubuntu1.debian.tar.xz 22392 SHA512:75195fb471f6c2e82f1ce93e51855b18689a67b28beeea797da59c5ecbbcec205b5f4c327a4b20e20a69e605e15e16c8baa57e231801907a72033c1fa7e1a1fe
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.dsc' zlib_1.3.dfsg+really1.3.2-3ubuntu1.dsc 3375 SHA512:c1145b6e96baf43deb2a56c0e05c4e889ec794f6810ff3269da1cf9ab705ac000d2c0016ab3611a45378a756379f7796ec47b3a0d9941bb6934365f29f06ec70
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.1.debian.tar.xz' zlib_1.3.dfsg+really1.3.2-3ubuntu1.1.debian.tar.xz 22892 SHA512:da3071f3757a81fac425f0705d41ce2083c9ac77610630d5dd8210d167e282d7317f5411dc6895c71d50687677f001b1fbc73204e727b95954608905ce98d6cc
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.2-3ubuntu1.1.dsc' zlib_1.3.dfsg+really1.3.2-3ubuntu1.1.dsc 3428 SHA512:840ecc013254557a6b50b91f5374d7ff6688587912767311e29d317a63113064fe409a1b82457a95c4d18980724f6360440f405000ba55638b40560ddccdde08
 ```
