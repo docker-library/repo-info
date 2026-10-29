@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a28594b8c008991d85fc5f0933031c6077f71bead236a70a59e0a696109850d7`
-- Created: `2026-10-21T04:13:21.144274811Z`
+- Image ID: `sha256:6030a3340bf0a470215883a204cb4f37b7ab468195bd4c9aeb01f1c87493580c`
+- Created: `2026-10-28T05:12:02.824522874Z`
 - Virtual Size: ~ 1.83 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -727,12 +727,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/binutils/2.44-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/binutils/2.44-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `brotli=1.1.0-2`
+### `dpkg` source package: `brotli=1.1.0-2+deb13u1`
 
 Binary Packages:
 
-- `libbrotli-dev:amd64=1.1.0-2+b7`
-- `libbrotli1:amd64=1.1.0-2+b7`
+- `libbrotli-dev:amd64=1.1.0-2+deb13u1`
+- `libbrotli1:amd64=1.1.0-2+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli-dev/copyright`, `/usr/share/doc/libbrotli1/copyright`)
 
@@ -741,7 +741,7 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli-dev/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2
+$ apt-get source -qq --print-uris brotli=1.1.0-2+deb13u1
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
@@ -749,9 +749,9 @@ $ apt-get source -qq --print-uris brotli=1.1.0-2
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/brotli/1.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/brotli/1.1.0-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bubblewrap=0.12.0-1~deb13u1`
 
@@ -4322,13 +4322,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgudev/238-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgudev/238-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.23.4-1~deb13u1`
+### `dpkg` source package: `libheif=1.23.6-2~deb13u1`
 
 Binary Packages:
 
-- `libheif-plugin-dav1d:amd64=1.23.4-1~deb13u1`
-- `libheif-plugin-libde265:amd64=1.23.4-1~deb13u1`
-- `libheif1:amd64=1.23.4-1~deb13u1`
+- `libheif-plugin-dav1d:amd64=1.23.6-2~deb13u1`
+- `libheif-plugin-libde265:amd64=1.23.6-2~deb13u1`
+- `libheif1:amd64=1.23.6-2~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -4342,13 +4342,20 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libheif=1.23.6-2~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6-2%7edeb13u1.dsc' libheif_1.23.6-2~deb13u1.dsc 3366 SHA256:b3d997ab26a37f7bb7309052a28d1e41c057588b6687616f7fb6ed415b021480
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6.orig.tar.gz' libheif_1.23.6.orig.tar.gz 2373898 SHA256:4484346dc5995319dbc11e3a1c35d0a2ec46511ce370900869337fd2c7033125
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.23.6-2%7edeb13u1.debian.tar.xz' libheif_1.23.6-2~deb13u1.debian.tar.xz 16116 SHA256:91802e614b0a78acbf0fd6a23937bbf6898a5c2188e1f002a9a9eef0da132f87
+```
 
-- http://snapshot.debian.org/package/libheif/1.23.4-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libheif/1.23.6-2~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.23.6-2~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.23.6-2~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -8446,11 +8453,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/twolame/0.4.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/twolame/0.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb13u1`
+### `dpkg` source package: `tzdata=2026e-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb13u1`
+- `tzdata=2026e-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -8459,18 +8466,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.dsc' tzdata_2026c-0+deb13u1.dsc 2466 SHA256:b18d6eddfb23971bacbf569a2641cda837002a813d8e8940d8792ea7ba8e2d4e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.debian.tar.xz' tzdata_2026c-0+deb13u1.debian.tar.xz 127148 SHA256:48cd3f42cee2b8ec62ca9c2f4c43cf6c0ec05e1a5ae97f4ed771635811b82f29
+$ apt-get source -qq --print-uris tzdata=2026e-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.dsc' tzdata_2026e-0+deb13u1.dsc 2466 SHA256:d30d2263399c388a0903ee15114a80ee4583464faaa8fc08f753739ca5841cd6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.debian.tar.xz' tzdata_2026e-0+deb13u1.debian.tar.xz 128776 SHA256:5d14cd956e43a40b887413c6fe2de79036179648ef7f35aa7498b3bb1008e4bb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
@@ -8496,11 +8503,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0052/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0052/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `unbound=1.26.1-0+deb13u1`
+### `dpkg` source package: `unbound=1.26.2-0+deb13u1`
 
 Binary Packages:
 
-- `libunbound8:amd64=1.26.1-0+deb13u1`
+- `libunbound8:amd64=1.26.2-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 
@@ -8520,13 +8527,21 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris unbound=1.26.2-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.2-0%2bdeb13u1.dsc' unbound_1.26.2-0+deb13u1.dsc 3201 SHA256:d0de2b0ac0bc2f0448e6a5b80f45b69236c9124f8ac09182f1b95bf02a97385b
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.2.orig.tar.gz' unbound_1.26.2.orig.tar.gz 6949796 SHA256:d8ee7aa6bbb3ff1be7d9e57637d0d0ec2f18273a8efff1a0afe2c665858b96f7
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.2.orig.tar.gz.asc' unbound_1.26.2.orig.tar.gz.asc 659 SHA256:0f128cf96c9bd86be12a45082e6f518c5dc09d1c3bd93dccbdc53627e6c5cdf9
+'http://deb.debian.org/debian-security/pool/updates/main/u/unbound/unbound_1.26.2-0%2bdeb13u1.debian.tar.xz' unbound_1.26.2-0+deb13u1.debian.tar.xz 32552 SHA256:cfa3056a5ff76815be4ff3dfeb6a117b6e31c1722f4fc954bedd4bed72d0ec9e
+```
 
-- http://snapshot.debian.org/package/unbound/1.26.1-0+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/unbound/1.26.2-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/unbound/1.26.2-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unbound/1.26.2-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unixodbc=2.3.12-2+deb13u1`
 
@@ -8786,12 +8801,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.23.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.23.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.54.0-1~deb13u2`
+### `dpkg` source package: `webkit2gtk=2.54.0-1~deb13u3`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.1-0:amd64=2.54.0-1~deb13u2`
-- `libwebkit2gtk-4.1-0:amd64=2.54.0-1~deb13u2`
+- `libjavascriptcoregtk-4.1-0:amd64=2.54.0-1~deb13u3`
+- `libwebkit2gtk-4.1-0:amd64=2.54.0-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `/usr/share/doc/libwebkit2gtk-4.1-0/copyright`)
 
@@ -8827,13 +8842,21 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `
 - `MPL-1.1`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris webkit2gtk=2.54.0-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.54.0-1%7edeb13u3.dsc' webkit2gtk_2.54.0-1~deb13u3.dsc 5008 SHA256:181807411a111fa42ad44b6afc7429ee41b37c66725b6f6edd1907f4350028d9
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.54.0.orig.tar.xz' webkit2gtk_2.54.0.orig.tar.xz 49710944 SHA256:846fd19ccedbae1dbfe904f26dbf2d68a800a33a50caf2ad5222c8dcb3f25682
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.54.0.orig.tar.xz.asc' webkit2gtk_2.54.0.orig.tar.xz.asc 833 SHA256:b48108d0ca49e88d4cf136d06edb523f8801bea6782bae9ebb77d5fe9e1ca912
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.54.0-1%7edeb13u3.debian.tar.xz' webkit2gtk_2.54.0-1~deb13u3.debian.tar.xz 97828 SHA256:3c4006f179ba778c5046fa3c0fd959c67d2d409a1ff96c7bbe9376bf6e47e5ab
+```
 
-- http://snapshot.debian.org/package/webkit2gtk/2.54.0-1~deb13u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/webkit2gtk/2.54.0-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.54.0-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.54.0-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
