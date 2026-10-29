@@ -1,9 +1,9 @@
-# `percona:psmdb-8.0.32`
+# `percona:psmdb-8.0.34`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aeda91d2663f2affde16dabbd5c167b9aaf80c789fe9e8d6a0a8748d655b9fc9`
-- Created: `2026-10-23T16:49:46.978389517Z`
+- Image ID: `sha256:3e6bbbf62b82f57144d5d7ddbb3d665fbae565fcbc76b9fde2436cf69f48787e`
+- Created: `2026-10-27T17:44:00.548579216Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,11 +12,15 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=8.0.32-14`
+  - `PSMDB_VERSION=8.0.34-15`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.32-14.el9`
+  - `FULL_PERCONA_VERSION=8.0.34-15.el9`
+  - `MONGO_TOOLS_VERSION=100.19.1-2`
+  - `FULL_MONGO_TOOLS_VERSION=100.19.1-2.el9`
+  - `MONGOSH_VERSION=2.13.0-1`
+  - `FULL_MONGOSH_VERSION=2.13.0-1.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
-  - `PSMDB_REPO=testing`
+  - `PSMDB_REPO=release`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
   - `CALL_HOME_VERSION=0.1`
@@ -24,7 +28,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-23T07:55:29Z`
+  - `build-date=2026-10-26T21:33:49Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,12 +42,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
-  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
-  - `release=1792742033`
+  - `org.opencontainers.image.created=2026-10-26T21:33:49Z`
+  - `org.opencontainers.image.revision=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
+  - `release=1793050346`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `vcs-ref=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -568,12 +572,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -1401,21 +1400,21 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-8.0.32-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.34-15.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-8.0.32-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.34-15.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-8.0.32-14.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-100.19.1-2.el9.x86_64`
 
-Licenses (from `rpm --query`): SSPL
+Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -1645,15 +1644,15 @@ $ dnf --quiet download --source --url util-linux-core-2.37.4-25.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-25.el9.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
+### `rpm` package: `xz-libs-5.2.5-8.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:562e440cb36c4e11529f205f6c1cd5dfc6a5a5568b2fef9fac5c4775ffbb1782`
-- Created: `2026-10-23T16:50:00.554917567Z`
+- Image ID: `sha256:001a74ce9fd6ee7b144c724318575cfd147e970106537fa806c1feb5defef0c6`
+- Created: `2026-10-27T17:42:40.761748622Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-23T07:55:29Z`
+  - `build-date=2026-10-26T21:33:49Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-10-23T07:55:29Z`
-  - `org.opencontainers.image.revision=59d275375d644e97803eb1be638cb4b2fa111a25`
-  - `release=1792742033`
+  - `org.opencontainers.image.created=2026-10-26T21:33:49Z`
+  - `org.opencontainers.image.revision=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
+  - `release=1793050346`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=59d275375d644e97803eb1be638cb4b2fa111a25`
+  - `vcs-ref=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -570,12 +570,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -2424,15 +2419,15 @@ $ dnf --quiet download --source --url which-2.21-30.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/w/which-2.21-30.el9_6.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
+### `rpm` package: `xz-libs-5.2.5-8.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
