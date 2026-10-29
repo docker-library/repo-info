@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81bf58b80bfa85492719e22589b1823ab18d6dbf243245ef8302d8d0832612ec`
-- Created: `2026-10-23T16:59:24.591526569Z`
-- Virtual Size: ~ 384.48 Mb  
+- Image ID: `sha256:fe91df272b9fb1f4194c8bf394ba20148ebc713f0847a96d22a16d49a48291e4`
+- Created: `2026-10-27T17:46:11.569330305Z`
+- Virtual Size: ~ 384.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-23T07:58:46Z`
+  - `build-date=2026-10-26T08:50:30Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-10-23T07:58:46Z`
-  - `org.opencontainers.image.revision=4fed77deb378a5b25e394fe33b2b061be0d026b8`
-  - `release=1792742206`
+  - `org.opencontainers.image.created=2026-10-26T08:50:30Z`
+  - `org.opencontainers.image.revision=fc6f6060a2bff02af1c1b54fb2036a6eb7955359`
+  - `release=1793004556`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=4fed77deb378a5b25e394fe33b2b061be0d026b8`
+  - `vcs-ref=fc6f6060a2bff02af1c1b54fb2036a6eb7955359`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -631,12 +631,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -1463,15 +1458,15 @@ $ dnf --quiet download --source --url psmisc-23.4-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/psmisc-23.4-3.el9.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.25-7.el9_8.3.x86_64`
+### `rpm` package: `python3-3.9.25-7.el9_8.6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.25-7.el9_8.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-7.el9_8.3.src.rpm
+$ dnf --quiet download --source --url python3-3.9.25-7.el9_8.6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-7.el9_8.6.src.rpm
 ```
 
 ### `rpm` package: `python3-chardet-4.0.0-5.el9.noarch`
@@ -1661,15 +1656,15 @@ $ dnf --quiet download --source --url python3-librepo-1.19.0-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/librepo-1.19.0-1.el9.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.25-7.el9_8.3.x86_64`
+### `rpm` package: `python3-libs-3.9.25-7.el9_8.6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.25-7.el9_8.3
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-7.el9_8.3.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.25-7.el9_8.6
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python3.9-3.9.25-7.el9_8.6.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-21.3.1-2.el9_8.noarch`
@@ -1775,12 +1770,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url python3-urllib3-1.26.5-8.el9_8.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-urllib3-1.26.5-8.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
 
@@ -2068,15 +2058,15 @@ $ dnf --quiet download --source --url which-2.21-30.el9_6
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/w/which-2.21-30.el9_6.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
+### `rpm` package: `xz-libs-5.2.5-8.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_0
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_0.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `yum-4.14.0-34.el9_8.noarch`

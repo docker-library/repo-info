@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d345e7748f966b5a2c260e74f08d3395aa7dc6971eab5cc291b83a968c5a0ad3`
-- Created: `2026-10-21T01:12:23.303769989Z`
+- Image ID: `sha256:d27733927688598e86ce796844ea057cf7002561886346f2be78095aaac847c6`
+- Created: `2026-10-28T02:07:02.062687284Z`
 - Virtual Size: ~ 4.37 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -332,11 +332,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/binutils/2.40-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/binutils/2.40-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `brotli=1.0.9-2`
+### `dpkg` source package: `brotli=1.0.9-2+deb12u1`
 
 Binary Packages:
 
-- `libbrotli1:amd64=1.0.9-2+b6`
+- `libbrotli1:amd64=1.0.9-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
@@ -345,7 +345,7 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris brotli=1.0.9-2
+$ apt-get source -qq --print-uris brotli=1.0.9-2+deb12u1
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9-2%2bdeb12u1.dsc' brotli_1.0.9-2+deb12u1.dsc 1741 SHA256:942ab3bccf28fa76d2c98a4e4a3a13390ee4484a2250d95a9ca46e6fbe0d6240
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9.orig.tar.gz' brotli_1.0.9.orig.tar.gz 486984 SHA256:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.0.9-2%2bdeb12u1.debian.tar.xz' brotli_1.0.9-2+deb12u1.debian.tar.xz 7828 SHA256:110534b0960a4d013942f48c5dcdee34d39501fcb40cd24106e160ad233cc8be
@@ -353,9 +353,9 @@ $ apt-get source -qq --print-uris brotli=1.0.9-2
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/brotli/1.0.9-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.0.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.0.9-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/brotli/1.0.9-2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/brotli/1.0.9-2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/brotli/1.0.9-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-5`
 
@@ -829,24 +829,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.5.0-1+deb12u4`
+### `dpkg` source package: `expat=2.5.0-1+deb12u5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.5.0-1+deb12u4`
-- `libexpat1-dev:amd64=2.5.0-1+deb12u4`
+- `libexpat1:amd64=2.5.0-1+deb12u5`
+- `libexpat1-dev:amd64=2.5.0-1+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/libexpat1-dev/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u5.dsc' expat_2.5.0-1+deb12u5.dsc 1427 SHA256:ef1c606d8e386052d3aea9b3b5ec43f3902107c007150960521781aa59ab1247
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u5.debian.tar.xz' expat_2.5.0-1+deb12u5.debian.tar.xz 67940 SHA256:08bda5605c940a2068a8f5df2a798524d8f403eae6d01e4f7039074a8e244d9e
+```
 
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.9.0-4`
 
@@ -3267,12 +3274,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u10/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u10/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.22-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.22-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.22-1~deb12u1`
-- `openssl=3.0.22-1~deb12u1`
+- `libssl3:amd64=3.0.22-1~deb12u2`
+- `openssl=3.0.22-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -3284,18 +3291,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.dsc' openssl_3.0.22-1~deb12u1.dsc 2742 SHA256:9eb196075ff65fed9512c743d5ccf918b77c3c637f6d518e4be550cf9065c655
+$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.dsc' openssl_3.0.22-1~deb12u2.dsc 2742 SHA256:7c45299a4363febec120676393d4314841c7c50da244a6e6a256f072d632d337
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz' openssl_3.0.22.orig.tar.gz 15330396 SHA256:67ebca7e50d17383028045486653492195b83db95f8558709701bb47b5c1ef81
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz.asc' openssl_3.0.22.orig.tar.gz.asc 931 SHA256:b0cc4a379a7731c3a74c349f6756d85253d83099fd63352cf12407bce4395d19
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u1.debian.tar.xz' openssl_3.0.22-1~deb12u1.debian.tar.xz 56848 SHA256:08ee68527218d6d9a0fa4741ec8ffef47646cdcad0ed0822b84bf11677c66108
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.debian.tar.xz' openssl_3.0.22-1~deb12u2.debian.tar.xz 72104 SHA256:48971306c5df8124daea7f2bd0de2be7d711e18f2f53711c11327293732e42aa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.22-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -3965,23 +3972,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb12u1`
+### `dpkg` source package: `tzdata=2026e-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb12u1`
+- `tzdata=2026e-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026e-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.dsc' tzdata_2026e-0+deb12u1.dsc 2396 SHA256:0883b9834f3e60b701f792d4ee67b527d5d5f044298c877606a3b01cded76d30
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.debian.tar.xz' tzdata_2026e-0+deb12u1.debian.tar.xz 123252 SHA256:709ac2c36ac1e49349e99a536c467dcce36937e4609d2abe8e25e891428a7602
+```
 
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
