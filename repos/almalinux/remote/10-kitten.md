@@ -1,7 +1,7 @@
 ## `almalinux:10-kitten`
 
 ```console
-$ docker pull almalinux@sha256:a5efbf84cace9cf16f1c0e7cbb01ee8f9e61a0e09b4944147a3a1164b9ff3717
+$ docker pull almalinux@sha256:d423f3aefa92fc133660ea2eac2aeb09c874f30d5199fc9cd890f2410b206e1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -218,49 +218,49 @@ $ docker pull almalinux@sha256:516903ceabb6ddc8347652edcdb60831e5d142a2f087b5bff
 ### `almalinux:10-kitten` - linux; riscv64
 
 ```console
-$ docker pull almalinux@sha256:c0738b7ac6ab7aab1f7c380c72847133d2cad0b6d607551b135731e5f361fd4d
+$ docker pull almalinux@sha256:738ecf60e68b9b43341f5b6136c6a3bdc3eb6600baa3a2186241d86daf9088ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.1 MB (66101766 bytes)**  
+-	Total Size: **66.1 MB (66111482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1eb22e47a4c3f7e2a8a762bcd567eff6c1cd47219d8a6b0feec018cee63e2fb0`
+-	Image ID: `sha256:ba1da4fd4e2d251680e6567a359d9054a8d56185a1d4d981a6ce4f3f20b576da`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 03 Oct 2026 20:18:59 GMT
+# Wed, 28 Oct 2026 17:04:50 GMT
 ADD almalinux-10-kitten-default-riscv64.tar.xz / # buildkit
-# Sat, 03 Oct 2026 20:18:59 GMT
+# Wed, 28 Oct 2026 17:04:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d6652103d8aed1ff9861e42f4ed6c42b129e33013010ca57df0c0813fba562f6`  
-		Last Modified: Sat, 03 Oct 2026 20:21:55 GMT  
-		Size: 66.1 MB (66101766 bytes)  
+	-	`sha256:e3a498ab78edafdac7208e12949858a6815527d7b25b45622a05460c5c0b065c`  
+		Last Modified: Wed, 28 Oct 2026 18:00:26 GMT  
+		Size: 66.1 MB (66111482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `almalinux:10-kitten` - unknown; unknown
 
 ```console
-$ docker pull almalinux@sha256:4e96281017f93c884af6a9733ad8446ef1caf8990314539f6a2c619a42172450
+$ docker pull almalinux@sha256:998291a313baeb83540fab43af801ec95e16882bd7e46fd36bea77c219885bc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.8 MB (4774892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61b8f4f78bcfd5d67dda7dbb95943d9452005b78747bd1b7290f3ccf92ee7f7f`
+-	Image ID: `sha256:500ec6cf636c52580d30ad16935bcf5266b182eaeb31189b9a525a1ca582bd2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dada13e70f7b6fe6b3b1d40aee89110275581f19dfc5e40fe4416f231aef3e66`  
-		Last Modified: Sat, 03 Oct 2026 20:21:45 GMT  
+	-	`sha256:379dc2877a9fbcabc2d084b7ed716b029d2a984660856eafafdc2a8e68b99ac3`  
+		Last Modified: Wed, 28 Oct 2026 18:00:18 GMT  
 		Size: 4.8 MB (4769675 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7907c6942a1d7b990d8fbbcf31069c25ac92068eefad673f81769520b47a0f21`  
-		Last Modified: Sat, 03 Oct 2026 20:21:44 GMT  
+	-	`sha256:59bc0de66ddda5f3ce27926fbe137ac670106198381997f1c140c38bcee5e866`  
+		Last Modified: Wed, 28 Oct 2026 18:00:15 GMT  
 		Size: 5.2 KB (5217 bytes)  
 		MIME: application/vnd.in-toto+json
 
