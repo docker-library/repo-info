@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e540b1889a54b2f9bcb72d549bda593112499ca89b69379d865b1c3450cb4538`
-- Created: `2026-10-23T16:57:47.580561949Z`
+- Image ID: `sha256:743d4d44cf46902888396f65d77ea56c11d37ce640e3d8902fcf5b46fbc20e97`
+- Created: `2026-10-26T17:52:54.95307964Z`
 - Virtual Size: ~ 388.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-21-jdk`
 
 ```console
-sapmachine-21-jdk-21.0.13.0.2-r0 description:
+sapmachine-21-jdk-21.0.13.0.3-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-21-jdk-21.0.13.0.2-r0 webpage:
+sapmachine-21-jdk-21.0.13.0.3-r0 webpage:
 https://sapmachine.io
 
-sapmachine-21-jdk-21.0.13.0.2-r0 installed size:
+sapmachine-21-jdk-21.0.13.0.3-r0 installed size:
 347 MiB
 
-sapmachine-21-jdk-21.0.13.0.2-r0 license:
+sapmachine-21-jdk-21.0.13.0.3-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
