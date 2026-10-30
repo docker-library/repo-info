@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-beta1-php8.5-fpm-alpine`
+# `wordpress:beta-7.2-beta3-php8.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb1c13b2992d17e6a831617f1cac4f8c36124406d40d80f1567493ba9ea497e6`
-- Created: `2026-10-21T23:27:28.267197088Z`
-- Virtual Size: ~ 365.78 Mb  
+- Image ID: `sha256:6648029b211396507d249407281f70d27aec06c055a6298df3d4aa5f2ad2cf8f`
+- Created: `2026-10-28T21:02:39.296217041Z`
+- Virtual Size: ~ 371.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -197,16 +197,16 @@ GPL-3.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -299,16 +299,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.19-r0 description:
+cups-libs-2.4.19-r1 description:
 CUPS libraries
 
-cups-libs-2.4.19-r0 webpage:
+cups-libs-2.4.19-r1 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.19-r0 installed size:
-559 KiB
+cups-libs-2.4.19-r1 installed size:
+563 KiB
 
-cups-libs-2.4.19-r0 license:
+cups-libs-2.4.19-r1 license:
 Apache-2.0
 
 ```
@@ -877,16 +877,16 @@ BSD-2-Clause
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.18-r0 description:
+libde265-1.1.3-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.18-r0 webpage:
+libde265-1.1.3-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.18-r0 installed size:
-814 KiB
+libde265-1.1.3-r0 installed size:
+886 KiB
 
-libde265-1.0.18-r0 license:
+libde265-1.1.3-r0 license:
 LGPL-3.0-or-later
 
 ```
