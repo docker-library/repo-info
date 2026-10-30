@@ -1,9 +1,9 @@
-# `composer:2.10.3`
+# `composer:2.11.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e773637b32ee477ed3fde4289ec7ce292d0a19216cf0f4d46a213e30b3cb244d`
-- Created: `2026-10-21T23:29:33.307501364Z`
+- Image ID: `sha256:75dfdea8e68c54fcb28eade4c64e069feeef2a01e4b266726ba756679450dfe1`
+- Created: `2026-10-29T17:31:01.359887456Z`
 - Virtual Size: ~ 225.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.10.3`
+  - `COMPOSER_VERSION=2.11.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1101,16 +1101,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.8-r0 description:
+pyc-3.14.10-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.8-r0 webpage:
+pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.8-r0 installed size:
+pyc-3.14.10-r1 installed size:
 0 B
 
-pyc-3.14.8-r0 license:
+pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1118,16 +1118,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.8-r0 description:
+python3-3.14.10-r1 description:
 High-level scripting language
 
-python3-3.14.8-r0 webpage:
+python3-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-3.14.8-r0 installed size:
+python3-3.14.10-r1 installed size:
 22 MiB
 
-python3-3.14.8-r0 license:
+python3-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1135,16 +1135,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.8-r0 description:
+python3-pyc-3.14.10-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.8-r0 webpage:
+python3-pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.8-r0 installed size:
+python3-pyc-3.14.10-r1 installed size:
 0 B
 
-python3-pyc-3.14.8-r0 license:
+python3-pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1152,16 +1152,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.8-r0 description:
+python3-pycache-pyc0-3.14.10-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.8-r0 webpage:
+python3-pycache-pyc0-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.8-r0 installed size:
+python3-pycache-pyc0-3.14.10-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.8-r0 license:
+python3-pycache-pyc0-3.14.10-r1 license:
 PSF-2.0
 
 ```
