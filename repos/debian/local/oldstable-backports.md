@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:be58fe5b823e62c701a01cea580acb91f6906069a1e6e33952dddad3c748c54a`
-- Created: `2026-10-21T00:14:57.518889255Z`
+- Image ID: `sha256:ba2939ccff5d517e274a1bbf5f7814bbdb60175e585eaf87153271a590acbf57`
+- Created: `2026-10-28T01:13:11.009078491Z`
 - Virtual Size: ~ 116.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1763,11 +1763,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb12u1`
+### `dpkg` source package: `tzdata=2026e-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb12u1`
+- `tzdata=2026e-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1778,7 +1778,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/
 
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
