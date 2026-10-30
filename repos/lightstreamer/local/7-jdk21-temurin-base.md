@@ -1,10 +1,10 @@
-# `lightstreamer:7.4.8-jdk21-base`
+# `lightstreamer:7.4.9-jdk21-base`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a202b34a33c4c55e5422ac79b6b60f263308297fd5bfcdc3101061de307a8650`
-- Created: `2026-10-27T00:28:04.988703262Z`
-- Virtual Size: ~ 537.03 Mb  
+- Image ID: `sha256:ac5244f605b0c3b59fbdd1aa98b9b8444509b4dc596f3ac61d809c9bef413fdd`
+- Created: `2026-10-29T19:53:54.711271113Z`
+- Virtual Size: ~ 538.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,8 +15,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
-  - `LIGHTSTREAMER_VERSION=7.4.8`
+  - `JAVA_VERSION=jdk-21.0.13+9`
+  - `LIGHTSTREAMER_VERSION=7.4.9`
 - Labels:
   - `org.opencontainers.image.authors=Lightstreamer Server Development Team <support@lightstreamer.com>`
   - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
