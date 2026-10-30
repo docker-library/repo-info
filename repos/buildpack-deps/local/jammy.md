@@ -716,8 +716,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.tar.xz' dpkg_1.21.1ubuntu2.6.tar.xz 5017128 SHA256:f66de0b3430a5545699361168824976acfa85f1308f00dde5bc35f39e15e2d02
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.dsc' dpkg_1.21.1ubuntu2.6.dsc 2254 SHA256:45e8b9e16206bc27ebe1d6a0363c36135dd40c40d6105a8bb92258693f6822e8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.tar.xz' dpkg_1.21.1ubuntu2.6.tar.xz 5017128 SHA512:2eb70e5ca3e2d0cafe460eb5236e81c3312e84426d5732cbc64952702e8e81fe9119d06a51fed1e9b72c58db8a9d4484ca6dddf5b92be351eb5a2c75ddd3c06c
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.dsc' dpkg_1.21.1ubuntu2.6.dsc 2254 SHA512:e5d28c73b84700cdbeb0f9f204e328538972dddd110fb6623eb1bdf0d85988000799408d564cb2b3c4af94b4d9bacf1a8eafb312a1e676bdd6518340082e44a4
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.2`
@@ -3004,14 +3004,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-198.208
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.diff.gz' linux_5.15.0-198.208.diff.gz 13846562 SHA512:d53b48b333868c263f33ebf8015622bc1ce72493e31892a5092689e1b359dffe535bb97867880fad5f03bd20739d3d6e6df03af60eea475f058ae9b71e53d364
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.dsc' linux_5.15.0-198.208.dsc 7655 SHA512:340fc2ab1fab3aa86b2ad92f63de61754d1ba0d90d1c5c964e24e191d6471a693837780ebedf04ad68a7e391c3675dc263cd0b3b7cef16bcef93a13332261d57
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 

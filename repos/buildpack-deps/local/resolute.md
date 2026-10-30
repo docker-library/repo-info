@@ -3098,9 +3098,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=7.0.0-38.38
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.diff.gz' linux_7.0.0-38.38.diff.gz 3455370 SHA512:70f37f6fa95fcddee670110bccf0a5a8db7bb7f7d84c607af059dbf4e3f6744c43cc01198ff54a5fce8b2ed71fb0abbeaee175a18497d931a878c04a5aba049a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.dsc' linux_7.0.0-38.38.dsc 7845 SHA512:bcfaca2361215c2af69407e51b31e9aac644de5e9fcdd35d9315c8e60fff96cca215784229b28e1036aa220dd1f76795f8250966834e1eebd00eea2a6e11ae80
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.diff.gz' linux_7.0.0-38.38.diff.gz 3455370 SHA512:70f37f6fa95fcddee670110bccf0a5a8db7bb7f7d84c607af059dbf4e3f6744c43cc01198ff54a5fce8b2ed71fb0abbeaee175a18497d931a878c04a5aba049a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.dsc' linux_7.0.0-38.38.dsc 7845 SHA512:bcfaca2361215c2af69407e51b31e9aac644de5e9fcdd35d9315c8e60fff96cca215784229b28e1036aa220dd1f76795f8250966834e1eebd00eea2a6e11ae80
 ```
 
 ### `dpkg` source package: `lto-disabled-list=79`
