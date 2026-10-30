@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6bcb9686ed169c9bf8ecbf1af62abe2051ac0f83d7c5e734d49e9fa00317c766`
-- Created: `2026-10-21T23:31:13.122465293Z`
-- Virtual Size: ~ 360.84 Mb  
+- Image ID: `sha256:ad526dbf14cf9e30a82c7b66a073e7052c47aa4b4ce0e089a1979ccb4952a175`
+- Created: `2026-10-29T19:50:49.621590257Z`
+- Virtual Size: ~ 360.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.4.1+1`
+  - `JAVA_VERSION=jdk-25.0.5+8`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=6.0.0`
 
@@ -143,16 +143,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
