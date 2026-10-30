@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bead71cea183c2b1de08fc4992fb2069341c8ab25701af497ba64f017e2b79b8`
-- Created: `2026-10-27T00:42:12.050893651Z`
-- Virtual Size: ~ 376.1 Mb  
+- Image ID: `sha256:8c658be73eb1013c34ef743361e08440fff486c9b2673c27050d2c441c2b5fdc`
+- Created: `2026-10-29T20:02:21.393268618Z`
+- Virtual Size: ~ 376.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
+  - `JAVA_VERSION=jdk-21.0.13+9`
   - `TOMEE_VER=11.0.0-M1`
   - `TOMEE_BUILD=plus`
 - Labels:
