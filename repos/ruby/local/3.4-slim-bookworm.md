@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:28e862a426ce6a1ac1bfee7b59f1090fec164925d0fa14e93daec9ac95848aec`
-- Created: `2026-10-23T16:46:06.304774233Z`
+- Image ID: `sha256:064b47fbb251a92e66c9e3e0368f76e857f5ad46d1c7e190c54fb1b393b385ff`
+- Created: `2026-10-28T02:06:42.360860046Z`
 - Virtual Size: ~ 157.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1514,12 +1514,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.22-1~deb12u1`
+### `dpkg` source package: `openssl=3.0.22-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.22-1~deb12u1`
-- `openssl=3.0.22-1~deb12u1`
+- `libssl3:amd64=3.0.22-1~deb12u2`
+- `openssl=3.0.22-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1528,13 +1528,21 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=3.0.22-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.dsc' openssl_3.0.22-1~deb12u2.dsc 2742 SHA256:7c45299a4363febec120676393d4314841c7c50da244a6e6a256f072d632d337
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz' openssl_3.0.22.orig.tar.gz 15330396 SHA256:67ebca7e50d17383028045486653492195b83db95f8558709701bb47b5c1ef81
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22.orig.tar.gz.asc' openssl_3.0.22.orig.tar.gz.asc 931 SHA256:b0cc4a379a7731c3a74c349f6756d85253d83099fd63352cf12407bce4395d19
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.22-1%7edeb12u2.debian.tar.xz' openssl_3.0.22-1~deb12u2.debian.tar.xz 72104 SHA256:48971306c5df8124daea7f2bd0de2be7d711e18f2f53711c11327293732e42aa
+```
 
-- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.22-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.22-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -1844,11 +1852,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb12u1`
+### `dpkg` source package: `tzdata=2026e-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb12u1`
+- `tzdata=2026e-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1859,7 +1867,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb12u1/
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/
 
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
