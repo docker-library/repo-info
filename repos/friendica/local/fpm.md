@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd12f1f0c8f02957fdb45f88b18d3d94658addc422fb3353bd135327ac147e0c`
-- Created: `2026-10-27T16:34:09.620183559Z`
-- Virtual Size: ~ 811.24 Mb  
+- Image ID: `sha256:9c0b05314d0d69b2771753e163f7ff06bbcba586a9c5a4230fa9e5d62cd3c17f`
+- Created: `2026-10-28T02:30:01.412569854Z`
+- Virtual Size: ~ 810.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -4492,31 +4492,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tini/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tini/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb13u1`
+### `dpkg` source package: `tzdata=2026e-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb13u1`
+- `tzdata=2026e-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.dsc' tzdata_2026c-0+deb13u1.dsc 2466 SHA256:b18d6eddfb23971bacbf569a2641cda837002a813d8e8940d8792ea7ba8e2d4e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.debian.tar.xz' tzdata_2026c-0+deb13u1.debian.tar.xz 127148 SHA256:48cd3f42cee2b8ec62ca9c2f4c43cf6c0ec05e1a5ae97f4ed771635811b82f29
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0052`
 
