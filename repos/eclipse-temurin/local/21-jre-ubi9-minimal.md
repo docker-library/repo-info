@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.12.1_1-jre-ubi9-minimal`
+# `eclipse-temurin:21.0.13_9-jre-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecec2a77b836422abd4188933df2810189fd38f95a3cb661e4c38beae2f8f312`
-- Created: `2026-10-27T17:44:04.644032871Z`
-- Virtual Size: ~ 348.35 Mb  
+- Image ID: `sha256:24dcef772c61cda7a4764e5b5e081a0bd3421ff4adf194de7a4fb8197f176e14`
+- Created: `2026-10-29T19:14:48.13401877Z`
+- Virtual Size: ~ 348.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,10 +15,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
+  - `JAVA_VERSION=jdk-21.0.13+9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-26T21:33:49Z`
+  - `build-date=2026-10-29T05:53:50Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-26T21:33:49Z`
-  - `org.opencontainers.image.revision=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
-  - `release=1793050346`
+  - `org.opencontainers.image.created=2026-10-29T05:53:50Z`
+  - `org.opencontainers.image.revision=9eac53daf60c61895dd274c7017f0605f411e146`
+  - `release=1793253163`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=8b3700629f01b12b6b7b939daabd7c1a5c7026bb`
+  - `vcs-ref=9eac53daf60c61895dd274c7017f0605f411e146`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -190,12 +190,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -616,11 +611,16 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-10.el9_8.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-10.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.1.src.rpm
+```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -758,12 +758,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 

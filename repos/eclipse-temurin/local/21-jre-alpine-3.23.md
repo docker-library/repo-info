@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.12.1_1-jre-alpine-3.23`
+# `eclipse-temurin:21.0.13_9-jre-alpine-3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad8578c58890a646623920ba633f191ca090190ac0937636ada4084c5fbba4e7`
-- Created: `2026-10-21T21:20:51.88810802Z`
-- Virtual Size: ~ 207.51 Mb  
+- Image ID: `sha256:f8f774cdfb8359c7c1ffce68ee3cf71907c5c8319bf50a173061b9d4da33d60b`
+- Created: `2026-10-29T19:12:59.457561666Z`
+- Virtual Size: ~ 207.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
+  - `JAVA_VERSION=jdk-21.0.13+9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -123,16 +123,16 @@ GPL-2.0-only
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r0 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r0 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r0 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r0 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```

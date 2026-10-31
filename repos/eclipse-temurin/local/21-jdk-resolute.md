@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.12.1_1-jdk-resolute`
+# `eclipse-temurin:21.0.13_9-jdk-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1db594cbb81652472b89175e851e4e824c09919e5acbce87f612d6f06fa3caeb`
-- Created: `2026-10-26T23:13:09.367940597Z`
-- Virtual Size: ~ 476.16 Mb  
+- Image ID: `sha256:f3e45bf6b272bb0f154638ed12a6cce8ec0d49d74fc8bbfc75dbfc63419db245`
+- Created: `2026-10-29T19:10:57.901029335Z`
+- Virtual Size: ~ 476.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
+  - `JAVA_VERSION=jdk-21.0.13+9`
 - Labels:
   - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
