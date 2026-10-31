@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16a6bb1f869bab60f0d0f9c44425930604d52dc6f6d5717b002889e6b3f950ec`
-- Created: `2026-10-28T02:13:48.694917413Z`
-- Virtual Size: ~ 458.71 Mb  
+- Image ID: `sha256:d112413a7590de9d509627995aa8329fdd962693d8b2b18d9001d49a84d62ac6`
+- Created: `2026-10-29T20:04:45.615931878Z`
+- Virtual Size: ~ 459.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -1860,21 +1860,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026e-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.dsc' tzdata_2026e-0+deb12u1.dsc 2396 SHA256:0883b9834f3e60b701f792d4ee67b527d5d5f044298c877606a3b01cded76d30
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.debian.tar.xz' tzdata_2026e-0+deb12u1.debian.tar.xz 123252 SHA256:709ac2c36ac1e49349e99a536c467dcce36937e4609d2abe8e25e891428a7602
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/
 
-- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 

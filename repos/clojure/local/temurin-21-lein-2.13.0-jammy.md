@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ddbd92aebe98c66001deec875f7a8f51e2f33cb2dd342357c199bcc488d9d8c0`
-- Created: `2026-10-27T00:50:56.56216689Z`
-- Virtual Size: ~ 465.69 Mb  
+- Image ID: `sha256:7f617e2f0edb9e73064d3a51e98002445e2e9649038a075f92d7f3b3b1a41003`
+- Created: `2026-10-29T20:04:53.130426362Z`
+- Virtual Size: ~ 466.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.12.1+1`
+  - `JAVA_VERSION=jdk-21.0.13+9`
   - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -492,8 +492,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.tar.xz' dpkg_1.21.1ubuntu2.6.tar.xz 5017128 SHA256:f66de0b3430a5545699361168824976acfa85f1308f00dde5bc35f39e15e2d02
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.dsc' dpkg_1.21.1ubuntu2.6.dsc 2254 SHA256:45e8b9e16206bc27ebe1d6a0363c36135dd40c40d6105a8bb92258693f6822e8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.tar.xz' dpkg_1.21.1ubuntu2.6.tar.xz 5017128 SHA512:2eb70e5ca3e2d0cafe460eb5236e81c3312e84426d5732cbc64952702e8e81fe9119d06a51fed1e9b72c58db8a9d4484ca6dddf5b92be351eb5a2c75ddd3c06c
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.6.dsc' dpkg_1.21.1ubuntu2.6.dsc 2254 SHA512:e5d28c73b84700cdbeb0f9f204e328538972dddd110fb6623eb1bdf0d85988000799408d564cb2b3c4af94b4d9bacf1a8eafb312a1e676bdd6518340082e44a4
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.2`
