@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c95ad176a3a73c10032e74304acc87de5a9e2289dc4a4260450ece88b0696afa`
-- Created: `2026-10-23T18:09:45.008864909Z`
+- Image ID: `sha256:c9cbd2b933e1151d6e97fa26bacdb1f7c5ed91613937933d4eb4d4cc96f9e4a1`
+- Created: `2026-10-30T19:45:07.959404401Z`
 - Virtual Size: ~ 439.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -472,7 +472,7 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-headless-25.0.5.0.9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-headless-25.0.5.0.10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 

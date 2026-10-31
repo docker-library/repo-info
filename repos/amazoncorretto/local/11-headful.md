@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:597af1634dc4cc8a37cedc0af233666c8f4b149f85f4a20b4a1230e12bace5ff`
-- Created: `2026-10-23T18:07:49.242632576Z`
+- Image ID: `sha256:3ad6d86b9a41d0780d6b445a4966dfc054ddc5d35da67513e60fcd8cd0535940`
+- Created: `2026-10-30T19:44:00.314296046Z`
 - Virtual Size: ~ 362.8 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -483,13 +483,13 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/2f9b939514669e37a7d960f1674eb90574bd9a9378a35bd965ebf50114e9be96/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-11-amazon-corretto-11.0.33.0.9-1.amzn2023.x86_64`
+### `rpm` package: `java-11-amazon-corretto-11.0.33.0.10-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `java-11-amazon-corretto-headless-11.0.33.0.9-1.amzn2023.x86_64`
+### `rpm` package: `java-11-amazon-corretto-headless-11.0.33.0.10-1.amzn2023.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
