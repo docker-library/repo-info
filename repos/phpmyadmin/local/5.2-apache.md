@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:993cc51d3486b2c6d2abc78c11b6b5d479dfe9bb34459827c986d624a372f09d`
-- Created: `2026-10-21T16:28:19.595942749Z`
-- Virtual Size: ~ 575.36 Mb  
+- Image ID: `sha256:2ba3002e5efba69d69b5b04500045a899a99c0f11c692d6cbbefd3f672843a03`
+- Created: `2026-10-28T02:20:18.719059239Z`
+- Virtual Size: ~ 575.4 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -470,11 +470,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/binutils/2.44-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/binutils/2.44-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `brotli=1.1.0-2`
+### `dpkg` source package: `brotli=1.1.0-2+deb13u1`
 
 Binary Packages:
 
-- `libbrotli1:amd64=1.1.0-2+b7`
+- `libbrotli1:amd64=1.1.0-2+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
@@ -483,7 +483,7 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris brotli=1.1.0-2
+$ apt-get source -qq --print-uris brotli=1.1.0-2+deb13u1
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.dsc' brotli_1.1.0-2+deb13u1.dsc 2469 SHA256:64a1cd7422150e5c639d9892d6ffa837438b341f521e68ac4e75f6ef4eca49a2
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0.orig.tar.gz' brotli_1.1.0.orig.tar.gz 512036 SHA256:10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265
 'http://deb.debian.org/debian-security/pool/updates/main/b/brotli/brotli_1.1.0-2%2bdeb13u1.debian.tar.xz' brotli_1.1.0-2+deb13u1.debian.tar.xz 7764 SHA256:848994612c6eb5e413d7df0e307ec7661855f5383c8cd10507e890fb7ee809ff
@@ -491,9 +491,9 @@ $ apt-get source -qq --print-uris brotli=1.1.0-2
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/brotli/1.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/brotli/1.1.0-2+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/brotli/1.1.0-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -3627,31 +3627,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026c-0+deb13u1`
+### `dpkg` source package: `tzdata=2026e-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026c-0+deb13u1`
+- `tzdata=2026e-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026c-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.dsc' tzdata_2026c-0+deb13u1.dsc 2466 SHA256:b18d6eddfb23971bacbf569a2641cda837002a813d8e8940d8792ea7ba8e2d4e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz' tzdata_2026c.orig.tar.gz 475694 SHA256:e4a178a4477f3d0ea77cc31828ff72aa38feff8d61aa13e7e99e142e9d902be4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c.orig.tar.gz.asc' tzdata_2026c.orig.tar.gz.asc 833 SHA256:26cd02e034eed682aa911d224bca3247ff15914df317e3bb0b1a01dc557b46fe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026c-0%2bdeb13u1.debian.tar.xz' tzdata_2026c-0+deb13u1.debian.tar.xz 127148 SHA256:48cd3f42cee2b8ec62ca9c2f4c43cf6c0ec05e1a5ae97f4ed771635811b82f29
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/
 
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026c-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026c-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
