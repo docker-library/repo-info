@@ -2780,14 +2780,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-198.208
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.diff.gz' linux_5.15.0-198.208.diff.gz 13846562 SHA512:d53b48b333868c263f33ebf8015622bc1ce72493e31892a5092689e1b359dffe535bb97867880fad5f03bd20739d3d6e6df03af60eea475f058ae9b71e53d364
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.dsc' linux_5.15.0-198.208.dsc 7655 SHA512:340fc2ab1fab3aa86b2ad92f63de61754d1ba0d90d1c5c964e24e191d6471a693837780ebedf04ad68a7e391c3675dc263cd0b3b7cef16bcef93a13332261d57
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -3701,9 +3696,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-attrs=21.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0.orig.tar.gz' python-attrs_21.2.0.orig.tar.gz 177524 SHA256:12cca0d697de845fd74b6b5482218988ee1415c27d3bb31503f66c2a3592b77c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.debian.tar.xz' python-attrs_21.2.0-1ubuntu1.debian.tar.xz 6960 SHA256:2e15a9622cbd245efd2d9bbb1c70419690828839d86491c451fdc48d6b8071e5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.dsc' python-attrs_21.2.0-1ubuntu1.dsc 2497 SHA256:af3ea15e0094d463feb3882b9840e31580d4d56797135d37aa6fcf6bb9c17a18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0.orig.tar.gz' python-attrs_21.2.0.orig.tar.gz 177524 SHA512:fa6569f3bdcc74a735b31dc67ce5ca3535eab8a5eb30f6b91ebf1149609294c0ef0d0910b8e41205d31c4745354c2262c18db901bae0af82c8b8cefc46f8a0a9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.debian.tar.xz' python-attrs_21.2.0-1ubuntu1.debian.tar.xz 6960 SHA512:86eeacfc9b2531cf7bbf8f46428740fb19c9630bc13aca9f46562aafbe31b0c215b3375f888f31f90ee2568f03b6aeed946157d09414f057c3b476b480b8bf02
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.dsc' python-attrs_21.2.0-1ubuntu1.dsc 2497 SHA512:a0ca391fcaa6501460b8367c109ab6f12820d64eb1621fc6c7bcb6ec268a312ae3b4817ffe651d126e33329571719dbcfb3b52027a492713ca1e9707fe67f407
 ```
 
 ### `dpkg` source package: `python-cffi=1.15.0-1build2`

@@ -177,9 +177,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA256:09bf48d7a171f9790c39a1404bad105a788934cfe77b7490c7f5c63c2576b725
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.debian.tar.xz' apparmor_3.0.4-2ubuntu2.5.debian.tar.xz 138884 SHA256:358eac264f0a12b879af79a20b9c542341f494f26c566eea2a2a4a69d09d954a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.dsc' apparmor_3.0.4-2ubuntu2.5.dsc 3320 SHA256:c46390e4ce1dbe9341c92714c8b289d4c3055714ed11a529cf0cf82e09dc1f4a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.debian.tar.xz' apparmor_3.0.4-2ubuntu2.5.debian.tar.xz 138884 SHA512:d78c45f9634fa8fb652ae6f3e5fe972fdccdef16205143326f24a50a09d4875e8767996a65e840bf8b3b5d079708230fef96d95c0a1e049589a35c14ff7f99c6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.dsc' apparmor_3.0.4-2ubuntu2.5.dsc 3320 SHA512:cba9325cf7a2ecf1fc61da985507d581efe0882842c55589b955fdb1c42ca691788d362a35a97afed0493a8d8869c020cdfbb99ec0fe02897ed6f7520ef99ea4
 ```
 
 ### `dpkg` source package: `apt=2.4.14`
@@ -2621,9 +2621,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gtk+3.0=3.24.33-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33.orig.tar.xz' gtk+3.0_3.24.33.orig.tar.xz 22449472 SHA256:588b06522e25d1579e989b6f9d8a1bdbf2fe13cde01a04e904ff346a225e7801
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.debian.tar.xz' gtk+3.0_3.24.33-1ubuntu2.2.debian.tar.xz 431240 SHA256:842fe4b2590378b3e57890fc4455e2b9674ca2d31697d2ecd64459f5f29f5295
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.dsc' gtk+3.0_3.24.33-1ubuntu2.2.dsc 4492 SHA256:0abcce1e1db4494ff9e07ec8dcda39503ad8d31ebfded46ee09b13ec2e147ada
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33.orig.tar.xz' gtk+3.0_3.24.33.orig.tar.xz 22449472 SHA512:35c844af67d442a9d55197028c6b660668c701ad8f83a64791669fca2930ada15194452b59b2ee11f8068098986218744fe9fc4742897af5a6b3eba23c98395e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.debian.tar.xz' gtk+3.0_3.24.33-1ubuntu2.2.debian.tar.xz 431240 SHA512:76b5424cffe1423026b3a0a72c5d795ec08ed08d61aad588289e36629a0ff98adebe1a1121c4f9b6b284a65e62e91d8ee8ca004eb52b8e68f64173496b66b3b7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.dsc' gtk+3.0_3.24.33-1ubuntu2.2.dsc 4492 SHA512:9364e53a587aca76d84d023536853c8804ca2c68d52c9d6eb38a3125aee79468df400173b2fad4c0df67d76c4d9c3651c255ebf821259535721162d231904437
 ```
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-5`
@@ -5764,14 +5764,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-198.208
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.diff.gz' linux_5.15.0-198.208.diff.gz 13846562 SHA512:d53b48b333868c263f33ebf8015622bc1ce72493e31892a5092689e1b359dffe535bb97867880fad5f03bd20739d3d6e6df03af60eea475f058ae9b71e53d364
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-198.208.dsc' linux_5.15.0-198.208.dsc 7655 SHA512:340fc2ab1fab3aa86b2ad92f63de61754d1ba0d90d1c5c964e24e191d6471a693837780ebedf04ad68a7e391c3675dc263cd0b3b7cef16bcef93a13332261d57
-```
 
 ### `dpkg` source package: `llvm-toolchain-14=1:14.0.0-1ubuntu1.1`
 
@@ -7736,9 +7731,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-attrs=21.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0.orig.tar.gz' python-attrs_21.2.0.orig.tar.gz 177524 SHA256:12cca0d697de845fd74b6b5482218988ee1415c27d3bb31503f66c2a3592b77c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.debian.tar.xz' python-attrs_21.2.0-1ubuntu1.debian.tar.xz 6960 SHA256:2e15a9622cbd245efd2d9bbb1c70419690828839d86491c451fdc48d6b8071e5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.dsc' python-attrs_21.2.0-1ubuntu1.dsc 2497 SHA256:af3ea15e0094d463feb3882b9840e31580d4d56797135d37aa6fcf6bb9c17a18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0.orig.tar.gz' python-attrs_21.2.0.orig.tar.gz 177524 SHA512:fa6569f3bdcc74a735b31dc67ce5ca3535eab8a5eb30f6b91ebf1149609294c0ef0d0910b8e41205d31c4745354c2262c18db901bae0af82c8b8cefc46f8a0a9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.debian.tar.xz' python-attrs_21.2.0-1ubuntu1.debian.tar.xz 6960 SHA512:86eeacfc9b2531cf7bbf8f46428740fb19c9630bc13aca9f46562aafbe31b0c215b3375f888f31f90ee2568f03b6aeed946157d09414f057c3b476b480b8bf02
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-attrs/python-attrs_21.2.0-1ubuntu1.dsc' python-attrs_21.2.0-1ubuntu1.dsc 2497 SHA512:a0ca391fcaa6501460b8367c109ab6f12820d64eb1621fc6c7bcb6ec268a312ae3b4817ffe651d126e33329571719dbcfb3b52027a492713ca1e9707fe67f407
 ```
 
 ### `dpkg` source package: `python-cffi=1.15.0-1build2`
