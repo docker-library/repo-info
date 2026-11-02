@@ -914,20 +914,9 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.30-1
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.30-1.dsc' djvulibre_3.5.30-1.dsc 2652 SHA256:93d0acae9cedd33aaae625e9d1b93494bd9e06b0bd14ee89fea1fc993e2d1cd1
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.30.orig.tar.xz' djvulibre_3.5.30.orig.tar.xz 2959648 SHA256:459ab62d1838fdfc947bf56bce71a7b3fa35f4836cc9b0f32c0017eed8417c2a
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.30-1.debian.tar.xz' djvulibre_3.5.30-1.debian.tar.xz 16344 SHA256:201c2c5c73df7d6533305cce926899be110c25af423291d9beb42f2128814f8a
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/djvulibre/3.5.30-1/ (for browsing the source)
-- https://sources.debian.net/src/djvulibre/3.5.30-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/djvulibre/3.5.30-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.23.11`
 
@@ -1932,10 +1921,6 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.31+dfsg1-1/
 
 
 ### `dpkg` source package: `imath=3.2.2-3`
@@ -3901,20 +3886,9 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.9+ds-2
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.9%2bds-2.dsc' mariadb_11.8.9+ds-2.dsc 5396 SHA256:fa3c4609a709d6f1012b48940a6567bc534f3335512f2daa8b9a7f4a4072ab9e
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.9%2bds.orig.tar.xz' mariadb_11.8.9+ds.orig.tar.xz 42060036 SHA256:af102b8ca599d764b74788a95ce14b737b17441811fea6e49392cf2890d2dc28
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.9%2bds-2.debian.tar.xz' mariadb_11.8.9+ds-2.debian.tar.xz 304768 SHA256:baf5361d53d926f85e3da10ad79172d9130d911daefdd1f86ef868c86d7a1970
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mariadb/1:11.8.9+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.9+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.9+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-2`
 
@@ -4990,20 +4964,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.14-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.14=3.14.8-1
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.8-1.dsc' python3.14_3.14.8-1.dsc 4089 SHA256:a8655ce0f97165b8da573eb351579bd1f16baeb6104dc4aeef1de233f2d15127
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.8.orig.tar.xz' python3.14_3.14.8.orig.tar.xz 24130644 SHA256:c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73
-'http://deb.debian.org/debian/pool/main/p/python3.14/python3.14_3.14.8-1.debian.tar.xz' python3.14_3.14.8-1.debian.tar.xz 261244 SHA256:2e1e12e1c62b4b182fa5acbd4e8bf1ac87c38f927bdff6b347e16372d3052e1d
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python3.14/3.14.8-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.14/3.14.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.14/3.14.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -5080,20 +5043,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.4.1-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.4.1-1.dsc' rust-sequoia-sq_1.4.1-1.dsc 4682 SHA256:ea5dfd50e90f9c6cfaa664a7bc240218bf9d332fab3a88b91253bc5a576a9b75
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.4.1.orig.tar.gz' rust-sequoia-sq_1.4.1.orig.tar.gz 775414 SHA256:9cc6b15e217c21f0b7e3f4d9d32d3f71565d7a06f78fb22354f61b45ce988c91
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.4.1-1.debian.tar.xz' rust-sequoia-sq_1.4.1-1.debian.tar.xz 6236 SHA256:0bbcf6ad658b94511d03aa0a9e590266bddb4727a25f2077d37ff922048ff663
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.4.1-1/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.4.1-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.4.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.5.0-1`
 
@@ -5196,10 +5152,6 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/serf/1.3.10-4/
 
 
 ### `dpkg` source package: `shadow=1:4.20.3-1`
@@ -5474,21 +5426,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026e-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-1.dsc' tzdata_2026e-1.dsc 2434 SHA256:b39be7b668388d49a02fb4a64131ddab62bcf0b92e0adbd793842daefaabbdb7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-1.debian.tar.xz' tzdata_2026e-1.debian.tar.xz 130100 SHA256:2043b2e445560ee613985c72bcc4f7e5199912315c60bae840e4170c07c6d1ef
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/tzdata/2026e-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026e-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026e-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0056`
 
