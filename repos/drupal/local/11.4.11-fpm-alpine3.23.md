@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:871eb4b48b14d58abf89995ed3de5c75ebe3b699aed36e03b127931e21452954`
-- Created: `2026-10-22T00:20:29.817944902Z`
-- Virtual Size: ~ 230.45 Mb  
+- Image ID: `sha256:dd3e7b99f35452246353074ebdde7f6a8370b524ebc2948a790cb2954736e55f`
+- Created: `2026-10-30T20:32:31.227817476Z`
+- Virtual Size: ~ 231.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -165,16 +165,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r0 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r0 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r0 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r0 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
