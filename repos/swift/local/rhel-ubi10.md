@@ -1,9 +1,9 @@
-# `swift:6.4.1-rhel-ubi10`
+# `swift:6.4.2-rhel-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b769d80965c5c46e31dd385431edbd0e8e0362794faddd67953d1567ee7a4737`
-- Created: `2026-10-23T16:59:39.816148886Z`
+- Image ID: `sha256:b171b0b3c1547ea172916823b9b50e6e68c2c070136afe4313d19ad7cbabd961`
+- Created: `2026-10-30T17:33:18.305175861Z`
 - Virtual Size: ~ 4.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubi10`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`

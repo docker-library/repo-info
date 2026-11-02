@@ -1,9 +1,9 @@
-# `swift:6.4.1-rhel-ubi9`
+# `swift:6.4.2-rhel-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e5b27139371a2530a676ba04f1c1bf375d7b76a7ef71b45e0efee7bac85bcb6a`
-- Created: `2026-10-27T17:46:27.827977477Z`
+- Image ID: `sha256:9d72f89e96942677c3e910bfd178b2ca4e78f43dc84736a7e911db7c3ce14c6e`
+- Created: `2026-10-30T17:32:22.139277872Z`
 - Virtual Size: ~ 4.22 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,12 +13,12 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-26T08:50:30Z`
+  - `build-date=2026-10-28T09:20:50Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-10-26T08:50:30Z`
-  - `org.opencontainers.image.revision=fc6f6060a2bff02af1c1b54fb2036a6eb7955359`
-  - `release=1793004556`
+  - `org.opencontainers.image.created=2026-10-28T09:20:50Z`
+  - `org.opencontainers.image.revision=994c86aa6f7d81b2d860d0ff8d6a1aa2330cbcfd`
+  - `release=1793179168`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=fc6f6060a2bff02af1c1b54fb2036a6eb7955359`
+  - `vcs-ref=994c86aa6f7d81b2d860d0ff8d6a1aa2330cbcfd`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -234,12 +234,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -776,11 +771,16 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-10.el9_8.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-10.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.1.src.rpm
+```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -947,26 +947,26 @@ $ dnf --quiet download --source --url libcomps-0.1.18-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.18-1.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-devel-7.76.1-40.el9_8.8.x86_64`
+### `rpm` package: `libcurl-devel-7.76.1-40.el9_8.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-devel-7.76.1-40.el9_8.8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.8.src.rpm
+$ dnf --quiet download --source --url libcurl-devel-7.76.1-40.el9_8.9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.8.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.8
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.8.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.9.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -2872,11 +2872,16 @@ $ dnf --quiet download --source --url python3-systemd-234-19.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-systemd-234-19.el9.src.rpm
 ```
 
-### `rpm` package: `python3-urllib3-1.26.5-8.el9_8.noarch`
+### `rpm` package: `python3-urllib3-1.26.5-8.el9_8.2.noarch`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-urllib3-1.26.5-8.el9_8.2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-urllib3-1.26.5-8.el9_8.2.src.rpm
+```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
 

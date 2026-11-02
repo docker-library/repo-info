@@ -1,9 +1,9 @@
-# `swift:6.4.1-trixie`
+# `swift:6.4.2-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:44eff520e837ab7b70afa5da9b70dbdd2e19daecdfa4d4c827bf744f9033c48b`
-- Created: `2026-10-28T02:07:51.785531018Z`
+- Image ID: `sha256:4745a6000db07b3246ac24ad9a6db3ba45a098d7cb8593899b66875fe8d6b997`
+- Created: `2026-10-30T17:32:08.269324303Z`
 - Virtual Size: ~ 4.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian13`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -3664,11 +3664,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb13u1`
+### `dpkg` source package: `tzdata=2026f-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb13u1`
+- `tzdata=2026f-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -3677,18 +3677,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026e-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.dsc' tzdata_2026e-0+deb13u1.dsc 2466 SHA256:d30d2263399c388a0903ee15114a80ee4583464faaa8fc08f753739ca5841cd6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026e-0%2bdeb13u1.debian.tar.xz' tzdata_2026e-0+deb13u1.debian.tar.xz 128776 SHA256:5d14cd956e43a40b887413c6fe2de79036179648ef7f35aa7498b3bb1008e4bb
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.dsc' tzdata_2026f-0+deb13u1.dsc 2466 SHA256:5b054ca653d94f5c26e8485f002915cff2e542bd5be473b224708ae301c2f9df
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.debian.tar.xz' tzdata_2026f-0+deb13u1.debian.tar.xz 128876 SHA256:1e591c778ef71dc461cdc3d16841edb48872c536cd04a27bf2ad86187126388c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026e-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unbound=1.26.2-0+deb13u1`
 

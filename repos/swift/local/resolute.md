@@ -1,9 +1,9 @@
-# `swift:6.4.1`
+# `swift:6.4.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8acc616ea22920f5223eb3e1f168d4fa9a2e6d15d6092872e7d4cafd0862fc4f`
-- Created: `2026-10-26T23:42:02.353044832Z`
+- Image ID: `sha256:783569be3cc2ef844bb05afe5557466cc6cedd653b7b742f6850707fe4a224a9`
+- Created: `2026-10-30T17:30:35.035216678Z`
 - Virtual Size: ~ 4.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu26.04`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1989,11 +1989,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-38.38`
+### `dpkg` source package: `linux=7.0.0-42.42`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-38.38`
+- `linux-libc-dev:amd64=7.0.0-42.42`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2002,10 +2002,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.0.0-38.38
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.diff.gz' linux_7.0.0-38.38.diff.gz 3455370 SHA512:70f37f6fa95fcddee670110bccf0a5a8db7bb7f7d84c607af059dbf4e3f6744c43cc01198ff54a5fce8b2ed71fb0abbeaee175a18497d931a878c04a5aba049a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-38.38.dsc' linux_7.0.0-38.38.dsc 7845 SHA512:bcfaca2361215c2af69407e51b31e9aac644de5e9fcdd35d9315c8e60fff96cca215784229b28e1036aa220dd1f76795f8250966834e1eebd00eea2a6e11ae80
+$ apt-get source -qq --print-uris linux=7.0.0-42.42
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.diff.gz' linux_7.0.0-42.42.diff.gz 5891203 SHA512:8c500d2850b70e751db9450a28d7407ecb50011ff880519a1b3eeac8b98012ab675026afd4d7e6fdbe8d6d8b6d8f6c60a2c876d66b558de47e458da91298a959
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.dsc' linux_7.0.0-42.42.dsc 7845 SHA512:5291a124ff69bb6731453b0b35fe6adf91182bb4be29e6af0dc030b763c31c1081f866f9123bd9ad78cc95e5f2541e6e3e216c8fc0339cb3ee8c091a34fbd1c6
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`

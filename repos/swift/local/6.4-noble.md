@@ -1,9 +1,9 @@
-# `swift:6.4.1-noble`
+# `swift:6.4.2-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:457e31c9b6383cd93dad65c9eecd392ef7beb6c35fb02524a1d101ef0d998540`
-- Created: `2026-10-26T23:42:26.819652606Z`
+- Image ID: `sha256:174431781cf8974a3b30d737ddbb9f30c45a940b39e1cbd711a1e6437aada887`
+- Created: `2026-10-30T17:31:08.009122389Z`
 - Virtual Size: ~ 4.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu24.04`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`

@@ -1,9 +1,9 @@
-# `swift:6.4.1-bookworm`
+# `swift:6.4.2-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d27733927688598e86ce796844ea057cf7002561886346f2be78095aaac847c6`
-- Created: `2026-10-28T02:07:02.062687284Z`
+- Image ID: `sha256:6691b51e6d5ff675bd3e478cadbd2c737226b72a5d5c5f9dbb29e34ef4d3d172`
+- Created: `2026-10-30T17:31:49.736430743Z`
 - Virtual Size: ~ 4.37 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian12`
-  - `SWIFT_BRANCH=swift-6.4.1-release`
-  - `SWIFT_VERSION=swift-6.4.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.4.2-release`
+  - `SWIFT_VERSION=swift-6.4.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -506,13 +506,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.88.1-10+deb12u15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.88.1-10+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
+### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10+deb12u1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.28+dfsg-10`
-- `libsasl2-modules:amd64=2.1.28+dfsg-10`
-- `libsasl2-modules-db:amd64=2.1.28+dfsg-10`
+- `libsasl2-2:amd64=2.1.28+dfsg-10+deb12u1`
+- `libsasl2-modules:amd64=2.1.28+dfsg-10+deb12u1`
+- `libsasl2-modules-db:amd64=2.1.28+dfsg-10+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -539,17 +539,17 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.dsc' cyrus-sasl2_2.1.28+dfsg-10.dsc 3324 SHA256:cb9c913a6f4716456c93ed205dfef84915a37cf2c994160564e8336e86831d7a
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10.debian.tar.xz 97056 SHA256:8c94a1c1982a1603d13ef055b0d2511054db4a43cbb1224702f31e5d985136b1
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.dsc' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.dsc 3670 SHA256:088990ef19c88abfbf66321eba0d0c3566ee2a5ce135e165eff5b6c2716a2ff0
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.debian.tar.xz 99600 SHA256:390fa9435dc9e7de7c4fe18423cf04b5c2e54050ef0fd344972dab50980fb8b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-2`
 
@@ -3972,11 +3972,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb12u1`
+### `dpkg` source package: `tzdata=2026f-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb12u1`
+- `tzdata=2026f-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -3985,18 +3985,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2026e-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.dsc' tzdata_2026e-0+deb12u1.dsc 2396 SHA256:0883b9834f3e60b701f792d4ee67b527d5d5f044298c877606a3b01cded76d30
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA256:b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA256:91b37052145786c4a238115bc69f5edb947d9cdd19164910c40c249be27a7eda
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026e-0%2bdeb12u1.debian.tar.xz' tzdata_2026e-0+deb12u1.debian.tar.xz 123252 SHA256:709ac2c36ac1e49349e99a536c467dcce36937e4609d2abe8e25e891428a7602
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.dsc' tzdata_2026f-0+deb12u1.dsc 2396 SHA256:e9047474a52c30cf914c8b11bbc0f9ceb289c0711c81b5fff277e1f8a4b9ce2e
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.debian.tar.xz' tzdata_2026f-0+deb12u1.debian.tar.xz 123284 SHA256:03a51a7f1daac87d927a47eccf1465ea61f896c37295f41601862c8665edfc84
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026e-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
