@@ -1827,20 +1827,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc4/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.2.0+ds-1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds-1.dsc' lerc_4.2.0+ds-1.dsc 2718 SHA256:81832001c24d3a3d181037364b69f4c459d1894b5f8acc138e6d57f7a1253ce2
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds.orig.tar.xz' lerc_4.2.0+ds.orig.tar.xz 351184 SHA256:12bcd6951a41d85bbf183595812af6f6aedaa4c8535286b7ada1586405542d23
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds-1.debian.tar.xz' lerc_4.2.0+ds-1.debian.tar.xz 7232 SHA256:bec2b3f876a14c7697f26e5e1e09e1dd25419e141f1fced98ec7498bbfb9065e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.2.0+ds-1/
 
-- https://sources.debian.net/src/lerc/4.2.0+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.2.0+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.2.0+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `less=710+really668-1`
 
@@ -4242,20 +4235,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-6
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-6.dsc' tar_1.35+dfsg-6.dsc 2122 SHA256:6b7c430392dd3410d2083d8bb2ea2dadbaa0c5b8926d58b91eada40d067dde73
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-6.debian.tar.xz' tar_1.35+dfsg-6.debian.tar.xz 22888 SHA256:48656f06aa81d6b9080d46318d94710149bdb8f8d16a5035e65555a292a35a3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-6/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-6/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.18+dfsg-1`
 
