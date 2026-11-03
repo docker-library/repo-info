@@ -1,9 +1,9 @@
-# `spark:4.2.0-scala2.13-java17-python3-ubuntu`
+# `spark:4.2.1-scala2.13-java17-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:988417844e44bd05b1fda1a089adcdd5331a3920ca8aaeea2c25824b11f02cec`
-- Created: `2026-10-27T01:23:01.079680353Z`
+- Image ID: `sha256:2b8841b108f367650378ba761872134143a8c4ca6b4a400044767d9bb8c67053`
+- Created: `2026-11-03T00:12:00.523482827Z`
 - Virtual Size: ~ 1.3 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.20.1+1`
-  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz?action=download`
-  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz.asc?action=download`
-  - `GPG_KEY=709226B910E0F10917123B6259B586ADA5A538D1`
+  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.1/spark-4.2.1-bin-hadoop3.tgz?action=download`
+  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.1/spark-4.2.1-bin-hadoop3.tgz.asc?action=download`
+  - `GPG_KEY=9442A2610B63B3F61860285F43F1222E5362CCF5`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -2185,19 +2185,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-198.208`
+### `dpkg` source package: `linux=5.15.0-202.212`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-198.208`
+- `linux-libc-dev:amd64=5.15.0-202.212`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-202.212
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-202.212.diff.gz' linux_5.15.0-202.212.diff.gz 14521532 SHA512:1a73b8b5766cdfcaa7085a3db58e139078167ea2174b2dfeff358217ba73b210476a881bb3235119cde02f4c58f7d6ad52a66f6c37328681c2e882dce50a0a92
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-202.212.dsc' linux_5.15.0-202.212.dsc 7655 SHA512:4a24215228a3dd6ec9d2f1f2441ae5044514ebe036f726a90c0e2bbe2379383200f31f3bc6addb719297580cc1b1786790af0dd1b707f08739c0b4b50c39a3ff
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
 
@@ -3553,7 +3558,7 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu9.2
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz 60140 SHA256:5678d0b3d1e609297e5a3dedfcb3474bab1cafe82c0c29aec2cef01e49a88d39
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.dsc' zlib_1.2.11.dfsg-2ubuntu9.2.dsc 2649 SHA256:ac50a5e5803c128eaef7eceda71fa13ffab3ed1e949008be244d8754d9c59e47
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz 60140 SHA512:5e86b01c08d5027fab6682849e6065b750d2aecafe8bd6ca85fd729c1cca88031e46f869e20d0b0483d2a6128eab9754f530d0b25f009b684b18bd6f0e8c4ae8
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.dsc' zlib_1.2.11.dfsg-2ubuntu9.2.dsc 2649 SHA512:08f3ca4c6680ddec9532de5e937c39aa891e1c2062e6da65a96aaa060c8111bbb63de6d5c36efd34f4d3892e6e334b50fa2947fde68b3ba276e6645027dd8715
 ```

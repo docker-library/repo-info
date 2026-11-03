@@ -1,9 +1,9 @@
-# `spark:4.2.0-scala2.13-java21-r-ubuntu`
+# `spark:4.2.1-scala2.13-java21-r-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb8efcf4455b030039ecf9af9021bd4bd832a3ae311cbea33d54c6546b56d58c`
-- Created: `2026-10-29T20:09:52.089939679Z`
+- Image ID: `sha256:a248d5aa6b0ae051064479a278a9de3205487ceb0f78315af2b7a25b76623ac2`
+- Created: `2026-11-03T00:12:39.407911671Z`
 - Virtual Size: ~ 1.86 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.13+9`
-  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz?action=download`
-  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.0/spark-4.2.0-bin-hadoop3.tgz.asc?action=download`
-  - `GPG_KEY=709226B910E0F10917123B6259B586ADA5A538D1`
+  - `SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.1/spark-4.2.1-bin-hadoop3.tgz?action=download`
+  - `SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.2.1/spark-4.2.1-bin-hadoop3.tgz.asc?action=download`
+  - `GPG_KEY=9442A2610B63B3F61860285F43F1222E5362CCF5`
   - `SPARK_HOME=/opt/spark`
   - `R_HOME=/usr/lib/R`
 - Labels:
@@ -114,9 +114,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA256:09bf48d7a171f9790c39a1404bad105a788934cfe77b7490c7f5c63c2576b725
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.debian.tar.xz' apparmor_3.0.4-2ubuntu2.5.debian.tar.xz 138884 SHA256:358eac264f0a12b879af79a20b9c542341f494f26c566eea2a2a4a69d09d954a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.dsc' apparmor_3.0.4-2ubuntu2.5.dsc 3320 SHA256:c46390e4ce1dbe9341c92714c8b289d4c3055714ed11a529cf0cf82e09dc1f4a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.debian.tar.xz' apparmor_3.0.4-2ubuntu2.5.debian.tar.xz 138884 SHA512:d78c45f9634fa8fb652ae6f3e5fe972fdccdef16205143326f24a50a09d4875e8767996a65e840bf8b3b5d079708230fef96d95c0a1e049589a35c14ff7f99c6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.5.dsc' apparmor_3.0.4-2ubuntu2.5.dsc 3320 SHA512:cba9325cf7a2ecf1fc61da985507d581efe0882842c55589b955fdb1c42ca691788d362a35a97afed0493a8d8869c020cdfbb99ec0fe02897ed6f7520ef99ea4
 ```
 
 ### `dpkg` source package: `apt=2.4.14`
@@ -1585,9 +1585,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gtk+3.0=3.24.33-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33.orig.tar.xz' gtk+3.0_3.24.33.orig.tar.xz 22449472 SHA256:588b06522e25d1579e989b6f9d8a1bdbf2fe13cde01a04e904ff346a225e7801
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.debian.tar.xz' gtk+3.0_3.24.33-1ubuntu2.2.debian.tar.xz 431240 SHA256:842fe4b2590378b3e57890fc4455e2b9674ca2d31697d2ecd64459f5f29f5295
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.dsc' gtk+3.0_3.24.33-1ubuntu2.2.dsc 4492 SHA256:0abcce1e1db4494ff9e07ec8dcda39503ad8d31ebfded46ee09b13ec2e147ada
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33.orig.tar.xz' gtk+3.0_3.24.33.orig.tar.xz 22449472 SHA512:35c844af67d442a9d55197028c6b660668c701ad8f83a64791669fca2930ada15194452b59b2ee11f8068098986218744fe9fc4742897af5a6b3eba23c98395e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.debian.tar.xz' gtk+3.0_3.24.33-1ubuntu2.2.debian.tar.xz 431240 SHA512:76b5424cffe1423026b3a0a72c5d795ec08ed08d61aad588289e36629a0ff98adebe1a1121c4f9b6b284a65e62e91d8ee8ca004eb52b8e68f64173496b66b3b7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk%2b3.0/gtk%2b3.0_3.24.33-1ubuntu2.2.dsc' gtk+3.0_3.24.33-1ubuntu2.2.dsc 4492 SHA512:9364e53a587aca76d84d023536853c8804ca2c68d52c9d6eb38a3125aee79468df400173b2fad4c0df67d76c4d9c3651c255ebf821259535721162d231904437
 ```
 
 ### `dpkg` source package: `gtk-d=3.10.0-1ubuntu1`
@@ -2380,10 +2380,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libdrm=2.4.113-2~ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113.orig.tar.xz' libdrm_2.4.113.orig.tar.xz 457064 SHA256:7fd7eb2967f63beb4606f22d50e277d993480d05ef75dd88a9bd8e677323e5e1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113.orig.tar.xz.asc' libdrm_2.4.113.orig.tar.xz.asc 833 SHA256:105067ab75c6b05fd2d202fda83e35864e6ff21cd565302ba2228aa498c13289
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113-2%7eubuntu0.22.04.1.debian.tar.xz' libdrm_2.4.113-2~ubuntu0.22.04.1.debian.tar.xz 60984 SHA256:cb1ee404ce432906c306a5a2fa8bcadcae42bf1adc91c434dfd7d1e26aa272c0
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113-2%7eubuntu0.22.04.1.dsc' libdrm_2.4.113-2~ubuntu0.22.04.1.dsc 3360 SHA256:51aca908b4884d500158077ff66ee0aabbdd1b1ada5271321b25d425eabd1c3e
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113.orig.tar.xz' libdrm_2.4.113.orig.tar.xz 457064 SHA512:fca9834ce090f63ce6dc6d04491a2c5e86162fdddfc8ea70d55a6cdeb401be656388aae1577e58f463a78d8dc502be0a641908784819874e20bbec9a39a057e0
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113.orig.tar.xz.asc' libdrm_2.4.113.orig.tar.xz.asc 833 SHA512:07807ad5fefd36f58400877bdb0c7cbde445888bd88e8f852b177b88f0c4c3d2bb53e334341ae5b0441c148f219cf841e45d4ae5c06415fc9044c6ff1aa9e596
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113-2%7eubuntu0.22.04.1.debian.tar.xz' libdrm_2.4.113-2~ubuntu0.22.04.1.debian.tar.xz 60984 SHA512:ab34c74ef4cc56990c078f7d5206037516ebb364e5a0e4dc2ab67ef43452f70eb83b5d5c06e2de4d23233ef26bfefe4cb210574008f7ab7f796434d008bda931
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.113-2%7eubuntu0.22.04.1.dsc' libdrm_2.4.113-2~ubuntu0.22.04.1.dsc 3360 SHA512:85bf8290d7c3ed97803bf71c9eb640098ada36bc542849a71afca5328076c14cd6a2831b7c336c47a4433dbd256b4c3a9571dcfe5bf396d97621c2c836cf116d
 ```
 
 ### `dpkg` source package: `libedit=3.1-20210910-1build1`
@@ -6660,7 +6660,7 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu9.2
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz 60140 SHA256:5678d0b3d1e609297e5a3dedfcb3474bab1cafe82c0c29aec2cef01e49a88d39
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.dsc' zlib_1.2.11.dfsg-2ubuntu9.2.dsc 2649 SHA256:ac50a5e5803c128eaef7eceda71fa13ffab3ed1e949008be244d8754d9c59e47
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu9.2.debian.tar.xz 60140 SHA512:5e86b01c08d5027fab6682849e6065b750d2aecafe8bd6ca85fd729c1cca88031e46f869e20d0b0483d2a6128eab9754f530d0b25f009b684b18bd6f0e8c4ae8
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.2.dsc' zlib_1.2.11.dfsg-2ubuntu9.2.dsc 2649 SHA512:08f3ca4c6680ddec9532de5e937c39aa891e1c2062e6da65a96aaa060c8111bbb63de6d5c36efd34f4d3892e6e334b50fa2947fde68b3ba276e6645027dd8715
 ```
