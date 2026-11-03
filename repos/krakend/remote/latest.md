@@ -1,7 +1,7 @@
 ## `krakend:latest`
 
 ```console
-$ docker pull krakend@sha256:8b1ddc8546ad71b4b43dbc977b7b55873d853754ef75eccc52a6177c281dd568
+$ docker pull krakend@sha256:05f79d7ee29bf2018a5fa314b9610ae0aecdd07af1ae3e6a2652d2e6c0f05b02
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull krakend@sha256:8b1ddc8546ad71b4b43dbc977b7b55873d853754ef75eccc52a
 ### `krakend:latest` - linux; amd64
 
 ```console
-$ docker pull krakend@sha256:e596a1abb34c52c5ed85b5a8d020114ac24404e8f822d24f5efe4fc4887d4808
+$ docker pull krakend@sha256:548ad3d878b3bdafb5b536662cdf923ed1fd6278ab3f37b07b6be25a66884981
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49390898 bytes)**  
+-	Total Size: **49.4 MB (49397618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71dd5e22eb10f40a71bf9fe79557db04c9dd96eb474733b26e399f1e123a5939`
+-	Image ID: `sha256:fddce434f61071bf200ef4b6e64a5ee6f2cfe8bb54ac6dbbd9654d60737ab7e9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
@@ -29,21 +29,21 @@ $ docker pull krakend@sha256:e596a1abb34c52c5ed85b5a8d020114ac24404e8f822d24f5ef
 ADD alpine-minirootfs-3.23.7-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 20:46:55 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:56:19 GMT
+# Tue, 03 Nov 2026 00:16:29 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
-# Wed, 21 Oct 2026 21:56:19 GMT
+# Tue, 03 Nov 2026 00:16:29 GMT
 RUN set -eux; 	apk add --no-cache --virtual .run-deps ca-certificates su-exec tzdata; 	adduser -u 1000 -S -D -H krakend; # buildkit
-# Wed, 21 Oct 2026 21:56:23 GMT
-RUN set -eux;     apk add --no-cache --virtual .build-deps gnupg;     arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			export GOARCH='amd64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=739e288791fc1a52cb95e43e816020abe571f50d0696bd3e4d9a3e953841fc91c355e0ab0af4c358e6d63953d6ddfa3f1cf4d2b0ebf21be455fcd4b8bb3639db; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=3c7007758b10530a9b50cee1a8441025e506053164005b30f2ecae866aa9ca2b9e4041c384b209ce99af6934908d666112be4dab4adfca9f175f3ce204973f13; 			;; 		*) echo >&2 "error: unsupported architecture '$TARGETARCH' (likely packaging update needed)"; exit 1 ;; 	esac;     wget -O krakend.tar.gz "https://github.com/krakend/krakend-ce/releases/download/v3.0.2/krakend_3.0.2_${GOARCH}_alpine.tar.gz";     wget -O krakend.tar.gz.asc "https://github.com/krakend/krakend-ce/releases/download/v3.0.2/krakend_3.0.2_${GOARCH}_alpine.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 5B270F2E01E375FD9D5635E25DE6FD698AD6FDD2;     gpg --batch --verify krakend.tar.gz.asc krakend.tar.gz;     gpgconf --kill all;     rm -rf "$GNUPGHOME";     echo "$KRAKEND_DOWNLOAD_SHA512 *krakend.tar.gz" | sha512sum -c;     tar -xzf krakend.tar.gz -C / --strip-components 1;     rm -f krakend.tar.gz krakend.tar.gz.asc;     apk del --no-network .build-deps;     echo '{ "version": 4 }' > /etc/krakend/krakend.json # buildkit
-# Wed, 21 Oct 2026 21:56:23 GMT
+# Tue, 03 Nov 2026 00:16:33 GMT
+RUN set -eux;     apk add --no-cache --virtual .build-deps gnupg;     arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			export GOARCH='amd64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=aa6988723bba55d14d2355b0790ee700dbf9fd00f4486f80356e882e799bd09310c21688d872b6b31c9cae59816ff14ec823997a50c368f531011cafb6c393b6; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=a36f4fa30c2dc7e5760ebd94b432df95eed872f5e3aaeea41b5e507dd7e9f1eb51e6a44186e719a366300e19834b3cdd543b470b48aba48a8fa79ad379f6d151; 			;; 		*) echo >&2 "error: unsupported architecture '$TARGETARCH' (likely packaging update needed)"; exit 1 ;; 	esac;     wget -O krakend.tar.gz "https://github.com/krakend/krakend-ce/releases/download/v3.0.3/krakend_3.0.3_${GOARCH}_alpine.tar.gz";     wget -O krakend.tar.gz.asc "https://github.com/krakend/krakend-ce/releases/download/v3.0.3/krakend_3.0.3_${GOARCH}_alpine.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 5B270F2E01E375FD9D5635E25DE6FD698AD6FDD2;     gpg --batch --verify krakend.tar.gz.asc krakend.tar.gz;     gpgconf --kill all;     rm -rf "$GNUPGHOME";     echo "$KRAKEND_DOWNLOAD_SHA512 *krakend.tar.gz" | sha512sum -c;     tar -xzf krakend.tar.gz -C / --strip-components 1;     rm -f krakend.tar.gz krakend.tar.gz.asc;     apk del --no-network .build-deps;     echo '{ "version": 4 }' > /etc/krakend/krakend.json # buildkit
+# Tue, 03 Nov 2026 00:16:33 GMT
 WORKDIR /etc/krakend
-# Wed, 21 Oct 2026 21:56:23 GMT
+# Tue, 03 Nov 2026 00:16:33 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 21 Oct 2026 21:56:23 GMT
+# Tue, 03 Nov 2026 00:16:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 21:56:23 GMT
+# Tue, 03 Nov 2026 00:16:33 GMT
 EXPOSE map[8080/tcp:{} 8090/tcp:{}]
-# Wed, 21 Oct 2026 21:56:23 GMT
+# Tue, 03 Nov 2026 00:16:33 GMT
 CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
@@ -52,53 +52,53 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Last Modified: Wed, 21 Oct 2026 20:47:02 GMT  
 		Size: 3.9 MB (3852227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d86938cd687faeeb2755d7a8671c586db08e52d364d59e0b7db1c625017f7a8`  
-		Last Modified: Wed, 21 Oct 2026 21:56:29 GMT  
-		Size: 415.9 KB (415893 bytes)  
+	-	`sha256:1b6834ebb8c40a8b6c976cb56328fdb17087c4d7f1b244995da10ab62bf649e9`  
+		Last Modified: Tue, 03 Nov 2026 00:16:40 GMT  
+		Size: 415.9 KB (415924 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40a1ad7c185e5e083e93f286478146d48ed1fd2c7b626e23e8bba45e4eb18659`  
-		Last Modified: Wed, 21 Oct 2026 21:56:30 GMT  
-		Size: 45.1 MB (45122116 bytes)  
+	-	`sha256:11e37bb6d194fce3d1c2d1268c087a3e4a8391dd92d54c4a0dc78f4e07b9ab15`  
+		Last Modified: Tue, 03 Nov 2026 00:16:42 GMT  
+		Size: 45.1 MB (45128805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58b4323283f98cf9fe1077dcddd77220d8d48ad1610ed9aa86ef492ad588fb31`  
-		Last Modified: Wed, 21 Oct 2026 21:56:29 GMT  
+	-	`sha256:2ff3aa1805c5f200659219949c9c9a016899452dcba37c4e5b42cb3c61bfeb59`  
+		Last Modified: Tue, 03 Nov 2026 00:16:40 GMT  
 		Size: 630.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:latest` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:b2fe23d3bc7d3ff2a229d4fc914943e30d4b4759c92c56efeabf82fd3f62171f
+$ docker pull krakend@sha256:f4aac6273e3a85ee66ed3b7d14dcef6a1bcf9eefc689f59440a1d85b4a43ed14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.1 KB (15127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe8afcafa62d6a10e99e8356691fc24de5ce13c65e88235a68ccd55c8aeb596c`
+-	Image ID: `sha256:2c505485f48f814c1d73117e72590767e6393e2a1a725a5bb22d8f9b19458a40`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ddbe5887feb66c73aec41f6a9c5eef3520c50ff4987aafc3c5f30601ac815521`  
-		Last Modified: Wed, 21 Oct 2026 21:56:29 GMT  
+	-	`sha256:0c33cd4da93f03d1ab812d32ab49986e3c98b85f1ea18a6e8f09a3f9d3802c2a`  
+		Last Modified: Tue, 03 Nov 2026 00:16:40 GMT  
 		Size: 15.1 KB (15127 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `krakend:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull krakend@sha256:56cca95edfbaa7b361ac6cfb800b9b5757b2714b15d95e98bf0cabaadba3508b
+$ docker pull krakend@sha256:ae9a1b793c44f4e6bb3df3ff91237fc3e021be3c39b822705bd720db067d218a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.1 MB (46131034 bytes)**  
+-	Total Size: **46.1 MB (46127704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be461065e0790c0c53ad885d23ee6289055dd2924e5cfd40e665d451c4ca0bc6`
+-	Image ID: `sha256:79b57d06f72ea484575263ee1989af3394a8db635a014733c34f0efcc97ff611`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["krakend","run","-c","krakend.json"]`
 
@@ -107,21 +107,21 @@ $ docker pull krakend@sha256:56cca95edfbaa7b361ac6cfb800b9b5757b2714b15d95e98bf0
 ADD alpine-minirootfs-3.23.7-aarch64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 20:46:49 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:52:25 GMT
+# Tue, 03 Nov 2026 00:16:44 GMT
 LABEL org.opencontainers.image.authors=community@krakend.io
-# Wed, 21 Oct 2026 22:52:25 GMT
+# Tue, 03 Nov 2026 00:16:44 GMT
 RUN set -eux; 	apk add --no-cache --virtual .run-deps ca-certificates su-exec tzdata; 	adduser -u 1000 -S -D -H krakend; # buildkit
-# Wed, 21 Oct 2026 22:52:28 GMT
-RUN set -eux;     apk add --no-cache --virtual .build-deps gnupg;     arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			export GOARCH='amd64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=739e288791fc1a52cb95e43e816020abe571f50d0696bd3e4d9a3e953841fc91c355e0ab0af4c358e6d63953d6ddfa3f1cf4d2b0ebf21be455fcd4b8bb3639db; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=3c7007758b10530a9b50cee1a8441025e506053164005b30f2ecae866aa9ca2b9e4041c384b209ce99af6934908d666112be4dab4adfca9f175f3ce204973f13; 			;; 		*) echo >&2 "error: unsupported architecture '$TARGETARCH' (likely packaging update needed)"; exit 1 ;; 	esac;     wget -O krakend.tar.gz "https://github.com/krakend/krakend-ce/releases/download/v3.0.2/krakend_3.0.2_${GOARCH}_alpine.tar.gz";     wget -O krakend.tar.gz.asc "https://github.com/krakend/krakend-ce/releases/download/v3.0.2/krakend_3.0.2_${GOARCH}_alpine.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 5B270F2E01E375FD9D5635E25DE6FD698AD6FDD2;     gpg --batch --verify krakend.tar.gz.asc krakend.tar.gz;     gpgconf --kill all;     rm -rf "$GNUPGHOME";     echo "$KRAKEND_DOWNLOAD_SHA512 *krakend.tar.gz" | sha512sum -c;     tar -xzf krakend.tar.gz -C / --strip-components 1;     rm -f krakend.tar.gz krakend.tar.gz.asc;     apk del --no-network .build-deps;     echo '{ "version": 4 }' > /etc/krakend/krakend.json # buildkit
-# Wed, 21 Oct 2026 22:52:28 GMT
+# Tue, 03 Nov 2026 00:16:48 GMT
+RUN set -eux;     apk add --no-cache --virtual .build-deps gnupg;     arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			export GOARCH='amd64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=aa6988723bba55d14d2355b0790ee700dbf9fd00f4486f80356e882e799bd09310c21688d872b6b31c9cae59816ff14ec823997a50c368f531011cafb6c393b6; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			export KRAKEND_DOWNLOAD_SHA512=a36f4fa30c2dc7e5760ebd94b432df95eed872f5e3aaeea41b5e507dd7e9f1eb51e6a44186e719a366300e19834b3cdd543b470b48aba48a8fa79ad379f6d151; 			;; 		*) echo >&2 "error: unsupported architecture '$TARGETARCH' (likely packaging update needed)"; exit 1 ;; 	esac;     wget -O krakend.tar.gz "https://github.com/krakend/krakend-ce/releases/download/v3.0.3/krakend_3.0.3_${GOARCH}_alpine.tar.gz";     wget -O krakend.tar.gz.asc "https://github.com/krakend/krakend-ce/releases/download/v3.0.3/krakend_3.0.3_${GOARCH}_alpine.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 5B270F2E01E375FD9D5635E25DE6FD698AD6FDD2;     gpg --batch --verify krakend.tar.gz.asc krakend.tar.gz;     gpgconf --kill all;     rm -rf "$GNUPGHOME";     echo "$KRAKEND_DOWNLOAD_SHA512 *krakend.tar.gz" | sha512sum -c;     tar -xzf krakend.tar.gz -C / --strip-components 1;     rm -f krakend.tar.gz krakend.tar.gz.asc;     apk del --no-network .build-deps;     echo '{ "version": 4 }' > /etc/krakend/krakend.json # buildkit
+# Tue, 03 Nov 2026 00:16:48 GMT
 WORKDIR /etc/krakend
-# Wed, 21 Oct 2026 22:52:28 GMT
+# Tue, 03 Nov 2026 00:16:48 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 21 Oct 2026 22:52:28 GMT
+# Tue, 03 Nov 2026 00:16:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 22:52:28 GMT
+# Tue, 03 Nov 2026 00:16:48 GMT
 EXPOSE map[8080/tcp:{} 8090/tcp:{}]
-# Wed, 21 Oct 2026 22:52:28 GMT
+# Tue, 03 Nov 2026 00:16:48 GMT
 CMD ["krakend" "run" "-c" "krakend.json"]
 ```
 
@@ -130,39 +130,39 @@ CMD ["krakend" "run" "-c" "krakend.json"]
 		Last Modified: Wed, 21 Oct 2026 20:46:55 GMT  
 		Size: 4.2 MB (4189494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c035b3de5856689f64851690691b5f491254fe39883664b81c7c3bcf40047a3`  
-		Last Modified: Wed, 21 Oct 2026 22:52:35 GMT  
-		Size: 420.1 KB (420110 bytes)  
+	-	`sha256:de827ff06a6d7060047f8bdc15d2374d584d7cf9281bfc3a6e4fbb6f8e379ac2`  
+		Last Modified: Tue, 03 Nov 2026 00:16:54 GMT  
+		Size: 420.1 KB (420129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:018216fb8f36de451c66fb55f5ed0b6b8f336981a80feb30eaca437585d37625`  
-		Last Modified: Wed, 21 Oct 2026 22:52:36 GMT  
-		Size: 41.5 MB (41520776 bytes)  
+	-	`sha256:ccca52ee4b12e33f50f7415510ccc196d6470df10398dfae16ccf2d1fafbfc73`  
+		Last Modified: Tue, 03 Nov 2026 00:16:56 GMT  
+		Size: 41.5 MB (41517421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbd750b007ffd34743e86b210124754fa8d7bf8daf9e154c5763996711908a95`  
-		Last Modified: Wed, 21 Oct 2026 22:52:35 GMT  
-		Size: 622.0 B  
+	-	`sha256:8773035d2302d4e5fe72bd8b12f17ac4285b982616d1655f183574f83a9b6fbb`  
+		Last Modified: Tue, 03 Nov 2026 00:16:54 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `krakend:latest` - unknown; unknown
 
 ```console
-$ docker pull krakend@sha256:82101283953bec60a0f02d70014f71dfb25e5455369f66575c978a15338ff6d7
+$ docker pull krakend@sha256:d8526283791e36ccd1104ca18c85170e988ae0703a8d19795f7714427813df62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 KB (15245 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bb5b6daa7de9ebe06c2f2db88ab41d976d397dd3c729d25b5ba8e41812a1ece`
+-	Image ID: `sha256:2c640f14dada158fc76f566bd7f31d96ce7c5bb69fc1f612ce0c447d2a605c12`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f969ab9c2b5fe283ba314a8026274089f9ce5dced9bd8740e0529ec4a003987`  
-		Last Modified: Wed, 21 Oct 2026 22:52:35 GMT  
+	-	`sha256:218d61857c022719b6e6e57fad41a2498b40d1123dac4f20c356926adc55145e`  
+		Last Modified: Tue, 03 Nov 2026 00:16:54 GMT  
 		Size: 15.2 KB (15245 bytes)  
 		MIME: application/vnd.in-toto+json
