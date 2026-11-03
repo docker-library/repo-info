@@ -1,9 +1,9 @@
-# `sonarqube:2026.5.3-developer`
+# `sonarqube:2026.5.4-developer`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2131dfcf09e6af6bdaf979d5c4014d0d3f04ac0dfb2adf5a7a009adef3991044`
-- Created: `2026-10-29T19:55:43.099698923Z`
+- Image ID: `sha256:0b13f5ecc7f69e5a2a69c0ff0c91aa07df52bf2f1a3d04408d251b971a575bae`
+- Created: `2026-11-03T00:18:12.744145401Z`
 - Virtual Size: ~ 1.99 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `JAVA_VERSION=jdk-25.0.5+8`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=2026.5.3.133540`
+  - `SONAR_VERSION=2026.5.4.134003`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
