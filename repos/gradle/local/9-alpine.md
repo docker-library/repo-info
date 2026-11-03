@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3f390ef27a8e026c5aeb6eff1fc186d9fd07540ca43bbf2d226aec8372f26eb`
-- Created: `2026-10-21T23:30:00.723037506Z`
-- Virtual Size: ~ 596.38 Mb  
+- Image ID: `sha256:f0ec520f70df279650c5fb0be2060681f452f67451eac81ea131a337b9f9f852`
+- Created: `2026-10-29T19:48:50.279357881Z`
+- Virtual Size: ~ 596.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.4.1+1`
+  - `JAVA_VERSION=jdk-25.0.5+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.8.2`
 
@@ -211,16 +211,16 @@ GPL-2.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -381,16 +381,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -619,16 +619,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
@@ -1520,16 +1520,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.8-r0 description:
+pyc-3.14.10-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.8-r0 webpage:
+pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.8-r0 installed size:
+pyc-3.14.10-r1 installed size:
 0 B
 
-pyc-3.14.8-r0 license:
+pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1537,16 +1537,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.8-r0 description:
+python3-3.14.10-r1 description:
 High-level scripting language
 
-python3-3.14.8-r0 webpage:
+python3-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-3.14.8-r0 installed size:
+python3-3.14.10-r1 installed size:
 22 MiB
 
-python3-3.14.8-r0 license:
+python3-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1554,16 +1554,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.8-r0 description:
+python3-pyc-3.14.10-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.8-r0 webpage:
+python3-pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.8-r0 installed size:
+python3-pyc-3.14.10-r1 installed size:
 0 B
 
-python3-pyc-3.14.8-r0 license:
+python3-pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1571,16 +1571,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.8-r0 description:
+python3-pycache-pyc0-3.14.10-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.8-r0 webpage:
+python3-pycache-pyc0-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.8-r0 installed size:
+python3-pycache-pyc0-3.14.10-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.8-r0 license:
+python3-pycache-pyc0-3.14.10-r1 license:
 PSF-2.0
 
 ```
