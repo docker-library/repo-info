@@ -4189,10 +4189,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris subversion=1.14.1-3ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz' subversion_1.14.1.orig.tar.gz 11534165 SHA256:dee2796abaa1f5351e6cc2a60b1917beb8238af548b20d3e1ec22760ab2f0cad
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz.asc' subversion_1.14.1.orig.tar.gz.asc 1288 SHA256:4dafc04642e634f3b75d70d3d707ba8eacc63a4925026402afcb94566f445fa6
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3ubuntu0.22.04.1.debian.tar.xz' subversion_1.14.1-3ubuntu0.22.04.1.debian.tar.xz 432564 SHA256:385778429161c23694b81514806536efe59526e30a05212b94efb4ad4bb8aab3
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3ubuntu0.22.04.1.dsc' subversion_1.14.1-3ubuntu0.22.04.1.dsc 3362 SHA256:3d79e0b348cfa236b900356418b293e59b0c80e729677b8f084d613d9591d757
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz' subversion_1.14.1.orig.tar.gz 11534165 SHA512:6cd780f6669c811264de03b94ea41487111957dfd817498699c91e5dbb975e4b9626de9c436c5722fd6a6fadc4fef35f51905c2c0f5fd4955cf0fadef9cba60e
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz.asc' subversion_1.14.1.orig.tar.gz.asc 1288 SHA512:56f3b3ae63e10c503b741107261da955088749845693b34125f8e61c7850035021684b31944e99ed50628cc4f601081627c1472f83f8196eac3a289038a842f9
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3ubuntu0.22.04.1.debian.tar.xz' subversion_1.14.1-3ubuntu0.22.04.1.debian.tar.xz 432564 SHA512:622d2212a418ea1927e826ea82948ddd8693061fd6cfcf69b988fcaf0c8c3065a982d09e7fac0b629ca63d191f54d896b37bf69a761e68ddd7b4ac781e2d31e0
+'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3ubuntu0.22.04.1.dsc' subversion_1.14.1-3ubuntu0.22.04.1.dsc 3362 SHA512:a9b308801753c35a0f2a69b3ba95a5b2e548f36613c76c31755f207fc9479af40b72f9f5e1a13490a6ee2efbd63288b308d7bb27853cc8070beca57238ad06a5
 ```
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.23`

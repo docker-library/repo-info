@@ -2176,20 +2176,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.2.0+ds-1
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds-1.dsc' lerc_4.2.0+ds-1.dsc 2718 SHA256:81832001c24d3a3d181037364b69f4c459d1894b5f8acc138e6d57f7a1253ce2
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds.orig.tar.xz' lerc_4.2.0+ds.orig.tar.xz 351184 SHA256:12bcd6951a41d85bbf183595812af6f6aedaa4c8535286b7ada1586405542d23
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.2.0%2bds-1.debian.tar.xz' lerc_4.2.0+ds-1.debian.tar.xz 7232 SHA256:bec2b3f876a14c7697f26e5e1e09e1dd25419e141f1fced98ec7498bbfb9065e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.2.0+ds-1/
 
-- https://sources.debian.net/src/lerc/4.2.0+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.2.0+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.2.0+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=3.0.2-2`
 
@@ -2447,20 +2440,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17030-1
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17030-1.dsc' liberror-perl_0.17030-1.dsc 2337 SHA256:44590c5e4057ee2b2090b7ca661cdbead886528a2b5b5fa7ae708f8b9c1814bf
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17030.orig.tar.gz' liberror-perl_0.17030.orig.tar.gz 33488 SHA256:34d382276c0fb0d6b38355b94c96a30b12d834d5662eb53f088ee25e3e712924
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17030-1.debian.tar.xz' liberror-perl_0.17030-1.debian.tar.xz 4660 SHA256:6824b886f5068d9345279e2425b423fd47623c3ffe74732074b67c5863040ac7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17030-1/
 
-- https://sources.debian.net/src/liberror-perl/0.17030-1/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17030-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17030-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libevent=2.1.13-stable-1`
 
@@ -4665,20 +4651,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.48-3.1
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48-3.1.dsc' pcre2_10.48-3.1.dsc 2371 SHA256:ab7b0676f36cd9de83e812c800873e53605c09bacad7dc2c203aa7222ac9ab68
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48.orig.tar.gz' pcre2_10.48.orig.tar.gz 2887260 SHA256:ebcc25aadf2a51fa1fefa9b8bc9e7a79b3dae86870a0f1152a22e42befd46888
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48-3.1.diff.gz' pcre2_10.48-3.1.diff.gz 8827 SHA256:34420b40e5c1277c4d847ab2b4f54dd58bf8ad63bf5f3995378de73295c788a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.48-3.1/
 
-- https://sources.debian.net/src/pcre2/10.48-3.1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.48-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.48-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.42.3-1`
 
@@ -4882,20 +4861,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-1/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.7-1
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.7-1.dsc' procps_4.0.7-1.dsc 2124 SHA256:a9c7d2c76b12857bc51edb25982ac4878a63ca56ae8125ff6db70f9d1193e9d2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.7.orig.tar.xz' procps_4.0.7.orig.tar.xz 1585496 SHA256:36dd88bb129cbaad5c5481cddde6dd16ab533e677cf99c424f0bb63f555f7e47
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.7-1.debian.tar.xz' procps_4.0.7-1.debian.tar.xz 29372 SHA256:d86677e162d3a15bb7db368e4d07a5cf29495d515f801f1f212f479108dbb12b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.7-1/
 
-- https://sources.debian.net/src/procps/2:4.0.7-1/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-packaging=26.2-3`
 
