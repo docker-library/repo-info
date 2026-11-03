@@ -1841,20 +1841,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.48-3.1
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48-3.1.dsc' pcre2_10.48-3.1.dsc 2371 SHA256:ab7b0676f36cd9de83e812c800873e53605c09bacad7dc2c203aa7222ac9ab68
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48.orig.tar.gz' pcre2_10.48.orig.tar.gz 2887260 SHA256:ebcc25aadf2a51fa1fefa9b8bc9e7a79b3dae86870a0f1152a22e42befd46888
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.48-3.1.diff.gz' pcre2_10.48-3.1.diff.gz 8827 SHA256:34420b40e5c1277c4d847ab2b4f54dd58bf8ad63bf5f3995378de73295c788a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.48-3.1/
 
-- https://sources.debian.net/src/pcre2/10.48-3.1/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.48-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.48-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.42.3-1`
 
