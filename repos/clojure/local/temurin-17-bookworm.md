@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ead27be222c1321c5498dce691dbbdd3120f6163f5b98bb27fa7c5389e40f281`
-- Created: `2026-10-28T02:12:15.726221571Z`
-- Virtual Size: ~ 576.74 Mb  
+- Image ID: `sha256:542ce2da6ca45cb88450e4519f00dd7326793c685b1f2456223251712f54d120`
+- Created: `2026-11-03T22:18:11.799055878Z`
+- Virtual Size: ~ 577.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -411,13 +411,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.88.1-10+deb12u15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.88.1-10+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
+### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10+deb12u1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.28+dfsg-10`
-- `libsasl2-modules:amd64=2.1.28+dfsg-10`
-- `libsasl2-modules-db:amd64=2.1.28+dfsg-10`
+- `libsasl2-2:amd64=2.1.28+dfsg-10+deb12u1`
+- `libsasl2-modules:amd64=2.1.28+dfsg-10+deb12u1`
+- `libsasl2-modules-db:amd64=2.1.28+dfsg-10+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -444,17 +444,17 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.dsc' cyrus-sasl2_2.1.28+dfsg-10.dsc 3324 SHA256:cb9c913a6f4716456c93ed205dfef84915a37cf2c994160564e8336e86831d7a
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10.debian.tar.xz 97056 SHA256:8c94a1c1982a1603d13ef055b0d2511054db4a43cbb1224702f31e5d985136b1
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.dsc' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.dsc 3670 SHA256:088990ef19c88abfbf66321eba0d0c3566ee2a5ce135e165eff5b6c2716a2ff0
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.debian.tar.xz 99600 SHA256:390fa9435dc9e7de7c4fe18423cf04b5c2e54050ef0fd344972dab50980fb8b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-2`
 
