@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53bd9297aa4bfdb96c14bf604e1d5dd5822dea80c44b50396aaa954d4738c681`
-- Created: `2026-10-30T19:44:52.338364604Z`
-- Virtual Size: ~ 498.3 Mb  
+- Image ID: `sha256:ee688010d54556b392cb030d2262bdffc8c5d2fb1f275cbfad77cb54abe9313f`
+- Created: `2026-11-02T20:11:15.104852899Z`
+- Virtual Size: ~ 496.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -147,15 +147,15 @@ $ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.13
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/5c18ff805c1ba1ee52de0078af3be485a1e3c685335ac720b94981162251c4f8/curl-8.3.0-1.amzn2.0.13.src.rpm
 ```
 
-### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/35e086928aa7cd621793f2157824668862228d873c714508e5bbc13979cfe2f3/cyrus-sasl-2.1.26-24.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/d90f1cf37c5a594da4e875b0b8425bb6b737dd27c0e4eace5f3bbb790447d7d9/cyrus-sasl-2.1.26-24.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `dejavu-fonts-common-2.33-6.amzn2.noarch`
@@ -1209,15 +1209,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.27.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.28.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.27
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/5f1e5b0f3693de0327f88355b61d4706ce85924e1e0f86a56648bd04db5605be/libxml2-2.9.1-6.amzn2.5.27.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.28
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/78b3e95aecaad242993dfea16ece29b638f300ca7c46ced72b7a491ef6d7296f/../../../../../blobstore/f14e1df0907a235680653362d1216b4505b68550466070faa132312329895138/libxml2-2.9.1-6.amzn2.5.28.src.rpm
 ```
 
 ### `rpm` package: `libxslt-1.1.28-6.amzn2.0.5.x86_64`
