@@ -1,9 +1,9 @@
-# `azul-zulu:21.54-21.0.13-jdk-debian13`
+# `azul-zulu:21.54-21.0.13.0.3-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c92adab8ca2869ba70279d266e183f12d984dd50346939c93c2f65bdf9d05cf6`
-- Created: `2026-10-28T01:37:48.275550604Z`
+- Image ID: `sha256:74ee5994829f7d6e056b84c4f1f300065066153adf1b11888fd3adb3ae861e02`
+- Created: `2026-11-03T00:09:20.54369052Z`
 - Virtual Size: ~ 404.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2319,15 +2319,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu21-ca=21.0.13-3`
+### `dpkg` source package: `zulu21-ca=21.0.13.0.3-5`
 
 Binary Packages:
 
-- `zulu21-ca-doc=21.0.13-3`
-- `zulu21-ca-jdk=21.0.13-3`
-- `zulu21-ca-jdk-headless=21.0.13-3`
-- `zulu21-ca-jre=21.0.13-3`
-- `zulu21-ca-jre-headless=21.0.13-3`
+- `zulu21-ca-doc=21.0.13.0.3-5`
+- `zulu21-ca-jdk=21.0.13.0.3-5`
+- `zulu21-ca-jdk-headless=21.0.13.0.3-5`
+- `zulu21-ca-jre=21.0.13.0.3-5`
+- `zulu21-ca-jre-headless=21.0.13.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-ca-doc/copyright`, `/usr/share/doc/zulu21-ca-jdk/copyright`, `/usr/share/doc/zulu21-ca-jdk-headless/copyright`, `/usr/share/doc/zulu21-ca-jre/copyright`, `/usr/share/doc/zulu21-ca-jre-headless/copyright`)
 
@@ -2337,15 +2337,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu21-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu21=21.0.13-3`
+### `dpkg` source package: `zulu21=21.0.13.0.3-5`
 
 Binary Packages:
 
-- `zulu21-doc=21.0.13-3`
-- `zulu21-jdk=21.0.13-3`
-- `zulu21-jdk-headless=21.0.13-3`
-- `zulu21-jre=21.0.13-3`
-- `zulu21-jre-headless=21.0.13-3`
+- `zulu21-doc=21.0.13.0.3-5`
+- `zulu21-jdk=21.0.13.0.3-5`
+- `zulu21-jdk-headless=21.0.13.0.3-5`
+- `zulu21-jre=21.0.13.0.3-5`
+- `zulu21-jre-headless=21.0.13.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-doc/copyright`, `/usr/share/doc/zulu21-jdk/copyright`, `/usr/share/doc/zulu21-jdk-headless/copyright`, `/usr/share/doc/zulu21-jre/copyright`, `/usr/share/doc/zulu21-jre-headless/copyright`)
 

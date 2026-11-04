@@ -1,9 +1,9 @@
-# `azul-zulu:21.54-21.0.13-jre-debian13`
+# `azul-zulu:21.54-21.0.13.0.3-jre-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6e29e5327d95f78dbfe334c4bbaf974ad8f378b6626f78db3f03054b3fbe547`
-- Created: `2026-10-28T01:38:08.566132135Z`
+- Image ID: `sha256:a7b9693c67b5938280b89a6f85ec18d48d10c100227ec98e0487d8ff590640d1`
+- Created: `2026-11-03T00:09:25.614640074Z`
 - Virtual Size: ~ 305.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2319,12 +2319,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu21-ca=21.0.13-3`
+### `dpkg` source package: `zulu21-ca=21.0.13.0.3-5`
 
 Binary Packages:
 
-- `zulu21-ca-jre=21.0.13-3`
-- `zulu21-ca-jre-headless=21.0.13-3`
+- `zulu21-ca-jre=21.0.13.0.3-5`
+- `zulu21-ca-jre-headless=21.0.13.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-ca-jre/copyright`, `/usr/share/doc/zulu21-ca-jre-headless/copyright`)
 
@@ -2334,12 +2334,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu21-ca-jre/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu21=21.0.13-3`
+### `dpkg` source package: `zulu21=21.0.13.0.3-5`
 
 Binary Packages:
 
-- `zulu21-jre=21.0.13-3`
-- `zulu21-jre-headless=21.0.13-3`
+- `zulu21-jre=21.0.13.0.3-5`
+- `zulu21-jre-headless=21.0.13.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu21-jre/copyright`, `/usr/share/doc/zulu21-jre-headless/copyright`)
 

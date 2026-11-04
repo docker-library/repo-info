@@ -1,10 +1,10 @@
-# `azul-zulu:17.70-17.0.21-jdk-alpine3.23`
+# `azul-zulu:17.70-17.0.21.0.3-jdk-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:df50131119b69dbccb8b0af44ff6e6e2cac66f46ead869f09f633b0e92e08210`
-- Created: `2026-10-23T20:00:56.578360983Z`
-- Virtual Size: ~ 293.6 Mb  
+- Image ID: `sha256:a7d6696639e49841737f86054f6927a2d783224fd585089c45c6005646da9ccc`
+- Created: `2026-11-03T00:08:14.26899325Z`
+- Virtual Size: ~ 293.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -494,16 +494,16 @@ Zlib
 ### `apk` package: `zulu17-ca-jdk`
 
 ```console
-zulu17-ca-jdk-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) CA JDK
+zulu17-ca-jdk-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) CA JDK
 
-zulu17-ca-jdk-17.0.21-r3 webpage:
+zulu17-ca-jdk-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jdk-17.0.21-r3 installed size:
+zulu17-ca-jdk-17.0.21.0.3-r5 installed size:
 72 KiB
 
-zulu17-ca-jdk-17.0.21-r3 license:
+zulu17-ca-jdk-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -511,16 +511,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jdk-headless`
 
 ```console
-zulu17-ca-jdk-headless-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) CA Headless JDK
+zulu17-ca-jdk-headless-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) CA Headless JDK
 
-zulu17-ca-jdk-headless-17.0.21-r3 webpage:
+zulu17-ca-jdk-headless-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jdk-headless-17.0.21-r3 installed size:
+zulu17-ca-jdk-headless-17.0.21.0.3-r5 installed size:
 85 MiB
 
-zulu17-ca-jdk-headless-17.0.21-r3 license:
+zulu17-ca-jdk-headless-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -528,16 +528,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jre`
 
 ```console
-zulu17-ca-jre-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) CA JRE
+zulu17-ca-jre-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) CA JRE
 
-zulu17-ca-jre-17.0.21-r3 webpage:
+zulu17-ca-jre-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-17.0.21-r3 installed size:
+zulu17-ca-jre-17.0.21.0.3-r5 installed size:
 3004 KiB
 
-zulu17-ca-jre-17.0.21-r3 license:
+zulu17-ca-jre-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -545,16 +545,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-ca-jre-headless`
 
 ```console
-zulu17-ca-jre-headless-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) CA Headless JRE
+zulu17-ca-jre-headless-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) CA Headless JRE
 
-zulu17-ca-jre-headless-17.0.21-r3 webpage:
+zulu17-ca-jre-headless-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-ca-jre-headless-17.0.21-r3 installed size:
+zulu17-ca-jre-headless-17.0.21.0.3-r5 installed size:
 179 MiB
 
-zulu17-ca-jre-headless-17.0.21-r3 license:
+zulu17-ca-jre-headless-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -562,16 +562,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jdk`
 
 ```console
-zulu17-jdk-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) JDK
+zulu17-jdk-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) JDK
 
-zulu17-jdk-17.0.21-r3 webpage:
+zulu17-jdk-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jdk-17.0.21-r3 installed size:
+zulu17-jdk-17.0.21.0.3-r5 installed size:
 4096 B
 
-zulu17-jdk-17.0.21-r3 license:
+zulu17-jdk-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -579,16 +579,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jdk-headless`
 
 ```console
-zulu17-jdk-headless-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) Headless JDK
+zulu17-jdk-headless-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) Headless JDK
 
-zulu17-jdk-headless-17.0.21-r3 webpage:
+zulu17-jdk-headless-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jdk-headless-17.0.21-r3 installed size:
+zulu17-jdk-headless-17.0.21.0.3-r5 installed size:
 4096 B
 
-zulu17-jdk-headless-17.0.21-r3 license:
+zulu17-jdk-headless-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -596,16 +596,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre`
 
 ```console
-zulu17-jre-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) JRE
+zulu17-jre-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) JRE
 
-zulu17-jre-17.0.21-r3 webpage:
+zulu17-jre-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-17.0.21-r3 installed size:
+zulu17-jre-17.0.21.0.3-r5 installed size:
 4096 B
 
-zulu17-jre-17.0.21-r3 license:
+zulu17-jre-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -613,16 +613,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu17-jre-headless`
 
 ```console
-zulu17-jre-headless-17.0.21-r3 description:
-Azul Zulu 17.70+111 (17.0.21-b9) Headless JRE
+zulu17-jre-headless-17.0.21.0.3-r5 description:
+Azul Zulu 17.70+113 (17.0.21.0.3-b1) Headless JRE
 
-zulu17-jre-headless-17.0.21-r3 webpage:
+zulu17-jre-headless-17.0.21.0.3-r5 webpage:
 https://www.azul.com/products/core/
 
-zulu17-jre-headless-17.0.21-r3 installed size:
+zulu17-jre-headless-17.0.21.0.3-r5 installed size:
 4096 B
 
-zulu17-jre-headless-17.0.21-r3 license:
+zulu17-jre-headless-17.0.21.0.3-r5 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

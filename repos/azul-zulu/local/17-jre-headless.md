@@ -1,9 +1,9 @@
-# `azul-zulu:17.70-17.0.21-jre-headless-debian13`
+# `azul-zulu:17.70-17.0.21.0.3-jre-headless-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7256ce16d3214d0cda26dbfc74f9ef954c660d03d0383049dadb84dc950888e1`
-- Created: `2026-10-28T01:37:31.837838387Z`
+- Image ID: `sha256:d4b991605d16c4a04fdd1c1fcf2bbfe958d94a3c07dd27bfab33d9e3ccbdb8c9`
+- Created: `2026-11-03T00:08:47.982651791Z`
 - Virtual Size: ~ 281.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2060,11 +2060,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu17-ca=17.0.21-3`
+### `dpkg` source package: `zulu17-ca=17.0.21.0.3-5`
 
 Binary Packages:
 
-- `zulu17-ca-jre-headless=17.0.21-3`
+- `zulu17-ca-jre-headless=17.0.21.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu17-ca-jre-headless/copyright`)
 
@@ -2074,11 +2074,11 @@ Licenses: (parsed from: `/usr/share/doc/zulu17-ca-jre-headless/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu17=17.0.21-3`
+### `dpkg` source package: `zulu17=17.0.21.0.3-5`
 
 Binary Packages:
 
-- `zulu17-jre-headless=17.0.21-3`
+- `zulu17-jre-headless=17.0.21.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu17-jre-headless/copyright`)
 

@@ -1,10 +1,10 @@
-# `azul-zulu:27.30-27.0.1-jdk-debian13`
+# `azul-zulu:27.30-27.0.1.0.3-jdk-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a17e7c7cd56abd8497120bef744b0ddde19b3ce073e62ad86972db452d47c7c`
-- Created: `2026-10-28T01:39:22.335962307Z`
-- Virtual Size: ~ 449.98 Mb  
+- Image ID: `sha256:29efecd50891fa43e38d7cdc5763ecd863f0dfbad4c0cd28421dee6f27f82044`
+- Created: `2026-11-03T00:10:59.360725859Z`
+- Virtual Size: ~ 449.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2319,15 +2319,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu27-ca=27.0.1-3`
+### `dpkg` source package: `zulu27-ca=27.0.1.0.3-5`
 
 Binary Packages:
 
-- `zulu27-ca-doc=27.0.1-3`
-- `zulu27-ca-jdk=27.0.1-3`
-- `zulu27-ca-jdk-headless=27.0.1-3`
-- `zulu27-ca-jre=27.0.1-3`
-- `zulu27-ca-jre-headless=27.0.1-3`
+- `zulu27-ca-doc=27.0.1.0.3-5`
+- `zulu27-ca-jdk=27.0.1.0.3-5`
+- `zulu27-ca-jdk-headless=27.0.1.0.3-5`
+- `zulu27-ca-jre=27.0.1.0.3-5`
+- `zulu27-ca-jre-headless=27.0.1.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu27-ca-doc/copyright`, `/usr/share/doc/zulu27-ca-jdk/copyright`, `/usr/share/doc/zulu27-ca-jdk-headless/copyright`, `/usr/share/doc/zulu27-ca-jre/copyright`, `/usr/share/doc/zulu27-ca-jre-headless/copyright`)
 
@@ -2337,15 +2337,15 @@ Licenses: (parsed from: `/usr/share/doc/zulu27-ca-doc/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu27=27.0.1-3`
+### `dpkg` source package: `zulu27=27.0.1.0.3-5`
 
 Binary Packages:
 
-- `zulu27-doc=27.0.1-3`
-- `zulu27-jdk=27.0.1-3`
-- `zulu27-jdk-headless=27.0.1-3`
-- `zulu27-jre=27.0.1-3`
-- `zulu27-jre-headless=27.0.1-3`
+- `zulu27-doc=27.0.1.0.3-5`
+- `zulu27-jdk=27.0.1.0.3-5`
+- `zulu27-jdk-headless=27.0.1.0.3-5`
+- `zulu27-jre=27.0.1.0.3-5`
+- `zulu27-jre-headless=27.0.1.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu27-doc/copyright`, `/usr/share/doc/zulu27-jdk/copyright`, `/usr/share/doc/zulu27-jdk-headless/copyright`, `/usr/share/doc/zulu27-jre/copyright`, `/usr/share/doc/zulu27-jre-headless/copyright`)
 

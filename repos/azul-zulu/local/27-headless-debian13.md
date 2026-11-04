@@ -1,10 +1,10 @@
-# `azul-zulu:27.30-27.0.1-jdk-headless-debian13`
+# `azul-zulu:27.30-27.0.1.0.3-jdk-headless-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:28aa19f484a24e964c362a5aca9aca97b4a6ebd285df6765afc6b31abbdc2199`
-- Created: `2026-10-28T01:39:19.235799596Z`
-- Virtual Size: ~ 443.59 Mb  
+- Image ID: `sha256:d296ed39af89aabe5151072fa0867927664071075406ebe7b390ea07dbda11bd`
+- Created: `2026-11-03T00:10:58.230515203Z`
+- Virtual Size: ~ 443.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2060,12 +2060,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu27-ca=27.0.1-3`
+### `dpkg` source package: `zulu27-ca=27.0.1.0.3-5`
 
 Binary Packages:
 
-- `zulu27-ca-jdk-headless=27.0.1-3`
-- `zulu27-ca-jre-headless=27.0.1-3`
+- `zulu27-ca-jdk-headless=27.0.1.0.3-5`
+- `zulu27-ca-jre-headless=27.0.1.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu27-ca-jdk-headless/copyright`, `/usr/share/doc/zulu27-ca-jre-headless/copyright`)
 
@@ -2075,12 +2075,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu27-ca-jdk-headless/copyright`, `/usr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu27=27.0.1-3`
+### `dpkg` source package: `zulu27=27.0.1.0.3-5`
 
 Binary Packages:
 
-- `zulu27-jdk-headless=27.0.1-3`
-- `zulu27-jre-headless=27.0.1-3`
+- `zulu27-jdk-headless=27.0.1.0.3-5`
+- `zulu27-jre-headless=27.0.1.0.3-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu27-jdk-headless/copyright`, `/usr/share/doc/zulu27-jre-headless/copyright`)
 
