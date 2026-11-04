@@ -1,10 +1,10 @@
-# `eclipse-temurin:17.0.20.1_1-jdk-ubi9-minimal`
+# `eclipse-temurin:17.0.21_9-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:17513cd6620a746d3bd65d2f6c32a743c425375712d5cea6458c3e18e1b119f1`
-- Created: `2026-10-29T18:57:07.806786497Z`
-- Virtual Size: ~ 463.76 Mb  
+- Image ID: `sha256:c8985477e505919784036f92ea0704573052489b41f1d69d29738b4b59d241d0`
+- Created: `2026-11-03T21:57:13.055042995Z`
+- Virtual Size: ~ 464.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,10 +16,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.20.1+1`
+  - `JAVA_VERSION=jdk-17.0.21+9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-29T05:53:50Z`
+  - `build-date=2026-11-02T00:23:43Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-10-29T05:53:50Z`
-  - `org.opencontainers.image.revision=9eac53daf60c61895dd274c7017f0605f411e146`
-  - `release=1793253163`
+  - `org.opencontainers.image.created=2026-11-02T00:23:43Z`
+  - `org.opencontainers.image.revision=dc4aefa4aecb10996718adb6435f6491abaff715`
+  - `release=1793578971`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=9eac53daf60c61895dd274c7017f0605f411e146`
+  - `vcs-ref=dc4aefa4aecb10996718adb6435f6491abaff715`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.8`
@@ -187,11 +187,16 @@ $ dnf --quiet download --source --url crypto-policies-20260224-1.gitea0f072.el9_
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260224-1.gitea0f072.el9_8.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-40.el9_8.8.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-40.el9_8.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url curl-minimal-7.76.1-40.el9_8.9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.9.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
 
@@ -755,11 +760,16 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.8.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-40.el9_8.9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-40.el9_8.9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-40.el9_8.9.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
 
@@ -1590,12 +1600,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026e-1.el9_8.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el9_8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.37.4-25.el9.x86_64`
 
