@@ -1,10 +1,10 @@
-# `ghost:6.73.0-next-bookworm`
+# `ghost:6.74.0-next-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a46cc892b3f0d42d5593c2b0276f9a2f21cd70f60c955cb715539e90948284a`
-- Created: `2026-10-28T02:42:29.50655211Z`
-- Virtual Size: ~ 463.86 Mb  
+- Image ID: `sha256:485067e028988419d2abea9f3a31a6aa93c2c32a8563bd1b2b00686e1075807c`
+- Created: `2026-11-03T21:58:31.067207121Z`
+- Virtual Size: ~ 468.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,9 +17,9 @@
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.73.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.73.0/ghost-6.73.0.tgz`
-  - `GHOST_SHA256=7377bf3a20eb5174494e35c512c0cd55dde346ae0c0de9390874a4c02ee918c2`
+  - `GHOST_VERSION=6.74.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.74.0/ghost-6.74.0.tgz`
+  - `GHOST_SHA256=2a18f5ef9b8aa9ab0a65a1710ee0b055ebfd70a1098b431708961f808331a193`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1841,10 +1841,6 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/
 
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
