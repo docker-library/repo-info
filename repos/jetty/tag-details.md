@@ -1239,7 +1239,7 @@ $ docker pull jetty@sha256:c7a257b3411638959756367fea4fa76c10b434284085c6bd37c44
 ## `jetty:12-jdk17`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1252,13 +1252,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12-jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -1289,53 +1289,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -1348,69 +1348,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12-jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -1441,53 +1441,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -1500,57 +1500,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12-jdk17-al2023-amazoncorretto`
@@ -1783,7 +1783,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1794,13 +1794,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -1809,53 +1809,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -1864,57 +1864,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12-jdk17-alpine-amazoncorretto`
@@ -2143,7 +2143,7 @@ $ docker pull jetty@sha256:021da911fb4750aa2262117b45438e88b2a94a47352246c730e3f
 ## `jetty:12-jdk17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2154,13 +2154,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12-jdk17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -2169,53 +2169,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -2224,57 +2224,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12-jdk17-amazoncorretto`
@@ -2507,7 +2507,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2520,13 +2520,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -2557,53 +2557,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -2616,69 +2616,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -2709,53 +2709,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -2768,57 +2768,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12-jdk21`
@@ -7082,7 +7082,7 @@ $ docker pull jetty@sha256:462d1c9b4d79daa8b883b9f9f9699e22852ee50cea08f0f386124
 ## `jetty:12.0-jdk17`
 
 ```console
-$ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a4dea00d6025
+$ docker pull jetty@sha256:31a299968695854f79a4ecbf785ccf8188b81c8eea7f1b1949da56389b3e1ade
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7095,13 +7095,13 @@ $ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a
 ### `jetty:12.0-jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:a6d6f8a5d2f4bfbc16abd42121fdda45702a5264cdfb16fa53e1bb1ac7aba2b8
+$ docker pull jetty@sha256:fbe12892d71c358851c240de82ee5183aa3b5e23cb7919184bc3d7b6b58d6a2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.2 MB (247210543 bytes)**  
+-	Total Size: **247.5 MB (247466358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8049e2a5534d609e707b75d957b210d5a18d2fc1ecfd2122666de66cd478a04`
+-	Image ID: `sha256:3e35f4df0410e6b3b1addf8fdaaf844a773e4bc6929942b74068c45d81b8eea0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -7132,53 +7132,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -7191,69 +7191,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d7a52479c7386efd53f248c3dd1ebf3e6e34a496858acc02d48722354e69bec`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 35.2 MB (35176704 bytes)  
+	-	`sha256:11bc5ee1ce7b6a91afd5af86a502aafb7238c70ea5c951a8a7e6781b0284139c`  
+		Last Modified: Tue, 03 Nov 2026 22:15:03 GMT  
+		Size: 35.2 MB (35176646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3fcc5f2931ac31780642d2458022913ab3fdb954df5ed75e90c0e65911312d7`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:890f72ce31260a4a55bef0567aa4167e5d1ed95214314327c0df6d8794306e9d`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 1.8 KB (1842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:9aac3758db1e1b5c65225702f89d45ab581c8731bc491ae7f4aa235c516ddd61
+$ docker pull jetty@sha256:2ea39bfee9b0590ae14909a42c14ccb7d862ba4cb8a0a3b4732bdad34eabfd61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5647508 bytes)**  
+-	Total Size: **5.6 MB (5647498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a922cd4f95c9b4bb24722a790c64fa1fd3452c3ac7c757c83c91f10be470a7`
+-	Image ID: `sha256:bc7146446e0df53bde39836dc68d8bd475aeb1187c216868761fa5db4642a99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6c1da8684631da3c0c028c60528223ef66b05ec67669f016c2b5e8bf5438c2ef`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 5.6 MB (5625756 bytes)  
+	-	`sha256:81d6e31ceddc5e649c31908e4ac08dad08bb26a3064a447116a4f75732542ec4`  
+		Last Modified: Tue, 03 Nov 2026 22:15:02 GMT  
+		Size: 5.6 MB (5625748 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2a57c83b578674b3ee949bc8dc95096577eb38be6ac9ea8bf6ac4c084b711c4d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:19 GMT  
-		Size: 21.8 KB (21752 bytes)  
+	-	`sha256:0e8fcdb20ea2555fba3de987fb3177cf4f5aa7c6473163c6c85c8a548d638472`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 21.8 KB (21750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0-jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:b6c9d5ec88ed87b7bf211469d1a71a1bdc3aa364dd62d32ccf3603bb939532a6
+$ docker pull jetty@sha256:259d7ac45e53115124ca2b65218ca7cbab269d1f0be908855f42080a8510eb0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244894121 bytes)**  
+-	Total Size: **245.2 MB (245205464 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb8632e9fea5ca2e457346544e6084a028a513c839a1b0908b35467e2dd7c31`
+-	Image ID: `sha256:cc6435be8622b7b2dbf37e2c838ad042f052fffc87f1ad554fee737b4ccf4df7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -7284,53 +7284,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -7343,57 +7343,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29ec9127c1c476b0681d10ceb3e0fad9de773e89ad5af361ba4d0fc1e1ef595`  
-		Last Modified: Tue, 27 Oct 2026 00:23:57 GMT  
-		Size: 35.2 MB (35177131 bytes)  
+	-	`sha256:498a276d4b50734a9a4a1e631c2c9e0132970a8c37d66f4a934383e66f69091c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 35.2 MB (35177111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8a22060a4f0b9e548b0ec1da6099e8c3e19b1c68cb3e22a5ffeaf5fcebd2401`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:d829312a99cdff1863c18cff688c4c11bec787b0e433877350ee0dd851f484d9`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:38dd0c4419644415cd882e6b31214ad7184f2fc8456b4c09eecc1c87f3961440
+$ docker pull jetty@sha256:84a3802738bf1dafddc4e86df48a2c926d5a2e354abf09bb0e6ae4d8d852856a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5835004 bytes)**  
+-	Total Size: **5.8 MB (5834994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4218365fee1ed2cec9e654cb0896bc77aea68c67f659d188b96c3e77a7030e83`
+-	Image ID: `sha256:223f8896bc663ed3cde29f47e48918b5daa9c2f4693f11ab4a32dd2baa962c5a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba1ffa05f90e72b6f2541e2abaed8fdd407a325ec48dbea1f6e96ec04b9db73a`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 5.8 MB (5813148 bytes)  
+	-	`sha256:0db883dc56ebab11d43887222312b185ef998d3ad656db52d2b66ed6456176b6`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.8 MB (5813140 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be3341b74dbd126d4c8ab3376e7fd073a16c0bb1088b2e609512338c9b1f8d32`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 21.9 KB (21856 bytes)  
+	-	`sha256:87f30ce0d9ed6dde54677e5ee035326a3a104ecfe6d4d084e8a1122ae632d882`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 21.9 KB (21854 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jdk17-al2023-amazoncorretto`
@@ -7626,7 +7626,7 @@ $ docker pull jetty@sha256:047c5bf220f43ed59155b9434e8262f905318cc31e406161c77ff
 ## `jetty:12.0-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb9308fb87241b1
+$ docker pull jetty@sha256:0f0a52924bba103893213030b786604e8d3534deecf5200c775a4b420416c5d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7637,13 +7637,13 @@ $ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb93
 ### `jetty:12.0-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef1bdc235665f
+$ docker pull jetty@sha256:3e33fadfacf6d41d226042b126e4c4099a2d2377c32aa03b952b33bb1f9eb694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.2 MB (206184368 bytes)**  
+-	Total Size: **206.5 MB (206458603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b28e1cba7bc8e16158bb6aeaf0171bf7f7faf4aa72afab7e6587de471ea16cca`
+-	Image ID: `sha256:8c62f32b17da374964b02d6839cb62c18bf033401425e11fcfee42ac229e9881`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -7652,53 +7652,53 @@ $ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -7707,57 +7707,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:570dea9c57fad4d2051df8a430d7faba55c06d627e24ef778b5d96818d0c0e35`  
-		Last Modified: Wed, 21 Oct 2026 23:32:06 GMT  
-		Size: 35.9 MB (35915210 bytes)  
+	-	`sha256:071d7eb98f29aba53a6b7c0ebb44a16a4c4bc02202293e03f3edeea84c06c050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:41 GMT  
+		Size: 35.9 MB (35922954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af77741b267c8e91ecc954a003905a6b73a1797b46d51b08c137e46a283e40f6`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
+	-	`sha256:075f5518ce680e6e680bb149b9d86e0b49326f8d6ad450ff387f58d11d6b81a7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:ace4841b6f142e8e8937457fc94edb1264382fef1d30541e9027a46113802884
+$ docker pull jetty@sha256:0a984a345fb5f87a5f0a64e17350f8fad059ef448e35744c061baac79eb52aaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1339684 bytes)**  
+-	Total Size: **1.3 MB (1339678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:118804cac7fd171ce05528213548ae775c901858d7b7369f759c1f7e524e1ac0`
+-	Image ID: `sha256:e9e11715e0d3a68a184fcb83e5b1817229be56d3c9df75e0564a60b4c61d6595`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32f356fd11bbb56f5fdd8eae3cf0e05b8edc5fb2e9f3fb391d1eb5d62a15eece`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 1.3 MB (1320078 bytes)  
+	-	`sha256:c196874fd7ee67424e03a050ebf8af358c3317c0ee00dfbbc10e2650bb8169db`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 1.3 MB (1320074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce30f1adfa2d680c13d5f15215743380fd177d4dc25fdf1e9ae34bc947c8236c`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 19.6 KB (19606 bytes)  
+	-	`sha256:f7e6c9d707967f71fdd7547320fdcf91afd724ac039b252d450592b5e5891bbc`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 19.6 KB (19604 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jdk17-alpine-amazoncorretto`
@@ -7986,7 +7986,7 @@ $ docker pull jetty@sha256:209404edadd28a114653c98053b35658f0d2ce140470a5afe05e2
 ## `jetty:12.0-jdk17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb9308fb87241b1
+$ docker pull jetty@sha256:0f0a52924bba103893213030b786604e8d3534deecf5200c775a4b420416c5d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7997,13 +7997,13 @@ $ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb93
 ### `jetty:12.0-jdk17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef1bdc235665f
+$ docker pull jetty@sha256:3e33fadfacf6d41d226042b126e4c4099a2d2377c32aa03b952b33bb1f9eb694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.2 MB (206184368 bytes)**  
+-	Total Size: **206.5 MB (206458603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b28e1cba7bc8e16158bb6aeaf0171bf7f7faf4aa72afab7e6587de471ea16cca`
+-	Image ID: `sha256:8c62f32b17da374964b02d6839cb62c18bf033401425e11fcfee42ac229e9881`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -8012,53 +8012,53 @@ $ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -8067,57 +8067,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:570dea9c57fad4d2051df8a430d7faba55c06d627e24ef778b5d96818d0c0e35`  
-		Last Modified: Wed, 21 Oct 2026 23:32:06 GMT  
-		Size: 35.9 MB (35915210 bytes)  
+	-	`sha256:071d7eb98f29aba53a6b7c0ebb44a16a4c4bc02202293e03f3edeea84c06c050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:41 GMT  
+		Size: 35.9 MB (35922954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af77741b267c8e91ecc954a003905a6b73a1797b46d51b08c137e46a283e40f6`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
+	-	`sha256:075f5518ce680e6e680bb149b9d86e0b49326f8d6ad450ff387f58d11d6b81a7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:ace4841b6f142e8e8937457fc94edb1264382fef1d30541e9027a46113802884
+$ docker pull jetty@sha256:0a984a345fb5f87a5f0a64e17350f8fad059ef448e35744c061baac79eb52aaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1339684 bytes)**  
+-	Total Size: **1.3 MB (1339678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:118804cac7fd171ce05528213548ae775c901858d7b7369f759c1f7e524e1ac0`
+-	Image ID: `sha256:e9e11715e0d3a68a184fcb83e5b1817229be56d3c9df75e0564a60b4c61d6595`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32f356fd11bbb56f5fdd8eae3cf0e05b8edc5fb2e9f3fb391d1eb5d62a15eece`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 1.3 MB (1320078 bytes)  
+	-	`sha256:c196874fd7ee67424e03a050ebf8af358c3317c0ee00dfbbc10e2650bb8169db`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 1.3 MB (1320074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce30f1adfa2d680c13d5f15215743380fd177d4dc25fdf1e9ae34bc947c8236c`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 19.6 KB (19606 bytes)  
+	-	`sha256:f7e6c9d707967f71fdd7547320fdcf91afd724ac039b252d450592b5e5891bbc`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 19.6 KB (19604 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jdk17-amazoncorretto`
@@ -8350,7 +8350,7 @@ $ docker pull jetty@sha256:047c5bf220f43ed59155b9434e8262f905318cc31e406161c77ff
 ## `jetty:12.0-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a4dea00d6025
+$ docker pull jetty@sha256:31a299968695854f79a4ecbf785ccf8188b81c8eea7f1b1949da56389b3e1ade
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8363,13 +8363,13 @@ $ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a
 ### `jetty:12.0-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:a6d6f8a5d2f4bfbc16abd42121fdda45702a5264cdfb16fa53e1bb1ac7aba2b8
+$ docker pull jetty@sha256:fbe12892d71c358851c240de82ee5183aa3b5e23cb7919184bc3d7b6b58d6a2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.2 MB (247210543 bytes)**  
+-	Total Size: **247.5 MB (247466358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8049e2a5534d609e707b75d957b210d5a18d2fc1ecfd2122666de66cd478a04`
+-	Image ID: `sha256:3e35f4df0410e6b3b1addf8fdaaf844a773e4bc6929942b74068c45d81b8eea0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -8400,53 +8400,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -8459,69 +8459,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d7a52479c7386efd53f248c3dd1ebf3e6e34a496858acc02d48722354e69bec`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 35.2 MB (35176704 bytes)  
+	-	`sha256:11bc5ee1ce7b6a91afd5af86a502aafb7238c70ea5c951a8a7e6781b0284139c`  
+		Last Modified: Tue, 03 Nov 2026 22:15:03 GMT  
+		Size: 35.2 MB (35176646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3fcc5f2931ac31780642d2458022913ab3fdb954df5ed75e90c0e65911312d7`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:890f72ce31260a4a55bef0567aa4167e5d1ed95214314327c0df6d8794306e9d`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 1.8 KB (1842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:9aac3758db1e1b5c65225702f89d45ab581c8731bc491ae7f4aa235c516ddd61
+$ docker pull jetty@sha256:2ea39bfee9b0590ae14909a42c14ccb7d862ba4cb8a0a3b4732bdad34eabfd61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5647508 bytes)**  
+-	Total Size: **5.6 MB (5647498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a922cd4f95c9b4bb24722a790c64fa1fd3452c3ac7c757c83c91f10be470a7`
+-	Image ID: `sha256:bc7146446e0df53bde39836dc68d8bd475aeb1187c216868761fa5db4642a99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6c1da8684631da3c0c028c60528223ef66b05ec67669f016c2b5e8bf5438c2ef`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 5.6 MB (5625756 bytes)  
+	-	`sha256:81d6e31ceddc5e649c31908e4ac08dad08bb26a3064a447116a4f75732542ec4`  
+		Last Modified: Tue, 03 Nov 2026 22:15:02 GMT  
+		Size: 5.6 MB (5625748 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2a57c83b578674b3ee949bc8dc95096577eb38be6ac9ea8bf6ac4c084b711c4d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:19 GMT  
-		Size: 21.8 KB (21752 bytes)  
+	-	`sha256:0e8fcdb20ea2555fba3de987fb3177cf4f5aa7c6473163c6c85c8a548d638472`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 21.8 KB (21750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:b6c9d5ec88ed87b7bf211469d1a71a1bdc3aa364dd62d32ccf3603bb939532a6
+$ docker pull jetty@sha256:259d7ac45e53115124ca2b65218ca7cbab269d1f0be908855f42080a8510eb0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244894121 bytes)**  
+-	Total Size: **245.2 MB (245205464 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb8632e9fea5ca2e457346544e6084a028a513c839a1b0908b35467e2dd7c31`
+-	Image ID: `sha256:cc6435be8622b7b2dbf37e2c838ad042f052fffc87f1ad554fee737b4ccf4df7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -8552,53 +8552,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -8611,57 +8611,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29ec9127c1c476b0681d10ceb3e0fad9de773e89ad5af361ba4d0fc1e1ef595`  
-		Last Modified: Tue, 27 Oct 2026 00:23:57 GMT  
-		Size: 35.2 MB (35177131 bytes)  
+	-	`sha256:498a276d4b50734a9a4a1e631c2c9e0132970a8c37d66f4a934383e66f69091c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 35.2 MB (35177111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8a22060a4f0b9e548b0ec1da6099e8c3e19b1c68cb3e22a5ffeaf5fcebd2401`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:d829312a99cdff1863c18cff688c4c11bec787b0e433877350ee0dd851f484d9`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:38dd0c4419644415cd882e6b31214ad7184f2fc8456b4c09eecc1c87f3961440
+$ docker pull jetty@sha256:84a3802738bf1dafddc4e86df48a2c926d5a2e354abf09bb0e6ae4d8d852856a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5835004 bytes)**  
+-	Total Size: **5.8 MB (5834994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4218365fee1ed2cec9e654cb0896bc77aea68c67f659d188b96c3e77a7030e83`
+-	Image ID: `sha256:223f8896bc663ed3cde29f47e48918b5daa9c2f4693f11ab4a32dd2baa962c5a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba1ffa05f90e72b6f2541e2abaed8fdd407a325ec48dbea1f6e96ec04b9db73a`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 5.8 MB (5813148 bytes)  
+	-	`sha256:0db883dc56ebab11d43887222312b185ef998d3ad656db52d2b66ed6456176b6`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.8 MB (5813140 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be3341b74dbd126d4c8ab3376e7fd073a16c0bb1088b2e609512338c9b1f8d32`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 21.9 KB (21856 bytes)  
+	-	`sha256:87f30ce0d9ed6dde54677e5ee035326a3a104ecfe6d4d084e8a1122ae632d882`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 21.9 KB (21854 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jdk21`
@@ -11837,7 +11837,7 @@ $ docker pull jetty@sha256:462d1c9b4d79daa8b883b9f9f9699e22852ee50cea08f0f386124
 ## `jetty:12.0-jre17`
 
 ```console
-$ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba08350eb6984ca2
+$ docker pull jetty@sha256:581eebc8fc4e363e39546147502d36c12ed21d31b54d02c0544e812ac6f436d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11850,13 +11850,13 @@ $ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba083
 ### `jetty:12.0-jre17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:7bec63972abf97c58bda8abf33345676c7a7e3f01d9f6bd2230424b9fa37bf38
+$ docker pull jetty@sha256:84e9802efceb420f23018a933fe56942450e66540e69113422ac4d72a212d298
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.0 MB (144973494 bytes)**  
+-	Total Size: **145.1 MB (145073811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5be9f14f5ab8037ca8488405843df45655d1038dfce12eff89c79a9e7b90c7`
+-	Image ID: `sha256:06e9ca60e5f6309e352c62a4db14fe3290fd6e307171347ed0d9631bd5421087`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -11887,51 +11887,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:52 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:43 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -11944,69 +11944,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55276dea08ee0fcfc88e30a530566765c5d6cc5bcb9b628b018695288903b8a1`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 20.1 MB (20136009 bytes)  
+	-	`sha256:e9d963469cca204afadb6e2867d4c07af8784d769041083b87bb2fbd4ed990c9`  
+		Last Modified: Tue, 03 Nov 2026 21:57:57 GMT  
+		Size: 20.1 MB (20135981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a5d3dd27cd5bc2c69c78656a4679822f4b6d7962b05dd941df3766cb0336eb9`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 47.5 MB (47520136 bytes)  
+	-	`sha256:f6168622535480b5514852952649f9b2a77ae69b259f319b7897ec994cb6106d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:58 GMT  
+		Size: 47.6 MB (47620504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb9a6f797c90c19b207f662dd0f04d610ee6996cb4e99983312c1a86cd18403`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
-		Size: 156.0 B  
+	-	`sha256:91efa06f9c7e35a87a3e67c309e198e9b90b4c24fd6d3b3bee343b18d2fd7c3d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871684199c33b60f7e90eaaabe0b28a6a37df73ae51fe3e450cd6c2b9f9c6747`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
+	-	`sha256:f7822ed33003a3b8803072a638d629b3c21c4901a6c0651965458fbb26cfa109`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91c71352733d6272649485d8c900e6096c05ee1d7aea148a6f18764f78235861`  
-		Last Modified: Tue, 27 Oct 2026 00:24:13 GMT  
-		Size: 35.2 MB (35172541 bytes)  
+	-	`sha256:c59f3f7c9379081b8c0aff1f8ffc02bdc31bccb9fed80916bbf5b44f3474870a`  
+		Last Modified: Tue, 03 Nov 2026 22:14:53 GMT  
+		Size: 35.2 MB (35172515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d73ce77267cca864dfaf714f858be83894c6dcc86d0c5a13b87499ffe35d6c5d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
+	-	`sha256:24c09a35b2adc336b517ca9f3779455fad9c841d14881b02805651d0d9bc72f8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:12e402576164a4a56ad4b7bfd02b9b06b2315c8aa6a940269e442e93ec5a9a3b
+$ docker pull jetty@sha256:8cf5cba348e58ca06e9682b3eb12da8adc28e48ca8523a8d29fbc21ce4debf22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381736 bytes)**  
+-	Total Size: **5.4 MB (5381726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:056e981d162f7c1baa362c16bb0655a6e58f4b164739246a610c9e42e1d0c5de`
+-	Image ID: `sha256:0e1557786951fd908136f4db0127bbcb0474fd242578d46f4a01ea47fd04571a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041dcef9fce402de96b04771c1dc6af0cd9f2c7e400971ce58a64378f872f43f`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 5.4 MB (5359988 bytes)  
+	-	`sha256:eaf7b002138ae4221771c1274b06cc10f9ac5138dda7b51f43ac69151cc94912`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 5.4 MB (5359980 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e8015a347f28b5eb4f70f14fad9d6c25d45dc35398e0f893950d7944b512acd`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 21.7 KB (21748 bytes)  
+	-	`sha256:d849b7464f7ff2b343f2dd4305391715f1fe7b3ff429f466483bc4646e0fdcc8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 21.7 KB (21746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0-jre17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:1e5f0c1a2b1f7e110d5daa59ffd00ac50963b43396650da40aff9ac9cfbbb7e7
+$ docker pull jetty@sha256:10730efcbe57570a34beb4937decc3fd2b695d060f2ae8969a4ed6f3e27573a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143249476 bytes)**  
+-	Total Size: **143.4 MB (143375556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6defdc77b9dacbedf7f8ce0da6917a812b15d229972d5a1aba00606eb962b847`
+-	Image ID: `sha256:979cd5c9660e6909fd596ea160c21421fc94094fc8b8d15c980b5d44b82321a7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -12037,51 +12037,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:17:09 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:17:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:14 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -12094,63 +12094,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eab66d96634cb2807e7d3d6e4679181b8a17eaea84c13da0adeb57d0ba1bd3ac`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 19.9 MB (19946815 bytes)  
+	-	`sha256:d274970dd87b5b3216d851fbd1399a9010169e57dc118d39592d7657d7162b14`  
+		Last Modified: Tue, 03 Nov 2026 21:57:30 GMT  
+		Size: 19.9 MB (19946906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e0998de2ccfa9c0e8cb412f8261f66e91be95a23ce533a6ec8b0cce5e511413`  
-		Last Modified: Mon, 26 Oct 2026 23:17:28 GMT  
-		Size: 47.0 MB (47002293 bytes)  
+	-	`sha256:516430e9168d50324dc06189743c31a5c76870b907c3e03e250b594393650756`  
+		Last Modified: Tue, 03 Nov 2026 21:57:31 GMT  
+		Size: 47.1 MB (47128307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6eed336799268735b9056d91b00113404287740fe9afb51676ec81b2119fe41`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 158.0 B  
+	-	`sha256:e78ecd46df3f1ee2ea0f9cd6859f11958f4d06b286d04f67aa173b0673cec5fe`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34d9f096dcb82b5dd3a4c535022172008aa7cd8e8eede96b3bfe02ac578e05f2`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:73568c906d817d812476c7b88b7a48bc51e823a435043da1051772e8dfd2ac60`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebe26a56d645c1f1147f1d7ecb339bf422037a089270aedc533f120acc7b57e`  
-		Last Modified: Tue, 27 Oct 2026 00:23:16 GMT  
-		Size: 35.2 MB (35173173 bytes)  
+	-	`sha256:532026269b444527e54387cd46d2ec92b5fdb467f679421f210e78cefde4848d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 35.2 MB (35173150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e41709a5d3cb7b8c7c323833df8b78fe5a3e73da526cfba2ab405d1eab90bf`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
+	-	`sha256:cbe5b97ae079f7c477fa6ee4c040aa5b86c12b23124a474b69826e57846c1f38`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:977b3e9a75aaf7eab33dea182b1ff266434185937925868402021fa88c733569
+$ docker pull jetty@sha256:8029954292f96f98a3bff222028ac60fe89591351c42aed38c0b8872ebee2782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381509 bytes)**  
+-	Total Size: **5.4 MB (5381499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d951060b10f81fead7e0075ebae7e49ce3dd1b5147f25720611d63c9327c9a0`
+-	Image ID: `sha256:67ce9be8f51df46d00bad55f729c28b7b682d8ae318c56007056bd4db47a649d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90dba09da90525f217eb6365f59bab2ac2c583d1b3c2ffef9c1f02f5a9ed025b`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 5.4 MB (5359657 bytes)  
+	-	`sha256:96d60839922b75701ba8204e26747fba2f3dacf179ce1abab0f1f33b7a65f03c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 5.4 MB (5359649 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:669c5d84f905d7c70124afb4c635694f643b918f24cf168ec19dbc64d3b0ae76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 21.9 KB (21852 bytes)  
+	-	`sha256:39b7f7c8445652302c55a600524edfc1e38fa290c24e2740c81df6ac31603649`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 21.9 KB (21850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jre17-alpine`
 
 ```console
-$ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b6052c5d741eaf6
+$ docker pull jetty@sha256:02d31e6764d5fcd0f6f5d7e80cf444c6dede2667f54e472a378410907e1d6e45
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12161,13 +12161,13 @@ $ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b605
 ### `jetty:12.0-jre17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467c0b66f40346
+$ docker pull jetty@sha256:234b8f19e8f9b3cf4d247f6b779905636a385f32879ed803b6de3150eb4148d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103921740 bytes)**  
+-	Total Size: **104.0 MB (104023656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78722035697409137b3e5baf51603314fc4501358425756e799c6a1f8345eb6e`
+-	Image ID: `sha256:40d27c82a6f118c5c5c8ffebbf87d628d76af1172b339cacd51dcf2a5b891c35`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -12176,51 +12176,51 @@ $ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:19 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:23 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='72423b1464907857f4e7ca854a2b8fd9f7cf6b9dd15bd3ea31ef6cf33b097aea';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:04 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='e42129db57e3965d9d8befdb097531d7887916690338ff0be7d1b0113287c872';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Tue, 03 Nov 2026 21:57:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -12229,63 +12229,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b0d0fa06f07d6576bceecc1191b388aa4aebe0ab36760f6cec57f260a42f95`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 17.0 MB (16967459 bytes)  
+	-	`sha256:b7a39843ede75593ee79975fc55a5dbe9fe6ecfa3acea86740b62f504cd174a0`  
+		Last Modified: Tue, 03 Nov 2026 21:57:15 GMT  
+		Size: 17.0 MB (16970056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b644faf4666aaa5c74a1c460f3a971622d671bbabcd87e985c9248aa7e3542c6`  
-		Last Modified: Wed, 21 Oct 2026 22:57:35 GMT  
-		Size: 47.2 MB (47186368 bytes)  
+	-	`sha256:fc46b7297ab59ee26dc28facbc5e638f1156c6c41e8ece8da0e7d1fa31682130`  
+		Last Modified: Tue, 03 Nov 2026 21:57:16 GMT  
+		Size: 47.3 MB (47277847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23bdd61c2b0208190d349e2a6395a78b45bcb74349b46980f7472089b448eeb3`  
-		Last Modified: Wed, 21 Oct 2026 22:57:33 GMT  
+	-	`sha256:0e85a159118f2f3679ebb6b4f841cec34e45c96959c011f77f943a5187a75180`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d18ae2be4ba3e4735db4c27fb15de37e63552980e82314b06a86510a8605435`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4ca84e69851e60139afdd8550892558df3b510e6a6d52106b72f69ce206e8597`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c153fc46268f0f39203e88dd8b69364f38a2734f654b1d378b9613d8ddac7d`  
-		Last Modified: Wed, 21 Oct 2026 23:31:49 GMT  
-		Size: 35.9 MB (35910336 bytes)  
+	-	`sha256:ea26203e5a969d2b98ea61544d5de17744d6645aead7db6bd46b3db139ea0486`  
+		Last Modified: Tue, 03 Nov 2026 22:14:34 GMT  
+		Size: 35.9 MB (35918177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0b548559a4a99cb9d1624a8d08fe1d5a67bdf1e037d9297febb7d4d26599db0`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
+	-	`sha256:121888d3bdb04cfa03edb2de4c0365e537f0368a52a02d5964e4dbbbb1f1e337`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:31bdb0136bc2e4ff147e4de9dfa06829119ae040b94a30ec57baf970f60e0f7b
+$ docker pull jetty@sha256:06c8d8087d7f3bc919acedc4cdec670158c267d68c756ced1d6a1aaef9c21136
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1137333 bytes)**  
+-	Total Size: **1.1 MB (1137327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6c43908d139a4108aa4600a631b91bd450855b4ddad5796720c70cd9007fbeb`
+-	Image ID: `sha256:e8bbb442928f098da589a8d2a61cabf652acbba25cafdf71d14e32b2ce5503c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b34eae75ec38bb74560b80c05b090a2047f52977c63c507a9f8a65e3fe06650`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 1.1 MB (1117731 bytes)  
+	-	`sha256:cde155723657d5267d586c3110a06b0e1d579c0bb865dc56f67963fa95fc719e`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 1.1 MB (1117727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1d151b9f350b3b5508f454f7a1fb0834a241d5fcfe2964d982bc7eabfb422eec`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 19.6 KB (19602 bytes)  
+	-	`sha256:4836a5cb0e6f39f1b7858e9c46562687a55d9affde7449d0885270563d851c6f`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 19.6 KB (19600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jre17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b6052c5d741eaf6
+$ docker pull jetty@sha256:02d31e6764d5fcd0f6f5d7e80cf444c6dede2667f54e472a378410907e1d6e45
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12296,13 +12296,13 @@ $ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b605
 ### `jetty:12.0-jre17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467c0b66f40346
+$ docker pull jetty@sha256:234b8f19e8f9b3cf4d247f6b779905636a385f32879ed803b6de3150eb4148d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103921740 bytes)**  
+-	Total Size: **104.0 MB (104023656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78722035697409137b3e5baf51603314fc4501358425756e799c6a1f8345eb6e`
+-	Image ID: `sha256:40d27c82a6f118c5c5c8ffebbf87d628d76af1172b339cacd51dcf2a5b891c35`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -12311,51 +12311,51 @@ $ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:19 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:23 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='72423b1464907857f4e7ca854a2b8fd9f7cf6b9dd15bd3ea31ef6cf33b097aea';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:04 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='e42129db57e3965d9d8befdb097531d7887916690338ff0be7d1b0113287c872';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Tue, 03 Nov 2026 21:57:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -12364,63 +12364,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b0d0fa06f07d6576bceecc1191b388aa4aebe0ab36760f6cec57f260a42f95`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 17.0 MB (16967459 bytes)  
+	-	`sha256:b7a39843ede75593ee79975fc55a5dbe9fe6ecfa3acea86740b62f504cd174a0`  
+		Last Modified: Tue, 03 Nov 2026 21:57:15 GMT  
+		Size: 17.0 MB (16970056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b644faf4666aaa5c74a1c460f3a971622d671bbabcd87e985c9248aa7e3542c6`  
-		Last Modified: Wed, 21 Oct 2026 22:57:35 GMT  
-		Size: 47.2 MB (47186368 bytes)  
+	-	`sha256:fc46b7297ab59ee26dc28facbc5e638f1156c6c41e8ece8da0e7d1fa31682130`  
+		Last Modified: Tue, 03 Nov 2026 21:57:16 GMT  
+		Size: 47.3 MB (47277847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23bdd61c2b0208190d349e2a6395a78b45bcb74349b46980f7472089b448eeb3`  
-		Last Modified: Wed, 21 Oct 2026 22:57:33 GMT  
+	-	`sha256:0e85a159118f2f3679ebb6b4f841cec34e45c96959c011f77f943a5187a75180`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d18ae2be4ba3e4735db4c27fb15de37e63552980e82314b06a86510a8605435`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4ca84e69851e60139afdd8550892558df3b510e6a6d52106b72f69ce206e8597`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c153fc46268f0f39203e88dd8b69364f38a2734f654b1d378b9613d8ddac7d`  
-		Last Modified: Wed, 21 Oct 2026 23:31:49 GMT  
-		Size: 35.9 MB (35910336 bytes)  
+	-	`sha256:ea26203e5a969d2b98ea61544d5de17744d6645aead7db6bd46b3db139ea0486`  
+		Last Modified: Tue, 03 Nov 2026 22:14:34 GMT  
+		Size: 35.9 MB (35918177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0b548559a4a99cb9d1624a8d08fe1d5a67bdf1e037d9297febb7d4d26599db0`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
+	-	`sha256:121888d3bdb04cfa03edb2de4c0365e537f0368a52a02d5964e4dbbbb1f1e337`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:31bdb0136bc2e4ff147e4de9dfa06829119ae040b94a30ec57baf970f60e0f7b
+$ docker pull jetty@sha256:06c8d8087d7f3bc919acedc4cdec670158c267d68c756ced1d6a1aaef9c21136
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1137333 bytes)**  
+-	Total Size: **1.1 MB (1137327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6c43908d139a4108aa4600a631b91bd450855b4ddad5796720c70cd9007fbeb`
+-	Image ID: `sha256:e8bbb442928f098da589a8d2a61cabf652acbba25cafdf71d14e32b2ce5503c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b34eae75ec38bb74560b80c05b090a2047f52977c63c507a9f8a65e3fe06650`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 1.1 MB (1117731 bytes)  
+	-	`sha256:cde155723657d5267d586c3110a06b0e1d579c0bb865dc56f67963fa95fc719e`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 1.1 MB (1117727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1d151b9f350b3b5508f454f7a1fb0834a241d5fcfe2964d982bc7eabfb422eec`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 19.6 KB (19602 bytes)  
+	-	`sha256:4836a5cb0e6f39f1b7858e9c46562687a55d9affde7449d0885270563d851c6f`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 19.6 KB (19600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jre17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba08350eb6984ca2
+$ docker pull jetty@sha256:581eebc8fc4e363e39546147502d36c12ed21d31b54d02c0544e812ac6f436d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12433,13 +12433,13 @@ $ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba083
 ### `jetty:12.0-jre17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:7bec63972abf97c58bda8abf33345676c7a7e3f01d9f6bd2230424b9fa37bf38
+$ docker pull jetty@sha256:84e9802efceb420f23018a933fe56942450e66540e69113422ac4d72a212d298
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.0 MB (144973494 bytes)**  
+-	Total Size: **145.1 MB (145073811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5be9f14f5ab8037ca8488405843df45655d1038dfce12eff89c79a9e7b90c7`
+-	Image ID: `sha256:06e9ca60e5f6309e352c62a4db14fe3290fd6e307171347ed0d9631bd5421087`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -12470,51 +12470,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:52 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:43 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -12527,69 +12527,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55276dea08ee0fcfc88e30a530566765c5d6cc5bcb9b628b018695288903b8a1`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 20.1 MB (20136009 bytes)  
+	-	`sha256:e9d963469cca204afadb6e2867d4c07af8784d769041083b87bb2fbd4ed990c9`  
+		Last Modified: Tue, 03 Nov 2026 21:57:57 GMT  
+		Size: 20.1 MB (20135981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a5d3dd27cd5bc2c69c78656a4679822f4b6d7962b05dd941df3766cb0336eb9`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 47.5 MB (47520136 bytes)  
+	-	`sha256:f6168622535480b5514852952649f9b2a77ae69b259f319b7897ec994cb6106d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:58 GMT  
+		Size: 47.6 MB (47620504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb9a6f797c90c19b207f662dd0f04d610ee6996cb4e99983312c1a86cd18403`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
-		Size: 156.0 B  
+	-	`sha256:91efa06f9c7e35a87a3e67c309e198e9b90b4c24fd6d3b3bee343b18d2fd7c3d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871684199c33b60f7e90eaaabe0b28a6a37df73ae51fe3e450cd6c2b9f9c6747`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
+	-	`sha256:f7822ed33003a3b8803072a638d629b3c21c4901a6c0651965458fbb26cfa109`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91c71352733d6272649485d8c900e6096c05ee1d7aea148a6f18764f78235861`  
-		Last Modified: Tue, 27 Oct 2026 00:24:13 GMT  
-		Size: 35.2 MB (35172541 bytes)  
+	-	`sha256:c59f3f7c9379081b8c0aff1f8ffc02bdc31bccb9fed80916bbf5b44f3474870a`  
+		Last Modified: Tue, 03 Nov 2026 22:14:53 GMT  
+		Size: 35.2 MB (35172515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d73ce77267cca864dfaf714f858be83894c6dcc86d0c5a13b87499ffe35d6c5d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
+	-	`sha256:24c09a35b2adc336b517ca9f3779455fad9c841d14881b02805651d0d9bc72f8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:12e402576164a4a56ad4b7bfd02b9b06b2315c8aa6a940269e442e93ec5a9a3b
+$ docker pull jetty@sha256:8cf5cba348e58ca06e9682b3eb12da8adc28e48ca8523a8d29fbc21ce4debf22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381736 bytes)**  
+-	Total Size: **5.4 MB (5381726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:056e981d162f7c1baa362c16bb0655a6e58f4b164739246a610c9e42e1d0c5de`
+-	Image ID: `sha256:0e1557786951fd908136f4db0127bbcb0474fd242578d46f4a01ea47fd04571a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041dcef9fce402de96b04771c1dc6af0cd9f2c7e400971ce58a64378f872f43f`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 5.4 MB (5359988 bytes)  
+	-	`sha256:eaf7b002138ae4221771c1274b06cc10f9ac5138dda7b51f43ac69151cc94912`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 5.4 MB (5359980 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e8015a347f28b5eb4f70f14fad9d6c25d45dc35398e0f893950d7944b512acd`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 21.7 KB (21748 bytes)  
+	-	`sha256:d849b7464f7ff2b343f2dd4305391715f1fe7b3ff429f466483bc4646e0fdcc8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 21.7 KB (21746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0-jre17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:1e5f0c1a2b1f7e110d5daa59ffd00ac50963b43396650da40aff9ac9cfbbb7e7
+$ docker pull jetty@sha256:10730efcbe57570a34beb4937decc3fd2b695d060f2ae8969a4ed6f3e27573a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143249476 bytes)**  
+-	Total Size: **143.4 MB (143375556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6defdc77b9dacbedf7f8ce0da6917a812b15d229972d5a1aba00606eb962b847`
+-	Image ID: `sha256:979cd5c9660e6909fd596ea160c21421fc94094fc8b8d15c980b5d44b82321a7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -12620,51 +12620,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:17:09 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:17:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:14 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -12677,57 +12677,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eab66d96634cb2807e7d3d6e4679181b8a17eaea84c13da0adeb57d0ba1bd3ac`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 19.9 MB (19946815 bytes)  
+	-	`sha256:d274970dd87b5b3216d851fbd1399a9010169e57dc118d39592d7657d7162b14`  
+		Last Modified: Tue, 03 Nov 2026 21:57:30 GMT  
+		Size: 19.9 MB (19946906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e0998de2ccfa9c0e8cb412f8261f66e91be95a23ce533a6ec8b0cce5e511413`  
-		Last Modified: Mon, 26 Oct 2026 23:17:28 GMT  
-		Size: 47.0 MB (47002293 bytes)  
+	-	`sha256:516430e9168d50324dc06189743c31a5c76870b907c3e03e250b594393650756`  
+		Last Modified: Tue, 03 Nov 2026 21:57:31 GMT  
+		Size: 47.1 MB (47128307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6eed336799268735b9056d91b00113404287740fe9afb51676ec81b2119fe41`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 158.0 B  
+	-	`sha256:e78ecd46df3f1ee2ea0f9cd6859f11958f4d06b286d04f67aa173b0673cec5fe`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34d9f096dcb82b5dd3a4c535022172008aa7cd8e8eede96b3bfe02ac578e05f2`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:73568c906d817d812476c7b88b7a48bc51e823a435043da1051772e8dfd2ac60`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebe26a56d645c1f1147f1d7ecb339bf422037a089270aedc533f120acc7b57e`  
-		Last Modified: Tue, 27 Oct 2026 00:23:16 GMT  
-		Size: 35.2 MB (35173173 bytes)  
+	-	`sha256:532026269b444527e54387cd46d2ec92b5fdb467f679421f210e78cefde4848d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 35.2 MB (35173150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e41709a5d3cb7b8c7c323833df8b78fe5a3e73da526cfba2ab405d1eab90bf`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
+	-	`sha256:cbe5b97ae079f7c477fa6ee4c040aa5b86c12b23124a474b69826e57846c1f38`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0-jre17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:977b3e9a75aaf7eab33dea182b1ff266434185937925868402021fa88c733569
+$ docker pull jetty@sha256:8029954292f96f98a3bff222028ac60fe89591351c42aed38c0b8872ebee2782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381509 bytes)**  
+-	Total Size: **5.4 MB (5381499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d951060b10f81fead7e0075ebae7e49ce3dd1b5147f25720611d63c9327c9a0`
+-	Image ID: `sha256:67ce9be8f51df46d00bad55f729c28b7b682d8ae318c56007056bd4db47a649d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90dba09da90525f217eb6365f59bab2ac2c583d1b3c2ffef9c1f02f5a9ed025b`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 5.4 MB (5359657 bytes)  
+	-	`sha256:96d60839922b75701ba8204e26747fba2f3dacf179ce1abab0f1f33b7a65f03c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 5.4 MB (5359649 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:669c5d84f905d7c70124afb4c635694f643b918f24cf168ec19dbc64d3b0ae76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 21.9 KB (21852 bytes)  
+	-	`sha256:39b7f7c8445652302c55a600524edfc1e38fa290c24e2740c81df6ac31603649`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 21.9 KB (21850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0-jre21`
@@ -14717,7 +14717,7 @@ $ docker pull jetty@sha256:462d1c9b4d79daa8b883b9f9f9699e22852ee50cea08f0f386124
 ## `jetty:12.0.40-jdk17`
 
 ```console
-$ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a4dea00d6025
+$ docker pull jetty@sha256:31a299968695854f79a4ecbf785ccf8188b81c8eea7f1b1949da56389b3e1ade
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14730,13 +14730,13 @@ $ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a
 ### `jetty:12.0.40-jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:a6d6f8a5d2f4bfbc16abd42121fdda45702a5264cdfb16fa53e1bb1ac7aba2b8
+$ docker pull jetty@sha256:fbe12892d71c358851c240de82ee5183aa3b5e23cb7919184bc3d7b6b58d6a2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.2 MB (247210543 bytes)**  
+-	Total Size: **247.5 MB (247466358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8049e2a5534d609e707b75d957b210d5a18d2fc1ecfd2122666de66cd478a04`
+-	Image ID: `sha256:3e35f4df0410e6b3b1addf8fdaaf844a773e4bc6929942b74068c45d81b8eea0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -14767,53 +14767,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -14826,69 +14826,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d7a52479c7386efd53f248c3dd1ebf3e6e34a496858acc02d48722354e69bec`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 35.2 MB (35176704 bytes)  
+	-	`sha256:11bc5ee1ce7b6a91afd5af86a502aafb7238c70ea5c951a8a7e6781b0284139c`  
+		Last Modified: Tue, 03 Nov 2026 22:15:03 GMT  
+		Size: 35.2 MB (35176646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3fcc5f2931ac31780642d2458022913ab3fdb954df5ed75e90c0e65911312d7`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:890f72ce31260a4a55bef0567aa4167e5d1ed95214314327c0df6d8794306e9d`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 1.8 KB (1842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:9aac3758db1e1b5c65225702f89d45ab581c8731bc491ae7f4aa235c516ddd61
+$ docker pull jetty@sha256:2ea39bfee9b0590ae14909a42c14ccb7d862ba4cb8a0a3b4732bdad34eabfd61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5647508 bytes)**  
+-	Total Size: **5.6 MB (5647498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a922cd4f95c9b4bb24722a790c64fa1fd3452c3ac7c757c83c91f10be470a7`
+-	Image ID: `sha256:bc7146446e0df53bde39836dc68d8bd475aeb1187c216868761fa5db4642a99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6c1da8684631da3c0c028c60528223ef66b05ec67669f016c2b5e8bf5438c2ef`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 5.6 MB (5625756 bytes)  
+	-	`sha256:81d6e31ceddc5e649c31908e4ac08dad08bb26a3064a447116a4f75732542ec4`  
+		Last Modified: Tue, 03 Nov 2026 22:15:02 GMT  
+		Size: 5.6 MB (5625748 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2a57c83b578674b3ee949bc8dc95096577eb38be6ac9ea8bf6ac4c084b711c4d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:19 GMT  
-		Size: 21.8 KB (21752 bytes)  
+	-	`sha256:0e8fcdb20ea2555fba3de987fb3177cf4f5aa7c6473163c6c85c8a548d638472`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 21.8 KB (21750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0.40-jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:b6c9d5ec88ed87b7bf211469d1a71a1bdc3aa364dd62d32ccf3603bb939532a6
+$ docker pull jetty@sha256:259d7ac45e53115124ca2b65218ca7cbab269d1f0be908855f42080a8510eb0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244894121 bytes)**  
+-	Total Size: **245.2 MB (245205464 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb8632e9fea5ca2e457346544e6084a028a513c839a1b0908b35467e2dd7c31`
+-	Image ID: `sha256:cc6435be8622b7b2dbf37e2c838ad042f052fffc87f1ad554fee737b4ccf4df7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -14919,53 +14919,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -14978,57 +14978,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29ec9127c1c476b0681d10ceb3e0fad9de773e89ad5af361ba4d0fc1e1ef595`  
-		Last Modified: Tue, 27 Oct 2026 00:23:57 GMT  
-		Size: 35.2 MB (35177131 bytes)  
+	-	`sha256:498a276d4b50734a9a4a1e631c2c9e0132970a8c37d66f4a934383e66f69091c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 35.2 MB (35177111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8a22060a4f0b9e548b0ec1da6099e8c3e19b1c68cb3e22a5ffeaf5fcebd2401`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:d829312a99cdff1863c18cff688c4c11bec787b0e433877350ee0dd851f484d9`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:38dd0c4419644415cd882e6b31214ad7184f2fc8456b4c09eecc1c87f3961440
+$ docker pull jetty@sha256:84a3802738bf1dafddc4e86df48a2c926d5a2e354abf09bb0e6ae4d8d852856a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5835004 bytes)**  
+-	Total Size: **5.8 MB (5834994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4218365fee1ed2cec9e654cb0896bc77aea68c67f659d188b96c3e77a7030e83`
+-	Image ID: `sha256:223f8896bc663ed3cde29f47e48918b5daa9c2f4693f11ab4a32dd2baa962c5a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba1ffa05f90e72b6f2541e2abaed8fdd407a325ec48dbea1f6e96ec04b9db73a`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 5.8 MB (5813148 bytes)  
+	-	`sha256:0db883dc56ebab11d43887222312b185ef998d3ad656db52d2b66ed6456176b6`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.8 MB (5813140 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be3341b74dbd126d4c8ab3376e7fd073a16c0bb1088b2e609512338c9b1f8d32`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 21.9 KB (21856 bytes)  
+	-	`sha256:87f30ce0d9ed6dde54677e5ee035326a3a104ecfe6d4d084e8a1122ae632d882`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 21.9 KB (21854 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jdk17-al2023-amazoncorretto`
@@ -15261,7 +15261,7 @@ $ docker pull jetty@sha256:047c5bf220f43ed59155b9434e8262f905318cc31e406161c77ff
 ## `jetty:12.0.40-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb9308fb87241b1
+$ docker pull jetty@sha256:0f0a52924bba103893213030b786604e8d3534deecf5200c775a4b420416c5d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15272,13 +15272,13 @@ $ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb93
 ### `jetty:12.0.40-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef1bdc235665f
+$ docker pull jetty@sha256:3e33fadfacf6d41d226042b126e4c4099a2d2377c32aa03b952b33bb1f9eb694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.2 MB (206184368 bytes)**  
+-	Total Size: **206.5 MB (206458603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b28e1cba7bc8e16158bb6aeaf0171bf7f7faf4aa72afab7e6587de471ea16cca`
+-	Image ID: `sha256:8c62f32b17da374964b02d6839cb62c18bf033401425e11fcfee42ac229e9881`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -15287,53 +15287,53 @@ $ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -15342,57 +15342,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:570dea9c57fad4d2051df8a430d7faba55c06d627e24ef778b5d96818d0c0e35`  
-		Last Modified: Wed, 21 Oct 2026 23:32:06 GMT  
-		Size: 35.9 MB (35915210 bytes)  
+	-	`sha256:071d7eb98f29aba53a6b7c0ebb44a16a4c4bc02202293e03f3edeea84c06c050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:41 GMT  
+		Size: 35.9 MB (35922954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af77741b267c8e91ecc954a003905a6b73a1797b46d51b08c137e46a283e40f6`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
+	-	`sha256:075f5518ce680e6e680bb149b9d86e0b49326f8d6ad450ff387f58d11d6b81a7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:ace4841b6f142e8e8937457fc94edb1264382fef1d30541e9027a46113802884
+$ docker pull jetty@sha256:0a984a345fb5f87a5f0a64e17350f8fad059ef448e35744c061baac79eb52aaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1339684 bytes)**  
+-	Total Size: **1.3 MB (1339678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:118804cac7fd171ce05528213548ae775c901858d7b7369f759c1f7e524e1ac0`
+-	Image ID: `sha256:e9e11715e0d3a68a184fcb83e5b1817229be56d3c9df75e0564a60b4c61d6595`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32f356fd11bbb56f5fdd8eae3cf0e05b8edc5fb2e9f3fb391d1eb5d62a15eece`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 1.3 MB (1320078 bytes)  
+	-	`sha256:c196874fd7ee67424e03a050ebf8af358c3317c0ee00dfbbc10e2650bb8169db`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 1.3 MB (1320074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce30f1adfa2d680c13d5f15215743380fd177d4dc25fdf1e9ae34bc947c8236c`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 19.6 KB (19606 bytes)  
+	-	`sha256:f7e6c9d707967f71fdd7547320fdcf91afd724ac039b252d450592b5e5891bbc`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 19.6 KB (19604 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jdk17-alpine-amazoncorretto`
@@ -15621,7 +15621,7 @@ $ docker pull jetty@sha256:209404edadd28a114653c98053b35658f0d2ce140470a5afe05e2
 ## `jetty:12.0.40-jdk17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb9308fb87241b1
+$ docker pull jetty@sha256:0f0a52924bba103893213030b786604e8d3534deecf5200c775a4b420416c5d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15632,13 +15632,13 @@ $ docker pull jetty@sha256:92d7e191eda4e54c2adb6dd0ae920c3ff41db3183653e3a34cb93
 ### `jetty:12.0.40-jdk17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef1bdc235665f
+$ docker pull jetty@sha256:3e33fadfacf6d41d226042b126e4c4099a2d2377c32aa03b952b33bb1f9eb694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.2 MB (206184368 bytes)**  
+-	Total Size: **206.5 MB (206458603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b28e1cba7bc8e16158bb6aeaf0171bf7f7faf4aa72afab7e6587de471ea16cca`
+-	Image ID: `sha256:8c62f32b17da374964b02d6839cb62c18bf033401425e11fcfee42ac229e9881`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -15647,53 +15647,53 @@ $ docker pull jetty@sha256:ea6de91ef626c6dabc82350b1d28057225079004924f6ba5faaef
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:32 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:56 GMT
+# Tue, 03 Nov 2026 22:14:33 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -15702,57 +15702,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:570dea9c57fad4d2051df8a430d7faba55c06d627e24ef778b5d96818d0c0e35`  
-		Last Modified: Wed, 21 Oct 2026 23:32:06 GMT  
-		Size: 35.9 MB (35915210 bytes)  
+	-	`sha256:071d7eb98f29aba53a6b7c0ebb44a16a4c4bc02202293e03f3edeea84c06c050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:41 GMT  
+		Size: 35.9 MB (35922954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af77741b267c8e91ecc954a003905a6b73a1797b46d51b08c137e46a283e40f6`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
+	-	`sha256:075f5518ce680e6e680bb149b9d86e0b49326f8d6ad450ff387f58d11d6b81a7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:ace4841b6f142e8e8937457fc94edb1264382fef1d30541e9027a46113802884
+$ docker pull jetty@sha256:0a984a345fb5f87a5f0a64e17350f8fad059ef448e35744c061baac79eb52aaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1339684 bytes)**  
+-	Total Size: **1.3 MB (1339678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:118804cac7fd171ce05528213548ae775c901858d7b7369f759c1f7e524e1ac0`
+-	Image ID: `sha256:e9e11715e0d3a68a184fcb83e5b1817229be56d3c9df75e0564a60b4c61d6595`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:32f356fd11bbb56f5fdd8eae3cf0e05b8edc5fb2e9f3fb391d1eb5d62a15eece`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 1.3 MB (1320078 bytes)  
+	-	`sha256:c196874fd7ee67424e03a050ebf8af358c3317c0ee00dfbbc10e2650bb8169db`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 1.3 MB (1320074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce30f1adfa2d680c13d5f15215743380fd177d4dc25fdf1e9ae34bc947c8236c`  
-		Last Modified: Wed, 21 Oct 2026 23:32:05 GMT  
-		Size: 19.6 KB (19606 bytes)  
+	-	`sha256:f7e6c9d707967f71fdd7547320fdcf91afd724ac039b252d450592b5e5891bbc`  
+		Last Modified: Tue, 03 Nov 2026 22:14:40 GMT  
+		Size: 19.6 KB (19604 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jdk17-amazoncorretto`
@@ -15985,7 +15985,7 @@ $ docker pull jetty@sha256:047c5bf220f43ed59155b9434e8262f905318cc31e406161c77ff
 ## `jetty:12.0.40-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a4dea00d6025
+$ docker pull jetty@sha256:31a299968695854f79a4ecbf785ccf8188b81c8eea7f1b1949da56389b3e1ade
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15998,13 +15998,13 @@ $ docker pull jetty@sha256:ab10a367173f730fb90c139ab6f79dadc0f984846a0d7662cd71a
 ### `jetty:12.0.40-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:a6d6f8a5d2f4bfbc16abd42121fdda45702a5264cdfb16fa53e1bb1ac7aba2b8
+$ docker pull jetty@sha256:fbe12892d71c358851c240de82ee5183aa3b5e23cb7919184bc3d7b6b58d6a2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **247.2 MB (247210543 bytes)**  
+-	Total Size: **247.5 MB (247466358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8049e2a5534d609e707b75d957b210d5a18d2fc1ecfd2122666de66cd478a04`
+-	Image ID: `sha256:3e35f4df0410e6b3b1addf8fdaaf844a773e4bc6929942b74068c45d81b8eea0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -16035,53 +16035,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:08 GMT
+# Tue, 03 Nov 2026 22:14:49 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -16094,69 +16094,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d7a52479c7386efd53f248c3dd1ebf3e6e34a496858acc02d48722354e69bec`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 35.2 MB (35176704 bytes)  
+	-	`sha256:11bc5ee1ce7b6a91afd5af86a502aafb7238c70ea5c951a8a7e6781b0284139c`  
+		Last Modified: Tue, 03 Nov 2026 22:15:03 GMT  
+		Size: 35.2 MB (35176646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3fcc5f2931ac31780642d2458022913ab3fdb954df5ed75e90c0e65911312d7`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:890f72ce31260a4a55bef0567aa4167e5d1ed95214314327c0df6d8794306e9d`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 1.8 KB (1842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:9aac3758db1e1b5c65225702f89d45ab581c8731bc491ae7f4aa235c516ddd61
+$ docker pull jetty@sha256:2ea39bfee9b0590ae14909a42c14ccb7d862ba4cb8a0a3b4732bdad34eabfd61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5647508 bytes)**  
+-	Total Size: **5.6 MB (5647498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79a922cd4f95c9b4bb24722a790c64fa1fd3452c3ac7c757c83c91f10be470a7`
+-	Image ID: `sha256:bc7146446e0df53bde39836dc68d8bd475aeb1187c216868761fa5db4642a99e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6c1da8684631da3c0c028c60528223ef66b05ec67669f016c2b5e8bf5438c2ef`  
-		Last Modified: Tue, 27 Oct 2026 00:24:20 GMT  
-		Size: 5.6 MB (5625756 bytes)  
+	-	`sha256:81d6e31ceddc5e649c31908e4ac08dad08bb26a3064a447116a4f75732542ec4`  
+		Last Modified: Tue, 03 Nov 2026 22:15:02 GMT  
+		Size: 5.6 MB (5625748 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2a57c83b578674b3ee949bc8dc95096577eb38be6ac9ea8bf6ac4c084b711c4d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:19 GMT  
-		Size: 21.8 KB (21752 bytes)  
+	-	`sha256:0e8fcdb20ea2555fba3de987fb3177cf4f5aa7c6473163c6c85c8a548d638472`  
+		Last Modified: Tue, 03 Nov 2026 22:15:01 GMT  
+		Size: 21.8 KB (21750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0.40-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:b6c9d5ec88ed87b7bf211469d1a71a1bdc3aa364dd62d32ccf3603bb939532a6
+$ docker pull jetty@sha256:259d7ac45e53115124ca2b65218ca7cbab269d1f0be908855f42080a8510eb0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.9 MB (244894121 bytes)**  
+-	Total Size: **245.2 MB (245205464 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cb8632e9fea5ca2e457346544e6084a028a513c839a1b0908b35467e2dd7c31`
+-	Image ID: `sha256:cc6435be8622b7b2dbf37e2c838ad042f052fffc87f1ad554fee737b4ccf4df7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -16187,53 +16187,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:43 GMT
+# Tue, 03 Nov 2026 22:14:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -16246,57 +16246,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f29ec9127c1c476b0681d10ceb3e0fad9de773e89ad5af361ba4d0fc1e1ef595`  
-		Last Modified: Tue, 27 Oct 2026 00:23:57 GMT  
-		Size: 35.2 MB (35177131 bytes)  
+	-	`sha256:498a276d4b50734a9a4a1e631c2c9e0132970a8c37d66f4a934383e66f69091c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 35.2 MB (35177111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8a22060a4f0b9e548b0ec1da6099e8c3e19b1c68cb3e22a5ffeaf5fcebd2401`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 1.8 KB (1845 bytes)  
+	-	`sha256:d829312a99cdff1863c18cff688c4c11bec787b0e433877350ee0dd851f484d9`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:38dd0c4419644415cd882e6b31214ad7184f2fc8456b4c09eecc1c87f3961440
+$ docker pull jetty@sha256:84a3802738bf1dafddc4e86df48a2c926d5a2e354abf09bb0e6ae4d8d852856a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5835004 bytes)**  
+-	Total Size: **5.8 MB (5834994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4218365fee1ed2cec9e654cb0896bc77aea68c67f659d188b96c3e77a7030e83`
+-	Image ID: `sha256:223f8896bc663ed3cde29f47e48918b5daa9c2f4693f11ab4a32dd2baa962c5a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba1ffa05f90e72b6f2541e2abaed8fdd407a325ec48dbea1f6e96ec04b9db73a`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 5.8 MB (5813148 bytes)  
+	-	`sha256:0db883dc56ebab11d43887222312b185ef998d3ad656db52d2b66ed6456176b6`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.8 MB (5813140 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be3341b74dbd126d4c8ab3376e7fd073a16c0bb1088b2e609512338c9b1f8d32`  
-		Last Modified: Tue, 27 Oct 2026 00:23:56 GMT  
-		Size: 21.9 KB (21856 bytes)  
+	-	`sha256:87f30ce0d9ed6dde54677e5ee035326a3a104ecfe6d4d084e8a1122ae632d882`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 21.9 KB (21854 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jdk21`
@@ -19472,7 +19472,7 @@ $ docker pull jetty@sha256:462d1c9b4d79daa8b883b9f9f9699e22852ee50cea08f0f386124
 ## `jetty:12.0.40-jre17`
 
 ```console
-$ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba08350eb6984ca2
+$ docker pull jetty@sha256:581eebc8fc4e363e39546147502d36c12ed21d31b54d02c0544e812ac6f436d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19485,13 +19485,13 @@ $ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba083
 ### `jetty:12.0.40-jre17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:7bec63972abf97c58bda8abf33345676c7a7e3f01d9f6bd2230424b9fa37bf38
+$ docker pull jetty@sha256:84e9802efceb420f23018a933fe56942450e66540e69113422ac4d72a212d298
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.0 MB (144973494 bytes)**  
+-	Total Size: **145.1 MB (145073811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5be9f14f5ab8037ca8488405843df45655d1038dfce12eff89c79a9e7b90c7`
+-	Image ID: `sha256:06e9ca60e5f6309e352c62a4db14fe3290fd6e307171347ed0d9631bd5421087`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -19522,51 +19522,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:52 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:43 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -19579,69 +19579,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55276dea08ee0fcfc88e30a530566765c5d6cc5bcb9b628b018695288903b8a1`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 20.1 MB (20136009 bytes)  
+	-	`sha256:e9d963469cca204afadb6e2867d4c07af8784d769041083b87bb2fbd4ed990c9`  
+		Last Modified: Tue, 03 Nov 2026 21:57:57 GMT  
+		Size: 20.1 MB (20135981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a5d3dd27cd5bc2c69c78656a4679822f4b6d7962b05dd941df3766cb0336eb9`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 47.5 MB (47520136 bytes)  
+	-	`sha256:f6168622535480b5514852952649f9b2a77ae69b259f319b7897ec994cb6106d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:58 GMT  
+		Size: 47.6 MB (47620504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb9a6f797c90c19b207f662dd0f04d610ee6996cb4e99983312c1a86cd18403`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
-		Size: 156.0 B  
+	-	`sha256:91efa06f9c7e35a87a3e67c309e198e9b90b4c24fd6d3b3bee343b18d2fd7c3d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871684199c33b60f7e90eaaabe0b28a6a37df73ae51fe3e450cd6c2b9f9c6747`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
+	-	`sha256:f7822ed33003a3b8803072a638d629b3c21c4901a6c0651965458fbb26cfa109`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91c71352733d6272649485d8c900e6096c05ee1d7aea148a6f18764f78235861`  
-		Last Modified: Tue, 27 Oct 2026 00:24:13 GMT  
-		Size: 35.2 MB (35172541 bytes)  
+	-	`sha256:c59f3f7c9379081b8c0aff1f8ffc02bdc31bccb9fed80916bbf5b44f3474870a`  
+		Last Modified: Tue, 03 Nov 2026 22:14:53 GMT  
+		Size: 35.2 MB (35172515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d73ce77267cca864dfaf714f858be83894c6dcc86d0c5a13b87499ffe35d6c5d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
+	-	`sha256:24c09a35b2adc336b517ca9f3779455fad9c841d14881b02805651d0d9bc72f8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:12e402576164a4a56ad4b7bfd02b9b06b2315c8aa6a940269e442e93ec5a9a3b
+$ docker pull jetty@sha256:8cf5cba348e58ca06e9682b3eb12da8adc28e48ca8523a8d29fbc21ce4debf22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381736 bytes)**  
+-	Total Size: **5.4 MB (5381726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:056e981d162f7c1baa362c16bb0655a6e58f4b164739246a610c9e42e1d0c5de`
+-	Image ID: `sha256:0e1557786951fd908136f4db0127bbcb0474fd242578d46f4a01ea47fd04571a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041dcef9fce402de96b04771c1dc6af0cd9f2c7e400971ce58a64378f872f43f`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 5.4 MB (5359988 bytes)  
+	-	`sha256:eaf7b002138ae4221771c1274b06cc10f9ac5138dda7b51f43ac69151cc94912`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 5.4 MB (5359980 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e8015a347f28b5eb4f70f14fad9d6c25d45dc35398e0f893950d7944b512acd`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 21.7 KB (21748 bytes)  
+	-	`sha256:d849b7464f7ff2b343f2dd4305391715f1fe7b3ff429f466483bc4646e0fdcc8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 21.7 KB (21746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0.40-jre17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:1e5f0c1a2b1f7e110d5daa59ffd00ac50963b43396650da40aff9ac9cfbbb7e7
+$ docker pull jetty@sha256:10730efcbe57570a34beb4937decc3fd2b695d060f2ae8969a4ed6f3e27573a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143249476 bytes)**  
+-	Total Size: **143.4 MB (143375556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6defdc77b9dacbedf7f8ce0da6917a812b15d229972d5a1aba00606eb962b847`
+-	Image ID: `sha256:979cd5c9660e6909fd596ea160c21421fc94094fc8b8d15c980b5d44b82321a7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -19672,51 +19672,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:17:09 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:17:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:14 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -19729,63 +19729,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eab66d96634cb2807e7d3d6e4679181b8a17eaea84c13da0adeb57d0ba1bd3ac`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 19.9 MB (19946815 bytes)  
+	-	`sha256:d274970dd87b5b3216d851fbd1399a9010169e57dc118d39592d7657d7162b14`  
+		Last Modified: Tue, 03 Nov 2026 21:57:30 GMT  
+		Size: 19.9 MB (19946906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e0998de2ccfa9c0e8cb412f8261f66e91be95a23ce533a6ec8b0cce5e511413`  
-		Last Modified: Mon, 26 Oct 2026 23:17:28 GMT  
-		Size: 47.0 MB (47002293 bytes)  
+	-	`sha256:516430e9168d50324dc06189743c31a5c76870b907c3e03e250b594393650756`  
+		Last Modified: Tue, 03 Nov 2026 21:57:31 GMT  
+		Size: 47.1 MB (47128307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6eed336799268735b9056d91b00113404287740fe9afb51676ec81b2119fe41`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 158.0 B  
+	-	`sha256:e78ecd46df3f1ee2ea0f9cd6859f11958f4d06b286d04f67aa173b0673cec5fe`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34d9f096dcb82b5dd3a4c535022172008aa7cd8e8eede96b3bfe02ac578e05f2`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:73568c906d817d812476c7b88b7a48bc51e823a435043da1051772e8dfd2ac60`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebe26a56d645c1f1147f1d7ecb339bf422037a089270aedc533f120acc7b57e`  
-		Last Modified: Tue, 27 Oct 2026 00:23:16 GMT  
-		Size: 35.2 MB (35173173 bytes)  
+	-	`sha256:532026269b444527e54387cd46d2ec92b5fdb467f679421f210e78cefde4848d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 35.2 MB (35173150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e41709a5d3cb7b8c7c323833df8b78fe5a3e73da526cfba2ab405d1eab90bf`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
+	-	`sha256:cbe5b97ae079f7c477fa6ee4c040aa5b86c12b23124a474b69826e57846c1f38`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:977b3e9a75aaf7eab33dea182b1ff266434185937925868402021fa88c733569
+$ docker pull jetty@sha256:8029954292f96f98a3bff222028ac60fe89591351c42aed38c0b8872ebee2782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381509 bytes)**  
+-	Total Size: **5.4 MB (5381499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d951060b10f81fead7e0075ebae7e49ce3dd1b5147f25720611d63c9327c9a0`
+-	Image ID: `sha256:67ce9be8f51df46d00bad55f729c28b7b682d8ae318c56007056bd4db47a649d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90dba09da90525f217eb6365f59bab2ac2c583d1b3c2ffef9c1f02f5a9ed025b`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 5.4 MB (5359657 bytes)  
+	-	`sha256:96d60839922b75701ba8204e26747fba2f3dacf179ce1abab0f1f33b7a65f03c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 5.4 MB (5359649 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:669c5d84f905d7c70124afb4c635694f643b918f24cf168ec19dbc64d3b0ae76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 21.9 KB (21852 bytes)  
+	-	`sha256:39b7f7c8445652302c55a600524edfc1e38fa290c24e2740c81df6ac31603649`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 21.9 KB (21850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jre17-alpine`
 
 ```console
-$ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b6052c5d741eaf6
+$ docker pull jetty@sha256:02d31e6764d5fcd0f6f5d7e80cf444c6dede2667f54e472a378410907e1d6e45
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19796,13 +19796,13 @@ $ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b605
 ### `jetty:12.0.40-jre17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467c0b66f40346
+$ docker pull jetty@sha256:234b8f19e8f9b3cf4d247f6b779905636a385f32879ed803b6de3150eb4148d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103921740 bytes)**  
+-	Total Size: **104.0 MB (104023656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78722035697409137b3e5baf51603314fc4501358425756e799c6a1f8345eb6e`
+-	Image ID: `sha256:40d27c82a6f118c5c5c8ffebbf87d628d76af1172b339cacd51dcf2a5b891c35`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -19811,51 +19811,51 @@ $ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:19 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:23 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='72423b1464907857f4e7ca854a2b8fd9f7cf6b9dd15bd3ea31ef6cf33b097aea';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:04 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='e42129db57e3965d9d8befdb097531d7887916690338ff0be7d1b0113287c872';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Tue, 03 Nov 2026 21:57:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -19864,63 +19864,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b0d0fa06f07d6576bceecc1191b388aa4aebe0ab36760f6cec57f260a42f95`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 17.0 MB (16967459 bytes)  
+	-	`sha256:b7a39843ede75593ee79975fc55a5dbe9fe6ecfa3acea86740b62f504cd174a0`  
+		Last Modified: Tue, 03 Nov 2026 21:57:15 GMT  
+		Size: 17.0 MB (16970056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b644faf4666aaa5c74a1c460f3a971622d671bbabcd87e985c9248aa7e3542c6`  
-		Last Modified: Wed, 21 Oct 2026 22:57:35 GMT  
-		Size: 47.2 MB (47186368 bytes)  
+	-	`sha256:fc46b7297ab59ee26dc28facbc5e638f1156c6c41e8ece8da0e7d1fa31682130`  
+		Last Modified: Tue, 03 Nov 2026 21:57:16 GMT  
+		Size: 47.3 MB (47277847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23bdd61c2b0208190d349e2a6395a78b45bcb74349b46980f7472089b448eeb3`  
-		Last Modified: Wed, 21 Oct 2026 22:57:33 GMT  
+	-	`sha256:0e85a159118f2f3679ebb6b4f841cec34e45c96959c011f77f943a5187a75180`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d18ae2be4ba3e4735db4c27fb15de37e63552980e82314b06a86510a8605435`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4ca84e69851e60139afdd8550892558df3b510e6a6d52106b72f69ce206e8597`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c153fc46268f0f39203e88dd8b69364f38a2734f654b1d378b9613d8ddac7d`  
-		Last Modified: Wed, 21 Oct 2026 23:31:49 GMT  
-		Size: 35.9 MB (35910336 bytes)  
+	-	`sha256:ea26203e5a969d2b98ea61544d5de17744d6645aead7db6bd46b3db139ea0486`  
+		Last Modified: Tue, 03 Nov 2026 22:14:34 GMT  
+		Size: 35.9 MB (35918177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0b548559a4a99cb9d1624a8d08fe1d5a67bdf1e037d9297febb7d4d26599db0`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
+	-	`sha256:121888d3bdb04cfa03edb2de4c0365e537f0368a52a02d5964e4dbbbb1f1e337`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:31bdb0136bc2e4ff147e4de9dfa06829119ae040b94a30ec57baf970f60e0f7b
+$ docker pull jetty@sha256:06c8d8087d7f3bc919acedc4cdec670158c267d68c756ced1d6a1aaef9c21136
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1137333 bytes)**  
+-	Total Size: **1.1 MB (1137327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6c43908d139a4108aa4600a631b91bd450855b4ddad5796720c70cd9007fbeb`
+-	Image ID: `sha256:e8bbb442928f098da589a8d2a61cabf652acbba25cafdf71d14e32b2ce5503c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b34eae75ec38bb74560b80c05b090a2047f52977c63c507a9f8a65e3fe06650`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 1.1 MB (1117731 bytes)  
+	-	`sha256:cde155723657d5267d586c3110a06b0e1d579c0bb865dc56f67963fa95fc719e`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 1.1 MB (1117727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1d151b9f350b3b5508f454f7a1fb0834a241d5fcfe2964d982bc7eabfb422eec`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 19.6 KB (19602 bytes)  
+	-	`sha256:4836a5cb0e6f39f1b7858e9c46562687a55d9affde7449d0885270563d851c6f`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 19.6 KB (19600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jre17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b6052c5d741eaf6
+$ docker pull jetty@sha256:02d31e6764d5fcd0f6f5d7e80cf444c6dede2667f54e472a378410907e1d6e45
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19931,13 +19931,13 @@ $ docker pull jetty@sha256:3614820f739bee90d8ffb67d1c01162e92526b394ca391002b605
 ### `jetty:12.0.40-jre17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467c0b66f40346
+$ docker pull jetty@sha256:234b8f19e8f9b3cf4d247f6b779905636a385f32879ed803b6de3150eb4148d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103921740 bytes)**  
+-	Total Size: **104.0 MB (104023656 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78722035697409137b3e5baf51603314fc4501358425756e799c6a1f8345eb6e`
+-	Image ID: `sha256:40d27c82a6f118c5c5c8ffebbf87d628d76af1172b339cacd51dcf2a5b891c35`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -19946,51 +19946,51 @@ $ docker pull jetty@sha256:efa53546e1c56ef96c47e91f31088135e667503c0c648a8da1467
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:19 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:19 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:23 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='72423b1464907857f4e7ca854a2b8fd9f7cf6b9dd15bd3ea31ef6cf33b097aea';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:04 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='e42129db57e3965d9d8befdb097531d7887916690338ff0be7d1b0113287c872';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Tue, 03 Nov 2026 21:57:04 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:23 GMT
+# Tue, 03 Nov 2026 21:57:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_VERSION=12.0.40
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:40 GMT
+# Tue, 03 Nov 2026 22:14:25 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -19999,63 +19999,63 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b0d0fa06f07d6576bceecc1191b388aa4aebe0ab36760f6cec57f260a42f95`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 17.0 MB (16967459 bytes)  
+	-	`sha256:b7a39843ede75593ee79975fc55a5dbe9fe6ecfa3acea86740b62f504cd174a0`  
+		Last Modified: Tue, 03 Nov 2026 21:57:15 GMT  
+		Size: 17.0 MB (16970056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b644faf4666aaa5c74a1c460f3a971622d671bbabcd87e985c9248aa7e3542c6`  
-		Last Modified: Wed, 21 Oct 2026 22:57:35 GMT  
-		Size: 47.2 MB (47186368 bytes)  
+	-	`sha256:fc46b7297ab59ee26dc28facbc5e638f1156c6c41e8ece8da0e7d1fa31682130`  
+		Last Modified: Tue, 03 Nov 2026 21:57:16 GMT  
+		Size: 47.3 MB (47277847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23bdd61c2b0208190d349e2a6395a78b45bcb74349b46980f7472089b448eeb3`  
-		Last Modified: Wed, 21 Oct 2026 22:57:33 GMT  
+	-	`sha256:0e85a159118f2f3679ebb6b4f841cec34e45c96959c011f77f943a5187a75180`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d18ae2be4ba3e4735db4c27fb15de37e63552980e82314b06a86510a8605435`  
-		Last Modified: Wed, 21 Oct 2026 22:57:34 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4ca84e69851e60139afdd8550892558df3b510e6a6d52106b72f69ce206e8597`  
+		Last Modified: Tue, 03 Nov 2026 21:57:14 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8c153fc46268f0f39203e88dd8b69364f38a2734f654b1d378b9613d8ddac7d`  
-		Last Modified: Wed, 21 Oct 2026 23:31:49 GMT  
-		Size: 35.9 MB (35910336 bytes)  
+	-	`sha256:ea26203e5a969d2b98ea61544d5de17744d6645aead7db6bd46b3db139ea0486`  
+		Last Modified: Tue, 03 Nov 2026 22:14:34 GMT  
+		Size: 35.9 MB (35918177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0b548559a4a99cb9d1624a8d08fe1d5a67bdf1e037d9297febb7d4d26599db0`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
+	-	`sha256:121888d3bdb04cfa03edb2de4c0365e537f0368a52a02d5964e4dbbbb1f1e337`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:31bdb0136bc2e4ff147e4de9dfa06829119ae040b94a30ec57baf970f60e0f7b
+$ docker pull jetty@sha256:06c8d8087d7f3bc919acedc4cdec670158c267d68c756ced1d6a1aaef9c21136
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 MB (1137333 bytes)**  
+-	Total Size: **1.1 MB (1137327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6c43908d139a4108aa4600a631b91bd450855b4ddad5796720c70cd9007fbeb`
+-	Image ID: `sha256:e8bbb442928f098da589a8d2a61cabf652acbba25cafdf71d14e32b2ce5503c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b34eae75ec38bb74560b80c05b090a2047f52977c63c507a9f8a65e3fe06650`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 1.1 MB (1117731 bytes)  
+	-	`sha256:cde155723657d5267d586c3110a06b0e1d579c0bb865dc56f67963fa95fc719e`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 1.1 MB (1117727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1d151b9f350b3b5508f454f7a1fb0834a241d5fcfe2964d982bc7eabfb422eec`  
-		Last Modified: Wed, 21 Oct 2026 23:31:47 GMT  
-		Size: 19.6 KB (19602 bytes)  
+	-	`sha256:4836a5cb0e6f39f1b7858e9c46562687a55d9affde7449d0885270563d851c6f`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 19.6 KB (19600 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jre17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba08350eb6984ca2
+$ docker pull jetty@sha256:581eebc8fc4e363e39546147502d36c12ed21d31b54d02c0544e812ac6f436d8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20068,13 +20068,13 @@ $ docker pull jetty@sha256:21eee20f6fd2c04168266bb352b96ef4e2bdad0723f91f8fba083
 ### `jetty:12.0.40-jre17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:7bec63972abf97c58bda8abf33345676c7a7e3f01d9f6bd2230424b9fa37bf38
+$ docker pull jetty@sha256:84e9802efceb420f23018a933fe56942450e66540e69113422ac4d72a212d298
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.0 MB (144973494 bytes)**  
+-	Total Size: **145.1 MB (145073811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5be9f14f5ab8037ca8488405843df45655d1038dfce12eff89c79a9e7b90c7`
+-	Image ID: `sha256:06e9ca60e5f6309e352c62a4db14fe3290fd6e307171347ed0d9631bd5421087`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -20105,51 +20105,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:52 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:52 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:40 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:43 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:43 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:55 GMT
+# Tue, 03 Nov 2026 21:57:43 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:40 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:24:00 GMT
+# Tue, 03 Nov 2026 22:14:41 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -20162,69 +20162,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55276dea08ee0fcfc88e30a530566765c5d6cc5bcb9b628b018695288903b8a1`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 20.1 MB (20136009 bytes)  
+	-	`sha256:e9d963469cca204afadb6e2867d4c07af8784d769041083b87bb2fbd4ed990c9`  
+		Last Modified: Tue, 03 Nov 2026 21:57:57 GMT  
+		Size: 20.1 MB (20135981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a5d3dd27cd5bc2c69c78656a4679822f4b6d7962b05dd941df3766cb0336eb9`  
-		Last Modified: Mon, 26 Oct 2026 23:13:12 GMT  
-		Size: 47.5 MB (47520136 bytes)  
+	-	`sha256:f6168622535480b5514852952649f9b2a77ae69b259f319b7897ec994cb6106d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:58 GMT  
+		Size: 47.6 MB (47620504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bb9a6f797c90c19b207f662dd0f04d610ee6996cb4e99983312c1a86cd18403`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
-		Size: 156.0 B  
+	-	`sha256:91efa06f9c7e35a87a3e67c309e198e9b90b4c24fd6d3b3bee343b18d2fd7c3d`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:871684199c33b60f7e90eaaabe0b28a6a37df73ae51fe3e450cd6c2b9f9c6747`  
-		Last Modified: Mon, 26 Oct 2026 23:13:11 GMT  
+	-	`sha256:f7822ed33003a3b8803072a638d629b3c21c4901a6c0651965458fbb26cfa109`  
+		Last Modified: Tue, 03 Nov 2026 21:57:56 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91c71352733d6272649485d8c900e6096c05ee1d7aea148a6f18764f78235861`  
-		Last Modified: Tue, 27 Oct 2026 00:24:13 GMT  
-		Size: 35.2 MB (35172541 bytes)  
+	-	`sha256:c59f3f7c9379081b8c0aff1f8ffc02bdc31bccb9fed80916bbf5b44f3474870a`  
+		Last Modified: Tue, 03 Nov 2026 22:14:53 GMT  
+		Size: 35.2 MB (35172515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d73ce77267cca864dfaf714f858be83894c6dcc86d0c5a13b87499ffe35d6c5d`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
+	-	`sha256:24c09a35b2adc336b517ca9f3779455fad9c841d14881b02805651d0d9bc72f8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:12e402576164a4a56ad4b7bfd02b9b06b2315c8aa6a940269e442e93ec5a9a3b
+$ docker pull jetty@sha256:8cf5cba348e58ca06e9682b3eb12da8adc28e48ca8523a8d29fbc21ce4debf22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381736 bytes)**  
+-	Total Size: **5.4 MB (5381726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:056e981d162f7c1baa362c16bb0655a6e58f4b164739246a610c9e42e1d0c5de`
+-	Image ID: `sha256:0e1557786951fd908136f4db0127bbcb0474fd242578d46f4a01ea47fd04571a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041dcef9fce402de96b04771c1dc6af0cd9f2c7e400971ce58a64378f872f43f`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 5.4 MB (5359988 bytes)  
+	-	`sha256:eaf7b002138ae4221771c1274b06cc10f9ac5138dda7b51f43ac69151cc94912`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 5.4 MB (5359980 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4e8015a347f28b5eb4f70f14fad9d6c25d45dc35398e0f893950d7944b512acd`  
-		Last Modified: Tue, 27 Oct 2026 00:24:12 GMT  
-		Size: 21.7 KB (21748 bytes)  
+	-	`sha256:d849b7464f7ff2b343f2dd4305391715f1fe7b3ff429f466483bc4646e0fdcc8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 21.7 KB (21746 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.0.40-jre17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:1e5f0c1a2b1f7e110d5daa59ffd00ac50963b43396650da40aff9ac9cfbbb7e7
+$ docker pull jetty@sha256:10730efcbe57570a34beb4937decc3fd2b695d060f2ae8969a4ed6f3e27573a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.2 MB (143249476 bytes)**  
+-	Total Size: **143.4 MB (143375556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6defdc77b9dacbedf7f8ce0da6917a812b15d229972d5a1aba00606eb962b847`
+-	Image ID: `sha256:979cd5c9660e6909fd596ea160c21421fc94094fc8b8d15c980b5d44b82321a7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -20255,51 +20255,51 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:17:09 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:17:09 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:17:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0b2b640e3046b64c8ec504de0ab9d91bb5610182bda21fad454681ce54d45a62';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='b8efcd5acc9109fe8d35bed132499643048a257b4f6042906ece37d03c839d77';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='a84ba93f536d2773a8f086ecf39e6fb56c1690ffbea2ead7b108fe520bf51bf6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='162ca8775d96b8c9d71e672fb498ddc61bd2cd62c8ce3f7d05e2e228ca53f2f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:11 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:14 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:14 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:17:12 GMT
+# Tue, 03 Nov 2026 21:57:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_VERSION=12.0.40
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.40/jetty-home-12.0.40.tar.gz
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:03 GMT
+# Tue, 03 Nov 2026 22:14:18 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -20312,57 +20312,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eab66d96634cb2807e7d3d6e4679181b8a17eaea84c13da0adeb57d0ba1bd3ac`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 19.9 MB (19946815 bytes)  
+	-	`sha256:d274970dd87b5b3216d851fbd1399a9010169e57dc118d39592d7657d7162b14`  
+		Last Modified: Tue, 03 Nov 2026 21:57:30 GMT  
+		Size: 19.9 MB (19946906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e0998de2ccfa9c0e8cb412f8261f66e91be95a23ce533a6ec8b0cce5e511413`  
-		Last Modified: Mon, 26 Oct 2026 23:17:28 GMT  
-		Size: 47.0 MB (47002293 bytes)  
+	-	`sha256:516430e9168d50324dc06189743c31a5c76870b907c3e03e250b594393650756`  
+		Last Modified: Tue, 03 Nov 2026 21:57:31 GMT  
+		Size: 47.1 MB (47128307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6eed336799268735b9056d91b00113404287740fe9afb51676ec81b2119fe41`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 158.0 B  
+	-	`sha256:e78ecd46df3f1ee2ea0f9cd6859f11958f4d06b286d04f67aa173b0673cec5fe`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34d9f096dcb82b5dd3a4c535022172008aa7cd8e8eede96b3bfe02ac578e05f2`  
-		Last Modified: Mon, 26 Oct 2026 23:17:27 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:73568c906d817d812476c7b88b7a48bc51e823a435043da1051772e8dfd2ac60`  
+		Last Modified: Tue, 03 Nov 2026 21:57:29 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eebe26a56d645c1f1147f1d7ecb339bf422037a089270aedc533f120acc7b57e`  
-		Last Modified: Tue, 27 Oct 2026 00:23:16 GMT  
-		Size: 35.2 MB (35173173 bytes)  
+	-	`sha256:532026269b444527e54387cd46d2ec92b5fdb467f679421f210e78cefde4848d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 35.2 MB (35173150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e41709a5d3cb7b8c7c323833df8b78fe5a3e73da526cfba2ab405d1eab90bf`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
+	-	`sha256:cbe5b97ae079f7c477fa6ee4c040aa5b86c12b23124a474b69826e57846c1f38`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.0.40-jre17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:977b3e9a75aaf7eab33dea182b1ff266434185937925868402021fa88c733569
+$ docker pull jetty@sha256:8029954292f96f98a3bff222028ac60fe89591351c42aed38c0b8872ebee2782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381509 bytes)**  
+-	Total Size: **5.4 MB (5381499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d951060b10f81fead7e0075ebae7e49ce3dd1b5147f25720611d63c9327c9a0`
+-	Image ID: `sha256:67ce9be8f51df46d00bad55f729c28b7b682d8ae318c56007056bd4db47a649d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90dba09da90525f217eb6365f59bab2ac2c583d1b3c2ffef9c1f02f5a9ed025b`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 5.4 MB (5359657 bytes)  
+	-	`sha256:96d60839922b75701ba8204e26747fba2f3dacf179ce1abab0f1f33b7a65f03c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 5.4 MB (5359649 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:669c5d84f905d7c70124afb4c635694f643b918f24cf168ec19dbc64d3b0ae76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:15 GMT  
-		Size: 21.9 KB (21852 bytes)  
+	-	`sha256:39b7f7c8445652302c55a600524edfc1e38fa290c24e2740c81df6ac31603649`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 21.9 KB (21850 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.0.40-jre21`
@@ -22352,7 +22352,7 @@ $ docker pull jetty@sha256:c7a257b3411638959756367fea4fa76c10b434284085c6bd37c44
 ## `jetty:12.1-jdk17`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22365,13 +22365,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12.1-jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -22402,53 +22402,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -22461,69 +22461,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.1-jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -22554,53 +22554,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -22613,57 +22613,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1-jdk17-al2023-amazoncorretto`
@@ -22896,7 +22896,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12.1-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22907,13 +22907,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12.1-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -22922,53 +22922,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -22977,57 +22977,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1-jdk17-alpine-amazoncorretto`
@@ -23256,7 +23256,7 @@ $ docker pull jetty@sha256:021da911fb4750aa2262117b45438e88b2a94a47352246c730e3f
 ## `jetty:12.1-jdk17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23267,13 +23267,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12.1-jdk17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -23282,53 +23282,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -23337,57 +23337,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1-jdk17-amazoncorretto`
@@ -23620,7 +23620,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12.1-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23633,13 +23633,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12.1-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -23670,53 +23670,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -23729,69 +23729,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.1-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -23822,53 +23822,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -23881,57 +23881,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1-jdk21`
@@ -28195,7 +28195,7 @@ $ docker pull jetty@sha256:c7a257b3411638959756367fea4fa76c10b434284085c6bd37c44
 ## `jetty:12.1.14-jdk17`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28208,13 +28208,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12.1.14-jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -28245,53 +28245,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -28304,69 +28304,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.1.14-jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -28397,53 +28397,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -28456,57 +28456,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1.14-jdk17-al2023-amazoncorretto`
@@ -28739,7 +28739,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12.1.14-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28750,13 +28750,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12.1.14-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -28765,53 +28765,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -28820,57 +28820,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1.14-jdk17-alpine-amazoncorretto`
@@ -29099,7 +29099,7 @@ $ docker pull jetty@sha256:021da911fb4750aa2262117b45438e88b2a94a47352246c730e3f
 ## `jetty:12.1.14-jdk17-alpine-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f5185964a441fdb88d
+$ docker pull jetty@sha256:3ee7f09d55ec09522841728bfb37f01f1b8d677b1ff3498fae2304627ffef2c7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29110,13 +29110,13 @@ $ docker pull jetty@sha256:47faa05db6e36975ce275bed8252b608e1f1bdab4ca685f518596
 ### `jetty:12.1.14-jdk17-alpine-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57e188b5367f6
+$ docker pull jetty@sha256:ca442a286a85850cacc989933e0d5daede5feff2d411adeed17216bd31c5a895
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.3 MB (217270449 bytes)**  
+-	Total Size: **217.5 MB (217544257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3c80f34dd16629100d2274162107e25b4c60df670422fe77f767d3105c7d4d5`
+-	Image ID: `sha256:e7ad779e7be6dd3dca8e1fdd069ba9717919a4a6e5f138d373e158c23b1dd7da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -29125,53 +29125,53 @@ $ docker pull jetty@sha256:6ff1761e4485c39c4f58df698838fdd9d79b0a2fc845fc505ee57
 ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
 # Wed, 21 Oct 2026 22:37:22 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 21 Oct 2026 22:57:16 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         binutils         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 21 Oct 2026 22:57:16 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Wed, 21 Oct 2026 22:57:24 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        aarch64)          echo "Temurin ${JAVA_VERSION} binary for ${ARCH} is not available yet; retry after it is published upstream.";          exit 1;          ;;        x86_64)          ESUM='0c4fcdefa2737ccd66e049245fdb9dc431f91796182141204cd5f8192cb288e6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:26 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:56:33 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='db018054d52c1c109ad128c1412ead2d84ae91052ce60ca370df17b6a89831f5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+# Tue, 03 Nov 2026 21:56:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 21 Oct 2026 22:57:25 GMT
+# Tue, 03 Nov 2026 21:56:34 GMT
 CMD ["jshell"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_VERSION=12.1.14
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV TMPDIR=/tmp/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	gpgconf --kill all ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:21 GMT
 WORKDIR /var/lib/jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 USER jetty
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 21 Oct 2026 23:31:36 GMT
+# Tue, 03 Nov 2026 22:14:22 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -29180,57 +29180,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
 		Size: 3.9 MB (3853109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ffc6765343fdcee431b76cb64c471441210a1abba659628a35c76b8d2a7a5ec1`  
-		Last Modified: Wed, 21 Oct 2026 22:57:40 GMT  
-		Size: 21.4 MB (21438689 bytes)  
+	-	`sha256:1fc0624e917b83aaf03e242bc462d24bd95decd45759241d246c0a98bdf2fc8a`  
+		Last Modified: Tue, 03 Nov 2026 21:56:49 GMT  
+		Size: 21.4 MB (21439965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53fbe728b86101a9c0aab8ec96ffc1991c96e93a4a720f8eaf4e97b4953381fb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:43 GMT  
-		Size: 145.0 MB (144972891 bytes)  
+	-	`sha256:6cd2f40a15e5828cbeb475e4de2a3925b6193e5d6a0177250833253f68d0d60f`  
+		Last Modified: Tue, 03 Nov 2026 21:56:52 GMT  
+		Size: 145.2 MB (145238108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef741fd2dc923f60a005dfa96317864253907647f0900abdd4d6ccecd2251adb`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 130.0 B  
+	-	`sha256:d796ce7c94d07e26701b1bc6376d5e21299c235fc5d095c13b3c1d5caeb32d7d`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:deabbe2bf1fcd89f013f5be9c030b95c50f28856c6e217621f6c0d6539e49943`  
-		Last Modified: Wed, 21 Oct 2026 22:57:39 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:4a7d45ac6b96edcf369cda70c4c45f070b21667db0b623f0ea06449134aa54f1`  
+		Last Modified: Tue, 03 Nov 2026 21:56:48 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44691d4913111073d17755d7122949e2436b1430c848165b1f5c7f2b3d2a0d3a`  
-		Last Modified: Wed, 21 Oct 2026 23:31:48 GMT  
-		Size: 47.0 MB (47001291 bytes)  
+	-	`sha256:959fd2f195f48bf074f9d91f4152c121d1249193cd134c9d1fcc364bbdd39f40`  
+		Last Modified: Tue, 03 Nov 2026 22:14:32 GMT  
+		Size: 47.0 MB (47008608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b595c6864bab7196d9c0ca15eb188f76e9cf4cc549a32c61cd52d81f641bfa5`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
+	-	`sha256:8a5e1ca39d424d86ff2ac919791faa344328008f2b2e2efe480e66de0a0005e8`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17-alpine-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:2e8198bc6b07ffc6d5b96b27afe7dd9b18ca0f29fc2c721fef3f1b53663c7e13
+$ docker pull jetty@sha256:08e3806ad7e48932aa1bff4584174799f3fc24c221328e9ff29e6beb38788fb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1418594 bytes)**  
+-	Total Size: **1.4 MB (1418588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc656321051e629d5133d4984608e66709d3cee0f34ddabd1dde3753445344ed`
+-	Image ID: `sha256:2c2e3748327cdc55850fd165fb4105b727e36792798880c74b0b451037b6dcc0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b679a1a4ef39ae955b8dc47dc0ef5cd29658cac82500b477d6df208e5d1e81ac`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 1.4 MB (1398328 bytes)  
+	-	`sha256:2e62384358c5bb9275c9d619059b6cee0c55774fa5a0f9c5b92daf77b4521e5d`  
+		Last Modified: Tue, 03 Nov 2026 22:14:31 GMT  
+		Size: 1.4 MB (1398324 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09e8f2bd180bacbcbf4b33a95db741325a9c93699cf060c58097a9e20421c46c`  
-		Last Modified: Wed, 21 Oct 2026 23:31:46 GMT  
-		Size: 20.3 KB (20266 bytes)  
+	-	`sha256:53efd04fceabf9c10be88e03cf7dabad9dedaf0a7b958fba81b8a406df147870`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 20.3 KB (20264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1.14-jdk17-amazoncorretto`
@@ -29463,7 +29463,7 @@ $ docker pull jetty@sha256:23e6522b723825458196557d168fd10941305995b9eb95b8e38c4
 ## `jetty:12.1.14-jdk17-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29476,13 +29476,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:12.1.14-jdk17-eclipse-temurin` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -29513,53 +29513,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -29572,69 +29572,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:12.1.14-jdk17-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -29665,53 +29665,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -29724,57 +29724,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12.1.14-jdk17-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:12.1.14-jdk21`
@@ -32950,7 +32950,7 @@ $ docker pull jetty@sha256:c7a257b3411638959756367fea4fa76c10b434284085c6bd37c44
 ## `jetty:jdk17`
 
 ```console
-$ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e5432c36360f
+$ docker pull jetty@sha256:e375b1f5793592746fbc8e4149b366916764ec9dddb8e465b74e91f93eca8718
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32963,13 +32963,13 @@ $ docker pull jetty@sha256:cfc8ab5db9db6177c9dba14ce5d735472f2312d0bfffd6fec981e
 ### `jetty:jdk17` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:47515009b8e4e6b6f8b91f9a58d9579d6a41d7bfbd4c4b44bb51c9dcc27bba3f
+$ docker pull jetty@sha256:0f02f62c471419cde9a02a6479f103cf08b2a7e7b8fb5f0e525e8c5da17c5117
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.3 MB (258294163 bytes)**  
+-	Total Size: **258.6 MB (258550070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0d8f60750f32eaa8ba7be1250e92fb58dcfdff582ef10d17e74a00488164eb9`
+-	Image ID: `sha256:c550411c0c047e5d2b28d52de66e66795f99fba309aa2e3202538baba79abf6c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -33000,53 +33000,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:26:07 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9587.tar
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:12:28 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:12:28 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:12:34 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:12:34 GMT
+# Tue, 03 Nov 2026 21:56:54 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:01 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:12:35 GMT
+# Tue, 03 Nov 2026 21:57:01 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:30 GMT
+# Tue, 03 Nov 2026 22:14:37 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -33059,69 +33059,69 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:18 GMT  
 		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507a809d483bc0fbf8f3ce4d23dde3e938354bc7ecdea4ed6c3b18d637fc6e5b`  
-		Last Modified: Mon, 26 Oct 2026 23:12:52 GMT  
-		Size: 24.1 MB (24055616 bytes)  
+	-	`sha256:2450de5c5c0fc8a7dd79324c6c78736a8ec6f457cf8d52b0c71ae52350362058`  
+		Last Modified: Tue, 03 Nov 2026 21:57:20 GMT  
+		Size: 24.1 MB (24055615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87c0798c0e6b4f26ea8a6e7209e5b6f903d6831924d795b9e681b8f6ccd0258c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:55 GMT  
-		Size: 145.8 MB (145833414 bytes)  
+	-	`sha256:2f1b29560452625b1703750ba5c0d4865fc961c4c2085ddee062ff29b4e10b50`  
+		Last Modified: Tue, 03 Nov 2026 21:57:23 GMT  
+		Size: 146.1 MB (146089288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047f36c8080c83423ec7ed437922632ff3d555db2df28969e1d3a5ead6485e6c`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 157.0 B  
+	-	`sha256:7acbd1480041aae51b360e47ddd4eec8320be85354e061a24affee59d79aed91`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d33d75c76d3d7427f95c8374a5b75952aa09f73d8e70fd797005e5253d44cc`  
-		Last Modified: Mon, 26 Oct 2026 23:12:51 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:b1ceafd0cf508809bc551cd48ffcfaa92f0094efb6663d96475ea249d00ddaad`  
+		Last Modified: Tue, 03 Nov 2026 21:57:19 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a6c9fc687ac24eba1863f447d66a96f3be45ae069d72bd2b6f2087b7bd7e8a5`  
-		Last Modified: Tue, 27 Oct 2026 00:23:45 GMT  
-		Size: 46.3 MB (46260324 bytes)  
+	-	`sha256:d8fdca6f32ebd331ed212bd44ae9817f2b55ccfa88cef82eff2ea066ea241283`  
+		Last Modified: Tue, 03 Nov 2026 22:14:52 GMT  
+		Size: 46.3 MB (46260355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601940e84afbd5745f37fbf800e83608c219300eac9d7528c7125d988d54ee76`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
+	-	`sha256:c10e3a7fb58f398a7f8644db9df20febeb37d640dd5bd36885931dec9f8404d7`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:df28a83eca20a603164a9cfc98eef11639c285b7ff62c42fb1bc1c27afe1f8d3
+$ docker pull jetty@sha256:9b1879b9e4492c5a29b6a4bb4867eb0cdcde5b9920f7046a384c9e23ae87f086
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5726949 bytes)**  
+-	Total Size: **5.7 MB (5726940 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a51277cb360a29081dd18552a5907092ff7a12bf48074ee92b6614fe712acc81`
+-	Image ID: `sha256:2674f712dea398e55164342ac6af30203634405a6085ca7d7ac5684da1a6bc9a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:693dc185431473ae3d2f57722cc2741806819264235ba99b768cd9fa822fb5f2`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 5.7 MB (5704272 bytes)  
+	-	`sha256:4e0fa7656f2679016e78e127f7d99199d7da19c026f61b7b47ac065e86d9e050`  
+		Last Modified: Tue, 03 Nov 2026 22:14:51 GMT  
+		Size: 5.7 MB (5704264 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d1ea667dd39b94d327ab72f3a9d59bcc813b342f6886509c47906ade5019563`  
-		Last Modified: Tue, 27 Oct 2026 00:23:43 GMT  
-		Size: 22.7 KB (22677 bytes)  
+	-	`sha256:f88fe2b4443ad9a073cdaca969bba39cb48c5927f501357d393b24963267855c`  
+		Last Modified: Tue, 03 Nov 2026 22:14:50 GMT  
+		Size: 22.7 KB (22676 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:jdk17` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:9fcd81146c409cab9b43d4019cccc037ce9f361c1a955cd413f180be5315a131
+$ docker pull jetty@sha256:53ea5ffdb6e38a0165fc31bdb16b5bcbdd997bde48379978d1f5548331b7b53f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.0 MB (255977825 bytes)**  
+-	Total Size: **256.3 MB (256289144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f50ebed0d9e4978d47eafe02ee432df964b5b47cf42591dae08284ec2f3033c1`
+-	Image ID: `sha256:599021b973cf31b392164680cea9164d52b3bb742831dcb2654fda2a92a9a610`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -33152,53 +33152,53 @@ Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
 # Sun, 25 Oct 2026 10:30:32 GMT
 RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-cc003627bc5bab71b42ff0f8e1a41f88/images/.temp_layer.control_data.9649.tar
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 26 Oct 2026 23:16:50 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 26 Oct 2026 23:16:50 GMT
-ENV JAVA_VERSION=jdk-17.0.20.1+1
-# Mon, 26 Oct 2026 23:16:55 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        arm64)          ESUM='457b57af8f9c93ec39080bb8c764f559dc8c89a6da1a39d718a400b7890d3e41';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        armhf)          ESUM='e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        ppc64el)          ESUM='7e3abe98a131e1e914d0cf50f3435f92c1723e4583377edb5cf8e63c8d125ca8';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        s390x)          ESUM='f3710814283eea156d1397dc399957789d022b899a791f18bc6805b55b82207f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:06 GMT
+ENV JAVA_VERSION=jdk-17.0.21+9
+# Tue, 03 Nov 2026 21:57:12 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 03 Nov 2026 21:57:13 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 26 Oct 2026 23:16:56 GMT
+# Tue, 03 Nov 2026 21:57:13 GMT
 CMD ["jshell"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_VERSION=12.1.14
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg2 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	case "$JETTY_VERSION" in 		"12."*) START_MODULES="server,http,ext,resources" ;; 		*) START_MODULES="server,http,deploy,ext,resources,jsp,jstl,websocket" ;; 	esac ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="$START_MODULES" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	gpgconf --kill all ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ; # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 COPY docker-entrypoint.sh generate-jetty-start.sh / # buildkit
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 USER jetty
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Oct 2026 00:23:04 GMT
+# Tue, 03 Nov 2026 22:14:15 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -33211,57 +33211,57 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sun, 25 Oct 2026 13:21:28 GMT  
 		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c7c602e9b208fe6cd21d1846064aed6c79cdf4b8ba805ff53a34abcea64923f`  
-		Last Modified: Mon, 26 Oct 2026 23:17:17 GMT  
-		Size: 23.9 MB (23932817 bytes)  
+	-	`sha256:c152400a29f0af09e6372db1b36e37f70c7be7df0d594f56d1c2fbd493a9bf80`  
+		Last Modified: Tue, 03 Nov 2026 21:57:34 GMT  
+		Size: 23.9 MB (23932945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fadfff06fef465160ba310ebea5e82b338d31dbc9daafc63cadcbb79756b1a9b`  
-		Last Modified: Mon, 26 Oct 2026 23:17:19 GMT  
-		Size: 144.7 MB (144656979 bytes)  
+	-	`sha256:5eba337990d54310f6e38ea280eedccf786d333d8c77a5cc84c8fd90e24cbf35`  
+		Last Modified: Tue, 03 Nov 2026 21:57:36 GMT  
+		Size: 145.0 MB (144968213 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb5cb3d800c513444b55d4896efc369ac2fb436618ed17e560853bcc33a164ca`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:db4fb2fba692cf476afa4ca9540849f01e73c76f221022fefffd0fc54271f91f`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:112ace6b6b7dbea918fee7f75ebf529e4c85b9dc56c63ab97dad07e0a30533fe`  
-		Last Modified: Mon, 26 Oct 2026 23:17:16 GMT  
-		Size: 2.5 KB (2465 bytes)  
+	-	`sha256:6447c4e308c706c739aee395f677cbe53628a272562ae37369e1bdac4bcd1ac1`  
+		Last Modified: Tue, 03 Nov 2026 21:57:33 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf9eeb43e8aca6857b708b63168f63e771c0329292686f2d452800cd5fe4c554`  
-		Last Modified: Tue, 27 Oct 2026 00:23:19 GMT  
-		Size: 46.3 MB (46260835 bytes)  
+	-	`sha256:4146cf4310424ee394b05cdcd3d36fc2771a48dbe73b0d210c7711a2b418a3b3`  
+		Last Modified: Tue, 03 Nov 2026 22:14:30 GMT  
+		Size: 46.3 MB (46260790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382fe2e7c51e8ac7ab72b11a2b5564b2e1e977f795364016ab85a800c41a8974`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
+	-	`sha256:2c1a217a6ba68ffcb6bf527551e9e50fca577a41583069e170f554085a2ce929`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
 		Size: 1.8 KB (1845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:jdk17` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:58818580e674373a49a50b513fd4b0ad0f5f423de88430374c8b5ee5c5c44595
+$ docker pull jetty@sha256:b5fd33abb4bf4510a4e7fa66c8a6bb78f48dcb45b77b992c34996b39b9fc788a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5914517 bytes)**  
+-	Total Size: **5.9 MB (5914508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fe20da9bd49b9f2346b7fd9bbfedb7b6d32f9517ddf3f7faac0cb577f1d7b3e`
+-	Image ID: `sha256:8ed5ea48b2c671657ac09e26ce0c5d0b36c41fa9ee072b3249ea86ebb40089da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a93ce5d9532b8a69e5c0aca80477a72d193cef2382611d48ed4929dc1ba4f78`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 5.9 MB (5891700 bytes)  
+	-	`sha256:72c62adc1bad85fb873f85a03993fc5f3ad857d5777f6082ac31036f69727e8b`  
+		Last Modified: Tue, 03 Nov 2026 22:14:29 GMT  
+		Size: 5.9 MB (5891692 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:866d2884b66028fe7b6f2af8d805d14035fd2fcc97382e974612672bceeda208`  
-		Last Modified: Tue, 27 Oct 2026 00:23:17 GMT  
-		Size: 22.8 KB (22817 bytes)  
+	-	`sha256:f9001f49d660c2e74aed9cca620d89251f5308e29821ad750740c543fcec9905`  
+		Last Modified: Tue, 03 Nov 2026 22:14:28 GMT  
+		Size: 22.8 KB (22816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jetty:jdk21`
