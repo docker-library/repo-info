@@ -1,7 +1,7 @@
 ## `rakudo-star:alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:71c1b8d5e032e5dae61fdaf3aa6e6ceac1205aca2a93f80fbc4c8a5fd3b0e463
+$ docker pull rakudo-star@sha256:0bc7542202ea3d9362ce15d90a601928f02b7657630fd131ad9d9847687b65b5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,139 +14,139 @@ $ docker pull rakudo-star@sha256:71c1b8d5e032e5dae61fdaf3aa6e6ceac1205aca2a93f80
 ### `rakudo-star:alpine` - linux; amd64
 
 ```console
-$ docker pull rakudo-star@sha256:04cc39e556f2649a86ecdc51b58956aaa31884da695fe073729fe3e676092b4d
+$ docker pull rakudo-star@sha256:e4e5da1c2fa5ed672827888af00428f943ea22badb8abff3153a723e5a1974bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50207598 bytes)**  
+-	Total Size: **50.2 MB (50189948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:584f7a06f1bd2af29550019dbd4ffe45552821add0c2ed064676754230b00a79`
+-	Image ID: `sha256:dcba53a7aca5dd7f543e703bb82b8e9fd0021010dd3b5f20917f00ccb532e4b5`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 22:37:22 GMT
-ADD alpine-minirootfs-3.24.3-x86_64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 22:37:22 GMT
+# Thu, 05 Nov 2026 18:00:28 GMT
+ADD alpine-minirootfs-3.24.4-x86_64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:28 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 23:01:42 GMT
+# Thu, 05 Nov 2026 19:31:33 GMT
 RUN addgroup -S raku && adduser -S raku -G raku # buildkit
-# Wed, 21 Oct 2026 23:22:41 GMT
+# Thu, 05 Nov 2026 19:53:42 GMT
 ARG rakudo_version=2026.09-01
-# Wed, 21 Oct 2026 23:22:41 GMT
+# Thu, 05 Nov 2026 19:53:42 GMT
 ENV rakudo_version=2026.09-01
-# Wed, 21 Oct 2026 23:22:41 GMT
+# Thu, 05 Nov 2026 19:53:42 GMT
 # ARGS: rakudo_version=2026.09-01
 RUN buildDeps='         bash         gcc         gnupg         libc-dev         make         perl     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyfp="3E7E3C6EAF916676AC549285A2919382E961E2EE"     pubkeyurl="https://rakudo.org/keys/rakudo_github_automation-${keyfp}.asc"     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="${tmpdir}/gnupg"     && mkdir $GNUPGHOME     && apk add --no-cache --virtual .build-deps $buildDeps     && apk add --no-cache readline git     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && wget $pubkeyurl -O ${tmpdir}/key.asc         && gpg --batch --import ${tmpdir}/key.asc     && gpg --batch --export $keyfp > ${tmpdir}/${keyfp}.asc     && rm -rf $GNUPGHOME     && mkdir $GNUPGHOME     && gpg --batch --import ${tmpdir}/${keyfp}.asc     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apk del --no-network .build-deps # buildkit
-# Wed, 21 Oct 2026 23:22:41 GMT
+# Thu, 05 Nov 2026 19:53:42 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Wed, 21 Oct 2026 23:22:41 GMT
+# Thu, 05 Nov 2026 19:53:42 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:7b229517ed222597277036d94892173207d01a731ab3a88eeb1de2e963a2c788`  
-		Last Modified: Wed, 21 Oct 2026 22:37:28 GMT  
-		Size: 3.9 MB (3853109 bytes)  
+	-	`sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa4995428afb1e80ede17`  
+		Last Modified: Thu, 05 Nov 2026 18:00:35 GMT  
+		Size: 3.9 MB (3853673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2e345e3b917335df8f3e707710634fb830cbeff2e91764756ce703281165085`  
-		Last Modified: Wed, 21 Oct 2026 23:22:52 GMT  
+	-	`sha256:2742c9761ad26d1cbddbf5d5073aea6289b6c10b5444db6a1f94272e8811fcc5`  
+		Last Modified: Thu, 05 Nov 2026 19:53:53 GMT  
 		Size: 945.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d770b150607de69e12f62d99d262c337675d4415be4cf4f32998cfeaa87b4cf`  
-		Last Modified: Wed, 21 Oct 2026 23:22:54 GMT  
-		Size: 46.4 MB (46353544 bytes)  
+	-	`sha256:bb47feeda3ae651d4b0e73ccec1b39eca712ecd052d18a359aaad48e55513cbf`  
+		Last Modified: Thu, 05 Nov 2026 19:53:54 GMT  
+		Size: 46.3 MB (46335330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rakudo-star:alpine` - unknown; unknown
 
 ```console
-$ docker pull rakudo-star@sha256:f4ab718c93a0fd9f85f8f4347734205b0fb71a41637ab2f03dacbce5af8ce56e
+$ docker pull rakudo-star@sha256:4710e3398eb75ba06753fafc272c79ac4e159c09c90e0d96e40bd629ddc073f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.1 KB (197081 bytes)**  
+-	Total Size: **197.1 KB (197085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e5b0f4d72db3dcfaf27b32a1b8929c7438e36c56767076a92e9a4b4ebb17d2a`
+-	Image ID: `sha256:c274a4738831dcfdc7587f86db9f860d6f9d92cf612938c614b2e9153086943a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46b581568963692a595827b1f19fb132c38d193ec009dc41f6568cf16bb2cca3`  
-		Last Modified: Wed, 21 Oct 2026 23:22:52 GMT  
-		Size: 185.4 KB (185363 bytes)  
+	-	`sha256:2adbfab3b4eb34000621cddec485e81f9a3cd0738230d5c918be365e2d7b66e8`  
+		Last Modified: Thu, 05 Nov 2026 19:53:53 GMT  
+		Size: 185.4 KB (185367 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b44f06183fcd1d498a1fd14e5877383ae19e89d92cad5f1f9267826a3d2366b7`  
-		Last Modified: Wed, 21 Oct 2026 23:22:52 GMT  
+	-	`sha256:40150d3e63c13a72bdd750c7466b95da5c6b4c1989771821fd620342de688f95`  
+		Last Modified: Thu, 05 Nov 2026 19:53:53 GMT  
 		Size: 11.7 KB (11718 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rakudo-star:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:74069ddf435fda9d644c4729d5e0d4e02ac9a65f2272f9ee0bead1810649fb3c
+$ docker pull rakudo-star@sha256:7cae5f6f18e5850c686e9e3bc3a5bc0b1fcb4a9e5c3833d453d7633c36fd1217
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50320001 bytes)**  
+-	Total Size: **50.3 MB (50295023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:218dc1a6ace87291ed6877e837b1b52095b496cafe61eaac8f5def59977a4a8a`
+-	Image ID: `sha256:11e72ff830b5b04bc2c95a6b7b40ba6c84eda0f477af4ab1bff38765cc101613`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 22:51:39 GMT
-ADD alpine-minirootfs-3.24.3-aarch64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 22:51:39 GMT
+# Thu, 05 Nov 2026 18:00:31 GMT
+ADD alpine-minirootfs-3.24.4-aarch64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:31 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 23:25:30 GMT
+# Thu, 05 Nov 2026 19:31:56 GMT
 RUN addgroup -S raku && adduser -S raku -G raku # buildkit
-# Wed, 21 Oct 2026 23:51:01 GMT
+# Thu, 05 Nov 2026 19:58:21 GMT
 ARG rakudo_version=2026.09-01
-# Wed, 21 Oct 2026 23:51:01 GMT
+# Thu, 05 Nov 2026 19:58:21 GMT
 ENV rakudo_version=2026.09-01
-# Wed, 21 Oct 2026 23:51:01 GMT
+# Thu, 05 Nov 2026 19:58:21 GMT
 # ARGS: rakudo_version=2026.09-01
 RUN buildDeps='         bash         gcc         gnupg         libc-dev         make         perl     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyfp="3E7E3C6EAF916676AC549285A2919382E961E2EE"     pubkeyurl="https://rakudo.org/keys/rakudo_github_automation-${keyfp}.asc"     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="${tmpdir}/gnupg"     && mkdir $GNUPGHOME     && apk add --no-cache --virtual .build-deps $buildDeps     && apk add --no-cache readline git     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && wget $pubkeyurl -O ${tmpdir}/key.asc         && gpg --batch --import ${tmpdir}/key.asc     && gpg --batch --export $keyfp > ${tmpdir}/${keyfp}.asc     && rm -rf $GNUPGHOME     && mkdir $GNUPGHOME     && gpg --batch --import ${tmpdir}/${keyfp}.asc     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apk del --no-network .build-deps # buildkit
-# Wed, 21 Oct 2026 23:51:01 GMT
+# Thu, 05 Nov 2026 19:58:21 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Wed, 21 Oct 2026 23:51:01 GMT
+# Thu, 05 Nov 2026 19:58:21 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:d3531b7a4f217bdc3426c57bcff84c170f086f456a39689d4a615c6d026c4be0`  
-		Last Modified: Wed, 21 Oct 2026 22:51:44 GMT  
-		Size: 4.2 MB (4190488 bytes)  
+	-	`sha256:b90627b8f4292fd3cb63f0f27f0b11c37f04ba88ef3b78d4948ea0ace18c85e9`  
+		Last Modified: Thu, 05 Nov 2026 18:00:38 GMT  
+		Size: 4.2 MB (4190595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a424bc8d696bb743df1e5ea2b2d8a6f802bccb67eef210eabcaac165b73ada0`  
-		Last Modified: Wed, 21 Oct 2026 23:51:12 GMT  
-		Size: 943.0 B  
+	-	`sha256:d20dbd53bf833c864bf44404078bdf90d7c6ad0fb86db47772d6f901e7c083dc`  
+		Last Modified: Thu, 05 Nov 2026 19:58:33 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adfb081d4b33d68a32a21ae44ce65039f45038420890e56cb47eaff9fa656b46`  
-		Last Modified: Wed, 21 Oct 2026 23:51:13 GMT  
-		Size: 46.1 MB (46128570 bytes)  
+	-	`sha256:3cb3c4bfc0b44ba945012036b04fbd7f643f11bd966f35fa06304accc98b88f8`  
+		Last Modified: Thu, 05 Nov 2026 19:58:34 GMT  
+		Size: 46.1 MB (46103482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rakudo-star:alpine` - unknown; unknown
 
 ```console
-$ docker pull rakudo-star@sha256:41311a8606da95f5506b2496695d4881814e0154a90157ff149ad987fb356b2a
+$ docker pull rakudo-star@sha256:c6601a9561c50299f9975669e5c5c9501607726f1cb446cb8dc8eec994e00377
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.6 KB (196557 bytes)**  
+-	Total Size: **196.6 KB (196562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7d53f6686e4365788039d8d891c7a4de1819fbc96598f2a097768a81984566d`
+-	Image ID: `sha256:d81ef89f815aab43cc2aa6f2adfac9b5c3951dd685cc0b51b6ee0167cfdc3457`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1b55e78785077e6b9c6a3ef8d760fc69d4078be8cef2790fffd719413c5da05`  
-		Last Modified: Wed, 21 Oct 2026 23:51:12 GMT  
-		Size: 184.7 KB (184745 bytes)  
+	-	`sha256:36166b06162e42f5fec0be2fe95f623c8ca9f1eca4af181f41abe6be9ecadacb`  
+		Last Modified: Thu, 05 Nov 2026 19:58:33 GMT  
+		Size: 184.7 KB (184749 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20728ddbe57bc75ea9d052628973e19220e6ca0636eb514aa206b1b3d318cadd`  
-		Last Modified: Wed, 21 Oct 2026 23:51:12 GMT  
-		Size: 11.8 KB (11812 bytes)  
+	-	`sha256:5ef667b1d249aafbb55bedeb345e907538ee8523060f6b6953193ab42a6ec083`  
+		Last Modified: Thu, 05 Nov 2026 19:58:32 GMT  
+		Size: 11.8 KB (11813 bytes)  
 		MIME: application/vnd.in-toto+json
