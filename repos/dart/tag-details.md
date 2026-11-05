@@ -1825,11 +1825,21 @@ $ docker pull dart@sha256:b8ded95e133c72571432a0f73ae77be81047312a7040225f25922d
 
 ## `dart:3.15.0-118.1.beta`
 
-**does not exist** (yet?)
+```console
+$ docker pull dart@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `dart:3.15.0-118.1.beta-sdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull dart@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `dart:beta`
 
