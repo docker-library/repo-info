@@ -1,7 +1,7 @@
 ## `erlang:25-alpine`
 
 ```console
-$ docker pull erlang@sha256:2dcc9dd26f3a5876c6f6e0a2ed2e89482f2879302f42bb7f09d4cbfb09b18eb2
+$ docker pull erlang@sha256:de60198bc19c1b27ef9f8f8c07f6b828bea10bd0a85a5fc86d94d35cf7852de6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -201,60 +201,60 @@ $ docker pull erlang@sha256:77ca6f081f3b372ca31f835ee89c9fc2f78d5886cd48fba0ec22
 ### `erlang:25-alpine` - linux; 386
 
 ```console
-$ docker pull erlang@sha256:de5b2c2c0136036bdb1577d4b2043a6cdd3225e5c7d0c0821847a057a1a9808c
+$ docker pull erlang@sha256:7118fa81fd96f30cfcfc6e8f0634981942716c41b6844066bf08e8c042616f90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 MB (47949633 bytes)**  
+-	Total Size: **47.9 MB (47949958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2bf8de2dbf9245998013415ffc241534f921b2c11b79a7cafbd5bc07ffc754a`
+-	Image ID: `sha256:58a28a169aee726c223c433b75cf280dacb17f3fe1e2bcde72cc95597eca2d98`
 -	Default Command: `["erl"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 20:47:11 GMT
-ADD alpine-minirootfs-3.22.7-x86.tar.gz / # buildkit
-# Wed, 21 Oct 2026 20:47:11 GMT
+# Thu, 05 Nov 2026 18:01:25 GMT
+ADD alpine-minirootfs-3.22.8-x86.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:01:25 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:18:25 GMT
+# Thu, 05 Nov 2026 18:35:21 GMT
 ENV OTP_VERSION=25.3.2.21 REBAR3_VERSION=3.24.0
-# Wed, 21 Oct 2026 21:18:25 GMT
+# Thu, 05 Nov 2026 18:35:21 GMT
 LABEL org.opencontainers.image.version=25.3.2.21
-# Wed, 21 Oct 2026 21:18:25 GMT
+# Thu, 05 Nov 2026 18:35:21 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="6761432927a9be4f5c13c4019acd6fa3d2f4363198f790947328023aece1986f" 	&& REBAR3_DOWNLOAD_SHA256="391b0eaa2825bb427fef1e55a0d166493059175f57a33b00346b84a20398216c" 	&& apk add --no-cache --virtual .fetch-deps 		curl 		ca-certificates 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& apk add --no-cache --virtual .build-deps 		dpkg-dev dpkg 		gcc 		g++ 		libc-dev 		linux-headers 		make 		autoconf 		ncurses-dev 		openssl-dev 		unixodbc-dev 		lksctp-tools-dev 		tar 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(getconf _NPROCESSORS_ONLN) 	  && make install ) 	&& rm -rf $ERL_TOP 	&& find /usr/local -regex '/usr/local/lib/erlang/\(lib/\|erts-\).*/\(man\|doc\|obj\|c_src\|emacs\|info\|examples\)' | xargs rm -rf 	&& { find /usr/local -name src | xargs -r find | grep -v '\.hrl$' | xargs rm -v || true; } 	&& { find /usr/local -name src | xargs -r find | xargs rmdir -vp || true; } 	&& scanelf --nobanner -E ET_EXEC -BF '%F' --recursive /usr/local | xargs -r strip --strip-all 	&& scanelf --nobanner -E ET_DYN -BF '%F' --recursive /usr/local | xargs -r strip --strip-unneeded 	&& runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "${REBAR3_DOWNLOAD_SHA256}  rebar3-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/rebar3-src 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apk add --virtual .erlang-rundeps 		$runDeps 		lksctp-tools 		ca-certificates 	&& apk del .fetch-deps .build-deps # buildkit
-# Wed, 21 Oct 2026 21:18:25 GMT
+# Thu, 05 Nov 2026 18:35:21 GMT
 CMD ["erl"]
 ```
 
 -	Layers:
-	-	`sha256:1d50ee2afcf0483c16d40e3848f3966acc9ec361ce0aab5fc2458a86e77d5ffa`  
-		Last Modified: Wed, 21 Oct 2026 20:47:16 GMT  
-		Size: 3.6 MB (3613353 bytes)  
+	-	`sha256:5fd039ef8ccef5ed7275f159020694fbd23bd01317ed3a82428afbe0712175c8`  
+		Last Modified: Thu, 05 Nov 2026 18:01:31 GMT  
+		Size: 3.6 MB (3613476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6bfd80540d3189cfc19899936f3db2e09a09b65c2ac466e9c159ab6ff7fc9c9`  
-		Last Modified: Wed, 21 Oct 2026 21:18:34 GMT  
-		Size: 44.3 MB (44336280 bytes)  
+	-	`sha256:1068bab3fb3b4543d6a1c08103f6a4418c02807c4013883c8b6eb3d2b4d50c94`  
+		Last Modified: Thu, 05 Nov 2026 18:35:29 GMT  
+		Size: 44.3 MB (44336482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `erlang:25-alpine` - unknown; unknown
 
 ```console
-$ docker pull erlang@sha256:d1d57562c4d92ca5bea9e699a767b064440d5d3e3529589780e457f75c0c776e
+$ docker pull erlang@sha256:8ae639e182c95288e43634cfedb787b62d189fba56ec750c5337098e674fda41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **271.8 KB (271772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56f2dbee27dc7a19afb6d039a7a46f35cbf99685adcef2554aa7b01e1b6a6ed5`
+-	Image ID: `sha256:5deaf4c1e111081150dcb580689f2f5cb02aedc0883beb017e395ef150cc9676`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:957e771f4b5355cdfaec7978a42b3ac9eb09ceb453a8fbfebf30d7abfacea8c1`  
-		Last Modified: Wed, 21 Oct 2026 21:18:33 GMT  
+	-	`sha256:b84fe96f7648d05c67e3c9f9d34f9998ded6722a42d53a51c8ab1ea133cd5c7c`  
+		Last Modified: Thu, 05 Nov 2026 18:35:28 GMT  
 		Size: 256.8 KB (256775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2f879b1dda41022d339eb774df1d49c4afe29bbbba35dc128a2ef2654180eb29`  
-		Last Modified: Wed, 21 Oct 2026 21:18:32 GMT  
+	-	`sha256:460cd2f856643b0522c0273cf5b715c749c2c6af6f2cbb888427b029e40e30c4`  
+		Last Modified: Thu, 05 Nov 2026 18:35:28 GMT  
 		Size: 15.0 KB (14997 bytes)  
 		MIME: application/vnd.in-toto+json
