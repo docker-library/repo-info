@@ -1,10 +1,10 @@
-# `redmine:6.1.5-bookworm`
+# `redmine:6.1.6-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4f1e0ca799c5345c892ba858c47edac1724054b0da3b53773ff0adede3ea1a0`
-- Created: `2026-10-28T02:44:22.542898864Z`
-- Virtual Size: ~ 657.09 Mb  
+- Image ID: `sha256:74c03142ec79db52c8291915c161666c274c189796cd84b6b3beef4b27b9b4df`
+- Created: `2026-11-05T08:52:02.572548568Z`
+- Virtual Size: ~ 657.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.5`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.5.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=4b653d8863c012fdb226aedf6f8a18bdfa08d04625d15e8aafbbc3c4f6b70144`
+  - `REDMINE_VERSION=6.1.6`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.6.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=a09f0541e3ef5579de8be1c21fc9cabbd7625d77ec4dd2ddddc39ad9c2c5a483`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -164,12 +164,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apr/1.7.2-3+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apr/1.7.2-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=2.6.1`
+### `dpkg` source package: `apt=2.6.2`
 
 Binary Packages:
 
-- `apt=2.6.1`
-- `libapt-pkg6.0:amd64=2.6.1`
+- `apt=2.6.2`
+- `libapt-pkg6.0:amd64=2.6.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -181,16 +181,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.dsc' apt_2.6.1.dsc 2933 SHA256:e258c1b9c24e1747100271db9d6e5af7127bd3ef812a69bdf63de263abfdc6fd
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.tar.xz' apt_2.6.1.tar.xz 2328508 SHA256:86b888c901fa2e78f1bf52a2aaa2f400ff82a472b94ff0ac6631939ee68fa6fd
+$ apt-get source -qq --print-uris apt=2.6.2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.dsc' apt_2.6.2.dsc 2933 SHA256:63490cc85118a0eb7a3109696311920ffa70f3f9ad718bcaf126445496049c74
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.tar.xz' apt_2.6.2.tar.xz 2329740 SHA256:12c38c9b2b8159bc1780eb17acff0adf6d6b2dff3d560f557b9ad9f60b3cc63f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/2.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.6.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/2.6.2/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.6.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -643,12 +643,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.88.1-10+deb12u15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.88.1-10+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
+### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10+deb12u1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.28+dfsg-10`
-- `libsasl2-modules-db:amd64=2.1.28+dfsg-10`
+- `libsasl2-2:amd64=2.1.28+dfsg-10+deb12u1`
+- `libsasl2-modules-db:amd64=2.1.28+dfsg-10+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -675,17 +675,17 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.dsc' cyrus-sasl2_2.1.28+dfsg-10.dsc 3324 SHA256:cb9c913a6f4716456c93ed205dfef84915a37cf2c994160564e8336e86831d7a
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10.debian.tar.xz 97056 SHA256:8c94a1c1982a1603d13ef055b0d2511054db4a43cbb1224702f31e5d985136b1
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-10+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.dsc' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.dsc 3670 SHA256:088990ef19c88abfbf66321eba0d0c3566ee2a5ce135e165eff5b6c2716a2ff0
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
+'http://deb.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-10%2bdeb12u1.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-10+deb12u1.debian.tar.xz 99600 SHA256:390fa9435dc9e7de7c4fe18423cf04b5c2e54050ef0fd344972dab50980fb8b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-10+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-2`
 
@@ -1777,15 +1777,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u14`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u15`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u14`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u14`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u14`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u14`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u14`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u15`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u15`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u15`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u15`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u15`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1816,13 +1816,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u15
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u15.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u15.dsc 5134 SHA256:c8fb538194c75c508295e9aeabcce8f217fd8c81e8459e22a29115f5eb5c0882
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u15.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u15.debian.tar.xz 435396 SHA256:0b282be6c747d29034dcb6b0b817a1d2023bedfba99a611dda73f0b0af7accb5
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u14/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u15/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u15/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 
@@ -4573,23 +4580,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tini/0.19.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tini/0.19.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb12u1`
+### `dpkg` source package: `tzdata=2026f-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb12u1`
+- `tzdata=2026f-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.dsc' tzdata_2026f-0+deb12u1.dsc 2396 SHA256:e9047474a52c30cf914c8b11bbc0f9ceb289c0711c81b5fff277e1f8a4b9ce2e
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.debian.tar.xz' tzdata_2026f-0+deb12u1.debian.tar.xz 123284 SHA256:03a51a7f1daac87d927a47eccf1465ea61f896c37295f41601862c8665edfc84
+```
 
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1+deb12u1`
 
