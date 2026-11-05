@@ -1,7 +1,7 @@
 ## `azul-zulu:26-jdk-alpine`
 
 ```console
-$ docker pull azul-zulu@sha256:d8d7155d3f48fa6e2b35a8ad2e8706ad4472e9b9065bd71b7cb531335e46976d
+$ docker pull azul-zulu@sha256:bd08960c1c4bf40de53c223c97adfc21eaaaa283f0f9212a0e7907c8c20a9e89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,123 +14,123 @@ $ docker pull azul-zulu@sha256:d8d7155d3f48fa6e2b35a8ad2e8706ad4472e9b9065bd71b7
 ### `azul-zulu:26-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull azul-zulu@sha256:e0d2229dd98e86e9e05224a57ffcf6fcef1cebfc890180e17184a188311fc8eb
+$ docker pull azul-zulu@sha256:519b6db6f3681b5bd52e59fe58ca83013a61395a58c6bab136d15cfcbb935e11
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.0 MB (187957408 bytes)**  
+-	Total Size: **188.0 MB (187957801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20c61b3fa1a90bf473c7a3801f89dd0a21fd336fb201811e9dc570a8d568d6b`
+-	Image ID: `sha256:6b157987da1e89ec7036570d0314bde0f1ad66e5bc9e404be738bd055a80d1ab`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 20:46:55 GMT
-ADD alpine-minirootfs-3.23.7-x86_64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 20:46:55 GMT
+# Thu, 05 Nov 2026 18:00:51 GMT
+ADD alpine-minirootfs-3.23.8-x86_64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:51 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 ENV LANG=C.UTF-8
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux;      wget -O /tmp/azul-signing.pub https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "6c6393d4755818a15cf055a5216cffa599f038cd508433faed2226925956509a  /tmp/azul-signing.pub" | sha256sum -c -;      mv /tmp/azul-signing.pub /etc/apk/keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "https://$REPO_HOST/zulu/alpine" | tee -a /etc/apk/repositories;      apk add --no-cache zulu26-jdk=26.0.2.1-r1;      java -version # buildkit
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 ENV PATH=/usr/lib/jvm/zulu26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 21:18:33 GMT
+# Thu, 05 Nov 2026 19:16:22 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:5e9b4a97f6395abf54a5c584be133078deb2295e280dd0b9e77638874d07b637`  
-		Last Modified: Wed, 21 Oct 2026 20:47:02 GMT  
-		Size: 3.9 MB (3852227 bytes)  
+	-	`sha256:74c614fb2c68574f50c582dcc9c18c46618bd6ff2019768190aacfb861ce51d2`  
+		Last Modified: Thu, 05 Nov 2026 18:00:58 GMT  
+		Size: 3.9 MB (3852589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ae145904765204fbcbadb9dd0e2156d7185e0581d43df2bac6733cf4466c93`  
-		Last Modified: Wed, 21 Oct 2026 21:18:51 GMT  
-		Size: 184.1 MB (184105181 bytes)  
+	-	`sha256:5590761a792cfbcf4f311d57e03bf7e8d55b6e99877b4aecafe8e0b246cdab13`  
+		Last Modified: Thu, 05 Nov 2026 19:16:40 GMT  
+		Size: 184.1 MB (184105212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-alpine` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:09e7aa1224d806d18d1d4a6c2a99451932eda630d65b991b7f57f448676e904f
+$ docker pull azul-zulu@sha256:d656fc35b11afb3768f9ec61d23edba74db9cc694d1a8ece5d391fa914ce0add
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.8 KB (7825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09fdfff0b8c736628d39fa538aaf6bacac093d03610ac8893aae19c059147275`
+-	Image ID: `sha256:7f282ec217c1d640f75701cc750276e3bcd323fa37dcf8c805f316ae0bc7df81`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1940488d8d89b9a900d7a2faca2dc16917bb46ea9abe7520d994275e7b4e9d55`  
-		Last Modified: Wed, 21 Oct 2026 21:18:48 GMT  
+	-	`sha256:8bec0de0ed41dedf5ff9e3e80e7629b28bf633247fa77fa52bcb882c7bed8569`  
+		Last Modified: Thu, 05 Nov 2026 19:16:36 GMT  
 		Size: 7.8 KB (7825 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `azul-zulu:26-jdk-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull azul-zulu@sha256:c7992159ee6b2cda2c7d0f8baf68ff9ee5148b544b1110c41e31c06188bba4e1
+$ docker pull azul-zulu@sha256:fd3b2bbf1b41b6e953cad71c1ad9c7ce752b63603b7bdf9641fec75b3ef4d0b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.8 MB (185833248 bytes)**  
+-	Total Size: **185.8 MB (185833980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d892fb614ae9e5bfba8ff5a99c300a64e07fa345ef24e5a57fe248d92ffa6b7`
+-	Image ID: `sha256:dae8296022270f0780caf2c22c4908dcf1675977213c898f66fbdc4e2d3243c8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 20:46:49 GMT
-ADD alpine-minirootfs-3.23.7-aarch64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 20:46:49 GMT
+# Thu, 05 Nov 2026 18:00:48 GMT
+ADD alpine-minirootfs-3.23.8-aarch64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:48 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 ARG REPO_HOST=repos.azul.com
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 ENV LANG=C.UTF-8
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux;      wget -O /tmp/azul-signing.pub https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "6c6393d4755818a15cf055a5216cffa599f038cd508433faed2226925956509a  /tmp/azul-signing.pub" | sha256sum -c -;      mv /tmp/azul-signing.pub /etc/apk/keys/alpine-signing@azul.com-5d5dc44c.rsa.pub;      echo "https://$REPO_HOST/zulu/alpine" | tee -a /etc/apk/repositories;      apk add --no-cache zulu26-jdk=26.0.2.1-r1;      java -version # buildkit
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu26
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 ENV PATH=/usr/lib/jvm/zulu26/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Oct 2026 21:19:47 GMT
+# Thu, 05 Nov 2026 19:12:11 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:197a036d7c646d3e744af55598877c355ab789d97466837b69296bed05ca0d5f`  
-		Last Modified: Wed, 21 Oct 2026 20:46:55 GMT  
-		Size: 4.2 MB (4189494 bytes)  
+	-	`sha256:0aeae9e5c96856ad8a51ac2a81bf4ce73766c2199992b92fd9302dd7ec7a38de`  
+		Last Modified: Thu, 05 Nov 2026 18:00:56 GMT  
+		Size: 4.2 MB (4190221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:012abb4e36d43201509ae13233448f49f675bbab45ffdfbb1a0bf97d954580c7`  
-		Last Modified: Wed, 21 Oct 2026 21:20:06 GMT  
-		Size: 181.6 MB (181643754 bytes)  
+	-	`sha256:9ea50a8197fb53cfcf3df0041ce9ce9fc3585dbb8d8bb027a978c4d22a0158da`  
+		Last Modified: Thu, 05 Nov 2026 19:12:31 GMT  
+		Size: 181.6 MB (181643759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:26-jdk-alpine` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:601974587ffd0d4cfcbf83cd81e4fcf2a54c007d7d5250a1c61c20820b63619d
+$ docker pull azul-zulu@sha256:e81805354ef519e920df20f85e4fa6147284c21d3079b8bc8df6b5564ed7aaf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.9 KB (7929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dd11845334b9959ad324783542b8f032ca3c17dc3aeae48e3f4b96a1ab7fda9`
+-	Image ID: `sha256:b2b7ffb17156b9c4ec7b68dfacce30de6902725dde0a29077429adb20c0c6129`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5da51de68dfd20b7df38d1c20726895c46bb5b18f9234f99efd295255acaec2`  
-		Last Modified: Wed, 21 Oct 2026 21:20:02 GMT  
+	-	`sha256:9f805e8e79403863bd4299f19ff3e227e69a782691c6757da91837354986ffb0`  
+		Last Modified: Thu, 05 Nov 2026 19:12:27 GMT  
 		Size: 7.9 KB (7929 bytes)  
 		MIME: application/vnd.in-toto+json
