@@ -1,7 +1,7 @@
 ## `irssi:1-alpine`
 
 ```console
-$ docker pull irssi@sha256:2bb79d7f8a1320b6b86d83ae6ca379eac64af061c5a8d9a753ebd59d2d5ff717
+$ docker pull irssi@sha256:907bd8a93a2ff28ded5da415a0de54b2a4c80990726f3eee670d45b12d0a43a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,56 +26,56 @@ $ docker pull irssi@sha256:2bb79d7f8a1320b6b86d83ae6ca379eac64af061c5a8d9a753ebd
 ### `irssi:1-alpine` - linux; amd64
 
 ```console
-$ docker pull irssi@sha256:75ec2a007387a4bc7ea016e6d282a6db656c8cfa195af2900f8b9968ac391028
+$ docker pull irssi@sha256:10682944689d0bac10ff3de89c039609a3681d6617f04efe8825c78f8627eddd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.7 MB (20736652 bytes)**  
+-	Total Size: **20.7 MB (20737030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c77dd691416c8d0fd2307fe866fb33f4cb0f0b8a245276add87c6e8d2745d3b8`
+-	Image ID: `sha256:7773520a95b316f4c62a1bdc7cfeed99cea83695b4dcc001fec54eb47413403e`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 20:46:55 GMT
-ADD alpine-minirootfs-3.23.7-x86_64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 20:46:55 GMT
+# Thu, 05 Nov 2026 18:00:51 GMT
+ADD alpine-minirootfs-3.23.8-x86_64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:51 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:06:40 GMT
+# Thu, 05 Nov 2026 18:56:10 GMT
 RUN apk add --no-cache 		ca-certificates 		perl-libwww # buildkit
-# Wed, 21 Oct 2026 21:06:40 GMT
+# Thu, 05 Nov 2026 18:56:10 GMT
 ENV HOME=/home/user
-# Wed, 21 Oct 2026 21:06:40 GMT
+# Thu, 05 Nov 2026 18:56:10 GMT
 RUN set -eux; 	adduser -u 1001 -D -h "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Wed, 21 Oct 2026 21:06:40 GMT
+# Thu, 05 Nov 2026 18:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 21 Oct 2026 21:06:40 GMT
+# Thu, 05 Nov 2026 18:56:10 GMT
 ENV IRSSI_VERSION=1.4.5
-# Wed, 21 Oct 2026 21:06:52 GMT
+# Thu, 05 Nov 2026 18:56:23 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		glib-dev 		gnupg 		libc-dev 		libtool 		lynx 		meson 		ncurses-dev 		ninja 		openssl 		openssl-dev 		perl-dev 		pkgconf 		tar 		xz 	; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .irssi-rundeps $runDeps; 	apk del --no-network .build-deps; 		irssi --version # buildkit
-# Wed, 21 Oct 2026 21:06:52 GMT
+# Thu, 05 Nov 2026 18:56:23 GMT
 WORKDIR /home/user
-# Wed, 21 Oct 2026 21:06:52 GMT
+# Thu, 05 Nov 2026 18:56:23 GMT
 USER user
-# Wed, 21 Oct 2026 21:06:52 GMT
+# Thu, 05 Nov 2026 18:56:23 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:5e9b4a97f6395abf54a5c584be133078deb2295e280dd0b9e77638874d07b637`  
-		Last Modified: Wed, 21 Oct 2026 20:47:02 GMT  
-		Size: 3.9 MB (3852227 bytes)  
+	-	`sha256:74c614fb2c68574f50c582dcc9c18c46618bd6ff2019768190aacfb861ce51d2`  
+		Last Modified: Thu, 05 Nov 2026 18:00:58 GMT  
+		Size: 3.9 MB (3852589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5ce58680647bf65513cf4f290fe83c54c34ad214292120f247b90adf6de9bb8`  
-		Last Modified: Wed, 21 Oct 2026 21:06:59 GMT  
-		Size: 10.8 MB (10815509 bytes)  
+	-	`sha256:153eb96a9b5dc9565f557c5c5f7222a7c97681e0610b74c949b59796f035ed08`  
+		Last Modified: Thu, 05 Nov 2026 18:56:30 GMT  
+		Size: 10.8 MB (10815513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fc373befc2948622c8ec67db20d0f99a02d2145fdc665477a0c7da582c34f9`  
-		Last Modified: Wed, 21 Oct 2026 21:06:59 GMT  
+	-	`sha256:24281d2acaac72631003e68f6dd533dee76d6331e278182196edbad294f84965`  
+		Last Modified: Thu, 05 Nov 2026 18:56:30 GMT  
 		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7e1caae42dd792911f8a422a56230836ee5f16bdadd52707b4758036bf7b2fc`  
-		Last Modified: Wed, 21 Oct 2026 21:06:59 GMT  
-		Size: 6.1 MB (6067931 bytes)  
+	-	`sha256:6df7a0f14676f6da8bd15597a6551a78fa020761ba69af7b612210fd643ddb36`  
+		Last Modified: Thu, 05 Nov 2026 18:56:30 GMT  
+		Size: 6.1 MB (6067943 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -85,25 +85,25 @@ CMD ["irssi"]
 ### `irssi:1-alpine` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:b70151b67f1c37c7127aa71184f86db02979fdecda0c3ad1655fcc68b0df3306
+$ docker pull irssi@sha256:6f97a389d6ddc5adf3b3ee6ab67608a9de87266a9088c23446d8151c5f26fc2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1306747 bytes)**  
+-	Total Size: **1.3 MB (1306746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba5b2e08c934247a0eea31980301bd651ed215bf879acf3b297dc33bf1075ff5`
+-	Image ID: `sha256:b40a4574d537c018153d004dc4096cb0bc60c32b0712bf2c6d0bffb0f3a5f50b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5c31e6150855b1339db285380cdea4fdce7d1c262bd5bde1cf4dff3039014f61`  
-		Last Modified: Wed, 21 Oct 2026 21:06:59 GMT  
+	-	`sha256:dab5f1c3d4c9120402c206e895bf05523e83e1e522f5ed83451d0a9b1ea40366`  
+		Last Modified: Thu, 05 Nov 2026 18:56:30 GMT  
 		Size: 1.3 MB (1289248 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f06eeedbf7874717de2baebf573d4eb8a95ac4ff0a63ae25e84ea52ba288b861`  
-		Last Modified: Wed, 21 Oct 2026 21:06:58 GMT  
-		Size: 17.5 KB (17499 bytes)  
+	-	`sha256:f455d1c5c8a75f18e093d4ec5efaa0d3eadd6d062703fb1258a38e2d3f0f14fb`  
+		Last Modified: Thu, 05 Nov 2026 18:56:30 GMT  
+		Size: 17.5 KB (17498 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `irssi:1-alpine` - linux; arm variant v6
@@ -271,56 +271,56 @@ $ docker pull irssi@sha256:63752f1ba387f3326217f4d82afa72d3c726cd32807659b39695f
 ### `irssi:1-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull irssi@sha256:8d7470356c61c7c0e89e8ba82a575065c0c5269132ca9a98e728e05a786e69d4
+$ docker pull irssi@sha256:6de2ad42d89c559426498e7483c1db0abf023694abf0275757ba723fd09aef7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.9 MB (20879093 bytes)**  
+-	Total Size: **20.9 MB (20879484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb17b262e8d9802d3ee63b0634b3bc6a34e41a1d14b051a47378b85f7bd7046a`
+-	Image ID: `sha256:5f2f910b7a141b009fd6ce3e946f30adc985da47cd52078d15855fed8136c00f`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Wed, 21 Oct 2026 20:46:49 GMT
-ADD alpine-minirootfs-3.23.7-aarch64.tar.gz / # buildkit
-# Wed, 21 Oct 2026 20:46:49 GMT
+# Thu, 05 Nov 2026 18:00:48 GMT
+ADD alpine-minirootfs-3.23.8-aarch64.tar.gz / # buildkit
+# Thu, 05 Nov 2026 18:00:48 GMT
 CMD ["/bin/sh"]
-# Wed, 21 Oct 2026 21:06:04 GMT
+# Thu, 05 Nov 2026 18:51:49 GMT
 RUN apk add --no-cache 		ca-certificates 		perl-libwww # buildkit
-# Wed, 21 Oct 2026 21:06:04 GMT
+# Thu, 05 Nov 2026 18:51:50 GMT
 ENV HOME=/home/user
-# Wed, 21 Oct 2026 21:06:04 GMT
+# Thu, 05 Nov 2026 18:51:50 GMT
 RUN set -eux; 	adduser -u 1001 -D -h "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME" # buildkit
-# Wed, 21 Oct 2026 21:06:04 GMT
+# Thu, 05 Nov 2026 18:51:50 GMT
 ENV LANG=C.UTF-8
-# Wed, 21 Oct 2026 21:06:04 GMT
+# Thu, 05 Nov 2026 18:51:50 GMT
 ENV IRSSI_VERSION=1.4.5
-# Wed, 21 Oct 2026 21:06:17 GMT
+# Thu, 05 Nov 2026 18:52:02 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		glib-dev 		gnupg 		libc-dev 		libtool 		lynx 		meson 		ncurses-dev 		ninja 		openssl 		openssl-dev 		perl-dev 		pkgconf 		tar 		xz 	; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .irssi-rundeps $runDeps; 	apk del --no-network .build-deps; 		irssi --version # buildkit
-# Wed, 21 Oct 2026 21:06:17 GMT
+# Thu, 05 Nov 2026 18:52:02 GMT
 WORKDIR /home/user
-# Wed, 21 Oct 2026 21:06:17 GMT
+# Thu, 05 Nov 2026 18:52:02 GMT
 USER user
-# Wed, 21 Oct 2026 21:06:17 GMT
+# Thu, 05 Nov 2026 18:52:02 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:197a036d7c646d3e744af55598877c355ab789d97466837b69296bed05ca0d5f`  
-		Last Modified: Wed, 21 Oct 2026 20:46:55 GMT  
-		Size: 4.2 MB (4189494 bytes)  
+	-	`sha256:0aeae9e5c96856ad8a51ac2a81bf4ce73766c2199992b92fd9302dd7ec7a38de`  
+		Last Modified: Thu, 05 Nov 2026 18:00:56 GMT  
+		Size: 4.2 MB (4190221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666b3d421220ae797ac61b65bfafe13ff140f4e9d178771429a66014975506a8`  
-		Last Modified: Wed, 21 Oct 2026 21:06:25 GMT  
-		Size: 10.7 MB (10749808 bytes)  
+	-	`sha256:e5638efab2b4eaba0b025282b404bbd862223b1712ffc08be8ef3d81227755f8`  
+		Last Modified: Thu, 05 Nov 2026 18:52:09 GMT  
+		Size: 10.7 MB (10749440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:741e6da6b2b634d61d158f7e767bda28ea78e6f18354373d3cb321140fdb0175`  
-		Last Modified: Wed, 21 Oct 2026 21:06:25 GMT  
-		Size: 952.0 B  
+	-	`sha256:d4317a1f912d9d7d65d54d4531a6b486669cae379ffef4fa87439ec8a235306e`  
+		Last Modified: Thu, 05 Nov 2026 18:52:08 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6324dbb26db17d055921cff930a6561b91ea7b90099a3574da782d6efe36ff2`  
-		Last Modified: Wed, 21 Oct 2026 21:06:25 GMT  
-		Size: 5.9 MB (5938807 bytes)  
+	-	`sha256:e93bd37bb7508085789e03c8049ef43da625cafb166d2d06d3fe40e0a4f09328`  
+		Last Modified: Thu, 05 Nov 2026 18:52:09 GMT  
+		Size: 5.9 MB (5938838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -330,24 +330,24 @@ CMD ["irssi"]
 ### `irssi:1-alpine` - unknown; unknown
 
 ```console
-$ docker pull irssi@sha256:2ced7d03760dfd54b37bc1443fe89b2d17c5284a3c07db9a63275c8e400f359d
+$ docker pull irssi@sha256:cebbec75f69919364d547da5dc8aee60c12a3d17f18dfb37688ada116bacfbf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.3 MB (1306384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1460fe62a3b558d8d1a4dbcc4bc8de75e65f3089a51918ed8650036720f99971`
+-	Image ID: `sha256:ad59022be4a9e5ff0f3cddd444f22a0dd593d613fbea4e721c24ef9a0fbc814a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:173411df67a988867ac09f442392b175cfde959424420aed78bcfd2f80e31b8d`  
-		Last Modified: Wed, 21 Oct 2026 21:06:25 GMT  
+	-	`sha256:8ca9ae37854cc7aecae581d442e5cc8052f13a827662d8a63619e3f0a40f328f`  
+		Last Modified: Thu, 05 Nov 2026 18:52:08 GMT  
 		Size: 1.3 MB (1288702 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:177284c09f250cbf0e68c1c33be96dfdefbcd8754574f651942f705c7b0a8e6c`  
-		Last Modified: Wed, 21 Oct 2026 21:06:25 GMT  
+	-	`sha256:defc35eed1069d29f57053568ade3e7d90ddab09d2528c781a12fa1287a05684`  
+		Last Modified: Thu, 05 Nov 2026 18:52:09 GMT  
 		Size: 17.7 KB (17682 bytes)  
 		MIME: application/vnd.in-toto+json
 
