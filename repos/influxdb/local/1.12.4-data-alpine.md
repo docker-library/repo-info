@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2a0245b92288e21101280f4a51274228beb6218cb74c37e7d1de412439e1665`
-- Created: `2026-10-21T21:24:13.456429692Z`
+- Image ID: `sha256:e3b79d1722632708256b6882e88f3d57f20e9c7b997a9c486fc41ae93df98fb0`
+- Created: `2026-11-05T19:24:05.887080059Z`
 - Virtual Size: ~ 147.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -71,16 +71,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.9-r0 description:
+alpine-release-3.21.10-r0 description:
 Alpine release data
 
-alpine-release-3.21.9-r0 webpage:
+alpine-release-3.21.10-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.9-r0 installed size:
-346 B
+alpine-release-3.21.10-r0 installed size:
+348 B
 
-alpine-release-3.21.9-r0 license:
+alpine-release-3.21.10-r0 license:
 MIT
 
 ```
@@ -88,16 +88,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r3 description:
+apk-tools-2.14.13-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r3 webpage:
+apk-tools-2.14.13-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r3 installed size:
+apk-tools-2.14.13-r0 installed size:
 247 KiB
 
-apk-tools-2.14.6-r3 license:
+apk-tools-2.14.13-r0 license:
 GPL-2.0-only
 
 ```
@@ -343,16 +343,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026e-r0 description:
+tzdata-2026f-r0 description:
 Timezone data
 
-tzdata-2026e-r0 webpage:
+tzdata-2026f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026e-r0 installed size:
+tzdata-2026f-r0 installed size:
 441 KiB
 
-tzdata-2026e-r0 license:
+tzdata-2026f-r0 license:
 Public-Domain
 
 ```
