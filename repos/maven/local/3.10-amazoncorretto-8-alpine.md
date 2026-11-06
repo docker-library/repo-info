@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:694f2aa806a7cc0c1c87f6766650cf885e0fe0a9126906bc4bc4d30c8f5d9bff`
-- Created: `2026-10-27T17:11:20.176329837Z`
-- Virtual Size: ~ 226.96 Mb  
+- Image ID: `sha256:6d10d286bbb898374f57c9e48f029b73361aef980ec6f8e2d24870d5dd8bd2ef`
+- Created: `2026-11-05T20:35:15.923366029Z`
+- Virtual Size: ~ 226.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -77,16 +77,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -128,16 +128,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -230,16 +230,16 @@ GPL-2.0-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -366,16 +366,16 @@ X11
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-10.3_p1-r1 description:
+openssh-client-common-10.3_p1-r2 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-10.3_p1-r1 webpage:
+openssh-client-common-10.3_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-10.3_p1-r1 installed size:
+openssh-client-common-10.3_p1-r2 installed size:
 2226 KiB
 
-openssh-client-common-10.3_p1-r1 license:
+openssh-client-common-10.3_p1-r2 license:
 SSH-OpenSSH
 
 ```
@@ -383,16 +383,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-10.3_p1-r1 description:
+openssh-client-default-10.3_p1-r2 description:
 OpenBSD's SSH client
 
-openssh-client-default-10.3_p1-r1 webpage:
+openssh-client-default-10.3_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-10.3_p1-r1 installed size:
+openssh-client-default-10.3_p1-r2 installed size:
 722 KiB
 
-openssh-client-default-10.3_p1-r1 license:
+openssh-client-default-10.3_p1-r2 license:
 SSH-OpenSSH
 
 ```
@@ -400,16 +400,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-10.3_p1-r1 description:
+openssh-keygen-10.3_p1-r2 description:
 ssh helper program for generating keys
 
-openssh-keygen-10.3_p1-r1 webpage:
+openssh-keygen-10.3_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-10.3_p1-r1 installed size:
+openssh-keygen-10.3_p1-r2 installed size:
 358 KiB
 
-openssh-keygen-10.3_p1-r1 license:
+openssh-keygen-10.3_p1-r2 license:
 SSH-OpenSSH
 
 ```
