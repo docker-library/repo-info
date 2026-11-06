@@ -427,13 +427,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.10.1.tar.xz' ca-certificates_20260816ubuntu0.26.10.1.tar.xz 272076 SHA512:c6bba1eb4bd320a0f59f4294f7d221f294e5af3073559f022f73d68b35fe0b8b722a6d4881a0c867ba000c852f6f53ef5cf4739123a3735879477951202fe5d9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.10.1.dsc' ca-certificates_20260816ubuntu0.26.10.1.dsc 1876 SHA512:fbe8944da250ee94f4a617ef42fd643f72afd0b8f87a2802f80176d6668710a2d416aac582469972d3282ec1c942d505495a5da30a683554ca6cff31339cd27f
-```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
