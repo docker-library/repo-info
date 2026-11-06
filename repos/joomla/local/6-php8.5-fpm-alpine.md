@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e238e3667a9192e11e79ed24cb7dfcbace833dbe1f453979427d3441393f3e3a`
-- Created: `2026-10-23T18:13:21.05732517Z`
-- Virtual Size: ~ 317.03 Mb  
+- Image ID: `sha256:fe8127d7b26748c586142a4d03e9be95449ab79154e61cd58f639b8736306ab8`
+- Created: `2026-11-05T20:02:42.576689841Z`
+- Virtual Size: ~ 316.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -100,16 +100,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -117,16 +117,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -304,16 +304,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -576,16 +576,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.34-r0 description:
+imagemagick-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.34-r0 webpage:
+imagemagick-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.34-r0 installed size:
+imagemagick-7.1.2.35-r0 installed size:
 3777 KiB
 
-imagemagick-7.1.2.34-r0 license:
+imagemagick-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.34-r0 description:
+imagemagick-jp2-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.34-r0 webpage:
+imagemagick-jp2-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.34-r0 installed size:
+imagemagick-jp2-7.1.2.35-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.34-r0 license:
+imagemagick-jp2-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.34-r0 description:
+imagemagick-jpeg-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.34-r0 webpage:
+imagemagick-jpeg-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.34-r0 installed size:
+imagemagick-jpeg-7.1.2.35-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.34-r0 license:
+imagemagick-jpeg-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.34-r0 description:
+imagemagick-libs-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.34-r0 webpage:
+imagemagick-libs-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.34-r0 installed size:
-4313 KiB
+imagemagick-libs-7.1.2.35-r0 installed size:
+4321 KiB
 
-imagemagick-libs-7.1.2.34-r0 license:
+imagemagick-libs-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.34-r0 description:
+imagemagick-pdf-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.34-r0 webpage:
+imagemagick-pdf-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.34-r0 installed size:
+imagemagick-pdf-7.1.2.35-r0 installed size:
 133 KiB
 
-imagemagick-pdf-7.1.2.34-r0 license:
+imagemagick-pdf-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -661,16 +661,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.34-r0 description:
+imagemagick-tiff-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.34-r0 webpage:
+imagemagick-tiff-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.34-r0 installed size:
+imagemagick-tiff-7.1.2.35-r0 installed size:
 119 KiB
 
-imagemagick-tiff-7.1.2.34-r0 license:
+imagemagick-tiff-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -678,16 +678,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.34-r0 description:
+imagemagick-webp-7.1.2.35-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.34-r0 webpage:
+imagemagick-webp-7.1.2.35-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.34-r0 installed size:
+imagemagick-webp-7.1.2.35-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.34-r0 license:
+imagemagick-webp-7.1.2.35-r0 license:
 ImageMagick
 
 ```
@@ -729,16 +729,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -814,16 +814,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
@@ -848,16 +848,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```
