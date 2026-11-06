@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad98bcac25dfcdba3df67abc7da018a482584483800020f73e1f1491c7113c0b`
-- Created: `2026-10-21T21:51:37.217717217Z`
+- Image ID: `sha256:47c5c5e55404e78f301b56580df3e7f102e7782094e634a0b5094e07082bb3df`
+- Created: `2026-11-05T19:34:32.542285362Z`
 - Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.9-r0 description:
+alpine-release-3.21.10-r0 description:
 Alpine release data
 
-alpine-release-3.21.9-r0 webpage:
+alpine-release-3.21.10-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.9-r0 installed size:
-346 B
+alpine-release-3.21.10-r0 installed size:
+348 B
 
-alpine-release-3.21.9-r0 license:
+alpine-release-3.21.10-r0 license:
 MIT
 
 ```
@@ -89,16 +89,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r3 description:
+apk-tools-2.14.13-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r3 webpage:
+apk-tools-2.14.13-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r3 installed size:
+apk-tools-2.14.13-r0 installed size:
 247 KiB
 
-apk-tools-2.14.6-r3 license:
+apk-tools-2.14.13-r0 license:
 GPL-2.0-only
 
 ```
