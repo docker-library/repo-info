@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1946d6f4c8fced068129e308877b25cca51c3ab294d189f9de1596f5ef82e614`
-- Created: `2026-10-29T17:49:35.425134798Z`
-- Virtual Size: ~ 518.02 Mb  
+- Image ID: `sha256:e6c0dff56efe1a562d02c1d76d1fdae22694c7fa6f2d12d94af9d642a238d777`
+- Created: `2026-11-03T22:15:01.680879227Z`
+- Virtual Size: ~ 518.5 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.20.1+1`
+  - `JAVA_VERSION=jdk-17.0.21+9`
   - `LIGHTSTREAMER_VERSION=7.4.9`
 - Labels:
   - `org.opencontainers.image.authors=Lightstreamer Server Development Team <support@lightstreamer.com>`
@@ -153,13 +153,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.tar.xz' base-files_14ubuntu6.2.tar.xz 97908 SHA512:d067fc03743277d6202c6750dc8279cc84c084f2afa29075b6d14c5fedb0301518a3a7bfd019254c723fb6f3a6fd32653431de28b2223d52c65ee6d4dde53514
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.dsc' base-files_14ubuntu6.2.dsc 1735 SHA512:f3d82eae834c7c02bc01fd2636944fbab6349e1921dd1effcefccdf046c40d9eb58ceced24fe599b9c5673b28100dbd19fe37558192994017b3fc33bd2d5e52d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -288,13 +284,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
-```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 
