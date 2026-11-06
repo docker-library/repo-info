@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:70f7b0fab7850442fcc290329816675eb2f677c014548083a98924a47785737f`
-- Created: `2026-10-29T21:13:14.952190979Z`
-- Virtual Size: ~ 1.53 Gb  
+- Image ID: `sha256:bd81de54aa83b85653e33aa2e1cdca17041130cb60446815fcf8a308e022bf0c`
+- Created: `2026-11-03T19:15:04.734014612Z`
+- Virtual Size: ~ 1.54 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,10 +23,10 @@
   - `TOMCAT_VERSION=9.0.123`
   - `TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290`
   - `CURL_OPTIONS=-fSL --retry 5 --retry-all-errors --retry-delay 5 --connect-timeout 30`
-  - `LIBREOFFICE_VERSION=26.2.6`
-  - `LIBREOFFICE_SHA256_AMD64=fd0e8f8f2408dd2e5b90286e60f3f97cf566ba441cd48cfc5bcc68067303e0bc`
-  - `LIBREOFFICE_SHA256_ARM64=f8e8b1d30abde0d530d727ce1b26909ccbedc3d76bcf75d93b3dd5fcd5b8d278`
-  - `LIBREOFFICE_URL_PREFIX=https://download.documentfoundation.org/libreoffice/stable/26.2.6/deb`
+  - `LIBREOFFICE_VERSION=26.2.7`
+  - `LIBREOFFICE_SHA256_AMD64=8cd04a88396a9230264ff784ec89cc090cbfd0960c192483ba2b80fa53939416`
+  - `LIBREOFFICE_SHA256_ARM64=d871da75fe387f9dab5acb7569d46d1098835c25b53695c89152f5194ad34411`
+  - `LIBREOFFICE_URL_PREFIX=https://download.documentfoundation.org/libreoffice/stable/26.2.7/deb`
   - `XWIKI_VERSION=16.10.19`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.19`
   - `XWIKI_DOWNLOAD_SHA256=ad7de1e6a40746f778fb37320491b1ee0d9cfbead8a2dda666ed028a2593bb34`
@@ -219,13 +219,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.tar.xz' base-files_14ubuntu6.2.tar.xz 97908 SHA512:d067fc03743277d6202c6750dc8279cc84c084f2afa29075b6d14c5fedb0301518a3a7bfd019254c723fb6f3a6fd32653431de28b2223d52c65ee6d4dde53514
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.dsc' base-files_14ubuntu6.2.dsc 1735 SHA512:f3d82eae834c7c02bc01fd2636944fbab6349e1921dd1effcefccdf046c40d9eb58ceced24fe599b9c5673b28100dbd19fe37558192994017b3fc33bd2d5e52d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -326,13 +322,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
-```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
@@ -1517,11 +1509,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build4
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build4.dsc' libmd_1.1.0-2build4.dsc 2383 SHA256:8c735703ff1b9699379c6cf538d07199d6f532dce3bcab4a1bde0ae5f7e25a21
 ```
 
-### `dpkg` source package: `libobasis26.2-base=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-base=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-base=26.2.6.3-3`
+- `libobasis26.2-base=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1531,11 +1523,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-calc=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-calc=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-calc=26.2.6.3-3`
+- `libobasis26.2-calc=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1545,11 +1537,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-core=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-core=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-core=26.2.6.3-3`
+- `libobasis26.2-core=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1559,11 +1551,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-draw=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-draw=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-draw=26.2.6.3-3`
+- `libobasis26.2-draw=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1573,11 +1565,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-en-us=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-en-us=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-en-us=26.2.6.3-3`
+- `libobasis26.2-en-us=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1587,11 +1579,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-beanshell-script-provider=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-beanshell-script-provider=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-beanshell-script-provider=26.2.6.3-3`
+- `libobasis26.2-extension-beanshell-script-provider=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1601,11 +1593,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-javascript-script-provider=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-javascript-script-provider=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-javascript-script-provider=26.2.6.3-3`
+- `libobasis26.2-extension-javascript-script-provider=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1615,11 +1607,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-mediawiki-publisher=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-mediawiki-publisher=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-mediawiki-publisher=26.2.6.3-3`
+- `libobasis26.2-extension-mediawiki-publisher=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1629,11 +1621,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-nlpsolver=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-nlpsolver=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-nlpsolver=26.2.6.3-3`
+- `libobasis26.2-extension-nlpsolver=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1643,11 +1635,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-pdf-import=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-pdf-import=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-pdf-import=26.2.6.3-3`
+- `libobasis26.2-extension-pdf-import=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1657,11 +1649,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-extension-report-builder=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-extension-report-builder=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-extension-report-builder=26.2.6.3-3`
+- `libobasis26.2-extension-report-builder=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1671,11 +1663,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-firebird=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-firebird=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-firebird=26.2.6.3-3`
+- `libobasis26.2-firebird=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1685,11 +1677,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-gnome-integration=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-gnome-integration=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-gnome-integration=26.2.6.3-3`
+- `libobasis26.2-gnome-integration=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1699,11 +1691,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-graphicfilter=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-graphicfilter=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-graphicfilter=26.2.6.3-3`
+- `libobasis26.2-graphicfilter=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1713,11 +1705,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-images=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-images=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-images=26.2.6.3-3`
+- `libobasis26.2-images=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1727,11 +1719,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-impress=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-impress=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-impress=26.2.6.3-3`
+- `libobasis26.2-impress=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1741,11 +1733,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-kde-integration=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-kde-integration=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-kde-integration=26.2.6.3-3`
+- `libobasis26.2-kde-integration=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1755,11 +1747,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-librelogo=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-librelogo=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-librelogo=26.2.6.3-3`
+- `libobasis26.2-librelogo=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1769,11 +1761,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-libreofficekit-data=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-libreofficekit-data=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-libreofficekit-data=26.2.6.3-3`
+- `libobasis26.2-libreofficekit-data=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1783,11 +1775,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-math=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-math=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-math=26.2.6.3-3`
+- `libobasis26.2-math=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1797,11 +1789,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-ogltrans=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-ogltrans=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-ogltrans=26.2.6.3-3`
+- `libobasis26.2-ogltrans=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1811,11 +1803,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-onlineupdate=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-onlineupdate=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-onlineupdate=26.2.6.3-3`
+- `libobasis26.2-onlineupdate=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1825,11 +1817,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-ooofonts=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-ooofonts=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-ooofonts=26.2.6.3-3`
+- `libobasis26.2-ooofonts=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1839,11 +1831,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-ooolinguistic=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-ooolinguistic=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-ooolinguistic=26.2.6.3-3`
+- `libobasis26.2-ooolinguistic=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1853,11 +1845,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-postgresql-sdbc=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-postgresql-sdbc=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-postgresql-sdbc=26.2.6.3-3`
+- `libobasis26.2-postgresql-sdbc=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1867,11 +1859,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-python-script-provider=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-python-script-provider=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-python-script-provider=26.2.6.3-3`
+- `libobasis26.2-python-script-provider=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1881,11 +1873,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-pyuno=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-pyuno=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-pyuno=26.2.6.3-3`
+- `libobasis26.2-pyuno=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1895,11 +1887,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-writer=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-writer=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-writer=26.2.6.3-3`
+- `libobasis26.2-writer=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1909,11 +1901,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libobasis26.2-xsltfilter=26.2.6.3-3`
+### `dpkg` source package: `libobasis26.2-xsltfilter=26.2.7.3-3`
 
 Binary Packages:
 
-- `libobasis26.2-xsltfilter=26.2.6.3-3`
+- `libobasis26.2-xsltfilter=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1970,11 +1962,11 @@ $ apt-get source -qq --print-uris libpsl=0.21.2-1.1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.21.2-1.1build2.dsc' libpsl_0.21.2-1.1build2.dsc 2388 SHA256:7c5b3688d51ffe733e61bb32fcfd8304acbf76583d21bce75ff5c3bf7e04042f
 ```
 
-### `dpkg` source package: `libreoffice26.2-base=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-base=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-base=26.2.6.3-3`
+- `libreoffice26.2-base=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1984,11 +1976,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-calc=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-calc=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-calc=26.2.6.3-3`
+- `libreoffice26.2-calc=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1998,11 +1990,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-debian-menus=26.2.6-3`
+### `dpkg` source package: `libreoffice26.2-debian-menus=26.2.7-3`
 
 Binary Packages:
 
-- `libreoffice26.2-debian-menus=26.2.6-3`
+- `libreoffice26.2-debian-menus=26.2.7-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2012,11 +2004,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-dict-en=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-dict-en=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-dict-en=26.2.6.3-3`
+- `libreoffice26.2-dict-en=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2026,11 +2018,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-dict-es=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-dict-es=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-dict-es=26.2.6.3-3`
+- `libreoffice26.2-dict-es=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2040,11 +2032,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-dict-fr=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-dict-fr=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-dict-fr=26.2.6.3-3`
+- `libreoffice26.2-dict-fr=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2054,11 +2046,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-draw=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-draw=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-draw=26.2.6.3-3`
+- `libreoffice26.2-draw=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2068,11 +2060,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-en-us=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-en-us=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-en-us=26.2.6.3-3`
+- `libreoffice26.2-en-us=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2082,11 +2074,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-impress=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-impress=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-impress=26.2.6.3-3`
+- `libreoffice26.2-impress=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2096,11 +2088,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-math=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-math=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-math=26.2.6.3-3`
+- `libreoffice26.2-math=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2110,11 +2102,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-ure=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-ure=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-ure=26.2.6.3-3`
+- `libreoffice26.2-ure=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2124,11 +2116,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2-writer=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2-writer=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2-writer=26.2.6.3-3`
+- `libreoffice26.2-writer=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2138,11 +2130,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libreoffice26.2=26.2.6.3-3`
+### `dpkg` source package: `libreoffice26.2=26.2.7.3-3`
 
 Binary Packages:
 
-- `libreoffice26.2=26.2.6.3-3`
+- `libreoffice26.2=26.2.7.3-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2624,9 +2616,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=7.0.0-42.42
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.diff.gz' linux_7.0.0-42.42.diff.gz 5891203 SHA512:8c500d2850b70e751db9450a28d7407ecb50011ff880519a1b3eeac8b98012ab675026afd4d7e6fdbe8d6d8b6d8f6c60a2c876d66b558de47e458da91298a959
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.dsc' linux_7.0.0-42.42.dsc 7845 SHA512:5291a124ff69bb6731453b0b35fe6adf91182bb4be29e6af0dc030b763c31c1081f866f9123bd9ad78cc95e5f2541e6e3e216c8fc0339cb3ee8c091a34fbd1c6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.diff.gz' linux_7.0.0-42.42.diff.gz 5891203 SHA512:8c500d2850b70e751db9450a28d7407ecb50011ff880519a1b3eeac8b98012ab675026afd4d7e6fdbe8d6d8b6d8f6c60a2c876d66b558de47e458da91298a959
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.dsc' linux_7.0.0-42.42.dsc 7845 SHA512:5291a124ff69bb6731453b0b35fe6adf91182bb4be29e6af0dc030b763c31c1081f866f9123bd9ad78cc95e5f2541e6e3e216c8fc0339cb3ee8c091a34fbd1c6
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
