@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce17a8dd693e38ab4f3f0b52ce92885646562d91c755aa135726741000e5932a`
-- Created: `2026-10-21T23:39:13.224772359Z`
-- Virtual Size: ~ 258.97 Mb  
+- Image ID: `sha256:a0c16db2140893728d015463b4f39e0231aedd40a582aae2a002c9d82e841e98`
+- Created: `2026-11-05T20:26:54.800263845Z`
+- Virtual Size: ~ 259.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.20.1+1`
+  - `JAVA_VERSION=jdk-17.0.21+9`
   - `TOMEE_VER=10.2.0`
   - `TOMEE_BUILD=webprofile`
 
@@ -92,16 +92,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -109,16 +109,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -126,16 +126,16 @@ GPL-2.0-only
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -296,16 +296,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -619,16 +619,16 @@ GPL-3.0-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -704,16 +704,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
@@ -721,16 +721,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```
@@ -1282,16 +1282,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026e-r0 description:
+tzdata-2026f-r0 description:
 Timezone data
 
-tzdata-2026e-r0 webpage:
+tzdata-2026f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026e-r0 installed size:
+tzdata-2026f-r0 installed size:
 441 KiB
 
-tzdata-2026e-r0 license:
+tzdata-2026f-r0 license:
 Public-Domain
 
 ```
