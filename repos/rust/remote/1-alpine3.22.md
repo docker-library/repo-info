@@ -1,7 +1,7 @@
 ## `rust:1-alpine3.22`
 
 ```console
-$ docker pull rust@sha256:910924227967a1eac2bf24335c4bf71455c049d1663a0a2351e09f0370236f20
+$ docker pull rust@sha256:9a744dc47d1ac2a7d17fc3cedfc8b4928b1696dfcba3274ab25bfb40988a9ff0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -148,65 +148,65 @@ $ docker pull rust@sha256:7b5cb8b3ff097f7cfcfc77a71174dbf410e359e3690bdd231aa033
 ### `rust:1-alpine3.22` - linux; ppc64le
 
 ```console
-$ docker pull rust@sha256:6f0301315b616224c3f1643d825e94fdd95f6e789f776adc773e1677723aea94
+$ docker pull rust@sha256:72ce46e42a7b3c8d5c867ddb07aba6b7799ef339baa7b91155b5d6d929ff9c62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **362.1 MB (362110762 bytes)**  
+-	Total Size: **362.1 MB (362110878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0302175a4893046f014bbbf6aee780c355629bd336a485ada5d035a7d9a821d2`
+-	Image ID: `sha256:9338f2f644c055df2d8b36184524b30c7d640d00a8e3b7081c415a3fb684ebc7`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Thu, 22 Oct 2026 02:46:11 GMT
-ADD alpine-minirootfs-3.22.7-ppc64le.tar.gz / # buildkit
-# Thu, 22 Oct 2026 02:46:11 GMT
+# Thu, 05 Nov 2026 20:44:11 GMT
+ADD alpine-minirootfs-3.22.8-ppc64le.tar.gz / # buildkit
+# Thu, 05 Nov 2026 20:44:11 GMT
 CMD ["/bin/sh"]
-# Tue, 03 Nov 2026 21:58:48 GMT
+# Fri, 06 Nov 2026 06:45:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Tue, 03 Nov 2026 21:58:48 GMT
+# Fri, 06 Nov 2026 06:45:24 GMT
 RUN apk add --no-cache         ca-certificates         musl-dev         gcc # buildkit
-# Tue, 03 Nov 2026 21:58:48 GMT
+# Fri, 06 Nov 2026 06:45:24 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.99.1
-# Tue, 03 Nov 2026 21:59:21 GMT
+# Fri, 06 Nov 2026 06:45:44 GMT
 RUN set -eux;         arch="$(apk --print-arch)";     case "$arch" in         'x86_64')             rustArch='x86_64-unknown-linux-musl';             rustupSha256='1552169aba2836777136ccff7a381e95c17233b5d8250cd5e10ae3cb971bfcfc';             ;;         'aarch64')             rustArch='aarch64-unknown-linux-musl';             rustupSha256='956deacdc27ab82ae7ac821d5d3e9e95e4795d476d17efe99743bb8531ca1031';             ;;         'ppc64le')             rustArch='powerpc64le-unknown-linux-musl';             rustupSha256='334e1e79626a20a31f5cbc4d16e0386b280cc77e46da90bf5db68045b2012a74';             ;;         'riscv64')             rustArch='riscv64gc-unknown-linux-musl';             rustupSha256='3d87288288b166938b770e86a96f412b21413465b093ebee1efa71c6b9efd294';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.3/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:6292411e96b44c5d76aac019d2f95f8c7a9e90210868cfdbc37ed4c3ba65fcab`  
-		Last Modified: Thu, 22 Oct 2026 02:46:40 GMT  
-		Size: 3.7 MB (3725437 bytes)  
+	-	`sha256:4be1a473c77a45524d8389eeb78602a090c801a1ec4c4187ac5060cd906c4712`  
+		Last Modified: Thu, 05 Nov 2026 20:44:20 GMT  
+		Size: 3.7 MB (3725514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e45d8df8351fc62355b5aae62b1cc4ac28595091479e4440af4b70322de9348`  
-		Last Modified: Tue, 03 Nov 2026 22:00:55 GMT  
-		Size: 61.5 MB (61518956 bytes)  
+	-	`sha256:34407d3ba2b8de9998c7c59662ad5c458c49e5896eccba14d96cc0e10dc90c31`  
+		Last Modified: Fri, 06 Nov 2026 06:47:01 GMT  
+		Size: 61.5 MB (61518962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41c3eb1a1831f82304d606affbd42398ae48d7ee22cab0c9af35ec4f52ca9c9b`  
-		Last Modified: Tue, 03 Nov 2026 22:01:00 GMT  
-		Size: 296.9 MB (296866369 bytes)  
+	-	`sha256:db712d8a36494df09bc1ddf1b69b550a79884f493726e21102b0eb7e4a88850f`  
+		Last Modified: Fri, 06 Nov 2026 06:47:05 GMT  
+		Size: 296.9 MB (296866402 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:1-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:5f0d9d2a2bb106e2e3de75b32ef6492b4e4bbd232c996ab5f0436fbb9c241b17
+$ docker pull rust@sha256:dd661eb0579f142a2ed099a9d012740a8467416c77ad4cc1c805ba9b8da3e857
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **969.5 KB (969461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2252107c9e5e27de84d71efd032e2b8b90c193d9d7828ee89f55f1f4e3ed4f5d`
+-	Image ID: `sha256:a9e71d29bdd92b5cde55ac27cdebfc47b4edc08768953cbd5eaa4c1a0f8d827a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3b6110e72f417455674361b0eb11f719f925822d97445bb32deb6d4c656926b4`  
-		Last Modified: Tue, 03 Nov 2026 22:00:53 GMT  
+	-	`sha256:9733d9fcfcda186371f53a19feb7ad5db0da3f36f38daec7324a1d393b379501`  
+		Last Modified: Fri, 06 Nov 2026 06:46:58 GMT  
 		Size: 956.6 KB (956637 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a62778c6e9d886038087db03a3572e9ac4d26b59fe92b240a1b74f79a2972997`  
-		Last Modified: Tue, 03 Nov 2026 22:00:52 GMT  
+	-	`sha256:132050bcbdd57e894ad6f3f5eb142d8abe4a8234a5644da20e13061fda4d5353`  
+		Last Modified: Fri, 06 Nov 2026 06:46:58 GMT  
 		Size: 12.8 KB (12824 bytes)  
 		MIME: application/vnd.in-toto+json
 
