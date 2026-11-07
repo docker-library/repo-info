@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-17.0.20.15-jre-resolute`
+# `ibm-semeru-runtimes:open-17.0.21.0-jre-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6554d87940eeb280f0f62bfc1c1e7c6dea7ecbf1a54d4da94a60ecd37149b668`
-- Created: `2026-10-26T23:20:26.863361228Z`
-- Virtual Size: ~ 326.93 Mb  
+- Image ID: `sha256:fcf0a4c2aa18866a54542a6e3a7c6e07eb2a350055db926ee2d66d0dbea42738`
+- Created: `2026-11-04T22:25:52.914931464Z`
+- Virtual Size: ~ 327.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=17.0.20.15`
+  - `JAVA_VERSION=17.0.21.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
@@ -132,13 +132,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.tar.xz' base-files_14ubuntu6.2.tar.xz 97908 SHA512:d067fc03743277d6202c6750dc8279cc84c084f2afa29075b6d14c5fedb0301518a3a7bfd019254c723fb6f3a6fd32653431de28b2223d52c65ee6d4dde53514
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.dsc' base-files_14ubuntu6.2.dsc 1735 SHA512:f3d82eae834c7c02bc01fd2636944fbab6349e1921dd1effcefccdf046c40d9eb58ceced24fe599b9c5673b28100dbd19fe37558192994017b3fc33bd2d5e52d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -239,13 +235,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
-```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 
