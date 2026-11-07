@@ -1,10 +1,10 @@
-# `ghost:6.74.0-next-bookworm`
+# `ghost:6.75.0-next-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:485067e028988419d2abea9f3a31a6aa93c2c32a8563bd1b2b00686e1075807c`
-- Created: `2026-11-03T21:58:31.067207121Z`
-- Virtual Size: ~ 468.08 Mb  
+- Image ID: `sha256:2096ee3f31ea3e3b16b970e666b25a1a2d40f41548a74080e1bd33f81df817b2`
+- Created: `2026-11-05T08:50:10.686501837Z`
+- Virtual Size: ~ 468.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,9 +17,9 @@
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.74.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.74.0/ghost-6.74.0.tgz`
-  - `GHOST_SHA256=2a18f5ef9b8aa9ab0a65a1710ee0b055ebfd70a1098b431708961f808331a193`
+  - `GHOST_VERSION=6.75.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.75.0/ghost-6.75.0.tgz`
+  - `GHOST_SHA256=e8abc257261b845c67bc9602c26aa6286aa34a3ce7da5efc9b2a2426fc7c7e6e`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -77,12 +77,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=2.6.1`
+### `dpkg` source package: `apt=2.6.2`
 
 Binary Packages:
 
-- `apt=2.6.1`
-- `libapt-pkg6.0:amd64=2.6.1`
+- `apt=2.6.2`
+- `libapt-pkg6.0:amd64=2.6.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -94,16 +94,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.dsc' apt_2.6.1.dsc 2933 SHA256:e258c1b9c24e1747100271db9d6e5af7127bd3ef812a69bdf63de263abfdc6fd
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.tar.xz' apt_2.6.1.tar.xz 2328508 SHA256:86b888c901fa2e78f1bf52a2aaa2f400ff82a472b94ff0ac6631939ee68fa6fd
+$ apt-get source -qq --print-uris apt=2.6.2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.dsc' apt_2.6.2.dsc 2933 SHA256:63490cc85118a0eb7a3109696311920ffa70f3f9ad718bcaf126445496049c74
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.tar.xz' apt_2.6.2.tar.xz 2329740 SHA256:12c38c9b2b8159bc1780eb17acff0adf6d6b2dff3d560f557b9ad9f60b3cc63f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/2.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.6.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/2.6.2/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.6.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -1829,19 +1829,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb12u1`
+### `dpkg` source package: `tzdata=2026f-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb12u1`
+- `tzdata=2026f-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.dsc' tzdata_2026f-0+deb12u1.dsc 2396 SHA256:e9047474a52c30cf914c8b11bbc0f9ceb289c0711c81b5fff277e1f8a4b9ce2e
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.debian.tar.xz' tzdata_2026f-0+deb12u1.debian.tar.xz 123284 SHA256:03a51a7f1daac87d927a47eccf1465ea61f896c37295f41601862c8665edfc84
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
