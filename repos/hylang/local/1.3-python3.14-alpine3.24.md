@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3a9cda7fadf7d79eaeaeceb16ca39a5fbd93fac7e9e039d6ddbb53ce2b1eeb2`
-- Created: `2026-10-26T23:47:53.273891968Z`
-- Virtual Size: ~ 60.04 Mb  
+- Image ID: `sha256:7b0ebc492ffb773df29efdc02ea116969f09de02aa77246c9fad21d21d13466e`
+- Created: `2026-11-05T20:31:43.709162718Z`
+- Virtual Size: ~ 60.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -89,16 +89,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -191,16 +191,16 @@ GPL-3.0-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -446,16 +446,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026e-r0 description:
+tzdata-2026f-r0 description:
 Timezone data
 
-tzdata-2026e-r0 webpage:
+tzdata-2026f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026e-r0 installed size:
+tzdata-2026f-r0 installed size:
 441 KiB
 
-tzdata-2026e-r0 license:
+tzdata-2026f-r0 license:
 Public-Domain
 
 ```
