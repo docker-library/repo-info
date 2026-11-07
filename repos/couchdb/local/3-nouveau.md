@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:390f312ab5c489d02e66104b81d4338ff70104c1c3b328ec38b4669d0d18f2ec`
-- Created: `2026-10-28T01:40:21.090151961Z`
-- Virtual Size: ~ 367.79 Mb  
+- Image ID: `sha256:2bc5eb39f079a53c876d0bcd9e7586007a707ca2e4817275691c751c42b22c91`
+- Created: `2026-11-05T07:38:46.256452711Z`
+- Virtual Size: ~ 367.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
@@ -100,13 +100,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apparmor/4.1.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apparmor/4.1.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=3.0.3`
+### `dpkg` source package: `apt=3.0.4`
 
 Binary Packages:
 
-- `apt=3.0.3`
-- `apt-transport-https=3.0.3`
-- `libapt-pkg7.0:amd64=3.0.3`
+- `apt=3.0.4`
+- `apt-transport-https=3.0.4`
+- `libapt-pkg7.0:amd64=3.0.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -119,16 +119,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-tran
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.0.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.dsc' apt_3.0.3.dsc 3091 SHA256:ccf1666e5b268d76bf62aafb22db089a2fdae9c17d1d1c446546b3621768add7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.tar.xz' apt_3.0.3.tar.xz 2422096 SHA256:5b5f6f6d26121742a83aa80d4ed0eb0c6ce9bea259518db412edefd95760e4ef
+$ apt-get source -qq --print-uris apt=3.0.4
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.dsc' apt_3.0.4.dsc 3091 SHA256:efc029dbfb0e264dfb38a8bf34398a8d3709cd35a463c270153b59e2e4ffb404
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.tar.xz' apt_3.0.4.tar.xz 2423460 SHA256:e853aec49afbe520ebcd4dbcbc98e1c55262c6bf1c119cf43e6aec69752443c6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/3.0.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/3.0.4/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.0.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.0.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1885,11 +1885,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.36-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.36-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.110-1+deb13u4`
+### `dpkg` source package: `nss=2:3.110-1+deb13u5`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.110-1+deb13u4`
+- `libnss3:amd64=2:3.110-1+deb13u5`
 
 Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 
@@ -1901,17 +1901,17 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.110-1+deb13u4
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110-1%2bdeb13u4.dsc' nss_3.110-1+deb13u4.dsc 2350 SHA256:45c3eeae75c94da73f8f38630a73fc20673296cd3d689df416a8d4658c1a8d96
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110.orig.tar.gz' nss_3.110.orig.tar.gz 76616684 SHA256:9cd610c40422a07771b9b45166be2d052ea2f00b605a7928129e1f2071b3ae27
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.110-1%2bdeb13u4.debian.tar.xz' nss_3.110-1+deb13u4.debian.tar.xz 26148 SHA256:29d935bca3ea867383004f7e0abfcc92a5e956e8c405e4994631e4a7f92a6062
+$ apt-get source -qq --print-uris nss=2:3.110-1+deb13u5
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110-1%2bdeb13u5.dsc' nss_3.110-1+deb13u5.dsc 2350 SHA256:8697f210395a33ee009fc58e5461bde5e9b5dc0f901e75ae347b9ca4dc0126bd
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110.orig.tar.gz' nss_3.110.orig.tar.gz 76616684 SHA256:9cd610c40422a07771b9b45166be2d052ea2f00b605a7928129e1f2071b3ae27
+'http://deb.debian.org/debian-security/pool/updates/main/n/nss/nss_3.110-1%2bdeb13u5.debian.tar.xz' nss_3.110-1+deb13u5.debian.tar.xz 30336 SHA256:b63e18073944139dca9210c6124c02d42306780fd6fa10a8b854cdc2583b6a36
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.110-1+deb13u4/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.110-1+deb13u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.110-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.110-1+deb13u5/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.110-1+deb13u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.110-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjdk-21=21.0.13+9-1~deb13u2`
 
@@ -2542,23 +2542,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tini/0.19.0-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tini/0.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb13u1`
+### `dpkg` source package: `tzdata=2026f-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb13u1`
+- `tzdata=2026f-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.dsc' tzdata_2026f-0+deb13u1.dsc 2466 SHA256:5b054ca653d94f5c26e8485f002915cff2e542bd5be473b224708ae301c2f9df
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.debian.tar.xz' tzdata_2026f-0+deb13u1.debian.tar.xz 128876 SHA256:1e591c778ef71dc461cdc3d16841edb48872c536cd04a27bf2ad86187126388c
+```
 
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
