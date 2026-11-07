@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:487355b4df50e73aa05e51976ad5adac6bdc424054657557ba22ee38440bea32`
-- Created: `2026-11-03T22:23:55.852886196Z`
-- Virtual Size: ~ 528.98 Mb  
+- Image ID: `sha256:1dfeffaff361b9f52d61c5bb9165cea72a318b5f182e07131f03b37a0d4b902d`
+- Created: `2026-11-05T22:52:47.538456135Z`
+- Virtual Size: ~ 529 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=12.3.3`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-02T18:00:47Z`
+  - `build-date=2026-11-05T07:34:13Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-11-02T18:00:47Z`
+  - `org.opencontainers.image.created=2026-11-05T07:34:13Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=f738e88b7bb7caf108d5a65ce6eaa0f284c32f73`
+  - `org.opencontainers.image.revision=b9bbdf653af86c0fd2544624603a25fdbec1e3db`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f738e88b7bb7caf108d5a65ce6eaa0f284c32f73`
+  - `vcs-ref=b9bbdf653af86c0fd2544624603a25fdbec1e3db`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.3.3`
@@ -1542,12 +1542,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026e-1.el10_2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
