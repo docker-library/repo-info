@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d112413a7590de9d509627995aa8329fdd962693d8b2b18d9001d49a84d62ac6`
-- Created: `2026-10-29T20:04:45.615931878Z`
+- Image ID: `sha256:3ec37fcaf9ded49ebb13f204b74fd0aba1a18ad210af26007d250cf985a4ad85`
+- Created: `2026-11-05T08:10:32.384469991Z`
 - Virtual Size: ~ 459.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -72,12 +72,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=2.6.1`
+### `dpkg` source package: `apt=2.6.2`
 
 Binary Packages:
 
-- `apt=2.6.1`
-- `libapt-pkg6.0:amd64=2.6.1`
+- `apt=2.6.2`
+- `libapt-pkg6.0:amd64=2.6.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -89,16 +89,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.dsc' apt_2.6.1.dsc 2933 SHA256:e258c1b9c24e1747100271db9d6e5af7127bd3ef812a69bdf63de263abfdc6fd
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.tar.xz' apt_2.6.1.tar.xz 2328508 SHA256:86b888c901fa2e78f1bf52a2aaa2f400ff82a472b94ff0ac6631939ee68fa6fd
+$ apt-get source -qq --print-uris apt=2.6.2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.dsc' apt_2.6.2.dsc 2933 SHA256:63490cc85118a0eb7a3109696311920ffa70f3f9ad718bcaf126445496049c74
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.tar.xz' apt_2.6.2.tar.xz 2329740 SHA256:12c38c9b2b8159bc1780eb17acff0adf6d6b2dff3d560f557b9ad9f60b3cc63f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/2.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.6.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/2.6.2/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.6.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -1850,19 +1850,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1.2+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1.2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb12u1`
+### `dpkg` source package: `tzdata=2026f-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb12u1`
+- `tzdata=2026f-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.dsc' tzdata_2026f-0+deb12u1.dsc 2396 SHA256:e9047474a52c30cf914c8b11bbc0f9ceb289c0711c81b5fff277e1f8a4b9ce2e
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026f-0%2bdeb12u1.debian.tar.xz' tzdata_2026f-0+deb12u1.debian.tar.xz 123284 SHA256:03a51a7f1daac87d927a47eccf1465ea61f896c37295f41601862c8665edfc84
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 

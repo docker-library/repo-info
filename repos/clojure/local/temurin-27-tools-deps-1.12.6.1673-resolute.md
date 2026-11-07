@@ -303,13 +303,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
-```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 

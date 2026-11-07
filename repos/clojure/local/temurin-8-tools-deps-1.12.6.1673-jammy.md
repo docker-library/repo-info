@@ -75,13 +75,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.14
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.tar.xz' apt_2.4.14.tar.xz 2323176 SHA512:16c3eee24d40d94e9e11f70002564331a35373db693f75cfefa028767b9bcd80307dda99c52953173d575ba6724fe7a7fb37724eb2dd44bf87db17ff36a94ef8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.14.dsc' apt_2.4.14.dsc 2801 SHA512:b1b8ce83cead480ab2c6fa2cbc9ed7384ab9d1dbcca437b96947653f16e7ef96df7d04269db20fa915325033845f5aaf7429f35741ada18e0a9b3b0cbf285cc9
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1ubuntu0.1`
 
@@ -235,13 +231,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.1.tar.xz' ca-certificates_20260816ubuntu0.22.04.1.tar.xz 273212 SHA512:1f2ee44447e8661c766ffceee74d5e5b5e823fab03033c5d441a060a49a899f51019fb1742d41838e995202893e5b2aecaf682c36bbb0dd2fb4b9c4dfa127588
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.1.dsc' ca-certificates_20260816ubuntu0.22.04.1.dsc 1878 SHA512:c09aa8b888f8636202cfd12baa3b1c9dd60297e2a73884f4a3656bce1ab2759aa5d2ecaba7f8ee09d1ad74441f1e91f1164274d8359daa3f747100da085f25f5
-```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -2098,14 +2090,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.39-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39.orig.tar.gz' pcre2_10.39.orig.tar.gz 2309964 SHA512:fe17ea0191a91d4e4fe88a44a07883db594941376a6e38556e03ff3b594820596fd3e43be2d73b700ca68cd0c44e38c33cc891a57b8ed65e34cd832196bc09b2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39-3ubuntu0.1.diff.gz' pcre2_10.39-3ubuntu0.1.diff.gz 11214 SHA512:7b8848adbd237351d14e68cf13d26fe0330718d2e807c69b091d2eefdd4c5f4ebde9e3b403d898b52ffcff674eb6bd0ff6995190c1fc42668e4bf8173ded7f14
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39-3ubuntu0.1.dsc' pcre2_10.39-3ubuntu0.1.dsc 2142 SHA512:8f062a4ba129491e0ec755f945b84e6e6d252e4d87b87ae0dc46156320095557093f7c3305a31cbca9252a2cbc172d701606030ebdae147eef3fbd5616b4ed99
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-13ubuntu0.22.04.1`
 
