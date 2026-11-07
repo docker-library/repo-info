@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4168781da51bec696145d7187f55d8bd6a0cf28878ec26786e7ae72937ca89f`
-- Created: `2026-10-28T01:15:42.348164354Z`
-- Virtual Size: ~ 184.25 Mb  
+- Image ID: `sha256:eadd86733ed2d2b4dcfd6f3ab4867f2ea4f8d75ed245c20d8767574f8e1f26ea`
+- Created: `2026-11-05T07:15:22.901975726Z`
+- Virtual Size: ~ 184.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -70,12 +70,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=3.0.3`
+### `dpkg` source package: `apt=3.0.4`
 
 Binary Packages:
 
-- `apt=3.0.3`
-- `libapt-pkg7.0:amd64=3.0.3`
+- `apt=3.0.4`
+- `libapt-pkg7.0:amd64=3.0.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -88,16 +88,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.0.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.dsc' apt_3.0.3.dsc 3091 SHA256:ccf1666e5b268d76bf62aafb22db089a2fdae9c17d1d1c446546b3621768add7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.3.tar.xz' apt_3.0.3.tar.xz 2422096 SHA256:5b5f6f6d26121742a83aa80d4ed0eb0c6ce9bea259518db412edefd95760e4ef
+$ apt-get source -qq --print-uris apt=3.0.4
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.dsc' apt_3.0.4.dsc 3091 SHA256:efc029dbfb0e264dfb38a8bf34398a8d3709cd35a463c270153b59e2e4ffb404
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.tar.xz' apt_3.0.4.tar.xz 2423460 SHA256:e853aec49afbe520ebcd4dbcbc98e1c55262c6bf1c119cf43e6aec69752443c6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/3.0.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.0.3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/3.0.4/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.0.4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.0.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -1377,11 +1377,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libdatetime-perl/2:1.65-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libdatetime-perl/2:1.65-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libdatetime-timezone-perl=1:2.65-1+2026c`
+### `dpkg` source package: `libdatetime-timezone-perl=1:2.65-1+2026e`
 
 Binary Packages:
 
-- `libdatetime-timezone-perl=1:2.65-1+2026c`
+- `libdatetime-timezone-perl=1:2.65-1+2026e`
 
 Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 
@@ -1389,20 +1389,13 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:2.65-1+2026c
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026c.dsc' libdatetime-timezone-perl_2.65-1+2026c.dsc 2930 SHA256:14117c160784b505d2ddb8a19a8d673f16bfc6d2e102587580454e7cc9f0a359
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65.orig.tar.gz' libdatetime-timezone-perl_2.65.orig.tar.gz 928969 SHA256:019e99ca8e8c655d70d6813b6df3f351c2bee5983e0f4732f18c5788e1d38e62
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_2.65-1%2b2026c.debian.tar.xz' libdatetime-timezone-perl_2.65-1+2026c.debian.tar.xz 31828 SHA256:6c63eb2b5ddf6e65c7a644b94cc331baf1851409c589d9bbb0a91c83359e229d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.65-1+2026e/
 
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026c/ (for browsing the source)
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:2.65-1+2026c/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdatetime-timezone-perl/1:2.65-1+2026c/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdevel-callchecker-perl=0.009-2`
 
@@ -3576,23 +3569,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2026e-0+deb13u1`
+### `dpkg` source package: `tzdata=2026f-0+deb13u1`
 
 Binary Packages:
 
-- `tzdata=2026e-0+deb13u1`
+- `tzdata=2026f-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0+deb13u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.dsc' tzdata_2026f-0+deb13u1.dsc 2466 SHA256:5b054ca653d94f5c26e8485f002915cff2e542bd5be473b224708ae301c2f9df
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA256:01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA256:21d673c017910cf47e392e2e8e23a855ed22456da16a9a26ae714bd1e723255d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026f-0%2bdeb13u1.debian.tar.xz' tzdata_2026f-0+deb13u1.debian.tar.xz 128876 SHA256:1e591c778ef71dc461cdc3d16841edb48872c536cd04a27bf2ad86187126388c
+```
 
-- http://snapshot.debian.org/package/tzdata/2026e-0+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026f-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026f-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41.5-0+deb13u1`
 
