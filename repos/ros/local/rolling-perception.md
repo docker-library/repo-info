@@ -478,13 +478,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.tar.xz' base-files_14ubuntu6.2.tar.xz 97908 SHA512:d067fc03743277d6202c6750dc8279cc84c084f2afa29075b6d14c5fedb0301518a3a7bfd019254c723fb6f3a6fd32653431de28b2223d52c65ee6d4dde53514
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.dsc' base-files_14ubuntu6.2.dsc 1735 SHA512:f3d82eae834c7c02bc01fd2636944fbab6349e1921dd1effcefccdf046c40d9eb58ceced24fe599b9c5673b28100dbd19fe37558192994017b3fc33bd2d5e52d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -945,13 +941,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
-```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
@@ -4765,14 +4757,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.6.debian.tar.xz' libheif_1.21.2-3ubuntu0.6.debian.tar.xz 54744 SHA512:e275b556c3798967b92cf5365eba557379e7561c172298fef6f20237f0b46bbf3ff2867cf1ee5ff7b84a3750b0381cd3af1808a07abbd768da69b14498cbe203
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.6.dsc' libheif_1.21.2-3ubuntu0.6.dsc 3989 SHA512:afebd8401a86a703a4ebe40891404c4b25c6b4edc7ee53067014fa6d342df40e57692eaac99cc161ca177c26ded8644aabde3ea3cd0831209f3383ea912b9f2b
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -7668,15 +7655,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/d
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-25=25.0.4.1+1-1~26.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4.1%2b1.orig-googletest.tar.xz' openjdk-25_25.0.4.1+1.orig-googletest.tar.xz 615644 SHA512:059c55ecfdbf7cffaa4d42cb3ede61b83116978234c28a985ec94a8e05eaf7bc6d33b32567be6abf0f2ad5434f27e6892cdb2903cbc067e54ccf04ea5168d518
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4.1%2b1.orig.tar.xz' openjdk-25_25.0.4.1+1.orig.tar.xz 74483168 SHA512:e5667c313d459b3e99d5281e37643119c34980f4bcb101499265685df9cadbb498f9c3b5a1fbadade9b05249f0ca261c5b6729dc5c24c22372ca858a5127f3d4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4.1%2b1-1%7e26.04.4.debian.tar.xz' openjdk-25_25.0.4.1+1-1~26.04.4.debian.tar.xz 385960 SHA512:194b004a7201fc457e92c831423a9ca2676bfbfa4771aefbeec330280cc734167b8412af6f4cf11f870b3bc5a68d66c4d9ed9297ac47eb12930a16fdae5bac72
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.4.1%2b1-1%7e26.04.4.dsc' openjdk-25_25.0.4.1+1-1~26.04.4.dsc 4880 SHA512:9bef65819d22587bcba1e53c78babe2755f3a2948684908a0b3887f02dd53188763d7a6914725fc7f4296e7e97ab6b286e8f002b16a872da51e041d5ebb78ec9
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1ubuntu0.1`
 
