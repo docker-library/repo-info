@@ -110,13 +110,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.tar.xz' apt_2.8.3.tar.xz 2354680 SHA512:bb79bdeb9a0685efd3e9dd2e491001445ebdbccd889ab4c05c2eb0c048117f769bab86ce4a1889acd426222f2eae97fa43aa83a8227690ca061ce25787343c25
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.3.dsc' apt_2.8.3.dsc 2973 SHA512:02223363e56b43eb224e418f9ff470228777eaac1355c787b0e648e4eae0686d3aa38f28aaf95ad75007f2529b32d5fb535024dd2a634b3fad014c95de0f33a0
-```
 
 ### `dpkg` source package: `asn1crypto=1.5.1-3`
 
@@ -341,13 +337,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.tar.xz' ca-certificates_20260816ubuntu0.24.04.1.tar.xz 273380 SHA512:c0db71f2f5d0fa53eb7844647e711592d3b15a3e38f7f1648d2faefb58dbbfb16094e18af45686b066ab449cc064e1b53989f494ac58756888079c92be30d3ee
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.dsc' ca-certificates_20260816ubuntu0.24.04.1.dsc 1876 SHA512:905a4840f0be6e46fcf353932a74eabe004d8ee21c5cbd44ac879dba550912d07a12e8d2e18174d5fb4c290d0c086ea2dfb679eb801354e6d43412d461d65d7b
-```
 
 ### `dpkg` source package: `cached-property=1.5.2-1`
 
@@ -3326,14 +3318,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pillow=10.2.0-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_10.2.0.orig.tar.xz' pillow_10.2.0.orig.tar.xz 36611452 SHA512:3da711c26508b4c1c046d9ece30e26a4526d2e2b0afca05cef59852567f3c333524b76e71e985258f3591e0e7e7b0ed27e34d7f5a0292e89f91ead30de84743c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_10.2.0-1ubuntu1.3.debian.tar.xz' pillow_10.2.0-1ubuntu1.3.debian.tar.xz 20500 SHA512:81d5f3beac8e8b15c32dfb78f05a7ab9104d424f79282cd15304812463033eb367442d05fcf082f4fbfc95b73fcafa31a723216e1631847ac852b1ade42e3620
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_10.2.0-1ubuntu1.3.dsc' pillow_10.2.0-1ubuntu1.3.dsc 2439 SHA512:bbb1193ef4f257e3d027556c88a3d88ff4022c0d9075b9223f4c375e293f65bd2aa8cd7a79d261ff2e59054080ada99c0b89be4b1a880e6ddec26d753ffee9cc
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
