@@ -1,7 +1,7 @@
 ## `bash:4-alpine3.22`
 
 ```console
-$ docker pull bash@sha256:f6effab6173cef3e79a5a430498cf4c70a6817f03a25701b24031e21f66938c9
+$ docker pull bash@sha256:2ae8e461b944ae9b7cb036aabc93bb5d1e6c9fc324c943efded4403db252cfe9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -502,81 +502,81 @@ $ docker pull bash@sha256:12225a9e2e66ed0e52710d63fba437ee5639e6a2b62739f240a518
 ### `bash:4-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull bash@sha256:eaea6a0601c0478370c151782eb8fcd81c16c8a4f4cb20fab068c2efb0346b65
+$ docker pull bash@sha256:5eb69ce88c66cd18e594286fa10de1158741aec7b31abafc88230a52a7d9e3c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4607516 bytes)**  
+-	Total Size: **4.6 MB (4607597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef2c7bd973a818d7b06c9eea626a3cbbd1f692be711aa5ebd2453297f369aabb`
+-	Image ID: `sha256:82946ca8dc3079e4192952943c590074458d8bbad11d8683dacf7c558c2ebca2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 23 Oct 2026 04:58:08 GMT
-ADD alpine-minirootfs-3.22.7-riscv64.tar.gz / # buildkit
-# Fri, 23 Oct 2026 04:58:08 GMT
+# Sun, 08 Nov 2026 12:38:25 GMT
+ADD alpine-minirootfs-3.22.8-riscv64.tar.gz / # buildkit
+# Sun, 08 Nov 2026 12:38:25 GMT
 CMD ["/bin/sh"]
-# Sat, 24 Oct 2026 12:43:51 GMT
+# Mon, 09 Nov 2026 21:42:55 GMT
 ENV _BASH_VERSION=4.4.23
-# Sat, 24 Oct 2026 12:43:51 GMT
+# Mon, 09 Nov 2026 21:42:55 GMT
 ENV _BASH_BASELINE=4.4.18
-# Sat, 24 Oct 2026 12:43:51 GMT
+# Mon, 09 Nov 2026 21:42:55 GMT
 ENV _BASH_BASELINE_PATCH=18
-# Sat, 24 Oct 2026 12:43:51 GMT
+# Mon, 09 Nov 2026 21:42:55 GMT
 ENV _BASH_LATEST_PATCH=23
-# Sat, 24 Oct 2026 12:43:51 GMT
+# Mon, 09 Nov 2026 21:42:55 GMT
 COPY alpine3.21.patch /usr/local/src/tianon-bash-patches/ # buildkit
-# Sat, 24 Oct 2026 12:49:14 GMT
+# Mon, 09 Nov 2026 21:48:11 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		for p in /usr/local/src/tianon-bash-patches/*; do 		patch 			--directory=/usr/local/src/bash 			--input="$p" 			--strip=1 		; 	done; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	for f in config.guess config.sub; do 		wget -T2 -O "support/$f" "https://git.savannah.gnu.org/cgit/config.git/plain/$f?id=7d3d27baf8107b630586c962c057e22149653deb" || 			wget -O "support/$f" "https://github.com/tianon/mirror-gnu-config/raw/7d3d27baf8107b630586c962c057e22149653deb/$f"; 	done; 	export CFLAGS='-Wno-error=implicit-int -Wno-error=implicit-function-declaration'; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "$_BASH_VERSION" ]; 	bash -c 'help' > /dev/null # buildkit
-# Sat, 24 Oct 2026 12:49:14 GMT
+# Mon, 09 Nov 2026 21:48:11 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Sat, 24 Oct 2026 12:49:14 GMT
+# Mon, 09 Nov 2026 21:48:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 24 Oct 2026 12:49:14 GMT
+# Mon, 09 Nov 2026 21:48:11 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:8ac0a590d56e5959a275a0d1ee0a48b4b3f07fa6305e9f047ef5accff095605b`  
-		Last Modified: Fri, 23 Oct 2026 04:58:43 GMT  
-		Size: 3.5 MB (3512898 bytes)  
+	-	`sha256:89533e1a1a5a89d7e2d7d280a92bc335cdd20828db19882bac5a6d9678e1c409`  
+		Last Modified: Sun, 08 Nov 2026 12:39:00 GMT  
+		Size: 3.5 MB (3512926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7f8a3a43e573cbd4412d6fa49c3d236b126ccaf563d572b1f6d2a6779385089`  
-		Last Modified: Sat, 24 Oct 2026 12:49:48 GMT  
-		Size: 597.0 B  
+	-	`sha256:b38214ee6eb6005b73495421eb4768a98f1a251bd19312a7497a545e38d48f80`  
+		Last Modified: Mon, 09 Nov 2026 21:48:44 GMT  
+		Size: 599.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6390328e57486c1eaaf3d5ef8dc656975ace5fc3b61eb185638065da481972b8`  
-		Last Modified: Sat, 24 Oct 2026 12:49:48 GMT  
-		Size: 1.1 MB (1093682 bytes)  
+	-	`sha256:4d0452880070288d90fc523b8a4abedb37b843a280aca770018a692e7022e2fc`  
+		Last Modified: Mon, 09 Nov 2026 21:48:44 GMT  
+		Size: 1.1 MB (1093732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09d1ca4c425167bbab641110676873e8cafc34eddce55c79534c6fe673561500`  
-		Last Modified: Sat, 24 Oct 2026 12:49:48 GMT  
-		Size: 339.0 B  
+	-	`sha256:d193f1ae44412bcd258372176e9eedc8a5e072453cc151e2acf65161757b257a`  
+		Last Modified: Mon, 09 Nov 2026 21:48:44 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:4-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:e38266406f5f3769702c68910350b2464abcb8c2862dd8239a3ad324b8b172cf
+$ docker pull bash@sha256:ade1550be703ac300575a48c6b06e1853a55c6a7ac1f35557954789ac2f0298e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.9 KB (140927 bytes)**  
+-	Total Size: **140.9 KB (140928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28695aa6a61ce744cd13b11abde1fe1a04668399bf633ae25500e7c98a3905dc`
+-	Image ID: `sha256:e5b95fcb312cf7dc49d956c3907f02fc84efb428d74f2f6d8de6af2caefab5df`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0192a0a894ef6378aa4451ce4f5e827eb204333c52f5ca72e54b099c802eff3b`  
-		Last Modified: Sat, 24 Oct 2026 12:49:48 GMT  
+	-	`sha256:bebf7ceab037fb62eda29f495d1756e8c69427ff9f82b644998bb7c60ad55200`  
+		Last Modified: Mon, 09 Nov 2026 21:48:44 GMT  
 		Size: 117.1 KB (117077 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:576cd5ed15579c6f5e2ba0a8306aad2eba89e80ff5a960e466f11cf201b5752f`  
-		Last Modified: Sat, 24 Oct 2026 12:49:48 GMT  
-		Size: 23.9 KB (23850 bytes)  
+	-	`sha256:7a5034b50f47341ddd8e35b3657b26b89a9dfece13dc3e8dba3577c1ed33fb57`  
+		Last Modified: Mon, 09 Nov 2026 21:48:44 GMT  
+		Size: 23.9 KB (23851 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:4-alpine3.22` - linux; s390x
