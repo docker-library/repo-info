@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:37ed322a76596ec7efcc3cf15591816c5fbcd1d95aca3d40afbc7dd4d2a34f4f`
-- Created: `2026-10-23T18:25:22.72368672Z`
-- Virtual Size: ~ 301.01 Mb  
+- Image ID: `sha256:b8f113143938ca96dc5ca3268778e4260a12adde526103c78acccd7ace922b10`
+- Created: `2026-11-05T20:01:44.388534729Z`
+- Virtual Size: ~ 300.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -100,16 +100,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.7-r0 description:
+alpine-release-3.23.8-r0 description:
 Alpine release data
 
-alpine-release-3.23.7-r0 webpage:
+alpine-release-3.23.8-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.7-r0 installed size:
+alpine-release-3.23.8-r0 installed size:
 343 B
 
-alpine-release-3.23.7-r0 license:
+alpine-release-3.23.8-r0 license:
 MIT
 
 ```
@@ -117,16 +117,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -270,16 +270,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -338,16 +338,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -389,16 +389,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
