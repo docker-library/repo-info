@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9bc4d032c6ce1d7936d150aee86715b2755a3cc81a07bb9d5a43b49221988b0`
-- Created: `2026-10-30T17:31:32.797637919Z`
-- Virtual Size: ~ 338.16 Mb  
+- Image ID: `sha256:294dc3d57a6572e50940d4ecb6bd8bf67a434433102f3ff9c4c576f7e6a09e8b`
+- Created: `2026-11-05T08:03:35.778832929Z`
+- Virtual Size: ~ 335.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -75,12 +75,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=2.6.1`
+### `dpkg` source package: `apt=2.6.2`
 
 Binary Packages:
 
-- `apt=2.6.1`
-- `libapt-pkg6.0:amd64=2.6.1`
+- `apt=2.6.2`
+- `libapt-pkg6.0:amd64=2.6.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -92,16 +92,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=2.6.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.dsc' apt_2.6.1.dsc 2933 SHA256:e258c1b9c24e1747100271db9d6e5af7127bd3ef812a69bdf63de263abfdc6fd
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.6.1.tar.xz' apt_2.6.1.tar.xz 2328508 SHA256:86b888c901fa2e78f1bf52a2aaa2f400ff82a472b94ff0ac6631939ee68fa6fd
+$ apt-get source -qq --print-uris apt=2.6.2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.dsc' apt_2.6.2.dsc 2933 SHA256:63490cc85118a0eb7a3109696311920ffa70f3f9ad718bcaf126445496049c74
+'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_2.6.2.tar.xz' apt_2.6.2.tar.xz 2329740 SHA256:12c38c9b2b8159bc1780eb17acff0adf6d6b2dff3d560f557b9ad9f60b3cc63f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/2.6.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.6.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/2.6.2/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.6.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.6.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 

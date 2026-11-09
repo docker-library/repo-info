@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b171b0b3c1547ea172916823b9b50e6e68c2c070136afe4313d19ad7cbabd961`
-- Created: `2026-10-30T17:33:18.305175861Z`
+- Image ID: `sha256:eb4cfe822bb65747b29820b89664cef1acd7e8b3b5198e3df44d9d199cffe810`
+- Created: `2026-11-05T22:55:10.629224465Z`
 - Virtual Size: ~ 4.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-10-23T08:37:04Z`
+  - `build-date=2026-11-05T06:42:56Z`
   - `com.redhat.component=ubi10-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel10`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi10/ubi`
-  - `org.opencontainers.image.created=2026-10-23T08:37:04Z`
-  - `org.opencontainers.image.revision=12b42c0df97d412ddb00ce5e581fc0c5b97a06c9`
-  - `release=1792744468`
+  - `org.opencontainers.image.created=2026-11-05T06:42:56Z`
+  - `org.opencontainers.image.revision=4b7931dd989fbaa67265208d249337871e8708a8`
+  - `release=1793860810`
   - `summary=Provides the latest release of Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=12b42c0df97d412ddb00ce5e581fc0c5b97a06c9`
+  - `vcs-ref=4b7931dd989fbaa67265208d249337871e8708a8`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -1534,12 +1534,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2026e-1.el10_2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2026e-1.el10_2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.40.2-18.0.1.el10.x86_64`
 
