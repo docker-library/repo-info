@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:549384794fcccbb45b577e57d50b998618ca6ca309f4a6d0e36a697157dd278f`
-- Created: `2026-10-29T19:52:23.080151366Z`
-- Virtual Size: ~ 593.92 Mb  
+- Image ID: `sha256:8aa062929ca24112e275e76e44684a4c8ae828ee7f78a03de841bebc67b1901c`
+- Created: `2026-11-05T20:01:14.75603498Z`
+- Virtual Size: ~ 590.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,8 +16,8 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.13+9`
-  - `JRUBY_VERSION=10.1.2.0`
-  - `JRUBY_SHA256=6dcb361bc1df554803fdd0243dc7c7a42723ac88a4b6f66830026afe82db28a8`
+  - `JRUBY_VERSION=10.1.3.0`
+  - `JRUBY_SHA256=3d76fe1fce6aa9f56fd7efb1015a9db95a0aa6f95fe9ec868f9e75d9ddc1871c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -276,13 +276,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.tar.xz' ca-certificates_20260816ubuntu0.24.04.1.tar.xz 273380 SHA512:c0db71f2f5d0fa53eb7844647e711592d3b15a3e38f7f1648d2faefb58dbbfb16094e18af45686b066ab449cc064e1b53989f494ac58756888079c92be30d3ee
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.1.dsc' ca-certificates_20260816ubuntu0.24.04.1.dsc 1876 SHA512:905a4840f0be6e46fcf353932a74eabe004d8ee21c5cbd44ac879dba550912d07a12e8d2e18174d5fb4c290d0c086ea2dfb679eb801354e6d43412d461d65d7b
-```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
@@ -1504,9 +1500,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-147.147
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.diff.gz' linux_6.8.0-147.147.diff.gz 9974355 SHA512:3b09e9c834ae525a7b1c602415b0b01566fc26018c939da720c70f84cd853e0c661c6b9ca5631e44b435afb0af749cf2870e8b563612b169fe19abd059cb6614
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.dsc' linux_6.8.0-147.147.dsc 9348 SHA512:145b21268cdc94b54629692e27738fe7b7efc72c51629ba44ce575712ad9de8238d57a05766e27f0118fc20bb87d89bc079b7856d59f85da0f7b8456492668cd
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.diff.gz' linux_6.8.0-147.147.diff.gz 9974355 SHA512:3b09e9c834ae525a7b1c602415b0b01566fc26018c939da720c70f84cd853e0c661c6b9ca5631e44b435afb0af749cf2870e8b563612b169fe19abd059cb6614
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.dsc' linux_6.8.0-147.147.dsc 9348 SHA512:145b21268cdc94b54629692e27738fe7b7efc72c51629ba44ce575712ad9de8238d57a05766e27f0118fc20bb87d89bc079b7856d59f85da0f7b8456492668cd
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
