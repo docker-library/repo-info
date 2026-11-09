@@ -78,6 +78,31 @@
 -	[`spark:4.2.1-scala2.13-java25-python3-ubuntu`](#spark421-scala213-java25-python3-ubuntu)
 -	[`spark:4.2.1-scala2.13-java25-r-ubuntu`](#spark421-scala213-java25-r-ubuntu)
 -	[`spark:4.2.1-scala2.13-java25-ubuntu`](#spark421-scala213-java25-ubuntu)
+-	[`spark:4.3.0`](#spark430)
+-	[`spark:4.3.0-java17`](#spark430-java17)
+-	[`spark:4.3.0-java17-r`](#spark430-java17-r)
+-	[`spark:4.3.0-java21-python3`](#spark430-java21-python3)
+-	[`spark:4.3.0-java21-r`](#spark430-java21-r)
+-	[`spark:4.3.0-java21-scala`](#spark430-java21-scala)
+-	[`spark:4.3.0-java25`](#spark430-java25)
+-	[`spark:4.3.0-java25-r`](#spark430-java25-r)
+-	[`spark:4.3.0-python3`](#spark430-python3)
+-	[`spark:4.3.0-r`](#spark430-r)
+-	[`spark:4.3.0-scala`](#spark430-scala)
+-	[`spark:4.3.0-scala-java17`](#spark430-scala-java17)
+-	[`spark:4.3.0-scala-java25`](#spark430-scala-java25)
+-	[`spark:4.3.0-scala2.13-java17-python3-r-ubuntu`](#spark430-scala213-java17-python3-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java17-python3-ubuntu`](#spark430-scala213-java17-python3-ubuntu)
+-	[`spark:4.3.0-scala2.13-java17-r-ubuntu`](#spark430-scala213-java17-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java17-ubuntu`](#spark430-scala213-java17-ubuntu)
+-	[`spark:4.3.0-scala2.13-java21-python3-r-ubuntu`](#spark430-scala213-java21-python3-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java21-python3-ubuntu`](#spark430-scala213-java21-python3-ubuntu)
+-	[`spark:4.3.0-scala2.13-java21-r-ubuntu`](#spark430-scala213-java21-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java21-ubuntu`](#spark430-scala213-java21-ubuntu)
+-	[`spark:4.3.0-scala2.13-java25-python3-r-ubuntu`](#spark430-scala213-java25-python3-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java25-python3-ubuntu`](#spark430-scala213-java25-python3-ubuntu)
+-	[`spark:4.3.0-scala2.13-java25-r-ubuntu`](#spark430-scala213-java25-r-ubuntu)
+-	[`spark:4.3.0-scala2.13-java25-ubuntu`](#spark430-scala213-java25-ubuntu)
 -	[`spark:latest`](#sparklatest)
 -	[`spark:python3`](#sparkpython3)
 -	[`spark:python3-java17`](#sparkpython3-java17)
@@ -22680,6 +22705,106 @@ $ docker pull spark@sha256:71e53d0222ed7b339b207dd7477c37b0b7fc191b5200fa71aaea9
 		Last Modified: Mon, 02 Nov 2026 23:53:54 GMT  
 		Size: 23.4 KB (23407 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `spark:4.3.0`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java17`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java17-r`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java21-python3`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java21-r`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java21-scala`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java25`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-java25-r`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-python3`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-r`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala-java17`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala-java25`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java17-python3-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java17-python3-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java17-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java17-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java21-python3-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java21-python3-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java21-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java21-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java25-python3-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java25-python3-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java25-r-ubuntu`
+
+**does not exist** (yet?)
+
+## `spark:4.3.0-scala2.13-java25-ubuntu`
+
+**does not exist** (yet?)
 
 ## `spark:latest`
 
