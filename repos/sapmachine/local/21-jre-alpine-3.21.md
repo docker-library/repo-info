@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24f47ad386f1d8825633fe5f0fc73d27d5ddbc3f5a30dfc2bd43d10fe5ff4501`
-- Created: `2026-10-26T17:52:51.920238073Z`
-- Virtual Size: ~ 190.32 Mb  
+- Image ID: `sha256:adf3190f9eecbcd24402773ab9a6222fc5e8310f5af28b93e54e9f75318c20b8`
+- Created: `2026-11-05T19:36:50.378915775Z`
+- Virtual Size: ~ 190.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
@@ -68,16 +68,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.9-r0 description:
+alpine-release-3.21.10-r0 description:
 Alpine release data
 
-alpine-release-3.21.9-r0 webpage:
+alpine-release-3.21.10-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.9-r0 installed size:
-346 B
+alpine-release-3.21.10-r0 installed size:
+348 B
 
-alpine-release-3.21.9-r0 license:
+alpine-release-3.21.10-r0 license:
 MIT
 
 ```
@@ -102,16 +102,16 @@ LGPL-2.1-or-later
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r3 description:
+apk-tools-2.14.13-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r3 webpage:
+apk-tools-2.14.13-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r3 installed size:
+apk-tools-2.14.13-r0 installed size:
 247 KiB
 
-apk-tools-2.14.6-r3 license:
+apk-tools-2.14.13-r0 license:
 GPL-2.0-only
 
 ```
@@ -289,16 +289,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```

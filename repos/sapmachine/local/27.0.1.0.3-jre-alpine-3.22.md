@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f2fadb5ce87adbb315a1bae31c0f84addb076bc7f449f6347c742d5b9006b7c`
-- Created: `2026-10-26T17:50:08.05638135Z`
+- Image ID: `sha256:149eecba59bbd42a1e23f80f0739ae4911752b884c976d73940c38d7f135574f`
+- Created: `2026-11-05T19:35:49.997681697Z`
 - Virtual Size: ~ 179.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -68,16 +68,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.7-r0 description:
+alpine-release-3.22.8-r0 description:
 Alpine release data
 
-alpine-release-3.22.7-r0 webpage:
+alpine-release-3.22.8-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.7-r0 installed size:
+alpine-release-3.22.8-r0 installed size:
 343 B
 
-alpine-release-3.22.7-r0 license:
+alpine-release-3.22.8-r0 license:
 MIT
 
 ```
@@ -102,16 +102,16 @@ LGPL-2.1-or-later
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.12-r0 description:
+apk-tools-2.14.13-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.12-r0 webpage:
+apk-tools-2.14.13-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.12-r0 installed size:
+apk-tools-2.14.13-r0 installed size:
 68 KiB
 
-apk-tools-2.14.12-r0 license:
+apk-tools-2.14.13-r0 license:
 GPL-2.0-only
 
 ```
@@ -238,16 +238,16 @@ GPL-2.0-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.12-r0 description:
+libapk2-2.14.13-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.12-r0 webpage:
+libapk2-2.14.13-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.12-r0 installed size:
+libapk2-2.14.13-r0 installed size:
 179 KiB
 
-libapk2-2.14.12-r0 license:
+libapk2-2.14.13-r0 license:
 GPL-2.0-only
 
 ```
@@ -306,16 +306,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```
