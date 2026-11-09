@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:743c69f16b8bc3c3a5cd3a2ae77864236784f4f9c0a72f00b523496e6aee2acb`
-- Created: `2026-10-21T21:10:27.710507551Z`
-- Virtual Size: ~ 107.78 Mb  
+- Image ID: `sha256:6581082ec681e94e96cf6995c328fff6290dfb270331d2dbe97683340f8ebb5f`
+- Created: `2026-11-05T19:00:39.05330085Z`
+- Virtual Size: ~ 107.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.7-r0 description:
+alpine-release-3.23.8-r0 description:
 Alpine release data
 
-alpine-release-3.23.7-r0 webpage:
+alpine-release-3.23.8-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.7-r0 installed size:
+alpine-release-3.23.8-r0 installed size:
 343 B
 
-alpine-release-3.23.7-r0 license:
+alpine-release-3.23.8-r0 license:
 MIT
 
 ```
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -146,16 +146,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r0 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r0 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r0 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r0 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -248,16 +248,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -282,16 +282,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
