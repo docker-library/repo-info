@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a918d660677ecc73bc17abe5ec17cd134759eed9539eb805c52f479f093a27df`
-- Created: `2026-11-03T22:23:35.826762892Z`
+- Image ID: `sha256:25148f48d9ba5ac8ac9a6e917bb4e0b5977af15cd18a311f17f161363ff6a4fd`
+- Created: `2026-11-05T22:53:48.190457798Z`
 - Virtual Size: ~ 865.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-02T18:00:47Z`
+  - `build-date=2026-11-05T07:34:13Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-11-02T18:00:47Z`
-  - `org.opencontainers.image.revision=f738e88b7bb7caf108d5a65ce6eaa0f284c32f73`
-  - `release=1793642335`
+  - `org.opencontainers.image.created=2026-11-05T07:34:13Z`
+  - `org.opencontainers.image.revision=b9bbdf653af86c0fd2544624603a25fdbec1e3db`
+  - `release=1793863917`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=f738e88b7bb7caf108d5a65ce6eaa0f284c32f73`
+  - `vcs-ref=b9bbdf653af86c0fd2544624603a25fdbec1e3db`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -183,12 +183,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-8.12.1-4.el10_2.7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.28-30.el10_2.x86_64`
 
@@ -641,12 +636,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcurl-8.12.1-4.el10_2.7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/curl-8.12.1-4.el10_2.7.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libdnf-0.73.1-15.0.1.el10_2.x86_64`
 
