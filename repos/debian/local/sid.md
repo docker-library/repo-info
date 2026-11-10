@@ -58,19 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.3.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.6.dsc' apt_3.3.6.dsc 3159 SHA256:6ad58e95a3704a6d204ff43290544f122ee7bb47abe3731c0b1c7aeb4193f891
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.6.tar.xz' apt_3.3.6.tar.xz 2568388 SHA256:993c1c140ced0c760a5ea0d40c7a6fd9efcc0c0f32cf0fd90aaf933ddb067612
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.3.6/
 
-- https://sources.debian.net/src/apt/3.3.6/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
 
@@ -1481,20 +1475,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `Unlicense`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=262.1-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1-1.dsc' systemd_262.1-1.dsc 8887 SHA256:57060371066771ba54178f23a1672ee3462248a638c404887b35c739161638b1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1.orig.tar.gz' systemd_262.1.orig.tar.gz 19088198 SHA256:100fc873b848b9b0297d8a705e8e2ed326256c8483d9960ee1ffe264c8a5c3e3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.1-1.debian.tar.xz' systemd_262.1-1.debian.tar.xz 190124 SHA256:61090fa2f459c8245c27184fb132b01ce5df20182d3a85d07caf6fa99c0bac62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/262.1-1/
 
-- https://sources.debian.net/src/systemd/262.1-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/262.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/262.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 
@@ -1510,20 +1497,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.18-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18-1.dsc' sysvinit_3.18-1.dsc 2379 SHA256:27d9f67e77d4edba5f7c91f44f91f9a509f74af3fdf543aded0e49a9d3dd48c0
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18.orig.tar.gz' sysvinit_3.18.orig.tar.gz 512421 SHA256:be9fdd55f2c1d1469a1f9d69e9d6abf47a2c0003df987b72605c653e92e5bb14
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18-1.debian.tar.xz' sysvinit_3.18-1.debian.tar.xz 123048 SHA256:f393e8cc3826b52e0cd0637ff31ac332b97f660375389356491ab5612d9ed5f2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.18-1/
 
-- https://sources.debian.net/src/sysvinit/3.18-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-7`
 
