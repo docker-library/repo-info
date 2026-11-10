@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d8c6455427ed91ac976ec6e2e7410c9bf58a3173ba91b5942c654d98b59131a`
-- Created: `2026-11-05T19:11:22.935191476Z`
+- Image ID: `sha256:e57a3713b666c091e69aa2cc1bc62e149350b52a105fa969b151aedd5fa85c72`
+- Created: `2026-11-10T00:33:50.463108919Z`
 - Virtual Size: ~ 32.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
 - Labels:
   - `com.teamspeak.description=TeamSpeak 3 Server on Alpine Linux`
   - `com.teamspeak.title=TeamSpeak 3 Server`
-  - `com.teamspeak.version=3.13.8`
+  - `com.teamspeak.version=3.13.9`
 
 ## `apk` (`.apk`-based packages)
 
