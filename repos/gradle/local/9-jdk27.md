@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a6a2bc768e64e09743a24092fc3aacba7c16374e255cfb4da0bfc30632217a83`
-- Created: `2026-10-27T00:20:08.129244608Z`
-- Virtual Size: ~ 806.71 Mb  
+- Image ID: `sha256:5968ca633e7038393b3f6586941d07df9dc208b4d44f762955b0f8a0cef24278`
+- Created: `2026-11-10T00:09:39.507519903Z`
+- Virtual Size: ~ 806.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-27+35`
+  - `JAVA_VERSION=jdk-27.0.1.0`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.8.2`
 - Labels:
@@ -192,13 +192,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.tar.xz' base-files_14ubuntu6.2.tar.xz 97908 SHA512:d067fc03743277d6202c6750dc8279cc84c084f2afa29075b6d14c5fedb0301518a3a7bfd019254c723fb6f3a6fd32653431de28b2223d52c65ee6d4dde53514
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.2.dsc' base-files_14ubuntu6.2.dsc 1735 SHA512:f3d82eae834c7c02bc01fd2636944fbab6349e1921dd1effcefccdf046c40d9eb58ceced24fe599b9c5673b28100dbd19fe37558192994017b3fc33bd2d5e52d
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -337,11 +333,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-6ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6ubuntu0.1.dsc' bzip2_1.0.8-6ubuntu0.1.dsc 1691 SHA512:5e52a7b104a5c4267807bcf811bb94862d25faed66398bb03190ca09be6210ae5475bce15c5fa585e20503597aad0bfd6d3f5150456eb8e2dd52bd78bcc5e2ac
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.26.04.1`
+- `ca-certificates=20260816ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -352,9 +348,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.tar.xz' ca-certificates_20260816ubuntu0.26.04.1.tar.xz 273980 SHA512:1ee2eea0ffc180bc7a42385b37d9c77845cd173d3f3b4a91023a5c82604b995f66af70a113d169d8d94ecebc2a7723d9cd42883bdc716d111b193b90af61a9a9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.1.dsc' ca-certificates_20260816ubuntu0.26.04.1.dsc 1876 SHA512:4d25cab4faffb760e60dd1dfbe56b1d2471f56a6580a22df33d713593094bc1cb9ac4fd24a9afa41a95f0b628fd64433dd81a41cdbbedc6555afe41458bf23a2
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.tar.xz' ca-certificates_20260816ubuntu0.26.04.2.tar.xz 274288 SHA512:1bebf27387b9f40d41ee9bf5fedee1456f737f6159bdd945cd597e4f8b6b4f694d27a742d353daa07269f57b25e5a5db17a889f57e4b23f899d56d880b000b08
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.dsc' ca-certificates_20260816ubuntu0.26.04.2.dsc 1876 SHA512:c8b1031dd352c77380e9a10f05d54475e50d6fe854b817136e243f9e229c35a9377b7d3f3c9ec1d3996aa317070c608390d5bad9e1c12c52d81865137d7c11f5
 ```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`

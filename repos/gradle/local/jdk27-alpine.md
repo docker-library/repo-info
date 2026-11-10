@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f88231fb48daeb41338e59dada7317c4adf802e857ec862b31c07e3b3e4b005`
-- Created: `2026-10-21T23:30:13.077482889Z`
-- Virtual Size: ~ 597.53 Mb  
+- Image ID: `sha256:66040e673bedfbb13b89808417b9137e957847d99881e3a198a4a36459a60e29`
+- Created: `2026-11-10T00:08:41.110889177Z`
+- Virtual Size: ~ 597.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-27+35`
+  - `JAVA_VERSION=jdk-27.0.1.0`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.8.2`
 
@@ -92,16 +92,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -109,16 +109,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -211,16 +211,16 @@ GPL-2.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r1 description:
+brotli-libs-1.2.1-r0 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r1 webpage:
+brotli-libs-1.2.1-r0 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r1 installed size:
+brotli-libs-1.2.1-r0 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r1 license:
+brotli-libs-1.2.1-r0 license:
 MIT
 
 ```
@@ -381,16 +381,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.22.0-r0 description:
+curl-8.23.0-r0 description:
 URL retrieval utility and library
 
-curl-8.22.0-r0 webpage:
+curl-8.23.0-r0 webpage:
 https://curl.se/
 
-curl-8.22.0-r0 installed size:
+curl-8.23.0-r0 installed size:
 278 KiB
 
-curl-8.22.0-r0 license:
+curl-8.23.0-r0 license:
 curl
 
 ```
@@ -551,16 +551,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -619,16 +619,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.22.0-r0 description:
+libcurl-8.23.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.22.0-r0 webpage:
+libcurl-8.23.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.22.0-r0 installed size:
-725 KiB
+libcurl-8.23.0-r0 installed size:
+733 KiB
 
-libcurl-8.22.0-r0 license:
+libcurl-8.23.0-r0 license:
 curl
 
 ```
@@ -636,16 +636,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```
@@ -1214,16 +1214,16 @@ MIT
 ### `apk` package: `py3-certifi`
 
 ```console
-py3-certifi-2026.2.25-r1 description:
+py3-certifi-2026.10.23-r0 description:
 Python3 package for providing Mozilla's CA Bundle
 
-py3-certifi-2026.2.25-r1 webpage:
+py3-certifi-2026.10.23-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-2026.2.25-r1 installed size:
-8150 B
+py3-certifi-2026.10.23-r0 installed size:
+8838 B
 
-py3-certifi-2026.2.25-r1 license:
+py3-certifi-2026.10.23-r0 license:
 MPL-2.0
 
 ```
@@ -1231,16 +1231,16 @@ MPL-2.0
 ### `apk` package: `py3-certifi-pyc`
 
 ```console
-py3-certifi-pyc-2026.2.25-r1 description:
+py3-certifi-pyc-2026.10.23-r0 description:
 Precompiled Python bytecode for py3-certifi
 
-py3-certifi-pyc-2026.2.25-r1 webpage:
+py3-certifi-pyc-2026.10.23-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-pyc-2026.2.25-r1 installed size:
-3811 B
+py3-certifi-pyc-2026.10.23-r0 installed size:
+6090 B
 
-py3-certifi-pyc-2026.2.25-r1 license:
+py3-certifi-pyc-2026.10.23-r0 license:
 MPL-2.0
 
 ```
@@ -1520,16 +1520,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.8-r0 description:
+pyc-3.14.10-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.8-r0 webpage:
+pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-pyc-3.14.8-r0 installed size:
+pyc-3.14.10-r1 installed size:
 0 B
 
-pyc-3.14.8-r0 license:
+pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1537,16 +1537,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.8-r0 description:
+python3-3.14.10-r1 description:
 High-level scripting language
 
-python3-3.14.8-r0 webpage:
+python3-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-3.14.8-r0 installed size:
+python3-3.14.10-r1 installed size:
 22 MiB
 
-python3-3.14.8-r0 license:
+python3-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1554,16 +1554,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.8-r0 description:
+python3-pyc-3.14.10-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.8-r0 webpage:
+python3-pyc-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.8-r0 installed size:
+python3-pyc-3.14.10-r1 installed size:
 0 B
 
-python3-pyc-3.14.8-r0 license:
+python3-pyc-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1571,16 +1571,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.8-r0 description:
+python3-pycache-pyc0-3.14.10-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.8-r0 webpage:
+python3-pycache-pyc0-3.14.10-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.8-r0 installed size:
+python3-pycache-pyc0-3.14.10-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.8-r0 license:
+python3-pycache-pyc0-3.14.10-r1 license:
 PSF-2.0
 
 ```
@@ -1741,16 +1741,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026e-r0 description:
+tzdata-2026f-r0 description:
 Timezone data
 
-tzdata-2026e-r0 webpage:
+tzdata-2026f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026e-r0 installed size:
+tzdata-2026f-r0 installed size:
 441 KiB
 
-tzdata-2026e-r0 license:
+tzdata-2026f-r0 license:
 Public-Domain
 
 ```

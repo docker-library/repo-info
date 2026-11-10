@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eddebbbf21b7d96b85ef2b302243b1307680e7d39741ba43bb6b2bbbfb6bf719`
-- Created: `2026-10-29T19:49:53.709317365Z`
-- Virtual Size: ~ 858.73 Mb  
+- Image ID: `sha256:839bdfd487a21898bfea8145aa0ec5ccb2786098f8afd72b75fff34b4a7d35e1`
+- Created: `2026-11-10T00:09:32.901796084Z`
+- Virtual Size: ~ 858.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -94,16 +94,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.3-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.24.3-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.3-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.24.3-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -111,16 +111,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.8-r0 description:
+apk-tools-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.8-r0 webpage:
+apk-tools-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.8-r0 installed size:
+apk-tools-3.0.9-r0 installed size:
 112 KiB
 
-apk-tools-3.0.8-r0 license:
+apk-tools-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -553,16 +553,16 @@ MIT
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.8-r0 description:
+libapk-3.0.9-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.8-r0 webpage:
+libapk-3.0.9-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.8-r0 installed size:
-270 KiB
+libapk-3.0.9-r0 installed size:
+274 KiB
 
-libapk-3.0.8-r0 license:
+libapk-3.0.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -638,16 +638,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.9.0-r0 description:
+libexpat-2.10.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.9.0-r0 webpage:
+libexpat-2.10.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.9.0-r0 installed size:
-137 KiB
+libexpat-2.10.0-r0 installed size:
+141 KiB
 
-libexpat-2.9.0-r0 license:
+libexpat-2.10.0-r0 license:
 MIT
 
 ```
@@ -1216,16 +1216,16 @@ MIT
 ### `apk` package: `py3-certifi`
 
 ```console
-py3-certifi-2026.2.25-r1 description:
+py3-certifi-2026.10.23-r0 description:
 Python3 package for providing Mozilla's CA Bundle
 
-py3-certifi-2026.2.25-r1 webpage:
+py3-certifi-2026.10.23-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-2026.2.25-r1 installed size:
-8150 B
+py3-certifi-2026.10.23-r0 installed size:
+8838 B
 
-py3-certifi-2026.2.25-r1 license:
+py3-certifi-2026.10.23-r0 license:
 MPL-2.0
 
 ```
@@ -1233,16 +1233,16 @@ MPL-2.0
 ### `apk` package: `py3-certifi-pyc`
 
 ```console
-py3-certifi-pyc-2026.2.25-r1 description:
+py3-certifi-pyc-2026.10.23-r0 description:
 Precompiled Python bytecode for py3-certifi
 
-py3-certifi-pyc-2026.2.25-r1 webpage:
+py3-certifi-pyc-2026.10.23-r0 webpage:
 https://pypi.org/project/certifi
 
-py3-certifi-pyc-2026.2.25-r1 installed size:
-3811 B
+py3-certifi-pyc-2026.10.23-r0 installed size:
+6090 B
 
-py3-certifi-pyc-2026.2.25-r1 license:
+py3-certifi-pyc-2026.10.23-r0 license:
 MPL-2.0
 
 ```
@@ -1743,16 +1743,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026e-r0 description:
+tzdata-2026f-r0 description:
 Timezone data
 
-tzdata-2026e-r0 webpage:
+tzdata-2026f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026e-r0 installed size:
+tzdata-2026f-r0 installed size:
 441 KiB
 
-tzdata-2026e-r0 license:
+tzdata-2026f-r0 license:
 Public-Domain
 
 ```
