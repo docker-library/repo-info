@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93d9aad5c59b51ed5e74512b7926a54a3c600084751ecd5999b9ad1dd9c57cce`
-- Created: `2026-11-04T23:15:50.323702018Z`
+- Image ID: `sha256:59f5c65730dbfb2d677bc6025d000d468f75c31a1eff256a90b56e5f581c843e`
+- Created: `2026-11-09T23:54:24.716011906Z`
 - Virtual Size: ~ 392.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -220,11 +220,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5ubuntu0.1.dsc' bzip2_1.0.8-5ubuntu0.1.dsc 1691 SHA512:003ad214b6fcded91fab760be534599980a4988c01fdbc1eda2bb5feda3ef9632dfe2db31c7ed32b7cd653be89753b9f8fd91e4164a27cabf57330808ded163f
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.22.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.22.04.1`
+- `ca-certificates=20260816ubuntu0.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -232,9 +232,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.2.tar.xz' ca-certificates_20260816ubuntu0.22.04.2.tar.xz 273628 SHA512:978407ed71d7ff249bc226d05eee72f4b26438491087b848955b04104dfabf5be7cc0ab2e410b83dee4931ae15f58f776cb04508da59a38057ba6e8416533b6f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.22.04.2.dsc' ca-certificates_20260816ubuntu0.22.04.2.dsc 1878 SHA512:70ab4fdc4ec79a1aee0a93a238efce9c0e5e4ea11505b95ac402b36bb1c10036f1b97b333e8cf33006ad9058cac1fa466ec28850cd374a69471664800e192bb4
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
