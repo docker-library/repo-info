@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd7f6a9f5bcf4e33552b45404a27839eadc0b60db1ebf622212b22e0e21772ff`
-- Created: `2026-11-03T23:08:29.696883573Z`
-- Virtual Size: ~ 395.13 Mb  
+- Image ID: `sha256:366508d5ee7b86db43ff921ffc9b86fbc69af4cce060897cc3692beed6bbccd1`
+- Created: `2026-11-09T23:43:53.667461024Z`
+- Virtual Size: ~ 395.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u504-b01`
+  - `JAVA_VERSION=jdk8u512-b09`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -240,11 +240,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-6ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6ubuntu0.1.dsc' bzip2_1.0.8-6ubuntu0.1.dsc 1691 SHA512:5e52a7b104a5c4267807bcf811bb94862d25faed66398bb03190ca09be6210ae5475bce15c5fa585e20503597aad0bfd6d3f5150456eb8e2dd52bd78bcc5e2ac
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.26.04.1`
+- `ca-certificates=20260816ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -252,9 +252,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.tar.xz' ca-certificates_20260816ubuntu0.26.04.2.tar.xz 274288 SHA512:1bebf27387b9f40d41ee9bf5fedee1456f737f6159bdd945cd597e4f8b6b4f694d27a742d353daa07269f57b25e5a5db17a889f57e4b23f899d56d880b000b08
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.dsc' ca-certificates_20260816ubuntu0.26.04.2.dsc 1876 SHA512:c8b1031dd352c77380e9a10f05d54475e50d6fe854b817136e243f9e229c35a9377b7d3f3c9ec1d3996aa317070c608390d5bad9e1c12c52d81865137d7c11f5
+```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 
@@ -2049,15 +2053,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
-```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
