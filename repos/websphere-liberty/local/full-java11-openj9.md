@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:976647d663dff3ec57f35a9357524d27f45561dc7f27249b53768fb907d604c4`
-- Created: `2026-11-05T20:40:07.830988083Z`
-- Virtual Size: ~ 871.17 Mb  
+- Image ID: `sha256:8391592b87e695a296dcc02ceb79a87ead23db3232c78efe680f9343238911e5`
+- Created: `2026-11-10T00:24:58.092658022Z`
+- Virtual Size: ~ 866.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=11.0.32.15`
+  - `JAVA_VERSION=11.0.33.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `LOG_DIR=/liberty/logs`
@@ -232,11 +232,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.dsc' bzip2_1.0.8-5.1ubuntu0.1.dsc 1699 SHA512:57315fd236033f29de1487130d86e61d373bbc33ea51d431b782bd0f5113b9ccf62f235fd284c13ba371d28954ed3edceea77ceb7c813931e817049ad25c5a34
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.24.04.1`
+- `ca-certificates=20260816ubuntu0.24.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -244,9 +244,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.tar.xz' ca-certificates_20260816ubuntu0.24.04.2.tar.xz 273500 SHA512:b2214ad6c7590dcd94f0edc9c2ec70ec0101f339d5197bbf9909bb3f47566b7dfcb25c7bbbf741fcb4b73019150db35ba351b0694376cf994a3e37b0395c390c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.dsc' ca-certificates_20260816ubuntu0.24.04.2.dsc 1876 SHA512:d6691f6b5418333f951eb6ccb765277eef0b6cdffbea73db10fb54d29d7914f03b9298fc3a9dcddf6463168dee3c08d4163c3b158067d7a2961dd16e46969a5e
+```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
