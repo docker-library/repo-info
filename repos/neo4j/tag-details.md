@@ -6024,7 +6024,7 @@ $ docker pull neo4j@sha256:ea8d4ba949a804711f339b2336f91ff4be8c592cbafa975a2ae7f
 ## `neo4j:4.4`
 
 ```console
-$ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5bd0a346a596b
+$ docker pull neo4j@sha256:d28e6b1df0831db41b38f1d13191ebdd0349d98e224f453b600161a6c96670b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6037,45 +6037,45 @@ $ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5b
 ### `neo4j:4.4` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:95bd0608c6287b4c871aedcda74f3f061aeb27c99a0b51d5f3035548254debb6
+$ docker pull neo4j@sha256:2d93c88a9384f4f733e54385e5cc3c66ed9bca99b35b1a82f2b3ec099076e1f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328832625 bytes)**  
+-	Total Size: **328.8 MB (328792892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:628d65137a509e5e34fb849e679bcc9910f93ed1c95314887191cceec8734056`
+-	Image ID: `sha256:96ca1b6de4edfdafb72fc426a5761526d1203c5275a31c24bda794ffce6676f7`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 CMD ["neo4j"]
 ```
 
@@ -6084,21 +6084,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5cd737d32f058417c656758dcbf91351771b4aa85d9d7f3dbc6bf9c0213b34`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 145.9 MB (145864300 bytes)  
+	-	`sha256:199b63ed6c594417ba6663b2480e3a22815f6cd65535db77b84e680de74f535f`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98bd3f1f164730250cb08d58f8722579059975cc22b4b633d1f2afeac0aada23`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 97.4 KB (97373 bytes)  
+	-	`sha256:7e4e3e1ba2a0a41d063e22e5b8e516f76fdd9be12f081c25477719b3657d459d`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51b0ae22ad346421f070aee356af18afc9ebdfa28d69877bb33f0097d9cd5def`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 10.1 KB (10062 bytes)  
+	-	`sha256:a95d553173ad791d37df0477132f71ab57cabb6ee777c759b472c9a2e739c506`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 10.1 KB (10061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bc46e0c8a1ea67efff792f05dd846930047950b7e14db7328958786bd05c2e6`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 153.0 MB (153004726 bytes)  
+	-	`sha256:4a60fe9a944698b172435dbb46aa4e49f1369651b050d02845c3940f45d81162`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 153.0 MB (153004885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6108,69 +6108,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:b9dc8adb53b00da249be4bcac9fc4b2cae771c0c96b89970418ca67b89162eb7
+$ docker pull neo4j@sha256:5c9da5949bfaf06d27d27c90d04bcd82b9923feddaac644b430d4aedfdc59e62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4323444 bytes)**  
+-	Total Size: **4.3 MB (4323431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b009f8cdbb50f78ad1228a832f9c4ac5733459421d084b5f65427aaaac0ab17a`
+-	Image ID: `sha256:40ff40692cb91e582b8a30f2843c814a94b920520f793ea8ac33979feefc9e60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5e56592a8156db84caf7dadabd9ba3e93294842a1cf222adb79c4e9c53becf80`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 4.3 MB (4301852 bytes)  
+	-	`sha256:ca5e8083d86d36ae9ff3b19a3f46079cf3bd5ec48b11581311f74faf37143453`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 4.3 MB (4301846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdca952aa79768445af1ed6e62a12e9f8e4b1379349a16f9197202fef515803d`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 21.6 KB (21592 bytes)  
+	-	`sha256:e2bd6ad997efb2d9bbc94c789959b72560e15d3f1960d01f44bd164955b9068b`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 21.6 KB (21585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:6aa2532b1f317f5e7b3a002bd1963ec64ffafce16a9954ed5e1d2b460fce8cbe
+$ docker pull neo4j@sha256:cbbe4f18c62ea517d46b048485521bf89e96fc14dedb23e1ecb9a675c71e1b12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.0 MB (324974262 bytes)**  
+-	Total Size: **324.9 MB (324921205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f1ac4cfb1c0f17ef159bfc19c1d9ca5744a355ae9cd2d5a9e39dd707988f2`
+-	Image ID: `sha256:dda03daba409e4fab813d65b844146f31e8a450b41a71c1983d4f216a5cb4d91`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 CMD ["neo4j"]
 ```
 
@@ -6179,21 +6179,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07d8fb339d43fc4ea8c4a4b76507c1883d010ee3861e74ff7990461cc02f7792`  
-		Last Modified: Thu, 05 Nov 2026 07:45:17 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:81cb2cc22250b4ac7380053f6409026c723137eb3913bcb1071ac11b4ee3f94d`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 142.6 MB (142620966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0b7ec39c5a470e560380c93ef4083b510b16321d46ec8a3ff749e1aecf4a82a`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 97.4 KB (97384 bytes)  
+	-	`sha256:a8cc6625f2e84f8ff3bf266cf14c845e750503615c9d947ac3d3556bc17d0906`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea750a6b8a91285886751ae9e718fb77951166e6402f699550683e0a853f5b1`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 10.1 KB (10061 bytes)  
+	-	`sha256:c488653b7c9d6b1930cec5a30e229e93a6f503603994dfaf093a0d30bec407e2`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 10.1 KB (10064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a77740db72027bf853da2e324a5032b9ddd95dc14244a666e6faf77a8892741`  
-		Last Modified: Thu, 05 Nov 2026 07:45:18 GMT  
-		Size: 152.1 MB (152076152 bytes)  
+	-	`sha256:5506804e958b6156f919307ca637f74bc8928cece5bcd3ee9a6bc469c39a03b9`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 152.1 MB (152075980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6203,31 +6203,31 @@ CMD ["neo4j"]
 ### `neo4j:4.4` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:3b16d2c4c0eb2462760fd9527f359026ab9a6eb8548845f38a3e6c743acb5a1b
+$ docker pull neo4j@sha256:d5619309b8273316476d16b1095b338f33f5aa10db90852e885c1e0c63509845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4318631 bytes)**  
+-	Total Size: **4.3 MB (4318617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdb5d6d74e73b134895e954d0232f732947535f3bdbab1d0d58f2c4dcd44b3ec`
+-	Image ID: `sha256:6a9f28728b7765e93bebe228dce8802bda6e270132d933683f56876f9ef0d292`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:277545b7423d5ffc94208da61a46ea5553102c2d45adcc8860f380d85914dd60`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 4.3 MB (4296893 bytes)  
+	-	`sha256:aa97ec55ca25cf0fb5369668a78c3da064bb0ad71feef59a4d7971cc51cec47c`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 4.3 MB (4296887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d063daefbaba248daa849217c5bcd2ee38e52aa06493190f59408ab5f85a38d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 21.7 KB (21738 bytes)  
+	-	`sha256:2887a0520434a1066f1b27482c6bbb52299307163ba2b35cca37e80295672102`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 21.7 KB (21730 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:4.4-community`
 
 ```console
-$ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5bd0a346a596b
+$ docker pull neo4j@sha256:d28e6b1df0831db41b38f1d13191ebdd0349d98e224f453b600161a6c96670b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6240,45 +6240,45 @@ $ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5b
 ### `neo4j:4.4-community` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:95bd0608c6287b4c871aedcda74f3f061aeb27c99a0b51d5f3035548254debb6
+$ docker pull neo4j@sha256:2d93c88a9384f4f733e54385e5cc3c66ed9bca99b35b1a82f2b3ec099076e1f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328832625 bytes)**  
+-	Total Size: **328.8 MB (328792892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:628d65137a509e5e34fb849e679bcc9910f93ed1c95314887191cceec8734056`
+-	Image ID: `sha256:96ca1b6de4edfdafb72fc426a5761526d1203c5275a31c24bda794ffce6676f7`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 CMD ["neo4j"]
 ```
 
@@ -6287,21 +6287,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5cd737d32f058417c656758dcbf91351771b4aa85d9d7f3dbc6bf9c0213b34`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 145.9 MB (145864300 bytes)  
+	-	`sha256:199b63ed6c594417ba6663b2480e3a22815f6cd65535db77b84e680de74f535f`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98bd3f1f164730250cb08d58f8722579059975cc22b4b633d1f2afeac0aada23`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 97.4 KB (97373 bytes)  
+	-	`sha256:7e4e3e1ba2a0a41d063e22e5b8e516f76fdd9be12f081c25477719b3657d459d`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51b0ae22ad346421f070aee356af18afc9ebdfa28d69877bb33f0097d9cd5def`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 10.1 KB (10062 bytes)  
+	-	`sha256:a95d553173ad791d37df0477132f71ab57cabb6ee777c759b472c9a2e739c506`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 10.1 KB (10061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bc46e0c8a1ea67efff792f05dd846930047950b7e14db7328958786bd05c2e6`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 153.0 MB (153004726 bytes)  
+	-	`sha256:4a60fe9a944698b172435dbb46aa4e49f1369651b050d02845c3940f45d81162`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 153.0 MB (153004885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6311,69 +6311,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4-community` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:b9dc8adb53b00da249be4bcac9fc4b2cae771c0c96b89970418ca67b89162eb7
+$ docker pull neo4j@sha256:5c9da5949bfaf06d27d27c90d04bcd82b9923feddaac644b430d4aedfdc59e62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4323444 bytes)**  
+-	Total Size: **4.3 MB (4323431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b009f8cdbb50f78ad1228a832f9c4ac5733459421d084b5f65427aaaac0ab17a`
+-	Image ID: `sha256:40ff40692cb91e582b8a30f2843c814a94b920520f793ea8ac33979feefc9e60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5e56592a8156db84caf7dadabd9ba3e93294842a1cf222adb79c4e9c53becf80`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 4.3 MB (4301852 bytes)  
+	-	`sha256:ca5e8083d86d36ae9ff3b19a3f46079cf3bd5ec48b11581311f74faf37143453`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 4.3 MB (4301846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdca952aa79768445af1ed6e62a12e9f8e4b1379349a16f9197202fef515803d`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 21.6 KB (21592 bytes)  
+	-	`sha256:e2bd6ad997efb2d9bbc94c789959b72560e15d3f1960d01f44bd164955b9068b`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 21.6 KB (21585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4-community` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:6aa2532b1f317f5e7b3a002bd1963ec64ffafce16a9954ed5e1d2b460fce8cbe
+$ docker pull neo4j@sha256:cbbe4f18c62ea517d46b048485521bf89e96fc14dedb23e1ecb9a675c71e1b12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.0 MB (324974262 bytes)**  
+-	Total Size: **324.9 MB (324921205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f1ac4cfb1c0f17ef159bfc19c1d9ca5744a355ae9cd2d5a9e39dd707988f2`
+-	Image ID: `sha256:dda03daba409e4fab813d65b844146f31e8a450b41a71c1983d4f216a5cb4d91`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 CMD ["neo4j"]
 ```
 
@@ -6382,21 +6382,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07d8fb339d43fc4ea8c4a4b76507c1883d010ee3861e74ff7990461cc02f7792`  
-		Last Modified: Thu, 05 Nov 2026 07:45:17 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:81cb2cc22250b4ac7380053f6409026c723137eb3913bcb1071ac11b4ee3f94d`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 142.6 MB (142620966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0b7ec39c5a470e560380c93ef4083b510b16321d46ec8a3ff749e1aecf4a82a`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 97.4 KB (97384 bytes)  
+	-	`sha256:a8cc6625f2e84f8ff3bf266cf14c845e750503615c9d947ac3d3556bc17d0906`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea750a6b8a91285886751ae9e718fb77951166e6402f699550683e0a853f5b1`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 10.1 KB (10061 bytes)  
+	-	`sha256:c488653b7c9d6b1930cec5a30e229e93a6f503603994dfaf093a0d30bec407e2`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 10.1 KB (10064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a77740db72027bf853da2e324a5032b9ddd95dc14244a666e6faf77a8892741`  
-		Last Modified: Thu, 05 Nov 2026 07:45:18 GMT  
-		Size: 152.1 MB (152076152 bytes)  
+	-	`sha256:5506804e958b6156f919307ca637f74bc8928cece5bcd3ee9a6bc469c39a03b9`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 152.1 MB (152075980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6406,31 +6406,31 @@ CMD ["neo4j"]
 ### `neo4j:4.4-community` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:3b16d2c4c0eb2462760fd9527f359026ab9a6eb8548845f38a3e6c743acb5a1b
+$ docker pull neo4j@sha256:d5619309b8273316476d16b1095b338f33f5aa10db90852e885c1e0c63509845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4318631 bytes)**  
+-	Total Size: **4.3 MB (4318617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdb5d6d74e73b134895e954d0232f732947535f3bdbab1d0d58f2c4dcd44b3ec`
+-	Image ID: `sha256:6a9f28728b7765e93bebe228dce8802bda6e270132d933683f56876f9ef0d292`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:277545b7423d5ffc94208da61a46ea5553102c2d45adcc8860f380d85914dd60`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 4.3 MB (4296893 bytes)  
+	-	`sha256:aa97ec55ca25cf0fb5369668a78c3da064bb0ad71feef59a4d7971cc51cec47c`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 4.3 MB (4296887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d063daefbaba248daa849217c5bcd2ee38e52aa06493190f59408ab5f85a38d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 21.7 KB (21738 bytes)  
+	-	`sha256:2887a0520434a1066f1b27482c6bbb52299307163ba2b35cca37e80295672102`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 21.7 KB (21730 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:4.4-enterprise`
 
 ```console
-$ docker pull neo4j@sha256:ecb8b26a036e13b123e2f4bf6a220b70eb7711c43d6cc1cd724bf4eb6efe8061
+$ docker pull neo4j@sha256:b04eb6632fda15d65dee01e9b1cbaf8abe606628895acd1ab63c45837931438d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6443,45 +6443,45 @@ $ docker pull neo4j@sha256:ecb8b26a036e13b123e2f4bf6a220b70eb7711c43d6cc1cd724bf
 ### `neo4j:4.4-enterprise` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:f7e2860b7e9cdc14a0ebb9c59ac23574c257a6017da8491fb9d06a668acc55af
+$ docker pull neo4j@sha256:e0a3b6e08c53fb22e72557fc563979829ddb6040efc3cc20a283b48a591b2940
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.6 MB (435612998 bytes)**  
+-	Total Size: **435.6 MB (435572991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d9eb02c479a99b11384931940b705de5b9c63ed8be4a96b18683f313a632700`
+-	Image ID: `sha256:0b600f6ad8227f6fb728656b6ebe0c8d9e6070357289431a17ad45b1137e766f`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:45 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:45 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=cd48ffe76118e627fbd5d338120a29ce61304f2e719afe40e9e8abbc08e9732e NEO4J_TARBALL=neo4j-enterprise-4.4.48-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:32 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:57 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:57 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 CMD ["neo4j"]
 ```
 
@@ -6490,21 +6490,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df32a6ca671212dae95ec420d3c0048f6d248acffe62068cb86a10de6ed49d46`  
-		Last Modified: Thu, 05 Nov 2026 07:41:35 GMT  
-		Size: 145.9 MB (145864286 bytes)  
+	-	`sha256:3989958a557f8ce262157a703e7d72229082ea61b747a006191030eb19e35230`  
+		Last Modified: Mon, 09 Nov 2026 23:50:25 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9310fa54fdd2563b8b473309e84ef79a2941723dac50ea3a6d46e8806c9e7da4`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 97.4 KB (97374 bytes)  
+	-	`sha256:f84e5104e18bbef6fb9246a0dc00c58045c1a9fb49dade9c1e6a5a1d59c25855`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31ff49f78d3d7aeefba1590cabdccfbe109673f1c34b418dc7d83f9134e0d223`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
+	-	`sha256:fc2081051df75b947fc8e481cbf1ad8265f9e9cb309c2b3392129aea1693b629`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
 		Size: 10.1 KB (10062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a3915f4f7d3c2238bba02ad2da99b810bfb87ffd50875de2f315e37396549bf`  
-		Last Modified: Thu, 05 Nov 2026 07:41:37 GMT  
-		Size: 259.8 MB (259785112 bytes)  
+	-	`sha256:c6dd8ee05159a3470a8dad583553757db8cf6cd82e24bbb1b20a107867b57a09`  
+		Last Modified: Mon, 09 Nov 2026 23:50:28 GMT  
+		Size: 259.8 MB (259784983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6514,69 +6514,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4-enterprise` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:15cf78bbda2ed3f9535f9887de66c6a6dc733e946b3895df81905fdcf0a987e2
+$ docker pull neo4j@sha256:6e265b8ddba038000b2bd2951d1586af429d831f768e83b21608389630dd1607
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4492459 bytes)**  
+-	Total Size: **4.5 MB (4492445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c87c5de46e407bf70fbcc3af627dd5c4092643a769b2360f85a2eb29590d3c9`
+-	Image ID: `sha256:d30bf04b51c00c1ecbab2cc7a2d70621c74fd888269ed7e55406ceebbf719c64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b470bad63c7d95c6430f6d290b87707fbcb6095b13173d7ce449920fbbcb4007`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 4.5 MB (4471438 bytes)  
+	-	`sha256:e487bdb741a54696e87ede06f781d2baeb99940bbf19200aa18a45fe18488449`  
+		Last Modified: Mon, 09 Nov 2026 23:50:20 GMT  
+		Size: 4.5 MB (4471432 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5b19529ef671b4679d8ee3309c80ba615d72ed7b109d76a296bdc3f88caa747`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 21.0 KB (21021 bytes)  
+	-	`sha256:4d2ba7d729e12991a9079f4ad2d306c04a96c7442cd690906cc019c9b22aaabd`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
+		Size: 21.0 KB (21013 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4-enterprise` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:689f9e45fa67a62d8ae4e3795a2f78df9d04b65a5e608858f5cef17d64ea8054
+$ docker pull neo4j@sha256:fb6e2007db750bc6241d8f73bc51855474330b7231d76d8ea8e61a7da6b4c9ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.8 MB (431757524 bytes)**  
+-	Total Size: **431.7 MB (431704610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:248bdfc1424aee3b8e2dd8913a2e86dc2e07c461f903667f7b5411861588b33d`
+-	Image ID: `sha256:abd7b4e61f455afd3958fe622076604cfc98b6bb1d91977b3cbf212c343e01d9`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:39 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:39 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=cd48ffe76118e627fbd5d338120a29ce61304f2e719afe40e9e8abbc08e9732e NEO4J_TARBALL=neo4j-enterprise-4.4.48-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 CMD ["neo4j"]
 ```
 
@@ -6585,21 +6585,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff54ba91ccd5422b8ef66ca82c1c00f39d91c9a2f0abe793df8c8efd320c412d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:30 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:b125d47b8cca94852f2cf794a1277a3c1ccbef03479a655b973169594c5c4c35`  
+		Last Modified: Mon, 09 Nov 2026 23:49:13 GMT  
+		Size: 142.6 MB (142620974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6f1e6dcdbbdb6f7801b9021b572b511862ed2fe9dd659c75037ec3f50c83c8d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 97.4 KB (97383 bytes)  
+	-	`sha256:684af24fac66621464efe6ef788b690e1e7c402e422e65c2ed06a5de2b15da4e`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:975b8fea47a9f02ce44f63cc4352ecc8bd742f8bd9df8ff333ce1d4f906e4c54`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 10.1 KB (10064 bytes)  
+	-	`sha256:80976c18b84642fcc0e43ae369d801b9eb6e00c1a2434ce073464d1c1fa0dccd`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 10.1 KB (10062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66a0fa33fb378753e76c4be3a6c6254207a1f625dddfd2f4c7560da3d7a713e7`  
-		Last Modified: Thu, 05 Nov 2026 07:45:32 GMT  
-		Size: 258.9 MB (258859412 bytes)  
+	-	`sha256:de77a81cb52171258a48de641912daa563735567260b3d1f95a44c6975496e69`  
+		Last Modified: Mon, 09 Nov 2026 23:49:15 GMT  
+		Size: 258.9 MB (258859377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6609,31 +6609,31 @@ CMD ["neo4j"]
 ### `neo4j:4.4-enterprise` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:e3b52a6e3ba6ab6f6832d7a400157bb829b2bee30890cf34bfc499affc7d3170
+$ docker pull neo4j@sha256:70f3b708719d896db3627f6d00abf7d96168c3bd0f0f1db4512ef0e2aa11b296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4487597 bytes)**  
+-	Total Size: **4.5 MB (4487583 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:261150fbc9b827b06d9f52ba324235340fdb2bfdef8b33901ab72e718a6aab81`
+-	Image ID: `sha256:77b718ddf4605feb627d9205b7c4fa6bbc90560f105d1ebd809eee10fdf4c1e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:480e3c3039cef3fcdd2b3be16a26e6d13e41d25b7aa351dbba5af0c88d4552a2`  
-		Last Modified: Thu, 05 Nov 2026 07:45:26 GMT  
-		Size: 4.5 MB (4466455 bytes)  
+	-	`sha256:cde464923fc0d22e8e54e9559c808ba256d904178fed47b7acd37fee339395d4`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 4.5 MB (4466449 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:228c1c4db7362ba99255e129e16279ca123ba673ea53f1c40c2ce942710773b8`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 21.1 KB (21142 bytes)  
+	-	`sha256:37041442776285c925522c386eac59bf5e79972bb13dcbc0debffa0057220cef`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 21.1 KB (21134 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:4.4.48`
 
 ```console
-$ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5bd0a346a596b
+$ docker pull neo4j@sha256:d28e6b1df0831db41b38f1d13191ebdd0349d98e224f453b600161a6c96670b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6646,45 +6646,45 @@ $ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5b
 ### `neo4j:4.4.48` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:95bd0608c6287b4c871aedcda74f3f061aeb27c99a0b51d5f3035548254debb6
+$ docker pull neo4j@sha256:2d93c88a9384f4f733e54385e5cc3c66ed9bca99b35b1a82f2b3ec099076e1f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328832625 bytes)**  
+-	Total Size: **328.8 MB (328792892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:628d65137a509e5e34fb849e679bcc9910f93ed1c95314887191cceec8734056`
+-	Image ID: `sha256:96ca1b6de4edfdafb72fc426a5761526d1203c5275a31c24bda794ffce6676f7`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 CMD ["neo4j"]
 ```
 
@@ -6693,21 +6693,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5cd737d32f058417c656758dcbf91351771b4aa85d9d7f3dbc6bf9c0213b34`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 145.9 MB (145864300 bytes)  
+	-	`sha256:199b63ed6c594417ba6663b2480e3a22815f6cd65535db77b84e680de74f535f`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98bd3f1f164730250cb08d58f8722579059975cc22b4b633d1f2afeac0aada23`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 97.4 KB (97373 bytes)  
+	-	`sha256:7e4e3e1ba2a0a41d063e22e5b8e516f76fdd9be12f081c25477719b3657d459d`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51b0ae22ad346421f070aee356af18afc9ebdfa28d69877bb33f0097d9cd5def`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 10.1 KB (10062 bytes)  
+	-	`sha256:a95d553173ad791d37df0477132f71ab57cabb6ee777c759b472c9a2e739c506`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 10.1 KB (10061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bc46e0c8a1ea67efff792f05dd846930047950b7e14db7328958786bd05c2e6`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 153.0 MB (153004726 bytes)  
+	-	`sha256:4a60fe9a944698b172435dbb46aa4e49f1369651b050d02845c3940f45d81162`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 153.0 MB (153004885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6717,69 +6717,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:b9dc8adb53b00da249be4bcac9fc4b2cae771c0c96b89970418ca67b89162eb7
+$ docker pull neo4j@sha256:5c9da5949bfaf06d27d27c90d04bcd82b9923feddaac644b430d4aedfdc59e62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4323444 bytes)**  
+-	Total Size: **4.3 MB (4323431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b009f8cdbb50f78ad1228a832f9c4ac5733459421d084b5f65427aaaac0ab17a`
+-	Image ID: `sha256:40ff40692cb91e582b8a30f2843c814a94b920520f793ea8ac33979feefc9e60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5e56592a8156db84caf7dadabd9ba3e93294842a1cf222adb79c4e9c53becf80`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 4.3 MB (4301852 bytes)  
+	-	`sha256:ca5e8083d86d36ae9ff3b19a3f46079cf3bd5ec48b11581311f74faf37143453`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 4.3 MB (4301846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdca952aa79768445af1ed6e62a12e9f8e4b1379349a16f9197202fef515803d`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 21.6 KB (21592 bytes)  
+	-	`sha256:e2bd6ad997efb2d9bbc94c789959b72560e15d3f1960d01f44bd164955b9068b`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 21.6 KB (21585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4.48` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:6aa2532b1f317f5e7b3a002bd1963ec64ffafce16a9954ed5e1d2b460fce8cbe
+$ docker pull neo4j@sha256:cbbe4f18c62ea517d46b048485521bf89e96fc14dedb23e1ecb9a675c71e1b12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.0 MB (324974262 bytes)**  
+-	Total Size: **324.9 MB (324921205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f1ac4cfb1c0f17ef159bfc19c1d9ca5744a355ae9cd2d5a9e39dd707988f2`
+-	Image ID: `sha256:dda03daba409e4fab813d65b844146f31e8a450b41a71c1983d4f216a5cb4d91`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 CMD ["neo4j"]
 ```
 
@@ -6788,21 +6788,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07d8fb339d43fc4ea8c4a4b76507c1883d010ee3861e74ff7990461cc02f7792`  
-		Last Modified: Thu, 05 Nov 2026 07:45:17 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:81cb2cc22250b4ac7380053f6409026c723137eb3913bcb1071ac11b4ee3f94d`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 142.6 MB (142620966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0b7ec39c5a470e560380c93ef4083b510b16321d46ec8a3ff749e1aecf4a82a`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 97.4 KB (97384 bytes)  
+	-	`sha256:a8cc6625f2e84f8ff3bf266cf14c845e750503615c9d947ac3d3556bc17d0906`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea750a6b8a91285886751ae9e718fb77951166e6402f699550683e0a853f5b1`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 10.1 KB (10061 bytes)  
+	-	`sha256:c488653b7c9d6b1930cec5a30e229e93a6f503603994dfaf093a0d30bec407e2`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 10.1 KB (10064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a77740db72027bf853da2e324a5032b9ddd95dc14244a666e6faf77a8892741`  
-		Last Modified: Thu, 05 Nov 2026 07:45:18 GMT  
-		Size: 152.1 MB (152076152 bytes)  
+	-	`sha256:5506804e958b6156f919307ca637f74bc8928cece5bcd3ee9a6bc469c39a03b9`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 152.1 MB (152075980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6812,31 +6812,31 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:3b16d2c4c0eb2462760fd9527f359026ab9a6eb8548845f38a3e6c743acb5a1b
+$ docker pull neo4j@sha256:d5619309b8273316476d16b1095b338f33f5aa10db90852e885c1e0c63509845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4318631 bytes)**  
+-	Total Size: **4.3 MB (4318617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdb5d6d74e73b134895e954d0232f732947535f3bdbab1d0d58f2c4dcd44b3ec`
+-	Image ID: `sha256:6a9f28728b7765e93bebe228dce8802bda6e270132d933683f56876f9ef0d292`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:277545b7423d5ffc94208da61a46ea5553102c2d45adcc8860f380d85914dd60`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 4.3 MB (4296893 bytes)  
+	-	`sha256:aa97ec55ca25cf0fb5369668a78c3da064bb0ad71feef59a4d7971cc51cec47c`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 4.3 MB (4296887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d063daefbaba248daa849217c5bcd2ee38e52aa06493190f59408ab5f85a38d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 21.7 KB (21738 bytes)  
+	-	`sha256:2887a0520434a1066f1b27482c6bbb52299307163ba2b35cca37e80295672102`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 21.7 KB (21730 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:4.4.48-community`
 
 ```console
-$ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5bd0a346a596b
+$ docker pull neo4j@sha256:d28e6b1df0831db41b38f1d13191ebdd0349d98e224f453b600161a6c96670b8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6849,45 +6849,45 @@ $ docker pull neo4j@sha256:bb4a6efb3fc5349dbfe2b2601e48c4056c1ff4c4ecbcd36c12f5b
 ### `neo4j:4.4.48-community` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:95bd0608c6287b4c871aedcda74f3f061aeb27c99a0b51d5f3035548254debb6
+$ docker pull neo4j@sha256:2d93c88a9384f4f733e54385e5cc3c66ed9bca99b35b1a82f2b3ec099076e1f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328832625 bytes)**  
+-	Total Size: **328.8 MB (328792892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:628d65137a509e5e34fb849e679bcc9910f93ed1c95314887191cceec8734056`
+-	Image ID: `sha256:96ca1b6de4edfdafb72fc426a5761526d1203c5275a31c24bda794ffce6676f7`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:40 GMT
+# Mon, 09 Nov 2026 23:49:30 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:41 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:02 GMT
+# Mon, 09 Nov 2026 23:49:54 GMT
 CMD ["neo4j"]
 ```
 
@@ -6896,21 +6896,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5cd737d32f058417c656758dcbf91351771b4aa85d9d7f3dbc6bf9c0213b34`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 145.9 MB (145864300 bytes)  
+	-	`sha256:199b63ed6c594417ba6663b2480e3a22815f6cd65535db77b84e680de74f535f`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98bd3f1f164730250cb08d58f8722579059975cc22b4b633d1f2afeac0aada23`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 97.4 KB (97373 bytes)  
+	-	`sha256:7e4e3e1ba2a0a41d063e22e5b8e516f76fdd9be12f081c25477719b3657d459d`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51b0ae22ad346421f070aee356af18afc9ebdfa28d69877bb33f0097d9cd5def`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 10.1 KB (10062 bytes)  
+	-	`sha256:a95d553173ad791d37df0477132f71ab57cabb6ee777c759b472c9a2e739c506`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 10.1 KB (10061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bc46e0c8a1ea67efff792f05dd846930047950b7e14db7328958786bd05c2e6`  
-		Last Modified: Thu, 05 Nov 2026 07:41:25 GMT  
-		Size: 153.0 MB (153004726 bytes)  
+	-	`sha256:4a60fe9a944698b172435dbb46aa4e49f1369651b050d02845c3940f45d81162`  
+		Last Modified: Mon, 09 Nov 2026 23:50:17 GMT  
+		Size: 153.0 MB (153004885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -6920,69 +6920,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48-community` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:b9dc8adb53b00da249be4bcac9fc4b2cae771c0c96b89970418ca67b89162eb7
+$ docker pull neo4j@sha256:5c9da5949bfaf06d27d27c90d04bcd82b9923feddaac644b430d4aedfdc59e62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4323444 bytes)**  
+-	Total Size: **4.3 MB (4323431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b009f8cdbb50f78ad1228a832f9c4ac5733459421d084b5f65427aaaac0ab17a`
+-	Image ID: `sha256:40ff40692cb91e582b8a30f2843c814a94b920520f793ea8ac33979feefc9e60`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5e56592a8156db84caf7dadabd9ba3e93294842a1cf222adb79c4e9c53becf80`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 4.3 MB (4301852 bytes)  
+	-	`sha256:ca5e8083d86d36ae9ff3b19a3f46079cf3bd5ec48b11581311f74faf37143453`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 4.3 MB (4301846 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fdca952aa79768445af1ed6e62a12e9f8e4b1379349a16f9197202fef515803d`  
-		Last Modified: Thu, 05 Nov 2026 07:41:20 GMT  
-		Size: 21.6 KB (21592 bytes)  
+	-	`sha256:e2bd6ad997efb2d9bbc94c789959b72560e15d3f1960d01f44bd164955b9068b`  
+		Last Modified: Mon, 09 Nov 2026 23:50:12 GMT  
+		Size: 21.6 KB (21585 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4.48-community` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:6aa2532b1f317f5e7b3a002bd1963ec64ffafce16a9954ed5e1d2b460fce8cbe
+$ docker pull neo4j@sha256:cbbe4f18c62ea517d46b048485521bf89e96fc14dedb23e1ecb9a675c71e1b12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.0 MB (324974262 bytes)**  
+-	Total Size: **324.9 MB (324921205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f1ac4cfb1c0f17ef159bfc19c1d9ca5744a355ae9cd2d5a9e39dd707988f2`
+-	Image ID: `sha256:dda03daba409e4fab813d65b844146f31e8a450b41a71c1983d4f216a5cb4d91`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:31 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=fa4f64047cf6018fa6faa202c830d3ff6c8d2154ae8a3313c920fc504baa7ab2 NEO4J_TARBALL=neo4j-community-4.4.48-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:32 GMT
+# Mon, 09 Nov 2026 23:48:18 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:44:54 GMT
+# Mon, 09 Nov 2026 23:48:43 GMT
 CMD ["neo4j"]
 ```
 
@@ -6991,21 +6991,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07d8fb339d43fc4ea8c4a4b76507c1883d010ee3861e74ff7990461cc02f7792`  
-		Last Modified: Thu, 05 Nov 2026 07:45:17 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:81cb2cc22250b4ac7380053f6409026c723137eb3913bcb1071ac11b4ee3f94d`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 142.6 MB (142620966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0b7ec39c5a470e560380c93ef4083b510b16321d46ec8a3ff749e1aecf4a82a`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 97.4 KB (97384 bytes)  
+	-	`sha256:a8cc6625f2e84f8ff3bf266cf14c845e750503615c9d947ac3d3556bc17d0906`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea750a6b8a91285886751ae9e718fb77951166e6402f699550683e0a853f5b1`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 10.1 KB (10061 bytes)  
+	-	`sha256:c488653b7c9d6b1930cec5a30e229e93a6f503603994dfaf093a0d30bec407e2`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 10.1 KB (10064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a77740db72027bf853da2e324a5032b9ddd95dc14244a666e6faf77a8892741`  
-		Last Modified: Thu, 05 Nov 2026 07:45:18 GMT  
-		Size: 152.1 MB (152076152 bytes)  
+	-	`sha256:5506804e958b6156f919307ca637f74bc8928cece5bcd3ee9a6bc469c39a03b9`  
+		Last Modified: Mon, 09 Nov 2026 23:49:05 GMT  
+		Size: 152.1 MB (152075980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7015,31 +7015,31 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48-community` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:3b16d2c4c0eb2462760fd9527f359026ab9a6eb8548845f38a3e6c743acb5a1b
+$ docker pull neo4j@sha256:d5619309b8273316476d16b1095b338f33f5aa10db90852e885c1e0c63509845
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4318631 bytes)**  
+-	Total Size: **4.3 MB (4318617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdb5d6d74e73b134895e954d0232f732947535f3bdbab1d0d58f2c4dcd44b3ec`
+-	Image ID: `sha256:6a9f28728b7765e93bebe228dce8802bda6e270132d933683f56876f9ef0d292`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:277545b7423d5ffc94208da61a46ea5553102c2d45adcc8860f380d85914dd60`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 4.3 MB (4296893 bytes)  
+	-	`sha256:aa97ec55ca25cf0fb5369668a78c3da064bb0ad71feef59a4d7971cc51cec47c`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 4.3 MB (4296887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d063daefbaba248daa849217c5bcd2ee38e52aa06493190f59408ab5f85a38d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:12 GMT  
-		Size: 21.7 KB (21738 bytes)  
+	-	`sha256:2887a0520434a1066f1b27482c6bbb52299307163ba2b35cca37e80295672102`  
+		Last Modified: Mon, 09 Nov 2026 23:49:00 GMT  
+		Size: 21.7 KB (21730 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:4.4.48-enterprise`
 
 ```console
-$ docker pull neo4j@sha256:ecb8b26a036e13b123e2f4bf6a220b70eb7711c43d6cc1cd724bf4eb6efe8061
+$ docker pull neo4j@sha256:b04eb6632fda15d65dee01e9b1cbaf8abe606628895acd1ab63c45837931438d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7052,45 +7052,45 @@ $ docker pull neo4j@sha256:ecb8b26a036e13b123e2f4bf6a220b70eb7711c43d6cc1cd724bf
 ### `neo4j:4.4.48-enterprise` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:f7e2860b7e9cdc14a0ebb9c59ac23574c257a6017da8491fb9d06a668acc55af
+$ docker pull neo4j@sha256:e0a3b6e08c53fb22e72557fc563979829ddb6040efc3cc20a283b48a591b2940
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.6 MB (435612998 bytes)**  
+-	Total Size: **435.6 MB (435572991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d9eb02c479a99b11384931940b705de5b9c63ed8be4a96b18683f313a632700`
+-	Image ID: `sha256:0b600f6ad8227f6fb728656b6ebe0c8d9e6070357289431a17ad45b1137e766f`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:40:45 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:40:45 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=cd48ffe76118e627fbd5d338120a29ce61304f2e719afe40e9e8abbc08e9732e NEO4J_TARBALL=neo4j-enterprise-4.4.48-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:31 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:40:46 GMT
+# Mon, 09 Nov 2026 23:49:32 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:57 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:57 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:41:10 GMT
+# Mon, 09 Nov 2026 23:49:58 GMT
 CMD ["neo4j"]
 ```
 
@@ -7099,21 +7099,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df32a6ca671212dae95ec420d3c0048f6d248acffe62068cb86a10de6ed49d46`  
-		Last Modified: Thu, 05 Nov 2026 07:41:35 GMT  
-		Size: 145.9 MB (145864286 bytes)  
+	-	`sha256:3989958a557f8ce262157a703e7d72229082ea61b747a006191030eb19e35230`  
+		Last Modified: Mon, 09 Nov 2026 23:50:25 GMT  
+		Size: 145.9 MB (145921654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9310fa54fdd2563b8b473309e84ef79a2941723dac50ea3a6d46e8806c9e7da4`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 97.4 KB (97374 bytes)  
+	-	`sha256:f84e5104e18bbef6fb9246a0dc00c58045c1a9fb49dade9c1e6a5a1d59c25855`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31ff49f78d3d7aeefba1590cabdccfbe109673f1c34b418dc7d83f9134e0d223`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
+	-	`sha256:fc2081051df75b947fc8e481cbf1ad8265f9e9cb309c2b3392129aea1693b629`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
 		Size: 10.1 KB (10062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a3915f4f7d3c2238bba02ad2da99b810bfb87ffd50875de2f315e37396549bf`  
-		Last Modified: Thu, 05 Nov 2026 07:41:37 GMT  
-		Size: 259.8 MB (259785112 bytes)  
+	-	`sha256:c6dd8ee05159a3470a8dad583553757db8cf6cd82e24bbb1b20a107867b57a09`  
+		Last Modified: Mon, 09 Nov 2026 23:50:28 GMT  
+		Size: 259.8 MB (259784983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7123,69 +7123,69 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48-enterprise` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:15cf78bbda2ed3f9535f9887de66c6a6dc733e946b3895df81905fdcf0a987e2
+$ docker pull neo4j@sha256:6e265b8ddba038000b2bd2951d1586af429d831f768e83b21608389630dd1607
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4492459 bytes)**  
+-	Total Size: **4.5 MB (4492445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c87c5de46e407bf70fbcc3af627dd5c4092643a769b2360f85a2eb29590d3c9`
+-	Image ID: `sha256:d30bf04b51c00c1ecbab2cc7a2d70621c74fd888269ed7e55406ceebbf719c64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b470bad63c7d95c6430f6d290b87707fbcb6095b13173d7ce449920fbbcb4007`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 4.5 MB (4471438 bytes)  
+	-	`sha256:e487bdb741a54696e87ede06f781d2baeb99940bbf19200aa18a45fe18488449`  
+		Last Modified: Mon, 09 Nov 2026 23:50:20 GMT  
+		Size: 4.5 MB (4471432 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b5b19529ef671b4679d8ee3309c80ba615d72ed7b109d76a296bdc3f88caa747`  
-		Last Modified: Thu, 05 Nov 2026 07:41:30 GMT  
-		Size: 21.0 KB (21021 bytes)  
+	-	`sha256:4d2ba7d729e12991a9079f4ad2d306c04a96c7442cd690906cc019c9b22aaabd`  
+		Last Modified: Mon, 09 Nov 2026 23:50:19 GMT  
+		Size: 21.0 KB (21013 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neo4j:4.4.48-enterprise` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:689f9e45fa67a62d8ae4e3795a2f78df9d04b65a5e608858f5cef17d64ea8054
+$ docker pull neo4j@sha256:fb6e2007db750bc6241d8f73bc51855474330b7231d76d8ea8e61a7da6b4c9ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.8 MB (431757524 bytes)**  
+-	Total Size: **431.7 MB (431704610 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:248bdfc1424aee3b8e2dd8913a2e86dc2e07c461f903667f7b5411861588b33d`
+-	Image ID: `sha256:abd7b4e61f455afd3958fe622076604cfc98b6bb1d91977b3cbf212c343e01d9`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1793827419'
-# Thu, 05 Nov 2026 07:44:39 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Nov 2026 07:44:39 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 RUN "$JAVA_HOME/bin/keytool" -list -v -cacerts -storepass changeit       | awk '/^Alias name: /{alias=substr($0, 13)} /^Owner: CN=emSign (ECC Root CA - G3|ECC Root CA - C3|Root CA - C1),/{print alias}'       | while read -r alias; do           "$JAVA_HOME/bin/keytool" -delete -cacerts -storepass changeit -alias "$alias";         done # buildkit
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=cd48ffe76118e627fbd5d338120a29ce61304f2e719afe40e9e8abbc08e9732e NEO4J_TARBALL=neo4j-enterprise-4.4.48-unix.tar.gz NEO4J_EDITION=enterprise NEO4J_HOME=/var/lib/neo4j LANG=C.UTF-8
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 ARG NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
-# Thu, 05 Nov 2026 07:44:40 GMT
+# Mon, 09 Nov 2026 23:48:21 GMT
 COPY ./local-package/* /startup/ # buildkit
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 # ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-enterprise-4.4.48-unix.tar.gz
 RUN apt-get update     && apt-get install --no-install-recommends -o Acquire::Retries=10 -y       curl ca-certificates gcc libc-dev git jq make procps tini wget     && groupadd --gid 7474 --system neo4j     && useradd --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --gid neo4j neo4j     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv /startup/neo4j-admin-report.sh "${NEO4J_HOME}"/bin/neo4j-admin-report     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && chmod -R 755 "${NEO4J_HOME}/bin"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && ln -s /startup/docker-entrypoint.sh /docker-entrypoint.sh     && git clone https://github.com/ncopa/su-exec.git     && cd su-exec     && git checkout 4c3bb42b093f14da70d8ab924b487ccfbb1397af     && echo d6c40440609a23483f12eb6295b5191e94baf08298a856bab6e15b10c3b82891 su-exec.c | sha256sum -c     && echo 2a87af245eb125aca9305a0b1025525ac80825590800f047419dc57bba36b334 Makefile | sha256sum -c     && make     && mv /su-exec/su-exec /usr/bin/su-exec     && apt-get -y purge --auto-remove curl gcc git make libc-dev     && rm -rf /var/lib/apt/lists/* /su-exec # buildkit
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 WORKDIR /var/lib/neo4j
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 VOLUME [/data /logs]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 EXPOSE map[7473/tcp:{} 7474/tcp:{} 7687/tcp:{}]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Thu, 05 Nov 2026 07:45:04 GMT
+# Mon, 09 Nov 2026 23:48:46 GMT
 CMD ["neo4j"]
 ```
 
@@ -7194,21 +7194,21 @@ CMD ["neo4j"]
 		Last Modified: Thu, 05 Nov 2026 06:16:09 GMT  
 		Size: 30.2 MB (30214037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff54ba91ccd5422b8ef66ca82c1c00f39d91c9a2f0abe793df8c8efd320c412d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:30 GMT  
-		Size: 142.6 MB (142576596 bytes)  
+	-	`sha256:b125d47b8cca94852f2cf794a1277a3c1ccbef03479a655b973169594c5c4c35`  
+		Last Modified: Mon, 09 Nov 2026 23:49:13 GMT  
+		Size: 142.6 MB (142620974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6f1e6dcdbbdb6f7801b9021b572b511862ed2fe9dd659c75037ec3f50c83c8d`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 97.4 KB (97383 bytes)  
+	-	`sha256:684af24fac66621464efe6ef788b690e1e7c402e422e65c2ed06a5de2b15da4e`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:975b8fea47a9f02ce44f63cc4352ecc8bd742f8bd9df8ff333ce1d4f906e4c54`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 10.1 KB (10064 bytes)  
+	-	`sha256:80976c18b84642fcc0e43ae369d801b9eb6e00c1a2434ce073464d1c1fa0dccd`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 10.1 KB (10062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66a0fa33fb378753e76c4be3a6c6254207a1f625dddfd2f4c7560da3d7a713e7`  
-		Last Modified: Thu, 05 Nov 2026 07:45:32 GMT  
-		Size: 258.9 MB (258859412 bytes)  
+	-	`sha256:de77a81cb52171258a48de641912daa563735567260b3d1f95a44c6975496e69`  
+		Last Modified: Mon, 09 Nov 2026 23:49:15 GMT  
+		Size: 258.9 MB (258859377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -7218,25 +7218,25 @@ CMD ["neo4j"]
 ### `neo4j:4.4.48-enterprise` - unknown; unknown
 
 ```console
-$ docker pull neo4j@sha256:e3b52a6e3ba6ab6f6832d7a400157bb829b2bee30890cf34bfc499affc7d3170
+$ docker pull neo4j@sha256:70f3b708719d896db3627f6d00abf7d96168c3bd0f0f1db4512ef0e2aa11b296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4487597 bytes)**  
+-	Total Size: **4.5 MB (4487583 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:261150fbc9b827b06d9f52ba324235340fdb2bfdef8b33901ab72e718a6aab81`
+-	Image ID: `sha256:77b718ddf4605feb627d9205b7c4fa6bbc90560f105d1ebd809eee10fdf4c1e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:480e3c3039cef3fcdd2b3be16a26e6d13e41d25b7aa351dbba5af0c88d4552a2`  
-		Last Modified: Thu, 05 Nov 2026 07:45:26 GMT  
-		Size: 4.5 MB (4466455 bytes)  
+	-	`sha256:cde464923fc0d22e8e54e9559c808ba256d904178fed47b7acd37fee339395d4`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 4.5 MB (4466449 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:228c1c4db7362ba99255e129e16279ca123ba673ea53f1c40c2ce942710773b8`  
-		Last Modified: Thu, 05 Nov 2026 07:45:25 GMT  
-		Size: 21.1 KB (21142 bytes)  
+	-	`sha256:37041442776285c925522c386eac59bf5e79972bb13dcbc0debffa0057220cef`  
+		Last Modified: Mon, 09 Nov 2026 23:49:08 GMT  
+		Size: 21.1 KB (21134 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `neo4j:5`
