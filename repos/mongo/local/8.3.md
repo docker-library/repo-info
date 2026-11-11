@@ -1,10 +1,10 @@
-# `mongo:8.3.13-noble`
+# `mongo:8.3.17-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:535e2ec0973619b9e8b63fda8b5ea00aea7ec6699689ecc997a2a521bdac56c8`
-- Created: `2026-10-26T23:25:58.798080473Z`
-- Virtual Size: ~ 833.08 Mb  
+- Image ID: `sha256:2147426759da1e18882a071572cfaefcd99fd3285f97970697f54b8e06ce2125`
+- Created: `2026-11-11T20:56:02.160602369Z`
+- Virtual Size: ~ 841.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.3`
-  - `MONGO_VERSION=8.3.13`
+  - `MONGO_VERSION=8.3.17`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -235,11 +235,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.dsc' bzip2_1.0.8-5.1ubuntu0.1.dsc 1699 SHA512:57315fd236033f29de1487130d86e61d373bbc33ea51d431b782bd0f5113b9ccf62f235fd284c13ba371d28954ed3edceea77ceb7c813931e817049ad25c5a34
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.24.04.1`
+- `ca-certificates=20260816ubuntu0.24.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -247,9 +247,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.tar.xz' ca-certificates_20260816ubuntu0.24.04.2.tar.xz 273500 SHA512:b2214ad6c7590dcd94f0edc9c2ec70ec0101f339d5197bbf9909bb3f47566b7dfcb25c7bbbf741fcb4b73019150db35ba351b0694376cf994a3e37b0395c390c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.dsc' ca-certificates_20260816ubuntu0.24.04.2.dsc 1876 SHA512:d6691f6b5418333f951eb6ccb765277eef0b6cdffbea73db10fb54d29d7914f03b9298fc3a9dcddf6463168dee3c08d4163c3b158067d7a2961dd16e46969a5e
+```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
@@ -1370,11 +1374,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20240123-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20240123-1build1.debian.tar.xz' mawk_1.3.4.20240123-1build1.debian.tar.xz 15704 SHA512:53a4367656e29f5897ba29cf38b30e2b3a2758d990bbd3a90bdbceb5d3c467615496407af8bd437b4df2e9518096865b7ec6739b0465e8bba20d87ed71782268
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.20.0`
+### `dpkg` source package: `mongodb-database-tools=100.20.1`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.20.0`
+- `mongodb-database-tools=100.20.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1384,11 +1388,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.14.0`
+### `dpkg` source package: `mongodb-mongosh=2.14.2`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.14.0`
+- `mongodb-mongosh=2.14.2`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1399,17 +1403,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.3.13`
+### `dpkg` source package: `mongodb-org=8.3.17`
 
 Binary Packages:
 
-- `mongodb-org=8.3.13`
-- `mongodb-org-database=8.3.13`
-- `mongodb-org-database-tools-extra=8.3.13`
-- `mongodb-org-mongos=8.3.13`
-- `mongodb-org-server=8.3.13`
-- `mongodb-org-shell=8.3.13`
-- `mongodb-org-tools=8.3.13`
+- `mongodb-org=8.3.17`
+- `mongodb-org-database=8.3.17`
+- `mongodb-org-database-tools-extra=8.3.17`
+- `mongodb-org-mongos=8.3.17`
+- `mongodb-org-server=8.3.17`
+- `mongodb-org-shell=8.3.17`
+- `mongodb-org-tools=8.3.17`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1720,15 +1724,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz' perl_5.38.2-3.2ubuntu0.6.debian.tar.xz 184740 SHA512:b228dfd8936c87c3e6bda2d30785e0d21ae0ca922b3022cf2e4394edf0892433e58a80bacceefc4fb093fbc707720116208a5843ffd2ecdb59738c31cf983ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.dsc' perl_5.38.2-3.2ubuntu0.6.dsc 3081 SHA512:2956c067e9ec690c1b376a7be20a1d42908331814c18c819cc67c9ae694ab280d6bebdf3c754afb2c22967522e3148b181fffe043a699cfaec19f470f856c713
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.3`
 
