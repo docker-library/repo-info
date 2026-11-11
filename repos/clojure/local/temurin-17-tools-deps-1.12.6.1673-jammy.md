@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:165f7f9a5f240a71bd3e9c30861deaa0855acd4c1292cb5f134d122a95a89e31`
-- Created: `2026-11-03T22:18:39.476535629Z`
+- Image ID: `sha256:54a92b9a6c0766eaaa15f2ce1ad38fc731a9747489b9a04868985e92c00abb79`
+- Created: `2026-11-10T00:39:28.818740905Z`
 - Virtual Size: ~ 532.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2178,15 +2178,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.9.debian.tar.xz' perl_5.34.0-3ubuntu1.9.debian.tar.xz 207936 SHA512:69866dfe7e3e8c2d2ffceaf109b71a3d7a4b3eb09832b72bc3b55580194fdcd44aa071ae067f0fbfd3a2ea8328addd6bee4adab064dd48cd39300ba26bc8dd6b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.9.dsc' perl_5.34.0-3ubuntu1.9.dsc 3021 SHA512:5b0f307ab7cdc54de95d96034353f0e6b1643a7ed0fe816f9f8b87c4fc2d1770b8e0dde8035eeac837ac8f39bdaf9646f6ac7ee0a8f1a65afa5387a82828bf6b
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
