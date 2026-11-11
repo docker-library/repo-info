@@ -1,10 +1,10 @@
-# `jetty:12.1.14-jdk17-alpine-amazoncorretto`
+# `jetty:12.1.15-jdk17-alpine-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5d18fb958cc70d3b3d8efcb3d4bce4ac84d0a4286c4b418cd9a93b30db11b72`
-- Created: `2026-11-05T20:23:21.968987362Z`
-- Virtual Size: ~ 371.08 Mb  
+- Image ID: `sha256:67beed6afc983046e6d9e5f03bfa06d1666f2b23e225a0c63415e370db44c9a3`
+- Created: `2026-11-10T18:54:51.941728476Z`
+- Virtual Size: ~ 359.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/default-jvm`
-  - `JETTY_VERSION=12.1.14`
+  - `JETTY_VERSION=12.1.15`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.14/jetty-home-12.1.14.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.15/jetty-home-12.1.15.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	716EE302674CDBB2E660E1B44DB5EA09F2E3C800 	CD38A1DADA3413BE96DF547F3D146A4A1C58367E 	75DE085F73C1223260663C245663FB7A8FF7E348`
 
 ## `apk` (`.apk`-based packages)
