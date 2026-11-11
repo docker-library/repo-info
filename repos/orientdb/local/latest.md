@@ -1,10 +1,10 @@
-# `orientdb:3.2.57`
+# `orientdb:3.2.58`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c85eb90f21d7d8963a897702bafbbe39bbfc7dda2f09532b442d6667e532345`
-- Created: `2026-10-27T00:30:54.954600994Z`
-- Virtual Size: ~ 411.57 Mb  
+- Image ID: `sha256:4947c4d0f19d4d957cc293a613f1ec2e4b2144d56259f431a2c822333043d23f`
+- Created: `2026-11-10T00:34:03.524145097Z`
+- Virtual Size: ~ 411.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,11 +15,11 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u504-b01`
-  - `ORIENTDB_VERSION=3.2.57`
-  - `ORIENTDB_DOWNLOAD_MD5=57ffe6ba242d468e85a3ed5ddae01844`
-  - `ORIENTDB_DOWNLOAD_SHA1=0b0a89c6e78d4489259ecb320f667f0f34f8bcf3`
-  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.57/orientdb-community-3.2.57.tar.gz`
+  - `JAVA_VERSION=jdk8u512-b09`
+  - `ORIENTDB_VERSION=3.2.58`
+  - `ORIENTDB_DOWNLOAD_MD5=7f37e14768eff951f30ab6beb2509114`
+  - `ORIENTDB_DOWNLOAD_SHA1=6f13f6df18bf581a6c741f61ca60d5e85147f69a`
+  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.58/orientdb-community-3.2.58.tar.gz`
 - Labels:
   - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -246,11 +246,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-6ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6ubuntu0.1.dsc' bzip2_1.0.8-6ubuntu0.1.dsc 1691 SHA512:5e52a7b104a5c4267807bcf811bb94862d25faed66398bb03190ca09be6210ae5475bce15c5fa585e20503597aad0bfd6d3f5150456eb8e2dd52bd78bcc5e2ac
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.26.04.1`
+- `ca-certificates=20260816ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -258,9 +258,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.tar.xz' ca-certificates_20260816ubuntu0.26.04.2.tar.xz 274288 SHA512:1bebf27387b9f40d41ee9bf5fedee1456f737f6159bdd945cd597e4f8b6b4f694d27a742d353daa07269f57b25e5a5db17a889f57e4b23f899d56d880b000b08
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.dsc' ca-certificates_20260816ubuntu0.26.04.2.dsc 1876 SHA512:c8b1031dd352c77380e9a10f05d54475e50d6fe854b817136e243f9e229c35a9377b7d3f3c9ec1d3996aa317070c608390d5bad9e1c12c52d81865137d7c11f5
+```
 
 ### `dpkg` source package: `cdebconf=0.280ubuntu1`
 
@@ -1884,15 +1888,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
-```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
