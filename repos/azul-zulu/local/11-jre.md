@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:424e415c17779a83b6b19f25e2a87383bf6a3b9eda483e5e1dbcd4f3e51a64d3`
-- Created: `2026-11-05T07:34:38.127588106Z`
+- Image ID: `sha256:e219da1926f223f4800ff81a369b443fc93f7bcce73b7c13cd3df36c673af450`
+- Created: `2026-11-09T20:24:05.396720393Z`
 - Virtual Size: ~ 272.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2327,12 +2327,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu11-ca=11.0.33-3`
+### `dpkg` source package: `zulu11-ca=11.0.33-5`
 
 Binary Packages:
 
-- `zulu11-ca-jre=11.0.33-3`
-- `zulu11-ca-jre-headless=11.0.33-3`
+- `zulu11-ca-jre=11.0.33-5`
+- `zulu11-ca-jre-headless=11.0.33-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-ca-jre/copyright`, `/usr/share/doc/zulu11-ca-jre-headless/copyright`)
 
@@ -2342,12 +2342,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu11-ca-jre/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu11=11.0.33-3`
+### `dpkg` source package: `zulu11=11.0.33-5`
 
 Binary Packages:
 
-- `zulu11-jre=11.0.33-3`
-- `zulu11-jre-headless=11.0.33-3`
+- `zulu11-jre=11.0.33-5`
+- `zulu11-jre-headless=11.0.33-5`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-jre/copyright`, `/usr/share/doc/zulu11-jre-headless/copyright`)
 
