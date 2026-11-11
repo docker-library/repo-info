@@ -6413,19 +6413,39 @@ $ docker pull httpd@sha256:17c11aabdddd6ed18be2c705db248b58320c8755c49b42a700805
 
 ## `httpd:2.4.71`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.71-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.71-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:2.4.71-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull httpd@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `httpd:alpine`
 
