@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:3f8c17e6ce43ac9ca6106458eb060ecf3096ba22422c4a04687b98e89cb68244
+$ docker pull storm@sha256:250f3d884f6694c6206c398eaab13c4f121f5b4932cc865a9276eae10205730f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -162,13 +162,13 @@ $ docker pull storm@sha256:da45bb5bb5c92f544c33ecbb1a01d8998babae67529d4a1a57275
 ### `storm:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:e972df700264eb4aefdd15de81c63d15b5bcd16098395565bc1496cf10058c98
+$ docker pull storm@sha256:590c1a23c5127ef9d9939373c5b0c27855e76fac849eff24c868bcc23fe9bc4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.1 MB (453052649 bytes)**  
+-	Total Size: **458.3 MB (458287755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0249215932f562058a5e1acdea830a934ddd2a920d5039f8ff9f90d9b5855cc`
+-	Image ID: `sha256:312d6aa0f6b11b0a5734334497d742fe39ce45ca3e28d5f2c2b223f84a831c53`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -216,24 +216,24 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 29 Oct 2026 19:10:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 29 Oct 2026 19:58:54 GMT
+# Wed, 11 Nov 2026 20:49:21 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Thu, 29 Oct 2026 19:58:54 GMT
+# Wed, 11 Nov 2026 20:49:21 GMT
 RUN userdel -r ubuntu &&     groupdel ubuntu || true RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"`` # buildkit
-# Thu, 29 Oct 2026 19:59:07 GMT
+# Wed, 11 Nov 2026 20:49:39 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python3         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true # buildkit
-# Thu, 29 Oct 2026 19:59:07 GMT
-ARG DISTRO_NAME=apache-storm-3.1.0
-# Thu, 29 Oct 2026 19:59:18 GMT
-# ARGS: DISTRO_NAME=apache-storm-3.1.0
+# Wed, 11 Nov 2026 20:49:39 GMT
+ARG DISTRO_NAME=apache-storm-3.2.0
+# Wed, 11 Nov 2026 20:50:04 GMT
+# ARGS: DISTRO_NAME=apache-storm-3.2.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     importKeys() {       for key in       5167DE337E7370373499FC1DA4A672F11B5050C8       32C8C0BEE3D01AF46B6E24B0AC30BFA8FEF0711F       79B03D059E628478FC9F1D8B152CAD0C46E87B61       51379DA8A7AE5B02674EF15C134716AF768D9B6E       DA903F2CF9BBD42EAECFA9E45EA6FAEF09A4474D       6156BAC0C21A1991CF1B690AB2973D6F4A67943A       B83D15E72253ED1104EB4FBBDAB472F0E5B8A431       339F3B2F72129ABCA81D96DA91EA7956A2DAD9CE       72B436558AA9CDCA2C4CBAC340D4B35E2C1452E5       ; do         gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$key" ||         gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||         gpg --batch --keyserver hkps://pgp.mit.edu --recv-keys "$key" ||         gpg --batch --keyserver hkps://keyserver.pgp.com --recv-keys "$key" ;       done;     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     importKeys;     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     mv "$DISTRO_NAME" apache-storm;     chown -R storm:storm apache-storm # buildkit
-# Thu, 29 Oct 2026 19:59:18 GMT
+# Wed, 11 Nov 2026 20:50:04 GMT
 WORKDIR /apache-storm
-# Thu, 29 Oct 2026 19:59:18 GMT
+# Wed, 11 Nov 2026 20:50:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm/bin
-# Thu, 29 Oct 2026 19:59:18 GMT
+# Wed, 11 Nov 2026 20:50:04 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Thu, 29 Oct 2026 19:59:18 GMT
+# Wed, 11 Nov 2026 20:50:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -262,47 +262,47 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 29 Oct 2026 19:11:00 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc939a0da2b8bef77acdef361e4d094e6b4833a4d4ac414aeee8dfe65998cc38`  
-		Last Modified: Thu, 29 Oct 2026 19:59:43 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:5bf2da78ddf050c78a7618f051fc1524c69ebc0626177d301072e4867c68dfd8`  
+		Last Modified: Wed, 11 Nov 2026 20:50:29 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bcd2925d03e74d3daf08a90a08440c50ab3918a049560e990c73e1b6a922d93c`  
-		Last Modified: Thu, 29 Oct 2026 19:59:43 GMT  
-		Size: 19.4 MB (19364086 bytes)  
+	-	`sha256:6842875820488e566c9b86545d1fc98afbdc39f8a7ef4d25fb4f7939034e97cd`  
+		Last Modified: Wed, 11 Nov 2026 20:50:29 GMT  
+		Size: 20.1 MB (20055034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec97db40b9194e9562ec56475e5857d9950bcdb7f3269de21768ce9de81c34d7`  
-		Last Modified: Thu, 29 Oct 2026 19:59:49 GMT  
-		Size: 318.5 MB (318476783 bytes)  
+	-	`sha256:89545ba19757eb7dec3771a75b03efebc74439971d271ae3236e42303335617c`  
+		Last Modified: Wed, 11 Nov 2026 20:50:35 GMT  
+		Size: 323.0 MB (323020936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba1fdee678b21fed19aa1f229a7dc8322cd68ddea67e8fb3d4de8f5e0b632a1c`  
-		Last Modified: Thu, 29 Oct 2026 19:59:43 GMT  
+	-	`sha256:4b7260320fb55f14349b29b1c97716ff987296b292ab65825225f7802d0eea29`  
+		Last Modified: Wed, 11 Nov 2026 20:50:29 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `storm:latest` - unknown; unknown
 
 ```console
-$ docker pull storm@sha256:e30334fd8acefb1584d250a1ff3f31e3fca110adf20d5251a0b1682afdb76b99
+$ docker pull storm@sha256:941eed08c2c16f8457966fb9f23d3a47106b4502feeee8784a6816f9f009240b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6307694 bytes)**  
+-	Total Size: **6.3 MB (6312565 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d4359ccc350d3c3efd36027be536eddde212686b7e426377bfd6fc1799883e4`
+-	Image ID: `sha256:1a1fd869cddaf91c4dd38844c16038358aa652d491f1f251d8335faef32c34a9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3debc97cda159c72a8562c0c307f52c2ddc14668d032d24103c5ebe8f953c5fe`  
-		Last Modified: Thu, 29 Oct 2026 19:59:43 GMT  
-		Size: 6.3 MB (6279846 bytes)  
+	-	`sha256:8d3ab103cc2e941e7b9b011339d344ef844c2100c4338cf0acd5648ecb592ea6`  
+		Last Modified: Wed, 11 Nov 2026 20:50:29 GMT  
+		Size: 6.3 MB (6284716 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:accdfddb3852e985e7173055002abb88b961a014c6bead96f260490126b1bdb5`  
-		Last Modified: Thu, 29 Oct 2026 19:59:43 GMT  
-		Size: 27.8 KB (27848 bytes)  
+	-	`sha256:4244592c4023c91888b58b37a62e68d6546a96cb8b1c0a795caf4d1eb3dfde0a`  
+		Last Modified: Wed, 11 Nov 2026 20:50:29 GMT  
+		Size: 27.8 KB (27849 bytes)  
 		MIME: application/vnd.in-toto+json
