@@ -1,10 +1,10 @@
-# `postfixadmin:4.0.5-apache`
+# `postfixadmin:4.0.6-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:89c3da01b1deb11c5c2a7152409fad42dec84598c7b445d9d9632ae3829061a5`
-- Created: `2026-11-05T20:24:48.928961862Z`
-- Virtual Size: ~ 623.43 Mb  
+- Image ID: `sha256:f65c4e3b369afefa5e8747369d434fc3f44c0d8bc5ba872863e5411fd2232475`
+- Created: `2026-11-10T20:14:37.581654504Z`
+- Virtual Size: ~ 629.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -18,13 +18,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.36`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.36.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.36.tar.xz.asc`
-  - `PHP_SHA256=dd54693aa334c5c4d72e9aee96b082c2473750a18a6c1d105789c93a3b1692fd`
-  - `POSTFIXADMIN_VERSION=4.0.5`
-  - `POSTFIXADMIN_SHA512=b9549137e5bb6cf69fe76aef2711092a7e74ec223ee272d0303430b03da16ba8cfe704047f8e07ee5bd1ef6b632cac9ae2c0830271629b193c395197e1f4d93d`
+  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
+  - `PHP_VERSION=8.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
+  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
+  - `POSTFIXADMIN_VERSION=4.0.6`
+  - `POSTFIXADMIN_SHA512=8ad191cbd56f8413a7442a2f6c63e559fd5bfa59424e42960350946eeafed383f7715872ac57a169fbe3269d91067d442efda45eb3e0414cdca4f7da2f4f91fb`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 - Labels:
@@ -113,21 +113,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.69-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69-1%7edeb13u1.dsc' apache2_2.4.69-1~deb13u1.dsc 3529 SHA256:de4332321f0ac4491031ab7fb84bdfd62dfc48d98a93f628a0b2036044f0ffb6
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz' apache2_2.4.69.orig.tar.gz 10822928 SHA256:c551b9861e26f146f57e1b1765e69c89a60b3db0ec252ccab0d36283487016bb
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz.asc' apache2_2.4.69.orig.tar.gz.asc 870 SHA256:68c3ec70702d49fb2f0f9fd9ff6788bfcd88a9f7e4786c0ee0a0b8d6d9741f8e
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69-1%7edeb13u1.debian.tar.xz' apache2_2.4.69-1~deb13u1.debian.tar.xz 828308 SHA256:779dac5ec4c04c08eb030e2182652607ad61b65fcc1b24051381c7a6411ab3de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.69-1~deb13u1/
 
-- https://sources.debian.net/src/apache2/2.4.69-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.69-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.69-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3+deb13u1`
 
