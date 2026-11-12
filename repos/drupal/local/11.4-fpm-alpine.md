@@ -1,10 +1,10 @@
-# `drupal:11.4.11-php8.5-fpm-alpine3.24`
+# `drupal:11.4.12-php8.5-fpm-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:550d125afd57a16ccca53f3e76c24b1c434fa87519cf658504ada88f108a3306`
-- Created: `2026-11-05T20:16:10.58490713Z`
-- Virtual Size: ~ 230.78 Mb  
+- Image ID: `sha256:ca5935596f111d6c9198511316ee4037a36eb4d3c8e2737de88fa21c7948fb8e`
+- Created: `2026-11-10T21:40:15.02778321Z`
+- Virtual Size: ~ 231.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc`
   - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
-  - `DRUPAL_VERSION=11.4.11`
+  - `DRUPAL_VERSION=11.4.12`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -913,16 +913,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
