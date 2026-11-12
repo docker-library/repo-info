@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b50d55ffad8d943dc2148e56eb1fea1ef43f507cc8d253ac77c246f96687379`
-- Created: `2026-10-27T01:21:06.765701491Z`
-- Virtual Size: ~ 4.55 Gb  
+- Image ID: `sha256:63c4eb406caac647ee198b3f8fb0a02f7ab3c36028dc3290541cc726f71e4164`
+- Created: `2026-11-12T01:22:15.672680232Z`
+- Virtual Size: ~ 4.83 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LC_ALL=C.UTF-8`
   - `ROS_DISTRO=rolling`
 - Labels:
-  - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
+  - `org.opencontainers.image.created=2026-11-06T10:28:50.132595+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -221,12 +221,12 @@ $ apt-get source -qq --print-uris apparmor=5.0.2-0ubuntu1~26.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_5.0.2-0ubuntu1%7e26.04.1.dsc' apparmor_5.0.2-0ubuntu1~26.04.1.dsc 3522 SHA512:d2013fbabfec519da9c3d9f7bc2e9f221f5e083ad30c66c18fe47251240a16c8256d0a232f4b5f932c0b2a70c3421604fb954409e23983bd052835c98dc1461a
 ```
 
-### `dpkg` source package: `apt=3.2.0`
+### `dpkg` source package: `apt=3.2.1ubuntu0.1`
 
 Binary Packages:
 
-- `apt=3.2.0`
-- `libapt-pkg7.0:amd64=3.2.0`
+- `apt=3.2.1ubuntu0.1`
+- `libapt-pkg7.0:amd64=3.2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -239,9 +239,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA512:4a4582b1949244b0f597f2c4ba09bab21f734b1c0d1168d340992821f4fb1b1e09ec8a2f9a77b9380f09b4d7cf2989acfa02d8f91601d7a210367039ed41a947
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA512:02a029afdbc7612d860e145120113da0e25abcb5cbef947f5838fae41d02361d3c150322ef24a0d6e675d66e45b491da53fd0e5c8311d45f017a72e8eba6e33f
+$ apt-get source -qq --print-uris apt=3.2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.1ubuntu0.1.tar.xz' apt_3.2.1ubuntu0.1.tar.xz 2477440 SHA512:a391d0efa3ed6b4029cdae42db7861bbf1df6f84fb650a2a7c1d6645d0fc5e78e97232f06787cf400c3c36bce033a1443710bb56e72d01c6230bf4d8ca5baeed
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.1ubuntu0.1.dsc' apt_3.2.1ubuntu0.1.dsc 3171 SHA512:648bd4c1c10521e851587fbfb370f1e323cb33a91e3795b7d61b2ae29095522dd093767d6877eef51c1302f9016f96f0113b5cda317b7c86cca18e33ec8e0381
 ```
 
 ### `dpkg` source package: `armadillo=1:15.2.1+dfsg-2`
@@ -466,11 +466,11 @@ $ apt-get source -qq --print-uris avahi=0.8-18ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-18ubuntu1.1.dsc' avahi_0.8-18ubuntu1.1.dsc 4427 SHA512:1d080854c1d93888f0cc08ed965e2217e0641512aec8e93763506466aa89437bf1b5381643ad77db3e1d19a611c5e80b011fe37dde62f59fd0ceeeb30a5c4605
 ```
 
-### `dpkg` source package: `base-files=14ubuntu6.2`
+### `dpkg` source package: `base-files=14ubuntu6.3`
 
 Binary Packages:
 
-- `base-files=14ubuntu6.2`
+- `base-files=14ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -478,9 +478,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=14ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.3.tar.xz' base-files_14ubuntu6.3.tar.xz 98108 SHA512:734219c76cc9b93a5805c61b051dd4455af1b9e2455517b9f295980f879f11cc4b1f85dfb5fc4b850ddbcb435ea03e8e13bb5e1e45078c1926da12fc750fab19
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.3.dsc' base-files_14ubuntu6.3.dsc 1735 SHA512:23243203a83e3f982b81e41545073d672670ea8ed3bbbadfdd7f6ac3886408979cd39dd3eee0749e7312c0e3a5e3e4ae198b3c38a33accf777a0cfe8b295987a
+```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -911,11 +915,11 @@ $ apt-get source -qq --print-uris c-blosc=1.21.5+ds-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/c-blosc/c-blosc_1.21.5%2bds-2.debian.tar.xz' c-blosc_1.21.5+ds-2.debian.tar.xz 8120 SHA256:85d219e3e608f90dc332d107438f9dfa1a3db24767bdae2a6c6a90e687cbffb4
 ```
 
-### `dpkg` source package: `ca-certificates-java=20260311`
+### `dpkg` source package: `ca-certificates-java=20260311ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates-java=20260311`
+- `ca-certificates-java=20260311ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
@@ -924,16 +928,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates-java=20260311
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20260311.dsc' ca-certificates-java_20260311.dsc 1933 SHA256:2689c5c0c55f470d8daebdbeea8e867be43583fad6f98e3b4b0dd480f826f292
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20260311.tar.xz' ca-certificates-java_20260311.tar.xz 19684 SHA256:acb82ad4b200fe71d3ad95346932e2f94d2fa288e543038bffcacd21ac86d33d
+$ apt-get source -qq --print-uris ca-certificates-java=20260311ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20260311ubuntu0.26.04.2.tar.xz' ca-certificates-java_20260311ubuntu0.26.04.2.tar.xz 20340 SHA512:73a6f1a56b0f64135a1a6376e45ea6061a9794bca04c136d48fc28d905bbc501583f3da4200a218eacc42bd5ad576b801ae77cd7473b91eb26fd1ef9ed00e9ce
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates-java/ca-certificates-java_20260311ubuntu0.26.04.2.dsc' ca-certificates-java_20260311ubuntu0.26.04.2.dsc 2072 SHA512:2fc23512c4a5a09919e16e2c87ab5611e44961d98cfa3764753f236944182613f92437d921f3e7995eefea2b0dc6c0d448e874af291b0647f379efa1c17c4364
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.26.04.1`
+- `ca-certificates=20260816ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -941,9 +945,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.tar.xz' ca-certificates_20260816ubuntu0.26.04.2.tar.xz 274288 SHA512:1bebf27387b9f40d41ee9bf5fedee1456f737f6159bdd945cd597e4f8b6b4f694d27a742d353daa07269f57b25e5a5db17a889f57e4b23f899d56d880b000b08
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.dsc' ca-certificates_20260816ubuntu0.26.04.2.dsc 1876 SHA512:c8b1031dd352c77380e9a10f05d54475e50d6fe854b817136e243f9e229c35a9377b7d3f3c9ec1d3996aa317070c608390d5bad9e1c12c52d81865137d7c11f5
+```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
@@ -2756,15 +2764,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.debian.tar.xz' glibc_2.43-2ubuntu2.4.debian.tar.xz 530764 SHA512:18a877a97dc66d887d6d01f73358f527ce6233555749997b068cc45ae287f3635d76979e41b9b78e674799695369c055b8a66449793e3b99c3dc57f12ded4935
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.dsc' glibc_2.43-2ubuntu2.4.dsc 9078 SHA512:b07d5c013046605738daf62c21acaa7a87d8bd7fcfaa67187dc282c9ecea3cfb546bb5d43e5eddc429822cc258a844aa5d24a460fef4d4c88db21e3c0c008b24
-```
 
 ### `dpkg` source package: `glycin=2.1.5+ds-0ubuntu0.2`
 
@@ -3075,11 +3077,11 @@ $ apt-get source -qq --print-uris grep=3.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.12-1.debian.tar.xz' grep_3.12-1.debian.tar.xz 24160 SHA256:5baef65e599c41285a0393c1c6845c03c9b29f14765447911a1871a50321fd42
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.28.2-1ubuntu0.1`
+### `dpkg` source package: `gst-plugins-base1.0=1.28.2-1ubuntu0.2`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.28.2-1ubuntu0.1`
+- `libgstreamer-plugins-base1.0-0:amd64=1.28.2-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -3097,11 +3099,11 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.28.2-1ubuntu0.1
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.28.2-1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2.orig.tar.xz' gst-plugins-base1.0_1.28.2.orig.tar.xz 2529100 SHA512:68f09ed6c456b2763514ad65153e53139e8fe8fe188045da4a7b21b9bc5c607507bb8d84ad79162444e3281cd8b642dd78f73da59cb3dffbab43d8fe6c943dbe
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2.orig.tar.xz.asc' gst-plugins-base1.0_1.28.2.orig.tar.xz.asc 833 SHA512:b2b86cd61a5e45a9e6d7da19360c933525704e79db9c9ab463da1c79ade44d9ebda19f7a7cfc4715079066906ba8d93457af53b6428efdc69db4c10b8a3d2d8c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.1.debian.tar.xz' gst-plugins-base1.0_1.28.2-1ubuntu0.1.debian.tar.xz 58708 SHA512:4d89bfffb617248c32f38e02545637f98ef255d1b9093973f2815030dead799afafae775468e2a08eda14fdde1ac5d973df820fda003ac7e85c03c4f1d624770
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.1.dsc' gst-plugins-base1.0_1.28.2-1ubuntu0.1.dsc 4255 SHA512:77b37a2ad0f7cfe889ad43bbcf9fae67837544f6847762754f112f475652c75f061d7357210ec6c4c55e8ae56fc0d6f7d389c064e8a90654b6b57264e309a37d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.28.2-1ubuntu0.2.debian.tar.xz 59196 SHA512:1d8285dfa6e68024f313fea45b2be0b8dfaf7b1bf433432e614d0e6da6e3e1101c4bd48fe1f7fd5f1db73eaa729b47206f7ff096dacdfd9860a408ab67fe08ee
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.2.dsc' gst-plugins-base1.0_1.28.2-1ubuntu0.2.dsc 4255 SHA512:d46536638508283ba372c028cd28ec351cedd68d390fca3e121203e525a1c628601bdb516cb3c047d5a9c4fa6fae2bb23fdfec3bf961bd1f48dacccf0f62d5c5
 ```
 
 ### `dpkg` source package: `gstreamer1.0=1.28.2-1`
@@ -3190,14 +3192,9 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `lcs-telegraphics-permissive`
 - `sun-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gtk4=4.22.4+ds-0ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk4/gtk4_4.22.4%2bds.orig.tar.xz' gtk4_4.22.4+ds.orig.tar.xz 17127924 SHA512:61a9d18ec044e582060637b3c8d2b135b30e8d062d3a2157d57f53e77f29e14b77fbd2512e6868e5f94e7ad1fc6a2fbcd377baab09bf9093f6713a4962988bd3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk4/gtk4_4.22.4%2bds-0ubuntu0.1.debian.tar.xz' gtk4_4.22.4+ds-0ubuntu0.1.debian.tar.xz 4010436 SHA512:de0153e04a64c5939fa3bd2db134efa4f3e641097f48ff513b3ff8470aac664063cf3e3c035ca3773f75f08f10f7774cdd9a2ea3ac5fc20cf45743c40a596e8c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk4/gtk4_4.22.4%2bds-0ubuntu0.1.dsc' gtk4_4.22.4+ds-0ubuntu0.1.dsc 4315 SHA512:6afd53e46e4d3ebaf1b1a8aeb6c71741578bc337e9e7a5cbd82724fc6acc29f5fb921515cb93fc744446f99277f9d048d762e56db7f07c1cd788a515179ba25f
-```
 
 ### `dpkg` source package: `gzip=1.14-1~exp2ubuntu1.1`
 
@@ -4628,13 +4625,13 @@ $ apt-get source -qq --print-uris libgpg-error=1.58-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58-2.debian.tar.xz' libgpg-error_1.58-2.debian.tar.xz 19792 SHA256:2e4f501ba6b2375ce23492d65192bfaf4658b68daa9c03965720bb1bc3a52cac
 ```
 
-### `dpkg` source package: `libgphoto2=2.5.33-1ubuntu1.1`
+### `dpkg` source package: `libgphoto2=2.5.33-1ubuntu1.2`
 
 Binary Packages:
 
-- `libgphoto2-6t64:amd64=2.5.33-1ubuntu1.1`
-- `libgphoto2-dev:amd64=2.5.33-1ubuntu1.1`
-- `libgphoto2-port12t64:amd64=2.5.33-1ubuntu1.1`
+- `libgphoto2-6t64:amd64=2.5.33-1ubuntu1.2`
+- `libgphoto2-dev:amd64=2.5.33-1ubuntu1.2`
+- `libgphoto2-port12t64:amd64=2.5.33-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgphoto2-6t64/copyright`, `/usr/share/doc/libgphoto2-dev/copyright`, `/usr/share/doc/libgphoto2-port12t64/copyright`)
 
@@ -4662,11 +4659,11 @@ Licenses: (parsed from: `/usr/share/doc/libgphoto2-6t64/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgphoto2=2.5.33-1ubuntu1.1
+$ apt-get source -qq --print-uris libgphoto2=2.5.33-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33.orig.tar.xz' libgphoto2_2.5.33.orig.tar.xz 6958144 SHA512:249338968d0cbe36a3a400719794a738f5c28ea4e5d9540e0c5b1ed27592071d5fdd499845ef7ef5826a9314c95e43b3a1ee5d5c92efa320729af6ec3f5cb925
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33.orig.tar.xz.asc' libgphoto2_2.5.33.orig.tar.xz.asc 833 SHA512:3b6cb2beac8f03df47ff9f44aba6e8dfd7db2e5119b176eb84b723252fc37ff2f8482f37076be85794a9cbe00725525a727f86ca9248dda8d8ebdaa146e8a9ae
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33-1ubuntu1.1.debian.tar.xz' libgphoto2_2.5.33-1ubuntu1.1.debian.tar.xz 105228 SHA512:a5d25227011d058838d7a41237d26444d8418e5c8d8a1c898910fed7d6ff5f3cacd8df92270ec122c51694d1c5c5a298ab26868804eed27f3ecbde4dbd8e73b7
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33-1ubuntu1.1.dsc' libgphoto2_2.5.33-1ubuntu1.1.dsc 3005 SHA512:f2902198089b2d47911480c0fd75607a1f9533d8423f82ab58227126f37e0022dd6eea7e07f370124dee5c8ad3edf8f5c6e9b6e41abca9c16e4ad37cd80edf65
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33-1ubuntu1.2.debian.tar.xz' libgphoto2_2.5.33-1ubuntu1.2.debian.tar.xz 106388 SHA512:c50aa0ecccdda7de714a0cf6d75a1d03e9a88f6cdf9e9262c739a2eb6f420d6b59e78bc205918db9f1dcbf8cd1db76b6a5729b2667b01cd297ed00c356e9e8a0
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgphoto2/libgphoto2_2.5.33-1ubuntu1.2.dsc' libgphoto2_2.5.33-1ubuntu1.2.dsc 3034 SHA512:088ccc414f83f3e5ed33b0f429ebe9c544b7617d154b70c472af0cd9ce876238fb871c51312e13a50e0f6e57d2e651600de7f49479521d1bce7dfd62b53223e8
 ```
 
 ### `dpkg` source package: `libgsm=1.0.23-2`
@@ -4737,13 +4734,13 @@ $ apt-get source -qq --print-uris libhdf4=4.3.1-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/libh/libhdf4/libhdf4_4.3.1-2.debian.tar.xz' libhdf4_4.3.1-2.debian.tar.xz 37948 SHA256:95619ec1196a0771972a35e36ba34990b589d38b14981277f54f74679c8a051d
 ```
 
-### `dpkg` source package: `libheif=1.21.2-3ubuntu0.6`
+### `dpkg` source package: `libheif=1.21.2-3ubuntu0.7`
 
 Binary Packages:
 
-- `libheif-dev:amd64=1.21.2-3ubuntu0.6`
-- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.6`
-- `libheif1:amd64=1.21.2-3ubuntu0.6`
+- `libheif-dev:amd64=1.21.2-3ubuntu0.7`
+- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.7`
+- `libheif1:amd64=1.21.2-3ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -4757,9 +4754,14 @@ Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.7.debian.tar.xz' libheif_1.21.2-3ubuntu0.7.debian.tar.xz 58776 SHA512:cabaaa42547481ff1c2dd5530da1bc60ca6d8cba257d0cc0401c22f8357e4e61cd0c28418e96e74558d697a7acd4deaa80a977a0be43409bbd960638baaeff8f
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.7.dsc' libheif_1.21.2-3ubuntu0.7.dsc 3989 SHA512:9db6c368c6f4d018c70d37e39421aa135405e553bd965031bbdb1eac6098be2d9c24d381d89f029ad8be3911c0a504effbe57f409369baea6bc74e208d60edcc
+```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -6552,19 +6554,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-38.38`
+### `dpkg` source package: `linux=7.0.0-43.43`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-38.38`
+- `linux-libc-dev:amd64=7.0.0-43.43`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=7.0.0-43.43
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
+```
 
 ### `dpkg` source package: `llvm-toolchain-21=1:21.1.8-6ubuntu1`
 
@@ -7089,12 +7096,12 @@ $ apt-get source -qq --print-uris mypy=1.19.1-5build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mypy/mypy_1.19.1-5build1.dsc' mypy_1.19.1-5build1.dsc 3147 SHA256:4321c08e71c6cf9b7440b00939e9c51776716c2eb6fa43c3bb4db01588e63d9d
 ```
 
-### `dpkg` source package: `mysql-8.4=8.4.11-0ubuntu0.26.04.1`
+### `dpkg` source package: `mysql-8.4=8.4.13-0ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.4.11-0ubuntu0.26.04.1`
-- `libmysqlclient24:amd64=8.4.11-0ubuntu0.26.04.1`
+- `libmysqlclient-dev=8.4.13-0ubuntu0.26.04.2`
+- `libmysqlclient24:amd64=8.4.13-0ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient24/copyright`)
 
@@ -7112,11 +7119,11 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.11-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11.orig.tar.gz' mysql-8.4_8.4.11.orig.tar.gz 479170675 SHA512:56245b74e2ef45dcaaea76ff1db2c62e7ef24f3b05098ebb9785c93a04cdfdca36cc6fa69e0dd35f7be778ebeb46a831afa85647c9e9a9258bfeea7311013669
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11.orig.tar.gz.asc' mysql-8.4_8.4.11.orig.tar.gz.asc 833 SHA512:68d5452a8c83f2051df02516e7c1b0cdcb5c34e228b569b9712e89fbf26518ba0ea4f1e177cf7675fe5f05eeecdc535bff56b57fbe765226f2eb969032b12a84
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11-0ubuntu0.26.04.1.debian.tar.xz' mysql-8.4_8.4.11-0ubuntu0.26.04.1.debian.tar.xz 136060 SHA512:068ef6055b4fa79a7d679eb6a33bc062394452911a3ce33d91bc22b2132b355f4acd3199f18f433c68d9d0dcffa7e8a83ffcd200b0e05984f8827bc9457963cb
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11-0ubuntu0.26.04.1.dsc' mysql-8.4_8.4.11-0ubuntu0.26.04.1.dsc 3806 SHA512:3169b052158ad1cf5637979a49998ec91e3c352e8c7412b694ae075de15817c815254727d9b1dc5cc7abb4c52eff310d24980a918ba8ce31bf9fda395d5bd0ff
+$ apt-get source -qq --print-uris mysql-8.4=8.4.13-0ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13.orig.tar.gz' mysql-8.4_8.4.13.orig.tar.gz 479316148 SHA512:cae9a3ce644bf78a74096d8324120cbc707c886e77bc9cc05ce96f2bbda8ad9f0d074f0bac77e5e6c4724eeb78792f512bd76839acfd1bb07a487c5659c2d107
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13.orig.tar.gz.asc' mysql-8.4_8.4.13.orig.tar.gz.asc 833 SHA512:793ed8288915cccd264b7273c51c7cad661972a2c90959300546101e0470a756cea021822b7c240f08276683de0b425731a9498f2e0fdfce098158ff413511ac
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13-0ubuntu0.26.04.2.debian.tar.xz' mysql-8.4_8.4.13-0ubuntu0.26.04.2.debian.tar.xz 136712 SHA512:6e232e7a32c7746baf2e89af434dabcd08fe9e1811d424e62cf32404d95fd52759d55be4a60704fa2ffcdf28446af3ad17ca9aacf928c32ce05dd68668eed0a0
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13-0ubuntu0.26.04.2.dsc' mysql-8.4_8.4.13-0ubuntu0.26.04.2.dsc 3806 SHA512:30b928a49f829b64cd5416394b92f14c55aae106a8cdf7c1c15c552e7f140246a95346a5a4694b46ebbd3dba8ad18fc94baefb8e61e5a8fad94644cee726e17d
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu2`
@@ -7638,14 +7645,14 @@ $ apt-get source -qq --print-uris openexr=3.1.13-2build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.13-2build1.dsc' openexr_3.1.13-2build1.dsc 2317 SHA256:1b424ad120c1fab9a1f758e649c35ff4777a68e8f66ac3abb1e8128fdc66124a
 ```
 
-### `dpkg` source package: `openjdk-25=25.0.4.1+1-1~26.04.4`
+### `dpkg` source package: `openjdk-25=25.0.5.0.3+1-1~26.04.1`
 
 Binary Packages:
 
-- `openjdk-25-jdk:amd64=25.0.4.1+1-1~26.04.4`
-- `openjdk-25-jdk-headless:amd64=25.0.4.1+1-1~26.04.4`
-- `openjdk-25-jre:amd64=25.0.4.1+1-1~26.04.4`
-- `openjdk-25-jre-headless:amd64=25.0.4.1+1-1~26.04.4`
+- `openjdk-25-jdk:amd64=25.0.5.0.3+1-1~26.04.1`
+- `openjdk-25-jdk-headless:amd64=25.0.5.0.3+1-1~26.04.1`
+- `openjdk-25-jre:amd64=25.0.5.0.3+1-1~26.04.1`
+- `openjdk-25-jre-headless:amd64=25.0.5.0.3+1-1~26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/doc/openjdk-25-jdk-headless/copyright`, `/usr/share/doc/openjdk-25-jre/copyright`, `/usr/share/doc/openjdk-25-jre-headless/copyright`)
 
@@ -7655,9 +7662,15 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/d
 - `LGPL-2.1`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-25=25.0.5.0.3+1-1~26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1.orig-googletest.tar.xz' openjdk-25_25.0.5.0.3+1.orig-googletest.tar.xz 617052 SHA512:d3b5620bd8a56bfa6b66c54350d04411aa18016ca8d242ef6e068c25b7b0bbb12556bfbed0409a013ac86860f15231dd63abbdf539b47585f3c91474e6907df5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1.orig.tar.xz' openjdk-25_25.0.5.0.3+1.orig.tar.xz 74472860 SHA512:23e2fd28dbfea29257c3c3697f1d1c167a5fcba51c6bf20f4e6a3d5e4913e7379d4132bd8b3157b8e5fa242e05d2420115d96b57804b0468e64a97edf47cde19
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1-1%7e26.04.1.debian.tar.xz' openjdk-25_25.0.5.0.3+1-1~26.04.1.debian.tar.xz 411560 SHA512:f095486e4df9410776511fe4ddb1fecacc3e021caf70ecf42341a2232fb1811ee7ef3e35bb24b40ad0c535f5f1b9d4d3d74f996cbbbffed052c7389c52514b35
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1-1%7e26.04.1.dsc' openjdk-25_25.0.5.0.3+1-1~26.04.1.dsc 5249 SHA512:7355e82eab5685c50223fc402edd1f7da6d9653481fa334a1ac6403c803558fe5d3e77b8feebc2cb710636860cb7c71c2471b28a791218b78638ae123d8697bd
+```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1ubuntu0.1`
 
@@ -8088,15 +8101,15 @@ $ apt-get source -qq --print-uris pcl=1.15.1+dfsg-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pcl/pcl_1.15.1%2bdfsg-2.debian.tar.xz' pcl_1.15.1+dfsg-2.debian.tar.xz 31860 SHA512:3c375abdd5f2aaf610ff9bf1033dc6b01b4ee9f8d1263b617479dac6ba9cf697bacca7290cf21409971f1e81954a5c797dd64d132b75faadcd9f672f76644c94
 ```
 
-### `dpkg` source package: `pcre2=10.46-1build1`
+### `dpkg` source package: `pcre2=10.46-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpcre2-16-0:amd64=10.46-1build1`
-- `libpcre2-32-0:amd64=10.46-1build1`
-- `libpcre2-8-0:amd64=10.46-1build1`
-- `libpcre2-dev:amd64=10.46-1build1`
-- `libpcre2-posix3:amd64=10.46-1build1`
+- `libpcre2-16-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-32-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-8-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-dev:amd64=10.46-1ubuntu0.1`
+- `libpcre2-posix3:amd64=10.46-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/doc/libpcre2-32-0/copyright`, `/usr/share/doc/libpcre2-8-0/copyright`, `/usr/share/doc/libpcre2-dev/copyright`, `/usr/share/doc/libpcre2-posix3/copyright`)
 
@@ -8109,10 +8122,10 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.46-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.diff.gz' pcre2_10.46-1build1.diff.gz 8804 SHA256:3534c69dec410207e74bf9fd6ed334ad5827fb6de1d0715175b7a14257c5bc72
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
+$ apt-get source -qq --print-uris pcre2=10.46-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA512:8bc85f1e47633f4cab07e00b65e9f94a38bb8db56d7ea0a3068774a5ccfe5b777e6645c0a345dd265a06aa6672448ad51c9e56636c48ec87dae9f884a998e00b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu0.1.diff.gz' pcre2_10.46-1ubuntu0.1.diff.gz 19750 SHA512:d23f0a83eec42f89d4d1edb3281311e6b546e12d660477bfc06564c9e12e198b40226c337d51659e6768662cd7e3359f18fda6ffbb3a2125a595f32999c358d0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu0.1.dsc' pcre2_10.46-1ubuntu0.1.dsc 2371 SHA512:d9863b1389f399bbd864a235a3d739e07a4ac50a5eb19c55c557a56b878054d385698e00f49d0cf1a785774860c129f016e270fbebb9baeef214febb48f0d4f6
 ```
 
 ### `dpkg` source package: `pcsc-lite=2.4.1-1`
@@ -8139,14 +8152,14 @@ $ apt-get source -qq --print-uris pcsc-lite=2.4.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcsc-lite/pcsc-lite_2.4.1-1.debian.tar.xz' pcsc-lite_2.4.1-1.debian.tar.xz 20096 SHA256:46e5398c9d00b4de884e0b055de6bfb56e07e928545ac904e187ae575e60610a
 ```
 
-### `dpkg` source package: `perl=5.40.1-7ubuntu0.3`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.4`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-7ubuntu0.3`
-- `perl=5.40.1-7ubuntu0.3`
-- `perl-base=5.40.1-7ubuntu0.3`
-- `perl-modules-5.40=5.40.1-7ubuntu0.3`
+- `libperl5.40:amd64=5.40.1-7ubuntu0.4`
+- `perl=5.40.1-7ubuntu0.4`
+- `perl-base=5.40.1-7ubuntu0.4`
+- `perl-modules-5.40=5.40.1-7ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -8179,11 +8192,11 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.4.debian.tar.xz' perl_5.40.1-7ubuntu0.4.debian.tar.xz 181612 SHA512:462b62da237358c3dca9c8537d891aa49ef2e7a67cc9500298926f9e92fb73600442d47904fd9328f3ab0e35e8cfe025639c738d47707dab61cb0f166e139d11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.4.dsc' perl_5.40.1-7ubuntu0.4.dsc 3052 SHA512:ad4cec5d64419273e8f72abe44a2eec1a072d519d48d0b413977dabe9498e66b94c036a65c79f3e6ff154915152f60195b74a612d75aacf43030d027b8f2f5b6
 ```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
@@ -8679,6 +8692,27 @@ $ apt-get source -qq --print-uris python-cffi=2.0.0-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_2.0.0.orig.tar.gz' python-cffi_2.0.0.orig.tar.gz 523588 SHA256:44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_2.0.0-3build1.debian.tar.xz' python-cffi_2.0.0-3build1.debian.tar.xz 9464 SHA256:816fc99349e60a18c58025ac45cbad305729d381ef4daaf94cc7cf4ef87de8ce
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_2.0.0-3build1.dsc' python-cffi_2.0.0-3build1.dsc 2589 SHA256:74d9e2d022e44088b3cf6e0081dacb2c62b8380d912cab3c62f46c7000c7675b
+```
+
+### `dpkg` source package: `python-colorama=0.4.6-4build1`
+
+Binary Packages:
+
+- `python3-colorama=0.4.6-4build1`
+
+Licenses: (parsed from: `/usr/share/doc/python3-colorama/copyright`)
+
+- `BSD-3`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-colorama=0.4.6-4build1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-colorama/python-colorama_0.4.6.orig.tar.gz' python-colorama_0.4.6.orig.tar.gz 116300 SHA256:2d0543c3970840160b32656ab83d43b7f3533208c2c5f3ee5b839940d00af0bd
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-colorama/python-colorama_0.4.6-4build1.debian.tar.xz' python-colorama_0.4.6-4build1.debian.tar.xz 6292 SHA256:a8cd6fbb4d271d484568be3b5023ed0d403a78b93fad1525dc532de9210cc802
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-colorama/python-colorama_0.4.6-4build1.dsc' python-colorama_0.4.6-4build1.dsc 2208 SHA256:99b8af2bdc87f73c21f7f1701be1e8979fe61e9d7ebaa6706ad56ec5b5a99f15
 ```
 
 ### `dpkg` source package: `python-cryptography=46.0.5-1ubuntu2.2`
@@ -9919,39 +9953,39 @@ $ apt-get source -qq --print-uris ros-osrf-pycommon=2.1.7-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/r/ros-osrf-pycommon/ros-osrf-pycommon_2.1.7-1.debian.tar.xz' ros-osrf-pycommon_2.1.7-1.debian.tar.xz 3004 SHA256:a50d34563dfc7fb2d20b5c1c3c0eff5fdfef91129a096a8df033470c62abb534
 ```
 
-### `dpkg` source package: `ros-rolling-action-msgs=2.5.1-1resolute.20261010.102811`
+### `dpkg` source package: `ros-rolling-action-msgs=2.5.2-1resolute.20261103.162152`
 
 Binary Packages:
 
-- `ros-rolling-action-msgs=2.5.1-1resolute.20261010.102811`
+- `ros-rolling-action-msgs=2.5.2-1resolute.20261103.162152`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-action-msgs/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-auto=2.9.2-1resolute.20260908.141814`
+### `dpkg` source package: `ros-rolling-ament-cmake-auto=2.9.3-1resolute.20261023.000858`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-auto=2.9.2-1resolute.20260908.141814`
+- `ros-rolling-ament-cmake-auto=2.9.3-1resolute.20261023.000858`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-auto/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-copyright=0.21.3-1resolute.20261004.000413`
+### `dpkg` source package: `ros-rolling-ament-cmake-copyright=0.21.4-1resolute.20261022.214440`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-copyright=0.21.3-1resolute.20261004.000413`
+- `ros-rolling-ament-cmake-copyright=0.21.4-1resolute.20261022.214440`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-copyright/copyright`)
 
@@ -9961,25 +9995,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-copyright/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-core=2.9.2-1resolute.20260908.121602`
+### `dpkg` source package: `ros-rolling-ament-cmake-core=2.9.3-1resolute.20261022.140244`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-core=2.9.2-1resolute.20260908.121602`
+- `ros-rolling-ament-cmake-core=2.9.3-1resolute.20261022.140244`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-core/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-cppcheck=0.21.3-1resolute.20261004.000234`
+### `dpkg` source package: `ros-rolling-ament-cmake-cppcheck=0.21.4-1resolute.20261022.181523`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-cppcheck=0.21.3-1resolute.20261004.000234`
+- `ros-rolling-ament-cmake-cppcheck=0.21.4-1resolute.20261022.181523`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-cppcheck/copyright`)
 
@@ -9989,11 +10023,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-cppcheck/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-cpplint=0.21.3-1resolute.20261004.000237`
+### `dpkg` source package: `ros-rolling-ament-cmake-cpplint=0.21.4-1resolute.20261022.180811`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-cpplint=0.21.3-1resolute.20261004.000237`
+- `ros-rolling-ament-cmake-cpplint=0.21.4-1resolute.20261022.180811`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-cpplint/copyright`)
 
@@ -10003,95 +10037,95 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-cpplint/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-definitions=2.9.2-1resolute.20260908.131045`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-definitions=2.9.3-1resolute.20261022.154459`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-definitions=2.9.2-1resolute.20260908.131045`
+- `ros-rolling-ament-cmake-export-definitions=2.9.3-1resolute.20261022.154459`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-definitions/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-dependencies=2.9.2-1resolute.20260908.131311`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-dependencies=2.9.3-1resolute.20261022.154557`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-dependencies=2.9.2-1resolute.20260908.131311`
+- `ros-rolling-ament-cmake-export-dependencies=2.9.3-1resolute.20261022.154557`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-dependencies/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-include-directories=2.9.2-1resolute.20260908.131055`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-include-directories=2.9.3-1resolute.20261022.154612`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-include-directories=2.9.2-1resolute.20260908.131055`
+- `ros-rolling-ament-cmake-export-include-directories=2.9.3-1resolute.20261022.154612`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-include-directories/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-libraries=2.9.2-1resolute.20260908.131102`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-libraries=2.9.3-1resolute.20261022.154615`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-libraries=2.9.2-1resolute.20260908.131102`
+- `ros-rolling-ament-cmake-export-libraries=2.9.3-1resolute.20261022.154615`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-libraries/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-link-flags=2.9.2-1resolute.20260908.131118`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-link-flags=2.9.3-1resolute.20261022.154714`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-link-flags=2.9.2-1resolute.20260908.131118`
+- `ros-rolling-ament-cmake-export-link-flags=2.9.3-1resolute.20261022.154714`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-link-flags/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-export-targets=2.9.2-1resolute.20260908.134246`
+### `dpkg` source package: `ros-rolling-ament-cmake-export-targets=2.9.3-1resolute.20261022.174638`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-export-targets=2.9.2-1resolute.20260908.134246`
+- `ros-rolling-ament-cmake-export-targets=2.9.3-1resolute.20261022.174638`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-export-targets/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-flake8=0.21.3-1resolute.20261004.000412`
+### `dpkg` source package: `ros-rolling-ament-cmake-flake8=0.21.4-1resolute.20261022.180230`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-flake8=0.21.3-1resolute.20261004.000412`
+- `ros-rolling-ament-cmake-flake8=0.21.4-1resolute.20261022.180230`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-flake8/copyright`)
 
@@ -10101,81 +10135,81 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-flake8/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-gen-version-h=2.9.2-1resolute.20260908.131102`
+### `dpkg` source package: `ros-rolling-ament-cmake-gen-version-h=2.9.3-1resolute.20261022.154651`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-gen-version-h=2.9.2-1resolute.20260908.131102`
+- `ros-rolling-ament-cmake-gen-version-h=2.9.3-1resolute.20261022.154651`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-gen-version-h/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-gmock=2.9.2-1resolute.20260908.141651`
+### `dpkg` source package: `ros-rolling-ament-cmake-gmock=2.9.3-1resolute.20261022.232443`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-gmock=2.9.2-1resolute.20260908.141651`
+- `ros-rolling-ament-cmake-gmock=2.9.3-1resolute.20261022.232443`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-gmock/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-gtest=2.9.2-1resolute.20260908.141453`
+### `dpkg` source package: `ros-rolling-ament-cmake-gtest=2.9.3-1resolute.20261022.203022`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-gtest=2.9.2-1resolute.20260908.141453`
+- `ros-rolling-ament-cmake-gtest=2.9.3-1resolute.20261022.203022`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-gtest/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-include-directories=2.9.2-1resolute.20260908.131103`
+### `dpkg` source package: `ros-rolling-ament-cmake-include-directories=2.9.3-1resolute.20261022.154709`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-include-directories=2.9.2-1resolute.20260908.131103`
+- `ros-rolling-ament-cmake-include-directories=2.9.3-1resolute.20261022.154709`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-include-directories/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-libraries=2.9.2-1resolute.20260908.131112`
+### `dpkg` source package: `ros-rolling-ament-cmake-libraries=2.9.3-1resolute.20261022.154241`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-libraries=2.9.2-1resolute.20260908.131112`
+- `ros-rolling-ament-cmake-libraries=2.9.3-1resolute.20261022.154241`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-libraries/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-lint-cmake=0.21.3-1resolute.20261004.001057`
+### `dpkg` source package: `ros-rolling-ament-cmake-lint-cmake=0.21.4-1resolute.20261022.180937`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-lint-cmake=0.21.3-1resolute.20261004.001057`
+- `ros-rolling-ament-cmake-lint-cmake=0.21.4-1resolute.20261022.180937`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-lint-cmake/copyright`)
 
@@ -10185,11 +10219,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-lint-cmake/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-mypy=0.21.3-1resolute.20261004.000032`
+### `dpkg` source package: `ros-rolling-ament-cmake-mypy=0.21.4-1resolute.20261022.181028`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-mypy=0.21.3-1resolute.20261004.000032`
+- `ros-rolling-ament-cmake-mypy=0.21.4-1resolute.20261022.181028`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-mypy/copyright`)
 
@@ -10199,11 +10233,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-mypy/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-pep257=0.21.3-1resolute.20261004.000445`
+### `dpkg` source package: `ros-rolling-ament-cmake-pep257=0.21.4-1resolute.20261022.180249`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-pep257=0.21.3-1resolute.20261004.000445`
+- `ros-rolling-ament-cmake-pep257=0.21.4-1resolute.20261022.180249`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-pep257/copyright`)
 
@@ -10213,95 +10247,95 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-pep257/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-pytest=2.9.2-1resolute.20260908.141409`
+### `dpkg` source package: `ros-rolling-ament-cmake-pytest=2.9.3-1resolute.20261022.181339`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-pytest=2.9.2-1resolute.20260908.141409`
+- `ros-rolling-ament-cmake-pytest=2.9.3-1resolute.20261022.181339`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-pytest/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-python=2.9.2-1resolute.20260908.131144`
+### `dpkg` source package: `ros-rolling-ament-cmake-python=2.9.3-1resolute.20261022.154734`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-python=2.9.2-1resolute.20260908.131144`
+- `ros-rolling-ament-cmake-python=2.9.3-1resolute.20261022.154734`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-python/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-ros-core=0.16.0-1resolute.20260908.134417`
+### `dpkg` source package: `ros-rolling-ament-cmake-ros-core=0.16.1-1resolute.20261022.180753`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-ros-core=0.16.0-1resolute.20260908.134417`
+- `ros-rolling-ament-cmake-ros-core=0.16.1-1resolute.20261022.180753`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-ros-core/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-ros=0.16.0-1resolute.20261010.120934`
+### `dpkg` source package: `ros-rolling-ament-cmake-ros=0.16.1-1resolute.20261103.170234`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-ros=0.16.0-1resolute.20261010.120934`
+- `ros-rolling-ament-cmake-ros=0.16.1-1resolute.20261103.170234`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-ros/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-target-dependencies=2.9.2-1resolute.20260908.131313`
+### `dpkg` source package: `ros-rolling-ament-cmake-target-dependencies=2.9.3-1resolute.20261022.174638`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-target-dependencies=2.9.2-1resolute.20260908.131313`
+- `ros-rolling-ament-cmake-target-dependencies=2.9.3-1resolute.20261022.174638`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-target-dependencies/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-test=2.9.2-1resolute.20260908.134251`
+### `dpkg` source package: `ros-rolling-ament-cmake-test=2.9.3-1resolute.20261022.174636`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-test=2.9.2-1resolute.20260908.134251`
+- `ros-rolling-ament-cmake-test=2.9.3-1resolute.20261022.174636`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-test/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-uncrustify=0.21.3-1resolute.20261004.000352`
+### `dpkg` source package: `ros-rolling-ament-cmake-uncrustify=0.21.4-1resolute.20261023.003056`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-uncrustify=0.21.3-1resolute.20261004.000352`
+- `ros-rolling-ament-cmake-uncrustify=0.21.4-1resolute.20261023.003056`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-uncrustify/copyright`)
 
@@ -10311,25 +10345,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-uncrustify/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-version=2.9.2-1resolute.20260908.131129`
+### `dpkg` source package: `ros-rolling-ament-cmake-version=2.9.3-1resolute.20261022.154852`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-version=2.9.2-1resolute.20260908.131129`
+- `ros-rolling-ament-cmake-version=2.9.3-1resolute.20261022.154852`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-version/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake-xmllint=0.21.3-1resolute.20261004.000506`
+### `dpkg` source package: `ros-rolling-ament-cmake-xmllint=0.21.4-1resolute.20261022.180249`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake-xmllint=0.21.3-1resolute.20261004.000506`
+- `ros-rolling-ament-cmake-xmllint=0.21.4-1resolute.20261022.180249`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-xmllint/copyright`)
 
@@ -10339,25 +10373,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake-xmllint/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cmake=2.9.2-1resolute.20260908.134555`
+### `dpkg` source package: `ros-rolling-ament-cmake=2.9.3-1resolute.20261022.180708`
 
 Binary Packages:
 
-- `ros-rolling-ament-cmake=2.9.2-1resolute.20260908.134555`
+- `ros-rolling-ament-cmake=2.9.3-1resolute.20261022.180708`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cmake/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-copyright=0.21.3-1resolute.20261004.000255`
+### `dpkg` source package: `ros-rolling-ament-copyright=0.21.4-1resolute.20261022.174143`
 
 Binary Packages:
 
-- `ros-rolling-ament-copyright=0.21.3-1resolute.20261004.000255`
+- `ros-rolling-ament-copyright=0.21.4-1resolute.20261022.174143`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-copyright/copyright`)
 
@@ -10367,11 +10401,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-copyright/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cppcheck=0.21.3-1resolute.20261003.235804`
+### `dpkg` source package: `ros-rolling-ament-cppcheck=0.21.4-1resolute.20261022.154841`
 
 Binary Packages:
 
-- `ros-rolling-ament-cppcheck=0.21.3-1resolute.20261003.235804`
+- `ros-rolling-ament-cppcheck=0.21.4-1resolute.20261022.154841`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cppcheck/copyright`)
 
@@ -10381,11 +10415,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cppcheck/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-cpplint=0.21.3-1resolute.20261003.235807`
+### `dpkg` source package: `ros-rolling-ament-cpplint=0.21.4-1resolute.20261022.154914`
 
 Binary Packages:
 
-- `ros-rolling-ament-cpplint=0.21.3-1resolute.20261003.235807`
+- `ros-rolling-ament-cpplint=0.21.4-1resolute.20261022.154914`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cpplint/copyright`)
 
@@ -10396,11 +10430,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-cpplint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-flake8=0.21.3-1resolute.20261004.000313`
+### `dpkg` source package: `ros-rolling-ament-flake8=0.21.4-1resolute.20261022.174145`
 
 Binary Packages:
 
-- `ros-rolling-ament-flake8=0.21.3-1resolute.20261004.000313`
+- `ros-rolling-ament-flake8=0.21.4-1resolute.20261022.174145`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-flake8/copyright`)
 
@@ -10410,11 +10444,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-flake8/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-index-cpp=1.14.2-1resolute.20260908.134835`
+### `dpkg` source package: `ros-rolling-ament-index-cpp=1.14.2-1resolute.20261022.222614`
 
 Binary Packages:
 
-- `ros-rolling-ament-index-cpp=1.14.2-1resolute.20260908.134835`
+- `ros-rolling-ament-index-cpp=1.14.2-1resolute.20261022.222614`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-index-cpp/copyright`)
 
@@ -10424,11 +10458,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-index-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-index-python=1.14.2-1resolute.20260908.131151`
+### `dpkg` source package: `ros-rolling-ament-index-python=1.14.2-1resolute.20261022.155100`
 
 Binary Packages:
 
-- `ros-rolling-ament-index-python=1.14.2-1resolute.20260908.131151`
+- `ros-rolling-ament-index-python=1.14.2-1resolute.20261022.155100`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-index-python/copyright`)
 
@@ -10438,11 +10472,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-index-python/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-lint-auto=0.21.3-1resolute.20261003.235643`
+### `dpkg` source package: `ros-rolling-ament-lint-auto=0.21.4-1resolute.20261022.181403`
 
 Binary Packages:
 
-- `ros-rolling-ament-lint-auto=0.21.3-1resolute.20261003.235643`
+- `ros-rolling-ament-lint-auto=0.21.4-1resolute.20261022.181403`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-auto/copyright`)
 
@@ -10452,11 +10486,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-auto/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-lint-cmake=0.21.3-1resolute.20261004.000733`
+### `dpkg` source package: `ros-rolling-ament-lint-cmake=0.21.4-1resolute.20261022.155152`
 
 Binary Packages:
 
-- `ros-rolling-ament-lint-cmake=0.21.3-1resolute.20261004.000733`
+- `ros-rolling-ament-lint-cmake=0.21.4-1resolute.20261022.155152`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-cmake/copyright`)
 
@@ -10466,11 +10500,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-lint-common=0.21.3-1resolute.20261004.002103`
+### `dpkg` source package: `ros-rolling-ament-lint-common=0.21.4-1resolute.20261023.004113`
 
 Binary Packages:
 
-- `ros-rolling-ament-lint-common=0.21.3-1resolute.20261004.002103`
+- `ros-rolling-ament-lint-common=0.21.4-1resolute.20261023.004113`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-common/copyright`)
 
@@ -10480,11 +10514,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint-common/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-lint=0.21.3-1resolute.20261003.235901`
+### `dpkg` source package: `ros-rolling-ament-lint=0.21.4-1resolute.20261022.153833`
 
 Binary Packages:
 
-- `ros-rolling-ament-lint=0.21.3-1resolute.20261003.235901`
+- `ros-rolling-ament-lint=0.21.4-1resolute.20261022.153833`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint/copyright`)
 
@@ -10494,11 +10528,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-lint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-mypy=0.21.3-1resolute.20261003.235707`
+### `dpkg` source package: `ros-rolling-ament-mypy=0.21.4-1resolute.20261022.155029`
 
 Binary Packages:
 
-- `ros-rolling-ament-mypy=0.21.3-1resolute.20261003.235707`
+- `ros-rolling-ament-mypy=0.21.4-1resolute.20261022.155029`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-mypy/copyright`)
 
@@ -10522,11 +10556,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-package/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-pep257=0.21.3-1resolute.20261004.000338`
+### `dpkg` source package: `ros-rolling-ament-pep257=0.21.4-1resolute.20261022.174143`
 
 Binary Packages:
 
-- `ros-rolling-ament-pep257=0.21.3-1resolute.20261004.000338`
+- `ros-rolling-ament-pep257=0.21.4-1resolute.20261022.174143`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-pep257/copyright`)
 
@@ -10537,11 +10571,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-pep257/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-uncrustify=0.21.3-1resolute.20261004.000026`
+### `dpkg` source package: `ros-rolling-ament-uncrustify=0.21.4-1resolute.20261023.000702`
 
 Binary Packages:
 
-- `ros-rolling-ament-uncrustify=0.21.3-1resolute.20261004.000026`
+- `ros-rolling-ament-uncrustify=0.21.4-1resolute.20261023.000702`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-uncrustify/copyright`)
 
@@ -10551,11 +10585,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-uncrustify/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ament-xmllint=0.21.3-1resolute.20261004.000354`
+### `dpkg` source package: `ros-rolling-ament-xmllint=0.21.4-1resolute.20261022.174305`
 
 Binary Packages:
 
-- `ros-rolling-ament-xmllint=0.21.3-1resolute.20261004.000354`
+- `ros-rolling-ament-xmllint=0.21.4-1resolute.20261022.174305`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-xmllint/copyright`)
 
@@ -10565,11 +10599,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ament-xmllint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-angles=1.16.1-2resolute.20260908.134847`
+### `dpkg` source package: `ros-rolling-angles=1.16.1-2resolute.20261022.222555`
 
 Binary Packages:
 
-- `ros-rolling-angles=1.16.1-2resolute.20260908.134847`
+- `ros-rolling-angles=1.16.1-2resolute.20261022.222555`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-angles/copyright`)
 
@@ -10579,25 +10613,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-angles/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-builtin-interfaces=2.5.1-1resolute.20261010.101307`
+### `dpkg` source package: `ros-rolling-builtin-interfaces=2.5.2-1resolute.20261103.155714`
 
 Binary Packages:
 
-- `ros-rolling-builtin-interfaces=2.5.1-1resolute.20261010.101307`
+- `ros-rolling-builtin-interfaces=2.5.2-1resolute.20261103.155714`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-builtin-interfaces/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-camera-calibration-parsers=7.0.4-1resolute.20261010.140325`
+### `dpkg` source package: `ros-rolling-camera-calibration-parsers=7.0.5-1resolute.20261111.011537`
 
 Binary Packages:
 
-- `ros-rolling-camera-calibration-parsers=7.0.4-1resolute.20261010.140325`
+- `ros-rolling-camera-calibration-parsers=7.0.5-1resolute.20261111.011537`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-calibration-parsers/copyright`)
 
@@ -10607,11 +10641,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-calibration-parsers/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-camera-calibration=8.0.2-1resolute.20261016.222918`
+### `dpkg` source package: `ros-rolling-camera-calibration=8.0.2-1resolute.20261111.013102`
 
 Binary Packages:
 
-- `ros-rolling-camera-calibration=8.0.2-1resolute.20261016.222918`
+- `ros-rolling-camera-calibration=8.0.2-1resolute.20261111.013102`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-calibration/copyright`)
 
@@ -10621,11 +10655,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-calibration/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-camera-info-manager=7.0.4-1resolute.20261010.140718`
+### `dpkg` source package: `ros-rolling-camera-info-manager=7.0.5-1resolute.20261111.012058`
 
 Binary Packages:
 
-- `ros-rolling-camera-info-manager=7.0.4-1resolute.20261010.140718`
+- `ros-rolling-camera-info-manager=7.0.5-1resolute.20261111.012058`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-info-manager/copyright`)
 
@@ -10635,11 +10669,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-camera-info-manager/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-class-loader=3.0.2-1resolute.20260915.133656`
+### `dpkg` source package: `ros-rolling-class-loader=3.0.3-1resolute.20261103.141640`
 
 Binary Packages:
 
-- `ros-rolling-class-loader=3.0.2-1resolute.20260915.133656`
+- `ros-rolling-class-loader=3.0.3-1resolute.20261103.141640`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-class-loader/copyright`)
 
@@ -10649,11 +10683,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-class-loader/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-common-interfaces=5.10.2-1resolute.20261010.114358`
+### `dpkg` source package: `ros-rolling-common-interfaces=5.10.3-1resolute.20261103.171534`
 
 Binary Packages:
 
-- `ros-rolling-common-interfaces=5.10.2-1resolute.20261010.114358`
+- `ros-rolling-common-interfaces=5.10.3-1resolute.20261103.171534`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-common-interfaces/copyright`)
 
@@ -10663,25 +10697,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-common-interfaces/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-composition-interfaces=2.5.1-1resolute.20261010.105904`
+### `dpkg` source package: `ros-rolling-composition-interfaces=2.5.2-1resolute.20261103.163719`
 
 Binary Packages:
 
-- `ros-rolling-composition-interfaces=2.5.1-1resolute.20261010.105904`
+- `ros-rolling-composition-interfaces=2.5.2-1resolute.20261103.163719`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-composition-interfaces/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-compressed-depth-image-transport=7.0.1-1resolute.20261010.142209`
+### `dpkg` source package: `ros-rolling-compressed-depth-image-transport=7.0.1-1resolute.20261111.014715`
 
 Binary Packages:
 
-- `ros-rolling-compressed-depth-image-transport=7.0.1-1resolute.20261010.142209`
+- `ros-rolling-compressed-depth-image-transport=7.0.1-1resolute.20261111.014715`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-compressed-depth-image-transport/copyright`)
 
@@ -10692,11 +10726,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-compressed-depth-image-trans
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-compressed-image-transport=7.0.1-1resolute.20261010.151209`
+### `dpkg` source package: `ros-rolling-compressed-image-transport=7.0.1-1resolute.20261111.022913`
 
 Binary Packages:
 
-- `ros-rolling-compressed-image-transport=7.0.1-1resolute.20261010.151209`
+- `ros-rolling-compressed-image-transport=7.0.1-1resolute.20261111.022913`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-compressed-image-transport/copyright`)
 
@@ -10706,11 +10740,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-compressed-image-transport/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-console-bridge-vendor=1.10.0-1resolute.20260908.135003`
+### `dpkg` source package: `ros-rolling-console-bridge-vendor=1.10.0-1resolute.20261022.223131`
 
 Binary Packages:
 
-- `ros-rolling-console-bridge-vendor=1.10.0-1resolute.20260908.135003`
+- `ros-rolling-console-bridge-vendor=1.10.0-1resolute.20261022.223131`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-console-bridge-vendor/copyright`)
 
@@ -10721,11 +10755,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-console-bridge-vendor/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-cv-bridge=4.1.0-2resolute.20261010.140250`
+### `dpkg` source package: `ros-rolling-cv-bridge=4.1.0-2resolute.20261111.012324`
 
 Binary Packages:
 
-- `ros-rolling-cv-bridge=4.1.0-2resolute.20261010.140250`
+- `ros-rolling-cv-bridge=4.1.0-2resolute.20261111.012324`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-cv-bridge/copyright`)
 
@@ -10736,11 +10770,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-cv-bridge/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-depth-image-proc=8.0.2-1resolute.20261016.225323`
+### `dpkg` source package: `ros-rolling-depth-image-proc=8.0.2-1resolute.20261111.024546`
 
 Binary Packages:
 
-- `ros-rolling-depth-image-proc=8.0.2-1resolute.20261016.225323`
+- `ros-rolling-depth-image-proc=8.0.2-1resolute.20261111.024546`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-depth-image-proc/copyright`)
 
@@ -10750,11 +10784,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-depth-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-diagnostic-msgs=5.10.2-1resolute.20261010.110914`
+### `dpkg` source package: `ros-rolling-diagnostic-msgs=5.10.3-1resolute.20261103.165342`
 
 Binary Packages:
 
-- `ros-rolling-diagnostic-msgs=5.10.2-1resolute.20261010.110914`
+- `ros-rolling-diagnostic-msgs=5.10.3-1resolute.20261103.165342`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-diagnostic-msgs/copyright`)
 
@@ -10764,11 +10798,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-diagnostic-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-diagnostic-updater=4.5.7-1resolute.20261010.130227`
+### `dpkg` source package: `ros-rolling-diagnostic-updater=4.5.7-1resolute.20261111.010451`
 
 Binary Packages:
 
-- `ros-rolling-diagnostic-updater=4.5.7-1resolute.20261010.130227`
+- `ros-rolling-diagnostic-updater=4.5.7-1resolute.20261111.010451`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-diagnostic-updater/copyright`)
 
@@ -10778,11 +10812,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-diagnostic-updater/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-eigen3-cmake-module=0.6.0-1resolute.20260908.135905`
+### `dpkg` source package: `ros-rolling-eigen3-cmake-module=0.6.0-1resolute.20261022.192734`
 
 Binary Packages:
 
-- `ros-rolling-eigen3-cmake-module=0.6.0-1resolute.20260908.135905`
+- `ros-rolling-eigen3-cmake-module=0.6.0-1resolute.20261022.192734`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-eigen3-cmake-module/copyright`)
 
@@ -10792,11 +10826,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-eigen3-cmake-module/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-fastcdr=2.3.7-1resolute.20261010.094026`
+### `dpkg` source package: `ros-rolling-fastcdr=2.3.7-1resolute.20261022.155923`
 
 Binary Packages:
 
-- `ros-rolling-fastcdr=2.3.7-1resolute.20261010.094026`
+- `ros-rolling-fastcdr=2.3.7-1resolute.20261022.155923`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-fastcdr/copyright`)
 
@@ -10806,11 +10840,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-fastcdr/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-fastdds=3.6.2-1resolute.20261010.100011`
+### `dpkg` source package: `ros-rolling-fastdds=3.6.2-1resolute.20261022.161245`
 
 Binary Packages:
 
-- `ros-rolling-fastdds=3.6.2-1resolute.20261010.100011`
+- `ros-rolling-fastdds=3.6.2-1resolute.20261022.161245`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-fastdds/copyright`)
 
@@ -10820,11 +10854,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-fastdds/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-filters=2.2.2-2resolute.20261010.145303`
+### `dpkg` source package: `ros-rolling-filters=2.2.2-2resolute.20261111.012439`
 
 Binary Packages:
 
-- `ros-rolling-filters=2.2.2-2resolute.20261010.145303`
+- `ros-rolling-filters=2.2.2-2resolute.20261111.012439`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-filters/copyright`)
 
@@ -10834,11 +10868,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-foonathan-memory-vendor=1.3.1-3resolute.20260908.131314`
+### `dpkg` source package: `ros-rolling-foonathan-memory-vendor=1.3.1-3resolute.20261022.160025`
 
 Binary Packages:
 
-- `ros-rolling-foonathan-memory-vendor=1.3.1-3resolute.20260908.131314`
+- `ros-rolling-foonathan-memory-vendor=1.3.1-3resolute.20261022.160025`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-foonathan-memory-vendor/copyright`)
 
@@ -10849,11 +10883,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-foonathan-memory-vendor/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-geometry-msgs=5.10.2-1resolute.20261010.105932`
+### `dpkg` source package: `ros-rolling-geometry-msgs=5.10.3-1resolute.20261103.164553`
 
 Binary Packages:
 
-- `ros-rolling-geometry-msgs=5.10.2-1resolute.20261010.105932`
+- `ros-rolling-geometry-msgs=5.10.3-1resolute.20261103.164553`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-geometry-msgs/copyright`)
 
@@ -10863,11 +10897,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-geometry-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-geometry2=0.46.4-1resolute.20261010.140224`
+### `dpkg` source package: `ros-rolling-geometry2=0.46.5-1resolute.20261111.024710`
 
 Binary Packages:
 
-- `ros-rolling-geometry2=0.46.4-1resolute.20261010.140224`
+- `ros-rolling-geometry2=0.46.5-1resolute.20261111.024710`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-geometry2/copyright`)
 
@@ -10877,11 +10911,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-geometry2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-common=7.0.4-1resolute.20261010.150636`
+### `dpkg` source package: `ros-rolling-image-common=7.0.5-1resolute.20261111.022820`
 
 Binary Packages:
 
-- `ros-rolling-image-common=7.0.4-1resolute.20261010.150636`
+- `ros-rolling-image-common=7.0.5-1resolute.20261111.022820`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-common/copyright`)
 
@@ -10891,11 +10925,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-geometry=4.1.0-2resolute.20261010.121711`
+### `dpkg` source package: `ros-rolling-image-geometry=4.1.0-2resolute.20261103.171350`
 
 Binary Packages:
 
-- `ros-rolling-image-geometry=4.1.0-2resolute.20261010.121711`
+- `ros-rolling-image-geometry=4.1.0-2resolute.20261103.171350`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-geometry/copyright`)
 
@@ -10906,11 +10940,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-pipeline=8.0.2-1resolute.20261016.230745`
+### `dpkg` source package: `ros-rolling-image-pipeline=8.0.2-1resolute.20261111.025819`
 
 Binary Packages:
 
-- `ros-rolling-image-pipeline=8.0.2-1resolute.20261016.230745`
+- `ros-rolling-image-pipeline=8.0.2-1resolute.20261111.025819`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-pipeline/copyright`)
 
@@ -10920,11 +10954,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-pipeline/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-proc=8.0.2-1resolute.20261016.223303`
+### `dpkg` source package: `ros-rolling-image-proc=8.0.2-1resolute.20261111.023356`
 
 Binary Packages:
 
-- `ros-rolling-image-proc=8.0.2-1resolute.20261016.223303`
+- `ros-rolling-image-proc=8.0.2-1resolute.20261111.023356`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-proc/copyright`)
 
@@ -10934,11 +10968,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-proc/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-publisher=8.0.2-1resolute.20261016.223240`
+### `dpkg` source package: `ros-rolling-image-publisher=8.0.2-1resolute.20261111.014826`
 
 Binary Packages:
 
-- `ros-rolling-image-publisher=8.0.2-1resolute.20261016.223240`
+- `ros-rolling-image-publisher=8.0.2-1resolute.20261111.014826`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-publisher/copyright`)
 
@@ -10948,11 +10982,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-publisher/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-rotate=8.0.2-1resolute.20261016.222851`
+### `dpkg` source package: `ros-rolling-image-rotate=8.0.2-1resolute.20261111.023237`
 
 Binary Packages:
 
-- `ros-rolling-image-rotate=8.0.2-1resolute.20261016.222851`
+- `ros-rolling-image-rotate=8.0.2-1resolute.20261111.023237`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-rotate/copyright`)
 
@@ -10962,11 +10996,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-rotate/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-transport-plugins=7.0.1-1resolute.20261010.152251`
+### `dpkg` source package: `ros-rolling-image-transport-plugins=7.0.1-1resolute.20261111.025113`
 
 Binary Packages:
 
-- `ros-rolling-image-transport-plugins=7.0.1-1resolute.20261010.152251`
+- `ros-rolling-image-transport-plugins=7.0.1-1resolute.20261111.025113`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-transport-plugins/copyright`)
 
@@ -10976,11 +11010,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-transport-plugins/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-transport=7.0.4-1resolute.20261010.140956`
+### `dpkg` source package: `ros-rolling-image-transport=7.0.5-1resolute.20261111.013619`
 
 Binary Packages:
 
-- `ros-rolling-image-transport=7.0.4-1resolute.20261010.140956`
+- `ros-rolling-image-transport=7.0.5-1resolute.20261111.013619`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-transport/copyright`)
 
@@ -10990,11 +11024,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-transport/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-image-view=8.0.2-1resolute.20261016.222910`
+### `dpkg` source package: `ros-rolling-image-view=8.0.2-1resolute.20261111.014345`
 
 Binary Packages:
 
-- `ros-rolling-image-view=8.0.2-1resolute.20261016.222910`
+- `ros-rolling-image-view=8.0.2-1resolute.20261111.014345`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-view/copyright`)
 
@@ -11004,11 +11038,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-image-view/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-kdl-parser=3.1.0-1resolute.20261010.123452`
+### `dpkg` source package: `ros-rolling-kdl-parser=3.1.0-1resolute.20261103.172318`
 
 Binary Packages:
 
-- `ros-rolling-kdl-parser=3.1.0-1resolute.20261010.123452`
+- `ros-rolling-kdl-parser=3.1.0-1resolute.20261103.172318`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-kdl-parser/copyright`)
 
@@ -11018,11 +11052,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-kdl-parser/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-keyboard-handler=0.6.0-1resolute.20260908.140209`
+### `dpkg` source package: `ros-rolling-keyboard-handler=0.6.0-1resolute.20261022.193552`
 
 Binary Packages:
 
-- `ros-rolling-keyboard-handler=0.6.0-1resolute.20260908.140209`
+- `ros-rolling-keyboard-handler=0.6.0-1resolute.20261022.193552`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-keyboard-handler/copyright`)
 
@@ -11032,11 +11066,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-keyboard-handler/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-laser-filters=2.3.3-1resolute.20261010.145745`
+### `dpkg` source package: `ros-rolling-laser-filters=2.3.3-1resolute.20261111.023407`
 
 Binary Packages:
 
-- `ros-rolling-laser-filters=2.3.3-1resolute.20261010.145745`
+- `ros-rolling-laser-filters=2.3.3-1resolute.20261111.023407`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-laser-filters/copyright`)
 
@@ -11046,11 +11080,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-laser-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-laser-geometry=3.0.1-1resolute.20261010.140639`
+### `dpkg` source package: `ros-rolling-laser-geometry=3.0.2-1resolute.20261111.023101`
 
 Binary Packages:
 
-- `ros-rolling-laser-geometry=3.0.1-1resolute.20261010.140639`
+- `ros-rolling-laser-geometry=3.0.2-1resolute.20261111.023101`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-laser-geometry/copyright`)
 
@@ -11060,11 +11094,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-laser-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-ros=0.30.2-1resolute.20261010.125557`
+### `dpkg` source package: `ros-rolling-launch-ros=0.30.3-1resolute.20261111.010552`
 
 Binary Packages:
 
-- `ros-rolling-launch-ros=0.30.2-1resolute.20261010.125557`
+- `ros-rolling-launch-ros=0.30.3-1resolute.20261111.010552`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-ros/copyright`)
 
@@ -11074,11 +11108,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-testing-ament-cmake=3.10.2-1resolute.20261003.091214`
+### `dpkg` source package: `ros-rolling-launch-testing-ament-cmake=3.10.3-1resolute.20261023.214012`
 
 Binary Packages:
 
-- `ros-rolling-launch-testing-ament-cmake=3.10.2-1resolute.20261003.091214`
+- `ros-rolling-launch-testing-ament-cmake=3.10.3-1resolute.20261023.214012`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing-ament-cmake/copyright`)
 
@@ -11089,11 +11123,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing-ament-cmake/c
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-testing-ros=0.30.2-1resolute.20261010.144047`
+### `dpkg` source package: `ros-rolling-launch-testing-ros=0.30.3-1resolute.20261111.010649`
 
 Binary Packages:
 
-- `ros-rolling-launch-testing-ros=0.30.2-1resolute.20261010.144047`
+- `ros-rolling-launch-testing-ros=0.30.3-1resolute.20261111.010649`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing-ros/copyright`)
 
@@ -11103,11 +11137,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing-ros/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-testing=3.10.2-1resolute.20261003.091013`
+### `dpkg` source package: `ros-rolling-launch-testing=3.10.3-1resolute.20261023.213317`
 
 Binary Packages:
 
-- `ros-rolling-launch-testing=3.10.2-1resolute.20261003.091013`
+- `ros-rolling-launch-testing=3.10.3-1resolute.20261023.213317`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing/copyright`)
 
@@ -11117,11 +11151,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-testing/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-xml=3.10.2-1resolute.20261003.090631`
+### `dpkg` source package: `ros-rolling-launch-xml=3.10.3-1resolute.20261023.211446`
 
 Binary Packages:
 
-- `ros-rolling-launch-xml=3.10.2-1resolute.20261003.090631`
+- `ros-rolling-launch-xml=3.10.3-1resolute.20261023.211446`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-xml/copyright`)
 
@@ -11131,11 +11165,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-xml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch-yaml=3.10.2-1resolute.20261003.090654`
+### `dpkg` source package: `ros-rolling-launch-yaml=3.10.3-1resolute.20261023.211439`
 
 Binary Packages:
 
-- `ros-rolling-launch-yaml=3.10.2-1resolute.20261003.090654`
+- `ros-rolling-launch-yaml=3.10.3-1resolute.20261023.211439`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-yaml/copyright`)
 
@@ -11145,11 +11179,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch-yaml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-launch=3.10.2-1resolute.20261003.085842`
+### `dpkg` source package: `ros-rolling-launch=3.10.3-1resolute.20261023.205033`
 
 Binary Packages:
 
-- `ros-rolling-launch=3.10.2-1resolute.20261003.085842`
+- `ros-rolling-launch=3.10.3-1resolute.20261023.205033`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch/copyright`)
 
@@ -11159,25 +11193,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-libstatistics-collector=3.0.0-1resolute.20261010.123356`
+### `dpkg` source package: `ros-rolling-libyaml-vendor=1.9.0-1resolute.20261022.194409`
 
 Binary Packages:
 
-- `ros-rolling-libstatistics-collector=3.0.0-1resolute.20261010.123356`
-
-Licenses: (parsed from: `/usr/share/doc/ros-rolling-libstatistics-collector/copyright`)
-
-- `Apache License 2.0`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-rolling-libyaml-vendor=1.9.0-1resolute.20260908.140316`
-
-Binary Packages:
-
-- `ros-rolling-libyaml-vendor=1.9.0-1resolute.20260908.140316`
+- `ros-rolling-libyaml-vendor=1.9.0-1resolute.20261022.194409`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-libyaml-vendor/copyright`)
 
@@ -11188,25 +11208,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-libyaml-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-lifecycle-msgs=2.5.1-1resolute.20261010.103948`
+### `dpkg` source package: `ros-rolling-lifecycle-msgs=2.5.2-1resolute.20261103.162813`
 
 Binary Packages:
 
-- `ros-rolling-lifecycle-msgs=2.5.1-1resolute.20261010.103948`
+- `ros-rolling-lifecycle-msgs=2.5.2-1resolute.20261103.162813`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-lifecycle-msgs/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-lz4-cmake-module=0.35.0-1resolute.20260916.193101`
+### `dpkg` source package: `ros-rolling-lz4-cmake-module=0.35.0-1resolute.20261022.194734`
 
 Binary Packages:
 
-- `ros-rolling-lz4-cmake-module=0.35.0-1resolute.20260916.193101`
+- `ros-rolling-lz4-cmake-module=0.35.0-1resolute.20261022.194734`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-lz4-cmake-module/copyright`)
 
@@ -11216,11 +11236,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-lz4-cmake-module/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-mcap-vendor=0.35.0-1resolute.20260916.194302`
+### `dpkg` source package: `ros-rolling-mcap-vendor=0.35.0-1resolute.20261022.204051`
 
 Binary Packages:
 
-- `ros-rolling-mcap-vendor=0.35.0-1resolute.20260916.194302`
+- `ros-rolling-mcap-vendor=0.35.0-1resolute.20261022.204051`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-mcap-vendor/copyright`)
 
@@ -11230,11 +11250,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-mcap-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-message-filters=8.0.4-1resolute.20261010.125711`
+### `dpkg` source package: `ros-rolling-message-filters=8.0.5-1resolute.20261111.010625`
 
 Binary Packages:
 
-- `ros-rolling-message-filters=8.0.4-1resolute.20261010.125711`
+- `ros-rolling-message-filters=8.0.5-1resolute.20261111.010625`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-message-filters/copyright`)
 
@@ -11244,11 +11264,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-message-filters/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-nav-msgs=5.10.2-1resolute.20261010.111402`
+### `dpkg` source package: `ros-rolling-nav-msgs=5.10.3-1resolute.20261103.165428`
 
 Binary Packages:
 
-- `ros-rolling-nav-msgs=5.10.2-1resolute.20261010.111402`
+- `ros-rolling-nav-msgs=5.10.3-1resolute.20261103.165428`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-nav-msgs/copyright`)
 
@@ -11258,11 +11278,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-nav-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-pcl-conversions=2.10.0-1resolute.20261010.131756`
+### `dpkg` source package: `ros-rolling-pcl-conversions=2.10.0-1resolute.20261111.011257`
 
 Binary Packages:
 
-- `ros-rolling-pcl-conversions=2.10.0-1resolute.20261010.131756`
+- `ros-rolling-pcl-conversions=2.10.0-1resolute.20261111.011257`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-conversions/copyright`)
 
@@ -11272,11 +11292,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-conversions/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-pcl-msgs=1.0.0-9resolute.20261010.113916`
+### `dpkg` source package: `ros-rolling-pcl-msgs=1.0.0-9resolute.20261103.171209`
 
 Binary Packages:
 
-- `ros-rolling-pcl-msgs=1.0.0-9resolute.20261010.113916`
+- `ros-rolling-pcl-msgs=1.0.0-9resolute.20261103.171209`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-msgs/copyright`)
 
@@ -11286,11 +11306,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-pcl-ros=2.10.0-1resolute.20261010.160833`
+### `dpkg` source package: `ros-rolling-pcl-ros=2.10.0-1resolute.20261111.024536`
 
 Binary Packages:
 
-- `ros-rolling-pcl-ros=2.10.0-1resolute.20261010.160833`
+- `ros-rolling-pcl-ros=2.10.0-1resolute.20261111.024536`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-ros/copyright`)
 
@@ -11300,11 +11320,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-pcl-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-perception-pcl=2.10.0-1resolute.20261010.164103`
+### `dpkg` source package: `ros-rolling-perception-pcl=2.10.0-1resolute.20261111.030949`
 
 Binary Packages:
 
-- `ros-rolling-perception-pcl=2.10.0-1resolute.20261010.164103`
+- `ros-rolling-perception-pcl=2.10.0-1resolute.20261111.030949`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-perception-pcl/copyright`)
 
@@ -11314,11 +11334,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-perception-pcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-perception=0.13.0-2resolute.20261016.231002`
+### `dpkg` source package: `ros-rolling-perception=0.13.0-2resolute.20261111.031101`
 
 Binary Packages:
 
-- `ros-rolling-perception=0.13.0-2resolute.20261016.231002`
+- `ros-rolling-perception=0.13.0-2resolute.20261111.031101`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-perception/copyright`)
 
@@ -11328,11 +11348,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-perception/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-pluginlib=6.0.2-1resolute.20260915.134843`
+### `dpkg` source package: `ros-rolling-pluginlib=6.0.3-1resolute.20261103.141908`
 
 Binary Packages:
 
-- `ros-rolling-pluginlib=6.0.2-1resolute.20260915.134843`
+- `ros-rolling-pluginlib=6.0.3-1resolute.20261103.141908`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-pluginlib/copyright`)
 
@@ -11342,348 +11362,334 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-pluginlib/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-action=10.5.2-1resolute.20261010.123430`
+### `dpkg` source package: `ros-rolling-rcl-action=10.6.0-1resolute.20261111.000322`
 
 Binary Packages:
 
-- `ros-rolling-rcl-action=10.5.2-1resolute.20261010.123430`
+- `ros-rolling-rcl-action=10.6.0-1resolute.20261111.000322`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-action/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-interfaces=2.5.1-1resolute.20261010.104112`
+### `dpkg` source package: `ros-rolling-rcl-interfaces=2.5.2-1resolute.20261103.162820`
 
 Binary Packages:
 
-- `ros-rolling-rcl-interfaces=2.5.1-1resolute.20261010.104112`
+- `ros-rolling-rcl-interfaces=2.5.2-1resolute.20261103.162820`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-interfaces/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-lifecycle=10.5.2-1resolute.20261010.123444`
+### `dpkg` source package: `ros-rolling-rcl-lifecycle=10.6.0-1resolute.20261111.000315`
 
 Binary Packages:
 
-- `ros-rolling-rcl-lifecycle=10.5.2-1resolute.20261010.123444`
+- `ros-rolling-rcl-lifecycle=10.6.0-1resolute.20261111.000315`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-lifecycle/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-logging-implementation=3.5.0-1resolute.20261010.122646`
+### `dpkg` source package: `ros-rolling-rcl-logging-implementation=3.5.1-1resolute.20261103.141857`
 
 Binary Packages:
 
-- `ros-rolling-rcl-logging-implementation=3.5.0-1resolute.20261010.122646`
+- `ros-rolling-rcl-logging-implementation=3.5.1-1resolute.20261103.141857`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-logging-implementation/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-logging-interface=3.5.0-1resolute.20261010.121519`
+### `dpkg` source package: `ros-rolling-rcl-logging-interface=3.5.1-1resolute.20261023.211947`
 
 Binary Packages:
 
-- `ros-rolling-rcl-logging-interface=3.5.0-1resolute.20261010.121519`
+- `ros-rolling-rcl-logging-interface=3.5.1-1resolute.20261023.211947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-logging-interface/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-logging-spdlog=3.5.0-1resolute.20261010.121807`
+### `dpkg` source package: `ros-rolling-rcl-logging-spdlog=3.5.1-1resolute.20261103.141641`
 
 Binary Packages:
 
-- `ros-rolling-rcl-logging-spdlog=3.5.0-1resolute.20261010.121807`
+- `ros-rolling-rcl-logging-spdlog=3.5.1-1resolute.20261103.141641`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-logging-spdlog/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl-yaml-param-parser=10.5.2-1resolute.20261010.121529`
+### `dpkg` source package: `ros-rolling-rcl-yaml-param-parser=10.6.0-1resolute.20261110.234848`
 
 Binary Packages:
 
-- `ros-rolling-rcl-yaml-param-parser=10.5.2-1resolute.20261010.121529`
+- `ros-rolling-rcl-yaml-param-parser=10.6.0-1resolute.20261110.234848`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl-yaml-param-parser/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcl=10.5.2-1resolute.20261010.123034`
+### `dpkg` source package: `ros-rolling-rcl=10.6.0-1resolute.20261110.235905`
 
 Binary Packages:
 
-- `ros-rolling-rcl=10.5.2-1resolute.20261010.123034`
+- `ros-rolling-rcl=10.6.0-1resolute.20261110.235905`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcl/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rclcpp-action=33.1.0-1resolute.20261010.125745`
+### `dpkg` source package: `ros-rolling-rclcpp-action=33.2.0-2resolute.20261111.011206`
 
 Binary Packages:
 
-- `ros-rolling-rclcpp-action=33.1.0-1resolute.20261010.125745`
+- `ros-rolling-rclcpp-action=33.2.0-2resolute.20261111.011206`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rclcpp-action/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rclcpp-components=33.1.0-1resolute.20261010.125920`
+### `dpkg` source package: `ros-rolling-rclcpp-components=33.2.0-2resolute.20261111.012728`
 
 Binary Packages:
 
-- `ros-rolling-rclcpp-components=33.1.0-1resolute.20261010.125920`
+- `ros-rolling-rclcpp-components=33.2.0-2resolute.20261111.012728`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rclcpp-components/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rclcpp-lifecycle=33.1.0-1resolute.20261010.125859`
+### `dpkg` source package: `ros-rolling-rclcpp-lifecycle=33.2.0-2resolute.20261111.011458`
 
 Binary Packages:
 
-- `ros-rolling-rclcpp-lifecycle=33.1.0-1resolute.20261010.125859`
+- `ros-rolling-rclcpp-lifecycle=33.2.0-2resolute.20261111.011458`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rclcpp-lifecycle/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rclcpp=33.1.0-1resolute.20261010.124848`
+### `dpkg` source package: `ros-rolling-rclcpp=33.2.0-2resolute.20261111.000627`
 
 Binary Packages:
 
-- `ros-rolling-rclcpp=33.1.0-1resolute.20261010.124848`
+- `ros-rolling-rclcpp=33.2.0-2resolute.20261111.000627`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rclcpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rclpy=11.0.3-1resolute.20261010.124812`
+### `dpkg` source package: `ros-rolling-rclpy=11.0.4-1resolute.20261111.000710`
 
 Binary Packages:
 
-- `ros-rolling-rclpy=11.0.3-1resolute.20261010.124812`
+- `ros-rolling-rclpy=11.0.4-1resolute.20261111.000710`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rclpy/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcpputils=2.15.2-1resolute.20260915.132949`
+### `dpkg` source package: `ros-rolling-rcpputils=2.15.4-1resolute.20261103.141344`
 
 Binary Packages:
 
-- `ros-rolling-rcpputils=2.15.2-1resolute.20260915.132949`
+- `ros-rolling-rcpputils=2.15.4-1resolute.20261103.141344`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcpputils/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 - `BSD-3-Clause`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rcutils=7.2.2-1resolute.20260908.135329`
+### `dpkg` source package: `ros-rolling-rcutils=7.2.3-1resolute.20261023.205208`
 
 Binary Packages:
 
-- `ros-rolling-rcutils=7.2.2-1resolute.20260908.135329`
+- `ros-rolling-rcutils=7.2.3-1resolute.20261023.205208`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rcutils/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-dds-common=6.1.2-1resolute.20261010.110443`
+### `dpkg` source package: `ros-rolling-rmw-dds-common=6.1.3-1resolute.20261103.163656`
 
 Binary Packages:
 
-- `ros-rolling-rmw-dds-common=6.1.2-1resolute.20261010.110443`
+- `ros-rolling-rmw-dds-common=6.1.3-1resolute.20261103.163656`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-dds-common/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-fastrtps-cpp=9.6.0-1resolute.20261010.111556`
+### `dpkg` source package: `ros-rolling-rmw-fastrtps-cpp=9.6.1-1resolute.20261103.164059`
 
 Binary Packages:
 
-- `ros-rolling-rmw-fastrtps-cpp=9.6.0-1resolute.20261010.111556`
+- `ros-rolling-rmw-fastrtps-cpp=9.6.1-1resolute.20261103.164059`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-fastrtps-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-fastrtps-shared-cpp=9.6.0-1resolute.20261010.110830`
+### `dpkg` source package: `ros-rolling-rmw-implementation-cmake=7.11.3-1resolute.20261103.141346`
 
 Binary Packages:
 
-- `ros-rolling-rmw-fastrtps-shared-cpp=9.6.0-1resolute.20261010.110830`
-
-Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-fastrtps-shared-cpp/copyright`)
-
-- `Apache License 2.0`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-rolling-rmw-implementation-cmake=7.11.2-1resolute.20260908.140731`
-
-Binary Packages:
-
-- `ros-rolling-rmw-implementation-cmake=7.11.2-1resolute.20260908.140731`
+- `ros-rolling-rmw-implementation-cmake=7.11.3-1resolute.20261103.141346`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-implementation-cmake/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-implementation=3.2.1-1resolute.20261010.115510`
+### `dpkg` source package: `ros-rolling-rmw-implementation=3.2.2-1resolute.20261103.165122`
 
 Binary Packages:
 
-- `ros-rolling-rmw-implementation=3.2.1-1resolute.20261010.115510`
+- `ros-rolling-rmw-implementation=3.2.2-1resolute.20261103.165122`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-implementation/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-security-common=7.11.2-1resolute.20260908.142719`
+### `dpkg` source package: `ros-rolling-rmw-security-common=7.11.3-1resolute.20261103.143047`
 
 Binary Packages:
 
-- `ros-rolling-rmw-security-common=7.11.2-1resolute.20260908.142719`
+- `ros-rolling-rmw-security-common=7.11.3-1resolute.20261103.143047`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-security-common/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-test-fixture-implementation=0.16.0-1resolute.20261010.120110`
+### `dpkg` source package: `ros-rolling-rmw-test-fixture-implementation=0.16.1-1resolute.20261103.165759`
 
 Binary Packages:
 
-- `ros-rolling-rmw-test-fixture-implementation=0.16.0-1resolute.20261010.120110`
+- `ros-rolling-rmw-test-fixture-implementation=0.16.1-1resolute.20261103.165759`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-test-fixture-implementation/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw-test-fixture=0.16.0-1resolute.20260908.142758`
+### `dpkg` source package: `ros-rolling-rmw-test-fixture=0.16.1-1resolute.20261103.142800`
 
 Binary Packages:
 
-- `ros-rolling-rmw-test-fixture=0.16.0-1resolute.20260908.142758`
+- `ros-rolling-rmw-test-fixture=0.16.1-1resolute.20261103.142800`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw-test-fixture/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rmw=7.11.2-1resolute.20260908.142444`
+### `dpkg` source package: `ros-rolling-rmw=7.11.3-1resolute.20261103.142443`
 
 Binary Packages:
 
-- `ros-rolling-rmw=7.11.2-1resolute.20260908.142444`
+- `ros-rolling-rmw=7.11.3-1resolute.20261103.142443`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rmw/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-robot-state-publisher=3.6.2-1resolute.20261010.131226`
+### `dpkg` source package: `ros-rolling-robot-state-publisher=3.6.3-1resolute.20261111.013945`
 
 Binary Packages:
 
-- `ros-rolling-robot-state-publisher=3.6.2-1resolute.20261010.131226`
+- `ros-rolling-robot-state-publisher=3.6.3-1resolute.20261111.013945`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-robot-state-publisher/copyright`)
 
@@ -11693,11 +11699,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-robot-state-publisher/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros-base=0.13.0-2resolute.20261010.162748`
+### `dpkg` source package: `ros-rolling-ros-base=0.13.0-2resolute.20261111.030821`
 
 Binary Packages:
 
-- `ros-rolling-ros-base=0.13.0-2resolute.20261010.162748`
+- `ros-rolling-ros-base=0.13.0-2resolute.20261111.030821`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-base/copyright`)
 
@@ -11707,11 +11713,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-base/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros-core=0.13.0-2resolute.20261010.155154`
+### `dpkg` source package: `ros-rolling-ros-core=0.13.0-2resolute.20261111.022818`
 
 Binary Packages:
 
-- `ros-rolling-ros-core=0.13.0-2resolute.20261010.155154`
+- `ros-rolling-ros-core=0.13.0-2resolute.20261111.022818`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-core/copyright`)
 
@@ -11721,11 +11727,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-core/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros-environment=5.0.0-1resolute.20260908.134002`
+### `dpkg` source package: `ros-rolling-ros-environment=5.0.0-1resolute.20261022.154815`
 
 Binary Packages:
 
-- `ros-rolling-ros-environment=5.0.0-1resolute.20260908.134002`
+- `ros-rolling-ros-environment=5.0.0-1resolute.20261022.154815`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-environment/copyright`)
 
@@ -11735,11 +11741,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-environment/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros-workspace=1.0.3-8resolute.20260908.121918`
+### `dpkg` source package: `ros-rolling-ros-workspace=1.0.3-8resolute.20261022.140854`
 
 Binary Packages:
 
-- `ros-rolling-ros-workspace=1.0.3-8resolute.20260908.121918`
+- `ros-rolling-ros-workspace=1.0.3-8resolute.20261022.140854`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-workspace/copyright`)
 
@@ -11749,25 +11755,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros-workspace/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2action=0.42.0-1resolute.20261010.144740`
+### `dpkg` source package: `ros-rolling-ros2action=0.42.2-1resolute.20261111.010858`
 
 Binary Packages:
 
-- `ros-rolling-ros2action=0.42.0-1resolute.20261010.144740`
+- `ros-rolling-ros2action=0.42.2-1resolute.20261111.010858`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2action/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2bag=0.35.0-1resolute.20261010.162020`
+### `dpkg` source package: `ros-rolling-ros2bag=0.35.0-1resolute.20261111.030322`
 
 Binary Packages:
 
-- `ros-rolling-ros2bag=0.35.0-1resolute.20261010.162020`
+- `ros-rolling-ros2bag=0.35.0-1resolute.20261111.030322`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2bag/copyright`)
 
@@ -11777,11 +11783,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2bag/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2cli-common-extensions=0.6.1-1resolute.20261010.155035`
+### `dpkg` source package: `ros-rolling-ros2cli-common-extensions=0.6.1-1resolute.20261111.022529`
 
 Binary Packages:
 
-- `ros-rolling-ros2cli-common-extensions=0.6.1-1resolute.20261010.155035`
+- `ros-rolling-ros2cli-common-extensions=0.6.1-1resolute.20261111.022529`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2cli-common-extensions/copyright`)
 
@@ -11791,67 +11797,67 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2cli-common-extensions/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2cli=0.42.0-1resolute.20261010.144636`
+### `dpkg` source package: `ros-rolling-ros2cli=0.42.2-1resolute.20261111.010801`
 
 Binary Packages:
 
-- `ros-rolling-ros2cli=0.42.0-1resolute.20261010.144636`
+- `ros-rolling-ros2cli=0.42.2-1resolute.20261111.010801`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2cli/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2component=0.42.0-1resolute.20261010.152403`
+### `dpkg` source package: `ros-rolling-ros2component=0.42.2-1resolute.20261111.022130`
 
 Binary Packages:
 
-- `ros-rolling-ros2component=0.42.0-1resolute.20261010.152403`
+- `ros-rolling-ros2component=0.42.2-1resolute.20261111.022130`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2component/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2doctor=0.42.0-1resolute.20261010.144839`
+### `dpkg` source package: `ros-rolling-ros2doctor=0.42.2-1resolute.20261111.010942`
 
 Binary Packages:
 
-- `ros-rolling-ros2doctor=0.42.0-1resolute.20261010.144839`
+- `ros-rolling-ros2doctor=0.42.2-1resolute.20261111.010942`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2doctor/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2interface=0.42.0-1resolute.20261010.152146`
+### `dpkg` source package: `ros-rolling-ros2interface=0.42.2-1resolute.20261111.022007`
 
 Binary Packages:
 
-- `ros-rolling-ros2interface=0.42.0-1resolute.20261010.152146`
+- `ros-rolling-ros2interface=0.42.2-1resolute.20261111.022007`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2interface/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2launch=0.30.2-1resolute.20261010.152448`
+### `dpkg` source package: `ros-rolling-ros2launch=0.30.3-1resolute.20261111.022138`
 
 Binary Packages:
 
-- `ros-rolling-ros2launch=0.30.2-1resolute.20261010.152448`
+- `ros-rolling-ros2launch=0.30.3-1resolute.20261111.022138`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2launch/copyright`)
 
@@ -11861,152 +11867,152 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2lifecycle=0.42.0-1resolute.20261010.145254`
+### `dpkg` source package: `ros-rolling-ros2lifecycle=0.42.2-1resolute.20261111.011118`
 
 Binary Packages:
 
-- `ros-rolling-ros2lifecycle=0.42.0-1resolute.20261010.145254`
+- `ros-rolling-ros2lifecycle=0.42.2-1resolute.20261111.011118`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2lifecycle/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2log=0.42.0-1resolute.20261010.145303`
+### `dpkg` source package: `ros-rolling-ros2log=0.42.2-1resolute.20261111.011015`
 
 Binary Packages:
 
-- `ros-rolling-ros2log=0.42.0-1resolute.20261010.145303`
+- `ros-rolling-ros2log=0.42.2-1resolute.20261111.011015`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2log/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2multicast=0.42.0-1resolute.20261010.152147`
+### `dpkg` source package: `ros-rolling-ros2multicast=0.42.2-1resolute.20261111.022015`
 
 Binary Packages:
 
-- `ros-rolling-ros2multicast=0.42.0-1resolute.20261010.152147`
+- `ros-rolling-ros2multicast=0.42.2-1resolute.20261111.022015`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2multicast/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2node=0.42.0-1resolute.20261010.145158`
+### `dpkg` source package: `ros-rolling-ros2node=0.42.2-1resolute.20261111.010930`
 
 Binary Packages:
 
-- `ros-rolling-ros2node=0.42.0-1resolute.20261010.145158`
+- `ros-rolling-ros2node=0.42.2-1resolute.20261111.010930`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2node/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2param=0.42.0-1resolute.20261010.145304`
+### `dpkg` source package: `ros-rolling-ros2param=0.42.2-1resolute.20261111.011153`
 
 Binary Packages:
 
-- `ros-rolling-ros2param=0.42.0-1resolute.20261010.145304`
+- `ros-rolling-ros2param=0.42.2-1resolute.20261111.011153`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2param/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2pkg=0.42.0-1resolute.20261010.152238`
+### `dpkg` source package: `ros-rolling-ros2pkg=0.42.2-1resolute.20261111.022020`
 
 Binary Packages:
 
-- `ros-rolling-ros2pkg=0.42.0-1resolute.20261010.152238`
+- `ros-rolling-ros2pkg=0.42.2-1resolute.20261111.022020`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2pkg/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2plugin=6.0.2-1resolute.20261010.152451`
+### `dpkg` source package: `ros-rolling-ros2plugin=6.0.3-1resolute.20261111.022047`
 
 Binary Packages:
 
-- `ros-rolling-ros2plugin=6.0.2-1resolute.20261010.152451`
+- `ros-rolling-ros2plugin=6.0.3-1resolute.20261111.022047`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2plugin/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2run=0.42.0-1resolute.20261010.152455`
+### `dpkg` source package: `ros-rolling-ros2run=0.42.2-1resolute.20261111.022204`
 
 Binary Packages:
 
-- `ros-rolling-ros2run=0.42.0-1resolute.20261010.152455`
+- `ros-rolling-ros2run=0.42.2-1resolute.20261111.022204`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2run/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2service=0.42.0-1resolute.20261010.145159`
+### `dpkg` source package: `ros-rolling-ros2service=0.42.2-1resolute.20261111.010931`
 
 Binary Packages:
 
-- `ros-rolling-ros2service=0.42.0-1resolute.20261010.145159`
+- `ros-rolling-ros2service=0.42.2-1resolute.20261111.010931`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2service/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-ros2topic=0.42.0-1resolute.20261010.145214`
+### `dpkg` source package: `ros-rolling-ros2topic=0.42.2-1resolute.20261111.010934`
 
 Binary Packages:
 
-- `ros-rolling-ros2topic=0.42.0-1resolute.20261010.145214`
+- `ros-rolling-ros2topic=0.42.2-1resolute.20261111.010934`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-ros2topic/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 - `BSD-3-Clause`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-compression-zstd=0.35.0-1resolute.20261010.155834`
+### `dpkg` source package: `ros-rolling-rosbag2-compression-zstd=0.35.0-1resolute.20261111.030301`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-compression-zstd=0.35.0-1resolute.20261010.155834`
+- `ros-rolling-rosbag2-compression-zstd=0.35.0-1resolute.20261111.030301`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-compression-zstd/copyright`)
 
@@ -12016,11 +12022,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-compression-zstd/cop
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-compression=0.35.0-1resolute.20261010.155255`
+### `dpkg` source package: `ros-rolling-rosbag2-compression=0.35.0-1resolute.20261111.023001`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-compression=0.35.0-1resolute.20261010.155255`
+- `ros-rolling-rosbag2-compression=0.35.0-1resolute.20261111.023001`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-compression/copyright`)
 
@@ -12030,11 +12036,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-compression/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-cpp=0.35.0-1resolute.20261010.150342`
+### `dpkg` source package: `ros-rolling-rosbag2-cpp=0.35.0-1resolute.20261111.020043`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-cpp=0.35.0-1resolute.20261010.150342`
+- `ros-rolling-rosbag2-cpp=0.35.0-1resolute.20261111.020043`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-cpp/copyright`)
 
@@ -12044,11 +12050,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-cpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-interfaces=0.35.0-1resolute.20261010.104352`
+### `dpkg` source package: `ros-rolling-rosbag2-interfaces=0.35.0-1resolute.20261103.163203`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-interfaces=0.35.0-1resolute.20261010.104352`
+- `ros-rolling-rosbag2-interfaces=0.35.0-1resolute.20261103.163203`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-interfaces/copyright`)
 
@@ -12058,11 +12064,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-interfaces/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-py=0.35.0-1resolute.20261010.160848`
+### `dpkg` source package: `ros-rolling-rosbag2-py=0.35.0-1resolute.20261111.024155`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-py=0.35.0-1resolute.20261010.160848`
+- `ros-rolling-rosbag2-py=0.35.0-1resolute.20261111.024155`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-py/copyright`)
 
@@ -12072,11 +12078,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-storage-default-plugins=0.35.0-1resolute.20261010.155821`
+### `dpkg` source package: `ros-rolling-rosbag2-storage-default-plugins=0.35.0-1resolute.20261111.030215`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-storage-default-plugins=0.35.0-1resolute.20261010.155821`
+- `ros-rolling-rosbag2-storage-default-plugins=0.35.0-1resolute.20261111.030215`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-default-plugins/copyright`)
 
@@ -12086,11 +12092,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-default-plug
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-storage-mcap=0.35.0-1resolute.20261010.155317`
+### `dpkg` source package: `ros-rolling-rosbag2-storage-mcap=0.35.0-1resolute.20261111.023006`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-storage-mcap=0.35.0-1resolute.20261010.155317`
+- `ros-rolling-rosbag2-storage-mcap=0.35.0-1resolute.20261111.023006`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-mcap/copyright`)
 
@@ -12100,11 +12106,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-mcap/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-storage-sqlite3=0.35.0-1resolute.20261010.155318`
+### `dpkg` source package: `ros-rolling-rosbag2-storage-sqlite3=0.35.0-1resolute.20261111.023029`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-storage-sqlite3=0.35.0-1resolute.20261010.155318`
+- `ros-rolling-rosbag2-storage-sqlite3=0.35.0-1resolute.20261111.023029`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-sqlite3/copyright`)
 
@@ -12114,11 +12120,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage-sqlite3/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-storage=0.35.0-1resolute.20261010.145802`
+### `dpkg` source package: `ros-rolling-rosbag2-storage=0.35.0-1resolute.20261111.012756`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-storage=0.35.0-1resolute.20261010.145802`
+- `ros-rolling-rosbag2-storage=0.35.0-1resolute.20261111.012756`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage/copyright`)
 
@@ -12128,11 +12134,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-storage/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2-transport=0.35.0-1resolute.20261010.155834`
+### `dpkg` source package: `ros-rolling-rosbag2-transport=0.35.0-1resolute.20261111.023348`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2-transport=0.35.0-1resolute.20261010.155834`
+- `ros-rolling-rosbag2-transport=0.35.0-1resolute.20261111.023348`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-transport/copyright`)
 
@@ -12142,11 +12148,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2-transport/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosbag2=0.35.0-1resolute.20261010.162509`
+### `dpkg` source package: `ros-rolling-rosbag2=0.35.0-1resolute.20261111.030721`
 
 Binary Packages:
 
-- `ros-rolling-rosbag2=0.35.0-1resolute.20261010.162509`
+- `ros-rolling-rosbag2=0.35.0-1resolute.20261111.030721`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2/copyright`)
 
@@ -12156,123 +12162,123 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosbag2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosgraph-msgs=2.5.1-1resolute.20261010.105543`
+### `dpkg` source package: `ros-rolling-rosgraph-msgs=2.5.2-1resolute.20261103.164929`
 
 Binary Packages:
 
-- `ros-rolling-rosgraph-msgs=2.5.1-1resolute.20261010.105543`
+- `ros-rolling-rosgraph-msgs=2.5.2-1resolute.20261103.164929`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosgraph-msgs/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-adapter=5.3.1-2resolute.20260908.134831`
+### `dpkg` source package: `ros-rolling-rosidl-adapter=5.3.2-1resolute.20261103.141559`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-adapter=5.3.1-2resolute.20260908.134831`
+- `ros-rolling-rosidl-adapter=5.3.2-1resolute.20261103.141559`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-adapter/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-buffer-backend-registry=5.3.1-2resolute.20260915.135953`
+### `dpkg` source package: `ros-rolling-rosidl-buffer-backend-registry=5.3.2-1resolute.20261103.143045`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-buffer-backend-registry=5.3.1-2resolute.20260915.135953`
+- `ros-rolling-rosidl-buffer-backend-registry=5.3.2-1resolute.20261103.143045`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-buffer-backend-registry/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-buffer-backend=5.3.1-2resolute.20260908.142807`
+### `dpkg` source package: `ros-rolling-rosidl-buffer-backend=5.3.2-1resolute.20261103.143005`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-buffer-backend=5.3.1-2resolute.20260908.142807`
+- `ros-rolling-rosidl-buffer-backend=5.3.2-1resolute.20261103.143005`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-buffer-backend/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-buffer-py=5.3.1-2resolute.20260908.135817`
+### `dpkg` source package: `ros-rolling-rosidl-buffer-py=5.3.2-1resolute.20261103.141617`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-buffer-py=5.3.1-2resolute.20260908.135817`
+- `ros-rolling-rosidl-buffer-py=5.3.2-1resolute.20261103.141617`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-buffer-py/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-buffer=5.3.1-2resolute.20260908.135445`
+### `dpkg` source package: `ros-rolling-rosidl-buffer=5.3.2-1resolute.20261103.141345`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-buffer=5.3.1-2resolute.20260908.135445`
+- `ros-rolling-rosidl-buffer=5.3.2-1resolute.20261103.141345`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-buffer/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-cli=5.3.1-2resolute.20260908.134026`
+### `dpkg` source package: `ros-rolling-rosidl-cli=5.3.2-1resolute.20261103.141346`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-cli=5.3.1-2resolute.20260908.134026`
+- `ros-rolling-rosidl-cli=5.3.2-1resolute.20261103.141346`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-cli/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-cmake=5.3.1-2resolute.20260908.142456`
+### `dpkg` source package: `ros-rolling-rosidl-cmake=5.3.2-1resolute.20261103.142733`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-cmake=5.3.1-2resolute.20260908.142456`
+- `ros-rolling-rosidl-cmake=5.3.2-1resolute.20261103.142733`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-cmake/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-core-generators=0.5.0-1resolute.20261010.100616`
+### `dpkg` source package: `ros-rolling-rosidl-core-generators=0.5.0-1resolute.20261103.150603`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-core-generators=0.5.0-1resolute.20261010.100616`
+- `ros-rolling-rosidl-core-generators=0.5.0-1resolute.20261103.150603`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-core-generators/copyright`)
 
@@ -12282,11 +12288,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-core-generators/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-core-runtime=0.5.0-1resolute.20261010.100649`
+### `dpkg` source package: `ros-rolling-rosidl-core-runtime=0.5.0-1resolute.20261103.150213`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-core-runtime=0.5.0-1resolute.20261010.100649`
+- `ros-rolling-rosidl-core-runtime=0.5.0-1resolute.20261103.150213`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-core-runtime/copyright`)
 
@@ -12296,11 +12302,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-core-runtime/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-default-generators=1.9.0-1resolute.20261010.103243`
+### `dpkg` source package: `ros-rolling-rosidl-default-generators=1.9.0-1resolute.20261103.162337`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-default-generators=1.9.0-1resolute.20261010.103243`
+- `ros-rolling-rosidl-default-generators=1.9.0-1resolute.20261103.162337`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-default-generators/copyright`)
 
@@ -12310,11 +12316,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-default-generators/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-default-runtime=1.9.0-1resolute.20261010.103258`
+### `dpkg` source package: `ros-rolling-rosidl-default-runtime=1.9.0-1resolute.20261103.162336`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-default-runtime=1.9.0-1resolute.20261010.103258`
+- `ros-rolling-rosidl-default-runtime=1.9.0-1resolute.20261103.162336`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-default-runtime/copyright`)
 
@@ -12324,81 +12330,81 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-default-runtime/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-dynamic-typesupport-fastrtps=0.6.0-1resolute.20261010.103137`
+### `dpkg` source package: `ros-rolling-rosidl-dynamic-typesupport-fastrtps=0.6.1-1resolute.20261103.142438`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-dynamic-typesupport-fastrtps=0.6.0-1resolute.20261010.103137`
+- `ros-rolling-rosidl-dynamic-typesupport-fastrtps=0.6.1-1resolute.20261103.142438`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-dynamic-typesupport-fastrtps/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-dynamic-typesupport=0.5.0-1resolute.20260908.141155`
+### `dpkg` source package: `ros-rolling-rosidl-dynamic-typesupport=0.5.1-1resolute.20261103.142340`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-dynamic-typesupport=0.5.0-1resolute.20260908.141155`
+- `ros-rolling-rosidl-dynamic-typesupport=0.5.1-1resolute.20261103.142340`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-dynamic-typesupport/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-generator-c=5.3.1-2resolute.20260908.142825`
+### `dpkg` source package: `ros-rolling-rosidl-generator-c=5.3.2-1resolute.20261103.143158`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-generator-c=5.3.1-2resolute.20260908.142825`
+- `ros-rolling-rosidl-generator-c=5.3.2-1resolute.20261103.143158`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-c/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-generator-cpp=5.3.1-2resolute.20260908.143118`
+### `dpkg` source package: `ros-rolling-rosidl-generator-cpp=5.3.2-1resolute.20261103.143452`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-generator-cpp=5.3.1-2resolute.20260908.143118`
+- `ros-rolling-rosidl-generator-cpp=5.3.2-1resolute.20261103.143452`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-generator-py=0.28.0-1resolute.20261004.000814`
+### `dpkg` source package: `ros-rolling-rosidl-generator-py=0.28.1-1resolute.20261103.144306`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-generator-py=0.28.0-1resolute.20261004.000814`
+- `ros-rolling-rosidl-generator-py=0.28.1-1resolute.20261103.144306`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-py/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-generator-rs=0.5.0-2resolute.20260915.133904`
+### `dpkg` source package: `ros-rolling-rosidl-generator-rs=0.5.0-2resolute.20261103.144759`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-generator-rs=0.5.0-2resolute.20260915.133904`
+- `ros-rolling-rosidl-generator-rs=0.5.0-2resolute.20261103.144759`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-rs/copyright`)
 
@@ -12408,193 +12414,193 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-rs/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-generator-type-description=5.3.1-2resolute.20260908.142438`
+### `dpkg` source package: `ros-rolling-rosidl-generator-type-description=5.3.2-1resolute.20261103.142838`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-generator-type-description=5.3.1-2resolute.20260908.142438`
+- `ros-rolling-rosidl-generator-type-description=5.3.2-1resolute.20261103.142838`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-generator-type-description/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-parser=5.3.1-2resolute.20260908.140853`
+### `dpkg` source package: `ros-rolling-rosidl-parser=5.3.2-1resolute.20261103.141708`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-parser=5.3.1-2resolute.20260908.140853`
+- `ros-rolling-rosidl-parser=5.3.2-1resolute.20261103.141708`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-parser/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-pycommon=5.3.1-2resolute.20260908.141051`
+### `dpkg` source package: `ros-rolling-rosidl-pycommon=5.3.2-1resolute.20261103.142239`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-pycommon=5.3.1-2resolute.20260908.141051`
+- `ros-rolling-rosidl-pycommon=5.3.2-1resolute.20261103.142239`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-pycommon/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-runtime-c=5.3.1-2resolute.20260908.140924`
+### `dpkg` source package: `ros-rolling-rosidl-runtime-c=5.3.2-1resolute.20261103.141958`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-runtime-c=5.3.1-2resolute.20260908.140924`
+- `ros-rolling-rosidl-runtime-c=5.3.2-1resolute.20261103.141958`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-runtime-c/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-runtime-cpp=5.3.1-2resolute.20260908.141221`
+### `dpkg` source package: `ros-rolling-rosidl-runtime-cpp=5.3.2-1resolute.20261103.142409`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-runtime-cpp=5.3.1-2resolute.20260908.141221`
+- `ros-rolling-rosidl-runtime-cpp=5.3.2-1resolute.20261103.142409`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-runtime-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-runtime-py=0.16.0-1resolute.20260908.141053`
+### `dpkg` source package: `ros-rolling-rosidl-runtime-py=0.16.1-1resolute.20261103.142002`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-runtime-py=0.16.0-1resolute.20260908.141053`
+- `ros-rolling-rosidl-runtime-py=0.16.1-1resolute.20261103.142002`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-runtime-py/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-c=3.5.0-1resolute.20260915.133355`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-c=3.5.1-1resolute.20261103.144035`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-c=3.5.0-1resolute.20260915.133355`
+- `ros-rolling-rosidl-typesupport-c=3.5.1-1resolute.20261103.144035`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-c/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-cpp=3.5.0-1resolute.20260915.133814`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-cpp=3.5.1-1resolute.20261103.150001`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-cpp=3.5.0-1resolute.20260915.133814`
+- `ros-rolling-rosidl-typesupport-cpp=3.5.1-1resolute.20261103.150001`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-fastrtps-c=3.10.1-2resolute.20261010.100307`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-fastrtps-c=3.10.2-1resolute.20261103.143830`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-fastrtps-c=3.10.1-2resolute.20261010.100307`
+- `ros-rolling-rosidl-typesupport-fastrtps-c=3.10.2-1resolute.20261103.143830`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-fastrtps-c/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-fastrtps-cpp=3.10.1-2resolute.20261010.100007`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-fastrtps-cpp=3.10.2-1resolute.20261103.143604`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-fastrtps-cpp=3.10.1-2resolute.20261010.100007`
+- `ros-rolling-rosidl-typesupport-fastrtps-cpp=3.10.2-1resolute.20261103.143604`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-fastrtps-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-interface=5.3.1-2resolute.20260908.140800`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-interface=5.3.2-1resolute.20261103.141412`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-interface=5.3.1-2resolute.20260908.140800`
+- `ros-rolling-rosidl-typesupport-interface=5.3.2-1resolute.20261103.141412`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-interface/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-introspection-c=5.3.1-2resolute.20260908.143205`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-introspection-c=5.3.2-1resolute.20261103.143452`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-introspection-c=5.3.1-2resolute.20260908.143205`
+- `ros-rolling-rosidl-typesupport-introspection-c=5.3.2-1resolute.20261103.143452`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-introspection-c/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rosidl-typesupport-introspection-cpp=5.3.1-2resolute.20260908.143607`
+### `dpkg` source package: `ros-rolling-rosidl-typesupport-introspection-cpp=5.3.2-1resolute.20261103.144753`
 
 Binary Packages:
 
-- `ros-rolling-rosidl-typesupport-introspection-cpp=5.3.1-2resolute.20260908.143607`
+- `ros-rolling-rosidl-typesupport-introspection-cpp=5.3.2-1resolute.20261103.144753`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rosidl-typesupport-introspection-cpp/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-rpyutils=0.8.0-1resolute.20260908.134032`
+### `dpkg` source package: `ros-rolling-rpyutils=0.8.0-1resolute.20261022.163924`
 
 Binary Packages:
 
-- `ros-rolling-rpyutils=0.8.0-1resolute.20260908.134032`
+- `ros-rolling-rpyutils=0.8.0-1resolute.20261022.163924`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-rpyutils/copyright`)
 
@@ -12604,11 +12610,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-rpyutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-sensor-msgs-py=5.10.2-1resolute.20261010.114343`
+### `dpkg` source package: `ros-rolling-sensor-msgs-py=5.10.3-1resolute.20261103.171257`
 
 Binary Packages:
 
-- `ros-rolling-sensor-msgs-py=5.10.2-1resolute.20261010.114343`
+- `ros-rolling-sensor-msgs-py=5.10.3-1resolute.20261103.171257`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-sensor-msgs-py/copyright`)
 
@@ -12618,11 +12624,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-sensor-msgs-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-sensor-msgs=5.10.2-1resolute.20261010.111804`
+### `dpkg` source package: `ros-rolling-sensor-msgs=5.10.3-1resolute.20261103.165533`
 
 Binary Packages:
 
-- `ros-rolling-sensor-msgs=5.10.2-1resolute.20261010.111804`
+- `ros-rolling-sensor-msgs=5.10.3-1resolute.20261103.165533`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-sensor-msgs/copyright`)
 
@@ -12632,25 +12638,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-service-msgs=2.5.1-1resolute.20261010.102424`
+### `dpkg` source package: `ros-rolling-service-msgs=2.5.2-1resolute.20261103.161307`
 
 Binary Packages:
 
-- `ros-rolling-service-msgs=2.5.1-1resolute.20261010.102424`
+- `ros-rolling-service-msgs=2.5.2-1resolute.20261103.161307`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-service-msgs/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-shape-msgs=5.10.2-1resolute.20261010.112452`
+### `dpkg` source package: `ros-rolling-shape-msgs=5.10.3-1resolute.20261103.170033`
 
 Binary Packages:
 
-- `ros-rolling-shape-msgs=5.10.2-1resolute.20261010.112452`
+- `ros-rolling-shape-msgs=5.10.3-1resolute.20261103.170033`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-shape-msgs/copyright`)
 
@@ -12660,68 +12666,39 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-shape-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-spdlog-vendor=1.9.0-1resolute.20260908.135318`
+### `dpkg` source package: `ros-rolling-sros2-cmake=0.17.1-1resolute.20261111.022153`
 
 Binary Packages:
 
-- `ros-rolling-spdlog-vendor=1.9.0-1resolute.20260908.135318`
-
-Licenses: (parsed from: `/usr/share/doc/ros-rolling-spdlog-vendor/copyright`)
-
-- `Apache License 2.0`
-- `MIT`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-rolling-sros2-cmake=0.17.0-1resolute.20261010.152541`
-
-Binary Packages:
-
-- `ros-rolling-sros2-cmake=0.17.0-1resolute.20261010.152541`
+- `ros-rolling-sros2-cmake=0.17.1-1resolute.20261111.022153`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-sros2-cmake/copyright`)
 
-- `Apache 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-sros2=0.17.0-1resolute.20261010.145213`
+### `dpkg` source package: `ros-rolling-sros2=0.17.1-1resolute.20261111.010938`
 
 Binary Packages:
 
-- `ros-rolling-sros2=0.17.0-1resolute.20261010.145213`
+- `ros-rolling-sros2=0.17.1-1resolute.20261111.010938`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-sros2/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-statistics-msgs=2.5.1-1resolute.20261010.104416`
+### `dpkg` source package: `ros-rolling-std-msgs=5.10.3-1resolute.20261103.163300`
 
 Binary Packages:
 
-- `ros-rolling-statistics-msgs=2.5.1-1resolute.20261010.104416`
-
-Licenses: (parsed from: `/usr/share/doc/ros-rolling-statistics-msgs/copyright`)
-
-- `Apache License 2.0`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-rolling-std-msgs=5.10.2-1resolute.20261010.104418`
-
-Binary Packages:
-
-- `ros-rolling-std-msgs=5.10.2-1resolute.20261010.104418`
+- `ros-rolling-std-msgs=5.10.3-1resolute.20261103.163300`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-std-msgs/copyright`)
 
@@ -12731,11 +12708,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-std-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-std-srvs=5.10.2-1resolute.20261010.112600`
+### `dpkg` source package: `ros-rolling-std-srvs=5.10.3-1resolute.20261103.163721`
 
 Binary Packages:
 
-- `ros-rolling-std-srvs=5.10.2-1resolute.20261010.112600`
+- `ros-rolling-std-srvs=5.10.3-1resolute.20261103.163721`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-std-srvs/copyright`)
 
@@ -12745,11 +12722,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-std-srvs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-stereo-image-proc=8.0.2-1resolute.20261016.225205`
+### `dpkg` source package: `ros-rolling-stereo-image-proc=8.0.2-1resolute.20261111.024632`
 
 Binary Packages:
 
-- `ros-rolling-stereo-image-proc=8.0.2-1resolute.20261016.225205`
+- `ros-rolling-stereo-image-proc=8.0.2-1resolute.20261111.024632`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-stereo-image-proc/copyright`)
 
@@ -12759,11 +12736,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-stereo-image-proc/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-stereo-msgs=5.10.2-1resolute.20261010.114015`
+### `dpkg` source package: `ros-rolling-stereo-msgs=5.10.3-1resolute.20261103.171212`
 
 Binary Packages:
 
-- `ros-rolling-stereo-msgs=5.10.2-1resolute.20261010.114015`
+- `ros-rolling-stereo-msgs=5.10.3-1resolute.20261103.171212`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-stereo-msgs/copyright`)
 
@@ -12773,11 +12750,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-stereo-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-bullet=0.46.4-1resolute.20261010.134956`
+### `dpkg` source package: `ros-rolling-tf2-bullet=0.46.5-1resolute.20261111.023049`
 
 Binary Packages:
 
-- `ros-rolling-tf2-bullet=0.46.4-1resolute.20261010.134956`
+- `ros-rolling-tf2-bullet=0.46.5-1resolute.20261111.023049`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-bullet/copyright`)
 
@@ -12787,11 +12764,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-bullet/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-eigen-kdl=0.46.4-1resolute.20261010.122010`
+### `dpkg` source package: `ros-rolling-tf2-eigen-kdl=0.46.5-1resolute.20261103.171714`
 
 Binary Packages:
 
-- `ros-rolling-tf2-eigen-kdl=0.46.4-1resolute.20261010.122010`
+- `ros-rolling-tf2-eigen-kdl=0.46.5-1resolute.20261103.171714`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-eigen-kdl/copyright`)
 
@@ -12801,11 +12778,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-eigen-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-eigen=0.46.4-1resolute.20261010.135016`
+### `dpkg` source package: `ros-rolling-tf2-eigen=0.46.5-1resolute.20261111.024004`
 
 Binary Packages:
 
-- `ros-rolling-tf2-eigen=0.46.4-1resolute.20261010.135016`
+- `ros-rolling-tf2-eigen=0.46.5-1resolute.20261111.024004`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-eigen/copyright`)
 
@@ -12815,11 +12792,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-eigen/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-geometry-msgs=0.46.4-1resolute.20261010.135050`
+### `dpkg` source package: `ros-rolling-tf2-geometry-msgs=0.46.5-1resolute.20261111.022720`
 
 Binary Packages:
 
-- `ros-rolling-tf2-geometry-msgs=0.46.4-1resolute.20261010.135050`
+- `ros-rolling-tf2-geometry-msgs=0.46.5-1resolute.20261111.022720`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-geometry-msgs/copyright`)
 
@@ -12829,11 +12806,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-geometry-msgs/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-kdl=0.46.4-1resolute.20261010.132837`
+### `dpkg` source package: `ros-rolling-tf2-kdl=0.46.5-1resolute.20261111.022736`
 
 Binary Packages:
 
-- `ros-rolling-tf2-kdl=0.46.4-1resolute.20261010.132837`
+- `ros-rolling-tf2-kdl=0.46.5-1resolute.20261111.022736`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-kdl/copyright`)
 
@@ -12843,11 +12820,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-msgs=0.46.4-1resolute.20261010.111453`
+### `dpkg` source package: `ros-rolling-tf2-msgs=0.46.5-1resolute.20261103.165655`
 
 Binary Packages:
 
-- `ros-rolling-tf2-msgs=0.46.4-1resolute.20261010.111453`
+- `ros-rolling-tf2-msgs=0.46.5-1resolute.20261103.165655`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-msgs/copyright`)
 
@@ -12857,11 +12834,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-py=0.46.4-1resolute.20261010.125350`
+### `dpkg` source package: `ros-rolling-tf2-py=0.46.5-1resolute.20261111.011008`
 
 Binary Packages:
 
-- `ros-rolling-tf2-py=0.46.4-1resolute.20261010.125350`
+- `ros-rolling-tf2-py=0.46.5-1resolute.20261111.011008`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-py/copyright`)
 
@@ -12871,11 +12848,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-ros-py=0.46.4-1resolute.20261010.132751`
+### `dpkg` source package: `ros-rolling-tf2-ros-py=0.46.5-1resolute.20261111.011454`
 
 Binary Packages:
 
-- `ros-rolling-tf2-ros-py=0.46.4-1resolute.20261010.132751`
+- `ros-rolling-tf2-ros-py=0.46.5-1resolute.20261111.011454`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-ros-py/copyright`)
 
@@ -12885,11 +12862,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-ros-py/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-ros=0.46.4-1resolute.20261010.130405`
+### `dpkg` source package: `ros-rolling-tf2-ros=0.46.5-1resolute.20261111.013214`
 
 Binary Packages:
 
-- `ros-rolling-tf2-ros=0.46.4-1resolute.20261010.130405`
+- `ros-rolling-tf2-ros=0.46.5-1resolute.20261111.013214`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-ros/copyright`)
 
@@ -12899,11 +12876,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-sensor-msgs=0.46.4-1resolute.20261010.132903`
+### `dpkg` source package: `ros-rolling-tf2-sensor-msgs=0.46.5-1resolute.20261111.022749`
 
 Binary Packages:
 
-- `ros-rolling-tf2-sensor-msgs=0.46.4-1resolute.20261010.132903`
+- `ros-rolling-tf2-sensor-msgs=0.46.5-1resolute.20261111.022749`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-sensor-msgs/copyright`)
 
@@ -12913,11 +12890,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-sensor-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2-tools=0.46.4-1resolute.20261010.140100`
+### `dpkg` source package: `ros-rolling-tf2-tools=0.46.5-1resolute.20261111.011941`
 
 Binary Packages:
 
-- `ros-rolling-tf2-tools=0.46.4-1resolute.20261010.140100`
+- `ros-rolling-tf2-tools=0.46.5-1resolute.20261111.011941`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-tools/copyright`)
 
@@ -12927,11 +12904,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2-tools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tf2=0.46.4-1resolute.20261010.121605`
+### `dpkg` source package: `ros-rolling-tf2=0.46.5-1resolute.20261103.170702`
 
 Binary Packages:
 
-- `ros-rolling-tf2=0.46.4-1resolute.20261010.121605`
+- `ros-rolling-tf2=0.46.5-1resolute.20261103.170702`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2/copyright`)
 
@@ -12941,11 +12918,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tf2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-theora-image-transport=7.0.1-1resolute.20261010.142149`
+### `dpkg` source package: `ros-rolling-theora-image-transport=7.0.1-1resolute.20261111.014858`
 
 Binary Packages:
 
-- `ros-rolling-theora-image-transport=7.0.1-1resolute.20261010.142149`
+- `ros-rolling-theora-image-transport=7.0.1-1resolute.20261111.014858`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-theora-image-transport/copyright`)
 
@@ -12955,11 +12932,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-theora-image-transport/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tracetools-image-pipeline=8.0.2-1resolute.20261016.222905`
+### `dpkg` source package: `ros-rolling-tracetools-image-pipeline=8.0.2-1resolute.20261103.171546`
 
 Binary Packages:
 
-- `ros-rolling-tracetools-image-pipeline=8.0.2-1resolute.20261016.222905`
+- `ros-rolling-tracetools-image-pipeline=8.0.2-1resolute.20261103.171546`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tracetools-image-pipeline/copyright`)
 
@@ -12969,11 +12946,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tracetools-image-pipeline/co
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-tracetools=9.0.0-1resolute.20260908.134840`
+### `dpkg` source package: `ros-rolling-tracetools=9.0.0-1resolute.20261022.231045`
 
 Binary Packages:
 
-- `ros-rolling-tracetools=9.0.0-1resolute.20260908.134840`
+- `ros-rolling-tracetools=9.0.0-1resolute.20261022.231045`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-tracetools/copyright`)
 
@@ -12983,11 +12960,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-tracetools/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-trajectory-msgs=5.10.2-1resolute.20261010.111723`
+### `dpkg` source package: `ros-rolling-trajectory-msgs=5.10.3-1resolute.20261103.165647`
 
 Binary Packages:
 
-- `ros-rolling-trajectory-msgs=5.10.2-1resolute.20261010.111723`
+- `ros-rolling-trajectory-msgs=5.10.3-1resolute.20261103.165647`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-trajectory-msgs/copyright`)
 
@@ -12997,25 +12974,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-trajectory-msgs/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-type-description-interfaces=2.5.1-1resolute.20261010.102959`
+### `dpkg` source package: `ros-rolling-type-description-interfaces=2.5.2-1resolute.20261103.162054`
 
 Binary Packages:
 
-- `ros-rolling-type-description-interfaces=2.5.1-1resolute.20261010.102959`
+- `ros-rolling-type-description-interfaces=2.5.2-1resolute.20261103.162054`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-type-description-interfaces/copyright`)
 
-- `Apache License 2.0`
+- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-uncrustify-vendor=3.3.0-1resolute.20260908.135307`
+### `dpkg` source package: `ros-rolling-uncrustify-vendor=3.3.0-1resolute.20261022.231557`
 
 Binary Packages:
 
-- `ros-rolling-uncrustify-vendor=3.3.0-1resolute.20260908.135307`
+- `ros-rolling-uncrustify-vendor=3.3.0-1resolute.20261022.231557`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-uncrustify-vendor/copyright`)
 
@@ -13026,11 +13003,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-uncrustify-vendor/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-unique-identifier-msgs=2.9.0-1resolute.20261010.101332`
+### `dpkg` source package: `ros-rolling-unique-identifier-msgs=2.9.1-1resolute.20261103.155734`
 
 Binary Packages:
 
-- `ros-rolling-unique-identifier-msgs=2.9.0-1resolute.20261010.101332`
+- `ros-rolling-unique-identifier-msgs=2.9.1-1resolute.20261103.155734`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-unique-identifier-msgs/copyright`)
 
@@ -13040,11 +13017,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-unique-identifier-msgs/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-urdf-parser-plugin=2.14.1-1resolute.20261010.121844`
+### `dpkg` source package: `ros-rolling-urdf-parser-plugin=2.14.1-1resolute.20261103.171603`
 
 Binary Packages:
 
-- `ros-rolling-urdf-parser-plugin=2.14.1-1resolute.20261010.121844`
+- `ros-rolling-urdf-parser-plugin=2.14.1-1resolute.20261103.171603`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdf-parser-plugin/copyright`)
 
@@ -13054,11 +13031,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdf-parser-plugin/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-urdf=2.14.1-1resolute.20261010.122620`
+### `dpkg` source package: `ros-rolling-urdf=2.14.1-1resolute.20261103.171938`
 
 Binary Packages:
 
-- `ros-rolling-urdf=2.14.1-1resolute.20261010.122620`
+- `ros-rolling-urdf=2.14.1-1resolute.20261103.171938`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdf/copyright`)
 
@@ -13068,11 +13045,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdf/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-urdfdom-headers=3.0.1-1resolute.20260908.134209`
+### `dpkg` source package: `ros-rolling-urdfdom-headers=3.0.1-1resolute.20261022.164609`
 
 Binary Packages:
 
-- `ros-rolling-urdfdom-headers=3.0.1-1resolute.20260908.134209`
+- `ros-rolling-urdfdom-headers=3.0.1-1resolute.20261022.164609`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdfdom-headers/copyright`)
 
@@ -13082,11 +13059,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdfdom-headers/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-urdfdom=6.0.1-1resolute.20260908.135356`
+### `dpkg` source package: `ros-rolling-urdfdom=6.0.2-1resolute.20261023.000423`
 
 Binary Packages:
 
-- `ros-rolling-urdfdom=6.0.1-1resolute.20260908.135356`
+- `ros-rolling-urdfdom=6.0.2-1resolute.20261023.000423`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdfdom/copyright`)
 
@@ -13096,11 +13073,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-urdfdom/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-vision-opencv=4.1.0-2resolute.20261010.144217`
+### `dpkg` source package: `ros-rolling-vision-opencv=4.1.0-2resolute.20261111.022947`
 
 Binary Packages:
 
-- `ros-rolling-vision-opencv=4.1.0-2resolute.20261010.144217`
+- `ros-rolling-vision-opencv=4.1.0-2resolute.20261111.022947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-vision-opencv/copyright`)
 
@@ -13111,11 +13088,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-vision-opencv/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-visualization-msgs=5.10.2-1resolute.20261010.113647`
+### `dpkg` source package: `ros-rolling-visualization-msgs=5.10.3-1resolute.20261103.170803`
 
 Binary Packages:
 
-- `ros-rolling-visualization-msgs=5.10.2-1resolute.20261010.113647`
+- `ros-rolling-visualization-msgs=5.10.3-1resolute.20261103.170803`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-visualization-msgs/copyright`)
 
@@ -13125,11 +13102,25 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-visualization-msgs/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-yaml-cpp-vendor=9.3.0-1resolute.20260908.135318`
+### `dpkg` source package: `ros-rolling-xacro=2.1.1-2resolute.20261022.231540`
 
 Binary Packages:
 
-- `ros-rolling-yaml-cpp-vendor=9.3.0-1resolute.20260908.135318`
+- `ros-rolling-xacro=2.1.1-2resolute.20261022.231540`
+
+Licenses: (parsed from: `/usr/share/doc/ros-rolling-xacro/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-rolling-yaml-cpp-vendor=9.3.0-1resolute.20261022.231559`
+
+Binary Packages:
+
+- `ros-rolling-yaml-cpp-vendor=9.3.0-1resolute.20261022.231559`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-yaml-cpp-vendor/copyright`)
 
@@ -13140,11 +13131,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-yaml-cpp-vendor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-zstd-cmake-module=0.35.0-1resolute.20260916.193355`
+### `dpkg` source package: `ros-rolling-zstd-cmake-module=0.35.0-1resolute.20261022.202957`
 
 Binary Packages:
 
-- `ros-rolling-zstd-cmake-module=0.35.0-1resolute.20260916.193355`
+- `ros-rolling-zstd-cmake-module=0.35.0-1resolute.20261022.202957`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-zstd-cmake-module/copyright`)
 
@@ -13154,11 +13145,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-rolling-zstd-cmake-module/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-rolling-zstd-image-transport=7.0.1-1resolute.20261010.151407`
+### `dpkg` source package: `ros-rolling-zstd-image-transport=7.0.1-1resolute.20261111.024257`
 
 Binary Packages:
 
-- `ros-rolling-zstd-image-transport=7.0.1-1resolute.20261010.151407`
+- `ros-rolling-zstd-image-transport=7.0.1-1resolute.20261111.024257`
 
 Licenses: (parsed from: `/usr/share/doc/ros-rolling-zstd-image-transport/copyright`)
 
