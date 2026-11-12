@@ -52,21 +52,13 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.4-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.4-2.dsc' apr-util_1.6.4-2.dsc 2796 SHA256:05b5e628576c08893ff1997f74845300ce0909fadbe3cef69cc9c6cdedf79014
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.4.orig.tar.bz2' apr-util_1.6.4.orig.tar.bz2 441511 SHA256:3e2ae08f40efa0c3701e54a954cefa08242de22a69f91a8ae44fc1e624ba309b
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.4.orig.tar.bz2.asc' apr-util_1.6.4.orig.tar.bz2.asc 898 SHA256:17eb58050f65c3889195f3077e36521a9af3e36b100efef690f50916c3116bf8
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.4-2.debian.tar.xz' apr-util_1.6.4-2.debian.tar.xz 39148 SHA256:16aa02e9cb68f4f665013c62af23fb49bac504590ccd06bae4cbeb541357ac66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr-util/1.6.4-2/
 
-- https://sources.debian.net/src/apr-util/1.6.4-2/ (for browsing the source)
-- https://sources.debian.net/src/apr-util/1.6.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr-util/1.6.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr=1.7.6-3`
 
