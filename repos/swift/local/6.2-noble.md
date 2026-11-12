@@ -2141,14 +2141,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-147.147
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.diff.gz' linux_6.8.0-147.147.diff.gz 9974355 SHA512:3b09e9c834ae525a7b1c602415b0b01566fc26018c939da720c70f84cd853e0c661c6b9ca5631e44b435afb0af749cf2870e8b563612b169fe19abd059cb6614
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-147.147.dsc' linux_6.8.0-147.147.dsc 9348 SHA512:145b21268cdc94b54629692e27738fe7b7efc72c51629ba44ce575712ad9de8238d57a05766e27f0118fc20bb87d89bc079b7856d59f85da0f7b8456492668cd
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
@@ -2592,15 +2587,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz' perl_5.38.2-3.2ubuntu0.6.debian.tar.xz 184740 SHA512:b228dfd8936c87c3e6bda2d30785e0d21ae0ca922b3022cf2e4394edf0892433e58a80bacceefc4fb093fbc707720116208a5843ffd2ecdb59738c31cf983ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.dsc' perl_5.38.2-3.2ubuntu0.6.dsc 3081 SHA512:2956c067e9ec690c1b376a7be20a1d42908331814c18c819cc67c9ae694ab280d6bebdf3c754afb2c22967522e3148b181fffe043a699cfaec19f470f856c713
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 

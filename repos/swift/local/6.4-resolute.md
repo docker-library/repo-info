@@ -1991,14 +1991,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-42.42
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.diff.gz' linux_7.0.0-42.42.diff.gz 5891203 SHA512:8c500d2850b70e751db9450a28d7407ecb50011ff880519a1b3eeac8b98012ab675026afd4d7e6fdbe8d6d8b6d8f6c60a2c876d66b558de47e458da91298a959
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-42.42.dsc' linux_7.0.0-42.42.dsc 7845 SHA512:5291a124ff69bb6731453b0b35fe6adf91182bb4be29e6af0dc030b763c31c1081f866f9123bd9ad78cc95e5f2541e6e3e216c8fc0339cb3ee8c091a34fbd1c6
-```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
 
@@ -2459,15 +2454,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.debian.tar.xz' perl_5.40.1-7ubuntu0.3.debian.tar.xz 180528 SHA512:37927310927ca2cdc6d1d16af180e7bf6947fadfb5516139436b9bd72b8d477bd507a94982660c7453fbeb0c0770e6f30ec78d20ff29bcdbdc14ec097d02f194
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.3.dsc' perl_5.40.1-7ubuntu0.3.dsc 3068 SHA512:eccce40f8c545a7710dc0f8d3c6479fba35745f3749e1a3e272ff6312618980fd324e7cfd8c3727e77b777e7ac37c90f5f8c66c2fef367535e12328442859a79
-```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
