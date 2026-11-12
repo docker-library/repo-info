@@ -1,7 +1,7 @@
 ## `swift:noble`
 
 ```console
-$ docker pull swift@sha256:bca121f6eb59fd80340d1296887b2698ed8f3eb9eca7d80c181f8af769dc7ee0
+$ docker pull swift@sha256:5f98e4f73cbc678e6f44b2e0945e502d79fa9812b6808599852be037ea14304d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -105,90 +105,90 @@ $ docker pull swift@sha256:72adcc7f2e17e544a6d9399f5ac49bb46d6bce913e3a1e1373d86
 ### `swift:noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:4e1500a6490956ef1cb97cb9f208346475c0c43111bb1adefee1c2cf5dba3e21
+$ docker pull swift@sha256:c7bb4276f460cd7d263112fdda91119fae93127d685a382e0edd915572df4bb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1297990142 bytes)**  
+-	Total Size: **1.3 GB (1298111233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fb262a3cfde19cf63e7decd976765c51cf75b3f4e291619c6df7911ee780ce5c`
+-	Image ID: `sha256:127ea71f7ea6780248690626f571344e0c11d569651b4a20e417efd8dab51826`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sun, 25 Oct 2026 14:18:00 GMT
+# Tue, 10 Nov 2026 08:33:24 GMT
 ARG RELEASE
-# Sun, 25 Oct 2026 14:18:00 GMT
+# Tue, 10 Nov 2026 08:33:24 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sun, 25 Oct 2026 14:18:00 GMT
+# Tue, 10 Nov 2026 08:33:24 GMT
 LABEL org.opencontainers.image.version=24.04
-# Sun, 25 Oct 2026 14:18:03 GMT
-ADD file:2c901e275b6c59fa9cf0fb689a9665247088dba23d45178d9aa52ec3263de265 in / 
-# Sun, 25 Oct 2026 14:18:03 GMT
+# Tue, 10 Nov 2026 08:33:26 GMT
+ADD file:aeac09a5d64b4f3ea9f6270bab8e042832a855d9ab77269736eef18fda7dc7bb in / 
+# Tue, 10 Nov 2026 08:33:26 GMT
 CMD ["/bin/bash"]
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 LABEL description=Docker Container for the Swift programming language
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     binutils     git     unzip     gnupg2     libc6-dev     libcurl4-openssl-dev     libedit2     libgcc-13-dev     libpython3-dev     libsqlite3-0     libstdc++-13-dev     libxml2-dev     libncurses-dev     libz3-dev     pkg-config     tzdata     zlib1g-dev     && rm -r /var/lib/apt/lists/* # buildkit
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ARG SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ARG SWIFT_PLATFORM=ubuntu24.04
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ARG SWIFT_BRANCH=swift-6.4.2-release
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ARG SWIFT_VERSION=swift-6.4.2-RELEASE
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Fri, 30 Oct 2026 17:30:32 GMT
+# Wed, 11 Nov 2026 23:45:22 GMT
 ENV SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubuntu24.04 SWIFT_BRANCH=swift-6.4.2-release SWIFT_VERSION=swift-6.4.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Fri, 30 Oct 2026 17:31:16 GMT
+# Wed, 11 Nov 2026 23:46:04 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubuntu24.04 SWIFT_BRANCH=swift-6.4.2-release SWIFT_VERSION=swift-6.4.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${ARCH_NAME##*-}" in         'amd64')             OS_ARCH_SUFFIX='';             ;;         'arm64')             OS_ARCH_SUFFIX='-aarch64';             ;;         *) echo >&2 "error: unsupported architecture: '$ARCH_NAME'"; exit 1 ;;     esac;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)$OS_ARCH_SUFFIX"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM$OS_ARCH_SUFFIX.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl # buildkit
-# Fri, 30 Oct 2026 17:31:16 GMT
+# Wed, 11 Nov 2026 23:46:05 GMT
 # ARGS: SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F SWIFT_PLATFORM=ubuntu24.04 SWIFT_BRANCH=swift-6.4.2-release SWIFT_VERSION=swift-6.4.2-RELEASE SWIFT_WEBROOT=https://download.swift.org
 RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:e2d2bb84d02254f4be480ca3c62f94fc12ac959c11b3ce5bd7da3f411b2b9607`  
-		Last Modified: Sun, 25 Oct 2026 14:50:12 GMT  
-		Size: 28.9 MB (28940126 bytes)  
+	-	`sha256:0c72064db2470cf0efa5fa1935125d317d0c2f6d95855143ae6a816ce4b20b56`  
+		Last Modified: Wed, 11 Nov 2026 22:58:08 GMT  
+		Size: 29.0 MB (28965258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:159be130ca1516598ef228d5593141a25ff9b881beaf20318e30f47007dd287b`  
-		Last Modified: Fri, 30 Oct 2026 17:33:36 GMT  
-		Size: 129.0 MB (129028303 bytes)  
+	-	`sha256:ab694bcf53b8adc1f6dbe6943d537d9ea424785f099b225d8bdf035f65eb2167`  
+		Last Modified: Wed, 11 Nov 2026 23:48:26 GMT  
+		Size: 129.1 MB (129124192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4ee15eb407af9e588d87ba2574618b7df294c7dca822c7f469776d25b56280a`  
-		Last Modified: Fri, 30 Oct 2026 17:33:58 GMT  
-		Size: 1.1 GB (1140021539 bytes)  
+	-	`sha256:caac2c22115a4bd539e3298ef08599b5a3a00a3ba6c6efe031d2e14b47d71dc1`  
+		Last Modified: Wed, 11 Nov 2026 23:48:44 GMT  
+		Size: 1.1 GB (1140021609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88236406e4a4b5d95b7d75c80ed2f3a06ff80a32da57c2df9aefa9fb5d7218a7`  
-		Last Modified: Fri, 30 Oct 2026 17:33:29 GMT  
+	-	`sha256:2707b7179defaa804c89db98b22fb0ac0b792637a9c65be235696301b88c1dd9`  
+		Last Modified: Wed, 11 Nov 2026 23:48:21 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:noble` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:a22417948b692c6d3853bafc47f17b8787e74d31ebe8a5b9693038a35d1e4bcc
+$ docker pull swift@sha256:3b0e3e8b57fbb00266b152d0f9c1c075c9d3fd5f63b9cb919e60bd7cb039b2d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.9 MB (7887309 bytes)**  
+-	Total Size: **7.9 MB (7887912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1eea51f0575ac007b1e17ee407b85f1871f74104215d7a49b0c4c61860237b6`
+-	Image ID: `sha256:2a00c6e88787a0a1190d37fded4610faa3eef3206485bf62f79b1eac04008763`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6ea9295461eed3095e7724bc5f6984fdefd772c1c7d6b95aa67f667c1cb97388`  
-		Last Modified: Fri, 30 Oct 2026 17:33:29 GMT  
-		Size: 7.9 MB (7871268 bytes)  
+	-	`sha256:979e631bcfb2f55c1eed29b4f9c588a9643e458208c92da4adfdec00cb7abfb5`  
+		Last Modified: Wed, 11 Nov 2026 23:48:21 GMT  
+		Size: 7.9 MB (7871872 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:481a407eccb22670f757548d92a4f0979d31e4d35858acf7de8a37833df71886`  
-		Last Modified: Fri, 30 Oct 2026 17:33:29 GMT  
-		Size: 16.0 KB (16041 bytes)  
+	-	`sha256:4228594efabafc32b0282e5fbcb7e11c9bba617e29dbc4963979f267799136da`  
+		Last Modified: Wed, 11 Nov 2026 23:48:20 GMT  
+		Size: 16.0 KB (16040 bytes)  
 		MIME: application/vnd.in-toto+json
