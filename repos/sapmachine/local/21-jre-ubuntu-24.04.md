@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf1066e2fa1ddac9f17d38d7963424d7d83270a679373c7e3ffe7b421846dbc0`
-- Created: `2026-10-26T23:39:48.262891519Z`
-- Virtual Size: ~ 270.71 Mb  
+- Image ID: `sha256:510cbea5951790c9f2d6e4dad7511e477d0c5b667944b9dcd776f73b9cdd1b31`
+- Created: `2026-11-11T23:40:47.137919876Z`
+- Virtual Size: ~ 270.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -80,12 +80,12 @@ $ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.dsc' alsa-lib_1.2.11-1ubuntu0.3.dsc 3034 SHA512:d26f939ee14e738ffad5f0ceafe45426f20b97c41bfff4181474f943e75a7e29b9ce75219f2088c1b8d6b7a25d2eeeae3f4b7fe240557bc32a1947ae82e4dd07
 ```
 
-### `dpkg` source package: `apt=2.8.3`
+### `dpkg` source package: `apt=2.8.4ubuntu0.1`
 
 Binary Packages:
 
-- `apt=2.8.3`
-- `libapt-pkg6.0t64:amd64=2.8.3`
+- `apt=2.8.4ubuntu0.1`
+- `libapt-pkg6.0t64:amd64=2.8.4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0t64/copyright`)
 
@@ -94,9 +94,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.8.4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.4ubuntu0.1.tar.xz' apt_2.8.4ubuntu0.1.tar.xz 2355692 SHA512:0a6946d1e02ca0862da42bccb41ee5f69e265a5896e8b05130590cd9e79664486974bfcc23e923444f06ea86a1b28fa70b09f4a8a677611a1aebcea0041289f7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.4ubuntu0.1.dsc' apt_2.8.4ubuntu0.1.dsc 3017 SHA512:501f4e2627ff85a4886cf6ed870cc972d3470c2b73660a179f993dda9ad621529c3421394025f4749b6725f785a6b1119d58386c756cfa02aa483484b2028070
+```
 
 ### `dpkg` source package: `attr=1:2.5.2-1ubuntu0.1`
 
@@ -1679,11 +1683,11 @@ $ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.7
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.dsc' pam_1.5.3-5ubuntu5.7.dsc 2772 SHA512:41262a6c1dcbda1e6946258d069e4231516ab1effabf246ed69aab8f9468961afc9c1abaa09b30ac7e5188137acea1cabf5b35af735a8e36ce5aabbe5c1784ff
 ```
 
-### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
+### `dpkg` source package: `pcre2=10.42-4ubuntu2.2`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-4ubuntu2.1`
+- `libpcre2-8-0:amd64=10.42-4ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1693,9 +1697,14 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA512:a3db6c5c620775838819be616652e73ce00f5ef5c1f49f559ff3efb51a119d02f01254c5901c1f7d0c47c0ddfcf4313e38d6ca32c35381b8f87f36896d10e6f7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.2.diff.gz' pcre2_10.42-4ubuntu2.2.diff.gz 16312 SHA512:44f6cead68733bb5bde33d35d1fd08ff2e124af22cd5a42cb7fba53a34bc488c1cd9eee29c48958d08ac9b2c4db0cecb26f3b4b3f6eff1cab00b1a148488e2a9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.2.dsc' pcre2_10.42-4ubuntu2.2.dsc 2317 SHA512:7755bae9f52a617174be3be837d2f12409eba2658cf5f0a5cc7a01c17158131e06e1a72a50915f68a67109f6783e2dbd66b9e88df0877c0c238a9d2ee304afe0
+```
 
 ### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.6`
 
@@ -1731,15 +1740,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz' perl_5.38.2-3.2ubuntu0.6.debian.tar.xz 184740 SHA512:b228dfd8936c87c3e6bda2d30785e0d21ae0ca922b3022cf2e4394edf0892433e58a80bacceefc4fb093fbc707720116208a5843ffd2ecdb59738c31cf983ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.dsc' perl_5.38.2-3.2ubuntu0.6.dsc 3081 SHA512:2956c067e9ec690c1b376a7be20a1d42908331814c18c819cc67c9ae694ab280d6bebdf3c754afb2c22967522e3148b181fffe043a699cfaec19f470f856c713
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.3`
 
@@ -1854,11 +1857,11 @@ $ apt-get source -qq --print-uris shadow=1:4.13+dfsg1-4ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.13%2bdfsg1-4ubuntu3.2.dsc' shadow_4.13+dfsg1-4ubuntu3.2.dsc 2400 SHA256:0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368
 ```
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.8`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.9`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2.8`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.9`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1869,11 +1872,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.8
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz 37512 SHA512:3ff673e1dbdbea223c1ca984d9dc08877190eed0c40d5f33dae049b866ba57ed8ca59c87fa0dd634232c388edf48d088fa0e569319c4ee20fe1a63df0f047f35
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc' sqlite3_3.45.1-1ubuntu2.8.dsc 2601 SHA512:8b492de28c699f0a0a32115b781cc9a6c2d8801992b907a41e5ed0642c3845a1688cbb9aee60ea9a4e8af436100f9f29dc8e6af0d75f8411d8b6a6b0ea99163a
+$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.9.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.9.debian.tar.xz 41668 SHA512:70d9ec234d347b014e740a4cd7a94174d0cd7d90dc2339c36de60b5d879efc6a45bb0cb4fa2fb9ac6ea7122f90acdd886d4e87466c9b706b139dcdbb307c2fea
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.9.dsc' sqlite3_3.45.1-1ubuntu2.9.dsc 2601 SHA512:83bcd59d09af7d04f5896604fec21f33fad6eafff61030b3c00a17277d571ed4e4ec4141fd01003d71b895cfe09b1b2d3f07eb1b799ef4a60a5230528c942dae
 ```
 
 ### `dpkg` source package: `systemd=255.4-1ubuntu8.18`
