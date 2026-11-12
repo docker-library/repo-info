@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a8dd0a9934910b2f14c486e6b74857d0d5a9430b5d531cc51051f921fb42e4c`
+- Image ID: `sha256:b60330d5997981063a544b17673747a96a954f71510d87e7e09131c76b41398f`
 - Created: `1970-01-01T00:00:00Z`
-- Virtual Size: ~ 103.83 Mb  
+- Virtual Size: ~ 103.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-10-23T23:26:58.552491+00:00`
+  - `org.opencontainers.image.created=2026-11-05T15:25:39.205322+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -47,12 +47,12 @@ $ apt-get source -qq --print-uris acl=2.4.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.4.0-1.debian.tar.xz' acl_2.4.0-1.debian.tar.xz 47932 SHA512:04d41d6836a998da81ff8e6045c19e4b93906659edde09a6ca548cbdfa30c3779a5981d67010abdbb151802785e733ea73614b724bb3f538d75b85c692f7c01d
 ```
 
-### `dpkg` source package: `apt=3.3.3`
+### `dpkg` source package: `apt=3.3.3ubuntu0.1`
 
 Binary Packages:
 
-- `apt=3.3.3`
-- `libapt-pkg7.0:amd64=3.3.3`
+- `apt=3.3.3ubuntu0.1`
+- `libapt-pkg7.0:amd64=3.3.3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -65,9 +65,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.3.3.dsc' apt_3.3.3.dsc 3132 SHA512:219f229fe64bcb077cb14fbb16d476f7643ce5eb42109dfed32181d50b8e51251f5ec9c1683b174730f15f69aceb2dbeb91c89970cb1009f8ca62e6cee9de469
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.3.3.tar.xz' apt_3.3.3.tar.xz 2530836 SHA512:f5d39c9cab190f642ad1a15b56ce31fd9faf5bd274149bcba6a067ad33adc56115c54216d653f0d61333e8feed56af7a8b9efcf8b63e4ef796a389b3c4e5f189
+$ apt-get source -qq --print-uris apt=3.3.3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.3.3ubuntu0.1.tar.xz' apt_3.3.3ubuntu0.1.tar.xz 2531348 SHA512:477f21063034d87bb0fd4dfcc5baff10cb3a35066fb28a98ffa1760709d301984a10a5a8469a42be7b0a2f32445524bf153146ae68d05705857ccea786f8a8af
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.3.3ubuntu0.1.dsc' apt_3.3.3ubuntu0.1.dsc 3168 SHA512:e5bb5f6633fb71f6b094806b47d38f92e8667b4813def050cbd0fa7af3fb693a672927c52bc90c3745843cadb90ec4f5f308c198c1790307b09919c4c6fd9357
 ```
 
 ### `dpkg` source package: `attr=1:2.6.0-1`
@@ -114,11 +114,11 @@ $ apt-get source -qq --print-uris audit=1:4.1.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.1.2-1ubuntu1.dsc' audit_4.1.2-1ubuntu1.dsc 3024 SHA512:a10dc8ea6576bf755b2ba863070c0aaec4ff15f72e683b817147a49ed6976b98444b358e6879f9375e907fe76c4cdeb3482adfbf1e1e36f2c523308240cbcfb1
 ```
 
-### `dpkg` source package: `base-files=14.2ubuntu2`
+### `dpkg` source package: `base-files=14.2ubuntu2.1`
 
 Binary Packages:
 
-- `base-files=14.2ubuntu2`
+- `base-files=14.2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -129,9 +129,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=14.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu2.tar.xz' base-files_14.2ubuntu2.tar.xz 112520 SHA512:a7aea8590cb7ee98f0b69e112b16c9353351723e09521fc4f2368115d1983f70fc3fa5c3277824f0f41fee2d766d52f6059890d582ec257646619f01ada067e3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu2.dsc' base-files_14.2ubuntu2.dsc 1738 SHA512:da6bc49559795cac3b239a934f76f8b81420b2fb0cb07be6e766cb0902388decdca3b57942fccc4953909fd023fac110c1152df71022d255abdb441a18796ae2
+$ apt-get source -qq --print-uris base-files=14.2ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu2.1.tar.xz' base-files_14.2ubuntu2.1.tar.xz 112496 SHA512:59bd6a684cd5c33a1774e5b77b8cb0934e9391ee2d98095dc6edd59d6cb5d524d629ef5bfaf9d7d4ab0a110248b1653d40c4b2f1dc826053322b25f74080ff0f
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14.2ubuntu2.1.dsc' base-files_14.2ubuntu2.1.dsc 1746 SHA512:945acb43f20683efd3ddc693ca91b3ab6c2050c1c65b8d1c3d1bd6f00cca7b300c1b892c01b16bd96f6da062b366d5fcd59b0131caca1f64d3d5dbee2a76abac
 ```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
@@ -1039,11 +1039,11 @@ $ apt-get source -qq --print-uris pam=1.7.0-5ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.7.0-5ubuntu4.dsc' pam_1.7.0-5ubuntu4.dsc 2926 SHA512:685f01af20976ec2b1db05ee57d0fa81c0a8e3e08aa2a99af15440106dab3c7c7cfb4becbfe8f57560bb3356176f2cd842540d1ab0ba283569b6ef8aa0b000e3
 ```
 
-### `dpkg` source package: `pcre2=10.46-1build1`
+### `dpkg` source package: `pcre2=10.46-1ubuntu1`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.46-1build1`
+- `libpcre2-8-0:amd64=10.46-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1056,10 +1056,10 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.46-1build1
+$ apt-get source -qq --print-uris pcre2=10.46-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA512:8bc85f1e47633f4cab07e00b65e9f94a38bb8db56d7ea0a3068774a5ccfe5b777e6645c0a345dd265a06aa6672448ad51c9e56636c48ec87dae9f884a998e00b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.diff.gz' pcre2_10.46-1build1.diff.gz 8804 SHA512:b430153c7e3b41f0ddfa526ed816d66111b27415c8d0863d8c516c27f84e0370d517911048db6ec1ad0ce45e08c4c5afec369b7d64b68b200e2cc5c20251049a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA512:5454744ec42c17a8153fc479577f6cfb2be961e5588e02828908b4f1d618878d9f5c783f4bdccf6f1f62303b8e4b52a31f62e2dbe37dff1cad08907726a418e1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu1.diff.gz' pcre2_10.46-1ubuntu1.diff.gz 19701 SHA512:37c0d3659430bf14cd862221dc5b27e8aa60b077f7638b9b54e8af0b1293eadb865c270ff556ef1b9a5feaa01adb9cf70a5649b8811d7eee8bc192923f8f1c78
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu1.dsc' pcre2_10.46-1ubuntu1.dsc 2363 SHA512:c27c27a48c51a25fc9f1399fcbaf8876dab20497f4ed3b6a685cf383491ce2568239b596fc423e989ca0a33d1e13892e2ba3c2412fd89b4198fa729ce3ad62ba
 ```
 
 ### `dpkg` source package: `perl=5.42.3-1`
