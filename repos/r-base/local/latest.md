@@ -1371,20 +1371,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.15-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15-2.dsc' graphite2_1.3.15-2.dsc 2535 SHA256:c7dd38d401e016a0214feec40727ed9762f72700985b99a61528bd865e0f7967
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15.orig.tar.gz' graphite2_1.3.15.orig.tar.gz 13698237 SHA256:ad47ac120d0fbd80dbc93669afd1074fbbf68af8d1bedf936cf1a433c170f565
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15-2.debian.tar.xz' graphite2_1.3.15-2.debian.tar.xz 15328 SHA256:261cd2c208aad67b4572b10cce60d2312e055ffbd798621613b238184e1b4453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.15-2/
 
-- https://sources.debian.net/src/graphite2/1.3.15-2/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.15-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.15-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -3211,21 +3204,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.70.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0-1.dsc' nghttp2_1.70.0-1.dsc 2734 SHA256:2681c6367d83174f20c2f679551c99232e71dfdd740520498e49da4c7ad5a9dc
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0.orig.tar.gz' nghttp2_1.70.0.orig.tar.gz 3104002 SHA256:aa317e2cf9dca6afa0aed68f8fad6ff303ec6982e25a78c75c0b65e2b9b3ded5
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0.orig.tar.gz.asc' nghttp2_1.70.0.orig.tar.gz.asc 833 SHA256:10846bc9ec5c1bfd4f8109d62e4492f6c348a7c0113e7467924f04cf96a5a44c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0-1.debian.tar.xz' nghttp2_1.70.0-1.debian.tar.xz 15060 SHA256:d43abd52531c78a82df1baf29c2b8b8785ca954e5a5c6abbb525d86e32dccfc3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.70.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.70.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.70.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.70.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.17.0-1`
 
@@ -3768,20 +3753,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.6.2-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.2-1.dsc' r-base_4.6.2-1.dsc 2848 SHA256:9f77db6e7c3623ec56861287740a42c824f8e3df8dc746f0f905686d388c7d57
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.2.orig.tar.xz' r-base_4.6.2.orig.tar.xz 29950564 SHA256:558d569edc9eeb96a104347495200c544df5fab3679c1410e4ad358044829644
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.2-1.debian.tar.xz' r-base_4.6.2-1.debian.tar.xz 106952 SHA256:daf5f6b42f40579211aaf951734d8e1de0b7664a0ee77e6080d9e92f4ac0b48e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/4.6.2-1/
 
-- https://sources.debian.net/src/r-base/4.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-24-1`
 
