@@ -1,10 +1,10 @@
-# `gradle:9.8.2-jdk21-alpine`
+# `gradle:9.9.1-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:17f10c11d1d8ad2df3a5c518fdb4d0698f29b0672e63ef191e9aa57c981f0ed6`
-- Created: `2026-11-05T20:19:14.368849442Z`
-- Virtual Size: ~ 652.91 Mb  
+- Image ID: `sha256:f6f47f789f2490181d72fe0b4e574d06cc47886e23a55585cff6ee40aff794d0`
+- Created: `2026-11-11T20:11:18.320577962Z`
+- Virtual Size: ~ 634.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.13+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.8.2`
+  - `GRADLE_VERSION=9.9.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -483,16 +483,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.54.0-r0 description:
+git-2.54.1-r0 description:
 Distributed version control system
 
-git-2.54.0-r0 webpage:
+git-2.54.1-r0 webpage:
 https://www.git-scm.com/
 
-git-2.54.0-r0 installed size:
+git-2.54.1-r0 installed size:
 6867 KiB
 
-git-2.54.0-r0 license:
+git-2.54.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -500,16 +500,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.54.0-r0 description:
+git-init-template-2.54.1-r0 description:
 Git init template directory
 
-git-init-template-2.54.0-r0 webpage:
+git-init-template-2.54.1-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.54.0-r0 installed size:
+git-init-template-2.54.1-r0 installed size:
 21 KiB
 
-git-init-template-2.54.0-r0 license:
+git-init-template-2.54.1-r0 license:
 GPL-2.0-only
 
 ```
