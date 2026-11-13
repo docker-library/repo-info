@@ -113,21 +113,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.69-1~deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69-1%7edeb13u1.dsc' apache2_2.4.69-1~deb13u1.dsc 3529 SHA256:de4332321f0ac4491031ab7fb84bdfd62dfc48d98a93f628a0b2036044f0ffb6
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz' apache2_2.4.69.orig.tar.gz 10822928 SHA256:c551b9861e26f146f57e1b1765e69c89a60b3db0ec252ccab0d36283487016bb
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz.asc' apache2_2.4.69.orig.tar.gz.asc 870 SHA256:68c3ec70702d49fb2f0f9fd9ff6788bfcd88a9f7e4786c0ee0a0b8d6d9741f8e
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.69-1%7edeb13u1.debian.tar.xz' apache2_2.4.69-1~deb13u1.debian.tar.xz 828308 SHA256:779dac5ec4c04c08eb030e2182652607ad61b65fcc1b24051381c7a6411ab3de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.69-1~deb13u1/
 
-- https://sources.debian.net/src/apache2/2.4.69-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.69-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.69-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3+deb13u1`
 
