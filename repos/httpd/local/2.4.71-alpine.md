@@ -1,18 +1,18 @@
-# `httpd:2.4.69-alpine`
+# `httpd:2.4.71-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac97d20da9c40083278e906e93642fdcc2f34619249e646897c0b6ba26ff8a57`
-- Created: `2026-11-05T18:57:07.492158797Z`
-- Virtual Size: ~ 66.97 Mb  
+- Image ID: `sha256:706f24eef4a77cbdf51ff2d2f32adaa5b47c6273505a12f43dcb00bae0316439`
+- Created: `2026-11-11T22:59:30.308125284Z`
+- Virtual Size: ~ 67.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.69`
-  - `HTTPD_SHA256=c5e6ebc66e349b87d7fc6916ae7cc2a808ed348003de134cf9e9d89d3e2cc73d`
+  - `HTTPD_VERSION=2.4.71`
+  - `HTTPD_SHA256=2bc5da5a33c247341de082717d4ebcb5cb49e8b73a05b7fddf7d5d6dc2f8de62`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
@@ -666,16 +666,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
