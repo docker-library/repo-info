@@ -1699,20 +1699,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.15-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15-2.dsc' graphite2_1.3.15-2.dsc 2535 SHA256:c7dd38d401e016a0214feec40727ed9762f72700985b99a61528bd865e0f7967
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15.orig.tar.gz' graphite2_1.3.15.orig.tar.gz 13698237 SHA256:ad47ac120d0fbd80dbc93669afd1074fbbf68af8d1bedf936cf1a433c170f565
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.15-2.debian.tar.xz' graphite2_1.3.15-2.debian.tar.xz 15328 SHA256:261cd2c208aad67b4572b10cce60d2312e055ffbd798621613b238184e1b4453
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.15-2/
 
-- https://sources.debian.net/src/graphite2/1.3.15-2/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.15-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.15-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -3019,20 +3012,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw25/copyright`)
 - `GPL-3+ with Autoconf-2.0~Archive exception`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.22.1-1
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.1-1.dsc' libraw_0.22.1-1.dsc 2215 SHA256:580454f4a94eed249fb919e97aa19d1910ff20df6ebae4ecb3c78a7c1054ec4c
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.1.orig.tar.gz' libraw_0.22.1.orig.tar.gz 604601 SHA256:e676248284075605aa2697a66eeed7dc258820bd1d4988c724d29edffd726726
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.1-1.debian.tar.xz' libraw_0.22.1-1.debian.tar.xz 26168 SHA256:3f9d2afa551b6c733c0f68052991b897123e0cb75d66dc522af6595b7cc9c51c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.22.1-1/
 
-- https://sources.debian.net/src/libraw/0.22.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.22.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.22.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.1-1`
 
@@ -4203,21 +4189,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`, `/usr/share/do
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.70.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0-1.dsc' nghttp2_1.70.0-1.dsc 2734 SHA256:2681c6367d83174f20c2f679551c99232e71dfdd740520498e49da4c7ad5a9dc
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0.orig.tar.gz' nghttp2_1.70.0.orig.tar.gz 3104002 SHA256:aa317e2cf9dca6afa0aed68f8fad6ff303ec6982e25a78c75c0b65e2b9b3ded5
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0.orig.tar.gz.asc' nghttp2_1.70.0.orig.tar.gz.asc 833 SHA256:10846bc9ec5c1bfd4f8109d62e4492f6c348a7c0113e7467924f04cf96a5a44c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.70.0-1.debian.tar.xz' nghttp2_1.70.0-1.debian.tar.xz 15060 SHA256:d43abd52531c78a82df1baf29c2b8b8785ca954e5a5c6abbb525d86e32dccfc3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.70.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.70.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.70.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.70.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.17.0-1`
 

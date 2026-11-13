@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:275c8add8da1bf03de9b695bc3887fbebcd5928a4e9c4deb85097e1c0aa575b1`
-- Created: `2026-10-27T00:17:29.885358918Z`
-- Virtual Size: ~ 797.52 Mb  
+- Image ID: `sha256:4c8d5cc5ea6d8d854fa69b847aa3395e31555e72e665dce7373312dc8ff17cc4`
+- Created: `2026-11-12T01:08:47.576390181Z`
+- Virtual Size: ~ 805.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-10-25T10:26:07.538865+00:00`
+  - `org.opencontainers.image.created=2026-11-06T10:28:50.132595+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -130,12 +130,12 @@ $ apt-get source -qq --print-uris apr=1.7.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.6-3.debian.tar.xz' apr_1.7.6-3.debian.tar.xz 42384 SHA256:62e334f0ffc583a3328e28e5749249fdaa56f1ee31208f80b869757192901034
 ```
 
-### `dpkg` source package: `apt=3.2.0`
+### `dpkg` source package: `apt=3.2.1ubuntu0.1`
 
 Binary Packages:
 
-- `apt=3.2.0`
-- `libapt-pkg7.0:amd64=3.2.0`
+- `apt=3.2.1ubuntu0.1`
+- `libapt-pkg7.0:amd64=3.2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -148,9 +148,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA512:4a4582b1949244b0f597f2c4ba09bab21f734b1c0d1168d340992821f4fb1b1e09ec8a2f9a77b9380f09b4d7cf2989acfa02d8f91601d7a210367039ed41a947
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA512:02a029afdbc7612d860e145120113da0e25abcb5cbef947f5838fae41d02361d3c150322ef24a0d6e675d66e45b491da53fd0e5c8311d45f017a72e8eba6e33f
+$ apt-get source -qq --print-uris apt=3.2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.1ubuntu0.1.tar.xz' apt_3.2.1ubuntu0.1.tar.xz 2477440 SHA512:a391d0efa3ed6b4029cdae42db7861bbf1df6f84fb650a2a7c1d6645d0fc5e78e97232f06787cf400c3c36bce033a1443710bb56e72d01c6230bf4d8ca5baeed
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_3.2.1ubuntu0.1.dsc' apt_3.2.1ubuntu0.1.dsc 3171 SHA512:648bd4c1c10521e851587fbfb370f1e323cb33a91e3795b7d61b2ae29095522dd093767d6877eef51c1302f9016f96f0113b5cda317b7c86cca18e33ec8e0381
 ```
 
 ### `dpkg` source package: `architecture-properties=0.2.6build1`
@@ -295,11 +295,11 @@ $ apt-get source -qq --print-uris autotools-dev=20240727.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20240727.1build1.dsc' autotools-dev_20240727.1build1.dsc 1685 SHA256:1806daf2c205c1ac79e170c7e22c59751872631498131031e9075777e88b62b2
 ```
 
-### `dpkg` source package: `base-files=14ubuntu6.2`
+### `dpkg` source package: `base-files=14ubuntu6.3`
 
 Binary Packages:
 
-- `base-files=14ubuntu6.2`
+- `base-files=14ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -307,9 +307,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=14ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.3.tar.xz' base-files_14ubuntu6.3.tar.xz 98108 SHA512:734219c76cc9b93a5805c61b051dd4455af1b9e2455517b9f295980f879f11cc4b1f85dfb5fc4b850ddbcb435ea03e8e13bb5e1e45078c1926da12fc750fab19
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu6.3.dsc' base-files_14ubuntu6.3.dsc 1735 SHA512:23243203a83e3f982b81e41545073d672670ea8ed3bbbadfdd7f6ac3886408979cd39dd3eee0749e7312c0e3a5e3e4ae198b3c38a33accf777a0cfe8b295987a
+```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -429,11 +433,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-6ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-6ubuntu0.1.dsc' bzip2_1.0.8-6ubuntu0.1.dsc 1691 SHA512:5e52a7b104a5c4267807bcf811bb94862d25faed66398bb03190ca09be6210ae5475bce15c5fa585e20503597aad0bfd6d3f5150456eb8e2dd52bd78bcc5e2ac
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.26.04.1`
+- `ca-certificates=20260816ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -441,9 +445,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.tar.xz' ca-certificates_20260816ubuntu0.26.04.2.tar.xz 274288 SHA512:1bebf27387b9f40d41ee9bf5fedee1456f737f6159bdd945cd597e4f8b6b4f694d27a742d353daa07269f57b25e5a5db17a889f57e4b23f899d56d880b000b08
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.26.04.2.dsc' ca-certificates_20260816ubuntu0.26.04.2.dsc 1876 SHA512:c8b1031dd352c77380e9a10f05d54475e50d6fe854b817136e243f9e229c35a9377b7d3f3c9ec1d3996aa317070c608390d5bad9e1c12c52d81865137d7c11f5
+```
 
 ### `dpkg` source package: `cairo=1.18.4-3`
 
@@ -1316,15 +1324,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.debian.tar.xz' glibc_2.43-2ubuntu2.4.debian.tar.xz 530764 SHA512:18a877a97dc66d887d6d01f73358f527ce6233555749997b068cc45ae287f3635d76979e41b9b78e674799695369c055b8a66449793e3b99c3dc57f12ded4935
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.dsc' glibc_2.43-2ubuntu2.4.dsc 9078 SHA512:b07d5c013046605738daf62c21acaa7a87d8bd7fcfaa67187dc282c9ecea3cfb546bb5d43e5eddc429822cc258a844aa5d24a460fef4d4c88db21e3c0c008b24
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
@@ -2191,12 +2193,12 @@ $ apt-get source -qq --print-uris libgpg-error=1.58-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.58-2.debian.tar.xz' libgpg-error_1.58-2.debian.tar.xz 19792 SHA256:2e4f501ba6b2375ce23492d65192bfaf4658b68daa9c03965720bb1bc3a52cac
 ```
 
-### `dpkg` source package: `libheif=1.21.2-3ubuntu0.6`
+### `dpkg` source package: `libheif=1.21.2-3ubuntu0.7`
 
 Binary Packages:
 
-- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.6`
-- `libheif1:amd64=1.21.2-3ubuntu0.6`
+- `libheif-plugin-aomdec:amd64=1.21.2-3ubuntu0.7`
+- `libheif1:amd64=1.21.2-3ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2210,9 +2212,14 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.7.debian.tar.xz' libheif_1.21.2-3ubuntu0.7.debian.tar.xz 58776 SHA512:cabaaa42547481ff1c2dd5530da1bc60ca6d8cba257d0cc0401c22f8357e4e61cd0c28418e96e74558d697a7acd4deaa80a977a0be43409bbd960638baaeff8f
+'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.7.dsc' libheif_1.21.2-3ubuntu0.7.dsc 3989 SHA512:9db6c368c6f4d018c70d37e39421aa135405e553bd965031bbdb1eac6098be2d9c24d381d89f029ad8be3911c0a504effbe57f409369baea6bc74e208d60edcc
+```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -3071,19 +3078,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-38.38`
+### `dpkg` source package: `linux=7.0.0-43.43`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-38.38`
+- `linux-libc-dev:amd64=7.0.0-43.43`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=7.0.0-43.43
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
+```
 
 ### `dpkg` source package: `lto-disabled-list=79`
 
@@ -3270,12 +3282,12 @@ $ apt-get source -qq --print-uris mpfr4=4.2.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.2-3.debian.tar.xz' mpfr4_4.2.2-3.debian.tar.xz 12652 SHA512:946f51555d13014ea9b80a57f2e9c7945e0877acbd1df599a8ec06a2852b4062b26660c5d5b6bb7ca7bb675343c9db3f5455c1a9ee5410903406f0b4addc17bd
 ```
 
-### `dpkg` source package: `mysql-8.4=8.4.11-0ubuntu0.26.04.1`
+### `dpkg` source package: `mysql-8.4=8.4.13-0ubuntu0.26.04.2`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.4.11-0ubuntu0.26.04.1`
-- `libmysqlclient24:amd64=8.4.11-0ubuntu0.26.04.1`
+- `libmysqlclient-dev=8.4.13-0ubuntu0.26.04.2`
+- `libmysqlclient24:amd64=8.4.13-0ubuntu0.26.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient24/copyright`)
 
@@ -3293,11 +3305,11 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-8.4=8.4.11-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11.orig.tar.gz' mysql-8.4_8.4.11.orig.tar.gz 479170675 SHA512:56245b74e2ef45dcaaea76ff1db2c62e7ef24f3b05098ebb9785c93a04cdfdca36cc6fa69e0dd35f7be778ebeb46a831afa85647c9e9a9258bfeea7311013669
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11.orig.tar.gz.asc' mysql-8.4_8.4.11.orig.tar.gz.asc 833 SHA512:68d5452a8c83f2051df02516e7c1b0cdcb5c34e228b569b9712e89fbf26518ba0ea4f1e177cf7675fe5f05eeecdc535bff56b57fbe765226f2eb969032b12a84
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11-0ubuntu0.26.04.1.debian.tar.xz' mysql-8.4_8.4.11-0ubuntu0.26.04.1.debian.tar.xz 136060 SHA512:068ef6055b4fa79a7d679eb6a33bc062394452911a3ce33d91bc22b2132b355f4acd3199f18f433c68d9d0dcffa7e8a83ffcd200b0e05984f8827bc9457963cb
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.11-0ubuntu0.26.04.1.dsc' mysql-8.4_8.4.11-0ubuntu0.26.04.1.dsc 3806 SHA512:3169b052158ad1cf5637979a49998ec91e3c352e8c7412b694ae075de15817c815254727d9b1dc5cc7abb4c52eff310d24980a918ba8ce31bf9fda395d5bd0ff
+$ apt-get source -qq --print-uris mysql-8.4=8.4.13-0ubuntu0.26.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13.orig.tar.gz' mysql-8.4_8.4.13.orig.tar.gz 479316148 SHA512:cae9a3ce644bf78a74096d8324120cbc707c886e77bc9cc05ce96f2bbda8ad9f0d074f0bac77e5e6c4724eeb78792f512bd76839acfd1bb07a487c5659c2d107
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13.orig.tar.gz.asc' mysql-8.4_8.4.13.orig.tar.gz.asc 833 SHA512:793ed8288915cccd264b7273c51c7cad661972a2c90959300546101e0470a756cea021822b7c240f08276683de0b425731a9498f2e0fdfce098158ff413511ac
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13-0ubuntu0.26.04.2.debian.tar.xz' mysql-8.4_8.4.13-0ubuntu0.26.04.2.debian.tar.xz 136712 SHA512:6e232e7a32c7746baf2e89af434dabcd08fe9e1811d424e62cf32404d95fd52759d55be4a60704fa2ffcdf28446af3ad17ca9aacf928c32ce05dd68668eed0a0
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.4/mysql-8.4_8.4.13-0ubuntu0.26.04.2.dsc' mysql-8.4_8.4.13-0ubuntu0.26.04.2.dsc 3806 SHA512:30b928a49f829b64cd5416394b92f14c55aae106a8cdf7c1c15c552e7f140246a95346a5a4694b46ebbd3dba8ad18fc94baefb8e61e5a8fad94644cee726e17d
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.1.1ubuntu2`
@@ -3705,15 +3717,15 @@ $ apt-get source -qq --print-uris patch=2.8-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.8-2build1.dsc' patch_2.8-2build1.dsc 1713 SHA256:f54ca76cf72db489c59b385fd1a8478cee1a9b39af3f425c146bb52393ec18fd
 ```
 
-### `dpkg` source package: `pcre2=10.46-1build1`
+### `dpkg` source package: `pcre2=10.46-1ubuntu0.1`
 
 Binary Packages:
 
-- `libpcre2-16-0:amd64=10.46-1build1`
-- `libpcre2-32-0:amd64=10.46-1build1`
-- `libpcre2-8-0:amd64=10.46-1build1`
-- `libpcre2-dev:amd64=10.46-1build1`
-- `libpcre2-posix3:amd64=10.46-1build1`
+- `libpcre2-16-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-32-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-8-0:amd64=10.46-1ubuntu0.1`
+- `libpcre2-dev:amd64=10.46-1ubuntu0.1`
+- `libpcre2-posix3:amd64=10.46-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/doc/libpcre2-32-0/copyright`, `/usr/share/doc/libpcre2-8-0/copyright`, `/usr/share/doc/libpcre2-dev/copyright`, `/usr/share/doc/libpcre2-posix3/copyright`)
 
@@ -3726,20 +3738,20 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.46-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.diff.gz' pcre2_10.46-1build1.diff.gz 8804 SHA256:3534c69dec410207e74bf9fd6ed334ad5827fb6de1d0715175b7a14257c5bc72
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
+$ apt-get source -qq --print-uris pcre2=10.46-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA512:8bc85f1e47633f4cab07e00b65e9f94a38bb8db56d7ea0a3068774a5ccfe5b777e6645c0a345dd265a06aa6672448ad51c9e56636c48ec87dae9f884a998e00b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu0.1.diff.gz' pcre2_10.46-1ubuntu0.1.diff.gz 19750 SHA512:d23f0a83eec42f89d4d1edb3281311e6b546e12d660477bfc06564c9e12e198b40226c337d51659e6768662cd7e3359f18fda6ffbb3a2125a595f32999c358d0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu0.1.dsc' pcre2_10.46-1ubuntu0.1.dsc 2371 SHA512:d9863b1389f399bbd864a235a3d739e07a4ac50a5eb19c55c557a56b878054d385698e00f49d0cf1a785774860c129f016e270fbebb9baeef214febb48f0d4f6
 ```
 
-### `dpkg` source package: `perl=5.40.1-7ubuntu0.3`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.4`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-7ubuntu0.3`
-- `perl=5.40.1-7ubuntu0.3`
-- `perl-base=5.40.1-7ubuntu0.3`
-- `perl-modules-5.40=5.40.1-7ubuntu0.3`
+- `libperl5.40:amd64=5.40.1-7ubuntu0.4`
+- `perl=5.40.1-7ubuntu0.4`
+- `perl-base=5.40.1-7ubuntu0.4`
+- `perl-modules-5.40=5.40.1-7ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -3769,9 +3781,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.4.debian.tar.xz' perl_5.40.1-7ubuntu0.4.debian.tar.xz 181612 SHA512:462b62da237358c3dca9c8537d891aa49ef2e7a67cc9500298926f9e92fb73600442d47904fd9328f3ab0e35e8cfe025639c738d47707dab61cb0f166e139d11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.4.dsc' perl_5.40.1-7ubuntu0.4.dsc 3052 SHA512:ad4cec5d64419273e8f72abe44a2eec1a072d519d48d0b413977dabe9498e66b94c036a65c79f3e6ff154915152f60195b74a612d75aacf43030d027b8f2f5b6
+```
 
 ### `dpkg` source package: `pinentry=1.3.2-3ubuntu1`
 
