@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7a5284d62811ecb0d3f8154ad1ed5303d5f8f327492a9947d48960bfe96d462`
-- Created: `2026-11-03T23:05:11.304389509Z`
-- Virtual Size: ~ 481.81 Mb  
+- Image ID: `sha256:357f9144fef68d0e42b18a592c57aa369e1552bd72778bc44ebf1ed82cf22948`
+- Created: `2026-11-12T01:46:12.381953724Z`
+- Virtual Size: ~ 489.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -69,12 +69,12 @@ $ apt-get source -qq --print-uris adduser=3.137ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz' adduser_3.137ubuntu1.tar.xz 280408 SHA512:46979160ef2f6b85097958cd11e549ae48efa24e1719155fd90ae7b322c0adac087cac7d0a709cd084ee11557575b05dfde89a9d63bcfd80fb47779c41098d48
 ```
 
-### `dpkg` source package: `apt=2.8.3`
+### `dpkg` source package: `apt=2.8.4ubuntu0.1`
 
 Binary Packages:
 
-- `apt=2.8.3`
-- `libapt-pkg6.0t64:amd64=2.8.3`
+- `apt=2.8.4ubuntu0.1`
+- `libapt-pkg6.0t64:amd64=2.8.4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0t64/copyright`)
 
@@ -83,9 +83,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.8.4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.4ubuntu0.1.tar.xz' apt_2.8.4ubuntu0.1.tar.xz 2355692 SHA512:0a6946d1e02ca0862da42bccb41ee5f69e265a5896e8b05130590cd9e79664486974bfcc23e923444f06ea86a1b28fa70b09f4a8a677611a1aebcea0041289f7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.8.4ubuntu0.1.dsc' apt_2.8.4ubuntu0.1.dsc 3017 SHA512:501f4e2627ff85a4886cf6ed870cc972d3470c2b73660a179f993dda9ad621529c3421394025f4749b6725f785a6b1119d58386c756cfa02aa483484b2028070
+```
 
 ### `dpkg` source package: `attr=1:2.5.2-1ubuntu0.1`
 
@@ -265,11 +269,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1ubuntu0.1.dsc' bzip2_1.0.8-5.1ubuntu0.1.dsc 1699 SHA512:57315fd236033f29de1487130d86e61d373bbc33ea51d431b782bd0f5113b9ccf62f235fd284c13ba371d28954ed3edceea77ceb7c813931e817049ad25c5a34
 ```
 
-### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.1`
+### `dpkg` source package: `ca-certificates=20260816ubuntu0.24.04.2`
 
 Binary Packages:
 
-- `ca-certificates=20260816ubuntu0.24.04.1`
+- `ca-certificates=20260816ubuntu0.24.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -277,9 +281,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260816ubuntu0.24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.tar.xz' ca-certificates_20260816ubuntu0.24.04.2.tar.xz 273500 SHA512:b2214ad6c7590dcd94f0edc9c2ec70ec0101f339d5197bbf9909bb3f47566b7dfcb25c7bbbf741fcb4b73019150db35ba351b0694376cf994a3e37b0395c390c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260816ubuntu0.24.04.2.dsc' ca-certificates_20260816ubuntu0.24.04.2.dsc 1876 SHA512:d6691f6b5418333f951eb6ccb765277eef0b6cdffbea73db10fb54d29d7914f03b9298fc3a9dcddf6463168dee3c08d4163c3b158067d7a2961dd16e46969a5e
+```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
 
@@ -819,15 +827,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.debian.tar.xz' glibc_2.39-0ubuntu8.9.debian.tar.xz 491440 SHA512:b46142cc7a5159bcc25d764efe0b8b596a8522dee4e36e8d7c47f4f0ac2a6b9ce9652af58d15512bb24aa27b8f4c33dc354d8ef947cde7d127755afe94f44583
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.9.dsc' glibc_2.39-0ubuntu8.9.dsc 9387 SHA512:67cf2737d0b1fc4f8a4fa66c3b460301b9e88e925e1b65f78bfee1971ec23225c410befb2e326516e80d24adb99e838ce72f3bc6fef48f6e61e2771d7ddd2f51
-```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -1931,11 +1933,11 @@ $ apt-get source -qq --print-uris pam=1.5.3-5ubuntu5.7
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.dsc' pam_1.5.3-5ubuntu5.7.dsc 2772 SHA512:41262a6c1dcbda1e6946258d069e4231516ab1effabf246ed69aab8f9468961afc9c1abaa09b30ac7e5188137acea1cabf5b35af735a8e36ce5aabbe5c1784ff
 ```
 
-### `dpkg` source package: `pcre2=10.42-4ubuntu2.1`
+### `dpkg` source package: `pcre2=10.42-4ubuntu2.2`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-4ubuntu2.1`
+- `libpcre2-8-0:amd64=10.42-4ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1945,18 +1947,23 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA512:a3db6c5c620775838819be616652e73ce00f5ef5c1f49f559ff3efb51a119d02f01254c5901c1f7d0c47c0ddfcf4313e38d6ca32c35381b8f87f36896d10e6f7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.2.diff.gz' pcre2_10.42-4ubuntu2.2.diff.gz 16312 SHA512:44f6cead68733bb5bde33d35d1fd08ff2e124af22cd5a42cb7fba53a34bc488c1cd9eee29c48958d08ac9b2c4db0cecb26f3b4b3f6eff1cab00b1a148488e2a9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.2.dsc' pcre2_10.42-4ubuntu2.2.dsc 2317 SHA512:7755bae9f52a617174be3be837d2f12409eba2658cf5f0a5cc7a01c17158131e06e1a72a50915f68a67109f6783e2dbd66b9e88df0877c0c238a9d2ee304afe0
+```
 
-### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.6`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.7`
 
 Binary Packages:
 
-- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.6`
-- `perl=5.38.2-3.2ubuntu0.6`
-- `perl-base=5.38.2-3.2ubuntu0.6`
-- `perl-modules-5.38=5.38.2-3.2ubuntu0.6`
+- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.7`
+- `perl=5.38.2-3.2ubuntu0.7`
+- `perl-base=5.38.2-3.2ubuntu0.7`
+- `perl-modules-5.38=5.38.2-3.2ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -1986,9 +1993,15 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.7.debian.tar.xz' perl_5.38.2-3.2ubuntu0.7.debian.tar.xz 185768 SHA512:95f17f7acaca06b0b7091a39bf6c904d90c114a89f2c0df4dda2faeab66901e152de6e7ca57daeb7aed2beb9dd1f15eccb929c4193e2a53038ad7d9a144d0280
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.7.dsc' perl_5.38.2-3.2ubuntu0.7.dsc 3065 SHA512:ecad888e2279e5f3d3efefd65bbb37b464396fec19ab5cf86f33bbd6f70dcd4c4dc4b01fe710f16cd91c7bb017afcbfa90beb12fba6d280a7b645554355b3954
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.3`
 
