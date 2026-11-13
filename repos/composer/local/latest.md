@@ -1,10 +1,10 @@
-# `composer:2.11.1`
+# `composer:2.11.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e94ae112656892a7a8eaf46e0b64b2fcb71d3011f4ca6ad19c1c258c34e9c16e`
-- Created: `2026-11-05T20:00:33.982974509Z`
-- Virtual Size: ~ 225.2 Mb  
+- Image ID: `sha256:8f6b5d78c17af03a32c95e782da3ab352b70e8e4b24ac6b612166fd26efe3766`
+- Created: `2026-11-10T19:17:32.683800436Z`
+- Virtual Size: ~ 225.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.11.1`
+  - `COMPOSER_VERSION=2.11.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1424,16 +1424,16 @@ Info-ZIP
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
