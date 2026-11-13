@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-beta4-php8.2-fpm-alpine`
+# `wordpress:beta-7.2-beta5-php8.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:263b37e8f9d826a7fe52a531568b6c34ad60f1ba9406ddecad21dbab10048ef8`
-- Created: `2026-11-05T20:14:19.323467116Z`
-- Virtual Size: ~ 343.67 Mb  
+- Image ID: `sha256:8175dc255b1a99d0c05a807d9327af4237115363a3451948946f5fdd5a546a16`
+- Created: `2026-11-11T23:08:02.947241689Z`
+- Virtual Size: ~ 371.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.35`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.35.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.35.tar.xz.asc`
-  - `PHP_SHA256=5737b98601fe5ab1b8c5db0c82ed3158acb9283ed3081ffe2faffb9ac81455e6`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
+  - `PHP_VERSION=8.5.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc`
+  - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
 
 ## `apk` (`.apk`-based packages)
 
@@ -979,16 +979,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libheif`
 
 ```console
-libheif-1.23.4-r0 description:
+libheif-1.23.7-r0 description:
 ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 
-libheif-1.23.4-r0 webpage:
+libheif-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-1.23.4-r0 installed size:
-1850 KiB
+libheif-1.23.7-r0 installed size:
+1870 KiB
 
-libheif-1.23.4-r0 license:
+libheif-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -996,16 +996,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-aom`
 
 ```console
-libheif-aom-1.23.4-r0 description:
+libheif-aom-1.23.7-r0 description:
 libheif AVIF/AV1 encoder and decoder plugins using libaom
 
-libheif-aom-1.23.4-r0 webpage:
+libheif-aom-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-aom-1.23.4-r0 installed size:
+libheif-aom-1.23.7-r0 installed size:
 59 KiB
 
-libheif-aom-1.23.4-r0 license:
+libheif-aom-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1013,16 +1013,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-dav1d`
 
 ```console
-libheif-dav1d-1.23.4-r0 description:
+libheif-dav1d-1.23.7-r0 description:
 libheif AVIF/AV1 decoder plugin using dav1d
 
-libheif-dav1d-1.23.4-r0 webpage:
+libheif-dav1d-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-dav1d-1.23.4-r0 installed size:
+libheif-dav1d-1.23.7-r0 installed size:
 17 KiB
 
-libheif-dav1d-1.23.4-r0 license:
+libheif-dav1d-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1030,16 +1030,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-jpeg`
 
 ```console
-libheif-jpeg-1.23.4-r0 description:
+libheif-jpeg-1.23.7-r0 description:
 libheif JPEG decoder and encoder plugins for JPEG-in-HEIF images
 
-libheif-jpeg-1.23.4-r0 webpage:
+libheif-jpeg-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-jpeg-1.23.4-r0 installed size:
+libheif-jpeg-1.23.7-r0 installed size:
 31 KiB
 
-libheif-jpeg-1.23.4-r0 license:
+libheif-jpeg-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1047,16 +1047,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-libde265`
 
 ```console
-libheif-libde265-1.23.4-r0 description:
+libheif-libde265-1.23.7-r0 description:
 libheif HEIC/HEVC (H.265) decoder plugin using libde265
 
-libheif-libde265-1.23.4-r0 webpage:
+libheif-libde265-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-libde265-1.23.4-r0 installed size:
+libheif-libde265-1.23.7-r0 installed size:
 17 KiB
 
-libheif-libde265-1.23.4-r0 license:
+libheif-libde265-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1064,16 +1064,16 @@ LGPL-3.0-or-later
 ### `apk` package: `libheif-openjpeg`
 
 ```console
-libheif-openjpeg-1.23.4-r0 description:
+libheif-openjpeg-1.23.7-r0 description:
 libheif JPEG 2000 encoder and decoder plugins using OpenJPEG
 
-libheif-openjpeg-1.23.4-r0 webpage:
+libheif-openjpeg-1.23.7-r0 webpage:
 https://www.libde265.org/
 
-libheif-openjpeg-1.23.4-r0 installed size:
-35 KiB
+libheif-openjpeg-1.23.7-r0 installed size:
+39 KiB
 
-libheif-openjpeg-1.23.4-r0 license:
+libheif-openjpeg-1.23.7-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1914,16 +1914,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
