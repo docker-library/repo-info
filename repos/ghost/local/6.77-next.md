@@ -1,25 +1,25 @@
-# `ghost:6.75.0-next-bookworm`
+# `ghost:6.77.0-next-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2096ee3f31ea3e3b16b970e666b25a1a2d40f41548a74080e1bd33f81df817b2`
-- Created: `2026-11-05T08:50:10.686501837Z`
-- Virtual Size: ~ 468.27 Mb  
+- Image ID: `sha256:c46621c76fc041d60eba7c894281683303778facdefe64694f1157dd08bae43a`
+- Created: `2026-11-11T22:56:05.215065621Z`
+- Virtual Size: ~ 545.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.23.4`
+  - `NODE_VERSION=22.23.5`
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
   - `GHOST_INSTALL=/home/ghost`
   - `GHOST_CONTENT=/home/ghost/content`
-  - `GHOST_VERSION=6.75.0`
-  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.75.0/ghost-6.75.0.tgz`
-  - `GHOST_SHA256=e8abc257261b845c67bc9602c26aa6286aa34a3ce7da5efc9b2a2426fc7c7e6e`
+  - `GHOST_VERSION=6.77.0`
+  - `GHOST_TARBALL=https://github.com/TryGhost/Ghost/releases/download/v6.77.0/ghost-6.77.0.tgz`
+  - `GHOST_SHA256=3960dcf5e6eb6c21d14b94b7c65895c6030faeb5e2c686900dccd94ce24c06f6`
 
 ## `dpkg` (`.deb`-based packages)
 
