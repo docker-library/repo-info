@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c32aaf6b99e0a0c2a44c2980c59e5a66f70cf96f349d2414e89f0abb41553a7e`
-- Created: `2026-11-10T21:47:54.36345825Z`
-- Virtual Size: ~ 453.81 Mb  
+- Image ID: `sha256:d916ae94c19ab7cc553790994ee83f80351f2c80d2391254c0c9b06a4e31c6c4`
+- Created: `2026-11-13T21:46:28.171274656Z`
+- Virtual Size: ~ 416.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `JAVA_VERSION=jdk-11.0.33+10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-09T12:25:43Z`
+  - `build-date=2026-11-12T16:02:48Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
+  - `cpe=cpe:/o:redhat:enterprise_linux:10.3`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
   - `io.buildah.version=1.45.0`
@@ -32,15 +32,15 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-11-09T12:25:43Z`
-  - `org.opencontainers.image.revision=88e92567961fbb6491348d4f2102cb1ef2f479f2`
-  - `release=1794227009`
+  - `org.opencontainers.image.created=2026-11-12T16:02:48Z`
+  - `org.opencontainers.image.revision=27aec17d81064cac2334b5f7b651e14c5265def8`
+  - `release=1794499233`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=88e92567961fbb6491348d4f2102cb1ef2f479f2`
+  - `vcs-ref=27aec17d81064cac2334b5f7b651e14c5265def8`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
-  - `version=10.2`
+  - `version=10.3`
 
 ## `rpm` (`.rpm`-based packages)
 
