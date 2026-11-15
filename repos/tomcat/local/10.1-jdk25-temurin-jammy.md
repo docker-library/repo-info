@@ -229,9 +229,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.12
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA256:e316477a914f567eccc34d5d29785b8b0f5a10208d36bbacedcc39048ecfe024
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA256:236544ea9c0792e548e25ca3c36a564714bd5fc8b4c86069d81832e47616f0d9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA256:677a893b113648a45605f6847c6c7da7d2dcf6f550f6f35bf3d768a966a8f3f9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA512:5af64c9f54e69c49a0dd7b7fb4f7b720b7a456cecccb6077638d88eeb5541feef036de3c35194e1391220540267ea82471b3ef24db40cc559123abec654c2055
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA512:06762ac6f41bc85e93d660228b769563a44b5fbf6b9e4b8aec9b4e2246fb30554953c5605dcb93ad3c1d2da99af060036a6ae3459f21de3fa4e0308e9ab8d7dc
 ```
 
 ### `dpkg` source package: `brotli=1.0.9-2ubuntu0.1`
