@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aefcc9fe1db55e32ca14f5b8aa6ef4cb66bfec605412e5ad01f74aed4eccef64`
-- Created: `2026-11-11T22:52:55.029746357Z`
-- Virtual Size: ~ 409.45 Mb  
+- Image ID: `sha256:d786806dbf032429757e2005478466ad56a27632522cf6ee3332201d0a96f793`
+- Created: `2026-11-13T21:49:51.337307789Z`
+- Virtual Size: ~ 409.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,10 +18,9 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-04T22:40:19Z`
+  - `build-date=2026-11-12T21:47:37Z`
   - `com.redhat.component=ubi10-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `compose-id=RHEL-10.3-updates-20261104.2`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.3`
   - `description=Docker Container for the Swift programming language`
   - `distribution-scope=public`
@@ -32,12 +31,12 @@
   - `io.openshift.tags=base rhel10`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi10/ubi`
-  - `org.opencontainers.image.created=2026-11-04T22:40:19Z`
-  - `org.opencontainers.image.revision=42c51337d62747097ebce9a8dab7ef18d41bbe62`
-  - `release=1793831871`
+  - `org.opencontainers.image.created=2026-11-12T21:47:37Z`
+  - `org.opencontainers.image.revision=97551a94e07d5be05c01208a5449cdfa10f657e7`
+  - `release=1794519911`
   - `summary=Provides the latest release of Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=42c51337d62747097ebce9a8dab7ef18d41bbe62`
+  - `vcs-ref=97551a94e07d5be05c01208a5449cdfa10f657e7`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.3`
