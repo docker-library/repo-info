@@ -2764,15 +2764,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.debian.tar.xz' glibc_2.43-2ubuntu2.4.debian.tar.xz 530764 SHA512:18a877a97dc66d887d6d01f73358f527ce6233555749997b068cc45ae287f3635d76979e41b9b78e674799695369c055b8a66449793e3b99c3dc57f12ded4935
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.4.dsc' glibc_2.43-2ubuntu2.4.dsc 9078 SHA512:b07d5c013046605738daf62c21acaa7a87d8bd7fcfaa67187dc282c9ecea3cfb546bb5d43e5eddc429822cc258a844aa5d24a460fef4d4c88db21e3c0c008b24
-```
 
 ### `dpkg` source package: `glycin=2.1.5+ds-0ubuntu0.2`
 
@@ -3102,15 +3096,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.28.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2.orig.tar.xz' gst-plugins-base1.0_1.28.2.orig.tar.xz 2529100 SHA512:68f09ed6c456b2763514ad65153e53139e8fe8fe188045da4a7b21b9bc5c607507bb8d84ad79162444e3281cd8b642dd78f73da59cb3dffbab43d8fe6c943dbe
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2.orig.tar.xz.asc' gst-plugins-base1.0_1.28.2.orig.tar.xz.asc 833 SHA512:b2b86cd61a5e45a9e6d7da19360c933525704e79db9c9ab463da1c79ade44d9ebda19f7a7cfc4715079066906ba8d93457af53b6428efdc69db4c10b8a3d2d8c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.28.2-1ubuntu0.2.debian.tar.xz 59196 SHA512:1d8285dfa6e68024f313fea45b2be0b8dfaf7b1bf433432e614d0e6da6e3e1101c4bd48fe1f7fd5f1db73eaa729b47206f7ff096dacdfd9860a408ab67fe08ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.28.2-1ubuntu0.2.dsc' gst-plugins-base1.0_1.28.2-1ubuntu0.2.dsc 4255 SHA512:d46536638508283ba372c028cd28ec351cedd68d390fca3e121203e525a1c628601bdb516cb3c047d5a9c4fa6fae2bb23fdfec3bf961bd1f48dacccf0f62d5c5
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.28.2-1`
 
