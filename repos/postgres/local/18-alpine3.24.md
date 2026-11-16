@@ -1,10 +1,10 @@
-# `postgres:18.6-alpine3.24`
+# `postgres:18.7-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:38b9ffe2d4c13d7c445b66306be6763dfa6f503689ea0c5b9f84544ccf3ca8e4`
-- Created: `2026-11-05T19:08:30.016975331Z`
-- Virtual Size: ~ 303.75 Mb  
+- Image ID: `sha256:0f6c51e48b3458e87ab43692e49c9dafc72ffe0a0dbde3fd8cdb6ab92d5c025e`
+- Created: `2026-11-12T20:56:16.269330574Z`
+- Virtual Size: ~ 304.1 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=18`
-  - `PG_VERSION=18.6`
-  - `PG_SHA256=555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f`
+  - `PG_VERSION=18.7`
+  - `PG_SHA256=441dfae4280cae3e0425e5f876f80559fb0731c140f1aae22b3e5a54d0411bfd`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/18/docker`
 
@@ -296,16 +296,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.22.2-r1 description:
+krb5-libs-1.22.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.22.2-r1 webpage:
+krb5-libs-1.22.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.22.2-r1 installed size:
-1747 KiB
+krb5-libs-1.22.3-r0 installed size:
+1751 KiB
 
-krb5-libs-1.22.2-r1 license:
+krb5-libs-1.22.3-r0 license:
 MIT
 
 ```
@@ -636,16 +636,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.43-r3 description:
+libxslt-1.1.43-r4 description:
 XML stylesheet transformation library
 
-libxslt-1.1.43-r3 webpage:
+libxslt-1.1.43-r4 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.43-r3 installed size:
-301 KiB
+libxslt-1.1.43-r4 installed size:
+305 KiB
 
-libxslt-1.1.43-r3 license:
+libxslt-1.1.43-r4 license:
 X11
 
 ```
@@ -857,16 +857,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
