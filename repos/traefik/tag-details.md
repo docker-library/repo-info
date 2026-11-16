@@ -569,157 +569,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:2-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -728,69 +728,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -799,29 +799,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11`
@@ -1300,157 +1300,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:2.11-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2.11-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2.11-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2.11-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2.11-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -1459,69 +1459,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2.11-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2.11-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -1530,29 +1530,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11.63`
@@ -1953,157 +1953,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:2.11.63-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2.11.63-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2.11.63-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11.63-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2.11.63-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2.11.63-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11.63-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:2.11.63-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:2.11.63-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -2112,69 +2112,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:2.11.63-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:2.11.63-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:2.11.63-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -2183,29 +2183,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3`
@@ -2684,157 +2684,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:3-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -2843,69 +2843,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -2914,29 +2914,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7`
@@ -3415,157 +3415,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:3.7-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.7-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.7-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.7-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.7-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.7-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.7-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -3574,69 +3574,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.7-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.7-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -3645,29 +3645,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7.19`
@@ -4068,157 +4068,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:3.7.19-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.7.19-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.7.19-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7.19-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.7.19-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.7.19-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7.19-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.7.19-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.7.19-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -4227,69 +4227,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.7.19-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.7.19-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.7.19-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -4298,29 +4298,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.8.0-rc.3`
@@ -4721,157 +4721,157 @@ $ docker pull traefik@sha256:fae5a5df2586c846ea494acccf570654acfd368bdd7894e063d
 ## `traefik:3.8.0-rc.3-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:efbaa9492ee010dee5d917437cfd38ca3d4d26b0e9826de85ecf1661a0c14ea6
+$ docker pull traefik@sha256:279261c0c0097c84b84f24710e930e79d16d11bcbd7a29cfc42bc9ac682fcbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.8.0-rc.3-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.8.0-rc.3-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:76c26a716eee291a265aac7fb7ca290ebf25724354060c8367820a0c08c0954e
+$ docker pull traefik@sha256:49bfc4184048cd35810303df215fb2c7b340450108b368ef75bb376be9194422
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.5 MB (186461076 bytes)**  
+-	Total Size: **186.5 MB (186450021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cafe00c6cfc0e061fbda81695d5f493ea705f0c713bac77525021c4915b76178`
+-	Image ID: `sha256:0f23e9fcf7ac729c05b56ee88a499fe57e02c06e2e77bd624e9077df1128c7cf`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:13:22 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:16 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:34:18 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:26 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:27 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6c7a920e18b996bbb6e5f965d9f74a474bab2c929d0f3ab39ad6e3c167226e2`  
-		Last Modified: Fri, 13 Nov 2026 20:13:48 GMT  
-		Size: 60.2 MB (60172946 bytes)  
+	-	`sha256:ad5b14c7968b51e43bff0f5920aa97a4fee281013f0e76523305a8e0a1591c9c`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 60.2 MB (60172942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c8ec21e2d226a2d6891285254e86e673cae78254ad2e5063e4389e12c172dd9`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.1 KB (1069 bytes)  
+	-	`sha256:d818ab762353cd1a21e42acece5157ea5342442afaeb2b6208c7d06c2b7d1aad`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:751012efbd3fdf469766731381ac1d1596e92af70693739470ff335a325b767b`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1041 bytes)  
+	-	`sha256:e35e688be023511aaacd0243dc52150d1ae855d81745d75a1e16b21862c43835`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37b39cfbfea8328e7b9a4ea8a3f2fa6a5042ca8cf5583e6c996c1c0231028b3d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1040 bytes)  
+	-	`sha256:7900a706ac564e06459daa19905b9ec8be4ebba1a311241727f659e30ee00c8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.8.0-rc.3-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:f36b674b146879f9b3eb36e1bacc002b089203d861f7409f90b4a2c50308b1f3
+$ docker pull traefik@sha256:b9de92f096fa49ad55b3058022cc54fcd55be58d5fc6ee4a960c13054ceea9de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.8.0-rc.3-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.8.0-rc.3-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:73197f774ebea85fa8e0f4af2ea80756686b42d6cdc52e7de3edd440bab2a0e1
+$ docker pull traefik@sha256:068fd3bdf4cfa9a4eadb4f8f1d32f59a14272cf393f0acd7ea538b24bf0327a3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.4 MB (260418380 bytes)**  
+-	Total Size: **260.4 MB (260415819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dab75309ca04f7df9631d40cb1351a7033edd9af996e8b65ffcd7d33daa7467b`
+-	Image ID: `sha256:8c32a040feab726793fcee60e1a5ec6872085d9b6feaed66036efa66dc105e96`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:13:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:23 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:24 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:43:03 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72fb101368d542f8cdf141920fa024135234907d8eb11008021bec1e7f953a08`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 60.2 MB (60172899 bytes)  
+	-	`sha256:7ddb8c74d814f4fab4a04562b777d06b423a7131b162ad5464771085463bf08f`  
+		Last Modified: Mon, 16 Nov 2026 20:43:15 GMT  
+		Size: 60.2 MB (60172915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac410534d9cc4e8d8ee2f0bf5fc507a206313808f5d72c9207dc811826f35e9d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.0 KB (1034 bytes)  
+	-	`sha256:ac28da140c5138bd75ee2736317765fe78e92ce3b3492d9bcb94263230531213`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e25bdff85499565768719e613f60e04885ad387fd5c979580ec8f05281592fd`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1065 bytes)  
+	-	`sha256:30d99171761732f594f0474aea9c87fa5a5e6ff7a491cc58020a679fa0868556`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0a0faf534a1643aae1e1957b28f50545ecdaab4fada855728d904a91449693`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1058 bytes)  
+	-	`sha256:202f19325b73ace5a85a55c468ddb9cb4ccca658bb5c03f654684596623f5667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.8.0-rc.3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:b34bed1fe0ce233b4883f5e89786cc4cd544137a058047c2893202ab5f4179a4
+$ docker pull traefik@sha256:7d4cce0a729b772636148e0f6d742d113c38e7b312e78754cb4a8626d5450a13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:3.8.0-rc.3-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:3.8.0-rc.3-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:0c6d05501d5482e018edc458ad343c1be1e210e57af56b183c338bac7c90fbaf
+$ docker pull traefik@sha256:e7b5ac800f3dfb32f74e223bfdf868921691082445f6a2154b0a0185a331bbea
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2307060366 bytes)**  
+-	Total Size: **2.3 GB (2306804700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b07982b14d124dd0bbfeb902e7865e699349b99593f7ea310fb5528f5e2257`
+-	Image ID: `sha256:4d1fe13cfae7692ad602e0f83ec49193ebafa237ab7f0860ffdf947d307b25d1`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:56:48 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:55:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:58:02 GMT
+# Mon, 16 Nov 2026 19:55:45 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.8.0-rc.3/traefik_v3.8.0-rc.3_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:58:02 GMT
+# Mon, 16 Nov 2026 19:55:47 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:58:05 GMT
+# Mon, 16 Nov 2026 19:55:48 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:58:05 GMT
+# Mon, 16 Nov 2026 19:55:49 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -4880,69 +4880,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcbe7908dfb50ced87bf969ec539174090a9211504ec58c9dc7e6eaa2e18dfa`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:e8d1d4428786cff57e799560ea1abdaf3b97bf6b120df6d7396db9deb86178c0`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33b2f1cc5a9317b413ffa7572c4bed98b53ead6d797fe94e4eb34e7015c7510`  
-		Last Modified: Fri, 13 Nov 2026 18:59:07 GMT  
-		Size: 60.7 MB (60707375 bytes)  
+	-	`sha256:3964febbfe0ece80cb9cdce5dbd0dc9823ece62b695287472895efb4ed6f3bfc`  
+		Last Modified: Mon, 16 Nov 2026 19:56:01 GMT  
+		Size: 60.7 MB (60708760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9d6888cc4908d5f97afe719fccf028b116fb14e8cf152eef74e9dd51d0daee`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:a8c04a1838e1387b6c27cbfcfdf89c5dd30a9aa9a2b797ad21a9a0ad5782ba35`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5af659969e5ef2e05546a632661885aae93546dbecbce9f7321293bcddc4724`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:bcad8377873aca3cdbfc01743f66459f224a055a62b601b98599025210bdd927`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a4b6fab4d5338f0caacd4eb91b2f97976570f9ea610991b14cf1529a2946903`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:82ae18913c426ef401f4579cbf3f66304d67b2facc7b84a42c0b808eea3f5d9d`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:3.8.0-rc.3-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:a835c699d98655538b98fd23965884805e7255a6a4627ef03494b775b5802ce8
+$ docker pull traefik@sha256:5e9f9f7f59277555821e25f979e4f072082c971d59f9965b463708528c032618
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:3.8.0-rc.3-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:3.8.0-rc.3-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a0b5f5f11286ea60018d1c63ef55f9c14e279f315d24ecda5d5b3544c217f4aa
+$ docker pull traefik@sha256:08a55f1551d3d25fc5286dae577924ce09634616a68556472f5de617acb1cba6
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2468067392 bytes)**  
+-	Total Size: **2.5 GB (2467786347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9ea5b4adb161c5572f9aad789be4deea1de7886db84ed5d43361041a1cf41f`
+-	Image ID: `sha256:ca1a539e373594608057ae24ec718e46c3f769eaf2ecf6dbce2fc5a0fe3fb68f`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:55:57 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:58:37 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.8.0-rc.3/traefik_v3.8.0-rc.3_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:58:39 GMT
+# Mon, 16 Nov 2026 19:54:19 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:58:40 GMT
+# Mon, 16 Nov 2026 19:54:20 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:58:42 GMT
+# Mon, 16 Nov 2026 19:54:22 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -4951,29 +4951,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b590e4dd010b692b66e551a7879a24f22f8facaaadda8d20bf48dbf7da8cde44`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:4a24e968073693c0d1ed9c45c4556a135eba4f87ff4c51c418006c014c4b34e7`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c7ba1381ce5d09ca24f5227707e0b57a57f06d1ff6c67251f6e8bddc117b48`  
-		Last Modified: Fri, 13 Nov 2026 18:59:03 GMT  
-		Size: 60.7 MB (60731379 bytes)  
+	-	`sha256:1ceaa7f6ff981f7a9b7f5636eff584689529d403398eb2cf1e0a45a96658b7e2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:35 GMT  
+		Size: 60.7 MB (60713465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa190c403a6028313465a787caae80425432c4bb65cad5eb6008e4944e5e8531`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:57a0245b8f94b8746c3e9b7cf79de4546ff14cf735ec7f92d581499b71e74535`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258c00fa8595fb601c7418f16402e0623b4f9577ce35c7c35f1d4d2f21440d4d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:5d788c15375e866865c9e9a24f60fbfde171cb1043d9e0cf66ca1ff9444bb149`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1296cb838c892cf844fb048e6365d79f24b40baf4798405aa17cbf1e97bd811d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:1b7a3e1b24d04f45c786fd58bfb69a0fb69f737d3b82a34f8e034f20112fb5fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:27 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:langres`
@@ -5452,157 +5452,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:langres-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:langres-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:langres-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:langres-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:langres-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:langres-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:langres-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:langres-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:langres-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -5611,69 +5611,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:langres-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:langres-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:langres-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -5682,29 +5682,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:latest`
@@ -6656,157 +6656,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:mimolette-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:mimolette-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:mimolette-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:mimolette-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:mimolette-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:mimolette-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:mimolette-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:mimolette-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:mimolette-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -6815,69 +6815,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:mimolette-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:mimolette-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:mimolette-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -6886,145 +6886,145 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:salers`
@@ -7503,157 +7503,157 @@ $ docker pull traefik@sha256:fae5a5df2586c846ea494acccf570654acfd368bdd7894e063d
 ## `traefik:salers-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:efbaa9492ee010dee5d917437cfd38ca3d4d26b0e9826de85ecf1661a0c14ea6
+$ docker pull traefik@sha256:279261c0c0097c84b84f24710e930e79d16d11bcbd7a29cfc42bc9ac682fcbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:salers-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:salers-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:76c26a716eee291a265aac7fb7ca290ebf25724354060c8367820a0c08c0954e
+$ docker pull traefik@sha256:49bfc4184048cd35810303df215fb2c7b340450108b368ef75bb376be9194422
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.5 MB (186461076 bytes)**  
+-	Total Size: **186.5 MB (186450021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cafe00c6cfc0e061fbda81695d5f493ea705f0c713bac77525021c4915b76178`
+-	Image ID: `sha256:0f23e9fcf7ac729c05b56ee88a499fe57e02c06e2e77bd624e9077df1128c7cf`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:13:22 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:16 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:34:18 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:26 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:27 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6c7a920e18b996bbb6e5f965d9f74a474bab2c929d0f3ab39ad6e3c167226e2`  
-		Last Modified: Fri, 13 Nov 2026 20:13:48 GMT  
-		Size: 60.2 MB (60172946 bytes)  
+	-	`sha256:ad5b14c7968b51e43bff0f5920aa97a4fee281013f0e76523305a8e0a1591c9c`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 60.2 MB (60172942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c8ec21e2d226a2d6891285254e86e673cae78254ad2e5063e4389e12c172dd9`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.1 KB (1069 bytes)  
+	-	`sha256:d818ab762353cd1a21e42acece5157ea5342442afaeb2b6208c7d06c2b7d1aad`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:751012efbd3fdf469766731381ac1d1596e92af70693739470ff335a325b767b`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1041 bytes)  
+	-	`sha256:e35e688be023511aaacd0243dc52150d1ae855d81745d75a1e16b21862c43835`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37b39cfbfea8328e7b9a4ea8a3f2fa6a5042ca8cf5583e6c996c1c0231028b3d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1040 bytes)  
+	-	`sha256:7900a706ac564e06459daa19905b9ec8be4ebba1a311241727f659e30ee00c8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:salers-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:f36b674b146879f9b3eb36e1bacc002b089203d861f7409f90b4a2c50308b1f3
+$ docker pull traefik@sha256:b9de92f096fa49ad55b3058022cc54fcd55be58d5fc6ee4a960c13054ceea9de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:salers-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:salers-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:73197f774ebea85fa8e0f4af2ea80756686b42d6cdc52e7de3edd440bab2a0e1
+$ docker pull traefik@sha256:068fd3bdf4cfa9a4eadb4f8f1d32f59a14272cf393f0acd7ea538b24bf0327a3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.4 MB (260418380 bytes)**  
+-	Total Size: **260.4 MB (260415819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dab75309ca04f7df9631d40cb1351a7033edd9af996e8b65ffcd7d33daa7467b`
+-	Image ID: `sha256:8c32a040feab726793fcee60e1a5ec6872085d9b6feaed66036efa66dc105e96`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:13:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:23 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:24 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:43:03 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72fb101368d542f8cdf141920fa024135234907d8eb11008021bec1e7f953a08`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 60.2 MB (60172899 bytes)  
+	-	`sha256:7ddb8c74d814f4fab4a04562b777d06b423a7131b162ad5464771085463bf08f`  
+		Last Modified: Mon, 16 Nov 2026 20:43:15 GMT  
+		Size: 60.2 MB (60172915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac410534d9cc4e8d8ee2f0bf5fc507a206313808f5d72c9207dc811826f35e9d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.0 KB (1034 bytes)  
+	-	`sha256:ac28da140c5138bd75ee2736317765fe78e92ce3b3492d9bcb94263230531213`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e25bdff85499565768719e613f60e04885ad387fd5c979580ec8f05281592fd`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1065 bytes)  
+	-	`sha256:30d99171761732f594f0474aea9c87fa5a5e6ff7a491cc58020a679fa0868556`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0a0faf534a1643aae1e1957b28f50545ecdaab4fada855728d904a91449693`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1058 bytes)  
+	-	`sha256:202f19325b73ace5a85a55c468ddb9cb4ccca658bb5c03f654684596623f5667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:salers-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:b34bed1fe0ce233b4883f5e89786cc4cd544137a058047c2893202ab5f4179a4
+$ docker pull traefik@sha256:7d4cce0a729b772636148e0f6d742d113c38e7b312e78754cb4a8626d5450a13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:salers-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:salers-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:0c6d05501d5482e018edc458ad343c1be1e210e57af56b183c338bac7c90fbaf
+$ docker pull traefik@sha256:e7b5ac800f3dfb32f74e223bfdf868921691082445f6a2154b0a0185a331bbea
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2307060366 bytes)**  
+-	Total Size: **2.3 GB (2306804700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b07982b14d124dd0bbfeb902e7865e699349b99593f7ea310fb5528f5e2257`
+-	Image ID: `sha256:4d1fe13cfae7692ad602e0f83ec49193ebafa237ab7f0860ffdf947d307b25d1`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:56:48 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:55:19 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:58:02 GMT
+# Mon, 16 Nov 2026 19:55:45 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.8.0-rc.3/traefik_v3.8.0-rc.3_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:58:02 GMT
+# Mon, 16 Nov 2026 19:55:47 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:58:05 GMT
+# Mon, 16 Nov 2026 19:55:48 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:58:05 GMT
+# Mon, 16 Nov 2026 19:55:49 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -7662,69 +7662,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fcbe7908dfb50ced87bf969ec539174090a9211504ec58c9dc7e6eaa2e18dfa`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:e8d1d4428786cff57e799560ea1abdaf3b97bf6b120df6d7396db9deb86178c0`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c33b2f1cc5a9317b413ffa7572c4bed98b53ead6d797fe94e4eb34e7015c7510`  
-		Last Modified: Fri, 13 Nov 2026 18:59:07 GMT  
-		Size: 60.7 MB (60707375 bytes)  
+	-	`sha256:3964febbfe0ece80cb9cdce5dbd0dc9823ece62b695287472895efb4ed6f3bfc`  
+		Last Modified: Mon, 16 Nov 2026 19:56:01 GMT  
+		Size: 60.7 MB (60708760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9d6888cc4908d5f97afe719fccf028b116fb14e8cf152eef74e9dd51d0daee`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:a8c04a1838e1387b6c27cbfcfdf89c5dd30a9aa9a2b797ad21a9a0ad5782ba35`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5af659969e5ef2e05546a632661885aae93546dbecbce9f7321293bcddc4724`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:bcad8377873aca3cdbfc01743f66459f224a055a62b601b98599025210bdd927`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a4b6fab4d5338f0caacd4eb91b2f97976570f9ea610991b14cf1529a2946903`  
-		Last Modified: Fri, 13 Nov 2026 18:58:16 GMT  
-		Size: 1.3 KB (1288 bytes)  
+	-	`sha256:82ae18913c426ef401f4579cbf3f66304d67b2facc7b84a42c0b808eea3f5d9d`  
+		Last Modified: Mon, 16 Nov 2026 19:55:53 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:salers-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:a835c699d98655538b98fd23965884805e7255a6a4627ef03494b775b5802ce8
+$ docker pull traefik@sha256:5e9f9f7f59277555821e25f979e4f072082c971d59f9965b463708528c032618
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:salers-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:salers-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a0b5f5f11286ea60018d1c63ef55f9c14e279f315d24ecda5d5b3544c217f4aa
+$ docker pull traefik@sha256:08a55f1551d3d25fc5286dae577924ce09634616a68556472f5de617acb1cba6
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2468067392 bytes)**  
+-	Total Size: **2.5 GB (2467786347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9ea5b4adb161c5572f9aad789be4deea1de7886db84ed5d43361041a1cf41f`
+-	Image ID: `sha256:ca1a539e373594608057ae24ec718e46c3f769eaf2ecf6dbce2fc5a0fe3fb68f`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:55:57 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:58:37 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.8.0-rc.3/traefik_v3.8.0-rc.3_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:58:39 GMT
+# Mon, 16 Nov 2026 19:54:19 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:58:40 GMT
+# Mon, 16 Nov 2026 19:54:20 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:58:42 GMT
+# Mon, 16 Nov 2026 19:54:22 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -7733,29 +7733,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b590e4dd010b692b66e551a7879a24f22f8facaaadda8d20bf48dbf7da8cde44`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:4a24e968073693c0d1ed9c45c4556a135eba4f87ff4c51c418006c014c4b34e7`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c7ba1381ce5d09ca24f5227707e0b57a57f06d1ff6c67251f6e8bddc117b48`  
-		Last Modified: Fri, 13 Nov 2026 18:59:03 GMT  
-		Size: 60.7 MB (60731379 bytes)  
+	-	`sha256:1ceaa7f6ff981f7a9b7f5636eff584689529d403398eb2cf1e0a45a96658b7e2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:35 GMT  
+		Size: 60.7 MB (60713465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa190c403a6028313465a787caae80425432c4bb65cad5eb6008e4944e5e8531`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:57a0245b8f94b8746c3e9b7cf79de4546ff14cf735ec7f92d581499b71e74535`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258c00fa8595fb601c7418f16402e0623b4f9577ce35c7c35f1d4d2f21440d4d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:5d788c15375e866865c9e9a24f60fbfde171cb1043d9e0cf66ca1ff9444bb149`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1296cb838c892cf844fb048e6365d79f24b40baf4798405aa17cbf1e97bd811d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:1b7a3e1b24d04f45c786fd58bfb69a0fb69f737d3b82a34f8e034f20112fb5fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:27 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2`
@@ -8234,157 +8234,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:v2-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -8393,69 +8393,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -8464,29 +8464,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11`
@@ -8965,157 +8965,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:v2.11-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2.11-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2.11-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2.11-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2.11-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -9124,69 +9124,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2.11-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2.11-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -9195,29 +9195,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11.63`
@@ -9618,157 +9618,157 @@ $ docker pull traefik@sha256:02a11da846c9905b9104b74c9ca4639da79f626baf395127651
 ## `traefik:v2.11.63-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:e7d84df9c957615a8f74d03f293c9755a5ffaa748e901c52dc73e9ac590a7ba0
+$ docker pull traefik@sha256:18ea39f74422ae8678cecd780e34800f11662e6ef391358d18bd5c3c34ccffce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2.11.63-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2.11.63-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:48282e7177a7364afead6f89c0ceec7677fdfa552c84b1d4eba4fd78379a0486
+$ docker pull traefik@sha256:1a86158087658f4d47f0a7310577e45e4ebb33d7e353d6f0c7837fdf01a05ec0
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177125586 bytes)**  
+-	Total Size: **177.1 MB (177114498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2360c8018216a45d0e85639ccfb7246740524ee4cb517f15b62129cbf3a67746`
+-	Image ID: `sha256:8097f590dff805e8ea361cc755dbb674475d77802a120a67d14e5218aff88553`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:17:38 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:23 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:17:41 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:17:43 GMT
+# Mon, 16 Nov 2026 20:34:25 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:17:45 GMT
+# Mon, 16 Nov 2026 20:34:26 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66c4e08f0e62be2cd9f5e1ffb8eb0a009bece15c6e28a13f96fbe0298c1f42c1`  
-		Last Modified: Fri, 13 Nov 2026 20:18:23 GMT  
-		Size: 50.8 MB (50837376 bytes)  
+	-	`sha256:250128e0a00659c149e50be1f260e5598fce405511f7b48d6f12470d717675fe`  
+		Last Modified: Mon, 16 Nov 2026 20:34:36 GMT  
+		Size: 50.8 MB (50837388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3cf86e6e0f05e8abc5d53e660ca8bcf77eef2653aad587ff8e2998fb464e69a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1073 bytes)  
+	-	`sha256:3f346645e32a182844107aea19322b32e6a01555cfaf13cf32795096ab3935b7`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ebd5f37d3f955fd1546266e19e265456920be2cadfe77da0c16783fbb75c210`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
-		Size: 1.1 KB (1079 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98249bbf871fe02dcfeed1af8d6346bdec345d1f930eebe9f258a9547e1e5e1a`  
-		Last Modified: Fri, 13 Nov 2026 20:17:51 GMT  
+	-	`sha256:3ccd2ffff44df12998fc8103df9bc2cee7d35b335a54e16ac5110a9e83a2eaf9`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
 		Size: 1.1 KB (1078 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:54b31a1b52e1617b76d38726a6c161d933599e4db6090bf2091a08c2cbaeb68a`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 1.1 KB (1088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11.63-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:9b13995004c842d5d0e8e7a8f5c563b9591c92c1d0de999e871e958167e5abb6
+$ docker pull traefik@sha256:7a68dfcf4f51d4491f7702395ec8d97ab758ebce293dbdb1fbaee622bd258a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2.11.63-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2.11.63-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a83f2f478762f8e8db6d4f6721d6fde417524147663c0778142cb05ee6a47cb4
+$ docker pull traefik@sha256:dfb2fb393a0cc9ec595be5ed3d0100c3f4a0f1331971326b97fd7526d5044917
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251082728 bytes)**  
+-	Total Size: **251.1 MB (251080280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc5bd6fdc0c6aef42fb7eae4ceceaa2c03f9be841648d439257b8787ffc7875`
+-	Image ID: `sha256:987906b3f452d6642fbe78f7a8aca25e32841a0bfb1de4d8c58851af6e08a624`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:18:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:57 GMT
 RUN cmd /S /C #(nop) COPY file:269936decae5e4a56a4a4cf3e96ce22e312cb434e2048ba41a5a0cf431272389 in \ 
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:01 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:18:20 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e6ad337ea8a45bcebe6d8750a64ae1017a28780fa14d7be796f47fc3a50f0ff`  
-		Last Modified: Fri, 13 Nov 2026 20:18:32 GMT  
-		Size: 50.8 MB (50837323 bytes)  
+	-	`sha256:6c0dddffa88c519dfa62ba46acd07e82a70e0228a6f2b381e0fa485987d974bf`  
+		Last Modified: Mon, 16 Nov 2026 20:43:13 GMT  
+		Size: 50.8 MB (50837328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad02ccd623bb5b92f11567e9cf49426dd3f7747d558f3e58cc049581647227e`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1032 bytes)  
+	-	`sha256:93cf45ea06891141984aff9c4891f7b25cfabc465611a26c988dd274d05e418c`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba077621942b9cff2961b8ee41a08f32e69ffb099084c48ca26f05fbb1ca3659`  
-		Last Modified: Fri, 13 Nov 2026 20:18:25 GMT  
-		Size: 1.0 KB (1005 bytes)  
+	-	`sha256:2db70a11ceaf6954cedc627b0ef9cb6c5be454cedd26162f0ff1ff3f95621212`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:223cba1610ccbc66e2225c7089cab02b0f4bd85f226079a3c8c527452d242667`  
-		Last Modified: Fri, 13 Nov 2026 20:18:24 GMT  
-		Size: 1.0 KB (1044 bytes)  
+	-	`sha256:f910e222d177f4e2c519f8dc21b2a913d72445184e59442275c1e8875697975a`  
+		Last Modified: Mon, 16 Nov 2026 20:43:06 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11.63-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:f4527f814c77a34d6bb71a406a1be0a200c3135f3a13e5997d89537790180c92
+$ docker pull traefik@sha256:c41b012e5198fb814548436e8dab09884cf21521129b7a84ba8699c8136a6c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v2.11.63-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v2.11.63-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:ea426df648ef2102e26ab3d058e6a8f7c9d4df647bdfd05536b89f214eeabaf7
+$ docker pull traefik@sha256:dae3957ef01278851d03f6d9b0536b924172e5f2840c26937a219974ba2ecb5e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2297667925 bytes)**  
+-	Total Size: **2.3 GB (2297411590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac6652691999e4aba4933c0213c5ca2325a36e5d07269fcdc0a7cb737a694999`
+-	Image ID: `sha256:7dd3738028cafbbad3ff1275769d7368bedff0f64cc81b96245aa5e002486b44`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 19:06:21 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:40 GMT
+# Mon, 16 Nov 2026 20:04:07 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:41 GMT
+# Mon, 16 Nov 2026 20:04:08 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:43 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:44 GMT
+# Mon, 16 Nov 2026 20:04:09 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -9777,69 +9777,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bc11776a036f3d542d38b085d035f3a27eb51e3b320fbc514413c4beb70b4b4`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b85867bab6f5b360d58495245afd1b06df9993aff415e73434aef583d434cf`  
-		Last Modified: Fri, 13 Nov 2026 19:09:38 GMT  
-		Size: 51.3 MB (51314925 bytes)  
+	-	`sha256:5d4f4732af5842f60958be3d6738d3fe36a91a200ebf09088f44d08296ba88b2`  
+		Last Modified: Mon, 16 Nov 2026 20:04:20 GMT  
+		Size: 51.3 MB (51315611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:870498ea541ea00cc8686a9c521d995f13e046273004c151b19391bdc42cf354`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1312 bytes)  
+	-	`sha256:c6f2408880684f005c195396aa5d22f396b70c06cd5403e17ed3700577673be7`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ceef0f737849c4c699ea45bc68f2de4be56b591dc4a313615861a7fb8c3b04`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:c07bf9c7c0b710a6c6ee6323fde3ce236435dc66884bc1087b5f863f2867090b`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.3 KB (1316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2a297b368dc30d529a8131dc39063000cd18e30a5e22cc271184ab1f5b046`  
-		Last Modified: Fri, 13 Nov 2026 19:08:49 GMT  
-		Size: 1.3 KB (1326 bytes)  
+	-	`sha256:c9680a05da4acab1071aa5c4c7713308a05b67d2a321b747b2318b483dc0a751`  
+		Last Modified: Mon, 16 Nov 2026 20:04:13 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v2.11.63-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:67aea56c1574e067f1a38d8feeee482b400d06f0139a0f8d328a98814000e7ef
+$ docker pull traefik@sha256:c144385715ac18002274f3f9616a10691f8bd1bbc5d937925c42a3ecd28b075b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v2.11.63-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v2.11.63-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:b1b05f7fb992865d9b01fdb028b95f39060fbbd9850e2f3c66e94aa806801f83
+$ docker pull traefik@sha256:a6c4f343c8fc1ab6822e027f1b5bbf0fe99bb5d26afe8080fa3c5c6b82951f7a
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2458679690 bytes)**  
+-	Total Size: **2.5 GB (2458393351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4aca495ad6efc268f84d795d12ac92ad8c6fc709d3b58e31e77cb95db8c503`
+-	Image ID: `sha256:192fbff0437108d99f2497853e466f819498bdbbf37576d66cd75d3bc7ac8a94`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 19:05:59 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:54:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:08:33 GMT
+# Mon, 16 Nov 2026 19:55:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v2.11.63/traefik_v2.11.63_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:08:34 GMT
+# Mon, 16 Nov 2026 19:55:12 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:08:35 GMT
+# Mon, 16 Nov 2026 19:55:13 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:08:36 GMT
+# Mon, 16 Nov 2026 19:55:14 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v2.11.63 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -9848,29 +9848,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbbf96f6339af982e9a25aabeff34b091f83bf9d33fb905fd454cff92d431b99`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:461877c72c63214024e305a95a116295484c62d2c3d46a7707f665457f5fa160`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54085680f21e13807df166306f1241128bcf4f6fbebc507598cc659ab021715d`  
-		Last Modified: Fri, 13 Nov 2026 19:09:33 GMT  
-		Size: 51.3 MB (51343686 bytes)  
+	-	`sha256:c7ff0dd9dc6fa8be83c5b01639f604366926f060487ed992334b9e0db52ab7c8`  
+		Last Modified: Mon, 16 Nov 2026 19:55:24 GMT  
+		Size: 51.3 MB (51320555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e3eadbfe5af97bae1cd2b1bbd036f13e4c72fdf31ef29e53949b235904c8427`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:9d27401d8d68cdc5f993665a62884572d11b9c7858e2ef6e7ce73f9d6bd3f540`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ed41367627c16a736ae357b658c7a047d556d97504e0092ae7ef0d5685db1`  
-		Last Modified: Fri, 13 Nov 2026 19:08:42 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:0ffb186d3ef3ddd184213efc0b429355d780575ef7df287a04e1f53e21dd00d9`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89550c153b4140501ed45f036824bde725c5750fefd753b6a24e105f5135056c`  
-		Last Modified: Fri, 13 Nov 2026 19:08:43 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:069b8578a191c8724d60903894e27575678b54db22c70f56d12fbbe86081485a`  
+		Last Modified: Mon, 16 Nov 2026 19:55:18 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3`
@@ -10349,157 +10349,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:v3-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -10508,69 +10508,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -10579,29 +10579,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7`
@@ -11080,157 +11080,157 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:v3.7-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3.7-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3.7-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.7-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.7-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3.7-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3.7-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -11239,69 +11239,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.7-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.7-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -11310,29 +11310,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7.19`
@@ -11733,117 +11733,117 @@ $ docker pull traefik@sha256:a4f59eb9c653d2fbd2d179719182acdc86255a2a2389ce53a31
 ## `traefik:v3.7.19-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:4b18dd251434c99e543e8c37abb2abe92813daff9f0fbc11f73fdc869744e0b4
+$ docker pull traefik@sha256:78333205b9ab512a3da438a4097597607143f9fa09a0a7eb6c45f085d3f6d488
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3.7.19-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3.7.19-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:708d5ca6bee7e703d0cbb79083ced4a26e0aa7453ccb7ad55fc2de413feab090
+$ docker pull traefik@sha256:ad606cbf30adb6a1925c08c040e581c835efb57a3ee1c631a0dc884bc02a7387
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.9 MB (177877975 bytes)**  
+-	Total Size: **177.9 MB (177866912 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb5e51e5477b2dfe7d41955f4a329edf43a3a56fe57e9c31ce10ddb1e04891f`
+-	Image ID: `sha256:6295e91e124908ba2b0607758be15d4d0d00a34c0a2184407d1d4b91926ea49a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:14:50 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:31 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:14:53 GMT
+# Mon, 16 Nov 2026 20:34:33 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:14:55 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:14:57 GMT
+# Mon, 16 Nov 2026 20:34:34 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:220c98fea5b46379e97d6aec81336bc7eae05aff2877f05c9cc5173178de6bb3`  
-		Last Modified: Fri, 13 Nov 2026 20:15:33 GMT  
-		Size: 51.6 MB (51589802 bytes)  
+	-	`sha256:e0e0ed5332bf53ba8104415155811ff20bba4fd8051b6bd75d2493243abf55a5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:46 GMT  
+		Size: 51.6 MB (51589804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abff441c4c6b3ff8fde5261a84abca369adba611f1f684ab99c22c239e9e8290`  
-		Last Modified: Fri, 13 Nov 2026 20:15:01 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:bdeaf1f8c1ad429ae0c8b7531bdeb1e5bb7fb57e3ea559e469c9c038ea9d3d8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16079c8fe8fa2c11231c392687c4f2a915791c8522bce665d7ea870517136959`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1081 bytes)  
+	-	`sha256:9473626d5d85a820345a75c0e6a2dcb0607b6eb50294821a02bfba687298028b`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e6e4088a45330989837dbedeb5621fca0227697fdecc3bdf983282ee613a261`  
-		Last Modified: Fri, 13 Nov 2026 20:15:02 GMT  
-		Size: 1.1 KB (1066 bytes)  
+	-	`sha256:e2bb55a308852e8fd0fa342cddf936e29f9898f222ea42f0fa094064b47e58f5`  
+		Last Modified: Mon, 16 Nov 2026 20:34:38 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7.19-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:ba096e2e6c09573bb61d2200ffc66bffa134a7115095b5cf44126794316016b3
+$ docker pull traefik@sha256:1908292bcfaca298de46376c28e15a2a4eca37a6abc52c00133af87a9d161bbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.7.19-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.7.19-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:428238e97b1e74a29892b564b4aa7770defe59348ca32fa7bea6103fddb4c488
+$ docker pull traefik@sha256:9b595443d92ed907a468b4168552437af3ae113c4780429036ad7d6792eb638d
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251835225 bytes)**  
+-	Total Size: **251.8 MB (251832793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2963dd628fde2922b09adb58a4ea41de73e7c03f5b568383594984e71cf94a08`
+-	Image ID: `sha256:69e9a5a262b076564d24611e2de7b745b69ceb2ff958d8f3dbe02339025c0ae3`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:15:27 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:58 GMT
 RUN cmd /S /C #(nop) COPY file:397061ec4e1a27ad0026821459bf776f07a1f9d30b8561def6fb636b3c3533cd in \ 
-# Fri, 13 Nov 2026 20:15:29 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:15:30 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:15:31 GMT
+# Mon, 16 Nov 2026 20:43:00 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5262fb445fa03a89974f1fb2dbbcc24db313eb32c7a1a840a4ac5d80afa9ab50`  
-		Last Modified: Fri, 13 Nov 2026 20:15:44 GMT  
-		Size: 51.6 MB (51589809 bytes)  
+	-	`sha256:04b8438e5f12270d6645bcf14b373b3848adaf4353c8124c09131be116a105bc`  
+		Last Modified: Mon, 16 Nov 2026 20:43:11 GMT  
+		Size: 51.6 MB (51589831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f41f94f5766da0d75313608d85a390abaeb9cbaf8e7086d65409096f99ba83be`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1011 bytes)  
+	-	`sha256:2552907042f4ef5e8e76dd7d8b5540a0f038465b5224561875ab7276c914d667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae0fb7707aa2b5b9bcc44bcc4b8eb7189ce140573b73cbc673b6ce03340a3b0`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:f320799b460786e6e66dff5fac7d3b00d6e554bd0ecf7c9c0ca772c941acef66`  
+		Last Modified: Mon, 16 Nov 2026 20:43:05 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d423323a0e30a6b24c03b5cc932f5a9c31c103e010b846171e8bc6ac04248924`  
-		Last Modified: Fri, 13 Nov 2026 20:15:37 GMT  
-		Size: 1.0 KB (1048 bytes)  
+	-	`sha256:431a38cc085556d86f70e3cb5200338db7cd49f9734fb4123fae8a0e61f0c49b`  
+		Last Modified: Mon, 16 Nov 2026 20:43:04 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.7.19-windowsservercore-ltsc2022`
@@ -11920,41 +11920,41 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ## `traefik:v3.7.19-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.7.19-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.7.19-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -11963,29 +11963,29 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.8.0-rc.3`
@@ -12386,117 +12386,117 @@ $ docker pull traefik@sha256:fae5a5df2586c846ea494acccf570654acfd368bdd7894e063d
 ## `traefik:v3.8.0-rc.3-nanoserver-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:efbaa9492ee010dee5d917437cfd38ca3d4d26b0e9826de85ecf1661a0c14ea6
+$ docker pull traefik@sha256:279261c0c0097c84b84f24710e930e79d16d11bcbd7a29cfc42bc9ac682fcbb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:v3.8.0-rc.3-nanoserver-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:v3.8.0-rc.3-nanoserver-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:76c26a716eee291a265aac7fb7ca290ebf25724354060c8367820a0c08c0954e
+$ docker pull traefik@sha256:49bfc4184048cd35810303df215fb2c7b340450108b368ef75bb376be9194422
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.5 MB (186461076 bytes)**  
+-	Total Size: **186.5 MB (186450021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cafe00c6cfc0e061fbda81695d5f493ea705f0c713bac77525021c4915b76178`
+-	Image ID: `sha256:0f23e9fcf7ac729c05b56ee88a499fe57e02c06e2e77bd624e9077df1128c7cf`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 05:03:42 GMT
-RUN Apply image 10.0.20348.5870
-# Fri, 13 Nov 2026 20:13:22 GMT
+# Thu, 12 Nov 2026 02:20:28 GMT
+RUN Apply image 10.0.20348.5873
+# Mon, 16 Nov 2026 20:34:16 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:34:18 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:26 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:27 GMT
+# Mon, 16 Nov 2026 20:34:19 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:0687146101aa7c5a79f3f4fceaa6abc664da260fccc602e0f5edd412320534a4`  
-		Last Modified: Tue, 10 Nov 2026 23:37:31 GMT  
-		Size: 126.3 MB (126284980 bytes)  
+	-	`sha256:533f90db12914056d2c2d338afdeb6ce815e38f2a5fdf28be8b9614e39964ffc`  
+		Last Modified: Fri, 13 Nov 2026 18:24:32 GMT  
+		Size: 126.3 MB (126273899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6c7a920e18b996bbb6e5f965d9f74a474bab2c929d0f3ab39ad6e3c167226e2`  
-		Last Modified: Fri, 13 Nov 2026 20:13:48 GMT  
-		Size: 60.2 MB (60172946 bytes)  
+	-	`sha256:ad5b14c7968b51e43bff0f5920aa97a4fee281013f0e76523305a8e0a1591c9c`  
+		Last Modified: Mon, 16 Nov 2026 20:34:30 GMT  
+		Size: 60.2 MB (60172942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c8ec21e2d226a2d6891285254e86e673cae78254ad2e5063e4389e12c172dd9`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.1 KB (1069 bytes)  
+	-	`sha256:d818ab762353cd1a21e42acece5157ea5342442afaeb2b6208c7d06c2b7d1aad`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:751012efbd3fdf469766731381ac1d1596e92af70693739470ff335a325b767b`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1041 bytes)  
+	-	`sha256:e35e688be023511aaacd0243dc52150d1ae855d81745d75a1e16b21862c43835`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37b39cfbfea8328e7b9a4ea8a3f2fa6a5042ca8cf5583e6c996c1c0231028b3d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 1.0 KB (1040 bytes)  
+	-	`sha256:7900a706ac564e06459daa19905b9ec8be4ebba1a311241727f659e30ee00c8e`  
+		Last Modified: Mon, 16 Nov 2026 20:34:23 GMT  
+		Size: 1.1 KB (1066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.8.0-rc.3-nanoserver-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:f36b674b146879f9b3eb36e1bacc002b089203d861f7409f90b4a2c50308b1f3
+$ docker pull traefik@sha256:b9de92f096fa49ad55b3058022cc54fcd55be58d5fc6ee4a960c13054ceea9de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.8.0-rc.3-nanoserver-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.8.0-rc.3-nanoserver-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:73197f774ebea85fa8e0f4af2ea80756686b42d6cdc52e7de3edd440bab2a0e1
+$ docker pull traefik@sha256:068fd3bdf4cfa9a4eadb4f8f1d32f59a14272cf393f0acd7ea538b24bf0327a3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.4 MB (260418380 bytes)**  
+-	Total Size: **260.4 MB (260415819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dab75309ca04f7df9631d40cb1351a7033edd9af996e8b65ffcd7d33daa7467b`
+-	Image ID: `sha256:8c32a040feab726793fcee60e1a5ec6872085d9b6feaed66036efa66dc105e96`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Mon, 09 Nov 2026 13:08:00 GMT
-RUN Apply image 10.0.26100.33822
-# Fri, 13 Nov 2026 20:13:18 GMT
+# Wed, 11 Nov 2026 22:43:48 GMT
+RUN Apply image 10.0.26100.33828
+# Mon, 16 Nov 2026 20:42:59 GMT
 RUN cmd /S /C #(nop) COPY file:a7b23917f7897f3494fe68d33849fa5d3bfc8f6016d49789e988f1918a4a2e31 in \ 
-# Fri, 13 Nov 2026 20:13:23 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  EXPOSE 80
-# Fri, 13 Nov 2026 20:13:24 GMT
+# Mon, 16 Nov 2026 20:43:02 GMT
 RUN cmd /S /C #(nop)  ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 20:13:25 GMT
+# Mon, 16 Nov 2026 20:43:03 GMT
 RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:8395a5062b63680acee7661df668d9bf81cca0fdec76ab1b29afd6ab290bf2c0`  
-		Last Modified: Tue, 10 Nov 2026 23:37:33 GMT  
-		Size: 200.2 MB (200242324 bytes)  
+	-	`sha256:6ba6a8d6630dc641648821a651879fd111e21b736d72f09f1eabafe7a0e18a9a`  
+		Last Modified: Fri, 13 Nov 2026 21:31:52 GMT  
+		Size: 200.2 MB (200239817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72fb101368d542f8cdf141920fa024135234907d8eb11008021bec1e7f953a08`  
-		Last Modified: Fri, 13 Nov 2026 20:13:37 GMT  
-		Size: 60.2 MB (60172899 bytes)  
+	-	`sha256:7ddb8c74d814f4fab4a04562b777d06b423a7131b162ad5464771085463bf08f`  
+		Last Modified: Mon, 16 Nov 2026 20:43:15 GMT  
+		Size: 60.2 MB (60172915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac410534d9cc4e8d8ee2f0bf5fc507a206313808f5d72c9207dc811826f35e9d`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.0 KB (1034 bytes)  
+	-	`sha256:ac28da140c5138bd75ee2736317765fe78e92ce3b3492d9bcb94263230531213`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e25bdff85499565768719e613f60e04885ad387fd5c979580ec8f05281592fd`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1065 bytes)  
+	-	`sha256:30d99171761732f594f0474aea9c87fa5a5e6ff7a491cc58020a679fa0868556`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e0a0faf534a1643aae1e1957b28f50545ecdaab4fada855728d904a91449693`  
-		Last Modified: Fri, 13 Nov 2026 20:13:29 GMT  
-		Size: 1.1 KB (1058 bytes)  
+	-	`sha256:202f19325b73ace5a85a55c468ddb9cb4ccca658bb5c03f654684596623f5667`  
+		Last Modified: Mon, 16 Nov 2026 20:43:07 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:v3.8.0-rc.3-windowsservercore-ltsc2022`
@@ -12573,41 +12573,41 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ## `traefik:v3.8.0-rc.3-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:a835c699d98655538b98fd23965884805e7255a6a4627ef03494b775b5802ce8
+$ docker pull traefik@sha256:5e9f9f7f59277555821e25f979e4f072082c971d59f9965b463708528c032618
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:v3.8.0-rc.3-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:v3.8.0-rc.3-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:a0b5f5f11286ea60018d1c63ef55f9c14e279f315d24ecda5d5b3544c217f4aa
+$ docker pull traefik@sha256:08a55f1551d3d25fc5286dae577924ce09634616a68556472f5de617acb1cba6
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2468067392 bytes)**  
+-	Total Size: **2.5 GB (2467786347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9ea5b4adb161c5572f9aad789be4deea1de7886db84ed5d43361041a1cf41f`
+-	Image ID: `sha256:ca1a539e373594608057ae24ec718e46c3f769eaf2ecf6dbce2fc5a0fe3fb68f`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:55:57 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:54 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:58:37 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.8.0-rc.3/traefik_v3.8.0-rc.3_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:58:39 GMT
+# Mon, 16 Nov 2026 19:54:19 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:58:40 GMT
+# Mon, 16 Nov 2026 19:54:20 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:58:42 GMT
+# Mon, 16 Nov 2026 19:54:22 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.8.0-rc.3 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -12616,69 +12616,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b590e4dd010b692b66e551a7879a24f22f8facaaadda8d20bf48dbf7da8cde44`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:4a24e968073693c0d1ed9c45c4556a135eba4f87ff4c51c418006c014c4b34e7`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c7ba1381ce5d09ca24f5227707e0b57a57f06d1ff6c67251f6e8bddc117b48`  
-		Last Modified: Fri, 13 Nov 2026 18:59:03 GMT  
-		Size: 60.7 MB (60731379 bytes)  
+	-	`sha256:1ceaa7f6ff981f7a9b7f5636eff584689529d403398eb2cf1e0a45a96658b7e2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:35 GMT  
+		Size: 60.7 MB (60713465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa190c403a6028313465a787caae80425432c4bb65cad5eb6008e4944e5e8531`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:57a0245b8f94b8746c3e9b7cf79de4546ff14cf735ec7f92d581499b71e74535`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258c00fa8595fb601c7418f16402e0623b4f9577ce35c7c35f1d4d2f21440d4d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:5d788c15375e866865c9e9a24f60fbfde171cb1043d9e0cf66ca1ff9444bb149`  
+		Last Modified: Mon, 16 Nov 2026 19:54:26 GMT  
+		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1296cb838c892cf844fb048e6365d79f24b40baf4798405aa17cbf1e97bd811d`  
-		Last Modified: Fri, 13 Nov 2026 18:58:55 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:1b7a3e1b24d04f45c786fd58bfb69a0fb69f737d3b82a34f8e034f20112fb5fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:27 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull traefik@sha256:362c63a661959ae2c6b6ab17e4fc01ccf9d3ce6dda9c3f7f6221f6d71d3c3617
+$ docker pull traefik@sha256:8117e55693d83ceeae79eec57ad3294b2a374e173c69384e84d61312cd003c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `traefik:windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `traefik:windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull traefik@sha256:6608531aa52b1f0a3c7059066d03ae4c98abc943df7fb5ecc0f29ef1266d96d0
+$ docker pull traefik@sha256:595aa7bd72d026d3f89e04dee0b3d63a1e4e2cc5cc44a2bb710d55bf5f0350f1
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2298472156 bytes)**  
+-	Total Size: **2.3 GB (2298215567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab55feae4d4bc9894b8503a72324ab107757c1f0f1be3007c2199aef049edcc2`
+-	Image ID: `sha256:284f1aa25bd9ea23866a20e624e19f8de1cce23198d0cb18e652a5c8441b1909`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Fri, 13 Nov 2026 18:58:58 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 19:53:25 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 19:01:19 GMT
+# Mon, 16 Nov 2026 20:03:30 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 19:01:21 GMT
+# Mon, 16 Nov 2026 20:03:31 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 19:01:23 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 19:01:24 GMT
+# Mon, 16 Nov 2026 20:03:32 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -12687,69 +12687,69 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a7fe4d2320bbe3eb22234d8235d01aed2186e1a03716eadffcac75635983fb9`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:eb796c9fd9167fa251bc6d58fbbe9ecb07bee68bdaf647d671e695124d8401a1`  
+		Last Modified: Mon, 16 Nov 2026 19:55:16 GMT  
+		Size: 1.3 KB (1331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a71a4dad0cc2a49634f7e8ac43c3f4b0993d5d2d2c8c209ace53a6669eca9e4a`  
-		Last Modified: Fri, 13 Nov 2026 19:02:20 GMT  
-		Size: 52.1 MB (52119147 bytes)  
+	-	`sha256:2925365ece6061a75f51fa9860238a65bc428347d080614c36982e9de90b1bd5`  
+		Last Modified: Mon, 16 Nov 2026 20:03:43 GMT  
+		Size: 52.1 MB (52119680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4d9643769467ac90ee3c4d71fb41c819ccb462a753ae97238f11f3cc35a2d87`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1320 bytes)  
+	-	`sha256:071ffe7157d666575854a33d2898609ad08d69c5c0052a81a9100128c3ffd66c`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b1e3e40efa4964fe915897e5c122082535e42b9395e55e008fc5bd0a06ab92e`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:97779d2eb9e29058e61179109e97dd55cbd3bbd6899767c657d04dac661a1e74`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f5492ab3554f88264c27c2f7f01b63f816615adb0d94f3887961faf3d769a2`  
-		Last Modified: Fri, 13 Nov 2026 19:01:28 GMT  
-		Size: 1.3 KB (1316 bytes)  
+	-	`sha256:4dc8e0faaef118b0044627163962820db9f398a3a9ba4d398984502a1a0194f2`  
+		Last Modified: Mon, 16 Nov 2026 20:03:36 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:windowsservercore-ltsc2025`
 
 ```console
-$ docker pull traefik@sha256:b9fe6bc503d6f28e82c8a56f79a2926fbaad2bd99141fb667bc2417158df8083
+$ docker pull traefik@sha256:f18d870821c2a7b8990b387a9ec739ba5e1194a27b1d822f7e43cf41fa099082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `traefik:windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `traefik:windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull traefik@sha256:22de27786e02d21f2293977f14f195c99d75bd9f5b3f8da8567b51c33a6d26c2
+$ docker pull traefik@sha256:badceec897dea3f2c06f658d48869c6673a4d05b527276db80f32e3644f5c32e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2459475026 bytes)**  
+-	Total Size: **2.5 GB (2459195970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f84818f2a1457a40eb2f54ba316ed6b6e30fe0c62cc0e37cb19b1a704ff809`
+-	Image ID: `sha256:b3b23184be6d73743cf4cef555c3a5b28b5181822ef499960bf3a39d0c300377`
 -	Entrypoint: `["\/traefik"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Fri, 13 Nov 2026 18:57:52 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:52 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:15 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/traefik/traefik/releases/download/v3.7.19/traefik_v3.7.19_windows_amd64.zip"         -OutFile "/traefik.zip";     Expand-Archive -Path "/traefik.zip" -DestinationPath "/" -Force;     Remove-Item "/traefik.zip" -Force
-# Fri, 13 Nov 2026 18:59:37 GMT
+# Mon, 16 Nov 2026 19:54:16 GMT
 EXPOSE 80
-# Fri, 13 Nov 2026 18:59:38 GMT
+# Mon, 16 Nov 2026 19:54:17 GMT
 ENTRYPOINT ["/traefik"]
-# Fri, 13 Nov 2026 18:59:40 GMT
+# Mon, 16 Nov 2026 19:54:18 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.7.19 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
@@ -12758,27 +12758,27 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d4580895a82661d43f8891a3b1ca124b803e1c9e6adc09332eed6c1e5b7f7`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:258b8ca421c56b5c9c99b175da794c28dc2695af7af6c8065e63deab793a98d2`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb1a4eaca159dcd6ae10d90c55cbc8a11ecf524407c93258e3b1ea15c5390e77`  
-		Last Modified: Fri, 13 Nov 2026 19:00:40 GMT  
-		Size: 52.1 MB (52139012 bytes)  
+	-	`sha256:78f432bf1d401bd2de18e03f9eaba363dee971afe7f3d2ad38cc0e64ca26a6fe`  
+		Last Modified: Mon, 16 Nov 2026 19:54:29 GMT  
+		Size: 52.1 MB (52123131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557174d67eda5ba2d80005d904aed79444fe5a04680dbe5bac6e701b4a774891`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:a23b67a5af1952e66656afc9d632d1084aa29951d312c2fc8d9a260301251ef8`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9011018eba1c3069ad2941868753cfeabe13f22523b06e227baf749dd00e66bb`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0f8be6bf0ed507ec2d05ca2044136c3add2277a486d99d6393c25091519940b1`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e91c8bb48368aadf299d85a1f380529fd8e44636f081f64014b7d2d702d0cc`  
-		Last Modified: Fri, 13 Nov 2026 18:59:50 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:1e23606af6c8a20517540767568215a08471f0dfada38dd802f85c5d0c737867`  
+		Last Modified: Mon, 16 Nov 2026 19:54:22 GMT  
+		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
