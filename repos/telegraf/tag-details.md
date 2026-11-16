@@ -12,10 +12,13 @@
 -	[`telegraf:1.39.3-alpine`](#telegraf1393-alpine)
 -	[`telegraf:1.40`](#telegraf140)
 -	[`telegraf:1.40-alpine`](#telegraf140-alpine)
+-	[`telegraf:1.40-scratch`](#telegraf140-scratch)
 -	[`telegraf:1.40.3`](#telegraf1403)
 -	[`telegraf:1.40.3-alpine`](#telegraf1403-alpine)
+-	[`telegraf:1.40.3-scratch`](#telegraf1403-scratch)
 -	[`telegraf:alpine`](#telegrafalpine)
 -	[`telegraf:latest`](#telegraflatest)
+-	[`telegraf:scratch`](#telegrafscratch)
 
 ## `telegraf:1.38`
 
@@ -2267,6 +2270,15 @@ $ docker pull telegraf@sha256:673aac9760227d944226253e54a52c37bba7b8cff6d5889eb2
 		Size: 15.9 KB (15909 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `telegraf:1.40-scratch`
+
+```console
+$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `telegraf:1.40.3`
 
 ```console
@@ -2717,6 +2729,15 @@ $ docker pull telegraf@sha256:673aac9760227d944226253e54a52c37bba7b8cff6d5889eb2
 		Size: 15.9 KB (15909 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `telegraf:1.40.3-scratch`
+
+```console
+$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `telegraf:alpine`
 
 ```console
@@ -3166,3 +3187,12 @@ $ docker pull telegraf@sha256:774ea3583016ffaef7090e98e1896d3a059bb6d8ac53217c52
 		Last Modified: Thu, 05 Nov 2026 08:47:11 GMT  
 		Size: 14.9 KB (14890 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `telegraf:scratch`
+
+```console
+$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
