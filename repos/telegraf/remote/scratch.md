@@ -1,8 +1,124 @@
 ## `telegraf:scratch`
 
 ```console
-$ docker pull telegraf@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull telegraf@sha256:bbc43a9e96ea190d94ab3258e9f3673998b30322c78672952bbcfa68c30b1eba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `telegraf:scratch` - linux; amd64
+
+```console
+$ docker pull telegraf@sha256:692201cdb45d9685b6b11ab40a2e71ca0d2addc6e0061b1fbafa82b9385df8fa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **89.4 MB (89404002 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6b9f267d5ba16236b0da5b110ea830400aea718fdd81746bc68146b6e96cd0c3`
+-	Entrypoint: `["\/usr\/bin\/telegraf"]`
+-	Default Command: `["--config","\/etc\/telegraf\/telegraf.conf","--config-directory","\/etc\/telegraf\/telegraf.d"]`
+
+```dockerfile
+# Mon, 16 Nov 2026 20:19:04 GMT
+COPY /rootfs/ / # buildkit
+# Mon, 16 Nov 2026 20:19:04 GMT
+ENV HOME=/home/telegraf
+# Mon, 16 Nov 2026 20:19:04 GMT
+USER 65532:65532
+# Mon, 16 Nov 2026 20:19:04 GMT
+ENTRYPOINT ["/usr/bin/telegraf"]
+# Mon, 16 Nov 2026 20:19:04 GMT
+CMD ["--config" "/etc/telegraf/telegraf.conf" "--config-directory" "/etc/telegraf/telegraf.d"]
+```
+
+-	Layers:
+	-	`sha256:2576a0644500b01a3b64cf8524b4e15929d91c0630004b638a1fd0e0f83cd8be`  
+		Last Modified: Mon, 16 Nov 2026 20:19:22 GMT  
+		Size: 89.4 MB (89404002 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `telegraf:scratch` - unknown; unknown
+
+```console
+$ docker pull telegraf@sha256:db50aba000359e862fecf114f87136a485886a322cee4c20b1c243da84c6919c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **463.9 KB (463871 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:899ea1105b5bc741b01a02148644321db5a7366c9bd0e7a520bf6b21bb5cda52`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:64aaf64375c2502078488f936d1fbae90b31e097a0f7b2012e8b909fbbfa60c4`  
+		Last Modified: Mon, 16 Nov 2026 20:19:20 GMT  
+		Size: 449.0 KB (449028 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:88fed36e8f61ee0c749a1d4050e3512e4380bddb4463cc926c9c8c0ead8021bd`  
+		Last Modified: Mon, 16 Nov 2026 20:19:21 GMT  
+		Size: 14.8 KB (14843 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `telegraf:scratch` - linux; arm64 variant v8
+
+```console
+$ docker pull telegraf@sha256:92f690653f8ea376b5f38e855e7039b474e8bca83b3492829805fb4daf050342
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **79.8 MB (79840574 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7c2bbb88ee2daa184eedf2a77bc870925c715df41e535ff6ab17328112146637`
+-	Entrypoint: `["\/usr\/bin\/telegraf"]`
+-	Default Command: `["--config","\/etc\/telegraf\/telegraf.conf","--config-directory","\/etc\/telegraf\/telegraf.d"]`
+
+```dockerfile
+# Mon, 16 Nov 2026 20:25:01 GMT
+COPY /rootfs/ / # buildkit
+# Mon, 16 Nov 2026 20:25:01 GMT
+ENV HOME=/home/telegraf
+# Mon, 16 Nov 2026 20:25:01 GMT
+USER 65532:65532
+# Mon, 16 Nov 2026 20:25:01 GMT
+ENTRYPOINT ["/usr/bin/telegraf"]
+# Mon, 16 Nov 2026 20:25:01 GMT
+CMD ["--config" "/etc/telegraf/telegraf.conf" "--config-directory" "/etc/telegraf/telegraf.d"]
+```
+
+-	Layers:
+	-	`sha256:8783a2cac07b3f75a75d9933f79401afd8365c3facff516137112804defae480`  
+		Last Modified: Mon, 16 Nov 2026 20:25:19 GMT  
+		Size: 79.8 MB (79840574 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `telegraf:scratch` - unknown; unknown
+
+```console
+$ docker pull telegraf@sha256:7010c73b90257ee6127538da8d4ce4693e64fedc16e033f0347bd09154d3a48f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **460.8 KB (460804 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0451d500ea2cc0a589c370c71ca05a9842c4402dd6e45fbeb536c3181be7ee9c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:59d419b57c168af17b8a2fcbc64f9e726b82ae381697a9c3243d86c2a89f7ec4`  
+		Last Modified: Mon, 16 Nov 2026 20:25:17 GMT  
+		Size: 445.9 KB (445869 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4e2b24588668cbefdf7628c7f4691b58863e1a9c045b4ed605a59a5ff3bb6289`  
+		Last Modified: Mon, 16 Nov 2026 20:25:17 GMT  
+		Size: 14.9 KB (14935 bytes)  
+		MIME: application/vnd.in-toto+json
