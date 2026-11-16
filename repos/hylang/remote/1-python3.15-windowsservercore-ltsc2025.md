@@ -1,51 +1,51 @@
 ## `hylang:1-python3.15-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull hylang@sha256:779cd308f3904f8750d714d89d762655f589d176104e2ae22290149f714d415b
+$ docker pull hylang@sha256:0faadb135e2ede1be35f5d6d93bee61cfc957dc2163434bf5e13194e76711fc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.26100.33822; amd64
+	-	windows version 10.0.26100.33828; amd64
 
-### `hylang:1-python3.15-windowsservercore-ltsc2025` - windows version 10.0.26100.33822; amd64
+### `hylang:1-python3.15-windowsservercore-ltsc2025` - windows version 10.0.26100.33828; amd64
 
 ```console
-$ docker pull hylang@sha256:b5decfa7379d7f4a8d6dabe4f921cfba45a8311bf953026ff9104bb8c6fbaa8d
+$ docker pull hylang@sha256:f8c100358e6f7ccd1f359134f14954d2e5e1c52b87aea4c3024270d0c90e6e4f
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487933432 bytes)**  
+-	Total Size: **2.5 GB (2487550836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c47b64f6bbe2fafbc15affcbe80a4ae819a2fed2085e19ffdda7dbc973375e`
+-	Image ID: `sha256:187ea391e9d44994914ebfe7b4e7b7986948858c2c725a39616759095fe267aa`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sun, 11 Jan 2026 09:57:36 GMT
 RUN Apply image 10.0.26100.32230
-# Mon, 09 Nov 2026 13:42:43 GMT
-RUN Install update 10.0.26100.33822
-# Wed, 11 Nov 2026 21:53:07 GMT
+# Wed, 11 Nov 2026 23:09:50 GMT
+RUN Install update 10.0.26100.33828
+# Mon, 16 Nov 2026 19:53:53 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 11 Nov 2026 22:01:59 GMT
+# Mon, 16 Nov 2026 20:07:15 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Wed, 11 Nov 2026 22:01:59 GMT
+# Mon, 16 Nov 2026 20:07:15 GMT
 ENV PYTHON_VERSION=3.15.2
-# Wed, 11 Nov 2026 22:01:59 GMT
+# Mon, 16 Nov 2026 20:07:16 GMT
 ENV PYTHON_SHA256=06e225a228191b0f4d1dcf6905fbb21bf9f6970d13a2ec63137ab9bee76f15aa
-# Wed, 11 Nov 2026 22:02:33 GMT
+# Mon, 16 Nov 2026 20:07:47 GMT
 RUN $url = 'https://www.python.org/ftp/python/3.15.2/python-3.15.2-amd64.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_SHA256); 	if ((Get-FileHash python.exe -Algorithm sha256).Hash -ne $env:PYTHON_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	$exitCode = (Start-Process python.exe -Wait -NoNewWindow -PassThru 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=1', 			'Include_test=0' 		) 	).ExitCode; 	if ($exitCode -ne 0) { 		Write-Host ('Running python installer failed with exit code: {0}' -f $exitCode); 		Get-ChildItem $env:TEMP | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1 | Get-Content; 		exit $exitCode; 	} 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 	Remove-Item $env:TEMP/Python*.log -Force; 		Write-Host 'Verifying install ("python --version") ...'; 	python --version; 		$env:PYTHONDONTWRITEBYTECODE = '1'; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 11 Nov 2026 22:02:34 GMT
+# Mon, 16 Nov 2026 20:07:48 GMT
 CMD ["python"]
-# Wed, 11 Nov 2026 22:48:36 GMT
+# Mon, 16 Nov 2026 20:46:09 GMT
 ENV HY_VERSION=1.3.1
-# Wed, 11 Nov 2026 22:48:36 GMT
+# Mon, 16 Nov 2026 20:46:10 GMT
 ENV HYRULE_VERSION=1.1.0
-# Wed, 11 Nov 2026 22:49:22 GMT
+# Mon, 16 Nov 2026 20:46:49 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Wed, 11 Nov 2026 22:49:23 GMT
+# Mon, 16 Nov 2026 20:46:50 GMT
 CMD ["hy"]
 ```
 
@@ -54,47 +54,47 @@ CMD ["hy"]
 		Last Modified: Tue, 10 Feb 2026 18:56:17 GMT  
 		Size: 1.5 GB (1523059351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01aa8c296f8ae8139a1d427afdba7dbdd8dc375687e3ae8dc46c1975fbab554`  
-		Last Modified: Tue, 10 Nov 2026 19:11:08 GMT  
-		Size: 884.3 MB (884271544 bytes)  
+	-	`sha256:9defc15cca887258ad49b1f75aa00c54b7a6a070717bc0cd09bcae97046b4b3c`  
+		Last Modified: Fri, 13 Nov 2026 18:53:03 GMT  
+		Size: 884.0 MB (884008369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0424bf2a0ebe4e53eccb510a3df92bce08e3e2450a783d85a1af6c24c50cf491`  
-		Last Modified: Wed, 11 Nov 2026 21:54:26 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:e776cf3634157b0b226086033d3c45b74007823330a75f232a4be3bccff8c8b0`  
+		Last Modified: Mon, 16 Nov 2026 19:55:28 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceadb77398c07baef516d5808cd910aa24fb160bc808654b2a906623b282449d`  
-		Last Modified: Wed, 11 Nov 2026 22:02:38 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:904b842a7ca456ffbe4eb8793492b0bb8a30b91dcb3b84788064177aefba244d`  
+		Last Modified: Mon, 16 Nov 2026 20:07:52 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb5bf4a9f42daf3374000f98384f216a586808ee2d5d483477f46827f7d1a287`  
-		Last Modified: Wed, 11 Nov 2026 22:02:38 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:2dea992c0f0e00690302a3511e332d779232e77fd3335206b0eb4823491998f8`  
+		Last Modified: Mon, 16 Nov 2026 20:07:52 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8ed1316207e3e10219d0ebb5d86933f47a3e4da3e53788eed3363352b555aea`  
-		Last Modified: Wed, 11 Nov 2026 22:02:38 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:4187f4032b5eb6d04884118fe46ffaa43232f23ba0a31ed0d5ef5f37b2674906`  
+		Last Modified: Mon, 16 Nov 2026 20:07:52 GMT  
+		Size: 1.3 KB (1258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a11ce1a1031fbe17b96f15e6fdbd5646b2f40beb400a6eb4b24f4f32206c963`  
-		Last Modified: Wed, 11 Nov 2026 22:02:44 GMT  
-		Size: 72.3 MB (72301415 bytes)  
+	-	`sha256:875d08d2bb3e045dfa1abbfe3b424826be74b3ae18423470c411823e77ff10f9`  
+		Last Modified: Mon, 16 Nov 2026 20:07:58 GMT  
+		Size: 72.2 MB (72243422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef6aead300a12cd4c3b6f1034620e75c4f13ff4546bcdec07c861cbd5f611ba1`  
-		Last Modified: Wed, 11 Nov 2026 22:02:38 GMT  
-		Size: 1.3 KB (1284 bytes)  
+	-	`sha256:4afac76a33589140bc18e05944d37829feb44399b37d1e485050fb1b72928dae`  
+		Last Modified: Mon, 16 Nov 2026 20:07:52 GMT  
+		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf3ff4f6134498a8695622aab6810bacb141456a960254232bc3deb4809e03a6`  
-		Last Modified: Wed, 11 Nov 2026 22:49:27 GMT  
-		Size: 1.3 KB (1257 bytes)  
+	-	`sha256:98cbc0747dcf14ea6865319417c3d2ca026f0dba1adec8fa455d56b974b1234e`  
+		Last Modified: Mon, 16 Nov 2026 20:46:54 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e854478bef9c768bf33e6f9991869a38a6f9f7946aab16128f9085cd9662e838`  
-		Last Modified: Wed, 11 Nov 2026 22:49:27 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:6b94a3b9109f334e6ce48ec197bd0fce65a8c9834d1513ee09d7a917fd82ebb1`  
+		Last Modified: Mon, 16 Nov 2026 20:46:54 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e35405839e9a7fbf716326d89553631d2af549015e4ad57d1c51fd82b522745c`  
-		Last Modified: Wed, 11 Nov 2026 22:49:28 GMT  
-		Size: 8.3 MB (8290908 bytes)  
+	-	`sha256:207de2136f918a46610c0b7786a54fce71789d31717ecb054564ac47ee13a336`  
+		Last Modified: Mon, 16 Nov 2026 20:46:56 GMT  
+		Size: 8.2 MB (8229456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323bf8a7120a7b5f1a84d5a467fab1f8483b7ec8eec1c2b7c5d50f6409e4c579`  
-		Last Modified: Wed, 11 Nov 2026 22:49:27 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:2f683e769157359b770a09d2269b1ec6439aeb5729d3fa104afc64e10a210f8b`  
+		Last Modified: Mon, 16 Nov 2026 20:46:54 GMT  
+		Size: 1.3 KB (1261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
