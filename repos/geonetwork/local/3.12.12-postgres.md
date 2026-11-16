@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dbb88dc3e78fe6f69b636dbd65dc62475b5fb2ea9aa26ee3c5d85e68a0694501`
-- Created: `2026-11-12T02:14:21.912096605Z`
-- Virtual Size: ~ 720.76 Mb  
+- Image ID: `sha256:701a3ddc450d771f254b33c5691ce3e4bace3c74dbe4a4384c379d4823697235`
+- Created: `2026-11-16T21:46:36.790213457Z`
+- Virtual Size: ~ 737.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.123`
-  - `TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290`
+  - `TOMCAT_VERSION=9.0.124`
+  - `TOMCAT_SHA512=925e4fefe25b2ecccd032acd0b4cb1b506455037ed0f8b0e51824bed839c5e92bf5e58982b990d2fdcbc790bcda1a533db7faffb325f8a7baee939fc8ae871c1`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC`
@@ -801,14 +801,14 @@ $ apt-get source -qq --print-uris gdbm=1.26-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.26-1build1.dsc' gdbm_1.26-1build1.dsc 2258 SHA256:ae64d944a1f2ec46d872a27714c30f6b79e68f8398628bb801f80467972fa0ac
 ```
 
-### `dpkg` source package: `glibc=2.43-2ubuntu2.4`
+### `dpkg` source package: `glibc=2.43-2ubuntu2.7`
 
 Binary Packages:
 
-- `libc-bin=2.43-2ubuntu2.4`
-- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.4`
-- `libc6:amd64=2.43-2ubuntu2.4`
-- `locales=2.43-2ubuntu2.4`
+- `libc-bin=2.43-2ubuntu2.7`
+- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.7`
+- `libc6:amd64=2.43-2ubuntu2.7`
+- `locales=2.43-2ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -846,9 +846,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.debian.tar.xz' glibc_2.43-2ubuntu2.7.debian.tar.xz 543520 SHA512:f66a3c076d8ecc353d88e3911b29d93772166d568171a08fd1fecd893bed8dd502cc869f62b1d6f0f58639304d023c90bcc0119f6cdb90bcab941a2a430ba66d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.dsc' glibc_2.43-2ubuntu2.7.dsc 9078 SHA512:e07a7964e1f288ad522af37af1608abc4ff06b6d94aa075a5835317194b9f44c497361cd2ce53c1fc5eb96ddccc62747efcfba99952c6430e8cb74d182e6c0eb
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
