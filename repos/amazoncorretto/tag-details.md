@@ -14,6 +14,10 @@
 -	[`amazoncorretto:11-al2023-headful`](#amazoncorretto11-al2023-headful)
 -	[`amazoncorretto:11-al2023-headless`](#amazoncorretto11-al2023-headless)
 -	[`amazoncorretto:11-al2023-jdk`](#amazoncorretto11-al2023-jdk)
+-	[`amazoncorretto:11-al2027`](#amazoncorretto11-al2027)
+-	[`amazoncorretto:11-al2027-headful`](#amazoncorretto11-al2027-headful)
+-	[`amazoncorretto:11-al2027-headless`](#amazoncorretto11-al2027-headless)
+-	[`amazoncorretto:11-al2027-jdk`](#amazoncorretto11-al2027-jdk)
 -	[`amazoncorretto:11-alpine`](#amazoncorretto11-alpine)
 -	[`amazoncorretto:11-alpine-full`](#amazoncorretto11-alpine-full)
 -	[`amazoncorretto:11-alpine-jdk`](#amazoncorretto11-alpine-jdk)
@@ -40,6 +44,9 @@
 -	[`amazoncorretto:11.0.33-al2023`](#amazoncorretto11033-al2023)
 -	[`amazoncorretto:11.0.33-al2023-headful`](#amazoncorretto11033-al2023-headful)
 -	[`amazoncorretto:11.0.33-al2023-headless`](#amazoncorretto11033-al2023-headless)
+-	[`amazoncorretto:11.0.33-al2027`](#amazoncorretto11033-al2027)
+-	[`amazoncorretto:11.0.33-al2027-headful`](#amazoncorretto11033-al2027-headful)
+-	[`amazoncorretto:11.0.33-al2027-headless`](#amazoncorretto11033-al2027-headless)
 -	[`amazoncorretto:11.0.33-alpine`](#amazoncorretto11033-alpine)
 -	[`amazoncorretto:11.0.33-alpine3.21`](#amazoncorretto11033-alpine321)
 -	[`amazoncorretto:11.0.33-alpine3.22`](#amazoncorretto11033-alpine322)
@@ -58,6 +65,10 @@
 -	[`amazoncorretto:17-al2023-headful`](#amazoncorretto17-al2023-headful)
 -	[`amazoncorretto:17-al2023-headless`](#amazoncorretto17-al2023-headless)
 -	[`amazoncorretto:17-al2023-jdk`](#amazoncorretto17-al2023-jdk)
+-	[`amazoncorretto:17-al2027`](#amazoncorretto17-al2027)
+-	[`amazoncorretto:17-al2027-headful`](#amazoncorretto17-al2027-headful)
+-	[`amazoncorretto:17-al2027-headless`](#amazoncorretto17-al2027-headless)
+-	[`amazoncorretto:17-al2027-jdk`](#amazoncorretto17-al2027-jdk)
 -	[`amazoncorretto:17-alpine`](#amazoncorretto17-alpine)
 -	[`amazoncorretto:17-alpine-full`](#amazoncorretto17-alpine-full)
 -	[`amazoncorretto:17-alpine-jdk`](#amazoncorretto17-alpine-jdk)
@@ -85,6 +96,9 @@
 -	[`amazoncorretto:17.0.21-al2023`](#amazoncorretto17021-al2023)
 -	[`amazoncorretto:17.0.21-al2023-headful`](#amazoncorretto17021-al2023-headful)
 -	[`amazoncorretto:17.0.21-al2023-headless`](#amazoncorretto17021-al2023-headless)
+-	[`amazoncorretto:17.0.21-al2027`](#amazoncorretto17021-al2027)
+-	[`amazoncorretto:17.0.21-al2027-headful`](#amazoncorretto17021-al2027-headful)
+-	[`amazoncorretto:17.0.21-al2027-headless`](#amazoncorretto17021-al2027-headless)
 -	[`amazoncorretto:17.0.21-alpine`](#amazoncorretto17021-alpine)
 -	[`amazoncorretto:17.0.21-alpine3.21`](#amazoncorretto17021-alpine321)
 -	[`amazoncorretto:17.0.21-alpine3.22`](#amazoncorretto17021-alpine322)
@@ -100,6 +114,10 @@
 -	[`amazoncorretto:21-al2023-headful`](#amazoncorretto21-al2023-headful)
 -	[`amazoncorretto:21-al2023-headless`](#amazoncorretto21-al2023-headless)
 -	[`amazoncorretto:21-al2023-jdk`](#amazoncorretto21-al2023-jdk)
+-	[`amazoncorretto:21-al2027`](#amazoncorretto21-al2027)
+-	[`amazoncorretto:21-al2027-headful`](#amazoncorretto21-al2027-headful)
+-	[`amazoncorretto:21-al2027-headless`](#amazoncorretto21-al2027-headless)
+-	[`amazoncorretto:21-al2027-jdk`](#amazoncorretto21-al2027-jdk)
 -	[`amazoncorretto:21-alpine`](#amazoncorretto21-alpine)
 -	[`amazoncorretto:21-alpine-full`](#amazoncorretto21-alpine-full)
 -	[`amazoncorretto:21-alpine-jdk`](#amazoncorretto21-alpine-jdk)
@@ -124,6 +142,9 @@
 -	[`amazoncorretto:21.0.13-al2023`](#amazoncorretto21013-al2023)
 -	[`amazoncorretto:21.0.13-al2023-headful`](#amazoncorretto21013-al2023-headful)
 -	[`amazoncorretto:21.0.13-al2023-headless`](#amazoncorretto21013-al2023-headless)
+-	[`amazoncorretto:21.0.13-al2027`](#amazoncorretto21013-al2027)
+-	[`amazoncorretto:21.0.13-al2027-headful`](#amazoncorretto21013-al2027-headful)
+-	[`amazoncorretto:21.0.13-al2027-headless`](#amazoncorretto21013-al2027-headless)
 -	[`amazoncorretto:21.0.13-alpine`](#amazoncorretto21013-alpine)
 -	[`amazoncorretto:21.0.13-alpine3.21`](#amazoncorretto21013-alpine321)
 -	[`amazoncorretto:21.0.13-alpine3.22`](#amazoncorretto21013-alpine322)
@@ -134,6 +155,10 @@
 -	[`amazoncorretto:25-al2023-headful`](#amazoncorretto25-al2023-headful)
 -	[`amazoncorretto:25-al2023-headless`](#amazoncorretto25-al2023-headless)
 -	[`amazoncorretto:25-al2023-jdk`](#amazoncorretto25-al2023-jdk)
+-	[`amazoncorretto:25-al2027`](#amazoncorretto25-al2027)
+-	[`amazoncorretto:25-al2027-headful`](#amazoncorretto25-al2027-headful)
+-	[`amazoncorretto:25-al2027-headless`](#amazoncorretto25-al2027-headless)
+-	[`amazoncorretto:25-al2027-jdk`](#amazoncorretto25-al2027-jdk)
 -	[`amazoncorretto:25-alpine`](#amazoncorretto25-alpine)
 -	[`amazoncorretto:25-alpine-full`](#amazoncorretto25-alpine-full)
 -	[`amazoncorretto:25-alpine-jdk`](#amazoncorretto25-alpine-jdk)
@@ -156,6 +181,9 @@
 -	[`amazoncorretto:25.0.5-al2023`](#amazoncorretto2505-al2023)
 -	[`amazoncorretto:25.0.5-al2023-headful`](#amazoncorretto2505-al2023-headful)
 -	[`amazoncorretto:25.0.5-al2023-headless`](#amazoncorretto2505-al2023-headless)
+-	[`amazoncorretto:25.0.5-al2027`](#amazoncorretto2505-al2027)
+-	[`amazoncorretto:25.0.5-al2027-headful`](#amazoncorretto2505-al2027-headful)
+-	[`amazoncorretto:25.0.5-al2027-headless`](#amazoncorretto2505-al2027-headless)
 -	[`amazoncorretto:25.0.5-alpine`](#amazoncorretto2505-alpine)
 -	[`amazoncorretto:25.0.5-alpine3.21`](#amazoncorretto2505-alpine321)
 -	[`amazoncorretto:25.0.5-alpine3.22`](#amazoncorretto2505-alpine322)
@@ -166,6 +194,10 @@
 -	[`amazoncorretto:27-al2023-headful`](#amazoncorretto27-al2023-headful)
 -	[`amazoncorretto:27-al2023-headless`](#amazoncorretto27-al2023-headless)
 -	[`amazoncorretto:27-al2023-jdk`](#amazoncorretto27-al2023-jdk)
+-	[`amazoncorretto:27-al2027`](#amazoncorretto27-al2027)
+-	[`amazoncorretto:27-al2027-headful`](#amazoncorretto27-al2027-headful)
+-	[`amazoncorretto:27-al2027-headless`](#amazoncorretto27-al2027-headless)
+-	[`amazoncorretto:27-al2027-jdk`](#amazoncorretto27-al2027-jdk)
 -	[`amazoncorretto:27-alpine`](#amazoncorretto27-alpine)
 -	[`amazoncorretto:27-alpine-full`](#amazoncorretto27-alpine-full)
 -	[`amazoncorretto:27-alpine-jdk`](#amazoncorretto27-alpine-jdk)
@@ -188,6 +220,9 @@
 -	[`amazoncorretto:27.0.1-al2023`](#amazoncorretto2701-al2023)
 -	[`amazoncorretto:27.0.1-al2023-headful`](#amazoncorretto2701-al2023-headful)
 -	[`amazoncorretto:27.0.1-al2023-headless`](#amazoncorretto2701-al2023-headless)
+-	[`amazoncorretto:27.0.1-al2027`](#amazoncorretto2701-al2027)
+-	[`amazoncorretto:27.0.1-al2027-headful`](#amazoncorretto2701-al2027-headful)
+-	[`amazoncorretto:27.0.1-al2027-headless`](#amazoncorretto2701-al2027-headless)
 -	[`amazoncorretto:27.0.1-alpine`](#amazoncorretto2701-alpine)
 -	[`amazoncorretto:27.0.1-alpine3.21`](#amazoncorretto2701-alpine321)
 -	[`amazoncorretto:27.0.1-alpine3.22`](#amazoncorretto2701-alpine322)
@@ -204,6 +239,9 @@
 -	[`amazoncorretto:8-al2023`](#amazoncorretto8-al2023)
 -	[`amazoncorretto:8-al2023-jdk`](#amazoncorretto8-al2023-jdk)
 -	[`amazoncorretto:8-al2023-jre`](#amazoncorretto8-al2023-jre)
+-	[`amazoncorretto:8-al2027`](#amazoncorretto8-al2027)
+-	[`amazoncorretto:8-al2027-jdk`](#amazoncorretto8-al2027-jdk)
+-	[`amazoncorretto:8-al2027-jre`](#amazoncorretto8-al2027-jre)
 -	[`amazoncorretto:8-alpine`](#amazoncorretto8-alpine)
 -	[`amazoncorretto:8-alpine-full`](#amazoncorretto8-alpine-full)
 -	[`amazoncorretto:8-alpine-jdk`](#amazoncorretto8-alpine-jdk)
@@ -233,6 +271,8 @@
 -	[`amazoncorretto:8u512-al2-native-jre`](#amazoncorretto8u512-al2-native-jre)
 -	[`amazoncorretto:8u512-al2023`](#amazoncorretto8u512-al2023)
 -	[`amazoncorretto:8u512-al2023-jre`](#amazoncorretto8u512-al2023-jre)
+-	[`amazoncorretto:8u512-al2027`](#amazoncorretto8u512-al2027)
+-	[`amazoncorretto:8u512-al2027-jre`](#amazoncorretto8u512-al2027-jre)
 -	[`amazoncorretto:8u512-alpine`](#amazoncorretto8u512-alpine)
 -	[`amazoncorretto:8u512-alpine-jre`](#amazoncorretto8u512-alpine-jre)
 -	[`amazoncorretto:8u512-alpine3.21`](#amazoncorretto8u512-alpine321)
@@ -1916,6 +1956,22 @@ $ docker pull amazoncorretto@sha256:7e437ad2e3d63b2897bcb1c1757df3d59972dc47f045
 		Last Modified: Mon, 16 Nov 2026 23:10:15 GMT  
 		Size: 10.6 KB (10619 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:11-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-al2027-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-al2027-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:11-alpine`
 
@@ -5575,6 +5631,18 @@ $ docker pull amazoncorretto@sha256:e5935c35393e913820779aef1931cd1f6704d986a000
 		Size: 9.3 KB (9257 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `amazoncorretto:11.0.33-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11.0.33-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11.0.33-al2027-headless`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:11.0.33-alpine`
 
 ```console
@@ -8112,6 +8180,22 @@ $ docker pull amazoncorretto@sha256:fd5cecaf701d7fd69cad92efd30e8c56c0af2902d5f6
 		Last Modified: Mon, 16 Nov 2026 23:10:34 GMT  
 		Size: 10.8 KB (10846 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:17-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:17-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:17-al2027-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:17-al2027-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:17-alpine`
 
@@ -11940,6 +12024,18 @@ $ docker pull amazoncorretto@sha256:74551d94de8b4da6372434c6fb0a8f94b5d4a52ac984
 		Size: 9.4 KB (9356 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `amazoncorretto:17.0.21-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:17.0.21-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:17.0.21-al2027-headless`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:17.0.21-alpine`
 
 ```console
@@ -14054,6 +14150,22 @@ $ docker pull amazoncorretto@sha256:a48128c3d72962c429d7a4c238a76795b7732ce4a009
 		Last Modified: Mon, 16 Nov 2026 23:11:06 GMT  
 		Size: 10.8 KB (10845 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:21-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2027-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21-al2027-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:21-alpine`
 
@@ -17459,6 +17571,18 @@ $ docker pull amazoncorretto@sha256:eb4a319402928b4a2ccc321d6475ad227e6bf710996b
 		Size: 9.4 KB (9356 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `amazoncorretto:21.0.13-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.13-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:21.0.13-al2027-headless`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:21.0.13-alpine`
 
 ```console
@@ -18888,6 +19012,22 @@ $ docker pull amazoncorretto@sha256:d4ae147a94388466f17c1db734d469c49d3913361237
 		Last Modified: Mon, 16 Nov 2026 23:11:30 GMT  
 		Size: 10.8 KB (10840 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:25-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:25-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:25-al2027-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:25-al2027-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:25-alpine`
 
@@ -22019,6 +22159,18 @@ $ docker pull amazoncorretto@sha256:fd401c9422c7f2fdfe66c82682979945ffa195c2a030
 		Size: 9.4 KB (9353 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `amazoncorretto:25.0.5-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:25.0.5-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:25.0.5-al2027-headless`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:25.0.5-alpine`
 
 ```console
@@ -23448,6 +23600,22 @@ $ docker pull amazoncorretto@sha256:16309518e495093422e68037958371982a8347d07739
 		Last Modified: Mon, 16 Nov 2026 23:11:38 GMT  
 		Size: 10.8 KB (10840 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:27-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:27-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:27-al2027-headless`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:27-al2027-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:27-alpine`
 
@@ -26579,6 +26747,18 @@ $ docker pull amazoncorretto@sha256:b7bef1e6d261c18f78a3d7ecdcb1dd14579ec5db9843
 		Size: 9.4 KB (9353 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `amazoncorretto:27.0.1-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:27.0.1-al2027-headful`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:27.0.1-al2027-headless`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:27.0.1-alpine`
 
 ```console
@@ -28790,6 +28970,18 @@ $ docker pull amazoncorretto@sha256:76bd4a2991ff8b5f395a77c57b9a6f45db8661d93199
 		Last Modified: Mon, 16 Nov 2026 23:09:34 GMT  
 		Size: 9.9 KB (9879 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:8-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8-al2027-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8-al2027-jre`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8-alpine`
 
@@ -32823,6 +33015,14 @@ $ docker pull amazoncorretto@sha256:76bd4a2991ff8b5f395a77c57b9a6f45db8661d93199
 		Last Modified: Mon, 16 Nov 2026 23:09:34 GMT  
 		Size: 9.9 KB (9879 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `amazoncorretto:8u512-al2027`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8u512-al2027-jre`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8u512-alpine`
 
