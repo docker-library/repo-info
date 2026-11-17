@@ -1,10 +1,10 @@
-# `tomee:11.0.0-M1-jre25-Temurin-alpine-microprofile`
+# `tomee:11.0.0-M2-jre25-Temurin-alpine-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34829831eb6fe6feb5b1e17d9f310fdbbb34594a0a0619a7da92c3dc7d438a75`
-- Created: `2026-11-05T20:25:34.890264842Z`
-- Virtual Size: ~ 324.45 Mb  
+- Image ID: `sha256:6e1a4814778f9bfda8781d0226045e5fba47d8064f784fa1982740c60a4b781d`
+- Created: `2026-11-13T18:52:45.573333721Z`
+- Virtual Size: ~ 324.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.5+8`
-  - `TOMEE_VER=11.0.0-M1`
+  - `TOMEE_VER=11.0.0-M2`
   - `TOMEE_BUILD=microprofile`
 
 ## `apk` (`.apk`-based packages)

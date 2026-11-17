@@ -1,10 +1,10 @@
-# `tomee:11.0.0-M1-jre25-Semeru-ubuntu-microprofile`
+# `tomee:11.0.0-M2-jre25-Semeru-ubuntu-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3dd0a4f6962fd2166512b6323df4aae0e79d4e669c88a5197d59acba6d5823a`
-- Created: `2026-11-12T00:41:37.15025752Z`
-- Virtual Size: ~ 402.94 Mb  
+- Image ID: `sha256:cd56c17cd801a0d6d3462b571b7ba34a45515be4a98a2de9c6a098958e9a45db`
+- Created: `2026-11-13T18:53:12.991037374Z`
+- Virtual Size: ~ 402.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=25.0.5.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `TOMEE_VER=11.0.0-M1`
+  - `TOMEE_VER=11.0.0-M2`
   - `TOMEE_BUILD=microprofile`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -1532,9 +1532,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA256:97d81c83e9d6278aee5a923cf8cd56d5b6447d1295c4f1ef7b28c43b95740525
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA256:0b4bcc1c310064bc60c7521d9097ff0dcb80156a72aab4010c6437ee9600c57d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA256:e9eaccd861fbbe1671f408deddf02f4658ac5c98cd04a755fcd41f9860609da0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA512:956dde588cb03643cf60954c3ebc1a1303e5b56e5d86214cb27b7d3fe7f2880ac684c5c40f3c2bbc8e17877ca166d890cab14e5abc8c71cdc329a40d59aa9152
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA512:1c16d4050864511b688889b9ac3c375168111cd2d3b9b9633d594b2fc8881dca9bb4fb2f2fbbfe249a3a2d7525900e8249948bfcfe8f92ee975d2a45fb77c586
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA512:8691bcf8b37fcc6d966082180995640144033e24b0e5e41d8d02a9a3a6bb3690bf4d765cd2942f578d0f7cee4f4dd44ec87d619d146cba46f6a7ef913cfc46ec
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.30`
