@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f50e49f8129c665f6b3e7f07ac904001b62abf51189eb2cbfe6c10682a470db2`
-- Created: `2026-11-05T20:25:29.258461279Z`
-- Virtual Size: ~ 287.49 Mb  
+- Image ID: `sha256:c96a053b674c5f38a4fb0c070d554b6400f01d20b41cdcd617b154e2b65bf1cd`
+- Created: `2026-11-14T00:11:00.291572975Z`
+- Virtual Size: ~ 285.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -25,7 +25,7 @@
   - `JOOMLA_VERSION=5.4.10`
   - `JOOMLA_SHA512=31a29996d6234aa8d73384abd9ad91a1b7865cef79a17e747c389164ecf5f7c47deefcb38cd18ebf57eb409d10f531152c390caf7da50e6ad403acc32c791832`
 - Labels:
-  - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
+  - `org.opencontainers.image.authors=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1103,16 +1103,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.6-r0 description:
+libpq-18.7-r0 description:
 PostgreSQL client library
 
-libpq-18.6-r0 webpage:
+libpq-18.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.6-r0 installed size:
+libpq-18.7-r0 installed size:
 350 KiB
 
-libpq-18.6-r0 license:
+libpq-18.7-r0 license:
 PostgreSQL
 
 ```
@@ -1800,34 +1800,17 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
-
-```
-
-### `apk` package: `zstd`
-
-```console
-zstd-1.5.7-r2 description:
-Zstandard - Fast real-time compression algorithm
-
-zstd-1.5.7-r2 webpage:
-https://facebook.github.io/zstd/
-
-zstd-1.5.7-r2 installed size:
-279 KiB
-
-zstd-1.5.7-r2 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```
 
