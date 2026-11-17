@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45997f2b892980026eb31a0fb9cac78ab15c7011ce988fa70e694f5acbe55565`
-- Created: `2026-11-11T22:58:30.736147141Z`
-- Virtual Size: ~ 749.41 Mb  
+- Image ID: `sha256:173756d5890c19eb9cacff2ce9a1cbbf351cc7762bad70cfcd1640c8fab8930d`
+- Created: `2026-11-13T22:03:48.350557537Z`
+- Virtual Size: ~ 732.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,10 +21,9 @@
   - `GRADLE_VERSION=8.14.7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-04T22:05:11Z`
+  - `build-date=2026-11-12T07:09:34Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `compose-id=RHEL-9.9.0-updates-20261104.1`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
@@ -35,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-11-04T22:05:11Z`
-  - `org.opencontainers.image.revision=3592a7d8ff6441cbbd6d757af862d711d3e1dc3a`
-  - `release=1793829856`
+  - `org.opencontainers.image.created=2026-11-12T07:09:34Z`
+  - `org.opencontainers.image.revision=c500a3e71632eb6956c45968727fbf5e847c5c1d`
+  - `release=1794467051`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=3592a7d8ff6441cbbd6d757af862d711d3e1dc3a`
+  - `vcs-ref=c500a3e71632eb6956c45968727fbf5e847c5c1d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.9`
@@ -498,11 +497,16 @@ $ dnf --quiet download --source --url git-lfs-3.7.1-6.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.7.1-6.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-29.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-29.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url glib2-2.68.4-29.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-29.el9_9.1.src.rpm
+```
 
 ### `rpm` package: `glibc-2.34-290.el9_9.x86_64`
 
@@ -714,11 +718,16 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-10.el9.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-10.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.1.src.rpm
+```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
 
@@ -973,11 +982,16 @@ $ dnf --quiet download --source --url libfido2-1.13.0-2.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libfido2-1.13.0-2.el9.src.rpm
 ```
 
-### `rpm` package: `libgcc-11.5.0-15.el9.x86_64`
+### `rpm` package: `libgcc-11.5.0-17.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libgcc-11.5.0-17.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-17.el9_9.src.rpm
+```
 
 ### `rpm` package: `libgcrypt-1.10.0-13.el9_8.x86_64`
 
@@ -1221,11 +1235,16 @@ $ dnf --quiet download --source --url libsolv-0.7.24-6.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-6.el9_8.src.rpm
 ```
 
-### `rpm` package: `libstdc++-11.5.0-15.el9.x86_64`
+### `rpm` package: `libstdc++-11.5.0-17.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libstdc++-11.5.0-17.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-17.el9_9.src.rpm
+```
 
 ### `rpm` package: `libtasn1-4.16.0-10.el9_8.x86_64`
 
@@ -1260,11 +1279,16 @@ $ dnf --quiet download --source --url libunistring-0.9.10-15.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libunistring-0.9.10-15.el9.src.rpm
 ```
 
-### `rpm` package: `libusbx-1.0.30-1.el9.x86_64`
+### `rpm` package: `libusbx-1.0.30-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libusbx-1.0.30-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libusbx-1.0.30-1.el9_8.src.rpm
+```
 
 ### `rpm` package: `libutempter-1.2.1-6.el9.x86_64`
 
@@ -1310,11 +1334,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-16.el9.x86_64`
+### `rpm` package: `libxml2-2.9.13-18.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-18.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-18.el9_9.1.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -2570,11 +2599,16 @@ $ dnf --quiet download --source --url xml-common-0.6.3-58.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/s/sgml-common-0.6.3-58.el9.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-8.el9_8.1.x86_64`
+### `rpm` package: `xz-libs-5.2.5-8.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/x/xz-5.2.5-8.el9_9.1.src.rpm
+```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
 
