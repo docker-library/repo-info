@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e0238f9fec552b0a257e01fbdb87bbf6b3a1222f443fb01536b5c3abf5f471a`
-- Created: `2026-11-12T02:14:52.059753282Z`
-- Virtual Size: ~ 1.54 Gb  
+- Image ID: `sha256:b34527c3a681bdc374a9dd727e05e9096305317164a1bf8c0cffe17d52a589cb`
+- Created: `2026-11-14T00:19:14.629152719Z`
+- Virtual Size: ~ 1.57 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.123`
-  - `TOMCAT_SHA512=64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290`
+  - `TOMCAT_VERSION=9.0.124`
+  - `TOMCAT_SHA512=925e4fefe25b2ecccd032acd0b4cb1b506455037ed0f8b0e51824bed839c5e92bf5e58982b990d2fdcbc790bcda1a533db7faffb325f8a7baee939fc8ae871c1`
   - `CURL_OPTIONS=-fSL --retry 5 --retry-all-errors --retry-delay 5 --connect-timeout 30`
   - `LIBREOFFICE_VERSION=26.2.7`
   - `LIBREOFFICE_SHA256_AMD64=8cd04a88396a9230264ff784ec89cc090cbfd0960c192483ba2b80fa53939416`
@@ -955,16 +955,16 @@ $ apt-get source -qq --print-uris glib2.0=2.88.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.88.0-1ubuntu0.1.dsc' glib2.0_2.88.0-1ubuntu0.1.dsc 4936 SHA512:c195c8d769868d46f91f29e3a0af17d833be2fc2007d4bade31276bb80cb895d015dd74824c9e20b03b83a38d322472aa0f4fa4df9cc8e5851b8b04462a4158b
 ```
 
-### `dpkg` source package: `glibc=2.43-2ubuntu2.4`
+### `dpkg` source package: `glibc=2.43-2ubuntu2.7`
 
 Binary Packages:
 
-- `libc-bin=2.43-2ubuntu2.4`
-- `libc-dev-bin=2.43-2ubuntu2.4`
-- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.4`
-- `libc6:amd64=2.43-2ubuntu2.4`
-- `libc6-dev:amd64=2.43-2ubuntu2.4`
-- `locales=2.43-2ubuntu2.4`
+- `libc-bin=2.43-2ubuntu2.7`
+- `libc-dev-bin=2.43-2ubuntu2.7`
+- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.7`
+- `libc6:amd64=2.43-2ubuntu2.7`
+- `libc6-dev:amd64=2.43-2ubuntu2.7`
+- `locales=2.43-2ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -1002,9 +1002,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.debian.tar.xz' glibc_2.43-2ubuntu2.7.debian.tar.xz 543520 SHA512:f66a3c076d8ecc353d88e3911b29d93772166d568171a08fd1fecd893bed8dd502cc869f62b1d6f0f58639304d023c90bcc0119f6cdb90bcab941a2a430ba66d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.dsc' glibc_2.43-2ubuntu2.7.dsc 9078 SHA512:e07a7964e1f288ad522af37af1608abc4ff06b6d94aa075a5835317194b9f44c497361cd2ce53c1fc5eb96ddccc62747efcfba99952c6430e8cb74d182e6c0eb
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
