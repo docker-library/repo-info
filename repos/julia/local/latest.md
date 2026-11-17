@@ -1,9 +1,9 @@
-# `julia:1.13.3-trixie`
+# `julia:1.13.4-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d7045957bf0750d480a19e528f819b286c52429fc8c6bf35219df44531c78dc`
-- Created: `2026-11-05T07:16:11.106243137Z`
+- Image ID: `sha256:152a4fec5bc90da39f891e1397a4ae79958540945e944f938763d4a250f4ff94`
+- Created: `2026-11-14T00:17:10.64391621Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=64B779A570972FFF7BFC2B54EAD471E1A1F2C10A`
-  - `JULIA_VERSION=1.13.3`
+  - `JULIA_VERSION=1.13.4`
 
 ## `dpkg` (`.deb`-based packages)
 
