@@ -1,71 +1,71 @@
 ## `caddy:2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:0d7f059f9fa26a500a9db5cd97226e1f71daf0637c86687bca7e5d75f83d420d
+$ docker pull caddy@sha256:295c528352f940db117eb69cc65a3c485fc1bf041c57fab39c4f11435db1ceba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5870; amd64
+	-	windows version 10.0.20348.5873; amd64
 
-### `caddy:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5870; amd64
+### `caddy:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5873; amd64
 
 ```console
-$ docker pull caddy@sha256:5fd42cd71e14ad7f1c0a61b2c7a3e602aaed32cb969bd987fb89eec6038868d8
+$ docker pull caddy@sha256:166ed6c94d1b1204a448f1254b7d68284a000cd8aa8a1993fcae364c7e5e426b
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2265907075 bytes)**  
+-	Total Size: **2.3 GB (2265657943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8389ee6574787f14a28b71ee86e6510645c34dfff3419008a25639769facdb4d`
+-	Image ID: `sha256:55cda777b63ea1e5860711bc2993b221a9ebe2180f50d48c3cef9d0559d33891`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 09 Nov 2026 05:20:19 GMT
-RUN Install update 10.0.20348.5870
-# Wed, 11 Nov 2026 21:50:25 GMT
+# Thu, 12 Nov 2026 02:40:01 GMT
+RUN Install update 10.0.20348.5873
+# Mon, 16 Nov 2026 20:05:13 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 11 Nov 2026 22:16:02 GMT
+# Mon, 16 Nov 2026 20:12:37 GMT
 RUN mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/33ae08ff08d168572df2956ed14fbc4949880d94/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/33ae08ff08d168572df2956ed14fbc4949880d94/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 11 Nov 2026 22:16:03 GMT
+# Mon, 16 Nov 2026 20:12:37 GMT
 ENV CADDY_VERSION=v2.11.9
-# Wed, 11 Nov 2026 22:16:12 GMT
+# Mon, 16 Nov 2026 20:12:46 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.11.9/caddy_2.11.9_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('98753d5d42650383d00619ac70917a217141f9e92314185bf6c1b8b439cfcfdf8393da0ebb4675c8cb3b23d29a19aabe99dc5aca64fa1bfc3a1ba22509b06871')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 11 Nov 2026 22:16:12 GMT
+# Mon, 16 Nov 2026 20:12:47 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 11 Nov 2026 22:16:13 GMT
+# Mon, 16 Nov 2026 20:12:48 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 11 Nov 2026 22:16:13 GMT
+# Mon, 16 Nov 2026 20:12:49 GMT
 LABEL org.opencontainers.image.version=v2.11.9
-# Wed, 11 Nov 2026 22:16:14 GMT
+# Mon, 16 Nov 2026 20:12:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 11 Nov 2026 22:16:14 GMT
+# Mon, 16 Nov 2026 20:12:52 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 11 Nov 2026 22:16:15 GMT
+# Mon, 16 Nov 2026 20:12:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 11 Nov 2026 22:16:15 GMT
+# Mon, 16 Nov 2026 20:12:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 11 Nov 2026 22:16:16 GMT
+# Mon, 16 Nov 2026 20:12:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 11 Nov 2026 22:16:16 GMT
+# Mon, 16 Nov 2026 20:12:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 11 Nov 2026 22:16:17 GMT
+# Mon, 16 Nov 2026 20:12:56 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 11 Nov 2026 22:16:18 GMT
+# Mon, 16 Nov 2026 20:12:57 GMT
 EXPOSE 80
-# Wed, 11 Nov 2026 22:16:18 GMT
+# Mon, 16 Nov 2026 20:12:58 GMT
 EXPOSE 443
-# Wed, 11 Nov 2026 22:16:19 GMT
+# Mon, 16 Nov 2026 20:12:59 GMT
 EXPOSE 443/udp
-# Wed, 11 Nov 2026 22:16:19 GMT
+# Mon, 16 Nov 2026 20:13:00 GMT
 EXPOSE 2019
-# Wed, 11 Nov 2026 22:16:25 GMT
+# Mon, 16 Nov 2026 20:13:05 GMT
 RUN caddy version
-# Wed, 11 Nov 2026 22:16:26 GMT
+# Mon, 16 Nov 2026 20:13:06 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -74,87 +74,87 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fd5ae99c0fb6e4764ec90d45aff46ebe7e1ee0a121f0a99525b9520a53c5103`  
-		Last Modified: Tue, 10 Nov 2026 19:02:01 GMT  
-		Size: 757.3 MB (757328679 bytes)  
+	-	`sha256:514cbd3dfae445158cf4fa5649b0749cf2aab51510ffee9cbb4a56b3d3adc7d4`  
+		Last Modified: Fri, 13 Nov 2026 18:51:30 GMT  
+		Size: 757.1 MB (757071602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e4ef424dfaba895bf0c6c2b9e302375628dafa983e3fd708e8b0acb5b57e943`  
-		Last Modified: Wed, 11 Nov 2026 21:52:23 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0099852d900622af4dd04dfa32cd2dd40661fc78ef5da6f94c6362957da06fae`  
-		Last Modified: Wed, 11 Nov 2026 22:16:35 GMT  
-		Size: 353.2 KB (353210 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d375c71e3310760ba4fce05ee5aabc7522ff050e41f96a1987f04b0d1a3fbaed`  
-		Last Modified: Wed, 11 Nov 2026 22:16:35 GMT  
-		Size: 1.3 KB (1292 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93ef955dc576ccc97648f4193f6e7e297730486ecac445e34ecf7074b89411e0`  
-		Last Modified: Wed, 11 Nov 2026 22:16:37 GMT  
-		Size: 18.8 MB (18841013 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1b830db952bc5fff622210bc6094eb3a9a077d962a5aa5e332b73c291450671`  
-		Last Modified: Wed, 11 Nov 2026 22:16:34 GMT  
-		Size: 1.3 KB (1330 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e44f4351ba73bde9b52ec01d1238b3070d5b85af2cabaef4f6651c0a78247903`  
-		Last Modified: Wed, 11 Nov 2026 22:16:33 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f601f4d81d2b11654867ada476cd3fa23b1491a0898e6128fa003a59d8e138a9`  
-		Last Modified: Wed, 11 Nov 2026 22:16:33 GMT  
-		Size: 1.3 KB (1329 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28c0e935dc075e2937931e021aea2fedc16b32c38ef8c8568970b9a01a823d43`  
-		Last Modified: Wed, 11 Nov 2026 22:16:33 GMT  
+	-	`sha256:f12fa12ece3b64d9b69d321155154c85a858619f98380712b1629e6c1e867b94`  
+		Last Modified: Mon, 16 Nov 2026 20:05:49 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62ec4b84348990ab65c97195131b7c222b23f7cb675b9179734ac871846dadef`  
-		Last Modified: Wed, 11 Nov 2026 22:16:33 GMT  
-		Size: 1.3 KB (1325 bytes)  
+	-	`sha256:c680bdf82e29b45045c550882b9f5eb100c807a8f25077dcedc08f3a61e48eba`  
+		Last Modified: Mon, 16 Nov 2026 20:13:15 GMT  
+		Size: 359.1 KB (359080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4aafe94176356ee4fe93f10364878acc71a3ab30c9edd0c46d1069ba53379ef5`  
-		Last Modified: Wed, 11 Nov 2026 22:16:33 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:5b2ce574857c4b202385fbad17fddf7282c913a6d2fa432c81642163cb110fea`  
+		Last Modified: Mon, 16 Nov 2026 20:13:15 GMT  
+		Size: 1.3 KB (1327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2527e3cfa4146047b72bb229b44a182736523f4a5d7e97fd0b737679cb2b40e`  
-		Last Modified: Wed, 11 Nov 2026 22:16:31 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:67b6bf06cc08edf4487ceba74281a4ed007effc352675047d165951869a68fb4`  
+		Last Modified: Mon, 16 Nov 2026 20:13:17 GMT  
+		Size: 18.8 MB (18842642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07c44498a3db57a5a6183037108fabe93b3d75b3c26d848e3c13ad2f0ef1db91`  
-		Last Modified: Wed, 11 Nov 2026 22:16:31 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:888316bd0cdaaffb2e2dddcb6fb3774d4e7aef66fc21e3c5ac6d8e4a50f2d398`  
+		Last Modified: Mon, 16 Nov 2026 20:13:15 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af2d120077694dff5d51ab555e4a3a078f38ca0515bb799b94f9257131aa6f5`  
-		Last Modified: Wed, 11 Nov 2026 22:16:31 GMT  
-		Size: 1.3 KB (1292 bytes)  
+	-	`sha256:ec613fa8948a73591c298d45d8affcc197d30818e055d2604be4296cbb60a435`  
+		Last Modified: Mon, 16 Nov 2026 20:13:13 GMT  
+		Size: 1.3 KB (1315 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8baed4704fa4529d0859aa501ad31bbb6dd3c51b372e16bb028244191c63da46`  
-		Last Modified: Wed, 11 Nov 2026 22:16:31 GMT  
-		Size: 1.3 KB (1333 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9861d6a1a50f17e34a52fe98e16b577dc2b0d936612912c48ae6a37a95ec3f5`  
-		Last Modified: Wed, 11 Nov 2026 22:16:31 GMT  
-		Size: 1.3 KB (1330 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad5f980ff8a34e650664dedab84235c76035f4212bf95d2fe16d4a189044526f`  
-		Last Modified: Wed, 11 Nov 2026 22:16:30 GMT  
-		Size: 1.3 KB (1292 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdfd190876524834a02f7aca164df99e844b52e60c0c138c135d85811ae0b251`  
-		Last Modified: Wed, 11 Nov 2026 22:16:30 GMT  
+	-	`sha256:50a155e4318d518addffefbfb2d41eea1d8857c9a4065fd57019b4aab09cda70`  
+		Last Modified: Mon, 16 Nov 2026 20:13:13 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:983818d678dff02df61b5217a5dda3dbf8d74a04a14e1b3aa70ec98b1805115e`  
-		Last Modified: Wed, 11 Nov 2026 22:16:30 GMT  
+	-	`sha256:587f0f3dd2d13595e11ecde1de5aaa5890abd0f3e27c028197c307a980c6400d`  
+		Last Modified: Mon, 16 Nov 2026 20:13:13 GMT  
+		Size: 1.3 KB (1321 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19ecde4d2b565643ec31d94f54398c48b4ee1deabd25303453129137a376d378`  
+		Last Modified: Mon, 16 Nov 2026 20:13:13 GMT  
+		Size: 1.3 KB (1331 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1384eff59af439c98af5b9715a05270f5ddb979e04a0e9d76fe66cbf97982ba2`  
+		Last Modified: Mon, 16 Nov 2026 20:13:13 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:027375bb65c1e61b5cfc141760cdbf7523745e00f3a4c9ea710fab8d68b41537`  
+		Last Modified: Mon, 16 Nov 2026 20:13:12 GMT  
 		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dc7708cfd862067c016de63b0a354f06768752c76572e86f021661ce03a9564`  
-		Last Modified: Wed, 11 Nov 2026 22:16:30 GMT  
-		Size: 342.8 KB (342828 bytes)  
+	-	`sha256:da81b0e7ecf576898e1609ff531cef133693d68b042db799087928d42b80e576`  
+		Last Modified: Mon, 16 Nov 2026 20:13:12 GMT  
+		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b98f4b5f42197e27fd7a3dd1926b12d80eb1e460f37b2ffb58eab503bf772820`  
-		Last Modified: Wed, 11 Nov 2026 22:16:30 GMT  
+	-	`sha256:e867d0efaf171ef1edc631d6286a1ebde7fb448b3ab8b3c9ef621e1cf1b46ba1`  
+		Last Modified: Mon, 16 Nov 2026 20:13:12 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:efe83c4c7a12b3c517262e607b56f82e1e94548193735839fc92a107e09ed20a`  
+		Last Modified: Mon, 16 Nov 2026 20:13:12 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:61d3c734b167542d290262483717bddb4a2f3e660521bc042d4e78e40a0591be`  
+		Last Modified: Mon, 16 Nov 2026 20:13:12 GMT  
+		Size: 1.3 KB (1331 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b679082fb78383f2524e4eea571bd30f320cd0875872602083d07630578e6eeb`  
+		Last Modified: Mon, 16 Nov 2026 20:13:10 GMT  
+		Size: 1.3 KB (1329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79b46b0adcef2450096ed14a6015a8412f0001385ae47d81daac195061716fcc`  
+		Last Modified: Mon, 16 Nov 2026 20:13:10 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6842eff08b74accf943a0e642a804c832f065ba56c23a50d24afd77356e128d8`  
+		Last Modified: Mon, 16 Nov 2026 20:13:10 GMT  
+		Size: 1.3 KB (1337 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0a3b40c0697fa91bd24c00075fcb1b11c20ebd1cd6688ca5147bdc82305b0c1`  
+		Last Modified: Mon, 16 Nov 2026 20:13:10 GMT  
+		Size: 343.3 KB (343251 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf8d19e9bfb5c097c269e247d560f310d0d2476bd47d76d4ea0a5a70c57d0046`  
+		Last Modified: Mon, 16 Nov 2026 20:13:10 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
