@@ -340,9 +340,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.12
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA256:e316477a914f567eccc34d5d29785b8b0f5a10208d36bbacedcc39048ecfe024
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA256:236544ea9c0792e548e25ca3c36a564714bd5fc8b4c86069d81832e47616f0d9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA256:677a893b113648a45605f6847c6c7da7d2dcf6f550f6f35bf3d768a966a8f3f9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.debian.tar.xz' binutils_2.38-4ubuntu2.12.debian.tar.xz 333584 SHA512:5af64c9f54e69c49a0dd7b7fb4f7b720b7a456cecccb6077638d88eeb5541feef036de3c35194e1391220540267ea82471b3ef24db40cc559123abec654c2055
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.12.dsc' binutils_2.38-4ubuntu2.12.dsc 8865 SHA512:06762ac6f41bc85e93d660228b769563a44b5fbf6b9e4b8aec9b4e2246fb30554953c5605dcb93ad3c1d2da99af060036a6ae3459f21de3fa4e0308e9ab8d7dc
 ```
 
 ### `dpkg` source package: `brotli=1.0.9-2ubuntu0.1`
@@ -3506,9 +3506,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA256:97d81c83e9d6278aee5a923cf8cd56d5b6447d1295c4f1ef7b28c43b95740525
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA256:0b4bcc1c310064bc60c7521d9097ff0dcb80156a72aab4010c6437ee9600c57d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA256:e9eaccd861fbbe1671f408deddf02f4658ac5c98cd04a755fcd41f9860609da0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg.orig.tar.gz' openldap_2.5.20+dfsg.orig.tar.gz 5626931 SHA512:956dde588cb03643cf60954c3ebc1a1303e5b56e5d86214cb27b7d3fe7f2880ac684c5c40f3c2bbc8e17877ca166d890cab14e5abc8c71cdc329a40d59aa9152
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA512:1c16d4050864511b688889b9ac3c375168111cd2d3b9b9633d594b2fc8881dca9bb4fb2f2fbbfe249a3a2d7525900e8249948bfcfe8f92ee975d2a45fb77c586
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA512:8691bcf8b37fcc6d966082180995640144033e24b0e5e41d8d02a9a3a6bb3690bf4d765cd2942f578d0f7cee4f4dd44ec87d619d146cba46f6a7ef913cfc46ec
 ```
 
 ### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.18`

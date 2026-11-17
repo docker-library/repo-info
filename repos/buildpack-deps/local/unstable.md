@@ -681,20 +681,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-12
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-12.dsc' dash_0.5.12-12.dsc 1460 SHA256:589efc4d87a4ae4745c273bdb33198d7c4f28a71736a8ece81d3677cf9c6e5ce
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA256:6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-12.debian.tar.xz' dash_0.5.12-12.debian.tar.xz 47300 SHA256:a278acb5d9a1f5d9a086d36a547287cbf3105b8f33c0e62d86d264decf5ba1ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.12-12/
 
-- https://sources.debian.net/src/dash/0.5.12-12/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.12-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.12-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dav1d=1.5.4-1`
 
@@ -2700,20 +2693,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.6-2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6-2.dsc' libheif_1.23.6-2.dsc 3725 SHA256:56b216be0f4abc74bee35d49fe7726fdfd11d0fda13980fe4d93e23f2a96fc5b
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6.orig.tar.gz' libheif_1.23.6.orig.tar.gz 2373898 SHA256:4484346dc5995319dbc11e3a1c35d0a2ec46511ce370900869337fd2c7033125
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6-2.debian.tar.xz' libheif_1.23.6-2.debian.tar.xz 16008 SHA256:a3f8e60a785b4319879e35b6bddb3a464af83fb73bc1fde5f37a3c9b935a4cbc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.6-2/
 
-- https://sources.debian.net/src/libheif/1.23.6-2/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -4516,21 +4502,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.5-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.dsc' p11-kit_0.26.5-1.dsc 2541 SHA256:042a8c16de5351864938d98f73e0b7f179ec5f23d33800b312dd3117c015bd28
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz' p11-kit_0.26.5.orig.tar.xz 1082584 SHA256:f2cc09111e44bf3fea58f023180b33acea90aa82d042d6fbb623fbc5ba033bb7
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz.asc' p11-kit_0.26.5.orig.tar.xz.asc 228 SHA256:ce4e85963532772baf57dc7c63d6cc537dec2ea27a6dc49cf25028488e85c2ec
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.debian.tar.xz' p11-kit_0.26.5-1.debian.tar.xz 24628 SHA256:a40a4ea9e417f99c1c00e3f55b232a457ad81f2eb79271fdc9c4f4dd1a925e3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.5-1/
 
-- https://sources.debian.net/src/p11-kit/0.26.5-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-8`
 
@@ -4842,20 +4820,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.6-3
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.6-3.dsc' postgresql-18_18.6-3.dsc 4752 SHA256:a4254c4548ebeea683832de193460ee8a9f1271418e884803b44ded1aead1776
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.6.orig.tar.bz2' postgresql-18_18.6.orig.tar.bz2 22632314 SHA256:555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.6-3.debian.tar.xz' postgresql-18_18.6-3.debian.tar.xz 34488 SHA256:5efd00aa59930757931d13e3b2a343b5ac983fdf646a54a3b96caa30cb40512b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.6-3/
 
-- https://sources.debian.net/src/postgresql-18/18.6-3/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.7-1.1`
 

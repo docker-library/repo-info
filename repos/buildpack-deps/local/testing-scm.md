@@ -402,21 +402,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.22.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0-1.dsc' curl_8.22.0-1.dsc 3524 SHA256:b4872ef4875931c852f0a919db53481395fad36a9c39c0a20917b8abfae9f10a
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0.orig.tar.gz' curl_8.22.0.orig.tar.gz 4408679 SHA256:d54dd598bf05927a726deb38df31c6a255ba83ff1de57c5d1464dac3ed8f44a1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0.orig.tar.gz.asc' curl_8.22.0.orig.tar.gz.asc 488 SHA256:fcd906e7d7a370e5079206b365b229fffc54b8fe311f60179ff7412e2cf77d5c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.22.0-1.debian.tar.xz' curl_8.22.0-1.debian.tar.xz 65224 SHA256:5c20c1b4eab8a991d1a4a543d36c96c56291bf36337452756796765506b8821c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.22.0-1/
 
-- https://sources.debian.net/src/curl/8.22.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.22.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.22.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-12`
 
@@ -2559,21 +2551,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.42/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.42.3-1
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.3-1.dsc' perl_5.42.3-1.dsc 2372 SHA256:36535968b24b1f73ce1cf980208017dbe4a38bff5b501cd752e82139206282f7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.3.orig-regen-configure.tar.xz' perl_5.42.3.orig-regen-configure.tar.xz 421372 SHA256:5ae2aea5bc800c05324e4c9b166391b17368d10300c036fbe45f8c23a799c355
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.3.orig.tar.xz' perl_5.42.3.orig.tar.xz 14495300 SHA256:c9387e1473a1866935cb047ece7c2e0a80767a3acdecb79d4a375f8a95970ddc
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.42.3-1.debian.tar.xz' perl_5.42.3-1.debian.tar.xz 168064 SHA256:0b5692654b3efe8be7e469be851ac8abf6a425bba7c2be5a29a0d553a450956f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.42.3-1/
 
-- https://sources.debian.net/src/perl/5.42.3-1/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.42.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.42.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.3.3-3`
 
@@ -3019,20 +3003,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.18-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18-1.dsc' sysvinit_3.18-1.dsc 2379 SHA256:27d9f67e77d4edba5f7c91f44f91f9a509f74af3fdf543aded0e49a9d3dd48c0
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18.orig.tar.gz' sysvinit_3.18.orig.tar.gz 512421 SHA256:be9fdd55f2c1d1469a1f9d69e9d6abf47a2c0003df987b72605c653e92e5bb14
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.18-1.debian.tar.xz' sysvinit_3.18-1.debian.tar.xz 123048 SHA256:f393e8cc3826b52e0cd0637ff31ac332b97f660375389356491ab5612d9ed5f2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.18-1/
 
-- https://sources.debian.net/src/sysvinit/3.18-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-7`
 
