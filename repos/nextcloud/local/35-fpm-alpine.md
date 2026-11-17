@@ -1,9 +1,9 @@
-# `nextcloud:35.0.2-fpm-alpine`
+# `nextcloud:35.0.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:839541eb0f656c725af39562c04c80e918f73c847c316515b094df7c87d958b2`
-- Created: `2026-11-05T20:05:43.427292889Z`
+- Image ID: `sha256:65920441461b13b6f5f58a4645c5318dbc43bc6f59213a48adecb2fb5ee4f422`
+- Created: `2026-11-13T22:17:48.205423791Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=35.0.2`
+  - `NEXTCLOUD_VERSION=35.0.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1272,16 +1272,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.6-r0 description:
+libpq-18.7-r0 description:
 PostgreSQL client library
 
-libpq-18.6-r0 webpage:
+libpq-18.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.6-r0 installed size:
+libpq-18.7-r0 installed size:
 350 KiB
 
-libpq-18.6-r0 license:
+libpq-18.7-r0 license:
 PostgreSQL
 
 ```
@@ -2037,16 +2037,16 @@ GPL-3.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.5.0-r0 description:
+rsync-3.5.2-r1 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.5.0-r0 webpage:
+rsync-3.5.2-r1 webpage:
 https://rsync.samba.org/
 
-rsync-3.5.0-r0 installed size:
-431 KiB
+rsync-3.5.2-r1 installed size:
+444 KiB
 
-rsync-3.5.0-r0 license:
+rsync-3.5.2-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -2190,16 +2190,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
