@@ -1,10 +1,10 @@
-# `golang:tip-20261108-trixie`
+# `golang:tip-20261115-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eef5de3a167e483a36be4df9c8b73c111ff7bc023da781293099b9bda6281224`
-- Created: `2026-11-10T18:32:18.912869607Z`
-- Virtual Size: ~ 923.98 Mb  
+- Image ID: `sha256:6d04464381f37397fe5b884b5d8fde81419418676318cfbb67d1ce3341d54aa3`
+- Created: `2026-11-16T20:03:46.932501916Z`
+- Virtual Size: ~ 925.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2187,11 +2187,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.116-1`
+### `dpkg` source package: `linux=6.12.117-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.116-1`
+- `linux-libc-dev=6.12.117-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2205,17 +2205,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.116-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116-1.dsc' linux_6.12.116-1.dsc 290418 SHA256:cef4db7d11833a771e04b844931a86387d5484def787a2a8f2cc6d9050385054
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116.orig.tar.xz' linux_6.12.116.orig.tar.xz 151683860 SHA256:84f07a9eb2779253d11aefb8b6ee1cd2dd9aa80406cad111b04702ca9208d24e
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116-1.debian.tar.xz' linux_6.12.116-1.debian.tar.xz 1986608 SHA256:c2cec050ef5c92d0dbd2ed16db52a8ca00403ab4f84ccd5be02387ff169aa617
+$ apt-get source -qq --print-uris linux=6.12.117-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.dsc' linux_6.12.117-1.dsc 290418 SHA256:041c7af261546dbad4ee57ccb237f02a8697b762be34aed2e1617ed49595942a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117.orig.tar.xz' linux_6.12.117.orig.tar.xz 151928652 SHA256:77cf7a48a73aeaa7cf4f94cb6d17f8fe545bf33a5dd8a56d6428db3a54645c74
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.debian.tar.xz' linux_6.12.117-1.debian.tar.xz 1999304 SHA256:e3f3bec0723f780d9ef2a2b3215aea25d34c61cd884f1f858c9708a846c4f8f9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.116-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.116-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.116-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.117-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.117-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.117-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
