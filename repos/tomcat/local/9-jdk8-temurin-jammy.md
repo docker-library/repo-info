@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d0e4800f69a80b04b8e8400e6324d7ac636da8739138ee64c92c2e5350b67bf`
-- Created: `2026-11-14T00:05:16.637353664Z`
+- Image ID: `sha256:2a396a19c393a9cec24d0d3ff8eff671855c7a00baff60259c8cfda1b0f4f0b7`
+- Created: `2026-11-16T20:14:10.457933577Z`
 - Virtual Size: ~ 311.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -664,9 +664,8 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.3
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.15`
-- `locales=2.35-0ubuntu3.15`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -681,8 +680,9 @@ This is *usually* due to a new package version being released and the old versio
 Binary Packages:
 
 - `libc6:amd64=2.35-0ubuntu3.18`
+- `locales=2.35-0ubuntu3.18`
 
-Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
