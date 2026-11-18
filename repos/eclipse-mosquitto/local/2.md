@@ -1,18 +1,18 @@
-# `eclipse-mosquitto:2.1.2-alpine`
+# `eclipse-mosquitto:2.1.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ceaa1d541610ed761c1399787c4108d4cfa6eec6a28bdefe4d169c9d675d18ee`
-- Created: `2026-11-05T21:12:48.772566023Z`
-- Virtual Size: ~ 25.3 Mb  
+- Image ID: `sha256:7b68caf9948ed56868ab9f2f1327538f3781fd6056347a014cef9709d09fad1d`
+- Created: `2026-11-17T18:03:02.294247137Z`
+- Virtual Size: ~ 25.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VERSION=2.1.2`
-  - `DOWNLOAD_SHA256=fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02`
+  - `VERSION=2.1.4`
+  - `DOWNLOAD_SHA256=ca30b26ccd3041c0e11fc407fe4f2e62bc445e8d8dea94a083cc60c09bd5ea30`
   - `GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7`
 - Labels:
   - `org.opencontainers.image.authors=Roger Light <roger@atchoo.org>`
@@ -22,23 +22,23 @@
   - `org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto`
   - `org.opencontainers.image.title=eclipse-mosquitto`
   - `org.opencontainers.image.url=https://mosquitto.org/`
-  - `org.opencontainers.image.version=2.1.2`
+  - `org.opencontainers.image.version=2.1.4`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.7.2-r0 description:
+alpine-baselayout-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.7.2-r0 webpage:
+alpine-baselayout-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.7.2-r0 installed size:
+alpine-baselayout-3.7.2-r1 installed size:
 6552 B
 
-alpine-baselayout-3.7.2-r0 license:
+alpine-baselayout-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -46,16 +46,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.7.2-r0 description:
+alpine-baselayout-data-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.7.2-r0 webpage:
+alpine-baselayout-data-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.7.2-r0 installed size:
+alpine-baselayout-data-3.7.2-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.7.2-r0 license:
+alpine-baselayout-data-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -80,16 +80,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.8-r0 description:
+alpine-release-3.24.4-r0 description:
 Alpine release data
 
-alpine-release-3.23.8-r0 webpage:
+alpine-release-3.24.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.8-r0 installed size:
+alpine-release-3.24.4-r0 installed size:
 343 B
 
-alpine-release-3.23.8-r0 license:
+alpine-release-3.24.4-r0 license:
 MIT
 
 ```
@@ -148,16 +148,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r30 description:
+busybox-1.37.0-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r30 webpage:
+busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r30 installed size:
+busybox-1.37.0-r31 installed size:
 794 KiB
 
-busybox-1.37.0-r30 license:
+busybox-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -165,16 +165,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r30 description:
+busybox-binsh-1.37.0-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r30 webpage:
+busybox-binsh-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r30 installed size:
+busybox-binsh-1.37.0-r31 installed size:
 1 B
 
-busybox-binsh-1.37.0-r30 license:
+busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -301,16 +301,16 @@ Apache-2.0
 ### `apk` package: `libedit`
 
 ```console
-libedit-20251016.3.1-r0 description:
+libedit-20260508.3.1-r1 description:
 BSD line editing library
 
-libedit-20251016.3.1-r0 webpage:
+libedit-20260508.3.1-r1 webpage:
 https://www.thrysoee.dk/editline
 
-libedit-20251016.3.1-r0 installed size:
+libedit-20260508.3.1-r1 installed size:
 173 KiB
 
-libedit-20251016.3.1-r0 license:
+libedit-20260508.3.1-r1 license:
 BSD-3-Clause
 
 ```
@@ -318,16 +318,16 @@ BSD-3-Clause
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.5.2-r0 description:
+libffi-3.5.2-r1 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.5.2-r0 webpage:
+libffi-3.5.2-r1 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.5.2-r0 installed size:
+libffi-3.5.2-r1 installed size:
 38 KiB
 
-libffi-3.5.2-r0 license:
+libffi-3.5.2-r1 license:
 MIT
 
 ```
@@ -352,16 +352,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libmicrohttpd`
 
 ```console
-libmicrohttpd-1.0.2-r1 description:
+libmicrohttpd-1.0.5-r0 description:
 small C library that is supposed to make it easy to run an HTTP server as part of another application
 
-libmicrohttpd-1.0.2-r1 webpage:
+libmicrohttpd-1.0.5-r0 webpage:
 https://www.gnu.org/software/libmicrohttpd/
 
-libmicrohttpd-1.0.2-r1 installed size:
-161 KiB
+libmicrohttpd-1.0.5-r0 installed size:
+165 KiB
 
-libmicrohttpd-1.0.2-r1 license:
+libmicrohttpd-1.0.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -369,16 +369,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.5_p20251123-r0 description:
+libncursesw-6.6_p20260516-r0 description:
 Console display library (libncursesw)
 
-libncursesw-6.5_p20251123-r0 webpage:
+libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.5_p20251123-r0 installed size:
+libncursesw-6.6_p20260516-r0 installed size:
 334 KiB
 
-libncursesw-6.5_p20251123-r0 license:
+libncursesw-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -420,16 +420,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libunistring`
 
 ```console
-libunistring-1.4.1-r0 description:
+libunistring-1.4.2-r0 description:
 Library for manipulating Unicode strings and C strings
 
-libunistring-1.4.1-r0 webpage:
+libunistring-1.4.2-r0 webpage:
 https://www.gnu.org/software/libunistring/
 
-libunistring-1.4.1-r0 installed size:
+libunistring-1.4.2-r0 installed size:
 1877 KiB
 
-libunistring-1.4.1-r0 license:
+libunistring-1.4.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
@@ -437,16 +437,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r24 description:
+musl-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r24 webpage:
+musl-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r24 installed size:
-650 KiB
+musl-1.2.6-r3 installed size:
+654 KiB
 
-musl-1.2.5-r24 license:
+musl-1.2.6-r3 license:
 MIT
 
 ```
@@ -454,16 +454,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r24 description:
+musl-utils-1.2.6-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r24 webpage:
+musl-utils-1.2.6-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r24 installed size:
+musl-utils-1.2.6-r3 installed size:
 54 KiB
 
-musl-utils-1.2.5-r24 license:
+musl-utils-1.2.6-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -471,16 +471,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.5_p20251123-r0 description:
+ncurses-terminfo-base-6.6_p20260516-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.5_p20251123-r0 webpage:
+ncurses-terminfo-base-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.5_p20251123-r0 installed size:
-98 KiB
+ncurses-terminfo-base-6.6_p20260516-r0 installed size:
+100 KiB
 
-ncurses-terminfo-base-6.5_p20251123-r0 license:
+ncurses-terminfo-base-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -522,16 +522,16 @@ BSD-3-Clause
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.8-r2 description:
+scanelf-1.3.9-r1 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.8-r2 webpage:
+scanelf-1.3.9-r1 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.8-r2 installed size:
+scanelf-1.3.9-r1 installed size:
 65 KiB
 
-scanelf-1.3.8-r2 license:
+scanelf-1.3.9-r1 license:
 GPL-2.0-only
 
 ```
@@ -556,16 +556,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r30 description:
+ssl_client-1.37.0-r31 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r30 webpage:
+ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r30 installed size:
+ssl_client-1.37.0-r31 installed size:
 14 KiB
 
-ssl_client-1.37.0-r30 license:
+ssl_client-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -590,16 +590,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
@@ -614,7 +614,7 @@ zstd-libs-1.5.7-r2 webpage:
 https://facebook.github.io/zstd/
 
 zstd-libs-1.5.7-r2 installed size:
-693 KiB
+697 KiB
 
 zstd-libs-1.5.7-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
