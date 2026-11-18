@@ -1,7 +1,7 @@
 ## `espocrm:fpm`
 
 ```console
-$ docker pull espocrm@sha256:3e67ac43bea6afd8e5b345c5cb4c596d49861706f90874d567fd44c8185bb010
+$ docker pull espocrm@sha256:10b682f553a78af06c0256685fd91f6ecb33d3d6757a05d7b3dfa4908cfcfeab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull espocrm@sha256:3e67ac43bea6afd8e5b345c5cb4c596d49861706f90874d567f
 ### `espocrm:fpm` - linux; amd64
 
 ```console
-$ docker pull espocrm@sha256:2170708921cde2773e215d148629fdf1f53ac06053b82aff474ac186dfc90a0e
+$ docker pull espocrm@sha256:bdcb8650383afd5ecc2665a58ed54f21f72b625fe7beff7ad3c416329c77b3e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.8 MB (255795323 bytes)**  
+-	Total Size: **255.8 MB (255797458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90b6a961e90080f8fa6de1437e10ff055a3dd009237512e601177ec7ec5f7374`
+-	Image ID: `sha256:fde7400e1b656e9e87e5863a6c51dd93d6b95d2f708086b06e6a9dcb7d2e0c8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -81,29 +81,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 05 Nov 2026 07:24:49 GMT
 CMD ["php-fpm"]
-# Mon, 16 Nov 2026 20:00:48 GMT
+# Tue, 17 Nov 2026 20:06:27 GMT
 LABEL org.opencontainers.image.source=https://github.com/espocrm/espocrm
-# Mon, 16 Nov 2026 20:00:48 GMT
+# Tue, 17 Nov 2026 20:06:27 GMT
 LABEL org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.
-# Mon, 16 Nov 2026 20:00:48 GMT
+# Tue, 17 Nov 2026 20:06:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends         unzip         libldap-common 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 20:01:48 GMT
+# Tue, 17 Nov 2026 20:07:22 GMT
 RUN set -eux;         aptMarkList="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libpq-dev         libpng-dev         libjpeg-dev         libwebp-dev         libfreetype6-dev         libzip-dev         libxml2-dev         libldap2-dev         libzmq5-dev         zlib1g-dev     ;             cd /usr;         curl -fSL https://github.com/zeromq/php-zmq/archive/616b6c64ffd3866ed038615494306dd464ab53fc.tar.gz -o php-zmq.tar.gz;         tar -zxf php-zmq.tar.gz;         cd php-zmq*;         phpize && ./configure;         make;         make install;         cd .. && rm -rf php-zmq*;         pecl install         ev         redis     ;         docker-php-ext-configure ldap         --with-libdir="lib/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"     ;     docker-php-ext-configure gd         --with-freetype         --with-jpeg=/usr         --with-webp     ;         docker-php-ext-install -j$(nproc)         gd         pdo_pgsql         pdo_mysql         zip         ldap         exif         pcntl         bcmath     ;     docker-php-ext-enable         zmq         ev         redis     ;         rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null; 	apt-mark manual $aptMarkList; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 20:01:49 GMT
+# Tue, 17 Nov 2026 20:07:22 GMT
 RUN {     echo 'expose_php = Off';     echo 'error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED';     echo 'display_errors = Off';     echo 'display_startup_errors = Off';     echo 'log_errors = On';     echo 'memory_limit=256M';     echo 'max_execution_time=180';     echo 'max_input_time=180';     echo 'post_max_size=50M';     echo 'upload_max_filesize=50M';     echo 'date.timezone=UTC'; } > ${PHP_INI_DIR}/conf.d/espocrm.ini # buildkit
-# Mon, 16 Nov 2026 20:01:49 GMT
-ENV ESPOCRM_VERSION=10.1.2
-# Mon, 16 Nov 2026 20:01:49 GMT
-ENV ESPOCRM_SHA256=1dd6a9dc3fcd1385ee124daadd961f6e2b97700cf21432a44ed223f19a90e793
-# Mon, 16 Nov 2026 20:01:49 GMT
+# Tue, 17 Nov 2026 20:07:22 GMT
+ENV ESPOCRM_VERSION=10.1.3
+# Tue, 17 Nov 2026 20:07:22 GMT
+ENV ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad
+# Tue, 17 Nov 2026 20:07:23 GMT
 WORKDIR /var/www/html
-# Mon, 16 Nov 2026 20:01:56 GMT
-RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.2.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
-# Mon, 16 Nov 2026 20:01:56 GMT
+# Tue, 17 Nov 2026 20:07:30 GMT
+RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.3.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
+# Tue, 17 Nov 2026 20:07:30 GMT
 COPY ./docker-*.sh ./entrypoint-utils.sh /usr/local/bin/ # buildkit
-# Mon, 16 Nov 2026 20:01:56 GMT
+# Tue, 17 Nov 2026 20:07:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Nov 2026 20:01:56 GMT
+# Tue, 17 Nov 2026 20:07:30 GMT
 CMD ["php-fpm"]
 ```
 
@@ -156,61 +156,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 05 Nov 2026 07:25:12 GMT  
 		Size: 9.3 KB (9271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:875d42c6eaa4a3f6c7fc1210d079479fdf45d65b6376478b91ef47d3625bfe86`  
-		Last Modified: Mon, 16 Nov 2026 20:02:07 GMT  
-		Size: 264.9 KB (264932 bytes)  
+	-	`sha256:2c4734140e35df91dd4ba8e3ac1de4b31dfd5bc3673b21691df119635f55c497`  
+		Last Modified: Tue, 17 Nov 2026 20:07:40 GMT  
+		Size: 264.9 KB (264940 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15fac7e73386d49b110f822b6f0e82d1f96579a1aa703bd056c7bcf470b293dc`  
-		Last Modified: Mon, 16 Nov 2026 20:02:07 GMT  
-		Size: 4.2 MB (4202298 bytes)  
+	-	`sha256:4d15a3bc46be9423bc9543792aa1bc0f00a07b50f8b224018f0444585077aec7`  
+		Last Modified: Tue, 17 Nov 2026 20:07:40 GMT  
+		Size: 4.2 MB (4202326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5441e6e5e18dd4a0af189ddf50d9f03f8e409d9a8ab17bf6548737e83e31de0d`  
-		Last Modified: Mon, 16 Nov 2026 20:02:07 GMT  
-		Size: 393.0 B  
+	-	`sha256:07034b9949ebd422426fb004fa8ddd19f05ab71f0d94a9bf1f40bae83964f77b`  
+		Last Modified: Tue, 17 Nov 2026 20:07:40 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:310a483c86e7a8c56b1281b73d735bc5c04c857dd399b1e262021708a9675d0b`  
-		Last Modified: Mon, 16 Nov 2026 20:02:09 GMT  
-		Size: 75.7 MB (75734542 bytes)  
+	-	`sha256:95d8547fed48abd2c7116cb7b815b7d15e710d331e5c40e6c6751c18c70e1afe`  
+		Last Modified: Tue, 17 Nov 2026 20:07:42 GMT  
+		Size: 75.7 MB (75736642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2dca5b5df0af8cf97c91f9f2a3caadf5b9e0a61d482975f886ad419947b421c`  
-		Last Modified: Mon, 16 Nov 2026 20:02:08 GMT  
+	-	`sha256:423c91de24620aed48fad0a4ac9745b354f86a3830df4c6008636ba064d40c96`  
+		Last Modified: Tue, 17 Nov 2026 20:07:41 GMT  
 		Size: 3.4 KB (3409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `espocrm:fpm` - unknown; unknown
 
 ```console
-$ docker pull espocrm@sha256:38f4c796824d086f61981300fac055c61e073807454286bac15d8a0610224048
+$ docker pull espocrm@sha256:4df71d300d897282b871f580eba629484493f990dbb733d86aeb4eda47ba3dc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **41.6 KB (41640 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5779a82c2efb538ccbd7fcfd1045b0d879334b9c3390be9283d06a843d42d3b7`
+-	Image ID: `sha256:afa28061b56975f1c0d48cd26c6e839e5c2400c5c1b7e21b856fc4f1eade6f2c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:abdd69ff9e1ee3eff91dc793897ea8b45dcc0d3e8a42e1709a65c7f889915ddc`  
-		Last Modified: Mon, 16 Nov 2026 20:02:06 GMT  
+	-	`sha256:1e1915b0d1e30ba2a3c11f5abc7acc8137186ec400db91f25dfc5b493f309a60`  
+		Last Modified: Tue, 17 Nov 2026 20:07:40 GMT  
 		Size: 41.6 KB (41640 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `espocrm:fpm` - linux; arm variant v5
 
 ```console
-$ docker pull espocrm@sha256:3fef49ccf4ac48741947121cc0cac472c3ca393fe87650d730afd21d27381961
+$ docker pull espocrm@sha256:ca0724aa09266ede74a2adef40d253dbdf4fcea2879f3faae6b36995a89309e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.2 MB (229178095 bytes)**  
+-	Total Size: **229.2 MB (229180083 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd4763a37062e54e2e8239faac773a34be34eb407c7d8454a39acda6111233ef`
+-	Image ID: `sha256:9212aa163071c5d3a6cadb7c6cffff884dca9ec00205e58cef2339a8525c21e6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -265,29 +265,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 05 Nov 2026 07:24:42 GMT
 CMD ["php-fpm"]
-# Mon, 16 Nov 2026 19:49:24 GMT
+# Tue, 17 Nov 2026 20:08:11 GMT
 LABEL org.opencontainers.image.source=https://github.com/espocrm/espocrm
-# Mon, 16 Nov 2026 19:49:24 GMT
+# Tue, 17 Nov 2026 20:08:11 GMT
 LABEL org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.
-# Mon, 16 Nov 2026 19:49:24 GMT
+# Tue, 17 Nov 2026 20:08:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends         unzip         libldap-common 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:50:59 GMT
+# Tue, 17 Nov 2026 20:09:48 GMT
 RUN set -eux;         aptMarkList="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libpq-dev         libpng-dev         libjpeg-dev         libwebp-dev         libfreetype6-dev         libzip-dev         libxml2-dev         libldap2-dev         libzmq5-dev         zlib1g-dev     ;             cd /usr;         curl -fSL https://github.com/zeromq/php-zmq/archive/616b6c64ffd3866ed038615494306dd464ab53fc.tar.gz -o php-zmq.tar.gz;         tar -zxf php-zmq.tar.gz;         cd php-zmq*;         phpize && ./configure;         make;         make install;         cd .. && rm -rf php-zmq*;         pecl install         ev         redis     ;         docker-php-ext-configure ldap         --with-libdir="lib/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"     ;     docker-php-ext-configure gd         --with-freetype         --with-jpeg=/usr         --with-webp     ;         docker-php-ext-install -j$(nproc)         gd         pdo_pgsql         pdo_mysql         zip         ldap         exif         pcntl         bcmath     ;     docker-php-ext-enable         zmq         ev         redis     ;         rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null; 	apt-mark manual $aptMarkList; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:50:59 GMT
+# Tue, 17 Nov 2026 20:09:49 GMT
 RUN {     echo 'expose_php = Off';     echo 'error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED';     echo 'display_errors = Off';     echo 'display_startup_errors = Off';     echo 'log_errors = On';     echo 'memory_limit=256M';     echo 'max_execution_time=180';     echo 'max_input_time=180';     echo 'post_max_size=50M';     echo 'upload_max_filesize=50M';     echo 'date.timezone=UTC'; } > ${PHP_INI_DIR}/conf.d/espocrm.ini # buildkit
-# Mon, 16 Nov 2026 19:50:59 GMT
-ENV ESPOCRM_VERSION=10.1.2
-# Mon, 16 Nov 2026 19:50:59 GMT
-ENV ESPOCRM_SHA256=1dd6a9dc3fcd1385ee124daadd961f6e2b97700cf21432a44ed223f19a90e793
-# Mon, 16 Nov 2026 19:50:59 GMT
+# Tue, 17 Nov 2026 20:09:49 GMT
+ENV ESPOCRM_VERSION=10.1.3
+# Tue, 17 Nov 2026 20:09:49 GMT
+ENV ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad
+# Tue, 17 Nov 2026 20:09:49 GMT
 WORKDIR /var/www/html
-# Mon, 16 Nov 2026 19:51:08 GMT
-RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.2.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
-# Mon, 16 Nov 2026 19:51:08 GMT
+# Tue, 17 Nov 2026 20:09:57 GMT
+RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.3.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
+# Tue, 17 Nov 2026 20:09:57 GMT
 COPY ./docker-*.sh ./entrypoint-utils.sh /usr/local/bin/ # buildkit
-# Mon, 16 Nov 2026 19:51:08 GMT
+# Tue, 17 Nov 2026 20:09:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Nov 2026 19:51:08 GMT
+# Tue, 17 Nov 2026 20:09:57 GMT
 CMD ["php-fpm"]
 ```
 
@@ -340,61 +340,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 05 Nov 2026 07:24:54 GMT  
 		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00b2622289a54313a195aa4a56233cba986056b1870c18516cccf7b21f50ba69`  
-		Last Modified: Mon, 16 Nov 2026 19:51:20 GMT  
-		Size: 256.4 KB (256425 bytes)  
+	-	`sha256:e4830e8da20179bd5fb55583d098decfdcdede6294edcdd6ea01c04b38530675`  
+		Last Modified: Tue, 17 Nov 2026 20:10:09 GMT  
+		Size: 256.4 KB (256430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcaf2ba1c3bdc2086b217d9534124e32174f7c4444a74fbebd86c17e6ae1e959`  
-		Last Modified: Mon, 16 Nov 2026 19:51:20 GMT  
-		Size: 3.9 MB (3872138 bytes)  
+	-	`sha256:a493f774b4d3b6ab76b78449e061b7a2126d40564c597011d4523674da4f8360`  
+		Last Modified: Tue, 17 Nov 2026 20:10:09 GMT  
+		Size: 3.9 MB (3872021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6c2c47eae35e3362fa6df69d6b9fa86a73e24b8578b0931fcf194b3460e6d5d`  
-		Last Modified: Mon, 16 Nov 2026 19:51:20 GMT  
-		Size: 392.0 B  
+	-	`sha256:70ed7ee2100a3bd601b4cb8e8bb5e88f8607d61c722697b2763fb7c036a2e634`  
+		Last Modified: Tue, 17 Nov 2026 20:10:09 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb3937455bf2a5f406f7caf90c5d1f25e5490ba08c97bc080dc98d20565cde7f`  
-		Last Modified: Mon, 16 Nov 2026 19:51:22 GMT  
-		Size: 75.7 MB (75734530 bytes)  
+	-	`sha256:e084c4a2bcae98f675f156caca0a2bc4cb974a4978a6787ae22be6ff77dff1e1`  
+		Last Modified: Tue, 17 Nov 2026 20:10:11 GMT  
+		Size: 75.7 MB (75736630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b698fbd322b3f99ac0ab71ec0cdcf803100508626dbab828402375ba6ec66224`  
-		Last Modified: Mon, 16 Nov 2026 19:51:21 GMT  
-		Size: 3.4 KB (3406 bytes)  
+	-	`sha256:9d2f09c836d4807e0aae65640aa0621105ecfd26f415c3bc04429412be56cb4a`  
+		Last Modified: Tue, 17 Nov 2026 20:10:10 GMT  
+		Size: 3.4 KB (3407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `espocrm:fpm` - unknown; unknown
 
 ```console
-$ docker pull espocrm@sha256:068d8982464bf38a882d746f7dc6d0ffd0440230ec8fdef5f71c1593ca75e750
+$ docker pull espocrm@sha256:a91f0250d87d30a194e8a042c9318e77069c4cbb917adb40ecffc15b373307bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **41.8 KB (41784 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1b41320a44752cfa2d1d6bcbb05b28a716aa0f20f37d6140ca1bf210ab7c9fa`
+-	Image ID: `sha256:ed9cd59533e9421682b53211825a8f291ace3b4e0b6f7df4de7b193f96619498`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f3890083dee4832349ef7700794faa57db07414e4597fbf137691b7053710060`  
-		Last Modified: Mon, 16 Nov 2026 19:51:20 GMT  
+	-	`sha256:a25c5b941dc9959b8f5e5b7889b30ac76ccfd211ff2f9179c3c3c037f963c2ce`  
+		Last Modified: Tue, 17 Nov 2026 20:10:08 GMT  
 		Size: 41.8 KB (41784 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `espocrm:fpm` - linux; arm variant v7
 
 ```console
-$ docker pull espocrm@sha256:21208a171e26e2019ca17be56ec668531335e99d47356c06238837fe9f8a09c6
+$ docker pull espocrm@sha256:c35127d738dfe3e63bd938e4b94b4f9b2091b2bdd1b921dad961d2bb91fce7a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **217.9 MB (217901605 bytes)**  
+-	Total Size: **217.9 MB (217903698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1770259a580e799641bf0ba5186ac74087e942efd3b11cba463ed3bf7c6a1a69`
+-	Image ID: `sha256:0943745458899c7c7998eb3654c3f4119b273cfd8c15ceeb63f3e7f2ba69a89b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -449,29 +449,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 05 Nov 2026 07:38:23 GMT
 CMD ["php-fpm"]
-# Mon, 16 Nov 2026 19:49:33 GMT
+# Tue, 17 Nov 2026 20:05:31 GMT
 LABEL org.opencontainers.image.source=https://github.com/espocrm/espocrm
-# Mon, 16 Nov 2026 19:49:33 GMT
+# Tue, 17 Nov 2026 20:05:31 GMT
 LABEL org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.
-# Mon, 16 Nov 2026 19:49:33 GMT
+# Tue, 17 Nov 2026 20:05:31 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends         unzip         libldap-common 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:50:58 GMT
+# Tue, 17 Nov 2026 20:06:58 GMT
 RUN set -eux;         aptMarkList="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libpq-dev         libpng-dev         libjpeg-dev         libwebp-dev         libfreetype6-dev         libzip-dev         libxml2-dev         libldap2-dev         libzmq5-dev         zlib1g-dev     ;             cd /usr;         curl -fSL https://github.com/zeromq/php-zmq/archive/616b6c64ffd3866ed038615494306dd464ab53fc.tar.gz -o php-zmq.tar.gz;         tar -zxf php-zmq.tar.gz;         cd php-zmq*;         phpize && ./configure;         make;         make install;         cd .. && rm -rf php-zmq*;         pecl install         ev         redis     ;         docker-php-ext-configure ldap         --with-libdir="lib/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"     ;     docker-php-ext-configure gd         --with-freetype         --with-jpeg=/usr         --with-webp     ;         docker-php-ext-install -j$(nproc)         gd         pdo_pgsql         pdo_mysql         zip         ldap         exif         pcntl         bcmath     ;     docker-php-ext-enable         zmq         ev         redis     ;         rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null; 	apt-mark manual $aptMarkList; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:50:58 GMT
+# Tue, 17 Nov 2026 20:06:58 GMT
 RUN {     echo 'expose_php = Off';     echo 'error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED';     echo 'display_errors = Off';     echo 'display_startup_errors = Off';     echo 'log_errors = On';     echo 'memory_limit=256M';     echo 'max_execution_time=180';     echo 'max_input_time=180';     echo 'post_max_size=50M';     echo 'upload_max_filesize=50M';     echo 'date.timezone=UTC'; } > ${PHP_INI_DIR}/conf.d/espocrm.ini # buildkit
-# Mon, 16 Nov 2026 19:50:58 GMT
-ENV ESPOCRM_VERSION=10.1.2
-# Mon, 16 Nov 2026 19:50:58 GMT
-ENV ESPOCRM_SHA256=1dd6a9dc3fcd1385ee124daadd961f6e2b97700cf21432a44ed223f19a90e793
-# Mon, 16 Nov 2026 19:50:58 GMT
+# Tue, 17 Nov 2026 20:06:58 GMT
+ENV ESPOCRM_VERSION=10.1.3
+# Tue, 17 Nov 2026 20:06:58 GMT
+ENV ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad
+# Tue, 17 Nov 2026 20:06:58 GMT
 WORKDIR /var/www/html
-# Mon, 16 Nov 2026 19:51:07 GMT
-RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.2.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
-# Mon, 16 Nov 2026 19:51:07 GMT
+# Tue, 17 Nov 2026 20:07:06 GMT
+RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.3.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
+# Tue, 17 Nov 2026 20:07:07 GMT
 COPY ./docker-*.sh ./entrypoint-utils.sh /usr/local/bin/ # buildkit
-# Mon, 16 Nov 2026 19:51:07 GMT
+# Tue, 17 Nov 2026 20:07:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Nov 2026 19:51:07 GMT
+# Tue, 17 Nov 2026 20:07:07 GMT
 CMD ["php-fpm"]
 ```
 
@@ -524,61 +524,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 05 Nov 2026 07:38:42 GMT  
 		Size: 9.3 KB (9269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63ead93defc348070835e9a2b2f76ae7e578a53791bfd19b7b63a647a0820aef`  
-		Last Modified: Mon, 16 Nov 2026 19:51:17 GMT  
+	-	`sha256:62302481d32bbf3fb7c7466667cf970606c4d1232e6c4b6c57a27f9052619463`  
+		Last Modified: Tue, 17 Nov 2026 20:07:17 GMT  
 		Size: 243.6 KB (243627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:258299971476cd025d780fafb604c3b130dc3f7ef8dab6b8cd5ae3be42c7ea99`  
-		Last Modified: Mon, 16 Nov 2026 19:51:18 GMT  
-		Size: 3.7 MB (3665320 bytes)  
+	-	`sha256:b374850beb47be4da2cfe09dda2d783adabec4d95491f79933d7b07750ccdcae`  
+		Last Modified: Tue, 17 Nov 2026 20:07:18 GMT  
+		Size: 3.7 MB (3665296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7ae336efe764ed7daa41c0ea6cddbb093304d85ce243ce3b223a767b70ff7a4`  
-		Last Modified: Mon, 16 Nov 2026 19:51:17 GMT  
+	-	`sha256:4117c6d621f8d2293f111a11a20d3906d07e0640e00c837982fe9332c8ab39a4`  
+		Last Modified: Tue, 17 Nov 2026 20:07:18 GMT  
 		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a74e0760c59282c8b8af9f546efd0a9f79e59a5346711eb6d12a457b40964b5a`  
-		Last Modified: Mon, 16 Nov 2026 19:51:19 GMT  
-		Size: 75.7 MB (75734545 bytes)  
+	-	`sha256:2e8ef8e6c5fb972f842bd6a3630bbcd32848ee5d95964ae2b7b07b04ac6b07f5`  
+		Last Modified: Tue, 17 Nov 2026 20:07:20 GMT  
+		Size: 75.7 MB (75736662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fa1adc6f0205edfdbfd98db8658eb7d3904ee648aea08b9211af4c326716735`  
-		Last Modified: Mon, 16 Nov 2026 19:51:19 GMT  
+	-	`sha256:a3b09addc68405d717d4ddba172da306fc092a16306a827564e8c7f30fbcdd3e`  
+		Last Modified: Tue, 17 Nov 2026 20:07:19 GMT  
 		Size: 3.4 KB (3408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `espocrm:fpm` - unknown; unknown
 
 ```console
-$ docker pull espocrm@sha256:b57e6c8002550c142a26fe280badb29d3680f364e8322b6d2ed74763d113dc42
+$ docker pull espocrm@sha256:af49debe7c8381c71a441742f3d3949821310925fa7006beb2a82c5d02e1e313
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **41.8 KB (41784 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60db1bde650af8045f5cd4e338f94de653cd39a86a94328173a035c61f52775`
+-	Image ID: `sha256:91ce366247e2ebd3e70b511fc8eea28c6b653e3c21e7ad782405ad74ff2118bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a35939379d795284b03fd83f60812349a309294285bf17bfca9a0f1a60bbfbc`  
-		Last Modified: Mon, 16 Nov 2026 19:51:17 GMT  
+	-	`sha256:f8df1fc28df78bba3274da2ed0efa8ed5c6b260408f80f46eda634e42e32a816`  
+		Last Modified: Tue, 17 Nov 2026 20:07:17 GMT  
 		Size: 41.8 KB (41784 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `espocrm:fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull espocrm@sha256:676e810ea36b24c6f154f649cb48fc44c1e0c40e5bd3dca7621a3fd2030aba15
+$ docker pull espocrm@sha256:835374b0b1d983a42892a3c915e37f56a6bb498167223c8435d850f2fdcc5c75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.1 MB (248061000 bytes)**  
+-	Total Size: **248.1 MB (248063134 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b535e192672f697446a462e4b73904358075b114555d0cad8adc2b6e33f7817e`
+-	Image ID: `sha256:52d1efe899ea1c70fab7368fc97e529cd56e9b8c15018c224ecf3cefbaf0d549`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -633,29 +633,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 05 Nov 2026 07:25:12 GMT
 CMD ["php-fpm"]
-# Mon, 16 Nov 2026 19:58:10 GMT
+# Tue, 17 Nov 2026 20:05:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/espocrm/espocrm
-# Mon, 16 Nov 2026 19:58:10 GMT
+# Tue, 17 Nov 2026 20:05:44 GMT
 LABEL org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.
-# Mon, 16 Nov 2026 19:58:10 GMT
+# Tue, 17 Nov 2026 20:05:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends         unzip         libldap-common 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:59:30 GMT
+# Tue, 17 Nov 2026 20:07:06 GMT
 RUN set -eux;         aptMarkList="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libpq-dev         libpng-dev         libjpeg-dev         libwebp-dev         libfreetype6-dev         libzip-dev         libxml2-dev         libldap2-dev         libzmq5-dev         zlib1g-dev     ;             cd /usr;         curl -fSL https://github.com/zeromq/php-zmq/archive/616b6c64ffd3866ed038615494306dd464ab53fc.tar.gz -o php-zmq.tar.gz;         tar -zxf php-zmq.tar.gz;         cd php-zmq*;         phpize && ./configure;         make;         make install;         cd .. && rm -rf php-zmq*;         pecl install         ev         redis     ;         docker-php-ext-configure ldap         --with-libdir="lib/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"     ;     docker-php-ext-configure gd         --with-freetype         --with-jpeg=/usr         --with-webp     ;         docker-php-ext-install -j$(nproc)         gd         pdo_pgsql         pdo_mysql         zip         ldap         exif         pcntl         bcmath     ;     docker-php-ext-enable         zmq         ev         redis     ;         rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null; 	apt-mark manual $aptMarkList; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:59:30 GMT
+# Tue, 17 Nov 2026 20:07:06 GMT
 RUN {     echo 'expose_php = Off';     echo 'error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED';     echo 'display_errors = Off';     echo 'display_startup_errors = Off';     echo 'log_errors = On';     echo 'memory_limit=256M';     echo 'max_execution_time=180';     echo 'max_input_time=180';     echo 'post_max_size=50M';     echo 'upload_max_filesize=50M';     echo 'date.timezone=UTC'; } > ${PHP_INI_DIR}/conf.d/espocrm.ini # buildkit
-# Mon, 16 Nov 2026 19:59:30 GMT
-ENV ESPOCRM_VERSION=10.1.2
-# Mon, 16 Nov 2026 19:59:30 GMT
-ENV ESPOCRM_SHA256=1dd6a9dc3fcd1385ee124daadd961f6e2b97700cf21432a44ed223f19a90e793
-# Mon, 16 Nov 2026 19:59:30 GMT
+# Tue, 17 Nov 2026 20:07:06 GMT
+ENV ESPOCRM_VERSION=10.1.3
+# Tue, 17 Nov 2026 20:07:06 GMT
+ENV ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad
+# Tue, 17 Nov 2026 20:07:06 GMT
 WORKDIR /var/www/html
-# Mon, 16 Nov 2026 19:59:39 GMT
-RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.2.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
-# Mon, 16 Nov 2026 19:59:39 GMT
+# Tue, 17 Nov 2026 20:07:14 GMT
+RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.3.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
+# Tue, 17 Nov 2026 20:07:14 GMT
 COPY ./docker-*.sh ./entrypoint-utils.sh /usr/local/bin/ # buildkit
-# Mon, 16 Nov 2026 19:59:39 GMT
+# Tue, 17 Nov 2026 20:07:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Nov 2026 19:59:39 GMT
+# Tue, 17 Nov 2026 20:07:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -708,61 +708,61 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 05 Nov 2026 07:25:24 GMT  
 		Size: 9.3 KB (9270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4ca5c2acb95305ef9dcaccd020edef482b2a31bae40e318767bc8e44b0ccc64`  
-		Last Modified: Mon, 16 Nov 2026 19:59:50 GMT  
-		Size: 260.8 KB (260830 bytes)  
+	-	`sha256:24c5590a535d331dbaa6ea51d9b624a8ccae92c410c8eccdaa67f6772deb6c71`  
+		Last Modified: Tue, 17 Nov 2026 20:07:26 GMT  
+		Size: 260.8 KB (260827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:699adec74c26a8ea4071ba615a092bcd34e732e6b12d168ed6b28191354313b4`  
-		Last Modified: Mon, 16 Nov 2026 19:59:50 GMT  
-		Size: 4.1 MB (4112778 bytes)  
+	-	`sha256:2e8a3572987bc9eab45a686c33b21b1032a6e50d0b5d9f2d331981938b11bca2`  
+		Last Modified: Tue, 17 Nov 2026 20:07:26 GMT  
+		Size: 4.1 MB (4112790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80f923b991944df062bb1d9ffee3084c0fdbf535615c9e2f5c48e0f819eeeb0c`  
-		Last Modified: Mon, 16 Nov 2026 19:59:50 GMT  
-		Size: 391.0 B  
+	-	`sha256:dfc43ca9a7a3f7a0f46624bb5908caf666addab8d9943b6f42a6472659f9c05d`  
+		Last Modified: Tue, 17 Nov 2026 20:07:25 GMT  
+		Size: 389.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a19c9b9fdbfa0e6fcc2230c4c5214789994aea674f2cbc63ac691e0ad8373a16`  
-		Last Modified: Mon, 16 Nov 2026 19:59:52 GMT  
-		Size: 75.7 MB (75734540 bytes)  
+	-	`sha256:0eef9fb34e186ce01771aa7ab7fbc841f8f149074f7bcb860d5a728378a9fe1d`  
+		Last Modified: Tue, 17 Nov 2026 20:07:28 GMT  
+		Size: 75.7 MB (75736666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63a532303055ce304a92075ed89ca0e27ce036a158a251b42eab37d3ba4cd0e`  
-		Last Modified: Mon, 16 Nov 2026 19:59:51 GMT  
-		Size: 3.4 KB (3410 bytes)  
+	-	`sha256:4bfefe3e9e89f890155ad09340fe31f92c6219b42c1f36f8efa774086d38f287`  
+		Last Modified: Tue, 17 Nov 2026 20:07:27 GMT  
+		Size: 3.4 KB (3411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `espocrm:fpm` - unknown; unknown
 
 ```console
-$ docker pull espocrm@sha256:fb51bfd5ea3f5374c929bfb8f4b1c3a8a1964c6751ae7fc24fa74c6be0af7e39
+$ docker pull espocrm@sha256:2e36ab5ac5468435d6c9ea5251d390155caa342d82af00e4c653a3931d9ae3e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **41.8 KB (41837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4193cc7c8ca315c6ea909c4d9152c6e393399ee207b5f51aeb2aab49f3f277b`
+-	Image ID: `sha256:8e82e099d2aacb95f11e3d822ff47b828153846c0ba9dbcdb8f7e1ea549580d5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ab3cad29b7394c61e7f94c31721a3910c32e56b084efffd2c807008cf3b1d333`  
-		Last Modified: Mon, 16 Nov 2026 19:59:49 GMT  
+	-	`sha256:4b590e03f0d79236f65d84cfe676c874fed6cf22ff8adbc2efb12266209760e0`  
+		Last Modified: Tue, 17 Nov 2026 20:07:25 GMT  
 		Size: 41.8 KB (41837 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `espocrm:fpm` - linux; 386
 
 ```console
-$ docker pull espocrm@sha256:ec37623884067758c85fefefe3dc3748209b5392c191955e273f478fce0a6b02
+$ docker pull espocrm@sha256:2dbbcedc436a461372c77cc265398942b0b175c41dff8813a9cf3ccb19ca679e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.1 MB (256053630 bytes)**  
+-	Total Size: **256.1 MB (256055820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0d2f078750a7d6248eb4a5e4735fd419f691e292247f61911778d22015cfca6`
+-	Image ID: `sha256:c5d5bda231ffc07465d44b03efcb9b649687cf39a16e1c5955702ca304082de8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -817,29 +817,29 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 05 Nov 2026 07:25:10 GMT
 CMD ["php-fpm"]
-# Mon, 16 Nov 2026 19:50:45 GMT
+# Tue, 17 Nov 2026 20:06:25 GMT
 LABEL org.opencontainers.image.source=https://github.com/espocrm/espocrm
-# Mon, 16 Nov 2026 19:50:45 GMT
+# Tue, 17 Nov 2026 20:06:25 GMT
 LABEL org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.
-# Mon, 16 Nov 2026 19:50:45 GMT
+# Tue, 17 Nov 2026 20:06:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends         unzip         libldap-common 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:51:55 GMT
+# Tue, 17 Nov 2026 20:07:37 GMT
 RUN set -eux;         aptMarkList="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libpq-dev         libpng-dev         libjpeg-dev         libwebp-dev         libfreetype6-dev         libzip-dev         libxml2-dev         libldap2-dev         libzmq5-dev         zlib1g-dev     ;             cd /usr;         curl -fSL https://github.com/zeromq/php-zmq/archive/616b6c64ffd3866ed038615494306dd464ab53fc.tar.gz -o php-zmq.tar.gz;         tar -zxf php-zmq.tar.gz;         cd php-zmq*;         phpize && ./configure;         make;         make install;         cd .. && rm -rf php-zmq*;         pecl install         ev         redis     ;         docker-php-ext-configure ldap         --with-libdir="lib/$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"     ;     docker-php-ext-configure gd         --with-freetype         --with-jpeg=/usr         --with-webp     ;         docker-php-ext-install -j$(nproc)         gd         pdo_pgsql         pdo_mysql         zip         ldap         exif         pcntl         bcmath     ;     docker-php-ext-enable         zmq         ev         redis     ;         rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null; 	apt-mark manual $aptMarkList; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 16 Nov 2026 19:51:55 GMT
+# Tue, 17 Nov 2026 20:07:37 GMT
 RUN {     echo 'expose_php = Off';     echo 'error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED';     echo 'display_errors = Off';     echo 'display_startup_errors = Off';     echo 'log_errors = On';     echo 'memory_limit=256M';     echo 'max_execution_time=180';     echo 'max_input_time=180';     echo 'post_max_size=50M';     echo 'upload_max_filesize=50M';     echo 'date.timezone=UTC'; } > ${PHP_INI_DIR}/conf.d/espocrm.ini # buildkit
-# Mon, 16 Nov 2026 19:51:55 GMT
-ENV ESPOCRM_VERSION=10.1.2
-# Mon, 16 Nov 2026 19:51:55 GMT
-ENV ESPOCRM_SHA256=1dd6a9dc3fcd1385ee124daadd961f6e2b97700cf21432a44ed223f19a90e793
-# Mon, 16 Nov 2026 19:51:56 GMT
+# Tue, 17 Nov 2026 20:07:37 GMT
+ENV ESPOCRM_VERSION=10.1.3
+# Tue, 17 Nov 2026 20:07:37 GMT
+ENV ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad
+# Tue, 17 Nov 2026 20:07:37 GMT
 WORKDIR /var/www/html
-# Mon, 16 Nov 2026 19:52:03 GMT
-RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.2.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
-# Mon, 16 Nov 2026 19:52:04 GMT
+# Tue, 17 Nov 2026 20:07:45 GMT
+RUN set -eux;     curl -fSL "https://www.espocrm.com/downloads/EspoCRM-10.1.3.zip" -o EspoCRM.zip;     echo "${ESPOCRM_SHA256} *EspoCRM.zip" | sha256sum -c -;     unzip -q EspoCRM.zip -d /usr/src;     cp -a "/usr/src/EspoCRM-${ESPOCRM_VERSION}/." /var/www/html/;     rm -rf /usr/src/EspoCRM*;     mkdir -p /usr/src/espocrm;     cp -a ./client/ /usr/src/espocrm/;     cp -a ./public/ /usr/src/espocrm/;     rm -rf ./install;     find . -type d -exec chmod 755 {} +;     find . -type f -exec chmod 644 {} +;     chown -R root:root . /usr/src/espocrm;     chown -R www-data:www-data ./data ./custom ./client/custom;     chmod +x ./bin/command # buildkit
+# Tue, 17 Nov 2026 20:07:45 GMT
 COPY ./docker-*.sh ./entrypoint-utils.sh /usr/local/bin/ # buildkit
-# Mon, 16 Nov 2026 19:52:04 GMT
+# Tue, 17 Nov 2026 20:07:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Nov 2026 19:52:04 GMT
+# Tue, 17 Nov 2026 20:07:45 GMT
 CMD ["php-fpm"]
 ```
 
@@ -892,47 +892,47 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 05 Nov 2026 07:25:22 GMT  
 		Size: 9.3 KB (9271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:162b90e3fab8c5dc50ec1dfa0fbeee9f67550bc7f632b9b92c43ef7b86b9b6db`  
-		Last Modified: Mon, 16 Nov 2026 19:52:13 GMT  
-		Size: 268.4 KB (268447 bytes)  
+	-	`sha256:397e0302020b2689c64c8cc1621369ba61545d18c12b81e329c7edfbebc2c9d5`  
+		Last Modified: Tue, 17 Nov 2026 20:07:55 GMT  
+		Size: 268.4 KB (268449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3f23862783540d61467b9d71bf3ef3fae8e82a0910fced65b0294e7524b3c77`  
-		Last Modified: Mon, 16 Nov 2026 19:52:14 GMT  
-		Size: 4.3 MB (4253989 bytes)  
+	-	`sha256:c501ca4a2bfb959aacf01a5576905c827f22326784ca17fb05287338a6269f85`  
+		Last Modified: Tue, 17 Nov 2026 20:07:55 GMT  
+		Size: 4.3 MB (4254045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4ad149b4f24b68a8117944c0c327ca97c9d3ce199802fb7b149287bd404644a`  
-		Last Modified: Mon, 16 Nov 2026 19:52:13 GMT  
-		Size: 393.0 B  
+	-	`sha256:b27a47badc1cd77d584bde696b7024ffb77f9f7d890bb93ec744413ced8dbebe`  
+		Last Modified: Tue, 17 Nov 2026 20:07:55 GMT  
+		Size: 391.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:992670b2388cce1ec6da4e39779df515abe51c02cfbd6f74f079486ea65948ec`  
-		Last Modified: Mon, 16 Nov 2026 19:52:15 GMT  
-		Size: 75.7 MB (75734530 bytes)  
+	-	`sha256:da80b4340f6ace2532461946729c6b7517af2b933fbc5ecb72b1e1061f00a9e2`  
+		Last Modified: Tue, 17 Nov 2026 20:07:57 GMT  
+		Size: 75.7 MB (75736659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77a2c8a6aac0017a1abefd625ccbe528b59992df4ddf1c975487ccbd98211911`  
-		Last Modified: Mon, 16 Nov 2026 19:52:15 GMT  
-		Size: 3.4 KB (3405 bytes)  
+	-	`sha256:9c5dbea40a9d7067bfedf4c8994ee263e10fc3c0e6ea0bf7081cd108c8596a98`  
+		Last Modified: Tue, 17 Nov 2026 20:07:56 GMT  
+		Size: 3.4 KB (3410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `espocrm:fpm` - unknown; unknown
 
 ```console
-$ docker pull espocrm@sha256:04899adbb89acaaf800ab947bc2f64a19cc31cc03b6716e674c2fc15c5c70e61
+$ docker pull espocrm@sha256:8bbcfa2025cee207dd26bc9b573757dd2b3f9cb96aa4c633427d792329c06450
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **41.6 KB (41582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a45b2d1ee1fd59065c15672ea71dfb01c0112b8dbef9dcf84c669ed5d3b1510d`
+-	Image ID: `sha256:3ae4974c4a69ec7cd93690e68c36f938a226a310f44b821fc0bd8108539fddbf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08824d3e44b56359e714416798a8953a9ad2e03d75304bfcfd00f878b02abdcb`  
-		Last Modified: Mon, 16 Nov 2026 19:52:13 GMT  
+	-	`sha256:25c33b0e07829e396c6f1372ccb6fcae695a7b9934a26a566187f976e598d209`  
+		Last Modified: Tue, 17 Nov 2026 20:07:55 GMT  
 		Size: 41.6 KB (41582 bytes)  
 		MIME: application/vnd.in-toto+json
