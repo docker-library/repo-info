@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6da4308ebc076e85af0121be4074e77462d7fe32073f9e4522c3f8d9bf06c8d8`
-- Created: `2026-11-12T00:45:41.137706532Z`
-- Virtual Size: ~ 411.53 Mb  
+- Image ID: `sha256:958a1e2580ac5913b38ff7669e2afbe6c39ace22d8a28204386e08a1088a7b40`
+- Created: `2026-11-16T20:18:15.968446313Z`
+- Virtual Size: ~ 427.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -780,13 +780,13 @@ $ apt-get source -qq --print-uris git=1:2.43.0-1ubuntu7.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.4.dsc' git_2.43.0-1ubuntu7.4.dsc 2968 SHA512:ae602dcb16c954aad98171fba7e1db5d1a1e300e9c0a6ee34d197d8a1a72d7aa2d22c08325e8506b4765ca4cc2fe59a61e644ded5b4d87cfbf7ee25aec991239
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.12`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.9`
-- `libc6:amd64=2.39-0ubuntu8.9`
-- `locales=2.39-0ubuntu8.9`
+- `libc-bin=2.39-0ubuntu8.12`
+- `libc6:amd64=2.39-0ubuntu8.12`
+- `locales=2.39-0ubuntu8.12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -794,9 +794,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.12.debian.tar.xz' glibc_2.39-0ubuntu8.12.debian.tar.xz 506308 SHA512:d8a797dfcf042be57bfc9d35473b9ec1126d8f5ae9f5f70c6ee8ab5c60124b9df9804a974b2a97e5838cd9b94abe092921675db242b42e19ec3bf7f6f6236d74
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.12.dsc' glibc_2.39-0ubuntu8.12.dsc 9391 SHA512:80183bb04dd559b9e8a40b5d8604ea820327f577c7ccf6fd578eee88361bc843b49ca94ecf479707e2f5af1f3bdd90a5961d64e9af3f8db9fdddccb0dd2bef76
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
