@@ -1,10 +1,10 @@
-# `php:8.5.12-fpm-bookworm`
+# `php:8.6.0-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:07818169b4f3a08226be9a6c9927aaacbb0188df3243c19f8f7782ec6ce320aa`
-- Created: `2026-11-05T07:24:19.175285746Z`
-- Virtual Size: ~ 518.72 Mb  
+- Image ID: `sha256:1caba0cc3c5c06ed6dca338dae2d8416f15c75a5249b4c3ecb9c704217a82caa`
+- Created: `2026-11-19T15:18:47.695080702Z`
+- Virtual Size: ~ 516.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc`
-  - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
+  - `GPG_KEYS=D95C03BC702BE9515344AE3374E44BC9067701A5 016895DE9A475111D537A6E69134FF30BC5A99B5 5CFF17B64DC1C244F5D0EAC3E43535E2EB19010E`
+  - `PHP_VERSION=8.6.0`
+  - `PHP_URL=https://www.php.net/distributions/php-8.6.0.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.6.0.tar.xz.asc`
+  - `PHP_SHA256=5f84beaa3d763aee1e4feed99bf54ec692c383b322e25626807b589238c3a087`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1631,33 +1631,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libonig=6.9.8-1`
-
-Binary Packages:
-
-- `libonig5:amd64=6.9.8-1`
-
-Licenses: (parsed from: `/usr/share/doc/libonig5/copyright`)
-
-- `BSD-2-clause`
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libonig=6.9.8-1
-'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.8-1.dsc' libonig_6.9.8-1.dsc 1860 SHA256:5f834eab1fb4cce8ba8869c64b52358615daa726235eb106e1cd0c4051fafe4c
-'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.8.orig.tar.gz' libonig_6.9.8.orig.tar.gz 638737 SHA256:26372720bab6733c869a9eb69377f73971138dc5e3eff4a81f5ba8aea5435fb2
-'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.8-1.debian.tar.xz' libonig_6.9.8-1.debian.tar.xz 8812 SHA256:759bcffe58f9250df13f2ebc3d8c3b0ad3c86a3d2a967824d33e77382b503d09
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libonig/6.9.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libonig/6.9.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libonig/6.9.8-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
 Binary Packages:
@@ -2033,11 +2006,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.190-1`
+### `dpkg` source package: `linux=6.1.192-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.190-1`
+- `linux-libc-dev:amd64=6.1.192-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2052,17 +2025,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.190-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.dsc' linux_6.1.190-1.dsc 399396 SHA256:30c921025c1c3f26a102e1d52c9ef23516a8362803d0bdfe738c7a841081ca82
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190.orig.tar.xz' linux_6.1.190.orig.tar.xz 138088908 SHA256:710755123060832bb0b58d64d49c2c54e370ec671ec5b0cd0586780a5dee53e7
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.debian.tar.xz' linux_6.1.190-1.debian.tar.xz 1940480 SHA256:4923f2b60c4417b08c498fa1dfc529ff827a75dfd49f81153efb38243d9c53d5
+$ apt-get source -qq --print-uris linux=6.1.192-2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192-2.dsc' linux_6.1.192-2.dsc 399396 SHA256:1cf1a217edefedc94aef60612ebc1b14b1598e3fe86b20b7969c8b0c18194652
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192.orig.tar.xz' linux_6.1.192.orig.tar.xz 138014500 SHA256:22c0dd635fead7dcba91baf1893e6569634df86ffe6b7b96a201624cc0e88efe
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192-2.debian.tar.xz' linux_6.1.192-2.debian.tar.xz 1975532 SHA256:df8401c4e0b56139ad3605b417fe473dbefc892536749745b7f928aa560ab86d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.190-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.190-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.190-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.192-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.192-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.192-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 

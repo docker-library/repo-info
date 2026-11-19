@@ -1,10 +1,10 @@
-# `php:8.5.12-fpm-alpine3.23`
+# `php:8.6.0-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6581082ec681e94e96cf6995c328fff6290dfb270331d2dbe97683340f8ebb5f`
-- Created: `2026-11-05T19:00:39.05330085Z`
-- Virtual Size: ~ 107.79 Mb  
+- Image ID: `sha256:675e25ca5baf85ea05fd5b508402be5f7cb1f6dd6f58f3034eff6f55b2a1c76d`
+- Created: `2026-11-19T15:20:18.584089632Z`
+- Virtual Size: ~ 105.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc`
-  - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
+  - `GPG_KEYS=D95C03BC702BE9515344AE3374E44BC9067701A5 016895DE9A475111D537A6E69134FF30BC5A99B5 5CFF17B64DC1C244F5D0EAC3E43535E2EB19010E`
+  - `PHP_VERSION=8.6.0`
+  - `PHP_URL=https://www.php.net/distributions/php-8.6.0.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.6.0.tar.xz.asc`
+  - `PHP_SHA256=5f84beaa3d763aee1e4feed99bf54ec692c383b322e25626807b589238c3a087`
 
 ## `apk` (`.apk`-based packages)
 
@@ -534,23 +534,6 @@ MIT
 
 ```
 
-### `apk` package: `oniguruma`
-
-```console
-oniguruma-6.9.10-r0 description:
-a regular expressions library
-
-oniguruma-6.9.10-r0 webpage:
-https://github.com/kkos/oniguruma
-
-oniguruma-6.9.10-r0 installed size:
-547 KiB
-
-oniguruma-6.9.10-r0 license:
-BSD-2-Clause
-
-```
-
 ### `apk` package: `openssl`
 
 ```console
@@ -690,16 +673,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
