@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c8926ba69ad29c458e2cf326056ef306baf30c96fa150f9d15e916d0d96e378`
-- Created: `2026-11-10T21:44:28.925570561Z`
+- Image ID: `sha256:fde7400e1b656e9e87e5863a6c51dd93d6b95d2f708086b06e6a9dcb7d2e0c8b`
+- Created: `2026-11-17T20:07:30.717511161Z`
 - Virtual Size: ~ 712.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
   - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
-  - `ESPOCRM_VERSION=10.1.1`
-  - `ESPOCRM_SHA256=00df7d8ac54492a6011dfa9bff8175743930e897ead080f37637d51561b577d0`
+  - `ESPOCRM_VERSION=10.1.3`
+  - `ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad`
 - Labels:
   - `org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.`
   - `org.opencontainers.image.source=https://github.com/espocrm/espocrm`
@@ -2772,11 +2772,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-17=17.11-0+deb13u1`
+### `dpkg` source package: `postgresql-17=17.12-0+deb13u1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.11-0+deb13u1`
+- `libpq5:amd64=17.12-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2796,17 +2796,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-17=17.11-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.dsc' postgresql-17_17.11-0+deb13u1.dsc 4284 SHA256:bf148ae423a982707c3f60672c3a072ef62b701bd9f5df847d9f4b8c9b3e3b18
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11.orig.tar.bz2' postgresql-17_17.11.orig.tar.bz2 21787224 SHA256:dd27f2b3c59e73ed14aa3324901242bf69a032a6347805f274e6260322d42979
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.11-0+deb13u1.debian.tar.xz 37348 SHA256:82851f4dfeb372c99b94b412e2e3046a8eee7771098e42ac1fa234bef2611cbd
+$ apt-get source -qq --print-uris postgresql-17=17.12-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12-0%2bdeb13u1.dsc' postgresql-17_17.12-0+deb13u1.dsc 4522 SHA256:e406fdcde8e58a616e65b84237ca1f1d92605ad4c3fc5a5264815439b8fc1611
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12.orig.tar.bz2' postgresql-17_17.12.orig.tar.bz2 22292547 SHA256:9cf136a703d8ee2f83465c43be4e9e8e7930c82b0bfba13be7e2537be769ac55
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.12-0+deb13u1.debian.tar.xz 35996 SHA256:2e02b8b27ec24abf8ee8ed3395703b02708bdf35284b65b254e84bc27351b5b6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.11-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-17/17.12-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-17/17.12-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-17/17.12-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=4.1-1`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5072a4772a1e865fa6d525c9ecbc8e71f2c20aa956378138c90aac4dff3f362f`
-- Created: `2026-11-10T21:44:32.808900761Z`
+- Image ID: `sha256:8fa6089c1a23f63c502a6197f6a3d319e3bd622b828328be7992de251922e10b`
+- Created: `2026-11-17T20:08:25.839211054Z`
 - Virtual Size: ~ 305.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
   - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
-  - `ESPOCRM_VERSION=10.1.1`
-  - `ESPOCRM_SHA256=00df7d8ac54492a6011dfa9bff8175743930e897ead080f37637d51561b577d0`
+  - `ESPOCRM_VERSION=10.1.3`
+  - `ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad`
 - Labels:
   - `org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.`
   - `org.opencontainers.image.source=https://github.com/espocrm/espocrm`
@@ -508,16 +508,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.6-r0 description:
+libpq-18.7-r0 description:
 PostgreSQL client library
 
-libpq-18.6-r0 webpage:
+libpq-18.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.6-r0 installed size:
+libpq-18.7-r0 installed size:
 350 KiB
 
-libpq-18.6-r0 license:
+libpq-18.7-r0 license:
 PostgreSQL
 
 ```
