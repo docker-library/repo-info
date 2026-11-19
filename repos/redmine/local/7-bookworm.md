@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69dc6c81d93efd9c299ea20f3b1ec88d6351a069721b228b5af4e1887a3b264d`
-- Created: `2026-11-05T08:51:50.028856115Z`
-- Virtual Size: ~ 716.32 Mb  
+- Image ID: `sha256:d33c4cd2b82bac10bfb0e1781ed3bc35844fe5c5923b93c8734b3169de91e6a8`
+- Created: `2026-11-19T00:36:45.455653009Z`
+- Virtual Size: ~ 717.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=4.0.9`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.9.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=a8057adb39f51ad6dc3106237504c93dd792bb515837b4fe7817ae21ed7e51f4`
+  - `RUBY_VERSION=4.0.10`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.10.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=1537f7a6003c436546ecab6b48b6e7725a9af2328f45a8af7f42f41c5df90ab8`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1292,14 +1292,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u8`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u9`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u8`
-- `libgs-common=10.0.0~dfsg-11+deb12u8`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u8`
-- `libgs10-common=10.0.0~dfsg-11+deb12u8`
+- `ghostscript=10.0.0~dfsg-11+deb12u9`
+- `libgs-common=10.0.0~dfsg-11+deb12u9`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u9`
+- `libgs10-common=10.0.0~dfsg-11+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1336,17 +1336,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u8
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u8.dsc' ghostscript_10.0.0~dfsg-11+deb12u8.dsc 3022 SHA256:8cb8f619dffe09825e56014b9fc34381ba9fa75048b11b00a275abeaf9785cd4
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u8.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u8.debian.tar.xz 110332 SHA256:94f131ca44c0c0a9379cb8ad2841b98e15f0bf2a0c157b1fd11f8dbefefe6399
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u9.dsc' ghostscript_10.0.0~dfsg-11+deb12u9.dsc 2867 SHA256:b439419b423406a5dc1fdb5545668ed254bd2abb21c96fbe105a700ad0175dae
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u9.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u9.debian.tar.xz 114792 SHA256:98112296c7891bfb5f011a626002af654ee8cc9b863fb739cedd22e4322b2bcc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.39.5-0+deb12u3`
 

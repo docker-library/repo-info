@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:74c03142ec79db52c8291915c161666c274c189796cd84b6b3beef4b27b9b4df`
-- Created: `2026-11-05T08:52:02.572548568Z`
-- Virtual Size: ~ 657.34 Mb  
+- Image ID: `sha256:d382b500b3c4805f645829993b9c2494e7d1eb392ab3a344ec8eeb6dade0c0c4`
+- Created: `2026-11-19T00:36:44.180539202Z`
+- Virtual Size: ~ 658.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.12`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.12.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=db6c147940d7ad0b706823d42c8e6713c36dec70a1f83f635f1d3a7f0599ec90`
+  - `RUBY_VERSION=3.4.13`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.13.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6474dff9c02ea685fc44877a4807a27366bf109b176dad182108bb8c96d09589`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -1327,14 +1327,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u8`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u9`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u8`
-- `libgs-common=10.0.0~dfsg-11+deb12u8`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u8`
-- `libgs10-common=10.0.0~dfsg-11+deb12u8`
+- `ghostscript=10.0.0~dfsg-11+deb12u9`
+- `libgs-common=10.0.0~dfsg-11+deb12u9`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u9`
+- `libgs10-common=10.0.0~dfsg-11+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1371,17 +1371,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u8
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u8.dsc' ghostscript_10.0.0~dfsg-11+deb12u8.dsc 3022 SHA256:8cb8f619dffe09825e56014b9fc34381ba9fa75048b11b00a275abeaf9785cd4
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u8.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u8.debian.tar.xz 110332 SHA256:94f131ca44c0c0a9379cb8ad2841b98e15f0bf2a0c157b1fd11f8dbefefe6399
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u9.dsc' ghostscript_10.0.0~dfsg-11+deb12u9.dsc 2867 SHA256:b439419b423406a5dc1fdb5545668ed254bd2abb21c96fbe105a700ad0175dae
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u9.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u9.debian.tar.xz 114792 SHA256:98112296c7891bfb5f011a626002af654ee8cc9b863fb739cedd22e4322b2bcc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.39.5-0+deb12u3`
 
@@ -3966,11 +3966,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/poppler-data/0.4.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/poppler-data/0.4.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.19-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.20-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.19-0+deb12u1`
+- `libpq5:amd64=15.20-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -3987,13 +3987,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `double-metaphone`
 - `nagaysau-ishii`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-15=15.20-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.20-0%2bdeb12u1.dsc' postgresql-15_15.20-0+deb12u1.dsc 3942 SHA256:ad11ccf8158d9f4af3e4a61d9607bf9cd82fd4e6a3c2e3aa21b0071a7e718c33
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.20.orig.tar.bz2' postgresql-15_15.20.orig.tar.bz2 23930664 SHA256:30e65cbbb771a39b553ed2df7e65622e65647aed55dbc19bd0fe853ff0a08442
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.20-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.20-0+deb12u1.debian.tar.xz 36308 SHA256:234b8fe260f5809a5ab487f64edc6ea96777485a0d6e897a376425c4e2f4ef01
+```
 
-- http://snapshot.debian.org/package/postgresql-15/15.19-0+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-15/15.20-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.20-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.20-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-fastbencode=0.2-1`
 

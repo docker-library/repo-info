@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14e8dbceb3dc02a59ea1db5dd87c9f182330a7814964402e16c6da81236f3ca8`
-- Created: `2026-11-05T20:37:14.968250355Z`
-- Virtual Size: ~ 442.73 Mb  
+- Image ID: `sha256:af2bfcc15026ad36e014aa5458fc28085b359c262df19444e9256ecf786ccd28`
+- Created: `2026-11-19T00:37:28.433748768Z`
+- Virtual Size: ~ 444.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.12`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.12.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=db6c147940d7ad0b706823d42c8e6713c36dec70a1f83f635f1d3a7f0599ec90`
+  - `RUBY_VERSION=3.4.13`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.13.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=6474dff9c02ea685fc44877a4807a27366bf109b176dad182108bb8c96d09589`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -507,16 +507,16 @@ GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.52.0-r0 description:
+git-2.52.1-r0 description:
 Distributed version control system
 
-git-2.52.0-r0 webpage:
+git-2.52.1-r0 webpage:
 https://www.git-scm.com/
 
-git-2.52.0-r0 installed size:
+git-2.52.1-r0 installed size:
 6676 KiB
 
-git-2.52.0-r0 license:
+git-2.52.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -524,16 +524,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.52.0-r0 description:
+git-init-template-2.52.1-r0 description:
 Git init template directory
 
-git-init-template-2.52.0-r0 webpage:
+git-init-template-2.52.1-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.52.0-r0 installed size:
+git-init-template-2.52.1-r0 installed size:
 20 KiB
 
-git-init-template-2.52.0-r0 license:
+git-init-template-2.52.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -541,16 +541,16 @@ GPL-2.0-only
 ### `apk` package: `glib`
 
 ```console
-glib-2.86.3-r0 description:
+glib-2.86.5-r0 description:
 Low-level core library that forms the basis for projects such as GTK and GNOME
 
-glib-2.86.3-r0 webpage:
+glib-2.86.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.86.3-r0 installed size:
-5254 KiB
+glib-2.86.5-r0 installed size:
+5258 KiB
 
-glib-2.86.3-r0 license:
+glib-2.86.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1153,16 +1153,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.6-r0 description:
+libpq-18.7-r0 description:
 PostgreSQL client library
 
-libpq-18.6-r0 webpage:
+libpq-18.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.6-r0 installed size:
+libpq-18.7-r0 installed size:
 350 KiB
 
-libpq-18.6-r0 license:
+libpq-18.7-r0 license:
 PostgreSQL
 
 ```
@@ -2292,16 +2292,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
