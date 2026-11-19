@@ -3098,9 +3098,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=7.0.0-43.43
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
 ```
 
 ### `dpkg` source package: `lsb-release-minimal=12.1-2build1`

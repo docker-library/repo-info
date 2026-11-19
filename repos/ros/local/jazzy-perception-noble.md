@@ -2737,15 +2737,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.24.2-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.24.2.orig.tar.xz' gstreamer1.0_1.24.2.orig.tar.xz 1850672 SHA512:8d7b3e129025d66b0c3938fcb51574c378f5104cf44d1c827795f25687efc98e85bc0dac76bd8e8c4adf6434457495816a8a91a04734269722dcf7c2ed67f88b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.24.2.orig.tar.xz.asc' gstreamer1.0_1.24.2.orig.tar.xz.asc 833 SHA512:191caa06febb372a402adbfd3b1e52cc702a6c98cff1de2a47aa96edeed197a46a5fc1f14fbd43791c67bb9336dd89f45b38f7e31781464d564609bd3f5a87ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.24.2-1ubuntu0.1.debian.tar.xz' gstreamer1.0_1.24.2-1ubuntu0.1.debian.tar.xz 50960 SHA512:a4dd33a3381c59ef061dedd01f76d4e7638fb68771437890daff17c71ee5a78f7958b363bbeef38aa04f27869038ef53756ef52c59079eecb1529ff3cdd0a508
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.24.2-1ubuntu0.1.dsc' gstreamer1.0_1.24.2-1ubuntu0.1.dsc 3161 SHA512:c44b2bcb46e1bc27fa70dfbb338ef53dee528ae63614cc1727438d59de8ae60dadad8b9ec90d0dbe5e7f2457f618891fcf8b049b007010659bf4d5a93e0a74b9
-```
 
 ### `dpkg` source package: `gtk+3.0=3.24.41-4ubuntu1.3`
 
@@ -4971,9 +4965,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsodium=1.0.18-1ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.24.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.24.04.1.debian.tar.xz 8508 SHA256:0d41dd6453d842dceeee2260e789e03d7348e852ac939b7e942e5249efc86dc2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.24.04.1.dsc' libsodium_1.0.18-1ubuntu0.24.04.1.dsc 2052 SHA256:76fcdcb9c8eeb77a501ea63740b7a5b00e489a09263fdcd86ae0434bd0131fc4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA512:727fe50a5fb1df86ec5d807770f408a52609cbeb8510b4f4183b2a35a537905719bdb6348afcb103ff00ce946a8094ac9559b6e3e5b2ccc2a2d0c08f75577eeb
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.24.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.24.04.1.debian.tar.xz 8508 SHA512:01aac286eb0df943d6c8d1a86396aee009cfa9e2bf9c4266634a7853d015d5af3de1da9b836bf96a17290df83c5da43e808271cdeac421ea41b9bc59380ac9ec
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.24.04.1.dsc' libsodium_1.0.18-1ubuntu0.24.04.1.dsc 2052 SHA512:8474b64b17a9ee559542df02a06a3bf045149f3ac947ed6397454ea6fd61633682128d8b7496d78ce4b073ee93d41158dbe3ca0c7c8cc0a96a039507e0fa64e4
 ```
 
 ### `dpkg` source package: `libsoxr=0.1.3-4build3`
@@ -5856,9 +5850,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu0.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA256:2a20ad621148339b0759c4d4e96719362dee64c9a096dbba625ba053846349f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz 24380 SHA256:f235c6088b4c5ec813caba9273b4a670935e4faa11768fa33f993455460ebf00
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc 2352 SHA256:25e60a82ccec471407248c0725eb51e85464b6e87fa032bca685c55d42ab8722
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz 24380 SHA512:e9ea90695741f2a81ccf3ca36c1ffd3806ce158242a77e29f0282bf4b124d5dcc0f8b60bd870c56d168a71f61f43b667720c37741a23dd9a4280b0c22063c69f
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc 2352 SHA512:7709b2e2900154e58c792fa288a99ab1b90863e7e02400e510507b78aeb7b1e0e302995146e247c371fe8311cfe42d4861e8d6c176b045dc118d65902dbf61ff
 ```
 
 ### `dpkg` source package: `libxss=1:1.2.3-1build3`
@@ -5999,9 +5993,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-149.149
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.diff.gz' linux_6.8.0-149.149.diff.gz 11931455 SHA512:d55349c99d2246fb7ccac20bce1525d55ee1980c293e78407d41e53ff2714e3feeffaa810969d46c586a7293a7d2bbdde6caf39fec5f43d95202adfdaace7529
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.dsc' linux_6.8.0-149.149.dsc 9351 SHA512:a9b02712e6ac024fd405badd4a1693895709e263e9d61d5362aef7bfb0e0386e20f63a1d466ddb3d2ad70f05c00f8f30d4ccee7a4184aeb9ceb317158006ed46
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.diff.gz' linux_6.8.0-149.149.diff.gz 11931455 SHA512:d55349c99d2246fb7ccac20bce1525d55ee1980c293e78407d41e53ff2714e3feeffaa810969d46c586a7293a7d2bbdde6caf39fec5f43d95202adfdaace7529
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.dsc' linux_6.8.0-149.149.dsc 9351 SHA512:a9b02712e6ac024fd405badd4a1693895709e263e9d61d5362aef7bfb0e0386e20f63a1d466ddb3d2ad70f05c00f8f30d4ccee7a4184aeb9ceb317158006ed46
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
@@ -6390,14 +6384,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `SGI`
 - `Unicode-DFS-2016`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=25.2.8-0ubuntu0.24.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8.orig.tar.xz' mesa_25.2.8.orig.tar.xz 43813260 SHA512:a238965ee235bd9178d26b210fc3996b77927dab31964b76cd1e1e72cfffbefbd96e4a57ec4f5018205a58354cd41d6cf99bbc712b275a7518710a34511dfb13
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8-0ubuntu0.24.04.4.debian.tar.xz' mesa_25.2.8-0ubuntu0.24.04.4.debian.tar.xz 406360 SHA512:9aa9810d8ca24824d3b28e3979a167c111b01896ee172b3756d4a8da66da7e25615d410203cbdf56aae71104a5248dfd26e9fda8ef696ebb1f4bff20a954b01e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8-0ubuntu0.24.04.4.dsc' mesa_25.2.8-0ubuntu0.24.04.4.dsc 5358 SHA512:a964680f1644767a70ffc34bdd77603bfd48917e8c384de1b7fa277e845a1e90864207980c2e7ed0e7b4e4f6f0d3a377b9a2abeef830b0ffe58090462eaffc3b
-```
 
 ### `dpkg` source package: `more-itertools=10.2.0-1`
 
@@ -7119,15 +7108,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-21-jdk/copyright`, `/usr/share/d
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-21=21.0.13.0.3+1-1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.13.0.3%2b1.orig-googletest.tar.xz' openjdk-21_21.0.13.0.3+1.orig-googletest.tar.xz 617052 SHA512:d3b5620bd8a56bfa6b66c54350d04411aa18016ca8d242ef6e068c25b7b0bbb12556bfbed0409a013ac86860f15231dd63abbdf539b47585f3c91474e6907df5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.13.0.3%2b1.orig.tar.xz' openjdk-21_21.0.13.0.3+1.orig.tar.xz 68094444 SHA512:d44fbb21c96ebf45d92b4a9e90c4b6123d628289ba7ce9161de61b0c0627db555b7384e33fd50c38c6c26e5f8b79ed9a3a6cbc0478f4a9a17caf7b12cce6734c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.13.0.3%2b1-1%7e24.04.1.debian.tar.xz' openjdk-21_21.0.13.0.3+1-1~24.04.1.debian.tar.xz 245936 SHA512:5968d466fdab549c272d02827422010203751bbda74b12b803b3e4254ad0314489be82456851bd9166d5481a291816a83b23cb9cd2049d686751dced4c4e121c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-21/openjdk-21_21.0.13.0.3%2b1-1%7e24.04.1.dsc' openjdk-21_21.0.13.0.3+1-1~24.04.1.dsc 5172 SHA512:a9fed976f1f84acecadb50f5a9c9ea1819f73dbcb094e2d430eeaea1275bebda4c2cbd37ca0de84d66e7dd0ca77f7167f465377e38f8fd268625affb4f5e2239
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.5`
 
@@ -13233,9 +13216,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.18
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`

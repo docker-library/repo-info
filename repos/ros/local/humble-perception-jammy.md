@@ -2575,14 +2575,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.20.3-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3.orig.tar.xz' gstreamer1.0_1.20.3.orig.tar.xz 2681088 SHA512:e93f9fbf2d7a839dcbe2030ed16dd53eb250741db7c2f1cea396c23e4fabf9a0caff6be4babf7c10aec4b56dc8319a970b1b0bfa6eea2e36aed3e6e1265d9278
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz 45248 SHA512:a77666adbad0054f9ccd118b1151dd54f7b62ce42ccf7ad9757652d125dd7040701a7fd68893ccfa4275760aa09f37e5a7f9aecbe86e19b6bf33ab464488e388
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.dsc' gstreamer1.0_1.20.3-0ubuntu1.1.dsc 2968 SHA512:874b7438bd8021858a321ff07a81783541c79faf416c888f96b3368c48dc38229cc0266a1d1c2b022a499ffcfa6549420bae1bf9cb2f6747a78a44e12677053e
-```
 
 ### `dpkg` source package: `gtk+3.0=3.24.33-1ubuntu2.2`
 
@@ -4769,9 +4764,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsodium=1.0.18-1ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz 8448 SHA256:55a61936dd5ec0dae47da9cb24f84bab0805434ce1107731d3169ca557c3cae4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.dsc' libsodium_1.0.18-1ubuntu0.22.04.1.dsc 2052 SHA256:2b8e2ea6c7f63cc47ccee86b2653be1a798ade9abe3344537b0c2477ab417cc1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA512:727fe50a5fb1df86ec5d807770f408a52609cbeb8510b4f4183b2a35a537905719bdb6348afcb103ff00ce946a8094ac9559b6e3e5b2ccc2a2d0c08f75577eeb
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz 8448 SHA512:38ab796a1aed5e730ace9e3cca40dfd1a1ca7651c1fb71e2f4da3fd9d68c771d18f05d8863232201ea501e0bfed9e7c65f5e97a130ac471d568c15dce747d1d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.dsc' libsodium_1.0.18-1ubuntu0.22.04.1.dsc 2052 SHA512:1c42a217a401f7b110002b82efdbe1b0e3468b9776ac093d4c6d0200db7198e551a592895b8ad4920d26c4985d7ee18797a605d45f1a7320cf886869c593d623
 ```
 
 ### `dpkg` source package: `libsoxr=0.1.3-4build2`
@@ -5757,9 +5752,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-203.213
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.diff.gz' linux_5.15.0-203.213.diff.gz 14524480 SHA512:6d2af24b0bc2a61ce66b4e9dfce3f4905b98ac9c410175afc5dfacbe8a93382c317cc9e5992b06ee750e508d8e35fbf54905d08deebc4ed8aaf4301bc0f1c559
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.dsc' linux_5.15.0-203.213.dsc 7655 SHA512:3f3276dd0ec2a346b7fd3f6a527d90afb6618e94abd0927237c4ae9f92e08bbdc4a33fc297b3fc5b5d26c0a7cff8e88a029885c86891723b6e63d02ff0fecded
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.diff.gz' linux_5.15.0-203.213.diff.gz 14524480 SHA512:6d2af24b0bc2a61ce66b4e9dfce3f4905b98ac9c410175afc5dfacbe8a93382c317cc9e5992b06ee750e508d8e35fbf54905d08deebc4ed8aaf4301bc0f1c559
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.dsc' linux_5.15.0-203.213.dsc 7655 SHA512:3f3276dd0ec2a346b7fd3f6a527d90afb6618e94abd0927237c4ae9f92e08bbdc4a33fc297b3fc5b5d26c0a7cff8e88a029885c86891723b6e63d02ff0fecded
 ```
 
 ### `dpkg` source package: `llvm-toolchain-14=1:14.0.0-1ubuntu1.1`
@@ -6813,14 +6808,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.33+9-1ubuntu1~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9.orig.tar.xz' openjdk-lts_11.0.33+9.orig.tar.xz 69956620 SHA512:c1463aa8a4e0478d04908f284403fb4e03ce157c62885e0f712c008fc85d1b5d3fb41346f9620d0d1a4f4fc70f0f613635a326ca18b0bd43f6a9a028aa917217
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9-1ubuntu1%7e22.04.1.debian.tar.xz' openjdk-lts_11.0.33+9-1ubuntu1~22.04.1.debian.tar.xz 176040 SHA512:057b5132bf22198962c112d6edb89606eee9dcdb9a641b27ae0aa670f0b5cc7626ca43370d1a8374737fdeb00570f3a66a72d60fa24a0a8da7c0a734d3fec5de
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9-1ubuntu1%7e22.04.1.dsc' openjdk-lts_11.0.33+9-1ubuntu1~22.04.1.dsc 4583 SHA512:3c6d5c3a6636c864aa47b087b95e34f0c0f1efc61cfce430d743f3b201b9b257bc72907dfa412b6491cf5bb3eb0774619e1d095e07920085cf93178d7860f4fd
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
 

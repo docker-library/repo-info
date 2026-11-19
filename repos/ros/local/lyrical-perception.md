@@ -6562,9 +6562,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=7.0.0-43.43
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
 ```
 
 ### `dpkg` source package: `llvm-toolchain-21=1:21.1.8-6ubuntu1`
@@ -7656,15 +7656,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-25-jdk/copyright`, `/usr/share/d
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-25=25.0.5.0.3+1-1~26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1.orig-googletest.tar.xz' openjdk-25_25.0.5.0.3+1.orig-googletest.tar.xz 617052 SHA512:d3b5620bd8a56bfa6b66c54350d04411aa18016ca8d242ef6e068c25b7b0bbb12556bfbed0409a013ac86860f15231dd63abbdf539b47585f3c91474e6907df5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1.orig.tar.xz' openjdk-25_25.0.5.0.3+1.orig.tar.xz 74472860 SHA512:23e2fd28dbfea29257c3c3697f1d1c167a5fcba51c6bf20f4e6a3d5e4913e7379d4132bd8b3157b8e5fa242e05d2420115d96b57804b0468e64a97edf47cde19
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1-1%7e26.04.1.debian.tar.xz' openjdk-25_25.0.5.0.3+1-1~26.04.1.debian.tar.xz 411560 SHA512:f095486e4df9410776511fe4ddb1fecacc3e021caf70ecf42341a2232fb1811ee7ef3e35bb24b40ad0c535f5f1b9d4d3d74f996cbbbffed052c7389c52514b35
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-25/openjdk-25_25.0.5.0.3%2b1-1%7e26.04.1.dsc' openjdk-25_25.0.5.0.3+1-1~26.04.1.dsc 5249 SHA512:7355e82eab5685c50223fc402edd1f7da6d9653481fa334a1ac6403c803558fe5d3e77b8feebc2cb710636860cb7c71c2471b28a791218b78638ae123d8697bd
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.4-1ubuntu0.1`
 
