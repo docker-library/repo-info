@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24084862c6bcb8a9b348892f7135c1099cb581dbca4d046aec95734717714b18`
-- Created: `2026-11-12T21:01:03.965096639Z`
+- Image ID: `sha256:6dd85ce89ef213831bb1381f41e31c252e89b98676f33e2dcc1dcb273a2083a5`
+- Created: `2026-11-18T21:33:45.131150152Z`
 - Virtual Size: ~ 292.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["postgres"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.19`
+  - `GOSU_VERSION=1.20`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=15`
   - `PG_VERSION=15.20`
