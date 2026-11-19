@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34671f6a9778745f32391ded26d4b43edaeb897053927a60d17789d30d41c4a0`
-- Created: `2026-11-05T19:36:19.043648571Z`
-- Virtual Size: ~ 385.4 Mb  
+- Image ID: `sha256:58dda8fc6bfad010900754ffbca75e198561ab82c5d7eeaa8b83a26b74af251d`
+- Created: `2026-11-18T16:41:17.281029007Z`
+- Virtual Size: ~ 293.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -561,16 +561,16 @@ MPL-2.0
 ### `apk` package: `nss`
 
 ```console
-nss-3.124-r0 description:
+nss-3.133-r0 description:
 Mozilla Network Security Services
 
-nss-3.124-r0 webpage:
+nss-3.133-r0 webpage:
 https://developer.mozilla.org/docs/Mozilla/Projects/NSS
 
-nss-3.124-r0 installed size:
-3984 KiB
+nss-3.133-r0 installed size:
+4204 KiB
 
-nss-3.124-r0 license:
+nss-3.133-r0 license:
 MPL-2.0
 
 ```
@@ -578,16 +578,16 @@ MPL-2.0
 ### `apk` package: `sapmachine-25-jdk`
 
 ```console
-sapmachine-25-jdk-25.0.5.0.3-r0 description:
+sapmachine-25-jdk-25.0.5.1-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-25-jdk-25.0.5.0.3-r0 webpage:
+sapmachine-25-jdk-25.0.5.1-r0 webpage:
 https://sapmachine.io
 
-sapmachine-25-jdk-25.0.5.0.3-r0 installed size:
-343 MiB
+sapmachine-25-jdk-25.0.5.1-r0 installed size:
+255 MiB
 
-sapmachine-25-jdk-25.0.5.0.3-r0 license:
+sapmachine-25-jdk-25.0.5.1-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
