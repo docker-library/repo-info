@@ -1,10 +1,10 @@
-# `openjdk:28-ea-23-jdk-oraclelinux9`
+# `openjdk:28-ea-24-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fca9ba5adb468098feb48c5b4e45b209360ae82b7a5a684ec5ad04988d712888`
-- Created: `2026-11-10T21:44:36.431927369Z`
-- Virtual Size: ~ 683.65 Mb  
+- Image ID: `sha256:f5b7f9daae644f344584f0f737944766c8fe2063c3feb7d0a6f534d544f50f2a`
+- Created: `2026-11-18T21:45:04.464654808Z`
+- Virtual Size: ~ 685.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-28/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-28`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=28-ea+23`
+  - `JAVA_VERSION=28-ea+24`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -24,8 +24,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url acl-2.4.0-1.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `alternatives-1.24-2.0.1.el9.x86_64`
@@ -185,43 +185,43 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-22.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/cyrus-sasl-2.1.27-22.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-22.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/cyrus-sasl-2.1.27-22.el9.src.rpm
 ```
 
-### `rpm` package: `dbus-1.12.20-8.0.1.el9.x86_64`
+### `rpm` package: `dbus-1.12.20-10.0.1.el9.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-1.12.20-8.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-1.12.20-8.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/dbus-1.12.20-8.0.1.el9.src.rpm
+$ dnf --quiet download --source --url dbus-1.12.20-10.0.1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/dbus-1.12.20-10.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-1.12.20-10.0.1.el9.src.rpm
 ```
 
-### `rpm` package: `dbus-broker-28-9.el9_8.x86_64`
+### `rpm` package: `dbus-broker-28-10.el9_9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-broker-28-9.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-broker-28-9.el9_8.src.rpm
+$ dnf --quiet download --source --url dbus-broker-28-10.el9_9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-broker-28-10.el9_9.src.rpm
 ```
 
-### `rpm` package: `dbus-common-1.12.20-8.0.1.el9.noarch`
+### `rpm` package: `dbus-common-1.12.20-10.0.1.el9.noarch`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dbus-common-1.12.20-8.0.1.el9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-1.12.20-8.0.1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/dbus-1.12.20-8.0.1.el9.src.rpm
+$ dnf --quiet download --source --url dbus-common-1.12.20-10.0.1.el9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/dbus-1.12.20-10.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dbus-1.12.20-10.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
@@ -248,52 +248,52 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/dn
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/dnf-4.14.0-34.0.1.el9_8.src.rpm
 ```
 
-### `rpm` package: `elfutils-debuginfod-client-0.194-1.el9.x86_64`
+### `rpm` package: `elfutils-debuginfod-client-0.195-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-debuginfod-client-0.194-1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-debuginfod-client-0.195-1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
 ```
 
-### `rpm` package: `elfutils-default-yama-scope-0.194-1.el9.noarch`
+### `rpm` package: `elfutils-default-yama-scope-0.195-1.el9.noarch`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-default-yama-scope-0.194-1.el9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-default-yama-scope-0.195-1.el9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.194-1.el9.x86_64`
+### `rpm` package: `elfutils-libelf-0.195-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libelf-0.194-1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-libelf-0.195-1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
 ```
 
-### `rpm` package: `elfutils-libs-0.194-1.el9.x86_64`
+### `rpm` package: `elfutils-libs-0.195-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libs-0.194-1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.194-1.el9.src.rpm
+$ dnf --quiet download --source --url elfutils-libs-0.195-1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/elfutils-0.195-1.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.7.x86_64`
@@ -408,8 +408,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.10
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glib2-2.68.4-19.el9_8.10.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glib2-2.68.4-19.el9_8.10.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glib2-2.68.4-19.el9_8.10.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-275.0.1.el9_8.x86_64`
@@ -480,8 +480,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gnutls-3.8.10-9.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/gnutls-3.8.10-9.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/gnutls-3.8.10-9.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/gnutls-3.8.10-9.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -630,8 +630,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libacl-2.4.0-1.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/acl-2.4.0-1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libarchive-3.5.3-11.el9_8.x86_64`
@@ -642,8 +642,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libarchive-3.5.3-11.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libarchive-3.5.3-11.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libarchive-3.5.3-11.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libarchive-3.5.3-11.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -677,8 +677,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libblkid-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `libbrotli-1.0.9-10.0.1.el9_8.x86_64`
@@ -713,8 +713,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcap-ng-0.8.2-7.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libcap-ng-0.8.2-7.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libcap-ng-0.8.2-7.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libcap-ng-0.8.2-7.el9.src.rpm
 ```
 
 ### `rpm` package: `libcom_err-1.46.5-8.el9.x86_64`
@@ -795,8 +795,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfdisk-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `libffi-3.4.2-8.el9.x86_64`
@@ -831,8 +831,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgcrypt-1.10.0-13.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libgcrypt-1.10.0-13.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libgcrypt-1.10.0-13.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libgcrypt-1.10.0-13.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libgpg-error-1.42-5.el9.x86_64`
@@ -855,8 +855,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libidn2-2.3.0-7.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libidn2-2.3.0-7.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libidn2-2.3.0-7.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libidn2-2.3.0-7.el9.src.rpm
 ```
 
 ### `rpm` package: `libksba-1.5.1-7.el9.x86_64`
@@ -890,8 +890,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libmount-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `libnghttp2-1.43.0-6.el9_8.2.x86_64`
@@ -917,16 +917,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/li
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-15.el9_8.2.x86_64`
+### `rpm` package: `libpng-1.6.37-17.el9.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.6.37-15.el9_8.2
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libpng-1.6.37-15.el9_8.2.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpng-1.6.37-15.el9_8.2.src.rpm
+$ dnf --quiet download --source --url libpng-1.6.37-17.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libpng-1.6.37-17.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpng-1.6.37-17.el9.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
@@ -949,8 +949,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpwquality-1.4.4-8.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpwquality-1.4.4-8.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libpwquality-1.4.4-8.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpwquality-1.4.4-8.el9.src.rpm
 ```
 
 ### `rpm` package: `librepo-1.19.0-1.el9.x86_64`
@@ -972,20 +972,20 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libreport-filesystem-2.15.2-6.0.3.el9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libreport-2.15.2-6.0.3.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libreport-2.15.2-6.0.3.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libreport-2.15.2-6.0.3.el9.src.rpm
 ```
 
-### `rpm` package: `libseccomp-2.5.2-2.el9.x86_64`
+### `rpm` package: `libseccomp-2.5.6-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libseccomp-2.5.2-2.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libseccomp-2.5.2-2.el9.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libseccomp-2.5.2-2.el9.src.rpm
+$ dnf --quiet download --source --url libseccomp-2.5.6-1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libseccomp-2.5.6-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libseccomp-2.5.6-1.el9.src.rpm
 ```
 
 ### `rpm` package: `libselinux-3.6-3.el9.x86_64`
@@ -996,8 +996,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libselinux-3.6-3.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libselinux-3.6-3.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libselinux-3.6-3.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libselinux-3.6-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libsemanage-3.6-5.el9_6.x86_64`
@@ -1008,8 +1008,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsemanage-3.6-5.el9_6
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libsemanage-3.6-5.el9_6.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsemanage-3.6-5.el9_6.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libsemanage-3.6-5.el9_6.src.rpm
 ```
 
 ### `rpm` package: `libsepol-3.6-3.el9.x86_64`
@@ -1020,8 +1020,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsepol-3.6-3.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsepol-3.6-3.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libsepol-3.6-3.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsepol-3.6-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libsigsegv-2.13-4.el9.x86_64`
@@ -1043,8 +1043,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsmartcols-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `libsolv-0.7.24-6.el9_8.x86_64`
@@ -1055,8 +1055,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsolv-0.7.24-6.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsolv-0.7.24-6.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libsolv-0.7.24-6.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libsolv-0.7.24-6.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libssh-0.10.4-19.el9_8.x86_64`
@@ -1067,8 +1067,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libssh-0.10.4-19.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libssh-config-0.10.4-19.el9_8.noarch`
@@ -1079,8 +1079,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libssh-config-0.10.4-19.el9_8.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libssh-0.10.4-19.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-11.5.0-14.0.1.el9.x86_64`
@@ -1149,8 +1149,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libuuid-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `libverto-0.3.2-3.el9.x86_64`
@@ -1161,8 +1161,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libverto-0.3.2-3.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libverto-0.3.2-3.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libverto-0.3.2-3.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libverto-0.3.2-3.el9.src.rpm
 ```
 
 ### `rpm` package: `libxcrypt-4.4.18-3.el9.x86_64`
@@ -1185,8 +1185,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.5
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libxml2-2.9.13-14.el9_8.5.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libxml2-2.9.13-14.el9_8.5.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libxml2-2.9.13-14.el9_8.5.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1208,8 +1208,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libzstd-1.5.5-1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/zstd-1.5.5-1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/zstd-1.5.5-1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/zstd-1.5.5-1.el9.src.rpm
 ```
 
 ### `rpm` package: `lua-libs-5.4.4-4.el9.x86_64`
@@ -1220,8 +1220,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lua-libs-5.4.4-4.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/lua-5.4.4-4.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/lua-5.4.4-4.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/lua-5.4.4-4.el9.src.rpm
 ```
 
 ### `rpm` package: `lz4-libs-1.9.3-5.el9.x86_64`
@@ -1232,8 +1232,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.3-5.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/lz4-1.9.3-5.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/lz4-1.9.3-5.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/lz4-1.9.3-5.el9.src.rpm
 ```
 
 ### `rpm` package: `microdnf-3.9.1-3.el9.x86_64`
@@ -1255,8 +1255,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url mpfr-4.1.0-10.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/mpfr-4.1.0-10.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/mpfr-4.1.0-10.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/mpfr-4.1.0-10.el9.src.rpm
 ```
 
 ### `rpm` package: `ncurses-base-6.2-12.20210508.el9.noarch`
@@ -1326,8 +1326,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssl-3.5.8-2.0.1.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-11.0.1.el9_8.x86_64`
@@ -1360,8 +1360,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssl-libs-3.5.8-2.0.1.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/openssl-3.5.8-2.0.1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-9.8-1.0.7.el9.x86_64`
@@ -1410,16 +1410,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/p11-kit-0.26.4-1.el9_8.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-28.0.1.el9_8.1.x86_64`
+### `rpm` package: `pam-1.5.1-29.0.1.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pam-1.5.1-28.0.1.el9_8.1
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-28.0.1.el9_8.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-28.0.1.el9_8.1.src.rpm
+$ dnf --quiet download --source --url pam-1.5.1-29.0.1.el9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pam-1.5.1-29.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pam-1.5.1-29.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
@@ -1430,8 +1430,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pcre-8.44-4.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre-8.44-4.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pcre-8.44-4.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre-8.44-4.el9.src.rpm
 ```
 
 ### `rpm` package: `pcre2-10.40-7.0.1.el9_8.x86_64`
@@ -1442,8 +1442,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pcre2-10.40-7.0.1.el9_8
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `pcre2-syntax-10.40-7.0.1.el9_8.noarch`
@@ -1454,8 +1454,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pcre2-syntax-10.40-7.0.1.el9_8.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/pcre2-10.40-7.0.1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `popt-1.18-8.el9.x86_64`
@@ -1478,8 +1478,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url publicsuffix-list-dafsa-20210518-3.el9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/publicsuffix-list-20210518-3.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/publicsuffix-list-20210518-3.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/publicsuffix-list-20210518-3.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -1513,8 +1513,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-4.16.1.3-40.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
 ```
 
 ### `rpm` package: `rpm-libs-4.16.1.3-40.el9.x86_64`
@@ -1525,8 +1525,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-libs-4.16.1.3-40.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-40.el9.src.rpm
 ```
 
 ### `rpm` package: `sed-4.8-10.el9.x86_64`
@@ -1574,52 +1574,52 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/sqlite-3.34.1-11.el9_8.src.rpm
 ```
 
-### `rpm` package: `systemd-252-67.0.2.el9_8.6.x86_64`
+### `rpm` package: `systemd-252-79.0.1.el9_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-67.0.2.el9_8.6
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
+$ dnf --quiet download --source --url systemd-252-79.0.1.el9_9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-67.0.2.el9_8.6.x86_64`
+### `rpm` package: `systemd-libs-252-79.0.1.el9_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-67.0.2.el9_8.6
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-79.0.1.el9_9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-67.0.2.el9_8.6.x86_64`
+### `rpm` package: `systemd-pam-252-79.0.1.el9_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-67.0.2.el9_8.6
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-79.0.1.el9_9
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-67.0.2.el9_8.6.noarch`
+### `rpm` package: `systemd-rpm-macros-252-79.0.1.el9_9.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-67.0.2.el9_8.6.noarch
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-67.0.2.el9_8.6.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-79.0.1.el9_9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/systemd-252-79.0.1.el9_9.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-13.el9_8.x86_64`
@@ -1653,8 +1653,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url util-linux-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `util-linux-core-2.37.4-25.0.1.el9.x86_64`
@@ -1665,8 +1665,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url util-linux-core-2.37.4-25.0.1.el9
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/util-linux-2.37.4-25.0.1.el9.src.rpm
 ```
 
 ### `rpm` package: `xml-common-0.6.3-58.el9.noarch`
@@ -1688,8 +1688,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url xz-libs-5.2.5-8.el9_8.1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/xz-5.2.5-8.el9_8.1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/xz-5.2.5-8.el9_8.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/xz-5.2.5-8.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.11-40.el9.x86_64`
