@@ -259,16 +259,18 @@ $ docker pull rockylinux@sha256:322c16ec951dd72382efd5cc73dca906287e1b42d5766f92
 ## `rockylinux:10-minimal`
 
 ```console
-$ docker pull rockylinux@sha256:ef5785445207e2e4d1a8c324755490acf4ae70a507632741ea69cfd883452662
+$ docker pull rockylinux@sha256:ebbe4974967270dceb6914ded7ae062d750faacf0d82ba10455c65376e00af9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -400,6 +402,49 @@ $ docker pull rockylinux@sha256:4dce915ef813940b4ae3c8b43160044e7cbc0faf3b779f62
 	-	`sha256:03b215cee510db0480ef9f2cf018f7b0097ad995828d9516c0afe1a25556cde1`  
 		Last Modified: Tue, 17 Nov 2026 06:15:06 GMT  
 		Size: 1.3 MB (1264168 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `rockylinux:10-minimal` - linux; riscv64
+
+```console
+$ docker pull rockylinux@sha256:f82b11c7209fab1fcc20d51ae839b36e69a265d9ad53735907cfe3b0217b15aa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.6 MB (42609490 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6767096b67d0b766bd697df0365113545f4663364798da2216f2914462be602b`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Fri, 13 Nov 2026 03:36:16 GMT
+KIWI 10.2.44
+```
+
+-	Layers:
+	-	`sha256:a27c333396f2c06ca49d3d8ca396537a2b441c79a746e01aca5eea5b2faf0a4e`  
+		Last Modified: Mon, 16 Nov 2026 12:53:20 GMT  
+		Size: 42.6 MB (42609490 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `rockylinux:10-minimal` - unknown; unknown
+
+```console
+$ docker pull rockylinux@sha256:93392c33646e2bc969e4a8111fc26d48b99c2460068e6d9c24412e2034db0107
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1260227 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dbd06f7506861ea1fdfc14f8b89be56be3edec5a95a73e60210eb546a05c78e1`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:746f4f1f2199566a21e7a830b1dd16f670ac0ec33f224895a7a4826cee1a3782`  
+		Last Modified: Thu, 19 Nov 2026 00:47:28 GMT  
+		Size: 1.3 MB (1260227 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rockylinux:10-minimal` - linux; s390x
@@ -682,16 +727,18 @@ $ docker pull rockylinux@sha256:322c16ec951dd72382efd5cc73dca906287e1b42d5766f92
 ## `rockylinux:10.3-minimal`
 
 ```console
-$ docker pull rockylinux@sha256:ef5785445207e2e4d1a8c324755490acf4ae70a507632741ea69cfd883452662
+$ docker pull rockylinux@sha256:ebbe4974967270dceb6914ded7ae062d750faacf0d82ba10455c65376e00af9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -823,6 +870,49 @@ $ docker pull rockylinux@sha256:4dce915ef813940b4ae3c8b43160044e7cbc0faf3b779f62
 	-	`sha256:03b215cee510db0480ef9f2cf018f7b0097ad995828d9516c0afe1a25556cde1`  
 		Last Modified: Tue, 17 Nov 2026 06:15:06 GMT  
 		Size: 1.3 MB (1264168 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `rockylinux:10.3-minimal` - linux; riscv64
+
+```console
+$ docker pull rockylinux@sha256:f82b11c7209fab1fcc20d51ae839b36e69a265d9ad53735907cfe3b0217b15aa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.6 MB (42609490 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6767096b67d0b766bd697df0365113545f4663364798da2216f2914462be602b`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Fri, 13 Nov 2026 03:36:16 GMT
+KIWI 10.2.44
+```
+
+-	Layers:
+	-	`sha256:a27c333396f2c06ca49d3d8ca396537a2b441c79a746e01aca5eea5b2faf0a4e`  
+		Last Modified: Mon, 16 Nov 2026 12:53:20 GMT  
+		Size: 42.6 MB (42609490 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `rockylinux:10.3-minimal` - unknown; unknown
+
+```console
+$ docker pull rockylinux@sha256:93392c33646e2bc969e4a8111fc26d48b99c2460068e6d9c24412e2034db0107
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1260227 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dbd06f7506861ea1fdfc14f8b89be56be3edec5a95a73e60210eb546a05c78e1`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:746f4f1f2199566a21e7a830b1dd16f670ac0ec33f224895a7a4826cee1a3782`  
+		Last Modified: Thu, 19 Nov 2026 00:47:28 GMT  
+		Size: 1.3 MB (1260227 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rockylinux:10.3-minimal` - linux; s390x
@@ -1105,16 +1195,18 @@ $ docker pull rockylinux@sha256:322c16ec951dd72382efd5cc73dca906287e1b42d5766f92
 ## `rockylinux:10.3.20261112-minimal`
 
 ```console
-$ docker pull rockylinux@sha256:ef5785445207e2e4d1a8c324755490acf4ae70a507632741ea69cfd883452662
+$ docker pull rockylinux@sha256:ebbe4974967270dceb6914ded7ae062d750faacf0d82ba10455c65376e00af9a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 10
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
 	-	unknown; unknown
@@ -1246,6 +1338,49 @@ $ docker pull rockylinux@sha256:4dce915ef813940b4ae3c8b43160044e7cbc0faf3b779f62
 	-	`sha256:03b215cee510db0480ef9f2cf018f7b0097ad995828d9516c0afe1a25556cde1`  
 		Last Modified: Tue, 17 Nov 2026 06:15:06 GMT  
 		Size: 1.3 MB (1264168 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `rockylinux:10.3.20261112-minimal` - linux; riscv64
+
+```console
+$ docker pull rockylinux@sha256:f82b11c7209fab1fcc20d51ae839b36e69a265d9ad53735907cfe3b0217b15aa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **42.6 MB (42609490 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6767096b67d0b766bd697df0365113545f4663364798da2216f2914462be602b`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Fri, 13 Nov 2026 03:36:16 GMT
+KIWI 10.2.44
+```
+
+-	Layers:
+	-	`sha256:a27c333396f2c06ca49d3d8ca396537a2b441c79a746e01aca5eea5b2faf0a4e`  
+		Last Modified: Mon, 16 Nov 2026 12:53:20 GMT  
+		Size: 42.6 MB (42609490 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `rockylinux:10.3.20261112-minimal` - unknown; unknown
+
+```console
+$ docker pull rockylinux@sha256:93392c33646e2bc969e4a8111fc26d48b99c2460068e6d9c24412e2034db0107
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.3 MB (1260227 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dbd06f7506861ea1fdfc14f8b89be56be3edec5a95a73e60210eb546a05c78e1`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:746f4f1f2199566a21e7a830b1dd16f670ac0ec33f224895a7a4826cee1a3782`  
+		Last Modified: Thu, 19 Nov 2026 00:47:28 GMT  
+		Size: 1.3 MB (1260227 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rockylinux:10.3.20261112-minimal` - linux; s390x
