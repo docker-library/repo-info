@@ -1,10 +1,10 @@
-# `geonetwork:4.4.12`
+# `geonetwork:4.4.13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:171b4044cdd78dc8e0cf4cc6495f58d78487afe522e597bea26ce224c494efbe`
-- Created: `2026-11-14T00:19:36.846476786Z`
-- Virtual Size: ~ 748.52 Mb  
+- Image ID: `sha256:990ec420fd5950d4244097002ddbd5212c1e6cfc7598c913ebcc6a783e853faa`
+- Created: `2026-11-19T21:35:46.335623064Z`
+- Virtual Size: ~ 707.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -27,8 +27,8 @@
   - `GN_CONFIG_PROPERTIES=-Dgeonetwork.dir=/catalogue-data         -Dgeonetwork.formatter.dir=/catalogue-data/data/formatter         -Dgeonetwork.schema.dir=/opt/geonetwork/WEB-INF/data/config/schema_plugins         -Dgeonetwork.indexConfig.dir=/opt/geonetwork/WEB-INF/data/config/index`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC`
   - `GN_FILE=geonetwork.war`
-  - `GN_VERSION=4.4.12`
-  - `GN_DOWNLOAD_SHA256=36cbfaef045fc5e1881fc91729b7ea10b4052580cbd275f62fd2f435820d3a17`
+  - `GN_VERSION=4.4.13`
+  - `GN_DOWNLOAD_SHA256=2320f21e936dbe57b8160a554e8196734c1eaba787ed51eb421c47dc60c261ba`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -2019,9 +2019,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.18
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
