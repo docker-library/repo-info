@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0327f2d3440d8ea88a8ab674397d1fc84f536050c1b211e31c1effeda762ab31`
-- Created: `2026-11-13T21:49:43.027045329Z`
+- Image ID: `sha256:c5d4042fcae558375a0fd93c5696ee03ce46ee95bb105bfd3afe10cd2c4f8f9f`
+- Created: `2026-11-18T21:45:37.551826386Z`
 - Virtual Size: ~ 4.22 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-12T06:59:19Z`
+  - `build-date=2026-11-18T10:51:35Z`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9/ubi`
-  - `org.opencontainers.image.created=2026-11-12T06:59:19Z`
-  - `org.opencontainers.image.revision=e16abe53e7432e8a7471ba0826867fb2c0559cbb`
-  - `release=1794466612`
+  - `org.opencontainers.image.created=2026-11-18T10:51:35Z`
+  - `org.opencontainers.image.revision=8ca3d09ec8f691600b91e8a84ae50382e0c56b1e`
+  - `release=1794999017`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=e16abe53e7432e8a7471ba0826867fb2c0559cbb`
+  - `vcs-ref=8ca3d09ec8f691600b91e8a84ae50382e0c56b1e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.9`
@@ -776,15 +776,15 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-10.el9_8.1.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-10.el9_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.1.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_9.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_9.2.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
@@ -2811,15 +2811,15 @@ $ dnf --quiet download --source --url python3-requests-2.25.1-10.el9_6.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/python-requests-2.25.1-10.el9_6.src.rpm
 ```
 
-### `rpm` package: `python3-rpm-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `python3-rpm-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-rpm-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url python3-rpm-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
 ### `rpm` package: `python3-setuptools-53.0.0-15.el9.noarch`
@@ -2921,48 +2921,48 @@ $ dnf --quiet download --source --url rootfiles-8.1-35.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rootfiles-8.1-35.el9.src.rpm
 ```
 
-### `rpm` package: `rpm-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-build-libs-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-build-libs-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-build-libs-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
-### `rpm` package: `rpm-sign-libs-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-sign-libs-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-sign-libs-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-sign-libs-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
 ### `rpm` package: `rsync-3.2.7-1.el9_8.x86_64`
