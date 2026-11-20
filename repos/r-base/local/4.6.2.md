@@ -1125,19 +1125,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.233
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.233.dsc' gcc-defaults_1.233.dsc 37104 SHA256:d611eea722ea3a6982bc9f53bd8b2148d89acd87b5947f1efd62593d5670f228
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.233.tar.xz' gcc-defaults_1.233.tar.xz 55488 SHA256:19bb6d777543763959d371985e6ad3305562f58dcdd2d1cf58c126d208d7280a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.233/
 
-- https://sources.debian.net/src/gcc-defaults/1.233/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.233/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.233/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
@@ -1753,20 +1747,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas-dev/copyright`, `/usr/share/doc/
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.12.1-8
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1-8.dsc' lapack_3.12.1-8.dsc 3421 SHA256:9876dc7bf6e862ddaaac8ac1cadcd474c0dfb431504b09a93651170f8d50160f
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1.orig.tar.gz' lapack_3.12.1.orig.tar.gz 8067087 SHA256:2ca6407a001a474d4d4d35f3a61550156050c48016d949f0da0529c0aa052422
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.1-8.debian.tar.xz' lapack_3.12.1-8.debian.tar.xz 30156 SHA256:fbbb7f768ffec6869e01270f775cb48ba26adf503f36ebdc6a4ceef6c7f0b020
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lapack/3.12.1-8/
 
-- https://sources.debian.net/src/lapack/3.12.1-8/ (for browsing the source)
-- https://sources.debian.net/src/lapack/3.12.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lapack/3.12.1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lattice=0.23-1-1`
 
@@ -3440,21 +3427,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.5-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.dsc' p11-kit_0.26.5-1.dsc 2541 SHA256:042a8c16de5351864938d98f73e0b7f179ec5f23d33800b312dd3117c015bd28
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz' p11-kit_0.26.5.orig.tar.xz 1082584 SHA256:f2cc09111e44bf3fea58f023180b33acea90aa82d042d6fbb623fbc5ba033bb7
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz.asc' p11-kit_0.26.5.orig.tar.xz.asc 228 SHA256:ce4e85963532772baf57dc7c63d6cc537dec2ea27a6dc49cf25028488e85c2ec
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.debian.tar.xz' p11-kit_0.26.5-1.debian.tar.xz 24628 SHA256:a40a4ea9e417f99c1c00e3f55b232a457ad81f2eb79271fdc9c4f4dd1a925e3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.5-1/
 
-- https://sources.debian.net/src/p11-kit/0.26.5-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-8`
 
@@ -4141,20 +4120,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `Unlicense`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=262-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262-1.dsc' systemd_262-1.dsc 8873 SHA256:2b246c7d73e8a217bed0134183ace45e59a33b8271029487e5d5aaa73a21f87a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.orig.tar.gz' systemd_262.orig.tar.gz 19038647 SHA256:6aa77506c0644aa67f940a48e3d3a7368601f787e4f249139516d353f107bcab
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262-1.debian.tar.xz' systemd_262-1.debian.tar.xz 189824 SHA256:f3c33171e982901844e394d508c03a82d000c17df50dd484c59f5fa6687211e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/262-1/
 
-- https://sources.debian.net/src/systemd/262-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/262-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/262-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 
