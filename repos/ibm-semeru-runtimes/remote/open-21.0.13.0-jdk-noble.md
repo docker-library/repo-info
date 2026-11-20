@@ -1,7 +1,7 @@
 ## `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:04f2e9b6bff8036c1698ee9410059d88e26bf5f32c5dd85f42f45e57c2cb42f1
+$ docker pull ibm-semeru-runtimes@sha256:536fdf0e97808116b7a7556a47867d67c25be27d85b462b6c2720bd3ad5dcaa7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,163 +18,163 @@ $ docker pull ibm-semeru-runtimes@sha256:04f2e9b6bff8036c1698ee9410059d88e26bf5f
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - linux; amd64
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:36cc5a9f698a1e3728449e3e5d9665894555feeffa581c9e552efd8f5c027e2c
+$ docker pull ibm-semeru-runtimes@sha256:529a85ec145abf4f0708e478d218062150b69598895d94db407a8c62782f1163
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **291.2 MB (291215858 bytes)**  
+-	Total Size: **297.2 MB (297199866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca7e7c02adcd9f5f604078dd1f266ea705e7b7c2ef5a1b6f8ad035971d6ca86a`
+-	Image ID: `sha256:fd3404ff924002ed3c38598c780ad7af0c4d7b30d3c2017f8fd43912ada315df`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 10 Nov 2026 08:36:30 GMT
+# Tue, 10 Nov 2026 18:35:15 GMT
 ARG RELEASE
-# Tue, 10 Nov 2026 08:36:30 GMT
+# Tue, 10 Nov 2026 18:35:15 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Nov 2026 08:36:30 GMT
+# Tue, 10 Nov 2026 18:35:15 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Nov 2026 08:36:34 GMT
-ADD file:3c41cdb0a333e30d2a3c4a90a152da473ef44ae84245fd34a49167a6b8f26cc6 in / 
-# Tue, 10 Nov 2026 08:36:35 GMT
+# Tue, 10 Nov 2026 18:35:17 GMT
+ADD file:54dafd97985c3ec227e2c96be9290657cf2ab456885b5fc8a24c9278bca65e60 in / 
+# Tue, 10 Nov 2026 18:35:18 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Nov 2026 23:24:43 GMT
+# Fri, 20 Nov 2026 03:19:16 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 11 Nov 2026 23:24:43 GMT
+# Fri, 20 Nov 2026 03:19:16 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:24:43 GMT
+# Fri, 20 Nov 2026 03:19:16 GMT
 ENV JAVA_VERSION=21.0.13.0
-# Wed, 11 Nov 2026 23:24:50 GMT
+# Fri, 20 Nov 2026 03:20:55 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c8730b3746f3c2e5eb5ce7cc4415d4b86260cf7e9b12de469607c0c9c3c32dfb';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_aarch64_linux_21.0.13.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0c92b61ea02efe73a7b6d346f1d8324efd50fe1fb848bf3a031a577dc1181d45';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_x64_linux_21.0.13.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='992b583b2f477eca176dc77b997048b8baf63e465c26846e4e5456b21a536196';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_ppc64le_linux_21.0.13.0.tar.gz';          ;;        s390x)          ESUM='b72fb0510300707defbc73771509fd8bcfccb27cf5a17155a60ac5605155e67c';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_s390x_linux_21.0.13.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Wed, 11 Nov 2026 23:24:50 GMT
+# Fri, 20 Nov 2026 03:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Nov 2026 23:24:50 GMT
+# Fri, 20 Nov 2026 03:20:55 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Wed, 11 Nov 2026 23:25:53 GMT
+# Fri, 20 Nov 2026 03:21:58 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     export CATALINA_PID=/opt/tomcat-home/tomcat.pid;     TOMCAT_CHECKSUM="64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290";     TOMCAT_VERSION="9.0.123";     TOMCAT_FILENAME="apache-tomcat-${TOMCAT_VERSION}.tar.gz";     SUCCESS=;         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     for baseUrl in         https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin         https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin     ; do         if curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${baseUrl}/${TOMCAT_FILENAME}" && [ -s "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz ]; then             SUCCESS=1;             break;         fi;     done;     [ -n "$SUCCESS" ];     echo "${TOMCAT_CHECKSUM}  ${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     unset CATALINA_PID;     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:26538842dfbfed820e62531e047bc6cfd3359a7e0a52f59c1a951ccc6ca787fe`  
-		Last Modified: Wed, 11 Nov 2026 22:58:09 GMT  
-		Size: 29.8 MB (29793223 bytes)  
+	-	`sha256:8e8df94085bf9af8de500d2042195f1819a4c381b7f3be2a6b920cab65039050`  
+		Last Modified: Tue, 10 Nov 2026 20:09:19 GMT  
+		Size: 29.8 MB (29793297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3894667e0d5cfc087eb8b26b77f9d752f7159399e3192387e3252eb2bdc6f8d8`  
-		Last Modified: Wed, 11 Nov 2026 23:26:15 GMT  
-		Size: 12.8 MB (12793060 bytes)  
+	-	`sha256:c6b777e3ecc1f768933294846880d2a60e3d91602d9b914a077dc59c588c8827`  
+		Last Modified: Fri, 20 Nov 2026 03:20:38 GMT  
+		Size: 18.9 MB (18888569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e2f78d8bb84c0e0856fdd580d626f73910443307bc03c4d660c797c71107c55`  
-		Last Modified: Wed, 11 Nov 2026 23:26:19 GMT  
-		Size: 242.1 MB (242122618 bytes)  
+	-	`sha256:6a6bfd22347b81d1807978dc29b6530e252ae433e5658068a0fa5476c0708e74`  
+		Last Modified: Fri, 20 Nov 2026 03:22:22 GMT  
+		Size: 242.1 MB (242122579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e44be0b1ffa77c2f23f7d2531460135f9ba006c9f3cb974d4790e88644923a3`  
-		Last Modified: Wed, 11 Nov 2026 23:26:15 GMT  
-		Size: 6.5 MB (6506957 bytes)  
+	-	`sha256:2077ca5c3e60f9a830008d993fbc7c61f06ecb9cdb62ff266f650a10cc62caad`  
+		Last Modified: Fri, 20 Nov 2026 03:22:17 GMT  
+		Size: 6.4 MB (6395421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:176d9523c3cba21bf31e57dbdfabebc08d77c2ca88af4a85df5ef013abe05e45
+$ docker pull ibm-semeru-runtimes@sha256:93fb1229e7073fa9b4c672f45d2ccdca39b5b2359be2234eff371141752e1b7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3265555 bytes)**  
+-	Total Size: **3.3 MB (3265563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd2d91560565ce11a6a289d38de1f42b803d5c629711922247b6fd259f35f542`
+-	Image ID: `sha256:679f1eefc7474fe888c96ca9e44221b6b45f7a7fbc0ecd0a8b11441b955b093b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b68ba297d27a6faf266f0d1aebb9b392b5c21a32fc45fd71177936fa475ebdc6`  
-		Last Modified: Wed, 11 Nov 2026 23:26:14 GMT  
-		Size: 3.2 MB (3240365 bytes)  
+	-	`sha256:da5230d053b88a315d6884e03773d178445ba6687009cda8190721b40274d436`  
+		Last Modified: Fri, 20 Nov 2026 03:22:18 GMT  
+		Size: 3.2 MB (3240373 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3cdc2fe3aea22e92d110c8dceb6c369886b5bd04483375abda5340584d13c4cd`  
-		Last Modified: Wed, 11 Nov 2026 23:26:14 GMT  
+	-	`sha256:e39f07f28416b74c54f5c9c28f8b512fd9bdd49ba6aa250d8c5bba8f8fbfd433`  
+		Last Modified: Fri, 20 Nov 2026 03:22:17 GMT  
 		Size: 25.2 KB (25190 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:a4343017e821698525b96c101b2f8e273aba70774595d7e753772a3c64a4b842
+$ docker pull ibm-semeru-runtimes@sha256:09e7de60a94495cdc15182db934f96ae5b4292bfc4b3a11df2df0729f40be737
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.3 MB (286287476 bytes)**  
+-	Total Size: **292.1 MB (292075074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d168e49fea819854f3c9a1346de1cf4ac8e474c1bc99ef4a97abbe0423dc1a6`
+-	Image ID: `sha256:1c65ba8533982a5f4f29fb371bc3d1262539d4f57e41568a74b644b5db8cab93`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 10 Nov 2026 08:33:24 GMT
+# Tue, 10 Nov 2026 18:31:19 GMT
 ARG RELEASE
-# Tue, 10 Nov 2026 08:33:24 GMT
+# Tue, 10 Nov 2026 18:31:19 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Nov 2026 08:33:24 GMT
+# Tue, 10 Nov 2026 18:31:19 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Nov 2026 08:33:26 GMT
-ADD file:aeac09a5d64b4f3ea9f6270bab8e042832a855d9ab77269736eef18fda7dc7bb in / 
-# Tue, 10 Nov 2026 08:33:26 GMT
+# Tue, 10 Nov 2026 18:31:22 GMT
+ADD file:2a6d7d3511af5b48de2ccdad66ef2aa7544bf264ce928935ad4469c76a66169b in / 
+# Tue, 10 Nov 2026 18:31:22 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Nov 2026 23:28:45 GMT
+# Fri, 20 Nov 2026 03:19:58 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 11 Nov 2026 23:28:45 GMT
+# Fri, 20 Nov 2026 03:19:58 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:28:45 GMT
+# Fri, 20 Nov 2026 03:19:58 GMT
 ENV JAVA_VERSION=21.0.13.0
-# Wed, 11 Nov 2026 23:28:53 GMT
+# Fri, 20 Nov 2026 03:21:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c8730b3746f3c2e5eb5ce7cc4415d4b86260cf7e9b12de469607c0c9c3c32dfb';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_aarch64_linux_21.0.13.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0c92b61ea02efe73a7b6d346f1d8324efd50fe1fb848bf3a031a577dc1181d45';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_x64_linux_21.0.13.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='992b583b2f477eca176dc77b997048b8baf63e465c26846e4e5456b21a536196';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_ppc64le_linux_21.0.13.0.tar.gz';          ;;        s390x)          ESUM='b72fb0510300707defbc73771509fd8bcfccb27cf5a17155a60ac5605155e67c';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_s390x_linux_21.0.13.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Wed, 11 Nov 2026 23:28:53 GMT
+# Fri, 20 Nov 2026 03:21:41 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Nov 2026 23:28:53 GMT
+# Fri, 20 Nov 2026 03:21:41 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Wed, 11 Nov 2026 23:29:56 GMT
+# Fri, 20 Nov 2026 03:22:45 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     export CATALINA_PID=/opt/tomcat-home/tomcat.pid;     TOMCAT_CHECKSUM="64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290";     TOMCAT_VERSION="9.0.123";     TOMCAT_FILENAME="apache-tomcat-${TOMCAT_VERSION}.tar.gz";     SUCCESS=;         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     for baseUrl in         https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin         https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin     ; do         if curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${baseUrl}/${TOMCAT_FILENAME}" && [ -s "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz ]; then             SUCCESS=1;             break;         fi;     done;     [ -n "$SUCCESS" ];     echo "${TOMCAT_CHECKSUM}  ${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     unset CATALINA_PID;     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:0c72064db2470cf0efa5fa1935125d317d0c2f6d95855143ae6a816ce4b20b56`  
-		Last Modified: Wed, 11 Nov 2026 22:58:08 GMT  
-		Size: 29.0 MB (28965258 bytes)  
+	-	`sha256:6542099f24f28e8effaa18375a01b636d7898b6807da55b7c2d7a7a8d9eb103c`  
+		Last Modified: Tue, 10 Nov 2026 20:09:25 GMT  
+		Size: 29.0 MB (28965318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c97d9a41cea8098ce34818a4aa859c53ce18a9f69a6413ea8ddf3c87542a4e7`  
-		Last Modified: Wed, 11 Nov 2026 23:30:17 GMT  
-		Size: 12.8 MB (12830415 bytes)  
+	-	`sha256:765e3dc853bbf5a1b0669007f1b3c2c93ed30d3358c18e801074059b73d03b67`  
+		Last Modified: Fri, 20 Nov 2026 03:21:21 GMT  
+		Size: 18.7 MB (18684216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbb917eaa999f200abc2b1d8952d4248af23450e7faf89b39a5266794dd04e42`  
-		Last Modified: Wed, 11 Nov 2026 23:30:21 GMT  
-		Size: 238.2 MB (238172035 bytes)  
+	-	`sha256:8ee7dcc06b304f52be630f400b13978c9b6092c8e4f708c42742f3e9ac350015`  
+		Last Modified: Fri, 20 Nov 2026 03:23:10 GMT  
+		Size: 238.2 MB (238172019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1993e25afbbd61d3db03e5f441988b0bd575fed59685993e8f56748fd6d79910`  
-		Last Modified: Wed, 11 Nov 2026 23:30:17 GMT  
-		Size: 6.3 MB (6319768 bytes)  
+	-	`sha256:ecdbfbbacb4e001887c0e1d88da49f91f9bb19963d0a865b575f3fd3231da79a`  
+		Last Modified: Fri, 20 Nov 2026 03:23:06 GMT  
+		Size: 6.3 MB (6253521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:6345e09dfdc97eb8d58b47bf5cae37701cb00313a6e947caf3dbca5f3404f8c7
+$ docker pull ibm-semeru-runtimes@sha256:e343ece565b19aedfd9d76f8a8f1dbb8be2d5a1ea52f7511ffd92a150c8eaa59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3264207 bytes)**  
+-	Total Size: **3.3 MB (3264214 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c13bb6cc742561f1e1ff12d4533019e74438ca6d56847c394614c6ba475a8a0`
+-	Image ID: `sha256:1926d32159a4882a16ddb5e771f5672a9d45e02649303dd60667b5ced931222b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e8b8ff4e83b2da26013dc5356770781d72512a34f96cbac510aaeab19e152cd`  
-		Last Modified: Wed, 11 Nov 2026 23:30:16 GMT  
-		Size: 3.2 MB (3238907 bytes)  
+	-	`sha256:c6eb4043615e2297f26f469ad545752ac3345dea885da094c6f1fee5a1d29c57`  
+		Last Modified: Fri, 20 Nov 2026 03:23:05 GMT  
+		Size: 3.2 MB (3238915 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:88adff1e72362d3f013d474cb6849a1880473bd218fae302032b4a0ea50aed7e`  
-		Last Modified: Wed, 11 Nov 2026 23:30:16 GMT  
-		Size: 25.3 KB (25300 bytes)  
+	-	`sha256:011b43bc28dbbcde7f5b69db98803a9ba924a7efabf83aabe23423b0f2ec9b32`  
+		Last Modified: Fri, 20 Nov 2026 03:23:05 GMT  
+		Size: 25.3 KB (25299 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - linux; ppc64le
@@ -261,80 +261,80 @@ $ docker pull ibm-semeru-runtimes@sha256:079adafe6573aa06187234a9ced263448239d44
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - linux; s390x
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:d207ed26ca9975d45f7f86ce328b00b2f7e374e950440ab63abdeb5800ee4216
+$ docker pull ibm-semeru-runtimes@sha256:48594798ef889293938b78cafaff90381fcb7772c1f88228fa47c0d68442af96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.1 MB (296124528 bytes)**  
+-	Total Size: **301.4 MB (301385625 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fb3d370db251331b25ae3c0e6c00272b551c384ea9c4801b4184d3842bb6378`
+-	Image ID: `sha256:adf9bf31a892100c6ccd5cd68276220f23da97159b65ac19fb006d9588f2265b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 10 Nov 2026 08:37:01 GMT
+# Tue, 10 Nov 2026 18:30:54 GMT
 ARG RELEASE
-# Tue, 10 Nov 2026 08:37:01 GMT
+# Tue, 10 Nov 2026 18:30:54 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Nov 2026 08:37:01 GMT
+# Tue, 10 Nov 2026 18:30:54 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Nov 2026 08:37:02 GMT
-ADD file:cd6ae236aa13077d423218b776b66e2af298e76f13baa19a6432bfa2416d84e1 in / 
-# Tue, 10 Nov 2026 08:37:03 GMT
+# Tue, 10 Nov 2026 18:30:56 GMT
+ADD file:f57d73889514e35770bca8a6b376ae28a49d35f7eca0530120c0e5edda118257 in / 
+# Tue, 10 Nov 2026 18:30:56 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Nov 2026 23:19:05 GMT
+# Fri, 20 Nov 2026 03:15:59 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 11 Nov 2026 23:19:05 GMT
+# Fri, 20 Nov 2026 03:15:59 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:19:05 GMT
+# Fri, 20 Nov 2026 03:15:59 GMT
 ENV JAVA_VERSION=21.0.13.0
-# Wed, 11 Nov 2026 23:37:20 GMT
+# Fri, 20 Nov 2026 03:16:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c8730b3746f3c2e5eb5ce7cc4415d4b86260cf7e9b12de469607c0c9c3c32dfb';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_aarch64_linux_21.0.13.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0c92b61ea02efe73a7b6d346f1d8324efd50fe1fb848bf3a031a577dc1181d45';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_x64_linux_21.0.13.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='992b583b2f477eca176dc77b997048b8baf63e465c26846e4e5456b21a536196';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_ppc64le_linux_21.0.13.0.tar.gz';          ;;        s390x)          ESUM='b72fb0510300707defbc73771509fd8bcfccb27cf5a17155a60ac5605155e67c';          BINARY_URL='https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_s390x_linux_21.0.13.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Wed, 11 Nov 2026 23:37:20 GMT
+# Fri, 20 Nov 2026 03:16:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Nov 2026 23:37:20 GMT
+# Fri, 20 Nov 2026 03:16:57 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Wed, 11 Nov 2026 23:38:26 GMT
+# Fri, 20 Nov 2026 03:18:01 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     export CATALINA_PID=/opt/tomcat-home/tomcat.pid;     TOMCAT_CHECKSUM="64b1130e719399c0a409e6996081433b16af8d9c89266c7aaa9849af70a1815feca91e13896f5ccc41451dc5759716d1c84882682de955822c30509de102f290";     TOMCAT_VERSION="9.0.123";     TOMCAT_FILENAME="apache-tomcat-${TOMCAT_VERSION}.tar.gz";     SUCCESS=;         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     for baseUrl in         https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin         https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin     ; do         if curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${baseUrl}/${TOMCAT_FILENAME}" && [ -s "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz ]; then             SUCCESS=1;             break;         fi;     done;     [ -n "$SUCCESS" ];     echo "${TOMCAT_CHECKSUM}  ${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 20;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     unset CATALINA_PID;     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:bd74e3675913208a1119a54d3789c9fc5c9abdb19b714ce963adc875d0495d64`  
-		Last Modified: Wed, 11 Nov 2026 22:58:51 GMT  
-		Size: 30.0 MB (29967584 bytes)  
+	-	`sha256:d6a4828736418640f88890fd03d6d03e5c40e83e24d598ed323f41ba7e349b4f`  
+		Last Modified: Tue, 10 Nov 2026 20:09:53 GMT  
+		Size: 30.0 MB (29967433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f9b7990f10daaf474e83ccd2a525e7b4c76b857b054e76380c42a2ddad6bdb4`  
-		Last Modified: Wed, 11 Nov 2026 23:20:30 GMT  
-		Size: 13.1 MB (13098103 bytes)  
+	-	`sha256:d810093a916bbeaa2cfdb04f28bfd258edaf9861b718fb98cd11dd94c072a39f`  
+		Last Modified: Fri, 20 Nov 2026 03:17:24 GMT  
+		Size: 18.3 MB (18327372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d89245539939ffe9e8de4779bec830cd5ca57545581769366664a884b157b99`  
-		Last Modified: Wed, 11 Nov 2026 23:39:04 GMT  
-		Size: 246.5 MB (246472686 bytes)  
+	-	`sha256:0a750ada390e1d9ab3c81c272f13ad5f437abcada2f7b2e9a806e37a37141c39`  
+		Last Modified: Fri, 20 Nov 2026 03:18:36 GMT  
+		Size: 246.5 MB (246472687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3132f2fda381fda44baa7e7bdaeda4a2e655ce10624b6b47e7bf8845693168b4`  
-		Last Modified: Wed, 11 Nov 2026 23:38:59 GMT  
-		Size: 6.6 MB (6586155 bytes)  
+	-	`sha256:7f1c9d0c529861e19f5cbb293be4b6e565e6b8dc6ad489ff429352d594a7511e`  
+		Last Modified: Fri, 20 Nov 2026 03:18:31 GMT  
+		Size: 6.6 MB (6618133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ibm-semeru-runtimes:open-21.0.13.0-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:ec29359e96c482fd2169fe3c38dd78a8dbc6c732bfbd266d8b67546d0da9fd25
+$ docker pull ibm-semeru-runtimes@sha256:2ca8b7d6465a2e265c166ab42870c9da1336721bcdfb7b1ff1279311b1b78c6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3267753 bytes)**  
+-	Total Size: **3.3 MB (3267761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49a96cdbfd7deb9baf735c2b8611eceb4910376295784e993d67313f5a07fbab`
+-	Image ID: `sha256:ba1cce5011e8d836b47023f2eb0bb08f6cd801872e07aca9eb0be8408b014043`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e6791e94ebaf23a35b87e26b2aac7fa101b05df1ebbc3fd38ede38293757807`  
-		Last Modified: Wed, 11 Nov 2026 23:38:59 GMT  
-		Size: 3.2 MB (3242563 bytes)  
+	-	`sha256:3ca134c7bfb16e9472732275807a05263b0565a6714b437635b214aea190e5c8`  
+		Last Modified: Fri, 20 Nov 2026 03:18:31 GMT  
+		Size: 3.2 MB (3242571 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e31dac61a67977c495ef4bab7e15ae8b4bfaa0a5d904e965b5ec607b42ad18e0`  
-		Last Modified: Wed, 11 Nov 2026 23:38:59 GMT  
+	-	`sha256:c01a445cc773661b5d13776328c41e09c4ba0f81f09468faf2591477437460a4`  
+		Last Modified: Fri, 20 Nov 2026 03:18:30 GMT  
 		Size: 25.2 KB (25190 bytes)  
 		MIME: application/vnd.in-toto+json
