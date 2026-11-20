@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3e3e59c2df4460d8b622265443a20d3d39a3136d8f233cebaa8e1c70b2777fb`
-- Created: `2026-11-05T20:02:08.490336363Z`
-- Virtual Size: ~ 158.94 Mb  
+- Image ID: `sha256:52255e3d813167a31baef75218ebd3e0454269f4c1004eb652f79179a693d136`
+- Created: `2026-11-19T15:02:04.88216051Z`
+- Virtual Size: ~ 165.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
-  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
+  - `PHP_VERSION=8.4.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.28.tar.xz.asc`
+  - `PHP_SHA256=0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72`
   - `GOSU_VERSION=1.19`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -508,16 +508,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2020 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -780,16 +780,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.22.2-r1 description:
+krb5-libs-1.22.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.22.2-r1 webpage:
+krb5-libs-1.22.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.22.2-r1 installed size:
-1747 KiB
+krb5-libs-1.22.3-r0 installed size:
+1751 KiB
 
-krb5-libs-1.22.2-r1 license:
+krb5-libs-1.22.3-r0 license:
 MIT
 
 ```
@@ -916,16 +916,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -1392,16 +1392,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -1834,16 +1834,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -1936,16 +1936,16 @@ GPL-3.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.5.0-r0 description:
+rsync-3.5.2-r1 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.5.0-r0 webpage:
+rsync-3.5.2-r1 webpage:
 https://rsync.samba.org/
 
-rsync-3.5.0-r0 installed size:
-431 KiB
+rsync-3.5.2-r1 installed size:
+444 KiB
 
-rsync-3.5.0-r0 license:
+rsync-3.5.2-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -2123,16 +2123,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
