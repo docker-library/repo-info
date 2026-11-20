@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b54b0bbd485e131cf63c0078c650d771c858c67fd42b6a9782750958a80cade3`
-- Created: `2026-11-05T08:43:27.72287709Z`
-- Virtual Size: ~ 681.16 Mb  
+- Image ID: `sha256:d3a901c1b0b70fbff9fbb4a1cf9173f6c477d8c6eb5713f59fb67b8833b7442b`
+- Created: `2026-11-19T15:09:38.406984667Z`
+- Virtual Size: ~ 681.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.35`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.35.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.35.tar.xz.asc`
-  - `PHP_SHA256=5737b98601fe5ab1b8c5db0c82ed3158acb9283ed3081ffe2faffb9ac81455e6`
+  - `PHP_VERSION=8.2.36`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.36.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.36.tar.xz.asc`
+  - `PHP_SHA256=df50a00d2b453096608bf2bd98a9fab9a3df8678a77b93011b65c3cfe9a018fa`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -2189,11 +2189,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.115-2`
+### `dpkg` source package: `linux=6.12.117-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.115-2`
+- `linux-libc-dev=6.12.117-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2207,17 +2207,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.115-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115-2.dsc' linux_6.12.115-2.dsc 294628 SHA256:0baf11fbc9cd651c2238c1b394142a9d58006bba604e5840f38086331286ee5c
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115.orig.tar.xz' linux_6.12.115.orig.tar.xz 151676884 SHA256:eaccd6c987f438de08039859df5507600a31245bb041ca62f2ef3fd30bd2172d
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115-2.debian.tar.xz' linux_6.12.115-2.debian.tar.xz 1986428 SHA256:6dfede7b22c69e60578764470734eeccead495111e1b417b224303d7a2de5df9
+$ apt-get source -qq --print-uris linux=6.12.117-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.dsc' linux_6.12.117-1.dsc 290418 SHA256:041c7af261546dbad4ee57ccb237f02a8697b762be34aed2e1617ed49595942a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117.orig.tar.xz' linux_6.12.117.orig.tar.xz 151928652 SHA256:77cf7a48a73aeaa7cf4f94cb6d17f8fe545bf33a5dd8a56d6428db3a54645c74
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.debian.tar.xz' linux_6.12.117-1.debian.tar.xz 1999304 SHA256:e3f3bec0723f780d9ef2a2b3215aea25d34c61cd884f1f858c9708a846c4f8f9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.115-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.115-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.115-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.117-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.117-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.117-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -2807,11 +2807,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-17=17.11-0+deb13u1`
+### `dpkg` source package: `postgresql-17=17.12-0+deb13u1`
 
 Binary Packages:
 
-- `libpq5:amd64=17.11-0+deb13u1`
+- `libpq5:amd64=17.12-0+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2831,17 +2831,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-17=17.11-0+deb13u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.dsc' postgresql-17_17.11-0+deb13u1.dsc 4284 SHA256:bf148ae423a982707c3f60672c3a072ef62b701bd9f5df847d9f4b8c9b3e3b18
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11.orig.tar.bz2' postgresql-17_17.11.orig.tar.bz2 21787224 SHA256:dd27f2b3c59e73ed14aa3324901242bf69a032a6347805f274e6260322d42979
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.11-0+deb13u1.debian.tar.xz 37348 SHA256:82851f4dfeb372c99b94b412e2e3046a8eee7771098e42ac1fa234bef2611cbd
+$ apt-get source -qq --print-uris postgresql-17=17.12-0+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12-0%2bdeb13u1.dsc' postgresql-17_17.12-0+deb13u1.dsc 4522 SHA256:e406fdcde8e58a616e65b84237ca1f1d92605ad4c3fc5a5264815439b8fc1611
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12.orig.tar.bz2' postgresql-17_17.12.orig.tar.bz2 22292547 SHA256:9cf136a703d8ee2f83465c43be4e9e8e7930c82b0bfba13be7e2537be769ac55
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-17/postgresql-17_17.12-0%2bdeb13u1.debian.tar.xz' postgresql-17_17.12-0+deb13u1.debian.tar.xz 35996 SHA256:2e02b8b27ec24abf8ee8ed3395703b02708bdf35284b65b254e84bc27351b5b6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.11-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.11-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-17/17.12-0+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-17/17.12-0+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-17/17.12-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=4.1-1`
 
@@ -3322,11 +3322,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1+deb13u1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1+b1`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
@@ -3335,14 +3335,14 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1.dsc' zlib_1.3.dfsg+really1.3.1-1.dsc 2637 SHA256:ede2791e29c1d3b422f9208bdd7edf040c20445ea1e7453a72037576e64fa197
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1.orig.tar.gz' zlib_1.3.dfsg+really1.3.1.orig.tar.gz 1325737 SHA256:60dd315c07f616887caa029408308a018ace66e3d142726a97db164b3b8f69fb
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1.debian.tar.xz 16576 SHA256:9ed525955ce9fb0c1b39be8ff98f73450dbfc6305a9a27e6149c8972d38a0a9e
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1%2bdeb13u1.dsc' zlib_1.3.dfsg+really1.3.1-1+deb13u1.dsc 3271 SHA256:7954224611bd043d62c094abf81cefcf9d97276479fc495767fcbc92cc6552f2
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1.orig.tar.gz' zlib_1.3.dfsg+really1.3.1.orig.tar.gz 1325737 SHA256:60dd315c07f616887caa029408308a018ace66e3d142726a97db164b3b8f69fb
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1%2bdeb13u1.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1+deb13u1.debian.tar.xz 17836 SHA256:4e99de80447700cf16ecf8ed3e77fabb39f085a5fffc66713466ccf07397cc04
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/ (for browsing the source)
-- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
