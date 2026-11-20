@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7459dd0350256f7c4363f9ba57150dd5352cb5eb52a14b8076c466bd1ba1128`
-- Created: `2026-11-05T20:21:45.128991629Z`
-- Virtual Size: ~ 373.28 Mb  
+- Image ID: `sha256:2c1f004c915f910b88bef4cbc10825c60b30df56d9610992ae483173fedf2aee`
+- Created: `2026-11-20T17:56:44.205661559Z`
+- Virtual Size: ~ 373.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.21+9`
+  - `JAVA_VERSION=jdk-17.0.21.1+2`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=4.0.33`
 
@@ -500,16 +500,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2020 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```

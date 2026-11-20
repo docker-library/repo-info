@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:703e4317f70ccfaf3e5ab6839a4ffed3d7a32aaabad8b32505625ec64c213c3e`
-- Created: `2026-11-16T20:06:41.268504529Z`
+- Image ID: `sha256:de88727eb6d887afc78c8a8f59dcc3a68c789c3e424b30db279c2c7bfa9a351b`
+- Created: `2026-11-20T04:20:48.139244713Z`
 - Virtual Size: ~ 325.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -636,30 +636,15 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.dsc' gcc-12_12.3.0-1ubuntu1~22.04.3.dsc 27845 SHA256:ec040a1fa94186bd53535f7156e086e67863bb55836ae7fd7fef64f1ab66b04d
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.15`
-
-Binary Packages:
-
-- `libc-bin=2.35-0ubuntu3.15`
-- `libc6:amd64=2.35-0ubuntu3.15`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
-
-- `GFDL-1.3`
-- `GPL-2`
-- `LGPL-2.1`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.18`
 
 Binary Packages:
 
+- `libc-bin=2.35-0ubuntu3.18`
+- `libc6:amd64=2.35-0ubuntu3.18`
 - `locales=2.35-0ubuntu3.18`
 
-Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
