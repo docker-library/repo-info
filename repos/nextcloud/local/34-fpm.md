@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6524dcead3dde22b7ee77b62a956de51f8d256338e0cf3e4b5dadcce5aae2ed`
-- Created: `2026-11-13T22:15:45.188305169Z`
+- Image ID: `sha256:008fa639e84b0846cb2da55796eb0d3b6d6270a010679c2c07eca01c2fae5718`
+- Created: `2026-11-19T15:12:55.366235799Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.12.tar.xz.asc`
-  - `PHP_SHA256=08bc2eba2a588654ade1357174aa646b761556c862dda0678345ee29ed481209`
+  - `PHP_VERSION=8.5.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.13.tar.xz.asc`
+  - `PHP_SHA256=607602acaf0c3061818e9916ec44a058e8b3d43959a83862b9cd3ec7bf5b785f`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -3168,11 +3168,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.115-2`
+### `dpkg` source package: `linux=6.12.117-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.115-2`
+- `linux-libc-dev=6.12.117-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3186,17 +3186,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.115-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115-2.dsc' linux_6.12.115-2.dsc 294628 SHA256:0baf11fbc9cd651c2238c1b394142a9d58006bba604e5840f38086331286ee5c
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115.orig.tar.xz' linux_6.12.115.orig.tar.xz 151676884 SHA256:eaccd6c987f438de08039859df5507600a31245bb041ca62f2ef3fd30bd2172d
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.115-2.debian.tar.xz' linux_6.12.115-2.debian.tar.xz 1986428 SHA256:6dfede7b22c69e60578764470734eeccead495111e1b417b224303d7a2de5df9
+$ apt-get source -qq --print-uris linux=6.12.117-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.dsc' linux_6.12.117-1.dsc 290418 SHA256:041c7af261546dbad4ee57ccb237f02a8697b762be34aed2e1617ed49595942a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117.orig.tar.xz' linux_6.12.117.orig.tar.xz 151928652 SHA256:77cf7a48a73aeaa7cf4f94cb6d17f8fe545bf33a5dd8a56d6428db3a54645c74
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.117-1.debian.tar.xz' linux_6.12.117-1.debian.tar.xz 1999304 SHA256:e3f3bec0723f780d9ef2a2b3215aea25d34c61cd884f1f858c9708a846c4f8f9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.115-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.115-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.115-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.117-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.117-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.117-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -3538,24 +3538,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openexr=3.2.12-1~deb13u1`
+### `dpkg` source package: `openexr=3.2.12-1~deb13u2`
 
 Binary Packages:
 
-- `libopenexr-3-1-30:amd64=3.2.12-1~deb13u1`
+- `libopenexr-3-1-30:amd64=3.2.12-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`)
 
 - `BSD-3-clause`
 - `openexr`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openexr=3.2.12-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_3.2.12-1%7edeb13u2.dsc' openexr_3.2.12-1~deb13u2.dsc 2059 SHA256:deebe1012112fa1edb2ea820713981ab4c697046463d54888513317b7e94a906
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_3.2.12.orig.tar.gz' openexr_3.2.12.orig.tar.gz 18898638 SHA256:95a6499083fd011cabfb00d1295fe5c71e1bd7ef8749cb87b057d7c2e0205188
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_3.2.12-1%7edeb13u2.debian.tar.xz' openexr_3.2.12-1~deb13u2.debian.tar.xz 33032 SHA256:247d53255d7417062f49d1063eafef698619ce9a78089def8521622f50b621b7
+```
 
-- http://snapshot.debian.org/package/openexr/3.2.12-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openexr/3.2.12-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openexr/3.2.12-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openexr/3.2.12-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.5.3-2.1~deb13u2`
 
