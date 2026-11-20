@@ -1,22 +1,22 @@
-# `nginx:1.31.8-alpine-perl`
+# `nginx:1.31.9-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b932e5b604c64c94aeaa5bc83e5db1f56daa058b3db1dcaf41b73b7bc77327c`
-- Created: `2026-11-05T20:13:19.106780257Z`
-- Virtual Size: ~ 103.58 Mb  
+- Image ID: `sha256:7945eae7a72c275a833d9483cf962db0725738cff41858c771223660045cecbc`
+- Created: `2026-11-18T17:08:49.41086017Z`
+- Virtual Size: ~ 103.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.8`
+  - `NGINX_VERSION=1.31.9`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=1.0.2`
   - `NJS_RELEASE=1`
-  - `ACME_VERSION=0.4.1`
+  - `ACME_VERSION=0.4.2`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -892,16 +892,16 @@ X11
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.43-r3 description:
+libxslt-1.1.43-r4 description:
 XML stylesheet transformation library
 
-libxslt-1.1.43-r3 webpage:
+libxslt-1.1.43-r4 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.43-r3 installed size:
-301 KiB
+libxslt-1.1.43-r4 installed size:
+305 KiB
 
-libxslt-1.1.43-r3 license:
+libxslt-1.1.43-r4 license:
 X11
 
 ```
@@ -1011,16 +1011,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.8-r1 description:
+nginx-1.31.9-r1 description:
 High performance web server
 
-nginx-1.31.8-r1 webpage:
+nginx-1.31.9-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.8-r1 installed size:
-2857 KiB
+nginx-1.31.9-r1 installed size:
+2861 KiB
 
-nginx-1.31.8-r1 license:
+nginx-1.31.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-1.31.8-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.8.0.4.1-r1 description:
+nginx-module-acme-1.31.9.0.4.2-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.8.0.4.1-r1 webpage:
+nginx-module-acme-1.31.9.0.4.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.8.0.4.1-r1 installed size:
-8043 KiB
+nginx-module-acme-1.31.9.0.4.2-r1 installed size:
+8027 KiB
 
-nginx-module-acme-1.31.8.0.4.1-r1 license:
+nginx-module-acme-1.31.9.0.4.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-acme-1.31.8.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.8-r1 description:
+nginx-module-geoip-1.31.9-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.8-r1 webpage:
+nginx-module-geoip-1.31.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.8-r1 installed size:
+nginx-module-geoip-1.31.9-r1 installed size:
 128 KiB
 
-nginx-module-geoip-1.31.8-r1 license:
+nginx-module-geoip-1.31.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-geoip-1.31.8-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.8-r1 description:
+nginx-module-image-filter-1.31.9-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.8-r1 webpage:
+nginx-module-image-filter-1.31.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.8-r1 installed size:
+nginx-module-image-filter-1.31.9-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.8-r1 license:
+nginx-module-image-filter-1.31.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-image-filter-1.31.8-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.8.1.0.2-r1 description:
+nginx-module-njs-1.31.9.1.0.2-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.8.1.0.2-r1 webpage:
+nginx-module-njs-1.31.9.1.0.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.8.1.0.2-r1 installed size:
+nginx-module-njs-1.31.9.1.0.2-r1 installed size:
 9924 KiB
 
-nginx-module-njs-1.31.8.1.0.2-r1 license:
+nginx-module-njs-1.31.9.1.0.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-njs-1.31.8.1.0.2-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.31.8-r1 description:
+nginx-module-perl-1.31.9-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.31.8-r1 webpage:
+nginx-module-perl-1.31.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.31.8-r1 installed size:
+nginx-module-perl-1.31.9-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.31.8-r1 license:
+nginx-module-perl-1.31.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1113,16 +1113,16 @@ nginx-module-perl-1.31.8-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.8-r1 description:
+nginx-module-xslt-1.31.9-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.8-r1 webpage:
+nginx-module-xslt-1.31.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.8-r1 installed size:
+nginx-module-xslt-1.31.9-r1 installed size:
 47 KiB
 
-nginx-module-xslt-1.31.8-r1 license:
+nginx-module-xslt-1.31.9-r1 license:
 2-clause BSD-like license
 
 ```

@@ -1,20 +1,20 @@
-# `nginx:1.31.8-otel`
+# `nginx:1.31.9-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:301802340c86a99cf4e7f2e8c865a4f393944385527762335586bfb070c01647`
-- Created: `2026-11-05T08:23:33.360757668Z`
-- Virtual Size: ~ 172.05 Mb  
+- Image ID: `sha256:eb95b9266bbe0592c4ad4fb7b70e3d525fa456789f8230f59a2c733267ff0799`
+- Created: `2026-11-18T16:35:47.479662348Z`
+- Virtual Size: ~ 172.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.8`
+  - `NGINX_VERSION=1.31.9`
   - `NJS_VERSION=1.0.2`
   - `NJS_RELEASE=1~trixie`
-  - `ACME_VERSION=0.4.1`
+  - `ACME_VERSION=0.4.2`
   - `PKG_RELEASE=1~trixie`
   - `DYNPKG_RELEASE=1~trixie`
   - `OTEL_VERSION=0.1.2`
@@ -330,11 +330,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `c-ares=1.34.5-1+deb13u1`
+### `dpkg` source package: `c-ares=1.34.9-1~deb13u1`
 
 Binary Packages:
 
-- `libcares2:amd64=1.34.5-1+deb13u1`
+- `libcares2:amd64=1.34.9-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcares2/copyright`)
 
@@ -356,18 +356,18 @@ Licenses: (parsed from: `/usr/share/doc/libcares2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris c-ares=1.34.5-1+deb13u1
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5-1%2bdeb13u1.dsc' c-ares_1.34.5-1+deb13u1.dsc 2388 SHA256:8848358552603070f98f37679a9361b4da8405b841bbf59d002556571670f7f1
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5.orig.tar.gz' c-ares_1.34.5.orig.tar.gz 1009261 SHA256:7d935790e9af081c25c495fd13c2cfcda4792983418e96358ef6e7320ee06346
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5.orig.tar.gz.asc' c-ares_1.34.5.orig.tar.gz.asc 228 SHA256:146fcf8ac828903521da52b76852843480a9ee0bdd5e145f81e6df0bb27c40bd
-'http://deb.debian.org/debian/pool/main/c/c-ares/c-ares_1.34.5-1%2bdeb13u1.debian.tar.xz' c-ares_1.34.5-1+deb13u1.debian.tar.xz 21764 SHA256:f815c2a7bf9dade9e98ac06ecf19de05678d3bd8507e6c0e60e4187320b30be5
+$ apt-get source -qq --print-uris c-ares=1.34.9-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.9-1%7edeb13u1.dsc' c-ares_1.34.9-1~deb13u1.dsc 1888 SHA256:497dd2e71ac7ddb45cf6c540916e693db8767433c18f6ddd8e5c7653623c225a
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.9.orig.tar.gz' c-ares_1.34.9.orig.tar.gz 1083895 SHA256:9364b70a12eb59a06830fb488d9357f90100dff0d98b23ea3593a183d43e6f2f
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.9.orig.tar.gz.asc' c-ares_1.34.9.orig.tar.gz.asc 265 SHA256:47c70be87138c8b67c0d7dd5b14557a3f545a7047bd7c28ed5aab1b66aae2f84
+'http://deb.debian.org/debian-security/pool/updates/main/c/c-ares/c-ares_1.34.9-1%7edeb13u1.debian.tar.xz' c-ares_1.34.9-1~deb13u1.debian.tar.xz 19132 SHA256:85c330a08d892a3b91d9678954512763fa2022395a67ee11c30f74fd3e9166be
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/c-ares/1.34.5-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/c-ares/1.34.5-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/c-ares/1.34.5-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/c-ares/1.34.9-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/c-ares/1.34.9-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/c-ares/1.34.9-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20250419+deb13u1`
 
@@ -2713,11 +2713,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.31.8+0.4.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.31.9+0.4.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.31.8+0.4.1-1~trixie`
+- `nginx-module-acme=1.31.9+0.4.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2727,11 +2727,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.31.8-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.31.9-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.31.8-1~trixie`
+- `nginx-module-geoip=1.31.9-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2741,11 +2741,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.31.8-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.31.9-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.31.8-1~trixie`
+- `nginx-module-image-filter=1.31.9-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2755,11 +2755,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.31.8+1.0.2-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.31.9+1.0.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.31.8+1.0.2-1~trixie`
+- `nginx-module-njs=1.31.9+1.0.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2769,11 +2769,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-otel=1.31.8+0.1.2-1~trixie`
+### `dpkg` source package: `nginx-module-otel=1.31.9+0.1.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-otel=1.31.8+0.1.2-1~trixie`
+- `nginx-module-otel=1.31.9+0.1.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2783,11 +2783,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.31.8-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.31.9-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.31.8-1~trixie`
+- `nginx-module-xslt=1.31.9-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2797,11 +2797,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.31.8-1~trixie`
+### `dpkg` source package: `nginx=1.31.9-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.31.8-1~trixie`
+- `nginx=1.31.9-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
