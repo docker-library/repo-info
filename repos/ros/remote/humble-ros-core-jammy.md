@@ -1,7 +1,7 @@
 ## `ros:humble-ros-core-jammy`
 
 ```console
-$ docker pull ros@sha256:94acac3899448b2097ef8e925d8a9854ecd1fd7cb1690c3bbd7f7079f11ef258
+$ docker pull ros@sha256:1f9ff77348bbd0a2c06c1ee222b71e2e6dbf54b73cff63387a7bd4467a23a354
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,191 +14,191 @@ $ docker pull ros@sha256:94acac3899448b2097ef8e925d8a9854ecd1fd7cb1690c3bbd7f707
 ### `ros:humble-ros-core-jammy` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:f4630e385d46e8832d94b465e0e4f25466e3848d61fdf360cd5599a64d2a5ccc
+$ docker pull ros@sha256:2c97330437da2e891473c1035e82d3ff706c2d9771c375902cb913265113d2aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.6 MB (142578434 bytes)**  
+-	Total Size: **142.6 MB (142595858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b621b717cd1167a6c484d2a9e80384f64838ea901756552bba99fae1c377837`
+-	Image ID: `sha256:397b1e507a26abf3de49461efa657ed5342c92bf9eea6a95f73c13539ec7fe15`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 10 Nov 2026 08:08:35 GMT
+# Tue, 17 Nov 2026 09:18:24 GMT
 ARG RELEASE
-# Tue, 10 Nov 2026 08:08:35 GMT
+# Tue, 17 Nov 2026 09:18:24 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Nov 2026 08:08:35 GMT
+# Tue, 17 Nov 2026 09:18:24 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Nov 2026 08:08:37 GMT
-ADD file:f5e63f24ff2ea992d0d2b5e5c013cff5b0b8054baa392912813e7d238f62d44c in / 
-# Tue, 10 Nov 2026 08:08:37 GMT
+# Tue, 17 Nov 2026 09:18:27 GMT
+ADD file:577abcbf057cdd5d520b6dbfa56d772c9fb1fa3dd63cb6db8942d63dfc9d902b in / 
+# Tue, 17 Nov 2026 09:18:27 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Nov 2026 23:34:41 GMT
+# Fri, 20 Nov 2026 03:29:41 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:34:49 GMT
+# Fri, 20 Nov 2026 03:29:48 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:34:54 GMT
+# Fri, 20 Nov 2026 03:29:52 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.jammy_all.deb     && echo "767884cf4ed03116b9d64438930a832ed854147ae435279a7924dfdf60f94433 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 ENV LANG=C.UTF-8
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 ENV ROS_DISTRO=humble
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-ros-core=0.10.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 11 Nov 2026 23:36:42 GMT
+# Fri, 20 Nov 2026 03:30:27 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:02163de04dd1fb14a97b06804be3fbc51b564fa8744b8f97153744e0cba5de4c`  
-		Last Modified: Tue, 10 Nov 2026 08:54:46 GMT  
-		Size: 30.1 MB (30069533 bytes)  
+	-	`sha256:ba082564e6605eeb2e1abc91a762985d2e8afea393433de08e798c1eee36d028`  
+		Last Modified: Tue, 17 Nov 2026 10:29:03 GMT  
+		Size: 30.1 MB (30069815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:074560c8655e85fabe0716fa1b96ad8da5d4d8034fc8c77581421da8b3c63b8b`  
-		Last Modified: Wed, 11 Nov 2026 23:37:08 GMT  
-		Size: 1.2 MB (1214774 bytes)  
+	-	`sha256:fd66fcdd35c1c0e7c55370dda64e2ce38a9dd0555069440c43e706fba574dabe`  
+		Last Modified: Fri, 20 Nov 2026 03:30:51 GMT  
+		Size: 1.2 MB (1214950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a76521ffea3356ff95836ef5face012f818645dd2fe237624f45e71417043189`  
-		Last Modified: Wed, 11 Nov 2026 23:37:08 GMT  
-		Size: 6.0 MB (5952707 bytes)  
+	-	`sha256:5509c707d84c2229a1d03ce0161c933e7337442c72533d24c3fcae135ad20197`  
+		Last Modified: Fri, 20 Nov 2026 03:30:51 GMT  
+		Size: 6.0 MB (5952919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:033bac91ac17db5de1454fb077af999632c418c76b48cfe9f185e5115bf1dff6`  
-		Last Modified: Wed, 11 Nov 2026 23:37:08 GMT  
-		Size: 97.8 KB (97825 bytes)  
+	-	`sha256:06ee1fac6c7b4715632f9d7feb6e2ec4efe428db8dcf84625883db08411ef65a`  
+		Last Modified: Fri, 20 Nov 2026 03:30:51 GMT  
+		Size: 98.0 KB (97953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b653117d02b27e594796039a2f6f21841801463df80936d0908d1c5379bf81fe`  
-		Last Modified: Wed, 11 Nov 2026 23:37:11 GMT  
-		Size: 105.2 MB (105243399 bytes)  
+	-	`sha256:656e27b69d437c8ea329aa7e87afbe0586b5abe963f62dfb5d9016dbec2319d8`  
+		Last Modified: Fri, 20 Nov 2026 03:30:54 GMT  
+		Size: 105.3 MB (105260026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:514a35502a219f811c9b4483a10b26fa3cdd7bfba870f06f96c5cd47f239f108`  
-		Last Modified: Wed, 11 Nov 2026 23:37:09 GMT  
-		Size: 196.0 B  
+	-	`sha256:16776ebecf23414a919177c423aa3c12f2dc2a2b196bdb718d92894eac61e796`  
+		Last Modified: Fri, 20 Nov 2026 03:30:52 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:humble-ros-core-jammy` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:9cbc69f404b13496e9030a4fbf2dfe1fdd841441c27f52f3e1b4693b42431890
+$ docker pull ros@sha256:49195f861e4dd17cebfd22e697d639c71809847c55537f6505dd2eb45714f37f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.9 MB (17931516 bytes)**  
+-	Total Size: **17.9 MB (17931977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e2604f21bdabef4659db0ad77841e7ae6c76a8b3d1a667925e2f9bb82914cc3`
+-	Image ID: `sha256:1a9698b56307144e21390179cfcbfa4b2bb8612134d38f0a598519a2aaed5f3d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e7182fac9b3d20bc71f289b343386bab3e579fdb0565f5c69095e96a769e0cde`  
-		Last Modified: Wed, 11 Nov 2026 23:37:09 GMT  
-		Size: 17.9 MB (17916890 bytes)  
+	-	`sha256:af38c6aa78cf3d4d80076637d7a1c82fb590f08744b92f92b8b4ec0940adb518`  
+		Last Modified: Fri, 20 Nov 2026 03:30:51 GMT  
+		Size: 17.9 MB (17917351 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4f83c59532f7fae3ebbd92d75a994941693e11933c729329bdce979e68dd572f`  
-		Last Modified: Wed, 11 Nov 2026 23:37:08 GMT  
+	-	`sha256:8f2c4af24e09176ad9c1d116f4cf85144d3251cbf9f71d4380992552d4b6a6a2`  
+		Last Modified: Fri, 20 Nov 2026 03:30:51 GMT  
 		Size: 14.6 KB (14626 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:humble-ros-core-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:0b5ce6774dd605dda510b729950266826d68f0ba8d1018c581e7e361e5bab343
+$ docker pull ros@sha256:073132917fed1c3fda298eb0fe2d2b6c4114a455884a01af623cabbd45ef4733
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.3 MB (138278970 bytes)**  
+-	Total Size: **138.3 MB (138296302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89d8315a4e4b4e3e88398b0b84f44496c364ef411f238ab4dcdaad76f5adeddb`
+-	Image ID: `sha256:1408a6e0dc050e9fbf4e298c915a7e0df40726db018005f9b36577466aaa7bc2`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 10 Nov 2026 08:11:28 GMT
+# Tue, 17 Nov 2026 09:19:59 GMT
 ARG RELEASE
-# Tue, 10 Nov 2026 08:11:28 GMT
+# Tue, 17 Nov 2026 09:19:59 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Nov 2026 08:11:28 GMT
+# Tue, 17 Nov 2026 09:19:59 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 10 Nov 2026 08:11:31 GMT
-ADD file:ad99bb929f300d831dd983ba7aa0be62ef1a417e019f842bbe90de4a105e60d4 in / 
-# Tue, 10 Nov 2026 08:11:31 GMT
+# Tue, 17 Nov 2026 09:20:01 GMT
+ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
+# Tue, 17 Nov 2026 09:20:01 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Nov 2026 23:36:00 GMT
+# Fri, 20 Nov 2026 03:30:15 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:36:09 GMT
+# Fri, 20 Nov 2026 03:30:23 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:36:14 GMT
+# Fri, 20 Nov 2026 03:30:29 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.jammy_all.deb     && echo "767884cf4ed03116b9d64438930a832ed854147ae435279a7924dfdf60f94433 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:37:48 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 ENV LANG=C.UTF-8
-# Wed, 11 Nov 2026 23:37:48 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 ENV LC_ALL=C.UTF-8
-# Wed, 11 Nov 2026 23:37:48 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 ENV ROS_DISTRO=humble
-# Wed, 11 Nov 2026 23:37:48 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-ros-core=0.10.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 11 Nov 2026 23:37:49 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Wed, 11 Nov 2026 23:37:49 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Wed, 11 Nov 2026 23:37:49 GMT
+# Fri, 20 Nov 2026 03:32:00 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:fe6484161c0f933bb0c4e15c47277d5b80f98c8abd3661858e8cb1891f359634`  
-		Last Modified: Tue, 10 Nov 2026 08:54:54 GMT  
-		Size: 28.0 MB (28001412 bytes)  
+	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
+		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
+		Size: 28.0 MB (28001401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03ce1848bc4a89509d0fd0dd7038c5702a6d898a83f7103d02e6dde37f437fac`  
-		Last Modified: Wed, 11 Nov 2026 23:38:14 GMT  
-		Size: 1.2 MB (1215118 bytes)  
+	-	`sha256:5e9ca9e95881a8cb28512ec3b2400b15f438f6b4c3ca3af9fd776941ed8eedfa`  
+		Last Modified: Fri, 20 Nov 2026 03:32:26 GMT  
+		Size: 1.2 MB (1215079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8e7840aaf5d1699f5cfd1e3c1d48c2d88dcf26c14cf136ff6de1f857c803e52`  
-		Last Modified: Wed, 11 Nov 2026 23:38:15 GMT  
-		Size: 5.9 MB (5910832 bytes)  
+	-	`sha256:0a8d0f616b49ac6f82978d7209b58950a45e03beb96cfbd0a448cc2976113e4c`  
+		Last Modified: Fri, 20 Nov 2026 03:32:26 GMT  
+		Size: 5.9 MB (5910769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f664db0f15de3e12a91a9c32062505f9670db533fc7b4de999551d9894714983`  
-		Last Modified: Wed, 11 Nov 2026 23:38:14 GMT  
-		Size: 98.1 KB (98108 bytes)  
+	-	`sha256:dd9a096eeef2a70209e51a15f84f3c5c20fdcc6e2fbe45780b785890d0702bf5`  
+		Last Modified: Fri, 20 Nov 2026 03:32:26 GMT  
+		Size: 98.1 KB (98075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57c5d5bfd93d2acc16836dfaee7b00fc6b823482d3859a1796178f2e44c5a088`  
-		Last Modified: Wed, 11 Nov 2026 23:38:17 GMT  
-		Size: 103.1 MB (103053304 bytes)  
+	-	`sha256:8526d9ed09a9d90ff6777d272583eabb030092ea3e6e08f06b67705ced0032b7`  
+		Last Modified: Fri, 20 Nov 2026 03:32:29 GMT  
+		Size: 103.1 MB (103070782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c007703271a609370140030fbd05a7c39f1f4bc09795c089771cb85ce4a50e64`  
-		Last Modified: Wed, 11 Nov 2026 23:38:16 GMT  
+	-	`sha256:a529bb895ff9f8fe1bc760e644fb3cc339e3aab7b8648b9f97f3af271aa057d8`  
+		Last Modified: Fri, 20 Nov 2026 03:32:27 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:humble-ros-core-jammy` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:e12a3404c3e6298a8c64db1b3981e4252849a7b4f16b3a1bc7f6bea76ffd5e57
+$ docker pull ros@sha256:f3ca1a9723208c4881f6c313419a5c2addabedda09d667450005d2b5400aeec9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.9 MB (17917986 bytes)**  
+-	Total Size: **17.9 MB (17918447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92522b7001da3a4ce0009d267a96b82caaad4f25a4edf3668889052d2593b538`
+-	Image ID: `sha256:c1febceeaf9628ab37ec1c0e446460812d64c4a2379ccb89a3bb47577b9bcb18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:43292ba38a64d4b6d8bbe843d117c81bc15ab5bf34a62791e9ebbc9af1b376d4`  
-		Last Modified: Wed, 11 Nov 2026 23:38:15 GMT  
-		Size: 17.9 MB (17903235 bytes)  
+	-	`sha256:1918ce35bf690fe94f07d4956ecd3f6f67f2fbfbf71dfe74c8fba944ef8b0d61`  
+		Last Modified: Fri, 20 Nov 2026 03:32:27 GMT  
+		Size: 17.9 MB (17903696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9109b023a84716020d538520e6cd7ad4609e9f9e99b5e50a970d7159b731f70c`  
-		Last Modified: Wed, 11 Nov 2026 23:38:14 GMT  
+	-	`sha256:c4833499f26e40cf117a1bf7b40828a5a3ab68bdc58a964cf0222e78c775282f`  
+		Last Modified: Fri, 20 Nov 2026 03:32:26 GMT  
 		Size: 14.8 KB (14751 bytes)  
 		MIME: application/vnd.in-toto+json
