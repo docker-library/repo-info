@@ -5496,20 +5496,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-31
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-31.dsc' unzip_6.0-31.dsc 1463 SHA256:1e3454cb496ae8587c265741f396c0fe7d509c6f65eb02e7f8cda3554fd5680f
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-31.debian.tar.xz' unzip_6.0-31.debian.tar.xz 27232 SHA256:d7dc23f5254c6711dc05f467e70236cfd50a7931001c6152904474b19f295c38
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unzip/6.0-31/
 
-- https://sources.debian.net/src/unzip/6.0-31/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-31/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-31/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.11.3-2`
 

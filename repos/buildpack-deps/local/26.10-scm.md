@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7e3c72b1dab3c448501d645fbc0dfd1fa93673419e78791b03a7c3d86c16b97`
-- Created: `2026-11-12T00:17:27.336968805Z`
-- Virtual Size: ~ 326.72 Mb  
+- Image ID: `sha256:79cf5fb8c2bc4a7d1628b3de5b0aad32bdcd68b682b0fde35d82be111216ad60`
+- Created: `2026-11-20T04:13:52.834210674Z`
+- Virtual Size: ~ 317.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-11-05T15:25:39.205322+00:00`
+  - `org.opencontainers.image.created=2026-11-17T16:23:26.304308+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -742,13 +742,13 @@ $ apt-get source -qq --print-uris git=1:2.55.0-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.55.0-1ubuntu1.1.dsc' git_2.55.0-1ubuntu1.1.dsc 2784 SHA512:fc1fb9296f0d749a05aa526d477b2f1c0c523f3b3aa81a798b0f82f95f3758df4a721a562d906ac791f02697242cf3e06c352f45d4008e93d1f171ea017f5dd7
 ```
 
-### `dpkg` source package: `glibc=2.44-1ubuntu2`
+### `dpkg` source package: `glibc=2.44-1ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.44-1ubuntu2`
-- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2`
-- `libc6:amd64=2.44-1ubuntu2`
+- `libc-bin=2.44-1ubuntu2.1`
+- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2.1`
+- `libc6:amd64=2.44-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -789,11 +789,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2
+$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz' glibc_2.44.orig.tar.xz 20620544 SHA512:963dc0275f7738653379909b64ee32e28f13cca77440f2cf9bd0ab82cb183f6cd1f7376d25cc5442de69b972713bd81bf0e38dbcca9b2a4d6649843e76fd50a5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz.asc' glibc_2.44.orig.tar.xz.asc 870 SHA512:e2034e369d2c233c9f9e155d6bc4b5e7472cace8a000253514a08b4dac3be6ed59cafe9aa6ceea2bdd07678291528c7937b358f43ab02a6f09422e7498837494
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.debian.tar.xz' glibc_2.44-1ubuntu2.debian.tar.xz 479992 SHA512:440cc42e7fa67033b95c0e3b006341f625d560d616446197348dabf0389e8a963b6ed8b7da739108f9729c6c8ba3d8854128797c99db18063f30f38cc57034ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.dsc' glibc_2.44-1ubuntu2.dsc 9066 SHA512:f6834bdc34ce40518b7754a4f4124a0de7f1f66d6a5b6fbf3f07405a1d1b198af6c970ec9911bb94e63d78ae1c25bd2228be21822de5ed1e71c67449ae0218a3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.debian.tar.xz' glibc_2.44-1ubuntu2.1.debian.tar.xz 482200 SHA512:250394f465bde4b5e247e2c661abeb52fe6ae58055c222248c6f323e19480355dd9c74aa1584d22b30b014c9bfe450c51233d62abd8b449f57f5d30cd44735f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.dsc' glibc_2.44-1ubuntu2.1.dsc 9074 SHA512:bd62a57e721137ce1de6db64bd8918d8042fd92c0ccf76fa84e14bfa42a77302e5c6c63e0f94ebe041049904403b5a21945a1ebb929fe1b98f45c0a95f40b63b
 ```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`

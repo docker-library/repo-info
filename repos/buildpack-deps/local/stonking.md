@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4834153b94e1f14adf1f1ce3c8e7db8872c0a5d1c45921a14609152d683b7e61`
-- Created: `2026-11-12T01:14:09.678609509Z`
-- Virtual Size: ~ 838.42 Mb  
+- Image ID: `sha256:b91336745274e38ffba2fc3da021f139c777c11885a84d27787f37f9df93c365`
+- Created: `2026-11-20T05:14:42.312581579Z`
+- Virtual Size: ~ 829.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-11-05T15:25:39.205322+00:00`
+  - `org.opencontainers.image.created=2026-11-17T16:23:26.304308+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -1258,15 +1258,15 @@ $ apt-get source -qq --print-uris glib2.0=2.90.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.90.0-1.debian.tar.xz' glib2.0_2.90.0-1.debian.tar.xz 143956 SHA512:05963544135e0166f4ee5d403bb44029efa9d3ff14f5521471a3ffe2cf99678d4bd1188c173d2b60dccb564d18fda701847ca6df242f9f0d342f92c755062ba7
 ```
 
-### `dpkg` source package: `glibc=2.44-1ubuntu2`
+### `dpkg` source package: `glibc=2.44-1ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.44-1ubuntu2`
-- `libc-dev-bin=2.44-1ubuntu2`
-- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2`
-- `libc6:amd64=2.44-1ubuntu2`
-- `libc6-dev:amd64=2.44-1ubuntu2`
+- `libc-bin=2.44-1ubuntu2.1`
+- `libc-dev-bin=2.44-1ubuntu2.1`
+- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2.1`
+- `libc6:amd64=2.44-1ubuntu2.1`
+- `libc6-dev:amd64=2.44-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1307,11 +1307,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2
+$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz' glibc_2.44.orig.tar.xz 20620544 SHA512:963dc0275f7738653379909b64ee32e28f13cca77440f2cf9bd0ab82cb183f6cd1f7376d25cc5442de69b972713bd81bf0e38dbcca9b2a4d6649843e76fd50a5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz.asc' glibc_2.44.orig.tar.xz.asc 870 SHA512:e2034e369d2c233c9f9e155d6bc4b5e7472cace8a000253514a08b4dac3be6ed59cafe9aa6ceea2bdd07678291528c7937b358f43ab02a6f09422e7498837494
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.debian.tar.xz' glibc_2.44-1ubuntu2.debian.tar.xz 479992 SHA512:440cc42e7fa67033b95c0e3b006341f625d560d616446197348dabf0389e8a963b6ed8b7da739108f9729c6c8ba3d8854128797c99db18063f30f38cc57034ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.dsc' glibc_2.44-1ubuntu2.dsc 9066 SHA512:f6834bdc34ce40518b7754a4f4124a0de7f1f66d6a5b6fbf3f07405a1d1b198af6c970ec9911bb94e63d78ae1c25bd2228be21822de5ed1e71c67449ae0218a3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.debian.tar.xz' glibc_2.44-1ubuntu2.1.debian.tar.xz 482200 SHA512:250394f465bde4b5e247e2c661abeb52fe6ae58055c222248c6f323e19480355dd9c74aa1584d22b30b014c9bfe450c51233d62abd8b449f57f5d30cd44735f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.dsc' glibc_2.44-1ubuntu2.1.dsc 9074 SHA512:bd62a57e721137ce1de6db64bd8918d8042fd92c0ccf76fa84e14bfa42a77302e5c6c63e0f94ebe041049904403b5a21945a1ebb929fe1b98f45c0a95f40b63b
 ```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
@@ -3060,11 +3060,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-4
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-4.debian.tar.xz' libzstd_1.5.7+dfsg-4.debian.tar.xz 22852 SHA512:8e28eee95924b8e9d080dfa29d7c93dddbc5ffa0a7351d8248de72995df3c617ff8a197239c86c066e1c1ba19076acc1af203e61e7252ae35d0bea78d040abcd
 ```
 
-### `dpkg` source package: `linux=7.3.0-10.10`
+### `dpkg` source package: `linux=7.3.0-11.12`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.3.0-10.10`
+- `linux-libc-dev:amd64=7.3.0-11.12`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3073,10 +3073,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.3.0-10.10
+$ apt-get source -qq --print-uris linux=7.3.0-11.12
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.3.0.orig.tar.gz' linux_7.3.0.orig.tar.gz 264287646 SHA512:793e59c2b902729fd13dc2d38f148a89231763d5ffea7b2aa387c49fee89b9c9b4cac305a5d82e1dc5227165c351ee79656d095507854cb89f7070214bd064ae
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.3.0-10.10.diff.gz' linux_7.3.0-10.10.diff.gz 953987 SHA512:452909b77ba2cff4ddc167acff96e273172f99adb191d77b49d7c5ce4e9b0405002bfc4a216417458dbe49c86661c729c96a56cf922b4cfb8c033b07c9e38576
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.3.0-10.10.dsc' linux_7.3.0-10.10.dsc 7839 SHA512:8cd3abf64d73963e2749724d03f69e5d20ebae1a18fdcaa031e74081d1c6bec02b22843c1f6c2167c6acf661e81bd13c93cdc44523fb2c0b297c4f29cadde83b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.3.0-11.12.diff.gz' linux_7.3.0-11.12.diff.gz 969373 SHA512:48c6e1058201c554e0841ba8a55a613f3baca1054ee33bd78a93010a95530b535dbcb9c360732098df701906672cf68fcddd60e175049b88402978e1d3ff1176
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.3.0-11.12.dsc' linux_7.3.0-11.12.dsc 7839 SHA512:5bb5506d79498f2c31b2db2bc029121739d2ab07c340691b8725ae909a086aaf5d68194cc6918a37adb722c1ee610426d4eb0c53e0c4eeeaf89369082d798164
 ```
 
 ### `dpkg` source package: `lto-disabled-list=84`

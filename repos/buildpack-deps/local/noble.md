@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:053cf063687096ff45dbe8e4b27f4c7b6b205e3fb5c57921736bf3301ce63223`
-- Created: `2026-11-12T01:08:56.640639626Z`
-- Virtual Size: ~ 791.94 Mb  
+- Image ID: `sha256:f96221e29033048b6f577864f7718af5626d209f80345dde518058c29b6ce2cd`
+- Created: `2026-11-20T05:14:35.021123563Z`
+- Virtual Size: ~ 801.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1259,14 +1259,14 @@ $ apt-get source -qq --print-uris glib2.0=2.80.0-6ubuntu3.10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.80.0-6ubuntu3.10.dsc' glib2.0_2.80.0-6ubuntu3.10.dsc 4080 SHA512:95e6a37b24d48bc66070a8d8b29be544677ef43593ac8ca92dc8a77f1faa9d4fc6be957d7af1a8c15b381157290a441ccff7ccaabed217d0033985e2511c5922
 ```
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.9`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.12`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.9`
-- `libc-dev-bin=2.39-0ubuntu8.9`
-- `libc6:amd64=2.39-0ubuntu8.9`
-- `libc6-dev:amd64=2.39-0ubuntu8.9`
+- `libc-bin=2.39-0ubuntu8.12`
+- `libc-dev-bin=2.39-0ubuntu8.12`
+- `libc6:amd64=2.39-0ubuntu8.12`
+- `libc6-dev:amd64=2.39-0ubuntu8.12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1274,9 +1274,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.39-0ubuntu8.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz' glibc_2.39.orig.tar.xz 18520988 SHA512:818f58172a52815b4338ea9f2a69ecaa3335492b9f8f64cbf8afb24c0d737982341968ecd79631cae3d3074ab0ae4bc6056fc4ba3ffe790849dc374835cd57e2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39.orig.tar.xz.asc' glibc_2.39.orig.tar.xz.asc 833 SHA512:5c054af523bbf5c2453363c023eadd1a75b6a5ff55c739011030115d3b117dbfc7d80cc74fbf157ea74a8d24aa14ff560c675374f875ec5c1ed3030e26a5ee07
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.12.debian.tar.xz' glibc_2.39-0ubuntu8.12.debian.tar.xz 506308 SHA512:d8a797dfcf042be57bfc9d35473b9ec1126d8f5ae9f5f70c6ee8ab5c60124b9df9804a974b2a97e5838cd9b94abe092921675db242b42e19ec3bf7f6f6236d74
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.39-0ubuntu8.12.dsc' glibc_2.39-0ubuntu8.12.dsc 9391 SHA512:80183bb04dd559b9e8a40b5d8604ea820327f577c7ccf6fd578eee88361bc843b49ca94ecf479707e2f5af1f3bdd90a5961d64e9af3f8db9fdddccb0dd2bef76
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6.1`
 
@@ -3033,9 +3039,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu0.24.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA256:2a20ad621148339b0759c4d4e96719362dee64c9a096dbba625ba053846349f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz 24380 SHA256:f235c6088b4c5ec813caba9273b4a670935e4faa11768fa33f993455460ebf00
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc 2352 SHA256:25e60a82ccec471407248c0725eb51e85464b6e87fa032bca685c55d42ab8722
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.3.debian.tar.xz 24380 SHA512:e9ea90695741f2a81ccf3ca36c1ffd3806ce158242a77e29f0282bf4b124d5dcc0f8b60bd870c56d168a71f61f43b667720c37741a23dd9a4280b0c22063c69f
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.3.dsc 2352 SHA512:7709b2e2900154e58c792fa288a99ab1b90863e7e02400e510507b78aeb7b1e0e302995146e247c371fe8311cfe42d4861e8d6c176b045dc118d65902dbf61ff
 ```
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.2build1`
@@ -3103,11 +3109,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.dsc' libzstd_1.5.5+dfsg2-2build1.1.dsc 2485 SHA512:58915fc819994cbf1e5db663bcdf266ebf0d9967a25e549645be22c27fe7390a5cc000af3a40494895c0102b95c41caf54cb0ed1b3331e9921bfae181a9603b9
 ```
 
-### `dpkg` source package: `linux=6.8.0-149.149`
+### `dpkg` source package: `linux=6.8.0-151.151`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-149.149`
+- `linux-libc-dev:amd64=6.8.0-151.151`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3116,10 +3122,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.8.0-149.149
+$ apt-get source -qq --print-uris linux=6.8.0-151.151
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.diff.gz' linux_6.8.0-149.149.diff.gz 11931455 SHA512:d55349c99d2246fb7ccac20bce1525d55ee1980c293e78407d41e53ff2714e3feeffaa810969d46c586a7293a7d2bbdde6caf39fec5f43d95202adfdaace7529
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-149.149.dsc' linux_6.8.0-149.149.dsc 9351 SHA512:a9b02712e6ac024fd405badd4a1693895709e263e9d61d5362aef7bfb0e0386e20f63a1d466ddb3d2ad70f05c00f8f30d4ccee7a4184aeb9ceb317158006ed46
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-151.151.diff.gz' linux_6.8.0-151.151.diff.gz 12538342 SHA512:37672a423f619fddfc054beedff085c4ebbb5e803eacc4837cb741111bcbacc9bbd9a9cf5cfc5c2ee9b2813819a26b5e5b6c953d306e6eae8c8e40fadec807ff
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-151.151.dsc' linux_6.8.0-151.151.dsc 9351 SHA512:d3e448bd38af86dbcfdeda8775373d8cdc2ed46735479a87a81b727b343fbde454d77c01e5906fa0ef0d3454106644ef8bbee7d4b3afae0a6667909e56a74694
 ```
 
 ### `dpkg` source package: `lto-disabled-list=47`
@@ -4316,9 +4322,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.18
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.debian.tar.xz' systemd_255.4-1ubuntu8.18.debian.tar.xz 273272 SHA512:bcdea3df2c9c9c5df0e20ebb6f3c88ce626553dc11b0ed5e36c283007f53934ce6fa3690b8267fce8889145b632e017d5767322637845182aec237a3e9b556e3
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.18.dsc' systemd_255.4-1ubuntu8.18.dsc 7324 SHA512:dac6c6477e3cec9f2ba86b8bd2ed5576bb24f9b12b07edd283113b2c986360014e381e70e85945dee9b4686a1774e82cfd82dbac54eacd393ce1a60e8de88fc9
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`

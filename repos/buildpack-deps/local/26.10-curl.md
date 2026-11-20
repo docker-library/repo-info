@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b2c06861b55168aa85f85531d10756dbf15347459a3804b7f0e668cd5fcded3`
-- Created: `2026-11-11T23:09:06.105791117Z`
-- Virtual Size: ~ 153.59 Mb  
+- Image ID: `sha256:2415604598d738d77aa06672084805230a24f617a80cbeba85fd8cd448ea69c4`
+- Created: `2026-11-20T03:10:01.618080637Z`
+- Virtual Size: ~ 153.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.opencontainers.image.created=2026-11-05T15:25:39.205322+00:00`
+  - `org.opencontainers.image.created=2026-11-17T16:23:26.304308+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
@@ -622,13 +622,13 @@ $ apt-get source -qq --print-uris gcc-16=16.2.0-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-16/gcc-16_16.2.0-3ubuntu1.dsc' gcc-16_16.2.0-3ubuntu1.dsc 52946 SHA512:31dfb11ef5c83808c7622f563ebdc216e2900fbec03a4d7b26a7df7e44c7285b6dfbc4a210cb4117f538a3bb02b56f8d2ac18a43c3f755f97b405bb8a9f2593a
 ```
 
-### `dpkg` source package: `glibc=2.44-1ubuntu2`
+### `dpkg` source package: `glibc=2.44-1ubuntu2.1`
 
 Binary Packages:
 
-- `libc-bin=2.44-1ubuntu2`
-- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2`
-- `libc6:amd64=2.44-1ubuntu2`
+- `libc-bin=2.44-1ubuntu2.1`
+- `libc-gconv-modules-extra:amd64=2.44-1ubuntu2.1`
+- `libc6:amd64=2.44-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -669,11 +669,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2
+$ apt-get source -qq --print-uris glibc=2.44-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz' glibc_2.44.orig.tar.xz 20620544 SHA512:963dc0275f7738653379909b64ee32e28f13cca77440f2cf9bd0ab82cb183f6cd1f7376d25cc5442de69b972713bd81bf0e38dbcca9b2a4d6649843e76fd50a5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44.orig.tar.xz.asc' glibc_2.44.orig.tar.xz.asc 870 SHA512:e2034e369d2c233c9f9e155d6bc4b5e7472cace8a000253514a08b4dac3be6ed59cafe9aa6ceea2bdd07678291528c7937b358f43ab02a6f09422e7498837494
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.debian.tar.xz' glibc_2.44-1ubuntu2.debian.tar.xz 479992 SHA512:440cc42e7fa67033b95c0e3b006341f625d560d616446197348dabf0389e8a963b6ed8b7da739108f9729c6c8ba3d8854128797c99db18063f30f38cc57034ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.dsc' glibc_2.44-1ubuntu2.dsc 9066 SHA512:f6834bdc34ce40518b7754a4f4124a0de7f1f66d6a5b6fbf3f07405a1d1b198af6c970ec9911bb94e63d78ae1c25bd2228be21822de5ed1e71c67449ae0218a3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.debian.tar.xz' glibc_2.44-1ubuntu2.1.debian.tar.xz 482200 SHA512:250394f465bde4b5e247e2c661abeb52fe6ae58055c222248c6f323e19480355dd9c74aa1584d22b30b014c9bfe450c51233d62abd8b449f57f5d30cd44735f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.44-1ubuntu2.1.dsc' glibc_2.44-1ubuntu2.1.dsc 9074 SHA512:bd62a57e721137ce1de6db64bd8918d8042fd92c0ccf76fa84e14bfa42a77302e5c6c63e0f94ebe041049904403b5a21945a1ebb929fe1b98f45c0a95f40b63b
 ```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
@@ -1720,11 +1720,11 @@ $ apt-get source -qq --print-uris pcre2=10.46-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1ubuntu1.dsc' pcre2_10.46-1ubuntu1.dsc 2363 SHA512:c27c27a48c51a25fc9f1399fcbaf8876dab20497f4ed3b6a685cf383491ce2568239b596fc423e989ca0a33d1e13892e2ba3c2412fd89b4198fa729ce3ad62ba
 ```
 
-### `dpkg` source package: `perl=5.42.3-1`
+### `dpkg` source package: `perl=5.42.3-1ubuntu0.1`
 
 Binary Packages:
 
-- `perl-base=5.42.3-1`
+- `perl-base=5.42.3-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1756,11 +1756,11 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.42.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3-1.dsc' perl_5.42.3-1.dsc 2372 SHA512:48321202f5cdda73c599bb7a07e47ce33d59f98d7bcf05a75be9e78811e9e82f576437e87ba501c73ad863a89c84fe1dbfb73e163d6f4798621295e78604be8a
+$ apt-get source -qq --print-uris perl=5.42.3-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3.orig-regen-configure.tar.xz' perl_5.42.3.orig-regen-configure.tar.xz 421372 SHA512:ed18fed5a0da26679517fef0a7f7257d93f3516e20ec8a71991db03a065c7aad4956317f26779da11794ac2b273fbcee0b549ff8fd67c9f9489f616e2f6e91f4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3.orig.tar.xz' perl_5.42.3.orig.tar.xz 14495300 SHA512:1b4596bf8bd537514121dec30657d015b5bae7e993d3ada91481aa15483e725308bbbd846d24cf93b278d13be154dc4d20849a216b7aecafe852009aa50150a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3-1.debian.tar.xz' perl_5.42.3-1.debian.tar.xz 168064 SHA512:8086fe881190c22c7647c69236e5b486dc7d7c81dffcc1fabb0e8beb59149347d57257de6487f265d5056dbf59b7e796602f93c8e0f63620f6b411cc571271c8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3-1ubuntu0.1.debian.tar.xz' perl_5.42.3-1ubuntu0.1.debian.tar.xz 169352 SHA512:179d97aa9e4c0d1a4852089c9fe2dd2d568ef7f921a13c4a75b1ffa27fe4ece25af819ee4027cf51d6a87c09a28fd31a0ccee3a02ac51684e6f2d52f4fff608a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.42.3-1ubuntu0.1.dsc' perl_5.42.3-1ubuntu0.1.dsc 3052 SHA512:f0bbb7a7894e9a7eeb8fdd9b4fadf564a920c391162ee39a2d25d948656b1af346dec51b58d3f50b4ed6f1febf857c045417f35d6540865a7bbda92cf1150d4c
 ```
 
 ### `dpkg` source package: `pinentry=1.3.3-2ubuntu1`

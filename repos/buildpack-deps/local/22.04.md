@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:202278010bafd8104b9c556e1899f505e73d2903c595d4b77a56b1a07abd5710`
-- Created: `2026-11-12T01:08:58.115401349Z`
-- Virtual Size: ~ 714.45 Mb  
+- Image ID: `sha256:285677c2b76e1649373462db9bdaad60445f49e29ac006f15d84926f5fe6993c`
+- Created: `2026-11-20T05:14:14.565160137Z`
+- Virtual Size: ~ 714.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1153,14 +1153,14 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.11
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.11.dsc' glib2.0_2.72.4-0ubuntu2.11.dsc 3111 SHA512:df8f44165dffdfae65af6475a384d4470f1b49e48ef82a8041ca0f396b89f78ce90819645a68947c64e984b8c9a63284b7fdd2d415a3afdde8ffc8a8dd7c3e50
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.15`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.18`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.15`
-- `libc-dev-bin=2.35-0ubuntu3.15`
-- `libc6:amd64=2.35-0ubuntu3.15`
-- `libc6-dev:amd64=2.35-0ubuntu3.15`
+- `libc-bin=2.35-0ubuntu3.18`
+- `libc-dev-bin=2.35-0ubuntu3.18`
+- `libc6:amd64=2.35-0ubuntu3.18`
+- `libc6-dev:amd64=2.35-0ubuntu3.18`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1168,9 +1168,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.18
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.18.debian.tar.xz' glibc_2.35-0ubuntu3.18.debian.tar.xz 976436 SHA512:1fe5c649f12da4cb78c3fdc752249464822cd8b2f2273bca7e9c8f5db92843c7bc77bfe91a29b29182242bb0c734218db185a9f43f833b36351f9d1d3520a90a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.18.dsc' glibc_2.35-0ubuntu3.18.dsc 8888 SHA512:fad660729c6518e053161e0f1f2d362fccede889f3914707cb945b5f22bb2f3dcf2a2a1166b2a5280e753d75944642a5cd928c4b6f39c070eb38f412c1fec638
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -2988,11 +2994,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-203.213`
+### `dpkg` source package: `linux=5.15.0-204.214`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-203.213`
+- `linux-libc-dev:amd64=5.15.0-204.214`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3001,10 +3007,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-203.213
+$ apt-get source -qq --print-uris linux=5.15.0-204.214
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.diff.gz' linux_5.15.0-203.213.diff.gz 14524480 SHA512:6d2af24b0bc2a61ce66b4e9dfce3f4905b98ac9c410175afc5dfacbe8a93382c317cc9e5992b06ee750e508d8e35fbf54905d08deebc4ed8aaf4301bc0f1c559
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-203.213.dsc' linux_5.15.0-203.213.dsc 7655 SHA512:3f3276dd0ec2a346b7fd3f6a527d90afb6618e94abd0927237c4ae9f92e08bbdc4a33fc297b3fc5b5d26c0a7cff8e88a029885c86891723b6e63d02ff0fecded
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-204.214.diff.gz' linux_5.15.0-204.214.diff.gz 14698227 SHA512:5eef34ca482e59c79dee2d261942f59420472c4fd2873af9fe6dd3a7616e4c31c52e7a160c3eb38d88713a861cf6844d45a1a4dbfe28993e41374baebd09d0c1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-204.214.dsc' linux_5.15.0-204.214.dsc 7655 SHA512:0143dbbeabaa5370c0082ef4b9f8a3325344bd61e7598a303e808ed31db3ec89ae906b6e322b8545945dc7fd4d07751e33b2a0c28804ea98ccce234987e9bd95
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
