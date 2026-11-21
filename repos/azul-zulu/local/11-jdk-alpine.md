@@ -1,10 +1,10 @@
-# `azul-zulu:11.92-11.0.33-jdk-alpine3.23`
+# `azul-zulu:11.92-11.0.33.1-jdk-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0692264234a5127da5f9543b7050c6920051a969a4cb2ceac55e650327ea8590`
-- Created: `2026-11-09T20:22:31.006061685Z`
-- Virtual Size: ~ 278.18 Mb  
+- Image ID: `sha256:f77d2bc3f22f1f3a8243444d525423742cf03f604543e988286e00a97a69d94d`
+- Created: `2026-11-18T02:41:10.912865484Z`
+- Virtual Size: ~ 278.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -494,16 +494,16 @@ Zlib
 ### `apk` package: `zulu11-ca-jdk`
 
 ```console
-zulu11-ca-jdk-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) CA JDK
+zulu11-ca-jdk-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) CA JDK
 
-zulu11-ca-jdk-11.0.33-r5 webpage:
+zulu11-ca-jdk-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-ca-jdk-11.0.33-r5 installed size:
+zulu11-ca-jdk-11.0.33.1-r1 installed size:
 72 KiB
 
-zulu11-ca-jdk-11.0.33-r5 license:
+zulu11-ca-jdk-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -511,16 +511,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-ca-jdk-headless`
 
 ```console
-zulu11-ca-jdk-headless-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) CA Headless JDK
+zulu11-ca-jdk-headless-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) CA Headless JDK
 
-zulu11-ca-jdk-headless-11.0.33-r5 webpage:
+zulu11-ca-jdk-headless-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-ca-jdk-headless-11.0.33-r5 installed size:
+zulu11-ca-jdk-headless-11.0.33.1-r1 installed size:
 84 MiB
 
-zulu11-ca-jdk-headless-11.0.33-r5 license:
+zulu11-ca-jdk-headless-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -528,16 +528,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-ca-jre`
 
 ```console
-zulu11-ca-jre-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) CA JRE
+zulu11-ca-jre-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) CA JRE
 
-zulu11-ca-jre-11.0.33-r5 webpage:
+zulu11-ca-jre-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-ca-jre-11.0.33-r5 installed size:
+zulu11-ca-jre-11.0.33.1-r1 installed size:
 3012 KiB
 
-zulu11-ca-jre-11.0.33-r5 license:
+zulu11-ca-jre-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -545,16 +545,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-ca-jre-headless`
 
 ```console
-zulu11-ca-jre-headless-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) CA Headless JRE
+zulu11-ca-jre-headless-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) CA Headless JRE
 
-zulu11-ca-jre-headless-11.0.33-r5 webpage:
+zulu11-ca-jre-headless-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-ca-jre-headless-11.0.33-r5 installed size:
+zulu11-ca-jre-headless-11.0.33.1-r1 installed size:
 165 MiB
 
-zulu11-ca-jre-headless-11.0.33-r5 license:
+zulu11-ca-jre-headless-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -562,16 +562,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-jdk`
 
 ```console
-zulu11-jdk-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) JDK
+zulu11-jdk-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) JDK
 
-zulu11-jdk-11.0.33-r5 webpage:
+zulu11-jdk-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-jdk-11.0.33-r5 installed size:
+zulu11-jdk-11.0.33.1-r1 installed size:
 4096 B
 
-zulu11-jdk-11.0.33-r5 license:
+zulu11-jdk-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -579,16 +579,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-jdk-headless`
 
 ```console
-zulu11-jdk-headless-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) Headless JDK
+zulu11-jdk-headless-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) Headless JDK
 
-zulu11-jdk-headless-11.0.33-r5 webpage:
+zulu11-jdk-headless-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-jdk-headless-11.0.33-r5 installed size:
+zulu11-jdk-headless-11.0.33.1-r1 installed size:
 4096 B
 
-zulu11-jdk-headless-11.0.33-r5 license:
+zulu11-jdk-headless-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -596,16 +596,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-jre`
 
 ```console
-zulu11-jre-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) JRE
+zulu11-jre-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) JRE
 
-zulu11-jre-11.0.33-r5 webpage:
+zulu11-jre-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-jre-11.0.33-r5 installed size:
+zulu11-jre-11.0.33.1-r1 installed size:
 4096 B
 
-zulu11-jre-11.0.33-r5 license:
+zulu11-jre-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```
@@ -613,16 +613,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `zulu11-jre-headless`
 
 ```console
-zulu11-jre-headless-11.0.33-r5 description:
-Azul Zulu 11.92+113 (11.0.33-b10) Headless JRE
+zulu11-jre-headless-11.0.33.1-r1 description:
+Azul Zulu 11.92+201 (11.0.33.1-b1) Headless JRE
 
-zulu11-jre-headless-11.0.33-r5 webpage:
+zulu11-jre-headless-11.0.33.1-r1 webpage:
 https://www.azul.com/products/core/
 
-zulu11-jre-headless-11.0.33-r5 installed size:
+zulu11-jre-headless-11.0.33.1-r1 installed size:
 4096 B
 
-zulu11-jre-headless-11.0.33-r5 license:
+zulu11-jre-headless-11.0.33.1-r1 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

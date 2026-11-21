@@ -1,10 +1,10 @@
-# `azul-zulu:11.92-11.0.33-jdk-headless-debian13`
+# `azul-zulu:11.92-11.0.33.1-jdk-headless-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b28e0ddd89753fbc2ea1c05cc8a572d17e68f36c60920a93713dbead56ea264`
-- Created: `2026-11-09T20:23:33.589433478Z`
-- Virtual Size: ~ 354.69 Mb  
+- Image ID: `sha256:3b6c5a3daca3baa6210a6cc0e54258ee241230c4fc91178796e45cc7f2fb1030`
+- Created: `2026-11-18T02:41:50.941744212Z`
+- Virtual Size: ~ 354.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -2068,12 +2068,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu11-ca=11.0.33-5`
+### `dpkg` source package: `zulu11-ca=11.0.33.1-1`
 
 Binary Packages:
 
-- `zulu11-ca-jdk-headless=11.0.33-5`
-- `zulu11-ca-jre-headless=11.0.33-5`
+- `zulu11-ca-jdk-headless=11.0.33.1-1`
+- `zulu11-ca-jre-headless=11.0.33.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-ca-jdk-headless/copyright`, `/usr/share/doc/zulu11-ca-jre-headless/copyright`)
 
@@ -2083,12 +2083,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu11-ca-jdk-headless/copyright`, `/usr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu11=11.0.33-5`
+### `dpkg` source package: `zulu11=11.0.33.1-1`
 
 Binary Packages:
 
-- `zulu11-jdk-headless=11.0.33-5`
-- `zulu11-jre-headless=11.0.33-5`
+- `zulu11-jdk-headless=11.0.33.1-1`
+- `zulu11-jre-headless=11.0.33.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu11-jdk-headless/copyright`, `/usr/share/doc/zulu11-jre-headless/copyright`)
 

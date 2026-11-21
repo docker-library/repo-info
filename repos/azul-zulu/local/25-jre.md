@@ -1,10 +1,10 @@
-# `azul-zulu:25.38-25.0.5.0.3-jre-debian13`
+# `azul-zulu:25.38-25.0.5.1-jre-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5788d62bf796d821ed8ef7d680c65f8d372d2472061f376531caa6a1bf03c41f`
-- Created: `2026-11-05T07:37:07.689442828Z`
-- Virtual Size: ~ 345.98 Mb  
+- Image ID: `sha256:ce46d8c80c9bce420ef76dc1b092fabfc85a6627e6ad3d43d88dfde295aa34b0`
+- Created: `2026-11-18T02:43:43.700595511Z`
+- Virtual Size: ~ 346 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2327,12 +2327,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu25-ca=25.0.5.0.3-5`
+### `dpkg` source package: `zulu25-ca=25.0.5.1-1`
 
 Binary Packages:
 
-- `zulu25-ca-jre=25.0.5.0.3-5`
-- `zulu25-ca-jre-headless=25.0.5.0.3-5`
+- `zulu25-ca-jre=25.0.5.1-1`
+- `zulu25-ca-jre-headless=25.0.5.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-ca-jre/copyright`, `/usr/share/doc/zulu25-ca-jre-headless/copyright`)
 
@@ -2342,12 +2342,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu25-ca-jre/copyright`, `/usr/share/do
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu25=25.0.5.0.3-5`
+### `dpkg` source package: `zulu25=25.0.5.1-1`
 
 Binary Packages:
 
-- `zulu25-jre=25.0.5.0.3-5`
-- `zulu25-jre-headless=25.0.5.0.3-5`
+- `zulu25-jre=25.0.5.1-1`
+- `zulu25-jre-headless=25.0.5.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-jre/copyright`, `/usr/share/doc/zulu25-jre-headless/copyright`)
 
