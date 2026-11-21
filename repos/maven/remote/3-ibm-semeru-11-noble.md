@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-11-noble`
 
 ```console
-$ docker pull maven@sha256:158c0488d9b41503d2cd7374910c5d986791ce11f03ec03b9283e78109742319
+$ docker pull maven@sha256:eae6285d29120f4fa674171eb88e826aff2a0f38957835cfd5fdb5cc6d50b667
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -270,7 +270,7 @@ $ docker pull maven@sha256:e41962673d4508c4520b29c40555e78e3a4c31060703fed2a7094
 ### `maven:3-ibm-semeru-11-noble` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:026f000c111a4380a6296ff75c54398108e5ed10f00f17e46ebefbbf84c0331d
+$ docker pull maven@sha256:f17f155c380dd69155023995866c12f1120b1ac7798f40ca6e1c568fc67fc321
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -372,24 +372,24 @@ CMD ["mvn"]
 ### `maven:3-ibm-semeru-11-noble` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9c742e6c4af468b861d3e046526ef32312260464bb0cbcb0512f6652c851328a
+$ docker pull maven@sha256:e219c0946a60ce85340aa6cfd2b134e84902e4562bb9b0a1d597117a9630326a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.8 MB (4816295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:440305415f57274a61e1081e522358b49bdba6e51270b3b70674999d0710362f`
+-	Image ID: `sha256:c44c70594dda9afa05e0c4b8bf625545588b889b4eb6124836b324fbdfa1f93f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9070067ce0a88faa68cf455a44ecfaeced59bcfeeee890bcf5492ea20a41a56d`  
-		Last Modified: Fri, 20 Nov 2026 09:20:53 GMT  
+	-	`sha256:5d15b9babc3f2627cc69fe551252e460401fc4de27710caf2180288d3117e873`  
+		Last Modified: Fri, 20 Nov 2026 22:13:39 GMT  
 		Size: 4.8 MB (4799374 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e601d71b4b11a608a1313835c4eafe37b83948eefb174f5c8a23fcfc10f53dcc`  
-		Last Modified: Fri, 20 Nov 2026 09:20:53 GMT  
+	-	`sha256:6b685d77bb71555c83985dc7be18bd1a634f0981438157e85f32bbc6632646db`  
+		Last Modified: Fri, 20 Nov 2026 22:13:39 GMT  
 		Size: 16.9 KB (16921 bytes)  
 		MIME: application/vnd.in-toto+json
 

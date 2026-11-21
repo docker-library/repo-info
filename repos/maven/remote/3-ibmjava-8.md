@@ -1,7 +1,7 @@
 ## `maven:3-ibmjava-8`
 
 ```console
-$ docker pull maven@sha256:246fe9a4afb6247bcb9f728965bd0c9acc9fb8980b3a9a40e894d2fe78193a87
+$ docker pull maven@sha256:c78541e8794a09fd3e83bcc25c4f36ec7ff0ee456f02bed6f23a4f623802d093
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -132,7 +132,7 @@ $ docker pull maven@sha256:e0e55cc61b9ef4d86bf0b4e4c5fe9f92f69c46836bce811491696
 ### `maven:3-ibmjava-8` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:cd5a8dded560787b188199c0e3cc0c8ef3f0d7e317c8fcea00e76061ba2b6c5e
+$ docker pull maven@sha256:fbb239e68f51955e60bbf54387b5d70211d634377f3c4289c146639df379f0a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -224,24 +224,24 @@ CMD ["mvn"]
 ### `maven:3-ibmjava-8` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:727ab374d8695ec88011a6c1082d820e0fb673caa6c4cc7390a419c3e16b9f60
+$ docker pull maven@sha256:76b753c116642929d47675e7f93c730aeca0f6f0743c21d1c04d42a508eb75a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.3 MB (3268712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba22c7767ca87bc25497593a26885678562b10ed8336043dcfdb139288196416`
+-	Image ID: `sha256:b8c2e112e487321acfdb82d3d9de25762812f5cedbee36ac0e5bbc50ec861312`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7e7fae33f1eea495a0fbed4d777ecc98b8e4ce25188ad766f4f4f56865c8ea2`  
-		Last Modified: Fri, 20 Nov 2026 09:22:13 GMT  
+	-	`sha256:74fdbdc4bc20dbf6ca6f1118893a7b2061c86f5b6b7d27ca2caf1508fc49f83e`  
+		Last Modified: Fri, 20 Nov 2026 22:13:25 GMT  
 		Size: 3.3 MB (3251851 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:58145f11a4a9592d1d78a6d19d2f10fbb55b2c80b103c8006121b7f9cec55ddd`  
-		Last Modified: Fri, 20 Nov 2026 09:22:13 GMT  
+	-	`sha256:4a759b23659d225ca56e1be8d17d374bb76b1cc2de2b34941300e2a4a190d079`  
+		Last Modified: Fri, 20 Nov 2026 22:13:25 GMT  
 		Size: 16.9 KB (16861 bytes)  
 		MIME: application/vnd.in-toto+json
 
