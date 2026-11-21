@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8-debian-trixie`
 
 ```console
-$ docker pull maven@sha256:c7209e5c1c4a253260fa56efc4507b7314799e15e21a8fae7069f94d8fff36e9
+$ docker pull maven@sha256:fe9a1219c9b3489d6a3159a74c40fffe640ed937f68cfa3807e66d34f1e78b0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,48 +14,48 @@ $ docker pull maven@sha256:c7209e5c1c4a253260fa56efc4507b7314799e15e21a8fae7069f
 ### `maven:3-amazoncorretto-8-debian-trixie` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:101728945d7cab3232aacd9959f7be2b987d284e845b4f867efb51147851b56c
+$ docker pull maven@sha256:68b6b4aba3610f3c2095992bcaa0128959c5bffce9c7f3d9af8c60d5cecdf56e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.5 MB (149545811 bytes)**  
+-	Total Size: **149.5 MB (149545932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7b21bd221897733409d9ee832fe8ac9eb90f1765b3c5be3c6e010bf62680ad4`
+-	Image ID: `sha256:6fc3df550ed1db8598b61e648f746008ae11d546595b58d855a57e9e1a2b0df6`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
 # Wed, 04 Nov 2026 21:23:39 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1793827419'
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '6db32832d82839d368181ae730df7d642b0bff161277f0ab6023359d347cca6b *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ENV LANG=C.UTF-8
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ARG USER_HOME_DIR=/root
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Fri, 20 Nov 2026 06:18:17 GMT
+# Fri, 20 Nov 2026 19:09:48 GMT
 CMD ["mvn"]
 ```
 
@@ -64,45 +64,45 @@ CMD ["mvn"]
 		Last Modified: Thu, 05 Nov 2026 06:16:45 GMT  
 		Size: 29.9 MB (29856132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30457b3e0ba040e84bdeb681f64da33b927ac24821344562dec2fde748ecf1df`  
-		Last Modified: Fri, 20 Nov 2026 06:18:33 GMT  
-		Size: 109.6 MB (109629645 bytes)  
+	-	`sha256:d44f3e2d40122404f84b1a67ec9a39e33959dc09122d4933b041ab08322f4d50`  
+		Last Modified: Fri, 20 Nov 2026 19:10:04 GMT  
+		Size: 109.6 MB (109629785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:839e89ae7186fb77524bbbb007c8f202373bbf2b4abe54653fcabd1b62bd2787`  
-		Last Modified: Fri, 20 Nov 2026 06:18:31 GMT  
-		Size: 10.1 MB (10059027 bytes)  
+	-	`sha256:4ba48abcf28de1643e2bde17e5f21902fae1156719c552cf36c2b9e75f483fe7`  
+		Last Modified: Fri, 20 Nov 2026 19:10:02 GMT  
+		Size: 10.1 MB (10059008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3dd43fd3c9da061f88672ff17c671892758888755c7d496ecebd2aecfb49e46`  
-		Last Modified: Fri, 20 Nov 2026 06:18:30 GMT  
-		Size: 852.0 B  
+	-	`sha256:9d1b8d4488e70182e409a2028eb7abccfb461c5bbfac381595e81f1ad64c5734`  
+		Last Modified: Fri, 20 Nov 2026 19:10:01 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4627f1b8e1e987316894ebef693afd27ef13e8cc273910fcd24554023ddeb96`  
-		Last Modified: Fri, 20 Nov 2026 06:18:30 GMT  
-		Size: 155.0 B  
+	-	`sha256:33f56129f20176640d89c5b1901f266c6b2ada6c9f65f6f8af91fbcc96ccb46f`  
+		Last Modified: Fri, 20 Nov 2026 19:10:01 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8-debian-trixie` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:09882b5f4a72d05a3e2c8da3948d37caa60b250cc79b8b0545f5e007fa463757
+$ docker pull maven@sha256:62fd70a76da0e6f438c7b76147f101914a4bc6d2ba47d57e85e97003e1ee18b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2991946 bytes)**  
+-	Total Size: **3.0 MB (2991947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c1f2b0b42a9f0d7af56d1124935e7ab27645c4a3cfdd441d422ece7f2e94781`
+-	Image ID: `sha256:fa1034eeac88368e8cd2f30d361786d164d27fc700a358c28f25de2b2f7f1da2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ea8e18f4d602b62ea5122d90b53df8573f216a1e8ece3e207a36f69a5ad73b3`  
-		Last Modified: Fri, 20 Nov 2026 06:18:30 GMT  
+	-	`sha256:27a3dff436b8c757a306c3984eb32cc28465cb0250e290c49e05848157325757`  
+		Last Modified: Fri, 20 Nov 2026 19:10:01 GMT  
 		Size: 3.0 MB (2974406 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a798e98630507098af2dd60fed36b3e6380d521f194b11e939703adfa4d91282`  
-		Last Modified: Fri, 20 Nov 2026 06:18:30 GMT  
-		Size: 17.5 KB (17540 bytes)  
+	-	`sha256:f9af1be9f8b61c093da9b88217c333cc812604f11f4d29f9dbc9432d168015ab`  
+		Last Modified: Fri, 20 Nov 2026 19:10:01 GMT  
+		Size: 17.5 KB (17541 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-8-debian-trixie` - linux; arm64 variant v8
