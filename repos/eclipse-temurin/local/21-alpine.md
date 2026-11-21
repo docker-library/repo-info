@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.13_9-jdk-alpine-3.24`
+# `eclipse-temurin:21.0.13.1_2-jdk-alpine-3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2de376709464449dd04066c8c050eea198a07d6637f22566a8caa62253877a28`
-- Created: `2026-11-05T19:18:34.49590961Z`
-- Virtual Size: ~ 364.09 Mb  
+- Image ID: `sha256:16e7627410097994374b4a2cfd81dff3b9fce607e59f95d96185537dbe51b6dd`
+- Created: `2026-11-20T17:43:21.859192291Z`
+- Virtual Size: ~ 370.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.13+9`
+  - `JAVA_VERSION=jdk-21.0.13.1+2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -498,16 +498,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2020 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -685,16 +685,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -736,16 +736,16 @@ MIT
 ### `apk` package: `libfontenc`
 
 ```console
-libfontenc-1.1.9-r0 description:
+libfontenc-1.1.10-r0 description:
 X11 font encoding library
 
-libfontenc-1.1.9-r0 webpage:
+libfontenc-1.1.10-r0 webpage:
 https://xorg.freedesktop.org/
 
-libfontenc-1.1.9-r0 installed size:
+libfontenc-1.1.10-r0 installed size:
 25 KiB
 
-libfontenc-1.1.9-r0 license:
+libfontenc-1.1.10-r0 license:
 MIT
 
 ```
@@ -923,16 +923,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -1127,16 +1127,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```

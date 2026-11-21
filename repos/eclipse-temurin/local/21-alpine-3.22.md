@@ -1,10 +1,10 @@
-# `eclipse-temurin:21.0.13_9-jdk-alpine-3.22`
+# `eclipse-temurin:21.0.13.1_2-jdk-alpine-3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a207d75aec02b91b6810f69fab2be356d5c13be493438b4546d214d94d42324`
-- Created: `2026-11-05T19:18:48.761517695Z`
-- Virtual Size: ~ 363.4 Mb  
+- Image ID: `sha256:c78332b1149a7dbc1e230aba47498311dba36aaaf636e48f8eee299bd5468593`
+- Created: `2026-11-20T17:43:26.581779772Z`
+- Virtual Size: ~ 363.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.13+9`
+  - `JAVA_VERSION=jdk-21.0.13.1+2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -498,16 +498,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2024 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```
