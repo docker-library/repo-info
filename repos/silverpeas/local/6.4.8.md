@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c03ee8cc45da13bff8f8992577d0c86993c95a7d910715d8cd323339144afcc8`
-- Created: `2026-11-11T23:48:59.488976893Z`
+- Image ID: `sha256:1ca2f23f07dc665dfb17898f65d581e739c53c269159f270091e18837fbbab8f`
+- Created: `2026-11-20T03:50:09.186494056Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1289,13 +1289,13 @@ $ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.11
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.11.dsc' glib2.0_2.72.4-0ubuntu2.11.dsc 3111 SHA512:df8f44165dffdfae65af6475a384d4470f1b49e48ef82a8041ca0f396b89f78ce90819645a68947c64e984b8c9a63284b7fdd2d415a3afdde8ffc8a8dd7c3e50
 ```
 
-### `dpkg` source package: `glibc=2.35-0ubuntu3.15`
+### `dpkg` source package: `glibc=2.35-0ubuntu3.18`
 
 Binary Packages:
 
-- `libc-bin=2.35-0ubuntu3.15`
-- `libc6:amd64=2.35-0ubuntu3.15`
-- `locales=2.35-0ubuntu3.15`
+- `libc-bin=2.35-0ubuntu3.18`
+- `libc6:amd64=2.35-0ubuntu3.18`
+- `locales=2.35-0ubuntu3.18`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -1303,9 +1303,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.18
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.18.debian.tar.xz' glibc_2.35-0ubuntu3.18.debian.tar.xz 976436 SHA512:1fe5c649f12da4cb78c3fdc752249464822cd8b2f2273bca7e9c8f5db92843c7bc77bfe91a29b29182242bb0c734218db185a9f43f833b36351f9d1d3520a90a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.18.dsc' glibc_2.35-0ubuntu3.18.dsc 8888 SHA512:fad660729c6518e053161e0f1f2d362fccede889f3914707cb945b5f22bb2f3dcf2a2a1166b2a5280e753d75944642a5cd928c4b6f39c070eb38f412c1fec638
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1502,11 +1508,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.8`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.9`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.8`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.9`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1517,15 +1523,20 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.9.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.9.debian.tar.xz 54144 SHA512:3586402350010efa176c65f699fcdc74dfe8665a77b151a2d0c03820eb38cfedb7fafc766028fbe9759e42065f0e60723c2c9cca9f85e5a54ec501244e2dce51
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.9.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.9.dsc 3833 SHA512:6da15459175d6ae352dbbfcd7af8a7e90e7ae27bc0133a50fb5f2663003104dcf0574bc22d6887e471b2c85e2da0544a7b9b4b8985de1546594cbe455d214d4a
+```
 
-### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1.1`
+### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1.2`
 
 Binary Packages:
 
-- `libgstreamer1.0-0:amd64=1.20.3-0ubuntu1.1`
+- `libgstreamer1.0-0:amd64=1.20.3-0ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 
@@ -1538,10 +1549,10 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.20.3-0ubuntu1.1
+$ apt-get source -qq --print-uris gstreamer1.0=1.20.3-0ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3.orig.tar.xz' gstreamer1.0_1.20.3.orig.tar.xz 2681088 SHA512:e93f9fbf2d7a839dcbe2030ed16dd53eb250741db7c2f1cea396c23e4fabf9a0caff6be4babf7c10aec4b56dc8319a970b1b0bfa6eea2e36aed3e6e1265d9278
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.1.debian.tar.xz 45248 SHA512:a77666adbad0054f9ccd118b1151dd54f7b62ce42ccf7ad9757652d125dd7040701a7fd68893ccfa4275760aa09f37e5a7f9aecbe86e19b6bf33ab464488e388
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.1.dsc' gstreamer1.0_1.20.3-0ubuntu1.1.dsc 2968 SHA512:874b7438bd8021858a321ff07a81783541c79faf416c888f96b3368c48dc38229cc0266a1d1c2b022a499ffcfa6549420bae1bf9cb2f6747a78a44e12677053e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.2.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.2.debian.tar.xz 45596 SHA512:99bf173af018543482b68788607b3c1fc9f121bba40152de1b0eddc6f4949e3446fcfd833c6c606c6b6e2cc1736068fb140a16e0c2b209a2503437eb84890be4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.2.dsc' gstreamer1.0_1.20.3-0ubuntu1.2.dsc 3005 SHA512:2128bbbcd255083b56752abe5ac66769ef8e925df59946b398500f0514515ab19a555c8181745f322fdc973f03020b28e473b1b2c6c50298af83690570814c12
 ```
 
 ### `dpkg` source package: `gzip=1.10-4ubuntu4.2`
@@ -3805,9 +3816,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsodium=1.0.18-1ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA256:d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz 8448 SHA256:55a61936dd5ec0dae47da9cb24f84bab0805434ce1107731d3169ca557c3cae4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.dsc' libsodium_1.0.18-1ubuntu0.22.04.1.dsc 2052 SHA256:2b8e2ea6c7f63cc47ccee86b2653be1a798ade9abe3344537b0c2477ab417cc1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18.orig.tar.gz' libsodium_1.0.18.orig.tar.gz 1619527 SHA512:727fe50a5fb1df86ec5d807770f408a52609cbeb8510b4f4183b2a35a537905719bdb6348afcb103ff00ce946a8094ac9559b6e3e5b2ccc2a2d0c08f75577eeb
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz' libsodium_1.0.18-1ubuntu0.22.04.1.debian.tar.xz 8448 SHA512:38ab796a1aed5e730ace9e3cca40dfd1a1ca7651c1fb71e2f4da3fd9d68c771d18f05d8863232201ea501e0bfed9e7c65f5e97a130ac471d568c15dce747d1d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsodium/libsodium_1.0.18-1ubuntu0.22.04.1.dsc' libsodium_1.0.18-1ubuntu0.22.04.1.dsc 2052 SHA512:1c42a217a401f7b110002b82efdbe1b0e3468b9776ac093d4c6d0200db7198e551a592895b8ad4920d26c4985d7ee18797a605d45f1a7320cf886869c593d623
 ```
 
 ### `dpkg` source package: `libsoxr=0.1.3-4build2`
@@ -3875,10 +3886,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtasn1-6=4.18.0-4ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA256:4365c154953563d64c67a024b607d1ee75c6db76e0d0f65709ea80a334cd1898
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA256:68edccaf988071e0c0154495e82be0b783553a49762381435accc79f2fdb463d
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz' libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz 25324 SHA256:450340a2e588e4fcbfcbf2eece3c516a3fc25f6606e0fa341155326ab72137a0
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.dsc' libtasn1-6_4.18.0-4ubuntu0.2.dsc 2777 SHA256:959cc5799f608a5ddc7aba7fcc765588b5dc82c7d987bd17a4274222a5171d41
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA512:4f2f4afc7561fda7a1f1c6c525c3c3b08228a1a4aa8c3d3d5e02e993d8f83ccee1dd0f1b201cec0fbfc97043d4b1d7a95ffd34d65422a38b85b931ac7a015831
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA512:8ef3918a3130f695d2d5b26dd945084b931005eff8914c50a0ac9795d4cc6ec9e9645e2941ff4235cba3b4b2987ab1c7da65225e24ce16aaab844352ecdafbf6
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz' libtasn1-6_4.18.0-4ubuntu0.2.debian.tar.xz 25324 SHA512:81237d28d0490af47955c5d759f283f0ab2dc6d961fe18193daf406b63d4773bddd53914382d4ca061f7a6b2e4fe8dd456be88537ebe0dbe2085874b70b20737
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4ubuntu0.2.dsc' libtasn1-6_4.18.0-4ubuntu0.2.dsc 2777 SHA512:76f8b50124689bee4c365df96a2086d7e281a14f15ba625dd02e688c3d85643e0f55757d11aff290fbc4f1d0a418e0a73ba362833308ce67b7f3313656460d4c
 ```
 
 ### `dpkg` source package: `libthai=0.1.29-1build1`
@@ -5225,14 +5236,14 @@ $ apt-get source -qq --print-uris openal-soft=1:1.19.1-2build3
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openal-soft/openal-soft_1.19.1-2build3.debian.tar.xz' openal-soft_1.19.1-2build3.debian.tar.xz 12932 SHA512:2353577b8a567a0d8559318f14ac4b4bb9f7f27594e255acd01abbd67669273ed1e3d087552afb876679e1ef6a76f539bd69aabcd895112f35eb4e02d21730d3
 ```
 
-### `dpkg` source package: `openjdk-lts=11.0.33+9-1ubuntu1~22.04.1`
+### `dpkg` source package: `openjdk-lts=11.0.33.1+1-1ubuntu1~22.04.1`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11.0.33+9-1ubuntu1~22.04.1`
-- `openjdk-11-jdk-headless:amd64=11.0.33+9-1ubuntu1~22.04.1`
-- `openjdk-11-jre:amd64=11.0.33+9-1ubuntu1~22.04.1`
-- `openjdk-11-jre-headless:amd64=11.0.33+9-1ubuntu1~22.04.1`
+- `openjdk-11-jdk:amd64=11.0.33.1+1-1ubuntu1~22.04.1`
+- `openjdk-11-jdk-headless:amd64=11.0.33.1+1-1ubuntu1~22.04.1`
+- `openjdk-11-jre:amd64=11.0.33.1+1-1ubuntu1~22.04.1`
+- `openjdk-11-jre-headless:amd64=11.0.33.1+1-1ubuntu1~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -5244,10 +5255,10 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.33+9-1ubuntu1~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9.orig.tar.xz' openjdk-lts_11.0.33+9.orig.tar.xz 69956620 SHA512:c1463aa8a4e0478d04908f284403fb4e03ce157c62885e0f712c008fc85d1b5d3fb41346f9620d0d1a4f4fc70f0f613635a326ca18b0bd43f6a9a028aa917217
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9-1ubuntu1%7e22.04.1.debian.tar.xz' openjdk-lts_11.0.33+9-1ubuntu1~22.04.1.debian.tar.xz 176040 SHA512:057b5132bf22198962c112d6edb89606eee9dcdb9a641b27ae0aa670f0b5cc7626ca43370d1a8374737fdeb00570f3a66a72d60fa24a0a8da7c0a734d3fec5de
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33%2b9-1ubuntu1%7e22.04.1.dsc' openjdk-lts_11.0.33+9-1ubuntu1~22.04.1.dsc 4583 SHA512:3c6d5c3a6636c864aa47b087b95e34f0c0f1efc61cfce430d743f3b201b9b257bc72907dfa412b6491cf5bb3eb0774619e1d095e07920085cf93178d7860f4fd
+$ apt-get source -qq --print-uris openjdk-lts=11.0.33.1+1-1ubuntu1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33.1%2b1.orig.tar.xz' openjdk-lts_11.0.33.1+1.orig.tar.xz 69989464 SHA512:0d56151e98455f7ea6265365913daa7f144f2f833eff321e991e93b47dffd23d438cb35d680903e0d5a2b388e2e34d7fa0735dbe43952a09c7b5e62c414910ea
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33.1%2b1-1ubuntu1%7e22.04.1.debian.tar.xz' openjdk-lts_11.0.33.1+1-1ubuntu1~22.04.1.debian.tar.xz 176472 SHA512:a485b538bc4bdd2792af9f813b5621afd62fc7753874a63fad2b0c6a4e3f2232d579b421ac98d8560f054523d5d0db48549b4eebc4361d58a25a646ddd6765c5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.33.1%2b1-1ubuntu1%7e22.04.1.dsc' openjdk-lts_11.0.33.1+1-1ubuntu1~22.04.1.dsc 4597 SHA512:6ea01d35f3fcd5ea16c8606227e0a40ece892a9148bb8548155a9b4cda9cf32e35ea46227ce5aaea42aa464da4445e1085afc16ee3c335b8b28e66338ff0c146
 ```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
