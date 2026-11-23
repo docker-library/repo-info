@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc29ae1ffc9a7069f8a54c509c49e68b48ffd0dda10c63f50085548dcab1d6bf`
-- Created: `2026-11-12T00:25:59.085869703Z`
-- Virtual Size: ~ 850.87 Mb  
+- Image ID: `sha256:a73ce33f49074433a7aead00fb0c02abca4389b660d8738d2d4132d346183bc3`
+- Created: `2026-11-20T17:48:31.274802833Z`
+- Virtual Size: ~ 850.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -68,8 +68,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=3.0.4
-'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.dsc' apt_3.0.4.dsc 3091 SHA256:efc029dbfb0e264dfb38a8bf34398a8d3709cd35a463c270153b59e2e4ffb404
-'http://deb.debian.org/debian-security/pool/updates/main/a/apt/apt_3.0.4.tar.xz' apt_3.0.4.tar.xz 2423460 SHA256:e853aec49afbe520ebcd4dbcbc98e1c55262c6bf1c119cf43e6aec69752443c6
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.4.dsc' apt_3.0.4.dsc 3091 SHA256:efc029dbfb0e264dfb38a8bf34398a8d3709cd35a463c270153b59e2e4ffb404
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.0.4.tar.xz' apt_3.0.4.tar.xz 2423460 SHA256:e853aec49afbe520ebcd4dbcbc98e1c55262c6bf1c119cf43e6aec69752443c6
 ```
 
 Other potentially useful URLs:
@@ -147,19 +147,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u7.dsc' base-files_13.8+deb13u7.dsc 1247 SHA256:6240b5a02fc32bd6d925bb7776e00c467e80d930f8cf3c4a20c299ce692dc7e4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u7.tar.xz' base-files_13.8+deb13u7.tar.xz 83444 SHA256:be32803b9408ac9aa46b96f68c83ee45e88d04d89854a87999986efc4cb34c69
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u7/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u7/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -263,8 +257,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ca-certificates=20250419+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.dsc' ca-certificates_20250419+deb13u1.dsc 1924 SHA256:347487e99c0b9f09150c8d78ad03e3552545c3904d5e0d7f731ef2ef79d484d4
-'http://deb.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.tar.xz' ca-certificates_20250419+deb13u1.tar.xz 277284 SHA256:1b2e3d0b90cfc62ac8033d64e18ea4649fbb2a01c937c9ac9d36e762da6b9446
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.dsc' ca-certificates_20250419+deb13u1.dsc 1924 SHA256:347487e99c0b9f09150c8d78ad03e3552545c3904d5e0d7f731ef2ef79d484d4
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20250419%2bdeb13u1.tar.xz' ca-certificates_20250419+deb13u1.tar.xz 277284 SHA256:1b2e3d0b90cfc62ac8033d64e18ea4649fbb2a01c937c9ac9d36e762da6b9446
 ```
 
 Other potentially useful URLs:
@@ -874,9 +868,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris jq=1.7.1-6+deb13u4
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1-6%2bdeb13u4.dsc' jq_1.7.1-6+deb13u4.dsc 1687 SHA256:5d569aab638047a984eb5df48943d626083fced2ed7bd85e1ce21228504c787f
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1.orig.tar.gz' jq_1.7.1.orig.tar.gz 1323338 SHA256:fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.7.1-6%2bdeb13u4.debian.tar.xz' jq_1.7.1-6+deb13u4.debian.tar.xz 35488 SHA256:212a072699dfaaff63406ce9f846827ba00b048726f1c644d159cffb1008b067
+'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1-6%2bdeb13u4.dsc' jq_1.7.1-6+deb13u4.dsc 1687 SHA256:5d569aab638047a984eb5df48943d626083fced2ed7bd85e1ce21228504c787f
+'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1.orig.tar.gz' jq_1.7.1.orig.tar.gz 1323338 SHA256:fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1
+'http://deb.debian.org/debian/pool/main/j/jq/jq_1.7.1-6%2bdeb13u4.debian.tar.xz' jq_1.7.1-6+deb13u4.debian.tar.xz 35488 SHA256:212a072699dfaaff63406ce9f846827ba00b048726f1c644d159cffb1008b067
 ```
 
 Other potentially useful URLs:
@@ -1379,11 +1373,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.116-1`
+### `dpkg` source package: `linux=6.12.117-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.116-1`
+- `linux-libc-dev=6.12.117-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1397,17 +1391,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.116-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116-1.dsc' linux_6.12.116-1.dsc 290418 SHA256:cef4db7d11833a771e04b844931a86387d5484def787a2a8f2cc6d9050385054
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116.orig.tar.xz' linux_6.12.116.orig.tar.xz 151683860 SHA256:84f07a9eb2779253d11aefb8b6ee1cd2dd9aa80406cad111b04702ca9208d24e
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.116-1.debian.tar.xz' linux_6.12.116-1.debian.tar.xz 1986608 SHA256:c2cec050ef5c92d0dbd2ed16db52a8ca00403ab4f84ccd5be02387ff169aa617
+$ apt-get source -qq --print-uris linux=6.12.117-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.117-1.dsc' linux_6.12.117-1.dsc 290418 SHA256:041c7af261546dbad4ee57ccb237f02a8697b762be34aed2e1617ed49595942a
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.117.orig.tar.xz' linux_6.12.117.orig.tar.xz 151928652 SHA256:77cf7a48a73aeaa7cf4f94cb6d17f8fe545bf33a5dd8a56d6428db3a54645c74
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.117-1.debian.tar.xz' linux_6.12.117-1.debian.tar.xz 1999304 SHA256:e3f3bec0723f780d9ef2a2b3215aea25d34c61cd884f1f858c9708a846c4f8f9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.116-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.116-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.116-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.117-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.117-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.117-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
@@ -1658,9 +1652,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre2=10.46-1~deb13u3
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.dsc' pcre2_10.46-1~deb13u3.dsc 2406 SHA256:5f317534eff1e33f0a5690a866ba2f2c9399c60ce9b74c89039d4de372420c5c
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
-'http://deb.debian.org/debian-security/pool/updates/main/p/pcre2/pcre2_10.46-1%7edeb13u3.diff.gz' pcre2_10.46-1~deb13u3.diff.gz 20405 SHA256:28734c85365f431a4494c2efe2cdb42ed432673f962e421826f3c3b7aa76c4cf
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u3.dsc' pcre2_10.46-1~deb13u3.dsc 2406 SHA256:5f317534eff1e33f0a5690a866ba2f2c9399c60ce9b74c89039d4de372420c5c
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46.orig.tar.gz' pcre2_10.46.orig.tar.gz 2718545 SHA256:8d28d7f2c3b970c3a4bf3776bcbb5adfc923183ce74bc8df1ebaad8c1985bd07
+'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.46-1%7edeb13u3.diff.gz' pcre2_10.46-1~deb13u3.diff.gz 20405 SHA256:28734c85365f431a4494c2efe2cdb42ed432673f962e421826f3c3b7aa76c4cf
 ```
 
 Other potentially useful URLs:
@@ -2181,10 +2175,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.8.1-1+deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.dsc' xz-utils_5.8.1-1+deb13u2.dsc 2562 SHA256:f02574465dcb7da3d5b7bdfc20ea350248c3371b0df36bb005152af80d61cdfc
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
-'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.debian.tar.xz' xz-utils_5.8.1-1+deb13u2.debian.tar.xz 28044 SHA256:7dfcff43a8035561c4860a4893f7cf9de5e977e79a90aee4d101053e21912cb0
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.dsc' xz-utils_5.8.1-1+deb13u2.dsc 2562 SHA256:f02574465dcb7da3d5b7bdfc20ea350248c3371b0df36bb005152af80d61cdfc
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz' xz-utils_5.8.1.orig.tar.xz 1461872 SHA256:0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1.orig.tar.xz.asc' xz-utils_5.8.1.orig.tar.xz.asc 833 SHA256:4138f4ceca1aa7fd2085fb15a23f6d495d27bca6d3c49c429a8520ea622c27ae
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.8.1-1%2bdeb13u2.debian.tar.xz' xz-utils_5.8.1-1+deb13u2.debian.tar.xz 28044 SHA256:7dfcff43a8035561c4860a4893f7cf9de5e977e79a90aee4d101053e21912cb0
 ```
 
 Other potentially useful URLs:
