@@ -1,13 +1,13 @@
-# `perl:5.45.4-forky`
+# `perl:5.45.5-forky`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a915c590a31091a9e857838df14571dd62abc53f216852ab726fee5cb79ab358`
-- Created: `2026-11-05T09:30:42.616674898Z`
+- Image ID: `sha256:89ddf2e0c500bb5df15c385185305c36c62ba54d92139a012e2654e7a6907ecd`
+- Created: `2026-11-19T22:00:55.698361385Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.45.4","-de0"]`
+- Command: `["perl5.45.5","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -650,20 +650,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-12
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-12.dsc' dash_0.5.12-12.dsc 1460 SHA256:589efc4d87a4ae4745c273bdb33198d7c4f28a71736a8ece81d3677cf9c6e5ce
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA256:6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.12-12.debian.tar.xz' dash_0.5.12-12.debian.tar.xz 47300 SHA256:a278acb5d9a1f5d9a086d36a547287cbf3105b8f33c0e62d86d264decf5ba1ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.12-12/
 
-- https://sources.debian.net/src/dash/0.5.12-12/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.12-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.12-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dav1d=1.5.4-1`
 
@@ -1316,19 +1309,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.233
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.233.dsc' gcc-defaults_1.233.dsc 37104 SHA256:d611eea722ea3a6982bc9f53bd8b2148d89acd87b5947f1efd62593d5670f228
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.233.tar.xz' gcc-defaults_1.233.tar.xz 55488 SHA256:19bb6d777543763959d371985e6ad3305562f58dcdd2d1cf58c126d208d7280a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.233/
 
-- https://sources.debian.net/src/gcc-defaults/1.233/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.233/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.233/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.26-1`
 
@@ -2616,20 +2603,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.23.6-2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6-2.dsc' libheif_1.23.6-2.dsc 3725 SHA256:56b216be0f4abc74bee35d49fe7726fdfd11d0fda13980fe4d93e23f2a96fc5b
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6.orig.tar.gz' libheif_1.23.6.orig.tar.gz 2373898 SHA256:4484346dc5995319dbc11e3a1c35d0a2ec46511ce370900869337fd2c7033125
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.23.6-2.debian.tar.xz' libheif_1.23.6-2.debian.tar.xz 16008 SHA256:a3f8e60a785b4319879e35b6bddb3a464af83fb73bc1fde5f37a3c9b935a4cbc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.23.6-2/
 
-- https://sources.debian.net/src/libheif/1.23.6-2/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.23.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.23.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -2801,20 +2781,13 @@ Licenses: (parsed from: `/usr/share/doc/libmaxminddb-dev/copyright`, `/usr/share
 - `LGPL-3`
 - `LGPL-3.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmaxminddb=1.13.3-1
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.13.3-1.dsc' libmaxminddb_1.13.3-1.dsc 2264 SHA256:19a6b81a9df78159161b36ce756b543a0070c648dea7eb4d41acf2a6658f4956
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.13.3.orig.tar.gz' libmaxminddb_1.13.3.orig.tar.gz 404341 SHA256:49d3a0a682472f479f6675db01a07b85c16d58dedd459d54abd9b6ddd872f947
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.13.3-1.debian.tar.xz' libmaxminddb_1.13.3-1.debian.tar.xz 6928 SHA256:2caac60c4c44dfbcdc16ede53ee54c01ea4d70b4742dfc51f78f4634931f4218
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmaxminddb/1.13.3-1/
 
-- https://sources.debian.net/src/libmaxminddb/1.13.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libmaxminddb/1.13.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmaxminddb/1.13.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.3.0-1`
 
@@ -4288,20 +4261,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjph-dev/copyright`, `/usr/share/d
 - `BSD-2-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjph=0.32.0-1
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.32.0-1.dsc' openjph_0.32.0-1.dsc 2172 SHA256:099f8e55a894491809cbeb30d9769d490c7de37739ba0789eb4d8603516435b8
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.32.0.orig.tar.gz' openjph_0.32.0.orig.tar.gz 566759 SHA256:775a562435cfd4550e8df773335aed82f9ff55691897e05aa3bc54d24e71e025
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.32.0-1.debian.tar.xz' openjph_0.32.0-1.debian.tar.xz 6020 SHA256:1282ced12adcb3594979939f3c28a00e0a1d47f77f9dfa2e9134e9ae3b84dc35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjph/0.32.0-1/
 
-- https://sources.debian.net/src/openjph/0.32.0-1/ (for browsing the source)
-- https://sources.debian.net/src/openjph/0.32.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjph/0.32.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.14+dfsg-2`
 
@@ -4439,21 +4405,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.5-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.dsc' p11-kit_0.26.5-1.dsc 2541 SHA256:042a8c16de5351864938d98f73e0b7f179ec5f23d33800b312dd3117c015bd28
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz' p11-kit_0.26.5.orig.tar.xz 1082584 SHA256:f2cc09111e44bf3fea58f023180b33acea90aa82d042d6fbb623fbc5ba033bb7
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5.orig.tar.xz.asc' p11-kit_0.26.5.orig.tar.xz.asc 228 SHA256:ce4e85963532772baf57dc7c63d6cc537dec2ea27a6dc49cf25028488e85c2ec
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.5-1.debian.tar.xz' p11-kit_0.26.5-1.debian.tar.xz 24628 SHA256:a40a4ea9e417f99c1c00e3f55b232a457ad81f2eb79271fdc9c4f4dd1a925e3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.5-1/
 
-- https://sources.debian.net/src/p11-kit/0.26.5-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-8`
 
@@ -4795,20 +4753,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=26.2-3
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2-3.dsc' python-packaging_26.2-3.dsc 2386 SHA256:c2841f88db23bca2a634767ef215c393eed4f0cb064796877425c9fcfae2f0d3
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2.orig.tar.gz' python-packaging_26.2.orig.tar.gz 228134 SHA256:ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_26.2-3.debian.tar.xz' python-packaging_26.2-3.debian.tar.xz 6252 SHA256:22d115c7bf564d67e438fcc7b47d00bc0dee545e869a9146f39f8d1367ad7e4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/26.2-3/
 
-- https://sources.debian.net/src/python-packaging/26.2-3/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/26.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/26.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.14.7-3`
 
@@ -5227,20 +5178,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/shar
 - `Unlicense`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=262-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262-1.dsc' systemd_262-1.dsc 8873 SHA256:2b246c7d73e8a217bed0134183ace45e59a33b8271029487e5d5aaa73a21f87a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262.orig.tar.gz' systemd_262.orig.tar.gz 19038647 SHA256:6aa77506c0644aa67f940a48e3d3a7368601f787e4f249139516d353f107bcab
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_262-1.debian.tar.xz' systemd_262-1.debian.tar.xz 189824 SHA256:f3c33171e982901844e394d508c03a82d000c17df50dd484c59f5fa6687211e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/262-1/
 
-- https://sources.debian.net/src/systemd/262-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/262-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/262-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 
@@ -5425,20 +5369,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-31
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-31.dsc' unzip_6.0-31.dsc 1463 SHA256:1e3454cb496ae8587c265741f396c0fe7d509c6f65eb02e7f8cda3554fd5680f
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-31.debian.tar.xz' unzip_6.0-31.debian.tar.xz 27232 SHA256:d7dc23f5254c6711dc05f467e70236cfd50a7931001c6152904474b19f295c38
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unzip/6.0-31/
 
-- https://sources.debian.net/src/unzip/6.0-31/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-31/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-31/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.11.3-2`
 
