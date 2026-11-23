@@ -546,7 +546,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libestr-0.1.11-11.el10
-https://rocky.mirror.shastacoe.net/rocky/10.3/AppStream/source/tree/Packages/l/libestr-0.1.11-11.el10.src.rpm
+http://mirror.rnet.missouri.edu/rocky/10.3/AppStream/source/tree/Packages/l/libestr-0.1.11-11.el10.src.rpm
 ```
 
 ### `rpm` package: `libevent-2.1.13-1.el10_2.x86_64`
@@ -568,7 +568,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfastjson-1.2304.0-6.el10
-https://rocky.mirror.shastacoe.net/rocky/10.3/AppStream/source/tree/Packages/l/libfastjson-1.2304.0-6.el10.src.rpm
+http://mirror.rnet.missouri.edu/rocky/10.3/AppStream/source/tree/Packages/l/libfastjson-1.2304.0-6.el10.src.rpm
 ```
 
 ### `rpm` package: `libfdisk-2.40.2-18.0.1.el10.x86_64`

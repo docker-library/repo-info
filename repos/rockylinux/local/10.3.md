@@ -70,7 +70,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url bash-5.2.26-6.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/b/bash-5.2.26-6.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/b/bash-5.2.26-6.el10.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.8-25.el10.x86_64`
@@ -81,7 +81,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url bzip2-libs-1.0.8-25.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/b/bzip2-1.0.8-25.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/b/bzip2-1.0.8-25.el10.src.rpm
 ```
 
 ### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch`
@@ -92,7 +92,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/c/ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/c/ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
@@ -121,7 +121,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cracklib-2.9.11-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/c/cracklib-2.9.11-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/c/cracklib-2.9.11-8.el10.src.rpm
 ```
 
 ### `rpm` package: `cracklib-dicts-2.9.11-8.el10.x86_64`
@@ -132,7 +132,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cracklib-dicts-2.9.11-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/c/cracklib-2.9.11-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/c/cracklib-2.9.11-8.el10.src.rpm
 ```
 
 ### `rpm` package: `crypto-policies-20260216-1.git0e54016.el10_2.2.noarch`
@@ -155,7 +155,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.28-30.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/c/cyrus-sasl-2.1.28-30.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/c/cyrus-sasl-2.1.28-30.el10_2.src.rpm
 ```
 
 ### `rpm` package: `dbus-1.14.10-5.el10.x86_64`
@@ -190,7 +190,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url diffutils-3.10-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/d/diffutils-3.10-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/d/diffutils-3.10-8.el10.src.rpm
 ```
 
 ### `rpm` package: `dnf-4.20.0-22.0.1.el10_2.noarch`
@@ -249,7 +249,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url filesystem-3.18-17.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/f/filesystem-3.18-17.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/f/filesystem-3.18-17.el10.src.rpm
 ```
 
 ### `rpm` package: `findutils-4.10.0-5.el10.x86_64`
@@ -260,7 +260,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url findutils-4.10.0-5.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/f/findutils-4.10.0-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/f/findutils-4.10.0-5.el10.src.rpm
 ```
 
 ### `rpm` package: `gawk-5.3.0-6.el10_2.1.x86_64`
@@ -313,7 +313,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gmp-6.2.1-12.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/g/gmp-6.2.1-12.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/g/gmp-6.2.1-12.el10.src.rpm
 ```
 
 ### `rpm` package: `gnutls-3.8.10-5.el10_2.x86_64`
@@ -324,7 +324,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gnutls-3.8.10-5.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/g/gnutls-3.8.10-5.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/g/gnutls-3.8.10-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
@@ -347,7 +347,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url grep-3.11-10.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/g/grep-3.11-10.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/g/grep-3.11-10.el10.src.rpm
 ```
 
 ### `rpm` package: `gzip-1.13-4.el10_2.x86_64`
@@ -358,7 +358,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gzip-1.13-4.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/g/gzip-1.13-4.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/g/gzip-1.13-4.el10_2.src.rpm
 ```
 
 ### `rpm` package: `ima-evm-utils-1.6.2-4.el10.x86_64`
@@ -393,7 +393,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url json-c-0.18-3.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/j/json-c-0.18-3.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/j/json-c-0.18-3.el10.src.rpm
 ```
 
 ### `rpm` package: `keyutils-1.6.3-5.el10.x86_64`
@@ -404,7 +404,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url keyutils-1.6.3-5.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/k/keyutils-1.6.3-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/k/keyutils-1.6.3-5.el10.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.6.3-5.el10.x86_64`
@@ -415,7 +415,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url keyutils-libs-1.6.3-5.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/k/keyutils-1.6.3-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/k/keyutils-1.6.3-5.el10.src.rpm
 ```
 
 ### `rpm` package: `krb5-libs-1.21.3-10.0.1.el10_2.x86_64`
@@ -438,7 +438,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libarchive-3.7.7-11.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libarchive-3.7.7-11.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libarchive-3.7.7-11.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libattr-2.6.0-1.el10_2.x86_64`
@@ -479,7 +479,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcbor-0.11.0-3.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libcbor-0.11.0-3.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libcbor-0.11.0-3.el10.src.rpm
 ```
 
 ### `rpm` package: `libcom_err-1.47.1-5.el10.x86_64`
@@ -490,7 +490,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcom_err-1.47.1-5.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/e/e2fsprogs-1.47.1-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/e/e2fsprogs-1.47.1-5.el10.src.rpm
 ```
 
 ### `rpm` package: `libcomps-0.1.21-3.el10.x86_64`
@@ -501,7 +501,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcomps-0.1.21-3.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libcomps-0.1.21-3.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
 ### `rpm` package: `libcurl-8.12.1-4.el10_2.7.x86_64`
@@ -524,7 +524,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libeconf-0.6.2-4.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libeconf-0.6.2-4.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libeconf-0.6.2-4.el10.src.rpm
 ```
 
 ### `rpm` package: `libedit-3.1-52.20230828cvs.el10.x86_64`
@@ -535,7 +535,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libedit-3.1-52.20230828cvs.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libedit-3.1-52.20230828cvs.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libedit-3.1-52.20230828cvs.el10.src.rpm
 ```
 
 ### `rpm` package: `libestr-0.1.11-11.el10.x86_64`
@@ -546,7 +546,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libestr-0.1.11-11.el10
-http://mirror.siena.edu/rocky/10.3/AppStream/source/tree/Packages/l/libestr-0.1.11-11.el10.src.rpm
+http://distro.ibiblio.org/rocky/10.3/AppStream/source/tree/Packages/l/libestr-0.1.11-11.el10.src.rpm
 ```
 
 ### `rpm` package: `libevent-2.1.13-1.el10_2.x86_64`
@@ -557,7 +557,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libevent-2.1.13-1.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libevent-2.1.13-1.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libevent-2.1.13-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
@@ -568,7 +568,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfastjson-1.2304.0-6.el10
-http://mirror.siena.edu/rocky/10.3/AppStream/source/tree/Packages/l/libfastjson-1.2304.0-6.el10.src.rpm
+http://distro.ibiblio.org/rocky/10.3/AppStream/source/tree/Packages/l/libfastjson-1.2304.0-6.el10.src.rpm
 ```
 
 ### `rpm` package: `libfdisk-2.40.2-18.0.1.el10.x86_64`
@@ -585,7 +585,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libffi-3.4.4-10.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libffi-3.4.4-10.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libffi-3.4.4-10.el10.src.rpm
 ```
 
 ### `rpm` package: `libfido2-1.14.0-7.el10.x86_64`
@@ -596,7 +596,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfido2-1.14.0-7.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libfido2-1.14.0-7.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libfido2-1.14.0-7.el10.src.rpm
 ```
 
 ### `rpm` package: `libgcc-14.3.1-4.4.0.1.el10.x86_64`
@@ -619,7 +619,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libidn2-2.3.7-3.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libidn2-2.3.7-3.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libidn2-2.3.7-3.el10.src.rpm
 ```
 
 ### `rpm` package: `libmodulemd-2.15.0-12.el10.x86_64`
@@ -630,7 +630,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libmodulemd-2.15.0-12.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libmodulemd-2.15.0-12.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libmodulemd-2.15.0-12.el10.src.rpm
 ```
 
 ### `rpm` package: `libmount-2.40.2-18.0.1.el10.x86_64`
@@ -653,7 +653,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libpsl-0.21.5-6.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libpsl-0.21.5-6.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libpsl-0.21.5-6.el10.src.rpm
 ```
 
 ### `rpm` package: `libpwquality-1.4.5-12.el10.x86_64`
@@ -670,7 +670,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url librepo-1.19.0-1.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/librepo-1.19.0-1.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/librepo-1.19.0-1.el10.src.rpm
 ```
 
 ### `rpm` package: `libseccomp-2.5.6-1.el10.x86_64`
@@ -681,7 +681,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libseccomp-2.5.6-1.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libseccomp-2.5.6-1.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libseccomp-2.5.6-1.el10.src.rpm
 ```
 
 ### `rpm` package: `libselinux-3.10-1.el10.x86_64`
@@ -722,7 +722,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsolv-0.7.33-5.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libsolv-0.7.33-5.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libsolv-0.7.33-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libssh-0.12.0-3.el10_2.x86_64`
@@ -751,7 +751,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libtasn1-4.20.0-5.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libtasn1-4.20.0-5.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libtasn1-4.20.0-5.el10_2.src.rpm
 ```
 
 ### `rpm` package: `libunistring-1.1-10.el10.x86_64`
@@ -762,7 +762,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunistring-1.1-10.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libunistring-1.1-10.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libunistring-1.1-10.el10.src.rpm
 ```
 
 ### `rpm` package: `libutempter-1.2.1-15.el10.x86_64`
@@ -773,7 +773,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libutempter-1.2.1-15.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libutempter-1.2.1-15.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libutempter-1.2.1-15.el10.src.rpm
 ```
 
 ### `rpm` package: `libuuid-2.40.2-18.0.1.el10.x86_64`
@@ -790,7 +790,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libverto-0.3.2-10.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libverto-0.3.2-10.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libverto-0.3.2-10.el10.src.rpm
 ```
 
 ### `rpm` package: `libxcrypt-4.4.36-10.el10.x86_64`
@@ -801,7 +801,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxcrypt-4.4.36-10.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libxcrypt-4.4.36-10.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libxcrypt-4.4.36-10.el10.src.rpm
 ```
 
 ### `rpm` package: `libxml2-2.12.5-10.el10_2.4.x86_64`
@@ -818,7 +818,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libyaml-0.2.5-16.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libyaml-0.2.5-16.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libyaml-0.2.5-16.el10.src.rpm
 ```
 
 ### `rpm` package: `libzstd-1.5.5-9.el10.x86_64`
@@ -829,7 +829,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libzstd-1.5.5-9.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/z/zstd-1.5.5-9.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/z/zstd-1.5.5-9.el10.src.rpm
 ```
 
 ### `rpm` package: `lua-libs-5.4.6-7.el10.x86_64`
@@ -846,7 +846,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lz4-libs-1.9.4-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/lz4-1.9.4-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/lz4-1.9.4-8.el10.src.rpm
 ```
 
 ### `rpm` package: `mpdecimal-2.5.1-12.el10.x86_64`
@@ -857,7 +857,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url mpdecimal-2.5.1-12.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/m/mpdecimal-2.5.1-12.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/m/mpdecimal-2.5.1-12.el10.src.rpm
 ```
 
 ### `rpm` package: `mpfr-4.2.1-8.el10.x86_64`
@@ -868,7 +868,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url mpfr-4.2.1-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/m/mpfr-4.2.1-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/m/mpfr-4.2.1-8.el10.src.rpm
 ```
 
 ### `rpm` package: `ncurses-base-6.4-15.20240127.el10_1.noarch`
@@ -879,7 +879,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url ncurses-base-6.4-15.20240127.el10_1.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
 ```
 
 ### `rpm` package: `ncurses-libs-6.4-15.20240127.el10_1.x86_64`
@@ -890,7 +890,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url ncurses-libs-6.4-15.20240127.el10_1
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.6.10-1.el10.x86_64`
@@ -955,7 +955,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url p11-kit-0.26.4-1.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
@@ -966,7 +966,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
 ```
 
 ### `rpm` package: `pam-1.6.1-9.el10_2.1.x86_64`
@@ -1007,7 +1007,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url popt-1.19-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/popt-1.19-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/popt-1.19-8.el10.src.rpm
 ```
 
 ### `rpm` package: `procps-ng-4.0.4-11.el10.x86_64`
@@ -1024,7 +1024,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url publicsuffix-list-dafsa-20240107-5.el10.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/publicsuffix-list-20240107-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/publicsuffix-list-20240107-5.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-3.12.15-1.0.1.el10_2.x86_64`
@@ -1041,7 +1041,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-dateutil-2.9.0.post0-1.el10_0.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/python-dateutil-2.9.0.post0-1.el10_0.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/python-dateutil-2.9.0.post0-1.el10_0.src.rpm
 ```
 
 ### `rpm` package: `python3-dbus-1.3.2-8.el10.x86_64`
@@ -1052,7 +1052,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-dbus-1.3.2-8.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/d/dbus-python-1.3.2-8.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/d/dbus-python-1.3.2-8.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-dnf-4.20.0-22.0.1.el10_2.noarch`
@@ -1081,7 +1081,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-libcomps-0.1.21-3.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/l/libcomps-0.1.21-3.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/l/libcomps-0.1.21-3.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-libdnf-0.73.1-15.0.1.el10_2.x86_64`
@@ -1104,7 +1104,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-pip-wheel-23.3.2-11.el10_2.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/python-pip-23.3.2-11.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/python-pip-23.3.2-11.el10_2.src.rpm
 ```
 
 ### `rpm` package: `python3-rpm-4.19.1.1-23.el10.x86_64`
@@ -1121,7 +1121,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-six-1.16.0-16.el10.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/python-six-1.16.0-16.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/python-six-1.16.0-16.el10.src.rpm
 ```
 
 ### `rpm` package: `python3-systemd-235-11.el10.x86_64`
@@ -1132,7 +1132,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-systemd-235-11.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/p/python-systemd-235-11.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/p/python-systemd-235-11.el10.src.rpm
 ```
 
 ### `rpm` package: `readline-8.2-11.el10.x86_64`
@@ -1143,7 +1143,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url readline-8.2-11.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/r/readline-8.2-11.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/r/readline-8.2-11.el10.src.rpm
 ```
 
 ### `rpm` package: `redhat-release-10.2-16.0.1.el10.x86_64`
@@ -1160,7 +1160,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rootfiles-8.1-54.el10.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/r/rootfiles-8.1-54.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/r/rootfiles-8.1-54.el10.src.rpm
 ```
 
 ### `rpm` package: `rpm-4.19.1.1-23.el10.x86_64`
@@ -1207,7 +1207,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url sed-4.9-5.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/s/sed-4.9-5.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/s/sed-4.9-5.el10.src.rpm
 ```
 
 ### `rpm` package: `setup-2.14.5-7.el10.noarch`
@@ -1218,7 +1218,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url setup-2.14.5-7.el10.noarch
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/s/setup-2.14.5-7.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/s/setup-2.14.5-7.el10.src.rpm
 ```
 
 ### `rpm` package: `shadow-utils-4.15.0-11.el10.x86_64`
@@ -1235,7 +1235,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url sqlite-libs-3.46.1-6.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/s/sqlite-3.46.1-6.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/s/sqlite-3.46.1-6.el10_2.src.rpm
 ```
 
 ### `rpm` package: `systemd-257-23.0.1.el10_2.2.x86_64`
@@ -1264,7 +1264,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tar-1.35-13.el10_2
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/t/tar-1.35-13.el10_2.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/t/tar-1.35-13.el10_2.src.rpm
 ```
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
@@ -1275,7 +1275,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tpm2-tss-4.1.3-6.el10
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2026e-1.el10_2.noarch`
@@ -1334,5 +1334,5 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url zlib-ng-compat-2.2.3-3.el10_1
-http://mirror.siena.edu/rocky/10.3/BaseOS/source/tree/Packages/z/zlib-ng-2.2.3-3.el10_1.src.rpm
+https://us.mirrors.cicku.me/rocky/10.3/BaseOS/source/tree/Packages/z/zlib-ng-2.2.3-3.el10_1.src.rpm
 ```
