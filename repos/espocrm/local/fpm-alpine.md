@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fa6089c1a23f63c502a6197f6a3d319e3bd622b828328be7992de251922e10b`
-- Created: `2026-11-17T20:08:25.839211054Z`
-- Virtual Size: ~ 305.89 Mb  
+- Image ID: `sha256:5bda09b24d7c8d0b20d433426a4941805aa3fa73c4ca358578c02f5be82bb11b`
+- Created: `2026-11-20T19:50:53.60645158Z`
+- Virtual Size: ~ 305.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,12 +17,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
-  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
-  - `ESPOCRM_VERSION=10.1.3`
-  - `ESPOCRM_SHA256=84aca940f5ef338999ba6fb9fb62d7ad77fe3ef90e0449f2d15e00fc8de0a5ad`
+  - `PHP_VERSION=8.4.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.28.tar.xz.asc`
+  - `PHP_SHA256=0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72`
+  - `ESPOCRM_VERSION=10.1.4`
+  - `ESPOCRM_SHA256=0beeacbd3f0d6bf591038f8e6edf5b976fcb4a89dfae2c58df64f1a0672478ab`
 - Labels:
   - `org.opencontainers.image.description=EspoCRM is a free and open-source CRM platform.`
   - `org.opencontainers.image.source=https://github.com/espocrm/espocrm`
