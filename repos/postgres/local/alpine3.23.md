@@ -1,10 +1,10 @@
-# `postgres:18.7-alpine3.23`
+# `postgres:19.0-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb09e8e8158643bf8fa23bb6ef40355b3bccb74d1bf1b8d44aca1ccf9b867d51`
-- Created: `2026-11-18T21:31:29.314613872Z`
-- Virtual Size: ~ 302.72 Mb  
+- Image ID: `sha256:3cc0f59432a6ad2b63f02453276dcc750b4bc8f35ee165dbef865a23d3d3bc24`
+- Created: `2026-11-20T00:40:58.676990248Z`
+- Virtual Size: ~ 304.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,11 +13,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.20`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=18`
-  - `PG_VERSION=18.7`
-  - `PG_SHA256=441dfae4280cae3e0425e5f876f80559fb0731c140f1aae22b3e5a54d0411bfd`
+  - `PG_MAJOR=19`
+  - `PG_VERSION=19.0`
+  - `PG_SHA256=a89fd70efbad6a08c7dbed8d4872e3af30170d9e5ca9dc7906523be95b4e692d`
   - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
-  - `PGDATA=/var/lib/postgresql/18/docker`
+  - `PGDATA=/var/lib/postgresql/19/docker`
 
 ## `apk` (`.apk`-based packages)
 
