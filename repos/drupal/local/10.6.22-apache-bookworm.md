@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6221a34f276c800e8a18f81e853df17a994d7424ab0f7490ed579154073a23f9`
-- Created: `2026-11-18T18:31:19.368741184Z`
-- Virtual Size: ~ 634.02 Mb  
+- Image ID: `sha256:dd92b3fe3661f2ccb08750ec67ef606ea48617c76c3e868f263538b73f093ca4`
+- Created: `2026-11-20T19:49:07.332826245Z`
+- Virtual Size: ~ 634.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
-  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
+  - `PHP_VERSION=8.4.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.28.tar.xz.asc`
+  - `PHP_SHA256=0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72`
   - `DRUPAL_VERSION=10.6.22`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -137,14 +137,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/3.6.0-1+deb12u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/3.6.0-1+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.68-1~deb12u1`
+### `dpkg` source package: `apache2=2.4.71-1~deb12u1`
 
 Binary Packages:
 
-- `apache2=2.4.68-1~deb12u1`
-- `apache2-bin=2.4.68-1~deb12u1`
-- `apache2-data=2.4.68-1~deb12u1`
-- `apache2-utils=2.4.68-1~deb12u1`
+- `apache2=2.4.71-1~deb12u1`
+- `apache2-bin=2.4.71-1~deb12u1`
+- `apache2-data=2.4.71-1~deb12u1`
+- `apache2-utils=2.4.71-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -167,18 +167,17 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.68-1~deb12u1
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.68-1%7edeb12u1.dsc' apache2_2.4.68-1~deb12u1.dsc 3562 SHA256:1b79720fd53c4e3a93ec2f7b2420b947ce070e088e9f56e9eae7324416260e6a
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.68.orig.tar.gz' apache2_2.4.68.orig.tar.gz 10065436 SHA256:ed9a9d4500fb48bb28eaffb3ba71d06ccf86d498fa13ab9f781da010cc488498
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.68.orig.tar.gz.asc' apache2_2.4.68.orig.tar.gz.asc 870 SHA256:aea8d8f2b2a6c2088936f44b77ebf31255e3a3eda89087567f55238ad9d60539
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.68-1%7edeb12u1.debian.tar.xz' apache2_2.4.68-1~deb12u1.debian.tar.xz 824456 SHA256:b43f83b3bf80e0388ef728ba0e6e2f54f4689834e724a89aec3049d61a2ca015
+$ apt-get source -qq --print-uris apache2=2.4.71-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.71-1%7edeb12u1.dsc' apache2_2.4.71-1~deb12u1.dsc 3315 SHA256:fbcca38754587ad9e51f4ea91426443f7ee96d278279f0116380a28c8ece7dc2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.71.orig.tar.gz' apache2_2.4.71.orig.tar.gz 10963450 SHA256:6b0433674ded858d2ac01e95345935ce127d5d287471762f0a7f10f4969cbfe8
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.71-1%7edeb12u1.debian.tar.xz' apache2_2.4.71-1~deb12u1.debian.tar.xz 824856 SHA256:e115c1588d1508c2d2e75a61e300bb3d8f8abe9f505018205c2caf938ff372ea
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.68-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.68-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.68-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.71-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.71-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.71-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-1+deb12u1`
 
@@ -2475,11 +2474,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.190-1`
+### `dpkg` source package: `linux=6.1.192-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.190-1`
+- `linux-libc-dev:amd64=6.1.192-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2494,17 +2493,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.190-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.dsc' linux_6.1.190-1.dsc 399396 SHA256:30c921025c1c3f26a102e1d52c9ef23516a8362803d0bdfe738c7a841081ca82
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190.orig.tar.xz' linux_6.1.190.orig.tar.xz 138088908 SHA256:710755123060832bb0b58d64d49c2c54e370ec671ec5b0cd0586780a5dee53e7
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.190-1.debian.tar.xz' linux_6.1.190-1.debian.tar.xz 1940480 SHA256:4923f2b60c4417b08c498fa1dfc529ff827a75dfd49f81153efb38243d9c53d5
+$ apt-get source -qq --print-uris linux=6.1.192-2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192-2.dsc' linux_6.1.192-2.dsc 399396 SHA256:1cf1a217edefedc94aef60612ebc1b14b1598e3fe86b20b7969c8b0c18194652
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192.orig.tar.xz' linux_6.1.192.orig.tar.xz 138014500 SHA256:22c0dd635fead7dcba91baf1893e6569634df86ffe6b7b96a201624cc0e88efe
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.192-2.debian.tar.xz' linux_6.1.192-2.debian.tar.xz 1975532 SHA256:df8401c4e0b56139ad3605b417fe473dbefc892536749745b7f928aa560ab86d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.190-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.190-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.190-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.192-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.192-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.192-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
