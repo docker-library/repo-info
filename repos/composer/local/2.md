@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58a9aed7422365beb4c94a0dfacbdfd6ef418d37ac4638513a025d45db0af1cd`
-- Created: `2026-11-19T15:23:51.571951447Z`
-- Virtual Size: ~ 255.87 Mb  
+- Image ID: `sha256:523dc32842b22959cbd02e9c82fd225035a98d8b28d2798b7e28af1b03b5842f`
+- Created: `2026-11-20T19:38:45.128126577Z`
+- Virtual Size: ~ 231.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=D95C03BC702BE9515344AE3374E44BC9067701A5 016895DE9A475111D537A6E69134FF30BC5A99B5 5CFF17B64DC1C244F5D0EAC3E43535E2EB19010E`
-  - `PHP_VERSION=8.6.0`
-  - `PHP_URL=https://www.php.net/distributions/php-8.6.0.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.6.0.tar.xz.asc`
-  - `PHP_SHA256=5f84beaa3d763aee1e4feed99bf54ec692c383b322e25626807b589238c3a087`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
+  - `PHP_VERSION=8.5.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.13.tar.xz.asc`
+  - `PHP_SHA256=607602acaf0c3061818e9916ec44a058e8b3d43959a83862b9cd3ec7bf5b785f`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.11.2`
@@ -976,6 +976,23 @@ nghttp2-libs-1.70.0-r0 installed size:
 
 nghttp2-libs-1.70.0-r0 license:
 MIT
+
+```
+
+### `apk` package: `oniguruma`
+
+```console
+oniguruma-6.9.10-r0 description:
+a regular expressions library
+
+oniguruma-6.9.10-r0 webpage:
+https://github.com/kkos/oniguruma
+
+oniguruma-6.9.10-r0 installed size:
+547 KiB
+
+oniguruma-6.9.10-r0 license:
+BSD-2-Clause
 
 ```
 
