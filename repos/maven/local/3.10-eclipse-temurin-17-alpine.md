@@ -1,10 +1,10 @@
-# `maven:3.10.0-eclipse-temurin-17-alpine`
+# `maven:3.10.2-eclipse-temurin-17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05a13dcf0afae8a353d737e2871306dd0b7717b91de8937b939d6fed76b389e5`
-- Created: `2026-11-12T02:19:04.056919062Z`
-- Virtual Size: ~ 356.38 Mb  
+- Image ID: `sha256:0054812b8e7cd05d423925598a04e7ee397b38f77ba8efd0718474d2d39281f9`
+- Created: `2026-11-23T20:13:46.896523971Z`
+- Virtual Size: ~ 361.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.21+9`
+  - `JAVA_VERSION=jdk-17.0.21.1+2`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -556,16 +556,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2020 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -743,16 +743,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -828,16 +828,16 @@ MIT
 ### `apk` package: `libfontenc`
 
 ```console
-libfontenc-1.1.9-r0 description:
+libfontenc-1.1.10-r0 description:
 X11 font encoding library
 
-libfontenc-1.1.9-r0 webpage:
+libfontenc-1.1.10-r0 webpage:
 https://xorg.freedesktop.org/
 
-libfontenc-1.1.9-r0 installed size:
+libfontenc-1.1.10-r0 installed size:
 25 KiB
 
-libfontenc-1.1.9-r0 license:
+libfontenc-1.1.10-r0 license:
 MIT
 
 ```
@@ -1049,16 +1049,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -1321,16 +1321,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```

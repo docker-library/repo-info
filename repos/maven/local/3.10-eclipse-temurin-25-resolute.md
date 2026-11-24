@@ -1,10 +1,10 @@
-# `maven:3.10.0-eclipse-temurin-25-resolute`
+# `maven:3.10.2-eclipse-temurin-25-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:694c504b2ccde5a8c325ec84fc2773bdc208e91e1a61f24daeb0aa270f27914a`
-- Created: `2026-11-12T02:15:19.648399765Z`
-- Virtual Size: ~ 521.41 Mb  
+- Image ID: `sha256:8823464e3073080b968e45ff438eb27e78dbb53f97039511d65697a7a0371438`
+- Created: `2026-11-23T20:11:49.235410254Z`
+- Virtual Size: ~ 536.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.5+8`
+  - `JAVA_VERSION=jdk-25.0.5.1+2`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -834,14 +834,14 @@ $ apt-get source -qq --print-uris git=1:2.53.0-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.53.0-1ubuntu1.1.dsc' git_2.53.0-1ubuntu1.1.dsc 2784 SHA512:681c51c0487661ac7399bbac80ef46a784292d26a97f172681db20735e6cafe978791d15076b1159bdf288e26a72e6fc3ddec1650a667a4127b15ccc27051ec3
 ```
 
-### `dpkg` source package: `glibc=2.43-2ubuntu2.4`
+### `dpkg` source package: `glibc=2.43-2ubuntu2.7`
 
 Binary Packages:
 
-- `libc-bin=2.43-2ubuntu2.4`
-- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.4`
-- `libc6:amd64=2.43-2ubuntu2.4`
-- `locales=2.43-2ubuntu2.4`
+- `libc-bin=2.43-2ubuntu2.7`
+- `libc-gconv-modules-extra:amd64=2.43-2ubuntu2.7`
+- `libc6:amd64=2.43-2ubuntu2.7`
+- `locales=2.43-2ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-gconv-modules-extra/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -879,9 +879,15 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.43-2ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz' glibc_2.43.orig.tar.xz 20297012 SHA512:25765f86bf54a22fc69dd13023ec9be59bd7e1f9d6ea1630cf21851898df2043bb8a01538c4b5fdd06495d0163289362b0768b391b0617f709b89a777168291c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43.orig.tar.xz.asc' glibc_2.43.orig.tar.xz.asc 1018 SHA512:6e26f0edee146710bcb73c3890c455e8b479009f99d284c43ea695b73bfe45e4ba47d1460300ce8c7496689b0c21a1c77e6359e005957973648b86755160c8f5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.debian.tar.xz' glibc_2.43-2ubuntu2.7.debian.tar.xz 543520 SHA512:f66a3c076d8ecc353d88e3911b29d93772166d568171a08fd1fecd893bed8dd502cc869f62b1d6f0f58639304d023c90bcc0119f6cdb90bcab941a2a430ba66d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.43-2ubuntu2.7.dsc' glibc_2.43-2ubuntu2.7.dsc 9078 SHA512:e07a7964e1f288ad522af37af1608abc4ff06b6d94aa075a5835317194b9f44c497361cd2ce53c1fc5eb96ddccc62747efcfba99952c6430e8cb74d182e6c0eb
+```
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-5ubuntu2`
 
@@ -2258,15 +2264,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz 192020 SHA512:40a96656a40567f064778395e8f03992a90db914a31a5a6ab2b8f93eee5c67cc0aabe466cc2fd06e73bb35ef62d40a9998587d9c22496ebb767f3edf1ca72600
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.dsc' tzdata_2026e-0ubuntu0.26.04.1.dsc 2712 SHA512:8aa848ce18914310f4e4643c6fdad9e5605da4d5c1a32be8714d71961fcf5fe002426a4e5f9aac69b1c3eab2d5e71351d0c4dfae5183c51ce29b287d23e38c44
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 

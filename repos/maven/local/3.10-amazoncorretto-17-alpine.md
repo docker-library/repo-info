@@ -1,10 +1,10 @@
-# `maven:3.10.0-amazoncorretto-17-alpine`
+# `maven:3.10.2-amazoncorretto-17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:712042a8adc5071beaa5f54d08c0dadf4b5bcf196c0d5dc8d23dd5aac97b4e03`
-- Created: `2026-11-12T02:16:28.38373176Z`
-- Virtual Size: ~ 315.78 Mb  
+- Image ID: `sha256:95a25cb996840e2482372d5097766abf127bf249e0c94d43bb14a779002bced0`
+- Created: `2026-11-23T20:12:15.49775886Z`
+- Virtual Size: ~ 314.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -111,16 +111,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-17`
 
 ```console
-amazon-corretto-17-17.0.21.0.11-r0 description:
+amazon-corretto-17-17.0.21.1.2-r0 description:
 Corretto17
 
-amazon-corretto-17-17.0.21.0.11-r0 webpage:
+amazon-corretto-17-17.0.21.1.2-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-17-17.0.21.0.11-r0 installed size:
+amazon-corretto-17-17.0.21.1.2-r0 installed size:
 321 MiB
 
-amazon-corretto-17-17.0.21.0.11-r0 license:
+amazon-corretto-17-17.0.21.1.2-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

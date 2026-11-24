@@ -1,10 +1,10 @@
-# `maven:3.10.0-amazoncorretto-27-alpine`
+# `maven:3.10.2-amazoncorretto-27-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fed03a6c35a20b387f1418eb69ae6d84e91d82678582afe87e98d210bfceaf5`
-- Created: `2026-11-12T02:17:35.996692867Z`
-- Virtual Size: ~ 390.11 Mb  
+- Image ID: `sha256:49b45ec6bd11e5c7438d94140a6be1db007f51b91a84acd32db0f3d3687ac4eb`
+- Created: `2026-11-23T20:12:52.52122991Z`
+- Virtual Size: ~ 389.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -111,16 +111,16 @@ LGPL-2.1-or-later
 ### `apk` package: `amazon-corretto-27`
 
 ```console
-amazon-corretto-27-27.0.1.0.11-r0 description:
+amazon-corretto-27-27.0.1.1.4-r0 description:
 Corretto27
 
-amazon-corretto-27-27.0.1.0.11-r0 webpage:
+amazon-corretto-27-27.0.1.1.4-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-27-27.0.1.0.11-r0 installed size:
+amazon-corretto-27-27.0.1.1.4-r0 installed size:
 393 MiB
 
-amazon-corretto-27-27.0.1.0.11-r0 license:
+amazon-corretto-27-27.0.1.1.4-r0 license:
 GPL-2.0-only WITH Classpath-exception-2.0
 
 ```

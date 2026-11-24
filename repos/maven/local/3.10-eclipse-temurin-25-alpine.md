@@ -1,10 +1,10 @@
-# `maven:3.10.0-eclipse-temurin-25-alpine`
+# `maven:3.10.2-eclipse-temurin-25-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f063b9307ce085e9bf264c8662d110bf65270ac63e67d33c47fa9867fc681257`
-- Created: `2026-11-12T02:14:46.159214592Z`
-- Virtual Size: ~ 325.76 Mb  
+- Image ID: `sha256:ad77a5043b73d9c34767b5dd80c6c0228f0d13c43bc871e222dae900a062424f`
+- Created: `2026-11-23T20:10:47.807324758Z`
+- Virtual Size: ~ 330.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.5+8`
+  - `JAVA_VERSION=jdk-25.0.5.1+2`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -488,16 +488,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -573,16 +573,16 @@ MIT
 ### `apk` package: `libfontenc`
 
 ```console
-libfontenc-1.1.9-r0 description:
+libfontenc-1.1.10-r0 description:
 X11 font encoding library
 
-libfontenc-1.1.9-r0 webpage:
+libfontenc-1.1.10-r0 webpage:
 https://xorg.freedesktop.org/
 
-libfontenc-1.1.9-r0 installed size:
+libfontenc-1.1.10-r0 installed size:
 25 KiB
 
-libfontenc-1.1.9-r0 license:
+libfontenc-1.1.10-r0 license:
 MIT
 
 ```
@@ -709,16 +709,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -947,16 +947,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```
