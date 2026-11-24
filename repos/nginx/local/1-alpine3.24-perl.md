@@ -1,17 +1,17 @@
-# `nginx:1.31.9-alpine-perl`
+# `nginx:1.31.10-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7945eae7a72c275a833d9483cf962db0725738cff41858c771223660045cecbc`
-- Created: `2026-11-18T17:08:49.41086017Z`
-- Virtual Size: ~ 103.57 Mb  
+- Image ID: `sha256:67435e00164f10ba64db0cb7325336fdabd7d1bc2c160e876f6d22419a4dfa58`
+- Created: `2026-11-23T20:14:18.965947814Z`
+- Virtual Size: ~ 109.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.9`
+  - `NGINX_VERSION=1.31.10`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=1.0.2`
@@ -382,16 +382,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -688,16 +688,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -858,16 +858,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r2 description:
+libxml2-2.13.9-r3 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r2 webpage:
+libxml2-2.13.9-r3 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r2 installed size:
+libxml2-2.13.9-r3 installed size:
 1046 KiB
 
-libxml2-2.13.9-r2 license:
+libxml2-2.13.9-r3 license:
 MIT
 
 ```
@@ -1011,16 +1011,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.9-r1 description:
+nginx-1.31.10-r1 description:
 High performance web server
 
-nginx-1.31.9-r1 webpage:
+nginx-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.9-r1 installed size:
+nginx-1.31.10-r1 installed size:
 2861 KiB
 
-nginx-1.31.9-r1 license:
+nginx-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-1.31.9-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.9.0.4.2-r1 description:
+nginx-module-acme-1.31.10.0.4.2-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.9.0.4.2-r1 webpage:
+nginx-module-acme-1.31.10.0.4.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.9.0.4.2-r1 installed size:
-8027 KiB
+nginx-module-acme-1.31.10.0.4.2-r1 installed size:
+8031 KiB
 
-nginx-module-acme-1.31.9.0.4.2-r1 license:
+nginx-module-acme-1.31.10.0.4.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-acme-1.31.9.0.4.2-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.9-r1 description:
+nginx-module-geoip-1.31.10-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.9-r1 webpage:
+nginx-module-geoip-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.9-r1 installed size:
+nginx-module-geoip-1.31.10-r1 installed size:
 128 KiB
 
-nginx-module-geoip-1.31.9-r1 license:
+nginx-module-geoip-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-geoip-1.31.9-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.9-r1 description:
+nginx-module-image-filter-1.31.10-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.9-r1 webpage:
+nginx-module-image-filter-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.9-r1 installed size:
+nginx-module-image-filter-1.31.10-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.9-r1 license:
+nginx-module-image-filter-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-image-filter-1.31.9-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.9.1.0.2-r1 description:
+nginx-module-njs-1.31.10.1.0.2-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.9.1.0.2-r1 webpage:
+nginx-module-njs-1.31.10.1.0.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.9.1.0.2-r1 installed size:
+nginx-module-njs-1.31.10.1.0.2-r1 installed size:
 9924 KiB
 
-nginx-module-njs-1.31.9.1.0.2-r1 license:
+nginx-module-njs-1.31.10.1.0.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-njs-1.31.9.1.0.2-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.31.9-r1 description:
+nginx-module-perl-1.31.10-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.31.9-r1 webpage:
+nginx-module-perl-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.31.9-r1 installed size:
+nginx-module-perl-1.31.10-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.31.9-r1 license:
+nginx-module-perl-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1113,16 +1113,16 @@ nginx-module-perl-1.31.9-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.9-r1 description:
+nginx-module-xslt-1.31.10-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.9-r1 webpage:
+nginx-module-xslt-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.9-r1 installed size:
+nginx-module-xslt-1.31.10-r1 installed size:
 47 KiB
 
-nginx-module-xslt-1.31.9-r1 license:
+nginx-module-xslt-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```

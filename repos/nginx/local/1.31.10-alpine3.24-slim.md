@@ -1,17 +1,17 @@
-# `nginx:1.31.9-alpine-slim`
+# `nginx:1.31.10-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3614842ac9e41cb121e2a06279a8ee7444304c33105cda915296166601606d75`
-- Created: `2026-11-18T16:34:34.998554347Z`
-- Virtual Size: ~ 12.86 Mb  
+- Image ID: `sha256:411c6ce10191ba9e4ef53a83d61ba2b2ff7cee548c0872e85c0e09fec70dd88a`
+- Created: `2026-11-23T19:53:30.019802931Z`
+- Virtual Size: ~ 18.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.9`
+  - `NGINX_VERSION=1.31.10`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.9-r1 description:
+nginx-1.31.10-r1 description:
 High performance web server
 
-nginx-1.31.9-r1 webpage:
+nginx-1.31.10-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.9-r1 installed size:
+nginx-1.31.10-r1 installed size:
 2861 KiB
 
-nginx-1.31.9-r1 license:
+nginx-1.31.10-r1 license:
 2-clause BSD-like license
 
 ```

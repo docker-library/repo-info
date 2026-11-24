@@ -1,17 +1,17 @@
-# `nginx:1.30.7-alpine-slim`
+# `nginx:1.30.8-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5809f940a1946d75c641b1af43f03e773638f166757bd6a1f348a3f5cf4d83a2`
-- Created: `2026-11-18T16:34:34.582411261Z`
-- Virtual Size: ~ 12.74 Mb  
+- Image ID: `sha256:e185c51142287f75d930a125b8c337f4eaefb14166568fb4aad16d02819ba69d`
+- Created: `2026-11-23T19:54:23.347333835Z`
+- Virtual Size: ~ 18.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.7`
+  - `NGINX_VERSION=1.30.8`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.30.7-r1 description:
+nginx-1.30.8-r1 description:
 High performance web server
 
-nginx-1.30.7-r1 webpage:
+nginx-1.30.8-r1 webpage:
 https://nginx.org/
 
-nginx-1.30.7-r1 installed size:
-2744 KiB
+nginx-1.30.8-r1 installed size:
+2748 KiB
 
-nginx-1.30.7-r1 license:
+nginx-1.30.8-r1 license:
 2-clause BSD-like license
 
 ```
