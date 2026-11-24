@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bc078f52da73c607b60251ef249baf2a70bada1e502af2c75d4180412198096`
-- Created: `2026-11-05T20:27:09.647181188Z`
-- Virtual Size: ~ 339.4 Mb  
+- Image ID: `sha256:7ca84965eae602f54b28d07c50a046afcb1c14cff1c5fcd5bf0c1b81d5aa6686`
+- Created: `2026-11-20T18:07:45.752746093Z`
+- Virtual Size: ~ 339.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh","/opt/files/startup.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.13+9`
+  - `JAVA_VERSION=jdk-21.0.13.1+2`
   - `BONITA_VERSION=11.1.0`
   - `BRANDING_VERSION=2026.2-u0`
   - `BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f`
@@ -555,16 +555,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.13-r0 description:
+gnutls-3.8.14-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.13-r0 webpage:
+gnutls-3.8.14-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.13-r0 installed size:
-2012 KiB
+gnutls-3.8.14-r0 installed size:
+2020 KiB
 
-gnutls-3.8.13-r0 license:
+gnutls-3.8.14-r0 license:
 LGPL-2.1-or-later
 
 ```
