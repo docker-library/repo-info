@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8b50d29c3515e11d258b9708c214b00ed4dfb2d95827b79f2751b6af5910ab3`
-- Created: `2026-11-16T21:46:35.556297078Z`
-- Virtual Size: ~ 1.66 Gb  
+- Image ID: `sha256:41e6b182ff48559fc3d8f75e33bf9f822b5dd2d99961fc07af0431363ca78dba`
+- Created: `2026-11-20T19:04:59.658956816Z`
+- Virtual Size: ~ 1.64 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.13+9`
+  - `JAVA_VERSION=jdk-21.0.13.1+2`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -2610,11 +2610,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-43.43`
+### `dpkg` source package: `linux=7.0.0-44.44`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-43.43`
+- `linux-libc-dev:amd64=7.0.0-44.44`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2623,10 +2623,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.0.0-43.43
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.diff.gz' linux_7.0.0-43.43.diff.gz 6172264 SHA512:9f728da1cd1336c9529771f0958c52f768ecd17b49b1d77f745477f4f2bb21fd21d076a71c2676f91fde76d3730b2bfce6416e0dc9c8c41dfc7ec19760be37d6
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-43.43.dsc' linux_7.0.0-43.43.dsc 7845 SHA512:efb2e77d8b1170f516ac8f003998d9fdf7912f4d5e384999778529054ccc0ba972439942ee530edb5133c1b09d39b67794e66830ab9ac2cda3f2a0a2f09e0f2d
+$ apt-get source -qq --print-uris linux=7.0.0-44.44
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-44.44.diff.gz' linux_7.0.0-44.44.diff.gz 6286278 SHA512:9bf7e2dd71aaa6419fdf0c0f2b46be69ba6cf3d24435d9c414895376be8585f1540021a5cbcfa8597e1b77d2e115aa4a21f94ce5ea33c3bfe2dd64ea995dadc3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-44.44.dsc' linux_7.0.0-44.44.dsc 7845 SHA512:c3a6037cad73c78ac35de03af9956036f039cdb42501f41c9b91a2759353023274ddb0e241b488841b5a9ba70e8387c99db54a56a8bda3cf8fb92410de97abae
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
@@ -3364,15 +3364,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026e-0ubuntu0.26.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz' tzdata_2026e.orig.tar.gz 481989 SHA512:5be2f875f73b75e5783c474bf7a6c768e433cc90283f8fc6a75e3d05bd92aec97936e8a55ccca5e880b5dacc18ba65932bab0e783e1ed5d2af4a3a4df95512be
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e.orig.tar.gz.asc' tzdata_2026e.orig.tar.gz.asc 833 SHA512:e6f75a7aabd228c8aeadd51aef100e4b5d2fbc238db319a4de28f8b8c7e2f6d3305d2c3cd3d875590164a082e46d7b63960f1387af8a186e6b693c4633061ed8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026e-0ubuntu0.26.04.1.debian.tar.xz 192020 SHA512:40a96656a40567f064778395e8f03992a90db914a31a5a6ab2b8f93eee5c67cc0aabe466cc2fd06e73bb35ef62d40a9998587d9c22496ebb767f3edf1ca72600
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.26.04.1.dsc' tzdata_2026e-0ubuntu0.26.04.1.dsc 2712 SHA512:8aa848ce18914310f4e4643c6fdad9e5605da4d5c1a32be8714d71961fcf5fe002426a4e5f9aac69b1c3eab2d5e71351d0c4dfae5183c51ce29b287d23e38c44
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 
