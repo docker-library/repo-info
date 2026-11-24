@@ -114,32 +114,32 @@
 -	[`jruby:9.4-jre21`](#jruby94-jre21)
 -	[`jruby:9.4-jre25`](#jruby94-jre25)
 -	[`jruby:9.4-jre8`](#jruby94-jre8)
--	[`jruby:9.4.15`](#jruby9415)
--	[`jruby:9.4.15-jdk`](#jruby9415-jdk)
--	[`jruby:9.4.15-jdk11`](#jruby9415-jdk11)
--	[`jruby:9.4.15-jdk17`](#jruby9415-jdk17)
--	[`jruby:9.4.15-jdk21`](#jruby9415-jdk21)
--	[`jruby:9.4.15-jdk25`](#jruby9415-jdk25)
--	[`jruby:9.4.15-jdk8`](#jruby9415-jdk8)
--	[`jruby:9.4.15-jre`](#jruby9415-jre)
--	[`jruby:9.4.15-jre11`](#jruby9415-jre11)
--	[`jruby:9.4.15-jre17`](#jruby9415-jre17)
--	[`jruby:9.4.15-jre21`](#jruby9415-jre21)
--	[`jruby:9.4.15-jre25`](#jruby9415-jre25)
--	[`jruby:9.4.15-jre8`](#jruby9415-jre8)
--	[`jruby:9.4.15.0`](#jruby94150)
--	[`jruby:9.4.15.0-jdk`](#jruby94150-jdk)
--	[`jruby:9.4.15.0-jdk11`](#jruby94150-jdk11)
--	[`jruby:9.4.15.0-jdk17`](#jruby94150-jdk17)
--	[`jruby:9.4.15.0-jdk21`](#jruby94150-jdk21)
--	[`jruby:9.4.15.0-jdk25`](#jruby94150-jdk25)
--	[`jruby:9.4.15.0-jdk8`](#jruby94150-jdk8)
--	[`jruby:9.4.15.0-jre`](#jruby94150-jre)
--	[`jruby:9.4.15.0-jre11`](#jruby94150-jre11)
--	[`jruby:9.4.15.0-jre17`](#jruby94150-jre17)
--	[`jruby:9.4.15.0-jre21`](#jruby94150-jre21)
--	[`jruby:9.4.15.0-jre25`](#jruby94150-jre25)
--	[`jruby:9.4.15.0-jre8`](#jruby94150-jre8)
+-	[`jruby:9.4.16`](#jruby9416)
+-	[`jruby:9.4.16-jdk`](#jruby9416-jdk)
+-	[`jruby:9.4.16-jdk11`](#jruby9416-jdk11)
+-	[`jruby:9.4.16-jdk17`](#jruby9416-jdk17)
+-	[`jruby:9.4.16-jdk21`](#jruby9416-jdk21)
+-	[`jruby:9.4.16-jdk25`](#jruby9416-jdk25)
+-	[`jruby:9.4.16-jdk8`](#jruby9416-jdk8)
+-	[`jruby:9.4.16-jre`](#jruby9416-jre)
+-	[`jruby:9.4.16-jre11`](#jruby9416-jre11)
+-	[`jruby:9.4.16-jre17`](#jruby9416-jre17)
+-	[`jruby:9.4.16-jre21`](#jruby9416-jre21)
+-	[`jruby:9.4.16-jre25`](#jruby9416-jre25)
+-	[`jruby:9.4.16-jre8`](#jruby9416-jre8)
+-	[`jruby:9.4.16.0`](#jruby94160)
+-	[`jruby:9.4.16.0-jdk`](#jruby94160-jdk)
+-	[`jruby:9.4.16.0-jdk11`](#jruby94160-jdk11)
+-	[`jruby:9.4.16.0-jdk17`](#jruby94160-jdk17)
+-	[`jruby:9.4.16.0-jdk21`](#jruby94160-jdk21)
+-	[`jruby:9.4.16.0-jdk25`](#jruby94160-jdk25)
+-	[`jruby:9.4.16.0-jdk8`](#jruby94160-jdk8)
+-	[`jruby:9.4.16.0-jre`](#jruby94160-jre)
+-	[`jruby:9.4.16.0-jre11`](#jruby94160-jre11)
+-	[`jruby:9.4.16.0-jre17`](#jruby94160-jre17)
+-	[`jruby:9.4.16.0-jre21`](#jruby94160-jre21)
+-	[`jruby:9.4.16.0-jre25`](#jruby94160-jre25)
+-	[`jruby:9.4.16.0-jre8`](#jruby94160-jre8)
 -	[`jruby:latest`](#jrubylatest)
 
 ## `jruby:10`
@@ -8394,7 +8394,7 @@ $ docker pull jruby@sha256:9bde10dc20c5cf04221cc961711218534ccc14d69f0cac63b5600
 ## `jruby:10.1-dev-jdk21`
 
 ```console
-$ docker pull jruby@sha256:6dd65e36948ee31810b6cea67da951c75fbdcda38596c46f94de880999133592
+$ docker pull jruby@sha256:16de0d840e2d843fdecd7ef7cf71f38487263dcf7769a5c318a29c5cac50168b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8407,13 +8407,13 @@ $ docker pull jruby@sha256:6dd65e36948ee31810b6cea67da951c75fbdcda38596c46f94de8
 ### `jruby:10.1-dev-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:00463fb9862c5a4b977ce47703048eed1dca4f77979ba233f68def5b0eb1655f
+$ docker pull jruby@sha256:61abf379f554487491cecdd75f8acafb772a911e1067bc59e79c6b75e611f875
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.2 MB (280212725 bytes)**  
+-	Total Size: **280.3 MB (280281257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:188fc707b5dcee000dc7240422c2adbb01aa99e09e42c103e3e554a24dc694da`
+-	Image ID: `sha256:19ec80d1c3ee3f11c80cd703c959e53f15695f902b78b0ac1afaadc8b080ff99`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -8448,35 +8448,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:43:41 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:50 GMT
+# Mon, 23 Nov 2026 23:10:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:10:39 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:10:39 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:46 GMT
 CMD ["irb"]
 ```
 
@@ -8501,49 +8501,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:57 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d883f20e1bfa7467255085878d2a89b150cf3ef7cdcec7841b271bb6b6e7a236`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 5.8 MB (5801263 bytes)  
+	-	`sha256:745fe97383151fd6f569005276004d225484d2a5f48fb9a4377935bc4d9c739d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:59 GMT  
+		Size: 5.8 MB (5801320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e89ae266ded00b5a70819e0a4b5f6bba9b48ff788a3357af92dfb92412dcbf7`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 44.3 MB (44293227 bytes)  
+	-	`sha256:928f2057fbfba1ee8d5a54e44b9e1963a66be0c420f1dd979303c051e7f78dc9`  
+		Last Modified: Mon, 23 Nov 2026 23:11:01 GMT  
+		Size: 44.3 MB (44330521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5d8089465e2f2a0b03ad5dde3fd5c0734b64c5b433f35b828edf22414d0cb7b`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 198.0 B  
+	-	`sha256:89409641a5fa290cec92a0f430695f273927e3874338b625da2a62985e1344b9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:59 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39484c1c0e80efc0aebc19dd81486796cee33b4c60838d19e1232e02fe512ee2`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 12.8 MB (12816129 bytes)  
+	-	`sha256:b1ef047cfeba1071cbe8c0d64225199c5e8581a642f9d36668b02226ecdf48e1`  
+		Last Modified: Mon, 23 Nov 2026 23:11:00 GMT  
+		Size: 12.8 MB (12847311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43d47498865641e5e2bf04a3c3683a4b9662fa283321387c607371b4e5dc9968`  
-		Last Modified: Fri, 20 Nov 2026 17:59:10 GMT  
+	-	`sha256:de229086cd32f3a972096b358a7f4ac56eff881c87da91e6b534279cc6551bb9`  
+		Last Modified: Mon, 23 Nov 2026 23:11:00 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:4e415cc5d21bd0e04126c5d1a30796ffae4fe25b4a4f15cd745d848bd7daa5f4
+$ docker pull jruby@sha256:a42d970374e15582192e2f4fecdc623efaacef4925e8fbca7954e1dacf4395a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4984520 bytes)**  
+-	Total Size: **5.0 MB (4984528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdd2d6ad015cbc8d832977f121eb23ec85ba7e5035f43878bd5a25e458f2e558`
+-	Image ID: `sha256:bd32ad4e625e8105dc31b2017d37a1e569533a0dcdee185b43652252a7fd2d2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0cef01041d8b238e89af3e0b95e53c08c8b620e0d0cc14b384f22aad4bcc883`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 5.0 MB (4965427 bytes)  
+	-	`sha256:f40ab1979eddc1e92b2895ee818db57d4835eaa006ea7c58deb95df8a06f9ab7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:59 GMT  
+		Size: 5.0 MB (4965431 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f2e48ce54c5c48b7a93e4a4b0d8cf3bf2dcaa7e4ac912619450779c69049ed7`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 19.1 KB (19093 bytes)  
+	-	`sha256:4ddfb3b1f5ffc2f7056cb72e66746c44b6d0be38262e0a18fb2d33471383e58a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:59 GMT  
+		Size: 19.1 KB (19097 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:10.1-dev-jdk21` - linux; arm64 variant v8
@@ -8691,7 +8691,7 @@ $ docker pull jruby@sha256:bfd0e41accd23e76fdc151dd097a351065bd575d9c4f5d880226c
 ## `jruby:10.1-dev-jdk25`
 
 ```console
-$ docker pull jruby@sha256:00a327141de36926aed37c4e67442c7558df198873a3f7f545c665a0af4da60f
+$ docker pull jruby@sha256:c7033b8e136b6020c0b01cd3e2a4551e0f5fbeb849c45d708576d2818a7cbd58
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8704,13 +8704,13 @@ $ docker pull jruby@sha256:00a327141de36926aed37c4e67442c7558df198873a3f7f545c66
 ### `jruby:10.1-dev-jdk25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:841e6715d07cb0c62d6ce22a9acc7066104d251166966ccbb027da76327c2ea5
+$ docker pull jruby@sha256:6edfefb13923f462d811ed32c0927d1e286913fb87b39ffa9f6056e5247fabc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **211.1 MB (211070955 bytes)**  
+-	Total Size: **211.1 MB (211138239 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1298a0c8ab16851d9d20f45b007e395a24f87de27b328b72bc0ea1f2021100a`
+-	Image ID: `sha256:28c8fc640040016a7c18f65ee0edf099ace6b86d99ccf1a6608f676475c6ec62`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -8745,35 +8745,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:05 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:49 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:36 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:47:36 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:47:36 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:47:36 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:47:36 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:47:36 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:10:51 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:10:51 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:10:51 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:36 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:36 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:42 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 CMD ["irb"]
 ```
 
@@ -8798,61 +8798,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:22 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ba45ce5f84a455c126ec3d0830db981d776eff8e8bfd1b2661f017e68f625c`  
-		Last Modified: Fri, 20 Nov 2026 17:47:56 GMT  
-		Size: 7.8 MB (7791175 bytes)  
+	-	`sha256:fb9acecb3515ec49eb1c9963acc005d1a8a56344aaca9db3da6eb935c2535f3e`  
+		Last Modified: Mon, 23 Nov 2026 23:11:09 GMT  
+		Size: 7.8 MB (7791763 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f70bfa9685d658d0214da4610e8d7c3021ae5858565f15c720b40c1fdaa541e`  
-		Last Modified: Fri, 20 Nov 2026 17:47:57 GMT  
-		Size: 44.3 MB (44293280 bytes)  
+	-	`sha256:54889fab0fbd6d15c6f5ff9792a153863e70517880ecdf4a917734005587c0c1`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 44.3 MB (44330525 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2cf520f5a724e2a5749a90f0acade7a927906b86429a1bb3bf230348fdac4a2`  
-		Last Modified: Fri, 20 Nov 2026 17:47:56 GMT  
-		Size: 199.0 B  
+	-	`sha256:bbac4fcb28dc6df3433e2635ecec33337a3bd5cd72ff3615fd248877ca76162f`  
+		Last Modified: Mon, 23 Nov 2026 23:11:08 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f94bac782573efbd50fddb85f2e92dc9e22fd1cbd2525cca4ca9ecdaa8ea298`  
-		Last Modified: Fri, 20 Nov 2026 17:47:57 GMT  
-		Size: 12.9 MB (12908876 bytes)  
+	-	`sha256:98eb27ee9ae995bd3bf68f9c8cfcf60b89a7c7c2e98bec78c0065e824b276822`  
+		Last Modified: Mon, 23 Nov 2026 23:11:09 GMT  
+		Size: 12.9 MB (12938327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f76eac2106ae8d2f93639ab814d18fe101534da7fed26cbeeb41531dffdeb8e`  
-		Last Modified: Fri, 20 Nov 2026 17:47:57 GMT  
-		Size: 143.0 B  
+	-	`sha256:4a90dd915e5da315fd8552d6a034c3a503aceca1d6d7c2825fe47fccbe174acc`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0eff44446be9383ed5b950b145538eb4c1851906f01ed16c3eb81cfdf0a8db60
+$ docker pull jruby@sha256:ea30875804515c288954964dd947802b8d5af9620f5a380915c0b8106a8b69b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.8 MB (4815850 bytes)**  
+-	Total Size: **4.8 MB (4815862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d90149565b561e998c37c600d52e61d66aeb29910cc73bb073521bea3552099e`
+-	Image ID: `sha256:1eff9500f4c68bbc1b4fa386c46d80a9eb045b2cd68614b188a1f3842d1c9684`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bf76c91b8c3171cdf876743e5c089fe8aa649cdbebf12f11ee7ec0c54e9a3847`  
-		Last Modified: Fri, 20 Nov 2026 17:47:56 GMT  
-		Size: 4.8 MB (4796765 bytes)  
+	-	`sha256:5c8d175bca8ff1d8a19fd90254685eb0e4e16fbd42145dbc41be2e950db6213b`  
+		Last Modified: Mon, 23 Nov 2026 23:11:08 GMT  
+		Size: 4.8 MB (4796769 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91712395c5b484ed4059aa79dc452d652b35c9659e3b57e9eb1cd45281a2fdba`  
-		Last Modified: Fri, 20 Nov 2026 17:47:56 GMT  
-		Size: 19.1 KB (19085 bytes)  
+	-	`sha256:6235c70da4a46159d3d37c519afe063f9717bab7bd63d5ab5e646ebf13eb40c0`  
+		Last Modified: Mon, 23 Nov 2026 23:11:08 GMT  
+		Size: 19.1 KB (19093 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:10.1-dev-jdk25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:3802e1cc8128e15fb20c9b8bcb0e928b68c7bdd3a7e7eec003f65c657b69e4ad
+$ docker pull jruby@sha256:973a433f82a606d19abb6fc5ffff49c8a4010d9984f2ac87a03daac2ec5ea1a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **209.1 MB (209080856 bytes)**  
+-	Total Size: **209.2 MB (209207383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba4e5bb7791ab15d2c81569fb2fb2b3fa994062e05bc646feb74bd2500249d0c`
+-	Image ID: `sha256:fbed72cc1c87d728709d0b8ee7b3a29854784e86a0c6278fa652cb999dd4d412`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -8887,35 +8887,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:26 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:53:40 GMT
+# Mon, 23 Nov 2026 23:10:29 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:42 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:53:42 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:53:42 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:53:42 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:53:42 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:53:42 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:10:31 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:10:31 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:42 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:43 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 CMD ["irb"]
 ```
 
@@ -8940,55 +8940,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:43 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39875ae71839d3e6a8d048b16263c21d45725bcb863b4ce30adee16d3ea66a3f`  
-		Last Modified: Fri, 20 Nov 2026 17:54:02 GMT  
-		Size: 6.7 MB (6732024 bytes)  
+	-	`sha256:6e1a308283d13e868818d9b0501004e83d9f8fd4dc12294e638e21cdac779a7a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 6.7 MB (6732223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c63134a15ab101423b28d00c902293721d5660a0592453580013c8fd6e578ff3`  
-		Last Modified: Fri, 20 Nov 2026 17:54:03 GMT  
-		Size: 44.3 MB (44293384 bytes)  
+	-	`sha256:3baacb21e1266b2c23525667ffb55fc4ac9c1b4fef7e45ed474b63a76ccb2cc6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 44.3 MB (44330499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbfe5d541f0e449bb831f63e0bc57364ebad1ffddc168a2f4b75013bdd904430`  
-		Last Modified: Fri, 20 Nov 2026 17:54:02 GMT  
-		Size: 199.0 B  
+	-	`sha256:f5867fadfe7c18c797b50c364b0eaf341f8ffc9edc1d876f10645b6089f368ac`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6cc549f62793c2adacf0214d01929a5af1621772ed6f154742f7f7b70dd86d`  
-		Last Modified: Fri, 20 Nov 2026 17:54:02 GMT  
-		Size: 12.9 MB (12920322 bytes)  
+	-	`sha256:97008d9115b0e1f0a3d00b03eb082544fa29ebc494a6768ec5ab99696e3a7a69`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 13.0 MB (13009536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:883f3747639e9927c91ffaa6f72db0ac6ccf3e0ee8c80d30b66c07da235aff7a`  
-		Last Modified: Fri, 20 Nov 2026 17:54:03 GMT  
+	-	`sha256:950406fbcaa01353e19d7ccc45707eb51fd5da42ca802b73419d1f3813366830`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:02047738caf05860ee6cc11ae41cb9728b2d9c4a4dec3e787aa4569215413d15
+$ docker pull jruby@sha256:c074936bc642416a8978ca326a60e438401b5831217cfc3dd057bd5a47e358a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4919979 bytes)**  
+-	Total Size: **4.9 MB (4919991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8db9dde547d272e25cf3a1d2b48be651427db579c17a8bd95e3a31a1f91ac19d`
+-	Image ID: `sha256:1942aa988ffc9b32d5f22a14f8b9a4659e0178fb0b480ea003409bfbd8e9f8d1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:476f172609fca4b4ad16c564c9d0627a2e2b10d490e012cba223e43db1a83fd9`  
-		Last Modified: Fri, 20 Nov 2026 17:54:02 GMT  
-		Size: 4.9 MB (4900766 bytes)  
+	-	`sha256:22fd0ef09fd0c47797f00199c64833a0a32798f926cfec89daeca45d6f1f0cbc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 4.9 MB (4900770 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6b73de9a60796b8a4d99b826573e5fa296c03daaf64763133ca5795e9067ea0d`  
-		Last Modified: Fri, 20 Nov 2026 17:54:02 GMT  
-		Size: 19.2 KB (19213 bytes)  
+	-	`sha256:37ec4f230fdb38c34568f702c7c6baf0e0bf349acbf218cb43f68f4aaa15695a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 19.2 KB (19221 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:10.1-dev-jre21`
 
 ```console
-$ docker pull jruby@sha256:ca9357b80813b5f75e41c5d6c1d9629e889e96bf36c31f3c8583186b3ea98d91
+$ docker pull jruby@sha256:cb9618717ee3ce764ea4b71c3b3ef9319c367f5f1b0a04ce89488f27849cc00f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9001,13 +9001,13 @@ $ docker pull jruby@sha256:ca9357b80813b5f75e41c5d6c1d9629e889e96bf36c31f3c85831
 ### `jruby:10.1-dev-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:9cfb7d8f4e0915d09a75c5ed7bd4d000dc215b3894956bb921d178714a521aa5
+$ docker pull jruby@sha256:7089431340e08e221f93a74d5b4920aef6ed61692f48b8715a7a075058e6a5d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.6 MB (168633857 bytes)**  
+-	Total Size: **168.8 MB (168750307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e1cd669971b218a1df26220b13e2caab93d88be6135bfa765cf3adece1df67d`
+-	Image ID: `sha256:e416bbaf58d8f226b60bdb961042d363c51757510d9c992f22feabd8cf11f137`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -9040,35 +9040,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:44:10 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:44 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:46 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:58:46 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:58:46 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:58:46 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:58:46 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:58:46 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:46 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:46 GMT
+# Mon, 23 Nov 2026 23:10:38 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:51 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 CMD ["irb"]
 ```
 
@@ -9093,49 +9093,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:22 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f7d8b67402e34b41c0e4678e643bf094c169a1a9d8ee1d81c2a8eb1432fe5c0`  
-		Last Modified: Fri, 20 Nov 2026 17:59:03 GMT  
-		Size: 5.8 MB (5797407 bytes)  
+	-	`sha256:35adef6aa6fec621dde760a9b1da0c390b9871196c72d898820d2336f90c4f73`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 5.8 MB (5797454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95b9ed0ae983d6e36334fdd8691e412cb99299e6d2a1a004ba6fb9e59baed0a8`  
-		Last Modified: Fri, 20 Nov 2026 17:59:04 GMT  
-		Size: 44.3 MB (44293200 bytes)  
+	-	`sha256:1886a690ac4e716e663a6e014f1f8b144dfbdde922c4d49880e22fd8acf057a3`  
+		Last Modified: Mon, 23 Nov 2026 23:10:57 GMT  
+		Size: 44.3 MB (44329800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf069b3bd2650db2d7be265351cc58a5d828e06b634a94bc4da2f05f7d76e5a6`  
-		Last Modified: Fri, 20 Nov 2026 17:59:02 GMT  
-		Size: 197.0 B  
+	-	`sha256:fb3363b36d1114b1154109478c1c889e18c13b3a1e3e03e2d7cb0c7a8f218c6d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1a69d7e9be4aebd923526980605c9835e382edf1e04ab6928242a03e07a4907`  
-		Last Modified: Fri, 20 Nov 2026 17:59:03 GMT  
-		Size: 12.5 MB (12454632 bytes)  
+	-	`sha256:0cf45d1457180b7aac0e22cedff6006a91d875f0c59aa182d4c8941b3a12ae0a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 12.5 MB (12534433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebd77fc96541e0ba0e2b1c5b84302b4dd4b67b763c988b220340de89e3a876c8`  
-		Last Modified: Fri, 20 Nov 2026 17:59:03 GMT  
-		Size: 143.0 B  
+	-	`sha256:c9cd570e9380f2e6e5d379d77234c3c3ccac2b327cbafa1cd9be62e4c975dd81`  
+		Last Modified: Mon, 23 Nov 2026 23:10:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:19436f50eea3cdde3347c9fa853245f6375fc99affa41a8dde1ec0445d785fe4
+$ docker pull jruby@sha256:5711cb0a0cf985a9f459c04ec328d7644b90581aac92a3bf85218e837a5f2d95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.7 MB (4747396 bytes)**  
+-	Total Size: **4.7 MB (4747404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dacff60693386248bfba8eea967b1fd1ac04b96719f0b620a195f95da1b2f2f`
+-	Image ID: `sha256:a1c63d80bc6cd76491aadb569dd2422655366f86160b134adc1437b86341bfc8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d7032086798047e1d192f761f2db35d17957452c0de6693a049048c0bf8dbeee`  
-		Last Modified: Fri, 20 Nov 2026 17:59:02 GMT  
-		Size: 4.7 MB (4728309 bytes)  
+	-	`sha256:0c7473de44b3af3d464f42eebb4d51c88c80546cd82495ac332b81962e48bad0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 4.7 MB (4728313 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d465f52fec64d49ff0cbfefe2f4cfa8fad65cbbdacaaa96adf9603b6201d084a`  
-		Last Modified: Fri, 20 Nov 2026 17:59:02 GMT  
-		Size: 19.1 KB (19087 bytes)  
+	-	`sha256:67e0b5b50939cc5520d880e44ab6f63b363a880806dd707b33275570460f70c6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 19.1 KB (19091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:10.1-dev-jre21` - linux; arm64 variant v8
@@ -9281,7 +9281,7 @@ $ docker pull jruby@sha256:2ce105219925b48ab5d1ef92a72ff47fed7f0b5ec0b4cfccec775
 ## `jruby:10.1-dev-jre25`
 
 ```console
-$ docker pull jruby@sha256:2d6076a9ab5527edb163f3f39c9469754721d09662d04dd54869b333c6a6afab
+$ docker pull jruby@sha256:12163b4fa9f82d5d445d474277618e24224433c336256a8588cfe32544ae551f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9294,13 +9294,13 @@ $ docker pull jruby@sha256:2d6076a9ab5527edb163f3f39c9469754721d09662d04dd54869b
 ### `jruby:10.1-dev-jre25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:178b185b755b2eb55971effed02f40ade039b30f2161884cd8800cfc43853b43
+$ docker pull jruby@sha256:290174ac1a9bd3f68a776338002fd342c777aa83999c2273c5ff80d3df581d5b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.1 MB (175125671 bytes)**  
+-	Total Size: **175.2 MB (175184224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5784acb15287d53d7cd39161b339fac95e3d7d6ae80180ffaf470f1214f9116b`
+-	Image ID: `sha256:af36143f19eecc05a79b5502a2fb3364cee3d576833dbeb5b5b7b03b4280de99`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -9333,35 +9333,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:41 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:50 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:58:52 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:10:44 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:10:44 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:10:44 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:10:45 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:57 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:57 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:57 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:57 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:58 GMT
+# Mon, 23 Nov 2026 23:10:51 GMT
 CMD ["irb"]
 ```
 
@@ -9386,61 +9386,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:54 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fd16c9a9957d802242e09297804aa61f4b79e4c784326b0ed74fc5e60164f98`  
-		Last Modified: Fri, 20 Nov 2026 17:59:09 GMT  
-		Size: 7.8 MB (7786911 bytes)  
+	-	`sha256:3e9016948a824ea4c2b006c25e6f574e6b4d00b25ace61733728f8fc3daa2de9`  
+		Last Modified: Mon, 23 Nov 2026 23:11:04 GMT  
+		Size: 7.8 MB (7787393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2348e8066803529e6a1e82809e117b23faa9c7e81a1e8566d2b2fc7e9f41f6a`  
-		Last Modified: Fri, 20 Nov 2026 17:59:10 GMT  
-		Size: 44.3 MB (44293191 bytes)  
+	-	`sha256:31f07efe9a6f6a5f4658a1afa124b94b6cff1cdfc2581e352d891a8d2d61797f`  
+		Last Modified: Mon, 23 Nov 2026 23:11:05 GMT  
+		Size: 44.3 MB (44330535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22e3fc372ad4f12a86a155e70905670c6df1788bd5571ccf6c089e732afca16d`  
-		Last Modified: Fri, 20 Nov 2026 17:59:09 GMT  
-		Size: 197.0 B  
+	-	`sha256:c90295fdecfe67b7ee0a9db9d0cdfaf93ce70fc153cfff7bc523369f46a7ab01`  
+		Last Modified: Mon, 23 Nov 2026 23:11:03 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c5f3cf931869d2b0df0989c647285e79bbbd20b439530a4d60073b462029ee2`  
-		Last Modified: Fri, 20 Nov 2026 17:59:09 GMT  
-		Size: 12.6 MB (12587504 bytes)  
+	-	`sha256:3949de559a35a1d0e13d82d2b197a250a65ed144dfdca4fd05bab98f6d035130`  
+		Last Modified: Mon, 23 Nov 2026 23:11:04 GMT  
+		Size: 12.6 MB (12608229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43d47498865641e5e2bf04a3c3683a4b9662fa283321387c607371b4e5dc9968`  
-		Last Modified: Fri, 20 Nov 2026 17:59:10 GMT  
-		Size: 143.0 B  
+	-	`sha256:7c4cf7e14fb6043ad4ecc8399643698f16042abf72b5a217346de7e7c9022ca7`  
+		Last Modified: Mon, 23 Nov 2026 23:11:05 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6d930db12aeeed68a1f587434bdfe957e1ac3ad14ed272bf2914b36cdab67506
+$ docker pull jruby@sha256:32b1590b7873be12ac59096ab74645db8d79d9871b55b523f08966fa0a5730cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4619512 bytes)**  
+-	Total Size: **4.6 MB (4619524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f7de5117b04142727abf6540fecf088da2d832b3032c09820ec8e32839f1d9b`
+-	Image ID: `sha256:cb390f5be83781e7031a39b6ab14dcf609cad0cd1ace09f9cb1717d05bea7ebf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3123a003dded0913325738c1833d40c388a98401b853ba77e3ef8d19de6a2c31`  
-		Last Modified: Fri, 20 Nov 2026 17:59:09 GMT  
-		Size: 4.6 MB (4600427 bytes)  
+	-	`sha256:4515eb189a9a96c87fb951216aef005d8e8caa3f8bb9e243f21bd4b62628bf6c`  
+		Last Modified: Mon, 23 Nov 2026 23:11:03 GMT  
+		Size: 4.6 MB (4600431 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0cab1372d933af10e2fb9de955f64102583ae5142195bbc2342f2a421cb91c8f`  
-		Last Modified: Fri, 20 Nov 2026 17:59:09 GMT  
-		Size: 19.1 KB (19085 bytes)  
+	-	`sha256:e157902d0425dcd640710ad15dbfecf178f749e361bdda1c951560ae1c4c9116`  
+		Last Modified: Mon, 23 Nov 2026 23:11:03 GMT  
+		Size: 19.1 KB (19093 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:10.1-dev-jre25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:934116041ea7abc6a9fcb6a72ea70f0d772fc6c384c8937175320b32815b61bd
+$ docker pull jruby@sha256:b03894b98bde654483e9d453075c0735fa313539fda8b8ee66bf9a1f4ecbc929
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.9 MB (171903757 bytes)**  
+-	Total Size: **172.0 MB (172010766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:958afefa940263fdce0e8cab23c0ef7da150ad135f6de1844e7e007663dd4442`
+-	Image ID: `sha256:f47e7e0c64fd708ea09dcd158d6299f2a20fa7500be26ce692ba05585bbb7bb2`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -9473,35 +9473,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:36 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:53:01 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV JRUBY_VERSION=10.1.4.0
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV JRUBY_SNAPSHOT_VERSION=10.1.4.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:53:32 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20261105.165830
-# Fri, 20 Nov 2026 17:53:32 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=2
-# Fri, 20 Nov 2026 17:53:32 GMT
-ENV JRUBY_SHA256=d2eb7f9b9439ec2c790e4551d2d6b3f0fb668b54fbe29c9d2c1258362f74462c
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.064706
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=55
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SHA256=07ccb5b6c8201ed1b9042ef1c90c6f6abca6aeb8ea483d021c0f9db69e37bff1
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN gem install net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:39 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 CMD ["irb"]
 ```
 
@@ -9526,49 +9526,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:50 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff7eaf1014dbbc7571be6a1ec19a1b0a31917dc6bdf9c78aa6b9e9ba85a073ed`  
-		Last Modified: Fri, 20 Nov 2026 17:53:22 GMT  
-		Size: 6.7 MB (6727315 bytes)  
+	-	`sha256:8874bb2b96223dafe2e29b21475e125a3b3f70a1b073839e84dacbbb39f17271`  
+		Last Modified: Mon, 23 Nov 2026 23:10:08 GMT  
+		Size: 6.7 MB (6727977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a072a9d412b04994ff7a30d8e61361d5cce1670c67756b8161c6ab462b5d8c79`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 44.3 MB (44293244 bytes)  
+	-	`sha256:253d09f57934fc13604a00e4393527cc8ec43a681aa256e8e0d5195d9b0ccd91`  
+		Last Modified: Mon, 23 Nov 2026 23:10:09 GMT  
+		Size: 44.3 MB (44330498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83032c495ec54155042926521c2f2c8d9d75078fb1352ddb5b806e7198420c37`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 197.0 B  
+	-	`sha256:8b7aac8095037e215981ea42193b4b5995f2dec9788bad50e6dc52ad57bc9a13`  
+		Last Modified: Mon, 23 Nov 2026 23:10:08 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3d7976a749207db96c64f84f94e58a7d8908de62c6019a73d790b26a043bfa2`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 12.6 MB (12621730 bytes)  
+	-	`sha256:415c854fe267e54e1620158d066a3d0c5a4b7d6d0869a70c4df48121b1429146`  
+		Last Modified: Mon, 23 Nov 2026 23:10:08 GMT  
+		Size: 12.7 MB (12690822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f38be02802bd99040d55e67962e568b10f6a7fcb4969e302e17fecdbdb01648`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:6b2282104479022e783239f494b9d0bf23e56b86b64c970f9f14bee104198af1`  
+		Last Modified: Mon, 23 Nov 2026 23:10:09 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:10.1-dev-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6dc9b552bcd1a22ace1c061a620fa0cc58fe1c1fd8fc48e680ea53a36a7a9ea6
+$ docker pull jruby@sha256:ae366f28fd92e8c8c2e170239eb863384dfb8ea5af572734e1be84c65338b3a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4592591 bytes)**  
+-	Total Size: **4.6 MB (4592603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99b7dcfad0d9d031290325e39fb0d75a191d43bcd56976aeeac9c356782086ae`
+-	Image ID: `sha256:a33722eea724563d48b70229079ba4f7c65be9c55704a638b38608632b233937`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5833339b244b9de8e1431e8348da6cc91a4c5be78eead5e9e3881ba9b149373d`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 4.6 MB (4573378 bytes)  
+	-	`sha256:3ffc31562d53c75d2d5af3919341b584b77f5431d738648413fdf064d1774cf5`  
+		Last Modified: Mon, 23 Nov 2026 23:10:08 GMT  
+		Size: 4.6 MB (4573382 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fd6d1062297ee00f3b7a69bf683f1cf80324989a946067c06bbb20ef4439e990`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 19.2 KB (19213 bytes)  
+	-	`sha256:be4370aeb7ec35ae8e287df6977eb9ae6b73e126564e35809667441b535fbbc7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:07 GMT  
+		Size: 19.2 KB (19221 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:10.1-jdk`
@@ -15230,7 +15230,7 @@ $ docker pull jruby@sha256:9a126b75bd9ef84916a65dbbf2caaa84350214a82d819dd69df4f
 ## `jruby:9`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15243,13 +15243,13 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 ### `jruby:9` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15282,29 +15282,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -15329,61 +15329,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15416,29 +15416,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -15463,55 +15463,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9-jdk`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15524,13 +15524,13 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 ### `jruby:9-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15563,29 +15563,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -15610,61 +15610,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15697,29 +15697,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -15744,55 +15744,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9-jdk8`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15805,13 +15805,13 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 ### `jruby:9-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15844,29 +15844,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -15891,61 +15891,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -15978,29 +15978,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -16025,48 +16025,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25382,7 +25382,7 @@ $ docker pull jruby@sha256:431e2f0dbdb64cba9b7ef1e07c7219010ab967d02e5a16ac7cf4a
 ## `jruby:9.4`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25395,13 +25395,13 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 ### `jruby:9.4` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -25434,29 +25434,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -25481,61 +25481,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -25568,29 +25568,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -25615,55 +25615,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jdk11`
 
 ```console
-$ docker pull jruby@sha256:d260d5f0dc7d98ec257998c3b4d0bb0675e9c65e832296f07878db492e45df11
+$ docker pull jruby@sha256:b0797b17b6ce8cc37302ee923ec541a57b1f7e6159fead1a724fe4673aff9712
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25676,13 +25676,13 @@ $ docker pull jruby@sha256:d260d5f0dc7d98ec257998c3b4d0bb0675e9c65e832296f07878d
 ### `jruby:9.4-dev-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7898be6c909ead62f1b29bb4fabbe49713ee554f7ba02bc0db5761d588cfbed7
+$ docker pull jruby@sha256:d2be2c699bd15dffdcb92bee4a954625195a2ca0398d07d8fe1f8a90eb5db534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.9 MB (231905317 bytes)**  
+-	Total Size: **241.1 MB (241128670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96cd52e31bd781ce2ff65e319fa1ea8127e1c0337d32daaa54287a6264dbe1ee`
+-	Image ID: `sha256:58accf05d08d019779d6dbcc679eaa80015406147df445ac8807ea6cadebe60b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -25717,35 +25717,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:15:45 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:22:12 GMT
+# Mon, 23 Nov 2026 23:11:08 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:13 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:13 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:13 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:13 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:13 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:13 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:09 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:09 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:09 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:09 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:13 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:13 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:19 GMT
+# Mon, 23 Nov 2026 23:11:15 GMT
 CMD ["irb"]
 ```
 
@@ -25770,61 +25770,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:00 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d6e51e6b4541b1e36462057f83ab877f844c1204b63cb69c2933dea8c0e1425`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 5.7 MB (5690549 bytes)  
+	-	`sha256:2355bdfc15c2b2aa007ee45ce48e36d2bc2d125919bface9e8b8865f9a4c3c0d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.7 MB (5690486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd98ed78aa8c45a33b4bc79c3b26180ffc3f9ddf8bca60e713d4f72f07d0a5ff`  
-		Last Modified: Fri, 20 Nov 2026 04:22:29 GMT  
-		Size: 32.8 MB (32798173 bytes)  
+	-	`sha256:c61a25e4c98e59a02287acdd9a698337471af0c397eb8f3bfe87cda14694e44b`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
+		Size: 42.0 MB (42021574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c13c67f96f9f41bb336ab94898f0b4f29ff7f95442e07985f037140c53a4e546`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 198.0 B  
+	-	`sha256:07bb9e9063b162794bd04316a07bf31b70847ec1d0623bddec27e2bb752f81e0`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:334bb927b16d5b2c410acf39ec04623cbc788d0543b2147e9b1d7f413f2f0eda`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 1.3 MB (1297069 bytes)  
+	-	`sha256:0f44d4c7f695745c3ca7738f731508bd76ea92c4d4c76c54d8ca568018715cfd`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 1.3 MB (1297083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70d4e44926acd028f1f70610685d01620e857b0256abe696718eb453cb8d684f`  
-		Last Modified: Fri, 20 Nov 2026 04:22:29 GMT  
+	-	`sha256:dfcf8f291e495f97ccc88319df00693cf480010bc1ed911e3daa37f8bdd96639`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:509360767e0aed00331aa92adda3ecf89b04cbb76380f48a8fac92955f2abe26
+$ docker pull jruby@sha256:80f41591be9c43a3485cef43f3c20443e166888eddf2d505f1cdf41a5cc4828d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5397815 bytes)**  
+-	Total Size: **5.4 MB (5408665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efcdac4a6581544b76eb1afe94f1f25ba5e1b11e17e03588bdf19f54ee59cd30`
+-	Image ID: `sha256:5f64c23c9b1f544b03b4d774fbee308df6a33b6edf5794b50c322f538229df59`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:efac9ed181e82757f5b9739a4f1d1ab34ce258db2f4fd2dda4f3ebd5ea2fee17`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 5.4 MB (5378796 bytes)  
+	-	`sha256:1c3df600d1dfe34a30019eb8897bedbe47633763b9cb7f81c5b2d775d59b5563`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.4 MB (5389647 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ffdf101f7104e59ddbe6d5db3a2f307153d37b1936b2219f1fc599860b73a83f`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 19.0 KB (19019 bytes)  
+	-	`sha256:08bbc3aa73bd842b01038f13c96727a09a9ff65595a52392abcf8604fe0db028`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 19.0 KB (19018 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jdk11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:95d795a5b367cb99fe45626e45992ce3f1f7d371571c253c65ea5b239f5b5050
+$ docker pull jruby@sha256:72f3dd338a4f689800c01455b7497c2c3e6199a4dfdc2dd34bb91d0ec2bcb8b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.3 MB (225332673 bytes)**  
+-	Total Size: **234.6 MB (234556341 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a9ffb9152c31480ff902c460c4f1edf30746a7dce0b54feb5cd3b2bd4acaa52`
+-	Image ID: `sha256:08bf5c7be9746e1d2061bd1e612252cae08ba0ec08474b13d3806ce774c78f4d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -25859,35 +25859,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:16:33 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:22:47 GMT
+# Mon, 23 Nov 2026 23:10:14 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:48 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:48 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:48 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:48 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:48 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:48 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:48 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:48 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:54 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:54 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:54 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:54 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:55 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:55 GMT
+# Mon, 23 Nov 2026 23:10:23 GMT
 CMD ["irb"]
 ```
 
@@ -25912,55 +25912,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:40 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5d365c0926f2aaf4604b5302f923562c0330028b3943b68afc1bc1c32e2a22b`  
-		Last Modified: Fri, 20 Nov 2026 04:23:05 GMT  
-		Size: 4.6 MB (4557579 bytes)  
+	-	`sha256:f9b497967178edce301be14d1eb594ece0ddedea40eadda97dd7e265ed80fb3d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:35 GMT  
+		Size: 4.6 MB (4557670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70c11e6b7cfcae4b3a99df41571c57c5b7ad5253f0d32071c1f93577f7eecd75`  
-		Last Modified: Fri, 20 Nov 2026 04:23:06 GMT  
-		Size: 32.8 MB (32798015 bytes)  
+	-	`sha256:e6725a5fd6e1a5cb373f1ccf2d92f5ec7cc5aa02a2d97cef5e6ea192aacc0b50`  
+		Last Modified: Mon, 23 Nov 2026 23:10:36 GMT  
+		Size: 42.0 MB (42021570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4b83f0a8ca6f80b0538f0686e01bb5c2dac1e4771f938245412bc8208886ecd`  
-		Last Modified: Fri, 20 Nov 2026 04:23:05 GMT  
-		Size: 199.0 B  
+	-	`sha256:d3909a864a7ee43eeaade6c18219961aef79eff93cd261f2afc922a17a52a7ec`  
+		Last Modified: Mon, 23 Nov 2026 23:10:35 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65070734d9b7eedf4adbe15be738e51f46ba46233766834f86f0a0769a820f4f`  
-		Last Modified: Fri, 20 Nov 2026 04:23:05 GMT  
-		Size: 1.3 MB (1297052 bytes)  
+	-	`sha256:7c020731edd87440f12a72d46faeb8ad81df86975282fd37e1fb07d9bb01c476`  
+		Last Modified: Mon, 23 Nov 2026 23:10:35 GMT  
+		Size: 1.3 MB (1297075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e612988e3038ed2aab0dd43b372b5bcd8aab951d462566ca16d6c5d0af9aee6e`  
-		Last Modified: Fri, 20 Nov 2026 04:23:06 GMT  
+	-	`sha256:188d614069b8ad3ac27fb718e6cf4032fb449cc5b6a9f284293debf8ed6da725`  
+		Last Modified: Mon, 23 Nov 2026 23:10:36 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:3ebf7fca1e2affd6306178367074b9715c5aa0a19bb6fa0a55a98d71ff1f9a29
+$ docker pull jruby@sha256:46af747d116aa4ecfe3a5f29ad53e73df38390ca336b02cd01af7e642976b33d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5369956 bytes)**  
+-	Total Size: **5.4 MB (5380807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4797c5fe18deb057806faa88ec7dcdeabf10d59b0f8a35a63736bdb743e2444b`
+-	Image ID: `sha256:ab79ec5826677307862be41a92e58d68dd474cbc352dba10496f4d9a8dc55fe4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f13533b171a922c1cd0126fbc06beafdf405eb5c61384d59142981b4a7877d03`  
-		Last Modified: Fri, 20 Nov 2026 04:23:05 GMT  
-		Size: 5.4 MB (5350809 bytes)  
+	-	`sha256:b77b87a2a59242f48646d8a84ea7da397de8971371e964121f7c757b10dbaf08`  
+		Last Modified: Mon, 23 Nov 2026 23:10:35 GMT  
+		Size: 5.4 MB (5361660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad291b156d6f83bbb7e449364c403ac1af1a859f9c9bfd0817bf016789b18504`  
-		Last Modified: Fri, 20 Nov 2026 04:23:05 GMT  
+	-	`sha256:552141011702a052ffd64f8c7615efb0503dadac283601087ad51d3fe5752708`  
+		Last Modified: Mon, 23 Nov 2026 23:10:34 GMT  
 		Size: 19.1 KB (19147 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jdk17`
 
 ```console
-$ docker pull jruby@sha256:f33be83a5be092d2ebe45f45a5e4a015191e428f7d0a338b8ea07ddeadfec305
+$ docker pull jruby@sha256:626bb3a1f8ea503198f1bb4de4638b568679dc491aa8a53ff2ccb4fd5bd88af7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25973,13 +25973,13 @@ $ docker pull jruby@sha256:f33be83a5be092d2ebe45f45a5e4a015191e428f7d0a338b8ea07
 ### `jruby:9.4-dev-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:c21c92f1d628613230b707e3a4be996a99a7a9c0a32d744546f33302b845b403
+$ docker pull jruby@sha256:39aa780f8c77c5055a099a7cb36878fd82141c280363e87e4c3a50061db570a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.6 MB (248589362 bytes)**  
+-	Total Size: **257.8 MB (257823642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b41bcdd6f58040cdad3745837766db2cb3317fbbc14b940f1c3180ad3d0b365`
+-	Image ID: `sha256:56060dd97db14e79ee63a526c422480d92f6195f88ecc06f007d9af46a11084e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -26014,35 +26014,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:42:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:52 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:54 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:58:54 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:58:54 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:58:54 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:58:54 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:58:54 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:10 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:54 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:54 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:59:01 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 CMD ["irb"]
 ```
 
@@ -26067,48 +26067,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:08 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:722768c22cde917f09a6f6e4d531d26cc3feba6842db1937e0aba5fc74e09425`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 5.7 MB (5692866 bytes)  
+	-	`sha256:71609cdfb8b09a2034103267db55b0454d13cfb2bf1b413f974f96e488f8aaa0`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.7 MB (5693044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df865cd6b2ea34c9c448b518672ef25c303f08fe7fe2d2191d171ef567e52d01`  
-		Last Modified: Fri, 20 Nov 2026 17:59:15 GMT  
-		Size: 32.8 MB (32798067 bytes)  
+	-	`sha256:a57d3722ef88fcba2676a0b53baad7f5a5d2c13bba6a27579c7c4f6e9bb50a83`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
+		Size: 42.0 MB (42021038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:090d17748a5fbcd79a81cee790a2af5d0bd57dc8b71665512f18c77b8c5f9ab0`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 200.0 B  
+	-	`sha256:956ebcee13fc4f4c7d9c3c3b334a212dde2388f83d2cdac1ad13401c4bcc7526`  
+		Last Modified: Mon, 23 Nov 2026 23:11:27 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6149e9be1d535450122ac57acdec3a4db3a606300d31d9a8120f3672414d1d59`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 13.2 MB (13240861 bytes)  
+	-	`sha256:5ecc9d686c7467cd8000060e628d447f0516310114fe326452a2eaddeb87d16d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
+		Size: 13.3 MB (13251992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:872967a6a3b4ceb712bfba37189a4bea1737b01eff32895a4ffe821e916fafd4`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 143.0 B  
+	-	`sha256:5141f1b9376edaf61cede20d80989f3c9bdbb2e8d560c48f68f6de084c9bec44`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:86dec8513ac239a1dfc809d86c1f8ad8e8c75d4a0d90112d4e536b632244a0aa
+$ docker pull jruby@sha256:5007456a1326cb2436c8be772826e812c1c38659df70ff2d54e2fafdc2c535d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5538124 bytes)**  
+-	Total Size: **5.5 MB (5548975 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:557ecd1708ebda75972c5d3380d4a0e3476649b726061325ba54737d351244c2`
+-	Image ID: `sha256:99d88e3cedf2e883f4cd26a8559d1f1951220fcef9cd83bf27ee0bcdc11dfb9e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6bb462e435147db421a4e762b344ad9e519ae55440f50511dd4aa2e1f3125205`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
-		Size: 5.5 MB (5519006 bytes)  
+	-	`sha256:ddfbe8d8d5d7ea3fc1dd34c6d3a358abdd7f069597ca22dcf418ea4b8ed1bbec`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.5 MB (5529857 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f979c0e6f13fd969445c682f7b50515f3efe66ea1b96e32cdc47cb878f3cd4cb`  
-		Last Modified: Fri, 20 Nov 2026 17:59:13 GMT  
+	-	`sha256:b44e71c30d84653bc1de89d33e1872373aba93c46bf4b56595c8009366595b31`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
 		Size: 19.1 KB (19118 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -26257,7 +26257,7 @@ $ docker pull jruby@sha256:7ce05a42b1fa226c8f4e08be3405ec7795520de5065a3122d0cff
 ## `jruby:9.4-dev-jdk21`
 
 ```console
-$ docker pull jruby@sha256:5c4ada04c69b5e1fcd64b802ad403e0df493541562b83a230a4266d44efb77c9
+$ docker pull jruby@sha256:b5cb8af7ce9d4fc3b4f4a53da6b287c0ed16a2edd91f8e3205e7a55203653f6c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26270,13 +26270,13 @@ $ docker pull jruby@sha256:5c4ada04c69b5e1fcd64b802ad403e0df493541562b83a230a426
 ### `jruby:9.4-dev-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:15ca98006ec78c7481657345f40c0f986e9718d96fc7a1d4e2e4e912bbe9f410
+$ docker pull jruby@sha256:e62cd3b269a7a0e8b22837c63643c0f761984aff8b885e5d6c7ef6d69b75142d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260843747 bytes)**  
+-	Total Size: **270.1 MB (270070844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5700b5d9e5328ff4400bbe4a3366d3b657ba1c9280470fc3ee411eb81ee4df9`
+-	Image ID: `sha256:664d0a4a862f001134cdf3a4aac88dc76cc1113e5e0f6c9f087979af876c4245`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -26311,35 +26311,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:43:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:59 GMT
+# Mon, 23 Nov 2026 23:11:13 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:59:00 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:59:00 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:59:00 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:59:00 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:59:00 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:59:00 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:14 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:59:00 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:00 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:59:06 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 CMD ["irb"]
 ```
 
@@ -26364,49 +26364,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:09 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb43321a3ced436e402549a65a9fff20446e714dd4f0b6be5cd6982639f27`  
-		Last Modified: Fri, 20 Nov 2026 17:59:19 GMT  
-		Size: 5.7 MB (5693004 bytes)  
+	-	`sha256:fc9a8cf4e18915c5aa51515e6bad3889ab54894b091f647c2c5927d5861d2834`  
+		Last Modified: Mon, 23 Nov 2026 23:11:34 GMT  
+		Size: 5.7 MB (5693046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25d2daa30ebd5d996ea399ecdd182e76e08e8f620ed8290aaf82e8a5eeb0794b`  
-		Last Modified: Fri, 20 Nov 2026 17:59:20 GMT  
-		Size: 32.8 MB (32797964 bytes)  
+	-	`sha256:b835449f25577a0cf26d3007e16b3c81e3556ccaa140ecb16d723aae30432c3d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:35 GMT  
+		Size: 42.0 MB (42021526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8731cf023532a7c778e3dc1b5f1e8755fb786a546469505fe78b1a8be94c430e`  
-		Last Modified: Fri, 20 Nov 2026 17:59:19 GMT  
-		Size: 198.0 B  
+	-	`sha256:de0702521412fe1a4326f8f2684c2aa164695158a1161af7341100562fbb4e5d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:32 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b85068e3f59dff0bca6c4bdae51247e34deff9672cd4692a012491cf3901afaf`  
-		Last Modified: Fri, 20 Nov 2026 17:59:20 GMT  
-		Size: 13.2 MB (13165231 bytes)  
+	-	`sha256:c7de4293339b94e70a71d67dd88ff4f93d8f5aec31290776c612010427e7acb8`  
+		Last Modified: Mon, 23 Nov 2026 23:11:34 GMT  
+		Size: 13.2 MB (13168725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0f01495762045e5abeb715b7142ef26008ef6196f2979cea23f01513c9900d4`  
-		Last Modified: Fri, 20 Nov 2026 17:59:20 GMT  
+	-	`sha256:ddf4ed956bdd4c42b45c81ff731349f7ead8cf715090521570050381b2e9b3ac`  
+		Last Modified: Mon, 23 Nov 2026 23:11:33 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f0e5e1175463e7b7efa6e3f58462f3de206a470c0f735e980e11110232aed633
+$ docker pull jruby@sha256:910f08130493083b79cd5ea4caa313031017ec6f8d9645a5f7b9c480bae5d620
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5539974 bytes)**  
+-	Total Size: **5.6 MB (5550827 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c01bf8c157022d3a08b06e544eff4394e318cd4630a645506ab559435ed302c9`
+-	Image ID: `sha256:3256985afdb41b5ffb9e51ed00643107efab4d9173dba5b9d1f9c71a68660db2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:299e60064947c3d551ba2b97dcee36cfb0cdf664156c0ad9e1286701a35448d2`  
-		Last Modified: Fri, 20 Nov 2026 17:59:19 GMT  
-		Size: 5.5 MB (5520858 bytes)  
+	-	`sha256:27311c56ab6afccf4eed9cf0f9b335813bc3e573e3206823cd10ae199c7def03`  
+		Last Modified: Mon, 23 Nov 2026 23:11:34 GMT  
+		Size: 5.5 MB (5531709 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1369a89e9959c8789084eef6ca2c50bab63f4750db9249a9dffc954a3e4fc71`  
-		Last Modified: Fri, 20 Nov 2026 17:59:19 GMT  
-		Size: 19.1 KB (19116 bytes)  
+	-	`sha256:641d5911b75ec4c90373eb31b2891ec9b40cb416d4086b1301da79de8e0aa4c1`  
+		Last Modified: Mon, 23 Nov 2026 23:11:33 GMT  
+		Size: 19.1 KB (19118 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jdk21` - linux; arm64 variant v8
@@ -26554,7 +26554,7 @@ $ docker pull jruby@sha256:d4674921c9539f0044ad4275e52c2404575d3d1f04ccfb4e67c82
 ## `jruby:9.4-dev-jdk25`
 
 ```console
-$ docker pull jruby@sha256:28f989968ddf71d7095e2ce2cec5d1d003ea0911ceff896df20dd4106489c2e1
+$ docker pull jruby@sha256:80cc95fe39d11e989b6f7d47b51485b1bd86e7ef14ba3229ab0ccc06c3bb9d21
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26567,13 +26567,13 @@ $ docker pull jruby@sha256:28f989968ddf71d7095e2ce2cec5d1d003ea0911ceff896df20dd
 ### `jruby:9.4-dev-jdk25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:c0afd47d407ecad1ff3b85dba33548c59229b3f07753a4c812dc14a5c10263fd
+$ docker pull jruby@sha256:27fb2a96324fefe119c375613efbda7aa7168c5f022f8d337578f93308aec1ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.6 MB (191594936 bytes)**  
+-	Total Size: **200.8 MB (200832426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4cabeb373f103fe35557d51670b3bfb8ebbbaed77b8c2506b529d62a58f0f60f`
+-	Image ID: `sha256:7f0a78a94ae5b21aa4e58c76ede1f9a2c07938fc0944340e96321562f7761ffc`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -26608,35 +26608,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:14 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:48:01 GMT
+# Mon, 23 Nov 2026 23:11:20 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:48:02 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:48:02 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:48:02 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:48:02 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:48:02 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:48:02 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:21 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:21 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:21 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:21 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:48:02 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:48:02 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:48:09 GMT
+# Mon, 23 Nov 2026 23:11:28 GMT
 CMD ["irb"]
 ```
 
@@ -26661,61 +26661,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:31 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f913b768adb3c482c998802220962e38834bfdb2c3d4b0c9b1f651e09234273`  
-		Last Modified: Fri, 20 Nov 2026 17:48:20 GMT  
-		Size: 6.9 MB (6863719 bytes)  
+	-	`sha256:850d15aa3e730d0d0b1df72c8f9dc16554c8adee198758f5f26a29c14437446a`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 6.9 MB (6863692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9932fcf31f46211defe1619b861837ae9438e3fa2dd37daa2fae1bbfacb356`  
-		Last Modified: Fri, 20 Nov 2026 17:48:21 GMT  
-		Size: 32.8 MB (32798097 bytes)  
+	-	`sha256:262798a79cac97fa87fae7bf816cd67d5acb2692673c882a6afebbba7ed7e1fe`  
+		Last Modified: Mon, 23 Nov 2026 23:11:41 GMT  
+		Size: 42.0 MB (42021594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7a8192f008f9ff8d1c22fbd7c68504df3509371f2b360fcd8cb35fbdade67679`  
-		Last Modified: Fri, 20 Nov 2026 17:48:20 GMT  
-		Size: 197.0 B  
+	-	`sha256:a8e4943a27469c5ec1e92961364bad4f4c9e43160b7375c62e16bc8034aaa35f`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5394ac1f3fd399d86e85e2d3b4f54e1b758a162c9057ea7a392d570bb50c3f88`  
-		Last Modified: Fri, 20 Nov 2026 17:48:20 GMT  
-		Size: 13.2 MB (13231586 bytes)  
+	-	`sha256:bdae0b5d27472ceeacb6991dba7ab1de172d0b8ec99a2e30043a1e8f1be0e04c`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 13.2 MB (13245602 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe146a594de8b486aa247fea694d3029b396e1c70be46f0b8b97fc604229a38`  
-		Last Modified: Fri, 20 Nov 2026 17:48:21 GMT  
-		Size: 143.0 B  
+	-	`sha256:b2d79c17186d8ae6559500b75596b9e3bd7a5b697c879151f4199a63b00b680b`  
+		Last Modified: Mon, 23 Nov 2026 23:11:41 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:818285a118fa0efd548cc9a0e7442f5f53e27ef0a59692120bdee0e41d867bf6
+$ docker pull jruby@sha256:c14d4b16cf47123a503267b53278a550de177f107cb5c7e0676ed14663ed1bb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5325092 bytes)**  
+-	Total Size: **5.3 MB (5335942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59f6c810ab34020f6e5e2f454b50e99937d4107a0f840fe6dfdf31faa3dbceba`
+-	Image ID: `sha256:8b1b874da6b125d5005a69b1a9fac1aa8aa2bdb5bbb49538cc555a077cf48b8b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bda81937072b71cb75e7492c373f8637868a3e2dd482cc52156f52083f6d872a`  
-		Last Modified: Fri, 20 Nov 2026 17:48:20 GMT  
-		Size: 5.3 MB (5305978 bytes)  
+	-	`sha256:0f95eb0c3405b39dfcf720c275f63a41ad71b87506ee87b609b4172aad5cc2bd`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 5.3 MB (5316829 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ceb4abd1e4e1844b0c6c4d232b5ae2e5dc954a2a5794a64d313463c71838a13d`  
-		Last Modified: Fri, 20 Nov 2026 17:48:20 GMT  
-		Size: 19.1 KB (19114 bytes)  
+	-	`sha256:3104010ff5d95fb4ff9427f64447615398115ac0659f7d55ca18f111cdbb6830`  
+		Last Modified: Mon, 23 Nov 2026 23:11:39 GMT  
+		Size: 19.1 KB (19113 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jdk25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:39fed845e1b56d33eaeef6ac886cec6005803757e219ee15c3829c2e7725651e
+$ docker pull jruby@sha256:9ad4773de0c2af6b598c206219090937529b8c69ed71170a553b75ed33c0ec50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188817723 bytes)**  
+-	Total Size: **198.1 MB (198098854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a8ba49e8c7e549d5ba4c83857c90d3216f14f5fc77175e92524c755d2f66f23`
+-	Image ID: `sha256:a654aab84db9431d529f3265635a42b50bece425105e3ad1bb2d7c043cb828ab`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -26750,35 +26750,35 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:58 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:53:49 GMT
+# Mon, 23 Nov 2026 23:10:20 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:50 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:53:50 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:53:50 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:53:50 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:53:50 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:22 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:22 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:22 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:22 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:22 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:22 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:22 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:50 GMT
+# Mon, 23 Nov 2026 23:10:22 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:58 GMT
+# Mon, 23 Nov 2026 23:10:29 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:58 GMT
+# Mon, 23 Nov 2026 23:10:29 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:58 GMT
+# Mon, 23 Nov 2026 23:10:29 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:58 GMT
+# Mon, 23 Nov 2026 23:10:29 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:59 GMT
+# Mon, 23 Nov 2026 23:10:30 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:59 GMT
+# Mon, 23 Nov 2026 23:10:30 GMT
 CMD ["irb"]
 ```
 
@@ -26803,55 +26803,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:14 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e688682828e7dfb37f5ccba21c8072329976da8818c4a6aba967226dbb9c89bc`  
-		Last Modified: Fri, 20 Nov 2026 17:54:11 GMT  
-		Size: 5.7 MB (5723116 bytes)  
+	-	`sha256:8c758761a98361c9319c7e5f6717f9d236852329bdde132b5365076a72254172`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 5.7 MB (5723170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:518b0a4fff396c7febcade8ee39f542c20ae10d659b5db9b52c2e1b5aa4f6e13`  
-		Last Modified: Fri, 20 Nov 2026 17:54:11 GMT  
-		Size: 32.8 MB (32798096 bytes)  
+	-	`sha256:b74cdbbb927720a7979d6036224cad453a2e52a7618c277c8b7087680a3d1e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:10:43 GMT  
+		Size: 42.0 MB (42021593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d778284d1dcd7b5d5d1511fb633f225d5ef3c33dc18503b5cb5371045ac3e617`  
-		Last Modified: Fri, 20 Nov 2026 17:54:10 GMT  
-		Size: 197.0 B  
+	-	`sha256:fc037150cf4d615b00665294d54ad8b180404e4b4eef023fe5181013334faaef`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e0f37f6049d20893c4b278219e48903416c3c9ae0dd6ebb9b1cd45485f142a4`  
-		Last Modified: Fri, 20 Nov 2026 17:54:11 GMT  
-		Size: 13.3 MB (13286086 bytes)  
+	-	`sha256:fa578919cbd272a1a7556ed469183eada333c5e32eb63bae418bc0ed53e2975d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 13.3 MB (13343666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd83ed1ef6bf25a815aba09b449f9d4d04a38493498686e38ced3ab12938590c`  
-		Last Modified: Fri, 20 Nov 2026 17:54:11 GMT  
-		Size: 143.0 B  
+	-	`sha256:1b730876eff6d9db68ad73cec2d48a6858b589e02bfae245253adb4efed8eeff`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:cb54e5aab254b9c76572e7c59dc6b25e76a745d8eb72b70c0e95fa407953196a
+$ docker pull jruby@sha256:d8f6f111934cd4c8ea60e1a263901338aa1451e06dbb131f8ab27207fb7458c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5392408 bytes)**  
+-	Total Size: **5.4 MB (5403259 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0aff6ee8ae6e0e67ffd520ca8f393991712dd25a4d494d3850f5ed1ca65ff61`
+-	Image ID: `sha256:3725b0e0ce861fc9449af0545768313266ebdcd54cea372b65c3ae77ab729d0c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eeaa4127534180b40b5e8aeec22e065ed7592b78eb2620ec5470971896eaf458`  
-		Last Modified: Fri, 20 Nov 2026 17:54:11 GMT  
-		Size: 5.4 MB (5373166 bytes)  
+	-	`sha256:b04ef330e49de1e97a2b40181a392aa7814c4cb9449eaa572d0a079de9e5872a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.4 MB (5384017 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2bdc9d416ba862e3a9381163351b6ea1808ba6ad61d5b8ff0e71852f53b32cc`  
-		Last Modified: Fri, 20 Nov 2026 17:54:10 GMT  
+	-	`sha256:0e76a164cf39ca328d115bd094cc185089932703144be5f73ebaf99074be3cfd`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
 		Size: 19.2 KB (19242 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jdk8`
 
 ```console
-$ docker pull jruby@sha256:0c1a747537876c813b99d14dd1f8f8aa82b08439a3c9607b1b57974802be3ff3
+$ docker pull jruby@sha256:284b50cf6ec5ec7a3e63796f8a6ba4a647d1a41d7910a8b12111b427e8ea47d2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26864,13 +26864,13 @@ $ docker pull jruby@sha256:0c1a747537876c813b99d14dd1f8f8aa82b08439a3c9607b1b579
 ### `jruby:9.4-dev-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:e60b9ff986811d3d486afe0390592056b761bed2ea7f346efa04d57d99ac8325
+$ docker pull jruby@sha256:c1de4cf62e7f3441b16c564eab145fb2d922fabe33dc3822d1063016258058dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141185186 bytes)**  
+-	Total Size: **150.4 MB (150408600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c0e27e916a0432532292abeb80eb654efd20337bd4d8bbd127f33a02d06aec`
+-	Image ID: `sha256:a129ea52405b7d8e00b9ddfb95c2ce5572adcd143f72b9ab7dad97939f499af0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -26903,35 +26903,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:58 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:03 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:03 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:03 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:03 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:03 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:03 GMT
+# Mon, 23 Nov 2026 23:10:59 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:59 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:59 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:59 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:59 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:59 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:03 GMT
+# Mon, 23 Nov 2026 23:10:59 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:03 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:08 GMT
+# Mon, 23 Nov 2026 23:11:05 GMT
 CMD ["irb"]
 ```
 
@@ -26956,61 +26956,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:86dabaa62f5b820c2a132d68070af15016bbad182dc8abb276017e15ce6f2dcf`  
+		Last Modified: Mon, 23 Nov 2026 23:11:16 GMT  
+		Size: 5.7 MB (5690567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5d09ac56b952ec63e222ec63458da52b374f00dd99df32c808f61c968b6cc2b`  
-		Last Modified: Fri, 20 Nov 2026 04:22:18 GMT  
-		Size: 32.8 MB (32798172 bytes)  
+	-	`sha256:26739e3f8f2a3660a482758ffa587e17335e4e023e3640265b1f564248114ba2`  
+		Last Modified: Mon, 23 Nov 2026 23:11:17 GMT  
+		Size: 42.0 MB (42021582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:775750a2cc74f156b4405eacb96467f5413c3ec989fdd5bfe1631233adc9fa0b`  
-		Last Modified: Fri, 20 Nov 2026 04:22:17 GMT  
-		Size: 198.0 B  
+	-	`sha256:f95221f0389b510043f628527535f50bd36b629fad9030cfa05645c9b0fd9835`  
+		Last Modified: Mon, 23 Nov 2026 23:11:15 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0c93e328c2da311542d057eb5aa73d5d0c51b8b2362e4702513df96aa492aaf`  
-		Last Modified: Fri, 20 Nov 2026 04:22:18 GMT  
-		Size: 1.3 MB (1297061 bytes)  
+	-	`sha256:179f80a756318e57e91e3c7eac5f0113b4b84284ee1c5f6634c98afa20e8b1a6`  
+		Last Modified: Mon, 23 Nov 2026 23:11:16 GMT  
+		Size: 1.3 MB (1297094 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ce10d490f7adbe303e93fb33f5ddba89dd769bbd860adfe69456a2b28dede67`  
-		Last Modified: Fri, 20 Nov 2026 04:22:18 GMT  
+	-	`sha256:5c7c5aa9333e17e0dbdbbe1dfc0ea599371ca234293ebf8635c63a4e48eee3b3`  
+		Last Modified: Mon, 23 Nov 2026 23:11:17 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7f3e0e7b4180a98bce073f1fcb745a7af71cd6059020009a4e8e93322d276f8f
+$ docker pull jruby@sha256:6f91f16864890ff0488785fd9a9ba3c1bd422eb5f35970c4270333bdee27a69b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5498642 bytes)**  
+-	Total Size: **5.5 MB (5509493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45c4406826f8cfcf2d3a939845dd0b1031c33c49cbfb4ff6dd703c6010938b`
+-	Image ID: `sha256:9748c9423a27754b053b9f26fa9c1522fcc4f0f97ea035423962fe6c8f825658`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:77b5491fed22aedaccdaba58d9a07a14d986c6f2e17fe4737a72879e69634654`  
-		Last Modified: Fri, 20 Nov 2026 04:22:18 GMT  
-		Size: 5.5 MB (5479644 bytes)  
+	-	`sha256:6c692b83f55879da70f5d270e30a656d39647982281b80315027b17ced7bd918`  
+		Last Modified: Mon, 23 Nov 2026 23:11:16 GMT  
+		Size: 5.5 MB (5490495 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92a0ee6f98d4a2ec43bf04fb7c99df1e56e0177100558698f311de82ae629582`  
-		Last Modified: Fri, 20 Nov 2026 04:22:17 GMT  
+	-	`sha256:f074a4ed917bb714f1bafa88972d6621b87438df2f768894645e158e0cca0d6e`  
+		Last Modified: Mon, 23 Nov 2026 23:11:15 GMT  
 		Size: 19.0 KB (18998 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:19d0bcadcdc9990926786ea7093df47450869afc7d1fc5c3511ecba49b26a249
+$ docker pull jruby@sha256:633ed2ed3d06e5a0fb1b7fc02fc5f81f79b50a7c2b170b2596d58b33119764b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136990439 bytes)**  
+-	Total Size: **146.2 MB (146213169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8a23749c20c032b3fced206773f7eeadb6eeac7f7affed8a1e381eb81e46f85`
+-	Image ID: `sha256:1c8bb88905bc332381e2bece03f551e6cef943bbeb5072778894110904194e3f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -27043,35 +27043,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:22:38 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:40 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:40 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:40 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:40 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:40 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:40 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:40 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:40 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:46 GMT
+# Mon, 23 Nov 2026 23:10:44 GMT
 CMD ["irb"]
 ```
 
@@ -27096,55 +27096,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcec61a895aaa72919ac9b8572ae6e60ebce9bb995f3eb8f8d6101527c695407`  
-		Last Modified: Fri, 20 Nov 2026 04:22:56 GMT  
-		Size: 4.6 MB (4557623 bytes)  
+	-	`sha256:bb15e9da005086db1ab4465bbc73b4ce4d9d04a5b0d84244d6e9981ac330785d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 4.6 MB (4557700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36cd7f0dc0f074396bb3c31f03aaa3414454b727fba1a340386b7d3edc5abc43`  
-		Last Modified: Fri, 20 Nov 2026 04:22:57 GMT  
-		Size: 32.8 MB (32798180 bytes)  
+	-	`sha256:520410d908c5bd9708865eb42ebf1e0d810f724177a7c80fcdd629ef2ea6b2ac`  
+		Last Modified: Mon, 23 Nov 2026 23:10:57 GMT  
+		Size: 42.0 MB (42020854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb73484ca041bab7cfe9453feaaf7302c2e141b07b249682deb12c4630691fbc`  
-		Last Modified: Fri, 20 Nov 2026 04:22:56 GMT  
-		Size: 200.0 B  
+	-	`sha256:d5aa2ba6c4a1cb1574ce32143e6b41c8239618b49560abae8f990ea5a6e0baa2`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cb1c56d72759cc4819e90d1c49a3530d9363edb5bd8e14c829f12de1c47bab1`  
-		Last Modified: Fri, 20 Nov 2026 04:22:56 GMT  
-		Size: 1.3 MB (1297088 bytes)  
+	-	`sha256:40ee136be636f696e7e82d8b6e63dbac957bc2ab4b8e856c0b59a01aebc928f3`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 1.3 MB (1297067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbc980ea26a3f35d8ae7438830a7ed7211439a5a3cdf4629fc464c4cd7568e5`  
-		Last Modified: Fri, 20 Nov 2026 04:22:57 GMT  
-		Size: 141.0 B  
+	-	`sha256:08642f30f0c78f53f894c23cdf46babddacd45fe945a6a15a29e950081f54a38`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:cf4e9c744f5a8670b51de3f9b672ae697fb1d9297fac8ac23bfb3edb5d0f8d7e
+$ docker pull jruby@sha256:ae1ca5150c768fef4b64a55cdeb4dcabacfb2345b362c4dcc14deb0ed069cc2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5470865 bytes)**  
+-	Total Size: **5.5 MB (5481715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c65b094ddbc29a8e8ecbbbf2dc43ac4add7c59d801656b10ca489e8a064d276`
+-	Image ID: `sha256:e738bc8bfe08af7150e085088d267b51514e789924b5e7d9af621bf6a81df0f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:60e1ae700950660d6a1646fe0eb9ea45d9c95fb7ec78b5eab3c81014c48a2bc5`  
-		Last Modified: Fri, 20 Nov 2026 04:22:56 GMT  
-		Size: 5.5 MB (5451739 bytes)  
+	-	`sha256:202bd0809888c3b230d2e4742415deefbaf76dd99e3a33ffb953a1f7ef8aaaf1`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 5.5 MB (5462590 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0d2c2481b760c09a5ff69593e6919562eba39c4b97357c9b29e73757c0a2d111`  
-		Last Modified: Fri, 20 Nov 2026 04:22:56 GMT  
-		Size: 19.1 KB (19126 bytes)  
+	-	`sha256:78f7660ef807d95bffd8593e50b1579d92a34959ddc401dea3a3f31a0de602cc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 19.1 KB (19125 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jre11`
 
 ```console
-$ docker pull jruby@sha256:acb9db057ce8f0b561dc98fbf1fd47ac6cb040d4be38790ecb3d5d91356e6b6b
+$ docker pull jruby@sha256:78f03b86363dc2d0a27e4de8e732d75b53253eef750ed2a52b03669a416aa0cf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27157,13 +27157,13 @@ $ docker pull jruby@sha256:acb9db057ce8f0b561dc98fbf1fd47ac6cb040d4be38790ecb3d5
 ### `jruby:9.4-dev-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7d6c412f446c21f4cff970721463b08d56311bf0aa1c8971e80ce9a10a16d178
+$ docker pull jruby@sha256:bea33bce9f3c88ad1b93e81ecf22b9dbab461dc536e0a6f99aa114ec2ee083ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133326574 bytes)**  
+-	Total Size: **142.5 MB (142549888 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9f1a5bd705aefc5779fb9d4860e0629077fa826af0e5ee602bfaf5c03849ed6`
+-	Image ID: `sha256:02da28872c72a04d0b8c8debca93f34f9ef51f11d0130e18ffcb0d0ba282954f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -27196,35 +27196,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:18 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:22:10 GMT
+# Mon, 23 Nov 2026 23:11:03 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:11 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:11 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:11 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:11 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:11 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:11 GMT
+# Mon, 23 Nov 2026 23:11:04 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:04 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:04 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:04 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:04 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:04 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:11 GMT
+# Mon, 23 Nov 2026 23:11:04 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:12 GMT
+# Mon, 23 Nov 2026 23:11:04 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:17 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 CMD ["irb"]
 ```
 
@@ -27249,61 +27249,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:30 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5de905c55c7a751ed8748881e5a4cf9e9fa112ab4935e7cb87608e66f3afafe1`  
-		Last Modified: Fri, 20 Nov 2026 04:22:27 GMT  
-		Size: 5.7 MB (5690579 bytes)  
+	-	`sha256:238e6e2c76a28be0ee89e3ffd1f4e40a0b5fa0c1a4fda9bd95ee8c93e2f187a6`  
+		Last Modified: Mon, 23 Nov 2026 23:11:19 GMT  
+		Size: 5.7 MB (5690589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49b231e5d2e44b25df48598d373c868ba93976aa7a48c549cef07590e0a76fe3`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
-		Size: 32.8 MB (32798184 bytes)  
+	-	`sha256:9cd311823a38464322d1a3731e64bb6cdbea8082f97703332c39184618bf22c8`  
+		Last Modified: Mon, 23 Nov 2026 23:11:20 GMT  
+		Size: 42.0 MB (42021511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:008088a13fdb0b2f2b0e0ef76c8fd6873d3768fe93b134dc7e3ad78d362129f6`  
-		Last Modified: Fri, 20 Nov 2026 04:22:27 GMT  
-		Size: 197.0 B  
+	-	`sha256:49895f65bffacd7cebc1fc471989f5c704ac0ff93500f1015abcbc742ebbbcb7`  
+		Last Modified: Mon, 23 Nov 2026 23:11:18 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:108c971809e52ea66ee69cabc9f3c4c7f6c7adf23a00ba601098a0758c49b89a`  
-		Last Modified: Fri, 20 Nov 2026 04:22:27 GMT  
-		Size: 1.3 MB (1297096 bytes)  
+	-	`sha256:3a446e4ec00b5cf2ef3701bff346fe2b985d4a03b908b1aa809c6f6b19c374ce`  
+		Last Modified: Mon, 23 Nov 2026 23:11:19 GMT  
+		Size: 1.3 MB (1297074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82fb858f494ce5d4823b8bba8be0477a3c16329faf7b974d7f923bf6fc681547`  
-		Last Modified: Fri, 20 Nov 2026 04:22:28 GMT  
+	-	`sha256:3e0e990d7385d5c5433337a3bbfb7f41a0a8aa73ef5c49993753d646dc6051b6`  
+		Last Modified: Mon, 23 Nov 2026 23:11:20 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:274e11ac11a4a15dda31c24ae9f7985ad3259137ebb04b6bcd070e5db79aafb3
+$ docker pull jruby@sha256:9b70f1d345f652fd4eb041fe943757bdeeabceb2f5d853420e6e7e1e5162ac8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306635 bytes)**  
+-	Total Size: **5.3 MB (5317486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e478a2b68c50ce12a8581d9b2ef206c34117a06b9afa4cc29a3f141e8ffa762a`
+-	Image ID: `sha256:23b9ca91af7b16482eda5e19e8deb8885932761932a4219d700cba8c2d8a76c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba4232a0a958d058f7c7f37c91e434c632b79de2a01cbb2cc2c16b5ea87b685e`  
-		Last Modified: Fri, 20 Nov 2026 04:22:27 GMT  
-		Size: 5.3 MB (5287622 bytes)  
+	-	`sha256:5fed9b815b884788bc53e43acc46a69dbb7b32bff47da8109f6f02ef1931a551`  
+		Last Modified: Mon, 23 Nov 2026 23:11:19 GMT  
+		Size: 5.3 MB (5298473 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1cf6a0f95c900751281a5ea0e4f132de8090983a88b247baf9ac7195df5de307`  
-		Last Modified: Fri, 20 Nov 2026 04:22:26 GMT  
+	-	`sha256:5826ba4335182130a8408b58048c1c8b59201a7e0c5a9d1f423678527d263710`  
+		Last Modified: Mon, 23 Nov 2026 23:11:18 GMT  
 		Size: 19.0 KB (19013 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:ccb9cc5a7d48d477252d3c8cc13002dcba3c54b4144f29514dd6d0c1ecccae53
+$ docker pull jruby@sha256:f3f1ab9b561fa36b1f888ded5d669a7fe82d1cf4457265c521332e84e4dbdcf2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128369787 bytes)**  
+-	Total Size: **137.6 MB (137593255 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5aab894061191a1052ff5b5a3d07eeccfc7e8407cc91f23d377d81ff3370135b`
+-	Image ID: `sha256:142cfb789add2de9b013a83ba4daa37b882644b31ee44816f856b479411b7d0b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -27336,35 +27336,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:51 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:35 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:35 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:35 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:35 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:35 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:35 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:35 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:35 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:42 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:42 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 CMD ["irb"]
 ```
 
@@ -27389,55 +27389,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:17:03 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f1237600d521207545f2e5941ca0e21786986b180d0ea8690b782907f9d89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 4.6 MB (4557633 bytes)  
+	-	`sha256:d0ae0770ab52c38852c85f1cfc7ea1d392a76862ad1aaddd2074e71e25801e28`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
+		Size: 4.6 MB (4557698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a5bc4498ba08ff48667b18f10d68fcb8859e6e148eedecc58ce18b155f55cf0`  
-		Last Modified: Fri, 20 Nov 2026 04:22:52 GMT  
-		Size: 32.8 MB (32798182 bytes)  
+	-	`sha256:9dfd65a4574837533aef6cf61bc522559b1c2ae3346d8bf77c060ec2a619dd62`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 42.0 MB (42021553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e48b9f528862a7381f27f89f8fa2ce70a0301348eb149ea2b851dada5c5f40a`  
-		Last Modified: Fri, 20 Nov 2026 04:22:51 GMT  
-		Size: 198.0 B  
+	-	`sha256:841972911f6367fe756fbc2eb74ce405999148a8095b6047c8f19e800aa2204a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d505f1537ee0c933688d9cb91f372aea69bcd5ee9d9c85bad2e6bb8be760753`  
-		Last Modified: Fri, 20 Nov 2026 04:22:51 GMT  
-		Size: 1.3 MB (1297061 bytes)  
+	-	`sha256:cc67d436c64dbdde52b5240753a8215f4d175dbafe48eab419c86abb16e7bdaa`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
+		Size: 1.3 MB (1297090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31a5a11a641b60e49d549e37566e2318439e7648e9554794e515bbde24fe8793`  
-		Last Modified: Fri, 20 Nov 2026 04:22:51 GMT  
-		Size: 142.0 B  
+	-	`sha256:9cf460349dcdbffe3bcc7d88b57cd648b505647e1a2701129abeb65481910be8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:06815350a756b039f72bf07bd41f58d0d2c8be7ff159a6285c96395f2b04bc71
+$ docker pull jruby@sha256:92baf17436bf8cfdd5aec4fceea71f5b5cbc8e5b54e1eae04f86b7bffe5f8509
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5278776 bytes)**  
+-	Total Size: **5.3 MB (5289627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86fc3984b727fc21e324b0e4e9beb4befc23aa183d6887b9d6358319f241f573`
+-	Image ID: `sha256:eebb10e040530d56951a1ebe41e715d3f18d829b59d5fe12add43589eabdc4af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:55ccdd72f9746e94c7a2108d4fb886b19b628cc00ceaa3a8babc63b3c4000977`  
-		Last Modified: Fri, 20 Nov 2026 04:22:51 GMT  
-		Size: 5.3 MB (5259635 bytes)  
+	-	`sha256:f2fd4028376d2720adee88b9fe92450d979e8ed6f0908f519ec5a2bc1244e1c7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
+		Size: 5.3 MB (5270486 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:57937ad17b2e8adf7b727e839b5cab775dcb2e0659aaa7e18b1bb4bf6ce4749f`  
-		Last Modified: Fri, 20 Nov 2026 04:22:51 GMT  
+	-	`sha256:adee8d3ef0649634c052cc5afaaa4e0a785d8eaa94c72068f4077f05dd9e6750`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 19.1 KB (19141 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jre17`
 
 ```console
-$ docker pull jruby@sha256:89d60210bd4b86bd81e6caca3dc6c9b23bee1caf8286e462308b3e1df375bd71
+$ docker pull jruby@sha256:764485ba5fceebf65e5812e1d8ee256e847adb2815c99d85546aab6ec6e8e978
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27450,13 +27450,13 @@ $ docker pull jruby@sha256:89d60210bd4b86bd81e6caca3dc6c9b23bee1caf8286e462308b3
 ### `jruby:9.4-dev-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:f9ed9ee6093fbfa0c639e7edecf9db9c6c1241ca12460649f91e9dc6a36c6e62
+$ docker pull jruby@sha256:8e35eb147e1bea42b053faec85ab68b5862e88c39e817c715e935208f2c91152
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.2 MB (145152382 bytes)**  
+-	Total Size: **154.4 MB (154359844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c1da6a5b45dc2ff52be101685d2f422c18f0293c34959853e1694c44daedaef`
+-	Image ID: `sha256:800b271ace2d248e7dac3e500ce7225e993b5754a6ff90b3a3a1ca4b57bfe421`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -27489,35 +27489,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:43:16 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:54 GMT
+# Mon, 23 Nov 2026 23:11:09 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:55 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:58:55 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:58:55 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:58:55 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:58:55 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:58:55 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:10 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:10 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:55 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:55 GMT
+# Mon, 23 Nov 2026 23:11:10 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:59:02 GMT
+# Mon, 23 Nov 2026 23:11:17 GMT
 CMD ["irb"]
 ```
 
@@ -27542,49 +27542,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:28 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b942d65a82d98cec4f61f841ebcb41d6246294e92ae6a7d68be0597df9171989`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 5.7 MB (5690647 bytes)  
+	-	`sha256:18c45ab059a3db2696a3a898c5f6c815839e46e8c7d62e4dbb21e6fb7fcece3b`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.7 MB (5690617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b75edc7e7581e81c4099275c7f8cbb716caa3ceee2c40d0de1b7f9b858864f56`  
-		Last Modified: Fri, 20 Nov 2026 17:59:15 GMT  
-		Size: 32.8 MB (32798112 bytes)  
+	-	`sha256:734cd3d497463cc0397652576efc0257be53de3f36e3663e3534b20a553b2a54`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
+		Size: 42.0 MB (42021050 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78cd5b8113a172aab3c9b1dbc1fdf8a4de95b6c34e74bac27590f08c7b2e3967`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
+	-	`sha256:956ebcee13fc4f4c7d9c3c3b334a212dde2388f83d2cdac1ad13401c4bcc7526`  
+		Last Modified: Mon, 23 Nov 2026 23:11:27 GMT  
 		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1d47ccb8a83d45fb8114b2623036fc095a84199e4db5b5ee028d51c04387609`  
-		Last Modified: Fri, 20 Nov 2026 17:59:15 GMT  
-		Size: 12.8 MB (12846268 bytes)  
+	-	`sha256:596ec2d5f94a3a9b6df36f7b98ae3646f5818ad91ef7215b1854a0fb7ed7ad8d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 12.8 MB (12830822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:718e64295a21a17a0caa95028676654a2736afe81449927efb808a54828ef835`  
-		Last Modified: Fri, 20 Nov 2026 17:59:15 GMT  
+	-	`sha256:5141f1b9376edaf61cede20d80989f3c9bdbb2e8d560c48f68f6de084c9bec44`  
+		Last Modified: Mon, 23 Nov 2026 23:11:29 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:213dadb427eaa7fc0cae22c6738e1312fdf5528b8ebc0cc55706f370756c7a81
+$ docker pull jruby@sha256:ba72ba6355062f8a8405911c9aebfe7bd376fa7a1cc8b417d568a71f794107de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5294250 bytes)**  
+-	Total Size: **5.3 MB (5305102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa530767faf0b01ed4630f11388e0515777cb33689410859deaca433828f87aa`
+-	Image ID: `sha256:8339325f8c1c05c31ecd603f9001eb475d1680dec20ec2bbb43784644c3185ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c64e8acddb933a14a36b3452e80583bbe829845220810c152ad084e60cc47c04`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 5.3 MB (5275139 bytes)  
+	-	`sha256:511687a264231f3e02e23d376d2cc24127a04fa97f32e32b4dff025c98bde5c7`  
+		Last Modified: Mon, 23 Nov 2026 23:11:28 GMT  
+		Size: 5.3 MB (5285990 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e2b3782149bff81e06b0e506b8519353a69e7c30fa9b97b8f8265abdd92f25f`  
-		Last Modified: Fri, 20 Nov 2026 17:59:14 GMT  
-		Size: 19.1 KB (19111 bytes)  
+	-	`sha256:94721876a5e8d8ce0742dc2c1f27ae79fd49a99272d1378c4f22e48fa4d27403`  
+		Last Modified: Mon, 23 Nov 2026 23:11:27 GMT  
+		Size: 19.1 KB (19112 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jre17` - linux; arm64 variant v8
@@ -27730,7 +27730,7 @@ $ docker pull jruby@sha256:7857b1198f3706c8928dde30ebb160e62ef6eb87472410a4a41aa
 ## `jruby:9.4-dev-jre21`
 
 ```console
-$ docker pull jruby@sha256:43a54c6b0e4167eae7dee7a2343107237f9a5fdef9bfa35724b2907b47fc2270
+$ docker pull jruby@sha256:471ecf24f9872dacbceda45a9139205050e35d8e216701b1c3b2e07807d6a13e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27743,13 +27743,13 @@ $ docker pull jruby@sha256:43a54c6b0e4167eae7dee7a2343107237f9a5fdef9bfa35724b29
 ### `jruby:9.4-dev-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:fe5828283ebd26f06f172306b348f50335e2b67b5550796169bb22d43bfff256
+$ docker pull jruby@sha256:7e364739c7499562030bdbcd0a8035cc546ef2780f39747b3974781a1a091765
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.8 MB (150781837 bytes)**  
+-	Total Size: **160.0 MB (160028248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:936303857ec81301f0e4357a8e41c26f3c6c9520e69520e630e3ce900f14f9b4`
+-	Image ID: `sha256:e4ab8e6a39a9af8230b50119aaf984f703c2a984d6466d2b9fc318cac7281f89`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -27782,35 +27782,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:44:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:59:03 GMT
+# Mon, 23 Nov 2026 23:11:13 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:59:04 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:59:04 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:59:04 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:59:04 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:59:04 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:59:04 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:14 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:14 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:59:04 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:04 GMT
+# Mon, 23 Nov 2026 23:11:14 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:59:11 GMT
+# Mon, 23 Nov 2026 23:11:21 GMT
 CMD ["irb"]
 ```
 
@@ -27835,48 +27835,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:17 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd7415eb8c87f3ecaac3e74e0731b1b42921668f21541806144e9aa0bd493c0`  
-		Last Modified: Fri, 20 Nov 2026 17:59:21 GMT  
-		Size: 5.7 MB (5690605 bytes)  
+	-	`sha256:af17b55b60c5f88aac026f421172a361825b1a56e2b3fea4c4eca995eedf8a01`  
+		Last Modified: Mon, 23 Nov 2026 23:11:32 GMT  
+		Size: 5.7 MB (5690587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b50e862e9fc5be5db8eb9b442cd506f07edf437f26428299073f9446f132b45`  
-		Last Modified: Fri, 20 Nov 2026 17:59:22 GMT  
-		Size: 32.8 MB (32797873 bytes)  
+	-	`sha256:908da8e68abd6f5084446c0e3f820048ec867dbec9b3541fd20b229a0f5f160e`  
+		Last Modified: Mon, 23 Nov 2026 23:11:33 GMT  
+		Size: 42.0 MB (42021541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd55197a1836ebad8704ce874bb727ebd74dbd5825922b62c2abaa350cd94b60`  
-		Last Modified: Fri, 20 Nov 2026 17:59:21 GMT  
-		Size: 198.0 B  
+	-	`sha256:de0702521412fe1a4326f8f2684c2aa164695158a1161af7341100562fbb4e5d`  
+		Last Modified: Mon, 23 Nov 2026 23:11:32 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:685a578fee8cf60bd176d0fe21bb93af847a68facce5b6885194e1faf5f9de80`  
-		Last Modified: Fri, 20 Nov 2026 17:59:22 GMT  
-		Size: 12.9 MB (12877195 bytes)  
+	-	`sha256:da71dc098ff739ea864bcde4ac36697e544ac81e68a919a6892cfd7e7a780530`  
+		Last Modified: Mon, 23 Nov 2026 23:11:33 GMT  
+		Size: 12.9 MB (12899956 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3e968a9699b9583f373d8a09df63a3a0cd82e07ad66eab73bac57f42cebe3de`  
-		Last Modified: Fri, 20 Nov 2026 17:59:22 GMT  
-		Size: 143.0 B  
+	-	`sha256:ddf4ed956bdd4c42b45c81ff731349f7ead8cf715090521570050381b2e9b3ac`  
+		Last Modified: Mon, 23 Nov 2026 23:11:33 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:fbde6b07aba77482f08381197341471fe655036b16fc41d978791024e7c21322
+$ docker pull jruby@sha256:12f298fdb6b364e09dce0512a0783fc2feb850269b43677fde18aa550aa18e79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5295498 bytes)**  
+-	Total Size: **5.3 MB (5306349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a444005609711acd31ea672686d3ac774186f2e16dd6cfc525eb04ef04960410`
+-	Image ID: `sha256:0cfdb2481d09fe87b69ca2f6056a3de46bda475b54da6b135be2da39b8346800`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5414152104b155c5acdcf9de124252a77858c4bf385df82be056e1ec2ed5da84`  
-		Last Modified: Fri, 20 Nov 2026 17:59:21 GMT  
-		Size: 5.3 MB (5276387 bytes)  
+	-	`sha256:b09499ed99a6c091bf91fe51267699674555a76f692cb25431dee62db6539f9e`  
+		Last Modified: Mon, 23 Nov 2026 23:11:32 GMT  
+		Size: 5.3 MB (5287238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db093d5a3f2de74421dfcdb33a4d1e79d9e057b901a37c9ca4cdbe79d74328fc`  
-		Last Modified: Fri, 20 Nov 2026 17:59:21 GMT  
+	-	`sha256:bd0fcf40dd84eb501590cf31209c15d2ca49b693e587155aa4678e3a940ce4dd`  
+		Last Modified: Mon, 23 Nov 2026 23:11:32 GMT  
 		Size: 19.1 KB (19111 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -28023,7 +28023,7 @@ $ docker pull jruby@sha256:3051fa72bb557b68528f288a80a3cf0fa8d0717b20f9b2f4652fc
 ## `jruby:9.4-dev-jre25`
 
 ```console
-$ docker pull jruby@sha256:e0fe7aedf19a8e19007b26febeb48ca891c8f1e6a8baf22f48ce45e5f5efc54b
+$ docker pull jruby@sha256:2c87f3d196c989693906307dc81d5b34edbeb7dfe83709e072139bc5db492f0b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28036,13 +28036,13 @@ $ docker pull jruby@sha256:e0fe7aedf19a8e19007b26febeb48ca891c8f1e6a8baf22f48ce4
 ### `jruby:9.4-dev-jre25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cb5489a178fb9d51227a76faae32e786b57612fcb5d2393af4a5a6e7c016dd35
+$ docker pull jruby@sha256:080d1366bd2154588c0343ede989b7b0eaa1ab59017686d9305cf782b5531e98
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.1 MB (157129386 bytes)**  
+-	Total Size: **166.4 MB (166351494 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f81750351f2bee74bf12de790c9f79e9ad2f7279e8a2d6c47ff96e7d078d2dd`
+-	Image ID: `sha256:c0ddb3df61159cff96ce64b255422ebf2057b494d8750bc620fbfe08facfa8d9`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28075,35 +28075,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:48:03 GMT
+# Mon, 23 Nov 2026 23:11:23 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:48:04 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:48:04 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:48:04 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:48:04 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:48:04 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:48:04 GMT
+# Mon, 23 Nov 2026 23:11:24 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:11:24 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:11:24 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:11:24 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:11:24 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:11:24 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:48:04 GMT
+# Mon, 23 Nov 2026 23:11:24 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:48:04 GMT
+# Mon, 23 Nov 2026 23:11:24 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:48:11 GMT
+# Mon, 23 Nov 2026 23:11:30 GMT
 CMD ["irb"]
 ```
 
@@ -28128,61 +28128,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:27 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a20c08c159b841e54e0caaa2f650e177524108b0f9794c40475156358d900bb3`  
-		Last Modified: Fri, 20 Nov 2026 17:48:23 GMT  
-		Size: 6.9 MB (6861544 bytes)  
+	-	`sha256:e26e5666bccf027e071d5cab440613db2f7a95df8030ec5f4cc42aa123fcd009`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 6.9 MB (6861423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82df04d772d970efa478b6e94af4289ddaf98f6405af6c2e3f5542efa01807f1`  
-		Last Modified: Fri, 20 Nov 2026 17:48:24 GMT  
-		Size: 32.8 MB (32798111 bytes)  
+	-	`sha256:dba4bacaf5c62a9378d0ce305e3b201c0d180b3993e43e613c335472e55b5916`  
+		Last Modified: Mon, 23 Nov 2026 23:11:42 GMT  
+		Size: 42.0 MB (42021561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00557f136c7a27a447857f46619210c0591586dff5e7591addb5f0a08df65880`  
-		Last Modified: Fri, 20 Nov 2026 17:48:22 GMT  
-		Size: 197.0 B  
+	-	`sha256:1854846893faf5a0874ef9453ffac431b936046d45aa84210c849aa545797660`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b06d62069c633775693b2837929a48843a83b4af5c3843a61046a7555522c477`  
-		Last Modified: Fri, 20 Nov 2026 17:48:23 GMT  
-		Size: 12.9 MB (12946948 bytes)  
+	-	`sha256:2ddcbbc2955946c475b6a46fcea73b23abc6abd5585d9db550d2e60d0a0822f6`  
+		Last Modified: Mon, 23 Nov 2026 23:11:41 GMT  
+		Size: 12.9 MB (12945725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8dc857651ba3f3a0b53215b4b84b8c3c263b8a5865b8bf5ee26027723ab977b`  
-		Last Modified: Fri, 20 Nov 2026 17:48:24 GMT  
-		Size: 143.0 B  
+	-	`sha256:03ecbd46c42c7e6441919bbc12b83a1595de515a014ca9541f09074056b6fe63`  
+		Last Modified: Mon, 23 Nov 2026 23:11:41 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:07bb741f4219a9b4ac2600d2305c2c6246a85873160ba261bae95fc1e05434fd
+$ docker pull jruby@sha256:6cc9dc3caddfdfd54f05b85a6ea4d1d0ef1f2e9f2623609f63bdab01827315ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5121401 bytes)**  
+-	Total Size: **5.1 MB (5132252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7288cc6a466f875a964683abfe15ca09866caa044dfe2c551af66f76a5e5847f`
+-	Image ID: `sha256:d313b0f4bbcc205d2782b25d4c218527c3b7e389c24d5a80cc8483435d8987b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:096790816cf349ebce746c5fc3172f9ca5a86d467846e329c2034baf78748c72`  
-		Last Modified: Fri, 20 Nov 2026 17:48:23 GMT  
-		Size: 5.1 MB (5102287 bytes)  
+	-	`sha256:a31cb061d650cabd862c6d568e78e95accf3842c69f12216865fd6d8c16c050a`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
+		Size: 5.1 MB (5113138 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:78c4bc450fb03c016693c242caa10b09ce53afd5aa8fff23bb6dccfaa3df1d25`  
-		Last Modified: Fri, 20 Nov 2026 17:48:22 GMT  
+	-	`sha256:a558ab414c548db62f4b25b810cadfdd83aa1f6453a1281315f6fd2641e3fec6`  
+		Last Modified: Mon, 23 Nov 2026 23:11:40 GMT  
 		Size: 19.1 KB (19114 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jre25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:49d862d964a0d240d7f590cc903a9c4ce89fe6b4bc442ca798b8549859910bb4
+$ docker pull jruby@sha256:28ba0f9879281337b530e00a1b0d04d9c6f8eb4e889ca3ff20cd19862502f740
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.8 MB (152769994 bytes)**  
+-	Total Size: **162.1 MB (162057785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2bfabdf448f4f9b053742f14679f1c7dff59eb19f29cf950776d982ff8f5492`
+-	Image ID: `sha256:aee52eb9a167e3451f65e53fa633f395717e1a80797191cc8405aa09bcbc9e9e`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28215,35 +28215,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:54 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:53:56 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:57 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 17:53:57 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 17:53:57 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 17:53:57 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 17:53:57 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 17:53:57 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:57 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:57 GMT
+# Mon, 23 Nov 2026 23:10:27 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:54:06 GMT
+# Mon, 23 Nov 2026 23:10:35 GMT
 CMD ["irb"]
 ```
 
@@ -28268,55 +28268,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:08 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2597935b06e129ca7d251691fe55690ffeada2168d471b3484dc50f490d690bb`  
-		Last Modified: Fri, 20 Nov 2026 17:54:18 GMT  
-		Size: 5.7 MB (5720858 bytes)  
+	-	`sha256:6a7be1de02a13633e6dacbecb6fe8e9d63ce9d5247fde20c1d6648c800b60124`  
+		Last Modified: Mon, 23 Nov 2026 23:10:47 GMT  
+		Size: 5.7 MB (5720888 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59df2a2f413f974699ddff3fffcc41b201cd38dc0060c5e29aee620f242dc874`  
-		Last Modified: Fri, 20 Nov 2026 17:54:19 GMT  
-		Size: 32.8 MB (32798157 bytes)  
+	-	`sha256:4814b03d8827fd78a6916f3d482b210cd3f578bf7b0cc5cf66da7cdd7d1ad838`  
+		Last Modified: Mon, 23 Nov 2026 23:10:48 GMT  
+		Size: 42.0 MB (42021552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af29101bb3dbf44a01e1def8328e6631b9fdf671de56961bcf4f8301b20a5794`  
-		Last Modified: Fri, 20 Nov 2026 17:54:17 GMT  
-		Size: 197.0 B  
+	-	`sha256:23f701bd3f1dbef23bbeb91a1e92d898399a7bf27a4087288c4716977f718438`  
+		Last Modified: Mon, 23 Nov 2026 23:10:47 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c8e530eb317e1046bbc771d0e2c68bc3a00add7616d08c851ef28e648dd3076`  
-		Last Modified: Fri, 20 Nov 2026 17:54:18 GMT  
-		Size: 13.0 MB (12968972 bytes)  
+	-	`sha256:170e45fe8341716c92f92e63abc854321b7f0677f0acfaaca00792c26ded54b4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:47 GMT  
+		Size: 13.0 MB (13033335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0fc6e3fc4fb42cf1399b26f51c8ab15ecc790dfa1a941541f0c62b308c954e1`  
-		Last Modified: Fri, 20 Nov 2026 17:54:18 GMT  
-		Size: 143.0 B  
+	-	`sha256:4aeb9a3b76de20ccfd132fe478dd98fedb6ef9f63f7e9ffd44a5bd15476f79fc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:48 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:1aef55a6092792cf2adedd2a1089dcdf12248559fa6731ebf9f3106e15f72553
+$ docker pull jruby@sha256:04e7ca9ac50b56a5a8f7ff4f02daecc6c2cea6dce7cd671c7ad16ad37e875682
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5092914 bytes)**  
+-	Total Size: **5.1 MB (5103766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3eb70a505ebb9d2a22cdf254d2dbee0ac9034b964290953365197022b9e7b698`
+-	Image ID: `sha256:6fe84a6d970bd5d7938465c9e995d5a407ca20f9d365477dff3cb32d82fea505`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9ee09f37f9d3495b3e8e90172fc5925b0770e04c20f4734abebea8c9045ba341`  
-		Last Modified: Fri, 20 Nov 2026 17:54:18 GMT  
-		Size: 5.1 MB (5073673 bytes)  
+	-	`sha256:84baf509670a7338bddeb6eb09a55d73e8dd2d2dd8bc463dc099774a20552360`  
+		Last Modified: Mon, 23 Nov 2026 23:10:47 GMT  
+		Size: 5.1 MB (5084524 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:529e321ceb9cce2eba7c5d27f82ab81774c93374f69ebe303de426b44eeb61e7`  
-		Last Modified: Fri, 20 Nov 2026 17:54:17 GMT  
-		Size: 19.2 KB (19241 bytes)  
+	-	`sha256:475cbd39ba466378a20a149652ba86d8eb11e08a44144d4a17532f50837d5679`  
+		Last Modified: Mon, 23 Nov 2026 23:10:46 GMT  
+		Size: 19.2 KB (19242 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-dev-jre8`
 
 ```console
-$ docker pull jruby@sha256:9787f079a6c6019213583dfcd523a660e0a3300803820cf45143cf2c3ed06d21
+$ docker pull jruby@sha256:436e2719f65d3058b68933fc385cbec8b6753ff0759864f2daec5966ab050322
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28329,13 +28329,13 @@ $ docker pull jruby@sha256:9787f079a6c6019213583dfcd523a660e0a3300803820cf45143c
 ### `jruby:9.4-dev-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:f6a1fa6a6e5640363d1ac1198ee4b7d5ade509e904343180f765ff01b2c0e50a
+$ docker pull jruby@sha256:8edb3d957665b08f1687e18715f81ee46d454a91efc6fce9b7c43237ac6bb56d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128326424 bytes)**  
+-	Total Size: **137.5 MB (137549948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:873e83a5de741004b6b08e8e7865621d3d58ec4a483b74f08f502a07b465bded`
+-	Image ID: `sha256:74b7811539f4cfd7a9cb0ec5e16a348e3e1e73203c19e73457c247e25c826300`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28368,35 +28368,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:10:54 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:01 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:01 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:01 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:01 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:01 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:01 GMT
+# Mon, 23 Nov 2026 23:10:55 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:55 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:55 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:55 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:55 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:01 GMT
+# Mon, 23 Nov 2026 23:10:55 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:01 GMT
+# Mon, 23 Nov 2026 23:10:56 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:06 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:06 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:06 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:06 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:07 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:07 GMT
+# Mon, 23 Nov 2026 23:11:00 GMT
 CMD ["irb"]
 ```
 
@@ -28421,61 +28421,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:27269de4a57e8c2fd7b2a5bdc6f9df56bcd7969c9de452db8f2fe73ebcad1b82`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 5.7 MB (5690615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0a334d04f5f746d5ccb14c3fa2a761baacd18a37a563fec4c2d4a85307fa082`  
-		Last Modified: Fri, 20 Nov 2026 04:22:17 GMT  
-		Size: 32.8 MB (32798163 bytes)  
+	-	`sha256:fb8682b29ccb6eaab988a71272562835f8cf6fff9c979661a8ccab67bdeb6875`  
+		Last Modified: Mon, 23 Nov 2026 23:11:11 GMT  
+		Size: 42.0 MB (42021629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c91f7c68172557c96b29398ba620e7db1f0f24c82575a5e44e4c69fe70ac90e1`  
-		Last Modified: Fri, 20 Nov 2026 04:22:16 GMT  
-		Size: 200.0 B  
+	-	`sha256:91fb03f4f08ec8772166e4e25cf4debb142e152bb5e5bf7e0f1c6a9b4de90e83`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e074aa52535a99390540991561d3c09bfcc7d95cb3c829d0be9c9333c0cb3c3`  
-		Last Modified: Fri, 20 Nov 2026 04:22:16 GMT  
-		Size: 1.3 MB (1297056 bytes)  
+	-	`sha256:4fed33153f692ddcd5b2a995b85333ff24f3d4e912ec9e6bfa202483564c6781`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 1.3 MB (1297075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62f30796258abfd51fb223578855976185db0158ad1266b0f5b608ac1843294b`  
-		Last Modified: Fri, 20 Nov 2026 04:22:16 GMT  
-		Size: 143.0 B  
+	-	`sha256:8c517e56f745776204d03e655a43ede0b5b1f76207ac56fb7afdc5e5cdcf2c31`  
+		Last Modified: Mon, 23 Nov 2026 23:11:11 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:66dec0e7486702a9e95e546e40193857497f9319c3f48d0b69e2bd4d6cbc4a5d
+$ docker pull jruby@sha256:223bc335fbcf85a897a15fb1f8c05fad5c810ec73560ca3cd05469039b26330c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5322988 bytes)**  
+-	Total Size: **5.3 MB (5333839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d9d1b530f466ff924d88d751b6970559761b267798f0aac0506c489a551a41d`
+-	Image ID: `sha256:adf61941d38df225a7f384ab50d1c5b6b2f8123768b86b9ce957ee8976485023`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6ad53afc12a994559d9806545e6e727b1fdeb5f456b16b7948f1f0bae9ed4a18`  
-		Last Modified: Fri, 20 Nov 2026 04:22:16 GMT  
-		Size: 5.3 MB (5303990 bytes)  
+	-	`sha256:3450d464c9fcf1901c073101202e7b5f9dfe8e20589f0e37c53816a744ff791a`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
+		Size: 5.3 MB (5314841 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:68772a2a9414c4045c6dfa47d55988043c28931daef302314357fc9f60c580ab`  
-		Last Modified: Fri, 20 Nov 2026 04:22:16 GMT  
+	-	`sha256:c4a445052cfa3faa1c29285bd756b6145dff026d938fd19313bb2fb03edcc944`  
+		Last Modified: Mon, 23 Nov 2026 23:11:10 GMT  
 		Size: 19.0 KB (18998 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-dev-jre8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:79dff87c5f6da7423df70054487831f1af7e6c774e4803f77ed5b2be4c75024a
+$ docker pull jruby@sha256:e6d094640463d7c0fdb006cfafe87a5930574dd2ad6afe3a6329e82c265255b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124024130 bytes)**  
+-	Total Size: **133.2 MB (133247490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e8ab0182568eac35a1e055dd7b6c78dc024454967d1feb5d7847c92c7ca08dc`
+-	Image ID: `sha256:ef6ca5261e45e22c2bae46bcaae5b347fec8a58bbf182350c0a8a0be626f9ede`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28508,35 +28508,35 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:22:40 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:22:41 GMT
-ENV JRUBY_VERSION=9.4.16.0
-# Fri, 20 Nov 2026 04:22:41 GMT
-ENV JRUBY_SNAPSHOT_VERSION=9.4.16.0-SNAPSHOT
-# Fri, 20 Nov 2026 04:22:41 GMT
-ENV JRUBY_SNAPSHOT_TIMESTAMP=20260921.231850
-# Fri, 20 Nov 2026 04:22:41 GMT
-ENV JRUBY_SNAPSHOT_BUILDNUMBER=4
-# Fri, 20 Nov 2026 04:22:41 GMT
-ENV JRUBY_SHA256=ac0de7579a259c96c8c3c824f342cc72f1503fed58e46882ff8008ed8587eb4d
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:00 GMT
+ENV JRUBY_VERSION=9.4.17.0
+# Mon, 23 Nov 2026 23:10:00 GMT
+ENV JRUBY_SNAPSHOT_VERSION=9.4.17.0-SNAPSHOT
+# Mon, 23 Nov 2026 23:10:00 GMT
+ENV JRUBY_SNAPSHOT_TIMESTAMP=20261123.200425
+# Mon, 23 Nov 2026 23:10:00 GMT
+ENV JRUBY_SNAPSHOT_BUILDNUMBER=1
+# Mon, 23 Nov 2026 23:10:00 GMT
+ENV JRUBY_SHA256=af1217d3c5cddaa0effd0dc4c8ccd8378b6a67e5f11aec77c3a2fc9b45bb0453
+# Mon, 23 Nov 2026 23:10:00 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://central.sonatype.com/repository/maven-snapshots/org/jruby/jruby-dist/${JRUBY_SNAPSHOT_VERSION}/jruby-dist-${JRUBY_VERSION}-${JRUBY_SNAPSHOT_TIMESTAMP}-${JRUBY_SNAPSHOT_BUILDNUMBER}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:00 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:41 GMT
+# Mon, 23 Nov 2026 23:10:00 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:22:47 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:22:47 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:47 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:22:47 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:22:48 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:22:48 GMT
+# Mon, 23 Nov 2026 23:10:06 GMT
 CMD ["irb"]
 ```
 
@@ -28561,55 +28561,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd9e02b0ad6e2bf10490f544d64256ccaf420d2d851020a6b4188e9bfa1aa902`  
-		Last Modified: Fri, 20 Nov 2026 04:22:58 GMT  
-		Size: 4.6 MB (4557593 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c6809a49bad5a5967babbcd35ced44974cfe03cd2e5aebe9028ce4d98bc791`  
-		Last Modified: Fri, 20 Nov 2026 04:22:59 GMT  
-		Size: 32.8 MB (32798184 bytes)  
+	-	`sha256:0f5e89c451db13d673fb3027a303f17973799b36ac6d4219374775b800562b96`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
+		Size: 42.0 MB (42021595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:64adf76a0b7f2c9ab0724bbe89638c54c3432bc07fdd03b756f6b55753050cd3`  
-		Last Modified: Fri, 20 Nov 2026 04:22:58 GMT  
-		Size: 200.0 B  
+	-	`sha256:1405a3545b19a36406cb2ce5a4b1f47e8adc9dd12328c3309e875a834109c77d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:16 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:888ff860a0c1385ca4f54db22be78eff510ba32570c72ff3749a3623fb1874a7`  
-		Last Modified: Fri, 20 Nov 2026 04:22:58 GMT  
-		Size: 1.3 MB (1297061 bytes)  
+	-	`sha256:33be0cc698a2bafe50de4a46f677ab738d46ee38fdc64e5b88add1aa9480f85b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:17 GMT  
+		Size: 1.3 MB (1297081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3451a8c53b9ec0e9cab7e9e2240a166c96f1c5a1f0315a78e08adfca7dd085bb`  
-		Last Modified: Fri, 20 Nov 2026 04:22:59 GMT  
-		Size: 143.0 B  
+	-	`sha256:be191f69bbb0165aa5cc1f461fb83364a043dddd59346954fd7ad843a714afcc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:17 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-dev-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:d28c8de4b1c5e3d5ceff6fb62c7cb00e021141dbc9846f88fc85003d6fe9935b
+$ docker pull jruby@sha256:0b1b1716e2d5beabdfaa79ee792e86f3ed7e7a9eabc9c1a73e52636bcaa54cb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5295203 bytes)**  
+-	Total Size: **5.3 MB (5306054 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0882267013783be8b8550aaa29d4d4691f4c4f0fd9ed0bd1ea78b7d8bada9050`
+-	Image ID: `sha256:786d60ecf01eaddab666f85e5e9402a2475769de2ed2115e05dffd38916308d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041ef24d4f62aad40b86efac140ea5cf22302881ad0ff46bdb79d6f5e2f813f6`  
-		Last Modified: Fri, 20 Nov 2026 04:22:58 GMT  
-		Size: 5.3 MB (5276077 bytes)  
+	-	`sha256:6651dfd461d2fd121abfd8bc555f22530a6f0f3671700032f316ef3c90939fcd`  
+		Last Modified: Mon, 23 Nov 2026 23:10:17 GMT  
+		Size: 5.3 MB (5286928 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83618209c23ce18cdc132a396c8c8ca109a829912383d7a285bac353caa82b0f`  
-		Last Modified: Fri, 20 Nov 2026 04:22:58 GMT  
+	-	`sha256:def998447bd3448cadf324778bbfd19972cbfe81a4ecf379e69da7b0482d1fd9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:16 GMT  
 		Size: 19.1 KB (19126 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jdk`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28622,13 +28622,13 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 ### `jruby:9.4-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28661,29 +28661,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -28708,61 +28708,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28795,29 +28795,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -28842,55 +28842,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jdk11`
 
 ```console
-$ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164b33587c2a50
+$ docker pull jruby@sha256:1f9a9688ab7c9da9b73fec092abdd8b493b39ae2097f3b6cd756c3bbbb2eb692
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28903,13 +28903,13 @@ $ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164
 ### `jruby:9.4-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:07717f861e9e91a363dce69c529ed48480f6ffbcd4b0a4e56199b2e049fc035b
+$ docker pull jruby@sha256:4d272721072bd81d25a2996491b865655653893015dcc47dc0bb1cedb0f8e02e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.9 MB (231900328 bytes)**  
+-	Total Size: **230.4 MB (230424589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12721797603b833c045eada981df32b20db493d34fd8d70c4ea80d01e13cd891`
+-	Image ID: `sha256:b5b41cf9b6316e60778a718a8befa1f766ce3a29b2c85fcdadd8ccc71269bf1d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -28944,29 +28944,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:15:45 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:15 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 CMD ["irb"]
 ```
 
@@ -28991,61 +28991,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:00 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8badbc2eac43bc9f9c448162e294ada9322b6a7a718c19daca054828fb8824e8`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 5.7 MB (5690553 bytes)  
+	-	`sha256:98e1230746db07e74eaded77bb353afac95f27e3224771874f31289e18a23a73`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.7 MB (5690582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94d8287e645660ee23de3f2e53bd9fb4955124bd08803ff48d257102c5a918cc`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:63178862b1b16a5ccd397669ce7188be40e987097219b88fcdeee38e510ac5d3`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 31.3 MB (31317404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f6104d85c335810a6bb0414cff7fb6bdd035c4e60d1570a4121629c774f5073`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 195.0 B  
+	-	`sha256:b3fab685574eeca3c2139d201c5b94325bcc45a76323dc40015e1a4f411609a9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b36cac891424ee876f45b9cb3b5e6505c5a5a486d0111270ec07d2b932acd2a6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 1.3 MB (1297059 bytes)  
+	-	`sha256:d4f1cfed4edbb67e6e75c11c43ad7762e9687e57ee8bc855d4c873b69355e988`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 1.3 MB (1297074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21694d254a4813be9b0c525a5084e143330e8a3f14c83e9c603c2d4b2b6d7180`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 142.0 B  
+	-	`sha256:17d0f7c55023bcd8cd290caded89d9fb91f70338070a71d4e9e21ba5566ce069`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a5f668e3baea79b902aef2a628381dfb240721da6d87db4c1a00906c980c652c
+$ docker pull jruby@sha256:ac94e0322c332d76c68e6d08e1223b9791ebe71ad8a3377bd01db131fd9809bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5398141 bytes)**  
+-	Total Size: **5.4 MB (5398265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7599951354047c278641f2abe4e9e1d4401e2e94c560c73db477d3478d8b3ba`
+-	Image ID: `sha256:19a3a2a0cc213570be96672d9a8308963e9aa4262a62c3a9e33443c82df66ed3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e4705e3d0d2aa7e912970705664f4250794b56470c170cba26b74cc70ce244e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 5.4 MB (5379372 bytes)  
+	-	`sha256:3ec9f481b8a8d6cd23c14c628fa9af56d9455112e9f5fcaeb8f436c8827d5188`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.4 MB (5379496 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eca1b9a71f3169354f0b754bd767aba24e66cdf93ec0f5ada8dcdf124a641396`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
+	-	`sha256:f5e1d4658c89ee2164351da69ae742c69617e826a4c4fd15ba3bf4efbc429adc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 18.8 KB (18769 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:6107c4d72fee2400a9c748a8f7fc9885abbfa38c21a0b1145894eaeaf3202e0d
+$ docker pull jruby@sha256:7c0ede2d96e454e0bd40fa3bcdc3f17fc31d303f5a3c4c336590e7cd8856b987
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.3 MB (225327683 bytes)**  
+-	Total Size: **223.9 MB (223852131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:141aa2a088d0c1d1e0280bbae9295b37fc1e8e6bf18f60336ae79cb4c300b12a`
+-	Image ID: `sha256:00eaf0ab8204a60bf33d3b513342b97ed9299e4fb644bd0f42fc97d02e78d286`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -29080,29 +29080,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:16:33 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:54 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:25 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 CMD ["irb"]
 ```
 
@@ -29127,55 +29127,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:40 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55f4e94f539b2b0dc621e2e2344b4431748fafbe42231dd00813a6b6164c91d3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 4.6 MB (4557437 bytes)  
+	-	`sha256:91ce703c8728e401be5fb34515f07d85ef9f363ff2ede00dbc753e37fd2fc40f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 4.6 MB (4557662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:825d765cca95a07c694adce43d3c8f018316cfacf1187159c765aed30276ec80`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:e0ce671f96b00e49697e2885ab7ba2ecc0afe46d4ba5963a66bcb7b0074284ea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
+		Size: 31.3 MB (31317380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:632be8b0bdc7c21d04b8a1fbefb4cfa0ee5749485fbe95ee06bd71fd4cedc890`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
+	-	`sha256:75937551783fe13c3723364d8fb1b577537c164398509c7a0549a4ef99e906ed`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998d180977066e49241c24edf353c7aa0752ab305c95c329ecdfce3d23937920`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 1.3 MB (1297068 bytes)  
+	-	`sha256:ad01802ff64cf6132c0107b6a8e9727e4ea5a524a9088da0683a6e1f9dcced8d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 1.3 MB (1297064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6001fa35bc52d4c00751ed2ebd06e303018f8b9d43597de0ce1bc2dd193ea263`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
+	-	`sha256:63768419d8b771f6e70f4f665af0a5208904ca5913e8d015e6b92278daffa6a6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f1065826f7f59f6a35eee8421630db3bb066b4a7692b03ecac391b84df07e4b5
+$ docker pull jruby@sha256:4c1af9ac010bfef4b1d471580d31a53a5d1bb03336478f10a518542a542e0cd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5370329 bytes)**  
+-	Total Size: **5.4 MB (5370454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff829738414bff543fd2fdc9092ce04087c09fdbd921a6a28cde95982c7d4a4f`
+-	Image ID: `sha256:55068343d49644894f0e16f044f843dfed66b4194b5e8a60f4fc6da270cfbbae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:485e7baa8acbf9bd6911f47e710a86c8eedb0e0da846acb9c193c9bd61630977`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 5.4 MB (5351409 bytes)  
+	-	`sha256:1f63ec098061a63fe0890dc89f68c528278e18c5ab22588c233bd905982b4aa8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 5.4 MB (5351533 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac78793be6ad44b35e9a0b741dd0108398ee848aa84c6360b3433bfd5bc3980`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
-		Size: 18.9 KB (18920 bytes)  
+	-	`sha256:0d1596fcd99e4664c8943388e1bc61cdf7003fbbd3cdbded833ef6db18f5ddb0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 18.9 KB (18921 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jdk17`
 
 ```console
-$ docker pull jruby@sha256:5c8c5ae1ef813c9d2ef1fd5c923273f57f81bbf3e6746687508e449ea777a1dc
+$ docker pull jruby@sha256:b8ab73c36cfcb7c87467deeee9032b0b627d010db3f1544688fd3010c4fce41a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29188,13 +29188,13 @@ $ docker pull jruby@sha256:5c8c5ae1ef813c9d2ef1fd5c923273f57f81bbf3e6746687508e4
 ### `jruby:9.4-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:eda9c05ba23b1f245e8e95c63ef51769c18a1e73afab9b57410c171f2605ee32
+$ docker pull jruby@sha256:d3127219a42c9e79cee6fc8886be305eb6cb711bd3d32d3d0f83a14d0f5b695d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.6 MB (248590673 bytes)**  
+-	Total Size: **247.2 MB (247157529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34707ff1d11cde45407c1b9348032765904d47267bdb814ee6d66f3937252b98`
+-	Image ID: `sha256:54063279baf64f21daed0d24b6817ab504567f9f5ee9d17a1e7c098f91f8b110`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -29229,29 +29229,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:42:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:06 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 CMD ["irb"]
 ```
 
@@ -29276,49 +29276,49 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:08 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf6685518a7cb09972dd69f8897c89a812358654aa0ad0195311a294133420f4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.7 MB (5693018 bytes)  
+	-	`sha256:c767c7e7b60f663319678fc8f45fd1d2ffea3e2c328795522fc6c821b1003af0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 5.7 MB (5693049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6263a4ecba1be1d0a527b01b149dd5c9d1562295d348afd27c2f4ecc5e857f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:2b71508325e1686898b8f6e27d2d8b3885fe29c456bbab19718c6d070844d821`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 31.3 MB (31317388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7425fa843fa513326411974c54b658279559db09d2917ba4d0bc161c474de5`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 196.0 B  
+	-	`sha256:efd357b3e70f1aa2b10687ff6db6749a1c59c30450ff289e65f693e9713570fa`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49eb6ea96104bae188f1f5c8904e9de6b0c727136050fd5e97e34f7458f2f3b4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 13.2 MB (13246954 bytes)  
+	-	`sha256:1abdb958b828762301f7b950d8d37a77eaf36958a802a2b402b764bd065ea331`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 13.3 MB (13289524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16c4d0fa42c0a2eecc0824c3c98667c3c279717644ce04c758bb3427c1733a19`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 143.0 B  
+	-	`sha256:59a2936f8e59b2d93155075865c0136e63457090f0196dc0d029745593b18551`  
+		Last Modified: Mon, 23 Nov 2026 23:10:46 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a26daceb727ac1f95968ad572cc14e7820e277aeb503417c00a7e583704ed49e
+$ docker pull jruby@sha256:94cb333e12fedc6cf27900c21108969bbeb6f41d4ab99a0e6c97817c2ec60687
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5538449 bytes)**  
+-	Total Size: **5.5 MB (5538574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590ccd2e47935c896d28a9f5eb9ff4aa8da6a8efd91b3d9b9b5c0ca3868783c8`
+-	Image ID: `sha256:25711c3583734880e94bb668c7fcbd878aa40b434e83eb762e80dbd8ba1c29bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:81e237270a2ea1a647dbe8a957693fca057ba54b1ad528f307f755dd487d2c3c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.5 MB (5519582 bytes)  
+	-	`sha256:b530b87cf1275ce58a77687ffe4ab2f4f2ba78e4bf43cfb03623b7e4e31cf35f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 5.5 MB (5519706 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:141e01dc4c0a920b2af419b2fb3389f2e5de886074fa4dcf46c06c273843172b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 18.9 KB (18867 bytes)  
+	-	`sha256:a9c5484b067f97ec20f5e47f646cfbd888c8d47b09f9cf593743758aa5bc011f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk17` - linux; arm64 variant v8
@@ -29460,7 +29460,7 @@ $ docker pull jruby@sha256:88d4a28c535ce53ee70aa3b113759e1ba769022c7999f03b6c5db
 ## `jruby:9.4-jdk21`
 
 ```console
-$ docker pull jruby@sha256:3a8366f6a1537e4a53e9133b950ef421b352fc95268296cf0570ae8eda63dd78
+$ docker pull jruby@sha256:4dc0e413498a1249b1a23ec6c0e38414e7c8c37084c895162d38fd378a0e7ef3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29473,13 +29473,13 @@ $ docker pull jruby@sha256:3a8366f6a1537e4a53e9133b950ef421b352fc95268296cf0570a
 ### `jruby:9.4-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:4099c1ac939c023a35a95cff497bb16e46da0cc18c1ce0b0fe37bf46151a0d02
+$ docker pull jruby@sha256:6ec639583789fab56294f2f5c1c9d27010e6de1cabc08e2d388634e0724f3943
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260785060 bytes)**  
+-	Total Size: **259.4 MB (259381206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d2ee00457c4306a3c7df05d4ff0886c3c3f39e22f356ace08f37da237053eee`
+-	Image ID: `sha256:f4a2191b90bae5f99a601d2938735f2df21c61d690efb6d5890bde091ff503cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -29514,29 +29514,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:43:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:17 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 CMD ["irb"]
 ```
 
@@ -29561,48 +29561,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:09 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b654d8372932e3945c1bb4ead4948679e6e0acf5bd497bad89483f44d9a65d42`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.7 MB (5693132 bytes)  
+	-	`sha256:09494826cb2942218483c754b84726576e093d7b1fa44bafcb2510977f37705b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.7 MB (5693079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26edebed0592d4c03bffe163993509380ec7d6bdcae2a7e6afaa919300e2f2bf`  
-		Last Modified: Fri, 20 Nov 2026 17:58:37 GMT  
-		Size: 32.8 MB (32793134 bytes)  
+	-	`sha256:fac9ed5b66f7150aa0f3169cd32bb3f5a1dc463d0a6463c818ed48dfbebb5e44`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 31.3 MB (31317274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1e0d580eaa2952211d7909b6db2301d6a178f46b22fd2713a3860a61311af4b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 197.0 B  
+	-	`sha256:4066d7e803c79e070da5c4f2846dca414c154a3c86d5a34ebf462950a795160e`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b391fffe93d00caeeee4b66a17963b338a1988b298ab46877e6c23a8ab5520d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 13.1 MB (13111248 bytes)  
+	-	`sha256:4c2cd01cfece5fbdcb4884e03eea8cff7be99a1595a4ad8ec8eb97a6f87bebe2`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 13.2 MB (13183305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82b77b059cf494f97d32059cb6fff62120f651e3dbb447443136ec6a97a2fc81`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 143.0 B  
+	-	`sha256:bc5c72dc8ca1dc8cb7a19cc9a0feb4be8ae55c848f358c54a6c17f4558b2496d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e5915464c6219f3fda4d3ffe1b41af53737ee95eefd924ee756f4c8c00cdc86a
+$ docker pull jruby@sha256:b4abe43b1b63ef899fd966642ca067561dbc7a8e2625653ad43bd4048c0fa2f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5540302 bytes)**  
+-	Total Size: **5.5 MB (5540426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca6bcd3c98f51b5d9e8abddb3ed8e8e0ec048184a64ba8595f99f4835d926d41`
+-	Image ID: `sha256:1e7edf1bf416fbc25325b1346dc3a2f3649997909a5772049648af8c6618cb41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79a320693b1219c071b071cd13c26f5df972804df1ae26c2a4d11286e353cf32`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.5 MB (5521434 bytes)  
+	-	`sha256:1725fc824c100211ad47fc208ba04bc6732e38f29953b485d114b3393c5d6d75`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.5 MB (5521558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:284b7c4762b5dc4c765bc91de9c0a72f8f45f8a50d2c1e577803fb848510629b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:35 GMT  
+	-	`sha256:16f9f79670633c6ed20d86d672886686225cfee25b17588f204a2f5688372f0d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
 		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -29745,7 +29745,7 @@ $ docker pull jruby@sha256:82d4bf9b904504c09f2f95a509844439d6319c8d0495d43ab11e5
 ## `jruby:9.4-jdk25`
 
 ```console
-$ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec7303bf2e8d5
+$ docker pull jruby@sha256:7c814cea1aef37565502cf20336a469e68a8ca06f3b7c169ba7f8613b5911d28
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29758,13 +29758,13 @@ $ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec
 ### `jruby:9.4-jdk25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cfd357089af89efe5f85d1301ca0cc48549091e9f2e8ba426028e1418cca2f44
+$ docker pull jruby@sha256:2cece2e2bd72b959a57bba5fdb801b4b7ba25e82609e6bbd47cbcfd08b7a7799
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.6 MB (191608451 bytes)**  
+-	Total Size: **190.1 MB (190139551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc1edd5c18e7e6c434b5247c83d913c53da3bc8083ec3d2bb096788e0ffc5016`
+-	Image ID: `sha256:694a0934c5284513319ac4c85aa253c809b158f3c43007e5a0b5e608f7c29ae8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -29799,29 +29799,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:14 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -29846,61 +29846,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:31 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8682d47ab1477ac6e2021bf5fb7bfe49938237261bf9143d955e71a934292aa`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 6.9 MB (6863720 bytes)  
+	-	`sha256:673339370cc020366f26bf4ced238e9953500ec2097f47eaa5feca6244da91c7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 6.9 MB (6863705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d07a3e87071f527d6894292c10a02468d8ee7bf76f5f3ac4de0730736654976`  
-		Last Modified: Fri, 20 Nov 2026 17:47:48 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:cfa5913eaf26277c9ac55a2d5d6c5e50e32943383005123971c8e2291df7e123`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:799526e1c68019c1029f5b6c68722bb1677710e1ddc85b71df648648880f95fc`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 13.3 MB (13250058 bytes)  
+	-	`sha256:e6cbe00f6156b481c9438c0aa5395ee667385b637d6b99495bebad145f17fa2c`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.3 MB (13256946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39f9db83cefe5bb0c6f2b8be3ddc11f82995e9edb0f0c89595d53e7df78493e3`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:312c6c0d0bd8ed67c813374255f9e9eadd32b01765e57a35c67c18b8e2b01aa2
+$ docker pull jruby@sha256:b43ebd333bb73dd39f958b7a5361846be25f8dbd1b3909ea5827c54b40e35af7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5325418 bytes)**  
+-	Total Size: **5.3 MB (5325541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccd12a51edc543643bb2377f1e17c62a3387bc2ee04bd9e71bc2a8a17946e7b9`
+-	Image ID: `sha256:c910356bee8c6b38c3d2245bcd3181ec77d7cca57d5ae8da8183718f63ae823c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae9e3f224b2a1be44f3f9fb74b48911dce69f38881908d04e38d4c4fe069ea26`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 5.3 MB (5306554 bytes)  
+	-	`sha256:06e086c2ab5e6658e1940c9ec959fe04343b867a40b422e86a5d22be2bae4639`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 5.3 MB (5306678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:58705531ae2f8d05417cdd8eada67750ef14e64326f57a55409aeb55565642f0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 18.9 KB (18864 bytes)  
+	-	`sha256:ea159a80990897f505e3a8d61f5e6ae0fb132ec5caebf3f3e0e9b587ef9317a4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 18.9 KB (18863 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:16a187e2a7951b67508a787bd060c8e63340b56c4aab1d95cb9832dd565a2867
+$ docker pull jruby@sha256:a3bf9ecf5ad454a55f9501fbfabba6b81cd44b506750cd0c98022cfda989f713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188821015 bytes)**  
+-	Total Size: **187.4 MB (187369819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05968963f31e2ded7aeaf5ab888af0463951e987e4c038670f0fb578ffbd8410`
+-	Image ID: `sha256:d83282afc6cb711d260f0280536d6ead08621b19ff5c13ddee3799bda5bc2e2a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -29935,29 +29935,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:58 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:58 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 CMD ["irb"]
 ```
 
@@ -29982,55 +29982,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:14 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34cf75ba12de71b7a23b628c5c7d4d7d72033eb4642b53483212248fe0fbffc8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.7 MB (5723176 bytes)  
+	-	`sha256:1817dfacb448a0290b52b2701e2389abe792735bb6ea9c9fa2ee4f3ca5058b4b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.7 MB (5723343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddba6232c87694426d414dfdfd98706fa080018821d9ba9515cc478b6685fca9`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:44dbd40cafe2b1fd7e99ff1299b478a08cfa8d7ea248fca1f09dc263fa131dba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 31.3 MB (31317257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10a3e0194685fd1dd0e45232eda4cc5e3ea52a7f29b69dab3670010ec8d2068`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 196.0 B  
+	-	`sha256:c3f5dc001eef6a12fa33ee50fc030cd379519e05e37c44564c8c90e46f227247`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:096254317299ec6f926e90653c21a645c435990c47c9ee93af574ce4097d9671`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 13.3 MB (13294262 bytes)  
+	-	`sha256:0fd691e583be15b91fb2d80375dd68b54626345a78662ec15f72b84756fdd82d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 13.3 MB (13318793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f3d7b59e64ba614b4a0829af9378329a9e323a17f265a1c3228222a7d3c8eef`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 143.0 B  
+	-	`sha256:54847fb32606d5b977a542b3d31e145f5209600a23ffaddb8de0bf8894d47f94`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:86cc5a0692832e084a98d2f1697aa12a913260b1871f759da838f59eadc422ce
+$ docker pull jruby@sha256:2b2d9a550e9c47f1ee8d501ac0e74207b435c4bd157dfbbecfc130f636d2f6ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5392782 bytes)**  
+-	Total Size: **5.4 MB (5392906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3e0538c54b2fd68b72bf6dbf237cf8f09deca0a6891111757f4c9047cf095c5`
+-	Image ID: `sha256:c0ab174a1b345e308b8a5ddec40d0e3937e240bece7dcac0f435590a20cd8d2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69f720587605c292c048d250b4bd275d7253b3a0279d5faea4cb20cb94b543a8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.4 MB (5373766 bytes)  
+	-	`sha256:1e37908e9bef8e7e2caa569d68ce27fd6762aea3f07398554795f47d215f4eba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.4 MB (5373890 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e0a73e9829a6702f0c1c94cbad1fe159b541f2d458cf3328054779d98901c6e`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
+	-	`sha256:9c4be228b79544d2c1ff9a7e2facc976b2728576c6cc61ee18b1499ef9337422`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jdk8`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30043,13 +30043,13 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 ### `jruby:9.4-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30082,29 +30082,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -30129,61 +30129,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30216,29 +30216,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -30263,55 +30263,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jre`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30324,13 +30324,13 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 ### `jruby:9.4-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30363,29 +30363,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -30410,61 +30410,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30497,29 +30497,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -30544,55 +30544,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jre11`
 
 ```console
-$ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b711380018f5a711
+$ docker pull jruby@sha256:127625ef234e403547086dab120424c974f91ea851b2a62d80db854d4c7b8879
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30605,13 +30605,13 @@ $ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b7113
 ### `jruby:9.4-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cc5e2537326eea0f0f5b0399224fc3e5442edf237aa429fe00f97e941265b2b3
+$ docker pull jruby@sha256:270da91ba118b187ddd7ff0574bb853f8049a0f48350cc636ea2bddca3f126db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133321492 bytes)**  
+-	Total Size: **131.8 MB (131845750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c3f3ed67a5b5e4d505a8a88e364d08025953bff87d400168e1604be2e098a8`
+-	Image ID: `sha256:5aacb9a43bcf88807d54c24e9036f920eacf704b2aa2b536e66699fca926b50f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30644,29 +30644,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:18 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 CMD ["irb"]
 ```
 
@@ -30691,61 +30691,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:30 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:260fcbc238f80fa224140665632ea8ee8a0f080970268863798271932c026a1c`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.7 MB (5690572 bytes)  
+	-	`sha256:ff09d87e621fd1e616ce01fcc8c86760ff520c97e439b7daaf9dfa8b6e89f201`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.7 MB (5690530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965e0f7484712b5f5f881b64f336dd2340c0bf13b264633a0204fb1f432c7b64`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 32.8 MB (32793160 bytes)  
+	-	`sha256:084ccc3ea0382dd721230bf54102d1f00b16bace9e9741df25f61c71660916d5`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 31.3 MB (31317410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:841972911f6367fe756fbc2eb74ce405999148a8095b6047c8f19e800aa2204a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10bcdfb3191e144b744f8373887db09595bebe69b95d0f9f98b1178159a991fb`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 1.3 MB (1297044 bytes)  
+	-	`sha256:b93ad0f8391e31f60e2fdc77b2abe66fd9c93d654c28958298c7a1b8b1f5b8a0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 1.3 MB (1297091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 143.0 B  
+	-	`sha256:57f73d6ca9d49acbdd5b0a844282a3b2740480ca6395c459e7a9c6c5b3440392`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:d5544dcd77a353988e7ced8a935724858a6f49dfa550499759e79ee55a859b2f
+$ docker pull jruby@sha256:4d79176535ac8054af263116371732e51b760673b1f8f181a2698ca7881de980
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306961 bytes)**  
+-	Total Size: **5.3 MB (5307084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9a9dd8b029d7c2f49cb573a5c1d9eedf7a6be8cc31c00a852ff4bd9b37cb7a`
+-	Image ID: `sha256:843fea6bbcdf738feaa6ae88738fc5a8a854b99c636b094617703123789349e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cdf782d6de5cef689faaa4baed8db3c1ff53267204da567750fefade338461e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.3 MB (5288198 bytes)  
+	-	`sha256:c1429cd25108e5d72c6c6af27aec716c784ea4f31ec607c033dd34fe384d1282`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.3 MB (5288322 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8599a9bee39386d6e205771cfeb554a817f56a48098f978a0b41e869fa5ebed6`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 18.8 KB (18763 bytes)  
+	-	`sha256:87a9284fe9eeaa9a59d241dc3d9708824120c6a71f6620aa9c3ee0eba9bb2b7b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 18.8 KB (18762 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:56423efe18df163019b5199db0614b8432a0d5fade2dfd45e0d3d7f1d2e12088
+$ docker pull jruby@sha256:e33e18eb8c27b33762960f13637f42cbfb2c90bd57a6949dd61f3c027cfd5402
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128364817 bytes)**  
+-	Total Size: **126.9 MB (126889001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cff0b9ed065e5d8329607cd634bd575008af057724aaf7b0cf7f9f133deacf4d`
+-	Image ID: `sha256:360ff216af79afe3b1cb8fc5a06114cca7a1b99fef599e7e13e39886de4af2c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30778,29 +30778,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:51 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:46 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 CMD ["irb"]
 ```
 
@@ -30825,55 +30825,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:17:03 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f1237600d521207545f2e5941ca0e21786986b180d0ea8690b782907f9d89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 4.6 MB (4557633 bytes)  
+	-	`sha256:0ea05b65633739863d21af11b5a39bef5799dad562b0300c5b39ac321957cd63`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 4.6 MB (4557692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:907d0bb65e4273341413f0c0661f95a6c3b0e8881ea0b551dfddf05d15afd7fd`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 32.8 MB (32793190 bytes)  
+	-	`sha256:0e70aadbace0a1d57401d42aaab3c9365b34fa33c77aa04274f3f8bd27b1d264`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
+		Size: 31.3 MB (31317301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61cc0c7e0aa39d63881455c0774894844a79dff4d07b4fb263b180e401bb6cf7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 195.0 B  
+	-	`sha256:65d25e36918ead351f2e7eefc97c3390dd9c40d7916e3337b6535f9d53a032fe`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3c2a8821a77841322ec39202d7986de128a08ae5d89a6e7eee4558d1ce5cb0e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 1.3 MB (1297085 bytes)  
+	-	`sha256:2d3fcd2296bd6e564c0ce00dfed6c2b8ac65fc9f4032804bd101f0a11c813bb4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 1.3 MB (1297097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:8b9978cece086f72d53f2606e9ff032c9d9c02be75f853eb07fb3991376bbd08`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:798ea16e30290e2dfdd9824958fc06f32b5fb254d5eda21a356297c36d7599f1
+$ docker pull jruby@sha256:34637a6deecffedf6e6ceb4e3e548c25ad457155accd6802922aca65937ce968
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5279150 bytes)**  
+-	Total Size: **5.3 MB (5279274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:535c1dd7d00a6795f43a4173eb5e7ea0d1332ae1c8c76f91f76f5b8746cbb49f`
+-	Image ID: `sha256:24e1a10abd4ee3816eeff8ec3ba230d272364343da9a84f819fe801d4e747101`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b3c9e0d13a1c8a58e345399fbbc171765a22be0354b2f934c6dd8877bba6bfc3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 5.3 MB (5260235 bytes)  
+	-	`sha256:8f5ced1ccf25686c9f6d4681968a9dbf66151b11c02a5656284d814a42e826fd`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 5.3 MB (5260359 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d5b9e5992e4c7e989aa2e9353bb966b0862a07a302395c937e283f910c64ccf`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
+	-	`sha256:f6f9e7c6f6a43025b0a3a643a2f61e178b5211a65e2e10a29b0ccbafeb905160`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
 		Size: 18.9 KB (18915 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jre17`
 
 ```console
-$ docker pull jruby@sha256:7426e82743a0001860dc2cc497888d4907b07b490a8b4f8e03c3f556256e3519
+$ docker pull jruby@sha256:78432723538978d592b0a831d76c0ae0b4fb6372ebbd53ebd90cab239a6581ec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30886,13 +30886,13 @@ $ docker pull jruby@sha256:7426e82743a0001860dc2cc497888d4907b07b490a8b4f8e03c3f
 ### `jruby:9.4-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:150326c1b015708707dc84242666ee2903ed69a273d3c1c146f1def9caa6f239
+$ docker pull jruby@sha256:5bf1e6b11e85c6fa87e2681c255fd33fad17542105027a029c89654767017915
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.1 MB (145098861 bytes)**  
+-	Total Size: **143.7 MB (143675791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf497a53e15a4cf582e1579861e441508e9177839855f44117a8b4639817227`
+-	Image ID: `sha256:5412d99dfb36f258a461f7b91727e16a42ffb9119b6fffc1f05a7f65291124a8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -30925,29 +30925,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:43:16 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:12 GMT
+# Mon, 23 Nov 2026 23:10:24 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 CMD ["irb"]
 ```
 
@@ -30972,48 +30972,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:28 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ff386cf398cac67b7ed4da2b1705df93dab9a4d648a28802fa6329e6d183166`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 5.7 MB (5690589 bytes)  
+	-	`sha256:95e56325e94d053ddd288a740e5426575fcf1e36799348abe0a58c6fab56046d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.7 MB (5690632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f0c5c042239e98d6296f76d48dd7eb11418cbd790bc21a9ee45c9991c3cc70c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 32.8 MB (32793112 bytes)  
+	-	`sha256:feba631326842c0e790fa1d8478fdd538f3bb4e268146821dfab842c416933ff`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 31.3 MB (31317377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c0b9a9734f5f166eb5dbb591cb16ce8bd11a19c43f6991878864409fd9fa826`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 196.0 B  
+	-	`sha256:c7625f5220a466f0e1e410d739bebab069bfc1bddfe1fc7d3e81192715f4c552`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76ea7211f26da3ef29d442c7fd0d5d30bf7679e7b5ec3edb8a9fd74d236667e2`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 12.8 MB (12797809 bytes)  
+	-	`sha256:f06225d36c7762e2c61ef1d7d977313a28372e6e1928cd6bdabfc8aa2b67ba00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 12.9 MB (12850429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bef93865995f78a90403a013372d3765ffd5b5b34a67084400e4721792d85f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
+	-	`sha256:fca50a9f1032119c59710501be5576ae1640bcaf7925451f5d4becd1764d580f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:859b7cc31f49b2433f468180c78383e8845deb684ab42bb890631f4a6a367ddf
+$ docker pull jruby@sha256:94b113fa29172cec80edc5bdaef58fd3afbd999fc87a0e7244949860538c8a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5294577 bytes)**  
+-	Total Size: **5.3 MB (5294701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfc509b69fc0a6b9db01344383739846600d17f40f2b296e9097841a60d16ecc`
+-	Image ID: `sha256:57d3aa4c435f9ff744f7381c3ef633a6b31c7540ecbfb29ca107fa3075c00204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bc733dcc495e9c12ca612a31dc5792710e92138ad4f126abdf3b93312dd0092`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 5.3 MB (5275715 bytes)  
+	-	`sha256:5542035224a42ed9b0273eff71cfd9567d9b9fa13caacbc9dfbc5b16b5df2b01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.3 MB (5275839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff8a2279cac6345a5e6770bc1d56ecf75019bb21c8fc3acf939f2e66e5fd8fde`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
+	-	`sha256:9e8eb526030e4ae9650fb170c72e33b8fa12cb890e9311157d0cfeae1139412a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -31154,7 +31154,7 @@ $ docker pull jruby@sha256:b4ea40726aa7021227efe63ae401dfbacd63838016c9219d2f421
 ## `jruby:9.4-jre21`
 
 ```console
-$ docker pull jruby@sha256:f1f0c57b6557efcfe1332654eab9d53ee6ed272c99ae7a662c62eadb6565b3bc
+$ docker pull jruby@sha256:3f745141ba10330867b053bb968054f158db356384064cd969932c32d4f41e6f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31167,13 +31167,13 @@ $ docker pull jruby@sha256:f1f0c57b6557efcfe1332654eab9d53ee6ed272c99ae7a662c62e
 ### `jruby:9.4-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:3c65371d2abada6a0d6a11b21ac3a08a49a80def747dfa7999d19ce0c2045ad5
+$ docker pull jruby@sha256:617a6ab72d3d5a64340bcfd2cf441cf4138c867e6eaeffd0f5ea34b8c9c444ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.8 MB (150752920 bytes)**  
+-	Total Size: **149.3 MB (149345547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e197a8fd6d6d041e0989ae0d297e5b77bf1066fbcdab23f5db31264840f461a3`
+-	Image ID: `sha256:d73748d8d6139628fd71690cf1763e82ff89e008c55a675ec4a0b55add982700`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -31206,29 +31206,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:44:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:20 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 CMD ["irb"]
 ```
 
@@ -31253,48 +31253,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:17 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff5ce443e320ae41bf6f905d5672bd7fddce0d9bfb0c4c487b6becdcfdace24f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.7 MB (5690502 bytes)  
+	-	`sha256:0f6eeca8c1994a5190ac843f23c57301f104920d2b968a694f89e5f8b80ad238`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.7 MB (5690618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9064ca15d93197ae83cf0ecac08e55149be283db8d991a162bbc2503172bb195`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 32.8 MB (32793104 bytes)  
+	-	`sha256:42eb5740903358b90c201a323f2e60d1c5811c8b6b1e6c11a928f9acc55f3dc6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 31.3 MB (31317315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8109c945dd957e3cb7feaf2726c2bdcd481bd160fa9504ca9245568d417746d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
+	-	`sha256:3e2174f467a0e10bde044cc38206556bebc96a08e03f5565373746c731d7e5f9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d045ae2237128b81c6ff0f48b3c8fa7d137f879c9641c3e496869eaa5a1a0e05`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 12.9 MB (12853152 bytes)  
+	-	`sha256:a971b15cd27fac7cfdb627ad6d7436207cfc327eaba826f3d7f72ff6905e1bce`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 12.9 MB (12921450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aafd0fbf35079662f7feac21d038cf48e2fe930278f72845176f90630598c930`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 142.0 B  
+	-	`sha256:133431b206123548ff3ffedaaa068999954eaef5d23d3b979fb09c6d862b229d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7db2b16621245ea7d4e38f636ff7dc5360eed0a891471e2b9ecf63b7f9a06c39
+$ docker pull jruby@sha256:925153d6ce9fd8e4af49905f92f5bf8dd892d5c9f6204179b1c8f2b1b4952208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5295825 bytes)**  
+-	Total Size: **5.3 MB (5295949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b39fb0195073b2d5e0156227f92facb724816f95207822e8fc15135a020c6fb0`
+-	Image ID: `sha256:f643243412b0a7d58f61e0592683915c081a78c6844c656e2d603e08d10ada68`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a694c223a0837c2ef7d8346378dcce12832a66048d18639e6c0868d0b29568e`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.3 MB (5276963 bytes)  
+	-	`sha256:e83aa537f0c7e4e4a72172a3c12d55e3cd8ba6cea3249581b60205b810a68104`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.3 MB (5277087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b61932f88767f5f3fbb2e3c79b991372b306ffc83e76b8eb625fc20aa7cc0bba`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
+	-	`sha256:99076ae8570c11682d53347f9e218b83a9eb233ec529252ed5968f5650f9b867`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -31435,7 +31435,7 @@ $ docker pull jruby@sha256:bf0566514e636a8ca533137030848a29db644d2c885b694a10cb1
 ## `jruby:9.4-jre25`
 
 ```console
-$ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3f23433b62c0
+$ docker pull jruby@sha256:4148076038197384ce4fe68517fedad1c7b2c33699c4e993f731715d6e9f2d41
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31448,13 +31448,13 @@ $ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3
 ### `jruby:9.4-jre25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7566e65cd05115e732af9def1dfeeee156fc1b67f408aedd1f7ae3ab499136e2
+$ docker pull jruby@sha256:bdd25c59d09d68b5b3261bb91b5308415328c8cabe1b443bcb18fab5889045a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.1 MB (157124337 bytes)**  
+-	Total Size: **155.7 MB (155696029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0ef87fb482573a651dda41a3ae2bc070d63a895e4c6fa5e4a820cf1e7020b22`
+-	Image ID: `sha256:018db2da1474a1cdb478b9c1f6436f9e4b32ccc62d2fa55ad47b8ce3e1ba7473`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -31487,29 +31487,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -31534,61 +31534,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:27 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ee90526a3691a8717a9ee734f8afc51abe7a50e0da6e204a402edc2559b9e0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 6.9 MB (6861549 bytes)  
+	-	`sha256:5b405c165e871b5915224e4359f8910061da51b37e48ea89b495825a7fcd52f4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 6.9 MB (6861588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f30a8b42a224ac91d821c6de1bce58d25287dcfeb5876ea5d8c38ad15090915d`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:984a74d34c59e41a8c7739aeb3b6e38c15fbd9c17f96ca1f7a947b2e93aaf70d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c532b3b00ecd5d123d04102a4672e8e63bf7df53bd8b0e171cf803b1d0ee2387`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 12.9 MB (12946849 bytes)  
+	-	`sha256:056a08840982e349e57c37b6e83567fe51986a66247998d02355d5f1950cfd23`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.0 MB (12994292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a04fc5b0b81451354bbdc42e91c3db6d8d68a55c8f91a8d22edd2db841deac2`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 144.0 B  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a3e592405b4abbd121f7b342925858b6fdf285055f4540397d8f8eb5cb517eb
+$ docker pull jruby@sha256:26dce1049a15b9c74d5d04fef6de56212ff4a5532058184a67c3a24ef498974f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5121727 bytes)**  
+-	Total Size: **5.1 MB (5121851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:855760ea5dd88bccbcd97f8dcd31250600004a7924d83fe53d8eb0669d365e84`
+-	Image ID: `sha256:d4bcc23a1409965877fa01980c310032ce424946a1335521a165a21a836acb78`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d87dac5f6db8a454e9d336228709d1808836eb998ac46f30bdd06f0cd9a2839`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 5.1 MB (5102863 bytes)  
+	-	`sha256:d862760e01cebce62e9d1bd05fa7f0118b0f165e855ae43c8ed53cf0f055ceac`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 5.1 MB (5102987 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:850ddc1468c0fd928ca7a843b0843580826296fc314e9643bae5563b0ad52040`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
+	-	`sha256:b39c9b57993a3c51d66ffb41edecad6deefd025dcf52ae294dd2f7033fee536f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
 		Size: 18.9 KB (18864 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:794b9e022120af1aa1c9d888be62dd193afe9d1f7228ec8447cd905b0a87aaa6
+$ docker pull jruby@sha256:fde8b6b19e5717b714ddf8dd04ff24721e88fb87857815912ac8ad31713a96f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.8 MB (152773433 bytes)**  
+-	Total Size: **151.4 MB (151360777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4588408f095f0219b853f0db70bbccf354c6d188146777ca065a3bfefe9649a`
+-	Image ID: `sha256:1861fd78bdf0ab66c9abe4bcaa5364011a43bb0381989bd62b6113c069a93850`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -31621,29 +31621,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:54 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 CMD ["irb"]
 ```
 
@@ -31668,55 +31668,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:08 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d95f3fca9557dc3073e5be610e2fc762d5f855ddb77b4e0dbba013532e8bfaa7`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.7 MB (5720816 bytes)  
+	-	`sha256:eddd40acd5298dc42a2b1f9f314a6c0480b3c98496372dd2fe66ab669c14dc01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.7 MB (5720897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58ce61c4881557c17848c14a7d28685f194e2e66ad743934d986f5420b9dbdf`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 32.8 MB (32793089 bytes)  
+	-	`sha256:f1634f2a8b5fdcaf605c94a19e7aa81940ef13e7b2a90426c69c4e35b86881d6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bafce1ee91638e8bcfbed1622616f6b8b54925cffb1d6337a664963a5f1a777`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:6d8802ba18375973ae3a850c5cda3eca395916b39ae593829bc312f47036a1b1`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25ecbcbe42e81aad89c24ac61d194b165ada09149f59dd3041caf11c96600c73`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 13.0 MB (12977520 bytes)  
+	-	`sha256:3e44f373aa3a20214856d5f6d590a4b521eb532d3b948a60e92cb82677b6a568`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 13.0 MB (13040487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6ec787cd8a09bf90f98fc8ab76883b6c695fde7869e188c7c95784eaa0fdb2d`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
+	-	`sha256:9cf460349dcdbffe3bcc7d88b57cd648b505647e1a2701129abeb65481910be8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e61e114042b26f0ff476dbcfc3d9e6ff6369df48a523300d59e6b397f260cc21
+$ docker pull jruby@sha256:0178f4d3c7b016acc491aaaae94290c7aa33b48721ba5de3222b1e353941a28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5093289 bytes)**  
+-	Total Size: **5.1 MB (5093413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05449abda4d7fd3d0c770cbe5babe3f7274c9f794ecc96174499dddcd4ec81ff`
+-	Image ID: `sha256:d0fb20ab2bcd58f0c3c1afd718f67cfa8d6ee6fb80c8e044bb066d4c24c3f32d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e4ed3e9b195f7fcb240ba7c36b1dcc64d222782c7c1bc9d1f6396124feea2f3`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.1 MB (5074273 bytes)  
+	-	`sha256:b3172d6bead64c6f48e99f1e85056ccfdf48f8a627b285671e725e7443564962`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.1 MB (5074397 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b661a7a9ad62c21e337520582831c6ffd75b01042b60ed458cb5e53ecb3c731`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:16eab5cd1681c8eadc96bd1eb6b376de102ae4a8c1f33397729539b1f92a79b0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `jruby:9.4-jre8`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31729,13 +31729,13 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 ### `jruby:9.4-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -31768,29 +31768,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -31815,61 +31815,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jruby:9.4-jre8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -31902,29 +31902,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -31949,55 +31949,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jruby:9.4-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15`
+## `jruby:9.4.16`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32007,16 +32007,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15` - linux; amd64
+### `jruby:9.4.16` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32049,29 +32049,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -32096,61 +32096,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15` - unknown; unknown
+### `jruby:9.4.16` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15` - linux; arm64 variant v8
+### `jruby:9.4.16` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32183,29 +32183,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -32230,55 +32230,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15` - unknown; unknown
+### `jruby:9.4.16` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jdk`
+## `jruby:9.4.16-jdk`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32288,16 +32288,16 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jdk` - linux; amd64
+### `jruby:9.4.16-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32330,29 +32330,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -32377,61 +32377,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk` - unknown; unknown
+### `jruby:9.4.16-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk` - linux; arm64 variant v8
+### `jruby:9.4.16-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32464,29 +32464,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -32511,55 +32511,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk` - unknown; unknown
+### `jruby:9.4.16-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jdk11`
+## `jruby:9.4.16-jdk11`
 
 ```console
-$ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164b33587c2a50
+$ docker pull jruby@sha256:1f9a9688ab7c9da9b73fec092abdd8b493b39ae2097f3b6cd756c3bbbb2eb692
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32569,16 +32569,16 @@ $ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jdk11` - linux; amd64
+### `jruby:9.4.16-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:07717f861e9e91a363dce69c529ed48480f6ffbcd4b0a4e56199b2e049fc035b
+$ docker pull jruby@sha256:4d272721072bd81d25a2996491b865655653893015dcc47dc0bb1cedb0f8e02e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.9 MB (231900328 bytes)**  
+-	Total Size: **230.4 MB (230424589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12721797603b833c045eada981df32b20db493d34fd8d70c4ea80d01e13cd891`
+-	Image ID: `sha256:b5b41cf9b6316e60778a718a8befa1f766ce3a29b2c85fcdadd8ccc71269bf1d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32613,29 +32613,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:15:45 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:15 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 CMD ["irb"]
 ```
 
@@ -32660,61 +32660,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:00 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8badbc2eac43bc9f9c448162e294ada9322b6a7a718c19daca054828fb8824e8`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 5.7 MB (5690553 bytes)  
+	-	`sha256:98e1230746db07e74eaded77bb353afac95f27e3224771874f31289e18a23a73`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.7 MB (5690582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94d8287e645660ee23de3f2e53bd9fb4955124bd08803ff48d257102c5a918cc`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:63178862b1b16a5ccd397669ce7188be40e987097219b88fcdeee38e510ac5d3`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 31.3 MB (31317404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f6104d85c335810a6bb0414cff7fb6bdd035c4e60d1570a4121629c774f5073`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 195.0 B  
+	-	`sha256:b3fab685574eeca3c2139d201c5b94325bcc45a76323dc40015e1a4f411609a9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b36cac891424ee876f45b9cb3b5e6505c5a5a486d0111270ec07d2b932acd2a6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 1.3 MB (1297059 bytes)  
+	-	`sha256:d4f1cfed4edbb67e6e75c11c43ad7762e9687e57ee8bc855d4c873b69355e988`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 1.3 MB (1297074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21694d254a4813be9b0c525a5084e143330e8a3f14c83e9c603c2d4b2b6d7180`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 142.0 B  
+	-	`sha256:17d0f7c55023bcd8cd290caded89d9fb91f70338070a71d4e9e21ba5566ce069`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk11` - unknown; unknown
+### `jruby:9.4.16-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a5f668e3baea79b902aef2a628381dfb240721da6d87db4c1a00906c980c652c
+$ docker pull jruby@sha256:ac94e0322c332d76c68e6d08e1223b9791ebe71ad8a3377bd01db131fd9809bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5398141 bytes)**  
+-	Total Size: **5.4 MB (5398265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7599951354047c278641f2abe4e9e1d4401e2e94c560c73db477d3478d8b3ba`
+-	Image ID: `sha256:19a3a2a0cc213570be96672d9a8308963e9aa4262a62c3a9e33443c82df66ed3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e4705e3d0d2aa7e912970705664f4250794b56470c170cba26b74cc70ce244e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 5.4 MB (5379372 bytes)  
+	-	`sha256:3ec9f481b8a8d6cd23c14c628fa9af56d9455112e9f5fcaeb8f436c8827d5188`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.4 MB (5379496 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eca1b9a71f3169354f0b754bd767aba24e66cdf93ec0f5ada8dcdf124a641396`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
+	-	`sha256:f5e1d4658c89ee2164351da69ae742c69617e826a4c4fd15ba3bf4efbc429adc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 18.8 KB (18769 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk11` - linux; arm64 variant v8
+### `jruby:9.4.16-jdk11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:6107c4d72fee2400a9c748a8f7fc9885abbfa38c21a0b1145894eaeaf3202e0d
+$ docker pull jruby@sha256:7c0ede2d96e454e0bd40fa3bcdc3f17fc31d303f5a3c4c336590e7cd8856b987
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.3 MB (225327683 bytes)**  
+-	Total Size: **223.9 MB (223852131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:141aa2a088d0c1d1e0280bbae9295b37fc1e8e6bf18f60336ae79cb4c300b12a`
+-	Image ID: `sha256:00eaf0ab8204a60bf33d3b513342b97ed9299e4fb644bd0f42fc97d02e78d286`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32749,29 +32749,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:16:33 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:54 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:25 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 CMD ["irb"]
 ```
 
@@ -32796,74 +32796,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:40 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55f4e94f539b2b0dc621e2e2344b4431748fafbe42231dd00813a6b6164c91d3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 4.6 MB (4557437 bytes)  
+	-	`sha256:91ce703c8728e401be5fb34515f07d85ef9f363ff2ede00dbc753e37fd2fc40f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 4.6 MB (4557662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:825d765cca95a07c694adce43d3c8f018316cfacf1187159c765aed30276ec80`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:e0ce671f96b00e49697e2885ab7ba2ecc0afe46d4ba5963a66bcb7b0074284ea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
+		Size: 31.3 MB (31317380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:632be8b0bdc7c21d04b8a1fbefb4cfa0ee5749485fbe95ee06bd71fd4cedc890`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
+	-	`sha256:75937551783fe13c3723364d8fb1b577537c164398509c7a0549a4ef99e906ed`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998d180977066e49241c24edf353c7aa0752ab305c95c329ecdfce3d23937920`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 1.3 MB (1297068 bytes)  
+	-	`sha256:ad01802ff64cf6132c0107b6a8e9727e4ea5a524a9088da0683a6e1f9dcced8d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 1.3 MB (1297064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6001fa35bc52d4c00751ed2ebd06e303018f8b9d43597de0ce1bc2dd193ea263`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
+	-	`sha256:63768419d8b771f6e70f4f665af0a5208904ca5913e8d015e6b92278daffa6a6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk11` - unknown; unknown
+### `jruby:9.4.16-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f1065826f7f59f6a35eee8421630db3bb066b4a7692b03ecac391b84df07e4b5
+$ docker pull jruby@sha256:4c1af9ac010bfef4b1d471580d31a53a5d1bb03336478f10a518542a542e0cd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5370329 bytes)**  
+-	Total Size: **5.4 MB (5370454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff829738414bff543fd2fdc9092ce04087c09fdbd921a6a28cde95982c7d4a4f`
+-	Image ID: `sha256:55068343d49644894f0e16f044f843dfed66b4194b5e8a60f4fc6da270cfbbae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:485e7baa8acbf9bd6911f47e710a86c8eedb0e0da846acb9c193c9bd61630977`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 5.4 MB (5351409 bytes)  
+	-	`sha256:1f63ec098061a63fe0890dc89f68c528278e18c5ab22588c233bd905982b4aa8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 5.4 MB (5351533 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac78793be6ad44b35e9a0b741dd0108398ee848aa84c6360b3433bfd5bc3980`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
-		Size: 18.9 KB (18920 bytes)  
+	-	`sha256:0d1596fcd99e4664c8943388e1bc61cdf7003fbbd3cdbded833ef6db18f5ddb0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 18.9 KB (18921 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jdk17`
+## `jruby:9.4.16-jdk17`
 
 ```console
-$ docker pull jruby@sha256:5c8c5ae1ef813c9d2ef1fd5c923273f57f81bbf3e6746687508e449ea777a1dc
+$ docker pull jruby@sha256:5e470e93cd2473adab6351a5dd59275b90bd2d3eefcd86ddf35ef5e23fa78118
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15-jdk17` - linux; amd64
+### `jruby:9.4.16-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:eda9c05ba23b1f245e8e95c63ef51769c18a1e73afab9b57410c171f2605ee32
+$ docker pull jruby@sha256:d3127219a42c9e79cee6fc8886be305eb6cb711bd3d32d3d0f83a14d0f5b695d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.6 MB (248590673 bytes)**  
+-	Total Size: **247.2 MB (247157529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34707ff1d11cde45407c1b9348032765904d47267bdb814ee6d66f3937252b98`
+-	Image ID: `sha256:54063279baf64f21daed0d24b6817ab504567f9f5ee9d17a1e7c098f91f8b110`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -32898,29 +32896,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:42:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:06 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 CMD ["irb"]
 ```
 
@@ -32945,210 +32943,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:08 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf6685518a7cb09972dd69f8897c89a812358654aa0ad0195311a294133420f4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.7 MB (5693018 bytes)  
+	-	`sha256:c767c7e7b60f663319678fc8f45fd1d2ffea3e2c328795522fc6c821b1003af0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 5.7 MB (5693049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6263a4ecba1be1d0a527b01b149dd5c9d1562295d348afd27c2f4ecc5e857f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:2b71508325e1686898b8f6e27d2d8b3885fe29c456bbab19718c6d070844d821`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 31.3 MB (31317388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7425fa843fa513326411974c54b658279559db09d2917ba4d0bc161c474de5`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 196.0 B  
+	-	`sha256:efd357b3e70f1aa2b10687ff6db6749a1c59c30450ff289e65f693e9713570fa`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49eb6ea96104bae188f1f5c8904e9de6b0c727136050fd5e97e34f7458f2f3b4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 13.2 MB (13246954 bytes)  
+	-	`sha256:1abdb958b828762301f7b950d8d37a77eaf36958a802a2b402b764bd065ea331`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 13.3 MB (13289524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16c4d0fa42c0a2eecc0824c3c98667c3c279717644ce04c758bb3427c1733a19`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 143.0 B  
+	-	`sha256:59a2936f8e59b2d93155075865c0136e63457090f0196dc0d029745593b18551`  
+		Last Modified: Mon, 23 Nov 2026 23:10:46 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk17` - unknown; unknown
+### `jruby:9.4.16-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a26daceb727ac1f95968ad572cc14e7820e277aeb503417c00a7e583704ed49e
+$ docker pull jruby@sha256:94cb333e12fedc6cf27900c21108969bbeb6f41d4ab99a0e6c97817c2ec60687
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5538449 bytes)**  
+-	Total Size: **5.5 MB (5538574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590ccd2e47935c896d28a9f5eb9ff4aa8da6a8efd91b3d9b9b5c0ca3868783c8`
+-	Image ID: `sha256:25711c3583734880e94bb668c7fcbd878aa40b434e83eb762e80dbd8ba1c29bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:81e237270a2ea1a647dbe8a957693fca057ba54b1ad528f307f755dd487d2c3c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.5 MB (5519582 bytes)  
+	-	`sha256:b530b87cf1275ce58a77687ffe4ab2f4f2ba78e4bf43cfb03623b7e4e31cf35f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 5.5 MB (5519706 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:141e01dc4c0a920b2af419b2fb3389f2e5de886074fa4dcf46c06c273843172b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 18.9 KB (18867 bytes)  
+	-	`sha256:a9c5484b067f97ec20f5e47f646cfbd888c8d47b09f9cf593743758aa5bc011f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk17` - linux; arm64 variant v8
+## `jruby:9.4.16-jdk21`
 
 ```console
-$ docker pull jruby@sha256:63f422c46a211a8f26f11265430541c198e8b27f976f3003cf03768bd8020de5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.7 MB (245718594 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac26686f2d29812e05df042ebbfaab75125b2905c5105c22daba3c2a2b7e34c`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:48 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV JAVA_VERSION=jdk-17.0.21+9
-# Fri, 20 Nov 2026 03:16:58 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 03:17:00 GMT
-CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:21 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:21 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:22 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:29 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:30 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:30 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccb3651b0412a707feec155d00bbb62a65d6db7475fa2cef82aee5835748855f`  
-		Last Modified: Fri, 20 Nov 2026 03:17:17 GMT  
-		Size: 22.1 MB (22080597 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c900a8e3a522595b3082f3e7b5fa43473e8477db408e88ff271782cabb92a1f`  
-		Last Modified: Fri, 20 Nov 2026 03:17:20 GMT  
-		Size: 145.0 MB (144967790 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a2ed6a35713e34bdb1dec3c982915ae9c8dc299bc1aa345689d0b40e5e076a1`  
-		Last Modified: Fri, 20 Nov 2026 03:17:16 GMT  
-		Size: 160.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d852158187e54e7625fcf79e37932ca744947162e9c40146a4966ddf124e4b03`  
-		Last Modified: Fri, 20 Nov 2026 03:17:16 GMT  
-		Size: 2.5 KB (2463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6569d47bde2e440d4c8661fba59c880ba6a9ea0fff876fc8bbafc90e6714be9`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 4.6 MB (4559733 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9aa37b1608831fb02b69b71d02bb90e905ecded5c2717ce59cbc080950f5546`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 32.8 MB (32793190 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0195492e759aecef67ce89abca034d68b40cc94a4ebc51b7cdd2ca330d30f79`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 197.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d72507197bb6c7cebe8350e36e86db1905f2b98e1cd87fbe609f0539eb4c7d32`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 13.3 MB (13312921 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7abcab21dcda28abf2360744bef95324f730b779bb30356d4f35d72f2e218731`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15-jdk17` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:88d4a28c535ce53ee70aa3b113759e1ba769022c7999f03b6c5db0b4d270dcc4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5605805 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:640158f92081ecaa7d21145d3230cfc9c2f976e96d7224422b2688156f1dcfef`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:17c57b29602efa4421461a34ac12687e284ffdf3947b00da881c80e7453367c8`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 5.6 MB (5586795 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5e3ccde4d5fd617a5cda863568fc1f60b1af5f3e5e0c6b1bbe535ec4b118d420`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 19.0 KB (19010 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15-jdk21`
-
-```console
-$ docker pull jruby@sha256:3a8366f6a1537e4a53e9133b950ef421b352fc95268296cf0570ae8eda63dd78
+$ docker pull jruby@sha256:4370e46fd0c3cfa2c01e81116f1a27fc9b9588df10dc2cf2bb717b53a3eebeda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15-jdk21` - linux; amd64
+### `jruby:9.4.16-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:4099c1ac939c023a35a95cff497bb16e46da0cc18c1ce0b0fe37bf46151a0d02
+$ docker pull jruby@sha256:6ec639583789fab56294f2f5c1c9d27010e6de1cabc08e2d388634e0724f3943
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260785060 bytes)**  
+-	Total Size: **259.4 MB (259381206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d2ee00457c4306a3c7df05d4ff0886c3c3f39e22f356ace08f37da237053eee`
+-	Image ID: `sha256:f4a2191b90bae5f99a601d2938735f2df21c61d690efb6d5890bde091ff503cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -33183,29 +33043,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:43:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:17 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 CMD ["irb"]
 ```
 
@@ -33230,191 +33090,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:09 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b654d8372932e3945c1bb4ead4948679e6e0acf5bd497bad89483f44d9a65d42`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.7 MB (5693132 bytes)  
+	-	`sha256:09494826cb2942218483c754b84726576e093d7b1fa44bafcb2510977f37705b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.7 MB (5693079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26edebed0592d4c03bffe163993509380ec7d6bdcae2a7e6afaa919300e2f2bf`  
-		Last Modified: Fri, 20 Nov 2026 17:58:37 GMT  
-		Size: 32.8 MB (32793134 bytes)  
+	-	`sha256:fac9ed5b66f7150aa0f3169cd32bb3f5a1dc463d0a6463c818ed48dfbebb5e44`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 31.3 MB (31317274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1e0d580eaa2952211d7909b6db2301d6a178f46b22fd2713a3860a61311af4b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 197.0 B  
+	-	`sha256:4066d7e803c79e070da5c4f2846dca414c154a3c86d5a34ebf462950a795160e`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b391fffe93d00caeeee4b66a17963b338a1988b298ab46877e6c23a8ab5520d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 13.1 MB (13111248 bytes)  
+	-	`sha256:4c2cd01cfece5fbdcb4884e03eea8cff7be99a1595a4ad8ec8eb97a6f87bebe2`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 13.2 MB (13183305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82b77b059cf494f97d32059cb6fff62120f651e3dbb447443136ec6a97a2fc81`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 143.0 B  
+	-	`sha256:bc5c72dc8ca1dc8cb7a19cc9a0feb4be8ae55c848f358c54a6c17f4558b2496d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk21` - unknown; unknown
+### `jruby:9.4.16-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e5915464c6219f3fda4d3ffe1b41af53737ee95eefd924ee756f4c8c00cdc86a
+$ docker pull jruby@sha256:b4abe43b1b63ef899fd966642ca067561dbc7a8e2625653ad43bd4048c0fa2f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5540302 bytes)**  
+-	Total Size: **5.5 MB (5540426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca6bcd3c98f51b5d9e8abddb3ed8e8e0ec048184a64ba8595f99f4835d926d41`
+-	Image ID: `sha256:1e7edf1bf416fbc25325b1346dc3a2f3649997909a5772049648af8c6618cb41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79a320693b1219c071b071cd13c26f5df972804df1ae26c2a4d11286e353cf32`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.5 MB (5521434 bytes)  
+	-	`sha256:1725fc824c100211ad47fc208ba04bc6732e38f29953b485d114b3393c5d6d75`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.5 MB (5521558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:284b7c4762b5dc4c765bc91de9c0a72f8f45f8a50d2c1e577803fb848510629b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:35 GMT  
+	-	`sha256:16f9f79670633c6ed20d86d672886686225cfee25b17588f204a2f5688372f0d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
 		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk21` - linux; arm64 variant v8
+## `jruby:9.4.16-jdk25`
 
 ```console
-$ docker pull jruby@sha256:a631d428d0e21df1134882cd6c26801284be0dfa2becfab2f8464351ad40da60
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.3 MB (257347658 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:affbc61070498d0671781830b1135209723344b36d1cd60354b1b1a6770a3cde`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:17:24 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV JAVA_VERSION=jdk-21.0.13+9
-# Fri, 20 Nov 2026 03:17:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d7f5d5cf865a2902b70ff549b97586a7d3f234e016f041ab447ea740c7d66d1c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.13_9.tar.gz';          ;;        arm64)          ESUM='e3522e707fc7dbe2a72c30746b1e7068301a0213ecd213d4491f35a14eb55578';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.13_9.tar.gz';          ;;        ppc64el)          ESUM='cfaedcc659213833ead9c2a50987d8dcbd0e7a2d82217abb43acb64c0dd3d8cc';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.13_9.tar.gz';          ;;        s390x)          ESUM='597271ef81f7e4d0e2b86aa6e4d484af194253bdf238908a8394b78970dff713';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.13_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 03:17:38 GMT
-CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:33 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:42 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17d5f41944e7c26ff86012725668b1f33bc6142ca773cc733a66b30ec5bbefa9`  
-		Last Modified: Fri, 20 Nov 2026 03:17:57 GMT  
-		Size: 22.1 MB (22080656 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd48ffa453c5f5a82cdcc188709a96da68fa3cdcefe6a519550da643c91067ac`  
-		Last Modified: Fri, 20 Nov 2026 03:17:59 GMT  
-		Size: 156.7 MB (156699398 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2eb8af90ac559d9065b4f7dfb9fc6940d08c7e8f8b63820f49cf1a27b2dd47f3`  
-		Last Modified: Fri, 20 Nov 2026 03:17:56 GMT  
-		Size: 160.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bff75ba61adaf2a47149bae71a6f622c7f47b647be8843faa1d291bc16736f3d`  
-		Last Modified: Fri, 20 Nov 2026 03:17:56 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2450ea6247dffe12a1826aa7e0516905a170b28ba7b6ce5f72f72b65576bd8e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 4.6 MB (4559906 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a63ce6c7c573d24824e4f9fb630b8c4f63b2c8e9b87d042fe16969f720cb915a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 32.8 MB (32793216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57f71ede27a0c4acf6bf78c9ed5b57a52733543a4600ae1adf4119330a477e25`  
-		Last Modified: Fri, 20 Nov 2026 04:21:47 GMT  
-		Size: 198.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cca7896c3698f5b45a9b838f53345b907930613c07d0f69a2f14c91297ba091`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 13.2 MB (13210117 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf3120d1fcd8d2014f7cf225b4dec66c0c03daca7cd99387f96fd12bb43e9bc`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15-jdk21` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:82d4bf9b904504c09f2f95a509844439d6319c8d0495d43ab11e592b3ee22f4c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5607656 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef4b0a4f5eee5bacdeda1629b6565c26afd94e84f2dc4e465a6746556f456b6b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:f53fc49edd91ac07f2b7685612a71b67802463ce417bd8d34a3daf7182e8fce9`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 5.6 MB (5588647 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:16c52731fa6b9c11e9e93f93cdf1fd5507a6250623f71c29bcbd85647f041764`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 19.0 KB (19009 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15-jdk25`
-
-```console
-$ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec7303bf2e8d5
+$ docker pull jruby@sha256:7c814cea1aef37565502cf20336a469e68a8ca06f3b7c169ba7f8613b5911d28
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33424,16 +33148,16 @@ $ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jdk25` - linux; amd64
+### `jruby:9.4.16-jdk25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cfd357089af89efe5f85d1301ca0cc48549091e9f2e8ba426028e1418cca2f44
+$ docker pull jruby@sha256:2cece2e2bd72b959a57bba5fdb801b4b7ba25e82609e6bbd47cbcfd08b7a7799
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.6 MB (191608451 bytes)**  
+-	Total Size: **190.1 MB (190139551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc1edd5c18e7e6c434b5247c83d913c53da3bc8083ec3d2bb096788e0ffc5016`
+-	Image ID: `sha256:694a0934c5284513319ac4c85aa253c809b158f3c43007e5a0b5e608f7c29ae8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -33468,29 +33192,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:14 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -33515,61 +33239,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:31 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8682d47ab1477ac6e2021bf5fb7bfe49938237261bf9143d955e71a934292aa`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 6.9 MB (6863720 bytes)  
+	-	`sha256:673339370cc020366f26bf4ced238e9953500ec2097f47eaa5feca6244da91c7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 6.9 MB (6863705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d07a3e87071f527d6894292c10a02468d8ee7bf76f5f3ac4de0730736654976`  
-		Last Modified: Fri, 20 Nov 2026 17:47:48 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:cfa5913eaf26277c9ac55a2d5d6c5e50e32943383005123971c8e2291df7e123`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:799526e1c68019c1029f5b6c68722bb1677710e1ddc85b71df648648880f95fc`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 13.3 MB (13250058 bytes)  
+	-	`sha256:e6cbe00f6156b481c9438c0aa5395ee667385b637d6b99495bebad145f17fa2c`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.3 MB (13256946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39f9db83cefe5bb0c6f2b8be3ddc11f82995e9edb0f0c89595d53e7df78493e3`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk25` - unknown; unknown
+### `jruby:9.4.16-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:312c6c0d0bd8ed67c813374255f9e9eadd32b01765e57a35c67c18b8e2b01aa2
+$ docker pull jruby@sha256:b43ebd333bb73dd39f958b7a5361846be25f8dbd1b3909ea5827c54b40e35af7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5325418 bytes)**  
+-	Total Size: **5.3 MB (5325541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccd12a51edc543643bb2377f1e17c62a3387bc2ee04bd9e71bc2a8a17946e7b9`
+-	Image ID: `sha256:c910356bee8c6b38c3d2245bcd3181ec77d7cca57d5ae8da8183718f63ae823c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae9e3f224b2a1be44f3f9fb74b48911dce69f38881908d04e38d4c4fe069ea26`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 5.3 MB (5306554 bytes)  
+	-	`sha256:06e086c2ab5e6658e1940c9ec959fe04343b867a40b422e86a5d22be2bae4639`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 5.3 MB (5306678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:58705531ae2f8d05417cdd8eada67750ef14e64326f57a55409aeb55565642f0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 18.9 KB (18864 bytes)  
+	-	`sha256:ea159a80990897f505e3a8d61f5e6ae0fb132ec5caebf3f3e0e9b587ef9317a4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 18.9 KB (18863 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk25` - linux; arm64 variant v8
+### `jruby:9.4.16-jdk25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:16a187e2a7951b67508a787bd060c8e63340b56c4aab1d95cb9832dd565a2867
+$ docker pull jruby@sha256:a3bf9ecf5ad454a55f9501fbfabba6b81cd44b506750cd0c98022cfda989f713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188821015 bytes)**  
+-	Total Size: **187.4 MB (187369819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05968963f31e2ded7aeaf5ab888af0463951e987e4c038670f0fb578ffbd8410`
+-	Image ID: `sha256:d83282afc6cb711d260f0280536d6ead08621b19ff5c13ddee3799bda5bc2e2a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -33604,29 +33328,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:58 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:58 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 CMD ["irb"]
 ```
 
@@ -33651,55 +33375,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:14 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34cf75ba12de71b7a23b628c5c7d4d7d72033eb4642b53483212248fe0fbffc8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.7 MB (5723176 bytes)  
+	-	`sha256:1817dfacb448a0290b52b2701e2389abe792735bb6ea9c9fa2ee4f3ca5058b4b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.7 MB (5723343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddba6232c87694426d414dfdfd98706fa080018821d9ba9515cc478b6685fca9`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:44dbd40cafe2b1fd7e99ff1299b478a08cfa8d7ea248fca1f09dc263fa131dba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 31.3 MB (31317257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10a3e0194685fd1dd0e45232eda4cc5e3ea52a7f29b69dab3670010ec8d2068`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 196.0 B  
+	-	`sha256:c3f5dc001eef6a12fa33ee50fc030cd379519e05e37c44564c8c90e46f227247`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:096254317299ec6f926e90653c21a645c435990c47c9ee93af574ce4097d9671`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 13.3 MB (13294262 bytes)  
+	-	`sha256:0fd691e583be15b91fb2d80375dd68b54626345a78662ec15f72b84756fdd82d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 13.3 MB (13318793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f3d7b59e64ba614b4a0829af9378329a9e323a17f265a1c3228222a7d3c8eef`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 143.0 B  
+	-	`sha256:54847fb32606d5b977a542b3d31e145f5209600a23ffaddb8de0bf8894d47f94`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk25` - unknown; unknown
+### `jruby:9.4.16-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:86cc5a0692832e084a98d2f1697aa12a913260b1871f759da838f59eadc422ce
+$ docker pull jruby@sha256:2b2d9a550e9c47f1ee8d501ac0e74207b435c4bd157dfbbecfc130f636d2f6ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5392782 bytes)**  
+-	Total Size: **5.4 MB (5392906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3e0538c54b2fd68b72bf6dbf237cf8f09deca0a6891111757f4c9047cf095c5`
+-	Image ID: `sha256:c0ab174a1b345e308b8a5ddec40d0e3937e240bece7dcac0f435590a20cd8d2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69f720587605c292c048d250b4bd275d7253b3a0279d5faea4cb20cb94b543a8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.4 MB (5373766 bytes)  
+	-	`sha256:1e37908e9bef8e7e2caa569d68ce27fd6762aea3f07398554795f47d215f4eba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.4 MB (5373890 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e0a73e9829a6702f0c1c94cbad1fe159b541f2d458cf3328054779d98901c6e`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
+	-	`sha256:9c4be228b79544d2c1ff9a7e2facc976b2728576c6cc61ee18b1499ef9337422`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jdk8`
+## `jruby:9.4.16-jdk8`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33709,16 +33433,16 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jdk8` - linux; amd64
+### `jruby:9.4.16-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -33751,29 +33475,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -33798,61 +33522,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk8` - unknown; unknown
+### `jruby:9.4.16-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jdk8` - linux; arm64 variant v8
+### `jruby:9.4.16-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -33885,29 +33609,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -33932,55 +33656,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jdk8` - unknown; unknown
+### `jruby:9.4.16-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jre`
+## `jruby:9.4.16-jre`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33990,16 +33714,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jre` - linux; amd64
+### `jruby:9.4.16-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34032,29 +33756,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -34079,61 +33803,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre` - unknown; unknown
+### `jruby:9.4.16-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre` - linux; arm64 variant v8
+### `jruby:9.4.16-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34166,29 +33890,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -34213,55 +33937,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre` - unknown; unknown
+### `jruby:9.4.16-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jre11`
+## `jruby:9.4.16-jre11`
 
 ```console
-$ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b711380018f5a711
+$ docker pull jruby@sha256:127625ef234e403547086dab120424c974f91ea851b2a62d80db854d4c7b8879
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34271,16 +33995,16 @@ $ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b7113
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jre11` - linux; amd64
+### `jruby:9.4.16-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cc5e2537326eea0f0f5b0399224fc3e5442edf237aa429fe00f97e941265b2b3
+$ docker pull jruby@sha256:270da91ba118b187ddd7ff0574bb853f8049a0f48350cc636ea2bddca3f126db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133321492 bytes)**  
+-	Total Size: **131.8 MB (131845750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c3f3ed67a5b5e4d505a8a88e364d08025953bff87d400168e1604be2e098a8`
+-	Image ID: `sha256:5aacb9a43bcf88807d54c24e9036f920eacf704b2aa2b536e66699fca926b50f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34313,29 +34037,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:18 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 CMD ["irb"]
 ```
 
@@ -34360,61 +34084,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:30 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:260fcbc238f80fa224140665632ea8ee8a0f080970268863798271932c026a1c`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.7 MB (5690572 bytes)  
+	-	`sha256:ff09d87e621fd1e616ce01fcc8c86760ff520c97e439b7daaf9dfa8b6e89f201`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.7 MB (5690530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965e0f7484712b5f5f881b64f336dd2340c0bf13b264633a0204fb1f432c7b64`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 32.8 MB (32793160 bytes)  
+	-	`sha256:084ccc3ea0382dd721230bf54102d1f00b16bace9e9741df25f61c71660916d5`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 31.3 MB (31317410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:841972911f6367fe756fbc2eb74ce405999148a8095b6047c8f19e800aa2204a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10bcdfb3191e144b744f8373887db09595bebe69b95d0f9f98b1178159a991fb`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 1.3 MB (1297044 bytes)  
+	-	`sha256:b93ad0f8391e31f60e2fdc77b2abe66fd9c93d654c28958298c7a1b8b1f5b8a0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 1.3 MB (1297091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 143.0 B  
+	-	`sha256:57f73d6ca9d49acbdd5b0a844282a3b2740480ca6395c459e7a9c6c5b3440392`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre11` - unknown; unknown
+### `jruby:9.4.16-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:d5544dcd77a353988e7ced8a935724858a6f49dfa550499759e79ee55a859b2f
+$ docker pull jruby@sha256:4d79176535ac8054af263116371732e51b760673b1f8f181a2698ca7881de980
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306961 bytes)**  
+-	Total Size: **5.3 MB (5307084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9a9dd8b029d7c2f49cb573a5c1d9eedf7a6be8cc31c00a852ff4bd9b37cb7a`
+-	Image ID: `sha256:843fea6bbcdf738feaa6ae88738fc5a8a854b99c636b094617703123789349e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cdf782d6de5cef689faaa4baed8db3c1ff53267204da567750fefade338461e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.3 MB (5288198 bytes)  
+	-	`sha256:c1429cd25108e5d72c6c6af27aec716c784ea4f31ec607c033dd34fe384d1282`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.3 MB (5288322 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8599a9bee39386d6e205771cfeb554a817f56a48098f978a0b41e869fa5ebed6`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 18.8 KB (18763 bytes)  
+	-	`sha256:87a9284fe9eeaa9a59d241dc3d9708824120c6a71f6620aa9c3ee0eba9bb2b7b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 18.8 KB (18762 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre11` - linux; arm64 variant v8
+### `jruby:9.4.16-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:56423efe18df163019b5199db0614b8432a0d5fade2dfd45e0d3d7f1d2e12088
+$ docker pull jruby@sha256:e33e18eb8c27b33762960f13637f42cbfb2c90bd57a6949dd61f3c027cfd5402
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128364817 bytes)**  
+-	Total Size: **126.9 MB (126889001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cff0b9ed065e5d8329607cd634bd575008af057724aaf7b0cf7f9f133deacf4d`
+-	Image ID: `sha256:360ff216af79afe3b1cb8fc5a06114cca7a1b99fef599e7e13e39886de4af2c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34447,29 +34171,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:51 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:46 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 CMD ["irb"]
 ```
 
@@ -34494,74 +34218,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:17:03 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f1237600d521207545f2e5941ca0e21786986b180d0ea8690b782907f9d89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 4.6 MB (4557633 bytes)  
+	-	`sha256:0ea05b65633739863d21af11b5a39bef5799dad562b0300c5b39ac321957cd63`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 4.6 MB (4557692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:907d0bb65e4273341413f0c0661f95a6c3b0e8881ea0b551dfddf05d15afd7fd`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 32.8 MB (32793190 bytes)  
+	-	`sha256:0e70aadbace0a1d57401d42aaab3c9365b34fa33c77aa04274f3f8bd27b1d264`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
+		Size: 31.3 MB (31317301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61cc0c7e0aa39d63881455c0774894844a79dff4d07b4fb263b180e401bb6cf7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 195.0 B  
+	-	`sha256:65d25e36918ead351f2e7eefc97c3390dd9c40d7916e3337b6535f9d53a032fe`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3c2a8821a77841322ec39202d7986de128a08ae5d89a6e7eee4558d1ce5cb0e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 1.3 MB (1297085 bytes)  
+	-	`sha256:2d3fcd2296bd6e564c0ce00dfed6c2b8ac65fc9f4032804bd101f0a11c813bb4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 1.3 MB (1297097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:8b9978cece086f72d53f2606e9ff032c9d9c02be75f853eb07fb3991376bbd08`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre11` - unknown; unknown
+### `jruby:9.4.16-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:798ea16e30290e2dfdd9824958fc06f32b5fb254d5eda21a356297c36d7599f1
+$ docker pull jruby@sha256:34637a6deecffedf6e6ceb4e3e548c25ad457155accd6802922aca65937ce968
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5279150 bytes)**  
+-	Total Size: **5.3 MB (5279274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:535c1dd7d00a6795f43a4173eb5e7ea0d1332ae1c8c76f91f76f5b8746cbb49f`
+-	Image ID: `sha256:24e1a10abd4ee3816eeff8ec3ba230d272364343da9a84f819fe801d4e747101`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b3c9e0d13a1c8a58e345399fbbc171765a22be0354b2f934c6dd8877bba6bfc3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 5.3 MB (5260235 bytes)  
+	-	`sha256:8f5ced1ccf25686c9f6d4681968a9dbf66151b11c02a5656284d814a42e826fd`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 5.3 MB (5260359 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d5b9e5992e4c7e989aa2e9353bb966b0862a07a302395c937e283f910c64ccf`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
+	-	`sha256:f6f9e7c6f6a43025b0a3a643a2f61e178b5211a65e2e10a29b0ccbafeb905160`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
 		Size: 18.9 KB (18915 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jre17`
+## `jruby:9.4.16-jre17`
 
 ```console
-$ docker pull jruby@sha256:7426e82743a0001860dc2cc497888d4907b07b490a8b4f8e03c3f556256e3519
+$ docker pull jruby@sha256:4da8ae92bea5aa72893dbf6704897b8dc56a070451cda664aee12784223c16bd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15-jre17` - linux; amd64
+### `jruby:9.4.16-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:150326c1b015708707dc84242666ee2903ed69a273d3c1c146f1def9caa6f239
+$ docker pull jruby@sha256:5bf1e6b11e85c6fa87e2681c255fd33fad17542105027a029c89654767017915
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.1 MB (145098861 bytes)**  
+-	Total Size: **143.7 MB (143675791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf497a53e15a4cf582e1579861e441508e9177839855f44117a8b4639817227`
+-	Image ID: `sha256:5412d99dfb36f258a461f7b91727e16a42ffb9119b6fffc1f05a7f65291124a8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34594,29 +34316,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:43:16 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:12 GMT
+# Mon, 23 Nov 2026 23:10:24 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 CMD ["irb"]
 ```
 
@@ -34641,208 +34363,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:28 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ff386cf398cac67b7ed4da2b1705df93dab9a4d648a28802fa6329e6d183166`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 5.7 MB (5690589 bytes)  
+	-	`sha256:95e56325e94d053ddd288a740e5426575fcf1e36799348abe0a58c6fab56046d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.7 MB (5690632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f0c5c042239e98d6296f76d48dd7eb11418cbd790bc21a9ee45c9991c3cc70c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 32.8 MB (32793112 bytes)  
+	-	`sha256:feba631326842c0e790fa1d8478fdd538f3bb4e268146821dfab842c416933ff`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 31.3 MB (31317377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c0b9a9734f5f166eb5dbb591cb16ce8bd11a19c43f6991878864409fd9fa826`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 196.0 B  
+	-	`sha256:c7625f5220a466f0e1e410d739bebab069bfc1bddfe1fc7d3e81192715f4c552`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76ea7211f26da3ef29d442c7fd0d5d30bf7679e7b5ec3edb8a9fd74d236667e2`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 12.8 MB (12797809 bytes)  
+	-	`sha256:f06225d36c7762e2c61ef1d7d977313a28372e6e1928cd6bdabfc8aa2b67ba00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 12.9 MB (12850429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bef93865995f78a90403a013372d3765ffd5b5b34a67084400e4721792d85f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
+	-	`sha256:fca50a9f1032119c59710501be5576ae1640bcaf7925451f5d4becd1764d580f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre17` - unknown; unknown
+### `jruby:9.4.16-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:859b7cc31f49b2433f468180c78383e8845deb684ab42bb890631f4a6a367ddf
+$ docker pull jruby@sha256:94b113fa29172cec80edc5bdaef58fd3afbd999fc87a0e7244949860538c8a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5294577 bytes)**  
+-	Total Size: **5.3 MB (5294701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfc509b69fc0a6b9db01344383739846600d17f40f2b296e9097841a60d16ecc`
+-	Image ID: `sha256:57d3aa4c435f9ff744f7381c3ef633a6b31c7540ecbfb29ca107fa3075c00204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bc733dcc495e9c12ca612a31dc5792710e92138ad4f126abdf3b93312dd0092`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 5.3 MB (5275715 bytes)  
+	-	`sha256:5542035224a42ed9b0273eff71cfd9567d9b9fa13caacbc9dfbc5b16b5df2b01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.3 MB (5275839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff8a2279cac6345a5e6770bc1d56ecf75019bb21c8fc3acf939f2e66e5fd8fde`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
+	-	`sha256:9e8eb526030e4ae9650fb170c72e33b8fa12cb890e9311157d0cfeae1139412a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre17` - linux; arm64 variant v8
+## `jruby:9.4.16-jre21`
 
 ```console
-$ docker pull jruby@sha256:920af3a19259d486fc0104746929427058f1b505c9a8e33ad63a9fe894bb7a4f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.4 MB (141433005 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b835936126c1b8bf6104645fe4d1dcbe2ce4276ed2dee980b678415fda699f8`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:23 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_VERSION=jdk-17.0.21+9
-# Fri, 20 Nov 2026 03:17:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4ef94eb3366d1bc996e03224923f408c9594b4a567d291cfaecc55658180f2a`  
-		Last Modified: Fri, 20 Nov 2026 03:16:49 GMT  
-		Size: 16.1 MB (16051440 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a85155195857b2e8c0be7c86498c6a98e34c3e4aa208a83920244d0dcfc0d48`  
-		Last Modified: Fri, 20 Nov 2026 03:17:14 GMT  
-		Size: 47.1 MB (47127995 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:156600ed8f30d6f55fb6e350fc85eb26aa1c4e0c1b29f6a84bec8d6bb2c651c0`  
-		Last Modified: Fri, 20 Nov 2026 03:17:13 GMT  
-		Size: 158.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:304248019ee9e03aec4f26f2e04319c1ca1567352e491c093d7af9fd0e6346cc`  
-		Last Modified: Fri, 20 Nov 2026 03:17:13 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22b16b9d4c2550250606bbbf6f4ddc27b0b03ebb129395a20e806a8c265ff63b`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 4.6 MB (4557550 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:054e64189c2c1828eca557c548eec8c157f72ee0c9e4b7e7718cb590f492088e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:47 GMT  
-		Size: 32.8 MB (32793199 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24d7f6b7cfb87abf5d3b2545724d2b61ae10a629181a7ad742992507ad02bb10`  
-		Last Modified: Fri, 20 Nov 2026 04:21:45 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2cebfbd3a21d4842fc100e99fb784b40930cf4812c93b24a3d5beac36d14dee`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 12.9 MB (12898460 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43d323c662aa46959d51de141039e79034b421cc1d118a095d61f2829616edad`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15-jre17` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:b4ea40726aa7021227efe63ae401dfbacd63838016c9219d2f421d68c7e6cb17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5266130 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef272b7d3ae649028998a7f957b573e6b310bb6c108ed311f5f1d6a4474aba86`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:651366d912f572ad5bce95ac8a9305f1714d489ac0d910adc724ac6ffb28ae07`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 5.2 MB (5247126 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fa8eec743bd49130ca8ef7fdb041c9b6169ecb4e35206d2787ca0ec2d707ee25`  
-		Last Modified: Fri, 20 Nov 2026 04:21:45 GMT  
-		Size: 19.0 KB (19004 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15-jre21`
-
-```console
-$ docker pull jruby@sha256:f1f0c57b6557efcfe1332654eab9d53ee6ed272c99ae7a662c62eadb6565b3bc
+$ docker pull jruby@sha256:958014780a2872b65929c813ea52fff329ffeb51684d4677dd37ba55aea9a347
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15-jre21` - linux; amd64
+### `jruby:9.4.16-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:3c65371d2abada6a0d6a11b21ac3a08a49a80def747dfa7999d19ce0c2045ad5
+$ docker pull jruby@sha256:617a6ab72d3d5a64340bcfd2cf441cf4138c867e6eaeffd0f5ea34b8c9c444ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.8 MB (150752920 bytes)**  
+-	Total Size: **149.3 MB (149345547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e197a8fd6d6d041e0989ae0d297e5b77bf1066fbcdab23f5db31264840f461a3`
+-	Image ID: `sha256:d73748d8d6139628fd71690cf1763e82ff89e008c55a675ec4a0b55add982700`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -34875,29 +34461,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:44:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:20 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 CMD ["irb"]
 ```
 
@@ -34922,189 +34508,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:17 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff5ce443e320ae41bf6f905d5672bd7fddce0d9bfb0c4c487b6becdcfdace24f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.7 MB (5690502 bytes)  
+	-	`sha256:0f6eeca8c1994a5190ac843f23c57301f104920d2b968a694f89e5f8b80ad238`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.7 MB (5690618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9064ca15d93197ae83cf0ecac08e55149be283db8d991a162bbc2503172bb195`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 32.8 MB (32793104 bytes)  
+	-	`sha256:42eb5740903358b90c201a323f2e60d1c5811c8b6b1e6c11a928f9acc55f3dc6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 31.3 MB (31317315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8109c945dd957e3cb7feaf2726c2bdcd481bd160fa9504ca9245568d417746d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
+	-	`sha256:3e2174f467a0e10bde044cc38206556bebc96a08e03f5565373746c731d7e5f9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d045ae2237128b81c6ff0f48b3c8fa7d137f879c9641c3e496869eaa5a1a0e05`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 12.9 MB (12853152 bytes)  
+	-	`sha256:a971b15cd27fac7cfdb627ad6d7436207cfc327eaba826f3d7f72ff6905e1bce`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 12.9 MB (12921450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aafd0fbf35079662f7feac21d038cf48e2fe930278f72845176f90630598c930`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 142.0 B  
+	-	`sha256:133431b206123548ff3ffedaaa068999954eaef5d23d3b979fb09c6d862b229d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre21` - unknown; unknown
+### `jruby:9.4.16-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7db2b16621245ea7d4e38f636ff7dc5360eed0a891471e2b9ecf63b7f9a06c39
+$ docker pull jruby@sha256:925153d6ce9fd8e4af49905f92f5bf8dd892d5c9f6204179b1c8f2b1b4952208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5295825 bytes)**  
+-	Total Size: **5.3 MB (5295949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b39fb0195073b2d5e0156227f92facb724816f95207822e8fc15135a020c6fb0`
+-	Image ID: `sha256:f643243412b0a7d58f61e0592683915c081a78c6844c656e2d603e08d10ada68`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a694c223a0837c2ef7d8346378dcce12832a66048d18639e6c0868d0b29568e`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.3 MB (5276963 bytes)  
+	-	`sha256:e83aa537f0c7e4e4a72172a3c12d55e3cd8ba6cea3249581b60205b810a68104`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.3 MB (5277087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b61932f88767f5f3fbb2e3c79b991372b306ffc83e76b8eb625fc20aa7cc0bba`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
+	-	`sha256:99076ae8570c11682d53347f9e218b83a9eb233ec529252ed5968f5650f9b867`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre21` - linux; arm64 variant v8
+## `jruby:9.4.16-jre25`
 
 ```console
-$ docker pull jruby@sha256:28ea4c2007e90dea440b1f96325eccf1b3a32d50ee0d53f25c3b95577d893d36
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.7 MB (146732957 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afc9dd360ae14f140c29209bed36af23e3842115792942c3a7cb03e4ccc4a813`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:23 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_VERSION=jdk-21.0.13+9
-# Fri, 20 Nov 2026 03:17:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a535a1df9c6284d9618872984e026ae0352d1f7e9e0605425c0e6114f47351dd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_x64_linux_hotspot_21.0.13_9.tar.gz';          ;;        arm64)          ESUM='b1734db7ade49c3f6acc6ae06233b8c2dd90e3e2f00f67000ae1c972aaa64d8c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.13_9.tar.gz';          ;;        ppc64el)          ESUM='4994d5bf70a58b683c86158dc1c19c973551cc225956893f91008c6180469c6c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.13_9.tar.gz';          ;;        s390x)          ESUM='f4722f400e7fce6e6d80c86d5ef68d0007694670a0a2b0bb569ad0e83dd5f996';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_s390x_linux_hotspot_21.0.13_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:43 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4ef94eb3366d1bc996e03224923f408c9594b4a567d291cfaecc55658180f2a`  
-		Last Modified: Fri, 20 Nov 2026 03:16:49 GMT  
-		Size: 16.1 MB (16051440 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:719ee3b5446024b156810745facd44f350c7feb8b22927fc0a7871032af58601`  
-		Last Modified: Fri, 20 Nov 2026 03:17:37 GMT  
-		Size: 52.4 MB (52390572 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adfe4e11e083538a3d3de416b52de5869d649515c4ab52e6d41800a04395e4ef`  
-		Last Modified: Fri, 20 Nov 2026 03:17:36 GMT  
-		Size: 155.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8001dc1c1d612395f99e6390456ca2622125a2171d0e3772ffe0e25799530fd8`  
-		Last Modified: Fri, 20 Nov 2026 03:17:36 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b85b6d2c8e06e376582e039b1c9d5d072fbb6fa108bee9e6415e7bc83e38b7ef`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 4.6 MB (4557598 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a976e1ec32cf622a304cf7556a144d2c8c927670efd5c5b2415edd7bc34e057c`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 32.8 MB (32793252 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a191452d8984614570c603f8066f5922c1e8b3f2739e68879996cfa2e803660`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07f60792d3b6385e1a303e4737b8728e9dfbc76cdee901c4ef033ca795b65a04`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 12.9 MB (12935738 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:421ef55f647c21d668bafb3ed3273f07cd8745f9bbdc90bb35c2b6e6e7435e65`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15-jre21` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:bf0566514e636a8ca533137030848a29db644d2c885b694a10cb1d83a3229a62
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5267378 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:381e41a74c24057080cc73e84ea652a565839860f0ef662862ee6f3e8626e83a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2e58b6529e976c1324fa638041166b3e78f389c85431b77c1d578f46094dc89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 5.2 MB (5248374 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1bdefdd2aa05a9cafa989476a0c901c62e888e662130e69ef2aa0269834e3d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:53 GMT  
-		Size: 19.0 KB (19004 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15-jre25`
-
-```console
-$ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3f23433b62c0
+$ docker pull jruby@sha256:4148076038197384ce4fe68517fedad1c7b2c33699c4e993f731715d6e9f2d41
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35114,16 +34566,16 @@ $ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jre25` - linux; amd64
+### `jruby:9.4.16-jre25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7566e65cd05115e732af9def1dfeeee156fc1b67f408aedd1f7ae3ab499136e2
+$ docker pull jruby@sha256:bdd25c59d09d68b5b3261bb91b5308415328c8cabe1b443bcb18fab5889045a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.1 MB (157124337 bytes)**  
+-	Total Size: **155.7 MB (155696029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0ef87fb482573a651dda41a3ae2bc070d63a895e4c6fa5e4a820cf1e7020b22`
+-	Image ID: `sha256:018db2da1474a1cdb478b9c1f6436f9e4b32ccc62d2fa55ad47b8ce3e1ba7473`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35156,29 +34608,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -35203,61 +34655,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:27 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ee90526a3691a8717a9ee734f8afc51abe7a50e0da6e204a402edc2559b9e0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 6.9 MB (6861549 bytes)  
+	-	`sha256:5b405c165e871b5915224e4359f8910061da51b37e48ea89b495825a7fcd52f4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 6.9 MB (6861588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f30a8b42a224ac91d821c6de1bce58d25287dcfeb5876ea5d8c38ad15090915d`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:984a74d34c59e41a8c7739aeb3b6e38c15fbd9c17f96ca1f7a947b2e93aaf70d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c532b3b00ecd5d123d04102a4672e8e63bf7df53bd8b0e171cf803b1d0ee2387`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 12.9 MB (12946849 bytes)  
+	-	`sha256:056a08840982e349e57c37b6e83567fe51986a66247998d02355d5f1950cfd23`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.0 MB (12994292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a04fc5b0b81451354bbdc42e91c3db6d8d68a55c8f91a8d22edd2db841deac2`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 144.0 B  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre25` - unknown; unknown
+### `jruby:9.4.16-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a3e592405b4abbd121f7b342925858b6fdf285055f4540397d8f8eb5cb517eb
+$ docker pull jruby@sha256:26dce1049a15b9c74d5d04fef6de56212ff4a5532058184a67c3a24ef498974f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5121727 bytes)**  
+-	Total Size: **5.1 MB (5121851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:855760ea5dd88bccbcd97f8dcd31250600004a7924d83fe53d8eb0669d365e84`
+-	Image ID: `sha256:d4bcc23a1409965877fa01980c310032ce424946a1335521a165a21a836acb78`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d87dac5f6db8a454e9d336228709d1808836eb998ac46f30bdd06f0cd9a2839`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 5.1 MB (5102863 bytes)  
+	-	`sha256:d862760e01cebce62e9d1bd05fa7f0118b0f165e855ae43c8ed53cf0f055ceac`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 5.1 MB (5102987 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:850ddc1468c0fd928ca7a843b0843580826296fc314e9643bae5563b0ad52040`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
+	-	`sha256:b39c9b57993a3c51d66ffb41edecad6deefd025dcf52ae294dd2f7033fee536f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
 		Size: 18.9 KB (18864 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre25` - linux; arm64 variant v8
+### `jruby:9.4.16-jre25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:794b9e022120af1aa1c9d888be62dd193afe9d1f7228ec8447cd905b0a87aaa6
+$ docker pull jruby@sha256:fde8b6b19e5717b714ddf8dd04ff24721e88fb87857815912ac8ad31713a96f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.8 MB (152773433 bytes)**  
+-	Total Size: **151.4 MB (151360777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4588408f095f0219b853f0db70bbccf354c6d188146777ca065a3bfefe9649a`
+-	Image ID: `sha256:1861fd78bdf0ab66c9abe4bcaa5364011a43bb0381989bd62b6113c069a93850`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35290,29 +34742,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:54 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 CMD ["irb"]
 ```
 
@@ -35337,55 +34789,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:08 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d95f3fca9557dc3073e5be610e2fc762d5f855ddb77b4e0dbba013532e8bfaa7`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.7 MB (5720816 bytes)  
+	-	`sha256:eddd40acd5298dc42a2b1f9f314a6c0480b3c98496372dd2fe66ab669c14dc01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.7 MB (5720897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58ce61c4881557c17848c14a7d28685f194e2e66ad743934d986f5420b9dbdf`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 32.8 MB (32793089 bytes)  
+	-	`sha256:f1634f2a8b5fdcaf605c94a19e7aa81940ef13e7b2a90426c69c4e35b86881d6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bafce1ee91638e8bcfbed1622616f6b8b54925cffb1d6337a664963a5f1a777`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:6d8802ba18375973ae3a850c5cda3eca395916b39ae593829bc312f47036a1b1`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25ecbcbe42e81aad89c24ac61d194b165ada09149f59dd3041caf11c96600c73`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 13.0 MB (12977520 bytes)  
+	-	`sha256:3e44f373aa3a20214856d5f6d590a4b521eb532d3b948a60e92cb82677b6a568`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 13.0 MB (13040487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6ec787cd8a09bf90f98fc8ab76883b6c695fde7869e188c7c95784eaa0fdb2d`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
+	-	`sha256:9cf460349dcdbffe3bcc7d88b57cd648b505647e1a2701129abeb65481910be8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre25` - unknown; unknown
+### `jruby:9.4.16-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e61e114042b26f0ff476dbcfc3d9e6ff6369df48a523300d59e6b397f260cc21
+$ docker pull jruby@sha256:0178f4d3c7b016acc491aaaae94290c7aa33b48721ba5de3222b1e353941a28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5093289 bytes)**  
+-	Total Size: **5.1 MB (5093413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05449abda4d7fd3d0c770cbe5babe3f7274c9f794ecc96174499dddcd4ec81ff`
+-	Image ID: `sha256:d0fb20ab2bcd58f0c3c1afd718f67cfa8d6ee6fb80c8e044bb066d4c24c3f32d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e4ed3e9b195f7fcb240ba7c36b1dcc64d222782c7c1bc9d1f6396124feea2f3`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.1 MB (5074273 bytes)  
+	-	`sha256:b3172d6bead64c6f48e99f1e85056ccfdf48f8a627b285671e725e7443564962`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.1 MB (5074397 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b661a7a9ad62c21e337520582831c6ffd75b01042b60ed458cb5e53ecb3c731`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:16eab5cd1681c8eadc96bd1eb6b376de102ae4a8c1f33397729539b1f92a79b0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15-jre8`
+## `jruby:9.4.16-jre8`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35395,16 +34847,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15-jre8` - linux; amd64
+### `jruby:9.4.16-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35437,29 +34889,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -35484,61 +34936,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre8` - unknown; unknown
+### `jruby:9.4.16-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15-jre8` - linux; arm64 variant v8
+### `jruby:9.4.16-jre8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35571,29 +35023,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -35618,55 +35070,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15-jre8` - unknown; unknown
+### `jruby:9.4.16-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0`
+## `jruby:9.4.16.0`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35676,16 +35128,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0` - linux; amd64
+### `jruby:9.4.16.0` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35718,29 +35170,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -35765,61 +35217,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0` - unknown; unknown
+### `jruby:9.4.16.0` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0` - linux; arm64 variant v8
+### `jruby:9.4.16.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35852,29 +35304,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -35899,55 +35351,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0` - unknown; unknown
+### `jruby:9.4.16.0` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jdk`
+## `jruby:9.4.16.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35957,16 +35409,16 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk` - linux; amd64
+### `jruby:9.4.16.0-jdk` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -35999,29 +35451,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -36046,61 +35498,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk` - unknown; unknown
+### `jruby:9.4.16.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -36133,29 +35585,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -36180,55 +35632,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk` - unknown; unknown
+### `jruby:9.4.16.0-jdk` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jdk11`
+## `jruby:9.4.16.0-jdk11`
 
 ```console
-$ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164b33587c2a50
+$ docker pull jruby@sha256:1f9a9688ab7c9da9b73fec092abdd8b493b39ae2097f3b6cd756c3bbbb2eb692
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36238,16 +35690,16 @@ $ docker pull jruby@sha256:9c165ca3fa46d9c5c5659eda655599e0fcee2ea37ab822e976164
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk11` - linux; amd64
+### `jruby:9.4.16.0-jdk11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:07717f861e9e91a363dce69c529ed48480f6ffbcd4b0a4e56199b2e049fc035b
+$ docker pull jruby@sha256:4d272721072bd81d25a2996491b865655653893015dcc47dc0bb1cedb0f8e02e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.9 MB (231900328 bytes)**  
+-	Total Size: **230.4 MB (230424589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12721797603b833c045eada981df32b20db493d34fd8d70c4ea80d01e13cd891`
+-	Image ID: `sha256:b5b41cf9b6316e60778a718a8befa1f766ce3a29b2c85fcdadd8ccc71269bf1d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -36282,29 +35734,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:15:45 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:15 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:43 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:16 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:43 GMT
+# Mon, 23 Nov 2026 23:10:16 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:49 GMT
+# Mon, 23 Nov 2026 23:10:21 GMT
 CMD ["irb"]
 ```
 
@@ -36329,61 +35781,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:00 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8badbc2eac43bc9f9c448162e294ada9322b6a7a718c19daca054828fb8824e8`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 5.7 MB (5690553 bytes)  
+	-	`sha256:98e1230746db07e74eaded77bb353afac95f27e3224771874f31289e18a23a73`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.7 MB (5690582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94d8287e645660ee23de3f2e53bd9fb4955124bd08803ff48d257102c5a918cc`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:63178862b1b16a5ccd397669ce7188be40e987097219b88fcdeee38e510ac5d3`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 31.3 MB (31317404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f6104d85c335810a6bb0414cff7fb6bdd035c4e60d1570a4121629c774f5073`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 195.0 B  
+	-	`sha256:b3fab685574eeca3c2139d201c5b94325bcc45a76323dc40015e1a4f411609a9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b36cac891424ee876f45b9cb3b5e6505c5a5a486d0111270ec07d2b932acd2a6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 1.3 MB (1297059 bytes)  
+	-	`sha256:d4f1cfed4edbb67e6e75c11c43ad7762e9687e57ee8bc855d4c873b69355e988`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 1.3 MB (1297074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21694d254a4813be9b0c525a5084e143330e8a3f14c83e9c603c2d4b2b6d7180`  
-		Last Modified: Fri, 20 Nov 2026 04:21:01 GMT  
-		Size: 142.0 B  
+	-	`sha256:17d0f7c55023bcd8cd290caded89d9fb91f70338070a71d4e9e21ba5566ce069`  
+		Last Modified: Mon, 23 Nov 2026 23:10:33 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk11` - unknown; unknown
+### `jruby:9.4.16.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a5f668e3baea79b902aef2a628381dfb240721da6d87db4c1a00906c980c652c
+$ docker pull jruby@sha256:ac94e0322c332d76c68e6d08e1223b9791ebe71ad8a3377bd01db131fd9809bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5398141 bytes)**  
+-	Total Size: **5.4 MB (5398265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7599951354047c278641f2abe4e9e1d4401e2e94c560c73db477d3478d8b3ba`
+-	Image ID: `sha256:19a3a2a0cc213570be96672d9a8308963e9aa4262a62c3a9e33443c82df66ed3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e4705e3d0d2aa7e912970705664f4250794b56470c170cba26b74cc70ce244e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
-		Size: 5.4 MB (5379372 bytes)  
+	-	`sha256:3ec9f481b8a8d6cd23c14c628fa9af56d9455112e9f5fcaeb8f436c8827d5188`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 5.4 MB (5379496 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eca1b9a71f3169354f0b754bd767aba24e66cdf93ec0f5ada8dcdf124a641396`  
-		Last Modified: Fri, 20 Nov 2026 04:21:00 GMT  
+	-	`sha256:f5e1d4658c89ee2164351da69ae742c69617e826a4c4fd15ba3bf4efbc429adc`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 18.8 KB (18769 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk11` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jdk11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:6107c4d72fee2400a9c748a8f7fc9885abbfa38c21a0b1145894eaeaf3202e0d
+$ docker pull jruby@sha256:7c0ede2d96e454e0bd40fa3bcdc3f17fc31d303f5a3c4c336590e7cd8856b987
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.3 MB (225327683 bytes)**  
+-	Total Size: **223.9 MB (223852131 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:141aa2a088d0c1d1e0280bbae9295b37fc1e8e6bf18f60336ae79cb4c300b12a`
+-	Image ID: `sha256:00eaf0ab8204a60bf33d3b513342b97ed9299e4fb644bd0f42fc97d02e78d286`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -36418,29 +35870,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 03:16:33 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:54 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:24 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:55 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:24 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:25 GMT
+# Mon, 23 Nov 2026 23:09:55 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:01 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:31 GMT
+# Mon, 23 Nov 2026 23:10:02 GMT
 CMD ["irb"]
 ```
 
@@ -36465,74 +35917,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:40 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55f4e94f539b2b0dc621e2e2344b4431748fafbe42231dd00813a6b6164c91d3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 4.6 MB (4557437 bytes)  
+	-	`sha256:91ce703c8728e401be5fb34515f07d85ef9f363ff2ede00dbc753e37fd2fc40f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 4.6 MB (4557662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:825d765cca95a07c694adce43d3c8f018316cfacf1187159c765aed30276ec80`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:e0ce671f96b00e49697e2885ab7ba2ecc0afe46d4ba5963a66bcb7b0074284ea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
+		Size: 31.3 MB (31317380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:632be8b0bdc7c21d04b8a1fbefb4cfa0ee5749485fbe95ee06bd71fd4cedc890`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
+	-	`sha256:75937551783fe13c3723364d8fb1b577537c164398509c7a0549a4ef99e906ed`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:998d180977066e49241c24edf353c7aa0752ab305c95c329ecdfce3d23937920`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 1.3 MB (1297068 bytes)  
+	-	`sha256:ad01802ff64cf6132c0107b6a8e9727e4ea5a524a9088da0683a6e1f9dcced8d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 1.3 MB (1297064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6001fa35bc52d4c00751ed2ebd06e303018f8b9d43597de0ce1bc2dd193ea263`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
+	-	`sha256:63768419d8b771f6e70f4f665af0a5208904ca5913e8d015e6b92278daffa6a6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:14 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk11` - unknown; unknown
+### `jruby:9.4.16.0-jdk11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:f1065826f7f59f6a35eee8421630db3bb066b4a7692b03ecac391b84df07e4b5
+$ docker pull jruby@sha256:4c1af9ac010bfef4b1d471580d31a53a5d1bb03336478f10a518542a542e0cd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5370329 bytes)**  
+-	Total Size: **5.4 MB (5370454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff829738414bff543fd2fdc9092ce04087c09fdbd921a6a28cde95982c7d4a4f`
+-	Image ID: `sha256:55068343d49644894f0e16f044f843dfed66b4194b5e8a60f4fc6da270cfbbae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:485e7baa8acbf9bd6911f47e710a86c8eedb0e0da846acb9c193c9bd61630977`  
-		Last Modified: Fri, 20 Nov 2026 04:21:43 GMT  
-		Size: 5.4 MB (5351409 bytes)  
+	-	`sha256:1f63ec098061a63fe0890dc89f68c528278e18c5ab22588c233bd905982b4aa8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 5.4 MB (5351533 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac78793be6ad44b35e9a0b741dd0108398ee848aa84c6360b3433bfd5bc3980`  
-		Last Modified: Fri, 20 Nov 2026 04:21:42 GMT  
-		Size: 18.9 KB (18920 bytes)  
+	-	`sha256:0d1596fcd99e4664c8943388e1bc61cdf7003fbbd3cdbded833ef6db18f5ddb0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:13 GMT  
+		Size: 18.9 KB (18921 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jdk17`
+## `jruby:9.4.16.0-jdk17`
 
 ```console
-$ docker pull jruby@sha256:5c8c5ae1ef813c9d2ef1fd5c923273f57f81bbf3e6746687508e449ea777a1dc
+$ docker pull jruby@sha256:5e470e93cd2473adab6351a5dd59275b90bd2d3eefcd86ddf35ef5e23fa78118
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk17` - linux; amd64
+### `jruby:9.4.16.0-jdk17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:eda9c05ba23b1f245e8e95c63ef51769c18a1e73afab9b57410c171f2605ee32
+$ docker pull jruby@sha256:d3127219a42c9e79cee6fc8886be305eb6cb711bd3d32d3d0f83a14d0f5b695d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.6 MB (248590673 bytes)**  
+-	Total Size: **247.2 MB (247157529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34707ff1d11cde45407c1b9348032765904d47267bdb814ee6d66f3937252b98`
+-	Image ID: `sha256:54063279baf64f21daed0d24b6817ab504567f9f5ee9d17a1e7c098f91f8b110`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -36567,29 +36017,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:42:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:06 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:07 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:26 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:07 GMT
+# Mon, 23 Nov 2026 23:10:26 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:14 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 CMD ["irb"]
 ```
 
@@ -36614,210 +36064,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:08 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf6685518a7cb09972dd69f8897c89a812358654aa0ad0195311a294133420f4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.7 MB (5693018 bytes)  
+	-	`sha256:c767c7e7b60f663319678fc8f45fd1d2ffea3e2c328795522fc6c821b1003af0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 5.7 MB (5693049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6263a4ecba1be1d0a527b01b149dd5c9d1562295d348afd27c2f4ecc5e857f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:2b71508325e1686898b8f6e27d2d8b3885fe29c456bbab19718c6d070844d821`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 31.3 MB (31317388 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba7425fa843fa513326411974c54b658279559db09d2917ba4d0bc161c474de5`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 196.0 B  
+	-	`sha256:efd357b3e70f1aa2b10687ff6db6749a1c59c30450ff289e65f693e9713570fa`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49eb6ea96104bae188f1f5c8904e9de6b0c727136050fd5e97e34f7458f2f3b4`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 13.2 MB (13246954 bytes)  
+	-	`sha256:1abdb958b828762301f7b950d8d37a77eaf36958a802a2b402b764bd065ea331`  
+		Last Modified: Mon, 23 Nov 2026 23:10:45 GMT  
+		Size: 13.3 MB (13289524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16c4d0fa42c0a2eecc0824c3c98667c3c279717644ce04c758bb3427c1733a19`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 143.0 B  
+	-	`sha256:59a2936f8e59b2d93155075865c0136e63457090f0196dc0d029745593b18551`  
+		Last Modified: Mon, 23 Nov 2026 23:10:46 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk17` - unknown; unknown
+### `jruby:9.4.16.0-jdk17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:a26daceb727ac1f95968ad572cc14e7820e277aeb503417c00a7e583704ed49e
+$ docker pull jruby@sha256:94cb333e12fedc6cf27900c21108969bbeb6f41d4ab99a0e6c97817c2ec60687
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5538449 bytes)**  
+-	Total Size: **5.5 MB (5538574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590ccd2e47935c896d28a9f5eb9ff4aa8da6a8efd91b3d9b9b5c0ca3868783c8`
+-	Image ID: `sha256:25711c3583734880e94bb668c7fcbd878aa40b434e83eb762e80dbd8ba1c29bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:81e237270a2ea1a647dbe8a957693fca057ba54b1ad528f307f755dd487d2c3c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:28 GMT  
-		Size: 5.5 MB (5519582 bytes)  
+	-	`sha256:b530b87cf1275ce58a77687ffe4ab2f4f2ba78e4bf43cfb03623b7e4e31cf35f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 5.5 MB (5519706 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:141e01dc4c0a920b2af419b2fb3389f2e5de886074fa4dcf46c06c273843172b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:27 GMT  
-		Size: 18.9 KB (18867 bytes)  
+	-	`sha256:a9c5484b067f97ec20f5e47f646cfbd888c8d47b09f9cf593743758aa5bc011f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:44 GMT  
+		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk17` - linux; arm64 variant v8
+## `jruby:9.4.16.0-jdk21`
 
 ```console
-$ docker pull jruby@sha256:63f422c46a211a8f26f11265430541c198e8b27f976f3003cf03768bd8020de5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.7 MB (245718594 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ac26686f2d29812e05df042ebbfaab75125b2905c5105c22daba3c2a2b7e34c`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:48 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:48 GMT
-ENV JAVA_VERSION=jdk-17.0.21+9
-# Fri, 20 Nov 2026 03:16:58 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8b9b611d917e3dfd8419d3566b5949226f69b052fed7e109c1368add1dfe8711';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='7f7aa599ab9d0a594c70e82c7c67fc97b6eb28750d0843a4db8e6fa41252fbe5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='9f031f48f66350b0b976354738eac984e4863f7205cb7a1a2130272a84bb64e5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='5e64213ad83d6f8bbdf565050b1d8f623b46cab18efe8143a2177c4ceb7a6083';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:00 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 03:17:00 GMT
-CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:21 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:21 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:21 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:22 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:29 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:29 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:30 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:30 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccb3651b0412a707feec155d00bbb62a65d6db7475fa2cef82aee5835748855f`  
-		Last Modified: Fri, 20 Nov 2026 03:17:17 GMT  
-		Size: 22.1 MB (22080597 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c900a8e3a522595b3082f3e7b5fa43473e8477db408e88ff271782cabb92a1f`  
-		Last Modified: Fri, 20 Nov 2026 03:17:20 GMT  
-		Size: 145.0 MB (144967790 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a2ed6a35713e34bdb1dec3c982915ae9c8dc299bc1aa345689d0b40e5e076a1`  
-		Last Modified: Fri, 20 Nov 2026 03:17:16 GMT  
-		Size: 160.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d852158187e54e7625fcf79e37932ca744947162e9c40146a4966ddf124e4b03`  
-		Last Modified: Fri, 20 Nov 2026 03:17:16 GMT  
-		Size: 2.5 KB (2463 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6569d47bde2e440d4c8661fba59c880ba6a9ea0fff876fc8bbafc90e6714be9`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 4.6 MB (4559733 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9aa37b1608831fb02b69b71d02bb90e905ecded5c2717ce59cbc080950f5546`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 32.8 MB (32793190 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0195492e759aecef67ce89abca034d68b40cc94a4ebc51b7cdd2ca330d30f79`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 197.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d72507197bb6c7cebe8350e36e86db1905f2b98e1cd87fbe609f0539eb4c7d32`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 13.3 MB (13312921 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7abcab21dcda28abf2360744bef95324f730b779bb30356d4f35d72f2e218731`  
-		Last Modified: Fri, 20 Nov 2026 04:21:41 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15.0-jdk17` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:88d4a28c535ce53ee70aa3b113759e1ba769022c7999f03b6c5db0b4d270dcc4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5605805 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:640158f92081ecaa7d21145d3230cfc9c2f976e96d7224422b2688156f1dcfef`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:17c57b29602efa4421461a34ac12687e284ffdf3947b00da881c80e7453367c8`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 5.6 MB (5586795 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5e3ccde4d5fd617a5cda863568fc1f60b1af5f3e5e0c6b1bbe535ec4b118d420`  
-		Last Modified: Fri, 20 Nov 2026 04:21:40 GMT  
-		Size: 19.0 KB (19010 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15.0-jdk21`
-
-```console
-$ docker pull jruby@sha256:3a8366f6a1537e4a53e9133b950ef421b352fc95268296cf0570ae8eda63dd78
+$ docker pull jruby@sha256:4370e46fd0c3cfa2c01e81116f1a27fc9b9588df10dc2cf2bb717b53a3eebeda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk21` - linux; amd64
+### `jruby:9.4.16.0-jdk21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:4099c1ac939c023a35a95cff497bb16e46da0cc18c1ce0b0fe37bf46151a0d02
+$ docker pull jruby@sha256:6ec639583789fab56294f2f5c1c9d27010e6de1cabc08e2d388634e0724f3943
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260785060 bytes)**  
+-	Total Size: **259.4 MB (259381206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d2ee00457c4306a3c7df05d4ff0886c3c3f39e22f356ace08f37da237053eee`
+-	Image ID: `sha256:f4a2191b90bae5f99a601d2938735f2df21c61d690efb6d5890bde091ff503cd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -36852,29 +36164,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:43:53 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:58:17 GMT
+# Mon, 23 Nov 2026 23:10:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:18 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:18 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:24 GMT
+# Mon, 23 Nov 2026 23:10:39 GMT
 CMD ["irb"]
 ```
 
@@ -36899,191 +36211,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:09 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b654d8372932e3945c1bb4ead4948679e6e0acf5bd497bad89483f44d9a65d42`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.7 MB (5693132 bytes)  
+	-	`sha256:09494826cb2942218483c754b84726576e093d7b1fa44bafcb2510977f37705b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.7 MB (5693079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26edebed0592d4c03bffe163993509380ec7d6bdcae2a7e6afaa919300e2f2bf`  
-		Last Modified: Fri, 20 Nov 2026 17:58:37 GMT  
-		Size: 32.8 MB (32793134 bytes)  
+	-	`sha256:fac9ed5b66f7150aa0f3169cd32bb3f5a1dc463d0a6463c818ed48dfbebb5e44`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 31.3 MB (31317274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1e0d580eaa2952211d7909b6db2301d6a178f46b22fd2713a3860a61311af4b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 197.0 B  
+	-	`sha256:4066d7e803c79e070da5c4f2846dca414c154a3c86d5a34ebf462950a795160e`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b391fffe93d00caeeee4b66a17963b338a1988b298ab46877e6c23a8ab5520d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 13.1 MB (13111248 bytes)  
+	-	`sha256:4c2cd01cfece5fbdcb4884e03eea8cff7be99a1595a4ad8ec8eb97a6f87bebe2`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 13.2 MB (13183305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82b77b059cf494f97d32059cb6fff62120f651e3dbb447443136ec6a97a2fc81`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 143.0 B  
+	-	`sha256:bc5c72dc8ca1dc8cb7a19cc9a0feb4be8ae55c848f358c54a6c17f4558b2496d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:51 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk21` - unknown; unknown
+### `jruby:9.4.16.0-jdk21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e5915464c6219f3fda4d3ffe1b41af53737ee95eefd924ee756f4c8c00cdc86a
+$ docker pull jruby@sha256:b4abe43b1b63ef899fd966642ca067561dbc7a8e2625653ad43bd4048c0fa2f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5540302 bytes)**  
+-	Total Size: **5.5 MB (5540426 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca6bcd3c98f51b5d9e8abddb3ed8e8e0ec048184a64ba8595f99f4835d926d41`
+-	Image ID: `sha256:1e7edf1bf416fbc25325b1346dc3a2f3649997909a5772049648af8c6618cb41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79a320693b1219c071b071cd13c26f5df972804df1ae26c2a4d11286e353cf32`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
-		Size: 5.5 MB (5521434 bytes)  
+	-	`sha256:1725fc824c100211ad47fc208ba04bc6732e38f29953b485d114b3393c5d6d75`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
+		Size: 5.5 MB (5521558 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:284b7c4762b5dc4c765bc91de9c0a72f8f45f8a50d2c1e577803fb848510629b`  
-		Last Modified: Fri, 20 Nov 2026 17:58:35 GMT  
+	-	`sha256:16f9f79670633c6ed20d86d672886686225cfee25b17588f204a2f5688372f0d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:50 GMT  
 		Size: 18.9 KB (18868 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk21` - linux; arm64 variant v8
+## `jruby:9.4.16.0-jdk25`
 
 ```console
-$ docker pull jruby@sha256:a631d428d0e21df1134882cd6c26801284be0dfa2becfab2f8464351ad40da60
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.3 MB (257347658 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:affbc61070498d0671781830b1135209723344b36d1cd60354b1b1a6770a3cde`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:17:24 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:17:24 GMT
-ENV JAVA_VERSION=jdk-21.0.13+9
-# Fri, 20 Nov 2026 03:17:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='d7f5d5cf865a2902b70ff549b97586a7d3f234e016f041ab447ea740c7d66d1c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.13_9.tar.gz';          ;;        arm64)          ESUM='e3522e707fc7dbe2a72c30746b1e7068301a0213ecd213d4491f35a14eb55578';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.13_9.tar.gz';          ;;        ppc64el)          ESUM='cfaedcc659213833ead9c2a50987d8dcbd0e7a2d82217abb43acb64c0dd3d8cc';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.13_9.tar.gz';          ;;        s390x)          ESUM='597271ef81f7e4d0e2b86aa6e4d484af194253bdf238908a8394b78970dff713';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_s390x_linux_hotspot_21.0.13_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:38 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 03:17:38 GMT
-CMD ["jshell"]
-# Fri, 20 Nov 2026 04:21:33 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:34 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:42 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:42 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:42 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17d5f41944e7c26ff86012725668b1f33bc6142ca773cc733a66b30ec5bbefa9`  
-		Last Modified: Fri, 20 Nov 2026 03:17:57 GMT  
-		Size: 22.1 MB (22080656 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd48ffa453c5f5a82cdcc188709a96da68fa3cdcefe6a519550da643c91067ac`  
-		Last Modified: Fri, 20 Nov 2026 03:17:59 GMT  
-		Size: 156.7 MB (156699398 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2eb8af90ac559d9065b4f7dfb9fc6940d08c7e8f8b63820f49cf1a27b2dd47f3`  
-		Last Modified: Fri, 20 Nov 2026 03:17:56 GMT  
-		Size: 160.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bff75ba61adaf2a47149bae71a6f622c7f47b647be8843faa1d291bc16736f3d`  
-		Last Modified: Fri, 20 Nov 2026 03:17:56 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2450ea6247dffe12a1826aa7e0516905a170b28ba7b6ce5f72f72b65576bd8e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 4.6 MB (4559906 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a63ce6c7c573d24824e4f9fb630b8c4f63b2c8e9b87d042fe16969f720cb915a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 32.8 MB (32793216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57f71ede27a0c4acf6bf78c9ed5b57a52733543a4600ae1adf4119330a477e25`  
-		Last Modified: Fri, 20 Nov 2026 04:21:47 GMT  
-		Size: 198.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cca7896c3698f5b45a9b838f53345b907930613c07d0f69a2f14c91297ba091`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 13.2 MB (13210117 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf3120d1fcd8d2014f7cf225b4dec66c0c03daca7cd99387f96fd12bb43e9bc`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15.0-jdk21` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:82d4bf9b904504c09f2f95a509844439d6319c8d0495d43ab11e592b3ee22f4c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5607656 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef4b0a4f5eee5bacdeda1629b6565c26afd94e84f2dc4e465a6746556f456b6b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:f53fc49edd91ac07f2b7685612a71b67802463ce417bd8d34a3daf7182e8fce9`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 5.6 MB (5588647 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:16c52731fa6b9c11e9e93f93cdf1fd5507a6250623f71c29bcbd85647f041764`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 19.0 KB (19009 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15.0-jdk25`
-
-```console
-$ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec7303bf2e8d5
+$ docker pull jruby@sha256:7c814cea1aef37565502cf20336a469e68a8ca06f3b7c169ba7f8613b5911d28
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37093,16 +36269,16 @@ $ docker pull jruby@sha256:ac6d7cb51fd0c4e24d85d42f8e435448ec0eca57c810f30aaf4ec
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk25` - linux; amd64
+### `jruby:9.4.16.0-jdk25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cfd357089af89efe5f85d1301ca0cc48549091e9f2e8ba426028e1418cca2f44
+$ docker pull jruby@sha256:2cece2e2bd72b959a57bba5fdb801b4b7ba25e82609e6bbd47cbcfd08b7a7799
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.6 MB (191608451 bytes)**  
+-	Total Size: **190.1 MB (190139551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc1edd5c18e7e6c434b5247c83d913c53da3bc8083ec3d2bb096788e0ffc5016`
+-	Image ID: `sha256:694a0934c5284513319ac4c85aa253c809b158f3c43007e5a0b5e608f7c29ae8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37137,29 +36313,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:14 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:35 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -37184,61 +36360,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:31 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8682d47ab1477ac6e2021bf5fb7bfe49938237261bf9143d955e71a934292aa`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 6.9 MB (6863720 bytes)  
+	-	`sha256:673339370cc020366f26bf4ced238e9953500ec2097f47eaa5feca6244da91c7`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 6.9 MB (6863705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d07a3e87071f527d6894292c10a02468d8ee7bf76f5f3ac4de0730736654976`  
-		Last Modified: Fri, 20 Nov 2026 17:47:48 GMT  
-		Size: 32.8 MB (32793137 bytes)  
+	-	`sha256:cfa5913eaf26277c9ac55a2d5d6c5e50e32943383005123971c8e2291df7e123`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:799526e1c68019c1029f5b6c68722bb1677710e1ddc85b71df648648880f95fc`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 13.3 MB (13250058 bytes)  
+	-	`sha256:e6cbe00f6156b481c9438c0aa5395ee667385b637d6b99495bebad145f17fa2c`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.3 MB (13256946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39f9db83cefe5bb0c6f2b8be3ddc11f82995e9edb0f0c89595d53e7df78493e3`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk25` - unknown; unknown
+### `jruby:9.4.16.0-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:312c6c0d0bd8ed67c813374255f9e9eadd32b01765e57a35c67c18b8e2b01aa2
+$ docker pull jruby@sha256:b43ebd333bb73dd39f958b7a5361846be25f8dbd1b3909ea5827c54b40e35af7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5325418 bytes)**  
+-	Total Size: **5.3 MB (5325541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccd12a51edc543643bb2377f1e17c62a3387bc2ee04bd9e71bc2a8a17946e7b9`
+-	Image ID: `sha256:c910356bee8c6b38c3d2245bcd3181ec77d7cca57d5ae8da8183718f63ae823c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae9e3f224b2a1be44f3f9fb74b48911dce69f38881908d04e38d4c4fe069ea26`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 5.3 MB (5306554 bytes)  
+	-	`sha256:06e086c2ab5e6658e1940c9ec959fe04343b867a40b422e86a5d22be2bae4639`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 5.3 MB (5306678 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:58705531ae2f8d05417cdd8eada67750ef14e64326f57a55409aeb55565642f0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:47 GMT  
-		Size: 18.9 KB (18864 bytes)  
+	-	`sha256:ea159a80990897f505e3a8d61f5e6ae0fb132ec5caebf3f3e0e9b587ef9317a4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 18.9 KB (18863 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk25` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jdk25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:16a187e2a7951b67508a787bd060c8e63340b56c4aab1d95cb9832dd565a2867
+$ docker pull jruby@sha256:a3bf9ecf5ad454a55f9501fbfabba6b81cd44b506750cd0c98022cfda989f713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188821015 bytes)**  
+-	Total Size: **187.4 MB (187369819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05968963f31e2ded7aeaf5ab888af0463951e987e4c038670f0fb578ffbd8410`
+-	Image ID: `sha256:d83282afc6cb711d260f0280536d6ead08621b19ff5c13ddee3799bda5bc2e2a`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37273,29 +36449,29 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:58 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:58 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:35 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:59 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:35 GMT
+# Mon, 23 Nov 2026 23:09:59 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:44 GMT
+# Mon, 23 Nov 2026 23:10:07 GMT
 CMD ["irb"]
 ```
 
@@ -37320,55 +36496,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:14 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34cf75ba12de71b7a23b628c5c7d4d7d72033eb4642b53483212248fe0fbffc8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.7 MB (5723176 bytes)  
+	-	`sha256:1817dfacb448a0290b52b2701e2389abe792735bb6ea9c9fa2ee4f3ca5058b4b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.7 MB (5723343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddba6232c87694426d414dfdfd98706fa080018821d9ba9515cc478b6685fca9`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:44dbd40cafe2b1fd7e99ff1299b478a08cfa8d7ea248fca1f09dc263fa131dba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 31.3 MB (31317257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10a3e0194685fd1dd0e45232eda4cc5e3ea52a7f29b69dab3670010ec8d2068`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 196.0 B  
+	-	`sha256:c3f5dc001eef6a12fa33ee50fc030cd379519e05e37c44564c8c90e46f227247`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:096254317299ec6f926e90653c21a645c435990c47c9ee93af574ce4097d9671`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 13.3 MB (13294262 bytes)  
+	-	`sha256:0fd691e583be15b91fb2d80375dd68b54626345a78662ec15f72b84756fdd82d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 13.3 MB (13318793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f3d7b59e64ba614b4a0829af9378329a9e323a17f265a1c3228222a7d3c8eef`  
-		Last Modified: Fri, 20 Nov 2026 17:53:57 GMT  
-		Size: 143.0 B  
+	-	`sha256:54847fb32606d5b977a542b3d31e145f5209600a23ffaddb8de0bf8894d47f94`  
+		Last Modified: Mon, 23 Nov 2026 23:10:20 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk25` - unknown; unknown
+### `jruby:9.4.16.0-jdk25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:86cc5a0692832e084a98d2f1697aa12a913260b1871f759da838f59eadc422ce
+$ docker pull jruby@sha256:2b2d9a550e9c47f1ee8d501ac0e74207b435c4bd157dfbbecfc130f636d2f6ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5392782 bytes)**  
+-	Total Size: **5.4 MB (5392906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3e0538c54b2fd68b72bf6dbf237cf8f09deca0a6891111757f4c9047cf095c5`
+-	Image ID: `sha256:c0ab174a1b345e308b8a5ddec40d0e3937e240bece7dcac0f435590a20cd8d2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69f720587605c292c048d250b4bd275d7253b3a0279d5faea4cb20cb94b543a8`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
-		Size: 5.4 MB (5373766 bytes)  
+	-	`sha256:1e37908e9bef8e7e2caa569d68ce27fd6762aea3f07398554795f47d215f4eba`  
+		Last Modified: Mon, 23 Nov 2026 23:10:19 GMT  
+		Size: 5.4 MB (5373890 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e0a73e9829a6702f0c1c94cbad1fe159b541f2d458cf3328054779d98901c6e`  
-		Last Modified: Fri, 20 Nov 2026 17:53:56 GMT  
+	-	`sha256:9c4be228b79544d2c1ff9a7e2facc976b2728576c6cc61ee18b1499ef9337422`  
+		Last Modified: Mon, 23 Nov 2026 23:10:18 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jdk8`
+## `jruby:9.4.16.0-jdk8`
 
 ```console
-$ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c35c753564d3
+$ docker pull jruby@sha256:c77aa0e224e2e00686eb9b9942189ddbda0468bb119b0051ec19c1d3a0f32405
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37378,16 +36554,16 @@ $ docker pull jruby@sha256:298b04896e9ce8032343fcc4bcf43d78deb85cdb1fa491144b97c
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jdk8` - linux; amd64
+### `jruby:9.4.16.0-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:539fffd90ae3468a8e676c15927f5023ce6e2e957ff43717dac4d9425dbf827a
+$ docker pull jruby@sha256:d3b5638ce9d109fc5315febd7ee7d8340bd38adf23304ae19a8831a9bc3daba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141180251 bytes)**  
+-	Total Size: **139.7 MB (139704354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d25b13246bc61ebc8320d6d7f11d738e060cbf92e5ae5e571d565b54d8e0aa20`
+-	Image ID: `sha256:9e6b6f5caa0f72a2a4a055d859c60b425e8858128049e311594bd2b981731170`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37420,29 +36596,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:04 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:05 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:05 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 CMD ["irb"]
 ```
 
@@ -37467,61 +36643,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:27 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:163229cc8c769ed4ed39f34ea01328e5e5b132130838e14fa1d901405e760c1b`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.7 MB (5690595 bytes)  
+	-	`sha256:2d38be11939bff9a22a9c58ff245f1135650cfe74191169d22f40a21eaa68dee`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.7 MB (5690588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1b8005ea10f1f85d493431bee0238098dc32f954031f1d5decc8bd91e52496`  
-		Last Modified: Fri, 20 Nov 2026 04:20:59 GMT  
-		Size: 32.8 MB (32793225 bytes)  
+	-	`sha256:0a2db70778b16dd632e1c4aebb4c58d0b62ed0707f94d3d70dbbeb8f0ec1b095`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
+		Size: 31.3 MB (31317362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:0cf16ba89f60016f3a12aed63aeff4c070c2f3e744aa8cf783116cf049fa47eb`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb729b9f319053f42a0b561f887e56bf0271a139ceb5a160ef5fab52a114e0ac`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 1.3 MB (1297073 bytes)  
+	-	`sha256:205208944c6221f2a9baa0d63c0afcff1f278cbf749da9083841ab9815ad8b67`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 1.3 MB (1297045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
+	-	`sha256:560ce605d836717c2c68896571164546d38b3678df50b697a456fe050c164d00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:23 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk8` - unknown; unknown
+### `jruby:9.4.16.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:6b47c4742ed6faf09e32b41a219bcb559fa763530c191fe0618d57d01d71a9af
+$ docker pull jruby@sha256:d1d63ab9d7f0fca373640d80f679cd28acccb9ac5b2e415b34a20ec09568a467
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5501959 bytes)**  
+-	Total Size: **5.5 MB (5502084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30778de2f944fc90b0ab95bcb729ac011ff08eff06d3f29ab0bb816192a7d126`
+-	Image ID: `sha256:bd0448196caef612f1d002d096fb2aafe9bc3a819c71242193bd0431f0466724`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e361b8cb33ce61e90561b1ee7bad8310b9a6679b6ad19803153f13acc215996e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 5.5 MB (5481716 bytes)  
+	-	`sha256:e6d69a62da9510483e134c1bfdd4a11f1ff70924a02dea4da36ef23052751137`  
+		Last Modified: Mon, 23 Nov 2026 23:10:22 GMT  
+		Size: 5.5 MB (5481840 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a57fc94ed8e605dbed41d69a14b8afd31bd46162e8a82e0f2ddcfc9f1af4a67`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 20.2 KB (20243 bytes)  
+	-	`sha256:9a790f7565c0d07a69475c7a3b73c3418bda39c306390d0fd62a809105072d06`  
+		Last Modified: Mon, 23 Nov 2026 23:10:21 GMT  
+		Size: 20.2 KB (20244 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jdk8` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jdk8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:8ae09ef0aa195d0c23e22042e824ef859a51d5b5464ba9fdf4932b4ae541f7a9
+$ docker pull jruby@sha256:bac45229d1c1223d8ede2e3d2d34aecae261ac96f0ce5a67b67dbab2f523382a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.0 MB (136985429 bytes)**  
+-	Total Size: **135.5 MB (135509194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7faa8587a13be5137e3384ed1d0b02600f3c7f6ff1a3649f5ce7d2f3f3fa32`
+-	Image ID: `sha256:a7e68e003052c3d79e7e0360fe5394c6e9a53f6ad5956e4d56e437dc3d295218`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37554,29 +36730,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:08 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:05 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:38 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:05 GMT
+# Mon, 23 Nov 2026 23:09:38 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:12 GMT
+# Mon, 23 Nov 2026 23:09:45 GMT
 CMD ["irb"]
 ```
 
@@ -37601,55 +36777,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:20 GMT  
 		Size: 2.5 KB (2486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc27c9bb8c6625f01ed9110460fec870f9654516cd0ab9d3f974bb6fca2421c6`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557606 bytes)  
+	-	`sha256:4e57941cd8f3c19428a048423f00e08496d20f615021373cc9205f643ca68b0a`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 4.6 MB (4557703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922198e53263e5cc8db929609b487160a83733aea98a681f35c2ff6138514f1a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793215 bytes)  
+	-	`sha256:f65d695af8271a41361db320a0af96328ddcd76d0b2554bb44066d588a1c5cae`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 31.3 MB (31316843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58f3f47db2f3490b147064926a218572814a7f19b3509e2e336eceaff3021e2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 199.0 B  
+	-	`sha256:ddc63d5db5966ddfb216eac443dfb610b2e106569615712793c95fa46d62fca9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6c27b43a1b08023c31214e352ae4ddf8dafefce1236a2be5008bcfb798211a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297060 bytes)  
+	-	`sha256:90e248e033c375cabceb6b1357d1c19864aac68004e6e6cfe3b27dc5636aad59`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 1.3 MB (1297102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2afa4b6d6293b98fcf5508403bdfb34a677a47b24e7b2279f60f470e15dcc084`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 142.0 B  
+	-	`sha256:079f37ccb8216fa9bced31ceca79d782d4f71b7a1d74c530683917fad986964c`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jdk8` - unknown; unknown
+### `jruby:9.4.16.0-jdk8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e77e2907f73b5ee602b8ffd02940c9cdafe180edc1b00615ba5c2b49cd762f33
+$ docker pull jruby@sha256:21d54beb0cb5cea74e2cabeafa4df828cf6aeffdfc3d6413f2818f1be04146e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5474351 bytes)**  
+-	Total Size: **5.5 MB (5474475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36666384c60256b442924addcb04df4241d3287ea7331e362cfb84905b5a87b5`
+-	Image ID: `sha256:cc803b141cd49c1387f98dd93ea57e4bc9115a9318764e439cc6ef306cad6c25`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a7b585810c87db809a26aea1680a40ff6ff5b00d6127f12f33d7a9538baa6b7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.5 MB (5453895 bytes)  
+	-	`sha256:0a68a442c12d150bca71832379ed8e8b0ab4788a618805d1e501017bd1bcc8e3`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
+		Size: 5.5 MB (5454019 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8963497e88940baf5f3809964eb83300627c2a3d062935af4df021757c1709ec`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:593f8009c1e4a59f241b3c960e49f3ab7396caf76d6d577f22a99cff8bca6b2b`  
+		Last Modified: Mon, 23 Nov 2026 23:09:56 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jre`
+## `jruby:9.4.16.0-jre`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37659,16 +36835,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre` - linux; amd64
+### `jruby:9.4.16.0-jre` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37701,29 +36877,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -37748,61 +36924,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre` - unknown; unknown
+### `jruby:9.4.16.0-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37835,29 +37011,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -37882,55 +37058,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre` - unknown; unknown
+### `jruby:9.4.16.0-jre` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jre11`
+## `jruby:9.4.16.0-jre11`
 
 ```console
-$ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b711380018f5a711
+$ docker pull jruby@sha256:127625ef234e403547086dab120424c974f91ea851b2a62d80db854d4c7b8879
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37940,16 +37116,16 @@ $ docker pull jruby@sha256:8a5e87c4285a116c0d2db56b868bb495bd6cd5c9fcd628b5b7113
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre11` - linux; amd64
+### `jruby:9.4.16.0-jre11` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:cc5e2537326eea0f0f5b0399224fc3e5442edf237aa429fe00f97e941265b2b3
+$ docker pull jruby@sha256:270da91ba118b187ddd7ff0574bb853f8049a0f48350cc636ea2bddca3f126db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.3 MB (133321492 bytes)**  
+-	Total Size: **131.8 MB (131845750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c3f3ed67a5b5e4d505a8a88e364d08025953bff87d400168e1604be2e098a8`
+-	Image ID: `sha256:5aacb9a43bcf88807d54c24e9036f920eacf704b2aa2b536e66699fca926b50f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -37982,29 +37158,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:18 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:41 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:42 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:12 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:10:12 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:47 GMT
+# Mon, 23 Nov 2026 23:10:18 GMT
 CMD ["irb"]
 ```
 
@@ -38029,61 +37205,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:30 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:260fcbc238f80fa224140665632ea8ee8a0f080970268863798271932c026a1c`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.7 MB (5690572 bytes)  
+	-	`sha256:ff09d87e621fd1e616ce01fcc8c86760ff520c97e439b7daaf9dfa8b6e89f201`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.7 MB (5690530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:965e0f7484712b5f5f881b64f336dd2340c0bf13b264633a0204fb1f432c7b64`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 32.8 MB (32793160 bytes)  
+	-	`sha256:084ccc3ea0382dd721230bf54102d1f00b16bace9e9741df25f61c71660916d5`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 31.3 MB (31317410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:666742e1b4a8dca23c0921445043bf124442307d368409e555fb748060d7405a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 198.0 B  
+	-	`sha256:841972911f6367fe756fbc2eb74ce405999148a8095b6047c8f19e800aa2204a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10bcdfb3191e144b744f8373887db09595bebe69b95d0f9f98b1178159a991fb`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 1.3 MB (1297044 bytes)  
+	-	`sha256:b93ad0f8391e31f60e2fdc77b2abe66fd9c93d654c28958298c7a1b8b1f5b8a0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 1.3 MB (1297091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4612e0f38c1031ba16d2feb050268ce93f153fba3ef0808b3cd2680b081da9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:58 GMT  
-		Size: 143.0 B  
+	-	`sha256:57f73d6ca9d49acbdd5b0a844282a3b2740480ca6395c459e7a9c6c5b3440392`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre11` - unknown; unknown
+### `jruby:9.4.16.0-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:d5544dcd77a353988e7ced8a935724858a6f49dfa550499759e79ee55a859b2f
+$ docker pull jruby@sha256:4d79176535ac8054af263116371732e51b760673b1f8f181a2698ca7881de980
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5306961 bytes)**  
+-	Total Size: **5.3 MB (5307084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b9a9dd8b029d7c2f49cb573a5c1d9eedf7a6be8cc31c00a852ff4bd9b37cb7a`
+-	Image ID: `sha256:843fea6bbcdf738feaa6ae88738fc5a8a854b99c636b094617703123789349e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1cdf782d6de5cef689faaa4baed8db3c1ff53267204da567750fefade338461e`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 5.3 MB (5288198 bytes)  
+	-	`sha256:c1429cd25108e5d72c6c6af27aec716c784ea4f31ec607c033dd34fe384d1282`  
+		Last Modified: Mon, 23 Nov 2026 23:10:28 GMT  
+		Size: 5.3 MB (5288322 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8599a9bee39386d6e205771cfeb554a817f56a48098f978a0b41e869fa5ebed6`  
-		Last Modified: Fri, 20 Nov 2026 04:20:57 GMT  
-		Size: 18.8 KB (18763 bytes)  
+	-	`sha256:87a9284fe9eeaa9a59d241dc3d9708824120c6a71f6620aa9c3ee0eba9bb2b7b`  
+		Last Modified: Mon, 23 Nov 2026 23:10:27 GMT  
+		Size: 18.8 KB (18762 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre11` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:56423efe18df163019b5199db0614b8432a0d5fade2dfd45e0d3d7f1d2e12088
+$ docker pull jruby@sha256:e33e18eb8c27b33762960f13637f42cbfb2c90bd57a6949dd61f3c027cfd5402
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128364817 bytes)**  
+-	Total Size: **126.9 MB (126889001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cff0b9ed065e5d8329607cd634bd575008af057724aaf7b0cf7f9f133deacf4d`
+-	Image ID: `sha256:360ff216af79afe3b1cb8fc5a06114cca7a1b99fef599e7e13e39886de4af2c0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -38116,29 +37292,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:51 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:46 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:47 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:53 GMT
 CMD ["irb"]
 ```
 
@@ -38163,74 +37339,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:17:03 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:01f1237600d521207545f2e5941ca0e21786986b180d0ea8690b782907f9d89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 4.6 MB (4557633 bytes)  
+	-	`sha256:0ea05b65633739863d21af11b5a39bef5799dad562b0300c5b39ac321957cd63`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 4.6 MB (4557692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:907d0bb65e4273341413f0c0661f95a6c3b0e8881ea0b551dfddf05d15afd7fd`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 32.8 MB (32793190 bytes)  
+	-	`sha256:0e70aadbace0a1d57401d42aaab3c9365b34fa33c77aa04274f3f8bd27b1d264`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
+		Size: 31.3 MB (31317301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61cc0c7e0aa39d63881455c0774894844a79dff4d07b4fb263b180e401bb6cf7`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 195.0 B  
+	-	`sha256:65d25e36918ead351f2e7eefc97c3390dd9c40d7916e3337b6535f9d53a032fe`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3c2a8821a77841322ec39202d7986de128a08ae5d89a6e7eee4558d1ce5cb0e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 1.3 MB (1297085 bytes)  
+	-	`sha256:2d3fcd2296bd6e564c0ce00dfed6c2b8ac65fc9f4032804bd101f0a11c813bb4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 1.3 MB (1297097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:8b9978cece086f72d53f2606e9ff032c9d9c02be75f853eb07fb3991376bbd08`  
+		Last Modified: Mon, 23 Nov 2026 23:10:05 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre11` - unknown; unknown
+### `jruby:9.4.16.0-jre11` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:798ea16e30290e2dfdd9824958fc06f32b5fb254d5eda21a356297c36d7599f1
+$ docker pull jruby@sha256:34637a6deecffedf6e6ceb4e3e548c25ad457155accd6802922aca65937ce968
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5279150 bytes)**  
+-	Total Size: **5.3 MB (5279274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:535c1dd7d00a6795f43a4173eb5e7ea0d1332ae1c8c76f91f76f5b8746cbb49f`
+-	Image ID: `sha256:24e1a10abd4ee3816eeff8ec3ba230d272364343da9a84f819fe801d4e747101`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b3c9e0d13a1c8a58e345399fbbc171765a22be0354b2f934c6dd8877bba6bfc3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
-		Size: 5.3 MB (5260235 bytes)  
+	-	`sha256:8f5ced1ccf25686c9f6d4681968a9dbf66151b11c02a5656284d814a42e826fd`  
+		Last Modified: Mon, 23 Nov 2026 23:10:04 GMT  
+		Size: 5.3 MB (5260359 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d5b9e5992e4c7e989aa2e9353bb966b0862a07a302395c937e283f910c64ccf`  
-		Last Modified: Fri, 20 Nov 2026 04:21:21 GMT  
+	-	`sha256:f6f9e7c6f6a43025b0a3a643a2f61e178b5211a65e2e10a29b0ccbafeb905160`  
+		Last Modified: Mon, 23 Nov 2026 23:10:03 GMT  
 		Size: 18.9 KB (18915 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jre17`
+## `jruby:9.4.16.0-jre17`
 
 ```console
-$ docker pull jruby@sha256:7426e82743a0001860dc2cc497888d4907b07b490a8b4f8e03c3f556256e3519
+$ docker pull jruby@sha256:4da8ae92bea5aa72893dbf6704897b8dc56a070451cda664aee12784223c16bd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre17` - linux; amd64
+### `jruby:9.4.16.0-jre17` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:150326c1b015708707dc84242666ee2903ed69a273d3c1c146f1def9caa6f239
+$ docker pull jruby@sha256:5bf1e6b11e85c6fa87e2681c255fd33fad17542105027a029c89654767017915
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.1 MB (145098861 bytes)**  
+-	Total Size: **143.7 MB (143675791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf497a53e15a4cf582e1579861e441508e9177839855f44117a8b4639817227`
+-	Image ID: `sha256:5412d99dfb36f258a461f7b91727e16a42ffb9119b6fffc1f05a7f65291124a8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -38263,29 +37437,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:43:16 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:12 GMT
+# Mon, 23 Nov 2026 23:10:24 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:13 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:25 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:13 GMT
+# Mon, 23 Nov 2026 23:10:25 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:19 GMT
+# Mon, 23 Nov 2026 23:10:31 GMT
 CMD ["irb"]
 ```
 
@@ -38310,208 +37484,72 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:43:28 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ff386cf398cac67b7ed4da2b1705df93dab9a4d648a28802fa6329e6d183166`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 5.7 MB (5690589 bytes)  
+	-	`sha256:95e56325e94d053ddd288a740e5426575fcf1e36799348abe0a58c6fab56046d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.7 MB (5690632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f0c5c042239e98d6296f76d48dd7eb11418cbd790bc21a9ee45c9991c3cc70c`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 32.8 MB (32793112 bytes)  
+	-	`sha256:feba631326842c0e790fa1d8478fdd538f3bb4e268146821dfab842c416933ff`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 31.3 MB (31317377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c0b9a9734f5f166eb5dbb591cb16ce8bd11a19c43f6991878864409fd9fa826`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 196.0 B  
+	-	`sha256:c7625f5220a466f0e1e410d739bebab069bfc1bddfe1fc7d3e81192715f4c552`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76ea7211f26da3ef29d442c7fd0d5d30bf7679e7b5ec3edb8a9fd74d236667e2`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
-		Size: 12.8 MB (12797809 bytes)  
+	-	`sha256:f06225d36c7762e2c61ef1d7d977313a28372e6e1928cd6bdabfc8aa2b67ba00`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
+		Size: 12.9 MB (12850429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9bef93865995f78a90403a013372d3765ffd5b5b34a67084400e4721792d85f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:32 GMT  
+	-	`sha256:fca50a9f1032119c59710501be5576ae1640bcaf7925451f5d4becd1764d580f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:42 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre17` - unknown; unknown
+### `jruby:9.4.16.0-jre17` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:859b7cc31f49b2433f468180c78383e8845deb684ab42bb890631f4a6a367ddf
+$ docker pull jruby@sha256:94b113fa29172cec80edc5bdaef58fd3afbd999fc87a0e7244949860538c8a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5294577 bytes)**  
+-	Total Size: **5.3 MB (5294701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfc509b69fc0a6b9db01344383739846600d17f40f2b296e9097841a60d16ecc`
+-	Image ID: `sha256:57d3aa4c435f9ff744f7381c3ef633a6b31c7540ecbfb29ca107fa3075c00204`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bc733dcc495e9c12ca612a31dc5792710e92138ad4f126abdf3b93312dd0092`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
-		Size: 5.3 MB (5275715 bytes)  
+	-	`sha256:5542035224a42ed9b0273eff71cfd9567d9b9fa13caacbc9dfbc5b16b5df2b01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
+		Size: 5.3 MB (5275839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff8a2279cac6345a5e6770bc1d56ecf75019bb21c8fc3acf939f2e66e5fd8fde`  
-		Last Modified: Fri, 20 Nov 2026 17:58:31 GMT  
+	-	`sha256:9e8eb526030e4ae9650fb170c72e33b8fa12cb890e9311157d0cfeae1139412a`  
+		Last Modified: Mon, 23 Nov 2026 23:10:41 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre17` - linux; arm64 variant v8
+## `jruby:9.4.16.0-jre21`
 
 ```console
-$ docker pull jruby@sha256:920af3a19259d486fc0104746929427058f1b505c9a8e33ad63a9fe894bb7a4f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.4 MB (141433005 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b835936126c1b8bf6104645fe4d1dcbe2ce4276ed2dee980b678415fda699f8`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:23 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_VERSION=jdk-17.0.21+9
-# Fri, 20 Nov 2026 03:17:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='9f41bf88c7900c7097444a1bdeb84146ae692bc08842490ab098063c74bf9a8a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_linux_hotspot_17.0.21_9.tar.gz';          ;;        arm64)          ESUM='1114f09d6174f54270c3117410b5e4022b43ebc0b43b751af08b927c55ed7bb5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.21_9.tar.gz';          ;;        armhf)          ESUM='a1f61c0a9a76af31e6954f93ba329650ce16e556d0508227a50c6203ff012357';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_arm_linux_hotspot_17.0.21_9.tar.gz';          ;;        ppc64el)          ESUM='7836a98346529939fc1149a59c7159d0ea721c2028fbfade620d60e58293d65f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.21_9.tar.gz';          ;;        s390x)          ESUM='c2f8f6c55b09a5bb9c26fbdc85cad41e10860a396da447e2ce7a182480e74945';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_s390x_linux_hotspot_17.0.21_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:01 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:26 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:26 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4ef94eb3366d1bc996e03224923f408c9594b4a567d291cfaecc55658180f2a`  
-		Last Modified: Fri, 20 Nov 2026 03:16:49 GMT  
-		Size: 16.1 MB (16051440 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a85155195857b2e8c0be7c86498c6a98e34c3e4aa208a83920244d0dcfc0d48`  
-		Last Modified: Fri, 20 Nov 2026 03:17:14 GMT  
-		Size: 47.1 MB (47127995 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:156600ed8f30d6f55fb6e350fc85eb26aa1c4e0c1b29f6a84bec8d6bb2c651c0`  
-		Last Modified: Fri, 20 Nov 2026 03:17:13 GMT  
-		Size: 158.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:304248019ee9e03aec4f26f2e04319c1ca1567352e491c093d7af9fd0e6346cc`  
-		Last Modified: Fri, 20 Nov 2026 03:17:13 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22b16b9d4c2550250606bbbf6f4ddc27b0b03ebb129395a20e806a8c265ff63b`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 4.6 MB (4557550 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:054e64189c2c1828eca557c548eec8c157f72ee0c9e4b7e7718cb590f492088e`  
-		Last Modified: Fri, 20 Nov 2026 04:21:47 GMT  
-		Size: 32.8 MB (32793199 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24d7f6b7cfb87abf5d3b2545724d2b61ae10a629181a7ad742992507ad02bb10`  
-		Last Modified: Fri, 20 Nov 2026 04:21:45 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2cebfbd3a21d4842fc100e99fb784b40930cf4812c93b24a3d5beac36d14dee`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 12.9 MB (12898460 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43d323c662aa46959d51de141039e79034b421cc1d118a095d61f2829616edad`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 143.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15.0-jre17` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:b4ea40726aa7021227efe63ae401dfbacd63838016c9219d2f421d68c7e6cb17
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5266130 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef272b7d3ae649028998a7f957b573e6b310bb6c108ed311f5f1d6a4474aba86`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:651366d912f572ad5bce95ac8a9305f1714d489ac0d910adc724ac6ffb28ae07`  
-		Last Modified: Fri, 20 Nov 2026 04:21:46 GMT  
-		Size: 5.2 MB (5247126 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:fa8eec743bd49130ca8ef7fdb041c9b6169ecb4e35206d2787ca0ec2d707ee25`  
-		Last Modified: Fri, 20 Nov 2026 04:21:45 GMT  
-		Size: 19.0 KB (19004 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15.0-jre21`
-
-```console
-$ docker pull jruby@sha256:f1f0c57b6557efcfe1332654eab9d53ee6ed272c99ae7a662c62eadb6565b3bc
+$ docker pull jruby@sha256:958014780a2872b65929c813ea52fff329ffeb51684d4677dd37ba55aea9a347
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 2
 	-	linux; amd64
 	-	unknown; unknown
-	-	linux; arm64 variant v8
-	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre21` - linux; amd64
+### `jruby:9.4.16.0-jre21` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:3c65371d2abada6a0d6a11b21ac3a08a49a80def747dfa7999d19ce0c2045ad5
+$ docker pull jruby@sha256:617a6ab72d3d5a64340bcfd2cf441cf4138c867e6eaeffd0f5ea34b8c9c444ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.8 MB (150752920 bytes)**  
+-	Total Size: **149.3 MB (149345547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e197a8fd6d6d041e0989ae0d297e5b77bf1066fbcdab23f5db31264840f461a3`
+-	Image ID: `sha256:d73748d8d6139628fd71690cf1763e82ff89e008c55a675ec4a0b55add982700`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -38544,29 +37582,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:44:05 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:58:20 GMT
+# Mon, 23 Nov 2026 23:10:33 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:58:21 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:34 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:21 GMT
+# Mon, 23 Nov 2026 23:10:34 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:58:27 GMT
+# Mon, 23 Nov 2026 23:10:41 GMT
 CMD ["irb"]
 ```
 
@@ -38591,189 +37629,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:44:17 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff5ce443e320ae41bf6f905d5672bd7fddce0d9bfb0c4c487b6becdcfdace24f`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.7 MB (5690502 bytes)  
+	-	`sha256:0f6eeca8c1994a5190ac843f23c57301f104920d2b968a694f89e5f8b80ad238`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.7 MB (5690618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9064ca15d93197ae83cf0ecac08e55149be283db8d991a162bbc2503172bb195`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 32.8 MB (32793104 bytes)  
+	-	`sha256:42eb5740903358b90c201a323f2e60d1c5811c8b6b1e6c11a928f9acc55f3dc6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 31.3 MB (31317315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8109c945dd957e3cb7feaf2726c2bdcd481bd160fa9504ca9245568d417746d`  
-		Last Modified: Fri, 20 Nov 2026 17:58:36 GMT  
+	-	`sha256:3e2174f467a0e10bde044cc38206556bebc96a08e03f5565373746c731d7e5f9`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d045ae2237128b81c6ff0f48b3c8fa7d137f879c9641c3e496869eaa5a1a0e05`  
-		Last Modified: Fri, 20 Nov 2026 17:58:40 GMT  
-		Size: 12.9 MB (12853152 bytes)  
+	-	`sha256:a971b15cd27fac7cfdb627ad6d7436207cfc327eaba826f3d7f72ff6905e1bce`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 12.9 MB (12921450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aafd0fbf35079662f7feac21d038cf48e2fe930278f72845176f90630598c930`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 142.0 B  
+	-	`sha256:133431b206123548ff3ffedaaa068999954eaef5d23d3b979fb09c6d862b229d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:53 GMT  
+		Size: 144.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre21` - unknown; unknown
+### `jruby:9.4.16.0-jre21` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:7db2b16621245ea7d4e38f636ff7dc5360eed0a891471e2b9ecf63b7f9a06c39
+$ docker pull jruby@sha256:925153d6ce9fd8e4af49905f92f5bf8dd892d5c9f6204179b1c8f2b1b4952208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5295825 bytes)**  
+-	Total Size: **5.3 MB (5295949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b39fb0195073b2d5e0156227f92facb724816f95207822e8fc15135a020c6fb0`
+-	Image ID: `sha256:f643243412b0a7d58f61e0592683915c081a78c6844c656e2d603e08d10ada68`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a694c223a0837c2ef7d8346378dcce12832a66048d18639e6c0868d0b29568e`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
-		Size: 5.3 MB (5276963 bytes)  
+	-	`sha256:e83aa537f0c7e4e4a72172a3c12d55e3cd8ba6cea3249581b60205b810a68104`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
+		Size: 5.3 MB (5277087 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b61932f88767f5f3fbb2e3c79b991372b306ffc83e76b8eb625fc20aa7cc0bba`  
-		Last Modified: Fri, 20 Nov 2026 17:58:39 GMT  
+	-	`sha256:99076ae8570c11682d53347f9e218b83a9eb233ec529252ed5968f5650f9b867`  
+		Last Modified: Mon, 23 Nov 2026 23:10:52 GMT  
 		Size: 18.9 KB (18862 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre21` - linux; arm64 variant v8
+## `jruby:9.4.16.0-jre25`
 
 ```console
-$ docker pull jruby@sha256:28ea4c2007e90dea440b1f96325eccf1b3a32d50ee0d53f25c3b95577d893d36
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.7 MB (146732957 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afc9dd360ae14f140c29209bed36af23e3842115792942c3a7cb03e4ccc4a813`
--	Entrypoint: `["\/__cacert_entrypoint.sh"]`
--	Default Command: `["irb"]`
-
-```dockerfile
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG RELEASE
-# Tue, 17 Nov 2026 09:19:59 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 17 Nov 2026 09:19:59 GMT
-LABEL org.opencontainers.image.version=22.04
-# Tue, 17 Nov 2026 09:20:01 GMT
-ADD file:6bce4fdebb10a8b24e53d16e55018c30492d5ee28cb2fef5f2d3c884f6604f00 in / 
-# Tue, 17 Nov 2026 09:20:01 GMT
-CMD ["/bin/bash"]
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 03:16:23 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 03:16:23 GMT
-ENV JAVA_VERSION=jdk-21.0.13+9
-# Fri, 20 Nov 2026 03:17:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a535a1df9c6284d9618872984e026ae0352d1f7e9e0605425c0e6114f47351dd';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_x64_linux_hotspot_21.0.13_9.tar.gz';          ;;        arm64)          ESUM='b1734db7ade49c3f6acc6ae06233b8c2dd90e3e2f00f67000ae1c972aaa64d8c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.13_9.tar.gz';          ;;        ppc64el)          ESUM='4994d5bf70a58b683c86158dc1c19c973551cc225956893f91008c6180469c6c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.13_9.tar.gz';          ;;        s390x)          ESUM='f4722f400e7fce6e6d80c86d5ef68d0007694670a0a2b0bb569ad0e83dd5f996';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jre_s390x_linux_hotspot_21.0.13_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Fri, 20 Nov 2026 03:17:23 GMT
-ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:34 GMT
-RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:35 GMT
-ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:35 GMT
-RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:43 GMT
-ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:43 GMT
-RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:43 GMT
-CMD ["irb"]
-```
-
--	Layers:
-	-	`sha256:f74d428f3a50d80794f319eb7946ab24cf864bf8f7b5ce874517630417932f0c`  
-		Last Modified: Tue, 17 Nov 2026 10:29:10 GMT  
-		Size: 28.0 MB (28001401 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4ef94eb3366d1bc996e03224923f408c9594b4a567d291cfaecc55658180f2a`  
-		Last Modified: Fri, 20 Nov 2026 03:16:49 GMT  
-		Size: 16.1 MB (16051440 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:719ee3b5446024b156810745facd44f350c7feb8b22927fc0a7871032af58601`  
-		Last Modified: Fri, 20 Nov 2026 03:17:37 GMT  
-		Size: 52.4 MB (52390572 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adfe4e11e083538a3d3de416b52de5869d649515c4ab52e6d41800a04395e4ef`  
-		Last Modified: Fri, 20 Nov 2026 03:17:36 GMT  
-		Size: 155.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8001dc1c1d612395f99e6390456ca2622125a2171d0e3772ffe0e25799530fd8`  
-		Last Modified: Fri, 20 Nov 2026 03:17:36 GMT  
-		Size: 2.5 KB (2464 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b85b6d2c8e06e376582e039b1c9d5d072fbb6fa108bee9e6415e7bc83e38b7ef`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 4.6 MB (4557598 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a976e1ec32cf622a304cf7556a144d2c8c927670efd5c5b2415edd7bc34e057c`  
-		Last Modified: Fri, 20 Nov 2026 04:21:55 GMT  
-		Size: 32.8 MB (32793252 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a191452d8984614570c603f8066f5922c1e8b3f2739e68879996cfa2e803660`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 195.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07f60792d3b6385e1a303e4737b8728e9dfbc76cdee901c4ef033ca795b65a04`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 12.9 MB (12935738 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:421ef55f647c21d668bafb3ed3273f07cd8745f9bbdc90bb35c2b6e6e7435e65`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 142.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `jruby:9.4.15.0-jre21` - unknown; unknown
-
-```console
-$ docker pull jruby@sha256:bf0566514e636a8ca533137030848a29db644d2c885b694a10cb1d83a3229a62
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5267378 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:381e41a74c24057080cc73e84ea652a565839860f0ef662862ee6f3e8626e83a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:2e58b6529e976c1324fa638041166b3e78f389c85431b77c1d578f46094dc89a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:54 GMT  
-		Size: 5.2 MB (5248374 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:3e1bdefdd2aa05a9cafa989476a0c901c62e888e662130e69ef2aa0269834e3d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:53 GMT  
-		Size: 19.0 KB (19004 bytes)  
-		MIME: application/vnd.in-toto+json
-
-## `jruby:9.4.15.0-jre25`
-
-```console
-$ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3f23433b62c0
+$ docker pull jruby@sha256:4148076038197384ce4fe68517fedad1c7b2c33699c4e993f731715d6e9f2d41
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38783,16 +37687,16 @@ $ docker pull jruby@sha256:3a8da84ad256de3293f0544c3428ac86a804c9f683d53e73ea4b3
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre25` - linux; amd64
+### `jruby:9.4.16.0-jre25` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:7566e65cd05115e732af9def1dfeeee156fc1b67f408aedd1f7ae3ab499136e2
+$ docker pull jruby@sha256:bdd25c59d09d68b5b3261bb91b5308415328c8cabe1b443bcb18fab5889045a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.1 MB (157124337 bytes)**  
+-	Total Size: **155.7 MB (155696029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0ef87fb482573a651dda41a3ae2bc070d63a895e4c6fa5e4a820cf1e7020b22`
+-	Image ID: `sha256:018db2da1474a1cdb478b9c1f6436f9e4b32ccc62d2fa55ad47b8ce3e1ba7473`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -38825,29 +37729,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:14 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:47:27 GMT
+# Mon, 23 Nov 2026 23:10:36 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:47:28 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:37 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:28 GMT
+# Mon, 23 Nov 2026 23:10:37 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:47:34 GMT
+# Mon, 23 Nov 2026 23:10:43 GMT
 CMD ["irb"]
 ```
 
@@ -38872,61 +37776,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:41:27 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ee90526a3691a8717a9ee734f8afc51abe7a50e0da6e204a402edc2559b9e0`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 6.9 MB (6861549 bytes)  
+	-	`sha256:5b405c165e871b5915224e4359f8910061da51b37e48ea89b495825a7fcd52f4`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 6.9 MB (6861588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f30a8b42a224ac91d821c6de1bce58d25287dcfeb5876ea5d8c38ad15090915d`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 32.8 MB (32793153 bytes)  
+	-	`sha256:984a74d34c59e41a8c7739aeb3b6e38c15fbd9c17f96ca1f7a947b2e93aaf70d`  
+		Last Modified: Mon, 23 Nov 2026 23:10:56 GMT  
+		Size: 31.3 MB (31317366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a029786a2152c58f26221c8943e67fdb0822b35dd4cc7ef8824e1d741e1716`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 199.0 B  
+	-	`sha256:31865bc2a0506d5995a441031066bc78f59df015bba41aaaa5a119779b642bea`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c532b3b00ecd5d123d04102a4672e8e63bf7df53bd8b0e171cf803b1d0ee2387`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 12.9 MB (12946849 bytes)  
+	-	`sha256:056a08840982e349e57c37b6e83567fe51986a66247998d02355d5f1950cfd23`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 13.0 MB (12994292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a04fc5b0b81451354bbdc42e91c3db6d8d68a55c8f91a8d22edd2db841deac2`  
-		Last Modified: Fri, 20 Nov 2026 17:47:46 GMT  
-		Size: 144.0 B  
+	-	`sha256:cd9c9cafcf9e58d6f9ff9b46ec2cf5690d0c5ed398930c354be8c97d4d31a453`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre25` - unknown; unknown
+### `jruby:9.4.16.0-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:8a3e592405b4abbd121f7b342925858b6fdf285055f4540397d8f8eb5cb517eb
+$ docker pull jruby@sha256:26dce1049a15b9c74d5d04fef6de56212ff4a5532058184a67c3a24ef498974f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5121727 bytes)**  
+-	Total Size: **5.1 MB (5121851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:855760ea5dd88bccbcd97f8dcd31250600004a7924d83fe53d8eb0669d365e84`
+-	Image ID: `sha256:d4bcc23a1409965877fa01980c310032ce424946a1335521a165a21a836acb78`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d87dac5f6db8a454e9d336228709d1808836eb998ac46f30bdd06f0cd9a2839`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
-		Size: 5.1 MB (5102863 bytes)  
+	-	`sha256:d862760e01cebce62e9d1bd05fa7f0118b0f165e855ae43c8ed53cf0f055ceac`  
+		Last Modified: Mon, 23 Nov 2026 23:10:55 GMT  
+		Size: 5.1 MB (5102987 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:850ddc1468c0fd928ca7a843b0843580826296fc314e9643bae5563b0ad52040`  
-		Last Modified: Fri, 20 Nov 2026 17:47:45 GMT  
+	-	`sha256:b39c9b57993a3c51d66ffb41edecad6deefd025dcf52ae294dd2f7033fee536f`  
+		Last Modified: Mon, 23 Nov 2026 23:10:54 GMT  
 		Size: 18.9 KB (18864 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre25` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jre25` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:794b9e022120af1aa1c9d888be62dd193afe9d1f7228ec8447cd905b0a87aaa6
+$ docker pull jruby@sha256:fde8b6b19e5717b714ddf8dd04ff24721e88fb87857815912ac8ad31713a96f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.8 MB (152773433 bytes)**  
+-	Total Size: **151.4 MB (151360777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4588408f095f0219b853f0db70bbccf354c6d188146777ca065a3bfefe9649a`
+-	Image ID: `sha256:1861fd78bdf0ab66c9abe4bcaa5364011a43bb0381989bd62b6113c069a93850`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -38959,29 +37863,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 17:41:54 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 17:53:32 GMT
+# Mon, 23 Nov 2026 23:10:10 GMT
 RUN apt-get update && apt-get install -y libc6-dev make curl --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 17:53:33 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:10:11 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:33 GMT
+# Mon, 23 Nov 2026 23:10:11 GMT
 RUN mkdir -p /opt/jruby/etc        && {                echo 'install: --no-document';                echo 'update: --no-document';        } >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 17:53:41 GMT
+# Mon, 23 Nov 2026 23:10:19 GMT
 CMD ["irb"]
 ```
 
@@ -39006,55 +37910,55 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 17:42:08 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d95f3fca9557dc3073e5be610e2fc762d5f855ddb77b4e0dbba013532e8bfaa7`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.7 MB (5720816 bytes)  
+	-	`sha256:eddd40acd5298dc42a2b1f9f314a6c0480b3c98496372dd2fe66ab669c14dc01`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.7 MB (5720897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58ce61c4881557c17848c14a7d28685f194e2e66ad743934d986f5420b9dbdf`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 32.8 MB (32793089 bytes)  
+	-	`sha256:f1634f2a8b5fdcaf605c94a19e7aa81940ef13e7b2a90426c69c4e35b86881d6`  
+		Last Modified: Mon, 23 Nov 2026 23:10:32 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bafce1ee91638e8bcfbed1622616f6b8b54925cffb1d6337a664963a5f1a777`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:6d8802ba18375973ae3a850c5cda3eca395916b39ae593829bc312f47036a1b1`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25ecbcbe42e81aad89c24ac61d194b165ada09149f59dd3041caf11c96600c73`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
-		Size: 13.0 MB (12977520 bytes)  
+	-	`sha256:3e44f373aa3a20214856d5f6d590a4b521eb532d3b948a60e92cb82677b6a568`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 13.0 MB (13040487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6ec787cd8a09bf90f98fc8ab76883b6c695fde7869e188c7c95784eaa0fdb2d`  
-		Last Modified: Fri, 20 Nov 2026 17:53:52 GMT  
+	-	`sha256:9cf460349dcdbffe3bcc7d88b57cd648b505647e1a2701129abeb65481910be8`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre25` - unknown; unknown
+### `jruby:9.4.16.0-jre25` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:e61e114042b26f0ff476dbcfc3d9e6ff6369df48a523300d59e6b397f260cc21
+$ docker pull jruby@sha256:0178f4d3c7b016acc491aaaae94290c7aa33b48721ba5de3222b1e353941a28f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5093289 bytes)**  
+-	Total Size: **5.1 MB (5093413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05449abda4d7fd3d0c770cbe5babe3f7274c9f794ecc96174499dddcd4ec81ff`
+-	Image ID: `sha256:d0fb20ab2bcd58f0c3c1afd718f67cfa8d6ee6fb80c8e044bb066d4c24c3f32d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e4ed3e9b195f7fcb240ba7c36b1dcc64d222782c7c1bc9d1f6396124feea2f3`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
-		Size: 5.1 MB (5074273 bytes)  
+	-	`sha256:b3172d6bead64c6f48e99f1e85056ccfdf48f8a627b285671e725e7443564962`  
+		Last Modified: Mon, 23 Nov 2026 23:10:31 GMT  
+		Size: 5.1 MB (5074397 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4b661a7a9ad62c21e337520582831c6ffd75b01042b60ed458cb5e53ecb3c731`  
-		Last Modified: Fri, 20 Nov 2026 17:53:51 GMT  
+	-	`sha256:16eab5cd1681c8eadc96bd1eb6b376de102ae4a8c1f33397729539b1f92a79b0`  
+		Last Modified: Mon, 23 Nov 2026 23:10:30 GMT  
 		Size: 19.0 KB (19016 bytes)  
 		MIME: application/vnd.in-toto+json
 
-## `jruby:9.4.15.0-jre8`
+## `jruby:9.4.16.0-jre8`
 
 ```console
-$ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da4e0325729a4
+$ docker pull jruby@sha256:7517ff2ad2f62558bef60f2e574ee2896b64404e09beffa37ef7b194aefc5e1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39064,16 +37968,16 @@ $ docker pull jruby@sha256:2f709324ed99b3ff49c04a54a250de40f5e45c1e535be5a86b5da
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `jruby:9.4.15.0-jre8` - linux; amd64
+### `jruby:9.4.16.0-jre8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:74909ae5a56f8435c7c2c2d936096b3600e0ec0a181e1aa76ce1839cc91bc7eb
+$ docker pull jruby@sha256:5602461c95cafb3aa0ba0775f54fd1dcfe57cec463866d3dc7faad4bcb26dded
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.3 MB (128321389 bytes)**  
+-	Total Size: **126.8 MB (126845692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64573f3963d9aba91f6e210249293b6d66de2a1adfa5283ba1ec749089f0499a`
+-	Image ID: `sha256:70d1c43b52e3ea4bb702752873a58f1641eb3517a6d19f2a6b54377329244270`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -39106,29 +38010,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:15:44 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:20:35 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:20:36 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:41 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:41 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:41 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:36 GMT
+# Mon, 23 Nov 2026 23:09:42 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:20:42 GMT
+# Mon, 23 Nov 2026 23:09:47 GMT
 CMD ["irb"]
 ```
 
@@ -39153,61 +38057,61 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:15:55 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6d5c257b046e798d0c40569593ebf8922a89b9310910221e58e0f0293dee1f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.7 MB (5690576 bytes)  
+	-	`sha256:1f7bafdcd19fca0ae431990727d1fb03102eb42f1c0721ead09d3d9813947e0e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 5.7 MB (5690613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efd26c959b3e4d70d8409c692c918f93344347c7e023058c5ed8bb20ab671e89`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
-		Size: 32.8 MB (32793129 bytes)  
+	-	`sha256:1019b4e71461ead8fcad293f3d651d086153caa022e1cf128c5ec3d7492ea4f0`  
+		Last Modified: Mon, 23 Nov 2026 23:09:58 GMT  
+		Size: 31.3 MB (31317385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72b80c4ab69a546f3a3762cecab359307818beef1e69623d408d243fbf2d72f`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 198.0 B  
+	-	`sha256:027c94e016be145b87cfb80c166a50ada8a42b553c414e5572ca829e968fc1d8`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:425c2b74404fdc6097d7f677bbba6f1641b943acfb0c4b099c2d0673049fb6bd`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 1.3 MB (1297057 bytes)  
+	-	`sha256:6da21c4d3e0048e74236481c107906ef4a8234dd373f11733f8a7ff8184dee6e`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:42ac6dafff441cc99d1b88d2751163d76071a7c97c36a700f24f9e75b4f208ff`  
-		Last Modified: Fri, 20 Nov 2026 04:20:53 GMT  
+	-	`sha256:8957b35ba184895315a22bfc27713907068856eeb0c02bef7173b153360d78e2`  
+		Last Modified: Mon, 23 Nov 2026 23:09:59 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre8` - unknown; unknown
+### `jruby:9.4.16.0-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:71b9dfb2146727ba318a7e2b6482551c7c168583b6dddeb94d9697e61df86f86
+$ docker pull jruby@sha256:14c36b9191a3a8745c98a55cfd27a8b125087dd78bb738cef2b8b36eb7c896af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5327470 bytes)**  
+-	Total Size: **5.3 MB (5327594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff240141ef92a991d66a129f0b3c349e348b8b210fc4421475137927368c0e0f`
+-	Image ID: `sha256:3dcaa7574c202c19e937965276e6ac2947ed3d5f002c035fb7743735bea53e4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:19a3c5dc07e0aa6e917f045082944ece4926eae02261509b6269a9f1c2275a9a`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
-		Size: 5.3 MB (5306644 bytes)  
+	-	`sha256:105cfbf4b5ee21b92e08bdf995822b9b70afe0afb48d8383fe17d36e2a029780`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
+		Size: 5.3 MB (5306768 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:728c2dc2f07b4538b11dc27ecf508a8f87531266b11c4d738d0e5b2ca64d77c9`  
-		Last Modified: Fri, 20 Nov 2026 04:20:52 GMT  
+	-	`sha256:38e53ec9a8f973f59ac87dcc5f598b648a067c759bf47cf359526129f54ee4e9`  
+		Last Modified: Mon, 23 Nov 2026 23:09:57 GMT  
 		Size: 20.8 KB (20826 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `jruby:9.4.15.0-jre8` - linux; arm64 variant v8
+### `jruby:9.4.16.0-jre8` - linux; arm64 variant v8
 
 ```console
-$ docker pull jruby@sha256:fb0ecd209d40107b27ed29185100bbb62bb0b862c0e69d4fde5ec404374209c7
+$ docker pull jruby@sha256:4bc68989e297b1e1f23168d9db28a25ff380b250526d10451224b5fed32547b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124019159 bytes)**  
+-	Total Size: **122.5 MB (122542751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef085bd3801b2da5d8f80c7ae8f895949e99ca192938411d891dd4478f5a50c7`
+-	Image ID: `sha256:54e4ce5697aaaf9935e1b0061536073a8fd16a2790d31d55b085a0d34ee918f0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["irb"]`
 
@@ -39240,29 +38144,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Fri, 20 Nov 2026 03:16:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 20 Nov 2026 04:21:03 GMT
+# Mon, 23 Nov 2026 23:09:32 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_VERSION=9.4.15.0
-# Fri, 20 Nov 2026 04:21:04 GMT
-ENV JRUBY_SHA256=c8b8c5a7a1581fdba3ba73f7c375f793f6528117b444cc6baf6fb29bbcf9696d
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_VERSION=9.4.16.0
+# Mon, 23 Nov 2026 23:09:33 GMT
+ENV JRUBY_SHA256=f8dd8041acacac70a150db3353062c6fa7f92653057ce83ed9c7925dd9293cda
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1 # buildkit
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:04 GMT
+# Mon, 23 Nov 2026 23:09:33 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 RUN gem install bundler rake net-telnet xmlrpc # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:39 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME" # buildkit
-# Fri, 20 Nov 2026 04:21:11 GMT
+# Mon, 23 Nov 2026 23:09:40 GMT
 CMD ["irb"]
 ```
 
@@ -39287,48 +38191,48 @@ CMD ["irb"]
 		Last Modified: Fri, 20 Nov 2026 03:16:26 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f5021cc2bc6cd6dce4f974eefeaa7b6b437768a8221245b83076107701422c3`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 4.6 MB (4557585 bytes)  
+	-	`sha256:60bf10083fcc5281fc7fca0a3ced8b61f22b5740288f6984f44a1da1379242cf`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 4.6 MB (4557522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1e382e36e13e222c6170d4c050458eaa0af02424ed03be505735e16ba8ba2c2`  
-		Last Modified: Fri, 20 Nov 2026 04:21:23 GMT  
-		Size: 32.8 MB (32793193 bytes)  
+	-	`sha256:577371cd7c709863c5347cb5c1e60d27a8b4137c537982e69a7e10fe132a0bfe`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 31.3 MB (31316872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:994f8903902e9526c91335e166fb48217e4e7517ebfbfaa33f8465909fda8a1d`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 198.0 B  
+	-	`sha256:d51070d6991356713c74e9bfc4d81b546263452556526bf333e7d74826cdd028`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:194102fe060bdb0d3657b411a376073e724ff254bddedf57a8f3228ca87e9a54`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 1.3 MB (1297091 bytes)  
+	-	`sha256:3416ea6486fa02a2d81a04500af955a4d09f97e9deb398d7b19bee30e2a6c292`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
+		Size: 1.3 MB (1297068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d71acb9dc8e779c001f58aca4bf500c21e8c6761db83c9ab98617da35d2c00a`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:6fd4e31f9721ab89b199dcedc4ce04bf2b27d63afce9d57493ba50b72f814d5f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `jruby:9.4.15.0-jre8` - unknown; unknown
+### `jruby:9.4.16.0-jre8` - unknown; unknown
 
 ```console
-$ docker pull jruby@sha256:0b6b6c2e209311c323d1b946abb8beace767642aca1c26fe5ad883f04e5c56a9
+$ docker pull jruby@sha256:a513ef5203fe3d9b2c61072ca4b714a5ee33f356fa289681246b35308a12da38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5299901 bytes)**  
+-	Total Size: **5.3 MB (5300025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c3da8d283da3465b8edb1acdbbf93725ad80b25f6b3b31e24f3a12a5e7bf59b`
+-	Image ID: `sha256:1f640c936e89154c1e3cf4216d6f49bd0d060c2147a20f5cab7339378bbac283`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a093abfe69db1daa5ad18c6645bb18e2c624f7ad224be364f2ded39bbeeb8e23`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
-		Size: 5.3 MB (5278839 bytes)  
+	-	`sha256:d107680c86fecb0dec47bbd1a00dac16b90c894dcb6bb8c4da2df52a1c38ee4d`  
+		Last Modified: Mon, 23 Nov 2026 23:09:51 GMT  
+		Size: 5.3 MB (5278963 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4fd158f4e975d1e773f55dc2f394bc7f6683ea768e053a52db9626aa619f71f`  
-		Last Modified: Fri, 20 Nov 2026 04:21:22 GMT  
+	-	`sha256:c5976bad504a52d0967ca301a9cd496fab6a15f6f7a86be3a66c6bb15f076d0f`  
+		Last Modified: Mon, 23 Nov 2026 23:09:50 GMT  
 		Size: 21.1 KB (21062 bytes)  
 		MIME: application/vnd.in-toto+json
 
