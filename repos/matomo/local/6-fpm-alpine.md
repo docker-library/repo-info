@@ -1,10 +1,10 @@
-# `matomo:5.14.2-fpm-alpine`
+# `matomo:6.0.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e192a7bdbdd7e071c6f69458a09a1bd2d51b0ca31e2019cf48f488d51b9b165d`
-- Created: `2026-11-05T20:03:39.987365202Z`
-- Virtual Size: ~ 177.69 Mb  
+- Image ID: `sha256:e625daf34265fe591a804c5f8da2d67daed7ed266a2e711f3ec2ecc2b86e6b0c`
+- Created: `2026-11-24T00:10:13.240721278Z`
+- Virtual Size: ~ 184.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,12 +17,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.27.tar.xz.asc`
-  - `PHP_SHA256=dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0`
+  - `PHP_VERSION=8.4.28`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.28.tar.xz.asc`
+  - `PHP_SHA256=0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.14.2`
+  - `MATOMO_VERSION=6.0.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -352,16 +352,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -539,16 +539,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -692,16 +692,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -828,16 +828,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
