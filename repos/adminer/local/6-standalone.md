@@ -1,10 +1,10 @@
-# `adminer:6.3.0`
+# `adminer:6.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d03732a34382945746f8f0d7f366d61cac8717feb4dac1b3f3d4999cebe8eeed`
-- Created: `2026-11-19T14:59:53.902743374Z`
-- Virtual Size: ~ 122.47 Mb  
+- Image ID: `sha256:f436bc1bfa8397e619dfe2d5ac038544740252df2dcd3ce241a892d3e39754de`
+- Created: `2026-11-23T18:13:48.422794465Z`
+- Virtual Size: ~ 173.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -16,14 +16,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.28`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.28.tar.xz.asc`
-  - `PHP_SHA256=0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72`
-  - `ADMINER_VERSION=6.3.0`
-  - `ADMINER_DOWNLOAD_SHA256=641e1a31e8cc333a309e202ef9446e1fd38c2069ed5f9ee509b80d70089d0503`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=651353bc14d125b548c429cc3ffaa30b97c8b0f86b1b1692138a35a2047fba3a`
+  - `GPG_KEYS=D95C03BC702BE9515344AE3374E44BC9067701A5 016895DE9A475111D537A6E69134FF30BC5A99B5 5CFF17B64DC1C244F5D0EAC3E43535E2EB19010E`
+  - `PHP_VERSION=8.6.0`
+  - `PHP_URL=https://www.php.net/distributions/php-8.6.0.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.6.0.tar.xz.asc`
+  - `PHP_SHA256=5f84beaa3d763aee1e4feed99bf54ec692c383b322e25626807b589238c3a087`
+  - `ADMINER_VERSION=6.3.1`
+  - `ADMINER_DOWNLOAD_SHA256=a9aed04e4e68c4e46283804a69ee70cad4fbf23203b46470b760868b2fd9bd76`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=898a26e9f5c0e73fe4cdfa7fa3751e521ff8f0b36322914049da39ee883f464e`
 
 ## `apk` (`.apk`-based packages)
 
@@ -568,23 +568,6 @@ nghttp2-libs-1.70.0-r0 installed size:
 
 nghttp2-libs-1.70.0-r0 license:
 MIT
-
-```
-
-### `apk` package: `oniguruma`
-
-```console
-oniguruma-6.9.10-r0 description:
-a regular expressions library
-
-oniguruma-6.9.10-r0 webpage:
-https://github.com/kkos/oniguruma
-
-oniguruma-6.9.10-r0 installed size:
-547 KiB
-
-oniguruma-6.9.10-r0 license:
-BSD-2-Clause
 
 ```
 
