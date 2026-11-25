@@ -1,17 +1,17 @@
-# `redis:8.10.3-alpine`
+# `redis:8.12.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8642290c6a46f22d8ba0de16c5006b66a63b13412e5b8624912aaeecbc7f525`
-- Created: `2026-11-05T19:17:30.285077829Z`
-- Virtual Size: ~ 119.62 Mb  
+- Image ID: `sha256:78195281e51dbd6fe9bb58e1d804282afa7092b7f6eaa2312423729f56276c10`
+- Created: `2026-11-23T19:09:58.151104616Z`
+- Virtual Size: ~ 128.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=8.10.3`
+  - `REDIS_VERSION=8.12.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -358,16 +358,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.2-r1 description:
+zlib-1.4-r0 description:
 A compression/decompression Library
 
-zlib-1.3.2-r1 webpage:
+zlib-1.4-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.2-r1 installed size:
+zlib-1.4-r0 installed size:
 105 KiB
 
-zlib-1.3.2-r1 license:
+zlib-1.4-r0 license:
 Zlib
 
 ```
