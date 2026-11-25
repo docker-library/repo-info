@@ -1,9 +1,9 @@
-# `clojure:temurin-11-lein-2.13.0-alpine`
+# `clojure:temurin-11-lein-2.13.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:49777728d4951c3ac1ef1446b2db295d36ca6e0a8c0194f820f1aaaace239a59`
-- Created: `2026-11-10T00:35:22.027905793Z`
+- Image ID: `sha256:59ce9cfed95634774c1fddd64cadb21f8abef50f2e782ac77397ccbe62024804`
+- Created: `2026-11-23T23:58:56.168159407Z`
 - Virtual Size: ~ 335.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.33+10`
-  - `LEIN_VERSION=2.13.0`
+  - `LEIN_VERSION=2.13.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

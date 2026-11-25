@@ -1,10 +1,10 @@
-# `clojure:temurin-21-lein-2.13.0-bookworm-slim`
+# `clojure:temurin-21-lein-2.13.1-bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:117c97deade676b40d7ab1d15eed640abcec457de3a30ec83f54a4caf9ffeb6d`
-- Created: `2026-11-12T00:50:33.544481881Z`
-- Virtual Size: ~ 414.6 Mb  
+- Image ID: `sha256:bbfa5d6ff3dcdd5aebb5dac8393c2e4ec95fb1970e05b5ac50311c6338f48165`
+- Created: `2026-11-24T05:12:38.771583674Z`
+- Virtual Size: ~ 414.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.13.0`
+  - `LEIN_VERSION=2.13.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 
