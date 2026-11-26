@@ -1,19 +1,19 @@
-# `docker:29.10.0-cli`
+# `docker:29.10.1-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:97b891f39aa9710600c7dc1ce52771a12165349e750de2fbfdd45acdf6b5e178`
-- Created: `2026-11-16T20:00:28.257712199Z`
-- Virtual Size: ~ 162.8 Mb  
+- Image ID: `sha256:2bd647bb9a4c25f39473e1e56bf2ff2849065776535f5d3a7a03e4a6b106ec23`
+- Created: `2026-11-24T23:58:34.084579816Z`
+- Virtual Size: ~ 163.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.10.0`
-  - `DOCKER_BUILDX_VERSION=0.39.0`
-  - `DOCKER_COMPOSE_VERSION=5.7.1`
+  - `DOCKER_VERSION=29.10.1`
+  - `DOCKER_BUILDX_VERSION=0.39.1`
+  - `DOCKER_COMPOSE_VERSION=5.8.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -599,16 +599,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```

@@ -1,18 +1,18 @@
-# `docker:29.10.0-dind`
+# `docker:29.10.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9701238475ce12ce9acc36ee0b81a162348599d701e35b99cc934a6c58439a58`
-- Created: `2026-11-16T20:18:51.719068974Z`
-- Virtual Size: ~ 320.75 Mb  
+- Image ID: `sha256:2ab7d648da65b97e42411fbbb2a820a224cb1876e555f02c2cdfd49a8ef17dbb`
+- Created: `2026-11-25T00:08:17.446896756Z`
+- Virtual Size: ~ 327.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.10.0`
-  - `DOCKER_BUILDX_VERSION=0.39.0`
-  - `DOCKER_COMPOSE_VERSION=5.7.1`
+  - `DOCKER_VERSION=29.10.1`
+  - `DOCKER_BUILDX_VERSION=0.39.1`
+  - `DOCKER_COMPOSE_VERSION=5.8.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -310,16 +310,16 @@ BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.9-r0 description:
+libcrypto3-3.5.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.5.9-r0 webpage:
+libcrypto3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.9-r0 installed size:
+libcrypto3-3.5.9-r1 installed size:
 5099 KiB
 
-libcrypto3-3.5.9-r0 license:
+libcrypto3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -514,16 +514,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.9-r0 description:
+libssl3-3.5.9-r1 description:
 SSL shared libraries
 
-libssl3-3.5.9-r0 webpage:
+libssl3-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.9-r0 installed size:
-823 KiB
+libssl3-3.5.9-r1 installed size:
+827 KiB
 
-libssl3-3.5.9-r0 license:
+libssl3-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -701,16 +701,16 @@ SSH-OpenSSH
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.9-r0 description:
+openssl-3.5.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.9-r0 webpage:
+openssl-3.5.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.5.9-r0 installed size:
+openssl-3.5.9-r1 installed size:
 801 KiB
 
-openssl-3.5.9-r0 license:
+openssl-3.5.9-r1 license:
 Apache-2.0
 
 ```
@@ -769,16 +769,16 @@ GPL-2.0-only
 ### `apk` package: `shadow-libs`
 
 ```console
-shadow-libs-4.18.0-r1 description:
+shadow-libs-4.20.4-r0 description:
 PAM-using login and passwd utilities (usermod, useradd, ...) (libraries)
 
-shadow-libs-4.18.0-r1 webpage:
+shadow-libs-4.20.4-r0 webpage:
 https://github.com/shadow-maint/shadow
 
-shadow-libs-4.18.0-r1 installed size:
+shadow-libs-4.20.4-r0 installed size:
 118 KiB
 
-shadow-libs-4.18.0-r1 license:
+shadow-libs-4.20.4-r0 license:
 BSD-3-Clause
 
 ```
@@ -786,16 +786,16 @@ BSD-3-Clause
 ### `apk` package: `shadow-subids`
 
 ```console
-shadow-subids-4.18.0-r1 description:
+shadow-subids-4.20.4-r0 description:
 Utilities for using subordinate UIDs and GIDs
 
-shadow-subids-4.18.0-r1 webpage:
+shadow-subids-4.20.4-r0 webpage:
 https://github.com/shadow-maint/shadow
 
-shadow-subids-4.18.0-r1 installed size:
+shadow-subids-4.20.4-r0 installed size:
 105 KiB
 
-shadow-subids-4.18.0-r1 license:
+shadow-subids-4.20.4-r0 license:
 BSD-3-Clause
 
 ```
@@ -905,16 +905,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
