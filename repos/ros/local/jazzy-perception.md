@@ -107,15 +107,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA512:7bf2c541dff5262c0302a1c716ca10cdb5105f4e0ad48f3341c3c7e975b0c3ea835a298a05974c3e216a85912c368d8025ba3cdda3ff04a7683133ce5b2a286d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA512:22ebba05f37ffe8e38644907e9037379c826ff36940f0c5a96f1c7abd5c2a87109899c362e242d12f079251b8423b8234ae4b333feddad5e220351828e30c732
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz 34836 SHA512:8a576e443008d7cad04ac7474fd69322ead756aa046086347657a17bc3f318f558bc9403184f60cd04df142ac55088a5955772c9e3c0e057b7e844ac6c9fac18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.dsc' alsa-lib_1.2.11-1ubuntu0.3.dsc 3034 SHA512:d26f939ee14e738ffad5f0ceafe45426f20b97c41bfff4181474f943e75a7e29b9ce75219f2088c1b8d6b7a25d2eeeae3f4b7fe240557bc32a1947ae82e4dd07
-```
 
 ### `dpkg` source package: `ann=1.1.2+doc-9build1`
 
@@ -1637,14 +1631,9 @@ Licenses: (parsed from: `/usr/share/doc/libdw1t64/copyright`, `/usr/share/doc/li
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.190-1.1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz' elfutils_0.190-1.1ubuntu0.1.debian.tar.xz 46976 SHA512:f4bf523b754c8fd09c189483b3f084955b2b467e5e03338e2448ec0d4af478ea39a7d7bd4c2b7dfcfbe538a870ec452c51f840e6c33b0ffdec65837c2f6384cd
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1ubuntu0.1.dsc' elfutils_0.190-1.1ubuntu0.1.dsc 3410 SHA512:56440e43ecfac444cca2cbd6f2a33f2780cea395b5caa302587c4a1e602b3c4bb45dbcede76e7767b6f18f519458b52c6300ef83b80cdebc603418fe2a4a0889
-```
 
 ### `dpkg` source package: `empy=3.3.4-2`
 
@@ -1677,14 +1666,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.6.debian.tar.xz' expat_2.6.1-2ubuntu0.6.debian.tar.xz 75472 SHA512:3c6b4dcbf639c2b8f2af0c185396cee4f38c634d926029eb66d485aae42c0285b85fab16353e0dda4d23c6687b0d5875a65bb3eef3d40e17a03e17058c7b4d91
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.6.dsc' expat_2.6.1-2ubuntu0.6.dsc 1474 SHA512:2a7daabefcd9b2c2e6aaf54c6719b071beee02230c747aec450c10d781465e32e9df1a98e3c25be51f4f3a451f04f1cc497a693bb90a6c0b8670c6fd6a164a41
-```
 
 ### `dpkg` source package: `ffmpeg=7:6.1.1-3ubuntu5`
 
@@ -3342,14 +3326,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.debian.tar.xz' krb5_1.20.1-6ubuntu2.10.debian.tar.xz 132764 SHA512:217d5e53bb1876bb9125a1ab3b0206425b3180fd19dfe73808e579aa009a8c2088f994b48862e6f0b90aae3049b31e6cbb53640d4d5d04a21ef2b0a4122aa673
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.dsc' krb5_1.20.1-6ubuntu2.10.dsc 3890 SHA512:00eb9a269711aa853ec7fc32dd9b96df0fa0c0aa14812ae61a20cfb0c1101787dfac7acc3b5d6f7adcd62a60611e7dc9a13b488a9ae26a8fd08d2bb32db4f2ed
-```
 
 ### `dpkg` source package: `lame=3.100-6build1`
 
@@ -4281,14 +4260,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.9
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA512:47d93df4f584979cea26af74cd8543b13398356b5fd46b1b378f7738cee471e80b7e117f6ce307674a549182f5ce22a577c6e79a6e72fe166421efc4be04687a
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.9.debian.tar.xz' libheif_1.17.6-1ubuntu4.9.debian.tar.xz 29372 SHA512:f5181eef66a7560628c24e015e8cec498ac2841eb759e75994db862ffb86c9f18b76d756cf9f86ec5e1297f3352a65bacd7aae95d33067d990b7221ec77ca012
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.9.dsc' libheif_1.17.6-1ubuntu4.9.dsc 3561 SHA512:041fc61be887cb59584042f6cae0c793edd058c1c71f41a204e3da1a189f8630cdb3b234364a1ce856309a09befeba6df1cf813aa62c8daab6d75da68f383210
-```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build3`
 
@@ -4586,14 +4560,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpcap=1.10.4-4.1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.4.orig.tar.gz' libpcap_1.10.4.orig.tar.gz 952153 SHA512:1f6d6ddd07dae7c557054cb246437ecdaf39d579592a5a6bdf1144eea6cb5a779ac4ca647cfed11ec1b0bb18efc63b845444e497070bacefaaed19a5787ae5e1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.4-4.1ubuntu3.1.debian.tar.xz' libpcap_1.10.4-4.1ubuntu3.1.debian.tar.xz 20724 SHA512:21065b95eb97e9ec35ea8f70a736ef2679867e7de099e007c4b85ac12cd7c8df21feeb6ca321c7bda52beb85ae92871dfcd403e2d9673aea87f1ba1225b03313
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.4-4.1ubuntu3.1.dsc' libpcap_1.10.4-4.1ubuntu3.1.dsc 2077 SHA512:4ef2ebfa44e32493643d1f6c9bb7ed3e79428c92db3a99f8b5ed88385a5ea559c22a1050e8aca59435d678ab48d078ec7da3e4801a04167ecce3f3786d6653b9
-```
 
 ### `dpkg` source package: `libpciaccess=0.17-3ubuntu0.24.04.3`
 
@@ -5385,9 +5354,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libvpx=1.14.0-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0.orig.tar.xz' libvpx_1.14.0.orig.tar.xz 4374856 SHA256:11150687870e4c94479abafe5d1ed38790e68dc7bbe08880fd5fb55138e4c6f3
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0-1ubuntu2.3.debian.tar.xz' libvpx_1.14.0-1ubuntu2.3.debian.tar.xz 18964 SHA256:9605b124232fe21980e2f1a4e7d86b2cedd0f72ac7961a02171eb90a7d762c34
-'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0-1ubuntu2.3.dsc' libvpx_1.14.0-1ubuntu2.3.dsc 2374 SHA256:284e824d29a73ce6a19b3533ecbde9576bf9325add0b21f2764cb1b29f5aa167
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0.orig.tar.xz' libvpx_1.14.0.orig.tar.xz 4374856 SHA512:fcf13ac4a4dde93e691949146ee3a7c75e39076c3c239293c10911bb67aee31eea78c5fadcb4b5f01676e1298d859fae1dceafeea429c1fe2a315797d39b1a0a
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0-1ubuntu2.3.debian.tar.xz' libvpx_1.14.0-1ubuntu2.3.debian.tar.xz 18964 SHA512:eb64a096db15d9a6fa24df4d901f5c3ccc43253e9347d008f4c8d2113716c46c26449a42fad1947a00cb5e4746e95e873923c4a0e7d395a9c040ee6b5277995a
+'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.14.0-1ubuntu2.3.dsc' libvpx_1.14.0-1ubuntu2.3.dsc 2374 SHA512:6c069371e14e97159a13a43d9c8a152d4bcf1dd948442b5b906f32c970179ddca421b6ece4e23cd67d6014aa04245907e12a3d7b0ddb03cce6c69d799de41889
 ```
 
 ### `dpkg` source package: `libwacom=2.10.0-2`
@@ -13059,15 +13028,9 @@ Licenses: (parsed from: `/usr/share/doc/libspeex1/copyright`)
 - `LGPL-2.0-or-later`
 - `custom-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris speex=1.2.1-2ubuntu2.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2.1.orig.tar.gz' speex_1.2.1.orig.tar.gz 1043278 SHA512:52e00300df82e1c7fb527b245af02b99a1f37faef74d004b7cd981052f1aa22a412cb18f5c7a5618df4c958f727c97eb7385beec99d68548d5b02e76192d4e0a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2.1.orig.tar.gz.asc' speex_1.2.1.orig.tar.gz.asc 488 SHA512:1da77c67a3c2e779c8b84174fb240f7738751230a33fcfe06959a9013bfb07ea25d36d7886b968b6b93469ebc78d97c098e65e14ba725fa1930a7d589cf8c98f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2.1-2ubuntu2.24.04.1.debian.tar.xz' speex_1.2.1-2ubuntu2.24.04.1.debian.tar.xz 11120 SHA512:f6112fbdb31db90f12a475b5861cfce55cc17b0d4b4cd2ff637f1fa71e027c8e20a1231e7dedaf88c40c753a786eb139949d8e0e28c635ec0bff6ee8657c1be8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2.1-2ubuntu2.24.04.1.dsc' speex_1.2.1-2ubuntu2.24.04.1.dsc 2460 SHA512:c78f8e14352cf31a1fa0333ac4350c97da749430426cf1975843dce7a9bcfa83ef8683aa4c389e351901b3d3a8f37472010bc4b2b45e7fbaa8f4e2553d30a697
-```
 
 ### `dpkg` source package: `sphinx=7.2.6-6`
 
@@ -13102,15 +13065,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA512:dbbf32bad3912dca4d1d3366053c66dc53745d4e5c6892c10470b7452f338de03eee1406cb6c5a972c9890bd71a7b30563e4863f27bf0f2813a92ffdfd95832f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA512:8ea4a50fe730b072271978bbeee074d567bc8cbaa3bb4a8b8802e012d470fd482d800532eedea48a54fd64785f3b02aab7b033c8e2767a5e8b9f02a9cc844b80
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.9.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.9.debian.tar.xz 41668 SHA512:70d9ec234d347b014e740a4cd7a94174d0cd7d90dc2339c36de60b5d879efc6a45bb0cb4fa2fb9ac6ea7122f90acdd886d4e87466c9b706b139dcdbb307c2fea
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.9.dsc' sqlite3_3.45.1-1ubuntu2.9.dsc 2601 SHA512:83bcd59d09af7d04f5896604fec21f33fad6eafff61030b3c00a17277d571ed4e4ec4141fd01003d71b895cfe09b1b2d3f07eb1b799ef4a60a5230528c942dae
-```
 
 ### `dpkg` source package: `srt=1.5.3-1build2`
 
@@ -13370,14 +13327,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA256:0e51bcf3a3ffa5fc76ea6aeb74a797f95c84544fcc8b6a1ec5def967a78e9e12
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.5.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.5.debian.tar.xz 33152 SHA256:e3106320d41790b741b0db9a7fccf72b6a8d425743b6407e9a9dd369d958be76
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.5.dsc' tiff_4.5.1+git230720-4ubuntu2.5.dsc 2309 SHA256:46e2765124bce104413733352d548117c5e9cee73953758a2040df613f3d6b9c
-```
 
 ### `dpkg` source package: `tinyxml2=10.0.0+dfsg-2`
 

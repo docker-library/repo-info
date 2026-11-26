@@ -162,15 +162,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.15.3-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.15.3.orig.tar.bz2' alsa-lib_1.2.15.3.orig.tar.bz2 1126411 SHA512:7fc0fa8a5ae02d3404d2c262c6a14fcbb8b08e25993eac86b9e89b8419ed4d293b422da77b3eb7a1930f26c316b638e5aa7bdba78b0ada9908b0362d132a0cc0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.15.3.orig.tar.bz2.asc' alsa-lib_1.2.15.3.orig.tar.bz2.asc 833 SHA512:8b6c49dd4cc6a31fc6c569560af52778c0f78b1a11c0d686a98dd1830f9cdb957ff3e2d6da6f64d8ee177fd6f765fcd8c90cfefe87e330378ae62ddae1ea5b83
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.15.3-1ubuntu1.1.debian.tar.xz' alsa-lib_1.2.15.3-1ubuntu1.1.debian.tar.xz 35072 SHA512:360173c99ce1596fa7acbe2642751fcea1bd2890764ec48e935deaf84992231cdc24727bad620b3f584ee4e7ebde998f55360b9066d45bafdcffa5ecd432cea7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.15.3-1ubuntu1.1.dsc' alsa-lib_1.2.15.3-1ubuntu1.1.dsc 3054 SHA512:9ac4393b38fad45ecec185e9d71d16b718efdce96221bbe23552ae3ceb8ae96bb2fbedc3a1f158d2f84ddf2ac81a8bc64b27759002b596f8a39722f5ca42b4f1
-```
 
 ### `dpkg` source package: `aom=3.13.1-2ubuntu0.1`
 
@@ -1807,14 +1801,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.4-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4.orig.tar.gz' expat_2.7.4.orig.tar.gz 8448897 SHA512:0e157ce875ec993b4e495e0cd04979109c1f0f0dbfa707c113d9b4ed243c668fce20e5ef79ff8df2f30587cc182a0254794b2fb9bb53f938da608ace32903820
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1ubuntu0.2.debian.tar.xz' expat_2.7.4-1ubuntu0.2.debian.tar.xz 45356 SHA512:1bf182ebcaa1b693f5559cccd849ba9b9e3c4a30b81dae055b9662c722b5af2421fd022a160d5295fb195fad050546c697e35ec8ad36388674006b6646dab925
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.7.4-1ubuntu0.2.dsc' expat_2.7.4-1ubuntu0.2.dsc 1480 SHA512:838f8a6e59cec39179489ab892c6be84452eeea08841644f6156087867824d50668301aa4d08dc8ff0c8275709b9187990c3a45d358b339c911b95c52ad43dce
-```
 
 ### `dpkg` source package: `exprtk=0.0.3-4`
 
@@ -3696,14 +3685,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.debian.tar.xz' krb5_1.22.1-2ubuntu4.1.debian.tar.xz 109240 SHA512:6b6518bd38d6e8939b8f0295f6c07a26308b50769b848bd77cc86456052a9cdf35421f56075cd97bd07aa7a1b5509dc12bd00da3a36b94f370694fb3b889277e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.dsc' krb5_1.22.1-2ubuntu4.1.dsc 3879 SHA512:2a3e54f7a1e241eb678053b145f69161af113ab3f62a1c5cc2333098572586bcf001c98a54e246246105a269067f991ac4318a347020527a29dc56e6eee44ef8
-```
 
 ### `dpkg` source package: `lame=3.101~svn6525+dfsg-2ubuntu0.1`
 
@@ -5101,15 +5085,9 @@ Licenses: (parsed from: `/usr/share/doc/libpcap0.8t64/copyright`)
 - `NTP-UCB`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpcap=1.10.6-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.6.orig.tar.xz' libpcap_1.10.6.orig.tar.xz 682312 SHA512:d0841d91ac68dda73bad9198e7a43195ec68b04d2987500946c34fdf066924462f025b26b5b2a88bfa67d82fa946246d498cf50f3b5de4adbc8537162e1a16c4
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.6.orig.tar.xz.asc' libpcap_1.10.6.orig.tar.xz.asc 667 SHA512:5d5cfb271dc0e4878100eb82a87c9467f93ed6830ae6429967685d91da4fd0e2411e947e7bc5a4baf1d30f760699def0d89f8e57d199d24867777fd0860a56ad
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.6-1ubuntu1.1.debian.tar.xz' libpcap_1.10.6-1ubuntu1.1.debian.tar.xz 24408 SHA512:9ef32650cfddd8fbf23e7aa8e0f63fa685436748962b05f353c8b67a3ec35eedbaacca722d5d09281189319507aed50faa73067ec93a1acb636217aed6b599d0
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpcap/libpcap_1.10.6-1ubuntu1.1.dsc' libpcap_1.10.6-1ubuntu1.1.dsc 2328 SHA512:1d4ec7070ce6ce957e97ae89dc032c03cf63c72723cb4cf5c7a845ad4903631f1edab1dfe564a401ade18ca32ee720de8ac3eb2ecdf7b8dd6f20407f414b995a
-```
 
 ### `dpkg` source package: `libpciaccess=0.18.1-1ubuntu4.1`
 
@@ -13642,10 +13620,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
 ```
 
 ### `dpkg` source package: `srt=1.5.4-3`
@@ -13884,14 +13862,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0-3ubuntu5.debian.tar.xz' tiff_4.7.0-3ubuntu5.debian.tar.xz 28176 SHA256:92bdb0cfa5541b772d6f5105e21594147e0d728730f010a947dbef375aed7dd0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.7.0-3ubuntu5.dsc' tiff_4.7.0-3ubuntu5.dsc 2234 SHA256:6046f5a7201aa967d238354a2a47e819ddc305a7cc4dd26532f9e1565e66188e
-```
 
 ### `dpkg` source package: `tinyxml2=11.0.0+dfsg-1build1`
 
