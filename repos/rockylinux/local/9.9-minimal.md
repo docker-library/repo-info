@@ -414,7 +414,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-en-3.0-16.el9.noarch
-http://mirrors.rit.edu/rocky/9.9/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+http://mirror.rnet.missouri.edu/rocky/9.9/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-font-en-3.0-16.el9.noarch`
@@ -425,7 +425,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-font-en-3.0-16.el9.noarch
-http://mirrors.rit.edu/rocky/9.9/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+http://mirror.rnet.missouri.edu/rocky/9.9/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.4.0-2.el9.x86_64`
