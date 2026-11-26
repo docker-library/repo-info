@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf0d658727dd3fdaa878c6d7415401d42164cf6c11b286c1354d4130a70fcb90`
-- Created: `2026-11-20T19:47:04.045046069Z`
-- Virtual Size: ~ 237.16 Mb  
+- Image ID: `sha256:cc9cab3273c8eccc4acd1d32dfcfbf43ac43ba9e9d6547d6ee9c58f71fd37482`
+- Created: `2026-11-24T21:08:05.292766333Z`
+- Virtual Size: ~ 237.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -930,16 +930,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
