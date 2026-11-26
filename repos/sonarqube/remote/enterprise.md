@@ -1,7 +1,7 @@
 ## `sonarqube:enterprise`
 
 ```console
-$ docker pull sonarqube@sha256:9b590f4830437849cce23bad32091fbb160a05ff3a86360d011d656ed5576c4b
+$ docker pull sonarqube@sha256:73977a76b32d6d94688cb7ab20f0e7ad0ba7484f0bf8eb56e46053cdf766549c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull sonarqube@sha256:9b590f4830437849cce23bad32091fbb160a05ff3a86360d0
 ### `sonarqube:enterprise` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:ca84712241a68bb3a11c32afc523e2e8f09c4016c4a766c75c3d221f612c34bd
+$ docker pull sonarqube@sha256:f27cfb67eb6998be6370df383a0b53b89e37d74fb86f257993b54c8e192f8d90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.7 GB (1719317877 bytes)**  
+-	Total Size: **1.7 GB (1719730012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e305e1d6aa09a6012d1e893325bbdde9f850cbeb67e8f76f3a18101acc81a709`
+-	Image ID: `sha256:00c0eb4ba1c5f2eda71ee21e12a6f6384acabe6026d315706b440c2dad060382`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/entrypoint.sh"]`
 
 ```dockerfile
@@ -54,44 +54,44 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:05 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL io.k8s.description=SonarQube Server is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL io.openshift.min-cpu=400m
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL io.openshift.min-memory=2048M
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL io.openshift.non-scalable=true
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 LABEL org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 17:48:32 GMT
-ARG SONARQUBE_VERSION=2026.5.5.134787
-# Fri, 20 Nov 2026 17:48:32 GMT
-ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.5.134787.zip
-# Fri, 20 Nov 2026 17:48:32 GMT
-ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.5.5.134787 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
+ARG SONARQUBE_VERSION=2026.5.6.135699
+# Tue, 24 Nov 2026 21:29:42 GMT
+ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.6.135699.zip
+# Tue, 24 Nov 2026 21:29:42 GMT
+ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.5.6.135699 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp
+# Tue, 24 Nov 2026 21:29:42 GMT
 ENV ES_TMPDIR=/opt/sonarqube/temp
-# Fri, 20 Nov 2026 17:48:32 GMT
-# ARGS: SONARQUBE_VERSION=2026.5.5.134787 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.5.134787.zip
+# Tue, 24 Nov 2026 21:29:42 GMT
+# ARGS: SONARQUBE_VERSION=2026.5.6.135699 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.6.135699.zip
 RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         ca-certificates         curl         fonts-dejavu         gnupg         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     emsign_g3_alias='cn_emsign_ecc_root_ca__g3,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk]';     emsign_g3_sha256='86:A1:EC:BA:08:9C:4A:8D:3B:BE:27:34:C6:12:BA:34:1D:81:3E:04:3C:F9:E8:A8:62:CD:5C:57:A3:6B:BE:6B';     if keytool -list -cacerts -storepass changeit -alias "${emsign_g3_alias}" > /dev/null 2>&1; then         keytool -delete -cacerts -storepass changeit -alias "${emsign_g3_alias}";     fi;     keytool -list -cacerts -storepass changeit > /tmp/cacerts.txt;     if grep -q "${emsign_g3_sha256}" /tmp/cacerts.txt; then         echo "emSign ECC Root CA - G3 is still trusted by the JDK" >&2; exit 1;     fi;     rm /tmp/cacerts.txt;     if [ -e /etc/ssl/certs/emSign_ECC_Root_CA_-_G3.pem ]; then         echo "emSign ECC Root CA - G3 is still trusted by the OS"             "(ca-certificates $(dpkg-query -W -f='${Version}' ca-certificates))" >&2;         exit 1;     fi;     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/logs /opt/sonarqube/temp]
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 COPY --chown=root:root --chmod=555 entrypoint.sh /opt/sonarqube/docker/ # buildkit
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 WORKDIR /opt/sonarqube
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 USER sonarqube
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 STOPSIGNAL SIGINT
-# Fri, 20 Nov 2026 17:48:32 GMT
+# Tue, 24 Nov 2026 21:29:42 GMT
 ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ```
 
@@ -116,12 +116,12 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Last Modified: Fri, 20 Nov 2026 17:41:22 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d4eec63eeacec51696316469fa2c721941c6db90607dcfc53da55ecd87a7299`  
-		Last Modified: Fri, 20 Nov 2026 17:50:15 GMT  
-		Size: 1.6 GB (1573240103 bytes)  
+	-	`sha256:9674ee5505756014683a8f76e8278a5d1d50947c60592b9921685aa6161830c7`  
+		Last Modified: Tue, 24 Nov 2026 21:31:28 GMT  
+		Size: 1.6 GB (1573652238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5479dbb3f32ef5bdbbef3b21e5e8805363f280b6cbd6d198df5658ee1f64e437`  
-		Last Modified: Fri, 20 Nov 2026 17:49:48 GMT  
+	-	`sha256:5a7c60e9648111296a787c9672501546ce8405b41777ffcb2905a424641c1b43`  
+		Last Modified: Tue, 24 Nov 2026 21:31:01 GMT  
 		Size: 460.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -132,37 +132,37 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ### `sonarqube:enterprise` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:547ac051dbdf1daf80969edff78281862fe566e0769d90298840e18b27ffc502
+$ docker pull sonarqube@sha256:d0eef774d0977ab394419c68ca80c25b27636a36583412d89f4b0fb0a3c351bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.3 MB (5263558 bytes)**  
+-	Total Size: **5.3 MB (5266441 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11523c543947995478013836262c6e80a8050c3e83f72cfe1123db1652617fb2`
+-	Image ID: `sha256:a8681f241175819de189d79f89a255d31d2982a1de1451e324b72e644cbaec4d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2040de23d0869f5bc1d3cb82672b4c0f804718129a6020a426a0cbe9eb3883ed`  
-		Last Modified: Fri, 20 Nov 2026 17:49:48 GMT  
-		Size: 5.2 MB (5240868 bytes)  
+	-	`sha256:0988273547c2ff4f0c7a64ca13743c79f2cd1c00ea5f008ef34df95c17441a8c`  
+		Last Modified: Tue, 24 Nov 2026 21:31:01 GMT  
+		Size: 5.2 MB (5243750 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:29bed976b4a6effebd58dc184ce8b0496d1148f769b5a13b8dd280cbd7f55300`  
-		Last Modified: Fri, 20 Nov 2026 17:49:48 GMT  
-		Size: 22.7 KB (22690 bytes)  
+	-	`sha256:5156cb1a5b6c3a3af96b436bce440d29b069b5ed2f8a4723a704fd54ccd15621`  
+		Last Modified: Tue, 24 Nov 2026 21:31:01 GMT  
+		Size: 22.7 KB (22691 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `sonarqube:enterprise` - linux; arm64 variant v8
 
 ```console
-$ docker pull sonarqube@sha256:b77a962ab9e7f45a035cb45f04865d536071eaa716181d778f30012fc2053c9f
+$ docker pull sonarqube@sha256:e945f08e92d83109694005ac6cc632fba9afaaee38c6f7169535ebffcb6e846c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.7 GB (1718392621 bytes)**  
+-	Total Size: **1.7 GB (1718809946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a95b61d97fb6f782daec085a48142f1ee204c06dcd261eb462e1a8e2745076df`
+-	Image ID: `sha256:e42f3b5950feefb49f63c39ecb9399b294d183f12e229501e256a668ca5dcb41`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/entrypoint.sh"]`
 
 ```dockerfile
@@ -196,44 +196,44 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 20 Nov 2026 17:41:26 GMT
 CMD ["jshell"]
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL io.k8s.description=SonarQube Server is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL io.openshift.min-cpu=400m
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL io.openshift.min-memory=2048M
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL io.openshift.non-scalable=true
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 LABEL org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Nov 2026 17:54:39 GMT
-ARG SONARQUBE_VERSION=2026.5.5.134787
-# Fri, 20 Nov 2026 17:54:39 GMT
-ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.5.134787.zip
-# Fri, 20 Nov 2026 17:54:39 GMT
-ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.5.5.134787 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
+ARG SONARQUBE_VERSION=2026.5.6.135699
+# Tue, 24 Nov 2026 21:29:30 GMT
+ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.6.135699.zip
+# Tue, 24 Nov 2026 21:29:30 GMT
+ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=2026.5.6.135699 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp
+# Tue, 24 Nov 2026 21:29:30 GMT
 ENV ES_TMPDIR=/opt/sonarqube/temp
-# Fri, 20 Nov 2026 17:54:39 GMT
-# ARGS: SONARQUBE_VERSION=2026.5.5.134787 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.5.134787.zip
+# Tue, 24 Nov 2026 21:29:30 GMT
+# ARGS: SONARQUBE_VERSION=2026.5.6.135699 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-2026.5.6.135699.zip
 RUN set -eux;     deluser ubuntu;     useradd --system --uid 1000 --gid 0 sonarqube;     apt-get update;     apt-get --no-install-recommends -y install         bash         ca-certificates         curl         fonts-dejavu         gnupg         unzip;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     emsign_g3_alias='cn_emsign_ecc_root_ca__g3,o_emudhra_technologies_limited,ou_emsign_pki,c_in [jdk]';     emsign_g3_sha256='86:A1:EC:BA:08:9C:4A:8D:3B:BE:27:34:C6:12:BA:34:1D:81:3E:04:3C:F9:E8:A8:62:CD:5C:57:A3:6B:BE:6B';     if keytool -list -cacerts -storepass changeit -alias "${emsign_g3_alias}" > /dev/null 2>&1; then         keytool -delete -cacerts -storepass changeit -alias "${emsign_g3_alias}";     fi;     keytool -list -cacerts -storepass changeit > /tmp/cacerts.txt;     if grep -q "${emsign_g3_sha256}" /tmp/cacerts.txt; then         echo "emSign ECC Root CA - G3 is still trusted by the JDK" >&2; exit 1;     fi;     rm /tmp/cacerts.txt;     if [ -e /etc/ssl/certs/emSign_ECC_Root_CA_-_G3.pem ]; then         echo "emSign ECC Root CA - G3 is still trusted by the OS"             "(ca-certificates $(dpkg-query -W -f='${Version}' ca-certificates))" >&2;         exit 1;     fi;     for server in $(shuf -e hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     cd /opt;     curl --proto "=https" --fail --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --proto "=https" --fail --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chown -R sonarqube:root ${SONARQUBE_HOME};     chown -R sonarqube:root "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     chmod -R 550 ${SONARQUBE_HOME};     chmod -R 770 "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip;     rm -rf /var/lib/apt/lists/*; # buildkit
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/logs /opt/sonarqube/temp]
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 COPY --chown=root:root --chmod=555 entrypoint.sh /opt/sonarqube/docker/ # buildkit
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 WORKDIR /opt/sonarqube
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 EXPOSE map[9000/tcp:{}]
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 USER sonarqube
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 STOPSIGNAL SIGINT
-# Fri, 20 Nov 2026 17:54:39 GMT
+# Tue, 24 Nov 2026 21:29:30 GMT
 ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ```
 
@@ -258,13 +258,13 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Last Modified: Fri, 20 Nov 2026 17:41:43 GMT  
 		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c3c59ddeb250eeac4e4ad6b5d14996805d09e96b8b97456709fa033745bf266`  
-		Last Modified: Fri, 20 Nov 2026 17:56:18 GMT  
-		Size: 1.6 GB (1573257346 bytes)  
+	-	`sha256:79a51be692fbd1e67f583e4f423c02454c4a2c26f4c3eea95da354f350325eae`  
+		Last Modified: Tue, 24 Nov 2026 21:31:18 GMT  
+		Size: 1.6 GB (1573674670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:764ba9139da4419359247219e30de531f8f6fe3bc4d3d17644f37b0d734ec0f1`  
-		Last Modified: Fri, 20 Nov 2026 17:55:54 GMT  
-		Size: 459.0 B  
+	-	`sha256:78b02ce78edd6d2c53a48dedefc3771e01f725aaa6fa0707ff683ee21c4df45b`  
+		Last Modified: Tue, 24 Nov 2026 21:30:53 GMT  
+		Size: 460.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -274,23 +274,23 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ### `sonarqube:enterprise` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:fe4074566b2f383508dbc0e2456f11bf279612205bc42b4d3253fd44b5191f96
+$ docker pull sonarqube@sha256:8037471e7ad306ea27aecc6b645d364848b05b5bd2dc23c97172be2720a07fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5395180 bytes)**  
+-	Total Size: **5.4 MB (5398063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1c76aa3910c5f93d73db89d1d158e1036cdcd6a6a4aec9ba399bf99ad96ad2e`
+-	Image ID: `sha256:4ee75b63f44735228c4c59eb2f91c90cc94234416cb2c434544f8d641fb496ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0e9fb67601bb4bcb02ecde6b26ca2064e560ababcca8e36bfe3b24c85f398fed`  
-		Last Modified: Fri, 20 Nov 2026 17:55:54 GMT  
-		Size: 5.4 MB (5372386 bytes)  
+	-	`sha256:f95a9e94ad0452a6f17bead46762f9e9e428f20e766cfe9262fb3ddb77b92cae`  
+		Last Modified: Tue, 24 Nov 2026 21:30:53 GMT  
+		Size: 5.4 MB (5375268 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d163f74b1c7c203c6d0d552f8b56e4454362401a5f976e15491b3de8eed66f98`  
-		Last Modified: Fri, 20 Nov 2026 17:55:54 GMT  
-		Size: 22.8 KB (22794 bytes)  
+	-	`sha256:257c3b354a115226f9202477c7da5b01927e3af5688d64c355c662d957d5f82b`  
+		Last Modified: Tue, 24 Nov 2026 21:30:53 GMT  
+		Size: 22.8 KB (22795 bytes)  
 		MIME: application/vnd.in-toto+json
