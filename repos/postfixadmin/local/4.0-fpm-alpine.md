@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:61b0495e173baff0288fa20f348800292d55177a35ff6a3b6904068c71b20800`
-- Created: `2026-11-20T19:50:20.780094507Z`
-- Virtual Size: ~ 211.84 Mb  
+- Image ID: `sha256:62873fbe76fd146ab2bf9ff2edcb7a27dc00f66c05dea2b2a1f1dc667f7bc534`
+- Created: `2026-11-24T21:10:50.333287054Z`
+- Virtual Size: ~ 212.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -763,16 +763,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
