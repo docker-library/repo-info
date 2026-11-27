@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51009cacaa72f4aa2afd33a10ec1d175e29b47e8737e97e5cb7173a9e8066005`
-- Created: `2026-11-23T20:09:10.866805194Z`
-- Virtual Size: ~ 221.6 Mb  
+- Image ID: `sha256:a93da4d4e546102a075f27036d59da68526ceb5610a345db24b564e4ba80293b`
+- Created: `2026-11-24T05:16:44.521469838Z`
+- Virtual Size: ~ 213.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -192,11 +192,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:4.0.2-2+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:4.0.2-2+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=13.8+deb13u7`
+### `dpkg` source package: `base-files=13.8+deb13u8`
 
 Binary Packages:
 
-- `base-files=13.8+deb13u7`
+- `base-files=13.8+deb13u8`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -204,13 +204,19 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=13.8+deb13u8
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u8.dsc' base-files_13.8+deb13u8.dsc 1247 SHA256:034d399f488ceb536a407fd1138eb6b564ec709be4c19f636ff9166bb7295472
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u8.tar.xz' base-files_13.8+deb13u8.tar.xz 83524 SHA256:a86beb649384499dfa575d52dca5cc8418a51b60b4ea081dd00a68c1abd792c2
+```
 
-- http://snapshot.debian.org/package/base-files/13.8+deb13u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/13.8+deb13u8/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.8+deb13u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.8+deb13u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -1057,12 +1063,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gettext/0.23.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gettext/0.23.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.41-12+deb13u4`
+### `dpkg` source package: `glibc=2.41-12+deb13u5`
 
 Binary Packages:
 
-- `libc-bin=2.41-12+deb13u4`
-- `libc6:amd64=2.41-12+deb13u4`
+- `libc-bin=2.41-12+deb13u5`
+- `libc6:amd64=2.41-12+deb13u5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1102,17 +1108,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.41-12+deb13u4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.dsc' glibc_2.41-12+deb13u4.dsc 7576 SHA256:0915324aa646bb99abfaa9aa6ecb734b30babd28454a3e51f3152912370fbd3e
+$ apt-get source -qq --print-uris glibc=2.41-12+deb13u5
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u5.dsc' glibc_2.41-12+deb13u5.dsc 7576 SHA256:eba607a62d96947f8b7dbef8606d2e0c87f115393105bcf0f5bc1cee882a1e63
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u4.debian.tar.xz' glibc_2.41-12+deb13u4.debian.tar.xz 499524 SHA256:dda4153511bfd543502d18e5bc9323110996fe9c531f14ae3fad6eb17f027c7d
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u5.debian.tar.xz' glibc_2.41-12+deb13u5.debian.tar.xz 522972 SHA256:9f2cc9eaafec40954c7120e593376d6c964f531d596005529409dbaffdba16a6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.41-12+deb13u4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-12+deb13u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-12+deb13u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u5/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.41-12+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -3469,11 +3475,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.8.1-1+deb13u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.8.1-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1+deb13u1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1+b1`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
@@ -3482,14 +3488,14 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1.dsc' zlib_1.3.dfsg+really1.3.1-1.dsc 2637 SHA256:ede2791e29c1d3b422f9208bdd7edf040c20445ea1e7453a72037576e64fa197
+$ apt-get source -qq --print-uris zlib=1:1.3.dfsg+really1.3.1-1+deb13u1
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1%2bdeb13u1.dsc' zlib_1.3.dfsg+really1.3.1-1+deb13u1.dsc 3271 SHA256:7954224611bd043d62c094abf81cefcf9d97276479fc495767fcbc92cc6552f2
 'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1.orig.tar.gz' zlib_1.3.dfsg+really1.3.1.orig.tar.gz 1325737 SHA256:60dd315c07f616887caa029408308a018ace66e3d142726a97db164b3b8f69fb
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1.debian.tar.xz 16576 SHA256:9ed525955ce9fb0c1b39be8ff98f73450dbfc6305a9a27e6149c8972d38a0a9e
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.3.dfsg%2breally1.3.1-1%2bdeb13u1.debian.tar.xz' zlib_1.3.dfsg+really1.3.1-1+deb13u1.debian.tar.xz 17836 SHA256:4e99de80447700cf16ecf8ed3e77fabb39f085a5fffc66713466ccf07397cc04
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/ (for browsing the source)
-- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
