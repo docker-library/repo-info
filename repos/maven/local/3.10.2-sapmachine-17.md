@@ -77,15 +77,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2-data/copyright`, `/usr/share/
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.11-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2' alsa-lib_1.2.11.orig.tar.bz2 1107150 SHA512:7bf2c541dff5262c0302a1c716ca10cdb5105f4e0ad48f3341c3c7e975b0c3ea835a298a05974c3e216a85912c368d8025ba3cdda3ff04a7683133ce5b2a286d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11.orig.tar.bz2.asc' alsa-lib_1.2.11.orig.tar.bz2.asc 833 SHA512:22ebba05f37ffe8e38644907e9037379c826ff36940f0c5a96f1c7abd5c2a87109899c362e242d12f079251b8423b8234ae4b333feddad5e220351828e30c732
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz' alsa-lib_1.2.11-1ubuntu0.3.debian.tar.xz 34836 SHA512:8a576e443008d7cad04ac7474fd69322ead756aa046086347657a17bc3f318f558bc9403184f60cd04df142ac55088a5955772c9e3c0e057b7e844ac6c9fac18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.11-1ubuntu0.3.dsc' alsa-lib_1.2.11-1ubuntu0.3.dsc 3034 SHA512:d26f939ee14e738ffad5f0ceafe45426f20b97c41bfff4181474f943e75a7e29b9ce75219f2088c1b8d6b7a25d2eeeae3f4b7fe240557bc32a1947ae82e4dd07
-```
 
 ### `dpkg` source package: `apt=2.8.4ubuntu0.1`
 
@@ -584,14 +578,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.1-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1.orig.tar.gz' expat_2.6.1.orig.tar.gz 8414649 SHA512:cf6c64fc0ca55dd172ca8a6ca10d1fb2c915d0f941b0068f42cb90488022dea73e04119c49a1bd4ab9a5d425ddc132ae5f22260ff6d2e25204637a1169e7bd4f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.6.debian.tar.xz' expat_2.6.1-2ubuntu0.6.debian.tar.xz 75472 SHA512:3c6b4dcbf639c2b8f2af0c185396cee4f38c634d926029eb66d485aae42c0285b85fab16353e0dda4d23c6687b0d5875a65bb3eef3d40e17a03e17058c7b4d91
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.1-2ubuntu0.6.dsc' expat_2.6.1-2ubuntu0.6.dsc 1474 SHA512:2a7daabefcd9b2c2e6aaf54c6719b071beee02230c747aec450c10d781465e32e9df1a98e3c25be51f4f3a451f04f1cc497a693bb90a6c0b8670c6fd6a164a41
-```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
 
@@ -1026,14 +1015,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.debian.tar.xz' krb5_1.20.1-6ubuntu2.10.debian.tar.xz 132764 SHA512:217d5e53bb1876bb9125a1ab3b0206425b3180fd19dfe73808e579aa009a8c2088f994b48862e6f0b90aae3049b31e6cbb53640d4d5d04a21ef2b0a4122aa673
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.10.dsc' krb5_1.20.1-6ubuntu2.10.dsc 3890 SHA512:00eb9a269711aa853ec7fc32dd9b96df0fa0c0aa14812ae61a20cfb0c1101787dfac7acc3b5d6f7adcd62a60611e7dc9a13b488a9ae26a8fd08d2bb32db4f2ed
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
