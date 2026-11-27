@@ -1,10 +1,10 @@
-# `gradle:8.14.7-jdk11-ubi`
+# `gradle:8.14.8-jdk11-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d79dd8c41d3848c96690479ed6c47fa93fcf4d9d911935b2a115d22df789229`
-- Created: `2026-11-13T22:04:24.112762361Z`
-- Virtual Size: ~ 718.33 Mb  
+- Image ID: `sha256:be6c389e78bf82666ab82e49895258fca5e65d1e80269c1a7955f8b6c5bd4552`
+- Created: `2026-11-23T23:10:00.889737103Z`
+- Virtual Size: ~ 718.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.33+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.7`
+  - `GRADLE_VERSION=8.14.8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-12T07:09:34Z`
+  - `build-date=2026-11-20T18:10:41Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-11-12T07:09:34Z`
-  - `org.opencontainers.image.revision=c500a3e71632eb6956c45968727fbf5e847c5c1d`
-  - `release=1794467051`
+  - `org.opencontainers.image.created=2026-11-20T18:10:41Z`
+  - `org.opencontainers.image.revision=8a43e4168bacb15fdb64420d59822ce86c32934d`
+  - `release=1795198179`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=c500a3e71632eb6956c45968727fbf5e847c5c1d`
+  - `vcs-ref=8a43e4168bacb15fdb64420d59822ce86c32934d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.9`
@@ -233,15 +233,15 @@ $ dnf --quiet download --source --url crypto-policies-20260714-1.git65b74f7.el9.
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260714-1.git65b74f7.el9.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.76.1-43.el9.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-44.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.76.1-43.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-43.el9.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.76.1-44.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-44.el9_9.1.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-22.el9.x86_64`
@@ -354,15 +354,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.195-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.195-1.el9.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-9.el9_9.4.x86_64`
+### `rpm` package: `expat-2.5.0-9.el9_9.8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-9.el9_9.4
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-9.el9_9.4.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-9.el9_9.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-9.el9_9.8.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-19.el9.x86_64`
@@ -486,15 +486,15 @@ $ dnf --quiet download --source --url git-core-doc-2.52.0-1.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.52.0-1.el9.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.7.1-6.el9.x86_64`
+### `rpm` package: `git-lfs-3.7.1-6.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url git-lfs-3.7.1-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.7.1-6.el9.src.rpm
+$ dnf --quiet download --source --url git-lfs-3.7.1-6.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.7.1-6.el9_9.1.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.68.4-29.el9_9.1.x86_64`
@@ -718,15 +718,15 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-10.el9_8.1.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-10.el9_9.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_8.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_8.1.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-10.el9_9.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-10.el9_9.2.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`
@@ -883,15 +883,15 @@ $ dnf --quiet download --source --url libcom_err-1.46.5-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.46.5-8.el9.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.76.1-43.el9.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-44.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.76.1-43.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-43.el9.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.76.1-44.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-44.el9_9.1.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-57.el9_6.x86_64`
@@ -1488,26 +1488,26 @@ $ dnf --quiet download --source --url openldap-2.6.13-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.13-1.el9.src.rpm
 ```
 
-### `rpm` package: `openssh-9.9p1-16.el9_9.x86_64`
+### `rpm` package: `openssh-9.9p1-17.el9_9.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-9.9p1-16.el9_9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-16.el9_9.src.rpm
+$ dnf --quiet download --source --url openssh-9.9p1-17.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-17.el9_9.src.rpm
 ```
 
-### `rpm` package: `openssh-clients-9.9p1-16.el9_9.x86_64`
+### `rpm` package: `openssh-clients-9.9p1-17.el9_9.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-clients-9.9p1-16.el9_9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-16.el9_9.src.rpm
+$ dnf --quiet download --source --url openssh-clients-9.9p1-17.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssh-9.9p1-17.el9_9.src.rpm
 ```
 
 ### `rpm` package: `openssl-3.5.9-1.el9_9.x86_64`
@@ -2368,26 +2368,26 @@ $ dnf --quiet download --source --url rootfiles-8.1-35.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rootfiles-8.1-35.el9.src.rpm
 ```
 
-### `rpm` package: `rpm-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.16.1.3-40.el9.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-43.el9_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.16.1.3-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.16.1.3-43.el9_9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-43.el9_9.src.rpm
 ```
 
 ### `rpm` package: `sed-4.8-10.el9.x86_64`
@@ -2456,48 +2456,48 @@ $ dnf --quiet download --source --url subversion-libs-1.14.1-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/s/subversion-1.14.1-7.el9.src.rpm
 ```
 
-### `rpm` package: `systemd-252-79.el9_9.x86_64`
+### `rpm` package: `systemd-252-79.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-79.el9_9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.src.rpm
+$ dnf --quiet download --source --url systemd-252-79.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.1.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-79.el9_9.x86_64`
+### `rpm` package: `systemd-libs-252-79.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-79.el9_9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-79.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.1.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-79.el9_9.x86_64`
+### `rpm` package: `systemd-pam-252-79.el9_9.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-79.el9_9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-79.el9_9.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.1.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-79.el9_9.noarch`
+### `rpm` package: `systemd-rpm-macros-252-79.el9_9.1.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-79.el9_9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-79.el9_9.1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-79.el9_9.1.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-13.el9_8.x86_64`
