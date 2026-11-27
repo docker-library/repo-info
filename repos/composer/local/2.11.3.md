@@ -1,10 +1,10 @@
-# `composer:2.11.2`
+# `composer:2.11.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:523dc32842b22959cbd02e9c82fd225035a98d8b28d2798b7e28af1b03b5842f`
-- Created: `2026-11-20T19:38:45.128126577Z`
-- Virtual Size: ~ 231.45 Mb  
+- Image ID: `sha256:f4dd95abfaf930955fe55a3a224ce434ecfa2bd3c36f04bf221f5860c2f59338`
+- Created: `2026-11-24T20:08:45.549421331Z`
+- Virtual Size: ~ 232.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=607602acaf0c3061818e9916ec44a058e8b3d43959a83862b9cd3ec7bf5b785f`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.11.2`
+  - `COMPOSER_VERSION=2.11.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -591,16 +591,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.5.2-r1 description:
+libffi-3.8.1-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.5.2-r1 webpage:
+libffi-3.8.1-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.5.2-r1 installed size:
-38 KiB
+libffi-3.8.1-r0 installed size:
+42 KiB
 
-libffi-3.5.2-r1 license:
+libffi-3.8.1-r0 license:
 MIT
 
 ```
@@ -1101,16 +1101,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.14.10-r1 description:
+pyc-3.14.10-r2 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.14.10-r1 webpage:
+pyc-3.14.10-r2 webpage:
 https://www.python.org/
 
-pyc-3.14.10-r1 installed size:
+pyc-3.14.10-r2 installed size:
 0 B
 
-pyc-3.14.10-r1 license:
+pyc-3.14.10-r2 license:
 PSF-2.0
 
 ```
@@ -1118,16 +1118,33 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.14.10-r1 description:
+python3-3.14.10-r2 description:
 High-level scripting language
 
-python3-3.14.10-r1 webpage:
+python3-3.14.10-r2 webpage:
 https://www.python.org/
 
-python3-3.14.10-r1 installed size:
+python3-3.14.10-r2 installed size:
 22 MiB
 
-python3-3.14.10-r1 license:
+python3-3.14.10-r2 license:
+PSF-2.0
+
+```
+
+### `apk` package: `python3-ndbm`
+
+```console
+python3-ndbm-3.14.10-r3 description:
+Python stdlib extension module _dbm (dbm.ndbm)
+
+python3-ndbm-3.14.10-r3 webpage:
+https://www.python.org/
+
+python3-ndbm-3.14.10-r3 installed size:
+18 KiB
+
+python3-ndbm-3.14.10-r3 license:
 PSF-2.0
 
 ```
@@ -1135,16 +1152,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.14.10-r1 description:
+python3-pyc-3.14.10-r2 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.14.10-r1 webpage:
+python3-pyc-3.14.10-r2 webpage:
 https://www.python.org/
 
-python3-pyc-3.14.10-r1 installed size:
+python3-pyc-3.14.10-r2 installed size:
 0 B
 
-python3-pyc-3.14.10-r1 license:
+python3-pyc-3.14.10-r2 license:
 PSF-2.0
 
 ```
@@ -1152,16 +1169,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.14.10-r1 description:
+python3-pycache-pyc0-3.14.10-r2 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.14.10-r1 webpage:
+python3-pycache-pyc0-3.14.10-r2 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.14.10-r1 installed size:
+python3-pycache-pyc0-3.14.10-r2 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.14.10-r1 license:
+python3-pycache-pyc0-3.14.10-r2 license:
 PSF-2.0
 
 ```
@@ -1441,16 +1458,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
