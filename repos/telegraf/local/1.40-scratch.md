@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b9f267d5ba16236b0da5b110ea830400aea718fdd81746bc68146b6e96cd0c3`
-- Created: `2026-11-16T20:19:04.799596856Z`
-- Virtual Size: ~ 329.97 Mb  
+- Image ID: `sha256:c1dbfc2fecd0fb214efbdfb8f73baa3c491e2ce8eef0189d65fc65e7c3048b4f`
+- Created: `2026-11-26T01:32:42.368483443Z`
+- Virtual Size: ~ 335.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/telegraf"]`

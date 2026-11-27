@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:46a6927bad74b0c952fb9fac1aca13f0469e642a604bcab59a578b17716fe336`
-- Created: `2026-11-24T05:36:32.778032319Z`
-- Virtual Size: ~ 556.55 Mb  
+- Image ID: `sha256:ecda0cc97c8037ce19b7de226e9553494ec4ba628f7c6c9f96ac8b7a5155ea6e`
+- Created: `2026-11-26T01:17:22.167376342Z`
+- Virtual Size: ~ 562.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/tini","--","/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.40.3`
+  - `TELEGRAF_VERSION=1.40.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2688,11 +2688,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-32/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-32/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `telegraf=1.40.3-1`
+### `dpkg` source package: `telegraf=1.40.4-1`
 
 Binary Packages:
 
-- `telegraf=1.40.3-1`
+- `telegraf=1.40.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
