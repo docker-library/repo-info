@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec3a3dd1c4b844070f3d829d8cb731b714a8159511c6bfff543d1447c053f5e6`
-- Created: `2026-11-17T21:36:04.620726859Z`
-- Virtual Size: ~ 283.12 Mb  
+- Image ID: `sha256:9b7be16ac16cbe17dcf08f26ffb8680802dfa8624b75fec021485426dd029b5d`
+- Created: `2026-11-24T22:09:52.545214156Z`
+- Virtual Size: ~ 283.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1444,20 +1444,26 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.4.dsc' tar_1.35+dfsg-4ubuntu0.4.dsc 2124 SHA512:e07a3f1d08e737f295ab61ae81e3e80fd26b14ca7e809d321a2df037a8498f36fa230017f3db395cbeeac112a482550242310f69c9b40695c8bd467584e57d60
 ```
 
-### `dpkg` source package: `tzdata=2026e-0ubuntu0.26.04.1`
+### `dpkg` source package: `tzdata=2026f-0ubuntu0.26.04.1`
 
 Binary Packages:
 
-- `tzdata=2026e-0ubuntu0.26.04.1`
+- `tzdata=2026f-0ubuntu0.26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0ubuntu0.26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA512:26189803c8b3e903dcc467404e2feefb7d190cb1870249a23577ce31e9dcbf187e4704e0b45c8d1366d1c501bb5b53a2e80f8e2828b2163be15e532f6acab52d
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA512:aed0040524675722dc7315f9afb6e091c68d54b396fbb553f22954a527d028f32f0a6e4ff12dd433cbf54ccbb29370be8a26ebd5aaa1b85361f7d2184b93b2a7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026f-0ubuntu0.26.04.1.debian.tar.xz 191516 SHA512:5bf491f5eadf7394b83e203607ea39ba6572736b5c02def047b64cfcd75ea7063e098e5e6f00aa52a0c802b49c51e5d28d0ee487896dfd80ac05a77a6ed2bee7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f-0ubuntu0.26.04.1.dsc' tzdata_2026f-0ubuntu0.26.04.1.dsc 2712 SHA512:dcfa544bf570f5354a3071bd0bde7aae6cb5033ca09e582c9c3947e83a75162945d9752182e1d57f97c65c4ce8a87ae6ccc3f19ee59d16c0fd777e5a26eee6ae
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 
