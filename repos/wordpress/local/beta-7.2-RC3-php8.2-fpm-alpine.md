@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-RC2-php8.6-fpm-alpine`
+# `wordpress:beta-7.2-RC3-php8.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c56649925898f4c0f0c16902001227e13ce23bf8934a29b30ae80c8d0b221bd9`
-- Created: `2026-11-23T23:43:03.191455988Z`
-- Virtual Size: ~ 375.35 Mb  
+- Image ID: `sha256:0a2927b915908f08df6dfc4bdb747f655c9def06a4e8d49cb4ad8b72cc9266fb`
+- Created: `2026-11-24T21:27:11.652360919Z`
+- Virtual Size: ~ 351.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=D95C03BC702BE9515344AE3374E44BC9067701A5 016895DE9A475111D537A6E69134FF30BC5A99B5 5CFF17B64DC1C244F5D0EAC3E43535E2EB19010E`
-  - `PHP_VERSION=8.6.0`
-  - `PHP_URL=https://www.php.net/distributions/php-8.6.0.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.6.0.tar.xz.asc`
-  - `PHP_SHA256=5f84beaa3d763aee1e4feed99bf54ec692c383b322e25626807b589238c3a087`
+  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
+  - `PHP_VERSION=8.2.36`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.36.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.36.tar.xz.asc`
+  - `PHP_SHA256=df50a00d2b453096608bf2bd98a9fab9a3df8678a77b93011b65c3cfe9a018fa`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1931,16 +1931,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```

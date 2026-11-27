@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-RC2-php8.6-fpm-alpine`
+# `wordpress:beta-7.2-RC3-php8.6-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c56649925898f4c0f0c16902001227e13ce23bf8934a29b30ae80c8d0b221bd9`
-- Created: `2026-11-23T23:43:03.191455988Z`
-- Virtual Size: ~ 375.35 Mb  
+- Image ID: `sha256:0ebc9644708bd69a9a219a81a512094f378267f27d5259e7552e3e3705b23abb`
+- Created: `2026-11-24T21:29:21.584598328Z`
+- Virtual Size: ~ 376.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1931,16 +1931,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```

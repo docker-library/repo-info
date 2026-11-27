@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-RC2-php8.5-fpm-alpine`
+# `wordpress:beta-7.2-RC3-php8.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c88c59be06af9b3b825ce97c04d31445bb00deb2021cc45115e8135853e9c182`
-- Created: `2026-11-19T14:59:04.969724286Z`
-- Virtual Size: ~ 377.44 Mb  
+- Image ID: `sha256:f2d870ae4c53cabe96d6f4223c5a59061cd90f464dfb992fd802779e43a23cea`
+- Created: `2026-11-24T21:28:34.657527242Z`
+- Virtual Size: ~ 378.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -435,16 +435,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.88.1-r1 description:
+glib-2.88.4-r0 description:
 Low-level core library that forms the basis for projects such as GTK and GNOME
 
-glib-2.88.1-r1 webpage:
+glib-2.88.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.88.1-r1 installed size:
-5262 KiB
+glib-2.88.4-r0 installed size:
+5258 KiB
 
-glib-2.88.1-r1 license:
+glib-2.88.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -928,16 +928,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.5.2-r1 description:
+libffi-3.8.1-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.5.2-r1 webpage:
+libffi-3.8.1-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.5.2-r1 installed size:
-38 KiB
+libffi-3.8.1-r0 installed size:
+42 KiB
 
-libffi-3.5.2-r1 license:
+libffi-3.8.1-r0 license:
 MIT
 
 ```
@@ -1931,16 +1931,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```

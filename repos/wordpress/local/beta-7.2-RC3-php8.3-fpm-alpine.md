@@ -1,10 +1,10 @@
-# `wordpress:beta-7.2-RC2-php8.2-fpm-alpine`
+# `wordpress:beta-7.2-RC3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4315496ff7d6791a038a3b18b90bdc06bcdfb1a8dffc1534f7e2a091902f0fd5`
-- Created: `2026-11-19T14:56:32.739737148Z`
-- Virtual Size: ~ 350.79 Mb  
+- Image ID: `sha256:de2754f9d146081c87ed1e01aed15453be77fef4ccdfd812d842a296201dce5a`
+- Created: `2026-11-24T21:27:16.477792198Z`
+- Virtual Size: ~ 356.6 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.36`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.36.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.36.tar.xz.asc`
-  - `PHP_SHA256=df50a00d2b453096608bf2bd98a9fab9a3df8678a77b93011b65c3cfe9a018fa`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.37`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.37.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.37.tar.xz.asc`
+  - `PHP_SHA256=0237af84478b7a7649d3964153f1b8653d622550b846f56d63062de683fb86bb`
 
 ## `apk` (`.apk`-based packages)
 
@@ -435,16 +435,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.88.1-r1 description:
+glib-2.88.4-r0 description:
 Low-level core library that forms the basis for projects such as GTK and GNOME
 
-glib-2.88.1-r1 webpage:
+glib-2.88.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.88.1-r1 installed size:
-5262 KiB
+glib-2.88.4-r0 installed size:
+5258 KiB
 
-glib-2.88.1-r1 license:
+glib-2.88.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -928,16 +928,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.5.2-r1 description:
+libffi-3.8.1-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.5.2-r1 webpage:
+libffi-3.8.1-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.5.2-r1 installed size:
-38 KiB
+libffi-3.8.1-r0 installed size:
+42 KiB
 
-libffi-3.5.2-r1 license:
+libffi-3.8.1-r0 license:
 MIT
 
 ```
@@ -1931,16 +1931,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.7-r2 description:
+zstd-libs-1.6.0-r1 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.7-r2 webpage:
+zstd-libs-1.6.0-r1 webpage:
 https://facebook.github.io/zstd/
 
-zstd-libs-1.5.7-r2 installed size:
-697 KiB
+zstd-libs-1.6.0-r1 installed size:
+649 KiB
 
-zstd-libs-1.5.7-r2 license:
+zstd-libs-1.6.0-r1 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
