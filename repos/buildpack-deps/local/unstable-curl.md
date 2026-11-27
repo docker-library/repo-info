@@ -112,20 +112,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.2.1-1.1.2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1-1.1.2.dsc' audit_4.2.1-1.1.2.dsc 2958 SHA256:6df6d99b8a2cf6be1cd071577a89af8049bbafe76d8d354484a6f2345dcb69cd
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1.orig.tar.gz' audit_4.2.1.orig.tar.gz 756167 SHA256:42876d195ee2ded19e5f72d7664096eee314928aa36ad346719ba5b25818fc84
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1-1.1.2.debian.tar.xz' audit_4.2.1-1.1.2.debian.tar.xz 24756 SHA256:99525126c9e4efec058b3699d0adcd9af949a56f971c25fef167f5e689159ba5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.2.1-1.1.2/
 
-- https://sources.debian.net/src/audit/1:4.2.1-1.1.2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.2.1-1.1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.2.1-1.1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=14.2`
 
@@ -2428,21 +2421,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.20.3-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.dsc' shadow_4.20.3-1.dsc 2252 SHA256:40becd5eba4be29401705ceffc0c72e6c5bb018460c7db1515a058b5f2cfea1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz' shadow_4.20.3.orig.tar.xz 2331188 SHA256:623be9429f64fa2165bfc5957c6a642ec309c5cf23c0d53855c99f7591922297
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz.asc' shadow_4.20.3.orig.tar.xz.asc 833 SHA256:7e339baf514d8b141e739f1c11c88d3816b1bfdf32f69bfd069db8b4edd2d61b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.debian.tar.xz' shadow_4.20.3-1.debian.tar.xz 172764 SHA256:50585e008f56091261a176c8bdf4e90c905bb7ce81bbaae1e58f2ff666c45c6d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.20.3-1/
 
-- https://sources.debian.net/src/shadow/1:4.20.3-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.20.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.20.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.54.1-2`
 

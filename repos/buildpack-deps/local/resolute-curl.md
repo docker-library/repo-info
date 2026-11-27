@@ -925,14 +925,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.debian.tar.xz' krb5_1.22.1-2ubuntu4.1.debian.tar.xz 109240 SHA512:6b6518bd38d6e8939b8f0295f6c07a26308b50769b848bd77cc86456052a9cdf35421f56075cd97bd07aa7a1b5509dc12bd00da3a36b94f370694fb3b889277e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.dsc' krb5_1.22.1-2ubuntu4.1.dsc 3879 SHA512:2a3e54f7a1e241eb678053b145f69161af113ab3f62a1c5cc2333098572586bcf001c98a54e246246105a269067f991ac4318a347020527a29dc56e6eee44ef8
-```
 
 ### `dpkg` source package: `libassuan=3.0.2-2build1`
 
@@ -2002,10 +1997,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
 ```
 
 ### `dpkg` source package: `systemd=259.9-0ubuntu0.1`

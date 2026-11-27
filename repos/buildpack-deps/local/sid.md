@@ -198,20 +198,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.2.1-1.1.2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1-1.1.2.dsc' audit_4.2.1-1.1.2.dsc 2958 SHA256:6df6d99b8a2cf6be1cd071577a89af8049bbafe76d8d354484a6f2345dcb69cd
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1.orig.tar.gz' audit_4.2.1.orig.tar.gz 756167 SHA256:42876d195ee2ded19e5f72d7664096eee314928aa36ad346719ba5b25818fc84
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.2.1-1.1.2.debian.tar.xz' audit_4.2.1-1.1.2.debian.tar.xz 24756 SHA256:99525126c9e4efec058b3699d0adcd9af949a56f971c25fef167f5e689159ba5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.2.1-1.1.2/
 
-- https://sources.debian.net/src/audit/1:4.2.1-1.1.2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.2.1-1.1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.2.1-1.1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autoconf=2.73-2`
 
@@ -714,21 +707,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d7/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.5.4-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.4-1.dsc' dav1d_1.5.4-1.dsc 2290 SHA256:26d02dfc544581163d95b057d51df75f2d153d848edb3d881c0a560a571cb9e8
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.4.orig.tar.xz' dav1d_1.5.4.orig.tar.xz 1038852 SHA256:686616b7c69eb88d44459391ab25cac13b6647a3b288835c5784e71c1514a5c5
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.4.orig.tar.xz.asc' dav1d_1.5.4.orig.tar.xz.asc 195 SHA256:b7e9664c8d847b2e88b059843b9977a74df2a7c7d911b094821dc236671bf9fc
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.4-1.debian.tar.xz' dav1d_1.5.4-1.debian.tar.xz 8636 SHA256:d2ee2acddccd9e04a7f8c8f498f85d82f0861a187c52350e73cca21b071370df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.5.4-1/
 
-- https://sources.debian.net/src/dav1d/1.5.4-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.5.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.5.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.4`
 
@@ -1966,20 +1951,13 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-2-30/copyright`, `/usr/share/
 
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.2.3-5
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.3-5.dsc' imath_3.2.3-5.dsc 2223 SHA256:fced0e790594a6bd989f09085932c5d6f0b61a5f27608f61fac8abfa596c5e7f
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.3.orig.tar.gz' imath_3.2.3.orig.tar.gz 695800 SHA256:e10c12b3f21f45bf08e09d4215d9c7691368d747beebd840de0b6fefed2df9f8
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.2.3-5.debian.tar.xz' imath_3.2.3-5.debian.tar.xz 8652 SHA256:277d897dbaff055f38f5b22e8437ccce356d2b981fc6fe5b4caec408622ede63
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imath/3.2.3-5/
 
-- https://sources.debian.net/src/imath/3.2.3-5/ (for browsing the source)
-- https://sources.debian.net/src/imath/3.2.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imath/3.2.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69+nmu3`
 
@@ -3038,20 +3016,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw25/copyright`)
 - `GPL-3+ with Autoconf-2.0~Archive exception`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.22.3-1
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.3-1.dsc' libraw_0.22.3-1.dsc 2215 SHA256:f69390418c380a2667c04d3a2d65b9e20647bafef9f84547f883db7bddbf31bd
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.3.orig.tar.gz' libraw_0.22.3.orig.tar.gz 612784 SHA256:fc6b94387df269bdfe4dff4a38740fe703fd8df0c3bae41e294f037cdb3ecd75
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.22.3-1.debian.tar.xz' libraw_0.22.3-1.debian.tar.xz 26128 SHA256:f0edfff2feda16207e49ac91d726eaf0dcb83b82fb2e4916ea4c7de9e633fcd8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.22.3-1/
 
-- https://sources.debian.net/src/libraw/0.22.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.22.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.22.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.2-1`
 
@@ -5260,21 +5231,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.20.3-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.dsc' shadow_4.20.3-1.dsc 2252 SHA256:40becd5eba4be29401705ceffc0c72e6c5bb018460c7db1515a058b5f2cfea1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz' shadow_4.20.3.orig.tar.xz 2331188 SHA256:623be9429f64fa2165bfc5957c6a642ec309c5cf23c0d53855c99f7591922297
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3.orig.tar.xz.asc' shadow_4.20.3.orig.tar.xz.asc 833 SHA256:7e339baf514d8b141e739f1c11c88d3816b1bfdf32f69bfd069db8b4edd2d61b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.20.3-1.debian.tar.xz' shadow_4.20.3-1.debian.tar.xz 172764 SHA256:50585e008f56091261a176c8bdf4e90c905bb7ce81bbaae1e58f2ff666c45c6d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.20.3-1/
 
-- https://sources.debian.net/src/shadow/1:4.20.3-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.20.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.20.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.54.1-2`
 
@@ -5328,20 +5291,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.15.0-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.15.0-2.dsc' subversion_1.15.0-2.dsc 3757 SHA256:b41ac248cc06968c7a847afe7c341a5aaaf37725c8311fd07da4e8cb68b0923f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.15.0.orig.tar.xz' subversion_1.15.0.orig.tar.xz 6978700 SHA256:908a53516bef019b7509e127eafbd6e7a31c935644455deb55b9332885c4bd4f
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.15.0-2.debian.tar.xz' subversion_1.15.0-2.debian.tar.xz 305988 SHA256:4475a5138351b43d38562deb5ca934289f9ea781e6ac443c40f49a9a2fc3ae00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.15.0-2/
 
-- https://sources.debian.net/src/subversion/1.15.0-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.15.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=51.0-2`
 
