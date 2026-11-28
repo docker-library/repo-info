@@ -1,19 +1,19 @@
-# `mariadb:13.0.2-resolute`
+# `mariadb:13.1.2-resolute`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9606a92b7a4a4fb20c177fbb90fd08d7b60b8aa7a25c22107c6fafcc7d430c2f`
-- Created: `2026-11-11T23:30:29.225824768Z`
-- Virtual Size: ~ 371.12 Mb  
+- Image ID: `sha256:cb9942f73538ad9bcd284033fbbf051681464726fe2952fc24e68ffaccb33a3d`
+- Created: `2026-11-28T06:00:19.386801688Z`
+- Virtual Size: ~ 372.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mariadbd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.19`
+  - `GOSU_VERSION=1.20`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:13.0.2+maria~ubu2604`
+  - `MARIADB_VERSION=1:13.1.2+maria~ubu2604`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:resolute`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=13.0.2`
+  - `org.opencontainers.image.version=13.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -565,11 +565,11 @@ $ apt-get source -qq --print-uris findutils=4.10.0-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.10.0-3build2.dsc' findutils_4.10.0-3build2.dsc 2315 SHA256:fe0941ee86020480e78c3a2717b0ab36746535b50d3d158d87d46cf99774a0f3
 ```
 
-### `dpkg` source package: `galera-4=26.4.27-ubu2604`
+### `dpkg` source package: `galera-4=26.4.29-ubu2604`
 
 Binary Packages:
 
-- `galera-4=26.4.27-ubu2604`
+- `galera-4=26.4.29-ubu2604`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -972,14 +972,14 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-6ubuntu3.dsc' keyutils_1.6.3-6ubuntu3.dsc 2186 SHA256:ba44d62a5bcf68a8cbd872d8cabe7570b54a3b17101ea5ff260adf33de5c4302
 ```
 
-### `dpkg` source package: `krb5=1.22.1-2ubuntu4.1`
+### `dpkg` source package: `krb5=1.22.1-2ubuntu4.3`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.22.1-2ubuntu4.1`
-- `libk5crypto3:amd64=1.22.1-2ubuntu4.1`
-- `libkrb5-3:amd64=1.22.1-2ubuntu4.1`
-- `libkrb5support0:amd64=1.22.1-2ubuntu4.1`
+- `libgssapi-krb5-2:amd64=1.22.1-2ubuntu4.3`
+- `libk5crypto3:amd64=1.22.1-2ubuntu4.3`
+- `libkrb5-3:amd64=1.22.1-2ubuntu4.3`
+- `libkrb5support0:amd64=1.22.1-2ubuntu4.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -988,10 +988,10 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4.1
+$ apt-get source -qq --print-uris krb5=1.22.1-2ubuntu4.3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA512:c33bfada5e0c035133436031d9818ad97b0ff08578691c832b743c55751a2cf9460501d3cc658ab79655ed7a0f9f4795ba94b363d6b616795d9bdca668825c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.debian.tar.xz' krb5_1.22.1-2ubuntu4.1.debian.tar.xz 109240 SHA512:6b6518bd38d6e8939b8f0295f6c07a26308b50769b848bd77cc86456052a9cdf35421f56075cd97bd07aa7a1b5509dc12bd00da3a36b94f370694fb3b889277e
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.1.dsc' krb5_1.22.1-2ubuntu4.1.dsc 3879 SHA512:2a3e54f7a1e241eb678053b145f69161af113ab3f62a1c5cc2333098572586bcf001c98a54e246246105a269067f991ac4318a347020527a29dc56e6eee44ef8
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.3.debian.tar.xz' krb5_1.22.1-2ubuntu4.3.debian.tar.xz 128920 SHA512:b8d51b76d81628a39a5a19be0bdd7dbc3aadb64f4155108087c2af46943da2e31371f60216c2336a0f84ee41983cd57591a3c7f3f3843f16180a3a26bc0b62be
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.22.1-2ubuntu4.3.dsc' krb5_1.22.1-2ubuntu4.3.dsc 3879 SHA512:6103d3e4139d4d56d26baac18b63bd04dbbff36c40c8c8e50c8a4bae9f116647770f8d6baae0c25ae772d81616a4ea6c935071f56e24d6db0664ef0c10b03ad3
 ```
 
 ### `dpkg` source package: `libaio=0.3.113-8build1`
@@ -1562,19 +1562,19 @@ $ apt-get source -qq --print-uris lz4=1.10.0-8
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.10.0-8.debian.tar.xz' lz4_1.10.0-8.debian.tar.xz 9676 SHA256:66d57e79483da61dee090b37b005fe43657846472c854709220621434df8e84c
 ```
 
-### `dpkg` source package: `mariadb=1:13.0.2+maria~ubu2604`
+### `dpkg` source package: `mariadb=1:13.1.2+maria~ubu2604`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:13.0.2+maria~ubu2604`
-- `mariadb-backup=1:13.0.2+maria~ubu2604`
-- `mariadb-client=1:13.0.2+maria~ubu2604`
-- `mariadb-client-core=1:13.0.2+maria~ubu2604`
-- `mariadb-common=1:13.0.2+maria~ubu2604`
-- `mariadb-server=1:13.0.2+maria~ubu2604`
-- `mariadb-server-core=1:13.0.2+maria~ubu2604`
-- `mariadb-server-galera=1:13.0.2+maria~ubu2604`
-- `mysql-common=1:13.0.2+maria~ubu2604`
+- `libmariadb3:amd64=1:13.1.2+maria~ubu2604`
+- `mariadb-backup=1:13.1.2+maria~ubu2604`
+- `mariadb-client=1:13.1.2+maria~ubu2604`
+- `mariadb-client-core=1:13.1.2+maria~ubu2604`
+- `mariadb-common=1:13.1.2+maria~ubu2604`
+- `mariadb-server=1:13.1.2+maria~ubu2604`
+- `mariadb-server-core=1:13.1.2+maria~ubu2604`
+- `mariadb-server-galera=1:13.1.2+maria~ubu2604`
+- `mysql-common=1:13.1.2+maria~ubu2604`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1583,9 +1583,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:13.0.2+maria~ubu2604
-'http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.2%2bmaria%7eubu2604.dsc' mariadb_13.0.2+maria~ubu2604.dsc 4609 SHA512:800398c31996697c435a6061dcb87084e38deb1fe3703f8ae2cc5d19a0d2503d441f87f43cfd36b14f76e18fd5f163631cd7d94c45caf02133141656126813ab
-'http://archive.mariadb.org/mariadb-13.0.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.0.2%2bmaria%7eubu2604.tar.xz' mariadb_13.0.2+maria~ubu2604.tar.xz 372627800 SHA512:14930aeddba377e3997ce8e2a29028b72cd0f0243100dbf35e384697c9d657346e9089cbc8abf3fc50c8110185ade0e078c12a677fdf38f9abeb5cb66b94a464
+$ apt-get source -qq --print-uris mariadb=1:13.1.2+maria~ubu2604
+'https://archive.mariadb.org/mariadb-13.1.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.1.2%2bmaria%7eubu2604.dsc' mariadb_13.1.2+maria~ubu2604.dsc 4609 SHA512:30bc23d6e1af52897a82e8048ad028a4254fb4edbfb11db5f3523ebccb61fb178a18093dccf910c8329b1c55f4839cabbd89855d3df8720965268d7cd5cea795
+'https://archive.mariadb.org/mariadb-13.1.2/repo/ubuntu/pool/main/m/mariadb/mariadb_13.1.2%2bmaria%7eubu2604.tar.xz' mariadb_13.1.2+maria~ubu2604.tar.xz 387667080 SHA512:817b8016a30c82e91916e2e1542b4f0002329765147d6a1b86454a421b080c179a908757d291cea844e4789ea6d5018f4e2623f6fb074cf386ebc8c0dcae1734
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20260129-1`
@@ -2072,11 +2072,11 @@ $ apt-get source -qq --print-uris socat=1.8.1.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/socat/socat_1.8.1.1-1ubuntu0.1.dsc' socat_1.8.1.1-1ubuntu0.1.dsc 1980 SHA512:c51937ec610064393843e1a4deadb39d196dbe447c366b8c0654d4974d3a40378ed14358616381ed7a470a03cfb4fc355b5ec86507aea3593ad4d9c421fe9358
 ```
 
-### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.3`
+### `dpkg` source package: `sqlite3=3.46.1-9ubuntu0.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.46.1-9ubuntu0.3`
+- `libsqlite3-0:amd64=3.46.1-9ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2087,11 +2087,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.3
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.3.debian.tar.xz 38312 SHA512:a35d6c8f81ae3b5d548ecc5529d8e333974605fd5c8c2bad587b325832d66cd2791a0353c4b697d2b6009026cedcc79e6c78db893a529dd435399c7f99960544
-'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.3.dsc' sqlite3_3.46.1-9ubuntu0.3.dsc 2756 SHA512:2f180c7497f1284f9c5f64d22b9c1781ea6266af6cd2b157478ab5a145f217db33f2d4b6c5d2fce0c5ceeef4528ebc582cd5c4c43c90d496c22a4e0184fe96a0
+$ apt-get source -qq --print-uris sqlite3=3.46.1-9ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.4.debian.tar.xz' sqlite3_3.46.1-9ubuntu0.4.debian.tar.xz 40600 SHA512:0de60fba31597518559cdf938fbfe63fe63c5a023c872a64671294db81dac23a33d8d6fe00a3924747fd95b3a81b6e958fd14260d88cda2b980e22ab1960f9ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-9ubuntu0.4.dsc' sqlite3_3.46.1-9ubuntu0.4.dsc 2781 SHA512:a0e0f2fd33fb4963db764f3d7c2b801d070fe098c03b67e3498bcc3a656d83d0fac3ffe1b19295225c5160acdb72c589018b784f0e93a5ad1c7d15db3cc1742f
 ```
 
 ### `dpkg` source package: `systemd=259.9-0ubuntu0.1`
@@ -2194,20 +2194,26 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-36build2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-36build2.dsc' tcp-wrappers_7.6.q-36build2.dsc 1983 SHA256:6f891c7e3dba83750babd8f6d44797eeda56d48dff2721116dbcee66988c2d8a
 ```
 
-### `dpkg` source package: `tzdata=2026e-0ubuntu0.26.04.1`
+### `dpkg` source package: `tzdata=2026f-0ubuntu0.26.04.1`
 
 Binary Packages:
 
-- `tzdata=2026e-0ubuntu0.26.04.1`
+- `tzdata=2026f-0ubuntu0.26.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2026f-0ubuntu0.26.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz' tzdata_2026f.orig.tar.gz 483310 SHA512:26189803c8b3e903dcc467404e2feefb7d190cb1870249a23577ce31e9dcbf187e4704e0b45c8d1366d1c501bb5b53a2e80f8e2828b2163be15e532f6acab52d
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f.orig.tar.gz.asc' tzdata_2026f.orig.tar.gz.asc 833 SHA512:aed0040524675722dc7315f9afb6e091c68d54b396fbb553f22954a527d028f32f0a6e4ff12dd433cbf54ccbb29370be8a26ebd5aaa1b85361f7d2184b93b2a7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f-0ubuntu0.26.04.1.debian.tar.xz' tzdata_2026f-0ubuntu0.26.04.1.debian.tar.xz 191516 SHA512:5bf491f5eadf7394b83e203607ea39ba6572736b5c02def047b64cfcd75ea7063e098e5e6f00aa52a0c802b49c51e5d28d0ee487896dfd80ac05a77a6ed2bee7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026f-0ubuntu0.26.04.1.dsc' tzdata_2026f-0ubuntu0.26.04.1.dsc 2712 SHA512:dcfa544bf570f5354a3071bd0bde7aae6cb5033ca09e582c9c3947e83a75162945d9752182e1d57f97c65c4ce8a87ae6ccc3f19ee59d16c0fd777e5a26eee6ae
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1build1`
 

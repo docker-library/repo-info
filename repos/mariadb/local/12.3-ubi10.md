@@ -1,10 +1,10 @@
-# `mariadb:12.3.3-ubi10`
+# `mariadb:12.3.4-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d29fdfe9d3860be7e8c3c000c972b0aee1fa91e12db3eea8783f6c2063fc062d`
-- Created: `2026-11-10T21:49:45.209708354Z`
-- Virtual Size: ~ 529 Mb  
+- Image ID: `sha256:8f94f7e2f7461a3b50047c0b70a004155009ed9a077eae1632db17f362d1a139`
+- Created: `2026-11-28T06:00:14.970373621Z`
+- Virtual Size: ~ 530.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,14 +12,15 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `GOSU_VERSION=1.19`
-  - `MARIADB_VERSION=12.3.3`
+  - `OPENSSL_CONF=/etc/pki/tls/openssl-fips.cnf`
+  - `GOSU_VERSION=1.20`
+  - `MARIADB_VERSION=12.3.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-11-09T12:25:43Z`
+  - `build-date=2026-11-20T17:50:47Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
+  - `cpe=cpe:/o:redhat:enterprise_linux:10.3`
   - `description=MariaDB Database for relational SQL`
   - `distribution-scope=public`
   - `io.buildah.version=1.45.0`
@@ -31,23 +32,23 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-11-09T12:25:43Z`
+  - `org.opencontainers.image.created=2026-11-20T17:50:47Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=88e92567961fbb6491348d4f2102cb1ef2f479f2`
+  - `org.opencontainers.image.revision=0b769d32f2673a0a3230de4ecb28b42ea251c690`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=12.3.3`
+  - `org.opencontainers.image.version=12.3.4`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=88e92567961fbb6491348d4f2102cb1ef2f479f2`
+  - `vcs-ref=0b769d32f2673a0a3230de4ecb28b42ea251c690`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=12.3.3`
+  - `version=12.3.4`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -61,7 +62,12 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url attr-2.6.0-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.6.0-2.el10.src.rpm
+```
 
 ### `rpm` package: `audit-libs-4.2.1-3.0.1.el10.x86_64`
 
@@ -73,13 +79,23 @@ Licenses (from `rpm --query`): LGPL-2.0-or-later
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url authselect-1.5.3-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/authselect-1.5.3-1.el10.src.rpm
+```
 
 ### `rpm` package: `authselect-libs-1.5.3-1.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url authselect-libs-1.5.3-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/authselect-1.5.3-1.el10.src.rpm
+```
 
 ### `rpm` package: `basesystem-11-22.0.1.el10.noarch`
 
@@ -91,19 +107,34 @@ Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url bash-5.2.26-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/b/bash-5.2.26-6.el10.src.rpm
+```
 
 ### `rpm` package: `bzip2-libs-1.0.8-25.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-4-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url bzip2-libs-1.0.8-25.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-25.el10.src.rpm
+```
 
 ### `rpm` package: `ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch`
 
 Licenses (from `rpm --query`): MIT AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2026.2.92_v9.0.319-100.3.el10_2.src.rpm
+```
 
 ### `rpm` package: `chkconfig-1.30-2.0.1.el10.x86_64`
 
@@ -127,19 +158,34 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-no-invariants-or-la
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url cracklib-2.9.11-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/cracklib-2.9.11-8.el10.src.rpm
+```
 
 ### `rpm` package: `cracklib-dicts-2.9.11-8.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url cracklib-dicts-2.9.11-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/cracklib-2.9.11-8.el10.src.rpm
+```
 
 ### `rpm` package: `crypto-policies-20260811-1.git4dcd294.el10.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url crypto-policies-20260811-1.git4dcd294.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/crypto-policies-20260811-1.git4dcd294.el10.src.rpm
+```
 
 ### `rpm` package: `curl-8.12.1-6.el10.x86_64`
 
@@ -151,37 +197,67 @@ Licenses (from `rpm --query`): curl
 
 Licenses (from `rpm --query`): BSD-Attribution-HPND-disclaimer
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.28-30.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.28-30.el10_2.src.rpm
+```
 
 ### `rpm` package: `dbus-1.14.10-6.el10.x86_64`
 
 Licenses (from `rpm --query`): (AFL-2.1 OR GPL-2.0-or-later) AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dbus-1.14.10-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.14.10-6.el10.src.rpm
+```
 
 ### `rpm` package: `dbus-broker-36-5.el10_3.x86_64`
 
 Licenses (from `rpm --query`): Apache-2.0 AND LGPL-2.0-or-later AND LGPL-2.1-or-later AND (Apache-2.0 OR LGPL-2.1-or-later)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dbus-broker-36-5.el10_3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-36-5.el10_3.src.rpm
+```
 
 ### `rpm` package: `dbus-common-1.14.10-6.el10.noarch`
 
 Licenses (from `rpm --query`): (AFL-2.1 OR GPL-2.0-or-later) AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dbus-common-1.14.10-6.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.14.10-6.el10.src.rpm
+```
 
 ### `rpm` package: `dbus-libs-1.14.10-6.el10.x86_64`
 
 Licenses (from `rpm --query`): (AFL-2.1 OR GPL-2.0-or-later) AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url dbus-libs-1.14.10-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.14.10-6.el10.src.rpm
+```
 
 ### `rpm` package: `diffutils-3.10-8.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url diffutils-3.10-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/diffutils-3.10-8.el10.src.rpm
+```
 
 ### `rpm` package: `dnf-4.20.0-28.0.1.el10.noarch`
 
@@ -205,19 +281,34 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url elfutils-default-yama-scope-0.195-1.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.195-1.el10.src.rpm
+```
 
 ### `rpm` package: `elfutils-libelf-0.195-1.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url elfutils-libelf-0.195-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.195-1.el10.src.rpm
+```
 
 ### `rpm` package: `elfutils-libs-0.195-1.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url elfutils-libs-0.195-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.195-1.el10.src.rpm
+```
 
 ### `rpm` package: `expat-2.7.3-1.el10_2.7.x86_64`
 
@@ -229,37 +320,67 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): BSD-2-Clause-Darwin AND BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url file-libs-5.45-12.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/f/file-5.45-12.el10.src.rpm
+```
 
 ### `rpm` package: `filesystem-3.18-17.el10.x86_64`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url filesystem-3.18-17.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/f/filesystem-3.18-17.el10.src.rpm
+```
 
 ### `rpm` package: `findutils-4.10.0-5.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url findutils-4.10.0-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/f/findutils-4.10.0-5.el10.src.rpm
+```
 
 ### `rpm` package: `gawk-5.3.0-7.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gawk-5.3.0-7.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gawk-5.3.0-7.el10.src.rpm
+```
 
 ### `rpm` package: `gdbm-1.23-12.el10_0.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gdbm-1.23-12.el10_0
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-12.el10_0.src.rpm
+```
 
 ### `rpm` package: `gdbm-libs-1.23-12.el10_0.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gdbm-libs-1.23-12.el10_0
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-12.el10_0.src.rpm
+```
 
 ### `rpm` package: `glib2-2.80.4-22.el10.x86_64`
 
@@ -289,13 +410,23 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-late
 
 Licenses (from `rpm --query`): (LGPL-3.0-or-later OR GPL-2.0-or-later OR (LGPL-3.0-or-later AND GPL-2.0-or-later)) AND GFDL-1.3-invariants-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gmp-6.2.1-12.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gmp-6.2.1-12.el10.src.rpm
+```
 
 ### `rpm` package: `gnutls-3.8.10-5.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gnutls-3.8.10-5.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gnutls-3.8.10-5.el10_2.src.rpm
+```
 
 ### `rpm` package: `gpg-pubkey-8b4efbe6-61e77439`
 
@@ -313,19 +444,34 @@ Licenses (from `rpm --query`): pubkey
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-3.0-or-later AND LGPL-2.1-or-later AND GPL-2.0-or-later AND LGPL-2.0-or-later AND GFDL-1.3-no-invariants-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url grep-3.11-10.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/grep-3.11-10.el10.src.rpm
+```
 
 ### `rpm` package: `gzip-1.13-4.el10_2.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GFDL-1.3-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url gzip-1.13-4.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/g/gzip-1.13-4.el10_2.src.rpm
+```
 
 ### `rpm` package: `ima-evm-utils-1.6.2-6.el10.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ima-evm-utils-1.6.2-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/i/ima-evm-utils-1.6.2-6.el10.src.rpm
+```
 
 ### `rpm` package: `initscripts-10.26-2.0.1.el10.x86_64`
 
@@ -349,19 +495,34 @@ Licenses (from `rpm --query`): GPL-2.0-only
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url json-c-0.18-3.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/j/json-c-0.18-3.el10.src.rpm
+```
 
 ### `rpm` package: `keyutils-1.6.3-5.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url keyutils-1.6.3-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/k/keyutils-1.6.3-5.el10.src.rpm
+```
 
 ### `rpm` package: `keyutils-libs-1.6.3-5.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url keyutils-libs-1.6.3-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/k/keyutils-1.6.3-5.el10.src.rpm
+```
 
 ### `rpm` package: `krb5-libs-1.21.3-11.0.1.el10.x86_64`
 
@@ -373,19 +534,34 @@ Licenses (from `rpm --query`): Brian-Gladman-2-Clause AND BSD-2-Clause AND (BSD-
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libacl-2.4.0-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/acl-2.4.0-2.el10.src.rpm
+```
 
 ### `rpm` package: `libarchive-3.7.7-11.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause AND FSFULLR AND GPL-2.0-or-later WITH Libtool-exception AND BSD-3-Clause AND FSFUL
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.7.7-11.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.7.7-11.el10_2.src.rpm
+```
 
 ### `rpm` package: `libattr-2.6.0-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libattr-2.6.0-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/a/attr-2.6.0-2.el10.src.rpm
+```
 
 ### `rpm` package: `libblkid-2.40.2-23.0.1.el10_3.x86_64`
 
@@ -403,31 +579,56 @@ Licenses (from `rpm --query`): MIT
 
 Licenses (from `rpm --query`): BSD-3-Clause OR GPL-2.0-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcap-2.69-7.el10_2.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcap-2.69-7.el10_2.1.src.rpm
+```
 
 ### `rpm` package: `libcap-ng-0.9.3-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcap-ng-0.9.3-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcap-ng-0.9.3-2.el10.src.rpm
+```
 
 ### `rpm` package: `libcbor-0.11.0-3.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcbor-0.11.0-3.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcbor-0.11.0-3.el10.src.rpm
+```
 
 ### `rpm` package: `libcom_err-1.47.1-5.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcom_err-1.47.1-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/e/e2fsprogs-1.47.1-5.el10.src.rpm
+```
 
 ### `rpm` package: `libcomps-0.1.21-3.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libcomps-0.1.21-3.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
+```
 
 ### `rpm` package: `libcurl-8.12.1-6.el10.x86_64`
 
@@ -445,31 +646,56 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libeconf-0.6.2-4.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libeconf-0.6.2-4.el10.src.rpm
+```
 
 ### `rpm` package: `libedit-3.1-52.20230828cvs.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND BSD-2-Clause AND ISC
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libedit-3.1-52.20230828cvs.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libedit-3.1-52.20230828cvs.el10.src.rpm
+```
 
 ### `rpm` package: `libestr-0.1.11-11.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libestr-0.1.11-11.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/source/SRPMS/Packages/l/libestr-0.1.11-11.el10.src.rpm
+```
 
 ### `rpm` package: `libevent-2.1.13-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND ISC AND LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libevent-2.1.13-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.13-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `libfastjson-1.2304.0-6.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libfastjson-1.2304.0-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/appstream/source/SRPMS/Packages/l/libfastjson-1.2304.0-6.el10.src.rpm
+```
 
 ### `rpm` package: `libfdisk-2.40.2-23.0.1.el10_3.x86_64`
 
@@ -481,13 +707,23 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libffi-3.4.4-10.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libffi-3.4.4-10.el10.src.rpm
+```
 
 ### `rpm` package: `libfido2-1.14.0-7.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libfido2-1.14.0-7.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libfido2-1.14.0-7.el10.src.rpm
+```
 
 ### `rpm` package: `libgcc-14.4.1-3.0.1.el10.x86_64`
 
@@ -505,13 +741,23 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-3.0-or-later AND (GPL-3
 
 Licenses (from `rpm --query`): (GPL-2.0-or-later OR LGPL-3.0-or-later) AND GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libidn2-2.3.7-3.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libidn2-2.3.7-3.el10.src.rpm
+```
 
 ### `rpm` package: `libmodulemd-2.15.0-12.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libmodulemd-2.15.0-12.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libmodulemd-2.15.0-12.el10.src.rpm
+```
 
 ### `rpm` package: `libmount-2.40.2-23.0.1.el10_3.x86_64`
 
@@ -523,55 +769,100 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libnghttp2-1.68.0-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/n/nghttp2-1.68.0-6.el10.src.rpm
+```
 
 ### `rpm` package: `libpsl-0.21.5-6.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpsl-0.21.5-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libpsl-0.21.5-6.el10.src.rpm
+```
 
 ### `rpm` package: `libpwquality-1.4.5-13.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause OR GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpwquality-1.4.5-13.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libpwquality-1.4.5-13.el10.src.rpm
+```
 
 ### `rpm` package: `librepo-1.19.0-1.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url librepo-1.19.0-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/librepo-1.19.0-1.el10.src.rpm
+```
 
 ### `rpm` package: `libseccomp-2.5.6-1.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libseccomp-2.5.6-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libseccomp-2.5.6-1.el10.src.rpm
+```
 
 ### `rpm` package: `libselinux-3.11-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libselinux-3.11-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libselinux-3.11-2.el10.src.rpm
+```
 
 ### `rpm` package: `libselinux-utils-3.11-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libselinux-utils-3.11-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libselinux-3.11-2.el10.src.rpm
+```
 
 ### `rpm` package: `libsemanage-3.11-1.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libsemanage-3.11-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libsemanage-3.11-1.el10.src.rpm
+```
 
 ### `rpm` package: `libsepol-3.11-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libsepol-3.11-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libsepol-3.11-2.el10.src.rpm
+```
 
 ### `rpm` package: `libsmartcols-2.40.2-23.0.1.el10_3.x86_64`
 
@@ -583,19 +874,34 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libsolv-0.7.33-5.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.33-5.el10_2.src.rpm
+```
 
 ### `rpm` package: `libssh-0.12.2-2.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libssh-0.12.2-2.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.12.2-2.el10.src.rpm
+```
 
 ### `rpm` package: `libssh-config-0.12.2-2.el10.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libssh-config-0.12.2-2.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libssh-0.12.2-2.el10.src.rpm
+```
 
 ### `rpm` package: `libstdc++-14.4.1-3.0.1.el10.x86_64`
 
@@ -607,19 +913,34 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-3.0-or-later AND (GPL-3
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libtasn1-4.20.0-5.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.20.0-5.el10_2.src.rpm
+```
 
 ### `rpm` package: `libunistring-1.1-10.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later OR LGPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libunistring-1.1-10.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libunistring-1.1-10.el10.src.rpm
+```
 
 ### `rpm` package: `libutempter-1.2.1-15.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND LGPL-2.1-only AND BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libutempter-1.2.1-15.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libutempter-1.2.1-15.el10.src.rpm
+```
 
 ### `rpm` package: `libuuid-2.40.2-23.0.1.el10_3.x86_64`
 
@@ -631,13 +952,23 @@ Licenses (from `rpm --query`): BSD-3-Clause
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libverto-0.3.2-10.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libverto-0.3.2-10.el10.src.rpm
+```
 
 ### `rpm` package: `libxcrypt-4.4.36-10.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND BSD-3-Clause AND BSD-2-Clause AND BSD-2-Clause-FreeBSD AND 0BSD AND CC0-1.0 AND LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxcrypt-4.4.36-10.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.36-10.el10.src.rpm
+```
 
 ### `rpm` package: `libxml2-2.12.5-15.el10.x86_64`
 
@@ -649,55 +980,100 @@ Licenses (from `rpm --query`): MIT AND ISC-Veillard AND W3C
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libyaml-0.2.5-16.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libyaml-0.2.5-16.el10.src.rpm
+```
 
 ### `rpm` package: `libzstd-1.5.5-9.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-only
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libzstd-1.5.5-9.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/z/zstd-1.5.5-9.el10.src.rpm
+```
 
 ### `rpm` package: `lua-libs-5.4.8-1.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lua-libs-5.4.8-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/lua-5.4.8-1.el10.src.rpm
+```
 
 ### `rpm` package: `lz4-libs-1.9.4-8.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later AND BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url lz4-libs-1.9.4-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/lz4-1.9.4-8.el10.src.rpm
+```
 
 ### `rpm` package: `mpdecimal-2.5.1-12.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url mpdecimal-2.5.1-12.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/m/mpdecimal-2.5.1-12.el10.src.rpm
+```
 
 ### `rpm` package: `mpfr-4.2.1-8.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url mpfr-4.2.1-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/m/mpfr-4.2.1-8.el10.src.rpm
+```
 
 ### `rpm` package: `ncurses-base-6.4-15.20240127.el10_1.noarch`
 
 Licenses (from `rpm --query`): MIT-open-group
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ncurses-base-6.4-15.20240127.el10_1.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
+```
 
 ### `rpm` package: `ncurses-libs-6.4-15.20240127.el10_1.x86_64`
 
 Licenses (from `rpm --query`): MIT-open-group
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url ncurses-libs-6.4-15.20240127.el10_1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/n/ncurses-6.4-15.20240127.el10_1.src.rpm
+```
 
 ### `rpm` package: `openldap-2.6.13-1.el10.x86_64`
 
 Licenses (from `rpm --query`): OLDAP-2.8
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openldap-2.6.13-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.13-1.el10.src.rpm
+```
 
 ### `rpm` package: `openssh-9.9p1-33.0.1.el10_3.x86_64`
 
@@ -751,25 +1127,45 @@ Licenses (from `rpm --query`): GPLv2
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url p11-kit-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `p11-kit-trust-0.26.4-1.el10_2.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url p11-kit-trust-0.26.4-1.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.26.4-1.el10_2.src.rpm
+```
 
 ### `rpm` package: `pam-1.6.1-11.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam-1.6.1-11.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-11.el10.src.rpm
+```
 
 ### `rpm` package: `pam-libs-1.6.1-11.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam-libs-1.6.1-11.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/pam-1.6.1-11.el10.src.rpm
+```
 
 ### `rpm` package: `pcre2-10.44-1.5.0.1.el10_2.x86_64`
 
@@ -787,25 +1183,45 @@ Licenses (from `rpm --query`): BSD-3-Clause AND FSFULLR AND X11 AND GPL-2.0-or-l
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url policycoreutils-3.11-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.11-1.el10.src.rpm
+```
 
 ### `rpm` package: `popt-1.19-8.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT AND LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url popt-1.19-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/popt-1.19-8.el10.src.rpm
+```
 
 ### `rpm` package: `procps-ng-4.0.4-13.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url procps-ng-4.0.4-13.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/procps-ng-4.0.4-13.el10.src.rpm
+```
 
 ### `rpm` package: `publicsuffix-list-dafsa-20240107-5.el10.noarch`
 
 Licenses (from `rpm --query`): MPL-2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url publicsuffix-list-dafsa-20240107-5.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/publicsuffix-list-20240107-5.el10.src.rpm
+```
 
 ### `rpm` package: `python3-3.12.15-1.0.1.el10_2.x86_64`
 
@@ -817,13 +1233,23 @@ Licenses (from `rpm --query`): Python-2.0.1
 
 Licenses (from `rpm --query`): (Apache-2.0 AND BSD-3-Clause) OR BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-dateutil-2.9.0.post0-1.el10_0.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/python-dateutil-2.9.0.post0-1.el10_0.src.rpm
+```
 
 ### `rpm` package: `python3-dbus-1.3.2-8.el10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-dbus-1.3.2-8.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/d/dbus-python-1.3.2-8.el10.src.rpm
+```
 
 ### `rpm` package: `python3-dnf-4.20.0-28.0.1.el10.noarch`
 
@@ -847,7 +1273,12 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later
 
 Licenses (from `rpm --query`): GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-libcomps-0.1.21-3.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libcomps-0.1.21-3.el10.src.rpm
+```
 
 ### `rpm` package: `python3-libdnf-0.73.1-17.0.1.el10.x86_64`
 
@@ -865,7 +1296,12 @@ Licenses (from `rpm --query`): Python-2.0.1 AND CC0-1.0
 
 Licenses (from `rpm --query`): MIT AND Python-2.0.1 AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND ISC AND LGPL-2.1-only AND MPL-2.0 AND (Apache-2.0 OR BSD-2-Clause)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-pip-wheel-23.3.2-11.el10_2.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/python-pip-23.3.2-11.el10_2.src.rpm
+```
 
 ### `rpm` package: `python3-rpm-4.19.1.1-25.el10.x86_64`
 
@@ -877,19 +1313,34 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-six-1.16.0-16.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/python-six-1.16.0-16.el10.src.rpm
+```
 
 ### `rpm` package: `python3-systemd-235-11.el10.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url python3-systemd-235-11.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/p/python-systemd-235-11.el10.src.rpm
+```
 
 ### `rpm` package: `readline-8.2-11.el10.x86_64`
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND GPL-2.0-or-later AND GFDL-1.3-no-invariants-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url readline-8.2-11.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/r/readline-8.2-11.el10.src.rpm
+```
 
 ### `rpm` package: `redhat-release-10.3-15.0.1.el10.x86_64`
 
@@ -901,7 +1352,12 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): LicenseRef-Not-Copyrightable
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rootfiles-8.1-54.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/r/rootfiles-8.1-54.el10.src.rpm
+```
 
 ### `rpm` package: `rpm-4.19.1.1-25.el10.x86_64`
 
@@ -931,7 +1387,12 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): LGPL-2.0-or-later AND Apache-2.0 AND BSL-1.0 AND MIT AND Unicode-DFS-2016 AND (Apache-2.0 OR MIT) AND (MIT OR Apache-2.0 OR Zlib) AND (Unlicense OR MIT)
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rpm-sequoia-1.10.2.3-1.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/r/rust-rpm-sequoia-1.10.2.3-1.el10.src.rpm
+```
 
 ### `rpm` package: `rpm-sign-libs-4.19.1.1-25.el10.x86_64`
 
@@ -949,25 +1410,45 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND Apache-2.0
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url sed-4.9-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/sed-4.9-5.el10.src.rpm
+```
 
 ### `rpm` package: `setup-2.14.5-7.el10.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url setup-2.14.5-7.el10.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/setup-2.14.5-7.el10.src.rpm
+```
 
 ### `rpm` package: `shadow-utils-4.15.0-13.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause AND GPL-2.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url shadow-utils-4.15.0-13.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.15.0-13.el10.src.rpm
+```
 
 ### `rpm` package: `sqlite-libs-3.46.1-6.el10_2.x86_64`
 
 Licenses (from `rpm --query`): blessing
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url sqlite-libs-3.46.1-6.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.46.1-6.el10_2.src.rpm
+```
 
 ### `rpm` package: `systemd-257-33.0.1.el10.x86_64`
 
@@ -991,13 +1472,23 @@ Licenses (from `rpm --query`): LGPL-2.1-or-later AND MIT AND GPL-2.0-or-later
 
 Licenses (from `rpm --query`): GPL-3.0-or-later
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tar-1.35-13.el10_2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tar-1.35-13.el10_2.src.rpm
+```
 
 ### `rpm` package: `tpm2-tss-4.1.3-6.el10.x86_64`
 
 Licenses (from `rpm --query`): BSD-2-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tpm2-tss-4.1.3-6.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/t/tpm2-tss-4.1.3-6.el10.src.rpm
+```
 
 ### `rpm` package: `tzdata-2026f-1.el10_2.noarch`
 
@@ -1033,7 +1524,12 @@ Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-onl
 
 Licenses (from `rpm --query`): 0BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url xz-libs-5.6.2-5.el10
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/x/xz-5.6.2-5.el10.src.rpm
+```
 
 ### `rpm` package: `yum-4.20.0-28.0.1.el10.noarch`
 
@@ -1051,4 +1547,9 @@ Licenses (from `rpm --query`): GPL-2.0-or-later
 
 Licenses (from `rpm --query`): Zlib
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url zlib-ng-compat-2.2.3-3.el10_1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/z/zlib-ng-2.2.3-3.el10_1.src.rpm
+```
